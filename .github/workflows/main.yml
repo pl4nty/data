@@ -20,6 +20,7 @@ jobs:
         cmd:
           - python -u android_bulletins_parser.py
           - python -u get.py
+          - python -u microsoft_download_center.py --start 108100 --end 108200 --threads 16 --delay 0.01
           - python -u powershell_gallery.py
     steps:
       - uses: actions/checkout@v4
