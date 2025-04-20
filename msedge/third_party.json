@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14600135,
+    "size": 14600522,
     "file_count": 830
   },
   {
@@ -66,12 +66,12 @@
   },
   {
     "name": "blink",
-    "size": 31932107,
-    "file_count": 3920
+    "size": 31949830,
+    "file_count": 3921
   },
   {
     "name": "boringssl",
-    "size": 70291,
+    "size": 71633,
     "file_count": 16
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16139939,
+    "size": 16365267,
     "file_count": 245
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "glslang",
-    "size": 39628387,
-    "file_count": 3029
+    "size": 39677492,
+    "file_count": 3035
   },
   {
     "name": "googletest",
@@ -301,8 +301,8 @@
   },
   {
     "name": "libc++",
-    "size": 6287493,
-    "file_count": 931
+    "size": 6070075,
+    "file_count": 930
   },
   {
     "name": "libdisplay-info",
@@ -396,7 +396,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19601387,
+    "size": 19608555,
     "file_count": 19
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "perfetto",
-    "size": 1491737,
+    "size": 1492801,
     "file_count": 80
   },
   {
@@ -581,13 +581,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2148565,
+    "size": 2148613,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5795178,
-    "file_count": 161
+    "size": 5656812,
+    "file_count": 164
   },
   {
     "name": "vulkan_memory_allocator",

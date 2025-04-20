@@ -23,7 +23,7 @@ COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsAddressBarReadonlyFeatureAllowed();
 // If enabled, link preview will be generated when link is copied from within
 // the page.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgeLinkPreviewInPage);
-COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsClipboardReadWriteErrorDumpEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsClipboardReadWriteErrorDetailsLogEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsLinkPreviewInPageEnabled();
 
 // If enabled, add an explicit entry point "Copy Link Preview" to right click
@@ -222,13 +222,6 @@ BASE_DECLARE_FEATURE(kEdgeUpdateBoundsForAllViews);
 
 // If enabled, will show the new PIP views.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgePipAdvanced);
-
-// If enabled, share features are enabled
-COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgeShare);
-
-// If enabled and kEdgeShare is enabled, share to self is available in the
-// Edge share UI.
-COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgeShareToSelf);
 
 // If enabled, domain actions for Enhanced Copy Paste will be parsed and applied
 // to the relevant domains.
@@ -463,14 +456,6 @@ extern void TriggerUsageFeatureGroupEdgeENPDynHoldout(
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kAppLayerForCentralContainer);
-
-// If enabled, will remove the toggle to switch the new Look and Feel settings
-// from edge://settings/appearance and enables the phoenix rounded corners for
-// browser frame by default.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kRemoveTryNewLAFSetting);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsRemoveTryNewLAFSettingEnabled();
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern int GetRoundedCornerRadius();
