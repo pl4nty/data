@@ -873,6 +873,15 @@
         "Torus"
       ]
     },
+    "Get-CsComplianceRecordingForCallQueueTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "Get-CsCloudCallDataConnection": {
       "CmdletType": "Remoting",
       "ModernCmdlet": "Get-CsCloudCallDataConnectionModern",
@@ -2417,6 +2426,15 @@
         "Torus"
       ]
     },
+    "New-CsComplianceRecordingForCallQueueTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "New-CsCloudCallDataConnection": {
       "CmdletType": "Remoting",
       "ModernCmdlet": "New-CsCloudCallDataConnectionModern",
@@ -2957,6 +2975,15 @@
       }
     },
     "Remove-CsCallQueue": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Remove-CsComplianceRecordingForCallQueueTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -3516,6 +3543,15 @@
       }
     },
     "Set-CsCallQueue": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Set-CsComplianceRecordingForCallQueueTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",

@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '6.9.0'
+ModuleVersion = '7.0.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -197,6 +197,7 @@ FunctionsToExport =  @(
 	,'Get-CsUserPolicyPackageRecommendation'
 	,'Get-CsVideoInteropServiceProvider'
 	,'Grant-CsApplicationAccessPolicy'
+	,'Get-CsComplianceRecordingForCallQueueTemplate'
 	,'Grant-CsCallingLineIdentity'
 	,'Grant-CsDialoutPolicy'
 	,'Grant-CsGroupPolicyPackageAssignment'
@@ -298,6 +299,7 @@ FunctionsToExport =  @(
 	,'New-CsVoiceNormalizationRule'
 	,'New-CsOnlineDirectRoutingTelephoneNumberUploadOrder'
 	,'New-CsOnlineTelephoneNumberReleaseOrder'
+	,'New-CsComplianceRecordingForCallQueueTemplate'
 	,'Register-CsOnlineDialInConferencingServiceNumber'
 	,'Remove-CsApplicationAccessPolicy'
 	,'Remove-CsAutoAttendant'
@@ -354,6 +356,7 @@ FunctionsToExport =  @(
 	,'Remove-CsUserCallingDelegate'
 	,'Remove-CsUserLicenseGracePeriod'
 	,'Remove-CsVideoInteropServiceProvider'
+	,'Remove-CsComplianceRecordingForCallQueueTemplate'
 	,'Set-CsApplicationAccessPolicy'
 	,'Set-CsApplicationMeetingConfiguration'
 	,'Set-CsAutoAttendant'
@@ -424,6 +427,7 @@ FunctionsToExport =  @(
 	,'Set-CsUserCallingDelegate'
 	,'Set-CsUserCallingSettings'
 	,'Set-CsVideoInteropServiceProvider'
+	,'Set-CsComplianceRecordingForCallQueueTemplate'
 	,'Start-CsExMeetingMigration'
 	,'Sync-CsOnlineApplicationInstance'
 	,'Test-CsEffectiveTenantDialPlan'
@@ -772,15 +776,17 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **6.9.0** (The project - MicrosoftTeams contains changes till this release)
-- Adds FileContent parameter to New-CsOnlineDirectRoutingTelephoneNumberUploadOrder cmdlet.
-- Adds FileContent parameter to New-CsOnlineTelephoneNumberReleaseOrder cmdlet.
-- Adds EnqueueReason output attribute to Get-CsMeetingMigrationStatus cmdlet.
-- Fixes the AllowedTrialTenantDomains data type, for the Set-CsTenantFederationConfiguration cmdlet. Now it will match the public documentation examples.
-- Fixes issues with the ForceAccept parameter in the Set-CsOnlineEnhancedEmergencyServiceDisclaimer cmdlet.
-- Adds TelephoneNumbers output attribute to Get-CsOnlineUser cmdlet. This is currently supported only in commercial environments.
-- Adds expand parameter to the Get-AllM365TeamsApp cmdlet.
-- Adds Properties parameter to Get-CsOnlineUser cmdlet.
+ **7.0.0** (The project - MicrosoftTeams contains changes till this release)
+- Adds ShiftsTeamId & ShiftsSchedulingGroupId parameters to [New|Set]-CsCallQueue cmdlets. 
+- [BREAKING CHANGE] Deprecates CustomizeFederation parameter from [Get|Set]-CsTenantFederationConfiguration cmdlets. 
+- Adds TownhallEventAttendeeAccess parameter to [New|Set]-CsTeamsEventsPolicy.
+- Adds AllowsUsersForMeetingDetails, RealTimeText parameters to [New|Set]-CsTeamsMeetingPolicy.
+- Adds RealTimeText parameter to [New|Set]-CsTeamsCallingPolicy.
+- Adds UsersCanDeleteBotMessages, ContentBasedPhishingCheck, ReportIncorrectSecurityDetections parameters to [New|Set]-CsTeamsMessagingConfiguration.
+- Adds SpeakerAttributionForBYOD parameter to [New|Set]-CsTeamsAIPolicy.
+- [BREAKING CHANGE] Removes OptionFlags output attribute from the Get-CsOnlineUser cmdlet.
+- Releases [New|Set|Remove|Get]-CsComplianceRecordingForCallQueueTemplate cmdlets.
+- Adds Compliance Recording related parameters (ComplianceRecordingForCallQueueTemplateId, TextAnnouncementForCR, CustomAudioFileAnnouncementForCR, TextAnnouncementForCRFailure, CustomAudioFileAnnouncementForCRFailure) to [New|Set]-CsCallQueue and corresponding output attributes to Get-CsCallQueue.
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes
 '@

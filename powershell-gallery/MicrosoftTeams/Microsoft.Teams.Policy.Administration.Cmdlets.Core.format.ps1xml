@@ -1114,8 +1114,8 @@
                         <PropertyName>ContentSharingInExternalMeetings</PropertyName>
                     </ListItem>
                     <ListItem>
-                        <Label>AllowedUsersForMeetingContext</Label>
-                        <PropertyName>AllowedUsersForMeetingContext</PropertyName>
+                        <Label>AllowedUsersForMeetingDetails</Label>
+                        <PropertyName>AllowedUsersForMeetingDetails</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>SmsNotifications</Label>
@@ -1140,6 +1140,10 @@
                     <ListItem>
                         <Label>NoiseSuppressionForDialInParticipants</Label>
                         <PropertyName>NoiseSuppressionForDialInParticipants</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>RealTimeText</Label>
+                        <PropertyName>RealTimeText</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>AIInterpreter</Label>
@@ -1373,6 +1377,10 @@
                         <PropertyName>AllowTownhalls</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>TownhallEventAttendeeAccess</Label>
+                        <PropertyName>TownhallEventAttendeeAccess</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>AllowEmailEditing</Label>
                         <PropertyName>AllowEmailEditing</PropertyName>
                     </ListItem>
@@ -1583,12 +1591,74 @@
                         <PropertyName>ShowTeamsCallsInCallLog</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>RealTimeText</Label>
+                        <PropertyName>RealTimeText</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>AIInterpreter</Label>
                         <PropertyName>AIInterpreter</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>VoiceSimulationInInterpreter</Label>
                         <PropertyName>VoiceSimulationInInterpreter</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsPersonalAttendantPolicyView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsPersonalAttendantPolicy</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PersonalAttendant</Label>
+                        <PropertyName>PersonalAttendant</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>CallScreening</Label>
+                        <PropertyName>CallScreening</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>CalendarBookings</Label>
+                        <PropertyName>CalendarBookings</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsPersonalAttendantValidationConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsPersonalAttendantValidationConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PersonalAttendantPolicyValidationEnabled</Label>
+                        <PropertyName>PersonalAttendantPolicyValidationEnabled</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PersonalAttendantPolicyValidationUri</Label>
+                        <PropertyName>PersonalAttendantPolicyValidationUri</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -1659,6 +1729,10 @@
                     <ListItem>
                         <Label>AllowUserDeleteMessage</Label>
                         <PropertyName>AllowUserDeleteMessage</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>UsersCanDeleteBotMessages</Label>
+                        <PropertyName>UsersCanDeleteBotMessages</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>AllowUserDeleteChat</Label>
@@ -3812,114 +3886,6 @@
                </ListControl>
               </View>
 <View>
-                  <Name>RouteView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.Route</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem><ListItem>
-                        <Label>Priority</Label>
-                        <PropertyName>Priority</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>Description</Label>
-                        <PropertyName>Description</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>NumberPattern</Label>
-                        <PropertyName>NumberPattern</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>PstnUsages</Label>
-                        <PropertyName>PstnUsages</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>PstnGatewayList</Label>
-                        <PropertyName>PstnGatewayList</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>Name</Label>
-                        <PropertyName>Name</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>SuppressCallerId</Label>
-                        <PropertyName>SuppressCallerId</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AlternateCallerId</Label>
-                        <PropertyName>AlternateCallerId</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>PstnGatewayServiceIdView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.PstnGatewayServiceId</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>SiteId</Label>
-                        <PropertyName>SiteId</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>RoleName</Label>
-                        <PropertyName>RoleName</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>Instance</Label>
-                        <PropertyName>Instance</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>PstnRoutingSettingsView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.PstnRoutingSettings</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>Route</Label>
-                        <PropertyName>Route</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>EnableLocationBasedRouting</Label>
-                        <PropertyName>EnableLocationBasedRouting</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>CallViaWorkCallerId</Label>
-                        <PropertyName>CallViaWorkCallerId</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
                   <Name>OnlineRouteView</Name>
                <ViewSelectedBy>
                   <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.OnlineRoute</TypeName>
@@ -5037,10 +5003,6 @@
                         <Label>ExternalAccessWithTrialTenants</Label>
                         <PropertyName>ExternalAccessWithTrialTenants</PropertyName>
                     </ListItem>
-                    <ListItem>
-                        <Label>CustomizeFederation</Label>
-                        <PropertyName>CustomizeFederation</PropertyName>
-                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -6058,6 +6020,10 @@
                         <PropertyName>AllowUserDeleteMessage</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>UsersCanDeleteBotMessages</Label>
+                        <PropertyName>UsersCanDeleteBotMessages</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>AllowUserDeleteChat</Label>
                         <PropertyName>AllowUserDeleteChat</PropertyName>
                     </ListItem>
@@ -6123,6 +6089,14 @@
                     <ListItem>
                         <Label>AllowTranscription</Label>
                         <PropertyName>AllowTranscription</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowParticipantGiveRequestControl</Label>
+                        <PropertyName>AllowParticipantGiveRequestControl</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowExternalParticipantGiveRequestControl</Label>
+                        <PropertyName>AllowExternalParticipantGiveRequestControl</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -6426,6 +6400,14 @@
                         <Label>UrlReputationCheck</Label>
                         <PropertyName>UrlReputationCheck</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>ContentBasedPhishingCheck</Label>
+                        <PropertyName>ContentBasedPhishingCheck</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ReportIncorrectSecurityDetections</Label>
+                        <PropertyName>ReportIncorrectSecurityDetections</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -6483,6 +6465,64 @@
                     <ListItem>
                         <Label>BlockExternalUserAccess</Label>
                         <PropertyName>BlockExternalUserAccess</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsRemoteLogCollectionConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsRemoteLogCollectionConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Devices</Label>
+                        <PropertyName>Devices</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsRemoteLogCollectionDeviceView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsRemoteLogCollectionDevice</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Id</Label>
+                        <PropertyName>Id</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DeviceId</Label>
+                        <PropertyName>DeviceId</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ExpireAfter</Label>
+                        <PropertyName>ExpireAfter</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>UserId</Label>
+                        <PropertyName>UserId</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>

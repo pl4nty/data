@@ -724,7 +724,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
+      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. A new setting, SpeakerAttributionBYOD, is also being added to csTeamsAIPolicy. This allows IT admins to turn off speaker attribution in BYOD scenarios, giving them greater control over how voice data is managed in such environments. This setting can be set to Enabled or Disabled, and will be Enabled by default. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
       <maml:para>This cmdlet retrieves all Teams AI policies for the tenant.</maml:para>
     </maml:description>
     <command:syntax>
@@ -794,7 +794,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-CsTeamsAIPolicy</dev:code>
         <dev:remarks>
-          <maml:para>Retrieves Teams AI policies and shows "EnrollFace" and "EnrollVoice" values.</maml:para>
+          <maml:para>Retrieves Teams AI policies and shows "EnrollFace", "EnrollVoice" and "SpeakerAttributionBYOD" values.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -6953,7 +6953,7 @@ Tag:wld-policy2                           False</dev:code>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
+      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. A new setting, SpeakerAttributionBYOD, is also being added to csTeamsAIPolicy. This allows IT admins to turn off speaker attribution in BYOD scenarios, giving them greater control over how voice data is managed in such environments. This setting can be set to Enabled or Disabled, and will be Enabled by default. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
       <maml:para>This cmdlet applies an instance of the Teams AI policy to users or groups in a tenant.</maml:para>
       <maml:para>Passes in the `Identity` of the policy instance in the `PolicyName` parameter and the user identifier in the `Identity` parameter or the group name in the `Group` parameter. One of either `Identity` or `Group` needs to be passed.</maml:para>
     </maml:description>
@@ -12251,7 +12251,7 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
+      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. A new setting, SpeakerAttributionBYOD, is also being added to csTeamsAIPolicy. This allows IT admins to turn off speaker attribution in BYOD scenarios, giving them greater control over how voice data is managed in such environments. This setting can be set to Enabled or Disabled, and will be Enabled by default. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
       <maml:para>This cmdlet creates a Teams AI policy. If you get an error that the policy already exists, it means that the policy already exists for your tenant. In this case, run Get-CsTeamsAIPolicy.</maml:para>
     </maml:description>
     <command:syntax>
@@ -12274,9 +12274,9 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
           <maml:description>
             <maml:para>Policy value of the Teams AI EnrollFace policy. EnrollFace controls user access to user face enrollment in the Teams app settings.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
-            <maml:name>Boolean</maml:name>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
@@ -12286,9 +12286,21 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
           <maml:description>
             <maml:para>Policy value of the Teams AI EnrollVoice policy. EnrollVoice controls user access to user voice enrollment in the Teams app settings.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
-            <maml:name>Boolean</maml:name>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SpeakerAttributionBYOD</maml:name>
+          <maml:description>
+            <maml:para>Policy value of the Teams AI SpeakerAttributionBYOD policy. Setting to "Enabled" turns on speaker attribution in BYOD scenarios while "Disabled" will turn off the function.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
@@ -12325,9 +12337,9 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
           <maml:description>
             <maml:para>Policy value of the Teams AI EnrollFace policy. EnrollFace controls user access to user face enrollment in the Teams app settings.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
-            <maml:name>Boolean</maml:name>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
@@ -12337,9 +12349,21 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
           <maml:description>
             <maml:para>Policy value of the Teams AI EnrollVoice policy. EnrollVoice controls user access to user voice enrollment in the Teams app settings.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
-            <maml:name>Boolean</maml:name>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SpeakerAttributionBYOD</maml:name>
+          <maml:description>
+            <maml:para>Policy value of the Teams AI SpeakerAttributionBYOD policy. Setting to "Enabled" turns on speaker attribution in BYOD scenarios while "Disabled" will turn off the function.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
@@ -12376,9 +12400,9 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
         <maml:description>
           <maml:para>Policy value of the Teams AI EnrollFace policy. EnrollFace controls user access to user face enrollment in the Teams app settings.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
-          <maml:name>Boolean</maml:name>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>Enabled</dev:defaultValue>
@@ -12388,9 +12412,21 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
         <maml:description>
           <maml:para>Policy value of the Teams AI EnrollVoice policy. EnrollVoice controls user access to user voice enrollment in the Teams app settings.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
-          <maml:name>Boolean</maml:name>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SpeakerAttributionBYOD</maml:name>
+        <maml:description>
+          <maml:para>Policy value of the Teams AI SpeakerAttributionBYOD policy. Setting to "Enabled" turns on speaker attribution in BYOD scenarios while "Disabled" will turn off the function.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>Enabled</dev:defaultValue>
@@ -13670,7 +13706,8 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RealTimeText</maml:name>
           <maml:description>
-            <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+            <maml:para>Allows users to use real time text during a call, allowing them to communicate by typing their messages in real time.</maml:para>
             <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
             <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>
           </maml:description>
@@ -14138,7 +14175,8 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RealTimeText</maml:name>
         <maml:description>
-          <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+          <maml:para>Allows users to use real time text during a call, allowing them to communicate by typing their messages in real time.</maml:para>
           <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
           <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>
         </maml:description>
@@ -19618,6 +19656,7 @@ Tag:Test Enabled</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RealTimeText</maml:name>
           <maml:description>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
             <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
             <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>
@@ -20986,6 +21025,7 @@ Tag:Test Enabled</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RealTimeText</maml:name>
         <maml:description>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
           <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
           <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>
@@ -25754,7 +25794,7 @@ Tag:wld-policy                            False</dev:code>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
+      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. A new setting, SpeakerAttributionBYOD, is also being added to csTeamsAIPolicy. This allows IT admins to turn off speaker attribution in BYOD scenarios, giving them greater control over how voice data is managed in such environments. This setting can be set to Enabled or Disabled, and will be Enabled by default. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
       <maml:para>This cmdlet deletes a Teams AI policy with the specified identity string.</maml:para>
     </maml:description>
     <command:syntax>
@@ -31519,8 +31559,8 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
-      <maml:para>This cmdlet sets the Teams AI policy EnrollFace and EnrollVoice value for the tenant. The values of EnrollFace and EnrollVoice can be set to "Enabled" or "Disabled".</maml:para>
+      <maml:para>The new csTeamsAIPolicy will replace the existing enrollment settings in csTeamsMeetingPolicy, providing enhanced flexibility and control for Teams meeting administrators. Unlike the current single setting, EnrollUserOverride, which applies to both face and voice enrollment, the new policy introduces two distinct settings: EnrollFace and EnrollVoice. These can be individually set to Enabled or Disabled, offering more granular control over biometric enrollments. A new setting, SpeakerAttributionBYOD, is also being added to csTeamsAIPolicy. This allows IT admins to turn off speaker attribution in BYOD scenarios, giving them greater control over how voice data is managed in such environments. This setting can be set to Enabled or Disabled, and will be Enabled by default. In addition to improving the management of face and voice data, the csTeamsAIPolicy is designed to support future AI-related settings in Teams, making it a scalable solution for evolving needs.</maml:para>
+      <maml:para>This cmdlet sets the EnrollFace, EnrollVoice, and SpeakerAttributionBYOD values within the csTeamsAIPolicy. These policies can be assigned to users, and each setting can be configured as "Enabled" or "Disabled". "</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -31542,9 +31582,9 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
           <maml:description>
             <maml:para>Policy value of the Teams AI EnrollFace policy. EnrollFace controls user access to user face enrollment in the Teams app settings.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
-            <maml:name>Boolean</maml:name>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
@@ -31554,9 +31594,21 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
           <maml:description>
             <maml:para>Policy value of the Teams AI EnrollVoice policy. EnrollVoice controls user access to user voice enrollment in the Teams app settings.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
-            <maml:name>Boolean</maml:name>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SpeakerAttributionBYOD</maml:name>
+          <maml:description>
+            <maml:para>Policy value of the Teams AI SpeakerAttributionBYOD policy. Setting to "Enabled" turns on speaker attribution in BYOD scenarios while "Disabled" will turn off the function.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
@@ -31593,9 +31645,9 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
           <maml:description>
             <maml:para>Policy value of the Teams AI EnrollFace policy. EnrollFace controls user access to user face enrollment in the Teams app settings.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
-            <maml:name>Boolean</maml:name>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
@@ -31605,9 +31657,21 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
           <maml:description>
             <maml:para>Policy value of the Teams AI EnrollVoice policy. EnrollVoice controls user access to user voice enrollment in the Teams app settings.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
-            <maml:name>Boolean</maml:name>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SpeakerAttributionBYOD</maml:name>
+          <maml:description>
+            <maml:para>Policy value of the Teams AI SpeakerAttributionBYOD policy. Setting to "Enabled" turns on speaker attribution in BYOD scenarios while "Disabled" will turn off the function.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
@@ -31644,9 +31708,9 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
         <maml:description>
           <maml:para>Policy value of the Teams AI EnrollFace policy. EnrollFace controls user access to user face enrollment in the Teams app settings.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
-          <maml:name>Boolean</maml:name>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>Enabled</dev:defaultValue>
@@ -31656,9 +31720,21 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
         <maml:description>
           <maml:para>Policy value of the Teams AI EnrollVoice policy. EnrollVoice controls user access to user voice enrollment in the Teams app settings.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
-          <maml:name>Boolean</maml:name>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SpeakerAttributionBYOD</maml:name>
+        <maml:description>
+          <maml:para>Policy value of the Teams AI SpeakerAttributionBYOD policy. Setting to "Enabled" turns on speaker attribution in BYOD scenarios while "Disabled" will turn off the function.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>Enabled</dev:defaultValue>
@@ -31700,30 +31776,51 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Set-CsTeamsAIPolicy -Identity Global -SpeakerAttributionBYOD Disabled</dev:code>
+        <dev:remarks>
+          <maml:para>Set Teams AI policy "SpeakerAttributionBYOD" value to "Disabled" for global as default.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Set-CsTeamsAIPolicy -Identity Test -EnrollFace Enabled</dev:code>
         <dev:remarks>
           <maml:para>Set Teams AI policy "EnrollFace" value to "Enabled" for identity "Test".</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
-        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Set-CsTeamsAIPolicy -Identity Test -EnrollVoice Enabled</dev:code>
         <dev:remarks>
           <maml:para>Set Teams AI policy "EnrollVoice" value to "Enabled" for identity "Test".</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
-        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Set-CsTeamsAIPolicy -Identity Test -SpeakerAttributionBYOD Enabled</dev:code>
+        <dev:remarks>
+          <maml:para>Set Teams AI policy "SpeakerAttributionBYOD" value to "Enabled" for identity "Test".</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 7 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Set-CsTeamsAIPolicy -Identity Test -EnrollFace Disabled</dev:code>
         <dev:remarks>
           <maml:para>Set Teams AI policy "EnrollFace" value to "Disabled" for identity "Test".</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
-        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 8 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Set-CsTeamsAIPolicy -Identity Test -EnrollVoice Disabled</dev:code>
         <dev:remarks>
           <maml:para>Set Teams AI policy "EnrollVoice" value to "Disabled" for identity "Test".</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 9 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Set-CsTeamsAIPolicy -Identity Test -SpeakerAttributionBYOD Disabled</dev:code>
+        <dev:remarks>
+          <maml:para>Set Teams AI policy "SpeakerAttributionBYOD" value to "Disabled" for identity "Test".</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -33686,7 +33783,8 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RealTimeText</maml:name>
           <maml:description>
-            <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+            <maml:para>Allows users to use real time text during a call, allowing them to communicate by typing their messages in real time.</maml:para>
             <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
             <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>
           </maml:description>
@@ -34150,7 +34248,8 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RealTimeText</maml:name>
         <maml:description>
-          <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+          <maml:para>Allows users to use real time text during a call, allowing them to communicate by typing their messages in real time.</maml:para>
           <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
           <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>
         </maml:description>
@@ -40178,7 +40277,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:name>AllowAnonymousUsersToDialOut</maml:name>
           <maml:description>
             <maml:para>Determines whether anonymous users are allowed to dial out to a PSTN number. Set this to TRUE to allow anonymous users to dial out. Set this to FALSE to prohibit anonymous users from dialing out.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This parameter is temporarily disabled.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -40764,7 +40862,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AutoRecording</maml:name>
           <maml:description>
-            <maml:para>This setting will enable Tenant Admins to turn on/off the auto recording feature.</maml:para>
+            <maml:para>This setting allows admins to control the visibility of the auto recording feature in the organizer's Meeting options . If the you enable this setting, the Record and transcribe automatically setting appears in Meeting options with the default value set to Off (except for webinars and townhalls). Organizers need to manually toggle this setting to On to for their meetings to be automatically recorded. If you disable this setting, Record and transcribe automatically is hidden, preventing organizers from setting any meetings to be auto-recorded.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -41466,6 +41564,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RealTimeText</maml:name>
           <maml:description>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
             <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
             <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>
@@ -41550,7 +41649,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <maml:name>AllowAnonymousUsersToDialOut</maml:name>
         <maml:description>
           <maml:para>Determines whether anonymous users are allowed to dial out to a PSTN number. Set this to TRUE to allow anonymous users to dial out. Set this to FALSE to prohibit anonymous users from dialing out.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This parameter is temporarily disabled.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -42136,7 +42234,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AutoRecording</maml:name>
         <maml:description>
-          <maml:para>This setting will enable Tenant Admins to turn on/off the auto recording feature.</maml:para>
+          <maml:para>This setting allows admins to control the visibility of the auto recording feature in the organizer's Meeting options . If the you enable this setting, the Record and transcribe automatically setting appears in Meeting options with the default value set to Off (except for webinars and townhalls). Organizers need to manually toggle this setting to On to for their meetings to be automatically recorded. If you disable this setting, Record and transcribe automatically is hidden, preventing organizers from setting any meetings to be auto-recorded.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -42840,6 +42938,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RealTimeText</maml:name>
         <maml:description>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
           <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
           <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>

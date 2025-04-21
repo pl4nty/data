@@ -5940,6 +5940,91 @@ function Get-CsCallQueue {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function Get-CsComplianceRecordingForCallQueueTemplate {
+	[CmdletBinding()]
+	param(
+		[Parameter(Mandatory=$false)]
+		[System.String]
+		# The identity of the compliance recording for CR4CQ template which is retrieved.
+		${Id},
+		
+		[Parameter(Mandatory=$false)]
+		[Switch]
+		${Force},
+
+   [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+        
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsComplianceRecordingForCallQueueTemplate @PSBoundParameters @httpPipelineArgs
+
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            if (![string]::IsNullOrEmpty(${Id})) {
+                $ComplianceRecordingForCallQueue = [Microsoft.Rtc.Management.Hosted.Online.Models.ComplianceRecordingForCallQueue]::new()
+                $ComplianceRecordingForCallQueue.ParseFromGetResponse($result)
+            } 
+            else {
+                $ComplianceRecordingForCallQueues = @()
+                foreach ($model in $result.ComplianceRecording) {
+                    $ComplianceRecordingForCallQueue = [Microsoft.Rtc.Management.Hosted.Online.Models.ComplianceRecordingForCallQueue]::new()
+                    $ComplianceRecordingForCallQueues += $ComplianceRecordingForCallQueue.ParseFromDtoModel($model)
+                }
+            $ComplianceRecordingForCallQueues
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Print error message in case of error
 
 function Get-CsOnlineApplicationInstanceAssociation {
@@ -7981,6 +8066,41 @@ function New-CsCallQueue {
         ${ServiceLevelThresholdResponseTimeInSecond},
 
         [Parameter(Mandatory=$false)]
+        [System.String]
+        # Shifts Team identity to use as Call queues answer target.
+        ${ShiftsTeamId},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Shifts Scheduling Group identity to use as Call queues answer target.
+        ${ShiftsSchedulingGroupId},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Text annnouncement thats played before CR bot joins the call.
+        ${TextAnnouncementForCR},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Custom Audio announcement that is played before CR bot joins the call.
+        ${CustomAudioFileAnnouncementForCR},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Text announcement that is played if CR bot is unable to join the call.
+        ${TextAnnouncementForCRFailure},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Custom audio file announcement for compliance recording if CR bot is unable to join the call.
+        ${CustomAudioFileAnnouncementForCRFailure},
+
+        [Parameter(Mandatory=$false)]
+        [System.String[]]
+        # Ids for Compliance Recording template for Callqueue.
+        ${ComplianceRecordingForCallQueueTemplateId},
+
+        [Parameter(Mandatory=$false)]
         [Switch]
         # Allow the cmdlet to run anyway
         ${Force},
@@ -8092,6 +8212,34 @@ function New-CsCallQueue {
                 $null = $PSBoundParameters.Remove('ServiceLevelThresholdResponseTimeInSecond')
             }
 
+            if ($PSBoundParameters.ContainsKey('ShiftsTeamId') -and [string]::IsNullOrWhiteSpace($ShiftsTeamId)) {
+                $null = $PSBoundParameters.Remove('ShiftsTeamId')
+            }
+
+            if ($PSBoundParameters.ContainsKey('ShiftsSchedulingGroupId') -and [string]::IsNullOrWhiteSpace($ShiftsSchedulingGroupId)) {
+                $null = $PSBoundParameters.Remove('ShiftsSchedulingGroupId')
+            }
+
+            if ($PSBoundParameters.ContainsKey('TextAnnouncementForCR') -and [string]::IsNullOrWhiteSpace($TextAnnouncementForCR)) {
+                $null = $PSBoundParameters.Remove('TextAnnouncementForCR')
+            }
+
+            if ($PSBoundParameters.ContainsKey('CustomAudioFileAnnouncementForCR') -and [string]::IsNullOrWhiteSpace($CustomAudioFileAnnouncementForCR)) {
+                $null = $PSBoundParameters.Remove('CustomAudioFileAnnouncementForCR')
+            }
+
+            if ($PSBoundParameters.ContainsKey('TextAnnouncementForCRFailure') -and [string]::IsNullOrWhiteSpace($TextAnnouncementForCRFailure)) {
+                $null = $PSBoundParameters.Remove('TextAnnouncementForCRFailure')
+            }
+
+            if ($PSBoundParameters.ContainsKey('CustomAudioFileAnnouncementForCRFailure') -and [string]::IsNullOrWhiteSpace($CustomAudioFileAnnouncementForCRFailure)) {
+                $null = $PSBoundParameters.Remove('CustomAudioFileAnnouncementForCRFailure')
+            }
+
+            if ($PSBoundParameters.ContainsKey('ComplianceRecordingForCallQueueTemplateId') -and $ComplianceRecordingForCallQueueTemplateId -eq $null) {
+                $null = $PSBoundParameters.Remove('ComplianceRecordingForCallQueueTemplateId')
+            }
+
             $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsCallQueue @PSBoundParameters @httpPipelineArgs
 
             # Stop execution if internal cmdlet is failing
@@ -8110,6 +8258,128 @@ function New-CsCallQueue {
         }
     }
 
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function New-CsComplianceRecordingForCallQueueTemplate {
+	[CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The Name parameter is a friendly name that is assigned to the CR4CQ template.
+        ${Name},
+
+        [Parameter(Mandatory=$true, position=1)]
+        [System.String]
+        # The Description parameter provides a description for the CR4CQ template.
+        ${Description},
+
+        [Parameter(Mandatory=$true, position=2)]
+        [System.String]
+        # The BotId parameter represents the ID of the CR bot
+        ${BotId},
+
+        [Parameter(Mandatory=$false, position=3)]
+        [Switch]
+        # The RequiredDuringCall parameter indicates if compliance recording bot is required during the call.
+        ${RequiredDuringCall},
+        
+        [Parameter(Mandatory=$false, position=4)]
+        [Switch]
+        # The RequiredBeforeCall parameter indicates if compliance recording bot is required before the call.
+        ${RequiredBeforeCall},
+        
+        [Parameter(Mandatory=$false, position=5)]
+        [System.Int32]
+        # The ConcurrentInvitationCount parameter specifies the number of concurrent invitations to the CR bot.
+        ${ConcurrentInvitationCount},
+
+        [Parameter(Mandatory=$false, position=6)]
+        [System.String]
+        # The PairedApplication parameter specifies the paired application for the call queue.
+        ${PairedApplication},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        # The HttpPipelinePrepend parameter allows for custom HTTP pipeline steps to be prepended.
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($RequiredDuringCall -eq $true){
+                $null = $PSBoundParameters.Remove("RequiredDuringCall")
+                $PSBoundParameters.Add('RequiredDuringCall', $true)
+            }
+
+            if ($RequiredBeforeCall -eq $true){
+                $null = $PSBoundParameters.Remove("RequiredBeforeCall")
+                $PSBoundParameters.Add('RequiredBeforeCall', $true)
+            }
+
+            if ($PairedApplication -ne $null){
+                $null = $PSBoundParameters.Remove("PairedApplication")
+                $PSBoundParameters.Add('PairedApplication', $PairedApplication)
+            }
+
+            if ($ConcurrentInvitationCount -eq 0){
+                $null = $PSBoundParameters.Remove("ConcurrentInvitationCount")
+                $PSBoundParameters.Add('ConcurrentInvitationCount', 1)
+            } elseif ($ConcurrentInvitationCount -ne $null){
+                # Validate the value of ConcurrentInvitationCount
+                if ($ConcurrentInvitationCount -lt 1 -or $ConcurrentInvitationCount -gt 2) {
+                    Write-Error "The value of ConcurrentInvitationCount must be 1 or 2."
+                    throw
+                }
+                $null = $PSBoundParameters.Remove("ConcurrentInvitationCount")
+                $PSBoundParameters.Add('ConcurrentInvitationCount', $ConcurrentInvitationCount)
+            }  
+
+
+            $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsComplianceRecordingForCallQueueTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($internalOutput -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.ComplianceRecordingForCallQueue]::new()
+            $output.ParseFromCreateResponse($internalOutput)
+        }
+        catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
     end {
         $customCmdletUtils.SendTelemetry()
     }
@@ -8731,6 +9001,78 @@ function Remove-CsCallQueue {
             # Convert the fecthed CallQueue DTO to domain model and print.
             $deletedCallQueue= [Microsoft.Rtc.Management.Hosted.CallQueue.Models.CallQueue]::new()
             $deletedCallQueue.ParseFrom($getResult.CallQueue)
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: print out the diagnostic
+
+function Remove-CsComplianceRecordingForCallQueueTemplate {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the CR4CQ template to be removed.
+        ${Id},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsComplianceRecordingForCallQueueTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+            $result
 
         } catch {
             $customCmdletUtils.SendTelemetry()
@@ -9651,6 +9993,41 @@ function Set-CsCallQueue {
         ${ServiceLevelThresholdResponseTimeInSecond},
 
         [Parameter(Mandatory=$false)]
+        [System.String]
+        # Shifts Team identity to use as Call queues answer target.
+        ${ShiftsTeamId},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Text announcement that is played before CR bot joins the call
+        ${TextAnnouncementForCR},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Custom audio file announcement for compliance recording
+        ${CustomAudioFileAnnouncementForCR},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Text announcement that is played if CR bot is unable to join the call.
+        ${TextAnnouncementForCRFailure},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Custom audio file announcement for compliance recording if CR bot is unable to join the call.
+        ${CustomAudioFileAnnouncementForCRFailure},
+
+        [Parameter(Mandatory=$false)]
+        [System.String[]]
+        # Ids for Compliance Recording template for Callqueue.
+        ${ComplianceRecordingForCallQueueTemplateId},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Shifts Scheduling Group identity to use as Call queues answer target.
+        ${ShiftsSchedulingGroupId},
+
+        [Parameter(Mandatory=$false)]
         [Switch]
         # Allow the cmdlet to run anyway
         ${Force},
@@ -10208,6 +10585,53 @@ function Set-CsCallQueue {
                 $null = $PSBoundParameters.Remove('ServiceLevelThresholdResponseTimeInSecond')
             }
 
+            if (!$PSBoundParameters.ContainsKey('ShiftsTeamId') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.ShiftsTeamId)) {
+                $PSBoundParameters.Add('ShiftsTeamId', $existingCallQueue.ShiftsTeamId)
+            }
+            elseif ($PSBoundParameters.ContainsKey('ShiftsTeamId') -and [string]::IsNullOrWhiteSpace($ShiftsTeamId)) {
+                $null = $PSBoundParameters.Remove('ShiftsTeamId')
+            }
+
+            if (!$PSBoundParameters.ContainsKey('ShiftsSchedulingGroupId') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.ShiftsSchedulingGroupId)) {
+                $PSBoundParameters.Add('ShiftsSchedulingGroupId', $existingCallQueue.ShiftsSchedulingGroupId)
+            }
+            elseif ($PSBoundParameters.ContainsKey('ShiftsSchedulingGroupId') -and [string]::IsNullOrWhiteSpace($ShiftsSchedulingGroupId)) {
+                $null = $PSBoundParameters.Remove('ShiftsSchedulingGroupId')
+            }
+
+            if (!$PSBoundParameters.ContainsKey('TextAnnouncementForCR') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.TextAnnouncementForCR)) {
+                $PSBoundParameters.Add('TextAnnouncementForCR', $existingCallQueue.TextAnnouncementForCR)
+            }
+            elseif ($PSBoundParameters.ContainsKey('TextAnnouncementForCR') -and [string]::IsNullOrWhiteSpace($TextAnnouncementForCR)) {
+                $null = $PSBoundParameters.Remove('TextAnnouncementForCR')
+            }
+
+            if (!$PSBoundParameters.ContainsKey('AudioFileAnnouncementForCR') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.AudioFileAnnouncementForCR)) {
+                $PSBoundParameters.Add('AudioFileAnnouncementForCR', $existingCallQueue.AudioFileAnnouncementForCR)
+            }
+            elseif ($PSBoundParameters.ContainsKey('AudioFileAnnouncementForCR') -and [string]::IsNullOrWhiteSpace($AudioFileAnnouncementForCR)) {
+                $null = $PSBoundParameters.Remove('AudioFileAnnouncementForCR')
+            }
+
+            if (!$PSBoundParameters.ContainsKey('TextAnnouncementForCRFailure') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.TextAnnouncementForCRFailure)) {
+                $PSBoundParameters.Add('TextAnnouncementForCRFailure', $existingCallQueue.TextAnnouncementForCRFailure)
+            }
+            elseif ($PSBoundParameters.ContainsKey('TextAnnouncementForCRFailure') -and [string]::IsNullOrWhiteSpace($TextAnnouncementForCRFailure)) {
+                $null = $PSBoundParameters.Remove('TextAnnouncementForCRFailure')
+            }
+
+            if (!$PSBoundParameters.ContainsKey('AudioFileAnnouncementForCRFailure') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.AudioFileAnnouncementForCRFailure)) {
+                $PSBoundParameters.Add('AudioFileAnnouncementForCRFailure', $existingCallQueue.AudioFileAnnouncementForCRFailure)
+            }
+            elseif ($PSBoundParameters.ContainsKey('AudioFileAnnouncementForCRFailure') -and [string]::IsNullOrWhiteSpace($AudioFileAnnouncementForCRFailure)) {
+                $null = $PSBoundParameters.Remove('AudioFileAnnouncementForCRFailure')
+            }
+
+            if (!$PSBoundParameters.ContainsKey('ComplianceRecordingForCallQueueTemplateId') -and $null -ne $existingCallQueue.ComplianceRecordingForCallQueueTemplateId) {
+                $PSBoundParameters.Add('ComplianceRecordingForCallQueueTemplateId', $existingCallQueue.ComplianceRecordingForCallQueueTemplateId)
+            }
+   
+
             # Update the CallQueue.
             $updateResult = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsCallQueue @PSBoundParameters @httpPipelineArgs
             # The response of the Update API is only the list of `Diagnostics` which can be directly used in
@@ -10223,6 +10647,109 @@ function Set-CsCallQueue {
 
         } catch {
             $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsComplianceRecordingForCallQueueTemplate {
+	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to the CR4CQ template to be modified.
+        ${Instance},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        # The Force parameter indicates if we force the action to be performed. (Deprecated)
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $params = @{
+                Name = ${Instance}.Name
+                Identity = ${Instance}.Id
+                Description = ${Instance}.Description
+                BotId = ${Instance}.BotId
+                RequiredDuringCall = ${Instance}.RequiredDuringCall
+                RequiredBeforeCall = ${Instance}.RequiredBeforeCall
+                ConcurrentInvitationCount = ${Instance}.ConcurrentInvitationCount
+                PairedApplication = ${Instance}.PairedApplication
+            }
+
+            # Get common parameters
+            $PSBoundCommonParameters = @{}
+            foreach($p in $PSBoundParameters.GetEnumerator())
+            {
+                $params += @{$p.Key = $p.Value}
+            }
+
+            $null = $params.Remove("Instance")
+          
+            if ($ConcurrentInvitationCount -eq 0){
+                $null = $paramss.Remove("ConcurrentInvitationCount")
+                $params.Add('ConcurrentInvitationCount', 1)
+            } elseif ($ConcurrentInvitationCount -ne $null){
+                # Validate the value of ConcurrentInvitationCount
+                if ($ConcurrentInvitationCount -lt 1 -or $ConcurrentInvitationCount -gt 2) {
+                    Write-Error "The value of ConcurrentInvitationCount must be 1 or 2."
+                    throw
+                }
+                $null = $params.Remove("ConcurrentInvitationCount")
+                $params.Add('ConcurrentInvitationCount', $ConcurrentInvitationCount)
+            }  
+
+             $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsComplianceRecordingForCallQueueTemplate @params @httpPipelineArgs
+
+             # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.ComplianceRecordingForCallQueue]::new()
+            $output.ParseFromUpdateResponse($result)
+
+        } catch {
+           $customCmdletUtils.SendTelemetry()
             throw
         }
     }

@@ -8640,13 +8640,9 @@
                 <Label>BlockAllSubdomains</Label>
                 <PropertyName>BlockAllSubdomains</PropertyName>
               </ListItem>
-			  <ListItem>
-				<Label>ExternalAccessWithTrialTenants</Label>
-				<PropertyName>ExternalAccessWithTrialTenants</PropertyName>
-			  </ListItem>
               <ListItem>
-                <Label>CustomizeFederation</Label>
-                <PropertyName>CustomizeFederation</PropertyName>
+                <Label>ExternalAccessWithTrialTenants</Label>
+                <PropertyName>ExternalAccessWithTrialTenants</PropertyName>
               </ListItem>
             </ListItems>
           </ListEntry>
@@ -24388,7 +24384,7 @@
             </ListItems>
           </ListEntry>
         </ListEntries>
-		  
+
       </ListControl>
     </View>
     <View>
@@ -24458,9 +24454,9 @@
               <ListItem>
                 <PropertyName>GreetingsSettingAuthorizedUsers</PropertyName>
               </ListItem>
-			  <ListItem>
-				<PropertyName>UserNameExtension</PropertyName>
-			  </ListItem>
+              <ListItem>
+                <PropertyName>UserNameExtension</PropertyName>
+              </ListItem>
             </ListItems>
           </ListEntry>
         </ListEntries>
@@ -25010,33 +25006,33 @@
                 <Label>ChannelId</Label>
                 <PropertyName>ChannelId</PropertyName>
               </ListItem>
-				<ListItem>
-					<PropertyName>IsCallbackEnabled</PropertyName>
-				</ListItem>
-				<ListItem>
-					<PropertyName>CallbackRequestDtmf</PropertyName>
-				</ListItem>
-				<ListItem>
-					<PropertyName>WaitTimeBeforeOfferingCallbackInSecond</PropertyName>
-				</ListItem>
-				<ListItem>
-					<PropertyName>NumberOfCallsInQueueBeforeOfferingCallback</PropertyName>
-				</ListItem>
-				<ListItem>
-					<PropertyName>CallToAgentRatioThresholdBeforeOfferingCallback</PropertyName>
-				</ListItem>
-				<ListItem>
-					<PropertyName>CallbackOfferAudioFilePromptResourceId</PropertyName>
-				</ListItem>
-				<ListItem>
-					<PropertyName>CallbackOfferAudioFilePromptFileName</PropertyName>
-				</ListItem>
-				<ListItem>
-					<PropertyName>CallbackOfferTextToSpeechPrompt</PropertyName>
-				</ListItem>
-				<ListItem>
-					<PropertyName>ServiceLevelThresholdResponseTimeInSecond</PropertyName>
-				</ListItem>
+              <ListItem>
+                <PropertyName>IsCallbackEnabled</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>CallbackRequestDtmf</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>WaitTimeBeforeOfferingCallbackInSecond</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>NumberOfCallsInQueueBeforeOfferingCallback</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>CallToAgentRatioThresholdBeforeOfferingCallback</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>CallbackOfferAudioFilePromptResourceId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>CallbackOfferAudioFilePromptFileName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>CallbackOfferTextToSpeechPrompt</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ServiceLevelThresholdResponseTimeInSecond</PropertyName>
+              </ListItem>
               <ListItem>
                 <Label>CallbackEmailNotificationTarget</Label>
                 <PropertyName>CallbackEmailNotificationTargetId</PropertyName>
@@ -25044,6 +25040,27 @@
               <ListItem>
                 <Label>OboResourceAccounts</Label>
                 <PropertyName>DisplayOboResourceAccounts</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ShiftsTeamId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ShiftsSchedulingGroupId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ComplianceRecordingForCallQueueTemplateId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>TextAnnouncementForCR</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>CustomAudioFileAnnouncementForCR</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>TextAnnouncementForCRFailure</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>CustomAudioFileAnnouncementForCRFailure</PropertyName>
               </ListItem>
             </ListItems>
           </ListEntry>

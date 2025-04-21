@@ -7,7 +7,7 @@
 RootModule = './Microsoft.Teams.Policy.Administration.Cmdlets.Core.psm1'
 
 # Version number of this module.
-ModuleVersion = '14.1.41'
+ModuleVersion = '16.6.1'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -164,6 +164,12 @@ CmdletsToExport = @(
     'Set-CsTeamsCallingPolicy',
     'Grant-CsTeamsCallingPolicy',
 
+    'New-CsTeamsPersonalAttendantPolicy',
+    'Get-CsTeamsPersonalAttendantPolicy',
+    'Remove-CsTeamsPersonalAttendantPolicy',
+    'Set-CsTeamsPersonalAttendantPolicy',
+    'Grant-CsTeamsPersonalAttendantPolicy',
+
     'New-CsExternalAccessPolicy',
     'Get-CsExternalAccessPolicy',
     'Remove-CsExternalAccessPolicy',
@@ -295,7 +301,14 @@ CmdletsToExport = @(
     'Remove-CsTeamsNotificationAndFeedsPolicy',
 
     'Get-CsTeamsClientConfiguration',
-    'Set-CsTeamsClientConfiguration'
+    'Set-CsTeamsClientConfiguration',
+
+    'Get-CsTeamsRemoteLogCollectionConfiguration',
+    
+    'Get-CsTeamsRemoteLogCollectionDevice',
+    'Set-CsTeamsRemoteLogCollectionDevice',
+    'New-CsTeamsRemoteLogCollectionDevice',
+    'Remove-CsTeamsRemoteLogCollectionDevice'
 )
 
 # Variables to export from this module

@@ -2194,7 +2194,16 @@
             <Label>CallbackRequestDtmf</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>ComplianceRecordingForCallQueueTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ConferenceMode</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CustomAudioFileAnnouncementForCr</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CustomAudioFileAnnouncementForCrFailure</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>Description</Label>
@@ -2389,10 +2398,22 @@
             <Label>ServiceLevelThresholdResponseTimeInSecond</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>ShiftsSchedulingGroupId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ShiftsTeamId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ShouldOverwriteCallableChannelProperty</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>TenantId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TextAnnouncementForCr</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TextAnnouncementForCrFailure</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>ThreadId</Label>
@@ -2519,7 +2540,16 @@
                 <PropertyName>CallbackRequestDtmf</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>ComplianceRecordingForCallQueueTemplateId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>ConferenceMode</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CustomAudioFileAnnouncementForCr</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CustomAudioFileAnnouncementForCrFailure</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Description</PropertyName>
@@ -2714,10 +2744,22 @@
                 <PropertyName>ServiceLevelThresholdResponseTimeInSecond</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>ShiftsSchedulingGroupId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ShiftsTeamId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>ShouldOverwriteCallableChannelProperty</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TenantId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TextAnnouncementForCr</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TextAnnouncementForCrFailure</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ThreadId</PropertyName>
@@ -3371,6 +3413,134 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>UserSipUri</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ComplianceRecordingForCallQueueDomainModel</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ComplianceRecordingForCallQueueDomainModel</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>BotConcurrentInvitationCount</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>BotId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>BotRequiredBeforeCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>BotRequiredDuringCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PairedApplication</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>BotConcurrentInvitationCount</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>BotId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>BotRequiredBeforeCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>BotRequiredDuringCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PairedApplication</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ComplianceRecordingForCallQueueDtoModel</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ComplianceRecordingForCallQueueDtoModel</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>BotId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ConcurrentInvitationCount</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PairedApplication</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>RequiredBeforeCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>RequiredDuringCall</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>BotId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ConcurrentInvitationCount</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PairedApplication</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>RequiredBeforeCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>RequiredDuringCall</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -4581,7 +4751,16 @@
             <Label>CallbackRequestDtmf</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>ComplianceRecordingForCallQueueId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ConferenceMode</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CustomAudioFileAnnouncementForCr</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CustomAudioFileAnnouncementForCrFailure</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>DistributionList</Label>
@@ -4734,7 +4913,19 @@
             <Label>ServiceLevelThresholdResponseTimeInSecond</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>ShiftsSchedulingGroupId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ShiftsTeamId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ShouldOverwriteCallableChannelProperty</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TextAnnouncementForCr</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TextAnnouncementForCrFailure</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>ThreadId</Label>
@@ -4831,7 +5022,16 @@
                 <PropertyName>CallbackRequestDtmf</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>ComplianceRecordingForCallQueueId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>ConferenceMode</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CustomAudioFileAnnouncementForCr</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CustomAudioFileAnnouncementForCrFailure</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>DistributionList</PropertyName>
@@ -4984,7 +5184,19 @@
                 <PropertyName>ServiceLevelThresholdResponseTimeInSecond</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>ShiftsSchedulingGroupId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ShiftsTeamId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>ShouldOverwriteCallableChannelProperty</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TextAnnouncementForCr</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TextAnnouncementForCrFailure</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ThreadId</PropertyName>
@@ -5051,6 +5263,64 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>WelcomeTextToSpeechPrompt</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateComplianceRecordingForCallQueueRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateComplianceRecordingForCallQueueRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>BotId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ConcurrentInvitationCount</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PairedApplication</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>RequiredBeforeCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>RequiredDuringCall</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>BotId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ConcurrentInvitationCount</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PairedApplication</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>RequiredBeforeCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>RequiredDuringCall</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -14082,7 +14352,16 @@
             <Label>CallbackRequestDtmf</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>ComplianceRecordingForCallQueueId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ConferenceMode</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CustomAudioFileAnnouncementForCr</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CustomAudioFileAnnouncementForCrFailure</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>DistributionList</Label>
@@ -14235,7 +14514,19 @@
             <Label>ServiceLevelThresholdResponseTimeInSecond</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>ShiftsSchedulingGroupId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ShiftsTeamId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ShouldOverwriteCallableChannelProperty</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TextAnnouncementForCr</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TextAnnouncementForCrFailure</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>ThreadId</Label>
@@ -14332,7 +14623,16 @@
                 <PropertyName>CallbackRequestDtmf</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>ComplianceRecordingForCallQueueId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>ConferenceMode</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CustomAudioFileAnnouncementForCr</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CustomAudioFileAnnouncementForCrFailure</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>DistributionList</PropertyName>
@@ -14485,7 +14785,19 @@
                 <PropertyName>ServiceLevelThresholdResponseTimeInSecond</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>ShiftsSchedulingGroupId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ShiftsTeamId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>ShouldOverwriteCallableChannelProperty</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TextAnnouncementForCr</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TextAnnouncementForCrFailure</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ThreadId</PropertyName>
