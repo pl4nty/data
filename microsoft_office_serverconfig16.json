@@ -156,9 +156,6 @@
     <o:service o:name="OfficeOnlineContentVideos">
       <o:url>https://insertmedia.osi.office.net/insertmedia</o:url>
     </o:service>
-    <o:service o:name="HxOutlookTelemetryUrl">
-      <o:url>https://mobile.events.data.microsoft.com/OneCollector/1.0/</o:url>
-    </o:service>
     <o:service o:name="HubbleLoggingSvc">
       <o:url>https://hubble.officeapps.live.com/mediasvc/api/media/log</o:url>
     </o:service>
@@ -2436,7 +2433,7 @@
     <o:token o:name="OMEXReadyToolkitScanning">1.0.0.0:1</o:token>
     <o:token o:name="OMEXReadyUsageScanning">1.0.0.0:1</o:token>
     <o:token o:name="MonitoredFileExtensionsList">msix;msixbundle;slk</o:token>
-    <o:token o:name="BlockedFileExtensionsList">accdb;accde;accdw;accdt;accda;accdr;accdu;ade;adp;app;appcontent-ms;application;appref-ms;appx;appxbundle;asa;asp;aspx;asx;bas;bat;bgi;cab;cer;chm;cmd;cnt;com;cpl;crt;csh;der;deskthemepack;diagcab;exe;fxp;gadget;grp;hlp;hpj;hta;htc;img;inf;ins;iso;isp;its;jar;jnlp;js;jse;ksh;library-ms;lnk;mad;maf;mag;mam;maq;mar;mas;mat;mau;mav;maw;mcf;mda;mdb;mde;mdt;mdw;mdz;msc;msh;msh1;msh2;msh1xml;msh2xml;mshxml;msi;msix;msixbundle;msp;msstyles;mst;msu;ops;osd;pcd;pif;pl;plg;ppkg;prf;prg;printerexport;ps1;ps2;ps1xml;ps2xml;psc1;psc2;psd1;psdm1;pst;py;pyc;pyo;pyw;pyz;pyzw;rat;reg;scf;scr;sct;search-ms;settingcontent-ms;shb;shs;theme;themepack;tmp;url;vb;vbe;vbp;vbs;vhd;vhdx;vsmacros;vsw;webpnp;website;ws;wsc;wsf;wsh;xbap;xll;xnk</o:token>
+    <o:token o:name="BlockedFileExtensionsList">accdb;accde;accdw;accdt;accda;accdr;accdu;ade;adp;app;appcontent-ms;application;appref-ms;appx;appxbundle;asa;asp;aspx;asx;bas;bat;bgi;cab;cer;chm;cmd;cnt;com;cpl;crt;csh;der;deskthemepack;diagcab;exe;fxp;gadget;grp;hlp;hpj;hta;htc;img;inf;ins;iso;isp;its;jar;jnlp;js;jse;ksh;lnk;mad;maf;mag;mam;maq;mar;mas;mat;mau;mav;maw;mcf;mda;mdb;mde;mdt;mdw;mdz;msc;msh;msh1;msh2;msh1xml;msh2xml;mshxml;msi;msix;msixbundle;msp;msstyles;mst;msu;ops;osd;pcd;pif;pl;plg;ppkg;prf;prg;printerexport;ps1;ps2;ps1xml;ps2xml;psc1;psc2;psd1;psdm1;pst;py;pyc;pyo;pyw;pyz;pyzw;rat;reg;scf;scr;sct;settingcontent-ms;shb;shs;theme;themepack;tmp;url;vb;vbe;vbp;vbs;vhd;vhdx;vsmacros;vsw;webpnp;website;ws;wsc;wsf;wsh;xbap;xll;xnk</o:token>
     <o:token o:name="AMSIMaxStreamSizeForScanInBytes">16777216</o:token>
     <o:token o:name="AMSIContentTypesToScan">($^|embeddings)</o:token>
     <o:token o:name="ActivationFilterGUIDs">FFFF;b;{DF630910-1C1D-11D0-AE36-8C0F5E000000}|FFFF;t;{16D51579-A30B-4C8B-A276-0FF4DC41E755}|FFFF;t;{2CF0F912-098E-423C-BED5-15A7D0E52944}|FFFF;t;{6F54557F-7D6E-4fAD-8AA3-7907EB385A2F}|FFFF;t;{842A1268-6E6A-465C-868F-8BC445B9828F}|FFFF;t;{CC5BBEC3-DB4A-4BED-828D-08D78EE3E1ED}|FFFF;t;{CF646147-D47B-48DD-8476-C942DBEBE9A2}|FFFF;t;{EDFDC420-2CF5-4F72-ACBF-4BB0A235B445}|FFFF;t;{F414C260-6AC0-11CF-B6D1-00AA00BBBB58}|FFFF;t;{F414C262-6AC0-11CF-B6D1-00AA00BBBB58}|</o:token>
