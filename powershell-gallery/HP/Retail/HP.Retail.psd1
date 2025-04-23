@@ -1,5 +1,5 @@
 # 
-#  Copyright 2018-2024 HP Development Company, L.P.
+#  Copyright 2018-2025 HP Development Company, L.P.
 #  All Rights Reserved.
 # 
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -14,12 +14,12 @@
 @{
 
   RootModule = 'HP.Retail.psm1'
-  #FullModuleVersion = '1.8.1.898'
-  ModuleVersion = '1.8.1'
+  #FullModuleVersion = '1.8.2.957'
+  ModuleVersion = '1.8.2'
   GUID = '735c53e1-1a4c-4512-88a6-77137a8ba45a'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'
-  Copyright = '(C) Copyright 2018-2024 HP Development Company, L.P.'
+  Copyright = '(C) Copyright 2018-2025 HP Development Company, L.P.'
   Description = 'Retail Point of Sale Module for HP Client Management Script Library'
   PowerShellVersion = '5.1'
 

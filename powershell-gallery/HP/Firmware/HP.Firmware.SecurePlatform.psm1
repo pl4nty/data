@@ -1,5 +1,5 @@
 #
-#  Copyright 2018-2024 HP Development Company, L.P.
+#  Copyright 2018-2025 HP Development Company, L.P.
 #  All Rights Reserved.
 #
 # NOTICE:  All information contained herein is, and remains the property of HP Inc.
@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.1\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
 }
 
 <#
@@ -46,8 +46,14 @@ function Get-HPSecurePlatformState {
   param()
   $mi_result = 0
   $data = New-Object -TypeName provisioning_data_t
-  $c = '[DfmNativeSecurePlatform]::get_secureplatform_provisioning' + (Test-OSBitness) + '([ref]$data,[ref]$mi_result);'
-  $result = Invoke-Expression -Command $c
+ 
+  if((Test-OSBitness) -eq 32){
+    $result = [DfmNativeSecurePlatform]::get_secureplatform_provisioning32([ref]$data,[ref]$mi_result);
+  }
+  else {
+    $result = [DfmNativeSecurePlatform]::get_secureplatform_provisioning64([ref]$data,[ref]$mi_result);
+  }
+
   Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x04
 
   $kek_mod = $data.kek_mod
@@ -226,9 +232,15 @@ function New-HPSecurePlatformEndorsementKeyProvisioningPayload {
 
   $opaque = New-Object opaque4096_t
   $opaqueLength = 4096
-  $mi_result = 0
-  $cmd = '[DfmNativeSecurePlatform]::get_ek_provisioning_data' + (Test-OSBitness) + '($crt,$($crt.Count),$BIOSPassword, $passwordLength, [ref]$opaque, [ref]$opaqueLength,  [ref]$mi_result);'
-  $result = Invoke-Expression -Command $cmd
+  $mi_result = 0  
+
+  if((Test-OSBitness) -eq 32){
+    $result = [DfmNativeSecurePlatform]::get_ek_provisioning_data32($crt,$($crt.Count),$BIOSPassword, $passwordLength, [ref]$opaque, [ref]$opaqueLength,  [ref]$mi_result);
+  }
+  else {
+    $result = [DfmNativeSecurePlatform]::get_ek_provisioning_data64($crt,$($crt.Count),$BIOSPassword, $passwordLength, [ref]$opaque, [ref]$opaqueLength,  [ref]$mi_result);
+  }
+
   Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x04
 
   $output = New-Object -TypeName PortableFileFormat
@@ -628,44 +640,100 @@ function Set-HPSecurePlatformPayload {
   $pbytes = $type.Data
   Write-Verbose "Setting payload from document with type $($type.purpose)"
 
-  $cmd = $null
+  $result = $null
   switch ($type.purpose) {
     "hp:provision:endorsementkey" {
-      $cmd = '[DfmNativeSecurePlatform]::set_ek_provisioning' + (Test-OSBitness) + '($pbytes,$pbytes.length, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSecurePlatform]::set_ek_provisioning32($pbytes,$pbytes.length, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSecurePlatform]::set_ek_provisioning64($pbytes,$pbytes.length, [ref]$mi_result);
+      }
     }
     "hp:provision:signingkey" {
-      $cmd = '[DfmNativeSecurePlatform]::set_sk_provisioning' + (Test-OSBitness) + '($pbytes,$pbytes.length, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSecurePlatform]::set_sk_provisioning32($pbytes,$pbytes.length, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSecurePlatform]::set_sk_provisioning64($pbytes,$pbytes.length, [ref]$mi_result);
+      }
     }
     "hp:surerecover:provision:os_image" {
-      $cmd = '[DfmNativeSureRecover]::set_surerecover_osr_provisioning' + (Test-OSBitness) + '($pbytes,$pbytes.length, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSureRecover]::set_surerecover_osr_provisioning32($pbytes,$pbytes.length, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSureRecover]::set_surerecover_osr_provisioning64($pbytes,$pbytes.length, [ref]$mi_result);
+      }
     }
     "hp:surerecover:provision:recovery_image" {
-      $cmd = '[DfmNativeSureRecover]::set_surerecover_re_provisioning' + (Test-OSBitness) + '($pbytes,$pbytes.length, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSureRecover]::set_surerecover_re_provisioning32($pbytes,$pbytes.length, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSureRecover]::set_surerecover_re_provisioning64($pbytes,$pbytes.length, [ref]$mi_result);
+      }
     }
     "hp:surerecover:failover:os_image" {
       if (-not (Get-HPSureRecoverState).ImageIsProvisioned) {
         throw [System.IO.InvalidDataException]"Custom OS Recovery Image is required to configure failover"
       }
-      $cmd = '[DfmNativeSureRecover]::set_surerecover_osr_failover' + (Test-OSBitness) + '($pbytes,$pbytes.length,[ref]$mi_result);'
+
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSureRecover]::set_surerecover_osr_failover32($pbytes,$pbytes.length,[ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSureRecover]::set_surerecover_osr_failover64($pbytes,$pbytes.length,[ref]$mi_result);
+      }
     }
     "hp:surerecover:deprovision" {
-      $cmd = '[DfmNativeSureRecover]::set_surerecover_deprovision_opaque' + (Test-OSBitness) + '($pbytes,$pbytes.length, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSureRecover]::set_surerecover_deprovision_opaque32($pbytes,$pbytes.length, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSureRecover]::set_surerecover_deprovision_opaque64($pbytes,$pbytes.length, [ref]$mi_result);
+      }
     }
     "hp:surerecover:scheduler" {
-      $cmd = '[DfmNativeSureRecover]::set_surerecover_schedule' + (Test-OSBitness) + '($pbytes,$pbytes.length, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSureRecover]::set_surerecover_schedule32($pbytes,$pbytes.length, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSureRecover]::set_surerecover_schedule64($pbytes,$pbytes.length, [ref]$mi_result);
+      }
     }
     "hp:surerecover:configure" {
-      $cmd = '[DfmNativeSureRecover]::set_surerecover_configuration' + (Test-OSBitness) + '($pbytes,$pbytes.length, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSureRecover]::set_surerecover_configuration32($pbytes,$pbytes.length, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSureRecover]::set_surerecover_configuration64($pbytes,$pbytes.length, [ref]$mi_result);
+      }
     }
     "hp:surerecover:trigger" {
-      $cmd = '[DfmNativeSureRecover]::set_surerecover_trigger' + (Test-OSBitness) + '($pbytes,$pbytes.length, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSureRecover]::set_surerecover_trigger32($pbytes,$pbytes.length, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSureRecover]::set_surerecover_trigger64($pbytes,$pbytes.length, [ref]$mi_result);
+      }
     }
     "hp:surerecover:service_event" {
-      $cmd = '[DfmNativeSureRecover]::raise_surerecover_service_event_opaque' + (Test-OSBitness) + '($null,0, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSureRecover]::raise_surerecover_service_event_opaque32($null,0, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSureRecover]::raise_surerecover_service_event_opaque64($null,0, [ref]$mi_result);
+      }
     }
     "hp:surerrun:manifest" {
       $mbytes = $type.Meta1
-      $cmd = '[DfmNativeSureRun]::set_surererun_manifest' + (Test-OSBitness) + '($pbytes,$pbytes.length, $mbytes, $mbytes.length, [ref]$mi_result);'
+      if((Test-OSBitness) -eq 32){
+        $result = [DfmNativeSureRun]::set_surererun_manifest32($pbytes,$pbytes.length, $mbytes, $mbytes.length, [ref]$mi_result);
+      }
+      else {
+        $result = [DfmNativeSureRun]::set_surererun_manifest64($pbytes,$pbytes.length, $mbytes, $mbytes.length, [ref]$mi_result);
+      }
     }
     "hp:sureadmin:biossetting" {
       $Payload | Set-HPPrivateBIOSSettingValuePayload -Verbose:$VerbosePreference
@@ -683,8 +751,8 @@ function Set-HPSecurePlatformPayload {
       throw [System.IO.InvalidDataException]"Document type $($type.purpose) not recognized"
     }
   }
-  if ($cmd) {
-    $result = Invoke-Expression -Command $cmd
+
+  if ($result) {
     Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x04
   }
 }

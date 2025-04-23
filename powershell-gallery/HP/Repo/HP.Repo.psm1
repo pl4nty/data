@@ -1,5 +1,5 @@
 # 
-#  Copyright 2018-2024 HP Development Company, L.P.
+#  Copyright 2018-2025 HP Development Company, L.P.
 #  All Rights Reserved.
 # 
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -20,7 +20,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.1\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
 }
 
 enum ErrorHandling

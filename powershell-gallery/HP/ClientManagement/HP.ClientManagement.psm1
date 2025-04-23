@@ -1,5 +1,5 @@
 #
-#  Copyright 2018-2024 HP Development Company, L.P.
+#  Copyright 2018-2025 HP Development Company, L.P.
 #  All Rights Reserved.
 #
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.1\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
 }
 
 <#
@@ -241,17 +241,31 @@ function Get-HPBIOSVersion {
   }
   if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
+  
   $obj = Get-CimInstance @params -ErrorAction stop
   $verfield = getWmiField $obj "SMBIOSBIOSVersion"
-  $ver = $null
-
   Write-Verbose "Received object with $verfield"
-  try {
-    $ver = extractBIOSVersion $verfield
+
+  $ver = $null
+  $ver = extractBIOSVersion $verfield
+  
+  if ($includeFamily.IsPresent) { 
+
+    # check if a BIOS family is available in the version field
+    $biosFamily = $verfield.Split()[0]  
+
+    if ($biosFamily -ne $ver) {
+      $result = $ver + " " + $biosFamily
+    }
+    else { 
+      Write-Verbose "No BIOS family detected"
+      $result = $ver 
+    }
   }
-  catch { throw [System.InvalidOperationException]"The BIOS version on this system could not be parsed. This BIOS may not be supported." }
-  if ($includeFamily.IsPresent) { $result = $ver + " " + $verfield.Split()[0] }
-  else { $result = $ver }
+  else { 
+    $result = $ver 
+  }
+
   $result.TrimStart("0").trim()
 }
 
@@ -2394,7 +2408,8 @@ function Get-HPCMSLEnvironment {
     'HP.Repo',
     'HP.SmartExperiences',
     'HP.Displays',
-    'HP.Security'
+    'HP.Security',
+    'HP.Docks'
   )
 
   $modulesFullVersion = @{}
@@ -3099,6 +3114,10 @@ function extractBIOSVersion {
   if ($found) {
     $ver = $matches[1]
     Write-Verbose "BIOS version extracted=[$ver]"
+  }
+  else {
+    Write-Verbose "The BIOS version on this system could not be parsed. This BIOS may not be supported but continuing anyways."
+    $ver = $BIOSVersion
   }
 
   $ver

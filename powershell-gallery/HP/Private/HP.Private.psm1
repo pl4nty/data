@@ -1,5 +1,5 @@
 #
-#  Copyright 2018-2024 HP Development Company, L.P.
+#  Copyright 2018-2025 HP Development Company, L.P.
 #  All Rights Reserved.
 #
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -1420,9 +1420,11 @@ function validateWmiResultInCategory {
         0x0b { throw [UnauthorizedAccessException]"The caller does not have permissions to perform this operation." }
         0x0e { throw [UnauthorizedAccessException]"The operation could not be completed, possibly due to a bios password mismatch?" }
         0x0010 { throw [SystemException]"Invalid flash offset." }
+        0x0011 { throw [SystemException]"Invalid flash interface version" }
         0x0012 { throw [SystemException]"Invalid flash checksum" }
         0x0013 { throw [InvalidOperationException]"Flash-in-progress error" }
         0x0014 { throw [InvalidOperationException]"Flash-in-progress not set" }
+        0x0015 { throw [InvalidOperationException]"Flash not allowed" }
         default { throw [SystemException]"An unknown error $code has occured." }
       }
     }
@@ -1468,7 +1470,7 @@ function validateWmiResultInCategory {
 #>
 function Test-HPPrivateCustomResult {
   [CmdletBinding()]
-  param([int]$result,[int]$mi_result,[int]$category)
+  param([int]$result,[int64]$mi_result,[int]$category)
   Write-Verbose ("Checking result={0:x8}, mi_result={1:x8}, category={2:x4}" -f $result,$mi_result,$category)
   switch ($result) {
     0 { Write-Verbose ("Operation succeeded.") }
@@ -1563,8 +1565,13 @@ function Get-HPPrivatePublicKeyCoalesce {
     $exponent = 0
     $mi_result = 0
 
-    $c = '[X509Utilities]::get_public_key_from_pem' + (Test-OSBitness) + '($efile,[ref]$modulus, [ref]$modulus_size, [ref]$exponent);'
-    $result = Invoke-Expression -Command $c
+    if((Test-OSBitness) -eq 32){
+      $result = [X509Utilities]::get_public_key_from_pem32($efile,[ref]$modulus, [ref]$modulus_size, [ref]$exponent)
+    }
+    else {
+      $result = [X509Utilities]::get_public_key_from_pem64($efile,[ref]$modulus, [ref]$modulus_size, [ref]$exponent)
+    }
+
     Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x04
     New-Object -TypeName PSObject -Property @{
       Modulus = $modulus.raw[0..($modulus_size - 1)]
@@ -1981,7 +1988,7 @@ function Get-HPPrivateSecurePlatformIsProvisioned
   [boolean]$status = $false
 
   try {
-    $result = Invoke-Expression -Command 'Get-HPSecurePlatformState'
+    $result = Get-HPSecurePlatformState
 
     if ($result.State -eq "Provisioned") {
       $status = $true
@@ -2544,20 +2551,22 @@ function Set-HPPrivateBIOSSetting {
     }
     Write-Host -ForegroundColor Green $message
   }
-  if ($r.Return -ne 0) {
+  else {
 
     $localCounterForSet++
 
-    if ($r.Return -eq 5) {
+    if ($r.Return -eq 5) { # Invalid parameter
       Write-Host -ForegroundColor Magenta "Operation failed. Please make sure that you are passing a valid value."
       Write-Host -ForegroundColor Magenta "Some variable names or values may be case sensitive."
     }
+
     $Err = "$(biosErrorCodesToString($r.Return))"
     if ($ErrorHandling -eq 1) {
-      Write-Host -ForegroundColor Red "$($setting.Name) failed to set due to $Err"
+      Write-Host -ForegroundColor Red "Failed to set $($setting.Name) to $($setting.Value): $Err"
       $actualSetFailCounter.Value = $localCounterForSet
     }
-    throw $Err
+
+    throw "Failed to set $($setting.Name) to $($setting.Value). $Err."
   }
 }
 

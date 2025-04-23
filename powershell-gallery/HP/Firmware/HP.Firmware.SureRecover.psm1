@@ -1,5 +1,5 @@
 # 
-#  Copyright 2018-2024 HP Development Company, L.P.
+#  Copyright 2018-2025 HP Development Company, L.P.
 #  All Rights Reserved.
 # 
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.1\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
 }
 
 [Flags()] enum DeprovisioningTarget{
@@ -70,10 +70,19 @@ function Get-HPSureRecoverState
 {
   [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPSureRecoverState")]
   param([switch]$All)
+
   $mi_result = 0
   $data = New-Object -TypeName surerecover_state_t
-  $c = '[DfmNativeSureRecover]::get_surerecover_state' + (Test-OSBitness) + '([ref]$data,[ref]$mi_result);'
-  $result = Invoke-Expression -Command $c
+
+  if ((Test-OSBitness) -eq 32){
+    $result = [DfmNativeSureRecover]::get_surerecover_state32([ref]$data,[ref]$mi_result)
+  }
+  else {
+    $result = [DfmNativeSureRecover]::get_surerecover_state64([ref]$data,[ref]$mi_result)
+  }
+
+  # $result is either E_DFM_SUCCESS = 0 or E_DFM_FAILED_WITH_EXTENDED_ERROR = 0x80000711
+  # When $result is 0, $mi_result is also expected to be 0. Streamline the process by just checking $mi_result
   Test-HPPrivateCustomResult -result 0x80000711 -mi_result $mi_result -Category 0x05 -Verbose:$VerbosePreference
 
   $fixed_version = "$($data.subsystem_version[0]).$($data.subsystem_version[1])"
@@ -96,7 +105,7 @@ function Get-HPSureRecoverState
     Nonce = $data.Nonce
     BIOSFlags = ($data.os_flags -band 0xff)
     ImageIsProvisioned = (($data.flags -band 2) -ne 0)
-    AgentFlags = ($data.re_flags -band 0xff)
+    AgentFlags = ($data.re_flags -band 0xffff)
     AgentIsProvisioned = (($data.flags -band 1) -ne 0)
     RecoveryTimeBetweenRetries = $RecoveryTimeBetweenRetries
     RecoveryNumberOfRetries = $RecoveryNumberOfRetries
@@ -179,9 +188,15 @@ function Get-HPSureRecoverFailoverConfiguration
   $mi_result = 0
   $data = New-Object -TypeName surerecover_failover_configuration_t
   $index = 1
-  $c = '[DfmNativeSureRecover]::get_surerecover_failover_configuration' + (Test-OSBitness) + '([bool]$False,[int]$index,[ref]$data,[ref]$mi_result);'
+
   try {
-    $result = Invoke-Expression -Command $c
+    if((Test-OSBitness) -eq 32){
+      $result = [DfmNativeSureRecover]::get_surerecover_failover_configuration32([bool]$False,[int]$index,[ref]$data,[ref]$mi_result)
+    }
+    else {
+      $result = [DfmNativeSureRecover]::get_surerecover_failover_configuration64([bool]$False,[int]$index,[ref]$data,[ref]$mi_result)
+    }
+
     Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x05 -Verbose:$VerbosePreference
   }
   catch {
@@ -540,8 +555,13 @@ function New-HPSureRecoverImageConfigurationPayload
     Write-Verbose "New version number is $version"
   }
 
-  $cmd = '[DfmNativeSureRecover]::get_surerecover_provisioning_opaque' + (Test-OSBitness) + '($Nonce, $Version, $OKBytes,$($OKBytes.Count),$Username, $Password, $($Url.ToString()), [ref]$opaque, [ref]$opaqueLength,  [ref]$mi_result);'
-  $result = Invoke-Expression -Command $cmd
+  if((Test-OSBitness) -eq 32){
+    $result = [DfmNativeSureRecover]::get_surerecover_provisioning_opaque32($Nonce, $Version, $OKBytes,$($OKBytes.Count),$Username, $Password, $($Url.ToString()), [ref]$opaque, [ref]$opaqueLength,  [ref]$mi_result)
+  }
+  else {
+    $result = [DfmNativeSureRecover]::get_surerecover_provisioning_opaque64($Nonce, $Version, $OKBytes,$($OKBytes.Count),$Username, $Password, $($Url.ToString()), [ref]$opaque, [ref]$opaqueLength,  [ref]$mi_result)
+  }
+
   Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x05
 
   $payload = $opaque.raw[0..($opaqueLength - 1)]
@@ -966,7 +986,7 @@ function New-HPSureRecoverSchedulePayload
   InstallManageabilitySuite = 16 => Install current components of the Manageability Suite included on the DRDVD
   InstallSecuritySuite = 32 => Install current components of the Security Suite included on the DRDVD 
   RollbackPrevention = 64 => Enforce rollback prevention
-
+  EnableOSUpgrade = 256 => Enable OS upgrade with approproiate DPK 
   Please note that the Image Type AgentFlags DRDVD, CorporateReadyWithOffice, and CorporateReadyWithoutOffice are mutually exclusive. If you choose to set an Image type flag, you can only set one of the three flags.
 
 .PARAMETER OutputFile
@@ -1234,8 +1254,13 @@ function New-HPSureRecoverFailoverConfigurationPayload
   $mi_result = 0
   [byte]$index = 1
 
-  $cmd = '[DfmNativeSureRecover]::get_surerecover_failover_opaque' + (Test-OSBitness) + '($Nonce, $Version, $index, $Username, $Password, $($Url.ToString()), [ref]$opaque, [ref]$opaqueLength, [ref]$mi_result);'
-  $result = Invoke-Expression -Command $cmd
+  if((Test-OSBitness) -eq 32){
+    $result = [DfmNativeSureRecover]::get_surerecover_failover_opaque32($Nonce, $Version, $index, $Username, $Password, $($Url.ToString()), [ref]$opaque, [ref]$opaqueLength, [ref]$mi_result);
+  }
+  else {
+    $result = [DfmNativeSureRecover]::get_surerecover_failover_opaque64($Nonce, $Version, $index, $Username, $Password, $($Url.ToString()), [ref]$opaque, [ref]$opaqueLength, [ref]$mi_result);
+  }
+
   Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x05
 
   [byte[]]$payload = $opaque.raw[0..($opaqueLength - 1)]
@@ -1492,8 +1517,14 @@ function Invoke-HPSureRecoverTriggerUpdate
   param()
 
   $mi_result = 0
-  $cmd = '[DfmNativeSureRecover]::raise_surerecover_service_event_opaque' + (Test-OSBitness) + '($null, $null, [ref]$mi_result);'
-  $result = Invoke-Expression -Command $cmd
+
+  if((Test-OSBitness) -eq 32){
+    $result = [DfmNativeSureRecover]::raise_surerecover_service_event_opaque32($null, $null, [ref]$mi_result)
+  }
+  else{
+    $result = [DfmNativeSureRecover]::raise_surerecover_service_event_opaque64($null, $null, [ref]$mi_result)
+  }
+
   Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x05
 }
 

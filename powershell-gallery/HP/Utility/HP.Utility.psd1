@@ -1,5 +1,5 @@
 # 
-#  Copyright 2018-2024 HP Development Company, L.P.
+#  Copyright 2018-2025 HP Development Company, L.P.
 #  All Rights Reserved.
 # 
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -15,8 +15,8 @@
   RootModule = 'HP.Utility.psm1'
 
   # Version number of this module.
-  #FullModuleVersion = '1.8.1.898'
-  ModuleVersion = '1.8.1'
+  #FullModuleVersion = '1.8.2.957'
+  ModuleVersion = '1.8.2'
 
   # ID used to uniquely identify this module
   GUID = 'E8C64CAB-D4F9-4994-AFC8-3DB040B0AEBE'
@@ -28,7 +28,7 @@
   CompanyName = 'HP Inc'
 
   # Copyright statement for this module
-  Copyright = '(C) Copyright 2018-2024 HP Development Company, L.P.'
+  Copyright = '(C) Copyright 2018-2025 HP Development Company, L.P.'
 
 
   # Description of the functionality provided by this module

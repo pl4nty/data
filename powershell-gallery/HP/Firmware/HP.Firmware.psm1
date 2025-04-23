@@ -1,5 +1,5 @@
 #
-#  Copyright 2018-2024 HP Development Company, L.P.
+#  Copyright 2018-2025 HP Development Company, L.P.
 #  All Rights Reserved.
 #
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.1\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
 }
 
 if ($PSEdition -eq "Core") {
@@ -1214,14 +1214,15 @@ function Set-HPPrivateFlashHPDevice {
       32 { $result = [DfmNativeBios]::flash_hp_device32([string]$ResolvedFile,[ref]$Cred,[ref]$mi_result,$Callback,$FilenameHint,$Efi_path,$Authorization,$AuthorizationLength,[bool]$Offline,[bool]$NoWait) }
       64 { $result = [DfmNativeBios]::flash_hp_device64([string]$ResolvedFile,[ref]$Cred,[ref]$mi_result,$Callback,$FilenameHint,$Efi_path,$Authorization,$AuthorizationLength,[bool]$Offline,[bool]$NoWait) }
     }
-    Test-HPPrivateCustomResult -result $result -Category 0x02 -mi_result $mi_result
+
+    Test-HPPrivateCustomResult -result $result -Category 0x02 -mi_result $mi_result -Verbose:$VerbosePreference
   }
   catch [System.Management.Automation.MethodInvocationException]
   {
     displayInvocationException ($_.Exception)
   }
 
-  Test-HPPrivateCustomResult -result 0x80000711 -mi_result $result -Category 0x02
+  Test-HPPrivateCustomResult -result 0x80000711 -mi_result $mi_result -Category 0x02 -Verbose:$VerbosePreference
 }
 
 
@@ -1475,8 +1476,14 @@ function Get-HPPrivateRetailConfiguration
   param()
   $configuration = New-Object RetailInformation
   $mi_result = 0
-  $cmd = '[DfmNativeRetail]::get_retail_dock_configuration_' + (Test-OSBitness) + '([ref]$configuration, [ref]$mi_result)';
-  $result = Invoke-Expression -Command $cmd
+
+  if ((Test-OSBitness) -eq 32){
+    $result = [DfmNativeRetail]::get_retail_dock_configuration_32([ref]$configuration, [ref]$mi_result)
+  }
+  else {
+    $result = [DfmNativeRetail]::get_retail_dock_configuration_64([ref]$configuration, [ref]$mi_result)
+  }
+
   Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x04
   return $configuration
 }
@@ -1502,8 +1509,13 @@ function Set-HPPrivateRetailConfiguration
   )
   $cfg = $configuration
   $mi_result = 0
-  $cmd = '[DfmNativeRetail]::set_retail_dock_configuration_' + (Test-OSBitness) + '([ref]$cfg, [ref]$mi_result)';
-  $result = Invoke-Expression -Command $cmd
+
+  if ((Test-OSBitness) -eq 32){
+    $result = [DfmNativeRetail]::set_retail_dock_configuration_32([ref]$cfg, [ref]$mi_result)
+  }
+  else {
+    $result = [DfmNativeRetail]::set_retail_dock_configuration_64([ref]$cfg, [ref]$mi_result)
+  }
   Test-HPPrivateCustomResult -result $result -mi_result $mi_result -Category 0x04
 }
 

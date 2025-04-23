@@ -1,5 +1,5 @@
 # 
-#  Copyright 2018-2024 HP Development Company, L.P.
+#  Copyright 2018-2025 HP Development Company, L.P.
 #  All Rights Reserved.
 # 
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -23,14 +23,14 @@
   GUID = 'df713360-19e2-481c-8bcb-f8b4bf70c08b'
 
   # Version number of this module.
-  #FullModuleVersion = '1.8.1.898'
-  ModuleVersion = '1.8.1'
+  #FullModuleVersion = '1.8.2.957'
+  ModuleVersion = '1.8.2'
 
   # Company or vendor of this module
   CompanyName = 'HP Inc'
 
   # Copyright statement for this module
-  Copyright = '(C) Copyright 2018-2024 HP Development Company, L.P.'
+  Copyright = '(C) Copyright 2018-2025 HP Development Company, L.P.'
 
   # Description of the functionality provided by this module
   Description = 'Softpaq repository management modules'
