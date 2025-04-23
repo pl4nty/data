@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1661730,
+    "size": 1661713,
     "file_count": 160
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10576235,
+    "size": 10576241,
     "file_count": 211
   },
   {
@@ -66,8 +66,8 @@
   },
   {
     "name": "blink",
-    "size": 31949830,
-    "file_count": 3921
+    "size": 31958849,
+    "file_count": 3923
   },
   {
     "name": "boringssl",
@@ -191,8 +191,8 @@
   },
   {
     "name": "glib",
-    "size": 51968696,
-    "file_count": 2344
+    "size": 52102857,
+    "file_count": 2345
   },
   {
     "name": "glslang",
@@ -301,8 +301,8 @@
   },
   {
     "name": "libc++",
-    "size": 6070075,
-    "file_count": 930
+    "size": 6075534,
+    "file_count": 931
   },
   {
     "name": "libdisplay-info",
@@ -396,7 +396,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19608555,
+    "size": 19611627,
     "file_count": 19
   },
   {
@@ -416,7 +416,7 @@
   },
   {
     "name": "nasm",
-    "size": 265403,
+    "size": 285070,
     "file_count": 14
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "perfetto",
-    "size": 1492801,
+    "size": 1483804,
     "file_count": 80
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 523468,
+    "size": 524264,
     "file_count": 15
   },
   {
@@ -536,8 +536,8 @@
   },
   {
     "name": "sqlite",
-    "size": 1368681,
-    "file_count": 9
+    "size": 505808,
+    "file_count": 8
   },
   {
     "name": "subresource-filter-ruleset",
@@ -586,7 +586,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5656812,
+    "size": 5664991,
     "file_count": 164
   },
   {
@@ -606,7 +606,7 @@
   },
   {
     "name": "webrtc",
-    "size": 219612,
+    "size": 219600,
     "file_count": 62
   },
   {

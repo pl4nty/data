@@ -114,6 +114,7 @@ def clean_copy(chromium_path, copy_path, platform):
         src/'chrome'/'test'/'data'/'chromeos'/'3p_diagnostics',
         src/'chrome'/'test'/'data'/'chromeos'/'app_mode'/'apps_and_extensions',  # noqa: E501
         src/'chrome'/'test'/'data'/'policy',
+        src/'chrome'/'updater'/'test'/'data'/'selfupdate_test_key.der',
         src/'chromeos'/'components'/'test'/'data'/'onc',
         src/'components'/'subresource_filter'/'core'/'common'/'perftests'/'data',  # noqa: E501
         src/'components'/'test'/'data'/'autofill',
