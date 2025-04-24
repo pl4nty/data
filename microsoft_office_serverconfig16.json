@@ -46,37 +46,31 @@
     </o:service>
     <o:service o:name="MruDocuments" o:authentication="2">
       <o:url>https://ocws.officeapps.live.com/ocs/docs/recent</o:url>
-      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="MruPlaces" o:authentication="2">
       <o:url>https://ocws.officeapps.live.com/ocs/locations/recent</o:url>
-      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="MruV2Service" o:authentication="2">
       <o:url>https://ocws.officeapps.live.com/ocs/v2/recent</o:url>
-      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="MruDocumentsSharedWithMe" o:authentication="2">
       <o:url>https://ocws.officeapps.live.com/ocs/docs/sharedwithme</o:url>
-      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="MruDocumentsSharedWithMeV2" o:authentication="2">
       <o:url>https://ocws.officeapps.live.com/ocs/docs/v2.0/sharedwithme</o:url>
-      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="MruQuickaccessLocationsAndJoinedTeams" o:authentication="2">
       <o:url>https://ocws.officeapps.live.com/ocs/quickaccess/sitesandteams</o:url>
-      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
@@ -236,7 +230,6 @@
     </o:service>
     <o:service o:name="RoamingSettings" o:authentication="2">
       <o:url>https://roaming.officeapps.live.com/rs/v1/settings</o:url>
-      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
@@ -2520,15 +2513,15 @@
   </o:tokens>
   <o:signin>
     <o:tickets o:idprovider="1">
-      <o:ticket o:policy="MBI_SSL_SHORT" o:target="ssl.live.com"/>
-      <o:ticket o:policy="MBI_SSL_SHORT" o:target="officeapps.live.com"/>
+      <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="ssl.live.com"/>
+      <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
     </o:tickets>
     <o:tickets o:idprovider="2">
-      <o:ticket o:policy="MBI" o:target="sharepoint.com"/>
-      <o:ticket o:policy="MBI" o:target="officeapps.live.com"/>
+      <o:ticket o:policy="MBI" o:idprovider="2" o:target="sharepoint.com"/>
+      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
     </o:tickets>
     <o:tickets o:idprovider="3">
-      <o:ticket o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:ticket o:idprovider="3" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:tickets>
   </o:signin>
 </o:OfficeConfig>
