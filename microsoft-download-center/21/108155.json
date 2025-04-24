@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Intune Windows Company Portal",
+    "downloadDescription": "Microsoft Intune helps organizations manage access to corporate apps, data, and resources. Company Portal is the app that lets you, as an employee of your company, securely access those resources.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CompanyPortal-Universal-Production_x64_x86_ARM_ARM64 (1).appxupload_Windows10_PreinstallKit.zip",
+            "url": "https://download.microsoft.com/download/2640447f-3415-45c9-add1-a62ac5f06f4e/CompanyPortal-Universal-Production_x64_x86_ARM_ARM64 (1).appxupload_Windows10_PreinstallKit.zip",
+            "size": "118257776",
+            "version": "11.2.1393.0",
+            "datePublished": "4/23/2025 10:12:59 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Intune helps organizations manage access to corporate apps, data, and resources. Company Portal is the app that lets you, as an employee of your company, securely access those resources.\n\nBefore you can use this app, make sure your IT admin has set up your work account. Your company must also have a subscription to Microsoft Intune. A note about Intune: every organization has different access requirements, and will use Intune in ways that they determine will best manage their information. Some functionality might be unavailable in certain countries. If you have questions about how this app is being used within your organization, your company\u2019s IT administrator should have those answers for you. Microsoft, your network provider, and your device\u2019s manufacturer do not know how Intune will be used by your organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.2.1393.0",
+    "detailsSection_file_name": [
+        "CompanyPortal-Universal-Production_x64_x86_ARM_ARM64 (1).appxupload_Windows10_PreinstallKit.zip"
+    ],
+    "detailsSection_file_size": [
+        "112.8 MB"
+    ],
+    "detailsSection_file_date": "4/23/2025",
+    "systemRequirementsSection": "Supported Operating Systems: Windows 10, Windows 11\nAvailable on: PC, Surface Hub, HoloLens\nOS: Windows 10 version 18362.0 or higher\nArchitecture: x86, x64, Arm, Arm64",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "After downloading this app, follow instructions here to add the app to Intune for distribution: https://learn.microsoft.com/en-us/mem/intune/apps/lob-apps-windows",
+    "additionalInformationSection": "This DownloadCenter link is provided for those customers who cannot use Microsoft Store due to limitations. Download using Microsoft Store app or https://apps.microsoft.com/detail/9WZDNCRFJ3PZ is recommended.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108155",
+    "downloadPreload": true
+}
