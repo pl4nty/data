@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Script to identify SharePoint web parts to be migrated",
+    "downloadDescription": "Identify the SharePoint pages in your organization to be changed to use the newer Conversations web part instead of the deprecated Highlights web part",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Identify_SP_Pages_Migrated.zip",
+            "url": "https://download.microsoft.com/download/9d155fef-fa2d-4206-9733-652425eb8bba/Identify_SP_Pages_Migrated.zip",
+            "size": "5552",
+            "version": "1",
+            "datePublished": "4/23/2025 11:36:30 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PowerShell script to identify SharePoint page with legacy Viva Engage Web Parts and sample configuration files in JSON format.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Identify_SP_Pages_Migrated.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.4 KB"
+    ],
+    "detailsSection_file_date": "4/23/2025",
+    "systemRequirementsSection": "Operating Systems: all official PowerShell-supported operating systems\nPowerShell 5.1 or higher\nPnP PowerShell module\nAn Azure AD application registration with appropriate permissions. Follow PnP PowerShell app registration instructions",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol> \n<li>Select the <b>Download</b> button to start the download.</li> \n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li> \n<li>Select <b> Open file</b>, or find the file on your device and open it.</li> \n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108154",
+    "downloadPreload": true
+}
