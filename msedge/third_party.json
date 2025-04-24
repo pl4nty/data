@@ -31,7 +31,7 @@
   },
   {
     "name": "android_toolchain",
-    "size": 553960,
+    "size": 553776,
     "file_count": 8
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "name": "blink",
-    "size": 31958849,
+    "size": 31955831,
     "file_count": 3923
   },
   {
@@ -446,7 +446,7 @@
   },
   {
     "name": "openscreen",
-    "size": 508535,
+    "size": 508699,
     "file_count": 52
   },
   {
@@ -466,8 +466,8 @@
   },
   {
     "name": "perfetto",
-    "size": 1483804,
-    "file_count": 80
+    "size": 1473622,
+    "file_count": 79
   },
   {
     "name": "perl",
@@ -586,8 +586,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5664991,
-    "file_count": 164
+    "size": 5670289,
+    "file_count": 165
   },
   {
     "name": "vulkan_memory_allocator",
@@ -606,7 +606,7 @@
   },
   {
     "name": "webrtc",
-    "size": 219600,
+    "size": 219566,
     "file_count": 62
   },
   {
