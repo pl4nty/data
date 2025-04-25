@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14600522,
+    "size": 14600334,
     "file_count": 830
   },
   {
@@ -66,8 +66,8 @@
   },
   {
     "name": "blink",
-    "size": 31955831,
-    "file_count": 3923
+    "size": 31969854,
+    "file_count": 3926
   },
   {
     "name": "boringssl",
@@ -126,7 +126,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7314209,
+    "size": 7314148,
     "file_count": 29
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "glslang",
-    "size": 39677492,
-    "file_count": 3035
+    "size": 39719785,
+    "file_count": 3041
   },
   {
     "name": "googletest",
@@ -301,7 +301,7 @@
   },
   {
     "name": "libc++",
-    "size": 6075534,
+    "size": 6069927,
     "file_count": 931
   },
   {
@@ -571,7 +571,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1277240,
+    "size": 1279485,
     "file_count": 21
   },
   {
@@ -581,12 +581,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2148613,
+    "size": 2156009,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5670289,
+    "size": 5664733,
     "file_count": 165
   },
   {
