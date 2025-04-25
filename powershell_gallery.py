@@ -32,6 +32,7 @@ MODULES = [
     'HP.SmartExperiences',
     'HP.Displays',
     'HP.Security',
+    'HP.Docks',
 
     # VMware
     # TODO so many...
