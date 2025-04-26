@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Skype TX Controller Application",
+    "downloadDescription": "Skype TX Controller Application enables a single operator to control multiple Skype TX units. Please see the details page for additional information.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeTX.msi",
+            "url": "https://download.microsoft.com/download/b2999dff-6e6a-4ab9-afea-a01448ecf29f/SkypeTX.msi",
+            "size": "10698752",
+            "version": "2.25.424.1",
+            "datePublished": "4/25/2025 2:51:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Skype TX controller is a management solution for controlling multiple Skype TX units. Using this software, it is possible to manage multiple Skype TX channels and call any contact in your Skype contact list on up to 14 connected Skype TX units. Physical access to the Skype TX unit is not required during normal operation.\n\n2.25.424.1 is the latest Skype TX controller application.\n<b>What's new?</b>\n- This release enables interop scenarios with Microsoft Teams for Consumer.\n- Note that search only searches by email now and not by name.\n\n<b>More Information</b>\nSkype TX controller is a software package designed for use in Television production studios and other professional environments that enables you to send Skype calls as SD/HD-SDI video with embedded or balanced analogue audio, providing the best call quality available in an HD video format. Skype TX can:\n- Optimize the call quality and resizes and adjusts the video content to conform to standard television video resolutions\n- Monitor the call to determine quality and continuous Skype call both for both incoming and return audio and video\n- Switch to a still image or a snapshot of the video feed if the call drops below a resolution that you define\n- Prevent the video from reframing when Skype changes the aspect ratio\n- Embed the Skype watermark in the video output without using a separate graphics system\n\nSkype TX controller can run on any Skype TX client, on a Windows server or any Windows PC. At least one Skype TX unit is required to use with this download. Limited functionality will be available without a Skype TX unit. For more information on where to get a Skype TX unit, please visit our partner websites:\n\nNewtek \u2013 www.newtek.com\n\nQuicklink \u2013 www.quicklink.tv",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.25.424.1",
+    "detailsSection_file_name": [
+        "SkypeTX.msi"
+    ],
+    "detailsSection_file_size": [
+        "10.2 MB"
+    ],
+    "detailsSection_file_date": "4/25/2025",
+    "systemRequirementsSection": "<b>Supported Operating Systems</b>\n\nWindows 11, Windows 10, Windows 8, Windows 8.1\n\n<b>Other requirements for Skype TX Controller Application:</b>\nAt least 1 GHz processor\nAt least 512 MB of RAM\nCurrent installation of SkypeTX running on partner hardware",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\nDownload the file by clicking the download button and saving the file to your hard disk.\nRun the installer on your chosen hardware.\nSign into Skype using a valid Skype Name or Microsoft Account.\nAdd your Skype TX Clients in the Controller Application to connect to them.\nRefer to the SkypeTX User Guide for more information on operating the Skype TX Controller Application.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108159",
+    "downloadPreload": true
+}
