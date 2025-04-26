@@ -257,6 +257,11 @@ BASE_DECLARE_FEATURE(kEdgeShareSecondaryEnhancedCopyPaste);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kWindowsShare);
 
+// Controls the default state of windows share launch across all windows
+// versions
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kShareCoherence);
+
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kToolbarMoreMenuButtonsEnabled);
 
