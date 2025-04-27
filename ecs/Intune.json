@@ -20,29 +20,6 @@
             "FlightValue": true
         }
     },
-    "ConfigIDs": {
-        "AndroidRemoteHelp": "P-R-1572422-1-3",
-        "CLI_FireDrill_25": "P-R-1571412-2-2,P-D-1571243-1-3",
-        "CLI_SideCar": "P-R-1565344-8-6,P-R-1547133-8-5,P-R-1479872-8-14,P-D-1550352-1-2",
-        "Fundamentals": "P-R-1073747-1-7",
-        "Infra_Fundamentals": "P-D-1535906-1-4,P-D-1527854-1-8",
-        "SVC_AndroidSync": "P-R-1463997-8-12,P-R-1446347-8-11,P-R-1282250-8-12",
-        "SVC_CorpDeviceEnrollment": "P-R-1270986-8-26",
-        "SVC_DataInfra": "P-R-1426160-8-32",
-        "SVC_Dep": "P-R-1527547-10-6,P-R-1525965-10-7,P-R-1442347-8-14,P-R-1258636-8-12",
-        "SVC_DeviceCheckin": "P-R-1581502-10-18,P-R-1554129-1-8",
-        "SVC_DeviceFE": "P-R-1412292-8-12,P-R-1259833-8-10,P-R-1252953-8-14",
-        "SVC_IWService": "P-R-1453527-8-22,P-R-1225589-8-21,P-R-1225586-8-20",
-        "SVC_Monolith_MAM": "P-R-1522615-13-4,P-R-1291417-8-22,P-R-1248318-8-11",
-        "SVC_Pivot": "P-R-1432213-8-28",
-        "SVC_RAODJPlus": "P-R-1528781-10-6,P-R-1528782-10-5",
-        "SVC_Remediations": "P-R-1252206-8-39",
-        "SVC_RemoteAssist": "P-R-1115972-1-12",
-        "SVC_SideCar": "P-R-1292706-8-10",
-        "Segmentation": "P-D-1453539-1-3,P-D-1076137-1-7",
-        "Sidecar_Mac": "P-E-1128681-C1-15,P-R-1557484-1-3",
-        "ios_mam_tunnel_sdk": "P-D-1533638-1-3,P-D-1471266-1-4,P-D-1443873-1-7,P-D-1443758-1-11,P-D-1294350-1-5,P-D-1294349-1-4,P-D-1289355-1-2"
-    },
     "Fundamentals": {
         "FlightingV2": {
             "Fundamentals_Test": false

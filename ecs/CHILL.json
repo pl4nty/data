@@ -577,13 +577,5 @@
                 "Type": 2
             }
         }
-    },
-    "ConfigIDs": {
-        "CHILL_Floodgate": "P-D-1557905-1-2,P-D-1554177-1-2",
-        "ChillAdminCopilot": "P-R-1562851-1-9",
-        "ChillMicrosoftDefenderXdr": "P-R-1578179-1-4",
-        "ChillSharePoint": "P-R-1421849-1-5",
-        "ChillTeams": "P-R-1573772-4-8",
-        "ChillVivaGlint": "P-R-1542390-1-4,P-R-1542389-1-6"
     }
 }
