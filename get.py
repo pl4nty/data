@@ -21,6 +21,8 @@ def fetch_and_prettify_json(url, output_file, key=None, headers=None):
 
         # Prettifying JSON data
         if isinstance(json_data, dict):
+            json_data.pop("ConfigIDs", None)
+            json_data.pop("ExternalIpAddress", None)
             json_data.pop("Headers", None)
         pretty_json = json.dumps(json_data, indent=4, sort_keys=True)
 
