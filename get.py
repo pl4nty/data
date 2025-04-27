@@ -146,6 +146,8 @@ if __name__ == "__main__":
         
         # https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/DataBoxEdge/1.1.0/artifact/Az.DataBoxEdge.zip
         fetch_and_prettify_json("https://prod.api.toolbox.azure-test.net/api/tool", "microsoft_gov_toolbox.json")
+
+        fetch_and_prettify_json("https://learn.microsoft.com/en-us/product-style-guide-msft-internal/toc.json", "microsoft_style_guide.json")
         
         creds = DefaultAzureCredential()
         headers = {"Authorization": f"Bearer {creds.get_token('https://management.azure.com//.default').token}"}
