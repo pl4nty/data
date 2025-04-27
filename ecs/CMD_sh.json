@@ -502,7 +502,6 @@
         "EnablePartnerInactiveToPendingTranslation": false,
         "EnablePaymentTrusted": true,
         "EnablePermissionCheckInAutopilot": true,
-        "EnablePersistProvisionRecipeInCpcLevelForWorkspace": true,
         "EnablePolicyAllotment": true,
         "EnablePolicyAllotmentUX": true,
         "EnablePolicyAssignmentRecalculationForResize": true,
