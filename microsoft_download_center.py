@@ -279,13 +279,13 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
         description='Enumerate Microsoft download pages by ID')
-    parser.add_argument('--start', type=int, default=1,
+    parser.add_argument('--start', type=int, default=108100,
                         help='Starting ID number')
-    parser.add_argument('--end', type=int, default=100,
+    parser.add_argument('--end', type=int, default=108300,
                         help='Ending ID number')
-    parser.add_argument('--threads', type=int, default=25,
+    parser.add_argument('--threads', type=int, default=16,
                         help='Number of threads to use (default: 25)')
-    parser.add_argument('--delay', type=float, default=0.1,
+    parser.add_argument('--delay', type=float, default=0.01,
                         help='Delay between requests in seconds (default: 0.1)')
     parser.add_argument('--output-dir', type=str, default='.',
                         help='Directory to save JSON files (default: current directory)')
