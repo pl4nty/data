@@ -697,6 +697,7 @@
         "EnableWindows365GuidesSectionInUX": true,
         "EnableWorkspaceEntityBackfill": true,
         "EnableWorkspaceGetUserWithStatus": true,
+        "EnableWvdHoboCogsExport": true,
         "EnableWvdSubscriptionDispatchInAllocation": true,
         "Enable_ExcludeCoreError": true,
         "Enable_GCB_IWS": true,

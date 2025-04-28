@@ -545,6 +545,7 @@
         "EnableKeepFailedVMForRestore": true,
         "EnableKeepingVMsForAllFailures": true,
         "EnableKustoTelemetryCommands": true,
+        "EnableKustoTelemetryPrincipals": true,
         "EnableKustoTelemetryQueries": true,
         "EnableLanguagePackUrlV2": true,
         "EnableLastestVesionForVDAWorkstationSetup": true,
