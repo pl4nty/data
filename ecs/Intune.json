@@ -136,7 +136,6 @@
     },
     "SVC_DataInfra": {
         "FlightingV2": {
-            "QBSFSICoreMigrationDuplicateBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true
         }
     },

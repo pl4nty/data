@@ -662,8 +662,8 @@
                                 "maxRetryDelayMs": 8000,
                                 "retryDelayMs": 1000
                             },
-                            "maxLoadTimeMs": 60000,
-                            "maxTimeToFirstByteMs": 10000,
+                            "maxLoadTimeMs": 120000,
+                            "maxTimeToFirstByteMs": 7000,
                             "timeoutRetry": {
                                 "maxNumRetry": 4,
                                 "maxRetryDelayMs": 0,
@@ -672,7 +672,9 @@
                         }
                     },
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3
+                    "liveSyncDurationCount": 3,
+                    "startLevel": -1,
+                    "testBandwidth": true
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
