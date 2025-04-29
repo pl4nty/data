@@ -1208,6 +1208,7 @@
         "UseSeparateEventHubForPolicy": true,
         "ValidateImageSizeForFrontline": true,
         "VerifyUserPresenceFromAVD": true,
+        "WCX_EnablePeerToPeerConnections": "true",
         "WCX_SelfHelp": true,
         "WCX_SelfHelp_UserNewHostingAppName": true,
         "WCX_SelfHelp_VSBAdmin_InAppUX": true,

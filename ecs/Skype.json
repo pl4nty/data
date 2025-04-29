@@ -592,6 +592,7 @@
     "ECSTest2": {
         "ResourceIdmatch": false
     },
+    "ECS_Scorecards_Test": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -655,9 +656,7 @@
             "hlsSettings": {
                 "hlsConfig": {
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3,
-                    "startLevel": -1,
-                    "testBandwidth": true
+                    "liveSyncDurationCount": 3
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
@@ -1563,6 +1562,7 @@
         "disableAutoFolderCreationInUpload": true,
         "disableGapDetectionBasedNotificationSyncForChannels": true,
         "dropResourceTokenRequests": false,
+        "dualPresenceEnabled": true,
         "ecsEnabledEduApps": [
             "bd9fb5cb-4d02-4cc6-a7f4-52a8a62d30b7",
             "9d17e873-c4c4-424d-869c-67f62a3d3174",
@@ -3178,8 +3178,6 @@
         "ECS_ADSP_VQE_unityInitialDAGCWithNoAAGC": "0",
         "ECS_AudioDL_Kingstone": "0",
         "EngineTimerIn100ns": "100000",
-        "NetworkIndicator_BandwidthPoorLimitBps": 12500000,
-        "NetworkIndicator_BandwidthPoorLimitHadVideoBps": 681250,
         "UseClockRateForCNSupport": "true"
     },
     "SkypeBilling": {
@@ -3975,7 +3973,37 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1"
+        "NrpRefactor265_naluCount": "1",
+        "ULLogUpload": {
+            "conditions": [
+                {
+                    "component": "calling.cqf",
+                    "level": "DEBUG4",
+                    "logId": 70115,
+                    "matchers": [
+                        {
+                            "arg": 0,
+                            "op": "=",
+                            "value": "0"
+                        },
+                        {
+                            "arg": 1,
+                            "op": "=",
+                            "value": "0"
+                        }
+                    ],
+                    "name": "condition #1"
+                }
+            ],
+            "experimentTarget": "Native",
+            "filters": [
+                {
+                    "component": "LMS.RtmCodecs_MLE_SVC",
+                    "level": "DEBUG4"
+                }
+            ],
+            "name": "Abcdefg #3811919"
+        }
     },
     "SkypeWebMedia": {
         "mediaAgent": {
