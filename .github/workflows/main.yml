@@ -64,7 +64,7 @@ jobs:
         uses: actions/ai-inference@main
         with:
           prompt-file: ../prompt
-          model: openai/gpt-4.1
+          model: ${{ vars.MODEL }}
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
