@@ -501,6 +501,7 @@
         "EnableUpdateDiskEncryptionAsyncWithSDK": true,
         "EnableUseUPNFromLocal": "true",
         "EnableUserPreviewInUX": true,
+        "EnableV2DGSAPI": true,
         "EnableVMwareHPGracePeriod": true,
         "EnableVMwarePublicPreviewUX": false,
         "EnableVSBReduceResume": false,
