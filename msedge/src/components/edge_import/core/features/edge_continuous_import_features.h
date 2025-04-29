@@ -264,6 +264,18 @@ COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(
     kTriggerOmniboxInteractionForChromePBUserWithImportedSearchTerms);
 
+// Trigger to know if omnibox interaction happened for chrome PB user with
+// imported search terms in an auto launch session
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(
+    kTriggerOmniboxInteractionForChromePBUserWithImportedSearchTermsInAutoLaunchSession);
+
+// Trigger to know if omnibox interaction happened for chrome PB user with
+// imported search terms in a non auto launch session
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(
+    kTriggerOmniboxInteractionForChromePBUserWithImportedSearchTermsInNonAutoLaunchSession);
+
 // Feature to insert keyword search terms from Imported history urls
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kContinuousImportInsertKeywordSearchTerms);
@@ -281,40 +293,52 @@ COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kPersonalizedLaunch);
 
 // Personalized launch genric triggers
-// Trigger to determine if the ML-Suggested Sites setting is enabled
+// Trigger when the ML-Suggested Sites setting is turned ON
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSuggestMlSettingIsOn);
+BASE_DECLARE_FEATURE_TRIGGER(kMlSettingOn);
 
-// Trigger to determine if the last browser session was Chrome and the ML
-// setting is enabled
+// Trigger when ML setting is ON and the previous browser session was not with
+// Edge
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kLastSessionWasChromeMlSettingOn);
+BASE_DECLARE_FEATURE_TRIGGER(kMlSettingOnLastSessionNotEdge);
 
-// Trigger to determine if the session was launched for a consumer user
+// Trigger when ML setting is ON, last session was not Edge, and the user is a
+// consumer (i.e., not on a managed or enterprise device unless they are an
+// internal Microsoft user)
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kConsumerSessionLastChromeMlOn);
+BASE_DECLARE_FEATURE_TRIGGER(kMlSettingOnLastSessionNotEdgeIsConsumer);
 
-// Trigger to determine if the session was launched for a consumer user without
-// imported tabs
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kNoImportedTabsConsumerLastChromeMlOn);
-
-// Trigger to determine if the session was launched for a Chrome PB user, a
-// consumer, and without imported tabs
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kNoImportedTabsChromePBUserConsumerLastChromeMlOn);
-
-// Trigger to determine if the session was launched for a Chrome PB user, a
-// consumer, without imported tabs, and with SAN consent
+// Trigger when ML setting is ON, last session was not Edge, user is a consumer,
+// and the browser is configured to open a New Tab on startup
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(
-    kChromePBConsentNoImportedTabsConsumerLastChromeMlOn);
+    kMlSettingOnLastSessionNotEdgeIsConsumerStartupNewTab);
 
-// Trigger to determine if the session was launched for a Chrome PB user, a
-// consumer, without imported tabs, with SAN consent, and with startup set to
-// New Tab
+// Trigger when ML setting is ON, last session was not Edge, user is a consumer,
+// startup is set to New Tab, and the user qualifies as a Chrome Primary Browser
+// user based on their network usage
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kChromePBConsentNoImportedTabsNewTabStartup);
+BASE_DECLARE_FEATURE_TRIGGER(kMlSettingOnConsumerStartupNewTabChromePB);
+
+// Trigger when ML setting is ON, last session was not Edge, user is a consumer,
+// startup is New Tab, user qualifies as a Chrome PB user, and SAN consent has
+// been given
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(
+    kMlSettingOnConsumerStartupNewTabChromePBConsentGiven);
+
+// Final trigger when all conditions are met: ML setting is ON, last session was
+// not Edge, user is a consumer, startup is New Tab, user is a Chrome PB user,
+// SAN consent is given, and there are no previously imported tabs
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(
+    kMlSettingOnConsumerStartupNewTabChromePBConsentNoImportedTabs);
+
+// Trigger to determine if we are trying to personalize the session after open
+// tabs import fails
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(
+    kOpenTabsImportFailedTriggerPersonalizedTabsAddition);
 
 }  // namespace edge_continuous_import
 }  // namespace features
