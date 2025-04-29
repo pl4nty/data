@@ -468,7 +468,7 @@
         "EnableTeamsLicenseCheck": true,
         "EnableVNextQuery": false,
         "EnableVivaTopicsUserResolution": true,
-        "EnabledAnnotations": "Birthday,PositionChange,WorkAnniversary,PendingRSVPToMeeting,PostedAnnouncement,EmailWithLotsOfReactions,CollabNetDocumentComment,CollabNetDocumentMentionedMe,CollabNetDocumentModify,CollabNetDocumentMultipleModify,CollabNetDocumentReply,CollabNetDocumentSharing",
+        "EnabledAnnotations": "Birthday,PositionChange,WorkAnniversary,PendingRSVPToMeeting,PostedAnnouncement,EmailWithLotsOfReactions,CollabNetDocumentComment,CollabNetDocumentMentionedMe,CollabNetDocumentModify,CollabNetDocumentMultipleModify,CollabNetDocumentReply,CollabNetDocumentSharing,UpcomingMeeting",
         "ExcludedPropertyBagKeys": [],
         "ExperimentalFieldsForSetOfUsersInMsitEnabled": false,
         "ExtendedUserInfoCacheTtl": "1d",
@@ -1070,8 +1070,8 @@
     },
     "PeopleInTaskbar": {
         "PeopleInTaskbarDFVersion": "1.20250423.2.0",
-        "PeopleInTaskbarMsitVersion": "1.20250415.4.0",
-        "PeopleInTaskbarProdVersion": "1.20250415.4.0",
+        "PeopleInTaskbarMsitVersion": "1.20250423.2.0",
+        "PeopleInTaskbarProdVersion": "1.20250423.2.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",

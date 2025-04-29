@@ -655,10 +655,24 @@
             },
             "hlsSettings": {
                 "hlsConfig": {
+                    "fragLoadPolicy": {
+                        "default": {
+                            "errorRetry": {
+                                "maxNumRetry": 6,
+                                "maxRetryDelayMs": 8000,
+                                "retryDelayMs": 1000
+                            },
+                            "maxLoadTimeMs": 60000,
+                            "maxTimeToFirstByteMs": 10000,
+                            "timeoutRetry": {
+                                "maxNumRetry": 4,
+                                "maxRetryDelayMs": 0,
+                                "retryDelayMs": 0
+                            }
+                        }
+                    },
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3,
-                    "startLevel": -1,
-                    "testBandwidth": true
+                    "liveSyncDurationCount": 3
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
@@ -703,6 +717,7 @@
                         "verifyNewJoin": true
                     },
                     "traceTolerance": 10000,
+                    "updateStatsWithFullReport": true,
                     "useEcdnPlugin": true
                 }
             },
@@ -716,14 +731,15 @@
                         "name": "peer5",
                         "plugin": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.middlelane-ums.v1.plugin.js",
                         "url": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.js"
-                    }
+                    },
+                    "updateStatsWithFullReport": true
                 }
             },
             "umsSettings": {
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
-                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25115.1/hydra_player_ums_bundle.js",
-                        "https://res.cdn.office.net/s01-ml-player/4.25115.1/hydra_player_ums_bundle.js"
+                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25116.1/hydra_player_ums_bundle.js",
+                        "https://res.cdn.office.net/s01-ml-player/4.25116.1/hydra_player_ums_bundle.js"
                     ]
                 },
                 "thaScript": "https://sdk.tha.teams.microsoft.com/tha.js"
@@ -1171,6 +1187,7 @@
         "isCommonSearchModalEnabledOnManageAcademies": true,
         "isCommonSearchModalEnabledOnManagePermissions": true,
         "isCommonSurveyEnabled": true,
+        "isConfigurePrivacyStatementEnabled": true,
         "isCopySFLRSDataToLearnerEnabled": true,
         "isCourseCompletionEnabled": true,
         "isDFEndPointEnabled": false,
@@ -3245,6 +3262,7 @@
             "nps-web": "skypenpsweb-varianta",
             "oldfriendback-test": "oldfriendbacke2etest-varianta",
             "pstn-deprecation-mailing-skype-consumer": "pstn-deprecation-mailing-skype-consumer-varianta",
+            "pstn-deprecation-mailing-skype-consumer-final": "pstn-deprecation-mailing-skype-consumer-final-varianta",
             "publicmissedchatreminder": "publicmissedchatreminder-speechbubble",
             "secondstrike": "secondstrike-varianta",
             "silent-push-notif": "silent-push-notif-varianta",
@@ -3391,6 +3409,9 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
+            },
+            "logUpload": {
+                "maxSize": 512000
             }
         }
     },
