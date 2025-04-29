@@ -66,6 +66,11 @@ jobs:
         with:
           prompt-file: ../prompt
           model: ${{ vars.MODEL }}
+      - if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: prompt-file
+          path: ../prompt
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
