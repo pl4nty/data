@@ -10,11 +10,11 @@
             "downloadLink": null,
             "regionSupported": true
         },
-        "functionalabtest": "/test/platform/abtestpage/abtestpage-ab-b",
+        "functionalabtest": "/test/platform/abtestpage",
         "functionalabtests": "/test/ux/abtestpage",
-        "homePageTest": "A",
-        "navigationSourceUrlSetting": "default",
-        "newsiteabtest": "/test/ab-test/home",
+        "homePageTest": "B",
+        "navigationSourceUrlSetting": "secondary",
+        "newsiteabtest": "/home",
         "skypeForBusinessPrice": "$5.00",
         "supporttest": "/test/ux/Components/ab-test"
     }
