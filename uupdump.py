@@ -1,6 +1,8 @@
 import os
 import shutil
 import requests
+import subprocess
+import tempfile
 import time
 
 def request(url, max_retries=6, retry_delay=10):
