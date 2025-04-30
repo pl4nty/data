@@ -22,14 +22,14 @@ if os.path.exists(update_id_file):
     with open(update_id_file, 'r') as f:
         existing_update_id = f.read().strip()
 
-shutil.rmtree(root, ignore_errors=True)
-os.makedirs(root)
-
 updates = request('https://api.uupdump.net/fetchupd.php?arch=amd64&ring=canary').json()
 update = updates['response']['updateArray'][0]
 updateId = update['updateId']
 if updateId == existing_update_id:
     raise SystemExit
+
+shutil.rmtree(root, ignore_errors=True)
+os.makedirs(root)
 print('Found new update:', update['updateTitle'])
 
 files = request(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&edition=professional').json()['response']['files']
