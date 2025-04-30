@@ -4,6 +4,7 @@ import requests
 
 root = 'uupdump'
 update_id_file = os.path.join(root, 'updateId.txt')
+existing_update_id = ''
 if os.path.exists(update_id_file):
     with open(update_id_file, 'r') as f:
         existing_update_id = f.read().strip()
