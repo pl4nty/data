@@ -21,9 +21,10 @@ jobs:
         cmd:
           - android_bulletins_parser.py
           - get.py
-          - microsoft_download_center.py
           - powershell_gallery.py
           - microsoft_3rdpartysource.py
+          - microsoft_download_center.py
+          - uupdump.py
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5.4.0
