@@ -29,7 +29,7 @@ if updateId == existing_update_id:
     raise SystemExit
 
 shutil.rmtree(root, ignore_errors=True)
-os.makedirs(root)
+os.makedirs(os.path.join(root, 'MetadataESD', 'Client'))
 print('Found new update:', update['updateTitle'])
 
 files = request(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&edition=professional').json()['response']['files']
