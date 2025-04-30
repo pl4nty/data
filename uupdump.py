@@ -43,7 +43,7 @@ with tempfile.NamedTemporaryFile(suffix='.esd') as f:
 
     try:
         subprocess.run(['sudo', 'apt-get', 'update'], check=True)
-        subprocess.run(['sudo', 'apt-get', 'install', '-y', 'wimlib'], check=True)
+        subprocess.run(['sudo', 'apt-get', 'install', '-y', 'wimtools'], check=True)
         subprocess.run(['wiminfo', metadata_file], check=True)
         subprocess.run([
             'wimextract', metadata_file, '3',
