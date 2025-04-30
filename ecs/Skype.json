@@ -592,6 +592,8 @@
     "ECSTest2": {
         "ResourceIdmatch": false
     },
+    "ECS_Scorecards_Test": {},
+    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -661,8 +663,8 @@
                                 "maxRetryDelayMs": 8000,
                                 "retryDelayMs": 1000
                             },
-                            "maxLoadTimeMs": 120000,
-                            "maxTimeToFirstByteMs": 6000,
+                            "maxLoadTimeMs": 60000,
+                            "maxTimeToFirstByteMs": 10000,
                             "timeoutRetry": {
                                 "maxNumRetry": 4,
                                 "maxRetryDelayMs": 0,
@@ -3195,8 +3197,6 @@
         "ECS_ADSP_VQE_unityInitialDAGCWithNoAAGC": "0",
         "ECS_AudioDL_Kingstone": "0",
         "EngineTimerIn100ns": "100000",
-        "NetworkIndicator_BandwidthPoorLimitBps": 12500000,
-        "NetworkIndicator_BandwidthPoorLimitHadVideoBps": 681250,
         "UseClockRateForCNSupport": "true"
     },
     "SkypeBilling": {
@@ -3265,6 +3265,7 @@
             "nps-uwp-rn": "nps-uwprn-a",
             "nps-web": "skypenpsweb-varianta",
             "oldfriendback-test": "oldfriendbacke2etest-varianta",
+            "pstn-deprecation-bot-skype-consumer-final": "pstn-deprecation-bot-skype-consumer-final-varianta",
             "pstn-deprecation-mailing-skype-consumer": "pstn-deprecation-mailing-skype-consumer-varianta",
             "pstn-deprecation-mailing-skype-consumer-final": "pstn-deprecation-mailing-skype-consumer-final-varianta",
             "publicmissedchatreminder": "publicmissedchatreminder-speechbubble",

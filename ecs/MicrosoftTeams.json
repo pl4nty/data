@@ -657,7 +657,6 @@
                 ],
                 "preserveExplicitlyAddedChannels": true,
                 "removeExtraExtendedProperties": true,
-                "renameChannelFolderOnUpdateChannel": true,
                 "sleepIntervalBetweenChatServiceMembershipCallsInms": 600,
                 "supportOptionalPropertiesForTemplatedApps": true,
                 "useFindMeetingTimesExchangeB2RESTAPI": true,

@@ -10050,36 +10050,6 @@
         {
             "children": [
                 {
-                    "href": "product-names/product-names",
-                    "permissioned-type": "private",
-                    "toc_title": "Product names"
-                },
-                {
-                    "href": "product-names/new-product-and-feature-names",
-                    "permissioned-type": "private",
-                    "toc_title": "New product and feature names"
-                },
-                {
-                    "href": "product-names/referring-to-azure-product-names",
-                    "permissioned-type": "private",
-                    "toc_title": "Referring to Azure product names"
-                },
-                {
-                    "href": "product-names/referring-to-dynamics-365-names",
-                    "permissioned-type": "private",
-                    "toc_title": "Referring to Dynamics 365 names"
-                },
-                {
-                    "href": "product-names/referring-to-power-platform-product-names",
-                    "permissioned-type": "private",
-                    "toc_title": "Referring to Power Platform product names"
-                }
-            ],
-            "toc_title": "Product names"
-        },
-        {
-            "children": [
-                {
                     "href": "punctuation/punctuation",
                     "permissioned-type": "private",
                     "toc_title": "Punctuation"
@@ -10295,34 +10265,64 @@
         {
             "children": [
                 {
-                    "href": "product-and-feature-names/product-and-feature-names",
+                    "href": "product-names/product-names",
                     "permissioned-type": "private",
-                    "toc_title": "Product and feature names"
+                    "toc_title": "Product names"
                 },
                 {
-                    "href": "product-and-feature-names/basic-attribution-guidelines",
+                    "href": "product-names/new-product-and-feature-names",
                     "permissioned-type": "private",
-                    "toc_title": "Basic attribution guidelines"
+                    "toc_title": "New product and feature names"
                 },
                 {
-                    "href": "product-and-feature-names/feature-names",
+                    "href": "product-names/referring-to-azure-product-names",
                     "permissioned-type": "private",
-                    "toc_title": "Feature names"
+                    "toc_title": "Referring to Azure product names"
                 },
                 {
-                    "href": "product-and-feature-names/microsoft-365-sku-names",
+                    "href": "product-names/referring-to-dynamics-365-names",
                     "permissioned-type": "private",
-                    "toc_title": "Microsoft 365 SKU names"
+                    "toc_title": "Referring to Dynamics 365 names"
                 },
                 {
-                    "href": "product-and-feature-names/microsoft-365-app-names",
+                    "href": "product-names/referring-to-power-platform-product-names",
                     "permissioned-type": "private",
-                    "toc_title": "Microsoft 365 app names"
+                    "toc_title": "Referring to Power Platform product names"
                 },
                 {
-                    "href": "product-and-feature-names/office-to-microsoft-365-transition",
-                    "permissioned-type": "private",
-                    "toc_title": "Office to Microsoft 365 transition"
+                    "children": [
+                        {
+                            "href": "product-and-feature-names/microsoft-365/product-and-feature-names",
+                            "permissioned-type": "private",
+                            "toc_title": "Product and feature names"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/basic-attribution-guidelines",
+                            "permissioned-type": "private",
+                            "toc_title": "Basic attribution guidelines"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/feature-names",
+                            "permissioned-type": "private",
+                            "toc_title": "Feature names"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/microsoft-365-sku-names",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 SKU names"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/microsoft-365-app-names",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 app names"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/office-to-microsoft-365-transition",
+                            "permissioned-type": "private",
+                            "toc_title": "Office to Microsoft 365 transition"
+                        }
+                    ],
+                    "toc_title": "Referring to Microsoft 365 product names"
                 }
             ],
             "toc_title": "Product and feature names"
