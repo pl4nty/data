@@ -12,8 +12,8 @@
         },
         "functionalabtest": "/test/platform/abtestpage",
         "functionalabtests": "/test/ux/abtestpage",
-        "homePageTest": "B",
-        "navigationSourceUrlSetting": "default",
+        "homePageTest": "A",
+        "navigationSourceUrlSetting": "secondary",
         "newsiteabtest": "/home",
         "skypeForBusinessPrice": "$5.00",
         "supporttest": "/test/ux/Components/ab-test"

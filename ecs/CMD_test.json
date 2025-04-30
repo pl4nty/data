@@ -38,6 +38,7 @@
         "CleanEntitiesOfDeletedResources": true,
         "CleanUpRDAgentTempFolder": true,
         "ClientAgent_CPC_CloudPcHosting_EnableWindowsUpdatesAPI": true,
+        "ClientAgent_CPC_Cogs_EnableHEVCHardwareEncoding": true,
         "ClientAgent_CPC_Cogs_EnableSystemUsageCollection": true,
         "ClientAgent_CPC_Cogs_PowershellToManagedCode": true,
         "ClientAgent_CPC_Connectivity_EnableCloudPCOSServicesPlugin": true,

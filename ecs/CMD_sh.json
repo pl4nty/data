@@ -561,7 +561,7 @@
         "EnableRawConfirmError": true,
         "EnableRebootAfterGpuDriverInstallation": true,
         "EnableRedisCache": true,
-        "EnableReduceResume": false,
+        "EnableReduceResume": true,
         "EnableRefactorRecycleResource": true,
         "EnableRefineFLSEndUserRestartAction": true,
         "EnableRefiningErrorCode": true,

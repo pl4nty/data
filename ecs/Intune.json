@@ -136,6 +136,8 @@
     },
     "SVC_DataInfra": {
         "FlightingV2": {
+            "QBSFSICoreMigrationDuplicateBatch1": true,
+            "QBSFSICoreMigrationDuplicateBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true
         }
     },
@@ -162,6 +164,8 @@
     },
     "SVC_IWService": {
         "FlightingV2": {
+            "DisableLegacyAadIdPatchForIOS": true,
+            "DisableLegacyAadIdPatchForMac": true,
             "DisableLegacyAppTargeting": true,
             "EnableEnhancedWPJSecurityForIOS": true,
             "EnableEnhancedWPJSecurityForMac": true
