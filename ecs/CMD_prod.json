@@ -833,6 +833,7 @@
         "PreDiscoveryV2": true,
         "ReadTenantDataFromCosmosDB": false,
         "ReassignDevicesWhenEditingAG": true,
+        "RegisteredDeviceSummaryNewAPI": true,
         "ReportingRbacAuth": true,
         "SkipOnboardSTP": true,
         "SkipSqlUpdateForAP": true,
