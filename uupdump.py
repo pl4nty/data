@@ -5,7 +5,7 @@ import requests
 def request(url, max_retries=6, retry_delay=10):
     response = requests.get(url)
     if response.status_code in (429, 500):
-        if attempt < max_retries - 1:
+        if max_retries > 0:
             time.sleep(retry_delay)
             return request(url, max_retries-1, retry_delay)
         else:
