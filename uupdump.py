@@ -16,7 +16,7 @@ def request(url, max_retries=6, retry_delay=10):
     return response
 
 root = 'uupdump'
-update_id_file = os.path.join(root, 'updateId.txt')
+update_id_file = os.path.join(root, 'updateId')
 existing_update_id = ''
 if os.path.exists(update_id_file):
     with open(update_id_file, 'r') as f:
@@ -29,7 +29,7 @@ if updateId == existing_update_id:
     raise SystemExit
 
 shutil.rmtree(root, ignore_errors=True)
-os.makedirs(os.path.join(root, 'MetadataESD', 'Client'))
+os.makedirs(os.path.join(root, 'Client'))
 print('Found new update:', update['updateTitle'])
 
 files = request(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&edition=professional').json()['response']['files']
@@ -61,12 +61,12 @@ try:
     metadata_file = downloaded_files.get('MetadataESD_professional_en-us.esd')
     if metadata_file:
         subprocess.run(['wiminfo', metadata_file], check=True)
-        subprocess.run([
-            'wimextract', metadata_file, '3',
-            '/Windows/SystemApps/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy',
-            '--dest-dir=' + os.path.join(root, 'MetadataESD', 'Client'),
-            '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.esd')
-        ], check=True)
+        for target in ['/Windows/SystemApps/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy', '/Windows/System32/CodeIntegrity/driversipolicy.p7b']:
+            subprocess.run([
+                'wimextract', metadata_file, '3', target,
+                '--dest-dir=' + os.path.join(root, 'MetadataESD', 'Client'),
+                '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.esd')
+            ], check=True)
 except subprocess.CalledProcessError as e:
     print(f"Output: {e.output}")
     print(f"Stderr: {e.stderr}")
