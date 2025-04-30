@@ -64,7 +64,7 @@ try:
         for target in ['/Windows/SystemApps/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy', '/Windows/System32/CodeIntegrity/driversipolicy.p7b']:
             subprocess.run([
                 'wimextract', metadata_file, '3', target,
-                '--dest-dir=' + os.path.join(root, 'MetadataESD', 'Client'),
+                '--dest-dir=' + os.path.join(root, 'Client'),
                 '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.esd')
             ], check=True)
 except subprocess.CalledProcessError as e:
