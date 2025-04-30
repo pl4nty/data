@@ -34,7 +34,8 @@ print('Found new update:', update['updateTitle'])
 
 files = request(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&edition=professional').json()
 metadata_url = files['response']['files']['MetadataESD_professional_en-us.esd']['url']
-with tempfile.NamedTemporaryFile(suffix='.esd') as metadata_file:
+with tempfile.NamedTemporaryFile(suffix='.esd') as f:
+    metadata_file = f.name
     response = requests.get(metadata_url, stream=True)
     with open(metadata_file, 'wb') as f:
         for chunk in response.iter_content(chunk_size=8192):
