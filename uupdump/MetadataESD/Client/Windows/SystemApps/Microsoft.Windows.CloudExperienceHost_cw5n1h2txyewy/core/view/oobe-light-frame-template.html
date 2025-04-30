@@ -1,0 +1,32 @@
+<div class="Container">
+    <div class="content" id="oobeLightFrameView">
+        <backstack-chrome-breadcrumb></backstack-chrome-breadcrumb>
+        <div class="graphic halfSection" role="img">
+            <div id="animation"></div>
+        </div>
+        <!-- light frame progress -->
+        <oobe-light-progress class="app-content"> </oobe-light-progress>
+        <!-- light frame content -->
+        <div class="controls halfSection" id="_view"></div>
+    </div>
+    <div style="display: flex;">
+        <div class="align-self-start" align="left" style="margin-right: 75%;">
+            <div style="display: flex; align-items: center; margin-top: 15px;" class="gamepad-legend" data-bind="visible: showGamepadLegend">
+                <content class="c-icon f-bottomBar icon icon-buttonA" aria-hidden="true"></content>
+                <content style="margin-left: 10px; margin-bottom: 2.5px;" data-bind="visible: showGamepadLegend, text: gamepadButtonAText, attr: {'aria-label': gamepadButtonASelectAccName, 'title': gamepadButtonASelectAccName}"></content>
+
+                <content style="margin-left: 10px;" aria-hidden="true" class="c-icon f-bottomBar icon icon-buttonB"
+                         data-bind="visible: showGamepadBButton"></content>
+                <content style="margin-left: 10px; margin-bottom: 2.5px;" data-bind="visible: showGamepadBButton, text: gamepadButtonBText, attr: {'aria-label': gamepadButtonBBackAccName, 'title': gamepadButtonBBackAccName}"></content>
+            </div>
+        </div>
+        <!-- light frame footer which only shows up for desktop -->
+        <!-- footer webview is inserted in next element via code, to avoid having an extraneous webview from KnockoutJS precreating templates and duplicating their DOM trees into the real page -->
+        <!-- ko if: showLightFooter -->
+        <div align="right" class="footerView" data-bind="addFooterWebView: true"></div>
+        <!-- /ko -->
+    </div>
+</div>
+
+
+
