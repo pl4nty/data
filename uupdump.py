@@ -3,14 +3,14 @@ import shutil
 import requests
 
 def request(url, max_retries=6, retry_delay=10):
-    data = requests.get(url)
+    response = requests.get(url)
     if response.status_code in (429, 500):
         if attempt < max_retries - 1:
             time.sleep(retry_delay)
             return request(url, max_retries-1, retry_delay)
         else:
             raise SystemExit
-    return data
+    return response
 
 root = 'uupdump'
 update_id_file = os.path.join(root, 'updateId.txt')
