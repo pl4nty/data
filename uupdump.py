@@ -12,7 +12,7 @@ shutil.rmtree(root, ignore_errors=True)
 os.makedirs(root)
 
 updates = requests.get('https://api.uupdump.net/fetchupd.php?arch=amd64&ring=canary').json()
-update = update['response']['updateArray'][0]
+update = updates['response']['updateArray'][0]
 updateId = update['updateId']
 if updateId == existing_update_id:
     raise SystemExit
