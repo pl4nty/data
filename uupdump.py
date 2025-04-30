@@ -22,9 +22,9 @@ files = requests.get(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&
 metadata_url = files['response']['files']['MetadataESD_professional_en-us.esd']['url']
 with tempfile.NamedTemporaryFile(suffix='.esd') as metadata_file:
     response = requests.get(metadata_url, stream=True)
-        with open(metadata_file, 'wb') as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                f.write(chunk)
+    with open(metadata_file, 'wb') as f:
+        for chunk in response.iter_content(chunk_size=8192):
+            f.write(chunk)
 
     try:
         subprocess.run(['apt-get', 'update'], check=True)
