@@ -593,7 +593,6 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
-    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -1508,6 +1507,7 @@
         },
         "allowDetailedDiskStorageUsageTelemetry": true,
         "androidItalianAccessibilityStatement": true,
+        "appendClaimsToCachedTokenMap": true,
         "autoPruneInterval": 24,
         "backgroundPruneJobInterval": 24,
         "blobOperationsToAggregate": 4,
@@ -1619,6 +1619,7 @@
         "enableInactiveGuardianBanner": true,
         "enableIntentTrackVersionedAPI": true,
         "enableJoinInviteActivityFeed": true,
+        "enableLobbyChatForAttendees": true,
         "enableMeetingChatBubbles": true,
         "enableNewClassNavigation": true,
         "enableOkhttpEventListeners": true,
@@ -3197,6 +3198,8 @@
         "ECS_ADSP_VQE_unityInitialDAGCWithNoAAGC": "0",
         "ECS_AudioDL_Kingstone": "0",
         "EngineTimerIn100ns": "100000",
+        "NetworkIndicator_BandwidthPoorLimitBps": 12500000,
+        "NetworkIndicator_BandwidthPoorLimitHadVideoBps": 681250,
         "UseClockRateForCNSupport": "true"
     },
     "SkypeBilling": {
@@ -3414,6 +3417,9 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
+            },
+            "logUpload": {
+                "maxSize": 512000
             }
         }
     },
