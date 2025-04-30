@@ -32,7 +32,7 @@ if updateId == existing_update_id:
     raise SystemExit
 print('Found new update:', update['updateTitle'])
 
-files = request(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&edition=professional').json()
+files = request(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&edition=professional').json()['response']['files']
 # esd_files = [
 #     'MetadataESD_professional_en-us.esd',
 #     'Microsoft-Windows-Client-Desktop-Required-Package.ESD'
