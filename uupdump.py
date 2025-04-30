@@ -2,6 +2,16 @@ import os
 import shutil
 import requests
 
+def request(url, max_retries=6, retry_delay=10):
+    data = requests.get(url)
+    if response.status_code in (429, 500):
+        if attempt < max_retries - 1:
+            time.sleep(retry_delay)
+            return request(url, max_retries-1, retry_delay)
+        else:
+            raise SystemExit
+    return data
+
 root = 'uupdump'
 update_id_file = os.path.join(root, 'updateId.txt')
 existing_update_id = ''
@@ -12,14 +22,14 @@ if os.path.exists(update_id_file):
 shutil.rmtree(root, ignore_errors=True)
 os.makedirs(root)
 
-updates = requests.get('https://api.uupdump.net/fetchupd.php?arch=amd64&ring=canary').json()
+updates = request('https://api.uupdump.net/fetchupd.php?arch=amd64&ring=canary').json()
 update = updates['response']['updateArray'][0]
 updateId = update['updateId']
 if updateId == existing_update_id:
     raise SystemExit
 print('Found new update:', update['updateTitle'])
 
-files = requests.get(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&edition=professional').json()
+files = request(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&edition=professional').json()
 metadata_url = files['response']['files']['MetadataESD_professional_en-us.esd']['url']
 with tempfile.NamedTemporaryFile(suffix='.esd') as metadata_file:
     response = requests.get(metadata_url, stream=True)
