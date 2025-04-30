@@ -723,6 +723,7 @@
         "SnptEnableDistinctDeleteRequest": true,
         "SnptEnableScanOrphanResource": true,
         "SnptEnableShareWithRBAC": true,
+        "SnptEnableSkipPermissionCheck": true,
         "SnptEnableSkipUnhealthySnapshot": true,
         "SnptEnbleAuditTimeOutRestore": true,
         "SnptLockSnptForShare": true,
