@@ -15,7 +15,7 @@ updates = requests.get('https://api.uupdump.net/fetchupd.php?arch=amd64&ring=can
 update = update['response']['updateArray'][0]
 updateId = update['updateId']
 if updateId == existing_update_id:
-    return
+    raise SystemExit
 print('Found new update:', update['updateTitle'])
 
 files = requests.get(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&edition=professional').json()
