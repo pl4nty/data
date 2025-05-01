@@ -1,0 +1,37 @@
+﻿/*version 1.0.3*/
+/*Styles for Select control*/
+/*TODO: Add styles for identity owned select control*/
+@import "../theme-light.scss";
+
+.win-dropdown {
+    background-color: $foregroundAltWhiteColor;
+    border: 1px solid $altFillNeutralPressColor;
+    border-radius: 3px;
+    margin: 0px;
+    width: $widthForWinControls;
+    height: $heightForWinControls;
+    font-size: 0.87rem;
+    &:hover {
+        background: #F9F9F9;
+        border: 1px solid rgba(0,0,0,0.0578);
+    }
+}
+
+select.win-dropdown option {
+    font-size: 1rem;
+    line-height: 2.25rem;
+    background: $foregroundAltWhiteColor;
+}
+
+.nameFields > .input-row > .select-field:first-child {
+    margin-right: 14px;
+}
+
+.template-input .input-container.input-row .select-field {
+    flex: 1;
+}
+
+.template-input > .input-container > .select-field {
+    padding: 0px 8px 0px 10px;
+    width: 100%;
+}

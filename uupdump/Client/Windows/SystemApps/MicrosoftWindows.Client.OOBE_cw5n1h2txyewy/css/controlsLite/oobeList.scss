@@ -1,0 +1,254 @@
+/*version 1.0.3*/
+/*Styles for List, Binary choices and disambig control*/
+@import "../theme-light.scss";
+
+.scroll-view {
+    position: relative;
+    overflow-y: auto;
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.125rem;
+    line-height: 1.2rem;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-x: visible;
+}
+
+.scroll-view.alwaysShowScrollbar {
+    -ms-overflow-style: scrollbar !important;
+}
+
+.list {
+    color: $altForegroundPrimaryRestColor;
+    -ms-user-select: none;
+}
+
+html[dir="ltr"] .list {
+    text-align: left;
+}
+
+html[dir="rtl"] .list {
+    text-align: right;
+}
+
+.list.binaryChoice .list-item {
+    border: 1px solid $altStrokeNeutralRestColor;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background: $foregroundAltWhiteColor;
+    border: 1px solid $altStrokeNeutralPrimaryRestColor;
+
+    &.selected {
+        border-color: $altFillSelectedAccentRestColor;
+        background: $altFillSelectedAccentRestColor;
+        color: $foregroundWhiteColor;
+
+        &:hover {
+            border-color: $altFillSelectedAccentHoverColor;
+            background: $altFillSelectedAccentHoverColor;
+        }
+    }
+}
+
+.list-item {
+    display: flex;
+    margin: 3px;
+    touch-action: pan-y;
+    -ms-user-select: none;
+
+    & .listItemHeader, .list-text {
+        padding: 20px 16px;
+
+        & .secondary-text {
+            position: relative;
+        }
+
+        html[dir="ltr"] & .secondary-text {
+            left: 40px;
+            margin-right: 40px; //negate the left move so text wraps without overlapping
+        }
+
+        html[dir="rtl"] & .secondary-text {
+            right: 40px;
+            margin-left: 40px; //negate the right move so text wraps without overlapping
+        }
+
+        & div:not(.secondary-text) {
+            margin-top: 8px;
+        }
+    }
+
+    & .list-icon {
+        position: absolute;
+        padding: 20px 0px 0px 16px;
+        margin-top: 2px;
+        font-size: 24px;
+        color: $altForegroundPrimaryRestColor;
+    }
+}
+
+html[dir="ltr"] .list-item .list-icon {
+    padding-left: 16px;
+}
+
+html[dir="rtl"] .list-item .list-icon {
+    padding-right: 16px;
+}
+
+
+html[dir="ltr"] .list-item {
+    margin-right: $paddingForScrollBars;
+}
+
+html[dir="rtl"] .list-item {
+    margin-left: $paddingForScrollBars;
+}
+
+
+list-item:focus {
+    outline: none;
+}
+
+html[dir="ltr"] .list-item div {
+    text-align: left;
+}
+
+html[dir="rtl"] .list-item div {
+    text-align: right;
+}
+
+.list-item .full {
+    min-height: 120px;
+}
+
+.list-item .list-text div.secondary-text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 4px;
+    opacity: 1;
+}
+
+.list-item .list-text div {
+    font-size: 0.87rem;
+    line-height: 1.25rem;
+    opacity: 0.57;
+}
+
+
+.list-item:active .list-icon {
+    color: $altForegroundPrimaryRestColor;
+}
+
+.list-item.selected .list-icon {
+    color: $foregroundWhiteColor;
+}
+
+.list-item.selected:hover .list-icon {
+    color: $foregroundWhiteColor
+}
+
+.list-item .md {
+    height: 60px;
+}
+
+.list-item {
+    /*hover unselected*/
+    /*selected hover*/
+    /*Press Unselected*/
+    /*rest selected*/
+    /*press selected*/
+}
+
+/*Accessibility focus highlight*/
+
+html[focus-visible="false"] .list-item:focus{
+    box-shadow:none;
+}
+
+/*
+Long term fix: http://osgvsowi/53279490 - Add .scss support or one-time compile into common.css
+Short term fix: Explicitly setting $foregroundWhiteColor to #FFF & outlineFocusColor to #000
+*/
+.list-item:focus {
+    box-shadow: 0px 0px 0px 1px #FFF, 0px 0px 0px 3px #000;
+    outline: none;
+}
+
+.list-item:focus:active {
+    outline: none;
+}
+/*Accessibility focus highlight*/
+
+.list-item:hover {
+    background: $altFillNeutralHoverColor;
+    border-radius: 3px;
+}
+
+.list-item.selected:hover {
+    background: $altFillSelectedAccentHoverColor;
+}
+
+.list-item.selected {
+    background: $altFillSelectedAccentRestColor;
+    color: $foregroundWhiteColor;
+    border-radius: 4px;
+}
+
+.list-item {
+    -ms-high-contrast-adjust: none;
+}
+
+@media (-ms-high-contrast)
+{
+    .list-item {
+        border: 1px solid transparent;
+    }
+
+    .list-item:hover {
+        border: 1px solid Highlight;
+    }
+
+    .list-item:active {
+        background: ButtonText;
+        color: ButtonFace;
+    }
+
+    .list-item.selected, .list-item.selected:hover {
+        background-color: Highlight;
+        color: HighlightText;
+    }
+
+    .list-item .list-icon {
+        color: ButtonText;
+    }
+
+    .list-item.selected .list-icon {
+        color: HighlightText;
+    }
+
+    .list-item.selected:hover .list-icon, .list-item.selected:active .list-icon, .list-item:active .list-icon {
+        color: ButtonFace;
+    }
+
+    .list-item:focus {
+        box-shadow: 0px 0px 0px 1px ButtonFace, 0px 0px 0px 3px Highlight;
+    }
+
+    .list.binaryChoice .list-item {
+        background: ButtonFace;
+
+        &:hover {
+            border-color: Highlight;
+        }
+
+        &.selected, &.selected:hover {
+            background: Highlight;
+            color: HighlightText;
+
+            .list-icon {
+                color: HighlightText;
+            }
+        }
+    }
+}
