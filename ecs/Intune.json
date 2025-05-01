@@ -144,7 +144,8 @@
             "APv2EnableForcedRebootBehavior": true,
             "APv2EnableMinimumGetMdmProvisioningStatusesCalls": true,
             "APv2EnablePublishResultsResiliencyBehavior": true,
-            "DJPPGroupsV2Enabled": true
+            "DJPPGroupsV2Enabled": true,
+            "S2SAntiPattern": true
         }
     },
     "SVC_DeviceCheckin": {
