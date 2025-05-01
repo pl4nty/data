@@ -64,9 +64,9 @@ that run as part of building (e.g. `clang`, `dsymutil`).
 3.  Create an environment variable named `EDGE_ROOT` and set the value to the directory where you unzipped the file.
 4.  Open a terminal window.
 5.  The XCode version used when building assumes a hardcoded path. Two possible options are:
-    1. Rename your XCode file to `/Applications/XCode_12.2.app` for this build.
+    1. Rename your XCode file to `/Applications/XCode_16.1.app` for this build.
     2. Create a symbolic link to the default installation path e.g.
-    `ln -s /Applications/Xcode.app /Applications/Xcode_12.2.app`
+    `ln -s /Applications/Xcode.app /Applications/Xcode_16.1.app`
 6.  Run the command `cd $EDGE_ROOT/src/out/Release`.
 7.  Run the command `python $EDGE_ROOT/src/build/config/apple/sdk_info.py --get_sdk_info --create_symlink_at sdk/xcode_links macosx`.
 8. Create an environment variable named `RBE_offline` and set the value 1
@@ -94,9 +94,9 @@ that run as part of building (e.g. `clang`, `dsymutil`).
 3.  Create an environment variable named EDGE_ROOT and set the value to the directory where you unzipped the file.
 4.  Open a terminal window.
 5.  The XCode version used when building assumes a hardcoded path. Two possible options are:
-    1. Rename your XCode file to `/Applications/XCode_12.2.app` for this build.
+    1. Rename your XCode file to `/Applications/XCode_16.1.app` for this build.
     2. Create a symbolic link to the default installation path e.g.
-    `ln -s /Applications/Xcode.app /Applications/Xcode_12.2.app`
+    `ln -s /Applications/Xcode.app /Applications/Xcode_16.1.app`
 6.  Run the command `cd $EDGE_ROOT/src/out/Release`.
 7.  Run the command `python $EDGE_ROOT/src/build/config/apple/sdk_info.py --get_sdk_info --create_symlink_at sdk/xcode_links iphoneos`.
 8. Create an environment variable named `RBE_offline` and set the value 1

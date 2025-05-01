@@ -66,12 +66,12 @@
   },
   {
     "name": "blink",
-    "size": 31971990,
-    "file_count": 3926
+    "size": 31988295,
+    "file_count": 3928
   },
   {
     "name": "boringssl",
-    "size": 71633,
+    "size": 71829,
     "file_count": 16
   },
   {
@@ -116,8 +116,8 @@
   },
   {
     "name": "depot_tools",
-    "size": 16365267,
-    "file_count": 245
+    "size": 16395109,
+    "file_count": 246
   },
   {
     "name": "devscripts",
@@ -126,7 +126,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7314148,
+    "size": 7313972,
     "file_count": 29
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "glslang",
-    "size": 40775884,
-    "file_count": 3043
+    "size": 40804648,
+    "file_count": 3046
   },
   {
     "name": "googletest",
@@ -241,7 +241,7 @@
   },
   {
     "name": "icu",
-    "size": 151439475,
+    "size": 151441878,
     "file_count": 7134
   },
   {
@@ -396,7 +396,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19611627,
+    "size": 19619307,
     "file_count": 19
   },
   {
@@ -456,7 +456,7 @@
   },
   {
     "name": "opus",
-    "size": 122518,
+    "size": 139317,
     "file_count": 7
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "perfetto",
-    "size": 1473622,
+    "size": 1473691,
     "file_count": 79
   },
   {
@@ -586,8 +586,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5673086,
-    "file_count": 165
+    "size": 5684334,
+    "file_count": 166
   },
   {
     "name": "vulkan_memory_allocator",
@@ -606,7 +606,7 @@
   },
   {
     "name": "webrtc",
-    "size": 219566,
+    "size": 220270,
     "file_count": 62
   },
   {
@@ -626,7 +626,7 @@
   },
   {
     "name": "zlib",
-    "size": 121723,
+    "size": 121715,
     "file_count": 4
   },
   {
