@@ -593,6 +593,7 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
+    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -656,7 +657,9 @@
             "hlsSettings": {
                 "hlsConfig": {
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3
+                    "liveSyncDurationCount": 3,
+                    "startLevel": -1,
+                    "testBandwidth": true
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
