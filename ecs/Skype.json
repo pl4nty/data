@@ -593,7 +593,6 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
-    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -656,22 +655,6 @@
             },
             "hlsSettings": {
                 "hlsConfig": {
-                    "fragLoadPolicy": {
-                        "default": {
-                            "errorRetry": {
-                                "maxNumRetry": 6,
-                                "maxRetryDelayMs": 8000,
-                                "retryDelayMs": 1000
-                            },
-                            "maxLoadTimeMs": 60000,
-                            "maxTimeToFirstByteMs": 10000,
-                            "timeoutRetry": {
-                                "maxNumRetry": 4,
-                                "maxRetryDelayMs": 0,
-                                "retryDelayMs": 0
-                            }
-                        }
-                    },
                     "liveMaxLatencyDurationCount": 6,
                     "liveSyncDurationCount": 3
                 },
@@ -3197,6 +3180,8 @@
         "ECS_ADSP_VQE_unityInitialDAGCWithNoAAGC": "0",
         "ECS_AudioDL_Kingstone": "0",
         "EngineTimerIn100ns": "100000",
+        "NetworkIndicator_BandwidthPoorLimitBps": 12500000,
+        "NetworkIndicator_BandwidthPoorLimitHadVideoBps": 681250,
         "UseClockRateForCNSupport": "true"
     },
     "SkypeBilling": {
@@ -3414,9 +3399,6 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
-            },
-            "logUpload": {
-                "maxSize": 512000
             }
         }
     },
