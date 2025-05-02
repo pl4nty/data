@@ -781,7 +781,6 @@
         }
     },
     "MMD": {
-        "AMDssV3ApiSwitch": true,
         "AlternativeSubscriptionSync": false,
         "AppOnlyAuth": true,
         "AutopatchAllGroupMigration": true,
@@ -835,6 +834,7 @@
         "ReassignDevicesWhenEditingAG": true,
         "RegisteredDeviceSummaryNewAPI": true,
         "ReportingRbacAuth": true,
+        "ShowAutopatchAlertRemediations": true,
         "SkipOnboardSTP": true,
         "SkipSqlUpdateForAP": true,
         "SplitConfig": true,

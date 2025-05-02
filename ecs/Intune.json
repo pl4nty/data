@@ -35,6 +35,7 @@
                 "INFRA_MessageBus",
                 "PAA_IntuneDataPlatform",
                 "Segmentation",
+                "SVC_AdHocQuery",
                 "SVC_AdminApproval",
                 "SVC_AMPAASSupport",
                 "SVC_AndroidSpecialized",
@@ -136,6 +137,7 @@
     },
     "SVC_DataInfra": {
         "FlightingV2": {
+            "QBSFSICoreMigrationDuplicateBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true
         }
     },

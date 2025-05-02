@@ -1498,7 +1498,7 @@
     </o:service>
     <o:service o:name="ClpAuditingGraph" o:authentication="2">
       <o:url>https://graph.microsoft.com</o:url>
-      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://graph.microsoft.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:ticket o:idprovider="3" o:resourceId="https://graph.microsoft.com/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="ClpDEM">
       <o:url>https://officeclient.microsoft.com/dynamicErrorMessaging</o:url>
