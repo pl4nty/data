@@ -11,8 +11,8 @@
             "regionSupported": true
         },
         "functionalabtest": "/test/platform/abtestpage",
-        "functionalabtests": "/test/ux/abtestpage",
-        "homePageTest": "A",
+        "functionalabtests": "/test/ux/abtestpage/abtestpage-ab-b",
+        "homePageTest": "B",
         "navigationSourceUrlSetting": "secondary",
         "newsiteabtest": "/test/ab-test/home",
         "skypeForBusinessPrice": "$5.00",
