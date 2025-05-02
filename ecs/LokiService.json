@@ -628,6 +628,8 @@
             "resolveFileContentsQuery",
             "PromptVersionSelectorQuery",
             "useProfileDataQuery",
+            "HomeViewQuery",
+            "ChatViewQuery",
             "loadProjectDataQuery",
             "useFileDataQuery",
             "useFileDataFromSearchQuery",
