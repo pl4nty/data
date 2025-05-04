@@ -662,8 +662,8 @@
                                 "maxRetryDelayMs": 8000,
                                 "retryDelayMs": 1000
                             },
-                            "maxLoadTimeMs": 30000,
-                            "maxTimeToFirstByteMs": 10000,
+                            "maxLoadTimeMs": 120000,
+                            "maxTimeToFirstByteMs": 6000,
                             "timeoutRetry": {
                                 "maxNumRetry": 4,
                                 "maxRetryDelayMs": 0,
@@ -3196,8 +3196,6 @@
         "ECS_ADSP_VQE_unityInitialDAGCWithNoAAGC": "0",
         "ECS_AudioDL_Kingstone": "0",
         "EngineTimerIn100ns": "100000",
-        "NetworkIndicator_BandwidthPoorLimitBps": 12500000,
-        "NetworkIndicator_BandwidthPoorLimitHadVideoBps": 681250,
         "UseClockRateForCNSupport": "true"
     },
     "SkypeBilling": {
@@ -3415,9 +3413,6 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
-            },
-            "logUpload": {
-                "maxSize": 512000
             }
         }
     },
