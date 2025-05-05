@@ -604,11 +604,11 @@
             "mdsc_rmconnectionevent": "P-R-1570178-1-8"
         },
         "SkypeVideoLibrary": {
-            "mdsc_mediadiagnostic": "P-E-1235534-C1-5,P-R-1547090-1-6",
-            "mdsc_qoe": "P-E-1235534-C1-5,P-R-1547090-1-6",
-            "mdsc_rmconnectionevent": "P-E-1235534-C1-5,P-R-1547090-1-6",
-            "skypecosi_concore_native_callsignalingagent_callmodality": "P-E-1235534-C1-5,P-R-1547090-1-6",
-            "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1235534-C1-5,P-R-1547090-1-6"
+            "mdsc_mediadiagnostic": "P-E-1235534-2-5,P-R-1547090-1-6",
+            "mdsc_qoe": "P-E-1235534-2-5,P-R-1547090-1-6",
+            "mdsc_rmconnectionevent": "P-E-1235534-2-5,P-R-1547090-1-6",
+            "skypecosi_concore_native_callsignalingagent_callmodality": "P-E-1235534-2-5,P-R-1547090-1-6",
+            "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1235534-2-5,P-R-1547090-1-6"
         }
     },
     "JennyTest2": {
@@ -655,22 +655,6 @@
             },
             "hlsSettings": {
                 "hlsConfig": {
-                    "fragLoadPolicy": {
-                        "default": {
-                            "errorRetry": {
-                                "maxNumRetry": 6,
-                                "maxRetryDelayMs": 8000,
-                                "retryDelayMs": 1000
-                            },
-                            "maxLoadTimeMs": 30000,
-                            "maxTimeToFirstByteMs": 10000,
-                            "timeoutRetry": {
-                                "maxNumRetry": 4,
-                                "maxRetryDelayMs": 0,
-                                "retryDelayMs": 0
-                            }
-                        }
-                    },
                     "liveMaxLatencyDurationCount": 6,
                     "liveSyncDurationCount": 3,
                     "startLevel": -1,
@@ -3198,6 +3182,8 @@
         "ECS_ADSP_VQE_unityInitialDAGCWithNoAAGC": "0",
         "ECS_AudioDL_Kingstone": "0",
         "EngineTimerIn100ns": "100000",
+        "NetworkIndicator_BandwidthPoorLimitBps": 12500000,
+        "NetworkIndicator_BandwidthPoorLimitHadVideoBps": 681250,
         "UseClockRateForCNSupport": "true"
     },
     "SkypeBilling": {
@@ -3415,6 +3401,9 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
+            },
+            "logUpload": {
+                "maxSize": 512000
             }
         }
     },
