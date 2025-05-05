@@ -11,7 +11,7 @@
 ModuleToProcess = 'Microsoft.Online.SharePoint.PowerShell.dll'
 
 # Version number of this module.
-ModuleVersion = '16.0.25912.12000'
+ModuleVersion = '16.0.26017.12000'
 
 # ID used to uniquely identify this module
 GUID = 'adedde5f-e77b-4682-ab3d-a4cb4ff79b83'
@@ -82,7 +82,6 @@ ModuleList = @()
 # List of all files packaged with this module
 FileList = @()
 
-# Private data to pass to the module specified in ModuleToProcess
 PrivateData = @{
     PSData = @{
     # Tags applied to this module. These help with module discovery in online galleries.
@@ -98,3 +97,4 @@ PrivateData = @{
     } # End of PSData hashtable
   } # End of PrivateData hashtable
 }
+
