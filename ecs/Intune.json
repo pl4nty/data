@@ -127,6 +127,7 @@
         "FlightingV2": {
             "EnableBteOnboarding": true,
             "EnableCredentialProviderForAuthenticator": true,
+            "EnableDeviceNameTemplate": true,
             "EnableWpDeviceTypeUpdate": true
         }
     },

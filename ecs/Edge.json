@@ -549,15 +549,6 @@
                 "msEdgeSdch"
             ]
         },
-        "SuppressComposeCWC": {
-            "enableFeatures": [
-                "msEdgeDiscoverSupressCommercialComposeInline",
-                "msEdgeDiscoverSupressCommercialComposeTab",
-                "msEdgeDiscoverBCESupressNotebook",
-                "msEdgeDiscoverBCEUseCWCLinks",
-                "msWinCopilotUseBCELinks"
-            ]
-        },
         "TelemetryPopSampleSampling": {
             "enableFeatures": [
                 "msForceTelemetrySampling",
