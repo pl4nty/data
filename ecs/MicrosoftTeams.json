@@ -1826,6 +1826,9 @@
     "TeamsCopilotAggregator_UserCtx": {
         "GroupCopilotRolloutFlags": {
             "EnableCalendarIngestionFromSessionMetadata": true
+        },
+        "ODSPFeatureFlags": {
+            "EnableBizchatIntegration": true
         }
     },
     "TeamsCustomerEngagementHub": {
