@@ -65185,6 +65185,39 @@
         "Component": "Unbounded buffer read in libstagefright while parsing 3GPP metadata"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-05-01",
+        "Published": "May 6, 2025",
+        "Patch level": "2025-05-05",
+        "CVE": "CVE-2025-27700",
+        "References": "A-330507809",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "oobconfig",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-05-01",
+        "Published": "May 6, 2025",
+        "Patch level": "2025-05-05",
+        "CVE": "CVE-2024-56193",
+        "References": "A-238299155",
+        "Type": "ID",
+        "Severity": "High",
+        "Subcomponent": "Bluetooth",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-05-01",
+        "Published": "May 6, 2025",
+        "Patch level": "2025-05-05",
+        "CVE": "CVE-2025-27701",
+        "References": "A-384814655",
+        "Type": "ID",
+        "Severity": "High",
+        "Subcomponent": "Kernel",
+        "Component": "Pixel"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-04-01",
         "Published": "April 10, 2025",
         "Patch level": "2025-04-05",
@@ -89390,7 +89423,7 @@
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-05-01",
-        "Published": "May 3, 2025",
+        "Published": "May 5, 2025",
         "Patch level": "2025-05-05",
         "CVE": "CVE-2025-26439",
         "References": "A-372227605",
@@ -89401,7 +89434,7 @@
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-05-01",
-        "Published": "May 3, 2025",
+        "Published": "May 5, 2025",
         "Patch level": "2025-05-05",
         "CVE": "CVE-2025-26419",
         "References": "A-387497730",
@@ -89412,7 +89445,7 @@
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-05-01",
-        "Published": "May 3, 2025",
+        "Published": "May 5, 2025",
         "Patch level": "2025-05-05",
         "CVE": "CVE-2025-26431",
         "References": "A-371195880",
@@ -89423,7 +89456,7 @@
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-05-01",
-        "Published": "May 3, 2025",
+        "Published": "May 5, 2025",
         "Patch level": "2025-05-05",
         "CVE": "CVE-2024-40664",
         "References": "A-338974267",
