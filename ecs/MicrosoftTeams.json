@@ -617,7 +617,6 @@
                 "enableLicenseCheckForTeamsPremium": true,
                 "enableLicenseEnforcementForApps": true,
                 "enableMultiGeo": true,
-                "enableParallelBulkJoinRequest": true,
                 "enablePoPForOffice365ExchangeREST": true,
                 "enableProcessingUserAccountStateChangeForAADSync": true,
                 "enableRemoveSoftDeletedUserFromTeamsForAADSync": true,
