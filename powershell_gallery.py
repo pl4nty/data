@@ -16,6 +16,7 @@ MODULES = [
     'WindowsAutoPilotIntune',
     'Lenovo.Client.Scripting',
     'DeliveryOptimizationTroubleshooter',
+    'SignatureDownloadCustomTask', # Defender offline signatures
 
     # HP
     'HPCMSL',
