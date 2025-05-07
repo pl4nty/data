@@ -593,6 +593,7 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
+    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -656,9 +657,7 @@
             "hlsSettings": {
                 "hlsConfig": {
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3,
-                    "startLevel": -1,
-                    "testBandwidth": true
+                    "liveSyncDurationCount": 3
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
@@ -711,6 +710,7 @@
                 "ecsSettings": {
                     "allowPlayButton": true,
                     "allowSdnPlugins": true,
+                    "enableBandwidthManagementV3": true,
                     "enableOverlayStats": true,
                     "monitorVideoFrameRate": true,
                     "sdnOptions": {
@@ -724,8 +724,8 @@
             "umsSettings": {
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
-                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25116.1/hydra_player_ums_bundle.js",
-                        "https://res.cdn.office.net/s01-ml-player/4.25116.1/hydra_player_ums_bundle.js"
+                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25124.1/hydra_player_ums_bundle.js",
+                        "https://res.cdn.office.net/s01-ml-player/4.25124.1/hydra_player_ums_bundle.js"
                     ]
                 },
                 "thaScript": "https://sdk.tha.teams.microsoft.com/tha.js"

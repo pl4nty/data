@@ -445,6 +445,7 @@
         "EnableOrgChartDataProviderConcurrencyLimit": true,
         "EnableOrgExplorerPeopleInsightsFromPps": false,
         "EnablePapiCallsWithForceSync": true,
+        "EnablePendingRSVPEnricher": true,
         "EnablePeopleCardCombinedActionsFilterForPps": true,
         "EnablePeopleCardPoweredBy3S": true,
         "EnablePeopleCardPoweredByPps": false,
