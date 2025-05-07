@@ -131,6 +131,11 @@
             "EnableWpDeviceTypeUpdate": true
         }
     },
+    "SVC_AppleMDM": {
+        "FlightingV2": {
+            "ValidateEdgeManifestSignatures": true
+        }
+    },
     "SVC_CorpDeviceEnrollment": {
         "FlightingV2": {
             "EnableAPSyncRequestMessage": true
@@ -138,6 +143,7 @@
     },
     "SVC_DataInfra": {
         "FlightingV2": {
+            "QBSFSICoreMigrationDuplicateBatch1": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true
         }
     },
