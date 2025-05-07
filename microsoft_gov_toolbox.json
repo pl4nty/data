@@ -551,8 +551,9 @@
         ],
         "name": "ExchangeOnlineManagement",
         "publisher": "Microsoft",
-        "version": "3.6.0",
+        "version": "3.7.2",
         "versions": [
+            "3.7.2",
             "3.6.0",
             "3.4.0",
             "3.0.0"
