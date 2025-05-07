@@ -662,7 +662,7 @@
                                 "maxRetryDelayMs": 8000,
                                 "retryDelayMs": 1000
                             },
-                            "maxLoadTimeMs": 60000,
+                            "maxLoadTimeMs": 30000,
                             "maxTimeToFirstByteMs": 10000,
                             "timeoutRetry": {
                                 "maxNumRetry": 4,
@@ -3415,6 +3415,9 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
+            },
+            "logUpload": {
+                "maxSize": 512000
             }
         }
     },
