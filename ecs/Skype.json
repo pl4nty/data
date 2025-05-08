@@ -592,7 +592,6 @@
     "ECSTest2": {
         "ResourceIdmatch": false
     },
-    "ECS_Scorecards_Test": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -662,8 +661,8 @@
                                 "maxRetryDelayMs": 8000,
                                 "retryDelayMs": 1000
                             },
-                            "maxLoadTimeMs": 120000,
-                            "maxTimeToFirstByteMs": 6000,
+                            "maxLoadTimeMs": 30000,
+                            "maxTimeToFirstByteMs": 10000,
                             "timeoutRetry": {
                                 "maxNumRetry": 4,
                                 "maxRetryDelayMs": 0,
@@ -3415,9 +3414,6 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
-            },
-            "logUpload": {
-                "maxSize": 512000
             }
         }
     },
@@ -3995,37 +3991,7 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1",
-        "ULLogUpload": {
-            "conditions": [
-                {
-                    "component": "calling.cqf",
-                    "level": "DEBUG4",
-                    "logId": 70115,
-                    "matchers": [
-                        {
-                            "arg": 0,
-                            "op": "=",
-                            "value": "0"
-                        },
-                        {
-                            "arg": 1,
-                            "op": "=",
-                            "value": "0"
-                        }
-                    ],
-                    "name": "condition #1"
-                }
-            ],
-            "experimentTarget": "Native",
-            "filters": [
-                {
-                    "component": "LMS.RtmCodecs_MLE_SVC",
-                    "level": "DEBUG4"
-                }
-            ],
-            "name": "Abcdefg #3811919"
-        }
+        "NrpRefactor265_naluCount": "1"
     },
     "SkypeWebMedia": {
         "mediaAgent": {

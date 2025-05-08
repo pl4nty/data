@@ -70,11 +70,6 @@
                 "msEdgeHJEnableSavingActionEvents"
             ]
         },
-        "EdgeHJEnableShopping": {
-            "enableFeatures": [
-                "msEdgeHJEnableShopping"
-            ]
-        },
         "EdgeLoginDbBlockShutdown": {
             "enableFeatures": [
                 "msEdgeLoginDbTasksBlockShutdown"
@@ -89,11 +84,6 @@
                     "name": "Browser Version",
                     "value": "136.0.0.0"
                 }
-            ]
-        },
-        "EdgeShoppingOmniboxAnimationControlAOC": {
-            "enableFeatures": [
-                "msEdgeShoppingOmniboxAnimationAOC"
             ]
         },
         "EdgeShoppingOnlineSelectorExtraction": {
@@ -169,12 +159,6 @@
             "enableFeatures": [
                 "msNurturingMetadataTemplate",
                 "msNurturingOnboardNTPToCE"
-            ]
-        },
-        "OnboardShoppingToCE": {
-            "enableFeatures": [
-                "msNurturingOnboardShoppingToCE",
-                "msNurturingFrameworkInInprivateMode"
             ]
         },
         "PasswordZeroStateV2": {
