@@ -1060,6 +1060,7 @@
         "Nh_Use_EndUserApi_GetCpc": true,
         "Nh_Use_Entra_B2B_TenantId": true,
         "Nh_Use_MDCA_ReplyTo_State": true,
+        "Nh_Use_MultiPD_EndpointId": true,
         "Nh_adfs_sso": true,
         "Nh_adfs_sso_adal": true,
         "Nighthawk_AVD_Client_Options": true,

@@ -1695,6 +1695,11 @@
                             "toc_title": "Azure Voice Bridge"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-web-application-firewall",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Web Application Firewall"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azurecom",
                             "permissioned-type": "private",
                             "toc_title": "Azure.com"
@@ -3478,11 +3483,6 @@
                             "href": "a_z_names_terms/e/edition-microsoft-365",
                             "permissioned-type": "private",
                             "toc_title": "edition (Microsoft 365)"
-                        },
-                        {
-                            "href": "a_z_names_terms/e/editor",
-                            "permissioned-type": "private",
-                            "toc_title": "Editor"
                         },
                         {
                             "href": "a_z_names_terms/e/elastic-database",
@@ -5283,6 +5283,11 @@
                             "href": "a_z_names_terms/m/microsoft-edge-secure-network",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Edge Secure Network"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/microsoft-editor",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Editor"
                         },
                         {
                             "children": [
@@ -9867,6 +9872,11 @@
                             "toc_title": "Days of the week"
                         },
                         {
+                            "href": "grammar-usage/time-day-date/relative-date-and-time-terms-in-ui",
+                            "permissioned-type": "private",
+                            "toc_title": "Relative date and time terms in UI"
+                        },
+                        {
                             "href": "grammar-usage/time-day-date/time-and-date",
                             "permissioned-type": "private",
                             "toc_title": "Time and date"
@@ -10211,11 +10221,6 @@
                 }
             ],
             "toc_title": "Content design for UX"
-        },
-        {
-            "href": "date-and-time",
-            "permissioned-type": "private",
-            "toc_title": "Date and time"
         },
         {
             "href": "global-and-localization-considerations",
@@ -13544,7 +13549,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2575,
+        "count_of_node_with_href": 2576,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

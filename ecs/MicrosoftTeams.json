@@ -1828,7 +1828,32 @@
             "EnableCalendarIngestionFromSessionMetadata": true
         },
         "ODSPFeatureFlags": {
-            "EnableBizchatIntegration": true
+            "EnableBizchatIntegration": true,
+            "MigrateGetTeamsAppID": true
+        },
+        "SkillConfig": {
+            "TimeModeratorSkill_AgendaTracking_TopicAlarms": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTracking",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingDebug",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingAutoStart",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingButtons",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.loopAgendaTrackingAllowed",
+                    "IsEnabled": false
+                }
+            ]
         }
     },
     "TeamsCustomerEngagementHub": {
@@ -2198,6 +2223,7 @@
             "EUR": "emea",
             "FRA": "fr",
             "GBR": "uk",
+            "IDN": "id",
             "IND": "in",
             "ISL": "il",
             "ITA": "it",
@@ -2231,6 +2257,7 @@
                 "EUR": "emea",
                 "FRA": "fr",
                 "GBR": "uk",
+                "IDN": "id",
                 "IND": "in",
                 "ISL": "il",
                 "ITA": "it",

@@ -593,6 +593,7 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
+    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -662,8 +663,8 @@
                                 "maxRetryDelayMs": 8000,
                                 "retryDelayMs": 1000
                             },
-                            "maxLoadTimeMs": 30000,
-                            "maxTimeToFirstByteMs": 10000,
+                            "maxLoadTimeMs": 120000,
+                            "maxTimeToFirstByteMs": 6000,
                             "timeoutRetry": {
                                 "maxNumRetry": 4,
                                 "maxRetryDelayMs": 0,
@@ -672,7 +673,9 @@
                         }
                     },
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3
+                    "liveSyncDurationCount": 3,
+                    "startLevel": -1,
+                    "testBandwidth": true
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
@@ -3415,9 +3418,6 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
-            },
-            "logUpload": {
-                "maxSize": 512000
             }
         }
     },
@@ -3461,23 +3461,8 @@
         "chat": {
             "enableRemoteTogetherEmojiAnimationsV2": true,
             "msgSendFailureIndicatorEnabled": true,
-            "smsRequiredConsentPrefixes": [
-                "+49",
-                "+48"
-            ],
-            "twoWaySmsEnabledPrefixes": [
-                "+1",
-                "+52",
-                "+91",
-                "+44",
-                "+55",
-                "+57",
-                "+81",
-                "+33",
-                "+49",
-                "+31",
-                "+48"
-            ],
+            "smsRequiredConsentPrefixes": [],
+            "twoWaySmsEnabledPrefixes": [],
             "twoWaySmsExcludedPrefixes": [
                 "+1242",
                 "+1246",
@@ -3503,7 +3488,20 @@
                 "+1876",
                 "+1658",
                 "+6189162",
-                "+6189164"
+                "+6189164",
+                "+1",
+                "+52",
+                "+91",
+                "+44",
+                "+55",
+                "+57",
+                "+81",
+                "+33",
+                "+49",
+                "+31",
+                "+48",
+                "+49",
+                "+48"
             ]
         },
         "dogfood": {
