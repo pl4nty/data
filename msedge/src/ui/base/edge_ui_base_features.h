@@ -553,6 +553,11 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeVisualRefreshKumoEnabled(bool trigger_usage = false);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kVisualRefreshKumoColors);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeVisualRefreshKumoColorsEnabled(bool trigger_usage = false);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeWebUIWebVitals);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeWebUIWebVitalsEnabled();

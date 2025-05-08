@@ -196,6 +196,8 @@ template("edge_overlay_config_compiler") {
   config(target_name) {
     forward_variables_from(invoker, "*", [])
 
+    configs -= [ ":clang_warning_suppression" ]
+
     # Edge overlays:
     declare_args() {
       edge_clang_sample_profile_path = ""

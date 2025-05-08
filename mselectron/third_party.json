@@ -11,7 +11,7 @@
   },
   {
     "name": "afl",
-    "size": 1353092,
+    "size": 1327992,
     "file_count": 171
   },
   {
@@ -86,8 +86,8 @@
   },
   {
     "name": "angle",
-    "size": 903451667,
-    "file_count": 13665
+    "size": 886655423,
+    "file_count": 13060
   },
   {
     "name": "anonymous_tokens",
@@ -186,7 +186,7 @@
   },
   {
     "name": "catapult",
-    "size": 301632449,
+    "size": 301617306,
     "file_count": 10804
   },
   {
@@ -321,7 +321,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 25214819,
+    "size": 25198227,
     "file_count": 3439
   },
   {
@@ -331,7 +331,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 531927984,
+    "size": 531729413,
     "file_count": 32892
   },
   {
@@ -361,8 +361,8 @@
   },
   {
     "name": "electron_node",
-    "size": 558118501,
-    "file_count": 45784
+    "size": 557520314,
+    "file_count": 45750
   },
   {
     "name": "emoji-metadata",
@@ -381,7 +381,7 @@
   },
   {
     "name": "expat",
-    "size": 1884411,
+    "size": 1875357,
     "file_count": 207
   },
   {
@@ -416,8 +416,8 @@
   },
   {
     "name": "flatbuffers",
-    "size": 14501681,
-    "file_count": 2561
+    "size": 13121865,
+    "file_count": 2214
   },
   {
     "name": "flex",
@@ -536,8 +536,8 @@
   },
   {
     "name": "grpc",
-    "size": 51238626,
-    "file_count": 11610
+    "size": 50161121,
+    "file_count": 11378
   },
   {
     "name": "hamcrest",
@@ -861,7 +861,7 @@
   },
   {
     "name": "libxslt",
-    "size": 1815463,
+    "size": 1812511,
     "file_count": 120
   },
   {
@@ -1086,7 +1086,7 @@
   },
   {
     "name": "perfetto",
-    "size": 70087728,
+    "size": 70086450,
     "file_count": 15854
   },
   {
@@ -1196,7 +1196,7 @@
   },
   {
     "name": "re2",
-    "size": 1661739,
+    "size": 1660191,
     "file_count": 156
   },
   {
@@ -1296,7 +1296,7 @@
   },
   {
     "name": "skia",
-    "size": 141156539,
+    "size": 141156219,
     "file_count": 9634
   },
   {
@@ -1346,8 +1346,8 @@
   },
   {
     "name": "squirrel.mac",
-    "size": 20009758,
-    "file_count": 830
+    "size": 13691783,
+    "file_count": 660
   },
   {
     "name": "subresource-filter-ruleset",
@@ -1361,7 +1361,7 @@
   },
   {
     "name": "swiftshader",
-    "size": 268973575,
+    "size": 268900377,
     "file_count": 8656
   },
   {
@@ -1386,7 +1386,7 @@
   },
   {
     "name": "tflite",
-    "size": 332989221,
+    "size": 332974805,
     "file_count": 36993
   },
   {
@@ -1401,7 +1401,7 @@
   },
   {
     "name": "ukey2",
-    "size": 586170,
+    "size": 574819,
     "file_count": 118
   },
   {
@@ -1481,13 +1481,13 @@
   },
   {
     "name": "webdriver",
-    "size": 1033691,
+    "size": 1028079,
     "file_count": 341
   },
   {
     "name": "webgl",
-    "size": 88493978,
-    "file_count": 17022
+    "size": 87949962,
+    "file_count": 17017
   },
   {
     "name": "webgpu-cts",
@@ -1561,12 +1561,12 @@
   },
   {
     "name": "xcbproto",
-    "size": 860183,
+    "size": 858857,
     "file_count": 65
   },
   {
     "name": "xnnpack",
-    "size": 146327505,
+    "size": 146323077,
     "file_count": 11305
   },
   {
@@ -1576,12 +1576,12 @@
   },
   {
     "name": "zstd",
-    "size": 8346177,
+    "size": 8345861,
     "file_count": 723
   },
   {
     "name": "zxcvbn-cpp",
-    "size": 312279,
+    "size": 311181,
     "file_count": 40
   }
 ]

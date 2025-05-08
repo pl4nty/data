@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1661713,
-    "file_count": 160
+    "size": 1663140,
+    "file_count": 163
   },
   {
     "name": "alsa",
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14600334,
+    "size": 14600472,
     "file_count": 830
   },
   {
@@ -66,8 +66,8 @@
   },
   {
     "name": "blink",
-    "size": 31988295,
-    "file_count": 3928
+    "size": 32024924,
+    "file_count": 3929
   },
   {
     "name": "boringssl",
@@ -126,7 +126,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7313972,
+    "size": 7338663,
     "file_count": 29
   },
   {
@@ -166,7 +166,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 91546584,
+    "size": 91546253,
     "file_count": 10767
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "glslang",
-    "size": 40804648,
-    "file_count": 3046
+    "size": 41399192,
+    "file_count": 3066
   },
   {
     "name": "googletest",
@@ -226,8 +226,8 @@
   },
   {
     "name": "hunspell",
-    "size": 4386190,
-    "file_count": 79
+    "size": 4947775,
+    "file_count": 84
   },
   {
     "name": "hunspell_dictionaries",
@@ -271,7 +271,7 @@
   },
   {
     "name": "jetstream",
-    "size": 128907442,
+    "size": 128907804,
     "file_count": 54
   },
   {
@@ -301,8 +301,8 @@
   },
   {
     "name": "libc++",
-    "size": 6069927,
-    "file_count": 931
+    "size": 6063193,
+    "file_count": 930
   },
   {
     "name": "libdisplay-info",
@@ -356,7 +356,7 @@
   },
   {
     "name": "libxml",
-    "size": 346160,
+    "size": 344777,
     "file_count": 36
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 215375380,
+    "size": 215581550,
     "file_count": 337
   },
   {
@@ -396,7 +396,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19619307,
+    "size": 19621867,
     "file_count": 19
   },
   {
@@ -446,7 +446,7 @@
   },
   {
     "name": "openscreen",
-    "size": 508699,
+    "size": 507795,
     "file_count": 52
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "perfetto",
-    "size": 1473691,
+    "size": 1480369,
     "file_count": 79
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "name": "protobuf",
-    "size": 763660,
+    "size": 763938,
     "file_count": 41
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "skia",
-    "size": 3426486,
+    "size": 3428152,
     "file_count": 1166
   },
   {
@@ -541,7 +541,7 @@
   },
   {
     "name": "subresource-filter-ruleset",
-    "size": 102649,
+    "size": 104739,
     "file_count": 7
   },
   {
@@ -586,7 +586,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5684334,
+    "size": 5694029,
     "file_count": 166
   },
   {
@@ -626,12 +626,12 @@
   },
   {
     "name": "zlib",
-    "size": 121715,
+    "size": 121577,
     "file_count": 4
   },
   {
     "name": "zstd",
-    "size": 303196,
+    "size": 311467,
     "file_count": 43
   }
 ]

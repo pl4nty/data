@@ -43,5 +43,8 @@
   "document.visibilityState should become visible when a window is restored with BaseWindow",
   "document.visibilityState should become visible when a window is restored",
   "iframe using HTML fullscreen API while window is OS-fullscreened can fullscreen from out-of-process iframes (non-macOS)",
-  "webContents module did-change-theme-color event is triggered with correct theme color"
+  "webContents module did-change-theme-color event is triggered with correct theme color",
+
+  "// TODO(ckerr) fix upstream in electron/electron",
+  "<webview> tag methods <webview>.reload() does not crash when renderer process crashes"
 ]

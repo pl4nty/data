@@ -1,0 +1,76 @@
+{
+  "apiVersion": "2020-05-07",
+  "id": "/subscriptions/76141de3-2816-4752-83c1-f5c22783bf14/resourceGroups/electron-internal-builds/providers/Microsoft.CloudTest/images/electron-win2022-build-image",
+  "name": "electron-win2022-build-image",
+  "type": "microsoft.cloudtest/images",
+  "location": "westus2",
+  "tags": {},
+  "properties": {
+      "baseImage": "/subscriptions/c69d8db0-c48c-45ac-bba0-d35dbbf96866/resourceGroups/CloudTestImages/providers/Microsoft.Compute/galleries/CloudTestGallery/images/VanillaWindows2022-1ESPT/versions/latest",
+      "subscriptionId": "509af33e-e99f-4dfb-905e-c62c646d0efa",
+      "buildProfile": {
+          "runAsSystem": false,
+          "sku": "Standard_D16ads_v5"
+      },
+      "platform": "Windows",
+      "artifacts": [
+          {
+              "name": "windows-chocolatey",
+              "parameters": {
+                  "packages": "7zip"
+              }
+          },
+          {
+              "name": "windows-gitinstall"
+          },
+          {
+              "name": "windows-defender-exclusions",
+              "parameters": {
+                  "ExclusionPath": "D:\\a"
+              }
+          },
+          {
+              "name": "windows-install-nvm",
+              "parameters": {
+                  "nodeVersions": "20.9.0"
+              }
+          },
+          {
+              "name": "Windows-AzureCLI"
+          },
+          {
+              "name": "Windows-Install-ChocoPackage",
+              "parameters": {
+                  "package": "visualstudio2022buildtools",
+                  "installArgs": "--force --yes --params '--add Microsoft.VisualStudio.Component.Windows11SDK.26100 --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.VC.Tools.ARM64'"
+              }
+          }
+      ],
+      "publishingProfile": {
+          "targetRegions": [
+              {
+                  "name": "westus2",
+                  "replicas": 1
+              }
+          ],
+          "storageSku": "Premium"
+      },
+      "scheduleProfile": {
+          "cronExpression": "30 3 */1 * *"
+      },
+      "managementProfile": {},
+      "replicationImageVersions": [
+          "/subscriptions/509af33e-e99f-4dfb-905e-c62c646d0efa/resourceGroups/CloudTestImages/providers/Microsoft.Compute/galleries/CloudTestGallery/images/electron-win2022-build-image/versions/10.0.0"
+      ],
+      "version": "10.0.0",
+      "provisioningScriptUrl": "https://msftelectronbuild.blob.core.windows.net/provisioning-scripts",
+      "provisioningScriptVersion": "1.0.1",
+      "subscriptionType": "Azure",
+      "imageType": "Managed",
+      "provisioningState": "Succeeded",
+      "activeRequestIds": [],
+      "contacts": [
+          "joklein@microsoft.com"
+      ]
+  }
+}

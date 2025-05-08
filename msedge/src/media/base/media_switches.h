@@ -110,7 +110,8 @@ MEDIA_EXPORT extern const char kUserGestureRequiredPolicy[];
 
 }  // namespace autoplay
 
-#if BUILDFLAG(USE_CHROMEOS_MEDIA_ACCELERATION)
+// TODO(crbug.com/414429305): Restrict this flag to USE_V4L2_CODEC.
+#if BUILDFLAG(USE_LINUX_VIDEO_ACCELERATION)
 MEDIA_EXPORT extern const char kHardwareVideoDecodeFrameRate[];
 #endif
 
@@ -215,6 +216,10 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kContextMenuSaveVideoFrameAs);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kContextMenuSearchForVideoFrame);
 #if BUILDFLAG(CHROME_WIDE_ECHO_CANCELLATION)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kChromeWideEchoCancellation);
+#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC)
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kSystemLoopbackAsAecReference);
+MEDIA_EXPORT extern const base::FeatureParam<int> kAddedProcessingDelay;
+#endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC)
 #endif
 #if (BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN))
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kEnforceSystemEchoCancellation);
@@ -422,7 +427,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kBuiltInHlsPlayer);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kBuiltInHlsMP4);
 #endif  // BUILDFLAG(ENABLE_HLS_DEMUXER)
 
-#if BUILDFLAG(USE_CHROMEOS_MEDIA_ACCELERATION)
+#if BUILDFLAG(USE_LINUX_VIDEO_ACCELERATION)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kChromeOSHWVBREncoding);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kLimitConcurrentDecoderInstances);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kUSeSequencedTaskRunnerForVEA);
@@ -436,7 +441,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kEnableArmHwdrm10bitOverlays);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kEnableArmHwdrm);
 #endif  // BUILDFLAG(USE_CHROMEOS_PROTECTED_MEDIA)
 #endif  // defined(ARCH_CPU_ARM_FAMILY)
-#endif  // BUILDFLAG(USE_CHROMEOS_MEDIA_ACCELERATION)
+#endif  // BUILDFLAG(USE_LINUX_VIDEO_ACCELERATION)
 
 #if BUILDFLAG(IS_WIN)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDirectShowGetPhotoState);
@@ -557,6 +562,8 @@ MEDIA_EXPORT std::string GetEffectiveAutoplayPolicy(
     const base::CommandLine& command_line);
 
 MEDIA_EXPORT bool IsChromeWideEchoCancellationEnabled();
+MEDIA_EXPORT bool IsSystemLoopbackAsAecReferenceEnabled();
+MEDIA_EXPORT std::optional<base::TimeDelta> GetAecAddedDelay();
 MEDIA_EXPORT bool IsSystemEchoCancellationEnforced();
 MEDIA_EXPORT bool IsSystemEchoCancellationEnforcedAndAllowAgcInTandem();
 MEDIA_EXPORT bool IsSystemEchoCancellationEnforcedAndAllowNsInTandem();

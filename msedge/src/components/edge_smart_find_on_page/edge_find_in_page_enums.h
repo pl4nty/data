@@ -145,6 +145,16 @@ enum class RelatedMatchClickStatus {
   kMaxValue = kClickedWithExactMatch,
 };
 
+// These values are persisted to logs. Entries should not be renumbered or
+// removed and numeric values should never be reused.
+// Please keep in sync with "Microsoft.Find.CopilotSuggestion.State" in
+// src/tools/metrics/histograms/edge_enums.xml.
+enum class CopilotSuggestionState {
+  kShown = 0,
+  kClicked = 1,
+  kMaxValue = kClicked,
+};
+
 }  // namespace find_in_page
 }  // namespace edge
 

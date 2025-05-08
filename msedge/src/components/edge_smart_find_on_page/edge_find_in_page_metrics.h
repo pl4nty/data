@@ -251,6 +251,10 @@ void RecordFindOnPageSidebarFCP(const base::TimeDelta& duration);
 
 void RecordFindOnPageSidebarLCP(const base::TimeDelta& duration);
 
+void RecordCopilotSuggestionShown();
+
+void RecordCopilotSuggestionClicked();
+
 }  // namespace metrics
 }  // namespace find_in_page
 }  // namespace edge
