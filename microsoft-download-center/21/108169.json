@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "PIX 2505.09 - Revamped UX, Improved Usability, and Many New Features",
+    "downloadDescription": "Revamped UX, Improved Usability, and Many New Features",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PIX-2505.09-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/499c80fe-87ae-4662-93a1-58b7d8efeb32/PIX-2505.09-Installer-x64.exe",
+            "size": "203098376",
+            "version": "PIX 2505.09",
+            "datePublished": "5/9/2025 12:20:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PIX-2505.09-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/499c80fe-87ae-4662-93a1-58b7d8efeb32/PIX-2505.09-Installer-ARM64.exe",
+            "size": "169944368",
+            "version": "PIX 2505.09",
+            "datePublished": "5/9/2025 12:20:51 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX 2505.09 - Revamped UX, Improved Usability, and Many New Features",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "PIX 2505.09",
+    "detailsSection_file_name": [
+        "PIX-2505.09-Installer-x64.exe",
+        "PIX-2505.09-Installer-ARM64.exe"
+    ],
+    "detailsSection_file_size": [
+        "193.7 MB",
+        "162.1 MB"
+    ],
+    "detailsSection_file_date": "5/9/2025",
+    "systemRequirementsSection": "Windows 10/11, DirectX 12 Capable GPU",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the applicable installer, run it, and follow the instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108169",
+    "downloadPreload": true
+}
