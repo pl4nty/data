@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "PIX 2505.08 - Revamped UX, Improved Usability, and Many New Features",
+    "downloadDescription": "Revamped UX, Improved Usability, and Many New Features",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PIX-2505.08-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/cb20155a-1cd9-427f-ac3f-f9b3da4d1e39/PIX-2505.08-Installer-x64.exe",
+            "size": "203100640",
+            "version": "2505.08",
+            "datePublished": "5/8/2025 10:00:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PIX-2505.08-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/cb20155a-1cd9-427f-ac3f-f9b3da4d1e39/PIX-2505.08-Installer-ARM64.exe",
+            "size": "169943336",
+            "version": "2505.08",
+            "datePublished": "5/8/2025 10:00:53 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX 2505.08 - Revamped UX, Improved Usability, and Many New Features",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2505.08",
+    "detailsSection_file_name": [
+        "PIX-2505.08-Installer-x64.exe",
+        "PIX-2505.08-Installer-ARM64.exe"
+    ],
+    "detailsSection_file_size": [
+        "193.7 MB",
+        "162.1 MB"
+    ],
+    "detailsSection_file_date": "5/8/2025",
+    "systemRequirementsSection": "Windows 10 or 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Run the installer and follow its instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108168",
+    "downloadPreload": true
+}
