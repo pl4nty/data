@@ -992,6 +992,7 @@
         "SnptEnableConsumerNotificationHandling": true,
         "SnptEnableDeleteOrphanResource": true,
         "SnptEnableDistinctDeleteRequest": true,
+        "SnptEnableLockSnptBeforeRestore": true,
         "SnptEnableScanIntermediateRestore": true,
         "SnptEnableScanOrphanResource": true,
         "SnptEnableSessionhostCheck": true,

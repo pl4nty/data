@@ -135,11 +135,6 @@
                 }
             ]
         },
-        "MoreMenuClearBrowserData": {
-            "enableFeatures": [
-                "msEdgeMoreMenuClearBrowsingData"
-            ]
-        },
         "OmniboxEnableOverflowMenu": {
             "enableFeatures": [
                 "msOmniboxEnableOverflowMenuWithSeparator"
