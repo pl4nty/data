@@ -585,7 +585,6 @@
                 "decodeParentServerRelativeUrlForAddTeamChannelSPOApi": true,
                 "deltaPercentageUserNonHumanUserCountForTwt": 100,
                 "disableCreatedAtPropertyRemoval": true,
-                "disableWhiteboardUrlCache": false,
                 "enableAADSyncCrossCloudAdditionUpdates": true,
                 "enableAADSyncCrossCloudDeleteUpdates": true,
                 "enableAADSyncCrossCloudSoftDeletionUpdates": true,

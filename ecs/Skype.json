@@ -593,7 +593,6 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
-    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -663,8 +662,8 @@
                                 "maxRetryDelayMs": 8000,
                                 "retryDelayMs": 1000
                             },
-                            "maxLoadTimeMs": 30000,
-                            "maxTimeToFirstByteMs": 10000,
+                            "maxLoadTimeMs": 120000,
+                            "maxTimeToFirstByteMs": 7000,
                             "timeoutRetry": {
                                 "maxNumRetry": 4,
                                 "maxRetryDelayMs": 0,
@@ -3418,9 +3417,6 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
-            },
-            "logUpload": {
-                "maxSize": 512000
             }
         }
     },
@@ -3998,7 +3994,87 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1"
+        "NrpRefactor265_naluCount": "1",
+        "ULLogUpload": {
+            "conditions": [
+                {
+                    "component": "LMS.RtmCodecs_VSCA",
+                    "level": "DEBUG6",
+                    "logId": 2920040846,
+                    "matchers": [
+                        {
+                            "arg": 1,
+                            "op": "=",
+                            "value": "7"
+                        }
+                    ],
+                    "name": "Condition #0"
+                },
+                {
+                    "component": "LMS.RtmCodecs_MLE_SVC",
+                    "level": "DEBUG6",
+                    "logId": 2417109269,
+                    "matchers": [
+                        {
+                            "arg": 1,
+                            "op": "=",
+                            "value": "3"
+                        },
+                        {
+                            "arg": 0,
+                            "op": "=",
+                            "value": "1"
+                        }
+                    ],
+                    "name": "Condition #1"
+                },
+                {
+                    "component": "LMS.RtmCodecs_VIDPROC",
+                    "level": "DEBUG6",
+                    "logId": 1168072615,
+                    "matchers": [
+                        {
+                            "arg": 1,
+                            "op": "=",
+                            "value": "2"
+                        },
+                        {
+                            "arg": 0,
+                            "op": "=",
+                            "value": "1"
+                        }
+                    ],
+                    "name": "Condition #2"
+                }
+            ],
+            "experimentTarget": "Native",
+            "filters": [
+                {
+                    "component": "LMS.RtmCodecs_MLE_SVC",
+                    "level": "DEBUG6"
+                },
+                {
+                    "component": "LMS.RtmCodecs_VSCA",
+                    "level": "DEBUG6"
+                },
+                {
+                    "component": "LMS.RtmCodecs_SOURCE",
+                    "level": "DEBUG6"
+                },
+                {
+                    "component": "LMS.RtmCodecs_VIDPROC",
+                    "level": "DEBUG6"
+                },
+                {
+                    "component": "LMS.PIPELINE_HEARTBEAT",
+                    "level": "DEBUG6"
+                }
+            ],
+            "mutualSubmissionType": "none",
+            "name": "MLE Stall-6 #4122621",
+            "reenableAfterTriggering": false,
+            "resetCondition": null
+        }
     },
     "SkypeWebMedia": {
         "mediaAgent": {
