@@ -597,8 +597,6 @@
                 "enableAsyncMigrateGroupThroughGraph": true,
                 "enableBackfillSPOIDInThread": true,
                 "enableCacheInvalidationForProfilePicture": true,
-                "enableChannelOnlyMemberForJoinedTeams": true,
-                "enableChannelOnlyMemberForJoinedTeamsS2S": true,
                 "enableChannelOnlyMemberGetTeam": true,
                 "enableConvUXChannelCreation": true,
                 "enableCreateDefaultOneNoteTabOnTeamOrChannelCreation": true,
@@ -611,7 +609,6 @@
                 "enableFirehoseServiceRedirects": true,
                 "enableGetSharedChannelFromGetAllChannel": true,
                 "enableGuardiansAnnouncements": true,
-                "enableJoinedTeamsXTenantUser": true,
                 "enableLicenseCheckForTeamsPremium": true,
                 "enableLicenseEnforcementForApps": true,
                 "enableMultiGeo": true,
@@ -623,7 +620,6 @@
                 "enableSPOMeetingCalendarFluidAccessReading": true,
                 "enableSearchDLsFromSubstrate": true,
                 "enableSensitivityLabelForEdu": true,
-                "enableSensitivityLabelUrlWithFilter": true,
                 "enableSharedChannelArchivalUsingProvisioningSvc": true,
                 "enableSkipSettingStoreUpdatesForArchival": true,
                 "enableSleepBetweenChatServiceMembershipCalls": true,
@@ -2104,7 +2100,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2025042106"
+        "buildVersion": "2025050105"
     },
     "TeamsInfoProtectionDlpService": {
         "rootSettingConfig": {

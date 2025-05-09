@@ -34,6 +34,7 @@
                 "Infra_LogManager",
                 "INFRA_MessageBus",
                 "PAA_IntuneDataPlatform",
+                "PAA_XSU",
                 "Segmentation",
                 "SVC_AdHocQuery",
                 "SVC_AdminApproval",
@@ -133,6 +134,7 @@
     },
     "SVC_AppleMDM": {
         "FlightingV2": {
+            "EnforceEdgeManifestSignatureValidation": true,
             "ValidateEdgeManifestSignatures": true
         }
     },
@@ -143,7 +145,6 @@
     },
     "SVC_DataInfra": {
         "FlightingV2": {
-            "QBSFSICoreMigrationDuplicateBatch1": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true
         }
     },

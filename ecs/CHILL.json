@@ -197,6 +197,151 @@
             }
         }
     },
+    "ChillHarmony": {
+        "Floodgate_Campaign_Harmony.24f05460-43a6-467e-bda2-3e7a806c45e8": {
+            "CampaignId": "24f05460-43a6-467e-bda2-3e7a806c45e8",
+            "EndTimeUtc": "2025-11-29T21:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 5184000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 50,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-05-01T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "CatchUpUsage",
+                            "Count": 3,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 3
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "We have just three questions.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "We'd love your feedback on the Catch Up Agent"
+                        },
+                        {
+                            "displayName": "Likert Scale",
+                            "id": "6e0d1d39-3fb5-447a-a014-ddb8b903c070",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "horizontalStatements": [
+                                        "The content is factually correct",
+                                        "The content doesn't leave out anything important",
+                                        "The content addresses my needs",
+                                        "The content helps me achieve my goal",
+                                        "This is better than other methods"
+                                    ],
+                                    "id": "likert1",
+                                    "questionLabel": "Please rate the experience based on the content you see ",
+                                    "required": false,
+                                    "type": "Likert",
+                                    "verticalOptions": [
+                                        "Strongly disagree",
+                                        "Disagree",
+                                        "Neither agree nor disagree",
+                                        "Agree",
+                                        "Strongly agree"
+                                    ],
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Is there anything else you would like to share?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": false
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Vertical Rating",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "**UGH:** Irrelevant/stressful. ",
+                                        "**MEH:** Relevant but repetitive. ",
+                                        "**Efficient:** Time-saving/insightful.   ",
+                                        "**Effective:** Improves efficiency.   ",
+                                        "**AHA:** Extremely valuable."
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Does the experience help boost productivity?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment2",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": false
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim3",
+                                    "questionLabel": "Anything you would like to add?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/24f05460-43a6-467e-bda2-3e7a806c45e8/a8a66e58-93ab-4963-804b-d7cfd54c2722/Web-Harmony/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillMicrosoftDefenderXdr": {
         "Floodgate_Campaign_MicrosoftDefenderXDR.3beda878-1073-422b-b5e8-81f6347bcf2e": {
             "CampaignId": "3beda878-1073-422b-b5e8-81f6347bcf2e",
