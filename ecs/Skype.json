@@ -592,6 +592,7 @@
     "ECSTest2": {
         "ResourceIdmatch": false
     },
+    "ECS_Scorecards_Test": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -603,11 +604,11 @@
             "mdsc_rmconnectionevent": "P-R-1570178-1-8"
         },
         "SkypeVideoLibrary": {
-            "mdsc_mediadiagnostic": "P-E-1235534-2-5,P-R-1547090-1-6",
-            "mdsc_qoe": "P-E-1235534-2-5,P-R-1547090-1-6",
-            "mdsc_rmconnectionevent": "P-E-1235534-2-5,P-R-1547090-1-6",
-            "skypecosi_concore_native_callsignalingagent_callmodality": "P-E-1235534-2-5,P-R-1547090-1-6",
-            "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1235534-2-5,P-R-1547090-1-6"
+            "mdsc_mediadiagnostic": "P-E-1235534-C1-5,P-R-1547090-1-6",
+            "mdsc_qoe": "P-E-1235534-C1-5,P-R-1547090-1-6",
+            "mdsc_rmconnectionevent": "P-E-1235534-C1-5,P-R-1547090-1-6",
+            "skypecosi_concore_native_callsignalingagent_callmodality": "P-E-1235534-C1-5,P-R-1547090-1-6",
+            "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1235534-C1-5,P-R-1547090-1-6"
         }
     },
     "JennyTest2": {
@@ -654,10 +655,24 @@
             },
             "hlsSettings": {
                 "hlsConfig": {
+                    "fragLoadPolicy": {
+                        "default": {
+                            "errorRetry": {
+                                "maxNumRetry": 6,
+                                "maxRetryDelayMs": 8000,
+                                "retryDelayMs": 1000
+                            },
+                            "maxLoadTimeMs": 60000,
+                            "maxTimeToFirstByteMs": 10000,
+                            "timeoutRetry": {
+                                "maxNumRetry": 4,
+                                "maxRetryDelayMs": 0,
+                                "retryDelayMs": 0
+                            }
+                        }
+                    },
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3,
-                    "startLevel": -1,
-                    "testBandwidth": true
+                    "liveSyncDurationCount": 3
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
@@ -684,6 +699,10 @@
                     "noMediaStreamSwitchTimeoutMs": 12000,
                     "noMediaTimeoutMs": 30000,
                     "preferScriptLoaderForPeer5": true,
+                    "runtimeLoadPolicy": {
+                        "maxLoadTimeMs": 20000,
+                        "maxTimeToFirstByteMs": 10000
+                    },
                     "sendSnapshotTelemetry": true,
                     "sendSnapshotTelemetryEveryMs": 300000,
                     "skipCookie": true,
@@ -713,6 +732,10 @@
                     "enableBandwidthManagementV3": true,
                     "enableOverlayStats": true,
                     "monitorVideoFrameRate": true,
+                    "runtimeLoadPolicy": {
+                        "maxLoadTimeMs": 20000,
+                        "maxTimeToFirstByteMs": 10000
+                    },
                     "sdnOptions": {
                         "name": "peer5",
                         "plugin": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.middlelane-ums.v1.plugin.js",
