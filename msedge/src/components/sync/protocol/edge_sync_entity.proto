@@ -1,0 +1,55 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+import "components/sync/protocol/sync_enums.proto";
+
+message EdgeSyncEntity {
+  // Only present in GetUpdates. The time when the last client is calling Commit
+  // API for this entity.
+  optional int64 mtime_from_client = 1;
+
+  // Whether or not the bookmark is synced one deleted by dedup logic.
+  // Upstream field: collaboration - 1027 in this file.
+  optional bool is_synced_node_deleted_by_dedup = 2 [default = false];
+
+  // Whether or not the bookmark folder is synced one deleted by dedup logic.
+  // Upstream field: deletion_origin - 1028 in this file.
+  optional bool is_synced_folder_deleted_by_dedup = 3 [default = false];
+
+  // Indicate whether the both bookmarks in the dedup are synced node.
+  optional bool is_both_synced_node_in_dedup = 4 [default = false];
+
+  // Indicate whether the both folders in the dedup are synced node.
+  optional bool is_both_synced_folder_in_dedup = 5 [default = false];
+
+  // Indicate whether it is normal delete in the dedup
+  optional bool is_normal_delete_in_dedup = 6 [default = false];
+
+  optional SyncEnums.DeduplicationSource dedup_source = 7;
+
+  // Item id which survive the dedup
+  optional string dedup_kept_item_id = 8;
+
+  // Indicate where the deletion was initiated
+  optional SyncEnums.EdgeDeletionOrigin edge_deletion_origin = 9;
+
+  repeated string path = 10;
+
+  // Indicate whether this is a restored entity
+  optional bool restored = 11 [default = false];
+
+  // Item id which survive the dedup
+  optional string dedup_kept_item_cdut = 12;
+
+  // Bookmark add source
+  optional SyncEnums.BookmarkAddSource bookmark_add_source = 13;
+  // END_EDGE_LEGACY_FIELDS
+}

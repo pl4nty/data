@@ -1,0 +1,91 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+//
+// Sync protocol datatype extension for Edge Hub.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+import "components/sync/protocol/unique_position.proto";
+
+// Extra info with key/value pair for a hub app.
+// Example：
+//  "notification_enabled"： "true"
+//  "auto_open": "false"
+//  "market_constrain": "cn"
+message ExtendedInfo {
+  optional string key = 1;
+  optional string value = 2;
+}
+
+// Edge Hub App state entry.
+message EdgeHubAppSpecifics {
+  // Globally unique id for this hub app.
+  optional string id = 1;
+
+  // Hub app name.
+  optional string name = 2;
+
+  // If change this enmu, remember to change the proto_enum_conversions.cc.
+  enum AppType {
+    THIRD_PARTY = 0;
+    FIRST_PARTY = 1;
+  }
+  // Type for this app.
+  optional AppType type = 3 [default = THIRD_PARTY];
+
+  // Url for this hub app.
+  optional string url = 4;
+
+  // Button icon for this hub app.
+  optional string icon_url = 5;
+
+  // If change this enmu, remember to change the proto_enum_conversions.cc.
+  enum VisibilityType {
+    SHOWN_BY_DEFAULT = 0;
+    HIDDEN_BY_DEFAULT = 1;
+    SHOWN_BY_USER = 2;
+    HIDDEN_BY_USER = 3;
+    SHOWN_BY_POLICY = 4;
+    HIDDEN_BY_POLICY = 5;
+  }
+  // Visible state in sidebar for this app.
+  optional VisibilityType visibility_type = 6 [default = SHOWN_BY_DEFAULT];
+
+  // Width setting for this app.
+  optional uint32 width = 7 [default = 384];
+
+  // Pin/Unpin state for this app.
+  optional bool is_pinned = 8;
+
+  // If change this enmu, remember to change the proto_enum_conversions.cc.
+  enum DeviceType {
+    DESKTOP = 0;
+    MOBILE = 1;
+  }
+  // Emulation state for this hub app.
+  optional DeviceType device_emulation = 9 [default = DESKTOP];
+
+  // Last update, in milliseconds since Unix epoch.
+  optional int64 update_timestamps = 10;
+
+  // Extra info with a list of key/value pairs for this hub app.
+  repeated ExtendedInfo extended_info = 11;
+
+  // Metadata update timestamp in SAI server for this app.
+  optional int64 metadata_update_timestamp = 12;
+
+  // Web manifest declared status for this hub app.
+  optional bool web_manifest_declared = 13;
+
+  // Position in sidebar for this app.
+  optional UniquePosition app_position = 14;
+}

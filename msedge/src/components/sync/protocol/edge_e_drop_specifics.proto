@@ -1,0 +1,64 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+//
+// Sync protocol datatype extension for EDrop.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+import "components/sync/protocol/sync_enums.proto";
+
+// Edge EDrop message entry.
+message EdgeEDropSpecifics {
+  // A random unique identifier for each message.
+  optional string unique_guid = 1;
+  // Message creation time.
+  optional int64 creation_time_unix_epoch_millis = 2;
+
+  // If change this enmu, remember to change the proto_enum_conversions.cc.
+  // and EdgeEDropDatabase::CountSyncTypeMessages() in edge_e_drop_database.cc
+  enum MessageType {
+    // Special message type.
+    SPECIAL_START = 0;
+    WELCOME_CARD_IN_PC = 1;
+    UPSELL_CARD_IN_PC = 2;
+    WELCOME_CARD_IN_MOBILE = 3;
+    UPSELL_CARD_IN_MOBILE = 4;
+    // Normal message type.
+    START = 1000;
+    PURE_MSG = 1001;
+    FILE = 1002;
+    IMAGE = 1003;
+    TAB = 1004;
+  }
+
+  optional MessageType message_type = 3 [default = PURE_MSG];
+
+  // User and device info.
+  optional string user_id = 4;
+  optional string device_id = 5;
+  optional string device_name = 6;
+
+  // The platform of the device.
+  optional SyncEnums.DeviceType device_type = 7;
+
+  // The text message.
+  optional string content = 8;
+
+  // For a file message, will store the file's OneDrive ID.
+  optional string content_url = 9;
+
+  // Not used now.
+  optional string extended_info = 10;
+
+  // Uploaded file total size.
+  optional int64 file_total_size = 11;
+}

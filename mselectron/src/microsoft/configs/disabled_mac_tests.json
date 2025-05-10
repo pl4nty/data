@@ -23,7 +23,7 @@
   
   "// Disabled due to focus failure when upgrading to v33.0.0-alpaha.4",
   "navigator.clipboard.read returns an error when permission denied",
-
+  
   "// https://github.com/electron/electron/issues/46455",
   "BrowserWindow module \"titleBarOverlay\" option sets Window Control Overlay with title bar height of 40",
   "BrowserWindow module \"transparent\" option correctly returns isMaximized() when the window is maximized then minimized",

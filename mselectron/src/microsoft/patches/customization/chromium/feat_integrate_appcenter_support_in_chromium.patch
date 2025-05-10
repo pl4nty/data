@@ -7,7 +7,7 @@ Modifies the existing crashReporter module to submit crash reports
 to appcenter when the submitURL scheme is 'appcenter:'
 
 diff --git a/third_party/crashpad/crashpad/handler/BUILD.gn b/third_party/crashpad/crashpad/handler/BUILD.gn
-index 104e8502908e292e0055f1535de6c5b1f50c6a5a..e6662b1e5fe488587780ae5d7c037aac54b47487 100644
+index 368fef054031738a72e629ce4e91f9f4599ac2ed..3b7a4665219c3749915b4274f49dceb21ecb5bb2 100644
 --- a/third_party/crashpad/crashpad/handler/BUILD.gn
 +++ b/third_party/crashpad/crashpad/handler/BUILD.gn
 @@ -13,6 +13,7 @@
@@ -18,9 +18,9 @@ index 104e8502908e292e0055f1535de6c5b1f50c6a5a..e6662b1e5fe488587780ae5d7c037aac
  
  static_library("handler") {
    sources = [
-@@ -76,11 +77,20 @@ static_library("handler") {
+@@ -75,11 +76,20 @@ static_library("handler") {
+     "../minidump",
      "../snapshot",
-     "../third_party/mini_chromium:chromeos_buildflags",
      "../tools:tool_support",
 +    "//microsoft/buildflags",
    ]
@@ -39,7 +39,7 @@ index 104e8502908e292e0055f1535de6c5b1f50c6a5a..e6662b1e5fe488587780ae5d7c037aac
  }
  
  if (crashpad_is_android) {
-@@ -116,6 +126,7 @@ static_library("common") {
+@@ -115,6 +125,7 @@ static_library("common") {
      "../snapshot",
      "../util",
      "../util:net",
@@ -100,7 +100,7 @@ index 8350d0761ac186eb725c153dc9abe903267e1031..2ad19068dc858f4b3a474909c66911e2
    http_multipart_builder.SetGzipEnabled(options_.upload_gzip);
  
 diff --git a/third_party/crashpad/crashpad/handler/handler_main.cc b/third_party/crashpad/crashpad/handler/handler_main.cc
-index 7e908c0a305be81ad29d96b924433ab411552fb9..9e633e52fe685aac7b95602b7912f40b0fbc5ace 100644
+index 6eca8415eb10ed7d318eba4b1b7b7ca8c653613c..6ba6569efe374a615b92bdfbceb854ad8ddcf92e 100644
 --- a/third_party/crashpad/crashpad/handler/handler_main.cc
 +++ b/third_party/crashpad/crashpad/handler/handler_main.cc
 @@ -28,6 +28,7 @@
@@ -111,7 +111,7 @@ index 7e908c0a305be81ad29d96b924433ab411552fb9..9e633e52fe685aac7b95602b7912f40b
  #include "base/auto_reset.h"
  #include "base/files/file_path.h"
  #include "base/files/scoped_file.h"
-@@ -568,6 +569,8 @@ void InitCrashpadLogging() {
+@@ -567,6 +568,8 @@ void InitCrashpadLogging() {
  int HandlerMain(int argc,
                  char* argv[],
                  const UserStreamDataSources* user_stream_sources) {

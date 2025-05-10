@@ -7,3 +7,4 @@ feat_disable_drop_cancel_animation_on_macos.patch
 build_add_microsoft_flavours_of_ffmpeg.patch
 build_fix_pdf.patch
 add_buildflags_h_to_include_rules.patch
+build_remove_glic_testing_dependency.patch

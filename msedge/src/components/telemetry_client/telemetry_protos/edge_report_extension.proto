@@ -1,0 +1,51 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package telemetry_client;
+
+// This is the message type sent from Chrome to the UKM collector.
+// Next tag: 11
+message EdgeReportExtension {
+  // A unique identifier for a Chrome install. This ID should be used only
+  // in UKM reports, and not linked to any other data sources.
+  optional fixed64 client_id = 1;
+
+  // The session id for this record. This id is unique within a
+  // particular Chrome session. The client keeps track of the session id
+  // and sends it with each record. The session id is simply an integer
+  // that is incremented each time the user relaunches Chrome.
+  optional int32 session_id = 5;
+
+  // The report id for this record.  Report ids increase sequentially from
+  // one within a session.
+  optional int32 report_id = 6;
+
+  optional string app_version = 2;
+
+  // A string containing the applied non-runtime variations seed Etag and
+  // runtime variations seed Etag, separated by a comma.
+  optional string etag = 3;
+
+  // This field is effectively deprecated as we don't set this anymore in code,
+  // but it's possible we may pickup logs based on an old version of this proto
+  // from disk in the wild and therefore we have to keep this field.
+  optional string payload_report = 10;
+  // Deprecated - payload_system_profile =
+  reserved 11;
+  optional string payload_aggregates = 12;
+  // Deprecated - payload_entries
+  reserved 13;
+
+  optional string payload_report_ukm_1 = 14;
+  optional string payload_report_ukm_2 = 15;
+  optional string payload_report_ukm_3 = 16;
+  optional string payload_report_ukm_4 = 17;
+  optional string payload_report_ukm_default = 18;
+  // Only set for testing purposes.
+  optional string payload_report_none = 19;
+}

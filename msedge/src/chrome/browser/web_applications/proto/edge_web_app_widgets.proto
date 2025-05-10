@@ -1,0 +1,88 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+import "components/sync/protocol/web_app_specifics.proto";
+
+option optimize_for = LITE_RUNTIME;
+
+package web_app;
+
+// Represents an edge::WebAppWidget. See:
+// https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PWAWidgets/README.md
+message EdgeWebAppWidgetProto {
+  required EdgeWebAppWidgetDefinitionProto definition = 1;
+  required bool installable = 2;
+  repeated EdgeWebAppWidgetInstanceProto instances = 3;
+}
+
+// Represents an edge::WebAppWidget::Definition containing the information
+// defined in the "widgets" manifest field. This mirrors
+// EdgeManifestWidgetDefinition in:
+// third_party/blink/public/mojom/manifest/manifest.mojom
+message EdgeWebAppWidgetDefinitionProto {
+  required string tag = 1;
+  required string name = 2;
+  optional string short_name = 3;
+  required string data = 4;
+  required string type = 5;
+  required string widget_template = 6;
+  required string ms_ac_template = 7;
+  repeated sync_pb.WebAppIconInfo icons = 8;
+  repeated EdgeWidgetScreenshotInfoProto screenshots = 9;
+  optional bool auth = 10;
+  optional int32 update = 11;
+  optional string description = 12;
+  optional bool multiple = 13;
+}
+
+// Represents an edge::WebAppWidget::Instance. See:
+// https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PWAWidgets/README.md#the-widgetinstance-object
+message EdgeWebAppWidgetInstanceProto {
+  required string id = 1;
+  required string host = 2;
+
+  // Last time the Widget was updated.
+  // ms since the Unix epoch. See sync/base/time.h.
+  optional int64 last_updated = 3;
+  required EdgeWebAppWidgetPayloadProto last_payload = 4;
+}
+
+// Represents an edge::WebAppWidget::Payload. See:
+// https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PWAWidgets/README.md#the-widgetpayload-object
+message EdgeWebAppWidgetPayloadProto {
+  required string card_template = 1;
+  required string data = 2;
+}
+
+// Represents an edge::apps::ImageInfo.
+message EdgeImageInfoProto {
+  // The size of the square app icon, in raw pixels.
+  optional int32 width_in_px = 1;
+  optional int32 height_in_px = 2;
+  // The URL of the app icon.
+  optional string url = 3;
+}
+
+// Represents an edge::apps::WidgetScreenshot.
+message EdgeWidgetScreenshotInfoProto {
+  enum Platform {
+    UNSPECIFIED = 0;
+    // Suitable for any platform.
+    ANY = 1;
+    // Suitable for windows.
+    WINDOWS = 2;
+  }
+
+  // The size of the square app icon, in raw pixels.
+  optional int32 width_in_px = 1;
+  optional int32 height_in_px = 2;
+  // The URL of the app icon.
+  optional string url = 3;
+  // The purpose or context in which the icon should be used.
+  optional Platform platform = 4;
+  // The accessible text for the image.
+  optional string label = 5;
+}

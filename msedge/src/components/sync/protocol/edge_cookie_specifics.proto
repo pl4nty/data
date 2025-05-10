@@ -1,0 +1,111 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+//
+// Sync protocol datatype extension for connected accounts.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+// This definition is based on
+// services\network\public\mojom\cookie_manager.mojom
+message EdgeCookie {
+  // Name of the cookie, e.g. ABC
+  optional string name = 1;
+  // Value of the cookie, e.g. XYZ
+  optional string value = 2;
+  // Domain of the cookie, e.g. google.com
+  optional string domain = 3;
+  // Path of the cookie, e.g. /, /docs
+  optional string path = 4;
+  // Time when the cookie was created.
+  optional int64 creation_time_windows_epoch_micros = 5;
+  // Time when the cookie will expire.
+  optional int64 expiry_time_windows_epoch_micros = 6;
+  // Time of last access.
+  optional int64 last_access_time_windows_epoch_micros = 7;
+
+  optional bool is_secure = 8 [default = false];
+
+  optional bool is_httponly = 9 [default = false];
+
+  optional bool msft_browser_legacy_cookie = 10 [default = false];
+
+  enum CookieBrowserProvenance {
+    NATIVE = 0;
+    EDGE_LEGACY_IMPORT = 1;
+    CHROME_IMPORT = 2;
+    INTERNET_EXPLORER_IMPORT = 3;
+    CHROME_CONTINUOUS_IMPORT = 4;
+    CHROME_CONTINUOUS_IMPORT_OLD = 5;
+  }
+
+  optional CookieBrowserProvenance browser_provenance = 11 [default = NATIVE];
+
+  enum CookieSameSite {
+    UNSPECIFIED = -1;
+    NO_RESTRICTION = 0;
+    LAX_MODE = 1;
+    STRICT_MODE = 2;
+  }
+
+  optional CookieSameSite site_restrictions = 12 [default = NO_RESTRICTION];
+
+  enum CookiePriority {
+    option allow_alias = true;
+    COOKIE_PRIORITY_LOW = 0;
+    COOKIE_PRIORITY_MEDIUM = 1;
+    COOKIE_PRIORITY_HIGH = 2;
+    COOKIE_PRIORITY_DEFAULT = 1;
+  }
+
+  optional CookiePriority priority = 13 [default = COOKIE_PRIORITY_MEDIUM];
+
+  enum CookieSourceScheme {
+    UNSET = 0;
+    NON_SECURE = 1;
+    SECURE = 2;
+  };
+
+  optional CookieSourceScheme source_scheme = 14 [default = UNSET];
+
+  optional bool same_party = 15 [default = false];
+
+  // Check mojo\public\mojom\base\unguessable_token.mojom
+  message UnguessableToken {
+    optional uint64 high = 1;
+    optional uint64 low = 2;
+  }
+
+  // Check url\mojom\origin.mojom
+  message Origin {
+    optional string scheme = 1;
+    optional string host = 2;
+
+    // Note: in origin.mojom, this is uint16.
+    optional uint32 port = 3;
+    optional UnguessableToken nonce_if_opaque = 4;
+  }
+
+  // Check services\network\public\mojom\schemeful_site.mojom
+  message SchemefulSite {
+    optional Origin site_as_origin = 1;
+  }
+
+  message CookiePartitionKey {
+    optional SchemefulSite site = 1;
+  }
+
+  optional CookiePartitionKey partition_key = 16;
+
+  // -1 because of url::PORT_UNSPECIFIED
+  // url/third_party/mozilla/url_parse.h
+  optional int32 source_port = 17 [default = -1];
+}

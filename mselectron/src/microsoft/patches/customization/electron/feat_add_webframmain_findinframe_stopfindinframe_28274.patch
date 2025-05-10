@@ -81,10 +81,10 @@ index 45b01d5b25a25eaea0ca2679145e6fc8ebd4f666..e669cb9082c3f46755355da1b979ed24
  
  #### `frame.ipc` _Readonly_
 diff --git a/shell/browser/api/electron_api_web_contents.cc b/shell/browser/api/electron_api_web_contents.cc
-index 97df93b08840343c75fd8d87d254bd4fbbd06cc6..08bdced0174edff1fe599671ea34299e9e6fd45b 100644
+index 005e5d91e5c6e8a8c4aa745fc6ee05a691f00e11..0698af17fa557cdd27861f704a463762a1206db6 100644
 --- a/shell/browser/api/electron_api_web_contents.cc
 +++ b/shell/browser/api/electron_api_web_contents.cc
-@@ -1521,7 +1521,8 @@ void WebContents::FindReply(content::WebContents* web_contents,
+@@ -1515,7 +1515,8 @@ void WebContents::FindReply(content::WebContents* web_contents,
                              int number_of_matches,
                              const gfx::Rect& selection_rect,
                              int active_match_ordinal,
@@ -94,7 +94,7 @@ index 97df93b08840343c75fd8d87d254bd4fbbd06cc6..08bdced0174edff1fe599671ea34299e
    if (!final_update)
      return;
  
-@@ -1533,7 +1534,13 @@ void WebContents::FindReply(content::WebContents* web_contents,
+@@ -1527,7 +1528,13 @@ void WebContents::FindReply(content::WebContents* web_contents,
    result.Set("selectionArea", selection_rect);
    result.Set("activeMatchOrdinal", active_match_ordinal);
    result.Set("finalUpdate", final_update);  // Deprecate after 2.0
@@ -110,10 +110,10 @@ index 97df93b08840343c75fd8d87d254bd4fbbd06cc6..08bdced0174edff1fe599671ea34299e
  
  void WebContents::OnRequestPointerLock(content::WebContents* web_contents,
 diff --git a/shell/browser/api/electron_api_web_contents.h b/shell/browser/api/electron_api_web_contents.h
-index b5611f069bbd2f8d0aa65182438580dcb9f19695..0e4faea3614c05b313ad82b0fb7e6b17618018a5 100644
+index 30a2365bc0a9c23b9c419d67b35ce504a5de329e..9fdf95f8c61a268f7e9bc2e53dd18dac63c359c3 100644
 --- a/shell/browser/api/electron_api_web_contents.h
 +++ b/shell/browser/api/electron_api_web_contents.h
-@@ -600,7 +600,8 @@ class WebContents final : public ExclusiveAccessContext,
+@@ -553,7 +553,8 @@ class WebContents final : public ExclusiveAccessContext,
                   int number_of_matches,
                   const gfx::Rect& selection_rect,
                   int active_match_ordinal,
@@ -124,7 +124,7 @@ index b5611f069bbd2f8d0aa65182438580dcb9f19695..0e4faea3614c05b313ad82b0fb7e6b17
                              bool user_gesture,
                              bool last_unlocked_by_target,
 diff --git a/shell/browser/api/electron_api_web_frame_main.cc b/shell/browser/api/electron_api_web_frame_main.cc
-index 40e3d811baf8e49e2773c6c790a082d7f52b88d7..e726b553416693d36e90f4288c27e18f26e8e649 100644
+index c81a2cb128f91c457dcf1857f3966aa0eb8c9ccb..98f2efad0303ba7dacbd01045eb071169b33ab8f 100644
 --- a/shell/browser/api/electron_api_web_frame_main.cc
 +++ b/shell/browser/api/electron_api_web_frame_main.cc
 @@ -4,6 +4,7 @@
@@ -133,9 +133,9 @@ index 40e3d811baf8e49e2773c6c790a082d7f52b88d7..e726b553416693d36e90f4288c27e18f
  
 +#include <memory>
  #include <string>
- #include <unordered_map>
  #include <utility>
-@@ -13,8 +14,10 @@
+ #include <vector>
+@@ -12,8 +13,10 @@
  #include "base/feature_list.h"
  #include "base/logging.h"
  #include "base/no_destructor.h"
@@ -146,7 +146,7 @@ index 40e3d811baf8e49e2773c6c790a082d7f52b88d7..e726b553416693d36e90f4288c27e18f
  #include "content/public/browser/frame_tree_node_id.h"
  #include "content/public/browser/render_frame_host.h"
  #include "content/public/common/isolated_world_ids.h"
-@@ -26,6 +29,7 @@
+@@ -25,6 +28,7 @@
  #include "shell/browser/javascript_environment.h"
  #include "shell/common/api/api.mojom.h"
  #include "shell/common/gin_converters/blink_converter.h"
@@ -155,9 +155,9 @@ index 40e3d811baf8e49e2773c6c790a082d7f52b88d7..e726b553416693d36e90f4288c27e18f
  #include "shell/common/gin_converters/gurl_converter.h"
  #include "shell/common/gin_converters/std_converter.h"
 @@ -36,6 +40,7 @@
- #include "shell/common/gin_helper/promise.h"
  #include "shell/common/node_includes.h"
  #include "shell/common/v8_util.h"
+ #include "third_party/abseil-cpp/absl/container/flat_hash_map.h"
 +#include "third_party/blink/public/mojom/frame/find_in_page.mojom.h"
  
  namespace {
@@ -306,7 +306,7 @@ index ca5cc07e7d1fa71611404159b66d683d3104cca2..dc5b6e6e4234fc43369a2415233f670c
    mojo::Remote<mojom::ElectronRenderer> renderer_api_;
    mojo::PendingReceiver<mojom::ElectronRenderer> pending_receiver_;
 diff --git a/spec/api-web-contents-spec.ts b/spec/api-web-contents-spec.ts
-index ed6fd5ef73c2cd835e6727ec28649c3b6ed262fc..b4980e5c1c26ffdf0788d39c1a196594c9951fcf 100644
+index 69e462c1df2c4deb9d343b34f4163d8c9a873cd9..c5df0dcfa9bd54ecf9b65eac0442b8344517c909 100644
 --- a/spec/api-web-contents-spec.ts
 +++ b/spec/api-web-contents-spec.ts
 @@ -16,6 +16,8 @@ import { ifdescribe, defer, waitUntil, listen, ifit } from './lib/spec-helpers';
@@ -318,7 +318,7 @@ index ed6fd5ef73c2cd835e6727ec28649c3b6ed262fc..b4980e5c1c26ffdf0788d39c1a196594
  const features = process._linkedBinding('electron_common_features');
  
  describe('webContents module', () => {
-@@ -3075,4 +3077,66 @@ describe('webContents module', () => {
+@@ -3190,4 +3192,66 @@ describe('webContents module', () => {
        expect(w.getBounds().height).to.equal(height);
      });
    });

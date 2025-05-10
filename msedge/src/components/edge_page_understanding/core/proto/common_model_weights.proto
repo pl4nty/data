@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package page_understanding;
+
+option optimize_for = LITE_RUNTIME;
+
+message CommonModelWeights {
+  bytes attention_output_dense_bias = 1;
+  bytes attention_output_dense_weight = 2;
+  bytes attention_output_layer_norm_bias = 3;
+  bytes attention_output_layer_norm_weight = 4;
+  bytes attention_self_key_bias = 5;
+  bytes attention_self_key_weight = 6;
+  bytes attention_self_query_bias = 7;
+  bytes attention_self_query_weight = 8;
+  bytes attention_self_value_bias = 9;
+  bytes attention_self_value_weight = 10;
+  bytes classifier_heads_0_dense_bias = 11;
+  bytes classifier_heads_0_dense_weight = 12;
+  bytes classifier_heads_0_out_proj_bias = 13;
+  bytes classifier_heads_0_out_proj_weight = 14;
+  bytes classifier_heads_1_dense_bias = 15;
+  bytes classifier_heads_1_dense_weight = 16;
+  bytes classifier_heads_1_out_proj_bias = 17;
+  bytes classifier_heads_1_out_proj_weight = 18;
+  bytes classifier_heads_2_dense_bias = 19;
+  bytes classifier_heads_2_dense_weight = 20;
+  bytes classifier_heads_2_intermediate_dense_bias = 21;
+  bytes classifier_heads_2_intermediate_dense_weight = 22;
+  bytes classifier_heads_2_out_proj_bias = 23;
+  bytes classifier_heads_2_out_proj_weight = 24;
+  bytes classifier_heads_2_output_dense_bias = 25;
+  bytes classifier_heads_2_output_dense_weight = 26;
+  bytes classifier_heads_2_output_layer_norm_bias = 27;
+  bytes classifier_heads_2_output_layer_norm_weight = 28;
+  bytes embeddings_layer_norm_bias = 29;
+  bytes embeddings_layer_norm_weight = 30;
+  bytes embeddings_position_embeddings_weight = 31;
+  bytes embeddings_position_ids = 32;
+  ModelConfig config = 33;
+}
+
+message ModelConfig {
+  int32 num_layers = 1;
+  int32 num_heads = 2;
+  int32 hidden_size = 3;
+  int32 intermediate_size = 4;
+  int32 embedding_dim = 5;
+  int32 position_seq_len = 6;
+  int32 max_seq_length = 7;
+  int32 tier1_num_labels = 8;
+  int32 tier2_num_labels = 9;
+  int32 pdp_num_labels = 10;
+  bool use_token_type = 11;
+  bool use_intermediate_act_fn = 12;
+  int32 pooler_idx = 13;
+}

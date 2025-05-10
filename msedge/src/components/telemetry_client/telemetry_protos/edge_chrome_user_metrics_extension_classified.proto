@@ -1,0 +1,75 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package telemetry_client;
+
+import "edge_uma_log_stats.proto";
+
+// This is the custom proto used to send all logs output by the classification
+// process to our telemetry client. It ensures that we maintain a consistent
+// payload guid and log stats for all events generated from the same raw UMA
+// log.
+// Next tag: 20
+message EdgeChromeUserMetricsExtensionClassified {
+  // Log containing the data that cannot be classified.
+  optional bytes NONE_log = 1;
+
+  // Log containing the data that was classified as CRITICAL.
+  optional bytes CRITICAL_log = 2;
+
+  // Log containing the data that was classified as MEASURE.
+  optional bytes MEASURE_log = 3;
+
+  // Log containing the data that was classified as TELEMETRY.
+  optional bytes TELEMETRY_log = 4;
+
+  // Log containing the stats for the raw UMA log the above logs were created from.
+  optional EdgeUmaLogStats log_stats = 5;
+
+  // Log containing the data that was classified as GROUP_1.
+  optional bytes GROUP_1_log = 6;
+
+  // Log containing the data that was classified as GROUP_2.
+  optional bytes GROUP_2_log = 7;
+
+  // Log containing the data that was classified as GROUP_3.
+  optional bytes GROUP_3_log = 8;
+
+  // Log containing the data that was classified as GROUP_4.
+  optional bytes GROUP_4_log = 9;
+
+  // Log containing the data that was classified as GROUP_5.
+  optional bytes GROUP_5_log = 10;
+
+  // Log containing the data that was classified as GROUP_6.
+  optional bytes GROUP_6_log = 11;
+
+  // Log containing the data that was classified as DEFAULT.
+  optional bytes DEFAULT_log = 12;
+
+  // Log containing the data that was classified as FUNCTIONAL_1.
+  optional bytes FUNCTIONAL_1_log = 13;
+
+  // Log containing the data that was classified as FUNCTIONAL_2.
+  optional bytes FUNCTIONAL_2_log = 14;
+
+  // Log containing the data that was classified as USER_SENSITIVE_1.
+  optional bytes USER_SENSITIVE_1_log = 15;
+
+  // Log containing the data that was classified as USER_SENSITIVE_2.
+  optional bytes USER_SENSITIVE_2_log = 16;
+
+  // Deprecated USER_SENSITIVE_INVENTORY_1_log field.
+  reserved 17;
+
+  // Log containing the data that was classified as FAST_PATH_1.
+  optional bytes FAST_PATH_1_log = 18;
+
+  // Log containing the data that was classified as FAST_PATH_2.
+  optional bytes FAST_PATH_2_log = 19;
+}

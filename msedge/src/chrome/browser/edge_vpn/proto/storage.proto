@@ -1,0 +1,69 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto3";
+
+package edge;
+
+import "public.proto";
+
+// Mandatory boilerplate since Chromium only supports lite protobufs:
+option optimize_for = LITE_RUNTIME;
+
+// A VpnTokenConfig message stores all the tokens for the current period.
+message VpnTokenConfig {
+  repeated VpnToken tokens = 1;
+
+  // The server public key used to sign tokens during the issuance flow.
+  bytes public_key = 2;
+
+  // The beginning timestamp for the current period. This corresponds to the
+  // first time tokens were issued in this period. This value may optionally be
+  // used for UX.
+  int64 issued_date = 3;
+
+  // The expiration timestamp for the current period. Once this timestamp is
+  // passed, all current tokens are expired and bandwidth usage resets.
+  int64 expiry_date = 4;
+
+  // The expiration timestamp for the current public key and all current tokens.
+  // On Cloudflare's side, the public key, which is responsible for signing
+  // tokens, is rotated every week. They will accept tokens that are signed with
+  // the current key and the previous key, so a public key/token will be valid
+  // for at least 1 week and at most 2 weeks.
+  int64 key_and_token_expiry_date = 5;
+
+  // The proxy provider URL used by this feature.
+  bytes privacy_proxy_url = 6;
+}
+
+// A VpnMetricsConfig stores the VPN usage metrics for this profile. It is used
+// for both telemetry reporting as well as usage metering.
+message VpnMetricsConfig {
+  // The total ingress bandwidth used for the current period, in KB.
+  // (OBSOLETE, replaced by ingress_bandwidth_used_bytes)
+  int64 ingress_bandwidth_used_kb = 1;
+  // The total egress bandwidth used for the current period, in KB.
+  // (OBSOLETE, replaced by egress_bandwidth_used_bytes)
+  int64 egress_bandwidth_used_kb = 2;
+  // The total number of expired tokens issued to this client for this period.
+  int32 exhausted_tokens_count = 3;
+
+  // The value of `ingress_bandwidth_used_kb` that was most recently reported
+  // to the server.
+  int64 last_reported_ingress_bandwidth_used = 4;
+  // The value of `egress_bandwidth_used_kb` that was most recently reported to
+  // the server.
+  int64 last_reported_egress_bandwidth_used = 5;
+  // The value of `exhausted_tokens_count` that was most recently reported to
+  // the server.
+  int32 last_reported_exhausted_tokens_count = 6;
+
+  // The total service assigned quota for the current user in KB.
+  int64 quota_assigned_kb = 7;
+  // The total ingress bandwidth used for the current period, in bytes.
+  int64 ingress_bandwidth_used_bytes = 8;
+  // The total egress bandwidth used for the current period, in bytes.
+  int64 egress_bandwidth_used_bytes = 9;
+}

@@ -1,0 +1,39 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+//
+// Sync protocol datatype extension for connected accounts.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+import "components/sync/protocol/edge_cookie_specifics.proto";
+
+enum EdgeConnectedAccountType {
+  GOOGLE = 0;
+  FACEBOOK = 1;
+}
+
+enum EdgeConnectedAccountState {
+  CONNECTED = 0;
+  PAUSED = 1;
+}
+
+message EdgeConnectedAccountInfo {
+  // GUID which will be unique for connected account info in database.
+  optional string unique_guid = 1;
+
+  optional EdgeConnectedAccountType account_type = 2;
+  optional string email = 3;
+  // Full name of user.
+  optional string user_name = 4;
+  optional EdgeConnectedAccountState state = 5;
+  repeated EdgeCookie cookies = 6;
+}

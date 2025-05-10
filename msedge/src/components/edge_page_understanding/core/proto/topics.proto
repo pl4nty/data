@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package page_understanding;
+
+option optimize_for = LITE_RUNTIME;
+
+message TopicLabels {
+  repeated string tier_1_labels = 1;
+  repeated string tier_2_labels = 2;
+  repeated string pdp_labels = 3;
+}

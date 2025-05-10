@@ -1,0 +1,105 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package wdag.host;
+
+enum UrlTrust {
+  UNKNOWN = 0;
+  PERSONAL = 1;
+  NEUTRAL = 2;
+  ENTERPRISE = 3;
+}
+
+message UrlTrustCheckResponse {
+  required int32 id = 1;
+  required UrlTrust trust = 2;
+}
+
+message Preference {
+  required string key = 1;
+  oneof value {
+    bool boolValue = 2;
+    int32 intValue = 3;
+    string stringValue = 4;
+    string dictionaryValue = 5;
+  }
+}
+
+enum Action {
+  ADD = 0;
+  REMOVE = 1;
+  CHANGED = 2;
+  MOVE = 3;
+  REMOVE_ALL_USER_NODES = 4;
+  REORDER_CHILDREN = 5;
+}
+
+enum FavoriteType {
+  URL = 0;
+  FOLDER = 1;
+  BOOKMARK_BAR = 2;
+  OTHER_NODE = 3;
+  MOBILE = 4;
+  WORKSPACE = 5;
+}
+
+message Favorite {
+  required string title = 1;
+  required string url = 2;
+  required int64 id = 3;
+  required string guid = 4;
+  required string parentGuid = 5;
+  required int64 index = 6;
+  required Action action = 7;
+  required FavoriteType type = 8;
+}
+
+message NotifyPreferencesChanged {
+  repeated Preference prefs = 1;
+}
+
+message NotifyPoliciesChanged {}
+
+message NotifyFeaturesChanged {
+  repeated string feature = 1;
+}
+
+message NotifyProxyConfigurationChanged {
+  required string proxy_config = 1;
+}
+
+message NotifyFavoritesChanged {
+  repeated Favorite favorites = 1;
+}
+
+message NotifyHostClientIdChanged {
+  required string host_client_id = 1;
+  required string host_sample_id = 2;
+}
+
+message Ping {
+  required int32 id = 1;
+}
+
+message Pong {
+  required int32 id = 1;
+}
+
+message Message {
+  oneof predictor {
+    UrlTrustCheckResponse urlTrustCheckResponse = 1;
+    NotifyPreferencesChanged notifyPreferencesChanged = 2;
+    NotifyFeaturesChanged notifyFeaturesChanged = 3;
+    NotifyPoliciesChanged notifyPoliciesChanged = 4;
+    NotifyProxyConfigurationChanged notifyProxyConfigurationChanged = 5;
+    Ping ping = 6;
+    Pong pong = 7;
+    NotifyHostClientIdChanged notifyhostclientidchanged = 8;
+    NotifyFavoritesChanged notifyFavoritesChanged = 9;
+  }
+}

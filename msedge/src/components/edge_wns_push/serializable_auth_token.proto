@@ -1,0 +1,19 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package edge;
+
+// Used by WNS server to indentify and authenticate this client's device and
+// its push subscriptions. Required to reconnect to WNS server to resume
+// an existing session with existing push subscriptions.
+message SerializableAuthToken {
+  required uint32 version = 1;
+  required string reconnect_token = 2;
+  required string key = 3;
+  optional int64 timestamp = 4;
+}

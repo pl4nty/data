@@ -1,0 +1,20 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Michaela Laurencin <mlaurencin@electronjs.org>
+Date: Tue, 18 Mar 2025 12:00:35 -0400
+Subject: build: remove glic testing dependency
+
+This removes unnecessary dependency added in https://chromium-review.googlesource.com/c/chromium/src/+/6323046
+
+diff --git a/chrome/browser/glic/BUILD.gn b/chrome/browser/glic/BUILD.gn
+index e10522b16c1506b620478035910aa993eba045b6..d948ab725939985a1450b4de4c726f3b1fff8d5d 100644
+--- a/chrome/browser/glic/BUILD.gn
++++ b/chrome/browser/glic/BUILD.gn
+@@ -273,8 +273,5 @@ source_set("interactive_ui_tests") {
+     "//content/test:test_support",
+     "//ui/display:test_support",
+   ]
+-  if (checkout_glic_e2e_tests) {
+-    deps += [ "test/internal:glic_e2e_interactive_ui_tests" ]
+-  }
+   data_deps = [ "//chrome/test/data/webui/glic:generate_test_files" ]
+ }

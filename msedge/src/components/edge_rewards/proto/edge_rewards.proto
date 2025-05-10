@@ -1,0 +1,28 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package edge_rewards;
+
+message EdgeRebatesCacheData {
+  required double available_balance = 1;
+  required double pending_balance = 2;
+  required double redeemed_balance = 3;
+  required string user_currency = 4;
+}
+
+message EdgeRewardsCacheData {
+  required bool is_enrolled = 1;
+  optional int32 rewards_points = 2;
+  optional bool is_give_mode = 3;
+  optional int32 give_points = 4;
+  optional string give_organization = 5;
+  optional int32 rewards_state = 6;
+  optional EdgeRebatesCacheData rebates_status = 7;
+  optional string rewards_goal_id = 8;
+  optional string country_code = 9;
+}

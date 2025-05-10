@@ -1,0 +1,75 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+package edge_embedded_browser.client.win.current.fuzzing.proto;
+
+import "testing/edge_fuzzing/proto/json.proto";
+
+message Testcase {
+  repeated Command commands = 1;
+  required string object_name = 2;
+}
+
+message Command {
+  oneof command {
+    ReceivedWebMessage web_msg = 1;
+    PostMethodCall call = 2;
+    PostMethodCallSync call_sync = 3;
+    ReleaseObjects release = 4;
+  }
+}
+
+message WebMessageObject {
+  oneof additional_objects {
+    string file_path = 1;
+    bool null = 2;
+  }
+}
+
+message ReceivedWebMessage {
+  required string message = 1;
+  repeated WebMessageObject objects = 2;
+}
+
+message PostMethodCall {
+  required int32 host_object_id = 1;
+  required string method_name = 2;
+  optional CallParam params = 3;
+  required int32 callback_id = 4;
+}
+
+message PostMethodCallSync {
+  required int32 host_object_id = 1;
+  required string method_name = 2;
+  optional CallParam params = 3;
+  required int32 callback_id = 4;
+}
+
+enum Kind {
+  request = 0;
+}
+
+enum Operation {
+  get = 0;
+  set = 1;
+  apply = 2;
+  cancel = 3;
+}
+
+message CallParam {
+  required Kind kind = 1;
+  required Operation operation = 2;
+  required json_proto.ArrayValue params_list = 3;
+}
+
+message ReleaseObjects {
+  required int32 sequence_number = 1;
+  required ObjectIds object_ids = 2;
+}
+
+message ObjectIds {
+  repeated int32 ids = 1;
+}

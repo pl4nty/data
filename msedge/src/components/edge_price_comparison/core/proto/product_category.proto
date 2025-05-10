@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+// Generates fast accessor methods but leaves out reflection.
+option optimize_for = LITE_RUNTIME;
+
+package pc_product_category_schemas;
+
+message Category {
+  string tier_one = 1;
+  string tier_two = 2;
+}
+
+message CategoryMap {
+  map<int32, Category> categories = 1;
+}

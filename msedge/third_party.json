@@ -5,6 +5,11 @@
     "file_count": 163
   },
   {
+    "name": "accessibility_test_framework",
+    "size": 11436,
+    "file_count": 17
+  },
+  {
     "name": "alsa",
     "size": 27848,
     "file_count": 7
@@ -16,8 +21,8 @@
   },
   {
     "name": "android_deps",
-    "size": 10576241,
-    "file_count": 211
+    "size": 10653561,
+    "file_count": 171
   },
   {
     "name": "android_prebuilts",
@@ -38,6 +43,11 @@
     "name": "angle",
     "size": 14600472,
     "file_count": 830
+  },
+  {
+    "name": "anonymous_tokens",
+    "size": 11320,
+    "file_count": 5
   },
   {
     "name": "apache-windows-arm64",
@@ -66,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32024924,
-    "file_count": 3929
+    "size": 32060552,
+    "file_count": 3941
   },
   {
     "name": "boringssl",
@@ -76,13 +86,18 @@
   },
   {
     "name": "breakpad",
-    "size": 17963049,
+    "size": 17963093,
     "file_count": 1009
   },
   {
+    "name": "cast_core",
+    "size": 60694,
+    "file_count": 34
+  },
+  {
     "name": "catapult",
-    "size": 10099962,
-    "file_count": 749
+    "size": 10124182,
+    "file_count": 760
   },
   {
     "name": "checkstyle",
@@ -90,9 +105,24 @@
     "file_count": 11
   },
   {
+    "name": "cld_3",
+    "size": 6724,
+    "file_count": 6
+  },
+  {
     "name": "closure_compiler",
     "size": 13474,
     "file_count": 3
+  },
+  {
+    "name": "content_analysis_sdk",
+    "size": 8362,
+    "file_count": 6
+  },
+  {
+    "name": "coremltools",
+    "size": 265686,
+    "file_count": 36
   },
   {
     "name": "crabbyavif",
@@ -106,8 +136,8 @@
   },
   {
     "name": "dawn",
-    "size": 36519413,
-    "file_count": 85
+    "size": 36539233,
+    "file_count": 93
   },
   {
     "name": "dbus",
@@ -116,8 +146,8 @@
   },
   {
     "name": "depot_tools",
-    "size": 16395109,
-    "file_count": 246
+    "size": 16395965,
+    "file_count": 252
   },
   {
     "name": "devscripts",
@@ -126,8 +156,13 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7338663,
+    "size": 7328862,
     "file_count": 29
+  },
+  {
+    "name": "dom_distiller_js",
+    "size": 4061,
+    "file_count": 5
   },
   {
     "name": "domato",
@@ -150,14 +185,19 @@
     "file_count": 2018
   },
   {
+    "name": "entity_extraction",
+    "size": 3310,
+    "file_count": 5
+  },
+  {
     "name": "entity_extraction_test_data",
-    "size": 3106125,
-    "file_count": 13
+    "size": 3109090,
+    "file_count": 24
   },
   {
     "name": "expat",
-    "size": 3499,
-    "file_count": 5
+    "size": 5500,
+    "file_count": 7
   },
   {
     "name": "farmhash",
@@ -166,13 +206,18 @@
   },
   {
     "name": "ffmpeg",
-    "size": 91546253,
-    "file_count": 10767
+    "size": 91636028,
+    "file_count": 10822
   },
   {
     "name": "flac",
     "size": 106888,
     "file_count": 19
+  },
+  {
+    "name": "flatbuffers",
+    "size": 2833,
+    "file_count": 9
   },
   {
     "name": "fp16",
@@ -188,6 +233,11 @@
     "name": "freetype-testing",
     "size": 657693,
     "file_count": 428
+  },
+  {
+    "name": "fuzztest",
+    "size": 10490,
+    "file_count": 7
   },
   {
     "name": "glib",
@@ -211,7 +261,7 @@
   },
   {
     "name": "grpc",
-    "size": 31327738,
+    "size": 31327668,
     "file_count": 3477
   },
   {
@@ -226,8 +276,8 @@
   },
   {
     "name": "hunspell",
-    "size": 4947775,
-    "file_count": 84
+    "size": 4405537,
+    "file_count": 80
   },
   {
     "name": "hunspell_dictionaries",
@@ -241,12 +291,17 @@
   },
   {
     "name": "icu",
-    "size": 151441878,
-    "file_count": 7134
+    "size": 151469000,
+    "file_count": 7135
   },
   {
     "name": "inference_engine",
     "size": 698214,
+    "file_count": 11
+  },
+  {
+    "name": "ink",
+    "size": 32651,
     "file_count": 11
   },
   {
@@ -261,7 +316,7 @@
   },
   {
     "name": "jdk",
-    "size": 6782,
+    "size": 6757,
     "file_count": 10
   },
   {
@@ -295,13 +350,18 @@
     "file_count": 45
   },
   {
+    "name": "lens_server_proto",
+    "size": 39883,
+    "file_count": 36
+  },
+  {
     "name": "libbrlapi",
     "size": 166164,
     "file_count": 12
   },
   {
     "name": "libc++",
-    "size": 6063193,
+    "size": 6063801,
     "file_count": 930
   },
   {
@@ -330,9 +390,19 @@
     "file_count": 20
   },
   {
+    "name": "libphonenumber",
+    "size": 29948,
+    "file_count": 14
+  },
+  {
     "name": "libpng",
     "size": 173897,
     "file_count": 4
+  },
+  {
+    "name": "libprotobuf-mutator",
+    "size": 10148,
+    "file_count": 14
   },
   {
     "name": "libsecret",
@@ -356,12 +426,12 @@
   },
   {
     "name": "libxml",
-    "size": 344777,
+    "size": 344905,
     "file_count": 36
   },
   {
     "name": "libxslt",
-    "size": 409888,
+    "size": 410208,
     "file_count": 18
   },
   {
@@ -371,7 +441,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 215581550,
+    "size": 215963442,
     "file_count": 337
   },
   {
@@ -381,13 +451,18 @@
   },
   {
     "name": "mediapipe",
-    "size": 4295,
-    "file_count": 11
+    "size": 651833,
+    "file_count": 336
   },
   {
     "name": "metrics_proto",
-    "size": 12497,
-    "file_count": 2
+    "size": 277036,
+    "file_count": 38
+  },
+  {
+    "name": "microsoft_dlis_tokenizers",
+    "size": 1563,
+    "file_count": 8
   },
   {
     "name": "microsoft_information_protection",
@@ -396,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19621867,
+    "size": 18986987,
     "file_count": 19
   },
   {
@@ -420,6 +495,11 @@
     "file_count": 14
   },
   {
+    "name": "nearby",
+    "size": 278049,
+    "file_count": 52
+  },
+  {
     "name": "ninja",
     "size": 622091,
     "file_count": 4
@@ -428,6 +508,11 @@
     "name": "node",
     "size": 51684860,
     "file_count": 2924
+  },
+  {
+    "name": "omnibox_proto",
+    "size": 21623,
+    "file_count": 11
   },
   {
     "name": "oneds_sdk",
@@ -446,8 +531,8 @@
   },
   {
     "name": "openscreen",
-    "size": 507795,
-    "file_count": 52
+    "size": 1157173,
+    "file_count": 145
   },
   {
     "name": "openxr",
@@ -466,8 +551,8 @@
   },
   {
     "name": "perfetto",
-    "size": 1480369,
-    "file_count": 79
+    "size": 3572704,
+    "file_count": 557
   },
   {
     "name": "perl",
@@ -480,9 +565,24 @@
     "file_count": 24
   },
   {
+    "name": "private_membership",
+    "size": 15826,
+    "file_count": 8
+  },
+  {
     "name": "protobuf",
-    "size": 763938,
-    "file_count": 41
+    "size": 2376610,
+    "file_count": 477
+  },
+  {
+    "name": "protobuf-javascript",
+    "size": 125330,
+    "file_count": 57
+  },
+  {
+    "name": "puffin",
+    "size": 664,
+    "file_count": 3
   },
   {
     "name": "pycoverage",
@@ -493,6 +593,11 @@
     "name": "pylint",
     "size": 600108,
     "file_count": 47
+  },
+  {
+    "name": "quic_trace",
+    "size": 6777,
+    "file_count": 4
   },
   {
     "name": "rapidhash",
@@ -506,13 +611,28 @@
   },
   {
     "name": "screen-ai",
-    "size": 4976737,
+    "size": 4832372,
     "file_count": 83
   },
   {
+    "name": "securemessage",
+    "size": 4130,
+    "file_count": 4
+  },
+  {
+    "name": "sentencepiece",
+    "size": 16367,
+    "file_count": 5
+  },
+  {
+    "name": "shell-encryption",
+    "size": 2983,
+    "file_count": 5
+  },
+  {
     "name": "skia",
-    "size": 3428152,
-    "file_count": 1166
+    "size": 3431093,
+    "file_count": 1171
   },
   {
     "name": "speech-dispatcher",
@@ -531,13 +651,13 @@
   },
   {
     "name": "spirv-tools",
-    "size": 115790,
-    "file_count": 7
+    "size": 198829,
+    "file_count": 11
   },
   {
     "name": "sqlite",
-    "size": 505808,
-    "file_count": 8
+    "size": 550143,
+    "file_count": 12
   },
   {
     "name": "subresource-filter-ruleset",
@@ -546,8 +666,8 @@
   },
   {
     "name": "swiftshader",
-    "size": 5780007,
-    "file_count": 44
+    "size": 5863046,
+    "file_count": 48
   },
   {
     "name": "test_fonts",
@@ -556,13 +676,23 @@
   },
   {
     "name": "tflite",
-    "size": 728656,
-    "file_count": 49
+    "size": 1736775,
+    "file_count": 475
+  },
+  {
+    "name": "tflite_support",
+    "size": 89373,
+    "file_count": 65
   },
   {
     "name": "trust_protection_lists",
     "size": 53837,
     "file_count": 7
+  },
+  {
+    "name": "ukey2",
+    "size": 25678,
+    "file_count": 11
   },
   {
     "name": "v4l-utils",
@@ -596,8 +726,8 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 259165,
-    "file_count": 68
+    "size": 256827,
+    "file_count": 64
   },
   {
     "name": "webgl",
@@ -606,8 +736,8 @@
   },
   {
     "name": "webrtc",
-    "size": 220270,
-    "file_count": 62
+    "size": 277424,
+    "file_count": 91
   },
   {
     "name": "webrtc_overrides",
@@ -618,6 +748,11 @@
     "name": "win_build_output",
     "size": 28588388,
     "file_count": 625
+  },
+  {
+    "name": "wp.client",
+    "size": 1358,
+    "file_count": 13
   },
   {
     "name": "wpt_tools",

@@ -130,7 +130,7 @@ index 356ed1fd94ec1b5ba3812502606456c188f1aa85..bc7d36c21248ebb5e4c09a76d5ae3356
  E('ERR_UNHANDLED_ERROR',
    // Using a default argument here is important so the argument is not counted
 diff --git a/lib/internal/fs/promises.js b/lib/internal/fs/promises.js
-index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..d7c2667a302e0388cb36818a1b2fdbe4cb2ae79e 100644
+index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..fd7da783289b8bc59f58dc29d0cfbd17d75651c5 100644
 --- a/lib/internal/fs/promises.js
 +++ b/lib/internal/fs/promises.js
 @@ -61,6 +61,7 @@ const {
@@ -141,7 +141,15 @@ index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..d7c2667a302e0388cb36818a1b2fdbe4
    preprocessSymlinkDestination,
    stringToFlags,
    stringToSymlinkType,
-@@ -969,11 +970,13 @@ async function readdir(path, options) {
+@@ -961,6 +962,7 @@ async function readdir(path, options) {
+     undefined,
+     handleErrorFromBinding,
+   );
++  maybeAddHostToUncAllowList(path, result);
+   return options.withFileTypes ?
+     getDirectoryEntriesPromise(path, result) :
+     result;
+@@ -969,11 +971,13 @@ async function readdir(path, options) {
  async function readlink(path, options) {
    options = getOptions(options);
    path = getValidatedPath(path, 'oldPath');
@@ -156,7 +164,7 @@ index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..d7c2667a302e0388cb36818a1b2fdbe4
  }
  
  async function symlink(target, path, type_) {
-@@ -1166,11 +1169,13 @@ async function lutimes(path, atime, mtime) {
+@@ -1166,11 +1170,13 @@ async function lutimes(path, atime, mtime) {
  
  async function realpath(path, options) {
    options = getOptions(options);

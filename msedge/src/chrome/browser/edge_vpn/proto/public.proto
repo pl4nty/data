@@ -1,0 +1,21 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto3";
+
+package edge;
+
+// Mandatory boilerplate since Chromium only supports lite protobufs:
+option optimize_for = LITE_RUNTIME;
+
+message VpnToken {
+  // The body of the token. This is an opaque string passed to BoringSSL.
+  bytes body = 1;
+
+  // The estimated bandwidth in KB used by this token. The token will reach its
+  // soft limit when max(ingress_bandwidth_used_kb, egress_bandwidth_used_kb) is
+  // greater than some threshold value.
+  int32 ingress_bandwidth_used_kb = 2;
+  int32 egress_bandwidth_used_kb = 3;
+}

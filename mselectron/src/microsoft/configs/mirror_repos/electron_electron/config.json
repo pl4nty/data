@@ -2,10 +2,10 @@
   "from": "https://github.com/electron/electron.git",
   "to": "https://devdiv.visualstudio.com/DevDiv/_git/electron-electron",
   "branches": {
-    "include": [ "32-x-y", "33-x-y", "34-x-y", "35-x-y", "main" ]
+    "include": [ "33-x-y", "34-x-y", "35-x-y", "36-x-y", "main" ]
   },
   "tags": {
-    "include": [ "v32.*", "v33.*", "v34.*", "v35.*" ],
+    "include": [ "v33.*", "v34.*", "v35.*", "v36.*" ],
     "force_push": true
   }
 }

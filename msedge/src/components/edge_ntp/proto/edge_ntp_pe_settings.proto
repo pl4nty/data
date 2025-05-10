@@ -1,0 +1,18 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package ntp_proto;
+
+message NtpPeSettings {
+  required bool show_image_of_the_day = 1;
+  required string background_image_type = 2;
+  required int32 layout_mode = 3;
+  required string show_feed = 4;
+  required int32 quick_links_options = 5;
+  optional bool show_greeting = 6;
+}

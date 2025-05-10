@@ -1,0 +1,76 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+import "components/sync/protocol/unique_position.proto";
+
+// Sync protocol datatype extension for saved windows. Workspaces are
+// browser sessions which can be recalled, and if sync is turned on, cross
+// device. A workspace contains tabs and tab groups which are stored as
+// a WorkspaceSpecifics separately (WorkspaceTabs). This is due to
+// limitations from the sync service on the size of an individual sync entity.
+// This is derived from the saved_tab_group_specifics.proto
+message Workspace {
+  // The displayed title of the workspace.
+  optional string title = 1;
+
+  // The color of the workspace.
+  optional uint32 color = 2;
+
+  // Timestamp for when the window was last visited using windows epoch
+  // microseconds.
+  optional int64 visit_time_windows_epoch_micros = 3;
+}
+
+// Sync protocol datatype extension for saved tabs. WorkspaceTabs
+// are the sync representation of a tab in a workspace. They are stored as
+// separate entities due to size limitations of sync entities.
+message WorkspaceTab {
+  // An id that links the tab to it's workspace.
+  optional string parent_guid = 1;
+
+  // The position in the Tab Strip the tab is located relative to the start of
+  // the workspace.
+  optional UniquePosition position = 2;
+
+  // Tab Data used for constructing the tab.
+  optional string url = 3;
+
+  // The displayed title of the tab, shown on the workspace button's
+  // context menu.
+  optional string title = 4;
+
+  // The favicon url associated with this page.
+  optional string favicon_url = 5;
+
+  // Timestamp of the last time the tab was updated with a user navigation.
+  // Edge use this field to prevent ping/pong issue. If current device's
+  // user_nav_time_windows_epoch_micros < remote device's
+  // user_nav_time_windows_epoch_micros, the tab should navigate to the sync
+  // url.
+  optional int64 user_nav_time_windows_epoch_micros = 6;
+}
+
+message EdgeWorkspaceSpecifics {
+  // An id that refers to the sync workspace object.
+  optional string guid = 1;
+
+  // Timestamps for CRUD operations.
+  optional int64 creation_time_windows_epoch_micros = 2;
+  optional int64 update_time_windows_epoch_micros = 3;
+
+  oneof entity {
+    Workspace workspace = 4;
+    WorkspaceTab tab = 5;
+  }
+}

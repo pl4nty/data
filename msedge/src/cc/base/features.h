@@ -175,12 +175,6 @@ CC_BASE_EXPORT BASE_DECLARE_FEATURE(kTreeAnimationsInViz);
 // away rather than piggy-backing on the next BeginMainFrame.
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(kSendExplicitDecodeRequestsImmediately);
 
-// Whether frame rate should be throttled when there were many "did not produce
-// frame" recently.
-CC_BASE_EXPORT BASE_DECLARE_FEATURE(kThrottleFrameRateOnManyDidNotProduceFrame);
-CC_BASE_EXPORT extern const base::FeatureParam<int>
-    kNumDidNotProduceFrameBeforeThrottle;
-
 // When enabled, the CC tree priority will be switched to
 // NEW_CONTENT_TAKES_PRIORITY during long scroll that cause checkerboarding.
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(kNewContentForCheckerboardedScrolls);
@@ -227,10 +221,6 @@ CC_BASE_EXPORT void SetIsEligibleForThrottleMainFrameTo60Hz(bool is_eligible);
 // instead displays the properly constructed frame while at the same doing
 // capture.
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(kViewTransitionCaptureAndDisplay);
-
-// When enabled, stops the export of most DFCMetrics.
-CC_BASE_EXPORT BASE_DECLARE_FEATURE(kStopExportDFCMetrics);
-CC_BASE_EXPORT extern bool StopExportDFCMetrics();
 
 // When enabled, we save the `EventMetrics` for a scroll, even when the result
 // is no damage. So that the termination can be per properly attributed to the

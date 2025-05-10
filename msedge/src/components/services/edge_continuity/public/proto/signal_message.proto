@@ -1,0 +1,132 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto3";
+
+package edge_continuity.proto;
+
+option optimize_for = LITE_RUNTIME;
+
+enum MessageType {
+  UNKNOWN = 0;
+  CONNECTION_REQUEST = 1;
+  CONNECTION_RESPONSE = 2;
+  RTC_CNT_OFFER = 3;
+  RTC_CNT_ANSWER = 4;
+  RTC_ICE_CANDIDATE = 5;
+  DISCONNECT = 6;
+  ERR = 7;
+  CONNECTION_CONFIRM = 8;
+  ONEDRIVE = 9;
+}
+
+enum SdpType {
+  kOffer = 0;     // Description must be treated as an SDP offer.
+  kPrAnswer = 1;  // Description must be treated as an SDP answer, but not a
+                  // final answer.
+  kAnswer = 2;    // Description must be treated as an SDP final answer, and the
+                  // offer-answer exchange must be considered complete after
+                  // receiving this.
+  kRollback =
+      3;  // Resets any pending offers and sets signaling state back to stable.
+}
+
+enum ErrorCode {
+  UNKNOWN_ERROR = 0;
+  INVALID_MESSAGE = 1;
+  INVALID_TARGET_ID = 2;
+  REJECT_CONNECTION = 3;
+}
+
+// RTC offer/answer message.
+message SessionDescription {
+  string session_id = 1;
+  string session_version = 2;
+  SdpType type = 3;
+  string sdp = 4;
+}
+
+// RTC ICE candidate message.
+message IceCandidate {
+  string sdp_mid = 1;
+  int32 sdp_mline_index = 2;
+  string sdp = 3;
+}
+
+// Message define for Edge Drop temporary file transfer
+enum OneDriveMessageType {
+  USE_ONEDRIVE = 0;
+  HEART_BEAT = 1;
+  SEND_FILE_REQUEST =
+      2;  // Message of this type should be sent from anonymous web side, when
+          // anonymous side wants to send a file, message with this type should
+          // have a "send_file_requests" field
+  SEND_FILE_RESPONSE_OK =
+      3;  // Message of this type should be sent from authenticated side, when
+          // the authenticated side agrees the remote side send file. message
+          // with this type should have "send_file_responses" and
+          // "onedrive_quota" field
+  SEND_FILE_RESPONSE_REJECT =
+      4;  // Message of this type should be sent from authenticated side, when
+          // the authenticated side does not agree the remote side send file
+  UPLOAD_FILE_UPDATE =
+      5;  // Message of this type should be sent from anonymous web side, when
+          // anonymous side has completed the upload work. message with this
+          // type should have a "upload_file_update" field
+  CONNECTION_EXPIRED = 6;  // Message of this type should be sent from
+                           // authenticated side, when the connection is expired
+                           // and the remote side should close the connection
+}
+
+message OneDriveSignalMessage {
+  message SendFileRequest {
+    string filename = 1;
+    uint32 file_id = 2;
+    uint64 file_size = 3;
+    string file_type = 4;
+  }
+  message SendFileResponse {
+    string upload_url = 1;
+    uint32 file_id = 2;
+    uint64 expire_time = 3;
+  }
+  message UploadFileUpdate {
+    uint32 file_id = 1;
+    uint64 file_size = 2;
+    uint64 uploaded_size = 3;
+    bool failed = 4;
+    string file_item_id = 5;
+  }
+  message SelectorRequirement {
+    bool multiple = 1;
+    string accept = 2;
+    bool use_media_capture = 3;
+    uint32 remaining_times = 4;
+    string host_name = 5;
+  }
+  OneDriveMessageType type = 1;
+  repeated SendFileRequest send_file_requests = 3;
+  repeated SendFileResponse send_file_responses = 4;
+  repeated UploadFileUpdate upload_file_update = 5;
+  int64 onedrive_quota = 6;  // Avilable of the OneDrive account in Bytes
+  SelectorRequirement selector_requirement = 7;
+}
+
+message SignalMessage {
+  MessageType type = 1;
+  string target_id = 2;
+  string source_id = 3;
+  bool connection_response = 4;
+  SessionDescription session_description = 5;
+  IceCandidate ice_candidate = 6;
+  ErrorCode error_code = 7;
+  int32 order = 8;
+  bool is_edge = 9;
+  OneDriveSignalMessage onedrive_message = 10;
+  int32 version = 11;
+}
+
+message SignalMessages {
+  repeated SignalMessage messages = 1;
+}

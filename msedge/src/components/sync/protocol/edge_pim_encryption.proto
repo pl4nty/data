@@ -1,0 +1,39 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+// A message representing a value encrypted using the PIM encryption SDK.
+message EdgePimEncryptedValue {
+  optional string encrypted_value = 1;
+
+  // A message representing an encrypted key along with additional information
+  // about the key.
+  message KeyInfo {
+    // The encrypted secret key. The PIM encryption SDK can consume this
+    // directly when decrypting. Edge does not have to deal with the encryption
+    // on this.
+    optional string encrypted_secret_key = 1;
+
+    // An identifier for |encrypted_secret_key| used by the PIM encryption SDK
+    // to match encrypted data with encryption keys.
+    optional string key_name = 2;
+
+    // Metadata used by the PIM encryption SDK to represent the encryption
+    // version. This lets the SDK update the encryption logic without requiring
+    // schema or client side changes.
+    optional string encryption_version = 3;
+  }
+  optional KeyInfo key_info = 2;
+}

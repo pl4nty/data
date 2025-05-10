@@ -21,6 +21,18 @@ extern bool IsUseMicrosoftTuringForTextPredictionEnabled();
 COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
 void SetCountryCodeByStringForTesting(const std::string& county_code);
 
+// Feature flag to enable global languages
+COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
+BASE_DECLARE_FEATURE(kTextPredictionGlobalLanguage);
+
+// This is the param of specifying the languages
+COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
+extern const base::FeatureParam<std::string> kTextPredictionSupportedLanguages;
+
+// This is the param to specify the queue size of requests
+COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
+extern const base::FeatureParam<size_t> kTextPredictionQueueSize;
+
 }  // namespace text_prediction
 }  // namespace edge
 #endif  // COMPONENTS_EDGE_TEXT_PREDICTION_CORE_COMMON_EDGE_TEXT_PREDICTION_FEATURES_H_

@@ -15,6 +15,7 @@ vars = {
   'checkout_clang_coverage_tools': False,
   'checkout_clang_tidy': False,  # Doesn't match Electron.
   'checkout_ios_webkit': False,
+  'checkout_mutter': False, # Does not exist in Electron DEPS
   'checkout_nacl': False,
   'checkout_openxr': False,
   'checkout_pgo_profiles': True,
@@ -31,10 +32,10 @@ vars = {
   # Dependencies.
   'microsoft_reclient_helper_revision': '6255a1f4ee45218ded7c2ccd9efecfa53d87893c',
   # Chromium revision will be redefined in a gclient config because we use Chromium snapshots.
-  'microsoft_chromium_version': '134.0.6998.205',
-  'microsoft_depot_tools_revision': '37661eea7e53b6f72e4102ce3381c61c02ab5ba3',
-  'microsoft_electron_version': 'v35.2.2',
-  'microsoft_electron_revision': 'bdde6689264aad24e6ec402d443384fc949d891f',
+  'microsoft_chromium_version': '136.0.7103.48',
+  'microsoft_depot_tools_revision': 'f40ddcd8d51626fb7be3ab3c418b3f3be801623f',
+  'microsoft_electron_version': 'v36.0.0',
+  'microsoft_electron_revision': '6bb07bf2777e4921bf0c771607c5ed85cda45ab6',
   'microsoft_node_version': 'v22.14.0',
 
   # Override defaults of the Electron checkout.
@@ -180,6 +181,7 @@ gclient_gn_args = [
   'checkout_android_native_support',
   'checkout_clang_coverage_tools',
   'checkout_ios_webkit',
+  'checkout_mutter',
   'checkout_nacl',
   'checkout_openxr',
   'checkout_src_internal',

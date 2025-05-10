@@ -1,0 +1,62 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package telemetry_client;
+
+// This is the message type for recording log stats collected for each raw UMA
+// log. Next tag: 5
+message EdgeUmaLogStats {
+  // Log containing the data found in the raw UMA log.
+  optional bytes raw_uma_log = 1;
+
+  // Size of the raw UMA log in bytes.
+  optional int32 raw_uma_log_size = 2;
+
+  // The Result of sending the raw UMA log to the client.
+  // If no errors hit along the pipeline, then will be 0.
+  optional int32 send_log_result = 3;
+
+  // This is the message type for recording the counts of telemetry in the raw
+  // UMA log. It is used for generating the log stats events and it will also
+  // help us with determining whether any data was dropped during the
+  // classification process. Next tag: 11
+  message PayloadCounts {
+    // Count of all histograms for the raw UMA log.
+    optional int32 histogram_count = 1;
+
+    // Count of all user actions for the raw UMA log.
+    optional int32 user_action_count = 2;
+
+    // Count of all omnibox data for the raw_uma_log.
+    optional int32 omnibox_count = 3;
+
+    // Count of all translate events for the raw UMA log.
+    optional int32 translate_event_count = 4;
+
+    // Count of all printer events for the raw UMA log.
+    optional int32 printer_event_count = 5;
+
+    // Count of all perf data for the raw UMA log.
+    optional int32 perf_data_count = 6;
+
+    // Count of all sampled profile data for the raw UMA log.
+    optional int32 sampled_profile_count = 7;
+
+    // Count of all memory leak data for the raw UMA log.
+    optional int32 memory_leak_count = 8;
+
+    // Count of all histogram inventory data for the raw UMA log.
+    optional int32 histogram_inventory_count = 9;
+
+    // Count of all user action inventory data for the raw UMA log.
+    optional int32 user_action_inventory_count = 10;
+  }
+
+  // Field containing the set of payload counts for the raw UMA log.
+  optional PayloadCounts payload_counts = 4;
+}

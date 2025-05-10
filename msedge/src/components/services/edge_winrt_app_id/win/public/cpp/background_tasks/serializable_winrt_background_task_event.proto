@@ -1,0 +1,58 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package edge;
+
+// Serializes a WinrtBackgroundTaskEvent instance.
+message SerializableWinrtBackgrondTaskEvent {
+  // Contains the GUID struct that identifies the COM server that handled the
+  // background task event.
+  required bytes com_server_guid = 1;
+
+  // Seralizes a winrt_app_id.mojom::WinrtBackgroundTask instance.  Identifies
+  // which background task registration generated the event.
+  message WinrtBackgroundTask {
+    // The name of the background task registration.
+    required string name = 1;
+
+    // A value from the winrt_app_id.mojom::WinrtBackgroundTaskType enum.
+    required uint32 type = 2;
+
+    // Seralizes a winrt_app_id.mojom::WinrtBackgroundTaskOptions instance.
+    message Options {
+      required bool is_one_shot = 1;
+      optional uint32 timer_inverval_minutes = 2;
+    }
+    optional Options options = 3;
+  }
+  required WinrtBackgroundTask task_registration = 2;
+
+  // Optional.  Only set by events with WinrtBackgroundTaskType::kPush.
+  message PushMessage {
+    // Identifies the push channel responsible for the event.
+    required string channel_id = 1;
+
+    // The encoded push message content to deliver.
+    required bytes content = 2;
+
+    // Describes how to decode the push message content.
+    map<string, string> headers = 3;
+  }
+  optional PushMessage push_message = 3;
+
+  // Optional.  Only set by events with WinrtBackgroundTaskType::kToastClick.
+  message ToastClick {
+    // Identifies which part of the toast got clicked.
+    required string launch_argument = 1;
+
+    // Contains additional context entered by the user.  For example, text from
+    // a textbox.
+    map<string, string> user_inputs = 2;
+  }
+  optional ToastClick toast_click = 4;
+}

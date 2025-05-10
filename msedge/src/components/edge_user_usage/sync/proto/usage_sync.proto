@@ -1,0 +1,92 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package edge_user_usage.sync;
+
+import "components/edge_user_usage/sync/proto/edge_user_usage.proto";
+
+message FetchEvent {
+  required bytes from_progress_marker = 1;
+};
+
+////////////////////////// Usage Request Protocol //////////////////////////
+message EdgeUsageRequest {
+  // Only one of the following fields should be set.
+  repeated EdgeUsageSpecifics commit = 1;
+  optional FetchEvent fetch = 2;
+};
+
+////////////////////////// Usage Response Protocol //////////////////////////
+message ClientCommand {
+  optional int32 throttle_delay_seconds = 1;
+}
+
+message EdgeUsageResponse {
+  enum Error {
+    UNKNOWN = 0;
+    SUCCESS = 1;
+    THROTTLED = 2;
+
+    INVALID_REQUEST = 3;
+    // This operation would put you, or you are, over quota
+    OVER_QUOTA = 4;
+    INTERNAL_ERROR = 5;
+  }
+
+  required Error error = 1;
+  optional CommitResponse commit = 2;
+  optional FetchEventResponse fetch = 3;
+  optional ClientCommand client_command = 4;
+};
+
+/*
+example:
+commit:100,
+result: 80 commit success, 10 conflict, 10 failed
+CommitResponse:
+  EntryResponse.size: 3
+
+  EntryResponse[0]:
+    error: SUCCESS
+    events: size 80, every event will be setted event.id and event.version
+
+  EntryResponse[1]:
+    error: CONFLICT
+    events: full data (event + device + context) * 10
+
+  EntryResponse[1]:
+    error: FAILED
+    events: size 80, every event will be setted event.id
+*/
+
+message CommitResponse {
+  enum Error {
+    UNKNOWN = 0;
+    // The commit succeeded.
+    SUCCESS = 1;
+    // You're out of date; will return the latest data in EntryResponse
+    CONFLICT = 2;
+    // The commit failed for some reason.
+    FAILED = 3;
+  }
+
+  message Entry {
+    required Error error = 1;
+    // type == SUCCESS: there will be a latest version in event.
+    // type == CONFLICT: there will be the latest event with data
+    // type == FAILED: there will be the event with id only
+    repeated EdgeUsageSpecifics usage_specifics = 2;
+  };
+
+  repeated Entry entries = 1;
+};
+
+message FetchEventResponse {
+  required bytes new_progress_marker = 1;
+  repeated EdgeUsageSpecifics usage_specifics = 2;
+};

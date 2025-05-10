@@ -1,0 +1,23 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+
+// Sync protocol datatype extension for edge additions to history datatype.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+message EdgeTopicCategory {
+  // Category identifier
+  optional string id = 1;
+  // Weight of the category, this is a float value informing the confidence
+  // of a visit belonging to this category of the form 0.xxx < 1
+  optional float weight = 2;
+}

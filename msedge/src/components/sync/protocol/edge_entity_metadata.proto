@@ -1,0 +1,50 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+import "components/sync/protocol/sync_enums.proto";
+
+message EdgeEntityMetadata {
+  // Whether or not the bookmark is synced one deleted by dedup logic.
+  optional bool is_synced_node_deleted_by_dedup = 1 [default = false];
+
+  // Whether or not the folder is synced one deleted by dedup logic.
+  optional bool is_synced_folder_deleted_by_dedup = 2 [default = false];
+
+  // Indicate whether the both bookmarks in the dedup are synced node.
+  optional bool is_both_synced_node_in_dedup = 3 [default = false];
+
+  // Indicate whether the both folders in the dedup are synced node.
+  optional bool is_both_synced_folder_in_dedup = 4 [default = false];
+
+  // Indicate whether it is normal delete in the dedup.
+  optional bool is_normal_delete_in_dedup = 5 [default = false];
+
+  // Indicate the source of the dedupe
+  optional SyncEnums.DeduplicationSource dedup_source = 6;
+
+  // Item id which survive the dedup
+  optional string dedup_kept_item_id = 7;
+
+  // Indicate where the deletion was initiated
+  optional SyncEnums.EdgeDeletionOrigin edge_deletion_origin = 8;
+
+  reserved 9;
+  reserved "path";
+
+  reserved 10;
+  reserved "is_restored";
+
+  // Item CDUT which survive the dedup
+  optional string dedup_kept_item_cdut = 11;
+
+  // The source of bookmark adding
+  optional SyncEnums.BookmarkAddSource bookmark_add_source = 12;
+}

@@ -1,0 +1,91 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+package edge.fuzzing.edge_wns_message_proto;
+
+// Here we define the format for a WNS server response Message Proto Buffer.
+// This will be passed to our fuzzer function.
+
+message Response {
+  enum MessageVerb {
+    Unknown = 0;  // Default value.
+    CNT = 1;      // Initializes the connection.
+    XFR = 2;      // Disconnects from the current server and reconnects to the
+                  // server specified by the XFR message.
+    ATH = 3;      // Authenticates before establishing a connection.
+    BND = 4;      // Binds a user to a connection.
+    NFY = 5;      // Notifies when a push message is received.
+    ACK = 6;   // Acknowledges that a push message has been received to remove
+               // it from the server's cache.
+    PNG = 7;   // Sends and receives a ping message to keep the connection to
+               // the server alive.
+    GET = 8;   // Creates a new push channel.
+    PUT = 9;   // Responds to the server's challenge; authenticates the client,
+               // and revokes push channels.
+    OUT = 10;  // Logs out and disconnects from the current server.
+    ERROR = 11;  // Error verbs provide a 3-digit error code to identify the
+                 // error, such as 500.
+  }
+
+  enum ErrorCode {
+    ERR_202 = 202;
+    ERR_500 = 500;
+    ERR_540 = 540;
+    ERR_715 = 715;
+    ERR_800 = 800;
+    ERR_911 = 911;
+    ERR_922 = 922;
+  }
+
+  message TopLine {
+    optional string verb = 1;
+    optional uint32 transaction_id = 2;
+    optional string namespace_of_message = 3;
+    optional uint64 user_id = 4;
+    optional uint32 payload_length = 5;
+    optional ErrorCode error_code = 6;
+  }
+
+  optional TopLine top_line = 1;
+
+  message HeaderEntry {
+    required string key = 1;
+    required string value = 2;
+  }
+  repeated HeaderEntry header = 2;
+
+  optional bytes content = 3;
+
+  optional string delimiter = 4;
+}
+
+message Request {
+  enum MessageVerb {
+    CNT = 0;
+    ATH = 1;
+    BND = 2;
+    ACK = 3;
+    PNG = 4;
+    GET = 5;
+    PUT = 6;
+  }
+
+  message TopLine {
+    required string verb = 1;
+    required uint32 transaction_id = 2;
+    required string namespace_of_message = 3;
+    optional uint64 user_id = 4;
+  }
+  required TopLine top_line = 1;
+
+  message HeaderEntry {
+    required string key = 1;
+    required string value = 2;
+  }
+  repeated HeaderEntry header = 2;
+
+  required bytes content = 3;
+}

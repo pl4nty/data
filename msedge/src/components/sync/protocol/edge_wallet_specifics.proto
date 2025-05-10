@@ -1,0 +1,153 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+//
+// Sync protocol datatype extension for Edge Wallet Hub.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+message Barcode {
+  enum BarcodeType {
+    AZTEC = 1;
+    CODE_39 = 2;
+    CODE_128 = 3;
+    CODA_BAR = 4;
+    DATA_MATRIX = 5;
+    EAN_8 = 6;
+    EAN_13 = 7;
+    ITF_14 = 8;
+    PDF_417 = 9;
+    QR_CODE = 10;
+    UPC_A = 11;
+    TEXT_ONLY = 12;
+  }
+
+  enum BarcodeRenderEncoding {
+    UTF_8 = 1;
+  }
+
+  optional string value = 1;
+  optional BarcodeType type = 2;
+  optional BarcodeRenderEncoding render_encoding = 3;
+}
+
+message MembershipCard {
+  enum MembershipCardType {
+    option allow_alias = true;
+    FREQUENTFLYER = 1;
+    FREQUENT_FLYER = 1;
+  }
+  optional string program_name = 1;
+  optional string program_number = 2;
+  optional MembershipCardType type = 3;
+  optional string issuer_name = 4;
+  optional string account_name = 5;
+  optional string account_id = 6;
+  optional int64 expired_date = 7;
+  optional Barcode barcode = 8;
+}
+
+message EventSeat {
+  optional string gate = 1;
+  optional string section = 2;
+  optional string row = 3;
+  optional string seat = 4;
+}
+
+message EventTicket {
+  optional string event_name = 1;
+  optional string ticket_holder_name = 2;
+  optional string ticket_number = 3;
+  optional string issuer_name = 4;
+  optional string event_venue = 5;
+  optional int64 event_datetime = 6;
+  optional EventSeat event_seat = 7;
+  optional Barcode barcode = 8;
+}
+
+message BoardingPass {
+  optional string passenger_name = 1;
+  optional string airline_name = 2;
+  optional string flight_number = 3;
+  optional string origin_airport_code = 4;
+  optional string destination_airport_code = 5;
+  optional string origin_airport_city = 6;
+  optional string destination_airport_city = 7;
+  optional int64 departure_time = 8;
+  optional string terminal = 9;
+  optional string gate = 10;
+  optional string cabin_class = 11;
+  optional string zone = 12;
+  optional string seat = 13;
+  optional Barcode barcode = 14;
+}
+
+message IDCard {
+  enum IDCardType {
+    IDENTITY = 1;
+    DRIVING_LICENSE = 2;
+    PASSPORT = 3;
+  }
+  enum Gender {
+    MALE = 1;
+    FEMALE = 2;
+  }
+  optional string id_number = 1;
+  optional string id_holder_name = 2;
+  optional string date_of_birth = 3;
+  optional int64 issue_date = 4;
+  optional string issue_by = 5;
+  optional int64 expired_date = 6;
+  optional Gender gender = 7;
+  optional Barcode barcode = 8;
+}
+
+message GenericCardField {
+  optional string name = 1;
+  optional string value = 2;
+}
+
+message GenericCard {
+  enum CardType {
+    HOTEL = 1;
+  }
+  optional string title = 1;
+  optional CardType type = 2;
+  optional string sub_header = 3;
+  optional string header = 4;
+  repeated GenericCardField fields = 5;
+  optional Barcode barcode = 6;
+}
+
+message EdgeWalletSpecifics {
+  enum WalletDataType {
+    option allow_alias = true;
+    GENERIC_CARD = 1;
+    MEMBERSHIPCARD = 2;
+    MEMBERSHIP_CARD = 2;
+    EVENT_TICKET = 3;
+    BOARDING_PASS = 4;
+    ID_CARD = 5;
+  }
+  optional string guid = 1;
+  optional WalletDataType type = 2;
+
+  optional MembershipCard membership_card = 3;
+  optional EventTicket event_ticket = 4;
+  optional BoardingPass boarding_pass = 5;
+  optional IDCard id_card = 6;
+  optional GenericCard generic_card = 7;
+
+  optional int64 created_date = 8;
+  optional int64 modified_date = 9;
+  optional int64 use_date = 10;
+  optional int64 use_count = 11;
+}

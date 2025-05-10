@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+// Generates fast accessor methods but leaves out reflection.
+option optimize_for = LITE_RUNTIME;
+
+package rewards_user_info_schema;
+
+message GiveProfileInfo {
+  optional string give_lifetime_balance = 1;
+  optional string give_balance = 2;
+}
+
+message RebatesProfile {
+  optional float AvailableBalance = 1;
+  optional float PendingBalance = 2;
+  optional float RedeemedBalance = 3;
+  optional float LifetimeBalance = 4;
+  optional bool IsPayoutsUnavailable = 5;
+}
+
+message RewardsActivity {
+  optional string Id = 1;
+  optional uint32 Type = 2;
+  optional string T = 3;
+  map<string, string> A = 4;
+}
+
+message Promotion {
+  optional string Name = 1;
+  optional bool Priority = 2;
+  map<string, string> Attributes = 3;
+}
+
+message RewardsUserDataProto {
+  optional uint64 Balance = 1;
+  optional bool IsTrialUser = 2;
+  optional string TrialUserExpiryInDays = 3;
+  optional bool IsSignedInUser = 4;
+  optional bool IsAssociatedUser = 5;
+  optional GiveProfileInfo GiveProfile = 6;
+  optional RebatesProfile RebateProfile = 7;
+  repeated RewardsActivity RewardsActivities = 8;
+  optional bool IsRewardsUser = 9;
+  optional bool IsRebatesUser = 10;
+  optional bool IsEligibleForCashbackEnroll = 11;
+  optional bool IsAutoEnrolled = 12;
+  repeated Promotion Promotions = 13;
+}

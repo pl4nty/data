@@ -1,0 +1,70 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+//
+// Sync protocol datatype extension for EdgeHubAppUsage.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+// Edge Hub App usage/change entry.
+message EdgeHubAppUsageSpecifics {
+  // A random unique identifier for each message.
+  optional string id = 1;
+
+  // Hub app info for this usage.
+  optional string app_id = 2;
+  optional string app_name = 3;
+  optional string app_url = 4;
+
+  // If change this enmu, remember to change the proto_enum_conversions.cc.
+  enum ChangedByType {
+    USER = 0;
+    CHANGED_BY_TYPE_RESERVED_1 = 1;  // no used: PERSONALIZATION
+    CHANGED_BY_TYPE_RESERVED_2 = 2;  // no used: SYNC
+    INITIALIZATION = 3;
+    CHANGED_BY_TYPE_RESERVED_3 = 4;  // no used: HOTFIX
+    CHANGED_BY_TYPE_RESERVED_4 = 5;  // no used: UPSELL = 5;
+    SYSTEM = 6;
+    WIPE = 7;
+  }
+  // Changed by type for this usage.
+  optional ChangedByType changed_by = 5 [default = USER];
+
+  // If change this enmu, remember to change the proto_enum_conversions.cc.
+  enum PropertyType {
+    VISIBILITY = 0;
+    SIDEBAR_STATE = 1;  // no used: WIDTH = 1;
+    ENGAGEMENT = 2;
+    IS_OPENED = 3;
+    DWELL_TIME = 4;
+    PROPERTY_TYPE_RESERVED_2 = 5;
+    PROPERTY_TYPE_RESERVED_3 = 6;
+    PROPERTY_TYPE_RESERVED_4 = 7;
+    PROPERTY_TYPE_RESERVED_5 = 8;
+    PROPERTY_TYPE_RESERVED_6 = 9;
+  }
+  // Property type and value for this change.
+  optional PropertyType property_type = 6;
+  optional string property_value = 7;
+
+  // Change time, in milliseconds since Windows epoch.
+  optional int64 change_time = 8;
+
+  // Client id, version etc and machine name where this change is triggered.
+  optional string client_id = 9;
+  optional string machine_name = 10;
+  optional string client_os = 11;
+  optional string client_version = 12;
+  optional string client_channel = 13;
+  optional string reason = 14;
+  optional string extended_info = 15;
+  optional uint32 trigger_origin = 16;
+}

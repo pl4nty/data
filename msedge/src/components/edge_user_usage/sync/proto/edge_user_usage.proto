@@ -1,0 +1,75 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package edge_user_usage.sync;
+
+message EdgeUsageEvent {
+  // What type of data changed, e.g.: preference, hubApp, toolbar, etc.
+  optional int64 type = 1;
+  // What happened, e.g.: ValueChanged, Added, etc.
+  optional int64 event = 2;
+  // Where the event happened, e.g.: sidebar/toolbar/settings/NTP/etc.
+  optional int64 origin = 3;
+  // Who triggered the event, user or system.
+  optional int64 trigger_by = 4;
+  // How many times the event happened.
+  optional int64 hits = 5;
+  // The identify of data, e.g.: hub app.id, preference_key, etc.
+  optional string key = 6;
+  // New value if applicable.
+  optional string value = 7;
+  // The version of the Edge client when the event happened.
+  optional string client_version = 8;
+  // The client id of the Edge client when the event happened.
+  optional string device_hash = 9;
+  // Some additional context when the event happened.
+  optional string context_hash = 10;
+}
+
+message EdgeUsageDevice {
+  // The client id of the Edge client when the event happened.
+  optional string client_id = 1;
+  // Machine name
+  optional string machine_name = 2;
+  // Canary/Beta/Dev/Stable
+  optional string channel = 3;
+  // Platform, e.g.: Windows, Mac, Linux, etc.
+  optional string os = 4;
+};
+
+message EdgeUsageContext {
+  optional string data = 1;
+}
+
+// Designed for sync approach only.
+// The main entity to store the usage data.
+message EdgeUsageSpecifics {
+  // The unique id of the event.
+  //   - For event, it's a randomly generated GUID.
+  //   - For device, it's the hash of device: md5(client_id + machine_name
+  //   + channel + os).
+  //   - For context, it's the hash of context data: md5(data).
+  required string id = 1;
+
+  // Create time, in milliseconds since Windows epoch.
+  optional int64 create_time = 2;
+  // Update time, in milliseconds since Windows epoch.
+  optional int64 update_time = 3;
+  // Expire time, in milliseconds since Windows epoch, the data will be removed
+  // after this time.
+  optional int64 expire_time = 4;
+  // The version of this item.
+  required string version = 5;
+  // The type of this item.
+  required int32 entity_type = 6;
+  oneof entity {
+    EdgeUsageEvent event = 7;
+    EdgeUsageDevice device = 8;
+    EdgeUsageContext context = 9;
+  }
+}

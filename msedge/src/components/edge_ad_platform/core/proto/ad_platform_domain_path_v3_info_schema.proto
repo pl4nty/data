@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+// Generates fast accessor methods but leaves out reflection.
+option optimize_for = LITE_RUNTIME;
+
+package ad_platform_domain_path_v3_info_schema;
+
+message DomainInfo {
+  repeated string paths = 1;
+}
+
+message PathsV3Response {
+  map<string, DomainInfo> result = 1;
+  bool isAutoShow = 2;
+}

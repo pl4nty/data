@@ -1,0 +1,81 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+option optimize_for = LITE_RUNTIME;
+
+package edge;
+
+// Used to save subscriptions to local storage.  The WNS server cannot enumerate
+// existing subscriptions for a client.
+message SerializablePushSubscription {
+  // The id used by WNS server to create a subscription.  WNS server includes
+  // this id with push messages.  WNS server also requires this id for
+  // unsubscribe operations.
+  required bytes channel_id = 1;
+
+  // Used to version stored subscriptions to enable extensibility in the
+  // future.  Also determines which subscription properties are required.
+  // For example, the subscription type |PORTABLE_WNS_CLIENT_WEB_PUSH|
+  // always requires the |auth_secret| and |crypto_key| properties to
+  // decrypt push messages.
+  enum Type {
+    PORTABLE_WNS_CLIENT_WEB_PUSH = 0;
+  }
+  required Type subscription_type = 2;
+
+  // Defines where to send push messages to the WNS server.
+  required string endpoint_url = 3;
+
+  // Uses a value from the PushEventHandlerId enum, which defines where to
+  // deliver push message events for this subscription.
+  required uint32 push_event_handler_id = 4;
+
+  // Defines when this subscription stops delivering push messages.
+  optional int64 expire_time = 5;
+
+  // All subscription types that use the web push standard require
+  // |auth_secret| and |crypto_key|. Define these properties as optional to
+  // enable new types of push subscriptions in the future.  The application
+  // server uses these properties to encrypt push messages.  The client uses
+  // these properties to decrypt push messages.
+  optional bytes auth_secret = 6;
+  optional bytes crypto_key = 7;
+
+  // Defines optional extra storage for application specific push message
+  // processing.  For example, service workers use these properties to store
+  // the "origin" and the "service worker registration id" in the push
+  // subscription.
+  message KeyValuePair {
+    required string key = 1;
+    required string value = 2;
+  }
+  repeated KeyValuePair property_map = 8;
+
+  // Use this identifier to find this push subscription in WNS server telemetry
+  // and reporting. This value might be missing.  Not all platforms provide a
+  // correlation vector.
+  optional string correlation_vector = 9;
+
+  // The following members exist for diagnostics.  Diagnostic members are
+  // optional and must not cause any failures when omitted.
+  //
+  // Record when the subscription was created.
+  optional int64 creation_time = 10;
+  // Record the number of successful and failed push event deliveries.
+  optional uint32 successful_push_event_count = 11;
+  optional uint32 failed_push_event_count = 12;
+  // Record the time of the last successful push.
+  optional int64 last_push_event_time = 13;
+  // Record the last error for failed push event deliveries.  An OK code
+  // indicates that no error has been recorded.
+  optional int32 last_push_event_status = 14;
+  // Record the last time  of the last failed push.
+  optional int64 last_push_event_error_time = 15;
+  // Optional.  Records the public key of the server that will send push
+  // messages to this subscription using VAPID authentication.  For diagnostics
+  // only.
+  optional bytes application_server_key = 16;
+}

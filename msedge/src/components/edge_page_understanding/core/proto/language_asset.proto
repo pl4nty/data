@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package page_understanding;
+
+option optimize_for = LITE_RUNTIME;
+
+message LanguageAsset {
+  // Protoized vocab file
+  bytes vocab = 1;
+  // Size of the vocab counted from the vocab source text file.
+  int32 vocab_size = 2;
+  // Protoized word embedding file.
+  bytes embeddings_word_embeddings_weight = 3;
+}

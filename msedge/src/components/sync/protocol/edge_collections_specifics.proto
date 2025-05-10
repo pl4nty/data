@@ -1,0 +1,124 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+//
+// Sync protocol datatype extension for collections.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+// Properties of all Collection sync objects, a child of the sync envelope
+message MicrosoftCollectionSpecifics {
+  // The item identifier created by the Collections feature, versus the sync
+  // system's IDs.
+  optional string id = 1;
+  // The title
+  optional string title = 2;
+  // The date when this item was created
+  optional int64 date_created = 3;
+  // The last time this item was updated
+  optional int64 date_modified = 4;
+  // The index
+  optional uint32 index = 7;
+  // Date last synced;
+  optional int64 date_last_synced = 8;
+  // Server ID
+  optional string server_id = 9;
+  // Card Color
+  optional string card_color = 10;
+  // A thumbnail URL
+  optional string thumbnail_url = 11;
+  // A thumbnail
+  optional bytes thumbnail = 12;
+  // thumbnail height
+  optional uint32 thumbnail_height = 13;
+  // thumbnail width
+  optional uint32 thumbnail_width = 14;
+  // The title text of an thumbnail
+  optional string thumbnail_title = 15;
+  // The alt text of an thumbnail
+  optional string thumbnail_alt = 16;
+  // Is the thumbnail custom
+  optional uint32 is_custom_thumbnail = 17;
+  // Tag for future use in pivot view
+  optional string tag = 18;
+  // Is the collection item marked for delete
+  optional uint32 is_marked_for_deletion = 19;
+
+  // Each collection item is either
+  oneof detail_oneof {
+    MicrosoftCollectionDetails collection = 5;
+    MicrosoftCollectionItemDetails item = 6;
+  }
+}
+
+message MicrosoftCollectionDetails {
+  // Items in the collection
+  repeated string item_id_order = 1;
+  // External links, ie Excel, Word, and any other link to something external to
+  // the collection
+  optional string external_apps_metadata = 2;
+}
+
+// Id, creation and modification date, name, and parent id are stored on the
+// envelope
+message MicrosoftCollectionItemDetails {
+  // A blob of JSON containing extra information about the item
+  optional string entity = 1;
+  // Favicon URL
+  optional string favicon_url = 2;
+  // Favicon image
+  optional bytes favicon = 3;
+  // A image URL
+  optional string image_url = 4;
+  // A image
+  optional bytes image = 5;
+  // Image hash for versioning
+  optional uint64 image_hash = 16;
+  // Image height
+  optional uint32 image_height = 6;
+  // Image width
+  optional uint32 image_width = 7;
+  // Text content for the item;
+  optional string text = 8;
+  // The type the item represents
+  optional string type = 9;
+  // The URL for the item
+  optional string url = 10;
+  // The websites name
+  optional string website_name = 11;
+  // The parent identifier
+  optional string parent_id = 12;
+  // The parent title
+  optional string parent_title = 17;
+  // HTML content for the item;
+  optional string html = 13;
+  // The title text of an image
+  optional string image_title = 14;
+  // The alt text of an image
+  optional string image_alt = 15;
+  // The comment in a card
+  optional string note = 18;
+  // Where the content can be found for webClippings
+  optional string remote_url = 19;
+}
+
+// Properties of Collections sync object
+message MicrosoftCollectionsMetadataSpecifics {
+  // The date when this item was created
+  optional int64 date_created = 1;
+  // The last time this item was updated
+  optional int64 date_modified = 2;
+  // Contains an array with the ids of the collections in the order they should
+  // be
+  repeated string collection_id_order = 3;
+  // The most recent collection
+  optional string most_recently_used_collection = 4;
+}

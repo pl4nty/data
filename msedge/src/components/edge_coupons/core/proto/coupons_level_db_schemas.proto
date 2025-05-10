@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+// Generates fast accessor methods but leaves out reflection.
+option optimize_for = LITE_RUNTIME;
+
+package coupons_level_db_schemas;
+
+message DisabledPopupOriginations {
+  map<string, int32> first_mask = 1;
+  map<string, int32> second_mask = 2;
+  map<string, int32> third_mask = 3;
+  map<string, int32> fourth_mask = 4;
+}
