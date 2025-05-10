@@ -507,6 +507,7 @@
         "EnableVSBReduceResume": false,
         "EnableVSBSSOForPolicy": true,
         "EnableValidateIntuneEnrollmentRestriction": true,
+        "EnableVirtualizationBasedSecurityFeatures": true,
         "EnableVsbSsoForFleet": true,
         "EnableWIN1124H2_250113": true,
         "EnableWaitingForPostProvisioningPluginEvent": true,
