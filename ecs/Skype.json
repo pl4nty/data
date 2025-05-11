@@ -593,6 +593,7 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
+    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -655,8 +656,26 @@
             },
             "hlsSettings": {
                 "hlsConfig": {
+                    "fragLoadPolicy": {
+                        "default": {
+                            "errorRetry": {
+                                "maxNumRetry": 6,
+                                "maxRetryDelayMs": 8000,
+                                "retryDelayMs": 1000
+                            },
+                            "maxLoadTimeMs": 30000,
+                            "maxTimeToFirstByteMs": 10000,
+                            "timeoutRetry": {
+                                "maxNumRetry": 4,
+                                "maxRetryDelayMs": 0,
+                                "retryDelayMs": 0
+                            }
+                        }
+                    },
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3
+                    "liveSyncDurationCount": 3,
+                    "startLevel": -1,
+                    "testBandwidth": true
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
@@ -683,6 +702,10 @@
                     "noMediaStreamSwitchTimeoutMs": 12000,
                     "noMediaTimeoutMs": 30000,
                     "preferScriptLoaderForPeer5": true,
+                    "runtimeLoadPolicy": {
+                        "maxLoadTimeMs": 20000,
+                        "maxTimeToFirstByteMs": 10000
+                    },
                     "sendSnapshotTelemetry": true,
                     "sendSnapshotTelemetryEveryMs": 300000,
                     "skipCookie": true,
@@ -712,6 +735,10 @@
                     "enableBandwidthManagementV3": true,
                     "enableOverlayStats": true,
                     "monitorVideoFrameRate": true,
+                    "runtimeLoadPolicy": {
+                        "maxLoadTimeMs": 20000,
+                        "maxTimeToFirstByteMs": 10000
+                    },
                     "sdnOptions": {
                         "name": "peer5",
                         "plugin": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.middlelane-ums.v1.plugin.js",

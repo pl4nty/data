@@ -248,11 +248,6 @@
                 "msUnsupportedLanguageUXFix"
             ]
         },
-        "WalletECPayWithCashback": {
-            "enableFeatures": [
-                "msWalletCheckoutCashbackGiftCard"
-            ]
-        },
         "WalletECRebatesIncentive": {
             "disableFeatures": [
                 "msWalletCheckoutRewardsIncentive"
