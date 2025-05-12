@@ -7,8 +7,7 @@ Invoke-WebRequest -Uri "https://github.com/hfiref0x/WDExtract/raw/refs/heads/mas
 ..\wdextract64.exe mpasbase.vdm
 ..\wdextract64.exe mpasdlta.vdm
 
-cl /std:c++17 /EHsc ..\data\extract_sig_static.cpp /Fe:extract_sig_static.exe
-.\extract_sig_static.exe . mpasbase.vdm.extracted mpasdlta.vdm.extracted
+..\data\extract_sig_static.exe . mpasbase.vdm.extracted mpasdlta.vdm.extracted
 Write-Host "Exit code: $LASTEXITCODE"
 ls
 
