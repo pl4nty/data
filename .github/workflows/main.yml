@@ -77,3 +77,50 @@ jobs:
           default_author: github_actions
           message: "data(${{ matrix.cmd }}): ${{ steps.inference.outputs.response || 'change detected' }}"
           pull: "--rebase --autostash"
+
+  windows:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    environment: dev
+    strategy:
+      matrix:
+        cmd:
+          - .\microsoft_defender_signatures.ps1
+    steps:
+      - uses: actions/checkout@v4
+      - run: ${{ matrix.cmd }}
+
+      - name: Generate prompt
+        id: prompt
+        shell: /usr/bin/bash {0}
+        run: |
+          cat << EOF > ../prompt
+          Generate a commit message summarising the changes in the following git diff.
+          The message should contain a one-line summary of the changes, and a newline-separated list of the changes.
+          The one-line summary should be specific. Do not use generic phrases like "Updated configuration files with multiple improvements and enhancements" 
+          Respond with only the commit message and no other text. Do not use markdown formatting.
+
+          Here is the diff:
+          EOF
+
+          git add .
+          git diff --cached --exit-code >> ../prompt
+          echo "changed=$?" >> $GITHUB_OUTPUT
+      - id: inference
+        if: steps.prompt.outputs.changed == '1'
+        continue-on-error: true
+        uses: actions/ai-inference@main
+        with:
+          prompt-file: ../prompt
+          model: ${{ vars.MODEL }}
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prompt-file
+          path: ../prompt
+      - uses: EndBug/add-and-commit@v9.1.4
+        with:
+          default_author: github_actions
+          message: "data(${{ matrix.cmd }}): ${{ steps.inference.outputs.response || 'change detected' }}"
+          pull: "--rebase --autostash"
