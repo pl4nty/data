@@ -8,6 +8,11 @@
     "ECS": {
         "ConfigLogTarget": "default"
     },
+    "ImmersiveEvents": {
+        "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",
+        "isEUTenant": false,
+        "worldsUrl": "https://global.worlds.mesh.cloud.microsoft"
+    },
     "M365HubConfiguration": {
         "m365HubConfiguration": {
             "appCapabilities": [
@@ -1820,7 +1825,9 @@
             "EnableCalendarIngestionFromSessionMetadata": true
         },
         "ODSPFeatureFlags": {
+            "DisableAtMentionSuggestionInWelcomeMessage": true,
             "EnableBizchatIntegration": true,
+            "EnableNewAppNameForODSPCustomCopilot": true,
             "MigrateGetTeamsAppID": true
         },
         "SkillConfig": {
