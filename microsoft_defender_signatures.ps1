@@ -6,6 +6,7 @@ Invoke-WebRequest -Uri "https://github.com/hfiref0x/WDExtract/raw/refs/heads/mas
 Invoke-WebRequest -Uri "https://github.com/hfiref0x/WDExtract/raw/refs/heads/master/Bin/bin64/zlibwapi.dll" -OutFile "..\zlibwapi.dll"
 ..\wdextract64.exe mpasbase.vdm
 ..\wdextract64.exe mpasdlta.vdm
+ls -la
 ..\data\extract_sig_static.exe . mpasbase.vdm.extracted mpasdlta.vdm.extracted
 
 Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/lua_sig_parser_decompile.py" -OutFile "..\lua_sig_parser_decompile.py"
