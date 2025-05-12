@@ -655,22 +655,6 @@
             },
             "hlsSettings": {
                 "hlsConfig": {
-                    "fragLoadPolicy": {
-                        "default": {
-                            "errorRetry": {
-                                "maxNumRetry": 6,
-                                "maxRetryDelayMs": 8000,
-                                "retryDelayMs": 1000
-                            },
-                            "maxLoadTimeMs": 60000,
-                            "maxTimeToFirstByteMs": 10000,
-                            "timeoutRetry": {
-                                "maxNumRetry": 4,
-                                "maxRetryDelayMs": 0,
-                                "retryDelayMs": 0
-                            }
-                        }
-                    },
                     "liveMaxLatencyDurationCount": 6,
                     "liveSyncDurationCount": 3
                 },
@@ -699,10 +683,6 @@
                     "noMediaStreamSwitchTimeoutMs": 12000,
                     "noMediaTimeoutMs": 30000,
                     "preferScriptLoaderForPeer5": true,
-                    "runtimeLoadPolicy": {
-                        "maxLoadTimeMs": 20000,
-                        "maxTimeToFirstByteMs": 10000
-                    },
                     "sendSnapshotTelemetry": true,
                     "sendSnapshotTelemetryEveryMs": 300000,
                     "skipCookie": true,
@@ -732,10 +712,6 @@
                     "enableBandwidthManagementV3": true,
                     "enableOverlayStats": true,
                     "monitorVideoFrameRate": true,
-                    "runtimeLoadPolicy": {
-                        "maxLoadTimeMs": 20000,
-                        "maxTimeToFirstByteMs": 10000
-                    },
                     "sdnOptions": {
                         "name": "peer5",
                         "plugin": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.middlelane-ums.v1.plugin.js",
@@ -3755,7 +3731,8 @@
                 "5966c135-e05f-4ce0-81e0-e138fe8e9583",
                 "74fef386-4a06-42ef-a68e-7c6f72bfcffd",
                 "4a6520d6-94a8-4730-9184-24997b9b3401",
-                "1f8c20f5-d70f-4f8e-93e1-31d8fce0c8c9"
+                "1f8c20f5-d70f-4f8e-93e1-31d8fce0c8c9",
+                "43a6e7fb-bd10-4c0a-b02e-6a9c86ba272a"
             ],
             "collabCloudEndpointUrl": "https://teams.microsoft.com/api/platform",
             "cutOffDateForConsideringOlderTabsInLWGChannels": "2025-06-30T00:00:00Z",
