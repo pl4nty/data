@@ -8,6 +8,7 @@ Invoke-WebRequest -Uri "https://github.com/hfiref0x/WDExtract/raw/refs/heads/mas
 ..\wdextract64.exe mpasdlta.vdm
 ls -la
 ..\data\extract_sig_static.exe . mpasbase.vdm.extracted mpasdlta.vdm.extracted
+ls -la
 
 Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/lua_sig_parser_decompile.py" -OutFile "..\lua_sig_parser_decompile.py"
 python ..\lua_sig_parser_decompile.py lua_standalone_sig_mpasbase.vdm.extracted.csv
