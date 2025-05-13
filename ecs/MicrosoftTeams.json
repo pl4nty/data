@@ -656,7 +656,6 @@
                 "removeExtraExtendedProperties": true,
                 "sleepIntervalBetweenChatServiceMembershipCallsInms": 600,
                 "supportOptionalPropertiesForTemplatedApps": true,
-                "useOtherMailFilterClause": true,
                 "validResourceSpecificPermissionsName": [
                     "OnlineMeeting.ReadBasic.Chat",
                     "ChannelMeeting.ReadBasic.Group",
