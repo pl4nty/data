@@ -611,6 +611,15 @@
             "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1235534-2-5,P-R-1547090-1-6"
         }
     },
+    "IMP": {
+        "DBManager": {
+            "Telemetry": {
+                "Connection": {
+                    "ReportAllResults": true
+                }
+            }
+        }
+    },
     "JennyTest2": {
         "OneDSSinkEnvironment": "PUBLIC"
     },
@@ -655,24 +664,10 @@
             },
             "hlsSettings": {
                 "hlsConfig": {
-                    "fragLoadPolicy": {
-                        "default": {
-                            "errorRetry": {
-                                "maxNumRetry": 6,
-                                "maxRetryDelayMs": 8000,
-                                "retryDelayMs": 1000
-                            },
-                            "maxLoadTimeMs": 120000,
-                            "maxTimeToFirstByteMs": 6000,
-                            "timeoutRetry": {
-                                "maxNumRetry": 4,
-                                "maxRetryDelayMs": 0,
-                                "retryDelayMs": 0
-                            }
-                        }
-                    },
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3
+                    "liveSyncDurationCount": 3,
+                    "startLevel": -1,
+                    "testBandwidth": true
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
@@ -1520,52 +1515,6 @@
         "channelsAtMentionBadging": true,
         "channelsRemovingImportantIndicator": true,
         "channelsTelemetryV2": true,
-        "chat": {
-            "smsRequiredConsentPrefixes": [
-                "+49",
-                "+48"
-            ],
-            "twoWaySmsEnabledPrefixes": [
-                "+1",
-                "+52",
-                "+91",
-                "+44",
-                "+55",
-                "+57",
-                "+81",
-                "+33",
-                "+49",
-                "+31",
-                "+48"
-            ],
-            "twoWaySmsExcludedPrefixes": [
-                "+1242",
-                "+1246",
-                "+1264",
-                "+1284",
-                "+1345",
-                "+1441",
-                "+1599",
-                "+1664",
-                "+1670",
-                "+1671",
-                "+1684",
-                "+1758",
-                "+1767",
-                "+1784",
-                "+1787",
-                "+1939",
-                "+1809",
-                "+1829",
-                "+1849",
-                "+1868",
-                "+1869",
-                "+1876",
-                "+1658",
-                "+6189162",
-                "+6189164"
-            ]
-        },
         "chatBubbleDisplayTime": 3500,
         "chatConversationCacheEnabled": "true",
         "chatConversationCacheSize": 100,
@@ -3415,9 +3364,6 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
-            },
-            "logUpload": {
-                "maxSize": 512000
             }
         }
     },
