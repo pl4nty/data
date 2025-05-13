@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32060552,
-    "file_count": 3941
+    "size": 32065550,
+    "file_count": 3942
   },
   {
     "name": "boringssl",
@@ -246,8 +246,8 @@
   },
   {
     "name": "glslang",
-    "size": 41399192,
-    "file_count": 3066
+    "size": 41439782,
+    "file_count": 3067
   },
   {
     "name": "googletest",
@@ -361,8 +361,8 @@
   },
   {
     "name": "libc++",
-    "size": 6063801,
-    "file_count": 930
+    "size": 6190799,
+    "file_count": 931
   },
   {
     "name": "libdisplay-info",
@@ -646,12 +646,12 @@
   },
   {
     "name": "spirv-headers",
-    "size": 524264,
+    "size": 524495,
     "file_count": 15
   },
   {
     "name": "spirv-tools",
-    "size": 198829,
+    "size": 199326,
     "file_count": 11
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1279485,
+    "size": 1280150,
     "file_count": 21
   },
   {
@@ -716,8 +716,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5694029,
-    "file_count": 166
+    "size": 6163596,
+    "file_count": 171
   },
   {
     "name": "vulkan_memory_allocator",
