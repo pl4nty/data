@@ -292,6 +292,11 @@ BASE_DECLARE_FEATURE(kContinuousImportVisibleBrowserObserver);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kPersonalizedLaunch);
 
+// Feature flag for disabling Autolaunch Activation across all devices for a
+// specific profile.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kDisableAutolaunchDueToUserRejection);
+
 // Personalized launch genric triggers
 // Trigger when the ML-Suggested Sites setting is turned ON
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)

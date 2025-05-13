@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1663140,
+    "size": 1664395,
     "file_count": 163
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14600472,
+    "size": 14600647,
     "file_count": 830
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32065550,
-    "file_count": 3942
+    "size": 32044959,
+    "file_count": 3941
   },
   {
     "name": "boringssl",
@@ -136,7 +136,7 @@
   },
   {
     "name": "dawn",
-    "size": 36539233,
+    "size": 36539229,
     "file_count": 93
   },
   {
@@ -181,8 +181,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16886986,
-    "file_count": 2018
+    "size": 16999399,
+    "file_count": 2021
   },
   {
     "name": "entity_extraction",
@@ -551,8 +551,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3572704,
-    "file_count": 557
+    "size": 3579147,
+    "file_count": 558
   },
   {
     "name": "perl",
@@ -631,7 +631,7 @@
   },
   {
     "name": "skia",
-    "size": 3431093,
+    "size": 3431051,
     "file_count": 1171
   },
   {
@@ -676,8 +676,8 @@
   },
   {
     "name": "tflite",
-    "size": 1736775,
-    "file_count": 475
+    "size": 1747044,
+    "file_count": 489
   },
   {
     "name": "tflite_support",
