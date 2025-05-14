@@ -11,7 +11,7 @@
     },
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20250430.6.0",
-        "CalendarCompanionMsitVersion": "1.20250423.7.0",
+        "CalendarCompanionMsitVersion": "1.20250430.6.0",
         "CalendarCompanionProdVersion": "1.20250423.7.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -171,10 +171,13 @@
             "maxIntervalInSeconds": 3600,
             "rate": 1.5
         },
+        "extendedHostRings_shared": 0,
         "features.testFeature": 0,
         "features.useDayViewAsDefault": "1",
         "features.useNovaForCalendar": 0,
-        "features.useNovaForSuggestions": 0
+        "features.useNovaForSuggestions": 0,
+        "hostFeatureFlags_shared": 0,
+        "offlineState_shared": 0
     },
     "ECS": {
         "ConfigLogTarget": "default"

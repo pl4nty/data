@@ -593,6 +593,7 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
+    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1294203-6-12",
@@ -683,6 +684,10 @@
                     "noMediaStreamSwitchTimeoutMs": 12000,
                     "noMediaTimeoutMs": 30000,
                     "preferScriptLoaderForPeer5": true,
+                    "runtimeLoadPolicy": {
+                        "maxLoadTimeMs": 20000,
+                        "maxTimeToFirstByteMs": 10000
+                    },
                     "sendSnapshotTelemetry": true,
                     "sendSnapshotTelemetryEveryMs": 300000,
                     "skipCookie": true,
@@ -712,6 +717,10 @@
                     "enableBandwidthManagementV3": true,
                     "enableOverlayStats": true,
                     "monitorVideoFrameRate": true,
+                    "runtimeLoadPolicy": {
+                        "maxLoadTimeMs": 20000,
+                        "maxTimeToFirstByteMs": 10000
+                    },
                     "sdnOptions": {
                         "name": "peer5",
                         "plugin": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.middlelane-ums.v1.plugin.js",
@@ -723,8 +732,8 @@
             "umsSettings": {
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
-                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25124.1/hydra_player_ums_bundle.js",
-                        "https://res.cdn.office.net/s01-ml-player/4.25124.1/hydra_player_ums_bundle.js"
+                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25131.1/hydra_player_ums_bundle.js",
+                        "https://res.cdn.office.net/s01-ml-player/4.25131.1/hydra_player_ums_bundle.js"
                     ]
                 },
                 "thaScript": "https://sdk.tha.teams.microsoft.com/tha.js"

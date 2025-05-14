@@ -358,7 +358,7 @@
         "EnableFetchSourceImagesByUserToken": true,
         "EnableFidalgoGalleryImages": true,
         "EnableFidalgoHandleFPAPermissionError": true,
-        "EnableFidalgoReduceResume": false,
+        "EnableFidalgoReduceResume": true,
         "EnableFidalgoToGetRestrictionStatus": false,
         "EnableFilterANCRegion": true,
         "EnableFirstPartyPartnerTenantOffboardInImage": true,
