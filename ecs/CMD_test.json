@@ -351,6 +351,7 @@
         "EnableConnectivityDiagnosticOptimizationByReboot": true,
         "EnableConnectivityStatus": true,
         "EnableConsistencyCheckTimerFunction": true,
+        "EnableConsumeCapacityProfileEvent": true,
         "EnableConsumeTrustLevelChange": true,
         "EnableConsumeVolumeLicensingTenantEvent": true,
         "EnableConsumerCertificateScenario": true,

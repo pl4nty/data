@@ -460,6 +460,8 @@
         "EnablePpsDarkTraffic": false,
         "EnablePpsPeopleInsights": false,
         "EnablePrebindExactImage": true,
+        "EnablePureJsonHighlightBasedPrompts": true,
+        "EnablePureJsonPromptsMapping": true,
         "EnableRecommendedBrandsPanel": true,
         "EnableRedirectOnTopLevelDomain": false,
         "EnableRefactoredDummyProvider": false,
@@ -662,7 +664,96 @@
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
-        "HighlightBasedPromptConfig": "{\"Prompts\":{\"PeopleHighlightsPendingRSVP\":[{\"sourceTypeId\":\"PendingRSVP\",\"displayText\":\"Help me prepare for {event}\",\"commandText\":\"Help me prepare for {event}\",\"pillText\":\"Help me prepare\"}],\"PeopleHighlightsCollabNetEdit\":[{\"sourceTypeId\":\"CollabNetEdit\",\"displayText\":\"List recent activity in {file}\",\"pillText\":\"What\u2019s changed?\",\"commandText\":\"List recent activity in {file}\"}],\"PeopleHighlightsCollabNetMultipleEdit\":[{\"sourceTypeId\":\"CollabNetMultipleEdit\",\"displayText\":\"List recent activity in {file}\",\"pillText\":\"What\u2019s changed?\",\"commandText\":\"List recent activity in {file}\"}],\"PeopleHighlightsCollabNetSharing\":[{\"sourceTypeId\":\"CollabNetSharing\",\"displayText\":\"List recent activity in {file}\",\"pillText\":\"What\u2019s changed?\",\"commandText\":\"List recent activity in {file}\"}],\"PeopleHighlightsCollabNetComment\":[{\"sourceTypeId\":\"CollabNetComment\",\"displayText\":\"Where and why was {file} shared?\",\"pillText\":\"What\u2019s changed?\",\"commandText\":\"Where and why was {file} shared?\"}],\"PeopleHighlightsCollabNetMention\":[{\"sourceTypeId\":\"CollabNetMention\",\"displayText\":\"List recent activity in {file}\",\"pillText\":\"What\u2019s changed?\",\"commandText\":\"List recent activity in {file}\"}],\"PeopleHighlightsCollabNetReply\":[{\"sourceTypeId\":\"CollabNetReply\",\"displayText\":\"Where and why was {file} shared?\",\"pillText\":\"What\u2019s changed?\",\"commandText\":\"Where and why was {file} shared?\"}],\"PeopleHighlightsMissedMeeting\":[{\"sourceTypeId\":\"MeetingRecap\",\"displayText\":\"Recap {event}\",\"pillText\":\"Recap meeting\",\"commandText\":\"Recap {event}\"}],\"PeopleHighlightsUpcomingMeeting\":[{\"sourceTypeId\":\"UpcomingMeetingHelpMePrepare\",\"displayText\":\"Help me prepare for {event}\",\"pillText\":\"Help me prepare\",\"commandText\":\"Help me prepare for {event}\"},{\"sourceTypeId\":\"UpcomingMeetingWhoIs\",\"displayText\":\"Who is {people}?\",\"pillText\":\"Who is {people}?\",\"commandText\":\"Who is {people}?\"}]}}",
+        "HighlightBasedPromptConfig": {
+            "Prompts": {
+                "PeopleHighlightsCollabNetComment": [
+                    {
+                        "commandText": "Where and why was {file} shared?",
+                        "displayText": "Where and why was {file} shared?",
+                        "pillText": "What\u2019s changed?",
+                        "sourceTypeId": "CollabNetComment"
+                    }
+                ],
+                "PeopleHighlightsCollabNetEdit": [
+                    {
+                        "commandText": "List recent activity in {file}",
+                        "displayText": "List recent activity in {file}",
+                        "pillText": "What\u2019s changed?",
+                        "sourceTypeId": "CollabNetEdit"
+                    }
+                ],
+                "PeopleHighlightsCollabNetMention": [
+                    {
+                        "commandText": "List recent activity in {file}",
+                        "displayText": "List recent activity in {file}",
+                        "pillText": "What\u2019s changed?",
+                        "sourceTypeId": "CollabNetMention"
+                    }
+                ],
+                "PeopleHighlightsCollabNetMultipleEdit": [
+                    {
+                        "commandText": "List recent activity in {file}",
+                        "displayText": "List recent activity in {file}",
+                        "pillText": "What\u2019s changed?",
+                        "sourceTypeId": "CollabNetMultipleEdit"
+                    }
+                ],
+                "PeopleHighlightsCollabNetReply": [
+                    {
+                        "commandText": "Where and why was {file} shared?",
+                        "displayText": "Where and why was {file} shared?",
+                        "pillText": "What\u2019s changed?",
+                        "sourceTypeId": "CollabNetReply"
+                    }
+                ],
+                "PeopleHighlightsCollabNetSharing": [
+                    {
+                        "commandText": "List recent activity in {file}",
+                        "displayText": "List recent activity in {file}",
+                        "pillText": "What\u2019s changed?",
+                        "sourceTypeId": "CollabNetSharing"
+                    }
+                ],
+                "PeopleHighlightsEmailWithLotsOfReactions": [
+                    {
+                        "commandText": "Summarize {message}",
+                        "displayText": "Summarize {message}",
+                        "pillText": "Summarize this",
+                        "sourceTypeId": "EmailWithLotsOfReactions"
+                    }
+                ],
+                "PeopleHighlightsMissedMeeting": [
+                    {
+                        "commandText": "Recap {event}",
+                        "displayText": "Recap {event}",
+                        "pillText": "Recap meeting",
+                        "sourceTypeId": "MeetingRecap"
+                    }
+                ],
+                "PeopleHighlightsPendingRSVP": [
+                    {
+                        "commandText": "Help me prepare for {event}",
+                        "displayText": "Help me prepare for {event}",
+                        "pillText": "Help me prepare",
+                        "sourceTypeId": "PendingRSVP"
+                    }
+                ],
+                "PeopleHighlightsUpcomingMeeting": [
+                    {
+                        "commandText": "Help me prepare for {event}",
+                        "displayText": "Help me prepare for {event}",
+                        "pillText": "Help me prepare",
+                        "sourceTypeId": "UpcomingMeetingHelpMePrepare"
+                    },
+                    {
+                        "commandText": "Who is {people}?",
+                        "displayText": "Who is {people}?",
+                        "pillText": "Who is {people}?",
+                        "sourceTypeId": "UpcomingMeetingWhoIs"
+                    }
+                ]
+            }
+        },
         "HostAppSupportedDarkInsightTypes": "",
         "HostAppSupportedInsightTypes": "",
         "HybridPrefetchContacts_BatchSize": 250,
@@ -739,7 +830,21 @@
         "PeopleCardKeepTopNInsightsFilterSettings": 1,
         "PeopleHighlightsGdprExportIsEnabled": true,
         "PeopleInsightsRetrieverTimeout": 450,
-        "PeoplePrompts3SRIdToPromptTypeMap": "{\"PromptIdsMap\":{\"892c9a71-ed78-430e-83cf-2bd2612aa24d\":\"TellMeAboutPrompt\",\"29d90723-a470-4db1-91dc-86e0b7f2def8\":\"SeeNamePronunciationPrompt\",\"e92af03f-d0d9-4847-84d5-920026beba64\":\"WhatIsTheLatestPrompt\",\"674f6995-90f4-4ff8-b127-b3dd754a68b6\":\"WhenIsOurNextMeetingPrompt\",\"5d544061-3491-41b3-a84a-3336d9def11d\":\"PrepareForNextMeetingPrompt\",\"79e79abb-2d24-44e3-b84a-1c397ab262fe\":\"WhenIsOurNextOneOnOneMeetingPrompt\",\"7a971650-bfe8-48e7-9cec-30deeb7ceb60\":\"HowToBestConnectPrompt\",\"0c3bb560-848f-4a87-947f-acd98e275568\":\"HowToBreakTheIcePrompt\",\"bf134b7e-0b25-4f78-a585-61461580483b\":\"SummarizeRecentMessagesPrompt\",\"36ce9c6e-0cdb-42fd-bd75-e3398209a2cd\":\"StartMeetingInvitePrompt\",\"ad323ab4-266c-4462-9f21-0a2faeda0862\":\"KeyResponsibilitiesPrompt\"}}",
+        "PeoplePrompts3SRIdToPromptTypeMap": {
+            "PromptIdsMap": {
+                "0c3bb560-848f-4a87-947f-acd98e275568": "HowToBreakTheIcePrompt",
+                "29d90723-a470-4db1-91dc-86e0b7f2def8": "SeeNamePronunciationPrompt",
+                "36ce9c6e-0cdb-42fd-bd75-e3398209a2cd": "StartMeetingInvitePrompt",
+                "5d544061-3491-41b3-a84a-3336d9def11d": "PrepareForNextMeetingPrompt",
+                "674f6995-90f4-4ff8-b127-b3dd754a68b6": "WhenIsOurNextMeetingPrompt",
+                "79e79abb-2d24-44e3-b84a-1c397ab262fe": "WhenIsOurNextOneOnOneMeetingPrompt",
+                "7a971650-bfe8-48e7-9cec-30deeb7ceb60": "HowToBestConnectPrompt",
+                "892c9a71-ed78-430e-83cf-2bd2612aa24d": "TellMeAboutPrompt",
+                "ad323ab4-266c-4462-9f21-0a2faeda0862": "KeyResponsibilitiesPrompt",
+                "bf134b7e-0b25-4f78-a585-61461580483b": "SummarizeRecentMessagesPrompt",
+                "e92af03f-d0d9-4847-84d5-920026beba64": "WhatIsTheLatestPrompt"
+            }
+        },
         "PowerBiLicensesForSearch": [
             "52cd2fce-4dd4-4165-9c43-485610a081c8",
             "70d33638-9c74-4d01-bfd3-562de28bd4ba",
