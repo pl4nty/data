@@ -12,6 +12,7 @@ Enter-VsDevShell -VsInstallPath "$env:ProgramFiles\Microsoft Visual Studio\2022\
 cl /std:c++17 /EHsc ..\data\extract_sig.cpp /Fe:extract_sig.exe
 .\extract_sig.exe . mpasbase.vdm.extracted mpasdlta.vdm.extracted
 Write-Host "Exit code: $LASTEXITCODE"
+ls
 
 Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/lua_sig_parser_decompile.py" -OutFile "..\lua_sig_parser_decompile.py"
 python ..\lua_sig_parser_decompile.py lua_standalone_sig_mpasbase.vdm.extracted.csv
