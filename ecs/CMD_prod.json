@@ -15,7 +15,6 @@
         "Branding_And_Licensing": true,
         "CleanUpRDAgentTempFolder": true,
         "ClientAgent_CPC_Cogs_EnableSystemUsageCollection": true,
-        "ClientAgent_CPC_Cogs_PowershellToManagedCode": true,
         "ClientAgent_CPC_Connectivity_EnableCloudPCOSServicesPlugin": true,
         "ClientAgent_CPC_ExternalPartner_ExternalPartnerPluginExecution": true,
         "ClientAgent_CPC_FleetManagement_EnableBlockHighRiskPorts": true,
@@ -805,7 +804,6 @@
         }
     },
     "MMD": {
-        "AMShadowTest": true,
         "AccessControlAuth": true,
         "AlternativeSubscriptionSync": false,
         "AppOnlyAuth": true,

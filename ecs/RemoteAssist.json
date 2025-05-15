@@ -20,17 +20,5 @@
         "MinorVersion": "0",
         "NPSEndpointUri": "",
         "SubscriptionTrialLength": "90"
-    },
-    "RemoteAssistMobile": {
-        "Feature.AssetCapture": true,
-        "Feature.DepthAPI": "true",
-        "Feature.FreezeFrame": "false",
-        "Feature.NPSDialog": true,
-        "Feature.NPSForceShow": false,
-        "Feature.TeamsNotifications": "true",
-        "FreeTrialWindowDays": 90,
-        "MinVersion": "9999.99.99",
-        "NPSEndpointUri": "https://world.ces.microsoftcloud.com/",
-        "TalkbackIdBlacklist": []
     }
 }
