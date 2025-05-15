@@ -9,7 +9,7 @@ Invoke-WebRequest -Uri "https://github.com/hfiref0x/WDExtract/raw/refs/heads/mas
 
 Import-Module "$env:ProgramFiles\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\Microsoft.VisualStudio.DevShell.dll"
 Enter-VsDevShell -VsInstallPath "$env:ProgramFiles\Microsoft Visual Studio\2022\Enterprise"
-cl /std:c++17 /EHsc ..\data\extract_sig.cpp /Fe:extract_sig.exe
+cl /std:c++17 /EHsc ..\data\extract_sig.cpp
 .\extract_sig.exe . mpasbase.vdm.extracted mpasdlta.vdm.extracted
 Write-Host "Exit code: $LASTEXITCODE"
 ls
