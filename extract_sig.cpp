@@ -68,6 +68,9 @@ unsigned char *lua_buffer = NULL;
 size_t lua_buffer_index = 0;
 unsigned char *friendly_buffer = NULL;
 size_t friendly_buffer_index = 0;
+// Add maximum size definitions for buffers
+#define MAX_BUFFER_SIZE (268435456 * 2) // 512MB
+#define MAX_OUT_BUFFER_SIZE (536870912 * 2) // 1GB
 
 char *ByteToHex(unsigned char *bytes, size_t size)
 {
@@ -635,15 +638,18 @@ void print_lua_signature(char *threatName, char *lua_data, size_t size)
         ptrSize += 1;
     } while (1);
 
-    // printf("\n%s :LUA: %02x - %s", threatName, plua_standard->Type, catag);
-
     char *data = ByteToHex(plua_standard->data + ptrSize, plua_standard->LUASize);
-    if (data != NULL)
+    if (data != NULL && lua_buffer != NULL)
     {
-        //		threat,lua_attr,category,hexdata
-        nWrite = sprintf((char *)lua_buffer + lua_buffer_index, "\"%s\",\"0x%04x\",\"%s\",\"%d\",\"%s\"\r\n", threatName, plua_standard->Type, catag, plua_standard->LUASize, 
-        data);
-        lua_buffer_index += nWrite;
+        if (lua_buffer_index + 1024 < MAX_BUFFER_SIZE)
+        {
+            nWrite = sprintf((char *)lua_buffer + lua_buffer_index, "\"%s\",\"0x%04x\",\"%s\",\"%d\",\"%s\"\r\n", threatName, plua_standard->Type, catag, plua_standard->LUASize, data);
+            lua_buffer_index += nWrite;
+        }
+        else
+        {
+            printf("\nWarning: lua_buffer is full, can't add more data");
+        }
         free(data);
     }
 }
@@ -651,23 +657,43 @@ void print_lua_signature(char *threatName, char *lua_data, size_t size)
 size_t print_sig(unsigned char *out_buffer, char *threatName, sig_entry *entry)
 {
     size_t nWrite = 0;
+    
+    if (out_buffer == NULL)
+    {
+        return 0;
+    }
+    
     const char *sigtype = get_sig_type(entry->sig_type);
     size_t sigSize = get_sig_size(entry);
-    if (entry->sig_type == 0xA1 || entry->sig_type == 0xA0)
+    
+    if ((entry->sig_type == 0xA1 || entry->sig_type == 0xA0) && friendly_buffer != NULL)
     {
         char *data_hash = ByteToHex(entry->value, sigSize);
-        nWrite = sprintf((char *)friendly_buffer + friendly_buffer_index, "\"%s\",\"%s\"\r\n", sigtype, data_hash);
-        friendly_buffer_index += nWrite;
-        free(data_hash);
+        if (data_hash != NULL)
+        {
+            if (friendly_buffer_index + 512 < MAX_BUFFER_SIZE)
+            {
+                nWrite = sprintf((char *)friendly_buffer + friendly_buffer_index, "\"%s\",\"%s\"\r\n", sigtype, data_hash);
+                friendly_buffer_index += nWrite;
+            }
+            else
+            {
+                printf("\nWarning: friendly_buffer is full, can't add more data");
+            }
+            free(data_hash);
+        }
     }
+    
     if (entry->sig_type == 0x61)
     {
         // print_pehstr_sig((char *)entry->value, sigSize);
     }
+    
     if (entry->sig_type == 0xBD)
     {
         print_lua_signature(threatName, (char *)entry->value, sigSize);
     }
+    
     char *data = ByteToHex(entry->value, sigSize);
     if (data != NULL)
     {
@@ -844,12 +870,42 @@ int main(int argc, char *argv[])
     size_t file_size = 0;
     unsigned char *buf = NULL;
 
-    friendly_buffer = (unsigned char *)malloc(536870912);            
-    lua_buffer = (unsigned char *)malloc(536870912);                 
-    unsigned char *out_buf = (unsigned char *)malloc(536870912 * 2); 
-    unsigned char *pehstr_buf = (unsigned char *)malloc(536870912);  
+    // Allocate memory with error checking
+    friendly_buffer = (unsigned char *)malloc(MAX_BUFFER_SIZE);
+    if (friendly_buffer == NULL) {
+        printf("\nError: Failed to allocate friendly_buffer memory");
+        return -1;
+    }
+    memset(friendly_buffer, 0, MAX_BUFFER_SIZE);
+    
+    lua_buffer = (unsigned char *)malloc(MAX_BUFFER_SIZE);
+    if (lua_buffer == NULL) {
+        printf("\nError: Failed to allocate lua_buffer memory");
+        free(friendly_buffer);
+        return -1;
+    }
+    memset(lua_buffer, 0, MAX_BUFFER_SIZE);
+    
+    unsigned char *out_buf = (unsigned char *)malloc(MAX_OUT_BUFFER_SIZE);
+    if (out_buf == NULL) {
+        printf("\nError: Failed to allocate out_buf memory");
+        free(friendly_buffer);
+        free(lua_buffer);
+        return -1;
+    }
+    memset(out_buf, 0, MAX_OUT_BUFFER_SIZE);
+    
+    unsigned char *pehstr_buf = (unsigned char *)malloc(MAX_BUFFER_SIZE);
+    if (pehstr_buf == NULL) {
+        printf("\nError: Failed to allocate pehstr_buf memory");
+        free(friendly_buffer);
+        free(lua_buffer);
+        free(out_buf);
+        return -1;
+    }
+    memset(pehstr_buf, 0, MAX_BUFFER_SIZE);
+    
     unsigned char *threatBegin = NULL;
-    // to lazyyy
     char* filename = strrchr(file_path, DIR_SEPARATOR);
     if (filename == NULL) {
         filename = file_path;
@@ -862,7 +918,6 @@ int main(int argc, char *argv[])
     sprintf(pehstr_sig_out_file, "%s%cthreat_only_pehstr_%s.csv", out_folder, DIR_SEPARATOR, filename);
     sprintf(lua_sign_out_file, "%s%clua_standalone_sig_%s.csv", out_folder, DIR_SEPARATOR, filename);
     sprintf(friendly_sign_out_file, "%s%cfriendly_hash_sig_%s.csv", out_folder, DIR_SEPARATOR, filename);
-
     
     if (argc == 3)
     {
@@ -875,11 +930,18 @@ int main(int argc, char *argv[])
             {
                 fread(buf, file_size, 1, h_file);
             }
+            else
+            {
+                printf("\nError: Failed to allocate buffer for file");
+                fclose(h_file);
+                goto cleanup;
+            }
             fclose(h_file);
         }
         else
         {
             printf("\nRead file error");
+            goto cleanup;
         }
     }
     else if (argc == 4)
@@ -889,12 +951,22 @@ int main(int argc, char *argv[])
         sprintf(out_path, "%s%cdelta_patched.vdm", out_folder, DIR_SEPARATOR);
 
         buf = prepare_deltapatch(out_path, &file_size, delta_path, file_path);
+        if (buf == NULL) {
+            printf("\nError: Delta patching failed");
+            goto cleanup;
+        }
     }
     printf("\nBegin parser ...");
     if (buf)
     {
         do
         {
+            // Make sure we don't read past the end of the buffer
+            if (i >= file_size) {
+                printf("\nWarning: Reached end of file unexpectedly");
+                break;
+            }
+            
             memset(threatName, 0, sizeof(threatName));
 
             entry = (sig_entry *)(buf + i);
@@ -905,35 +977,59 @@ int main(int argc, char *argv[])
             nOtherSig = 0;
             if (entry->sig_type == 0x5c) // threat_begin
             {
+                // Ensure there's enough data for a THREAT_BEGIN structure
+                if (i + sizeof(sig_entry) >= file_size) {
+                    printf("\nError: Truncated threat begin entry");
+                    break;
+                }
 
                 THREAT_BEGIN *threat = (THREAT_BEGIN *)(entry->value);
-                memcpy(threatName, threat->name, threat->nameSize);
-                fix_file_name(threatName);
-                printf("\nThreat: %s", threatName);
-                threatBegin = out_buf + out_length;
-                out_length += print_sig(out_buf + out_length, threatName, entry);
-
-                do
-                {
-                    i += sizeof(entry->sig_type) + sizeof(entry->size_low) + sizeof(entry->size_high);
-                    i += get_sig_size(entry);
-                    entry = (sig_entry *)(buf + i);
-                    sig_enum[entry->sig_type] += 1;
+                if (threat->nameSize > 0 && threat->nameSize < sizeof(threatName)) {
+                    memcpy(threatName, threat->name, threat->nameSize);
+                    fix_file_name(threatName);
+                    printf("\nThreat: %s", threatName);
+                    threatBegin = out_buf + out_length;
                     out_length += print_sig(out_buf + out_length, threatName, entry);
-                    if (entry->sig_type == 0x61)
+
+                    do
                     {
-                        nPEHstrSig += 1;
+                        i += sizeof(entry->sig_type) + sizeof(entry->size_low) + sizeof(entry->size_high);
+                        i += get_sig_size(entry);
+                        
+                        // Make sure we don't read past the end of the buffer
+                        if (i >= file_size) {
+                            printf("\nWarning: Reached end of file while parsing threat");
+                            break;
+                        }
+                        
+                        entry = (sig_entry *)(buf + i);
+                        sig_enum[entry->sig_type] += 1;
+                        
+                        // Check we don't exceed output buffer size
+                        if (out_length + 1024 >= MAX_OUT_BUFFER_SIZE) {
+                            printf("\nWarning: Output buffer full, truncating output");
+                            break;
+                        }
+                        
+                        out_length += print_sig(out_buf + out_length, threatName, entry);
+                        if (entry->sig_type == 0x61)
+                        {
+                            nPEHstrSig += 1;
+                        }
+                        else if (entry->sig_type != 0x5d)
+                        {
+                            nOtherSig += 1;
+                        }
+                    } while (entry->sig_type != 0x5d); // threat end
+                    
+                    if (entry->sig_type == 0x5d) {
+                        threat_length = out_buf + out_length - threatBegin;
+                        if (nPEHstrSig != 0 && nOtherSig == 0 && threat_index + threat_length < MAX_BUFFER_SIZE)
+                        {
+                            memcpy(pehstr_buf + threat_index, threatBegin, threat_length);
+                            threat_index += threat_length;
+                        }
                     }
-                    else if (entry->sig_type != 0x5d)
-                    {
-                        nOtherSig += 1;
-                    }
-                } while (entry->sig_type != 0x5d); // threat end
-                threat_length = out_buf + out_length - threatBegin;
-                if (nPEHstrSig != 0 && nOtherSig == 0)
-                {
-                    memcpy(pehstr_buf + threat_index, threatBegin, threat_length);
-                    threat_index += threat_length;
                 }
             }
 
@@ -955,22 +1051,26 @@ int main(int argc, char *argv[])
         char header[] = "threat_name,sig_type,sig_data\r\n";
         if ((out_file = fopen(sig_out_file, "wb")) == NULL)
         {
-            return -1;
+            printf("\nError: Cannot create output file %s", sig_out_file);
         }
-        fwrite(header, strlen(header), 1, out_file);
-        fwrite(out_buf, out_length, 1, out_file);
-        fclose(out_file);
+        else {
+            fwrite(header, strlen(header), 1, out_file);
+            fwrite(out_buf, out_length, 1, out_file);
+            fclose(out_file);
+        }
 
         if (lua_buffer_index > 0)
         {
             char header_lua[] = "threat,lua_attr,category,size,hexdata\r\n";
             if ((out_file = fopen(lua_sign_out_file, "wb")) == NULL)
             {
-                return -1;
+                printf("\nError: Cannot create lua output file %s", lua_sign_out_file);
             }
-            fwrite(header_lua, strlen(header_lua), 1, out_file);
-            fwrite(lua_buffer, lua_buffer_index, 1, out_file);
-            fclose(out_file);
+            else {
+                fwrite(header_lua, strlen(header_lua), 1, out_file);
+                fwrite(lua_buffer, lua_buffer_index, 1, out_file);
+                fclose(out_file);
+            }
         }
         
         if (friendly_buffer_index > 0)
@@ -978,28 +1078,34 @@ int main(int argc, char *argv[])
             char header_friendly[] = "type,hash\r\n";
             if ((out_file = fopen(friendly_sign_out_file, "wb")) == NULL)
             {
-                return -1;
+                printf("\nError: Cannot create friendly output file %s", friendly_sign_out_file);
             }
-            fwrite(header_friendly, strlen(header_friendly), 1, out_file);
-            fwrite(friendly_buffer, friendly_buffer_index, 1, out_file);
-            fclose(out_file);
+            else {
+                fwrite(header_friendly, strlen(header_friendly), 1, out_file);
+                fwrite(friendly_buffer, friendly_buffer_index, 1, out_file);
+                fclose(out_file);
+            }
         }
        
         if (threat_index > 0)
         {
-
             FILE *outpe_file = fopen(pehstr_sig_out_file, "wb");
-            fwrite(header, strlen(header), 1, outpe_file);
-            fwrite(pehstr_buf, threat_index, 1, outpe_file);
-            fclose(outpe_file);
+            if (outpe_file == NULL) {
+                printf("\nError: Cannot create pehstr output file %s", pehstr_sig_out_file);
+            }
+            else {
+                fwrite(header, strlen(header), 1, outpe_file);
+                fwrite(pehstr_buf, threat_index, 1, outpe_file);
+                fclose(outpe_file);
+            }
         }
     }
 
-    
-    free(lua_buffer);
-    free(friendly_buffer);
-    free(out_buf);
-    free(pehstr_buf);
+cleanup:
+    if (lua_buffer) free(lua_buffer);
+    if (friendly_buffer) free(friendly_buffer);
+    if (out_buf) free(out_buf);
+    if (pehstr_buf) free(pehstr_buf);
 
     return 0;
 }
