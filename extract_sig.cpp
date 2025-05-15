@@ -69,7 +69,7 @@ size_t lua_buffer_index = 0;
 unsigned char *friendly_buffer = NULL;
 size_t friendly_buffer_index = 0;
 // Add maximum size definitions for buffers
-#define MAX_BUFFER_SIZE (268435456 * 2) // 512MB
+#define MAX_BUFFER_SIZE (268435456) // 512MB
 #define MAX_OUT_BUFFER_SIZE (536870912 * 2) // 1GB
 
 char *ByteToHex(unsigned char *bytes, size_t size)
