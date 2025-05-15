@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1664395,
+    "size": 1664890,
     "file_count": 163
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32045664,
-    "file_count": 3941
+    "size": 32059577,
+    "file_count": 3942
   },
   {
     "name": "boringssl",
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17963093,
+    "size": 17963811,
     "file_count": 1009
   },
   {
@@ -441,7 +441,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 215963442,
+    "size": 215581550,
     "file_count": 337
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "name": "nearby",
-    "size": 278049,
+    "size": 278373,
     "file_count": 52
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 21623,
+    "size": 21815,
     "file_count": 11
   },
   {
@@ -551,8 +551,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3579147,
-    "file_count": 558
+    "size": 3583215,
+    "file_count": 559
   },
   {
     "name": "perl",
@@ -701,7 +701,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1280150,
+    "size": 1280930,
     "file_count": 21
   },
   {
@@ -711,12 +711,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2156009,
+    "size": 2158066,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6163368,
+    "size": 6164155,
     "file_count": 171
   },
   {

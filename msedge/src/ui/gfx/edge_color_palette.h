@@ -1235,6 +1235,10 @@ namespace gfx {
         SkColorSetRGB(0x21, 0x69, 0xEB);
     constexpr SkColor kPwaSidebarIconDarkBlue = SkColorSetRGB(0x4D, 0x8D, 0xFA);
 
+    // Edge PWA Install Colors
+    constexpr SkColor kPwaInstallIconLightGreen =
+        SkColorSetRGB(0x97, 0xCD, 0x7E);
+
     // Browser essentials theme colors
     constexpr SkColor kBrowserEssentialsNativeHeaderDark =
         SkColorSetRGB(0x1f, 0x1f, 0x1f);
