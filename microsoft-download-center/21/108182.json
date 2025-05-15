@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Test DLC Version Update",
+    "downloadDescription": "Test DLC Version Update",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "file-2.txt",
+            "url": "https://download.microsoft.com/download/253b523c-1f19-4208-87f1-3517d21e3f57/file-2.txt",
+            "size": "146",
+            "version": "1.0.1",
+            "datePublished": "5/15/2025 6:21:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test DLC Version Update",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB0001",
+        "name": "KB0001"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/SB0001",
+        "name": "SB0001"
+    },
+    "detailsSection_file_version": "1.0.1",
+    "detailsSection_file_name": [
+        "file-2.txt"
+    ],
+    "detailsSection_file_size": [
+        "146 bytes"
+    ],
+    "detailsSection_file_date": "5/15/2025",
+    "systemRequirementsSection": "Test DLC Version Update",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "Test DLC Version Update",
+    "relatedResourcesSection": [
+        {
+            "title": "test",
+            "url": "https://wwwppe.microsoft.com/en-us/download/details.aspx?id=1922"
+        },
+        {
+            "title": "additional info",
+            "url": "https://wwwppe.microsoft.com/en-us/download/details.aspx?id=1922"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108182",
+    "downloadPreload": true
+}
