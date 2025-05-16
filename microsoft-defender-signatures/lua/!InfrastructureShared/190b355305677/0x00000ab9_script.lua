@@ -1,0 +1,12 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\190b355305677\0x00000ab9_luac 
+
+-- params : ...
+-- function num : 0
+if IsTaintedProcessinParentTreeForLinux("upx_file_created_taint") or IsTaintedProcessinParentTreeForLinux("remote_file_created_taint") then
+  addRelatedProcess()
+  reportRelatedBmHits()
+  return mp.INFECTED
+end
+return mp.CLEAN
+

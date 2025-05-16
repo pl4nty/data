@@ -1,0 +1,50 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\c5d7e3007179\0x0000bf50_luac 
+
+-- params : ...
+-- function num : 0
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil or #l_0_1 <= 60 then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+local l_0_2 = {}
+-- DECOMPILER ERROR at PC29: No list found for R2 , SetList fails
+
+-- DECOMPILER ERROR at PC30: Overwrote pending register: R3 in 'AssignReg'
+
+if not (".com")(l_0_1, l_0_2) then
+  return mp.CLEAN
+end
+local l_0_3 = {}
+-- DECOMPILER ERROR at PC41: No list found for R3 , SetList fails
+
+-- DECOMPILER ERROR at PC42: Overwrote pending register: R4 in 'AssignReg'
+
+if not (".doc")(l_0_1, l_0_3) then
+  return mp.CLEAN
+end
+local l_0_4 = {}
+-- DECOMPILER ERROR at PC54: No list found for R4 , SetList fails
+
+-- DECOMPILER ERROR at PC55: Overwrote pending register: R5 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC56: Overwrote pending register: R6 in 'AssignReg'
+
+if not ("irm")("invoke-restmethod", l_0_4) then
+  return mp.CLEAN
+end
+local l_0_5 = {}
+-- DECOMPILER ERROR at PC66: No list found for R5 , SetList fails
+
+-- DECOMPILER ERROR at PC67: Overwrote pending register: R6 in 'AssignReg'
+
+if not ("elecronico identification")(l_0_1, l_0_5) then
+  return mp.CLEAN
+end
+return mp.INFECTED
+

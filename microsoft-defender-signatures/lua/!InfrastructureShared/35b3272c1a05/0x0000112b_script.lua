@@ -1,0 +1,10 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\35b3272c1a05\0x0000112b_luac 
+
+-- params : ...
+-- function num : 0
+if IsSenseRelatedProc() == true then
+  return mp.CLEAN
+end
+return mp.INFECTED
+

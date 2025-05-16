@@ -1,0 +1,22 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\e9b3c506c85b\0x0000ba35_luac 
+
+-- params : ...
+-- function num : 0
+local l_0_0 = mp.CLEAN
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 then
+  l_0_0 = reportGenericRansomware((this_sigattrlog[3]).utf8p2)
+else
+  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 then
+    l_0_0 = reportGenericRansomware((this_sigattrlog[4]).utf8p2)
+  else
+    if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 then
+      l_0_0 = mp.INFECTED
+    end
+  end
+end
+if l_0_0 == mp.INFECTED then
+  return mp.INFECTED
+end
+return mp.CLEAN
+

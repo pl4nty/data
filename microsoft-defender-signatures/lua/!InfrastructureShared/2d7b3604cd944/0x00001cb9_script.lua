@@ -1,0 +1,10 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\2d7b3604cd944\0x00001cb9_luac 
+
+-- params : ...
+-- function num : 0
+if analyzeRansomwarePattern2() == mp.INFECTED then
+  return mp.INFECTED
+end
+return mp.CLEAN
+
