@@ -655,22 +655,6 @@
             },
             "hlsSettings": {
                 "hlsConfig": {
-                    "fragLoadPolicy": {
-                        "default": {
-                            "errorRetry": {
-                                "maxNumRetry": 6,
-                                "maxRetryDelayMs": 8000,
-                                "retryDelayMs": 1000
-                            },
-                            "maxLoadTimeMs": 120000,
-                            "maxTimeToFirstByteMs": 6000,
-                            "timeoutRetry": {
-                                "maxNumRetry": 4,
-                                "maxRetryDelayMs": 0,
-                                "retryDelayMs": 0
-                            }
-                        }
-                    },
                     "liveMaxLatencyDurationCount": 6,
                     "liveSyncDurationCount": 3
                 },
