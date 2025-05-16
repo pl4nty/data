@@ -86,10 +86,10 @@ jobs:
     strategy:
       matrix:
         cmd:
-          - .\microsoft_defender_signatures.ps1
+          - microsoft_defender_signatures.ps1
     steps:
       - uses: actions/checkout@v4
-      - run: ${{ matrix.cmd }}
+      - run: .\${{ matrix.cmd }}
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
