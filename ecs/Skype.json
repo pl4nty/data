@@ -604,11 +604,11 @@
             "mdsc_rmconnectionevent": "P-R-1570178-1-8"
         },
         "SkypeVideoLibrary": {
-            "mdsc_mediadiagnostic": "P-E-1235534-C1-5,P-R-1547090-1-6",
-            "mdsc_qoe": "P-E-1235534-C1-5,P-R-1547090-1-6",
-            "mdsc_rmconnectionevent": "P-E-1235534-C1-5,P-R-1547090-1-6",
-            "skypecosi_concore_native_callsignalingagent_callmodality": "P-E-1235534-C1-5,P-R-1547090-1-6",
-            "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1235534-C1-5,P-R-1547090-1-6"
+            "mdsc_mediadiagnostic": "P-E-1235534-C1-5",
+            "mdsc_qoe": "P-E-1235534-C1-5",
+            "mdsc_rmconnectionevent": "P-E-1235534-C1-5",
+            "skypecosi_concore_native_callsignalingagent_callmodality": "P-E-1235534-C1-5",
+            "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1235534-C1-5"
         }
     },
     "JennyTest2": {
@@ -662,8 +662,8 @@
                                 "maxRetryDelayMs": 8000,
                                 "retryDelayMs": 1000
                             },
-                            "maxLoadTimeMs": 60000,
-                            "maxTimeToFirstByteMs": 10000,
+                            "maxLoadTimeMs": 120000,
+                            "maxTimeToFirstByteMs": 6000,
                             "timeoutRetry": {
                                 "maxNumRetry": 4,
                                 "maxRetryDelayMs": 0,
@@ -672,9 +672,7 @@
                         }
                     },
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3,
-                    "startLevel": -1,
-                    "testBandwidth": true
+                    "liveSyncDurationCount": 3
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
@@ -3373,6 +3371,9 @@
                         "namespace": "SkypeAudioLibrary"
                     }
                 ]
+            },
+            "logUpload": {
+                "maxSize": 512000
             }
         }
     },
