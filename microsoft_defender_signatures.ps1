@@ -7,7 +7,7 @@ Invoke-WebRequest -Uri "https://github.com/hfiref0x/WDExtract/raw/refs/heads/mas
 ..\wdextract64.exe mpasbase.vdm
 ..\wdextract64.exe mpasdlta.vdm
 
-& "$env:ProgramFiles\Microsoft Visual Studio\2022\Enterprise\Common6\Tools\Launch-VsDevShell.ps1" -Arch amd64
+& "$env:ProgramFiles\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\Launch-VsDevShell.ps1" -Arch amd64
 cl /std:c++17 /EHsc ..\data\extract_sig.cpp
 .\extract_sig.exe . mpasbase.vdm.extracted mpasdlta.vdm.extracted
 Write-Host "Exit code: $LASTEXITCODE"
