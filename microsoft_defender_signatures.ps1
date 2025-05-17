@@ -15,7 +15,7 @@ Write-Host "\nExit code: $LASTEXITCODE"
 
 Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/luadec.exe" -OutFile "luadec.exe"
 Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/lua_sig_parser_decompile.py" -OutFile "..\lua_sig_parser_decompile.py"
-python ..\lua_sig_parser_decompile.py lua_standalone_sig_mpasbase.vdm.extracted.csv
+python ..\data\microsoft_defender_lua_sig_parser_decompile.py lua_standalone_sig_mpasbase.vdm.extracted.csv
 # Get-ChildItem .\lua -Recurse -Filter *_luac | Remove-Item
 Remove-Item ..\data\microsoft-defender-signatures -Recurse -ErrorAction Ignore
 Move-Item .\lua ..\data\microsoft-defender-signatures
