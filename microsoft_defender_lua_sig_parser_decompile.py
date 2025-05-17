@@ -209,7 +209,7 @@ with open(infile, 'r') as file:
         # ~10k signatures, so insertions cause noisy diffs
         # size forces name change on insertion, which helps diff algo
         if key == "!InfrastructureShared-Unknowcategory": 
-            prefix = "%x_%x" % (index, size)
+            prefix = "%x_%s" % (index, size)
         else:
             prefix = "%x" % index
         out_file = os.path.join(out_dir, f"{prefix}.luac")
