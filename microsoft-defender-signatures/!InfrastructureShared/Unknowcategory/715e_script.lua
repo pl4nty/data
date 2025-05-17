@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
+if (hstrlog[8]).matched then
+  (mp.changedetectionname)(805306421)
+else
+  if (hstrlog[10]).matched then
+    (mp.changedetectionname)(805306427)
   end
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
-end
+return mp.INFECTED
 

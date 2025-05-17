@@ -3,22 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_6 = (this_sigattrlog[2]).p1
-    if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") then
-      return mp.INFECTED
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if l_0_0 and (string.len)(l_0_0) > 48 and (string.find)(l_0_0, "%.%.\\") then
+      l_0_0 = (string.lower)(l_0_0)
+      if (string.find)(l_0_0, "javascript:", 2, true) or (string.find)(l_0_0, "vbscript:", 2, true) then
+        return mp.INFECTED
+      end
     end
   end
-  return mp.LOWFI
+  return mp.CLEAN
 end
 

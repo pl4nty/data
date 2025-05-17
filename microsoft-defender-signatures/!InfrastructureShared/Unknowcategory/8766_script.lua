@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (string.sub)(l_0_0, 19, 19)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "\187" .. l_0_1 .. "\000\000\000êê\144")
+if (not (hstrlog[5]).matched or (hstrlog[6]).matched) and mp.HSTR_WEIGHT == 3 then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

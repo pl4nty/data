@@ -3,20 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = {}
-    l_0_1["wmiprvse.exe"] = true
-    l_0_1["csrss.exe"] = true
-    l_0_1["svchost.exe"] = true
-    l_0_1["gamemon64.des"] = true
-    l_0_1["wsqmcons.exe"] = true
-    l_0_1["lsadetsetup.exe"] = true
-    if l_0_1[((string.lower)((string.sub)(l_0_0, -15))):match("\\([^\\]+)$")] then
-      return mp.CLEAN
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (mp.GetExecutablesFromCommandLine)((this_sigattrlog[1]).utf8p2)
+  for l_0_4,l_0_5 in ipairs(l_0_0) do
+    l_0_5 = (mp.ContextualExpandEnvironmentVariables)(l_0_5)
+    if (sysio.IsFileExists)(l_0_5) then
+      (bm.add_related_file)(l_0_5)
     end
   end
-  return mp.INFECTED
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

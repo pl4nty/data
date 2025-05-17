@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 7 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 then
-  return mp.INFECTED
+if not peattributes.isdll or peattributes.no_exports then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pe.get_exports)() ~= 1 then
+  return mp.CLEAN
+end
+if (R1_PC19[1]).ordinal ~= 1 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

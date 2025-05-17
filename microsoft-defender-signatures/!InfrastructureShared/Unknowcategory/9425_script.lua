@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (peattributes.isexe == true or peattributes.isdll == true) and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+-- DECOMPILER ERROR at PC36: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC36: Unhandled construct in 'MakeBoolean' P3
+
+if ((hstrlog[1]).matched and (hstrlog[2]).matched) or not (hstrlog[1]).matched or (hstrlog[3]).matched == true then
+  return mp.SUSPICIOUS
 end
+return mp.CLEAN
 

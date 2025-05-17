@@ -3,73 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = false
-if (this_sigattrlog[1]).matched then
-  local l_0_1 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
-  if l_0_1 ~= nil then
-    local l_0_2 = (sysio.GetRegValueAsString)(l_0_1, "Debugger")
-    if l_0_2 ~= nil and (string.len)(l_0_2) > 3 and (sysio.IsFileExists)(l_0_2) then
-      (mp.ReportLowfi)(l_0_2, 203654752)
-      l_0_0 = true
-    end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\werfault.exe", 1, true) or (string.find)(l_0_0, "\\debugger", 1, true) or (string.find)(l_0_0, "\\vmmap", 1, true) or (string.find)(l_0_0, "\\thdump", 1, true) or (string.find)(l_0_0, "\\epa\\gtbinjector", 1, true) or (string.find)(l_0_0, "\\uwpinject.exe", 1, true) or (string.find)(l_0_0, "\\ra64app.exe", 1, true) or (string.find)(l_0_0, "\\bin\\dllinjector64.exe", 1, true) or (string.find)(l_0_0, "\\ftwlaunch", 1, true) then
+  return mp.CLEAN
+end
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil then
+  local l_0_1 = (this_sigattrlog[2]).utf8p2
+  local l_0_2 = (this_sigattrlog[5]).utf8p1
+  local l_0_3 = (string.match)((string.lower)(l_0_1), " -p (%d+)")
+  if not l_0_3 then
+    return mp.CLEAN
   end
-else
-  do
-    if (this_sigattrlog[2]).matched then
-      local l_0_3 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe")
-      if l_0_3 ~= nil then
-        local l_0_4 = (sysio.GetRegValueAsString)(l_0_3, "Debugger")
-        if l_0_4 ~= nil and (string.len)(l_0_4) > 3 and (sysio.IsFileExists)(l_0_4) then
-          (mp.ReportLowfi)(l_0_4, 2797521046)
-          l_0_0 = true
-        end
-      end
-    else
-      do
-        if (this_sigattrlog[3]).matched then
-          local l_0_5 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\magnify.exe")
-          if l_0_5 ~= nil then
-            local l_0_6 = (sysio.GetRegValueAsString)(l_0_5, "Debugger")
-            if l_0_6 ~= nil and (string.len)(l_0_6) > 3 and (sysio.IsFileExists)(l_0_6) then
-              (mp.ReportLowfi)(l_0_6, 3633633013)
-              l_0_0 = true
-            end
-          end
-        else
-          do
-            if (this_sigattrlog[4]).matched then
-              local l_0_7 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\utilman.exe")
-              if l_0_7 ~= nil then
-                local l_0_8 = (sysio.GetRegValueAsString)(l_0_7, "Debugger")
-                if l_0_8 ~= nil and (string.len)(l_0_8) > 3 and (sysio.IsFileExists)(l_0_8) then
-                  (mp.ReportLowfi)(l_0_8, 18635330)
-                  l_0_0 = true
-                end
-              end
-            else
-              do
-                if (this_sigattrlog[5]).matched then
-                  local l_0_9 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\narrator.exe")
-                  if l_0_9 ~= nil then
-                    local l_0_10 = (sysio.GetRegValueAsString)(l_0_9, "Debugger")
-                    if l_0_10 ~= nil and (string.len)(l_0_10) > 3 and (sysio.IsFileExists)(l_0_10) then
-                      (mp.ReportLowfi)(l_0_10, 3440281147)
-                      l_0_0 = true
-                    end
-                  end
-                end
-                do
-                  if l_0_0 == true then
-                    return mp.INFECTED
-                  end
-                  return mp.CLEAN
-                end
-              end
-            end
-          end
-        end
-      end
-    end
+  local l_0_4, l_0_5 = (string.match)(l_0_2, "targetprocessppid:(%d+):(%d+)")
+  if not l_0_4 or not l_0_5 then
+    return mp.CLEAN
   end
+  if l_0_3 == l_0_4 then
+    local l_0_6 = (bm.get_current_process_startup_info)()
+    ;
+    (bm.request_SMS)(l_0_6.ppid, "M")
+    ;
+    (bm.add_action)("SmsAsyncScanEvent", 1000)
+    local l_0_7 = (string.format)("pid:%s,ProcessStart:%s", l_0_4, l_0_5)
+    ;
+    (bm.trigger_sig)("BMGenericCodeInjector.A", "Behavior:Win32/GenCodeInjector.E", l_0_7)
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
 end
 

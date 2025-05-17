@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 25 then
-  (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A1")
+if peattributes.ismsil and peattributes.has_msilresources then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

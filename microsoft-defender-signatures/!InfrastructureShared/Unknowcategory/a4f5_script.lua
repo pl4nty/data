@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-l_0_1 = (string.lower)((string.gsub)(l_0_1, "`", ""))
-local l_0_2 = (string.gsub)(l_0_1, " ", "")
-if (string.find)(l_0_2, ").downloadstring(", 1, true) or (string.find)(l_0_2, ")).readtoend()", 1, true) or (string.find)(l_0_1, "[wmiclass] ", 1, true) then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if (string.find)((string.lower)(l_0_6.image_path), "\\powershell.exe", 1, true) then
+    (MpCommon.TurnNriOnProcess)(l_0_6.ppid)
+    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
+    local l_0_9 = tonumber(l_0_7)
+    local l_0_10 = tonumber(l_0_8)
+    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
+    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
+    ;
+    (mp.TriggerScanResource)("ems", l_0_13)
+  end
 end
-if (string.len)(l_0_1) > 2048 and ((string.find)(l_0_1, " -e ", 1, true) or (string.find)(l_0_1, " -ec ", 1, true)) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

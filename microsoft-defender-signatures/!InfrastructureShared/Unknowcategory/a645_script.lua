@@ -3,29 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSIsRemoteSession)
-if l_0_1 then
-  local l_0_2 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSUserName)
-  local l_0_3 = (bm.get_imagepath)()
-  local l_0_4 = "SuspTool_" .. l_0_2
-  local l_0_5 = (MpCommon.QueryPersistContextNoPath)(l_0_4, l_0_3)
-  if not l_0_5 then
-    (MpCommon.AppendPersistContextNoPath)(l_0_4, l_0_3, 28800)
+if not peattributes.isexe or peattributes.hasstandardentry or pehdr.Machine ~= 332 then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() >= 3145728 then
+  return mp.CLEAN
+end
+if (this_sigattrlog[10]).matched and (this_sigattrlog[12]).matched then
+  local l_0_0 = (string.sub)((this_sigattrlog[10]).p1, 5)
+  local l_0_1 = (this_sigattrlog[12]).p1
+  if #l_0_0 ~= #l_0_1 then
+    return mp.CLEAN
   end
-  local l_0_6 = (MpCommon.GetPersistContextCountNoPath)(l_0_4)
-  if l_0_6 > 2 then
-    local l_0_7 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSClientAddress)
-    ;
-    (bm.add_related_string)("bmurl", l_0_7.Address, bm.RelatedStringBMReport)
-    local l_0_8 = (MpCommon.GetPersistContextNoPath)(l_0_4)
-    if l_0_8 then
-      for l_0_12,l_0_13 in ipairs(l_0_8) do
-        (bm.add_related_file)(l_0_13)
-      end
-      return mp.INFECTED
-    end
+  if (string.find)(l_0_1, "\\", 1, true) ~= nil then
+    return mp.CLEAN
   end
+  if (string.lower)((string.sub)(l_0_0, 1, 1)) == (string.lower)((string.sub)(l_0_1, 1, 1)) or (string.lower)((string.sub)(l_0_0, 2)) ~= (string.lower)((string.sub)(l_0_1, 2)) or (string.lower)((string.sub)(l_0_0, -4)) ~= ".dll" then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
 do
   return mp.CLEAN

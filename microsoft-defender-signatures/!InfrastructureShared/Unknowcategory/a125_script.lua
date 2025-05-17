@@ -3,20 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if l_0_1 ~= nil then
-  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-      (bm.add_related_file)(l_0_7)
-      return mp.INFECTED
+if (hstrlog[4]).matched then
+  local l_0_0 = (hstrlog[4]).VA
+  local l_0_1 = (pe.mmap_va)(l_0_0, 16)
+  if #l_0_1 == 16 then
+    local l_0_2 = (mp.readu_u32)(l_0_1, 7)
+    if l_0_2 ~= 0 then
+      local l_0_3, l_0_4, l_0_5, l_0_6 = (mp.bsplit)(l_0_2, 8)
+      local l_0_7 = "HSTR:Tovicrypt:CnC/" .. l_0_3 .. "." .. l_0_4 .. "." .. l_0_5 .. "." .. l_0_6
+      ;
+      (mp.set_mpattribute)(l_0_7)
     end
   end
 end
 do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
+  return mp.INFECTED
 end
 

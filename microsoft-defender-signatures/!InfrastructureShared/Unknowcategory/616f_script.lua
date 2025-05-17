@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pesecs[1]).Name == "   " then
+if (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

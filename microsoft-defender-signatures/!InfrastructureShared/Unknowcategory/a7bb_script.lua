@@ -3,112 +3,128 @@
 
 -- params : ...
 -- function num : 0
-IsArrayMember = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_1 == nil then
-    return false
-  end
-  if #l_1_0 <= 0 then
-    return false
-  end
-  for l_1_5 = 1, #l_1_0 do
-    if l_1_0[l_1_5] == l_1_1 then
-      return true
-    end
-  end
-  return false
-end
-
-local l_0_0 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2))
-else
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2))
+if mp.HSTR_WEIGHT >= 1 then
+  local l_0_0 = nil
+  if (hstrlog[1]).matched then
+    l_0_0 = (hstrlog[1]).VA
+    l_0_0 = l_0_0 - 171
   else
-    return mp.CLEAN
-  end
-end
-local l_0_1 = {}
-local l_0_2 = 0
-local l_0_3 = 0
-for l_0_7 in (string.gmatch)(l_0_0, "[^&]+") do
-  l_0_2 = l_0_2 + 1
-  ;
-  (table.insert)(l_0_1, {})
-  l_0_3 = 0
-  for l_0_11 in (string.gmatch)(l_0_7, "%S+") do
-    l_0_3 = l_0_3 + 1
-    -- DECOMPILER ERROR at PC76: Confused about usage of register: R12 in 'UnsetPending'
-
-    ;
-    (l_0_1[l_0_2])[l_0_3] = (string.lower)(l_0_11)
-  end
-end
-local l_0_12 = {}
-local l_0_13 = 0
-for l_0_17 = 1, #l_0_1 do
-  local l_0_18 = 0
-  for l_0_22 = 1, #l_0_1[l_0_17] do
-    if l_0_13 == 0 then
-      if l_0_18 == 0 and ((string.sub)((l_0_1[l_0_17])[l_0_22], -9) == "bitsadmin" or (string.sub)((l_0_1[l_0_17])[l_0_22], -13) == "bitsadmin.exe") then
-        l_0_18 = 1000
+    if (hstrlog[2]).matched then
+      l_0_0 = (hstrlog[2]).VA
+      l_0_0 = l_0_0 - 224
+    else
+      if (hstrlog[3]).matched then
+        l_0_0 = (hstrlog[3]).VA
+        l_0_0 = l_0_0 - 272
       else
-        if (l_0_18 == 1000 and (l_0_1[l_0_17])[l_0_22] == "/transfer") or l_0_18 == 1000 and (l_0_1[l_0_17])[l_0_22] == "/addfile" then
-          l_0_18 = 2000
+        if (hstrlog[4]).matched then
+          l_0_0 = (hstrlog[4]).VA
+          l_0_0 = l_0_0 - 80
         else
-          if l_0_18 == 2000 and (l_0_1[l_0_17])[l_0_22] == "/upload" then
-            l_0_18 = -1
-            l_0_13 = -1
+          if (hstrlog[5]).matched then
+            l_0_0 = (hstrlog[5]).VA
+            l_0_0 = l_0_0 - 288
           else
-            if l_0_18 == 2000 and (string.sub)((l_0_1[l_0_17])[l_0_22], 1, 4) == "http" then
-              l_0_18 = 3000
+            if (hstrlog[6]).matched then
+              l_0_0 = (hstrlog[6]).VA
+              l_0_0 = l_0_0 - 352
             else
-              if l_0_18 == 3000 and (string.match)((l_0_1[l_0_17])[l_0_22], "^%a:\\.+%.[^%.].+$") ~= nil then
-                l_0_18 = 4000
-                l_0_13 = 1
-                local l_0_23 = #l_0_12 + 1
-                l_0_12[l_0_23] = (l_0_1[l_0_17])[l_0_22]
+              if (hstrlog[7]).matched then
+                l_0_0 = (hstrlog[7]).VA
+                l_0_0 = l_0_0 - 112
+              else
+                if (hstrlog[8]).matched then
+                  l_0_0 = (hstrlog[8]).VA
+                  l_0_0 = l_0_0 - 192
+                else
+                  if (hstrlog[9]).matched then
+                    l_0_0 = (hstrlog[9]).VA
+                    l_0_0 = l_0_0 - 336
+                  else
+                    if (hstrlog[10]).matched then
+                      l_0_0 = (hstrlog[10]).VA
+                      l_0_0 = l_0_0 - 272
+                    else
+                      if (hstrlog[12]).matched then
+                        l_0_0 = (hstrlog[12]).VA
+                        l_0_0 = l_0_0 - 256
+                      else
+                        if (hstrlog[13]).matched then
+                          l_0_0 = (hstrlog[13]).VA
+                          l_0_0 = l_0_0 - 112
+                        else
+                          if (hstrlog[14]).matched then
+                            l_0_0 = (hstrlog[14]).VA
+                            l_0_0 = l_0_0 - 112
+                          else
+                            if (hstrlog[15]).matched then
+                              l_0_0 = (hstrlog[15]).VA
+                              l_0_0 = l_0_0 - 304
+                            else
+                              if (hstrlog[16]).matched then
+                                l_0_0 = (hstrlog[16]).VA
+                                l_0_0 = l_0_0 - 464
+                              else
+                                if (hstrlog[17]).matched then
+                                  l_0_0 = (hstrlog[17]).VA
+                                  l_0_0 = l_0_0 - 144
+                                else
+                                  if (hstrlog[18]).matched then
+                                    l_0_0 = (hstrlog[18]).VA
+                                    l_0_0 = l_0_0 - 624
+                                  else
+                                    if (hstrlog[19]).matched then
+                                      l_0_0 = (hstrlog[19]).VA
+                                      l_0_0 = l_0_0 - 336
+                                    else
+                                      if (hstrlog[23]).matched then
+                                        l_0_0 = (hstrlog[23]).VA
+                                        l_0_0 = l_0_0 - 384
+                                      else
+                                        if (hstrlog[20]).matched then
+                                          l_0_0 = (hstrlog[20]).VA
+                                          l_0_0 = l_0_0 - 640
+                                        else
+                                          if (hstrlog[21]).matched then
+                                            l_0_0 = (hstrlog[21]).VA
+                                            l_0_0 = l_0_0 - 336
+                                          else
+                                            if (hstrlog[22]).matched then
+                                              l_0_0 = (hstrlog[22]).VA
+                                              l_0_0 = l_0_0 - 592
+                                            else
+                                              if (hstrlog[11]).matched then
+                                                l_0_0 = (hstrlog[11]).VA
+                                              end
+                                            end
+                                          end
+                                        end
+                                      end
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
               end
             end
           end
-        end
-      end
-    end
-    do
-      if l_0_13 == 1 then
-        if l_0_18 == 0 and l_0_22 == 1 and (l_0_1[l_0_17])[l_0_22] == "start" then
-          l_0_18 = 1000
-        else
-          if (l_0_18 == 1000 and (string.match)((l_0_1[l_0_17])[l_0_22], "^%a:\\.+%.[^%.].+$") ~= nil and IsArrayMember(l_0_12, (l_0_1[l_0_17])[l_0_22]) == true and (string.sub)((l_0_1[l_0_17])[l_0_22], -4) == ".exe") or l_0_18 == 0 and l_0_22 == 1 and (string.match)((l_0_1[l_0_17])[l_0_22], "^%a:\\.+%.[^%.].+$") ~= nil and IsArrayMember(l_0_12, (l_0_1[l_0_17])[l_0_22]) == true and (string.sub)((l_0_1[l_0_17])[l_0_22], -4) == ".exe" then
-            l_0_18 = 9999
-            l_0_13 = 9999
-          else
-            if l_0_18 == 0 and l_0_22 > 1 and (string.match)((l_0_1[l_0_17])[l_0_22], "^%a:\\.+%.[^%.].+$") ~= nil and IsArrayMember(l_0_12, (l_0_1[l_0_17])[l_0_22]) == true then
-              l_0_18 = 2000
-            else
-              if l_0_18 == 2000 and l_0_22 > 1 and (string.match)((l_0_1[l_0_17])[l_0_22], "^%a:\\.+%.[^%.].+$") ~= nil and IsArrayMember(l_0_12, (l_0_1[l_0_17])[l_0_22]) == false then
-                l_0_18 = 3000
-                local l_0_24 = #l_0_12 + 1
-                l_0_12[l_0_24] = (l_0_1[l_0_17])[l_0_22]
-              end
-            end
-          end
-        end
-      end
-      do
-        do
-          if l_0_13 == 9999 then
-            return mp.INFECTED
-          end
-          -- DECOMPILER ERROR at PC286: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC286: LeaveBlock: unexpected jumping out DO_STMT
-
         end
       end
     end
   end
+  if l_0_0 ~= nil then
+    local l_0_1 = "HSTR:VirTool:Win32/Obfuscator.ACV!pointer_" .. (string.format)("%.08x", l_0_0)
+    ;
+    (mp.set_mpattribute)(l_0_1)
+  end
 end
-return mp.CLEAN
+do
+  return mp.INFECTED
+end
 

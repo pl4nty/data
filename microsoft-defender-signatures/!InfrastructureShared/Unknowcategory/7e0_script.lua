@@ -3,22 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 256 then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if (string.find)(l_0_0, "emotet_e1_", 1, true) ~= nil or (string.find)(l_0_0, "emotet_e2_", 1, true) ~= nil or (string.find)(l_0_0, "emotet_e3_", 1, true) ~= nil then
+  return mp.INFECTED
 end
-local l_0_1 = (mp.getfilename)()
-if (string.sub)(l_0_1, -4) ~= ".dat" then
-  return mp.CLEAN
-end
-if headerpage[1] ~= 170 then
-  return mp.CLEAN
-end
-if headerpage[2] ~= 254 then
-  return mp.CLEAN
-end
-if headerpage[3] ~= 14 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

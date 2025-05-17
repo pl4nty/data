@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.hasexports == true and (pesecs[3]).Name == ".cdata" and (pesecs[3]).Characteristics == 3221225536 and (mp.getfilesize)() >= 10000000 and (mp.getfilesize)() <= 15000000 then
+if mp.HSTR_WEIGHT >= 2 and (hstrlog[1]).matched then
   return mp.INFECTED
 end
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
+;
+(mp.set_mpattribute)("HSTR:VirTool:Win64/Rovnix.C")
 return mp.CLEAN
 

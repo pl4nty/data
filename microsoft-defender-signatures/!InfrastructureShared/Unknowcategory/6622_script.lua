@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Social2Search.A")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr + 3, "\235")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\235")
+return mp.INFECTED
 

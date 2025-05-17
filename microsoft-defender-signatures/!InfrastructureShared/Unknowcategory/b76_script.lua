@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:GetNow")
+(mp.set_mpattribute)("MpNonPIIFileType")
 return mp.INFECTED
 

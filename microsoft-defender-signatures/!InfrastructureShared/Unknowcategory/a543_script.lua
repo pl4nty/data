@@ -3,21 +3,96 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)((hstrlog[1]).VA + 11, 4), 1), 4), 1)
-local l_0_1 = (pe.get_api_id)(l_0_0)
-do
-  if l_0_1 == 137326890 then
-    local l_0_2 = (mp.readu_u32)((pe.mmap_va)((hstrlog[1]).VA + 5, 4), 1)
-    if (mp.utf16to8)((pe.mmap_va)(l_0_2, 12)) == "12345\000" then
-      l_0_2 = (mp.readu_u32)((pe.mmap_va)((hstrlog[1]).VA + 16, 4), 1)
-      if (mp.utf16to8)((pe.mmap_va)(l_0_2, 14)) == "string\000" then
-        l_0_2 = (mp.readu_u32)((pe.mmap_va)((hstrlog[1]).VA + 27, 4), 1)
-        if (pe.mmap_va)(l_0_2, 6) == "12345\000" then
-          return mp.INFECTED
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 14, 96)
+local l_0_1 = (string.byte)(l_0_0, 1) + 2
+if #l_0_0 < l_0_1 then
+  return mp.CLEAN
+end
+if (string.byte)(l_0_0, l_0_1) == 232 then
+  local l_0_2 = 2
+  local l_0_3 = 0
+  while 1 do
+    while 1 do
+      while 1 do
+        while 1 do
+          while 1 do
+            while 1 do
+              while 1 do
+                while 1 do
+                  if l_0_2 < #l_0_0 then
+                    local l_0_4 = (string.byte)(l_0_0, l_0_2)
+                    if l_0_4 == 131 then
+                      l_0_2 = l_0_2 + 3
+                      -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                      -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
+
+                      -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                      -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
+
+                    end
+                  end
+                end
+                if l_0_4 == 61 then
+                  l_0_2 = l_0_2 + 5
+                  -- DECOMPILER ERROR at PC43: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                  -- DECOMPILER ERROR at PC43: LeaveBlock: unexpected jumping out IF_STMT
+
+                end
+              end
+              if l_0_4 == 195 then
+                l_0_2 = l_0_2 + 1
+                -- DECOMPILER ERROR at PC47: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC47: LeaveBlock: unexpected jumping out IF_STMT
+
+              end
+            end
+            if l_0_4 == 0 then
+              l_0_2 = l_0_2 + 2
+              -- DECOMPILER ERROR at PC51: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC51: LeaveBlock: unexpected jumping out IF_STMT
+
+            end
+          end
+          if l_0_4 == 15 and (string.byte)(l_0_0, l_0_2 + 1) == 132 then
+            l_0_2 = l_0_2 + 6
+            -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+        if l_0_4 == 204 then
+          do return mp.INFECTED end
+          -- DECOMPILER ERROR at PC68: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC68: LeaveBlock: unexpected jumping out IF_STMT
+
         end
       end
+      if l_0_4 == 116 then
+        if l_0_1 ~= (string.byte)(l_0_0, l_0_2 + 1) + (l_0_2) then
+          l_0_3 = l_0_3 + 1
+        end
+        if l_0_3 == 2 then
+          return mp.CLEAN
+        end
+        -- DECOMPILER ERROR at PC86: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+        -- DECOMPILER ERROR at PC86: LeaveBlock: unexpected jumping out IF_STMT
+
+      end
     end
+    return mp.CLEAN
   end
-  return mp.CLEAN
+end
+do
+  -- DECOMPILER ERROR at PC91: Overwrote pending register: R2 in 'AssignReg'
+
+  return l_0_2.CLEAN
 end
 

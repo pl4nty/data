@@ -3,57 +3,110 @@
 
 -- params : ...
 -- function num : 0
-scanRunKeysForShetram = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = (sysio.RegOpenKey)(l_1_0)
-  local l_1_2 = {}
-  l_1_2.cpuoptimizer = true
-  l_1_2.checkcpu = true
-  l_1_2.radlover = true
-  l_1_2.cpuulover = true
-  l_1_2.superlover = true
-  l_1_2.flaterem = true
-  l_1_2.strdat = true
-  l_1_2.newageishere = true
-  l_1_2.cpunewage = true
-  l_1_2.antishortcutupdate = true
-  l_1_2.antiusbshortcut = true
-  l_1_2.winddowsupdate = true
-  l_1_2.winddowsupdater = true
-  if l_1_1 ~= nil then
-    local l_1_3 = (sysio.RegEnumValues)(l_1_1)
-    for l_1_7,l_1_8 in pairs(l_1_3) do
-      if l_1_8 ~= nil and l_1_2[(string.lower)(l_1_8)] == true then
-        local l_1_9 = (string.lower)((sysio.GetRegValueAsString)(l_1_1, l_1_8))
-        if l_1_9 ~= nil then
-          for l_1_13 in (string.gmatch)(l_1_9, ".:\\[^%s\"\',:;]+") do
-            if (string.find)(l_1_13, "cmd.exe", 1, true) == nil and (string.find)(l_1_13, "windows\\system32\\", 1, true) == nil and ((string.find)(l_1_13, "cpufix.exe", 1, true) ~= nil or (string.find)(l_1_13, "cpuchecker.exe", 1, true) ~= nil or (string.find)(l_1_13, "streamer.exe", 1, true) ~= nil or (string.find)(l_1_13, "radnewage.exe", 1, true) ~= nil or (string.find)(l_1_13, "antiusb.exe", 1, true) ~= nil or (string.find)(l_1_13, "cpuage.tnt", 1, true) ~= nil or (string.find)(l_1_13, "cpuchecker.txt", 1, true) ~= nil or (string.find)(l_1_13, "stream.txt", 1, true) ~= nil or (string.find)(l_1_13, "newradage.tnt", 1, true) ~= nil or (string.find)(l_1_13, "antiusbshortcut.zip", 1, true) ~= nil or (string.find)(l_1_13, "winddowsupdater.exe", 1, true) ~= nil or (string.find)(l_1_13, "winddowsupdater.zip", 1, true) ~= nil) and (sysio.IsFileExists)(l_1_13) ~= nil then
-              (Remediation.BtrDeleteFile)(l_1_13)
+if epcode[1] ~= 104 then
+  return mp.CLEAN
+end
+local l_0_0 = pehdr.ImageBase
+if l_0_0 ~= 4194304 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readu_u32)(epcode, 2)
+if l_0_1 < l_0_0 then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.readfile)(l_0_1 - l_0_0, 52)
+if (mp.readu_u32)(l_0_2, 1) ~= 557138518 then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.readu_u32)(l_0_2, 45)
+local l_0_4 = (mp.readu_u32)(l_0_2, 49)
+if l_0_4 < l_0_0 then
+  return mp.CLEAN
+end
+local l_0_5 = (mp.readfile)(l_0_4 - l_0_0, 8)
+if (mp.readu_u32)(l_0_5, 1) ~= 500 then
+  return mp.CLEAN
+end
+local l_0_6 = (mp.readu_u32)(l_0_5, 5)
+if l_0_6 < l_0_0 then
+  return mp.CLEAN
+end
+local l_0_7 = (mp.readfile)(l_0_6 - l_0_0, 68)
+local l_0_8 = (mp.readu_u16)(l_0_7, 43)
+local l_0_9 = 0
+local l_0_10 = (mp.readu_u32)(l_0_7, 49)
+if l_0_10 < l_0_0 then
+  return mp.CLEAN
+end
+local l_0_13 = 50
+do
+  if l_0_8 <= l_0_13 then
+    local l_0_11, l_0_12 = false
+  end
+  for l_0_17 = 0, l_0_13 do
+    local l_0_14 = nil
+    -- DECOMPILER ERROR at PC116: Confused about usage of register: R16 in 'UnsetPending'
+
+    local l_0_19 = nil
+    if (mp.readu_u32)((mp.readfile)(l_0_10 - l_0_0 + R16_PC116 * 48, 32), 29) == 0 and not l_0_14 then
+      (mp.set_mpattribute)("Lua:VB.ObjectWithNoMethods")
+      l_0_14 = true
+    end
+    l_0_9 = l_0_9 + (mp.readu_u32)((mp.readfile)(l_0_10 - l_0_0 + R16_PC116 * 48, 32), 29)
+  end
+  local l_0_20 = nil
+  if l_0_3 - l_0_1 > 393216 then
+    (mp.set_mpattribute)("Lua:VB.SubMainDistanceGT_0x60000")
+  end
+  ;
+  (mp.set_mpattribute)("Lua:VB.TotalMethods:" .. tostring(l_0_9))
+  ;
+  (mp.set_mpattribute)("Lua:VB.TotalObjects:" .. tostring(l_0_8))
+  if l_0_9 >= 25 and l_0_9 <= 35 and (l_0_8 == 2 or l_0_8 == 3) and l_0_3 == 0 then
+    (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.A")
+  else
+    if l_0_9 >= 45 and l_0_9 <= 68 and (l_0_8 == 2 or l_0_8 == 3) and l_0_3 == 0 then
+      (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.B")
+    else
+      -- DECOMPILER ERROR at PC197: Confused about usage of register: R13 in 'UnsetPending'
+
+      if l_0_9 >= 38 and l_0_9 <= 68 and l_0_8 >= 2 and l_0_8 <= 5 and l_0_3 - l_0_1 > 393216 then
+        (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.C")
+      else
+        -- DECOMPILER ERROR at PC210: Confused about usage of register: R13 in 'UnsetPending'
+
+        if l_0_9 == 0 and l_0_8 >= 5 and l_0_8 <= 8 and l_0_3 - l_0_1 > 393216 then
+          (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.D")
+        else
+          if l_0_9 == 23 and l_0_8 == 2 and l_0_3 == 0 then
+            (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.E")
+          else
+            -- DECOMPILER ERROR at PC234: Confused about usage of register: R13 in 'UnsetPending'
+
+            if l_0_9 == 0 and (l_0_8 == 3 or l_0_8 == 4) and l_0_3 - l_0_1 > 413696 then
+              (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.F")
+            else
+              -- DECOMPILER ERROR at PC247: Confused about usage of register: R13 in 'UnsetPending'
+
+              if l_0_9 == 0 and l_0_8 >= 9 and l_0_8 <= 12 and l_0_3 - l_0_1 > 393216 then
+                (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.G")
+              else
+                if l_0_9 == 0 and l_0_8 >= 24 then
+                  (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.H")
+                else
+                  if l_0_9 == 147 and l_0_8 == 14 then
+                    (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.I")
+                  end
+                end
+              end
             end
-          end
-        end
-        do
-          do
-            ;
-            (Remediation.BtrDeleteRegValue)(l_1_0 .. "\\\\" .. l_1_8)
-            -- DECOMPILER ERROR at PC198: LeaveBlock: unexpected jumping out DO_STMT
-
-            -- DECOMPILER ERROR at PC198: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC198: LeaveBlock: unexpected jumping out IF_STMT
-
           end
         end
       end
     end
   end
-end
-
-if (string.match)((string.lower)((Remediation.Threat).Name), "shetram") then
-  scanRunKeysForShetram("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
-  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    scanRunKeysForShetram(l_0_5)
-  end
+  return mp.CLEAN
 end
 

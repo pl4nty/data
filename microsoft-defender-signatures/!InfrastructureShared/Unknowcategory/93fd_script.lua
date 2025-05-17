@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 8 then
-  return mp.INFECTED
+do
+  if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll == true and peattributes.hasexports and peattributes.no_imports then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 >= 80000 and l_0_0 <= 250000 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("HSTR:BrowserModifier:Win32/Iminent.A!Cby")
-end
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-return mp.CLEAN
 

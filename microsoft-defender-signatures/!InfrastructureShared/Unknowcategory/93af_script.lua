@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -13))
-if (string.find)(l_0_0, "\\services.exe", 1, true) or (string.find)(l_0_0, "\\svchost.exe", 1, true) then
+if mp.HSTR_WEIGHT >= 2 then
   return mp.INFECTED
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_swiminen")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_swiminen")
 end
 return mp.CLEAN
 

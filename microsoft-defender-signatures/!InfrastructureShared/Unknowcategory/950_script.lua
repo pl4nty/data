@@ -3,32 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 1024 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-  if l_0_1 ~= nil and l_0_1:sub(1, 9) == "flashutil" then
-    local l_0_2 = false
-    local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if l_0_3 ~= nil and l_0_3:len() > 15 and l_0_3:find("\\spool\\printers", 1, true) ~= nil then
-      l_0_2 = true
-    end
-    if not l_0_2 then
-      if (mp.readu_u16)(headerpage, 9) == 0 then
-        (mp.set_mpattribute)("Lua:ContextZIPNoCompressionFlashDrop.A")
-      else
-        ;
-        (mp.set_mpattribute)("Lua:ContextZIPFlashDrop.A")
+if (mp.get_mpattribute)("SCRIPT:Worm:JS/Bondat!lnk") and (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
+  local l_0_0 = tostring(headerpage)
+  do
+    if l_0_0:match("/c start wscript \"(%.Trashes\\%d+\\%l+%.js)\" &") == nil then
+      local l_0_1 = l_0_0:match("/c start wscript%.exe \"(%.Trashes\\%d+\\%l+%.js)\" &")
+      if l_0_1 == nil then
+        return mp.CLEAN
       end
     end
+    local l_0_2 = nil
+    do
+      local l_0_3 = nil
+      if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN or (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+        l_0_3 = (MpCommon.PathToWin32Path)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+      end
+      if l_0_3 == nil then
+        l_0_3 = ((mp.getfilename)()):match("(.+)\\[^\\]+$")
+      end
+      if l_0_3 == nil then
+        return mp.CLEAN
+      end
+      ;
+      (mp.ReportLowfi)(l_0_3 .. "\\" .. l_0_2, 2916175846)
+      return mp.CLEAN
+    end
   end
-end
-do
-  return mp.CLEAN
 end
 

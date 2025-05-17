@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:AirInstaller")
+(mp.set_mpattribute)("SCRIPT:StrConcat!obfus")
 return mp.INFECTED
 

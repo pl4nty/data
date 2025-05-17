@@ -3,11 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.isexe ~= true then
+  return mp.CLEAN
 end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if peattributes.hasappendeddata ~= true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 3 then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() ~= 72706 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

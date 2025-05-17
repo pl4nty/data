@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 1048576 then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:len() < 6 then
   return mp.CLEAN
 end
-if #(mp.enum_mpattributesubstring)("SCPT:BelmontK") >= 3 then
+if (string.sub)(l_0_0, -5) == "..wsf" then
   return mp.INFECTED
-else
-  return mp.CLEAN
 end
 return mp.CLEAN
 

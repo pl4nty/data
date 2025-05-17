@@ -3,35 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (MpCommon.NidSearch)(mp.NID_DISABLE_NW_REPORTING, 1) then
-  return mp.CLEAN
-end
--- DECOMPILER ERROR at PC26: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
-if (MpCommon.NidSearch)(mp.NID_ENABLE_NW_REPORTING, 1) then
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-    if l_0_0 ~= nil then
-      local l_0_1 = nil
-      if (string.match)(l_0_0, "^\"%z[^\"]*\"%z") ~= nil then
-        l_0_1 = (string.gsub)((string.match)(l_0_0, "\"%z[^\"]*\"%z"), "\"%z", "")
-      else
-        if (string.match)(l_0_0, "%.%ze%zx%ze%z") ~= nil then
-          l_0_1 = (string.match)(l_0_0, "%.%ze%zx%ze%z")
-        else
-          if (string.match)((string.lower)(l_0_0), "%.%zd%zl%zl%z") ~= nil then
-            l_0_1 = (string.match)(l_0_0, "%.%zd%zl%zl%z")
-          end
-        end
-      end
-      if l_0_1 ~= nil then
-        (mp.ReportLowfi)(l_0_1, 1795012340)
+if (this_sigattrlog[3]).matched then
+  local l_0_0 = nil
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and (string.find)(l_0_0, " copy ", 1, true) and (string.find)(l_0_0, "\\windows\\temp\\", 1, true) and ((string.find)(l_0_0, "\\share$\\", 1, true) or (string.find)(l_0_0, " \\\\", 1, true) or (string.find)(l_0_0, " \"\"\\\\", 1, true)) then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    if l_0_1 ~= nil then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+        ;
+        (bm.add_related_file)(l_0_6)
       end
     end
-  end
-  do
-    do return mp.INFECTED end
-    return mp.CLEAN
+    do
+      do
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
+    end
   end
 end
 

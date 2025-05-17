@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 1048576 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 <= 300 or l_0_0 > 600000 then
   return mp.CLEAN
 end
-if #(mp.enum_mpattributesubstring)("SCPT:CVE-2019-1652-A") >= 10 and #(mp.enum_mpattributesubstring)("SCPT:CVE-2019-1653-") >= 3 then
+local l_0_1 = (string.lower)((mp.getfilename)())
+if l_0_1 ~= nil and (l_0_1:match("%->.+/") or l_0_1:match("%->.+\\") or l_0_1:match("%->.+%->")) then
   return mp.INFECTED
-else
-  return mp.CLEAN
 end
 return mp.CLEAN
 

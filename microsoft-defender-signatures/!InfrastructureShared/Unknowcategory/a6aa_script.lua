@@ -3,73 +3,26 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
+local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
+local l_0_1 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, 4), 1)
+local l_0_2 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0 - 16, 4), 1)
+local l_0_3 = 0
+if l_0_0 == 104 then
+  l_0_3 = 32
+else
+  if l_0_0 == 88 then
+    l_0_3 = 16
   else
-  end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1 = (this_sigattrlog[3]).utf8p1
-    else
-    end
-    -- DECOMPILER ERROR at PC43: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
-        local l_0_2 = (this_sigattrlog[5]).utf8p1
-      else
-      end
-      -- DECOMPILER ERROR at PC61: Overwrote pending register: R0 in 'AssignReg'
-
-      do
-        if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
-          local l_0_3 = (this_sigattrlog[7]).utf8p1
-        else
-        end
-        -- DECOMPILER ERROR at PC79: Overwrote pending register: R0 in 'AssignReg'
-
-        do
-          if not (this_sigattrlog[9]).matched or (this_sigattrlog[10]).matched then
-            local l_0_4 = (this_sigattrlog[9]).utf8p1
-          end
-          -- DECOMPILER ERROR at PC80: Confused about usage of register: R0 in 'UnsetPending'
-
-          if l_0_4 == nil then
-            return mp.CLEAN
-          end
-          -- DECOMPILER ERROR at PC87: Confused about usage of register: R0 in 'UnsetPending'
-
-          local l_0_5 = (string.lower)(l_0_4)
-          -- DECOMPILER ERROR at PC101: Overwrote pending register: R2 in 'AssignReg'
-
-          do
-            if (this_sigattrlog[11]).matched then
-              local l_0_7 = nil
-            end
-            if l_0_5 ~= nil and nil ~= nil then
-              local l_0_6 = (string.match)(l_0_5, "\\([^\\]+)$")
-              -- DECOMPILER ERROR at PC120: Confused about usage of register: R2 in 'UnsetPending'
-
-              if l_0_6:sub(1, 2) == "ms" then
-                local l_0_8 = (string.match)(nil, "\\([^\\]+)$")
-                if l_0_6 == l_0_8 then
-                  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_5), 4199551960)
-                  return mp.INFECTED
-                end
-              end
-            end
-            do
-              return mp.CLEAN
-            end
-          end
-        end
-      end
-    end
+    return mp.CLEAN
   end
 end
+local l_0_4 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0 + l_0_3, 4), 1)
+if l_0_4 ~= 4096 and l_0_4 ~= 4097 then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (mp.bitand)((mp.shr32)(l_0_1, 2), 255), (mp.bitand)((mp.shr32)(l_0_2, 2), 255)))
+;
+(mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!l1_cnt_%08X", l_0_4))
+return mp.INFECTED
 

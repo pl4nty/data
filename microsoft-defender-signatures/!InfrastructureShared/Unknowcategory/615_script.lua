@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (this_sigattrlog[1]).utf8p1
-    if l_0_0 ~= nil and (string.len)(l_0_0) > 4 and (string.sub)(l_0_0, -4) == ".lnk" then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\program files", 1, true) then
   return mp.CLEAN
 end
+;
+(mp.ReportLowfi)(l_0_0, 1160269835)
+return mp.INFECTED
 

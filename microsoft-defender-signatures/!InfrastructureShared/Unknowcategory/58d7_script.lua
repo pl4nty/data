@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[6]).matched or (hstrlog[7]).matched then
-  return mp.INFECTED
+if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

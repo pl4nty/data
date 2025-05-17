@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() < 2000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

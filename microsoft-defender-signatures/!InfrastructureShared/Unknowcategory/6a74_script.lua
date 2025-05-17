@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 307200 and l_0_0 <= 512000 then
+if peattributes.no_security == true and l_0_0 >= 204800 and l_0_0 <= 460800 then
   return mp.INFECTED
 end
 return mp.CLEAN

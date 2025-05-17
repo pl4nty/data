@@ -3,29 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-if (this_sigattrlog[5]).matched then
-  l_0_2 = (this_sigattrlog[5]).image_path
-else
-  if (this_sigattrlog[6]).matched then
-    l_0_2 = (this_sigattrlog[6]).image_path
+if (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
+  local l_0_0 = (mp.GetBruteMatchData)()
+  if l_0_0.match_offset ~= 0 then
+    return mp.CLEAN
   end
-end
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    if l_0_7.image_path == l_0_2 then
-      local l_0_8, l_0_9 = (string.match)(l_0_7.ppid, "pid:(%w+),ProcessStart:(%w+)")
-      local l_0_10 = tonumber(l_0_8)
-      local l_0_11 = tonumber(l_0_9)
-      local l_0_12, l_0_13 = (mp.bsplit)(l_0_11, 32)
-      local l_0_14 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_10, l_0_12, l_0_13)
+  if l_0_0.is_header then
+    local l_0_1 = (mp.getfilesize)()
+    do
+      if l_0_1 < 256 then
+        local l_0_2, l_0_3, l_0_4 = l_0_1
+      end
       ;
-      (mp.TriggerScanResource)("ems", l_0_14)
+      (mp.readprotection)(false)
+      -- DECOMPILER ERROR at PC32: Confused about usage of register: R2 in 'UnsetPending'
+
+      local l_0_5 = nil
+      do
+        local l_0_6 = nil
+        if (((mp.readfile)(l_0_0.match_offset, l_0_2)):lower()):match("%.%.\\%.%.\\%.%.\\%.%.\\%.%.\\%l+\\%w+%.exe%s\"(%w:\\users\\[^\\]+\\appdata\\roaming\\%l+\\%l+%.js)\"") ~= nil then
+          (mp.ReportLowfi)((((mp.readfile)(l_0_0.match_offset, l_0_2)):lower()):match("%.%.\\%.%.\\%.%.\\%.%.\\%.%.\\%l+\\%w+%.exe%s\"(%w:\\users\\[^\\]+\\appdata\\roaming\\%l+\\%l+%.js)\""), 2148319275)
+          return mp.INFECTED
+        end
+        return mp.CLEAN
+      end
     end
   end
-end
-do
-  return mp.INFECTED
 end
 

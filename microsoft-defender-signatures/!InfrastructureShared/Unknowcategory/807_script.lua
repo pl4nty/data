@@ -3,23 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = false
-for l_0_4,l_0_5 in pairs((Remediation.Threat).Resources) do
-  if l_0_5.Schema == "file" and (string.match)((Remediation.Threat).Name, "BrobanLaw") then
-    l_0_0 = true
-    break
-  end
+if not peattributes.isdll then
+  return mp.CLEAN
 end
+if peattributes.no_exports then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (pe.get_exports)()
 do
-  if l_0_0 then
-    local l_0_6 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\AXSPH")
-    if l_0_6 then
-      (sysio.DeleteRegKey)(l_0_6, nil)
+  if l_0_0 == 1 then
+    local l_0_2 = (pe.mmap_string_rva)((l_0_1[1]).namerva, 64)
+    if l_0_2 == nil then
+      return mp.CLEAN
     end
-    local l_0_7 = (sysio.RegOpenKey)("HKCU\\SOFTWARE\\fgiusji")
-    if l_0_7 then
-      (sysio.DeleteRegKey)(l_0_7, nil)
+    if (string.lower)(l_0_2) == "powershell_reflective_mimikatz" then
+      return mp.INFECTED
     end
   end
+  return mp.CLEAN
 end
 

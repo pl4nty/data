@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_isexe") then
-    local l_0_0 = (pe.get_versioninfo)()
-    if l_0_0 and l_0_0.CompanyName == "Microsoft Corporation" and l_0_0.FileDescription == "Azure Batch Service Manager" and l_0_0.LegalCopyright == "Microsoft Corporation" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_hstr_exhaustive") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
+else
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.no_security == true then
+if (hstrlog[4]).matched and (hstrlog[5]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

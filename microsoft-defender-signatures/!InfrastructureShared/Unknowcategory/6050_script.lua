@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Glims")
+if peattributes.no_security == true and (mp.getfilesize)() < 2500000 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

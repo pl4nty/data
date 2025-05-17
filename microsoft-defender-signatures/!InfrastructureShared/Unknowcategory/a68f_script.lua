@@ -3,27 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_PDF_FILE") and not (mp.get_mpattribute)("MpInternal_IsPliScan") and not (mp.get_mpattribute)("MpAlwaysLowfiMatch") and not (mp.get_mpattribute)("Lua:Guid.1") and not (mp.get_mpattribute)("//Lua:ContextFromWebmail") and not (mp.get_mpattribute)("//Lua:ContextualDropFileByEmailClient") then
-  local l_0_0 = (mp.GetBruteMatchData)()
-  local l_0_1 = l_0_0.match_offset + 1
-  local l_0_2 = 128
-  local l_0_3 = ""
-  if l_0_0.is_header then
-    l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
-  else
-    l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
+checkPossibleEncoded = function(l_1_0, l_1_1, l_1_2)
+  -- function num : 0_0
+  for l_1_6 in l_1_0:gmatch(l_1_1) do
+    if l_1_2 <= (string.len)(l_1_6) then
+      return true
+    end
   end
-  local l_0_4, l_0_5 = l_0_3:find("http", 1, true)
-  if l_0_5 ~= nil then
-    l_0_3 = l_0_3:sub(l_0_5 - 3, l_0_2 - l_0_5)
-    local l_0_6, l_0_7 = l_0_3:find(")", 1, true)
-    if l_0_7 ~= nil then
-      (mp.vfo_add_buffer)(l_0_3:sub(1, l_0_7 - 1), "[pdfuri2rdata]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  return false
+end
+
+local l_0_0 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  l_0_0 = (this_sigattrlog[1]).utf8p2
+else
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    l_0_0 = (this_sigattrlog[2]).utf8p2
+  end
+end
+l_0_0 = (string.lower)(l_0_0)
+if (string.len)(l_0_0) < 2048 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "%.ps1") then
+  return mp.CLEAN
+end
+do
+  if checkPossibleEncoded(l_0_0, "%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w+", 2048) then
+    local l_0_1, l_0_2 = (string.match)(l_0_0, " ([-/]wi?n?d?o?w?s?s?t?y?l?e?)%s+(%w+)%s")
+    if l_0_2 == "1" or (string.find)(l_0_2, "^hi") then
+      (bm.add_action)("EmsScan", 5000)
       return mp.INFECTED
     end
   end
-end
-do
   return mp.CLEAN
 end
 

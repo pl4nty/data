@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if #(mp.enum_mpattributesubstring)("SCPT:SnukbunC") >= 2 then
+if #(mp.enum_mpattributesubstring)("SCPT:Scryper") >= 2 then
   return mp.INFECTED
 end
 return mp.CLEAN

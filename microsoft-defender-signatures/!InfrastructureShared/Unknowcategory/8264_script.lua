@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 327680 and (mp.getfilesize)() < 557056 then
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
+else
+  if (mp.get_mpattribute)("MHSTR:MacroDownload") and (mp.get_mpattribute)("MHSTR:MacroJustOpen") then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,14 +3,29 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator!InstalleRex") or (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator!InstalleRex.B") or (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator!InstalleRex.C") or (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator!InstalleRex.D") then
-    local l_0_0 = (string.lower)((mp.getfilename)())
-    if (string.sub)(l_0_0, -4) == ".exe" and ((string.find)(l_0_0, "\\temp\\", 1, true) or (string.find)(l_0_0, "\\downloads\\", 1, true) or (string.match)(l_0_0, "\\all users\\application data\\{%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x}") or (string.match)(l_0_0, "\\programdata\\{%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x}")) then
-      (mp.set_mpattribute)("PUA:Block:InstalleRex")
-      return mp.INFECTED
-    end
+if (this_sigattrlog[3]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
+  if (string.find)(l_0_0, "\\werfault.exe\\\\debugger", 1, true) or (string.find)(l_0_0, "\\osppsvc.exe\\\\debugger", 1, true) or (string.find)(l_0_0, "\\sppextcomobj.exe\\\\debugger", 1, true) then
+    return mp.CLEAN
   end
+  local l_0_1 = (this_sigattrlog[3]).utf8p2
+  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
+    l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
+    if not (sysio.IsFileExists)(l_0_1) then
+      l_0_1 = (string.lower)((bm.get_imagepath)())
+    end
+    l_0_1 = (string.lower)(l_0_1)
+    if (string.find)(l_0_1, "awdump.exe", 1, true) or (string.find)(l_0_1, "awdumpifeo.exe", 1, true) or (string.find)(l_0_1, "AppDeployToolkit_BlockAppExecutionMessage.vbs", 1, true) then
+      return mp.CLEAN
+    end
+    ;
+    (mp.ReportLowfi)(l_0_1, 794607441)
+    ;
+    (bm.add_related_file)(l_0_1)
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
 

@@ -3,39 +3,36 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10 = nil
+local l_0_0 = false
+local l_0_1 = false
+local l_0_2 = nil
+local l_0_3, l_0_4 = (bm.get_process_relationships)()
+for l_0_8,l_0_9 in ipairs(l_0_3) do
+  l_0_2 = l_0_9.ppid
+  local l_0_10, l_0_11 = (bm.get_process_relationships)(l_0_2)
+  for l_0_15,l_0_16 in ipairs(l_0_10) do
+    if l_0_16.image_path ~= nil then
+      local l_0_17 = (string.lower)((MpCommon.PathToWin32Path)(l_0_16.image_path))
+      if not (string.find)(l_0_17, "\\wordpad.exe", -12, true) then
+        local l_0_18 = l_0_16.ppid
+        if (sysio.IsFileExists)(l_0_17) and not (mp.IsKnownFriendlyFile)(l_0_17, true, false) then
+          (bm.add_related_file)(l_0_17)
+          ;
+          (bm.request_SMS)(l_0_18, "m+")
+          l_0_0 = true
+        end
+      end
+    end
   end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC67: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC76: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC85: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC94: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC103: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and ((string.find)(l_0_0, " whoami", 1, true) or (string.find)(l_0_0, " quser", 1, true) or (string.find)(l_0_0, " type ", 1, true) or (string.find)(l_0_0, " nltest", 1, true) or (string.find)(l_0_0, " echo ", 1, true) or (string.find)(l_0_0, "net user", 1, true) or (string.find)(l_0_0, "net1 user", 1, true) or (string.find)(l_0_0, "systeminfo", 1, true) or (string.find)(l_0_0, "netlogon", 1, true) or (string.find)(l_0_0, "attackiq wmi", 1, true)) then
-    return mp.INFECTED
+  if not (MpCommon.IsFriendlyProcess)(l_0_2) then
+    (bm.add_related_process)(l_0_2)
+    ;
+    (bm.request_SMS)(l_0_2, "m+")
+    l_0_1 = true
   end
-  return mp.CLEAN
 end
+if l_0_0 == false and l_0_3 ~= nil and l_0_1 == false then
+  (bm.request_SMS)(l_0_2, "m+")
+end
+return mp.INFECTED
 

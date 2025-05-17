@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -10) == "chrome.exe" then
+if (string.lower)((string.sub)((bm.get_imagepath)(), -12)) == "\\svchost.exe" then
   return mp.CLEAN
 end
 return mp.INFECTED

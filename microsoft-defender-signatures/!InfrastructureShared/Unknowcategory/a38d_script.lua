@@ -3,22 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetSSLCertificate)()
-local l_0_1 = {}
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if l_0_0 then
-    local l_0_2 = {}
-    l_0_2.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-    l_0_2.Subject = l_0_0.Subject
-    l_0_2.Issuer = l_0_0.Issuer
-    l_0_2.ValidFrom = l_0_0.ValidFrom
-    l_0_2.ValidTo = l_0_0.ValidTo
-    l_0_2.FingerprintSha1 = l_0_0.FingerprintSha1
-    l_0_2.FingerprintSha256 = l_0_0.FingerprintSha256
-    l_0_1 = l_0_2
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+  else
   end
-  ;
-  (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_1)
-  return mp.INFECTED
+  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = (string.lower)((this_sigattrlog[3]).utf8p1)
+    end
+    -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC51: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil and (string.find)(l_0_1, "\\wwwroot\\", 1, true) then
+      (mp.ReportLowfi)(l_0_1, 3277719387)
+      -- DECOMPILER ERROR at PC56: Confused about usage of register: R0 in 'UnsetPending'
+
+      ;
+      (bm.add_related_file)(l_0_1)
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 

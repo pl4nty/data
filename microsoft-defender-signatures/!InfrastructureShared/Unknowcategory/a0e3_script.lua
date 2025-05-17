@@ -3,18 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if elfhdr.type ~= 2 and elfhdr.type ~= 3 then
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 13, 4)
+if (string.find)(l_0_0, "­‹\240", 1, true) ~= nil then
+  local l_0_1 = (string.find)(l_0_0, "\1396", 1, true)
+  if l_0_1 ~= nil then
+    local l_0_2 = 44 + 1 + 2
+  else
+    do
+      do
+        do return mp.LOWFI end
+        -- DECOMPILER ERROR at PC38: Confused about usage of register: R2 in 'UnsetPending'
+
+        ;
+        (pe.mmap_patch_va)(pevars.sigaddr + l_0_2, ")öë ")
+        return mp.CLEAN
+      end
+    end
+  end
 end
-if elfhdr.phnum ~= 3 or elfhdr.shnum ~= 0 then
-  return mp.CLEAN
-end
-local l_0_0 = 1
-local l_0_1 = 62
-local l_0_2 = 3
-local l_0_3 = elfhdr.ident
-if (string.byte)(l_0_3, 6) ~= l_0_0 or elfhdr.machine ~= l_0_1 and elfhdr.machine ~= l_0_2 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

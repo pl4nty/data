@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[3]).Name == "@5E4^ " then
+if (mp.get_mpattribute)("//RPF:IS_Pdf") then
   return mp.INFECTED
 end
 return mp.CLEAN

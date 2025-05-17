@@ -3,13 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0.command_line)
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, true, false) then
-    (bm.add_related_file)(l_0_6)
-    return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if (string.find)(l_0_0, ".htaccess", 1, true) then
+      return mp.CLEAN
+    end
+    if (sysio.IsFileExists)(l_0_0) then
+      (bm.add_related_file)(l_0_0)
+    end
   end
+  return mp.INFECTED
 end
-return mp.CLEAN
 

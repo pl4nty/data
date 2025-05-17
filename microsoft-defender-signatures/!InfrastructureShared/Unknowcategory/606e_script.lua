@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:ASPXExt") or (mp.get_mpattribute)("Lua:ASPExt") then
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData == 0 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -4,19 +4,25 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  if (string.len)(l_0_2) == 15 and (string.sub)(l_0_2, -4) == ".exe" and ((string.sub)(l_0_1, -19) == "\\appdata\\local\\temp" or (string.sub)(l_0_1, -20) == "\\local settings\\temp") then
-    if (string.match)(l_0_2, "%l%l%l%l%l%l%l%l%l%l%l") == nil and (string.match)(l_0_2, "%u%u%u%u%u%u%u%u%u%u%u") == nil then
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  if (mp.getfilesize)() > 350000 then
+    return mp.CLEAN
+  end
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+  if l_0_1 == nil then
+    return mp.CLEAN
+  end
+  l_0_1 = (string.lower)(l_0_1)
+  if l_0_1 == "excel.exe" or l_0_1 == "winword.exe" or l_0_1 == "powerpnt.exe" then
+    local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+    if l_0_2 == nil then
       return mp.CLEAN
     end
-    local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-    if l_0_3 == "excel.exe" or l_0_3 == "winword.exe" then
-      (mp.set_mpattribute)("Lua:AdnelProcessFilename.A")
-    else
-      ;
-      (mp.set_mpattribute)("Lua:AdnelFilename.A")
+    l_0_2 = (string.lower)(l_0_2)
+    local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+    local l_0_4 = (string.sub)(l_0_3, -4)
+    if (l_0_4 == ".exe" or l_0_4 == ".scr" or l_0_4 == ".pif") and ((string.sub)(l_0_2, -19) == "\\appdata\\local\\temp" or (string.sub)(l_0_2, -20) == "\\local settings\\temp") then
+      (mp.set_mpattribute)("Lua:ContextualDropOfficeTmpExe.B")
     end
   end
 end

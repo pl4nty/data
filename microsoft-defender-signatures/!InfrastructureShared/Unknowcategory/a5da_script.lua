@@ -3,25 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 54, 4)
-l_0_0 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(l_0_0, 4)
-l_0_0 = (mp.readu_u32)(l_0_0, 1)
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + 23, 4)
-l_0_1 = (mp.readu_u32)(l_0_1, 1)
-l_0_1 = (mp.bitxor)(l_0_1, l_0_0)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 21, "\191")
-local l_0_2, l_0_3, l_0_4, l_0_5 = (mp.bsplit)(l_0_1, 8)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 22, (string.char)(l_0_2))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 23, (string.char)(l_0_3))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 24, (string.char)(l_0_4))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 25, (string.char)(l_0_5))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 26, "êêêê")
-return mp.INFECTED
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if (string.find)(l_0_0, ".aspx", -5, true) and ((string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\frontend\\") ~= nil or (string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\clientaccess\\") ~= nil or (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\v%d%d\\template\\layouts\\") ~= nil or (string.find)(l_0_0, "\\frontend\\httpproxy\\owa\\", 1, true) ~= nil or (string.find)(l_0_0, "\\inetpub\\wwwroot\\", 1, true) ~= nil) then
+  (mp.ReportLowfi)(l_0_0, 1638888637)
+  return mp.INFECTED
+end
+return mp.CLEAN
 

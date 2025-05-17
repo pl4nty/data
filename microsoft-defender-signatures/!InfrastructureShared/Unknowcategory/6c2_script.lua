@@ -3,31 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-    local l_0_1 = ((string.lower)((bm.get_imagepath)()))
-    local l_0_2 = nil
-    if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
-      l_0_2 = (string.match)(l_0_1, "(.-)[^\\]-[^\\%.]+$")
-    end
-    for l_0_6 in (string.gmatch)(l_0_0, "%S+") do
-      if (sysio.IsFileExists)(l_0_6) then
-        (bm.add_related_file)(l_0_6)
-      else
-        if l_0_2 ~= nil and (string.len)(l_0_2) > 3 then
-          local l_0_7 = l_0_2 .. l_0_6
-          if (sysio.IsFileExists)(l_0_7) then
-            (bm.add_related_file)(l_0_6)
-          end
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched then
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (this_sigattrlog[2]).utf8p2 ~= nil then
+      local l_0_4 = nil
+      for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+        local l_0_5 = nil
+        -- DECOMPILER ERROR at PC31: Confused about usage of register: R6 in 'UnsetPending'
+
+        if R6_PC31:len() > 12 and (string.lower)((string.sub)(R6_PC31, -12)) ~= "regsvr32.exe" and (sysio.IsFileExists)(R6_PC31) then
+          (bm.add_related_file)(R6_PC31)
         end
       end
     end
+    do
+      return mp.INFECTED
+    end
   end
-end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
 end
 

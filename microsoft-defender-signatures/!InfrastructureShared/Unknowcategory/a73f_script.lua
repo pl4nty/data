@@ -3,42 +3,16 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or (hstrlog[17]).matched or (hstrlog[18]).matched or (hstrlog[19]).matched then
-    local l_0_0, l_0_1 = 0 + 1
-  end
-  -- DECOMPILER ERROR at PC51: Confused about usage of register: R0 in 'UnsetPending'
-
-  if mp.HSTR_WEIGHT == 1 then
-    if l_0_0 == 1 then
-      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ALT1")
-      return mp.CLEAN
-    end
-    ;
-    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ALT2")
+if peattributes.is_process then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections > 0 and epcode[1] == 72 and epcode[2] == 131 and epcode[3] == 236 and epcode[5] == 232 and epcode[11] == 131 and epcode[12] == 196 and epcode[13] == 40 and epcode[14] == 233 and (pesecs[1]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" then
+  if (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= 1024 then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC117: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if (hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched then
-      local l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = l_0_0 + 1
-    end
-    -- DECOMPILER ERROR at PC118: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_2 == 2 then
-      if not (mp.get_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.3") then
-        (pe.set_peattribute)("disable_apicall_limit", true)
-        ;
-        (mp.set_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.3")
-        ;
-        (pe.reemulate)()
-      end
-      return mp.INFECTED
-    end
-    ;
-    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ALT3")
-    return mp.CLEAN
+  if (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_lastscn_writable") and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_lastscn_vfalign") and (pesecs[pehdr.NumberOfSections]).SizeOfRawData + 4096 == (pesecs[pehdr.NumberOfSections]).VirtualSize and (pesecs[pehdr.NumberOfSections]).VirtualSize % 4096 == 0 then
+    return mp.INFECTED
   end
 end
+return mp.CLEAN
 

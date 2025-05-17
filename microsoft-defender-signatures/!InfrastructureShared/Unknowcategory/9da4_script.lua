@@ -3,14 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = (string.lower)(l_0_6.image_path)
-    if (string.find)(l_0_7, "rundll32.exe", 1, true) or (string.find)(l_0_7, "regsvr32.exe", 1, true) then
-      return mp.INFECTED
+if peattributes.isexe == true and (mp.getfilesize)() > 1700000 and (mp.getfilesize)() < 4800000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
     end
   end
 end
-return mp.CLEAN
+do
+  l_0_0 = pe
+  l_0_0 = l_0_0.get_versioninfo
+  l_0_0 = l_0_0()
+  if l_0_0 == nil then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

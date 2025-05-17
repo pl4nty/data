@@ -3,18 +3,39 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if l_0_0 == mp.SCANREASON_AMSI then
-    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-    if not l_0_1 then
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_2, l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2), (bm.get_process_relationships)()
+    if l_0_3 == nil then
       return mp.CLEAN
     end
-    l_0_1 = (string.lower)(l_0_1)
-    if l_0_1:find("ccmexec.exe", 1, true) or l_0_1:find("tiworker.exe", 1, true) or l_0_1:find("taniumclient.exe", 1, true) or l_0_1:find("lansweeperservice.exe", 1, true) or l_0_1:find("rg_supervision.exe", 1, true) or l_0_1:find("svchost.exe", 1, true) or l_0_1:find("wscript.exe", 1, true) or l_0_1:find("cscript.exe", 1, true) or l_0_1:find("taniumcx.exe", 1, true) then
+    for l_0_7,l_0_8 in ipairs(l_0_3) do
+      local l_0_4 = nil
+      -- DECOMPILER ERROR at PC46: Confused about usage of register: R7 in 'UnsetPending'
+
+      if R7_PC46.image_path ~= nil and (string.lower)((string.match)(R7_PC46.image_path, "\\([^\\]+)$")) == "msiexec.exe" then
+        return mp.CLEAN
+      end
+    end
+    if l_0_2 ~= nil then
+      local l_0_9 = nil
+      for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
+        local l_0_10 = nil
+        -- DECOMPILER ERROR at PC87: Confused about usage of register: R8 in 'UnsetPending'
+
+        if (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)((string.lower)((string.match)(R7_PC46.image_path, "\\([^\\]+)$")))) == true then
+          (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((string.lower)((string.match)(R7_PC46.image_path, "\\([^\\]+)$"))))
+        end
+      end
+    end
+    do
       return mp.INFECTED
     end
   end
-  return mp.CLEAN
 end
 

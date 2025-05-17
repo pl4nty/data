@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:FileSizeGT1M.A") then
+if (mp.get_mpattribute)("SCRIPT:scripthasexe") then
   return mp.INFECTED
 end
 return mp.CLEAN

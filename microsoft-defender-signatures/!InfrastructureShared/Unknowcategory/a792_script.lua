@@ -3,67 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1200000 or l_0_0 < 4000 then
-  return mp.CLEAN
+local l_0_0 = (pe.get_regval)(pe.REG_ECX) - 1
+if l_0_0 > 1048576 then
+  return mp.INFECTED
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("kali", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("\\data\\exploits\\", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("metasploit", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("oxy", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("mtk-su", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("cve-20", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("supersu", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("strace", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("unlock", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("ctssecurity", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("\\so_rules\\precompiled\\", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("\\bin\\sys\\", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("android-ndk-r", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("llvmcache", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("\\toolchains\\llvm\\", 1, true) then
-  return mp.CLEAN
-end
-local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-local l_0_3 = ((string.sub)(l_0_2, -5)):match("(%.%w+)$")
-local l_0_4 = {}
-l_0_4[".ko"] = ""
-l_0_4[".dwo"] = ""
-l_0_4[".rc"] = ""
-if l_0_4[l_0_3] then
-  return mp.CLEAN
-end
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 128)
+local l_0_2 = (mp.readu_u32)(l_0_1, 112)
+local l_0_3 = (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1)
+local l_0_4 = (mp.readu_u32)(l_0_1, 35)
+local l_0_5 = (pe.mmap_va)(l_0_4, 256)
+local l_0_6 = (mp.readu_u32)(l_0_1, 45)
+local l_0_7 = (mp.readu_u32)((pe.mmap_va)(l_0_6, 4), 1)
+local l_0_8 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
+local l_0_9 = "\190\000\000\000\000\189\001\000\000\000âË@%\255\000\000\000â≈âÔäóN\002@\000\015∂ \003\rJ\002@\000Å·\255\000\000\000äôN\002@\000àëN\002@\000\137\rJ\002@\000àüN\002@\000\015∂âN\002@\000\015∂”\001—Å\225\255\000\000\000\015∂ôN\002@\000∏N\003@\0000\0280ÉÓ\001u°√\000\000\000\000"
+local l_0_10 = (pe.mmap_va)(l_0_3, l_0_0)
+local l_0_11 = l_0_8 .. l_0_9 .. l_0_5 .. l_0_10
+;
+(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 2, l_0_0)
+;
+(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 107, l_0_7)
+;
+(mp.vfo_add_buffer)(l_0_11, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 return mp.INFECTED
 

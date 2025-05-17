@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(MpDetection.ScanResource)("regkey://HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Internet Explorer\\Main\\\\Start Page")
-;
-(MpDetection.ScanResource)("regkey://HKEY_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\Main\\\\Start Page")
+if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 2) == true then
+  (mp.set_mpattribute)("Lua:MpEnableAggressiveSignatures")
+end
+return mp.CLEAN
 

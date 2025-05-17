@@ -3,36 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (l_0_0.find)(l_0_0, "\\clicktorun\\officeclicktorun.exe", 1, true) ~= nil then
-    return mp.CLEAN
-  end
+local l_0_3 = nil
+if ((bm.get_current_process_startup_info)()).integrity_level < MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+  return mp.CLEAN
 end
-local l_0_1, l_0_2 = nil, nil
-if (this_sigattrlog[1]).matched then
+if (this_sigattrlog[3]).matched then
+  l_0_3 = (string.lower)((this_sigattrlog[3]).utf8p1)
+  local l_0_0 = nil
+else
   do
-    if (this_sigattrlog[1]).utf8p2 ~= nil then
-      local l_0_3 = (this_sigattrlog[1]).utf8p2
-      if (sysio.IsFileExists)(l_0_3) then
-        if (mp.IsKnownFriendlyFile)(l_0_3, true, false) == true then
-          return mp.CLEAN
-        end
-        ;
-        (bm.add_related_file)(l_0_3)
+    if (this_sigattrlog[4]).matched then
+      l_0_3 = (string.lower)((this_sigattrlog[4]).utf8p1)
+    else
+      if (this_sigattrlog[5]).matched then
+        l_0_3 = (string.lower)((this_sigattrlog[5]).utf8p1)
+        local l_0_1, l_0_2 = nil
       end
     end
-    if (this_sigattrlog[1]).utf8p1 ~= nil then
-      l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    do
+      if l_0_3 ~= nil then
+        local l_0_4 = nil
+        local l_0_5 = (string.sub)(l_0_3, -4)
+        if (string.find)("|.asp|aspx|ashx|asmx|", l_0_5, 1, true) then
+          if (sysio.IsFileExists)(l_0_3) then
+            (bm.add_related_file)(l_0_3)
+          end
+          return mp.INFECTED
+        end
+      end
+      do
+        return mp.CLEAN
+      end
     end
-    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-      l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p2)
-    end
-    if l_0_1 ~= nil and l_0_2 ~= nil and (string.find)(l_0_1, l_0_2, 1, true) then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
   end
 end
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 13, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-return mp.INFECTED
+if (peattributes.isvbnative == true and pehdr.NumberOfSections == 3) or peattributes.no_security == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

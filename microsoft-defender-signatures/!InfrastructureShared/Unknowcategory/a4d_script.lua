@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil and (string.find)(l_0_0.image_path, "java", -4, true) then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if #(mp.GetProcessCommandLine)(l_0_0) > 200 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

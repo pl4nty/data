@@ -3,41 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_relocs ~= false then
+checkPossibleEncoded = function(l_1_0, l_1_1, l_1_2)
+  -- function num : 0_0
+  for l_1_6 in l_1_0:gmatch(l_1_1) do
+    if l_1_2 <= (string.len)(l_1_6) then
+      return true
+    end
+  end
+  return false
+end
+
+local l_0_0 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  l_0_0 = (this_sigattrlog[1]).utf8p2
+else
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    l_0_0 = (this_sigattrlog[2]).utf8p2
+  end
+end
+l_0_0 = (string.lower)(l_0_0)
+if (string.len)(l_0_0) < 2048 then
   return mp.CLEAN
 end
-if peattributes.isdll ~= true then
+if (string.find)(l_0_0, "%.ps1") then
   return mp.CLEAN
 end
-if peattributes.hasexports == true then
+do
+  if checkPossibleEncoded(l_0_0, "%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w+", 2048) then
+    local l_0_1, l_0_2 = (string.match)(l_0_0, " ([-/]wi?n?d?o?w?s?s?t?y?l?e?)%s+(%w+)%s")
+    if l_0_2 == "1" or (string.find)(l_0_2, "^hi") then
+      (bm.add_action)("EmsScan", 5000)
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW == 1920168494 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size == 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).Size < 8 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[6]).RVA), 16)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) ~= 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

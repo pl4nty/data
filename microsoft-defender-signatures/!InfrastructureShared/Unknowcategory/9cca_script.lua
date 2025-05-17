@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_obfuscator_xt_6")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 23, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-;
-(mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT")
-return mp.SUSPICIOUS
+if peattributes.isvbnative and peattributes.dirty_wx_branch and peattributes.hstr_exhaustive and peattributes.hasappendeddata then
+  return mp.INFECTED
+end
+if not peattributes.suspicious_timestamp and not peattributes.suspicious_image_version then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

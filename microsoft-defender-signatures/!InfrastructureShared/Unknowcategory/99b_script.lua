@@ -3,41 +3,39 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-local l_0_2 = nil
-if (sysio.RegOpenKey)((sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")) then
-  local l_0_3 = nil
-  for l_0_7,l_0_8 in pairs((sysio.RegEnumValues)((sysio.RegOpenKey)((sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")))) do
-    local l_0_4 = nil
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R8 in 'UnsetPending'
+is_vowel = function(l_1_0)
+  -- function num : 0_0
+  do return l_1_0 == 97 or l_1_0 == 101 or l_1_0 == 105 or l_1_0 == 111 or l_1_0 == 117 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
 
-    l_0_1 = (string.lower)((sysio.GetRegValueAsString)(l_0_3, R8_PC23))
-    if l_0_1 ~= nil then
-      if (string.match)(l_0_1, "regsvr32.+/i%:http.+scrobj%.dll") and (string.find)(l_0_1, "/u ", 1, true) and (string.find)(l_0_1, "/s ", 1, true) then
-        (sysio.DeleteRegValue)(l_0_3, R8_PC23)
-      end
-      if (string.find)(l_0_1, "powershell.exe", 1, true) and (string.match)(l_0_1, "iex%s*%(%[text%.encoding%]%:%:ascii%.getstring%(%[convert%]%:%:frombase64string%(%(gp%s*%\'hk") then
-        (sysio.DeleteRegValue)(l_0_3, R8_PC23)
+is_alpha = function(l_2_0)
+  -- function num : 0_1
+  do return (l_2_0 >= 97 and l_2_0 <= 122) or (l_2_0 >= 74 and l_2_0 <= 90) end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+  local l_0_2 = (string.len)(l_0_1) - 4
+  if l_0_2 ~= 6 or (string.sub)(l_0_1, -4) ~= ".exe" then
+    return mp.CLEAN
+  end
+  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if (string.sub)(l_0_3, -17) == "\\application data" or (string.sub)(l_0_3, -16) == "\\appdata\\roaming" then
+    for l_0_7 = 1, l_0_2 do
+      local l_0_8 = (string.byte)(l_0_1, l_0_7)
+      if not is_alpha(l_0_8) or is_vowel(l_0_8) then
+        return mp.CLEAN
       end
     end
+    ;
+    (mp.set_mpattribute)("Lua:SuspiciousDropFilename.A")
+    return mp.INFECTED
   end
 end
 do
-  l_0_3 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run")
-  if l_0_3 then
-    local l_0_9 = (sysio.RegEnumValues)(l_0_3)
-    for l_0_13,l_0_14 in pairs(l_0_9) do
-      l_0_1 = (string.lower)((sysio.GetRegValueAsString)(l_0_3, l_0_14))
-      if l_0_1 ~= nil then
-        if (string.match)(l_0_1, "regsvr32.+/i%:http.+scrobj%.dll") and (string.find)(l_0_1, "/u ", 1, true) and (string.find)(l_0_1, "/s ", 1, true) then
-          (sysio.DeleteRegValue)(l_0_3, l_0_14)
-        end
-        if (string.find)(l_0_1, "powershell.exe", 1, true) and (string.match)(l_0_1, "iex%s*%(%[text%.encoding%]%:%:ascii%.getstring%(%[convert%]%:%:frombase64string%(%(gp%s*%\'hk") then
-          (sysio.DeleteRegValue)(l_0_3, l_0_14)
-        end
-      end
-    end
-  end
+  return mp.CLEAN
 end
 

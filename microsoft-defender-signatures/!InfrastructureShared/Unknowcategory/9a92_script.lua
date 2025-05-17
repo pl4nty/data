@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = 0
+if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
+  l_0_0 = 2
 end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if (mp.bitand)(mp.HSTR_WEIGHT, 15) + l_0_0 >= 4 then
+  if pehdr.Machine ~= 332 then
+    (mp.changedetectionname)(805306465)
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

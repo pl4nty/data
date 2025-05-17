@@ -3,23 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 160)
-local l_0_1 = (mp.readu_u32)(l_0_0, 83)
-if l_0_1 < (pesecs[1]).VirtualAddress or (pesecs[pehdr.NumberOfSections]).VirtualAddress + (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= l_0_1 then
+if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
   return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u16)(l_0_0, 68)
-if l_0_2 < 32768 or l_0_2 > 45056 then
+if peattributes.isdll == true then
   return mp.CLEAN
 end
-local l_0_3 = (mp.readu_u16)(l_0_0, 111)
-if l_0_3 < 49152 or l_0_3 > 61440 then
+if (mp.getfilesize)() > 1048576 then
   return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F")
-local l_0_4 = (string.format)("CURE:Virus:Win32/Xpaj.gen!F_%08X", l_0_1)
-;
-(mp.set_mpattribute)(l_0_4)
+if (hstrlog[1]).hitcount > 40 then
+  return mp.CLEAN
+end
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+local l_0_1 = (pe.foffset_va)(pehdr.ImageBase + (pehdr.SizeOfImage - 1)) + 1
+if l_0_0 ~= l_0_1 then
+  l_0_0 = l_0_1
+end
+if (pesecs[1]).SizeOfRawData > 61440 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData < 65536 and (mp.getfilesize)() - l_0_0 < 65536 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

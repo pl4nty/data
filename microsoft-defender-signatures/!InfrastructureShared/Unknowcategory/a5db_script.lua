@@ -3,25 +3,36 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 38, 4)
-l_0_0 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(l_0_0, 4)
-l_0_0 = (mp.readu_u32)(l_0_0, 1)
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + 21, 4)
-l_0_1 = (mp.readu_u32)(l_0_1, 1)
-l_0_1 = (mp.bitxor)(l_0_1, l_0_0)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 19, "\191")
-local l_0_2, l_0_3, l_0_4, l_0_5 = (mp.bsplit)(l_0_1, 8)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 20, (string.char)(l_0_2))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 21, (string.char)(l_0_3))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 22, (string.char)(l_0_4))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 23, (string.char)(l_0_5))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 24, "êêêê")
-return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  if (l_0_0.find)(l_0_0, "\\clicktorun\\officeclicktorun.exe", 1, true) ~= nil then
+    return mp.CLEAN
+  end
+end
+local l_0_1, l_0_2 = nil, nil
+if (this_sigattrlog[1]).matched then
+  do
+    if (this_sigattrlog[1]).utf8p2 ~= nil then
+      local l_0_3 = (this_sigattrlog[1]).utf8p2
+      if (sysio.IsFileExists)(l_0_3) then
+        if (mp.IsKnownFriendlyFile)(l_0_3, true, false) == true then
+          return mp.CLEAN
+        end
+        ;
+        (bm.add_related_file)(l_0_3)
+      end
+    end
+    if (this_sigattrlog[1]).utf8p1 ~= nil then
+      l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    end
+    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+      l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p2)
+    end
+    if l_0_1 ~= nil and l_0_2 ~= nil and (string.find)(l_0_1, l_0_2, 1, true) then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
+end
 

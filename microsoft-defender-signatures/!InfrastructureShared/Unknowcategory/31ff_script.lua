@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[10]).hitcount >= 10 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("//SCPT:TrojanSpy:AndroidOS/DmsSpy.BB1")
+return mp.INFECTED
 

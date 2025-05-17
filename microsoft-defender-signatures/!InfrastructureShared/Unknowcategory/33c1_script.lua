@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 20480 and l_0_0 <= 32768 then
+if (mp.get_mpattribute)("SCPT:HTMLFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched) and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
+end
+if (hstrlog[1]).matched then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
 end
 return mp.CLEAN
 

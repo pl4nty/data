@@ -3,26 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).utf8p1
-  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  local l_0_2 = (string.lower)((this_sigattrlog[4]).utf8p1)
-  local l_0_3 = l_0_2:match("imagename:([^;]+)")
-  if not l_0_3 then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_1, l_0_3) then
-    local l_0_4, l_0_5 = (string.match)(l_0_2, "targetprocessppid:(%d+):(%d+)")
-    if not l_0_4 or not l_0_5 then
-      return mp.CLEAN
-    end
-    local l_0_6 = (string.format)("pid:%s,ProcessStart:%s", l_0_4, l_0_5)
-    ;
-    (bm.request_SMS)(l_0_6, "M")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 5000)
-    ;
-    (bm.trigger_sig)("BMGenericCodeInjector.B", l_0_0, l_0_6)
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  ;
+  (bm.trigger_sig)("PowershellMasqueraded", l_0_0)
+  local l_0_1, l_0_2 = l_0_0:match("^(.+\\)([^\\]+)$")
+  if l_0_1 and l_0_2 and ((string.find)(l_0_1, "c:\\users\\", 1, true) or (string.find)(l_0_1, "\\temp\\", 1, true) or (string.find)(l_0_1, "\\appdata\\", 1, true) or (string.find)(l_0_1, "\\programdata\\", 1, true)) and ((string.find)(l_0_2, ".cmd.exe", 1, true) or (string.find)(l_0_2, ".bat.exe", 1, true) or (string.find)(l_0_2, ".vbs.exe", 1, true)) then
+    return mp.INFECTED
   end
 end
 do

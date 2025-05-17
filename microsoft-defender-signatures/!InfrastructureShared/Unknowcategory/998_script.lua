@@ -4,23 +4,28 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 ~= mp.SCANREASON_ONOPEN then
-  return false
-end
-local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH))
-local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-do
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   do
-    if not (string.find)(l_0_1, "\\program files\\7-zip", 1, true) ~= nil or (string.find)(l_0_1, "\\program files (x86)\\7-zip", 1, true) ~= nil or ((string.sub)(l_0_2, 1, 2) == "7z" and l_0_2 ~= "7z.exe" and l_0_2 ~= "7za.exe" and l_0_2 ~= "7zfm.exe" and l_0_2 ~= "7zg.exe" and (string.find)(l_0_2, "7z%d%d%d%d%-x64%.exe") == nil and (string.find)(l_0_2, "7z%d%d%d%d%.exe") ~= nil) or not (string.find)(l_0_1, "\\program files\\winrar", 1, true) ~= nil or (string.find)(l_0_1, "\\program files (x86)\\winrar", 1, true) ~= nil or l_0_2 == "rar.exe" or l_0_2 == "unrar.exe" or l_0_2 == "winrar.exe" then
-      local l_0_11 = nil
-      if (mp.IsKnownFriendlyFile)((MpCommon.PathToWin32Path)(l_0_1 .. "\\" .. l_0_2), true, true) then
-        return true
+    if (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+      local l_0_1 = (mp.getfilesize)()
+      if l_0_1 < 20480 or l_0_1 > 3145728 then
+        return mp.CLEAN
       end
     end
-    do return false end
-    -- DECOMPILER ERROR at PC134: freeLocal<0 in 'ReleaseLocals'
-
-    -- DECOMPILER ERROR: 9 unprocessed JMP targets
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+    if (string.sub)(l_0_2, -4) == ".exe" then
+      local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+      if l_0_3 == "explorer.exe" then
+        local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+        local l_0_5 = (string.lower)((MpCommon.PathToWin32Path)(l_0_4))
+        if (l_0_5:sub(-16) == "\\appdata\\roaming" or l_0_5:sub(-17) == "\\application data" or l_0_5:sub(-8) == "\\startup" or l_0_5:sub(-9, -8) ~= ":\\" or (string.sub)(l_0_5, -7) == (string.sub)(l_0_2, 0, 7)) and l_0_2:find("^[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].exe") == 1 then
+          return mp.INFECTED
+        end
+      end
+    end
+    do
+      return mp.CLEAN
+    end
   end
 end
 

@@ -3,55 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  if l_0_1 == nil or #l_0_1 < 1 then
-    return mp.CLEAN
-  end
-  local l_0_2 = (string.lower)(l_0_1)
-  local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-  if l_0_3 == nil or #l_0_3 < 1 then
-    return mp.CLEAN
-  end
-  local l_0_4 = (MpCommon.PathToWin32Path)(l_0_3)
-  if l_0_4 == nil or #l_0_4 < 1 then
-    return mp.CLEAN
-  end
-  local l_0_5 = (string.lower)(l_0_4)
-  local l_0_6 = {}
-  l_0_6["ww2help.dll"] = ""
-  l_0_6["cryptsp.dll"] = ""
-  l_0_6["fxsst.dll"] = ""
-  l_0_6["secur32.dll"] = ""
-  if l_0_5:find("\\windows\\", 1, true) and l_0_6[l_0_2] then
-    local l_0_7, l_0_8 = (mp.IsTrustedFile)(true)
-    if l_0_7 ~= true then
-      local l_0_9 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-      if l_0_9 == nil or #l_0_9 < 1 then
-        return mp.CLEAN
-      end
-      local l_0_10 = (string.lower)(l_0_9)
-      local l_0_11 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
-      if l_0_11 == nil or #l_0_11 < 1 then
-        return mp.CLEAN
-      end
-      local l_0_12 = (MpCommon.PathToWin32Path)(l_0_11)
-      if l_0_12 == nil or #l_0_12 < 1 then
-        return mp.CLEAN
-      end
-      local l_0_13 = (string.lower)(l_0_12)
-      local l_0_14 = l_0_13 .. "\\" .. l_0_10
-      ;
-      (mp.ReportLowfi)(l_0_14, 4051462255)
-      return mp.INFECTED
-    end
-  end
-  do
-    do
-      do return mp.CLEAN end
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
+  local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
+  if l_0_0:sub(1, 8) == "\\device\\" then
+    l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
+    if l_0_0 == nil then
       return mp.CLEAN
     end
+    l_0_0 = (string.lower)(l_0_0)
   end
+  local l_0_1 = false
+  local l_0_2 = (MpCommon.GetPersistContext)(l_0_0)
+  if l_0_2 == nil then
+    return mp.CLEAN
+  end
+  local l_0_3 = {}
+  l_0_3.SuspExeFileDroppedBySystemProcessC_sysdir = "Lua:Context/OpenExeAfterDropBySystem.C!sysdir"
+  l_0_3.SuspFileDroppedBySystemProcessC_sysdir = "Lua:Context/OpenAfterDropBySystem.C!sysdir"
+  l_0_3.SuspExeFileDroppedBySystemProcessC_windir = "Lua:Context/OpenExeAfterDropBySystem.C!windir"
+  l_0_3.SuspFileDroppedBySystemProcessC_windir = "Lua:Context/OpenAfterDropBySystem.C!windir"
+  for l_0_7,l_0_8 in ipairs(l_0_2) do
+    for l_0_12,l_0_13 in pairs(l_0_3) do
+      if l_0_8 == l_0_12 then
+        (mp.set_mpattribute)(l_0_13)
+        l_0_1 = true
+      end
+    end
+  end
+  if l_0_1 == true then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
 end
 

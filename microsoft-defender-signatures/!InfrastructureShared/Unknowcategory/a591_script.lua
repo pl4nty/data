@@ -3,38 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epscn_writable == false then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  (bm.request_SMS)(l_0_0.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
+  return mp.INFECTED
+end
+local l_0_1, l_0_2 = (bm.get_process_relationships)()
+if l_0_1 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_1) do
+    if l_0_7.image_path ~= nil then
+      local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_7.image_path))
+      if l_0_7.reason_ex == bm.RELATIONSHIP_CREATED and (sysio.IsFileExists)(l_0_8) then
+        (bm.add_related_file)(l_0_8)
+        ;
+        (bm.request_SMS)(l_0_7.ppid, "h+")
+        ;
+        (bm.add_action)("SmsAsyncScanEvent", 1)
+      end
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if peattributes.firstsectwritable ~= true then
-  return mp.CLEAN
-end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW ~= 1952539694 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 96 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 190 then
-  return mp.CLEAN
-end
-if epcode[7] ~= 233 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

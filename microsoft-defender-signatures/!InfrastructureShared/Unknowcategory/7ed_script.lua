@@ -3,17 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-    if l_0_1 then
-      l_0_1 = (string.lower)(l_0_1)
-      if l_0_1 == "lsass.exe" then
-        return mp.INFECTED
-      end
-    end
-  end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = ((string.lower)((string.sub)(l_0_6.image_path, -15))):match("\\([^\\]+)$")
+    local l_0_8 = {}
+    l_0_8["svchost.exe"] = true
+    l_0_8["taskhostw.exe"] = true
+    l_0_8["taskeng.exe"] = true
+    if l_0_8[l_0_7] then
+      return mp.INFECTED
+    end
+  end
+end
+return mp.CLEAN
 

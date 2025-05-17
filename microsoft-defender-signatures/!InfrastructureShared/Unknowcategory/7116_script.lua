@@ -3,11 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (pe.get_exports)() >= 10 then
-  return mp.CLEAN
-end
-return mp.LOWFI
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
+return mp.INFECTED
 

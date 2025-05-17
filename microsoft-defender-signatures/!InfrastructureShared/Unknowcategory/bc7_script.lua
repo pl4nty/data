@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:MediaGet")
+(mp.set_mpattribute)("PUA:Block:DLHelper")
 return mp.INFECTED
 

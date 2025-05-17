@@ -3,23 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
+local l_0_0 = (mp.GetScannedPPID)()
+if not l_0_0 then
   return mp.CLEAN
 end
-if l_0_0:find("program files", 1, true) then
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if not l_0_1 or #l_0_1 <= 18 then
   return mp.CLEAN
 end
-if l_0_0:find("system32", 1, true) then
+l_0_1 = (string.lower)(l_0_1)
+local l_0_2 = (string.match)(l_0_1, "%-p \"?([%d]+)\"? %-r \"?([%d]+)\"?")
+if not l_0_2 then
   return mp.CLEAN
 end
-local l_0_1 = (MpCommon.PathToWin32Path)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
+do
+  local l_0_3 = l_0_1 or 999
+  l_0_2 = tonumber(l_0_2)
+  -- DECOMPILER ERROR at PC43: Confused about usage of register: R3 in 'UnsetPending'
+
+  local l_0_4 = tonumber(l_0_3)
+  local l_0_5 = (mp.GetPPidFromPid)(l_0_2)
+  ;
+  (MpCommon.SetTaintedProcess)(l_0_5, l_0_4)
+  return mp.INFECTED
 end
-local l_0_2 = (string.find)(l_0_1, "->")
-if l_0_2 then
-  l_0_1 = (string.sub)(l_0_1, 1, l_0_2 - 1)
-end
-return mp.INFECTED
 

@@ -3,24 +3,10 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if l_0_0 ~= nil then
-      local l_0_2 = nil
-      if (mp.ContextualExpandEnvironmentVariables)(l_0_0) ~= nil and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_0)) then
-        (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_0), 3307547556)
-      end
-    end
-    return mp.INFECTED
-  end
-end
+local l_0_0 = {}
+l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
+l_0_0.referer = (nri.GetHttpRequestHeader)("referer")
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+return mp.INFECTED
 

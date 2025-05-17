@@ -3,128 +3,49 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 1 then
-  local l_0_0 = nil
-  if (hstrlog[1]).matched then
-    l_0_0 = (hstrlog[1]).VA
-    l_0_0 = l_0_0 - 171
-  else
-    if (hstrlog[2]).matched then
-      l_0_0 = (hstrlog[2]).VA
-      l_0_0 = l_0_0 - 224
-    else
-      if (hstrlog[3]).matched then
-        l_0_0 = (hstrlog[3]).VA
-        l_0_0 = l_0_0 - 272
-      else
-        if (hstrlog[4]).matched then
-          l_0_0 = (hstrlog[4]).VA
-          l_0_0 = l_0_0 - 80
-        else
-          if (hstrlog[5]).matched then
-            l_0_0 = (hstrlog[5]).VA
-            l_0_0 = l_0_0 - 288
-          else
-            if (hstrlog[6]).matched then
-              l_0_0 = (hstrlog[6]).VA
-              l_0_0 = l_0_0 - 352
-            else
-              if (hstrlog[7]).matched then
-                l_0_0 = (hstrlog[7]).VA
-                l_0_0 = l_0_0 - 112
-              else
-                if (hstrlog[8]).matched then
-                  l_0_0 = (hstrlog[8]).VA
-                  l_0_0 = l_0_0 - 192
-                else
-                  if (hstrlog[9]).matched then
-                    l_0_0 = (hstrlog[9]).VA
-                    l_0_0 = l_0_0 - 336
-                  else
-                    if (hstrlog[10]).matched then
-                      l_0_0 = (hstrlog[10]).VA
-                      l_0_0 = l_0_0 - 272
-                    else
-                      if (hstrlog[12]).matched then
-                        l_0_0 = (hstrlog[12]).VA
-                        l_0_0 = l_0_0 - 256
-                      else
-                        if (hstrlog[13]).matched then
-                          l_0_0 = (hstrlog[13]).VA
-                          l_0_0 = l_0_0 - 112
-                        else
-                          if (hstrlog[14]).matched then
-                            l_0_0 = (hstrlog[14]).VA
-                            l_0_0 = l_0_0 - 112
-                          else
-                            if (hstrlog[15]).matched then
-                              l_0_0 = (hstrlog[15]).VA
-                              l_0_0 = l_0_0 - 304
-                            else
-                              if (hstrlog[16]).matched then
-                                l_0_0 = (hstrlog[16]).VA
-                                l_0_0 = l_0_0 - 464
-                              else
-                                if (hstrlog[17]).matched then
-                                  l_0_0 = (hstrlog[17]).VA
-                                  l_0_0 = l_0_0 - 144
-                                else
-                                  if (hstrlog[18]).matched then
-                                    l_0_0 = (hstrlog[18]).VA
-                                    l_0_0 = l_0_0 - 624
-                                  else
-                                    if (hstrlog[19]).matched then
-                                      l_0_0 = (hstrlog[19]).VA
-                                      l_0_0 = l_0_0 - 336
-                                    else
-                                      if (hstrlog[23]).matched then
-                                        l_0_0 = (hstrlog[23]).VA
-                                        l_0_0 = l_0_0 - 384
-                                      else
-                                        if (hstrlog[20]).matched then
-                                          l_0_0 = (hstrlog[20]).VA
-                                          l_0_0 = l_0_0 - 640
-                                        else
-                                          if (hstrlog[21]).matched then
-                                            l_0_0 = (hstrlog[21]).VA
-                                            l_0_0 = l_0_0 - 336
-                                          else
-                                            if (hstrlog[22]).matched then
-                                              l_0_0 = (hstrlog[22]).VA
-                                              l_0_0 = l_0_0 - 592
-                                            else
-                                              if (hstrlog[11]).matched then
-                                                l_0_0 = (hstrlog[11]).VA
-                                              end
-                                            end
-                                          end
-                                        end
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
+if peattributes.ismsil == false then
+  return mp.CLEAN
+end
+local l_0_0 = (pe.get_netmetadata)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = {}
+-- DECOMPILER ERROR at PC28: No list found for R1 , SetList fails
+
+-- DECOMPILER ERROR at PC29: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC36: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC40: Overwrote pending register: R4 in 'AssignReg'
+
+if ((((((((-1)[1]).matched ~= true or (hstrlog[2]).matched == true) and (hstrlog[3]).matched ~= true) or (hstrlog[4]).matched == true) and (hstrlog[5]).matched ~= true) or (hstrlog[6]).matched == true) and (hstrlog[7]).matched ~= true) or (hstrlog[8]).matched == true then
+  do
+    for l_0_5,l_0_6 in ipairs(l_0_1) do
+      -- DECOMPILER ERROR at PC147: Overwrote pending register: R7 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC149: Overwrote pending register: R8 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC150: Overwrote pending register: R9 in 'AssignReg'
+
+      if l_0_6 ~= -1 then
+        local l_0_7 = ((-1).readu_u32)(-1, -1)
+        local l_0_8 = l_0_0.strheap_RVA + (pe.metadata_decode)(l_0_7, 2)
+        local l_0_9 = (pe.mmap_rva)(l_0_8, 10)
+        if (string.find)(l_0_9, "Initialize", 1, true) ~= nil then
+          local l_0_10 = (pe.metadata_decode)(l_0_7, 1)
+          local l_0_11 = l_0_0.strheap_RVA + (pe.metadata_decode)(l_0_10, 3)
+          local l_0_12 = (pe.mmap_rva)(l_0_11, 22)
+          if (string.find)(l_0_9, "ScriptObject", 1, true) ~= nil and (string.find)(l_0_12, "System.Windows.Browser", 1, true) ~= nil then
+            return mp.INFECTED
           end
         end
       end
     end
+    do return mp.CLEAN end
+    -- WARNING: undefined locals caused missing assignments!
   end
-  if l_0_0 ~= nil then
-    local l_0_1 = "HSTR:VirTool:Win32/Obfuscator.ACV!pointer_" .. (string.format)("%.08x", l_0_0)
-    ;
-    (mp.set_mpattribute)(l_0_1)
-  end
-end
-do
-  return mp.INFECTED
 end
 

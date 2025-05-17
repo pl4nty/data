@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("CrossRider")
+(mp.set_mpattribute)("BM_DHA")
 return mp.INFECTED
 

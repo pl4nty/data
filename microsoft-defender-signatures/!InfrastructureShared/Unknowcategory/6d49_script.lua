@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.executes_from_dynamic_memory then
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/LummaC!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

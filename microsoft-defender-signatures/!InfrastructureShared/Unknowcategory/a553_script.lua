@@ -3,28 +3,31 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = nil
-  local l_0_1 = (string.lower)(l_0_0)
-  if (string.find)(l_0_1, "\\udcofficeaddin2000.dll", 1, true) or (string.find)(l_0_1, "\\microsoft.bdd.utility.dll", 1, true) or (string.find)(l_0_1, "\\mscal.ocx", 1, true) then
-    return mp.CLEAN
-  end
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    if l_0_2 ~= nil then
-      for l_0_6,l_0_7 in ipairs(l_0_2) do
-        l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-        ;
-        (bm.add_related_file)(l_0_7)
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+  local l_0_0, l_0_1 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_0 ~= nil then
+      local l_0_2 = nil
+      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0.utf8p2)) do
+        local l_0_3 = nil
+        -- DECOMPILER ERROR at PC30: Confused about usage of register: R6 in 'UnsetPending'
+
+        R6_PC30 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(R6_PC30))
+        if ((sysio.IsFileExists)(R6_PC30 .. "\\mozcrt19.dll") or (sysio.IsFileExists)(R6_PC30 .. "\\mozsqlite3.dll") or (sysio.IsFileExists)(R6_PC30 .. "\\sqlite3.dll")) and not (string.find)(R6_PC30, "\\mozilla firefox", 1, true) then
+          return mp.INFECTED
+        end
       end
     end
     do
-      do
-        do return mp.INFECTED end
-        return mp.CLEAN
-      end
+      return mp.CLEAN
     end
   end
 end

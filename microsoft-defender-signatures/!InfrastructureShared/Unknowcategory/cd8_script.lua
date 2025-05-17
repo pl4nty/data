@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:SpigotSearch")
+(mp.set_mpattribute)("PUA:Block:ConvertAd:Bit")
 return mp.INFECTED
 

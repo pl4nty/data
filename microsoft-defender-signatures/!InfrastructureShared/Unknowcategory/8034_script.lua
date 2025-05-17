@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if (string.find)(l_0_1, " %d%d%d?%d?%d? ", 1, false) then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("\\temp\\", 1, true) ~= nil and l_0_0:find("\\system", 1, true) == nil then
   return mp.INFECTED
 end
 return mp.CLEAN

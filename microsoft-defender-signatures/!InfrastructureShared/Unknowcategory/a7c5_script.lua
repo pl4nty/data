@@ -3,39 +3,102 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-local l_0_2 = l_0_1:match("([^\\]+)$")
-local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
-if l_0_2 ~= nil and not (string.find)(l_0_3, l_0_2) then
-  return mp.CLEAN
-end
-local l_0_4 = (sysio.RegExpandUserKey)("HKCU\\Environment")
-if l_0_4 then
-  for l_0_8,l_0_9 in pairs(l_0_4) do
-    local l_0_10 = (sysio.RegOpenKey)(l_0_9)
-    if l_0_10 then
-      local l_0_11 = (sysio.RegEnumValues)(l_0_10)
-      for l_0_15,l_0_16 in pairs(l_0_11) do
-        if (string.lower)(l_0_16) == "windir" then
-          local l_0_17 = (string.lower)((sysio.GetRegValueAsString)(l_0_10, l_0_16))
-          if (string.len)(l_0_17) > 8 and ((string.find)(l_0_17, "cmd ", 1, true) or (string.find)(l_0_17, "cmd.exe", 1, true) or (string.find)(l_0_17, "powershell", 1, true) or (string.find)(l_0_17, "wscript", 1, true) or (string.find)(l_0_17, "cscript", 1, true) or (string.find)(l_0_17, "schtasks", 1, true) or (string.find)(l_0_17, "mshta", 1, true) or (string.find)(l_0_17, "reg add", 1, true) or (string.find)(l_0_17, "reg.exe add", 1, true) or (string.find)(l_0_17, "regedit.exe", 1, true) or (string.find)(l_0_17, "rundll32.exe", 1, true) or (string.find)(l_0_17, "regsvr32.exe", 1, true) or (string.find)(l_0_17, "bypass", 1, true) or (string.find)(l_0_17, "\\appdata\\roaming\\", 1, true) or (string.find)(l_0_17, "\\appdata\\local\\", 1, true) or (string.find)(l_0_17, "\\users\\public\\", 1, true) or (string.find)(l_0_17, "\\programdata\\", 1, true) or (string.find)(l_0_17, ".bat", 1, true) or (string.find)(l_0_17, ".cmd", 1, true) or (string.find)(l_0_17, ".js", 1, true) or (string.find)(l_0_17, ".vbs", 1, true) or (string.find)(l_0_17, ".wsf", 1, true)) then
-            return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+      local l_0_1 = (this_sigattrlog[2]).utf8p2
+    else
+    end
+    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
+        local l_0_2 = (this_sigattrlog[4]).utf8p2
+      else
+      end
+      -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
+
+      do
+        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p2 ~= nil then
+          local l_0_3 = (this_sigattrlog[6]).utf8p2
+        else
+        end
+        -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
+
+        do
+          if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p2 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p2 ~= nil then
+            local l_0_4, l_0_5, l_0_6, l_0_7 = (this_sigattrlog[8]).utf8p2
+          else
           end
-          if (string.len)(l_0_17) > 16 and ((string.find)(l_0_17, " /c ", 1, true) or (string.find)(l_0_17, " /k ", 1, true)) then
+          if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p2 ~= nil then
+            local l_0_8 = (this_sigattrlog[10]).utf8p2
+            if l_0_8 ~= nil then
+              local l_0_9 = false
+              for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_8)) do
+                local l_0_10 = nil
+                -- DECOMPILER ERROR at PC152: Confused about usage of register: R7 in 'UnsetPending'
+
+                R7_PC152 = (mp.ContextualExpandEnvironmentVariables)(R7_PC152)
+                if R7_PC152 then
+                  R7_PC152 = R7_PC152:lower()
+                  if (string.match)(R7_PC152, "^c:\\program files %(x86%)\\adobe\\") ~= nil or (string.match)(R7_PC152, "^c:\\program files\\adobe\\") ~= nil then
+                    return mp.CLEAN
+                  end
+                  -- DECOMPILER ERROR at PC206: Confused about usage of register: R8 in 'UnsetPending'
+
+                  if (sysio.IsFileExists)(R7_PC152) and not (mp.IsKnownFriendlyFile)(R7_PC152, false, false) then
+                    do
+                      do
+                        if (this_sigattrlog[2]).matched then
+                          if (string.sub)(l_0_15, -(string.len)("appdata\\local\\microsoft\\onedrive\\onedrive.exe")) == "appdata\\local\\microsoft\\onedrive\\onedrive.exe" then
+                            return mp.CLEAN
+                          end
+                          if (string.sub)(l_0_15, -62, -36) == "\\google\\chrome\\application\\" then
+                            return mp.CLEAN
+                          end
+                        end
+                        -- DECOMPILER ERROR at PC225: Confused about usage of register: R7 in 'UnsetPending'
+
+                        if (string.find)(l_0_15, ":\\users\\.+\\appdata\\local\\deepl\\app.+\\deepl%.exe") then
+                          return mp.CLEAN
+                        end
+                        l_0_9 = true
+                        -- DECOMPILER ERROR at PC236: Confused about usage of register: R7 in 'UnsetPending'
+
+                        ;
+                        (mp.ReportLowfi)(l_0_15, 1132070965)
+                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out DO_STMT
+
+                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out IF_STMT
+
+                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out IF_STMT
+
+                      end
+                    end
+                  end
+                end
+              end
+            end
+            if (this_sigattrlog[6]).matched and not l_0_9 then
+              return mp.CLEAN
+            end
             return mp.INFECTED
           end
         end
       end
     end
   end
-end
-do
-  do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC307: Confused about usage of register R6 for local variables in 'ReleaseLocals'
-
 end
 

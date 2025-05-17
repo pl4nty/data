@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 139 and epcode[2] == 255 and epcode[3] == 200 and epcode[4] == 128 then
+if peattributes.no_security == true and (mp.getfilesize)() > 30000000 and pehdr.Magic == 523 then
   return mp.INFECTED
 end
 return mp.CLEAN

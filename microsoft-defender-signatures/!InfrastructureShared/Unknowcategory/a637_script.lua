@@ -3,48 +3,38 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = {}
+l_0_0.exe = ""
+l_0_0.cmd = ""
+l_0_0.bat = ""
+l_0_0.com = ""
+l_0_0.pif = ""
+l_0_0.scr = ""
+local l_0_1 = {}
+l_0_1.ms = ""
+l_0_1.cc = ""
+local l_0_2, l_0_3 = nil, nil
+if (this_sigattrlog[4]).matched and (this_sigattrlog[6]).matched then
+  l_0_2 = (string.lower)((this_sigattrlog[4]).utf8p1)
+  l_0_3 = (string.lower)((this_sigattrlog[6]).utf8p2)
+else
+  if (this_sigattrlog[5]).matched and (this_sigattrlog[7]).matched then
+    l_0_2 = (string.lower)((this_sigattrlog[5]).utf8p1)
+    l_0_3 = (string.lower)((this_sigattrlog[7]).utf8p2)
+  end
+end
+if l_0_2 ~= nil and l_0_3 ~= nil then
+  local l_0_4, l_0_5 = l_0_2:match("([^\\]-([^%.]+))$")
+  local l_0_6 = l_0_4:sub(1, 2)
+  if l_0_0[l_0_5] and l_0_1[l_0_6] then
+    l_0_3 = (string.match)(l_0_3, "\\([^\\]+)$")
+    if l_0_4 == l_0_3 then
+      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_2), 4091961331)
+      return mp.INFECTED
+    end
+  end
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC35: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-      local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p2)
-    end
-    -- DECOMPILER ERROR at PC59: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
-        local l_0_2 = (string.lower)((this_sigattrlog[4]).utf8p2)
-      end
-      -- DECOMPILER ERROR at PC83: Overwrote pending register: R0 in 'AssignReg'
-
-      do
-        if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
-          local l_0_3, l_0_4, l_0_5, l_0_6, l_0_7 = (string.lower)((this_sigattrlog[6]).utf8p2), nil, nil
-        end
-        -- DECOMPILER ERROR at PC100: Confused about usage of register: R0 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC107: Confused about usage of register: R0 in 'UnsetPending'
-
-        if (not (this_sigattrlog[8]).matched or (string.lower)((this_sigattrlog[8]).utf8p2) ~= nil) and (string.find)((string.lower)((this_sigattrlog[8]).utf8p2), "\" ..") then
-          local l_0_8 = nil
-          local l_0_9 = nil
-          ;
-          (mp.ReportLowfi)(l_0_9, 138103733)
-          ;
-          (mp.ReportLowfi)((string.gsub)((string.gsub)((string.lower)((this_sigattrlog[8]).utf8p2), " ..", ""), "\"", ""), 138103733)
-          return mp.INFECTED
-        end
-        do
-          return mp.INFECTED
-        end
-      end
-    end
-  end
+  return mp.CLEAN
 end
 

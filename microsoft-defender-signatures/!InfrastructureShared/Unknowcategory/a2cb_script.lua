@@ -3,22 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_6 = (this_sigattrlog[1]).p1
-    if (string.match)(l_0_6:lower(), "^[a-z]+$") and (string.len)(l_0_6) > 20 then
-      return mp.INFECTED
+if (hstrlog[4]).matched then
+  (mp.readprotection)(false)
+  local l_0_0 = (pe.mmap_va)((hstrlog[4]).VA - 27, 80)
+  local l_0_1 = (mp.readu_u32)(l_0_0, 2)
+  local l_0_2 = (pe.mmap_va)(l_0_1, 16)
+  for l_0_6 = 1, 16 do
+    local l_0_7 = (string.byte)(l_0_2, l_0_6)
+    if l_0_7 < 48 or l_0_7 > 90 or l_0_7 == 64 then
+      return mp.CLEAN
     end
   end
-  return mp.LOWFI
+  return mp.INFECTED
+end
+do
+  return mp.CLEAN
 end
 

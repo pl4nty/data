@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 10 then
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((string.sub)((this_sigattrlog[1]).wp1, -4))
+    if l_0_0 == ".ttf" or l_0_0 == ".fon" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-for l_0_3 = 1, pehdr.NumberOfSections do
-  if (pesecs[l_0_3]).Name == "UPX0" or (pesecs[l_0_3]).Name == "UPX1" then
-    return mp.INFECTED
-  end
-end
-return mp.CLEAN
 

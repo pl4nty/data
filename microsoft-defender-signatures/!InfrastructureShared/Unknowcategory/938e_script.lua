@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 18, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if mp.HSTR_WEIGHT >= 4 then
+  return mp.INFECTED
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_adload")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_adload")
+end
+return mp.CLEAN
 

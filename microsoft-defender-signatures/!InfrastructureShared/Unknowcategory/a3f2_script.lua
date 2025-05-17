@@ -3,26 +3,18 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC35: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC44: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC53: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC62: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (((this_sigattrlog[4]).matched and (string.lower)((this_sigattrlog[4]).utf8p2) == nil) or (string.len)((string.lower)((this_sigattrlog[4]).utf8p2)) <= 3 or (not (string.find)((string.lower)((this_sigattrlog[4]).utf8p2), "transfer", 1, true) and not (string.find)((string.lower)((this_sigattrlog[4]).utf8p2), "addfile", 1, true)) or not (string.find)((string.lower)((this_sigattrlog[4]).utf8p2), "bitsadmin", 1, true) or (string.find)((string.lower)((this_sigattrlog[4]).utf8p2), "\\svchost", 1, true)) then
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((this_sigattrlog[6]).utf8p1)
+if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
   return mp.CLEAN
 end
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
+end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
+end
+return mp.INFECTED
 

@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
+if peattributes.arm_image then
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if (string.sub)(l_0_1, 1, 6) == "dmgr1." and l_0_0:find("\\temp\\", 1, true) then
-  return mp.INFECTED
+do
+  if peattributes.no_imports and peattributes.no_boundimport and peattributes.no_delayimport and peattributes.no_iat then
+    local l_0_0 = ((pehdr.DataDirectory)[2]).RVA
+    if l_0_0 ~= 0 and l_0_0 < 8192 and l_0_0 < (pesecs[1]).VirtualAddress then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

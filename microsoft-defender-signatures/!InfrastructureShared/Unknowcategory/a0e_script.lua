@@ -3,136 +3,400 @@
 
 -- params : ...
 -- function num : 0
-GetRuleInfo = function()
-  -- function num : 0_0
-  local l_1_0 = {}
-  l_1_0.Name = "Block Office applications from injecting code into other processes"
-  l_1_0.Description = "Windows Defender Exploit Guard detected Office application injecting code into the process."
-  l_1_0.NotificationDedupingInterval = 14400
-  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_ALL
-  l_1_0.Type = (HIPS.bitor)(HIPS.RULE_DISABLE_AUDIT_INHERITANCE, HIPS.RULE_DISABLE_BLOCK_INHERITANCE)
-  l_1_0.Flags = HIPS.NO_INVOLVEDDOC_EXCL
-  return l_1_0
+local l_0_0 = (string.lower)((mp.GetMachineGUID)())
+if l_0_0 == nil or l_0_0 ~= "15e7fdb4-69ea-447f-90ea-4622da7a88d6" and l_0_0 ~= "b2343ede-44a4-4178-bd92-d36186294555" and l_0_0 ~= "cafefeed-0000-0c7c-ab00-facebeadface" then
+  return mp.CLEAN
 end
-
-GetMonitoredLocations = function()
-  -- function num : 0_1
-  local l_2_0 = {}
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office15\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office15\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office15\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office15\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office14\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office14\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office14\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office14\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office16\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office16\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office16\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office16\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office15\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office15\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office15\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office15\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office14\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office14\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office14\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office14\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office16\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office16\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office16\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office16\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office15\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office15\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office15\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office15\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office14\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office14\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office14\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\root\\Office14\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office16\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office16\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office16\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office16\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office15\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office15\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office15\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office15\\ONENOTE.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office14\\WINWORD.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office14\\EXCEL.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office14\\POWERPNT.EXE"] = 2
-  l_2_0["%programfiles%\\Microsoft Office\\Office14\\ONENOTE.EXE"] = 2
-  return 2, l_2_0
+if (mp.get_mpattributesubstring)("Heraklez") or (mp.get_mpattributesubstring)("SLF:") or (mp.get_mpattributesubstring)("ALF:") or (mp.get_mpattributesubstring)("SLFPER:") or (mp.get_mpattributesubstring)("ALFPER:") then
+  return mp.CLEAN
 end
-
-GetPathExclusions = function()
-  -- function num : 0_2
-  local l_3_0 = {}
-  l_3_0["%windir%\\system32\\WerFault.exe"] = 2
-  l_3_0["%windir%\\SysWOW64\\WerFault.exe"] = 2
-  l_3_0["%windir%\\system32\\DWWIN.EXE"] = 2
-  l_3_0["%windir%\\SysWOW64\\DWWIN.EXE"] = 2
-  l_3_0["C:\\Windows\\system32\\DWWIN.EXE"] = 0
-  l_3_0["C:\\Windows\\SysWOW64\\DWWIN.EXE"] = 0
-  l_3_0["%windir%\\system32\\spool\\drivers\\x64\\3\\CPC10Q.EXE"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Azure Information Protection\\MSIP.ExecutionHost.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Azure Information Protection\\MSIP.ExecutionHost32.exe"] = 2
-  l_3_0["%programfiles%\\Microsoft Azure Information Protection\\MSIP.ExecutionHost.exe"] = 2
-  l_3_0["%programfiles%\\Microsoft Azure Information Protection\\MSIP.ExecutionHost32.exe"] = 2
-  l_3_0["%programfiles%\\Common Files\\microsoft shared\\ClickToRun\\OfficeClickToRun.exe"] = 2
-  l_3_0["%programfiles%\\Microsoft OneDrive\\*\\FileCoAuth.exe"] = 2
-  l_3_0["%programfiles%\\WindowsApps\\MSTeams_*\\ms-teams.exe"] = 2
-  l_3_0["%programdata%\\App-V"] = 2
-  l_3_0["%programfiles%\\Microsoft Office\\root\\VFS\\ProgramFilesCommonX64\\Microsoft Shared\\DW\\dw20.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\VFS\\ProgramFilesCommonX64\\Microsoft Shared\\DW\\dw20.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Common Files\\microsoft shared\\DW\\DW20.EXE"] = 2
-  l_3_0["%programfiles%\\Common Files\\microsoft shared\\DW\\DW20.EXE"] = 2
-  l_3_0["%programfiles%\\Microsoft Office\\root\\Office16\\ADDINS\\Microsoft Power Query for Excel Integrated\\bin\\Microsoft.Mashup.Container.Loader.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\ADDINS\\Microsoft Power Query for Excel Integrated\\bin\\Microsoft.Mashup.Container.Loader.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft\\EdgeWebView\\Application\\*\\msedgewebview2.exe"] = 2
-  l_3_0["%programfiles%\\Microsoft\\EdgeWebView\\Application\\*\\msedgewebview2.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft\\Edge Beta\\Application\\*\\msedgewebview2.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft\\Edge\\Application\\msedge.exe"] = 2
-  l_3_0["%programfiles%\\Microsoft\\Edge\\Application\\msedge.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\ONENOTEM.EXE"] = 2
-  l_3_0["%programfiles%\\Microsoft Office\\root\\Office16\\ONENOTEM.EXE"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\ONENOTE.EXE"] = 2
-  l_3_0["%programfiles%\\Microsoft Office\\root\\Office16\\ONENOTE.EXE"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Office\\Office*\\FIRSTRUN.EXE"] = 2
-  l_3_0["%programfiles%\\Microsoft Office\\Office*\\FIRSTRUN.EXE"] = 2
-  l_3_0["%programfiles%\\Google\\Chrome\\Application\\chrome.exe"] = 2
-  l_3_0["%programfiles%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\ai.exe"] = 2
-  l_3_0["%programfiles%\\WindowsApps\\Microsoft.Office.Desktop_*\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\AI\\ai.exe"] = 2
-  l_3_0["%programfiles%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\ai.exe"] = 2
-  l_3_0["%programfiles%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\AI\\ai.exe"] = 2
-  l_3_0["%programfiles%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\aimgr.exe"] = 2
-  l_3_0["%programfiles%\\WindowsApps\\Microsoft.Office.Desktop_*\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\AI\\aimgr.exe"] = 2
-  l_3_0["%programfiles%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\aimgr.exe"] = 2
-  l_3_0["%programfiles%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\AI\\aimgr.exe"] = 2
-  l_3_0["%programfiles(x86)%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\ai.exe"] = 2
-  l_3_0["%programfiles(x86)%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\AI\\ai.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\ai.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\AI\\ai.exe"] = 2
-  l_3_0["%programfiles(x86)%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\aimgr.exe"] = 2
-  l_3_0["%programfiles(x86)%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\AI\\aimgr.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\aimgr.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\AI\\aimgr.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd??.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Office Timeline\\Current\\Ines.UserService.Exe"] = 2
-  l_3_0["%programfiles(x86)%\\empower\\charts\\LiveUpdateHub.exe"] = 2
-  l_3_0["%programfiles(x86)%\\Dania Software\\DynamicTemplate for Office\\ApplicationFocus.exe"] = 2
-  l_3_0["%windir%\\splwow64.exe"] = 2
-  l_3_0["%windir%\\system32\\fsiso.exe"] = 2
-  return l_3_0
+local l_0_1 = 256
+local l_0_2 = 67108864
+local l_0_3 = (mp.getfilesize)()
+if l_0_3 < l_0_1 or l_0_2 < l_0_3 then
+  return mp.CLEAN
 end
-
-GetCommandLineRegExp = function()
-  -- function num : 0_3
-  return "((windowsapps\\\\[^\\\\]+\\\\)|(microsoft office\\\\(root\\\\)?))office..\\\\(winword|excel|powerpnt|onenote)\\.exe\\\"?[^\\\"]+\\\"([^\\\"]+)\\\"?"
+local l_0_4 = (MpCommon.GetCurrentTimeT)()
+local l_0_5 = (mp.crc32)(l_0_4, headerpage, 1, mp.HEADERPAGE_SZ)
+local l_0_6 = (mp.crc32)(l_0_5, footerpage, 1, mp.FOOTERPAGE_SZ)
+local l_0_7 = l_0_6 % 10000
+local l_0_8 = "Lua:vCtxt"
+local l_0_9 = 5000
+local l_0_10 = "BM_MZ_FILE"
+if (mp.get_mpattribute)(l_0_10) then
+  if l_0_7 < 2000 then
+    (mp.set_mpattribute)(l_0_8 .. l_0_10)
+    return mp.INFECTED
+  end
+  if l_0_7 < 4000 then
+    (mp.set_mpattribute)(l_0_8 .. l_0_10 .. "_1")
+    return mp.INFECTED
+  end
+  if l_0_7 < 6000 then
+    (mp.set_mpattribute)(l_0_8 .. l_0_10 .. "_2")
+    return mp.INFECTED
+  end
+  if l_0_7 < 8000 then
+    (mp.set_mpattribute)(l_0_8 .. l_0_10 .. "_3")
+    return mp.INFECTED
+  end
+  ;
+  (mp.set_mpattribute)(l_0_8 .. l_0_10 .. "_4")
+  return mp.INFECTED
 end
-
+local l_0_11 = "BM_DEX_FILE"
+if (mp.get_mpattribute)(l_0_11) then
+  if l_0_7 < 2000 then
+    (mp.set_mpattribute)(l_0_8 .. l_0_11)
+    return mp.INFECTED
+  end
+  if l_0_7 < 4000 then
+    (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_1")
+    return mp.INFECTED
+  end
+  if l_0_7 < 6000 then
+    (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_2")
+    return mp.INFECTED
+  end
+  if l_0_7 < 8000 then
+    (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_3")
+    return mp.INFECTED
+  end
+end
+do
+  if (mp.get_mpattribute)("BM_MACHO32_FILE") or (mp.get_mpattribute)("BM_MACHO64_FILE") or (mp.get_mpattribute)("BM_DMG_FILE") or (mp.get_mpattribute)("BM_ELF_FILE") or (mp.get_mpattribute)("BM_XAR_ARCHIVE_FILE") then
+    local l_0_12 = 0
+    l_0_11 = "BM_MACHO32_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      l_0_12 = 1
+    end
+    l_0_11 = "BM_MACHO64_FILE"
+    if l_0_12 == 0 and (mp.get_mpattribute)(l_0_11) then
+      l_0_12 = 1
+    end
+    l_0_11 = "BM_DMG_FILE"
+    if l_0_12 == 0 and (mp.get_mpattribute)(l_0_11) then
+      l_0_12 = 1
+    end
+    l_0_11 = "BM_ELF_FILE"
+    if l_0_12 == 0 and (mp.get_mpattribute)(l_0_11) then
+      l_0_12 = 1
+    end
+    l_0_11 = "BM_XAR_ARCHIVE_FILE"
+    if l_0_12 == 0 and (mp.get_mpattribute)(l_0_11) then
+      l_0_12 = 1
+    end
+    if l_0_7 < 2000 then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_0")
+      return mp.INFECTED
+    end
+    if l_0_7 < 4000 then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_1")
+      return mp.INFECTED
+    end
+    if l_0_7 < 6000 then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_2")
+      return mp.INFECTED
+    end
+    if l_0_7 < 8000 then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_3")
+      return mp.INFECTED
+    end
+    ;
+    (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_4")
+    return mp.INFECTED
+  end
+  local l_0_13 = 0
+  local l_0_14 = 0
+  l_0_9 = 1000
+  if l_0_7 < l_0_9 or l_0_14 == 1 then
+    l_0_11 = "SCPT:HTMLFile"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "Html_file"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    if l_0_13 == 1 then
+      return mp.INFECTED
+    end
+  end
+  l_0_9 = 100
+  if l_0_7 < l_0_9 or l_0_14 == 1 then
+    l_0_11 = "SIGATTR:JAVAFile"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_SMALL_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_TIFF_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_CAB_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_MEDIA_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_XML_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_UNICODE_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_RTF_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_OLE_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_BMP_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_PNG_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_JPG_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_GIF_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_OFFICE_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_ZIP_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_RAR_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_7Z_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_CRX_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_SWF_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_MP3_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_PDF_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_FLV_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_OGG_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_FONT_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_JOB_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_TORRENT_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_DEBIAN_PKG_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_GZIP_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_VBE_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_AUTOCAD_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_CURSOR_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_SYMBIAN_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_LNK_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_PHOTOSHOP_IMG_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_HANGUL_WORD_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_WARCRAFT_MAP_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_DLM_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_SQLlite_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_WMF_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_PNF_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_JDIFF_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_LHA_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_SDB_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_TEXT_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    l_0_11 = "BM_UNKNOWN_FILE"
+    if (mp.get_mpattribute)(l_0_11) then
+      (mp.set_mpattribute)(l_0_8 .. l_0_11)
+      l_0_13 = 1
+    end
+    if l_0_13 == 1 then
+      return mp.INFECTED
+    end
+  end
+  l_0_13 = 0
+  if (mp.get_mpattribute)("Nscript:Type_js") or (mp.get_mpattribute)("Nscript:Type_vbs") or (mp.get_mpattribute)("Nscript:Type_bat") or (mp.get_mpattribute)("Nscript:Type_irc") or (mp.get_mpattribute)("Nscript:Type_ps") then
+    l_0_8 = "Lua:vCtxt"
+    if (mp.get_mpattribute)("RPF:TopLevelFile") then
+      l_0_9 = 7500
+      if l_0_7 < l_0_9 then
+        l_0_13 = 1
+      end
+    end
+    if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+      l_0_9 = 20
+      if l_0_7 < l_0_9 then
+        l_0_13 = 1
+      end
+    end
+    if l_0_13 == 1 then
+      l_0_7 = l_0_7 % 4
+      l_0_11 = "Nscript:Type_js"
+      if (mp.get_mpattribute)(l_0_11) then
+        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
+      end
+      l_0_11 = "Nscript:Type_vbs"
+      if (mp.get_mpattribute)(l_0_11) then
+        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
+      end
+      l_0_11 = "Nscript:Type_ps"
+      if (mp.get_mpattribute)(l_0_11) then
+        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
+      end
+      l_0_11 = "Nscript:Type_bat"
+      if (mp.get_mpattribute)(l_0_11) then
+        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
+      end
+      l_0_11 = "Nscript:Type_irc"
+      if (mp.get_mpattribute)(l_0_11) then
+        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
+      end
+      if l_0_13 == 1 then
+        return mp.INFECTED
+      end
+    end
+  end
+  return mp.CLEAN
+end
 

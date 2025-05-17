@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (string.sub)(l_0_0, 22, 22)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 19, "\187" .. l_0_1 .. "\000\000\000")
-return mp.INFECTED
+if (mp.getfilesize)() >= 512000 then
+  return mp.CLEAN
+end
+if (pesecs[1]).SizeOfRawData < 65536 then
+  return mp.CLEAN
+end
+if peattributes.isvbnative == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

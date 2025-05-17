@@ -3,19 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(headerpage, 1) ~= 1953651835 then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if l_0_1:find("\\appdata\\local\\microsoft\\windows\\temporary internet files", 1, true) ~= nil or l_0_1:find("\\appdata\\local\\microsoft\\windows\\inetcache", 1, true) ~= nil then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_2 == "cmd.exe" then
+      if (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+        (mp.set_mpattribute)("Lua:ContextCmdDropTIF.A")
+      else
+        ;
+        (mp.set_mpattribute)("Lua:ContextCmdAccessTIF.A")
+      end
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 204800 or l_0_0 > 2097152 then
-  return mp.CLEAN
-end
-local l_0_1 = tostring(headerpage)
-if (string.find)(l_0_1, "generator Riched20 6.3.9600", 1, true) ~= nil and (string.find)(l_0_1, "ansi\\ansicpg1252\\deff0\\nouicompat\\deflang1033\\deflangfe2052", 1, true) ~= nil and ((string.find)(l_0_1, "WOW SUCH FAKE MUCH", 1, true) ~= nil or (string.find)(l_0_1, "Please Wait While", 1, true) ~= nil) then
-  return mp.INFECTED
-end
-if (string.find)(l_0_1, "panose 02020603050405020304}Times New Roman;}", 1, true) ~= nil and (string.find)(l_0_1, "rtf1\\adeflang1025\\ansi\\ansicpg125", 1, true) ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("//HSTR:VadokristXors.A")
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:Multiplug")
+return mp.INFECTED
 

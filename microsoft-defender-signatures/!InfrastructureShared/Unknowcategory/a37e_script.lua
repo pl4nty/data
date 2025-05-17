@@ -3,25 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-if (string.find)(l_0_0, "\\spyhunter\\", 1, true) then
+if not peattributes.isdll or pehdr.TimeDateStamp ~= 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA == 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).Size < 9 then
   return mp.CLEAN
-else
-  if (string.find)(l_0_0, "\\yandex\\", 1, true) then
-    return mp.CLEAN
-  else
-    if (string.find)(l_0_0, "\\utiltool\\", 1, true) then
-      return mp.CLEAN
-    else
-      if (string.find)(l_0_0, "\\tmus\\", 1, true) then
-        return mp.CLEAN
-      else
-        if (string.find)(l_0_0, "\\tmpscore.exe", 1, true) then
-          return mp.CLEAN
-        end
-      end
-    end
-  end
 end
-return mp.INFECTED
+;
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_rva)(((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA, 9)
+if (mp.readu_u32)(l_0_0, 5) == 4294967295 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

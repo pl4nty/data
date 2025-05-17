@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 644432144)
+if mp.HSTR_WEIGHT >= 200 then
+  return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT >= 4 and mp.HSTR_WEIGHT < 20 then
+    (mp.changedetectionname)(805306498)
+    return mp.INFECTED
+  end
 end
-return mp.INFECTED
+return mp.CLEAN
 

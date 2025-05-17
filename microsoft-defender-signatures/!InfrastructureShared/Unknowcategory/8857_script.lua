@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "svchost.exe" and (versioning.IsSeville)() then
-      return mp.INFECTED
-    end
-  end
+if peattributes.is_exe == false then
   return mp.CLEAN
 end
+if (pe.query_import)(pe.IMPORT_STATIC, 2430426247) == 0 then
+  return mp.CLEAN
+end
+if (pe.query_import)(pe.IMPORT_STATIC, 4186436034) == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

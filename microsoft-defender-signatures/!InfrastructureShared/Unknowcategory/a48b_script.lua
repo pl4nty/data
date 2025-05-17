@@ -3,24 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("BM_UnsignedDll") and (mp.getfilesize)() < 512000 then
-  local l_0_0, l_0_1 = (pe.get_exports)()
-  if l_0_1 == nil or l_0_0 == 0 then
-    return mp.CLEAN
-  end
-  local l_0_2 = {}
-  l_0_2.npgetcaps = true
-  l_0_2.nplogonnotify = true
-  l_0_2.nppasswordchangenotify = true
-  local l_0_3 = 0
-  for l_0_7 = 1, l_0_0 do
-    local l_0_8 = (pe.mmap_string_rva)((l_0_1[l_0_7]).namerva, 64)
-    if l_0_8 ~= nil and l_0_2[(string.lower)(l_0_8)] then
-      l_0_3 = l_0_3 + 1
-    end
-    if l_0_3 == 3 then
-      return mp.INFECTED
-    end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp1 ~= nil and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
+  local l_0_2, l_0_3 = (string.match)(l_0_0, "\\microsoft\\(%a+)\\(%a+)%.dll")
+  local l_0_4, l_0_5 = (string.match)(l_0_1, "\\microsoft\\(%a+)\\(%a+)%.exe")
+  if l_0_2 and l_0_3 and l_0_4 and l_0_5 and l_0_2 == l_0_4 and (string.sub)(l_0_2, 0, -3) == l_0_3 and (string.sub)(l_0_4, 0, -2) == l_0_5 then
+    return mp.INFECTED
   end
 end
 do

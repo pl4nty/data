@@ -3,19 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true and peattributes.hasexports ~= true then
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 20000 and l_0_0 > 60000 then
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
   return mp.CLEAN
 end
-if pehdr.AddressOfEntryPoint ~= 0 or pehdr.ImageBase ~= 4194304 then
-  return mp.CLEAN
-end
-local l_0_1 = (pe.get_exports)()
-if l_0_1 >= 2 and l_0_1 <= 5 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 1, "\255\255\255\255")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

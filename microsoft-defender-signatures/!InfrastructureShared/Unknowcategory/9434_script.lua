@@ -3,16 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true or peattributes.isdll == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)()
+if l_0_0 and (string.find)((string.lower)(l_0_0), "\\servicing\\packages\\microsoft%-windows%-client%-desktop%-required%-package.+%.mum") then
+  (mp.set_mpattribute)("SelectableWinDefendPkgInServicing")
 end
+return mp.CLEAN
 

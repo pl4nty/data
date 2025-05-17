@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("attrmatch_rescan_psif")
-;
-(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
-return mp.INFECTED
+if (sigattr_tail[mp.SIGATTR_LOG_SZ]).matched == true and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12352 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

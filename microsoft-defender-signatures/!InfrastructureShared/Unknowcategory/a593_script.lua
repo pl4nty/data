@@ -3,14 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and pehdr.NumberOfSections == 5 and pevars.epsec == 1 and not peattributes.no_exports and peattributes.no_tls and pehdr.SizeOfImage >= 2097152 and pehdr.SizeOfImage <= 3145728 and (pesecs[pevars.epsec]).SizeOfRawData >= 2097152 and (pesecs[pevars.epsec]).SizeOfRawData <= 2490368 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (pesecs[pevars.epsec]).Name == ".text" then
-  (mp.set_mpattribute)("MpSimulateParanoid")
-  ;
-  (mp.set_mpattribute)("MpEnableCOM")
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
-  ;
-  (pe.reemulate)()
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 1
+local l_0_2 = l_0_0.match_offset + 1 + 1024
+local l_0_3 = ((tostring(l_0_0.is_header and headerpage or footerpage)):sub(l_0_1, l_0_2)):lower()
+if not l_0_3 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_3)
+for l_0_8,l_0_9 in ipairs(l_0_4) do
+  if l_0_9:find("insert.ps1", 1, true) or l_0_9:find("get-bitlockerkeys.ps1", 1, true) then
+    return mp.CLEAN
+  end
+  if (sysio.IsFileExists)(l_0_9) and not (mp.IsKnownFriendlyFile)(l_0_9, false, false) then
+    (mp.ReportLowfi)(l_0_9, 443472619)
+  end
+end
+return mp.INFECTED
 

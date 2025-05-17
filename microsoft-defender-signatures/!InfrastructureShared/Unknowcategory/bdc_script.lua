@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Adposhel")
+(mp.set_mpattribute)("PUA:Block:Brantall")
 return mp.INFECTED
 

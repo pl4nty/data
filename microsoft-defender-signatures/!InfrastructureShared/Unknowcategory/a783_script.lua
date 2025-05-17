@@ -3,72 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-if l_0_0:find("nvcpl.dll") ~= nil then
-  return mp.CLEAN
+local l_0_0 = (pe.get_regval)(pe.REG_ESI)
+if l_0_0 > 1048576 then
+  return mp.INFECTED
 end
-if l_0_0:find("cceraser.dll") ~= nil then
-  return mp.CLEAN
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_1.integrity_level then
-  return mp.CLEAN
-end
-local l_0_2, l_0_3 = l_0_0:find("rundll32.exe")
-if l_0_2 == nil then
-  l_0_2 = l_0_0:find("rundll32", 1, true)
-end
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-local l_0_4 = (string.sub)(l_0_0, l_0_3 - (string.len)(l_0_0))
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-local l_0_5 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-local l_0_6 = "|" .. l_0_5:match("(%w+%.exe)$") .. "|"
-local l_0_7 = "|nvvsvc.exe|salnst.exe|"
-if l_0_7:find(l_0_6, 1, true) ~= nil then
-  return mp.CLEAN
-end
-do
-  if l_0_4:match("([^,]+)") == nil then
-    local l_0_8, l_0_9 = l_0_4
-  end
-  -- DECOMPILER ERROR at PC96: Confused about usage of register: R8 in 'UnsetPending'
-
-  local l_0_10 = nil
-  local l_0_11 = nil
-  if ((l_0_8:gsub("%s*(.-)%s*$", "%1")):gsub("\"", "")):find(":\\", 1, true) == nil then
-    if l_0_5 == nil then
-      return mp.CLEAN
-    end
-    local l_0_12 = nil
-    while 1 do
-      -- DECOMPILER ERROR at PC129: Confused about usage of register: R12 in 'UnsetPending'
-
-    end
-    -- DECOMPILER ERROR at PC158: Overwrote pending register: R10 in 'AssignReg'
-
-    if l_0_12:find("..\\", 1, true) ~= nil and 16 > 0 and l_0_12:find("..\\", 1, true) ~= nil then
-      do
-        if l_0_12:find(".\\", 1, true) == nil or (l_0_5:match("(.+)\\[^\\]+$")):match("(.+)\\[^\\]+$") == nil then
-          return mp.INFECTED
-        end
-        if l_0_12 == nil then
-          return mp.INFECTED
-        end
-        -- DECOMPILER ERROR at PC169: Confused about usage of register: R11 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC172: Overwrote pending register: R10 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC175: Overwrote pending register: R12 in 'AssignReg'
-
-        ;
-        (mp.ReportLowfi)(16 - 1, 1784912360)
-        return mp.INFECTED
-      end
-    end
-  end
-end
+local l_0_1 = (pe.get_regval)(pe.REG_EDI)
+local l_0_2 = (pe.mmap_va)(pevars.sigaddr, 128)
+local l_0_3 = (mp.readu_u32)(l_0_2, 21)
+local l_0_4 = (pe.mmap_va)(l_0_3, 256)
+local l_0_5 = (mp.readu_u32)(l_0_2, 30)
+local l_0_6 = (mp.readu_u32)((pe.mmap_va)(l_0_5, 4), 1)
+local l_0_7 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
+local l_0_8 = "\190\000\000\000\000\189\001\000\000\000âË@%\255\000\000\000â≈âÔäóN\002@\000\015∂ \003\rJ\002@\000Å·\255\000\000\000äôN\002@\000àëN\002@\000\137\rJ\002@\000àüN\002@\000\015∂âN\002@\000\015∂”\001—Å\225\255\000\000\000\015∂ôN\002@\000∏N\003@\0000\0280ÉÓ\001u°√\000\000\000\000"
+local l_0_9 = (pe.mmap_va)(l_0_1, l_0_0)
+local l_0_10 = l_0_7 .. l_0_8 .. l_0_4 .. l_0_9
+;
+(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 2, l_0_0)
+;
+(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 107, l_0_6)
+;
+(mp.vfo_add_buffer)(l_0_10, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.INFECTED
 

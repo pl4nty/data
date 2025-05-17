@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC57: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC57: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC57: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC57: Unhandled construct in 'MakeBoolean' P3
+
+if ((not (hstrlog[7]).matched and not (hstrlog[8]).matched and not (hstrlog[9]).matched and not (hstrlog[10]).matched and (hstrlog[12]).matched) or (hstrlog[11]).matched) and (hstrlog[17]).matched then
+  return mp.INFECTED
 end
-if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpcmdrun.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,20 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_AMSI then
+  local l_0_1, l_0_2 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+  if l_0_1 and l_0_2 ~= nil then
+    local l_0_3 = (string.lower)(l_0_2)
+    if l_0_3:find("audittoolmodule.psm1", 1, true) then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if not peattributes.amd64_image then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
 

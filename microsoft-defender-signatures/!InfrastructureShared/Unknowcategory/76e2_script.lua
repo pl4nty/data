@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.no_exports and peattributes.calls_unimplemented_api then
-  return mp.INFECTED
+do
+  local l_0_0 = (string.lower)(tostring(headerpage))
+  if l_0_0 > 5 then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
-return mp.CLEAN
 

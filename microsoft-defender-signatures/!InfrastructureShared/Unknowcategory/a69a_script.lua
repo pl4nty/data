@@ -3,40 +3,33 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
+do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
+    if (string.find)(l_0_0, ":\\windows", 2, true) or (string.find)(l_0_0, "%windir%", 1, true) or (string.find)(l_0_0, "\"%windows%", 1, true) then
+      return mp.CLEAN
+    end
+  end
+  local l_0_1 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
+  if (mp.IsKnownFriendlyFile)(l_0_1, true, false) == false then
+    (bm.add_related_file)(l_0_1)
+  end
+  local l_0_2 = ((bm.get_current_process_startup_info)()).ppid
+  if l_0_2 ~= nil then
+    local l_0_3 = (string.lower)((mp.GetProcessCommandLine)(l_0_2))
+    if l_0_3 ~= nil then
+      local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_3)
+      for l_0_8,l_0_9 in ipairs(l_0_4) do
+        if (sysio.IsFileExists)(l_0_9) then
+          (bm.add_related_file)(l_0_9)
+        end
+      end
+    end
+  end
+  do
+    l_0_3 = mp
+    l_0_3 = l_0_3.INFECTED
+    return l_0_3
+  end
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_ismsil") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 4000 then
-  return mp.CLEAN
-end
-local l_0_1 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("system32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("syswow64", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("winu.dll", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("win32u.dll", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("dcompfuzzer", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

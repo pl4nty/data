@@ -3,20 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\Software\\Classes\\CLSID\\{AB8902B4-09CA-4bb6-B78D-A8F59079A8D5}\\LocalServer32\\\001")
-if l_0_0 then
-  (sysio.DeleteRegKey)(l_0_0, nil)
+if (mp.GetResmgrBasePlugin)() ~= "AutorunInf" then
+  return mp.CLEAN
 end
-l_0_0 = (sysio.RegOpenKey)("HKCU\\Software\\Classes\\CLSID\\{AB8902B4-09CA-4bb6-B78D-A8F59079A8D5}\\LocalServer32\\\001")
-if l_0_0 then
-  (sysio.DeleteRegKey)(l_0_0, nil)
+local l_0_0 = false
+local l_0_1 = false
+if (mp.get_mpattribute)("Win32/AutoIt") or (mp.get_mpattribute)("Win32/AutoIt_HSTR1") or (mp.get_mpattribute)("Win32/AutoIt_HSTR2") then
+  l_0_0 = true
 end
-l_0_0 = (sysio.RegOpenKey)("HKLM\\Software\\Classes\\CLSID\\{73E709EA-5D93-4B2E-BBB0-99B7938DA9E4}\\LocalServer32\\\001")
-if l_0_0 then
-  (sysio.DeleteRegKey)(l_0_0, nil)
+if peattributes.isvbnative == true or peattributes.isvbpcode == true then
+  l_0_1 = true
 end
-l_0_0 = (sysio.RegOpenKey)("HKCU\\Software\\Classes\\CLSID\\{73E709EA-5D93-4B2E-BBB0-99B7938DA9E4}\\LocalServer32\\\001")
-if l_0_0 then
-  (sysio.DeleteRegKey)(l_0_0, nil)
+if l_0_0 and not (mp.get_mpattribute)("AGGREGATOR:SuspiciousAutoIt") then
+  return mp.CLEAN
 end
+if l_0_1 and not (mp.get_mpattribute)("RPF:vb_mfic") and not (mp.get_mpattribute)("RPF:vb_hfic") then
+  return mp.CLEAN
+end
+do return mp.CLEAN end
+return mp.INFECTED
 

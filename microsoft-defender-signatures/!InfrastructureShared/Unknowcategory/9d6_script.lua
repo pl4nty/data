@@ -3,114 +3,123 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 128 or mp.FOOTERPAGE_SZ < 22 then
+local l_0_0 = (string.lower)(((mp.getfilename)()):sub(-9))
+local l_0_1 = 4
+if l_0_0:sub(-4, -4) ~= "." then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+-- DECOMPILER ERROR at PC33: Unhandled construct in 'MakeBoolean' P1
+
+if l_0_0:sub(-8, -8) ~= "." and l_0_0:sub(-9, -9) ~= "." then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.getfilesize)()
-local l_0_1 = mp.FOOTERPAGE_SZ - 21
-if (mp.readu_u32)(footerpage, l_0_1) ~= 101010256 then
-  local l_0_2 = 276
-  local l_0_3 = (mp.readfile)(l_0_0 - l_0_2, l_0_2)
-  if l_0_3 == nil then
-    return mp.CLEAN
-  end
-  l_0_1 = (string.find)(l_0_3, "PK\005\006", 1, true)
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  l_0_1 = l_0_1 + mp.FOOTERPAGE_SZ - l_0_2
-end
+l_0_1 = 3
+local l_0_2 = {}
+l_0_2.exe = ""
+l_0_2.scr = ""
+l_0_2.cpl = ""
+l_0_2.cmd = ""
+l_0_2.bat = ""
+l_0_2.pif = ""
 do
-  local l_0_4 = (mp.readu_u32)(footerpage, l_0_1 + 12)
-  local l_0_5 = (mp.readu_u32)(footerpage, l_0_1 + 16)
-  if l_0_4 >= 5000 then
-    return mp.CLEAN
-  end
-  local l_0_6 = (mp.readfile)(l_0_5, l_0_4)
-  if l_0_6 == nil then
-    return mp.CLEAN
-  end
-  local l_0_7 = 0
-  local l_0_8 = 0
-  local l_0_9 = 0
-  local l_0_10 = false
-  local l_0_11 = false
-  local l_0_12 = false
-  local l_0_13 = false
-  local l_0_14 = 0
-  local l_0_15 = 0
-  local l_0_16 = 1
-  if (mp.readu_u32)(l_0_6, l_0_16) ~= 33639248 then
-    return mp.CLEAN
-  end
-  while 1 do
-    if l_0_16 ~= nil then
-      local l_0_17 = (mp.readu_u16)(l_0_6, l_0_16 + 28)
-      local l_0_18 = (string.sub)(l_0_6, l_0_16 + 46, l_0_16 + 46 + l_0_17 - 1)
-      local l_0_19 = (mp.readu_u32)(l_0_6, l_0_16 + 24)
-      if l_0_17 >= 6 and l_0_18 ~= nil then
-        if (string.find)(l_0_18, "word/media/image", 1, true) == 1 then
-          l_0_8 = l_0_8 + 1
-          l_0_9 = l_0_9 + l_0_19
-          local l_0_20 = (string.sub)(l_0_18, 18)
-          if l_0_20 == ".jpeg" then
-            l_0_12 = true
-          else
-            if l_0_20 == ".jpg" then
-              l_0_13 = true
-            else
-              if l_0_20 == ".png" then
-                l_0_10 = true
-              else
-                if l_0_20 == ".emf" then
-                  l_0_11 = true
-                end
-              end
-            end
-          end
-        else
-          do
-            if (string.find)(l_0_18, "word/vbaProject.bin", 1, true) == 1 then
-              l_0_14 = l_0_14 + 1
-              l_0_15 = l_0_15 + l_0_19
-            end
-            l_0_7 = l_0_7 + 1
-            do
-              local l_0_21 = l_0_16 + 46 + l_0_17
-              l_0_16 = nil
-              if l_0_21 >= l_0_4 or (mp.readu_u32)(l_0_6, l_0_21) == 33639248 then
-                l_0_16 = l_0_21
-              end
-              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out DO_STMT
-
-              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
-
-              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
-
-              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
-
-            end
-          end
-        end
-      end
-    end
-  end
-  if ((l_0_9 >= 22000 and l_0_9 <= 25000) or l_0_9 < 34000 or l_0_9 <= 47000) and ((l_0_15 >= 32000 and l_0_15 <= 48000) or l_0_15 < 10000 or l_0_15 <= 25000) then
-    (mp.set_mpattribute)("//Lua:OfficeZip.SuspiciousStructure.A")
-  else
-    if l_0_8 == 4 and l_0_14 == 0 and l_0_12 and l_0_11 and l_0_7 >= 20 and l_0_7 <= 23 and l_0_9 >= 65000 and l_0_9 <= 70000 and l_0_0 >= 75000 and l_0_0 <= 80000 then
-      (mp.set_mpattribute)("//Lua:OfficeZip.SuspiciousStructure.B")
+  if l_0_2[l_0_0:sub(-3)] then
+    local l_0_3 = {}
+    l_0_3.doc = ""
+    l_0_3.docm = ""
+    l_0_3.docx = ""
+    l_0_3.dot = ""
+    l_0_3.dotm = ""
+    l_0_3.dotx = ""
+    l_0_3.odt = ""
+    l_0_3.rtf = ""
+    l_0_3.ods = ""
+    l_0_3.xla = ""
+    l_0_3.xls = ""
+    l_0_3.xlam = ""
+    l_0_3.xlsb = ""
+    l_0_3.xlsm = ""
+    l_0_3.xlsx = ""
+    l_0_3.xlt = ""
+    l_0_3.xltm = ""
+    l_0_3.xltx = ""
+    l_0_3.odp = ""
+    l_0_3.pot = ""
+    l_0_3.potm = ""
+    l_0_3.potx = ""
+    l_0_3.ppa = ""
+    l_0_3.ppam = ""
+    l_0_3.pps = ""
+    l_0_3.ppsm = ""
+    l_0_3.ppsx = ""
+    l_0_3.ppt = ""
+    l_0_3.pptm = ""
+    l_0_3.pptx = ""
+    l_0_3.ani = ""
+    l_0_3.bmp = ""
+    l_0_3.cur = ""
+    l_0_3.emf = ""
+    l_0_3.gif = ""
+    l_0_3.ico = ""
+    l_0_3.jpeg = ""
+    l_0_3.jpg = ""
+    l_0_3.png = ""
+    l_0_3.raw = ""
+    l_0_3.tif = ""
+    l_0_3.tiff = ""
+    l_0_3.wmf = ""
+    l_0_3["3gp"] = ""
+    l_0_3.aac = ""
+    l_0_3.asf = ""
+    l_0_3.avi = ""
+    l_0_3.fla = ""
+    l_0_3.flac = ""
+    l_0_3.flv = ""
+    l_0_3.m3u = ""
+    l_0_3.m4v = ""
+    l_0_3.mkv = ""
+    l_0_3.mov = ""
+    l_0_3.mp3 = ""
+    l_0_3.mp4 = ""
+    l_0_3.mpe = ""
+    l_0_3.mpeg = ""
+    l_0_3.mpg = ""
+    l_0_3.ogg = ""
+    l_0_3.vma = ""
+    l_0_3.wav = ""
+    l_0_3.wmv = ""
+    l_0_3.cpp = ""
+    l_0_3.css = ""
+    l_0_3.csv = ""
+    l_0_3.eml = ""
+    l_0_3.gdoc = ""
+    l_0_3.hta = ""
+    l_0_3.htm = ""
+    l_0_3.html = ""
+    l_0_3.mht = ""
+    l_0_3.pdf = ""
+    l_0_3.php = ""
+    l_0_3.ttf = ""
+    l_0_3.txt = ""
+    l_0_3.xml = ""
+    l_0_3.cab = ""
+    l_0_3.gzip = ""
+    l_0_3.iso = ""
+    l_0_3.rar = ""
+    l_0_3.tar = ""
+    l_0_3.vhd = ""
+    l_0_3.zip = ""
+    l_0_3["3ds"] = ""
+    l_0_3.acad = ""
+    l_0_3.aws = ""
+    l_0_3.dwg = ""
+    l_0_3.dxf = ""
+    l_0_3.fas = ""
+    l_0_3.lsp = ""
+    l_0_3.mnl = ""
+    l_0_3.plf = ""
+    l_0_3.vlx = ""
+    if l_0_3[l_0_0:sub(-l_0_1 - 4, -5)] then
+      return mp.INFECTED
     end
   end
   return mp.CLEAN

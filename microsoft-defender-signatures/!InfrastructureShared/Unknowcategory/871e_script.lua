@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 102 and peattributes.isexe then
+if peattributes.isexe and peattributes.ismsil and peattributes.has_msilresources and peattributes.x86_image and peattributes.suspicious_number_of_dirs then
   return mp.INFECTED
 end
 return mp.CLEAN

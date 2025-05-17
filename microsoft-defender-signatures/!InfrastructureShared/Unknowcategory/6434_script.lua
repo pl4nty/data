@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and peattributes.no_security == true then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:PEHasIOAVURL") then
+  (mp.set_mpattribute)("HSTR:IOAVDownloadAdmin")
 end
 return mp.CLEAN
 

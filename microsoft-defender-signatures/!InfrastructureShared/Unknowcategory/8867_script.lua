@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 325888 then
-  (pe.reemulate)()
+if pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 8 and ((mp.get_mpattribute)("NID:CryptInject.AK!Pra1") or (mp.get_mpattribute)("NID:CryptInject.AK!Pra2")) then
   return mp.INFECTED
 end
 return mp.CLEAN

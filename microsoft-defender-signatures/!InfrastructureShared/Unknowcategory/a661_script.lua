@@ -3,50 +3,58 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = tonumber
-  local l_1_4 = (l_1_0:reverse()):gsub
-  do
-    local l_1_5 = l_1_0:reverse()
-    l_1_4 = l_1_4(l_1_5, ".", function(l_2_0)
-    -- function num : 0_0_0
-    local l_2_1 = string.format
-    local l_2_2 = "%02x"
-    do
-      local l_2_3, l_2_4 = (string.byte)(l_2_0), .end
-      do return l_2_1(l_2_2, l_2_3, l_2_4) end
-      -- DECOMPILER ERROR at PC9: Confused about usage of register R2 for local variables in 'ReleaseLocals'
-
+local l_0_0 = {}
+l_0_0["cmd.exe"] = true
+l_0_0["powershell.exe"] = true
+local l_0_1 = nil
+if (this_sigattrlog[1]).matched then
+  l_0_1 = (this_sigattrlog[1]).ppid
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_1 = (this_sigattrlog[2]).ppid
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_1 = (this_sigattrlog[3]).ppid
+    else
+      if (this_sigattrlog[4]).matched then
+        l_0_1 = (this_sigattrlog[4]).ppid
+      else
+        if (this_sigattrlog[5]).matched then
+          l_0_1 = (this_sigattrlog[5]).ppid
+        else
+          return mp.CLEAN
+        end
+      end
     end
   end
-)
-    local l_1_2 = nil
-    l_1_5 = 16
-    local l_1_3 = nil
-    do return l_1_1(l_1_4, l_1_5) end
-    -- DECOMPILER ERROR at PC10: Confused about usage of register R2 for local variables in 'ReleaseLocals'
-
+end
+local l_0_2 = nil
+if (this_sigattrlog[6]).matched then
+  l_0_2 = (this_sigattrlog[6]).ppid
+else
+  return mp.CLEAN
+end
+for l_0_6 = 1, 5 do
+  if l_0_6 > 6 then
+    return mp.CLEAN
+  end
+  local l_0_7, l_0_8 = (bm.get_process_relationships)(l_0_1)
+  for l_0_12,l_0_13 in ipairs(l_0_8) do
+    if l_0_13.reason == 1 then
+      local l_0_14 = (string.lower)((string.match)(l_0_13.image_path, "\\([^\\]+)$"))
+      if l_0_13.ppid == l_0_2 then
+        return mp.INFECTED
+      else
+        if l_0_0[l_0_14] ~= true then
+          (mp.ReportLowfi)(l_0_13.image_path, 187850996)
+          return mp.CLEAN
+        end
+      end
+      l_0_1 = l_0_13.ppid
+    end
   end
 end
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC118: Confused about usage of register R4 for local variables in 'ReleaseLocals'
 
-if not peattributes.hasappendeddata then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilesize)()
-local l_0_2 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA
-if l_0_2 == 0 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_3 = l_0_0((mp.readfile)(l_0_2, 4))
-;
-(mp.readprotection)(true)
-local l_0_4 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-local l_0_5 = l_0_1 - l_0_4
-if l_0_1 < l_0_3 and l_0_5 > 0 and l_0_5 < 20480 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

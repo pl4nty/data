@@ -3,26 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("SCRIPT:Poshkod.gen!A") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1048576 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(0, l_0_0)
-if #l_0_1 < 4096 and #l_0_1 > 1048576 then
-  return mp.CLEAN
-end
-for l_0_5 in (string.gmatch)(l_0_1, "AFsAcgBlAGYAbABl[%w+/]+=?=?") do
-  if #l_0_5 > 4096 then
-    (mp.vfo_add_buffer)((MpCommon.Base64Decode)("JwBCAG0AJwA7" .. l_0_5), "[Poshkod.gen!A]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-    break
-  end
-end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 do
+  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if (string.sub)(l_0_1, -28) == "\\start menu\\programs\\startup" and (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "acrord32info.exe" then
+      (mp.set_mpattribute)("Lua:SuspiciousAcrord32infoStartup.A")
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

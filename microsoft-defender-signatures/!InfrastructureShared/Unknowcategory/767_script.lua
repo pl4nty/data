@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattributesubstring)("MpContentDetected") and ((mp.get_mpattributesubstring)("Detection:HackTool:") or (mp.get_mpattributesubstring)("Detection:VirTool:")) and not (mp.get_mpattributesubstring)("AutoKMS") then
-  return mp.INFECTED
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN and (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) then
+  (mp.set_mpattribute)("MpCreatedOnExec")
 end
 return mp.CLEAN
 

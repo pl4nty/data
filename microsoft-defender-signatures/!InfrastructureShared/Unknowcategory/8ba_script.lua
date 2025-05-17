@@ -3,17 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-    if l_0_1:match("^pps[-]qq[-]19.exe$") or l_0_1:match("^05a00036.exe$") or l_0_1:match("^ucbrabs.exe$") then
-      if (mp.get_mpattribute)("SIGATTR:VirTool:Win32/LoadLibChg1stLetter") then
-        (mp.set_mpattribute)("Lowfi:Lua:MytonelFilenameAndObfus")
+if (mp.getfilesize)() == 32 then
+  local l_0_0 = (string.lower)((mp.getfilename)())
+  if (string.sub)(l_0_0, -4) == ".png" then
+    local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+    if ((string.sub)(l_0_1, -18) == "\\appdata\\locallow\\" or (string.sub)(l_0_1, -33) == "\\local settings\\application data\\") and (string.match)(l_0_2, "^%l%l%l%l%l%l%l%l%l%l%.png$") then
+      (mp.readprotection)(false)
+      local l_0_3 = (mp.readfile)(0, 32)
+      if not (string.match)(l_0_3, "[^%x]") then
+        return mp.INFECTED
       end
-      return mp.INFECTED
     end
   end
+end
+do
   return mp.CLEAN
 end
 

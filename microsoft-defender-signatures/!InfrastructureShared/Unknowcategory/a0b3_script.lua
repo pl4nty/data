@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.BaseOfData == 0 and pehdr.SizeOfInitializedData == 0 and pehdr.SizeOfUninitializedData == 0 and pehdr.SizeOfCode == 0 and (hstrlog[1]).VA - pehdr.ImageBase - (pesecs[1]).VirtualAddress == 4336 then
-  return mp.INFECTED
+if (pe.get_regval)(pe.REG_EBX) ~= 2147348480 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.byte)((pe.mmap_va)(pevars.sigaddr + 13, 1)) == 117 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 13, "êê")
+else
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 13, "\235")
+end
+return mp.INFECTED
 

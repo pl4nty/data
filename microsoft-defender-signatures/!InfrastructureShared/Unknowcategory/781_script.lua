@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 ~= nil and l_0_0 ~= "" and (string.find)(l_0_0, "\\contentstore\\log files\\webserver.log") then
+local l_0_0 = (mp.IOAVGetDownloadUrl)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)(((mp.getfilename)()):match("\\([^\\]+)$"))
+if (string.find)(l_0_1, "flash%s*player.*%.hta$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,20 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
-if not peattributes.amd64_image then
+local l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
+if not (sysio.IsFileExists)(l_0_1) then
   return mp.CLEAN
 end
-if not peattributes.hasexports then
-  return mp.CLEAN
+if (sysio.GetFileSize)(l_0_1) > 262144000 then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
+return mp.CLEAN
 

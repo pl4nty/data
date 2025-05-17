@@ -3,10 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (nri.IsResponse)() then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\mmc.exe") then
   return mp.CLEAN
+else
+  if (string.find)(l_0_0, "\\officeclicktorun.exe") then
+    return mp.CLEAN
+  end
 end
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
 return mp.INFECTED
 

@@ -3,9 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security and l_0_0 > 145000 and l_0_0 < 179000 and pehdr.NumberOfSections == 4 and (pesecs[3]).Name == "CONST" and (pesecs[3]).SizeOfRawData <= 8192 and (pesecs[3]).SizeOfRawData >= 2048 then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_1 = (string.gmatch)(l_0_0, "::readallbytes%([\'\"](.+)[\'\"]%)")
+  for l_0_5 in l_0_1 do
+    if (sysio.IsFileExists)(l_0_5) then
+      (bm.add_related_file)(l_0_5)
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

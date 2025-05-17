@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Spc")
+(mp.set_mpattribute)("MpRequestSMSH")
 return mp.INFECTED
 

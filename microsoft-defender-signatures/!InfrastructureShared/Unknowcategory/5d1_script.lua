@@ -3,63 +3,34 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (this_sigattrlog[1]).utf8p1
+if not l_0_0 or l_0_0 == "" then
+  return mp.CLEAN
+end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 and l_0_1.integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
+  local l_0_2 = (bm.get_imagepath)()
+  if l_0_2 then
+    l_0_2 = (string.lower)((MpCommon.PathToWin32Path)(l_0_2))
+    if l_0_2 and (not (mp.IsKnownFriendlyFile)(l_0_2, false, false) or (string.sub)(l_0_2, -15) == "\\powershell.exe" or (string.sub)(l_0_2, -8) == "\\cmd.exe") then
+      local l_0_3 = (sysio.QuerySymbolicLinkObject)("\\??\\globalroot\\device\\SystemPartition")
+      if l_0_3 then
+        local l_0_4 = (string.sub)(l_0_0, 1, -5)
+        local l_0_5 = (sysio.GetObjectDir)(l_0_4)
+        if l_0_5 then
+          for l_0_9,l_0_10 in pairs(l_0_5) do
+            if (string.find)(l_0_9, "Partition", 1, true) and (sysio.QuerySymbolicLinkObject)(l_0_4 .. "\\" .. l_0_9) == l_0_3 then
+              return mp.INFECTED
+            end
+          end
+        end
+      end
+    end
+  end
+end
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
-  else
-  end
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 ~= nil then
-    do return mp.CLEAN end
-    local l_0_3 = nil
-    for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
-      local l_0_4 = nil
-      -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC39 = (mp.ContextualExpandEnvironmentVariables)(R6_PC39)
-      if (string.lower)((string.sub)(R6_PC39, -14)) == "\\litetouch.wsf" then
-        return mp.CLEAN
-      end
-      if (sysio.IsFileExists)(l_0_9) and not (mp.IsKnownFriendlyFile)(l_0_9, true, false) then
-        (bm.add_related_file)(l_0_9)
-      end
-    end
-    local l_0_10 = nil
-    -- DECOMPILER ERROR at PC87: Overwrote pending register: R2 in 'AssignReg'
-
-    if not (this_sigattrlog[3]).matched or not nil then
-      return mp.CLEAN
-    end
-    local l_0_11 = nil
-    for l_0_15,l_0_16 in ipairs(l_0_11) do
-      local l_0_12 = false
-      -- DECOMPILER ERROR at PC102: Confused about usage of register: R8 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC117: Confused about usage of register: R8 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC126: Confused about usage of register: R8 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC135: Confused about usage of register: R8 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC144: Confused about usage of register: R8 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC150: Confused about usage of register: R8 in 'UnsetPending'
-
-      if not (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), "\\windows\\system32\\", 1, true) and ((string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), "\\appdata\\", 1, true) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), "\\temp\\", 1, true) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), "\\public\\", 1, true)) and (sysio.IsFileExists)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file))) and not (mp.IsKnownFriendlyFile)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), true, false) then
-        l_0_12 = true
-        -- DECOMPILER ERROR at PC159: Confused about usage of register: R8 in 'UnsetPending'
-
-        ;
-        (bm.add_related_file)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)))
-      end
-    end
-    -- DECOMPILER ERROR at PC163: Confused about usage of register: R3 in 'UnsetPending'
-
-    if l_0_12 then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+  l_0_2 = mp
+  l_0_2 = l_0_2.CLEAN
+  return l_0_2
 end
 

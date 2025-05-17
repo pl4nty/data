@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_no_relocs") and (mp.getfilesize)() >= 315392 and (mp.getfilesize)() < 368640 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if not peattributes.hasappendeddata then
   return mp.CLEAN
 end
+if (mp.getfilesize)() < 150000 then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() > 200000 then
+  return mp.CLEAN
+end
+if epcode[1] == 137 and epcode[2] == 224 and epcode[3] == 163 and epcode[8] == 137 and epcode[9] == 232 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

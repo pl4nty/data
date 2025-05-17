@@ -3,9 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -13) == "\\iexplore.exe" or (string.sub)(l_0_0, -11) == "\\chrome.exe" or (string.sub)(l_0_0, -18) == "\\microsoftedge.exe" or (string.sub)(l_0_0, -20) == "\\microsoftedgecp.exe" or (string.sub)(l_0_0, -12) == "\\firefox.exe" then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 16, 37)
+local l_0_1 = (mp.readu_u32)(l_0_0, 2)
+if (mp.readu_u32)(l_0_0, 20) ~= l_0_1 then
   return mp.CLEAN
 end
+local l_0_2 = (mp.readu_u32)(l_0_0, 13)
+l_0_0 = (pe.mmap_va)(l_0_2, 4)
+local l_0_3 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
+if l_0_3 ~= 2185195070 then
+  return mp.CLEAN
+end
+;
+(pe.mmap_patch_va)(l_0_1, "\221\a")
 return mp.INFECTED
 

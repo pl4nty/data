@@ -3,12 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 and not (mp.get_mpattribute)("deep_analysis") then
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
+if peattributes.isexe == true and (mp.getfilesize)() > 21000000 and (mp.getfilesize)() < 22000000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
 end
-;
-(mp.set_mpattribute)("PUA:Block:BrowseFox")
-return mp.INFECTED
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

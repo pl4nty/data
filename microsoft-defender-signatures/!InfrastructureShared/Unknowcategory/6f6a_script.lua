@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.checks_if_debugged_undocumented then
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 3140000 then
   return mp.INFECTED
 end
 return mp.CLEAN

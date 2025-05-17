@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and pehdr.NumberOfSections == 3 and peattributes.no_security == true then
+if peattributes.isdll == true and peattributes.amd64_image and pehdr.NumberOfSections == 10 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -19,7 +19,7 @@ do
       local l_0_3 = nil
       -- DECOMPILER ERROR at PC18: Confused about usage of register: R6 in 'UnsetPending'
 
-      if (R6_PC18:len() < 12 or (string.lower)((string.sub)(R6_PC18, -12)) ~= "rundll32.exe") and (sysio.IsFileExists)(R6_PC18) then
+      if (R6_PC18:len() < 8 or (string.lower)((string.sub)(R6_PC18, -8)) ~= "wmic.exe") and (sysio.IsFileExists)(R6_PC18) then
         (bm.add_related_file)(R6_PC18)
       end
     end

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattributeex)("FOP:GoLang32", pevars.sigaddr)
+if (mp.get_mpattribute)("RPF:TopLevelFile") then
+  return mp.LOWFI
+end
 return mp.CLEAN
 

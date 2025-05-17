@@ -3,20 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if l_0_1:find("\\downloads", 1, true) then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    if l_0_2:len() > 4 and (string.sub)(l_0_2, -4) == ".hta" then
-      if l_0_1:find("\\downloads\\toolbox", 1, true) or l_0_1:find("appdata", 1, true) or l_0_1:find("programdata", 1, true) or l_0_1:find("\\mf.+mfdriver") then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
+if (mp.readu_u32)(headerpage, 5) == 151587081 and (mp.getfilesize)() > 200000000 and (mp.crc32)(-1, headerpage, 1, 1024) == 2898363002 and (string.find)((mp.getfilename)(), "(RarSfx)", 1, true) then
+  (mp.set_mpattribute)("Lua:AutoItRarSfxLargeScript")
+  ;
+  (mp.set_mpattribute)("//AutRarLrgScpt")
 end
 do
+  if (mp.readu_u32)(headerpage, 5) == 168626701 then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 10000 and l_0_0 <= 60000 and (mp.crc32)(-1, headerpage, 1, 256) == 1133461959 and (string.find)((mp.getfilename)(), "(RarSfx)", 1, true) then
+      (mp.set_mpattribute)("Lua:TrimWhiteSpaceAutoItRarSfxConfig")
+    end
+  end
   return mp.CLEAN
 end
 

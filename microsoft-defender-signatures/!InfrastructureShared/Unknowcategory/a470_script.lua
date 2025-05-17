@@ -3,23 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "\\powershell.exe"
-local l_0_1 = (string.len)(l_0_0)
-local l_0_2 = false
-local l_0_3, l_0_4 = (bm.get_process_relationships)()
-for l_0_8,l_0_9 in ipairs(l_0_3) do
-  if l_0_9.image_path ~= nil and (mp.bitand)(l_0_9.reason_ex, 1) == 1 and l_0_1 < (string.len)(l_0_9.image_path) and (string.sub)(l_0_9.image_path, -l_0_1) == l_0_0 then
-    l_0_2 = true
-    break
-  end
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 == nil or #l_0_0 < 1 then
+  return mp.CLEAN
+end
+l_0_0 = (string.lower)(l_0_0)
+local l_0_1 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  l_0_1 = (this_sigattrlog[1]).utf8p1
+end
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+if (string.sub)(l_0_0, -#l_0_1) ~= l_0_1 then
+  return mp.CLEAN
 end
 do
-  if l_0_2 == false then
-    return mp.CLEAN
-  end
-  local l_0_10 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-  if l_0_10 ~= nil then
-    (mp.ReportLowfi)(l_0_10, 3640120989)
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_2 = (this_sigattrlog[2]).utf8p2
+    if (sysio.IsFileExists)(l_0_2) then
+      (bm.add_related_file)(l_0_2)
+    end
   end
   return mp.INFECTED
 end

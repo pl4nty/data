@@ -3,27 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1, l_0_2 = nil, nil
-  local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  if l_0_3 == nil then
-    l_0_1 = (mp.getfilename)()
-    if l_0_1 == nil then
-      return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("programdata", 1, true) == nil then
+  return mp.CLEAN
+end
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+if l_0_2:len() == 12 and l_0_2:sub(-4) == ".dll" then
+  local l_0_3, l_0_4 = l_0_1:match("(.+\\)(.+)\\$")
+  if l_0_4:len() == 8 then
+    local l_0_5, l_0_6 = (string.gsub)(l_0_4, "%d", "")
+    local l_0_7, l_0_8 = (string.gsub)(l_0_2, "%d", "")
+    if l_0_8 >= 1 and l_0_6 >= 1 and l_0_8 + l_0_6 >= 3 and l_0_2:match("%x%x%x%x%x%x%x%x.dll") and l_0_4:match("%x%x%x%x%x%x%x%x") then
+      (mp.set_mpattribute)("LUA:Adposhell:Name")
     end
-    l_0_2 = l_0_1:sub(-4)
-  else
-    l_0_2 = l_0_3:sub(-4)
-  end
-  if l_0_2:lower() ~= ".vbs" and l_0_2:lower() ~= ".vbe" then
-    return mp.CLEAN
-  end
-  if l_0_3 == nil then
-    l_0_3 = l_0_1:match("([^\\]+)$")
-  end
-  if l_0_3:match("^%a%a%a%a%a%a%a%a%a%a%.%.vbs$") ~= nil or l_0_3:match("^%a%a%a%a%a%a%a%a%a%a%.%.vbe$") ~= nil then
-    return mp.INFECTED
   end
 end
 do

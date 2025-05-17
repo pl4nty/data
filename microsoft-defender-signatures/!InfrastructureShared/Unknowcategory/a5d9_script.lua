@@ -3,23 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if not (string.find)(l_0_0, "^c:\\") and not (string.find)(l_0_0, "^\\\\") then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if (string.find)(l_0_0, ".aspx", -5, true) and ((string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\frontend\\") ~= nil or (string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\clientaccess\\") ~= nil or (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\v%d%d\\template\\layouts\\") ~= nil or (string.find)(l_0_0, "\\frontend\\httpproxy\\owa\\", 1, true) ~= nil or (string.find)(l_0_0, "\\inetpub\\wwwroot\\", 1, true) ~= nil) then
+  (mp.ReportLowfi)(l_0_0, 2037457591)
+  return mp.INFECTED
 end
-if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\cisco\\cisco", 1, true) then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "ExecutedPENoCert")
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_2 = (mp.enum_mpattributesubstring)("Behavior:")
-if #l_0_2 == 0 or l_0_2 == nil then
-  return mp.CLEAN
-end
-for l_0_6,l_0_7 in ipairs(l_0_2) do
-  (bm.add_related_string)("RelatedBMHits", l_0_7, bm.RelatedStringBMReport)
-end
-return mp.INFECTED
+return mp.CLEAN
 

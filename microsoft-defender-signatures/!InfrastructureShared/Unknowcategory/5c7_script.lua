@@ -3,21 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 40000000 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 and MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+local l_0_1 = (sysio.RegExpandUserKey)("HKCU\\Software\\Classes\\Ms-Settings\\Shell\\Open\\Command")
+if l_0_1 then
+  for l_0_5,l_0_6 in pairs(l_0_1) do
+    local l_0_7 = (sysio.RegOpenKey)(l_0_6)
+    if l_0_7 then
+      local l_0_8 = (sysio.GetRegValueType)(l_0_7, "DelegateExecute")
+      if l_0_8 then
+        local l_0_9 = (sysio.GetRegValueAsString)(l_0_7, "")
+        if l_0_9 and (string.len)(l_0_9) > 4 then
+          return mp.INFECTED
+        end
+      end
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpcmdrun.exe", 1, true) then
-  return mp.CLEAN
-end
-if not (this_sigattrlog[4]).matched then
-  return mp.CLEAN
-end
-if (string.match)(l_0_0, "([^\\]-[^\\%.]+)$") == (string.lower)((this_sigattrlog[4]).utf8p1) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

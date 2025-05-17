@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("Company:IntelliBreezeSoftware")
-return mp.INFECTED
+if peattributes.isvbnative then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

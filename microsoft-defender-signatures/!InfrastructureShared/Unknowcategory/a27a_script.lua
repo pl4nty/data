@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 5447680 and l_0_0 < 6164480 and (pe.query_import)(pe.IMPORT_STATIC, 3164448353) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2744197095) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2717511079) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 537135066) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3293213921) ~= 0 then
-      return mp.INFECTED
-    end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\steam", 1, true) or (string.find)((string.lower)(l_0_0), "torrent.exe", 1, true) or (string.find)((string.lower)(l_0_0), "game", 1, true) then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
+return mp.CLEAN
 

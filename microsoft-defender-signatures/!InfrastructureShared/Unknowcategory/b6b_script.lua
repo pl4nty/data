@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("SIGATTR:Ardamax")
+(mp.set_mpattribute)("MpRequestSMSH")
 return mp.INFECTED
 

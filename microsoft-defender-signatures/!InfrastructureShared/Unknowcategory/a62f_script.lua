@@ -3,13 +3,49 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 0 and epcode[2] == 131 and epcode[3] == 236 and epcode[5] == 232 and epcode[11] == 131 and epcode[12] == 196 and epcode[14] == 233 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_lastscn_writable") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") then
-  if (pesecs[1]).SizeOfRawData < (pesecs[pehdr.NumberOfSections]).SizeOfRawData then
-    return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_8 = nil
   end
-  if (mp.get_mpattribute)("pea_executes_from_last_section") then
-    return mp.INFECTED
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+
+      if (sysio.IsFileExists)(R6_PC25) and (string.find)(".hta", (string.sub)((string.lower)(R6_PC25), -4), 1, true) then
+        (mp.ReportLowfi)(R6_PC25, 3795027138)
+        ;
+        (bm.add_related_file)(R6_PC25)
+      end
+    end
+  end
+  do
+    local l_0_9 = nil
+    if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+      l_0_9 = (this_sigattrlog[3]).utf8p2
+    end
+    if l_0_9 ~= nil then
+      local l_0_10 = (mp.GetExecutablesFromCommandLine)(l_0_9)
+      for l_0_14,l_0_15 in ipairs(l_0_10) do
+        if (sysio.IsFileExists)(l_0_15) and (string.find)(".js", (string.sub)((string.lower)(l_0_15), -3), 1, true) then
+          (mp.ReportLowfi)(l_0_15, 3795027138)
+          ;
+          (bm.add_related_file)(l_0_15)
+        end
+      end
+    end
+    do
+      l_0_10 = mp
+      l_0_10 = l_0_10.INFECTED
+      return l_0_10
+    end
   end
 end
-return mp.CLEAN
 

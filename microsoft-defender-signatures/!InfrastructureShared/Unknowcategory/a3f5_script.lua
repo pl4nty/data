@@ -3,26 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 5 then
+local l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p1)
+if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
   return mp.CLEAN
 end
-if not peattributes.x86_image then
-  return mp.CLEAN
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
 end
-if (pesecs[1]).SizeOfRawData < 483328 or (pesecs[1]).SizeOfRawData > 495616 then
-  return mp.CLEAN
-end
-if (pesecs[2]).SizeOfRawData > 8192 then
-  return mp.CLEAN
-end
-if (pesecs[3]).SizeOfRawData ~= 12288 then
-  return mp.CLEAN
-end
-if (pesecs[4]).SizeOfRawData ~= 4096 then
-  return mp.CLEAN
-end
-if (pesecs[5]).SizeOfRawData < 1146880 or (pesecs[5]).SizeOfRawData > 1196032 then
-  return mp.CLEAN
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
 end
 return mp.INFECTED
 

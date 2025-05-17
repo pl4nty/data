@@ -3,7 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 10 and (pesecs[6]).Name == ".driver" and (pesecs[7]).NameDW == 1734763310 and ((pesecs[8]).NameDW == 1667331374 or (pesecs[10]).NameDW == 1667331374) then
+local l_0_0 = (mp.IOAVGetDownloadUrl)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.len)(l_0_0) < 12 then
+  return mp.CLEAN
+end
+l_0_0 = (string.lower)(l_0_0)
+if (string.find)(l_0_0, "/wp-content/", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:ConduitSearchProtect")
+if peattributes.isdriver == false then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

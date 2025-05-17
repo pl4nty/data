@@ -3,27 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0["winword.exe"] = true
-l_0_0["excel.exe"] = true
-l_0_0["powerpnt.exe"] = true
-l_0_0["outlook.exe"] = true
-l_0_0["iexplore.exe"] = true
-l_0_0["microsoftedge.exe"] = true
-l_0_0["chrome.exe"] = true
-l_0_0["firefox.exe"] = true
-local l_0_1 = (mp.GetParentProcInfo)()
-if l_0_1 ~= nil then
-  local l_0_2 = (string.lower)(l_0_1.image_path)
-  local l_0_3 = (string.match)(l_0_2, "\\([^\\]+)$")
-  if l_0_3 == "" or l_0_3 == nil then
-    return mp.CLEAN
-  end
-  if l_0_0[l_0_3] == true then
-    return mp.INFECTED
+local l_0_0, l_0_1 = nil, nil
+for l_0_5 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_2, l_0_3 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R5 in 'UnsetPending'
+
+  if (sigattr_head[R5_PC6]).matched then
+    if (sigattr_head[R5_PC6]).attribute == 16384 or (sigattr_head[R5_PC6]).attribute == 16385 then
+      l_0_3 = (string.lower)((sigattr_head[R5_PC6]).utf8p1)
+    else
+      if (sigattr_head[R5_PC6]).attribute == 16393 then
+        l_0_2 = (string.lower)((sigattr_head[R5_PC6]).utf8p2)
+      end
+    end
+    if l_0_3 and l_0_2 and (string.find)(l_0_2, l_0_3) then
+      return mp.INFECTED
+    end
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

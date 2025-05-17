@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetScanSource)() == mp.SCANSOURCE_UCL then
+if (mp.get_mpattributesubstring)(":ReconWL:") then
   return mp.INFECTED
 end
 return mp.CLEAN

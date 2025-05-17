@@ -3,8 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or pevars.epsec ~= 1 or (pesecs[pevars.epsec]).Name ~= ".text" or (pesecs[2]).Name ~= ".data" or (pesecs[3]).Name ~= ".rsrc" or not peattributes.no_decription or peattributes.suspicious_image_version) then
-  return mp.INFECTED
+if peattributes.isdll ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.epscn_islast ~= true then
+  return mp.CLEAN
+end
+if peattributes.lastscn_writable ~= true then
+  return mp.CLEAN
+end
+if epcode[1] ~= 131 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 124 then
+  return mp.CLEAN
+end
+if epcode[3] ~= 36 then
+  return mp.CLEAN
+end
+if epcode[5] ~= 1 then
+  return mp.CLEAN
+end
+if epcode[6] ~= 117 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

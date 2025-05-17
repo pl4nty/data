@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
+if peattributes.isexe and peattributes.x86_image and peattributes.suspicious_dosheader and peattributes.suspicious_image_version then
   return mp.INFECTED
 end
 return mp.CLEAN

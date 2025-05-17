@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 20480 then
+if (mp.getfilesize)() > 1000000 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.readheader)(0, 16)
-if (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true) then
-  return mp.INFECTED
+if (pesecs[1]).Name == "UPX0" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 15000)
+return mp.INFECTED
 

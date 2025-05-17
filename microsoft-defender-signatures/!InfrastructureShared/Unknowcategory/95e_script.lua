@@ -5,29 +5,30 @@
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = {}
-  l_0_1["payload.exe"] = true
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_1[l_0_2] then
-    local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    do
-      do
-        if (string.find)(l_0_3, "\\local settings\\temp", 1, true) or (string.find)(l_0_3, "\\appdata\\local\\temp", 1, true) then
-          local l_0_4, l_0_5, l_0_6 = nil, nil, nil
-          l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-          l_0_4 = (string.lower)(l_0_6)
-          l_0_5 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
-          if l_0_4 == nil or l_0_5 == nil then
-            return mp.CLEAN
-          end
-          if (string.sub)(l_0_4, -4) == ".exe" then
-            (mp.ReportLowfi)((MpCommon.PathToWin32Path)(l_0_5) .. "\\" .. l_0_6, 1932906471)
-          end
-        end
-        do return mp.CLEAN end
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if (string.sub)(l_0_1, 2) == ":\\program files\\common files" or (string.sub)(l_0_1, 2) == ":\\programdata" then
+    if peattributes.isdll then
+      return mp.CLEAN
+    end
+    local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+    local l_0_3 = (string.len)(l_0_2)
+    if l_0_3 ~= 13 then
+      return mp.CLEAN
+    end
+    for l_0_7 = 1, l_0_3 - 4 do
+      local l_0_8 = (string.byte)(l_0_2, l_0_7)
+      if l_0_8 < 97 or l_0_8 > 122 then
         return mp.CLEAN
       end
     end
+    local l_0_9 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_ATTRIBUTES)
+    if (mp.bitand)(l_0_9, 3) ~= 0 then
+      (mp.set_mpattribute)("Lua:Neurevt.A")
+      return mp.INFECTED
+    end
   end
+end
+do
+  return mp.CLEAN
 end
 

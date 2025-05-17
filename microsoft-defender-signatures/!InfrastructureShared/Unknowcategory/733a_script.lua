@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((bm.get_current_process_startup_info)()).integrity_level <= MpCommon.SECURITY_MANDATORY_LOW_RID then
+if (peattributes.isvbnative == true and pehdr.NumberOfSections == 3) or peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

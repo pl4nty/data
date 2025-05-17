@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) and ((hstrlog[4]).matched or (hstrlog[5]).matched) then
+if (mp.get_mpattribute)("pea_isdll") and pehdr.NumberOfSections == 5 and peattributes.hasexports == true then
   return mp.INFECTED
 end
 return mp.CLEAN

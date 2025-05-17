@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:DownloadAdmin")
+(mp.set_mpattribute)("PUA:Block:GoFileExpress")
 return mp.INFECTED
 

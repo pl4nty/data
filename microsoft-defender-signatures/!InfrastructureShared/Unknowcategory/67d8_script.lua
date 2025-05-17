@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 303104 then
+if peattributes.no_security == true and peattributes.isdll and peattributes.hasexports then
   return mp.INFECTED
 end
 return mp.CLEAN

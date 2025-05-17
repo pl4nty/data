@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or not (mp.get_mpattribute)("pea_hasexports") then
-  return mp.CLEAN
+if peattributes.x86_image == true and peattributes.hasexports == true and peattributes.epoutofimage == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.no_ep == true then
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 2097152 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

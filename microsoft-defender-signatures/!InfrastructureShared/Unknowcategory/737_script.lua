@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.sub)(l_0_0, -12) == "\\temp\\tl.vbs" then
-  (mp.set_mpattribute)("Lua:FakePAVVBSFileName.A")
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 == nil or l_0_0.integrity_level == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID <= l_0_0.integrity_level then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

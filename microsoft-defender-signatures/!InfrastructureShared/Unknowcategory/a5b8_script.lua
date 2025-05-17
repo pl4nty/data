@@ -3,34 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 2000000 or l_0_0 < 4000 then
+local l_0_0 = (string.lower)((nri.GetHttpRequestHeader)("referer"))
+if (string.find)(l_0_0, "live.com", 1, true) or (string.find)(l_0_0, "bing.com", 1, true) or (string.find)(l_0_0, "msn.com", 1, true) or (string.find)(l_0_0, "yahoo.com", 1, true) or (string.find)(l_0_0, "windowssearch.com", 1, true) or (string.find)(l_0_0, "conduit.com", 1, true) then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("threatsieve", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("pc-sdk-setup", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("processcheck", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("empengine", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("browser", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("lhshield", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find(".arx", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find(".zrx", 1, true) then
-  return mp.CLEAN
-end
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), (mp.bitor)(nri.Telemetry_QUERY, nri.Telemetry_REFERER)))
 return mp.INFECTED
 

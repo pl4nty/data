@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-;
-(table.insert)(l_0_0, (bm.get_imagepath)())
-;
-(MpCommon.SetPersistContextNoPath)("UACBypassExp.ZK!dllhost", l_0_0, 3)
+if peattributes.ismsil == true and (pesecs[4]).Name == ".bss" and (pesecs[4]).Characteristics == 3221225536 then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

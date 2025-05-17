@@ -3,53 +3,33 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 4 then
+if (mp.getfilesize)() > 259840 or (mp.getfilesize)() < 132864 or peattributes.isdll == false or peattributes.hasexports == false or peattributes.suspicious_timestamp == false then
   return mp.CLEAN
 end
-if pehdr.SizeOfImage < 262144 then
-  return mp.CLEAN
+local l_0_0 = pehdr.ImageBase + pehdr.AddressOfEntryPoint
+if (hstrlog[1]).matched and l_0_0 - (hstrlog[1]).VA < 21 then
+  return mp.INFECTED
 end
-if pehdr.SizeOfImage > 389120 then
-  return mp.CLEAN
+if (hstrlog[2]).matched and l_0_0 - (hstrlog[2]).VA < 21 then
+  return mp.INFECTED
 end
-if ((pehdr.DataDirectory)[2]).Size < 160 then
-  return mp.CLEAN
+if (hstrlog[3]).matched and l_0_0 - (hstrlog[3]).VA < 21 then
+  return mp.INFECTED
 end
-if ((pehdr.DataDirectory)[2]).Size > 240 then
-  return mp.CLEAN
+if (hstrlog[4]).matched and l_0_0 - (hstrlog[4]).VA < 21 then
+  return mp.INFECTED
 end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
+if (hstrlog[5]).matched and l_0_0 - (hstrlog[5]).VA < 21 then
+  return mp.INFECTED
 end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
+if (hstrlog[6]).matched and l_0_0 - (hstrlog[6]).VA < 21 then
+  return mp.INFECTED
 end
-if peattributes.no_relocs ~= true then
-  return mp.CLEAN
+if (hstrlog[7]).matched and l_0_0 - (hstrlog[7]).VA < 21 then
+  return mp.INFECTED
 end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
+if (hstrlog[8]).matched and l_0_0 - (hstrlog[8]).VA < 21 then
+  return mp.INFECTED
 end
-if (pesecs[pevars.epsec]).VirtualAddress ~= 4096 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData < 2048 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData > 8192 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW == 1920168494 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW == 2019914798 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW == 2019914798 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

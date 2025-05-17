@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 30, 96)
-local l_0_1 = (string.byte)(l_0_0, 1) + 2
-if #l_0_0 < l_0_1 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_0, l_0_1) == 232 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 90112 and l_0_0 <= 98304 and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 and (mp.get_mpattribute)("NID:Hupigon.A!Pra1") then
   return mp.INFECTED
 end
 return mp.CLEAN

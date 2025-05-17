@@ -3,24 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched then
-  local l_0_0 = nil
-  if (this_sigattrlog[2]).utf8p2 ~= nil then
-    l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  end
-  if l_0_0 ~= nil then
-    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    for l_0_5,l_0_6 in ipairs(l_0_1) do
-      l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-      if (sysio.IsFileExists)(l_0_6) then
-        (bm.add_related_file)(l_0_6)
+if not (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1024 then
+  (mp.set_mpattribute)("LnkArggt400b")
+else
+  if l_0_0 > 512 then
+    (mp.set_mpattribute)("LnkArggt200b")
+  else
+    if l_0_0 > 256 then
+      (mp.set_mpattribute)("LnkArggt100b")
+    else
+      if l_0_0 > 128 then
+        (mp.set_mpattribute)("LnkArggt80b")
+      else
+        if l_0_0 > 80 then
+          (mp.set_mpattribute)("LnkArggt50b")
+        end
       end
     end
   end
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
-end
+return mp.CLEAN
 

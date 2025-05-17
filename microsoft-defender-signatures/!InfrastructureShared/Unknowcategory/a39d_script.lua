@@ -3,19 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
+local l_0_0 = (this_sigattrlog[3]).utf8p2
+if not l_0_0 or #l_0_0 < 8 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
+local l_0_1, l_0_2 = (string.find)(l_0_0, "--%x+")
+if l_0_1 ~= 1 or l_0_2 < l_0_1 or l_0_2 - l_0_1 < 8 then
   return mp.CLEAN
 end
-if (string.sub)(l_0_1, -5, -1) == ",WW50" or (string.sub)(l_0_1, -6, -1) == ", WW50" or (string.sub)(l_0_1, -5, -1) == ",N115" or (string.sub)(l_0_1, -6, -1) == ", N115" then
-  if l_0_0 ~= nil then
-    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+local l_0_3 = (bm.get_imagepath)()
+local l_0_4, l_0_5 = (bm.get_process_relationships)()
+for l_0_9,l_0_10 in ipairs(l_0_5) do
+  if l_0_10.image_path == l_0_3 then
+    (MpCommon.RequestSmsOnProcess)(l_0_10.ppid, MpCommon.SMS_SCAN_MED)
   end
-  return mp.INFECTED
 end
-return mp.CLEAN
+return mp.INFECTED
 

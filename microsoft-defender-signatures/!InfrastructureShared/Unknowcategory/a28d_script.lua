@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-for l_0_4 = mp.SIGATTR_LOG_SZ, 1, -1 do
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
-
-  if (sigattr_head[R4_PC6]).matched and ((sigattr_head[R4_PC6]).attribute == 16384 or (sigattr_head[R4_PC6]).attribute == 16385) then
-    l_0_1 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[R4_PC6]).utf8p1)
-    if l_0_1 ~= nil and (sysio.IsFileExists)(l_0_1) then
-      (mp.ReportLowfi)(l_0_1 .. "\000", 3307547556)
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() < 61440 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

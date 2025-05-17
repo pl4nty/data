@@ -3,50 +3,66 @@
 
 -- params : ...
 -- function num : 0
-local l_0_3 = nil
-local l_0_4 = nil
-local l_0_5 = nil
-local l_0_6 = "ftp-brute-"
-local l_0_7 = 30
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R2 in 'AssignReg'
+
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = 60
+  if (this_sigattrlog[1]).matched then
+    local l_0_13, l_0_18 = nil, nil
+    local l_0_0, l_0_2, l_0_4, l_0_6, l_0_8, l_0_9, l_0_11, l_0_14, l_0_16 = nil
   end
-  do
-    if (this_sigattrlog[3]).matched then
-      local l_0_1 = nil
-    end
+  if (this_sigattrlog[2]).matched then
+    local l_0_1 = l_0_13
+  else
     do
-      if (this_sigattrlog[4]).matched then
-        local l_0_2 = nil
-      end
-      if l_0_3 ~= nil and l_0_4 ~= nil and l_0_5 ~= nil then
-        local l_0_8 = nil
-        local l_0_9, l_0_10 = 0, 10
-        if not pcall(MpCommon.RollingQueueCreate, l_0_6 .. l_0_3 .. "-" .. l_0_4, l_0_7, l_0_8, 1) then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC56: Confused about usage of register: R8 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC27: Overwrote pending register: R1 in 'AssignReg'
 
-        if not pcall(MpCommon.RollingQueueAppend, l_0_6 .. l_0_3 .. "-" .. l_0_4, l_0_5, "", l_0_8) then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC71: Confused about usage of register: R8 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC36: Overwrote pending register: R1 in 'AssignReg'
 
-        if not pcall(MpCommon.RollingQueueCount, l_0_6 .. l_0_3 .. "-" .. l_0_4) then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC85: Confused about usage of register: R8 in 'UnsetPending'
-
-        if l_0_10 <= l_0_9 then
-          pcall(MpCommon.RollingQueueErase, l_0_6 .. l_0_3 .. "-" .. l_0_4)
-          return mp.INFECTED
-        end
-      end
-      do
+      if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+        local l_0_3 = nil
+      else
         do
-          do return mp.CLEAN end
-          -- WARNING: undefined locals caused missing assignments!
+          -- DECOMPILER ERROR at PC45: Overwrote pending register: R1 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC54: Overwrote pending register: R1 in 'AssignReg'
+
+          if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
+            local l_0_5 = nil
+          else
+            do
+              -- DECOMPILER ERROR at PC63: Overwrote pending register: R1 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC72: Overwrote pending register: R1 in 'AssignReg'
+
+              do
+                if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
+                  local l_0_7, l_0_10, l_0_12, l_0_15, l_0_17 = , (this_sigattrlog[2]).utf8p2
+                else
+                end
+                -- DECOMPILER ERROR at PC82: Confused about usage of register: R0 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC86: Confused about usage of register: R2 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC90: Unhandled construct in 'MakeBoolean' P3
+
+                if ((this_sigattrlog[9]).matched and not l_0_7) or not l_0_12 then
+                  return mp.CLEAN
+                end
+                -- DECOMPILER ERROR at PC93: Confused about usage of register: R2 in 'UnsetPending'
+
+                local l_0_19 = nil
+                if not (string.match)(l_0_12, "/([^/]+)$") then
+                  return mp.CLEAN
+                end
+                -- DECOMPILER ERROR at PC103: Confused about usage of register: R1 in 'UnsetPending'
+
+                if (string.find)((this_sigattrlog[9]).utf8p2, (string.match)(l_0_12, "/([^/]+)$"), 1, true) then
+                  return mp.INFECTED
+                end
+                return mp.CLEAN
+              end
+            end
+          end
         end
       end
     end

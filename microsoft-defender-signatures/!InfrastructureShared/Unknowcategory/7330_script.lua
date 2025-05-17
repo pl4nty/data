@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports and pevars.sigaddr == 268439552 then
-  (mp.set_mpattribute)("attrmatch_rescan_notiexplore")
+if (peattributes.isvbnative == true and pehdr.NumberOfSections == 3) or peattributes.no_security == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

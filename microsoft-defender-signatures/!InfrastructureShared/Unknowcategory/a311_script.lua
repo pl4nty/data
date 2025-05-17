@@ -3,19 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isvbnative and not peattributes.isvbpcode then
-  return mp.CLEAN
-end
-if (hstrlog[1]).matched then
-  local l_0_0 = (hstrlog[1]).VA
-  ;
-  (mp.readprotection)(false)
-  local l_0_1 = (pe.mmap_va)(l_0_0 + 62, 4)
-  if (string.byte)(l_0_1, 1) == (string.byte)(l_0_1, 4) and (string.byte)(l_0_1, 2) == (string.byte)(l_0_1, 3) then
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC18: Confused about usage of register: R6 in 'UnsetPending'
+
+      if (R6_PC18:len() < 12 or (string.lower)((string.sub)(R6_PC18, -12)) ~= "rundll32.exe") and (sysio.IsFileExists)(R6_PC18) then
+        (bm.add_related_file)(R6_PC18)
+      end
+    end
+  end
+  do
     return mp.INFECTED
   end
-end
-do
-  return mp.CLEAN
 end
 

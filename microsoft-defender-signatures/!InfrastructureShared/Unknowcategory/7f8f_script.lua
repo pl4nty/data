@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 1048000 and peattributes.no_security == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(pe.mmap_patch_va)(l_0_1, "\221\a")
+return mp.INFECTED
 

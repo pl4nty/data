@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.match)(l_0_0, "extensions") ~= nil then
+if pehdr.NumberOfSections == 4 and (pesecs[pehdr.NumberOfSections]).Name == "" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData == 0 and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3758096384) == 3758096384 then
   return mp.INFECTED
 end
 return mp.CLEAN

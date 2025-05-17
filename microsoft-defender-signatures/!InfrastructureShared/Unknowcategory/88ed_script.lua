@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 12288 and (mp.getfilesize)() < 36864 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
+  if l_0_1 ~= nil and l_0_1.image_path ~= nil then
+    local l_0_2 = (string.lower)(l_0_1.image_path)
+    ;
+    (bm.add_related_file)(l_0_2)
+  end
+end
+do
   return mp.INFECTED
 end
-return mp.CLEAN
 

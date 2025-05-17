@@ -3,24 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Subsystem ~= 1 then
-  return mp.CLEAN
-end
-if pehdr.Machine ~= 332 then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() < 4096 then
-  return mp.CLEAN
-end
-for l_0_3 = 1, pehdr.NumberOfSections do
-  if (mp.bitand)((pesecs[l_0_3]).Characteristics, 2147483648) ~= 2147483648 then
-    return mp.CLEAN
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = 0
+  local l_0_1 = (this_sigattrlog[1]).utf8p2
+  l_0_1 = (string.gsub)(l_0_1, "`", "")
+  if l_0_0 > 3 then
+    l_0_1 = (string.lower)(l_0_1)
+    if (string.find)(l_0_1, "frombase64string", 1, true) or (string.find)(l_0_1, "webclient", 1, true) or (string.find)(l_0_1, "newscriptblock", 1, true) or (string.find)(l_0_1, "http", 1, true) then
+      return mp.INFECTED
+    end
   end
 end
-;
-(mp.readprotection)(false)
-if (mp.readfile)((pesecs[1]).PointerToRawData, 4) == "(re)" then
-  return mp.INFECTED
+do
+  -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+
+  return l_0_0.CLEAN
 end
-return mp.CLEAN
 

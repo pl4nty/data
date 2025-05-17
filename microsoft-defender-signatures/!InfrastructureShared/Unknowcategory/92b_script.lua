@@ -3,50 +3,26 @@
 
 -- params : ...
 -- function num : 0
-DeleteRegistryEntriesOnValueMatch = function(l_1_0, l_1_1, l_1_2)
-  -- function num : 0_0
-  if l_1_0 == nil then
-    return 
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+  if l_0_1:len() > 14 then
+    return mp.CLEAN
   end
-  l_1_0 = l_1_2 == nil and (l_1_0)
-  l_1_2 = true
-  local l_1_3 = (sysio.RegEnumValues)(l_1_0)
-  if l_1_3 == nil then
-    return 
+  if l_0_1:sub(-4) ~= ".exe" then
+    return mp.CLEAN
   end
-  for l_1_7,l_1_8 in pairs(l_1_3) do
-    if l_1_8 ~= nil then
-      l_1_8 = (string.lower)(l_1_8)
-      for l_1_12,l_1_13 in pairs(l_1_1) do
-        -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P1
-
-        if l_1_2 and l_1_8 == l_1_13 then
-          (sysio.DeleteRegValue)(l_1_0, l_1_8)
-        end
-        if (string.find)(l_1_8, l_1_13, 1, true) then
-          (sysio.DeleteRegValue)(l_1_0, l_1_8)
-        end
-      end
+  if l_0_1:find("^%l%l%l+%.exe$") then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_2:find("\\users\\[^\\]+$") and (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "msiexec.exe" then
+      return mp.INFECTED
     end
   end
 end
-
-GetPathsFromExpandFilePath = function(l_2_0)
-  -- function num : 0_1
-  local l_2_1 = {}
-  for l_2_5,l_2_6 in pairs(l_2_0) do
-    local l_2_7 = (sysio.ExpandFilePath)(l_2_6, true)
-    if l_2_7 ~= nil then
-      for l_2_11,l_2_12 in pairs(l_2_7) do
-        l_2_12 = (string.gsub)(l_2_12, "^\\\\%?\\", "")
-        ;
-        (table.insert)(l_2_1, l_2_12:lower())
-      end
-    end
-  end
-  do return l_2_1 end
-  -- DECOMPILER ERROR at PC34: Confused about usage of register R2 for local variables in 'ReleaseLocals'
-
+do
+  return mp.CLEAN
 end
-
 

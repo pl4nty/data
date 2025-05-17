@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (hstrlog[3]).matched then
-  local l_0_0 = (hstrlog[3]).VA + 6
-  local l_0_1 = (mp.readu_u32)((pe.mmap_va)(l_0_0 + 1, 4), 1)
-  local l_0_2 = (pe.mmap_va)(l_0_1, 95)
-  if (string.sub)(l_0_2, 1, 95) == "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\CLSID\\{871C5380-42A0-1069-A2EA-08002B30309D}" then
-    return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_6.image_path, 9)) == "\\wmic.exe" then
+    local l_0_7 = (string.lower)((mp.GetProcessCommandLine)(l_0_6.ppid))
+    if (string.find)(l_0_7, "/format", 1, true) then
+      return mp.INFECTED
+    end
   end
 end
-do
-  return mp.LOWFI
-end
+return mp.CLEAN
 

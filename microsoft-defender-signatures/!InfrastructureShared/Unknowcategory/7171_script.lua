@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  if pehdr.Machine == 34404 then
-    (mp.changedetectionname)(805306678)
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 196608 and l_0_0 <= 327680 and peattributes.isdll == true and peattributes.hasexports == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,28 +3,43 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = ((bm.get_imagepath)()):lower()
-  if not (string.find)(l_0_0, "/bin/find", 1, true) then
-    return mp.CLEAN
+local l_0_0, l_0_1, l_0_2, l_0_4, l_0_5, l_0_6, l_0_8, l_0_9, l_0_10, l_0_12, l_0_13, l_0_14 = nil, nil, nil, nil
+do
+  if (this_sigattrlog[4]).matched then
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC10: Confused about usage of register: R3 in 'UnsetPending'
+
+    if (this_sigattrlog[4]).utf8p2 ~= nil then
+      l_0_3 = (this_sigattrlog[4]).utf8p2
+    end
   end
-  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-  local l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  local l_0_4 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  if l_0_2 ~= nil and l_0_3 ~= nil and l_0_4 ~= nil then
-    local l_0_5 = nil
-    for l_0_9,l_0_10 in ipairs(l_0_2) do
-      l_0_5 = tostring(l_0_10) .. ".crypt"
-      if (string.find)(l_0_3, l_0_5, 1, true) and (string.find)(l_0_4, l_0_5, 1, true) and (string.find)(l_0_4, tostring(l_0_10), 1, true) then
-        return mp.INFECTED
+  do
+    if (this_sigattrlog[5]).matched then
+      local l_0_7 = nil
+      -- DECOMPILER ERROR at PC21: Confused about usage of register: R3 in 'UnsetPending'
+
+    end
+    do
+      if (this_sigattrlog[5]).utf8p2 == nil or (this_sigattrlog[6]).matched then
+        local l_0_11, l_0_15 = , (this_sigattrlog[5]).utf8p2
+        -- DECOMPILER ERROR at PC32: Confused about usage of register: R3 in 'UnsetPending'
+
+      end
+      if (this_sigattrlog[6]).utf8p1 ~= nil then
+        local l_0_16, l_0_17 = nil
+        for l_0_21,l_0_22 in ipairs((bm.get_process_relationships)()) do
+          local l_0_18, l_0_19, l_0_20, l_0_21 = (this_sigattrlog[6]).utf8p1
+          -- DECOMPILER ERROR at PC40: Confused about usage of register: R10 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC45: Confused about usage of register: R10 in 'UnsetPending'
+
+          if l_0_13.image_path ~= nil and (string.find)(l_0_13.image_path, "XCBBuildService.bundle/Contents/MacOS/XCBBuildService", -53, true) and (string.find)(l_0_18, l_0_17:match("+x [\"]*([^\"]+)"), 1, true) and (string.find)(l_0_16, l_0_17:match("+x [\"]*([^\"]+)"), 1, true) then
+            return mp.INFECTED
+          end
+        end
+        return mp.CLEAN
       end
     end
   end
-end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
 end
 

@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+do
+  if (mp.get_mpattribute)("RPF:SmartAssembly") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+    local l_0_0 = (pe.get_versioninfo)()
+    if l_0_0 ~= nil and (string.find)((string.lower)(l_0_0.InternalName), "luckyleap", 1, true) then
+      (mp.set_mpattribute)("Trojan:Win32/LuckyLeap")
+    end
+  end
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "firefox", 1, true) or (string.find)(l_0_0, "backup", 1, true) or (string.find)(l_0_0, "sync", 1, true) or (string.find)(l_0_0, "waterfox", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

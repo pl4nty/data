@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") then
+if peattributes.ismsil == true and peattributes.isdll == false and (mp.getfilesize)() < 5000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

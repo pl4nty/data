@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpInternal_TencodeV2")
+if (mp.getfilesize)() > 204800 then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

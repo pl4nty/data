@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:KipodToolsCby")
+(mp.set_mpattribute)("PUA:Block:SystemCleaner")
 return mp.INFECTED
 

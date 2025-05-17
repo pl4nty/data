@@ -3,27 +3,34 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) ~= true then
+if peattributes.lastscn_writable ~= true then
   return mp.CLEAN
 end
-if not peattributes.isdll and peattributes.no_exports then
+if peattributes.epscn_writable ~= true then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 ~= "perfc.dat" then
+if peattributes.firstsectwritable ~= true then
   return mp.CLEAN
 end
-local l_0_1 = (pe.get_exports)()
-if l_0_1 > 1 then
+if peattributes.headerchecksum0 ~= true then
   return mp.CLEAN
 end
-if l_0_1 == 0 then
-  return mp.INFECTED
+if ((pehdr.DataDirectory)[6]).Size ~= 0 then
+  return mp.CLEAN
 end
-if ((.end)[1]).ordinal ~= 1 then
+if ((pehdr.DataDirectory)[3]).Size <= 0 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).NameDW ~= 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

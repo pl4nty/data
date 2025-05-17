@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
-if l_0_1 ~= "wmiprvse.exe" or l_0_1 == "explorer.exe" or (string.sub)(l_0_1, -7) == "mmc.exe" then
-  return mp.CLEAN
-end
-if (versioning.GetLocaleIdentifier)() == 1049 then
-  return mp.LOWFI
+if (mp.get_mpattribute)("VirTool:Win32/Vbcrypts") and (pe.query_import)(pe.IMPORT_STATIC, 1976129679) ~= 0 and (string.lower)((string.sub)(((pe.get_versioninfo)()).ProductName, 1, 5)) == "skype" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

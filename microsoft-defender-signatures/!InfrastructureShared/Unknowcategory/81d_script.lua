@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-GetRuleInfo = function()
-  -- function num : 0_0
-  local l_1_0 = {}
-  l_1_0.Name = "Block Launching of executable content from email attachment"
-  l_1_0.Description = "Windows Defender Exploit Guard detected launching of executable content from the email attachment"
-  l_1_0.NotificationDedupingInterval = 120
-  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
-  return l_1_0
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+do
+  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+    if (string.match)(l_0_1, "%a%a%a%a%a+%_%d%d%d%d%d%d%d%d%d%d%d+%.exe") then
+      (mp.set_mpattribute)("LUA:WithLongNumberFilename")
+    end
+  end
+  return mp.CLEAN
 end
-
 

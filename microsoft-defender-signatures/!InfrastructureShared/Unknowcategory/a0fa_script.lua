@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports ~= true then
+if elfhdr.type ~= 2 and elfhdr.type ~= 3 then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections ~= 11 then
+if elfhdr.phnum ~= 3 or elfhdr.shnum ~= 0 then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)(640, 6)
-if (mp.crc32)(-1, l_0_0, 1, 6) ~= 3246015244 then
+local l_0_0 = 1
+local l_0_1 = 62
+local l_0_2 = 3
+local l_0_3 = elfhdr.ident
+if (string.byte)(l_0_3, 6) ~= l_0_0 or elfhdr.machine ~= l_0_1 and elfhdr.machine ~= l_0_2 then
   return mp.CLEAN
 end
 return mp.INFECTED

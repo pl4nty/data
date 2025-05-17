@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if (pe.query_import)(pe.IMPORT_STATIC, 2832782153) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3514167808) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 1794917727) ~= 0 then
+  return mp.INFECTED
 end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

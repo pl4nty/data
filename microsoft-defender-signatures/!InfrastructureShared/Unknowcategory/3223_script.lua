@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") then
+if pehdr.NumberOfSections == 7 then
   return mp.INFECTED
 end
 return mp.CLEAN

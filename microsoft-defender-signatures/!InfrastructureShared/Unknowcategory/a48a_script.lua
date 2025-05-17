@@ -3,17 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched and (this_sigattrlog[5]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[4]).p1)
-  local l_0_2 = (string.lower)((this_sigattrlog[5]).p1)
-  local l_0_3 = (string.lower)((this_sigattrlog[5]).p2)
-  if l_0_0 and (string.find)(l_0_0, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") and l_0_1 and (string.find)(l_0_1, "^%d%d%d+") and l_0_2 and l_0_3 and (string.find)(l_0_2, "^%d%d%d+") and (string.find)(l_0_3, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") then
-    return mp.INFECTED
+local l_0_0 = (hstrlog[3]).VA + 42
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+if (string.byte)(l_0_1, 1) == 69 then
+  l_0_0 = l_0_0 + 5
+else
+  if (string.byte)(l_0_1, 1) == 133 then
+    l_0_0 = l_0_0 + 8
+  else
+    return mp.CLEAN
   end
-  return mp.CLEAN
 end
-do
-  return mp.CLEAN
+l_0_1 = (pe.mmap_va)(l_0_0, 4)
+local l_0_2 = (mp.readu_u32)(l_0_1, 1)
+local l_0_3 = (pe.mmap_va)(l_0_2, 16)
+if (string.sub)(l_0_3, 1, 7) == "dfghjkl" then
+  return mp.INFECTED
 end
+if (string.sub)(l_0_3, 1, 14) == "dfertter2342zc" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

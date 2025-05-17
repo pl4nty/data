@@ -3,137 +3,127 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-;
-(mp.readprotection)(false)
-if l_0_0 < 512 then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 9) ~= 1162035498 then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+if (l_0_0:sub(-3)):lower() ~= ".js" then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 13) ~= 336865834 then
+local l_0_1 = ((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)):lower()
+local l_0_2 = l_0_1:match("[^\\]+$")
+local l_0_3 = {}
+l_0_3["iexplore.exe"] = ""
+l_0_3["chrome.exe"] = ""
+l_0_3["firefox.exe"] = ""
+if l_0_2 == nil or l_0_3[l_0_2] then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 33) ~= 1163021909 then
+if l_0_2 == "wscript.exe" or l_0_2 == "cscript.exe" then
+  return mp.INFECTED
+end
+if not l_0_0:find("^%l+%.js") then
   return mp.CLEAN
 end
-local l_0_1 = (mp.readu_u32)(headerpage, 61)
-local l_0_2 = (mp.readu_u16)(headerpage, 87)
-local l_0_3 = l_0_2 + 88 + l_0_1
-if l_0_0 < l_0_3 then
-  return mp.CLEAN
+string_starts = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  do return (string.sub)(l_1_0, 1, (string.len)(l_1_1)) == l_1_1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
-local l_0_4 = 0
-if l_0_0 == l_0_3 then
-  l_0_4 = 1
-else
-  if l_0_3 < l_0_0 then
-    local l_0_5 = (mp.readfile)(l_0_3, 32)
-    l_0_5 = (string.gsub)(l_0_5, "%z", "")
-    if (string.find)(l_0_5, "**ACE**") then
-      l_0_4 = 1
-    end
-  end
-end
-do
-  if l_0_4 == 0 then
-    return mp.CLEAN
-  end
-  ;
-  (mp.set_mpattribute)("Lua:SingleFileInACE")
-  ;
-  (mp.UfsSetMetadataBool)("Lua:SingleFileInACE!ufs", true)
-  if l_0_2 > 100 then
-    return mp.CLEAN
-  end
-  local l_0_6 = (mp.readfile)(88, l_0_2)
-  local l_0_7 = (string.lower)((string.sub)(l_0_6, -4))
-  local l_0_8 = (string.lower)((string.sub)(l_0_6, -3))
-  if l_0_7 == ".zip" then
-    (mp.set_mpattribute)("Lua:SingleZipInACE")
-  else
-    if l_0_7 == ".vbs" then
-      (mp.set_mpattribute)("Lua:SingleVBSInACE")
-      ;
-      (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-    else
-      if l_0_7 == ".lnk" then
-        (mp.set_mpattribute)("Lua:SingleLNKInACE")
-        ;
-        (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-      else
-        if l_0_7 == ".wsf" then
-          (mp.set_mpattribute)("Lua:SingleWSFInACE")
-          ;
-          (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-        else
-          if l_0_7 == ".vbe" then
-            (mp.set_mpattribute)("Lua:SingleVBEInACE")
-            ;
-            (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-          else
-            if l_0_7 == ".jse" then
-              (mp.set_mpattribute)("Lua:SingleJSEInACE")
-              ;
-              (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-            else
-              if l_0_7 == "html" then
-                (mp.set_mpattribute)("Lua:SingleHTAInACE")
-                ;
-                (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-              else
-                if l_0_7 == ".exe" then
-                  (mp.set_mpattribute)("Lua:SingleEXEInACE")
-                  ;
-                  (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-                else
-                  if l_0_7 == ".dll" then
-                    (mp.set_mpattribute)("Lua:SingleDLLInACE")
-                  else
-                    if l_0_7 == ".com" then
-                      (mp.set_mpattribute)("Lua:SingleCOMInACE")
-                      ;
-                      (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-                    else
-                      if l_0_7 == ".ps1" then
-                        (mp.set_mpattribute)("Lua:SinglePSInACE")
-                        ;
-                        (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-                      else
-                        if l_0_7 == ".bat" then
-                          (mp.set_mpattribute)("Lua:SingleBATInACE")
-                          ;
-                          (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-                        else
-                          if l_0_7 == ".rar" then
-                            (mp.set_mpattribute)("Lua:SingleRarInACE")
-                          else
-                            if l_0_7 == ".ace" then
-                              (mp.set_mpattribute)("Lua:SingleACEInACE")
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
+
+IsWscriptCopyMadeByBondat = function(l_2_0)
+  -- function num : 0_1
+  local l_2_1 = {}
+  -- DECOMPILER ERROR at PC12: No list found for R1 , SetList fails
+
+  local l_2_2 = {}
+  -- DECOMPILER ERROR at PC14: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC15: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC16: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC17: Overwrote pending register: R6 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC18: Overwrote pending register: R7 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC19: Overwrote pending register: R8 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC20: Overwrote pending register: R9 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC21: Overwrote pending register: R10 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC22: Overwrote pending register: R11 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC23: No list found for R2 , SetList fails
+
+  local l_2_3 = {}
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC27: Overwrote pending register: R6 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC28: No list found for R3 , SetList fails
+
+  -- DECOMPILER ERROR at PC29: Overwrote pending register: R4 in 'AssignReg'
+
+  local l_2_4 = "disk"
+  -- DECOMPILER ERROR at PC30: Overwrote pending register: R5 in 'AssignReg'
+
+  local l_2_5 = "dsk"
+  -- DECOMPILER ERROR at PC31: Overwrote pending register: R6 in 'AssignReg'
+
+  do
+    local l_2_6 = "ms"
+    -- DECOMPILER ERROR at PC32: Overwrote pending register: R7 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC33: Overwrote pending register: R8 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC34: Overwrote pending register: R9 in 'AssignReg'
+
+    for l_2_10 = "hp", "intel", "amd" do
+      -- DECOMPILER ERROR at PC36: Overwrote pending register: R11 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC37: Overwrote pending register: R12 in 'AssignReg'
+
+      if ("tcp")("udp", l_2_1[l_2_10]) then
+        for l_2_14 = 1, l_2_5 do
+          if string_starts((string.sub)(l_2_0, (string.len)(l_2_1[l_2_10]) + 1), l_2_2[l_2_14]) then
+            for l_2_18 = 1, l_2_6 do
+              if (string.sub)(l_2_0, (string.len)(l_2_1[l_2_10]) + (string.len)(l_2_2[l_2_14]) + 1) == l_2_3[l_2_18] then
+                return true
               end
             end
           end
         end
       end
     end
+    do return false end
+    -- WARNING: undefined locals caused missing assignments!
   end
-  if l_0_8 == ".js" then
-    (mp.set_mpattribute)("Lua:SingleJSInACE")
-    ;
-    (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-  else
-    if l_0_8 == ".7z" then
-      (mp.set_mpattribute)("Lua:Single7zInACE")
-    end
+end
+
+if IsWscriptCopyMadeByBondat(l_0_2) == true then
+  local l_0_4 = ((MpCommon.PathToWin32Path)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))):lower()
+  if l_0_1:find("\\appdata\\roaming\\%l+\\%l+[63]?[42]?%.exe$") and (l_0_4:find("\\appdata\\roaming\\%l+$") or l_0_4:find("\\%.trashes\\%d+$")) then
+    (mp.set_mpattribute)("Lua:BondatContextualWscriptRunWithPath_GenFirst")
+    return mp.INFECTED
   end
+  local l_0_5 = {}
+  l_0_5["dllhost.exe"] = ""
+  l_0_5["winprocess.exe"] = ""
+  l_0_5["winupdate32.exe"] = ""
+  l_0_5["winhost32.exe"] = ""
+  l_0_5["msupdate.exe"] = ""
+  l_0_5["winupdate.exe"] = ""
+  l_0_5["mshost.exe"] = ""
+  if not l_0_5[l_0_2] then
+    (mp.set_mpattribute)("Lua:BondatContextualWscriptRun")
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
 

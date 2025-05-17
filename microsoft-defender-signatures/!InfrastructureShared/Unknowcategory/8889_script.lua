@@ -3,13 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("MiKatzExe")
-if l_0_0 ~= nil then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    if (sysio.IsFileExists)(l_0_5) then
-      (bm.add_threat_file)(l_0_5)
-    end
-  end
+if pehdr.NumberOfSections == 14 and peattributes.isexe == true and pehdr.AddressOfEntryPoint == 435072 and (pesecs[4]).Name == "/4" then
   return mp.INFECTED
 end
 return mp.CLEAN

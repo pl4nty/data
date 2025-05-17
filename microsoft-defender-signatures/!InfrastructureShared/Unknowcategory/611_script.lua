@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (MpCommon.NidSearch)(mp.NID_DISABLE_NW_REPORTING, 1) then
-  return mp.CLEAN
-end
-if (MpCommon.NidSearch)(mp.NID_ENABLE_NW_REPORTING, 1) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_0.ppid, "H")
+;
+(bm.add_action)("SmsAsyncScanEvent", 100)
+return mp.INFECTED
 

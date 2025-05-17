@@ -3,87 +3,110 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:XlsHasMacroSheet") ~= true and (mp.get_mpattribute)("MpExcelFormulaRoutines") ~= true then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
-local l_0_0 = 0
-local l_0_1 = (hstrlog[6]).hitcount + (hstrlog[5]).hitcount
-if l_0_1 >= 5 then
-  (mp.set_mpattribute)("XlmMacro/FormulaFuncGTE5")
-  ;
-  (mp.set_mpattribute)("XlmMacro/FormulaFunc:" .. l_0_1)
-  l_0_0 = l_0_0 + 1
+if peattributes.packed == true then
+  return mp.CLEAN
 end
-if (hstrlog[1]).hitcount >= 30 then
-  (mp.set_mpattribute)("XlmMacro/CharConcatGTE30")
-  ;
-  (mp.set_mpattribute)("XlmMacro/CharConcat:" .. (hstrlog[1]).hitcount)
-  l_0_0 = l_0_0 + 1
+if peattributes.hasexports ~= true then
+  return mp.CLEAN
 end
-if (hstrlog[2]).hitcount >= 1 then
-  (mp.set_mpattribute)("XlmMacro/CharAdditionGTE10")
-  ;
-  (mp.set_mpattribute)("XlmMacro/CharAddition:" .. (hstrlog[2]).hitcount)
-  l_0_0 = l_0_0 + 1
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
 end
-if (hstrlog[3]).hitcount >= 1 then
-  (mp.set_mpattribute)("XlmMacro/CharSubtractGTE10")
-  ;
-  (mp.set_mpattribute)("XlmMacro/CharSubtract:" .. (hstrlog[3]).hitcount)
-  l_0_0 = l_0_0 + 1
+if pehdr.NumberOfSections < 3 then
+  return mp.CLEAN
 end
-if (hstrlog[7]).hitcount >= 5 then
-  (mp.set_mpattribute)("XlmMacro/runFuncGTE5")
-  ;
-  (mp.set_mpattribute)("XlmMacro/runFunc:" .. (hstrlog[7]).hitcount)
-  l_0_0 = l_0_0 + 1
+if pehdr.NumberOfSections > 5 then
+  return mp.CLEAN
 end
-if (hstrlog[8]).hitcount >= 1 then
-  (mp.set_mpattribute)("XlmMacro/execFuncGTE1")
-  ;
-  (mp.set_mpattribute)("XlmMacro/execFunc:" .. (hstrlog[8]).hitcount)
-  l_0_0 = l_0_0 + 1
+if pehdr.SizeOfHeaders ~= 1024 then
+  return mp.CLEAN
 end
-if (hstrlog[9]).hitcount >= 1 then
-  (mp.set_mpattribute)("XlmMacro/registerFuncGTE1")
-  ;
-  (mp.set_mpattribute)("XlmMacro/registerFunc:" .. (hstrlog[9]).hitcount)
-  l_0_0 = l_0_0 + 1
+if pehdr.Subsystem ~= 2 then
+  return mp.CLEAN
 end
-local l_0_2 = (hstrlog[10]).hitcount + (hstrlog[11]).hitcount + (hstrlog[12]).hitcount + (hstrlog[13]).hitcount
-if l_0_2 >= 1 then
-  (mp.set_mpattribute)("XlmMacro/callFuncGTE1")
-  ;
-  (mp.set_mpattribute)("XlmMacro/callFunc:" .. l_0_2)
-  l_0_0 = l_0_0 + 1
+if pehdr.DllCharacteristics ~= 512 then
+  return mp.CLEAN
 end
-if (hstrlog[14]).hitcount >= 1 then
-  (mp.set_mpattribute)("XlmMacro/evalConcatFuncGTE1")
-  ;
-  (mp.set_mpattribute)("XlmMacro/evalConcatFunc:" .. (hstrlog[14]).hitcount)
-  l_0_0 = l_0_0 + 1
+if ((pehdr.DataDirectory)[1]).RVA <= 0 then
+  return mp.CLEAN
 end
-if (hstrlog[4]).hitcount >= 1 then
-  (mp.set_mpattribute)("XlmMacro/fileDeleteFuncGTE1")
-  ;
-  (mp.set_mpattribute)("XlmMacro/fileDeleteFunc:" .. (hstrlog[4]).hitcount)
-  l_0_0 = l_0_0 + 1
+if ((pehdr.DataDirectory)[1]).Size <= 0 then
+  return mp.CLEAN
 end
-if (hstrlog[15]).hitcount >= 1 then
-  (mp.set_mpattribute)("XlmMacro/concatOperatorX5")
-  ;
-  (mp.set_mpattribute)("XlmMacro/concatOperatorX5:" .. (hstrlog[15]).hitcount)
-  l_0_0 = l_0_0 + 1
+if ((pehdr.DataDirectory)[1]).Size >= 288 then
+  return mp.CLEAN
 end
-local l_0_3 = (hstrlog[16]).hitcount + (hstrlog[17]).hitcount + (hstrlog[18]).hitcount + (hstrlog[19]).hitcount + (hstrlog[20]).hitcount + (hstrlog[21]).hitcount + (hstrlog[22]).hitcount
-if l_0_3 >= 4 then
-  (mp.set_mpattribute)("XlmMacro/concatenateFuncGTE4")
-  ;
-  (mp.set_mpattribute)("XlmMacro/concatenateFunc:" .. l_0_3)
-  l_0_0 = l_0_0 + 1
+if ((pehdr.DataDirectory)[2]).RVA <= 0 then
+  return mp.CLEAN
 end
-if l_0_0 >= 4 then
-  return mp.LOWFI
+if ((pehdr.DataDirectory)[2]).Size < 40 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if ((pehdr.DataDirectory)[2]).Size > 60 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[5]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[13]).RVA <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[13]).Size <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[13]).Size >= 32 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
+if (mp.readu_u32)(l_0_0, 1) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 5) <= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 9) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 13) <= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 17) ~= 1 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 21) ~= 3 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 25) ~= 3 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 29) <= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

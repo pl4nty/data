@@ -3,19 +3,35 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//Lua:GIOAVTopLevelRarHasSingleStoredFileWithExeExtension") and not (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("//GIOAVSingleStoredEXEInTopLevelRARFile") then
-  (mp.set_mpattribute)("Lua:IOAVSingleStoredEXEInTopLevelRARFile")
-  ;
-  (mp.set_mpattribute)("//GIOAVSingleStoredEXEInTopLevelRARFile")
-  ;
-  (mp.set_mpattribute)("MpNonCachedLowfi")
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
 end
-if (mp.get_mpattribute)("//Lua:GIOAVTopLevelRarHasSingleFileWithExeExtension") and not (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("//GIOAVSingleEXEInTopLevelRARFile") then
-  (mp.set_mpattribute)("Lua:IOAVSingleEXEInTopLevelRARFile")
-  ;
-  (mp.set_mpattribute)("//GIOAVSingleEXEInTopLevelRARFile")
-  ;
-  (mp.set_mpattribute)("MpNonCachedLowfi")
+if peattributes.no_decription ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if pehdr.NumberOfSections ~= 3 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).Characteristics ~= 1610612768 then
+  return mp.CLEAN
+end
+if (pesecs[2]).Characteristics ~= 3221225536 then
+  return mp.CLEAN
+end
+if (pesecs[3]).Characteristics ~= 1073741888 then
+  return mp.CLEAN
+end
+if (pesecs[2]).NameDW ~= 1952539694 then
+  return mp.CLEAN
+end
+if (pesecs[2]).VirtualAddress == 0 then
+  return mp.CLEAN
+end
+if (pesecs[2]).SizeOfRawData ~= 0 then
+  return mp.CLEAN
+end
+if (pesecs[2]).PointerToRawData ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

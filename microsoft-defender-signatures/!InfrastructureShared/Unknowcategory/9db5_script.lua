@@ -3,16 +3,24 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (pesecs[6]).Name == ".ropf" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 < 4 then
   return mp.CLEAN
 end
+local l_0_2 = {}
+l_0_2.ExecutePatch = 1
+l_0_2["Main@12"] = 1
+l_0_2.MakeUuid = 1
+l_0_2.kAiCode = 1
+local l_0_3 = 0
+for l_0_7 = 1, l_0_0 do
+  local l_0_8 = (pe.mmap_string_rva)((l_0_1[l_0_7]).namerva, 64)
+  if l_0_2[l_0_8] then
+    l_0_3 = l_0_3 + l_0_2[l_0_8]
+  end
+end
+if l_0_3 == 4 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

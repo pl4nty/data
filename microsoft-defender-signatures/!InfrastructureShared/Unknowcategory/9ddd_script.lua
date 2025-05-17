@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() >= 696320 and (mp.getfilesize)() < 720896 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if pevars.sigaddr ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
   return mp.CLEAN
 end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 1)
+if (mp.bitand)((string.byte)(l_0_0, 1), 128) == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

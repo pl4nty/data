@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 10 then
+if (mp.get_mpattribute)("pea_isdll") and peattributes.no_security == true then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
 return mp.CLEAN
 

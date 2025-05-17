@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-    local l_0_0 = nil
-    if (string.find)(l_0_0, "sock_stream", 1, true) and (string.find)(l_0_0, "subprocess.call", 1, true) and (string.find)(l_0_0, "/bin/sh", 1, true) then
+  if l_0_0 ~= nil and l_0_0.image_path ~= nil and l_0_0.ppid ~= nil and (string.find)(l_0_0.image_path, "/bin/bash", 1, true) then
+    local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
+    if l_0_1 ~= nil and l_0_1.image_path ~= nil and l_0_1.ppid ~= nil and (string.find)(l_0_1.image_path, "/opt/attackiq/agent/engine/", 1, true) then
       return mp.INFECTED
     end
   end

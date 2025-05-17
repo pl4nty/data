@@ -3,60 +3,110 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = nil
-if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) == nil or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\msexchangehmworker.exe", -23, true) or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon.des", -22, true) then
+if peattributes.is_delphi then
   return mp.CLEAN
 end
-local l_0_3, l_0_4 = nil
-if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) ~= nil then
-  for l_0_8,l_0_9 in ipairs(R6_PC48) do
-    local l_0_5, l_0_6 = (bm.get_process_relationships)()
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R9 in 'UnsetPending'
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 5 or pehdr.NumberOfSections > 6 then
+  return mp.CLEAN
+end
+if (pesecs[1]).Name ~= ".text" then
+  return mp.CLEAN
+end
+if (pesecs[3]).Name ~= ".data" then
+  return mp.CLEAN
+end
+bytes_to_int = function(l_1_0, l_1_1, l_1_2, l_1_3)
+  -- function num : 0_0
+  if not l_1_3 then
+    error("need four bytes to convert to int", 2)
+  end
+  return l_1_0 + l_1_1 * 256 + l_1_2 * 65536 + l_1_3 * 16777216
+end
 
-    if R9_PC50.image_path ~= nil and (R9_PC50.reason == bm.RELATIONSHIP_INJECTION or R9_PC50.reason == bm.RELATIONSHIP_CREATED) then
-      if (string.find)((string.lower)(R9_PC50.image_path), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)(R9_PC50.image_path), "\\system32\\mrt.exe", -17, true) or (string.find)((string.lower)(R9_PC50.image_path), "\\asep_inv.exe", -13, true) or (string.find)((string.lower)(R9_PC50.image_path), "\\mpsigstub.exe", -14, true) or (string.find)((string.lower)(R9_PC50.image_path), "\\gameguard\\gamemon.des", -22, true) then
-        return mp.CLEAN
-      end
-      if (string.find)((string.lower)(R9_PC50.image_path), "\\nslookup.exe", -13, true) then
-        l_0_3 = R9_PC50.ppid
-      end
+pointer2int = function(l_2_0, l_2_1)
+  -- function num : 0_1
+  local l_2_2 = (string.byte)(l_2_0, l_2_1)
+  local l_2_3 = (string.byte)(l_2_0, l_2_1 + 1)
+  local l_2_4 = (string.byte)(l_2_0, l_2_1 + 2)
+  local l_2_5 = (string.byte)(l_2_0, l_2_1 + 3)
+  return bytes_to_int(l_2_2, l_2_3, l_2_4, l_2_5)
+end
+
+if (mp.getfilesize)() > 512000 then
+  return mp.CLEAN
+end
+local l_0_0 = 64
+local l_0_1 = 0
+local l_0_2 = 0
+if (hstrlog[1]).matched then
+  l_0_2 = (hstrlog[1]).VA
+else
+  if (hstrlog[2]).matched then
+    l_0_2 = (hstrlog[2]).VA
+  else
+    if (hstrlog[3]).matched then
+      l_0_2 = (hstrlog[3]).VA
+    else
+      return mp.CLEAN
     end
+  end
+end
+;
+(mp.readprotection)(false)
+local l_0_3 = (pe.mmap_va)(l_0_2 - l_0_0, l_0_0)
+for l_0_7 = 1, l_0_0 do
+  if (string.byte)(l_0_3, l_0_7) == 128 and (string.byte)(l_0_3, l_0_7 + 1) == 61 and (string.byte)(l_0_3, l_0_7 + 6) == 77 then
+    l_0_1 = pointer2int(l_0_3, l_0_7 + 2)
+    break
   end
 end
 do
-  -- DECOMPILER ERROR at PC127: Confused about usage of register: R3 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC130: Confused about usage of register: R3 in 'UnsetPending'
-
-  if l_0_5 ~= nil then
-    for l_0_14,l_0_15 in ipairs(l_0_5) do
-      local l_0_11, l_0_12 = nil
-      -- DECOMPILER ERROR at PC133: Confused about usage of register: R9 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC140: Confused about usage of register: R9 in 'UnsetPending'
-
-      if R9_PC50.image_path ~= nil then
-        l_0_2 = (string.lower)((MpCommon.PathToWin32Path)(R9_PC50.image_path))
-        if (string.find)(l_0_2, "\\mcafee\\systemcore\\mfehcs.exe", -29, true) or (string.find)(l_0_2, "(x86)\\pharossystems\\printscout\\ctskmstr.exe", -43, true) or (string.find)(l_0_2, "(x86)\\hp\\printscout\\ctskmstr.exe", -32, true) or (string.find)(l_0_2, "\\mcafee\\endpoint security\\threat prevention\\mfetp.exe", -53, true) or (string.find)(l_0_2, "\\anti-malware\\mbamservice.exe", -29, true) or (string.find)(l_0_2, "\\cnext\\radeonsoftware.exe", -25, true) or (string.find)(l_0_2, "(x86)\\panda security\\wac\\psanhost.exe", -37, true) or (string.find)(l_0_2, "(x86)\\cloudvolumes\\agent\\svservice.exe", -38, true) or (string.find)(l_0_2, "\\gameguard\\gamemon64.des", -24, true) or (string.find)(l_0_2, "\\gameguard\\gamemon.des", -22, true) or (string.find)(l_0_2, "(x86)\\f-secure\\server security\\", 1, true) then
-          return mp.CLEAN
-        end
-      end
-      if (sysio.IsFileExists)(l_0_2) and not (mp.IsKnownFriendlyFile)(l_0_2, true, false) then
-        (bm.add_related_file)(l_0_2)
-      end
-    end
-  end
-  do
-    if (sysio.IsFileExists)(l_0_4) and not (mp.IsKnownFriendlyFile)(l_0_4, true, false) and l_0_3 ~= nil then
-      (bm.request_SMS)(l_0_3, "h+")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1)
-      ;
-      (bm.add_related_file)(l_0_4)
-      return mp.INFECTED
-    end
+  if l_0_1 == 0 then
     return mp.CLEAN
   end
+  local l_0_8 = 0
+  for l_0_12 = 1, l_0_0 do
+    local l_0_13 = (string.byte)(l_0_3, l_0_12)
+    if l_0_13 == 52 and (string.byte)(l_0_3, l_0_12 + 2) == 44 then
+      l_0_8 = (string.byte)(l_0_3, l_0_12 + 1)
+      if l_0_8 ~= 0 then
+        break
+      end
+    end
+    if l_0_13 == 128 and (string.byte)(l_0_3, l_0_12 + 3) == 128 then
+      do
+        do
+          l_0_8 = (string.byte)(l_0_3, l_0_12 + 2)
+          if l_0_8 ~= 0 then
+            break
+          end
+          -- DECOMPILER ERROR at PC185: LeaveBlock: unexpected jumping out DO_STMT
+
+          -- DECOMPILER ERROR at PC185: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC185: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
+    end
+  end
+  if l_0_8 == 0 then
+    return mp.CLEAN
+  end
+  local l_0_14 = (pe.mmap_va)(l_0_1, 4)
+  local l_0_15 = (string.byte)(l_0_14, 1)
+  local l_0_16 = (string.byte)(l_0_14, 2)
+  local l_0_17 = (string.byte)(l_0_14, 3)
+  local l_0_18 = (string.byte)(l_0_14, 4)
+  if (mp.bitxor)(l_0_15, l_0_8) - l_0_8 == 77 and (mp.bitxor)(l_0_16, l_0_8) - l_0_8 == 90 and (mp.bitxor)(l_0_17, l_0_8) - l_0_8 == 144 and (mp.bitxor)(l_0_18, l_0_8) - l_0_8 == 0 then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

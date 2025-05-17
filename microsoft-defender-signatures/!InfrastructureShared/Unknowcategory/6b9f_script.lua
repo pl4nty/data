@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:[MSILRES:_]") and (mp.get_mpattribute)("pea_no_security") then
+if mp.HSTR_WEIGHT >= 9 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan_onescan")
 return mp.CLEAN
 

@@ -3,16 +3,23 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if peattributes.lastscn_writable == false then
   return mp.CLEAN
 end
+if peattributes.lastscn_falign == false then
+  return mp.CLEAN
+end
+if peattributes.epscn_writable ~= true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

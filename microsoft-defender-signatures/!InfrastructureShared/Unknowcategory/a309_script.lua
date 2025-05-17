@@ -3,19 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (versioning.GetOrgID)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  local l_0_1 = (crypto.Sha256Buffer)(l_0_0, 0, #l_0_0)
-  local l_0_2 = {}
-  l_0_2["97323d162dc5f479a733a221f90370120974579ffefb248882764ed158ed49ff"] = true
-  l_0_2["40207e9e7af8b0e07eee5ca2f51b438318f7a0560ef1e4a2238efb813379350d"] = true
-  l_0_2.df578c8e24df5935bedf03728f1ecd7473f351c863325bf517419233d2712742 = true
-  if l_0_2[l_0_1] then
-    return mp.CLEAN
-  end
-end
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.INFECTED
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC18: Confused about usage of register: R6 in 'UnsetPending'
+
+      if (R6_PC18:len() < 12 or (string.lower)((string.sub)(R6_PC18, -12)) ~= "rundll32.exe") and (sysio.IsFileExists)(R6_PC18) then
+        (bm.add_related_file)(R6_PC18)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
 

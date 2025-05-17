@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.TimeDateStamp ~= 0 and pehdr.TimeDateStamp ~= -1 and (MpCommon.GetCurrentTimeT)() < pehdr.TimeDateStamp then
-  (mp.set_mpattribute)("Lua:Future_pehdr_timestamp")
+if ((((not (hstrlog[6]).matched or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or 0 + 1 + 1 + 1 + 1 + 2 >= 3 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

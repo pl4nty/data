@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+if pehdr.NumberOfSections == 3 and (pesecs[1]).PointerToRawData == 4096 then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

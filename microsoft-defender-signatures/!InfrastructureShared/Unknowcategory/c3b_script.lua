@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:FusionCore")
+(mp.set_mpattribute)("PUA:Block:Installuia")
 return mp.INFECTED
 

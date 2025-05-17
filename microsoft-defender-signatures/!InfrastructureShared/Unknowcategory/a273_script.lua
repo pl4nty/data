@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() < 118784 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->[XLMSharedStrings]", -20, true) ~= nil then
   return mp.CLEAN
 end
+local l_0_1 = ((mp.GetNormalizedScript)(true))
+local l_0_2 = nil
+l_0_1 = (string.gsub)(l_0_1, "\"&amp;\"", "")
+if l_0_2 > 3 then
+  (mp.vfo_add_buffer)(l_0_1, "[XLMSharedStrings]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  return mp.INFECTED
+end
+return mp.CLEAN
 

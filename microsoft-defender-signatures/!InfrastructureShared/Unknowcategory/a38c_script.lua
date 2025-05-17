@@ -3,27 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-    if l_0_7 == 1 then
-      local l_0_8, l_0_9 = (bm.get_process_relationships)(l_0_6.ppid)
-      for l_0_13,l_0_14 in ipairs(l_0_8) do
-        if l_0_14.image_path ~= nil then
-          local l_0_15 = (mp.bitand)(l_0_14.reason_ex, 1)
-          if l_0_15 == 1 then
-            local l_0_16 = (string.lower)(l_0_14.image_path)
-            if (string.find)(l_0_16, "excel.exe", 1, true) or (string.find)(l_0_16, "winword.exe", 1, true) then
-              return mp.INFECTED
-            end
-          end
-        end
-      end
-    end
-  end
+if pehdr.Machine ~= 34404 then
+  return mp.CLEAN
 end
-do return mp.CLEAN end
--- DECOMPILER ERROR at PC67: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
+if ((pehdr.DataDirectory)[2]).Size ~= 40 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(epcode, 1) ~= 686588744 then
+  return mp.CLEAN
+end
+if epcode[5] ~= 232 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(epcode, 9) ~= 3296937984 then
+  return mp.CLEAN
+end
+if (mp.readu_u16)(epcode, 13) ~= 49960 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

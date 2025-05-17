@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:CpuMulti")
+  return mp.INFECTED
 end
-local l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
-local l_0_2 = (sysio.GetFileSize)(l_0_1)
-if l_0_2 > 716800 or l_0_2 < 307200 then
-  return mp.CLEAN
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_cpumulti")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_cpumulti")
 end
-return mp.INFECTED
+return mp.CLEAN
 

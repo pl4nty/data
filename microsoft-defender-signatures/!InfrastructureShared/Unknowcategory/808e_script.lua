@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\mozilla firefox\\", 1, true) then
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.enum_mpattributesubstring)("SCPT:RansomNote:")
+if l_0_0 ~= nil and #l_0_0 >= 5 then
+  (mp.set_mpattribute)("MpDisableCaching")
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if peattributes.isdll and (mp.getfilesize)() < 250000 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
 end
-;
-(mp.set_mpattribute)("HSTR:Trojan:Win32/Colisi")
-if mp.HSTR_WEIGHT >= 4 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

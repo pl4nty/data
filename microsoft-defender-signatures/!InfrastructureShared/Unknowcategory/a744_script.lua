@@ -3,70 +3,42 @@
 
 -- params : ...
 -- function num : 0
-checkChildProcessExist = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 == nil or l_1_1 == nil or type(l_1_1) ~= "table" then
-    return nil
-  end
-  local l_1_2, l_1_3 = (bm.get_process_relationships)(l_1_0)
-  for l_1_7,l_1_8 in ipairs(l_1_3) do
-    if (mp.bitand)(l_1_8.reason_ex, 1) == 1 then
-      local l_1_9 = l_1_8.image_path
-      for l_1_13,l_1_14 in ipairs(l_1_1) do
-        if (string.sub)(l_1_9, -(string.len)(l_1_14)) == l_1_14 then
-          return l_1_8.ppid
-        end
-      end
-    end
-  end
-  do return nil end
-  -- DECOMPILER ERROR at PC50: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
-end
-
-local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-local l_0_1 = (sysio.GetProcessFromFileName)(l_0_0)
-if l_0_1 == nil or #l_0_1 == 0 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\narrator.exe$") then
   return mp.CLEAN
 end
-local l_0_2 = nil
-if (this_sigattrlog[1]).matched then
-  l_0_2 = (this_sigattrlog[1]).ppid
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_2 = (this_sigattrlog[2]).ppid
+do
+  if (string.find)(l_0_0, "\\systray.exe$") then
+    local l_0_1 = (versioning.GetOrgID)()
+    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
+      return mp.CLEAN
+    end
+  end
+  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
+  if l_0_3 == nil or #l_0_3 == 0 then
+    return mp.CLEAN
+  end
+  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\narrator.exe")
+  if l_0_4 ~= nil then
+    local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
+    if l_0_5 == nil or (string.len)(l_0_5) <= 1 then
+      return mp.CLEAN
+    end
   else
-    if (this_sigattrlog[3]).matched then
-      l_0_2 = (this_sigattrlog[3]).ppid
-    else
-      if (this_sigattrlog[4]).matched then
-        l_0_2 = (this_sigattrlog[4]).ppid
-      else
-        if (this_sigattrlog[5]).matched then
-          l_0_2 = (this_sigattrlog[5]).ppid
-        else
-          if (this_sigattrlog[6]).matched then
-            l_0_2 = (this_sigattrlog[6]).ppid
-          else
-            if (this_sigattrlog[7]).matched then
-              l_0_2 = (this_sigattrlog[7]).ppid
-            end
+    do
+      do return mp.CLEAN end
+      local l_0_6, l_0_7 = (bm.get_process_relationships)()
+      for l_0_11,l_0_12 in ipairs(l_0_6) do
+        if l_0_12.image_path ~= nil then
+          local l_0_13 = (string.lower)(l_0_12.image_path)
+          if (string.find)(l_0_13, "atbroker.exe", 1, true) or (string.find)(l_0_13, "utilman.exe", 1, true) then
+            return mp.INFECTED
           end
         end
       end
+      return mp.CLEAN
     end
   end
 end
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = {}
--- DECOMPILER ERROR at PC88: No list found for R3 , SetList fails
-
--- DECOMPILER ERROR at PC89: Overwrote pending register: R4 in 'AssignReg'
-
-if ("conhost.exe")(l_0_2, l_0_3) == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

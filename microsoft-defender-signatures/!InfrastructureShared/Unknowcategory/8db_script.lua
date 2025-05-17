@@ -3,20 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  local l_0_2 = (string.len)(l_0_1) - 4
-  if (string.sub)(l_0_1, -4) == ".exe" and l_0_2 >= 5 and l_0_2 <= 7 then
-    local l_0_3 = (string.sub)(l_0_1, 1, l_0_2)
-    local l_0_4 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    local l_0_5 = (string.reverse)((string.sub)(l_0_4, -l_0_2))
-    if l_0_3 == l_0_5 and (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_ATTRIBUTES) == 7 then
-      (mp.set_mpattribute)("Lua:VobfusFileDrop")
-    end
-  end
-end
-do
+if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
   return mp.CLEAN
 end
+if (mp.get_mpattribute)("SCRIPT:PSLummaStealerObfus.C") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = tostring(headerpage)
+else
+  l_0_1 = tostring(footerpage)
+end
+l_0_1 = (string.lower)(l_0_1)
+l_0_1 = (string.gsub)(l_0_1, "%z", "")
+l_0_1 = (string.gsub)(l_0_1, " ", "")
+local l_0_2 = 0
+for l_0_6 in (string.gmatch)(l_0_1, "%[char%]%(%[int%]%(%(%(%d+%)%-bxor%d+%)%)%)") do
+  l_0_2 = l_0_2 + 1
+end
+if l_0_2 >= 8 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

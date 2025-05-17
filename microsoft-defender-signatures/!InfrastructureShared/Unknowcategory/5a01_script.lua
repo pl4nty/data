@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-local l_0_1 = "/tmp"
-if l_0_0:find(l_0_1, 1, true) ~= nil then
+if pehdr.Machine == 34404 then
+  (mp.changedetectionname)(805306480)
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.INFECTED
 

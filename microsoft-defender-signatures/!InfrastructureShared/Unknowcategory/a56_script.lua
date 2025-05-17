@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^/]+)$") == "cybspawn.bin" then
-      return mp.CLEAN
-    end
-  end
+if elfhdr.type == 2 or elfhdr.type == 3 then
   return mp.INFECTED
 end
+if (mp.get_mpattribute)("Linux:HSTR:UPX_Packed") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

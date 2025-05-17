@@ -3,14 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true or peattributes.hasexports ~= false then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
 end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
+  local l_0_6 = (this_sigattrlog[1]).p1
+  local l_0_7 = (this_sigattrlog[2]).p1
+  if l_0_6 .. l_0_7 == "unsafe" then
+    return mp.INFECTED
+  end
 end
-return mp.INFECTED
+do
+  return mp.LOWFI
+end
 

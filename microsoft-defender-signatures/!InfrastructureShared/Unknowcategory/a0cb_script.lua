@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.no_mipsgp == true and peattributes.no_boundimport == true and peattributes.no_ep == true then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 64)
+local l_0_1 = (string.find)(l_0_0, "‰U\248", 1, true)
+if l_0_1 ~= nil then
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 9, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 18, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 24, "")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

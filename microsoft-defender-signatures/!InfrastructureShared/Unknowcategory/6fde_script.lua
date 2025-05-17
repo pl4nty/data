@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.executes_from_dynamic_memory and peattributes.x86_image and peattributes.hasappendeddata then
+if peattributes.ismsil == true and pehdr.NumberOfSections == 3 and peattributes.isexe == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SCPT:VirTool:JS/FunctionPacked.A") == false then
+if (hstrlog[5]).matched or (hstrlog[6]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

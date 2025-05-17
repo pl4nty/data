@@ -3,18 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+local l_0_0 = 20
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 256)
+local l_0_2 = (string.find)(l_0_1, "t", 1, true)
+if l_0_2 == nil then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
+l_0_0 = l_0_0 + l_0_2 - 1
+;
+(pe.mmap_patch_va)(pevars.sigaddr + (l_0_0), "\235")
+l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
+for l_0_6 = 1, l_0_0 do
+  local l_0_7 = (string.find)(l_0_1, "`\185....Û§a", l_0_6, true)
+  if not l_0_7 then
+    break
+  end
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_7 - 1, "êêêêêêêê\144")
 end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("program files", 1, true) then
-  return mp.CLEAN
+do
+  return mp.INFECTED
 end
-if l_0_0:find("system32", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

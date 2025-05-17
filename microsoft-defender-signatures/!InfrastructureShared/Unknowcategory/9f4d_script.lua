@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-endswith = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  do return l_1_0:sub(-#l_1_1) == l_1_1 end
-  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+do
+  if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_no_security") and peattributes.has_msilresources then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-
-if peattributes.isdll and not peattributes.hasexports and endswith((string.lower)((mp.getfilename)()), "magentloc.dll") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

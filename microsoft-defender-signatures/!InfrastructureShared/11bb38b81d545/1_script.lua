@@ -76,7 +76,7 @@ if (this_sigattrlog[4]).matched then
             l_0_21.Dll_FileSize = (sysio.GetFileSize)(l_0_2) or 0
             local l_0_22 = "Appomaly_LoadedDlls_Size"
             local l_0_23 = 31536000
-            local l_0_24 = 150
+            local l_0_24 = 1000
             local l_0_25 = l_0_1 .. l_0_3
             l_0_21.Dll_PrevFileSize = GetRollingQueueKeyValue(l_0_22, l_0_25) or -1
             if l_0_21.Dll_PrevFileSize == -1 and l_0_17 then
@@ -99,53 +99,68 @@ if (this_sigattrlog[4]).matched then
             end
             local l_0_26 = "Appomaly_LoadedDlls_Version"
             local l_0_27 = 31536000
-            local l_0_28 = 150
+            local l_0_28 = 1000
             local l_0_29 = l_0_1 .. l_0_3 .. l_0_21.Dll_FileSize
-            if not GetRollingQueueKeyValue(l_0_26, l_0_29) then
-              l_0_21.Dll_VersionInfo = {}
-              if not next(l_0_21.Dll_VersionInfo) then
+            l_0_21.Dll_VersionInfo = GetRollingQueueKeyValue(l_0_26, l_0_29) or ""
+            if l_0_21.Dll_VersionInfo == "" then
+              do
+                if not (sysio.GetPEVersionInfo)(l_0_2) then
+                  local l_0_30, l_0_31, l_0_32, l_0_33 = {}
+                end
+                -- DECOMPILER ERROR at PC292: Confused about usage of register: R22 in 'UnsetPending'
+
+                l_0_21.Dll_VersionInfo = l_0_30
+                -- DECOMPILER ERROR at PC293: Confused about usage of register: R22 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC298: Confused about usage of register: R22 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC303: Confused about usage of register: R22 in 'UnsetPending'
+
                 do
-                  if not (sysio.GetPEVersionInfo)(l_0_2) then
-                    local l_0_30, l_0_31, l_0_32, l_0_33, l_0_35 = {}
+                  local l_0_34 = nil
+                  AppendToRollingQueue(l_0_26, l_0_29, (l_0_30.OriginalFilename or "") .. "|" .. (l_0_30.CompanyName or "") .. "|" .. (l_0_30.FileDescription or ""), l_0_27, l_0_28)
+                  if (string.find)(l_0_21.Dll_VersionInfo, "Microsoft", 1, true) then
+                    return mp.CLEAN
                   end
-                  -- DECOMPILER ERROR at PC294: Confused about usage of register: R22 in 'UnsetPending'
+                  local l_0_35, l_0_36 = pcall(MpCommon.RollingQueueQueryKeyRegex, l_0_26, l_0_1 .. l_0_3)
+                  if not l_0_36 then
+                    l_0_21.Dll_PrevVersionInfo = {}
+                    local l_0_38 = l_0_2:match("^(.*)\\")
+                    if l_0_38 == l_0_0:match("^(.*)\\") then
+                      (bm.trigger_sig)("PotentialSideLoadingEvaluator", l_0_0 .. "|" .. l_0_2)
+                    end
+                    local l_0_39 = nil
+                    -- DECOMPILER ERROR at PC363: Unhandled construct in 'MakeBoolean' P1
 
-                  l_0_21.Dll_VersionInfo = l_0_30
-                  -- DECOMPILER ERROR at PC295: Confused about usage of register: R22 in 'UnsetPending'
+                    if IsKeyInRollingQueue("SYSTEM_DLLs", l_0_3) and IsKeyInRollingQueue("SYSTEM_DLLs", l_0_3) ~= "NONE" then
+                      l_0_21.POTENTIAL_SIDE_LOADING = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_3)
+                    end
+                    local l_0_40 = nil
+                    -- DECOMPILER ERROR at PC374: Overwrote pending register: R27 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC300: Confused about usage of register: R22 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC385: Overwrote pending register: R27 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC306: Confused about usage of register: R22 in 'UnsetPending'
-
-                  do
-                    local l_0_34, l_0_36 = , l_0_30.OriginalFilename or "" .. "|" .. l_0_30.CompanyName or "" .. "|" .. l_0_30.FileDescription or ""
-                    -- DECOMPILER ERROR at PC314: Confused about usage of register: R23 in 'UnsetPending'
-
-                    AppendToRollingQueue(l_0_26, l_0_29, l_0_36, l_0_27, l_0_28)
-                    local l_0_37, l_0_38 = pcall(MpCommon.RollingQueueQueryKeyRegex, l_0_26, l_0_1 .. l_0_3)
-                    if not l_0_38 then
-                      l_0_21.Dll_PrevVersionInfo = {}
-                      local l_0_40 = l_0_2:match("^(.*)\\")
-                      if l_0_40 == l_0_0:match("^(.*)\\") then
-                        (bm.trigger_sig)("PotentialSideLoadingEvaluator", l_0_0 .. "|" .. l_0_2)
-                      end
-                      if not l_0_17 then
-                        local l_0_41, l_0_42 = , safeJsonSerialize(l_0_21, 150, nil, true)
-                        local l_0_43 = nil
-                        local l_0_44 = bm.add_related_string
-                        l_0_44("Additional_Info", l_0_42 or l_0_43 or "", bm.RelatedStringBMReport)
-                        l_0_44 = bm
-                        l_0_44 = l_0_44.add_related_file
-                        l_0_44(l_0_2)
-                        l_0_44 = mp
-                        l_0_44 = l_0_44.INFECTED
-                        return l_0_44
-                      end
+                    if not (sysio.IsFileExists)("c:\\Windows\\System32\\" .. l_0_3) or (sysio.IsFileExists)("c:\\Windows\\SysWOW64\\" .. l_0_3) then
                       do
+                        AppendToRollingQueue("SYSTEM_DLLs", l_0_3, "NONE", 31104000, 5000)
+                        if not l_0_17 then
+                          local l_0_41, l_0_42 = , safeJsonSerialize(l_0_21, 150, nil, true)
+                          local l_0_43 = nil
+                          local l_0_44 = bm.add_related_string
+                          l_0_44("Additional_Info", l_0_42 or l_0_43 or "", bm.RelatedStringBMReport)
+                          l_0_44 = bm
+                          l_0_44 = l_0_44.add_related_file
+                          l_0_44(l_0_2)
+                          l_0_44 = mp
+                          l_0_44 = l_0_44.INFECTED
+                          return l_0_44
+                        end
                         do
-                          do return mp.CLEAN end
-                          -- DECOMPILER ERROR at PC375: freeLocal<0 in 'ReleaseLocals'
+                          do
+                            do return mp.CLEAN end
+                            -- DECOMPILER ERROR at PC423: freeLocal<0 in 'ReleaseLocals'
 
+                          end
                         end
                       end
                     end

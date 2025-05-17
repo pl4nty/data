@@ -21,7 +21,7 @@ local l_0_2 = {}
 
 -- DECOMPILER ERROR at PC28: Overwrote pending register: R3 in 'AssignReg'
 
-local l_0_3 = "1.0.0.0"
+local l_0_3 = "0.0.0.0"
 local l_0_4 = 0
 local l_0_5 = 0
 for l_0_9 = 1, #l_0_1 do

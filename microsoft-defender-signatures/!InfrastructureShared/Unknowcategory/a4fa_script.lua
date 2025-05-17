@@ -3,19 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2, l_0_3 = nil, nil
-for l_0_7,l_0_8 in ipairs(l_0_0) do
-  if l_0_8.image_path ~= nil and (mp.bitand)(l_0_8.reason_ex, 1) == 1 then
-    l_0_2 = (string.lower)(l_0_8.image_path)
-    if l_0_2:find("excel.exe") or l_0_2:find("winword.exe") then
-      l_0_3 = (string.lower)((mp.GetProcessCommandLine)(l_0_8.ppid))
-      if (string.find)(l_0_3, "rs4_winatp-intro-invoice", 1, true) or (string.find)(l_0_3, "onboardingwindows11tomicrosoftdefender", 1, true) then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
+if (not peattributes.isdll or not peattributes.hasexports or not (mp.get_mpattribute)("ChangeEPtoExport") or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched) or ((hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched)) then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

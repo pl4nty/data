@@ -3,58 +3,55 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12 = nil
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
   end
-  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC15: Overwrote pending register: R1 in 'AssignReg'
 
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or (string.lower)((this_sigattrlog[2]).utf8p2) ~= nil then
-    if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "/nagios/plugins/", 1, true) then
+  do
+    if (this_sigattrlog[5]).matched then
+      local l_0_1 = nil
+    end
+    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+    if not l_0_1 or not nil then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
+    local l_0_2 = nil
+    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
+      local l_0_3, l_0_4 = , {}
+      -- DECOMPILER ERROR at PC30: Confused about usage of register: R6 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC59: Confused about usage of register: R0 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC46: Confused about usage of register: R7 in 'UnsetPending'
 
-    if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "--lm", 1, true) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "--nt", 1, true) then
-      return mp.INFECTED
-    else
-      -- DECOMPILER ERROR at PC72: Confused about usage of register: R0 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC55: Confused about usage of register: R7 in 'UnsetPending'
 
-      -- DECOMPILER ERROR at PC81: Confused about usage of register: R0 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC65: Confused about usage of register: R7 in 'UnsetPending'
 
-      if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-c ", 1, true) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-t ", 1, true) then
-        return mp.INFECTED
-      else
-        -- DECOMPILER ERROR at PC94: Confused about usage of register: R0 in 'UnsetPending'
+      if (sigattr_tail[R6_PC30]).matched and (sigattr_tail[R6_PC30]).attribute == 16400 and (sigattr_tail[R6_PC30]).utf8p2 ~= nil and not (string.find)((sigattr_tail[R6_PC30]).utf8p2, "chmod", 1, true) and not (string.find)((sigattr_tail[R6_PC30]).utf8p2, "rm", 1, true) then
+        (table.insert)(l_0_4, (sigattr_tail[R6_PC30]).utf8p2)
+      end
+    end
+    local l_0_8 = nil
+    for l_0_12,l_0_13 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
+      local l_0_9, l_0_10 = nil
+      -- DECOMPILER ERROR at PC78: Confused about usage of register: R8 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC103: Confused about usage of register: R0 in 'UnsetPending'
+      if (string.find)(l_0_8, (mp.ContextualExpandEnvironmentVariables)(table.insert), 1, true) then
+        for l_0_17,l_0_18 in ipairs(l_0_9) do
+          -- DECOMPILER ERROR at PC96: Confused about usage of register: R13 in 'UnsetPending'
 
-        if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-c ", 1, true) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-l ", 1, true) then
-          return mp.INFECTED
-        else
-          -- DECOMPILER ERROR at PC116: Confused about usage of register: R0 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC125: Confused about usage of register: R0 in 'UnsetPending'
-
-          if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-u ", 1, true) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-t ", 1, true) then
+          if (string.find)(true, l_0_15, 1, true) then
+            (bm.add_related_file)(l_0_15)
             return mp.INFECTED
-          else
-            -- DECOMPILER ERROR at PC138: Confused about usage of register: R0 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC147: Confused about usage of register: R0 in 'UnsetPending'
-
-            if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-u ", 1, true) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-l ", 1, true) then
-              return mp.INFECTED
-            end
           end
         end
       end
     end
+    return mp.CLEAN
   end
-  return mp.CLEAN
 end
 

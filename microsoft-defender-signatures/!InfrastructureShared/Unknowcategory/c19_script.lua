@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Amonetize")
+(mp.set_mpattribute)("PUA:Block:Prepscram")
 return mp.INFECTED
 

@@ -3,35 +3,42 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.IOAVGetDownloadUrl)()
-if l_0_0 == nil then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil or (string.len)(l_0_0) < 5 then
   return mp.CLEAN
 end
-if (string.len)(l_0_0) < 12 then
+if (string.find)(l_0_0, "->", 1, true) == nil then
   return mp.CLEAN
 end
-l_0_0 = (string.lower)(l_0_0)
-local l_0_1 = false
-if (string.find)(l_0_0, "/j.mp/", 1, true) or (string.find)(l_0_0, "/www.j.mp/", 1, true) then
-  (mp.set_mpattribute)("//Lua:SuspUrlDownload")
-else
-  if (string.find)(l_0_0, "/wp-content/", 1, true) then
-    (mp.set_mpattribute)("Lua:WordPressContent")
-    l_0_1 = true
-  else
-    if (string.find)(l_0_0, "/wp-includes/", 1, true) then
-      (mp.set_mpattribute)("Lua:WordPressInclude")
-      l_0_1 = true
-    else
-      if (string.find)(l_0_0, "/wp-admin/", 1, true) then
-        (mp.set_mpattribute)("Lua:WordPressAdmin")
-        l_0_1 = true
+local l_0_1 = l_0_0:sub(-4)
+if l_0_1 == ".msi" then
+  local l_0_2 = {}
+  l_0_2[".zip->"] = "%.zip%->.+"
+  for l_0_6,l_0_7 in pairs(l_0_2) do
+    if (string.find)(l_0_0, l_0_6, 1, true) then
+      local l_0_8 = (string.match)(l_0_0, l_0_7)
+      if l_0_8 == nil or l_0_8:len() < 12 then
+        return mp.CLEAN
       end
+      local l_0_9 = l_0_6:len() + 1
+      if l_0_8:len() <= l_0_9 + 5 then
+        return mp.CLEAN
+      end
+      local l_0_10 = (string.sub)(l_0_8, l_0_9, -5)
+      if l_0_10 == nil then
+        return mp.CLEAN
+      end
+      local l_0_11 = l_0_10 .. l_0_6
+      if (string.find)(l_0_0, l_0_11, 1, true) == nil then
+        return mp.CLEAN
+      end
+      return mp.INFECTED
     end
   end
 end
-if l_0_1 == true then
-  return mp.INFECTED
+do
+  l_0_2 = mp
+  l_0_2 = l_0_2.CLEAN
+  return l_0_2
 end
-return mp.CLEAN
 

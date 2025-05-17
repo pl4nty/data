@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 27, "ÇD$\016\016\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 96, "")
 return mp.INFECTED
 

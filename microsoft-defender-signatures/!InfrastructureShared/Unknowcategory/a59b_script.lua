@@ -3,23 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0["AB7A951E-E36A-4B49-8D35-F5927069A103"] = ""
-l_0_0["EDD78F8D-8DA4-443A-ACE8-987CA9D400AD"] = ""
-l_0_0["716CA90D-9ACE-4F1E-AC33-5B3C505C0FFB"] = ""
-l_0_0["CE76777D-E5C5-4EBB-BB1A-6B17BFF08D01"] = ""
-l_0_0["5F40E508-8BBC-4A2E-86B0-8FCB6117CFA8"] = ""
-l_0_0["88293C87-BC59-4F96-AFD3-81A92CAAE5A8"] = ""
-l_0_0["AA457A77-ADC4-4857-BB2C-CBF83B7012AC"] = ""
-l_0_0["C20A962A-4B9A-47BF-87D9-EA35EEA7BE01"] = ""
-l_0_0["7C45F355-8D17-43DB-8165-8021FDD9044C"] = ""
-l_0_0["E98BB072-FDBD-42AB-928A-F98DF17BFAEE"] = ""
-local l_0_1 = (mp.GetMachineGUID)()
-if l_0_1 and l_0_0[l_0_1] then
-  return mp.LOWFI
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 == nil or (string.find)((string.lower)(l_0_0), "/reporting", 1, true) ~= nil then
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.changedetectionname)(805306629)
+do
+  if not (this_sigattrlog[7]).utf8p1 then
+    local l_0_1 = (this_sigattrlog[8]).utf8p1
+  end
+  -- DECOMPILER ERROR at PC28: Confused about usage of register: R1 in 'UnsetPending'
+
+  if l_0_1 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
+
+  local l_0_2 = (string.lower)(l_0_1)
+  if l_0_2 == nil or (string.find)(l_0_2, "c:\\", 1, true) == nil then
+    return mp.CLEAN
+  end
+  if (sysio.IsFileExists)(l_0_2) then
+    (bm.add_related_file)(l_0_2)
+  end
+  local l_0_3 = (bm.get_current_process_startup_info)()
+  if l_0_3 ~= nil and l_0_3.ppid ~= nil then
+    (bm.request_SMS)(l_0_3.ppid, "m")
+    ;
+    (bm.add_action)("SmsAsyncScanEvent", 1)
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
 

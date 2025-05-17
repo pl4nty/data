@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    if l_0_1 == "ibsvc.exe" or l_0_1 == "wsupdsvc.exe" or l_0_1 == "installbrainservice.exe" then
-      (mp.set_mpattribute)("Lua:InstallBrainFileName")
-    end
-  end
-  return mp.CLEAN
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block untrusted and unsigned processes that run from USB"
+  l_1_0.Description = "Windows Defender Exploit Guard detected launching of an untrusted or unsigned executable from a removable USB media."
+  l_1_0.NotificationDedupingInterval = 120
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
+  return l_1_0
 end
+
 

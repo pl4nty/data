@@ -3,23 +3,37 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if l_0_1:find("\\appdata\\local\\microsoft\\windows\\temporary internet files", 1, true) ~= nil or l_0_1:find("\\appdata\\local\\microsoft\\windows\\inetcache", 1, true) ~= nil then
-      local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-      if l_0_2 == "regsvr32.exe" then
-        (mp.set_mpattribute)("Lua:ContextRegsvr32AccessTIF.A")
-      else
-        if l_0_2 == "control.exe" then
-          (mp.set_mpattribute)("Lua:ContextControlAccessTIF.A")
-        end
-      end
-    end
-  end
-end
-do
+if peattributes.hasappendeddata == false or peattributes.x86_image == false or peattributes.isexe == false or peattributes.no_security == true then
   return mp.CLEAN
 end
+if peattributes.isdriver == true then
+  return mp.CLEAN
+end
+if peattributes.packed == true then
+  return mp.CLEAN
+end
+if peattributes.packersigmatched == true then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 1433600 or l_0_0 > 1843200 then
+  return mp.CLEAN
+end
+local l_0_1 = (pe.get_versioninfo)()
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if l_0_1.FileVersion == nil then
+  return mp.CLEAN
+end
+if l_0_1.FileDescription ~= "AVG Virus scanner" then
+  return mp.CLEAN
+end
+if l_0_1.InternalName ~= "aswQuick.exe" then
+  return mp.CLEAN
+end
+if l_0_1.LegalCopyright ~= "Copyright (C) 2014 AVG Technologies CZ, s.r.o." then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

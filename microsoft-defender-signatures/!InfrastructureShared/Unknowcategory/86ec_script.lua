@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() == 47576 and peattributes.no_security == true and peattributes.isexe == true and (pesecs[4]).Name == ".ex_rsc" then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 17, 5)
+if (mp.readu_u32)(l_0_0, 2) < 32768 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

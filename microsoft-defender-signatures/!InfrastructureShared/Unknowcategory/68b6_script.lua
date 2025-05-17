@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (pesecs[1]).Name == "AUTO" then
+local l_0_0 = (mp.getfilename)()
+if (string.find)((string.lower)(l_0_0), ".sdb$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

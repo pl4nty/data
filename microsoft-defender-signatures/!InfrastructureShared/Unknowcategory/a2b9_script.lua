@@ -3,15 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[6]).matched and (this_sigattrlog[7]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[6]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[7]).p1)
-  if l_0_0 and (string.find)(l_0_0, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") and l_0_1 and (string.len)(l_0_1) < 16 and (string.find)(l_0_1, "^/[%w/_%-=]+$") then
-    return mp.INFECTED
+if (hstrlog[13]).matched or (hstrlog[14]).matched then
+  (mp.changedetectionname)(805306447)
+else
+  if (hstrlog[15]).matched then
+    (mp.changedetectionname)(805306448)
+  else
+    if (hstrlog[16]).matched then
+      (mp.changedetectionname)(805306449)
+    else
+      if (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched then
+        (mp.changedetectionname)(805306432)
+      end
+    end
   end
-  return mp.CLEAN
 end
-do
-  return mp.CLEAN
-end
+return mp.INFECTED
 

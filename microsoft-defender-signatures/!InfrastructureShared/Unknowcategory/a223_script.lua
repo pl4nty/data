@@ -3,25 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-;
-(table.insert)(l_0_0, "https://thiscannotpossiblywork.local/")
-local l_0_1 = {}
-l_0_1.isLocal = "false"
-l_0_1.certutil = "true"
-l_0_1.E2ETestScenario = "true"
-local l_0_2 = (mp.GetUrlReputation)(l_0_0, l_0_1)
-if l_0_2 ~= nil then
-  local l_0_3 = l_0_2.urls
-  for l_0_7,l_0_8 in ipairs(l_0_3) do
-    if l_0_8.determination == 2 and l_0_8.confidence > 60 then
-      return mp.INFECTED
-    end
-  end
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.suspicious_dosheader == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+  return mp.INFECTED
 end
-do
-  l_0_3 = mp
-  l_0_3 = l_0_3.CLEAN
-  return l_0_3
-end
+return mp.CLEAN
 

@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
+if peattributes.no_security == true and peattributes.isexe == true and (mp.getfilesize)() < 200000 and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT > 3 and (mp.get_mpattribute)("HSTR:Fareit.gen") then
-  return mp.INFECTED
-end
-;
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-return mp.LOWFI
+return mp.CLEAN
 

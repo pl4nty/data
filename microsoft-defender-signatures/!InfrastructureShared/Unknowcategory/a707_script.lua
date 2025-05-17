@@ -3,28 +3,68 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\chrome\\application\\chrome.exe", 1, true) or (string.find)(l_0_0, "\\microsoftedge", 1, true) or (string.find)(l_0_0, "windows\\system32\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\sophos\\", 1, true) or (string.find)(l_0_0, "\\application\\browser.exe", 1, true)) then
-  return mp.CLEAN
-end
-for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
-  if (sigattr_head[l_0_4]).matched and ((sigattr_head[l_0_4]).attribute == 16401 or (sigattr_head[l_0_4]).attribute == 16400 or (sigattr_head[l_0_4]).attribute == 16404) then
-    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
-    if (sigattr_head[l_0_4]).utf8p1 ~= nil then
-      local l_0_6 = {}
-      l_0_6["iexplore.exe"] = true
-      l_0_6["chrome.exe"] = true
-      l_0_6["firefox.exe"] = true
-      l_0_6["teams.exe"] = true
-      l_0_6["ccmsetup.exe"] = true
-      l_0_6["ccmexec.exe"] = true
-      l_0_6["outlook.exe"] = true
-      l_0_6["olk.exe"] = true
-      if l_0_6[(string.match)((string.lower)(l_0_5), "\\([^\\]+)$")] then
-        return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1 = (this_sigattrlog[3]).utf8p2
+    else
+    end
+    -- DECOMPILER ERROR at PC43: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
+        local l_0_2 = (this_sigattrlog[5]).utf8p2
+      else
+      end
+      -- DECOMPILER ERROR at PC61: Overwrote pending register: R0 in 'AssignReg'
+
+      do
+        if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
+          local l_0_3 = (this_sigattrlog[7]).utf8p2
+        else
+        end
+        -- DECOMPILER ERROR at PC79: Overwrote pending register: R0 in 'AssignReg'
+
+        do
+          if not (this_sigattrlog[9]).matched or (this_sigattrlog[10]).matched then
+            local l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_15 = (this_sigattrlog[9]).utf8p2
+          else
+          end
+          -- DECOMPILER ERROR at PC93: Confused about usage of register: R0 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC99: Confused about usage of register: R0 in 'UnsetPending'
+
+          if (not (this_sigattrlog[11]).matched or (this_sigattrlog[11]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[11]).utf8p2) > 3 then
+            local l_0_9 = nil
+            if (mp.GetExecutablesFromCommandLine)((this_sigattrlog[11]).utf8p2) ~= nil then
+              for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[11]).utf8p2)) do
+                local l_0_10 = nil
+                -- DECOMPILER ERROR at PC109: Confused about usage of register: R6 in 'UnsetPending'
+
+                R6_PC109 = (mp.ContextualExpandEnvironmentVariables)(R6_PC109)
+                ;
+                (bm.add_related_file)(R6_PC109)
+              end
+            end
+          end
+          do
+            local l_0_16 = (string.lower)((bm.get_imagepath)())
+            if (string.find)(l_0_16, "\\cscript.exe", 1, true) or (string.find)(l_0_16, "\\wscript.exe", 1, true) then
+              return mp.INFECTED
+            end
+            return mp.CLEAN
+          end
+        end
       end
     end
   end
 end
-return mp.INFECTED
 

@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("SIGATTR:DelphiFile") then
-  (mp.set_mpattribute)("SIGATTR:DelphiFile")
-  ;
-  (mp.set_mpattribute)("MpEnableCOM")
+if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

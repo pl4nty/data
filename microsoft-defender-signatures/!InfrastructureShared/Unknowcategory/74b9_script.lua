@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 28, "")
-return mp.INFECTED
+if (((mp.getfilename)()):lower()):find("word/embeddings/oleobject1.bin->(ole stream 0)", -46, true) then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

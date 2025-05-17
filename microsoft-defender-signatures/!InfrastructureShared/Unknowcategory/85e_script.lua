@@ -3,20 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0 == nil or (string.len)(l_0_0) < 15 then
-  return mp.CLEAN
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block JavaScript or VBScript from launching downloaded executable content"
+  l_1_0.Description = "Windows Defender Exploit Guard detected a script interpreter process running obfuscated JavaScript, VBScript, or macro code."
+  l_1_0.NotificationDedupingInterval = 120
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
+  return l_1_0
 end
-if (string.find)(l_0_0, "->", 1, true) == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "/resources/", 1, true) == nil then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("Lua:InsideResources")
-if (string.match)(l_0_0, "/resources/[^%.]+$") == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+
 

@@ -3,40 +3,49 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN or (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  if (l_0_1:sub(-4)):lower() == ".lck" or (l_0_1:sub(-4)):lower() == ".idx" then
-    local l_0_2 = nil
-    -- DECOMPILER ERROR at PC50: Overwrote pending register: R2 in 'AssignReg'
+split_path = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = string.match
+  local l_1_2 = l_1_0
+  do
+    local l_1_3 = "(.-)([^\\]-([^\\%.]+))$"
+    do return l_1_1(l_1_2, l_1_3) end
+    -- DECOMPILER ERROR at PC6: Confused about usage of register R2 for local variables in 'ReleaseLocals'
 
-    if nil == nil then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC58: Confused about usage of register: R2 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC67: Confused about usage of register: R2 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC76: Confused about usage of register: R2 in 'UnsetPending'
-
-    if ((string.find)(nil, "\\application data", 1, true) or (string.find)(nil, "\\appdata\\roaming", 1, true) or (string.find)(nil, "\\appdata\\local", 1, true)) and ((string.find)(l_0_1, "%w+%.lck", 1, true) or (string.find)(l_0_1, "%w+%.idx", 1, true)) then
-      local l_0_3, l_0_4, l_0_5 = , nil, nil
-      -- DECOMPILER ERROR at PC107: Overwrote pending register: R5 in 'AssignReg'
-
-      if l_0_4 == nil or l_0_5 == nil then
-        return mp.CLEAN
-      end
-      if (string.sub)(l_0_4, -4) == ".exe" then
-        (mp.ReportLowfi)((MpCommon.PathToWin32Path)(l_0_5) .. "\\" .. nil, 2068892749)
-      end
-    end
   end
 end
-do
-  return mp.CLEAN
+
+if (string.find)((Remediation.Threat).Name, "^Trojan:MSIL/Solorigate.BR!dha") == nil then
+  return 
+end
+for l_0_3,l_0_4 in ipairs((Remediation.Threat).Resources) do
+  if l_0_4.Schema == "file" and l_0_4.Path ~= nil and l_0_4.Path ~= "" then
+    local l_0_5 = (string.lower)(l_0_4.Path)
+    if l_0_5 ~= nil and #l_0_5 > 4 and (string.sub)(l_0_5, -4) == ".dll" then
+      if (string.sub)(l_0_5, 1, 4) == "\\\\?\\" then
+        l_0_5 = (string.sub)(l_0_5, 5)
+      end
+      local l_0_6, l_0_7, l_0_8 = split_path(l_0_5)
+      local l_0_9 = {}
+      -- DECOMPILER ERROR at PC63: No list found for R9 , SetList fails
+
+      -- DECOMPILER ERROR at PC64: Overwrote pending register: R10 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC65: Overwrote pending register: R11 in 'AssignReg'
+
+      for l_0_13,l_0_14 in ("solarwinds.businesslayerhost.exe")("configurationwizard.exe") do
+        local l_0_15 = (sysio.GetProcessFromFileName)(l_0_6 .. l_0_14)
+        for l_0_19,l_0_20 in pairs(l_0_15) do
+          local l_0_21 = (string.format)("pid:%d,ProcessStart:%u", l_0_20.pid, l_0_20.starttime)
+          local l_0_22 = (sysio.IsFileOpenedByProcess)(l_0_21, l_0_5)
+          if ((sysio.GetLastResult)()).Success == true and l_0_22 == true then
+            (sysio.StopService)("OrionModuleEngine")
+            ;
+            (sysio.TerminateProcess)(l_0_21)
+          end
+        end
+      end
+    end
+  end
 end
 

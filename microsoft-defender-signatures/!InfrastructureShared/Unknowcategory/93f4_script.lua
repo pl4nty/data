@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "psexesvc.exe" then
+      return mp.INFECTED
+    end
+    if (MpCommon.GetOriginalFileName)(l_0_1) == "psexesvc.exe" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (mp.getfilesize)() > 20971520 then
-  return mp.CLEAN
-end
-if (pe.get_exports_count)() < 60 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

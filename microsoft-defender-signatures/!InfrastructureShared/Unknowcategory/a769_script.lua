@@ -3,42 +3,42 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  if (string.find)(l_0_0, "\\werfault.exe\\\\debugger", 1, true) or (string.find)(l_0_0, "\\osppsvc.exe\\\\debugger", 1, true) or (string.find)(l_0_0, "\\sppextcomobj.exe\\\\debugger", 1, true) then
+bytes_to_int = function(l_1_0, l_1_1, l_1_2, l_1_3)
+  -- function num : 0_0
+  if not l_1_3 then
+    error("need four bytes to convert to int", 2)
+  end
+  return l_1_0 + l_1_1 * 256 + l_1_2 * 65536 + l_1_3 * 16777216
+end
+
+pointer2int = function(l_2_0, l_2_1)
+  -- function num : 0_1
+  local l_2_2 = (string.byte)(l_2_0, l_2_1)
+  local l_2_3 = (string.byte)(l_2_0, l_2_1 + 1)
+  local l_2_4 = (string.byte)(l_2_0, l_2_1 + 2)
+  local l_2_5 = (string.byte)(l_2_0, l_2_1 + 3)
+  return bytes_to_int(l_2_2, l_2_3, l_2_4, l_2_5)
+end
+
+;
+(mp.readprotection)(false)
+if (hstrlog[1]).matched and peattributes.isdll and peattributes.hasexports then
+  local l_0_0 = (hstrlog[1]).VA
+  local l_0_1 = (pe.mmap_va)(l_0_0 + 7, 5)
+  local l_0_2 = pointer2int(l_0_1, 1)
+  local l_0_3 = (pe.mmap_va)(l_0_2, 93)
+  if (string.match)(l_0_3, "Sistema indispon") ~= nil and (string.match)(l_0_3, "vel no momento, tente mais tarde") ~= nil then
     return mp.CLEAN
   end
-  local l_0_1 = (this_sigattrlog[1]).utf8p2
-  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
-    l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
-    if not (sysio.IsFileExists)(l_0_1) then
-      l_0_1 = (string.lower)((bm.get_imagepath)())
-    end
-    if (mp.IsKnownFriendlyFile)(l_0_1, true, false) == true then
-      return mp.CLEAN
-    end
-    local l_0_2 = (sysio.GetFileLastWriteTime)(l_0_1)
-    if ((sysio.GetLastResult)()).Success and l_0_2 ~= 0 then
-      l_0_2 = l_0_2 / 10000000 - 11644473600
-      local l_0_3 = (MpCommon.GetCurrentTimeT)()
-      if l_0_3 < l_0_2 or l_0_3 - (l_0_2) > 600 then
-        return mp.CLEAN
-      end
-    end
-    do
-      do
-        l_0_1 = (string.lower)(l_0_1)
-        if (string.find)(l_0_1, "awdump.exe", 1, true) or (string.find)(l_0_1, "awdumpifeo.exe", 1, true) or (string.find)(l_0_1, "AppDeployToolkit_BlockAppExecutionMessage.vbs", 1, true) then
-          return mp.CLEAN
-        end
-        ;
-        (mp.ReportLowfi)(l_0_1, 794607441)
-        ;
-        (bm.add_related_file)(l_0_1)
-        do return mp.INFECTED end
-        return mp.CLEAN
-      end
-    end
+  l_0_3 = (string.gsub)(l_0_3, "@", "")
+  l_0_3 = (string.gsub)(l_0_3, "!", "")
+  l_0_3 = (string.gsub)(l_0_3, "*", "")
+  l_0_3 = (string.gsub)(l_0_3, "#", "")
+  if (string.match)(l_0_3, "Sistema indispon") ~= nil and (string.match)(l_0_3, "vel no momento, tente mais tarde") ~= nil then
+    return mp.INFECTED
   end
+end
+do
+  return mp.CLEAN
 end
 

@@ -4,11 +4,14 @@
 -- params : ...
 -- function num : 0
 do
-  if (mp.get_mpattribute)("RPF:SmartAssembly") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-    local l_0_0 = (pe.get_versioninfo)()
-    if l_0_0 ~= nil and (string.find)((string.lower)(l_0_0.InternalName), "luckyleap", 1, true) then
-      (mp.set_mpattribute)("Trojan:Win32/LuckyLeap")
+  if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_amd64_image") and (mp.getfilesize)() >= 208384 and (mp.getfilesize)() < 232960 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

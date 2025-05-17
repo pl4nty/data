@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr - 4, 4), 1) < 65536 then
-  return mp.CLEAN
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 30, "")
 return mp.INFECTED
 

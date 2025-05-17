@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == false and (mp.getfilesize)() < 5048000 then
+if peattributes.isdll and peattributes.x86_image and peattributes.suspicious_linker_version then
   return mp.INFECTED
 end
 return mp.CLEAN

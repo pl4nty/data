@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 and peattributes.isdll and ((mp.get_mpattribute)("ALF:Trojan:Win32/TrickBot.SL1") or (mp.get_mpattribute)("ALF:Trojan:Win32/TrickBot.SL2")) and pehdr.NumberOfSections == 8 and (mp.get_mpattribute)("LUA:FileSizeGT2M.A") then
-  return mp.INFECTED
+do
+  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

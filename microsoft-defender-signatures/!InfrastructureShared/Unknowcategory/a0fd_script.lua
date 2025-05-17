@@ -3,8 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.suspicious_falign == true and peattributes.no_comruntime == true and peattributes.no_delayimport == true and peattributes.no_uidata == true then
-  return mp.INFECTED
+local l_0_0 = {}
+l_0_0["winword.exe"] = true
+l_0_0["excel.exe"] = true
+l_0_0["powerpnt.exe"] = true
+l_0_0["outlook.exe"] = true
+local l_0_1 = (mp.GetParentProcInfo)()
+if l_0_1 ~= nil then
+  for l_0_5 = 1, 4 do
+    local l_0_6 = (string.lower)(l_0_1.image_path)
+    if l_0_0[l_0_6:match("([^\\]+)$")] then
+      return mp.INFECTED
+    else
+      l_0_1 = (mp.GetParentProcInfo)(l_0_1.ppid)
+      l_0_5 = l_0_5 + 1
+    end
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

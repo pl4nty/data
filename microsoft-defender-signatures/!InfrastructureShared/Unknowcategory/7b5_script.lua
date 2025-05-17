@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  local l_0_7 = (string.lower)(l_0_6.image_path)
-  if (string.find)(l_0_7, "\\svchost.exe", 1, true) or (string.find)(l_0_7, "\\services.exe") then
-    return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)((string.sub)(l_0_0, -12))
+  if l_0_0 == "wmiprvse.exe" or (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -9) == "csrss.exe" or l_0_0 == "vmtoolsd.exe" then
+    return mp.CLEAN
   end
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,19 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset
-local l_0_2 = ""
-if l_0_0.is_header then
-  l_0_2 = (tostring(headerpage)):sub(l_0_1 - 256, l_0_1 + 1)
-  l_0_2 = (string.gsub)(l_0_2, "(.)(.)", "%2")
-else
-  l_0_2 = (tostring(footerpage)):sub(l_0_1 - 256, l_0_1 + 1)
-  l_0_2 = (string.gsub)(l_0_2, "(.)(.)", "%2")
-end
-l_0_2 = (string.lower)(l_0_2)
-if (string.find)(l_0_2, ".connected -or $", 1, true) then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(mp.set_mpattribute)("lua_codepatch_tibs_7")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (mp.readu_u32)(l_0_0, 12)
+local l_0_2 = (mp.readu_u32)(l_0_0, 23)
+local l_0_3 = (pe.get_regval)(pe.REG_EDX)
+local l_0_4 = (string.byte)(l_0_0, 8)
+local l_0_5 = (mp.ror32)(l_0_3, l_0_4) - (mp.bitxor)(l_0_2, l_0_1) - 1
+;
+(pe.set_regval)(pe.REG_EBX, l_0_5)
+return mp.INFECTED
 

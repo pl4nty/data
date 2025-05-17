@@ -3,41 +3,38 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("AndroidOS:HSTR:AndroidElf") then
+if not (this_sigattrlog[3]).matched or not (this_sigattrlog[3]).wp2 then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+local l_0_0 = (MpCommon.GetPersistContextNoPath)("mshta_start")
+if l_0_0 then
+  for l_0_4,l_0_5 in ipairs(l_0_0) do
+    l_0_5 = (mp.ContextualExpandEnvironmentVariables)(l_0_5)
+    if (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, false, false) then
+      (mp.ReportLowfi)(l_0_5, 1632017330)
+    end
+  end
+  local l_0_6 = (this_sigattrlog[3]).utf8p2
+  if l_0_6 then
+    l_0_6 = l_0_6:lower()
+    if (string.find)(l_0_6, "windows\\ccm", 1, true) or (string.find)(l_0_6, "\\ccm\\systemtemp\\", 1, true) then
+      return mp.CLEAN
+    end
+    local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_6)
+    if l_0_7 then
+      for l_0_11,l_0_12 in ipairs(l_0_7) do
+        l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
+        if (sysio.IsFileExists)(l_0_12) and not (mp.IsKnownFriendlyFile)(l_0_12, false, false) then
+          (mp.ReportLowfi)(l_0_12, 705262311)
+        end
+      end
+    end
+    do
+      do
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
+    end
+  end
 end
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 700000 or l_0_0 < 4000 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("adbcopy", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("libbaiduzeus", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("libmiui", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("liboctvm", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("getdbfile", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("\\atcid", 1, true) then
-  return mp.CLEAN
-end
-local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_2:find("root", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

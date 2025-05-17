@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 2, 4), 1) >= 65536 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 6, "\235")
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "Q‹Ï", 1, true)
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\235" .. (string.char)(l_0_0 - 3))
+return mp.INFECTED
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[7]).matched and peattributes.isdll and peattributes.hasexports then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if (mp.get_mpattribute)("ValidDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

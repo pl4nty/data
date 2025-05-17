@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (string.lower)(l_0_0.command_line)
-if (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "gizmoinvoker", 1, true) or (string.find)(l_0_1, "monitorworkeragent", 1, true) or (string.find)(l_0_1, "\\programdata\\microsoft\\windows defender advanced threat protection", 1, true) then
-  return mp.CLEAN
-end
+local l_0_0 = (nri.GetSSLCertificate)()
+local l_0_1 = {}
+l_0_1.useragent = (nri.GetHttpRequestHeader)("User-Agent")
+l_0_1.Subject = l_0_0.Subject
+l_0_1.Issuer = l_0_0.Issuer
+l_0_1.ValidFrom = l_0_0.ValidFrom
+l_0_1.ValidTo = l_0_0.ValidTo
+l_0_1.FingerprintSha1 = l_0_0.FingerprintSha1
+l_0_1.FingerprintSha256 = l_0_0.FingerprintSha256
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_1)
 return mp.INFECTED
 

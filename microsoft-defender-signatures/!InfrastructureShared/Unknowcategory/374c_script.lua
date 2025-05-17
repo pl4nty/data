@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_image_filename)("c:\\syshost.exe")
-;
-(pe.reemulate)()
-return mp.INFECTED
+if mp.HSTR_CALLER_SMS == (mp.GetHSTRCallerId)() then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

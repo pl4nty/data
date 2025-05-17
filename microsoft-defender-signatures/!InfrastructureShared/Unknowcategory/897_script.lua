@@ -3,17 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_1 == "run.dat" then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if l_0_2:sub(-36) == "7f5ed85d-6828-4f92-858c-f40b0ac68138" or l_0_2:sub(-4) == "nano" then
-      (mp.set_mpattribute)("Lua:NanocorFilename.A")
-    end
-  end
-end
-do
+if (mp.getfilesize)() < 184320 then
   return mp.CLEAN
 end
+if (mp.bitor)((mp.readu_u32)(headerpage, 1), 538976288) ~= 1667594341 then
+  return mp.CLEAN
+end
+if (mp.bitor)((mp.readu_u32)(headerpage, 5), 538976288) ~= 677737589 then
+  return mp.CLEAN
+end
+local l_0_0 = tostring(headerpage)
+if l_0_0:match("^[eE][xX][eE][cC][uU][tT][eE]%([cC][hH][rR]%(") ~= nil then
+  return mp.INFECTED
+else
+  if l_0_0:match("^[eE][xX][eE][cC][uU][tT][eE][gG][lL][oO][bB][aA][lL]%([cC][hH][rR]%(") ~= nil then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

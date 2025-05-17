@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-SetAttributeFromClassifierScores = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  for l_1_5,l_1_6 in pairs(l_1_1) do
-    if l_1_6 <= l_1_0 then
-      (mp.set_mpattribute)(l_1_5)
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -12) == "\\svchost.exe" then
+  return mp.CLEAN
 end
-
+return mp.INFECTED
 

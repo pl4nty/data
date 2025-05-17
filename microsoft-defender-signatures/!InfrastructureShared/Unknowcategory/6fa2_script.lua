@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
-  return mp.CLEAN
+if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("ValidDigitalSignature") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

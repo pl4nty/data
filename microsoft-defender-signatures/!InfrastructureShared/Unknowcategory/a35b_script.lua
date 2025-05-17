@@ -4,18 +4,12 @@
 -- params : ...
 -- function num : 0
 do
-  if peattributes.isdll == true then
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.getfilesize)() >= 380928 and (mp.getfilesize)() < 413696 then
     local l_0_0 = (mp.GetCertificateInfo)()
     for l_0_4,l_0_5 in pairs(l_0_0) do
       if l_0_5.Signers ~= nil then
         return mp.CLEAN
       end
-    end
-    if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    end
-    if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-      (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
     end
     return mp.INFECTED
   end

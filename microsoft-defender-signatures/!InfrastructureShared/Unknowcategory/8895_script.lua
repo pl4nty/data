@@ -3,19 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["pcwrun.exe"] = true
-  l_0_3["sihost.exe"] = true
-  l_0_3["gpscript.exe"] = true
-  if not l_0_3[l_0_2] then
-    return mp.INFECTED
-  end
-end
-do
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 == nil then
   return mp.CLEAN
 end
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 == nil then
+  return mp.CLEAN
+end
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).wp2 == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,25 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode or peattributes.isvbnative then
-  if (mp.getfilesize)() < 65536 then
-    if mp.HSTR_WEIGHT >= 9 then
-      if (hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched then
-        return mp.INFECTED
-      end
-      ;
-      (mp.set_mpattribute)("HSTR:Trojan:Win32/Rekilc.B_1")
-      return mp.CLEAN
-    else
-      ;
-      (mp.set_mpattribute)("HSTR:Trojan:Win32/Rekilc.B_2")
-      return mp.CLEAN
-    end
-  else
-    ;
-    (mp.set_mpattribute)("HSTR:Program:Win32/SoftwareClicker.B")
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.GetUACMetadata)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if l_0_0.Type ~= mp.AMSI_UAC_REQUEST_TYPE_EXE then
+  return mp.CLEAN
+end
+if (string.sub)((string.lower)((l_0_0.Info).ApplicationName), -24) == "exesampleuacdetected.exe" or (string.sub)((string.lower)((l_0_0.Info).CommandLine), -25) == "exesampleuacdetected.exe\"" or (string.sub)((string.lower)((l_0_0.Info).CommandLine), -62) == "exesampleuacdetected-9f298338-4c4e-49e8-bd3b-9a3d453c9b79.exe\"" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  (mp.set_mpattribute)("MpOnModifiedHandleClose")
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:len() < 4 then
+  return mp.CLEAN
+end
+if (string.sub)(l_0_0, -4) == ".hta" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

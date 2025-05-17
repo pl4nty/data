@@ -4,37 +4,58 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = {}
-l_0_0.exe = ""
-l_0_0.cmd = ""
-l_0_0.bat = ""
-l_0_0.com = ""
-l_0_0.pif = ""
-l_0_0.scr = ""
-local l_0_1 = {}
-l_0_1.ms = ""
-l_0_1.cc = ""
-local l_0_2, l_0_3 = nil, nil
-if (this_sigattrlog[4]).matched and (this_sigattrlog[6]).matched then
-  l_0_2 = (string.lower)((this_sigattrlog[4]).utf8p1)
-  l_0_3 = (string.lower)((this_sigattrlog[6]).utf8p2)
-else
-  if (this_sigattrlog[5]).matched and (this_sigattrlog[7]).matched then
-    l_0_2 = (string.lower)((this_sigattrlog[5]).utf8p1)
-    l_0_3 = (string.lower)((this_sigattrlog[7]).utf8p2)
-  end
-end
-if l_0_2 ~= nil and l_0_3 ~= nil then
-  local l_0_4, l_0_5 = l_0_2:match("([^\\]-([^%.]+))$")
-  local l_0_6 = l_0_4:sub(1, 2)
-  if l_0_0[l_0_5] and l_0_1[l_0_6] then
-    l_0_3 = (string.match)(l_0_3, "\\([^\\]+)$")
-    if l_0_4 == l_0_3 then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_2), 4091961331)
-      return mp.INFECTED
+-- DECOMPILER ERROR at PC15: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R1 in 'AssignReg'
+
+local l_0_1 = ((81)[1]).VA
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R2 in 'AssignReg'
+
+local l_0_2 = ((87)[2]).VA
+-- DECOMPILER ERROR at PC22: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC24: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC25: Overwrote pending register: R5 in 'AssignReg'
+
+local l_0_3 = ((69).mmap_va)(82, 84)
+-- DECOMPILER ERROR at PC30: Overwrote pending register: R6 in 'AssignReg'
+
+local l_0_4 = (pe.mmap_va)(l_0_2 + 4, 89)
+-- DECOMPILER ERROR at PC35: Overwrote pending register: R7 in 'AssignReg'
+
+local l_0_5 = (string.byte)(l_0_3, 65)
+-- DECOMPILER ERROR at PC40: Overwrote pending register: R8 in 'AssignReg'
+
+local l_0_6 = (string.byte)(l_0_4, 83)
+local l_0_7 = 0
+local l_0_8 = 0
+-- DECOMPILER ERROR at PC44: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC54: Overwrote pending register: R7 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC57: Overwrote pending register: R8 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC59: Overwrote pending register: R10 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC60: Overwrote pending register: R11 in 'AssignReg'
+
+if ((68)[4]).matched then
+  do
+    for l_0_12 = 1, 70, 74 do
+      -- DECOMPILER ERROR at PC62: Overwrote pending register: R13 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC71: Overwrote pending register: R14 in 'AssignReg'
+
+      if l_0_5 == 71 and l_0_6 == l_0_0[l_0_12 + 1] then
+        local l_0_13 = (string.format)(72, l_0_6, l_0_5, l_0_7, (hstrlog[3]).VA, l_0_8)
+        ;
+        (mp.set_mpattribute)(l_0_13)
+        return mp.INFECTED
+      end
     end
+    do return mp.CLEAN end
+    -- WARNING: undefined locals caused missing assignments!
   end
-end
-do
-  return mp.CLEAN
 end
 

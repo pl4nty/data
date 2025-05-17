@@ -3,65 +3,46 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epscn_writable ~= true then
-  return mp.CLEAN
+if ((pe.mmap_va)(pevars.sigaddr + 1, 1) == "\254" or (pe.mmap_va)(pevars.sigaddr + 1, 1) == "\255") and ((pe.mmap_va)(pevars.sigaddr + 14, 1) == "\000" or (pe.mmap_va)(pevars.sigaddr + 14, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 14, 1) == "\016") then
+  (pe.mmap_patch_va)(pevars.sigaddr + 6, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 15, "\235")
+  ;
+  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+  local l_0_0 = 256
+  local l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
+  local l_0_2 = (string.find)(l_0_1, "h@B\015%z")
+  local l_0_3 = (string.find)(l_0_1, "`\174\n%z")
+  local l_0_4 = (string.find)(l_0_1, "h\001%z\031%z")
+  local l_0_5 = (string.find)(l_0_1, "h\132\003%z%z")
+  if l_0_2 and l_0_3 then
+    for l_0_9 = 1, 256 - l_0_2 do
+      if (pe.mmap_va)(pevars.sigaddr + l_0_9 + l_0_3, 3) == "P\255\021" then
+        (pe.mmap_patch_va)(pevars.sigaddr + l_0_9 + l_0_3 + 1, "YYY\144")
+      end
+    end
+    if l_0_4 then
+      for l_0_13 = 1, 48 do
+        if (pe.mmap_va)(pevars.sigaddr + l_0_13 + l_0_4, 4) == "\031\000\255\021" then
+          (pe.mmap_patch_va)(pevars.sigaddr + l_0_13 + l_0_4 + 2, "YYY\144")
+        end
+      end
+    end
+    do
+      if l_0_5 then
+        for l_0_17 = 1, 160 do
+          if (pe.mmap_va)(pevars.sigaddr + l_0_17 + l_0_5, 3) == "\000\255\021" then
+            (pe.mmap_patch_va)(pevars.sigaddr + l_0_17 + l_0_5 + 1, "")
+          end
+        end
+      end
+      do
+        do
+          do return mp.INFECTED end
+          return mp.CLEAN
+        end
+      end
+    end
+  end
 end
-if peattributes.hasboundimports == true then
-  return mp.CLEAN
-end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect == true then
-  return mp.CLEAN
-end
-if peattributes.epscn_islast == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections <= 2 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size >= 80 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size <= 192 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size >= 224 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 5) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 17) ~= 1 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 21) ~= 6 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) ~= 6 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 29) <= 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

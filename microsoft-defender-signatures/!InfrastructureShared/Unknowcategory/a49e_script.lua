@@ -3,9 +3,30 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-if (((((((((((hstrlog[2]).matched and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and not (hstrlog[10]).matched) or (hstrlog[11]).matched) and not (hstrlog[12]).matched) or (hstrlog[1]).matched) and 0 + 1 + 1 + 1 + 1 + 1 >= 2 and 0 + 1 + 1 >= 1 and 0 + 1 + 1 + 1 >= 2 then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  local l_0_1 = ((string.lower)((string.sub)(l_0_0, -18))):match("\\([^\\]+%.exe)$")
+  local l_0_2 = {}
+  l_0_2["explorer.exe"] = true
+  l_0_2["chrome.exe"] = true
+  l_0_2["microsoftedge.exe"] = true
+  l_0_2["iexplore.exe"] = true
+  l_0_2["firefox.exe"] = true
+  l_0_2["cmd.exe"] = true
+  l_0_2["net.exe"] = true
+  l_0_2["winword.exe"] = true
+  l_0_2["excel.exe"] = true
+  l_0_2["onenote.exe"] = true
+  l_0_2["powerpnt.exe"] = true
+  l_0_2["teams.exe"] = true
+  l_0_2["notepad++.exe"] = true
+  l_0_2["powershell.exe"] = true
+  if l_0_2[l_0_1] then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

@@ -3,74 +3,30 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC8: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (hstrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC34: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if not (pe.isdynamic_va)((hstrlog[2]).VA - 32) and (peattributes.isexe or peattributes.ismsil) and pehdr.NumberOfSections < 5 then
-      local l_0_4 = nil
-      for l_0_8 = 1, pehdr.NumberOfSections do
-        local l_0_5 = (pe.foffset_va)((hstrlog[2]).VA - 32)
-        -- DECOMPILER ERROR at PC43: Confused about usage of register: R5 in 'UnsetPending'
-
-        if (pe.contains_va)(R5_PC43, l_0_4) then
-          (mp.readprotection)(false)
-          local l_0_10 = (pesecs[R5_PC43]).SizeOfRawData - (l_0_5 - (pesecs[R5_PC43]).PointerToRawData)
-          -- DECOMPILER ERROR at PC72: Overwrote pending register: R7 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC79: Overwrote pending register: R7 in 'AssignReg'
-
-          if (pe.isencrypted_va)(l_0_4) then
-            local l_0_11 = nil
-            local l_0_12 = 0
-            -- DECOMPILER ERROR at PC83: Confused about usage of register: R9 in 'UnsetPending'
-
-            for l_0_16 = 2048, 2048 + 8 do
-              local l_0_13 = nil
-              -- DECOMPILER ERROR at PC89: Confused about usage of register: R13 in 'UnsetPending'
-
-              if (string.byte)(l_0_11, R13_PC89 + 1) < 42 or (string.byte)(l_0_11, R13_PC89 + 1) > 122 then
-                l_0_12 = l_0_12 + 1
-              else
-                break
-              end
-            end
-            do
-              do
-                -- DECOMPILER ERROR at PC112: Confused about usage of register: R9 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC117: Confused about usage of register: R9 in 'UnsetPending'
-
-                if l_0_12 > 0 then
-                  (mp.vfo_add_buffer)((string.sub)(l_0_11, 0, l_0_13) .. (string.sub)(l_0_11, l_0_13 + (l_0_12) + 1), "[b64mz]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-                else
-                  ;
-                  (mp.vfo_add_buffer)(l_0_11, "[b64mz]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-                end
-                do return mp.CLEAN end
-                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out DO_STMT
-
-                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_STMT
-
-                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_STMT
-
-              end
-            end
-          end
-        end
-      end
-    end
-    return mp.CLEAN
-  end
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+  return mp.CLEAN
 end
+local l_0_0 = (mp.bitand)(pevars.sigaddr + 13 + (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 9, 4), 1), 4294967295)
+local l_0_1 = (pe.mmap_va_nofastfail)(l_0_0, 16)
+if (string.byte)(l_0_1, 1) ~= 3 or (string.byte)(l_0_1, 2) ~= 131 then
+  return mp.CLEAN
+end
+-- DECOMPILER ERROR at PC77: Unhandled construct in 'MakeBoolean' P1
+
+if (string.byte)(l_0_1, 7) == 135 and ((string.byte)(l_0_1, 8) ~= 210 or (string.byte)(l_0_1, 9) ~= 233) then
+  return mp.CLEAN
+end
+-- DECOMPILER ERROR at PC116: Unhandled construct in 'MakeBoolean' P1
+
+if (string.byte)(l_0_1, 7) == 81 and ((string.byte)(l_0_1, 8) ~= 141 or (string.byte)(l_0_1, 9) ~= 13 or (string.byte)(l_0_1, 14) ~= 135 or (string.byte)(l_0_1, 15) ~= 12) then
+  return mp.CLEAN
+end
+do return mp.CLEAN end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
+;
+(pe.mmap_patch_va)(l_0_0 + 2, "`\000\000\000")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

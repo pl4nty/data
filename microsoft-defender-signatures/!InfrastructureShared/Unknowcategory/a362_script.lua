@@ -3,16 +3,34 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("//AGGR:OleFile") and not (mp.get_mpattribute)("Lua:FileSizeLT2000") then
-  return mp.CLEAN
+local l_0_0 = 0
+if (this_sigattrlog[1]).matched then
+  local l_0_1 = nil
+  local l_0_2, l_0_3 = (bm.get_process_relationships)()
+  for l_0_7,l_0_8 in ipairs(l_0_2) do
+    l_0_1 = l_0_8.image_path
+    if (string.find)(l_0_1, "\\WINWORD.EXE") then
+      l_0_0 = l_0_0 + 1
+      break
+    end
+  end
+  do
+    local l_0_9 = nil
+    for l_0_13,l_0_14 in ipairs(l_0_3) do
+      l_0_9 = l_0_14.image_path
+      if (string.find)(l_0_9, "\\powershell.exe") or (string.find)(l_0_9, "\\cmd.exe") then
+        l_0_0 = l_0_0 + 1
+        break
+      end
+    end
+    do
+      do
+        if l_0_0 == 2 then
+          return mp.INFECTED
+        end
+        return mp.CLEAN
+      end
+    end
+  end
 end
-local l_0_0 = (string.lower)(tostring(headerpage))
-local l_0_1, l_0_2, l_0_3 = (string.find)(l_0_0, "(<a href%=\"http%://.-\">https%://dhl24%.com%.uk/)")
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if (string.match)(l_0_3, "<a href%=\"https%://dhl24%.com%.uk/.-\">https%://dhl24%.com%.uk/") == nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

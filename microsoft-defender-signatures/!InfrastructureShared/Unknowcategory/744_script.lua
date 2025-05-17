@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%ProgramData%")
-if not (sysio.IsFolderExists)(l_0_0) then
+if not (mp.get_mpattribute)("PACKED_WITH:(EncScript)") then
   return mp.CLEAN
 end
-;
-(mp.TriggerScanResource)("folder", l_0_0)
+if (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true) ~= 0 or not "Lua:SingleFileInZip" then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

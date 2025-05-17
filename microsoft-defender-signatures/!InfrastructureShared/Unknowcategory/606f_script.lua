@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if not peattributes.dt_error_heur_API_limit then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("CODEPATCH:CheckStackValGetModuleHandle")
 return mp.INFECTED
 

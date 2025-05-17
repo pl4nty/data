@@ -3,59 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_3 = nil
-if (MpCommon.GetPersistContextNoPath)("TemplateInjc") ~= nil then
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    l_0_3 = (this_sigattrlog[1]).utf8p2
-    local l_0_0 = nil
-  else
-    do
-      if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-        l_0_3 = (this_sigattrlog[2]).utf8p2
-      else
-        if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-          l_0_3 = (this_sigattrlog[3]).utf8p2
-          local l_0_1, l_0_2 = nil
-        end
-      end
-      do
-        local l_0_4 = nil
-        if l_0_3 ~= nil then
-          local l_0_5 = nil
-          local l_0_6 = (mp.GetExecutablesFromCommandLine)(l_0_3)
-          for l_0_10,l_0_11 in ipairs(l_0_6) do
-            local l_0_7 = {[".xls"] = true, [".doc"] = true, [".ppt"] = true, [".pps"] = true, docx = true, pptx = true, ppsx = true, xlsx = true, [".rtf"] = true, [".xml"] = true, dotx = true, dotm = true, [".odt"] = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, docm = true, xlsm = true, pptm = true}
-            -- DECOMPILER ERROR at PC82: Confused about usage of register: R9 in 'UnsetPending'
-
-            if (sysio.IsFileExists)(R9_PC82) and l_0_7[(string.sub)(R9_PC82, -4)] then
-              l_0_5 = R9_PC82
-            end
-          end
-        end
-        do
-          l_0_6 = ipairs
-          l_0_6 = l_0_6(l_0_4)
-          for l_0_15,l_0_16 in l_0_6 do
-            local l_0_16 = nil
-            l_0_16 = string
-            l_0_16 = l_0_16.match
-            l_0_16 = l_0_16(l_0_5, R10_PC105)
-            if l_0_16 then
-              l_0_16 = mp
-              l_0_16 = l_0_16.INFECTED
-              return l_0_16
-            end
-          end
-          do
-            l_0_5 = mp
-            l_0_5 = l_0_5.CLEAN
-            do return l_0_5 end
-            -- DECOMPILER ERROR at PC116: Confused about usage of register R3 for local variables in 'ReleaseLocals'
-
-          end
-        end
-      end
-    end
+do
+  if ((((((((((((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and not (hstrlog[9]).matched) or (hstrlog[10]).matched) and not (hstrlog[11]).matched) or (hstrlog[12]).matched) and not (hstrlog[13]).matched) or (hstrlog[14]).matched then
+    local l_0_0, l_0_1, l_0_2 = 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount + (hstrlog[3]).hitcount + (hstrlog[4]).hitcount + 1 + (hstrlog[6]).hitcount + (hstrlog[7]).hitcount + (hstrlog[8]).hitcount + (hstrlog[9]).hitcount + (hstrlog[10]).hitcount + (hstrlog[11]).hitcount + (hstrlog[12]).hitcount + (hstrlog[13]).hitcount + (hstrlog[14]).hitcount
   end
+  -- DECOMPILER ERROR at PC124: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC130: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 >= 6 or mp.HSTR_WEIGHT >= 4 and l_0_0 > 4 then
+    if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    end
+    ;
+    (mp.set_mpattribute)("MpRequestSMSM")
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[5]).matched and pehdr.NumberOfSections == 3 then
-    return mp.INFECTED
-  end
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[6]).matched and (hstrlog[7]).matched and (hstrlog[8]).matched and pehdr.NumberOfSections == 3 then
-    return mp.INFECTED
-  end
+if not peattributes.isdll or pehdr.TimeDateStamp ~= 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA == 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).Size < 9 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_rva)(((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA, 9)
+if (mp.readu_u32)(l_0_0, 5) == 4294967295 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,19 +3,19 @@
 
 -- params : ...
 -- function num : 0
-GetRuleInfo = function()
-  -- function num : 0_0
-  local l_1_0 = {}
-  l_1_0.Name = "Block execution of potentially obfuscated scripts"
-  l_1_0.Description = "Windows Defender Exploit Guard detected either obfuscated JavaScript, VBScript, or macro code."
-  l_1_0.NotificationDedupingInterval = 120
-  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
-  return l_1_0
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+  if l_0_1 ~= "flashsec.exe" then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if (string.sub)(l_0_2, -23) == "\\application data\\flash" or (string.sub)(l_0_2, -22) == "\\appdata\\roaming\\flash" then
+    (mp.set_mpattribute)("Lua:SimdaFileName.A")
+    return mp.INFECTED
+  end
 end
-
-GetCommandLineRegExp = function()
-  -- function num : 0_1
-  return "((windowsapps\\\\[^\\\\]+\\\\)|(microsoft office\\\\(root\\\\)?))office..\\\\[^\\.]+\\.exe\\\"?[^\\\"]+\\\"([^\\\"]+)\\\"?"
+do
+  return mp.CLEAN
 end
-
 

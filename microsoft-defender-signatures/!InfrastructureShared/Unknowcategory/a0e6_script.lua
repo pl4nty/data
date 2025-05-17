@@ -3,24 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0["winword.exe"] = true
-l_0_0["excel.exe"] = true
-l_0_0["powerpnt.exe"] = true
-l_0_0["outlook.exe"] = true
-local l_0_1 = (mp.GetParentProcInfo)()
-if l_0_1 ~= nil then
-  for l_0_5 = 1, 4 do
-    local l_0_6 = (string.lower)(l_0_1.image_path)
-    if l_0_0[l_0_6:match("([^\\]+)$")] then
-      return mp.INFECTED
-    else
-      l_0_1 = (mp.GetParentProcInfo)(l_0_1.ppid)
-      l_0_5 = l_0_5 + 1
-    end
-  end
-end
 do
+  if (mp.get_mpattribute)("pea_no_exports") and not (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.getfilesize)() < 114688 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
 

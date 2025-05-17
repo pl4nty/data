@@ -3,14 +3,38 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and pehdr.NumberOfSections == 5 and pevars.epsec == 1 and not peattributes.no_exports and peattributes.no_tls and pehdr.SizeOfImage >= 135168 and pehdr.SizeOfImage <= 1048576 and (pesecs[pevars.epsec]).SizeOfRawData >= 81920 and (pesecs[pevars.epsec]).SizeOfRawData <= 655360 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (pesecs[pevars.epsec]).Name == ".text" then
-  (mp.set_mpattribute)("MpSimulateParanoid")
-  ;
-  (mp.set_mpattribute)("MpEnableCOM")
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
-  ;
-  (pe.reemulate)()
+if peattributes.epscn_writable == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.firstsectwritable ~= true then
+  return mp.CLEAN
+end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 3 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).NameDW ~= 1952539694 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 96 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 190 then
+  return mp.CLEAN
+end
+if epcode[7] ~= 233 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

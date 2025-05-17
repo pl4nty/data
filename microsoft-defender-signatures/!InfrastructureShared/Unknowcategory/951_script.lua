@@ -3,41 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[7]).matched then
-  return mp.INFECTED
+if mp.HEADERPAGE_SZ < 1024 then
+  return mp.CLEAN
 end
-local l_0_0, l_0_1 = nil, nil
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  l_0_0 = (this_sigattrlog[2]).utf8p2
-else
-  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-    l_0_0 = (this_sigattrlog[3]).utf8p2
-  end
+if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+  return mp.CLEAN
 end
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-  l_0_1 = (this_sigattrlog[4]).utf8p2
-else
-  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-    l_0_1 = (this_sigattrlog[5]).utf8p2
-  else
-    if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
-      l_0_1 = (this_sigattrlog[6]).utf8p2
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+  if l_0_1 ~= nil and l_0_1:sub(1, 9) == "flashutil" then
+    local l_0_2 = false
+    local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_3 ~= nil and l_0_3:len() > 15 and l_0_3:find("\\spool\\printers", 1, true) ~= nil then
+      l_0_2 = true
+    end
+    if not l_0_2 then
+      if (mp.readu_u16)(headerpage, 9) == 0 then
+        (mp.set_mpattribute)("Lua:ContextZIPNoCompressionFlashDrop.A")
+      else
+        ;
+        (mp.set_mpattribute)("Lua:ContextZIPFlashDrop.A")
+      end
     end
   end
 end
-l_0_0 = (string.lower)(l_0_0)
-local l_0_2 = (string.match)(l_0_0, "mountvol%.exe (.:) /s")
-if l_0_2 == nil then
+do
   return mp.CLEAN
 end
-l_0_1 = (string.lower)(l_0_1)
-local l_0_3 = (string.match)(l_0_1, "(.:)\\windows\\system32\\drivers\\wd")
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-local l_0_4 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%SYSTEMDRIVE%"))
-if l_0_4 ~= (string.lower)(l_0_2) and l_0_4 ~= (string.lower)(l_0_3) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

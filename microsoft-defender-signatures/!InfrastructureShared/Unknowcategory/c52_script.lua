@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("attrmatch_rescan_psif")
+(mp.set_mpattribute)("SIGATTR:CCXPO_13_wKSU")
 return mp.INFECTED
 

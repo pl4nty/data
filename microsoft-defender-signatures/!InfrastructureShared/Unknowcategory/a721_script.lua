@@ -3,56 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = (bm.get_process_relationships)()
+    for l_0_5,l_0_6 in ipairs(l_0_0) do
+      if l_0_6.image_path ~= nil then
+        local l_0_7 = (string.lower)(l_0_6.image_path)
+        if (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)(l_0_7, "\\cmd.exe", 1, true) or (string.find)(l_0_7, "\\powershell.exe", 1, true) or (string.find)(l_0_7, "\\sdiagnhost.exe", 1, true) or (string.find)(l_0_7, "\\qualysagent.exe", 1, true) or (string.find)(l_0_7, "\\pulsesecureservice.exe", 1, true) or (string.find)(l_0_7, "\\javaw.exe", 1, true) or (string.find)(l_0_7, "\\java.exe", 1, true) or (string.find)(l_0_7, "\\ruby.exe", 1, true) or (string.find)(l_0_7, "\\logmein.exe", 1, true) or (string.find)(l_0_7, "\\fasm.exe", 1, true) or (string.find)(l_0_7, ":\\windows\\assembly\\", 1, true) or (string.find)(l_0_7, "\\911 location manager.exe", 1, true)) then
+          return mp.CLEAN
+        end
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if peattributes.hasexports == true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if peattributes.epscn_writable == false then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 85 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 139 then
-  return mp.CLEAN
-end
-if epcode[3] ~= 236 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size < 16 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[3]).RVA), 16)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 5) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) ~= 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

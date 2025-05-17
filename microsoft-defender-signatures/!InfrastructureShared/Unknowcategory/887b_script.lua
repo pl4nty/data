@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 90112 and l_0_0 <= 98304 and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 and (mp.get_mpattribute)("NID:Hupigon.A!Pra1") then
+if (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true and (mp.get_mpattribute)("pea_isexe") then
   return mp.INFECTED
 end
 return mp.CLEAN

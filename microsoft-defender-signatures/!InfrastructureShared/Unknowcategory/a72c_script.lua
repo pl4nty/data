@@ -3,58 +3,50 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
-end
-if peattributes.isdamaged then
-  return mp.CLEAN
-end
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < 4 then
-  return mp.CLEAN
-end
-local l_0_0 = -1
-for l_0_4 = 3, pehdr.NumberOfSections do
-  local l_0_5 = (string.lower)((pesecs[l_0_4]).Name)
-  if (string.sub)(l_0_5, 1, 8) == "cpadinfo" then
-    do
-      do
-        l_0_0 = l_0_4
-        do break end
-        -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out DO_STMT
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSIsRemoteSession)
+if l_0_1 then
+  local l_0_2 = (mp.ContextualExpandEnvironmentVariables)("%localappdata%")
+  local l_0_3 = (sysio.GetFsOwnerSidString)(l_0_2)
+  local l_0_4 = 1
+  local l_0_5 = (sysio.RegExpandUserKey)("HKCU\\Software")
+  if l_0_5 then
+    for l_0_9,l_0_10 in pairs(l_0_5) do
+      if #l_0_10 > 23 and not (string.find)(l_0_10, "-5..\\", -13) and not (string.find)(l_0_10, l_0_3, 6, true) then
+        l_0_4 = l_0_4 + 1
+        break
+      end
+    end
+  end
+  do
+    if l_0_4 > 1 then
+      local l_0_11 = "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+      local l_0_12 = (sysio.RegOpenKey)(l_0_11)
+      if l_0_12 then
+        do
+          if not (sysio.GetRegValueAsDword)(l_0_12, "InstallDate") then
+            local l_0_13, l_0_14, l_0_15, l_0_16 = (sysio.GetRegValueAsDword)(l_0_12, "InstallTime")
+            if l_0_13 then
+              l_0_14 = l_0_13 / 10000000
+              l_0_13 = l_0_14 - 11644473600
+            end
+          end
+          -- DECOMPILER ERROR at PC80: Confused about usage of register: R8 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_STMT
-
+          if l_0_13 then
+            local l_0_17 = nil
+            if (MpCommon.GetCurrentTimeT)() < l_0_17 or (MpCommon.GetCurrentTimeT)() - l_0_17 > 86400 then
+              local l_0_18 = nil
+              ;
+              (MpCommon.AppendPersistContextNoPath)("MpNewRemoteUsers", (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSUserName), 43200)
+            end
+          end
+          do
+            return mp.CLEAN
+          end
+        end
       end
     end
   end
 end
-if l_0_0 == -1 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_6 = (pe.mmap_rva)((pesecs[l_0_0]).VirtualAddress, 4)
-local l_0_7 = (mp.readu_u32)(l_0_6, 1)
-if l_0_7 ~= 1129341284 then
-  return mp.CLEAN
-end
-local l_0_8 = (pe.mmap_rva)(((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA, 40)
-local l_0_9 = (mp.readu_u32)(l_0_8, 13)
-local l_0_10 = (pe.mmap_rva)(l_0_9, 32)
-if (string.sub)(l_0_10, 1, 12) == "electron.exe" then
-  (mp.set_mpattribute)("Lua:ElectronExe.A")
-else
-  if (string.sub)(l_0_10, 1, 6) == "nw.exe" then
-    (mp.set_mpattribute)("Lua:NWJsExe.A")
-  end
-end
-return mp.INFECTED
 

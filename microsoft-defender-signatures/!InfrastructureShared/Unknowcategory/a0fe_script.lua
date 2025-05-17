@@ -3,8 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.suspicious_falign == true and peattributes.no_comruntime == true and peattributes.no_delayimport == true and peattributes.no_uidata == true then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.no_exports then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 1 then
+  for l_0_5 = 1, l_0_0 do
+    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
+    if (string.lower)(l_0_6) == "splsamodeinitialize" then
+      return mp.INFECTED
+    end
+  end
+end
+do
+  return mp.CLEAN
+end
 

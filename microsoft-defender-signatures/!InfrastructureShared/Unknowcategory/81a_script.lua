@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.arm_image then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+if l_0_0 == nil then
   return mp.CLEAN
 end
-do
-  if peattributes.no_imports and peattributes.no_boundimport and peattributes.no_delayimport and peattributes.no_iat then
-    local l_0_0 = ((pehdr.DataDirectory)[2]).RVA
-    if l_0_0 ~= 0 and l_0_0 < 8192 and l_0_0 < (pesecs[1]).VirtualAddress then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+l_0_0 = (string.lower)(l_0_0)
+if (string.find)(l_0_0, "\\spoon\\sandbox\\", 1, true) ~= nil or (string.find)(l_0_0, "\\xenocode\\sandbox\\", 1, true) ~= nil or (string.find)(l_0_0, "\\local\\stubexe\\", 1, true) ~= nil then
+  (mp.set_mpattribute)("LUA:SpoonVmPath")
 end
+return mp.CLEAN
 

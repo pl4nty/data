@@ -3,20 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 40000000 then
-  return mp.CLEAN
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - (mp.bitand)(0 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1)), 255), 4), 1)
+if (pe.get_api_id)(l_0_0) == 3164325074 then
+  (pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "Ðt", 1, true), "\235")
+  return mp.INFECTED
 end
-local l_0_0 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  if (string.find)(l_0_0, "\\program files", 1, true) then
-    return mp.CLEAN
-  end
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_1.ppid, "M")
-;
-(bm.add_action)("SmsAsyncScanEvent", 1000)
-return mp.INFECTED
+return mp.CLEAN
 

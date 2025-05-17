@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:OneSystemHeal")
-return mp.INFECTED
+if (mp.getfilesize)() >= 200 then
+  return mp.CLEAN
+end
+return mp.LOWFI
 

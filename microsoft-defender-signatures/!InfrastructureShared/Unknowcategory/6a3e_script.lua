@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:DelphiFile") and (mp.get_mpattribute)("SIGATTR:OpensBHOKey") then
-  return mp.LOWFI
+if (mp.get_mpattribute)("pea_no_security") and peattributes.ismsil == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,19 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  if (string.lower)(l_0_1) ~= "screensaverpro.scr" then
-    return mp.CLEAN
-  end
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if (string.sub)(l_0_2, -17) == "\\application data" or (string.sub)(l_0_2, -16) == "\\appdata\\roaming" then
-    (mp.set_mpattribute)("Lua:DorkbotFileName.B")
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 103000 or l_0_0 > 113000 then
   return mp.CLEAN
 end
+if mp.HEADERPAGE_SZ < 10 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, 1) ~= 0 or (mp.readu_u32)(headerpage, 5) ~= 0 or (mp.readu_u16)(headerpage, 9) ~= 0 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(l_0_0 - 8000, 4000)
+if (string.find)(l_0_1, "IsInfectedRun\000IsPassKavSucess\000IsPassSucess1\000IsPassSucess2\000IsRuninUAC", 1, true) ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

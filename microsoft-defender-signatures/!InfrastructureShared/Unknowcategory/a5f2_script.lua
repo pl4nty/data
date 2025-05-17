@@ -3,31 +3,25 @@
 
 -- params : ...
 -- function num : 0
-Version_to_str = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = (crypto.shr64)(l_1_0, 48)
-  local l_1_2 = (crypto.bitand)((crypto.shr64)(l_1_0, 32), 65535)
-  local l_1_3 = (crypto.bitand)((crypto.shr64)(l_1_0, 16), 65535)
-  local l_1_4 = (crypto.bitand)(l_1_0, 65535)
-  return tostring(l_1_1) .. "." .. tostring(l_1_2) .. "." .. tostring(l_1_3) .. "." .. tostring(l_1_4)
-end
-
-GetSectionInfoOfVirtualAddress = function(l_2_0)
-  -- function num : 0_1
-  if l_2_0 == nil or pehdr == nil or pehdr.NumberOfSections == nil or pehdr.NumberOfSections == 0 or pesecs == nil then
-    return nil
-  end
-  local l_2_1 = pehdr.ImageBase
-  for l_2_5 = 1, pehdr.NumberOfSections do
-    local l_2_6 = (pesecs[l_2_5]).VirtualAddress
-    local l_2_7 = (pesecs[l_2_5]).VirtualSize
-    local l_2_8 = l_2_1 + l_2_6
-    local l_2_9 = l_2_8 + l_2_7
-    if l_2_8 <= l_2_0 and l_2_0 <= l_2_9 then
-      local l_2_10 = (pesecs[l_2_5]).Name
-      return l_2_5, l_2_10, l_2_6, l_2_7
-    end
-  end
-end
-
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 38, 4)
+l_0_0 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(l_0_0, 4)
+l_0_0 = (mp.readu_u32)(l_0_0, 1)
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr + 21, 4)
+l_0_1 = (mp.readu_u32)(l_0_1, 1)
+l_0_1 = (mp.bitxor)(l_0_1, l_0_0)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 19, "\191")
+local l_0_2, l_0_3, l_0_4, l_0_5 = (mp.bsplit)(l_0_1, 8)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, (string.char)(l_0_2))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 21, (string.char)(l_0_3))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 22, (string.char)(l_0_4))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 23, (string.char)(l_0_5))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 24, "")
+return mp.INFECTED
 

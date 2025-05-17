@@ -3,19 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 ~= nil then
-  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-    if (sysio.IsFileExists)(l_0_6) then
-      (bm.add_related_file)(l_0_6)
+local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+if (string.find)(l_0_0, "\\spyhunter\\", 1, true) then
+  return mp.CLEAN
+else
+  if (string.find)(l_0_0, "\\yandex\\", 1, true) then
+    return mp.CLEAN
+  else
+    if (string.find)(l_0_0, "\\utiltool\\", 1, true) then
+      return mp.CLEAN
     end
   end
 end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.INFECTED
-  return l_0_1
-end
+return mp.INFECTED
 

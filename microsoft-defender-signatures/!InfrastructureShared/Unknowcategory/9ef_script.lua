@@ -3,76 +3,137 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  if (mp.bitand)((mp.get_contextdata)(mp.CONTEXT_DATA_DEVICE_CHARACTERISTICS), 264193) ~= 264193 then
-    return mp.CLEAN
-  end
-  if not peattributes.isdll then
-    return mp.CLEAN
-  end
-  if not peattributes.hasexports then
-    return mp.CLEAN
-  end
-  if ((pehdr.DataDirectory)[1]).Size == 0 then
-    return mp.CLEAN
-  end
-  if (mp.get_mpattribute)("Lua:SenseIRCretaeFileinTemp") then
-    return mp.CLEAN
-  end
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_LOWERCASE))
-  if l_0_2 == nil or l_0_2 == "" then
-    return mp.CLEAN
-  end
-  l_0_2 = (MpCommon.PathToWin32Path)(l_0_2)
-  if l_0_2 == nil or l_0_2 == "" then
-    return mp.CLEAN
-  end
-  l_0_2 = (string.lower)(l_0_2)
-  if (string.find)(l_0_2, "\\windows\\temp\\", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_3 = {}
-  l_0_3[".exe"] = true
-  l_0_3[".dll"] = true
-  l_0_3[".cpl"] = true
-  l_0_3[".ocx"] = true
-  l_0_3[".pyd"] = true
-  if l_0_3[l_0_1:sub(-4)] then
-    return mp.CLEAN
-  end
-  local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-  if not l_0_4:find("\160", 1, true) then
-    return mp.CLEAN
-  end
-  if (string.find)((string.lower)(l_0_4), "\\windows\\temp\\", 1, true) then
-    return mp.CLEAN
-  end
-  if l_0_1:find("^%l+%.%l%l%l$") or l_0_1:find("^~%$%l+%.%l%l%l$") or l_0_1:find("^%w+%.%w+%.%w+%.%w+%.%w+%.%w+%.%w+%.%w+$") or l_0_1:find("^%w%w%w%w%w+%.%w+$") then
-    local l_0_5 = ((pehdr.DataDirectory)[1]).RVA
-    ;
-    (mp.readprotection)(false)
-    local l_0_6 = (mp.readfile)((pe.foffset_rva)(l_0_5), 36)
-    if (mp.readu_u32)(l_0_6, 21) ~= 1 then
-      return mp.CLEAN
-    end
-    if (mp.readu_u32)(l_0_6, 25) ~= 1 then
-      return mp.CLEAN
-    end
-    local l_0_7 = (mp.readu_u32)(l_0_6, 33)
-    l_0_6 = (pe.mmap_rva)(l_0_7, 4)
-    local l_0_8 = (mp.readu_u32)(l_0_6, 1)
-    local l_0_9 = (pe.mmap_rva)(l_0_8, 32)
-    if l_0_9:find("^%l+") and ((string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "msiexec.exe" or (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "rundll32.exe") then
-      local l_0_10 = (MpCommon.PathToWin32Path)(l_0_4) .. "\\IndexerVolumeGuid"
-      ;
-      (mp.ReportLowfi)(l_0_10, 162679141)
-      return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+;
+(mp.readprotection)(false)
+if l_0_0 < 512 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, 9) ~= 1162035498 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, 13) ~= 336865834 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, 33) ~= 1163021909 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readu_u32)(headerpage, 61)
+local l_0_2 = (mp.readu_u16)(headerpage, 87)
+local l_0_3 = l_0_2 + 88 + l_0_1
+if l_0_0 < l_0_3 then
+  return mp.CLEAN
+end
+local l_0_4 = 0
+if l_0_0 == l_0_3 then
+  l_0_4 = 1
+else
+  if l_0_3 < l_0_0 then
+    local l_0_5 = (mp.readfile)(l_0_3, 32)
+    l_0_5 = (string.gsub)(l_0_5, "%z", "")
+    if (string.find)(l_0_5, "**ACE**") then
+      l_0_4 = 1
     end
   end
 end
 do
+  if l_0_4 == 0 then
+    return mp.CLEAN
+  end
+  ;
+  (mp.set_mpattribute)("Lua:SingleFileInACE")
+  ;
+  (mp.UfsSetMetadataBool)("Lua:SingleFileInACE!ufs", true)
+  if l_0_2 > 100 then
+    return mp.CLEAN
+  end
+  local l_0_6 = (mp.readfile)(88, l_0_2)
+  local l_0_7 = (string.lower)((string.sub)(l_0_6, -4))
+  local l_0_8 = (string.lower)((string.sub)(l_0_6, -3))
+  if l_0_7 == ".zip" then
+    (mp.set_mpattribute)("Lua:SingleZipInACE")
+  else
+    if l_0_7 == ".vbs" then
+      (mp.set_mpattribute)("Lua:SingleVBSInACE")
+      ;
+      (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+    else
+      if l_0_7 == ".lnk" then
+        (mp.set_mpattribute)("Lua:SingleLNKInACE")
+        ;
+        (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+      else
+        if l_0_7 == ".wsf" then
+          (mp.set_mpattribute)("Lua:SingleWSFInACE")
+          ;
+          (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+        else
+          if l_0_7 == ".vbe" then
+            (mp.set_mpattribute)("Lua:SingleVBEInACE")
+            ;
+            (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+          else
+            if l_0_7 == ".jse" then
+              (mp.set_mpattribute)("Lua:SingleJSEInACE")
+              ;
+              (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+            else
+              if l_0_7 == "html" then
+                (mp.set_mpattribute)("Lua:SingleHTAInACE")
+                ;
+                (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+              else
+                if l_0_7 == ".exe" then
+                  (mp.set_mpattribute)("Lua:SingleEXEInACE")
+                  ;
+                  (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+                else
+                  if l_0_7 == ".dll" then
+                    (mp.set_mpattribute)("Lua:SingleDLLInACE")
+                  else
+                    if l_0_7 == ".com" then
+                      (mp.set_mpattribute)("Lua:SingleCOMInACE")
+                      ;
+                      (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+                    else
+                      if l_0_7 == ".ps1" then
+                        (mp.set_mpattribute)("Lua:SinglePSInACE")
+                        ;
+                        (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+                      else
+                        if l_0_7 == ".bat" then
+                          (mp.set_mpattribute)("Lua:SingleBATInACE")
+                          ;
+                          (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+                        else
+                          if l_0_7 == ".rar" then
+                            (mp.set_mpattribute)("Lua:SingleRarInACE")
+                          else
+                            if l_0_7 == ".ace" then
+                              (mp.set_mpattribute)("Lua:SingleACEInACE")
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  if l_0_8 == ".js" then
+    (mp.set_mpattribute)("Lua:SingleJSInACE")
+    ;
+    (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
+  else
+    if l_0_8 == ".7z" then
+      (mp.set_mpattribute)("Lua:Single7zInACE")
+    end
+  end
   return mp.CLEAN
 end
 

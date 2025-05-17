@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.ispackedwith)("AutoIt_+") and (mp.getfilesize)() >= 4194304 and not peattributes.isreported then
+if (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)) == "installer_mi.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

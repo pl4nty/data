@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr + 3, 4), 1) < 4096 or (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr + 51, 4), 1) < 4096 then
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 46, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 55, "")
-return mp.INFECTED
+return mp.CLEAN
 

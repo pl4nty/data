@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.x86_image and peattributes.isexe == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-if (string.lower)((string.sub)(l_0_0.image_path, -12)) ~= "explorer.exe" then
-  return mp.CLEAN
-end
-return mp.LOWFI
+return mp.INFECTED
 

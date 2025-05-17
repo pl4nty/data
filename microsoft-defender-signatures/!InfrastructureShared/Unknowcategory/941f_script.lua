@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("HSTR:TrojanClicker:Win64/Fleercivet.B")
-end
-if mp.HSTR_WEIGHT >= 7 then
-  if pehdr.Machine == 332 then
-    (mp.changedetectionname)(805306451)
-  end
+local l_0_0 = (mp.getfilesize)()
+if ((pesecs[1]).Name == "sijJ" or (pesecs[1]).Name == "EVJ") and (pesecs[2]).Name == ".mr" and peattributes.no_security == true and l_0_0 >= 119808 and l_0_0 <= 169984 then
   return mp.INFECTED
 end
 return mp.CLEAN

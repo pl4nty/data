@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true then
-  local l_0_0 = (mp.getfilesize)()
-  if l_0_0 >= 400000 and l_0_0 <= 750000 then
-    local l_0_1 = (string.lower)((mp.getfilename)())
-    if l_0_1:find("\\appdata\\roaming\\microsoft\\windows\\templates\\", 1, true) then
-      return mp.INFECTED
-    end
-  end
+if mp.HSTR_WEIGHT >= 6 then
+  return mp.INFECTED
 end
-do
+if not peattributes.isdll then
   return mp.CLEAN
 end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
+end
+return mp.CLEAN
 

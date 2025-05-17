@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT < 42 and (mp.getfilesize)() > 4194304 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("NID:Trojan:Win64/Destroysom.MBXK!MTB") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

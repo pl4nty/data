@@ -3,29 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  local l_0_3 = nil
-  local l_0_4 = {[".vbs"] = true}
-  for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
-    local l_0_5 = nil
-    -- DECOMPILER ERROR at PC30: Confused about usage of register: R7 in 'UnsetPending'
-
-    if (string.len)(R7_PC30) > 4 and (sysio.IsFileExists)(R7_PC30) and l_0_4[(string.sub)(R7_PC30, -4)] then
-      (bm.add_related_file)(l_0_10)
-      ;
-      (mp.ReportLowfi)(l_0_10, 111760350)
-    end
-  end
-  return mp.INFECTED
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+  return mp.CLEAN
 end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 400000 or l_0_0 < 10000 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

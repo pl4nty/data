@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and ((pesecs[4]).Name == ".hertdhr" or (pesecs[4]).Name == ".jrehtrj") and (mp.getfilesize)() < 2690050 then
+if ((mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsAbnormalSheetStateBits")) or (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
   return mp.INFECTED
 end
 return mp.CLEAN

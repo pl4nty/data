@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.get_versioninfo)()).OriginalFilename == "svhost.exe" then
+if peattributes.isdll and (mp.getfilesize)() < 200000 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and pehdr.NumberOfSections > 3 and pehdr.NumberOfSections < 7 and (pesecs[4]).Name == ".pdata" then
-  return mp.INFECTED
-end
-return mp.LOWFI
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_1 = (string.sub)(l_0_0, 9, 9)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "\187" .. l_0_1 .. "\000\000\000")
+return mp.INFECTED
 

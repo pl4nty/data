@@ -3,29 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (string.byte)(l_0_0, 13) + (string.byte)(l_0_0, 14) * 256 + (string.byte)(l_0_0, 15) * 65536 + (string.byte)(l_0_0, 16) * 16777216
-if l_0_1 < 53248 then
-  return mp.INFECTED
+if (this_sigattrlog[2]).matched then
+  local l_0_0 = (this_sigattrlog[2]).utf8p1
+  if l_0_0 == nil and (string.len)(l_0_0) < 3 then
+    return mp.CLEAN
+  end
+  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
+  local l_0_1 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
+  if l_0_1 == nil and (string.len)(l_0_1) < 3 then
+    return mp.CLEAN
+  end
+  local l_0_2 = {}
+  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\windows\\"))] = true
+  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\"))] = true
+  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoftwindows\\"))] = true
+  if l_0_2[l_0_1] then
+    (bm.add_threat_file)(l_0_0)
+    return mp.INFECTED
+  end
 end
-local l_0_2 = (string.byte)(l_0_0, 18)
-if l_0_2 < 48 then
-  return mp.INFECTED
+do
+  return mp.CLEAN
 end
-local l_0_3 = pevars.sigaddr + 18 + l_0_2
-l_0_0 = (pe.mmap_va)(l_0_3 - 1, 4)
-local l_0_4 = (string.byte)(l_0_0, 1)
-if l_0_4 < 128 then
-  return mp.INFECTED
-end
-l_0_4 = (mp.bitor)(l_0_4, 4294967040)
-local l_0_5 = (mp.bitand)(l_0_3 + l_0_4, 4294967295)
-if l_0_5 ~= pevars.sigaddr then
-  return mp.INFECTED
-end
-;
-(mp.set_mpattribute)("lua_codepatch_fakesysdef_1")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "\000\000\000\000")
-return mp.INFECTED
 

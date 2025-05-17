@@ -3,14 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 ~= nil then
-  return mp.INFECTED
-end
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and ((string.find)(l_0_6.image_path, "python", 1, true) or (string.find)(l_0_6.image_path, "perl", 1, true) or (string.find)(l_0_6.image_path, "osascript", 1, true)) then
+-- DECOMPILER ERROR at PC17: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 ~= nil and (this_sigattrlog[6]).utf8p1 ~= "" then
+    local l_0_0, l_0_2, l_0_3, l_0_4 = nil, nil
+  end
+  do
+    if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 ~= nil and (this_sigattrlog[7]).utf8p1 ~= "" then
+      local l_0_1 = nil
+    end
+    -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC40: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC44: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC51: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil and (this_sigattrlog[7]).utf8p1 ~= nil and (l_0_1 == (this_sigattrlog[7]).utf8p1 or (string.match)(l_0_1, "^127.") or (string.match)(l_0_1, "^::1*") or (string.match)(l_0_1, "^0.0.0.0")) then
+      return mp.CLEAN
+    end
     return mp.INFECTED
   end
 end
-return mp.CLEAN
 

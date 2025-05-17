@@ -3,22 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[5]).matched and (this_sigattrlog[6]).matched and (this_sigattrlog[7]).matched and (this_sigattrlog[8]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[6]).utf8p1)
-  local l_0_2 = (string.lower)((this_sigattrlog[7]).utf8p1)
-  local l_0_3 = (string.lower)((this_sigattrlog[8]).utf8p1)
-  local l_0_4, l_0_5 = (bm.get_process_relationships)()
-  for l_0_9,l_0_10 in ipairs(l_0_5) do
-    local l_0_11 = (string.lower)(l_0_10.cmd_line)
-    if (string.find)(l_0_11, l_0_0, 1, true) and (string.find)(l_0_11, l_0_1, 1, true) and (string.find)(l_0_11, l_0_2, 1, true) and (string.find)(l_0_11, l_0_3, 1, true) then
-      return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 5120 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetNormalizedScript)(true)
+if l_0_1 ~= nil and (string.find)(l_0_1, "|base64-D|", 1, true) then
+  local l_0_2 = l_0_1:match("echo%-e([%w%+%/%=]+)%|base64%-D")
+  if #l_0_2 and #l_0_2 % 4 == 0 then
+    local l_0_3 = (MpCommon.Base64Decode)(l_0_2)
+    if #l_0_3 and l_0_3 ~= nil then
+      (mp.vfo_add_buffer)(l_0_3, "[Base64DecData]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+      if (string.find)(l_0_3, "| /bin/zsh", -10, true) then
+        return mp.INFECTED
+      end
     end
   end
 end
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+  return mp.CLEAN
 end
 

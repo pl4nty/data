@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 3
-if l_0_0 * 10000000 < (bm.GetProcedureMatchDuration)(1) then
+if mp.HEADERPAGE_SZ < 256 then
   return mp.CLEAN
 end
-do
-  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil then
-    local l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[5]).utf8p1)
-    if l_0_1 ~= nil then
-      (bm.add_related_file)(l_0_1)
-    end
-  end
+if (mp.readu_u32)(headerpage, 6) == 4002240453 and (mp.readu_u32)(headerpage, 86) == 36873062 and (mp.readu_u32)(headerpage, 134) == 16875242 then
+  (mp.set_mpattribute)("MpNonPIIFileType")
   return mp.INFECTED
 end
+return mp.CLEAN
 

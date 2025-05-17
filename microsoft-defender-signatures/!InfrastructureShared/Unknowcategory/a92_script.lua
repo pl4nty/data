@@ -3,25 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[3]).matched or not (this_sigattrlog[6]).matched then
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  local l_0_0 = (string.match)((this_sigattrlog[2]).utf8p1, "/([^/]+)$")
+  local l_0_1 = (string.match)((this_sigattrlog[3]).utf8p2, "+x%s+(.+)$")
+  if #l_0_0 > 0 and #l_0_1 > 0 and (string.find)(l_0_1, l_0_0, 1, true) then
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC15: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
--- DECOMPILER ERROR at PC18: Overwrote pending register: R1 in 'AssignReg'
-
-local l_0_1 = nil
-local l_0_2 = "user-agent"
-local l_0_3 = 100
-local l_0_4 = 3
-local l_0_5, l_0_6 = pcall(MpCommon.RollingQueueCreate, l_0_2, l_0_3, l_0_4, 1)
-if not l_0_5 then
-  return mp.CLEAN
-end
-l_0_5 = pcall(MpCommon.RollingQueueAppend, l_0_2, l_0_0, l_0_1, l_0_4)
-if not l_0_5 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

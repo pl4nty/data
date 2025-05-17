@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.reads_vdll_code and (mp.get_mpattribute)("LoD:VirTool:Win32/Obfuscator.UR") and (mp.getfilesize)() >= 300000 and (mp.getfilesize)() < 900000 then
+if (mp.ispackedwith)("UPX_+") or (mp.ispackedwith)("Aspack+") or (mp.ispackedwith)("Aspack+") or (mp.ispackedwith)("ASProtect+") or (mp.ispackedwith)("PECompact+") or (mp.ispackedwith)("NSIS+") then
   return mp.INFECTED
 end
 return mp.CLEAN

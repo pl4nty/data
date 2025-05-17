@@ -3,16 +3,22 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_9")
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
-local l_0_1 = (mp.readu_u32)(l_0_0, 3)
-local l_0_2 = (mp.readu_u32)(l_0_0, 9)
-local l_0_3 = (mp.readu_u32)(l_0_0, 21)
-local l_0_4 = (mp.readu_u32)(l_0_0, 32)
-local l_0_5 = (pe.get_regval)(pe.REG_EDX)
-local l_0_6 = (string.byte)(l_0_0, 17)
-local l_0_7 = (mp.ror32)(l_0_5, l_0_6) - (mp.bitxor)(l_0_4, l_0_3) - l_0_1 + l_0_2
-;
-(pe.set_regval)(pe.REG_EBX, l_0_7)
+local l_0_0 = (this_sigattrlog[8]).utf8p1
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+l_0_0 = (string.lower)(l_0_0)
+if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
+  return mp.CLEAN
+end
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
+end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
+end
 return mp.INFECTED
 

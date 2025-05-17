@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true then
-  return mp.INFECTED
+if pehdr.Machine == 332 then
+  (mp.changedetectionname)(805306466)
 end
-return mp.CLEAN
+return mp.INFECTED
 

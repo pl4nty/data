@@ -3,57 +3,38 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 5242880 then
+  return mp.CLEAN
+end
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = {}
+  l_0_1["2014"] = true
+  l_0_1.deutschland = true
+  l_0_1.dezember = true
+  l_0_1.informationen = true
+  l_0_1.kontobewegung = true
+  l_0_1.november = true
+  l_0_1.online = true
+  l_0_1.order = true
+  l_0_1.purchase = true
+  l_0_1.rechnung = true
+  l_0_1.team = true
+  l_0_1.telekom = true
+  l_0_1.transaktions = true
+  l_0_1.vodafone = true
+  local l_0_2 = 0
+  local l_0_3 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+  for l_0_7 in (string.gmatch)(l_0_3, "%w+") do
+    if l_0_1[l_0_7] then
+      l_0_2 = l_0_2 + 1
+    end
+  end
+  if l_0_2 >= 2 then
+    return mp.LOWFI
+  end
+end
 do
-  if (mp.get_mpattribute)("SCPT:JS/Obfuscator.ShellExecute.Cmd") then
-    local l_0_0, l_0_1 = nil
-  else
-  end
-  if (mp.get_mpattribute)("SCPT:JS/Obfuscator.Null.Constant") then
-    do return mp.CLEAN end
-    local l_0_2 = 2
-    if (mp.getfilesize)() < 2000 or (mp.getfilesize)() > 30000 then
-      return mp.CLEAN
-    end
-    ;
-    (mp.readprotection)(false)
-    local l_0_3 = nil
-    local l_0_4, l_0_5 = ((mp.readfile)(0, (mp.getfilesize)())), nil
-    -- DECOMPILER ERROR at PC46: Overwrote pending register: R4 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC48: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC57: Overwrote pending register: R4 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC58: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC59: Overwrote pending register: R3 in 'AssignReg'
-
-    if l_0_2 ~= 1 or l_0_2 == 2 then
-      do return mp.CLEAN end
-      if nil == nil then
-        return mp.CLEAN
-      end
-      local l_0_6 = nil
-      -- DECOMPILER ERROR at PC79: Overwrote pending register: R5 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC80: Overwrote pending register: R3 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC91: Overwrote pending register: R5 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC92: Overwrote pending register: R3 in 'AssignReg'
-
-      if l_0_2 ~= 1 or l_0_2 == 2 then
-        do return mp.CLEAN end
-        if nil < 25 then
-          return mp.CLEAN
-        end
-        ;
-        (mp.set_mpattribute)("//LUA:JS/Obfuscator.Equal.Apostrophe.Caret")
-        return mp.CLEAN
-      end
-    end
-  end
+  return mp.CLEAN
 end
 

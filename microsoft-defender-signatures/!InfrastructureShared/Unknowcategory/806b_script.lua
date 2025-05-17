@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\opera software\\", 1, true) then
-    return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.find)(l_0_1, "excel.exe", 1, true) then
+      return mp.INFECTED
+    end
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
 

@@ -3,20 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_CONTROL_GUID)
-local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 and (string.match)(l_0_1, "9203c2cb%-1dc1%-482d%-967e%-597aff270f0d") then
-    local l_0_4, l_0_5 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_FRAME_URL)
-    if l_0_4 and (string.match)(l_0_5, ":8000/") then
-      if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
-        (mp.aggregate_mpattribute)("Context:OfficeFrame")
-      end
-      ;
-      (mp.aggregate_mpattribute)("//MpIsIEVScan")
-      return mp.TRUE
-    end
-  end
-  return mp.FALSE
+if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
+  return mp.CLEAN
 end
+if (mp.get_mpattribute)("SCRIPT:PSLummaStealerObfus.B") then
+  return mp.CLEAN
+end
+local l_0_0 = ""
+l_0_0 = tostring(footerpage)
+l_0_0 = (string.lower)(l_0_0)
+l_0_0 = (string.gsub)(l_0_0, "%z", "")
+l_0_0 = (string.gsub)(l_0_0, " ", "")
+local l_0_1 = 0
+for l_0_5 in (string.gmatch)(l_0_0, "%-as%[type%]%)::%$") do
+  l_0_1 = l_0_1 + 1
+end
+local l_0_6 = 0
+for l_0_10 in (string.gmatch)(l_0_0, "%d%d+,") do
+  l_0_6 = l_0_6 + 1
+end
+if l_0_1 >= 3 and l_0_6 >= 512 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Warwedoof")
+(mp.set_mpattribute)("FOPEX:Deep_Analysis")
 return mp.INFECTED
 

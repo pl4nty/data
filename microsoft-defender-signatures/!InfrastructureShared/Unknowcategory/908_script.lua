@@ -3,27 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("PACKED_WITH:(MSG)") then
+if peattributes.isdll then
+  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_1:find("\\appdata\\local\\temp", 1, true) ~= nil or l_0_1:find("\\local settings\\temp", 1, true) ~= nil then
+      local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+      if l_0_2 == "regsvr32.exe" then
+        (mp.set_mpattribute)("Lua:ContextRegsvr32AccessTemp.A")
+      else
+        if l_0_2 == "control.exe" then
+          (mp.set_mpattribute)("Lua:ContextControlAccessTemp.A")
+        end
+      end
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 100000 then
-  return mp.CLEAN
-end
-if l_0_0 > 500000 then
-  return mp.CLEAN
-end
-local l_0_1 = tostring(headerpage)
-if (string.match)(l_0_1, "Content%-Transfer%-Encoding%: BASE64\\par") == nil then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_2 = (mp.readfile)(0, l_0_0)
-local l_0_3 = (string.gsub)(l_0_2, "^%{\\rtf1\\.*PC%/Binary\\par\r\n\\par\r\n", "")
-l_0_3 = (string.gsub)(l_0_3, "\\par\r\n\\par\r\n.*$", "")
-l_0_3 = (string.gsub)(l_0_3, "\\par\r\n", "\r\n")
-;
-(mp.vfo_add_buffer)(l_0_3, "[MSG_Base64]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.CLEAN
 

@@ -3,14 +3,23 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_6")
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (mp.readu_u32)(l_0_0, 10)
-local l_0_2 = (mp.readu_u32)(l_0_0, 21)
-local l_0_3 = (pe.get_regval)(pe.REG_EDX)
-local l_0_4 = (string.byte)(l_0_0, 6)
-local l_0_5 = (mp.ror32)(l_0_3, l_0_4) - (mp.bitxor)(l_0_2, l_0_1) - 1
-;
-(pe.set_regval)(pe.REG_EBX, l_0_5)
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if l_0_0:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("system32", 1, true) then
+  return mp.CLEAN
+end
+local l_0_1 = (MpCommon.PathToWin32Path)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = (string.find)(l_0_1, "->")
+if l_0_2 then
+  l_0_1 = (string.sub)(l_0_1, 1, l_0_2 - 1)
+end
 return mp.INFECTED
 

@@ -3,73 +3,77 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.mmap_va)(pevars.sigaddr + 1, 1) == "\255" or (pe.mmap_va)(pevars.sigaddr + 1, 1) == "\254") and ((pe.mmap_va)(pevars.sigaddr + 11, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 11, 1) == "\016" or (pe.mmap_va)(pevars.sigaddr + 11, 1) == "\000") then
-  (pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 12, "\235")
-  ;
-  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-  local l_0_0 = 256
-  local l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
-  local l_0_2 = (string.find)(l_0_1, "h@B\015%z")
-  local l_0_3 = (string.find)(l_0_1, "`\174\n%z")
-  local l_0_4 = (string.find)(l_0_1, "j%z")
-  local l_0_5 = (string.find)(l_0_1, "j\002", 1, true)
-  local l_0_6 = (string.find)(l_0_1, "\255%z%z%zj")
-  local l_0_7 = (string.find)(l_0_1, "\255%z%z%zh")
-  local l_0_8 = (string.find)(l_0_1, "j\001", 1, true)
-  local l_0_9 = (string.find)(l_0_1, "h\001%z\031%z")
-  local l_0_10 = (string.find)(l_0_1, "h\132\003%z%z")
-  if l_0_2 and l_0_3 then
-    for l_0_14 = 1, 256 - l_0_2 do
-      if (pe.mmap_va)(pevars.sigaddr + l_0_14 + l_0_3, 3) == "P\255\021" then
-        (pe.mmap_patch_va)(pevars.sigaddr + l_0_14 + l_0_3 + 1, "YYYêê\144")
-      end
-    end
-    if l_0_4 and l_0_5 then
-      for l_0_18 = 1, 48 do
-        if (pe.mmap_va)(pevars.sigaddr + l_0_18 + l_0_5, 3) == "\000\255\021" then
-          (pe.mmap_patch_va)(pevars.sigaddr + l_0_18 + l_0_5 + 1, "YYYêê\144")
-        end
-      end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_1 = (this_sigattrlog[3]).utf8p2
+  local l_0_2 = nil
+else
+end
+do
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
+
+  if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
+    local l_0_3, l_0_4 = (this_sigattrlog[4]).utf8p1, (this_sigattrlog[4]).utf8p2
+    l_0_4 = (this_sigattrlog[5]).utf8p2
+    local l_0_5 = nil
+  else
+  end
+  do
+    -- DECOMPILER ERROR at PC80: Overwrote pending register: R0 in 'AssignReg'
+
+    if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p2 ~= nil then
+      local l_0_6, l_0_7 = (this_sigattrlog[6]).utf8p1, (this_sigattrlog[6]).utf8p2
+      l_0_7 = (this_sigattrlog[7]).utf8p2
+      local l_0_8 = nil
+    else
     end
     do
-      if (l_0_6 or l_0_7) and l_0_8 then
-        for l_0_22 = 1, 48 do
-          if (pe.mmap_va)(pevars.sigaddr + l_0_22 + l_0_8, 3) == "\000\255\021" then
-            (pe.mmap_patch_va)(pevars.sigaddr + l_0_22 + l_0_8 + 1, "YYYêê\144")
-          end
-        end
+      -- DECOMPILER ERROR at PC114: Overwrote pending register: R0 in 'AssignReg'
+
+      if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p2 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p2 ~= nil then
+        local l_0_9, l_0_10, l_0_12, l_0_13, l_0_15, l_0_17 = (this_sigattrlog[8]).utf8p1, (this_sigattrlog[8]).utf8p2
+        l_0_12 = this_sigattrlog
+        l_0_12 = l_0_12[9]
+        l_0_10 = l_0_12.utf8p2
+        local l_0_11, l_0_14, l_0_16, l_0_18 = nil
+      else
       end
       do
-        if l_0_9 then
-          for l_0_26 = 1, 48 do
-            if (pe.mmap_va)(pevars.sigaddr + l_0_26 + l_0_9, 3) == "\000\255\021" then
-              (pe.mmap_patch_va)(pevars.sigaddr + l_0_26 + l_0_9 + 1, "YYYêê\144")
-            end
-          end
+        if ((this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p2 ~= nil and (this_sigattrlog[10]).utf8p1 == nil) or (this_sigattrlog[10]).utf8p2 == nil then
+          return mp.CLEAN
         end
-        do
-          if l_0_10 then
-            for l_0_30 = 1, 96 do
-              if (pe.mmap_va)(pevars.sigaddr + l_0_30 + l_0_10, 1) == "\232" then
-                (pe.mmap_patch_va)(pevars.sigaddr + l_0_30 + l_0_10, "êêêê\144")
-              end
-              if (pe.mmap_va)(pevars.sigaddr + l_0_30 + l_0_10, 3) == "Q\255\021" then
-                (pe.mmap_patch_va)(pevars.sigaddr + l_0_30 + l_0_10 + 1, "YYêêêê")
-              end
-              if (pe.mmap_va)(pevars.sigaddr + l_0_30 + l_0_10, 3) == "\000\255\021" then
-                (pe.mmap_patch_va)(pevars.sigaddr + l_0_30 + l_0_10 + 1, "êêêêêê")
-              end
-            end
-          end
-          do
-            do
-              do return mp.INFECTED end
-              return mp.CLEAN
-            end
-          end
+        -- DECOMPILER ERROR at PC142: Confused about usage of register: R1 in 'UnsetPending'
+
+        local l_0_19 = nil
+        local l_0_20 = nil
+        local l_0_21 = (this_sigattrlog[10]).utf8p2
+        repeat
+          -- DECOMPILER ERROR at PC151: Overwrote pending register: R4 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC154: Confused about usage of register: R4 in 'UnsetPending'
+
+        until 0 == 0
+        local l_0_22 = 0 + 0
+        l_0_22 = l_0_22 + R4_PC165
+        -- DECOMPILER ERROR at PC168: Confused about usage of register: R5 in 'UnsetPending'
+
+        _ = (string.gsub)(l_0_21, "{.-}", "")
+        l_0_22 = l_0_22 + R4_PC165
+        if l_0_22 < 4 then
+          return mp.CLEAN
         end
+        -- DECOMPILER ERROR at PC184: Overwrote pending register: R2 in 'AssignReg'
+
+        if not (string.find)(l_0_21, "j.-n.-d.-i.-:.-l.-d.-a.-p.-:") then
+          return mp.CLEAN
+        end
+        local l_0_23 = R4_PC165
+        local l_0_24 = nil
+        ;
+        (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), {["[" .. l_0_19 .. "]"] = "[" .. l_0_20 .. "]"})
+        return mp.INFECTED
       end
     end
   end

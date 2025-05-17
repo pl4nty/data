@@ -3,29 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-local l_0_1, l_0_2, l_0_3 = l_0_0:find("DestIp=(.-;)")
-if l_0_3 == nil then
-  return mp.CLEAN
-end
 do
-  local l_0_4 = {}
-  -- DECOMPILER ERROR at PC19: No list found for R4 , SetList fails
-
-  -- DECOMPILER ERROR at PC20: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC21: Overwrote pending register: R6 in 'AssignReg'
-
-  for l_0_8,l_0_9 in ("127.0.0.1")("204.174.66.") do
-    -- DECOMPILER ERROR at PC24: Overwrote pending register: R10 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC26: Overwrote pending register: R11 in 'AssignReg'
-
-    if (("208.94.117.").find)("209.53.113.", l_0_9, 1, false) ~= nil then
-      return mp.CLEAN
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_suspicious_section_name") and (mp.getfilesize)() >= 1331200 and (mp.getfilesize)() < 1347584 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
+  return mp.CLEAN
 end
 

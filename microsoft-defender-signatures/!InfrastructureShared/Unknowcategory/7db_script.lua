@@ -3,21 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil or l_0_0:len() < 5 then
-  return mp.CLEAN
-end
-local l_0_1 = {}
--- DECOMPILER ERROR at PC22: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC23: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC24: Overwrote pending register: R3 in 'AssignReg'
-
-for l_0_5 = "^deedee%.exe$", "^tm%(.+%)11%d%d%.exe$" do
-  if l_0_0:find(l_0_1[l_0_5]) then
-    return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = {}
+    l_0_1["wmiprvse.exe"] = true
+    l_0_1["csrss.exe"] = true
+    l_0_1["svchost.exe"] = true
+    l_0_1["gamemon64.des"] = true
+    l_0_1["wsqmcons.exe"] = true
+    l_0_1["lsadetsetup.exe"] = true
+    if l_0_1[((string.lower)((string.sub)(l_0_0, -15))):match("\\([^\\]+)$")] then
+      return mp.CLEAN
+    end
   end
+  return mp.INFECTED
 end
-return mp.CLEAN
 

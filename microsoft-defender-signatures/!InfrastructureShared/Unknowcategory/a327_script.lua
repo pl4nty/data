@@ -3,25 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
-  if (sigattr_tail[R4_PC6]).matched and (sigattr_tail[R4_PC6]).attribute == 16401 then
-    l_0_1 = (sigattr_tail[R4_PC6]).utf8p2
-    if l_0_1 ~= nil then
-      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-        local l_0_6 = nil
-        -- DECOMPILER ERROR at PC30: Confused about usage of register: R10 in 'UnsetPending'
-
-        R10_PC30 = (mp.ContextualExpandEnvironmentVariables)(R10_PC30)
-        if (sysio.IsFileExists)(R10_PC30) then
-          (bm.add_related_file)(R10_PC30)
-        end
-      end
-    end
+do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
+  else
   end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[4]).utf8p2) > 7 and ((string.find)((this_sigattrlog[4]).utf8p2, "TgBlAHcALQBJAHQAZQBt", 1, true) or (string.find)((this_sigattrlog[4]).utf8p2, "LgBQAFMAVgBFAFIAcwBpAE8Abg", 1, true) or (string.find)((this_sigattrlog[4]).utf8p2, "AHwASQBFAFgA", 1, true)) then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

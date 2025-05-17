@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpExcelFormulaRoutines") and (mp.get_mpattribute)("RPF:XlsAbnormalSheetStateBits") then
+if mp.HSTR_WEIGHT >= 15 then
   return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT >= 11 then
+    (mp.set_mpattribute)("HSTR:KasidetLowfi")
+  end
 end
 return mp.CLEAN
 

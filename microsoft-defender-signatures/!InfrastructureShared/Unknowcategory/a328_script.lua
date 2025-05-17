@@ -3,21 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 47 then
+if not peattributes.isvbnative and not peattributes.isvbpcode then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset + 26
-local l_0_2 = 16
-local l_0_3 = ""
-if l_0_0.is_header then
-  l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
-else
-  l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
+if (hstrlog[1]).matched then
+  local l_0_0 = (hstrlog[1]).VA
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (pe.mmap_va)(l_0_0 + 62, 4)
+  if (string.byte)(l_0_1, 1) == (string.byte)(l_0_1, 4) and (string.byte)(l_0_1, 2) == (string.byte)(l_0_1, 3) then
+    return mp.INFECTED
+  end
 end
-local l_0_4, l_0_5, l_0_6 = (string.find)(l_0_3, "(%d+)")
-if l_0_6 ~= nil and tonumber(l_0_6) >= 5 then
-  return mp.INFECTED
+do
+  return mp.CLEAN
 end
-return mp.CLEAN
 

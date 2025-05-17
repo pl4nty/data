@@ -3,29 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if mp.HSTR_CALLER_SMS == l_0_0 then
-  local l_0_1 = (mp.GetSMSLevel)()
-  if l_0_1 ~= mp.SMS_SCAN_ONCE_ADV and l_0_1 ~= mp.SMS_SCAN_LOW_ADV and l_0_1 ~= mp.SMS_SCAN_MED_ADV and l_0_1 ~= mp.SMS_SCAN_HIGH_ADV then
-    return mp.CLEAN
-  end
-  local l_0_2 = (mp.hstr_full_log)()
-  for l_0_6,l_0_7 in pairs(l_0_2) do
-    if l_0_7.matched and l_0_7.VA then
-      local l_0_8, l_0_9 = (mp.SMSVirtualQuery)(l_0_7.VA)
-      if l_0_8 ~= true then
-        return mp.CLEAN
-      end
-      if (l_0_9.prot == 64 or l_0_9.prot == 4) and (l_0_9.state_type == mp.SMS_MBI_MAPPED or l_0_9.state_type == (mp.bitor)(mp.SMS_MBI_COMMIT, mp.SMS_MBI_MAPPED) or l_0_9.state_type == mp.SMS_MBI_PRIVATE or l_0_9.state_type == (mp.bitor)(mp.SMS_MBI_COMMIT, mp.SMS_MBI_PRIVATE)) then
-        return mp.INFECTED
-      end
-      return mp.CLEAN
-    end
-  end
+if peattributes.hasstandardentry then
+  return mp.CLEAN
 end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.CLEAN
-  return l_0_1
+-- DECOMPILER ERROR at PC80: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC80: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC80: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC80: Unhandled construct in 'MakeBoolean' P3
+
+if (((((((not (hstrlog[1]).matched and not (hstrlog[3]).matched) or not (hstrlog[5]).matched) and (hstrlog[9]).matched) or not (hstrlog[11]).matched) and (hstrlog[15]).matched) or (hstrlog[2]).matched) and 1 or 0) + ((hstrlog[4]).matched and 1 or 0) + ((hstrlog[8]).matched and 1 or 0) + ((hstrlog[10]).matched and 1 or 0) + ((hstrlog[14]).matched and 1 or 0) + ((hstrlog[16]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,20 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[4]).matched then
-  (mp.readprotection)(false)
-  local l_0_0 = (pe.mmap_va)((hstrlog[4]).VA - 27, 80)
-  local l_0_1 = (mp.readu_u32)(l_0_0, 2)
-  local l_0_2 = (pe.mmap_va)(l_0_1, 16)
-  for l_0_6 = 1, 16 do
-    local l_0_7 = (string.byte)(l_0_2, l_0_6)
-    if l_0_7 < 48 or l_0_7 > 90 or l_0_7 == 64 then
-      return mp.CLEAN
-    end
-  end
-  return mp.INFECTED
-end
-do
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
+if (string.find)((string.lower)(l_0_0), "\\svchost.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\installshield\\setup.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\installshield\\x32\\setup.exe", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

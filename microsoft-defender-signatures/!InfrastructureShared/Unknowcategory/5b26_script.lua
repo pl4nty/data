@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount > 10 or (hstrlog[2]).hitcount > 10 then
+if (mp.get_mpattribute)("ALF:HeraklezEval:Trojan:Win32/Qakbot.SD!rfn") then
   return mp.INFECTED
 end
 return mp.CLEAN

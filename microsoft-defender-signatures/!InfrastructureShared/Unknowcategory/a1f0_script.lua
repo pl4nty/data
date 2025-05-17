@@ -3,16 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC57: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC57: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC57: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC57: Unhandled construct in 'MakeBoolean' P3
-
-if ((not (hstrlog[7]).matched and not (hstrlog[8]).matched and not (hstrlog[9]).matched and not (hstrlog[10]).matched and (hstrlog[12]).matched) or (hstrlog[11]).matched) and (hstrlog[17]).matched then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_6 = (this_sigattrlog[2]).p1
+    if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") then
+      return mp.INFECTED
+    end
+  end
+  return mp.LOWFI
+end
 

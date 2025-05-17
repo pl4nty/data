@@ -3,22 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
+local l_0_0 = {}
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28769 then
+    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
+    l_0_0.TlsJa3SHash = l_0_5
+    ;
+    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
   end
 end
-do
-  if (this_sigattrlog[5]).matched then
-    local l_0_6 = (this_sigattrlog[5]).p1
-    if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") then
-      return mp.INFECTED
-    end
-  end
-  return mp.LOWFI
-end
+return mp.INFECTED
 

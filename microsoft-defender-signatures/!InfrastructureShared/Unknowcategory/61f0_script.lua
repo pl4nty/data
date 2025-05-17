@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 and l_0_0.FileDescription and l_0_0.FileDescription == "client" then
+if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

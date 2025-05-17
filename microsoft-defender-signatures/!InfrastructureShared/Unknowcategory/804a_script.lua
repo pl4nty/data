@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount >= 10 and pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
+if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("PEPCODE:VirTool:Win32/VMProtect") then
   return mp.INFECTED
 end
 return mp.CLEAN

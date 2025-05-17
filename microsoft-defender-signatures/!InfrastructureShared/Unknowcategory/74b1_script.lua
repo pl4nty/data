@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and ((pe.get_versioninfo)()).InternalName == "RunPE.dll" then
+if epcode[1] == 85 and epcode[2] == 144 and epcode[3] == 84 and epcode[4] == 93 then
   return mp.INFECTED
 end
 return mp.CLEAN

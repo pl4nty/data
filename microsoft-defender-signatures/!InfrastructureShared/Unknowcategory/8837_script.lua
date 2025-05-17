@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if (string.find)(l_0_0, "\\programdata\\", 1, true) then
-      return mp.INFECTED
-    end
-  end
+if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
   return mp.CLEAN
 end
+if (pe.get_exports)() > 100 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

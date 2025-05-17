@@ -7,25 +7,20 @@
 
 do
   if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
   else
   end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+  if (this_sigattrlog[4]).matched then
+    local l_0_5 = (this_sigattrlog[4]).utf8p1
+    -- DECOMPILER ERROR at PC30: Overwrote pending register: R1 in 'AssignReg'
 
-  do
-    if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
-      local l_0_1, l_0_2, l_0_3 = (this_sigattrlog[4]).utf8p1
-    end
-    local l_0_4 = nil
-    -- DECOMPILER ERROR at PC39: Overwrote pending register: R1 in 'AssignReg'
+    -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC44: Confused about usage of register: R1 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC41: Confused about usage of register: R1 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R1 in 'UnsetPending'
-
-    if l_0_4 ~= nil and (string.len)(l_0_4) > 3 and nil ~= nil and (sysio.IsFileExists)(nil) then
-      (mp.ReportLowfi)(nil, 2706876984)
-      -- DECOMPILER ERROR at PC55: Confused about usage of register: R1 in 'UnsetPending'
+    if l_0_5 ~= nil and (string.len)(l_0_5) > 3 and nil ~= nil and (sysio.IsFileExists)(nil) then
+      (mp.ReportLowfi)(nil, 916669411)
+      -- DECOMPILER ERROR at PC46: Confused about usage of register: R1 in 'UnsetPending'
 
       ;
       (bm.add_related_file)(nil)

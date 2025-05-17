@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:VirTool:Win32/VMProtect.A") or mp.HSTR_WEIGHT >= 7 then
-  (mp.set_mpattribute)("PUA:Block:TRexMiner")
-  return mp.INFECTED
+do
+  if (mp.get_mpattribute)("pea_amd64_image") and (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 32768 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_trex")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_trex")
-end
-return mp.CLEAN
 

@@ -3,34 +3,47 @@
 
 -- params : ...
 -- function num : 0
-if not (MpCommon.QueryPersistContextNoPath)("MacMatchesHighRiskProtectionTarget", "on") then
+if peattributes.hasexports == true then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if not l_0_1:find("\\cmd.exe") then
+if peattributes.hasstandardentry == true then
   return mp.CLEAN
 end
-local l_0_2 = (mp.GetParentProcInfo)()
-if l_0_2 == nil then
+if pehdr.NumberOfSections ~= 6 then
   return mp.CLEAN
 end
-local l_0_3 = (string.lower)(l_0_2.image_path)
-if l_0_3 == nil then
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
   return mp.CLEAN
 end
-if not l_0_3:find("\\wmiprvse.exe") then
+if (pesecs[1]).NameDW ~= 2019914798 then
   return mp.CLEAN
 end
-local l_0_4 = (mp.GetProcessCommandLine)(l_0_0)
-if not l_0_4 or #l_0_4 <= 8 then
+if epcode[1] ~= 233 then
   return mp.CLEAN
 end
-if (string.find)(l_0_4, "/Q ", 1, true) and (string.find)(l_0_4, "/c ", 1, true) and not (string.find)(l_0_4, "/Q /D ", 1, true) and not (string.find)(l_0_4, "/Q /c netstat -anop TCP 1>", 1, true) and not (string.find)(l_0_4, "/U /Q ", 1, true) then
-  return mp.INFECTED
+if epcode[4] ~= 255 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if epcode[5] ~= 255 then
+  return mp.CLEAN
+end
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pesecs[1]).PointerToRawData, 64)
+if l_0_0:byte(1) ~= 85 then
+  return mp.CLEAN
+end
+if l_0_0:byte(37) ~= 80 then
+  return mp.CLEAN
+end
+if l_0_0:byte(62) ~= 85 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,12 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-l_0_1 = (string.lower)((string.gsub)(l_0_1, "`", ""))
-local l_0_2 = (string.gsub)(l_0_1, " ", "")
-if (string.find)(l_0_2, "\\appdata\\roaming\\", 1, true) or (string.find)(l_0_2, "\\public\\", 1, true) or (string.find)(l_0_2, "\\programdata\\", 1, true) or (string.find)(l_0_1, "[\\start menu\\programs\\startup\\] ", 1, true) then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_0 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+      if (sysio.IsFileExists)(l_0_7) then
+        (bm.add_related_file)(l_0_7)
+      end
+    end
+  end
 end
-return mp.CLEAN
+do
+  if l_0_1 ~= nil then
+    for l_0_11,l_0_12 in ipairs(l_0_1) do
+      if l_0_12.image_path ~= nil then
+        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
+        if (sysio.IsFileExists)(l_0_13) and (mp.IsKnownFriendlyFile)(l_0_13, true, false) then
+          (bm.add_related_file)(l_0_13)
+        end
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
+end
 

@@ -3,17 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if l_0_1:sub(-7) == "\\startup" then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-    if l_0_2 == "winword.exe" or l_0_2 == "fltldr.exe" then
-      (mp.set_mpattribute)("Lua:WinWordOrFltLdrDropStartup.A")
+if (this_sigattrlog[3]).matched then
+  local l_0_0 = nil
+  local l_0_1 = (string.lower)((bm.get_imagepath)())
+  if (this_sigattrlog[3]).utf8p2 ~= nil then
+    l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
+  end
+  if l_0_1:find("appvclient%.exe") ~= nil then
+    return mp.CLEAN
+  end
+  if l_0_0 ~= nil then
+    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_6,l_0_7 in ipairs(l_0_2) do
+      l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+      if (sysio.IsFileExists)(l_0_7) then
+        (bm.add_related_file)(l_0_7)
+        return mp.INFECTED
+      end
     end
   end
 end
 do
-  return mp.CLEAN
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
 end
 

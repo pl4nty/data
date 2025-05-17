@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 12288 and (mp.getfilesize)() < 94208 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 2 and not (mp.get_mpattribute)("deep_analysis") then
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.reemulate)()
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:BrowseFox")
+return mp.INFECTED
 

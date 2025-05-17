@@ -3,17 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = (MpCommon.GetPersistContextNoPath)("ServiceCreationScript")
 if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  if l_0_1:match("([^\\]+)$") == "sdclt.exe" then
-    local l_0_2 = (mp.GetScannedPPID)()
-    if l_0_2 then
-      local l_0_3 = {}
+  for l_0_4,l_0_5 in ipairs(l_0_0) do
+    if (sysio.IsFileExists)(l_0_5) then
+      (mp.ReportLowfi)(l_0_5, 1919899276)
       ;
-      (table.insert)(l_0_3, l_0_2)
-      ;
-      (MpCommon.SetPersistContextNoPath)("UACBypassExp.A!sdclt", l_0_3, 5)
+      (bm.add_related_file)(l_0_5)
       return mp.INFECTED
     end
   end

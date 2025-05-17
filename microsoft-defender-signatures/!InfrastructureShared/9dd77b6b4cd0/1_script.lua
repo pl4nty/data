@@ -23,15 +23,18 @@ l_0_3 = (string.lower)(l_0_3)
 if #l_0_3 < 50 then
   return mp.CLEAN
 end
+if #l_0_3 > 400 then
+  return mp.CLEAN
+end
 do
   local l_0_4 = {}
-  -- DECOMPILER ERROR at PC88: No list found for R4 , SetList fails
+  -- DECOMPILER ERROR at PC96: No list found for R4 , SetList fails
 
-  -- DECOMPILER ERROR at PC89: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC97: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC90: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC98: Overwrote pending register: R6 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC91: Overwrote pending register: R7 in 'AssignReg'
+  -- DECOMPILER ERROR at PC99: Overwrote pending register: R7 in 'AssignReg'
 
   if ("iex")("\'i\',\'e\',\'x\'", "iplogger.co") >= 2 and (MpCommon.StringRegExpSearch)("-w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3) then
     return mp.INFECTED

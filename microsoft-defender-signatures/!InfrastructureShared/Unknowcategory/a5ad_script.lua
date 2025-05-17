@@ -3,38 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_3 = nil
-if ((bm.get_current_process_startup_info)()).integrity_level < MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_ESP) + 4, 4)
+l_0_0 = (mp.readu_u32)(l_0_0, 1)
+local l_0_1 = (pe.moffset_va)(l_0_0)
+;
+(mp.readprotection)(false)
+local l_0_2 = (pe.mmap_va)(l_0_1, 4)
+l_0_2 = (mp.readu_u32)(l_0_2, 1)
+if l_0_2 ~= 909132101 then
   return mp.CLEAN
 end
-if (this_sigattrlog[3]).matched then
-  l_0_3 = (string.lower)((this_sigattrlog[3]).utf8p1)
-  local l_0_0 = nil
-else
-  do
-    if (this_sigattrlog[4]).matched then
-      l_0_3 = (string.lower)((this_sigattrlog[4]).utf8p1)
-    else
-      if (this_sigattrlog[5]).matched then
-        l_0_3 = (string.lower)((this_sigattrlog[5]).utf8p1)
-        local l_0_1, l_0_2 = nil
-      end
-    end
-    do
-      if l_0_3 ~= nil then
-        local l_0_4 = nil
-        local l_0_5 = (string.sub)(l_0_3, -4)
-        if (string.find)("|.asp|aspx|ashx|asmx|", l_0_5, 1, true) then
-          if (sysio.IsFileExists)(l_0_3) then
-            (bm.add_related_file)(l_0_3)
-          end
-          return mp.INFECTED
-        end
-      end
-      do
-        return mp.CLEAN
-      end
-    end
-  end
+l_0_2 = (pe.mmap_va)(l_0_1 - 4, 4)
+l_0_2 = (mp.readu_u32)(l_0_2, 1)
+if l_0_2 == 557012289 then
+  return mp.CLEAN
 end
+;
+(mp.set_mpattribute)("Lua:Autoit!Modified")
+local l_0_3 = (mp.getfilesize)()
+if l_0_3 < 65536 or l_0_3 > 5242880 then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.readfile)(l_0_0 - 20, l_0_3 - (l_0_0 - 20))
+;
+(mp.vfo_add_buffer)(l_0_4, "[AutoIT_Script]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.CLEAN
 

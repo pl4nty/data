@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "receipt.pdf.exe") ~= nil or (string.find)(l_0_0, "emotet_exe_e%d_[%x]+_2020%-%d%d%-%d%d__%d+") ~= nil or (string.find)(l_0_0, "emotet_exe_e%d_%x%x%x%x%x%x+_2022%-04%-%d%d__%d%d%d%d+%._exe") ~= nil or (string.find)(l_0_0, "571.exe.2.dr") ~= nil then
-  return mp.INFECTED
+if (mp.GetResmgrBasePlugin)() ~= "AutorunInf" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.isexe == false then
+  return mp.CLEAN
+end
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_UNKNOWN or (mp.bitand)((mp.get_contextdata)(mp.CONTEXT_DATA_DEVICE_CHARACTERISTICS), 264193) ~= 264193 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

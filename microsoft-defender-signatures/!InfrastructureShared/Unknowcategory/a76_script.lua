@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-do
-  if l_0_0 ~= nil and l_0_0 ~= "" then
-    local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
-    if l_0_1 ~= nil and l_0_1 ~= "" then
-      (mp.set_mpattribute)((string.format)("MpInternal_researchdata=fullcmd=%s", l_0_1))
-    end
-  end
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and ((string.match)(l_0_0, "/bin/%a*sh") or (string.find)(l_0_0, "perl", 1, true) or (string.find)(l_0_0, "python", 1, true)) then
   return mp.INFECTED
 end
+return mp.CLEAN
 

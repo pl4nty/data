@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil and peattributes.isexe then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+if mp.HSTR_WEIGHT > 5 and mp.HSTR_WEIGHT < 10 then
+  (mp.set_mpattribute)("HSTR:Torwofun.A")
+else
+  if mp.HSTR_WEIGHT == 5 then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan_torwofun_a1")
   end
-  return mp.CLEAN
 end
+return mp.INFECTED
 

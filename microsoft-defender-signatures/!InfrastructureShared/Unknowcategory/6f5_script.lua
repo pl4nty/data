@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if #(mp.enum_mpattributesubstring)("SCPT:LogduckbillA") >= 2 then
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0 ~= nil and l_0_0.InternalName == "pwmgtagt" then
   return mp.INFECTED
 end
 return mp.CLEAN

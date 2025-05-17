@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 18, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+do
+  if peattributes.isdll == true and peattributes.hasexports == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    if l_0_0 ~= nil and #l_0_0 > 0 and (mp.IsTrustedFile)() then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

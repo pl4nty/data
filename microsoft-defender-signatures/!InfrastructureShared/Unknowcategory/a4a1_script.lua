@@ -3,32 +3,17 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+if (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched and (this_sigattrlog[5]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[3]).p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[4]).p1)
+  local l_0_2 = (string.lower)((this_sigattrlog[5]).p1)
+  local l_0_3 = (string.lower)((this_sigattrlog[5]).p2)
+  if l_0_0 and (string.find)(l_0_0, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") and l_0_1 and (string.find)(l_0_1, "^%d%d%d+") and l_0_2 and l_0_3 and (string.find)(l_0_2, "^%d%d%d+") and (string.find)(l_0_3, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    for l_0_7,l_0_8 in ipairs(l_0_3) do
-      local l_0_4 = {[".xls"] = true, xlsx = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, xlsm = true}
-      -- DECOMPILER ERROR at PC34: Confused about usage of register: R7 in 'UnsetPending'
-
-      if (string.len)(R7_PC34) > 4 and (sysio.IsFileExists)(R7_PC34) and l_0_4[(string.sub)(R7_PC34, -4)] then
-        (bm.add_related_file)(l_0_9)
-      end
-    end
-  end
-  do
-    l_0_3 = mp
-    l_0_3 = l_0_3.INFECTED
-    return l_0_3
-  end
+  return mp.CLEAN
 end
 

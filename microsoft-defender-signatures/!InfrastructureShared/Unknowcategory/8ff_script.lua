@@ -3,28 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("SCRIPT:Trojan:Win32/Seadask.gen.A!dha") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 3145728 or l_0_0 > 5242880 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(0, l_0_0)
-local l_0_2 = 1
-for l_0_6 in (string.gmatch)(l_0_1, "eJw[%w+/]+=?=?") do
-  if l_0_2 > 10 then
-    break
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  if peattributes.isexe == false then
+    return mp.CLEAN
   end
-  if #l_0_6 > 3145728 and #l_0_6 < 5242880 then
-    (mp.set_mpattribute)("//Seadask.Zlib")
-    ;
-    (mp.vfo_add_buffer)("CWSHACK\000" .. (MpCommon.Base64Decode)(l_0_6), (string.format)("[Seadask.Zlib-%x]", l_0_2), mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-    break
+  if peattributes.isdriver == true then
+    return mp.CLEAN
   end
-  l_0_2 = l_0_2 + 1
+  if peattributes.no_security == false then
+    return mp.CLEAN
+  end
+  local l_0_0 = {}
+  l_0_0["excel.exe"] = true
+  l_0_0["lync.exe"] = true
+  l_0_0["powerpnt.exe"] = true
+  l_0_0["pptview.exe"] = true
+  l_0_0["visio.exe"] = true
+  l_0_0["winword.exe"] = true
+  l_0_0["wordview.exe"] = true
+  l_0_0["xlview.exe"] = true
+  if l_0_0[(string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))] then
+    return mp.INFECTED
+  end
 end
 do
   return mp.CLEAN

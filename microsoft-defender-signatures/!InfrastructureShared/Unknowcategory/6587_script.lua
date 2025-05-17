@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true then
+if peattributes.ismsil == true and peattributes.isdll == true and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -4,41 +4,23 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  if (mp.getfilesize)() > 5000 then
-    return mp.CLEAN
-  end
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-  if l_0_1 == "" or l_0_1 == nil then
-    return mp.CLEAN
-  end
-  l_0_1 = (string.lower)(l_0_1)
-  if l_0_1 == "excel.exe" or l_0_1 == "winword.exe" or l_0_1 == "powerpnt.exe" then
-    local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-    local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-    if l_0_2 == nil or l_0_3 == nil then
-      return mp.CLEAN
-    end
-    if l_0_2 == "" or l_0_3 == "" then
-      return mp.CLEAN
-    end
-    l_0_2 = (string.lower)(l_0_2)
-    l_0_3 = (string.lower)(l_0_3)
-    local l_0_4 = (string.sub)(l_0_3, -4)
-    if l_0_4 == "gdat" then
-      return mp.CLEAN
-    end
-    ;
-    (mp.set_mpattribute)("Lua:SmlFileDropFrmOfc")
-    if (mp.get_mpattribute)("BM_LNK_FILE") or l_0_4 == ".cmd" or l_0_4 == ".lnk" or l_0_4 == ".url" then
-      (mp.set_mpattribute)("Lua:NonPeExecDropbyOffice")
-      if (string.find)(l_0_2, "\\appdata\\local\\temp", 1, true) ~= nil or (string.find)(l_0_2, "\\local settings\\temp", 1, true) ~= nil then
-        return mp.INFECTED
+if l_0_0 ~= mp.SCANREASON_ONOPEN then
+  return false
+end
+local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH))
+local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+do
+  do
+    if not (string.find)(l_0_1, "\\program files\\7-zip", 1, true) ~= nil or (string.find)(l_0_1, "\\program files (x86)\\7-zip", 1, true) ~= nil or ((string.sub)(l_0_2, 1, 2) == "7z" and l_0_2 ~= "7z.exe" and l_0_2 ~= "7za.exe" and l_0_2 ~= "7zfm.exe" and l_0_2 ~= "7zg.exe" and (string.find)(l_0_2, "7z%d%d%d%d%-x64%.exe") == nil and (string.find)(l_0_2, "7z%d%d%d%d%.exe") ~= nil) or not (string.find)(l_0_1, "\\program files\\winrar", 1, true) ~= nil or (string.find)(l_0_1, "\\program files (x86)\\winrar", 1, true) ~= nil or l_0_2 == "rar.exe" or l_0_2 == "unrar.exe" or l_0_2 == "winrar.exe" then
+      local l_0_11 = nil
+      if (mp.IsKnownFriendlyFile)((MpCommon.PathToWin32Path)(l_0_1 .. "\\" .. l_0_2), true, true) then
+        return true
       end
     end
+    do return false end
+    -- DECOMPILER ERROR at PC134: freeLocal<0 in 'ReleaseLocals'
+
+    -- DECOMPILER ERROR: 9 unprocessed JMP targets
   end
-end
-do
-  return mp.CLEAN
 end
 

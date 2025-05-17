@@ -3,18 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 == nil or l_0_0 > 500 then
-  return mp.CLEAN
-end
-if headerpage == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.GetBruteMatchData)()
-if l_0_1 == nil or l_0_1.match_offset == nil then
-  return mp.CLEAN
-end
-if l_0_0 - 12 <= l_0_1.match_offset and headerpage[l_0_0] == 0 then
+if (mp.get_mpattribute)("NID:Trojan:Win32/RopProof.RPX!MTB") and (pesecs[7]).Name == ".ropf" and (mp.getfilesize)() < 85000 and peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

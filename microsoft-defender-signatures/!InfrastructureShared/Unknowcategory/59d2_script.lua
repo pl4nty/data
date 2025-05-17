@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)((hstrlog[1]).VA) then
-  return mp.SYNCLOWFI
+if pehdr.Machine == 34404 then
+  (mp.changedetectionname)(805306446)
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.INFECTED
 

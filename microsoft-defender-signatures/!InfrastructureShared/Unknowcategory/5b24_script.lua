@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsKnownFriendlyFile)((bm.get_imagepath)(), true, true) == true then
-  return mp.CLEAN
+if (hstrlog[2]).hitcount > 50 and (hstrlog[3]).hitcount > 50 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

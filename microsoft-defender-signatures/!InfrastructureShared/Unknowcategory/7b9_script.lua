@@ -3,13 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:JSExt") or (mp.get_mpattribute)("Lua:VBSExt") or (mp.get_mpattribute)("Lua:WSFExt") then
-  (mp.UfsSetMetadataBool)("Lua:WSHExt", true)
-  return mp.INFECTED
-else
-  if (mp.UfsGetMetadataBool)("Lua:WSHExt", true) == 0 and "Lua:WSHExt" then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC33: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p1) and (string.lower)((string.sub)((this_sigattrlog[2]).utf8p1, -3)) == "dll" then
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

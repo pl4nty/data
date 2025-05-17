@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (pesecs[4]).Name == ".bsS" and (pesecs[4]).Characteristics == 3221225472 then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_AMSI and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

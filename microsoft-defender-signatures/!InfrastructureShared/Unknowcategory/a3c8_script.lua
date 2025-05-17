@@ -3,38 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_connection_string)()
-if l_0_0 then
-  local l_0_1 = (string.match)(l_0_0, "DestPort=(%d+)")
-  local l_0_2 = {}
-  l_0_2["80"] = true
-  l_0_2["8080"] = true
-  l_0_2["443"] = true
-  l_0_2["53"] = true
-  l_0_2["21"] = true
-  l_0_2["25"] = true
-  l_0_2["22"] = true
-  l_0_2["389"] = true
-  l_0_2["9"] = true
-  l_0_2["636"] = true
-  l_0_2["1433"] = true
-  l_0_2["1434"] = true
-  l_0_2["1521"] = true
-  l_0_2["9389"] = true
-  l_0_2["8100"] = true
-  l_0_2["23"] = true
-  l_0_2["993"] = true
-  l_0_2["40000"] = true
-  l_0_2["9085"] = true
-  l_0_2["9092"] = true
-  l_0_2["3306"] = true
-  l_0_2["3300"] = true
-  l_0_2["5432"] = true
-  if l_0_2[l_0_1] then
-    return mp.INFECTED
-  end
-end
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and (string.find)(l_0_0, " copy ", 1, true) and (string.find)(l_0_0, "\\windows\\temp\\", 1, true) and ((string.find)(l_0_0, "\\share$\\", 1, true) or (string.find)(l_0_0, " \\\\", 1, true) or (string.find)(l_0_0, " \"\"\\\\", 1, true)) then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

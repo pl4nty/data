@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 102400 and l_0_0 <= 143360 and pehdr.NumberOfSections == 5 then
+if mp.HSTR_WEIGHT >= 21 and (hstrlog[3]).hitcount + (hstrlog[4]).hitcount + (hstrlog[5]).hitcount + (hstrlog[6]).hitcount >= 5 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).Name == "hitl3r" and (pesecs[2]).Name == "hitl3r" then
+if peattributes.isdll and (mp.getfilesize)() < 100000 then
   return mp.INFECTED
 end
 return mp.CLEAN

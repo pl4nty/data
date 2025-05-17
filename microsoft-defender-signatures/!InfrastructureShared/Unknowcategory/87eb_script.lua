@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and pehdr.NumberOfSections == 4 and (pesecs[3]).Name == ".data" and (pesecs[4]).Name == ".rsrc" then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 589824 and l_0_0 < 786432 and ((mp.get_mpattribute)("TEL:Trojan:Win32/Qakbot.E!sl1") or (mp.get_mpattribute)("TEL:Trojan:Win32/Qakbot.E!sl2")) then
   return mp.INFECTED
 end
 return mp.CLEAN

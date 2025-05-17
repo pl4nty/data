@@ -4,19 +4,22 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil or l_0_1 == nil then
-  return mp.CLEAN
-end
-if l_0_2:len() == 15 and l_0_2:find("^service[0-9][0-9][0-9][0-9]%.") == 1 then
-  (mp.set_mpattribute)("Lua:ContextFileNamePutalol")
-end
-if l_0_2 == "flashbeat.exe" then
-  (mp.set_mpattribute)("Lua:ContextFileNamePutalol.B")
-else
-  if l_0_2 == "lolliscan.exe" then
-    (mp.set_mpattribute)("Lua:ContextFileNamePutalol.C")
+if (string.sub)(l_0_0, -4) == ".zip" or (string.sub)(l_0_0, -4) == ".exe" then
+  local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+  if l_0_2 == nil then
+    return mp.CLEAN
+  end
+  l_0_2 = l_0_2:gsub("%[%d%d?%]", "")
+  local l_0_3, l_0_4 = l_0_2:match("(video%.hd_%d+)(%....)")
+  if l_0_3 == nil then
+    l_0_3 = l_0_2:match("(hd%.gallery_%d+)(%....)")
+  end
+  if l_0_3 ~= nil and (l_0_4 == ".zip" or l_0_4 == ".exe") then
+    (mp.set_mpattribute)("Lua:SuspiciousFileName.A")
+    return mp.CLEAN
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

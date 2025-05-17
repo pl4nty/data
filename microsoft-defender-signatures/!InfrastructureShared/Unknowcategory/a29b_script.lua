@@ -3,19 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (hstrlog[1]).VA
-local l_0_1 = pehdr.ImageBase
-local l_0_2 = (pesecs[1]).VirtualAddress + l_0_1 + 4096
-if l_0_0 < l_0_2 or l_0_1 + 28672 < l_0_0 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC27: Confused about usage of register: R6 in 'UnsetPending'
+
+      if (string.find)((string.lower)(R6_PC27), "\\javaw.exe") == nil and (sysio.IsFileExists)(R6_PC27) then
+        (bm.add_related_file)(R6_PC27)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-local l_0_3 = pe.VM_SEARCH_BM
-local l_0_4 = pe.vm_search
-if l_0_4(l_0_2, l_0_0, "‰Œ…\001\003\255é\001\002\255\255‹…\144\000", nil, l_0_3) ~= 4294967295 then
-  return mp.INFECTED
-end
-if l_0_4(l_0_2, l_0_0, "‰L…\001\001é\001\002\255\255‹E\144\000", nil, l_0_3) ~= 4294967295 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

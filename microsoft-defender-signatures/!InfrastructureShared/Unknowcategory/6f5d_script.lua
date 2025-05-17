@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/StrelaStealer.MBXI!MTB") and (mp.get_mpattribute)("pea_isdll") then
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 3140000 then
   return mp.INFECTED
 end
 return mp.CLEAN

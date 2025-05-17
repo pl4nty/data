@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and not (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 1131776 and (mp.getfilesize)() < 1156352 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1)
+  local l_0_1 = (mp.GetMotwHostUrlForFile)(l_0_0)
+  if l_0_1 then
+    (bm.add_related_string)("bmurl", l_0_1, bm.RelatedStringBMReport)
   end
+  return mp.INFECTED
+end
+do
   return mp.CLEAN
 end
 

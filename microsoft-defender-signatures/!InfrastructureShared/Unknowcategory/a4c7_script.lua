@@ -3,28 +3,22 @@
 
 -- params : ...
 -- function num : 0
-min = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 < l_1_1 then
-    return l_1_0
-  end
-  return l_1_1
-end
-
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 32768 then
-  (mp.readprotection)(false)
-  local l_0_1 = (mp.readfile)(0, l_0_0)
-  local l_0_2 = (string.find)(l_0_1, "yv66vgAA", 1, true)
-  if l_0_2 ~= nil then
-    local l_0_3 = (mp.readfile)(l_0_2 - 3, 2)
-    local l_0_4 = (mp.readfile)(l_0_2 - 1, min((string.byte)(l_0_3) * 256 + (string.byte)(l_0_3, 2), l_0_0 - l_0_2))
-    ;
-    (mp.vfo_add_buffer)(l_0_4, "[java_class]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (bm.get_imagepath)()
+if l_0_0 == nil or l_0_1 == nil then
   return mp.CLEAN
 end
+local l_0_2 = l_0_0.ppid .. ";ImagePath:" .. l_0_1
+if not (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+  (MpCommon.AppendPersistContextNoPath)("bm_uacbypass_connmgr", l_0_2, 2)
+end
+local l_0_3, l_0_4 = (bm.get_process_relationships)(l_0_0.ppid)
+for l_0_8,l_0_9 in ipairs(l_0_3) do
+  if l_0_9.ppid and l_0_9.image_path and not (mp.IsKnownFriendlyFile)(l_0_9.image_path, true, false) then
+    l_0_2 = l_0_9.ppid .. ";ImagePath:" .. l_0_9.ImagePath
+    ;
+    (MpCommon.AppendPersistContextNoPath)("bm_uacbypass_connmgr", l_0_2, 2)
+  end
+end
+return mp.CLEAN
 

@@ -3,31 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
-  local l_0_0 = (mp.GetBruteMatchData)()
-  if l_0_0.match_offset ~= 0 then
-    return mp.CLEAN
-  end
-  if l_0_0.is_header then
-    local l_0_1 = (mp.getfilesize)()
-    do
-      if l_0_1 < 256 then
-        local l_0_2, l_0_3, l_0_4 = l_0_1
-      end
-      ;
-      (mp.readprotection)(false)
-      -- DECOMPILER ERROR at PC32: Confused about usage of register: R2 in 'UnsetPending'
-
-      local l_0_5 = nil
-      do
-        local l_0_6 = nil
-        if (((mp.readfile)(l_0_0.match_offset, l_0_2)):lower()):match("%.%.\\%.%.\\%.%.\\%.%.\\%.%.\\%l+\\%w+%.exe%s\"(%w:\\users\\[^\\]+\\appdata\\roaming\\%l+\\%l+%.js)\"") ~= nil then
-          (mp.ReportLowfi)((((mp.readfile)(l_0_0.match_offset, l_0_2)):lower()):match("%.%.\\%.%.\\%.%.\\%.%.\\%.%.\\%l+\\%w+%.exe%s\"(%w:\\users\\[^\\]+\\appdata\\roaming\\%l+\\%l+%.js)\""), 2148319275)
-          return mp.INFECTED
-        end
-        return mp.CLEAN
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -11)) == "svchost.exe" then
+  if (this_sigattrlog[1]).matched then
+    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 3296241983)
+  else
+    if (this_sigattrlog[2]).matched then
+      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 669256468)
+    else
+      if (this_sigattrlog[3]).matched then
+        (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1), 3230147973)
       end
     end
   end
+  return mp.INFECTED
 end
+return mp.CLEAN
 

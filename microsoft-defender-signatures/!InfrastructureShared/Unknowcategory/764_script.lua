@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 256 then
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if (string.find)(l_0_0, "/u ", 1, true) or (string.find)(l_0_0, "/s ", 1, true) then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 258) ~= 1635021685 then
-  return mp.CLEAN
-end
-if headerpage[262] ~= 114 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("Lua:TarFile")
-return mp.CLEAN
 

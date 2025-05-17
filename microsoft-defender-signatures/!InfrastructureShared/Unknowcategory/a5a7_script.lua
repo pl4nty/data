@@ -3,27 +3,38 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = nil
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
   end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
 
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or not (string.find)(l_0_1, "\\windows mail\\", 1, true) then
-    return mp.INFECTED
+  if not (this_sigattrlog[3]).matched or (string.lower)((this_sigattrlog[3]).utf8p1) ~= nil then
+    local l_0_4 = nil
+    local l_0_5 = (string.sub)((string.lower)((this_sigattrlog[3]).utf8p1), -4)
+    if (string.find)("|.asp|aspx|ashx|asmx|", l_0_5, 1, true) then
+      do
+        do
+          if (sysio.IsFileExists)(l_0_4) then
+            local l_0_6 = nil
+            if (string.match)(l_0_4, "(.*\\)[^\\]+$") then
+              (bm.trigger_sig)("TriggerShellPath", (string.match)(l_0_4, "(.*\\)[^\\]+$"))
+            end
+            ;
+            (mp.ReportLowfi)(l_0_4, 3496458548)
+            ;
+            (bm.add_related_file)(l_0_4)
+            ;
+            (bm.add_threat_file)(l_0_4)
+          end
+          do return mp.INFECTED end
+          return mp.CLEAN
+        end
+      end
+    end
   end
-  local l_0_2 = nil
-  if (string.sub)((string.lower)(nil), 1, 1) == "%" and (string.find)((string.lower)(nil), "%commonprogramfiles%\\system", 1, true) then
-    return mp.CLEAN
-  end
-  l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2))
-  if not (string.find)(l_0_2, "\\outlook express\\", 1, true) then
-    (bm.add_related_file)(l_0_2)
-    return mp.INFECTED
-  end
-  return mp.CLEAN
 end
 

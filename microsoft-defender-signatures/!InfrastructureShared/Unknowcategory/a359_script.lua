@@ -3,25 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = false
-local l_0_1 = false
-local l_0_2 = false
-if (hstrlog[1]).hitcount >= 1 or (hstrlog[2]).hitcount >= 1 or (hstrlog[3]).hitcount >= 1 then
-  l_0_0 = true
-end
-if (hstrlog[4]).hitcount >= 1 or (hstrlog[5]).hitcount >= 1 then
-  l_0_1 = true
-end
-if (mp.get_mpattribute)("MpHasExpensiveLoop") then
-  l_0_2 = true
-end
-if peattributes.dt_error_heur_exit_criteria then
-  l_0_2 = true
-end
-if (mp.get_mpattribute)("MpHasValidProjPath") then
-  l_0_2 = true
-end
-if l_0_0 and l_0_1 and l_0_2 then
+if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint and (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 18, 4), 1), 4), 1)) == 1467596470 and (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 24, 4), 1), 4), 1)) == 3909456120 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 8 and mp.HSTR_WEIGHT < 18 then
-  (mp.set_mpattribute)("HSTR:Genasom.P")
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:Miner.E")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

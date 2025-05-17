@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 16 and (mp.getfilesize)() < 2097152 then
+  return mp.INFECTED
 end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

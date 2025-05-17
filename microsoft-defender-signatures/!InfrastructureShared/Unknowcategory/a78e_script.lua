@@ -3,27 +3,123 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 16)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-if l_0_1 <= 0 or l_0_1 > 1048576 then
-  return mp.INFECTED
+is_leap_year = function(l_1_0)
+  -- function num : 0_0
+  if l_1_0 / 4 * 4 == l_1_0 then
+    return true
+  end
+  return false
 end
-l_0_0 = (pe.mmap_va)(pevars.sigaddr, 256)
-local l_0_2 = (mp.readu_u32)(l_0_0, 117)
-local l_0_3 = (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1)
-local l_0_4 = (mp.readu_u32)(l_0_0, 35)
-local l_0_5 = (pe.mmap_va)(l_0_4, 256)
-local l_0_6 = (mp.readu_u32)(l_0_0, 45)
-local l_0_7 = (mp.readu_u32)((pe.mmap_va)(l_0_6, 4), 1)
-local l_0_8 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
-local l_0_9 = "\190\000\000\000\000\189\001\000\000\000âË@%\255\000\000\000â≈âÔäóN\002@\000\015∂ \003\rJ\002@\000Å·\255\000\000\000äôN\002@\000àëN\002@\000\137\rJ\002@\000àüN\002@\000\015∂âN\002@\000\015∂”\001—Å\225\255\000\000\000\015∂ôN\002@\000∏N\003@\0000\0280ÉÓ\001u°√\000\000\000\000"
-local l_0_10 = (pe.mmap_va)(l_0_3, l_0_1)
-local l_0_11 = l_0_8 .. l_0_9 .. l_0_5 .. l_0_10
+
+timestamp_to_date = function(l_2_0)
+  -- function num : 0_1
+  local l_2_1 = 1970
+  local l_2_2 = 86400
+  local l_2_3 = 365 * l_2_2
+  local l_2_4 = 0
+  local l_2_5 = false
+  while l_2_4 < l_2_0 do
+    l_2_5 = is_leap_year(l_2_1)
+    if l_2_5 then
+      l_2_4 = l_2_4 + l_2_3 + l_2_2
+    else
+      l_2_4 = l_2_4 + l_2_3
+    end
+    l_2_1 = l_2_1 + 1
+  end
+  l_2_1 = l_2_1 - 1
+  if l_2_5 then
+    l_2_4 = l_2_4 - (l_2_3 + l_2_2)
+  else
+    l_2_4 = l_2_4 - l_2_3
+  end
+  l_2_0 = l_2_0 - (l_2_4)
+  local l_2_6 = {}
+  -- DECOMPILER ERROR at PC40: No list found for R6 , SetList fails
+
+  local l_2_7 = {}
+  -- DECOMPILER ERROR at PC42: Overwrote pending register: R8 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC43: Overwrote pending register: R9 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC44: Overwrote pending register: R10 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC45: Overwrote pending register: R11 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R12 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC47: Overwrote pending register: R13 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC48: Overwrote pending register: R14 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC49: Overwrote pending register: R15 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC50: Overwrote pending register: R16 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC51: Overwrote pending register: R17 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R18 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC54: No list found for R7 , SetList fails
+
+  -- DECOMPILER ERROR at PC55: Overwrote pending register: R8 in 'AssignReg'
+
+  local l_2_8 = 59
+  -- DECOMPILER ERROR at PC56: Overwrote pending register: R9 in 'AssignReg'
+
+  local l_2_9 = 90
+  -- DECOMPILER ERROR at PC57: Overwrote pending register: R10 in 'AssignReg'
+
+  local l_2_10 = 120
+  -- DECOMPILER ERROR at PC58: Overwrote pending register: R11 in 'AssignReg'
+
+  local l_2_11 = 151
+  -- DECOMPILER ERROR at PC61: Overwrote pending register: R12 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC62: Overwrote pending register: R13 in 'AssignReg'
+
+  if l_2_5 then
+    for l_2_15,l_2_16 in (181)(212) do
+      -- DECOMPILER ERROR at PC68: Overwrote pending register: R17 in 'AssignReg'
+
+      if l_2_8 <= l_2_16 then
+        break
+      end
+    end
+  else
+    do
+      for l_2_20,l_2_21 in pairs(l_2_7) do
+        -- DECOMPILER ERROR at PC81: Overwrote pending register: R9 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC83: Overwrote pending register: R10 in 'AssignReg'
+
+        if l_2_8 <= l_2_21 then
+          break
+        end
+        -- DECOMPILER ERROR at PC85: Overwrote pending register: R11 in 'AssignReg'
+
+      end
+      do
+        do
+          do return l_2_1, l_2_9, l_2_10 end
+          -- WARNING: undefined locals caused missing assignments!
+        end
+      end
+    end
+  end
+end
+
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 9, 4), 1), 4), 1)
+local l_0_1 = (pe.get_api_id)(l_0_0)
+if l_0_1 ~= 1269389306 then
+  return mp.CLEAN
+end
+local l_0_2 = pehdr.TimeDateStamp
+if l_0_2 == 0 then
+  return mp.CLEAN
+end
+local l_0_3, l_0_4, l_0_5 = timestamp_to_date(l_0_2)
 ;
-(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 2, l_0_1)
-;
-(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 107, l_0_7)
-;
-(mp.vfo_add_buffer)(l_0_11, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+(pe.mmap_patch_va)(pevars.sigaddr + 17, "\184" .. (string.char)(l_0_4) .. "\000")
 return mp.INFECTED
 

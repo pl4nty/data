@@ -6,5 +6,5 @@
 if peattributes.ismsil == true then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

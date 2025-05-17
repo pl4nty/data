@@ -3,61 +3,40 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0.integrity_level <= MpCommon.SECURITY_MANDATORY_MEDIUM_RID then
-  local l_0_1 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)
-  if l_0_0.integrity_level < l_0_1.IntegrityLevel then
-    local l_0_2 = nil
-    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
-      if (sigattr_tail[l_0_6]).matched and (sigattr_tail[l_0_6]).attribute == 16393 then
-        l_0_2 = (sigattr_tail[l_0_6]).utf8p2
-        if l_0_2 ~= nil then
-          local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_2)
-          for l_0_11,l_0_12 in ipairs(l_0_7) do
-            l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
-            if (sysio.IsFileExists)(l_0_12) then
-              (bm.add_related_file)(l_0_12)
+local l_0_0 = (mp.enum_mpattributesubstring)("Behavior:Win32/BlockMpTamper")
+if #l_0_0 == 0 or l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.enum_mpattributesubstring)("Behavior:Win32/ShadowCopyDelete")
+local l_0_2 = (mp.enum_mpattributesubstring)("Behavior:Win32/RunsBcdedit")
+local l_0_3 = (mp.enum_mpattributesubstring)("Behavior:Win32/StartupRepair")
+local l_0_4 = (mp.enum_mpattributesubstring)("Behavior:Win32/FsutilUsnDeleteJournal")
+if #l_0_1 > 0 or #l_0_2 > 0 or #l_0_3 > 0 or #l_0_4 > 0 then
+  for l_0_8,l_0_9 in ipairs(l_0_0) do
+    (bm.add_related_string)("RelatedBMHits", l_0_9, bm.RelatedStringBMReport)
+  end
+  local l_0_10 = nil
+  for l_0_14 = 1, mp.SIGATTR_LOG_SZ do
+    if (sigattr_tail[l_0_14]).matched and (sigattr_tail[l_0_14]).attribute == 16393 then
+      l_0_10 = (sigattr_tail[l_0_14]).utf8p2
+      if l_0_10 ~= nil then
+        local l_0_15 = (mp.GetExecutablesFromCommandLine)(l_0_10)
+        if l_0_15 ~= nil and #l_0_15 > 0 then
+          for l_0_19,l_0_20 in ipairs(l_0_15) do
+            l_0_20 = (mp.ContextualExpandEnvironmentVariables)(l_0_20)
+            if (sysio.IsFileExists)(l_0_20) then
+              (bm.add_related_file)(l_0_20)
             end
           end
         end
       end
     end
-    if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-      l_0_2 = (this_sigattrlog[5]).utf8p2
-    else
-      if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
-        l_0_2 = (this_sigattrlog[6]).utf8p2
-      end
-    end
-    if l_0_2 ~= nil then
-      local l_0_13 = nil
-      l_0_13 = l_0_13((mp.GetExecutablesFromCommandLine)(l_0_2))
-      for l_0_17,l_0_18 in l_0_13 do
-        local l_0_18 = nil
-        l_0_18 = mp
-        l_0_18 = l_0_18.ContextualExpandEnvironmentVariables
-        l_0_18 = l_0_18(l_0_17)
-        l_0_17 = l_0_18
-        l_0_18 = sysio
-        l_0_18 = l_0_18.IsFileExists
-        l_0_18 = l_0_18(l_0_17)
-        if l_0_18 then
-          l_0_18 = mp
-          l_0_18 = l_0_18.ReportLowfi
-          l_0_18(l_0_17, 2668059089)
-        end
-      end
-    end
-    do
-      do return mp.INFECTED end
-      -- DECOMPILER ERROR at PC121: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
-      l_0_1 = mp
-      l_0_1 = l_0_1.CLEAN
-      do return l_0_1 end
-      -- DECOMPILER ERROR at PC124: Confused about usage of register R3 for local variables in 'ReleaseLocals'
-
-    end
   end
+  do return mp.INFECTED end
+  -- DECOMPILER ERROR at PC108: Confused about usage of register R6 for local variables in 'ReleaseLocals'
+
 end
+l_0_10 = mp
+l_0_10 = l_0_10.CLEAN
+return l_0_10
 

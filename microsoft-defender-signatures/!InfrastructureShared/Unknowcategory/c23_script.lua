@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:CudaMiner")
+(mp.set_mpattribute)("PUA:Block:OutBrowse")
 return mp.INFECTED
 

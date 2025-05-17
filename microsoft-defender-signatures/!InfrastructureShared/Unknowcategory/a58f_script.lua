@@ -3,22 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1)
-if not l_0_0 then
-  return mp.CLEAN
+if ((((((((((((((((hstrlog[3]).matched and not (hstrlog[4]).matched) or (hstrlog[5]).matched) and not (hstrlog[6]).matched) or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or (hstrlog[11]).matched) and not (hstrlog[12]).matched) or (hstrlog[13]).matched) and not (hstrlog[14]).matched) or (hstrlog[15]).matched) and not (hstrlog[16]).matched) or (hstrlog[17]).matched) and (hstrlog[1]).matched) or (hstrlog[2]).matched and 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 == 15 then
+  return mp.INFECTED
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 and l_0_1.integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "\\appdata\\local\\packages", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_2 = (string.lower)((bm.get_imagepath)())
-  if not (string.find)(l_0_2, "packages\\canonicalgrouplimited.ubuntu", 1, true) and not (string.find)(l_0_2, "packages\\thedebianproject.debiangnulinux", 1, true) then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

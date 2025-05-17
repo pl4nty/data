@@ -3,96 +3,63 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_ScanFileLessMalwareKeyPath = function(l_1_0)
+split_path = function(l_1_0)
   -- function num : 0_0
-  local l_1_1 = (sysio.RegOpenKey)(l_1_0)
-  local l_1_2 = 0
-  if l_1_1 then
-    local l_1_3 = (sysio.RegEnumValues)(l_1_1)
-    for l_1_7,l_1_8 in pairs(l_1_3) do
-      do
-        do
-          if l_1_8 then
-            local l_1_9 = (sysio.GetRegValueAsString)(l_1_1, l_1_8)
-            if l_1_9 ~= nil then
-              l_1_9 = (string.lower)(l_1_9)
-              if (string.len)(l_1_9) > 48 and (string.find)(l_1_9, "%.%.\\") and ((string.find)(l_1_9, "javascript:", 2, true) or (string.find)(l_1_9, "vbscript:", 2, true)) and (string.find)(l_1_9, "runhtmlapplication", 2, true) then
-                (MpDetection.ReportResource)("regkey", l_1_0 .. "\\\\" .. l_1_8, 277, false)
-              end
-              if (string.match)(l_1_9, "regsvr32.+/i%:http.+scrobj%.dll") and (string.find)(l_1_9, "/u ", 1, true) and (string.find)(l_1_9, "/s ", 1, true) then
-                (MpDetection.ReportResource)("regkey", l_1_0 .. "\\\\" .. l_1_8, 805306523, false)
-              end
-              if (string.find)(l_1_9, "powershell.exe", 1, true) and (string.match)(l_1_9, "iex%s*%(%[text%.encoding%]%:%:ascii%.getstring%(%[convert%]%:%:frombase64string%(%(gp%s*%\'hk") then
-                (MpDetection.ReportResource)("regkey", l_1_0 .. "\\\\" .. l_1_8, 805306523, false)
-              end
-            end
-          end
-          l_1_2 = l_1_2 + 1
-          if l_1_2 == 50 then
-            SetLuaInstrLimit((crypto.shl64)(1, 24))
-            l_1_2 = 0
-          end
-          -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out DO_STMT
-
-        end
-      end
-    end
-  end
-end
-
-Infrastructure_ScanFileLessMalware = function()
-  -- function num : 0_1
-  local l_2_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
-  local l_2_1 = 0
-  for l_2_5,l_2_6 in pairs(l_2_0) do
-    Infrastructure_ScanFileLessMalwareKeyPath(l_2_6)
-    l_2_1 = l_2_1 + 1
-    if l_2_1 == 8 then
-      break
-    end
-  end
+  local l_1_1 = string.match
+  local l_1_2 = l_1_0
   do
-    Infrastructure_ScanFileLessMalwareKeyPath("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
-    SetLuaInstrLimit((crypto.shl64)(1, 24))
-    local l_2_7 = "HKCU\\Software\\Classes\\CLSID"
-    local l_2_8 = ((sysio.RegExpandUserKey)(l_2_7))
-    local l_2_9, l_2_10 = nil, nil
-    local l_2_11 = 0
-    local l_2_12 = 0
-    for l_2_16,l_2_17 in pairs(l_2_8) do
-      l_2_9 = (sysio.RegOpenKey)(l_2_17)
-      if l_2_9 then
-        local l_2_18 = (sysio.RegEnumKeys)(l_2_9)
-        if l_2_18 then
-          for l_2_22,l_2_23 in pairs(l_2_18) do
-            l_2_10 = l_2_17 .. "\\" .. l_2_23 .. "\\LocalServer32"
-            Infrastructure_ScanFileLessMalwareKeyPath(l_2_10)
-            l_2_12 = l_2_12 + 1
-            if l_2_12 == 25 then
-              SetLuaInstrLimit((crypto.shl64)(1, 24))
-              l_2_12 = 0
-            end
-          end
-        end
-      end
-      do
-        do
-          l_2_11 = l_2_11 + 1
-          if l_2_11 == 8 then
-            break
-          end
-          -- DECOMPILER ERROR at PC82: LeaveBlock: unexpected jumping out DO_STMT
-
-        end
-      end
-    end
-    SetLuaInstrLimit((crypto.shl64)(1, 24))
-    Infrastructure_ScanFileLessMalwareKeyPath("HKLM\\Software\\Classes\\CLSID\\{73E709EA-5D93-4B2E-BBB0-99B7938DA9E4}\\LocalServer32")
-    Infrastructure_ScanFileLessMalwareKeyPath("HKLM\\Software\\Classes\\CLSID\\{AB8902B4-09CA-4bb6-B78D-A8F59079A8D5}\\LocalServer32")
-    collectgarbage("collect")
-    -- DECOMPILER ERROR at PC100: Confused about usage of register R8 for local variables in 'ReleaseLocals'
+    local l_1_3 = "(.-)([^\\]-([^\\%.]+))$"
+    do return l_1_1(l_1_2, l_1_3) end
+    -- DECOMPILER ERROR at PC6: Confused about usage of register R2 for local variables in 'ReleaseLocals'
 
   end
 end
 
+IsDorkbotPath = function(l_2_0)
+  -- function num : 0_1
+  if l_2_0 == nil then
+    return false
+  end
+  local l_2_1 = (string.lower)(l_2_0)
+  if (string.find)(l_2_1, "\\temp\\adobe\\reader_sl%.exe$") ~= nil or (string.find)(l_2_1, "\\temp\\c731200$") ~= nil then
+    return true
+  end
+  if (string.find)(l_2_1, "\\application data\\screensaverpro%.scr$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\screensaverpro%.scr$") ~= nil or (string.find)(l_2_1, "\\application data\\c731200$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\c731200$") ~= nil or (string.find)(l_2_1, "\\application data\\temp%.bin$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\temp%.bin$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\update\\update%.exe$") ~= nil or (string.find)(l_2_1, "\\application data\\update\\update%.exe$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\update\\explorer%.exe$") ~= nil or (string.find)(l_2_1, "\\application data\\update\\explorer%.exe$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\windowsupdate\\updater%.exe$") ~= nil or (string.find)(l_2_1, "\\application data\\windowsupdate\\updater%.exe$") ~= nil then
+    return true
+  end
+  local l_2_2, l_2_3, l_2_4 = split_path(l_2_0)
+  if l_2_4 ~= "exe" and l_2_4 ~= "scr" then
+    return false
+  end
+  if ((string.find)((string.lower)(l_2_2), "\\application data\\identities\\$") ~= nil or (string.find)((string.lower)(l_2_2), "\\appdata\\roaming\\identities\\$") ~= nil or (string.find)((string.lower)(l_2_2), "\\appdata\\roaming\\microsoft\\windows\\themes\\$") ~= nil) and (string.find)(l_2_3, "%u%l%l%l%l%l%.exe$") ~= nil then
+    return true
+  end
+  return false
+end
+
+DeleteAutoRunEntries = function(l_3_0)
+  -- function num : 0_2
+  if l_3_0 then
+    local l_3_1 = (sysio.RegEnumValues)(l_3_0)
+    for l_3_5,l_3_6 in pairs(l_3_1) do
+      if l_3_6 then
+        local l_3_7 = (sysio.GetRegValueAsString)(l_3_0, l_3_6)
+        if l_3_7 and IsDorkbotPath(l_3_7) == true then
+          (sysio.DeleteRegValue)(l_3_0, l_3_6)
+          if (sysio.IsFileExists)(l_3_7) then
+            (Remediation.BtrDeleteFile)(l_3_7)
+          end
+        end
+      end
+    end
+  end
+end
+
+if (Remediation.Threat).Active and (string.match)((Remediation.Threat).Name, "Win32/Dorkbot") then
+  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    local l_0_6 = (sysio.RegOpenKey)(l_0_5)
+    DeleteAutoRunEntries(l_0_6)
+  end
+end
 

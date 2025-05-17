@@ -3,100 +3,79 @@
 
 -- params : ...
 -- function num : 0
-getFirstChildPpid = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 == nil then
-    return nil
-  end
-  local l_1_2 = true
-  local l_1_3 = 0
-  if l_1_1 ~= nil or (string.len)(l_1_1) > 0 then
-    l_1_2 = false
-    l_1_3 = (string.len)(l_1_1)
-  end
-  local l_1_4, l_1_5 = (bm.get_process_relationships)(l_1_0)
-  if l_1_5 == nil or #l_1_5 < 1 or #l_1_5 > 4 then
-    return nil
-  end
-  local l_1_6 = nil
-  for l_1_10,l_1_11 in ipairs(l_1_5) do
-    if (mp.bitand)(l_1_11.reason_ex, 1) == 1 and (l_1_2 == true or l_1_3 >= (string.len)(l_1_11.image_path) or (string.sub)(l_1_11.image_path, -l_1_3) == l_1_1) then
-      l_1_6 = l_1_11.ppid
-      break
-    end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_1 = (this_sigattrlog[3]).utf8p2
+  local l_0_2 = nil
+else
+end
+do
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
+
+  if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
+    local l_0_3, l_0_4 = (this_sigattrlog[4]).utf8p1, (this_sigattrlog[4]).utf8p2
+    l_0_4 = (this_sigattrlog[5]).utf8p2
+    local l_0_5 = nil
+  else
   end
   do
-    return l_1_6
-  end
-end
+    -- DECOMPILER ERROR at PC80: Overwrote pending register: R0 in 'AssignReg'
 
-local l_0_0, l_0_1 = nil, nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_0 = (this_sigattrlog[1]).ppid
-  l_0_1 = (this_sigattrlog[1]).utf8p2
-else
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    l_0_0 = (this_sigattrlog[2]).ppid
-    l_0_1 = (this_sigattrlog[2]).utf8p2
-  else
-    if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-      l_0_0 = (this_sigattrlog[3]).ppid
-      l_0_1 = (this_sigattrlog[3]).utf8p2
+    if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p2 ~= nil then
+      local l_0_6, l_0_7 = (this_sigattrlog[6]).utf8p1, (this_sigattrlog[6]).utf8p2
+      l_0_7 = (this_sigattrlog[7]).utf8p2
+      local l_0_8 = nil
+    else
+    end
+    do
+      -- DECOMPILER ERROR at PC114: Overwrote pending register: R0 in 'AssignReg'
+
+      if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p2 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p2 ~= nil then
+        local l_0_9, l_0_10, l_0_12, l_0_13, l_0_15, l_0_17 = (this_sigattrlog[8]).utf8p1, (this_sigattrlog[8]).utf8p2
+        l_0_12 = this_sigattrlog
+        l_0_12 = l_0_12[9]
+        l_0_10 = l_0_12.utf8p2
+        local l_0_11, l_0_14, l_0_16, l_0_18 = nil
+      else
+      end
+      do
+        if ((this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p2 ~= nil and (this_sigattrlog[10]).utf8p1 == nil) or (this_sigattrlog[10]).utf8p2 == nil then
+          return mp.CLEAN
+        end
+        -- DECOMPILER ERROR at PC142: Confused about usage of register: R1 in 'UnsetPending'
+
+        local l_0_19 = nil
+        local l_0_20 = nil
+        local l_0_21 = (this_sigattrlog[10]).utf8p2
+        repeat
+          -- DECOMPILER ERROR at PC151: Overwrote pending register: R4 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC154: Confused about usage of register: R4 in 'UnsetPending'
+
+        until 0 == 0
+        local l_0_22 = 0 + 0
+        l_0_22 = l_0_22 + R4_PC165
+        -- DECOMPILER ERROR at PC168: Confused about usage of register: R5 in 'UnsetPending'
+
+        _ = (string.gsub)(l_0_21, "{.-}", "")
+        l_0_22 = l_0_22 + R4_PC165
+        if l_0_22 < 4 then
+          return mp.CLEAN
+        end
+        -- DECOMPILER ERROR at PC184: Overwrote pending register: R2 in 'AssignReg'
+
+        if not (string.find)(l_0_21, "j.-n.-d.-i.-:.-l.-d.-a.-p.-:") then
+          return mp.CLEAN
+        end
+        local l_0_23 = R4_PC165
+        local l_0_24 = nil
+        ;
+        (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), {["[" .. l_0_19 .. "]"] = "[" .. l_0_20 .. "]"})
+        return mp.INFECTED
+      end
     end
   end
 end
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = getFirstChildPpid(l_0_0, "\\cmd.exe")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = getFirstChildPpid(l_0_2, "\\cmd.exe")
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-local l_0_4 = getFirstChildPpid(l_0_3, "\\certutil.exe")
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-if (this_sigattrlog[5]).matched == false then
-  return mp.CLEAN
-end
-local l_0_5 = (this_sigattrlog[5]).ppid
-if l_0_4 ~= l_0_5 then
-  return mp.CLEAN
-end
-local l_0_6 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-local l_0_7 = {}
-l_0_7[".xls"] = true
-l_0_7[".doc"] = true
-l_0_7[".ppt"] = true
-l_0_7[".pps"] = true
-l_0_7.docx = true
-l_0_7.pptx = true
-l_0_7.ppsx = true
-l_0_7.xlsx = true
-l_0_7[".rtf"] = true
-l_0_7[".xml"] = true
-l_0_7.dotx = true
-l_0_7.dotm = true
-l_0_7[".odt"] = true
-l_0_7.xlsb = true
-l_0_7.xltx = true
-l_0_7.xltm = true
-l_0_7.xlam = true
-l_0_7[".xla"] = true
-l_0_7.docm = true
-l_0_7.xlsm = true
-l_0_7.pptm = true
-for l_0_11,l_0_12 in ipairs(l_0_6) do
-  if (string.len)(l_0_12) > 4 and (sysio.IsFileExists)(l_0_12) then
-    local l_0_13 = (string.sub)(l_0_12, -4)
-    if l_0_7[l_0_13] then
-      (bm.add_threat_file)(l_0_12)
-    end
-  end
-end
-return mp.INFECTED
 

@@ -3,35 +3,38 @@
 
 -- params : ...
 -- function num : 0
-do
-  if not (mp.get_mpattribute)("attrmatch_rescan_notmyapp") then
-    local l_0_0 = pe.query_import
-    if l_0_0(pe.IMPORT_STATIC, 4288984855) == 0 then
-      return mp.CLEAN
-    end
-    if l_0_0(pe.IMPORT_STATIC, 3419395426) == 0 and l_0_0(pe.IMPORT_STATIC, 1058758707) == 0 then
-      return mp.CLEAN
-    end
-    if l_0_0(pe.IMPORT_STATIC, 1881577768) == 0 then
-      return mp.CLEAN
-    end
-    if l_0_0(pe.IMPORT_STATIC, 2560256095) == 0 then
-      return mp.CLEAN
-    end
-    if l_0_0(pe.IMPORT_STATIC, 1256947212) == 0 then
-      return mp.CLEAN
-    end
-    if l_0_0(pe.IMPORT_STATIC, 453198482) == 0 then
-      return mp.CLEAN
-    end
-    if l_0_0(pe.IMPORT_STATIC, 133826329) == 0 then
-      return mp.CLEAN
-    end
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 18
+local l_0_2 = 0
+local l_0_3 = 0
+local l_0_4 = (mp.getfilesize)()
+if l_0_0.is_header then
+  if mp.HEADERPAGE_SZ >= 4095 then
+    l_0_2 = 4095
+  else
+    l_0_2 = mp.HEADERPAGE_SZ
+  end
+else
+  if mp.FOOTERPAGE_SZ >= 4095 then
+    l_0_2 = 4095
+  else
+    l_0_2 = mp.FOOTERPAGE_SZ
+  end
+  if l_0_4 < mp.FOOTERPAGE_SZ then
+    return mp.CLEAN
+  end
+  l_0_1 = l_0_4 - mp.FOOTERPAGE_SZ + l_0_1
+end
+if l_0_1 ~= nil then
+  if l_0_1 < l_0_2 then
+    (mp.readprotection)(false)
+    l_0_3 = (mp.readfile)(l_0_1, l_0_2 - (l_0_1))
     ;
-    (mp.set_mpattribute)("attrmatch_rescan_notmyapp")
+    (mp.vfo_add_buffer)(l_0_3, "[Base64Decode]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
     ;
-    (pe.reemulate)()
+    (mp.set_mpattribute)("//SCPT:Base64.Decoded")
   end
   return mp.INFECTED
 end
+return mp.CLEAN
 

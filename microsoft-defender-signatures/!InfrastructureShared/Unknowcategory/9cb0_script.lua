@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.reason == 1 then
-    if (string.lower)((string.match)(l_0_6.image_path, "\\([^\\]+)$")) == "razerinstaller.exe" then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+if (mp.get_mpattribute)("RPF:PEHasIOAVURL") and (mp.get_mpattribute)("SIGATTR:SellExecuteExError") then
+  (mp.set_mpattribute)("lua_codepatch_tibs_1")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 9, "\235")
 end
-return mp.CLEAN
+return mp.INFECTED
 

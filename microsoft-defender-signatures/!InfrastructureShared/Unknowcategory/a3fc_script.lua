@@ -3,58 +3,34 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if l_0_1 ~= nil then
+  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
+      (bm.add_related_file)(l_0_7)
+    end
+  end
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_3, l_0_4, l_0_6 = nil, nil, nil
+  l_0_2 = bm
+  l_0_2 = l_0_2.get_process_relationships
+  l_0_2 = l_0_2()
+  local l_0_8, l_0_9 = nil
+  l_0_9 = ipairs
+  l_0_9 = l_0_9(l_0_8)
+  for l_0_13,l_0_14 in l_0_9 do
+    local l_0_14 = nil
+    l_0_14 = bm
+    l_0_14 = l_0_14.request_SMS
+    l_0_14(l_0_13.ppid, "m")
+    l_0_14 = mp
+    l_0_14 = l_0_14.INFECTED
+    do return l_0_14 end
   end
-  do
-    if (this_sigattrlog[2]).matched then
-      local l_0_1, l_0_5, l_0_7 = , (this_sigattrlog[2]).utf8p1
-    end
-    do
-      if (this_sigattrlog[3]).matched then
-        local l_0_2, l_0_8 = nil
-      end
-      -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
+  do return mp.CLEAN end
+  -- DECOMPILER ERROR at PC54: Confused about usage of register R4 for local variables in 'ReleaseLocals'
 
-      -- DECOMPILER ERROR at PC26: Confused about usage of register: R1 in 'UnsetPending'
-
-      if l_0_2 == nil or l_0_8 == nil or (this_sigattrlog[3]).utf8p1 == nil then
-        return mp.CLEAN
-      end
-      -- DECOMPILER ERROR at PC33: Confused about usage of register: R2 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC33: Confused about usage of register: R1 in 'UnsetPending'
-
-      if l_0_8 ~= (this_sigattrlog[3]).utf8p1 then
-        return mp.CLEAN
-      end
-      -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
-
-      local l_0_9, l_0_10 = nil
-      local l_0_11, l_0_12 = , l_0_2:match("(.+\\)([^\\]+)$")
-      if l_0_12 ~= l_0_10:match("(.+\\)([^\\]+)$") then
-        return mp.CLEAN
-      end
-      local l_0_13 = nil
-      -- DECOMPILER ERROR at PC55: Overwrote pending register: R8 in 'AssignReg'
-
-      local l_0_14 = nil
-      if (string.match)(R8_PC53, "(.+)(%.[^%.]*)") == nil or R8_PC53 == nil then
-        R9_PC58 = mp
-        R9_PC58 = R9_PC58.CLEAN
-        return R9_PC58
-      end
-      R9_PC58 = string
-      R9_PC58 = R9_PC58.match
-      R9_PC58 = R9_PC58(R8_PC53, "(.+)%(%d%d%d%d%)$")
-      if R9_PC58 ~= (string.match)(R8_PC53, "(.+)(%.[^%.]*)") then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
 end
 

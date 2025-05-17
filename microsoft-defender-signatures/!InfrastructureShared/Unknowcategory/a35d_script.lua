@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 do
-  if l_0_0 == mp.SCANREASON_ONOPEN then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    if l_0_1 == "new folder.exe" or l_0_1 == "documents.exe" or l_0_1 == "music.exe" or l_0_1 == "pictures.exe" or l_0_1 == "videos.exe" or l_0_1 == "recycler.exe" then
-      (mp.set_mpattribute)("Lowfi:SIGATTR:Worm:Win32/PossibleSillyShareCopy.gen")
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.getfilesize)() >= 339968 and (mp.getfilesize)() < 368640 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

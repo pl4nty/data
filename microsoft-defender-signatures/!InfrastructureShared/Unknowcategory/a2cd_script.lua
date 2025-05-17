@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("InEmail") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = ((mp.GetNormalizedScript)(l_0_0.is_header)):lower()
-if l_0_1 == nil or #l_0_1 < 600 then
-  return mp.CLEAN
-end
-if (MpCommon.StringRegExpSearch)("\\+([\\w]+)\\((?:\\d+|0x[\\da-f]+)\\)((\\+\\1\\((?:\\d+|0x[\\da-f]+)\\)|\\+\'[\\w\\/\\+]+\')+)", l_0_1) == true and #l_0_1 > 600 then
+local l_0_0 = pevars.sigaddr + 32
+do
+  if (string.find)((pe.mmap_va)(l_0_0, 64), "t\017", 1, true) == nil and (string.find)((pe.mmap_va)(l_0_0, 32), "t\003", 1, true) == nil and (string.find)((pe.mmap_va)(l_0_0, 64), "t\018", 1, true) == nil then
+    local l_0_1 = (string.find)((pe.mmap_va)(l_0_0, 64), "t\002", 1, true)
+  end
+  -- DECOMPILER ERROR at PC58: Confused about usage of register: R1 in 'UnsetPending'
+
+  ;
+  (pe.mmap_patch_va)(l_0_0 + l_0_1 - 1, "\235")
   return mp.INFECTED
 end
-return mp.CLEAN
 

@@ -3,36 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 1024 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.readu_u16)(headerpage, 9)
-local l_0_1 = (mp.readu_u32)(headerpage, 23)
-if l_0_0 == 0 and l_0_1 ~= 0 then
-  (mp.set_mpattribute)("Lua:ZipNoCompression")
-  if (mp.readu_u32)(headerpage, 19) == 4294967295 and (mp.readu_u32)(headerpage, 23) == 4294967295 then
-    local l_0_2 = 31 + (mp.readu_u16)(headerpage, 27) + (mp.readu_u16)(headerpage, 29)
-    if l_0_2 < 1008 and (mp.readu_u32)(headerpage, l_0_2) == 67324752 then
-      (mp.set_mpattribute)("Lua:MizenotaDoubleZip")
-    end
-  end
-end
-do
-  local l_0_3 = 1
-  do
-    if l_0_0 == 0 and l_0_1 == 0 then
-      local l_0_4 = 31 + (mp.readu_u16)(headerpage, 27) + (mp.readu_u16)(headerpage, 29)
-      if l_0_4 < 1008 and (mp.readu_u32)(headerpage, l_0_4) == 67324752 then
-        l_0_3 = l_0_4
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0.integrity_level <= MpCommon.SECURITY_MANDATORY_HIGH_RID then
+  local l_0_1 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)
+  if l_0_0.integrity_level < l_0_1.IntegrityLevel then
+    local l_0_2 = nil
+    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
+      if (sigattr_tail[l_0_6]).matched then
+        if (sigattr_tail[l_0_6]).attribute == 16393 then
+          l_0_2 = (sigattr_tail[l_0_6]).utf8p2
+        else
+          if (sigattr_tail[l_0_6]).attribute == 16384 then
+            l_0_2 = (sigattr_tail[l_0_6]).utf8p1
+          else
+            l_0_2 = nil
+          end
+        end
+        if l_0_2 ~= nil then
+          local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_2)
+          for l_0_11,l_0_12 in ipairs(l_0_7) do
+            l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
+            if (sysio.IsFileExists)(l_0_12) then
+              (bm.add_related_file)(l_0_12)
+            end
+          end
+        end
       end
     end
-    if (mp.bitand)((mp.readu_u16)(headerpage, l_0_3 + 6), 1) == 1 then
-      (mp.set_mpattribute)("Lua:ZipEncrypted")
-    end
-    return mp.CLEAN
+    do return mp.INFECTED end
+    -- DECOMPILER ERROR at PC77: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
   end
 end
+l_0_1 = mp
+l_0_1 = l_0_1.CLEAN
+return l_0_1
 

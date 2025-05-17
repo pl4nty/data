@@ -3,96 +3,135 @@
 
 -- params : ...
 -- function num : 0
-GetRuleInfo = function()
-  -- function num : 0_0
-  local l_1_0 = {}
-  l_1_0.Name = "Block Process Creations originating from PSExec & WMI commands"
-  l_1_0.Description = "Windows Defender Exploit Guard detected remoting application (wmiprvse and psexesvc) creating child process"
-  l_1_0.NotificationDedupingInterval = 120
-  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
-  return l_1_0
+local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil
+if mp.HEADERPAGE_SZ < 1024 then
+  return mp.CLEAN
 end
-
-GetMonitoredLocations = function()
-  -- function num : 0_1
-  local l_2_0 = {}
-  l_2_0["%windir%\\system32\\wbem\\WmiPrvSE.exe"] = 2
-  l_2_0["%windir%\\PSEXESVC.exe"] = 2
-  return 1, l_2_0
+if (mp.readu_u32)(headerpage, 1) ~= 561144146 then
+  return mp.CLEAN
 end
-
-GetPathExclusions = function()
-  -- function num : 0_2
-  local l_3_0 = {}
-  l_3_0["%windir%\\system32\\wbem\\WmiPrvSE.exe"] = 2
-  l_3_0["%windir%\\system32\\wbem\\mofcomp.exe"] = 2
-  l_3_0["%windir%\\system32\\svchost.exe"] = 2
-  l_3_0["%windir%\\system32\\WerFault.exe"] = 2
-  l_3_0["%windir%\\system32\\wuauclt.exe"] = 2
-  l_3_0["%windir%\\system32\\gpupdate.exe"] = 2
-  l_3_0["%windir%\\SysWOW64\\wbem\\WmiPrvSE.exe"] = 2
-  l_3_0["%windir%\\SysWOW64\\wbem\\mofcomp.exe"] = 2
-  l_3_0["%windir%\\SysWOW64\\svchost.exe"] = 2
-  l_3_0["%windir%\\SysWOW64\\WerFault.exe"] = 2
-  l_3_0["%windir%\\SysWOW64\\wuauclt.exe"] = 2
-  l_3_0["%windir%\\SysWOW64\\gpupdate.exe"] = 2
-  l_3_0["%windir%\\system32\\spool\\drivers"] = 2
-  l_3_0["%windir%\\system32\\fsiso.exe"] = 2
-  l_3_0["%windir%\\PSEXESVC.exe"] = 2
-  l_3_0["%windir%\\Temp\\*\\DismHost.exe"] = 2
-  l_3_0["%windir%\\system32\\Dism\\DismHost.exe"] = 2
-  l_3_0["%systemdrive%\\MDE\\Tools\\MDEClientAnalyzer.exe"] = 2
-  l_3_0["%systemdrive%\\*\\Tools\\MDATPClientAnalyzer.exe"] = 2
-  l_3_0["%systemdrive%\\*\\WDATPDeploy\\MDATPClientAnalyzer\\MDATPClientAnalyzer.exe"] = 2
-  l_3_0["%windir%\\CCM\\Ccm32BitLauncher.exe"] = 2
-  return l_3_0
+if (mp.readu_u16)(headerpage, 5) ~= 1818 then
+  return mp.CLEAN
 end
+local l_0_6 = nil
+-- DECOMPILER ERROR at PC86: Unhandled construct in 'MakeBoolean' P3
 
-GetCommandLineExclusions = function()
-  -- function num : 0_3
-  local l_4_0 = ".:\\\\windows\\\\ccmcache\\\\.+"
-  local l_4_1 = ".:\\\\windows\\\\ccm\\\\systemtemp\\\\.+"
-  local l_4_2 = ".:\\\\windows\\\\ccm\\\\sensorframework\\\\.+"
-  local l_4_3 = ".:\\\\windows\\\\ccm\\\\signedscripts\\\\.+"
-  local l_4_4 = "cmd[^\\s]*\\s+/c\\s+\\\"chcp\\s+65001\\s+&\\s+.:\\\\windows\\\\system32\\\\inetsrv\\\\appcmd\\.exe\\s+list[^>]+>\\s+\\\"\\\\\\\\127\\.0\\.0\\.1\\\\.\\$\\\\temp\\\\[^\\\"]+\\\"\\s+2>&1\\\""
-  local l_4_5 = "\\s+(.:\\\\windows\\\\temp\\\\)?nessus_[^\\.\\s]+\\.txt[\\\"\\\'\\;\\s]*$"
-  local l_4_6 = "\\\"?.:\\\\windows\\\\system32\\\\sc\\.exe\\\"?\\s+start\\s+tenable_mw_scan\\s+output=nessus_[^\\s\\.]+\\.txt"
-  local l_4_7 = "\\\"?.:\\\\windows\\\\system32\\\\cmd\\.exe\\\"?\\s+/c\\s+echo\\s+nessus_cmd_[^\\s=]+=_start\\s+>>\\s+\\\"?.:\\\\windows\\\\temp\\\\nessus_"
-  local l_4_8 = {}
-  l_4_8[l_4_0] = 0
-  l_4_8[l_4_1] = 0
-  l_4_8[l_4_2] = 0
-  l_4_8[l_4_3] = 0
-  l_4_8[l_4_4] = 0
-  l_4_8[l_4_5] = 0
-  l_4_8[l_4_6] = 0
-  l_4_8[l_4_7] = 0
-  do
-    if (versioning.GetEngineBuild)() >= 24080 then
-      local l_4_9 = (versioning.GetOrgID)()
-      if l_4_9 ~= nil and l_4_9 ~= "" then
-        l_4_9 = (string.lower)(l_4_9)
+-- DECOMPILER ERROR at PC86: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC86: Unhandled construct in 'MakeBoolean' P3
+
+if (((mp.get_mpattribute)("Lua:RarHasFileNameWithPassword") or (mp.get_mpattribute)("Lua:RarHasEncryptedFile") or (mp.get_mpattribute)("Lua:RarHasStoredFileWithExeExtension")) and (mp.get_mpattribute)("RPF:TopLevelFile")) or (mp.get_mpattribute)("Lua:RarHasFileWithExeExtension") and (mp.getfilesize)() < 100000 and (mp.getfilesize)() > 512 and (mp.get_mpattribute)("RPF:TopLevelFile") then
+  (mp.readprotection)(false)
+  local l_0_7 = nil
+  while 1 do
+    -- DECOMPILER ERROR at PC96: Confused about usage of register: R4 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC100: Confused about usage of register: R5 in 'UnsetPending'
+
+    if 0 < 10 and 7 ~= 0 then
+      do
+        local l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13 = , (function(l_1_0, l_1_1)
+  -- function num : 0_0 , upvalues : l_0_5, l_0_1
+  if l_1_1 < l_1_0 + 7 then
+    return 0
+  end
+  local l_1_2 = (mp.readfile)(l_1_0, 7)
+  local l_1_3 = (string.byte)(l_1_2, 3)
+  local l_1_4 = (mp.readu_u16)(l_1_2, 6)
+  local l_1_5 = 0
+  if l_1_3 == 122 and l_1_0 + 48 < l_1_1 then
+    l_1_2 = (mp.readfile)(l_1_0, 48)
+    l_1_5 = (mp.readu_u32)(l_1_2, 8)
+    if (string.byte)(l_1_2, 27) == 3 and (string.sub)(l_1_2, 33, 35) == "CMT" then
+      (mp.set_mpattribute)("Lua:RarHasCommentBlock")
+    end
+  else
+    if l_1_3 == 116 and l_1_0 + 48 < l_1_1 then
+      l_0_5 = l_0_5 + 1
+      l_1_2 = (mp.readfile)(l_1_0, 48)
+      l_1_5 = (mp.readu_u32)(l_1_2, 8)
+      if (string.byte)(l_1_2, 26) == 48 then
+        (mp.set_mpattribute)("Lua:RarHasStoredFile")
       end
-      if l_4_9 == "3216b490-71ee-4a94-b228-13b1c1582e3b" then
-        l_4_8["\\\"?[a-z]:\\\\windows\\\\system32\\\\msiexec\\.exe\\\"?\\s+\\/x\\s+\\{[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\}\\s+\\/q.*\\s+\\/qn"] = 0
-      else
-        l_4_8["\\\"?[a-z]:\\\\windows\\\\system32\\\\msiexec\\.exe\\\"?\\s+.+\\{[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\}\\s+.+[a-z]:\\\\windows\\\\temp\\\\nmwlogs\\\\wvdapps\\\\[^\\\\\\.]+\\.log"] = 0
+      local l_1_6 = (mp.readu_u16)(l_1_2, 4)
+      if (mp.bitand)(l_1_6, 4) == 4 then
+        (mp.set_mpattribute)("Lua:RarHasEncryptedFile")
+      end
+      local l_1_7 = (mp.readu_u16)(l_1_2, 27)
+      if l_1_7 > 4 and l_1_7 < 288 then
+        do
+          if (mp.bitand)(l_1_6, 256) == 256 then
+            local l_1_8, l_1_9 = 32 + 8
+          end
+          -- DECOMPILER ERROR at PC123: Confused about usage of register: R8 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC129: Confused about usage of register: R8 in 'UnsetPending'
+
+          if l_1_0 + l_1_8 + l_1_7 < l_1_1 then
+            local l_1_10 = nil
+            if (l_1_7 > 8 and l_1_7 < 64 and ((mp.readfile)(l_1_0 + l_1_8, l_1_7)):find("[Pp][Aa][Ss][Ss][Ww][Oo][Rr][Dd]")) or l_1_7 > 8 and l_1_7 < 64 and ((mp.readfile)(l_1_0 + l_1_8, l_1_7)):find("[Tt][Oo] [Oo][Pp][Ee][Nn]") then
+              (mp.set_mpattribute)("Lua:RarHasFileNameWithPassword")
+            end
+            if ((mp.readfile)(l_1_0 + l_1_8, l_1_7) == "to open enter 1234" and l_1_5 == 1) or (mp.readfile)(l_1_0 + l_1_8, l_1_7) == "1 2 3 4" and l_1_5 == 1 then
+              (mp.set_mpattribute)("Lua:RarHasMizenotaPWFile")
+            end
+            local l_1_11 = nil
+            local l_1_12 = {[".bat"] = "", [".cmd"] = "", [".com"] = "", [".cpl"] = "", [".exe"] = "", [".pif"] = "", [".scr"] = "", [".vbs"] = "", [".lnk"] = "", [".wsf"] = "", [".vbe"] = "", [".jse"] = "", [".hta"] = "", [".js"] = ""}
+            if l_1_12[(string.sub)(l_1_11, -4)] or l_1_12[(string.sub)(l_1_11, -3)] then
+              (mp.set_mpattribute)("Lua:RarHasFileWithExeExtension")
+              l_0_1 = l_0_1 + 1
+              if (mp.bitand)(l_1_6, 4) == 4 then
+                (mp.set_mpattribute)("Lua:RarHasEncryptedFileWithExeExtension")
+              end
+              if (string.byte)(l_1_2, 26) == 48 then
+                (mp.set_mpattribute)("Lua:RarHasStoredFileWithExeExtension")
+              end
+            end
+          end
+          do
+            if l_1_3 ~= 115 then
+              return 0
+            end
+            return l_1_0 + l_1_4 + l_1_5
+          end
+        end
       end
     end
-    return l_4_8
   end
 end
+)(7, (mp.getfilesize)()), 0 + 1
+        -- DECOMPILER ERROR at PC101: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-GetCommandLineRegExpList = function()
-  -- function num : 0_4
-  local l_5_0 = "cmd(\\.exe)?\\s+\\/c\\s+\\\"*(.:\\\\.+\\.cmd)\\\"*"
-  local l_5_1 = "cmd(\\.exe)?\\\"?\\s+\\/c\\s+\\\"?(.:\\\\.+\\.exe)\\\"?"
-  local l_5_2 = "msiexec(\\.exe)?\\\"?[\\s/a-z]+\\\"?([a-z]:\\\\.+\\.msi)\\\"?"
-  local l_5_3 = {}
-  l_5_3[l_5_0] = 0
-  l_5_3[l_5_1] = 0
-  l_5_3[l_5_2] = 0
-  return l_5_3
+        -- DECOMPILER ERROR at PC101: LeaveBlock: unexpected jumping out IF_STMT
+
+      end
+    end
+  end
+  if l_0_6 == 1 and l_0_7 == 1 then
+    if (mp.get_mpattribute)("RPF:AnyFileHasIOAVURL") then
+      if (mp.get_mpattribute)("Lua:RarHasStoredFileWithExeExtension") then
+        (mp.set_mpattribute)("Lua:RarHasSingleStoredFileWithExeExtension")
+        ;
+        (mp.set_mpattribute)("//Lua:GIOAVTopLevelRarHasSingleStoredFileWithExeExtension")
+      else
+        ;
+        (mp.set_mpattribute)("//Lua:GIOAVTopLevelRarHasSingleFileWithExeExtension")
+      end
+    end
+    ;
+    (mp.set_mpattribute)("Lua:RarHasSingleFileWithExeExtension")
+  end
+  if l_0_6 == 1 then
+    (mp.set_mpattribute)("Lua:SingleFileInRar")
+    ;
+    (mp.UfsSetMetadataBool)("Lua:SingleFileInRar", true)
+  end
 end
+do
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC149: freeLocal<0 in 'ReleaseLocals'
 
+  end
+end
 

@@ -3,44 +3,56 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = "unk"
+if (this_sigattrlog[2]).matched then
+  l_0_0 = "warn"
+else
+  if (this_sigattrlog[3]).matched then
+    l_0_0 = "block"
+  end
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-l_0_1 = (string.lower)(l_0_1)
-local l_0_2 = (string.match)(l_0_1, "trustedinstaller binpath\\s*=([^&]+)")
-if (string.find)(l_0_2, "\\servicing\\trustedinstaller.exe", 1, true) then
-  return mp.CLEAN
-end
-local l_0_3 = (mp.GetParentProcInfo)()
+local l_0_1 = (this_sigattrlog[1]).utf8p1 .. ":" .. (this_sigattrlog[1]).np2
+local l_0_2 = {}
+l_0_2.SIG_CONTEXT = "NP:COCO:100"
+l_0_2.CONTENT_SOURCE = "NP"
+l_0_2.NP_LEVEL = l_0_0
+l_0_2.C2 = "true"
+local l_0_3 = mp.GetUrlReputation
+local l_0_4 = {}
+-- DECOMPILER ERROR at PC31: No list found for R4 , SetList fails
+
+-- DECOMPILER ERROR at PC32: Overwrote pending register: R5 in 'AssignReg'
+
+l_0_3 = l_0_3(l_0_4, l_0_1)
 if l_0_3 ~= nil then
-  local l_0_4 = l_0_3.image_path
-  if l_0_4 == "" or l_0_4 == nil then
-    return mp.CLEAN
-  end
-  l_0_4 = (string.lower)(l_0_4)
-  if (string.find)(l_0_4, ":\\lenovoquickfix\\", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_5 = l_0_3.ppid
-  if l_0_5 == "" or l_0_5 == nil then
-    return mp.CLEAN
-  end
-  local l_0_6 = (mp.GetProcessCommandLine)(l_0_5)
-  if l_0_6 == "" or l_0_6 == nil then
-    return mp.CLEAN
-  end
-  l_0_6 = (string.lower)(l_0_6)
-  if (string.find)(l_0_6, ":\\lenovoquickfix\\", 1, true) then
-    return mp.CLEAN
-  end
-  l_0_2 = (string.match)(l_0_6, "trustedinstaller\\sbinpath\\s*=([^&]+)")
-  if (string.find)(l_0_2, "\\servicing\\trustedinstaller.exe", 1, true) then
-    return mp.CLEAN
+  l_0_4 = l_0_3.urls
+  for l_0_8,l_0_9 in ipairs(l_0_4) do
+    if l_0_9.determination == 2 and l_0_9.confidence > 90 then
+      if (l_0_9.urlresponsecontext).family then
+        local l_0_10 = {}
+        l_0_10[1] = 805306694
+        l_0_10[2] = 805306695
+        l_0_10[3] = 805306694
+        local l_0_11 = l_0_10[(l_0_9.urlresponsecontext).family]
+        if l_0_11 then
+          (mp.changedetectionname)(l_0_11)
+        end
+      end
+      do
+        do
+          do return mp.INFECTED end
+          -- DECOMPILER ERROR at PC67: LeaveBlock: unexpected jumping out DO_STMT
+
+          -- DECOMPILER ERROR at PC67: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC67: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
+    end
   end
 end
-do
-  return mp.INFECTED
-end
+l_0_4 = mp
+l_0_4 = l_0_4.CLEAN
+return l_0_4
 

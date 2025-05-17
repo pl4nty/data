@@ -3,15 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) ~= "smalled.fon" then
-    return mp.CLEAN
-  end
-  if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)) ~= "c:\\windows\\fonts" then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.no_exports then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (pe.get_exports)()
+do
+  if l_0_0 == 1 then
+    local l_0_2 = (pe.mmap_string_rva)((l_0_1[1]).namerva, 64)
+    if l_0_2 ~= nil and (string.len)(l_0_2) >= 9 and (string.find)((string.lower)(l_0_2), "_mimikatz", 1, true) ~= nil then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

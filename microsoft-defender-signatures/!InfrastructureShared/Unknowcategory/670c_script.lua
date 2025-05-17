@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and pehdr.NumberOfSections == 3 then
+if peattributes.isexe == true and (pesecs[5]).Name == "memcpy_" then
   return mp.INFECTED
 end
 return mp.CLEAN

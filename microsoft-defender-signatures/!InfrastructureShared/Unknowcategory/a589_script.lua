@@ -3,38 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  end
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+
+  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+
+    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasGoogleDriveUrl") then
+      (bm.add_related_file)(R7_PC42)
+      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromGoogleDrive") then
+        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromGoogleDrive", 3600)
+        return mp.INFECTED
+      end
+    end
+  end
   return mp.CLEAN
 end
-if pehdr.SizeOfImage < 106496 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage > 131072 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 5 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).VirtualSize < 20992 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).VirtualSize > 23040 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint < 5888 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint > 6144 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

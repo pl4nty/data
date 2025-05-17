@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 == nil then
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = nil
+  else
+  end
+  if not (this_sigattrlog[2]).matched or ((string.lower)((this_sigattrlog[2]).utf8p2)):find("hkey", 1, true) then
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_1.ppid, l_0_0)
-;
-(bm.add_action)("SmsAsyncScanEvent", 1000)
-return mp.INFECTED
 

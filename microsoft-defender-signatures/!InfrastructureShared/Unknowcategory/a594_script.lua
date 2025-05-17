@@ -3,19 +3,47 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_19")
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
-local l_0_2 = (mp.readu_u32)(l_0_0, 6)
-local l_0_3 = (string.byte)(l_0_0, 14)
-local l_0_4 = (mp.readu_u32)(l_0_0, 16)
-local l_0_5 = (string.byte)(l_0_0, 22)
-local l_0_6 = (mp.readu_u32)(l_0_0, 26)
-local l_0_7 = (mp.readu_u32)(l_0_0, 37)
-local l_0_8 = (pe.get_regval)(pe.REG_EDX)
-local l_0_9 = (mp.ror32)((mp.ror32)(l_0_8, l_0_3) + l_0_4, l_0_5) - (mp.bitxor)(l_0_7, l_0_6) + l_0_1 - l_0_2
-;
-(pe.set_regval)(pe.REG_EBX, l_0_9)
-return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[13]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[14]).matched or (this_sigattrlog[15]).matched then
+      local l_0_1, l_0_2, l_0_3, l_0_4 = (this_sigattrlog[14]).utf8p1
+    else
+    end
+    if (this_sigattrlog[16]).matched then
+      do return mp.CLEAN end
+      if (this_sigattrlog[16]).utf8p1 == nil then
+        return mp.CLEAN
+      end
+      local l_0_5 = nil
+      local l_0_6 = -1
+      local l_0_7 = -1
+      if (MpCommon.GetPersistContext)(l_0_5) ~= nil then
+        for l_0_11,l_0_12 in ipairs((MpCommon.GetPersistContext)(l_0_5)) do
+          local l_0_8 = nil
+          -- DECOMPILER ERROR at PC59: Confused about usage of register: R8 in 'UnsetPending'
+
+          if tonumber((string.match)(R8_PC59, "^Age:([0-9]+)$")) ~= nil and l_0_6 < tonumber((string.match)(R8_PC59, "^Age:([0-9]+)$")) then
+            l_0_6 = tonumber((string.match)(R8_PC59, "^Age:([0-9]+)$"))
+          end
+          local l_0_14 = nil
+          if tonumber((string.match)(l_0_13, "^Prevalence:([0-9]+)$")) ~= nil and l_0_7 < tonumber((string.match)(l_0_13, "^Prevalence:([0-9]+)$")) then
+            l_0_7 = tonumber((string.match)(l_0_13, "^Prevalence:([0-9]+)$"))
+          end
+        end
+        if l_0_6 > -1 and l_0_6 <= 1 and l_0_7 > -1 and l_0_7 <= 100 then
+          return mp.INFECTED
+        end
+      end
+      return mp.CLEAN
+    end
+  end
+end
 

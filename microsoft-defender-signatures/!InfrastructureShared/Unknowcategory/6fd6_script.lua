@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if (hstrlog[1]).matched then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Lznt_Xor8_Win32")
+return mp.LOWFI
 

@@ -3,41 +3,40 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.ismsil then
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "NewPECreatedNoCert")
+if not l_0_1 then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 16777216 then
-  return mp.CLEAN
-end
-local l_0_1 = nil
-if (hstrlog[3]).matched then
-  l_0_1 = (hstrlog[3]).VA
-else
-  if (hstrlog[4]).matched then
-    l_0_1 = (hstrlog[4]).VA
-  else
+local l_0_2 = (sysio.GetFileLastWriteTime)(l_0_0)
+if ((sysio.GetLastResult)()).Success and l_0_2 ~= 0 then
+  l_0_2 = l_0_2 / 10000000 - 11644473600
+  local l_0_3 = (MpCommon.GetCurrentTimeT)()
+  if l_0_3 < l_0_2 or l_0_3 - (l_0_2) > 600 then
     return mp.CLEAN
   end
-end
-if not (pe.contains_va)(1, l_0_1) then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_2 = (mp.readfile)((pesecs[1]).PointerToRawData, (pesecs[1]).SizeOfRawData)
-if #l_0_2 < 4096 and #l_0_2 > 16777216 then
-  return mp.CLEAN
-end
-for l_0_6 in (string.gmatch)(l_0_2, "zsrvvgEAAA[%w+/]+=?=?") do
-  if #l_0_6 > 4096 then
-    (mp.set_mpattribute)("//MpBase64DecodeLongLines")
-    ;
-    (mp.vfo_add_buffer)(l_0_6, "[Obfuscator.AO]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-    break
+  local l_0_4 = -1
+  local l_0_5 = -1
+  local l_0_6 = (MpCommon.GetPersistContext)(l_0_0)
+  if l_0_6 ~= nil then
+    for l_0_10,l_0_11 in ipairs(l_0_6) do
+      local l_0_12 = tonumber((string.match)(l_0_11, "^Age:([0-9]+)$"))
+      if l_0_12 ~= nil and l_0_4 < l_0_12 then
+        l_0_4 = l_0_12
+      end
+      local l_0_13 = tonumber((string.match)(l_0_11, "^Prevalence:([0-9]+)$"))
+      if l_0_13 ~= nil and l_0_5 < l_0_13 then
+        l_0_5 = l_0_13
+      end
+    end
   end
-end
-do
-  return mp.INFECTED
+  do
+    do
+      if l_0_4 > -1 and l_0_4 <= 1 and l_0_5 > -1 and l_0_5 <= 100 then
+        return mp.INFECTED
+      end
+      return mp.CLEAN
+    end
+  end
 end
 

@@ -3,35 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (sysio.IsFileExists)(l_0_7) then
-        (bm.add_related_file)(l_0_7)
-      end
-    end
-  end
+if (this_sigattrlog[6]).matched == false and (this_sigattrlog[7]).matched == false then
+  return mp.CLEAN
 end
 do
-  if l_0_1 ~= nil then
-    for l_0_11,l_0_12 in ipairs(l_0_1) do
-      if l_0_12.image_path ~= nil then
-        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
-        if (sysio.IsFileExists)(l_0_13) and (mp.IsKnownFriendlyFile)(l_0_13, true, false) then
-          (bm.add_related_file)(l_0_13)
-          if l_0_12.ppid ~= nil then
-            (bm.request_SMS)(l_0_12.ppid, "m")
-            ;
-            (bm.add_action)("SmsAsyncScanEvent", 1)
-          end
-        end
-      end
-    end
+  if not (this_sigattrlog[6]).utf8p1 then
+    local l_0_0 = (this_sigattrlog[7]).utf8p1
   end
-  do
-    return mp.INFECTED
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == nil then
+    return mp.CLEAN
   end
+  -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_1 = (string.lower)(l_0_0)
+  if l_0_1 == nil or (string.find)(l_0_1, "c:\\", 1, true) == nil then
+    return mp.CLEAN
+  end
+  if (sysio.IsFileExists)(l_0_1) then
+    (bm.add_related_file)(l_0_1)
+  end
+  local l_0_2 = (bm.get_current_process_startup_info)()
+  if l_0_2 ~= nil and l_0_2.ppid ~= nil then
+    (bm.request_SMS)(l_0_2.ppid, "m")
+    ;
+    (bm.add_action)("SmsAsyncScanEvent", 1)
+  end
+  return mp.INFECTED
 end
 

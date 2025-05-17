@@ -3,17 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:XMRig")
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrig")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrig")
-end
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 20), "u", 1, true) - 1
+local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "t", 1, true) - l_0_0 - 1
+local l_0_2 = (string.format)("\235%s", (string.char)(l_0_1))
 ;
-(mp.set_mpattribute)("Miner:XMRigNoBlock")
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, l_0_2)
+return mp.INFECTED
 

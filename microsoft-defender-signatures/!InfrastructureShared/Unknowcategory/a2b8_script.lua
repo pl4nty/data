@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[5]).matched and (this_sigattrlog[6]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[5]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[6]).p1)
-  if l_0_0 and (string.find)(l_0_0, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") and l_0_1 and (string.len)(l_0_1) < 16 and (string.find)(l_0_1, "^/[%w/_%-=]+$") then
+do
+  if (mp.get_mpattribute)("pea_amd64_image") and (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 192512 and (mp.getfilesize)() < 217088 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
-  return mp.CLEAN
-end
-do
   return mp.CLEAN
 end
 

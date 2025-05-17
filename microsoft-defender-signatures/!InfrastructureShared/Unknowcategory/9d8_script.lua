@@ -3,116 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("SCPT:Worm:VBS/Jenxcus!Crypt34") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 10000 or l_0_0 > 100000 then
-  return mp.CLEAN
-end
-local l_0_1 = tostring(footerpage)
-l_0_1 = (string.lower)(l_0_1)
-local l_0_2 = l_0_1:match("=replace%(%l-,\"(.-)\",vbcr%)")
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
 if l_0_2 == nil then
   return mp.CLEAN
 end
-local l_0_3 = tostring(headerpage)
-local l_0_4 = l_0_3:match("%l=\"(%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a)\"")
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-local l_0_5 = {}
-l_0_4:gsub(".", function(l_1_0)
-  -- function num : 0_0 , upvalues : l_0_5
-  (table.insert)(l_0_5, l_1_0)
-end
-)
-;
-(mp.readprotection)(false)
-local l_0_6 = (mp.readfile)(0, l_0_0)
-local l_0_7 = l_0_6:match("=\"\"\"\"\r\n%l-=\"(.-)\"\r\n")
-if l_0_7 == nil then
-  return mp.CLEAN
-end
-l_0_7 = l_0_7:gsub(l_0_2, "\r")
-local l_0_8 = l_0_7:match("(\".-\")")
-l_0_7 = l_0_7:gsub(l_0_8, "\"")
-fastAlphaTransform = function(l_2_0, l_2_1, l_2_2)
-  -- function num : 0_1
-  local l_2_3 = {}
-  local l_2_16 = "a"
-  local l_2_17 = "b"
-  local l_2_18 = "c"
-  local l_2_19 = "d"
-  local l_2_20 = "e"
-  local l_2_21 = "f"
-  local l_2_22 = "g"
-  local l_2_23 = "h"
-  local l_2_24 = "i"
-  local l_2_25 = "j"
-  local l_2_26 = "k"
-  local l_2_27 = "l"
-  local l_2_28 = "m"
-  local l_2_29 = "n"
-  local l_2_30 = "o"
-  local l_2_31 = "p"
-  local l_2_32 = "q"
-  local l_2_33 = "r"
-  local l_2_34 = "s"
-  local l_2_35 = "t"
-  local l_2_36 = "u"
-  local l_2_37 = "v"
-  local l_2_38 = "w"
-  local l_2_39 = "x"
-  local l_2_40 = "y"
-  local l_2_41 = "z"
-  local l_2_42 = "A"
-  local l_2_43 = "B"
-  local l_2_44 = "C"
-  local l_2_45 = "D"
-  local l_2_46 = "E"
-  local l_2_47 = "F"
-  local l_2_48 = "G"
-  local l_2_49 = "H"
-  local l_2_50 = "I"
-  local l_2_51 = "J"
-  local l_2_52 = "K"
-  local l_2_53 = "L"
-  local l_2_54 = "M"
-  local l_2_55 = "N"
-  local l_2_56 = "O"
-  local l_2_57 = "P"
-  do
-    local l_2_58 = "Q"
-    -- DECOMPILER ERROR at PC51: No list found for R3 , SetList fails
-
-    -- DECOMPILER ERROR at PC54: No list found for R3 , SetList fails
-
-    local l_2_4 = "R"
-    -- DECOMPILER ERROR at PC56: Overwrote pending register: R5 in 'AssignReg'
-
-    for l_2_20 = l_2_17, l_2_18, l_2_19 do
-      local l_2_5, l_2_6, l_2_7, l_2_8 = "S", "T", "U", "V"
-      local l_2_9, l_2_14 = "W", "X"
-      l_2_22 = l_2_3[l_2_20]
-      local l_2_15 = nil
+if l_0_2 == "svchost.exe" or l_0_2 == "csrss.exe" or l_0_2 == "rundll32.exe" or l_0_2 == "lsass.exe" or l_0_2 == "services.exe" or l_0_2 == "cryptbase.dll" or l_0_2 == "migsetup.exe" then
+  local l_0_3 = (string.sub)(l_0_1, -18)
+  if l_0_3 ~= "\\windows\\system32\\" and l_0_3 ~= "\\windows\\syswow64\\" and l_0_1:find("\\windows\\winsxs\\", 1, true) == nil and (string.sub)(l_0_1, -19) ~= "\\system32\\dllcache\\" and (string.sub)(l_0_1, -38) ~= "\\malwarebytes\' anti-malware\\chameleon\\" and (string.sub)(l_0_1, -13) ~= "\\system32\\pw\\" and (string.sub)(l_0_1, -15) ~= "\\system32\\1052\\" and (string.sub)(l_0_1, -6) ~= "\\i386\\" and (string.sub)(l_0_1, -16) ~= "\\winnt\\system32\\" and (string.sub)(l_0_1, -12) ~= "\\winnt\\i386\\" and l_0_1:find("\\$ntservicepackuninstall$\\", 1, true) == nil and l_0_1:find("\\Installer\\$PatchCache$\\", 1, true) == nil and l_0_1:find("\\windows\\$ntuninstall", 1, true) == nil and l_0_1:find("\\windows\\$hf_mig$\\", 1, true) == nil and l_0_1:find("\\softwaredistribution\\download\\", 1, true) == nil and l_0_1:find("symbols\\", 1, true) == nil and l_0_1:find("\\debuggers\\", 1, true) == nil and l_0_1:find("\\debugger\\", 1, true) == nil and l_0_1:find("\\hotfixes\\", 1, true) == nil and l_0_1:find("\\symbol\\", 1, true) == nil and l_0_1:find("\\device\\mup", 1, true) == nil and (string.sub)(l_0_1, -17) ~= "\\system32\\migwiz\\" then
+    local l_0_4 = (mp.get_parent_filehandle)()
+    local l_0_5, l_0_6 = pcall(mp.get_filesize_by_handle, l_0_4)
+    if l_0_5 == false then
+      (mp.set_mpattribute)("Lua:SuspiciousPathFilename.A")
     end
-    -- DECOMPILER ERROR at PC64: Overwrote pending register: R6 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC64: Overwrote pending register: R5 in 'AssignReg'
-
-    local l_2_10, l_2_11 = nil
-    -- DECOMPILER ERROR at PC65: Overwrote pending register: R7 in 'AssignReg'
-
-    local l_2_12 = nil
-    local l_2_13 = nil
-    do return l_2_17(l_2_18, l_2_19, l_2_16) end
-    -- DECOMPILER ERROR at PC69: Confused about usage of register R8 for local variables in 'ReleaseLocals'
-
   end
 end
-
-;
-(mp.vfo_add_buffer)(fastAlphaTransform(l_0_7, ".", l_0_5), "[Crypt34]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

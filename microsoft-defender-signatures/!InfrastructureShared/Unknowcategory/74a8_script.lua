@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsTrustedFile)(false) ~= false then
-  return mp.CLEAN
-end
-if mp.HSTR_WEIGHT >= 3 then
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
   return mp.INFECTED
-end
-if mp.HSTR_WEIGHT >= 2 then
-  return mp.LOWFI
 end
 return mp.CLEAN
 

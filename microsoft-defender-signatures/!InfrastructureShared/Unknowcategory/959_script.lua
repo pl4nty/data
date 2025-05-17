@@ -3,25 +3,55 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 ~= mp.SCANREASON_ONMOUNT then
-  return mp.CLEAN
-end
-if mp.HEADERPAGE_SZ < 512 then
-  return mp.CLEAN
-end
-if (mp.readu_u16)(headerpage, 511) == 43605 then
-  local l_0_1 = tostring(headerpage)
-  local l_0_2 = (string.sub)(l_0_1, 1, 512)
-  if l_0_2 == nil then
-    return mp.CLEAN
+local l_0_0 = 4294967295
+local l_0_1 = nil
+local l_0_2 = mp.CLEAN
+if (this_sigattrlog[2]).matched then
+  l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1)
+  if l_0_1 ~= nil then
+    l_0_0 = (sysio.GetFileAttributes)(l_0_1)
+    if l_0_0 ~= 4294967295 and (mp.bitand)(l_0_0, 2) == 2 then
+      (bm.add_related_file)(l_0_1)
+      return mp.INFECTED
+    end
   end
-  l_0_2 = (string.lower)(l_0_2)
-  if (string.find)(l_0_2, "ransom", 1, true) or (string.find)(l_0_2, "bitcoin", 1, true) or (string.find)(l_0_2, "wallet", 1, true) or (string.find)(l_0_2, "encrypt", 1, true) or (string.find)(l_0_2, "decrypt", 1, true) or (string.find)(l_0_2, "instruction", 1, true) or (string.find)(l_0_2, " pay", 1, true) or (string.find)(l_0_2, "email", 1, true) then
-    return mp.INFECTED
+else
+  if (this_sigattrlog[3]).matched then
+    l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1)
+    if l_0_1 ~= nil then
+      l_0_0 = (sysio.GetFileAttributes)(l_0_1)
+      if l_0_0 ~= 4294967295 and (mp.bitand)(l_0_0, 2) == 2 then
+        (bm.add_related_file)(l_0_1)
+        return mp.INFECTED
+      end
+    end
+  else
+    if (this_sigattrlog[1]).matched then
+      local l_0_3 = (mp.GetExecutablesFromCommandLine)((this_sigattrlog[1]).utf8p2)
+      for l_0_7,l_0_8 in ipairs(l_0_3) do
+        l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_8)
+        if (sysio.IsFileExists)(l_0_8) then
+          l_0_0 = 4294967295
+          l_0_0 = (sysio.GetFileAttributes)(l_0_8)
+          if l_0_0 ~= 4294967295 and (mp.bitand)(l_0_0, 2) == 2 then
+            (bm.add_related_file)(l_0_8)
+            l_0_2 = mp.INFECTED
+          end
+        end
+      end
+    end
   end
 end
 do
-  return mp.CLEAN
+  l_0_3 = mp
+  l_0_3 = l_0_3.INFECTED
+  if l_0_2 == l_0_3 then
+    l_0_3 = mp
+    l_0_3 = l_0_3.INFECTED
+    return l_0_3
+  end
+  l_0_3 = mp
+  l_0_3 = l_0_3.CLEAN
+  return l_0_3
 end
 

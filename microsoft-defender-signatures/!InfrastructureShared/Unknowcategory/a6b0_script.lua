@@ -3,38 +3,33 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[2]).matched or not (this_sigattrlog[2]).wp2 then
-  return mp.CLEAN
+local l_0_0 = (string.lower)(tostring(footerpage))
+l_0_0 = (string.gsub)(l_0_0, "[ \n\r\t]", "")
+l_0_0 = (string.gsub)(l_0_0, "&?chrw%((%d+)%)", string.char)
+l_0_0 = (string.gsub)(l_0_0, "&?chrw%((%d+)%+?%-(%d+)%)", function(l_1_0, l_1_1)
+  -- function num : 0_0
+  local l_1_2 = string.char
+  local l_1_3 = l_1_0 - l_1_1
+  do return l_1_2(l_1_3) end
+  -- DECOMPILER ERROR at PC5: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
 end
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("mshta_start")
-if l_0_0 then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    l_0_5 = (mp.ContextualExpandEnvironmentVariables)(l_0_5)
-    if (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, false, false) then
-      (mp.ReportLowfi)(l_0_5, 1632017330)
-    end
-  end
-  local l_0_6 = (this_sigattrlog[2]).utf8p2
-  if l_0_6 then
-    l_0_6 = l_0_6:lower()
-    if (string.find)(l_0_6, "windows\\ccm", 1, true) or (string.find)(l_0_6, "\\ccm\\systemtemp\\", 1, true) then
-      return mp.CLEAN
-    end
-    local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_6)
-    if l_0_7 then
-      for l_0_11,l_0_12 in ipairs(l_0_7) do
-        l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
-        if (sysio.IsFileExists)(l_0_12) and not (mp.IsKnownFriendlyFile)(l_0_12, false, false) then
-          (mp.ReportLowfi)(l_0_12, 705262311)
-        end
-      end
-    end
-    do
-      do
-        do return mp.INFECTED end
-        return mp.CLEAN
-      end
-    end
-  end
+)
+l_0_0 = (string.gsub)(l_0_0, "&?chrw%((%d+)%+(%d+)%)", function(l_2_0, l_2_1)
+  -- function num : 0_1
+  local l_2_2 = string.char
+  local l_2_3 = l_2_0 + l_2_1
+  do return l_2_2(l_2_3) end
+  -- DECOMPILER ERROR at PC5: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
 end
+)
+l_0_0 = (string.gsub)(l_0_0, "&?string%(\"(.?)\"%)", "%1")
+l_0_0 = (string.gsub)(l_0_0, "&?\"(.)\"", "%1")
+l_0_0 = (string.gsub)(l_0_0, "&string%(%.%)", ".")
+l_0_0 = (string.lower)(l_0_0)
+if (string.match)(l_0_0, "\\googleupdate.lnk%).*thenfilecreateshortcut%(.*\\googlechrome.*exe,@startupcommondir\\googleupdate.lnk,") then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

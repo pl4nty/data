@@ -3,23 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 4 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
+  do
+    if (mp.getfilesize)() < 20480 then
+      local l_0_0 = (mp.GetCertificateInfo)()
+      for l_0_4,l_0_5 in pairs(l_0_0) do
+        if l_0_5.Signers ~= nil then
+          return mp.CLEAN
+        end
+      end
+      return mp.INFECTED
+    end
+    if (mp.getfilesize)() >= 20480 and (mp.getfilesize)() < 49152 then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-if peattributes.epatscnstart ~= true then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage ~= 110592 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).RVA ~= 106496 then
-  return mp.CLEAN
-end
-if peattributes.x86_image ~= true then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

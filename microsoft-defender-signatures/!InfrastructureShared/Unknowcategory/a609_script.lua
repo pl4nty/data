@@ -3,59 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
--- DECOMPILER ERROR at PC15: No list found for R0 , SetList fails
+Version_to_str = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = (crypto.shr64)(l_1_0, 48)
+  local l_1_2 = (crypto.bitand)((crypto.shr64)(l_1_0, 32), 65535)
+  local l_1_3 = (crypto.bitand)((crypto.shr64)(l_1_0, 16), 65535)
+  local l_1_4 = (crypto.bitand)(l_1_0, 65535)
+  return tostring(l_1_1) .. "." .. tostring(l_1_2) .. "." .. tostring(l_1_3) .. "." .. tostring(l_1_4)
+end
 
--- DECOMPILER ERROR at PC16: Overwrote pending register: R1 in 'AssignReg'
-
-local l_0_1 = ((81)[1]).VA
--- DECOMPILER ERROR at PC19: Overwrote pending register: R2 in 'AssignReg'
-
-local l_0_2 = ((87)[2]).VA
--- DECOMPILER ERROR at PC22: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC24: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC25: Overwrote pending register: R5 in 'AssignReg'
-
-local l_0_3 = ((69).mmap_va)(82, 84)
--- DECOMPILER ERROR at PC30: Overwrote pending register: R6 in 'AssignReg'
-
-local l_0_4 = (pe.mmap_va)(l_0_2 + 4, 89)
--- DECOMPILER ERROR at PC35: Overwrote pending register: R7 in 'AssignReg'
-
-local l_0_5 = (string.byte)(l_0_3, 65)
--- DECOMPILER ERROR at PC40: Overwrote pending register: R8 in 'AssignReg'
-
-local l_0_6 = (string.byte)(l_0_4, 83)
-local l_0_7 = 0
-local l_0_8 = 0
--- DECOMPILER ERROR at PC44: Overwrote pending register: R9 in 'AssignReg'
-
--- DECOMPILER ERROR at PC54: Overwrote pending register: R7 in 'AssignReg'
-
--- DECOMPILER ERROR at PC57: Overwrote pending register: R8 in 'AssignReg'
-
--- DECOMPILER ERROR at PC59: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC60: Overwrote pending register: R11 in 'AssignReg'
-
-if ((68)[4]).matched then
-  do
-    for l_0_12 = 1, 70, 74 do
-      -- DECOMPILER ERROR at PC62: Overwrote pending register: R13 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC71: Overwrote pending register: R14 in 'AssignReg'
-
-      if l_0_5 == 71 and l_0_6 == l_0_0[l_0_12 + 1] then
-        local l_0_13 = (string.format)(72, l_0_6, l_0_5, l_0_7, (hstrlog[3]).VA, l_0_8)
-        ;
-        (mp.set_mpattribute)(l_0_13)
-        return mp.INFECTED
-      end
+GetSectionInfoOfVirtualAddress = function(l_2_0)
+  -- function num : 0_1
+  if l_2_0 == nil or pehdr == nil or pehdr.NumberOfSections == nil or pehdr.NumberOfSections == 0 or pesecs == nil then
+    return nil
+  end
+  local l_2_1 = pehdr.ImageBase
+  for l_2_5 = 1, pehdr.NumberOfSections do
+    local l_2_6 = (pesecs[l_2_5]).VirtualAddress
+    local l_2_7 = (pesecs[l_2_5]).VirtualSize
+    local l_2_8 = l_2_1 + l_2_6
+    local l_2_9 = l_2_8 + l_2_7
+    if l_2_8 <= l_2_0 and l_2_0 <= l_2_9 then
+      local l_2_10 = (pesecs[l_2_5]).Name
+      return l_2_5, l_2_10, l_2_6, l_2_7
     end
-    do return mp.CLEAN end
-    -- WARNING: undefined locals caused missing assignments!
   end
 end
+
 

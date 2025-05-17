@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if pevars.epsec == 4294967296 or pevars.epsec == -1 then
-  (mp.set_mpattribute)("LUA:PEAnomaly_InvalidEPSection")
-  return mp.CLEAN
+local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_SCANREASON)
+do
+  if l_0_0 and l_0_1 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+    local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_REFERRERURL)
+    if l_0_2 and ((string.match)(l_0_3, "dojki%.ru") or (string.match)(l_0_3, "youporn%.com") or (string.match)(l_0_3, "pizta%.ru")) then
+      (mp.aggregate_mpattribute)("Context:HighRiskReferrerUrl")
+      ;
+      (mp.aggregate_mpattribute)("//MpIsIEVScan")
+      return mp.TRUE
+    end
+  end
+  return mp.FALSE
 end
-if epcode[1] == 0 or epcode[1] == 204 or epcode[1] == 195 then
-  (mp.set_mpattribute)("LUA:PEAnomaly_UnusualEPCode")
-end
-local l_0_0 = tostring((pesecs[pevars.epsec]).Name)
-if l_0_0 == ".rsrc" or l_0_0 == ".rdata" or l_0_0 == ".data" or l_0_0 == ".pdata" or l_0_0 == ".reloc" then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

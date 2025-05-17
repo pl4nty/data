@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.no_resources and (pe.contains_va)(3, (hstrlog[1]).VA) and (pesecs[3]).Name == ".data" then
+local l_0_0 = (mp.getfilesize)()
+;
+(mp.readprotection)(false)
+local l_0_1 = tostring((mp.readfile)(0, l_0_0))
+if (string.find)(l_0_1, "http://www.j.mp/") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

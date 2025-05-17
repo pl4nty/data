@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.suspicious_dosheader then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("Exception:Tisifi")
+;
+(mp.set_mpattribute)("HSTR:TR_Win32_Tisifi_B_exclusion")
+return mp.INFECTED
 

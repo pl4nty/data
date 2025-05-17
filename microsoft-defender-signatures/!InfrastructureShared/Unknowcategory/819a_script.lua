@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.dynmem_reads_vdll_code and peattributes.checks_teb_lasterror then
-  return mp.SUSPICIOUS
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "websettings.xml.rels") ~= nil and (mp.getfilesize)() < 400 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

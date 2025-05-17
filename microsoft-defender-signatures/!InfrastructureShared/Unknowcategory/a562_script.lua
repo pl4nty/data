@@ -3,33 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), ".htaccess") ~= nil then
-  local l_0_0 = (mp.GetBruteMatchData)()
-  local l_0_1 = 256
-  local l_0_2 = ""
-  if l_0_0.is_header then
-    l_0_2 = (tostring(headerpage)):sub(l_0_0.match_offset, l_0_0.match_offset + l_0_1)
-  else
-    l_0_2 = (tostring(footerpage)):sub(l_0_0.match_offset, l_0_0.match_offset + l_0_1)
-  end
-  l_0_2 = (string.lower)(l_0_2)
-  local l_0_3 = {}
-  -- DECOMPILER ERROR at PC50: No list found for R3 , SetList fails
-
-  -- DECOMPILER ERROR at PC51: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R5 in 'AssignReg'
-
-  for l_0_7,l_0_8 in ("x-httpd-php .jpg")("x-httpd-php .jpeg") do
-    if (string.find)(l_0_2, l_0_8, 1, true) then
-      return mp.INFECTED
+if (this_sigattrlog[3]).matched then
+  local l_0_0, l_0_1 = (bm.get_process_relationships)()
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    if (string.find)((string.lower)(l_0_6.image_path), "\\powershell.exe", 1, true) then
+      (MpCommon.TurnNriOnProcess)(l_0_6.ppid)
+      local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
+      local l_0_9 = tonumber(l_0_7)
+      local l_0_10 = tonumber(l_0_8)
+      local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
+      local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
+      ;
+      (mp.TriggerScanResource)("ems", l_0_13)
     end
   end
 end
 do
-  -- DECOMPILER ERROR at PC70: Overwrote pending register: R0 in 'AssignReg'
-
-  do return l_0_0 end
-  -- WARNING: undefined locals caused missing assignments!
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

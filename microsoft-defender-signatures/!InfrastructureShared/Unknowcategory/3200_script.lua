@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image then
-  return mp.INFECTED
-end
-return mp.SUSPICIOUS
+(mp.UfsSetMetadataBool)("PSScriptWithServiceStopCommand", true)
+return mp.INFECTED
 

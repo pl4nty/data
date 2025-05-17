@@ -3,26 +3,30 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p1
-  if l_0_0 == nil and (string.len)(l_0_0) < 3 then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[5]).matched then
+  local l_0_0 = nil
+  -- DECOMPILER ERROR at PC20: Overwrote pending register: R1 in 'AssignReg'
+
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+    local l_0_1 = nil
+    if (string.find)(l_0_1, ".dll", 1, true) == nil and (string.find)(l_0_1, ".cpl", 1, true) == nil and (string.find)(l_0_1, ".tmp", 1, true) == nil and (string.find)(l_0_1, ".dat", 1, true) == nil and (string.find)(l_0_1, "-", 1, true) == nil and (string.find)(l_0_1, ".exe", 1, true) == nil and (string.find)(l_0_1, "%.%.\\%w.%w") ~= nil then
+      local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+      if l_0_2 ~= nil then
+        for l_0_6,l_0_7 in ipairs(l_0_2) do
+          l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+          ;
+          (bm.add_related_file)(l_0_7)
+        end
+      end
+      do
+        do
+          do return mp.INFECTED end
+          return mp.CLEAN
+        end
+      end
+    end
   end
-  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
-  local l_0_1 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
-  if l_0_1 == nil and (string.len)(l_0_1) < 3 then
-    return mp.CLEAN
-  end
-  local l_0_2 = {}
-  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\windows\\"))] = true
-  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\"))] = true
-  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\windows\\"))] = true
-  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\"))] = true
-  if l_0_2[l_0_1] then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.CLEAN
 end
 

@@ -3,20 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -11)) == "svchost.exe" then
-  if (this_sigattrlog[1]).matched then
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 3296241983)
+if (mp.IsHipsRuleEnabled)("d4f940ab-401b-4efc-aadc-ad5f3c50688a") then
+  (mp.set_mpattribute)("MpDisableCaching")
+  local l_0_0 = (mp.getfilename)()
+  local l_0_3 = (string.match)(l_0_0, "(.*)%.(%a+)->%w+/%w+.bin$")
+  if l_0_3 == nil or l_0_0 == nil then
+    l_0_3 = l_0_0
+    local l_0_1, l_0_2 = nil
   else
-    if (this_sigattrlog[2]).matched then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 669256468)
-    else
-      if (this_sigattrlog[3]).matched then
-        (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1), 3230147973)
+    do
+      do
+        -- DECOMPILER ERROR at PC26: Confused about usage of register: R2 in 'UnsetPending'
+
+        l_0_3 = l_0_3 .. "." .. l_0_1
+        if (sysio.IsFileExists)((MpCommon.PathToWin32Path)(l_0_3)) then
+          (MpCommon.AppendPersistContext)(l_0_3, "enghipscpy:MHSTRCreateScheduledTaskFromMacro", 0)
+        end
+        return mp.INFECTED
       end
     end
   end
-  return mp.INFECTED
 end
-return mp.CLEAN
 

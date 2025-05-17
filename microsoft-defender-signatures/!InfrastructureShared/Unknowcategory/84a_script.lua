@@ -3,14 +3,26 @@
 
 -- params : ...
 -- function num : 0
-GetRuleInfo = function()
-  -- function num : 0_0
-  local l_1_0 = {}
-  l_1_0.Name = "Block executable files from running unless they meet a prevalence, age, or trusted list criteria"
-  l_1_0.Description = "Windows Defender Exploit Guard detected the launch of a newly created untrusted executable file"
-  l_1_0.NotificationDedupingInterval = 120
-  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
-  return l_1_0
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)((string.sub)(l_0_0, -20))
+  if l_0_1 ~= "\\umworkerprocess.exe" then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  if (this_sigattrlog[1]).matched then
+    l_0_2 = (this_sigattrlog[1]).utf8p1
+  else
+    if (this_sigattrlog[2]).matched then
+      l_0_2 = (this_sigattrlog[2]).utf8p1
+    end
+  end
+  if l_0_2 ~= nil and (sysio.IsFileExists)(l_0_2) then
+    (bm.add_related_file)(l_0_2)
+  end
+  return mp.INFECTED
 end
-
+do
+  return mp.CLEAN
+end
 

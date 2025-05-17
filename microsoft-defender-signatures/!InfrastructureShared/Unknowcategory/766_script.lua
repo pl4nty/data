@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN and (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) then
-  (mp.set_mpattribute)("MpCreatedOnExec")
+if (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Xtrat!classes") or (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Xtrat!id") or (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Xtrat!forms") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,76 +3,110 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 ~= nil and #l_0_0 < 2 then
+local l_0_0 = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  local l_1_2 = {}
+  l_1_2[1952539182] = ""
+  l_1_2[1684890414] = ""
+  l_1_2[1836016430] = ""
+  l_1_2[1819304750] = ""
+  l_1_2[1702389038] = ""
+  l_1_2[1718186030] = ""
+  l_1_2[1919120174] = ""
+  l_1_2[1935832622] = ""
+  l_1_2[1802398766] = ""
+  l_1_2[1718843182] = ""
+  l_1_2[1700951598] = ""
+  l_1_2[1702062638] = ""
+  l_1_2[1635018798] = ""
+  l_1_2[1936338432] = ""
+  l_1_2[1819042862] = ""
+  l_1_2[2019782446] = ""
+  l_1_2[1918986798] = ""
+  l_1_2[1668511534] = ""
+  l_1_2[1752397614] = ""
+  local l_1_3 = (mp.bitor)((mp.readu_u32)(l_1_0, l_1_1), 538976288)
+  if l_1_2[l_1_3] or l_1_2[(mp.bitand)(l_1_3, 4294967040)] then
+    return true
+  end
+  return false
+end
+
+if not (mp.IsHipsRuleEnabled)("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550") then
   return mp.CLEAN
 end
-local l_0_1 = (mp.get_parent_filehandle)()
-if not (mp.is_handle_nil)(l_0_1) and (string.find)(l_0_0, "->", 1, true) ~= nil then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-local l_0_2 = (string.find)(l_0_0, ":", 1, true)
-if l_0_2 ~= nil then
-  local l_0_3 = (string.sub)(l_0_0, l_0_2 + 1, #l_0_0)
-  if l_0_3 ~= nil and #l_0_3 > 0 then
-    local l_0_4 = {}
-    l_0_4["zone.identifier"] = "zi"
-    l_0_4["zone.identifier:$data"] = "zid"
-    l_0_4.tamper = "tamper"
-    l_0_4.favicon = "favicon"
-    l_0_4.oestandardproperty = "oesp"
-    l_0_4.knownsources = "knownsources"
-    l_0_4.rvcontext = "rvcontext"
-    l_0_4["com.dropbox.attributes"] = "dropboxattr"
-    l_0_4["com.dropbox.attrs"] = "dropboxattrs"
-    l_0_4["com.dropbox.internal"] = "dropboxinternal"
-    l_0_4["com.amazon.drive.sync"] = "awsdrivesync"
-    l_0_4["com.apple.lastuseddate#ps"] = "apple_sync"
-    l_0_4.mbinfo = "mbinfo"
-    l_0_4.afp_afpinfo = "acronisinfo"
-    l_0_4["fsrm{ef88c031-5950-4164-ab92-eec5f16005a5}"] = "ms_fsrm"
-    l_0_4.x5zn8agxs4 = "avast_data"
-    l_0_4["6e53bff5-0001-412b-8407-e3aede763511"] = "diagtrack_agent"
-    l_0_4["incompletestartprocessprotection.cnt"] = "avast_data2"
-    l_0_4.versioncache = "sharedfiles"
-    l_0_4.apcacheheader = "apcacheheader"
-    l_0_4.databusdeliverylog = "databusdeliverylog"
-    l_0_4.wofcompresseddata = "wofcompresseddata"
-    l_0_4["&#x05;summaryinformation"] = "summaryinformation"
-    l_0_4["&#x05;documentsummaryinformation"] = "summaryinformation"
-    l_0_4["gbpkmap.lst"] = "gbpkmap"
-    l_0_4.dlpfac = "dlpfac"
-    l_0_4.ca_inoculateit = "ca_inoculateit"
-    l_0_4["jdnfile.identifier"] = "jdnfile"
-    l_0_4.SmartScreen = "SmartScreen"
-    local l_0_5 = l_0_4[l_0_3]
-    if l_0_5 ~= nil then
-      (mp.set_mpattribute)("Lua:Context/FileInADS.A!commonadslist")
-      ;
-      (mp.set_mpattribute)("Lua:Context/FileInADS.A!" .. l_0_5)
+if (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) ~= true then
+  return mp.CLEAN
+end
+if mp.HEADERPAGE_SZ < 1024 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+  return mp.CLEAN
+end
+if (mp.bitand)((mp.readu_u16)(headerpage, 7), 1) ~= 1 then
+  return mp.CLEAN
+end
+local l_0_2 = function(l_2_0)
+  -- function num : 0_1 , upvalues : l_0_0
+  if (mp.readu_u32)(footerpage, l_2_0 + 1) == 33639248 and l_2_0 + 48 < mp.FOOTERPAGE_SZ then
+    local l_2_1 = 47
+    local l_2_2 = (mp.readu_u16)(footerpage, l_2_0 + 29)
+    if (mp.bitand)((mp.readu_u16)(footerpage, l_2_0 + 9), 1) == 1 and l_2_2 > 4 and l_2_0 + l_2_1 + l_2_2 < mp.FOOTERPAGE_SZ and l_0_0(footerpage, l_2_0 + l_2_1 + l_2_2 - 4) then
+      return true, 0
     end
-    local l_0_6 = (string.sub)(l_0_0, 0, l_0_2)
-    if l_0_6 ~= nil and #l_0_6 > 5 then
-      local l_0_7 = {}
-      l_0_7["cngsvc.exe:"] = "countertack"
-      local l_0_8 = l_0_7[l_0_6]
-      if l_0_8 ~= nil then
-        (mp.set_mpattribute)("Lua:Context/FileInADS.A!commonadslist")
-        ;
-        (mp.set_mpattribute)("Lua:Context/FileInADS.A!" .. l_0_8)
-      end
-      if l_0_6 == "system32:" and #l_0_3 >= 40 and (string.sub)(l_0_3, 0, 1) == "$" then
-        (mp.set_mpattribute)("Lua:Context/FileInADS.A!commoninwindir")
-      end
+    local l_2_3 = l_2_0 + l_2_1 + l_2_2 + (mp.readu_u16)(footerpage, l_2_0 + 31) - 1
+    return false, l_2_3
+  end
+end
+
+local l_0_3 = 31
+if (mp.readu_u16)(headerpage, 27) > 4 and l_0_3 + (mp.readu_u16)(headerpage, 27) < mp.HEADERPAGE_SZ and l_0_0(headerpage, l_0_3 + (mp.readu_u16)(headerpage, 27) - 4) then
+  (mp.set_mpattribute)("Lua:ZipHasEncryptedFileWithExeExtension")
+  return mp.CLEAN
+end
+local l_0_4 = nil
+local l_0_5 = (mp.getfilesize)()
+do
+  if (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 21) ~= 101010256 then
+    local l_0_6 = nil
+    if (tostring(footerpage)):find("PK\005\006", 1, true) == nil then
+      return mp.CLEAN
     end
+  end
+  -- DECOMPILER ERROR at PC121: Confused about usage of register: R5 in 'UnsetPending'
+
+  local l_0_7 = nil
+  local l_0_8 = (mp.readu_u32)(footerpage, l_0_6 + 16)
+  -- DECOMPILER ERROR at PC128: Overwrote pending register: R7 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC133: Overwrote pending register: R7 in 'AssignReg'
+
+  if l_0_5 < mp.FOOTERPAGE_SZ then
+    local l_0_9 = 0
     do
-      do
-        if (mp.get_mpattribute)("BM_MZ_FILE") then
-          (mp.set_mpattribute)("Lua:Context/PeFileInADS.A")
+      local l_0_10 = 0
+      while 1 do
+        -- DECOMPILER ERROR at PC147: Overwrote pending register: R9 in 'AssignReg'
+
+        if l_0_10 < 3 and l_0_9 + 4 < mp.FOOTERPAGE_SZ then
+          if nil then
+            (mp.set_mpattribute)("Lua:ZipHasEncryptedFileWithExeExtension")
+            return mp.CLEAN
+          end
+          l_0_10 = l_0_10 + 1
+          -- DECOMPILER ERROR at PC158: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC158: LeaveBlock: unexpected jumping out IF_STMT
+
         end
-        do return mp.INFECTED end
-        return mp.CLEAN
       end
+      do return mp.CLEAN end
+      -- DECOMPILER ERROR at PC162: freeLocal<0 in 'ReleaseLocals'
+
     end
   end
 end

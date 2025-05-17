@@ -3,30 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr + 56
-if (pe.vm_search)(l_0_0, l_0_0 + 4040, "¡\001\004\139\016\137\021\144\001\004\255%\144\001\004j@h\000\016\000\000h\144\001\004j\000èÚ\255\255\255\144\000", nil, pe.VM_SEARCH_BM) == 4294967295 then
-  return mp.CLEAN
+local l_0_0 = {}
+l_0_0["explorer.exe"] = ""
+l_0_0["hh.exe"] = ""
+l_0_0["isuninst.exe"] = ""
+l_0_0["notepad.exe"] = ""
+l_0_0["regedit.exe"] = ""
+l_0_0["slrundll.exe"] = ""
+l_0_0["taskman.exe"] = ""
+l_0_0["twunk_16.exe"] = ""
+l_0_0["twunk_32.exe"] = ""
+l_0_0["winhelp.exe"] = ""
+l_0_0["winhlp32.exe"] = ""
+l_0_0["bfsvc.exe"] = ""
+l_0_0["fveupdate.exe"] = ""
+l_0_0["helppane.exe"] = ""
+l_0_0["write.exe"] = ""
+l_0_0["splwow64.exe"] = ""
+local l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil, nil, nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
+  l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  l_0_4 = (string.lower)((this_sigattrlog[2]).utf8p2)
+  l_0_3 = (string.lower)((this_sigattrlog[3]).utf8p1)
+  if l_0_1 ~= nil and l_0_4 ~= nil and l_0_3 ~= nil and l_0_1 == l_0_3 then
+    l_0_2 = (string.match)(l_0_1, "\\([^\\]+)$")
+    if l_0_0[l_0_2] and (string.find)(l_0_4, l_0_2) then
+      return mp.INFECTED
+    end
+  end
 end
-local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "9\bu\144\001\001¸\001\004\255\a9\au\144\001\0011Òƒ\192\001¹\001\004\137\001¡\001\004°\144\001\004\139\029\144\001\004ë\144\001\004\144\004\001\002ëé\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_1 == 4294967295 then
-  return mp.CLEAN
-end
-local l_0_2 = (pe.mmap_va)(l_0_1 + 5, 4)
-local l_0_3 = (mp.readu_u32)(l_0_2, 1)
-;
-(pe.set_regval)(pe.REG_EAX, l_0_3)
-local l_0_4 = pevars.sigaddr + 6
-local l_0_5 = l_0_1 + 32 - l_0_4 - 5
-local l_0_6, l_0_7, l_0_8, l_0_9 = (mp.bsplit)(l_0_5, 8)
-;
-(pe.mmap_patch_va)(l_0_4, "\233")
-;
-(pe.mmap_patch_va)(l_0_4 + 1, (string.char)(l_0_6))
-;
-(pe.mmap_patch_va)(l_0_4 + 2, (string.char)(l_0_7))
-;
-(pe.mmap_patch_va)(l_0_4 + 3, (string.char)(l_0_8))
-;
-(pe.mmap_patch_va)(l_0_4 + 4, (string.char)(l_0_9))
-return mp.INFECTED
+return mp.CLEAN
 

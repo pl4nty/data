@@ -4,13 +4,13 @@
 -- params : ...
 -- function num : 0
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.find)(l_0_0, ".bat", 1, true) or (string.find)(l_0_0, ".cmd", 1, true) then
-      return mp.CLEAN
-    end
-    if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-      return mp.INFECTED
+  if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
+    local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+    if (string.sub)(l_0_0, 1, 1) == "P" then
+      l_0_0 = (string.lower)(l_0_0)
+      if (string.match)(l_0_0, "photo_%d%d%d%.jpe?g%-www%.facebook%.com%.exe") ~= nil then
+        return mp.INFECTED
+      end
     end
   end
   return mp.CLEAN

@@ -3,78 +3,76 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1, l_0_2, l_0_3 = nil, nil, nil, nil
-local l_0_4 = nil
-local l_0_5 = nil
-local l_0_6 = nil
-local l_0_7 = nil
-local l_0_8 = true
-if (mp.GetScannedPPID)() == nil then
+if peattributes.epscn_writable ~= false then
   return mp.CLEAN
 end
-local l_0_9 = false
-if (((not (string.find)((string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())), " /all", 1, true) or (string.find)((string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())), " /oldest", 1, true)) and not (string.find)((string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())), " /shadow=", 1, true)) or l_0_9 ~= true) and (true or true) then
+if peattributes.packed ~= false then
   return mp.CLEAN
 end
-local l_0_10 = nil
-while 1 do
-  -- DECOMPILER ERROR at PC61: Confused about usage of register: R10 in 'UnsetPending'
-
-  if 0 <= 5 then
-    if 0 == 0 then
-      l_0_8 = pcall(mp.GetParentProcInfo)
-    else
-      -- DECOMPILER ERROR at PC75: Overwrote pending register: R0 in 'AssignReg'
-
-      l_0_8 = pcall(mp.GetParentProcInfo, l_0_5)
-    end
-  end
-  if l_0_8 == true then
-    if l_0_4 == nil then
-      break
-    end
-    l_0_5 = l_0_4.ppid
-  end
-  if l_0_5 == nil then
-    break
-  end
-  l_0_6 = l_0_4.image_path
-  if l_0_6 == nil then
-    break
-  end
-  l_0_6 = (string.lower)(l_0_6)
-  -- DECOMPILER ERROR at PC104: Confused about usage of register: R9 in 'UnsetPending'
-
-  do
-    if (mp.GetProcessCommandLine)(l_0_5) ~= nil then
-      local l_0_11 = nil
-      if (string.match)((string.lower)((mp.GetProcessCommandLine)(l_0_5)), "[a-zA-Z] (.+)$") ~= nil and ((string.find)((string.match)((string.lower)((mp.GetProcessCommandLine)(l_0_5)), "[a-zA-Z] (.+)$"), ":\\windows", 1, true) or (string.find)((string.match)((string.lower)((mp.GetProcessCommandLine)(l_0_5)), "[a-zA-Z] (.+)$"), ":\\program files", 1, true)) then
-        return mp.CLEAN
-      end
-    end
-    l_0_7 = (string.match)(l_0_6, "\\([^\\]+)$")
-    if l_0_7 ~= nil then
-      if l_0_7 == "" then
-        break
-      end
-      if l_0_7 == "psexecsvc.exe" or l_0_7 == "wmiprvse.exe" or l_0_7 == "gpscript.exe" or l_0_7 == "svchost.exe" or (string.find)(l_0_6, ":\\windows\\", 2, true) == nil and (string.find)(l_0_6, ":\\program files", 2, true) == nil then
-        return mp.CLEAN
-      end
-      if ((string.find)(l_0_6, "^:\\program files", 2) or (string.find)(l_0_6, ":\\windows\\system32\\nxtcod.exe", 2, true) or (string.find)(l_0_6, ":\\windows\\ccm\\", 2, true)) and ((string.find)(l_0_6, "\\easeus\\easeus partition master\\bin\\", 2, true) or (string.find)(l_0_6, "\\common files\\mcafee\\systemcore\\", 2, true) or (string.find)(l_0_6, "\\mcafee\\endpoint security\\threat prevention\\", 2, true) or (mp.IsKnownFriendlyFile)(l_0_6, true, true) == true) then
-        return mp.CLEAN
-      end
-      -- DECOMPILER ERROR at PC239: Confused about usage of register: R10 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-      -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_STMT
-
-      -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out DO_STMT
-
-    end
-  end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
 end
-if 0 + 1 < 2 then
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if peattributes.hasexports ~= false then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 233 then
+  return mp.CLEAN
+end
+if epcode[3] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[4] ~= 0 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= 64 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).VirtualSize <= 64 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pe.foffset_rva)((pesecs[pehdr.NumberOfSections]).VirtualAddress), 32)
+if (mp.readu_u32)(l_0_0, 13) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 17) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 21) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 25) ~= 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpSimulateParanoid")
-;
-(mp.set_mpattribute)("MpEnableCOM")
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
-;
-(pe.reemulate)()
+if peattributes.isexe == true and (pesecs[7]).Name == ".reloc" and (pesecs[7]).Characteristics == 1107296320 then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)(15437, 4)
-if (mp.readu_u32)(l_0_0, 1) == 4018468997 and l_0_0 ~= "ÆÐÔÇÖÝ›ÛÔØÐÄÀÐÇÌ›ÖÚØ" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = {}
+l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+return mp.INFECTED
 

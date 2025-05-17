@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".)@s" and (pesecs[5]).Name == ".Oha" then
+if peattributes.no_security == true and (mp.getfilesize)() < 400000 then
   return mp.INFECTED
 end
 return mp.CLEAN

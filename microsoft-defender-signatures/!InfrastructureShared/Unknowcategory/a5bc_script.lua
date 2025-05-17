@@ -3,41 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = function(l_1_0)
-  -- function num : 0_0
-  for l_1_4 = 1, #l_1_0 do
-    local l_1_5 = l_1_0:byte(l_1_4)
-    if (l_1_5 >= 194 and l_1_5 <= 207) or l_1_5 >= 208 and l_1_5 <= 211 then
-      return true
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC39 = (mp.ContextualExpandEnvironmentVariables)(R6_PC39)
+      R6_PC39 = (string.lower)(R6_PC39)
+      if (string.find)(R6_PC39, "control.exe$") == nil and (sysio.IsFileExists)(R6_PC39) and (string.find)(R6_PC39, "\\windows\\.*%.cpl$") == nil and (string.find)(R6_PC39, "\\windows\\.*%.dll$") == nil then
+        (bm.add_related_file)(R6_PC39)
+        return mp.INFECTED
+      end
     end
   end
-  return false
+  do
+    return mp.CLEAN
+  end
 end
-
-local l_0_1 = (mp.GetScannedPPID)()
-if l_0_1 == "" or l_0_1 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = (mp.GetProcessCommandLine)(l_0_1)
-if not l_0_2 then
-  return mp.CLEAN
-end
-if #l_0_2 < 50 then
-  return mp.CLEAN
-end
-local l_0_3 = (mp.GetParentProcInfo)()
-if l_0_3 == nil or l_0_3.image_path == nil then
-  return mp.CLEAN
-end
-local l_0_4 = (string.lower)(l_0_3.image_path)
-if l_0_4:match("([^\\]+)$") ~= "explorer.exe" then
-  return mp.CLEAN
-end
-if l_0_0(l_0_2) then
-  return mp.INFECTED
-end
-if (mp.get_mpattribute)("MpCmdLineFoundB64") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

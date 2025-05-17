@@ -3,29 +3,19 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R6_PC25) and (string.find)(".hta", (string.sub)((string.lower)(R6_PC25), -4), 1, true) then
-        (bm.add_threat_file)(R6_PC25)
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+local l_0_0 = (this_sigattrlog[3]).utf8p1
+if l_0_0 == nil then
+  return mp.CLEAN
 end
+l_0_0 = (string.lower)(l_0_0)
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
+end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
+end
+return mp.INFECTED
 

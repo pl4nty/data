@@ -3,28 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  if (string.find)(l_0_1, "schtasks.exe", 1, true) and l_0_0.ppid ~= nil then
-    local l_0_2 = (mp.GetParentProcInfo)(l_0_0.ppid)
-    if l_0_2 ~= nil then
-      (MpCommon.RequestSmsOnProcess)(l_0_2.ppid, MpCommon.SMS_SCAN_MED)
-      ;
-      (mp.SMSAsyncScan)(l_0_2.ppid)
-      return mp.LOWFI
-    end
-  else
-    do
-      do
-        ;
-        (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
-        ;
-        (mp.SMSAsyncScan)(l_0_0.ppid)
-        do return mp.LOWFI end
-        return mp.LOWFI
+do
+  if not (mp.get_mpattribute)("pea_genpacked") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 163840 and (mp.getfilesize)() < 200192 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
       end
     end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

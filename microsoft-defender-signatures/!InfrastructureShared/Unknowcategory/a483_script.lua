@@ -3,19 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if l_0_0 > 1000000 then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-local l_0_1 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
-if l_0_1:find("\\program files", 1, true) or l_0_1:find("\\windows\\", 1, true) or l_0_1:find("\\system32\\", 1, true) then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_9")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_1 = (mp.readu_u32)(l_0_0, 3)
+local l_0_2 = (mp.readu_u32)(l_0_0, 9)
+local l_0_3 = (mp.readu_u32)(l_0_0, 21)
+local l_0_4 = (mp.readu_u32)(l_0_0, 32)
+local l_0_5 = (pe.get_regval)(pe.REG_EDX)
+local l_0_6 = (string.byte)(l_0_0, 17)
+local l_0_7 = (mp.ror32)(l_0_5, l_0_6) - (mp.bitxor)(l_0_4, l_0_3) - l_0_1 + l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_7)
 return mp.INFECTED
 

@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(MpCommon.SetGlobalMpAttribute)("RansomAsepCloudRegKeyScan")
-;
-(MpDetection.ScanResource)("ntrunkey://")
-;
-(MpDetection.ScanResource)("runkey://")
-;
-(MpDetection.ScanResource)("runonce://")
-;
-(MpDetection.ScanResource)("runonceex://")
-;
-(MpCommon.DeleteGlobalMpAttribute)("RansomAsepCloudRegKeyScan")
+if (string.lower)((string.sub)((mp.getfilename)(), -4)) ~= ".doc" then
+  return mp.CLEAN
+end
+if (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true) ~= 0 or not "Lua:SingleFileInZip" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

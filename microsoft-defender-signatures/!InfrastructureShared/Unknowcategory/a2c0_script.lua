@@ -3,12 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllimage)((pe.get_regval)(pe.REG_EBX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
-  return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  if (string.find)(l_0_1, "schtasks.exe", 1, true) and l_0_0.ppid ~= nil then
+    local l_0_2 = (mp.GetParentProcInfo)(l_0_0.ppid)
+    if l_0_2 ~= nil then
+      (MpCommon.RequestSmsOnProcess)(l_0_2.ppid, MpCommon.SMS_SCAN_MED)
+      ;
+      (mp.SMSAsyncScan)(l_0_2.ppid)
+      return mp.LOWFI
+    end
+  else
+    do
+      do
+        ;
+        (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+        ;
+        (mp.SMSAsyncScan)(l_0_0.ppid)
+        do return mp.LOWFI end
+        return mp.LOWFI
+      end
+    end
+  end
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\184\r\024\141>\144")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

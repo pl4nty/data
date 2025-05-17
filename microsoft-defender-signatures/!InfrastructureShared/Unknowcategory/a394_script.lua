@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_7")
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (mp.readu_u32)(l_0_0, 12)
-local l_0_2 = (mp.readu_u32)(l_0_0, 23)
-local l_0_3 = (pe.get_regval)(pe.REG_EDX)
-local l_0_4 = (string.byte)(l_0_0, 8)
-local l_0_5 = (mp.ror32)(l_0_3, l_0_4) - (mp.bitxor)(l_0_2, l_0_1) - 1
-;
-(pe.set_regval)(pe.REG_EBX, l_0_5)
+if (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7_k8.4B8B") or (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7_k8.648B") or (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7_k8.6E80") then
+  return mp.INFECTED
+end
+if (hstrlog[27]).matched or (hstrlog[28]).matched then
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7_k8.4B8B")
+else
+  ;
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7_k8.2CCB")
+end
 return mp.INFECTED
 

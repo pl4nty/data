@@ -3,24 +3,21 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 then
-    local l_0_4 = nil
-    local l_0_5 = nil
-    if (string.find)((string.lower)((string.match)((this_sigattrlog[2]).utf8p2, "\\([^\\]+)$")), "%.ppa") then
-      return mp.INFECTED
-    end
-  end
-  do
-    return mp.CLEAN
-  end
+if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
+  return mp.CLEAN
 end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil and l_0_0.image_path == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)(l_0_0.image_path)
+local l_0_2 = l_0_1:match("([^\\]+)$")
+local l_0_3 = {}
+l_0_3["explorer.exe"] = true
+l_0_3["powershell.exe"] = true
+l_0_3["mshta.exe"] = true
+if l_0_3[l_0_2] then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

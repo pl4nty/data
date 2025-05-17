@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Xtrat!classes") or (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Xtrat!id") or (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Xtrat!forms") then
-  return mp.INFECTED
+if mp.HEADERPAGE_SZ < 256 then
+  return mp.CLEAN
 end
+if (mp.readu_u32)(headerpage, 258) ~= 1635021685 then
+  return mp.CLEAN
+end
+if headerpage[262] ~= 114 then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("Lua:TarFile")
 return mp.CLEAN
 

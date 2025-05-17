@@ -3,17 +3,13 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (string.find)(l_0_0, "-psk", 1, true) then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if (string.len)(l_0_1) > 1000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

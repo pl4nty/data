@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 1, "\000\000\000\000")
-;
-(pe.set_regval)(pe.REG_ECX, 2147483647)
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 49152 and l_0_0 <= 57344 and (mp.get_mpattribute)("NID:Win64/Atosev.PA!MTB") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

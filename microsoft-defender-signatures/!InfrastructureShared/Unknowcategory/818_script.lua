@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true and (string.find)((string.lower)((mp.getfilename)()), "\\roaming\\skype\\my skype received files", 1, true) then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if (string.find)(l_0_0, ".bat", 1, true) or (string.find)(l_0_0, ".cmd", 1, true) then
+      return mp.CLEAN
+    end
+    if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

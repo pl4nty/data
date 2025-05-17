@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.ismsil then
+if not (mp.get_mpattribute)("lua_codepatch_Obfuscator_XQ") then
   return mp.CLEAN
 end
-if (mp.enum_mpattributesubstring)("Lua:PeCompanyName!microsoft") ~= nil or (mp.enum_mpattributesubstring)("Lua:PeInternalName!microsoft.") ~= nil or (mp.enum_mpattributesubstring)("Lua:PeOriginalName!microsoft.") ~= nil or (mp.get_mpattribute)("Lua:Company_Microsoft") then
+if (pe.get_regval)(pe.REG_EBX) ~= 2011627520 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

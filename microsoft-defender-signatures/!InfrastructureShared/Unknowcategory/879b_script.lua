@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr, "ÇE\240\001\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "\144")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 17, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 27, "")
+return mp.INFECTED
 

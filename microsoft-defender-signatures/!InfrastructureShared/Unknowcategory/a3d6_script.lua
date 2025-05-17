@@ -3,18 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[4]).utf8p1)
-if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+if (((((not (hstrlog[1]).matched and (hstrlog[3]).matched) or not (hstrlog[6]).matched) and (hstrlog[9]).matched) or (hstrlog[2]).matched) and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) + ((hstrlog[8]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) >= 4 then
+  return mp.INFECTED
 end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
-end
-return mp.INFECTED
+return mp.CLEAN
 

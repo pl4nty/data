@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattributesubstring)("PUA:ML:Blocked:") then
-  (mp.set_mpattribute)("Lua:PUAPoorCertRepML")
+local l_0_0 = Remediation.Threat
+if l_0_0.Active and (string.match)(l_0_0.Name, "PWS:Win32/Zbot.*") then
+  for l_0_4,l_0_5 in pairs(l_0_0.Resources) do
+    if l_0_5.Schema == "hiddenfile" then
+      (Remediation.BtrDeleteFile)(l_0_5.Path)
+    end
+  end
 end
-if (mp.get_mpattributesubstring)("PUA:ML:Staged:") then
-  (mp.set_mpattribute)("Lua:PUAPoorCertRepMLStaged")
-end
-return mp.CLEAN
 

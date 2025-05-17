@@ -3,33 +3,96 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).timestamp == nil or (this_sigattrlog[3]).timestamp == nil then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 17, 96)
+local l_0_1 = (string.byte)(l_0_0, 1) + 2
+if #l_0_0 < l_0_1 then
   return mp.CLEAN
 end
-local l_0_0 = (this_sigattrlog[1]).ppid
-local l_0_1 = (this_sigattrlog[2]).ppid
-local l_0_2 = (this_sigattrlog[3]).ppid
-if l_0_0 ~= l_0_1 or l_0_1 ~= l_0_2 then
-  return mp.CLEAN
-end
-local l_0_3 = (this_sigattrlog[4]).ppid
-local l_0_4 = false
-local l_0_5, l_0_6 = (bm.get_process_relationships)(l_0_3)
-for l_0_10,l_0_11 in ipairs(l_0_6) do
-  if l_0_11.image_path ~= nil and (mp.bitand)(l_0_11.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_11.image_path), "\\curl.exe", 1, true) then
-    l_0_4 = true
+if (string.byte)(l_0_0, l_0_1) == 232 then
+  local l_0_2 = 2
+  local l_0_3 = 0
+  while 1 do
+    while 1 do
+      while 1 do
+        while 1 do
+          while 1 do
+            while 1 do
+              while 1 do
+                while 1 do
+                  if l_0_2 < #l_0_0 then
+                    local l_0_4 = (string.byte)(l_0_0, l_0_2)
+                    if l_0_4 == 131 then
+                      l_0_2 = l_0_2 + 3
+                      -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                      -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
+
+                      -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                      -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
+
+                    end
+                  end
+                end
+                if l_0_4 == 61 then
+                  l_0_2 = l_0_2 + 5
+                  -- DECOMPILER ERROR at PC43: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                  -- DECOMPILER ERROR at PC43: LeaveBlock: unexpected jumping out IF_STMT
+
+                end
+              end
+              if l_0_4 == 195 then
+                l_0_2 = l_0_2 + 1
+                -- DECOMPILER ERROR at PC47: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC47: LeaveBlock: unexpected jumping out IF_STMT
+
+              end
+            end
+            if l_0_4 == 0 then
+              l_0_2 = l_0_2 + 2
+              -- DECOMPILER ERROR at PC51: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC51: LeaveBlock: unexpected jumping out IF_STMT
+
+            end
+          end
+          if l_0_4 == 15 and (string.byte)(l_0_0, l_0_2 + 1) == 132 then
+            l_0_2 = l_0_2 + 6
+            -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+        if l_0_4 == 204 then
+          do return mp.INFECTED end
+          -- DECOMPILER ERROR at PC68: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC68: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
+      if l_0_4 == 116 then
+        if l_0_1 ~= (string.byte)(l_0_0, l_0_2 + 1) + (l_0_2) then
+          l_0_3 = l_0_3 + 1
+        end
+        if l_0_3 == 2 then
+          return mp.CLEAN
+        end
+        -- DECOMPILER ERROR at PC86: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+        -- DECOMPILER ERROR at PC86: LeaveBlock: unexpected jumping out IF_STMT
+
+      end
+    end
+    return mp.CLEAN
   end
 end
-if not l_0_4 then
-  return mp.CLEAN
+do
+  -- DECOMPILER ERROR at PC91: Overwrote pending register: R2 in 'AssignReg'
+
+  return l_0_2.CLEAN
 end
-local l_0_12 = (this_sigattrlog[2]).timestamp
-local l_0_13 = (this_sigattrlog[3]).timestamp
-if l_0_13 < l_0_12 then
-  return mp.CLEAN
-end
-if l_0_13 - l_0_12 > 6000000000 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

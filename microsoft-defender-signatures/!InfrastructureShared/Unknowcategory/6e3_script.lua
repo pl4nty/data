@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattributesubstring)("VbsMLCloudExclusion") then
+if (mp.UfsGetMetadataBool)("Lua:FileInZip", true) == 0 and "Lua:FileInZip" then
   return mp.INFECTED
 end
 return mp.CLEAN

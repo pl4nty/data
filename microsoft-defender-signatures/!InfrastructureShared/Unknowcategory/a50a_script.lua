@@ -3,32 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epscn_writable ~= true then
-  return mp.CLEAN
+local l_0_0, l_0_1 = pcall(bm.get_current_process_startup_info)
+if l_0_0 then
+  local l_0_2, l_0_3, l_0_4 = pcall(bm.get_process_relationships)
+  if l_0_2 then
+    for l_0_8,l_0_9 in ipairs(l_0_3) do
+      if l_0_9.image_path ~= nil and ((string.find)((string.lower)(l_0_9.image_path), "\\syswow64\\regsvr32.exe", 1, true) or (string.find)((string.lower)(l_0_9.image_path), "\\syswow64\\rundll32.exe", 1, true)) and l_0_1 ~= nil and l_0_1.ppid ~= nil then
+        (bm.request_SMS)(l_0_1.ppid, "m")
+        ;
+        (bm.add_action)("SmsAsyncScanEvent", 1)
+        return mp.INFECTED
+      end
+    end
+  end
 end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
+do
+  l_0_2 = mp
+  l_0_2 = l_0_2.CLEAN
+  return l_0_2
 end
-if peattributes.lastscn_falign == false then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).Size ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

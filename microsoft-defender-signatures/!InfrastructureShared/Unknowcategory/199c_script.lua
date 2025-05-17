@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_regval)(pe.REG_EBX, 1)
-return mp.INFECTED
+if peattributes.isdll == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

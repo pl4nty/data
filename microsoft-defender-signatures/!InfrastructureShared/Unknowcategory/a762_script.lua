@@ -3,12 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
+if (this_sigattrlog[2]).matched then
+  local l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1))
+  if l_0_0 ~= nil then
+    if (string.find)(l_0_0, "\\dism\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\dism50x86\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\tools\\amd64\\servicing\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\tools\\x86\\servicing\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\bin\\bin64\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\dismwin10\\x64\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\dismwin7\\x64\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\x64\\dism10\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\x86\\dism10\\dismcore.dll", 1, true) then
+      return mp.CLEAN
+    end
+    local l_0_1 = (sysio.GetFileLastWriteTime)(l_0_0)
+    if ((sysio.GetLastResult)()).Success and l_0_1 ~= 0 then
+      l_0_1 = l_0_1 / 10000000 - 11644473600
+      local l_0_2 = (MpCommon.GetCurrentTimeT)()
+      if l_0_2 < l_0_1 or l_0_2 - (l_0_1) > 600 then
+        return mp.CLEAN
+      end
+    end
+  end
+  do
+    do
+      ;
+      (bm.add_related_file)(l_0_0)
+      return mp.INFECTED
+    end
+  end
 end
-if (string.find)(l_0_0, "\\internet explorer\\", 1, true) or (string.find)(l_0_0, "\\brave-browser\\", 1, true) or (string.find)(l_0_0, "yandexbrowser", 1, true) or (string.find)(l_0_0, "\\mozilla firefox\\", 1, true) or (string.find)(l_0_0, "\\opera", 1, true) or (string.find)(l_0_0, "\\safari\\", 1, true) or (string.find)(l_0_0, "\\sogouexplorer\\", 1, true) or (string.find)(l_0_0, "\\qqbrowser\\", 1, true) or (string.find)(l_0_0, "\\2345explorer\\", 1, true) or (string.find)(l_0_0, "360", 1, true) or (string.find)(l_0_0, "browser", 1, true) or (string.find)(l_0_0, "chrome", 1, true) or (string.find)(l_0_0, "sketchup", 1, true) or (string.find)(l_0_0, "mysql", 1, true) or (string.find)(l_0_0, "proxy", 1, true) or (string.find)(l_0_0, "whale", 1, true) or (string.find)(l_0_0, "maxthon", 1, true) or (string.find)(l_0_0, "sfive", 1, true) or (string.find)(l_0_0, "edge", 1, true) or (string.find)(l_0_0, "\\chromium\\", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

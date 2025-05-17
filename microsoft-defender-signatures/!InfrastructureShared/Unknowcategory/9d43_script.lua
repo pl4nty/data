@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EAX)
-local l_0_1 = (pe.get_api_id)(l_0_0)
-if l_0_1 ~= 671954542 then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  local l_0_7 = (mp.bitand)(l_0_6.reason_ex, bm.RELATIONSHIP_CREATED)
+  if l_0_7 == bm.RELATIONSHIP_CREATED then
+    (bm.trigger_sig)("Behavior:Win32/SelfdelProcCreate.A", "INFECTED", l_0_6.ppid)
+    return mp.INFECTED
+  end
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 29, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+return mp.CLEAN
 

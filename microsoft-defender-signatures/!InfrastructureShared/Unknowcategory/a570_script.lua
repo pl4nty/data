@@ -3,18 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    if not (string.find)(l_0_6, "\\cmd.exe", 1, true) and not (string.find)(l_0_6, "\\svchost.exe", 1, true) and not (string.find)(l_0_6, "\\winrshost.exe", 1, true) and not (string.find)(l_0_6, "\\bcryptprimitives.dll", 1, true) and l_0_6 ~= nil and (string.len)(l_0_6) > 3 and (sysio.IsFileExists)(l_0_6) then
-      (bm.add_related_file)(l_0_6)
-    end
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+if (string.len)(l_0_1) > 5120 then
+  return mp.CLEAN
 end
+local l_0_2 = (string.match)(l_0_1, "(PAAjA[a-zA-Z0-9%+/=]+)")
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (MpCommon.Base64Decode)(l_0_2)
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+l_0_3 = (string.gsub)(l_0_3, "%z", "")
+l_0_3 = (string.lower)((string.gsub)(l_0_3, " ", ""))
+if (string.find)(l_0_3, "add-mppreference", 1, true) and (string.find)(l_0_3, "-exclusionpath@($env:userprofile,$env:systemdrive)", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

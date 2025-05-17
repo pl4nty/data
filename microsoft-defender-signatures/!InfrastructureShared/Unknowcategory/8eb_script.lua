@@ -3,31 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 256 or l_0_0 > 1048576 then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_DEVICE_CHARACTERISTICS)
+  if l_0_1 == 2305 or l_0_1 == 289 or l_0_1 == 262433 or l_0_1 == 34 or l_0_1 == 35 or l_0_1 == 393249 or l_0_1 == 262435 then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_2:find("^\\device\\cdrom[0-9][0-9]?$") ~= nil then
+      local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_ATTRIBUTES)
+      if (mp.bitand)(l_0_3, 1) == 1 and not peattributes.isdll then
+        return mp.INFECTED
+      end
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 875721283 or (mp.readu_u32)(headerpage, 5) ~= 2 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readu_u32)(headerpage, 9)
-if l_0_1 == 0 then
-  return mp.CLEAN
-end
-local l_0_2 = (mp.readu_u32)(headerpage, 13)
-if l_0_2 == 0 then
-  return mp.CLEAN
-end
-local l_0_3 = l_0_1 + l_0_2 + 17
-if mp.HEADERPAGE_SZ <= l_0_3 then
-  return mp.CLEAN
-end
-if (mp.readu_u16)(headerpage, l_0_3) ~= 19280 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-;
-(mp.vfo_add_buffer)((mp.readfile)(l_0_3 - 1, l_0_0 - l_0_3 + 1), "[ChromeCrxPackage]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.CLEAN
 

@@ -3,21 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (string.byte)(l_0_0, 26) + (string.byte)(l_0_0, 27) * 256 + (string.byte)(l_0_0, 28) * 65536 + (string.byte)(l_0_0, 29) * 16777216
-local l_0_2 = pevars.sigaddr + 29 + l_0_1
-l_0_0 = (pe.mmap_va)(l_0_2 - 4, 32)
-local l_0_3 = (string.byte)(l_0_0, 1) + (string.byte)(l_0_0, 2) * 256 + (string.byte)(l_0_0, 3) * 65536 + (string.byte)(l_0_0, 4) * 16777216
-local l_0_4 = (mp.bitand)(l_0_2 + l_0_3, 4294967295)
-if l_0_4 ~= pevars.sigaddr then
-  return mp.CLEAN
+(mp.readprotection)(false)
+if (hstrlog[1]).matched then
+  local l_0_0 = (mp.readfile)((pe.foffset_va)((hstrlog[1]).VA + 11), 4)
+  ;
+  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!l1_cnt_%08X", (mp.readu_u32)(l_0_0, 1)))
+else
+  do
+    if (hstrlog[2]).matched then
+      local l_0_1 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA - 7), 4)
+      ;
+      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!l1_cnt_%08X", (mp.readu_u32)(l_0_1, 1)))
+    else
+      do
+        if (hstrlog[3]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched then
+          (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!l1_cnt_%08X", 4097))
+        else
+          if (hstrlog[4]).matched then
+            (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!l1_cnt_%08X", 4096))
+          end
+        end
+        return mp.CLEAN
+      end
+    end
+  end
 end
--- DECOMPILER ERROR at PC106: Unhandled construct in 'MakeBoolean' P3
-
-if (pehdr.SizeOfImage >= 503808 and pehdr.SizeOfImage <= 573440) or pehdr.SizeOfImage < 409600 or pehdr.SizeOfImage >= 868352 and pehdr.SizeOfImage <= 888832 then
-  return mp.INFECTED
-end
-;
-(mp.changedetectionname)(805306375)
-return mp.SUSPICIOUS
 

@@ -3,26 +3,47 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
--- DECOMPILER ERROR at PC4: No list found for R0 , SetList fails
+if peattributes.isdll and peattributes.amd64_image then
+  if mp.HSTR_WEIGHT >= 4 then
+    if not (hstrlog[7]).matched and not (hstrlog[8]).matched and not (hstrlog[9]).matched and not (hstrlog[10]).matched then
+      (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G")
+    end
+    if not (hstrlog[6]).matched and (hstrlog[7]).matched ^ (hstrlog[8]).matched then
+      (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G2")
+      return mp.CLEAN
+    end
+    if mp.HSTR_WEIGHT >= 6 then
+      (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G3")
+      return mp.CLEAN
+    else
+      if mp.HSTR_WEIGHT == 4 or mp.HSTR_WEIGHT == 5 then
+        do
+          if ((((not (hstrlog[6]).matched or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or (hstrlog[11]).matched then
+            local l_0_0 = 0 + 1 + 1 + 1 + 1 + 1 + 1
+          end
+          -- DECOMPILER ERROR at PC114: Confused about usage of register: R0 in 'UnsetPending'
 
--- DECOMPILER ERROR at PC5: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC7: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC9: Overwrote pending register: R3 in 'AssignReg'
-
-;
-(("    {\n        \"version\": 1,\n        \"environment\": \"USSec\",\n        \"usage\": 1,\n        \"hashType\": 0,\n        \"intThumbs\": [],\n        \"rootThumbs\": [\n            \"bcbd26b7f291cda07a39b02d04cc43de089d2cefb47d29961a90a9583339b2d7\"\n        ]\n    }\n   ").LoadDBVar)(("    {\n        \"version\": 1,\n        \"environment\": \"USSec\",\n        \"usage\": 2,\n        \"hashType\": 0,\n        \"intThumbs\": [],\n        \"rootThumbs\": [\n            \"bcbd26b7f291cda07a39b02d04cc43de089d2cefb47d29961a90a9583339b2d7\"\n        ]\n    }\n   ").DBVAR_ARRAY_WIDESTRING, "", l_0_0, 1)
-local l_0_1 = {}
--- DECOMPILER ERROR at PC17: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC18: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC20: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC22: Overwrote pending register: R4 in 'AssignReg'
-
-;
-(("    {\n        \"version\": 1,\n        \"environment\": \"GW_USSec\",\n        \"usage\": 1,\n        \"hashType\": 0,\n        \"intThumbs\": [],\n        \"rootThumbs\": [\n            \"bcbd26b7f291cda07a39b02d04cc43de089d2cefb47d29961a90a9583339b2d7\"\n        ]\n    }\n   ").LoadDBVar)(("    {\n        \"version\": 1,\n        \"environment\": \"GW_USSec\",\n        \"usage\": 2,\n        \"hashType\": 0,\n        \"intThumbs\": [],\n        \"rootThumbs\": [\n            \"bcbd26b7f291cda07a39b02d04cc43de089d2cefb47d29961a90a9583339b2d7\"\n        ]\n    }\n   ").DBVAR_ARRAY_WIDESTRING, "", l_0_1, 1)
+          if l_0_0 <= 3 then
+            (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G5")
+            return mp.CLEAN
+          end
+          ;
+          (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G4")
+          do return mp.CLEAN end
+          ;
+          (pe.set_peattribute)("hstr_exhaustive", true)
+          ;
+          (pe.set_peattribute)("deep_analysis", true)
+          ;
+          (pe.reemulate)()
+          do return mp.CLEAN end
+          if mp.HSTR_WEIGHT >= 4 then
+            (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G1")
+          end
+          return mp.CLEAN
+        end
+      end
+    end
+  end
+end
 

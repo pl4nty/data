@@ -3,18 +3,31 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).p1 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).p1
-    -- DECOMPILER ERROR at PC29: Unhandled construct in 'MakeBoolean' P1
-
-    if #l_0_0 > 50 and #l_0_0 > 100 and (string.match)(l_0_0, "%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w") then
-      (mp.set_mpattribute)("//JAVATTR:JavaLongFunctionName100")
-    end
-  end
-  if (string.match)(l_0_0, "%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w") then
-    (mp.set_mpattribute)("//JAVATTR:JavaLongFunctionName50")
-  end
+if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
   return mp.CLEAN
 end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("pea_ismsil") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1000000 or l_0_0 < 4000 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("system32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("syswow64", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

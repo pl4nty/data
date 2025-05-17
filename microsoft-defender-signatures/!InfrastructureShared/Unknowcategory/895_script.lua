@@ -3,20 +3,51 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll or peattributes.isdamaged then
-  return mp.CLEAN
-end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN and (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) == true then
-  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_ID)
-  if l_0_0 == 4 then
-    local l_0_1 = ((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)):lower()
-    if l_0_1 == "cmd.exe" then
-      (mp.set_mpattribute)("TEL:SystemLaunchCmd")
-    end
-    return mp.INFECTED
-  end
-end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.CLEAN
+  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_1, l_0_8 = (string.lower)(l_0_0)
+    l_0_8 = string
+    l_0_8 = l_0_8.find
+    l_0_8 = l_0_8(l_0_1, "\\windows\\ccm\\systemtemp\\", 1, true)
+    if l_0_8 then
+      l_0_8 = mp
+      l_0_8 = l_0_8.CLEAN
+      return l_0_8
+    end
+    l_0_8 = mp
+    l_0_8 = l_0_8.GetExecutablesFromCommandLine
+    l_0_8 = l_0_8(l_0_1)
+    local l_0_2 = nil
+    l_0_2 = ipairs
+    l_0_2 = l_0_2(l_0_8)
+    for l_0_6,l_0_7 in l_0_2 do
+      local l_0_7 = nil
+      l_0_7 = sysio
+      l_0_7 = l_0_7.IsFileExists
+      l_0_7 = l_0_7(l_0_6)
+      if l_0_7 then
+        l_0_7 = bm
+        l_0_7 = l_0_7.add_related_file
+        l_0_7(l_0_6)
+      end
+    end
+  end
+  do
+    l_0_8 = mp
+    l_0_8 = l_0_8.TriggerScanResource
+    l_0_8("wmi", "")
+    l_0_8 = mp
+    l_0_8 = l_0_8.INFECTED
+    return l_0_8
+  end
 end
 

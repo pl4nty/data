@@ -3,40 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((Remediation.Threat).Name)
-if (string.match)(l_0_0, "poshevin%.[af]") then
-  local l_0_1, l_0_2 = pcall(MpCommon.RollingQueueQuery, "PoshevinRelatedRegistries")
-  local l_0_3, l_0_4 = pcall(MpCommon.RollingQueueQuery, "PoshevinRelatedFiles")
-  if l_0_1 and l_0_2 ~= nil and type(l_0_2) == "table" then
-    for l_0_8 in pairs(l_0_2) do
-      local l_0_9 = (string.lower)(tostring((l_0_2[l_0_8]).key))
-      local l_0_10, l_0_11 = l_0_9:match("(.-\\software\\classes)\\(.*)")
-      local l_0_12 = (sysio.RegOpenKey)(l_0_10)
-      if l_0_12 then
-        local l_0_13 = pcall(sysio.DeleteRegKey, l_0_12, l_0_11)
-        if not l_0_13 then
-          local l_0_14 = "hkcu\\software\\classes\\" .. l_0_11
-          l_0_13 = pcall(Remediation.BtrDeleteRegKey, l_0_14)
-        end
-      end
-    end
+if headerpage[1] ~= 70 or headerpage[2] ~= 87 or headerpage[3] ~= 83 then
+  return mp.CLEAN
+end
+if headerpage[9] == 72 and headerpage[10] == 1 and headerpage[11] == 144 and headerpage[12] == 0 and headerpage[13] == 100 and headerpage[14] == 0 then
+  (mp.set_mpattribute)("Lua:SWF/OddFrameSize10x10.A")
+end
+if (mp.bitand)(headerpage[9], 248) == 48 then
+  local l_0_0 = (mp.bitor)((mp.shl8)((mp.bitand)(headerpage[9], 7), 3), (mp.shr8)(headerpage[10], 5))
+  local l_0_1 = (mp.bitor)((mp.shl8)((mp.bitand)(headerpage[10], 31), 1), (mp.shr8)(headerpage[11], 7))
+  local l_0_2 = (mp.shr8)((mp.bitand)(headerpage[11], 126), 1)
+  local l_0_3 = (mp.bitor)((mp.shl8)((mp.bitand)(headerpage[11], 1), 5), (mp.shr8)(headerpage[12], 3))
+  if l_0_1 < 40 and l_0_3 < 40 and (l_0_0 > 0 or l_0_2 > 0) then
+    (mp.set_mpattribute)("SCPT:SWF/OddFrameSize1x1.B")
   end
-  do
-    if l_0_3 and l_0_4 ~= nil and type(l_0_4) == "table" then
-      for l_0_18 in pairs(l_0_4) do
-        local l_0_19 = tostring((l_0_4[l_0_18]).key)
-        if l_0_19 and (sysio.IsFileExists)(l_0_19) then
-          (sysio.DeleteFile)(l_0_19)
-        else
-          l_0_19 = "\'" .. l_0_19 .. "\'"
-          if (sysio.IsFileExists)(l_0_19) then
-            (sysio.DeleteFile)(l_0_19)
-          else
-            pcall(Remediation.BtrDeleteFile, l_0_19)
-          end
-        end
-      end
-    end
-  end
+end
+do
+  return mp.CLEAN
 end
 

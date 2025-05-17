@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "winword.exe" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if (epcode[1] == 184 and epcode[6] == 255 and epcode[7] == 224) or epcode[1] == 104 and epcode[6] == 232 then
+  return mp.LOWFI
 end
+return mp.CLEAN
 

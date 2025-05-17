@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
-
-if (((((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and (hstrlog[5]).matched) or not (hstrlog[8]).matched) and (hstrlog[10]).matched) or (hstrlog[4]).matched) and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).wp2 == nil then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, -12)) == "\\wscript.exe" or (string.lower)((string.sub)(l_0_6.image_path, -12)) == "\\cscript.exe") then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

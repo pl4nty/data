@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 2) == true then
-  (mp.set_mpattribute)("Lua:MpEnableAggressiveSignatures")
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:sub(-4) == ".tmp" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

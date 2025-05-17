@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "svchost.exe" or l_0_1:match("([^\\]+)$") == "rundll32.exe" or l_0_1:match("([^\\]+)$") == "mstsc.exe" or l_0_1:match("([^\\]+)$") == "dllhost.exe" or l_0_1:match("([^\\]+)$") == "wuauclt.exe" or l_0_1:match("([^\\]+)$") == "msfeedssync.exe" or l_0_1:match("([^\\]+)$") == "nslookup.exe" or l_0_1:match("([^\\]+)$") == "werfault.exe" or l_0_1:match("([^\\]+)$") == "eventvwr.exe" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if pehdr.NumberOfSections > 0 and epcode[1] == 255 and epcode[2] == 37 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_lastscn_writable") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_ismsil") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

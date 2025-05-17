@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SLF:Win32/Sysdupate.E") then
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) and l_0_1:match("([^\\]+)$") == "dllhost.exe" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 4 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

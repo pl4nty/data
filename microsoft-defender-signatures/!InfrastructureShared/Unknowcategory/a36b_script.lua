@@ -3,24 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = this_sigattrlog[9]
-if not l_0_0 or not l_0_0.utf8p1 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (string.lower)(l_0_0.command_line)
+if (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "gizmoinvoker", 1, true) or (string.find)(l_0_1, "monitorworkeragent", 1, true) or (string.find)(l_0_1, "\\programdata\\microsoft\\windows defender advanced threat protection", 1, true) then
   return mp.CLEAN
 end
-local l_0_1 = this_sigattrlog[8]
-if not l_0_1 or not l_0_1.utf8p2 then
-  return mp.CLEAN
-end
-local l_0_2 = tonumber(l_0_0.utf8p1)
-if l_0_2 < 9000 or l_0_2 > 50000 then
-  return mp.CLEAN
-end
-local l_0_3 = (string.match)(l_0_1.utf8p2, "(%d+);regionsize:")
-if not l_0_3 then
-  return mp.CLEAN
-end
-local l_0_4 = (string.format)("%s,address:%s,size:0", l_0_0.ppid, l_0_3)
-;
-(mp.TriggerScanResource)("ems", l_0_4)
 return mp.INFECTED
 

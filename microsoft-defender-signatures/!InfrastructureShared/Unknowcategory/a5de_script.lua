@@ -3,32 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.IsHipsRuleEnabled)("3b576869-a4ec-4529-8536-b80a7769e899") then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = nil, nil
-if (this_sigattrlog[1]).matched then
-  if (this_sigattrlog[1]).wp2 == nil or (this_sigattrlog[1]).wp2 == "" then
-    return mp.CLEAN
-  end
-  l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-  if l_0_0 == nil or l_0_0 == "" then
-    return mp.CLEAN
-  end
-  if not (MpCommon.QueryPersistContext)(l_0_0, "DroppedByOfficeProc") then
-    return mp.CLEAN
-  end
-  if (this_sigattrlog[1]).wp1 == nil or (this_sigattrlog[1]).wp1 == "" then
-    return mp.CLEAN
-  end
-  l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1)
-  if l_0_1 == nil or l_0_1 == "" then
-    return mp.CLEAN
-  end
-  if not (MpCommon.QueryPersistContext)(l_0_1, "DroppedByOfficeProc") then
-    (MpCommon.AppendPersistContext)(l_0_1, "DroppedByOfficeProc", 0)
-    return mp.INFECTED
+add_related_file_wrapper = function(l_1_0)
+  -- function num : 0_0
+  if l_1_0 ~= nil then
+    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
+    for l_1_5,l_1_6 in ipairs(l_1_1) do
+      l_1_6 = (mp.ContextualExpandEnvironmentVariables)(l_1_6)
+      if (string.find)(l_1_6, "cmstp.exe$") == nil and (sysio.IsFileExists)(l_1_6) then
+        (bm.add_related_file)(l_1_6)
+      end
+    end
   end
 end
-return mp.CLEAN
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[1]).utf8p2)
+end
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[2]).utf8p1)
+end
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[2]).utf8p2)
+end
+return mp.INFECTED
 

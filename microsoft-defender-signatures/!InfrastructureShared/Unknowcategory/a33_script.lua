@@ -3,17 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if ((this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp1 ~= nil) or (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 ~= nil then
-  local l_0_0, l_0_1 = (bm.get_process_relationships)()
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil and ((string.find)(l_0_6.image_path, "python", 1, true) or (string.find)(l_0_6.image_path, "perl", 1, true) or (string.find)(l_0_6.image_path, "osascript", 1, true)) then
-      return mp.INFECTED
-    end
-  end
-end
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+  if (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC47: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC56: Confused about usage of register: R0 in 'UnsetPending'
+
+  if ((this_sigattrlog[2]).utf8p2 == nil or (string.lower)((this_sigattrlog[2]).utf8p2) ~= nil) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "lsquarantinedataurlstring", 1, true) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "/usr/bin/mktemp", 1, true) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "pkill", 1, true) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "curl", 1, true) then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

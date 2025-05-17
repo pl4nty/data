@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("Lua:VirTool:Win32/VMProtect.A") or mp.HSTR_WEIGHT >= 7 then
+  (mp.set_mpattribute)("PUA:Block:TRexMiner")
+  return mp.INFECTED
 end
-if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
-  return mp.CLEAN
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_trex")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_trex")
 end
-if (hstrlog[10]).hitcount == 0 and (hstrlog[11]).hitcount == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

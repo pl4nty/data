@@ -5,21 +5,35 @@
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_2 == "realupdater.exe" and (string.sub)(l_0_1, -5) == "\\temp" then
-    (mp.set_mpattribute)("Lua:UpatreDownloadFileName.C")
-  else
-    if l_0_2 == "opera_autoupdater.exe" and (string.sub)(l_0_1, -5) == "\\temp" then
-      (mp.set_mpattribute)("Lua:UpatreDownloadFileName.D")
-    else
-      if ((string.sub)(l_0_2, -4) == ".txt" or (string.sub)(l_0_2, -4) == ".tip" or (string.sub)(l_0_2, -4) == ".pdd" or (string.sub)(l_0_2, -4) == ".exe" or (string.sub)(l_0_2, -4) == ".but" or (string.sub)(l_0_2, -4) == ".pic" or (string.sub)(l_0_2, -4) == ".enc" or (string.sub)(l_0_2, -4) == ".dat" or (string.sub)(l_0_2, -4) == ".z12" or (string.sub)(l_0_2, -4) == ".mp3" or (string.sub)(l_0_2, -4) == ".big" or (string.sub)(l_0_2, -4) == ".din" or (string.sub)(l_0_2, -4) == ".in1" or (string.sub)(l_0_2, -4) == ".fla" or (string.sub)(l_0_2, -4) == ".gik" or (string.sub)(l_0_2, -4) == ".pin" or (string.sub)(l_0_2, -4) == ".fb2" or (string.sub)(l_0_2, -4) == ".ssa" or (string.sub)(l_0_2, -4) == ".elf" or (string.sub)(l_0_2, -4) == ".wix" or (string.sub)(l_0_2, -4, -2) == ".bf") and headerpage[1] == 90 and headerpage[2] == 90 and headerpage[3] == 80 and headerpage[4] == 0 then
-        (mp.set_mpattribute)("Lua:UpatreDownloadFileName!enc")
+  local l_0_1 = (string.lower)((mp.getfilename)())
+  if (string.sub)(l_0_1, -4) == ".exe" then
+    local l_0_2, l_0_3 = l_0_1:match("(.+\\)([^\\]+)$")
+    local l_0_4 = l_0_3:len()
+    -- DECOMPILER ERROR at PC61: Unhandled construct in 'MakeBoolean' P1
+
+    if (string.find)(l_0_1, "\\temp\\", 1, true) and l_0_4 > 9 and l_0_4 < 20 then
+      if (string.match)(l_0_3, "^%d_offer_%d+%.exe") or (string.match)(l_0_3, "^%d_offer_%d+_%d%l%l%.exe") then
+        (mp.set_mpattribute)("Lua:Program:Win32/OutBrowse!drop")
+      else
+        if (string.match)(l_0_3, "^1ab%d+rn%d+%.exe") or (string.match)(l_0_3, "^1ab%d+rn%d+n2d%.exe") or (string.match)(l_0_3, "^1agrj%d+%.exe") then
+          (mp.set_mpattribute)("Lua:Adware:Win32/ZoomyLib.B")
+        end
       end
     end
   end
 end
 do
+  -- DECOMPILER ERROR at PC117: Unhandled construct in 'MakeBoolean' P1
+
+  if ((string.match)(l_0_1, "\\appdata\\local\\tmp%d+\\") or (string.match)(l_0_1, "\\local settings\application data\\tmp%d+\\")) and l_0_4 > 9 and l_0_4 < 15 and (string.match)(l_0_3, "^dag%d+%.exe") then
+    (mp.set_mpattribute)("Lua:Adware:Win32/ZoomyLib.A")
+  end
+  if l_0_4 > 12 and l_0_4 < 17 and (string.match)(l_0_3, "^bb%lcabe%l%l+%.exe") then
+    (mp.set_mpattribute)("Lua:Program:Win32/OutBrowse.A")
+  end
+  if l_0_4 > 12 and l_0_4 < 50 and ((string.find)(l_0_3, "^lyricsgizm.*%.exe") or (string.find)(l_0_3, "^webzoom.*%.exe") or (string.find)(l_0_3, "^zoomify.*%.exe") or (string.find)(l_0_3, "^zoompic.*%.exe") or (string.find)(l_0_3, "^zooompic.*%.exe")) then
+    (mp.set_mpattribute)("Lua:Adware:Win32/ZoomyLib.C")
+  end
   return mp.CLEAN
 end
 

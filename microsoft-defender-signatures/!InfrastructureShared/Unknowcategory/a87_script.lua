@@ -3,12 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil and l_0_0.ppid ~= nil and (string.find)(l_0_0.image_path, "/bin/bash", 1, true) then
-    local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
-    if l_0_1 ~= nil and l_0_1.image_path ~= nil and l_0_1.ppid ~= nil and (string.find)(l_0_1.image_path, "/opt/attackiq/agent/engine/", 1, true) then
-      return mp.INFECTED
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    if (string.find)(l_0_0, "/etc/ssh/", 1, true) then
+      return mp.CLEAN
+    else
+      -- DECOMPILER ERROR at PC34: Confused about usage of register: R0 in 'UnsetPending'
+
+      if (string.find)(l_0_0, "sshd -f ", 1, true) then
+        return mp.INFECTED
+      end
     end
   end
   return mp.CLEAN

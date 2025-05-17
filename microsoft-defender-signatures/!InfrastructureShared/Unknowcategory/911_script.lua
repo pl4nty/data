@@ -3,42 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil or (string.len)(l_0_0) < 5 then
+if not (mp.get_mpattribute)("pea_dynmem_APIcall") or not (mp.get_mpattribute)("pea_32bitmachine") then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "->", 1, true) == nil then
-  return mp.CLEAN
+local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7 = nil, nil, nil, nil, nil, nil, nil, nil
+if (this_sigattrlog[2]).matched then
+  l_0_0 = (this_sigattrlog[2]).p1
 end
-local l_0_1 = l_0_0:sub(-4)
-if l_0_1 == ".msi" then
-  local l_0_2 = {}
-  l_0_2[".zip->"] = "%.zip%->.+"
-  for l_0_6,l_0_7 in pairs(l_0_2) do
-    if (string.find)(l_0_0, l_0_6, 1, true) then
-      local l_0_8 = (string.match)(l_0_0, l_0_7)
-      if l_0_8 == nil or l_0_8:len() < 12 then
-        return mp.CLEAN
-      end
-      local l_0_9 = l_0_6:len() + 1
-      if l_0_8:len() <= l_0_9 + 5 then
-        return mp.CLEAN
-      end
-      local l_0_10 = (string.sub)(l_0_8, l_0_9, -5)
-      if l_0_10 == nil then
-        return mp.CLEAN
-      end
-      local l_0_11 = l_0_10 .. l_0_6
-      if (string.find)(l_0_0, l_0_11, 1, true) == nil then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
+if (this_sigattrlog[4]).matched then
+  l_0_1 = (this_sigattrlog[4]).p1
+end
+if (this_sigattrlog[5]).matched then
+  l_0_2 = (this_sigattrlog[5]).p1
+end
+if (this_sigattrlog[6]).matched then
+  l_0_3 = (this_sigattrlog[6]).p1
+end
+if (this_sigattrlog[7]).matched then
+  l_0_4 = (this_sigattrlog[7]).p1
+end
+if l_0_0 ~= nil and l_0_1 ~= nil and l_0_2 ~= nil and l_0_3 ~= nil and l_0_4 ~= nil then
+  l_0_5 = l_0_0:match("^C:\\WINDOWS\\SYSTEM32\\(%u+%.DLL)$")
+  l_0_6 = l_0_1:match("^C:\\WINDOWS\\(%u+%.DLL)$")
+  l_0_7 = l_0_2:match("^C:\\\\(%u+%.DLL)$")
+  if l_0_5 ~= nil and l_0_6 ~= nil and l_0_7 ~= nil and l_0_5 == l_0_6 and l_0_5 == l_0_7 and l_0_3:find("^%a+$") and l_0_4:find("^%a+$") then
+    return mp.INFECTED
   end
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
-end
+return mp.CLEAN
 

@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:MobiDash.H")
+local l_0_0 = (mp.getfilename)()
+if (string.sub)(l_0_0, -10) == "->(Upxw64)" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

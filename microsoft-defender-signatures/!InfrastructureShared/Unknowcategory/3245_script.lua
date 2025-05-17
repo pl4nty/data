@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("dt_continue_after_unpacking", true)
-return mp.SUSPICIOUS
+if pehdr.NumberOfSections > 6 then
+  return mp.SUSPICIOUS
+end
+return mp.CLEAN
 

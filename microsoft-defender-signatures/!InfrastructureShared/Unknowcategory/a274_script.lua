@@ -3,16 +3,19 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() < 176128 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.match)(l_0_0, "bypass.+hidden.+%-c%s*if%s*%(.+%)%s*%{.+net%.webclient.+downloadstring.+http.+|%s*iex%s*%}%s*else%s*%{.+net%.webclient.+downloadstring.+http.+|%s*iex%s*%}") ~= nil then
+      return mp.INFECTED
     end
-    return mp.INFECTED
+    return mp.CLEAN
   end
-  return mp.CLEAN
 end
 

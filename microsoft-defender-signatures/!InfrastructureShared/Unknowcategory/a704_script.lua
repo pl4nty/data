@@ -3,30 +3,53 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -9)) ~= "\\w3wp.exe" then
   return mp.CLEAN
 end
-local l_0_0 = (mp.bitand)(pevars.sigaddr + 13 + (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 9, 4), 1), 4294967295)
-local l_0_1 = (pe.mmap_va_nofastfail)(l_0_0, 16)
-if (string.byte)(l_0_1, 1) ~= 3 or (string.byte)(l_0_1, 2) ~= 131 then
-  return mp.CLEAN
+local l_0_1 = nil
+if (this_sigattrlog[1]).matched then
+  l_0_1 = (this_sigattrlog[1]).utf8p1
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_1 = (this_sigattrlog[2]).utf8p1
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_1 = (this_sigattrlog[3]).utf8p1
+    else
+      if (this_sigattrlog[4]).matched then
+        l_0_1 = (this_sigattrlog[4]).utf8p1
+      end
+    end
+  end
 end
--- DECOMPILER ERROR at PC77: Unhandled construct in 'MakeBoolean' P1
-
-if (string.byte)(l_0_1, 7) == 135 and ((string.byte)(l_0_1, 8) ~= 210 or (string.byte)(l_0_1, 9) ~= 233) then
-  return mp.CLEAN
+if l_0_1 ~= nil then
+  local l_0_2 = (string.sub)(l_0_1, -4)
+  local l_0_3 = "|.asp|aspx|ashx|asmx|"
+  if (string.find)(l_0_3, l_0_2, 1, true) == nil then
+    return mp.CLEAN
+  end
 end
--- DECOMPILER ERROR at PC116: Unhandled construct in 'MakeBoolean' P1
-
-if (string.byte)(l_0_1, 7) == 81 and ((string.byte)(l_0_1, 8) ~= 141 or (string.byte)(l_0_1, 9) ~= 13 or (string.byte)(l_0_1, 14) ~= 135 or (string.byte)(l_0_1, 15) ~= 12) then
-  return mp.CLEAN
+do
+  local l_0_4 = (bm.get_current_process_startup_info)()
+  local l_0_5 = l_0_4.command_line
+  if not (string.find)(l_0_5, "-ap \"MSExchange", 1, true) then
+    return mp.CLEAN
+  end
+  do
+    if (sysio.IsFileExists)(l_0_1) then
+      local l_0_6 = (string.match)(l_0_1, "(.*\\)[^\\]+$")
+      if l_0_6 then
+        (bm.trigger_sig)("TriggerShellPath", l_0_6)
+      end
+      ;
+      (mp.ReportLowfi)(l_0_1, 560784057)
+      ;
+      (bm.add_related_file)(l_0_1)
+      ;
+      (bm.add_threat_file)(l_0_1)
+    end
+    return mp.INFECTED
+  end
 end
-do return mp.CLEAN end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(pe.mmap_patch_va)(l_0_0 + 2, "`\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

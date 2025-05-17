@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "oleObject%d%.bin$") ~= nil or (string.find)(l_0_0, "%.bin%->%(Ole Stream %d%)$") ~= nil then
+if (mp.get_mpattribute)("MpInternal_IsPliScan") then
+  return mp.INFECTED
+end
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 ~= nil and l_0_0 == mp.HSTR_CALLER_SMS then
   return mp.INFECTED
 end
 return mp.CLEAN

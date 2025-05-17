@@ -3,18 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_2 = "docker_start"
-    l_0_1 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), "/([0-9a-f]+)/hosts$")
-  end
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R1 in 'UnsetPending'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-  if l_0_1 ~= nil then
-    (MpCommon.AppendPersistContextNoPath)(l_0_2, l_0_1, 3600)
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = nil
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC38: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p1 ~= nil then
+      local l_0_1, l_0_2 = (this_sigattrlog[2]).utf8p1
+    end
+    -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC43: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil then
+      (bm.add_related_file)(l_0_1)
+    end
+    return mp.INFECTED
+  end
 end
 

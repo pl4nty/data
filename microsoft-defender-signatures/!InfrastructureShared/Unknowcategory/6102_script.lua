@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".btls2" and (pesecs[6]).Name == ".dcard" then
+if mp.HSTR_WEIGHT >= 12 then
+  (mp.set_mpattribute)("PUA:Block:Spigot.D")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

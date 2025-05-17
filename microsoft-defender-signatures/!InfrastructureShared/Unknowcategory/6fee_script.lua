@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.amd64_image then
+if (pe.query_import)(pe.IMPORT_STATIC, 823159601) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 680197589) == 0 then
   return mp.CLEAN
-end
-if not peattributes.enable_vmm_grow then
-  (pe.set_peattribute)("enable_vmm_grow", true)
 end
 return mp.INFECTED
 

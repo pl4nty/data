@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:InstallBrain")
+(mp.set_mpattribute)("PUA:Block:SpigotSearch")
 return mp.INFECTED
 

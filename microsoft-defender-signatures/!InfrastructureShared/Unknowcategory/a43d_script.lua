@@ -3,21 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(bm.get_current_process_startup_info)
-if l_0_0 then
-  local l_0_2, l_0_3, l_0_4 = pcall(bm.get_process_relationships)
-  if l_0_2 then
-    for l_0_8,l_0_9 in ipairs(l_0_3) do
-      if l_0_9.image_path ~= nil and ((string.find)((string.lower)(l_0_9.image_path), "\\syswow64\\regsvr32.exe", 1, true) or (string.find)((string.lower)(l_0_9.image_path), "\\syswow64\\rundll32.exe", 1, true)) and l_0_1 ~= nil and l_0_1.ppid ~= nil then
-        (bm.request_SMS)(l_0_1.ppid, "m")
-        return mp.INFECTED
-      end
-    end
-  end
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
+  return mp.CLEAN
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+  return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\184\028\024\127N\144")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

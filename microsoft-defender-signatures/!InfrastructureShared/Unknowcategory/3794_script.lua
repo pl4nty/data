@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 ~= nil and l_0_0 > 50 and l_0_0 < 200 then
+if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

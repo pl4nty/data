@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe")
-if l_0_0 ~= nil then
-  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
-  if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then
-    local l_0_2 = (string.lower)(l_0_1)
-    if (string.find)(l_0_2, "cmd", 1, true) or (string.find)(l_0_2, "msconfig", 1, true) or (string.find)(l_0_2, "taskmgr", 1, true) then
-      return mp.INFECTED
-    end
-  end
+if (mp.get_mpattribute)("LowFiDropboxUnderWin") and (mp.get_mpattribute)("SIGATTR:ASEP") then
+  return mp.INFECTED
 end
-do
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 then
   return mp.CLEAN
 end
+if (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 then
+  return mp.CLEAN
+end
+if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_peattribute)("disable_drop_mz_only", true)
+return mp.INFECTED
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
+if (mp.get_mpattribute)("HSTR:Worm:MSIL/Cribz!modules") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

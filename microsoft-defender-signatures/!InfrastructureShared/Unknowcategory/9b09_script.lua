@@ -3,16 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.x86_image == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (pe.get_versioninfo)()
+if (l_0_0.CompanyName ~= nil and (string.find)(l_0_0.CompanyName, "Microsoft CoreXT", 1, true) ~= nil) or l_0_0.FileDescription ~= nil and (string.find)(l_0_0.FileDescription, "NMAgent", 1, true) ~= nil then
   return mp.CLEAN
 end
+return mp.INFECTED
 

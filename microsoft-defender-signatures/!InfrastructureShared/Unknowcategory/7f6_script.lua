@@ -3,31 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (string.lower)((mp.getfilename)())
 do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_8 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R6_PC25) then
-        (bm.add_related_file)(R6_PC25)
-      end
+  if (string.sub)(l_0_0, -4) == ".vbe" then
+    local l_0_1, l_0_2 = (string.match)(l_0_0, "(.+\\)([^\\]+)$")
+    if (string.sub)(l_0_2, 1, 9) == "setup.exe" or (string.sub)(l_0_2, 1, 5) == "hello" then
+      (mp.set_mpattribute)("Lua:FakePAVVBEFileName")
     end
   end
-  do
-    ;
-    (mp.TriggerScanResource)("wmi", "")
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
 

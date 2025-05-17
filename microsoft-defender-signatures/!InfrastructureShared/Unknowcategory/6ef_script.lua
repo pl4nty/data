@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(headerpage, 9) == 1717724275 then
-  (mp.set_mpattribute)("Lua:IsSdbFile")
+if #(mp.enum_mpattributesubstring)("SCPT:SnukbunC") >= 2 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

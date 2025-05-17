@@ -3,62 +3,46 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
-  return mp.CLEAN
+if (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\000" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\016" then
+  (pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 19, "êê")
+  ;
+  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+  local l_0_0 = 336
+  local l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
+  local l_0_2 = (string.find)(l_0_1, "h@B\015%z")
+  local l_0_3 = (string.find)(l_0_1, "`\174\n%z")
+  local l_0_4 = (string.find)(l_0_1, "h\001%z\031%z")
+  local l_0_5 = (string.find)(l_0_1, "h\132\003%z%z")
+  if l_0_2 and l_0_3 then
+    for l_0_9 = 1, 256 - l_0_2 do
+      if (pe.mmap_va)(pevars.sigaddr + l_0_9 + l_0_3, 3) == "P\255\021" then
+        (pe.mmap_patch_va)(pevars.sigaddr + l_0_9 + l_0_3 + 1, "YYYêê\144")
+      end
+    end
+    if l_0_4 then
+      for l_0_13 = 1, 48 do
+        if (pe.mmap_va)(pevars.sigaddr + l_0_13 + l_0_4, 4) == "\031\000\255\021" then
+          (pe.mmap_patch_va)(pevars.sigaddr + l_0_13 + l_0_4 + 2, "YYYêê\144")
+        end
+      end
+    end
+    do
+      if l_0_5 then
+        for l_0_17 = 1, 160 do
+          if (pe.mmap_va)(pevars.sigaddr + l_0_17 + l_0_5, 3) == "\000\255\021" then
+            (pe.mmap_patch_va)(pevars.sigaddr + l_0_17 + l_0_5 + 1, "êêêêêê")
+          end
+        end
+      end
+      do
+        do
+          do return mp.INFECTED end
+          return mp.CLEAN
+        end
+      end
+    end
+  end
 end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint <= 4096 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint >= 20480 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode < 18432 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode > 36352 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage < 241664 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage > 278528 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfInitializedData < 210944 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfInitializedData > 258048 then
-  return mp.CLEAN
-end
-if (pesecs[1]).Characteristics ~= 1610612768 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).Characteristics ~= 1073741888 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 8192 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData < 16384 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData > 36352 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
-  return mp.CLEAN
-end
-if (mp.readu_u16)(epcode, 1) ~= 35669 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

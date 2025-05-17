@@ -3,51 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattributesubstring)("!dha") and ((mp.get_mpattributesubstring)("ALF:") or (mp.get_mpattributesubstring)("SLF:") or (mp.get_mpattributesubstring)("TEL:") or (mp.get_mpattributesubstring)("ALFPER:") or (mp.get_mpattributesubstring)("SLFPER:") or (mp.get_mpattributesubstring)("TELPER:")) then
-  local l_0_0 = {}
-  -- DECOMPILER ERROR at PC49: No list found for R0 , SetList fails
-
-  -- DECOMPILER ERROR at PC50: Overwrote pending register: R1 in 'AssignReg'
-
-  local l_0_1 = "ALF:"
-  -- DECOMPILER ERROR at PC51: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R3 in 'AssignReg'
-
-  for l_0_5,l_0_6 in ("SLF:")("TEL:") do
-    local l_0_7 = (mp.enum_mpattributesubstring)(l_0_6)
-    for l_0_11,l_0_12 in ipairs(l_0_7) do
-      if l_0_12:sub(-#l_0_1) == l_0_1 then
-        local l_0_13 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-        if l_0_13 == nil then
-          return mp.INFECTED
-        end
-        if l_0_13 == nil then
-          return mp.INFECTED
-        end
-        local l_0_14, l_0_15 = (string.find)(l_0_13, "->")
-        -- DECOMPILER ERROR at PC107: Overwrote pending register: R13 in 'AssignReg'
-
-        if l_0_14 then
-          do
-            (MpCommon.SetOriginalFileName)(l_0_13, l_0_12)
-            do return mp.INFECTED end
-            -- DECOMPILER ERROR at PC116: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC116: LeaveBlock: unexpected jumping out IF_STMT
-
-            -- DECOMPILER ERROR at PC116: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC116: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
-        end
-      end
-    end
-  end
+if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC121: Overwrote pending register: R0 in 'AssignReg'
-
-do return l_0_0 end
--- WARNING: undefined locals caused missing assignments!
+if (mp.get_mpattribute)("SCRIPT:PSLummaStealerObfus.A") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = tostring(headerpage)
+else
+  l_0_1 = tostring(footerpage)
+end
+l_0_1 = (string.lower)(l_0_1)
+l_0_1 = (string.gsub)(l_0_1, "%z", "")
+if not (string.find)(l_0_1, "}).name", 1, true) then
+  return mp.CLEAN
+end
+if not (string.find)(l_0_1, "http", 1, true) and not (string.find)(l_0_1, "c:\\programdata\\", 1, true) then
+  return mp.CLEAN
+end
+local l_0_2 = 0
+for l_0_6 in (string.gmatch)(l_0_1, "%-variable%s+") do
+  l_0_2 = l_0_2 + 1
+end
+for l_0_10 in (string.gmatch)(l_0_1, "%s+variable:") do
+  l_0_2 = l_0_2 + 1
+end
+for l_0_14 in (string.gmatch)(l_0_1, "\'[A-Za-z*%-]*%*[A-Za-z*%-]*\'") do
+  l_0_2 = l_0_2 + 1
+end
+if l_0_2 >= 5 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

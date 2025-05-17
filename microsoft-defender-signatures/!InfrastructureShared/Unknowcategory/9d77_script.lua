@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_suspicious_section_name") and (mp.getfilesize)() >= 53248 and (mp.getfilesize)() < 55808 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("lua_injector_cl_ep") == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (hstrlog[1]).matched then
+  (mp.set_mpattribute)("InjCLT!02" .. "itsapproaching")
+else
+  if (hstrlog[2]).matched then
+    (mp.set_mpattribute)("InjCLT!02" .. "thereyougo")
+  end
+end
+return mp.LOWFI
 

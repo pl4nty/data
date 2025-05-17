@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 536870912) == 536870912 then
+if (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

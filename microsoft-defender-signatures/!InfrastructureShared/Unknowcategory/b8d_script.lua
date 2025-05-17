@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:SysHeal")
+(mp.set_mpattribute)("PUA:Block:Kometa")
 return mp.INFECTED
 

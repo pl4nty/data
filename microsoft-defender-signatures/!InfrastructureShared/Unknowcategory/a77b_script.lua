@@ -3,26 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_ECX) - 1
-if l_0_0 > 1048576 then
-  return mp.INFECTED
+if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 ~= nil then
+  local l_0_0 = (bm.get_current_process_startup_info)()
+  local l_0_1 = (string.lower)(l_0_0.command_line)
+  if (string.find)(l_0_1, "chocolatey.", 1, true) or (string.find)(l_0_1, "-appxprovisioned", 1, true) or (string.find)(l_0_1, ".visualstudio.com", 1, true) or (string.find)(l_0_1, ".azure.com", 1, true) or (string.find)(l_0_1, "cloudtest", 1, true) or (string.find)(l_0_1, " -nologo ", 1, true) or (string.find)(l_0_1, " -noprofile ", 1, true) or (string.find)(l_0_1, "get-windowsoptionalfeature", 1, true) or (string.find)(l_0_1, "enableagent", 1, true) or (string.find)(l_0_1, "\\syncro\\", 1, true) or (string.find)(l_0_1, "\\program files", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.lower)((this_sigattrlog[7]).utf8p1)
+  if (string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "\\chocolatey", 1, true) or (string.find)(l_0_2, "\\dismhost.exe", 1, true) or (string.find)(l_0_2, "\\lgpo.exe", 1, true) then
+    return mp.CLEAN
+  end
+  if (mp.IsKnownFriendlyFile)(l_0_2, true, false) == false then
+    (bm.add_related_file)(l_0_2)
+    return mp.INFECTED
+  end
 end
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 128)
-local l_0_2 = (mp.readu_u32)(l_0_1, 112)
-local l_0_3 = (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1)
-local l_0_4 = (mp.readu_u32)(l_0_1, 35)
-local l_0_5 = (pe.mmap_va)(l_0_4, 256)
-local l_0_6 = (mp.readu_u32)(l_0_1, 45)
-local l_0_7 = (mp.readu_u32)((pe.mmap_va)(l_0_6, 4), 1)
-local l_0_8 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
-local l_0_9 = "\190\000\000\000\000\189\001\000\000\000âË@%\255\000\000\000â≈âÔäóN\002@\000\015∂ \003\rJ\002@\000Å·\255\000\000\000äôN\002@\000àëN\002@\000\137\rJ\002@\000àüN\002@\000\015∂âN\002@\000\015∂”\001—Å\225\255\000\000\000\015∂ôN\002@\000∏N\003@\0000\0280ÉÓ\001u°√\000\000\000\000"
-local l_0_10 = (pe.mmap_va)(l_0_3, l_0_0)
-local l_0_11 = l_0_8 .. l_0_9 .. l_0_5 .. l_0_10
-;
-(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 2, l_0_0)
-;
-(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 107, l_0_7)
-;
-(mp.vfo_add_buffer)(l_0_11, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.INFECTED
+do
+  return mp.CLEAN
+end
 

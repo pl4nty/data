@@ -3,24 +3,48 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1, l_0_2 = (string.find)(l_0_0, "d0027073-ea64-42ca-8293-241186e9011f", 1, true)
-if l_0_1 == nil or l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (string.sub)(l_0_0, l_0_2 + 1, -1)
-local l_0_4 = 0
-local l_0_5 = 1
-for l_0_9 in (string.gmatch)(l_0_3, "%S+") do
-  if l_0_5 == 1 then
-    l_0_4 = tonumber(l_0_9)
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  local l_0_0 = nil
+else
+  do
+    do return mp.CLEAN end
+    local l_0_1 = nil
+    -- DECOMPILER ERROR at PC30: Overwrote pending register: R1 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC44: Overwrote pending register: R1 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC49: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC51: Unhandled construct in 'MakeBoolean' P3
+
+    if ((this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil and not (this_sigattrlog[2]).matched) or nil ~= nil then
+      local l_0_2 = nil
+      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
+        local l_0_3 = nil
+        -- DECOMPILER ERROR at PC57: Confused about usage of register: R7 in 'UnsetPending'
+
+        if (sysio.IsFileExists)(R7_PC57) then
+          (bm.add_related_file)(R7_PC57)
+        end
+      end
+    end
+    do
+      if l_0_1 ~= nil then
+        local l_0_8 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+        for l_0_12,l_0_13 in ipairs(l_0_8) do
+          if (sysio.IsFileExists)(l_0_13) then
+            (bm.add_related_file)(l_0_13)
+          end
+        end
+      end
+      do
+        l_0_8 = mp
+        l_0_8 = l_0_8.INFECTED
+        return l_0_8
+      end
+    end
   end
-  l_0_5 = l_0_5 + 1
 end
-;
-(bm.add_action)("EmsScan", l_0_4)
-return mp.INFECTED
 

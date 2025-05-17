@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (string.lower)((string.sub)((this_sigattrlog[1]).wp1, -4))
-    if l_0_0 == ".ttf" or l_0_0 == ".fon" then
-      return mp.INFECTED
-    end
-  end
+if (mp.getfilesize)() > 1048576 then
   return mp.CLEAN
 end
+if #(mp.enum_mpattributesubstring)("SCPT:AlphaLakeA") >= 2 then
+  return mp.INFECTED
+else
+  return mp.CLEAN
+end
+return mp.CLEAN
 

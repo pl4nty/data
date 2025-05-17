@@ -3,29 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
-if peattributes.epscn_islast ~= true then
-  return mp.CLEAN
-end
-if peattributes.lastscn_writable ~= true then
-  return mp.CLEAN
-end
-if epcode[1] ~= 128 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 124 then
-  return mp.CLEAN
-end
-if epcode[3] ~= 36 then
-  return mp.CLEAN
-end
-if epcode[5] ~= 1 then
-  return mp.CLEAN
-end
-if epcode[6] ~= 117 then
-  return mp.CLEAN
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil and (mp.get_mpattribute)("HSTR:ollama!MTB") and peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
+  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+  end
 end
 return mp.INFECTED
 

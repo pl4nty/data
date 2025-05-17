@@ -3,69 +3,69 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 128 or mp.FOOTERPAGE_SZ < 22 then
+local l_0_0 = (mp.enum_mpattributesubstring)("SCPT:CodeOnly")
+if #l_0_0 == 0 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
-  return mp.CLEAN
+local l_0_1 = {}
+l_0_1[".asm"] = ""
+l_0_1[".asm64"] = ""
+l_0_1[".c"] = ""
+l_0_1[".cpp"] = ""
+l_0_1[".cxx"] = ""
+l_0_1[".h"] = ""
+l_0_1[".m"] = ""
+local l_0_2 = {}
+l_0_2[".java"] = ""
+l_0_2[".cs"] = ""
+l_0_2[".lua"] = ""
+l_0_2[".go"] = ""
+local l_0_3 = {}
+l_0_3[".py"] = ""
+l_0_3[".pyc"] = ""
+l_0_3[".ps1"] = ""
+l_0_3[".pl"] = ""
+l_0_3[".rb"] = ""
+l_0_3[".bat"] = ""
+l_0_3[".sh"] = ""
+l_0_3[".vba"] = ""
+l_0_3[".vbs"] = ""
+l_0_3[".vb"] = ""
+l_0_3[".hta"] = ""
+local l_0_4 = {}
+l_0_4[".js"] = ""
+l_0_4[".html"] = ""
+l_0_4[".htm"] = ""
+l_0_4[".aspx"] = ""
+l_0_4[".php"] = ""
+l_0_4[".cgi"] = ""
+l_0_4[".jsp"] = ""
+l_0_4[".wasm"] = ""
+l_0_4[".wat"] = ""
+local l_0_5 = {}
+l_0_5[".md"] = ""
+l_0_5[".txt"] = ""
+l_0_5[".bin"] = ""
+local l_0_6 = ((string.sub)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)), -5)):match("(%.%w+)$")
+if l_0_1[l_0_6] then
+  (mp.set_mpattribute)("Lua:CppLangFileExtension")
+  return mp.INFECTED
 end
-local l_0_0 = (mp.readu_u16)(headerpage, 11)
-local l_0_1 = (mp.readu_u16)(headerpage, 13)
-local l_0_2, l_0_3 = pcall(MpCommon.DosTimeToFileTime, l_0_0, l_0_1)
-if not l_0_2 then
-  return mp.CLEAN
+if l_0_2[l_0_6] then
+  (mp.set_mpattribute)("Lua:ProgrammingLangFileExtension")
+  return mp.INFECTED
 end
-if l_0_3 == 0 then
-  return mp.CLEAN
+if l_0_3[l_0_6] then
+  (mp.set_mpattribute)("Lua:ScriptFileExtension")
+  return mp.INFECTED
 end
-local l_0_4 = (MpCommon.GetCurrentTimeT)()
-local l_0_5, l_0_6 = pcall(MpCommon.TimeTToFileTime, l_0_4)
-if not l_0_5 then
-  return mp.CLEAN
+if l_0_4[l_0_6] then
+  (mp.set_mpattribute)("Lua:WebFileExtension")
+  return mp.INFECTED
 end
-if l_0_6 == nil then
-  return mp.CLEAN
+if l_0_5[l_0_6] then
+  (mp.set_mpattribute)("Lua:ProgrammingRelatedFileExtension")
+  return mp.INFECTED
 end
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if l_0_3 < l_0_6 then
-  local l_0_7 = 864000000000
-  local l_0_8 = l_0_6 - l_0_3
-  if l_0_8 <= 5 * l_0_7 then
-    if (mp.get_mpattribute)("SCPT:JarFile") then
-      (mp.set_mpattribute)("//Lua:JarTimeStampLastFiveDays")
-    else
-      ;
-      (mp.set_mpattribute)("//Lua:ZipTimeStampLastFiveDays")
-    end
-  end
-  if l_0_8 <= 10 * l_0_7 then
-    if (mp.get_mpattribute)("SCPT:JarFile") then
-      (mp.set_mpattribute)("//Lua:JarTimeStampLastTenDays")
-    else
-      ;
-      (mp.set_mpattribute)("//Lua:ZipTimeStampLastTenDays")
-    end
-  end
-  if l_0_8 <= 30 * l_0_7 then
-    if (mp.get_mpattribute)("SCPT:JarFile") then
-      (mp.set_mpattribute)("//Lua:JarTimeStampLastThirtyDays")
-    else
-      ;
-      (mp.set_mpattribute)("//Lua:ZipTimeStampLastThirtyDays")
-    end
-  end
-  if l_0_8 <= 365 * l_0_7 then
-    if (mp.get_mpattribute)("SCPT:JarFile") then
-      (mp.set_mpattribute)("//Lua:JarTimeStampLastYear")
-    else
-      ;
-      (mp.set_mpattribute)("//Lua:ZipTimeStampLastYear")
-    end
-  end
-end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

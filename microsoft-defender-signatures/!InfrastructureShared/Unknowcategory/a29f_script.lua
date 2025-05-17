@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)(l_0_6.image_path, "\\jumpcloud-agent.exe", 1, true) or (string.find)(l_0_6.image_path, "\\icinga2.exe", 1, true) or (string.find)(l_0_6.image_path, "\\plesksrv.exe", 1, true)) then
-    return mp.CLEAN
-  end
+if (mp.getfilesize)() > 1500000 and (mp.getfilesize)() < 2500000 and pehdr.Machine == 332 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).Size < 144 and pehdr.NumberOfSections == 4 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

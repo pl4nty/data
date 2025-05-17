@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.isdll and peattributes.no_security and l_0_0 > 1572864 and l_0_0 < 1638400 then
-  return mp.INFECTED
+if pehdr.Machine == 34404 then
+  (mp.set_mpattribute)("Lowfi:Win64/Minxer_Coinminer")
+else
+  ;
+  (mp.set_mpattribute)("HSTR:Minxer_Coinminer")
 end
 return mp.CLEAN
 

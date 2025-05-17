@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win32/Symmi.MBXJ!MTB") and (mp.get_mpattribute)("pea_isdll") then
+if pehdr.NumberOfSections == 10 and (pesecs[8]).Name == ".crt1" then
   return mp.INFECTED
 end
 return mp.CLEAN

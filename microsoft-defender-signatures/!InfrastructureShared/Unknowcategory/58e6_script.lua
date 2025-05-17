@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.has_msilresources then
+if mp.HSTR_WEIGHT >= 1 and pehdr.Subsystem ~= 1 then
   return mp.INFECTED
 end
 return mp.CLEAN

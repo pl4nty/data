@@ -3,46 +3,41 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("undecimus", 1, true) then
   return mp.CLEAN
 end
-if peattributes.isdll ~= true then
+if l_0_0:find(".deb", 1, true) then
   return mp.CLEAN
 end
-if peattributes.hasstandardentry == true then
+if l_0_0:find(".app", 1, true) then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections ~= 6 then
+if l_0_0:find(".iso", 1, true) then
   return mp.CLEAN
 end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
+if l_0_0:find(".ipa", 1, true) then
   return mp.CLEAN
 end
-if (pesecs[1]).NameDW ~= 2019914798 then
+if l_0_0:find("drfone", 1, true) then
   return mp.CLEAN
 end
-if epcode[1] ~= 233 then
+if l_0_0:find("checkn", 1, true) then
   return mp.CLEAN
 end
-if epcode[4] ~= 255 then
+if l_0_0:find("data.tar.xz", 1, true) then
   return mp.CLEAN
 end
-if epcode[5] ~= 255 then
+if l_0_0:find("program files", 1, true) then
   return mp.CLEAN
 end
-if (pesecs[1]).PointerToRawData ~= 1024 then
+if l_0_0:find("programdata", 1, true) then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pesecs[1]).PointerToRawData, 64)
-if l_0_0:byte(1) ~= 85 then
+if l_0_0:find(".exe", 1, true) then
   return mp.CLEAN
 end
-if l_0_0:byte(37) ~= 80 then
-  return mp.CLEAN
-end
-if l_0_0:byte(62) ~= 85 then
+if l_0_0:find("just4fun", 1, true) then
   return mp.CLEAN
 end
 return mp.INFECTED

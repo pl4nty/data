@@ -3,32 +3,40 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
+if peattributes.epinfirstsect ~= true then
   return mp.CLEAN
 end
-if epcode[16] ~= 255 then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
-if peattributes.entrybyte55 ~= true then
+if peattributes.hasstandardentry == true then
   return mp.CLEAN
 end
-if peattributes.hasexports ~= true then
+if peattributes.epscn_writable ~= false then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[6]).Size <= 0 then
+if peattributes.packed ~= false then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
+if ((pehdr.DataDirectory)[1]).RVA ~= 0 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(l_0_0, 25) <= 0 then
+if ((pehdr.DataDirectory)[2]).RVA ~= 0 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 12)
-if (mp.crc32)(-1, l_0_1, 1, 12) ~= 1965254513 then
+if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if peattributes.hasexports ~= false then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).NameDW ~= 2019914798 then
   return mp.CLEAN
 end
 return mp.INFECTED

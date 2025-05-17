@@ -3,22 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u16)(headerpage, 1) == 23117 then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  local l_0_3 = (mp.getfilesize)()
+  if l_0_3 > 1024 then
+    return mp.CLEAN
+  end
+  if l_0_2:match("Security Center Update - [0-9]+.job") and l_0_1:match("C:WINDOWSTasks") then
+    (mp.set_mpattribute)("LUA:SuspiciousJobFile")
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 65536 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.bitxor)((mp.readu_u32)(headerpage, 1), 3688618971)
-if l_0_1 == 0 then
-  return mp.CLEAN
-end
-if (mp.bitxor)((mp.readu_u32)(headerpage, 5), l_0_1) == 2305 and (mp.bitxor)((mp.readu_u32)(headerpage, 9), l_0_1) == 1801666816 and (mp.bitxor)((mp.readu_u32)(headerpage, 13), l_0_1) == 1836216134 then
-  (mp.set_mpattribute)("MpNonPIIFileType")
-  return mp.INFECTED
-else
-  return mp.CLEAN
-end
-return mp.CLEAN
 

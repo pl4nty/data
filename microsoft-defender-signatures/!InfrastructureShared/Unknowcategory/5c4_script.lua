@@ -3,24 +3,18 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
-
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or not (string.find)(l_0_1, "\\microsoft\\onedrive\\", 1, true) then
-    return mp.INFECTED
-  end
-  -- DECOMPILER ERROR at PC66: Confused about usage of register: R1 in 'UnsetPending'
-
-  if not (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(nil)), "\\onedrive\\[%d+.]+", 1, true) then
-    (bm.add_related_file)((string.lower)((mp.ContextualExpandEnvironmentVariables)(nil)))
-    return mp.INFECTED
-  end
+if not (this_sigattrlog[10]).ppid then
   return mp.CLEAN
 end
+local l_0_0 = ""
+if (this_sigattrlog[9]).matched and (this_sigattrlog[9]).utf8p1 ~= nil then
+  l_0_0 = (MpCommon.PathToWin32Path)((string.lower)((this_sigattrlog[9]).utf8p1))
+end
+if (mp.IsKnownFriendlyFile)(l_0_0, true, false) then
+  return mp.CLEAN
+end
+if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= ((MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[10]).ppid)).IntegrityLevel then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil and (string.lower)((string.sub)((MpCommon.PathToWin32Path)(l_0_0), 2, 11)) == ":\\windows\\" then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("appdata\\roaming\\wget\\", 1, true) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

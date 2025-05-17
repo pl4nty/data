@@ -3,18 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("system32", 1, true) then
-  return mp.CLEAN
-end
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\184\r\024\141>\144")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

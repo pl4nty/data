@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 and (mp.getfilesize)() >= 7300000 and (mp.getfilesize)() <= 8500000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

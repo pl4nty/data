@@ -3,44 +3,240 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil or l_0_1 == nil then
-  return mp.CLEAN
+if (mp.get_mpattributesubstring)("Detection:Trojan:Win32/ClipBanker") or (mp.get_mpattributesubstring)("Detection:Trojan:Win64/ClipBanker") or (mp.get_mpattributesubstring)("Detection:Trojan:MSIL/ClipBanker") then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 < 768 then
+    return mp.CLEAN
+  end
+  local l_0_1 = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = 0
+  for l_1_5 = #l_1_0, 1, -1 do
+    l_1_1 = l_1_1 * 256 + (string.byte)(l_1_0, l_1_5, l_1_5)
+  end
+  return l_1_1
 end
-local l_0_3 = l_0_2:len()
-if l_0_1:find("\\appdata\\locallow\\{........%-....%-....%-....%-............}") ~= nil then
-  if l_0_2 == "migsetup.exe" then
-    (mp.set_mpattribute)("Lua:BedepFileName.A")
+
+  ;
+  (mp.readprotection)(false)
+  local l_0_2 = 4
+  local l_0_3 = 2
+  if l_0_0 >= 4096 or not l_0_0 then
+    l_0_0 = 4096
+  end
+  local l_0_4 = (mp.readfile)(0, l_0_0)
+  local l_0_5 = 60
+  local l_0_6 = l_0_1((string.sub)(l_0_4, l_0_5 + 1, l_0_5 + l_0_2))
+  l_0_5 = l_0_6 + 6
+  local l_0_7 = l_0_1((string.sub)(l_0_4, l_0_5 + 1, l_0_5 + l_0_3))
+  l_0_5 = l_0_6 + 20
+  local l_0_8 = l_0_1((string.sub)(l_0_4, l_0_5 + 1, l_0_5 + l_0_3))
+  l_0_5 = l_0_6 + 24 + l_0_8
+  local l_0_9 = (string.sub)(l_0_4, l_0_5 + 1, l_0_5 + 40 * l_0_7)
+  local l_0_10 = function(l_2_0)
+  -- function num : 0_1
+  local l_2_1 = #l_2_0
+  if l_2_1 == 42 and l_2_0:find("^0x[0-9a-fA-F]+$") then
+    return "eth"
   else
-    if l_0_2 == "cryptbase.dll" then
-      (mp.set_mpattribute)("Lua:BedepFileName.B")
+    if l_2_1 >= 26 and l_2_1 <= 35 and l_2_0:find("^[13][a-zA-HJ-NP-Z0-9]+$") then
+      return "btc"
     else
-      if (string.sub)(l_0_2, 1, 7) == "api-ms-" then
-        (mp.set_mpattribute)("Lua:BedepFileName.C")
+      if (l_2_1 == 42 or l_2_1 == 62) and l_2_0:find("^bc1[0-9a-z]+$") then
+        return "btc"
+      else
+        if l_2_1 == 42 and l_2_0:find("^[qp][0-9a-z]+$") then
+          return "bch"
+        else
+          if (l_2_1 == 43 or l_2_1 == 63) and l_2_0:find("^ltc1[a-z0-9]+$") then
+            return "ltc"
+          else
+            if (l_2_1 == 33 or l_2_1 == 34) and l_2_0:find("^r[1-9a-km-zA-HJ-NP-Z]+$") then
+              return "xrp"
+            else
+              if (l_2_1 == 47 or l_2_1 == 48) and l_2_0:find("^1[1-9a-km-zA-HJ-NP-Z]+$") then
+                return "dot"
+              else
+                if (l_2_1 == 58 or l_2_1 == 103) and l_2_0:find("^addr1[a-zA-Z0-9]+$") then
+                  return "ada"
+                else
+                  if l_2_1 == 59 and l_2_0:find("^Ae2[a-zA-Z0-9]+$") then
+                    return "ada"
+                  else
+                    if l_2_1 == 104 and l_2_0:find("^DdzFF[a-zA-Z0-9]+$") then
+                      return "ada"
+                    else
+                      if l_2_1 == 34 then
+                        if l_2_0:find("^T[1-9a-km-zA-HJ-NP-Z]+$") then
+                          return "trx"
+                        else
+                          if l_2_0:find("^[LM][1-9a-km-zA-HJ-NP-Z]+$") then
+                            return "ltc"
+                          else
+                            if l_2_0:find("^D[5-9A-HJ-NP-U][1-9A-HJ-NP-Za-km-z]+$") then
+                              return "doge"
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
       end
     end
   end
-else
-  -- DECOMPILER ERROR at PC230: Unhandled construct in 'MakeBoolean' P1
-
-  if (l_0_1:find("\\programdata\\{9a88e103-a20a-4ea5-8636-c73b709a5bf8}", 1, true) ~= nil or l_0_1:find("\\programdata\\{f66cb4ee-546f-4d54-9332-216de189aab0}", 1, true) ~= nil or l_0_1:find("\\programdata\\{698e0848-6d29-4305-80dc-e8d609260ce2}", 1, true) ~= nil or l_0_1:find("\\programdata\\{49a0bac7-3326-4433-9373-4aa8793abb5c}", 1, true) ~= nil or l_0_1:find("\\programdata\\{effc3e07-aed7-4c3c-992f-2c5eb14af4a8}", 1, true) ~= nil or l_0_1:find("\\programdata\\{d9e629dc-cb1c-4a97-9900-81922b4effd4}", 1, true) ~= nil or l_0_1:find("\\programdata\\{ca2facf7-9029-4a21-892b-e7f60b39ff1a}", 1, true) ~= nil or l_0_1:find("\\programdata\\{4ba6ab29-2eab-46fc-8b33-a767b5dbb0f3}", 1, true) ~= nil or l_0_1:find("\\application data\\{4d03d701-c800-49f0-8590-127eff2877ff}", 1, true) ~= nil or l_0_1:find("\\programdata\\{9b82496a-c211-4fcf-84b5-e2b3a1d99f8f}", 1, true) ~= nil or l_0_1:find("\\programdata\\{d93bcbeb-07b6-4fa0-86bf-5552dfc4404c}", 1, true) ~= nil or l_0_1:find("\\programdata\\{65ee3202-cce0-4ec4-9369-0a126e1da09c}", 1, true) ~= nil or l_0_1:find("\\programdata\\{b7a719fb-068f-41ad-8261-3569c22edec2}", 1, true) ~= nil or l_0_1:find("\\programdata\\{18067bd7-3c56-4e2e-8627-51ee9adc5a30}", 1, true) ~= nil or l_0_1:find("\\programdata\\{1016e27d-c6ce-4668-9211-5ec18caadbf8}", 1, true) ~= nil or l_0_1:find("\\programdata\\{39567fd8-2a86-4514-8b0a-406c6e60a8bb}", 1, true) ~= nil or l_0_1:find("\\programdata\\{9925001e-4d97-434f-8579-2e06af34678f}", 1, true) ~= nil or l_0_1:find("\\programdata\\{0bf6ab17-0058-462c-8274-0655b925c812}", 1, true) ~= nil or l_0_1:find("\\programdata\\{a4682c3b-ab83-49b3-8eb5-b44e3f044b59}", 1, true) ~= nil or l_0_1:find("\\programdata\\{0a41da87-d172-4c26-9422-d2c4f5549861}", 1, true) ~= nil or l_0_1:find("\\programdata\\{2cd18189-70a0-4ae9-899e-05bad272e52e}", 1, true) ~= nil or l_0_1:find("\\programdata\\{33896b39-667b-48e5-8c29-b02174b09d04}", 1, true) ~= nil or l_0_1:find("\\programdata\\{2f752dac-f812-4497-9e91-d8701a4745cb}", 1, true) ~= nil or l_0_1:find("\\programdata\\{9cad18b2-ff9b-4cca-8ee0-a4cda3ad5f51}", 1, true) ~= nil) and l_0_3 > 4 and (string.sub)(l_0_2, -4) == ".dll" then
-    (mp.set_mpattribute)("Lua:BedepFileName.D")
-  end
+  return nil
 end
-do
-  if l_0_1:find("\\programdata\\{........%-....%-....%-....%-............}\\$") ~= nil and l_0_3 > 4 and (string.sub)(l_0_2, -4) == ".dll" then
-    local l_0_4, l_0_5 = pcall(mp.get_parent_filehandle)
-    if l_0_4 then
-      l_0_4 = pcall(mp.get_filesize_by_handle, l_0_5)
+
+  local l_0_11 = {}
+  l_0_11["\'"] = true
+  l_0_11["\""] = true
+  l_0_11[">"] = true
+  l_0_11["#"] = true
+  l_0_11["*"] = true
+  l_0_11[":"] = true
+  l_0_11["."] = true
+  l_0_11["+"] = true
+  l_0_11["="] = true
+  l_0_11["/"] = true
+  l_0_11["<"] = true
+  l_0_11[" "] = true
+  l_0_11["\t"] = true
+  l_0_11["\n"] = true
+  l_0_11["\r"] = true
+  l_0_11["\000"] = true
+  l_0_11["\001"] = true
+  l_0_11["\002"] = true
+  l_0_11["\v"] = true
+  l_0_11["\027"] = true
+  local l_0_12 = {}
+  local l_0_13 = 0
+  local l_0_14 = {}
+  local l_0_15 = 10485760
+  l_0_5 = 0
+  while 1 do
+    while 1 do
+      -- DECOMPILER ERROR at PC109: Confused about usage of register: R16 in 'UnsetPending'
+
+      if 0 < l_0_7 then
+        local l_0_16, l_0_30 = 0 + 1
+        l_0_30 = string
+        l_0_30 = l_0_30.sub
+        l_0_30 = l_0_30(l_0_9, l_0_5 + 1, l_0_5 + 2 * l_0_2)
+        local l_0_17 = nil
+        l_0_17 = string
+        l_0_17 = l_0_17.sub
+        l_0_17 = l_0_17(l_0_30, 1, 6)
+        if l_0_17 ~= ".rdata" then
+          l_0_17 = string
+          l_0_17 = l_0_17.sub
+          l_0_17 = l_0_17(l_0_30, 1, 5)
+          if l_0_17 ~= ".text" then
+            l_0_17 = string
+            l_0_17 = l_0_17.sub
+            l_0_17 = l_0_17(l_0_30, 1, 5)
+          end
+        end
+        if l_0_17 == ".rsrc" then
+          l_0_17 = 2 * l_0_2
+          l_0_17 = l_0_5 + l_0_17
+          l_0_17 = l_0_17 + l_0_2
+          l_0_5 = l_0_17 + l_0_2
+          l_0_17 = l_0_1
+          l_0_17 = l_0_17((string.sub)(l_0_9, l_0_5 + 1, l_0_5 + l_0_2))
+          local l_0_18 = nil
+          l_0_5 = l_0_5 + l_0_2
+          l_0_18 = l_0_1
+          l_0_18 = l_0_18((string.sub)(l_0_9, l_0_5 + 1, l_0_5 + l_0_2))
+          local l_0_19 = nil
+          l_0_19 = l_0_5 + 40
+          l_0_5 = l_0_19 - 5 * l_0_2
+          l_0_0 = l_0_17 < l_0_15 and l_0_17 or l_0_15
+          l_0_19 = mp
+          l_0_19 = l_0_19.readfile
+          l_0_19 = l_0_19(l_0_18, l_0_0)
+          local l_0_20 = nil
+          if l_0_19 ~= nil then
+            l_0_20 = #l_0_19
+            if l_0_20 > 25 then
+              l_0_20 = string
+              l_0_20 = l_0_20.gmatch
+              l_0_20 = l_0_20(l_0_19, "(%W)([013brTlLMDaAqp]%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w+)(%W)")
+              local l_0_21 = nil
+              l_0_21 = l_0_20
+              for l_0_25,l_0_26,l_0_27 in l_0_21 do
+                local l_0_27 = nil
+                if l_0_13 > 1000 then
+                  break
+                end
+                l_0_27 = l_0_11[l_0_24]
+                if l_0_27 == true then
+                  l_0_27 = l_0_11[l_0_26]
+                  if l_0_27 == true then
+                    l_0_27 = l_0_10
+                    l_0_27 = l_0_27(l_0_25)
+                    local l_0_28 = nil
+                    if l_0_27 ~= nil then
+                      l_0_28 = l_0_14[l_0_25]
+                      if l_0_28 == nil then
+                        l_0_14[l_0_25] = l_0_27
+                        l_0_13 = l_0_13 + 1
+                        l_0_28 = #l_0_12
+                        l_0_28 = l_0_28 + 1
+                        local l_0_29 = nil
+                        l_0_29 = l_0_27
+                        l_0_29 = l_0_29 .. "=" .. l_0_25
+                        l_0_12[l_0_28] = l_0_29
+                      end
+                    end
+                  end
+                end
+              end
+              -- DECOMPILER ERROR at PC216: Confused about usage of register R22 for local variables in 'ReleaseLocals'
+
+            end
+          end
+          -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_STMT
+
+          -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
     end
-    if not l_0_4 then
-      (mp.set_mpattribute)("Lua:BedepFileName.E")
+    l_0_5 = l_0_5 + 40
+  end
+  do
+    if l_0_13 > 0 then
+      l_0_30 = #l_0_12
+      l_0_30 = l_0_30 + 1
+      l_0_12[l_0_30] = "threat=ClipBanker,filetype=PE"
+      l_0_30 = "MpInternal_researchdata="
+      l_0_17 = table
+      l_0_17 = l_0_17.concat
+      l_0_17 = l_0_17(l_0_12, ",")
+      l_0_30 = l_0_30 .. l_0_17
+      local l_0_31 = nil
+      l_0_17 = mp
+      l_0_17 = l_0_17.set_mpattribute
+      l_0_31 = l_0_30
+      l_0_17(l_0_31)
+      l_0_17 = mp
+      l_0_17 = l_0_17.CLEAN
+      return l_0_17
+    end
+    do
+      l_0_0 = mp
+      l_0_0 = l_0_0.CLEAN
+      return l_0_0
     end
   end
-  if l_0_2 == "spinstall.exewdscore.dll" then
-    (mp.set_mpattribute)("Lua:BedepFileName.F")
-  end
-  return mp.CLEAN
 end
 

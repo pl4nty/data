@@ -3,15 +3,19 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0 = nil
-    if (string.find)(l_0_0, "enc", 1, true) and ((string.find)(l_0_0, "-aes-256-cbc", 1, true) or (string.find)(l_0_0, "-aes-256-ecb", 1, true)) and (string.find)(l_0_0, "-base64", 1, true) then
-      return mp.INFECTED
+if (this_sigattrlog[2]).matched and (this_sigattrlog[5]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and (this_sigattrlog[5]).utf8p2 ~= nil then
+  local l_0_0 = (mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)
+  if l_0_0 ~= nil then
+    for l_0_4,l_0_5 in ipairs(l_0_0) do
+      if (string.find)((this_sigattrlog[5]).utf8p2, l_0_5, 1, true) then
+        return mp.INFECTED
+      end
     end
   end
-  return mp.CLEAN
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
 end
 

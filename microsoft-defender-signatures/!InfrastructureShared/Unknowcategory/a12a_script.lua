@@ -3,15 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.ps1)")
-if l_0_2 and (sysio.IsFileExists)(l_0_2) then
-  (mp.ReportLowfi)(l_0_2, 1120308759)
-  ;
-  (bm.add_related_file)(l_0_2)
+do
+  local l_0_0 = (pe.get_versioninfo)()
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  if l_0_0.InternalName == "mimikatz" or (string.find)(l_0_0.CompanyName, "gentilkiwi", 1, true) ~= nil or l_0_0.ProductName == "mimikatz" or (string.find)(l_0_0.SpecialBuild, "kiwi flavor", 1, true) ~= nil then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- DECOMPILER ERROR: 2 unprocessed JMP targets
 end
-;
-(bm.add_action)("EmsScan", 3000)
-return mp.INFECTED
 

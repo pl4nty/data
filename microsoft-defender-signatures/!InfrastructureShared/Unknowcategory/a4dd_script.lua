@@ -3,18 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\powershell.exe", 1, true) then
-    (MpCommon.TurnNriOnProcess)(l_0_6.ppid)
-    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-    local l_0_9 = tonumber(l_0_7)
-    local l_0_10 = tonumber(l_0_8)
-    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
-    ;
-    (mp.TriggerScanResource)("ems", l_0_13)
-  end
+if not (pe.isdynamic_va)((pe.get_regval)(pe.REG_EIP)) then
+  return mp.CLEAN
 end
-return mp.INFECTED
+if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).Size > 60 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 2 then
+  return mp.CLEAN
+end
+if (pesecs[2]).VirtualAddress > 12288 then
+  return mp.CLEAN
+end
+local l_0_0 = (pe.mmap_rva)(((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).RVA + 16, 4)
+if (mp.readu_u32)(l_0_0, 1) == (pesecs[2]).VirtualAddress then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

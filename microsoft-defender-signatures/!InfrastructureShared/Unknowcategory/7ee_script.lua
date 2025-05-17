@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 4 and pehdr.NumberOfSections < 16 and (pesecs[pehdr.NumberOfSections]).Name == ".jdata" and (pesecs[pehdr.NumberOfSections - 1]).Name == ".idata" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 32768 and (pesecs[pehdr.NumberOfSections - 2]).Name == ".v-lizer" then
-  return mp.INFECTED
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+do
+  if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+    if l_0_1 then
+      l_0_1 = (string.lower)(l_0_1)
+      if l_0_1 == "lsass.exe" then
+        return mp.INFECTED
+      end
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

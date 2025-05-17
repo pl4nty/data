@@ -3,47 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((Remediation.Threat).Name, "^Ransom:Win32/Dopplepaymer") == nil then
-  return 
-end
-local l_0_0 = nil
-for l_0_4,l_0_5 in ipairs((Remediation.Threat).Resources) do
-  if (l_0_5.Schema == "file" or l_0_5.Schema == "process") and l_0_5.Path ~= nil and l_0_5.Path ~= "" then
-    l_0_0 = (string.lower)(l_0_5.Path)
-    if (string.sub)(l_0_0, 1, 4) == "\\\\?\\" then
-      l_0_0 = (string.sub)(l_0_0, 5)
-    end
-    if l_0_0 ~= nil and #l_0_0 > 1 then
-      for l_0_9,l_0_10 in pairs((sysio.EnumerateServices)()) do
-        local l_0_11 = l_0_10.ServiceName
-        local l_0_12 = (string.lower)((sysio.GetCommandLineFromService)(l_0_11))
-        if l_0_12 ~= nil and (string.find)(l_0_12, "^" .. l_0_0) then
-          local l_0_13 = "HKLM\\System\\CurrentControlSet\\Services\\" .. l_0_11
-          local l_0_14 = (sysio.RegOpenKey)(l_0_13)
-          local l_0_15 = "ImagePath "
-          local l_0_16 = (sysio.GetRegValueAsString)(l_0_14, l_0_15)
-          if l_0_16 ~= nil then
-            local l_0_17 = "FailureActionsBackup"
-            local l_0_18 = (sysio.GetRegValueAsBinary)(l_0_14, "FailureActions")
-            if l_0_18 ~= nil then
-              (sysio.SetRegValueAsBinary)(l_0_14, l_0_17, l_0_18)
-              ;
-              (sysio.DeleteRegValue)(l_0_14, "FailureActions")
+local l_0_0 = (MpDetection.GetCurrentThreat)()
+if (string.find)(l_0_0.Name, "Behavior:Win32/WFP_BFE.B", 1, true) then
+  local l_0_1 = "HKLM\\SYSTEM\\CurrentControlSet\\Services\\BFE\\Parameters\\Policy\\Persistent\\Filter"
+  local l_0_2 = (sysio.RegOpenKey)(l_0_1)
+  if l_0_2 then
+    local l_0_3 = (sysio.RegEnumValues)(l_0_2)
+    for l_0_7,l_0_8 in pairs(l_0_3) do
+      local l_0_9 = (sysio.GetRegValueType)(l_0_2, l_0_8)
+      if l_0_9 == 3 then
+        local l_0_10 = (sysio.GetRegValueAsBinary)(l_0_2, l_0_8)
+        if l_0_10 then
+          local l_0_11, l_0_12 = (string.find)(l_0_10, "A\000\000\000\b\000\002\000\000\000\000\000\000\000\000\000", 80, true)
+          if l_0_12 then
+            l_0_11 = (string.find)(l_0_10, "\f\000\002\000\001", l_0_12, true)
+            if l_0_12 then
+              local l_0_13 = false
+              if (string.find)(l_0_10, " \136\0034\167\003", l_0_12, true) or (string.find)(l_0_10, "\129\019Ê¦S\214", l_0_12, true) or (string.find)(l_0_10, "\f\136\027gO\244", l_0_12, true) or (string.find)(l_0_10, "\1720*æø=", l_0_12, true) then
+                l_0_13 = true
+              end
+              if l_0_13 == false and ((string.find)(l_0_10, "\\\000m\000s\000m\000p\000e\000n\000g\000.\000e\000x\000e\000", l_0_12, true) or (string.find)(l_0_10, "\\\000m\000s\000s\000e\000n\000s\000e\000.\000e\000x\000e\000", l_0_12, true) or (string.find)(l_0_10, "\\\000s\000e\000n\000s\000e\000i\000r\000.\000e\000x\000e\000", l_0_12, true) or (string.find)(l_0_10, "\\\000s\000e\000n\000s\000e\000n\000d\000r\000.\000e\000x\000e\000", l_0_12, true) or (string.find)(l_0_10, "\\\000s\000e\000n\000s\000e\000c\000n\000c\000p\000r\000o\000x\000y\000.\000e\000x\000e\000", l_0_12, true) or (string.find)(l_0_10, "\\\000s\000e\000n\000s\000e\000s\000a\000m\000p\000l\000e\000u\000p\000l\000o\000a\000d\000e\000r\000.\000e\000x\000e\000", l_0_12, true)) then
+                (MpDetection.ReportResource)("regkeyvalue", l_0_1 .. "\\\\" .. l_0_8, 9050, false)
+              end
             end
-            local l_0_19 = (sysio.GetProcessFromFileName)(l_0_0)
-            for l_0_23,l_0_24 in pairs(l_0_19) do
-              local l_0_25 = (string.format)("pid:%d,ProcessStart:%u", l_0_24.pid, l_0_24.starttime)
-              ;
-              (sysio.TerminateProcess)(l_0_25)
-            end
-            ;
-            (sysio.SetRegValueAsString)(l_0_14, "ImagePath", l_0_16)
-            ;
-            (sysio.DeleteRegValue)(l_0_14, l_0_15)
-            ;
-            (sysio.SetRegValueAsBinary)(l_0_14, "FailureActions", l_0_18)
-            ;
-            (sysio.DeleteRegValue)(l_0_14, l_0_17)
           end
         end
       end

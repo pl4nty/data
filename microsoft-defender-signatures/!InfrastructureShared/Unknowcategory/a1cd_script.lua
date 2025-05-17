@@ -4,23 +4,18 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
+if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetParentProcInfo)()
-if l_0_1 ~= nil then
-  local l_0_2 = (string.lower)(l_0_1.image_path)
-  local l_0_3 = ((string.sub)(l_0_2, -15)):match("\\([^\\]+)$")
-  local l_0_4 = {}
-  l_0_4["winword.exe"] = true
-  l_0_4["excel.exe"] = true
-  l_0_4["powerpnt.exe"] = true
-  l_0_4["outlook.exe"] = true
-  if l_0_4[l_0_3] then
-    return mp.INFECTED
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if (string.sub)(l_0_1, -5, -1) == ",XL55" or (string.sub)(l_0_1, -6, -1) == ", XL55" then
+  if l_0_0 ~= nil then
+    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
   end
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -11) == "notepad.exe" then
-    return mp.INFECTED
-  end
+if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
+  return mp.CLEAN
+end
+if (pe.get_exports)() > 100 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() >= 512000 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData < 65536 then
-  return mp.CLEAN
-end
-if peattributes.isvbnative == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 19, "")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

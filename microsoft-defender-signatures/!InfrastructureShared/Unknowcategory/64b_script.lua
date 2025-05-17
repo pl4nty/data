@@ -3,39 +3,39 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
-for l_0_5 in (string.gmatch)(l_0_1, "[^|]+") do
-  if not (string.find)(l_0_5, "fileshares", 1, true) then
-    return mp.CLEAN
-  end
-end
-do
-  if not (sysio.RegOpenKey)("HKLM\\SOFTWARE\\POLICIES\\Microsoft\\Windows Defender\\Signature Updates") then
-    local l_0_6, l_0_7 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Signature Updates")
-    if not l_0_6 then
-      l_0_7 = mp
-      l_0_7 = l_0_7.INFECTED
-      return l_0_7
-    end
-  end
-  -- DECOMPILER ERROR at PC55: Confused about usage of register: R2 in 'UnsetPending'
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
-  local l_0_8 = nil
-  if not (sysio.GetRegValueAsString)(l_0_6, "DefinitionUpdateFileSharesSources") then
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10 = nil
+  end
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC67: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC76: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC85: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC94: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC103: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and ((string.find)(l_0_0, " whoami", 1, true) or (string.find)(l_0_0, " quser", 1, true) or (string.find)(l_0_0, " type ", 1, true) or (string.find)(l_0_0, " nltest", 1, true) or (string.find)(l_0_0, " echo ", 1, true) or (string.find)(l_0_0, "net user", 1, true) or (string.find)(l_0_0, "net1 user", 1, true) or (string.find)(l_0_0, "systeminfo", 1, true) or (string.find)(l_0_0, "netlogon", 1, true) or (string.find)(l_0_0, "attackiq wmi", 1, true)) then
     return mp.INFECTED
   end
-  for l_0_12 in (string.gmatch)((sysio.GetRegValueAsString)(l_0_6, "DefinitionUpdateFileSharesSources"), "[^|]+") do
-    local l_0_9 = nil
-    -- DECOMPILER ERROR at PC71: Confused about usage of register: R7 in 'UnsetPending'
-
-    if (string.find)(l_0_5, "\\\\[^\\]+\\[^\\]+") then
-      return mp.CLEAN
-    end
-  end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_XML_FILE") and not (mp.get_mpattribute)("SCPT:TrojanDownloader:O97M/Ploty_excl1.A") and not (mp.get_mpattribute)("SCPT:TrojanDownloader:O97M/Ploty_excl2.A") then
-  return mp.INFECTED
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  (bm.add_related_file)((this_sigattrlog[3]).utf8p2)
 end
-return mp.LOWFI
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+  (bm.add_related_file)((this_sigattrlog[4]).utf8p2)
+end
+return mp.INFECTED
 

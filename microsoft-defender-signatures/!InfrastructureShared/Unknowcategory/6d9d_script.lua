@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:Trojan:Win32/C2Lop.gen!G") and (mp.get_mpattribute)("HSTR:HasSEH") then
-  return mp.SUSPICIOUS
+if peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() < 3000000 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

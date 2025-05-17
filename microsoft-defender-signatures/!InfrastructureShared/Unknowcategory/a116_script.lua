@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
+  if l_0_2 ~= nil and (string.find)(l_0_3, l_0_2) then
+    (mp.TriggerScanResource)("folder", "C:\\Windows\\System32\\Tasks\\")
+    return mp.INFECTED
+  end
 end
-local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
-if l_0_1 == nil then
-  return mp.CLEAN
+do
+  return mp.LOWFI
 end
-if (string.find)(l_0_1, "sdelete", 1, true) or (string.find)(l_0_1, "procdump", 1, true) or (string.find)(l_0_1, "psshutdown", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "Q‹Ï", 1, true)
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\235" .. (string.char)(l_0_0 - 3))
-return mp.INFECTED
+if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
+  return mp.CLEAN
+end
+if (pe.get_exports)() > 100 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

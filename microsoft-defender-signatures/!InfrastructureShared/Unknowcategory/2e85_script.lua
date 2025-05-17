@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true then
+if peattributes.isvbpcode == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,19 +3,156 @@
 
 -- params : ...
 -- function num : 0
-for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
-  if (sigattr_tail[l_0_3]).matched and (sigattr_tail[l_0_3]).attribute == 16393 then
-    local l_0_4 = (sigattr_tail[l_0_3]).utf8p1
-    if l_0_4 then
-      l_0_4 = (string.lower)(l_0_4)
-      if l_0_4 and ((string.find)(l_0_4, "mbam.exe") or (string.find)(l_0_4, "mbamscheduler.exe") or (string.find)(l_0_4, "mbamservice.exe") or (string.find)(l_0_4, "bgscan.exe") or (string.find)(l_0_4, "bullguard.exe") or (string.find)(l_0_4, "bullguardbhvscanner.exe") or (string.find)(l_0_4, "bullguarscanner.exe") or (string.find)(l_0_4, "littlehook.exe") or (string.find)(l_0_4, "bullguardupdate.exe") or (string.find)(l_0_4, "clamscan.exe") or (string.find)(l_0_4, "clamtray.exe") or (string.find)(l_0_4, "clamwin.exe") or (string.find)(l_0_4, "freshclam.exe") or (string.find)(l_0_4, "freshclamwrap.exe") or (string.find)(l_0_4, "cis.exe") or (string.find)(l_0_4, "cistray.exe") or (string.find)(l_0_4, "cmdagent.exe") or (string.find)(l_0_4, "cavwp.exe") or (string.find)(l_0_4, "dragon_updater.exe") or (string.find)(l_0_4, "mwagent.exe") or (string.find)(l_0_4, "mwaswer.exe") or (string.find)(l_0_4, "consctlx.exe") or (string.find)(l_0_4, "avpmapp.exe") or (string.find)(l_0_4, "econceal.exe") or (string.find)(l_0_4, "escanmon.exe") or (string.find)(l_0_4, "escanpro.exe") or (string.find)(l_0_4, "traysser.exe") or (string.find)(l_0_4, "trayicos.exe") or (string.find)(l_0_4, "econser.exe") or (string.find)(l_0_4, "fshdll64.exe") or (string.find)(l_0_4, "fsgk32.exe") or (string.find)(l_0_4, "fhoster32.exe") or (string.find)(l_0_4, "fsma32.exe") or (string.find)(l_0_4, "fsorsp.exe") or (string.find)(l_0_4, "fssm32.exe") or (string.find)(l_0_4, "fsm32.exe") or (string.find)(l_0_4, "trigger.exe") or (string.find)(l_0_4, "fprottray.exe") or (string.find)(l_0_4, "fpwin.exe") or (string.find)(l_0_4, "fpavserver.exe") or (string.find)(l_0_4, "avk.exe") or (string.find)(l_0_4, "gdbginx64.exe") or (string.find)(l_0_4, "avkproxy.exe") or (string.find)(l_0_4, "gdscan.exe") or (string.find)(l_0_4, "avkwctlx64.exe") or (string.find)(l_0_4, "avkservice.exe") or (string.find)(l_0_4, "avktray.exe") or (string.find)(l_0_4, "gdkbfltexe32.exe") or (string.find)(l_0_4, "gdsc.exe") or (string.find)(l_0_4, "virusutilities.exe") or (string.find)(l_0_4, "guardxservice.exe") or (string.find)(l_0_4, "guardxkickoff_x64.exe") or (string.find)(l_0_4, "iptray.exe") or (string.find)(l_0_4, "k7rtscan.exe") or (string.find)(l_0_4, "k7fwsrvc.exe") or (string.find)(l_0_4, "k7pssrvc.exe") or (string.find)(l_0_4, "k7emlpxy.exe") or (string.find)(l_0_4, "k7tsecurity.exe") or (string.find)(l_0_4, "k7avscan.exe") or (string.find)(l_0_4, "k7crvsvc.exe") or (string.find)(l_0_4, "k7sysmon.exe") or (string.find)(l_0_4, "k7tsmain.exe") or (string.find)(l_0_4, "k7tsmngr.exe") or (string.find)(l_0_4, "nanosvc.exe") or (string.find)(l_0_4, "nanoav.exe") or (string.find)(l_0_4, "nnf.exe") or (string.find)(l_0_4, "nvcsvc.exe") or (string.find)(l_0_4, "nbrowser.exe") or (string.find)(l_0_4, "nseupdatesvc.exe") or (string.find)(l_0_4, "nfservice.exe") or (string.find)(l_0_4, "nwscmon.exe") or (string.find)(l_0_4, "nfservice.exe") or (string.find)(l_0_4, "njeeves2.exe") or (string.find)(l_0_4, "nvcod.exe") or (string.find)(l_0_4, "nvoy.exe") or (string.find)(l_0_4, "zllh.exe") or (string.find)(l_0_4, "zlh.exe") or (string.find)(l_0_4, "nprosec.exe") or (string.find)(l_0_4, "zanda.exe") or (string.find)(l_0_4, "ns.exe") or (string.find)(l_0_4, "acs.exe") or (string.find)(l_0_4, "op_mon.exe") or (string.find)(l_0_4, "psanhost.exe") or (string.find)(l_0_4, "psuaservice.exe") or (string.find)(l_0_4, "psuamain.exe") or (string.find)(l_0_4, "agentsvc.exe") or (string.find)(l_0_4, "bdssvc.exe") or (string.find)(l_0_4, "emlproxy.exe") or (string.find)(l_0_4, "opssvc.exe") or (string.find)(l_0_4, "onlinent.exe") or (string.find)(l_0_4, "quhlpsvc.exe") or (string.find)(l_0_4, "sapissvc.exe") or (string.find)(l_0_4, "scanner.exe") or (string.find)(l_0_4, "scanwscs.exe") or (string.find)(l_0_4, "scproxysrv.exe") or (string.find)(l_0_4, "scsecsvc.exe") or (string.find)(l_0_4, "superantispyware.exe") or (string.find)(l_0_4, "sascore64.exe") or (string.find)(l_0_4, "ssupdate64.exe") or (string.find)(l_0_4, "uiseagnt.exe") or (string.find)(l_0_4, "ptwatchdog.exe") or (string.find)(l_0_4, "ptsvchost.exe") or (string.find)(l_0_4, "ptsessionagent.exe") or (string.find)(l_0_4, "coreframeworkhost.exe") or (string.find)(l_0_4, "coreserviceshell.exe") or (string.find)(l_0_4, "uiupdatetray.exe") or (string.find)(l_0_4, "vipreui.exe") or (string.find)(l_0_4, "sbamsvc.exe") or (string.find)(l_0_4, "sbamtray.exe") or (string.find)(l_0_4, "sbpimsvc.exe") or (string.find)(l_0_4, "bavhm.exe") or (string.find)(l_0_4, "bavsvc.exe") or (string.find)(l_0_4, "bavtray.exe") or (string.find)(l_0_4, "bav.exe") or (string.find)(l_0_4, "bavwebclient.exe") or (string.find)(l_0_4, "bavupdater.exe") or (string.find)(l_0_4, "sdscan.exe") or (string.find)(l_0_4, "sdfssvc.exe") or (string.find)(l_0_4, "sdtray.exe") or (string.find)(l_0_4, "unthreat.exe") or (string.find)(l_0_4, "utsvc.exe")) then
-        local l_0_5 = (sigattr_tail[l_0_3]).utf8p2
-        if (string.len)(l_0_5) > 1 then
-          return mp.INFECTED
+Infrastructure_CryptoSearcher = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = (mp.getfilesize)()
+  if l_1_1 > 250000 then
+    return false
+  end
+  local l_1_2 = l_1_0 - 8192
+  do
+    if 0 < l_1_2 then
+      local l_1_3 = l_1_2
+    end
+    -- DECOMPILER ERROR at PC12: Confused about usage of register: R3 in 'UnsetPending'
+
+    local l_1_4 = nil
+    local l_1_5 = l_1_1 - l_1_3
+    -- DECOMPILER ERROR at PC16: Overwrote pending register: R5 in 'AssignReg'
+
+    if l_1_5 < 16384 then
+      (mp.readprotection)(false)
+      local l_1_6 = nil
+      local l_1_7 = (mp.readfile)(l_1_4, 16384)
+      local l_1_8 = -1
+      local l_1_9 = -1
+      local l_1_10 = {["\'"] = true, ["\""] = true, [">"] = true, ["<"] = true, [" "] = true, ["\t"] = true}
+      local l_1_11 = {}
+      local l_1_12 = "MpInternal_researchdata="
+      local l_1_13 = (string.gmatch)(l_1_7, "([%\"%\'%>%. ])([013baADLm]%w+)(%W)")
+      for l_1_17,l_1_18,l_1_19 in l_1_13 do
+        local l_1_14 = false
+        local l_1_21 = ""
+        local l_1_22 = ""
+        if l_1_10[l_1_18] == true and l_1_10[l_1_20] == true then
+          local l_1_23 = ""
+          if (string.len)(l_1_19) > 25 and l_1_11[l_1_19] == nil then
+            l_1_11[l_1_19] = 1
+            local l_1_24 = nil
+            local l_1_25 = l_1_19:sub(1, 1)
+            local l_1_26 = l_1_19:sub(1, 2)
+            local l_1_27 = l_1_19:sub(1, 3)
+            local l_1_28 = l_1_19:sub(1, 4)
+          end
+          do
+            -- DECOMPILER ERROR at PC103: Overwrote pending register: R20 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC104: Overwrote pending register: R21 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC105: Overwrote pending register: R22 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC113: Overwrote pending register: R21 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC114: Overwrote pending register: R22 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC122: Overwrote pending register: R21 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC123: Overwrote pending register: R22 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC135: Overwrote pending register: R20 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC136: Overwrote pending register: R21 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC137: Overwrote pending register: R22 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC149: Overwrote pending register: R20 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC150: Overwrote pending register: R21 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC151: Overwrote pending register: R22 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC166: Overwrote pending register: R20 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC167: Overwrote pending register: R21 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC168: Overwrote pending register: R22 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
+
+            -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
+
+            -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
+
+            -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
+
+            -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
+
+            -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
+
+            -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
+
+            if ((((l_1_25 ~= "1" and l_1_25 ~= "3" and l_1_27 ~= "bc1") or l_1_26 == "0x") and l_1_7:find("send SHIB", 1, true) ~= nil and l_1_7:find("send BNB", 1, true) == nil) or l_1_25 == "L" or l_1_25 == "M" or l_1_28 ~= "ltc1" or l_1_24 <= 25 or l_1_24 >= 36 or l_1_27 == "Ae2" or l_1_19:sub(1, 5) == "addr1" or l_1_19:sub(1, 5) ~= "DdzFF" or l_1_24 <= 25 or l_1_24 >= 200 or l_1_21 ~= "") and l_1_22 ~= "" and l_1_23 ~= "" then
+              l_1_14 = true
+              if l_1_12 == "MpInternal_researchdata=" then
+                l_1_12 = l_1_12 .. l_1_22 .. "=" .. l_1_21
+              else
+                l_1_12 = l_1_12 .. "," .. l_1_22 .. "=" .. l_1_21
+              end
+              if l_1_8 < 0 and l_1_9 < 0 then
+                local l_1_29 = nil
+                if (string.find)(l_1_7, l_1_21, 1, true) ~= nil then
+                  l_1_8 = l_1_4 + (string.find)(l_1_7, l_1_21, 1, true) - 1
+                  l_1_9 = l_1_6 - (string.find)(l_1_7, l_1_21, 1, true) + 1
+                end
+              end
+            end
+            do
+              -- DECOMPILER ERROR at PC207: LeaveBlock: unexpected jumping out DO_STMT
+
+              -- DECOMPILER ERROR at PC207: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC207: LeaveBlock: unexpected jumping out IF_STMT
+
+            end
+          end
         end
       end
+      -- DECOMPILER ERROR at PC209: Confused about usage of register: R13 in 'UnsetPending'
+
+      if l_1_14 == false then
+        return false
+      else
+        ;
+        (mp.set_mpattribute)(l_1_12)
+        if l_1_8 > -1 and l_1_9 > 0 then
+          (mp.vfo_add_filechunk)(l_1_8, l_1_9, "[CryptoSearcher]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+        end
+      end
+      return true
     end
   end
 end
-return mp.CLEAN
+
+LoadMatchedDataInBuffer = function()
+  -- function num : 0_1
+  local l_2_0 = nil
+  local l_2_1 = nil
+  if ((mp.GetBruteMatchData)()).is_header then
+    l_2_1 = (tostring(headerpage)):sub(((mp.GetBruteMatchData)()).match_offset, ((mp.GetBruteMatchData)()).match_offset + mp.HEADERPAGE_SZ)
+  else
+    l_2_1 = (tostring(footerpage)):sub(((mp.GetBruteMatchData)()).match_offset, ((mp.GetBruteMatchData)()).match_offset + mp.FOOTERPAGE_SZ)
+  end
+  l_2_1 = (string.lower)(l_2_1)
+  return l_2_1
+end
+
+GetPatternOccurenceCount = function(l_3_0, l_3_1)
+  -- function num : 0_2
+  local l_3_2 = 0
+  for l_3_6 in (string.gmatch)(l_3_0, l_3_1) do
+    l_3_2 = l_3_2 + 1
+  end
+  return l_3_2
+end
+
 

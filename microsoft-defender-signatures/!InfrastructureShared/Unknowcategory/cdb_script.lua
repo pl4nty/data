@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:EWBFEquihash")
+(mp.set_mpattribute)("PUA:Block:AirInstaller")
 return mp.INFECTED
 

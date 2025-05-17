@@ -3,16 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->[XLMSharedStrings]", -20, true) ~= nil then
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_0 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+      if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
+        (bm.add_related_file)(l_0_7)
+        return mp.INFECTED
+      end
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_1 = ((mp.GetNormalizedScript)(true))
-local l_0_2 = nil
-l_0_1 = (string.gsub)(l_0_1, "\"&amp;\"", "")
-if l_0_2 > 3 then
-  (mp.vfo_add_buffer)(l_0_1, "[XLMSharedStrings]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-  return mp.INFECTED
-end
-return mp.CLEAN
 

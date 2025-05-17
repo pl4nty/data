@@ -3,21 +3,13 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[5]).matched then
-    local l_0_0, l_0_1, l_0_2 = nil
-  else
-  end
-  if (this_sigattrlog[6]).matched then
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (this_sigattrlog[6]).utf8p2 == nil or (string.len)((this_sigattrlog[6]).utf8p2) == 0 then
-      return mp.CLEAN
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if (string.find)(l_0_0, "\\programdata\\", 1, true) then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

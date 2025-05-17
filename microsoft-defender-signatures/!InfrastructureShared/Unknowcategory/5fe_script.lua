@@ -3,8 +3,5 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_sigattr_event_count)(16395) > 10 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.LOWFI
 

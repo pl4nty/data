@@ -3,9 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if (l_0_1 == "isafetray.exe" or l_0_1 == "isafesvc.exe") and l_0_0 ~= nil and l_0_0:find("\\elex-tech\\yac", 1, true) ~= nil then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 256 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (mp.getfilename)()
+if (string.sub)(l_0_1, -4) ~= ".dat" then
+  return mp.CLEAN
+end
+if headerpage[1] ~= 170 then
+  return mp.CLEAN
+end
+if headerpage[2] ~= 254 then
+  return mp.CLEAN
+end
+if headerpage[3] ~= 14 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

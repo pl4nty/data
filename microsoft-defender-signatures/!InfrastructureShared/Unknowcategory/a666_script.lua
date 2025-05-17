@@ -3,30 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoHotKey_+") then
-  return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv") then
-  local l_0_0, l_0_1 = nil, nil
-  if (hstrlog[1]).matched then
-    l_0_0 = ((hstrlog[1]).match_offsets)[1]
-    l_0_1 = (hstrlog[1]).VA + l_0_0
-    local l_0_2 = (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1)
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1) ~= 3192604835 then
-      return mp.INFECTED
+if (hstrlog[2]).VA < (hstrlog[1]).VA and (hstrlog[1]).VA - (hstrlog[2]).VA < 1024 then
+  local l_0_0 = 11
+  local l_0_1 = 10
+  local l_0_2 = (mp.readu_u32)((pe.mmap_va)((hstrlog[2]).VA + 4, 4), 1)
+  local l_0_3 = (pe.mmap_va)(l_0_2, l_0_0 * 2 + 1)
+  l_0_3 = (mp.utf16to8)(l_0_3)
+  local l_0_4 = (mp.readu_u32)((pe.mmap_va)((hstrlog[3]).VA + 13, 4), 1)
+  local l_0_5 = (pe.mmap_va)(l_0_4, l_0_1 * 4 + 2 + 2)
+  local l_0_6 = (mp.utf16to8)(l_0_5)
+  local l_0_7 = ""
+  for l_0_11 = 3, l_0_1 * 2 + 2, 2 do
+    local l_0_12 = tonumber((string.sub)(l_0_6, l_0_11 - 2, l_0_11 - 1), 16)
+    local l_0_13 = tonumber((string.sub)(l_0_6, l_0_11, l_0_11 + 1), 16)
+    local l_0_14 = (string.byte)(l_0_3, (l_0_11 - 1) / 2)
+    local l_0_15 = (mp.bitxor)(l_0_13, l_0_14)
+    if l_0_15 - l_0_12 < 0 then
+      l_0_7 = l_0_7 .. (string.char)(l_0_15 - l_0_12 + 255)
+    else
+      l_0_7 = l_0_7 .. (string.char)(l_0_15 - l_0_12)
     end
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 4, 4), 1) ~= 2840226968 then
-      return mp.INFECTED
-    end
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 8, 4), 1) ~= 173231257 then
-      return mp.INFECTED
-    end
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 12, 4), 1) ~= 2101925510 then
-      return mp.INFECTED
-    end
+  end
+  if l_0_7 == "cmd /c tas" then
+    return mp.INFECTED
   end
 end
 do

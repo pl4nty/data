@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsHipsRuleEnabled)("d4f940ab-401b-4efc-aadc-ad5f3c50688a") == true then
+if (mp.getfilesize)() < 256 then
   return mp.INFECTED
 end
 return mp.CLEAN

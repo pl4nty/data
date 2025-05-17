@@ -3,45 +3,33 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-      local l_0_1 = (this_sigattrlog[2]).utf8p2
-    else
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if (mp.ispackedwith)("AutoHotKey_+") then
+  return mp.CLEAN
+end
+if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv") then
+  local l_0_0, l_0_1 = nil, nil
+  if (hstrlog[1]).matched then
+    l_0_0 = ((hstrlog[1]).match_offsets)[1]
+    l_0_1 = (hstrlog[1]).VA + l_0_0
+    local l_0_2 = (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1)
+    if (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1) ~= 3192604835 then
+      return mp.INFECTED
     end
-    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
-        local l_0_2, l_0_3 = (this_sigattrlog[4]).utf8p2
-      end
-      -- DECOMPILER ERROR at PC69: Confused about usage of register: R0 in 'UnsetPending'
-
-      if l_0_2 == nil then
-        return mp.CLEAN
-      end
-      local l_0_4 = nil
-      local l_0_5 = {[".js"] = true, vbs = true, wsf = true, jse = true, vbe = true}
-      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
-        local l_0_6 = nil
-        -- DECOMPILER ERROR at PC90: Confused about usage of register: R7 in 'UnsetPending'
-
-        if (string.len)(R7_PC90) > 3 and (sysio.IsFileExists)(R7_PC90) and l_0_5[(string.sub)(R7_PC90, -3)] then
-          (bm.add_related_file)(l_0_11)
-          ;
-          (mp.ReportLowfi)(l_0_11, 4023056107)
-        end
-      end
+    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 4, 4), 1) ~= 2840226968 then
+      return mp.INFECTED
+    end
+    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 8, 4), 1) ~= 173231257 then
+      return mp.INFECTED
+    end
+    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 12, 4), 1) ~= 2101925510 then
       return mp.INFECTED
     end
   end
+end
+do
+  return mp.CLEAN
 end
 

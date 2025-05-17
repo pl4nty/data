@@ -3,20 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and ((string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlservr.exe" or (string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlagent.exe") then
+    return mp.INFECTED
+  end
 end
-if peattributes.no_relocs ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 6 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

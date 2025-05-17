@@ -3,32 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).VA < (hstrlog[1]).VA and (hstrlog[1]).VA - (hstrlog[2]).VA < 1024 then
-  local l_0_0 = 11
-  local l_0_1 = 10
-  local l_0_2 = (mp.readu_u32)((pe.mmap_va)((hstrlog[2]).VA + 4, 4), 1)
-  local l_0_3 = (pe.mmap_va)(l_0_2, l_0_0 * 2 + 1)
-  l_0_3 = (mp.utf16to8)(l_0_3)
-  local l_0_4 = (mp.readu_u32)((pe.mmap_va)((hstrlog[3]).VA + 13, 4), 1)
-  local l_0_5 = (pe.mmap_va)(l_0_4, l_0_1 * 4 + 2 + 2)
-  local l_0_6 = (mp.utf16to8)(l_0_5)
-  local l_0_7 = ""
-  for l_0_11 = 3, l_0_1 * 2 + 2, 2 do
-    local l_0_12 = tonumber((string.sub)(l_0_6, l_0_11 - 2, l_0_11 - 1), 16)
-    local l_0_13 = tonumber((string.sub)(l_0_6, l_0_11, l_0_11 + 1), 16)
-    local l_0_14 = (string.byte)(l_0_3, (l_0_11 - 1) / 2)
-    local l_0_15 = (mp.bitxor)(l_0_13, l_0_14)
-    if l_0_15 - l_0_12 < 0 then
-      l_0_7 = l_0_7 .. (string.char)(l_0_15 - l_0_12 + 255)
-    else
-      l_0_7 = l_0_7 .. (string.char)(l_0_15 - l_0_12)
-    end
-  end
-  if l_0_7 == "cmd /c tas" then
-    return mp.INFECTED
-  end
-end
-do
+if pevars.epsec ~= 2 or (pesecs[2]).Name ~= ".rsrc" or (pesecs[2]).SizeOfRawData ~= 512 and (pesecs[2]).SizeOfRawData ~= 1024 then
   return mp.CLEAN
 end
+local l_0_0 = (hstrlog[2]).VA + 15
+local l_0_1 = (pe.mmap_va)(l_0_0, 6)
+local l_0_2 = (string.byte)((pe.mmap_va)(l_0_0 + 6, 1)) + (string.byte)((pe.mmap_va)(l_0_0 + 7, 1)) * 256
+local l_0_3 = (string.byte)((pe.mmap_va)(l_0_0 + 11, 1)) + (string.byte)((pe.mmap_va)(l_0_0 + 12, 1)) * 256
+for l_0_7 = 15, 105, 15 do
+  local l_0_8 = l_0_0 + l_0_7
+  if l_0_1 ~= (pe.mmap_va)(l_0_8, 6) or l_0_2 - l_0_7 ~= (string.byte)((pe.mmap_va)(l_0_8 + 6, 1)) + (string.byte)((pe.mmap_va)(l_0_8 + 7, 1)) * 256 or l_0_3 - l_0_7 ~= (string.byte)((pe.mmap_va)(l_0_8 + 11, 1)) + (string.byte)((pe.mmap_va)(l_0_8 + 12, 1)) * 256 then
+    return mp.CLEAN
+  end
+end
+return mp.INFECTED
 

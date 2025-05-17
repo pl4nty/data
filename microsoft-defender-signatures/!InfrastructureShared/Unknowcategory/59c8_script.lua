@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  (mp.changedetectionname)(805306478)
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 25 then
+  (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A1")
 end
 return mp.INFECTED
 

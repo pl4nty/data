@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if peattributes.ismsil == true and (mp.getfilesize)() < 700000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

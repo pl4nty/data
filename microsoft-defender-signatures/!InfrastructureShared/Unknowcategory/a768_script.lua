@@ -3,22 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
--- DECOMPILER ERROR at PC4: No list found for R0 , SetList fails
-
-local l_0_1 = {}
--- DECOMPILER ERROR at PC6: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC7: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC8: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC9: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC11: Overwrote pending register: R3 in 'AssignReg'
-
-;
-(("    {\n        \"version\": 1,\n        \"environment\": \"MpTesting\",\n        \"usage\": 1,\n        \"hashType\": 0,\n        \"intThumbs\": [\n            \"50a0a57796ce1d8bee7c74c5541b66639e5ecf688901d8f16db388210b60718c\"\n        ],\n        \"rootThumbs\": [\n            \"6108d51df89fb6095bbd51edd95465ce8f6b70c1c85c2f0aa9e4629d6d06ed6e\",\n            \"0f2de5cb4e3e240a2635510c6085763a8a3eb882fb0495428f82e20044c24e44\"\n        ]\n    }\n   ").LoadDBVar)(("").DBVAR_ARRAY_WIDESTRING, "TrustAnchor_MpTesting", l_0_0, 1)
-;
-(database.LoadDBVar)(database.DBVAR_ARRAY_WIDESTRING, "TrustAnchor_MpTestingNoTLS", l_0_1, 1)
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = true
+local l_0_3 = false
+for l_0_7,l_0_8 in ipairs(l_0_1) do
+  local l_0_9 = (mp.bitand)(l_0_8.reason_ex, bm.RELATIONSHIP_CREATED)
+  if l_0_9 == bm.RELATIONSHIP_CREATED then
+    local l_0_10 = (string.lower)(l_0_8.image_path)
+    if (string.find)(l_0_10, "\\windows\\sys", 1, true) or (string.find)(l_0_10, "\\program files", 1, true) or (string.find)(l_0_10, "\\choco", 1, true) or (string.find)(l_0_10, "\\wlanscan", 1, true) or (string.find)(l_0_10, "\\csc.exe", 1, true) or (string.find)(l_0_10, "\\7z", 1, true) or (string.find)(l_0_10, "\\bginfo", 1, true) or (string.find)(l_0_10, "\\cloudbuild\\", 1, true) or (string.find)(l_0_10, "\\winscp.exe", 1, true) or (string.find)(l_0_10, "\\dismhost", 1, true) then
+      l_0_2 = false
+    else
+      l_0_2 = true
+    end
+    if (string.find)(l_0_10, "regsvr32.exe", 1, true) or (string.find)(l_0_10, "rundll32.exe", 1, true) or (string.find)(l_0_10, "\\java", 1, true) then
+      l_0_2 = true
+    end
+    if l_0_2 == true then
+      (MpCommon.TurnNriOnProcess)(l_0_8.ppid)
+      ;
+      (bm.trigger_sig)("AmsiDownloadExecProc", "Trigger", l_0_8.ppid)
+      l_0_3 = true
+    end
+  end
+end
+if l_0_3 == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

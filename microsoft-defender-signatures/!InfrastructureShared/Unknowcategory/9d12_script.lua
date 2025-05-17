@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
-  return mp.INFECTED
-end
-if not peattributes.isexe then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
   return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)).IntegrityLevel then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

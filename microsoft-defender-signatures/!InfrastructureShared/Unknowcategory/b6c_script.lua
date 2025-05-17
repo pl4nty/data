@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:IObit")
+(mp.set_mpattribute)("SIGATTR:Ardamax")
 return mp.INFECTED
 

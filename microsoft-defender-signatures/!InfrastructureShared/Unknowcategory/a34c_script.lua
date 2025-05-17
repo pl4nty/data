@@ -3,8 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.headerchecksum0 == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.no_debug == true and peattributes.no_mipsgp == true and peattributes.no_boundimport == true and peattributes.no_ep == true and peattributes.no_comruntime == true then
-  return mp.INFECTED
+for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_tail[l_0_3]).matched and (sigattr_tail[l_0_3]).attribute == 16393 then
+    local l_0_4 = (sigattr_tail[l_0_3]).utf8p1
+    if l_0_4 then
+      l_0_4 = (string.lower)(l_0_4)
+      if l_0_4 and ((string.find)(l_0_4, "useraccountcontrolsettings.exe") or (string.find)(l_0_4, "taskmgr.exe")) then
+        local l_0_5 = (sigattr_tail[l_0_3]).utf8p2
+        if (string.len)(l_0_5) > 1 then
+          return mp.INFECTED
+        end
+      end
+    end
+  end
 end
 return mp.CLEAN
 

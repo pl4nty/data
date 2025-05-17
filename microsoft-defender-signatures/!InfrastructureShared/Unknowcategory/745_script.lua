@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 16777216 then
+local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%ProgramData%")
+if not (sysio.IsFolderExists)(l_0_0) then
   return mp.CLEAN
 end
-if #(mp.enum_mpattributesubstring)("SCPT:CipherSlateB") >= 2 then
-  return mp.INFECTED
-else
-  return mp.CLEAN
-end
-return mp.CLEAN
+;
+(mp.TriggerScanResource)("folder", l_0_0)
+return mp.INFECTED
 

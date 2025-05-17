@@ -3,17 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
-  return mp.LOWFI
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 == nil or (this_sigattrlog[3]).utf8p2 ~= nil then
+    if (string.len)((this_sigattrlog[3]).utf8p2) < 100 then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.find)((this_sigattrlog[3]).utf8p2, "%.ps1") then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
+
+    if not (string.find)((this_sigattrlog[3]).utf8p2, "{%d%d?}{%d%d?}") then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC62: Confused about usage of register: R0 in 'UnsetPending'
+
+    local l_0_7 = nil
+    local l_0_8 = nil
+    if (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "/admin/", 1, true) and (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "get.", 1, true) and (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "php", 1, true) and (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "invoke", 1, true) then
+      return mp.INFECTED
+    end
+  end
+  do
+    return mp.CLEAN
+  end
 end
-if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 and (hstrlog[10]).hitcount == 0 then
-  return mp.LOWFI
-end
-if (hstrlog[11]).hitcount == 0 and (hstrlog[12]).hitcount == 0 and (hstrlog[13]).hitcount == 0 and (hstrlog[14]).hitcount == 0 and (hstrlog[15]).hitcount == 0 and (hstrlog[16]).hitcount == 0 then
-  return mp.LOWFI
-end
-if (hstrlog[17]).hitcount == 0 and (hstrlog[18]).hitcount == 0 and (hstrlog[19]).hitcount == 0 and (hstrlog[20]).hitcount == 0 and (hstrlog[21]).hitcount == 0 then
-  return mp.LOWFI
-end
-return mp.INFECTED
 

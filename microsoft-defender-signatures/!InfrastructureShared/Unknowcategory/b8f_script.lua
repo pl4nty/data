@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Fitsnuf")
+(mp.set_mpattribute)("PUA:Block:WebAlta")
 return mp.INFECTED
 

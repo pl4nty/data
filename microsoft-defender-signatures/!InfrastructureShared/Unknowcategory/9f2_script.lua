@@ -3,133 +3,108 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetCertificateInfo)()
-if l_0_0 == nil or #l_0_0 == 0 then
-  return mp.CLEAN
-end
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  if l_0_5.AuthenticodeContentType ~= "PE" then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = nil
+  else
   end
-  local l_0_6 = l_0_5.Certificates
-  if l_0_6 ~= nil then
-    for l_0_10,l_0_11 in ipairs(l_0_6) do
-      local l_0_12 = l_0_11.Subject
-      if l_0_12 ~= nil and l_0_12.Organization ~= nil and l_0_12.CommonName then
-        local l_0_13 = {}
-        l_0_13["Yuanyuan Mei"] = true
-        l_0_13["Tianjing Cheng"] = true
-        l_0_13["Ding Ruan"] = true
-        l_0_13["Xin Zhou"] = true
-        l_0_13["Yu Bao"] = true
-        l_0_13["Yuanyuan Zhang"] = true
-        l_0_13["Yupeng Zhang"] = true
-        l_0_13["Chao Wei"] = true
-        l_0_13["Beijing Caiyunshidai Technology Co., Ltd."] = true
-        l_0_13["BIG JOURNEY TECHNOLOGY LIMITED"] = true
-        l_0_13["VANKY TECHNOLOGY LIMITED"] = true
-        local l_0_14 = {}
-        l_0_14["Beijing Caiyunshidai Technology Co., Ltd."] = true
-        l_0_14["BIG JOURNEY TECHNOLOGY LIMITED"] = true
-        l_0_14["VANKY TECHNOLOGY LIMITED"] = true
-        local l_0_15 = {}
-        l_0_15["Wenchao Zhang"] = true
-        l_0_15["Junyan Li"] = true
-        l_0_15["Skytouch Technology Co., Limited"] = true
-        l_0_15["Beijing Xingyunwang Technology Co., Ltd"] = true
-        l_0_15["Hefei Infinity Technology Co., Ltd."] = true
-        l_0_15["Shanghai Yuntong Technology Co., Ltd."] = true
-        l_0_15["Xiaodong Wang"] = true
-        l_0_15["Jia Lu"] = true
-        l_0_15["Peng Zhang"] = true
-        l_0_15["Thinknice Co. Limited"] = true
-        local l_0_16 = {}
-        l_0_16["Skytouch Technology Co., Limited"] = true
-        l_0_16["Beijing Xingyunwang Technology Co., Ltd"] = true
-        l_0_16["Hefei Infinity Technology Co., Ltd."] = true
-        l_0_16["Shanghai Yuntong Technology Co., Ltd."] = true
-        l_0_16["Thinknice Co. Limited"] = true
-        local l_0_17 = {}
-        l_0_17["Nayun Online Network Technology (Shenzhen) Co., Ltd."] = true
-        local l_0_18 = {}
-        l_0_18["Jinnan Wu"] = true
-        l_0_18["Yang Liu"] = true
-        l_0_18["Chencheng Cai"] = true
-        l_0_18["Yanling Sun"] = true
-        l_0_18["Jianfei Zhu"] = true
-        l_0_18["Dening Hu"] = true
-        l_0_18["Nayun Online Network Technology (Shenzhen) Co., Ltd."] = true
-        l_0_18["Yuesong Pu"] = true
-        local l_0_19 = {}
-        l_0_19["EVANGEL TECHNOLOGY(HK) LIMITED"] = true
-        local l_0_20 = {}
-        l_0_20["Weiwei He"] = true
-        l_0_20["EVANGEL TECHNOLOGY(HK) LIMITED"] = true
-        local l_0_21 = {}
-        l_0_21["Sice Xing"] = true
-        l_0_21["Wei Liu"] = true
-        l_0_21["Shan Feng"] = true
-        l_0_21["Shulan Hou"] = true
-        l_0_21["Fuyuan Zhou"] = true
-        l_0_21["Luhong Han"] = true
-        l_0_21["Yongli Zhang"] = true
-        l_0_21["Jiang Liu"] = true
-        l_0_21["Yongli Li"] = true
-        l_0_21["Sivi Technology Limited"] = true
-        l_0_21["Zhiming Yuan"] = true
-        local l_0_22 = {}
-        l_0_22["Sivi Technology Limited"] = true
-        local l_0_23 = {}
-        l_0_23["Zhongju Wu"] = true
-        l_0_23["Houtao Zhou"] = true
-        local l_0_24 = (mp.utf16to8)(l_0_12.Organization)
-        local l_0_25 = (mp.utf16to8)(l_0_12.CommonName)
-        if l_0_24 == "No Organization Affiliation" then
-          if l_0_13[l_0_25] then
-            (mp.set_mpattribute)("Lua:ElexCertSasquor.A")
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p1 ~= nil then
+      local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
+    else
+    end
+    -- DECOMPILER ERROR at PC88: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p1 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p1 ~= nil then
+        local l_0_2 = (string.lower)((this_sigattrlog[4]).utf8p1)
+      else
+      end
+      -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
+
+      do
+        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p1 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p1 ~= nil then
+          local l_0_3 = (string.lower)((this_sigattrlog[6]).utf8p1)
+        else
+        end
+        -- DECOMPILER ERROR at PC160: Overwrote pending register: R0 in 'AssignReg'
+
+        do
+          if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p1 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p1 ~= nil then
+            local l_0_4 = (string.lower)((this_sigattrlog[8]).utf8p1)
           else
-            if l_0_15[l_0_25] then
-              (mp.set_mpattribute)("Lua:ElexCertSupTab.A")
+          end
+          -- DECOMPILER ERROR at PC196: Overwrote pending register: R0 in 'AssignReg'
+
+          do
+            if (not (this_sigattrlog[10]).matched or (this_sigattrlog[10]).utf8p1 == nil or (this_sigattrlog[11]).matched) and (this_sigattrlog[11]).utf8p1 ~= nil then
+              local l_0_5 = (string.lower)((this_sigattrlog[10]).utf8p1)
             else
-              if l_0_18[l_0_25] then
-                (mp.set_mpattribute)("Lua:ElexCertXadupi.A")
+            end
+            -- DECOMPILER ERROR at PC232: Overwrote pending register: R0 in 'AssignReg'
+
+            do
+              if (not (this_sigattrlog[12]).matched or (this_sigattrlog[12]).utf8p1 == nil or (this_sigattrlog[13]).matched) and (this_sigattrlog[13]).utf8p1 ~= nil then
+                local l_0_6 = (string.lower)((this_sigattrlog[12]).utf8p1)
               else
-                if l_0_21[l_0_25] then
-                  (mp.set_mpattribute)("Lua:ElexCertGhokswa.A")
+              end
+              -- DECOMPILER ERROR at PC268: Overwrote pending register: R0 in 'AssignReg'
+
+              do
+                if (not (this_sigattrlog[14]).matched or (this_sigattrlog[14]).utf8p1 == nil or (this_sigattrlog[15]).matched) and (this_sigattrlog[15]).utf8p1 ~= nil then
+                  local l_0_7 = (string.lower)((this_sigattrlog[14]).utf8p1)
                 else
-                  if l_0_23[l_0_25] then
-                    (mp.set_mpattribute)("Lua:ElexCertSuweezy.A")
+                end
+                -- DECOMPILER ERROR at PC304: Overwrote pending register: R0 in 'AssignReg'
+
+                do
+                  if (not (this_sigattrlog[16]).matched or (this_sigattrlog[16]).utf8p1 == nil or (this_sigattrlog[17]).matched) and (this_sigattrlog[17]).utf8p1 ~= nil then
+                    local l_0_8 = (string.lower)((this_sigattrlog[16]).utf8p1)
                   else
-                    if l_0_20[l_0_25] then
-                      (mp.set_mpattribute)("Lua:ElexCertChuckenit.A")
+                  end
+                  -- DECOMPILER ERROR at PC340: Overwrote pending register: R0 in 'AssignReg'
+
+                  do
+                    if (not (this_sigattrlog[18]).matched or (this_sigattrlog[18]).utf8p1 == nil or (this_sigattrlog[19]).matched) and (this_sigattrlog[19]).utf8p1 ~= nil then
+                      local l_0_9, l_0_10, l_0_11 = (string.lower)((this_sigattrlog[18]).utf8p1)
+                    else
+                    end
+                    -- DECOMPILER ERROR at PC363: Confused about usage of register: R0 in 'UnsetPending'
+
+                    if not (this_sigattrlog[20]).matched or (this_sigattrlog[20]).utf8p1 == nil or (string.lower)((this_sigattrlog[20]).utf8p1) ~= nil then
+                      local l_0_12 = (mp.ContextualExpandEnvironmentVariables)((string.lower)((this_sigattrlog[20]).utf8p1))
+                      if l_0_12 == nil then
+                        return mp.CLEAN
+                      end
+                      l_0_12 = (string.lower)(l_0_12)
+                      local l_0_13 = l_0_12:match("\\([^\\]+)$")
+                      local l_0_14 = (string.sub)(l_0_12, 1, (string.len)(l_0_12) - (string.len)(l_0_13) - 1)
+                      if l_0_13 == nil or l_0_14 == nil then
+                        return mp.CLEAN
+                      end
+                      if l_0_14:find(":\\windows\\system32", 1, true) or l_0_14:find(":\\windows\\syswow64", 1, true) then
+                        return mp.CLEAN
+                      end
+                      if l_0_14:find(":\\windows\\servicing", 1, true) or l_0_14:find(":\\windows\\winsxs", 1, true) then
+                        return mp.CLEAN
+                      end
+                      return mp.INFECTED
+                    end
+                    do
+                      return mp.CLEAN
                     end
                   end
                 end
               end
             end
           end
-        else
-          if l_0_14[l_0_24] and l_0_13[l_0_25] then
-            (mp.set_mpattribute)("Lua:ElexCertSasquor.A")
-          end
         end
-      end
-      if l_0_16[l_0_24] and l_0_15[l_0_25] then
-        (mp.set_mpattribute)("Lua:ElexCertSupTab.A")
-      end
-      if l_0_19[l_0_24] and l_0_20[l_0_25] then
-        (mp.set_mpattribute)("Lua:ElexCertChuckenit.A")
-      end
-      if l_0_22[l_0_24] and l_0_21[l_0_25] then
-        (mp.set_mpattribute)("Lua:ElexCertGhokswa.A")
-      end
-      if l_0_17[l_0_24] and l_0_18[l_0_25] then
-        (mp.set_mpattribute)("Lua:ElexCertXadupi.A")
       end
     end
   end
 end
-do return mp.CLEAN end
--- DECOMPILER ERROR at PC222: Confused about usage of register R1 for local variables in 'ReleaseLocals'
-
 

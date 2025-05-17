@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 300000000 then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
+  return mp.INFECTED
 end
-local l_0_0 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_0.ppid, "M")
-;
-(bm.add_action)("SmsAsyncScanEvent", 1000)
-return mp.INFECTED
+return mp.CLEAN
 

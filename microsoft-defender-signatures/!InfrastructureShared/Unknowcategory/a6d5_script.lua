@@ -3,60 +3,28 @@
 
 -- params : ...
 -- function num : 0
-check_expensive_loop = function(l_1_0, l_1_1, l_1_2)
-  -- function num : 0_0
-  if not l_1_0 or not l_1_1 or not l_1_2 then
-    return nil, nil, nil
-  end
-  local l_1_3 = (pe.vm_search)(l_1_0, l_1_0 + l_1_1, "\226", nil, pe.VM_SEARCH_FOP)
-  if l_1_3 == 4294967295 then
-    return nil, nil, nil
-  end
-  local l_1_4, l_1_5 = (mp.bsplit)((mp.readu_u16)((pe.mmap_va)(l_1_3, 2), 1), 8)
-  local l_1_6 = l_1_3 - (mp.bsplit)((mp.bitnot)(l_1_5), 8) - 4
-  l_1_6 = (pe.vm_search)(l_1_6, l_1_6 + 5, "\185", nil, pe.VM_SEARCH_FOP)
-  if l_1_6 == 4294967295 then
-    return nil, nil, nil
-  end
-  local l_1_7 = (pe.mmap_va)(l_1_6 + 1, 4)
-  l_1_7 = (mp.readu_u32)(l_1_7, 1)
-  if l_1_7 <= l_1_2 then
-    return nil, nil, nil
-  end
-  return l_1_3, l_1_6, l_1_7
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (string.lower)(l_0_0.command_line)
+if (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "\\ccmcache\\", 1, true) or (string.find)(l_0_1, "\\sysvol\\", 1, true) or (string.find)(l_0_1, "\\netlogon\\", 1, true) or (string.find)(l_0_1, " /exectype", 1, true) or (string.find)(l_0_1, "/nologo ", 1, true) then
+  return mp.CLEAN
 end
-
-local l_0_0 = 4
-local l_0_1 = 0
-local l_0_2 = 0
-local l_0_3 = 1048576
-local l_0_4 = pevars.sigaddr
-local l_0_5 = {}
-local l_0_6 = nil
-for l_0_10 = 1, l_0_0 do
-  local l_0_11 = check_expensive_loop(l_0_4, 384, 196608)
-  l_0_6 = 
-  l_0_5[l_0_10] = l_0_4
-  l_0_4 = l_0_11
-  if l_0_4 == nil then
-    break
-  end
-  if l_0_3 <= l_0_6 then
-    l_0_2 = l_0_2 + 1
-  end
-  l_0_4 = l_0_4 + 2
-  l_0_1 = l_0_10
+local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.vbs)")
+if l_0_2 and (sysio.IsFileExists)(l_0_2) then
+  (mp.ReportLowfi)(l_0_2, 1120308759)
+  ;
+  (bm.add_related_file)(l_0_2)
 end
-do
-  if l_0_1 < 3 then
-    return mp.CLEAN
-  end
-  if l_0_2 == 0 then
-    return mp.CLEAN
-  end
-  for l_0_15 = 1, l_0_1 do
-    (pe.mmap_patch_va)(l_0_5[l_0_15] + 1, "\001\000\000\000")
-  end
-  return mp.INFECTED
+local l_0_3 = (string.match)(l_0_1, "(%a:\\[^\"]-%.js)")
+if l_0_3 and (sysio.IsFileExists)(l_0_3) then
+  (mp.ReportLowfi)(l_0_3, 1120308759)
+  ;
+  (bm.add_related_file)(l_0_3)
 end
+local l_0_4 = (string.match)(l_0_1, "(%a:\\[^\"]-%.vbe)")
+if l_0_4 and (sysio.IsFileExists)(l_0_4) then
+  (mp.ReportLowfi)(l_0_4, 1120308759)
+  ;
+  (bm.add_related_file)(l_0_4)
+end
+return mp.INFECTED
 

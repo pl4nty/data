@@ -3,11 +3,55 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+if pehdr.NumberOfSections ~= 3 then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\systemsettings.exe", 1, true) or (string.find)(l_0_0, "\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\explorer.exe", 1, true) or (string.find)(l_0_0, "\\openwith.exe", 1, true) or (string.find)(l_0_0, "\\searchprotocolhost.exe", 1, true) or (string.find)(l_0_0, "\\searchindexer.exe", 1, true) or (string.find)(l_0_0, "\\runtimebroker.exe", 1, true) or (string.find)(l_0_0, "\\msiexec.exe", 1, true) or (string.find)(l_0_0, "\\taskhostw.exe", 1, true) or (string.find)(l_0_0, "\\microsoft\\edge", 1, true) or (string.find)(l_0_0, "\\temp\\edgemitmp", 1, true) or (string.find)(l_0_0, "\\winzip", 1, true) or (string.find)(l_0_0, "\\google\\chrome\\", 1, true) or (string.find)(l_0_0, "\\userprofilemanager.exe", 1, true) then
+if pehdr.SizeOfImage < 282624 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage > 344064 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size < 192 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size > 240 then
+  return mp.CLEAN
+end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.lastscn_writable ~= true then
+  return mp.CLEAN
+end
+if peattributes.no_relocs ~= true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).VirtualAddress ~= 4096 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData < 4096 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData > 8192 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).VirtualAddress > 20480 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).VirtualAddress < 12288 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData < 262144 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 323584 then
   return mp.CLEAN
 end
 return mp.INFECTED

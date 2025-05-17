@@ -3,33 +3,30 @@
 
 -- params : ...
 -- function num : 0
+if pevars.sigaddr == 2138046464 then
+  (mp.readprotection)(false)
+  local l_0_0 = ((pe.mmap_va)(pevars.sigaddr, 512))
+  local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
+  l_0_1 = (string.gsub)(l_0_0, "ã¿", "")
+  l_0_1 = (string.gsub)(l_0_1, "ã“", "")
+  l_0_1 = (string.gsub)(l_0_1, "ä“", "")
+  l_0_1 = (string.gsub)(l_0_1, "\135\255", "")
+  l_0_1 = (string.gsub)(l_0_1, "ãˆ", "")
+  l_0_1 = (string.gsub)(l_0_1, "QY", "")
+  l_0_1 = (string.gsub)(l_0_1, "äÌ", "")
+  l_0_1 = (string.gsub)(l_0_1, "êê+", "")
+  l_0_1 = (string.gsub)(l_0_1, "á“", "")
+  l_0_1 = (string.gsub)(l_0_1, "V^", "")
+  local l_0_12 = l_0_2 + l_0_3 + l_0_4 + l_0_5 + l_0_6 + l_0_7 + l_0_8 + l_0_9 + l_0_10 + l_0_11
+  if l_0_12 < 65 then
+    return mp.CLEAN
+  end
+  local l_0_13 = "!decrypted" .. l_0_1
+  ;
+  (mp.vfo_add_buffer)(l_0_13, "[Obfuscator.ZV]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  return mp.LOWFI
+end
 do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
-    if (string.find)(l_0_0, ":\\windows", 2, true) or (string.find)(l_0_0, "%windir%", 1, true) or (string.find)(l_0_0, "\"%windows%", 1, true) then
-      return mp.CLEAN
-    end
-  end
-  local l_0_1 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
-  if (mp.IsKnownFriendlyFile)(l_0_1, true, false) == false then
-    (bm.add_related_file)(l_0_1)
-  end
-  local l_0_2 = ((bm.get_current_process_startup_info)()).ppid
-  if l_0_2 ~= nil then
-    local l_0_3 = (string.lower)((mp.GetProcessCommandLine)(l_0_2))
-    if l_0_3 ~= nil then
-      local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_3)
-      for l_0_8,l_0_9 in ipairs(l_0_4) do
-        if (sysio.IsFileExists)(l_0_9) then
-          (bm.add_related_file)(l_0_9)
-        end
-      end
-    end
-  end
-  do
-    l_0_3 = mp
-    l_0_3 = l_0_3.INFECTED
-    return l_0_3
-  end
+  return mp.CLEAN
 end
 

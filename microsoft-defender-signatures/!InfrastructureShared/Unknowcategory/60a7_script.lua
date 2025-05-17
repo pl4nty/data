@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if not peattributes.suspicious_image_version then
-  return mp.CLEAN
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

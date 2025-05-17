@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_ScanDetrahere = function()
-  -- function num : 0_0
-  (MpDetection.ScanResource)("regkeyvalue://HKLM\\SYSTEM\\CurrentControlSet\\Control\\Network\\\\set_pt")
+if (Remediation.Threat).Active and (string.find)((Remediation.Threat).Name, "Behavior:Win32/WFP_BFE.B", 1, true) then
+  (Remediation.SetRebootRequired)()
 end
-
 

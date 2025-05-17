@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-if mp.HSTR_CALLER_SMS == l_0_0 then
-  return mp.INFECTED
+if not peattributes.suspicious_section_name then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("SLF:Win64/Shelcorid.C")
-return mp.LOWFI
+if not peattributes.executes_from_dynamic_memory then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -9,8 +9,8 @@ do
     local l_0_0, l_0_1 = nil, "|.js|jse|vbs|vbe|wsf|wsh"
   end
   do
-    if (this_sigattrlog[5]).matched then
-      local l_0_2 = (this_sigattrlog[5]).utf8p2
+    if (this_sigattrlog[2]).matched then
+      local l_0_2 = (this_sigattrlog[2]).utf8p2
     end
     if l_0_3 ~= nil then
       local l_0_4 = nil

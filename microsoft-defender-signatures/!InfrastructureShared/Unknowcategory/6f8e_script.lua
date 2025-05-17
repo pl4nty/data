@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win64/Trickbot.PA!Pra1") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.UfsGetMetadataBool)("ScriptSigDecoded", false) == 0 and "ScriptSigDecoded" == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/RepayGum.A!dha")
+return mp.INFECTED
 

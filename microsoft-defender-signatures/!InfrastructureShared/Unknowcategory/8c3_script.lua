@@ -3,21 +3,49 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == true and ((pehdr.DataDirectory)[1]).Size ~= 0 then
-  local l_0_0 = ((pehdr.DataDirectory)[1]).RVA
-  ;
-  (mp.readprotection)(false)
-  local l_0_1 = (mp.readfile)((pe.foffset_rva)(l_0_0), 36)
-  if (mp.readu_u32)(l_0_1, 21) == 1 and (mp.readu_u32)(l_0_1, 25) == 1 then
-    local l_0_2 = (mp.readu_u32)(l_0_1, 33)
-    l_0_1 = (pe.mmap_rva)(l_0_2, 4)
-    local l_0_3 = (mp.readu_u32)(l_0_1, 1)
-    if (pe.mmap_rva)(l_0_3, 9) == "plg_init\000" then
-      return mp.INFECTED
+local l_0_0, l_0_4 = nil, nil
+if (this_sigattrlog[6]).matched then
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R1 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R1 in 'UnsetPending'
+
+  if (this_sigattrlog[6]).utf8p1 and (string.lower)((this_sigattrlog[6]).utf8p1) then
+    l_0_1 = (string.len)((string.lower)((this_sigattrlog[6]).utf8p1))
+    -- DECOMPILER ERROR at PC26: Confused about usage of register: R1 in 'UnsetPending'
+
+    if l_0_1 >= 16 then
+      local l_0_2, l_0_3 = , (string.match)((string.lower)((this_sigattrlog[6]).utf8p1), "^%l:\\(%w+)\\(%w+)%.exe")
+      if l_0_3 ~= nil and (string.lower)((this_sigattrlog[6]).utf8p1) ~= nil and l_0_3 == (string.lower)((this_sigattrlog[6]).utf8p1) then
+        (bm.add_related_file)((this_sigattrlog[6]).utf8p1)
+        return mp.INFECTED
+      end
     end
   end
-end
-do
-  return mp.CLEAN
+else
+  do
+    if (this_sigattrlog[7]).matched then
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC57: Confused about usage of register: R1 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC64: Confused about usage of register: R1 in 'UnsetPending'
+
+      if (this_sigattrlog[7]).utf8p1 and (string.lower)((this_sigattrlog[7]).utf8p1) then
+        l_0_5 = (string.len)((string.lower)((this_sigattrlog[7]).utf8p1))
+        -- DECOMPILER ERROR at PC71: Confused about usage of register: R1 in 'UnsetPending'
+
+        if l_0_5 >= 16 then
+          local l_0_6, l_0_7 = , (string.match)((string.lower)((this_sigattrlog[7]).utf8p1), "^%l:\\(%w+)\\(%w+)%.dll")
+          if l_0_7 ~= nil and (string.lower)((this_sigattrlog[7]).utf8p1) ~= nil and l_0_7 == (string.lower)((this_sigattrlog[7]).utf8p1) then
+            (bm.add_related_file)((this_sigattrlog[7]).utf8p1)
+            return mp.INFECTED
+          end
+        end
+      end
+    end
+    do
+      return mp.CLEAN
+    end
+  end
 end
 

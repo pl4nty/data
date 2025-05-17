@@ -3,11 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if elfhdr.type == 2 or elfhdr.type == 3 then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[11]).matched then
+    local l_0_0 = nil
+  end
+  -- DECOMPILER ERROR at PC15: Overwrote pending register: R1 in 'AssignReg'
+
+  do
+    if (this_sigattrlog[12]).matched then
+      local l_0_1 = nil
+    end
+    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC20: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil and nil ~= nil and l_0_1 == nil then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-if (mp.get_mpattribute)("Linux:HSTR:UPX_Packed") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

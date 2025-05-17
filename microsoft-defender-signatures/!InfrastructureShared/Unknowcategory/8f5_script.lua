@@ -3,30 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = Remediation.Threat
-if l_0_0.Name == "BrowserModifier:Win32/Diplugem" then
-  for l_0_4,l_0_5 in ipairs(l_0_0.Resources) do
-    if l_0_5.Schema == "file" and ((string.find)(l_0_5.Path, ".dll$") or (string.find)(l_0_5.Path, ".exe$")) then
-      local l_0_6 = nil
-      local l_0_7 = (string.sub)(l_0_5.Path, 0, -4)
-      if (string.find)(l_0_7, "%.x64%.$") then
-        l_0_7 = (string.sub)(l_0_7, 0, -5)
-        l_0_6 = l_0_7 .. "dll"
-      else
-        l_0_6 = l_0_7 .. "x64.dll"
-      end
-      if (sysio.IsFileExists)(l_0_6) then
-        (sysio.DeleteFile)(l_0_6)
-      end
-      l_0_6 = l_0_7 .. "dat"
-      if (sysio.IsFileExists)(l_0_6) then
-        (sysio.DeleteFile)(l_0_6)
-      end
-      l_0_6 = l_0_7 .. "tlb"
-      if (sysio.IsFileExists)(l_0_6) then
-        (sysio.DeleteFile)(l_0_6)
-      end
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 16777216 then
+  return mp.CLEAN
 end
+if (mp.readu_u32)(headerpage, 1) == 944130375 and (mp.readu_u32)(headerpage, 5) == 20996409 and (mp.readu_u32)(headerpage, 9) == 7799024 and (mp.readu_u32)(headerpage, 13) == 83435776 and (mp.readu_u32)(headerpage, 17) == 0 and (mp.readu_u32)(headerpage, 21) == 11264 and (mp.readu_u32)(headerpage, 25) == 20971520 and (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 5) == (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 9) then
+  (mp.set_mpattribute)("MpNonPIIFileType")
+  return mp.INFECTED
+else
+  return mp.CLEAN
+end
+return mp.CLEAN
 

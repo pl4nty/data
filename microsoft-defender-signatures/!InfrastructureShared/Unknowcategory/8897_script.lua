@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 17920 or l_0_0 > 70656 then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.sub)(l_0_0, -9) == "setup.exe" then
+  (mp.set_mpattribute)("HSTR:Win32/BrowseFox.V!Setup")
 end
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "\001\000\000")
+(mp.set_mpattribute)("PUA:Block:BrowseFox")
 return mp.INFECTED
 

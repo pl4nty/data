@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "truesight" and (mp.getfilesize)() < 70000 then
-  return mp.INFECTED
+if peattributes.isdll == false and (mp.getfilesize)() < 600000 then
+  return mp.SUSPICIOUS
 end
+;
+(mp.set_mpattribute)("HSTR:Obfuscator_CheckApiArtifact2")
 return mp.CLEAN
 

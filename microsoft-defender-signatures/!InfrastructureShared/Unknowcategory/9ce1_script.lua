@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("lua_codepatch_obfuscator_xt_6")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
+(pe.mmap_patch_va)(pevars.sigaddr + 23, "êê")
 ;
 (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+;
+(mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT")
+return mp.SUSPICIOUS
 

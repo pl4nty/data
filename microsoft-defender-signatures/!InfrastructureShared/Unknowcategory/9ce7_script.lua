@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_TORRENT_FILE") and (string.find)((string.lower)((mp.getfilename)()), "msoffice", 1, true) ~= nil and (string.find)((string.lower)((mp.getfilename)()), "activate", 1, true) ~= nil then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  local l_0_1 = (string.lower)((string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$"))
+  if l_0_1 ~= nil and (string.len)(l_0_1) == 3 and l_0_1 ~= "c:\\" then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

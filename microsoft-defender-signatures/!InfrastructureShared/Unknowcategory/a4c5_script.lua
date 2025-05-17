@@ -3,8 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 4 and ((pesecs[4]).Name == ".Lax503" or (pesecs[3]).Name == ".Lax503" or (pesecs[2]).Name == ".On59" or (pesecs[3]).Name == ".On59" or (pesecs[3]).Name == ".Zek" or (pesecs[2]).Name == ".Reel" or (pesecs[3]).Name == ".Obis" or (pesecs[3]).Name == ".mon887" or (pesecs[3]).Name == ".Much" or (pesecs[3]).Name == ".oypac" or (pesecs[4]).Name == ".jibmed" or (pesecs[4]).Name == ".Much" or (pesecs[2]).Name == ".Waeson" or mp.HSTR_WEIGHT >= 2) then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    local l_0_3 = {["\\winhlp32.exe"] = true, ["\\werfault.exe"] = true, ["\\imepadsv.exe"] = true, ["\\csrss.exe"] = true, ["\\splwow64.exe"] = true, ["\\sgtool.exe"] = true, ["\\mdm.exe"] = true, ["\\sgpicfacetool.exe"] = true}
+    local l_0_4 = nil
+    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$") ~= nil and l_0_3[(string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$")] == true then
+      return mp.CLEAN
+    end
+    ;
+    (bm.add_related_file)(l_0_4)
+  end
+  do
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
 

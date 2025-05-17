@@ -3,35 +3,87 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  if (bm.GetSignatureMatchDuration)() > 30000000 then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil, nil
   end
-  local l_0_0 = ((this_sigattrlog[1]).utf8p2):lower()
-  if #l_0_0 < 62 then
-    return mp.CLEAN
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and ((string.find)(l_0_0, "\\irj\\servlet_jsp\\irj\\root\\", 1, true) ~= nil or (string.find)(l_0_0, "\\irj\\servlet_jsp\\irj\\work\\", 1, true) ~= nil) then
+    return mp.INFECTED
   end
-  l_0_0 = (string.gsub)(l_0_0, "\\1$", "")
-  local l_0_1 = #l_0_0 / 2
-  local l_0_2 = (string.sub)(l_0_0, -l_0_1)
-  local l_0_3, l_0_4 = (bm.get_process_relationships)()
-  for l_0_8,l_0_9 in ipairs(l_0_4) do
-    local l_0_10 = (mp.bitand)(l_0_9.reason_ex, bm.RELATIONSHIP_CREATED)
-    if l_0_10 == bm.RELATIONSHIP_CREATED then
-      local l_0_11 = (string.lower)(l_0_9.cmd_line)
-      if (string.find)(l_0_11, "powershell", 1, true) and ((string.find)(l_0_11, " %-wi?n?d?o?w?s?t?y?l?e?%s+1%s") or (string.find)(l_0_11, " %-wi?n?d?o?w?s?t?y?l?e?%s+hi?d?d?e?n?%s") or (string.find)(l_0_11, "http", 1, true) or (string.find)(l_0_11, "iex ", 1, true) or (string.find)(l_0_11, "iex(", 1, true) or (string.find)(l_0_11, "|iex", 1, true) or (string.find)(l_0_11, "irm ", 1, true) or (string.find)(l_0_11, "iwr ", 1, true) or (string.find)(l_0_11, "curl", 1, true) or (string.find)(l_0_11, "invoke-webrequest", 1, true) or (string.find)(l_0_11, "frombase64string", 1, true) or (string.find)(l_0_11, "sockets.tcpclient", 1, true) or (string.find)(l_0_11, "conhost", 1, true)) then
-        local l_0_12 = (string.sub)(l_0_11, -l_0_1)
-        if l_0_2 == l_0_12 then
-          (bm.trigger_sig)("StartedViaRUNMRU", "StartedViaRUNMRU", l_0_9.ppid)
+  do
+    if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
+      local l_0_2, l_0_3, l_0_4, l_0_6, l_0_8, l_0_10, l_0_12, l_0_15, l_0_18, l_0_21 = (string.lower)((this_sigattrlog[4]).utf8p1), nil
+    end
+    -- DECOMPILER ERROR at PC57: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC61: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC70: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_2 ~= nil and ((string.find)(l_0_2, "\\irj\\servlet_jsp\\irj\\root\\", 1, true) ~= nil or (string.find)(l_0_2, "\\irj\\servlet_jsp\\irj\\work\\", 1, true) ~= nil) then
+      return mp.INFECTED
+    end
+    do
+      if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+        local l_0_5, l_0_7 = , (string.lower)((this_sigattrlog[2]).utf8p1)
+      end
+      -- DECOMPILER ERROR at PC97: Confused about usage of register: R1 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC101: Confused about usage of register: R1 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC110: Confused about usage of register: R1 in 'UnsetPending'
+
+      if l_0_7 ~= nil and ((string.find)(l_0_7, "\\irj\\servlet_jsp\\irj\\root\\", 1, true) ~= nil or (string.find)(l_0_7, "\\irj\\servlet_jsp\\irj\\work\\", 1, true) ~= nil) then
+        return mp.INFECTED
+      end
+      do
+        if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil then
+          local l_0_9, l_0_11, l_0_13, l_0_16, l_0_19, l_0_22 = , (string.lower)((this_sigattrlog[5]).utf8p1)
+        end
+        -- DECOMPILER ERROR at PC137: Confused about usage of register: R1 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC141: Confused about usage of register: R1 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC150: Confused about usage of register: R1 in 'UnsetPending'
+
+        if l_0_11 ~= nil and ((string.find)(l_0_11, "\\irj\\servlet_jsp\\irj\\root\\", 1, true) ~= nil or (string.find)(l_0_11, "\\irj\\servlet_jsp\\irj\\work\\", 1, true) ~= nil) then
           return mp.INFECTED
+        end
+        do
+          if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
+            local l_0_14, l_0_17 = nil
+          end
+          -- DECOMPILER ERROR at PC181: Confused about usage of register: R2 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC190: Confused about usage of register: R2 in 'UnsetPending'
+
+          if (string.lower)((this_sigattrlog[3]).utf8p1) ~= nil and ((string.find)((string.lower)((this_sigattrlog[3]).utf8p1), "\\irj\\servlet_jsp\\irj\\root\\", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[3]).utf8p1), "\\irj\\servlet_jsp\\irj\\work\\", 1, true) ~= nil) then
+            return mp.INFECTED
+          end
+          do
+            if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 ~= nil then
+              local l_0_20, l_0_23 = nil
+            end
+            -- DECOMPILER ERROR at PC221: Confused about usage of register: R2 in 'UnsetPending'
+
+            -- DECOMPILER ERROR at PC230: Confused about usage of register: R2 in 'UnsetPending'
+
+            if (string.lower)((this_sigattrlog[6]).utf8p1) ~= nil and ((string.find)((string.lower)((this_sigattrlog[6]).utf8p1), "\\irj\\servlet_jsp\\irj\\root\\", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[6]).utf8p1), "\\irj\\servlet_jsp\\irj\\work\\", 1, true) ~= nil) then
+              return mp.INFECTED
+            end
+            return mp.CLEAN
+          end
         end
       end
     end
   end
-end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
 end
 

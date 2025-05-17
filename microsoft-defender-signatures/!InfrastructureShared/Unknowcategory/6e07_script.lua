@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 197000 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
+if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 100000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

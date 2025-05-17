@@ -3,110 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 29
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 96)
-local l_0_2 = (string.byte)(l_0_1, 2) + 1
-if #l_0_1 < l_0_2 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_1, l_0_2) ~= 116 then
-  return mp.CLEAN
-end
-local l_0_3 = (string.byte)(l_0_1, l_0_2 + 1) + 2 + l_0_2
-if #l_0_1 < l_0_3 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_1, l_0_3) ~= 232 then
-  return mp.CLEAN
-end
-local l_0_4 = l_0_2 + 2
-local l_0_5 = 0
-local l_0_6 = false
-while 1 do
-  if l_0_4 < #l_0_1 then
-    local l_0_7 = (string.byte)(l_0_1, l_0_4)
-    local l_0_8 = false
-    if l_0_7 == 131 and (string.byte)(l_0_1, l_0_4 + 1) == 248 then
-      l_0_4 = l_0_4 + 3
-    else
-      if l_0_7 == 61 then
-        l_0_4 = l_0_4 + 5
-      else
-        if l_0_7 == 195 then
-          l_0_8 = true
-          l_0_4 = l_0_4 + 1
-        else
-          if l_0_7 == 0 then
-            l_0_8 = true
-            l_0_4 = l_0_4 + 2
-          else
-            if l_0_7 == 15 and (string.byte)(l_0_1, l_0_4 + 1) == 132 then
-              l_0_4 = l_0_4 + 6
-            else
-              if l_0_7 == 116 then
-                if l_0_3 ~= (string.byte)(l_0_1, l_0_4 + 1) + (l_0_4) then
-                  l_0_5 = l_0_5 + 1
-                end
-                if l_0_5 == 2 then
-                  return mp.CLEAN
-                end
-              else
-                if l_0_7 == 204 then
-                  local l_0_9 = (string.format)("\235%s", (string.char)(l_0_3 - 3 + 16))
-                  ;
-                  (pe.mmap_patch_va)(pevars.sigaddr + l_0_0 - 16, l_0_9)
-                  return mp.LOWFI
-                else
-                  do
-                    do
-                      do return mp.CLEAN end
-                      if l_0_6 ~= true or l_0_8 == false then
-                        return mp.CLEAN
-                      end
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out DO_STMT
+offset2bin = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = string.format
+  local l_1_2 = "%c%c%c%c"
+  local l_1_3 = (mp.bitand)(l_1_0, 255)
+  local l_1_4 = (mp.bitand)((mp.shr32)(l_1_0, 8), 255)
+  local l_1_5 = (mp.bitand)((mp.shr32)(l_1_0, 16), 255)
+  do
+    local l_1_6, l_1_7, l_1_8, l_1_9 = (mp.bitand)((mp.shr32)(l_1_0, 24), 255), .end
+    do return l_1_1(l_1_2, l_1_3, l_1_4, l_1_5, l_1_6, l_1_7, l_1_8, l_1_9) end
+    -- DECOMPILER ERROR at PC37: Confused about usage of register R2 for local variables in 'ReleaseLocals'
 
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                      -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
-
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
   end
+end
+
+local l_0_0 = 33
+if (string.byte)((pe.mmap_va)(pevars.sigaddr + 16, 1)) == 131 then
+  l_0_0 = 30
+end
+if (mp.bitand)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr - 4, 4), 1), 16777215) == 15401588 then
+  (pe.mmap_patch_va)(pevars.sigaddr - 2, "")
+end
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 256)
+local l_0_2 = (string.find)(l_0_1, "‹U\252", 1, true)
+if l_0_2 ~= nil then
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_0, "\235")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_0 + 1, offset2bin(l_0_2 - 3))
+  return mp.INFECTED
 end
 return mp.CLEAN
 

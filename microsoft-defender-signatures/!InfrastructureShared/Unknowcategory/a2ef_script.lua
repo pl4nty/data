@@ -3,18 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 399000 then
-  if mp.HSTR_WEIGHT >= 301 and ((mp.bitand)(mp.HSTR_WEIGHT, 1) == 1 or (mp.bitand)(mp.HSTR_WEIGHT, 2) == 2) then
-    return mp.SUSPICIOUS
-  end
-  if mp.HSTR_WEIGHT >= 100 then
-    return mp.LOWFI
-  end
-  if mp.HSTR_WEIGHT >= 1 then
-    (pe.set_peattribute)("hstr_exhaustive", true)
-    ;
-    (pe.reemulate)()
-  end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("system32", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

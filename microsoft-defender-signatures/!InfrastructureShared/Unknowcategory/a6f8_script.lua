@@ -3,12 +3,41 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+if not (hstrlog[1]).matched and not (hstrlog[2]).matched then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\microsoft\\edge\\", 1, true) or (string.find)(l_0_0, "\\internet explorer\\", 1, true) or (string.find)(l_0_0, "\\brave-browser\\", 1, true) or (string.find)(l_0_0, "yandexbrowser", 1, true) or (string.find)(l_0_0, "\\mozilla firefox\\", 1, true) or (string.find)(l_0_0, "\\opera", 1, true) or (string.find)(l_0_0, "\\safari\\", 1, true) or (string.find)(l_0_0, "\\sogouexplorer\\", 1, true) or (string.find)(l_0_0, "\\qqbrowser\\", 1, true) or (string.find)(l_0_0, "\\2345explorer\\", 1, true) or (string.find)(l_0_0, "360", 1, true) or (string.find)(l_0_0, "browser", 1, true) or (string.find)(l_0_0, "chrome", 1, true) or (string.find)(l_0_0, "proxy", 1, true) or (string.find)(l_0_0, "\\chromium\\", 1, true) then
+if not peattributes.isexe then
   return mp.CLEAN
 end
+if pehdr.NumberOfSections ~= 3 then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() > 20480 then
+  return mp.CLEAN
+end
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = (hstrlog[2]).VA
+if l_0_1 - l_0_0 > 256 then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.readu_u16)((pe.mmap_va)(l_0_1 + 21, 6), 1)
+if (mp.bsplit)(l_0_2, 8) == 144 then
+  return mp.CLEAN
+end
+local l_0_3 = (pe.foffset_va)(l_0_1)
+;
+(mp.readprotection)(false)
+local l_0_4 = (mp.readfile)(0, (mp.getfilesize)())
+if (mp.bsplit)(l_0_2, 8) == 117 then
+  (mp.writeu_u16)(l_0_4, l_0_3 + 22, 37008)
+else
+  if l_0_2 == 34063 then
+    (mp.writeu_u32)(l_0_4, l_0_3 + 22, 2425393296)
+    ;
+    (mp.writeu_u16)(l_0_4, l_0_3 + 26, 37008)
+  end
+end
+;
+(mp.vfo_add_buffer)(l_0_4, "[Obfuscator]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 return mp.INFECTED
 

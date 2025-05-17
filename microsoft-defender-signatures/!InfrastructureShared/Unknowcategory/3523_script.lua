@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,25 +3,165 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_ESI)
-if l_0_0 > 1048576 then
-  return mp.INFECTED
+if pehdr.NumberOfSections < 5 then
+  return mp.CLEAN
 end
-local l_0_1 = (pe.get_regval)(pe.REG_EDI)
-local l_0_2 = (pe.mmap_va)(pevars.sigaddr, 128)
-local l_0_3 = (mp.readu_u32)(l_0_2, 21)
-local l_0_4 = (pe.mmap_va)(l_0_3, 256)
-local l_0_5 = (mp.readu_u32)(l_0_2, 30)
-local l_0_6 = (mp.readu_u32)((pe.mmap_va)(l_0_5, 4), 1)
-local l_0_7 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
-local l_0_8 = "\190\000\000\000\000\189\001\000\000\000‰è@%\255\000\000\000‰Å‰ïŠ—N\002@\000\015¶Ê\003\rJ\002@\000á\255\000\000\000Š™N\002@\000ˆ‘N\002@\000\137\rJ\002@\000ˆŸN\002@\000\015¶‰N\002@\000\015¶Ó\001Ñ\225\255\000\000\000\015¶™N\002@\000¸N\003@\0000\0280ƒî\001u¡Ã\000\000\000\000"
-local l_0_9 = (pe.mmap_va)(l_0_1, l_0_0)
-local l_0_10 = l_0_7 .. l_0_8 .. l_0_4 .. l_0_9
-;
-(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 2, l_0_0)
-;
-(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 107, l_0_6)
-;
-(mp.vfo_add_buffer)(l_0_10, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.INFECTED
+local l_0_0 = {}
+local l_0_1 = {}
+l_0_1.sig = "‹|$\016ƒï\b…Ét\0060\023IO\235"
+l_0_1.xray_type = 11
+l_0_1.bytes_to_decrypt = 0
+local l_0_2 = {}
+l_0_2.sig = "‹|$\016ƒï\006…Ét\0060\023IO\235"
+l_0_2.xray_type = 11
+l_0_2.bytes_to_decrypt = 0
+-- DECOMPILER ERROR at PC16: No list found for R0 , SetList fails
+
+l_0_1 = pe
+l_0_1 = l_0_1.xray_block
+l_0_2 = l_0_0
+l_0_1 = l_0_1(l_0_2, 2, 1, 0, 8192)
+l_0_2 = mp
+l_0_2 = l_0_2.INFECTED
+if l_0_1 == l_0_2 then
+  l_0_2 = mp
+  l_0_2 = l_0_2.INFECTED
+  return l_0_2
+end
+l_0_2 = pehdr
+l_0_2 = l_0_2.NumberOfSections
+if l_0_2 >= 5 then
+  l_0_2 = pesecs
+  l_0_2 = l_0_2[5]
+  l_0_2 = l_0_2.VirtualSize
+  if l_0_2 >= 9216 then
+    l_0_2 = pe
+    l_0_2 = l_0_2.xray_block
+    l_0_2 = l_0_2(l_0_0, 2, 4, 6656, 9216)
+    l_0_1 = l_0_2
+    l_0_2 = mp
+    l_0_2 = l_0_2.INFECTED
+    if l_0_1 == l_0_2 then
+      l_0_2 = mp
+      l_0_2 = l_0_2.INFECTED
+      return l_0_2
+    end
+  end
+  l_0_2 = pe
+  l_0_2 = l_0_2.xray_block
+  l_0_2 = l_0_2(l_0_0, 2, 4, 2048, 5120)
+  l_0_1 = l_0_2
+  l_0_2 = mp
+  l_0_2 = l_0_2.INFECTED
+  if l_0_1 == l_0_2 then
+    l_0_2 = mp
+    l_0_2 = l_0_2.INFECTED
+    return l_0_2
+  end
+end
+l_0_2 = pehdr
+l_0_2 = l_0_2.NumberOfSections
+if l_0_2 >= 7 then
+  l_0_2 = pe
+  l_0_2 = l_0_2.xray_block
+  l_0_2 = l_0_2(l_0_0, 2, 2, 0, 1024)
+  l_0_1 = l_0_2
+  l_0_2 = mp
+  l_0_2 = l_0_2.INFECTED
+  if l_0_1 == l_0_2 then
+    l_0_2 = mp
+    l_0_2 = l_0_2.INFECTED
+    return l_0_2
+  end
+  l_0_2 = pe
+  l_0_2 = l_0_2.xray_block
+  l_0_2 = l_0_2(l_0_0, 2, 6, 0, 2048)
+  l_0_1 = l_0_2
+  l_0_2 = mp
+  l_0_2 = l_0_2.INFECTED
+  if l_0_1 == l_0_2 then
+    l_0_2 = mp
+    l_0_2 = l_0_2.INFECTED
+    return l_0_2
+  end
+  l_0_2 = pesecs
+  l_0_2 = l_0_2[7]
+  l_0_2 = l_0_2.VirtualSize
+  if l_0_2 >= 5120 then
+    l_0_2 = pe
+    l_0_2 = l_0_2.xray_block
+    l_0_2 = l_0_2(l_0_0, 2, 6, 4096, 5120)
+    l_0_1 = l_0_2
+    l_0_2 = mp
+    l_0_2 = l_0_2.INFECTED
+    if l_0_1 == l_0_2 then
+      l_0_2 = mp
+      l_0_2 = l_0_2.INFECTED
+      return l_0_2
+    end
+  end
+  l_0_2 = pehdr
+  l_0_2 = l_0_2.NumberOfSections
+  if l_0_2 >= 8 then
+    l_0_2 = pe
+    l_0_2 = l_0_2.xray_block
+    l_0_2 = l_0_2(l_0_0, 2, 7, 0, 1024)
+    l_0_1 = l_0_2
+    l_0_2 = mp
+    l_0_2 = l_0_2.INFECTED
+    if l_0_1 == l_0_2 then
+      l_0_2 = mp
+      l_0_2 = l_0_2.INFECTED
+      return l_0_2
+    end
+    l_0_2 = pesecs
+    l_0_2 = l_0_2[8]
+    l_0_2 = l_0_2.VirtualSize
+    if l_0_2 >= 5120 then
+      l_0_2 = pe
+      l_0_2 = l_0_2.xray_block
+      l_0_2 = l_0_2(l_0_0, 2, 7, 4096, 5120)
+      l_0_1 = l_0_2
+      l_0_2 = mp
+      l_0_2 = l_0_2.INFECTED
+      if l_0_1 == l_0_2 then
+        l_0_2 = mp
+        l_0_2 = l_0_2.INFECTED
+        return l_0_2
+      end
+    end
+  end
+  l_0_2 = pehdr
+  l_0_2 = l_0_2.NumberOfSections
+  if l_0_2 >= 9 then
+    l_0_2 = pesecs
+    l_0_2 = l_0_2[9]
+    l_0_2 = l_0_2.VirtualSize
+    if l_0_2 >= 5120 then
+      l_0_2 = pe
+      l_0_2 = l_0_2.xray_block
+      l_0_2 = l_0_2(l_0_0, 2, 8, 4096, 5120)
+      l_0_1 = l_0_2
+      l_0_2 = mp
+      l_0_2 = l_0_2.INFECTED
+      if l_0_1 == l_0_2 then
+        l_0_2 = mp
+        l_0_2 = l_0_2.INFECTED
+        return l_0_2
+      end
+    end
+  end
+end
+l_0_2 = pe
+l_0_2 = l_0_2.xray_block
+local l_0_3 = l_0_0
+local l_0_4 = 2
+local l_0_5 = 5
+local l_0_6 = 0
+do
+  local l_0_7 = 4096
+  do return l_0_2(l_0_3, l_0_4, l_0_5, l_0_6, l_0_7) end
+  -- DECOMPILER ERROR at PC205: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
+end
 

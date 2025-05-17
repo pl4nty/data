@@ -3,47 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.lastscn_writable ~= true then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 16777216 then
   return mp.CLEAN
 end
-if peattributes.epscn_islast ~= true then
+if (pe.get_regval)(pe.REG_EAX) ~= 0 then
   return mp.CLEAN
 end
-if peattributes.hasappendeddata ~= true then
+local l_0_1 = (pe.mmap_va)((pe.get_regval)(pe.REG_ESP), 96)
+if (mp.readu_u32)(l_0_1, 37) ~= 1147958354 or (mp.readu_u32)(l_0_1, 41) ~= 1836016485 or (mp.readu_u32)(l_0_1, 45) ~= 1936028272 or (mp.readu_u32)(l_0_1, 49) ~= 1718960755 or (mp.readu_u32)(l_0_1, 53) ~= 7497062 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+local l_0_2 = (mp.readu_u32)(l_0_1, 89)
+if l_0_2 <= 0 or l_0_2 > 4194304 or not (pe.isdynamic_va)(l_0_2) then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[3]).RVA == 0 then
+local l_0_3 = (mp.readu_u32)(l_0_1, 81)
+if l_0_3 <= 0 or l_0_3 > 16777216 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[10]).Size == 0 then
-  return mp.CLEAN
-end
-if peattributes.epscn_writable == false then
-  return mp.CLEAN
-end
-if peattributes.packed ~= false then
-  return mp.CLEAN
-end
-if peattributes.isdll ~= false then
-  return mp.CLEAN
-end
-if peattributes.hasexports ~= false then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 2 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 0 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW ~= 0 then
-  return mp.CLEAN
-end
+local l_0_4 = (pe.mmap_va)(l_0_2, l_0_3)
+;
+(mp.vfo_add_buffer)(l_0_4, "[Obfuscator.WZ]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 return mp.INFECTED
 

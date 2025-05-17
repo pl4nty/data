@@ -4,57 +4,27 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = {}
-l_0_0["cmd.exe"] = true
-l_0_0["powershell.exe"] = true
-local l_0_1 = nil
-if (this_sigattrlog[1]).matched then
-  l_0_1 = (this_sigattrlog[1]).ppid
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_1 = (this_sigattrlog[2]).ppid
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_1 = (this_sigattrlog[3]).ppid
-    else
-      if (this_sigattrlog[4]).matched then
-        l_0_1 = (this_sigattrlog[4]).ppid
-      else
-        if (this_sigattrlog[5]).matched then
-          l_0_1 = (this_sigattrlog[5]).ppid
-        else
-          return mp.CLEAN
-        end
-      end
-    end
-  end
+l_0_0["cttunesvr.exe"] = true
+l_0_0["inetmgr.exe"] = true
+l_0_0["migsetup.exe"] = true
+l_0_0["mmc.exe"] = true
+l_0_0["oobe.exe"] = true
+l_0_0["pkgmgr.exe"] = true
+l_0_0["provisionshare.exe"] = true
+l_0_0["provisionstorage.exe"] = true
+l_0_0["spinstall.exe"] = true
+l_0_0["winsat.exe"] = true
+if (this_sigattrlog[4]).matched and l_0_0[(string.match)(((this_sigattrlog[4]).p2):lower(), "\\(%w+%.%w+)$")] then
+  return mp.INFECTED
 end
-local l_0_2 = nil
-if (this_sigattrlog[6]).matched then
-  l_0_2 = (this_sigattrlog[6]).ppid
-else
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched and (l_0_0[(string.match)(((this_sigattrlog[1]).p1):lower(), "\\(%w+%.%w+)$")] or l_0_0[(string.match)(((this_sigattrlog[1]).p2):lower(), "\\(%w+%.%w+)$")]) then
+  return mp.INFECTED
 end
-for l_0_6 = 1, 5 do
-  if l_0_6 > 6 then
-    return mp.CLEAN
-  end
-  local l_0_7, l_0_8 = (bm.get_process_relationships)(l_0_1)
-  for l_0_12,l_0_13 in ipairs(l_0_8) do
-    if l_0_13.reason == 1 then
-      local l_0_14 = (string.lower)((string.match)(l_0_13.image_path, "\\([^\\]+)$"))
-      if l_0_13.ppid == l_0_2 then
-        return mp.INFECTED
-      else
-        if l_0_0[l_0_14] ~= true then
-          (mp.ReportLowfi)(l_0_13.image_path, 4150180286)
-          return mp.CLEAN
-        end
-      end
-      l_0_1 = l_0_13.ppid
-    end
-  end
+if (this_sigattrlog[2]).matched and l_0_0[(string.match)(((this_sigattrlog[2]).p1):lower(), "\\(%w+%.%w+)$")] then
+  return mp.INFECTED
 end
-do return mp.CLEAN end
--- DECOMPILER ERROR at PC118: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
+if (this_sigattrlog[3]).matched and l_0_0[(string.match)(((this_sigattrlog[3]).p2):lower(), "\\(%w+%.%w+)$")] then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

@@ -3,20 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_ismsil") then
+if peattributes.epinfirstsect ~= true then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if (pesecs[1]).NameDW ~= 2019914798 then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_isdriver") then
+if (pesecs[1]).Characteristics ~= 1610612768 then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("system32", 1, true) then
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pe.foffset_rva)(pehdr.AddressOfEntryPoint), 24)
+if (mp.crc32)(-1, l_0_0, 1, 24) ~= 1525313111 then
   return mp.CLEAN
 end
 return mp.INFECTED

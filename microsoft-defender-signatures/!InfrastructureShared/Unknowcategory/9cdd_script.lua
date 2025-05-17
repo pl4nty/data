@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+local l_0_0 = ""
+if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
+  l_0_0 = (MpCommon.PathToWin32Path)((string.lower)((this_sigattrlog[10]).utf8p1))
+end
+if (mp.IsKnownFriendlyFile)(l_0_0, true, false) then
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

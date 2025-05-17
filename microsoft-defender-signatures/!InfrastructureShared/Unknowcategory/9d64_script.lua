@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
-if l_0_1 ~= "wmiprvse.exe" or l_0_1 == "services.exe" then
-  return mp.CLEAN
-end
-if (versioning.GetLocaleIdentifier)() == 1049 then
-  return mp.LOWFI
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R1 in 'AssignReg'
+
+local l_0_1 = nil
+if l_0_0 ~= nil and l_0_1 ~= nil and l_0_0 == l_0_1 then
+  if (string.find)(l_0_0, "c:\\windows\\system32\\", 1, true) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
 return mp.CLEAN
 

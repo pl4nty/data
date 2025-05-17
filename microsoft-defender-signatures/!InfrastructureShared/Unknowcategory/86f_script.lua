@@ -3,10 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-if ((string.find)(l_0_1, "->xl/vbaproject.bin") or (string.find)(l_0_1, "->word/vbaproject.bin")) and (mp.get_mpattribute)("MHSTR:MacroInside") then
-  (mp.set_mpattribute)("//LUA:MacroInsideContainer")
-  return mp.INFECTED
+if (mp.GetResmgrBasePlugin)() ~= "regkeyvalue" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "hklm\\system\\currentcontrolset\\services", 1, true) == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)(tostring(headerpage))
+if (string.find)(l_0_1, "rpcsrv.dat", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

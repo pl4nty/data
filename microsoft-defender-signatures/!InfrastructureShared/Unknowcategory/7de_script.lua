@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil or l_0_1 == nil then
-  return mp.CLEAN
-end
-if l_0_2 == "z.tmp" and l_0_1:len() > 10 and ((string.sub)(l_0_1, -10) == "\\temp\\low\\" or (string.sub)(l_0_1, -6) == "\\temp\\") then
+if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 1) or (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 3) then
+  if (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) ~= true then
+    return mp.CLEAN
+  end
+  if (mp.IsTrustedFile)(true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

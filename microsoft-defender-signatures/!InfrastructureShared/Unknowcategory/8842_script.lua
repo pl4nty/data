@@ -3,13 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if (pe.get_exports)() ~= 1 then
-  return mp.CLEAN
-end
-if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "maggie" then
+if epcode[2] == 131 and epcode[3] == 236 and epcode[5] == 232 and epcode[11] == 131 and epcode[12] == 196 and epcode[14] == 233 then
   return mp.INFECTED
 end
 return mp.CLEAN

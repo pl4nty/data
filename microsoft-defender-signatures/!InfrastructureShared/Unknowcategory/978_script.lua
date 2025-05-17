@@ -3,20 +3,40 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_CONTROL_GUID)
-local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 and ((string.match)(l_0_1, "cafeefac%-dec7%-0000%-0001%-abcdeffedcba") or (string.match)(l_0_1, "08b0e5c0%-4fcb%-11cf%-aaa5%-00401c608501") or (string.match)(l_0_1, "d27cdb6e%-ae6d%-11cf%-96b8%-444553540000") or (string.match)(l_0_1, "dfeaf541%-f3e1%-4c24%-acac%-99c30715084a")) then
-    local l_0_4, l_0_5 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_FRAME_URL)
-    if l_0_4 and ((string.sub)(l_0_5, -3) == "/?1" or (string.sub)(l_0_5, -3) == "/?2" or (string.sub)(l_0_5, -3) == "/?3" or (string.sub)(l_0_5, -3) == "/?4") then
-      if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
-        (mp.aggregate_mpattribute)("Context:FrameNumeralParam")
+local l_0_0 = (string.lower)((Remediation.Threat).Name)
+if (string.match)(l_0_0, "poshevin%.[af]") then
+  local l_0_1, l_0_2 = pcall(MpCommon.RollingQueueQuery, "PoshevinRelatedRegistries")
+  local l_0_3, l_0_4 = pcall(MpCommon.RollingQueueQuery, "PoshevinRelatedFiles")
+  if l_0_1 and l_0_2 ~= nil and type(l_0_2) == "table" then
+    for l_0_8 in pairs(l_0_2) do
+      local l_0_9 = (string.lower)(tostring((l_0_2[l_0_8]).key))
+      local l_0_10, l_0_11 = l_0_9:match("(.-\\software\\classes)\\(.*)")
+      local l_0_12 = (sysio.RegOpenKey)(l_0_10)
+      if l_0_12 then
+        local l_0_13 = pcall(sysio.DeleteRegKey, l_0_12, l_0_11)
+        if not l_0_13 then
+          local l_0_14 = "hkcu\\software\\classes\\" .. l_0_11
+          l_0_13 = pcall(Remediation.BtrDeleteRegKey, l_0_14)
+        end
       end
-      ;
-      (mp.aggregate_mpattribute)("//MpIsIEVScan")
-      return mp.TRUE
     end
   end
-  return mp.FALSE
+  do
+    if l_0_3 and l_0_4 ~= nil and type(l_0_4) == "table" then
+      for l_0_18 in pairs(l_0_4) do
+        local l_0_19 = tostring((l_0_4[l_0_18]).key)
+        if l_0_19 and (sysio.IsFileExists)(l_0_19) then
+          (sysio.DeleteFile)(l_0_19)
+        else
+          l_0_19 = "\'" .. l_0_19 .. "\'"
+          if (sysio.IsFileExists)(l_0_19) then
+            (sysio.DeleteFile)(l_0_19)
+          else
+            pcall(Remediation.BtrDeleteFile, l_0_19)
+          end
+        end
+      end
+    end
+  end
 end
 

@@ -3,13 +3,18 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 5447680 and l_0_0 < 6164480 and (pe.query_import)(pe.IMPORT_STATIC, 3164448353) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2744197095) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2717511079) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 537135066) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3293213921) ~= 0 then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+if (string.sub)(l_0_1, -5, -1) == ",nail" or (string.sub)(l_0_1, -6, -1) == ", nail" then
+  (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+  return mp.INFECTED
+end
+return mp.CLEAN
 

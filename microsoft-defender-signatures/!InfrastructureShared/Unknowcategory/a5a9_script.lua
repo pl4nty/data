@@ -3,30 +3,37 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
+if peattributes.lastscn_falign ~= true then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if peattributes.no_relocs ~= true then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_ismsil") then
+if peattributes.epscn_writable ~= true then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_isdriver") then
+if peattributes.firstsectwritable ~= true then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 4000 then
+if peattributes.epscn_islast ~= true then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("program files", 1, true) then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
-if l_0_1:find("system32", 1, true) then
+if peattributes.hasstandardentry == true then
   return mp.CLEAN
 end
-if l_0_1:find("syswow64", 1, true) then
+if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 5 then
+  return mp.CLEAN
+end
+if (pesecs[1]).SizeOfRawData ~= 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

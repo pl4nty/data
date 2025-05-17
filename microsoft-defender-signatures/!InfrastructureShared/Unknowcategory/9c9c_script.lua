@@ -3,20 +3,19 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC8: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["svchost.exe"] = true
+  l_0_3["taskeng.exe"] = true
+  l_0_3["taskhostw.exe"] = true
+  if l_0_3[l_0_2] then
+    return mp.INFECTED
+  end
+end
 do
-  if (hstrlog[3]).matched then
-    local l_0_0, l_0_1, l_0_2 = nil
-  else
-  end
-  if (hstrlog[4]).matched then
-    do return mp.CLEAN end
-    local l_0_3 = nil
-    if (mp.readu_u32)((pe.mmap_va)((hstrlog[4]).VA - 4, 4), 1) >= 24576 and (mp.readu_u32)((pe.mmap_va)((hstrlog[4]).VA - 4, 4), 1) < 28672 then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+  return mp.CLEAN
 end
 

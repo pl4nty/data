@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[9]).Name == ".boot" and (pesecs[8]).Characteristics == 3758096480 then
+if peattributes.amd64_image and (pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3221225472 then
   return mp.INFECTED
 end
 return mp.CLEAN

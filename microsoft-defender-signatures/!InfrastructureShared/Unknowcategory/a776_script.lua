@@ -3,61 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (versioning.GetOrgID)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0)
-    if l_0_1 == "40222833-e511-47af-9324-40c4531ba777" or l_0_1 == "824183b0-2389-4601-a78d-1bda0b1327aa" or l_0_1 == "5f498185-96bf-44f6-a553-5c9359b1e96f" or l_0_1 == "9da3abc0-42d3-4d8a-b69a-4b33f5bda282" then
-      return mp.CLEAN
-    end
-  end
-  local l_0_2 = nil
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    l_0_2 = (this_sigattrlog[1]).utf8p2
-  else
-    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-      l_0_2 = (this_sigattrlog[2]).utf8p2
-    else
-      if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-        l_0_2 = (this_sigattrlog[3]).utf8p2
-      else
-        if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-          l_0_2 = (this_sigattrlog[4]).utf8p2
-        else
-          if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-            l_0_2 = (this_sigattrlog[5]).utf8p2
-          else
-            if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
-              l_0_2 = (this_sigattrlog[6]).utf8p2
-            end
-          end
-        end
-      end
-    end
-  end
-  if l_0_2 == nil then
-    return mp.CLEAN
-  end
-  local l_0_3 = {}
-  l_0_3[".jse"] = true
-  l_0_3[".vbe"] = true
-  local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_2)
-  for l_0_8,l_0_9 in ipairs(l_0_4) do
-    if (string.len)(l_0_9) > 4 and (sysio.IsFileExists)(l_0_9) then
-      local l_0_10 = (string.sub)(l_0_9, -4)
-      if l_0_3[l_0_10] then
-        if (string.find)((string.lower)(l_0_9), "themefonts-colors_installer.vbe", 1, true) then
-          return mp.CLEAN
-        end
-        local l_0_11 = (mp.IsKnownFriendlyFile)(l_0_9, true, true)
-        if l_0_11 == nil or l_0_11 == true then
-          return mp.CLEAN
-        end
-        ;
-        (bm.add_threat_file)(l_0_9)
-      end
-    end
-  end
-  return mp.INFECTED
-end
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC4: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC5: Overwrote pending register: R1 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R3 in 'AssignReg'
+
+;
+(("    {\n        \"version\": 1,\n        \"environment\": \"SenseTesting_Staging\",\n        \"usage\": 2,\n        \"hashType\": 0,\n        \"intThumbs\": [\n            \"847df6a78497943f27fc72eb93f9a637320a02b561d0a91b09e87a7807ed7c61\"\n        ],\n        \"rootThumbs\": [\n            \"df545bf919a2439c36983b54cdfc903dfa4f37d3996d8d84b4c31eec6f3c163e\",\n            \"89fa90e8ac4cbcf4e2b1dd6e01de981471e9b11b14ec9a511365cadfe279541a\",\n            \"9bd0f7cf6ed967519391bcd49a958867b955a60f22de5b8978474a2fcbad81a6\"\n        ]\n    }\n   ").LoadDBVar)(("    {\n        \"version\": 1,\n        \"environment\": \"SenseTesting_Staging\",\n        \"usage\": 1,\n        \"hashType\": 0,\n        \"intThumbs\": [\n            \"847df6a78497943f27fc72eb93f9a637320a02b561d0a91b09e87a7807ed7c61\"\n        ],\n        \"rootThumbs\": [\n            \"df545bf919a2439c36983b54cdfc903dfa4f37d3996d8d84b4c31eec6f3c163e\",\n            \"89fa90e8ac4cbcf4e2b1dd6e01de981471e9b11b14ec9a511365cadfe279541a\",\n            \"9bd0f7cf6ed967519391bcd49a958867b955a60f22de5b8978474a2fcbad81a6\"\n        ]\n    }\n   ").DBVAR_ARRAY_WIDESTRING, "", l_0_0, 1)
 

@@ -3,26 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
-  if (string.find)(l_0_0, "\\werfault.exe\\\\debugger", 1, true) or (string.find)(l_0_0, "\\osppsvc.exe\\\\debugger", 1, true) or (string.find)(l_0_0, "\\sppextcomobj.exe\\\\debugger", 1, true) then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = {}
+  l_0_1["winword.exe"] = ""
+  l_0_1["excel.exe"] = ""
+  l_0_1["powerpnt.exe"] = ""
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+  local l_0_3 = (MpCommon.PathToWin32Path)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH))
+  if l_0_3 == nil then
     return mp.CLEAN
   end
-  local l_0_1 = (this_sigattrlog[3]).utf8p2
-  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
-    l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
-    if not (sysio.IsFileExists)(l_0_1) then
-      l_0_1 = (string.lower)((bm.get_imagepath)())
+  l_0_3 = (string.lower)(l_0_3)
+  if l_0_1[l_0_2] and l_0_3:sub(2) == ":\\program files\\microsoft office" then
+    local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+    l_0_4 = l_0_4 and (string.lower)(l_0_4) or ""
+    local l_0_5 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+    l_0_5 = l_0_5 and (string.lower)(l_0_5) or ""
+    if l_0_5:sub(-5) == "\\temp" and l_0_4:sub(-4) == ".exe" then
+      (mp.set_mpattribute)("Lua:ContextualDropOfficeTmpExe.A")
     end
-    l_0_1 = (string.lower)(l_0_1)
-    if (string.find)(l_0_1, "awdump.exe", 1, true) or (string.find)(l_0_1, "awdumpifeo.exe", 1, true) or (string.find)(l_0_1, "AppDeployToolkit_BlockAppExecutionMessage.vbs", 1, true) then
-      return mp.CLEAN
-    end
-    ;
-    (mp.ReportLowfi)(l_0_1, 794607441)
-    ;
-    (bm.add_related_file)(l_0_1)
-    return mp.INFECTED
   end
 end
 do

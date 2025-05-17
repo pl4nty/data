@@ -3,34 +3,20 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched) or not (hstrlog[4]).matched) and not (hstrlog[18]).matched) or 0 + 1 + 1 == 2 then
-  return mp.INFECTED
+local l_0_0 = (((this_sigattrlog[1]).utf8p1):lower()):match("\\amsi\\providers\\({%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x})")
+local l_0_1 = ((this_sigattrlog[2]).utf8p1):lower()
+local l_0_2 = ((this_sigattrlog[2]).utf8p2):lower()
+do
+  if l_0_0 ~= nil and l_0_1 ~= nil and l_0_2 ~= nil and l_0_1:find(l_0_0, 1, true) then
+    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_2)
+    for l_0_7,l_0_8 in ipairs(l_0_3) do
+      l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_8)
+      if (sysio.IsFileExists)(l_0_8) then
+        (bm.add_related_file)(l_0_8)
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

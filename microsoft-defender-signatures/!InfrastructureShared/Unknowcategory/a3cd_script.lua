@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.getfilesize)() >= 49152 and (mp.getfilesize)() < 73728 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil or (string.find)(l_0_1, "stop", 1, true) == nil and (string.find)(l_0_1, "disabled", 1, true) == nil then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.GetParentProcInfo)()
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (string.lower)(l_0_2.image_path)
+if l_0_3:match("([^\\]+)$") == "su64.exe" or l_0_3:match("([^\\]+)$") == "su32.exe" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

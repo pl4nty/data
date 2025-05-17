@@ -3,20 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == "ewsapplication.exe" then
+  return mp.INFECTED
 end
-if peattributes.no_exports then
-  return mp.CLEAN
+if (string.match)(l_0_0, "o365token%d?%d?%d?%d?%.exe") then
+  return mp.INFECTED
 end
-local l_0_0, l_0_1 = (pe.get_exports)()
-do
-  if l_0_0 == 1 then
-    local l_0_2 = (pe.mmap_string_rva)((l_0_1[1]).namerva, 64)
-    if l_0_2 ~= nil and (string.len)(l_0_2) >= 21 and (string.find)((string.lower)(l_0_2), "powershell_reflective", 1, true) ~= nil then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if (string.match)(l_0_0, "hpatoken%d?%d?%d?%d?%.exe") then
+  return mp.INFECTED
 end
+if (string.match)(l_0_0, "hpauser%d?%d?%d?%.exe") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

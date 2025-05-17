@@ -4,11 +4,10 @@
 -- params : ...
 -- function num : 0
 do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[2]).utf8p2
-    if (sysio.IsFileExists)(l_0_0) then
-      (bm.add_related_file)(l_0_0)
-    end
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
+    ;
+    (bm.add_related_file)(l_0_0)
   end
   return mp.INFECTED
 end

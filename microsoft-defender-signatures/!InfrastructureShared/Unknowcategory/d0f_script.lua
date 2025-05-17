@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:CrawlerToolbar")
+(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
 return mp.INFECTED
 

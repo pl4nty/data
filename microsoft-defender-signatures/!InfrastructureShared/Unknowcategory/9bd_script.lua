@@ -3,48 +3,57 @@
 
 -- params : ...
 -- function num : 0
-RemovePayloadFromRegistry = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  local l_1_2 = (sysio.RegOpenKey)(l_1_0)
-  if l_1_2 then
-    local l_1_3 = (string.lower)((sysio.GetRegValueAsString)(l_1_2, l_1_1))
-    if l_1_3 then
-      (sysio.DeleteRegKey)(l_1_2, nil)
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if l_0_0.LegalCopyright == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0.LegalCopyright, "Microsoft Corporation", 1, true) ~= nil then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_1 == mp.SCANREASON_ONOPEN then
+  local l_0_2 = {}
+  l_0_2["explorer.exe"] = ""
+  l_0_2["hh.exe"] = ""
+  l_0_2["isuninst.exe"] = ""
+  l_0_2["notepad.exe"] = ""
+  l_0_2["regedit.exe"] = ""
+  l_0_2["slrundll.exe"] = ""
+  l_0_2["taskman.exe"] = ""
+  l_0_2["twunk_16.exe"] = ""
+  l_0_2["twunk_32.exe"] = ""
+  l_0_2["winhelp.exe"] = ""
+  l_0_2["winhlp32.exe"] = ""
+  l_0_2["bfsvc.exe"] = ""
+  l_0_2["fveupdate.exe"] = ""
+  l_0_2["helppane.exe"] = ""
+  l_0_2["write.exe"] = ""
+  l_0_2["splwow64.exe"] = ""
+  local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+  if l_0_3 == nil then
+    return mp.CLEAN
+  end
+  local l_0_4 = (string.lower)(l_0_3)
+  if l_0_2[l_0_4] then
+    local l_0_5 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+    if l_0_5 == nil then
+      return mp.CLEAN
+    end
+    local l_0_6 = (string.lower)(l_0_5)
+    if (l_0_6:find("\\application data\\[^\\]+$", 1, false) or l_0_6:find("\\appdata\\roaming\\[^\\]+$", 1, false)) and not l_0_6:find("microsoft", 1, true) and not l_0_6:find("windows", 1, true) and not l_0_6:find("installer", 1, true) and not l_0_6:find("citrix", 1, true) then
+      local l_0_7 = (MpCommon.PathToWin32Path)(l_0_5) .. "\\" .. l_0_3
+      ;
+      (mp.ReportLowfi)(l_0_7, 335137860)
     end
   end
 end
-
-RemoveMisfoxASEPs = function(l_2_0)
-  -- function num : 0_1
-  local l_2_1 = (sysio.RegOpenKey)(l_2_0)
-  if l_2_1 then
-    local l_2_2 = (sysio.RegEnumValues)(l_2_1)
-    for l_2_6,l_2_7 in pairs(l_2_2) do
-      local l_2_8 = (string.lower)((sysio.GetRegValueAsString)(l_2_1, l_2_7))
-      if not l_2_8 then
-        return false
-      end
-      local l_2_9, l_2_10 = (string.match)(l_2_8, "%(%[text%.encoding%]::ascii%.getstring%(%[convert%]::frombase64string%(%(gp.*(hk%w%w:\\\\?software\\\\?classes\\\\?%w%w%w%w+).*%.(%w%w%w%w+)%)")
-      if l_2_9 then
-        (sysio.DeleteRegValue)(l_2_1, l_2_7)
-        l_2_9 = (string.gsub)(l_2_9, "\\\\", "\\")
-        l_2_9 = (string.gsub)(l_2_9, ":\\", "\\")
-        local l_2_11 = (sysio.RegExpandUserKey)(l_2_9)
-        for l_2_15,l_2_16 in pairs(l_2_11) do
-          RemovePayloadFromRegistry(l_2_16, l_2_10)
-        end
-      end
-    end
-    -- DECOMPILER ERROR at PC68: Confused about usage of register R6 for local variables in 'ReleaseLocals'
-
-  end
-end
-
-if (string.match)((Remediation.Threat).Name, "Win32/Misfox") or (string.match)((Remediation.Threat).Name, "PowerShell/Misfox") then
-  RemoveMisfoxASEPs("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run")
-  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    RemoveMisfoxASEPs(l_0_5)
-  end
+do
+  return mp.CLEAN
 end
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (pesecs[4]).Name == ".bss" and (pesecs[4]).Characteristics == 3221225536 then
+if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

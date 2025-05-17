@@ -3,21 +3,23 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
     local l_0_0, l_0_1 = nil
   end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R6 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (string.find)(l_0_0, "\\appdata\\local\\temp\\system", 1, true) ~= nil and (string.find)(l_0_0, ".", 1, true) == nil then
-    return mp.INFECTED
+    if (sysio.IsFileExists)(R6_PC23) then
+      (bm.add_related_file)(R6_PC23)
+    end
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 7, 4)
+if (mp.readu_u32)(l_0_0, 1) < 16777216 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

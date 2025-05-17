@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (hstrlog[1]).matched and (hstrlog[1]).hitcount > 2 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+if (hstrlog[2]).matched and (hstrlog[2]).hitcount > 2 then
+  return mp.INFECTED
+end
+if (hstrlog[2]).matched and (hstrlog[1]).matched then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

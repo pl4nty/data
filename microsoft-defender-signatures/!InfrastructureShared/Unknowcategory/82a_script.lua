@@ -3,23 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = Remediation.Threat
-local l_0_1 = {}
--- DECOMPILER ERROR at PC5: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC6: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC11: Overwrote pending register: R3 in 'AssignReg'
-
-if "HKCR\\lnkfile" and (string.find)("HKLM\\software\\classes\\lnkfile", "Ransom:Win32/Spora", 1, true) then
-  for l_0_5,l_0_6 in pairs(l_0_1) do
-    local l_0_7 = (sysio.RegOpenKey)(l_0_6)
-    if l_0_7 ~= nil then
-      local l_0_8 = (sysio.GetRegValueAsString)(l_0_7, "isShortcut")
-      if l_0_8 == nil then
-        (sysio.SetRegValueAsString)(l_0_7, "isShortcut", "")
-      end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_AMSI then
+  local l_0_1, l_0_2 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+  if l_0_1 and l_0_2 ~= nil then
+    local l_0_3 = (string.lower)(l_0_2)
+    if (string.find)(l_0_3, "ae_scan.vbs") or (string.find)(l_0_3, "manageengine\\assetexplorer\\bin\\", 1, true) then
+      return mp.INFECTED
     end
   end
+end
+do
+  return mp.CLEAN
 end
 

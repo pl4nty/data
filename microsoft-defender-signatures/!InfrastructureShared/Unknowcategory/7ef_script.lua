@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -7) == "mrt.exe" or (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "wmiprvse.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
-  return mp.CLEAN
+if pehdr.NumberOfSections > 4 and pehdr.NumberOfSections < 16 and (pesecs[pehdr.NumberOfSections]).Name == ".jdata" and (pesecs[pehdr.NumberOfSections - 1]).Name == ".idata" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 32768 and (pesecs[pehdr.NumberOfSections - 2]).Name == ".v-lizer" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

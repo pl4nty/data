@@ -3,41 +3,39 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (pe.get_regval)(pe.REG_ESP)
+local l_0_1 = (pe.mmap_va)(l_0_0, 16)
+local l_0_2 = (mp.readu_u32)(l_0_1, 5)
+local l_0_3 = (mp.readu_u32)(l_0_1, 9)
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC22: Overwrote pending register: R0 in 'AssignReg'
-
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-    local l_0_1, l_0_2 = this_sigattrlog[2]
-  else
-    do
-      do return mp.CLEAN end
-      -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
-
-      if not l_0_1.utf8p2 then
-        return mp.CLEAN
-      end
-      local l_0_3 = nil
-      local l_0_4 = {}
-      local l_0_5 = "0x0c347ca0"
-      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3.utf8p2)) do
-        local l_0_6 = nil
-        -- DECOMPILER ERROR at PC45: Confused about usage of register: R8 in 'UnsetPending'
-
-        if (string.lower)(R8_PC45) ~= (string.lower)(l_0_3.image_path) and (sysio.IsFileExists)(R8_PC45) then
-          (table.insert)(l_0_4, l_0_3.ppid .. ";" .. l_0_5 .. ";" .. R8_PC45)
-        end
-      end
-      if #l_0_4 > 0 then
-        (MpCommon.SetPersistContextNoPath)("bm_ipc_taskschd", l_0_4, 10)
-      end
-      return mp.CLEAN
+  if l_0_2 == 2088763392 then
+    local l_0_4 = (pe.mmap_va)(l_0_3, 12)
+    if l_0_4 == "MpVmp32Entry" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    if l_0_4 == "MpSehHandler" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    if l_0_4 == "MpExitThread" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    if l_0_4 == "MpReportEven" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    if l_0_4 == "MpStartProce" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    l_0_4 = (pe.mmap_va)(l_0_3, 10)
+    if l_0_4 == "MpFinalize" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
     end
   end
+  return mp.CLEAN
 end
 

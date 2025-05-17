@@ -3,40 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-local l_0_2, l_0_3 = "\\cmd.exe", (bm.get_process_relationships)()
-for l_0_7,l_0_8 in ipairs(l_0_3) do
-  local l_0_4 = nil
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R8 in 'UnsetPending'
-
-  if R8_PC8.image_path ~= nil and (string.sub)(R8_PC8.image_path, -#l_0_2) == l_0_2 and (mp.bitand)(R8_PC8.reason_ex, 1) == 1 then
-    do
-      do
-        l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_9.ppid))
-        ;
-        (bm.add_threat_process)(l_0_9.ppid)
-        do break end
-        -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out DO_STMT
-
-        -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
-
-      end
-    end
-  end
+local l_0_0 = ""
+local l_0_1 = (mp.GetBruteMatchData)()
+local l_0_2 = l_0_1.match_offset + 1
+local l_0_3 = l_0_1.match_offset + 1 + 512
+if l_0_1.is_header then
+  l_0_0 = ((tostring(headerpage)):sub(l_0_2, l_0_3)):lower()
+else
+  l_0_0 = ((tostring(footerpage)):sub(l_0_2, l_0_3)):lower()
 end
-if l_0_1 ~= nil and #l_0_2 < #l_0_1 then
-  local l_0_10 = nil
-  for l_0_14,l_0_15 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_11 = nil
-    if (string.sub)((mp.bitand)(R8_PC8.reason_ex, 1), -#l_0_2) ~= l_0_2 and (sysio.IsFileExists)((mp.bitand)(R8_PC8.reason_ex, 1)) then
-      (bm.add_threat_file)((mp.bitand)(R8_PC8.reason_ex, 1))
-    end
-  end
+local l_0_4 = l_0_0:match("([^:]+:)")
+if not l_0_4 then
+  return mp.CLEAN
 end
-do
+if (string.len)(l_0_4) >= (string.len)(l_0_0) then
+  return mp.CLEAN
+end
+if l_0_4:find("post/owa/", 1, true) and l_0_4:find("powershell", 1, true) and l_0_0:find("x-owa-explicitlogonuser:", 1, true) then
   return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,18 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC117: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC117: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC117: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC117: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC117: Unhandled construct in 'MakeBoolean' P3
-
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched and not (hstrlog[9]).matched and not (hstrlog[10]).matched and not (hstrlog[11]).matched and not (hstrlog[12]).matched and not (hstrlog[13]).matched and not (hstrlog[14]).matched and not (hstrlog[15]).matched) or not (hstrlog[16]).matched) and not (hstrlog[22]).matched) or 0 + 1 + 1 == 2 then
-  return mp.INFECTED
+local l_0_0 = 3
+if l_0_0 * 10000000 < (bm.GetSignatureMatchDuration)() then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)((bm.get_imagepath)())
+if l_0_1 == nil or (string.len)(l_0_1) < 1 then
+  return mp.CLEAN
+end
+if (string.find)((string.lower)(l_0_1), "\\program files", 1, true) or (string.find)((string.lower)(l_0_1), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_1), "\\mpcmdrun.exe", 1, true) then
+  return mp.CLEAN
+end
+local l_0_2, l_0_3 = (bm.get_process_relationships)()
+for l_0_7,l_0_8 in ipairs(l_0_2) do
+  if l_0_8.image_path ~= nil and (mp.bitand)(l_0_8.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_8.image_path), "\\powershell.exe", 1, true) then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

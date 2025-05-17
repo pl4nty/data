@@ -3,10 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if (string.find)(l_0_0, ".aspx", -5, true) and ((string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\frontend\\") ~= nil or (string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\clientaccess\\") ~= nil or (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\v%d%d\\template\\layouts\\") ~= nil or (string.find)(l_0_0, "\\frontend\\httpproxy\\owa\\", 1, true) ~= nil or (string.find)(l_0_0, "\\inetpub\\wwwroot\\", 1, true) ~= nil) then
-  (mp.ReportLowfi)(l_0_0, 1638888637)
-  return mp.INFECTED
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 9
+local l_0_2 = 256
+local l_0_3 = ""
+local l_0_4 = 0
+local l_0_5 = 0
+if l_0_0.is_header then
+  l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
+else
+  l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
 end
-return mp.CLEAN
+l_0_3 = (string.gsub)(l_0_3, "%^", "")
+l_0_3 = (string.gsub)(l_0_3, "`", "")
+l_0_3 = (string.lower)(l_0_3)
+if l_0_4 + l_0_5 > 10 and (string.find)(l_0_3, "powershell", 1, true) then
+  (mp.set_mpattribute)("SCPT:rtcShellPSObfus.A")
+end
+if l_0_4 > 20 and (string.find)(l_0_3, "cmd", 1, true) then
+  (mp.set_mpattribute)("SCPT:rtcShellCmdObfus.A")
+end
+return mp.INFECTED
 

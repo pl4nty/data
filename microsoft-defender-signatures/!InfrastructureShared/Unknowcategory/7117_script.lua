@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((mp.getfilename)(mp.FILEPATH_QUERY_FULL)):lower()
-if not l_0_0:find("assets/", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
+return mp.INFECTED
 

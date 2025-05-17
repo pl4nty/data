@@ -3,28 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 == nil or l_0_0 == "" then
-  return mp.CLEAN
-end
-local l_0_3 = (string.match)(l_0_0, "(.*)%.(%a+)->%w+/%w+.bin$")
-if l_0_3 == nil or l_0_0 == nil then
-  l_0_3 = l_0_0
-  local l_0_1, l_0_2 = nil
-else
-  do
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R2 in 'UnsetPending'
-
-    l_0_3 = l_0_3 .. "." .. l_0_1
-    l_0_3 = (MpCommon.PathToWin32Path)(l_0_3)
-    if l_0_3 == nil or l_0_3 == "" then
-      return mp.CLEAN
-    end
-    l_0_3 = (string.lower)(l_0_3)
-    if (string.find)(l_0_3, ".:\\program files %(x86%)\\blp\\api\\office tools\\") ~= nil then
-      return mp.CLEAN
+do
+  if (peattributes.isexe ~= true or ((pesecs[1]).Name ~= "UPX0" and (pesecs[1]).Name ~= ".text") or ((pesecs[2]).Name ~= "UPX1" and (pesecs[2]).Name ~= ".bss") or (mp.get_mpattribute)("pea_no_security")) then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

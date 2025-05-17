@@ -3,22 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
-local l_0_1 = (bm.get_imagepath)()
-do
-  if l_0_1 ~= nil then
-    local l_0_2 = {}
-    l_0_2["cmstp.exe"] = true
-    l_0_2["dllhost.exe"] = true
-    if l_0_2[((string.lower)((string.sub)(l_0_1, -15))):match("\\([^\\]+)$")] then
-      return mp.CLEAN
-    end
-  end
-  ;
-  (bm.add_related_file)(l_0_1)
+if (string.find)(l_0_0, "firefox", 1, true) or (string.find)(l_0_0, "backup", 1, true) or (string.find)(l_0_0, "sync", 1, true) or (string.find)(l_0_0, "waterfox", 1, true) then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "\\appdata\\", 1, true) then
   return mp.INFECTED
 end
+return mp.CLEAN
 

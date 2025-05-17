@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("CURE:Virus:Win32/Expiro.BA_0327")
+(mp.set_mpattribute)("Company:IntelliBreezeSoftware")
 return mp.INFECTED
 

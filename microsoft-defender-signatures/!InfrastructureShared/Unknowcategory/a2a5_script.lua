@@ -3,15 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
+local l_0_0 = nil
+for l_0_4 = mp.SIGATTR_LOG_SZ, 1, -1 do
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+
+  if (sigattr_head[R4_PC6]).matched and ((sigattr_head[R4_PC6]).attribute == 16384 or (sigattr_head[R4_PC6]).attribute == 16389) then
+    l_0_1 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[R4_PC6]).utf8p1)
+    if l_0_1 ~= nil and (sysio.IsFileExists)(l_0_1) then
+      (mp.ReportLowfi)(l_0_1 .. "\000", 3307547556)
+    end
+  end
 end
-if (string.find)(l_0_0, ".tmp\\", 1, true) or (string.find)(l_0_0, "\\temp\\", 1, true) then
-  return mp.INFECTED
-end
-if (string.find)(l_0_0, "\\program files\\", 1, true) or (string.find)(l_0_0, "\\program files (x86)\\", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

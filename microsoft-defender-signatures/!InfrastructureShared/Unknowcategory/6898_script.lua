@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 282624 then
+if peattributes.ismsil then
+  (mp.set_mpattribute)("PUA:Block:WizzRemote:Bit")
   return mp.INFECTED
 end
 return mp.CLEAN

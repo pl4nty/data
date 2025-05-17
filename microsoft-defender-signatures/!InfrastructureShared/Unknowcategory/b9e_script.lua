@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Solimba")
+(mp.set_mpattribute)("FOP:Deep_Analysis")
 return mp.INFECTED
 

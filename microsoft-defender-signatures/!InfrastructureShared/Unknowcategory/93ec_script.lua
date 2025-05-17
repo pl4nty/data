@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetUACMetadata)()
-if l_0_0 == nil then
+do
+  if peattributes.isdll == true or peattributes.isdll == true and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if l_0_0.Type ~= mp.AMSI_UAC_REQUEST_TYPE_COM then
-  return mp.CLEAN
-end
-if (string.lower)((l_0_0.Info).Clsid) ~= "48012511-82cc-48f3-ae5b-40c7401a5a09" then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

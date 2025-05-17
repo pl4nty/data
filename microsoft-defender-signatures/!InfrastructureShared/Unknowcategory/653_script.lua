@@ -3,69 +3,52 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if MpCommon.SECURITY_MANDATORY_HIGH_RID <= l_0_0.integrity_level then
-  return mp.CLEAN
-end
-local l_0_1 = (bm.get_imagepath)()
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-l_0_1 = (string.lower)(l_0_1)
-if (string.find)(l_0_1, "\\windowsapps\\", 1, true) ~= nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, "\\appdata\\local\\packages\\", 1, true) ~= nil then
-  return mp.CLEAN
-end
-local l_0_2 = 4294967295
-local l_0_3 = nil
-if (this_sigattrlog[1]).matched then
-  l_0_3 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1)
-  if l_0_3 ~= nil then
-    l_0_2 = (sysio.GetFileAttributes)(l_0_3)
-    if l_0_2 ~= nil and l_0_2 ~= 4294967295 and (mp.bitand)(l_0_2, 1024) == 1024 then
-      (bm.add_related_file)(l_0_3)
-      return mp.INFECTED
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (mp.getfilesize)()
+  if l_0_1 > 2097152 then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.lower)((mp.getfilename)())
+  if l_0_2 == nil or (string.len)(l_0_2) < 10 then
+    return mp.CLEAN
+  end
+  local l_0_3 = l_0_2:sub(-4)
+  local l_0_4 = l_0_2:sub(-6)
+  local l_0_5 = {}
+  l_0_5[".jse"] = true
+  l_0_5[".vbs"] = true
+  l_0_5[".wsf"] = true
+  l_0_5[".vbe"] = true
+  l_0_5[".hta"] = true
+  l_0_5[".mht"] = true
+  l_0_5[".bat"] = true
+  l_0_5[".ps1"] = true
+  l_0_5[".cmd"] = true
+  l_0_5[".url"] = true
+  l_0_5[".exe"] = true
+  l_0_5[".scr"] = true
+  l_0_5[".pif"] = true
+  l_0_5[".lnk"] = true
+  l_0_5[".docx"] = true
+  l_0_5[".xlsx"] = true
+  l_0_5[".doc"] = true
+  l_0_5[".xls"] = true
+  l_0_5[".rtf"] = true
+  l_0_5.docm = true
+  l_0_5.xlsm = true
+  l_0_5.ppam = true
+  l_0_5.pptm = true
+  l_0_5.ppsm = true
+  l_0_5.potm = true
+  if l_0_5[l_0_3] == true or l_0_5[l_0_4] == true then
+    if not l_0_2:find(".iso->", 1, true) and not l_0_2:find(".arj->", 1, true) and not l_0_2:find(".gz->", 1, true) and not l_0_2:find(".xz->", 1, true) and not l_0_2:find(".ace->", 1, true) and not l_0_2:find(".z->", 1, true) and not l_0_2:find(".vhd->", 1, true) and not l_0_2:find("ppkg->", 1, true) and not l_0_2:find(".img->", 1, true) then
+      return mp.CLEAN
     end
+    return mp.INFECTED
   end
 end
-l_0_2 = 4294967295
-l_0_3 = nil
-if (this_sigattrlog[2]).matched then
-  l_0_3 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1)
-  if l_0_3 ~= nil then
-    l_0_2 = (sysio.GetFileAttributes)(l_0_3)
-    if l_0_2 ~= nil and l_0_2 ~= 4294967295 and (mp.bitand)(l_0_2, 1024) == 1024 then
-      (bm.add_related_file)(l_0_3)
-      return mp.INFECTED
-    end
-  end
+do
+  return mp.CLEAN
 end
-l_0_2 = 4294967295
-l_0_3 = nil
-if (this_sigattrlog[3]).matched then
-  l_0_3 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1)
-  if l_0_3 ~= nil then
-    l_0_2 = (sysio.GetFileAttributes)(l_0_3)
-    if l_0_2 ~= nil and l_0_2 ~= 4294967295 and (mp.bitand)(l_0_2, 1024) == 1024 then
-      return mp.INFECTED
-    end
-  end
-end
-l_0_2 = 4294967295
-l_0_3 = nil
-if (this_sigattrlog[4]).matched then
-  l_0_3 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[4]).utf8p1)
-  if l_0_3 ~= nil then
-    l_0_2 = (sysio.GetFileAttributes)(l_0_3)
-    if l_0_2 ~= nil and l_0_2 ~= 4294967295 and (mp.bitand)(l_0_2, 1024) == 1024 then
-      return mp.INFECTED
-    end
-  end
-end
-return mp.CLEAN
 

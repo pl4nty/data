@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 126976 then
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
-end
-if mp.HSTR_WEIGHT >= 2 then
+-- DECOMPILER ERROR at PC27: Unhandled construct in 'MakeBoolean' P3
+
+if (peattributes.amd64_image and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096448) or (pesecs[pehdr.NumberOfSections]).Characteristics == 3761242176 then
   return mp.INFECTED
 end
 return mp.CLEAN

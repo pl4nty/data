@@ -3,34 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 == nil or (string.find)((string.lower)(l_0_0), "/reporting", 1, true) ~= nil then
-  return mp.CLEAN
+if peattributes.hasappendeddata then
+  local l_0_0 = (mp.getfilesize)()
+  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
+
+  if (l_0_0 >= 6402040 and l_0_0 <= 6591488 and pehdr.SizeOfImage == 622592) or l_0_0 < 57671680 or l_0_0 >= 14188544 and l_0_0 <= 14254080 and pehdr.SizeOfImage == 921600 then
+    local l_0_1 = pehdr.NumberOfSections
+    local l_0_2 = (pesecs[l_0_1]).PointerToRawData + (pesecs[l_0_1]).SizeOfRawData
+    ;
+    (mp.readprotection)(false)
+    local l_0_3 = (mp.readfile)(l_0_2, 16)
+    if l_0_3 == "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" then
+      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
+      return mp.INFECTED
+    end
+  end
 end
 do
-  if not (this_sigattrlog[7]).utf8p1 then
-    local l_0_1 = (this_sigattrlog[8]).utf8p1
-  end
-  -- DECOMPILER ERROR at PC28: Confused about usage of register: R1 in 'UnsetPending'
-
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
-
-  local l_0_2 = (string.lower)(l_0_1)
-  if l_0_2 == nil or (string.find)(l_0_2, "c:\\", 1, true) == nil then
-    return mp.CLEAN
-  end
-  if (sysio.IsFileExists)(l_0_2) then
-    (bm.add_related_file)(l_0_2)
-  end
-  local l_0_3 = (bm.get_current_process_startup_info)()
-  if l_0_3 ~= nil and l_0_3.ppid ~= nil then
-    (bm.request_SMS)(l_0_3.ppid, "m")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 1)
-  end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

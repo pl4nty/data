@@ -3,21 +3,19 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if l_0_1 ~= nil then
+  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    if (sysio.IsFileExists)(l_0_7) then
+      (bm.add_related_file)(l_0_7)
+    end
+  end
+end
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 and (string.find)(l_0_0, "nightmare", 1, true) then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  l_0_2 = mp
+  l_0_2 = l_0_2.INFECTED
+  return l_0_2
 end
 

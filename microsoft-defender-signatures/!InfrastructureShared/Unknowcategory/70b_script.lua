@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -18) == "\\processhacker.exe" then
-  return mp.CLEAN
+if not (Remediation.Threat).Offline and (string.find)((Remediation.Threat).Name, "Detrahere!reg", 1, true) then
+  (Remediation.SetCallistoRequired)()
 end
-return mp.INFECTED
 

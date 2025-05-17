@@ -3,31 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0.integrity_level <= MpCommon.SECURITY_MANDATORY_LOW_RID then
-  local l_0_1 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)
-  if l_0_0.integrity_level < l_0_1.IntegrityLevel then
-    local l_0_2 = nil
-    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
-      if (sigattr_tail[l_0_6]).matched and (sigattr_tail[l_0_6]).attribute == 16393 then
-        l_0_2 = (sigattr_tail[l_0_6]).utf8p2
-        if l_0_2 ~= nil then
-          local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_2)
-          for l_0_11,l_0_12 in ipairs(l_0_7) do
-            l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
-            if (sysio.IsFileExists)(l_0_12) then
-              (bm.add_related_file)(l_0_12)
-            end
-          end
-        end
+local l_0_0 = (mp.IOAVGetDownloadUrl)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.len)(l_0_0) < 12 then
+  return mp.CLEAN
+end
+l_0_0 = (string.lower)(l_0_0)
+local l_0_1 = false
+if (string.find)(l_0_0, "/j.mp/", 1, true) or (string.find)(l_0_0, "/www.j.mp/", 1, true) then
+  (mp.set_mpattribute)("//Lua:SuspUrlDownload")
+else
+  if (string.find)(l_0_0, "/wp-content/", 1, true) then
+    (mp.set_mpattribute)("Lua:WordPressContent")
+    l_0_1 = true
+  else
+    if (string.find)(l_0_0, "/wp-includes/", 1, true) then
+      (mp.set_mpattribute)("Lua:WordPressInclude")
+      l_0_1 = true
+    else
+      if (string.find)(l_0_0, "/wp-admin/", 1, true) then
+        (mp.set_mpattribute)("Lua:WordPressAdmin")
+        l_0_1 = true
       end
     end
-    do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC66: Confused about usage of register R3 for local variables in 'ReleaseLocals'
-
   end
 end
-l_0_1 = mp
-l_0_1 = l_0_1.CLEAN
-return l_0_1
+if l_0_1 == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

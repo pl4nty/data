@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pe.get_regval)(pe.REG_EAX) == 106 and (pe.get_regval)(pe.REG_EDX) == 80 then
+if peattributes.ismsil == true and (mp.getfilesize)() >= 16384 and (mp.getfilesize)() <= 20480 then
   return mp.INFECTED
 end
 return mp.CLEAN

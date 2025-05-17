@@ -3,19 +3,40 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-local l_0_1 = l_0_0:match("(%w+%.exe)$")
-if l_0_0 == nil or l_0_1 == nil then
+local l_0_0 = function(l_1_0)
+  -- function num : 0_0
+  for l_1_4 = 1, #l_1_0 do
+    local l_1_5 = l_1_0:byte(l_1_4)
+    if (l_1_5 >= 194 and l_1_5 <= 207) or l_1_5 >= 208 and l_1_5 <= 211 then
+      return true
+    end
+  end
+  return false
+end
+
+local l_0_1 = (mp.GetScannedPPID)()
+if l_0_1 == "" or l_0_1 == nil then
   return mp.CLEAN
 end
-local l_0_2 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%"))
-if (l_0_0:find(l_0_2 .. "\\system32", 1, true) or l_0_0:find(l_0_2 .. "\\syswow64", 1, true)) and l_0_1 == "rundll32.exe" then
-  if (this_sigattrlog[4]).matched then
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2471941984)
-  else
-    ;
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 1925377452)
-  end
+local l_0_2 = (mp.GetProcessCommandLine)(l_0_1)
+if not l_0_2 then
+  return mp.CLEAN
+end
+if #l_0_2 < 50 then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.GetParentProcInfo)()
+if l_0_3 == nil or l_0_3.image_path == nil then
+  return mp.CLEAN
+end
+local l_0_4 = (string.lower)(l_0_3.image_path)
+if l_0_4:match("([^\\]+)$") ~= "explorer.exe" then
+  return mp.CLEAN
+end
+if l_0_0(l_0_2) then
+  return mp.INFECTED
+end
+if (mp.get_mpattribute)("MpCmdLineFoundB64") then
   return mp.INFECTED
 end
 return mp.CLEAN

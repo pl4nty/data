@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and peattributes.no_security == true then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%-%>%(RarSfx%)%-%>%w+%.vbs$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 and (string.len)(l_0_0) > 50 then
+if #(mp.enum_mpattributesubstring)("SCPT:JS/Belmont.ZD") >= 2 then
   return mp.INFECTED
 end
 return mp.CLEAN

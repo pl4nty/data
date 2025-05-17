@@ -6,28 +6,28 @@
 if peattributes.hasexports == true then
   return mp.CLEAN
 end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
 if peattributes.hasstandardentry == true then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections ~= 5 then
+if pehdr.NumberOfSections ~= 6 then
   return mp.CLEAN
 end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1685021486 then
+if (pesecs[1]).NameDW ~= 1685021486 then
   return mp.CLEAN
 end
-if (pesecs[1]).NameDW ~= 2019914798 then
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 2019914798 then
   return mp.CLEAN
 end
-if epcode[1] ~= 80 then
+if epcode[1] ~= 144 then
   return mp.CLEAN
 end
-if epcode[2] ~= 104 then
+if epcode[2] <= 224 then
   return mp.CLEAN
 end
-if epcode[7] ~= 232 then
+if epcode[5] ~= 255 then
+  return mp.CLEAN
+end
+if epcode[6] ~= 255 then
   return mp.CLEAN
 end
 if (pesecs[1]).PointerToRawData ~= 1024 then

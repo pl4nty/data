@@ -3,10 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-local l_0_1, l_0_2 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 > 16410 and l_0_1 ~= nil and l_0_2 ~= nil and ((string.find)(l_0_1, "/tmp", 1, true) or (string.find)(l_0_1, "/home", 1, true) or (string.find)(l_0_1, "/dev/shm", 1, true) or (string.find)(l_0_1, "/var/crash", 1, true)) and l_0_2 == "java" then
-  return mp.INFECTED
+local l_0_0 = (this_sigattrlog[7]).utf8p1
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+l_0_0 = (string.lower)(l_0_0)
+if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
+  return mp.CLEAN
+end
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
+end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
+end
+return mp.INFECTED
 

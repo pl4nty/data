@@ -3,35 +3,51 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 16 or l_0_0 > 1048576 then
-  return mp.CLEAN
-end
-if mp.HEADERPAGE_SZ == 0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)()
-if l_0_1:find("\\Temporary Internet Files\\Content.IE5\\") then
-  return mp.CLEAN
-end
-local l_0_2, l_0_3 = nil, nil
-l_0_2 = l_0_1:find("%.%w+$")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_4 = l_0_1:sub(l_0_2, l_0_3)
-local l_0_5 = false
-if l_0_4 == ".asp" or l_0_4 == ".aspx" or l_0_4 == ".php" or l_0_4 == ".php5" or l_0_4 == ".phtml" or l_0_4 == ".cgi" or l_0_4 == ".pl" or l_0_4 == ".cfm" or l_0_4 == ".cfc" or l_0_4 == ".jsp" or l_0_4 == ".js" or l_0_4 == ".py" or l_0_4 == ".rb" then
-  l_0_5 = true
-end
-if l_0_5 == false then
-  return mp.CLEAN
-end
-if (mp.crc32)(0, headerpage, 1, 3) == 3665532023 then
-  if mp.FOOTERPAGE_SZ ~= 0 and (mp.crc32)(0, footerpage, mp.FOOTERPAGE_SZ - 1, 2) == 1814796034 then
-    return mp.CLEAN
+if (mp.get_mpattributesubstring)("!dha") and ((mp.get_mpattributesubstring)("ALF:") or (mp.get_mpattributesubstring)("SLF:") or (mp.get_mpattributesubstring)("TEL:") or (mp.get_mpattributesubstring)("ALFPER:") or (mp.get_mpattributesubstring)("SLFPER:") or (mp.get_mpattributesubstring)("TELPER:")) then
+  local l_0_0 = {}
+  -- DECOMPILER ERROR at PC49: No list found for R0 , SetList fails
+
+  -- DECOMPILER ERROR at PC50: Overwrote pending register: R1 in 'AssignReg'
+
+  local l_0_1 = "ALF:"
+  -- DECOMPILER ERROR at PC51: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R3 in 'AssignReg'
+
+  for l_0_5,l_0_6 in ("SLF:")("TEL:") do
+    local l_0_7 = (mp.enum_mpattributesubstring)(l_0_6)
+    for l_0_11,l_0_12 in ipairs(l_0_7) do
+      if l_0_12:sub(-#l_0_1) == l_0_1 then
+        local l_0_13 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+        if l_0_13 == nil then
+          return mp.INFECTED
+        end
+        if l_0_13 == nil then
+          return mp.INFECTED
+        end
+        local l_0_14, l_0_15 = (string.find)(l_0_13, "->")
+        -- DECOMPILER ERROR at PC107: Overwrote pending register: R13 in 'AssignReg'
+
+        if l_0_14 then
+          do
+            (MpCommon.SetOriginalFileName)(l_0_13, l_0_12)
+            do return mp.INFECTED end
+            -- DECOMPILER ERROR at PC116: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC116: LeaveBlock: unexpected jumping out IF_STMT
+
+            -- DECOMPILER ERROR at PC116: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC116: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+      end
+    end
   end
-  return mp.INFECTED
 end
-return mp.CLEAN
+-- DECOMPILER ERROR at PC121: Overwrote pending register: R0 in 'AssignReg'
+
+do return l_0_0 end
+-- WARNING: undefined locals caused missing assignments!
 

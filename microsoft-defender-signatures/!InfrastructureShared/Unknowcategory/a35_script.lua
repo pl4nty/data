@@ -3,35 +3,35 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[6]).matched then
-    local l_0_0 = nil
-  else
+  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
+    local l_0_0, l_0_2, l_0_4, l_0_5, l_0_7 = nil, nil
   end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
+  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
+    local l_0_1 = nil
+  else
+    do
+      -- DECOMPILER ERROR at PC39: Overwrote pending register: R1 in 'AssignReg'
 
-  do
-    if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
-      local l_0_1, l_0_2 = (mp.GetExecutablesFromCommandLine)((this_sigattrlog[7]).utf8p2)
-    end
-    -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC53: Overwrote pending register: R1 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
+      do
+        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p2 ~= nil then
+          local l_0_3, l_0_6 = , (this_sigattrlog[5]).utf8p2
+        else
+        end
+        -- DECOMPILER ERROR at PC68: Confused about usage of register: R0 in 'UnsetPending'
 
-    if l_0_1 ~= nil then
-      for l_0_6,l_0_7 in ipairs(l_0_1) do
-        local l_0_3 = nil
-        -- DECOMPILER ERROR at PC48: Confused about usage of register: R5 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC73: Confused about usage of register: R0 in 'UnsetPending'
 
-        if (string.find)((string.lower)(R5_PC48), "/library/preferences/com.apple.loginwindow.plist", 1, true) then
+        if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p2 == nil or l_0_3 ~= nil) and (string.find)((this_sigattrlog[8]).utf8p2, l_0_3, 1, true) then
           return mp.INFECTED
         end
+        return mp.CLEAN
       end
-      return mp.CLEAN
     end
-    return mp.INFECTED
   end
 end
 

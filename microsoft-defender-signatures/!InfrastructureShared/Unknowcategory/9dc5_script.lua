@@ -3,9 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (pe.mmap_va)((mp.bitand)(pevars.sigaddr + 10 + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 6, 4), 1), 4294967295), 6) == "çd$\f\015\133" then
-  (pe.mmap_patch_va)(pevars.sigaddr + 1, "\002\000\000\000")
-  return mp.INFECTED
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 17, 1)
+local l_0_1 = 21
+if (string.byte)(l_0_0) == 129 then
+  l_0_1 = 24
+  if (string.byte)((pe.mmap_va)(pevars.sigaddr + 21, 1)) == 2 then
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\235")
+return mp.INFECTED
 

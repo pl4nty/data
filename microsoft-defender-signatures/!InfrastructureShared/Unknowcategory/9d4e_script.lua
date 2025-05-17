@@ -3,19 +3,23 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.match)(l_0_0, "hidden.+bypass.+iex.+text%.encoding.+frombase64string.+gp.*hkcu:.+") ~= nil then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R6 in 'UnsetPending'
+
+    if (sysio.IsFileExists)(R6_PC23) then
+      (bm.add_related_file)(R6_PC23)
+    end
+  end
+  return mp.INFECTED
 end
 

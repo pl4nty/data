@@ -3,17 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
-  if l_0_2 ~= nil and (string.find)(l_0_3, l_0_2) then
-    (mp.TriggerScanResource)("folder", "C:\\Windows\\System32\\Tasks\\")
-    return mp.INFECTED
+local l_0_0 = ((string.lower)((string.sub)((bm.get_imagepath)(), -10)))
+local l_0_1 = nil
+if l_0_0 == "\\lsass.exe" then
+  if (this_sigattrlog[1]).matched then
+    l_0_1 = (this_sigattrlog[1]).utf8p1
+  else
+    if (this_sigattrlog[2]).matched then
+      l_0_1 = (this_sigattrlog[2]).utf8p1
+    end
   end
+  if l_0_1 ~= nil then
+    (bm.add_threat_file)(l_0_1)
+  end
+  return mp.INFECTED
 end
-do
-  return mp.LOWFI
-end
+return mp.CLEAN
 

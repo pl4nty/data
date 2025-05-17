@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).Name == "UPX0" and (pesecs[1]).SizeOfRawData == 0 then
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

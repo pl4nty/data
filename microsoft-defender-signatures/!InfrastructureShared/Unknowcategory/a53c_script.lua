@@ -3,32 +3,30 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-  local l_0_0, l_0_1 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_0 ~= nil then
-      local l_0_2 = nil
-      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0.utf8p2)) do
-        local l_0_3 = nil
-        -- DECOMPILER ERROR at PC30: Confused about usage of register: R6 in 'UnsetPending'
-
-        R6_PC30 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(R6_PC30))
-        if ((sysio.IsFileExists)(R6_PC30 .. "\\mozcrt19.dll") or (sysio.IsFileExists)(R6_PC30 .. "\\mozsqlite3.dll") or (sysio.IsFileExists)(R6_PC30 .. "\\sqlite3.dll")) and not (string.find)(R6_PC30, "\\mozilla firefox", 1, true) then
-          return mp.INFECTED
-        end
-      end
-    end
-    do
+if peattributes.isdll and peattributes.hasexports and peattributes.amd64_image then
+  if (mp.getfilesize)() > 1703936 then
+    return mp.CLEAN
+  end
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
       return mp.CLEAN
     end
   end
+  local l_0_6 = (pe.get_exports_count)()
+  if l_0_6 >= 2 and l_0_6 <= 8 then
+    local l_0_7, l_0_8 = (pe.get_exports)()
+    for l_0_12 = 1, l_0_7 do
+      local l_0_13 = (l_0_8[l_0_12]).rva
+      local l_0_14 = (mp.readu_u16)((pe.mmap_rva)(l_0_13, 2), 1)
+      local l_0_15 = (mp.bsplit)(l_0_14, 8)
+      if l_0_15 == 235 or l_0_15 == 233 then
+        return mp.INFECTED
+      end
+    end
+  end
+end
+do
+  return mp.CLEAN
 end
 

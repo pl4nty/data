@@ -3,15 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_2 == "winthemes.dll" and ((string.sub)(l_0_1, -9) == "\\system32" or (string.sub)(l_0_1, -9) == "\\syswow64" or (string.sub)(l_0_1, -14) == "\\system32\\wins" or (string.sub)(l_0_1, -14) == "\\syswow64\\wins") then
-    (mp.set_mpattribute)("Lua:SefnitFileName.E")
-  end
-end
-do
+if not (mp.IsHipsRuleEnabled)("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550") then
   return mp.CLEAN
 end
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  return mp.CLEAN
+end
+local l_0_0 = {}
+l_0_0["iexplore.exe"] = true
+l_0_0["firefox.exe"] = true
+l_0_0["chrome.exe"] = true
+l_0_0["opera.exe"] = true
+l_0_0["microsoftedge.exe"] = true
+l_0_0["browser_broker.exe"] = true
+l_0_0["antimalware.tools.testhips.exe"] = true
+local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+if l_0_0[l_0_1] == nil then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("MpDisableCaching")
+return mp.CLEAN
 

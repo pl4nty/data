@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_ismsil") and peattributes.no_security == true and (mp.getfilesize)() < 1064000 then
+if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
+  return mp.CLEAN
+end
+if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
   return mp.INFECTED
 end
 return mp.CLEAN

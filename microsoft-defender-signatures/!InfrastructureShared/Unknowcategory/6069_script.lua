@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "AppxManifest.xml") ~= nil then
+if peattributes.no_security == true and (mp.getfilesize)() < 5200 then
   return mp.INFECTED
 end
 return mp.CLEAN

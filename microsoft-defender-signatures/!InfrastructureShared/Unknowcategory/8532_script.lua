@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil == true and peattributes.isexe == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.INFECTED
 end
+if (mp.get_mpattribute)("Tracur_decryption") then
+  return mp.INFECTED
+end
+;
+(mp.set_mpattribute)("HSTR:Tracur_Antiemu")
+return mp.LOWFI
 

@@ -3,43 +3,18 @@
 
 -- params : ...
 -- function num : 0
-starts = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  do return (string.sub)(l_1_0, 1, (string.len)(l_1_1)) == l_1_1 end
-  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-
-towin32path = function(l_2_0)
-  -- function num : 0_1
-  local l_2_1 = l_2_0
-  if starts((string.lower)(l_2_0), "\\device\\") then
-    l_2_1 = (MpCommon.PathToWin32Path)(l_2_0)
-  end
-  return l_2_1
-end
-
-normalize_path = function(l_3_0)
-  -- function num : 0_2
-  local l_3_1 = towin32path(l_3_0)
-  if l_3_1 == nil then
-    return nil
-  end
-  do
-    if #l_3_1 > 4 then
-      local l_3_5 = l_3_1:sub
-      l_3_5 = l_3_5(l_3_1, 1, 4)
-      if l_3_5 == "\\\\?\\" then
-        local l_3_4 = l_3_1
-        l_3_5 = l_3_5(l_3_4, 5)
-        l_3_1 = l_3_5
-      end
-    end
-    local l_3_2 = string.lower
-    local l_3_3 = l_3_1
-    do return l_3_2(l_3_3) end
-    -- DECOMPILER ERROR at PC25: Confused about usage of register R3 for local variables in 'ReleaseLocals'
-
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
   end
 end
-
+local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+if (string.find)(l_0_6:lower(), "microsoft.net\\framework.-\\v[0-9.].+\\temporary asp.net files\\") or (string.find)(l_0_6:lower(), "microsoft\\exchange server\\v[0-9].+\\clientaccess\\owa\\bin") or (string.find)(l_0_6:lower(), "microsoft\\exchange server\\v[0-9].+\\frontend\\httpproxy\\owa\\bin") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

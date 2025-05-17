@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:NiceHashMiner")
-return mp.INFECTED
+if (mp.getfilesize)() > 1000000 then
+  return mp.CLEAN
+end
+return mp.LOWFI
 

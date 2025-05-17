@@ -3,18 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\atbroker.exe$") then
+local l_0_0 = (this_sigattrlog[8]).utf8p1
+if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\atbroker.exe")
-do
-  if l_0_1 ~= nil then
-    local l_0_2 = (sysio.GetRegValueAsString)(l_0_1, "Debugger")
-    if l_0_2 ~= nil and (string.len)(l_0_2) >= 1 and (sysio.IsFileExists)(l_0_2) then
-      (mp.ReportLowfi)(l_0_2, 202313540)
-    end
-  end
-  return mp.INFECTED
+l_0_0 = (string.lower)(l_0_0)
+if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
+  return mp.CLEAN
 end
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
+end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
+end
+return mp.INFECTED
 

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil then
-  return mp.CLEAN
-end
-local l_0_0 = (this_sigattrlog[2]).utf8p1
-if (string.find)(l_0_0, "\\conhost.exe", 1, true) then
-  return mp.CLEAN
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.INFECTED
 

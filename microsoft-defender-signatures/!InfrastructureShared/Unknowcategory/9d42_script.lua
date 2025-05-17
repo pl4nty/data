@@ -3,12 +3,18 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 9, "\141\r")
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 16, 1)
-local l_0_1 = pevars.sigaddr + 15 + (string.byte)(l_0_0, 1) + 2 - 2
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 15, "")
-;
-(pe.mmap_patch_va)(l_0_1, "")
-return mp.INFECTED
+local l_0_0 = (mp.GetBruteMatchData)()
+do
+  local l_0_1 = ""
+  if l_0_0.is_header then
+    l_0_1 = (string.lower)(tostring(headerpage))
+  else
+    l_0_1 = (string.lower)(tostring(footerpage))
+  end
+  if l_0_1 > 3 then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
+end
 

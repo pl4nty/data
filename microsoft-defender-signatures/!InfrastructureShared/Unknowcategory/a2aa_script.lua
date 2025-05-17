@@ -3,28 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  if (string.find)(l_0_1, "schtasks.exe", 1, true) and l_0_0.ppid ~= nil then
-    local l_0_2 = (mp.GetParentProcInfo)(l_0_0.ppid)
-    if l_0_2 ~= nil then
-      (MpCommon.RequestSmsOnProcess)(l_0_2.ppid, MpCommon.SMS_SCAN_MED)
-      ;
-      (mp.SMSAsyncScan)(l_0_2.ppid)
-      return mp.LOWFI
-    end
-  else
-    do
-      do
-        ;
-        (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
-        ;
-        (mp.SMSAsyncScan)(l_0_0.ppid)
-        do return mp.LOWFI end
-        return mp.LOWFI
-      end
-    end
+local l_0_0 = {}
+l_0_0["winword.exe"] = true
+l_0_0["excel.exe"] = true
+l_0_0["powerpnt.exe"] = true
+l_0_0["outlook.exe"] = true
+l_0_0["iexplore.exe"] = true
+l_0_0["microsoftedge.exe"] = true
+l_0_0["chrome.exe"] = true
+l_0_0["firefox.exe"] = true
+local l_0_1 = (mp.GetParentProcInfo)()
+if l_0_1 ~= nil then
+  local l_0_2 = (string.lower)(l_0_1.image_path)
+  local l_0_3 = (string.match)(l_0_2, "\\([^\\]+)$")
+  if l_0_3 == "" or l_0_3 == nil then
+    return mp.CLEAN
   end
+  if l_0_0[l_0_3] == true then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
 end
 

@@ -3,37 +3,136 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_VALIDATION_PRESCAN then
-  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_URL)
-  if (string.match)(l_0_0, "/in%.cgi%?") or (string.match)(l_0_0, "/go%.php%?sid=") or (string.match)(l_0_0, "/runforestrun%?sid=") or (string.sub)(l_0_0, -12) == "/counter.php" or (string.match)(l_0_0, "%.php%?tp=") then
-    (mp.aggregate_mpattribute)("Context:HighRiskURL")
-    ;
-    (mp.aggregate_mpattribute)("//MpIsIEVScan")
-    return mp.TRUE
-  end
-  if (string.match)(l_0_0, "globalnewsweekly%.com") or (string.match)(l_0_0, "militaryexponews%.com") or (string.match)(l_0_0, "evrosatory%.com") or (string.match)(l_0_0, "osce%-oscc%.org") or (string.match)(l_0_0, "militaryinf%.com") or (string.match)(l_0_0, "academl%.com") or (string.match)(l_0_0, "natoexhibitionff14%.com") or (string.match)(l_0_0, "world%-oil%-company%.com") or (string.match)(l_0_0, "eurosatory%-2014%.com") or (string.match)(l_0_0, "tolonevvs%.com") or (string.match)(l_0_0, "enisa%-europa%.org") or (string.match)(l_0_0, "westinqhousenuclear%.com") or (string.match)(l_0_0, "bostondyn%.com") or (string.match)(l_0_0, "tusexpo2015%.com") or (string.match)(l_0_0, "enisa%-europa%.com") or (string.match)(l_0_0, "evronaval%.com") or (string.match)(l_0_0, "politicalreview%.eu") or (string.match)(l_0_0, "login%-osce%.org") or (string.match)(l_0_0, "assaas%.org") or (string.match)(l_0_0, "militaryobserver%.net") or (string.match)(l_0_0, "nshq%.in") or (string.match)(l_0_0, "amtxy%.com") or (string.match)(l_0_0, "cajalibertad%.net") or (string.match)(l_0_0, "rapidleechcdn%.com") or (string.match)(l_0_0, "dailyforeignnews%.com") or (string.match)(l_0_0, "farnboroughair2014%.com") or (string.match)(l_0_0, "itec2014%.co%.uk") or (string.match)(l_0_0, "readcbn%.com") or (string.match)(l_0_0, "natopress%.org") or (string.match)(l_0_0, "ausxxl%.com") or (string.match)(l_0_0, "defencereview%.eu") or (string.match)(l_0_0, "tubeloc%.com") or (string.match)(l_0_0, "nato%-press%.org") or (string.match)(l_0_0, "aowiejf%.com") or (string.match)(l_0_0, "middle%-eastreview%.com") or (string.match)(l_0_0, "nato%-hq%.com") or (string.match)(l_0_0, "hujutrust%.com") or (string.match)(l_0_0, "eurosatory%-2014%.com") or (string.match)(l_0_0, "defenceadviser%.org") or (string.match)(l_0_0, "armypress%.org") or (string.match)(l_0_0, "abtcd%.com") or (string.match)(l_0_0, "baikaltrading%.com") or (string.match)(l_0_0, "brnlv%-gv%.eu") or (string.match)(l_0_0, "policeoracle%.org") or (string.match)(l_0_0, "bagacamesmo%.biz") or (string.match)(l_0_0, "militaryadviser%.org") or (string.match)(l_0_0, "evrosatory%.com") or (string.match)(l_0_0, "intelnetservice%.com") or (string.match)(l_0_0, "techcruncln%.com") or (string.match)(l_0_0, "mediarea%.org") or (string.match)(l_0_0, "bulletin%-center%.com") or (string.match)(l_0_0, "iacr%-tcc%.org") or (string.match)(l_0_0, "myusufruct%.com") or (string.match)(l_0_0, "azureon%-line%.com") or (string.match)(l_0_0, "worldpoliticsnews%.org") or (string.match)(l_0_0, "lukasgruenberger%.com") or (string.match)(l_0_0, "natopress%.com") or (string.match)(l_0_0, "foreign%-review%.com") or (string.match)(l_0_0, "newsdailyworld%.com") or (string.match)(l_0_0, "zerocashtalk%.org") or (string.match)(l_0_0, "flashsecurity%.org") or (string.match)(l_0_0, "neodice%.com") or (string.match)(l_0_0, "netassistcache%.com") or (string.match)(l_0_0, "kwqx%.us") or (string.match)(l_0_0, "mfapress%.org") or (string.match)(l_0_0, "nato%-info%.com") or (string.match)(l_0_0, "contenthosts%.net") or (string.match)(l_0_0, "nato%-press%.com") or (string.match)(l_0_0, "mediacloudsolution%.com") or (string.match)(l_0_0, "cryptoplans%.com") or (string.match)(l_0_0, "mfapress%.com") or (string.match)(l_0_0, "osce%-military%.org") or (string.match)(l_0_0, "dailypoliticsnews%.com") or (string.match)(l_0_0, "appleupdate%.org") or (string.match)(l_0_0, "ikbenzo%.com") or (string.match)(l_0_0, "qov%.hu%.com") or (string.match)(l_0_0, "intelisearch%-inc%.com") or (string.match)(l_0_0, "eurasiaglobalnews%.com") or (string.match)(l_0_0, "qov%.hu") or (string.match)(l_0_0, "jihadfire%.com") or (string.match)(l_0_0, "al7ruae2014%.com") or (string.match)(l_0_0, "europeanda%.com") or (string.match)(l_0_0, "academl%.com") or (string.match)(l_0_0, "eurosatory2014%.com") or (string.match)(l_0_0, "yovtube%.co") or (string.match)(l_0_0, "sofexjordan2014%.com") or (string.match)(l_0_0, "worldmilitarynews%.org") or (string.match)(l_0_0, "adobearmsvc%.com") or (string.match)(l_0_0, "middle%-easterview%.com") or (string.match)(l_0_0, "globalnewsweekly%.com") or (string.match)(l_0_0, "mfa%-gov%.info") or (string.match)(l_0_0, "gpwpl%.com") or (string.match)(l_0_0, "zerocashwiki%.org") or (string.match)(l_0_0, "foreignreview%.com") or (string.match)(l_0_0, "defencereview%.net") or (string.match)(l_0_0, "escrowlogica%.com") or (string.match)(l_0_0, "advpdxapi%.com") or (string.match)(l_0_0, "chaukilos%.com") or (string.match)(l_0_0, "intelsupport%.net") or (string.match)(l_0_0, "aadexpo2014%.co%.za") or (string.match)(l_0_0, "llamadas%-whatsapp%.com") or (string.match)(l_0_0, "nato%-int%.com") or (string.match)(l_0_0, "thunderminer%.com") or (string.match)(l_0_0, "diplomatnews%.org") or (string.match)(l_0_0, "kg%-news%.org") or (string.match)(l_0_0, "middle%-eastreview%.org") or (string.match)(l_0_0, "mscoresvw%.com") or (string.match)(l_0_0, "uz%-news%.org") or (string.match)(l_0_0, "bbcnewsweek%.com") or (string.match)(l_0_0, "natoint%.com") or (string.match)(l_0_0, "nytimesnews%.net") or (string.match)(l_0_0, "defenceiq%.us") or (string.match)(l_0_0, "mfadaily%.com") or (string.match)(l_0_0, "newsdailyinhk%.com") or (string.match)(l_0_0, "anti%-wars%.org") or (string.match)(l_0_0, "ncmp2014%.com") or (string.match)(l_0_0, "aunewsonline%.com") or (string.match)(l_0_0, "new%-agency%.us") or (string.match)(l_0_0, "gdforum%.info") or (string.match)(l_0_0, "standartnevvs%.com") or (string.match)(l_0_0, "ns%.mfanews%.org") or (string.match)(l_0_0, "eurosatary%.com") or (string.match)(l_0_0, "eurosator%.com") or (string.match)(l_0_0, "mfanews%.org") or (string.match)(l_0_0, "imperialc0nsult%.com") or (string.match)(l_0_0, "xuetue2013%.com") or (string.match)(l_0_0, "www%.gdforum%.info") or (string.match)(l_0_0, "www%.sofexjordanx%.com") or (string.match)(l_0_0, "sofexjordanx%.com") or (string.match)(l_0_0, "heidelberqcement%.com") or (string.match)(l_0_0, "ifcdsc%.org") or (string.match)(l_0_0, "northropgrumman%.org%.uk") or (string.match)(l_0_0, "counterterorexpo%.com") or (string.match)(l_0_0, "nato%.nshq%.in") or (string.match)(l_0_0, "bostondynamlcs%.com") or (string.match)(l_0_0, "vice%-news%.com") or (string.match)(l_0_0, "mfanews%.info") or (string.match)(l_0_0, "ns1%.mfanews%.org") or (string.match)(l_0_0, "mail%.sofexjordanx%.com") or (string.match)(l_0_0, "kavkazcentr%.info") or (string.match)(l_0_0, "www%.eurosatory%-2014%.com") or (string.match)(l_0_0, "gdforum%.net") or (string.match)(l_0_0, "osce%-press%.org") or (string.match)(l_0_0, "thediplomat%-press%.com") or (string.match)(l_0_0, "bbcnewsweek%.com") or (string.match)(l_0_0, "ausa%.info") or (string.match)(l_0_0, "nuclear%-reactor%.org") or (string.match)(l_0_0, "ausameetings%.com") or (string.match)(l_0_0, "defensenews%.org") or (string.match)(l_0_0, "aliazeera%.org") or (string.match)(l_0_0, "104%.171%.117%.211") or (string.match)(l_0_0, "198%.105%.122%.184") or (string.match)(l_0_0, "91%.229%.78%.224") or (string.match)(l_0_0, "185%.77%.129%.122") or (string.match)(l_0_0, "23%.227%.196%.122") or (string.match)(l_0_0, "188%.241%.140%.243") or (string.match)(l_0_0, "69%.90%.132%.136") or (string.match)(l_0_0, "93%.115%.86%.170") or (string.match)(l_0_0, "95%.215%.45%.189") or (string.match)(l_0_0, "193%.169%.244%.85") or (string.match)(l_0_0, "104%.223%.7%.10") or (string.match)(l_0_0, "87%.236%.215%.60") or (string.match)(l_0_0, "173%.194%.112%.246") or (string.match)(l_0_0, "37%.46%.114%.143") or (string.match)(l_0_0, "182%.77%.129%.122") or (string.match)(l_0_0, "80%.255%.3%.118") or (string.match)(l_0_0, "185%.82%.200%.235") or (string.match)(l_0_0, "167%.114%.214%.62") or (string.match)(l_0_0, "pravdaonline%.com") or (string.match)(l_0_0, "wmepadtech%.com") or (string.match)(l_0_0, "swsupporttools%.com") or (string.match)(l_0_0, "acledit%.com") or (string.match)(l_0_0, "biocpl%.org") or (string.match)(l_0_0, "winsyschecks%.com") then
-    (mp.aggregate_mpattribute)("Context:Foosace.A!Lure!dha")
-    ;
-    (mp.aggregate_mpattribute)("//MpIsIEVScan")
-    return mp.TRUE
-  end
-  local l_0_1 = {}
-  -- DECOMPILER ERROR at PC1292: No list found for R1 , SetList fails
-
-  -- DECOMPILER ERROR at PC1293: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC1294: Overwrote pending register: R3 in 'AssignReg'
-
-  for l_0_5 = "alertfromwindows%.com", "err0x%x+%.tech" do
-    if (string.match)(l_0_0, l_0_1[l_0_5]) then
-      (mp.aggregate_mpattribute)("Context:Techscam")
-      ;
-      (mp.aggregate_mpattribute)("//MpIsIEVScan")
-      return mp.TRUE
-    end
-  end
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block Office applications from injecting code into other processes"
+  l_1_0.Description = "Windows Defender Exploit Guard detected Office application injecting code into the process."
+  l_1_0.NotificationDedupingInterval = 14400
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_ALL
+  l_1_0.Type = (HIPS.bitor)(HIPS.RULE_DISABLE_AUDIT_INHERITANCE, HIPS.RULE_DISABLE_BLOCK_INHERITANCE)
+  l_1_0.Flags = HIPS.NO_INVOLVEDDOC_EXCL
+  return l_1_0
 end
-do
-  return mp.FALSE
+
+GetMonitoredLocations = function()
+  -- function num : 0_1
+  local l_2_0 = {}
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office15\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office15\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office15\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office15\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office14\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office14\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office14\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\root\\Office14\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office16\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office16\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office16\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office16\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office15\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office15\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office15\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office15\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office14\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office14\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office14\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles(x86)%\\Microsoft Office\\Office14\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office16\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office16\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office16\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office16\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office15\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office15\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office15\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office15\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office14\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office14\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office14\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\root\\Office14\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office16\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office16\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office16\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office16\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office15\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office15\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office15\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office15\\ONENOTE.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office14\\WINWORD.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office14\\EXCEL.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office14\\POWERPNT.EXE"] = 2
+  l_2_0["%programfiles%\\Microsoft Office\\Office14\\ONENOTE.EXE"] = 2
+  return 2, l_2_0
 end
+
+GetPathExclusions = function()
+  -- function num : 0_2
+  local l_3_0 = {}
+  l_3_0["%windir%\\system32\\WerFault.exe"] = 2
+  l_3_0["%windir%\\SysWOW64\\WerFault.exe"] = 2
+  l_3_0["%windir%\\system32\\DWWIN.EXE"] = 2
+  l_3_0["%windir%\\SysWOW64\\DWWIN.EXE"] = 2
+  l_3_0["C:\\Windows\\system32\\DWWIN.EXE"] = 0
+  l_3_0["C:\\Windows\\SysWOW64\\DWWIN.EXE"] = 0
+  l_3_0["%windir%\\system32\\spool\\drivers\\x64\\3\\CPC10Q.EXE"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Azure Information Protection\\MSIP.ExecutionHost.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Azure Information Protection\\MSIP.ExecutionHost32.exe"] = 2
+  l_3_0["%programfiles%\\Microsoft Azure Information Protection\\MSIP.ExecutionHost.exe"] = 2
+  l_3_0["%programfiles%\\Microsoft Azure Information Protection\\MSIP.ExecutionHost32.exe"] = 2
+  l_3_0["%programfiles%\\Common Files\\microsoft shared\\ClickToRun\\OfficeClickToRun.exe"] = 2
+  l_3_0["%programfiles%\\Microsoft OneDrive\\*\\FileCoAuth.exe"] = 2
+  l_3_0["%programfiles%\\WindowsApps\\MSTeams_*\\ms-teams.exe"] = 2
+  l_3_0["%programdata%\\App-V"] = 2
+  l_3_0["%programfiles%\\Microsoft Office\\root\\VFS\\ProgramFilesCommonX64\\Microsoft Shared\\DW\\dw20.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\VFS\\ProgramFilesCommonX64\\Microsoft Shared\\DW\\dw20.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Common Files\\microsoft shared\\DW\\DW20.EXE"] = 2
+  l_3_0["%programfiles%\\Common Files\\microsoft shared\\DW\\DW20.EXE"] = 2
+  l_3_0["%programfiles%\\Microsoft Office\\root\\Office16\\ADDINS\\Microsoft Power Query for Excel Integrated\\bin\\Microsoft.Mashup.Container.Loader.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\ADDINS\\Microsoft Power Query for Excel Integrated\\bin\\Microsoft.Mashup.Container.Loader.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft\\EdgeWebView\\Application\\*\\msedgewebview2.exe"] = 2
+  l_3_0["%programfiles%\\Microsoft\\EdgeWebView\\Application\\*\\msedgewebview2.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft\\Edge Beta\\Application\\*\\msedgewebview2.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft\\Edge\\Application\\msedge.exe"] = 2
+  l_3_0["%programfiles%\\Microsoft\\Edge\\Application\\msedge.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\ONENOTEM.EXE"] = 2
+  l_3_0["%programfiles%\\Microsoft Office\\root\\Office16\\ONENOTEM.EXE"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\Office16\\ONENOTE.EXE"] = 2
+  l_3_0["%programfiles%\\Microsoft Office\\root\\Office16\\ONENOTE.EXE"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Office\\Office*\\FIRSTRUN.EXE"] = 2
+  l_3_0["%programfiles%\\Microsoft Office\\Office*\\FIRSTRUN.EXE"] = 2
+  l_3_0["%programfiles%\\Google\\Chrome\\Application\\chrome.exe"] = 2
+  l_3_0["%programfiles%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\ai.exe"] = 2
+  l_3_0["%programfiles%\\WindowsApps\\Microsoft.Office.Desktop_*\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\AI\\ai.exe"] = 2
+  l_3_0["%programfiles%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\ai.exe"] = 2
+  l_3_0["%programfiles%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\AI\\ai.exe"] = 2
+  l_3_0["%programfiles%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\aimgr.exe"] = 2
+  l_3_0["%programfiles%\\WindowsApps\\Microsoft.Office.Desktop_*\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\AI\\aimgr.exe"] = 2
+  l_3_0["%programfiles%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\aimgr.exe"] = 2
+  l_3_0["%programfiles%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\AI\\aimgr.exe"] = 2
+  l_3_0["%programfiles(x86)%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\ai.exe"] = 2
+  l_3_0["%programfiles(x86)%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\AI\\ai.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\ai.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\AI\\ai.exe"] = 2
+  l_3_0["%programfiles(x86)%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\aimgr.exe"] = 2
+  l_3_0["%programfiles(x86)%\\WindowsApps\\Microsoft.Office.Desktop_*\\VFS\\ProgramFilesCommonX??\\Microsoft Shared\\OFFICE16\\AI\\aimgr.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\aimgr.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX??\\Microsoft Shared\\Office16\\AI\\aimgr.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd??.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Office Timeline\\Current\\Ines.UserService.Exe"] = 2
+  l_3_0["%programfiles(x86)%\\empower\\charts\\LiveUpdateHub.exe"] = 2
+  l_3_0["%programfiles(x86)%\\Dania Software\\DynamicTemplate for Office\\ApplicationFocus.exe"] = 2
+  l_3_0["%windir%\\splwow64.exe"] = 2
+  l_3_0["%windir%\\system32\\fsiso.exe"] = 2
+  return l_3_0
+end
+
+GetCommandLineRegExp = function()
+  -- function num : 0_3
+  return "((windowsapps\\\\[^\\\\]+\\\\)|(microsoft office\\\\(root\\\\)?))office..\\\\(winword|excel|powerpnt|onenote)\\.exe\\\"?[^\\\"]+\\\"([^\\\"]+)\\\"?"
+end
+
 

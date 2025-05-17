@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 38, "")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-return mp.INFECTED
+if peattributes.isexe and peattributes.ismsil and peattributes.x86_image and peattributes.has_msilresources then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

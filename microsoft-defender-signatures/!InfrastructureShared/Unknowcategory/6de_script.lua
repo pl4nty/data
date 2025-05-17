@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattributesubstring)(":ReconWL:") then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("MpInternal_TencodeVpath1")
 return mp.CLEAN
 

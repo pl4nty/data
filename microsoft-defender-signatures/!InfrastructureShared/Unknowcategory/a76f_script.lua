@@ -3,25 +3,65 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EDI)
-if l_0_0 <= 0 or l_0_0 > 1048576 then
-  return mp.INFECTED
+if peattributes.epscn_writable ~= true then
+  return mp.CLEAN
 end
-local l_0_1 = (pe.get_regval)(pe.REG_EBX)
-local l_0_2 = (pe.mmap_va)(pevars.sigaddr, 128)
-local l_0_3 = (mp.readu_u32)(l_0_2, 28)
-local l_0_4 = (pe.mmap_va)(l_0_3, 256)
-local l_0_5 = (mp.readu_u32)(l_0_2, 37)
-local l_0_6 = (mp.readu_u32)((pe.mmap_va)(l_0_5, 4), 1)
-local l_0_7 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
-local l_0_8 = "\190\000\000\000\000\189\001\000\000\000âË@%\255\000\000\000â≈âÔäóN\002@\000\015∂ \003\rJ\002@\000Å·\255\000\000\000äôN\002@\000àëN\002@\000\137\rJ\002@\000àüN\002@\000\015∂âN\002@\000\015∂”\001—Å\225\255\000\000\000\015∂ôN\002@\000∏N\003@\0000\0280ÉÓ\001u°√\000\000\000\000"
-local l_0_9 = (pe.mmap_va)(l_0_1, l_0_0)
-local l_0_10 = l_0_7 .. l_0_8 .. l_0_4 .. l_0_9
+if peattributes.hasboundimports == true then
+  return mp.CLEAN
+end
+if peattributes.isdll ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasexports ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect == true then
+  return mp.CLEAN
+end
+if peattributes.epscn_islast == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections <= 2 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size >= 80 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).Size <= 192 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).Size >= 224 then
+  return mp.CLEAN
+end
 ;
-(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 2, l_0_0)
-;
-(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 107, l_0_6)
-;
-(mp.vfo_add_buffer)(l_0_10, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
+if (mp.readu_u32)(l_0_0, 1) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 5) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 9) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 13) <= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 17) ~= 1 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 21) ~= 6 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 25) ~= 6 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 29) <= 0 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

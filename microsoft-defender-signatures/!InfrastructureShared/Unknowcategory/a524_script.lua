@@ -3,31 +3,28 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  if (this_sigattrlog[2]).matched then
-    do return mp.CLEAN end
-    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/replaceremoteprefix [^ ]+ [^ ]+ \\\\localhost\\[^ ]*") ~= nil then
-      return mp.INFECTED
-    else
-      -- DECOMPILER ERROR at PC48: Confused about usage of register: R0 in 'UnsetPending'
-
-      if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/replaceremoteprefix [^ ]+ [^ ]+ \\\\127%.0%.0%.1\\[^ ]*") ~= nil then
-        return mp.INFECTED
-      else
-        -- DECOMPILER ERROR at PC59: Confused about usage of register: R0 in 'UnsetPending'
-
-        if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/replaceremoteprefix [^ ]+ [^ ]+ .:\\[^ ]*") ~= nil then
-          return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if not l_0_1 then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+if (string.find)(l_0_1, "%.%w+:%d%d+ ") then
+  local l_0_2 = (mp.GetParentProcInfo)(l_0_0.ppid)
+  do
+    do
+      if l_0_2 ~= nil then
+        local l_0_3 = (string.lower)(l_0_2.image_path)
+        if (string.find)(l_0_3, "\\appdata\\roaming\\", 1, true) or (string.find)(l_0_3, "\\appdata\\local\\", 1, true) or (string.find)(l_0_3, "\\programdata\\", 1, true) then
+          (bm.add_threat_file)(l_0_3)
+        else
+          ;
+          (bm.add_related_file)(l_0_3)
         end
       end
+      do return mp.INFECTED end
+      return mp.CLEAN
     end
-    return mp.CLEAN
   end
 end
 

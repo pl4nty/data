@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.sub)(l_0_0, -10) == "->(Upxw64)" then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:VSearch.F")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

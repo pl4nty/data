@@ -3,50 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if (string.sub)((string.lower)((bm.get_imagepath)()), -13) == "\\sqlservr.exe" or (string.sub)((string.lower)((bm.get_imagepath)()), -13) == "\\sqlagent.exe" then
-  l_0_1 = true
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+local l_0_1 = l_0_0:match("(%w+%.exe)$")
+if l_0_0 == nil or l_0_1 == nil then
+  return mp.CLEAN
 end
-if not l_0_1 then
-  local l_0_2, l_0_3 = , (bm.get_process_relationships)()
-  for l_0_7,l_0_8 in ipairs(l_0_3) do
-    local l_0_4 = nil
-    -- DECOMPILER ERROR at PC30: Confused about usage of register: R8 in 'UnsetPending'
-
-    if R8_PC30.image_path ~= nil and (mp.bitand)(R8_PC30.reason_ex, 1) == 1 and ((string.lower)((string.sub)(R8_PC30.image_path, -13)) == "\\sqlservr.exe" or (string.lower)((string.sub)(R8_PC30.image_path, -13)) == "\\sqlagent.exe") then
-      l_0_1 = true
-      break
-    end
+local l_0_2 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%"))
+if (l_0_0:find(l_0_2 .. "\\system32", 1, true) or l_0_0:find(l_0_2 .. "\\syswow64", 1, true)) and l_0_1 == "rundll32.exe" then
+  if (this_sigattrlog[4]).matched then
+    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2471941984)
+  else
+    ;
+    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 1925377452)
   end
+  return mp.INFECTED
 end
-do
-  if l_0_1 ~= nil then
-    l_0_3 = nil
-    local l_0_9 = nil
-    l_0_9 = this_sigattrlog
-    l_0_9 = l_0_9[3]
-    l_0_9 = l_0_9.matched
-    if l_0_9 then
-      l_0_9 = this_sigattrlog
-      l_0_9 = l_0_9[3]
-      l_0_3 = l_0_9.utf8p2
-    end
-    if l_0_3 ~= nil then
-      l_0_9 = l_0_9(l_0_3, "Detection:([^\\]+)$")
-      local l_0_10 = nil
-      l_0_10 = bm
-      l_0_10 = l_0_10.trigger_sig
-      l_0_10(l_0_9, "MalwareDroppedBySQL")
-      l_0_10 = mp
-      l_0_10 = l_0_10.INFECTED
-      return l_0_10
-    end
-  end
-  do
-    l_0_3 = mp
-    l_0_3 = l_0_3.CLEAN
-    return l_0_3
-  end
-end
+return mp.CLEAN
 

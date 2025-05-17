@@ -6,77 +6,77 @@
 if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-if epcode[1] ~= 131 then
+if peattributes.packed ~= true then
   return mp.CLEAN
 end
-if epcode[6] ~= 117 then
-  return mp.CLEAN
-end
-if epcode[8] ~= 232 then
+if peattributes.hasexports == true then
   return mp.CLEAN
 end
 if peattributes.hasstandardentry == true then
   return mp.CLEAN
 end
+if pehdr.SizeOfHeaders ~= 4096 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 5 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections > 6 then
+  return mp.CLEAN
+end
 if pehdr.ImageBase ~= 268435456 then
+  return mp.CLEAN
+end
+if pehdr.Subsystem ~= 2 then
+  return mp.CLEAN
+end
+if pehdr.FileAlignment ~= 512 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfStackReserve ~= 1048576 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode <= 4096 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode >= 524288 then
   return mp.CLEAN
 end
 if pehdr.NumberOfSections < pevars.epsec then
   return mp.CLEAN
 end
-if (pesecs[pevars.epsec]).SizeOfRawData <= 65536 then
+if (pesecs[pevars.epsec]).SizeOfRawData <= 0 then
   return mp.CLEAN
 end
-if (pesecs[pevars.epsec]).SizeOfRawData >= 327680 then
+if (pesecs[pevars.epsec]).SizeOfRawData >= 524288 then
   return mp.CLEAN
 end
-if peattributes.hasexports ~= true then
+local l_0_0 = pehdr.SizeOfCode - (pesecs[pevars.epsec]).SizeOfRawData
+if (mp.bitand)(l_0_0, 2147483648) == 2147483648 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[1]).Size <= 0 then
+if ((pehdr.DataDirectory)[2]).RVA <= 0 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[1]).Size >= 256 then
+if ((pehdr.DataDirectory)[3]).Size >= 1536 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[6]).Size >= 12288 then
+if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[6]).Size <= 4096 then
+if ((pehdr.DataDirectory)[5]).Size ~= 0 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[11]).RVA == 0 then
+if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
+if ((pehdr.DataDirectory)[10]).Size ~= 0 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(l_0_0, 5) <= 0 then
+if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 17) ~= 1 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 21) ~= 4 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) ~= 4 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 29) <= 0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 11)
-if (mp.crc32)(-1, l_0_1, 1, 11) ~= 3888332938 then
+if ((pehdr.DataDirectory)[12]).Size ~= 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (string.sub)(l_0_0, 14, 14)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 11, "\187" .. l_0_1 .. "\000\000\000")
-return mp.INFECTED
+if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 6 and peattributes.isexe then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,30 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  if peattributes.isexe == false then
-    return mp.CLEAN
-  end
-  if peattributes.isdriver == true then
-    return mp.CLEAN
-  end
-  if peattributes.no_security == false then
-    return mp.CLEAN
-  end
-  local l_0_0 = {}
-  l_0_0["excel.exe"] = true
-  l_0_0["lync.exe"] = true
-  l_0_0["powerpnt.exe"] = true
-  l_0_0["pptview.exe"] = true
-  l_0_0["visio.exe"] = true
-  l_0_0["winword.exe"] = true
-  l_0_0["wordview.exe"] = true
-  l_0_0["xlview.exe"] = true
-  if l_0_0[(string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))] then
-    return mp.INFECTED
+RemoveDalexisBaseFile = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = (sysio.GetProcessFromFileName)(l_1_0)
+  for l_1_5,l_1_6 in pairs(l_1_1) do
+    local l_1_7 = (string.lower)((sysio.GetFileNameFromProcess)((string.format)("pid:%d,ProcessStart:%u", l_1_6.pid, l_1_6.starttime)))
+    if (string.sub)(l_1_7, -4) == ".scr" then
+      (sysio.DeleteFile)(l_1_7)
+    end
   end
 end
-do
-  return mp.CLEAN
+
+local l_0_0 = Remediation.Threat
+if l_0_0.Active and (string.match)(l_0_0.Name, "TrojanDownloader:Win32/Dalexis") then
+  for l_0_4,l_0_5 in pairs(l_0_0.Resources) do
+    if l_0_5.Schema == "process" then
+      RemoveDalexisBaseFile(l_0_5.Path)
+    end
+  end
 end
 

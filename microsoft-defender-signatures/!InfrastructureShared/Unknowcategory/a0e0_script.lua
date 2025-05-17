@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.gmatch)(l_0_0, "::readallbytes%([\'\"](.+%.lnk)[\'\"]%)")
-  for l_0_5 in l_0_1 do
-    if (sysio.IsFileExists)(l_0_5) then
-      (bm.add_related_file)(l_0_5)
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_AMSI then
+  local l_0_1, l_0_2 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+  if l_0_1 and l_0_2 ~= nil then
+    local l_0_3 = (string.lower)(l_0_2)
+    if l_0_3:find("ssco-026.ps1", 1, true) then
+      return mp.INFECTED
     end
   end
 end
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+  return mp.CLEAN
 end
 

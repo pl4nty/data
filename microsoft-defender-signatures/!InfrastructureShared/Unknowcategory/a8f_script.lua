@@ -3,25 +3,21 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0, l_0_2, l_0_3, l_0_4 = nil
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-    local l_0_0 = nil
+  if (this_sigattrlog[2]).matched then
+    local l_0_1 = nil
+    l_0_1 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), "/([0-9a-f]+)/init.pid$")
   end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R1 in 'AssignReg'
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
 
-  do
-    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
-      local l_0_2 = nil
-    end
-    -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
 
-    local l_0_1 = ((string.match)(l_0_2, "-f%s+(.+)")):gsub("%s*$", "")
-    if l_0_1 == (string.match)(nil, "/%a.+/(.+)$") then
-      return mp.INFECTED
-    end
+  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_1 == nil or not (MpCommon.QueryPersistContextNoPath)("docker_create", l_0_1) or not (MpCommon.QueryPersistContextNoPath)("docker_start", l_0_1) then
     return mp.CLEAN
   end
+  return mp.INFECTED
 end
 

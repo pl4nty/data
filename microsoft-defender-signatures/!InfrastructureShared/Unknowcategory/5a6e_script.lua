@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() == 675840 then
+if peattributes.hasappendeddata and peattributes.dirty_wx_branch then
   return mp.INFECTED
 end
 return mp.CLEAN

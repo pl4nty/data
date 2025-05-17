@@ -3,18 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = l_0_0:sub(-4)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = {}
-l_0_2.aspx = mp.INFECTED
-if l_0_2[l_0_1] == mp.INFECTED then
-  return mp.INFECTED
+local l_0_0 = (pe.get_regval)(pe.REG_EBX)
+local l_0_1 = (pe.get_api_id)(l_0_0)
+if l_0_1 == 1269389306 then
+  (mp.set_mpattribute)("lua_codepatch_Obfuscator.zg")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 16, "êê")
 end
 return mp.CLEAN
 

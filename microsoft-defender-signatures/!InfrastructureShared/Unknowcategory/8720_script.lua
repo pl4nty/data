@@ -3,10 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (pe.get_api_id)((pe.get_regval)(pe.REG_EAX)) ~= 4111270722 then
-  return mp.CLEAN
+if peattributes.isdll == true and (mp.getfilesize)() < 210000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\001\000\000\000")
-return mp.INFECTED
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

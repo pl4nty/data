@@ -3,17 +3,47 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or (mp.getfilesize)() > 1048576 then
-  return mp.CLEAN
+local l_0_0, l_0_2 = nil, nil
+if (this_sigattrlog[2]).matched then
+  local l_0_1 = nil
+else
+  do
+    -- DECOMPILER ERROR at PC16: Overwrote pending register: R1 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC25: Overwrote pending register: R1 in 'AssignReg'
+
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_3, l_0_6 = , (this_sigattrlog[2]).wp1
+    else
+      do
+        -- DECOMPILER ERROR at PC38: Overwrote pending register: R2 in 'AssignReg'
+
+        do
+          if (this_sigattrlog[5]).matched then
+            local l_0_7 = nil
+          end
+          -- DECOMPILER ERROR at PC39: Confused about usage of register: R1 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC45: Confused about usage of register: R1 in 'UnsetPending'
+
+          if l_0_6 ~= nil then
+            local l_0_4, l_0_5 = (string.lower)((mp.utf16to8)(l_0_6))
+            if (string.find)(l_0_4, "\\ms%l+%.exe:%d+$") then
+              return mp.INFECTED
+            end
+          else
+            do
+              -- DECOMPILER ERROR at PC64: Confused about usage of register: R2 in 'UnsetPending'
+
+              if nil ~= nil and (string.find)(nil, "\\windows\\\\%d+$") then
+                return mp.INFECTED
+              end
+              return mp.CLEAN
+            end
+          end
+        end
+      end
+    end
+  end
 end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-if (pe.get_exports_count)() > 3 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

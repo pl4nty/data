@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-GetRuleInfo = function()
-  -- function num : 0_0
-  local l_1_0 = {}
-  l_1_0.Name = "Block JavaScript or VBScript from launching downloaded executable content"
-  l_1_0.Description = "Windows Defender Exploit Guard detected a script interpreter process running obfuscated JavaScript, VBScript, or macro code."
-  l_1_0.NotificationDedupingInterval = 120
-  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
-  return l_1_0
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if (string.find)(l_0_1, "^[a-z]%.exe$") then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_2 == "powershell.exe" then
+      (mp.set_mpattribute)("Lua:ContextualPSDroppedEK")
+    end
+  end
 end
-
+do
+  return mp.CLEAN
+end
 

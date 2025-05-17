@@ -3,8 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isexe == true and (pesecs[6]).Name == ".symtab" and (pesecs[3]).Characteristics == 3221225536 and (pesecs[4]).Characteristics == 3221225536 then
-  return mp.INFECTED
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = {}
+local l_0_1 = {}
+l_0_1.sig = "f\001⁄k\210\003f˜“ê¡\202\005â◊0\016"
+l_0_1.xray_type = 3
+l_0_1.bytes_to_decrypt = 0
+-- DECOMPILER ERROR at PC12: No list found for R0 , SetList fails
+
+l_0_1 = pe
+l_0_1 = l_0_1.xray_block
+local l_0_2 = l_0_0
+local l_0_3 = 1
+local l_0_4 = 2
+local l_0_5 = 0
+do
+  local l_0_6 = 256
+  do return l_0_1(l_0_2, l_0_3, l_0_4, l_0_5, l_0_6) end
+  -- DECOMPILER ERROR at PC22: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
+end
 

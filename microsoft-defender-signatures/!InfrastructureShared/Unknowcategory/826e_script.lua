@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.ImageBase + pehdr.AddressOfEntryPoint == 4198400 and peattributes.isexe and pehdr.NumberOfSections > 3 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 ~= nil and (string.find)((string.lower)((mp.getfilename)()), ".php") and l_0_0 > 40000 and l_0_0 < 48000 then
   return mp.INFECTED
 end
 return mp.CLEAN

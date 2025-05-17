@@ -3,39 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0.integrity_level <= MpCommon.SECURITY_MANDATORY_HIGH_RID then
-  local l_0_1 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)
-  if l_0_0.integrity_level < l_0_1.IntegrityLevel then
-    local l_0_2 = nil
-    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
-      if (sigattr_tail[l_0_6]).matched then
-        if (sigattr_tail[l_0_6]).attribute == 16393 then
-          l_0_2 = (sigattr_tail[l_0_6]).utf8p2
-        else
-          if (sigattr_tail[l_0_6]).attribute == 16384 then
-            l_0_2 = (sigattr_tail[l_0_6]).utf8p1
-          else
-            l_0_2 = nil
-          end
-        end
-        if l_0_2 ~= nil then
-          local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_2)
-          for l_0_11,l_0_12 in ipairs(l_0_7) do
-            l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
-            if (sysio.IsFileExists)(l_0_12) then
-              (bm.add_related_file)(l_0_12)
-            end
-          end
-        end
-      end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  if peattributes.no_security == false then
+    return mp.CLEAN
+  end
+  local l_0_1 = (mp.getfilesize)()
+  if l_0_1 < 200000 then
+    return mp.CLEAN
+  end
+  if l_0_1 > 900000 then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.lower)((mp.getfilename)())
+  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if (string.find)(l_0_3, "\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\startup", 1, true) ~= nil and (string.find)(l_0_2, "\\%d+%.exe$") ~= nil then
+    local l_0_4 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+    if #l_0_4 < 12 or #l_0_4 > 16 then
+      return mp.CLEAN
     end
-    do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC77: Confused about usage of register R3 for local variables in 'ReleaseLocals'
-
+    return mp.INFECTED
   end
 end
-l_0_1 = mp
-l_0_1 = l_0_1.CLEAN
-return l_0_1
+do
+  return mp.CLEAN
+end
 

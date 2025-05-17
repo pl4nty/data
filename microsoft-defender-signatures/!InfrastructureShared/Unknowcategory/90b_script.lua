@@ -3,17 +3,39 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_SoctuseerReportPathExclusions = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = (sysio.RegOpenKey)(l_1_0)
-  if l_1_1 then
-    local l_1_2 = (sysio.RegEnumValues)(l_1_1)
-    for l_1_6,l_1_7 in pairs(l_1_2) do
-      if (string.match)(l_1_7, "%a:\\Windows\\System32\\drivers\\%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%.sys") or (string.match)(l_1_7, "%a:\\program files\\%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x\\") or (string.match)(l_1_7, "%a:\\Windows\\%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%.exe") then
-        (MpDetection.ReportResource)("regkeyvalue", l_1_0 .. "\\\\" .. l_1_7, 805306507, false)
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0)
+    if (string.find)(l_0_1, "c:\\windows\\adam\\adaminstall.exe", 1, true) ~= nil then
+      return mp.CLEAN
+    end
+    if (string.find)(l_0_1, "c:\\windows\\system32\\secfsd.exe", 1, true) ~= nil then
+      return mp.CLEAN
+    end
+    if (string.find)(l_0_1, "c:\\windows\\system32\\kscrsvr.scr", 1, true) ~= nil then
+      return mp.CLEAN
+    end
+    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+    for l_0_6,l_0_7 in ipairs(l_0_2) do
+      l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+      if (sysio.IsFileExists)(l_0_7) then
+        (bm.add_related_file)(l_0_7)
       end
     end
   end
+  do
+    l_0_2 = mp
+    l_0_2 = l_0_2.INFECTED
+    return l_0_2
+  end
 end
-
 

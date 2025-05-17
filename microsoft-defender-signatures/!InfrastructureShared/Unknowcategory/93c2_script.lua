@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") and (mp.get_mpattribute)("MpExcelFormulaRoutines") and (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
+if mp.HSTR_WEIGHT >= 4 then
   return mp.INFECTED
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_soladaft")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_soladaft")
 end
 return mp.CLEAN
 

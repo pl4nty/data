@@ -3,26 +3,24 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    local l_0_3 = {["\\winhlp32.exe"] = true, ["\\werfault.exe"] = true, ["\\imepadsv.exe"] = true, ["\\csrss.exe"] = true, ["\\splwow64.exe"] = true, ["\\sgtool.exe"] = true, ["\\mdm.exe"] = true, ["\\sgpicfacetool.exe"] = true}
-    local l_0_4 = nil
-    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$") ~= nil and l_0_3[(string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$")] == true then
-      return mp.CLEAN
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_1 = (string.match)(l_0_0, "wscript%.exe\".+\"(.+%.js\"-)")
+  if l_0_1 ~= nil then
+    (mp.ReportLowfi)(l_0_1 .. "\000", 1863120794)
+    if (this_sigattrlog[2]).matched then
+      (mp.ReportLowfi)((this_sigattrlog[2]).utf8p1, 3833014443)
     end
-    ;
-    (bm.add_related_file)(l_0_4)
-  end
-  do
+    if (this_sigattrlog[3]).matched then
+      (mp.ReportLowfi)((this_sigattrlog[3]).utf8p1, 3594107188)
+    end
+    if (this_sigattrlog[4]).matched then
+      (mp.ReportLowfi)((this_sigattrlog[4]).utf8p1, 2156510450)
+    end
     return mp.INFECTED
   end
+end
+do
+  return mp.CLEAN
 end
 

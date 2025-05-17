@@ -3,36 +3,32 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+if mp.HSTR_WEIGHT > 101 then
+  do
+    -- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
 
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil, nil
-  else
-  end
-  if (this_sigattrlog[3]).matched then
-    local l_0_4 = (string.lower)((this_sigattrlog[3]).utf8p2)
-    -- DECOMPILER ERROR at PC37: Confused about usage of register: R1 in 'UnsetPending'
+    if (((((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and (hstrlog[5]).matched) or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched then
+      local l_0_0, l_0_1 = 0 + 1 + 1 + 1 + 1 + 1
+    end
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC60: Confused about usage of register: R1 in 'UnsetPending'
-
+    if l_0_0 == 5 then
+      return mp.INFECTED
+    end
     do
-      if l_0_4 and (this_sigattrlog[1]).utf8p1 and (string.find)(l_0_4, (string.lower)((this_sigattrlog[1]).utf8p1), 1, true) and (string.find)((string.lower)((this_sigattrlog[1]).utf8p1), "\\appdata\\roaming\\microsoft", 1, true) then
-        local l_0_5, l_0_6 = , (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "(.+\\)([^\\]+)$")
-        if l_0_6 then
-          if (string.sub)(l_0_6, -27) == "\\appdata\\roaming\\microsoft\\" then
-            (mp.ReportLowfi)(l_0_5, 2978130009)
-            return mp.INFECTED
-          else
-            if (string.sub)(l_0_6, -35) == "\\appdata\\roaming\\microsoft\\windows\\" then
-              (mp.ReportLowfi)(l_0_5, 680262115)
-              return mp.INFECTED
-            end
-          end
-        end
+      if (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched then
+        local l_0_2 = nil
       end
+      -- DECOMPILER ERROR at PC82: Confused about usage of register: R0 in 'UnsetPending'
+
+      if l_0_2 >= 3 and 0 + 1 == 1 then
+        return mp.INFECTED
+      end
+      ;
+      (mp.set_mpattribute)("HSTR:TrojanDownloader:O97M/Donoff.gen!E.1")
+      do return mp.CLEAN end
+      ;
+      (mp.set_mpattribute)("HSTR:TrojanDownloader:O97M/Donoff.gen!E")
       return mp.CLEAN
     end
   end

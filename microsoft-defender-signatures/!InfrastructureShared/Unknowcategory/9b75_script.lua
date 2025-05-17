@@ -3,13 +3,16 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("SCPT:HackTool.Win32.POWERGAP.A2")
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0 == nil then
+do
+  if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "link.ps1") ~= nil or (string.find)(l_0_0, "procvas.ps1") ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 1048576 then
-  return mp.CLEAN
-end
-if #(mp.enum_mpattributesubstring)("SCPT:CVE-2019-1652-1653-A") >= 3 then
+local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -10))
+if l_0_0 == "\\lsass.exe" then
+  (mp.TriggerScanResource)("rootkittelemetry", "")
   return mp.INFECTED
-else
-  return mp.CLEAN
 end
 return mp.CLEAN
 

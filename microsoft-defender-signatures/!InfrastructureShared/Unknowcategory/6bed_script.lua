@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 6 and (pesecs[pehdr.NumberOfSections]).Name == ".config" then
+if peattributes.isdll == true and peattributes.ismsil == true and (mp.getfilesize)() > 8000 then
   return mp.INFECTED
 end
 return mp.CLEAN

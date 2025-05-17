@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" and (versioning.IsSeville)() then
-      return mp.LOWFI
-    end
-  end
-  return mp.CLEAN
+if not peattributes.isexe then
+  return mp.INFECTED
 end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345pdb")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345pdb")
+end
+return mp.INFECTED
 

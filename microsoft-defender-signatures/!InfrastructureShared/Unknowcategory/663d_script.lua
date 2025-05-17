@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:AndroidArmour.A")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(mp.set_mpattribute)("do_deep_rescan")
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+return mp.INFECTED
 

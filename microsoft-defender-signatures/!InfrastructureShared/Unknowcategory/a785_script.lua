@@ -3,81 +3,92 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p2)
-    else
-    end
-    -- DECOMPILER ERROR at PC63: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
-        local l_0_2, l_0_3, l_0_4 = (string.lower)((this_sigattrlog[5]).utf8p2)
-      else
-      end
-      if (this_sigattrlog[7]).matched then
-        local l_0_5 = (string.lower)((this_sigattrlog[7]).utf8p2)
-        -- DECOMPILER ERROR at PC86: Confused about usage of register: R1 in 'UnsetPending'
-
-        if l_0_5 and (this_sigattrlog[1]).utf8p1 then
-          local l_0_6 = nil
-          if (string.find)(l_0_5, (string.lower)((this_sigattrlog[1]).utf8p1), 1, true) then
-            if (string.find)((string.lower)((this_sigattrlog[1]).utf8p1), ":\\programdata\\", 1, true) then
-              local l_0_7, l_0_8 = , (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "(.+\\)([^\\]+)$")
-              if l_0_8 then
-                if (string.sub)(l_0_8, -14) == ":\\programdata\\" then
-                  (mp.ReportLowfi)(l_0_6, 3958098698)
-                  return mp.INFECTED
-                else
-                  if (string.sub)(l_0_8, -24) == ":\\programdata\\microsoft\\" then
-                    (mp.ReportLowfi)(l_0_6, 1927453360)
-                    return mp.INFECTED
-                  end
-                end
-              end
-            else
-              do
-                -- DECOMPILER ERROR at PC147: Confused about usage of register: R2 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC156: Confused about usage of register: R2 in 'UnsetPending'
-
-                do
-                  if (string.find)(l_0_7, "\\appdata\\", 1, true) then
-                    local l_0_9, l_0_10 = , (string.match)(l_0_7, "(.+\\)([^\\]+)$")
-                    if l_0_10 then
-                      if (string.sub)(l_0_10, -17) == "\\appdata\\roaming\\" then
-                        (mp.ReportLowfi)(l_0_6, 98937382)
-                        return mp.INFECTED
-                      else
-                        if (string.sub)(l_0_10, -15) == "\\appdata\\local\\" then
-                          (mp.ReportLowfi)(l_0_6, 2608938885)
-                          return mp.INFECTED
-                        else
-                          if (string.sub)(l_0_10, -18) == "\\appdata\\locallow\\" then
-                            (mp.ReportLowfi)(l_0_6, 3968208659)
-                            return mp.INFECTED
-                          end
-                        end
-                      end
-                    end
-                  end
-                  return mp.CLEAN
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+if epcode[1] ~= 141 then
+  return mp.CLEAN
 end
+if epcode[2] ~= 148 then
+  return mp.CLEAN
+end
+if epcode[3] ~= 7 then
+  return mp.CLEAN
+end
+if epcode[6] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[7] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[8] ~= 129 then
+  return mp.CLEAN
+end
+if epcode[9] ~= 194 then
+  return mp.CLEAN
+end
+if epcode[12] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[13] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[14] ~= 129 then
+  return mp.CLEAN
+end
+if epcode[15] ~= 250 then
+  return mp.CLEAN
+end
+if epcode[18] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[19] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[10] - epcode[16] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[11] - epcode[17] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[20] ~= 15 then
+  return mp.CLEAN
+end
+if epcode[21] ~= 132 then
+  return mp.CLEAN
+end
+if epcode[23] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[24] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[25] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[26] ~= 129 then
+  return mp.CLEAN
+end
+if epcode[27] ~= 250 then
+  return mp.CLEAN
+end
+if epcode[30] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[31] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[32] ~= 15 then
+  return mp.CLEAN
+end
+if epcode[33] ~= 143 then
+  return mp.CLEAN
+end
+if epcode[35] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[36] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[37] ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true or peattributes.isexe == true then
+if (mp.get_mpattribute)("BM_HAS_DIGITALSIGNATURE") then
   return mp.INFECTED
 end
 return mp.CLEAN

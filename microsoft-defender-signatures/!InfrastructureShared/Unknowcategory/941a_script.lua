@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdriver == false and peattributes.isexe and peattributes.no_security and (mp.getfilesize)() > 1376256 and (mp.getfilesize)() < 5242880 and (pesecs[3]).Name == ".data" then
+if (peattributes.isexe == true and peattributes.no_security == true and peattributes.ismsil == false and (mp.getfilesize)() < 900000 and (mp.getfilesize)() > 620000) or (mp.getfilesize)() < 307200 and (mp.getfilesize)() > 204800 then
   return mp.INFECTED
 end
 return mp.CLEAN

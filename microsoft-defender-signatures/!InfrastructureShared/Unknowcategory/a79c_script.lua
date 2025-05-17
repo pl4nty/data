@@ -3,76 +3,81 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p2)
+    else
+    end
+    -- DECOMPILER ERROR at PC63: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
+        local l_0_2, l_0_3, l_0_4 = (string.lower)((this_sigattrlog[5]).utf8p2)
+      else
+      end
+      if (this_sigattrlog[7]).matched then
+        local l_0_5 = (string.lower)((this_sigattrlog[7]).utf8p2)
+        -- DECOMPILER ERROR at PC86: Confused about usage of register: R1 in 'UnsetPending'
+
+        if l_0_5 and (this_sigattrlog[1]).utf8p1 then
+          local l_0_6 = nil
+          if (string.find)(l_0_5, (string.lower)((this_sigattrlog[1]).utf8p1), 1, true) then
+            if (string.find)((string.lower)((this_sigattrlog[1]).utf8p1), ":\\programdata\\", 1, true) then
+              local l_0_7, l_0_8 = , (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "(.+\\)([^\\]+)$")
+              if l_0_8 then
+                if (string.sub)(l_0_8, -14) == ":\\programdata\\" then
+                  (mp.ReportLowfi)(l_0_6, 3958098698)
+                  return mp.INFECTED
+                else
+                  if (string.sub)(l_0_8, -24) == ":\\programdata\\microsoft\\" then
+                    (mp.ReportLowfi)(l_0_6, 1927453360)
+                    return mp.INFECTED
+                  end
+                end
+              end
+            else
+              do
+                -- DECOMPILER ERROR at PC147: Confused about usage of register: R2 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC156: Confused about usage of register: R2 in 'UnsetPending'
+
+                do
+                  if (string.find)(l_0_7, "\\appdata\\", 1, true) then
+                    local l_0_9, l_0_10 = , (string.match)(l_0_7, "(.+\\)([^\\]+)$")
+                    if l_0_10 then
+                      if (string.sub)(l_0_10, -17) == "\\appdata\\roaming\\" then
+                        (mp.ReportLowfi)(l_0_6, 98937382)
+                        return mp.INFECTED
+                      else
+                        if (string.sub)(l_0_10, -15) == "\\appdata\\local\\" then
+                          (mp.ReportLowfi)(l_0_6, 2608938885)
+                          return mp.INFECTED
+                        else
+                          if (string.sub)(l_0_10, -18) == "\\appdata\\locallow\\" then
+                            (mp.ReportLowfi)(l_0_6, 3968208659)
+                            return mp.INFECTED
+                          end
+                        end
+                      end
+                    end
+                  end
+                  return mp.CLEAN
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
 end
-if peattributes.hasappendeddata ~= true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections == 0 then
-  return mp.CLEAN
-end
-local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-if l_0_0 <= (mp.getfilesize)() then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilesize)() - l_0_0
-if l_0_1 <= 4096 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4033) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4037) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4041) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4045) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4049) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4053) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4057) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4061) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4065) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4069) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4073) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4077) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4081) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4085) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4089) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(footerpage, 4093) ~= 0 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_2 = (mp.readfile)((pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData, 4096)
-if (mp.crc32)(-1, l_0_2, 1, 4096) ~= 954466286 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

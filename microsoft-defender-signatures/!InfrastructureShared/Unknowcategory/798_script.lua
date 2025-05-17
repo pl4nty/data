@@ -3,13 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil or l_0_1 == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
+    local l_0_0 = nil
+  end
+  if (this_sigattrlog[1]).matched then
+    local l_0_1 = nil
+    -- DECOMPILER ERROR at PC27: Confused about usage of register: R1 in 'UnsetPending'
+
+    if (this_sigattrlog[1]).utf8p1 ~= nil and l_0_1 ~= nil then
+      local l_0_2 = nil
+      local l_0_3 = (string.match)((this_sigattrlog[1]).utf8p1, "(.*\\)")
+      if (string.match)(l_0_1, "(.*\\)") ~= nil and (string.match)(l_0_1, "(.*\\)") == l_0_3 then
+        return mp.INFECTED
+      end
+    end
+  end
+  do
+    return mp.CLEAN
+  end
 end
-if l_0_1:find("\\temp\\", 1, true) ~= nil and l_0_2:find("^ic%-0%.[0-9a-f]+%.exe$") == 1 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.UfsGetMetadataBool)("LnkWithPowerShellCmd", true) == 0 and "LnkWithPowerShellCmd" == true and (mp.get_mpattribute)("SCPT:PSReadEndOfFileSameFolder.A") then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if (string.find)(l_0_0, "emotet%-maldoc.bin") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,22 +3,116 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil then
+if mp.HEADERPAGE_SZ < 128 or mp.FOOTERPAGE_SZ < 22 then
   return mp.CLEAN
 end
-if l_0_2 == "svchost.exe" or l_0_2 == "csrss.exe" or l_0_2 == "rundll32.exe" or l_0_2 == "lsass.exe" or l_0_2 == "services.exe" or l_0_2 == "cryptbase.dll" or l_0_2 == "migsetup.exe" then
-  local l_0_3 = (string.sub)(l_0_1, -18)
-  if l_0_3 ~= "\\windows\\system32\\" and l_0_3 ~= "\\windows\\syswow64\\" and l_0_1:find("\\windows\\winsxs\\", 1, true) == nil and (string.sub)(l_0_1, -19) ~= "\\system32\\dllcache\\" and (string.sub)(l_0_1, -38) ~= "\\malwarebytes\' anti-malware\\chameleon\\" and (string.sub)(l_0_1, -13) ~= "\\system32\\pw\\" and (string.sub)(l_0_1, -15) ~= "\\system32\\1052\\" and (string.sub)(l_0_1, -6) ~= "\\i386\\" and (string.sub)(l_0_1, -16) ~= "\\winnt\\system32\\" and (string.sub)(l_0_1, -12) ~= "\\winnt\\i386\\" and l_0_1:find("\\$ntservicepackuninstall$\\", 1, true) == nil and l_0_1:find("\\Installer\\$PatchCache$\\", 1, true) == nil and l_0_1:find("\\windows\\$ntuninstall", 1, true) == nil and l_0_1:find("\\windows\\$hf_mig$\\", 1, true) == nil and l_0_1:find("\\softwaredistribution\\download\\", 1, true) == nil and l_0_1:find("symbols\\", 1, true) == nil and l_0_1:find("\\debuggers\\", 1, true) == nil and l_0_1:find("\\debugger\\", 1, true) == nil and l_0_1:find("\\hotfixes\\", 1, true) == nil and l_0_1:find("\\symbol\\", 1, true) == nil and l_0_1:find("\\device\\mup", 1, true) == nil and (string.sub)(l_0_1, -17) ~= "\\system32\\migwiz\\" then
-    local l_0_4 = (mp.get_parent_filehandle)()
-    local l_0_5, l_0_6 = pcall(mp.get_filesize_by_handle, l_0_4)
-    if l_0_5 == false then
-      (mp.set_mpattribute)("Lua:SuspiciousPathFilename.A")
-    end
+if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.getfilesize)()
+local l_0_1 = mp.FOOTERPAGE_SZ - 21
+if (mp.readu_u32)(footerpage, l_0_1) ~= 101010256 then
+  local l_0_2 = 276
+  local l_0_3 = (mp.readfile)(l_0_0 - l_0_2, l_0_2)
+  if l_0_3 == nil then
+    return mp.CLEAN
   end
+  l_0_1 = (string.find)(l_0_3, "PK\005\006", 1, true)
+  if l_0_1 == nil then
+    return mp.CLEAN
+  end
+  l_0_1 = l_0_1 + mp.FOOTERPAGE_SZ - l_0_2
 end
 do
+  local l_0_4 = (mp.readu_u32)(footerpage, l_0_1 + 12)
+  local l_0_5 = (mp.readu_u32)(footerpage, l_0_1 + 16)
+  if l_0_4 >= 5000 then
+    return mp.CLEAN
+  end
+  local l_0_6 = (mp.readfile)(l_0_5, l_0_4)
+  if l_0_6 == nil then
+    return mp.CLEAN
+  end
+  local l_0_7 = 0
+  local l_0_8 = 0
+  local l_0_9 = 0
+  local l_0_10 = false
+  local l_0_11 = false
+  local l_0_12 = false
+  local l_0_13 = false
+  local l_0_14 = 0
+  local l_0_15 = 0
+  local l_0_16 = 1
+  if (mp.readu_u32)(l_0_6, l_0_16) ~= 33639248 then
+    return mp.CLEAN
+  end
+  while 1 do
+    if l_0_16 ~= nil then
+      local l_0_17 = (mp.readu_u16)(l_0_6, l_0_16 + 28)
+      local l_0_18 = (string.sub)(l_0_6, l_0_16 + 46, l_0_16 + 46 + l_0_17 - 1)
+      local l_0_19 = (mp.readu_u32)(l_0_6, l_0_16 + 24)
+      if l_0_17 >= 6 and l_0_18 ~= nil then
+        if (string.find)(l_0_18, "word/media/image", 1, true) == 1 then
+          l_0_8 = l_0_8 + 1
+          l_0_9 = l_0_9 + l_0_19
+          local l_0_20 = (string.sub)(l_0_18, 18)
+          if l_0_20 == ".jpeg" then
+            l_0_12 = true
+          else
+            if l_0_20 == ".jpg" then
+              l_0_13 = true
+            else
+              if l_0_20 == ".png" then
+                l_0_10 = true
+              else
+                if l_0_20 == ".emf" then
+                  l_0_11 = true
+                end
+              end
+            end
+          end
+        else
+          do
+            if (string.find)(l_0_18, "word/vbaProject.bin", 1, true) == 1 then
+              l_0_14 = l_0_14 + 1
+              l_0_15 = l_0_15 + l_0_19
+            end
+            l_0_7 = l_0_7 + 1
+            do
+              local l_0_21 = l_0_16 + 46 + l_0_17
+              l_0_16 = nil
+              if l_0_21 >= l_0_4 or (mp.readu_u32)(l_0_6, l_0_21) == 33639248 then
+                l_0_16 = l_0_21
+              end
+              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out DO_STMT
+
+              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+
+              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
+
+              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
+
+              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
+
+            end
+          end
+        end
+      end
+    end
+  end
+  if ((l_0_9 >= 22000 and l_0_9 <= 25000) or l_0_9 < 34000 or l_0_9 <= 47000) and ((l_0_15 >= 32000 and l_0_15 <= 48000) or l_0_15 < 10000 or l_0_15 <= 25000) then
+    (mp.set_mpattribute)("//Lua:OfficeZip.SuspiciousStructure.A")
+  else
+    if l_0_8 == 4 and l_0_14 == 0 and l_0_12 and l_0_11 and l_0_7 >= 20 and l_0_7 <= 23 and l_0_9 >= 65000 and l_0_9 <= 70000 and l_0_0 >= 75000 and l_0_0 <= 80000 then
+      (mp.set_mpattribute)("//Lua:OfficeZip.SuspiciousStructure.B")
+    end
+  end
   return mp.CLEAN
 end
 

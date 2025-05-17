@@ -3,20 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 20480 or l_0_0 > 262144 then
+if peattributes.no_ep then
   return mp.CLEAN
 end
-local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if (l_0_1 == mp.SCANREASON_ONOPEN or l_0_1 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  local l_0_3 = (string.sub)(l_0_2, -4)
-  if l_0_3 == ".exe" or l_0_3 == ".cab" or l_0_3 == ".dll" then
-    local l_0_4 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if (string.sub)(l_0_4, -35) == "\\application data\\microsoft\\network" or (string.sub)(l_0_4, -34) == "\\appdata\\roaming\\microsoft\\network" then
-      (mp.set_mpattribute)("Lua:Deselia!dha")
-      return mp.INFECTED
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+  if (string.len)(l_0_1) < 29 then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH))
+  if (string.sub)(l_0_1, 1, 18) == "flashplayerplugin_" and (string.sub)(l_0_2, -15) == "\\macromed\\flash" then
+    local l_0_3 = "Lua:ContextualDropFlashplayer"
+    local l_0_4 = {}
+    l_0_4["flashplayerplugin_19_0_0_185.exe"] = ""
+    if l_0_4[l_0_1] then
+      l_0_3 = l_0_3 .. "Latest"
     end
+    ;
+    (mp.set_mpattribute)(l_0_3)
   end
 end
 do

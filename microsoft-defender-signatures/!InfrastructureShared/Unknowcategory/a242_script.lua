@@ -3,19 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-        (bm.add_related_file)(l_0_7)
-        return mp.INFECTED
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
+    if l_0_1 ~= nil and (string.len)(l_0_1) > 1 then
+      if (sysio.IsFileExists)(l_0_1) then
+        (mp.ReportLowfi)(l_0_1, 2782132239)
       end
+      return mp.INFECTED
     end
   end
-end
-do
   return mp.CLEAN
 end
 

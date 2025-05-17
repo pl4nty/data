@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_tls == true then
-  return mp.CLEAN
+if peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
+  return mp.INFECTED
 end
-;
-(pe.set_peattribute)("hstr_exhaustive", true)
-return mp.INFECTED
+return mp.CLEAN
 

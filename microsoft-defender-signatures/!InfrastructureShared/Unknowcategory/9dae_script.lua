@@ -3,15 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 17, 1)
-local l_0_1 = 21
-if (string.byte)(l_0_0) == 129 then
-  l_0_1 = 24
-  if (string.byte)((pe.mmap_va)(pevars.sigaddr + 21, 1)) == 2 then
-    return mp.CLEAN
-  end
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:CoinMiner64")
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\235")
-return mp.INFECTED
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_coinminer")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_coinminer")
+end
+return mp.CLEAN
 

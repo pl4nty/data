@@ -3,14 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-    if l_0_1 == "utorrentie.exe" then
-      (mp.set_mpattribute)("Lua:uTorrentIEDrop.A")
-    end
+local l_0_0, l_0_1 = pcall(bm.get_current_process_startup_info)
+if l_0_0 and l_0_1 ~= nil then
+  local l_0_2 = l_0_1.command_line
+  if l_0_2 == nil then
+    return mp.CLEAN
   end
+  local l_0_3 = (string.lower)(l_0_2)
+  if (l_0_3:find("powershell", 1, true) or (l_0_3.find)("pwsh", 1, true)) and l_0_3:match("%s+[%-/]en?c?o?d?e?d?c?o?m?m?a?n?d?%s+") then
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
 

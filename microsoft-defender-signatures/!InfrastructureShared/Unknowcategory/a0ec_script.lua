@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (((((hstrlog[1]).matched and not (hstrlog[3]).matched) or (hstrlog[5]).matched) and not (hstrlog[7]).matched) or (hstrlog[2]).matched) and ((hstrlog[4]).matched or (hstrlog[6]).matched or (hstrlog[8]).matched) then
-  return mp.INFECTED
-end
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.LOWFI
+(mp.readprotection)(false)
+local l_0_0 = (pe.foffset_va)((hstrlog[1]).VA + 45)
+local l_0_1 = (mp.readfile)(l_0_0, 4)
+local l_0_2 = (pe.foffset_va)((mp.readu_u32)(l_0_1, 1))
+local l_0_3 = (mp.readfile)(l_0_2, 15)
+if l_0_3 == "D\000e\000l\000e\000t\000e\000d\000\000" then
+  (mp.set_mpattribute)("HSTR:BingSearchCby")
 end
 return mp.CLEAN
 

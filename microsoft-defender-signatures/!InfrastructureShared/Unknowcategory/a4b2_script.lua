@@ -3,27 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  if (MpCommon.GetPersistContextCountNoPath)("Lua:ExecPatpoopy.A") > 0 then
+    local l_0_1 = (MpCommon.GetPersistContextNoPath)("Lua:ExecPatpoopy.A")
+    if l_0_1 then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        local l_0_7 = (string.match)(l_0_6, "\\([^\\]+)$")
+        if (string.find)(l_0_0, l_0_7, 1, true) then
+          (bm.add_action)("EmsScan", 3000)
+          return mp.INFECTED
+        end
+      end
+    end
+  end
 end
-local l_0_0 = (mp.GetBruteMatchData)()
-if not l_0_0 then
-  return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
 end
-local l_0_1 = ""
-if l_0_0.is_header then
-  l_0_1 = (string.lower)(tostring(headerpage))
-else
-  l_0_1 = (string.lower)(tostring(footerpage))
-end
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_2 = "(?:set|add)-mppreference\\s+-exclusionpath\\s+[\"\']?c:\\\\+perflogs\\\\*?%?[\"\']?(?:[\\s;]|$)"
-local l_0_3 = false
-l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
-if l_0_3 == false then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

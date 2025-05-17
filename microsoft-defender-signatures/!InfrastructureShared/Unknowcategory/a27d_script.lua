@@ -3,13 +3,24 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("LUA:FileSizeLE80000.A") and (mp.get_mpattribute)("Lua:FileSizeGEC350") and (mp.get_mpattribute)("BM_DropperObfuscatorUR") and (mp.get_mpattribute)("MpHasExpensiveLoop") and pehdr.TimeDateStamp ~= 0 then
-    local l_0_0 = (MpCommon.GetCurrentTimeT)()
-    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 2592000 then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (MpCommon.GetOriginalFileName)(l_0_2)
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+if l_0_3 == "powershell.exe" and not (string.find)((string.lower)(l_0_2), "powershell.exe", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

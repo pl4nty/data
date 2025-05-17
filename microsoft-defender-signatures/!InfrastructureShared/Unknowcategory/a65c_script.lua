@@ -3,42 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe then
-  if (mp.readu_u32)(footerpage, 4025) ~= 17780832 then
-    return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSIsRemoteSession)
+if l_0_1 then
+  local l_0_2 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSUserName)
+  local l_0_3 = (bm.get_imagepath)()
+  local l_0_4 = "SuspTool_" .. l_0_2
+  local l_0_5 = (MpCommon.QueryPersistContextNoPath)(l_0_4, l_0_3)
+  if not l_0_5 then
+    (MpCommon.AppendPersistContextNoPath)(l_0_4, l_0_3, 28800)
   end
-  if (mp.readu_u32)(footerpage, 4029) ~= 1493050444 then
-    return mp.CLEAN
-  end
-  local l_0_0 = nil
-  local l_0_1 = false
-  local l_0_2 = (mp.crc32)(-1, footerpage, 4033, 64)
-  if l_0_2 == 1763915979 then
-    l_0_0 = 3426
-  else
-    if l_0_2 == 2558714366 then
-      l_0_0 = 3057
-    else
-      if l_0_2 == 2981753981 then
-        l_0_0 = 3055
-      else
-        return mp.CLEAN
+  local l_0_6 = (MpCommon.GetPersistContextCountNoPath)(l_0_4)
+  if l_0_6 > 2 then
+    local l_0_7 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSClientAddress)
+    ;
+    (bm.add_related_string)("bmurl", l_0_7.Address, bm.RelatedStringBMReport)
+    local l_0_8 = (MpCommon.GetPersistContextNoPath)(l_0_4)
+    if l_0_8 then
+      for l_0_12,l_0_13 in ipairs(l_0_8) do
+        (bm.add_related_file)(l_0_13)
       end
-    end
-  end
-  local l_0_3 = (mp.crc32)(-1, footerpage, l_0_0, 400)
-  if l_0_3 == 3208132055 then
-    l_0_1 = true
-  else
-    return mp.CLEAN
-  end
-  if l_0_1 == true then
-    local l_0_4 = false
-    if pevars.epsec < pehdr.NumberOfSections or (mp.readu_u32)(epcode, 1) ~= 2030270560 or peattributes.epoutofimage or peattributes.amd64_image then
-      l_0_4 = true
-    end
-    if l_0_4 == true then
-      (mp.changedetectionname)(805306412)
       return mp.INFECTED
     end
   end

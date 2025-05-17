@@ -3,30 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  local l_0_1 = ((string.lower)((string.sub)(l_0_0, -18))):match("\\([^\\]+%.exe)$")
-  local l_0_2 = {}
-  l_0_2["explorer.exe"] = true
-  l_0_2["chrome.exe"] = true
-  l_0_2["microsoftedge.exe"] = true
-  l_0_2["iexplore.exe"] = true
-  l_0_2["firefox.exe"] = true
-  l_0_2["cmd.exe"] = true
-  l_0_2["net.exe"] = true
-  l_0_2["winword.exe"] = true
-  l_0_2["excel.exe"] = true
-  l_0_2["onenote.exe"] = true
-  l_0_2["powerpnt.exe"] = true
-  l_0_2["teams.exe"] = true
-  l_0_2["notepad++.exe"] = true
-  l_0_2["powershell.exe"] = true
-  if l_0_2[l_0_1] then
-    return mp.CLEAN
+local l_0_0 = "\\powershell.exe"
+local l_0_1 = (string.len)(l_0_0)
+local l_0_2 = false
+local l_0_3, l_0_4 = (bm.get_process_relationships)()
+for l_0_8,l_0_9 in ipairs(l_0_3) do
+  if l_0_9.image_path ~= nil and (mp.bitand)(l_0_9.reason_ex, 1) == 1 and l_0_1 < (string.len)(l_0_9.image_path) and (string.sub)(l_0_9.image_path, -l_0_1) == l_0_0 then
+    l_0_2 = true
+    break
   end
-  return mp.INFECTED
 end
 do
-  return mp.CLEAN
+  if l_0_2 == false then
+    return mp.CLEAN
+  end
+  local l_0_10 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+  if l_0_10 ~= nil then
+    (mp.ReportLowfi)(l_0_10, 3640120989)
+  end
+  return mp.INFECTED
 end
 

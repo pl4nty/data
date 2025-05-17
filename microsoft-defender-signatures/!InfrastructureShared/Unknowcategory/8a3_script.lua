@@ -3,28 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = nil
-  local l_0_1 = (string.lower)((bm.get_imagepath)())
-  if (this_sigattrlog[1]).utf8p2 ~= nil then
-    l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  end
-  if l_0_1:find("appvclient%.exe") ~= nil then
+-- DECOMPILER ERROR at PC5: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+if l_0_0 == nil or (string.len)(l_0_0) == 0 then
+  l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+  if l_0_0 == nil or (string.len)(l_0_0) == 0 then
     return mp.CLEAN
   end
-  if l_0_0 ~= nil then
-    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    for l_0_6,l_0_7 in ipairs(l_0_2) do
-      l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-      if (sysio.IsFileExists)(l_0_7) then
-        (bm.add_related_file)(l_0_7)
-      end
-    end
-  end
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+l_0_0 = (string.lower)(l_0_0)
+if (string.find)(l_0_0, "^.:\\windows\\ccmcache\\") then
+  return mp.CLEAN
 end
+local l_0_1 = (string.match)(l_0_0, "^.:\\(program files[^\\]*)\\tanium\\tanium client\\")
+if l_0_1 == "program files" then
+  return mp.CLEAN
+end
+if l_0_1 == "program files (x86)" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,18 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p1)
-if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
+if not (mp.get_mpattribute)("pea_ismsil") then
   return mp.CLEAN
 end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("system32", 1, true) then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

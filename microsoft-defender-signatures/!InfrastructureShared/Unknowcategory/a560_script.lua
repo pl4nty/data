@@ -3,31 +3,11 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
-
-  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
-
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasUploadeeUrl") then
-      (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromUploadee") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromUploadee", 3600)
-        return mp.INFECTED
-      end
-    end
-  end
+if peattributes.is_process then
   return mp.CLEAN
 end
+if pehdr.NumberOfSections > 0 and epcode[1] == 232 and epcode[6] == 233 and epcode[10] == 255 and (pesecs[1]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_lastscn_writable") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

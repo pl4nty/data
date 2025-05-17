@@ -3,47 +3,46 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.amd64_image then
-  if mp.HSTR_WEIGHT >= 4 then
-    if not (hstrlog[7]).matched and not (hstrlog[8]).matched and not (hstrlog[9]).matched and not (hstrlog[10]).matched then
-      (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G")
-    end
-    if not (hstrlog[6]).matched and (hstrlog[7]).matched ^ (hstrlog[8]).matched then
-      (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G2")
+if (MpCommon.GetPersistContextCountNoPath)("Lua:MpRequestEmsScan") > 0 then
+  local l_0_0 = (MpCommon.GetPersistContextNoPath)("Lua:MpRequestEmsScan")
+  if l_0_0 then
+    local l_0_1 = (mp.GetScannedPPID)()
+    if l_0_1 == nil then
       return mp.CLEAN
     end
-    if mp.HSTR_WEIGHT >= 6 then
-      (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G3")
+    local l_0_2 = (MpCommon.GetImagePathFromPid)(l_0_1)
+    if l_0_2 == nil then
       return mp.CLEAN
-    else
-      if mp.HSTR_WEIGHT == 4 or mp.HSTR_WEIGHT == 5 then
-        do
-          if ((((not (hstrlog[6]).matched or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or (hstrlog[11]).matched then
-            local l_0_0 = 0 + 1 + 1 + 1 + 1 + 1 + 1
-          end
-          -- DECOMPILER ERROR at PC114: Confused about usage of register: R0 in 'UnsetPending'
-
-          if l_0_0 <= 3 then
-            (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G5")
-            return mp.CLEAN
-          end
-          ;
-          (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G4")
-          do return mp.CLEAN end
-          ;
-          (pe.set_peattribute)("hstr_exhaustive", true)
-          ;
-          (pe.set_peattribute)("deep_analysis", true)
-          ;
-          (pe.reemulate)()
-          do return mp.CLEAN end
-          if mp.HSTR_WEIGHT >= 4 then
-            (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.G1")
-          end
-          return mp.CLEAN
-        end
+    end
+    local l_0_3 = (MpCommon.PathToWin32Path)(l_0_2)
+    if l_0_3 == nil then
+      return mp.CLEAN
+    end
+    local l_0_4 = (string.lower)((mp.GetProcessCommandLine)(l_0_1))
+    if l_0_4 == nil then
+      return mp.CLEAN
+    end
+    if (string.find)(l_0_4, "beammp-launcher", 1, true) or (string.find)(l_0_4, "nginx", 1, true) then
+      return mp.CLEAN
+    end
+    for l_0_8,l_0_9 in ipairs(l_0_0) do
+      local l_0_10, l_0_11 = (string.match)(l_0_9, "^(%d%d%d+)_(.+)$")
+      if l_0_10 ~= nil and l_0_11 ~= nil and (string.len)(l_0_11) > 7 and (string.find)((string.lower)(l_0_11), (string.lower)(l_0_3), 1, true) then
+        local l_0_12, l_0_13 = (string.match)(l_0_1, "^pid:(%w+),ProcessStart:(%w+)$")
+        local l_0_14 = tonumber(l_0_12)
+        local l_0_15 = tonumber(l_0_13)
+        local l_0_16, l_0_17 = (mp.bsplit)(l_0_15, 32)
+        local l_0_18 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_14, l_0_16, l_0_17)
+        ;
+        (mp.TriggerScanResource)("ems", l_0_18, mp.SCANSOURCE_RTSIG, l_0_10)
+        return mp.INFECTED
       end
     end
   end
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
 end
 

@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if l_0_0 and (string.len)(l_0_0) > 48 and (string.find)(l_0_0, "%.%.\\") then
-      l_0_0 = (string.lower)(l_0_0)
-      if (string.find)(l_0_0, "javascript:", 2, true) or (string.find)(l_0_0, "vbscript:", 2, true) then
-        return mp.INFECTED
-      end
-    end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlservr.exe" or (string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlagent.exe") then
+    return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

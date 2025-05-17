@@ -3,37 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = false
-local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_CONTENTNAME)
-if l_0_1 ~= nil and l_0_1 ~= "" then
-  l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
-  if l_0_1 ~= nil and l_0_1 ~= "" and (sysio.IsFileExists)(l_0_1) then
-    l_0_1 = (string.lower)(l_0_1)
-    l_0_0 = true
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() > 307200 or (mp.getfilesize)() < 51200 then
+  return mp.CLEAN
+end
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_UNKNOWN or (mp.bitand)((mp.get_contextdata)(mp.CONTEXT_DATA_DEVICE_CHARACTERISTICS), 264193) ~= 264193 then
+  return mp.CLEAN
+end
+if ((mp.getfilename)()):sub(-4) == ".exe" then
+  if (mp.get_mpattribute)("NID:VobfusRemovableDriveFileName") then
+    (mp.set_mpattribute)("Lua:VobfusRemovableDriveFileName")
+  end
+  if (mp.get_mpattribute)("NID:VobfusRemovableDriveFileNameEnUs") then
+    (mp.set_mpattribute)("Lua:VobfusRemovableDriveFileNameEnUs")
   end
 end
-if l_0_0 == false then
-  l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-  if l_0_1 ~= nil and l_0_1 ~= "" then
-    l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
-    if l_0_1 ~= nil and l_0_1 ~= "" and (sysio.IsFileExists)(l_0_1) then
-      l_0_0 = true
-    end
-  end
-end
-if l_0_0 then
-  if (string.find)(l_0_1, "^.:\\windows\\ccmcache\\") then
-    return mp.CLEAN
-  end
-  local l_0_2 = (string.match)(l_0_1, "^.:\\(program files[^\\]*)\\tanium\\tanium client\\")
-  if l_0_2 == "program files" then
-    return mp.CLEAN
-  end
-  if l_0_2 == "program files (x86)" then
-    return mp.CLEAN
-  end
-end
-do
-  return mp.INFECTED
-end
+return mp.CLEAN
 

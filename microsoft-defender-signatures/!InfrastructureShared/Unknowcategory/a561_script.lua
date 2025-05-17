@@ -3,31 +3,35 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
-
-  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
-
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasOneDriveUrl") then
-      (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromOneDrive") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromOneDrive", 3600)
-        return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_0 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+      if (sysio.IsFileExists)(l_0_7) then
+        (bm.add_related_file)(l_0_7)
       end
     end
   end
-  return mp.CLEAN
+end
+do
+  if l_0_1 ~= nil then
+    for l_0_11,l_0_12 in ipairs(l_0_1) do
+      if l_0_12.image_path ~= nil then
+        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
+        if (sysio.IsFileExists)(l_0_13) and (mp.IsKnownFriendlyFile)(l_0_13, true, false) then
+          (bm.add_related_file)(l_0_13)
+          if l_0_12.ppid ~= nil then
+            (bm.request_SMS)(l_0_12.ppid, "m")
+            ;
+            (bm.add_action)("SmsAsyncScanEvent", 1)
+          end
+        end
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
 

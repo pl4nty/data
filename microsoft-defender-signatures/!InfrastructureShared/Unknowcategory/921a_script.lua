@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
-  l_0_0 = 16
-end
-if (mp.bitand)(mp.HSTR_WEIGHT, 15) + l_0_0 >= 18 then
-  return mp.INFECTED
-end
+local l_0_0 = {}
+l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
 ;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan_prepscram")
-return mp.CLEAN
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+return mp.INFECTED
 

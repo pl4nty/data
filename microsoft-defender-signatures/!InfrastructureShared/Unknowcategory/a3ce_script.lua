@@ -3,8 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched) or (hstrlog[9]).matched) then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.match)(l_0_0, "if%s*%(%s*!%s*%(%s*%[%s*string%s*%]%s*%(%s*get%-wmiobject%s*-namespace%s*root\\subscription%s*%-class%s*__filtertoconsumerbinding%s*%)%)%.contains%(%s*\'scm event filter\'%s*%)%).*%{.*iex.+net%.webclient.+downloadstring.+http.*%}") ~= nil then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
 

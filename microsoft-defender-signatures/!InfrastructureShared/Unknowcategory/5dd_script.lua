@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[15]).matched and (this_sigattrlog[15]).utf8p1 ~= nil then
-  l_0_0 = (MpCommon.PathToWin32Path)((string.lower)((this_sigattrlog[15]).utf8p1))
+local l_0_0 = (MpCommon.GetPersistContextNoPath)("OfficeLaunchesWmi")
+if l_0_0 then
+  for l_0_4,l_0_5 in ipairs(l_0_0) do
+    if (sysio.IsFileExists)(l_0_5) then
+      (bm.add_related_file)(l_0_5)
+    end
+  end
+  return mp.INFECTED
 end
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-;
-(bm.add_related_string)("SuspSearchOrderExpl_B", tostring(l_0_0), bm.RelatedStringBMReport)
-return mp.INFECTED
+return mp.CLEAN
 

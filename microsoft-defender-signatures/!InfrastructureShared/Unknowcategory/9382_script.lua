@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 100)
 do
-  if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() < 50000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.find)(l_0_0, "\129;\026\164\006\000u", 1, true)
+    if l_0_1 ~= nil then
+      (pe.mmap_patch_va)(pevars.sigaddr + 21 + l_0_1 + 5, "")
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

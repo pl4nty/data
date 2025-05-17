@@ -3,8 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (mp.getfilesize)() < 15000 and peattributes.no_security == true and (pesecs[1]).Name == "AUTO" and pehdr.AddressOfEntryPoint == 0 then
-  return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if l_0_1 ~= nil then
+  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    if (sysio.IsFileExists)(l_0_7) then
+      (bm.add_related_file)(l_0_7)
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_2 = mp
+  l_0_2 = l_0_2.INFECTED
+  return l_0_2
+end
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll and pehdr.Machine == 34404 then
+if peattributes.isexe and (hstrlog[1]).matched and (hstrlog[2]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

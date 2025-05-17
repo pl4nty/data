@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
-    local l_0_1 = {}
-    l_0_1["winword.exe"] = true
-    l_0_1["powerpnt.exe"] = true
-    l_0_1["excel.exe"] = true
-    if l_0_1[(string.lower)((l_0_0.image_path):match("([^\\]+)$"))] then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+local l_0_0 = {}
+l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+return mp.INFECTED
 

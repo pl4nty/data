@@ -3,28 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if not l_0_1 then
+if not (mp.get_mpattribute)("Lua:ZIPExt") and not (mp.get_mpattribute)("RPF:TopLevelFile") then
   return mp.CLEAN
 end
-l_0_1 = (string.lower)(l_0_1)
-if (string.find)(l_0_1, "%.%w+:%d%d+ ") then
-  local l_0_2 = (mp.GetParentProcInfo)(l_0_0.ppid)
-  do
-    do
-      if l_0_2 ~= nil then
-        local l_0_3 = (string.lower)(l_0_2.image_path)
-        if (string.find)(l_0_3, "\\appdata\\roaming\\", 1, true) or (string.find)(l_0_3, "\\appdata\\local\\", 1, true) or (string.find)(l_0_3, "\\programdata\\", 1, true) then
-          (bm.add_threat_file)(l_0_3)
-        else
-          ;
-          (bm.add_related_file)(l_0_3)
-        end
-      end
-      do return mp.INFECTED end
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("\\usr\\lib\\system", 1, true) then
+  return mp.CLEAN
 end
+if l_0_0:find("/usr/lib/system", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("backup", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("recovery", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("restore", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,23 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
+do
+  local l_0_0, l_0_1 = (hstrlog[3]).matched and 1 or 0
+  do
+    local l_0_2 = nil
+    -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (mp.bitxor)(l_0_2, (hstrlog[2]).matched and 1 or 0) == 1 and (mp.bitxor)((hstrlog[6]).matched and 1 or 0, (hstrlog[7]).matched and 1 or 0) == 1 and (peattributes.epscn_writable or peattributes.hasappendeddata) then
+      return mp.INFECTED
+    end
     return mp.CLEAN
   end
-end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
-  local l_0_6 = (this_sigattrlog[2]).p1
-  local l_0_7 = (this_sigattrlog[3]).p1
-  if (string.match)(l_0_6:lower() .. l_0_7:lower(), "safe") then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.LOWFI
 end
 

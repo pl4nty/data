@@ -3,21 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
-if l_0_1 ~= nil and (MpCommon.GetPersistContextCountNoPath)("UACBypassRegSet.B") > 0 then
-  local l_0_2 = (MpCommon.GetPersistContextNoPath)("UACBypassRegSet.B")
-  if l_0_2 then
-    for l_0_6,l_0_7 in ipairs(l_0_2) do
-      if (string.lower)(l_0_7) == (string.lower)(l_0_1.ppid) then
-        return mp.INFECTED
-      end
-    end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (this_sigattrlog[1]).reg_new_value_type == 3 and (this_sigattrlog[1]).reg_new_value_size < 2000 then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  if l_0_0 == nil then
+    return mp.CLEAN
   end
+  local l_0_1, l_0_2 = l_0_0:match("^(.-)\\\\(.-)$")
+  if l_0_1 == nil or l_0_2 == nil then
+    return mp.CLEAN
+  end
+  ;
+  (bm.trigger_sig_delayed)("BMRegSetBinBfeFilter.A", l_0_0, 2000)
 end
 do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
+  return mp.CLEAN
 end
 

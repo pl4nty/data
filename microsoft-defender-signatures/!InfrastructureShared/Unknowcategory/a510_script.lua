@@ -3,26 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1, l_0_2 = nil, nil, nil
-for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
-  local l_0_3, l_0_4, l_0_5 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R6 in 'UnsetPending'
-
-  if (sigattr_head[R6_PC6]).matched then
-    if (sigattr_head[R6_PC6]).attribute == 16384 and (sigattr_head[R6_PC6]).utf8p1 and l_0_3 == nil then
-      l_0_3 = (string.lower)((sigattr_head[R6_PC6]).utf8p1)
-      l_0_4 = (string.match)(l_0_3, "\\roaming\\%x%x+\\([^\\]+)$")
-    else
-      if (sigattr_head[R6_PC6]).attribute == 16393 and (sigattr_head[R6_PC6]).utf8p2 and l_0_5 == nil then
-        l_0_5 = (string.lower)((sigattr_head[R6_PC6]).utf8p2)
-        l_0_5 = (string.match)(l_0_5, "\\roaming\\%x%x+\\([^\\]+)$")
-      end
-    end
-    if l_0_3 ~= nil and l_0_5 ~= nil and l_0_4 == l_0_5 then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((sigattr_head[R6_PC6]).utf8p1), 3276690080)
-      return mp.INFECTED
-    end
-  end
+if ((pehdr.DataDirectory)[5]).RVA <= 0 then
+  return mp.CLEAN
 end
-return mp.INFECTED
+if ((pehdr.DataDirectory)[5]).Size <= 0 then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() <= ((pehdr.DataDirectory)[5]).RVA then
+  return mp.INFECTED
+end
+;
+(mp.readprotection)(false)
+if (mp.getfilesize)() <= ((pehdr.DataDirectory)[5]).RVA + 9 then
+  return mp.INFECTED
+end
+local l_0_0 = (mp.readfile)(((pehdr.DataDirectory)[5]).RVA, 9)
+if (mp.readu_u32)(l_0_0, 5) ~= 131584 then
+  return mp.CLEAN
+end
+if l_0_0:byte(9) ~= 48 then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() < ((pehdr.DataDirectory)[5]).RVA + ((pehdr.DataDirectory)[5]).Size then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

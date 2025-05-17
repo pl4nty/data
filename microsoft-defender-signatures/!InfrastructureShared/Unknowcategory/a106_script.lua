@@ -3,14 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1048576 then
+if (this_sigattrlog[1]).matched == false then
   return mp.CLEAN
 end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (this_sigattrlog[2]).matched == false then
+  return mp.CLEAN
 end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if (this_sigattrlog[3]).matched == false then
+  return mp.CLEAN
+end
+local l_0_0 = (this_sigattrlog[1]).ppid
+local l_0_1 = (this_sigattrlog[2]).ppid
+local l_0_2 = (this_sigattrlog[3]).ppid
+if l_0_0 ~= l_0_1 then
+  return mp.CLEAN
+end
+local l_0_3, l_0_4 = (bm.get_process_relationships)()
+if #l_0_4 < 2 then
+  return mp.CLEAN
+end
+if (l_0_4[2]).ppid ~= l_0_2 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

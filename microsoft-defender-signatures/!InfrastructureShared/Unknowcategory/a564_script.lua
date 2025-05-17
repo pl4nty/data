@@ -3,18 +3,30 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[5]).matched then
-    local l_0_0, l_0_1 = nil
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
   end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
 
+  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
+    return mp.CLEAN
+  end
   local l_0_2 = nil
-  if (((string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "\\microsoft\\onedrive\\", 1, true) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "\\microsoft onedrive\\", 1, true)) and (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "filesyncshell64.dll", 1, true)) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "\\microsoft\\teams\\", 1, true) and (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "userenv.dll", 1, true) then
-    (bm.add_related_file)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)))
-    return mp.INFECTED
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+
+    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasAwsUrl") then
+      (bm.add_related_file)(R7_PC42)
+      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromAws") then
+        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromAws", 3600)
+        return mp.INFECTED
+      end
+    end
   end
   return mp.CLEAN
 end

@@ -3,19 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetResmgrBasePlugin)() ~= "regkeyvalue" then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if (string.find)(l_0_0, ".cache", 1, true) and ((string.find)(l_0_0, "windows\\servicestate\\winhttpautoproxysvc", 1, true) or (string.find)(l_0_0, "windows\\serviceprofiles\\localservice\\winhttp", 1, true)) then
+  (mp.set_mpattribute)("MpNonPIIFileType")
+  return mp.INFECTED
 end
-local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "hklm\\system\\currentcontrolset\\services", 1, true) == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(tostring(headerpage))
-if (string.find)(l_0_1, "rpcsrv.dat", 1, true) == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

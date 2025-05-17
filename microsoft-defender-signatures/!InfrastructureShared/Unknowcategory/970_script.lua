@@ -3,30 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  if (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if ((string.sub)(l_0_2, -31) == "\\application data\\windowsupdate" or (string.sub)(l_0_2, -30) == "\\appdata\\roaming\\windowsupdate") and l_0_1 == "msupdate.exe" then
-      (mp.set_mpattribute)("Lua:LethicFilename.A")
-      return mp.INFECTED
-    end
-  end
-  do
-    do
-      if l_0_0 == mp.SCANREASON_ONOPEN then
-        local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-        if (string.sub)(l_0_3, -56, -44) == "recycler\\s-1-" then
-          (mp.set_mpattribute)("Lua:LethicFilename.B")
-          return mp.INFECTED
+if (mp.get_mpattribute)("SCRIPT:Exploit:HTML/NeutrinoEK.G!obj") then
+  local l_0_0 = (string.lower)(tostring(headerpage))
+  local l_0_1 = (string.match)(l_0_0, "(<object .-classid=\"clsid:d27cdb6e.-</object>)")
+  if l_0_1 then
+    local l_0_2 = (string.match)(l_0_1, "<object.- id=\"(%l+)\".->")
+    local l_0_3 = (string.match)(l_0_1, "<object.- height=\"(%d+)\".->")
+    local l_0_4 = (string.match)(l_0_1, "<object.- width=\"(%d+).->")
+    if l_0_2 and l_0_3 and l_0_4 then
+      local l_0_5 = (string.match)(l_0_1, "(<param .-name=\"movie\".->)")
+      if l_0_5 then
+        local l_0_6 = (string.match)(l_0_5, "value=\"(/%w+/.-)\".->")
+        if l_0_6 then
+          local l_0_7 = (string.match)(l_0_1, "(<embed .-allowscriptaccess=\"samedomain\".->)")
+          if l_0_7 and l_0_2 == (string.match)(l_0_7, "name=\"(%l+)\".->") and l_0_6 == (string.match)(l_0_7, "src=\"(/%w+/.-)\".->") and l_0_4 == (string.match)(l_0_7, "width=\"(%d+)\".->") and l_0_3 == (string.match)(l_0_7, "height=\"(%d+)\".->") then
+            return mp.INFECTED
+          end
         end
       end
-      return mp.CLEAN
     end
   end
+end
+do
+  return mp.CLEAN
 end
 

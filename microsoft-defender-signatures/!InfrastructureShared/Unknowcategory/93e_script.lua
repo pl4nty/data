@@ -3,39 +3,25 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    if l_0_0:find("\\\\.\\pipe\\local\\chrome.nativemessaging", 1, true) then
-      return mp.CLEAN
-    else
-      -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
-
-      if l_0_0:find("\\\\.\\pipe\\mpvsocket", 1, true) then
-        return mp.CLEAN
-      end
-    end
-  end
-  local l_0_3, l_0_4 = , (bm.get_process_relationships)()
-  if l_0_4 == nil then
-    return mp.CLEAN
-  end
-  for l_0_8,l_0_9 in ipairs(l_0_4) do
-    local l_0_5 = nil
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R7 in 'UnsetPending'
-
-    if (string.find)((string.lower)(R7_PC50.image_path), "\\svchost.exe", 1, true) or (string.find)((string.lower)(R7_PC50.image_path), "\\services.exe", 1, true) or (string.find)((string.lower)(R7_PC50.image_path), "\\clickonceforgooglechrome.exe", 1, true) or (string.find)((string.lower)(R7_PC50.image_path), "\\evolvecontactagent.exe", 1, true) or (string.find)((string.lower)(R7_PC50.image_path), "\\chrome.exe", 1, true) then
-      return mp.CLEAN
-    end
-  end
-  return mp.INFECTED
+if peattributes.isdll then
+  return mp.CLEAN
 end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+if (string.sub)(l_0_1, -10) ~= "\\downloads" and (string.find)(l_0_1, "\\temp\\", 1, true) == nil and (string.sub)(l_0_1, -5) ~= "\\temp" then
+  return mp.CLEAN
+end
+local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+local l_0_3 = (string.match)(l_0_2, "(.+)%(.%).exe$")
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+local l_0_4 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+if (string.match)(l_0_4, "(.+).exe$") ~= l_0_3 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

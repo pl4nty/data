@@ -3,37 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true then
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
   return mp.CLEAN
 end
-if peattributes.isdll ~= true then
+if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
   return mp.CLEAN
 end
-if peattributes.hasstandardentry == true then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1800000 or l_0_0 < 4000 then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections ~= 3 then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
-if peattributes.epscn_islast ~= true then
+local l_0_1 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
+if l_0_1:find("program files", 1, true) then
   return mp.CLEAN
 end
-if (pesecs[1]).NameDW ~= 2019914798 then
+if l_0_1:find("system32", 1, true) then
   return mp.CLEAN
 end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 0 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 80 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 104 then
-  return mp.CLEAN
-end
-if epcode[7] <= 231 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
+if l_0_1:find("\\appdata\\local\\", 1, true) then
   return mp.CLEAN
 end
 return mp.INFECTED

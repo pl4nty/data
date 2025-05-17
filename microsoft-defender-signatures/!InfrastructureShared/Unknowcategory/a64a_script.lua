@@ -3,58 +3,45 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0["cmd.exe"] = true
-l_0_0["powershell.exe"] = true
-local l_0_1 = nil
-if (this_sigattrlog[1]).matched then
-  l_0_1 = (this_sigattrlog[1]).ppid
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_1 = (this_sigattrlog[2]).ppid
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_1 = (this_sigattrlog[3]).ppid
-    else
-      if (this_sigattrlog[4]).matched then
-        l_0_1 = (this_sigattrlog[4]).ppid
-      else
-        if (this_sigattrlog[5]).matched then
-          l_0_1 = (this_sigattrlog[5]).ppid
-        else
-          return mp.CLEAN
-        end
-      end
-    end
-  end
-end
-local l_0_2 = nil
-if (this_sigattrlog[6]).matched then
-  l_0_2 = (this_sigattrlog[6]).ppid
-else
-  return mp.CLEAN
-end
-for l_0_6 = 1, 5 do
-  if l_0_6 > 6 then
+simdmpcab = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_0 <= 0 or (mp.getfilesize)() <= l_1_1 then
     return mp.CLEAN
   end
-  local l_0_7, l_0_8 = (bm.get_process_relationships)(l_0_1)
-  for l_0_12,l_0_13 in ipairs(l_0_8) do
-    if l_0_13.reason == 1 then
-      local l_0_14 = (string.lower)((string.match)(l_0_13.image_path, "\\([^\\]+)$"))
-      if l_0_13.ppid == l_0_2 then
-        return mp.INFECTED
-      else
-        if l_0_0[l_0_14] ~= true then
-          (mp.ReportLowfi)(l_0_13.image_path, 187850996)
-          return mp.CLEAN
-        end
-      end
-      l_0_1 = l_0_13.ppid
+  local l_1_2 = (mp.readfile)(l_1_1, 32)
+  local l_1_3 = (mp.readu_u32)(l_1_2, 5) - 4
+  if l_1_3 <= 0 or (mp.getfilesize)() <= l_1_3 then
+    return mp.CLEAN
+  end
+  if l_1_3 > 32 then
+    local l_1_4 = "MSCF" .. (mp.readfile)(l_1_1, l_1_3)
+    local l_1_10 = mp.vfo_add_buffer
+    local l_1_8 = l_1_4
+    local l_1_9 = (string.format)("[SmrtInstMkrCab%x]", l_1_1)
+    l_1_10(l_1_8, l_1_9, mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  end
+  do
+    local l_1_5 = simdmpcab
+    local l_1_6 = l_1_0 - 1
+    do
+      local l_1_7 = l_1_1 + l_1_3
+      do return l_1_5(l_1_6, l_1_7) end
+      -- DECOMPILER ERROR at PC56: Confused about usage of register R5 for local variables in 'ReleaseLocals'
+
     end
   end
 end
-do return mp.CLEAN end
--- DECOMPILER ERROR at PC118: Confused about usage of register R4 for local variables in 'ReleaseLocals'
 
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 16777216 then
+  return mp.CLEAN
+end
+local l_0_1 = (pe.get_regval)(pe.REG_EAX)
+if l_0_1 <= 0 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+simdmpcab(5, l_0_1)
+return mp.CLEAN
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:AntiEmuSimdaCounter2DC6C0")
+if peattributes.isexe == true then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

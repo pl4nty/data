@@ -3,29 +3,46 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = tonumber((this_sigattrlog[8]).utf8p1)
-if l_0_0 == nil or l_0_0 < 1441792 then
-  return mp.CLEAN
-end
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-if l_0_1 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    if l_0_7.image_path ~= nil then
-      local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_7.image_path))
-      if (string.find)(l_0_8, "gravostyle", 1, true) or (string.find)(l_0_8, "typeedit", 1, true) or (string.find)(l_0_8, "lasertype", 1, true) then
-        return mp.CLEAN
-      end
+simdmpemb = function(l_1_0, l_1_1, l_1_2)
+  -- function num : 0_0
+  if l_1_0 <= 0 or l_1_2 <= l_1_1 + 24 then
+    return mp.CLEAN
+  end
+  local l_1_3 = (mp.readfile)(l_1_1, 24)
+  if (mp.readu_u32)(l_1_3, 9) ~= 0 then
+    return mp.CLEAN
+  end
+  local l_1_4 = (mp.readu_u32)(l_1_3, 5)
+  if l_1_4 < 0 or l_1_2 <= l_1_4 then
+    return mp.CLEAN
+  end
+  do
+    if l_1_4 >= 32 then
+      local l_1_9 = mp.vfo_add_buffer
+      l_1_9((mp.readfile)(l_1_1 + 24, l_1_4), (string.format)("[SmrtInstMkrEmb%x]", l_1_1), mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    end
+    local l_1_5 = simdmpemb
+    local l_1_6 = l_1_0 - 1
+    local l_1_7 = l_1_1 + l_1_4 + 24
+    do
+      local l_1_8 = l_1_2
+      do return l_1_5(l_1_6, l_1_7, l_1_8) end
+      -- DECOMPILER ERROR at PC59: Confused about usage of register R6 for local variables in 'ReleaseLocals'
+
     end
   end
 end
-do
-  local l_0_9 = (bm.get_current_process_startup_info)()
-  ;
-  (bm.request_SMS)(l_0_9.ppid, "h+")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1000)
-  ;
-  (bm.trigger_sig)("ReflectiveLoading", "Netloader")
-  return mp.INFECTED
+
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 16777216 then
+  return mp.CLEAN
 end
+local l_0_1 = (pe.get_regval)(pe.REG_EAX)
+if l_0_1 <= 0 or l_0_1 > 16777216 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+simdmpemb(10, l_0_1, l_0_0)
+return mp.CLEAN
 

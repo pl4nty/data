@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_1 = (string.match)(l_0_0, "winword%.exe\".+\"(.+%.doc)") .. "\000"
+  ;
+  (mp.ReportLowfi)(l_0_1, 2140448455)
+end
 do
-  if peattributes.isdll == true and peattributes.x86_image == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

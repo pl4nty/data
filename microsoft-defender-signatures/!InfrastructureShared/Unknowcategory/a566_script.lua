@@ -3,18 +3,35 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_18")
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
-local l_0_2 = (mp.readu_u32)(l_0_0, 6)
-local l_0_3 = (mp.readu_u32)(l_0_0, 15)
-local l_0_4 = (string.byte)(l_0_0, 21)
-local l_0_5 = (mp.readu_u32)(l_0_0, 25)
-local l_0_6 = (mp.readu_u32)(l_0_0, 36)
-local l_0_7 = (pe.get_regval)(pe.REG_EDX)
-local l_0_8 = (mp.ror32)((mp.ror32)(l_0_7, 1) + l_0_3, l_0_4) - (mp.bitxor)(l_0_6, l_0_5) + l_0_1 - l_0_2
-;
-(pe.set_regval)(pe.REG_EBX, l_0_8)
+if peattributes.no_relocs ~= true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).Size <= 0 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 3 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.UfsGetMetadataBool)("Lua:FileInZip", true) == 0 and "Lua:FileInZip" then
+if (mp.get_mpattribute)("LOWFI:VirTool:Win32/Obfuscator.QG") then
   return mp.INFECTED
 end
 return mp.CLEAN

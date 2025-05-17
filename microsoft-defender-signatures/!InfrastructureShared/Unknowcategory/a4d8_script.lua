@@ -3,28 +3,29 @@
 
 -- params : ...
 -- function num : 0
-min = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 < l_1_1 then
-    return l_1_0
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = nil
+if (this_sigattrlog[5]).matched then
+  l_0_2 = (this_sigattrlog[5]).image_path
+else
+  if (this_sigattrlog[6]).matched then
+    l_0_2 = (this_sigattrlog[6]).image_path
   end
-  return l_1_1
 end
-
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 32768 then
-  (mp.readprotection)(false)
-  local l_0_1 = (mp.readfile)(0, l_0_0)
-  local l_0_2 = (string.find)(l_0_1, "rO0ABXVy", 1, true)
-  if l_0_2 ~= nil then
-    local l_0_3 = (mp.readfile)(l_0_2 - 3, 2)
-    local l_0_4 = (mp.readfile)(l_0_2 - 1, min((string.byte)(l_0_3) * 256 + (string.byte)(l_0_3, 2), l_0_0 - l_0_2))
-    ;
-    (mp.vfo_add_buffer)(l_0_4, "[serialized_class]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-    return mp.INFECTED
+if l_0_2 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_1) do
+    if l_0_7.image_path == l_0_2 then
+      local l_0_8, l_0_9 = (string.match)(l_0_7.ppid, "pid:(%w+),ProcessStart:(%w+)")
+      local l_0_10 = tonumber(l_0_8)
+      local l_0_11 = tonumber(l_0_9)
+      local l_0_12, l_0_13 = (mp.bsplit)(l_0_11, 32)
+      local l_0_14 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_10, l_0_12, l_0_13)
+      ;
+      (mp.TriggerScanResource)("ems", l_0_14)
+    end
   end
 end
 do
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

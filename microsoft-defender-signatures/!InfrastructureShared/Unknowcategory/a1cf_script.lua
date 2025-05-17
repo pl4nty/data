@@ -3,16 +3,19 @@
 
 -- params : ...
 -- function num : 0
-do
-  if not (mp.get_mpattribute)("pea_genpacked") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 71168 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if (string.sub)(l_0_1, -5, -1) == ",XS88" or (string.sub)(l_0_1, -6, -1) == ", XS88" then
+  if l_0_0 ~= nil then
+    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

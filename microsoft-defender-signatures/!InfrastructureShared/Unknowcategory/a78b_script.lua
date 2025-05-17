@@ -3,34 +3,58 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\werfault.exe", 1, true) or (string.find)(l_0_0, "\\debugger", 1, true) or (string.find)(l_0_0, "\\vmmap", 1, true) or (string.find)(l_0_0, "\\thdump", 1, true) or (string.find)(l_0_0, "\\epa\\gtbinjector", 1, true) or (string.find)(l_0_0, "\\uwpinject.exe", 1, true) or (string.find)(l_0_0, "\\ra64app.exe", 1, true) or (string.find)(l_0_0, "\\bin\\dllinjector64.exe", 1, true) or (string.find)(l_0_0, "\\ftwlaunch", 1, true) then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 ~= nil and l_0_0 > 20971520 then
   return mp.CLEAN
 end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil then
-  local l_0_1 = (this_sigattrlog[2]).utf8p2
-  local l_0_2 = (this_sigattrlog[5]).utf8p1
-  local l_0_3 = (string.match)((string.lower)(l_0_1), " -p (%d+)")
-  if not l_0_3 then
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1 == nil or #l_0_1 < 4 then
+  return mp.CLEAN
+end
+local l_0_2 = {}
+-- DECOMPILER ERROR at PC39: No list found for R2 , SetList fails
+
+-- DECOMPILER ERROR at PC40: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC41: Overwrote pending register: R4 in 'AssignReg'
+
+for l_0_6,l_0_7 in ("/usr/")("/var/lib/") do
+  -- DECOMPILER ERROR at PC44: Overwrote pending register: R9 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC44: Overwrote pending register: R8 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC45: Overwrote pending register: R10 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R11 in 'AssignReg'
+
+  if ("/opt/")("/etc/", "/snap/", "/boot/") == l_0_7 then
     return mp.CLEAN
-  end
-  local l_0_4, l_0_5 = (string.match)(l_0_2, "targetprocessppid:(%d+):(%d+)")
-  if not l_0_4 or not l_0_5 then
-    return mp.CLEAN
-  end
-  if l_0_3 == l_0_4 then
-    local l_0_6 = (bm.get_current_process_startup_info)()
-    ;
-    (bm.request_SMS)(l_0_6.ppid, "M")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 1000)
-    local l_0_7 = (string.format)("pid:%s,ProcessStart:%s", l_0_4, l_0_5)
-    ;
-    (bm.trigger_sig)("BMGenericCodeInjector.A", "Behavior:Win32/GenCodeInjector.E", l_0_7)
-    return mp.INFECTED
   end
 end
 do
-  return mp.CLEAN
+  local l_0_8 = {}
+  -- DECOMPILER ERROR at PC64: Overwrote pending register: R12 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC90: No list found for R3 , SetList fails
+
+  -- DECOMPILER ERROR at PC91: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC92: Overwrote pending register: R5 in 'AssignReg'
+
+  for l_0_12,l_0_13 in ("/altair/")("-altair.") do
+    -- DECOMPILER ERROR at PC95: Overwrote pending register: R9 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC97: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC98: Overwrote pending register: R11 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC99: Overwrote pending register: R12 in 'AssignReg'
+
+    if (("/ansys_").find)("/ansys/", "nginx", "/proc/", true) then
+      return mp.CLEAN
+    end
+  end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

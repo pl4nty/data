@@ -3,20 +3,24 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+  return mp.CLEAN
+end
+local l_0_1 = (bm.get_imagepath)()
+if l_0_1 ~= nil then
+  l_0_1 = (string.lower)(l_0_1)
+  if (l_0_1.find)(l_0_1, "\\windows\\system32\\", 1, true) ~= nil then
+    return mp.CLEAN
+  end
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  end
-  if (this_sigattrlog[2]).matched then
-    local l_0_4 = nil
-    if l_0_4 == nil or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)((string.lower)((this_sigattrlog[2]).utf8p2))), "\\windows\\system32\\", 1, true) == nil or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)((string.lower)((this_sigattrlog[2]).utf8p2))), "\\windows\\system32\\dism\\dismcore.dll", 1, true) or (mp.IsKnownFriendlyFile)((string.lower)((mp.ContextualExpandEnvironmentVariables)((string.lower)((this_sigattrlog[2]).utf8p2))), true, false) then
-      return mp.CLEAN
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_2 = (this_sigattrlog[1]).utf8p2
+    if (sysio.IsFileExists)(l_0_2) then
+      (bm.add_related_file)(l_0_2)
     end
-    ;
-    (bm.add_threat_file)(l_0_4)
-    return mp.INFECTED
   end
+  return mp.INFECTED
 end
 

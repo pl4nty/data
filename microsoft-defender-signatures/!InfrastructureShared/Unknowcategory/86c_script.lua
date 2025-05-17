@@ -3,26 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsKnownFriendlyFile)((bm.get_imagepath)(), true, true) == true then
-  return mp.CLEAN
-end
-local l_0_0 = nil
-local l_0_1, l_0_2 = pcall(bm.get_current_process_startup_info)
-if l_0_1 then
-  l_0_0 = l_0_2.command_line
-end
-if l_0_0 ~= nil then
-  local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-  for l_0_7,l_0_8 in ipairs(l_0_3) do
-    l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_8)
-    if (sysio.IsFileExists)(l_0_8) then
-      (bm.add_related_file)(l_0_8)
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    l_0_0 = l_0_0:gsub("`", "", 100)
+    l_0_0 = (string.lower)(l_0_0)
+    if (string.find)(l_0_0, "new-object", 1, true) or (string.find)(l_0_0, "executioncontext", 1, true) or (string.find)(l_0_0, "webclient", 1, true) or (string.find)(l_0_0, "newscriptblock", 1, true) then
+      return mp.INFECTED
     end
   end
-end
-do
-  l_0_3 = mp
-  l_0_3 = l_0_3.INFECTED
-  return l_0_3
+  return mp.CLEAN
 end
 

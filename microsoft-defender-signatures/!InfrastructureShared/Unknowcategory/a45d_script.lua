@@ -3,12 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if pevars.epsec < pehdr.NumberOfSections or (mp.readu_u32)(epcode, 1) ~= 2030270560 or peattributes.epoutofimage or peattributes.amd64_image or (mp.getfilesize)() < pehdr.SizeOfImage then
-  (mp.changedetectionname)(805306412)
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if (string.find)(l_0_0, "/u ", 1, true) and (string.find)(l_0_0, "/i:", 1, true) then
+    local l_0_1 = nil
+    if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+      l_0_1 = (this_sigattrlog[1]).utf8p2
+    end
+    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+    for l_0_6,l_0_7 in ipairs(l_0_2) do
+      l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+      ;
+      (bm.add_threat_file)(l_0_7)
+    end
+    return mp.INFECTED
+  end
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_INMEMORY then
+do
   return mp.CLEAN
 end
-return mp.INFECTED
 

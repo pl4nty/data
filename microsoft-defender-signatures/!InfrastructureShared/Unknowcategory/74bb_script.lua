@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((bm.get_current_process_startup_info)()).integrity_level then
+(mp.set_mpattribute)("HSTR:Renos_msposer")
+if (mp.get_mpattribute)("PEPCODE:VirTool:Win32/Obfuscator.ED") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,64 +3,50 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p1 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).utf8p1 ~= nil then
-      local l_0_1 = (this_sigattrlog[3]).utf8p1
-    else
-    end
-    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).utf8p1 == nil or (this_sigattrlog[6]).matched) and (this_sigattrlog[6]).utf8p1 ~= nil then
-        local l_0_2, l_0_3, l_0_4, l_0_5 = (this_sigattrlog[5]).utf8p1
-      end
-      -- DECOMPILER ERROR at PC69: Confused about usage of register: R0 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC71: Confused about usage of register: R0 in 'UnsetPending'
-
-      if l_0_2 == nil or #l_0_2 < 4 then
-        return mp.CLEAN
-      end
-      -- DECOMPILER ERROR at PC79: Confused about usage of register: R0 in 'UnsetPending'
-
-      local l_0_6, l_0_7 = , (string.gsub)(l_0_2, "\\", "")
-      -- DECOMPILER ERROR at PC99: Unhandled construct in 'MakeBoolean' P1
-
-      if (string.byte)(l_0_6) == (string.byte)("%") and (l_0_2 == nil or l_0_2 ~= 2) then
-        return mp.CLEAN
-      end
-      if l_0_2 == nil or l_0_2 ~= 4 then
-        return mp.CLEAN
-      end
-      local l_0_8 = nil
-      -- DECOMPILER ERROR at PC121: Overwrote pending register: R3 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC126: Confused about usage of register: R3 in 'UnsetPending'
-
-      if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p2 == nil or nil ~= nil then
-        local l_0_9 = nil
-        for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
-          local l_0_10 = nil
-          -- DECOMPILER ERROR at PC136: Confused about usage of register: R9 in 'UnsetPending'
-
-          if (string.find)((string.lower)(R9_PC136), "\\javaw.exe") == nil and (sysio.IsFileExists)(R9_PC136) then
-            (bm.add_threat_file)(R9_PC136)
-          end
-        end
-      end
-      do
-        return mp.INFECTED
-      end
-    end
-  end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
 end
+if peattributes.hasexports ~= false then
+  return mp.CLEAN
+end
+if peattributes.no_relocs ~= true then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[11]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry ~= false then
+  return mp.CLEAN
+end
+if peattributes.is_delphi ~= false then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if epcode[1] ~= 129 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 236 then
+  return mp.CLEAN
+end
+if (mp.readu_u16)(epcode, 5) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u16)(epcode, 3) < 768 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage < 512000 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage - (pesecs[pevars.epsec]).VirtualSize >= 126976 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,33 +3,34 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC18: No list found for R2 , SetList fails
 
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
-  end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC19: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC20: Overwrote pending register: R4 in 'AssignReg'
 
-  if l_0_0 ~= nil then
-    if (string.find)(l_0_0, "\\microsoft.net\\framework") ~= nil then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
+  for l_0_6,l_0_7 in ("\\cmd.exe")("\\cscript.exe") do
+    -- DECOMPILER ERROR at PC23: Overwrote pending register: R9 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC32: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC23: Overwrote pending register: R8 in 'AssignReg'
 
-    if (sysio.IsFileExists)(l_0_0) then
-      (bm.add_related_file)(l_0_0)
-      -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC24: Overwrote pending register: R10 in 'AssignReg'
 
-      ;
-      (bm.add_threat_file)(l_0_0)
+    if ("\\regsvr32.exe")("\\rundll32.exe", -"\\wscript.exe") == l_0_7 then
       return mp.INFECTED
     end
   end
-  return mp.CLEAN
+end
+do
+  do
+    -- DECOMPILER ERROR at PC35: Overwrote pending register: R1 in 'AssignReg'
+
+    do return l_0_1 end
+    -- WARNING: undefined locals caused missing assignments!
+  end
 end
 

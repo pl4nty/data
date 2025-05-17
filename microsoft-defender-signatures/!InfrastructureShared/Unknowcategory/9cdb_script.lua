@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if l_0_0 ~= nil and (string.find)(l_0_0, "\\msbuild.exe", 1, true) then
+      (bm.add_action)("EmsScan", 5000)
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

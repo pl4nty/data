@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 4 then
-  return mp.SUSPICIOUS
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-if (hstrlog[1]).matched and (hstrlog[2]).matched then
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AMY")
-end
-return mp.LOWFI
+return mp.INFECTED
 

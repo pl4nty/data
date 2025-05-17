@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
+do
+  if (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if not peattributes.isvbnative and not peattributes.isvbpcode then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 2097152 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

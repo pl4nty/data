@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("Lua:RData.GetAPIs")
+(mp.set_mpattribute)("MpInternal_RichData_Ex")
 return mp.CLEAN
 

@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isexe == true and peattributes.no_security == true and peattributes.ismsil == false and (mp.getfilesize)() < 900000 and (mp.getfilesize)() > 620000) or (mp.getfilesize)() < 307200 and (mp.getfilesize)() > 204800 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetUACMetadata)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if l_0_0.Type ~= mp.AMSI_UAC_REQUEST_TYPE_COM then
+  return mp.CLEAN
+end
+if (string.lower)((l_0_0.Info).Clsid) ~= "48012511-82cc-48f3-ae5b-40c7401a5a09" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

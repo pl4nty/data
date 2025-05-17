@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:GMiner")
-;
-(mp.set_mpattribute)("Company:CoinMiner64:DevelSoftware")
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EIP) + 37, "\000\016\000\000")
 return mp.INFECTED
 

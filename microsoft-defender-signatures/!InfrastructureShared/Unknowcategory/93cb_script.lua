@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 159744 and pehdr.NumberOfSections == 9 and (pesecs[6]).Name == "CONST" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

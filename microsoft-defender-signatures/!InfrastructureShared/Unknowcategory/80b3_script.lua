@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 3 and peattributes.epinfirstsect and (pesecs[pehdr.NumberOfSections]).Name == ".rsrc" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "u", 21, true)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, "3\255")
+return mp.INFECTED
 

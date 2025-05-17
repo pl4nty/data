@@ -41,14 +41,15 @@ if l_0_6 == nil then
   return mp.CLEAN
 end
 if (string.find)(l_0_3, "\\windows\\", 1, true) or (string.find)(l_0_3, "\\programdata\\usoshared\\logs\\system\\", 1, true) or (string.find)(l_0_4, "\\windows\\", 1, true) or (string.find)(l_0_4, "\\programdata\\usoshared\\logs\\system\\", 1, true) or (string.find)(l_0_5, "\\windows\\", 1, true) or (string.find)(l_0_5, "\\programdata\\usoshared\\logs\\system\\", 1, true) or (string.find)(l_0_6, "\\windows\\", 1, true) or (string.find)(l_0_6, "\\programdata\\usoshared\\logs\\system\\", 1, true) then
-  (bm.add_related_string)("SuspETLAccessB", tostring(l_0_3), bm.RelatedStringBMReport)
-  ;
-  (bm.add_related_string)("SuspETLAccessB", tostring(l_0_4), bm.RelatedStringBMReport)
-  ;
-  (bm.add_related_string)("SuspETLAccessB", tostring(l_0_5), bm.RelatedStringBMReport)
-  ;
-  (bm.add_related_string)("SuspETLAccessB", tostring(l_0_6), bm.RelatedStringBMReport)
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(bm.add_related_string)("SuspETLAccessA", tostring(l_0_3), bm.RelatedStringBMReport)
+;
+(bm.add_related_string)("SuspETLAccessA", tostring(l_0_4), bm.RelatedStringBMReport)
+;
+(bm.add_related_string)("SuspETLAccessA", tostring(l_0_5), bm.RelatedStringBMReport)
+;
+(bm.add_related_string)("SuspETLAccessA", tostring(l_0_6), bm.RelatedStringBMReport)
+return mp.INFECTED
 

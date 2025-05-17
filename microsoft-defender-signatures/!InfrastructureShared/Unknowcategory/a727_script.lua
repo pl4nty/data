@@ -3,65 +3,41 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 4000000 or l_0_0 < 4000 then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("pea_ismsil") then
+  return mp.CLEAN
+end
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("system32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("syswow64", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("xboxgames", 1, true) then
+  return mp.CLEAN
+end
+local l_0_2 = (pe.get_versioninfo)()
+if l_0_2 ~= nil then
+  local l_0_3 = l_0_2.OriginalFilename
+  local l_0_4 = l_0_2.CompanyName
+  if l_0_3 and l_0_4 and ((string.find)((string.lower)(l_0_3), "fstx.dll", 1, true) or (string.find)((string.lower)(l_0_3), "clfsw32.dll", 1, true)) and (string.find)((string.lower)(l_0_4), "microsoft corporation", 1, true) then
+    return mp.CLEAN
+  end
+end
 do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
-      local l_0_1 = (string.lower)((this_sigattrlog[4]).utf8p2)
-    else
-    end
-    -- DECOMPILER ERROR at PC63: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
-        local l_0_2, l_0_3, l_0_4, l_0_5 = (string.lower)((this_sigattrlog[6]).utf8p2), nil
-      else
-      end
-      if (this_sigattrlog[8]).matched then
-        local l_0_6 = (string.lower)((this_sigattrlog[8]).utf8p2)
-        -- DECOMPILER ERROR at PC91: Confused about usage of register: R1 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC99: Confused about usage of register: R1 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC108: Confused about usage of register: R1 in 'UnsetPending'
-
-        if l_0_6 and (string.lower)((this_sigattrlog[1]).utf8p1) and (string.find)(l_0_6, (string.lower)((this_sigattrlog[1]).utf8p1), 1, true) then
-          if (string.find)((string.lower)((this_sigattrlog[1]).utf8p1), "\\appdata\\", 1, true) then
-            local l_0_7, l_0_9, l_0_10 = , (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "(.+\\)([^\\]+)$")
-            if l_0_9 then
-              if (string.sub)(l_0_9, -17) == "\\appdata\\roaming\\" then
-                return mp.INFECTED
-              else
-                if (string.sub)(l_0_9, -15) == "\\appdata\\local\\" then
-                  return mp.INFECTED
-                else
-                  if (string.sub)(l_0_9, -18) == "\\appdata\\locallow\\" then
-                    return mp.INFECTED
-                  end
-                end
-              end
-            end
-          else
-            do
-              do
-                local l_0_8 = nil
-                if (string.find)(l_0_8, ":\\programdata\\", 1, true) and (string.match)(l_0_8, "(.+\\)([^\\]+)$") and (string.sub)((string.match)(l_0_8, "(.+\\)([^\\]+)$"), -14) == ":\\programdata\\" then
-                  return mp.INFECTED
-                end
-                return mp.CLEAN
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+  return mp.INFECTED
 end
 

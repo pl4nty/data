@@ -3,39 +3,43 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("elfa_isgocompiled") then
-  local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-  if l_0_0 == nil or #l_0_0 < 4 then
-    return mp.CLEAN
-  end
-  local l_0_1 = {}
-  -- DECOMPILER ERROR at PC28: No list found for R1 , SetList fails
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC29: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC30: Overwrote pending register: R3 in 'AssignReg'
-
-  for l_0_5,l_0_6 in (".deb")(".iso") do
-    if (string.find)(l_0_0, l_0_6, -1 * #l_0_6, true) then
-      return mp.CLEAN
-    end
-  end
-  local l_0_7 = {}
-  -- DECOMPILER ERROR at PC54: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC55: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC56: Overwrote pending register: R4 in 'AssignReg'
-
-  for l_0_11,l_0_12 in ("kali")(".dpkg") do
-    if (string.find)(l_0_0, l_0_12, 1, true) then
-      return mp.CLEAN
-    end
-  end
-  return mp.INFECTED
-end
 do
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = nil
+  end
+  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or (string.lower)((this_sigattrlog[2]).utf8p2) ~= nil then
+    if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "smb ", 1, true) then
+      return mp.INFECTED
+    else
+      -- DECOMPILER ERROR at PC51: Confused about usage of register: R0 in 'UnsetPending'
+
+      if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "winrm ", 1, true) then
+        return mp.INFECTED
+      else
+        -- DECOMPILER ERROR at PC64: Confused about usage of register: R0 in 'UnsetPending'
+
+        if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "ldap ", 1, true) then
+          return mp.INFECTED
+        else
+          -- DECOMPILER ERROR at PC77: Confused about usage of register: R0 in 'UnsetPending'
+
+          if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "mssql ", 1, true) then
+            return mp.INFECTED
+          else
+            -- DECOMPILER ERROR at PC90: Confused about usage of register: R0 in 'UnsetPending'
+
+            if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "ssh ", 1, true) then
+              return mp.INFECTED
+            end
+          end
+        end
+      end
+    end
+  end
+  return mp.CLEAN
 end
 

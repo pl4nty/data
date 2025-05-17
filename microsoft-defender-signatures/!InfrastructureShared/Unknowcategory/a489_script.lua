@@ -3,36 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 1 then
-  local l_0_0 = nil
-  if (hstrlog[1]).matched then
-    l_0_0 = (hstrlog[1]).VA
-  end
-  if (hstrlog[2]).matched then
-    l_0_0 = (hstrlog[2]).VA
-  end
-  if (hstrlog[3]).matched then
-    l_0_0 = (hstrlog[3]).VA
-  end
-  if (hstrlog[4]).matched then
-    l_0_0 = (hstrlog[4]).VA
-  end
-  if (hstrlog[5]).matched then
-    l_0_0 = (hstrlog[5]).VA
-  end
-  if (hstrlog[6]).matched then
-    l_0_0 = (hstrlog[6]).VA
-  end
-  if (hstrlog[7]).matched then
-    l_0_0 = (hstrlog[7]).VA
-  end
-  if l_0_0 ~= nil then
-    local l_0_1 = "HSTR:VirTool:Win32/Obfuscator.WU.offset_" .. (string.format)("%.08x", l_0_0)
+if pehdr.CheckSum == 0 and peattributes.isexe and peattributes.hasexports and pevars.epsec < 3 and pehdr.MajorLinkerVersion == 10 and pehdr.MinorLinkerVersion == 0 and pehdr.NumberOfSections == 7 then
+  if mp.HSTR_WEIGHT == 1 then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
     ;
-    (mp.set_mpattribute)(l_0_1)
+    (pe.reemulate)()
+  end
+  if mp.HSTR_WEIGHT == 2 then
+    return mp.INFECTED
   end
 end
-do
-  return mp.INFECTED
-end
+return mp.CLEAN
 

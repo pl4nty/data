@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\235")
+if (mp.get_mpattribute)("SIGATTR:Win32/AVKRRM") then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

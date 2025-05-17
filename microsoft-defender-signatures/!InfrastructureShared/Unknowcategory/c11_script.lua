@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Pokavampo")
-return mp.INFECTED
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

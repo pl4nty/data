@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.getfilesize)()
-local l_0_1 = tostring((mp.readfile)(0, l_0_0))
-l_0_1 = (string.lower)(l_0_1)
-if (string.find)(l_0_1, "j7pjsibhd9dztmzk7ddgdohxux5lws3aa9fqa9lxwkrk4omnzgqt6euej4i", 1, true) ~= nil then
-  return mp.INFECTED
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 163840 and (mp.getfilesize)() < 282624 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

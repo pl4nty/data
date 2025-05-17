@@ -3,31 +3,69 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpOnCloseNewlyCreatedHintRtpScan") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 and ((string.find)(l_0_0, "\\config\\systemprofile\\appdata\\local\\crashdumps\\", 1, true) or (string.find)(l_0_0, "\\programdata\\microsoft\\windows\\wer\\", 1, true) or (string.find)(l_0_0, "\\windows\\logs\\pbr\\", 1, true) or (string.find)(l_0_0, "\\programdata\\norton\\", 1, true)) then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-if l_0_1 then
-  local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
-  if l_0_2 then
-    l_0_2 = (MpCommon.PathToWin32Path)(l_0_2)
-    local l_0_3 = (string.lower)(l_0_2 .. "\\" .. l_0_1)
-    if (string.find)(l_0_3, "\\program files\\palo alto networks\\", 1, true) or (string.find)(l_0_3, "\\program files\\microsoft system center 2022\\", 1, true) or (string.find)(l_0_3, "\\windows\\cluster\\clussvc.exe", 1, true) or (string.find)(l_0_3, "watchdog\\bin\\", 1, true) or (string.find)(l_0_3, "\\windows\\explorer.exe", 1, true) or (string.find)(l_0_3, "\\pmd\\processdumpeaplugin.exe", 1, true) then
-      return mp.CLEAN
+Infrastructure_ScanBedepClsid = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = {}
+  if l_1_0 then
+    local l_1_2 = l_1_0 .. "Software\\Classes\\Drive\\ShellEx\\FolderExtensions"
+    local l_1_3 = (sysio.RegOpenKey)(l_1_2)
+    if l_1_3 then
+      local l_1_4 = (sysio.RegEnumKeys)(l_1_3)
+      if l_1_4 then
+        for l_1_8,l_1_9 in ipairs(l_1_4) do
+          if (string.match)(l_1_9, "^{%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x}$") then
+            local l_1_10 = (sysio.RegOpenKey)(l_1_2 .. "\\" .. l_1_9)
+            if l_1_10 then
+              local l_1_11 = (sysio.GetRegValueAsDword)(l_1_10, "DriveMask")
+              if l_1_11 and l_1_11 == 4294967295 then
+                (table.insert)(l_1_1, l_1_9)
+              end
+            end
+          end
+        end
+      end
     end
-    ;
-    (mp.set_mpattribute)("MpInternal_researchdata=parentprocesspath=" .. l_0_3)
+  end
+  do
+    return l_1_1
   end
 end
-do
-  local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
-  if l_0_4 ~= nil and (string.find)((string.lower)(l_0_4), "pid:4,", 1, true) then
-    return mp.CLEAN
+
+Infrastructure_ScanBedepFilePathFromReg = function(l_2_0, l_2_1)
+  -- function num : 0_1
+  if l_2_0 and l_2_1 then
+    local l_2_2 = (sysio.RegOpenKey)(l_2_0 .. "Software\\Classes\\CLSID\\" .. l_2_1 .. "\\InprocServer32")
+    if l_2_2 then
+      local l_2_3 = (sysio.GetRegValueAsString)(l_2_2, "")
+      if (sysio.IsFileExists)(l_2_3) then
+        (MpDetection.ScanResource)("file://" .. l_2_3)
+        ;
+        (MpCommon.ReportLowfi)(l_2_3, 2613789282)
+      end
+    end
   end
-  return mp.INFECTED
 end
+
+Infrastructure_ScanBedep = function(l_3_0)
+  -- function num : 0_2
+  local l_3_1 = "HKCU"
+  local l_3_2 = {}
+  if l_3_0 then
+    local l_3_3 = (sysio.RegExpandUserKey)(l_3_1)
+    for l_3_7,l_3_8 in pairs(l_3_3) do
+      l_3_2 = Infrastructure_ScanBedepClsid(l_3_8)
+      for l_3_12,l_3_13 in ipairs(l_3_2) do
+        Infrastructure_ScanBedepFilePathFromReg(l_3_8, l_3_13)
+      end
+    end
+  else
+    do
+      l_3_2 = Infrastructure_ScanBedepClsid(l_3_1 .. "\\")
+      for l_3_17,l_3_18 in ipairs(l_3_2) do
+        Infrastructure_ScanBedepFilePathFromReg(l_3_1 .. "\\", l_3_18)
+      end
+    end
+  end
+end
+
 

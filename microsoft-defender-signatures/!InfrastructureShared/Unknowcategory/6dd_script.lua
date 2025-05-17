@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpInternal_TencodeVpath1")
+if (mp.GetResmgrBasePlugin)() == "AutorunInf" then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

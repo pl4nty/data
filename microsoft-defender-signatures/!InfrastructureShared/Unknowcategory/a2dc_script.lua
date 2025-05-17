@@ -3,18 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p1)
-if (string.find)(l_0_0, ":\\windows\\", 1, true) then
-  return mp.CLEAN
-end
-l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
-if l_0_1 == nil or (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
   return mp.CLEAN
 end
 ;
-(bm.add_threat_file)(l_0_0)
+(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
 ;
-(bm.add_threat_file)(l_0_1)
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

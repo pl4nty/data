@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[18]).matched or (hstrlog[19]).matched then
-  (mp.changedetectionname)(805306447)
-else
-  if (hstrlog[20]).matched then
-    (mp.changedetectionname)(805306448)
-  else
-    if (hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or (hstrlog[17]).matched then
-      (mp.changedetectionname)(805306432)
-    end
-  end
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
+  return mp.CLEAN
+end
+if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

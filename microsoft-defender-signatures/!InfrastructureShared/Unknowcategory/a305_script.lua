@@ -3,18 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[4]).matched then
-    local l_0_0 = tonumber((this_sigattrlog[4]).p1, 16)
-    if not (pe.contains_va)(2, l_0_0) and not (pe.contains_va)(3, l_0_0) then
-      return mp.CLEAN
-    end
-    if (mp.bitand)(l_0_0, 4095) == 0 then
-      (mp.set_mpattribute)("LOWFI:SIGATTR:VirTool:Win32/OwnProcessWriteProcMemVA000")
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+(mp.set_mpattribute)("HSTR:Worm:MSIL/Murkados.A")
+if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched and (hstrlog[4]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[7]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,10 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (nri.IsResponse)() then
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[6]).matched then
+    local l_0_0 = nil
+    if (string.find)(l_0_0, "/download", 1, true) ~= nil then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
-return mp.INFECTED
 

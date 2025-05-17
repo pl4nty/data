@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.find)(l_0_0, "\\\\(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)\\") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if (mp.get_mpattribute)("MpAPILimitReached") then
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.set_peattribute)("disable_apicall_limit", true)
+  ;
+  (pe.reemulate)()
+  return mp.INFECTED
 end
+return mp.CLEAN
 

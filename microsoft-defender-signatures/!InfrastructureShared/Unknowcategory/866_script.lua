@@ -3,18 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil then
-  return mp.CLEAN
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if l_0_2 == "syshost.exe" and (string.sub)(l_0_1, -1) == "}" then
+    (mp.set_mpattribute)("Lua:NecursFileName.A")
+  end
 end
 do
-  if l_0_2:len() == 36 then
-    local l_0_3, l_0_4 = l_0_1:match("(.+\\)(.+)\\$")
-    if l_0_4:len() == 32 and l_0_2:match("%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x.exe") and l_0_4:match("%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x") then
-      (mp.set_mpattribute)("LUA:Wajam:Path")
-    end
-  end
   return mp.CLEAN
 end
 

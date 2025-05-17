@@ -3,20 +3,14 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_AsrLinkScan = function(l_1_0)
-  -- function num : 0_0
-  (MpCommon.SetGlobalMpAttribute)("DefenderAsrLinkRescue")
-  if l_1_0 == "postsig" then
-    (MpDetection.ScanResource)("regkeyvalue://HKLM\\Software\\Microsoft\\ASRFix\\\\scriptresult")
-  else
-    if l_1_0 == "qscanmachine" or l_1_0 == "qscanuser" then
-      (MpDetection.ScanResource)("regkeyvalue://HKCU\\Software\\Microsoft\\ASRFix\\\\scriptresult")
-      ;
-      (MpDetection.ScanResource)("regkeyvalue://HKCU\\Software\\Microsoft\\ASRFix\\\\mptaskbarrecoverversion")
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "svchost.exe" or l_0_1:match("([^\\]+)$") == "rundll32.exe" or l_0_1:match("([^\\]+)$") == "mstsc.exe" or l_0_1:match("([^\\]+)$") == "dllhost.exe" or l_0_1:match("([^\\]+)$") == "wuauclt.exe" or l_0_1:match("([^\\]+)$") == "msfeedssync.exe" or l_0_1:match("([^\\]+)$") == "nslookup.exe" or l_0_1:match("([^\\]+)$") == "werfault.exe" or l_0_1:match("([^\\]+)$") == "eventvwr.exe" then
+      return mp.INFECTED
     end
   end
-  ;
-  (MpCommon.DeleteGlobalMpAttribute)("DefenderAsrLinkRescue")
+  return mp.CLEAN
 end
-
 

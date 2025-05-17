@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.ps1)")
-if l_0_2 and (sysio.IsFileExists)(l_0_2) then
-  (mp.ReportLowfi)(l_0_2, 1120308759)
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and pehdr.NumberOfSections == 8 then
+  (pe.set_image_filename)("\"myapp.exe\" /install")
   ;
-  (bm.add_related_file)(l_0_2)
+  (pe.reemulate)()
 end
+;
+(mp.set_mpattribute)("PUA:Block:Prifou")
 return mp.INFECTED
 

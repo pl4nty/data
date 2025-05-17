@@ -3,16 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.IOAVGetDownloadUrl)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = Remediation.Threat
+if l_0_0.Active and (string.match)(l_0_0.Name, "Behavior:Win32/MaleficAms.I") then
+  for l_0_4,l_0_5 in ipairs((Remediation.Threat).Resources) do
+    if l_0_5.Schema == "behavior" then
+      local l_0_6 = (string.match)(l_0_5.Path, "process: (%a:\\[^,]+%.exe)")
+      if l_0_6 and (sysio.IsFileExists)(l_0_6) then
+        do
+          do
+            (sysio.DeleteFile)(l_0_6)
+            do break end
+            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out DO_STMT
+
+            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
+
+            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+      end
+    end
+  end
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("^sample%d%d%d%.") then
-  (pe.set_peattribute)("enable_vmm_grow", true)
-  ;
-  (pe.set_peattribute)("deep_analysis", true)
-  return mp.INFECTED
-end
-return mp.CLEAN
 

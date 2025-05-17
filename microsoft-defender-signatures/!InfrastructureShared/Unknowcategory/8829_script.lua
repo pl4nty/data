@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (string.lower)((mp.utf16to8)((this_sigattrlog[1]).wp1))
-    if l_0_0 ~= nil and (string.find)(l_0_0, "\\%d+%.exe") ~= nil then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT == 4 then
+  return mp.SUSPICIOUS
 end
+if (hstrlog[1]).matched and (hstrlog[2]).matched then
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AMY")
+end
+return mp.LOWFI
 

@@ -3,20 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.ispackedwith)("AutoIt.+") and peattributes.hasappendeddata then
-  local l_0_0 = pehdr.NumberOfSections
-  local l_0_1 = (pesecs[l_0_0]).PointerToRawData + (pesecs[l_0_0]).SizeOfRawData
-  ;
-  (mp.readprotection)(false)
-  local l_0_2 = (mp.readfile)(l_0_1, 16)
-  if l_0_2 == "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" then
-    if (mp.getfilesize)() >= 4194304 then
-      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
-    end
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
   return mp.CLEAN
 end
+if l_0_2:len() == 15 and l_0_2:find("^service[0-9][0-9][0-9][0-9]%.") == 1 then
+  (mp.set_mpattribute)("Lua:ContextFileNamePutalol")
+end
+if l_0_2 == "flashbeat.exe" then
+  (mp.set_mpattribute)("Lua:ContextFileNamePutalol.B")
+else
+  if l_0_2 == "lolliscan.exe" then
+    (mp.set_mpattribute)("Lua:ContextFileNamePutalol.C")
+  end
+end
+return mp.CLEAN
 

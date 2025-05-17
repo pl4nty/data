@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -20))
-if (string.find)(l_0_0, "\\iexplore.exe", 8, true) or (string.find)(l_0_0, "\\chrome.exe", 10, true) or (string.find)(l_0_0, "\\browser_broker.exe", 2, true) or (string.find)(l_0_0, "\\microsoftedge.exe", 3, true) or (string.find)(l_0_0, "\\microsoftedgecp.exe", 1, true) or (string.find)(l_0_0, "\\firefox.exe", 9, true) then
-  return mp.INFECTED
+local l_0_0 = pehdr.ImageBase + (pesecs[1]).VirtualAddress
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+if (string.sub)(l_0_1, 1, 4) == "(re)" then
+  (mp.changedetectionname)(805306416)
 end
-return mp.CLEAN
+if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3898037843 and (mp.readu_u32)(epcode, 13) == 4278738315 and (mp.readu_u32)(epcode, 17) == 1703089267 and (mp.readu_u16)(epcode, 21) == 252 then
+  (mp.changedetectionname)(805306416)
+end
+return mp.INFECTED
 

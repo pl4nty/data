@@ -3,55 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetRawRequestBlob)()
-if (string.byte)(l_0_0, 1) ~= 5 or (string.byte)(l_0_0, 2) ~= 0 or (string.byte)(l_0_0, 3) ~= 11 then
+if (mp.get_mpattribute)("//FOPEX:PyInstScrDrp") then
   return mp.CLEAN
 end
-local l_0_1 = "([\\x00-\\xFF]+)\\x05\\x00\\x00\\x03\\x10\\x00\\x00\\x00(..)...\\x00\\x00\\x00....\\x00\\x00\\x04\\x00"
-local l_0_2, l_0_3, l_0_4 = (MpCommon.BinaryRegExpSearch)(l_0_1, l_0_0)
-if l_0_2 and l_0_4 then
-  local l_0_5 = (mp.readu_u16)(l_0_4, 1)
-  local l_0_6 = (string.sub)(l_0_0, #l_0_3 + 1, #l_0_3 + l_0_5)
-  local l_0_7 = (string.sub)(l_0_6, -8, -2)
-  if (mp.readu_u32)(l_0_7, 1) == 0 and (mp.readu_u16)(l_0_7, 5) == 0 and (string.byte)(l_0_7, 7) == 0 then
-    return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 16777216 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(0, l_0_0)
+;
+(mp.writeu_u8)(l_0_1, (pe.foffset_va)(pevars.sigaddr) + 5, 115)
+if peattributes.packed == true then
+  local l_0_2 = (mp.get_parent_filehandle)()
+  if l_0_2 == nil then
+    return mp.CLEAN
   end
-  if (MpCommon.BinaryRegExpSearch)("\\x4e\\x54\\x4c\\x4d\\x53\\x53\\x50\\x00", l_0_0) then
-    l_0_0 = l_0_0:sub(-(#l_0_3 + l_0_5))
-    while 1 do
-      if 0 < 5 and #l_0_1 < #l_0_0 and l_0_2 then
-        l_0_2 = (MpCommon.BinaryRegExpSearch)(l_0_1, l_0_0)
-      end
-      if l_0_2 then
-        if not l_0_4 then
-          break
-        end
-        -- DECOMPILER ERROR at PC115: Confused about usage of register: R8 in 'UnsetPending'
-
-        do
-          local l_0_8, l_0_9 = 0 + 1
-          l_0_9 = mp
-          l_0_9 = l_0_9.readu_u16
-          l_0_9 = l_0_9(l_0_4, 1)
-          l_0_5 = l_0_9
-          l_0_9 = l_0_9(l_0_0, -(#l_0_3 + l_0_5))
-          l_0_0 = l_0_9
-          -- DECOMPILER ERROR at PC128: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC128: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
-    end
-    -- DECOMPILER ERROR at PC129: Confused about usage of register: R8 in 'UnsetPending'
-
-    if l_0_8 >= 5 then
-      (mp.changedetectionname)(4243)
-      return mp.INFECTED
-    end
+  local l_0_3 = (pe.mmap_va)((pe.get_regval)(pe.REG_ECX), 20)
+  if (mp.readu_u32)(l_0_3, 17) ~= 206128461 then
+    return mp.CLEAN
   end
+  local l_0_4 = (mp.readu_u32)(l_0_3, 5)
+  if l_0_4 < 4096 or l_0_4 > 16777216 then
+    return mp.CLEAN
+  end
+  l_0_1 = l_0_1 .. (mp.readfile_by_handle)(l_0_2, l_0_4, (mp.get_filesize_by_handle)(l_0_2) - l_0_4)
 end
 do
+  ;
+  (mp.vfo_add_buffer)(l_0_1, "[PyInstScrDrp]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  ;
+  (mp.set_mpattribute)("//FOPEX:PyInstScrDrp")
   return mp.CLEAN
 end
 

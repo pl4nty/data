@@ -3,36 +3,41 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1, l_0_2 = , (bm.get_process_relationships)()
-local l_0_3 = nil
-if l_0_2 ~= nil then
-  for l_0_7,l_0_8 in ipairs(l_0_2) do
-    local l_0_4 = (bm.get_current_process_startup_info)()
-    -- DECOMPILER ERROR at PC12: Confused about usage of register: R8 in 'UnsetPending'
-
-    if R8_PC12.image_path ~= nil then
-      l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(R8_PC12.image_path))
-      if (string.find)(l_0_1, "\\svchost.exe", -12, true) or (string.find)(l_0_1, "\\rastools.exe", -13, true) or (string.find)(l_0_1, "\\rastoolsservice.exe", -20, true) then
-        return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 and l_0_0.integrity_level < MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+  local l_0_1 = (bm.get_imagepath)()
+  if not l_0_1 then
+    return mp.CLEAN
+  end
+  l_0_1 = (string.lower)(l_0_1)
+  if (string.find)(l_0_1, "\\$windows.~bt\\sources\\") then
+    return mp.CLEAN
+  end
+  local l_0_2 = {}
+  l_0_2["bcdboot.exe"] = true
+  l_0_2["bfsvc.exe"] = true
+  l_0_2["windows10upgraderapp.exe"] = true
+  l_0_2["tiworker.exe"] = true
+  local l_0_3 = (string.match)(l_0_1, "([^\\]+)$")
+  if l_0_3 and not l_0_2[l_0_3] then
+    local l_0_4 = nil
+    if (this_sigattrlog[2]).matched then
+      l_0_4 = (this_sigattrlog[2]).utf8p1
+    else
+      if (this_sigattrlog[1]).matched then
+        l_0_4 = (this_sigattrlog[1]).utf8p1
       end
     end
+    if not l_0_4 then
+      return mp.CLEAN
+    end
+    if l_0_4 and not (mp.IsKnownFriendlyFile)(l_0_4, false, true) then
+      (mp.ReportLowfi)(l_0_4, 676571687)
+    end
+    return mp.INFECTED
   end
 end
 do
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC76: Confused about usage of register: R3 in 'UnsetPending'
-
-  if (sysio.IsFileExists)(l_0_1) and not (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
-    (bm.request_SMS)(l_0_4.ppid, "h+")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 1000)
-    ;
-    (bm.add_related_file)(l_0_1)
-    return mp.INFECTED
-  end
   return mp.CLEAN
 end
 

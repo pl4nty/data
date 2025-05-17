@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.set_peattribute)("enable_vmm_grow", true)
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.set_peattribute)("disable_seh_limit", true)
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-return mp.LOWFI
+if mp.HSTR_WEIGHT >= 11 then
+  if pehdr.Subsystem == 1 then
+    (mp.changedetectionname)(805306436)
+  else
+    if pehdr.Machine == 34404 then
+      (mp.changedetectionname)(805306435)
+    end
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

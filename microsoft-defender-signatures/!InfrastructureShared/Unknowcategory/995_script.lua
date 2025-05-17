@@ -3,38 +3,54 @@
 
 -- params : ...
 -- function num : 0
-GetRuleInfo = function()
-  -- function num : 0_0
-  local l_1_0 = {}
-  l_1_0.Name = "Block rebooting machine in Safe Mode"
-  l_1_0.Description = "Windows Defender Exploit Guard detected system changes to reboot machine in Safe Mode"
-  l_1_0.NotificationDedupingInterval = 120
-  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
-  return l_1_0
+if peattributes.isdriver == true then
+  return mp.CLEAN
 end
-
-GetMonitoredLocations = function()
-  -- function num : 0_1
-  return HIPS.MONITOR_PROCESSCREATE
+if peattributes.packed == true then
+  return mp.CLEAN
 end
-
-GetPathInclusions = function()
-  -- function num : 0_2
-  local l_3_0 = {}
-  l_3_0["%systemroot%\\system32\\bcdedit.exe"] = 2
-  l_3_0["%systemroot%\\syswow64\\bcdedit.exe"] = 2
-  l_3_0["%systemroot%\\system32\\bootcfg.exe"] = 2
-  l_3_0["%systemroot%\\syswow64\\bootcfg.exe"] = 2
-  return l_3_0
+if peattributes.packersigmatched == true then
+  return mp.CLEAN
 end
-
-GetCommandLineInclusions = function()
-  -- function num : 0_3
-  local l_4_0 = "bootcfg(\\.exe)?[\\s\\\"]+/raw\\s+/a\\s+/safeboot"
-  local l_4_1 = {}
-  l_4_1[l_4_0] = 0
-  l_4_1["bcdedit(\\.exe)?[\\s\\\"]+(-noninteractive\\s+)?(/store\\s.+\\s)?(-|/)set\\s+(([^\\s]+\\s+)|(-encodedcommand\\s+[^\\s]+\\s+))?safeboot"] = 0
-  return l_4_1
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
 end
-
+if peattributes.hasappendeddata == true then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() < 4096 or (mp.getfilesize)() > 5242880 then
+  return mp.CLEAN
+end
+if peattributes.epscn_islast == false then
+  return mp.CLEAN
+end
+if peattributes.lastscn_executable == false then
+  return mp.CLEAN
+end
+if (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3758096384) ~= 3758096384 then
+  return mp.CLEAN
+end
+if peattributes.no_security == false then
+  return mp.CLEAN
+end
+if peattributes.no_resources == true then
+  return mp.CLEAN
+end
+if pehdr.AddressOfEntryPoint < ((pehdr.DataDirectory)[3]).RVA then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 3 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
+  return mp.CLEAN
+end
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if l_0_0.CompanyName ~= "Microsoft Corporation" then
+  return mp.CLEAN
+end
+return mp.LOWFI
 

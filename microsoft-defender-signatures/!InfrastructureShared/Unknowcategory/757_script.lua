@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("Exploit:Win32/RockCandy.B!Lowfi.1") then
-    local l_0_0 = (mp.getfilename)()
-    if (string.find)(l_0_0, "Control.TaskSymbol.1") ~= nil then
-      return mp.LOWFI
-    end
-  end
+if (mp.getfilesize)() > 1048576 then
   return mp.CLEAN
 end
+if #(mp.enum_mpattributesubstring)("SCPT:CVE-2019-1652-1653-A") >= 3 then
+  return mp.INFECTED
+else
+  return mp.CLEAN
+end
+return mp.CLEAN
 

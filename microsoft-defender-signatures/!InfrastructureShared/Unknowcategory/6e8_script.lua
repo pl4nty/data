@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//LOWFI:LUA:Bladabindi") == true then
-  return mp.LOWFI
+if (mp.UfsGetMetadataBool)("ScriptSigDecoded", false) == 0 and "ScriptSigDecoded" == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

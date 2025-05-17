@@ -3,69 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if elfhdr.type ~= 2 and elfhdr.type ~= 3 then
-  return mp.CLEAN
-end
-if elfhdr.phnum ~= 3 or elfhdr.shnum ~= 0 then
-  return mp.CLEAN
-end
-local l_0_0 = 1
-local l_0_1 = 62
-local l_0_2 = 3
-local l_0_3 = elfhdr.ident
-local l_0_4 = (string.byte)(l_0_3, 6)
-if l_0_4 ~= l_0_0 or elfhdr.machine ~= l_0_1 and elfhdr.machine ~= l_0_2 then
-  return mp.CLEAN
-end
-local l_0_5 = nil
-if hstrlog[1] ~= nil and (hstrlog[1]).matched then
-  l_0_5 = (hstrlog[1]).location
-else
-  if hstrlog[2] ~= nil and (hstrlog[2]).matched then
-    l_0_5 = (hstrlog[2]).location
-  else
-    if hstrlog[3] ~= nil and (hstrlog[3]).matched then
-      l_0_5 = (hstrlog[3]).location
-    else
-      if hstrlog[4] ~= nil and (hstrlog[4]).matched then
-        l_0_5 = (hstrlog[4]).location
-      else
-        if hstrlog[5] ~= nil and (hstrlog[5]).matched then
-          l_0_5 = (hstrlog[5]).location
-        else
-          if hstrlog[6] ~= nil and (hstrlog[6]).matched then
-            l_0_5 = (hstrlog[6]).location
-          else
-            if hstrlog[7] ~= nil and (hstrlog[7]).matched then
-              l_0_5 = (hstrlog[7]).location
-            else
-              if hstrlog[8] ~= nil and (hstrlog[8]).matched then
-                l_0_5 = (hstrlog[8]).location
-              else
-                if hstrlog[9] ~= nil and (hstrlog[9]).matched then
-                  l_0_5 = (hstrlog[9]).location
-                else
-                  if hstrlog[10] ~= nil and (hstrlog[10]).matched then
-                    l_0_5 = (hstrlog[10]).location
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
-end
-if l_0_5 == nil then
-  return mp.CLEAN
-end
-local l_0_6 = nil
-for l_0_10 = 1, elfhdr.phnum do
-  l_0_6 = ephdrs[l_0_10]
-  if l_0_6 and l_0_6.type == 1 and l_0_6.vaddr < elfhdr.entry and elfhdr.entry < l_0_6.vaddr + l_0_6.memsz and l_0_6.vaddr + l_0_5 == elfhdr.entry then
-    return mp.INFECTED
-  end
-end
-return mp.CLEAN
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC4: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC5: Overwrote pending register: R1 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R3 in 'AssignReg'
+
+;
+(("    {\n        \"version\": 1,\n        \"environment\": \"XplatTesting\",\n        \"usage\": 2,\n        \"hashType\": 0,\n        \"intThumbs\": [\n            \"83688F2AEF71386E0936C4B3013B07E8E0C796D8427716DD48B2A63D79509129\"\n        ],\n        \"rootThumbs\": [\n            \"847DF6A78497943F27FC72EB93F9A637320A02B561D0A91B09E87A7807ED7C61\",\n            \"9BD0F7CF6ED967519391BCD49A958867B955A60F22DE5B8978474A2FCBAD81A6\"\n        ]\n    }\n   ").LoadDBVar)(("    {\n        \"version\": 1,\n        \"environment\": \"XplatTesting\",\n        \"usage\": 1,\n        \"hashType\": 0,\n        \"intThumbs\": [\n            \"83688F2AEF71386E0936C4B3013B07E8E0C796D8427716DD48B2A63D79509129\"\n        ],\n        \"rootThumbs\": [\n            \"847DF6A78497943F27FC72EB93F9A637320A02B561D0A91B09E87A7807ED7C61\",\n            \"9BD0F7CF6ED967519391BCD49A958867B955A60F22DE5B8978474A2FCBAD81A6\"\n        ]\n    }\n   ").DBVAR_ARRAY_WIDESTRING, "", l_0_0, 1)
+local l_0_1 = {}
+-- DECOMPILER ERROR at PC16: No list found for R1 , SetList fails
+
+-- DECOMPILER ERROR at PC17: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R3 in 'AssignReg'
+
+;
+(("/etc/ssl/certs").LoadDBVar)(("").DBVAR_ARRAY_WIDESTRING, "Linux_CertStore_List", l_0_1, 1)
 

@@ -4,9 +4,8 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_0.ppid, "H")
-;
-(bm.add_action)("SmsAsyncScanEvent", 100)
+if l_0_0 and MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= l_0_0.integrity_level then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

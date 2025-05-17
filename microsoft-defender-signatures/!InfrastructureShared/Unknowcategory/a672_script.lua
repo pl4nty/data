@@ -3,33 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\sethc.exe$") then
   return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoHotKey_+") then
-  return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv") then
-  local l_0_0, l_0_1 = nil, nil
-  if (hstrlog[1]).matched then
-    l_0_0 = ((hstrlog[1]).match_offsets)[3]
-    l_0_1 = (hstrlog[1]).VA + l_0_0
-    local l_0_2 = (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1)
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 8, 4), 1) ~= 3192604835 then
-      return mp.INFECTED
-    end
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 12, 4), 1) ~= 2840226968 then
-      return mp.INFECTED
-    end
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1) ~= 173231257 then
-      return mp.INFECTED
-    end
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 4, 4), 1) ~= 2101925510 then
-      return mp.INFECTED
-    end
-  end
 end
 do
-  return mp.CLEAN
+  if (string.find)(l_0_0, "\\systray.exe$") then
+    local l_0_1 = (versioning.GetOrgID)()
+    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
+      return mp.CLEAN
+    end
+  end
+  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
+  if l_0_3 == nil or #l_0_3 == 0 then
+    return mp.CLEAN
+  end
+  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
+  do
+    if l_0_4 ~= nil then
+      local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
+      if l_0_5 ~= nil and (string.len)(l_0_5) >= 1 then
+        return mp.INFECTED
+      end
+    end
+    return mp.CLEAN
+  end
 end
 

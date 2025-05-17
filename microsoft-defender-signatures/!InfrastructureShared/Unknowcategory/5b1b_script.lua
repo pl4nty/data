@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() < 172032 then
+if peattributes.ismsil and (mp.getfilesize)() < 20480 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

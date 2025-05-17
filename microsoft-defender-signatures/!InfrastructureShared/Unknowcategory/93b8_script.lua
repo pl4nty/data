@@ -7,7 +7,7 @@ local l_0_0 = (mp.GetParentProcInfo)()
 do
   if l_0_0 ~= nil then
     local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "services.exe" then
+    if l_0_1:match("([^\\]+)$") == "svchost.exe" then
       if (versioning.IsSeville)() then
         return mp.INFECTED
       end

@@ -3,22 +3,40 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+local l_0_0 = (bm.get_connection_string)()
+if l_0_0 then
+  local l_0_1 = (string.match)(l_0_0, "DestPort=(%d+)")
+  local l_0_2 = {}
+  l_0_2["80"] = true
+  l_0_2["8080"] = true
+  l_0_2["443"] = true
+  l_0_2["53"] = true
+  l_0_2["21"] = true
+  l_0_2["25"] = true
+  l_0_2["22"] = true
+  l_0_2["389"] = true
+  l_0_2["9"] = true
+  l_0_2["636"] = true
+  l_0_2["1433"] = true
+  l_0_2["1434"] = true
+  l_0_2["1521"] = true
+  l_0_2["9389"] = true
+  l_0_2["8100"] = true
+  l_0_2["23"] = true
+  l_0_2["993"] = true
+  l_0_2["40000"] = true
+  l_0_2["9085"] = true
+  l_0_2["9092"] = true
+  l_0_2["3306"] = true
+  l_0_2["3300"] = true
+  l_0_2["5432"] = true
+  if l_0_2[l_0_1] then
+    return mp.CLEAN
+  else
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1500000 or l_0_0 < 8000 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("system32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("syswow64", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

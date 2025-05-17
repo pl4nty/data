@@ -3,21 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = ((string.lower)((string.sub)(l_0_6.image_path, -15))):match("\\([^\\]+)$")
-    local l_0_8 = {}
-    l_0_8["svchost.exe"] = true
-    l_0_8["taskhostw.exe"] = true
-    l_0_8["taskeng.exe"] = true
-    if l_0_8[l_0_7] then
-      return mp.INFECTED
+local l_0_0 = (Remediation.Threat).Name
+if (string.find)(l_0_0, "Safemode.D", 1, true) then
+  local l_0_1 = (MpCommon.GetPersistContextNoPath)("RegKeyToDelete_safemode")
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    local l_0_7 = (string.match)(l_0_6, "(.*)\\\\")
+    local l_0_8 = (sysio.RegOpenKey)(l_0_7)
+    if l_0_8 ~= nil then
+      (sysio.DeleteRegKey)(l_0_8, nil)
     end
   end
 end
-return mp.CLEAN
 

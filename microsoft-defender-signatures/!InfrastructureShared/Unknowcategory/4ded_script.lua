@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.amd64_image then
+if (mp.get_mpattribute)("SIGATTR:Win32/CompinjWindow") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

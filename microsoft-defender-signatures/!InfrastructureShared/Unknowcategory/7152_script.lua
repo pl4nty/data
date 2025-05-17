@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 4, 4), 1), "<")
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if peattributes.isdll and peattributes.no_security and l_0_0 > 589824 and l_0_0 < 655360 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

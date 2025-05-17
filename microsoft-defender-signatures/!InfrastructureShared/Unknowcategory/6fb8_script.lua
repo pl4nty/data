@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Bayads")
-if (mp.get_mpattribute)("//HSTR:Win32/Bayads!Exc") then
+if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>%w+%.bat$") == nil then
   return mp.CLEAN
 end
 return mp.INFECTED

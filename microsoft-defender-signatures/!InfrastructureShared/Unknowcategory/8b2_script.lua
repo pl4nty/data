@@ -3,34 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SCRIPT:HTML/Meadgive.AE!obj") then
-  local l_0_0 = (string.lower)(tostring(headerpage))
-  local l_0_1 = (string.match)(l_0_0, "value=\"http://%w+%.%a+%.(%a+)/%w+\"")
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC36: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R3 in 'AssignReg'
-
-  local l_0_3 = "date"
-  -- DECOMPILER ERROR at PC38: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC39: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R6 in 'AssignReg'
-
-  for l_0_7 = "download", "online", "party" do
-    -- DECOMPILER ERROR at PC42: Overwrote pending register: R8 in 'AssignReg'
-
-    if "racing" == l_0_1 then
-      return mp.INFECTED
+local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_CONTROL_GUID)
+local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_SCANREASON)
+do
+  if l_0_0 and (string.match)(l_0_1, "9203c2cb%-1dc1%-482d%-967e%-597aff270f0d") then
+    local l_0_4, l_0_5 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_FRAME_URL)
+    if l_0_4 and (string.match)(l_0_5, ":8000/") then
+      if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+        (mp.aggregate_mpattribute)("Context:OfficeFrame")
+      end
+      ;
+      (mp.aggregate_mpattribute)("//MpIsIEVScan")
+      return mp.TRUE
     end
   end
-end
-do
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+  return mp.FALSE
 end
 

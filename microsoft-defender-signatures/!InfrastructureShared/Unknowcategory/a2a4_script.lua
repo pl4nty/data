@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 5 and pevars.epsec == 1 and (pesecs[pevars.epsec]).Name == ".text" and (pesecs[pevars.epsec]).SizeOfRawData >= 237568 and (pesecs[pevars.epsec]).SizeOfRawData <= 393216 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData >= 9216 and (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= 12288 then
-  return mp.INFECTED
+local l_0_0 = nil
+for l_0_4 = mp.SIGATTR_LOG_SZ, 1, -1 do
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+
+  if (sigattr_head[R4_PC6]).matched and ((sigattr_head[R4_PC6]).attribute == 16384 or (sigattr_head[R4_PC6]).attribute == 16385) then
+    l_0_1 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[R4_PC6]).utf8p1)
+    if l_0_1 ~= nil and (sysio.IsFileExists)(l_0_1) then
+      (mp.ReportLowfi)(l_0_1 .. "\000", 3307547556)
+    end
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

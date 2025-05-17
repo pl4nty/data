@@ -3,27 +3,44 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if l_0_0 ~= nil then
-      local l_0_2 = nil
-      -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
-
-      if (string.match)(l_0_0, "winword%.exe.+ /l(.+%.dll)") ~= nil and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)((string.match)(l_0_0, "winword%.exe.+ /l(.+%.dll)"))) then
-        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((string.match)(l_0_0, "winword%.exe.+ /l(.+%.dll)")))
-        return mp.INFECTED
-      end
-    end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+l_0_1 = (string.lower)(l_0_1)
+local l_0_2 = (string.match)(l_0_1, "trustedinstaller binpath\\s*=([^&]+)")
+if (string.find)(l_0_2, "\\servicing\\trustedinstaller.exe", 1, true) then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.GetParentProcInfo)()
+if l_0_3 ~= nil then
+  local l_0_4 = l_0_3.image_path
+  if l_0_4 == "" or l_0_4 == nil then
     return mp.CLEAN
   end
+  l_0_4 = (string.lower)(l_0_4)
+  if (string.find)(l_0_4, ":\\lenovoquickfix\\", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_5 = l_0_3.ppid
+  if l_0_5 == "" or l_0_5 == nil then
+    return mp.CLEAN
+  end
+  local l_0_6 = (mp.GetProcessCommandLine)(l_0_5)
+  if l_0_6 == "" or l_0_6 == nil then
+    return mp.CLEAN
+  end
+  l_0_6 = (string.lower)(l_0_6)
+  if (string.find)(l_0_6, ":\\lenovoquickfix\\", 1, true) then
+    return mp.CLEAN
+  end
+  l_0_2 = (string.match)(l_0_6, "trustedinstaller\\sbinpath\\s*=([^&]+)")
+  if (string.find)(l_0_2, "\\servicing\\trustedinstaller.exe", 1, true) then
+    return mp.CLEAN
+  end
+end
+do
+  return mp.INFECTED
 end
 

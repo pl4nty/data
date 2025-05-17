@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and pehdr.NumberOfSections == 4 then
+if (mp.get_mpattribute)("pea_isexe") and pehdr.NumberOfSections == 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

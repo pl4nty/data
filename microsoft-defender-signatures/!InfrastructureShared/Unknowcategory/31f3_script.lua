@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasstandardentry then
-  return mp.CLEAN
+if pehdr.TimeDateStamp == 0 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

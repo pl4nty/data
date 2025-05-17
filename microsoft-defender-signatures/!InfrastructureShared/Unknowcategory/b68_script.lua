@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Elex")
+(mp.set_mpattribute)("PUA:Block:Cain")
 return mp.INFECTED
 

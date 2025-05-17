@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\mozilla firefox\\", 1, true) then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.get_regval)(pe.REG_EBP) - 4
+local l_0_1 = (mp.readu_u32)((pe.mmap_va)(l_0_0, 4), 1)
+;
+(pe.set_regval)(pe.REG_EBX, l_0_1 + 1)
+return mp.INFECTED
 

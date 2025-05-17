@@ -3,17 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.hasappendeddata then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_1 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+      if (sysio.IsFileExists)(l_0_7) and (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
+        (bm.add_related_file)(l_0_7)
+      end
+    end
+  end
 end
-if (mp.getfilesize)() < 150000 then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 200000 then
-  return mp.CLEAN
-end
-if epcode[1] == 137 and epcode[2] == 224 and epcode[3] == 163 and epcode[8] == 137 and epcode[9] == 232 then
+do
   return mp.INFECTED
 end
-return mp.CLEAN
 

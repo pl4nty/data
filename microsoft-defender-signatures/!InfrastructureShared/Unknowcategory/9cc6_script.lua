@@ -3,12 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
-  l_0_0 = (MpCommon.PathToWin32Path)((string.lower)((this_sigattrlog[10]).utf8p1))
+local l_0_3 = nil
+if (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME) == nil then
+  local l_0_0, l_0_1 = nil
+  if l_0_3 == nil then
+    return mp.CLEAN
+  end
+  l_0_0 = l_0_3:sub(-6)
+  local l_0_2 = nil
+else
+  do
+    -- DECOMPILER ERROR at PC21: Confused about usage of register: R2 in 'UnsetPending'
+
+    if (string.find)((l_0_1:sub(-6)):lower(), ".plist") then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-if (mp.IsKnownFriendlyFile)(l_0_0, true, false) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

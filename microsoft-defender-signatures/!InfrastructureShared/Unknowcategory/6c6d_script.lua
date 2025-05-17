@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MHSTR:MacroJustAutoOpen") and (mp.get_mpattribute)("MHSTR:MacroDownload") then
+if peattributes.ismsil == true and peattributes.isexe == true and (mp.getfilesize)() < 93185 then
   return mp.INFECTED
 end
 return mp.CLEAN

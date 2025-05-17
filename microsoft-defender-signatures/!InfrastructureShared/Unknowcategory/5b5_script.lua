@@ -3,27 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched == false then
-  return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0.command_line)
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, true, false) then
+    (bm.add_related_file)(l_0_6)
+    return mp.INFECTED
+  end
 end
-if (this_sigattrlog[2]).matched == false then
-  return mp.CLEAN
-end
-if (this_sigattrlog[3]).matched == false then
-  return mp.CLEAN
-end
-local l_0_0 = (this_sigattrlog[1]).ppid
-local l_0_1 = (this_sigattrlog[2]).ppid
-local l_0_2 = (this_sigattrlog[3]).ppid
-if l_0_0 ~= l_0_1 then
-  return mp.CLEAN
-end
-local l_0_3, l_0_4 = (bm.get_process_relationships)()
-if #l_0_4 < 2 then
-  return mp.CLEAN
-end
-if (l_0_4[2]).ppid ~= l_0_2 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

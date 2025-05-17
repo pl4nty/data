@@ -3,25 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (hstrlog[1]).VA + 24
-if not (pe.isdynamic_va)(l_0_0) and peattributes.isexe and pehdr.NumberOfSections < 5 then
-  local l_0_1 = (pe.foffset_va)(l_0_0)
-  for l_0_5 = 1, pehdr.NumberOfSections do
-    if (pe.contains_va)(l_0_5, l_0_0) then
-      local l_0_6 = l_0_1 - (pesecs[l_0_5]).PointerToRawData
-      if l_0_6 < 512 or l_0_6 > 4000000 then
-        return mp.CLEAN
-      end
-      ;
-      (mp.readprotection)(false)
-      local l_0_7 = (mp.readfile)(l_0_1 - l_0_6, l_0_6)
-      ;
-      (mp.vfo_add_buffer)((string.reverse)(l_0_7), "[b64mz_reverse]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-      return mp.CLEAN
-    end
-  end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
 end
-do
-  return mp.LOWFI
+if peattributes.no_relocs ~= true then
+  return mp.CLEAN
 end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.lastscn_falign == false then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.epatstartlastsect ~= false then
+  return mp.CLEAN
+end
+if peattributes.hasappendeddata ~= true then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA == 0 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections <= 2 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections >= 5 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

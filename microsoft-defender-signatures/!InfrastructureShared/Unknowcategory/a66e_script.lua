@@ -3,23 +3,38 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched and (this_sigattrlog[5]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[4]).p1)
-  local l_0_2 = (string.lower)((this_sigattrlog[5]).p1)
-  local l_0_3 = (string.lower)((this_sigattrlog[5]).p2)
-  if l_0_0 and (string.find)(l_0_0, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") and l_0_1 and (string.find)(l_0_1, "^%d%d%d+") and l_0_2 and l_0_3 and (string.find)(l_0_2, "^%d%d%d+") and (string.find)(l_0_3, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") then
-    if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    end
-    if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-      (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.CLEAN
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_2 = nil, nil
+  end
+  do
+    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+      local l_0_1, l_0_3 = , (this_sigattrlog[2]).utf8p2
+    end
+    -- DECOMPILER ERROR at PC28: Confused about usage of register: R1 in 'UnsetPending'
+
+    local l_0_4 = nil
+    if (string.find)((string.lower)(l_0_3), "\\program files", 1, true) or (string.find)((string.lower)(l_0_3), ":\\windows\\system", 1, true) then
+      return mp.CLEAN
+    end
+    if l_0_4 ~= nil then
+      local l_0_5 = nil
+      local l_0_6 = nil
+      for l_0_10,l_0_11 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
+        local l_0_7, l_0_8 = , {[".xls"] = true, xlsx = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, xlsm = true}
+        -- DECOMPILER ERROR at PC72: Confused about usage of register: R9 in 'UnsetPending'
+
+        if (string.len)(R9_PC72) > 4 and (sysio.IsFileExists)(R9_PC72) and l_0_8[(string.sub)(R9_PC72, -4)] then
+          (bm.add_related_file)(R9_PC72)
+          return mp.INFECTED
+        end
+      end
+    end
+    do
+      return mp.CLEAN
+    end
+  end
 end
 

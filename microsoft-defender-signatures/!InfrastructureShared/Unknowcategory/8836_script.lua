@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasExpensiveLoop") then
-  return mp.INFECTED
+if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
+  return mp.CLEAN
 end
-if peattributes.dt_error_heur_exit_criteria then
-  return mp.INFECTED
-end
-if (mp.get_mpattribute)("MpHasValidProjPath") then
+if (pe.get_exports)() > 35 then
   return mp.INFECTED
 end
 return mp.CLEAN

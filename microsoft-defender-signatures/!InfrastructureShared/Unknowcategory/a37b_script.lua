@@ -3,7 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.suspicious_dosheader == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true and peattributes.firstsectwritable == true and peattributes.no_relocs == true then
+if pehdr.NumberOfSections == 3 and (pesecs[2]).SizeOfRawData > 1376256 then
+  (pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
+  ;
+  (pe.reemulate)()
+  return mp.INFECTED
+end
+if pehdr.NumberOfSections == 4 and (pesecs[1]).SizeOfRawData > 2359296 and (mp.get_mpattribute)("attrmatch_codepatch_EIP_00000004_EB") then
   return mp.INFECTED
 end
 return mp.CLEAN

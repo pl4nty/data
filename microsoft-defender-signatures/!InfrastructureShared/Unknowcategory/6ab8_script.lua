@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 9 or (hstrlog[1]).VA ~= 4214784 then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 > 2000000 and l_0_0 < 5500000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

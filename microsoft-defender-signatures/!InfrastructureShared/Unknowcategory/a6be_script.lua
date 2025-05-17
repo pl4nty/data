@@ -3,28 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (string.lower)(l_0_0.command_line)
-if (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "\\ccmcache\\", 1, true) or (string.find)(l_0_1, "\\sysvol\\", 1, true) or (string.find)(l_0_1, "\\netlogon\\", 1, true) or (string.find)(l_0_1, " /exectype", 1, true) or (string.find)(l_0_1, "/nologo ", 1, true) then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC108: Unhandled construct in 'MakeBoolean' P3
+
+if (((((hstrlog[1]).matched or (hstrlog[2]).matched or not (hstrlog[4]).matched) and (hstrlog[11]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) + ((hstrlog[10]).matched and 1 or 0) + ((hstrlog[21]).matched and 1 or 0) + ((hstrlog[22]).matched and 1 or 0) + ((hstrlog[23]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
-local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.vbs)")
-if l_0_2 and (sysio.IsFileExists)(l_0_2) then
-  (mp.ReportLowfi)(l_0_2, 1120308759)
-  ;
-  (bm.add_related_file)(l_0_2)
-end
-local l_0_3 = (string.match)(l_0_1, "(%a:\\[^\"]-%.js)")
-if l_0_3 and (sysio.IsFileExists)(l_0_3) then
-  (mp.ReportLowfi)(l_0_3, 1120308759)
-  ;
-  (bm.add_related_file)(l_0_3)
-end
-local l_0_4 = (string.match)(l_0_1, "(%a:\\[^\"]-%.vbe)")
-if l_0_4 and (sysio.IsFileExists)(l_0_4) then
-  (mp.ReportLowfi)(l_0_4, 1120308759)
-  ;
-  (bm.add_related_file)(l_0_4)
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win32/Meterpreter") and peattributes.no_security == true and (mp.getfilesize)() == 16896 then
+if peattributes.no_security == true and pehdr.NumberOfSections > 3 and pehdr.NumberOfSections < 7 and (pesecs[4]).Name == ".pdata" then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

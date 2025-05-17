@@ -3,37 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched or (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
-  local l_0_0, l_0_1 = (bm.get_process_relationships)()
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-      local l_0_8 = (string.lower)(l_0_6.image_path)
-      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
-
-      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
-
-      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
-
-      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
-
-      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
-
-      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
-
-      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
-
-      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
-
-      if (l_0_7 == 1 and (string.find)(l_0_8, "\\cloud drive mapper.exe", 1, true)) or (string.find)(l_0_8, "\\electron.exe", 1, true) then
-        return mp.CLEAN
+local l_0_0 = false
+if (hstrlog[15]).matched and ((hstrlog[16]).matched or (hstrlog[17]).matched or (hstrlog[18]).matched or (hstrlog[19]).matched) then
+  l_0_0 = true
+end
+if (hstrlog[1]).matched and (hstrlog[6]).matched and peattributes.isexe and peattributes.headerchecksum0 and not peattributes.no_comruntime and pehdr.NumberOfSections == 3 and (pesecs[1]).Name == ".text" and (pesecs[2]).Name == ".rsrc" and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" then
+  if (((hstrlog[7]).matched or ((hstrlog[8]).matched or (hstrlog[9]).matched) and ((hstrlog[10]).matched or (hstrlog[11]).matched) and ((hstrlog[12]).matched or (hstrlog[13]).matched))) then
+    if (hstrlog[14]).matched or l_0_0 then
+      return mp.INFECTED
+    else
+      if (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched then
+        return mp.INFECTED
+      else
+        if (hstrlog[20]).matched then
+          return mp.INFECTED
+        else
+          return mp.SUSPICIOUS
+        end
       end
     end
+  else
+    return mp.CLEAN
   end
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
-end
+return mp.CLEAN
 

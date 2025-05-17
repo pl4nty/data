@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 3 and (pesecs[1]).PointerToRawData == 4096 then
+if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 65536 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpEnableCOM")
+(mp.set_mpattribute)("CrossRider")
 return mp.INFECTED
 

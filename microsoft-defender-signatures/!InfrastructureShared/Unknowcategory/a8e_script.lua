@@ -3,21 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_2, l_0_3, l_0_4 = nil
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_1 = nil
-    l_0_1 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), "/([0-9a-f]+)/init.pid$")
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_1 == nil or not (MpCommon.QueryPersistContextNoPath)("docker_create", l_0_1) or not (MpCommon.QueryPersistContextNoPath)("docker_start", l_0_1) then
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if ((string.sub)(l_0_1, -1) == "\\" or (string.find)(l_0_1, " \\ ", 1, true)) and ((string.find)(l_0_1, "-s", 1, true) or (string.find)(l_0_1, "-i", 1, true)) then
   return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil and (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil then
-  local l_0_0 = (this_sigattrlog[2]).utf8p1
-  local l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p1)
-  local l_0_2 = (string.lower)((this_sigattrlog[5]).utf8p1)
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
+  local l_0_2 = (string.lower)((this_sigattrlog[4]).utf8p1)
   local l_0_3 = l_0_2:match("imagename:([^;]+)")
   if not l_0_3 then
     return mp.CLEAN

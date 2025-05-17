@@ -3,24 +3,43 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[5]).matched then
-  local l_0_0, l_0_1 = (bm.get_process_relationships)()
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    if (string.find)((string.lower)(l_0_6.image_path), "\\powershell.exe", 1, true) then
-      (MpCommon.TurnNriOnProcess)(l_0_6.ppid)
-      local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-      local l_0_9 = tonumber(l_0_7)
-      local l_0_10 = tonumber(l_0_8)
-      local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-      local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
-      ;
-      (mp.TriggerScanResource)("ems", l_0_13)
+starts = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  do return (string.sub)(l_1_0, 1, (string.len)(l_1_1)) == l_1_1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+towin32path = function(l_2_0)
+  -- function num : 0_1
+  local l_2_1 = l_2_0
+  if starts((string.lower)(l_2_0), "\\device\\") then
+    l_2_1 = (MpCommon.PathToWin32Path)(l_2_0)
+  end
+  return l_2_1
+end
+
+normalize_path = function(l_3_0)
+  -- function num : 0_2
+  local l_3_1 = towin32path(l_3_0)
+  if l_3_1 == nil then
+    return nil
+  end
+  do
+    if #l_3_1 > 4 then
+      local l_3_5 = l_3_1:sub
+      l_3_5 = l_3_5(l_3_1, 1, 4)
+      if l_3_5 == "\\\\?\\" then
+        local l_3_4 = l_3_1
+        l_3_5 = l_3_5(l_3_4, 5)
+        l_3_1 = l_3_5
+      end
     end
+    local l_3_2 = string.lower
+    local l_3_3 = l_3_1
+    do return l_3_2(l_3_3) end
+    -- DECOMPILER ERROR at PC25: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
   end
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
-end
+
 

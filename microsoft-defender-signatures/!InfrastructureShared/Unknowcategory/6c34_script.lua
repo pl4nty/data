@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_LNK_FILE") and (mp.get_mpattribute)("Exploit:O97M/DDEDownloader.C.2") then
+if (mp.get_mpattribute)("PACKED_WITH:[FunctionPacked]") and (mp.get_mpattribute)("SCRIPT:base64") then
   return mp.INFECTED
 end
 return mp.CLEAN

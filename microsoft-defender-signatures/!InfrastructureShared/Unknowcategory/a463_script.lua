@@ -3,16 +3,29 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_executable_image") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_no_boundimport") and (mp.get_mpattribute)("pea_no_delayimport") and (mp.getfilesize)() >= 696320 and (mp.getfilesize)() < 937984 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2 = nil
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  local l_0_3 = nil
+  local l_0_4 = {[".jse"] = true}
+  for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
+    local l_0_5 = nil
+    -- DECOMPILER ERROR at PC30: Confused about usage of register: R7 in 'UnsetPending'
+
+    if (string.len)(R7_PC30) > 4 and (sysio.IsFileExists)(R7_PC30) and l_0_4[(string.sub)(R7_PC30, -4)] then
+      (bm.add_related_file)(l_0_10)
+      ;
+      (mp.ReportLowfi)(l_0_10, 1992533841)
+    end
+  end
+  return mp.INFECTED
 end
 

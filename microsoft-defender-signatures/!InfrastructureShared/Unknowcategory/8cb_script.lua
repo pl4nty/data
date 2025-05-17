@@ -3,19 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (mp.ispackedwith)("AutoIt_+") and peattributes.epscn_writable and peattributes.lastscn_writable and pehdr.NumberOfSections == 4 and (pesecs[3]).SizeOfRawData > 262144 then
-  local l_0_0 = (pesecs[3]).PointerToRawData + 20480
-  ;
-  (mp.readprotection)(false)
-  local l_0_1 = (mp.readfile)(l_0_0, 16)
-  if l_0_1 == "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" then
-    if (mp.getfilesize)() >= 4194304 then
-      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
+if (Remediation.Threat).Active and (string.match)((Remediation.Threat).Name, "Trojan:Win32/Chanitor") then
+  local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run")
+  if l_0_0 then
+    local l_0_1 = (sysio.RegEnumValues)(l_0_0)
+    for l_0_5,l_0_6 in pairs(l_0_1) do
+      if l_0_6 and (string.match)(l_0_6, "^winlogin$") then
+        local l_0_7 = (sysio.GetRegValueAsString)(l_0_0, l_0_6)
+        if l_0_7 and (string.match)((string.lower)(l_0_7), "\\windows\\winlogin.exe$") then
+          l_0_7 = (string.lower)(l_0_7)
+          ;
+          (sysio.DeleteRegValue)(l_0_0, l_0_6)
+          ;
+          (Remediation.BtrDeleteFile)(l_0_7)
+        end
+      end
     end
-    return mp.INFECTED
   end
-end
-do
-  return mp.CLEAN
 end
 

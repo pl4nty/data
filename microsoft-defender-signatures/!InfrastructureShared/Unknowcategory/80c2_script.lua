@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.match)(l_0_0.image_path, "\\([^\\]+)$")
-    l_0_1 = (string.lower)(l_0_1)
-    if l_0_1 == "msiexec.exe" then
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if mp.HSTR_CALLER_SMS == l_0_0 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("HSTR:VirTool:Win32/Empire.B")
+return mp.LOWFI
 

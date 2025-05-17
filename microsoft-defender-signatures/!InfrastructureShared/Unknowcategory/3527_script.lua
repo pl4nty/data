@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
+if not (mp.get_mpattribute)("SIGATTR:DelphiFile") then
   return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

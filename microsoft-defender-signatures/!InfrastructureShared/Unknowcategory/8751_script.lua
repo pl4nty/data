@@ -4,12 +4,11 @@
 -- params : ...
 -- function num : 0
 do
-  if peattributes.isdll == true and peattributes.hasexports == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    if l_0_0 ~= nil and #l_0_0 > 0 and (mp.IsTrustedFile)() then
-      return mp.CLEAN
+  if (mp.get_mpattribute)("pea_isdll") and (pe.get_exports_count)() <= 4 and (pe.get_exports_count)() >= 1 then
+    local l_0_0 = (pe.get_imports)()
+    if l_0_0 <= 4 and l_0_0 >= 1 then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

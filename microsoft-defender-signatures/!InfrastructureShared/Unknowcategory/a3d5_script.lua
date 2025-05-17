@@ -3,23 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -15))
-if l_0_0 == "\\appvclient.exe" then
-  return mp.CLEAN
-end
-local l_0_1 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_1 = (this_sigattrlog[1]).utf8p2
-end
-local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-    ;
-    (bm.add_related_file)(l_0_7)
-  end
-end
-do
+if (pe.mmap_va)(pevars.sigaddr + 2, 4) == "‡ì\004\000" or (pe.mmap_va)(pevars.sigaddr + 2, 4) == "\0005\f\000" or (pe.mmap_va)(pevars.sigaddr + 1, 1) == "\255" or (pe.mmap_va)(pevars.sigaddr + 1, 1) == "\254" then
+  (pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 11, "\235")
+  ;
+  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
   return mp.INFECTED
 end
+return mp.CLEAN
 

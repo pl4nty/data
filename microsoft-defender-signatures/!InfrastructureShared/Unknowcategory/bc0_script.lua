@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Xadupi")
+(mp.set_mpattribute)("ChangeEPtoExport")
 return mp.INFECTED
 

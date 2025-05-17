@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil and (string.find)(l_0_0.image_path, "java", -4, true) then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 10240000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

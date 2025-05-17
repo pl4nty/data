@@ -3,7 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 1000000 and (mp.getfilesize)() < 2000000 and pehdr.Machine == 332 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).Size < 256 and pehdr.NumberOfSections == 4 then
+local l_0_0 = (mp.GetScannedPPID)()
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if not l_0_1 or #l_0_1 <= 60 then
+  return mp.CLEAN
+end
+l_0_1 = (string.gsub)((string.lower)(l_0_1), "`", "")
+if (string.find)(l_0_1, "pipeclient", 1, true) and (string.find)(l_0_1, "pipewriter", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

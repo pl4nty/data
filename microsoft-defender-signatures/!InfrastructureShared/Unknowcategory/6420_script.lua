@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:JSUtilsFramework")
-if mp.HSTR_WEIGHT >= 7 then
+if peattributes.ismsil and peattributes.isexe and peattributes.no_security then
   return mp.INFECTED
 end
 return mp.CLEAN

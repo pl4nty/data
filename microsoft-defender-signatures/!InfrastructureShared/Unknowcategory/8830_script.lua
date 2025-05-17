@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+if not peattributes.no_resources and (pe.contains_va)(3, (hstrlog[1]).VA) and (pesecs[3]).Name == ".data" then
   return mp.INFECTED
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345pdb")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345pdb")
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,17 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
-      if (versioning.IsSeville)() then
-        return mp.INFECTED
-      end
-      return mp.LOWFI
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size
+if peattributes.no_security == true and l_0_0 >= 32768 and l_0_0 <= 655360 and (l_0_1 >= 56 or pehdr.SizeOfImage <= l_0_1) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

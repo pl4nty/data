@@ -3,21 +3,8 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
-
-  ;
-  (bm.add_related_file)(l_0_0)
+if (mp.get_mpattribute)("NID:Win32/Racealer.P1") or (mp.get_mpattribute)("NID:Win32/Racealer.P2") and (mp.getfilesize)() >= 200000 and (mp.getfilesize)() <= 1200000 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

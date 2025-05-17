@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 == nil then
-  return mp.CLEAN
+if (mp.ispackedwith)("UPX_+") then
+  (mp.set_mpattribute)("Lua:FileIsPackedWithUPX")
 end
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-if (string.match)(l_0_0, "advfirewall firewall add rule name=.+program=.+\\explorer.exe") then
+if peattributes.packersigmatched then
+  (mp.set_mpattribute)("Lua:FileIsPackedWithPackerSigMatched")
+end
+if peattributes.packed then
   return mp.INFECTED
 end
 return mp.CLEAN

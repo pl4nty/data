@@ -3,28 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = ""
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+  l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
 end
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (string.match)((this_sigattrlog[1]).utf8p1, "%.scr$") == nil then
-  return mp.CLEAN
-end
-if (mp.IsKnownFriendlyFile)(l_0_0, true, true) == true then
-  return mp.CLEAN
-end
-local l_0_1 = {}
-l_0_1["multitip.exe"] = true
-l_0_1["oawrapper.exe"] = true
-l_0_1["kindle.exe"] = true
-l_0_1["mysqlworkbench.exe"] = true
-l_0_1["360se.exe"] = true
-l_0_1["silhouette studio.exe"] = true
-l_0_1["scrivener.exe"] = true
-l_0_1["java.exe"] = true
-l_0_1["scratch 2.exe"] = true
-if l_0_1[(string.lower)(l_0_0:match("\\([^\\]+)$"))] then
-  return mp.CLEAN
+if l_0_0 then
+  if not (string.match)(l_0_0, ".blf$") or (string.find)(l_0_0, "}.tm.blf", 1, true) or (string.find)(l_0_0, "}.txr.blf", 1, true) or (string.find)(l_0_0, "\\qiyi\\", 1, true) or (string.find)(l_0_0, "\\iqiyi", 1, true) then
+    return mp.CLEAN
+  else
+    ;
+    (bm.add_related_string)("SuspClfsAccess_CLFS", tostring(l_0_0), bm.RelatedStringBMReport)
+  end
 end
 return mp.INFECTED
 

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pehdr.NumberOfSections == 3 or pehdr.NumberOfSections == 4) then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "websettings.xml.rels") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattributeex)("FOP:GoLang32", pevars.sigaddr)
-return mp.CLEAN
+if (mp.get_mpattribute)("MpCPlApplet") then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (nri.GetHttpCommand)() ~= nri.HTTP_POST then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 24576 then
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)((nri.GetHttpRequestHeader)("User-Agent"))
-if l_0_0 == "winhttp" then
-  (nri.AddTelemetry)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH))
+;
+(mp.readprotection)(false)
+local l_0_1 = tostring((mp.readfile)(0, l_0_0))
+l_0_1 = (string.lower)(l_0_1)
+if (string.find)(l_0_1, "c%z:%z\\%zc%zo%zs%zu%zv%z\\%zw%ze%zg%ze%zr%zb%z\\%z.+%.%ze%zx%ze") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

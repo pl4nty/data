@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 and (hstrlog[1]).matched then
-  return mp.INFECTED
+do
+  if peattributes.isdll and peattributes.hasexports then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 409600 and l_0_0 < 716800 and (pe.get_exports_count)() == 9 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("HSTR:TrojanDownloader:Win32/Lerspeng")
-end
-return mp.CLEAN
 

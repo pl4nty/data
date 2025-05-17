@@ -3,19 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[1]).matched then
-  l_0_0 = (this_sigattrlog[1]).utf8p2
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_0 = (this_sigattrlog[2]).utf8p2
-  end
+local l_0_0 = (pe.get_regval)(pe.REG_EBP)
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 8)
+local l_0_2 = (mp.bitor)((string.byte)(l_0_1, 3), 4294967040)
+l_0_1 = (pe.mmap_va)((mp.bitand)(l_0_0 + l_0_2, 4294967295), 4)
+local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1
+l_0_1 = (pe.mmap_va)(l_0_3, 4)
+if (mp.readu_u32)(l_0_1, 1) == 707406378 then
+  return mp.SUSPICIOUS
 end
-if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-  l_0_0 = (mp.ContextualExpandEnvironmentVariables)(l_0_0)
-  if (sysio.IsFileExists)(l_0_0) and (mp.IsKnownFriendlyFile)(l_0_0, true, false) == false then
-    (bm.add_related_file)(l_0_0)
-  end
-end
-return mp.INFECTED
+return mp.CLEAN
 

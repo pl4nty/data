@@ -3,20 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_1 = nil
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
-    local l_0_0, l_0_2 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), nil
-    ;
-    (bm.add_related_file)(l_0_0)
-  end
-  do
-    if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp1 ~= nil then
-      local l_0_3 = nil
-      ;
-      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1))
-    end
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = l_0_0.CompanyName
+  local l_0_2 = l_0_0.ProductName
+  local l_0_3 = {}
+  l_0_3["Check Update"] = ""
+  l_0_3.cas = ""
+  l_0_3.errorcheck = ""
+  l_0_3.smss = ""
+  l_0_3.twain_64 = ""
+  l_0_3.w32srv = ""
+  l_0_3.w32upd = ""
+  if l_0_1 == "Hewlett-Packard Company" and l_0_3[l_0_2] then
     return mp.INFECTED
   end
+end
+do
+  return mp.CLEAN
 end
 

@@ -3,63 +3,61 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R1 in 'AssignReg'
-
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  local l_0_1, l_0_3 = nil, nil
-  l_0_1 = (this_sigattrlog[3]).utf8p2
-  local l_0_0 = nil
-else
-  do
-    do
-      if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-        local l_0_2 = (this_sigattrlog[4]).utf8p2
-      end
-      local l_0_4 = nil
-      -- DECOMPILER ERROR at PC51: Confused about usage of register: R2 in 'UnsetPending'
-
-      if (bm.get_imagepath)() ~= nil and (string.lower)((string.sub)((bm.get_imagepath)(), -50)) ~= nil and (string.find)((string.lower)((string.sub)((bm.get_imagepath)(), -50)), "\\root\\integration\\integrator.exe", 1, true) then
-        return mp.CLEAN
-      end
-      -- DECOMPILER ERROR at PC67: Confused about usage of register: R1 in 'UnsetPending'
-
-      if (this_sigattrlog[4]).utf8p1 and (string.lower)((string.sub)((this_sigattrlog[4]).utf8p1, -3)) == "dll" then
-        if l_0_4 then
-          local l_0_5 = nil
-          if (string.lower)((string.match)(l_0_4, "\\([^\\]+)$")) ~= nil then
-            local l_0_6 = nil
-            local l_0_7 = nil
-            if ({["xapauthenticodesip.dll"] = "\\microsoft silverlight\\", ["wintrust.dll"] = "\\windows\\system32\\", ["wshext.dll"] = "\\windows\\system32\\", ["iiscertprovider.dll"] = "\\windows\\system32\\", ["emet_ce64.dll"] = "\\program files\\emet", ["emet_ce.dll"] = "\\program files\\emet", ["mscorsecimpl.dll"] = "\\windows\\microsoft.net\\framework", ["mcps.dll"] = "\\office1"})[(string.lower)((string.match)(l_0_4, "\\([^\\]+)$"))] ~= nil then
-              local l_0_8 = nil
-              -- DECOMPILER ERROR at PC112: Confused about usage of register: R6 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC113: Confused about usage of register: R5 in 'UnsetPending'
-
-              if (mp.ContextualExpandEnvironmentVariables)(l_0_4) ~= nil and (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_4)) ~= nil and (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_4)), ({["xapauthenticodesip.dll"] = "\\microsoft silverlight\\", ["wintrust.dll"] = "\\windows\\system32\\", ["wshext.dll"] = "\\windows\\system32\\", ["iiscertprovider.dll"] = "\\windows\\system32\\", ["emet_ce64.dll"] = "\\program files\\emet", ["emet_ce.dll"] = "\\program files\\emet", ["mscorsecimpl.dll"] = "\\windows\\microsoft.net\\framework", ["mcps.dll"] = "\\office1"})[(string.lower)((string.match)(l_0_4, "\\([^\\]+)$"))], 1, true) then
-                return mp.CLEAN
-              end
-            end
-          end
-          do
-            local l_0_9 = nil
-            for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
-              local l_0_10, l_0_11 = nil
-              -- DECOMPILER ERROR at PC132: Confused about usage of register: R9 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC143: Confused about usage of register: R9 in 'UnsetPending'
-
-              if (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(({["xapauthenticodesip.dll"] = "\\microsoft silverlight\\", ["wintrust.dll"] = "\\windows\\system32\\", ["wshext.dll"] = "\\windows\\system32\\", ["iiscertprovider.dll"] = "\\windows\\system32\\", ["emet_ce64.dll"] = "\\program files\\emet", ["emet_ce.dll"] = "\\program files\\emet", ["mscorsecimpl.dll"] = "\\windows\\microsoft.net\\framework", ["mcps.dll"] = "\\office1"})[(string.lower)((string.match)(l_0_4, "\\([^\\]+)$"))])) then
-                (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(({["xapauthenticodesip.dll"] = "\\microsoft silverlight\\", ["wintrust.dll"] = "\\windows\\system32\\", ["wshext.dll"] = "\\windows\\system32\\", ["iiscertprovider.dll"] = "\\windows\\system32\\", ["emet_ce64.dll"] = "\\program files\\emet", ["emet_ce.dll"] = "\\program files\\emet", ["mscorsecimpl.dll"] = "\\windows\\microsoft.net\\framework", ["mcps.dll"] = "\\office1"})[(string.lower)((string.match)(l_0_4, "\\([^\\]+)$"))]))
-              end
-            end
-            do
-              do return mp.INFECTED end
-              return mp.CLEAN
-            end
-          end
-        end
-      end
-    end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+if l_0_1 ~= "cmd.exe" and not (mp.get_mpattribute)("BM_CMD_EXE") then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+local l_0_3 = (mp.GetProcessCommandLine)(l_0_2)
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+local l_0_4 = (string.len)(l_0_3)
+if l_0_4 < 1000 then
+  return mp.CLEAN
+end
+do
+  if l_0_4 > 1000 then
+    local l_0_5 = 1000
   end
+  local l_0_6 = nil
+  local l_0_7 = 0
+  local l_0_8 = 0
+  local l_0_9 = 0
+  local l_0_10 = 0
+  local l_0_11 = 0
+  if l_0_11 >= 30 then
+    (mp.set_mpattribute)("LUA:Dosfuscator2Semicolon")
+  end
+  local l_0_12 = true
+  _ = (string.gsub)((string.gsub)(l_0_3, "%^[&<>%^|\\]", ""), "%^", "", 30)
+  if l_0_7 >= 30 then
+    (mp.set_mpattribute)("LUA:DosfuscatorExp")
+    l_0_12 = true
+  end
+  if l_0_8 > 10 then
+    (mp.set_mpattribute)("LUA:DosfuscatorSharp")
+    l_0_12 = true
+  end
+  if l_0_9 > 30 then
+    (mp.set_mpattribute)("LUA:DosfuscatorComma")
+    l_0_12 = true
+  end
+  if l_0_10 > 30 then
+    (mp.set_mpattribute)("LUA:DosfuscatorParenthesis")
+    l_0_12 = true
+  end
+  if l_0_12 then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

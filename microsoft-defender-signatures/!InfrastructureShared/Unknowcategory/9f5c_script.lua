@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not peattributes.ismsil then
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 8192 and (mp.getfilesize)() < 32768 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-local l_0_0 = (hstrlog[3]).VA
-local l_0_1 = (hstrlog[4]).VA
-if l_0_1 < l_0_0 then
-  return mp.CLEAN
-end
-local l_0_2 = (pe.mmap_va)(l_0_0, l_0_1 - l_0_0 + 10)
-;
-(mp.vfo_add_buffer)(l_0_2, "[ShellDump]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.CLEAN
 

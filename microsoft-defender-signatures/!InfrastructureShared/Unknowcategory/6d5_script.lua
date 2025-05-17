@@ -3,6 +3,5 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("Lua:RdEgos")
-return mp.CLEAN
+return mp.INFECTED
 

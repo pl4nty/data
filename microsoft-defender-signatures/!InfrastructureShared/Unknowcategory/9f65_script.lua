@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)(l_0_0, "\\windows fabric", 1, true) or (string.find)(l_0_0, "\\microsoft.net", 1, true) or (string.find)(l_0_0, "\\binn\\polybase\\mpdwsvc.exe", 1, true) then
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil or l_0_0 == "" then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "cymulate", 1, true) or (string.find)(l_0_0, "edr_attack", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

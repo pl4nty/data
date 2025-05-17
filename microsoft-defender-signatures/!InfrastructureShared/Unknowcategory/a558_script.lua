@@ -3,31 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
-
-  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
-
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasGithubUrl") then
-      (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromGithub") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromGithub", 3600)
-        return mp.INFECTED
-      end
+local l_0_0 = (mp.GetScannedPPID)()
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_1 = (string.gsub)((string.lower)(l_0_1), "%^", "")
+if (string.find)(l_0_1, "win32_shadowcopy).delete() && cmd /c echo %", 1, true) or (string.find)(l_0_1, "-enablecontrolledfolderaccess 0 && cmd /c echo %", 1, true) then
+  local l_0_2 = (mp.GetParentProcInfo)()
+  if l_0_2 ~= nil then
+    local l_0_3 = (string.lower)(l_0_2.image_path)
+    if (string.find)(l_0_3, "\\windows\\system32\\", 1, true) and l_0_3:match("([^\\]+)$") == "dllhost.exe" then
+      return mp.INFECTED
     end
   end
+end
+do
   return mp.CLEAN
 end
 

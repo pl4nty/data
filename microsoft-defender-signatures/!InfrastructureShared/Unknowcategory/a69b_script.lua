@@ -3,37 +3,46 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "\\msert.exe", -10, true) then
-    l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
-    if l_0_0 and (mp.IsKnownFriendlyFile)(l_0_0, false, false) then
-      return mp.CLEAN
-    end
-  end
-end
-local l_0_1 = (this_sigattrlog[3]).utf8p2
-if not l_0_1 then
+if peattributes.lastscn_falign ~= true then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "%common_appdata%", 1, true) then
-  l_0_1 = (string.gsub)(l_0_1, "%%common_appdata%%", "\\ProgramData")
-end
-local l_0_2 = (sysio.GetCommandLineFromService)("windefend")
-if not l_0_2 then
+if peattributes.no_relocs ~= false then
   return mp.CLEAN
 end
-local l_0_3, l_0_4 = (string.find)(l_0_2, ":\\", 1, true)
-local l_0_5 = -1
-if (string.byte)(l_0_2, -1) == 34 then
-  l_0_5 = -2
-end
-l_0_2 = (string.sub)(l_0_2, l_0_4, l_0_5)
-if not l_0_2 then
+if peattributes.epinfirstsect ~= true then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, l_0_2, 1, true) then
+if peattributes.isexe == true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).Size ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.MajorImageVersion ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.MinorImageVersion ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.MajorLinkerVersion ~= 5 then
+  return mp.CLEAN
+end
+if pehdr.MinorLinkerVersion ~= 12 then
+  return mp.CLEAN
+end
+if pehdr.ImageBase ~= 268435456 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 104 then
   return mp.CLEAN
 end
 return mp.INFECTED

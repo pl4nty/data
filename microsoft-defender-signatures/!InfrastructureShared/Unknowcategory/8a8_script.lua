@@ -3,27 +3,23 @@
 
 -- params : ...
 -- function num : 0
-check_expensive_loop = function(l_1_0, l_1_1, l_1_2)
-  -- function num : 0_0
-  if not l_1_0 or not l_1_1 or not l_1_2 then
-    return nil
-  end
-  local l_1_3 = (pe.vm_search)(l_1_0, l_1_0 + l_1_1, "\226", nil, pe.VM_SEARCH_FOP)
-  if l_1_3 == 4294967295 then
-    return nil
-  end
-  local l_1_4, l_1_5 = (mp.bsplit)((mp.readu_u16)((pe.mmap_va)(l_1_3, 2), 1), 8)
-  local l_1_6 = l_1_3 - (mp.bsplit)((mp.bitnot)(l_1_5), 8) - 4
-  l_1_6 = (pe.vm_search)(l_1_6, l_1_6 + 5, "\185", nil, pe.VM_SEARCH_FOP)
-  if l_1_6 == 4294967295 then
-    return nil
-  end
-  local l_1_7 = (pe.mmap_va)(l_1_6 + 1, 4)
-  l_1_7 = (mp.readu_u32)(l_1_7, 1)
-  if l_1_7 <= l_1_2 then
-    return nil
-  end
-  return l_1_3
+if peattributes.isdll then
+  return mp.CLEAN
 end
-
+if peattributes.isdamaged then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if l_0_1:find("\\downloads\\", 1, true) then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_2 == "utorrent.exe" or l_0_2 == "utweb.exe" then
+      return mp.INFECTED
+    end
+  end
+end
+do
+  return mp.CLEAN
+end
 

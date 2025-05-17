@@ -6,11 +6,11 @@
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
     local l_0_0, l_0_1 = nil
   else
   end
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or (string.match)((this_sigattrlog[2]).utf8p2, "%d+%.%d+%.%d+%.%d+") then
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or (string.find)((this_sigattrlog[2]).utf8p1, ".config/autostart", 1, true) then
     return mp.INFECTED
   end
   return mp.CLEAN

@@ -3,26 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = 56
+local l_0_1 = (hstrlog[3]).VA
+local l_0_2 = (hstrlog[4]).VA
+l_0_1 = (mp.bitor)(pehdr.ImageBase, l_0_1)
+l_0_2 = (mp.bitor)(pehdr.ImageBase, l_0_2)
+if not (pe.contains_va)(1, l_0_1) or not (pe.contains_va)(1, l_0_2) then
+  return mp.SUSPICIOUS
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if (string.sub)(l_0_1, 1, 7) == "msiexec" then
-  local l_0_2 = (mp.GetParentProcInfo)()
-  if l_0_2 ~= nil then
-    local l_0_3 = (string.lower)(l_0_2.image_path)
-    local l_0_4 = ((string.sub)(l_0_3, -15)):match("\\([^\\]+)$")
-    local l_0_5 = {}
-    l_0_5["svchost.exe"] = true
-    l_0_5["taskeng.exe"] = true
-    l_0_5["taskhostw.exe"] = true
-    if l_0_5[l_0_4] then
-      return mp.INFECTED
-    end
-  end
-end
-do
-  return mp.CLEAN
-end
+local l_0_3 = "HSTR:VirTool:Win32/DelfInject.W.info_" .. (string.format)("%.08x", l_0_1) .. "_" .. (string.format)("%.08x", l_0_2 + l_0_0)
+;
+(mp.set_mpattribute)(l_0_3)
+return mp.SUSPICIOUS
 

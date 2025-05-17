@@ -3,21 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil and (MpCommon.GetPersistContextCountNoPath)("Lua:MSIL/Quiltran.D") > 0 then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1 = (MpCommon.GetPersistContextNoPath)("Lua:MSIL/Quiltran.D")
-  if l_0_1 then
-    for l_0_5,l_0_6 in ipairs(l_0_1) do
-      if (string.find)(l_0_0, l_0_6) then
-        (bm.add_action)("EmsScan", 3000)
-        return mp.INFECTED
-      end
-    end
+if (bm.GetSignatureMatchDuration)() > 80000000 then
+  return mp.CLEAN
+end
+if (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
+  local l_0_0, l_0_1 = (string.match)((this_sigattrlog[2]).utf8p1, ";targetprocessp(pid:%d%d+):(%d%d%d%d+)$")
+  local l_0_2, l_0_3 = (string.match)((this_sigattrlog[3]).utf8p1, ";targetprocessp(pid:%d%d+):(%d%d%d%d+)$")
+  if l_0_0 == l_0_2 and l_0_1 == l_0_3 then
+    local l_0_4 = (string.format)("%s,ProcessStart:%s", l_0_0, l_0_1)
+    ;
+    (bm.trigger_sig)("ProcessInjectedBy", "BMGenCodeInjector.C", l_0_4)
   end
 end
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+  return mp.CLEAN
 end
 

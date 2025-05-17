@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[2]).Name == ".sedata" and (pesecs[2]).Characteristics == 1744830496 then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("MpSimulateParanoid")
+;
+(mp.set_mpattribute)("MpEnableCOM")
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
+;
+(pe.reemulate)()
 return mp.CLEAN
 

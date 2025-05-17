@@ -3,40 +3,29 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched then
-  local l_0_0, l_0_2 = nil, nil
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = nil
+if (this_sigattrlog[5]).matched then
+  l_0_2 = (this_sigattrlog[5]).image_path
 else
-  do
-    do return mp.CLEAN end
-    if (this_sigattrlog[3]).matched then
-      local l_0_1, l_0_3 = , (this_sigattrlog[3]).timestamp
-    else
-      do
-        do return mp.CLEAN end
-        -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC24: Confused about usage of register: R1 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC26: Confused about usage of register: R1 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
-
-        if l_0_3 < l_0_1 or l_0_3 - l_0_1 > 50000000 then
-          return mp.CLEAN
-        end
-        local l_0_4 = nil
-        if MpCommon.SECURITY_MANDATORY_HIGH_RID < ((bm.get_current_process_startup_info)()).integrity_level then
-          return mp.CLEAN
-        end
-        local l_0_5 = nil
-        if ((MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[3]).ppid)).IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-          return mp.INFECTED
-        end
-        return mp.CLEAN
-      end
+  if (this_sigattrlog[6]).matched then
+    l_0_2 = (this_sigattrlog[6]).image_path
+  end
+end
+if l_0_2 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_1) do
+    if l_0_7.image_path == l_0_2 then
+      local l_0_8, l_0_9 = (string.match)(l_0_7.ppid, "pid:(%w+),ProcessStart:(%w+)")
+      local l_0_10 = tonumber(l_0_8)
+      local l_0_11 = tonumber(l_0_9)
+      local l_0_12, l_0_13 = (mp.bsplit)(l_0_11, 32)
+      local l_0_14 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_10, l_0_12, l_0_13)
+      ;
+      (mp.TriggerScanResource)("ems", l_0_14)
     end
   end
+end
+do
+  return mp.INFECTED
 end
 

@@ -3,12 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
+
+if (peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096448) or (pesecs[pehdr.NumberOfSections]).Characteristics == 3791650816 then
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\184\r\024\141>\144")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+return mp.CLEAN
 

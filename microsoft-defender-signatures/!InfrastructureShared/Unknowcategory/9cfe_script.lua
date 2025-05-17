@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (mp.getfilesize)() < 6146 and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if (mp.get_mpattribute)("BM_TORRENT_FILE") and (string.find)((string.lower)((mp.getfilename)()), "msoffice", 1, true) ~= nil and (string.find)((string.lower)((mp.getfilename)()), "activate", 1, true) ~= nil then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

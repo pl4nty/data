@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Active then
-  for l_0_3,l_0_4 in pairs((Remediation.Threat).Resources) do
-    if l_0_4.Schema == "file" and not (string.match)((Remediation.Threat).Name, "^Virus:WinNT/Simda") then
-      (Remediation.BtrDeleteFile)(l_0_4.Path)
+local l_0_0 = (mp.getfilesize)()
+do
+  if l_0_0 == 47104 or l_0_0 == 47574 or l_0_0 == 48128 then
+    local l_0_1 = (string.lower)((mp.getfilename)())
+    if (string.find)(l_0_1, "%-%>%(ole stream") ~= nil then
+      return mp.INFECTED
     end
   end
+  return mp.CLEAN
 end
 

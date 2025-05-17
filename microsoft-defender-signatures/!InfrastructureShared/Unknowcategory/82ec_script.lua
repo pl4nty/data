@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not (hstrlog[2]).matched and not (hstrlog[3]).matched then
-  return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
+    local l_0_1 = (l_0_0.image_path):lower()
+    if (string.find)(l_0_1, "\\program files", 1, true) == nil then
+      return mp.CLEAN
+    end
+  end
+  return mp.INFECTED
 end
-if not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:NSIS_Installer") or (mp.get_mpattribute)("HSTR:NSIS.gen!A") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 196418 then
+  return mp.CLEAN
+end
+if not peattributes.dt_error_heur_exit_criteria then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

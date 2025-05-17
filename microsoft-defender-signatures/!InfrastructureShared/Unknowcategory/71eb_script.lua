@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched or (hstrlog[2]).matched) and ((hstrlog[3]).matched or (hstrlog[4]).matched) then
+if (peattributes.isvbnative == true and pehdr.NumberOfSections == 3) or peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

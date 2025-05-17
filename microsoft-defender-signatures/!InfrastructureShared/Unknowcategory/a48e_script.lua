@@ -3,29 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
+local l_0_0 = (pe.get_netmetadata)()
+local l_0_1 = l_0_0.usheap_RVA
+local l_0_2 = l_0_0.usheap_size
+local l_0_3 = l_0_1 + pehdr.ImageBase
+local l_0_4 = (pe.vm_search)(l_0_3, l_0_3 + 80, "\144\" \v0-9A-Za-z/+\144\000", nil, pe.VM_SEARCH_BM)
+if l_0_4 == 4294967295 then
   return mp.CLEAN
 end
-if epcode[1] ~= 80 then
+local l_0_5 = (pe.vm_search)(l_0_4 + 8, l_0_4 + l_0_2, "\000\000\144\000", nil, pe.VM_SEARCH_BM)
+if l_0_5 == 4294967295 then
   return mp.CLEAN
 end
-if epcode[2] ~= 235 then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.ImageBase ~= 268435456 then
-  return mp.CLEAN
-end
-if peattributes.hasexports ~= false then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).Size == 0 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 0 then
-  return mp.CLEAN
-end
+local l_0_6 = l_0_5 - l_0_4
+;
+(mp.readprotection)(false)
+local l_0_7 = (pe.mmap_va)(l_0_4, l_0_6)
+;
+(mp.vfo_add_buffer)(l_0_7, "[ldstr_msil]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 return mp.INFECTED
 

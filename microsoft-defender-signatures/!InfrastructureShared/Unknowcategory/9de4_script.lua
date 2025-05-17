@@ -3,16 +3,28 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_no_security") and peattributes.has_msilresources then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+  if (this_sigattrlog[3]).matched then
+    local l_0_0 = nil
+  else
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
+      local l_0_1, l_0_2 = (this_sigattrlog[4]).utf8p1
+    end
+    -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC32: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil then
+      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_1), 2220734309)
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 

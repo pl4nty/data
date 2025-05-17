@@ -3,58 +3,47 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 12288 then
-  return mp.CLEAN
-end
-local l_0_1, l_0_2 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1 == nil or (string.len)(l_0_1) < 10 then
-  return mp.CLEAN
-end
-if l_0_2 == nil or (string.len)(l_0_2) < 5 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_2, "->", 1, true) == nil then
-  return mp.CLEAN
-end
-local l_0_3 = l_0_2:sub(-4)
-if l_0_3 == ".lnk" then
-  local l_0_4 = {}
-  l_0_4[".zip->"] = "%.zip%->.+"
-  l_0_4[".rar->"] = "%.rar%->.+"
-  l_0_4[".7z->"] = "%.7z%->.+"
-  l_0_4[".iso->"] = "%.iso%->.+"
-  l_0_4[".arj->"] = "%.arj%->.+"
-  l_0_4[".gz->"] = "%.gz%->.+"
-  l_0_4[".ace->"] = "%.ace%->.+"
-  l_0_4[".z->"] = "%.z%->.+"
-  l_0_4[".xz->"] = "%.xz%->.+"
-  for l_0_8,l_0_9 in pairs(l_0_4) do
-    if (string.find)(l_0_2, l_0_8, 1, true) then
-      (mp.set_mpattribute)("LUA:ElenqueyInArchive")
-      local l_0_10 = (string.match)(l_0_2, l_0_9)
-      if l_0_10 == nil or l_0_10:len() < 12 then
-        return mp.CLEAN
+if peattributes.isdll and pehdr.Machine == 332 and peattributes.hasexports and ((pehdr.DataDirectory)[1]).Size ~= 0 and not peattributes.isappcontainer and not peattributes.dmg_truncated and not (mp.get_mpattribute)("Clean:DllSSPExport") then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 < 10000 or l_0_0 > 1000000 then
+    return mp.CLEAN
+  end
+  local l_0_1 = ((pehdr.DataDirectory)[1]).RVA
+  ;
+  (mp.readprotection)(false)
+  local l_0_2 = (mp.readfile)((pe.foffset_rva)(l_0_1), 36)
+  local l_0_3 = (mp.readu_u32)(l_0_2, 25)
+  if l_0_3 >= 4 and l_0_3 <= 30 then
+    local l_0_4 = (mp.readu_u32)(l_0_2, 33)
+    local l_0_5 = 20
+    local l_0_6 = 0
+    for l_0_10 = 0, l_0_3 - 1 do
+      local l_0_11 = l_0_4 + l_0_10 * 4
+      l_0_2 = (pe.mmap_rva)(l_0_11, 4)
+      local l_0_12 = (mp.readu_u32)(l_0_2, 1)
+      local l_0_13 = (string.lower)((string.format)("%s", (pe.mmap_rva)(l_0_12, l_0_5)))
+      if l_0_13 == "spinitialize" then
+        l_0_6 = (mp.bitor)(l_0_6, 1)
+      else
+        if l_0_13 == "spshutdown" then
+          l_0_6 = (mp.bitor)(l_0_6, 2)
+        else
+          if l_0_13 == "spgetinfo" then
+            l_0_6 = (mp.bitor)(l_0_6, 4)
+          else
+            if l_0_13 == "splsamodeinitialize" then
+              l_0_6 = (mp.bitor)(l_0_6, 8)
+            end
+          end
+        end
       end
-      local l_0_11 = l_0_8:len() + 1
-      if l_0_10:len() <= l_0_11 + 5 then
-        return mp.CLEAN
+      if l_0_6 >= 15 then
+        return mp.INFECTED
       end
-      local l_0_12 = (string.sub)(l_0_10, l_0_11, -5)
-      if l_0_12 == nil then
-        return mp.CLEAN
-      end
-      local l_0_13 = l_0_12 .. l_0_8
-      if (string.find)(l_0_2, l_0_13, 1, true) == nil then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
     end
   end
 end
 do
-  l_0_4 = mp
-  l_0_4 = l_0_4.CLEAN
-  return l_0_4
+  return mp.CLEAN
 end
 

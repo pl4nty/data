@@ -3,32 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 250 or l_0_0 > 512 then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = ((string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)))
+  local l_0_2 = nil
+  if l_0_1:find("^rad.....%.tmp%.exe") == 1 then
+    l_0_2 = "exe"
+  else
+    if l_0_1:find("^rad.....%.tmp%.dll") == 1 then
+      l_0_2 = "dll"
+    end
+  end
+  if l_0_2 ~= nil then
+    local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_3 == "wscript.exe" or l_0_3 == "cscript.exe" then
+      if l_0_2 == "exe" then
+        (mp.set_mpattribute)("Lua:ContextScriptTempExe.A")
+      else
+        if l_0_2 == "dll" then
+          (mp.set_mpattribute)("Lua:ContextScriptTempDll.A")
+        end
+      end
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)()
-if (string.sub)(l_0_1, -4) ~= ".txt" then
-  return mp.CLEAN
-end
-local l_0_2 = headerpage[1]
-if l_0_2 ~= 49 and l_0_2 ~= 51 then
-  return mp.CLEAN
-end
-if headerpage[35] ~= 13 and headerpage[36] ~= 10 then
-  return mp.CLEAN
-end
-if l_0_1:find("recover_file", 1, true) ~= nil then
-  return mp.INFECTED
-end
-if l_0_1:find("recovery_file", 1, true) ~= nil then
-  return mp.INFECTED
-end
-if l_0_1:find("restore_file", 1, true) ~= nil then
-  return mp.INFECTED
-end
-if l_0_1:find("how_recover", 1, true) ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

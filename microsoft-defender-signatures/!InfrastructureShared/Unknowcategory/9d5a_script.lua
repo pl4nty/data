@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative and peattributes.no_security and (mp.getfilesize)() < 1111040 and pehdr.NumberOfSections == 3 and ((pesecs[3]).VirtualSize == 31486 or (pesecs[3]).VirtualSize == 31494) then
-  return mp.INFECTED
+local l_0_0 = (pe.get_regval)(pe.REG_EAX)
+local l_0_1 = (pe.get_api_id)(l_0_0)
+if l_0_1 ~= 671954542 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 29, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

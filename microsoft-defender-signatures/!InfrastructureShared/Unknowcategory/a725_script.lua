@@ -3,9 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -18))
-if (string.find)(l_0_0, "skype.exe") or (string.find)(l_0_0, "lync.exe") or (string.find)(l_0_0, "icq.exe") or (string.find)(l_0_0, "pidgin.exe") or (string.find)(l_0_0, "trillian.exe") or (string.find)(l_0_0, "yahoomessenger.exe") or (string.find)(l_0_0, "qq.exe") or (string.find)(l_0_0, "msnmsgr.exe") or (string.find)(l_0_0, "nlnotes.exe") or (string.find)(l_0_0, "notes.exe") or (string.find)(l_0_0, "notes2.exe") or (string.find)(l_0_0, "thunderbird.exe") or (string.find)(l_0_0, "msimn.exe") or (string.find)(l_0_0, "winmail.exe") or (string.find)(l_0_0, "excel.exe") or (string.find)(l_0_0, "infopath.exe") or (string.find)(l_0_0, "onenote.exe") or (string.find)(l_0_0, "powerpnt.exe") or (string.find)(l_0_0, "visio.exe") or (string.find)(l_0_0, "winword.exe") then
-  return mp.INFECTED
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC8: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R1 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC10: Overwrote pending register: R2 in 'AssignReg'
+
+for l_0_4,l_0_5 in ("%LocalAppData%\\Packages\\Microsoft.WindowsStore_8wekyb3d8bbwe\\AC")("%LocalAppData%\\Packages\\Microsoft.WindowsStore_8wekyb3d8bbwe\\LocalCache") do
+  -- DECOMPILER ERROR at PC13: Overwrote pending register: R6 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC15: Overwrote pending register: R7 in 'AssignReg'
+
+  local l_0_6 = (("%LocalAppData%\\Packages\\Microsoft.StorePurchaseApp_8wekyb3d8bbwe\\LocalCache").ExpandFilePath)("%LocalAppData%\\Packages\\Microsoft.StorePurchaseApp_8wekyb3d8bbwe\\Settings", true)
+  if l_0_6 then
+    for l_0_10,l_0_11 in ipairs(l_0_6) do
+      if l_0_11:sub(5, 5) ~= "%" then
+        local l_0_12 = nil
+        -- DECOMPILER ERROR at PC49: Overwrote pending register: R12 in 'AssignReg'
+
+        if (l_0_11:sub(3, 3) ~= "?" or l_0_12) and l_0_12:sub(2, 10) ~= ":\\windows" and #(sysio.FindFiles)(l_0_12, "mpengine.dll", 9) > 0 then
+          return mp.INFECTED
+        end
+      end
+    end
+  end
 end
-return mp.CLEAN
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC77: Confused about usage of register R1 for local variables in 'ReleaseLocals'
+
+-- WARNING: undefined locals caused missing assignments!
 

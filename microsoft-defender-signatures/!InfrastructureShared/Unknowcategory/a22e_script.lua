@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_suspicious_section_name") and (mp.getfilesize)() >= 892928 and (mp.getfilesize)() < 917504 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = nil
+local l_0_1 = nil
+if ((string.lower)((bm.get_imagepath)())):find("svchost.exe") then
+  l_0_1 = (string.match)((this_sigattrlog[2]).utf8p1, "\\%l%l%l%l%l%l%l%l%.exe")
+  if l_0_1 ~= nil then
+    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2107638873)
     return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

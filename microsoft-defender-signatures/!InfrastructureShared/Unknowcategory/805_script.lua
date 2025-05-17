@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_AMSI then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+do
+  if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_1 == "utorrentie.exe" then
+      (mp.set_mpattribute)("Lua:uTorrentIEDrop.A")
+    end
+  end
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("SLFPER:MSIL/Quiltran.H!amsi") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
-end
-return mp.INFECTED
 

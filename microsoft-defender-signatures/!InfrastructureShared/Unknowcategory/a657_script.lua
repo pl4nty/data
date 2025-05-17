@@ -3,38 +3,31 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_2 = nil, nil
-  end
-  do
-    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-      local l_0_1, l_0_3 = , (this_sigattrlog[2]).utf8p2
-    end
-    -- DECOMPILER ERROR at PC28: Confused about usage of register: R1 in 'UnsetPending'
-
-    local l_0_4 = nil
-    if (string.find)((string.lower)(l_0_3), "\\program files", 1, true) or (string.find)((string.lower)(l_0_3), ":\\windows\\system", 1, true) then
-      return mp.CLEAN
-    end
-    if l_0_4 ~= nil then
-      local l_0_5 = nil
-      local l_0_6 = nil
-      for l_0_10,l_0_11 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
-        local l_0_7, l_0_8 = , {[".xls"] = true, xlsx = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, xlsm = true}
-        -- DECOMPILER ERROR at PC72: Confused about usage of register: R9 in 'UnsetPending'
-
-        if (string.len)(R9_PC72) > 4 and (sysio.IsFileExists)(R9_PC72) and l_0_8[(string.sub)(R9_PC72, -4)] then
-          (bm.add_related_file)(R9_PC72)
-          return mp.INFECTED
-        end
-      end
-    end
-    do
-      return mp.CLEAN
-    end
-  end
+if peattributes.isdll then
+  return mp.CLEAN
 end
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+if not (mp.get_mpattribute)("Lua:VirTool:Win32/VMProtect.A") then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() < 5242880 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == "generator.exe" or l_0_0 == "g1.exe" then
+  (mp.set_mpattribute)("HSTR:GGenerator.D")
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("\\g1\\", 1, true) then
+  (mp.set_mpattribute)("HSTR:GGenerator.D")
+end
+if l_0_1:find("\\g1-beta\\", 1, true) then
+  return mp.INFECTED
+end
+if l_0_1:find("g1\\generator\\", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

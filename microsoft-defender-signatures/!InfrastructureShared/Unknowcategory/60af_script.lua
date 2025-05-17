@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
-;
-(pe.reemulate)()
+if mp.HSTR_WEIGHT > 8 and mp.HSTR_WEIGHT < 18 then
+  (mp.set_mpattribute)("HSTR:Genasom.P")
+end
 return mp.INFECTED
 

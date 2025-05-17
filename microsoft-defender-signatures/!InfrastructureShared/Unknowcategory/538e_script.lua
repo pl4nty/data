@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
+if peattributes.no_security and peattributes.ismsil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/Landward.A!dha")
-return mp.INFECTED
+if (mp.getfilesize)() < 2097152 and peattributes.no_security == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

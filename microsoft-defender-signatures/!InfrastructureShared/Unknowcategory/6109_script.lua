@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 256 and (mp.get_mpattribute)("InEmail") then
+if mp.HSTR_WEIGHT >= 8 then
+  (mp.set_mpattribute)("PUA:Block:Wapsx.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

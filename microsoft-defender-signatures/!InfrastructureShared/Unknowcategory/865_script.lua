@@ -3,15 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_2 == "syshost.exe" and (string.sub)(l_0_1, -1) == "}" then
-    (mp.set_mpattribute)("Lua:NecursFileName.A")
-  end
-end
+local l_0_2 = nil
 do
-  return mp.CLEAN
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = "|.js|jse|vbs|vbe|"
+  end
+  if l_0_2 ~= nil then
+    local l_0_3 = nil
+    for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
+      local l_0_4 = nil
+      -- DECOMPILER ERROR at PC26: Confused about usage of register: R7 in 'UnsetPending'
+
+      if (sysio.IsFileExists)(R7_PC26) and (string.find)(l_0_3, (string.lower)((string.sub)(R7_PC26, -3)), 1, true) then
+        (bm.add_related_file)(l_0_9)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
 

@@ -3,12 +3,30 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
+local l_0_0, l_0_1 = nil, nil
+for l_0_5 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_2, l_0_3 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R5 in 'UnsetPending'
+
+  if (sigattr_head[R5_PC6]).matched then
+    if (sigattr_head[R5_PC6]).attribute == 16384 and l_0_2 == nil then
+      l_0_2 = (string.lower)((sigattr_head[R5_PC6]).utf8p1)
+    else
+      if (sigattr_head[R5_PC6]).attribute == 16393 and l_0_3 == nil then
+        l_0_3 = (string.lower)((sigattr_head[R5_PC6]).utf8p2)
+        l_0_3 = (string.gsub)(l_0_3, "\"", "")
+      end
+    end
+    -- DECOMPILER ERROR at PC58: Unhandled construct in 'MakeBoolean' P1
+
+    if l_0_2 ~= nil and l_0_3 ~= nil and l_0_2 == l_0_3 then
+      (mp.ReportLowfi)((sigattr_head[R5_PC6]).utf8p1, 3836302819)
+      return mp.INFECTED
+    end
+    break
+  end
+end
+do
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\184\028\024~=\144")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

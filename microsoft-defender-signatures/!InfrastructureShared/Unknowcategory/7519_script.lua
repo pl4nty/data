@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.sub)((sigattr_head[1]).p1, 2, 7), "%d+") then
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 21, 4), 1) > 40960 then
   return mp.INFECTED
 end
 return mp.CLEAN

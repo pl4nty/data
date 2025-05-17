@@ -3,38 +3,18 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\atbroker.exe$") then
+  return mp.CLEAN
+end
+local l_0_1 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\atbroker.exe")
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
-      if (string.find)(R6_PC25, ":\\program files", 1, true) then
-        return mp.CLEAN
-      else
-        if (string.find)(R6_PC25, "\\ccmcache\\", 1, true) then
-          return mp.CLEAN
-        else
-          if (string.find)(R6_PC25, "ccm32bitlauncher", 1, true) then
-            return mp.CLEAN
-          end
-        end
-      end
+  if l_0_1 ~= nil then
+    local l_0_2 = (sysio.GetRegValueAsString)(l_0_1, "Debugger")
+    if l_0_2 ~= nil and (string.len)(l_0_2) >= 1 and (sysio.IsFileExists)(l_0_2) then
+      (mp.ReportLowfi)(l_0_2, 202313540)
     end
   end
-  do
-    return mp.INFECTED
-  end
+  return mp.INFECTED
 end
 

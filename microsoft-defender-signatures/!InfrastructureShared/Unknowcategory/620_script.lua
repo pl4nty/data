@@ -3,12 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.find)((string.lower)(l_0_0), "\\extensions\\", 1, true) ~= nil then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R6 in 'UnsetPending'
+
+    R6_PC23 = (mp.ContextualExpandEnvironmentVariables)(R6_PC23)
+    ;
+    (bm.add_threat_file)(R6_PC23)
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

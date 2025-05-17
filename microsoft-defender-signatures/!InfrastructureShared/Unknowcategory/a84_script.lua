@@ -3,14 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 100000000 then
+local l_0_0 = nil
+local l_0_1 = nil
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_2 = "docker_create"
+    l_0_1 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), "/([0-9a-f]+)/parent$")
+  end
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R1 in 'UnsetPending'
+
+  if l_0_1 ~= nil then
+    (MpCommon.AppendPersistContextNoPath)(l_0_2, l_0_1, 3600)
+  end
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (string.lower)((string.sub)(l_0_6.image_path, -4)) == "/tmp/" then
-    return mp.INFECTED
-  end
-end
-return mp.CLEAN
 

@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr
-local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 144, "\129=\144\001\004ðI\002\000s\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_1 == 4294967295 then
-  return mp.CLEAN
+local l_0_0 = 0
+if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
+  l_0_0 = 16
 end
-;
-(pe.mmap_patch_va)(l_0_0 + 41, "j\001\144")
-;
-(pe.mmap_patch_va)(l_0_1 + 6, "\001\000\000")
-return mp.INFECTED
+l_0_0 = l_0_0 + (mp.bitand)(mp.HSTR_WEIGHT, 15)
+if l_0_0 >= 18 then
+  return mp.INFECTED
+else
+  if l_0_0 >= 2 then
+    (mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
+  end
+end
+return mp.CLEAN
 

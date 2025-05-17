@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(headerpage, 1) ~= 1953651835 then
-  return mp.CLEAN
+if peattributes.isvbnative == true and pehdr.NumberOfSections == 3 and peattributes.no_security == true then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
-return mp.INFECTED
+return mp.CLEAN
 

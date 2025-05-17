@@ -3,16 +3,30 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.get_mpattribute)("pea_no_uidata") and (mp.getfilesize)() >= 249856 and (mp.getfilesize)() < 282624 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = nil
+  else
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC61: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p1 ~= nil then
+      local l_0_1 = (mp.ContextualExpandEnvironmentVariables)((string.lower)((this_sigattrlog[2]).utf8p1))
+    end
+    -- DECOMPILER ERROR at PC62: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 == nil then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC71: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.find)((string.lower)(l_0_1), ":program files", 1, true) == nil then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 

@@ -3,8 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 and peattributes.no_security and ((hstrlog[1]).matched or (hstrlog[2]).matched) and ((hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched) then
-  return mp.INFECTED
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+local l_0_1, l_0_2, l_0_3 = l_0_0:find("DestIp=(.-;)")
+if l_0_3 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+do
+  local l_0_4 = {}
+  -- DECOMPILER ERROR at PC19: No list found for R4 , SetList fails
+
+  -- DECOMPILER ERROR at PC20: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC21: Overwrote pending register: R6 in 'AssignReg'
+
+  for l_0_8,l_0_9 in ("127.0.0.1")("204.174.66.") do
+    -- DECOMPILER ERROR at PC24: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC26: Overwrote pending register: R11 in 'AssignReg'
+
+    if (("208.94.117.").find)("209.53.113.", l_0_9, 1, false) ~= nil then
+      return mp.CLEAN
+    end
+  end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
+end
 

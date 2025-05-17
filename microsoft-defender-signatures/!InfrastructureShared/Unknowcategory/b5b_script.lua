@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpAmsiJsExclude")
-return mp.CLEAN
+(mp.set_mpattribute)("MpEnableCOM")
+return mp.INFECTED
 

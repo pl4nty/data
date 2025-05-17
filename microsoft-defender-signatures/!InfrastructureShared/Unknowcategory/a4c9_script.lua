@@ -3,21 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (mp.get_mpattribute)("MpHasExpensiveLoop") then
-  local l_0_0 = (pe.foffset_va)((hstrlog[1]).VA)
-  ;
-  (mp.readprotection)(false)
-  local l_0_1 = (mp.readfile)(0, (mp.getfilesize)())
-  ;
-  (mp.writeu_u8)(l_0_1, l_0_0 + 12, 132)
-  ;
-  (mp.writeu_u32)(l_0_1, l_0_0 + 20, 696)
-  ;
-  (mp.writeu_u8)(l_0_1, l_0_0 + 24, 0)
-  ;
-  (mp.vfo_add_buffer)(l_0_1, "[Obfuscator.ALC]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
+  return mp.CLEAN
 end
-do
-  return mp.INFECTED
+local l_0_0 = (mp.GetBruteMatchData)()
+if not l_0_0 then
+  return mp.CLEAN
 end
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = (string.lower)(tostring(headerpage))
+else
+  l_0_1 = (string.lower)(tostring(footerpage))
+end
+if not l_0_1 then
+  return mp.CLEAN
+end
+local l_0_2 = "(?:set|add)-mppreference\\s+-exclusionpath\\s+[\"\']?c:\\\\+perflogs\\\\*?%?[\"\']?(?:[\\s;]|$)"
+local l_0_3 = false
+l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
+if l_0_3 == false then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

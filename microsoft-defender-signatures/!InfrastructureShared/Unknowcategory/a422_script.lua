@@ -3,30 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if (string.len)(l_0_0) < 4096 then
-    return mp.CLEAN
+if (hstrlog[1]).matched then
+  local l_0_0 = (hstrlog[1]).VA + 14
+  local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+  local l_0_2 = (mp.readu_u32)(l_0_1, 1)
+  local l_0_3 = (pe.mmap_va)(l_0_2, 16)
+  if (string.sub)(l_0_3, 1, 3) == "cmd" then
+    return mp.INFECTED
   end
-  if (MpCommon.GetPersistContextCountNoPath)("Lua:MalPsSmsScanAmsi") > 0 then
-    local l_0_1 = (bm.get_current_process_startup_info)()
-    local l_0_2 = (MpCommon.GetPersistContextNoPath)("Lua:MalPsSmsScanAmsi")
-    if l_0_2 then
-      for l_0_6,l_0_7 in ipairs(l_0_2) do
-        if l_0_7 == l_0_1.ppid then
-          return mp.INFECTED
-        end
+else
+  do
+    if (hstrlog[2]).matched then
+      local l_0_4 = (hstrlog[2]).VA + 9
+      local l_0_5 = (pe.mmap_va)(l_0_4, 4)
+      local l_0_6 = (mp.readu_u32)(l_0_5, 1)
+      local l_0_7 = (pe.mmap_va)(l_0_6, 16)
+      if (string.sub)(l_0_7, 1, 7) == "[Shift]" then
+        return mp.INFECTED
       end
     end
-  end
-  do
     do
-      l_0_1 = mp
-      l_0_1 = l_0_1.CLEAN
-      do return l_0_1 end
-      l_0_0 = mp
-      l_0_0 = l_0_0.CLEAN
-      return l_0_0
+      return mp.CLEAN
     end
   end
 end

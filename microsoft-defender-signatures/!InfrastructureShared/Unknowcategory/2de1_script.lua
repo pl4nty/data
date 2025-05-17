@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
+if peattributes.isvbnative then
   return mp.INFECTED
 end
 return mp.CLEAN

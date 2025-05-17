@@ -3,56 +3,51 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+reportwinlogon = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = (string.lower)(l_1_0)
+  for l_1_5 in (string.gmatch)(l_1_1, "[^,]+") do
+    if l_1_5:find("recycle", 1, true) then
+      (mp.ReportLowfi)(l_1_5, 3865603081)
+    end
+  end
 end
-if peattributes.hasexports == true then
-  return mp.CLEAN
+
+if (this_sigattrlog[1]).matched then
+  (mp.ReportLowfi)((this_sigattrlog[1]).utf8p2, 3865603081)
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
+if (this_sigattrlog[2]).matched then
+  (mp.ReportLowfi)((this_sigattrlog[2]).utf8p2, 3865603081)
 end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
+if (this_sigattrlog[3]).matched then
+  reportwinlogon((this_sigattrlog[3]).utf8p2)
 end
-if peattributes.epscn_writable == false then
-  return mp.CLEAN
+if (this_sigattrlog[4]).matched then
+  reportwinlogon((this_sigattrlog[4]).utf8p2)
 end
-if (pesecs[pehdr.NumberOfSections]).NameDW == 1920168494 then
-  return mp.CLEAN
+if (this_sigattrlog[5]).matched then
+  (mp.ReportLowfi)((this_sigattrlog[5]).utf8p2, 3865603081)
 end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
+if (this_sigattrlog[6]).matched then
+  (mp.ReportLowfi)((this_sigattrlog[6]).utf8p2, 3865603081)
 end
-if epcode[1] ~= 85 then
-  return mp.CLEAN
+if (this_sigattrlog[7]).matched then
+  reportwinlogon((this_sigattrlog[7]).utf8p2)
 end
-if epcode[2] ~= 139 then
-  return mp.CLEAN
+if (this_sigattrlog[8]).matched then
+  reportwinlogon((this_sigattrlog[8]).utf8p2)
 end
-if epcode[3] ~= 236 then
-  return mp.CLEAN
+if (this_sigattrlog[9]).matched then
+  (mp.ReportLowfi)((this_sigattrlog[9]).utf8p2, 3865603081)
 end
-if ((pehdr.DataDirectory)[3]).RVA <= 0 then
-  return mp.CLEAN
+if (this_sigattrlog[10]).matched then
+  (mp.ReportLowfi)((this_sigattrlog[10]).utf8p2, 3865603081)
 end
-if ((pehdr.DataDirectory)[3]).Size < 16 then
-  return mp.CLEAN
+if (this_sigattrlog[11]).matched then
+  reportwinlogon((this_sigattrlog[11]).utf8p2)
 end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[3]).RVA), 16)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 5) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) ~= 0 then
-  return mp.CLEAN
+if (this_sigattrlog[12]).matched then
+  reportwinlogon((this_sigattrlog[12]).utf8p2)
 end
 return mp.INFECTED
 

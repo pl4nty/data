@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (versioning.GetProduct)() == 13 then
-  (mp.set_mpattribute)("/IsMSRTProduct")
+if #(mp.enum_mpattributesubstring)("SCPT:GodexB") >= 2 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

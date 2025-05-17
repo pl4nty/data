@@ -3,26 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\atbroker.exe$") then
   return mp.CLEAN
 end
-if (string.len)(l_0_1) > 1024 then
-  return mp.CLEAN
+do
+  if (string.find)(l_0_0, "\\systray.exe$") then
+    local l_0_1 = (versioning.GetOrgID)()
+    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
+      return mp.CLEAN
+    end
+  end
+  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
+  if l_0_3 == nil or #l_0_3 == 0 then
+    return mp.CLEAN
+  end
+  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\atbroker.exe")
+  do
+    if l_0_4 ~= nil then
+      local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
+      if l_0_5 ~= nil and (string.len)(l_0_5) >= 1 then
+        if (sysio.IsFileExists)(l_0_5) then
+          (mp.ReportLowfi)(l_0_5, 3928409088)
+        end
+        return mp.INFECTED
+      end
+    end
+    return mp.CLEAN
+  end
 end
-local l_0_2 = (string.match)(l_0_1, "(QQBkAGQALQBNAHAAUAByAGUAZgBlAHIAZ[a-zA-Z0-9%+/=]+)")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (MpCommon.Base64Decode)(l_0_2)
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-l_0_3 = (string.gsub)(l_0_3, "%z", "")
-l_0_3 = (string.lower)((string.gsub)(l_0_3, " ", ""))
-if (string.find)(l_0_3, "-exclusionpath@($env:userprofile,$env:systemdrive)-force", 1, true) or (string.find)(l_0_3, "-exclusionextension@(\'exe\',\'dll\')-force", 1, true) or (string.find)(l_0_3, "-exclusionpath$env:userprofile\\appdata", 1, true) or (string.find)(l_0_3, "-exclusionpath$env:windir\\tasks", 1, true) or (string.find)(l_0_3, "-exclusionprocess\"powershell.exe\"", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:GolangBinary") then
+if peattributes.ismsil and peattributes.has_msilresources and peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

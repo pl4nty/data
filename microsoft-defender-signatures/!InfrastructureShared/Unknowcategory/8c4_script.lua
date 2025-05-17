@@ -3,13 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_1 == "svchost.exe" then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if (string.sub)(l_0_2, -34) == "\\appdata\\roaming\\microsoft\\windows" or (string.sub)(l_0_2, -35) == "\\application data\\microsoft\\windows" then
-      (mp.set_mpattribute)("Lua:DipverdleFileName.A")
+if peattributes.isdll == true and peattributes.hasexports == true and ((pehdr.DataDirectory)[1]).Size ~= 0 then
+  local l_0_0 = ((pehdr.DataDirectory)[1]).RVA
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)((pe.foffset_rva)(l_0_0), 36)
+  if (mp.readu_u32)(l_0_1, 21) == 1 and (mp.readu_u32)(l_0_1, 25) == 1 then
+    local l_0_2 = (mp.readu_u32)(l_0_1, 33)
+    l_0_1 = (pe.mmap_rva)(l_0_2, 4)
+    local l_0_3 = (mp.readu_u32)(l_0_1, 1)
+    if (pe.mmap_rva)(l_0_3, 9) == "plg_init\000" then
+      return mp.INFECTED
     end
   end
 end

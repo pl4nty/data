@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("HSTR:IBryteDownloaderz.A2")
+if pehdr.Machine == 34404 then
+  (mp.changedetectionname)(805306474)
+  return mp.INFECTED
 end
 return mp.INFECTED
 

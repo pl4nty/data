@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if peattributes.isexe == true and peattributes.x86_image == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = nil
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\windows\\", 1, true)) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
 

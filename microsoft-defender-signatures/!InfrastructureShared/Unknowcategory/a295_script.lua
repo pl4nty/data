@@ -3,13 +3,20 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if ((string.match)(l_0_0, "%%localappdata%%\\%a+\\%a+%.exe$") or (string.match)(l_0_0, "%%localappdata%%\\{%x+%-%x+%-%x+%-%x+%-%x+}\\%a+%.exe$")) and (string.match)(l_0_0, "\\[b-t][aeiou][b-t][aeiou]%a+%.exe$") then
-      return mp.INFECTED
+local l_0_0 = ""
+if (this_sigattrlog[1]).matched then
+  l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
     end
   end
-  return mp.CLEAN
 end
+if l_0_0 ~= nil and (string.len)(l_0_0) > 10 and (string.find)(l_0_0, "pskill", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

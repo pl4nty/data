@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_process_relationships)()
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  if l_0_5.reason == bm.RELATIONSHIP_INJECTION then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilename)()
+if (string.find)((string.lower)(l_0_0), ".ini") ~= nil then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)((string.lower)(l_0_0), ".sdb$") ~= nil then
+if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

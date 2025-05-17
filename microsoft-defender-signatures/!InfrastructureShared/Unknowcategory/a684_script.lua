@@ -3,47 +3,30 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.lastscn_falign ~= true then
+if pevars.sigaddr == 2138046464 then
+  (mp.readprotection)(false)
+  local l_0_0 = ((pe.mmap_va)(pevars.sigaddr, 512))
+  local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
+  l_0_1 = (string.gsub)(l_0_0, "ã¿", "")
+  l_0_1 = (string.gsub)(l_0_1, "ã“", "")
+  l_0_1 = (string.gsub)(l_0_1, "ä“", "")
+  l_0_1 = (string.gsub)(l_0_1, "\135\255", "")
+  l_0_1 = (string.gsub)(l_0_1, "ãˆ", "")
+  l_0_1 = (string.gsub)(l_0_1, "QY", "")
+  l_0_1 = (string.gsub)(l_0_1, "äÌ", "")
+  l_0_1 = (string.gsub)(l_0_1, "êê+", "")
+  l_0_1 = (string.gsub)(l_0_1, "á“", "")
+  l_0_1 = (string.gsub)(l_0_1, "V^", "")
+  local l_0_12 = l_0_2 + l_0_3 + l_0_4 + l_0_5 + l_0_6 + l_0_7 + l_0_8 + l_0_9 + l_0_10 + l_0_11
+  if l_0_12 < 65 then
+    return mp.CLEAN
+  end
+  local l_0_13 = "!decrypted" .. l_0_1
+  ;
+  (mp.vfo_add_buffer)(l_0_13, "[Obfuscator.ZV]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  return mp.LOWFI
+end
+do
   return mp.CLEAN
 end
-if peattributes.no_relocs ~= false then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if peattributes.isexe == true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.MajorImageVersion ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.MinorImageVersion ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.MajorLinkerVersion ~= 5 then
-  return mp.CLEAN
-end
-if pehdr.MinorLinkerVersion ~= 12 then
-  return mp.CLEAN
-end
-if pehdr.ImageBase ~= 268435456 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 104 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

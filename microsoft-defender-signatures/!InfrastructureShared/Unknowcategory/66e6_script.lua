@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and peattributes.amd64_image then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("manifest.mf") then
   return mp.INFECTED
 end
 return mp.CLEAN

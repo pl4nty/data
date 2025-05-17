@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() < 3140000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:SRBMiner")
+;
+(mp.set_mpattribute)("Company:CoinMiner64:D0kt0rSolutions")
+return mp.INFECTED
 

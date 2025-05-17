@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:find("\\temp\\", 1, true) ~= nil and l_0_0:find("\\system", 1, true) == nil then
+if (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 400000 and pehdr.NumberOfSections == 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

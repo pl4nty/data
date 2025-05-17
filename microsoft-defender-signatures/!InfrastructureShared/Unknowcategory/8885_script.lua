@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (bm.get_current_process_startup_info)()
 do
-  if peattributes.x86_image == true and peattributes.isexe == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil and (l_0_5.Signers).IsValid == true then
-        return mp.CLEAN
-      end
+  if l_0_0 ~= nil and l_0_0.command_line ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.command_line)
+    if l_0_1:find("azurearcagent", 1, true) then
+      return mp.CLEAN
     end
     return mp.INFECTED
   end

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.executable_image and peattributes.amd64_image then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,67 +3,41 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\osk.exe$") then
+  return mp.CLEAN
+end
 do
-  if (hstrlog[1]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC23: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (hstrlog[2]).matched or (hstrlog[3]).matched then
-      local l_0_1 = (hstrlog[2]).VA
+  if (string.find)(l_0_0, "\\systray.exe$") then
+    local l_0_1 = (versioning.GetOrgID)()
+    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
+      return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC39: Overwrote pending register: R0 in 'AssignReg'
-
+  end
+  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
+  if l_0_3 == nil or #l_0_3 == 0 then
+    return mp.CLEAN
+  end
+  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe")
+  if l_0_4 ~= nil then
+    local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
+    if l_0_5 == nil or (string.len)(l_0_5) <= 1 then
+      return mp.CLEAN
+    end
+  else
     do
-      if not (hstrlog[4]).matched or (hstrlog[5]).matched then
-        local l_0_2, l_0_3, l_0_4, l_0_5 = (hstrlog[4]).VA
-      end
-      -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC42: Confused about usage of register: R0 in 'UnsetPending'
-
-      if l_0_2 == 2138046464 or l_0_2 == 2146697216 then
-        (mp.readprotection)(false)
-        -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
-
-        local l_0_6 = nil
-        local l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13, l_0_14, l_0_15 = ((pe.mmap_va)(l_0_2, 512)), nil, nil, nil, nil, nil, nil, nil, nil
-        local l_0_16, l_0_17 = nil, (string.gsub)(l_0_7, "‹À", "")
-        l_0_17 = (string.gsub)(l_0_17, "‹Ò", "")
-        l_0_17 = (string.gsub)(l_0_17, "ŠÒ", "")
-        l_0_17 = (string.gsub)(l_0_17, "\135\255", "")
-        l_0_17 = (string.gsub)(l_0_17, "‹ö", "")
-        l_0_17 = (string.gsub)(l_0_17, "QY", "")
-        l_0_17 = (string.gsub)(l_0_17, "Ší", "")
-        l_0_17 = (string.gsub)(l_0_17, "+", "")
-        l_0_17 = (string.gsub)(l_0_17, "‡Ò", "")
-        l_0_17 = (string.gsub)(l_0_17, "V^", "")
-        local l_0_18 = nil
-        if (hstrlog[4]).matched then
-          local l_0_19 = 0
-          repeat
-            -- DECOMPILER ERROR at PC145: Overwrote pending register: R14 in 'AssignReg'
-
-            l_0_19 = l_0_19 + 0
-            -- DECOMPILER ERROR at PC148: Confused about usage of register: R14 in 'UnsetPending'
-
-          until 0 == 0
+      do return mp.CLEAN end
+      local l_0_6, l_0_7 = (bm.get_process_relationships)()
+      for l_0_11,l_0_12 in ipairs(l_0_6) do
+        if l_0_12.image_path ~= nil then
+          local l_0_13 = (string.lower)(l_0_12.image_path)
+          if (string.find)(l_0_13, "atbroker.exe", 1, true) or (string.find)(l_0_13, "utilman.exe", 1, true) then
+            return mp.INFECTED
+          end
         end
-        l_0_19 = l_0_19 + l_0_18 + l_0_8 + l_0_9 + l_0_10 + l_0_11 + l_0_12 + l_0_13 + l_0_16 + l_0_14 + l_0_15
-        if l_0_19 < 65 then
-          return mp.CLEAN
-        end
-        local l_0_20 = "!decrypted" .. l_0_17
-        ;
-        (mp.vfo_add_buffer)(l_0_20, "[Obfuscator.ZV]", mp.ADD_VFO_PEPACKED)
-        return mp.LOWFI
       end
-      do
-        return mp.CLEAN
-      end
+      return mp.CLEAN
     end
   end
 end

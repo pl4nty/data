@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:VirTool:MSIL/Injector.GM")
-if peattributes.ismsil == true then
+if (mp.get_mpattribute)("pea_isexe") and pehdr.NumberOfSections == 8 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

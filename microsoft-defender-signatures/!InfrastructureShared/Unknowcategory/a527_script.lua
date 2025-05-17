@@ -3,35 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 6 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 1094992942 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 72 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 72 then
-  return mp.CLEAN
-end
-if epcode[3] ~= 235 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
-  return mp.CLEAN
+local l_0_0, l_0_1, l_0_2 = nil, nil, nil
+for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_3, l_0_4, l_0_5 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R6 in 'UnsetPending'
+
+  if (sigattr_head[R6_PC6]).matched then
+    if (sigattr_head[R6_PC6]).attribute == 16384 and (sigattr_head[R6_PC6]).utf8p1 and l_0_3 == nil then
+      l_0_3 = (string.lower)((sigattr_head[R6_PC6]).utf8p1)
+      l_0_4 = (string.match)(l_0_3, "\\roaming\\%x%x+\\([^\\]+)$")
+    else
+      if (sigattr_head[R6_PC6]).attribute == 16393 and (sigattr_head[R6_PC6]).utf8p2 and l_0_5 == nil then
+        l_0_5 = (string.lower)((sigattr_head[R6_PC6]).utf8p2)
+        l_0_5 = (string.match)(l_0_5, "\\roaming\\%x%x+\\([^\\]+)$")
+      end
+    end
+    if l_0_3 ~= nil and l_0_5 ~= nil and l_0_4 == l_0_5 then
+      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((sigattr_head[R6_PC6]).utf8p1), 3276690080)
+      return mp.INFECTED
+    end
+  end
 end
 return mp.INFECTED
 

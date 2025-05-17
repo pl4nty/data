@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (Remediation.Threat).Name
-if (string.find)(l_0_0, "Safemode.D", 1, true) then
-  local l_0_1 = (MpCommon.GetPersistContextNoPath)("RegKeyToDelete_safemode")
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    local l_0_7 = (string.match)(l_0_6, "(.*)\\\\")
-    local l_0_8 = (sysio.RegOpenKey)(l_0_7)
-    if l_0_8 ~= nil then
-      (sysio.DeleteRegKey)(l_0_8, nil)
+do
+  if (mp.get_mpattribute)("PowerShell:DownloadFile!Lowfi") or (mp.get_mpattribute)("SCPT:JS/PowerShell.DownloadFile.A") or (mp.get_mpattribute)("SCPT:PowerShell/DownloadString") then
+    local l_0_0 = (string.lower)((mp.getfilename)())
+    if (string.find)(l_0_0, "%.hta$") ~= nil then
+      return mp.INFECTED
     end
   end
+  return mp.CLEAN
 end
 

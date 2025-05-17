@@ -3,30 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 13, 64)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-if (mp.readu_u32)(l_0_0, 57) - 2 ~= l_0_1 then
+if not (this_sigattrlog[5]).matched then
   return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u32)(l_0_0, 10)
-local l_0_3 = (mp.readu_u32)(l_0_0, 24)
-local l_0_4 = (string.byte)(l_0_0, 19)
-l_0_0 = (pe.mmap_va)(l_0_2, 4)
-if (pe.get_api_id)((mp.readu_u32)(l_0_0, 1)) ~= 2185195070 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if not l_0_0 or l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
   return mp.CLEAN
 end
-l_0_0 = (pe.mmap_va)(l_0_3, 4)
-local l_0_5 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
-if l_0_5 ~= 3267971814 then
-  return mp.CLEAN
+local l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[5]).utf8p1))
+if l_0_1 then
+  if (string.find)(l_0_1, "windows\\assembly\\nativeimages_v4", 1, true) then
+    return mp.CLEAN
+  end
+  if (string.find)(l_0_1, "packagemanagement\\providerassemblies\\nuget", 1, true) then
+    return mp.CLEAN
+  end
+  if not (mp.IsKnownFriendlyFile)(l_0_1, false, false) then
+    (mp.ReportLowfi)(l_0_1, 2040612934)
+  end
 end
-;
-(pe.set_regval)(pe.REG_EBX, l_0_4)
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a\005\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "êê\144")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 21, "êê")
 return mp.INFECTED
 

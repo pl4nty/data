@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  if l_0_1 ~= "flashsec.exe" then
-    return mp.CLEAN
-  end
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if (string.sub)(l_0_2, -23) == "\\application data\\flash" or (string.sub)(l_0_2, -22) == "\\appdata\\roaming\\flash" then
-    (mp.set_mpattribute)("Lua:SimdaFileName.A")
+local l_0_0 = (mp.getfilename)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  local l_0_1 = (string.sub)(l_0_0, -3)
+  local l_0_2 = (string.sub)(l_0_0, -4)
+  if (l_0_1 == ".js" or l_0_2 == ".jse" or l_0_2 == ".vbs" or l_0_2 == ".vbe" or l_0_2 == ".wsf") and (((((mp.get_mpattributesubstring)("SCPT:Trojan:JS/PikaBot.BX") and not (mp.get_mpattributesubstring)("SCPT:JS/AsrobfusWscrExec")) or (mp.get_mpattributesubstring)("SCRIPT:ToStringCode.A")) and not (mp.get_mpattributesubstring)("SCPT:VBSSplit")) or 0 + 2 + 2 + 1 + 1 >= 5) then
     return mp.INFECTED
   end
 end

@@ -3,13 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  local l_0_7 = (mp.bitand)(l_0_6.reason_ex, bm.RELATIONSHIP_CREATED)
-  if l_0_7 == bm.RELATIONSHIP_CREATED then
-    (bm.trigger_sig)("Behavior:Win32/SelfdelProcCreate.A", "INFECTED", l_0_6.ppid)
-    return mp.INFECTED
-  end
+if mp.HSTR_WEIGHT >= 7 then
+  return mp.INFECTED
+end
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
 end
 return mp.CLEAN
 

@@ -3,28 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_ep then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
   return mp.CLEAN
 end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-  if (string.len)(l_0_1) < 29 then
-    return mp.CLEAN
-  end
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH))
-  if (string.sub)(l_0_1, 1, 18) == "flashplayerplugin_" and (string.sub)(l_0_2, -15) == "\\macromed\\flash" then
-    local l_0_3 = "Lua:ContextualDropFlashplayer"
-    local l_0_4 = {}
-    l_0_4["flashplayerplugin_19_0_0_185.exe"] = ""
-    if l_0_4[l_0_1] then
-      l_0_3 = l_0_3 .. "Latest"
-    end
-    ;
-    (mp.set_mpattribute)(l_0_3)
-  end
-end
-do
+local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+if l_0_0 ~= "iexplore.exe" and l_0_0 ~= "microsoftedgecp.exe" then
   return mp.CLEAN
 end
+local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH))
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "bitdefender", 1, true) or (string.find)(l_0_1, "eset", 1, true) or (string.find)(l_0_1, "ffdec", 1, true) or (string.find)(l_0_1, "fiddler", 1, true) or (string.find)(l_0_1, "oracle", 1, true) or (string.find)(l_0_1, "vmware", 1, true) or (string.find)(l_0_1, "wireshark", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

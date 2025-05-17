@@ -3,17 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-for l_0_4 = mp.SIGATTR_LOG_SZ, 1, -1 do
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
-
-  if (sigattr_head[R4_PC6]).matched and ((sigattr_head[R4_PC6]).attribute == 16384 or (sigattr_head[R4_PC6]).attribute == 16389) then
-    l_0_1 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[R4_PC6]).utf8p1)
-    if l_0_1 ~= nil and (sysio.IsFileExists)(l_0_1) then
-      (mp.ReportLowfi)(l_0_1 .. "\000", 3307547556)
-    end
+if (mp.getfilesize)() < 300000 or (mp.getfilesize)() > 600000 then
+  return mp.CLEAN
+end
+if (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[3]).p1)
+  if (string.sub)(l_0_0, -4) == ".dll" then
+    return mp.CLEAN
+  end
+  local l_0_1 = (string.lower)((this_sigattrlog[4]).p1)
+  if (string.find)(l_0_1, l_0_0) ~= nil then
+    return mp.INFECTED
   end
 end
-return mp.INFECTED
+do
+  return mp.CLEAN
+end
 

@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
-  if l_0_2 ~= nil and (string.find)(l_0_3, l_0_2) then
-    (mp.TriggerScanResource)("folder", "C:\\Windows\\System32\\Tasks\\")
-    return mp.INFECTED
-  end
+local l_0_0, l_0_1, l_0_2 = ((bm.get_connection_string)()):find("DestIp=(.-;)")
+if l_0_2 == nil then
+  return mp.CLEAN
 end
-do
-  return mp.LOWFI
+l_0_2 = ";" .. l_0_2
+local l_0_3 = ";217.23.8.164;85.17.87.163;46.165.244.105;209.239.112.229;185.6.80.139;184.75.253.146;176.9.245.16;178.250.245.198;217.23.3.113;217.23.8.164;"
+if l_0_3:find(l_0_2, 1, true) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

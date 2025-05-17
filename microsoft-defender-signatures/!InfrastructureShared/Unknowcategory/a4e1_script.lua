@@ -3,30 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-local l_0_1 = {}
-l_0_1[256] = "100"
-l_0_1[1024] = "400"
-l_0_1[4096] = "1000"
-l_0_1[50000] = "50KB"
-l_0_1[65536] = "10000"
-l_0_1[262144] = "40000"
-l_0_1[1048576] = "1M"
-l_0_1[4194304] = "4M"
-l_0_1[10485760] = "10M"
-l_0_1[20971520] = "20M"
-l_0_1[33554432] = "32M"
-l_0_1[41943040] = "40M"
-l_0_1[104857600] = "100M"
-l_0_1[524288000] = "500M"
-l_0_1[1073741824] = "1G"
-for l_0_5,l_0_6 in pairs(l_0_1) do
-  if l_0_0 <= l_0_5 then
-    (mp.set_mpattribute)("LUA:FileSizeLE" .. l_0_6 .. ".B")
-  else
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  end
+  if (this_sigattrlog[2]).matched then
+    local l_0_4 = nil
+    if l_0_4 == nil or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)((string.lower)((this_sigattrlog[2]).utf8p2))), "\\windows\\system32\\", 1, true) == nil or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)((string.lower)((this_sigattrlog[2]).utf8p2))), "\\windows\\system32\\dism\\dismcore.dll", 1, true) or (mp.IsKnownFriendlyFile)((string.lower)((mp.ContextualExpandEnvironmentVariables)((string.lower)((this_sigattrlog[2]).utf8p2))), true, false) then
+      return mp.CLEAN
+    end
     ;
-    (mp.set_mpattribute)("LUA:FileSizeGT" .. l_0_6 .. ".B")
+    (bm.add_threat_file)(l_0_4)
+    return mp.INFECTED
   end
 end
-return mp.CLEAN
 

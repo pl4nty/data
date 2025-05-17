@@ -3,6 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "\000\000u", 1, true) + 1, "êê")
-return mp.INFECTED
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil then
+      (bm.add_related_file)(l_0_0)
+    end
+  end
+  return mp.INFECTED
+end
 

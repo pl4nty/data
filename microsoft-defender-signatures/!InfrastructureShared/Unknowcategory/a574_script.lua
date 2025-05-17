@@ -3,26 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((bm.get_imagepath)()))
-if (string.find)(l_0_0, "\\system32\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\system32\\taskeng.exe", 1, true) then
+is_in_program_files = function(l_1_0)
+  -- function num : 0_0
+  if l_1_0.matched and l_1_0.utf8p2 ~= nil then
+    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_1_0.utf8p2))
+    if (string.match)(l_1_0.utf8p2, "%a:\\Program Files") ~= nil then
+      return true
+    else
+      if (string.match)(l_1_0.utf8p2, "%%program_files%%\\") ~= nil then
+        return true
+      else
+        return false
+      end
+    end
+  end
+  return false
+end
+
+if is_in_program_files(this_sigattrlog[1]) then
   return mp.CLEAN
 end
-local l_0_1 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_1 = (this_sigattrlog[1]).utf8p2
+if is_in_program_files(this_sigattrlog[2]) then
+  return mp.CLEAN
 end
-if l_0_1 == nil and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  l_0_1 = (this_sigattrlog[2]).utf8p2
+if is_in_program_files(this_sigattrlog[3]) then
+  return mp.CLEAN
 end
-local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-    ;
-    (bm.add_related_file)(l_0_7)
-  end
+if is_in_program_files(this_sigattrlog[4]) then
+  return mp.CLEAN
 end
-do
-  return mp.INFECTED
-end
+return mp.INFECTED
 

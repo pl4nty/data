@@ -3,37 +3,54 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC2: Confused about usage of register: R0 in 'UnsetPending'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-string.fromhex = function(l_1_0)
-  -- function num : 0_0
-  return l_1_0:gsub("..", function(l_2_0)
-    -- function num : 0_0_0
-    local l_2_1 = string.char
-    do
-      local l_2_2, l_2_3, l_2_4 = tonumber(l_2_0, 16), .end
-      do return l_2_1(l_2_2, l_2_3, l_2_4) end
-      -- DECOMPILER ERROR at PC8: Confused about usage of register R2 for local variables in 'ReleaseLocals'
-
-    end
-  end
-)
-end
-
-local l_0_0 = (string.lower)((nri.GetURI)())
-if l_0_0 then
-  local l_0_1 = (string.match)(l_0_0, "^http://canonicalizer.ucsuri.tcs/(%w%w+)$")
-  l_0_1 = (string.gsub)(l_0_1, "00", "")
-  l_0_1 = l_0_1:fromhex()
-  l_0_1 = (string.match)(l_0_1, "^%d%d?%d?%.%d%d?%d?%.%d%d?%d?%.%d%d?%d?:%d%d%d+/(.*)$")
-  if l_0_1 and (string.len)(l_0_1) > 24 and (string.find)(l_0_1, "^[%w/_%-=]+$") and (nri.GetHttpCommand)() == nri.HTTP_GET and (nri.GetHttpResponseHeader)("Server") == "Apache" and (nri.GetHttpResponseHeader)("Content-Type") == "application/octet-stream" then
-    local l_0_2 = tonumber((nri.GetHttpResponseHeader)("Content-Length"))
-    if l_0_2 and l_0_2 > 160000 and l_0_2 < 220000 then
-      return mp.INFECTED
-    end
-  end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_1 = (this_sigattrlog[1]).utf8p2
+  local l_0_2 = nil
+else
 end
 do
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
+
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+    local l_0_3, l_0_4 = (this_sigattrlog[2]).utf8p1, (this_sigattrlog[2]).utf8p2
+    l_0_4 = (this_sigattrlog[3]).utf8p2
+    local l_0_5 = nil
+  else
+  end
+  do
+    -- DECOMPILER ERROR at PC80: Overwrote pending register: R0 in 'AssignReg'
+
+    if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
+      local l_0_6, l_0_7 = (this_sigattrlog[4]).utf8p1, (this_sigattrlog[4]).utf8p2
+      l_0_7 = (this_sigattrlog[5]).utf8p2
+      local l_0_8 = nil
+    else
+    end
+    do
+      -- DECOMPILER ERROR at PC114: Overwrote pending register: R0 in 'AssignReg'
+
+      if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p2 ~= nil then
+        local l_0_9, l_0_10, l_0_12, l_0_13, l_0_15, l_0_16, l_0_18 = (this_sigattrlog[6]).utf8p1, (this_sigattrlog[6]).utf8p2
+        l_0_12 = this_sigattrlog
+        l_0_12 = l_0_12[7]
+        l_0_10 = l_0_12.utf8p2
+        local l_0_11, l_0_14, l_0_17, l_0_19 = nil
+      else
+      end
+      do
+        if ((this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p2 ~= nil and (this_sigattrlog[8]).utf8p1 == nil) or (this_sigattrlog[8]).utf8p2 == nil then
+          return mp.CLEAN
+        end
+        local l_0_20 = nil
+        local l_0_21 = nil
+        ;
+        (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), {["[" .. l_0_20 .. "]"] = "[" .. l_0_21 .. "]"})
+        return mp.INFECTED
+      end
+    end
+  end
 end
 

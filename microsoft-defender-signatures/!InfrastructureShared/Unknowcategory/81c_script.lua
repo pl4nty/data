@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-    if (string.match)(l_0_1, "%a%a%a%a%a+%_%d%d%d%d%d%d%d%d%d%d%d+%.exe") then
-      (mp.set_mpattribute)("LUA:WithLongNumberFilename")
-    end
-  end
+if peattributes.isdll then
   return mp.CLEAN
 end
+local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if (string.sub)(l_0_1, 1, 6) == "dmgr1." and l_0_0:find("\\temp\\", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

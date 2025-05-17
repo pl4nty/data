@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("lua_codepatch_Obfuscator_XQ") then
+do
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 69632 and (mp.getfilesize)() < 94208 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if (pe.get_regval)(pe.REG_EBX) ~= 2011627520 then
-  return mp.CLEAN
-end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

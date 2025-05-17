@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.AddressOfEntryPoint == 0 and (pe.get_exports)() > 296 and peattributes.isdll == true then
-  return mp.INFECTED
+if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.GetSMSProcArchitecture)() ~= mp.SMS_PROC_ARCH_X32 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

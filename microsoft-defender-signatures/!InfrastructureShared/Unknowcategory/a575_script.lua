@@ -3,43 +3,37 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  local l_0_1 = false
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC21: No list found for R2 , SetList fails
 
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+  -- DECOMPILER ERROR at PC22: Overwrote pending register: R3 in 'AssignReg'
 
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-      local l_0_1, l_0_2 = (this_sigattrlog[2]).utf8p2
+  -- DECOMPILER ERROR at PC23: Overwrote pending register: R4 in 'AssignReg'
+
+  for l_0_6,l_0_7 in ("ALF:")("SLF:") do
+    -- DECOMPILER ERROR at PC26: Overwrote pending register: R8 in 'AssignReg'
+
+    if (("TELPER:").sub)(l_0_0, 1, (string.len)(l_0_7)) == l_0_7 then
+      break
     end
-    -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC47: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_1 ~= nil then
-      local l_0_3 = nil
-      local l_0_4 = ((string.lower)((string.sub)(l_0_1, -32))):match("\\([^\\]+)$")
-      if ({["pcpitstopscheduleservice.exe"] = true})[l_0_4] then
+  end
+  do
+    do
+      if not l_0_1 then
         return mp.CLEAN
       end
-      local l_0_5 = nil
-      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
-        local l_0_6 = nil
-        -- DECOMPILER ERROR at PC72: Confused about usage of register: R8 in 'UnsetPending'
-
-        if (sysio.IsFileExists)(R8_PC72) then
-          (bm.add_related_file)(R8_PC72)
-        end
-      end
-    end
-    do
-      l_0_4 = mp
-      l_0_4 = l_0_4.INFECTED
-      return l_0_4
+      ;
+      (bm.trigger_sig)("DHA_LOWFI_AMSI_MATCH", l_0_0)
+      ;
+      (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", l_0_0)
+      ;
+      (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
+      do return mp.INFECTED end
+      do return mp.CLEAN end
+      -- WARNING: undefined locals caused missing assignments!
     end
   end
 end

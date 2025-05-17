@@ -3,25 +3,12 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    local l_0_3 = (string.lower)(l_0_0:match("\\([^\\]+)$"))
-    if ({["windbg.exe"] = true, ["svchost.exe"] = true, tmp000000ed = true})[l_0_3] then
-      return mp.INFECTED
-    end
-  end
-  do
-    return mp.CLEAN
-  end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 == nil then
+  return mp.CLEAN
 end
+local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+if (string.match)(l_0_0, "advfirewall firewall add rule name=.+program=.+\\explorer.exe") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

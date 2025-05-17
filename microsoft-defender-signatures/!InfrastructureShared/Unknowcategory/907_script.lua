@@ -3,23 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if l_0_1:find("\\appdata\\local\\temp", 1, true) ~= nil or l_0_1:find("\\local settings\\temp", 1, true) ~= nil then
-      local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-      if l_0_2 == "regsvr32.exe" then
-        (mp.set_mpattribute)("Lua:ContextRegsvr32AccessTemp.A")
-      else
-        if l_0_2 == "control.exe" then
-          (mp.set_mpattribute)("Lua:ContextControlAccessTemp.A")
-        end
-      end
-    end
+if not (mp.get_mpattribute)("AndroidOS:HSTR:Generality.C") then
+  return mp.CLEAN
+end
+if not (mp.get_mpattribute)("AndroidOS:HSTR:AndroidElf") then
+  local l_0_0 = ((string.sub)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)), -5)):match("(%.%w+)$")
+  local l_0_1 = {}
+  l_0_1[".ko"] = ""
+  l_0_1[".o"] = ""
+  if l_0_1[l_0_0] then
+    return mp.CLEAN
+  end
+  local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+  if l_0_2:find("snort", 1, true) then
+    return mp.CLEAN
   end
 end
 do
+  if #(mp.enum_mpattributesubstring)("TEL:Exploit:Android/CVE") == 0 then
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
 

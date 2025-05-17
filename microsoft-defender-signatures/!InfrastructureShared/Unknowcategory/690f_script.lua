@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and peattributes.ismsil == true then
+if epcode[1] == 104 and epcode[6] == 195 and epcode[7] == 144 then
   return mp.INFECTED
 end
 return mp.CLEAN

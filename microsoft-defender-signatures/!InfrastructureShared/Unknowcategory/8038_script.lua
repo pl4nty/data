@@ -3,11 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
+do
+  if (mp.getfilesize)() <= 4096 then
+    local l_0_0 = nil
+    l_0_0 = (mp.getfilename)()
+    if l_0_0 == nil then
+      return mp.CLEAN
+    end
+    if l_0_0:sub(-19) == "->word/document.xml" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (mp.getfilesize)() > 153600 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

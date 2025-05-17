@@ -3,10 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((Remediation.Threat).Name, "Win32/Sefnit!cfg", 1, true) >= 0 then
-  local l_0_0 = (sysio.GetCommandLineFromService)("tor")
-  if l_0_0 == "\"C:\\Program Files\\Tor\\tor.exe\" --nt-service \"-ControlPort\" \"9051\"" then
-    (sysio.DeleteService)("tor")
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+do
+  if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+    if l_0_1 then
+      l_0_1 = (string.lower)(l_0_1)
+      if l_0_1 == "lsass.exe" then
+        return mp.INFECTED
+      end
+    end
   end
+  return mp.CLEAN
 end
 

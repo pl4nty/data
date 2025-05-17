@@ -3,25 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 20
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 256)
-local l_0_2 = (string.find)(l_0_1, "t", 1, true)
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-l_0_0 = l_0_0 + l_0_2 - 1
+local l_0_0 = {}
+l_0_0.server = (nri.GetHttpRequestHeader)("Server")
+l_0_0.accept = (nri.GetHttpRequestHeader)("Accept")
+l_0_0["accept-encoding"] = (nri.GetHttpRequestHeader)("Accept-Encoding")
+l_0_0.connection = (nri.GetHttpRequestHeader)("Connection")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + (l_0_0), "\235")
-l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
-for l_0_6 = 1, l_0_0 do
-  local l_0_7 = (string.find)(l_0_1, "`\185....Û§a", l_0_6, true)
-  if not l_0_7 then
-    break
-  end
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_7 - 1, "êêêêêêêê\144")
-end
-do
-  return mp.INFECTED
-end
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+return mp.INFECTED
 

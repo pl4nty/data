@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.ismsil == true and (mp.getfilesize)() < 500000 then
+if (mp.get_mpattribute)("NID:Trojan:Win64/Lazy.MBXI!MTB") and peattributes.isexe == true then
   return mp.INFECTED
 end
 return mp.CLEAN

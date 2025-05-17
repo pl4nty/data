@@ -3,24 +3,36 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if (string.find)(l_0_2, "appdata\\local\\packages\\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\\localstate\\files\\s0\\", 1, true) ~= nil then
-    local l_0_3 = {}
-    l_0_3["runtimebroker.exe"] = true
-    l_0_3["hxtsr.exe"] = true
-    if l_0_3[l_0_1] == true and (string.len)((mp.getfilename)()) > 4 then
-      local l_0_4 = (string.lower)((string.sub)((mp.getfilename)(), -4))
-      if l_0_4 == ".exe" or l_0_4 == ".jar" or l_0_4 == ".zip" then
-        (mp.set_mpattribute)("Lua:Win10MailAppOpenExecFiles")
-        return mp.INFECTED
-      end
+if mp.HEADERPAGE_SZ < 1024 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.readu_u16)(headerpage, 9)
+local l_0_1 = (mp.readu_u32)(headerpage, 23)
+if l_0_0 == 0 and l_0_1 ~= 0 then
+  (mp.set_mpattribute)("Lua:ZipNoCompression")
+  if (mp.readu_u32)(headerpage, 19) == 4294967295 and (mp.readu_u32)(headerpage, 23) == 4294967295 then
+    local l_0_2 = 31 + (mp.readu_u16)(headerpage, 27) + (mp.readu_u16)(headerpage, 29)
+    if l_0_2 < 1008 and (mp.readu_u32)(headerpage, l_0_2) == 67324752 then
+      (mp.set_mpattribute)("Lua:MizenotaDoubleZip")
     end
   end
 end
 do
-  return mp.CLEAN
+  local l_0_3 = 1
+  do
+    if l_0_0 == 0 and l_0_1 == 0 then
+      local l_0_4 = 31 + (mp.readu_u16)(headerpage, 27) + (mp.readu_u16)(headerpage, 29)
+      if l_0_4 < 1008 and (mp.readu_u32)(headerpage, l_0_4) == 67324752 then
+        l_0_3 = l_0_4
+      end
+    end
+    if (mp.bitand)((mp.readu_u16)(headerpage, l_0_3 + 6), 1) == 1 then
+      (mp.set_mpattribute)("Lua:ZipEncrypted")
+    end
+    return mp.CLEAN
+  end
 end
 

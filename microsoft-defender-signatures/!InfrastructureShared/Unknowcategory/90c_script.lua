@@ -3,34 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == false then
-  return mp.CLEAN
+Infrastructure_SoctuseerReportPathExclusions = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = (sysio.RegOpenKey)(l_1_0)
+  if l_1_1 then
+    local l_1_2 = (sysio.RegEnumValues)(l_1_1)
+    for l_1_6,l_1_7 in pairs(l_1_2) do
+      if (string.match)(l_1_7, "%a:\\Windows\\System32\\drivers\\%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%.sys") or (string.match)(l_1_7, "%a:\\program files\\%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x\\") or (string.match)(l_1_7, "%a:\\Windows\\%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%.exe") then
+        (MpDetection.ReportResource)("regkeyvalue", l_1_0 .. "\\\\" .. l_1_7, 805306507, false)
+      end
+    end
+  end
 end
-if peattributes.packed == true then
-  return mp.CLEAN
-end
-if peattributes.packersigmatched == true then
-  return mp.CLEAN
-end
-if peattributes.no_resources == true then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 1048576 then
-  return mp.CLEAN
-end
-if pehdr.TimeDateStamp ~= 708992537 then
-  return mp.CLEAN
-end
-local l_0_1 = (pe.get_versioninfo)()
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-if l_0_1.FileVersion == "5.1.2600.2180" and l_0_1.ProductName == "Windows\174 NetMeeting\174" then
-  (mp.set_mpattribute)("//LUA:SoftwareBundler:Win32/Ogimant.gen!B_FileVersion")
-end
-if l_0_1.CompanyName == "Micrоsоft Cоrpоration" then
-  (mp.set_mpattribute)("//LUA:SoftwareBundler:Win32/Ogimant.gen!B_FileVersion")
-end
-return mp.CLEAN
+
 

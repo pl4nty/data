@@ -3,36 +3,41 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-local l_0_1 = (mp.GetBruteMatchData)()
-local l_0_2 = l_0_1.match_offset + 1
-local l_0_3 = l_0_1.match_offset + 1 + 200
-if l_0_1.is_header then
-  l_0_0 = ((tostring(headerpage)):sub(l_0_2, l_0_3)):lower()
-else
-  l_0_0 = ((tostring(footerpage)):sub(l_0_2, l_0_3)):lower()
-end
-if not l_0_0:find("get/autodiscover/autodiscover.json?", 1, true) and not l_0_0:find("post/autodiscover/autodiscover.json?", 1, true) then
+if peattributes.no_relocs ~= false then
   return mp.CLEAN
 end
-local l_0_4 = function(l_1_0)
-  -- function num : 0_0
-  return l_1_0:gsub("%%(%x%x)", function(l_2_0)
-    -- function num : 0_0_0
-    local l_2_1 = string.char
-    do
-      local l_2_2, l_2_3, l_2_4 = tonumber(l_2_0, 16), .end
-      do return l_2_1(l_2_2, l_2_3, l_2_4) end
-      -- DECOMPILER ERROR at PC8: Confused about usage of register R2 for local variables in 'ReleaseLocals'
-
-    end
-  end
-)
+if peattributes.isdll ~= true then
+  return mp.CLEAN
 end
-
-local l_0_5 = (string.lower)((string.gsub)(l_0_4(l_0_0), "%%", ""))
-if l_0_5:find("/powershell?", 1, true) or l_0_5:find("/powershell/?", 1, true) then
-  return mp.INFECTED
+if peattributes.hasexports == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW == 1920168494 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).Size == 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[6]).Size < 8 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[6]).RVA), 16)
+if (mp.readu_u32)(l_0_0, 1) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 9) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 13) ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

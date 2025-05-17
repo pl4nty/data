@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("TripleKeyEncoding")
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:Elex")
+return mp.INFECTED
 

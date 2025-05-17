@@ -3,33 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
+(mp.readprotection)(false)
+local l_0_0 = (pe.get_regval)(pe.REG_ESP) + 4
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+local l_0_2 = (mp.readu_u32)(l_0_1, 1)
+l_0_1 = (pe.mmap_va)(l_0_2, 4)
+local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1048576
+if l_0_3 ~= 555819297 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetParentProcInfo)()
-if l_0_1 == nil then
-  return mp.CLEAN
+local l_0_4 = (pe.vm_search)(pevars.sigaddr + 64, pevars.sigaddr + 256, "\000\000\016\000s", nil, pe.VM_SEARCH_BITMASK)
+if l_0_4 == nil then
+  return mp.LOWFI
 end
-local l_0_2 = (string.lower)(l_0_1.image_path)
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-if not l_0_2:find("\\explorer.exe") then
-  return mp.CLEAN
-end
-local l_0_3 = (mp.GetProcessCommandLine)(l_0_0)
-if not l_0_3 or #l_0_3 <= 60 then
-  return mp.CLEAN
-end
-local l_0_4 = (string.match)(l_0_3, "replace%(%\'(.-)%\'")
-if l_0_4 == nil or #l_0_4 ~= 1 then
-  return mp.CLEAN
-end
-local l_0_5 = (string.gsub)(l_0_3, "%" .. l_0_4, "")
-local l_0_6 = (string.lower)(l_0_5)
-if (string.find)(l_0_6, "curl", 1, true) and (string.find)(l_0_6, "http", 1, true) and ((string.find)(l_0_6, "iex", 1, true) or (string.find)(l_0_6, "invoke-expression", 1, true)) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(l_0_4 + 4, "\235")
+local l_0_5, l_0_6, l_0_7, l_0_8 = (mp.bsplit)(l_0_3, 8)
+;
+(pe.mmap_patch_va)(l_0_2, (string.char)(l_0_5))
+;
+(pe.mmap_patch_va)(l_0_2 + 1, (string.char)(l_0_6))
+;
+(pe.mmap_patch_va)(l_0_2 + 2, (string.char)(l_0_7))
+;
+(pe.mmap_patch_va)(l_0_2 + 3, (string.char)(l_0_8))
+return mp.LOWFI
 

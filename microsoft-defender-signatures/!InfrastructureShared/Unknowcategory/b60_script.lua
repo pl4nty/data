@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:PBot")
+(mp.set_mpattribute)("//ClearLockMain")
 return mp.INFECTED
 

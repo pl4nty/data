@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".rsrc" and (mp.bitand)((pesecs[4]).Characteristics, 3221487648) == 3221487648 then
-  return mp.INFECTED
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-;
-(mp.set_mpattribute)("HSTR:Win32/Nabucur.01")
-return mp.CLEAN
+return mp.INFECTED
 

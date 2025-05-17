@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSIsRemoteSession)
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if (string.find)(l_0_0, ".htaccess", 1, true) then
-      return mp.CLEAN
-    end
-    if (sysio.IsFileExists)(l_0_0) then
-      (bm.add_related_file)(l_0_0)
+  if l_0_1 then
+    local l_0_2 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSUserName)
+    if (MpCommon.QueryPersistContextNoPath)("MpNewRemoteUsers", l_0_2) then
+      return mp.INFECTED
     end
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

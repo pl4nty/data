@@ -3,31 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+local l_0_0 = (sysio.RegOpenKey)("HKCR\\*\\shell\\filescout")
+if l_0_0 ~= nil then
+  (sysio.DeleteRegKey)(l_0_0, nil)
 end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_1 ~= "msiexec.exe" then
-    return mp.CLEAN
-  end
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if l_0_2:sub(-17) == "\\windows\\system32" then
-    local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-    local l_0_4 = (string.lower)(l_0_3)
-    if l_0_4:sub(1, 2) == "ii" and l_0_4:sub(-4) == ".exe" then
-      local l_0_5 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
-      local l_0_6 = (string.lower)(l_0_5)
-      if l_0_6:sub(-10) == "\\all users" or l_0_6:sub(-12) == "\\programdata" or l_0_6:sub(-17) == "\\application data" or l_0_6:sub(-16) == "\\appdata\\roaming" then
-        local l_0_7 = (MpCommon.PathToWin32Path)(l_0_5) .. "\\" .. l_0_4
-        ;
-        (mp.ReportLowfi)(l_0_7, 391666626)
-      end
-    end
-  end
+local l_0_1 = (sysio.RegOpenKey)("HKCR\\*\\shell\\unknownfile")
+if l_0_1 ~= nil then
+  (sysio.DeleteRegKey)(l_0_1, nil)
 end
-do
-  return mp.CLEAN
+local l_0_2 = (sysio.RegOpenKey)("HKCR\\Unknown\\shell\\openas\\command")
+if l_0_2 ~= nil then
+  local l_0_3 = (sysio.GetRegValueAsString)(l_0_2, nil)
+  -- DECOMPILER ERROR at PC72: Unhandled construct in 'MakeBoolean' P1
+
+  -- DECOMPILER ERROR at PC72: Unhandled construct in 'MakeBoolean' P1
+
+  if l_0_3 ~= nil and ((string.find)((string.lower)(l_0_3), "filescout.exe") or (string.find)((string.lower)(l_0_3), "unknownfile.exe")) and Info.OSMajorVersion == 6 and Info.OSMinorVersion >= 2 and Info.OSMinorVersion <= 3 then
+    (sysio.SetRegValueAsStringExpand)(l_0_2, nil, "%SystemRoot%\\system32\\OpenWith.exe \"%1\"")
+  end
+  ;
+  (sysio.SetRegValueAsStringExpand)(l_0_2, nil, "%SystemRoot%\\system32\\rundll32.exe %SystemRoot%\\system32\\shell32.dll,OpenAs_RunDLL %1")
+  local l_0_4 = (sysio.GetRegValueAsString)(l_0_2, "fs_DelegateExecute")
+  if l_0_4 ~= nil and l_0_4 == "{e44e9428-bdbc-4987-a099-40dc8fd255e7}" then
+    (sysio.SetRegValueAsString)(l_0_2, "DelegateExecute", "{e44e9428-bdbc-4987-a099-40dc8fd255e7}")
+  end
 end
 

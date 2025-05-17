@@ -3,28 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1, l_0_2, l_0_3 = nil, nil, nil, nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 == nil then
-  return mp.CLEAN
+local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_CONTROL_GUID)
+local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 and l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN and ((string.match)(l_0_1, "19916e01%-b44e%-4e31%-94a4%-4696df46157b") or (string.match)(l_0_1, "c2c4f00a%-720e%-4389%-aeb9%-e9c4b0d93c6f") or (string.match)(l_0_1, "53001f3a%-f5e1%-4b90%-9c9f%-00e09b53c5f1")) then
+  (mp.aggregate_mpattribute)("Context:ICARDIEDLL")
+  ;
+  (mp.aggregate_mpattribute)("//MpIsIEVScan")
+  return mp.TRUE
 end
-local l_0_4 = nil
-if (this_sigattrlog[1]).wp1 == nil then
-  return mp.CLEAN
-end
-local l_0_5 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p2), "\\([^\\]+)$")
-l_0_4 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "\\([^\\]+)$")
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 == nil then
-  return mp.CLEAN
-end
-local l_0_6 = nil
-l_0_6 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), "\\([^\\]+)$")
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 == nil then
-  return mp.CLEAN
-end
-local l_0_7 = nil
-l_0_7 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p2), "\\([^\\]+)$")
-if l_0_5 == l_0_6 and l_0_5 ~= nil and l_0_4 == l_0_7 and l_0_4 ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.FALSE
 

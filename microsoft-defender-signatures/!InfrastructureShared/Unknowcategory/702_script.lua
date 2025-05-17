@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched and (this_sigattrlog[2]).wp1 == (this_sigattrlog[3]).wp1 then
-  return mp.INFECTED
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == 8 then
+  (mp.set_mpattribute)("MpIsInMemoryScan")
 end
 return mp.CLEAN
 

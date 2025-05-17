@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Sigattr:TrojanSpy:Win32/Banker.gen!E.1") then
+if peattributes.x86_image and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

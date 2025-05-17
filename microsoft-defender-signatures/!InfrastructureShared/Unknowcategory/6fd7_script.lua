@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -8) == "ekrn.exe" then
-  return mp.CLEAN
+if (hstrlog[1]).matched then
+  return mp.INFECTED
 end
-return mp.INFECTED
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Lznt_Xor8_Win32")
+return mp.LOWFI
 

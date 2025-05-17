@@ -3,14 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
-  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28768 then
-    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
-    l_0_0.TlsJa3CHash = l_0_5
-    ;
-    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+if (mp.get_mpattribute)("BM_OLE_FILE") then
+  (mp.set_mpattribute)("SCRIPT:PDFinOLE")
+  if (mp.get_mpattribute)("InEmail") then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 == nil or l_0_0 > 1000000 or l_0_0 < 1000 then
+      return mp.CLEAN
+    end
+    if (mp.BMSearchFile)(0, l_0_0, ".Document.DC\144\001@\144\002@h\000t\000t\000p\000:\000/\000/\144\000") > 0 then
+      return mp.INFECTED
+    end
   end
 end
-return mp.INFECTED
+do
+  return mp.CLEAN
+end
 

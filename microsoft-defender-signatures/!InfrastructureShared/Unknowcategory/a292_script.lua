@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if not (mp.get_mpattribute)("pea_genpacked") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 163840 and (mp.getfilesize)() < 200192 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -17) == "\\inetsrv\\w3wp.exe" then
+  return mp.INFECTED
+end
+local l_0_1, l_0_2 = (bm.get_process_relationships)()
+for l_0_6,l_0_7 in ipairs(l_0_1) do
+  if l_0_7.image_path ~= nil and (mp.bitand)(l_0_7.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_7.image_path, -17)) == "\\inetsrv\\w3wp.exe" then
     return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

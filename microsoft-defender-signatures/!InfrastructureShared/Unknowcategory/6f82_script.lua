@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>%w+%.vbs$") == nil then
-  return mp.CLEAN
+local l_0_0 = ((mp.getfilename)()):lower()
+if (string.find)(l_0_0, ":\\users\\", 1, true) ~= nil then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

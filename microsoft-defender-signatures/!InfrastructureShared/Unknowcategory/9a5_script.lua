@@ -3,56 +3,71 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetResmgrBasePlugin)() ~= "Taskscheduler" then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "%-%>%(UTF%-16LE%)$") == nil then
-  return mp.CLEAN
-end
-local l_0_1 = tostring(headerpage)
-local l_0_2 = (string.match)(l_0_1, "<Exec>.*<Command>(.*)</Command>.*</Exec>")
-local l_0_3 = (string.match)(l_0_1, "<Exec>.*<Arguments>(.*)</Arguments>.*</Exec>")
-if l_0_2 == nil then
-  local l_0_4 = (mp.getfilesize)()
-  if l_0_4 > 4096 and l_0_4 < 20480 then
-    (mp.readprotection)(false)
-    local l_0_5 = (mp.readfile)(0, l_0_4)
-    l_0_2 = (string.match)(l_0_5, "<Exec>.*<Command>(.*)</Command>.*</Exec>")
-    l_0_3 = (string.match)(l_0_5, "<Exec>.*<Arguments>(.*)</Arguments>.*</Exec>")
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
+    local l_0_0 = nil
   else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).wp1 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).wp1 ~= nil then
+      local l_0_1 = (this_sigattrlog[3]).utf8p1
+    else
+    end
+    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+
     do
+      if (not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).wp1 == nil or (this_sigattrlog[6]).matched) and (this_sigattrlog[6]).wp1 ~= nil then
+        local l_0_2 = (this_sigattrlog[5]).utf8p1
+      else
+      end
+      -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
+
       do
-        do return mp.CLEAN end
-        if l_0_2 == nil then
-          return mp.CLEAN
-        end
-        if l_0_3 ~= nil then
-          l_0_2 = l_0_2 .. " " .. l_0_3
-        end
-        local l_0_6 = (string.lower)(l_0_2)
-        local l_0_7, l_0_8 = (string.match)(l_0_6, "(.*powershell[%.exe]-)%s+%-encodedcommand%s+()")
-        if l_0_7 == nil then
-          l_0_7 = (string.match)(l_0_6, "(.*powershell[%.exe]-)%s+.-%-en?c?%s+()")
-        end
-        if l_0_7 ~= nil and l_0_8 ~= nil then
-          local l_0_9 = (MpCommon.Base64Decode)((string.sub)(l_0_2, l_0_8))
-          if l_0_9 ~= nil then
-            l_0_9 = (string.gsub)(l_0_9, "%z", "")
-            ;
-            (mp.vfo_add_buffer)(l_0_7 .. " " .. l_0_9, "[TaskSchedCommand]", 0)
-          else
-            ;
-            (mp.vfo_add_buffer)(l_0_2, "[TaskSchedCommand]", 0)
-          end
+        if (not (this_sigattrlog[7]).matched or (this_sigattrlog[7]).wp1 == nil or (this_sigattrlog[8]).matched) and (this_sigattrlog[8]).wp1 ~= nil then
+          local l_0_3 = (this_sigattrlog[7]).utf8p1
         else
+        end
+        -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
+
+        do
+          if (not (this_sigattrlog[9]).matched or (this_sigattrlog[9]).wp1 == nil or (this_sigattrlog[10]).matched) and (this_sigattrlog[10]).wp1 ~= nil then
+            local l_0_4 = (this_sigattrlog[9]).utf8p1
+          else
+          end
+          -- DECOMPILER ERROR at PC152: Overwrote pending register: R0 in 'AssignReg'
+
           do
-            ;
-            (mp.vfo_add_buffer)(l_0_2, "[TaskSchedCommand]", 0)
-            return mp.CLEAN
+            if (not (this_sigattrlog[11]).matched or (this_sigattrlog[11]).wp1 == nil or (this_sigattrlog[12]).matched) and (this_sigattrlog[12]).wp1 ~= nil then
+              local l_0_5 = (this_sigattrlog[11]).utf8p1
+            else
+            end
+            -- DECOMPILER ERROR at PC180: Overwrote pending register: R0 in 'AssignReg'
+
+            do
+              if (not (this_sigattrlog[13]).matched or (this_sigattrlog[13]).wp1 == nil or (this_sigattrlog[14]).matched) and (this_sigattrlog[14]).wp1 ~= nil then
+                local l_0_6, l_0_7, l_0_8 = (this_sigattrlog[13]).utf8p1
+              else
+              end
+              if not (this_sigattrlog[15]).matched or (this_sigattrlog[15]).wp1 == nil or (this_sigattrlog[1]).matched then
+                local l_0_9 = (this_sigattrlog[15]).utf8p1
+                -- DECOMPILER ERROR at PC209: Confused about usage of register: R1 in 'UnsetPending'
+
+                if (this_sigattrlog[1]).utf8p1 ~= nil and l_0_9 ~= nil then
+                  local l_0_10 = nil
+                  local l_0_11 = (string.match)((this_sigattrlog[1]).utf8p1, "(.*\\)")
+                  if (string.match)(l_0_9, "(.*\\)") ~= nil and (string.match)(l_0_9, "(.*\\)") == l_0_11 then
+                    return mp.INFECTED
+                  end
+                end
+              end
+              do
+                return mp.CLEAN
+              end
+            end
           end
         end
       end

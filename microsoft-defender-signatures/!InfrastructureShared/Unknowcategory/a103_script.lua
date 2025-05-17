@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1048576 then
-  return mp.CLEAN
+if (((((hstrlog[1]).matched and not (hstrlog[3]).matched) or (hstrlog[5]).matched) and not (hstrlog[7]).matched) or (hstrlog[2]).matched) and ((hstrlog[4]).matched or (hstrlog[6]).matched or (hstrlog[8]).matched) then
+  return mp.INFECTED
 end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.LOWFI
 end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
+return mp.CLEAN
 

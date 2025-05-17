@@ -3,24 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 550000 and l_0_0 < 600000 then
-  return mp.INFECTED
+if (mp.get_mpattributesubstring)("PUA:ML:Staged:") then
+  (mp.set_mpattribute)("PUA:Staged:CertificatesGBL")
 end
-if l_0_0 > 120000 and l_0_0 < 300000 then
-  return mp.INFECTED
+if (mp.get_mpattributesubstring)("PUA:ML:Blocked:") then
+  (mp.set_mpattribute)("PUA:Blocked:Certificates")
 end
-if l_0_0 > 40000 and l_0_0 < 70000 then
-  return mp.INFECTED
-end
-if l_0_0 > 10000 and l_0_0 < 15000 then
-  return mp.INFECTED
-end
-if l_0_0 > 7600 and l_0_0 < 7700 then
-  return mp.INFECTED
-end
-if l_0_0 > 4100 and l_0_0 < 4300 then
-  return mp.INFECTED
+if (mp.get_mpattributesubstring)("PUA:Block:") then
+  (mp.set_mpattribute)("PUA:Blocked:Signature")
 end
 return mp.CLEAN
 

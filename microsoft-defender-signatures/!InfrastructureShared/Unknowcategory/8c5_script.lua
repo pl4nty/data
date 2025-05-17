@@ -3,28 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= l_0_0.integrity_level then
-  local l_0_1 = nil
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    l_0_1 = (this_sigattrlog[1]).utf8p1
-  end
-  do
-    do
-      if l_0_1 ~= nil then
-        local l_0_2 = {}
-        l_0_2["uacmonitor.exe"] = true
-        l_0_2["issuser.exe"] = true
-        l_0_2["wdg.automation.agenthost.exe"] = true
-        l_0_2["cmd.exe"] = true
-        l_0_2["powershell.exe"] = true
-        if l_0_2[((string.lower)((string.sub)(l_0_1, -30))):match("\\system32\\([^\\]+%.exe)$")] then
-          return mp.CLEAN
-        end
-      end
-      do return mp.INFECTED end
-      return mp.CLEAN
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if l_0_1 == "svchost.exe" then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if (string.sub)(l_0_2, -34) == "\\appdata\\roaming\\microsoft\\windows" or (string.sub)(l_0_2, -35) == "\\application data\\microsoft\\windows" then
+      (mp.set_mpattribute)("Lua:DipverdleFileName.A")
     end
   end
+end
+do
+  return mp.CLEAN
 end
 

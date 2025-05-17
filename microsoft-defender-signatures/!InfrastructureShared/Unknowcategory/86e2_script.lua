@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_boundimport") and (mp.getfilesize)() >= 2404352 and (mp.getfilesize)() < 2428928 then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 7, 4)
+if (mp.readu_u32)(l_0_0, 1) < 12288 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

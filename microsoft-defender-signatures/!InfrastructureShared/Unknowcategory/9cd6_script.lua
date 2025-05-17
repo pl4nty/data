@@ -4,10 +4,10 @@
 -- params : ...
 -- function num : 0
 do
-  if peattributes.isexe == true and (pesecs[6]).Name == "qhnxjbuu" and (pesecs[5]).Name == "dyzwkzqi" then
+  if peattributes.isexe == true and (mp.getfilesize)() >= 5000000 and peattributes.x86_image == true then
     local l_0_0 = (mp.GetCertificateInfo)()
     for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
+      if l_0_5.Signers ~= nil and (l_0_5.Signers).IsValid == true then
         return mp.CLEAN
       end
     end

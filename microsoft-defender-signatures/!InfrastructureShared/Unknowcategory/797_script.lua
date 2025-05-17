@@ -3,26 +3,13 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
-    local l_0_0 = nil
-  end
-  if (this_sigattrlog[1]).matched then
-    local l_0_1 = nil
-    -- DECOMPILER ERROR at PC27: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (this_sigattrlog[1]).utf8p1 ~= nil and l_0_1 ~= nil then
-      local l_0_2 = nil
-      local l_0_3 = (string.match)((this_sigattrlog[1]).utf8p1, "(.*\\)")
-      if (string.match)(l_0_1, "(.*\\)") ~= nil and (string.match)(l_0_1, "(.*\\)") == l_0_3 then
-        return mp.INFECTED
-      end
-    end
-  end
-  do
-    return mp.CLEAN
-  end
+if (mp.getfilesize)() > 1048576 then
+  return mp.CLEAN
 end
+if #(mp.enum_mpattributesubstring)("SCPT:CVE-2019-1652-A") >= 10 and #(mp.enum_mpattributesubstring)("SCPT:CVE-2019-1653-") >= 3 then
+  return mp.INFECTED
+else
+  return mp.CLEAN
+end
+return mp.CLEAN
 

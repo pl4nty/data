@@ -4,9 +4,10 @@
 -- params : ...
 -- function num : 0
 do
-  if peattributes.isdll then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 5447680 and l_0_0 < 7290880 and (pe.query_import)(pe.IMPORT_STATIC, 3164448353) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2744197095) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2717511079) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 537135066) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3293213921) ~= 0 then
+  if (mp.get_mpattribute)("pea_isexe") and peattributes.hasappendeddata then
+    local l_0_0 = (pe.get_versioninfo)()
+    if l_0_0 == nil or l_0_0 and l_0_0.CompanyName ~= "www.xmrig.com" and l_0_0.OriginalFilename ~= "xmrig.exe" and l_0_0.OriginalFilename ~= "xmrigMiner.exe" then
+      (mp.set_mpattribute)("Miner:XMRigRelated")
       return mp.INFECTED
     end
   end

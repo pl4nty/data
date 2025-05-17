@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilesize)() < 2048000 or (mp.getfilesize)() < 39845887 or (mp.getfilesize)() <= 40000000) and pehdr.NumberOfSections == 3 then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "oleObject%d%.bin$") ~= nil or (string.find)(l_0_0, "%.bin%->%(Ole Stream %d%)$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

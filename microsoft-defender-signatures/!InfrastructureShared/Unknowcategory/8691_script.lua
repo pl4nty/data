@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true and peattributes.hasexports == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil or l_0_0.image_path == nil then
   return mp.CLEAN
 end
+local l_0_1 = (string.lower)(l_0_0.image_path)
+if l_0_1:match("([^\\]+)$") ~= "explorer.exe" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

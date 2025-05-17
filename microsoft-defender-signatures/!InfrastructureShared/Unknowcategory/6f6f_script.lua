@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("CallsZwQuerySystemInformation") then
-  (mp.set_mpattribute)("PEBMPAT:AntiEmuGetCopyOnWriteCount")
+if (mp.get_mpattribute)("NID:Trojan:Win64/StrelaStealer.MBXI!MTB") and (mp.get_mpattribute)("pea_isdll") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

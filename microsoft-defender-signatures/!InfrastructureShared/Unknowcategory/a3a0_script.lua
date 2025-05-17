@@ -3,17 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (string.lower)(l_0_0.command_line)
-if (string.find)(l_0_1, "\\program files", 1, true) then
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 16)
+local l_0_1 = (mp.readu_u32)(l_0_0, 3)
+local l_0_2 = (pe.mmap_va)(l_0_1, 6)
+if (string.byte)(l_0_2, 1) == 83 and (string.byte)(l_0_2, 2) == 108 and (string.byte)(l_0_2, 3) == 101 and (string.byte)(l_0_2, 4) == 101 and (string.byte)(l_0_2, 5) == 112 and (string.byte)(l_0_2, 6) == 0 then
+  return mp.INFECTED
 end
-local l_0_2 = (mp.enum_mpattributesubstring)("Behavior:")
-if #l_0_2 == 0 or l_0_2 == nil then
-  return mp.CLEAN
-end
-for l_0_6,l_0_7 in ipairs(l_0_2) do
-  (bm.add_related_string)("RelatedBMHits", l_0_7, bm.RelatedStringBMReport)
-end
-return mp.INFECTED
+return mp.CLEAN
 

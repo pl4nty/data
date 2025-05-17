@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true then
-  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-  end
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 14, 14)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\187" .. l_0_1 .. "\000\000\000êê\144")
+return mp.INFECTED
 

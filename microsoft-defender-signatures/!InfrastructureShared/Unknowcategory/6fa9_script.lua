@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.hasappendeddata and peattributes.x86_image then
-  return mp.INFECTED
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("MpRequestSMSM")
+return mp.INFECTED
 

@@ -6,14 +6,14 @@
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).wp2 ~= nil then
+    local l_0_0 = nil
   end
-  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
 
-  if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p1 == nil or (this_sigattrlog[3]).utf8p1 ~= nil then
-    (bm.add_related_file)((this_sigattrlog[3]).utf8p1)
+  if (string.find)(l_0_0, "wheel", 1, true) then
+    return mp.INFECTED
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

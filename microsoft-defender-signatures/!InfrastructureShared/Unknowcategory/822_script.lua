@@ -3,23 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(bm.get_current_process_startup_info)
-if l_0_0 then
-  local l_0_2 = l_0_1.command_line
-  if l_0_2 ~= nil then
-    l_0_2 = (string.lower)(l_0_2)
-    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_2)
-    for l_0_7,l_0_8 in ipairs(l_0_3) do
-      l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_8)
-      if (sysio.IsFileExists)(l_0_8) then
-        (bm.add_related_file)(l_0_8)
-      end
+local l_0_0 = (string.lower)((string.sub)((mp.getfilename)(), -3))
+if l_0_0 == ".7z" or l_0_0 == ".gz" then
+  (mp.UfsSetMetadataBool)("Lua:AttachmentContainerExt", true)
+  return mp.INFECTED
+else
+  if l_0_0 == "zip" or l_0_0 == "ace" or l_0_0 == "rar" then
+    local l_0_1 = (string.sub)((mp.getfilename)(), -4, -4)
+    if l_0_1 == "." then
+      (mp.UfsSetMetadataBool)("Lua:AttachmentContainerExt", true)
+      return mp.INFECTED
     end
   end
 end
 do
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  return l_0_2
+  return mp.CLEAN
 end
 

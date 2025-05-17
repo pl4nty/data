@@ -3,111 +3,79 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 <= 256 then
-  (mp.set_mpattribute)("LUA:FileSizeLE100.A")
+local l_0_0, l_0_1, l_0_2, l_0_3 = nil, nil, nil, nil
+local l_0_4 = nil
+local l_0_5 = nil
+local l_0_6 = nil
+local l_0_7 = nil
+local l_0_8 = true
+if (mp.GetScannedPPID)() == nil then
   return mp.CLEAN
 end
-if l_0_0 <= 512 then
-  (mp.set_mpattribute)("LUA:FileSizeLE200.A")
+local l_0_9 = false
+if (((not (string.find)((string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())), " /all", 1, true) or (string.find)((string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())), " /oldest", 1, true)) and not (string.find)((string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())), " /shadow=", 1, true)) or l_0_9 ~= true) and (true or true) then
   return mp.CLEAN
 end
-if l_0_0 <= 1024 then
-  (mp.set_mpattribute)("LUA:FileSizeLE400.A")
+local l_0_10 = nil
+while 1 do
+  -- DECOMPILER ERROR at PC61: Confused about usage of register: R10 in 'UnsetPending'
+
+  if 0 <= 5 then
+    if 0 == 0 then
+      l_0_8 = pcall(mp.GetParentProcInfo)
+    else
+      -- DECOMPILER ERROR at PC75: Overwrote pending register: R0 in 'AssignReg'
+
+      l_0_8 = pcall(mp.GetParentProcInfo, l_0_5)
+    end
+  end
+  if l_0_8 == true then
+    if l_0_4 == nil then
+      break
+    end
+    l_0_5 = l_0_4.ppid
+  end
+  if l_0_5 == nil then
+    break
+  end
+  l_0_6 = l_0_4.image_path
+  if l_0_6 == nil then
+    break
+  end
+  l_0_6 = (string.lower)(l_0_6)
+  -- DECOMPILER ERROR at PC104: Confused about usage of register: R9 in 'UnsetPending'
+
+  do
+    if (mp.GetProcessCommandLine)(l_0_5) ~= nil then
+      local l_0_11 = nil
+      if (string.match)((string.lower)((mp.GetProcessCommandLine)(l_0_5)), "[a-zA-Z] (.+)$") ~= nil and ((string.find)((string.match)((string.lower)((mp.GetProcessCommandLine)(l_0_5)), "[a-zA-Z] (.+)$"), ":\\windows", 1, true) or (string.find)((string.match)((string.lower)((mp.GetProcessCommandLine)(l_0_5)), "[a-zA-Z] (.+)$"), ":\\program files", 1, true)) then
+        return mp.CLEAN
+      end
+    end
+    l_0_7 = (string.match)(l_0_6, "\\([^\\]+)$")
+    if l_0_7 ~= nil then
+      if l_0_7 == "" then
+        break
+      end
+      if l_0_7 == "psexecsvc.exe" or l_0_7 == "wmiprvse.exe" or l_0_7 == "gpscript.exe" or l_0_7 == "svchost.exe" or (string.find)(l_0_6, ":\\windows\\", 2, true) == nil and (string.find)(l_0_6, ":\\program files", 2, true) == nil then
+        return mp.CLEAN
+      end
+      if ((string.find)(l_0_6, "^:\\program files", 2) or (string.find)(l_0_6, ":\\windows\\system32\\nxtcod.exe", 2, true) or (string.find)(l_0_6, ":\\windows\\ccm\\", 2, true)) and ((string.find)(l_0_6, "\\easeus\\easeus partition master\\bin\\", 2, true) or (string.find)(l_0_6, "\\common files\\mcafee\\systemcore\\", 2, true) or (string.find)(l_0_6, "\\mcafee\\endpoint security\\threat prevention\\", 2, true) or (mp.IsKnownFriendlyFile)(l_0_6, true, true) == true) then
+        return mp.CLEAN
+      end
+      -- DECOMPILER ERROR at PC239: Confused about usage of register: R10 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+      -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_STMT
+
+      -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out DO_STMT
+
+    end
+  end
+end
+if 0 + 1 < 2 then
   return mp.CLEAN
 end
-if l_0_0 <= 2048 then
-  (mp.set_mpattribute)("LUA:FileSizeLE800.A")
-  return mp.CLEAN
-end
-if l_0_0 <= 4096 then
-  (mp.set_mpattribute)("LUA:FileSizeLE1000.A")
-  return mp.CLEAN
-else
-  ;
-  (mp.set_mpattribute)("LUA:FileSizeGE1000.A")
-end
-if l_0_0 <= 8192 then
-  (mp.set_mpattribute)("LUA:FileSizeLE2000.A")
-  return mp.CLEAN
-end
-if l_0_0 <= 20480 then
-  (mp.set_mpattribute)("LUA:FileSizeLE5000.A")
-  return mp.CLEAN
-else
-  ;
-  (mp.set_mpattribute)("LUA:FileSizeGT5000.A")
-end
-if l_0_0 <= 65536 then
-  (mp.set_mpattribute)("LUA:FileSizeLE10000.A")
-  return mp.CLEAN
-end
-if l_0_0 > 131072 then
-  (mp.set_mpattribute)("LUA:FileSizeGT20000.A")
-else
-  ;
-  (mp.set_mpattribute)("LUA:FileSizeLE20000.A")
-  return mp.CLEAN
-end
-if l_0_0 > 262144 then
-  (mp.set_mpattribute)("LUA:FileSizeGT40000.A")
-else
-  ;
-  (mp.set_mpattribute)("LUA:FileSizeLE40000.A")
-  return mp.CLEAN
-end
-if l_0_0 > 524288 then
-  (mp.set_mpattribute)("LUA:FileSizeGT80000.A")
-else
-  ;
-  (mp.set_mpattribute)("LUA:FileSizeLE80000.A")
-  return mp.CLEAN
-end
-if l_0_0 > 1048576 then
-  (mp.set_mpattribute)("LUA:FileSizeGT1M.A")
-else
-  ;
-  (mp.set_mpattribute)("LUA:FileSizeLE1M.A")
-  return mp.CLEAN
-end
-if l_0_0 > 2097152 then
-  (mp.set_mpattribute)("LUA:FileSizeGT2M.A")
-end
-if l_0_0 > 4194304 then
-  (mp.set_mpattribute)("LUA:FileSizeGT4M.A")
-end
-if l_0_0 > 8388608 then
-  (mp.set_mpattribute)("LUA:FileSizeGT8M.A")
-end
-if l_0_0 > 10485760 then
-  (mp.set_mpattribute)("LUA:FileSizeGT10M.A")
-end
-if l_0_0 > 12582912 then
-  (mp.set_mpattribute)("LUA:FileSizeGT12M.A")
-end
-if l_0_0 > 33554432 then
-  (mp.set_mpattribute)("LUA:FileSizeGT20M.A")
-end
-if l_0_0 > 67108864 then
-  (mp.set_mpattribute)("LUA:FileSizeGT40M.A")
-end
-if l_0_0 > 268435456 then
-  (mp.set_mpattribute)("LUA:FileSizeGT100M.A")
-end
-if l_0_0 > 268435456 then
-  (mp.set_mpattribute)("LUA:FileSizeGT256M.A")
-end
-if l_0_0 > 300000000 then
-  (mp.set_mpattribute)("LUA:FileSizeGT300M.A")
-end
-if l_0_0 > 500000000 then
-  (mp.set_mpattribute)("LUA:FileSizeGT500M.A")
-end
-if l_0_0 > 1000000000 then
-  (mp.set_mpattribute)("LUA:FileSizeGT1G.A")
-end
-if l_0_0 >= 50000 then
-  (mp.set_mpattribute)("Lua:FileSizeGEC350")
-end
-return mp.CLEAN
+return mp.INFECTED
 

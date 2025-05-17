@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[7]).Name == ".idata" and (pesecs[7]).Characteristics == 1073741888 then
+if (mp.get_mpattribute)("ALF:HSTR:Trojan:Win32/FauppodPDB.S010") then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Fauppod.SA")
+return mp.LOWFI
 

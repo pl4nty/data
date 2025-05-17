@@ -3,18 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  local l_0_7 = (string.lower)(l_0_6.image_path)
-  if (string.find)(l_0_7, "perfmon.exe", 1, true) or (string.find)(l_0_7, "mmc.exe", 1, true) or (string.find)(l_0_7, "werfault.exe", 1, true) or (string.find)(l_0_7, "wermgr.exe", 1, true) or (string.find)(l_0_7, "control.exe", 1, true) or (string.find)(l_0_7, "openwith.exe", 1, true) or (string.find)(l_0_7, "iexplore.exe", 1, true) or (string.find)(l_0_7, "msedge.exe", 1, true) or (string.find)(l_0_7, "\\chrome", 1, true) or (string.find)(l_0_7, "\\opera", 1, true) or (string.find)(l_0_7, "browser", 1, true) or (string.find)(l_0_7, "\\program files", 1, true) or (string.find)(l_0_7, "\\tencent", 1, true) or (string.find)(l_0_7, "\\sogou", 1, true) or (string.find)(l_0_7, "\\qq", 1, true) or (string.find)(l_0_7, "\\yandex", 1, true) or (string.find)(l_0_7, "\\360se", 1, true) or (string.find)(l_0_7, "launchwinapp.exe", 1, true) or (string.find)(l_0_7, "sgtool.exe", 1, true) or (string.find)(l_0_7, "\\vivaldi", 1, true) or (string.find)(l_0_7, "\\onedrive", 1, true) or (string.find)(l_0_7, "firefox.exe", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_6.ppid)
-  local l_0_9 = (mp.bitand)(l_0_6.reason_ex, bm.RELATIONSHIP_CREATED)
-  if l_0_9 == bm.RELATIONSHIP_CREATED and l_0_8.IntegrityLevel == MpCommon.SECURITY_MANDATORY_HIGH_RID then
-    (bm.add_related_process)(l_0_6.ppid)
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilename)()
+if not l_0_0 or l_0_0 == "" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+l_0_0 = l_0_0:lower()
+l_0_0 = l_0_0:match("([^%\\]+)$")
+if not l_0_0 or l_0_0 == "" then
+  return mp.CLEAN
+end
+do
+  if (l_0_0:match("%.[^%.]+(%.[^%.]+)$") == nil and "") or l_0_0:match("%.[^%.]+(%.[^%.]+)$") ~= "" then
+    local l_0_3 = nil
+    if ({["._locked"] = true, [".akira"] = true, [".basta"] = true, [".blackbyte"] = true, [".blacksuit"] = true, [".cerber"] = true, [".cerber2"] = true, [".cerber3"] = true, [".cryptolocker"] = true, [".coaq"] = true, [".cosakos"] = true, [".cuba"] = true, [".cymcrypt"] = true, [".dark_power"] = true, [".devil"] = true, [".dharma"] = true, [".eight"] = true, [".encryptedyourfiles"] = true, [".enigma"] = true, [".everest"] = true, [".fargo"] = true, [".foty"] = true, [".fs0ciety"] = true, [".gatz"] = true, [".gazprom"] = true, [".hack0"] = true, [".itlock3"] = true, [".itlock4"] = true, [".jyos"] = true, [".karma"] = true, [".kigatsu"] = true, [".kitz"] = true, [".l0cked"] = true, [".lockbit"] = true, [".locky"] = true, [".mallox"] = true, [".malox"] = true, [".medusa"] = true, [".met@n"] = true, [".neqp"] = true, [".niwm"] = true, [".nokonoko"] = true, [".nokoyawa"] = true, [".pandora"] = true, [".play"] = true, [".proton"] = true, [".qotr"] = true, [".quantum"] = true, [".ranzylocked"] = true, [".rook"] = true, [".royal"] = true, [".royal_w"] = true, [".rsnslocked"] = true, [".shino"] = true, [".thor"] = true, [".tury"] = true, [".venus"] = true, [".v-society"] = true, [".weon"] = true, [".wikon"] = true, [".wncry"] = true, [".wncryt"] = true, [".zatp"] = true, [".zepto"] = true})[l_0_3] then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

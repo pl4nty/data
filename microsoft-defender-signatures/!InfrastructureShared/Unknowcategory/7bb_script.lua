@@ -3,18 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.istriggercloudyfriendlyscan)() then
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
   return mp.CLEAN
 end
-local l_0_0 = (mp.get_parent_filehandle)()
-if not (mp.is_handle_nil)(l_0_0) then
-  return mp.CLEAN
+if l_0_1:find("\\temp\\", 1, true) ~= nil and l_0_2:find("^awh[0-9a-f][0-9a-f][0-9a-f]?[0-9a-f]?%.tmp$") == 1 then
+  return mp.INFECTED
 end
-if not (mp.isfriendlyscan)() then
-  return mp.CLEAN
-end
-if peattributes.msil_ngenimage then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

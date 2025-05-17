@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if (pe.isdynamic_va)(pevars.sigaddr) then
+  (pe.set_regval)(pe.REG_EAX, 0)
+  ;
+  (mp.set_mpattribute)("PEBMPAT:Simda:AntiEmuTimeStampCheck")
 end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-;
-(MpCommon.SetPersistContextNoPath)("MiKatzExe", l_0_1, 100)
-return mp.INFECTED
+return mp.CLEAN
 

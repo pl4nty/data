@@ -3,19 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() < 153600 then
-  local l_0_0, l_0_1 = (pe.get_exports)()
-  if l_0_1 == nil or l_0_0 == 0 then
-    return mp.CLEAN
-  end
-  for l_0_5 = 1, l_0_0 do
-    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
-    if l_0_6 ~= nil and (string.lower)(l_0_6) == "dllgetclassobject" then
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+  local l_0_0, l_0_1, l_0_2 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC33: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (MpCommon.QueryPersistContext)(l_0_0, "BitsadminTarget") then
+      (mp.ReportLowfi)(l_0_0, 1556043553)
       return mp.INFECTED
     end
+    return mp.CLEAN
   end
-end
-do
-  return mp.CLEAN
 end
 

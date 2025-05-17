@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("PACKED_WITH:(EncScript)") then
-  return mp.CLEAN
-end
-if ((mp.getfilename)()):match(".[zr][ia][pr].*.[jv][sb][es]?.*(EncScript)") then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (string.find)(l_0_6.image_path, "svchost.exe", 1, true) then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

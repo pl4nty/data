@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if peattributes.isdll then
-  return mp.CLEAN
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

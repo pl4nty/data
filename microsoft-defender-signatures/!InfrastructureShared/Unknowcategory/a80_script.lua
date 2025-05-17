@@ -6,23 +6,13 @@
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = nil
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  else
   end
-  -- DECOMPILER ERROR at PC38: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p1 ~= nil then
-      local l_0_1, l_0_2 = (this_sigattrlog[2]).utf8p1
-    end
-    -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC43: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_1 ~= nil then
-      (bm.add_related_file)(l_0_1)
-    end
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or (string.match)((this_sigattrlog[2]).utf8p2, "%d+%.%d+%.%d+%.%d+") then
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

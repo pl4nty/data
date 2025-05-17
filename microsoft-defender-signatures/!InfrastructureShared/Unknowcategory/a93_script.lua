@@ -3,19 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
+if not (this_sigattrlog[3]).matched or not (this_sigattrlog[6]).matched then
   return mp.CLEAN
 end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if l_0_1 == nil then
+-- DECOMPILER ERROR at PC15: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC18: Overwrote pending register: R1 in 'AssignReg'
+
+local l_0_1 = nil
+local l_0_2 = "user-agent"
+local l_0_3 = 100
+local l_0_4 = 3
+local l_0_5, l_0_6 = pcall(MpCommon.RollingQueueCreate, l_0_2, l_0_3, l_0_4, 1)
+if not l_0_5 then
   return mp.CLEAN
 end
-if not (MpCommon.QueryPersistContextNoPath)("isRebootDangerous", "GrubTampering.A") then
+l_0_5 = pcall(MpCommon.RollingQueueAppend, l_0_2, l_0_0, l_0_1, l_0_4)
+if not l_0_5 then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "/lib/systemd/systemd", 1, true) or (string.find)(l_0_1, "/usr/bin/sudo", 1, true) then
-  return mp.LOWFI
-end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 6291456 and peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 131072 and l_0_0 <= 139264 and (pehdr.NumberOfSections >= 6 or pehdr.NumberOfSections <= 9) and ((pesecs[1]).VirtualSize > 8192 or (pesecs[1]).VirtualSize < 12288) then
+  return mp.INFECTED
 end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
+return mp.CLEAN
 

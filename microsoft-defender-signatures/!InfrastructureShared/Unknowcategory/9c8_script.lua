@@ -3,28 +3,28 @@
 
 -- params : ...
 -- function num : 0
-IsInternetCache = function(l_1_0)
+is_suspicious_filename = function(l_1_0)
   -- function num : 0_0
-  if l_1_0:find("\\microsoftedge\\cache\\", 1, true) or l_1_0:find("\\microsoft\\windows\\inetcache\\", 1, true) or l_1_0:find("\\google\\chrome\\user data\\default\\cache", 1, true) or l_1_0:find("\\microsoft\\windows\\temporary internet files\\", 1, true) or l_1_0:find("\\mozilla\\firefox\\profiles\\", 1, true) or l_1_0:find("\\opera software\\opera stable\\cache\\", 1, true) or l_1_0:find("\\opera autoupdate\\", 1, true) then
-    return true
+  do
+    local l_1_1 = (string.lower)(l_1_0)
+    do return l_1_1 == "calc.exe" or l_1_1 == "cmd.exe" or l_1_1 == "conhost.exe" or l_1_1 == "csrss.exe" or l_1_1 == "dllhost.exe" or l_1_1 == "explorer.exe" or l_1_1 == "iexplore.exe" or l_1_1 == "lsass.exe" or l_1_1 == "msiexec.exe" or l_1_1 == "msnmsgr.exe" or l_1_1 == "msmpeng.exe" or l_1_1 == "notepad.exe" or l_1_1 == "rundll32.exe" or l_1_1 == "server.exe" or l_1_1 == "services.exe" or l_1_1 == "smss.exe" or l_1_1 == "svchost.exe" or l_1_1 == "system.exe" or l_1_1 == "taskhost.exe" or l_1_1 == "acrord32info.exe" or l_1_1 == "wininit.exe" or l_1_1 == "winlogon.exe" end
+    -- DECOMPILER ERROR: 1 unprocessed JMP targets
   end
-  return false
 end
 
-IsLowConfNPath = function(l_2_0)
-  -- function num : 0_1
-  if l_2_0:find("microsoft\\office\\solutionpackages\\", 1, true) or l_2_0:find("\\opera software\\opera stable\\cache\\", 1, true) or l_2_0:find("\\microsoft monitoring agent\\agent\\health service state\\monitoring host\\", 1, true) or l_2_0:find("\\grouppolicy\\datastore\\", 1, true) then
-    return true
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+do
+  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if ((string.sub)(l_0_1, -17) == "\\application data" or (string.sub)(l_0_1, -16) == "\\appdata\\roaming") and is_suspicious_filename((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) then
+      (mp.set_mpattribute)("Lua:SuspiciousFilenameAppdata.A")
+      return mp.INFECTED
+    end
+    if (string.sub)(l_0_1, -28) == "\\start menu\\programs\\startup" and is_suspicious_filename((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) then
+      (mp.set_mpattribute)("Lua:SuspiciousFilenameStartup.A")
+      return mp.INFECTED
+    end
   end
-  return false
+  return mp.CLEAN
 end
-
-IsChainNPath = function(l_3_0)
-  -- function num : 0_2
-  if l_3_0:find("\\github\\", 1, true) or l_3_0:find("\\android\\", 1, true) or l_3_0:find("\\android-platform-tools\\", 1, true) or l_3_0:find("\\androidsdk\\", 1, true) or l_3_0:find("\\scoop-master\\", 1, true) or l_3_0:find("\\sql\\", 1, true) or l_3_0:find("\\tutoris\\", 1, true) or l_3_0:find("\\$windows.~bt\\", 1, true) then
-    return true
-  end
-  return false
-end
-
 

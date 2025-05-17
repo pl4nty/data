@@ -3,12 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  local l_0_7 = l_0_6.image_path
+  if l_0_7 ~= nil then
+    local l_0_8 = l_0_7:lower()
+    if l_0_8:find("setup", 1, true) then
+      return mp.CLEAN
+    end
+    if l_0_8:find("installer", 1, true) then
+      return mp.CLEAN
+    end
+  end
 end
-if (string.match)(l_0_0, "extensions") ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

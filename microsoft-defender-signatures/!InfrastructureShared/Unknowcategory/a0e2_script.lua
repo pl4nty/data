@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[4]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[4]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[4]).p2)
-  if l_0_0 and l_0_1 and (string.find)(l_0_0, "^%d%d%d+") and (string.find)(l_0_1, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.no_mipsgp == true and peattributes.no_boundimport == true and peattributes.no_ep == true then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

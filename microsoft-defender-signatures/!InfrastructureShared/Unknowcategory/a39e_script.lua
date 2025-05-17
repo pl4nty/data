@@ -3,20 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-  do
-    do
-      if l_0_0:len() > 13 and (string.sub)(l_0_0, -13) == "\\win32spl.dll" then
-        local l_0_1 = (string.lower)((bm.get_imagepath)())
-        if (string.sub)(l_0_1, -11) == "svchost.exe" then
-          return mp.CLEAN
-        end
-      end
-      ;
-      (bm.add_related_file)(l_0_0)
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
+if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpcmdrun.exe", 1, true) then
+  return mp.CLEAN
+end
+if (bm.GetSignatureMatchDuration)() < 40000000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

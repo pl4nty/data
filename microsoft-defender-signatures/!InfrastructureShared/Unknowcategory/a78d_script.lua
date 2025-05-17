@@ -3,49 +3,61 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == false then
-  return mp.CLEAN
-end
-local l_0_0 = (pe.get_netmetadata)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_1 = {}
--- DECOMPILER ERROR at PC28: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC29: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC36: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC40: Overwrote pending register: R4 in 'AssignReg'
-
-if ((((((((-1)[1]).matched ~= true or (hstrlog[2]).matched == true) and (hstrlog[3]).matched ~= true) or (hstrlog[4]).matched == true) and (hstrlog[5]).matched ~= true) or (hstrlog[6]).matched == true) and (hstrlog[7]).matched ~= true) or (hstrlog[8]).matched == true then
-  do
-    for l_0_5,l_0_6 in ipairs(l_0_1) do
-      -- DECOMPILER ERROR at PC147: Overwrote pending register: R7 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC149: Overwrote pending register: R8 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC150: Overwrote pending register: R9 in 'AssignReg'
-
-      if l_0_6 ~= -1 then
-        local l_0_7 = ((-1).readu_u32)(-1, -1)
-        local l_0_8 = l_0_0.strheap_RVA + (pe.metadata_decode)(l_0_7, 2)
-        local l_0_9 = (pe.mmap_rva)(l_0_8, 10)
-        if (string.find)(l_0_9, "Initialize", 1, true) ~= nil then
-          local l_0_10 = (pe.metadata_decode)(l_0_7, 1)
-          local l_0_11 = l_0_0.strheap_RVA + (pe.metadata_decode)(l_0_10, 3)
-          local l_0_12 = (pe.mmap_rva)(l_0_11, 22)
-          if (string.find)(l_0_9, "ScriptObject", 1, true) ~= nil and (string.find)(l_0_12, "System.Windows.Browser", 1, true) ~= nil then
-            return mp.INFECTED
+local l_0_0 = (versioning.GetOrgID)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0)
+    if l_0_1 == "40222833-e511-47af-9324-40c4531ba777" or l_0_1 == "824183b0-2389-4601-a78d-1bda0b1327aa" or l_0_1 == "5f498185-96bf-44f6-a553-5c9359b1e96f" or l_0_1 == "9da3abc0-42d3-4d8a-b69a-4b33f5bda282" then
+      return mp.CLEAN
+    end
+  end
+  local l_0_2 = nil
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    l_0_2 = (this_sigattrlog[1]).utf8p2
+  else
+    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+      l_0_2 = (this_sigattrlog[2]).utf8p2
+    else
+      if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+        l_0_2 = (this_sigattrlog[3]).utf8p2
+      else
+        if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+          l_0_2 = (this_sigattrlog[4]).utf8p2
+        else
+          if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
+            l_0_2 = (this_sigattrlog[5]).utf8p2
+          else
+            if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
+              l_0_2 = (this_sigattrlog[6]).utf8p2
+            end
           end
         end
       end
     end
-    do return mp.CLEAN end
-    -- WARNING: undefined locals caused missing assignments!
   end
+  if l_0_2 == nil then
+    return mp.CLEAN
+  end
+  local l_0_3 = {}
+  l_0_3[".jse"] = true
+  l_0_3[".vbe"] = true
+  local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_2)
+  for l_0_8,l_0_9 in ipairs(l_0_4) do
+    if (string.len)(l_0_9) > 4 and (sysio.IsFileExists)(l_0_9) then
+      local l_0_10 = (string.sub)(l_0_9, -4)
+      if l_0_3[l_0_10] then
+        if (string.find)((string.lower)(l_0_9), "themefonts-colors_installer.vbe", 1, true) then
+          return mp.CLEAN
+        end
+        local l_0_11 = (mp.IsKnownFriendlyFile)(l_0_9, true, true)
+        if l_0_11 == nil or l_0_11 == true then
+          return mp.CLEAN
+        end
+        ;
+        (bm.add_threat_file)(l_0_9)
+      end
+    end
+  end
+  return mp.INFECTED
 end
 

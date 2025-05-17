@@ -3,43 +3,37 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-if not l_0_0 then
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched or (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
+  local l_0_0, l_0_1 = (bm.get_process_relationships)()
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+      local l_0_8 = (string.lower)(l_0_6.image_path)
+      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
+
+      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
+
+      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
+
+      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
+
+      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
+
+      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
+
+      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
+
+      -- DECOMPILER ERROR at PC148: Unhandled construct in 'MakeBoolean' P3
+
+      if (l_0_7 == 1 and (string.find)(l_0_8, "\\cloud drive mapper.exe", 1, true)) or (string.find)(l_0_8, "\\electron.exe", 1, true) then
+        return mp.CLEAN
+      end
+    end
+  end
 end
-local l_0_1 = tostring(l_0_0.is_header and headerpage or footerpage)
-if not l_0_1 then
-  return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
-local l_0_2 = l_0_0.match_offset + (string.len)("begin signature block\r\n")
-if l_0_0.is_footer and (string.sub)(l_0_1, 1, 1) == "\000" then
-  _ = (string.find)(l_0_1, "[Bb]egin signature block[\r\n]+")
-end
-local l_0_3 = (string.find)(l_0_1, "[\r\n]+[#/\'*]+%sSIG%s[#/\'*]+%sEnd signature block")
-if not l_0_2 or not l_0_3 then
-  return mp.CLEAN
-end
-l_0_1 = (string.sub)(l_0_1, l_0_2 + 1, l_0_3 - 1)
-if not l_0_1 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, "^#%s") then
-  l_0_1 = (string.gsub)(l_0_1, "%s*[\r\n]*#%s*", "")
-else
-  l_0_1 = (string.gsub)(l_0_1, "%s*[\r\n]*[#/\'*]+%sSIG%s[#/\'*]+%s*", "")
-end
-if not l_0_1 or #l_0_1 < 2 then
-  return mp.CLEAN
-end
-l_0_1 = (MpCommon.Base64Decode)(l_0_1)
-if not l_0_1 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattributeex)("ScriptCertSigSize", (string.len)(l_0_1))
-;
-(mp.vfo_add_buffer)(l_0_1, "[ScriptSig]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-;
-(mp.UfsSetMetadataBool)("ScriptSigDecoded", true, true)
-return mp.INFECTED
 

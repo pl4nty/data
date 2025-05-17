@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 256 then
-  return mp.CLEAN
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block executable files from running unless they meet a prevalence, age, or trusted list criteria"
+  l_1_0.Description = "Windows Defender Exploit Guard detected the launch of a newly created untrusted executable file"
+  l_1_0.NotificationDedupingInterval = 120
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
+  return l_1_0
 end
-if (mp.readu_u16)(headerpage, 10) == 65512 and (mp.readu_u32)(headerpage, 11) == 4294967295 and (mp.readu_u16)(headerpage, 4) == 47561 and (headerpage[3] == 41 or headerpage[3] == 43 or headerpage[3] == 51) then
-  (mp.set_mpattribute)("MpNonPIIFileType")
-  return mp.INFECTED
-end
-return mp.CLEAN
+
 

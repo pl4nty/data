@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 and peattributes.no_security == true then
+if mp.HSTR_WEIGHT >= 6 then
   return mp.INFECTED
 end
-return mp.CLEAN
+if mp.HSTR_WEIGHT > 3 and (mp.get_mpattribute)("HSTR:Fareit.gen") then
+  return mp.INFECTED
+end
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
+return mp.LOWFI
 

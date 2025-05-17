@@ -3,35 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true then
-  return mp.CLEAN
+local l_0_0 = (mp.GetHSTRCallerId)()
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  local l_0_1 = (mp.GetSMSLevel)()
+  if l_0_1 ~= mp.SMS_SCAN_ONCE_ADV and l_0_1 ~= mp.SMS_SCAN_LOW_ADV and l_0_1 ~= mp.SMS_SCAN_MED_ADV and l_0_1 ~= mp.SMS_SCAN_HIGH_ADV then
+    return mp.CLEAN
+  end
+  local l_0_2 = (mp.hstr_full_log)()
+  for l_0_6,l_0_7 in pairs(l_0_2) do
+    if l_0_7.matched and l_0_7.VA then
+      local l_0_8, l_0_9 = (mp.SMSVirtualQuery)(l_0_7.VA)
+      if l_0_8 ~= true then
+        return mp.CLEAN
+      end
+      if l_0_9.prot ~= 64 or l_0_9.state_type ~= mp.SMS_MBI_PRIVATE then
+        return mp.CLEAN
+      end
+      return mp.INFECTED
+    end
+  end
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
+do
+  l_0_1 = mp
+  l_0_1 = l_0_1.CLEAN
+  return l_0_1
 end
-if pehdr.NumberOfSections ~= 6 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 1685021486 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 144 then
-  return mp.CLEAN
-end
-if epcode[2] <= 224 then
-  return mp.CLEAN
-end
-if epcode[5] ~= 255 then
-  return mp.CLEAN
-end
-if epcode[6] ~= 255 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

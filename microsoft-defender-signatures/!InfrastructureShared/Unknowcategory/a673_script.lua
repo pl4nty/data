@@ -3,28 +3,42 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoHotKey_+") then
-  return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv") then
-  local l_0_0, l_0_1 = nil, nil
-  if (hstrlog[1]).matched then
-    l_0_0 = ((hstrlog[1]).match_offsets)[3]
-    l_0_1 = (hstrlog[1]).VA + l_0_0
-    local l_0_2 = (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1)
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 8, 4), 1) ~= 3192604835 then
-      return mp.INFECTED
+if peattributes.isexe then
+  if (mp.readu_u32)(footerpage, 4025) ~= 17780832 then
+    return mp.CLEAN
+  end
+  if (mp.readu_u32)(footerpage, 4029) ~= 1493050444 then
+    return mp.CLEAN
+  end
+  local l_0_0 = nil
+  local l_0_1 = false
+  local l_0_2 = (mp.crc32)(-1, footerpage, 4033, 64)
+  if l_0_2 == 1763915979 then
+    l_0_0 = 3426
+  else
+    if l_0_2 == 2558714366 then
+      l_0_0 = 3057
+    else
+      if l_0_2 == 2981753981 then
+        l_0_0 = 3055
+      else
+        return mp.CLEAN
+      end
     end
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 12, 4), 1) ~= 2840226968 then
-      return mp.INFECTED
+  end
+  local l_0_3 = (mp.crc32)(-1, footerpage, l_0_0, 400)
+  if l_0_3 == 3208132055 then
+    l_0_1 = true
+  else
+    return mp.CLEAN
+  end
+  if l_0_1 == true then
+    local l_0_4 = false
+    if pevars.epsec < pehdr.NumberOfSections or (mp.readu_u32)(epcode, 1) ~= 2030270560 or peattributes.epoutofimage or peattributes.amd64_image then
+      l_0_4 = true
     end
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1) ~= 173231257 then
-      return mp.INFECTED
-    end
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 4, 4), 1) ~= 2101925510 then
+    if l_0_4 == true then
+      (mp.changedetectionname)(805306412)
       return mp.INFECTED
     end
   end

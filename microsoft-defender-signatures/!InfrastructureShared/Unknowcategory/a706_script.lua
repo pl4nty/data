@@ -3,34 +3,40 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if (string.sub)(l_0_2, -4) ~= ".exe" then
-    return mp.CLEAN
-  end
-  if (string.sub)(l_0_1, -10) == "\\downloads" or l_0_1:find("\\temporary internet files\\", 1, true) ~= nil or l_0_1:find("\\inetcache\\", 1, true) ~= nil then
-    return mp.CLEAN
-  end
-  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-  if l_0_3 == "iexplore.exe" then
-    (mp.set_mpattribute)("Lua:ContextualDropFileIE")
-  else
-    if l_0_3 == "chrome.exe" then
-      (mp.set_mpattribute)("Lua:ContextualDropFileChrome")
-    else
-      if l_0_3 == "firefox.exe" then
-        (mp.set_mpattribute)("Lua:ContextualDropFileFirefox")
-      else
-        if l_0_3 == "opera.exe" then
-          (mp.set_mpattribute)("Lua:ContextualDropFileOpera")
-        end
-      end
+if peattributes.isexe ~= true then
+  return mp.LOWFI
+end
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+if (mp.getfilesize)() < l_0_0 + 1 + 38 then
+  (mp.changedetectionname)(192)
+  return mp.SUSPICIOUS
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(l_0_0, 38)
+do
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC80: No list found for R2 , SetList fails
+
+  -- DECOMPILER ERROR at PC81: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC82: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC83: Overwrote pending register: R5 in 'AssignReg'
+
+  for l_0_6 = 97, 67, 102 do
+    -- DECOMPILER ERROR at PC85: Overwrote pending register: R7 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC87: Overwrote pending register: R8 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC88: Overwrote pending register: R9 in 'AssignReg'
+
+    if ((57).byte)(50, 75) ~= l_0_2[l_0_6] then
+      (mp.changedetectionname)(192)
+      return mp.SUSPICIOUS
     end
   end
-end
-do
-  return mp.CLEAN
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

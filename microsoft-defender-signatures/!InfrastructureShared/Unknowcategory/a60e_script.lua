@@ -3,46 +3,43 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   else
   end
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[3]).utf8p2) > 3 then
-    local l_0_5 = nil
-    -- DECOMPILER ERROR at PC39: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC57: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC66: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "\\%d+.dll") ~= nil or (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "startw", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "dllregisterserver", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "plugininit", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "\\appdata\\roaming\\%a+.dll") ~= nil then
-      local l_0_6 = nil
-      if (mp.GetExecutablesFromCommandLine)(l_0_5) ~= nil then
-        for l_0_10,l_0_11 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_5)) do
-          local l_0_7 = nil
-          -- DECOMPILER ERROR at PC83: Confused about usage of register: R7 in 'UnsetPending'
-
-          R7_PC83 = (mp.ContextualExpandEnvironmentVariables)(R7_PC83)
-          ;
-          (bm.add_related_file)(R7_PC83)
-        end
-      end
-      do
-        do
-          do return mp.INFECTED end
-          return mp.CLEAN
-        end
-      end
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p2)
+    if (string.len)(l_0_2) < 100 then
+      return mp.CLEAN
     end
+    if (string.find)(l_0_2, "%.ps1") then
+      return mp.CLEAN
+    end
+    if not (string.find)(l_0_2, "{%d%d?}{%d%d?}") then
+      return mp.CLEAN
+    end
+    l_0_2 = (string.gsub)(l_0_2, " ", "")
+    local l_0_3 = 0
+    for l_0_7 in (string.gmatch)(l_0_2, "[\"\']%-f[\"\']") do
+      l_0_3 = l_0_3 + 1
+    end
+    if l_0_3 < 2 then
+      return mp.CLEAN
+    end
+    local l_0_8 = 0
+    for l_0_12 in (string.gmatch)(l_0_2, "{%d%d?}{%d%d?}") do
+      l_0_8 = l_0_8 + 1
+    end
+    if l_0_8 < 2 then
+      return mp.CLEAN
+    end
+    if (l_0_3 > 3 and l_0_8 > 3) or l_0_3 >= 2 and l_0_8 >= 2 and (string.find)(l_0_2, "`", 1, true) then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
   end
 end
 

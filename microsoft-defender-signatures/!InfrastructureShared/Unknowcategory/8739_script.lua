@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.hstr_full_log)()
-if not l_0_0 then
+if peattributes.isvbnative == true and (mp.getfilesize)() < 300000 and (pe.query_import)(pe.IMPORT_STATIC, 3727706256) ~= 0 then
   return mp.INFECTED
 end
-if (l_0_0[2]).matched or (l_0_0[3]).matched then
-  (mp.TriggerScanResource)("folder", "c:\\tempcaches\\", 0, 5000)
-end
-return mp.INFECTED
+return mp.CLEAN
 

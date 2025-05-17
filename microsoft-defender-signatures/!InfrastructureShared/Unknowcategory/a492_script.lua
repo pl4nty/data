@@ -3,22 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-do
-  if peattributes.ismsil == true and l_0_0 < 20480 then
-    local l_0_1 = (pe.get_versioninfo)()
-    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
-
-    if (l_0_1.OriginalFilename ~= nil and (l_0_1.OriginalFilename):lower() == "monitor.exe") or l_0_1.InternalName == nil or l_0_1.CompanyName == nil or l_0_1.FileDescription == nil or l_0_1.LegalTrademarks == nil or l_0_1.ProductName ~= nil and (l_0_1.ProductName):lower() == "monitor" then
-      return mp.INFECTED
-    end
-  end
+if peattributes.no_relocs ~= true then
   return mp.CLEAN
 end
+if peattributes.epscn_writable ~= true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).PointerToRawData ~= 512 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

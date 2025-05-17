@@ -3,57 +3,69 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_ScanGameDayKeyPath = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = (sysio.RegOpenKey)(l_1_0)
-  local l_1_2 = 0
-  if l_1_1 then
-    local l_1_3 = (sysio.RegEnumKeys)(l_1_1)
-    for l_1_7,l_1_8 in pairs(l_1_3) do
-      if l_1_8 then
-        local l_1_9 = (sysio.RegOpenKey)(l_1_0 .. "\\\\" .. l_1_8)
-        if l_1_9 then
-          local l_1_10 = (sysio.GetRegValueAsDword)(l_1_9, "12000030")
-          if l_1_10 and (mp.bitand)(l_1_10, 255) ~= 0 and (mp.bitand)(l_1_10, 16711680) ~= 0 and (mp.bitand)(l_1_10, 4278255360) == 0 then
-            (MpCommon.SetGlobalMpAttribute)("GameDayRegKey")
-            ;
-            (MpDetection.ScanResource)("regkeyvalue://" .. l_1_0 .. "\\" .. l_1_8 .. "\\\\12000030")
-            ;
-            (MpCommon.DeleteGlobalMpAttribute)("GameDayRegKey")
-          end
-        end
-      end
-      do
-        do
-          l_1_2 = l_1_2 + 1
-          if l_1_2 == 50 then
-            SetLuaInstrLimit((crypto.shl64)(1, 24))
-            l_1_2 = 0
-          end
-          -- DECOMPILER ERROR at PC82: LeaveBlock: unexpected jumping out DO_STMT
-
-        end
-      end
+if mp.HEADERPAGE_SZ < 128 or mp.FOOTERPAGE_SZ < 22 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.readu_u16)(headerpage, 11)
+local l_0_1 = (mp.readu_u16)(headerpage, 13)
+local l_0_2, l_0_3 = pcall(MpCommon.DosTimeToFileTime, l_0_0, l_0_1)
+if not l_0_2 then
+  return mp.CLEAN
+end
+if l_0_3 == 0 then
+  return mp.CLEAN
+end
+local l_0_4 = (MpCommon.GetCurrentTimeT)()
+local l_0_5, l_0_6 = pcall(MpCommon.TimeTToFileTime, l_0_4)
+if not l_0_5 then
+  return mp.CLEAN
+end
+if l_0_6 == nil then
+  return mp.CLEAN
+end
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+if l_0_3 < l_0_6 then
+  local l_0_7 = 864000000000
+  local l_0_8 = l_0_6 - l_0_3
+  if l_0_8 <= 5 * l_0_7 then
+    if (mp.get_mpattribute)("SCPT:JarFile") then
+      (mp.set_mpattribute)("//Lua:JarTimeStampLastFiveDays")
+    else
+      ;
+      (mp.set_mpattribute)("//Lua:ZipTimeStampLastFiveDays")
+    end
+  end
+  if l_0_8 <= 10 * l_0_7 then
+    if (mp.get_mpattribute)("SCPT:JarFile") then
+      (mp.set_mpattribute)("//Lua:JarTimeStampLastTenDays")
+    else
+      ;
+      (mp.set_mpattribute)("//Lua:ZipTimeStampLastTenDays")
+    end
+  end
+  if l_0_8 <= 30 * l_0_7 then
+    if (mp.get_mpattribute)("SCPT:JarFile") then
+      (mp.set_mpattribute)("//Lua:JarTimeStampLastThirtyDays")
+    else
+      ;
+      (mp.set_mpattribute)("//Lua:ZipTimeStampLastThirtyDays")
+    end
+  end
+  if l_0_8 <= 365 * l_0_7 then
+    if (mp.get_mpattribute)("SCPT:JarFile") then
+      (mp.set_mpattribute)("//Lua:JarTimeStampLastYear")
+    else
+      ;
+      (mp.set_mpattribute)("//Lua:ZipTimeStampLastYear")
     end
   end
 end
-
-Infrastructure_ScanGameDay = function()
-  -- function num : 0_1
-  Infrastructure_ScanGameDayKeyPath("HKLM\\BCD00000000\\Objects")
-  SetLuaInstrLimit((crypto.shl64)(1, 24))
-  local l_2_0 = (sysio.RegExpandUserKey)("HKCU\\BCD00000000\\Objects")
-  local l_2_1 = 0
-  for l_2_5,l_2_6 in pairs(l_2_0) do
-    Infrastructure_ScanGameDayKeyPath(l_2_6)
-    l_2_1 = l_2_1 + 1
-    if l_2_1 == 8 then
-      break
-    end
-  end
-  do
-    SetLuaInstrLimit((crypto.shl64)(1, 24))
-  end
+do
+  return mp.CLEAN
 end
-
 

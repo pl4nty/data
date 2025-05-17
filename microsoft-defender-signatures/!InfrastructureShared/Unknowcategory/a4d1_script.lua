@@ -3,41 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched == false or (this_sigattrlog[3]).utf8p1 == nil then
-  return mp.CLEAN
-end
-local l_0_0 = (this_sigattrlog[3]).utf8p1
-local l_0_1 = "\\wmiprvse.exe"
-local l_0_2 = (string.len)(l_0_1)
-local l_0_3 = false
-local l_0_4, l_0_5 = (bm.get_process_relationships)()
-for l_0_9,l_0_10 in ipairs(l_0_4) do
-  if l_0_10.image_path ~= nil then
-    local l_0_11 = (string.lower)(l_0_10.image_path)
-    if (mp.bitand)(l_0_10.reason_ex, 1) == 1 and l_0_2 < (string.len)(l_0_11) and (string.sub)(l_0_11, -l_0_2) == l_0_1 then
-      do
-        do
-          l_0_3 = true
-          do break end
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out DO_STMT
+-- DECOMPILER ERROR at PC2: Confused about usage of register: R0 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_THEN_STMT
+string.tohex = function(l_1_0)
+  -- function num : 0_0
+  return l_1_0:gsub(".", function(l_2_0)
+    -- function num : 0_0_0
+    local l_2_1 = string.format
+    local l_2_2 = "%02X"
+    do
+      local l_2_3, l_2_4 = (string.byte)(l_2_0), .end
+      do return l_2_1(l_2_2, l_2_3, l_2_4) end
+      -- DECOMPILER ERROR at PC9: Confused about usage of register R2 for local variables in 'ReleaseLocals'
 
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_STMT
-
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
     end
   end
+)
 end
-if l_0_3 == false then
-  return mp.CLEAN
+
+local l_0_0 = (nri.GetRawResponseBlob)()
+do
+  if l_0_0 ~= nil and (string.len)(l_0_0) < 4096 then
+    local l_0_1 = {}
+    l_0_1.NRI_ResponseBlob = l_0_0:tohex()
+    ;
+    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_1)
+  end
+  return mp.INFECTED
 end
-;
-(mp.ReportLowfi)(l_0_0, 2563793617)
-return mp.INFECTED
 

@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+do
+  if (mp.get_mpattribute)("pea_isexe") then
+    local l_0_0 = (pe.get_versioninfo)()
+    if l_0_0 and l_0_0.CompanyName == "Microsoft Corporation" and l_0_0.FileDescription == "Azure Batch Service Manager" and l_0_0.LegalCopyright == "Microsoft Corporation" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

@@ -3,25 +3,50 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+local l_0_0, l_0_6, l_0_7 = nil
+for l_0_4,l_0_5 in pairs((Remediation.Threat).Resources) do
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R5 in 'UnsetPending'
 
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
+  if R5_PC6.Schema == "file" and (string.match)((Remediation.Threat).Name, "JS/BrobanDel") then
+    l_0_1 = R5_PC6.Path
   end
-  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+end
+local l_0_8 = nil
+if l_0_8 then
+  local l_0_9 = false
+  if (sysio.RegOpenKey)("HKCU\\Software\\Mozilla\\Firefox\\Extensions") then
+    local l_0_10 = nil
+    for l_0_14,l_0_15 in pairs((sysio.RegEnumValues)((sysio.RegOpenKey)("HKCU\\Software\\Mozilla\\Firefox\\Extensions"))) do
+      local l_0_11 = nil
+      -- DECOMPILER ERROR at PC38: Confused about usage of register: R8 in 'UnsetPending'
 
-  do
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
-      local l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2)
-      if ((string.find)(l_0_3, "-ping ", 1, true) ~= nil or (string.find)(l_0_3, "/ping ", 1, true) ~= nil) and (string.find)(l_0_3, " http", 1, true) ~= nil and (string.find)(l_0_3, "kerberos ", 1, true) == nil then
-        return mp.INFECTED
-      end
-      if ((string.find)(l_0_3, "-urlcache ", 1, true) ~= nil or (string.find)(l_0_3, "/urlcache ", 1, true) ~= nil) and ((string.find)(l_0_3, " ftp:", 1, true) ~= nil or (string.find)(l_0_3, " http", 1, true) ~= nil) then
-        return mp.INFECTED
+      -- DECOMPILER ERROR at PC43: Confused about usage of register: R8 in 'UnsetPending'
+
+      if "JS/BrobanDel" and (string.match)(l_0_8, (sysio.GetRegValueAsString)(l_0_10, "JS/BrobanDel")) then
+        (sysio.DeleteRegValue)(l_0_10, l_0_16)
+        ;
+        (sysio.DeleteFile)((sysio.GetRegValueAsString)(l_0_10, "JS/BrobanDel"))
+        l_0_9 = true
       end
     end
-    return mp.CLEAN
+  end
+end
+do
+  if l_0_8 and not l_0_9 then
+    l_0_10 = string
+    l_0_10 = l_0_10.find
+    l_0_10 = l_0_10(l_0_8, "%.xpi%-")
+    local l_0_17, l_0_18 = nil
+    if l_0_10 then
+      l_0_18 = string
+      l_0_18 = l_0_18.sub
+      l_0_18 = l_0_18(l_0_8, 0, l_0_17 - 1)
+      local l_0_19 = nil
+      l_0_19 = sysio
+      l_0_19 = l_0_19.DeleteFile
+      l_0_19(l_0_18)
+    end
   end
 end
 

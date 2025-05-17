@@ -3,20 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    if (sysio.IsFileExists)(l_0_6) then
-      (bm.add_related_file)(l_0_6)
-      ;
-      (mp.ReportLowfi)(l_0_6, 2969606243)
-    end
-  end
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

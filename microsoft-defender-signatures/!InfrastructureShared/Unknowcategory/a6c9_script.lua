@@ -3,23 +3,71 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  l_0_1 = (string.gsub)(l_0_1, " ", "")
-  l_0_1 = (string.gsub)(l_0_1, "\"", "")
-  if l_0_0 ~= l_0_1 then
-    return mp.CLEAN
-  end
-end
+local l_0_6, l_0_8 = nil, nil
 do
-  if (mp.IsKnownFriendlyFile)((MpCommon.PathToWin32Path)((bm.get_imagepath)()), true, true) == true then
-    return mp.CLEAN
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = (this_sigattrlog[2]).utf8p1
+  else
   end
-  local l_0_2 = (string.lower)((bm.get_imagepath)())
-  if l_0_2 and ((string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "\\windows\\", 1, true) or (string.find)(l_0_2, "\\atx", 1, true) or (string.find)(l_0_2, "pdv\\", 1, true) or (string.find)(l_0_2, "\\pdv", 1, true) or (string.find)(l_0_2, "caixa", 1, true) or (string.find)(l_0_2, "\\frente", 1, true) or (string.find)(l_0_2, "\\setuphost", 1, true)) then
-    return mp.CLEAN
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1 = (this_sigattrlog[3]).utf8p1
+    else
+    end
+    -- DECOMPILER ERROR at PC43: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
+        local l_0_2 = (this_sigattrlog[5]).utf8p1
+      else
+      end
+      -- DECOMPILER ERROR at PC61: Overwrote pending register: R0 in 'AssignReg'
+
+      do
+        if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
+          local l_0_3 = (this_sigattrlog[7]).utf8p1
+        else
+        end
+        -- DECOMPILER ERROR at PC79: Overwrote pending register: R0 in 'AssignReg'
+
+        do
+          if not (this_sigattrlog[9]).matched or (this_sigattrlog[10]).matched then
+            local l_0_4 = (this_sigattrlog[9]).utf8p1
+          end
+          -- DECOMPILER ERROR at PC80: Confused about usage of register: R0 in 'UnsetPending'
+
+          if l_0_4 == nil then
+            return mp.CLEAN
+          end
+          -- DECOMPILER ERROR at PC87: Confused about usage of register: R0 in 'UnsetPending'
+
+          local l_0_5 = (string.lower)(l_0_4)
+          -- DECOMPILER ERROR at PC101: Overwrote pending register: R2 in 'AssignReg'
+
+          do
+            if (this_sigattrlog[11]).matched then
+              local l_0_7, l_0_9, l_0_11 = , nil
+            else
+            end
+            if (not (this_sigattrlog[12]).matched or l_0_5 ~= nil) and (string.lower)((this_sigattrlog[12]).utf8p2) ~= nil then
+              local l_0_10 = (string.match)(l_0_5, "\\([^\\]+)$")
+              -- DECOMPILER ERROR at PC127: Confused about usage of register: R2 in 'UnsetPending'
+
+              local l_0_12 = (string.match)((string.lower)((this_sigattrlog[12]).utf8p2), "\\([^\\]+)$")
+              if l_0_10 == l_0_12 then
+                (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_5), 2084403703)
+                return mp.INFECTED
+              end
+            end
+            do
+              return mp.CLEAN
+            end
+          end
+        end
+      end
+    end
   end
-  return mp.INFECTED
 end
 

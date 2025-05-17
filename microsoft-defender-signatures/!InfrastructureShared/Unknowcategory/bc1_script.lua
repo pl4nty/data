@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("Miner:XMRigNoBlock")
+(mp.set_mpattribute)("PUA:Block:Xadupi")
 return mp.INFECTED
 

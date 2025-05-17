@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_amd64_image") then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 2 and mp.HSTR_WEIGHT < 7 then
+  (mp.set_mpattribute)("HSTR:Strakupa.A1")
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  (mp.set_mpattribute)("Lowfi:Win64/Minxer_Coinminer")
-else
-  ;
-  (mp.set_mpattribute)("HSTR:Minxer_Coinminer")
+if peattributes.isexe == true and peattributes.no_security == true and pehdr.AddressOfEntryPoint ~= 195006 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

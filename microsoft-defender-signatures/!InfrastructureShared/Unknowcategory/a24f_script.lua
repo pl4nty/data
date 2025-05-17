@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 237568 then
-  if mp.HSTR_WEIGHT == 11 then
-    return mp.SUSPICIOUS
-  end
-  ;
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
+if not (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (mp.readu_u32)(l_0_0, 3)
+local l_0_2 = (mp.readu_u32)(l_0_0, 16)
+local l_0_3 = (string.format)("CURE:Virus:Win32/Xpaj.C_%08X_%08X", l_0_1, l_0_2)
+;
+(mp.set_mpattribute)(l_0_3)
+return mp.INFECTED
 

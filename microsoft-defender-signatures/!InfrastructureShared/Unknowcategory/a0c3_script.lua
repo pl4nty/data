@@ -3,15 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 100 then
+if peattributes.hasexports ~= true then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_1 = tostring((mp.readfile)(0, 100))
-if (string.find)(l_0_1, "\\rt[^f]") ~= nil or (string.find)(l_0_1, "\\rtf[^1]") ~= nil or (string.find)(l_0_1, "\\rtf1[^\\]") ~= nil then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 8 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_2 = 0
+for l_0_6 = 1, l_0_0 do
+  local l_0_7 = (pe.mmap_string_rva)((l_0_1[l_0_6]).namerva, 64)
+  if l_0_7 == "SetHook" then
+    l_0_2 = l_0_2 + 1
+  end
+  if l_0_7 == "UnHook" then
+    l_0_2 = l_0_2 + 1
+  end
+end
+if l_0_2 < 2 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

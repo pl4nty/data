@@ -3,23 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+local l_0_0 = false
+local l_0_1 = false
+local l_0_2 = false
+if (hstrlog[1]).hitcount >= 1 or (hstrlog[2]).hitcount >= 1 or (hstrlog[3]).hitcount >= 1 then
+  l_0_0 = true
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
+if (hstrlog[4]).hitcount >= 1 or (hstrlog[5]).hitcount >= 1 then
+  l_0_1 = true
 end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[7]).matched then
-  local l_0_6 = (this_sigattrlog[2]).p1
-  local l_0_7 = (this_sigattrlog[7]).p1
-  if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") and (string.match)(l_0_7:lower(), "^[a-z0-9]+$") then
-    return mp.INFECTED
-  end
+if (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  l_0_2 = true
 end
-do
-  return mp.LOWFI
+if peattributes.dt_error_heur_exit_criteria then
+  l_0_2 = true
 end
+if (mp.get_mpattribute)("MpHasValidProjPath") then
+  l_0_2 = true
+end
+if l_0_0 and l_0_1 and l_0_2 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

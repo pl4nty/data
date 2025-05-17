@@ -3,32 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 == nil then
+if peattributes.hasexports == true then
   return mp.CLEAN
 end
-local l_0_1, l_0_2 = (string.match)(l_0_0, " pid:(%d+) (.+)")
-if l_0_1 == nil or l_0_2 == nil then
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-local l_0_3 = (mp.GetPPidFromPid)(l_0_1)
-if l_0_3 == nil then
+if peattributes.hasstandardentry == true then
   return mp.CLEAN
 end
-if (string.find)(l_0_2, "^ems$") then
-  (bm.trigger_sig)("AsyncTriggerEMS", "EMS", l_0_3)
-else
-  if (string.find)(l_0_2, "^sms:") then
-    local l_0_4 = (string.match)(l_0_2, "sms:(.+)")
-    ;
-    (bm.trigger_sig)("AsyncTriggerSMS", l_0_4, l_0_3)
-  else
-    do
-      if (string.find)(l_0_2, "^exhaustive$") then
-        (bm.trigger_sig)("AsyncTriggerProc", "Exhaustive", l_0_3)
-      end
-      return mp.INFECTED
-    end
-  end
+if pehdr.NumberOfSections ~= 5 then
+  return mp.CLEAN
 end
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 0 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 80 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 104 then
+  return mp.CLEAN
+end
+if epcode[7] ~= 232 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

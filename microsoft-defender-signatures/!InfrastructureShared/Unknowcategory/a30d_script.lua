@@ -3,20 +3,50 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_7.ppid)
-    if l_0_0.integrity_level < l_0_8.IntegrityLevel then
-      (bm.request_SMS)(l_0_7.ppid, "l+")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1)
-      return mp.INFECTED
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 16, 105)
+local l_0_1 = (string.byte)(l_0_0, 1) + 2
+if #l_0_0 < l_0_1 then
+  return mp.CLEAN
+end
+if (string.byte)(l_0_0, l_0_1) == 232 then
+  local l_0_2 = 2
+  while 1 do
+    while 1 do
+      while 1 do
+        while 1 do
+          if l_0_2 < #l_0_0 then
+            local l_0_3 = (string.byte)(l_0_0, l_0_2)
+            if l_0_3 == 61 then
+              l_0_2 = l_0_2 + 5
+              -- DECOMPILER ERROR at PC38: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC38: LeaveBlock: unexpected jumping out IF_STMT
+
+              -- DECOMPILER ERROR at PC38: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC38: LeaveBlock: unexpected jumping out IF_STMT
+
+            end
+          end
+        end
+        if l_0_3 == 204 then
+          do return mp.INFECTED end
+          -- DECOMPILER ERROR at PC44: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC44: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
+      if l_0_3 == 116 and l_0_1 ~= (string.byte)(l_0_0, l_0_2 + 1) + (l_0_2) then
+        return mp.CLEAN
+      end
     end
+    return mp.CLEAN
   end
 end
 do
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC64: Overwrote pending register: R2 in 'AssignReg'
+
+  return l_0_2.CLEAN
 end
 

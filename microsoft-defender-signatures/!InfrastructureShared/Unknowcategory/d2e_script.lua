@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:SmartInstaller")
+(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
 return mp.INFECTED
 

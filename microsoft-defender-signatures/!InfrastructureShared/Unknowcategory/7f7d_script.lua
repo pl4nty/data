@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a")
-return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "mshta.exe" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

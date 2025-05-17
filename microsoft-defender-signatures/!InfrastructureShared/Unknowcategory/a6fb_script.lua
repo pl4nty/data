@@ -8,37 +8,34 @@
 do
   if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
     local l_0_0 = nil
-  else
   end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-      local l_0_1, l_0_2 = (this_sigattrlog[2]).utf8p2
+  local l_0_1 = nil
+  if (string.lower)((bm.get_imagepath)()) and (string.match)((string.lower)((bm.get_imagepath)()), "\\([^\\]+)$") == "installutil.exe" then
+    return mp.CLEAN
+  end
+  if l_0_1 ~= nil then
+    if not (string.find)((string.lower)(l_0_1), " /u ", 1, true) or not (string.find)((string.lower)(l_0_1), "/logfile= ", 1, true) then
+      return mp.CLEAN
     end
-    local l_0_3 = nil
-    if l_0_3 ~= nil then
-      local l_0_4 = {}
-      local l_0_5 = (mp.GetExecutablesFromCommandLine)(l_0_3)
-      for l_0_9,l_0_10 in ipairs(l_0_5) do
-        local l_0_6 = {[".xls"] = true, [".doc"] = true, [".ppt"] = true, [".pps"] = true, docx = true, pptx = true, ppsx = true, xlsx = true, [".rtf"] = true, [".xml"] = true, dotx = true, dotm = true, [".odt"] = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, docm = true, xlsm = true, pptm = true}
-        -- DECOMPILER ERROR at PC76: Confused about usage of register: R8 in 'UnsetPending'
+    if (string.find)((string.lower)(l_0_1), "\\program files", 1, true) or (string.find)((string.lower)(l_0_1), "/installstatedir=", 1, true) or (string.find)((string.lower)(l_0_1), "upmWmi", 1, true) then
+      return mp.CLEAN
+    end
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC109: Confused about usage of register: R7 in 'UnsetPending'
 
-        if (string.len)(R8_PC76) > 4 and (sysio.IsFileExists)(R8_PC76) and l_0_6[(string.sub)(R8_PC76, -4)] then
-          (bm.add_related_file)(l_0_11)
-          ;
-          (table.insert)(l_0_4, l_0_11)
-        end
+      if (sysio.IsFileExists)(R7_PC109) then
+        (mp.ReportLowfi)(R7_PC109, 2023886462)
+        ;
+        (bm.add_related_file)(R7_PC109)
       end
     end
-    do
-      l_0_5 = MpCommon
-      l_0_5 = l_0_5.SetPersistContextNoPath
-      l_0_5("OfficeWmiProc", l_0_4, 1)
-      l_0_5 = mp
-      l_0_5 = l_0_5.INFECTED
-      return l_0_5
-    end
+  end
+  do
+    ;
+    (bm.add_action)("EmsScan", 3000)
+    return mp.INFECTED
   end
 end
 

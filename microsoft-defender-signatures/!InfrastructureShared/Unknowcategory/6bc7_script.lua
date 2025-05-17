@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:VirTool:MSIL/Injector.IA")
-if peattributes.ismsil == true then
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

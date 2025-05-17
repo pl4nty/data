@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(headerpage, 1) ~= 175662436 then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((string.sub)((mp.getfilename)(), -4))
+if l_0_0 == ".iso" or l_0_0 == ".img" then
+  return mp.INFECTED
 end
-if (mp.readu_u32)(headerpage, 5) ~= 3486512 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

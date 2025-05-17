@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_isexe") and not (mp.get_mpattribute)("pea_isdll") then
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if not peattributes.suspicious_timestamp then
   return mp.CLEAN
 end
 return mp.INFECTED

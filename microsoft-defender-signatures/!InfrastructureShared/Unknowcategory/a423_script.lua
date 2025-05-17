@@ -3,31 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if (string.len)(l_0_0) < 4096 then
-    return mp.CLEAN
-  end
-  if (MpCommon.GetPersistContextCountNoPath)("Lua:MalPsSmsScanAmsi") > 0 then
-    local l_0_1 = (bm.get_current_process_startup_info)()
-    local l_0_2 = (MpCommon.GetPersistContextNoPath)("Lua:MalPsSmsScanAmsi")
-    if l_0_2 then
-      for l_0_6,l_0_7 in ipairs(l_0_2) do
-        if l_0_7 == l_0_1.ppid then
-          return mp.INFECTED
-        end
-      end
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
+if l_0_0 ~= nil then
+  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
+  if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then
+    local l_0_2 = (string.lower)(l_0_1)
+    if (string.find)(l_0_2, "cmd", 1, true) or (string.find)(l_0_2, "msconfig", 1, true) or (string.find)(l_0_2, "taskmgr", 1, true) then
+      return mp.INFECTED
     end
   end
-  do
-    do
-      l_0_1 = mp
-      l_0_1 = l_0_1.CLEAN
-      do return l_0_1 end
-      l_0_0 = mp
-      l_0_0 = l_0_0.CLEAN
-      return l_0_0
-    end
-  end
+end
+do
+  return mp.CLEAN
 end
 

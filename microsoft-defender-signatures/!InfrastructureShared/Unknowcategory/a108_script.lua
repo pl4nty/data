@@ -3,14 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 33554432 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+if ((not (hstrlog[1]).matched or not (hstrlog[2]).matched) and not (hstrlog[9]).matched) or 0 + 1 + 1 == 2 then
+  return mp.INFECTED
 end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
+return mp.CLEAN
 

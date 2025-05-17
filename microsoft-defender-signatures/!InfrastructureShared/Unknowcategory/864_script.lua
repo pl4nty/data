@@ -3,24 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_2 = nil
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if peattributes.no_exports then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (pe.get_exports)()
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = "|.js|jse|vbs|vbe|"
-  end
-  if l_0_2 ~= nil then
-    local l_0_3 = nil
-    for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
-      local l_0_4 = nil
-      -- DECOMPILER ERROR at PC26: Confused about usage of register: R7 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R7_PC26) and (string.find)(l_0_3, (string.lower)((string.sub)(R7_PC26, -3)), 1, true) then
-        (bm.add_related_file)(l_0_9)
-      end
+  if l_0_0 == 1 then
+    local l_0_2 = (pe.mmap_string_rva)((l_0_1[1]).namerva, 64)
+    if l_0_2 ~= nil and (string.len)(l_0_2) >= 21 and (string.find)((string.lower)(l_0_2), "powershell_reflective", 1, true) ~= nil then
+      return mp.INFECTED
     end
   end
-  do
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
 

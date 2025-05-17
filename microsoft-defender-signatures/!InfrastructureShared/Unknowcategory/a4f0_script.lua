@@ -3,20 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
   return mp.CLEAN
 end
-if peattributes.ismsil then
-  (mp.set_mpattribute)("HSTR:PossibleMSILDownloader.A")
-  return mp.INFECTED
+local l_0_0 = (mp.GetBruteMatchData)()
+if not l_0_0 then
+  return mp.CLEAN
 end
-if peattributes.isvbpcode or peattributes.isvbnative then
-  (mp.set_mpattribute)("HSTR:PossibleVBDownloader.A")
-  return mp.INFECTED
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = (string.lower)(tostring(headerpage))
+else
+  l_0_1 = (string.lower)(tostring(footerpage))
 end
-if peattributes.is_delphi or (mp.get_mpattribute)("SIGATTR:DelphiFile") or (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
-  (mp.set_mpattribute)("HSTR:PossibleDelphiDownloader.A")
-  return mp.INFECTED
+if not l_0_1 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_2 = "(?:set|add)-mppreference\\s+-exclusionpath\\s+[\"\']?c:\\\\+users\\\\+.*\\\\+music\\\\*?%?[\"\']?(?:[\\s;]|$)"
+local l_0_3 = false
+l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
+if l_0_3 == false then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

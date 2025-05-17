@@ -3,13 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Active then
-  (Remediation.DefaultSpecialRegistry)("HKLM\\Software\\Classes\\CLSID\\{DDC05A5A-351A-4E06-8EAF-54EC1BC2DCEA}")
-  ;
-  (Remediation.DefaultSpecialRegistry)("HKCU\\Software\\Classes\\CLSID\\{1F486A52-3CB1-48FD-8F50-B8DC300D9F9D}")
-  ;
-  (Remediation.DefaultSpecialRegistry)("HKCU\\Software\\Classes\\CLSID\\{4590F811-1D3A-11D0-891F-00AA004B2E24}")
-  ;
-  (Remediation.DefaultSpecialRegistry)("HKCU\\Software\\Classes\\CLSID\\{4DE225BF-CF59-4CFC-85F7-68B90F185355}")
+local l_0_0 = Remediation.Threat
+local l_0_1 = {}
+-- DECOMPILER ERROR at PC5: No list found for R1 , SetList fails
+
+-- DECOMPILER ERROR at PC6: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R3 in 'AssignReg'
+
+if "HKCR\\lnkfile" and (string.find)("HKLM\\software\\classes\\lnkfile", "Ransom:Win32/Spora", 1, true) then
+  for l_0_5,l_0_6 in pairs(l_0_1) do
+    local l_0_7 = (sysio.RegOpenKey)(l_0_6)
+    if l_0_7 ~= nil then
+      local l_0_8 = (sysio.GetRegValueAsString)(l_0_7, "isShortcut")
+      if l_0_8 == nil then
+        (sysio.SetRegValueAsString)(l_0_7, "isShortcut", "")
+      end
+    end
+  end
 end
 

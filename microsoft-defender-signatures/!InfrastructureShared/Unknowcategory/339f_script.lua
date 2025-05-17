@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_LNK_FILE") then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 884236 and l_0_0 <= 886260 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,14 +3,18 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.find)(l_0_0, "%.ps1") then
-      return mp.CLEAN
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 then
+  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  if l_0_1 then
+    for l_0_5,l_0_6 in ipairs(l_0_1) do
+      (bm.add_related_file)(l_0_6)
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
+end
+do
+  l_0_1 = mp
+  l_0_1 = l_0_1.INFECTED
+  return l_0_1
 end
 

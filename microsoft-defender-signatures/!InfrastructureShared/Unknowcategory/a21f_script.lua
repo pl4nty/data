@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  (mp.readprotection)(false)
-  local l_0_0 = (mp.readfile)(0, (mp.getfilesize)())
-  local l_0_1 = (pe.foffset_va)((hstrlog[1]).VA)
-  ;
-  (mp.writeu_u32)(l_0_0, l_0_1 + 1, (hstrlog[1]).VA + 4)
-  ;
-  (mp.vfo_add_buffer)(l_0_0, "locale_patched", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+if not peattributes.isexe and not peattributes.isdll then
+  return mp.CLEAN
 end
-do
-  return mp.INFECTED
+if (mp.getfilesize)() > 5000000 then
+  return mp.CLEAN
 end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
+local l_0_6 = pe.query_import
+if l_0_6(pe.IMPORT_STATIC, 933026593) == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

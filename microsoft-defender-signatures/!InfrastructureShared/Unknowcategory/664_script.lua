@@ -3,57 +3,45 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  local l_0_0, l_0_1 = nil, nil
-  l_0_1 = (this_sigattrlog[2]).utf8p2
-  local l_0_2 = nil
+local l_0_1 = nil
+local l_0_2 = 100000000
+if (this_sigattrlog[3]).matched then
+  local l_0_0 = 10000000
+  l_0_2 = 30000000
+  l_0_0 = 10000000
 else
-end
-do
-  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
-
-  if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).utf8p2 ~= nil then
-    local l_0_3, l_0_5 = (this_sigattrlog[3]).utf8p1, (this_sigattrlog[3]).utf8p2
-    l_0_5 = (this_sigattrlog[4]).utf8p2
-    local l_0_4, l_0_6 = nil
-  end
   do
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC18: Overwrote pending register: R0 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC52: Confused about usage of register: R1 in 'UnsetPending'
-
-    if l_0_3 == nil or l_0_5 == nil then
+    if (this_sigattrlog[4]).matched then
+      l_0_2 = 30000000
+    else
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC57: Confused about usage of register: R1 in 'UnsetPending'
-
-    local l_0_7 = nil
-    local l_0_8 = nil
-    local l_0_9 = l_0_5
-    repeat
-      -- DECOMPILER ERROR at PC66: Overwrote pending register: R4 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC69: Confused about usage of register: R4 in 'UnsetPending'
-
-    until 0 == 0
-    -- DECOMPILER ERROR at PC78: Overwrote pending register: R2 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC87: Overwrote pending register: R2 in 'AssignReg'
-
-    if 0 + 0 + R4_PC79 + R4_PC79 < 4 then
+    if not l_0_1.utf8p1 then
       return mp.CLEAN
     end
-    local l_0_10 = nil
-    if not (string.find)((string.lower)(l_0_9), "jndi:", 1, true) then
+    local l_0_3 = 10000000
+    if not (string.find)((string.lower)(l_0_1.utf8p1), ":\\users\\", 1, true) then
       return mp.CLEAN
     end
-    local l_0_11 = R4_PC79
-    local l_0_12 = nil
-    ;
-    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), {["[" .. l_0_7 .. "]"] = "[" .. l_0_8 .. "]", decoded_header = "[" .. l_0_9 .. "]"})
-    return mp.INFECTED
+    if (string.find)((string.lower)(l_0_1.utf8p1), "\\citrix\\", 1, true) or (string.find)((string.lower)(l_0_1.utf8p1), "\\assembly\\", 1, true) or (string.find)((string.lower)(l_0_1.utf8p1), ".tmp", 1, true) then
+      return mp.CLEAN
+    end
+    if (sysio.IsFileExists)((string.lower)(l_0_1.utf8p1)) then
+      local l_0_4 = nil
+      if (sysio.GetFileSize)((string.lower)(l_0_1.utf8p1)) < l_0_2 and l_0_3 < (sysio.GetFileSize)((string.lower)(l_0_1.utf8p1)) then
+        local l_0_5 = nil
+        ;
+        (bm.request_SMS)(((bm.get_current_process_startup_info)()).ppid, "M")
+        ;
+        (bm.add_action)("SmsAsyncScanEvent", 1)
+        return mp.INFECTED
+      end
+    end
+    do
+      return mp.CLEAN
+    end
   end
 end
 

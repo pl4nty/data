@@ -5,33 +5,45 @@
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if (string.sub)(l_0_2, -4) == ".exe" then
-    if (string.sub)(l_0_1, -16) == "\\appdata\\roaming" or (string.sub)(l_0_1, -17) == "\\application data" then
-      if (string.len)(l_0_2) == 14 and (string.sub)(l_0_2, 1, 6) == "guard-" then
-        (mp.set_mpattribute)("Lua:FakePAVFileName.A")
-      else
-        if (string.len)(l_0_2) == 15 and (string.sub)(l_0_2, 1, 7) == "protect" then
-          (mp.set_mpattribute)("Lua:FakePAVFileName.B")
-        else
-          if (string.len)(l_0_2) == 13 and (string.sub)(l_0_2, 1, 5) == "safe-" then
-            (mp.set_mpattribute)("Lua:FakePAVFileName.C")
-          else
-            if (string.len)(l_0_2) == 12 and (string.sub)(l_0_2, 1, 4) == "svc-" then
-              (mp.set_mpattribute)("Lua:FakePAVFileName.D")
-            end
-          end
-        end
-      end
-    else
-      if l_0_2 == "file.exe" and ((string.sub)(l_0_1, -19) == "\\appdata\\local\\temp" or (string.sub)(l_0_1, -20) == "\\local settings\\temp") then
-        local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-        if l_0_3 == "wscript.exe" then
-          (mp.set_mpattribute)("Lua:FakePAVFileName.E")
-        end
-      end
-    end
+  if not peattributes.isdll then
+    return mp.CLEAN
+  end
+  if not peattributes.hasexports then
+    return mp.CLEAN
+  end
+  if ((pehdr.DataDirectory)[1]).Size == 0 then
+    return mp.CLEAN
+  end
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+  local l_0_2 = {}
+  l_0_2[".exe"] = true
+  l_0_2[".dll"] = true
+  l_0_2[".cpl"] = true
+  l_0_2[".ocx"] = true
+  l_0_2[".pyd"] = true
+  l_0_2[".pyc"] = true
+  l_0_2[".sys"] = true
+  l_0_2[".asi"] = true
+  l_0_2[".xmx"] = true
+  l_0_2[".arx"] = true
+  l_0_2[".crx"] = true
+  l_0_2[".bpi"] = true
+  l_0_2[".bpl"] = true
+  l_0_2[".enu"] = true
+  l_0_2[".jpn"] = true
+  l_0_2[".tpm"] = true
+  if l_0_2[((string.lower)(l_0_1)):sub(-4)] then
+    return mp.CLEAN
+  end
+  local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+  if not l_0_3:find("\160", 1, true) then
+    return mp.CLEAN
+  end
+  if (string.find)((string.lower)(l_0_3), "\\windows\\temp\\", 1, true) then
+    return mp.CLEAN
+  end
+  if (l_0_1:find("^%l%l%l%l%l%l%l%l%l%l+%.%l%l%l$") or l_0_1:find("^~%$%l%l%l%l%l+%.%l%l%l$") or l_0_1:find("^%w+%.%w+%.%w+%.%w+%.%w+%.%w+%.%w+%.%w+$") or l_0_1:find("^%w%w%w%w%w+_? ?%w-%.%w%w%w%w%w+$")) and ((string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "msiexec.exe" or (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "rundll32.exe") then
+    return mp.INFECTED
   end
 end
 do

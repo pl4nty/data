@@ -3,29 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-if (this_sigattrlog[5]).matched then
-  l_0_2 = (this_sigattrlog[5]).image_path
-else
-  if (this_sigattrlog[6]).matched then
-    l_0_2 = (this_sigattrlog[6]).image_path
-  end
-end
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    if l_0_7.image_path == l_0_2 then
-      local l_0_8, l_0_9 = (string.match)(l_0_7.ppid, "pid:(%w+),ProcessStart:(%w+)")
-      local l_0_10 = tonumber(l_0_8)
-      local l_0_11 = tonumber(l_0_9)
-      local l_0_12, l_0_13 = (mp.bsplit)(l_0_11, 32)
-      local l_0_14 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_10, l_0_12, l_0_13)
-      ;
-      (mp.TriggerScanResource)("ems", l_0_14)
-    end
-  end
-end
-do
+if not peattributes.isexe or not peattributes.epinfirstsect or (pehdr.NumberOfSections > 7 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).Size > 4718592 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).Size < 6291456 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).Size > 2048 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_BASERELOC]).Size > 4096) == false then
+  (mp.changedetectionname)(268436426)
   return mp.INFECTED
 end
+do return mp.INFECTED end
+-- DECOMPILER ERROR: 3 unprocessed JMP targets
 

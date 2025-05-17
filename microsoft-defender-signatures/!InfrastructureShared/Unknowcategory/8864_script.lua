@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true and (mp.get_mpattribute)("pea_isexe") then
-  return mp.INFECTED
+if (string.byte)((pe.mmap_va)(pevars.sigaddr - 5, 1), 1) ~= 185 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "")
+return mp.INFECTED
 

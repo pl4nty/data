@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  return mp.INFECTED
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or (mp.getfilesize)() > 1048576 then
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_adload")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_adload")
+if (pe.get_exports_count)() > 2 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

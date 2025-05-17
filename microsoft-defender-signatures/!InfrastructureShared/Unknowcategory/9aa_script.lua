@@ -3,42 +3,58 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if l_0_1:find("\\appdata\\local\\temp", 1, true) ~= nil or l_0_1:find("\\local settings\\temp", 1, true) ~= nil then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-    if l_0_2 == "opera.exe" then
-      (mp.set_mpattribute)("Lua:ContextualDropOperaTemp")
-    else
-      if l_0_2 == "plugin-container.exe" then
-        (mp.set_mpattribute)("Lua:ContextualDropPlugincontainerTemp")
-      else
-        if l_0_2 == "vmhost.exe" then
-          local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-          if l_0_3 ~= "cpnprt2win32.cid" and l_0_3 ~= "cpnprt2.cid" then
-            (mp.set_mpattribute)("Lua:ContextualDropVmhostTemp")
-          end
-        else
-          do
-            if l_0_2 == "svchost.exe" then
-              local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-              if l_0_4:len() < 4 then
-                (mp.set_mpattribute)("Lua:ContextualDropSvchostTemp.B")
-              else
-                local l_0_5 = (string.lower)((string.sub)(l_0_4, -4))
-                if l_0_4:find("^BIT[0-9A-F][0-9A-F]?[0-9A-F]?[0-9A-F]?%.tmp$") ~= 1 and l_0_5 ~= ".mui" and l_0_5 ~= ".pyd" then
-                  (mp.set_mpattribute)("Lua:ContextualDropSvchostTemp.B")
-                end
-              end
-            end
-            do
-              return mp.CLEAN
-            end
-          end
-        end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 12288 then
+  return mp.CLEAN
+end
+local l_0_1, l_0_2 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1 == nil or (string.len)(l_0_1) < 10 then
+  return mp.CLEAN
+end
+if l_0_2 == nil or (string.len)(l_0_2) < 5 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_2, "->", 1, true) == nil then
+  return mp.CLEAN
+end
+local l_0_3 = l_0_2:sub(-4)
+if l_0_3 == ".lnk" then
+  local l_0_4 = {}
+  l_0_4[".zip->"] = "%.zip%->.+"
+  l_0_4[".rar->"] = "%.rar%->.+"
+  l_0_4[".7z->"] = "%.7z%->.+"
+  l_0_4[".iso->"] = "%.iso%->.+"
+  l_0_4[".arj->"] = "%.arj%->.+"
+  l_0_4[".gz->"] = "%.gz%->.+"
+  l_0_4[".ace->"] = "%.ace%->.+"
+  l_0_4[".z->"] = "%.z%->.+"
+  l_0_4[".xz->"] = "%.xz%->.+"
+  for l_0_8,l_0_9 in pairs(l_0_4) do
+    if (string.find)(l_0_2, l_0_8, 1, true) then
+      (mp.set_mpattribute)("LUA:ElenqueyInArchive")
+      local l_0_10 = (string.match)(l_0_2, l_0_9)
+      if l_0_10 == nil or l_0_10:len() < 12 then
+        return mp.CLEAN
       end
+      local l_0_11 = l_0_8:len() + 1
+      if l_0_10:len() <= l_0_11 + 5 then
+        return mp.CLEAN
+      end
+      local l_0_12 = (string.sub)(l_0_10, l_0_11, -5)
+      if l_0_12 == nil then
+        return mp.CLEAN
+      end
+      local l_0_13 = l_0_12 .. l_0_8
+      if (string.find)(l_0_2, l_0_13, 1, true) == nil then
+        return mp.CLEAN
+      end
+      return mp.INFECTED
     end
   end
+end
+do
+  l_0_4 = mp
+  l_0_4 = l_0_4.CLEAN
+  return l_0_4
 end
 

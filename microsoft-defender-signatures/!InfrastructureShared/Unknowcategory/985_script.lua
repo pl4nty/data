@@ -16,13 +16,13 @@ if l_0_0 == mp.SCANREASON_ONOPEN then
   if l_0_2:sub(-17) == "\\windows\\system32" then
     local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
     local l_0_4 = (string.lower)(l_0_3)
-    if l_0_4:sub(1, 2) == "ob" and l_0_4:sub(-4) == ".exe" then
+    if l_0_4:sub(1, 2) == "ii" and l_0_4:sub(-4) == ".exe" then
       local l_0_5 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
       local l_0_6 = (string.lower)(l_0_5)
       if l_0_6:sub(-10) == "\\all users" or l_0_6:sub(-12) == "\\programdata" or l_0_6:sub(-17) == "\\application data" or l_0_6:sub(-16) == "\\appdata\\roaming" then
         local l_0_7 = (MpCommon.PathToWin32Path)(l_0_5) .. "\\" .. l_0_4
         ;
-        (mp.ReportLowfi)(l_0_7, 3603965388)
+        (mp.ReportLowfi)(l_0_7, 391666626)
       end
     end
   end

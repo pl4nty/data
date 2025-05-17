@@ -3,16 +3,18 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (mp.getfilesize)() < 309764 and peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = ""
+if (this_sigattrlog[3]).matched then
+  l_0_0 = (this_sigattrlog[3]).utf8p2
+end
+if (this_sigattrlog[4]).matched then
+  l_0_0 = (this_sigattrlog[3]).utf8p2
+end
+if l_0_0 ~= "" then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.find)(l_0_0, "-r ", 1, true) and (string.find)(l_0_0, "init", 1, true) then
     return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

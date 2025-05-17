@@ -3,24 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC84: Unhandled construct in 'MakeBoolean' P3
+local l_0_0 = (mp.getfilesize)()
+do
+  if peattributes.ismsil == true and l_0_0 < 20480 then
+    local l_0_1 = (pe.get_versioninfo)()
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC84: Unhandled construct in 'MakeBoolean' P3
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC84: Unhandled construct in 'MakeBoolean' P3
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC84: Unhandled construct in 'MakeBoolean' P3
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC84: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC84: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC84: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC84: Unhandled construct in 'MakeBoolean' P3
-
-if (((((((hstrlog[1]).matched or not (hstrlog[9]).matched) and (hstrlog[3]).matched) or (hstrlog[2]).matched) and not (hstrlog[14]).matched) or (hstrlog[8]).matched) and not (hstrlog[15]).matched) or 0 + 1 + 1 + 1 + 1 >= 2 then
-  return mp.SUSPICIOUS
+    if (l_0_1.OriginalFilename ~= nil and (l_0_1.OriginalFilename):lower() == "monitor.exe") or l_0_1.InternalName == nil or l_0_1.CompanyName == nil or l_0_1.FileDescription == nil or l_0_1.LegalTrademarks == nil or l_0_1.ProductName ~= nil and (l_0_1.ProductName):lower() == "monitor" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

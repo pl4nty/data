@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (mp.getfilesize)() < 10000000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (string.find)(l_0_6.image_path, "rundll32.exe", 1, true) then
     return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

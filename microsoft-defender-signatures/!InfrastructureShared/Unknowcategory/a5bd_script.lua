@@ -3,39 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2))
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  local l_0_1 = (string.match)(l_0_0, "wscript[^%s]+%s+\"(.-%.vbs)")
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  if (sysio.IsFileExists)(l_0_1) then
-    (mp.ReportLowfi)(l_0_1, 3439210845)
-    ;
-    (bm.add_related_file)(l_0_1)
-  end
-end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2))
-    if l_0_2 == nil then
-      return mp.CLEAN
-    end
-    local l_0_3 = (string.match)(l_0_2, "powershell.-%-file%s+(.-%.ps1)")
-    if l_0_3 == nil then
-      return mp.CLEAN
-    end
-    if (sysio.IsFileExists)(l_0_3) then
-      (mp.ReportLowfi)(l_0_3, 1442275559)
-      ;
-      (bm.add_related_file)(l_0_3)
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC39 = (mp.ContextualExpandEnvironmentVariables)(R6_PC39)
+      R6_PC39 = (string.lower)(R6_PC39)
+      if (string.find)(R6_PC39, "control.exe$") == nil and (sysio.IsFileExists)(R6_PC39) and (string.find)(R6_PC39, "\\windows\\.*%.cpl$") == nil and (string.find)(R6_PC39, "\\windows\\.*%.dll$") == nil then
+        (bm.add_related_file)(R6_PC39)
+        return mp.INFECTED
+      end
     end
   end
   do
-    return mp.INFECTED
+    return mp.CLEAN
   end
 end
 

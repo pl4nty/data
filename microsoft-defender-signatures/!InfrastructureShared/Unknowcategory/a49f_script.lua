@@ -3,43 +3,31 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0, l_0_1, l_0_9, l_0_11, l_0_13 = nil, nil
-  l_0_9 = this_sigattrlog
-  l_0_9 = l_0_9[1]
-  l_0_1 = l_0_9.ppid
-  local l_0_2, l_0_10, l_0_12, l_0_14 = nil
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_2 = l_0_0.match_offset + 17
+if l_0_0._is_footer then
+  l_0_2 = (mp.getfilesize)() - mp.FOOTERPAGE_SZ + l_0_2
+  local l_0_1 = nil
 end
 do
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+  ;
+  (mp.readprotection)(false)
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R2 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
+  local l_0_3 = nil
+  ;
+  (mp.readprotection)(true)
+  if l_0_2 ~= nil then
+    for l_0_7 in (string.find)((mp.readfile)(l_0_2, l_0_1 - (l_0_2)), "[%w+/]+=?=?") do
+      local l_0_4 = nil
+      -- DECOMPILER ERROR at PC36: Confused about usage of register: R7 in 'UnsetPending'
 
-  if l_0_0 ~= nil then
-    local l_0_3 = nil
-    for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_4, l_0_5 = nil
-      -- DECOMPILER ERROR at PC28: Confused about usage of register: R7 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC41: Confused about usage of register: R7 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC49: Confused about usage of register: R7 in 'UnsetPending'
-
-      if (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_12)) and (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_12)), "javaw.exe") == nil then
-        (bm.add_threat_file)((mp.ContextualExpandEnvironmentVariables)(l_0_12))
+      if R7_PC36 ~= nil and R7_PC36 ~= "" then
+        (mp.vfo_add_buffer)("CWSHACK\000" .. (MpCommon.Base64Decode)(R7_PC36), "[PyMacZlib]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
       end
     end
   end
   do
-    -- DECOMPILER ERROR at PC53: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC57: Confused about usage of register: R1 in 'UnsetPending'
-
-    if l_0_4 ~= nil then
-      (bm.add_threat_process)(l_0_4)
-    end
     return mp.INFECTED
   end
 end

@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if (l_0_0.CompanyName ~= nil and (string.find)(l_0_0.CompanyName, "Microsoft CoreXT", 1, true) ~= nil) or l_0_0.FileDescription ~= nil and (string.find)(l_0_0.FileDescription, "NMAgent", 1, true) ~= nil then
-  return mp.CLEAN
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+end
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
 return mp.INFECTED
 

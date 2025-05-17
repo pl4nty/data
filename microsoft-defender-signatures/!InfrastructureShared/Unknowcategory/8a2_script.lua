@@ -3,25 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC5: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
-if l_0_0 == nil or (string.len)(l_0_0) == 0 then
-  l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-  if l_0_0 == nil or (string.len)(l_0_0) == 0 then
-    return mp.CLEAN
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if (l_0_2 == "wncs.dll" or l_0_2 == "wncs.exe") and ((string.sub)(l_0_1, -9) == "\\system32" or (string.sub)(l_0_1, -9) == "\\syswow64") then
+    (mp.set_mpattribute)("Lua:SefnitFileName.D")
   end
 end
-l_0_0 = (string.lower)(l_0_0)
-if (string.find)(l_0_0, "^.:\\windows\\ccmcache\\") then
+do
   return mp.CLEAN
 end
-local l_0_1 = (string.match)(l_0_0, "^.:\\(program files[^\\]*)\\tanium\\tanium client\\")
-if l_0_1 == "program files" then
-  return mp.CLEAN
-end
-if l_0_1 == "program files (x86)" then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

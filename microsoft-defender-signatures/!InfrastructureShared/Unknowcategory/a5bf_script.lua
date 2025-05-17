@@ -3,39 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2))
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  local l_0_1 = (string.match)(l_0_0, "wscript[^%s]+%s+\"(.-%.vbs)")
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  if (sysio.IsFileExists)(l_0_1) then
-    (mp.ReportLowfi)(l_0_1, 3439210845)
-    ;
-    (bm.add_related_file)(l_0_1)
-  end
+if peattributes.isdll and pehdr.NumberOfSections == 5 and pevars.epsec == 1 and not peattributes.no_exports and peattributes.no_tls and pehdr.SizeOfImage >= 135168 and pehdr.SizeOfImage <= 1048576 and (pesecs[pevars.epsec]).SizeOfRawData >= 81920 and (pesecs[pevars.epsec]).SizeOfRawData <= 655360 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (pesecs[pevars.epsec]).Name == ".text" then
+  (mp.set_mpattribute)("MpSimulateParanoid")
+  ;
+  (mp.set_mpattribute)("MpEnableCOM")
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
+  ;
+  (pe.reemulate)()
 end
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2))
-    if l_0_2 == nil then
-      return mp.CLEAN
-    end
-    local l_0_3 = (string.match)(l_0_2, "powershell.-%-file%s+(.-%.ps1)")
-    if l_0_3 == nil then
-      return mp.CLEAN
-    end
-    if (sysio.IsFileExists)(l_0_3) then
-      (mp.ReportLowfi)(l_0_3, 1442275559)
-      ;
-      (bm.add_related_file)(l_0_3)
-    end
-  end
-  do
-    return mp.INFECTED
-  end
-end
+return mp.CLEAN
 

@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.len)(l_0_0) < 4096 then
-      return mp.CLEAN
-    end
-    if (string.find)(l_0_0, "%.ps1") then
-      return mp.CLEAN
-    end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).p2)
+  local l_0_1 = (string.lower)((this_sigattrlog[2]).p1)
+  if (string.find)(l_0_1, l_0_0, 10, true) then
     return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

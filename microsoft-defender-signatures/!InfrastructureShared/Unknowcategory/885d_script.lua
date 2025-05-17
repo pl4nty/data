@@ -3,19 +3,11 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
-  end
-  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 ~= nil) and (sysio.IsFileExists)((this_sigattrlog[3]).utf8p2) then
-    (bm.add_related_file)((this_sigattrlog[3]).utf8p2)
-  end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.isdll and (mp.getfilesize)() <= 716800 and (mp.getfilesize)() >= 614400 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

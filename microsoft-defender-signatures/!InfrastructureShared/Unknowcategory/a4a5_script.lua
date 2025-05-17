@@ -3,14 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "svchost.exe" or l_0_1:match("([^\\]+)$") == "rundll32.exe" or l_0_1:match("([^\\]+)$") == "mstsc.exe" or l_0_1:match("([^\\]+)$") == "dllhost.exe" or l_0_1:match("([^\\]+)$") == "wuauclt.exe" or l_0_1:match("([^\\]+)$") == "msfeedssync.exe" or l_0_1:match("([^\\]+)$") == "nslookup.exe" or l_0_1:match("([^\\]+)$") == "werfault.exe" or l_0_1:match("([^\\]+)$") == "eventvwr.exe" then
-      return mp.INFECTED
-    end
-  end
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
+if epcode[1] ~= 80 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 235 then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.ImageBase ~= 268435456 then
+  return mp.CLEAN
+end
+if peattributes.hasexports ~= false then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[6]).Size == 0 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

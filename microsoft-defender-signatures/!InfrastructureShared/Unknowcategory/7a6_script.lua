@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetUACMetadata)()
-if l_0_0 ~= nil and ((MpCommon.GetProcessElevationAndIntegrityLevel)((string.format)("pid:%u", l_0_0.RequestorPid))).IntegrityLevel == MpCommon.SECURITY_MANDATORY_LOW_RID then
-  return mp.SYNCLOWFI
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if (mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE) == "msi.exe" and (string.sub)(l_0_0, -10) == "\\microsoft" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

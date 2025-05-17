@@ -3,73 +3,145 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+local l_0_0 = (mp.GetCertificateInfo)()
+if l_0_0 == nil or #l_0_0 == 0 then
+  if (string.find)((mp.getfilename)(), "->") == nil then
+    (mp.set_mpattribute)("Lua:TopLevelUnsigned")
+  end
   return mp.CLEAN
 end
-if peattributes.hasappendeddata then
-  return mp.CLEAN
-end
-if peattributes.ismsil then
-  return mp.CLEAN
-end
-if peattributes.isvbnative or peattributes.isvbpcode then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("Win32/AutoIt") or (mp.get_mpattribute)("Win32/AutoIt_HSTR1") or (mp.get_mpattribute)("Win32/AutoIt_HSTR2") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") or (mp.get_mpattribute)("SIGATTR:DelphiFile") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("HSTR:NSIS.gen!A") or (mp.get_mpattribute)("HSTR:NSIS_Installer") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("ValidDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("Lua:SenseIRCretaeFileinTemp") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 209715200 then
-  return mp.CLEAN
-end
-if l_0_0 < 52428800 then
-  return mp.CLEAN
-end
-local l_0_1 = pehdr.NumberOfSections
-if l_0_1 > 5 then
-  return mp.CLEAN
-end
-if l_0_1 < 3 then
-  return mp.CLEAN
-end
-local l_0_2 = (pesecs[1]).SizeOfRawData
-if l_0_2 <= 196608 and l_0_2 >= 36864 then
-  local l_0_3 = (pesecs[l_0_1]).SizeOfRawData
-  local l_0_4 = (pesecs[l_0_1]).PointerToRawData
-  if l_0_3 > 208666624 then
+for l_0_4,l_0_5 in ipairs(l_0_0) do
+  if l_0_5.AuthenticodeContentType ~= "PE" then
     return mp.CLEAN
   end
-  if l_0_3 < 51380224 then
-    return mp.CLEAN
-  end
-  ;
-  (mp.readprotection)(false)
-  local l_0_5 = (mp.readfile)(l_0_4, 16)
-  if (string.find)(l_0_5, "%z[^%z][^%z][^%z]%z[^%z][^%z][^%z]%z[^%z][^%z][^%z]%z[^%z][^%z][^%z]") then
-    local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-    if l_0_6:sub(-4) ~= ".exe" then
-      return mp.CLEAN
+  local l_0_6 = l_0_5.Certificates
+  if l_0_6 ~= nil then
+    for l_0_10,l_0_11 in ipairs(l_0_6) do
+      local l_0_12 = "20160501"
+      local l_0_13 = l_0_11.ValidFrom
+      if l_0_13 ~= nil then
+        local l_0_14 = l_0_13.Year
+        if (string.len)(l_0_13.Month) < 2 then
+          l_0_14 = l_0_14 .. "0"
+        end
+        l_0_14 = l_0_14 .. l_0_13.Month
+        if (string.len)(l_0_13.Day) < 2 then
+          l_0_14 = l_0_14 .. "0"
+        end
+        l_0_14 = l_0_14 .. l_0_13.Day
+        if l_0_12 < l_0_14 then
+          local l_0_15 = false
+          local l_0_16 = l_0_11.Issuer
+          if l_0_16 ~= nil and l_0_16.Organization ~= nil and (mp.utf16to8)(l_0_16.Organization) == "Microsoft Corporation" then
+            l_0_15 = true
+          end
+          if not l_0_15 then
+            (mp.set_mpattribute)("Lua:CertValidFromRecent")
+            local l_0_17 = l_0_11.Subject
+            do
+              do
+                if l_0_17 ~= nil and l_0_17.Country ~= nil and (string.len)(l_0_17.Country) < 20 then
+                  local l_0_18 = (mp.utf16to8)(l_0_17.Country)
+                  if l_0_18 ~= nil then
+                    (mp.set_mpattribute)("Lua:CertValidFromRecentCountry" .. l_0_18)
+                  end
+                end
+                do return mp.CLEAN end
+                local l_0_19 = l_0_11.ValidTo
+                if l_0_19 ~= nil and l_0_13 ~= nil then
+                  local l_0_20 = l_0_19.Year
+                  if (string.len)(l_0_19.Month) < 2 then
+                    l_0_20 = l_0_20 .. "0"
+                  end
+                  l_0_20 = l_0_20 .. l_0_19.Month
+                  if (string.len)(l_0_19.Day) < 2 then
+                    l_0_20 = l_0_20 .. "0"
+                  end
+                  l_0_20 = l_0_20 .. l_0_19.Day
+                  if l_0_20 < l_0_12 then
+                    local l_0_21 = false
+                    local l_0_22 = false
+                    local l_0_23 = l_0_11.Issuer
+                    if l_0_23 ~= nil then
+                      if l_0_23.Organization ~= nil and (mp.utf16to8)(l_0_23.Organization) == "Microsoft Corporation" then
+                        l_0_21 = true
+                      end
+                      if l_0_23.CommonName ~= nil and (mp.utf16to8)(l_0_23.CommonName) == "Unknown issuer" then
+                        l_0_22 = true
+                      end
+                    end
+                    local l_0_24 = false
+                    local l_0_25 = l_0_11.Subject
+                    do
+                      do
+                        if l_0_25 ~= nil and l_0_25.Organization ~= nil then
+                          local l_0_26 = {}
+                          l_0_26["Microsoft Corporation"] = true
+                          l_0_26["ROBLOX Corporation"] = true
+                          l_0_26["Adobe Systems Incorporated"] = true
+                          l_0_26["Dell USA L.P."] = true
+                          l_0_26["DigiCert Inc"] = true
+                          l_0_26.DigiCert = true
+                          l_0_26["VeriSign, Inc."] = true
+                          l_0_26["VeriSign Trust Network"] = true
+                          l_0_26["COMODO CA Limited"] = true
+                          l_0_26["Thawte Consulting (Pty) Ltd."] = true
+                          l_0_26["Symantec Corporation"] = true
+                          l_0_26["WIZVERA CO., LTD"] = true
+                          l_0_26["NCH Software"] = true
+                          l_0_26["win.rar GmbH"] = true
+                          l_0_26.Interezen = true
+                          l_0_26["Interezen Co.,Ltd"] = true
+                          l_0_26["Interezen Co,.Ltd"] = true
+                          l_0_26["Shenzhen Wondershare Information Technology Co., Ltd."] = true
+                          l_0_26["Reloaded Games, Inc"] = true
+                          if l_0_26[(mp.utf16to8)(l_0_25.Organization)] then
+                            l_0_24 = true
+                          end
+                        end
+                        if not l_0_21 and not l_0_24 and not l_0_22 then
+                          (mp.set_mpattribute)("Lua:CertValidToOld")
+                          return mp.CLEAN
+                        end
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out DO_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out DO_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out DO_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
+
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
     end
-    local l_0_7 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if (l_0_7:sub(-10) == "\\all users" or l_0_7:sub(-12) == "\\programdata" or l_0_7:sub(-17) == "\\application data" or l_0_7:sub(-16) == "\\appdata\\roaming") and (l_0_6:sub(1, 2) == "ms" or l_0_6:sub(1, 2) == "ob") then
-      (mp.set_mpattribute)("Lua:ExeGamObfusHugeLastSection")
-    end
-    return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC231: Confused about usage of register R1 for local variables in 'ReleaseLocals'
+
 

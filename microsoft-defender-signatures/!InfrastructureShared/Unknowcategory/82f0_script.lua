@@ -3,13 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 238593 then
-  if mp.HSTR_WEIGHT == 11 then
-    return mp.SUSPICIOUS
+do
+  if peattributes.ismsil and peattributes.isexe then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
   end
-  if mp.HSTR_WEIGHT == 10 then
-    return mp.LOWFI
-  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

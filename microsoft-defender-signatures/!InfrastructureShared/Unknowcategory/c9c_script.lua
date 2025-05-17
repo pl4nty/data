@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:GlobalUpdate")
-return mp.INFECTED
+if mp.HSTR_WEIGHT >= 9 then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

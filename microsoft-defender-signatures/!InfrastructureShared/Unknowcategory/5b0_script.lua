@@ -3,11 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((bm.get_imagepath)(), -12)) == "\\msiexec.exe" then
-  return mp.CLEAN
-end
-if MpCommon.SECURITY_MANDATORY_HIGH_RID <= ((bm.get_current_process_startup_info)()).integrity_level then
-  return mp.CLEAN
+local l_0_0 = nil
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+
+  if (sigattr_head[R4_PC6]).matched and (sigattr_head[R4_PC6]).attribute == 16401 then
+    l_0_1 = (string.lower)((sigattr_head[R4_PC6]).utf8p1)
+    if (string.find)(l_0_1, "\\program files", 1, true) then
+      return mp.CLEAN
+    end
+  end
 end
 return mp.INFECTED
 

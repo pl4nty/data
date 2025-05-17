@@ -3,16 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false or (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+if not (string.find)(l_0_0, "^c:\\") and not (string.find)(l_0_0, "^\\\\") then
   return mp.CLEAN
 end
-local l_0_0 = (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 7, 4), 1)
-if (mp.readu_u16)((pe.mmap_va)((mp.bitand)((pe.get_regval)(pe.REG_EIP) + 11 + l_0_0, 4294967295), 4), 1) ~= 60811 then
+if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\cisco\\cisco", 1, true) then
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\184\r\024\141>\144")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "ExecutedPENoCert")
+if not l_0_1 then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.enum_mpattributesubstring)("Behavior:")
+if #l_0_2 == 0 or l_0_2 == nil then
+  return mp.CLEAN
+end
+for l_0_6,l_0_7 in ipairs(l_0_2) do
+  (bm.add_related_string)("RelatedBMHits", l_0_7, bm.RelatedStringBMReport)
+end
 return mp.INFECTED
 

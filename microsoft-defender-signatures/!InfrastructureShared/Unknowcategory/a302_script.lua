@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 2 and peattributes.isexe and peattributes.lastscn_writable and peattributes.lastscn_executable and peattributes.lastscn_vfalign and (pesecs[pehdr.NumberOfSections]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).VirtualAddress <= (hstrlog[1]).VA - pehdr.ImageBase then
+if (mp.getfilesize)() > 25360 or peattributes.ismsil ~= true then
+  return mp.CLEAN
+end
+local l_0_0 = ((pe.get_versioninfo)()).FileDescription
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if l_0_0 == "vshost64-clr3" or l_0_0 == "vshost64-clr2" or l_0_0 == "vshost32-clr3" or l_0_0 == "vshost32-clr2" or l_0_0 == ".NET Framework" or l_0_0 == "XML Protector" or l_0_0 == "Microsoft" then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

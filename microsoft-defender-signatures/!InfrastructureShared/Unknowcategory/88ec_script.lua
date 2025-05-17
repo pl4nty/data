@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() > 7000 and (mp.getfilesize)() < 8000 then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
+  if l_0_1 ~= nil and l_0_1.image_path ~= nil then
+    local l_0_2 = (string.lower)(l_0_1.image_path)
+    ;
+    (bm.add_related_file)(l_0_2)
   end
 end
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+  return mp.INFECTED
 end
 

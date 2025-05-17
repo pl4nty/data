@@ -3,36 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched then
-  local l_0_0, l_0_1, l_0_2 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC18: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_0 == nil or l_0_0 == "" then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+  return mp.CLEAN
+end
+local l_0_1 = (bm.get_imagepath)()
+do
+  if l_0_1 ~= nil then
+    local l_0_2 = {}
+    l_0_2["cmstp.exe"] = true
+    l_0_2["dllhost.exe"] = true
+    if l_0_2[((string.lower)((string.sub)(l_0_1, -15))):match("\\([^\\]+)$")] then
       return mp.CLEAN
     end
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC32: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
-
-    if nil == nil or nil == "" then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (sysio.IsFileExists)(nil) then
-      (bm.add_related_file)(nil)
-    end
-    return mp.INFECTED
   end
+  ;
+  (bm.add_related_file)(l_0_1)
+  return mp.INFECTED
 end
 

@@ -3,34 +3,33 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC18: Confused about usage of register: R0 in 'UnsetPending'
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
 
-    local l_0_1 = nil
-    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0.utf8p2)
-    for l_0_6,l_0_7 in ipairs(l_0_2) do
-      local l_0_3 = false
-      -- DECOMPILER ERROR at PC27: Confused about usage of register: R7 in 'UnsetPending'
-
-      R7_PC27 = (mp.ContextualExpandEnvironmentVariables)(R7_PC27)
-      if (sysio.IsFileExists)(R7_PC27) and not (mp.IsKnownFriendlyFile)(R7_PC27, true, false) then
-        l_0_3 = true
-        ;
-        (bm.add_related_file)(R7_PC27)
-      end
-    end
-    -- DECOMPILER ERROR at PC51: Confused about usage of register: R2 in 'UnsetPending'
-
-    if l_0_3 then
-      return mp.INFECTED
-    end
+  if l_0_0 == nil then
     return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_1 = (string.lower)(l_0_0)
+  if not (string.find)(l_0_1, "pcwdiagnostic.xml", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+  if l_0_2 ~= nil then
+    for l_0_6,l_0_7 in ipairs(l_0_2) do
+      l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+      ;
+      (bm.add_related_file)(l_0_7)
+    end
+  end
+  do
+    return mp.INFECTED
   end
 end
 

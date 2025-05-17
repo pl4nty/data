@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
-  return mp.CLEAN
+if ((((((((((((((hstrlog[1]).matched and not (hstrlog[2]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and not (hstrlog[1]).matched) or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and 0 + 1 + 1 + 1 + 1 + 1 >= 2) or 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 >= 5 then
+  return mp.INFECTED
 end
-if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[10]).hitcount == 0 and (hstrlog[11]).hitcount == 0 and (hstrlog[12]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[13]).hitcount == 0 and (hstrlog[14]).hitcount == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

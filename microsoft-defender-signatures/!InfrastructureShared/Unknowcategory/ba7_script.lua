@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:SaveVid")
+(mp.set_mpattribute)("PUA:Block:VSearch")
 return mp.INFECTED
 

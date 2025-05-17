@@ -3,19 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if l_0_1 ~= nil then
-  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    if (sysio.IsFileExists)(l_0_7) then
-      (bm.add_related_file)(l_0_7)
-    end
-  end
+local l_0_0 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  return l_0_2
+local l_0_1 = l_0_0:sub(-4)
+if l_0_1 == nil then
+  return mp.CLEAN
 end
+local l_0_2 = {}
+l_0_2.aspx = mp.INFECTED
+if l_0_2[l_0_1] == mp.INFECTED then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).VirtualSize > 20480 and (pesecs[1]).VirtualAddress == 4096 then
+if (mp.get_mpattribute)("pea_no_security") and peattributes.ismsil == true then
   return mp.INFECTED
 end
 return mp.CLEAN

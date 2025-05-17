@@ -3,29 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[4]).matched then
-  local l_0_0 = nil
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-    local l_0_1 = false
-    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    if l_0_2 ~= nil then
-      for l_0_6,l_0_7 in ipairs(l_0_2) do
-        l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-        ;
-        (bm.add_related_file)(l_0_7)
-        l_0_1 = true
-      end
-    end
-    do
-      do
-        if l_0_1 then
-          return mp.INFECTED
-        end
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() < 176128 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
         return mp.CLEAN
       end
     end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

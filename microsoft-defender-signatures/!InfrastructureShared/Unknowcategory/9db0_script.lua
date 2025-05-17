@@ -3,23 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).wp1 ~= nil then
-      local l_0_4 = nil
-      if (string.find)((mp.utf16to8)((this_sigattrlog[3]).wp1), ":\\ \\[%w%s%p]+$") and (string.find)((mp.utf16to8)((this_sigattrlog[3]).wp1), ":\\ \\[^\\]+$") then
-        return mp.INFECTED
-      end
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    l_0_0 = (string.lower)(l_0_0)
+    if (string.match)(l_0_0, "/s") == nil or (string.match)(l_0_0, "/i") == nil or (string.match)(l_0_0, "\\\\sysvol\\policies") == nil then
+      return mp.CLEAN
+    else
+      return mp.INFECTED
     end
-    return mp.CLEAN
   end
+  return mp.CLEAN
 end
 

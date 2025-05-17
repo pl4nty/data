@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((bm.get_current_process_startup_info)()).integrity_level then
-  return mp.INFECTED
+local l_0_0 = (bm.get_process_relationships)()
+for l_0_4,l_0_5 in ipairs(l_0_0) do
+  if l_0_5.reason == bm.RELATIONSHIP_INJECTION then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

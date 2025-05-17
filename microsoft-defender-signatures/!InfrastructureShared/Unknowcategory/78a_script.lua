@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.match)(l_0_0, "winword%.exe\".+\"(.+%.doc)") .. "\000"
-  ;
-  (mp.ReportLowfi)(l_0_1, 2736322605)
+if not (Remediation.Threat).Active then
+  return 
 end
-do
-  return mp.INFECTED
+local l_0_0 = (sysio.RegOpenKey)("hklm\\system\\currentcontrolset\\services\\trustedinstaller")
+if l_0_0 then
+  (sysio.SetRegValueAsStringExpand)(l_0_0, "ImagePath", "%SystemRoot%\\servicing\\TrustedInstaller.exe")
 end
 

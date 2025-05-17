@@ -3,29 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 5 then
+if pehdr.Machine == 34404 then
+  if mp.HSTR_WEIGHT >= 18 then
+    (mp.changedetectionname)(805306420)
+    return mp.INFECTED
+  else
+    if mp.HSTR_WEIGHT >= 1 and (hstrlog[11]).matched then
+      (pe.set_peattribute)("hstr_exhaustive", true)
+      ;
+      (pe.reemulate)()
+    end
+  end
   return mp.CLEAN
+else
+  if mp.HSTR_WEIGHT >= 18 then
+    return mp.INFECTED
+  else
+    if mp.HSTR_WEIGHT >= 7 then
+      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    end
+  end
 end
-if pehdr.SectionAlignment == 4096 then
-  return mp.CLEAN
-end
-if pehdr.FileAlignment == 512 then
-  return mp.CLEAN
-end
-if pehdr.FileAlignment == 4096 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).Characteristics ~= 1744830496 then
-  return mp.CLEAN
-end
-if pehdr.ImageBase ~= 65536 then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 1 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

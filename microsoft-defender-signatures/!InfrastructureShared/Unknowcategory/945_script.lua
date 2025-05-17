@@ -4,32 +4,20 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if l_0_1:sub(-9) == "\\apppatch" then
-    if peattributes.isdll then
-      return mp.CLEAN
-    end
-    local l_0_2 = (pe.get_versioninfo)()
-    if l_0_2 == nil then
-      return mp.CLEAN
-    end
-    if l_0_2.CompanyName == "Microsoft Corporation" then
-      return mp.CLEAN
-    end
-    local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-    local l_0_4 = (string.len)(l_0_3)
-    if l_0_4 < 10 or l_0_4 > 12 then
-      return mp.CLEAN
-    end
-    for l_0_8 = 1, l_0_4 - 4 do
-      local l_0_9 = (string.byte)(l_0_3, l_0_8)
-      if l_0_9 < 97 or l_0_9 > 122 then
-        return mp.CLEAN
+if l_0_0 == mp.SCANREASON_ONOPEN then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if (string.find)(l_0_2, "appdata\\local\\packages\\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\\localstate\\files\\s0\\", 1, true) ~= nil then
+    local l_0_3 = {}
+    l_0_3["runtimebroker.exe"] = true
+    l_0_3["hxtsr.exe"] = true
+    if l_0_3[l_0_1] == true and (string.len)((mp.getfilename)()) > 4 then
+      local l_0_4 = (string.lower)((string.sub)((mp.getfilename)(), -4))
+      if l_0_4 == ".exe" or l_0_4 == ".jar" or l_0_4 == ".zip" then
+        (mp.set_mpattribute)("Lua:Win10MailAppOpenExecFiles")
+        return mp.INFECTED
       end
     end
-    ;
-    (mp.set_mpattribute)("Lua:Simda.B")
   end
 end
 do

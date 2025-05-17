@@ -3,39 +3,50 @@
 
 -- params : ...
 -- function num : 0
-checkPossibleEncoded = function(l_1_0, l_1_1, l_1_2)
+local l_0_0 = function(l_1_0)
   -- function num : 0_0
-  for l_1_6 in l_1_0:gmatch(l_1_1) do
-    if l_1_2 <= (string.len)(l_1_6) then
-      return true
+  local l_1_1 = tonumber
+  local l_1_4 = (l_1_0:reverse()):gsub
+  do
+    local l_1_5 = l_1_0:reverse()
+    l_1_4 = l_1_4(l_1_5, ".", function(l_2_0)
+    -- function num : 0_0_0
+    local l_2_1 = string.format
+    local l_2_2 = "%02x"
+    do
+      local l_2_3, l_2_4 = (string.byte)(l_2_0), .end
+      do return l_2_1(l_2_2, l_2_3, l_2_4) end
+      -- DECOMPILER ERROR at PC9: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
     end
   end
-  return false
+)
+    local l_1_2 = nil
+    l_1_5 = 16
+    local l_1_3 = nil
+    do return l_1_1(l_1_4, l_1_5) end
+    -- DECOMPILER ERROR at PC10: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
+  end
 end
 
-local l_0_0 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_0 = (this_sigattrlog[1]).utf8p2
-else
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    l_0_0 = (this_sigattrlog[2]).utf8p2
-  end
-end
-l_0_0 = (string.lower)(l_0_0)
-if (string.len)(l_0_0) < 2048 then
+if not peattributes.hasappendeddata then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "%.ps1") then
+local l_0_1 = (mp.getfilesize)()
+local l_0_2 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA
+if l_0_2 == 0 then
   return mp.CLEAN
 end
-do
-  if checkPossibleEncoded(l_0_0, "%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w+", 2048) then
-    local l_0_1, l_0_2 = (string.match)(l_0_0, " ([-/]wi?n?d?o?w?s?s?t?y?l?e?)%s+(%w+)%s")
-    if l_0_2 == "1" or (string.find)(l_0_2, "^hi") then
-      (bm.add_action)("EmsScan", 5000)
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+;
+(mp.readprotection)(false)
+local l_0_3 = l_0_0((mp.readfile)(l_0_2, 4))
+;
+(mp.readprotection)(true)
+local l_0_4 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+local l_0_5 = l_0_1 - l_0_4
+if l_0_1 < l_0_3 and l_0_5 > 0 and l_0_5 < 20480 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

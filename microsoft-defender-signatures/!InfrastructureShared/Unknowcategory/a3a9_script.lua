@@ -3,26 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
-local l_0_2 = (string.match)(l_0_1, "https?://(%d+)/")
-do
-  if l_0_2 ~= nil then
-    local l_0_3 = nil
-    if (string.find)(l_0_2, "^[01]+$") ~= nil and #l_0_2 > 24 then
-      l_0_3 = (mp.shr32)(tonumber(l_0_2, 2), 24)
-    else
-      l_0_3 = (mp.shr32)(tonumber(l_0_2), 24)
-    end
-    if l_0_3 == nil or l_0_3 == 127 or l_0_3 == 10 then
-      return mp.CLEAN
-    else
-      return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+    if l_0_7 == 1 then
+      local l_0_8, l_0_9 = (bm.get_process_relationships)(l_0_6.ppid)
+      for l_0_13,l_0_14 in ipairs(l_0_8) do
+        if l_0_14.image_path ~= nil then
+          local l_0_15 = (mp.bitand)(l_0_14.reason_ex, 1)
+          if l_0_15 == 1 then
+            local l_0_16 = (string.lower)(l_0_14.image_path)
+            if (string.find)(l_0_16, "wscript.exe", 1, true) or (string.find)(l_0_16, "cscript.exe", 1, true) then
+              return mp.INFECTED
+            end
+          end
+        end
+      end
     end
   end
-  return mp.CLEAN
 end
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC67: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
 

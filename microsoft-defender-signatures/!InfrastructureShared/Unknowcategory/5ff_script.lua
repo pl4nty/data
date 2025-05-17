@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if 3 * 10000000 < (bm.GetSignatureMatchDuration)() then
-  return mp.CLEAN
+if (mp.get_sigattr_event_count)(16395) > 10 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

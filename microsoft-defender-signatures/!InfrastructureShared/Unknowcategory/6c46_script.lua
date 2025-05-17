@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and ((mp.getfilesize)() < 950 or (mp.getfilesize)() > 980) then
+if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win32/Qakbot.PAA!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

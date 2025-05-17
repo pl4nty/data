@@ -3,21 +3,19 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (l_0_0:match("\\windows\\tasks\\") or l_0_0:match("\\windows\\system32\\tasks\\")) then
-    return mp.INFECTED
-  end
+if (mp.readu_u16)(headerpage, 1) ~= 33328 then
   return mp.CLEAN
 end
+local l_0_0 = headerpage[3] * 256 + headerpage[4] + 4
+if l_0_0 < 256 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilesize)()
+if l_0_1 <= l_0_0 then
+  return mp.CLEAN
+end
+if l_0_1 - l_0_0 < 256 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

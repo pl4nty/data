@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or not (hstrlog[3]).matched) and not (hstrlog[4]).matched) or 0 + 1 + 1 == 2 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.sub)(l_0_0.image_path, -11)) == "svchost.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

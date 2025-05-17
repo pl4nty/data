@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:VeriatoCertClean") or (mp.get_mpattribute)("Exception:MonitoringTool:Uninstaller:Veriato") or (mp.get_mpattribute)("CERT:Clean:Veriato") then
-  return mp.CLEAN
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 19, 19)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\187" .. l_0_1 .. "\000\000\000")
 return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.amd64_image and peattributes.no_imports then
+if (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.2")
+return mp.INFECTED
 

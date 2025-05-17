@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[2]).matched then
-  l_0_0 = (this_sigattrlog[2]).utf8p2
-end
-if l_0_0 ~= "" then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "domain ", 1, true) and (string.find)(l_0_0, "user ", 1, true) and (string.find)(l_0_0, "pass ", 1, true) then
-    return mp.INFECTED
-  end
+if pehdr.NumberOfSections > 0 and epcode[1] == 131 and epcode[2] == 60 and epcode[5] == 119 and epcode[6] == 254 and ((pesecs[pehdr.NumberOfSections]).Name == ".reloc" or (pesecs[pehdr.NumberOfSections]).Name == ".rsrc") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

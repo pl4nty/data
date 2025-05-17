@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_LNK_FILE") then
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("SCRIPT:Regsvr32")
 return mp.CLEAN
 

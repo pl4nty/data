@@ -3,27 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = ((this_sigattrlog[1]).utf8p2):lower()
-  local l_0_1 = 0
-  l_0_0 = l_0_0:match("\\powershell%.exe\"(.+)$")
-  if l_0_0 ~= nil then
-    l_0_0 = l_0_0 .. " "
-    l_0_0 = l_0_0:gsub("(%s%w:)%s", " ")
-    -- DECOMPILER ERROR at PC32: Overwrote pending register: R1 in 'AssignReg'
-
-    if l_0_1 == 1 then
-      l_0_0 = l_0_0:gsub("(%ssuspend%-bitlocker)%s", " ")
-      if l_0_1 == 1 then
-        l_0_0 = l_0_0:gsub(" ", "")
-        if l_0_0 == "" then
-          return mp.INFECTED
-        end
-      end
-    end
-  end
+if (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ACV!filter") and (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ACV!pointer") and (mp.get_mpattribute)("MpAPILimitReached") then
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.set_peattribute)("disable_apicall_limit", true)
+  ;
+  (pe.reemulate)()
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

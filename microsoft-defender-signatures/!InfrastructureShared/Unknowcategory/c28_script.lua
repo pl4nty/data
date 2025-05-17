@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:BFGMiner")
+(mp.set_mpattribute)("PUA:Block:OutBrows")
 return mp.INFECTED
 

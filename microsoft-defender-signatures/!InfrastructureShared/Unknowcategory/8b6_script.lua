@@ -3,15 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1 = (string.sub)(l_0_0, -4)
-do
-  if l_0_0 and (l_0_1 == ".exe" or l_0_1 == ".zip" or l_0_1 == ".tmp") then
-    local l_0_2 = l_0_0:match("\\([^\\]+)$")
-    if l_0_2 and (l_0_2 == "scandisk.exe" or l_0_2 == "scandisc.exe" or l_0_2 == "chrome_update.zip" or (string.match)(l_0_2, "^video%.hd_[%d%[%]]*%.zip$") or (string.match)(l_0_2, "^hd%.gallery_[%d%[%]]*%.zip$") or (string.match)(l_0_2, "^~%w%w%w%w%w%w%w%w%w%w%w%w%.tmp$")) then
-      (mp.set_mpattribute)("Lua:SimdaFilename.B")
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\Software\\Classes\\CLSID\\{AB8902B4-09CA-4bb6-B78D-A8F59079A8D5}\\LocalServer32\\\001")
+if l_0_0 then
+  (sysio.DeleteRegKey)(l_0_0, nil)
+end
+l_0_0 = (sysio.RegOpenKey)("HKCU\\Software\\Classes\\CLSID\\{AB8902B4-09CA-4bb6-B78D-A8F59079A8D5}\\LocalServer32\\\001")
+if l_0_0 then
+  (sysio.DeleteRegKey)(l_0_0, nil)
+end
+l_0_0 = (sysio.RegOpenKey)("HKLM\\Software\\Classes\\CLSID\\{73E709EA-5D93-4B2E-BBB0-99B7938DA9E4}\\LocalServer32\\\001")
+if l_0_0 then
+  (sysio.DeleteRegKey)(l_0_0, nil)
+end
+l_0_0 = (sysio.RegOpenKey)("HKCU\\Software\\Classes\\CLSID\\{73E709EA-5D93-4B2E-BBB0-99B7938DA9E4}\\LocalServer32\\\001")
+if l_0_0 then
+  (sysio.DeleteRegKey)(l_0_0, nil)
 end
 

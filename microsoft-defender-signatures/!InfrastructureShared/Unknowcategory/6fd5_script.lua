@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if (string.lower)(l_0_2) == "mpkview.exe" then
+if peattributes.ismsil == true and peattributes.isexe == true and (mp.get_mpattribute)("InEmail") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

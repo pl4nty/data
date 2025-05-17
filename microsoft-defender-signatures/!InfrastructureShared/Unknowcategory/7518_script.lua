@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr, "\235+")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 45, "ù")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 53, "\235")
-return mp.INFECTED
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 21, 4), 1) > 40960 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

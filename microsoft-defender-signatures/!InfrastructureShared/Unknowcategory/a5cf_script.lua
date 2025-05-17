@@ -3,41 +3,34 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  local l_0_0 = nil
-  -- DECOMPILER ERROR at PC15: Overwrote pending register: R1 in 'AssignReg'
-
-  local l_0_1 = nil
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 2000000 or l_0_0 < 4000 then
+  return mp.CLEAN
 end
-do
-  local l_0_2, l_0_3 = nil
-  -- DECOMPILER ERROR at PC34: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC46: Confused about usage of register: R2 in 'UnsetPending'
-
-  if (not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p1 == nil or (this_sigattrlog[1]).utf8p2 == nil or nil ~= nil) and nil ~= nil and l_0_2 ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
-      local l_0_5, l_0_6 = nil
-      -- DECOMPILER ERROR at PC54: Confused about usage of register: R9 in 'UnsetPending'
-
-      R9_PC54 = (mp.ContextualExpandEnvironmentVariables)(R9_PC54)
-      if (sysio.IsFileExists)(R9_PC54) and R9_PC54 == l_0_2 and (sysio.IsFileExists)(l_0_5) then
-        (bm.add_related_file)(l_0_5)
-        ;
-        (bm.request_SMS)(l_0_3, "m")
-        ;
-        (bm.add_action)("SingleProcessScan", 100)
-        return mp.INFECTED
-      end
-    end
-  end
-  do
-    return mp.CLEAN
-  end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("threatsieve", 1, true) then
+  return mp.CLEAN
 end
+if l_0_1:find("pc-sdk-setup", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("processcheck", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("empengine", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("browser", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("lhshield", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find(".arx", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find(".zrx", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

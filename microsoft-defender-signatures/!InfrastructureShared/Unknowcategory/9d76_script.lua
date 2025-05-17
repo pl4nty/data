@@ -3,15 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:CoinMiner")
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_coinminer")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_coinminer")
+local l_0_0 = {}
+l_0_0.TimeProvOpen = ""
+l_0_0.TimeProvClose = ""
+l_0_0.TimeProvCommand = ""
+local l_0_1 = 0
+local l_0_2, l_0_3 = (pe.get_exports)()
+if l_0_2 > 2 then
+  for l_0_7 = 1, l_0_2 do
+    if l_0_0[(pe.mmap_string_rva)((l_0_3[l_0_7]).namerva, 64)] then
+      l_0_1 = l_0_1 + 1
+    end
+  end
+  if l_0_1 == 3 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

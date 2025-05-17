@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0["omadmclient.exe"] = true
-l_0_0["provtool.exe"] = true
-local l_0_1 = (string.lower)((string.match)((bm.get_imagepath)(), "\\([^\\]+)$"))
-if l_0_1 == nil or l_0_1 == "" then
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (this_sigattrlog[1]).utf8p1
+    if l_0_0 ~= nil and (string.len)(l_0_0) > 4 and (string.sub)(l_0_0, -4) == ".lnk" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if l_0_0[l_0_1] == true then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

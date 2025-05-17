@@ -3,49 +3,23 @@
 
 -- params : ...
 -- function num : 0
-bytes_to_int = function(l_1_0, l_1_1, l_1_2, l_1_3)
-  -- function num : 0_0
-  if not l_1_3 then
-    error("need four bytes to convert to int", 2)
-  end
-  return l_1_0 + l_1_1 * 256 + l_1_2 * 65536 + l_1_3 * 16777216
-end
-
-pointer2int = function(l_2_0, l_2_1)
-  -- function num : 0_1
-  local l_2_2 = (string.byte)(l_2_0, l_2_1)
-  local l_2_3 = (string.byte)(l_2_0, l_2_1 + 1)
-  local l_2_4 = (string.byte)(l_2_0, l_2_1 + 2)
-  local l_2_5 = (string.byte)(l_2_0, l_2_1 + 3)
-  return bytes_to_int(l_2_2, l_2_3, l_2_4, l_2_5)
-end
-
-local l_0_0 = (hstrlog[1]).VA
-local l_0_1 = 20
-local l_0_2 = ((pe.mmap_va)(l_0_0 - l_0_1, l_0_1))
-local l_0_3 = nil
-for l_0_7 = 1, l_0_1 do
-  if (string.byte)(l_0_2, l_0_7) == 138 and (string.byte)(l_0_2, l_0_7 + 5) == 0 then
-    l_0_3 = pointer2int(l_0_2, l_0_7 + 2)
-    break
-  end
-end
-do
-  if l_0_3 ~= nil then
-    local l_0_8 = (pe.mmap_va)(l_0_3, 64)
-    local l_0_9 = 13
-    local l_0_10 = (string.byte)(l_0_8, l_0_9)
-    local l_0_11 = (string.byte)(l_0_8, l_0_9 + 2)
-    local l_0_12 = (string.byte)(l_0_8, l_0_9 + 3)
-    local l_0_13 = (string.byte)(l_0_8, l_0_9 + 32)
-    local l_0_14 = (string.byte)(l_0_8, l_0_9 + 34)
-    local l_0_15 = (string.byte)(l_0_8, l_0_9 + 35)
-    if (mp.bitxor)(l_0_10, l_0_13) == 117 and (mp.bitxor)(l_0_11, l_0_14) == 255 and (mp.bitxor)(l_0_12, l_0_15) == 85 then
-      return mp.SUSPICIOUS
-    end
-  end
-  do
+if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched and (this_sigattrlog[6]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  local l_0_1 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), "^(.+)\\\\imagepath")
+  if l_0_0 ~= l_0_1 then
     return mp.CLEAN
   end
+  local l_0_2 = (string.lower)((this_sigattrlog[3]).utf8p2)
+  if l_0_2 == nil or (string.len)(l_0_2) <= 8 or (string.find)(l_0_2, "\\tweaking_ras.exe", 1, true) then
+    return mp.CLEAN
+  else
+    if (string.find)(l_0_2, "powershell", 1, true) or (string.find)(l_0_2, "wscript", 1, true) or (string.find)(l_0_2, "cscript", 1, true) or (string.find)(l_0_2, "mshta", 1, true) or (string.find)(l_0_2, "cmd.exe /c ", 1, true) or (string.find)(l_0_2, "cmd.exe /q /c ", 1, true) or (string.find)(l_0_2, "cmd /c ", 1, true) or (string.find)(l_0_2, "cmd /q /c ", 1, true) or (string.find)(l_0_2, "%comspec% ", 1, true) or (string.find)(l_0_2, "/c start ", 1, true) then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
+do
+  return mp.CLEAN
 end
 

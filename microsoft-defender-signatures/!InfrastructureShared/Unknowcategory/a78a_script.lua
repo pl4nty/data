@@ -3,26 +3,47 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 1156, 1280)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1) - 1
-if l_0_1 <= 0 or l_0_1 > 1048576 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u32)(l_0_0, 1137)
-local l_0_3 = (pe.mmap_va)(pevars.sigaddr, 256)
-local l_0_4 = (mp.readu_u32)(l_0_3, 103)
-local l_0_5 = (pe.mmap_va)(l_0_4, 256)
-local l_0_6 = (mp.readu_u32)(l_0_3, 109)
-local l_0_7 = (mp.readu_u32)((pe.mmap_va)(l_0_6, 4), 1)
-local l_0_8 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
-local l_0_9 = "\190\000\000\000\000\189\001\000\000\000‰è@%\255\000\000\000‰Å‰ïŠ—N\002@\000\015¶Ê\003\rJ\002@\000á\255\000\000\000Š™N\002@\000ˆ‘N\002@\000\137\rJ\002@\000ˆŸN\002@\000\015¶‰N\002@\000\015¶Ó\001Ñ\225\255\000\000\000\015¶™N\002@\000¸N\003@\0000\0280ƒî\001u¡Ã\000\000\000\000"
-local l_0_10 = (pe.mmap_va)(l_0_2, l_0_1)
-local l_0_11 = l_0_8 .. l_0_9 .. l_0_5 .. l_0_10
-;
-(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 2, l_0_1)
-;
-(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 107, l_0_7)
-;
-(mp.vfo_add_buffer)(l_0_11, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.INFECTED
+local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (MpCommon.GetOriginalFileName)(l_0_2)
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+if l_0_3 == "powershell.exe" and not (string.find)((string.lower)(l_0_2), "powershell.exe", 1, true) then
+  local l_0_4 = (mp.GetProcessCommandLine)(l_0_0)
+  if l_0_4 == nil then
+    return mp.CLEAN
+  end
+  local l_0_5 = (string.match)(l_0_4, " -[eE][nN][cC] ([a-zA-Z0-9%+/=]+)")
+  if l_0_5 == nil then
+    return mp.CLEAN
+  end
+  if (string.len)(l_0_5) >= 512 then
+    l_0_5 = (string.sub)(l_0_5, 1, 512)
+  else
+    l_0_5 = (string.sub)(l_0_5, 1, 256)
+  end
+  local l_0_6 = (MpCommon.Base64Decode)(l_0_5)
+  if l_0_6 == nil then
+    return mp.CLEAN
+  end
+  l_0_6 = (string.gsub)(l_0_6, "%z", "")
+  l_0_6 = (string.lower)((string.gsub)(l_0_6, " ", ""))
+  if (string.find)(l_0_6, "start-bitstransfer", 1, true) or (string.find)(l_0_6, ").downloadfile(", 1, true) or (string.find)(l_0_6, "invoke-webrequest", 1, true) or (string.find)(l_0_6, "-threatiddefaultaction_actions", 1, true) or (string.find)(l_0_6, "-exclusionpath", 1, true) or (string.find)(l_0_6, "-exclusionprocess", 1, true) or (string.find)(l_0_6, "::getcurrentprocess().mainmodule", 1, true) then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
+end
 

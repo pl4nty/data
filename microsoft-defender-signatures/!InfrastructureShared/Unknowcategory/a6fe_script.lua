@@ -3,46 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 4000000 or l_0_0 < 4000 then
+local l_0_0 = (bm.get_imagepath)()
+if not l_0_0 then
   return mp.CLEAN
 end
-if pehdr.Machine ~= 332 then
+local l_0_1 = (MpCommon.PathToWin32Path)(l_0_0)
+if not l_0_1 then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if (mp.IsKnownFriendlyFile)(l_0_1, true, true) then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_ismsil") then
-  return mp.CLEAN
-end
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("system32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("syswow64", 1, true) then
-  return mp.CLEAN
-end
-if (hstrlog[4]).matched and (hstrlog[4]).VA > 38 then
-  local l_0_2 = (pe.mmap_va)((hstrlog[4]).VA - 38, 38)
-  if l_0_2 == nil then
-    return mp.CLEAN
-  end
-  for l_0_6 = 1, #l_0_2 - 1 do
-    local l_0_7 = (string.byte)(l_0_2, l_0_6)
-    local l_0_8 = (string.byte)(l_0_2, l_0_6 + 1)
-    if l_0_7 == 106 and (l_0_8 >= 233 or l_0_8 <= 255) then
-      return mp.INFECTED
+local l_0_2, l_0_3 = (bm.get_process_relationships)()
+for l_0_7,l_0_8 in ipairs(l_0_3) do
+  local l_0_9 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_8.ppid)
+  if l_0_8.reason == bm.RELATIONSHIP_INJECTION and l_0_9.IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID and (string.find)((string.lower)(l_0_8.image_path), "\\windows\\", 1, true) then
+    local l_0_10 = (string.lower)((bm.get_imagepath)())
+    if (string.find)((string.lower)(l_0_10), "\\program files\\", 1, true) or (string.find)((string.lower)(l_0_10), "\\program files (x86)\\", 1, true) or (string.find)((string.lower)(l_0_10), "\\steamapps\\common\\", 1, true) or (string.find)((string.lower)(l_0_10), "\\games\\", 1, true) then
+      return mp.CLEAN
     end
+    return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

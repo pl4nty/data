@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+if (mp.get_mpattribute)("SIGATTR:HostModify") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

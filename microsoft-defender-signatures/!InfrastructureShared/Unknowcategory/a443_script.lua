@@ -3,26 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "(.+\\)"
-local l_0_1 = ((string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0))
-local l_0_2 = nil
-if (this_sigattrlog[2]).matched then
-  l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[3]).matched then
-    l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[4]).matched then
-      l_0_2 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
-    else
-      if (this_sigattrlog[5]).matched then
-        l_0_2 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
-      end
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 98304 then
+  return mp.CLEAN
 end
-if l_0_1 ~= nil and l_0_1 == l_0_2 then
-  return mp.INFECTED
+if l_0_0 < 40960 then
+  return mp.CLEAN
 end
+local l_0_1 = tostring(headerpage)
+if (string.find)(l_0_1, "\n", 1, true) ~= nil then
+  return mp.CLEAN
+end
+local l_0_2, l_0_3, l_0_4 = l_0_1:match("function%((%l%l%l%l%l%l+),(%l%l%l%l%l%l+),(%l%l%l%l%l%l+)[^%l]")
+local l_0_5 = #l_0_3 - 1
+local l_0_6 = #l_0_3 + 1
+if (#l_0_2 ~= #l_0_3 and #l_0_2 ~= l_0_5 and #l_0_2 ~= l_0_6) or #l_0_3 ~= #l_0_4 and l_0_5 ~= #l_0_4 and l_0_6 ~= #l_0_4 then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("SCRIPT:Worm:JS/Proslikefan_Lowfi")
 return mp.CLEAN
 

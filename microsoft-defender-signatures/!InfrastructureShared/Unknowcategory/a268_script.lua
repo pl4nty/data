@@ -3,14 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_hasexports") and (mp.getfilesize)() > 20000000 then
-  if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+      if (string.find)(l_0_0, ".msc", 1, true) or (string.find)(l_0_0, "\\biztalk", 1, true) or (string.find)(l_0_0, "\\program files", 1, true) then
+        return mp.CLEAN
+      end
+      return mp.INFECTED
+    end
   end
-  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-  end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
 

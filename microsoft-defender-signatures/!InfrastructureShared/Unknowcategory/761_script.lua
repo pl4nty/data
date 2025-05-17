@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.find)(l_0_0, "/u ", 1, true) or (string.find)(l_0_0, "/s ", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == "downloadmanager.exe" or l_0_0:find("^dmgr2%..+%.exe$") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

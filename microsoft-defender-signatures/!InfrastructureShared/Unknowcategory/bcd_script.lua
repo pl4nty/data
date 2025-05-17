@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Bundlore")
-return mp.INFECTED
+(mp.set_mpattribute)("SIGATTR:PWS:WinCrypto")
+return mp.LOWFI
 

@@ -3,22 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("//HSTR:Necurs_Patched") and (mp.getfilesize)() < 180000 then
-  local l_0_0 = pehdr.ImageBase
-  if (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_ESP), 4), 1) == pehdr.AddressOfEntryPoint + 5 + l_0_0 then
-    local l_0_1 = (pesecs[1]).VirtualAddress + l_0_0 + 4096
-    local l_0_2 = l_0_1 + 1280
-    local l_0_3 = 0
-    l_0_3 = (pe.vm_search)(l_0_1, l_0_2, "\255\255‹E\144\t\v\000‰L…\001\001é\000", nil, pe.VM_SEARCH_BM)
-    if l_0_3 ~= 4294967295 then
-      (pe.mmap_patch_va)(l_0_3 - 6, "D")
-      ;
-      (mp.set_mpattribute)("//HSTR:Necurs_Patched")
-      return mp.INFECTED
-    end
-  end
-end
-do
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 80)
+local l_0_1 = (mp.readu_u32)(l_0_0, 33)
+if l_0_1 < (pesecs[1]).VirtualAddress or (pesecs[pehdr.NumberOfSections]).VirtualAddress + (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= l_0_1 then
   return mp.CLEAN
 end
+local l_0_2 = (mp.readu_u16)(l_0_0, 18)
+if l_0_2 < 32768 or l_0_2 > 40960 then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.readu_u16)(l_0_0, 61)
+if l_0_3 < 49152 or l_0_3 > 57344 then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F")
+local l_0_4 = (string.format)("CURE:Virus:Win32/Xpaj.gen!F_%08X", l_0_1)
+;
+(mp.set_mpattribute)(l_0_4)
+return mp.INFECTED
 

@@ -3,12 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 96)
-local l_0_1 = (string.byte)(l_0_0, 1) + 2
-if #l_0_0 < l_0_1 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_0, l_0_1) == 232 then
+if pevars.epsec == 1 and pehdr.NumberOfSections == 3 and (mp.readu_u32)(headerpage, 769) == 1702061426 then
   return mp.INFECTED
 end
 return mp.CLEAN

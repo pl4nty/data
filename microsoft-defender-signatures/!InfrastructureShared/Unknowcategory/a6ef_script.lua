@@ -3,40 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
-  return mp.LOWFI
+if peattributes.is_process then
+  return mp.CLEAN
 end
-local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-if (mp.getfilesize)() < l_0_0 + 1 + 38 then
-  (mp.changedetectionname)(192)
-  return mp.SUSPICIOUS
-end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(l_0_0, 38)
-do
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC80: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC81: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC82: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC83: Overwrote pending register: R5 in 'AssignReg'
-
-  for l_0_6 = 97, 67, 102 do
-    -- DECOMPILER ERROR at PC85: Overwrote pending register: R7 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC87: Overwrote pending register: R8 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC88: Overwrote pending register: R9 in 'AssignReg'
-
-    if ((57).byte)(50, 75) ~= l_0_2[l_0_6] then
-      (mp.changedetectionname)(192)
-      return mp.SUSPICIOUS
-    end
+if pehdr.NumberOfSections > 0 and epcode[1] == 233 and epcode[5] == 255 and epcode[6] == 204 and epcode[7] == 204 and epcode[8] == 204 and (pesecs[1]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).Name == ".symtab" then
+  if (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= 1024 then
+    return mp.CLEAN
   end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
+  if (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_lastscn_writable") and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_lastscn_vfalign") and (pesecs[pehdr.NumberOfSections]).SizeOfRawData + 4096 == (pesecs[pehdr.NumberOfSections]).VirtualSize and (pesecs[pehdr.NumberOfSections]).VirtualSize % 4096 == 0 then
+    return mp.INFECTED
+  end
 end
+return mp.CLEAN
 

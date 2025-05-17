@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_headerchecksum0") and (mp.getfilesize)() < 1536000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\235")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\002")
+return mp.INFECTED
 

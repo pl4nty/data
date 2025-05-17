@@ -3,80 +3,40 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if l_0_0 == nil then
+local l_0_0 = this_sigattrlog[6]
+if not l_0_0 or not l_0_0.p1 or not l_0_0.p2 then
+  return mp.CLEAN
+end
+local l_0_1 = l_0_0.utf8p2
+local l_0_2 = (string.match)(l_0_1, "Delay:(%d+);")
+local l_0_3 = (string.match)(l_0_1, "Type:([%w_]+);")
+local l_0_4 = (string.match)(l_0_1, "Origin:([%w:/%.%d]+);")
+if not l_0_3 or not l_0_2 then
+  return mp.CLEAN
+end
+l_0_3 = (string.upper)(l_0_3)
+l_0_2 = tonumber(l_0_2)
+if l_0_3:find("SMS_", 1, true) == 1 then
+  local l_0_5 = l_0_3:sub(-1)
+  if l_0_5 ~= "H" and l_0_5 ~= "M" and l_0_5 ~= "L" and l_0_5 ~= "1" then
     return mp.CLEAN
   end
-  local l_0_1, l_0_2 = l_0_0:match("^(.-)\\\\(.-)$")
-  if l_0_1 == nil or l_0_2 == nil then
-    return mp.CLEAN
-  end
-  local l_0_3 = nil
-  if (string.match)((string.lower)(l_0_1), "^hklm") then
-    local l_0_4 = (sysio.RegOpenKey)(l_0_1)
-    if not l_0_4 then
+  local l_0_6 = (bm.get_current_process_startup_info)()
+  ;
+  (bm.request_SMS)(l_0_6.ppid, l_0_5)
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", l_0_2)
+else
+  do
+    if l_0_3 == "EMS" then
+      (bm.add_action)("EmsScan", l_0_2)
+    else
       return mp.CLEAN
     end
-    l_0_3 = (sysio.GetRegValueAsBinary)(l_0_4, l_0_2)
-    if not l_0_3 then
-      return mp.CLEAN
+    if l_0_4 and l_0_4:find("Behavior:", 1, true) == 1 then
+      (bm.add_related_string)("RelatedBMHits", l_0_4, bm.RelatedStringBMReport)
     end
-  else
-    do
-      if (string.match)((string.lower)(l_0_1), "^hkcu") then
-        local l_0_5 = (sysio.RegExpandUserKey)(l_0_1)
-        if l_0_5 then
-          for l_0_9,l_0_10 in pairs(l_0_5) do
-            if (string.find)((string.lower)(l_0_10), "hkcu@s-1-5-21-", 1, true) then
-              local l_0_11 = (sysio.RegOpenKey)(l_0_10)
-              if l_0_11 then
-                do
-                  do
-                    l_0_3 = (sysio.GetRegValueAsBinary)(l_0_11, l_0_2)
-                    if l_0_3 then
-                      break
-                    end
-                    -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out DO_STMT
-
-                    -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_STMT
-
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-      if l_0_3 then
-        l_0_5 = MpCommon
-        l_0_5 = l_0_5.BinaryRegExpSearch
-        l_0_5 = l_0_5("MZ", l_0_3)
-        local l_0_12 = nil
-        if l_0_5 then
-          l_0_12 = MpCommon
-          l_0_12 = l_0_12.BinaryRegExpSearch
-          l_0_12 = l_0_12("This program cannot be run in DOS mode", l_0_3)
-          local l_0_13 = nil
-          if l_0_12 then
-            l_0_13 = bm
-            l_0_13 = l_0_13.trigger_sig
-            l_0_13("RegistrySetBinaryDataMZ", l_0_0)
-          end
-        end
-      end
-      do
-        l_0_0 = mp
-        l_0_0 = l_0_0.CLEAN
-        return l_0_0
-      end
-    end
+    return mp.INFECTED
   end
 end
 

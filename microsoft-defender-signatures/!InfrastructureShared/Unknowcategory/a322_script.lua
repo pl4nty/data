@@ -3,15 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "firefox", 1, true) or (string.find)(l_0_0, "backup", 1, true) or (string.find)(l_0_0, "sync", 1, true) or (string.find)(l_0_0, "waterfox", 1, true) then
+if peattributes.epscn_islast ~= true then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\appdata\\", 1, true) then
-  return mp.INFECTED
+if peattributes.lastscn_writable ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if epcode[1] ~= 128 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 124 then
+  return mp.CLEAN
+end
+if epcode[3] ~= 36 then
+  return mp.CLEAN
+end
+if epcode[5] ~= 1 then
+  return mp.CLEAN
+end
+if epcode[6] ~= 117 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

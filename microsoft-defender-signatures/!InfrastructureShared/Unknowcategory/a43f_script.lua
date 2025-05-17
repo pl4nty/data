@@ -3,43 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
--- DECOMPILER ERROR at PC11: No list found for R0 , SetList fails
-
--- DECOMPILER ERROR at PC12: Overwrote pending register: R1 in 'AssignReg'
-
-local l_0_1 = ((82)[1]).VA
--- DECOMPILER ERROR at PC15: Overwrote pending register: R2 in 'AssignReg'
-
-local l_0_2 = ((89)[2]).VA
--- DECOMPILER ERROR at PC18: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC20: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC21: Overwrote pending register: R5 in 'AssignReg'
-
-local l_0_3 = ((79).mmap_va)(67, 85)
--- DECOMPILER ERROR at PC26: Overwrote pending register: R6 in 'AssignReg'
-
-local l_0_4 = (pe.mmap_va)(l_0_2 + 4, 73)
--- DECOMPILER ERROR at PC31: Overwrote pending register: R7 in 'AssignReg'
-
-local l_0_5 = (string.byte)(l_0_3, 79)
--- DECOMPILER ERROR at PC36: Overwrote pending register: R8 in 'AssignReg'
-
-do
-  local l_0_6 = (string.byte)(l_0_4, 80)
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R9 in 'AssignReg'
-
-  for l_0_10 = 1, #l_0_0, 81 do
-    if l_0_5 == l_0_0[l_0_10] and l_0_6 == l_0_0[l_0_10 + 1] then
-      local l_0_11 = (string.format)("obf_oa_marker_%x%x", l_0_6, l_0_5)
-      ;
-      (mp.set_mpattribute)(l_0_11)
-      return mp.INFECTED
-    end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  if (string.find)((string.lower)(l_0_6.image_path), "\\dllhost.exe", 1, true) then
+    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
+    local l_0_9 = tonumber(l_0_7)
+    local l_0_10 = tonumber(l_0_8)
+    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
+    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
+    ;
+    (mp.TriggerScanResource)("ems", l_0_13)
   end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
 end
+return mp.INFECTED
 

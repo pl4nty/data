@@ -3,47 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
+if (mp.IsHipsRuleEnabled)("3b576869-a4ec-4529-8536-b80a7769e899") ~= true then
   return mp.CLEAN
 end
-if peattributes.hasstandardentry == true then
+local l_0_0 = "enghipscpy:blockaccess:3b576869-a4ec-4529-8536-b80a7769e899"
+local l_0_1 = ""
+local l_0_2 = ""
+if (this_sigattrlog[5]).matched then
+  l_0_1 = (this_sigattrlog[5]).utf8p1
+  l_0_2 = (this_sigattrlog[5]).utf8p2
+  if l_0_1 == nil or l_0_1 == "" or l_0_2 == nil or l_0_2 == "" then
+    return mp.CLEAN
+  end
+else
   return mp.CLEAN
 end
-if pehdr.NumberOfSections ~= 4 then
+if (string.find)(l_0_1, "%", 1, true) ~= nil or (string.find)(l_0_2, "%", 1, true) ~= nil then
   return mp.CLEAN
 end
-if pehdr.TimeDateStamp ~= 0 then
-  return mp.CLEAN
+local l_0_3 = {}
+l_0_3.exe = true
+l_0_3.dll = true
+l_0_3.sys = true
+local l_0_4 = (string.lower)((string.match)(l_0_1, "%.([^%.]+)$"))
+if l_0_3[l_0_4] == true and not (MpCommon.QueryPersistContext)(l_0_2, l_0_0) then
+  (MpCommon.AppendPersistContext)(l_0_2, l_0_0, 0)
+  return mp.INFECTED
 end
-if pehdr.SizeOfHeaders ~= 1024 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode < 1536 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode > 2048 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfInitializedData ~= 4608 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfUninitializedData ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.BaseOfCode ~= 4096 then
-  return mp.CLEAN
-end
-if pehdr.FileAlignment ~= 512 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfHeaders ~= 1024 then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-if pehdr.CheckSum ~= 94440 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

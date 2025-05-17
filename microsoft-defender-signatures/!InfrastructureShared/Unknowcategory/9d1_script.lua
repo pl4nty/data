@@ -3,37 +3,49 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.getfilename)())
-  if (string.sub)(l_0_1, -4) == ".exe" then
-    local l_0_2, l_0_3 = l_0_1:match("(.+\\)([^\\]+)$")
-    local l_0_4 = l_0_3:len()
-    -- DECOMPILER ERROR at PC61: Unhandled construct in 'MakeBoolean' P1
-
-    if (string.find)(l_0_1, "\\temp\\", 1, true) and l_0_4 > 9 and l_0_4 < 20 then
-      if (string.match)(l_0_3, "^%d_offer_%d+%.exe") or (string.match)(l_0_3, "^%d_offer_%d+_%d%l%l%.exe") then
-        (mp.set_mpattribute)("Lua:Program:Win32/OutBrowse!drop")
-      else
-        if (string.match)(l_0_3, "^1ab%d+rn%d+%.exe") or (string.match)(l_0_3, "^1ab%d+rn%d+n2d%.exe") or (string.match)(l_0_3, "^1agrj%d+%.exe") then
-          (mp.set_mpattribute)("Lua:Adware:Win32/ZoomyLib.B")
-        end
-      end
-    end
-  end
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Use advanced protection against ransomware"
+  l_1_0.Description = "Windows Defender Exploit Guard detected execution of file that exhibit characteristics similar to ransomware"
+  l_1_0.NotificationDedupingInterval = 120
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
+  return l_1_0
 end
-do
-  -- DECOMPILER ERROR at PC117: Unhandled construct in 'MakeBoolean' P1
 
-  if ((string.match)(l_0_1, "\\appdata\\local\\tmp%d+\\") or (string.match)(l_0_1, "\\local settings\application data\\tmp%d+\\")) and l_0_4 > 9 and l_0_4 < 15 and (string.match)(l_0_3, "^dag%d+%.exe") then
-    (mp.set_mpattribute)("Lua:Adware:Win32/ZoomyLib.A")
-  end
-  if l_0_4 > 12 and l_0_4 < 17 and (string.match)(l_0_3, "^bb%lcabe%l%l+%.exe") then
-    (mp.set_mpattribute)("Lua:Program:Win32/OutBrowse.A")
-  end
-  if l_0_4 > 12 and l_0_4 < 50 and ((string.find)(l_0_3, "^lyricsgizm.*%.exe") or (string.find)(l_0_3, "^webzoom.*%.exe") or (string.find)(l_0_3, "^zoomify.*%.exe") or (string.find)(l_0_3, "^zoompic.*%.exe") or (string.find)(l_0_3, "^zooompic.*%.exe")) then
-    (mp.set_mpattribute)("Lua:Adware:Win32/ZoomyLib.C")
-  end
-  return mp.CLEAN
+GetMonitoredLocations = function()
+  -- function num : 0_1
+  return HIPS.MONITOR_PROCESSCREATE
 end
+
+GetPathInclusions = function()
+  -- function num : 0_2
+  local l_3_0 = {}
+  l_3_0["%systemroot%\\system32\\vssadmin.exe"] = 2
+  l_3_0["%systemroot%\\system32\\wbem\\wmic.exe"] = 2
+  l_3_0["%systemroot%\\syswow64\\wbem\\wmic.exe"] = 2
+  if (versioning.IsSampled)(60000, false, true, true) == true then
+    l_3_0["%systemroot%\\syswow64\\vssadmin.exe"] = 2
+    l_3_0["%systemroot%\\system32\\windowspowershell\\*\\powershell.exe"] = 2
+    l_3_0["%systemroot%\\syswow64\\windowspowershell\\*\\powershell.exe"] = 2
+  end
+  return l_3_0
+end
+
+GetCommandLineInclusions = function()
+  -- function num : 0_3
+  local l_4_0 = "vssadmin(\\.exe)?[\\s\\\"]+delete\\s+shadows"
+  local l_4_1 = "wmic(\\.exe)?[\\s\\\"]+shadowcopy\\s+delete"
+  local l_4_2 = {}
+  l_4_2[l_4_0] = 0
+  l_4_2[l_4_1] = 0
+  if (versioning.IsSampled)(60000, false, true, true) == true then
+    l_4_2["powershell(.exe)?\"?s+.*\"?get-wmiobjects+win32_shadowcopys*|s*remove-wmiobjects*\"?"] = 0
+  end
+  if (versioning.IsSampled)(8000, false, true, true) == true then
+    l_4_2["vssadmin(.exe)?[s\"]+resizes+shadowstorages+.+?/maxsize=[0]+(((g|m)b)|%)"] = 0
+  end
+  return l_4_2
+end
+
 

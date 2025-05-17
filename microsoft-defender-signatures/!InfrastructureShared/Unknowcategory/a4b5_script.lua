@@ -3,32 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_relocs ~= true then
-  return mp.CLEAN
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (((((((((((hstrlog[2]).matched and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and not (hstrlog[10]).matched) or (hstrlog[11]).matched) and not (hstrlog[12]).matched) or (hstrlog[1]).matched) and 0 + 1 + 1 + 1 + 1 + 1 >= 2 and 0 + 1 + 1 >= 1 and 0 + 1 + 1 + 1 >= 2 then
+  return mp.INFECTED
 end
-if peattributes.epscn_writable ~= true then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.BaseOfCode ~= 4096 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 2 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

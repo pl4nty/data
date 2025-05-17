@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.sub)(l_0_0, -22) == "\\updatetask\\vmhost.exe" then
-  (mp.set_mpattribute)("Lua:Vmhost.A")
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)((string.sub)(l_0_0, -29))
+  if l_0_0 == "\\windows defender\\msmpeng.exe" then
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

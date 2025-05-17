@@ -3,37 +3,87 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 100000000 then
-  return mp.CLEAN
-end
-local l_0_0 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-l_0_0 = (string.lower)(l_0_0)
-if not (string.find)(l_0_0, "c:\\", 1, true) then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\windows", 1, true) or (string.find)(l_0_0, "\\teams.exe", 1, true) or (string.find)(l_0_0, "game", 1, true) or (string.find)(l_0_0, "steam", 1, true) or (string.find)(l_0_0, "\\jackettconsole", 1, true) or (string.find)(l_0_0, "c:\\agent.exe", 1, true) or (string.find)(l_0_0, "torrent", 1, true) then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "NewPECreatedNoCert")
-if not l_0_1 then
-  return mp.CLEAN
-end
-if (mp.IsKnownFriendlyFile)(l_0_0, true, false) == true then
-  return mp.CLEAN
-end
-local l_0_2 = (sysio.GetFileLastWriteTime)(l_0_0)
-if ((sysio.GetLastResult)()).Success and l_0_2 ~= 0 then
-  l_0_2 = l_0_2 / 10000000 - 11644473600
-  local l_0_3 = (MpCommon.GetCurrentTimeT)()
-  if l_0_3 < l_0_2 or l_0_3 - (l_0_2) > 600 then
-    return mp.CLEAN
+GetSuspiciuousFileType = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = {}
+  l_1_1[".au"] = "Bin"
+  l_1_1[".ax"] = "Bin"
+  l_1_1[".js"] = "Script"
+  l_1_1[".7z"] = "Archive"
+  local l_1_2 = {}
+  l_1_2.exe = "Bin"
+  l_1_2.com = "Bin"
+  l_1_2.scr = "Bin"
+  l_1_2.cpl = "Bin"
+  l_1_2.dll = "Bin"
+  l_1_2.ocx = "Bin"
+  l_1_2.msi = "Bin"
+  l_1_2.sys = "Bin"
+  l_1_2.bin = "Bin"
+  l_1_2.fon = "Bin"
+  l_1_2.drv = "Bin"
+  l_1_2.app = "Bin"
+  l_1_2.apl = "Bin"
+  l_1_2.bat = "Script"
+  l_1_2.cmd = "Script"
+  l_1_2.vbs = "Script"
+  l_1_2.reg = "Script"
+  l_1_2.shs = "Script"
+  l_1_2[".vb"] = "Script"
+  l_1_2.vbe = "Script"
+  l_1_2.wsc = "Script"
+  l_1_2.wsf = "Script"
+  l_1_2.wsh = "Script"
+  l_1_2.asm = "Script"
+  l_1_2.ini = "Script"
+  l_1_2.pif = "Script"
+  l_1_2.htm = "Script"
+  l_1_2.chm = "Script"
+  l_1_2.msp = "Script"
+  l_1_2.tlb = "Script"
+  l_1_2.asp = "Script"
+  l_1_2.msc = "Script"
+  l_1_2.api = "Script"
+  l_1_2.rar = "Archive"
+  l_1_2.zip = "Archive"
+  l_1_2.cab = "Archive"
+  l_1_2.tar = "Archive"
+  l_1_2.jar = "Archive"
+  l_1_2.doc = "Office"
+  l_1_2.xls = "Office"
+  l_1_2.ppt = "Office"
+  local l_1_3 = {}
+  l_1_3.docm = "Office"
+  l_1_3.xlsm = "Office"
+  l_1_3.pptm = "Office"
+  l_1_3.docx = "Office"
+  l_1_3.xlsx = "Office"
+  l_1_3.pptx = "Office"
+  l_1_3.html = "Script"
+  l_1_3.aspx = "Script"
+  l_1_3.bzip = "Archive"
+  if l_1_0 == nil or (string.len)(l_1_0) < 4 then
+    return nil
   end
-  return mp.INFECTED
+  local l_1_4 = (string.lower)(l_1_0)
+  local l_1_5 = (string.match)(l_1_4, "%.(%l+)$")
+  if l_1_5 == nil then
+    return nil
+  end
+  local l_1_6 = ((string.len)(l_1_5))
+  local l_1_7 = nil
+  if l_1_6 == 2 then
+    l_1_7 = l_1_1[l_1_5]
+  else
+    if l_1_6 == 3 then
+      l_1_7 = l_1_2[l_1_5]
+    else
+      if l_1_6 == 4 then
+        l_1_7 = l_1_3[l_1_5]
+      end
+    end
+  end
+  return l_1_7
 end
-do
-  return mp.CLEAN
-end
+
 

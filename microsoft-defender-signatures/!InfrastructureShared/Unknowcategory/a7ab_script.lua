@@ -3,93 +3,49 @@
 
 -- params : ...
 -- function num : 0
-getFirstChildPpid = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 == nil then
-    return nil
-  end
-  local l_1_2 = true
-  local l_1_3 = 0
-  if l_1_1 ~= nil or (string.len)(l_1_1) > 0 then
-    l_1_2 = false
-    l_1_3 = (string.len)(l_1_1)
-  end
-  local l_1_4, l_1_5 = (bm.get_process_relationships)(l_1_0)
-  if l_1_5 == nil or #l_1_5 < 1 or #l_1_5 > 4 then
-    return nil
-  end
-  local l_1_6 = nil
-  for l_1_10,l_1_11 in ipairs(l_1_5) do
-    if (mp.bitand)(l_1_11.reason_ex, 1) == 1 and (l_1_2 == true or l_1_3 >= (string.len)(l_1_11.image_path) or (string.sub)(l_1_11.image_path, -l_1_3) == l_1_1) then
-      l_1_6 = l_1_11.ppid
-      break
-    end
+do
+  if not (hstrlog[1]).matched then
+    local l_0_0, l_0_5, l_0_6, l_0_8, l_0_11, l_0_15, l_0_20, l_0_25, l_0_26, l_0_28, l_0_31 = (hstrlog[2]).matched
   end
   do
-    return l_1_6
-  end
-end
+    if not (hstrlog[3]).matched and not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched and not (hstrlog[9]).matched and not (hstrlog[10]).matched and not (hstrlog[11]).matched and not (hstrlog[12]).matched and not (hstrlog[13]).matched and not (hstrlog[14]).matched and not (hstrlog[15]).matched and not (hstrlog[16]).matched then
+      local l_0_1, l_0_7, l_0_9, l_0_12, l_0_16, l_0_21, l_0_27, l_0_29, l_0_32 = , (hstrlog[17]).matched
+    end
+    do
+      if not (hstrlog[18]).matched and not (hstrlog[19]).matched and not (hstrlog[20]).matched and not (hstrlog[21]).matched then
+        local l_0_2, l_0_10, l_0_13, l_0_17, l_0_22, l_0_30, l_0_33 = , (hstrlog[22]).matched
+      end
+      do
+        if not (hstrlog[23]).matched and not (hstrlog[24]).matched and not (hstrlog[25]).matched and not (hstrlog[26]).matched and not (hstrlog[27]).matched and not (hstrlog[28]).matched and not (hstrlog[29]).matched and not (hstrlog[30]).matched then
+          local l_0_3, l_0_14, l_0_18, l_0_23, l_0_34 = , (hstrlog[31]).matched
+        end
+        -- DECOMPILER ERROR at PC183: Confused about usage of register: R0 in 'UnsetPending'
 
-local l_0_0, l_0_1 = nil, nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_0 = (this_sigattrlog[1]).ppid
-  l_0_1 = (this_sigattrlog[1]).utf8p2
-else
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    l_0_0 = (this_sigattrlog[2]).ppid
-    l_0_1 = (this_sigattrlog[2]).utf8p2
-  else
-    if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-      l_0_0 = (this_sigattrlog[3]).ppid
-      l_0_1 = (this_sigattrlog[3]).utf8p2
+        -- DECOMPILER ERROR at PC185: Confused about usage of register: R1 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC187: Confused about usage of register: R2 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC189: Confused about usage of register: R3 in 'UnsetPending'
+
+        if l_0_3 and l_0_14 and l_0_18 and l_0_23 and not peattributes.hasexports or ((pesecs[1]).SizeOfRawData >= 135168 and (pesecs[1]).SizeOfRawData <= 167936 and (pesecs[3]).VirtualAddress > 139264 and (pesecs[3]).VirtualAddress <= 204800 and (pesecs[3]).SizeOfRawData >= 29952 and (pesecs[3]).SizeOfRawData <= 103680) then
+          (mp.changedetectionname)(186)
+          return mp.INFECTED
+        end
+        -- DECOMPILER ERROR at PC200: Confused about usage of register: R0 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC202: Confused about usage of register: R1 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC204: Confused about usage of register: R2 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC206: Confused about usage of register: R3 in 'UnsetPending'
+
+        if l_0_3 and l_0_14 and l_0_18 and l_0_23 then
+          return mp.SUSPICIOUS
+        end
+        do return mp.CLEAN end
+        -- DECOMPILER ERROR: 4 unprocessed JMP targets
+      end
     end
   end
 end
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = getFirstChildPpid(l_0_0, "\\cmd.exe")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = getFirstChildPpid(l_0_2, "\\cmd.exe")
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-local l_0_4 = getFirstChildPpid(l_0_3, "\\certutil.exe")
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-local l_0_5 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-local l_0_6 = {}
-l_0_6[".xls"] = true
-l_0_6[".doc"] = true
-l_0_6[".ppt"] = true
-l_0_6[".pps"] = true
-l_0_6.docx = true
-l_0_6.pptx = true
-l_0_6.ppsx = true
-l_0_6.xlsx = true
-l_0_6[".rtf"] = true
-l_0_6[".xml"] = true
-l_0_6.dotx = true
-l_0_6.dotm = true
-l_0_6[".odt"] = true
-l_0_6.xlsb = true
-l_0_6.xltx = true
-l_0_6.xltm = true
-l_0_6.xlam = true
-l_0_6[".xla"] = true
-l_0_6.docm = true
-l_0_6.xlsm = true
-l_0_6.pptm = true
-for l_0_10,l_0_11 in ipairs(l_0_5) do
-  if (string.len)(l_0_11) > 4 and (sysio.IsFileExists)(l_0_11) then
-    local l_0_12 = (string.sub)(l_0_11, -4)
-    if l_0_6[l_0_12] then
-      (bm.add_threat_file)(l_0_11)
-    end
-  end
-end
-return mp.INFECTED
 

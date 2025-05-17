@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("HSTR:SoftwareBundler:Win32/Avarus") then
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 96)
+local l_0_1 = (string.byte)(l_0_0, 1) + 2
+if #l_0_0 < l_0_1 then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("PUA:Block:Avarus")
-return mp.INFECTED
+if (string.byte)(l_0_0, l_0_1) == 232 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

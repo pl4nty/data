@@ -3,28 +3,64 @@
 
 -- params : ...
 -- function num : 0
-is_suspicious_filename = function(l_1_0)
-  -- function num : 0_0
-  do
-    local l_1_1 = (string.lower)(l_1_0)
-    do return l_1_1 == "calc.exe" or l_1_1 == "cmd.exe" or l_1_1 == "conhost.exe" or l_1_1 == "csrss.exe" or l_1_1 == "dllhost.exe" or l_1_1 == "explorer.exe" or l_1_1 == "iexplore.exe" or l_1_1 == "lsass.exe" or l_1_1 == "msiexec.exe" or l_1_1 == "msnmsgr.exe" or l_1_1 == "msmpeng.exe" or l_1_1 == "notepad.exe" or l_1_1 == "rundll32.exe" or l_1_1 == "server.exe" or l_1_1 == "services.exe" or l_1_1 == "smss.exe" or l_1_1 == "svchost.exe" or l_1_1 == "system.exe" or l_1_1 == "taskhost.exe" or l_1_1 == "acrord32info.exe" or l_1_1 == "wininit.exe" or l_1_1 == "winlogon.exe" end
-    -- DECOMPILER ERROR: 1 unprocessed JMP targets
-  end
-end
-
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if ((string.sub)(l_0_1, -17) == "\\application data" or (string.sub)(l_0_1, -16) == "\\appdata\\roaming") and is_suspicious_filename((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) then
-      (mp.set_mpattribute)("Lua:SuspiciousFilenameAppdata.A")
-      return mp.INFECTED
-    end
-    if (string.sub)(l_0_1, -28) == "\\start menu\\programs\\startup" and is_suspicious_filename((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) then
-      (mp.set_mpattribute)("Lua:SuspiciousFilenameStartup.A")
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:len() < 8 then
   return mp.CLEAN
 end
+local l_0_1 = (string.sub)(l_0_0, -4)
+if l_0_1 ~= ".exe" and l_0_1 ~= ".vbs" and l_0_1 ~= ".jar" then
+  l_0_1 = (string.sub)(l_0_0, -3)
+  if l_0_1 ~= ".js" then
+    return mp.CLEAN
+  end
+end
+if l_0_0:len() > 20 and (string.sub)(l_0_0, -16) == "_captions.mp3.js" then
+  return mp.CLEAN
+end
+local l_0_2 = {}
+l_0_2[".doc"] = ""
+l_0_2[".xls"] = ""
+l_0_2[".ppt"] = ""
+l_0_2[".pdf"] = ""
+l_0_2[".jpg"] = ""
+l_0_2[".gif"] = ""
+l_0_2[".png"] = ""
+l_0_2[".pic"] = ""
+l_0_2[".txt"] = ""
+l_0_2[".mp3"] = ""
+l_0_2[".docx"] = ""
+l_0_2[".xlsx"] = ""
+l_0_2[".pptx"] = ""
+local l_0_3 = (string.sub)(l_0_0, -7)
+if l_0_2[(string.sub)(l_0_3, 1, 4)] and l_0_1 == ".js" then
+  (mp.set_mpattribute)("Lua:ContextJSDoubleExtension")
+  ;
+  (mp.set_mpattribute)("NScript:JSEnableEmulation")
+end
+l_0_3 = (string.sub)(l_0_0, -8)
+if l_0_2[(string.sub)(l_0_3, 1, 4)] and l_0_1 == ".vbs" then
+  (mp.set_mpattribute)("Lua:ContextVBSDoubleExtension")
+end
+if l_0_2[(string.sub)(l_0_3, 1, 4)] and l_0_1 == ".jar" then
+  (mp.set_mpattribute)("Lua:ContextJARDoubleExtension")
+end
+if l_0_2[(string.sub)(l_0_3, 1, 4)] and l_0_1 == ".exe" then
+  (mp.set_mpattribute)("Lua:ContextEXEDoubleExtension")
+end
+if l_0_2[(string.sub)(l_0_3, 1, 4)] and l_0_1 == ".js" then
+  (mp.set_mpattribute)("Lua:ContextJSDoubleExtension")
+  ;
+  (mp.set_mpattribute)("NScript:JSEnableEmulation")
+end
+l_0_3 = (string.sub)(l_0_0, -9)
+if l_0_2[(string.sub)(l_0_3, 1, 4)] and l_0_1 == ".vbs" then
+  (mp.set_mpattribute)("Lua:ContextVBSDoubleExtension")
+end
+if l_0_2[(string.sub)(l_0_3, 1, 4)] and l_0_1 == ".jar" then
+  (mp.set_mpattribute)("Lua:ContextJARDoubleExtension")
+end
+if l_0_2[(string.sub)(l_0_3, 1, 4)] and l_0_1 == ".exe" then
+  (mp.set_mpattribute)("Lua:ContextEXEDoubleExtension")
+end
+return mp.CLEAN
 

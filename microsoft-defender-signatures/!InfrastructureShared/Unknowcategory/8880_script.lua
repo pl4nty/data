@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.sub)(l_0_0, -9) == "setup.exe" then
-  (mp.set_mpattribute)("HSTR:Win32/BrowseFox.V!Setup")
-end
+(pe.set_peattribute)("hstr_exhaustive", true)
 ;
-(mp.set_mpattribute)("PUA:Block:BrowseFox")
-return mp.INFECTED
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+return mp.LOWFI
 

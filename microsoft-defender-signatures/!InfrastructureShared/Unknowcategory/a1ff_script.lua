@@ -3,34 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC18: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC19: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC20: Overwrote pending register: R4 in 'AssignReg'
-
-  for l_0_6,l_0_7 in ("\\cmd.exe")("\\cscript.exe") do
-    -- DECOMPILER ERROR at PC23: Overwrote pending register: R9 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC23: Overwrote pending register: R8 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC24: Overwrote pending register: R10 in 'AssignReg'
-
-    if ("\\regsvr32.exe")("\\rundll32.exe", -"\\wscript.exe") == l_0_7 then
-      return mp.INFECTED
-    end
+add_related_file_if_exists = function(l_1_0)
+  -- function num : 0_0
+  if l_1_0.matched and l_1_0.utf8p2 ~= nil then
+    local l_1_1 = (mp.ContextualExpandEnvironmentVariables)(l_1_0.utf8p2)
+    ;
+    (bm.add_related_file)(l_1_1)
   end
 end
-do
-  do
-    -- DECOMPILER ERROR at PC35: Overwrote pending register: R1 in 'AssignReg'
 
-    do return l_0_1 end
-    -- WARNING: undefined locals caused missing assignments!
-  end
-end
+add_related_file_if_exists(this_sigattrlog[1])
+add_related_file_if_exists(this_sigattrlog[2])
+add_related_file_if_exists(this_sigattrlog[3])
+add_related_file_if_exists(this_sigattrlog[4])
+return mp.INFECTED
 

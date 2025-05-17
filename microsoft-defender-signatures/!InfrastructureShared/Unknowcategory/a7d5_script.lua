@@ -3,84 +3,54 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+local l_0_0 = "|acrord32.exe"
+local l_0_1 = "|explorer.exe|notepad.exe|regedit.exe|hh.exe|winhlp32.exe|bfsvc.exe|write.exe|splwow64.exe|helppane.exe"
+local l_0_2 = "|svchost.exe|explorer.exe|reg.exe|dllhost.exe|notepad.exe|regsvr32.exe|userinit.exe|regedit.exe|secedit.exe|calc.exe|taskmgr.exe|runonce.exe|certutil.exe|find.exe|winver.exe|hh.exe|write.exe|ctfmon.exe|gpscript.exe|net.exe|powercfg.exe|lsass.exe|tcpsvcs.exe|msfeedssync.exe|taskeng.exe|drvinst.exe|mshta.exe|dllhst3g.exe|sdiagnhost.exe|werfault.exe|sfc.exe|upnpcont.exe|wiaacmgr.exe|mmc.exe|mspaint.exe|robocopy.exe|xcopy.exe|logagent.exe|wextract.exe|cmmon32.exe|dpnsvr.exe|net1.exe|dplaysvr.exe|schtasks.exe|dvdupgrd.exe|fixmapi.exe|systray.exe|netsh.exe|mobsync.exe|unregmp2.exe|sethc.exe"
+local l_0_3 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+local l_0_4 = l_0_3:match("(%w+%.exe)$")
+if l_0_4 == nil then
   return mp.CLEAN
 end
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-;
-(pe.set_peattribute)("deep_analysis", true)
-local l_0_0 = (mp.getfilesize)()
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(0, l_0_0)
-if (hstrlog[1]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[1]).VA) + 1, 1)
+if l_0_3 == nil then
+  return mp.CLEAN
 end
-if (hstrlog[2]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[2]).VA) + 1, 1)
+l_0_4 = "|" .. l_0_4
+local l_0_5 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%"))
+local l_0_6 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%PROGRAMFILES%"))
+local l_0_7 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%PROGRAMFILES(86)%"))
+local l_0_8 = false
+if (l_0_6 and l_0_3:find(l_0_6, 1, true)) or l_0_7 and l_0_3:find(l_0_7, 1, true) then
+  if l_0_0:find(l_0_4, 1, true) then
+    l_0_8 = true
+  else
+    return mp.CLEAN
+  end
 end
-if (hstrlog[3]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[3]).VA) + 1, 1)
+if l_0_5 then
+  if l_0_3:find(l_0_5 .. "\\system32", 1, true) or l_0_3:find(l_0_5 .. "\\syswow64", 1, true) then
+    if l_0_2:find(l_0_4, 1, true) then
+      l_0_8 = true
+    else
+      return mp.CLEAN
+    end
+  else
+    if l_0_3:find(l_0_5, 1, true) then
+      if l_0_1:find(l_0_4, 1, true) then
+        l_0_8 = true
+      else
+        return mp.CLEAN
+      end
+    end
+  end
 end
-if (hstrlog[4]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[4]).VA) + 1, 1)
+if l_0_8 == false then
+  return mp.CLEAN
 end
-if (hstrlog[5]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[5]).VA) + 1, 1)
+if (this_sigattrlog[4]).matched then
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2751503853)
+else
+  ;
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 330380806)
 end
-if (hstrlog[6]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[6]).VA) + 1, 1)
-end
-if (hstrlog[7]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[7]).VA) + 1, 1)
-end
-if (hstrlog[8]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[8]).VA) + 1, 1)
-end
-if (hstrlog[9]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[9]).VA) + 1, 1)
-end
-if (hstrlog[10]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[10]).VA) + 1, 1)
-end
-if (hstrlog[11]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[11]).VA) + 1, 1)
-end
-if (hstrlog[12]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[12]).VA) + 1, 1)
-end
-if (hstrlog[13]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[13]).VA) + 1, 1)
-end
-if (hstrlog[14]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[14]).VA - 1) + 1, 1)
-end
-if (hstrlog[15]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[15]).VA - 1) + 1, 1)
-end
-if (hstrlog[16]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[16]).VA - 1) + 1, 1)
-end
-if (hstrlog[17]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[17]).VA - 1) + 1, 1)
-end
-if (hstrlog[18]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[18]).VA - 1) + 1, 1)
-end
-if (hstrlog[19]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[19]).VA - 1) + 1, 1)
-end
-if (hstrlog[20]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[20]).VA - 1) + 1, 1)
-end
-if (hstrlog[21]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[21]).VA - 1) + 1, 1)
-end
-if (hstrlog[22]).matched then
-  (mp.writeu_u32)(l_0_1, (pe.foffset_va)((hstrlog[22]).VA - 1) + 1, 1)
-end
-;
-(mp.vfo_add_buffer)(l_0_1, "[Obfuscator.ACV]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.SUSPICIOUS
+return mp.INFECTED
 

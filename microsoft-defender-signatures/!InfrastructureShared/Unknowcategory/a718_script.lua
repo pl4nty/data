@@ -3,46 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\000" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\016" then
-  (pe.mmap_patch_va)(pevars.sigaddr + 10, "")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 19, "")
-  ;
-  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-  local l_0_0 = 336
-  local l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
-  local l_0_2 = (string.find)(l_0_1, "h@B\015%z")
-  local l_0_3 = (string.find)(l_0_1, "`\174\n%z")
-  local l_0_4 = (string.find)(l_0_1, "h\001%z\031%z")
-  local l_0_5 = (string.find)(l_0_1, "h\132\003%z%z")
-  if l_0_2 and l_0_3 then
-    for l_0_9 = 1, 256 - l_0_2 do
-      if (pe.mmap_va)(pevars.sigaddr + l_0_9 + l_0_3, 3) == "P\255\021" then
-        (pe.mmap_patch_va)(pevars.sigaddr + l_0_9 + l_0_3 + 1, "YYY\144")
-      end
-    end
-    if l_0_4 then
-      for l_0_13 = 1, 48 do
-        if (pe.mmap_va)(pevars.sigaddr + l_0_13 + l_0_4, 4) == "\031\000\255\021" then
-          (pe.mmap_patch_va)(pevars.sigaddr + l_0_13 + l_0_4 + 2, "YYY\144")
-        end
-      end
-    end
-    do
-      if l_0_5 then
-        for l_0_17 = 1, 160 do
-          if (pe.mmap_va)(pevars.sigaddr + l_0_17 + l_0_5, 3) == "\000\255\021" then
-            (pe.mmap_patch_va)(pevars.sigaddr + l_0_17 + l_0_5 + 1, "")
-          end
-        end
-      end
-      do
-        do
-          do return mp.INFECTED end
-          return mp.CLEAN
-        end
-      end
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
+if (string.find)(l_0_0, "\\systemsettings.exe", 1, true) or (string.find)(l_0_0, "\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\explorer.exe", 1, true) or (string.find)(l_0_0, "\\openwith.exe", 1, true) or (string.find)(l_0_0, "\\searchprotocolhost.exe", 1, true) or (string.find)(l_0_0, "\\searchindexer.exe", 1, true) or (string.find)(l_0_0, "\\runtimebroker.exe", 1, true) or (string.find)(l_0_0, "\\msiexec.exe", 1, true) or (string.find)(l_0_0, "\\taskhostw.exe", 1, true) or (string.find)(l_0_0, "\\microsoft\\edge", 1, true) or (string.find)(l_0_0, "\\temp\\edgemitmp", 1, true) or (string.find)(l_0_0, "\\winzip", 1, true) or (string.find)(l_0_0, "\\google\\chrome\\", 1, true) or (string.find)(l_0_0, "\\userprofilemanager.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

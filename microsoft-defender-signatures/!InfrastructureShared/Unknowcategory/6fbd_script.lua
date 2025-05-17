@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isdll or peattributes.isexe or peattributes.ismsil) and peattributes.no_security then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

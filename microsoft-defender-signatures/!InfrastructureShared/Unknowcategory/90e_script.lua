@@ -3,19 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  local l_0_2 = (string.len)(l_0_1)
-  if l_0_2 > 15 and l_0_2 <= 30 and (string.sub)(l_0_1, 1, 9) == "rechnung_" and (string.sub)(l_0_1, -4) == ".exe" then
-    for l_0_6 = 10, l_0_2 - 4 do
-      local l_0_7 = (string.byte)(l_0_1, l_0_6)
-      if l_0_7 < 48 or l_0_7 > 57 then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 16777216 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, 1) ~= 3203386062 or (mp.readu_u32)(headerpage, 5) ~= 1 then
+  return mp.CLEAN
+end
+if (mp.crc32)(-1, headerpage, 13, 145) ~= 1098233996 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(0, l_0_0)
+local l_0_2 = 1
+for l_0_6 in (string.gmatch)(l_0_1, "TV[%w+/]+=?=?") do
+  if l_0_2 > 5 then
+    break
+  end
+  if #l_0_6 > 4096 and #l_0_6 < 16777216 then
+    (mp.set_mpattribute)("//MpBase64DecodeLongLines")
     ;
-    (mp.set_mpattribute)("Lua:ZemotAttachmentFilename.A")
+    (mp.vfo_add_buffer)(l_0_6, (string.format)("[b64netrsrc-%x]", l_0_2), mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    l_0_2 = l_0_2 + 1
   end
 end
 do

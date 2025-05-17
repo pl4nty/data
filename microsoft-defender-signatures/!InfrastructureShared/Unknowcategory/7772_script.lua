@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 10000 and (mp.getfilesize)() < 50000 and not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.INFECTED
+do
+  if peattributes.isexe then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

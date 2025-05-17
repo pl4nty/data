@@ -3,19 +3,89 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 32 or l_0_0 > 65536 then
-  return mp.CLEAN
+local l_0_0 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).RVA
+local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size
+local l_0_2 = (MpCommon.GetCurrentTimeT)()
+if l_0_0 ~= 0 and l_0_1 ~= 0 then
+  local l_0_3 = 0
+  ;
+  (mp.readprotection)(false)
+  while l_0_3 < l_0_1 do
+    if (mp.readu_u32)((pe.mmap_rva)(l_0_0 + l_0_3 + 12, 4), 1) == 16 then
+      return mp.CLEAN
+    end
+    l_0_3 = l_0_3 + 28
+  end
+  local l_0_4 = (mp.readu_u32)((pe.mmap_rva)(l_0_0 + 4, 4), 1)
+  ;
+  (mp.readprotection)(true)
+  if pehdr.TimeDateStamp ~= l_0_4 then
+    (mp.set_mpattribute)("LUA:PEAnomaly_DifferentPEandDebugDirTimeStamp")
+  end
+  if l_0_4 ~= 0 then
+    local l_0_5 = l_0_2 - l_0_4
+    if l_0_5 <= 2592000 then
+      (mp.set_mpattribute)("LUA:PEAnomaly_DebugTimeStampLastOneMonth")
+    end
+    if l_0_5 > 2592000 and l_0_5 <= 15638400 then
+      (mp.set_mpattribute)("LUA:PEAnomaly_DebugTimeStampLastSixMonth")
+    end
+    if l_0_5 > 15638400 and l_0_5 <= 31536000 then
+      (mp.set_mpattribute)("LUA:PEAnomaly_DebugTimeStampLastOneYear")
+    end
+    if l_0_5 > 31536000 and l_0_5 <= 94608000 then
+      (mp.set_mpattribute)("LUA:PEAnomaly_DebugTimeStampLastThreeYear")
+    end
+    if l_0_5 > 94608000 and l_0_5 <= 157766400 then
+      (mp.set_mpattribute)("LUA:PEAnomaly_DebugTimeStampLastFiveYear")
+    end
+    if l_0_5 > 157766400 and l_0_5 <= 315532800 then
+      (mp.set_mpattribute)("LUA:PEAnomaly_DebugTimeStampLastTenYear")
+    end
+    if l_0_5 > 315532800 then
+      (mp.set_mpattribute)("LUA:PEAnomaly_DebugTimeStampLastOlderThanTenYear")
+    end
+  else
+    do
+      do
+        ;
+        (mp.set_mpattribute)("LUA:PEAnomaly_NullDebugTimeStamp")
+        if pehdr.TimeDateStamp ~= 0 then
+          if pehdr.TimeDateStamp < l_0_2 then
+            local l_0_6 = l_0_2 - pehdr.TimeDateStamp
+            if l_0_6 <= 2592000 then
+              (mp.set_mpattribute)("LUA:PEAnomaly_TimeStampLastOneMonth")
+            end
+            if l_0_6 > 2592000 and l_0_6 <= 15638400 then
+              (mp.set_mpattribute)("LUA:PEAnomaly_TimeStampLastSixMonth")
+            end
+            if l_0_6 > 15638400 and l_0_6 <= 31536000 then
+              (mp.set_mpattribute)("LUA:PEAnomaly_TimeStampLastOneYear")
+            end
+            if l_0_6 > 31536000 and l_0_6 <= 94608000 then
+              (mp.set_mpattribute)("LUA:PEAnomaly_TimeStampLastThreeYear")
+            end
+            if l_0_6 > 94608000 and l_0_6 <= 157766400 then
+              (mp.set_mpattribute)("LUA:PEAnomaly_TimeStampLastFiveYear")
+            end
+            if l_0_6 > 157766400 and l_0_6 <= 315532800 then
+              (mp.set_mpattribute)("LUA:PEAnomaly_TimeStampLastTenYear")
+            end
+            if l_0_6 > 315532800 then
+              (mp.set_mpattribute)("LUA:PEAnomaly_TimeStampLastOlderThanTenYear")
+            end
+          else
+            do
+              ;
+              (mp.set_mpattribute)("LUA:PEAnomaly_TimeStampHigherThanCurrentDateOrInvalid")
+              ;
+              (mp.set_mpattribute)("LUA:PEAnomaly_NullTimeDateStamp")
+              return mp.CLEAN
+            end
+          end
+        end
+      end
+    end
+  end
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  return mp.CLEAN
-end
-if not (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_1, "h_e_l_p_recover_", 1, true) or (string.find)(l_0_1, "help_instructions", 1, true) or (string.find)(l_0_1, "help_recover_", 1, true) or (string.find)(l_0_1, "help_restore_files", 1, true) or (string.find)(l_0_1, "help_to_decrypt_your_files", 1, true) or (string.find)(l_0_1, "help_to_save_your_files", 1, true) or (string.find)(l_0_1, "how_recover", 1, true) or (string.find)(l_0_1, "recover_file_", 1, true) or (string.find)(l_0_1, "recovery+", 1, true) or (string.find)(l_0_1, "recovery_", 1, true) or (string.find)(l_0_1, "recover+", 1, true) or (string.find)(l_0_1, "recover_instructions", 1, true) or (string.find)(l_0_1, "restore_files_", 1, true) or (string.find)(l_0_1, "restoring files", 1, true) or (string.find)(l_0_1, "decrypt my files", 1, true) or (string.find)(l_0_1, "howdo_text", 1, true) or (string.find)(l_0_1, "your_files_are_encrypted", 1, true) or (string.find)(l_0_1, "readme_for_save files", 1, true) or (string.find)(l_0_1, "save your files", 1, true) or (string.find)(l_0_1, "recover_file_%a%a%a%a%a%a%a%a%a%.txt$") or (string.find)(l_0_1, "^recover%.txt$") or (string.find)(l_0_1, "^recover_file%.txt$") or (string.find)(l_0_1, "^%+recover%+file%.txt$") or (string.find)(l_0_1, "^_recover_file%.txt$") or (string.find)(l_0_1, "^%-help%-file%.txt$") or (string.find)(l_0_1, "^%-!recover!%-!file!%-%.txt$") or (string.find)(l_0_1, "^help_%w+%.html$") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections < pevars.epsec then
+if (bm.GetSignatureMatchDuration)() > 300000000 then
   return mp.CLEAN
 end
-if (pesecs[pevars.epsec]).NameDW ~= 1886221870 then
-  return mp.CLEAN
-end
-if peattributes.epscn_writable ~= true then
-  return mp.CLEAN
-end
+local l_0_0 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_0.ppid, "M")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1000)
 return mp.INFECTED
 

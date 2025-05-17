@@ -3,87 +3,52 @@
 
 -- params : ...
 -- function num : 0
-is_in = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if (string.match)(l_1_0, l_1_1) ~= nil then
-    return true
-  else
-    return false
-  end
-end
-
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if is_in(l_0_0, "%a:\\program files") then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 and ((string.find)(l_0_0, "outlook.exe", 1, true) or (string.find)(l_0_0, "mssense.exe", 1, true) or (string.find)(l_0_0, "excel.exe", 1, true) or (string.find)(l_0_0, "searchprotocolhost.exe", 1, true)) then
   return mp.CLEAN
 end
-if is_in(l_0_0, "\\appdata\\local\\apps\\2%.0\\") then
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
   return mp.CLEAN
 end
-if is_in(l_0_0, "\\programs\\onesystem\\spider\\") then
+local l_0_2 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_1.ppid)
+if l_0_2.IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
   return mp.CLEAN
 end
-if is_in(l_0_0, "\\gphdesktopapp\\gphdesktopapp\\globalproductivityhub%.exe") then
+local l_0_3, l_0_4, l_0_5, l_0_6 = nil, nil, nil, nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  l_0_3 = (this_sigattrlog[1]).utf8p1
+end
+if l_0_3 == nil then
   return mp.CLEAN
 end
-if is_in(l_0_0, "\\cubase\\cubase_updater%.exe") then
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+  l_0_4 = (this_sigattrlog[2]).utf8p1
+end
+if l_0_4 == nil then
   return mp.CLEAN
 end
-if is_in(l_0_0, "\\myzone\\software\\myzone2%.exe") then
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
+  l_0_5 = (this_sigattrlog[3]).utf8p1
+end
+if l_0_5 == nil then
   return mp.CLEAN
 end
-if is_in(l_0_0, "\\csobpkalk\\csobpkalkulatory%.exe") then
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
+  l_0_6 = (this_sigattrlog[4]).utf8p1
+end
+if l_0_6 == nil then
   return mp.CLEAN
 end
-if is_in(l_0_0, "\\nitro pro\\skel\\[%x]+\\nitro_temp_file_cleaner%.exe") then
-  return mp.CLEAN
+if (string.find)(l_0_3, "\\windows\\", 1, true) or (string.find)(l_0_3, "\\programdata\\usoshared\\logs\\system\\", 1, true) or (string.find)(l_0_4, "\\windows\\", 1, true) or (string.find)(l_0_4, "\\programdata\\usoshared\\logs\\system\\", 1, true) or (string.find)(l_0_5, "\\windows\\", 1, true) or (string.find)(l_0_5, "\\programdata\\usoshared\\logs\\system\\", 1, true) or (string.find)(l_0_6, "\\windows\\", 1, true) or (string.find)(l_0_6, "\\programdata\\usoshared\\logs\\system\\", 1, true) then
+  (bm.add_related_string)("SuspETLAccessB", tostring(l_0_3), bm.RelatedStringBMReport)
+  ;
+  (bm.add_related_string)("SuspETLAccessB", tostring(l_0_4), bm.RelatedStringBMReport)
+  ;
+  (bm.add_related_string)("SuspETLAccessB", tostring(l_0_5), bm.RelatedStringBMReport)
+  ;
+  (bm.add_related_string)("SuspETLAccessB", tostring(l_0_6), bm.RelatedStringBMReport)
+  return mp.INFECTED
 end
-if is_in(l_0_0, "\\adobe.+\\local\\stubexe\\") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\game\\league of legends%.exe") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\win64\\valorant%-win64%-shipping%.exe") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\win64\\fortniteclient%-win64%-shipping%.exe") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\wegame.+\\dnf%.exe") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\screenconnect%.windowsclient%.exe") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\robloxplayer") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\win64\\mirmg%-win64%-shipping%.exe") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\imagiqsimulator%.exe") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\libraries\\dutdriver%.exe") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\battle%.net\\battle%.net%.exe") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\steamapps\\") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\world of warcraft\\") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\xboxgames\\") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\heroes of the storm\\") then
-  return mp.CLEAN
-end
-if is_in(l_0_0, "\\dmr auto tuning%.exe") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

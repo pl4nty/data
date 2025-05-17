@@ -3,44 +3,58 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  local l_0_0, l_0_1 = nil, nil
-  l_0_1 = (this_sigattrlog[2]).utf8p2
-  local l_0_2 = nil
+local l_0_0 = {}
+l_0_0["cmd.exe"] = true
+l_0_0["powershell.exe"] = true
+local l_0_1 = nil
+if (this_sigattrlog[1]).matched then
+  l_0_1 = (this_sigattrlog[1]).ppid
 else
-end
-do
-  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
-
-  if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).utf8p2 ~= nil then
-    local l_0_3, l_0_4 = (this_sigattrlog[3]).utf8p1, (this_sigattrlog[3]).utf8p2
-    l_0_4 = (this_sigattrlog[4]).utf8p2
-    local l_0_5 = nil
+  if (this_sigattrlog[2]).matched then
+    l_0_1 = (this_sigattrlog[2]).ppid
   else
-  end
-  do
-    -- DECOMPILER ERROR at PC80: Overwrote pending register: R0 in 'AssignReg'
-
-    if (not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).utf8p2 == nil or (this_sigattrlog[6]).matched) and (this_sigattrlog[6]).utf8p2 ~= nil then
-      local l_0_6, l_0_7, l_0_9, l_0_10, l_0_12, l_0_13, l_0_15 = (this_sigattrlog[5]).utf8p1, (this_sigattrlog[5]).utf8p2
-      l_0_9 = this_sigattrlog
-      l_0_9 = l_0_9[6]
-      l_0_7 = l_0_9.utf8p2
-      local l_0_8, l_0_11, l_0_14, l_0_16 = nil
+    if (this_sigattrlog[3]).matched then
+      l_0_1 = (this_sigattrlog[3]).ppid
     else
-    end
-    do
-      if ((this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p2 ~= nil and (this_sigattrlog[7]).utf8p1 == nil) or (this_sigattrlog[7]).utf8p2 == nil then
-        return mp.CLEAN
+      if (this_sigattrlog[4]).matched then
+        l_0_1 = (this_sigattrlog[4]).ppid
+      else
+        if (this_sigattrlog[5]).matched then
+          l_0_1 = (this_sigattrlog[5]).ppid
+        else
+          return mp.CLEAN
+        end
       end
-      local l_0_17 = nil
-      local l_0_18 = nil
-      ;
-      (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), {["[" .. l_0_17 .. "]"] = "[" .. l_0_18 .. "]"})
-      return mp.INFECTED
     end
   end
 end
+local l_0_2 = nil
+if (this_sigattrlog[6]).matched then
+  l_0_2 = (this_sigattrlog[6]).ppid
+else
+  return mp.CLEAN
+end
+for l_0_6 = 1, 5 do
+  if l_0_6 > 6 then
+    return mp.CLEAN
+  end
+  local l_0_7, l_0_8 = (bm.get_process_relationships)(l_0_1)
+  for l_0_12,l_0_13 in ipairs(l_0_8) do
+    if l_0_13.reason == 1 then
+      local l_0_14 = (string.lower)((string.match)(l_0_13.image_path, "\\([^\\]+)$"))
+      if l_0_13.ppid == l_0_2 then
+        return mp.INFECTED
+      else
+        if l_0_0[l_0_14] ~= true then
+          (mp.ReportLowfi)(l_0_13.image_path, 187850996)
+          return mp.CLEAN
+        end
+      end
+      l_0_1 = l_0_13.ppid
+    end
+  end
+end
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC118: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
 

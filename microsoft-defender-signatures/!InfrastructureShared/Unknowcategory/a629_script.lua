@@ -3,57 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = mp.SIGATTR_LOG_SZ
-if mp.SIGATTR_LOG_SZ >= 3 then
-  l_0_0 = 3
+if (bm.GetSignatureMatchDuration)() > 100000000 then
+  return mp.CLEAN
 end
-for l_0_4 = 1, l_0_0 do
-  local l_0_5 = mp.SIGATTR_LOG_SZ - l_0_4 + 1
-  if (sigattr_tail[l_0_5]).matched and (sigattr_tail[l_0_5]).attribute == 12312 then
-    local l_0_6 = (sigattr_tail[l_0_5]).p1
-    if (string.len)(l_0_6) == 71 and l_0_6:sub(-4) == ".exe" and (string.byte)(l_0_6, -21) == 92 then
-      if l_0_6:sub(-38, -22) ~= "\\Application Data" then
-        break
-      end
-      local l_0_7 = l_0_6:sub(-20)
-    end
-    if (string.byte)(l_0_7) >= 65 then
-      if (string.byte)(l_0_7) > 90 then
-        break
-      end
-      do
-        local l_0_8 = (string.len)(l_0_7)
-        for l_0_12 = 2, l_0_8 - 4 do
-          do
-            local l_0_13 = (string.byte)(l_0_7, l_0_12)
-            if l_0_13 >= 97 then
-              do
-                if l_0_13 > 122 then
-                  break
-                end
-                -- DECOMPILER ERROR at PC87: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC87: LeaveBlock: unexpected jumping out IF_STMT
-
-                -- DECOMPILER ERROR at PC87: LeaveBlock: unexpected jumping out DO_STMT
-
-              end
-            end
-          end
-        end
-        ;
-        (mp.set_mpattribute)("SIGATTR:DorkbotFileName.A")
-        do return mp.INFECTED end
-        -- DECOMPILER ERROR at PC95: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC95: LeaveBlock: unexpected jumping out IF_STMT
-
-        -- DECOMPILER ERROR at PC95: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC95: LeaveBlock: unexpected jumping out IF_STMT
-
-      end
-    end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  if (string.find)((string.lower)(l_0_6.image_path), "\\rundll32.exe", 1, true) then
+    (MpCommon.TurnNriOnProcess)(l_0_6.ppid)
+    ;
+    (bm.request_SMS)(l_0_6.ppid, "M")
+    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
+    local l_0_9 = tonumber(l_0_7)
+    local l_0_10 = tonumber(l_0_8)
+    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
+    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
+    ;
+    (mp.TriggerScanResource)("ems", l_0_13, mp.SCANSOURCE_RTSIG, 5000)
+    return mp.INFECTED
   end
 end
 return mp.CLEAN

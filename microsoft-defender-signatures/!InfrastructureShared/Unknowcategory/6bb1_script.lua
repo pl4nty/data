@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
+if peattributes.isvbnative and (pesecs[3]).SizeOfRawData > 65536 then
   return mp.INFECTED
 end
 return mp.CLEAN

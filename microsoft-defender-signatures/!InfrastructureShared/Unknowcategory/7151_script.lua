@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if peattributes.isdll and peattributes.no_security and l_0_0 > 688128 and l_0_0 < 696320 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

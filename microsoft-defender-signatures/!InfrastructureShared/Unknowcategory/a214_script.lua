@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  (mp.readprotection)(false)
-  local l_0_0 = (mp.readfile)(0, (mp.getfilesize)())
-  local l_0_1 = (pe.foffset_va)((hstrlog[1]).VA)
-  ;
-  (mp.writeu_u8)(l_0_0, l_0_1 + 1 + 10, 235)
-  ;
-  (mp.vfo_add_buffer)(l_0_0, "crowti_patch", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 9 then
+    local l_0_1 = (string.lower)(l_0_0)
+    if ((string.find)(l_0_1, "procdump", 1, true) or (string.find)(l_0_1, "accepteula", 1, true)) and (string.match)(l_0_1, "[%-/]m[acdkmp]") then
+      return mp.INFECTED
+    end
+  end
 end
 do
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:ExtenBro")
-return mp.INFECTED
+(mp.set_mpattribute)("SIGATTR:RegKeyWinDiag")
+return mp.LOWFI
 

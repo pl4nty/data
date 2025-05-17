@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 900 and l_0_0 < 1048576 then
+if (mp.get_mpattribute)("pea_isexe") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%->%(RarSfx%)%->%w+%.exe%->%(RarSfx%)") == nil then
-  return mp.CLEAN
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

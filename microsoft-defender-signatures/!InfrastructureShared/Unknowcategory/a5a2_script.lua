@@ -3,25 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p1
-  if l_0_0 == nil and (string.len)(l_0_0) < 3 then
-    return mp.CLEAN
-  end
-  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
-  local l_0_1 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
-  if l_0_1 == nil and (string.len)(l_0_1) < 3 then
-    return mp.CLEAN
-  end
-  local l_0_2 = {}
-  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\windows\\"))] = true
-  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\"))] = true
-  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\windows\\"))] = true
-  if l_0_2[l_0_1] then
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_HIGH_RID < l_0_0.integrity_level then
   return mp.CLEAN
+end
+local l_0_1 = (bm.get_imagepath)()
+do
+  if l_0_1 ~= nil then
+    local l_0_2 = {}
+    l_0_2["rpcnetp.exe"] = true
+    l_0_2["services.exe"] = true
+    l_0_2["svchost.exe"] = true
+    if l_0_2[((string.lower)((string.sub)(l_0_1, -30))):match("\\system32\\([^\\]+%.exe)$")] then
+      return mp.CLEAN
+    end
+  end
+  local l_0_3 = nil
+  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+    l_0_3 = (this_sigattrlog[3]).utf8p2
+  end
+  if l_0_3 ~= nil and (string.find)(l_0_3, "UnistackSvcGroup", 1, true) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
 

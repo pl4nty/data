@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 20), "u", 1, true) - 1
-local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "u", 62, true) - l_0_0 - 1
-local l_0_2 = (string.format)("\235%s", (string.char)(l_0_1))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, l_0_2)
-return mp.INFECTED
+do
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 47872 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

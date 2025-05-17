@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("SIGA:MSIL/Suspicious.CreateRunKey.B") then
+if ((mp.getfilename)()):match("/embeddings/oleObject") then
+  (mp.changedetectionname)(805306516)
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.INFECTED
 

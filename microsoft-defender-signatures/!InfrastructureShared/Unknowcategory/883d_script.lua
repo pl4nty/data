@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -12) == "\\svchost.exe" then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-if l_0_1:match("([^\\]+)$") ~= "cmd.exe" and l_0_1:match("([^\\]+)$") ~= "powershell.exe" then
-  return mp.INFECTED
+if (string.sub)(l_0_0, -13) == "\\explorer.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

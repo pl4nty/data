@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Active and (string.find)((Remediation.Threat).Name, "Behavior:Win32/WFP_BFE.B", 1, true) then
-  (Remediation.SetRebootRequired)()
+if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

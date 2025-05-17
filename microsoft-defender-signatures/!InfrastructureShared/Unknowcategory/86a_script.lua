@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    l_0_0 = l_0_0:gsub("`", "", 100)
-    l_0_0 = (string.lower)(l_0_0)
-    if (string.find)(l_0_0, "new-object", 1, true) or (string.find)(l_0_0, "executioncontext", 1, true) or (string.find)(l_0_0, "webclient", 1, true) or (string.find)(l_0_0, "newscriptblock", 1, true) then
-      return mp.INFECTED
-    end
-  end
+if not peattributes.suspicious_timestamp and not peattributes.deep_analysis and not peattributes.dt_error_heur_exit_criteria and not peattributes.suspicious_image_version then
   return mp.CLEAN
 end
+if (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Rebhip!custom") or (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Rebhip!rsrc") or (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Rebhip!exhaustive") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

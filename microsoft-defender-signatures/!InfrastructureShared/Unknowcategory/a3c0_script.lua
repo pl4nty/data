@@ -3,21 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_ismsil") then
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
+local l_0_2 = (string.match)(l_0_1, "https?://(%d+)/")
+do
+  if l_0_2 ~= nil then
+    local l_0_3 = nil
+    if (string.find)(l_0_2, "^[01]+$") ~= nil and #l_0_2 > 24 then
+      l_0_3 = (mp.shr32)(tonumber(l_0_2, 2), 24)
+    else
+      l_0_3 = (mp.shr32)(tonumber(l_0_2), 24)
+    end
+    if l_0_3 == nil or l_0_3 == 127 or l_0_3 == 10 then
+      return mp.CLEAN
+    else
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("system32", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

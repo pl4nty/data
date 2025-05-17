@@ -3,15 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSIsRemoteSession)
-do
-  if l_0_1 then
-    local l_0_2 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSUserName)
-    if (MpCommon.QueryPersistContextNoPath)("MpNewRemoteUsers", l_0_2) then
-      return mp.INFECTED
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 ~= nil then
+  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+    if (sysio.IsFileExists)(l_0_6) then
+      (bm.add_related_file)(l_0_6)
     end
   end
-  return mp.CLEAN
+end
+do
+  l_0_1 = mp
+  l_0_1 = l_0_1.INFECTED
+  return l_0_1
 end
 

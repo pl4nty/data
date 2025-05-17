@@ -3,30 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_4 = nil
-if (this_sigattrlog[2]).matched then
-  local l_0_0, l_0_1, l_0_2, l_0_3 = "base64_plist_creation"
-else
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[6]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
+
   do
-    -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC32: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC38: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (not (this_sigattrlog[3]).matched or l_0_4 ~= nil) and l_0_4 ~= "" then
-      if (MpCommon.GetPersistContextCountNoPath)(l_0_0) > 0 then
-        (MpCommon.AppendPersistContextNoPath)(l_0_0, l_0_4, 3600)
-      else
-        local l_0_5 = nil
-        ;
-        (MpCommon.SetPersistContextNoPath)(l_0_5, {[1] = l_0_4}, 3600)
-      end
-      do
-        do return mp.INFECTED end
-        return mp.CLEAN
-      end
+    if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
+      local l_0_1, l_0_2 = (mp.GetExecutablesFromCommandLine)((this_sigattrlog[7]).utf8p2)
     end
+    -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil then
+      for l_0_6,l_0_7 in ipairs(l_0_1) do
+        local l_0_3 = nil
+        -- DECOMPILER ERROR at PC48: Confused about usage of register: R5 in 'UnsetPending'
+
+        if (string.find)((string.lower)(R5_PC48), "/library/preferences/com.apple.loginwindow.plist", 1, true) then
+          return mp.INFECTED
+        end
+      end
+      return mp.CLEAN
+    end
+    return mp.INFECTED
   end
 end
 

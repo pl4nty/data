@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).hitcount > 50 and (hstrlog[3]).hitcount > 50 then
+if peattributes.isdll == true and (mp.getfilesize)() < 483842 then
   return mp.INFECTED
 end
 return mp.CLEAN

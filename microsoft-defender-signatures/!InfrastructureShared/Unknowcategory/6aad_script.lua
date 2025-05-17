@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((mp.getfilename)(), -3)) == "r2w" then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 245760 and l_0_0 <= 311296 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

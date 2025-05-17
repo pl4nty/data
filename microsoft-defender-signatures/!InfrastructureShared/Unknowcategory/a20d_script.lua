@@ -3,21 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  if l_0_2 == "powershell.exe" or (string.find)(l_0_2, "^%d+%.exe") then
-    local l_0_3 = (mp.GetScannedPPID)()
-    if l_0_3 == nil then
-      return mp.CLEAN
-    end
-    ;
-    (MpCommon.RequestSmsOnProcess)(l_0_3, MpCommon.SMS_SCAN_LOW)
-    return mp.INFECTED
-  end
-end
-do
-  return mp.CLEAN
-end
+local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, "\n\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 32, "\255T$\bêê")
+;
+(pe.set_image_filename)("notepad.exe")
+;
+(pe.reemulate)()
+return mp.INFECTED
 

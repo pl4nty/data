@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 8 then
-  (pe.set_image_filename)("\"myapp.exe\" /install")
-  ;
-  (pe.reemulate)()
-end
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+;
+(bm.add_threat_file)(l_0_0)
 return mp.INFECTED
 

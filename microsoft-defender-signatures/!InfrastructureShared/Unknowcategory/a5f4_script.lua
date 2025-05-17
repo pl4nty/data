@@ -3,22 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 3
-if l_0_0 * 10000000 < (bm.GetSignatureMatchDuration)() then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((bm.get_imagepath)())
-if l_0_1 == nil or (string.len)(l_0_1) < 1 then
-  return mp.CLEAN
-end
-if (string.find)((string.lower)(l_0_1), "\\program files", 1, true) or (string.find)((string.lower)(l_0_1), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_1), "\\mpcmdrun.exe", 1, true) then
-  return mp.CLEAN
-end
-local l_0_2, l_0_3 = (bm.get_process_relationships)()
-for l_0_7,l_0_8 in ipairs(l_0_2) do
-  if l_0_8.image_path ~= nil and (mp.bitand)(l_0_8.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_8.image_path), "\\powershell.exe", 1, true) then
-    return mp.INFECTED
-  end
+if peattributes.isdll and pehdr.NumberOfSections == 5 and pevars.epsec == 1 and not peattributes.no_exports and not peattributes.no_resources and peattributes.no_tls and pehdr.SizeOfImage >= 221184 and pehdr.SizeOfImage <= 1048576 and (pesecs[pevars.epsec]).SizeOfRawData >= 151552 and (pesecs[pevars.epsec]).SizeOfRawData <= 655360 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (pesecs[pevars.epsec]).Name == ".text" then
+  (mp.set_mpattribute)("MpSimulateParanoid")
+  ;
+  (mp.set_mpattribute)("MpEnableCOM")
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
+  ;
+  (pe.reemulate)()
 end
 return mp.CLEAN
 

@@ -3,27 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  local l_0_3 = (string.len)(l_0_2)
-  if l_0_3 > 11 and l_0_3 <= 19 and (string.sub)(l_0_2, 1, 7) == "update_" and (string.sub)(l_0_1, -5) == "\\temp" and (string.sub)(l_0_2, -4) == ".exe" then
-    for l_0_7 = 8, l_0_3 - 4 do
-      local l_0_8 = (string.byte)(l_0_2, l_0_7)
-      if l_0_8 < 48 or l_0_8 > 57 then
-        return mp.CLEAN
-      end
-    end
-    ;
-    (mp.set_mpattribute)("Lua:DalexisDownloadFileName.A")
-  else
-    if (string.len)(l_0_2) <= 8 and (string.sub)(l_0_2, 1, 3) == "mss" and (string.sub)(l_0_1, -5) == "\\temp" and (string.sub)(l_0_2, -4) == ".exe" then
-      (mp.set_mpattribute)("Lua:LerspengDownloadFileName.A")
-    end
-  end
+(mp.set_mpattribute)("HSTR:Adware:Win32/Lollipop")
+-- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+
+if (((((((hstrlog[1]).matched or not (hstrlog[3]).matched) and (hstrlog[9]).matched) or not (hstrlog[11]).matched) and (hstrlog[17]).matched) or (hstrlog[2]).matched) and 1 or 0) + ((hstrlog[8]).matched and 1 or 0) + ((hstrlog[10]).matched and 1 or 0) + ((hstrlog[15]).matched and 1 or 0) + ((hstrlog[16]).matched and 1 or 0) + ((hstrlog[20]).matched and 1 or 0) + ((hstrlog[21]).matched and 1 or 0) + ((hstrlog[22]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

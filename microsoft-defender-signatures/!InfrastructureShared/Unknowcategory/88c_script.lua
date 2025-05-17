@@ -3,28 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 128 then
+local l_0_0 = (mp.getfilesize)()
+;
+(mp.readprotection)(false)
+if l_0_0 < 8192 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+if (mp.readu_u32)(headerpage, 1) ~= 1196314761 then
   return mp.CLEAN
 end
-local l_0_0 = 10
-local l_0_1 = 1
-local l_0_2 = 1
-while l_0_2 < l_0_0 and l_0_1 + 30 < mp.HEADERPAGE_SZ do
-  if (mp.readu_u32)(headerpage, l_0_1) ~= 67324752 then
-    return mp.CLEAN
-  end
-  local l_0_3 = (mp.readu_u32)(headerpage, l_0_1 + 18)
-  local l_0_4 = (mp.readu_u32)(headerpage, l_0_1 + 22)
-  if l_0_3 > 0 and l_0_3 < l_0_4 and l_0_4 > 10485760 and l_0_4 / l_0_3 > 11000 then
-    return mp.INFECTED
-  end
-  l_0_1 = l_0_1 + 30 + (mp.readu_u16)(headerpage, l_0_1 + 26) + l_0_3 + (mp.readu_u16)(headerpage, l_0_1 + 28)
-  l_0_2 = l_0_2 + 1
+local l_0_1 = (mp.readfile)(256, 256)
+if (string.find)(l_0_1, "IEND", 1, true) ~= nil and (string.find)(l_0_1, "MZ", 1, true) ~= nil and (string.find)(l_0_1, "This program cannot be run in DOS mode", 1, true) ~= nil then
+  (mp.set_mpattribute)("Lua:PEEmbeddedAfterPng")
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

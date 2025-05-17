@@ -3,21 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-  local l_0_0 = (string.lower)((mp.utf16to8)((this_sigattrlog[1]).wp2))
-  if (string.find)(l_0_0, ".downloadstring", 1, true) ~= nil then
-    do
-      do
-        if (string.find)(l_0_0, "-dumpcreds", 1, true) ~= nil then
-          local l_0_1 = (string.find)(l_0_0, "-computername", 1, true)
-        else
-        end
-        if false ~= nil then
-          return mp.INFECTED
-        end
-        return mp.CLEAN
-      end
-    end
-  end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0.ppid == nil or (string.find)(l_0_0.ppid, "pid:4$", 1, false) ~= nil or (string.find)(l_0_0.ppid, "pid:4,", 1, true) ~= nil then
+  return mp.CLEAN
 end
+if ((MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)).IntegrityLevel <= l_0_0.integrity_level then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and pehdr.NumberOfSections == 3 then
+if pehdr.NumberOfSections == 5 and (pesecs[5]).Name == ".idata" then
   return mp.INFECTED
 end
 return mp.CLEAN

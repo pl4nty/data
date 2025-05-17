@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false then
-  return mp.CLEAN
+local l_0_0 = 512
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr - 256, l_0_0)
+local l_0_2 = (string.find)(l_0_1, "JB\015%z")
+if l_0_2 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 7, "êê")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 16, "\235")
+  ;
+  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+  return mp.INFECTED
 end
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
-  return mp.CLEAN
-end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 1, "\255\255\255\255")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+return mp.CLEAN
 

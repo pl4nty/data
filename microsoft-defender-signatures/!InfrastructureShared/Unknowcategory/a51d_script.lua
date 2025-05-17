@@ -3,24 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if (string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\frontend\\") ~= nil or (string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\clientaccess\\") ~= nil or (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\v%d%d\\template\\layouts\\") ~= nil or (string.find)(l_0_0, "\\frontend\\httpproxy\\owa\\", 1, true) ~= nil or (string.find)(l_0_0, "\\inetpub\\wwwroot\\", 1, true) ~= nil then
+  return mp.INFECTED
 end
-if (mp.ispackedwith)("AutoHotKey_+") then
-  return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv") then
-  local l_0_0, l_0_1 = nil, nil
-  if (hstrlog[1]).matched then
-    l_0_0 = ((hstrlog[1]).match_offsets)[3]
-    l_0_1 = (hstrlog[1]).VA + l_0_0
-    local l_0_2 = (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1)
-    if (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1) ~= 909132101 then
-      return mp.INFECTED
-    end
-  end
-end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 50000000 then
+if (bm.GetSignatureMatchDuration)() > 100000000 then
   return mp.CLEAN
 end
 local l_0_0, l_0_1 = (bm.get_process_relationships)()

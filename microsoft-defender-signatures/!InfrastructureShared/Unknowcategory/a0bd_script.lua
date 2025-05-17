@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\chrome\\application\\chrome.exe", 1, true) or (string.find)(l_0_0, "\\application\\browser.exe", 1, true) then
-    return mp.CLEAN
-  end
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_deep_analysis") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.set_peattribute)("disable_apicall_limit", true)
+  ;
+  (pe.reemulate)()
+else
   return mp.INFECTED
 end
 return mp.CLEAN

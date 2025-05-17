@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_6.image_path), "\\wmiprvse.exe", 1, true) then
-    return mp.INFECTED
-  end
+if mp.HSTR_WEIGHT == 3 then
+  return mp.INFECTED
+end
+if peattributes.isdll and (mp.getfilesize)() < 850000 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT == 2 then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

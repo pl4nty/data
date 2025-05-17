@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((mp.getfilename)(), -4))
-if l_0_0 == ".iso" or l_0_0 == ".img" then
-  return mp.INFECTED
+if (string.lower)((string.sub)((bm.get_imagepath)(), -12)) ~= "\\svchost.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

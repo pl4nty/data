@@ -3,25 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 16
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 96)
-local l_0_2 = (string.byte)(l_0_1, 1) + 2
-if #l_0_1 < l_0_2 then
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-if (string.byte)(l_0_1, l_0_2 - 2) == 117 and (string.byte)(l_0_1, l_0_2 - 4) == 116 then
-  local l_0_3 = (string.byte)(l_0_1, l_0_2 - 3) + l_0_2 - 2
-  if #l_0_1 < l_0_3 then
-    return mp.CLEAN
-  end
-  if (string.byte)(l_0_1, l_0_3) == 232 then
-    local l_0_4 = "\235"
-    ;
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_0 + l_0_2 - 5, l_0_4)
-    return mp.INFECTED
-  end
-end
-do
+if pehdr.NumberOfSections ~= 4 then
   return mp.CLEAN
 end
+if (pesecs[1]).VirtualSize <= 12288 then
+  return mp.CLEAN
+end
+if (pesecs[1]).VirtualSize >= 81920 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pesecs[1]).VirtualSize + (pesecs[1]).PointerToRawData, 4)
+if (mp.readu_u32)(l_0_0, 1) == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,10 +3,36 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC77: Unhandled construct in 'MakeBoolean' P3
-
-if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched) and not (hstrlog[9]).matched) or not (hstrlog[10]).matched) and not (hstrlog[12]).matched) or 0 + 2 + 1 + 1 >= 2 then
+if mp.HSTR_WEIGHT == 1 then
+  local l_0_0 = nil
+  if (hstrlog[1]).matched then
+    l_0_0 = (hstrlog[1]).VA
+  end
+  if (hstrlog[2]).matched then
+    l_0_0 = (hstrlog[2]).VA
+  end
+  if (hstrlog[3]).matched then
+    l_0_0 = (hstrlog[3]).VA
+  end
+  if (hstrlog[4]).matched then
+    l_0_0 = (hstrlog[4]).VA
+  end
+  if (hstrlog[5]).matched then
+    l_0_0 = (hstrlog[5]).VA
+  end
+  if (hstrlog[6]).matched then
+    l_0_0 = (hstrlog[6]).VA
+  end
+  if (hstrlog[7]).matched then
+    l_0_0 = (hstrlog[7]).VA
+  end
+  if l_0_0 ~= nil then
+    local l_0_1 = "HSTR:VirTool:Win32/Obfuscator.WU.offset_" .. (string.format)("%.08x", l_0_0)
+    ;
+    (mp.set_mpattribute)(l_0_1)
+  end
+end
+do
   return mp.INFECTED
 end
-return mp.CLEAN
 

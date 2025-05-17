@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == false and peattributes.isdll == true and peattributes.no_security == true then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "word/_rels/document.xml.rels") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

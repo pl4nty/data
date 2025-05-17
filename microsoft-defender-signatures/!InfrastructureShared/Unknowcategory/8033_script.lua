@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)(((pe.get_versioninfo)()).OriginalFilename, 1, 5)) == "lsass" then
+if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") and peattributes.isexe == true and (mp.getfilesize)() < 1064000 then
   return mp.INFECTED
 end
 return mp.CLEAN

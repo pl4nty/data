@@ -3,24 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 < 4 then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->(Ole Stream", -18, true) == nil then
   return mp.CLEAN
 end
-local l_0_2 = {}
-l_0_2.ExecutePatch = 1
-l_0_2["Main@12"] = 1
-l_0_2.MakeUuid = 1
-l_0_2.kAiCode = 1
-local l_0_3 = 0
-for l_0_7 = 1, l_0_0 do
-  local l_0_8 = (pe.mmap_string_rva)((l_0_1[l_0_7]).namerva, 64)
-  if l_0_2[l_0_8] then
-    l_0_3 = l_0_3 + l_0_2[l_0_8]
-  end
+local l_0_1 = (mp.BMSearchFile)(7, 5, "ÎG\n\001\005\144\000")
+if l_0_1 ~= 0 then
+  return mp.CLEAN
 end
-if l_0_3 == 4 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(mp.UfsSetMetadataBool)("OleShellCode", true)
+return mp.INFECTED
 

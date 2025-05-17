@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetLnkInfo)()
-if l_0_0 == nil then
+do
+  if (mp.get_mpattribute)("HSTR:Pdumpint.A") then
+    local l_0_0 = (mp.getfilename)()
+    if (string.find)(l_0_0, "pd.exe") ~= nil then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (string.find)((l_0_0.Arguments):lower(), "comspec", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

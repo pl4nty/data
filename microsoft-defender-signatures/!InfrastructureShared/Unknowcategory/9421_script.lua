@@ -3,23 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-local l_0_1 = 0
-local l_0_2 = {}
-local l_0_3 = (nri.GetConnectionHistory)()
-for l_0_7,l_0_8 in pairs(l_0_3) do
-  if l_0_8.DestinationPort == 3389 then
-    if l_0_2[l_0_8.DestinationAddressLow] == nil then
-      l_0_2[l_0_8.DestinationAddressLow] = 1
-      l_0_1 = l_0_1 + 1
-    end
-    l_0_0 = l_0_0 + 1
-  end
-end
-do
-  if l_0_1 > 5 or l_0_0 > 10 then
-    return mp.INFECTED
-  end
+if (mp.get_mpattribute)("SLF:Win32/Sysdupate.E") then
   return mp.CLEAN
 end
+if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 4 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

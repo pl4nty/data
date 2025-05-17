@@ -3,13 +3,17 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_ScanCFABootProtState = function()
-  -- function num : 0_0
-  (MpCommon.SetGlobalMpAttribute)("CFABootProtStateScan")
-  ;
-  (MpDetection.ScanResource)("regkeyvalue://HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Diagnostics\\\\MpPayloadStatus")
-  ;
-  (MpCommon.DeleteGlobalMpAttribute)("CFABootProtStateScan")
+local l_0_0 = 3
+if l_0_0 * 10000000 < (bm.GetProcedureMatchDuration)(1) then
+  return mp.CLEAN
 end
-
+do
+  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil then
+    local l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[5]).utf8p1)
+    if l_0_1 ~= nil then
+      (bm.add_related_file)(l_0_1)
+    end
+  end
+  return mp.INFECTED
+end
 

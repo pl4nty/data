@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 458752 and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
+    ;
+    (mp.ReportLowfi)(l_0_0, 694214086)
+    ;
+    (bm.add_related_file)(l_0_0)
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

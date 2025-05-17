@@ -3,13 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
-  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28768 then
-    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
-    l_0_0.TlsJa3CHash = l_0_5
-    ;
-    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if not l_0_0 then
+  return mp.CLEAN
+end
+l_0_0 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+if not l_0_0 then
+  return mp.CLEAN
+end
+for l_0_4,l_0_5 in ipairs(l_0_0) do
+  if l_0_5 and (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, false, false) then
+    (bm.add_related_file)(l_0_5)
   end
 end
 return mp.INFECTED

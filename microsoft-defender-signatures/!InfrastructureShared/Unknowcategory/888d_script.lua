@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 16, 96)
-local l_0_1 = (string.byte)(l_0_0, 1) + 2
-if #l_0_0 < l_0_1 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_0, l_0_1) == 232 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 35)
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.find)(l_0_0, "u", 1, true)
+    if l_0_1 ~= nil then
+      (pe.mmap_patch_va)(pevars.sigaddr + 10 + l_0_1 - 1, "")
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

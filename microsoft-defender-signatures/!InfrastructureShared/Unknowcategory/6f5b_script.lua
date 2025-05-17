@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.sub)(l_0_0, -16) == "skypelogview.exe" then
-  return mp.CLEAN
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 3048000 then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

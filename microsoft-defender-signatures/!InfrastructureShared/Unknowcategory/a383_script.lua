@@ -3,29 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).ppid
+  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  if (string.find)(l_0_1, ".dat", 1, true) and (string.find)(l_0_1, "--", 1, true) and (string.find)(l_0_1, ",init ", 1, true) and (string.find)(l_0_1, "=\"", 1, true) and l_0_0 then
+    (bm.request_SMS)(l_0_0, "m")
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if peattributes.lastscn_writable ~= true then
-  return mp.CLEAN
-end
-if peattributes.lastscn_eqsizes ~= true then
-  return mp.CLEAN
-end
-if peattributes.epscn_valign == true then
-  return mp.CLEAN
-end
-if peattributes.no_relocs ~= true then
-  return mp.CLEAN
-end
-if peattributes.epatstartentrysect ~= true then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode ~= 0 then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

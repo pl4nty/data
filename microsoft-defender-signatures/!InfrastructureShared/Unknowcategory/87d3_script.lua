@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if peattributes.isexe == true and (mp.getfilesize)() < 390200 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" or l_0_1:match("([^\\]+)$") == "regsvr32.exe" then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

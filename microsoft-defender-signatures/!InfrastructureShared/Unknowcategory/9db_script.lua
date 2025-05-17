@@ -3,57 +3,79 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine ~= 332 or peattributes.isappcontainer or peattributes.resource_only_dll or peattributes.no_ep or peattributes.dmg_entrypoint or peattributes.dmg_not_executable_image or peattributes.dmg_truncated then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 256 or l_0_0 > 5242880 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_1 ~= nil and l_0_1 ~= mp.SCANREASON_UNKNOWN then
-  return mp.CLEAN
-end
-if (mp.GetResmgrBasePlugin)() ~= "Folder" then
-  return mp.CLEAN
-end
-local l_0_2 = (string.lower)((mp.getfilename)())
-if l_0_2:find(":\\windows\\winsxs", 1, true) ~= nil then
-  return mp.CLEAN
-end
-if l_0_2:find(":\\windows\\installer", 1, true) ~= nil then
-  return mp.CLEAN
-end
-if l_0_2:find(":\\sccmcontentlib\\filelib", 1, true) ~= nil then
-  return mp.CLEAN
-end
-local l_0_3 = (mp.gethost)()
-if l_0_3 ~= mp.HOST_X86 and l_0_3 ~= mp.HOST_X64 then
-  return mp.CLEAN
-end
-local l_0_4, l_0_5 = pcall(mp.get_parent_filehandle)
-if l_0_4 then
-  l_0_4 = pcall(mp.get_filesize_by_handle, l_0_5)
-  if l_0_4 then
-    return mp.CLEAN
+local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_SCANREASON)
+local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_CONTROL_GUID)
+local l_0_4, l_0_5 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_CONTROL_VERSION)
+local l_0_6 = false
+local l_0_7 = false
+if l_0_2 then
+  if (string.match)(l_0_3, "6bf52a52%-394a%-11d3%-b153%-00c04f79faa6") then
+    return mp.FALSE
+  end
+  if (string.match)(l_0_3, "22d6f312%-b0f6%-11d0%-94ab%-0080c74c7e95") then
+    return mp.FALSE
+  end
+  if (string.match)(l_0_3, "6e6b5b2a%-ec7e%-4f25%-95bb%-504bb437e95e") then
+    return mp.FALSE
+  end
+  if (string.match)(l_0_3, "5512d122%-5cc6%-11cf%-8d67%-00aa00bdce1d") then
+    return mp.FALSE
+  end
+  if (string.match)(l_0_3, "d27cdb6e%-ae6d%-11cf%-96b8%-444553540000") and l_0_4 and R11_PC76 == 32 and 16 == 0 and l_0_5 == 0 and (mp.bsplit)(l_0_5, 16) >= 445 then
+    l_0_6 = true
+  end
+  do
+    if (string.match)(l_0_3, "dfeaf541%-f3e1%-4c24%-acac%-99c30715084a") and l_0_4 then
+      local l_0_8 = (mp.bsplit)(l_0_5, 16)
+      if R11_PC76 == 5 and 16 == 1 and l_0_5 == 50918 then
+        l_0_7 = true
+      end
+    end
+    do
+      if l_0_0 then
+        local l_0_9 = mp.SCANREASON_VALIDATION_PRESCAN
+        if l_0_1 ~= l_0_9 and l_0_6 == false and l_0_7 == false then
+          l_0_9 = mp
+          l_0_9 = l_0_9.aggregate_mpattribute
+          l_0_9("Context:DataControlGuid.B")
+        end
+      end
+      if l_0_0 and l_0_1 ~= mp.SCANREASON_VALIDATION_PRESCAN and l_0_6 == false then
+        local l_0_10, l_0_11 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_URL)
+        -- DECOMPILER ERROR at PC145: Overwrote pending register: R11 in 'AssignReg'
+
+        if l_0_10 and (string.match)(R11_PC76, "[/.]google%.com") then
+          (mp.aggregate_mpattribute)(R11_PC76)
+        end
+        -- DECOMPILER ERROR at PC148: Overwrote pending register: R11 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC149: Overwrote pending register: R11 in 'AssignReg'
+
+        local l_0_12, l_0_13 = pcall(R11_PC76, mp.CONTEXT_DATA_REFERRERURL), R11_PC76
+        if l_0_12 then
+          if (string.match)(l_0_13, "google%.co") then
+            (mp.aggregate_mpattribute)("Context:DataReferrerUrl")
+          end
+          if (string.match)(l_0_13, "baidu%.com") then
+            (mp.aggregate_mpattribute)("Context:DataReferrerUrl")
+          end
+          if (string.match)(l_0_13, "yandex%.ru") then
+            (mp.aggregate_mpattribute)("Context:DataReferrerUrl")
+          end
+          if (string.match)(l_0_13, "bing%.co") then
+            (mp.aggregate_mpattribute)("Context:DataReferrerUrlBing")
+          end
+          if (string.match)(l_0_13, "/a[fp]u.php?.-id=%d") then
+            (mp.aggregate_mpattribute)("Context:DataReferrerUrlAds")
+          end
+        end
+      end
+      do
+        ;
+        (mp.aggregate_mpattribute)("//MpIsIEVScan")
+        return mp.TRUE
+      end
+    end
   end
 end
-local l_0_6 = (mp.utf16to8)((mp.getwfilename)())
-local l_0_7 = (sysio.GetFileAttributes)(l_0_6)
-local l_0_8 = "|" .. (l_0_6:match("..-[^\\/]-(%.?[^%.\\/:]+):?[^%.\\/:]*$")):lower() .. "|"
-local l_0_9 = "|.exe|.bat|.cmd|.pif|.scr|.cpl|.dll|.ocx|.sys|.drv|.data|.metadata_dll|.mptest|.api|.ax|.pmp|.mpp|.x3d|.mp|.pun|.ref|.p3k|.acm|.ime|.deploy"
-local l_0_10 = {}
--- DECOMPILER ERROR at PC191: No list found for R10 , SetList fails
-
--- DECOMPILER ERROR at PC192: Overwrote pending register: R11 in 'AssignReg'
-
--- DECOMPILER ERROR at PC194: Overwrote pending register: R12 in 'AssignReg'
-
--- DECOMPILER ERROR at PC196: Overwrote pending register: R13 in 'AssignReg'
-
--- DECOMPILER ERROR at PC197: Overwrote pending register: R14 in 'AssignReg'
-
-;
-(("Lua:GenericNonRtp").set_mpattribute)((((not l_0_6:find(".", 1, true) or l_0_9:find(l_0_8, 1, true) == nil) and "N" or "_").concat)(l_0_7 ~= 4294967295 and (mp.bitand)(l_0_7, 2) ~= 0 and "H" or "_", peattributes.genpacked and "P" or "_"))
-return mp.CLEAN
 

@@ -3,15 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  local l_0_2 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  if l_0_0 ~= nil and l_0_1 ~= nil and l_0_2 ~= nil and (string.find)(l_0_1, l_0_0, 1, true) and (string.find)(l_0_2, l_0_0, 1, true) then
-    return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[3]).matched then
+  local l_0_0 = nil
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    if l_0_1 ~= nil then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+        ;
+        (bm.add_related_file)(l_0_6)
+      end
+    end
+    do
+      do
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
+    end
   end
-end
-do
-  return mp.CLEAN
 end
 

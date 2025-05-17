@@ -3,112 +3,75 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_relocs ~= true then
-  return mp.CLEAN
+if ((pe.mmap_va)(pevars.sigaddr + 1, 1) == "\255" or (pe.mmap_va)(pevars.sigaddr + 1, 1) == "\254") and ((pe.mmap_va)(pevars.sigaddr + 11, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 11, 1) == "\016" or (pe.mmap_va)(pevars.sigaddr + 11, 1) == "\000") then
+  (pe.mmap_patch_va)(pevars.sigaddr + 6, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 12, "\235")
+  ;
+  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+  local l_0_0 = 256
+  local l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
+  local l_0_2 = (string.find)(l_0_1, "h@B\015%z")
+  local l_0_3 = (string.find)(l_0_1, "`\174\n%z")
+  local l_0_4 = (string.find)(l_0_1, "j%z")
+  local l_0_5 = (string.find)(l_0_1, "j\002", 1, true)
+  local l_0_6 = (string.find)(l_0_1, "\255%z%z%zj")
+  local l_0_7 = (string.find)(l_0_1, "\255%z%z%zh")
+  local l_0_8 = (string.find)(l_0_1, "j\001", 1, true)
+  local l_0_9 = (string.find)(l_0_1, "h\001%z\031%z")
+  local l_0_10 = (string.find)(l_0_1, "h\132\003%z%z")
+  if l_0_2 and l_0_3 then
+    for l_0_14 = 1, 256 - l_0_2 do
+      if (pe.mmap_va)(pevars.sigaddr + l_0_14 + l_0_3, 3) == "P\255\021" then
+        (pe.mmap_patch_va)(pevars.sigaddr + l_0_14 + l_0_3 + 1, "YYY\144")
+      end
+    end
+    if l_0_4 and l_0_5 then
+      for l_0_18 = 1, 48 do
+        if (pe.mmap_va)(pevars.sigaddr + l_0_18 + l_0_5, 3) == "\000\255\021" then
+          (pe.mmap_patch_va)(pevars.sigaddr + l_0_18 + l_0_5 + 1, "YYY\144")
+        end
+      end
+    end
+    do
+      if (l_0_6 or l_0_7) and l_0_8 then
+        for l_0_22 = 1, 48 do
+          if (pe.mmap_va)(pevars.sigaddr + l_0_22 + l_0_8, 3) == "\000\255\021" then
+            (pe.mmap_patch_va)(pevars.sigaddr + l_0_22 + l_0_8 + 1, "YYY\144")
+          end
+        end
+      end
+      do
+        if l_0_9 then
+          for l_0_26 = 1, 48 do
+            if (pe.mmap_va)(pevars.sigaddr + l_0_26 + l_0_9, 3) == "\000\255\021" then
+              (pe.mmap_patch_va)(pevars.sigaddr + l_0_26 + l_0_9 + 1, "YYY\144")
+            end
+          end
+        end
+        do
+          if l_0_10 then
+            for l_0_30 = 1, 96 do
+              if (pe.mmap_va)(pevars.sigaddr + l_0_30 + l_0_10, 1) == "\232" then
+                (pe.mmap_patch_va)(pevars.sigaddr + l_0_30 + l_0_10, "\144")
+              end
+              if (pe.mmap_va)(pevars.sigaddr + l_0_30 + l_0_10, 3) == "Q\255\021" then
+                (pe.mmap_patch_va)(pevars.sigaddr + l_0_30 + l_0_10 + 1, "YY")
+              end
+              if (pe.mmap_va)(pevars.sigaddr + l_0_30 + l_0_10, 3) == "\000\255\021" then
+                (pe.mmap_patch_va)(pevars.sigaddr + l_0_30 + l_0_10 + 1, "")
+              end
+            end
+          end
+          do
+            do
+              do return mp.INFECTED end
+              return mp.CLEAN
+            end
+          end
+        end
+      end
+    end
+  end
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.packed == true then
-  return mp.CLEAN
-end
-if peattributes.packersigmatched == true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if peattributes.epatstartlastsect ~= false then
-  return mp.CLEAN
-end
-if peattributes.lastscn_falign == false then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode < 8192 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode > 65536 then
-  return mp.CLEAN
-end
-if peattributes.is_delphi ~= false then
-  return mp.CLEAN
-end
-if peattributes.hasappendeddata ~= false then
-  return mp.CLEAN
-end
-if pehdr.BaseOfCode ~= 4096 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData < 2048 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData > 65536 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < 4 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections > 10 then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-if pehdr.FileAlignment ~= 512 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).Size < 24 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[10]).RVA), 24)
-if (mp.readu_u32)(l_0_0, 1) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 5) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 17) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 21) ~= 0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 9) - pehdr.ImageBase), 16)
-local l_0_2 = l_0_0 .. l_0_1
-if (mp.readu_u32)(l_0_2, 1) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_2, 25) ~= 4294967295 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

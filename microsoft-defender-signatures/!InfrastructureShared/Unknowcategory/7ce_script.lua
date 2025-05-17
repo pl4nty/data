@@ -3,18 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_AMSI then
-    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-    if not l_0_1 then
-      return mp.CLEAN
-    end
-    l_0_1 = (string.lower)(l_0_1)
-    if l_0_1:find("portail_sync.exe", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 550000 and l_0_0 < 600000 then
+  return mp.INFECTED
 end
+if l_0_0 > 120000 and l_0_0 < 300000 then
+  return mp.INFECTED
+end
+if l_0_0 > 40000 and l_0_0 < 70000 then
+  return mp.INFECTED
+end
+if l_0_0 > 10000 and l_0_0 < 15000 then
+  return mp.INFECTED
+end
+if l_0_0 > 7600 and l_0_0 < 7700 then
+  return mp.INFECTED
+end
+if l_0_0 > 4100 and l_0_0 < 4300 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

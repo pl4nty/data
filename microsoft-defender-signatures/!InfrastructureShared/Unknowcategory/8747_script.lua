@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis_VMM_Grow")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 14, 14)
 ;
-(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_6")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 27, "êê")
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\187" .. l_0_1 .. "\000\000\000")
+return mp.INFECTED
 

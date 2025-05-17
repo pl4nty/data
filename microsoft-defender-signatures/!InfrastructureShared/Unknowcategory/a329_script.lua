@@ -3,29 +3,41 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
+local l_0_0 = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  local l_1_2 = {}
+  l_1_2.__index = function()
+    -- function num : 0_0_0 , upvalues : l_1_1
+    return l_1_1
   end
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
 
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
+  setmetatable(l_1_0, l_1_2)
+end
 
-      R6_PC39 = (mp.ContextualExpandEnvironmentVariables)(R6_PC39)
-      if (sysio.IsFileExists)(R6_PC39) then
-        (bm.add_related_file)(R6_PC39)
-      end
-    end
+fastDec2BinWithKey = function(l_2_0, l_2_1, l_2_2, l_2_3)
+  -- function num : 0_1 , upvalues : l_0_0
+  local l_2_4 = {}
+  local l_2_5 = string.char
+  for l_2_9 = 0, 255 do
+    local l_2_18 = tostring
+    l_2_18 = l_2_18(l_2_3(l_2_2, l_2_9))
+    local l_2_10, l_2_15 = nil
+    l_2_10 = l_2_5
+    l_2_15 = l_2_9
+    local l_2_17 = nil
+    l_2_10 = l_2_10(l_2_15)
+    local l_2_16 = nil
+    l_2_4[l_2_18] = l_2_10
   end
+  l_0_0(l_2_4, " ")
+  local l_2_11, l_2_12 = l_2_0:gsub, l_2_0
+  local l_2_13 = l_2_1
   do
-    return mp.INFECTED
+    local l_2_14 = l_2_4
+    do return l_2_11(l_2_12, l_2_13, l_2_14) end
+    -- DECOMPILER ERROR at PC27: Confused about usage of register R7 for local variables in 'ReleaseLocals'
+
   end
 end
+
 

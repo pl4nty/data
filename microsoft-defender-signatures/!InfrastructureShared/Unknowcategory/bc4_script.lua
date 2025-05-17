@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("SIGATTR:RegKeyWinDiag")
-return mp.LOWFI
+(mp.set_mpattribute)("PUA:Block:Softonic")
+return mp.INFECTED
 

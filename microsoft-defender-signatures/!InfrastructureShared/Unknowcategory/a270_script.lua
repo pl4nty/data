@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetRawRequestBlob)()
-local l_0_1, l_0_2, l_0_3 = (MpCommon.BinaryRegExpSearch)("([\\x00-\\xFF]+)\\x05\\x00\\x00\\x03\\x10\\x00\\x00\\x00(..)...\\x00\\x00\\x00....\\x00\\x00\\x04\\x00", l_0_0)
-if l_0_1 and l_0_3 then
-  local l_0_4 = (mp.readu_u16)(l_0_3, 1)
-  local l_0_5 = (string.sub)(l_0_0, #l_0_2 + 1, #l_0_2 + l_0_4)
-  if (MpCommon.BinaryRegExpSearch)("\\x0A\\x06..\\x7F\\x35\\x01\\x00", l_0_5) then
-    return mp.INFECTED
-  end
+-- DECOMPILER ERROR at PC44: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC44: Unhandled construct in 'MakeBoolean' P3
+
+if (((((hstrlog[1]).matched or (hstrlog[2]).matched or not (hstrlog[4]).matched) and (hstrlog[7]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

@@ -3,42 +3,35 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+local l_0_3 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = "|.xls|.doc|.ppt|.pps|docx|pptx|ppsx|xlsx|"
+else
+  do
+    -- DECOMPILER ERROR at PC27: Overwrote pending register: R0 in 'AssignReg'
 
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC41: Overwrote pending register: R0 in 'AssignReg'
 
-  local l_0_1 = (string.lower)(l_0_0)
-  if (string.len)(l_0_1) < 100 then
-    return mp.CLEAN
+    do
+      if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+        local l_0_1, l_0_2 = nil
+      end
+      if l_0_3 ~= nil then
+        local l_0_4 = nil
+        for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
+          local l_0_5 = nil
+          -- DECOMPILER ERROR at PC54: Confused about usage of register: R7 in 'UnsetPending'
+
+          R7_PC54 = (mp.ContextualExpandEnvironmentVariables)(R7_PC54)
+          if (sysio.IsFileExists)(R7_PC54) and (string.find)(l_0_4, (string.sub)(R7_PC54, -4), 1, true) then
+            (bm.add_related_file)(R7_PC54)
+          end
+        end
+      end
+      do
+        return mp.INFECTED
+      end
+    end
   end
-  if (string.find)(l_0_1, "%.ps1") then
-    return mp.CLEAN
-  end
-  if not (string.find)(l_0_1, "{%d%d?}{%d%d?}") then
-    return mp.CLEAN
-  end
-  l_0_1 = (string.gsub)(l_0_1, " ", "")
-  local l_0_2 = 0
-  for l_0_6 in (string.gmatch)(l_0_1, "[\"\']%-f[\"\']") do
-    l_0_2 = l_0_2 + 1
-  end
-  if l_0_2 < 2 then
-    return mp.CLEAN
-  end
-  local l_0_7 = 0
-  for l_0_11 in (string.gmatch)(l_0_1, "{%d%d?}{%d%d?}") do
-    l_0_7 = l_0_7 + 1
-  end
-  if l_0_7 < 2 then
-    return mp.CLEAN
-  end
-  if (l_0_2 > 3 and l_0_7 > 3) or l_0_2 >= 2 and l_0_7 >= 2 and (string.find)(l_0_1, "`", 1, true) then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
 end
 

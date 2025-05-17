@@ -3,39 +3,50 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  if (string.lower)((bm.get_imagepath)()) and (string.match)((string.lower)((bm.get_imagepath)()), "\\([^\\]+)$") == "installutil.exe" then
-    return mp.CLEAN
-  end
-  if l_0_1 ~= nil then
-    if not (string.find)((string.lower)(l_0_1), " /u ", 1, true) or not (string.find)((string.lower)(l_0_1), "/logfile= ", 1, true) then
-      return mp.CLEAN
-    end
-    if (string.find)((string.lower)(l_0_1), "\\program files", 1, true) or (string.find)((string.lower)(l_0_1), "/installstatedir=", 1, true) or (string.find)((string.lower)(l_0_1), "upmWmi", 1, true) then
-      return mp.CLEAN
-    end
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC109: Confused about usage of register: R7 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R7_PC109) then
-        (mp.ReportLowfi)(R7_PC109, 2023886462)
-        ;
-        (bm.add_related_file)(R7_PC109)
-      end
-    end
-  end
-  do
-    ;
-    (bm.add_action)("EmsScan", 3000)
-    return mp.INFECTED
-  end
+if peattributes.isdll ~= true then
+  return mp.CLEAN
 end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.epscn_writable == false then
+  return mp.CLEAN
+end
+if peattributes.firstsectwritable ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasappendeddata ~= true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).NameDW ~= 1952539694 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).Size < 16 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA == 0 then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if (mp.bitand)((pesecs[pevars.epsec]).Characteristics, 2147483648) ~= 2147483648 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or #l_0_0 < 1 then
-  return mp.CLEAN
+if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[11] == 233 and peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+  return mp.INFECTED
 end
-if (string.find)((string.lower)(l_0_0), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpcmdrun.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Vintall")
+(mp.set_mpattribute)("PUA:Block:Linkury")
 return mp.INFECTED
 

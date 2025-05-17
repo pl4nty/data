@@ -3,22 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[3]).utf8p1
-local l_0_1 = (this_sigattrlog[3]).utf8p2
-if not l_0_0 or not l_0_1 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 ~= nil) and (this_sigattrlog[3]).utf8p2 ~= "" then
+    local l_0_5 = nil
+    if (mp.GetExecutablesFromCommandLine)((this_sigattrlog[3]).utf8p2) ~= nil then
+      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[3]).utf8p2)) do
+        local l_0_6 = nil
+        -- DECOMPILER ERROR at PC33: Confused about usage of register: R6 in 'UnsetPending'
+
+        R6_PC33 = (mp.ContextualExpandEnvironmentVariables)(R6_PC33)
+        ;
+        (bm.add_related_file)(R6_PC33)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-l_0_0 = (string.lower)(l_0_0)
-if (string.find)(l_0_0, "\\temp\\", 1, true) then
-  return mp.CLEAN
-end
-l_0_0 = (string.match)(l_0_0, "([^\\]+)$")
-if (string.find)(l_0_0, "unins", 1, true) then
-  return mp.CLEAN
-end
-l_0_1 = (string.lower)((string.match)(l_0_1, "([^\\]+)$"))
-if l_0_0 ~= l_0_1 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

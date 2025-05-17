@@ -3,17 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if (string.find)(l_0_1, "^[a-z]%.exe$") then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-    if l_0_2 == "powershell.exe" then
-      (mp.set_mpattribute)("Lua:ContextualPSDroppedEK")
-    end
-  end
-end
-do
+if not (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
   return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1048576 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(0, l_0_0)
+if (string.find)(l_0_1, "%^") then
+  l_0_1 = (string.gsub)(l_0_1, "%^", "")
+  ;
+  (mp.vfo_add_buffer)(l_0_1, "[CmdEscapeChar]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+end
+return mp.CLEAN
 

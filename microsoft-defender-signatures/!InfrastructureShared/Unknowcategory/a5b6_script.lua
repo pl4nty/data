@@ -3,24 +3,28 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R1 in 'AssignReg'
+local l_0_0 = nil
+local l_0_1 = nil
+if (sysio.IsFileExists)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))) and not (mp.IsKnownFriendlyFile)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), true, false) then
+  (bm.add_related_string)("VaultAccess", (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), bm.RelatedStringBMReport)
+  ;
+  (bm.add_related_file)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())))
+  return mp.INFECTED
+end
+local l_0_2, l_0_3 = , (bm.get_process_relationships)()
+if l_0_3 ~= nil then
+  for l_0_7,l_0_8 in ipairs(l_0_3) do
+    local l_0_4 = nil
+    -- DECOMPILER ERROR at PC46: Confused about usage of register: R8 in 'UnsetPending'
 
-if (this_sigattrlog[1]).matched then
-  local l_0_1 = nil
-  l_0_1 = nil
-  local l_0_0 = nil
-  if l_0_1 == nil or l_0_1 == "" then
-    return mp.CLEAN
-  end
-  l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_1))
-  if (sysio.IsFileExists)(l_0_1) then
-    local l_0_2 = (string.lower)(l_0_0)
-    if (string.sub)(l_0_2, 1, 1) == "%" and ((string.find)(l_0_2, "%commonprogramfiles%\\system\\wab32.dll", 1, true) or (string.find)(l_0_2, "%CommonProgramFiles(x86)%\\system\\wab32.dll", 1, true)) then
-      return mp.CLEAN
-    end
-    if not (string.find)(l_0_1, "\\outlook express\\wab32.dll", 1, true) then
-      (bm.add_related_file)(l_0_1)
-      return mp.INFECTED
+    if R8_PC46.image_path ~= nil then
+      l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(R8_PC46.image_path))
+      if (sysio.IsFileExists)(l_0_1) and not (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+        (bm.add_related_string)("VaultAccess", l_0_1, bm.RelatedStringBMReport)
+        ;
+        (bm.add_related_file)(l_0_1)
+        return mp.INFECTED
+      end
     end
   end
 end

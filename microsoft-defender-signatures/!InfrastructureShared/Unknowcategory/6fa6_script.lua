@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>%w+%.bat$") == nil then
-  return mp.CLEAN
+if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 323584 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,19 +3,11 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.match)(l_0_0, "hidden.+bypass.+system%.net%.webclient.+downloadfile%(\'http:.+%.asp\'%).*|.*iex") ~= nil then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+(mp.readprotection)(false)
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+local l_0_1 = (mp.readfile)(l_0_0, 60)
+if (mp.crc32)(-1, l_0_1, 1, 60) ~= 2693178178 then
+  return mp.CLEAN
 end
+return mp.INFECTED
 

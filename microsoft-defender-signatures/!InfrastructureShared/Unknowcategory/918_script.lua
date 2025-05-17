@@ -3,39 +3,31 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_2, l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2), (bm.get_process_relationships)()
-    if l_0_3 == nil then
-      return mp.CLEAN
-    end
-    for l_0_7,l_0_8 in ipairs(l_0_3) do
-      local l_0_4 = nil
-      -- DECOMPILER ERROR at PC46: Confused about usage of register: R7 in 'UnsetPending'
-
-      if R7_PC46.image_path ~= nil and (string.lower)((string.match)(R7_PC46.image_path, "\\([^\\]+)$")) == "msiexec.exe" then
-        return mp.CLEAN
-      end
-    end
-    if l_0_2 ~= nil then
-      local l_0_9 = nil
-      for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
-        local l_0_10 = nil
-        -- DECOMPILER ERROR at PC87: Confused about usage of register: R8 in 'UnsetPending'
-
-        if (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)((string.lower)((string.match)(R7_PC46.image_path, "\\([^\\]+)$")))) == true then
-          (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((string.lower)((string.match)(R7_PC46.image_path, "\\([^\\]+)$"))))
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0.integrity_level <= MpCommon.SECURITY_MANDATORY_MEDIUM_RID then
+  local l_0_1 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)
+  if l_0_0.integrity_level < l_0_1.IntegrityLevel then
+    local l_0_2 = nil
+    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
+      if (sigattr_tail[l_0_6]).matched and (sigattr_tail[l_0_6]).attribute == 16393 then
+        l_0_2 = (sigattr_tail[l_0_6]).utf8p2
+        if l_0_2 ~= nil then
+          local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_2)
+          for l_0_11,l_0_12 in ipairs(l_0_7) do
+            l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
+            if (sysio.IsFileExists)(l_0_12) then
+              (bm.add_related_file)(l_0_12)
+            end
+          end
         end
       end
     end
-    do
-      return mp.INFECTED
-    end
+    do return mp.INFECTED end
+    -- DECOMPILER ERROR at PC66: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
   end
 end
+l_0_1 = mp
+l_0_1 = l_0_1.CLEAN
+return l_0_1
 

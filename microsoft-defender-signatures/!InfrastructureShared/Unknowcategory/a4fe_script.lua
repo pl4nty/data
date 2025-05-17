@@ -3,29 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  end
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC38: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC38 = (mp.ContextualExpandEnvironmentVariables)(R6_PC38)
+      if (sysio.IsFileExists)(R6_PC38) and (string.find)((string.lower)(R6_PC38), "temp\\_0%.%d+%.class") ~= nil then
+        (bm.add_related_file)(R6_PC38)
+        return mp.INFECTED
+      end
+    end
+  end
+  do
+    return mp.CLEAN
+  end
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.epscn_islast == true then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 5 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (mp.bitand)(((pesecs[pehdr.NumberOfSections]).Name)[0], 255) == 46 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

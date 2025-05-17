@@ -3,94 +3,57 @@
 
 -- params : ...
 -- function num : 0
-string_starts = function(l_1_0, l_1_1)
+Infrastructure_ScanGameDayKeyPath = function(l_1_0)
   -- function num : 0_0
-  do return (string.sub)(l_1_0, 1, (string.len)(l_1_1)) == l_1_1 end
-  -- DECOMPILER ERROR: 1 unprocessed JMP targets
-end
-
-if (mp.get_mpattribute)("SCRIPT:Worm:JS/Bondat.A!lnk") then
-  if (mp.readu_u32)(headerpage, 1) ~= 76 then
-    return mp.CLEAN
-  end
-  local l_0_0 = (string.lower)(tostring(headerpage))
-  local l_0_1 = (string.match)(l_0_0, "\\appdata\\roaming\\%w+\\(%w+%.exe)%z")
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC46: No list found for R2 , SetList fails
-
-  local l_0_3 = {}
-  -- DECOMPILER ERROR at PC48: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC49: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC50: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC51: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R8 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC53: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC54: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC55: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC56: Overwrote pending register: R12 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC57: No list found for R3 , SetList fails
-
-  local l_0_4 = {}
-  -- DECOMPILER ERROR at PC59: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC60: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC61: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC62: No list found for R4 , SetList fails
-
-  -- DECOMPILER ERROR at PC63: Overwrote pending register: R5 in 'AssignReg'
-
-  local l_0_5 = "disk"
-  -- DECOMPILER ERROR at PC64: Overwrote pending register: R6 in 'AssignReg'
-
-  local l_0_6 = "dsk"
-  -- DECOMPILER ERROR at PC65: Overwrote pending register: R7 in 'AssignReg'
-
-  local l_0_7 = "ms"
-  -- DECOMPILER ERROR at PC66: Overwrote pending register: R8 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC67: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R10 in 'AssignReg'
-
-  for l_0_11 = "hp", "intel", "amd" do
-    -- DECOMPILER ERROR at PC70: Overwrote pending register: R12 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC71: Overwrote pending register: R13 in 'AssignReg'
-
-    if ("tcp")("udp", l_0_2[l_0_11]) then
-      for l_0_15 = 1, l_0_6 do
-        if string_starts((string.sub)(l_0_1, (string.len)(l_0_2[l_0_11]) + 1), l_0_3[l_0_15]) then
-          for l_0_19 = 1, l_0_7 do
-            if (string.sub)(l_0_1, (string.len)(l_0_2[l_0_11]) + (string.len)(l_0_3[l_0_15]) + 1) == l_0_4[l_0_19] then
-              local l_0_20 = (string.lower)((mp.getfilename)())
-              if (string.find)(l_0_20, "windows explorer%.lnk") then
-                return mp.INFECTED
-              end
-              return mp.LOWFI
-            end
+  local l_1_1 = (sysio.RegOpenKey)(l_1_0)
+  local l_1_2 = 0
+  if l_1_1 then
+    local l_1_3 = (sysio.RegEnumKeys)(l_1_1)
+    for l_1_7,l_1_8 in pairs(l_1_3) do
+      if l_1_8 then
+        local l_1_9 = (sysio.RegOpenKey)(l_1_0 .. "\\\\" .. l_1_8)
+        if l_1_9 then
+          local l_1_10 = (sysio.GetRegValueAsDword)(l_1_9, "12000030")
+          if l_1_10 and (mp.bitand)(l_1_10, 255) ~= 0 and (mp.bitand)(l_1_10, 16711680) ~= 0 and (mp.bitand)(l_1_10, 4278255360) == 0 then
+            (MpCommon.SetGlobalMpAttribute)("GameDayRegKey")
+            ;
+            (MpDetection.ScanResource)("regkeyvalue://" .. l_1_0 .. "\\" .. l_1_8 .. "\\\\12000030")
+            ;
+            (MpCommon.DeleteGlobalMpAttribute)("GameDayRegKey")
           end
+        end
+      end
+      do
+        do
+          l_1_2 = l_1_2 + 1
+          if l_1_2 == 50 then
+            SetLuaInstrLimit((crypto.shl64)(1, 24))
+            l_1_2 = 0
+          end
+          -- DECOMPILER ERROR at PC82: LeaveBlock: unexpected jumping out DO_STMT
+
         end
       end
     end
   end
-  return mp.LOWFI
 end
-do
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+
+Infrastructure_ScanGameDay = function()
+  -- function num : 0_1
+  Infrastructure_ScanGameDayKeyPath("HKLM\\BCD00000000\\Objects")
+  SetLuaInstrLimit((crypto.shl64)(1, 24))
+  local l_2_0 = (sysio.RegExpandUserKey)("HKCU\\BCD00000000\\Objects")
+  local l_2_1 = 0
+  for l_2_5,l_2_6 in pairs(l_2_0) do
+    Infrastructure_ScanGameDayKeyPath(l_2_6)
+    l_2_1 = l_2_1 + 1
+    if l_2_1 == 8 then
+      break
+    end
+  end
+  do
+    SetLuaInstrLimit((crypto.shl64)(1, 24))
+  end
 end
+
 

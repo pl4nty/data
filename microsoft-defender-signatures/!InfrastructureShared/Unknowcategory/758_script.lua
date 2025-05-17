@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Active then
-  (Remediation.ResetBcdWmiParameter)(Remediation.BCD_INTEGER_BOOT_STATUS_POLICY, 0)
-  ;
-  (Remediation.ResetBcdWmiParameter)(Remediation.BCD_BOOLEAN_AUTORECOVERY_ENABLED, true)
-  ;
-  (Remediation.ResetBcdWmiParameter)(Remediation.BCD_BOOLEAN_EMS_ENABLED, true)
+do
+  if (mp.get_mpattribute)("Exploit:Win32/RockCandy.B!Lowfi.1") then
+    local l_0_0 = (mp.getfilename)()
+    if (string.find)(l_0_0, "Control.TaskSymbol.1") ~= nil then
+      return mp.LOWFI
+    end
+  end
+  return mp.CLEAN
 end
 

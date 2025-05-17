@@ -3,30 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (l_0_6.reason_ex == bm.RELATIONSHIP_CREATED or l_0_6.reason_ex == bm.RELATIONSHIP_INJECTION) and (sysio.IsFileExists)(l_0_7) then
-        (bm.add_related_file)(l_0_7)
-      end
-    end
-  end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if (string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\frontend\\") ~= nil or (string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\clientaccess\\") ~= nil or (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\v%d%d\\template\\layouts\\") ~= nil or (string.find)(l_0_0, "\\frontend\\httpproxy\\owa\\", 1, true) ~= nil or (string.find)(l_0_0, "\\inetpub\\wwwroot\\", 1, true) ~= nil then
+  return mp.INFECTED
 end
-do
-  if l_0_1 ~= nil then
-    for l_0_11,l_0_12 in ipairs(l_0_1) do
-      if l_0_12.image_path ~= nil then
-        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
-        if (sysio.IsFileExists)(l_0_13) and (mp.IsKnownFriendlyFile)(l_0_13, true, false) then
-          (bm.add_related_file)(l_0_13)
-        end
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
-end
+return mp.CLEAN
 

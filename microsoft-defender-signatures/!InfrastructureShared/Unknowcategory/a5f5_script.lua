@@ -3,62 +3,32 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-  else
+if not (mp.IsHipsRuleEnabled)("3b576869-a4ec-4529-8536-b80a7769e899") then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = nil, nil
+if (this_sigattrlog[1]).matched then
+  if (this_sigattrlog[1]).wp2 == nil or (this_sigattrlog[1]).wp2 == "" then
+    return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-      local l_0_1 = (this_sigattrlog[2]).utf8p2
-    else
-    end
-    -- DECOMPILER ERROR at PC43: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
-        local l_0_2 = (this_sigattrlog[4]).utf8p2
-      else
-      end
-      -- DECOMPILER ERROR at PC61: Overwrote pending register: R0 in 'AssignReg'
-
-      do
-        if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
-          local l_0_3 = (this_sigattrlog[6]).utf8p2
-        else
-        end
-        -- DECOMPILER ERROR at PC79: Overwrote pending register: R0 in 'AssignReg'
-
-        do
-          if not (this_sigattrlog[8]).matched or (this_sigattrlog[9]).matched then
-            local l_0_4, l_0_5 = (this_sigattrlog[8]).utf8p2
-          end
-          -- DECOMPILER ERROR at PC80: Confused about usage of register: R0 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC84: Confused about usage of register: R0 in 'UnsetPending'
-
-          if l_0_4 ~= nil then
-            local l_0_6 = nil
-            for l_0_10,l_0_11 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
-              local l_0_7 = nil
-              -- DECOMPILER ERROR at PC92: Confused about usage of register: R6 in 'UnsetPending'
-
-              R6_PC92 = (mp.ContextualExpandEnvironmentVariables)(R6_PC92)
-              if (sysio.IsFileExists)(R6_PC92) then
-                (bm.add_related_file)(R6_PC92)
-              end
-            end
-          end
-          do
-            return mp.INFECTED
-          end
-        end
-      end
-    end
+  l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
+  if l_0_0 == nil or l_0_0 == "" then
+    return mp.CLEAN
+  end
+  if not (MpCommon.QueryPersistContext)(l_0_0, "DroppedByOfficeProc") then
+    return mp.CLEAN
+  end
+  if (this_sigattrlog[1]).wp1 == nil or (this_sigattrlog[1]).wp1 == "" then
+    return mp.CLEAN
+  end
+  l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1)
+  if l_0_1 == nil or l_0_1 == "" then
+    return mp.CLEAN
+  end
+  if not (MpCommon.QueryPersistContext)(l_0_1, "DroppedByOfficeProc") then
+    (MpCommon.AppendPersistContext)(l_0_1, "DroppedByOfficeProc", 0)
+    return mp.INFECTED
   end
 end
+return mp.CLEAN
 

@@ -3,18 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "IÅ˘", 1, true)
-do
-  if l_0_1 == nil then
-    local l_0_0 = 7
-    l_0_0 = 4
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["winword.exe"] = true
+  l_0_3["excel.exe"] = true
+  l_0_3["powerpnt.exe"] = true
+  l_0_3["outlook.exe"] = true
+  if l_0_3[l_0_2] then
+    return mp.INFECTED
   end
-  -- DECOMPILER ERROR at PC29: Overwrote pending register: R0 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
-
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + l_0_0, "êê")
-  return mp.INFECTED
+end
+do
+  return mp.CLEAN
 end
 

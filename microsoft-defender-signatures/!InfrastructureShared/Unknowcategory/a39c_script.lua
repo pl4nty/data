@@ -4,18 +4,14 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (string.lower)((bm.get_imagepath)())
-do
-  if l_0_0 and (MpCommon.GetPersistContextCountNoPath)("OfficeWmiProc") > 0 then
-    local l_0_1 = (MpCommon.GetPersistContextNoPath)("OfficeWmiProc")
-    if (string.find)(l_0_0, "wmiprvse.exe", 1, true) then
-      for l_0_5,l_0_6 in ipairs(l_0_1) do
-        if (sysio.IsFileExists)(l_0_6) then
-          (bm.add_related_file)(l_0_6)
-        end
-      end
-      return mp.INFECTED
-    end
-  end
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
+if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpcmdrun.exe", 1, true) then
+  return mp.CLEAN
+end
+if (bm.GetSignatureMatchDuration)() < 40000000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)(((pe.get_versioninfo)()).ProductName) == "zoomify plug-in for internet explorer" then
+if peattributes.ismsil == true and peattributes.nx_bit_set == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
   return mp.INFECTED
 end
 return mp.CLEAN

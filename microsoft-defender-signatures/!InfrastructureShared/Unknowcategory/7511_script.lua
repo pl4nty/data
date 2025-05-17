@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)((string.sub)(l_0_0, -11))
-  if l_0_0 == "winword.exe" then
-    return mp.INFECTED
-  end
+if peattributes.ismsil == true and peattributes.nx_bit_set == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

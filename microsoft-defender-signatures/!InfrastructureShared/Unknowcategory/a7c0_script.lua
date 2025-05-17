@@ -3,72 +3,73 @@
 
 -- params : ...
 -- function num : 0
-bytes_to_int = function(l_1_0, l_1_1, l_1_2, l_1_3)
-  -- function num : 0_0
-  if not l_1_3 then
-    error("need four bytes to convert to int", 2)
-  end
-  return l_1_0 + l_1_1 * 256 + l_1_2 * 65536 + l_1_3 * 16777216
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+  return mp.CLEAN
 end
-
-pointer2int = function(l_2_0, l_2_1)
-  -- function num : 0_1
-  local l_2_2 = (string.byte)(l_2_0, l_2_1)
-  local l_2_3 = (string.byte)(l_2_0, l_2_1 + 1)
-  local l_2_4 = (string.byte)(l_2_0, l_2_1 + 2)
-  local l_2_5 = (string.byte)(l_2_0, l_2_1 + 3)
-  return bytes_to_int(l_2_2, l_2_3, l_2_4, l_2_5)
+if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
+  return mp.CLEAN
 end
-
-decryptSub = function(l_3_0)
-  -- function num : 0_2
-  l_3_0 = (string.gsub)(l_3_0, "@", "")
-  l_3_0 = (string.gsub)(l_3_0, "!", "")
-  l_3_0 = (string.gsub)(l_3_0, "*", "")
-  l_3_0 = (string.gsub)(l_3_0, "#", "")
-  l_3_0 = (string.gsub)(l_3_0, "%^", "")
-  l_3_0 = (string.gsub)(l_3_0, "~", "")
-  l_3_0 = (string.gsub)(l_3_0, "+", "")
-  l_3_0 = (string.gsub)(l_3_0, "%[", "")
-  l_3_0 = (string.gsub)(l_3_0, "]", "")
-  l_3_0 = (string.gsub)(l_3_0, "%%", "")
-  return l_3_0
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1800000 or l_0_0 < 4000 then
+  return mp.CLEAN
 end
-
-;
-(mp.readprotection)(false)
-if (hstrlog[1]).matched and peattributes.isdll and peattributes.hasexports then
-  local l_0_0 = (hstrlog[1]).VA
-  local l_0_1 = (pe.mmap_va)(l_0_0 + 7, 5)
-  local l_0_2 = pointer2int(l_0_1, 1)
-  local l_0_3 = (pe.mmap_va)(l_0_2, 97)
-  if (string.match)(l_0_3, "Sistema indispon") ~= nil then
-    return mp.CLEAN
-  end
-  l_0_3 = (string.gsub)(l_0_3, "@", "")
-  l_0_3 = (string.gsub)(l_0_3, "!", "")
-  l_0_3 = (string.gsub)(l_0_3, "*", "")
-  l_0_3 = (string.gsub)(l_0_3, "#", "")
-  if (string.match)(l_0_3, "Sistema indispon") ~= nil and (string.match)(l_0_3, "vel no momento.") ~= nil then
-    return mp.INFECTED
-  end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-do
-  if (hstrlog[4]).matched then
-    local l_0_4 = (hstrlog[4]).VA
-    local l_0_5 = (pe.mmap_va)(l_0_4 + 10, 5)
-    local l_0_6 = pointer2int(l_0_5, 1)
-    local l_0_7 = (pe.mmap_va)(l_0_6, 120)
-    if (string.match)(l_0_7, "Este navegador não possui o nível de segurança exigido pel") ~= nil then
-      return mp.CLEAN
-    end
-    local l_0_8 = decryptSub(l_0_7)
-    if (string.match)(l_0_8, "Este navegador não possui o nível de segurança exigido pel") ~= nil then
-      return mp.INFECTED
-    end
-  end
-  do
-    return mp.CLEAN
-  end
+if (mp.get_mpattribute)("pea_ismsil") then
+  return mp.CLEAN
 end
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.enum_mpattributesubstring)("Exploit:")
+if #l_0_1 > 0 then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.enum_mpattributesubstring)("TEL:Exploit:")
+if #l_0_2 > 0 then
+  return mp.CLEAN
+end
+local l_0_3 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
+if l_0_3:find("\\immunity", 1, true) or l_0_3:find("\\canvas", 1, true) then
+  (mp.set_mpattribute)("HSTR:ImmunityCanvasFile")
+  return mp.CLEAN
+end
+if l_0_3:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("system32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("\\matlab\\", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("picus", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("syswow64", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("\\cylance", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("libclang", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("introum_steal_token", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("metasploit", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("softwaredistribution", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("\\protector32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_3:find("\\unrealeditor", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

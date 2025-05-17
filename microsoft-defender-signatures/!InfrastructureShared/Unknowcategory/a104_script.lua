@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1048576 then
-  return mp.CLEAN
-end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if (hstrlog[14]).matched or (hstrlog[15]).matched then
+  (mp.changedetectionname)(805306447)
+else
+  if (hstrlog[16]).matched then
+    (mp.changedetectionname)(805306448)
+  else
+    if (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched then
+      (mp.changedetectionname)(805306432)
+    end
+  end
 end
 return mp.INFECTED
 

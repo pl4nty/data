@@ -3,32 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_2 = l_0_0.match_offset + 17
-if l_0_0._is_footer then
-  l_0_2 = (mp.getfilesize)() - mp.FOOTERPAGE_SZ + l_0_2
-  local l_0_1 = nil
+if not (mp.get_mpattribute)("InEmail") then
+  return mp.CLEAN
+end
+if mp.HEADERPAGE_SZ < 11 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 11 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 12)
+if l_0_1 == nil then
+  return mp.CLEAN
 end
 do
-  ;
-  (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R2 in 'UnsetPending'
-
-  local l_0_3 = nil
-  ;
-  (mp.readprotection)(true)
-  if l_0_2 ~= nil then
-    for l_0_7 in (string.find)((mp.readfile)(l_0_2, l_0_1 - (l_0_2)), "[%w+/]+=?=?") do
-      local l_0_4 = nil
-      -- DECOMPILER ERROR at PC36: Confused about usage of register: R7 in 'UnsetPending'
-
-      if R7_PC36 ~= nil and R7_PC36 ~= "" then
-        (mp.vfo_add_buffer)("CWSHACK\000" .. (MpCommon.Base64Decode)(R7_PC36), "[PyMacZlib]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-      end
+  if (string.find)(l_0_1, "по\017Ю║\177\026\225\000\000\000", 1, true) ~= nil or (string.find)(l_0_1, "PK\003\004\020\000\006\000", 1, true) ~= nil then
+    local l_0_2 = (mp.BMSearchFile)(0, l_0_0, "V\000B\000A\000_\000P\000R\000O\000J\000E\000C\000T\000\144\000")
+    if l_0_2 and l_0_2 >= 0 and l_0_2 < l_0_0 then
+      return mp.INFECTED
     end
   end
-  do
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
 

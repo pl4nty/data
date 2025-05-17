@@ -3,23 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = Remediation.Threat
-if l_0_0.Active and (string.match)(l_0_0.Name, "Backdoor:Win32/Tofsee") then
-  local l_0_1 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
-  for l_0_5,l_0_6 in pairs(l_0_1) do
-    local l_0_7 = "msconfig"
-    local l_0_8 = (sysio.RegOpenKey)(l_0_6)
-    if l_0_8 ~= nil then
-      local l_0_9 = (sysio.GetRegValueAsString)(l_0_8, l_0_7)
-      if l_0_9 ~= nil and (string.match)(l_0_9, "\\%l%l%l%l%l%l%l%l.exe") then
-        (sysio.DeleteRegValue)(l_0_8, l_0_7)
-        if (string.byte)(l_0_9) == 34 then
-          l_0_9 = (string.sub)(l_0_9, 2, -2)
-        end
-        ;
-        (sysio.DeleteFile)(l_0_9)
-      end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if l_0_1 == "passwords.lnk" or l_0_1 == "..lnk" then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if (string.len)(l_0_2) < 4 or (string.len)(l_0_2) > 11 then
+      return mp.CLEAN
+    end
+    local l_0_3 = (string.sub)(l_0_2, -4)
+    if l_0_3 == ".exe" and (mp.getfilesize)() < 512 then
+      (mp.set_mpattribute)("Lua:DropSuspiciousLnkFiles")
     end
   end
+end
+do
+  return mp.CLEAN
 end
 

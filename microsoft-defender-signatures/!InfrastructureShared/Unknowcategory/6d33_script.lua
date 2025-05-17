@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 27, "ÇD$\016\016\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 96, "")
-return mp.INFECTED
+if peattributes.ismsil == true and peattributes.isdll == false and (mp.getfilesize)() < 5048000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

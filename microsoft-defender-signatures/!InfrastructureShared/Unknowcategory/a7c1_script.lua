@@ -3,101 +3,68 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections < pevars.epsec then
+local l_0_0 = pevars.sigaddr + 56
+local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "j@h\000\016\000\000h\144\001\004j\000\144\019¡\001\004\139\016\137\021\144\001\004\255%\144\000", nil, pe.VM_SEARCH_BM)
+if l_0_1 == 4294967295 then
   return mp.CLEAN
 end
-if (pesecs[pevars.epsec]).SizeOfRawData > 26112 then
+local l_0_2 = 9
+local l_0_3 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "°\144\001\004\139\029\144\001\004ë\144\001\004\144\003\003\000\144\001\t\144\004\001\002ëé\144\000", nil, pe.VM_SEARCH_BM)
+if l_0_3 == 4294967295 then
   return mp.CLEAN
 end
-if (pesecs[pevars.epsec]).SizeOfRawData < 20480 then
+local l_0_4 = (pe.vm_search)(l_0_3 - 46, l_0_3, "1Òƒ\192\001¹\001\004\137\001¡\000", nil, pe.VM_SEARCH_BM)
+if l_0_4 == 4294967295 then
   return mp.CLEAN
 end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
+if (pe.vm_search)(l_0_4 - 52, l_0_4, "9\b\015…\001\004¸\001\004\255\a9\a\015…\000", nil, pe.VM_SEARCH_BM) == 4294967295 then
+  l_0_2 = 5
+  local l_0_5 = (pe.vm_search)(l_0_4 - 44, l_0_4, "9\bu\144\001\001¸\001\004\255\a9\au\144\000", nil, pe.VM_SEARCH_BM)
+  if l_0_5 == 4294967295 then
+    return mp.CLEAN
+  end
 end
-if (pesecs[1]).Characteristics ~= 1610612768 then
-  return mp.CLEAN
+do
+  local l_0_6 = nil
+  if (mp.readu_u16)((pe.mmap_va)(l_0_3 + 17, 9), 1) == 15747 and (string.byte)((pe.mmap_va)(l_0_3 + 17, 9), 8) == 124 then
+    (pe.mmap_patch_va)(l_0_3 + 25, "\000")
+  end
+  local l_0_7 = nil
+  local l_0_8 = nil
+  ;
+  (pe.set_regval)(pe.REG_EAX, (mp.readu_u32)((pe.mmap_va)(l_0_6 + l_0_2, 4), 1))
+  local l_0_9 = nil
+  local l_0_10 = nil
+  local l_0_11, l_0_12, l_0_13, l_0_14 = , (mp.bsplit)(l_0_3 - (pevars.sigaddr + 6) - 5, 8)
+  ;
+  (pe.mmap_patch_va)(l_0_10, "\233")
+  ;
+  (pe.mmap_patch_va)(l_0_10 + 1, (string.char)(l_0_12))
+  ;
+  (pe.mmap_patch_va)(l_0_10 + 2, (string.char)(l_0_13))
+  ;
+  (pe.mmap_patch_va)(l_0_10 + 3, (string.char)(l_0_14))
+  ;
+  (pe.mmap_patch_va)(l_0_10 + 4, (string.char)(R18_PC158))
+  local l_0_15 = nil
+  if (mp.readu_u16)((pe.mmap_va)(l_0_1 + 27, 16), 1) == 15747 and (mp.readu_u16)((pe.mmap_va)(l_0_1 + 27, 16), 8) == 35855 then
+    (pe.mmap_patch_va)(l_0_1 + 34, "\000\000\000\000")
+  end
+  local l_0_16 = nil
+  if (pe.vm_search)(l_0_6, l_0_3, "\139\021\144\001\004ƒú\144\001\001\015Œ\000", nil, pe.VM_SEARCH_BM) ~= 4294967295 then
+    local l_0_17 = nil
+    local l_0_18 = nil
+    local l_0_19 = (mp.readu_u32)((pe.mmap_va)((pe.vm_search)(l_0_6, l_0_3, "\139\021\144\001\004ƒú\144\001\001\015Œ\000", nil, pe.VM_SEARCH_BM) + 2, 7), 1)
+    if (pe.foffset_va)(l_0_19) == 4294967295 then
+      return mp.INFECTED
+    end
+    ;
+    (pe.mmap_patch_va)(l_0_19, (string.char)((string.byte)(l_0_18, 7)))
+    ;
+    (pe.mmap_patch_va)(l_0_19 + 1, "\000\000\000")
+  end
+  do
+    return mp.INFECTED
+  end
 end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1818587694 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[13]).Size < 232 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[13]).Size > 248 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size ~= 40 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 5 then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry ~= true then
-  return mp.CLEAN
-end
-if peattributes.lastscn_falign ~= true then
-  return mp.CLEAN
-end
-if peattributes.no_decription ~= true then
-  return mp.CLEAN
-end
-if peattributes.no_tls ~= true then
-  return mp.CLEAN
-end
-if pehdr.ImageBase ~= 268435456 then
-  return mp.CLEAN
-end
-if pehdr.Win32VersionValue ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.MajorOperatingSystemVersion ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.MinorOperatingSystemVersion ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.LoaderFlags ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[11]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[11]).Size ~= 64 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).Size < 1600 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 21) < 1 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 21) > 2 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) > 2 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) < 1 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

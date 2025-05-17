@@ -3,38 +3,31 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
   end
-  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
 
-  if not (this_sigattrlog[3]).matched or (string.lower)((this_sigattrlog[3]).utf8p1) ~= nil then
-    local l_0_4 = nil
-    local l_0_5 = (string.sub)((string.lower)((this_sigattrlog[3]).utf8p1), -4)
-    if (string.find)("|.asp|aspx|ashx|asmx|", l_0_5, 1, true) then
-      do
-        do
-          if (sysio.IsFileExists)(l_0_4) then
-            local l_0_6 = nil
-            if (string.match)(l_0_4, "(.*\\)[^\\]+$") then
-              (bm.trigger_sig)("TriggerShellPath", (string.match)(l_0_4, "(.*\\)[^\\]+$"))
-            end
-            ;
-            (mp.ReportLowfi)(l_0_4, 3496458548)
-            ;
-            (bm.add_related_file)(l_0_4)
-            ;
-            (bm.add_threat_file)(l_0_4)
-          end
-          do return mp.INFECTED end
-          return mp.CLEAN
-        end
+  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+
+    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasDatacloudmailUrl") then
+      (bm.add_related_file)(R7_PC42)
+      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromDatacloudmail") then
+        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromDatacloudmail", 3600)
+        return mp.INFECTED
       end
     end
   end
+  return mp.CLEAN
 end
 

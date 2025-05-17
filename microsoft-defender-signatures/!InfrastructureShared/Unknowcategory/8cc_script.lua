@@ -3,21 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 103000 or l_0_0 > 113000 then
+if (mp.ispackedwith)("AutoIt_+") and peattributes.epscn_writable and peattributes.lastscn_writable and pehdr.NumberOfSections == 4 and (pesecs[3]).SizeOfRawData > 262144 then
+  local l_0_0 = (pesecs[3]).PointerToRawData + 20480
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)(l_0_0, 16)
+  if l_0_1 == "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" then
+    if (mp.getfilesize)() >= 4194304 then
+      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
+    end
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if mp.HEADERPAGE_SZ < 10 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(headerpage, 1) ~= 0 or (mp.readu_u32)(headerpage, 5) ~= 0 or (mp.readu_u16)(headerpage, 9) ~= 0 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(l_0_0 - 8000, 4000)
-if (string.find)(l_0_1, "IsInfectedRun\000IsPassKavSucess\000IsPassSucess1\000IsPassSucess2\000IsRuninUAC", 1, true) ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

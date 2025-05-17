@@ -3,20 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (((this_sigattrlog[1]).utf8p1):lower()):match("\\amsi\\providers\\({%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x})")
-local l_0_1 = ((this_sigattrlog[2]).utf8p1):lower()
-local l_0_2 = ((this_sigattrlog[2]).utf8p2):lower()
-do
-  if l_0_0 ~= nil and l_0_1 ~= nil and l_0_2 ~= nil and l_0_1:find(l_0_0, 1, true) then
-    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_2)
-    for l_0_7,l_0_8 in ipairs(l_0_3) do
-      l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_8)
-      if (sysio.IsFileExists)(l_0_8) then
-        (bm.add_related_file)(l_0_8)
-      end
-    end
-    return mp.INFECTED
-  end
+if peattributes.hasexports == true then
   return mp.CLEAN
 end
+if peattributes.isdll ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 6 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914752 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 233 then
+  return mp.CLEAN
+end
+if epcode[4] ~= 255 then
+  return mp.CLEAN
+end
+if epcode[5] ~= 255 then
+  return mp.CLEAN
+end
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

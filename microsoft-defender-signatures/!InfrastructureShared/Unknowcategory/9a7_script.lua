@@ -3,42 +3,48 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("SCRIPT:SuspClickfix.A") then
+if peattributes.no_security == false then
   return mp.CLEAN
 end
 local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 512 then
+if l_0_0 < 10000 and l_0_0 > 30000 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetBruteMatchData)()
-local l_0_2 = ""
-if l_0_1.is_header then
-  l_0_2 = tostring(headerpage)
-else
-  l_0_2 = tostring(footerpage)
+local l_0_1 = (string.lower)((mp.getfilename)())
+local l_0_2 = (string.sub)(l_0_1, -4)
+if l_0_2 == ".exe" then
+  return mp.CLEAN
 end
-l_0_2 = (string.lower)(l_0_2)
-l_0_2 = (string.gsub)(l_0_2, "%z", "")
-l_0_2 = (string.gsub)(l_0_2, " ", "")
-l_0_2 = (string.gsub)(l_0_2, "\'%+\'", "")
-l_0_2 = (string.gsub)(l_0_2, "\'", "")
-local l_0_3 = false
-local l_0_4 = false
-local l_0_5 = false
-if (string.find)(l_0_2, "http", 1, true) or (string.find)(l_0_2, "ptth", 1, true) then
-  l_0_3 = true
+if peattributes.isdll ~= false then
+  return mp.CLEAN
 end
-if (string.find)(l_0_2, "iwr", 1, true) or (string.find)(l_0_2, "irm", 1, true) or (string.find)(l_0_2, "invoke-webrequest", 1, true) or (string.find)(l_0_2, "invoke-restmethod", 1, true) then
-  l_0_4 = true
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
 end
-if (string.find)(l_0_2, ").invoke()", 1, true) or (string.find)(l_0_2, ";&$", 1, true) or (string.find)(l_0_2, "&([scriptblock", 1, true) or (string.find)(l_0_2, ";&(", 1, true) then
-  l_0_5 = true
+if pehdr.Characteristics ~= 258 then
+  return mp.CLEAN
 end
-if l_0_3 and l_0_4 and l_0_5 then
-  return mp.INFECTED
+local l_0_3 = (pe.get_versioninfo)()
+if l_0_3.InternalName ~= "ping.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(mp.readprotection)(false)
+if (mp.readu_u32)(2048, 1) == 0 or (mp.readu_u32)(2052, 1) == 0 or (mp.readu_u32)(2056, 1) == 0 or (mp.readu_u32)(2060, 1) == 0 or (mp.readu_u32)(2064, 1) == 0 then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.readfile)(2048, 512)
+if (string.find)(l_0_4, "лллл\204", 1, true) ~= nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_4, "hN\'\000\000", 1, true) ~= nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_4, "h\017\'\000\000j\001", 1, true) ~= nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_4, "hB\'\000\000j\001\232", 1, true) ~= nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.UfsSetMetadataBool)("PSScriptWithServiceStopCommand", true)
-return mp.INFECTED
+if peattributes.reads_vdll_code then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

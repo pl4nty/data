@@ -3,27 +3,30 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("InEmail") then
-  return mp.CLEAN
-end
-if mp.HEADERPAGE_SZ < 11 then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 11 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readheader)(0, 12)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (string.find)(l_0_1, "по\017Ю║\177\026\225\000\000\000", 1, true) ~= nil or (string.find)(l_0_1, "PK\003\004\020\000\006\000", 1, true) ~= nil then
-    local l_0_2 = (mp.BMSearchFile)(0, l_0_0, "V\000B\000A\000_\000P\000R\000O\000J\000E\000C\000T\000\144\000")
-    if l_0_2 and l_0_2 >= 0 and l_0_2 < l_0_0 then
-      return mp.INFECTED
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[1]).utf8p2)) do
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC40: Overwrote pending register: R7 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC43: Confused about usage of register: R7 in 'UnsetPending'
+
+      if (l_0_10:len() <= 12 or nil ~= "rundll32.exe") and nil ~= "regsvr32.exe" and (sysio.IsFileExists)(l_0_10) then
+        (bm.add_related_file)(l_0_10)
+      end
     end
   end
-  return mp.CLEAN
+  do
+    return mp.INFECTED
+  end
 end
 

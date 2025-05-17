@@ -3,14 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 then
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if (string.len)(l_0_0) < 4096 then
+    return mp.CLEAN
+  end
+  if (MpCommon.GetPersistContextCountNoPath)("Lua:MalPsSmsScanAmsi") > 0 then
+    local l_0_1 = (bm.get_current_process_startup_info)()
+    local l_0_2 = (MpCommon.GetPersistContextNoPath)("Lua:MalPsSmsScanAmsi")
+    if l_0_2 then
+      for l_0_6,l_0_7 in ipairs(l_0_2) do
+        if l_0_7 == l_0_1.ppid then
+          return mp.INFECTED
+        end
+      end
+    end
+  end
+  do
+    do
+      l_0_1 = mp
+      l_0_1 = l_0_1.CLEAN
+      do return l_0_1 end
+      l_0_0 = mp
+      l_0_0 = l_0_0.CLEAN
+      return l_0_0
+    end
+  end
 end
-if (hstrlog[9]).hitcount == 0 and (hstrlog[10]).hitcount == 0 and (hstrlog[11]).hitcount == 0 and (hstrlog[12]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[13]).hitcount == 0 and (hstrlog[14]).hitcount == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

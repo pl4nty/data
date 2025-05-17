@@ -3,135 +3,107 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetCertificateInfo)()
-if l_0_0 == nil or #l_0_0 == 0 then
-  if (string.find)((mp.getfilename)(), "->") == nil then
-    (mp.set_mpattribute)("Lua:TopLevelUnsigned")
-  end
-  return mp.CLEAN
-end
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  if l_0_5.AuthenticodeContentType ~= "PE" then
-    return mp.CLEAN
-  end
-  local l_0_6 = l_0_5.Certificates
-  if l_0_6 ~= nil then
-    for l_0_10,l_0_11 in ipairs(l_0_6) do
-      local l_0_12 = "20160501"
-      local l_0_13 = l_0_11.ValidFrom
-      if l_0_13 ~= nil then
-        local l_0_14 = l_0_13.Year
-        if (string.len)(l_0_13.Month) < 2 then
-          l_0_14 = l_0_14 .. "0"
-        end
-        l_0_14 = l_0_14 .. l_0_13.Month
-        if (string.len)(l_0_13.Day) < 2 then
-          l_0_14 = l_0_14 .. "0"
-        end
-        l_0_14 = l_0_14 .. l_0_13.Day
-        if l_0_12 < l_0_14 then
-          local l_0_15 = false
-          local l_0_16 = l_0_11.Issuer
-          if l_0_16 ~= nil and l_0_16.Organization ~= nil and (mp.utf16to8)(l_0_16.Organization) == "Microsoft Corporation" then
-            l_0_15 = true
+CompareRegValueAndRemove = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  local l_1_2 = ((sysio.RegOpenKey)(l_1_0))
+  local l_1_3 = nil
+  if l_1_2 then
+    local l_1_4 = (sysio.RegEnumValues)(l_1_2)
+    for l_1_8,l_1_9 in pairs(l_1_4) do
+      if l_1_9 then
+        l_1_3 = (sysio.GetRegValueAsString)(l_1_2, l_1_9)
+        if l_1_3 then
+          l_1_3 = (string.lower)(l_1_3)
+          if (string.find)(l_1_3, l_1_1, 1, true) then
+            (sysio.DeleteRegValue)(l_1_2, l_1_9)
+            return true
           end
-          if not l_0_15 then
-            (mp.set_mpattribute)("Lua:CertValidFromRecent")
-            local l_0_17 = l_0_11.Subject
-            do
-              do
-                if l_0_17 ~= nil and l_0_17.Country ~= nil and (string.len)(l_0_17.Country) < 20 then
-                  local l_0_18 = (mp.utf16to8)(l_0_17.Country)
-                  if l_0_18 ~= nil then
-                    (mp.set_mpattribute)("Lua:CertValidFromRecentCountry" .. l_0_18)
+        end
+      end
+    end
+  end
+  do
+    l_1_4 = false
+    return l_1_4
+  end
+end
+
+if (Remediation.Threat).Active then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_0 = (sysio.RegOpenKey)("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
+  if l_0_0 then
+    l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "cryptolocker")
+    if l_0_1 ~= nil then
+      (sysio.DeleteRegValue)(l_0_0, "cryptolocker")
+    end
+  end
+  l_0_0 = (sysio.RegOpenKey)("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce")
+  if l_0_0 then
+    l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "*cryptolocker")
+    if l_0_1 ~= nil then
+      (sysio.DeleteRegValue)(l_0_0, "*cryptolocker")
+    end
+  end
+  local l_0_2 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
+  for l_0_6,l_0_7 in pairs(l_0_2) do
+    l_0_0 = (sysio.RegOpenKey)(l_0_7)
+    if l_0_0 then
+      l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "cryptolocker")
+      if l_0_1 ~= nil then
+        (sysio.DeleteRegValue)(l_0_0, "cryptolocker")
+      end
+    end
+  end
+  local l_0_8 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce")
+  for l_0_12,l_0_13 in pairs(l_0_8) do
+    l_0_0 = (sysio.RegOpenKey)(l_0_13)
+    if l_0_0 then
+      l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "*cryptolocker")
+      if l_0_1 ~= nil then
+        (sysio.DeleteRegValue)(l_0_0, "*cryptolocker")
+      end
+    end
+  end
+  local l_0_14 = "HKCU\\SOFTWARE\\BIT TORRENT APPLICATION\\CONFIGURATION"
+  local l_0_15 = ((sysio.RegExpandUserKey)(l_0_14))
+  local l_0_16, l_0_17, l_0_18 = nil, nil, nil
+  for l_0_22,l_0_23 in pairs(l_0_15) do
+    l_0_16 = (sysio.RegOpenKey)(l_0_23)
+    if l_0_16 then
+      l_0_18 = (sysio.RegEnumValues)(l_0_16)
+      for l_0_27,l_0_28 in pairs(l_0_18) do
+        if l_0_28 then
+          l_0_17 = (sysio.GetRegValueAsString)(l_0_16, l_0_28)
+          if l_0_17 then
+            l_0_17 = (string.lower)(l_0_17)
+            if l_0_17 ~= nil and (string.find)(l_0_17, ".exe", 1, true) and ((string.find)(l_0_17, "\\windows\\", 1, true) or (string.find)(l_0_17, "\\programdata\\", 1, true)) then
+              if not CompareRegValueAndRemove("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run", l_0_17) then
+                for l_0_32,l_0_33 in pairs(l_0_2) do
+                  if CompareRegValueAndRemove(l_0_33, l_0_17) then
+                    break
                   end
                 end
-                do return mp.CLEAN end
-                local l_0_19 = l_0_11.ValidTo
-                if l_0_19 ~= nil and l_0_13 ~= nil then
-                  local l_0_20 = l_0_19.Year
-                  if (string.len)(l_0_19.Month) < 2 then
-                    l_0_20 = l_0_20 .. "0"
+              end
+              do
+                do
+                  if (sysio.IsFileExists)(l_0_17) then
+                    (MpCommon.ReportLowfi)(l_0_17, 1189452850)
                   end
-                  l_0_20 = l_0_20 .. l_0_19.Month
-                  if (string.len)(l_0_19.Day) < 2 then
-                    l_0_20 = l_0_20 .. "0"
-                  end
-                  l_0_20 = l_0_20 .. l_0_19.Day
-                  if l_0_20 < l_0_12 then
-                    local l_0_21 = false
-                    local l_0_22 = false
-                    local l_0_23 = l_0_11.Issuer
-                    if l_0_23 ~= nil then
-                      if l_0_23.Organization ~= nil and (mp.utf16to8)(l_0_23.Organization) == "Microsoft Corporation" then
-                        l_0_21 = true
-                      end
-                      if l_0_23.CommonName ~= nil and (mp.utf16to8)(l_0_23.CommonName) == "Unknown issuer" then
-                        l_0_22 = true
-                      end
-                    end
-                    local l_0_24 = false
-                    local l_0_25 = l_0_11.Subject
-                    do
-                      do
-                        if l_0_25 ~= nil and l_0_25.Organization ~= nil then
-                          local l_0_26 = {}
-                          l_0_26["Microsoft Corporation"] = true
-                          l_0_26["ROBLOX Corporation"] = true
-                          l_0_26["Adobe Systems Incorporated"] = true
-                          l_0_26["Dell USA L.P."] = true
-                          l_0_26["DigiCert Inc"] = true
-                          l_0_26.DigiCert = true
-                          l_0_26["VeriSign, Inc."] = true
-                          l_0_26["VeriSign Trust Network"] = true
-                          l_0_26["COMODO CA Limited"] = true
-                          l_0_26["Thawte Consulting (Pty) Ltd."] = true
-                          l_0_26["Symantec Corporation"] = true
-                          l_0_26["WIZVERA CO., LTD"] = true
-                          l_0_26["NCH Software"] = true
-                          l_0_26["win.rar GmbH"] = true
-                          l_0_26.Interezen = true
-                          l_0_26["Interezen Co.,Ltd"] = true
-                          l_0_26["Interezen Co,.Ltd"] = true
-                          l_0_26["Shenzhen Wondershare Information Technology Co., Ltd."] = true
-                          l_0_26["Reloaded Games, Inc"] = true
-                          if l_0_26[(mp.utf16to8)(l_0_25.Organization)] then
-                            l_0_24 = true
-                          end
-                        end
-                        if not l_0_21 and not l_0_24 and not l_0_22 then
-                          (mp.set_mpattribute)("Lua:CertValidToOld")
-                          return mp.CLEAN
-                        end
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out DO_STMT
+                  do break end
+                  -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out DO_STMT
 
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_STMT
 
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_STMT
 
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_STMT
 
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC224: LeaveBlock: unexpected jumping out IF_STMT
-
-                      end
-                    end
-                  end
                 end
               end
             end
@@ -141,7 +113,4 @@ for l_0_4,l_0_5 in ipairs(l_0_0) do
     end
   end
 end
-do return mp.CLEAN end
--- DECOMPILER ERROR at PC231: Confused about usage of register R1 for local variables in 'ReleaseLocals'
-
 

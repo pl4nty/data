@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 65536 and peattributes.no_security == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr, "\144")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "\144")
+return mp.INFECTED
 

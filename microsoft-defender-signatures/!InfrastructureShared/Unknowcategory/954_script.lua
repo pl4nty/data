@@ -3,37 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.hasappendeddata then
-  return mp.CLEAN
-end
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if peattributes.is_delphi or peattributes.ismsil then
-  return mp.CLEAN
-end
-if (mp.get_mpattributesubstring)("Win32/AutoIt") then
-  local l_0_0 = (mp.getfilesize)()
-  if l_0_0 < 716800 then
-    return mp.CLEAN
+if (Remediation.Threat).Active and (string.match)((Remediation.Threat).Name, "Behavior:Win32/Kuluoz.gen!A") then
+  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    local l_0_6 = (sysio.RegOpenKey)(l_0_5)
+    if l_0_6 then
+      local l_0_7 = (sysio.RegEnumValues)(l_0_6)
+      for l_0_11,l_0_12 in pairs(l_0_7) do
+        if l_0_12 and (string.match)(l_0_12, "^%l%l%l%l%l%l%l%l$") then
+          local l_0_13 = (sysio.GetRegValueAsString)(l_0_6, l_0_12)
+          if l_0_13 and ((string.match)((string.lower)(l_0_13), "\\appdata\\local\\%a%a%a%a%a%a%a%a%.exe\"$") or (string.match)((string.lower)(l_0_13), "\\local settings\\application data\\%a%a%a%a%a%a%a%a%.exe\"$")) then
+            l_0_13 = (string.gsub)(l_0_13, "\"", "")
+            ;
+            (sysio.DeleteRegValue)(l_0_6, l_0_12)
+            ;
+            (Remediation.BtrDeleteFile)(l_0_13)
+          end
+        end
+      end
+    end
   end
-  local l_0_1 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-  if l_0_0 - l_0_1 < 102400 then
-    return mp.CLEAN
-  end
-  ;
-  (mp.readprotection)(false)
-  local l_0_2 = (mp.readfile)(l_0_1, 24)
-  local l_0_3 = (mp.crc32)(-1, l_0_2, 1, 24)
-  if l_0_3 ~= 3828937513 then
-    return mp.CLEAN
-  end
-  l_0_2 = (mp.readfile)(l_0_1 + 16, l_0_0 - l_0_1 - 16)
-  ;
-  (mp.vfo_add_buffer)(l_0_2, "[EVIL]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-  return mp.INFECTED
-end
-do
-  return mp.CLEAN
 end
 

@@ -3,35 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+    local l_0_8 = (string.lower)(l_0_6.image_path)
+    if l_0_7 == 1 and ((string.find)(l_0_8, "\\excel.exe", 1, true) or (string.find)(l_0_8, "\\winword.exe", 1, true) or (string.find)(l_0_8, "\\eqnedt32.exe", 1, true) or (string.find)(l_0_8, "\\powerpnt.exe", 1, true) or (string.find)(l_0_8, "\\wscript.exe", 1, true) or (string.find)(l_0_8, "\\cscript.exe", 1, true)) then
+      return mp.INFECTED
+    end
+  end
 end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 6 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 139 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 237 then
-  return mp.CLEAN
-end
-if epcode[3] ~= 235 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

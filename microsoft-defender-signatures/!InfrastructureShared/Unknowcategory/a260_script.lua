@@ -3,21 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
-  do
-    if (mp.getfilesize)() < 47872 then
-      local l_0_0 = (mp.GetCertificateInfo)()
-      for l_0_4,l_0_5 in pairs(l_0_0) do
-        if l_0_5.Signers ~= nil then
-          return mp.CLEAN
-        end
+-- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[2]).matched or this_sigattrlog[2] ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC27: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC27 = (mp.ContextualExpandEnvironmentVariables)(R6_PC27)
+      if (sysio.IsFileExists)(R6_PC27) then
+        (bm.add_related_file)(R6_PC27)
       end
-      return mp.INFECTED
     end
-    if (mp.getfilesize)() >= 47872 and (mp.getfilesize)() < 57088 then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
+  end
+  do
+    return mp.INFECTED
   end
 end
 

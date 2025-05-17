@@ -3,16 +3,30 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.getfilesize)()
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if l_0_0 > 20480 then
-    local l_0_1 = tostring((mp.readfile)(l_0_0 - 9472, 8192))
-    l_0_1 = (string.lower)(l_0_1)
-    if (string.find)(l_0_1, "https://icam%.cl/wp%-content/%.%.%./%.%.%./x3%.php") ~= nil or (string.find)(l_0_1, "https://smartcheckautos%.com/wp%-content/%.%.%./%.%.%./x3%.php") ~= nil or (string.find)(l_0_1, "url:https://calfeutragebprs%.com/wp%-content/image/s3%.php") ~= nil then
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = (string.lower)((this_sigattrlog[3]).utf8p2)
+    else
+    end
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC61: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC70: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (not (this_sigattrlog[5]).matched or (string.lower)((this_sigattrlog[5]).utf8p2) ~= nil) and (string.len)((string.lower)((this_sigattrlog[5]).utf8p2)) > 4 and (string.find)((string.lower)((this_sigattrlog[5]).utf8p2), "administrators", 1, true) and (string.find)((string.lower)((this_sigattrlog[5]).utf8p2), "/add", 1, true) then
       return mp.INFECTED
     end
+    return mp.CLEAN
   end
-  return mp.CLEAN
 end
 

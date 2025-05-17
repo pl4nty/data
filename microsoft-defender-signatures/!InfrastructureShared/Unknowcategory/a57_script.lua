@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^/]+)$") == "cybspawn.bin" then
+      return mp.CLEAN
+    end
+  end
+  return mp.INFECTED
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if (string.len)(l_0_1) > 1000 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 409600 and l_0_0 < 716800 then
+if (mp.get_mpattribute)("BM_XML_FILE") then
   return mp.INFECTED
 end
 return mp.CLEAN

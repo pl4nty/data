@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr - 4, 4), 1) < 65536 then
   return mp.CLEAN
 end
-if (pe.get_exports)() > 100 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 30, "")
+return mp.INFECTED
 

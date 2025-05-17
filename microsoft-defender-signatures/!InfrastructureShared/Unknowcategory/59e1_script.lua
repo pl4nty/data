@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("HSTR:IBryteDownloaderz.A2")
 end
 return mp.INFECTED
 

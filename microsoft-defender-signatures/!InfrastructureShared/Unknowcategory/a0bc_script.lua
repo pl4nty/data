@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 0 and epcode[1] == 131 and epcode[2] == 60 and epcode[5] == 119 and epcode[6] == 254 and ((pesecs[pehdr.NumberOfSections]).Name == ".reloc" or (pesecs[pehdr.NumberOfSections]).Name == ".rsrc") then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (this_sigattrlog[1]).utf8p2 ~= nil then
+  (bm.add_related_file)((this_sigattrlog[1]).utf8p1)
+  ;
+  (bm.add_related_file)((this_sigattrlog[1]).utf8p2)
+else
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[2]).utf8p2 ~= nil then
+    (bm.add_related_file)((this_sigattrlog[2]).utf8p1)
+    ;
+    (bm.add_related_file)((this_sigattrlog[2]).utf8p2)
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

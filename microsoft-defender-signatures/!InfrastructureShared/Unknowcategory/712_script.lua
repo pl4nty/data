@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (string.sub)((this_sigattrlog[1]).wp1, -4) == ".pdf" then
+if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= ((bm.get_current_process_startup_info)()).integrity_level then
   return mp.INFECTED
 end
 return mp.CLEAN

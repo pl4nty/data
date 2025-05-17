@@ -3,37 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[4]).utf8p2
-  if (string.find)(l_0_0, "/u ", 1, true) and (string.find)(l_0_0, "/s ", 1, true) then
-    local l_0_1 = nil
-    if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-      l_0_1 = (this_sigattrlog[1]).utf8p2
-    else
-      if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-        l_0_1 = (this_sigattrlog[2]).utf8p2
-      else
-        if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-          l_0_1 = (this_sigattrlog[3]).utf8p2
+local l_0_0 = "HKLM\\System\\CurrentControlSet\\Services"
+local l_0_1 = (sysio.RegOpenKey)(l_0_0)
+if not l_0_1 then
+  return nil
+end
+local l_0_2 = (sysio.RegEnumKeys)(l_0_1)
+if not l_0_2 then
+  return nil
+end
+for l_0_6,l_0_7 in pairs(l_0_2) do
+  if l_0_7:match("^%d%d%d%d%d%d+") then
+    local l_0_8 = l_0_0 .. "\\" .. l_0_7
+    local l_0_9 = (sysio.RegOpenKey)(l_0_8)
+    if l_0_9 then
+      local l_0_10 = (sysio.GetRegValueAsString)(l_0_9, "Type")
+      if l_0_10 and l_0_10 == (string.char)(16) then
+        local l_0_11 = (sysio.GetRegValueAsString)(l_0_9, "ImagePath")
+        if l_0_11:match("^%%SystemRoot%%\\%d%d%d%d%d%d+.exe$") then
+          local l_0_12 = (sysio.ExpandFilePath)(l_0_11)
+          if (sysio.IsFileExists)(l_0_12) then
+            (Remediation.BtrDeleteFile)(l_0_12)
+            ;
+            (Remediation.BtrDeleteRegKey)(l_0_8)
+          end
         end
-      end
-    end
-    if l_0_1 ~= nil then
-      local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-      for l_0_6,l_0_7 in ipairs(l_0_2) do
-        if (sysio.IsFileExists)(l_0_7) then
-          (bm.add_related_file)(l_0_7)
-        end
-      end
-    end
-    do
-      do
-        l_0_2 = mp
-        l_0_2 = l_0_2.INFECTED
-        do return l_0_2 end
-        l_0_0 = mp
-        l_0_0 = l_0_0.CLEAN
-        return l_0_0
       end
     end
   end

@@ -3,25 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if not (string.find)(l_0_0, "c:\\users\\", 1, true) and not (string.find)(l_0_0, "c:\\programdata\\", 1, true) and not (string.find)(l_0_0, "\\appdata\\local\\", 1, true) and not (string.find)(l_0_0, "\\kmspico\\", 1, true) then
-  return mp.CLEAN
+local l_0_0 = ""
+local l_0_1 = ""
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+  l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
 end
-local l_0_1 = (MpCommon.GetPersistContextNoPath)("bm_uacbypass_connmgr")
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
+  l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p1)
+end
 if l_0_1 then
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    local l_0_7, l_0_8 = (string.match)(l_0_6, "(.+);ImagePath:(.+)")
-    if l_0_8 then
-      l_0_8 = (MpCommon.PathToWin32Path)(l_0_8)
-      if (sysio.IsFileExists)(l_0_8) then
-        (bm.add_related_file)(l_0_8)
-        l_0_6 = (string.gsub)(l_0_6, ",", "_")
-        ;
-        (bm.add_related_string)("PossibleTrigger", l_0_6, bm.RelatedStringBMReport)
-      end
-    end
+  if (string.match)(l_0_1, ".inf$") then
+    (bm.add_related_string)("SuspClfsAccess_WF", tostring(l_0_1), bm.RelatedStringBMReport)
+  else
+    return mp.CLEAN
   end
-  return mp.INFECTED
 end
-return mp.CLEAN
+if l_0_0 then
+  if (string.find)(l_0_0, "\\windows\\system32\\", 1, true) or (string.find)(l_0_0, "\\360safe\\", 1, true) or (string.find)(l_0_0, "\\qiyi\\", 1, true) or (string.find)(l_0_0, "}.tm.blf", 1, true) or (string.find)(l_0_0, "}.txr.blf", 1, true) then
+    return mp.CLEAN
+  else
+    ;
+    (bm.add_related_string)("SuspClfsAccess_CLFS", tostring(l_0_0), bm.RelatedStringBMReport)
+  end
+end
+return mp.INFECTED
 

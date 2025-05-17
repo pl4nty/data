@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 2 and (hstrlog[1]).hitcount > 3 then
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:RealtimeSpy")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

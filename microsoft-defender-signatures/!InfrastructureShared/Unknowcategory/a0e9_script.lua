@@ -3,14 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1, l_0_2 = ((bm.get_connection_string)()):find("DestIp=(.-;)")
-if l_0_2 == nil then
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 == nil then
   return mp.CLEAN
 end
-l_0_2 = ";" .. l_0_2
-local l_0_3 = ";217.23.8.164;85.17.87.163;46.165.244.105;209.239.112.229;185.6.80.139;184.75.253.146;176.9.245.16;178.250.245.198;217.23.3.113;217.23.8.164;"
-if l_0_3:find(l_0_2, 1, true) then
-  return mp.INFECTED
+local l_0_1 = {}
+l_0_1["Trojan:Win32/TIImpersonation.A!sms"] = true
+l_0_1["Trojan:Win32/TIImpersonation.B!sms"] = true
+l_0_1["Trojan:Win32/W3WP_BackdoorDLL"] = true
+l_0_1["Trojan:Win32/ShellMemoryArtifacts.B"] = true
+l_0_1["Trojan:Win32/ShellMemoryArtifacts.C"] = true
+if l_0_1[l_0_0] then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

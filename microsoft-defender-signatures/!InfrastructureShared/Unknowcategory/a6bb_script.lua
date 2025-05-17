@@ -3,38 +3,28 @@
 
 -- params : ...
 -- function num : 0
-add_related_file_wrapper = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0 ~= nil then
-    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
-    for l_1_5,l_1_6 in ipairs(l_1_1) do
-      l_1_6 = (mp.ContextualExpandEnvironmentVariables)(l_1_6)
-      if (sysio.IsFileExists)(l_1_6) then
-        (bm.add_related_file)(l_1_6)
-      end
-    end
-  end
+if (bm.GetSignatureMatchDuration)() > 300000000 then
+  return mp.CLEAN
 end
-
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p1)
-end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p2)
-end
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("bm_uacbypass_connmgr")
-if l_0_0 then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    local l_0_6, l_0_7 = (string.match)(l_0_5, "(.+);ImagePath:(.+)")
-    if l_0_7 then
-      l_0_7 = (MpCommon.PathToWin32Path)(l_0_7)
-      if (sysio.IsFileExists)(l_0_7) then
-        (mp.ReportLowfi)(l_0_7, 3039453400)
-      end
-    end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  l_0_1 = (string.gsub)(l_0_1, " ", "")
+  l_0_1 = (string.gsub)(l_0_1, "\"", "")
+  if l_0_0 ~= l_0_1 then
+    return mp.CLEAN
   end
 end
 do
-  return mp.INFECTED
+  local l_0_2 = (string.lower)((bm.get_imagepath)())
+  if l_0_2 then
+    if (string.find)(l_0_2, "\\windows\\", 1, true) or (string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "\\programdata\\", 1, true) or (string.find)(l_0_2, "\\blender", 1, true) or (string.find)(l_0_2, "\\glens", 1, true) or (string.find)(l_0_2, "\\microsoft.azure.", 1, true) then
+      return mp.CLEAN
+    end
+    ;
+    (bm.add_action)("EmsScan", 3000)
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

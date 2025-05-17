@@ -3,74 +3,37 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
+if (bm.GetSignatureMatchDuration)() > 100000000 then
+  return mp.CLEAN
+end
+local l_0_0 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+l_0_0 = (string.lower)(l_0_0)
+if not (string.find)(l_0_0, "c:\\", 1, true) then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\windows", 1, true) or (string.find)(l_0_0, "\\teams.exe", 1, true) or (string.find)(l_0_0, "game", 1, true) or (string.find)(l_0_0, "steam", 1, true) or (string.find)(l_0_0, "\\jackettconsole", 1, true) or (string.find)(l_0_0, "c:\\agent.exe", 1, true) or (string.find)(l_0_0, "torrent", 1, true) then
+  return mp.CLEAN
+end
+local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "NewPECreatedNoCert")
+if not l_0_1 then
+  return mp.CLEAN
+end
+if (mp.IsKnownFriendlyFile)(l_0_0, true, false) == true then
+  return mp.CLEAN
+end
+local l_0_2 = (sysio.GetFileLastWriteTime)(l_0_0)
+if ((sysio.GetLastResult)()).Success and l_0_2 ~= 0 then
+  l_0_2 = l_0_2 / 10000000 - 11644473600
+  local l_0_3 = (MpCommon.GetCurrentTimeT)()
+  if l_0_3 < l_0_2 or l_0_3 - (l_0_2) > 600 then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
+end
 do
-  if (this_sigattrlog[6]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil
-  else
-  end
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[7]).matched or (this_sigattrlog[7]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[7]).utf8p2) > 3 then
-    local l_0_5 = nil
-    -- DECOMPILER ERROR at PC41: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC59: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC68: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC77: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC86: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC95: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC104: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC113: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC120: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC127: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC136: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC145: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC154: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
-
-    if ((string.find)((string.lower)((this_sigattrlog[7]).utf8p2), ".dll", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), ".cpl", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), ".ocx", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), ".tmp", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), ".dat", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), ".tlb", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), "-", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), ".exe", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), ".xll", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), "\\microsoft\\word\\startup\\%a+.%a") ~= nil) or (string.find)((string.lower)((this_sigattrlog[7]).utf8p2), "\\appdata\\roaming\\%a+.dll") ~= nil then
-      local l_0_6 = nil
-      if (mp.GetExecutablesFromCommandLine)(l_0_5) ~= nil then
-        for l_0_10,l_0_11 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_5)) do
-          local l_0_7 = nil
-          -- DECOMPILER ERROR at PC171: Confused about usage of register: R7 in 'UnsetPending'
-
-          R7_PC171 = (mp.ContextualExpandEnvironmentVariables)(R7_PC171)
-          ;
-          (bm.add_related_file)(R7_PC171)
-        end
-      end
-      do
-        do
-          do return mp.INFECTED end
-          return mp.CLEAN
-        end
-      end
-    end
-  end
+  return mp.CLEAN
 end
 

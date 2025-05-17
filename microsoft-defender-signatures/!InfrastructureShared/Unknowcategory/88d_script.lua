@@ -3,19 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//GIOAVZIPinTopLevelZIP") and not (mp.get_mpattribute)("//GIOAVPEInZIPinTopLevelZIP") then
-  (mp.set_mpattribute)("Lua:IOAVPEInZIPinTopLevelZIP")
-  ;
-  (mp.set_mpattribute)("//GIOAVPEInZIPinTopLevelZIP")
-  ;
-  (mp.set_mpattribute)("MpNonCachedLowfi")
+if mp.HEADERPAGE_SZ < 128 then
+  return mp.CLEAN
 end
-if (mp.get_mpattribute)("//GIOAVZIPinTopLevelUncompressedZip") and not (mp.get_mpattribute)("//GIOAVPEInZIPinTopLevelUncompressedZip") then
-  (mp.set_mpattribute)("Lua:IOAVPEInZIPinTopLevelUncompressedZip")
-  ;
-  (mp.set_mpattribute)("//GIOAVPEInZIPinTopLevelUncompressedZip")
-  ;
-  (mp.set_mpattribute)("MpNonCachedLowfi")
+if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = 10
+local l_0_1 = 1
+local l_0_2 = 1
+while l_0_2 < l_0_0 and l_0_1 + 30 < mp.HEADERPAGE_SZ do
+  if (mp.readu_u32)(headerpage, l_0_1) ~= 67324752 then
+    return mp.CLEAN
+  end
+  local l_0_3 = (mp.readu_u32)(headerpage, l_0_1 + 18)
+  local l_0_4 = (mp.readu_u32)(headerpage, l_0_1 + 22)
+  if l_0_3 > 0 and l_0_3 < l_0_4 and l_0_4 > 10485760 and l_0_4 / l_0_3 > 11000 then
+    return mp.INFECTED
+  end
+  l_0_1 = l_0_1 + 30 + (mp.readu_u16)(headerpage, l_0_1 + 26) + l_0_3 + (mp.readu_u16)(headerpage, l_0_1 + 28)
+  l_0_2 = l_0_2 + 1
+end
+do
+  return mp.CLEAN
+end
 

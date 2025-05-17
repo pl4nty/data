@@ -3,12 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
-  return mp.CLEAN
+local l_0_0 = {}
+l_0_0["winword.exe"] = true
+l_0_0["excel.exe"] = true
+l_0_0["powerpnt.exe"] = true
+l_0_0["outlook.exe"] = true
+local l_0_1 = (mp.GetParentProcInfo)()
+do
+  if l_0_1 ~= nil then
+    local l_0_2 = (string.lower)(l_0_1.image_path)
+    if l_0_0[l_0_2:match("([^\\]+)$")] then
+      return mp.INFECTED
+    end
+  end
+  local l_0_3 = (mp.GetParentProcInfo)(l_0_1.ppid)
+  do
+    if l_0_3 ~= nil then
+      local l_0_4 = (string.lower)(l_0_3.image_path)
+      if l_0_0[((string.sub)(l_0_4, -15)):match("\\([^\\]+)$")] then
+        return mp.INFECTED
+      end
+    end
+    return mp.CLEAN
+  end
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

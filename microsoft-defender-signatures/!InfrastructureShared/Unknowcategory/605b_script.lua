@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.getfilesize)() < 702000 then
+if (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" then
   return mp.INFECTED
 end
 return mp.CLEAN

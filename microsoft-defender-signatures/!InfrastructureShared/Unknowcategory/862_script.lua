@@ -3,18 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == "ewsapplication.exe" then
-  return mp.INFECTED
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_AMSI then
+  return mp.CLEAN
 end
-if (string.match)(l_0_0, "o365token%d?%d?%d?%d?%.exe") then
-  return mp.INFECTED
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  if l_0_0 == "w3wp.exe" then
+    local l_0_1, l_0_2 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_APPNAME)
+    if l_0_1 and l_0_2 ~= nil and l_0_2 == "DotNet" then
+      (mp.set_mpattribute)("Lua:IsIISAmsiScan")
+      return mp.INFECTED
+    end
+  end
 end
-if (string.match)(l_0_0, "hpatoken%d?%d?%d?%d?%.exe") then
-  return mp.INFECTED
+do
+  return mp.CLEAN
 end
-if (string.match)(l_0_0, "hpauser%d?%d?%d?%.exe") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

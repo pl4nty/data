@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2800000 then
-  return mp.LOWFI
-end
-return mp.CLEAN
+(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+return mp.INFECTED
 

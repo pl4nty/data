@@ -3,14 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or pehdr.TimeDateStamp ~= 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA == 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).Size < 9 then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_rva)(((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA, 9)
-if (mp.readu_u32)(l_0_0, 5) == 4294967295 then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1000000 or l_0_0 < 4000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("\\program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("\\system32", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

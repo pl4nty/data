@@ -3,17 +3,45 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  if peattributes.isdll then
-    return mp.CLEAN
+IsStrLower = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_0 == nil or l_1_1 <= 0 or l_1_1 > 128 then
+    return false
   end
-  local l_0_1 = (mp.getfilesize)()
-  if l_0_1 > 17664 and l_0_1 < 1200128 then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    local l_0_3 = (string.sub)(l_0_2, -4)
-    if (l_0_3 == ".zip" or l_0_3 == ".rar" or l_0_3 == ".exe" or l_0_3 == ".pif" or l_0_3 == ".scr") and (l_0_2:find("adres", 1, true) ~= nil or l_0_2:find("pacchetto", 1, true) ~= nil or l_0_2:find("fatura", 1, true) ~= nil or l_0_2:find("carta_certificada", 1, true) ~= nil or l_0_2:find("notice_", 1, true) ~= nil or l_0_2:find("bolletta_", 1, true) ~= nil or l_0_2:find("enel_bolletta", 1, true) ~= nil or l_0_2:find("info_", 1, true) ~= nil or l_0_2:find("turkcell_", 1, true) ~= nil or l_0_2:find("posten_", 1, true) ~= nil or l_0_2:find("forsandelse", 1, true) ~= nil or l_0_2:find("forsendelse", 1, true) ~= nil or l_0_2:find("leverans", 1, true) ~= nil or l_0_2:find("postnord_", 1, true) ~= nil or l_0_2:find("adresselapp", 1, true) ~= nil or l_0_2:find("postdanmark_", 1, true) ~= nil or l_0_2:find("auspost_", 1, true) ~= nil or l_0_2:find("aupost_", 1, true) ~= nil or l_0_2:find("infringement_", 1, true) ~= nil) then
-      return mp.INFECTED
+  for l_1_5 = 1, l_1_1 do
+    local l_1_6 = (string.byte)(l_1_0, l_1_5)
+    if l_1_6 < 97 or l_1_6 > 122 then
+      return false
+    end
+  end
+  return true
+end
+
+IsDofoilPath = function(l_2_0, l_2_1)
+  -- function num : 0_1
+  do return (string.len)(l_2_0) == 8 and (string.len)(l_2_1) == 12 and IsStrLower(l_2_0, 8) == true and IsStrLower(l_2_1, 8) == true end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+  if (string.lower)(l_0_1:sub(-25, -9)) == "\\appdata\\roaming\\" or (string.lower)(l_0_1:sub(-26, -9)) == "\\application data\\" then
+    local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_ATTRIBUTES)
+    if l_0_2 ~= 4294967295 then
+      l_0_2 = (mp.bitand)(l_0_2, 3)
+      if l_0_2 == 3 then
+        (mp.set_mpattribute)("Lua:SuspiciousDropExeAttrib.C")
+      else
+        if l_0_2 ~= 0 then
+          if IsDofoilPath(l_0_1:sub(-8), (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == true then
+            (mp.set_mpattribute)("Lua:DofoilFilename.A")
+          end
+          ;
+          (mp.set_mpattribute)("Lua:SuspiciousDropExeAttrib.D")
+          return mp.INFECTED
+        end
+      end
     end
   end
 end

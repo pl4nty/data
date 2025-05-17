@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)((string.lower)(l_0_0), ".sdb$") ~= nil then
+if (mp.get_mpattribute)("pea_isexe") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

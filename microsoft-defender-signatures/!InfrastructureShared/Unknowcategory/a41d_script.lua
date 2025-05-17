@@ -3,15 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)(l_0_0, "\\python", 1, true) then
-    return mp.INFECTED
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R1 in 'AssignReg'
+
+if (this_sigattrlog[3]).matched then
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC13: Overwrote pending register: R3 in 'AssignReg'
+
+  local l_0_3 = nil
+  -- DECOMPILER ERROR at PC14: Overwrote pending register: R2 in 'AssignReg'
+
+  local l_0_2 = nil
+  -- DECOMPILER ERROR at PC23: Confused about usage of register: R3 in 'UnsetPending'
+
+  if l_0_2 ~= nil and nil ~= nil then
+    l_0_1 = (string.sub)(l_0_3, 1, nil - 1)
+  else
+    l_0_1 = l_0_3
   end
-  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\microsoft vs code\\", 1, true) or (string.find)(l_0_0, "microsoft.watson", 1, true) or (string.find)(l_0_0, "mpsigstub.exe", 1, true) or (string.find)(l_0_0, "virtualboxvm.exe", 1, true) then
+  if l_0_1 == nil or l_0_1 == "" or (sysio.IsFileExists)(l_0_1) == false then
     return mp.CLEAN
   end
-  return mp.INFECTED
+  if (string.find)(l_0_1, ".exe", -4, true) or (string.find)(l_0_1, ".dll", -4, true) then
+    (bm.add_related_file)(l_0_1)
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

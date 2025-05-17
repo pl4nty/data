@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 332 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("Company:IntelliBreezeSoftware")
+return mp.INFECTED
 

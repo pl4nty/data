@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 86016 and l_0_0 <= 131072 and pehdr.NumberOfSections == 7 and (mp.get_mpattribute)("NID:TrojanSpy:Win32/Guildma.AB") then
+if ((not (hstrlog[2]).matched and not (hstrlog[3]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched) or not (hstrlog[1]).matched or (hstrlog[4]).matched) then
   return mp.INFECTED
 end
 return mp.CLEAN

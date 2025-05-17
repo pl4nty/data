@@ -3,8 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.NumberOfSections == 3 and (pesecs[3]).VirtualSize >= 2176 and (pesecs[3]).VirtualSize <= 4096 and pehdr.SizeOfImage >= 20480 and pehdr.SizeOfImage <= 36864 then
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  end
+  -- DECOMPILER ERROR at PC10: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_3 = nil
+  if l_0_3 == nil or (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_0), true, false) then
+    return mp.CLEAN
+  end
+  ;
+  (bm.add_related_file)(l_0_3)
   return mp.INFECTED
 end
-return mp.CLEAN
 

@@ -3,110 +3,73 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] ~= 104 then
-  return mp.CLEAN
-end
-local l_0_0 = pehdr.ImageBase
-if l_0_0 ~= 4194304 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readu_u32)(epcode, 2)
-if l_0_1 < l_0_0 then
-  return mp.CLEAN
-end
-local l_0_2 = (mp.readfile)(l_0_1 - l_0_0, 52)
-if (mp.readu_u32)(l_0_2, 1) ~= 557138518 then
-  return mp.CLEAN
-end
-local l_0_3 = (mp.readu_u32)(l_0_2, 45)
-local l_0_4 = (mp.readu_u32)(l_0_2, 49)
-if l_0_4 < l_0_0 then
-  return mp.CLEAN
-end
-local l_0_5 = (mp.readfile)(l_0_4 - l_0_0, 8)
-if (mp.readu_u32)(l_0_5, 1) ~= 500 then
-  return mp.CLEAN
-end
-local l_0_6 = (mp.readu_u32)(l_0_5, 5)
-if l_0_6 < l_0_0 then
-  return mp.CLEAN
-end
-local l_0_7 = (mp.readfile)(l_0_6 - l_0_0, 68)
-local l_0_8 = (mp.readu_u16)(l_0_7, 43)
-local l_0_9 = 0
-local l_0_10 = (mp.readu_u32)(l_0_7, 49)
-if l_0_10 < l_0_0 then
-  return mp.CLEAN
-end
-local l_0_13 = 50
-do
-  if l_0_8 <= l_0_13 then
-    local l_0_11, l_0_12 = false
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (mp.getfilesize)()
+  if l_0_1 > 700416 or l_0_1 < 196608 then
+    return mp.CLEAN
   end
-  for l_0_17 = 0, l_0_13 do
-    local l_0_14 = nil
-    -- DECOMPILER ERROR at PC116: Confused about usage of register: R16 in 'UnsetPending'
-
-    local l_0_19 = nil
-    if (mp.readu_u32)((mp.readfile)(l_0_10 - l_0_0 + R16_PC116 * 48, 32), 29) == 0 and not l_0_14 then
-      (mp.set_mpattribute)("Lua:VB.ObjectWithNoMethods")
-      l_0_14 = true
+  if not (mp.get_mpattribute)("BM_UNKNOWN_FILE") then
+    if (mp.readu_u16)(headerpage, 1) == 23117 then
+      return mp.CLEAN
     end
-    l_0_9 = l_0_9 + (mp.readu_u32)((mp.readfile)(l_0_10 - l_0_0 + R16_PC116 * 48, 32), 29)
+    if (mp.readu_u16)(headerpage, 1) == 53200 then
+      return mp.CLEAN
+    end
+    if (mp.readu_u16)(headerpage, 1) == 19280 then
+      return mp.CLEAN
+    end
+    if (mp.readu_u32)(headerpage, 1) == 1836597052 then
+      return mp.CLEAN
+    end
+    if (mp.readu_u32)(headerpage, 1) == 1179866185 then
+      return mp.CLEAN
+    end
   end
-  local l_0_20 = nil
-  if l_0_3 - l_0_1 > 393216 then
-    (mp.set_mpattribute)("Lua:VB.SubMainDistanceGT_0x60000")
+  local l_0_2 = (string.lower)((string.sub)((mp.getfilename)(), -3))
+  if l_0_2 == "log" then
+    return mp.CLEAN
   end
-  ;
-  (mp.set_mpattribute)("Lua:VB.TotalMethods:" .. tostring(l_0_9))
-  ;
-  (mp.set_mpattribute)("Lua:VB.TotalObjects:" .. tostring(l_0_8))
-  if l_0_9 >= 25 and l_0_9 <= 35 and (l_0_8 == 2 or l_0_8 == 3) and l_0_3 == 0 then
-    (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.A")
-  else
-    if l_0_9 >= 45 and l_0_9 <= 68 and (l_0_8 == 2 or l_0_8 == 3) and l_0_3 == 0 then
-      (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.B")
-    else
-      -- DECOMPILER ERROR at PC197: Confused about usage of register: R13 in 'UnsetPending'
-
-      if l_0_9 >= 38 and l_0_9 <= 68 and l_0_8 >= 2 and l_0_8 <= 5 and l_0_3 - l_0_1 > 393216 then
-        (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.C")
-      else
-        -- DECOMPILER ERROR at PC210: Confused about usage of register: R13 in 'UnsetPending'
-
-        if l_0_9 == 0 and l_0_8 >= 5 and l_0_8 <= 8 and l_0_3 - l_0_1 > 393216 then
-          (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.D")
-        else
-          if l_0_9 == 23 and l_0_8 == 2 and l_0_3 == 0 then
-            (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.E")
-          else
-            -- DECOMPILER ERROR at PC234: Confused about usage of register: R13 in 'UnsetPending'
-
-            if l_0_9 == 0 and (l_0_8 == 3 or l_0_8 == 4) and l_0_3 - l_0_1 > 413696 then
-              (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.F")
-            else
-              -- DECOMPILER ERROR at PC247: Confused about usage of register: R13 in 'UnsetPending'
-
-              if l_0_9 == 0 and l_0_8 >= 9 and l_0_8 <= 12 and l_0_3 - l_0_1 > 393216 then
-                (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.G")
-              else
-                if l_0_9 == 0 and l_0_8 >= 24 then
-                  (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.H")
-                else
-                  if l_0_9 == 147 and l_0_8 == 14 then
-                    (mp.set_mpattribute)("Lua:VB.SuspiciousCrypter.I")
-                  end
-                end
-              end
-            end
-          end
+  if mp.FOOTERPAGE_SZ < 256 or #footerpage < 256 then
+    return mp.CLEAN
+  end
+  if (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 3) == 0 then
+    return mp.CLEAN
+  end
+  if (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 7) == 0 then
+    return mp.CLEAN
+  end
+  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if (string.sub)(l_0_3, -5) == "\\temp" then
+    local l_0_4 = tostring(footerpage)
+    if l_0_4:find("\000\000\000\000\000\000\000\000", 1, true) or l_0_4:find("PADDING", 1, true) then
+      return mp.CLEAN
+    end
+    local l_0_5 = 1768444961
+    local l_0_6 = 1881145459
+    local l_0_7 = 1919381362
+    local l_0_8 = 536898913
+    local l_0_9 = ""
+    local l_0_10 = ""
+    local l_0_11 = 512
+    for l_0_15 = l_0_11, 1536 do
+      l_0_9 = (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15), l_0_5)
+      l_0_10 = (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 4), l_0_6)
+      for l_0_19 = 1, 6 do
+        if l_0_9 + l_0_19 == l_0_10 and l_0_9 + l_0_19 * 2 == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 8), l_0_7) and l_0_9 + l_0_19 * 3 == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 12), l_0_8) then
+          return mp.INFECTED
+        end
+        if l_0_9 - l_0_19 == l_0_10 and l_0_9 - l_0_19 * 2 == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 8), l_0_7) and l_0_9 - l_0_19 * 3 == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 12), l_0_8) then
+          return mp.INFECTED
+        end
+        if (mp.rol32)(l_0_9, l_0_19) == l_0_10 and (mp.rol32)(l_0_9, l_0_19 * 2) == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 8), l_0_7) and (mp.rol32)(l_0_9, l_0_19 * 3) == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 12), l_0_8) then
+          return mp.INFECTED
         end
       end
     end
   end
+end
+do
   return mp.CLEAN
 end
 

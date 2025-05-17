@@ -3,24 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = ""
-if l_0_0.is_header then
-  l_0_1 = (string.lower)(tostring(headerpage))
-else
-  l_0_1 = (string.lower)(tostring(footerpage))
-end
-l_0_1 = (string.gsub)(l_0_1, "%z", "")
-l_0_1 = (string.gsub)(l_0_1, " ", "")
-l_0_1 = (string.gsub)(l_0_1, "`", "")
-do
-  if (string.find)(l_0_1, "proxy", 1, true) and (string.find)(l_0_1, "::", 1, true) and (string.find)(l_0_1, "defaultnetworkcredentials", 1, true) then
-    local l_0_2 = (string.lower)((mp.getfilename)())
-    if (string.find)(l_0_2, "->%(%w+%)") or (string.find)(l_0_2, "->%[%w+%]") then
-      (mp.set_mpattribute)("SCRIPT:Packed")
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = (string.match)((string.lower)(l_0_1), "^(.-%.exe)")
+if l_0_2 == "" or l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (string.match)(l_0_2, "([^\\]+)$")
+if l_0_3 == "" or l_0_3 == nil then
+  return mp.CLEAN
+end
+if l_0_3 ~= "explorer.exe" then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.GetParentProcInfo)()
+if l_0_4 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.match)(l_0_4.image_path, "\\([^\\]+)$")) ~= "razerinstaller.exe" then
+  return mp.CLEAN
+end
+local l_0_5 = (mp.GetProcessCommandLine)(l_0_4.ppid)
+if l_0_5 == "" or l_0_5 == nil then
+  return mp.CLEAN
+end
+if (string.find)((string.lower)(l_0_5), "razerinstaller%.exe[^/]+/showdevice$") == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

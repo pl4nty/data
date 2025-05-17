@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 300000000 then
+if (bm.GetSignatureMatchDuration)() > 60000000 then
   return mp.CLEAN
 end
 return mp.INFECTED

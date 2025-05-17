@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 25360 or peattributes.ismsil ~= true then
-  return mp.CLEAN
-end
-local l_0_0 = ((pe.get_versioninfo)()).FileDescription
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if l_0_0 == "vshost64-clr3" or l_0_0 == "vshost64-clr2" or l_0_0 == "vshost32-clr3" or l_0_0 == "vshost32-clr2" or l_0_0 == ".NET Framework" or l_0_0 == "XML Protector" or l_0_0 == "Microsoft" then
+if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil or (string.match)(l_0_0, "apps%-helper") ~= nil or (string.match)(l_0_0, "app%-helper") ~= nil then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

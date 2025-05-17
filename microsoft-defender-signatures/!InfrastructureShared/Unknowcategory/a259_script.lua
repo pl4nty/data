@@ -3,12 +3,19 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC44: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC44: Unhandled construct in 'MakeBoolean' P3
-
-if (((((hstrlog[1]).matched or (hstrlog[2]).matched or not (hstrlog[4]).matched) and (hstrlog[7]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_0 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+      if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
+        (bm.add_related_file)(l_0_7)
+        return mp.INFECTED
+      end
+    end
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

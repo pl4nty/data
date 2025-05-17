@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 <= 155000 and l_0_0 >= 150000 and peattributes.no_security == true then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "rar%.exe") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

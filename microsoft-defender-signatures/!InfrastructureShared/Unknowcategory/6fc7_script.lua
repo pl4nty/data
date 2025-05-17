@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((bm.get_imagepath)(), -12)) == "\\svchost.exe" then
-  return mp.CLEAN
+if (hstrlog[7]).matched and peattributes.isdll and peattributes.hasexports then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

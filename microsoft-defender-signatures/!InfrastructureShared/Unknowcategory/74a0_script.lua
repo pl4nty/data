@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 8, "x")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 14, "x")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 20, "x")
-return mp.INFECTED
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

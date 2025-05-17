@@ -3,35 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) + 8, 4), 1)
+local l_0_1 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) + 12, 4), 1)
+local l_0_2 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) + 16, 4), 1)
+local l_0_3 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) + 20, 4), 1)
+if l_0_0 ~= 2089811968 or l_0_1 ~= 0 or l_0_3 ~= 8 then
   return mp.CLEAN
 end
-if peattributes.lastscn_writable ~= true then
-  return mp.CLEAN
+if l_0_2 == pehdr.ImageBase + (pesecs[1]).VirtualAddress then
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  return mp.INFECTED
 end
-if peattributes.epscn_writable ~= true then
-  return mp.CLEAN
-end
-if peattributes.firstsectwritable ~= true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size <= 0 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW ~= 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

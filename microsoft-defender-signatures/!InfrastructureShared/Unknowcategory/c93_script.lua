@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("SIGATTR:AntiEmuRaceThread")
-return mp.CLEAN
+(mp.set_mpattribute)("SCRIPT:StrConcat!obfus")
+return mp.INFECTED
 

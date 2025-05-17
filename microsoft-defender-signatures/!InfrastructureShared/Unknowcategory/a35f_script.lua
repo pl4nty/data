@@ -3,14 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if (nri.GetHttpCommand)() ~= nri.HTTP_POST then
+local l_0_0 = {}
+l_0_0.exe = ""
+l_0_0.cmd = ""
+l_0_0.bat = ""
+l_0_0.com = ""
+l_0_0.pif = ""
+l_0_0.scr = ""
+local l_0_1 = {}
+l_0_1.ms = ""
+l_0_1.cc = ""
+local l_0_2 = nil
+if (this_sigattrlog[1]).matched then
+  l_0_2 = (string.lower)((this_sigattrlog[1]).utf8p1)
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p1)
+  end
+end
+do
+  if l_0_2 ~= nil then
+    local l_0_3 = l_0_2:match("([^\\]-([^%.]+))$")
+    if l_0_0[l_0_2] and l_0_1[l_0_3:sub(1, 2)] then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-local l_0_0 = {}
-l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-l_0_0["accept-encoding"] = (nri.GetHttpRequestHeader)("Accept-Encoding")
-l_0_0.host = (nri.GetHttpRequestHeader)("Host")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
 

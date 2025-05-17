@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((mp.getfilename)(), -3)) ~= "hta" then
+if (this_sigattrlog[3]).matched then
+  local l_0_0 = (((this_sigattrlog[3]).utf8p1):lower()):match("\\([^\\]+)$")
+  local l_0_1 = (((this_sigattrlog[3]).utf8p2):lower()):match("\\([^\\]+)%.exe$")
+  if l_0_0 ~= nil and l_0_1 ~= nil and l_0_0 == l_0_1 then
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true) ~= 0 or not "Lua:SingleFileInZip" then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

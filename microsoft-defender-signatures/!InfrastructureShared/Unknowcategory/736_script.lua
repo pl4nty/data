@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 == nil or l_0_0.integrity_level == nil then
-  return mp.CLEAN
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  (mp.set_mpattribute)("MpOnModifiedHandleClose")
 end
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID <= l_0_0.integrity_level then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,15 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).ppid
-  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  if (string.find)(l_0_1, ".dat", 1, true) and (string.find)(l_0_1, "--", 1, true) and (string.find)(l_0_1, ",init ", 1, true) and (string.find)(l_0_1, "=\"", 1, true) and l_0_0 then
-    (bm.request_SMS)(l_0_0, "m")
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
+if not l_0_1 then
+  return mp.CLEAN
+end
+local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
+if not l_0_2 then
+  return mp.CLEAN
 end
 do
+  if (string.find)((string.lower)(l_0_2), "\\windows\\temp", 1, true) then
+    local l_0_3 = (mp.GetParentProcInfo)()
+    if l_0_3 and (string.find)((string.lower)(l_0_3.image_path), "python", 1, true) then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

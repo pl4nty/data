@@ -3,17 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-    if l_0_1 then
-      l_0_1 = (string.lower)(l_0_1)
-      if l_0_1 == "lsass.exe" then
-        return mp.INFECTED
-      end
-    end
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_0 == nil or l_0_1 == nil then
   return mp.CLEAN
 end
+if l_0_1:len() > 30 and l_0_1:find("\\temp\\...........?.?\\......?.?.?.?_stp\\") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

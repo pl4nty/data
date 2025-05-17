@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Win64/IcedID.MT!MTB") then
+local l_0_0 = (mp.getfilesize)()
+if ((l_0_0 >= 6291456 and l_0_0 <= 8388608) or l_0_0 < 2097152 or l_0_0 <= 4194304) and pehdr.NumberOfSections == 10 then
   return mp.INFECTED
 end
 return mp.CLEAN

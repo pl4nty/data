@@ -3,50 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 16, 105)
-local l_0_1 = (string.byte)(l_0_0, 1) + 2
-if #l_0_0 < l_0_1 then
+local l_0_0 = (mp.getfilename)()
+if l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
-if (string.byte)(l_0_0, l_0_1) == 232 then
-  local l_0_2 = 2
-  while 1 do
-    while 1 do
-      while 1 do
-        while 1 do
-          if l_0_2 < #l_0_0 then
-            local l_0_3 = (string.byte)(l_0_0, l_0_2)
-            if l_0_3 == 61 then
-              l_0_2 = l_0_2 + 5
-              -- DECOMPILER ERROR at PC38: LeaveBlock: unexpected jumping out IF_THEN_STMT
+local l_0_3 = (string.match)(l_0_0, "(.*)%.(%a+)->%w+/%w+.bin$")
+if l_0_3 == nil or l_0_0 == nil then
+  l_0_3 = l_0_0
+  local l_0_1, l_0_2 = nil
+else
+  do
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R2 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC38: LeaveBlock: unexpected jumping out IF_STMT
-
-              -- DECOMPILER ERROR at PC38: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC38: LeaveBlock: unexpected jumping out IF_STMT
-
-            end
-          end
-        end
-        if l_0_3 == 204 then
-          do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC44: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC44: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
-      if l_0_3 == 116 and l_0_1 ~= (string.byte)(l_0_0, l_0_2 + 1) + (l_0_2) then
-        return mp.CLEAN
-      end
+    l_0_3 = l_0_3 .. "." .. l_0_1
+    l_0_3 = (MpCommon.PathToWin32Path)(l_0_3)
+    if l_0_3 == nil or l_0_3 == "" then
+      return mp.CLEAN
     end
-    return mp.CLEAN
+    l_0_3 = (string.lower)(l_0_3)
+    if (string.find)(l_0_3, ".:\\program files %(x86%)\\blp\\api\\office tools\\") ~= nil then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
   end
-end
-do
-  -- DECOMPILER ERROR at PC64: Overwrote pending register: R2 in 'AssignReg'
-
-  return l_0_2.CLEAN
 end
 

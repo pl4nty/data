@@ -3,26 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0["iexplore.exe"] = true
-l_0_0["browser_broker.exe"] = true
-local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_1 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-  if l_0_2 == nil then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)((string.sub)(l_0_0, -9))
+  if l_0_1 ~= "\\w3wp.exe" then
     return mp.CLEAN
   end
-  l_0_2 = (string.lower)(l_0_2)
-  if l_0_0[l_0_2] == true then
-    local l_0_3 = (mp.getfilename)()
-    if l_0_3 == nil then
-      return mp.CLEAN
-    end
-    l_0_3 = (string.lower)(l_0_3)
-    if (string.find)(l_0_3, "flash%s*player.*.hta$") ~= nil and (mp.get_mpattribute)("Lua:HTAExt") and (mp.get_mpattribute)("RPF:TopLevelFile") then
-      return mp.INFECTED
+  local l_0_2 = (bm.get_current_process_startup_info)()
+  local l_0_3 = l_0_2.command_line
+  if not (string.find)(l_0_3, "MSExchangeOABAppPool", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_4 = nil
+  if (this_sigattrlog[1]).matched then
+    l_0_4 = (this_sigattrlog[1]).utf8p1
+  else
+    if (this_sigattrlog[2]).matched then
+      l_0_4 = (this_sigattrlog[2]).utf8p1
     end
   end
+  if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
+    (bm.add_related_file)(l_0_4)
+  end
+  return mp.INFECTED
 end
 do
   return mp.CLEAN

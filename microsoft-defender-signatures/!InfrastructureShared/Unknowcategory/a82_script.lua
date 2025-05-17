@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = nil
+local l_0_1 = nil
 do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
-  else
+  if (this_sigattrlog[2]).matched then
+    local l_0_2 = "docker_start"
+    l_0_1 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), "/([0-9a-f]+)/hosts$")
   end
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R1 in 'UnsetPending'
 
-  if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).wp1 == nil or (this_sigattrlog[3]).utf8p2) and (string.match)((this_sigattrlog[3]).utf8p2, "/%.[^/]+$") then
-    return mp.INFECTED
+  if l_0_1 ~= nil then
+    (MpCommon.AppendPersistContextNoPath)(l_0_2, l_0_1, 3600)
   end
   return mp.CLEAN
 end

@@ -3,29 +3,17 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1, l_0_2 = (string.lower)((this_sigattrlog[3]).utf8p2)
-    end
-    -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC48: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_1 ~= nil and (string.len)(l_0_1) > 3 and (string.find)(l_0_1, "start https:", 1, true) then
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = (string.lower)(tostring(headerpage))
+else
+  l_0_1 = (string.lower)(tostring(footerpage))
 end
+l_0_1 = (string.gsub)(l_0_1, " ", "")
+l_0_1 = (string.gsub)(l_0_1, "`", "")
+if (string.find)(l_0_1, "globalassemblycache", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

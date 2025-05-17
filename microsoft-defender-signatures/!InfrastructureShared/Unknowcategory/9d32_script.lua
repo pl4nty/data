@@ -3,16 +3,22 @@
 
 -- params : ...
 -- function num : 0
-do
-  if pehdr.NumberOfSections >= 16 and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_isdll") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+local l_0_3 = nil
+if (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME) == nil then
+  local l_0_0, l_0_1 = nil
+  if l_0_3 == nil then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  l_0_0 = l_0_3:sub(-5)
+  local l_0_2 = nil
+else
+  do
+    -- DECOMPILER ERROR at PC21: Confused about usage of register: R2 in 'UnsetPending'
+
+    if (string.find)((l_0_1:sub(-5)):lower(), ".asp") then
+      return mp.INFECTED
+    end
+    return mp.LOWFI
+  end
 end
 

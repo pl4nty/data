@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 5 then
+if pehdr.NumberOfSections == 18 then
   return mp.INFECTED
 end
 return mp.CLEAN

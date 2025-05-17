@@ -3,22 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll or peattributes.isdamaged then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 20480 or l_0_0 > 262144 then
   return mp.CLEAN
 end
-do
-  if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-    local l_0_0 = ((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)):lower()
-    if l_0_0:sub(1, 8) == "\\device\\" then
-      l_0_0 = ((MpCommon.PathToWin32Path)(l_0_0)):lower()
-    end
-    if l_0_0 == "c:\\windows" and (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_ID) < 12 and (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME) == "" then
-      if (mp.getfilesize)() < 1048576 then
-        (mp.set_mpattribute)("Lua:ContextPEAdminShare.A1")
-      end
+local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if (l_0_1 == mp.SCANREASON_ONOPEN or l_0_1 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  local l_0_3 = (string.sub)(l_0_2, -4)
+  if l_0_3 == ".exe" or l_0_3 == ".cab" or l_0_3 == ".dll" then
+    local l_0_4 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if (string.sub)(l_0_4, -35) == "\\application data\\microsoft\\network" or (string.sub)(l_0_4, -34) == "\\appdata\\roaming\\microsoft\\network" then
+      (mp.set_mpattribute)("Lua:Deselia!dha")
       return mp.INFECTED
     end
   end
+end
+do
   return mp.CLEAN
 end
 

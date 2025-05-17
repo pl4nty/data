@@ -3,32 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "(.+\\)"
-local l_0_1, l_0_2 = nil, nil
-if (this_sigattrlog[1]).matched then
-  l_0_2 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
-    end
-  end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.byte)(l_0_0, 28) + (string.byte)(l_0_0, 29) * 256 + (string.byte)(l_0_0, 30) * 65536 + (string.byte)(l_0_0, 31) * 16777216
+local l_0_2 = pevars.sigaddr + 31 + l_0_1
+l_0_0 = (pe.mmap_va)(l_0_2 - 4, 32)
+local l_0_3 = (string.byte)(l_0_0, 1) + (string.byte)(l_0_0, 2) * 256 + (string.byte)(l_0_0, 3) * 65536 + (string.byte)(l_0_0, 4) * 16777216
+local l_0_4 = (mp.bitand)(l_0_2 + l_0_3, 4294967295)
+if l_0_4 ~= pevars.sigaddr then
+  return mp.CLEAN
 end
-if (this_sigattrlog[4]).matched then
-  l_0_1 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[5]).matched then
-    l_0_1 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[6]).matched then
-      l_0_1 = (string.match)((string.lower)((this_sigattrlog[6]).utf8p1), l_0_0)
-    end
-  end
-end
-if l_0_1 ~= nil and l_0_1 == l_0_2 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(mp.changedetectionname)(805306375)
+return mp.SUSPICIOUS
 

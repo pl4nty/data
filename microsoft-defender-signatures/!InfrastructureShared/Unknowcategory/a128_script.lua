@@ -3,16 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 8000000 or l_0_0 < 10000 then
-  return mp.CLEAN
+local l_0_0 = pehdr.AddressOfEntryPoint + pehdr.ImageBase
+local l_0_1, l_0_2 = nil, nil
+if (hstrlog[1]).matched then
+  l_0_1 = 14
+  l_0_2 = (hstrlog[1]).VA
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("mkvie-porting-working", 1, true) then
-  return mp.CLEAN
+local l_0_3 = (pe.mmap_va)(l_0_2, 21)
+local l_0_4 = (mp.readu_u32)(l_0_3, l_0_1)
+local l_0_5 = l_0_2 + l_0_1 + 3 + l_0_4
+l_0_5 = (mp.bitand)(l_0_5, 4294967295)
+if l_0_5 == l_0_0 then
+  return mp.INFECTED
 end
-if l_0_1:find("slurm", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

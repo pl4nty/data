@@ -3,50 +3,50 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+local l_0_0 = {}
+l_0_0.ms = ""
+l_0_0.dx = ""
+local l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil, nil, nil
+if (this_sigattrlog[2]).matched then
+  l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
+else
+  if (this_sigattrlog[3]).matched then
+    l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p1)
+  else
+    if (this_sigattrlog[4]).matched then
+      l_0_1 = (string.lower)((this_sigattrlog[4]).utf8p1)
+    else
+      if (this_sigattrlog[5]).matched then
+        l_0_1 = (string.lower)((this_sigattrlog[5]).utf8p1)
+      else
+        if (this_sigattrlog[6]).matched then
+          l_0_1 = (string.lower)((this_sigattrlog[6]).utf8p1)
+        else
+          if (this_sigattrlog[7]).matched then
+            l_0_1 = (string.lower)((this_sigattrlog[7]).utf8p1)
+          end
+        end
+      end
+    end
+  end
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
+if (this_sigattrlog[8]).matched then
+  l_0_3 = (string.lower)((this_sigattrlog[8]).utf8p2)
+else
+  if (this_sigattrlog[9]).matched then
+    l_0_3 = (string.lower)((this_sigattrlog[9]).utf8p2)
+  end
 end
-if peattributes.epscn_writable == false then
-  return mp.CLEAN
+if l_0_1 ~= nil and l_0_3 ~= nil then
+  l_0_2 = (string.match)(l_0_1, "\\([^\\]+)$")
+  l_0_4 = l_0_2:sub(1, 2)
+  if l_0_0[l_0_4] then
+    l_0_3 = (string.match)(l_0_3, "\\([^\\]+)$")
+    if l_0_2 == l_0_3 then
+      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_1), 501759711)
+      return mp.INFECTED
+    end
+  end
 end
-if peattributes.firstsectwritable ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasappendeddata ~= true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW ~= 1952539694 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size < 16 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).RVA == 0 then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if (mp.bitand)((pesecs[pevars.epsec]).Characteristics, 2147483648) ~= 2147483648 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

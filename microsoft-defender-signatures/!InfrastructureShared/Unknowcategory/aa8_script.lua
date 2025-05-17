@@ -3,44 +3,42 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2, l_0_3, l_0_4 = nil, nil, nil
-for l_0_8,l_0_9 in ipairs(l_0_0) do
-  l_0_2 = (string.lower)(l_0_9.image_path)
-  l_0_3 = (string.find)(l_0_2, "/postgres", 1, true)
-  if l_0_3 ~= nil and l_0_4 ~= nil then
-    return mp.INFECTED
+local l_0_2 = nil
+local l_0_3 = nil
+local l_0_4 = "rdp-brute-"
+local l_0_5 = 100
+local l_0_6 = 30
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = 0
   end
-  -- DECOMPILER ERROR at PC36: Overwrote pending register: R4 in 'AssignReg'
-
-  l_0_3 = (string.find)(l_0_2, "/httpd", 1, true)
-  if l_0_3 ~= nil and l_0_4 ~= nil then
-    return mp.INFECTED
-  end
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R4 in 'AssignReg'
-
-  l_0_3 = (string.find)(l_0_2, "/nginx", 1, true)
-  if l_0_3 ~= nil and l_0_4 ~= nil then
-    return mp.INFECTED
-  end
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R4 in 'AssignReg'
-
-  l_0_3 = (string.find)(l_0_2, "/php-fpm7", 1, true)
-  if l_0_3 ~= nil and l_0_4 ~= nil then
-    return mp.INFECTED
-  end
-  -- DECOMPILER ERROR at PC84: Overwrote pending register: R4 in 'AssignReg'
-
-  l_0_3 = (string.find)(l_0_2, "/mysqld", 1, true)
-  if l_0_3 ~= nil and l_0_4 ~= nil then
-    return mp.INFECTED
-  end
-  -- DECOMPILER ERROR at PC100: Overwrote pending register: R4 in 'AssignReg'
-
-  l_0_3 = (string.find)(l_0_2, "/dnsmasq", 1, true)
-  if l_0_3 ~= nil and l_0_4 ~= nil then
-    return mp.INFECTED
+  do
+    if (this_sigattrlog[3]).matched then
+      local l_0_1 = nil
+    end
+    if l_0_2 ~= nil and l_0_3 ~= nil then
+      local l_0_7 = nil
+      local l_0_8, l_0_9 = 10
+      if not pcall(MpCommon.RollingQueueCreate, l_0_4 .. l_0_2, l_0_5, l_0_6, 0) then
+        return mp.CLEAN
+      end
+      if not pcall(MpCommon.RollingQueueAppend, l_0_9, l_0_3, "", l_0_6) then
+        return mp.CLEAN
+      end
+      if not pcall(MpCommon.RollingQueueCount, l_0_9) then
+        return mp.CLEAN
+      end
+      if l_0_8 <= l_0_7 then
+        pcall(MpCommon.RollingQueueErase, l_0_9)
+        return mp.INFECTED
+      end
+    end
+    do
+      do
+        do return mp.CLEAN end
+        -- WARNING: undefined locals caused missing assignments!
+      end
+    end
   end
 end
-return mp.CLEAN
 

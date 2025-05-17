@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) and l_0_1:match("([^\\]+)$") == "dllhost.exe" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 458752 and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,61 +3,62 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_2 = (mp.readu_u32)(l_0_0, 4)
 do
-  if (this_sigattrlog[4]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
-      local l_0_1 = (string.lower)((this_sigattrlog[5]).utf8p1)
+  if l_0_2 ~= 2332783616 then
+    local l_0_1 = 0
+    if l_0_2 ~= 2333176832 then
+      return mp.CLEAN
     else
-    end
-    -- DECOMPILER ERROR at PC63: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
-        local l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10 = (string.lower)((this_sigattrlog[7]).utf8p1)
-      else
-      end
-      -- DECOMPILER ERROR at PC79: Confused about usage of register: R0 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC86: Confused about usage of register: R0 in 'UnsetPending'
-
-      if not (this_sigattrlog[9]).matched or (string.lower)((this_sigattrlog[9]).utf8p1) ~= nil then
-        if ((string.lower)((this_sigattrlog[9]).utf8p1)):find(":\\windows\\", 1, true) or ((string.lower)((this_sigattrlog[9]).utf8p1)):find("\\program file", 1, true) then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC96: Confused about usage of register: R0 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC103: Confused about usage of register: R0 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC110: Confused about usage of register: R0 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC117: Confused about usage of register: R0 in 'UnsetPending'
-
-        if ((string.lower)((this_sigattrlog[9]).utf8p1)):find("\\plugins\\", 1, true) or ((string.lower)((this_sigattrlog[9]).utf8p1)):find("install", 1, true) or ((string.lower)((this_sigattrlog[9]).utf8p1)):find("\\ccm\\", 1, true) or ((string.lower)((this_sigattrlog[9]).utf8p1)):find("\\office\\", 1, true) then
-          return mp.CLEAN
-        end
-        local l_0_11, l_0_12 = , (bm.get_process_relationships)()
-        for l_0_16,l_0_17 in ipairs(l_0_12) do
-          local l_0_13 = nil
-          -- DECOMPILER ERROR at PC136: Confused about usage of register: R7 in 'UnsetPending'
-
-          if (string.find)((string.lower)(l_0_9.image_path), "\\wmiprvse.exe", 1, true) or (string.find)((string.lower)(l_0_9.image_path), "\\winrshost.exe", 1, true) then
-            return mp.INFECTED
-          end
-        end
-        return mp.CLEAN
-      end
-      do
-        return mp.CLEAN
-      end
+      l_0_1 = 3
     end
   end
+  local l_0_3, l_0_4 = , nil
+  -- DECOMPILER ERROR at PC41: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC48: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC54: Overwrote pending register: R4 in 'AssignReg'
+
+  if l_0_3 ~= 0 or nil ~= 1 then
+    return mp.CLEAN
+  end
+  if l_0_4 ~= 131 then
+    return mp.CLEAN
+  end
+  local l_0_5, l_0_6 = , nil
+  -- DECOMPILER ERROR at PC79: Overwrote pending register: R6 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC86: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC92: Overwrote pending register: R6 in 'AssignReg'
+
+  if l_0_3 ~= 0 or l_0_6 ~= nil then
+    return mp.CLEAN
+  end
+  local l_0_7, l_0_8 = , nil
+  -- DECOMPILER ERROR at PC112: Overwrote pending register: R8 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC119: Overwrote pending register: R7 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC125: Overwrote pending register: R8 in 'AssignReg'
+
+  if l_0_3 ~= 0 or l_0_8 ~= nil then
+    return mp.CLEAN
+  end
+  if l_0_3 == 0 then
+    (pe.mmap_patch_va)(pevars.sigaddr, "ÇE")
+    ;
+    (pe.mmap_patch_va)(pevars.sigaddr + 7 + l_0_3, "\235\b")
+  else
+    ;
+    (pe.mmap_patch_va)(pevars.sigaddr, "Ç…")
+    ;
+    (pe.mmap_patch_va)(pevars.sigaddr + 7 + l_0_3, "\235\014")
+  end
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 4 + l_0_3, "\000\000\000")
+  return mp.CLEAN
 end
 

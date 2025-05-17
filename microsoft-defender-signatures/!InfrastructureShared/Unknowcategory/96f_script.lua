@@ -3,28 +3,44 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SCRIPT:Exploit:HTML/NeutrinoEK.G!obj") then
-  local l_0_0 = (string.lower)(tostring(headerpage))
-  local l_0_1 = (string.match)(l_0_0, "(<object .-classid=\"clsid:d27cdb6e.-</object>)")
-  if l_0_1 then
-    local l_0_2 = (string.match)(l_0_1, "<object.- id=\"(%l+)\".->")
-    local l_0_3 = (string.match)(l_0_1, "<object.- height=\"(%d+)\".->")
-    local l_0_4 = (string.match)(l_0_1, "<object.- width=\"(%d+).->")
-    if l_0_2 and l_0_3 and l_0_4 then
-      local l_0_5 = (string.match)(l_0_1, "(<param .-name=\"movie\".->)")
-      if l_0_5 then
-        local l_0_6 = (string.match)(l_0_5, "value=\"(/%w+/.-)\".->")
-        if l_0_6 then
-          local l_0_7 = (string.match)(l_0_1, "(<embed .-allowscriptaccess=\"samedomain\".->)")
-          if l_0_7 and l_0_2 == (string.match)(l_0_7, "name=\"(%l+)\".->") and l_0_6 == (string.match)(l_0_7, "src=\"(/%w+/.-)\".->") and l_0_4 == (string.match)(l_0_7, "width=\"(%d+)\".->") and l_0_3 == (string.match)(l_0_7, "height=\"(%d+)\".->") then
-            return mp.INFECTED
-          end
-        end
-      end
-    end
-  end
-end
-do
+if mp.HEADERPAGE_SZ < 128 or mp.FOOTERPAGE_SZ < 22 then
   return mp.CLEAN
 end
+if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 <= 276 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = 276
+local l_0_2 = (mp.readfile)((mp.getfilesize)() - l_0_1, l_0_1)
+;
+(mp.readprotection)(true)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = mp.FOOTERPAGE_SZ - 21
+if (mp.readu_u32)(footerpage, l_0_3) ~= 101010256 then
+  l_0_3 = (string.find)(l_0_2, "PK\005\006", 1, true)
+  if l_0_3 == nil then
+    return mp.CLEAN
+  end
+  l_0_3 = l_0_3 + mp.FOOTERPAGE_SZ - l_0_1
+end
+;
+(mp.UfsSetMetadataBool)("Lua:FileInZip", true)
+local l_0_4 = (mp.readu_u16)(footerpage, l_0_3 + 10)
+if l_0_4 > 100 then
+  (mp.set_mpattribute)("//Lua:MoreThan100FilesFoldersInZip")
+  return mp.CLEAN
+end
+if l_0_4 > 10 then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("//Lua:LessThanTenFilesFoldersInZip")
+return mp.INFECTED
 

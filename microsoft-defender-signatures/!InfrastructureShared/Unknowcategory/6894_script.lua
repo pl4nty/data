@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched then
+if (mp.get_mpattribute)("pea_isexe") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

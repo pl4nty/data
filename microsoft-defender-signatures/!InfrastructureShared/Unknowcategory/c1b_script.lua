@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:LoadMoney")
+(mp.set_mpattribute)("PUA:Block:SquareNet")
 return mp.INFECTED
 

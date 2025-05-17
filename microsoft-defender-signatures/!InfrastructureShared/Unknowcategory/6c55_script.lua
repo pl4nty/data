@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "xl/drawings/_rels/drawing1.xml.rels") ~= nil then
-  return mp.INFECTED
+if (hstrlog[5]).matched then
+  (mp.set_mpattribute)("Lowfi:Komodia:WFP:NoVuln")
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

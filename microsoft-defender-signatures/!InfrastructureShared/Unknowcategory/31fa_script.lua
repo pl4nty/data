@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.has_msilresources then
+if peattributes.hasstandardentry then
   return mp.CLEAN
 end
 return mp.INFECTED

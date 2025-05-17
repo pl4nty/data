@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 7 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 2097152 then
+if mp.HSTR_WEIGHT >= 5 then
   return mp.INFECTED
+end
+if (hstrlog[1]).matched and (hstrlog[2]).matched then
+  return mp.INFECTED
+end
+if (hstrlog[1]).matched or (hstrlog[2]).matched then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

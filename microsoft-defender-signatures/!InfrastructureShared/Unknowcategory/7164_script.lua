@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 262144 and l_0_0 <= 458752 and peattributes.isdll == true and peattributes.hasexports == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 4, 4), 1), "<")
+return mp.INFECTED
 

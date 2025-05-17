@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
+if (mp.getfilesize)() > 339417 then
   return mp.CLEAN
 end
-if (string.match)(l_0_0, "extensions") ~= nil then
-  return mp.INFECTED
+if (mp.get_mpattribute)("MpAPILimitReached") then
+  (pe.set_peattribute)("disable_apicall_limit", true)
 end
-return mp.CLEAN
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

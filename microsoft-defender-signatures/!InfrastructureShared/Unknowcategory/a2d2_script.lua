@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 and hstrlog[6] == 0 then
-  return mp.LOWFI
+if (this_sigattrlog[13]).matched and (this_sigattrlog[14]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[13]).p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[14]).p1)
+  if l_0_0 and (string.find)(l_0_0, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") and l_0_1 and (string.len)(l_0_1) > 24 and (string.find)(l_0_1, "^/[%w/_%-=]+$") then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 and (hstrlog[10]).hitcount == 0 and hstrlog[11] == 0 and hstrlog[12] == 0 then
-  return mp.LOWFI
+do
+  return mp.CLEAN
 end
-return mp.INFECTED
 

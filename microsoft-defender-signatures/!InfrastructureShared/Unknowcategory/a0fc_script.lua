@@ -3,23 +3,10 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (string.find)(l_0_0, "frombase64string", 1, true) and (string.find)(l_0_0, "wsqmcons", 1, true) and (string.find)(l_0_0, "iex", 1, true) then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 2, 4)
+local l_0_1 = (string.byte)(l_0_0, 1) + (string.byte)(l_0_0, 2) * 256 + (string.byte)(l_0_0, 3) * 65536 + (string.byte)(l_0_0, 4) * 16777216
+if (pe.mmap_va)(l_0_1, 7) == "%x.exe\000" then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

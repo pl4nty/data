@@ -3,23 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-;
-(mp.readprotection)(false)
-if l_0_0 < 256 then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-if (mp.readu_u16)(headerpage, 1) ~= 35615 then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("\\windows\\adfs\\", 1, true) or l_0_0:find("\\windows\\microsoft.net\\assembly\\gac_msil\\microsoft.identityserver", 1, true) then
+  return mp.INFECTED
 end
-if (mp.readu_u16)(headerpage, 2) ~= 2187 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readu_u16)(headerpage, 10)
-if l_0_1 > 31245 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("Lua:SingleFileInGZip")
 return mp.CLEAN
 

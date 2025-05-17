@@ -3,30 +3,41 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports then
-  local l_0_0 = ((pehdr.DataDirectory)[1]).RVA
-  local l_0_1 = ((pehdr.DataDirectory)[1]).Size
-  local l_0_2 = (pe.foffset_rva)(l_0_0)
-  ;
-  (mp.readprotection)(false)
-  local l_0_3 = (mp.readfile)(l_0_2, l_0_1)
-  local l_0_4 = (mp.ror32)((mp.readu_u32)(l_0_3, 20), 8)
-  if l_0_4 ~= 1 then
-    return mp.CLEAN
-  end
-  local l_0_5 = (mp.ror32)((mp.readu_u32)(l_0_3, 40), 8)
-  local l_0_6 = (mp.readfile)(0, (mp.getfilesize)())
-  local l_0_7 = (mp.ror32)((mp.readu_u32)(l_0_6, 60), 8)
-  local l_0_8 = (mp.ror32)((mp.readu_u32)(l_0_6, l_0_7 + 40), 8)
-  if l_0_8 == l_0_5 then
-    return mp.CLEAN
-  end
-  ;
-  (mp.writeu_u32)(l_0_6, l_0_7 + 40 + 1, l_0_5)
-  ;
-  (mp.vfo_add_buffer)(l_0_6, "[ExportEP]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-end
-do
+if peattributes.hasexports == true then
   return mp.CLEAN
 end
+if peattributes.isdll ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 6 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 1633972782 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 233 then
+  return mp.CLEAN
+end
+if epcode[4] ~= 255 then
+  return mp.CLEAN
+end
+if epcode[5] ~= 255 then
+  return mp.CLEAN
+end
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)(1024, 1)
+if l_0_0:byte(1) ~= 80 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

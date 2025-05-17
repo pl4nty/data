@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("ValidDigitalSignature") then
-  return mp.CLEAN
+local l_0_0 = (bm.get_process_relationships)()
+for l_0_4,l_0_5 in ipairs(l_0_0) do
+  if l_0_5.image_path ~= nil then
+    (bm.add_related_file)(l_0_5.image_path)
+  end
 end
 return mp.INFECTED
 

@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_isexe") then
-    local l_0_0 = (pe.get_versioninfo)()
-    if l_0_0.InternalName == "VideoProjectsLauncher" or l_0_0.CompanyName == "Microsoft Corporation" or l_0_0.OriginalFilename == "VideoProjectsLauncher.exe" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 13 then
+  (mp.set_mpattribute)("PUA:Block:GenoilEthMiner")
+  return mp.INFECTED
 end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_genoil")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_genoil")
+end
+return mp.CLEAN
 

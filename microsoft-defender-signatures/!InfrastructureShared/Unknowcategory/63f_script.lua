@@ -3,30 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(mp.getfilename, mp.FILEPATH_QUERY_FNAME)
-if l_0_0 then
-  local l_0_2 = (string.sub)(l_0_1, -5)
-  if l_0_2 ~= ".lili" and l_0_2 ~= ".hoho" and l_0_2 ~= ".mama" and l_0_2 ~= ".crcr" then
-    l_0_2 = (string.sub)(l_0_1, -4)
-    if l_0_2 ~= ".log" then
-      return mp.CLEAN
-    end
-  end
-  local l_0_3 = headerpage[1]
-  local l_0_4 = (mp.readu_u32)(headerpage, 18)
-  if l_0_3 > 2 then
-    return mp.CLEAN
-  end
-  if l_0_4 ~= (mp.getfilesize)() - 21 then
-    return mp.CLEAN
-  end
-  if l_0_4 == 0 then
-    return mp.CLEAN
-  end
-  ;
-  (mp.set_mpattribute)("BM_KnotCryptDataFile")
-end
-do
+local l_0_0 = (this_sigattrlog[2]).utf8p1
+if not l_0_0 then
   return mp.CLEAN
 end
+l_0_0 = (string.lower)(l_0_0)
+if not l_0_0 or (string.len)(l_0_0) < 5 then
+  return mp.CLEAN
+end
+local l_0_1 = {}
+l_0_1[".jpg"] = true
+l_0_1.jpeg = true
+l_0_1[".png"] = true
+l_0_1[".gif"] = true
+l_0_1[".bmp"] = true
+l_0_1.tiff = true
+l_0_1[".tif"] = true
+l_0_1[".ppm"] = true
+l_0_1[".pnm"] = true
+l_0_1[".pgm"] = true
+l_0_1[".pbm"] = true
+if l_0_1[l_0_0:sub(-4)] and ((string.find)(l_0_0, "%appdata%\\", 1, true) or (string.find)(l_0_0, "appdata\\roaming\\", 1, true)) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

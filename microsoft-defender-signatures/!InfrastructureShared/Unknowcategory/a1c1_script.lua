@@ -3,30 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
-      if (sysio.IsFileExists)(R6_PC25) then
-        (bm.add_related_file)(R6_PC25)
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+if l_0_0:find(" /n ", 1, true) == nil then
+  return mp.CLEAN
 end
+local l_0_1 = "|/xb|/in|/un|/u0|/u1|/rt|/i0|/i1|/i2|/b1|/p1|/up|/va|/vxxv|/mkey|/cp|"
+local l_0_2 = l_0_0:match("/i:\"(/%w+)\"")
+if l_0_2 == nil or l_0_2 == "" or l_0_1:find("|" .. l_0_2 .. "|", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,12 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.INFECTED
-else
-  if (mp.get_mpattribute)("MHSTR:MacroDownload") and (mp.get_mpattribute)("MHSTR:MacroJustOpen") then
-    return mp.INFECTED
-  end
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "u", 1, true) - 1, "êê")
+return mp.INFECTED
 

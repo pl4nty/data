@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 332 then
-  (mp.changedetectionname)(805306466)
+if (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

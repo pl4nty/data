@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-local l_0_1 = (sysio.GetProcessFromFileName)(l_0_0)
-if l_0_1 == nil or #l_0_1 == 0 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("pea_no_exports") and not (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 786432 and (mp.getfilesize)() < 819200 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

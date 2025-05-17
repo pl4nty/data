@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\mmc.exe") then
-  return mp.CLEAN
-else
-  if (string.find)(l_0_0, "\\officeclicktorun.exe") then
-    return mp.CLEAN
-  end
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 15, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

@@ -3,102 +3,93 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).wp2 ~= nil then
+      local l_0_1 = (this_sigattrlog[2]).utf8p2
+    else
+    end
+    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).wp2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).wp2 ~= nil then
+        local l_0_2 = (this_sigattrlog[4]).utf8p2
+      else
+      end
+      -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
+
+      do
+        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).wp2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).wp2 ~= nil then
+          local l_0_3 = (this_sigattrlog[6]).utf8p2
+        else
+        end
+        -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
+
+        do
+          if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).wp2 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).wp2 ~= nil then
+            local l_0_4 = (this_sigattrlog[8]).utf8p2
+          else
+          end
+          -- DECOMPILER ERROR at PC152: Overwrote pending register: R0 in 'AssignReg'
+
+          do
+            if (not (this_sigattrlog[10]).matched or (this_sigattrlog[10]).wp2 == nil or (this_sigattrlog[11]).matched) and (this_sigattrlog[11]).wp2 ~= nil then
+              local l_0_5 = (this_sigattrlog[10]).utf8p2
+            else
+            end
+            -- DECOMPILER ERROR at PC180: Overwrote pending register: R0 in 'AssignReg'
+
+            do
+              if (not (this_sigattrlog[12]).matched or (this_sigattrlog[12]).wp2 == nil or (this_sigattrlog[13]).matched) and (this_sigattrlog[13]).wp2 ~= nil then
+                local l_0_6 = (this_sigattrlog[12]).utf8p2
+              else
+              end
+              -- DECOMPILER ERROR at PC208: Overwrote pending register: R0 in 'AssignReg'
+
+              do
+                if (not (this_sigattrlog[14]).matched or (this_sigattrlog[14]).wp2 == nil or (this_sigattrlog[15]).matched) and (this_sigattrlog[15]).wp2 ~= nil then
+                  local l_0_7, l_0_8, l_0_9, l_0_10, l_0_17 = (this_sigattrlog[14]).utf8p2
+                else
+                end
+                -- DECOMPILER ERROR at PC227: Confused about usage of register: R0 in 'UnsetPending'
+
+                if not (this_sigattrlog[16]).matched or (this_sigattrlog[16]).wp2 == nil or (this_sigattrlog[16]).utf8p2 ~= nil then
+                  local l_0_11 = nil
+                  for l_0_15,l_0_16 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[16]).utf8p2)) do
+                    local l_0_12 = nil
+                    -- DECOMPILER ERROR at PC235: Confused about usage of register: R6 in 'UnsetPending'
+
+                    if (sysio.IsFileExists)(R6_PC235) then
+                      (bm.add_related_file)(R6_PC235)
+                    end
+                  end
+                end
+                do
+                  local l_0_18 = nil
+                  if (this_sigattrlog[17]).matched and (this_sigattrlog[17]).wp1 ~= nil then
+                    l_0_18 = (this_sigattrlog[17]).utf8p1
+                  end
+                  if l_0_18 ~= nil then
+                    l_0_18 = (mp.ContextualExpandEnvironmentVariables)(l_0_18)
+                    ;
+                    (bm.add_related_file)(l_0_18)
+                  end
+                  return mp.INFECTED
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
 end
-if peattributes.packed == true then
-  return mp.CLEAN
-end
-if peattributes.packersigmatched == true then
-  return mp.CLEAN
-end
-if peattributes.hasexports == true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.is_delphi == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections <= 2 then
-  return mp.CLEAN
-end
-if pehdr.ImageBase ~= 268435456 then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-if pehdr.FileAlignment < 512 then
-  return mp.CLEAN
-end
-if pehdr.FileAlignment > 4096 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfStackReserve ~= 1048576 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode <= 4096 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode >= 524288 then
-  return mp.CLEAN
-end
-if pehdr.MajorOperatingSystemVersion ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.MinorOperatingSystemVersion ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.MajorSubsystemVersion ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.MinorSubsystemVersion ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData <= 0 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData >= 524288 then
-  return mp.CLEAN
-end
-local l_0_0 = pehdr.SizeOfCode - (pesecs[pevars.epsec]).SizeOfRawData
-if (mp.bitand)(l_0_0, 2147483648) == 2147483648 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size >= 336 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size >= 512 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).Size ~= 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

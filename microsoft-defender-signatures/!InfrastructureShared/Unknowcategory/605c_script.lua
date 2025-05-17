@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".lk90" and (pesecs[8]).Name == "8s7d" then
+if (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" then
   return mp.INFECTED
 end
 return mp.CLEAN

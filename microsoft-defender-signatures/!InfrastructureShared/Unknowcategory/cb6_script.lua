@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(bm.add_action)("EmsScan", 5000)
+(bm.add_action)("EmsScan", 3000)
 return mp.INFECTED
 

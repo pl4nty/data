@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:SmartEngine:Bit")
+return mp.INFECTED
 

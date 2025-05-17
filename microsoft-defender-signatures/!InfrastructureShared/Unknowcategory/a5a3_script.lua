@@ -3,25 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
+if (pesecs[pehdr.NumberOfSections]).VirtualSize ~= 8192 then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
-if (string.find)(l_0_1, "sdelete", 1, true) ~= nil then
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData ~= 8192 then
   return mp.CLEAN
 end
-local l_0_2 = (versioning.GetLocaleIdentifier)()
-if l_0_2 == 1058 or (MpCommon.QueryPersistContextNoPath)("MacMatchesHighRiskProtectionTarget", "on") then
-  local l_0_3 = (mp.GetParentProcInfo)()
-  if l_0_3 ~= nil then
-    local l_0_4 = (string.lower)((string.sub)(l_0_3.image_path, -12))
-    if (string.find)(l_0_4, "svchost.exe", 1, true) ~= nil or (string.find)(l_0_4, "wmiprvse.exe", 1, true) ~= nil or l_0_4 == nil then
-      return mp.INFECTED
-    end
-  end
-end
-do
+if (pesecs[1]).NameDW ~= 2019914798 then
   return mp.CLEAN
 end
+if (pesecs[1]).Characteristics ~= 1610612768 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).Characteristics ~= 3758096448 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage ~= 24576 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 3 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size ~= 80 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[6]).Size ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:CpuMulti")
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_cpumulti")
-else
+if (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT") then
+  (mp.set_mpattribute)("lua_codepatch_obfuscator_xt_1")
   ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_cpumulti")
+  (pe.mmap_patch_va)(pevars.sigaddr + 17, "\235 ")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 49, "\235")
 end
 return mp.CLEAN
 

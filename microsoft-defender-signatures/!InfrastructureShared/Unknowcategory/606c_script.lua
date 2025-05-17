@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "AppxManifest.xml") ~= nil then
+if (pesecs[4]).Name == ".lk90" and (pesecs[8]).Name == "8s7d" then
   return mp.INFECTED
 end
 return mp.CLEAN

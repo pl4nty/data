@@ -3,13 +3,16 @@
 
 -- params : ...
 -- function num : 0
-do
-  if ((this_sigattrlog[5]).matched or this_sigattrlog[6]) and (this_sigattrlog[11]).matched then
-    local l_0_0 = (this_sigattrlog[11]).utf8p2
-    if l_0_0 and (string.find)(l_0_0, "/upn", 1, true) then
-      return mp.CLEAN
-    end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
+  if l_0_1 ~= nil and l_0_1.image_path ~= nil then
+    local l_0_2 = (string.lower)(l_0_1.image_path)
+    ;
+    (bm.add_threat_file)(l_0_2)
   end
+end
+do
   return mp.INFECTED
 end
 

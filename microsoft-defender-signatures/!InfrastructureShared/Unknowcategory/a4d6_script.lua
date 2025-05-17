@@ -3,33 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.match)(l_0_0, "([^\\]-[^\\%.]+)$")
+local l_0_0 = pehdr.ImageBase + (pesecs[1]).VirtualAddress
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+if (string.sub)(l_0_1, 1, 4) == "(re)" then
+  (mp.changedetectionname)(805306418)
 end
-if l_0_0 == nil then
-  return mp.CLEAN
+if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3898037843 and (mp.readu_u32)(epcode, 13) == 4278738315 and (mp.readu_u32)(epcode, 17) == 1703089267 and (mp.readu_u16)(epcode, 21) == 252 then
+  (mp.changedetectionname)(805306418)
 end
-local l_0_1 = nil
-if (this_sigattrlog[3]).matched then
-  l_0_1 = (this_sigattrlog[3]).utf8p2
-end
-if l_0_1 == nil and (string.len)(l_0_1) < 3 then
-  return mp.CLEAN
-end
-local l_0_2 = nil
-if (this_sigattrlog[4]).matched then
-  l_0_2 = (this_sigattrlog[4]).utf8p1
-  l_0_2 = (string.match)(l_0_2, "([^\\]-[^\\%.]+)$")
-end
-if l_0_2 == nil and (string.len)(l_0_2) < 3 then
-  return mp.CLEAN
-end
-if l_0_0 == l_0_2 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, l_0_0, 1, true) and (string.find)(l_0_1, l_0_2, 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -4,16 +4,18 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_1 == "passwords.lnk" or l_0_1 == "..lnk" then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-    if (string.len)(l_0_2) < 4 or (string.len)(l_0_2) > 11 then
-      return mp.CLEAN
-    end
-    local l_0_3 = (string.sub)(l_0_2, -4)
-    if l_0_3 == ".exe" and (mp.getfilesize)() < 512 then
-      (mp.set_mpattribute)("Lua:DropSuspiciousLnkFiles")
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+  if l_0_1 then
+    l_0_1 = (string.lower)(l_0_1)
+    if l_0_1 == "msiexec.exe" then
+      local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+      if l_0_2 then
+        l_0_2 = (string.lower)(l_0_2)
+        if l_0_2:find("^kb[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]?[0-9]?%.exe$") == 1 then
+          (mp.set_mpattribute)("Lua:ContextualDropMsiexecKB.A")
+        end
+      end
     end
   end
 end

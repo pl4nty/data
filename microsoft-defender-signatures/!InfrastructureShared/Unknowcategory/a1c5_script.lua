@@ -3,18 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -12) == "explorer.exe" then
+-- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+local l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
+if l_0_0 == nil or (string.find)(l_0_1, "\\windows\\system32\\", 1, true) or (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
   return mp.CLEAN
 end
-if (string.sub)(l_0_0, -10) == "chrome.exe" then
-  return mp.CLEAN
-end
-if (string.sub)(l_0_0, -11) == "control.exe" then
-  return mp.CLEAN
-end
-if (string.sub)(l_0_0, -17) == "runtimebroker.exe" then
-  return mp.CLEAN
-end
+;
+(bm.add_related_file)(l_0_1)
 return mp.INFECTED
 

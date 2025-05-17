@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EBP)
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 8)
-local l_0_2 = (mp.readu_u32)(l_0_1, 3)
-l_0_1 = (pe.mmap_va)((mp.bitand)(l_0_0 + l_0_2, 4294967295), 4)
-local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1
-l_0_1 = (pe.mmap_va)(l_0_3, 4)
-if (mp.readu_u32)(l_0_1, 1) == 707406378 then
-  return mp.SUSPICIOUS
+do
+  if (mp.get_mpattribute)("pea_amd64_image") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 86016 and (mp.getfilesize)() < 114688 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

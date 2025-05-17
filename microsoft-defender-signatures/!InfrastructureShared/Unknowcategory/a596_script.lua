@@ -3,29 +3,39 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_ESP) + 4, 4)
-l_0_0 = (mp.readu_u32)(l_0_0, 1)
-local l_0_1 = (pe.moffset_va)(l_0_0)
-;
-(mp.readprotection)(false)
-local l_0_2 = (pe.mmap_va)(l_0_1, 4)
-l_0_2 = (mp.readu_u32)(l_0_2, 1)
-if l_0_2 ~= 909132101 then
+local l_0_0 = (pe.get_regval)(pe.REG_ESP)
+local l_0_1 = (pe.mmap_va)(l_0_0, 16)
+local l_0_2 = (mp.readu_u32)(l_0_1, 9)
+local l_0_3 = (mp.readu_u32)(l_0_1, 13)
+do
+  if l_0_2 == 2088763392 then
+    local l_0_4 = (pe.mmap_va)(l_0_3, 12)
+    if l_0_4 == "MpVmp32Entry" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    if l_0_4 == "MpSehHandler" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    if l_0_4 == "MpExitThread" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    if l_0_4 == "MpReportEven" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    if l_0_4 == "MpStartProce" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+    l_0_4 = (pe.mmap_va)(l_0_3, 10)
+    if l_0_4 == "MpFinalize" then
+      (pe.mmap_patch_va)(l_0_3, "X")
+      return mp.LOWFI
+    end
+  end
   return mp.CLEAN
 end
-l_0_2 = (pe.mmap_va)(l_0_1 - 4, 4)
-l_0_2 = (mp.readu_u32)(l_0_2, 1)
-if l_0_2 == 557012289 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("Lua:Autoit!Modified")
-local l_0_3 = (mp.getfilesize)()
-if l_0_3 < 65536 or l_0_3 > 5242880 then
-  return mp.CLEAN
-end
-local l_0_4 = (mp.readfile)(l_0_0 - 20, l_0_3 - (l_0_0 - 20))
-;
-(mp.vfo_add_buffer)(l_0_4, "[AutoIT_Script]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.CLEAN
 

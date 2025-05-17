@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  (bm.request_SMS)(l_0_0.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
+if (mp.bitand)((mp.readu_u32)(headerpage, 1), 16777215) ~= 5461830 then
+  return mp.CLEAN
 end
-return mp.INFECTED
+if (mp.isparanoid)() then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

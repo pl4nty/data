@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "\\public\\mictray.log") ~= nil then
+if (mp.ispackedwith)("AutoIt_+") and (mp.getfilesize)() >= 4194304 and not peattributes.isreported then
   return mp.INFECTED
 end
 return mp.CLEAN

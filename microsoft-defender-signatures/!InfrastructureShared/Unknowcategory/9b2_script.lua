@@ -3,73 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0.integrity_level <= MpCommon.SECURITY_MANDATORY_MEDIUM_RID then
-  local l_0_1 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)
-  if l_0_0.integrity_level < l_0_1.IntegrityLevel then
-    local l_0_2 = nil
-    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
-      if (sigattr_tail[l_0_6]).matched and (sigattr_tail[l_0_6]).attribute == 16393 then
-        l_0_2 = (sigattr_tail[l_0_6]).utf8p2
-        if l_0_2 ~= nil then
-          local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_2)
-          for l_0_11,l_0_12 in ipairs(l_0_7) do
-            l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
-            if (sysio.IsFileExists)(l_0_12) then
-              (bm.add_related_file)(l_0_12)
-            end
-          end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if mp.SCANREASON_ONMODIFIEDHANDLECLOSE == l_0_0 and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true and (mp.get_mpattribute)("HSTR:RenoFlossLoader") then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
+  local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+  if l_0_2 ~= nil and l_0_1 ~= nil then
+    (mp.ReportLowfi)((MpCommon.PathToWin32Path)(l_0_1) .. "\\" .. l_0_2, 2439729955)
+  end
+end
+do
+  if mp.SCANREASON_ONOPEN == l_0_0 and (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) == true then
+    local l_0_3, l_0_4 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+    local l_0_5 = (string.lower)((mp.ContextualExpandEnvironmentVariables)("%temp%") .. "\\" .. "rarsfx")
+    if l_0_3:find(l_0_5, 1, true) ~= nil then
+      local l_0_6 = {}
+      l_0_6["ccmexec.exe"] = ""
+      l_0_6["tpvcgateway.exe"] = ""
+      l_0_6["cmrcviewer.exe"] = ""
+      if l_0_6[l_0_4] then
+        local l_0_7 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
+        local l_0_8 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+        if l_0_8 ~= nil and l_0_7 ~= nil then
+          (mp.ReportLowfi)((MpCommon.PathToWin32Path)(l_0_7) .. "\\" .. l_0_8, 2439729955)
+          return mp.INFECTED
         end
       end
     end
-    if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p2 ~= nil then
-      l_0_2 = (this_sigattrlog[7]).utf8p2
-    else
-      if (this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p2 ~= nil then
-        l_0_2 = (this_sigattrlog[8]).utf8p2
-      else
-        if (this_sigattrlog[9]).matched and (this_sigattrlog[9]).utf8p2 ~= nil then
-          l_0_2 = (this_sigattrlog[9]).utf8p2
-        else
-          if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
-            l_0_2 = (this_sigattrlog[10]).utf8p1
-          else
-            if (this_sigattrlog[11]).matched and (this_sigattrlog[11]).utf8p1 ~= nil then
-              l_0_2 = (this_sigattrlog[11]).utf8p1
-            end
-          end
-        end
-      end
-    end
-    if l_0_2 ~= nil then
-      local l_0_13 = nil
-      l_0_13 = l_0_13((mp.GetExecutablesFromCommandLine)(l_0_2))
-      for l_0_17,l_0_18 in l_0_13 do
-        local l_0_18 = nil
-        l_0_18 = mp
-        l_0_18 = l_0_18.ContextualExpandEnvironmentVariables
-        l_0_18 = l_0_18(l_0_17)
-        l_0_17 = l_0_18
-        l_0_18 = sysio
-        l_0_18 = l_0_18.IsFileExists
-        l_0_18 = l_0_18(l_0_17)
-        if l_0_18 then
-          l_0_18 = mp
-          l_0_18 = l_0_18.ReportLowfi
-          l_0_18(l_0_17, 2668059089)
-        end
-      end
-    end
-    do
-      do return mp.INFECTED end
-      -- DECOMPILER ERROR at PC163: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
-      l_0_1 = mp
-      l_0_1 = l_0_1.CLEAN
-      do return l_0_1 end
-      -- DECOMPILER ERROR at PC166: Confused about usage of register R3 for local variables in 'ReleaseLocals'
-
-    end
+  end
+  do
+    return mp.CLEAN
   end
 end
 

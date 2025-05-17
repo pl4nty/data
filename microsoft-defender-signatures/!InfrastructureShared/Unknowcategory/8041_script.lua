@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.INFECTED
-else
-  if (hstrlog[2]).matched then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
+if peattributes.x86_image and peattributes.isdll == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

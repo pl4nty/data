@@ -3,12 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 273152 and (mp.getfilesize)() > 112640 and peattributes.isdll and peattributes.hasexports then
-  if peattributes.dt_error_heur_exit_criteria then
-    (pe.set_peattribute)("deep_analysis", true)
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
-  ;
-  (pe.reemulate)()
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R6 in 'UnsetPending'
+
+    if (sysio.IsFileExists)(R6_PC23) then
+      (bm.add_related_file)(R6_PC23)
+    end
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
 

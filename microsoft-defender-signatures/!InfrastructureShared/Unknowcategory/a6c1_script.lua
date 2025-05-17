@@ -3,36 +3,73 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
 
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1 = (this_sigattrlog[3]).utf8p1
+    else
+    end
+    -- DECOMPILER ERROR at PC43: Overwrote pending register: R0 in 'AssignReg'
 
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+    do
+      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
+        local l_0_2 = (this_sigattrlog[5]).utf8p1
+      else
+      end
+      -- DECOMPILER ERROR at PC61: Overwrote pending register: R0 in 'AssignReg'
 
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+      do
+        if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
+          local l_0_3 = (this_sigattrlog[7]).utf8p1
+        else
+        end
+        -- DECOMPILER ERROR at PC79: Overwrote pending register: R0 in 'AssignReg'
 
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+        do
+          if not (this_sigattrlog[9]).matched or (this_sigattrlog[10]).matched then
+            local l_0_4 = (this_sigattrlog[9]).utf8p1
+          end
+          -- DECOMPILER ERROR at PC80: Confused about usage of register: R0 in 'UnsetPending'
 
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+          if l_0_4 == nil then
+            return mp.CLEAN
+          end
+          -- DECOMPILER ERROR at PC87: Confused about usage of register: R0 in 'UnsetPending'
 
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+          local l_0_5 = (string.lower)(l_0_4)
+          -- DECOMPILER ERROR at PC101: Overwrote pending register: R2 in 'AssignReg'
 
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+          do
+            if (this_sigattrlog[11]).matched then
+              local l_0_7 = nil
+            end
+            if l_0_5 ~= nil and nil ~= nil then
+              local l_0_6 = (string.match)(l_0_5, "\\([^\\]+)$")
+              -- DECOMPILER ERROR at PC120: Confused about usage of register: R2 in 'UnsetPending'
 
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
-
-if (((((((hstrlog[1]).matched or (hstrlog[2]).matched or not (hstrlog[4]).matched) and (hstrlog[10]).matched) or not (hstrlog[18]).matched) and (hstrlog[24]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) + ((hstrlog[17]).matched and 1 or 0) + ((hstrlog[23]).matched and 1 or 0) + ((hstrlog[25]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+              if l_0_6:sub(1, 2) == "ms" then
+                local l_0_8 = (string.match)(nil, "\\([^\\]+)$")
+                if l_0_6 == l_0_8 then
+                  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_5), 4199551960)
+                  return mp.INFECTED
+                end
+              end
+            end
+            do
+              return mp.CLEAN
+            end
+          end
+        end
+      end
+    end
+  end
 end
-return mp.CLEAN
 

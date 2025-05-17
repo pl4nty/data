@@ -3,51 +3,41 @@
 
 -- params : ...
 -- function num : 0
-split_path = function(l_1_0)
+Infrastructure_ScanSuweezy = function(l_1_0)
   -- function num : 0_0
-  local l_1_1 = string.match
-  local l_1_2 = l_1_0
-  do
-    local l_1_3 = "(.-)([^\\]-([^\\%.]+))$"
-    do return l_1_1(l_1_2, l_1_3) end
-    -- DECOMPILER ERROR at PC6: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+  local l_1_1 = false
+  local l_1_2 = nil
+  local l_1_3 = (sysio.RegOpenKey)(l_1_0)
+  if l_1_3 then
+    local l_1_4 = (sysio.RegEnumValues)(l_1_3)
+    for l_1_8,l_1_9 in pairs(l_1_4) do
+      local l_1_10 = (string.lower)(l_1_9)
+      if l_1_10:find("^.:\\users\\ms.default\\") or l_1_10:find("^.:\\documents and settings\\ms.default\\") or l_1_10:find("^.:\\users\\msuser.default\\") or l_1_10:find("^.:\\documents and settings\\msuser.default\\") or l_1_10:find("^.:\\users\\soeasyhelper\\") or l_1_10:find("^.:\\users\\undp\\") or l_1_10:find("^.:\\documents and settings\\undp\\") or l_1_10:find("^.:\\program files\\undp\\") or l_1_10:find("^.:\\program files (x86)\\undp\\") or l_1_10:find("^.:\\users\\udpdp\\") or l_1_10:find("^.:\\documents and settings\\udpdp\\") or l_1_10:find("^.:\\program files\\udpdp\\") or l_1_10:find("^.:\\program files (x86)\\udpdp\\") or l_1_10:find("^.:\\program files\\ms.default\\") or l_1_10:find("^.:\\program files\\msuser.default\\") or l_1_10:find("^.:\\program files (x86)\\ms.default\\") or l_1_10:find("^.:\\program files (x86)\\msuser.default\\") then
+        (MpDetection.ReportResource)("regkeyvalue", l_1_0 .. "\\\\" .. l_1_9, 805306490, false)
+      end
+      if (string.len)(l_1_9) > 1 then
+        (MpDetection.ScanResource)("regkeyvalue://" .. l_1_0 .. "\\\\" .. l_1_9)
+      end
+      if not l_1_1 and (string.sub)(l_1_10, -1) == "\\" and (string.sub)(l_1_10, -2) ~= ":\\" then
+        l_1_1 = true
+        l_1_2 = l_1_9
+      end
+    end
+    if l_1_1 then
+      for l_1_14,l_1_15 in pairs(l_1_4) do
+        local l_1_16 = (string.lower)(l_1_15)
+        if l_1_16 == (string.lower)((string.sub)(l_1_2, 1, 1)) .. ":\\" then
+          do
+            do
+              (MpDetection.ReportResource)("regkeyvalue", l_1_0 .. "\\\\" .. l_1_2, 805306490, false)
+              do break end
+              -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out DO_STMT
 
-  end
-end
+              -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-IsDorkbotPath = function(l_2_0)
-  -- function num : 0_1
-  if l_2_0 == nil then
-    return false
-  end
-  local l_2_1 = (string.lower)(l_2_0)
-  if (string.find)(l_2_1, "\\temp\\adobe\\reader_sl%.exe$") ~= nil or (string.find)(l_2_1, "\\temp\\c731200$") ~= nil then
-    return true
-  end
-  if (string.find)(l_2_1, "\\application data\\screensaverpro%.scr$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\screensaverpro%.scr$") ~= nil or (string.find)(l_2_1, "\\application data\\c731200$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\c731200$") ~= nil or (string.find)(l_2_1, "\\application data\\temp%.bin$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\temp%.bin$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\update\\update%.exe$") ~= nil or (string.find)(l_2_1, "\\application data\\update\\update%.exe$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\update\\explorer%.exe$") ~= nil or (string.find)(l_2_1, "\\application data\\update\\explorer%.exe$") ~= nil or (string.find)(l_2_1, "\\appdata\\roaming\\windowsupdate\\updater%.exe$") ~= nil or (string.find)(l_2_1, "\\application data\\windowsupdate\\updater%.exe$") ~= nil then
-    return true
-  end
-  local l_2_2, l_2_3, l_2_4 = split_path(l_2_0)
-  if l_2_4 ~= "exe" and l_2_4 ~= "scr" then
-    return false
-  end
-  if ((string.find)((string.lower)(l_2_2), "\\application data\\identities\\$") ~= nil or (string.find)((string.lower)(l_2_2), "\\appdata\\roaming\\identities\\$") ~= nil or (string.find)((string.lower)(l_2_2), "\\appdata\\roaming\\microsoft\\windows\\themes\\$") ~= nil) and (string.find)(l_2_3, "%u%l%l%l%l%l%.exe$") ~= nil then
-    return true
-  end
-  return false
-end
+              -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out IF_STMT
 
-DeleteAutoRunEntries = function(l_3_0)
-  -- function num : 0_2
-  if l_3_0 then
-    local l_3_1 = (sysio.RegEnumValues)(l_3_0)
-    for l_3_5,l_3_6 in pairs(l_3_1) do
-      if l_3_6 then
-        local l_3_7 = (sysio.GetRegValueAsString)(l_3_0, l_3_6)
-        if l_3_7 and IsDorkbotPath(l_3_7) == true then
-          (sysio.DeleteRegValue)(l_3_0, l_3_6)
-          if (sysio.IsFileExists)(l_3_7) then
-            (Remediation.BtrDeleteFile)(l_3_7)
+            end
           end
         end
       end
@@ -55,11 +45,47 @@ DeleteAutoRunEntries = function(l_3_0)
   end
 end
 
-if (Remediation.Threat).Active and (string.match)((Remediation.Threat).Name, "Win32/Dorkbot") then
-  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    local l_0_6 = (sysio.RegOpenKey)(l_0_5)
-    DeleteAutoRunEntries(l_0_6)
+SuweezyReportExclusionLatents = function(l_2_0)
+  -- function num : 0_1
+  local l_2_1 = "HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths"
+  local l_2_2 = (sysio.RegOpenKey)(l_2_1)
+  if l_2_2 then
+    local l_2_3 = (sysio.RegEnumValues)(l_2_2)
+    for l_2_7,l_2_8 in pairs(l_2_3) do
+      if (string.sub)(l_2_8, -1) == "\\" then
+        (MpDetection.ReportResource)("regkeyvalue", l_2_1 .. "\\\\" .. l_2_8, l_2_0, false)
+      end
+    end
+  end
+  do
+    l_2_3 = "HKLM\\SOFTWARE\\Microsoft\\Microsoft Antimalware\\Exclusions\\Paths"
+    local l_2_9 = nil
+    l_2_9 = sysio
+    l_2_9 = l_2_9.RegOpenKey
+    l_2_9 = l_2_9(l_2_3)
+    local l_2_10 = nil
+    if l_2_9 then
+      l_2_10 = sysio
+      l_2_10 = l_2_10.RegEnumValues
+      l_2_10 = l_2_10(l_2_9)
+      local l_2_11 = nil
+      l_2_11 = pairs
+      l_2_11 = l_2_11(l_2_10)
+      for l_2_15,l_2_16 in l_2_11 do
+        local l_2_16 = nil
+        l_2_16 = string
+        l_2_16 = l_2_16.sub
+        l_2_16 = l_2_16(l_2_15, -1)
+        if l_2_16 == "\\" then
+          l_2_16 = MpDetection
+          l_2_16 = l_2_16.ReportResource
+          l_2_16("regkeyvalue", l_2_3 .. "\\\\" .. l_2_15, l_2_0, false)
+        end
+      end
+      -- DECOMPILER ERROR at PC68: Confused about usage of register R6 for local variables in 'ReleaseLocals'
+
+    end
   end
 end
+
 

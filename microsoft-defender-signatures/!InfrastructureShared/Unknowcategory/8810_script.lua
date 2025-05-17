@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and peattributes.no_security and peattributes.isvbnative and peattributes.x86_image then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 35840 and l_0_0 < 204800 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

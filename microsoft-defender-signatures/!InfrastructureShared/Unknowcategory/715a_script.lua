@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.lastscn_writable and peattributes.lastscn_executable then
-  return mp.INFECTED
+if (hstrlog[6]).matched then
+  (mp.changedetectionname)(805306431)
+else
+  if (hstrlog[7]).matched then
+    (mp.changedetectionname)(805306444)
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 1000219088) == 0 then
-  return mp.CLEAN
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 1830286805) == 0 then
-  return mp.CLEAN
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
 return mp.INFECTED
 

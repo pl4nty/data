@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis_Disable_APILimit")
+(mp.set_mpattribute)("SCRIPT:Exploit:HTML/NeutrinoEK.G!obj")
 return mp.INFECTED
 

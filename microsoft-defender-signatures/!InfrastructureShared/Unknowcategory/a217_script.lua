@@ -3,14 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if ((string.lower)((bm.get_imagepath)())):find("svchost.exe") then
-  l_0_1 = (string.match)((this_sigattrlog[2]).utf8p1, "\\%l%l%l%l%l%l%l%l%.exe")
-  if l_0_1 ~= nil then
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2107638873)
-    return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = false
+for l_0_6,l_0_7 in ipairs(l_0_0) do
+  if l_0_7.image_path ~= nil then
+    l_0_2 = true
+    if (string.find)(l_0_7.image_path, "\\MSBuild%.exe$") ~= nil or (string.find)(l_0_7.image_path, "\\devenv%.exe$") ~= nil or (string.find)(l_0_7.image_path, "\\K2Studio%.exe$") ~= nil then
+      return mp.CLEAN
+    end
+    ;
+    (bm.add_related_file)(l_0_7.image_path)
   end
+end
+if l_0_2 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

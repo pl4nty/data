@@ -3,20 +3,19 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
+  if (this_sigattrlog[15]).matched and (this_sigattrlog[15]).wp2 ~= nil then
+    local l_0_0 = nil
   end
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
   -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 ~= nil) and (string.find)((this_sigattrlog[2]).utf8p2, "-h", 1, true) and (string.find)((this_sigattrlog[2]).utf8p2, "-x", 1, true) then
-    return mp.INFECTED
+  if l_0_0 ~= nil and (string.find)(l_0_0, "/logrotate", 1, true) then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

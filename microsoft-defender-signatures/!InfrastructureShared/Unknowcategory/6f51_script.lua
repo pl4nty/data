@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "xmlfc%-ni_%d%d.msi") ~= nil then
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 3140000 then
   return mp.INFECTED
 end
 return mp.CLEAN

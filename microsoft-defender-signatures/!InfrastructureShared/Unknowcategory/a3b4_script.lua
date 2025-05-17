@@ -3,29 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections <= 3 then
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if peattributes.epinfirstsect == true then
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
   return mp.CLEAN
 end
-if peattributes.epscn_islast == true then
-  return mp.CLEAN
+if (string.sub)(l_0_1, -5, -1) == ",WW50" or (string.sub)(l_0_1, -6, -1) == ", WW50" or (string.sub)(l_0_1, -5, -1) == ",N115" or (string.sub)(l_0_1, -6, -1) == ", N115" then
+  if l_0_0 ~= nil then
+    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+  end
+  return mp.INFECTED
 end
-if epcode[1] ~= 96 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 232 then
-  return mp.CLEAN
-end
-if epcode[7] ~= 97 then
-  return mp.CLEAN
-end
-if epcode[8] ~= 233 then
-  return mp.CLEAN
-end
-if epcode[12] ~= 255 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

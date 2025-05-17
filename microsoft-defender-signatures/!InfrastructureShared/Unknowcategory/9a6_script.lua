@@ -3,48 +3,60 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == false then
+if (mp.GetResmgrBasePlugin)() ~= "Taskscheduler" then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 10000 and l_0_0 > 30000 then
+local l_0_0 = (mp.getfilename)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.getfilename)())
-local l_0_2 = (string.sub)(l_0_1, -4)
-if l_0_2 == ".exe" then
+if (string.find)(l_0_0, "%-%>%(UTF%-16LE%)$") == nil then
   return mp.CLEAN
 end
-if peattributes.isdll ~= false then
-  return mp.CLEAN
+local l_0_1 = tostring(headerpage)
+local l_0_2 = (string.match)(l_0_1, "<Exec>.*<Command>(.*)</Command>.*</Exec>")
+local l_0_3 = (string.match)(l_0_1, "<Exec>.*<Arguments>(.*)</Arguments>.*</Exec>")
+if l_0_2 == nil then
+  local l_0_4 = (mp.getfilesize)()
+  if l_0_4 > 4096 and l_0_4 < 20480 then
+    (mp.readprotection)(false)
+    local l_0_5 = (mp.readfile)(0, l_0_4)
+    l_0_2 = (string.match)(l_0_5, "<Exec>.*<Command>(.*)</Command>.*</Exec>")
+    l_0_3 = (string.match)(l_0_5, "<Exec>.*<Arguments>(.*)</Arguments>.*</Exec>")
+  else
+    do
+      do
+        do return mp.CLEAN end
+        if l_0_2 == nil then
+          return mp.CLEAN
+        end
+        if l_0_3 ~= nil then
+          l_0_2 = l_0_2 .. " " .. l_0_3
+        end
+        local l_0_6 = (string.lower)(l_0_2)
+        local l_0_7, l_0_8 = (string.match)(l_0_6, "(.*powershell[%.exe]-)%s+%-encodedcommand%s+()")
+        if l_0_7 == nil then
+          l_0_7 = (string.match)(l_0_6, "(.*powershell[%.exe]-)%s+.-%-en?c?%s+()")
+        end
+        if l_0_7 ~= nil and l_0_8 ~= nil then
+          local l_0_9 = (MpCommon.Base64Decode)((string.sub)(l_0_2, l_0_8))
+          if l_0_9 ~= nil then
+            l_0_9 = (string.gsub)(l_0_9, "%z", "")
+            ;
+            (mp.vfo_add_buffer)(l_0_7 .. " " .. l_0_9, "[TaskSchedCommand]", 0)
+          else
+            ;
+            (mp.vfo_add_buffer)(l_0_2, "[TaskSchedCommand]", 0)
+          end
+        else
+          do
+            ;
+            (mp.vfo_add_buffer)(l_0_2, "[TaskSchedCommand]", 0)
+            return mp.CLEAN
+          end
+        end
+      end
+    end
+  end
 end
-if pehdr.NumberOfSections ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.Characteristics ~= 258 then
-  return mp.CLEAN
-end
-local l_0_3 = (pe.get_versioninfo)()
-if l_0_3.InternalName ~= "ping.exe" then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-if (mp.readu_u32)(2048, 1) == 0 or (mp.readu_u32)(2052, 1) == 0 or (mp.readu_u32)(2056, 1) == 0 or (mp.readu_u32)(2060, 1) == 0 or (mp.readu_u32)(2064, 1) == 0 then
-  return mp.CLEAN
-end
-local l_0_4 = (mp.readfile)(2048, 512)
-if (string.find)(l_0_4, "лллл\204", 1, true) ~= nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_4, "hN\'\000\000", 1, true) ~= nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_4, "h\017\'\000\000j\001", 1, true) ~= nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_4, "hB\'\000\000j\001\232", 1, true) ~= nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

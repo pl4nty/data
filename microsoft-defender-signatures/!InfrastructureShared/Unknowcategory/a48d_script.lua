@@ -3,19 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:VeriatoCertClean") or (mp.get_mpattribute)("Exception:MonitoringTool:Uninstaller:Veriato") or (mp.get_mpattribute)("CERT:Clean:Veriato") then
-  return mp.CLEAN
-end
-if (hstrlog[2]).hitcount > 3 then
-  if mp.HSTR_WEIGHT == 26 then
-    return mp.INFECTED
-  end
-  local l_0_0 = (pe.mmap_va)((hstrlog[1]).VA - 18, 16)
-  if (string.find)(l_0_0, "DenyListedUsers", 1, true) then
-    return mp.INFECTED
-  end
-end
+(mp.readprotection)(false)
+local l_0_0 = (mp.getfilesize)()
 do
+  if l_0_0 > 20480 then
+    local l_0_1 = tostring((mp.readfile)(l_0_0 - 9472, 8192))
+    l_0_1 = (string.lower)(l_0_1)
+    if (string.find)(l_0_1, "https://icam%.cl/wp%-content/%.%.%./%.%.%./x3%.php") ~= nil or (string.find)(l_0_1, "https://smartcheckautos%.com/wp%-content/%.%.%./%.%.%./x3%.php") ~= nil or (string.find)(l_0_1, "url:https://calfeutragebprs%.com/wp%-content/image/s3%.php") ~= nil then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

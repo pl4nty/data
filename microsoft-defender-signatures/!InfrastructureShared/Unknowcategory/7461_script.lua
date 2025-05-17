@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_ep == true then
+if peattributes.isexe == true and peattributes.no_boundimport == true and peattributes.no_debug == true and peattributes.x86_image == true then
   return mp.INFECTED
 end
 return mp.CLEAN

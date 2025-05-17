@@ -3,31 +3,29 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
-
-  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 83
+local l_0_2 = 0
+local l_0_3 = (mp.getfilesize)()
+if l_0_0.is_header then
+  if mp.HEADERPAGE_SZ <= l_0_3 then
     return mp.CLEAN
   end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
-
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasMegaUrl") then
-      (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromMega") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromMega", 3600)
-        return mp.INFECTED
-      end
-    end
+  l_0_2 = (mp.readheader)(l_0_1, l_0_3 - l_0_1)
+else
+  if mp.FOOTERPAGE_SZ <= l_0_3 then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  l_0_2 = (mp.readfooter)(l_0_1, l_0_3 - l_0_1)
 end
+local l_0_4 = l_0_2:find("|base64 -d", 1, true)
+if l_0_4 ~= nil then
+  l_0_2 = l_0_2:sub(0, l_0_4 - 1)
+  ;
+  (mp.vfo_add_buffer)(l_0_2, "[BaseDump]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  ;
+  (mp.set_mpattribute)("//SCPT:Base64.Encoded")
+  return mp.INFECTED
+end
+return mp.CLEAN
 

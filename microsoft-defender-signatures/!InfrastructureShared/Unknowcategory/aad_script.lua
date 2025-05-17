@@ -3,55 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC15: Overwrote pending register: R1 in 'AssignReg'
-
-  do
-    if (this_sigattrlog[5]).matched then
-      local l_0_1 = nil
-    end
-    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-    if not l_0_1 or not nil then
-      return mp.CLEAN
-    end
-    local l_0_2 = nil
-    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
-      local l_0_3, l_0_4 = , {}
-      -- DECOMPILER ERROR at PC30: Confused about usage of register: R6 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC46: Confused about usage of register: R7 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC55: Confused about usage of register: R7 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC65: Confused about usage of register: R7 in 'UnsetPending'
-
-      if (sigattr_tail[R6_PC30]).matched and (sigattr_tail[R6_PC30]).attribute == 16400 and (sigattr_tail[R6_PC30]).utf8p2 ~= nil and not (string.find)((sigattr_tail[R6_PC30]).utf8p2, "chmod", 1, true) and not (string.find)((sigattr_tail[R6_PC30]).utf8p2, "rm", 1, true) then
-        (table.insert)(l_0_4, (sigattr_tail[R6_PC30]).utf8p2)
-      end
-    end
-    local l_0_8 = nil
-    for l_0_12,l_0_13 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
-      local l_0_9, l_0_10 = nil
-      -- DECOMPILER ERROR at PC78: Confused about usage of register: R8 in 'UnsetPending'
-
-      if (string.find)(l_0_8, (mp.ContextualExpandEnvironmentVariables)(table.insert), 1, true) then
-        for l_0_17,l_0_18 in ipairs(l_0_9) do
-          -- DECOMPILER ERROR at PC96: Confused about usage of register: R13 in 'UnsetPending'
-
-          if (string.find)(true, l_0_15, 1, true) then
-            (bm.add_related_file)(l_0_15)
-            return mp.INFECTED
-          end
-        end
-      end
-    end
-    return mp.CLEAN
-  end
+if (mp.getfilesize)() > 10485760 then
+  return mp.CLEAN
 end
+local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil or l_0_1 == nil or l_0_0 == "" or l_0_1 == "" then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "/tmp/", 1, true) == 1 or (string.find)(l_0_0, "/var/tmp/", 1, true) == 1 or (string.find)(l_0_0, "/root/", 1, true) == 1 or (string.find)(l_0_0, "/home/", 1, true) == 1 or (string.find)(l_0_0, "/run/shm/", 1, true) == 1 or (string.find)(l_0_0, "/dev/shm/", 1, true) == 1 or (string.find)(l_0_1, ".", 1, true) == 1 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

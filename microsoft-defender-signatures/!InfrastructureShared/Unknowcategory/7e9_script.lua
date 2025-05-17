@@ -3,27 +3,24 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
-  else
-  end
-  if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).wp1 == nil or (this_sigattrlog[1]).matched then
-    local l_0_3 = (this_sigattrlog[3]).utf8p1
-    -- DECOMPILER ERROR at PC41: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (this_sigattrlog[1]).utf8p1 ~= nil and l_0_3 ~= nil then
-      local l_0_4 = nil
-      local l_0_5 = (string.match)((this_sigattrlog[1]).utf8p1, "(.*\\)")
-      if (string.match)(l_0_3, "(.*\\)") ~= nil and (string.match)(l_0_3, "(.*\\)") == l_0_5 then
-        return mp.INFECTED
-      end
-    end
-  end
-  do
-    return mp.CLEAN
-  end
+if not (mp.get_mpattribute)("SCPT:Rebhip_Config!B") then
+  return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 50000 or l_0_0 > 500000 then
+  return mp.CLEAN
+end
+local l_0_1 = headerpage[1]
+if l_0_1 ~= 67 and l_0_1 ~= 99 then
+  return mp.CLEAN
+end
+l_0_1 = headerpage[2]
+if l_0_1 ~= 58 then
+  return mp.CLEAN
+end
+l_0_1 = headerpage[3]
+if l_0_1 ~= 92 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security then
-  return mp.INFECTED
+if peattributes.amd64_image then
+  (mp.changedetectionname)(805306485)
 end
-return mp.CLEAN
+return mp.INFECTED
 

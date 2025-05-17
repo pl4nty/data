@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
+if (hstrlog[1]).matched then
+  (mp.readprotection)(false)
+  local l_0_0 = (mp.readfile)(0, (mp.getfilesize)())
+  local l_0_1 = (pe.foffset_va)((hstrlog[1]).VA)
+  ;
+  (mp.writeu_u8)(l_0_0, l_0_1 + 1 + 10, 235)
+  ;
+  (mp.vfo_add_buffer)(l_0_0, "crowti_patch", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+end
 do
-  if l_0_0 ~= nil then
-    local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
-    if l_0_1 ~= nil and (string.len)(l_0_1) > 1 then
-      if (sysio.IsFileExists)(l_0_1) then
-        (mp.ReportLowfi)(l_0_1, 2782132239)
-      end
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

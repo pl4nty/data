@@ -3,47 +3,41 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epscn_writable ~= true then
+if (mp.IsHipsRuleEnabled)("c1db55ab-c21a-4637-bb3f-a12568109d35") ~= true then
   return mp.CLEAN
 end
-if peattributes.packed ~= false then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if peattributes.epinfirstsect ~= true then
+if (mp.IsKnownFriendlyFile)((MpCommon.PathToWin32Path)(l_0_0), true, true) == true then
   return mp.CLEAN
 end
-if peattributes.isexe ~= true then
+if (MpCommon.QueryPersistContext)(l_0_0, "RansomExtensionParentBlock") then
+  return mp.INFECTED
+end
+if not (MpCommon.QueryPersistContext)(l_0_0, "RansomExtensionParent") then
   return mp.CLEAN
 end
-if peattributes.hasstandardentry == true then
+local l_0_1 = -1
+local l_0_2 = -1
+local l_0_3 = (MpCommon.GetPersistContext)(l_0_0)
+if l_0_3 ~= nil then
+  for l_0_7,l_0_8 in ipairs(l_0_3) do
+    local l_0_9 = tonumber((string.match)(l_0_8, "^Age:([0-9]+)$"))
+    if l_0_9 ~= nil and l_0_1 < l_0_9 then
+      l_0_1 = l_0_9
+    end
+    local l_0_10 = tonumber((string.match)(l_0_8, "^Prevalence:([0-9]+)$"))
+    if l_0_10 ~= nil and l_0_2 < l_0_10 then
+      l_0_2 = l_0_10
+    end
+  end
+end
+do
+  if l_0_1 > -1 and l_0_1 <= 1 and l_0_2 > -1 and l_0_2 <= 100 then
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[6]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW == 1920168494 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData ~= 0 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 85 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 137 then
-  return mp.CLEAN
-end
-if epcode[3] ~= 229 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

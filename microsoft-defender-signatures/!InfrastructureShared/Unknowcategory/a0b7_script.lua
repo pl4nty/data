@@ -3,20 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\openfiles.exe", 1, true) or (string.find)(l_0_0, "\\microsoft\\teams\\current\\teams.exe", 1, true) then
+    return mp.CLEAN
+  end
+  ;
+  (bm.add_action)("EmsScan", 5000)
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_ismsil") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

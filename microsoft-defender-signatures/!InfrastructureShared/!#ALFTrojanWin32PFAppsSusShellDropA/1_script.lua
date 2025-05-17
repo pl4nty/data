@@ -183,13 +183,11 @@ do
                     l_0_19.ProcessAttribute = l_0_18
                     local l_0_61, l_0_62 = , safeJsonSerialize(l_0_19, 150, nil, true)
                     if l_0_62 then
-                      set_research_data("EvidenceData", (MpCommon.Base64Encode)(l_0_62), false)
-                      ;
                       (MpCommon.BmTriggerSig)(l_0_2, "LUA:PFAppsSusShellDrop", l_0_62)
                     else
-                      set_research_data("Error", R32_PC434, false)
+                      set_research_data("Error", R32_PC426, false)
+                      return mp.INFECTED
                     end
-                    return mp.INFECTED
                   end
                   do
                     return mp.CLEAN

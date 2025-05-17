@@ -3,24 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//Lua:GIOAVTopLevelISOFile") and not (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("//GIOAVFirstPEInTopLevelISOFile") then
-  (mp.set_mpattribute)("Lua:IOAVFirstPEInTopLevelISOFile")
-  ;
-  (mp.set_mpattribute)("//GIOAVFirstPEInTopLevelISOFile")
-  ;
-  (mp.set_mpattribute)("MpNonCachedLowfi")
-end
-do
-  if (mp.get_mpattribute)("//Lua:GIOAVFirstISOFileInContainer") and not (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("//GIOAVFirstPEInISOFileInContainer") then
-    local l_0_0 = (string.lower)((mp.getfilename)())
-    if l_0_0:find(".iso->", 1, true) or l_0_0:find(".img->", 1, true) then
-      (mp.set_mpattribute)("Lua:IOAVFirstPEInISOFileInContainer")
-      ;
-      (mp.set_mpattribute)("//GIOAVFirstPEInISOFileInContainer")
-      ;
-      (mp.set_mpattribute)("MpNonCachedLowfi")
+if peattributes.isdll then
+  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_1:find("\\appdata\\local\\microsoft\\windows\\temporary internet files", 1, true) ~= nil or l_0_1:find("\\appdata\\local\\microsoft\\windows\\inetcache", 1, true) ~= nil then
+      local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+      if l_0_2 == "regsvr32.exe" then
+        (mp.set_mpattribute)("Lua:ContextRegsvr32AccessTIF.A")
+      else
+        if l_0_2 == "control.exe" then
+          (mp.set_mpattribute)("Lua:ContextControlAccessTIF.A")
+        end
+      end
     end
   end
+end
+do
   return mp.CLEAN
 end
 

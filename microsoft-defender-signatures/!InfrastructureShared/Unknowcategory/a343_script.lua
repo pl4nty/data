@@ -3,16 +3,25 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.getfilesize)() >= 380928 and (mp.getfilesize)() < 413696 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
+local l_0_0 = nil
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+
+  if (sigattr_tail[R4_PC6]).matched and (sigattr_tail[R4_PC6]).attribute == 16393 then
+    l_0_1 = (sigattr_tail[R4_PC6]).utf8p2
+    if l_0_1 ~= nil then
+      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+        local l_0_6 = nil
+        -- DECOMPILER ERROR at PC30: Confused about usage of register: R10 in 'UnsetPending'
+
+        R10_PC30 = (mp.ContextualExpandEnvironmentVariables)(R10_PC30)
+        if (sysio.IsFileExists)(R10_PC30) then
+          (bm.add_related_file)(R10_PC30)
+        end
       end
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.INFECTED
 

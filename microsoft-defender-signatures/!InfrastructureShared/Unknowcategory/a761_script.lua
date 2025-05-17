@@ -3,40 +3,72 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = nil
-  -- DECOMPILER ERROR at PC20: Overwrote pending register: R1 in 'AssignReg'
-
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-    local l_0_1 = nil
-    -- DECOMPILER ERROR at PC161: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC161: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC161: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC161: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC161: Unhandled construct in 'MakeBoolean' P3
-
-    if ((string.find)(l_0_1, ".dll", 1, true) == nil and (string.find)(l_0_1, ".cpl", 1, true) == nil and (string.find)(l_0_1, ".ocx", 1, true) == nil and (string.find)(l_0_1, ".tmp", 1, true) == nil and (string.find)(l_0_1, ".dat", 1, true) == nil and (string.find)(l_0_1, ".tlb", 1, true) == nil and (string.find)(l_0_1, "-", 1, true) == nil and (string.find)(l_0_1, ".exe", 1, true) == nil and (string.find)(l_0_1, ".xll", 1, true) == nil and (string.find)(l_0_1, "\\microsoft\\word\\startup\\%a+.%a") ~= nil) or (string.find)(l_0_1, "\\appdata\\roaming\\%a+.dll") ~= nil then
-      local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-      if l_0_2 ~= nil then
-        for l_0_6,l_0_7 in ipairs(l_0_2) do
-          l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-          ;
-          (bm.add_related_file)(l_0_7)
+checkChildProcessExist = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_0 == nil or l_1_1 == nil or type(l_1_1) ~= "table" then
+    return nil
+  end
+  local l_1_2, l_1_3 = (bm.get_process_relationships)(l_1_0)
+  for l_1_7,l_1_8 in ipairs(l_1_3) do
+    if (mp.bitand)(l_1_8.reason_ex, 1) == 1 then
+      local l_1_9 = l_1_8.image_path
+      for l_1_13,l_1_14 in ipairs(l_1_1) do
+        if (string.sub)(l_1_9, -(string.len)(l_1_14)) == l_1_14 then
+          return l_1_8.ppid
         end
       end
-      do
-        do
-          do return mp.INFECTED end
-          return mp.CLEAN
+    end
+  end
+  do return nil end
+  -- DECOMPILER ERROR at PC50: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
+end
+
+local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+local l_0_1 = (sysio.GetProcessFromFileName)(l_0_0)
+if l_0_1 == nil or #l_0_1 == 0 then
+  return mp.CLEAN
+end
+local l_0_2 = nil
+if (this_sigattrlog[1]).matched then
+  l_0_2 = (this_sigattrlog[1]).ppid
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_2 = (this_sigattrlog[2]).ppid
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_2 = (this_sigattrlog[3]).ppid
+    else
+      if (this_sigattrlog[4]).matched then
+        l_0_2 = (this_sigattrlog[4]).ppid
+      else
+        if (this_sigattrlog[5]).matched then
+          l_0_2 = (this_sigattrlog[5]).ppid
+        else
+          if (this_sigattrlog[6]).matched then
+            l_0_2 = (this_sigattrlog[6]).ppid
+          else
+            if (this_sigattrlog[7]).matched then
+              l_0_2 = (this_sigattrlog[7]).ppid
+            end
+          end
         end
       end
     end
   end
 end
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = {}
+-- DECOMPILER ERROR at PC89: No list found for R3 , SetList fails
+
+-- DECOMPILER ERROR at PC90: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC91: Overwrote pending register: R5 in 'AssignReg'
+
+if ("cmd.exe")("powershell.exe", l_0_3) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

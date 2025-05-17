@@ -3,28 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_relocs ~= true then
+if peattributes.epatscnstart ~= true then
+  return mp.CLEAN
+end
+if peattributes.lastscn_writable ~= true then
   return mp.CLEAN
 end
 if peattributes.epscn_writable ~= true then
   return mp.CLEAN
 end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
 if pehdr.NumberOfSections < pevars.epsec then
   return mp.CLEAN
 end
-if (pesecs[pevars.epsec]).PointerToRawData ~= 512 then
+if (pesecs[pevars.epsec]).SizeOfRawData <= 512 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData >= 768 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).Size <= 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

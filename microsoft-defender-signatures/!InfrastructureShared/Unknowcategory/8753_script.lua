@@ -3,20 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-do
-  if l_0_0 ~= nil and l_0_0 >= 20480000 then
-    local l_0_1 = (pe.get_versioninfo)()
-    if not l_0_1 then
-      return mp.CLEAN
-    end
-    if not l_0_1.CompanyName then
-      return mp.CLEAN
-    end
-    if l_0_1.CompanyName == "Microsoft Corporation" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("inetpub\\solarwinds", 1, true) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:Zako.A")
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_isdll") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

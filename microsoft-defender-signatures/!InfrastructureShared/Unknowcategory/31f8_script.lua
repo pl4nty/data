@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.reads_vdll_code then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

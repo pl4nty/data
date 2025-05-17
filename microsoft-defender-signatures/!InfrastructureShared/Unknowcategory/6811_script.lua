@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)((string.lower)(l_0_0), ".xps") ~= nil then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 > 131072 and l_0_0 < 262144 then
   return mp.INFECTED
 end
 return mp.CLEAN

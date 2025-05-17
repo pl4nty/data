@@ -3,11 +3,40 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 65536 then
+if (this_sigattrlog[7]).matched then
+  return mp.INFECTED
+end
+local l_0_0, l_0_1 = nil, nil
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+  l_0_0 = (this_sigattrlog[2]).utf8p2
+else
+  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+    l_0_0 = (this_sigattrlog[3]).utf8p2
+  end
+end
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+  l_0_1 = (this_sigattrlog[4]).utf8p2
+else
+  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
+    l_0_1 = (this_sigattrlog[5]).utf8p2
+  else
+    if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
+      l_0_1 = (this_sigattrlog[6]).utf8p2
+    end
+  end
+end
+l_0_0 = (string.lower)(l_0_0)
+local l_0_2 = (string.match)(l_0_0, "mountvol%.exe (.:) /s")
+if l_0_2 == nil then
   return mp.CLEAN
 end
-if ((((((not (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr01") or (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr02")) and not (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr03")) or (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr04")) and not (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr05")) or (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr06")) and not (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr07")) or 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 >= 5 then
+l_0_1 = (string.lower)(l_0_1)
+local l_0_3 = (string.match)(l_0_1, "(.:)\\windows\\system32\\drivers\\wd")
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+local l_0_4 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%SYSTEMDRIVE%"))
+if l_0_4 ~= (string.lower)(l_0_2) and l_0_4 ~= (string.lower)(l_0_3) then
   return mp.INFECTED
 end
 return mp.CLEAN

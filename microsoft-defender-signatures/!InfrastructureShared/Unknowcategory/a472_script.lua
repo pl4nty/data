@@ -3,15 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.CheckSum == 0 and peattributes.isexe and peattributes.hasexports and pevars.epsec < 3 and pehdr.MajorLinkerVersion == 10 and pehdr.MinorLinkerVersion == 0 and pehdr.NumberOfSections == 7 then
-  if mp.HSTR_WEIGHT == 1 then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    ;
-    (pe.reemulate)()
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+if l_0_0 then
+  if not (string.find)(l_0_0, "^c:\\") then
+    return mp.CLEAN
   end
-  if mp.HSTR_WEIGHT == 2 then
-    return mp.INFECTED
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\game", 1, true) then
+    return mp.CLEAN
   end
 end
-return mp.CLEAN
+local l_0_1 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_1.ppid, "M")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1000)
+return mp.INFECTED
 

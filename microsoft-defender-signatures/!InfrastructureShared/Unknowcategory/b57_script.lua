@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(bm.ApplyDeferredActions)()
+(pe.reemulate)()
 return mp.INFECTED
 

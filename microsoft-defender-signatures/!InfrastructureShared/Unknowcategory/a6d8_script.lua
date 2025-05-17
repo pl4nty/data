@@ -3,16 +3,36 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections > 0 and epcode[1] == 233 and epcode[5] == 255 and epcode[6] == 204 and epcode[7] == 204 and epcode[8] == 204 and (pesecs[1]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).Name == ".symtab" then
-  if (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= 1024 then
-    return mp.CLEAN
-  end
-  if (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_lastscn_writable") and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_lastscn_vfalign") and (pesecs[pehdr.NumberOfSections]).SizeOfRawData + 4096 == (pesecs[pehdr.NumberOfSections]).VirtualSize and (pesecs[pehdr.NumberOfSections]).VirtualSize % 4096 == 0 then
-    return mp.INFECTED
-  end
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC120: Unhandled construct in 'MakeBoolean' P3
+
+if (((((((hstrlog[1]).matched or (hstrlog[2]).matched or not (hstrlog[4]).matched) and (hstrlog[10]).matched) or not (hstrlog[18]).matched) and (hstrlog[24]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) + ((hstrlog[17]).matched and 1 or 0) + ((hstrlog[23]).matched and 1 or 0) + ((hstrlog[25]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

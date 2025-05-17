@@ -3,120 +3,72 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true then
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-if not peattributes.isdriver then
+if peattributes.hasexports ~= true then
   return mp.CLEAN
 end
-if mp.HSTR_WEIGHT >= 20 then
+if pehdr.Subsystem ~= 2 then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+if ((pehdr.DataDirectory)[1]).RVA <= 0 then
   return mp.CLEAN
 end
-local l_0_0 = {}
--- DECOMPILER ERROR at PC81: No list found for R0 , SetList fails
-
--- DECOMPILER ERROR at PC82: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC83: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC84: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC85: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC86: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC87: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC88: Overwrote pending register: R7 in 'AssignReg'
-
--- DECOMPILER ERROR at PC89: Overwrote pending register: R8 in 'AssignReg'
-
--- DECOMPILER ERROR at PC90: Overwrote pending register: R9 in 'AssignReg'
-
--- DECOMPILER ERROR at PC91: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC92: Overwrote pending register: R11 in 'AssignReg'
-
--- DECOMPILER ERROR at PC93: Overwrote pending register: R12 in 'AssignReg'
-
--- DECOMPILER ERROR at PC94: Overwrote pending register: R13 in 'AssignReg'
-
--- DECOMPILER ERROR at PC95: Overwrote pending register: R14 in 'AssignReg'
-
--- DECOMPILER ERROR at PC96: Overwrote pending register: R15 in 'AssignReg'
-
--- DECOMPILER ERROR at PC97: Overwrote pending register: R16 in 'AssignReg'
-
--- DECOMPILER ERROR at PC98: Overwrote pending register: R17 in 'AssignReg'
-
--- DECOMPILER ERROR at PC99: Overwrote pending register: R18 in 'AssignReg'
-
--- DECOMPILER ERROR at PC100: Overwrote pending register: R19 in 'AssignReg'
-
--- DECOMPILER ERROR at PC101: Overwrote pending register: R20 in 'AssignReg'
-
--- DECOMPILER ERROR at PC102: Overwrote pending register: R21 in 'AssignReg'
-
--- DECOMPILER ERROR at PC103: Overwrote pending register: R22 in 'AssignReg'
-
--- DECOMPILER ERROR at PC104: Overwrote pending register: R23 in 'AssignReg'
-
--- DECOMPILER ERROR at PC105: Overwrote pending register: R24 in 'AssignReg'
-
--- DECOMPILER ERROR at PC106: Overwrote pending register: R25 in 'AssignReg'
-
--- DECOMPILER ERROR at PC107: Overwrote pending register: R26 in 'AssignReg'
-
--- DECOMPILER ERROR at PC108: Overwrote pending register: R27 in 'AssignReg'
-
--- DECOMPILER ERROR at PC109: Overwrote pending register: R28 in 'AssignReg'
-
--- DECOMPILER ERROR at PC110: Overwrote pending register: R29 in 'AssignReg'
-
--- DECOMPILER ERROR at PC111: Overwrote pending register: R30 in 'AssignReg'
-
--- DECOMPILER ERROR at PC112: Overwrote pending register: R31 in 'AssignReg'
-
--- DECOMPILER ERROR at PC113: Overwrote pending register: R32 in 'AssignReg'
-
--- DECOMPILER ERROR at PC114: Overwrote pending register: R33 in 'AssignReg'
-
--- DECOMPILER ERROR at PC115: Overwrote pending register: R34 in 'AssignReg'
-
--- DECOMPILER ERROR at PC116: Overwrote pending register: R35 in 'AssignReg'
-
--- DECOMPILER ERROR at PC117: Overwrote pending register: R36 in 'AssignReg'
-
--- DECOMPILER ERROR at PC118: Overwrote pending register: R37 in 'AssignReg'
-
--- DECOMPILER ERROR at PC119: Overwrote pending register: R38 in 'AssignReg'
-
--- DECOMPILER ERROR at PC120: No list found for R0 , SetList fails
-
--- DECOMPILER ERROR at PC121: Overwrote pending register: R1 in 'AssignReg'
-
-do
-  local l_0_1 = (("AsrDrv").hstr_full_log)()
-  -- DECOMPILER ERROR at PC124: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC125: Overwrote pending register: R3 in 'AssignReg'
-
-  for l_0_5,l_0_6 in (nil)("AsusGio") do
-    -- DECOMPILER ERROR at PC128: Overwrote pending register: R7 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC136: Overwrote pending register: R8 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC137: Overwrote pending register: R9 in 'AssignReg'
-
-    if "GLCKIo" and l_0_0[l_0_5] then
-      (mp.set_mpattribute)(nil .. "GDrv")
-      return mp.INFECTED
-    end
-  end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
+if ((pehdr.DataDirectory)[1]).Size <= 0 then
+  return mp.CLEAN
 end
+if ((pehdr.DataDirectory)[1]).Size >= 256 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[5]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).Size ~= 0 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
+if (mp.readu_u32)(l_0_0, 1) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 5) <= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 9) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 13) <= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 17) ~= 1 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 21) ~= 4 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 25) ~= 4 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 29) <= 0 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 13)
+if (mp.crc32)(-1, l_0_1, 1, 13) ~= 1625655034 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

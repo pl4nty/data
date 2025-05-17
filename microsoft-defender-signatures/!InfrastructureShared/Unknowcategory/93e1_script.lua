@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)(tostring(headerpage))
-local l_0_1, l_0_2 = (string.gsub)(l_0_0, "&#x0a;", "")
-local l_0_3, l_0_4 = (string.gsub)(l_0_0, "&#x0d;", "")
-if l_0_2 == 0 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
   return mp.CLEAN
 end
-if l_0_4 == 0 then
-  return mp.CLEAN
-end
-if l_0_2 > 50 and l_0_4 > 50 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

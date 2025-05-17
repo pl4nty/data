@@ -3,27 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_4 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0, l_0_1, l_0_2, l_0_3 = "|.js|jse|vbs|vbe|"
-else
-  do
-    -- DECOMPILER ERROR at PC27: Overwrote pending register: R0 in 'AssignReg'
-
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or l_0_4 ~= nil then
-      local l_0_5 = nil
-      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
-        local l_0_6 = nil
-        -- DECOMPILER ERROR at PC40: Confused about usage of register: R7 in 'UnsetPending'
-
-        if (sysio.IsFileExists)(R7_PC40) and (string.find)(l_0_5, (string.lower)((string.sub)(R7_PC40, -3)), 1, true) then
-          (bm.add_related_file)(l_0_11)
-        end
-      end
-    end
-    do
-      return mp.INFECTED
-    end
-  end
+if pevars.epsec == 4294967296 or pevars.epsec == -1 then
+  (mp.set_mpattribute)("LUA:PEAnomaly_InvalidEPSection")
+  return mp.CLEAN
 end
+if epcode[1] == 0 or epcode[1] == 204 or epcode[1] == 195 then
+  (mp.set_mpattribute)("LUA:PEAnomaly_UnusualEPCode")
+end
+local l_0_0 = tostring((pesecs[pevars.epsec]).Name)
+if l_0_0 == ".rsrc" or l_0_0 == ".rdata" or l_0_0 == ".data" or l_0_0 == ".pdata" or l_0_0 == ".reloc" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

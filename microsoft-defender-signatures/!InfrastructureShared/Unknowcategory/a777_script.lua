@@ -3,123 +3,81 @@
 
 -- params : ...
 -- function num : 0
-is_leap_year = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0 / 4 * 4 == l_1_0 then
-    return true
-  end
-  return false
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_1 = (this_sigattrlog[1]).utf8p2
+  local l_0_2 = nil
+else
 end
+do
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
 
-timestamp_to_date = function(l_2_0)
-  -- function num : 0_1
-  local l_2_1 = 1970
-  local l_2_2 = 86400
-  local l_2_3 = 365 * l_2_2
-  local l_2_4 = 0
-  local l_2_5 = false
-  while l_2_4 < l_2_0 do
-    l_2_5 = is_leap_year(l_2_1)
-    if l_2_5 then
-      l_2_4 = l_2_4 + l_2_3 + l_2_2
-    else
-      l_2_4 = l_2_4 + l_2_3
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+    local l_0_3 = (this_sigattrlog[2]).ppid
+    -- DECOMPILER ERROR at PC49: Overwrote pending register: R1 in 'AssignReg'
+
+    local l_0_4 = (this_sigattrlog[2]).utf8p2
+  end
+  do
+    -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_3 == nil then
+      return mp.CLEAN
     end
-    l_2_1 = l_2_1 + 1
-  end
-  l_2_1 = l_2_1 - 1
-  if l_2_5 then
-    l_2_4 = l_2_4 - (l_2_3 + l_2_2)
-  else
-    l_2_4 = l_2_4 - l_2_3
-  end
-  l_2_0 = l_2_0 - (l_2_4)
-  local l_2_6 = {}
-  -- DECOMPILER ERROR at PC40: No list found for R6 , SetList fails
+    local l_0_5 = nil
+    local l_0_6 = nil
+    local l_0_7 = nil
+    local l_0_8, l_0_9 = , (string.len)("\\cmd.exe")
+    if l_0_5 == nil or #l_0_5 < 1 or #l_0_5 > 3 then
+      return mp.CLEAN
+    end
+    for l_0_13,l_0_14 in ipairs(R8_PC78) do
+      local l_0_10, l_0_11 = (bm.get_process_relationships)(l_0_5)
+      -- DECOMPILER ERROR at PC82: Confused about usage of register: R11 in 'UnsetPending'
 
-  local l_2_7 = {}
-  -- DECOMPILER ERROR at PC42: Overwrote pending register: R8 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC43: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC44: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC45: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC46: Overwrote pending register: R12 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC47: Overwrote pending register: R13 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC48: Overwrote pending register: R14 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC49: Overwrote pending register: R15 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC50: Overwrote pending register: R16 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC51: Overwrote pending register: R17 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R18 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC54: No list found for R7 , SetList fails
-
-  -- DECOMPILER ERROR at PC55: Overwrote pending register: R8 in 'AssignReg'
-
-  local l_2_8 = 59
-  -- DECOMPILER ERROR at PC56: Overwrote pending register: R9 in 'AssignReg'
-
-  local l_2_9 = 90
-  -- DECOMPILER ERROR at PC57: Overwrote pending register: R10 in 'AssignReg'
-
-  local l_2_10 = 120
-  -- DECOMPILER ERROR at PC58: Overwrote pending register: R11 in 'AssignReg'
-
-  local l_2_11 = 151
-  -- DECOMPILER ERROR at PC61: Overwrote pending register: R12 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC62: Overwrote pending register: R13 in 'AssignReg'
-
-  if l_2_5 then
-    for l_2_15,l_2_16 in (181)(212) do
-      -- DECOMPILER ERROR at PC68: Overwrote pending register: R17 in 'AssignReg'
-
-      if l_2_8 <= l_2_16 then
+      if (mp.bitand)(R11_PC82.reason_ex, 1) == 1 and l_0_9 < (string.len)(R11_PC82.image_path) and (string.sub)(R11_PC82.image_path, -l_0_9) == l_0_8 then
+        l_0_7 = R11_PC82.ppid
         break
       end
     end
-  else
     do
-      for l_2_20,l_2_21 in pairs(l_2_7) do
-        -- DECOMPILER ERROR at PC81: Overwrote pending register: R9 in 'AssignReg'
+      if l_0_7 == nil then
+        return mp.CLEAN
+      end
+      if not (this_sigattrlog[6]).matched then
+        return mp.CLEAN
+      end
+      local l_0_15 = nil
+      local l_0_16 = nil
+      local l_0_17 = (this_sigattrlog[6]).ppid
+      local l_0_18, l_0_19 = 0, false
+      for l_0_23,l_0_24 in ipairs(R13_PC128) do
+        local l_0_20, l_0_21 = (bm.get_process_relationships)(l_0_7)
+        -- DECOMPILER ERROR at PC132: Confused about usage of register: R16 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC83: Overwrote pending register: R10 in 'AssignReg'
-
-        if l_2_8 <= l_2_21 then
-          break
+        if (mp.bitand)(R16_PC132.reason_ex, 1) == 1 and l_0_9 < (string.len)(R16_PC132.image_path) and (string.sub)(R16_PC132.image_path, -l_0_9) == l_0_8 then
+          if l_0_17 == R16_PC132.ppid then
+            l_0_19 = true
+          end
+          l_0_18 = l_0_18 + 1
         end
-        -- DECOMPILER ERROR at PC85: Overwrote pending register: R11 in 'AssignReg'
-
       end
       do
-        do
-          do return l_2_1, l_2_9, l_2_10 end
-          -- WARNING: undefined locals caused missing assignments!
+        if l_0_18 ~= 2 or l_0_19 == false then
+          return mp.CLEAN
         end
+        local l_0_25 = nil
+        for l_0_29,l_0_30 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_6)) do
+          local l_0_26, l_0_27 = nil
+          if (mp.bitand)(R16_PC132.reason_ex, 1) ~= nil and (string.len)((mp.bitand)(R16_PC132.reason_ex, 1)) >= 4 and (string.lower)((string.sub)((mp.bitand)(R16_PC132.reason_ex, 1), -4)) ~= ".exe" and (sysio.IsFileExists)((mp.bitand)(R16_PC132.reason_ex, 1)) then
+            (bm.add_related_file)((mp.bitand)(R16_PC132.reason_ex, 1))
+          end
+        end
+        return mp.INFECTED
       end
     end
   end
 end
-
-local l_0_0 = (mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 9, 4), 1), 4), 1)
-local l_0_1 = (pe.get_api_id)(l_0_0)
-if l_0_1 ~= 1269389306 then
-  return mp.CLEAN
-end
-local l_0_2 = pehdr.TimeDateStamp
-if l_0_2 == 0 then
-  return mp.CLEAN
-end
-local l_0_3, l_0_4, l_0_5 = timestamp_to_date(l_0_2)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 17, "\184" .. (string.char)(l_0_4) .. "\000")
-return mp.INFECTED
 

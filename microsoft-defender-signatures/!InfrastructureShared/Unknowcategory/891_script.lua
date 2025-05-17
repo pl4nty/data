@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 and l_0_1 ~= mp.SCANREASON_VALIDATION_PRESCAN then
-    local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_REFERRERURL)
-    if l_0_2 and ((string.match)(l_0_3, "dojki%.ru") or (string.match)(l_0_3, "youporn%.com") or (string.match)(l_0_3, "pizta%.ru")) then
-      (mp.aggregate_mpattribute)("Context:HighRiskReferrerUrl")
-      ;
-      (mp.aggregate_mpattribute)("//MpIsIEVScan")
-      return mp.TRUE
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if l_0_1 == "my.dat" then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_2:len() > 7 and (string.sub)(l_0_2, -5) == "\\temp" and (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "mediaget.exe" then
+      return mp.INFECTED
     end
   end
-  return mp.FALSE
+end
+do
+  return mp.CLEAN
 end
 

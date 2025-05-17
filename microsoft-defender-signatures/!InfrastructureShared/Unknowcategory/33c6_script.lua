@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount > 4 then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 400000 or l_0_0 < 5000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

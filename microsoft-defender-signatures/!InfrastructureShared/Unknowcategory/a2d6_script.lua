@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil ~= true then
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0.OriginalFilename ~= nil and (l_0_0.OriginalFilename):lower() == "sync.exe" and l_0_0.InternalName ~= nil and (l_0_0.InternalName):lower() == "sync.exe" and l_0_0.ProductVersion ~= nil and (l_0_0.ProductVersion):lower() == "0.0.0.0" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\184\r\024\141>\144")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

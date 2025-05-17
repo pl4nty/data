@@ -3,44 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
+-- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+l_0_0 = (string.lower)(l_0_0)
+if l_0_0 == nil or (string.find)(l_0_0, ":\\windows\\", 2, true) or (string.find)(l_0_0, "^%%", 1) or (string.find)(l_0_0, ":\\programdata\\", 2, true) or (string.find)(l_0_0, "^:\\users\\.*\\appdata", 2, false) or (string.find)(l_0_0, ":\\program files (x86)\\", 2, true) or (string.find)(l_0_0, ":\\program files\\", 2, true) then
   return mp.CLEAN
 end
-if peattributes.hasexports ~= false then
-  return mp.CLEAN
+local l_0_1 = (sysio.GetFileLastWriteTime)(l_0_0)
+if ((sysio.GetLastResult)()).Success and l_0_1 ~= 0 then
+  l_0_1 = l_0_1 / 10000000 - 11644473600
+  local l_0_2 = (MpCommon.GetCurrentTimeT)()
+  if l_0_2 < l_0_1 or l_0_2 - (l_0_1) > 600 then
+    return mp.CLEAN
+  end
 end
-if epcode[1] ~= 106 then
-  return mp.CLEAN
+do
+  return mp.INFECTED
 end
-if epcode[2] ~= 40 then
-  return mp.CLEAN
-end
-if epcode[3] ~= 104 then
-  return mp.CLEAN
-end
-if epcode[8] ~= 232 then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.ImageBase ~= 268435456 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData ~= 512 then
-  return mp.CLEAN
-end
-if (pesecs[1]).VirtualAddress ~= 4096 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData ~= 8704 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 6 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

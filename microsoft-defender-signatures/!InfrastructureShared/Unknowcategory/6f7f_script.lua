@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == false and peattributes.no_security == true and (mp.getfilesize)() < 1000000 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 6 then
+  (mp.set_mpattribute)("HSTR:Outbrowse_Concrete.A1")
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:OutBrows")
+return mp.INFECTED
 

@@ -3,46 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil or #l_0_0 < 4 then
-  return mp.CLEAN
-end
-local l_0_1 = {}
--- DECOMPILER ERROR at PC29: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC30: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC31: Overwrote pending register: R3 in 'AssignReg'
-
-for l_0_5,l_0_6 in ("/usr/")("/var/lib/") do
-  -- DECOMPILER ERROR at PC34: Overwrote pending register: R8 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC34: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC35: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC36: Overwrote pending register: R10 in 'AssignReg'
-
-  if ("/opt/")("/etc/", "/snap/", "/sbin/") == l_0_6 then
-    return mp.CLEAN
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
+  local l_0_1, l_0_2 = (bm.get_process_relationships)()
+  for l_0_6,l_0_7 in ipairs(l_0_1) do
+    local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_7.image_path))
+    local l_0_9 = (MpCommon.QueryPersistContext)(l_0_8, "PsExecServiceStandardName")
+    if l_0_9 then
+      (mp.ReportLowfi)(l_0_0, 2705434468)
+      ;
+      (bm.add_related_file)(l_0_0)
+      return mp.INFECTED
+    end
+    local l_0_10 = (MpCommon.QueryPersistContext)(l_0_8, "PsExecServiceNonStandardName")
+    if l_0_10 then
+      (mp.ReportLowfi)(l_0_0, 2705434468)
+      ;
+      (bm.add_related_file)(l_0_0)
+      return mp.INFECTED
+    end
   end
 end
 do
-  local l_0_7 = {}
-  -- DECOMPILER ERROR at PC49: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC50: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC51: Overwrote pending register: R4 in 'AssignReg'
-
-  for l_0_11,l_0_12 in ("/usr/bin/snap")("/amazon-ssm-agent/") do
-    -- DECOMPILER ERROR at PC58: Overwrote pending register: R11 in 'AssignReg'
-
-    if (string.find)(l_0_0, l_0_12, "/proc/", true) then
-      return mp.CLEAN
-    end
-  end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
 end
 

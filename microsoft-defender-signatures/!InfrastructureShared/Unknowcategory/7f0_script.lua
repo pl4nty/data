@@ -3,16 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[9]).matched then
-  local l_0_0, l_0_1 = (string.match)((this_sigattrlog[9]).ppid, "pid:(%w+),ProcessStart:(%w+)")
-  local l_0_2 = tonumber(l_0_0)
-  local l_0_3 = tonumber(l_0_1)
-  local l_0_4, l_0_5 = (mp.bsplit)(l_0_3, 32)
-  local l_0_6 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_2, l_0_4, l_0_5)
-  ;
-  (mp.TriggerScanResource)("ems", l_0_6)
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -7) == "mrt.exe" or (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "wmiprvse.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
+  return mp.CLEAN
 end
-do
-  return mp.INFECTED
-end
+return mp.INFECTED
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 14, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "x")
 return mp.INFECTED
 

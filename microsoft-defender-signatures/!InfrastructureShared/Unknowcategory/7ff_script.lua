@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = ((string.lower)((string.sub)(l_0_0, -15))):match("\\([^\\]+%.exe)$")
-    if (l_0_1 == "explorer.exe" or l_0_1 == "taskhostw.exe") and (string.lower)((string.sub)((MpCommon.PathToWin32Path)(l_0_0), 2, 11)) == ":\\windows\\" then
-      return mp.CLEAN
-    end
-  end
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_CONTENTNAME))
+if (string.find)(l_0_0, "^.:\\windows\\ccmcache\\") then
+  return mp.CLEAN
 end
+local l_0_1 = (string.match)(l_0_0, "^.:\\(program files[^\\]*)\\tanium\\tanium client\\")
+if l_0_1 == "program files" then
+  return mp.CLEAN
+end
+if l_0_1 == "program files (x86)" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

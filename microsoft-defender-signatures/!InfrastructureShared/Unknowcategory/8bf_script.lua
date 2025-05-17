@@ -3,16 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  local l_0_1 = (string.sub)(l_0_0, -3)
-  local l_0_2 = (string.sub)(l_0_0, -4)
-  if (l_0_1 == ".js" or l_0_2 == ".jse" or l_0_2 == ".vbs" or l_0_2 == ".vbe" or l_0_2 == ".wsf") and (((((mp.get_mpattributesubstring)("SCPT:Trojan:JS/PikaBot.BX") and not (mp.get_mpattributesubstring)("SCPT:JS/AsrobfusWscrExec")) or (mp.get_mpattributesubstring)("SCRIPT:ToStringCode.A")) and not (mp.get_mpattributesubstring)("SCPT:VBSSplit")) or 0 + 2 + 2 + 1 + 1 >= 5) then
-    return mp.INFECTED
-  end
-end
-do
+if (mp.readu_u16)(headerpage, 1) == 23117 then
   return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 65536 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.bitxor)((mp.readu_u32)(headerpage, 1), 3688618971)
+if l_0_1 == 0 then
+  return mp.CLEAN
+end
+if (mp.bitxor)((mp.readu_u32)(headerpage, 5), l_0_1) == 2049 and (mp.bitxor)((mp.readu_u32)(headerpage, 9), l_0_1) == 1919243008 and (mp.bitxor)((mp.readu_u32)(headerpage, 13), l_0_1) == 1349674358 then
+  (mp.set_mpattribute)("MpNonPIIFileType")
+  return mp.INFECTED
+else
+  return mp.CLEAN
+end
+return mp.CLEAN
 

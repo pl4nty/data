@@ -3,45 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 13, 96)
-local l_0_1 = 1
-while 1 do
-  while 1 do
-    while 1 do
-      if l_0_1 < #l_0_0 then
-        local l_0_2 = (string.byte)(l_0_0, l_0_1)
-        if l_0_2 == 232 then
-          if (mp.readu_u32)(l_0_0, l_0_1 + 1) ~= 0 then
-            return mp.CLEAN
-          end
-          l_0_1 = l_0_1 + 5
-          -- DECOMPILER ERROR at PC29: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC29: LeaveBlock: unexpected jumping out IF_STMT
-
-          -- DECOMPILER ERROR at PC29: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC29: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
-    end
-    if l_0_2 == 61 then
-      do
-        local l_0_3 = "\235"
-        ;
-        (pe.mmap_patch_va)(pevars.sigaddr + (l_0_1) + 34, l_0_3)
-        do return mp.INFECTED end
-        -- DECOMPILER ERROR at PC44: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC44: LeaveBlock: unexpected jumping out IF_STMT
-
-      end
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -10) == "\\mstsc.exe" or (string.sub)(l_0_0, -27) == "\\remotedesktopmanager64.exe" or (string.sub)(l_0_0, -11) == "\\rdcman.exe" or (string.sub)(l_0_0, -14) == "\\mremoteng.exe" or (string.sub)(l_0_0, -10) == "\\lsass.exe" then
   return mp.CLEAN
 end
-do
-  return mp.CLEAN
-end
+return mp.INFECTED
 

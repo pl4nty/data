@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (nri.IsResponse)() then
+if mp.HSTR_WEIGHT < 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

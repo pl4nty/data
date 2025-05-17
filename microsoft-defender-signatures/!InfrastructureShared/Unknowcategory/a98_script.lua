@@ -3,29 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((string.lower)((bm.get_imagepath)()))
-local l_0_1, l_0_2 = nil, nil
-l_0_1 = (string.find)(l_0_0, "/google-chrome", 1, true)
-if l_0_1 ~= nil and l_0_2 ~= nil then
-  return mp.INFECTED
-end
--- DECOMPILER ERROR at PC30: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
 
-l_0_1 = (string.find)(l_0_0, "/chromium-browser", 1, true)
-if l_0_1 ~= nil and l_0_2 ~= nil then
-  return mp.INFECTED
-end
--- DECOMPILER ERROR at PC46: Overwrote pending register: R2 in 'AssignReg'
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
+    local l_0_0, l_0_2, l_0_3, l_0_5, l_0_6 = nil, nil
+  end
+  do
+    if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 ~= nil then
+      local l_0_1, l_0_4, l_0_7 = , (string.lower)((this_sigattrlog[3]).utf8p2)
+    else
+    end
+    -- DECOMPILER ERROR at PC52: Confused about usage of register: R0 in 'UnsetPending'
 
-l_0_1 = (string.find)(l_0_0, "/soffice", 1, true)
-if l_0_1 ~= nil and l_0_2 ~= nil then
-  return mp.INFECTED
-end
--- DECOMPILER ERROR at PC62: Overwrote pending register: R2 in 'AssignReg'
+    -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
 
-l_0_1 = (string.find)(l_0_0, "/firefox", 1, true)
-if l_0_1 ~= nil and l_0_2 ~= nil then
-  return mp.INFECTED
+    -- DECOMPILER ERROR at PC59: Confused about usage of register: R1 in 'UnsetPending'
+
+    if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).wp2 == nil or l_0_1 ~= nil) and (string.lower)((this_sigattrlog[4]).utf8p2) ~= nil and (string.find)(l_0_1, (string.lower)((this_sigattrlog[4]).utf8p2), 1, true) then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
 

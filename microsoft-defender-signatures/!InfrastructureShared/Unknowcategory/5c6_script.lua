@@ -3,26 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 and MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
-  return mp.CLEAN
-end
-local l_0_1 = (sysio.RegExpandUserKey)("HKCU\\Software\\Classes\\Ms-Settings\\Shell\\Open\\Command")
-if l_0_1 then
-  for l_0_5,l_0_6 in pairs(l_0_1) do
-    local l_0_7 = (sysio.RegOpenKey)(l_0_6)
-    if l_0_7 then
-      local l_0_8 = (sysio.GetRegValueType)(l_0_7, "DelegateExecute")
-      if l_0_8 then
-        local l_0_9 = (sysio.GetRegValueAsString)(l_0_7, "")
-        if l_0_9 and (string.len)(l_0_9) > 4 then
-          return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[7]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  if not (this_sigattrlog[8]).matched or (this_sigattrlog[9]).matched then
+    local l_0_1 = (this_sigattrlog[8]).utf8p1
+  else
+    do
+      do return mp.CLEAN end
+      -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+
+      do
+        if mp.ENGINEBUILD < 17100 then
+          local l_0_2 = (string.lower)(l_0_1)
+          if l_0_2:find(":\\program files\\windows defender\\", 1, true) ~= nil or l_0_2:find(":\\program files\\microsoft security client\\", 1, true) ~= nil or l_0_2:find(":\\programdata\\microsoft\\windows defender\\platform", 1, true) ~= nil then
+            return mp.CLEAN
+          end
         end
+        return mp.INFECTED
       end
     end
   end
-end
-do
-  return mp.CLEAN
 end
 

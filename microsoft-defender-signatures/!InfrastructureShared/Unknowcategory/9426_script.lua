@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 9, "הה")
-local l_0_0 = 160
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
-local l_0_2 = (string.find)(l_0_1, "P\232....=....u", 1, true)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_2 + 10, "\235")
-return mp.INFECTED
+do
+  if (pe.isdynamic_va)(pevars.sigaddr) then
+    local l_0_0 = (pe.get_regval)(pe.REG_EAX)
+    if l_0_0 == 1247748109 then
+      (mp.set_mpattribute)("PEBMPAT:AntiEmuVirtualProtectLayout")
+      ;
+      (pe.set_regval)(pe.REG_EAX, 3047219186)
+    end
+  end
+  return mp.CLEAN
+end
 

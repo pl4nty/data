@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-;
-(pe.mmap_patch_va)(pevars.sigaddr - 2, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\001\000\000\000")
-return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.sub)(l_0_0, -13) == "uninstall.exe" or (string.sub)(l_0_0, -15) == "uninstaller.exe" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

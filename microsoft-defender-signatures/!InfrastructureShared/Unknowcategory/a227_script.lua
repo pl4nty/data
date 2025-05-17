@@ -3,16 +3,20 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 1058048 and (mp.getfilesize)() < 1059328 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if ((pehdr.DataDirectory)[5]).RVA <= 0 then
   return mp.CLEAN
 end
+if ((pehdr.DataDirectory)[5]).Size <= 0 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)(((pehdr.DataDirectory)[5]).RVA, 9)
+if (mp.readu_u32)(l_0_0, 5) ~= 131584 then
+  return mp.CLEAN
+end
+if l_0_0:byte(9) ~= 48 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

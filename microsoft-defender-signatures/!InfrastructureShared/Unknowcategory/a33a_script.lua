@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)((string.lower)(l_0_6.image_path), "data\\winscan.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "zalo.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "htkk.exe", 1, true)) then
-    return mp.CLEAN
-  end
+if ((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or pevars.epsec ~= 1 or (pesecs[pevars.epsec]).Name ~= ".text" or (pesecs[2]).Name ~= ".data" or (pesecs[3]).Name ~= ".rsrc" or not peattributes.no_decription or peattributes.suspicious_image_version) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

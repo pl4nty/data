@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("exploitdb", 1, true) then
-  return mp.CLEAN
+if peattributes.no_security == true and peattributes.isexe == true and (pesecs[6]).Name == ".symtab" and (pesecs[3]).Characteristics == 3221225536 and (pesecs[4]).Characteristics == 3221225536 then
+  return mp.INFECTED
 end
-if l_0_0:find("kali", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

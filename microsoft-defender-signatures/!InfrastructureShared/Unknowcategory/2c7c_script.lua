@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("PEBMPAT:AntiEmuSimdaCounter2DC6C0")
 return mp.CLEAN
 

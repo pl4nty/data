@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\program files", 1, true) then
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\184\r\024\141>\144")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+if not (MpCommon.QueryPersistContext)(l_0_0, "SuspCredEnumerateAttempt") then
+  (MpCommon.AppendPersistContext)(l_0_0, "SuspCredEnumerateAttempt", 0)
+end
+if not (MpCommon.QueryPersistContext)(l_0_0, "queryAgePrev") then
+  (MpCommon.AppendPersistContext)(l_0_0, "queryAgePrev", 0)
+end
 return mp.INFECTED
 

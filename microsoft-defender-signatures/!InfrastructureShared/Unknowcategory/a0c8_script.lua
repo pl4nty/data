@@ -4,17 +4,11 @@
 -- params : ...
 -- function num : 0
 do
-  if peattributes.isexe == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+    if (string.find)(l_0_0, "wscript.shell", 1, true) and ((string.find)(l_0_0, "eval(", 1, true) or (string.find)(l_0_0, "\'ev\'+\'al\'", 1, true)) then
+      return mp.INFECTED
     end
-    if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-      (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-    end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

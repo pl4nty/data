@@ -3,43 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_1 = nil
-local l_0_2 = 100000000
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = 10000000
-  l_0_2 = 30000000
-  l_0_0 = 10000000
-else
-  do
-    -- DECOMPILER ERROR at PC18: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
 
-    if (this_sigattrlog[4]).matched then
-      l_0_2 = 30000000
-    else
-      return mp.CLEAN
-    end
-    if not l_0_1.utf8p1 then
-      return mp.CLEAN
-    end
-    local l_0_3 = 10000000
-    if not (string.find)((string.lower)(l_0_1.utf8p1), ":\\users\\", 1, true) then
-      return mp.CLEAN
-    end
-    if (string.find)((string.lower)(l_0_1.utf8p1), "\\citrix\\", 1, true) or (string.find)((string.lower)(l_0_1.utf8p1), "\\assembly\\", 1, true) or (string.find)((string.lower)(l_0_1.utf8p1), ".tmp", 1, true) then
-      return mp.CLEAN
-    end
-    if (sysio.IsFileExists)((string.lower)(l_0_1.utf8p1)) then
-      local l_0_4 = nil
-      if (sysio.GetFileSize)((string.lower)(l_0_1.utf8p1)) < l_0_2 and l_0_3 < (sysio.GetFileSize)((string.lower)(l_0_1.utf8p1)) then
-        local l_0_5 = nil
-        ;
-        (bm.request_SMS)(((bm.get_current_process_startup_info)()).ppid, "M")
-        ;
-        (bm.add_action)("SmsAsyncScanEvent", 1)
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC22: Overwrote pending register: R0 in 'AssignReg'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
+    local l_0_1 = this_sigattrlog[2]
+  else
+    do
+      do return mp.CLEAN end
+      local l_0_2 = nil
+      if not (MpCommon.ExpandEnvironmentVariables)("%WINDIR%") then
+        return mp.CLEAN
+      end
+      local l_0_3 = nil
+      if not (sysio.GetFileFsVolumeInformation)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%")) then
+        return mp.CLEAN
+      end
+      if (l_0_2.utf8p1):sub(-8) == (string.format)("%x", ((sysio.GetFileFsVolumeInformation)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%"))).VolumeSerialNumber) then
         return mp.INFECTED
       end
-    end
-    do
       return mp.CLEAN
     end
   end

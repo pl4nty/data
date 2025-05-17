@@ -3,59 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  if l_0_1:match("([^\\]+)$") == "fodhelper.exe" or l_0_1:match("([^\\]+)$") == "computerdefaults.exe" or l_0_1:match("([^\\]+)$") == "wsreset.exe" or l_0_1:match("([^\\]+)$") == "slui.exe" or l_0_1:match("([^\\]+)$") == "changepk.exe" or l_0_1:match("([^\\]+)$") == "control.exe" or l_0_1:match("([^\\]+)$") == "compmgmtlauncher.exe" then
-    local l_0_2 = true
-    if l_0_1:match("([^\\]+)$") == "control.exe" then
-      if (MpCommon.GetPersistContextCountNoPath)("UACBypassExp.A!sdclt") == 0 then
+if (this_sigattrlog[2]).matched then
+  local l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1))
+  if l_0_0 ~= nil then
+    if (string.find)(l_0_0, "\\dism\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\dism50x86\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\tools\\amd64\\servicing\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\tools\\x86\\servicing\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\bin\\bin64\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\dismwin10\\x64\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\dismwin7\\x64\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\x64\\dism10\\dismcore.dll", 1, true) or (string.find)(l_0_0, "\\x86\\dism10\\dismcore.dll", 1, true) then
+      return mp.CLEAN
+    end
+    local l_0_1 = (sysio.GetFileLastWriteTime)(l_0_0)
+    if ((sysio.GetLastResult)()).Success and l_0_1 ~= 0 then
+      l_0_1 = l_0_1 / 10000000 - 11644473600
+      local l_0_2 = (MpCommon.GetCurrentTimeT)()
+      if l_0_2 < l_0_1 or l_0_2 - (l_0_1) > 3600 then
         return mp.CLEAN
       end
-      local l_0_3 = (MpCommon.GetPersistContextNoPath)("UACBypassExp.A!sdclt")
-      if l_0_3 then
-        local l_0_4 = l_0_0.ppid
-        local l_0_5 = false
-        for l_0_9,l_0_10 in ipairs(l_0_3) do
-          if l_0_10 == l_0_4 then
-            l_0_5 = true
-            break
-          end
-        end
-        do
-          do
-            if l_0_5 == false then
-              l_0_2 = false
-            end
-            if l_0_2 == false then
-              return mp.CLEAN
-            end
-            if (MpCommon.GetPersistContextCountNoPath)("UACBypassExp.T!ShieldUp") > 0 then
-              local l_0_11 = (MpCommon.GetPersistContextNoPath)("UACBypassExp.T!ShieldUp")
-              if l_0_11 then
-                local l_0_12 = (mp.GetScannedPPID)()
-                local l_0_13 = (string.lower)((mp.GetProcessCommandLine)(l_0_12))
-                local l_0_14 = (string.match)(l_0_13, "^(.-)%s+")
-                l_0_14 = l_0_14:gsub("%.exe$", "")
-                for l_0_18,l_0_19 in ipairs(l_0_11) do
-                  l_0_19 = (string.lower)(l_0_19)
-                  if (string.find)(l_0_19, l_0_14, 1, true) then
-                    return mp.INFECTED
-                  end
-                  if (string.len)(l_0_19) > 8 and ((string.find)(l_0_19, ".bat", 1, true) or (string.find)(l_0_19, ".cmd", 1, true) or (string.find)(l_0_19, ".js", 1, true) or (string.find)(l_0_19, ".vbs", 1, true) or (string.find)(l_0_19, ".wsf", 1, true)) and (string.find)(l_0_13, l_0_19, 1, true) then
-                    return mp.INFECTED
-                  end
-                end
-              end
-            end
-            do
-              l_0_1 = mp
-              l_0_1 = l_0_1.CLEAN
-              return l_0_1
-            end
-          end
-        end
-      end
+    end
+  end
+  do
+    do
+      ;
+      (bm.add_related_file)(l_0_0)
+      return mp.INFECTED
     end
   end
 end

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_sigattr_event_count)(16385) > 4 and (mp.get_sigattr_event_count)(16386) > 4 then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Xamloader")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

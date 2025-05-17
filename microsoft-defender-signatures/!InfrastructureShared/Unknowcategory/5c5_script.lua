@@ -3,32 +3,24 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[7]).matched then
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
     local l_0_0 = nil
-  else
   end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
 
-  if not (this_sigattrlog[8]).matched or (this_sigattrlog[9]).matched then
-    local l_0_1 = (this_sigattrlog[8]).utf8p1
-  else
-    do
-      do return mp.CLEAN end
-      -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
-
-      do
-        if mp.ENGINEBUILD < 17100 then
-          local l_0_2 = (string.lower)(l_0_1)
-          if l_0_2:find(":\\program files\\windows defender\\", 1, true) ~= nil or l_0_2:find(":\\program files\\microsoft security client\\", 1, true) ~= nil or l_0_2:find(":\\programdata\\microsoft\\windows defender\\platform", 1, true) ~= nil then
-            return mp.CLEAN
-          end
-        end
-        return mp.INFECTED
-      end
-    end
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or not (string.find)(l_0_1, "\\microsoft\\onedrive\\", 1, true) then
+    return mp.INFECTED
   end
+  -- DECOMPILER ERROR at PC66: Confused about usage of register: R1 in 'UnsetPending'
+
+  if not (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(nil)), "\\onedrive\\[%d+.]+", 1, true) then
+    (bm.add_related_file)((string.lower)((mp.ContextualExpandEnvironmentVariables)(nil)))
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

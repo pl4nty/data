@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[6]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!A")
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+  return mp.INFECTED
 end
-if (hstrlog[7]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!B")
-  return mp.CLEAN
-end
-if (hstrlog[8]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!C")
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

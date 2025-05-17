@@ -3,25 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset + 9
-local l_0_2 = 256
-local l_0_3 = ""
-local l_0_4 = 0
-local l_0_5 = 0
-if l_0_0.is_header then
-  l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
-else
-  l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
-end
-l_0_3 = (string.gsub)(l_0_3, "%^", "")
-l_0_3 = (string.gsub)(l_0_3, "`", "")
-l_0_3 = (string.lower)(l_0_3)
-if l_0_4 + l_0_5 > 10 and (string.find)(l_0_3, "powershell", 1, true) then
-  (mp.set_mpattribute)("SCPT:rtcShellPSObfus.A")
-end
-if l_0_4 > 20 and (string.find)(l_0_3, "cmd", 1, true) then
-  (mp.set_mpattribute)("SCPT:rtcShellCmdObfus.A")
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_19")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_2 = (mp.readu_u32)(l_0_0, 6)
+local l_0_3 = (string.byte)(l_0_0, 14)
+local l_0_4 = (mp.readu_u32)(l_0_0, 16)
+local l_0_5 = (string.byte)(l_0_0, 22)
+local l_0_6 = (mp.readu_u32)(l_0_0, 26)
+local l_0_7 = (mp.readu_u32)(l_0_0, 37)
+local l_0_8 = (pe.get_regval)(pe.REG_EDX)
+local l_0_9 = (mp.ror32)((mp.ror32)(l_0_8, l_0_3) + l_0_4, l_0_5) - (mp.bitxor)(l_0_7, l_0_6) + l_0_1 - l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_9)
 return mp.INFECTED
 

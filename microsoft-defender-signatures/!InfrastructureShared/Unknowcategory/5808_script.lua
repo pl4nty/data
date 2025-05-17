@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true then
-  return mp.INFECTED
+if (hstrlog[3]).matched then
+  (mp.changedetectionname)(805306429)
 end
-return mp.CLEAN
+return mp.INFECTED
 

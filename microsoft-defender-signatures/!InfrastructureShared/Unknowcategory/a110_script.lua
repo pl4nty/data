@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil and ((string.lower)((string.sub)(l_0_0, -15))):match("\\([^\\]+%.exe)$") == "explorer.exe" and (string.lower)((string.sub)((mp.ContextualExpandEnvironmentVariables)(l_0_0), 2, 11)) == ":\\windows\\" then
+if peattributes.hasexports ~= true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 11 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)(544, 6)
+if (mp.crc32)(-1, l_0_0, 1, 6) ~= 3246015244 then
   return mp.CLEAN
 end
 return mp.INFECTED

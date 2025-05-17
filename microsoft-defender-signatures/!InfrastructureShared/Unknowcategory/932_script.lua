@@ -3,14 +3,45 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetUACMetadata)()
 do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)((l_0_0.Info).ApplicationName)
-    if (string.find)(l_0_1, "\\appdata\\", 1, true) and ((string.find)(l_0_1, "cache\\low\\", 1, true) or (string.find)(l_0_1, "\\locallow\\", 1, true) or (string.find)(l_0_1, "\\temp\\low\\", 1, true) or (string.find)(l_0_1, "\\privacie\\low\\", 1, true) or (string.find)(l_0_1, "\\inetcookies\\low\\", 1, true) or (string.find)(l_0_1, "\\inetcache\\virtualize\\", 1, true) or (string.find)(l_0_1, "\\microsoft\\playready\\", 1, true) or (string.find)(l_0_1, "\\dntexception\\low\\", 1, true) or (string.find)(l_0_1, "\\history\\low\\", 1, true)) then
-      return mp.SYNCLOWFI
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and (sysio.IsFileExists)(l_0_0) then
+      (mp.ReportLowfi)(l_0_0, 1578871239)
     end
   end
-  return mp.CLEAN
+  do
+    if (this_sigattrlog[2]).matched then
+      local l_0_1 = (this_sigattrlog[2]).utf8p2
+      if l_0_1 ~= nil and (string.len)(l_0_1) > 3 and (sysio.IsFileExists)(l_0_1) then
+        (mp.ReportLowfi)(l_0_1, 1851672550)
+      end
+    end
+    do
+      if (this_sigattrlog[3]).matched then
+        local l_0_2 = (this_sigattrlog[3]).utf8p2
+        if l_0_2 ~= nil and (string.len)(l_0_2) > 3 and (sysio.IsFileExists)(l_0_2) then
+          (mp.ReportLowfi)(l_0_2, 2449707962)
+        end
+      end
+      do
+        if (this_sigattrlog[4]).matched then
+          local l_0_3 = (this_sigattrlog[4]).utf8p2
+          if l_0_3 ~= nil and (string.len)(l_0_3) > 3 and (sysio.IsFileExists)(l_0_3) then
+            (mp.ReportLowfi)(l_0_3, 195050746)
+          end
+        end
+        do
+          if (this_sigattrlog[5]).matched then
+            local l_0_4 = (this_sigattrlog[5]).utf8p2
+            if l_0_4 ~= nil and (string.len)(l_0_4) > 3 and (sysio.IsFileExists)(l_0_4) then
+              (mp.ReportLowfi)(l_0_4, 723996031)
+            end
+          end
+          return mp.INFECTED
+        end
+      end
+    end
+  end
 end
 

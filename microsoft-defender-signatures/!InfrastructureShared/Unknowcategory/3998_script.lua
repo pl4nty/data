@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.isdll then
-  return mp.INFECTED
+if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

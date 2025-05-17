@@ -3,23 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine ~= 34404 then
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).ppid
+  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  if (string.find)(l_0_1, ".dat", 1, true) and (string.find)(l_0_1, "--", 1, true) and (string.find)(l_0_1, "#1", 1, true) and (string.find)(l_0_1, "=\"", 1, true) and l_0_0 then
+    (bm.request_SMS)(l_0_0, "m")
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[2]).Size ~= 40 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(epcode, 1) ~= 686588744 then
-  return mp.CLEAN
-end
-if epcode[5] ~= 232 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(epcode, 9) ~= 3296937984 then
-  return mp.CLEAN
-end
-if (mp.readu_u16)(epcode, 13) ~= 49960 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

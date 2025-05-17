@@ -3,26 +3,44 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[10]).ppid then
-  return mp.CLEAN
-end
-local l_0_0 = (MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[10]).ppid)
-if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= l_0_0.IntegrityLevel then
-  local l_0_1, l_0_2 = (bm.get_process_relationships)()
-  if l_0_1 ~= nil then
-    for l_0_6,l_0_7 in ipairs(l_0_1) do
-      if l_0_7.image_path ~= nil then
-        local l_0_8 = (string.lower)(l_0_7.image_path)
-        if (string.find)(l_0_8, "\\chrome.exe", -11, true) then
-          return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+  local l_0_0 = nil
+else
+  do
+    do return mp.CLEAN end
+    local l_0_1 = nil
+    -- DECOMPILER ERROR at PC30: Overwrote pending register: R1 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
+
+    if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p2 == nil or nil ~= nil then
+      local l_0_2 = nil
+      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
+        local l_0_3 = nil
+        -- DECOMPILER ERROR at PC43: Confused about usage of register: R7 in 'UnsetPending'
+
+        if (sysio.IsFileExists)(R7_PC43) then
+          (bm.add_related_file)(R7_PC43)
         end
       end
     end
+    do
+      if l_0_1 ~= nil then
+        local l_0_8 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+        for l_0_12,l_0_13 in ipairs(l_0_8) do
+          if (sysio.IsFileExists)(l_0_13) then
+            (bm.add_related_file)(l_0_13)
+          end
+        end
+      end
+      do
+        l_0_8 = mp
+        l_0_8 = l_0_8.INFECTED
+        return l_0_8
+      end
+    end
   end
-end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.CLEAN
-  return l_0_1
 end
 

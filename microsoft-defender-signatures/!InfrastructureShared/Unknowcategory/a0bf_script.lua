@@ -3,18 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.gmatch)(l_0_0, "::readallbytes%([\'\"](.+)[\'\"]%)")
-  for l_0_5 in l_0_1 do
-    if (sysio.IsFileExists)(l_0_5) then
-      (bm.add_related_file)(l_0_5)
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if peattributes.no_exports then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 1 then
+  for l_0_5 = 1, l_0_0 do
+    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
+    if (string.lower)(l_0_6) == "rathbuige" then
+      return mp.INFECTED
     end
   end
 end
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+  return mp.CLEAN
 end
 

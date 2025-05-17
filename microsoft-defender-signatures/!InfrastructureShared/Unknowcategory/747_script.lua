@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 1048576 then
+if (mp.getfilesize)() > 16777216 then
   return mp.CLEAN
 end
-if #(mp.enum_mpattributesubstring)("SCPT:CVE-2019-1652-A") >= 10 then
+if #(mp.enum_mpattributesubstring)("SCPT:CipherSlateC") >= 2 then
   return mp.INFECTED
 else
   return mp.CLEAN

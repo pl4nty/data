@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 53248 and l_0_0 <= 57344 then
+if (pesecs[5]).Name == ".alang" then
   return mp.INFECTED
 end
 return mp.CLEAN

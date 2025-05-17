@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Soctuseer")
+(mp.set_mpattribute)("PUA:Block:VOPackage")
 return mp.INFECTED
 

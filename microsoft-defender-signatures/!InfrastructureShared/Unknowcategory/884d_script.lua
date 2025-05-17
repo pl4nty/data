@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (string.byte)((pe.mmap_va)(pevars.sigaddr - 5, 1), 1) ~= 185 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "êê")
-return mp.INFECTED
+if peattributes.dt_error_heur_exit_criteria then
+  return mp.INFECTED
+end
+if (mp.get_mpattribute)("MpHasValidProjPath") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

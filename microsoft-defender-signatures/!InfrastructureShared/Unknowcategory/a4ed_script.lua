@@ -3,48 +3,33 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    local l_0_1 = nil
-    -- DECOMPILER ERROR at PC30: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC44: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC49: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC51: Unhandled construct in 'MakeBoolean' P3
-
-    if ((this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil and not (this_sigattrlog[2]).matched) or nil ~= nil then
-      local l_0_2 = nil
-      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
-        local l_0_3 = nil
-        -- DECOMPILER ERROR at PC57: Confused about usage of register: R7 in 'UnsetPending'
-
-        if (sysio.IsFileExists)(R7_PC57) then
-          (bm.add_related_file)(R7_PC57)
-        end
-      end
-    end
-    do
-      if l_0_1 ~= nil then
-        local l_0_8 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-        for l_0_12,l_0_13 in ipairs(l_0_8) do
-          if (sysio.IsFileExists)(l_0_13) then
-            (bm.add_related_file)(l_0_13)
-          end
-        end
-      end
-      do
-        l_0_8 = mp
-        l_0_8 = l_0_8.INFECTED
-        return l_0_8
-      end
-    end
-  end
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.match)(l_0_0, "([^\\]-[^\\%.]+)$")
 end
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = nil
+if (this_sigattrlog[3]).matched then
+  l_0_1 = (this_sigattrlog[3]).utf8p2
+end
+if l_0_1 == nil and (string.len)(l_0_1) < 3 then
+  return mp.CLEAN
+end
+local l_0_2 = nil
+if (this_sigattrlog[4]).matched then
+  l_0_2 = (this_sigattrlog[4]).utf8p1
+  l_0_2 = (string.match)(l_0_2, "([^\\]-[^\\%.]+)$")
+end
+if l_0_2 == nil and (string.len)(l_0_2) < 3 then
+  return mp.CLEAN
+end
+if l_0_0 == l_0_2 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, l_0_0, 1, true) and (string.find)(l_0_1, l_0_2, 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

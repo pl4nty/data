@@ -13,7 +13,7 @@ for l_0_8,l_0_9 in ipairs(l_0_3) do
   for l_0_15,l_0_16 in ipairs(l_0_10) do
     if l_0_16.image_path ~= nil then
       local l_0_17 = (string.lower)((MpCommon.PathToWin32Path)(l_0_16.image_path))
-      if not (string.find)(l_0_17, "\\wordpad.exe", -12, true) then
+      if not (string.find)(l_0_17, "\\notepad.exe", -12, true) then
         local l_0_18 = l_0_16.ppid
         if (sysio.IsFileExists)(l_0_17) and not (mp.IsKnownFriendlyFile)(l_0_17, true, false) then
           (bm.add_related_file)(l_0_17)

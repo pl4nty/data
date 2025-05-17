@@ -3,19 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "%localappdata%\\Microsoft\\Edge\\User Data\\Default\\Extensions\\"
-local l_0_1 = (sysio.FindFiles)(l_0_0, "manifest.json", -1)
-for l_0_5,l_0_6 in pairs(l_0_1) do
-  (bm.add_related_file)(l_0_6)
-  ;
-  (bm.add_related_string)("file", l_0_6, bm.RelatedStringBMReport)
-  ;
-  (bm.add_related_string)("file", l_0_6, bm.RelatedStringFileReport)
-  if l_0_5 > 10 then
-    break
-  end
-end
 do
-  return mp.INFECTED
+  if (mp.get_mpattribute)("LUA:FileSizeLE80000.A") and (mp.get_mpattribute)("Lua:FileSizeGEC350") and (mp.get_mpattribute)("BM_DropperObfuscatorUR") and (mp.get_mpattribute)("MpHasExpensiveLoop") and pehdr.TimeDateStamp ~= 0 then
+    local l_0_0 = (MpCommon.GetCurrentTimeT)()
+    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 2592000 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
 

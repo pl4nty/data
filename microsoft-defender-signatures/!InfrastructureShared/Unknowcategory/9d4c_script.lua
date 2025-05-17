@@ -3,20 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-do
-  if l_0_0 then
-    local l_0_1 = {}
-    l_0_1["powershell.exe"] = true
-    l_0_1["wscript.exe"] = true
-    l_0_1["cscript.exe"] = true
-    l_0_1["winword.exe"] = true
-    l_0_1["excel.exe"] = true
-    l_0_1["powerpnt.exe"] = true
-    if l_0_1[(string.match)(l_0_0, "\\([^\\]+)$")] then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,15 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if pevars.epsec < pehdr.NumberOfSections or (mp.readu_u32)(epcode, 1) ~= 2030270560 or peattributes.epoutofimage or peattributes.amd64_image or (mp.getfilesize)() < pehdr.SizeOfImage then
-  (mp.changedetectionname)(805306412)
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 ~= nil and ((string.sub)(l_0_0, -33) == "\\msexchangemailboxreplication.exe" or (string.sub)(l_0_0, -23) == "\\msexchangedelivery.exe" or (string.sub)(l_0_0, -39) == "\\msexchangemailboxreplicationworker.exe") then
+  local l_0_1 = nil
+  if (this_sigattrlog[1]).matched then
+    l_0_1 = (this_sigattrlog[1]).utf8p1
+  else
+    if (this_sigattrlog[2]).matched then
+      l_0_1 = (this_sigattrlog[2]).utf8p1
+    else
+      if (this_sigattrlog[3]).matched then
+        l_0_1 = (this_sigattrlog[3]).utf8p1
+      else
+        if (this_sigattrlog[4]).matched then
+          l_0_1 = (this_sigattrlog[4]).utf8p1
+        end
+      end
+    end
+  end
+  if l_0_1 ~= nil then
+    local l_0_2 = (string.sub)(l_0_1, -4)
+    local l_0_3 = "|.asp|aspx|ashx|asmx|"
+    if (string.find)(l_0_3, l_0_2, 1, true) == nil then
+      return mp.CLEAN
+    end
+    if (sysio.IsFileExists)(l_0_1) then
+      (bm.add_related_file)(l_0_1)
+      ;
+      (bm.add_threat_file)(l_0_1)
+    end
+    return mp.INFECTED
+  end
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_INMEMORY then
+do
   return mp.CLEAN
 end
-if pehdr.NumberOfSections >= 1 and peattributes.isexe and peattributes.epscn_islast and peattributes.lastscn_writable and peattributes.lastscn_executable and (pesecs[pehdr.NumberOfSections]).VirtualAddress <= (hstrlog[2]).VA - pehdr.ImageBase and (pesecs[pehdr.NumberOfSections]).VirtualAddress <= (hstrlog[3]).VA - pehdr.ImageBase then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

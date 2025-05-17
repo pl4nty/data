@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((nri.GetHttpRequestHeader)("User-Agent"))
-if (string.find)(l_0_0, "medunja solodunnja", 1, true) then
+if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 327680 and (mp.getfilesize)() < 557056 then
   return mp.INFECTED
 end
 return mp.CLEAN

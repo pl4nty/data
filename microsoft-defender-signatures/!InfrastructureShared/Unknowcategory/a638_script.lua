@@ -3,18 +3,43 @@
 
 -- params : ...
 -- function num : 0
-if pevars.epsec ~= 2 or (pesecs[2]).Name ~= ".rsrc" or (pesecs[2]).SizeOfRawData ~= 512 and (pesecs[2]).SizeOfRawData ~= 1024 then
-  return mp.CLEAN
-end
-local l_0_0 = (hstrlog[2]).VA + 15
-local l_0_1 = (pe.mmap_va)(l_0_0, 6)
-local l_0_2 = (string.byte)((pe.mmap_va)(l_0_0 + 6, 1)) + (string.byte)((pe.mmap_va)(l_0_0 + 7, 1)) * 256
-local l_0_3 = (string.byte)((pe.mmap_va)(l_0_0 + 11, 1)) + (string.byte)((pe.mmap_va)(l_0_0 + 12, 1)) * 256
-for l_0_7 = 15, 105, 15 do
-  local l_0_8 = l_0_0 + l_0_7
-  if l_0_1 ~= (pe.mmap_va)(l_0_8, 6) or l_0_2 - l_0_7 ~= (string.byte)((pe.mmap_va)(l_0_8 + 6, 1)) + (string.byte)((pe.mmap_va)(l_0_8 + 7, 1)) * 256 or l_0_3 - l_0_7 ~= (string.byte)((pe.mmap_va)(l_0_8 + 11, 1)) + (string.byte)((pe.mmap_va)(l_0_8 + 12, 1)) * 256 then
-    return mp.CLEAN
+getrawu32 = function(l_1_0)
+  -- function num : 0_0
+  (mp.readprotection)(false)
+  local l_1_1 = mp.readu_u32
+  do
+    local l_1_4 = mp.readfile
+    l_1_4 = l_1_4((pe.foffset_va)(l_1_0), 4)
+    local l_1_2 = nil
+    l_1_2 = 1
+    local l_1_3 = nil
+    do return l_1_1(l_1_4, l_1_2) end
+    -- DECOMPILER ERROR at PC17: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
   end
 end
-return mp.INFECTED
+
+if (hstrlog[1]).matched then
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!xor_plus.1_0A")
+  local l_0_0 = nil
+  l_0_0 = getrawu32((hstrlog[1]).VA + 1328)
+  if l_0_0 == 2537292765 then
+    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_6DF1")
+  end
+else
+  do
+    do
+      if (hstrlog[2]).matched then
+        local l_0_1 = nil
+        l_0_1 = getrawu32((hstrlog[2]).VA + 667)
+        if l_0_1 == 87682159 then
+          (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!xor_plus.1_0D")
+          ;
+          (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_6FF3")
+        end
+      end
+      return mp.CLEAN
+    end
+  end
+end
 

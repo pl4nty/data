@@ -3,10 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0:find("svchost.exe") then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 2527504772)
+if mp.HSTR_WEIGHT >= 7 then
   return mp.INFECTED
+end
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
 end
 return mp.CLEAN
 

@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_0.ppid, "M")
-;
-(bm.add_action)("SmsAsyncScanEvent", 5000)
-return mp.INFECTED
+if peattributes.no_security == true and peattributes.isexe == true and (mp.getfilesize)() > 1700000 and (mp.getfilesize)() < 4000000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,44 +3,56 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-local l_0_1 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 14, 1), 1)
-if l_0_1 == 129 then
-  l_0_0 = 20
-else
-  if l_0_1 == 131 then
-    l_0_0 = 17
+local l_0_3 = nil
+if (MpCommon.GetPersistContextNoPath)("TemplateInjc") ~= nil then
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    l_0_3 = (this_sigattrlog[1]).utf8p2
+    local l_0_0 = nil
   else
-    l_0_0 = 24
-  end
-end
-local l_0_2 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 64)
-local l_0_3 = (string.find)(l_0_2, "t", 1, true)
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_0 + l_0_3 - 1, "\235")
-if (string.byte)((pe.mmap_va)(pevars.sigaddr + 9, 1), 1) == 185 then
-  for l_0_7 = 15, l_0_0 + l_0_3 - 1 do
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_7 - 1, "\144")
-  end
-else
-  do
-    if (string.byte)((pe.mmap_va)(pevars.sigaddr + 9, 1), 1) == 96 then
-      for l_0_11 = (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "a\185", 1, true) + 1, l_0_0 + l_0_3 - 1 do
-        (pe.mmap_patch_va)(pevars.sigaddr + l_0_11 - 1, "\144")
+    do
+      if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+        l_0_3 = (this_sigattrlog[2]).utf8p2
+      else
+        if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+          l_0_3 = (this_sigattrlog[3]).utf8p2
+          local l_0_1, l_0_2 = nil
+        end
       end
-      for l_0_15 = 10, (string.find)((pe.mmap_va)(pevars.sigaddr + 9, 32), "a", 1, true) + 9 do
-        (pe.mmap_patch_va)(pevars.sigaddr + l_0_15 - 1, "\144")
-      end
-    else
       do
-        for l_0_19 = (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "\185", 1, true), l_0_0 + l_0_3 - 1 do
-          (pe.mmap_patch_va)(pevars.sigaddr + l_0_19 - 1, "\144")
+        local l_0_4 = nil
+        if l_0_3 ~= nil then
+          local l_0_5 = nil
+          local l_0_6 = (mp.GetExecutablesFromCommandLine)(l_0_3)
+          for l_0_10,l_0_11 in ipairs(l_0_6) do
+            local l_0_7 = {[".xls"] = true, [".doc"] = true, [".ppt"] = true, [".pps"] = true, docx = true, pptx = true, ppsx = true, xlsx = true, [".rtf"] = true, [".xml"] = true, dotx = true, dotm = true, [".odt"] = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, docm = true, xlsm = true, pptm = true}
+            -- DECOMPILER ERROR at PC82: Confused about usage of register: R9 in 'UnsetPending'
+
+            if (sysio.IsFileExists)(R9_PC82) and l_0_7[(string.sub)(R9_PC82, -4)] then
+              l_0_5 = R9_PC82
+            end
+          end
         end
         do
-          return mp.INFECTED
+          l_0_6 = ipairs
+          l_0_6 = l_0_6(l_0_4)
+          for l_0_15,l_0_16 in l_0_6 do
+            local l_0_16 = nil
+            l_0_16 = string
+            l_0_16 = l_0_16.match
+            l_0_16 = l_0_16(l_0_5, R10_PC105)
+            if l_0_16 then
+              l_0_16 = mp
+              l_0_16 = l_0_16.INFECTED
+              return l_0_16
+            end
+          end
+          do
+            l_0_5 = mp
+            l_0_5 = l_0_5.CLEAN
+            do return l_0_5 end
+            -- DECOMPILER ERROR at PC116: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
+          end
         end
       end
     end

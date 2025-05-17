@@ -3,47 +3,44 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_relocs ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_1 = (this_sigattrlog[1]).utf8p2
+  local l_0_2 = nil
+else
 end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
+do
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
+
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+    local l_0_3, l_0_4 = (this_sigattrlog[2]).utf8p1, (this_sigattrlog[2]).utf8p2
+    l_0_4 = (this_sigattrlog[3]).utf8p2
+    local l_0_5 = nil
+  else
+  end
+  do
+    -- DECOMPILER ERROR at PC80: Overwrote pending register: R0 in 'AssignReg'
+
+    if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
+      local l_0_6, l_0_7, l_0_9, l_0_10, l_0_12, l_0_13, l_0_15 = (this_sigattrlog[4]).utf8p1, (this_sigattrlog[4]).utf8p2
+      l_0_9 = this_sigattrlog
+      l_0_9 = l_0_9[5]
+      l_0_7 = l_0_9.utf8p2
+      local l_0_8, l_0_11, l_0_14, l_0_16 = nil
+    else
+    end
+    do
+      if ((this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil and (this_sigattrlog[6]).utf8p1 == nil) or (this_sigattrlog[6]).utf8p2 == nil then
+        return mp.CLEAN
+      end
+      local l_0_17 = nil
+      local l_0_18 = nil
+      ;
+      (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), {["[" .. l_0_17 .. "]"] = "[" .. l_0_18 .. "]"})
+      return mp.INFECTED
+    end
+  end
 end
-if pehdr.MajorLinkerVersion ~= 6 then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage < 262144 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage > 389120 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint < 192512 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint > 323584 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData < 217088 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData > 327680 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size < 160 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size > 240 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,31 +3,41 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsHipsRuleEnabled)("3b576869-a4ec-4529-8536-b80a7769e899") ~= true then
+local l_0_0 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
+if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_0 = "enghipscpy:blockaccess:3b576869-a4ec-4529-8536-b80a7769e899"
-local l_0_1 = ""
-local l_0_2 = ""
-if (this_sigattrlog[5]).matched then
-  l_0_1 = (this_sigattrlog[5]).utf8p1
-  l_0_2 = (this_sigattrlog[5]).utf8p2
-  if l_0_1 == nil or l_0_1 == "" or l_0_2 == nil or l_0_2 == "" then
-    return mp.CLEAN
-  end
-else
+local l_0_1 = (string.lower)(l_0_0)
+if l_0_1 == nil then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "%", 1, true) ~= nil or (string.find)(l_0_2, "%", 1, true) ~= nil then
+local l_0_2 = (bm.get_connection_string)()
+if l_0_2 == nil then
   return mp.CLEAN
 end
-local l_0_3 = {}
-l_0_3.exe = true
-l_0_3.dll = true
-l_0_3.sys = true
-local l_0_4 = (string.lower)((string.match)(l_0_1, "%.([^%.]+)$"))
-if l_0_3[l_0_4] == true and not (MpCommon.QueryPersistContext)(l_0_2, l_0_0) then
-  (MpCommon.AppendPersistContext)(l_0_2, l_0_0, 0)
+if l_0_2 == "" then
+  return mp.CLEAN
+end
+local l_0_3 = tonumber((string.match)(l_0_2, "DestPort=(%d+);"))
+if l_0_3 < 10050 or l_0_3 > 10063 then
+  return mp.CLEAN
+end
+local l_0_4, l_0_5, l_0_6 = l_0_1:match("(.+\\)([^\\]+)(%.%l%l%l)$")
+if l_0_4 == nil then
+  return mp.CLEAN
+end
+if l_0_5 == nil then
+  return mp.CLEAN
+end
+if l_0_6 == nil or l_0_6 ~= ".exe" then
+  return mp.CLEAN
+end
+local l_0_7 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\SYSTEM32\\"))
+local l_0_8 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\SYSWOW64\\"))
+local l_0_9 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
+-- DECOMPILER ERROR at PC102: Unhandled construct in 'MakeBoolean' P3
+
+if (l_0_7 and l_0_7 == l_0_4) or not l_0_8 or l_0_9 and l_0_9 == l_0_4 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.packed and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG") and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG.2") then
-  return mp.SUSPICIOUS
+do
+  if peattributes.isdll and peattributes.hasexports then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 122880 and l_0_0 < 358400 and (pe.get_exports_count)() == 1 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

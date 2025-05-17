@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:InstallIQ")
+(mp.set_mpattribute)("PUA:Block:BrowseFox")
 return mp.INFECTED
 

@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 1048576 then
+if (mp.getfilesize)() > 268435456 then
   return mp.CLEAN
 end
-if #(mp.enum_mpattributesubstring)("SCPT:AlphaLakeA") >= 2 then
+if #(mp.enum_mpattributesubstring)("SCPT:PyFlashA") >= 5 then
   return mp.INFECTED
 else
   return mp.CLEAN

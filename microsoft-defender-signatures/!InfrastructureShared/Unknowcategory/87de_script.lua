@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (mp.getfilesize)() == 3558077 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if peattributes.packed and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG") and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG.2") then
+  return mp.SUSPICIOUS
 end
+return mp.CLEAN
 

@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if (string.find)(l_0_1, " %d%d%d?%d?%d?", 1, false) then
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Colisi")
+if mp.HSTR_WEIGHT >= 4 then
   return mp.INFECTED
 end
 return mp.CLEAN

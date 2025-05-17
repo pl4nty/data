@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_obfuscator_tc_1")
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "»‹æ[_")
-return mp.SUSPICIOUS
+if (hstrlog[1]).matched or (hstrlog[2]).matched then
+  if (hstrlog[1]).matched and (hstrlog[2]).matched then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

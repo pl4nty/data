@@ -3,15 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and (string.find)(l_0_0, " for ", 1, true) and (string.find)(l_0_0, " in ", 1, true) and (string.find)(l_0_0, " do ", 1, true) then
-      return mp.INFECTED
-    end
+  if ((hstrlog[9]).matched and not (hstrlog[10]).matched) or (hstrlog[11]).matched then
+    local l_0_0, l_0_1 = 0 + 1 + 1 + 1
   end
+  -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+  if mp.HSTR_WEIGHT >= 100 and l_0_0 >= 2 then
+    return mp.INFECTED
+  end
+  -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 >= 3 and (hstrlog[12]).matched then
+    return mp.INFECTED
+  end
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
   return mp.CLEAN
 end
 

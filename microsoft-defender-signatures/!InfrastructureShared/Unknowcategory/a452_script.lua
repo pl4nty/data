@@ -3,22 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[7]).utf8p1
-if l_0_0 == nil then
+if pehdr.NumberOfSections ~= 5 then
   return mp.CLEAN
 end
-l_0_0 = (string.lower)(l_0_0)
-if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
+if pehdr.SectionAlignment == 4096 then
   return mp.CLEAN
 end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
+if pehdr.FileAlignment == 512 then
+  return mp.CLEAN
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
+if pehdr.FileAlignment == 4096 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).Characteristics ~= 1744830496 then
+  return mp.CLEAN
+end
+if pehdr.ImageBase ~= 65536 then
+  return mp.CLEAN
+end
+if pehdr.Subsystem ~= 1 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

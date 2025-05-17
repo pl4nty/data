@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if ((not (mp.get_mpattribute)("SCPT:TrojanDownloader:JS/Nemucod!ret0x0a") or (mp.get_mpattribute)("SCPT:TrojanDownloader:JS/Nemucod!ret0x0d")) and not (mp.get_mpattribute)("SCPT:TrojanDownloader:JS/Nemucod!ret0x2c")) or 0 + 1 + 1 + 1 >= 2 then
-  return mp.INFECTED
+Infrastructure_ScanCFABootProtState = function()
+  -- function num : 0_0
+  (MpCommon.SetGlobalMpAttribute)("CFABootProtStateScan")
+  ;
+  (MpDetection.ScanResource)("regkeyvalue://HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Diagnostics\\\\MpPayloadStatus")
+  ;
+  (MpCommon.DeleteGlobalMpAttribute)("CFABootProtStateScan")
 end
-return mp.CLEAN
+
 

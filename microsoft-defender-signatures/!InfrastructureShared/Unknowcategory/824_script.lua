@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MacOS:HSTR:Generality.E") then
-  return mp.CLEAN
-end
-if #(mp.enum_mpattributesubstring)("Detection:Exploit:iPhoneOS") == 0 and #(mp.enum_mpattributesubstring)("TEL:Exploit:iPhoneOS") == 0 and #(mp.enum_mpattributesubstring)("Detection:Exploit:MacOS") == 0 and #(mp.enum_mpattributesubstring)("TEL:Exploit:MacOS") == 0 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -13) == "\\iexplore.exe" or (string.sub)(l_0_0, -11) == "\\chrome.exe" or (string.sub)(l_0_0, -18) == "\\microsoftedge.exe" or (string.sub)(l_0_0, -20) == "\\microsoftedgecp.exe" or (string.sub)(l_0_0, -12) == "\\firefox.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

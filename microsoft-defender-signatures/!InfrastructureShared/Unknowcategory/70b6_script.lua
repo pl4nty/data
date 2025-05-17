@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isvbnative or peattributes.isvbpcode) and pehdr.NumberOfSections == 3 then
+if (mp.get_mpattribute)("SIGATTR:MadCodeHook") and peattributes.executes_from_dynamic_memory then
   return mp.INFECTED
 end
 return mp.CLEAN

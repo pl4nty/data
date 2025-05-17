@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.getfilesize)() <= 4096 then
-    local l_0_0 = nil
-    l_0_0 = (mp.getfilename)()
-    if l_0_0 == nil then
-      return mp.CLEAN
-    end
-    if l_0_0:sub(-19) == "->word/document.xml" then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.INFECTED
+end
+;
+(mp.set_mpattribute)("SLF:Win64/Shelcorid.B")
+return mp.LOWFI
 

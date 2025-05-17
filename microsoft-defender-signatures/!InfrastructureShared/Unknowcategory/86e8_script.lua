@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 19, "")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 11, 4)
+if (mp.readu_u32)(l_0_0, 1) < 1048576 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

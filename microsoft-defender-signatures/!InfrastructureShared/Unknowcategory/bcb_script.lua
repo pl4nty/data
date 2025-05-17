@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Multibar")
+(mp.set_mpattribute)("PUA:Block:Einstall")
 return mp.INFECTED
 

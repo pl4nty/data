@@ -3,22 +3,43 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched or (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1 = (bm.get_process_relationships)()
-    for l_0_5,l_0_6 in ipairs(l_0_0) do
-      if l_0_6.image_path ~= nil then
-        local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-        local l_0_8 = (string.lower)(l_0_6.image_path)
-        if l_0_8 == nil or (string.len)(l_0_8) < 1 then
-          return mp.CLEAN
-        end
-        if l_0_7 == 1 and ((string.find)(l_0_8, "\\cmd.exe", 1, true) or (string.find)(l_0_8, "\\powershell.exe", 1, true) or (string.find)(l_0_8, "\\pwsh.exe", 1, true) or (string.find)(l_0_8, "\\powershell_ise.exe", 1, true) or (string.find)(l_0_8, "\\pangphip.exe", 1, true) or (string.find)(l_0_8, "\\log-agent.exe", 1, true) or (string.find)(l_0_8, "\\ossec-agent.exe", 1, true) or (string.find)(l_0_8, ":\\windows\\assembly\\", 1, true)) then
-          return mp.CLEAN
-        end
-      end
-    end
+local l_0_0 = (bm.get_imagepath)()
+if (MpCommon.QueryPersistContext)(l_0_0, "RunsDestructiveCMDsParentBlock") then
+  if (mp.IsHipsRuleEnabled)("c1db55ab-c21a-4637-bb3f-a12568109d35") == true then
     return mp.INFECTED
+  else
+    ;
+    (mp.ReportLowfi)(l_0_0, 3371538283)
+    return mp.CLEAN
+  end
+end
+if not (MpCommon.QueryPersistContext)(l_0_0, "RunsDestructiveCMDsParent") then
+  return mp.CLEAN
+end
+local l_0_1 = -1
+local l_0_2 = -1
+local l_0_3 = (MpCommon.GetPersistContext)((string.lower)(l_0_0))
+if l_0_3 ~= nil then
+  for l_0_7,l_0_8 in ipairs(l_0_3) do
+    local l_0_9 = tonumber((string.match)(l_0_8, "^Age:([0-9]+)$"))
+    if l_0_9 ~= nil and l_0_1 < l_0_9 then
+      l_0_1 = l_0_9
+    end
+    local l_0_10 = tonumber((string.match)(l_0_8, "^Prevalence:([0-9]+)$"))
+    if l_0_10 ~= nil and l_0_2 < l_0_10 then
+      l_0_2 = l_0_10
+    end
+  end
+end
+do
+  if l_0_1 > -1 and l_0_1 <= 1 and l_0_2 > -1 and l_0_2 <= 100 then
+    if (mp.IsHipsRuleEnabled)("c1db55ab-c21a-4637-bb3f-a12568109d35") == true then
+      return mp.INFECTED
+    else
+      ;
+      (mp.ReportLowfi)(l_0_0, 3371538283)
+      return mp.CLEAN
+    end
   end
   return mp.CLEAN
 end

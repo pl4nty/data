@@ -3,25 +3,11 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    local l_0_3 = (string.lower)(l_0_0:match("\\([^\\]+)$"))
-    if ({["microsoft.com"] = true})[l_0_3] then
-      return mp.INFECTED
+if (Remediation.Threat).Active then
+  for l_0_3,l_0_4 in pairs((Remediation.Threat).Resources) do
+    if l_0_4.Schema == "file" and not (string.match)((Remediation.Threat).Name, "^Virus:WinNT/Simda") then
+      (Remediation.BtrDeleteFile)(l_0_4.Path)
     end
-  end
-  do
-    return mp.CLEAN
   end
 end
 

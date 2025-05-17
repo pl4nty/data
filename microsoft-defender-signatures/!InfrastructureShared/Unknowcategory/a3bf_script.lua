@@ -3,14 +3,26 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
-
-if (((((not (hstrlog[1]).matched and (hstrlog[3]).matched) or not (hstrlog[6]).matched) and (hstrlog[9]).matched) or (hstrlog[2]).matched) and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) + ((hstrlog[8]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) >= 4 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if (string.sub)(l_0_1, 1, 7) == "msiexec" then
+  local l_0_2 = (mp.GetParentProcInfo)()
+  if l_0_2 ~= nil then
+    local l_0_3 = (string.lower)(l_0_2.image_path)
+    local l_0_4 = ((string.sub)(l_0_3, -15)):match("\\([^\\]+)$")
+    local l_0_5 = {}
+    l_0_5["svchost.exe"] = true
+    l_0_5["taskeng.exe"] = true
+    l_0_5["taskhostw.exe"] = true
+    if l_0_5[l_0_4] then
+      return mp.INFECTED
+    end
+  end
+end
+do
+  return mp.CLEAN
+end
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") and peattributes.isexe == true then
+(mp.set_mpattribute)("HSTR:VirTool:MSIL/Injector.IA")
+if peattributes.ismsil == true then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[7]).Name == ".idata" and (pesecs[7]).Characteristics == 1073741888 and (mp.getfilesize)() >= 400000 and (mp.getfilesize)() <= 4000000 then
+if (string.lower)((string.sub)(((pe.get_versioninfo)()).CompanyName, 1, 8)) == "viracure" then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
   return mp.INFECTED
 end
 return mp.CLEAN

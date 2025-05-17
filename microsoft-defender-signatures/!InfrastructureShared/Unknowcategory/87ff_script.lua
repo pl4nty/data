@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = ""
+if (this_sigattrlog[2]).matched then
+  l_0_0 = (nri.GetURI)()
 end
-return mp.INFECTED
+if l_0_0 ~= "" and (string.find)(l_0_0, "&X-Rps-CAT=", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

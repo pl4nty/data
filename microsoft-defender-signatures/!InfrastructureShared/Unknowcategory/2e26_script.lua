@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isvbnative then
-  return mp.CLEAN
+if peattributes.amd64_image then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

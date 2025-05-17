@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_image_filename)("c:\\myapp1.exe")
-;
-(pe.reemulate)()
-return mp.INFECTED
+if (mp.get_mpattribute)("LUA:FileSizeGT1M.A") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

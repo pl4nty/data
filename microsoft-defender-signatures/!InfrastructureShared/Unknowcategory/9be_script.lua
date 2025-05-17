@@ -3,38 +3,48 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = {}
-  l_0_1["msdcsc.exe"] = true
-  l_0_1["mdcsc.exe"] = true
-  l_0_1["msdcs.exe"] = true
-  l_0_1["msdc.exe"] = true
-  l_0_1["IMDCSC.exe"] = true
-  l_0_1["IMJDC.exe"] = true
-  l_0_1["facecall.exe"] = true
-  l_0_1["svcost.exe"] = true
-  l_0_1["svhost.exe"] = true
-  l_0_1["sv_chost.exe"] = true
-  l_0_1["svhostss.exe"] = true
-  l_0_1["Profoma Invoice.exe"] = true
-  l_0_1["Profoma_Invoice.exe"] = true
-  l_0_1["monthlyreport.exe"] = true
-  l_0_1["ttpayment.scr"] = true
-  l_0_1["crypted server.exe"] = true
-  l_0_1["DCModule.exe"] = true
-  l_0_1["lssass.exe"] = true
-  l_0_1["DarkCommet.exe"] = true
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if l_0_1[l_0_2] then
-    if (string.match)(l_0_3, "\\.-documents\\.+") or (string.match)(l_0_3, "\\start menu\\.+") or (string.match)(l_0_3, "\\programdata") or (string.match)(l_0_3, "\\administrator\\application data") or (string.match)(l_0_3, "\\appdata\\local") or (string.match)(l_0_3, "\\appdata\\roaming") or (string.match)(l_0_3, "\\desktop\\.+") or (string.match)(l_0_3, "\\windows\\system32\\.+") or (string.match)(l_0_3, "\\local settings\\application data") or (string.match)(l_0_3, "\\local settings\\temp") then
-      return mp.INFECTED
+RemovePayloadFromRegistry = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  local l_1_2 = (sysio.RegOpenKey)(l_1_0)
+  if l_1_2 then
+    local l_1_3 = (string.lower)((sysio.GetRegValueAsString)(l_1_2, l_1_1))
+    if l_1_3 then
+      (sysio.DeleteRegKey)(l_1_2, nil)
     end
-    return mp.CLEAN
   end
 end
-do
-  return mp.CLEAN
+
+RemoveMisfoxASEPs = function(l_2_0)
+  -- function num : 0_1
+  local l_2_1 = (sysio.RegOpenKey)(l_2_0)
+  if l_2_1 then
+    local l_2_2 = (sysio.RegEnumValues)(l_2_1)
+    for l_2_6,l_2_7 in pairs(l_2_2) do
+      local l_2_8 = (string.lower)((sysio.GetRegValueAsString)(l_2_1, l_2_7))
+      if not l_2_8 then
+        return false
+      end
+      local l_2_9, l_2_10 = (string.match)(l_2_8, "%(%[text%.encoding%]::ascii%.getstring%(%[convert%]::frombase64string%(%(gp.*(hk%w%w:\\\\?software\\\\?classes\\\\?%w%w%w%w+).*%.(%w%w%w%w+)%)")
+      if l_2_9 then
+        (sysio.DeleteRegValue)(l_2_1, l_2_7)
+        l_2_9 = (string.gsub)(l_2_9, "\\\\", "\\")
+        l_2_9 = (string.gsub)(l_2_9, ":\\", "\\")
+        local l_2_11 = (sysio.RegExpandUserKey)(l_2_9)
+        for l_2_15,l_2_16 in pairs(l_2_11) do
+          RemovePayloadFromRegistry(l_2_16, l_2_10)
+        end
+      end
+    end
+    -- DECOMPILER ERROR at PC68: Confused about usage of register R6 for local variables in 'ReleaseLocals'
+
+  end
+end
+
+if (string.match)((Remediation.Threat).Name, "Win32/Misfox") or (string.match)((Remediation.Threat).Name, "PowerShell/Misfox") then
+  RemoveMisfoxASEPs("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run")
+  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    RemoveMisfoxASEPs(l_0_5)
+  end
 end
 

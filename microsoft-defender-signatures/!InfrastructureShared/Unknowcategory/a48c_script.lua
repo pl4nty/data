@@ -3,27 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil and (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[4]).utf8p1)
-  if l_0_0:match("([^\\]+)$") ~= l_0_1 then
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
     return mp.CLEAN
   end
-  local l_0_2 = {}
-  l_0_2["winword.exe"] = true
-  l_0_2["excel.exe"] = true
-  l_0_2["outlook.exe"] = true
-  l_0_2["olk.exe"] = true
-  l_0_2["splwow64.exe"] = true
-  l_0_2["deletelogfiles.exe"] = true
-  l_0_2["dw20.exe"] = true
-  l_0_2["microsoft.uev.synccontroller.exe"] = true
-  if l_0_2[l_0_1] then
-    return mp.CLEAN
+end
+if (this_sigattrlog[2]).matched and (this_sigattrlog[9]).matched then
+  local l_0_6 = (this_sigattrlog[2]).p1
+  local l_0_7 = (this_sigattrlog[9]).p1
+  if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") and (string.len)(l_0_6) < 20 and (string.match)(l_0_7:lower(), "^[a-z0-9]+$") and (string.len)(l_0_7) < 20 then
+    return mp.INFECTED
   end
-  return mp.INFECTED
 end
 do
-  return mp.CLEAN
+  return mp.LOWFI
 end
 

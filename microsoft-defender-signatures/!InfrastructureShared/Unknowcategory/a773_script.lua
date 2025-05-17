@@ -3,47 +3,37 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (MpCommon.GetOriginalFileName)(l_0_2)
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if l_0_3 == "powershell.exe" and not (string.find)((string.lower)(l_0_2), "powershell.exe", 1, true) then
-  local l_0_4 = (mp.GetProcessCommandLine)(l_0_0)
-  if l_0_4 == nil then
-    return mp.CLEAN
-  end
-  local l_0_5 = (string.match)(l_0_4, " -[eE][nN][cC] ([a-zA-Z0-9%+/=]+)")
-  if l_0_5 == nil then
-    return mp.CLEAN
-  end
-  if (string.len)(l_0_5) >= 512 then
-    l_0_5 = (string.sub)(l_0_5, 1, 512)
-  else
-    l_0_5 = (string.sub)(l_0_5, 1, 256)
-  end
-  local l_0_6 = (MpCommon.Base64Decode)(l_0_5)
-  if l_0_6 == nil then
-    return mp.CLEAN
-  end
-  l_0_6 = (string.gsub)(l_0_6, "%z", "")
-  l_0_6 = (string.lower)((string.gsub)(l_0_6, " ", ""))
-  if (string.find)(l_0_6, "start-bitstransfer", 1, true) or (string.find)(l_0_6, ").downloadfile(", 1, true) or (string.find)(l_0_6, "invoke-webrequest", 1, true) or (string.find)(l_0_6, "-threatiddefaultaction_actions", 1, true) or (string.find)(l_0_6, "-exclusionpath", 1, true) or (string.find)(l_0_6, "-exclusionprocess", 1, true) or (string.find)(l_0_6, "::getcurrentprocess().mainmodule", 1, true) then
-    return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_0 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    if l_0_6.image_path ~= nil and l_0_6.reason == bm.RELATIONSHIP_INJECTION then
+      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+      if (string.find)(l_0_7, "\\comodo internet security\\cavwp.exe", -35, true) or (string.find)(l_0_7, "\\hummingheads\\securityplatform\\bkhost.exe", -41, true) then
+        return mp.CLEAN
+      end
+    end
   end
 end
 do
-  return mp.CLEAN
+  if l_0_1 ~= nil then
+    for l_0_11,l_0_12 in ipairs(l_0_1) do
+      if l_0_12.image_path ~= nil and l_0_12.reason == bm.RELATIONSHIP_INJECTION then
+        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
+        if (string.find)(l_0_13, "\\acrord32.exe", -13, true) or (string.find)(l_0_13, "\\adobearm.exe", -13, true) or (string.find)(l_0_13, "\\comodo internet security\\cavwp.exe", -35, true) or (string.find)(l_0_13, "\\acrobat reader dc\\reader\\reader_sl.exe", -39, true) or (string.find)(l_0_13, "\\\\hummingheads\\securityplatform\\bkhost.exe", -41, true) or (string.find)(l_0_13, "\\rdrcef.exe", -11, true) then
+          return mp.CLEAN
+        end
+        ;
+        (bm.request_SMS)(l_0_12.ppid, "l+")
+        ;
+        (bm.add_action)("SmsAsyncScanEvent", 1)
+        ;
+        (bm.trigger_sig)("Arya", "Acrord32")
+        return mp.INFECTED
+      end
+    end
+  end
+  do
+    return mp.CLEAN
+  end
 end
 

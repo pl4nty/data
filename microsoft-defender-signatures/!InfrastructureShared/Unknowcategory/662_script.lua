@@ -3,33 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC22: Overwrote pending register: R0 in 'AssignReg'
-
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-    local l_0_1 = this_sigattrlog[2]
-  else
-    do
-      do return mp.CLEAN end
-      local l_0_2 = nil
-      if not (MpCommon.ExpandEnvironmentVariables)("%WINDIR%") then
-        return mp.CLEAN
-      end
-      local l_0_3 = nil
-      if not (sysio.GetFileFsVolumeInformation)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%")) then
-        return mp.CLEAN
-      end
-      if (l_0_2.utf8p1):sub(-8) == (string.format)("%x", ((sysio.GetFileFsVolumeInformation)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%"))).VolumeSerialNumber) then
-        return mp.INFECTED
-      end
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "msdt.exe" or l_0_1:match("([^\\]+)$") == "sihost.exe" or l_0_1:match("([^\\]+)$") == "explorer.exe" or l_0_1:match("([^\\]+)$") == "systemsettings.exe" or l_0_1:match("([^\\]+)$") == "runtimebroker.exe" or l_0_1:match("([^\\]+)$") == "svchost.exe" or l_0_1:match("([^\\]+)$") == "pcwrun.exe" or l_0_1:match("([^\\]+)$") == "interop.exe" then
       return mp.CLEAN
     end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

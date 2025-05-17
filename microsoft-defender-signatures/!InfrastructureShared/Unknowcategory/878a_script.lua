@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.isdll == true and peattributes.hasexports == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if mp.HSTR_WEIGHT > 6 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+if mp.HSTR_WEIGHT > 5 then
+  return mp.SUSPICIOUS
+end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+;
+(pe.reemulate)()
+return mp.CLEAN
 

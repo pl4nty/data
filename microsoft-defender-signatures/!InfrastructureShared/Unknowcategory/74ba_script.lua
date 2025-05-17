@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_obfuscator_th_1")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 5, "")
-return mp.SUSPICIOUS
+if (mp.IsTrustedFile)(false) ~= false then
+  return mp.CLEAN
+end
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.INFECTED
+end
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

@@ -3,32 +3,34 @@
 
 -- params : ...
 -- function num : 0
+if peattributes.isexe == false then
+  return mp.CLEAN
+end
+if peattributes.packed == true then
+  return mp.CLEAN
+end
+if peattributes.packersigmatched == true then
+  return mp.CLEAN
+end
+if peattributes.no_resources == true then
+  return mp.CLEAN
+end
 local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 16777216 then
+if l_0_0 < 4096 or l_0_0 > 1048576 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 3203386062 or (mp.readu_u32)(headerpage, 5) ~= 1 then
+if pehdr.TimeDateStamp ~= 708992537 then
   return mp.CLEAN
 end
-if (mp.crc32)(-1, headerpage, 13, 145) ~= 1098233996 then
+local l_0_1 = (pe.get_versioninfo)()
+if l_0_1 == nil then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(0, l_0_0)
-local l_0_2 = 1
-for l_0_6 in (string.gmatch)(l_0_1, "TV[%w+/]+=?=?") do
-  if l_0_2 > 5 then
-    break
-  end
-  if #l_0_6 > 4096 and #l_0_6 < 16777216 then
-    (mp.set_mpattribute)("//MpBase64DecodeLongLines")
-    ;
-    (mp.vfo_add_buffer)(l_0_6, (string.format)("[b64netrsrc-%x]", l_0_2), mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-    l_0_2 = l_0_2 + 1
-  end
+if l_0_1.FileVersion == "5.1.2600.2180" and l_0_1.ProductName == "Windows\174 NetMeeting\174" then
+  (mp.set_mpattribute)("//LUA:SoftwareBundler:Win32/Ogimant.gen!B_FileVersion")
 end
-do
-  return mp.CLEAN
+if l_0_1.CompanyName == "Micrоsоft Cоrpоration" then
+  (mp.set_mpattribute)("//LUA:SoftwareBundler:Win32/Ogimant.gen!B_FileVersion")
 end
+return mp.CLEAN
 

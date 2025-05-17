@@ -3,22 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-for l_0_6,l_0_7 in ipairs(l_0_1) do
-  if l_0_7.image_path ~= nil and l_0_7.ppid ~= nil then
-    local l_0_8 = (mp.bitand)(l_0_7.reason_ex, 1)
-    if l_0_8 == 1 then
-      local l_0_9 = (string.lower)(l_0_7.image_path)
-      if l_0_9 ~= nil and l_0_0 == l_0_9 then
-        (bm.request_SMS)(l_0_7.ppid, "M")
-        return mp.INFECTED
-      end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 and l_0_0.integrity_level < MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+  local l_0_1 = this_sigattrlog[3]
+  if l_0_1.matched then
+    local l_0_2 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_1.ppid)
+    if l_0_2 and l_0_2.IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+      return mp.INFECTED
     end
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

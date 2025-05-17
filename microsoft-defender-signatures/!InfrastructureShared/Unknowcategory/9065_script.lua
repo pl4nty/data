@@ -3,9 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if (this_sigattrlog[5]).matched and (this_sigattrlog[6]).matched then
+  local l_0_0 = (this_sigattrlog[5]).p1
+  local l_0_1 = (this_sigattrlog[6]).p1
+  if l_0_0 .. l_0_1 == "unsafe" then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.LOWFI
+end
 

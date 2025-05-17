@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.enable_vmm_grow and peattributes.no_uidata and peattributes.no_comruntime and (mp.getfilesize)() >= 150000 and (mp.getfilesize)() < 330000 then
+if epcode[1] == 139 and epcode[2] == 255 and peattributes.isdll == true and peattributes.hasexports == false and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

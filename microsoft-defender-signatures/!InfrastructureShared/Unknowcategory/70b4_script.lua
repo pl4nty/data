@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[3]).utf8p1
-if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
+if peattributes.isexe == true and (pehdr.NumberOfSections == 3 or peattributes.no_security == true) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

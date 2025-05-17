@@ -3,23 +3,21 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
-local l_0_1 = (bm.get_current_process_startup_info)()
+local l_0_0 = (bm.get_imagepath)()
 if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-    if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, true, false) then
-      (bm.request_SMS)(l_0_1.ppid, "l+")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1000)
-      ;
-      (bm.add_related_file)(l_0_6)
-    end
+  l_0_0 = (string.lower)(l_0_0)
+  if (l_0_0.find)(l_0_0, "\\clicktorun\\officeclicktorun.exe", 1, true) ~= nil then
+    return mp.CLEAN
   end
 end
 do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_1 = (this_sigattrlog[1]).utf8p2
+    if (sysio.IsFileExists)(l_0_1) and (mp.IsKnownFriendlyFile)(l_0_1, true, false) == false then
+      (bm.add_related_file)(l_0_1)
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

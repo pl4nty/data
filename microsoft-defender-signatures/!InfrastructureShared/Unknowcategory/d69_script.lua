@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 80000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:InstMonetizer")
+return mp.INFECTED
 

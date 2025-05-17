@@ -3,45 +3,29 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  if not peattributes.isdll then
+    return mp.CLEAN
+  end
+  local l_0_1 = (mp.getfilesize)()
+  if l_0_1 < 51200 or l_0_1 > 102400 then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if l_0_2 ~= "chrome.dll" then
+    return mp.CLEAN
+  end
+  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if l_0_3:sub(-26) ~= "\\google\\chrome\\application" then
+    return mp.CLEAN
+  end
+  if l_0_3:find("\\program files", 1, true) == nil then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and (sysio.IsFileExists)(l_0_0) then
-      (mp.ReportLowfi)(l_0_0, 1578871239)
-    end
-  end
-  do
-    if (this_sigattrlog[2]).matched then
-      local l_0_1 = (this_sigattrlog[2]).utf8p2
-      if l_0_1 ~= nil and (string.len)(l_0_1) > 3 and (sysio.IsFileExists)(l_0_1) then
-        (mp.ReportLowfi)(l_0_1, 1851672550)
-      end
-    end
-    do
-      if (this_sigattrlog[3]).matched then
-        local l_0_2 = (this_sigattrlog[3]).utf8p2
-        if l_0_2 ~= nil and (string.len)(l_0_2) > 3 and (sysio.IsFileExists)(l_0_2) then
-          (mp.ReportLowfi)(l_0_2, 2449707962)
-        end
-      end
-      do
-        if (this_sigattrlog[4]).matched then
-          local l_0_3 = (this_sigattrlog[4]).utf8p2
-          if l_0_3 ~= nil and (string.len)(l_0_3) > 3 and (sysio.IsFileExists)(l_0_3) then
-            (mp.ReportLowfi)(l_0_3, 195050746)
-          end
-        end
-        do
-          if (this_sigattrlog[5]).matched then
-            local l_0_4 = (this_sigattrlog[5]).utf8p2
-            if l_0_4 ~= nil and (string.len)(l_0_4) > 3 and (sysio.IsFileExists)(l_0_4) then
-              (mp.ReportLowfi)(l_0_4, 723996031)
-            end
-          end
-          return mp.INFECTED
-        end
-      end
-    end
-  end
+  return mp.CLEAN
 end
 

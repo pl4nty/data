@@ -3,29 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset + 78
-local l_0_2 = 0
-local l_0_3 = (mp.getfilesize)()
-if l_0_0.is_header then
-  if mp.HEADERPAGE_SZ <= l_0_3 then
+-- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched then
+    do return mp.CLEAN end
+    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/replaceremoteprefix [^ ]+ [^ ]+ \\\\localhost\\[^ ]*") ~= nil then
+      return mp.INFECTED
+    else
+      -- DECOMPILER ERROR at PC48: Confused about usage of register: R0 in 'UnsetPending'
+
+      if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/replaceremoteprefix [^ ]+ [^ ]+ \\\\127%.0%.0%.1\\[^ ]*") ~= nil then
+        return mp.INFECTED
+      else
+        -- DECOMPILER ERROR at PC59: Confused about usage of register: R0 in 'UnsetPending'
+
+        if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/replaceremoteprefix [^ ]+ [^ ]+ .:\\[^ ]*") ~= nil then
+          return mp.INFECTED
+        end
+      end
+    end
     return mp.CLEAN
   end
-  l_0_2 = (mp.readheader)(l_0_1, l_0_3 - l_0_1)
-else
-  if mp.FOOTERPAGE_SZ <= l_0_3 then
-    return mp.CLEAN
-  end
-  l_0_2 = (mp.readfooter)(l_0_1, l_0_3 - l_0_1)
 end
-local l_0_4 = l_0_2:find("\')[0]))", 1, true)
-if l_0_4 ~= nil then
-  l_0_2 = l_0_2:sub(0, l_0_4 - 1)
-  ;
-  (mp.vfo_add_buffer)(l_0_2, "[Base64Enc1]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-  ;
-  (mp.set_mpattribute)("//SCPT:Base64.EncodedEC")
-  return mp.INFECTED
-end
-return mp.CLEAN
 

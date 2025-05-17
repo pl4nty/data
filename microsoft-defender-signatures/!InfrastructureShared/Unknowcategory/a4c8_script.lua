@@ -3,23 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr
-local l_0_1 = 256
-local l_0_2 = (pe.mmap_va)(l_0_0, l_0_1)
-local l_0_3 = (string.find)(l_0_2, "h\132\003%z%z")
-local l_0_4 = (string.find)(l_0_2, "`\174\n%z")
-if l_0_3 > 0 and l_0_4 > 0 then
-  (pe.mmap_patch_va)(l_0_0 + 6, "êê")
-  ;
-  (pe.mmap_patch_va)(l_0_0 + 14, "\235")
-  for l_0_8 = 1, 192 do
-    if (pe.mmap_va)(l_0_0 + l_0_8 + 64, 3) == "\000\255\021" then
-      (pe.mmap_patch_va)(l_0_0 + l_0_8 + 65, "êêêêêê")
-    end
-  end
-  ;
-  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.ispackedwith)("AutoHotKey_+") then
+  return mp.CLEAN
+end
+if ((mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv")) and (hstrlog[1]).matched then
+  local l_0_0 = ((hstrlog[1]).match_offsets)[1]
+  local l_0_1 = (hstrlog[1]).VA + l_0_0
+  if (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1) ~= 557012289 then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
+end
 

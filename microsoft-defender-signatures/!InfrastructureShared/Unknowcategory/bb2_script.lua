@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:LimePro")
+(mp.set_mpattribute)("PUA:Block:Sasquor")
 return mp.INFECTED
 

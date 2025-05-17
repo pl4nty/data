@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 18 then
-  return mp.INFECTED
+if not peattributes.has_msilresources then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

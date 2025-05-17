@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Neoreblamy.AO!MTB") then
-  return mp.INFECTED
+(mp.set_mpattribute)("PUA:Block:WizzDownload")
+if mp.HSTR_WEIGHT >= 15 then
+  (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A3")
 end
-return mp.CLEAN
+return mp.INFECTED
 

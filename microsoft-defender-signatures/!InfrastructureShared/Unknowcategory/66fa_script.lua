@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.isdll == true and peattributes.no_security == true then
+if pehdr.NumberOfSections == 6 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

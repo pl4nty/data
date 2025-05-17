@@ -3,19 +3,12 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2 = nil
-  else
-  end
-  if (this_sigattrlog[2]).matched then
-    local l_0_3 = nil
-    if (string.lower)((string.sub)((this_sigattrlog[2]).utf8p1, -1)) ~= "\\" or (string.lower)((string.sub)((this_sigattrlog[2]).utf8p1, -1)) ~= "/" then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 18, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

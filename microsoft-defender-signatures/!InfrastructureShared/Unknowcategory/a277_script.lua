@@ -3,20 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 300000 or (mp.getfilesize)() > 600000 then
-  return mp.CLEAN
-end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).p1)
-  if (string.sub)(l_0_0, -4) == ".dll" then
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
+  do
+    if (mp.getfilesize)() < 47872 then
+      local l_0_0 = (mp.GetCertificateInfo)()
+      for l_0_4,l_0_5 in pairs(l_0_0) do
+        if l_0_5.Signers ~= nil then
+          return mp.CLEAN
+        end
+      end
+      return mp.INFECTED
+    end
+    if (mp.getfilesize)() >= 47872 and (mp.getfilesize)() < 57088 then
+      return mp.INFECTED
+    end
     return mp.CLEAN
   end
-  local l_0_1 = (string.lower)((this_sigattrlog[4]).p1)
-  if (string.find)(l_0_1, l_0_0) ~= nil then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.CLEAN
 end
 

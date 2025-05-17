@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if (string.find)(l_0_0, "emotet_e1_", 1, true) ~= nil or (string.find)(l_0_0, "emotet_e2_", 1, true) ~= nil or (string.find)(l_0_0, "emotet_e3_", 1, true) ~= nil then
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
+  return mp.CLEAN
+end
+if l_0_2 == "z.tmp" and l_0_1:len() > 10 and ((string.sub)(l_0_1, -10) == "\\temp\\low\\" or (string.sub)(l_0_1, -6) == "\\temp\\") then
   return mp.INFECTED
 end
 return mp.CLEAN

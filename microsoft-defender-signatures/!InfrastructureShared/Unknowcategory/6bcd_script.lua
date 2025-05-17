@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("SIGATTR:MPK64")
-else
-  ;
-  (mp.set_mpattribute)("SIGATTR:MPK32")
+if peattributes.is_process then
+  return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("HSTR:UpatreFragC_Nonprocess")
 return mp.CLEAN
 

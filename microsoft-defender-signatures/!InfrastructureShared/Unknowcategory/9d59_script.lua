@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and ((string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlservr.exe" or (string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlagent.exe") then
-    return mp.INFECTED
-  end
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "\141\r")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 16, 1)
+local l_0_1 = pevars.sigaddr + 15 + (string.byte)(l_0_0, 1) + 2 - 2
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 15, "êê")
+;
+(pe.mmap_patch_va)(l_0_1, "êê")
+return mp.INFECTED
 

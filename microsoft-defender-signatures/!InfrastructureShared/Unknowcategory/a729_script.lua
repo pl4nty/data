@@ -3,54 +3,55 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if MpCommon.SECURITY_MANDATORY_HIGH_RID <= l_0_0.integrity_level then
-  return mp.CLEAN
-end
-local l_0_1 = (bm.get_imagepath)()
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-l_0_1 = (string.lower)(l_0_1)
-if (string.find)(l_0_1, "\\windowsapps\\", 1, true) ~= nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, "\\appdata\\local\\packages\\", 1, true) ~= nil then
-  return mp.CLEAN
-end
-local l_0_2 = nil
-if (this_sigattrlog[1]).matched then
-  l_0_2 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-end
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = nil
-if (string.find)(l_0_2, "/j[%s]+\"") ~= nil then
-  l_0_3 = (string.match)(l_0_2, "/j[%s]+(\"[^\"]+\") ")
+-- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[14]).matched then
+  local l_0_0 = nil
+  if (string.match)(l_0_0, "/addfile [^ ]+ \\\\localhost\\[^ ]* [^ ]+") ~= nil then
+    return mp.INFECTED
+  else
+    if (string.match)(l_0_0, "/addfile [^ ]+ \\\\127%.0%.0%.1\\[^ ]* [^ ]+") ~= nil then
+      return mp.INFECTED
+    else
+      if (string.match)(l_0_0, "/addfile [^ ]+ .:\\[^ ]* [^ ]+") ~= nil then
+        return mp.INFECTED
+      else
+        return mp.CLEAN
+      end
+    end
+  end
 else
-  l_0_3 = (string.match)(l_0_2, "/j[%s]+([%S]+) ")
+  do
+    if (this_sigattrlog[15]).matched then
+      local l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[15]).utf8p2))
+      if (string.match)(l_0_1, "/replaceremoteprefix [^ ]+ [^ ]+ \\\\localhost\\[^ ]*") ~= nil then
+        return mp.INFECTED
+      else
+        if (string.match)(l_0_1, "/replaceremoteprefix [^ ]+ [^ ]+ \\\\127%.0%.0%.1\\[^ ]*") ~= nil then
+          return mp.INFECTED
+        else
+          if (string.match)(l_0_1, "/replaceremoteprefix [^ ]+ [^ ]+ .:\\[^ ]*") ~= nil then
+            return mp.INFECTED
+          else
+            return mp.CLEAN
+          end
+        end
+      end
+    else
+      do
+        do
+          if (this_sigattrlog[16]).matched then
+            local l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[16]).utf8p2))
+            if (string.match)(l_0_2, "http[s]?%:%/%/") ~= nil then
+              return mp.INFECTED
+            else
+              return mp.CLEAN
+            end
+          end
+          return mp.CLEAN
+        end
+      end
+    end
+  end
 end
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_3, "\\appdata\\local\\packages\\", 1, true) == nil then
-  return mp.CLEAN
-end
-local l_0_4 = nil
-if (string.sub)(l_0_2, -1) == "\"" then
-  l_0_4 = (string.match)(l_0_2, " (\"[^\"]+\")$")
-else
-  l_0_4 = (string.match)(l_0_2, " (%S+)$")
-end
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_4, "\\appdata\\local\\packages\\", 1, true) == nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

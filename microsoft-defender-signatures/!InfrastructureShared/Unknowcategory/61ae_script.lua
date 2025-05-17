@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Adload.EC")
+if peattributes.isdll == true and pehdr.NumberOfSections == 4 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

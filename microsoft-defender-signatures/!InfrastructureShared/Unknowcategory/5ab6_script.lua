@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("CODEPATCH:CheckStackValSleepEx")
-return mp.INFECTED
+if (mp.getfilesize)() < 500000 and peattributes.isdll == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

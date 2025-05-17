@@ -3,19 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 256 then
+local l_0_0 = (mp.GetMachineGUID)()
+if l_0_0 == nil or l_0_0:len() ~= 36 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 8) ~= 1128344106 then
-  return mp.CLEAN
+local l_0_1 = {}
+l_0_1["15e7fdb4-69ea-447f-90ea-4622da7a88d6"] = "Lua:Guid.1"
+l_0_1["b2343ede-44a4-4178-bd92-d36186294555"] = "Lua:Guid.1"
+l_0_1["cafefeed-0000-0c7c-ab00-facebeadface"] = "Lua:Guid.1"
+local l_0_2 = l_0_1[l_0_0:lower()]
+if l_0_2 ~= nil then
+  (mp.set_mpattribute)(l_0_2)
 end
-if (mp.readu_u16)(headerpage, 12) ~= 10821 then
-  return mp.CLEAN
-end
-if headerpage[14] ~= 42 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("Lua:AceFile")
 return mp.CLEAN
 

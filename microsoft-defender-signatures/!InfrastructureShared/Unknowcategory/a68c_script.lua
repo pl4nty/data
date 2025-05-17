@@ -3,25 +3,41 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
+if not peattributes.ismsil then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 16777216 then
+  return mp.CLEAN
+end
+local l_0_1 = nil
+if (hstrlog[3]).matched then
+  l_0_1 = (hstrlog[3]).VA
+else
+  if (hstrlog[4]).matched then
+    l_0_1 = (hstrlog[4]).VA
+  else
+    return mp.CLEAN
+  end
+end
+if not (pe.contains_va)(1, l_0_1) then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_2 = (mp.readfile)((pesecs[1]).PointerToRawData, (pesecs[1]).SizeOfRawData)
+if #l_0_2 < 4096 and #l_0_2 > 16777216 then
+  return mp.CLEAN
+end
+for l_0_6 in (string.gmatch)(l_0_2, "zsrvvgEAAA[%w+/]+=?=?") do
+  if #l_0_6 > 4096 then
+    (mp.set_mpattribute)("//MpBase64DecodeLongLines")
+    ;
+    (mp.vfo_add_buffer)(l_0_6, "[Obfuscator.AO]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    break
+  end
+end
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC23: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10 = (this_sigattrlog[3]).utf8p2
-    end
-    if (this_sigattrlog[5]).matched then
-      local l_0_11 = nil
-      if l_0_11 == nil or (string.find)(l_0_11, "searchsettings\\nthook64.dll", 1, true) or (string.find)(l_0_11, "searchsettings\\nthook.dll", 1, true) or (string.find)(l_0_11, "cognitas\\csathl64.dll", 1, true) or (string.find)(l_0_11, "cognitas\\csathl.dll", 1, true) or (string.find)(l_0_11, "sun\\java\\deployment\\cache", 1, true) or (string.find)(l_0_11, "surfcanyon\\iesearchplugin64.dll", 1, true) or (mp.IsKnownFriendlyFile)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[5]).utf8p2)), true, false) then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
+  return mp.INFECTED
 end
 

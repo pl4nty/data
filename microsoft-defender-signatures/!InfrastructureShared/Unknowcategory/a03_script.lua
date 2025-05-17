@@ -3,129 +3,96 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block Process Creations originating from PSExec & WMI commands"
+  l_1_0.Description = "Windows Defender Exploit Guard detected remoting application (wmiprvse and psexesvc) creating child process"
+  l_1_0.NotificationDedupingInterval = 120
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
+  return l_1_0
 end
-local l_0_0 = (mp.getfilename)()
-if l_0_0 == nil then
-  return mp.CLEAN
+
+GetMonitoredLocations = function()
+  -- function num : 0_1
+  local l_2_0 = {}
+  l_2_0["%windir%\\system32\\wbem\\WmiPrvSE.exe"] = 2
+  l_2_0["%windir%\\PSEXESVC.exe"] = 2
+  return 1, l_2_0
 end
-local l_0_1 = (string.lower)(l_0_0)
-local l_0_2 = l_0_1:sub(-4)
-if l_0_2 ~= ".exe" then
-  return mp.CLEAN
+
+GetPathExclusions = function()
+  -- function num : 0_2
+  local l_3_0 = {}
+  l_3_0["%windir%\\system32\\wbem\\WmiPrvSE.exe"] = 2
+  l_3_0["%windir%\\system32\\wbem\\mofcomp.exe"] = 2
+  l_3_0["%windir%\\system32\\svchost.exe"] = 2
+  l_3_0["%windir%\\system32\\WerFault.exe"] = 2
+  l_3_0["%windir%\\system32\\wuauclt.exe"] = 2
+  l_3_0["%windir%\\system32\\gpupdate.exe"] = 2
+  l_3_0["%windir%\\SysWOW64\\wbem\\WmiPrvSE.exe"] = 2
+  l_3_0["%windir%\\SysWOW64\\wbem\\mofcomp.exe"] = 2
+  l_3_0["%windir%\\SysWOW64\\svchost.exe"] = 2
+  l_3_0["%windir%\\SysWOW64\\WerFault.exe"] = 2
+  l_3_0["%windir%\\SysWOW64\\wuauclt.exe"] = 2
+  l_3_0["%windir%\\SysWOW64\\gpupdate.exe"] = 2
+  l_3_0["%windir%\\system32\\spool\\drivers"] = 2
+  l_3_0["%windir%\\system32\\fsiso.exe"] = 2
+  l_3_0["%windir%\\PSEXESVC.exe"] = 2
+  l_3_0["%windir%\\Temp\\*\\DismHost.exe"] = 2
+  l_3_0["%windir%\\system32\\Dism\\DismHost.exe"] = 2
+  l_3_0["%systemdrive%\\MDE\\Tools\\MDEClientAnalyzer.exe"] = 2
+  l_3_0["%systemdrive%\\*\\Tools\\MDATPClientAnalyzer.exe"] = 2
+  l_3_0["%systemdrive%\\*\\WDATPDeploy\\MDATPClientAnalyzer\\MDATPClientAnalyzer.exe"] = 2
+  l_3_0["%windir%\\CCM\\Ccm32BitLauncher.exe"] = 2
+  return l_3_0
 end
-if l_0_1:find("\\application data\\", 1, true) == nil and l_0_1:find("\\appdata\\", 1, true) == nil and l_0_1:find("\\local\\temp", 1, true) == nil and l_0_1:find("\\local settings\\temp", 1, true) == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (pe.get_versioninfo)()
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if l_0_3.LegalCopyright == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_3.LegalCopyright, "Microsoft Corp", 1, true) ~= nil or (string.find)(l_0_3.LegalCopyright, "Citrix Systems", 1, true) ~= nil or (string.find)(l_0_3.LegalCopyright, "Google Inc", 1, true) ~= nil or (string.find)(l_0_3.LegalCopyright, "Firefox and Mozilla Developers", 1, true) ~= nil or (string.find)(l_0_3.LegalCopyright, "Adobe Systems", 1, true) ~= nil or (string.find)(l_0_3.LegalCopyright, "All Alex", 1, true) ~= nil or (string.find)(l_0_3.LegalCopyright, "Maple Studio", 1, true) ~= nil or (string.find)(l_0_3.LegalCopyright, "The Chromium Authors", 1, true) ~= nil then
-  return mp.CLEAN
-end
-local l_0_4 = (string.find)(l_0_1:reverse(), "\\", 1, true)
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-local l_0_5 = #l_0_1 - l_0_4
-local l_0_6 = l_0_1:sub(l_0_5 + 2)
-local l_0_7 = {}
-l_0_7["acrord32.exe"] = ""
-l_0_7["iexplore.exe"] = ""
-l_0_7["firefox.exe"] = ""
-l_0_7["chrome.exe"] = ""
-local l_0_8 = {}
-l_0_8["explorer.exe"] = ""
-l_0_8["hh.exe"] = ""
-l_0_8["isuninst.exe"] = ""
-l_0_8["notepad.exe"] = ""
-l_0_8["regedit.exe"] = ""
-l_0_8["slrundll.exe"] = ""
-l_0_8["taskman.exe"] = ""
-l_0_8["twunk_16.exe"] = ""
-l_0_8["twunk_32.exe"] = ""
-l_0_8["winhelp.exe"] = ""
-l_0_8["winhlp32.exe"] = ""
-l_0_8["bfsvc.exe"] = ""
-l_0_8["fveupdate.exe"] = ""
-l_0_8["helppane.exe"] = ""
-l_0_8["write.exe"] = ""
-l_0_8["splwow64.exe"] = ""
-local l_0_9 = {}
-l_0_9["svchost.exe"] = ""
-l_0_9["rundll32.exe"] = ""
-l_0_9["explorer.exe"] = ""
-l_0_9["reg.exe"] = ""
-l_0_9["msiexec.exe"] = ""
-l_0_9["dllhost.exe"] = ""
-l_0_9["cmd.exe"] = ""
-l_0_9["notepad.exe"] = ""
-l_0_9["regsvr32.exe"] = ""
-l_0_9["userinit.exe"] = ""
-l_0_9["wscript.exe"] = ""
-l_0_9["regedit.exe"] = ""
-l_0_9["secedit.exe"] = ""
-l_0_9["calc.exe"] = ""
-l_0_9["taskmgr.exe"] = ""
-l_0_9["cscript.exe"] = ""
-l_0_9["runonce.exe"] = ""
-l_0_9["certutil.exe"] = ""
-l_0_9["find.exe"] = ""
-l_0_9["winver.exe"] = ""
-l_0_9["hh.exe"] = ""
-l_0_9["write.exe"] = ""
-l_0_9["ctfmon.exe"] = ""
-l_0_9["gpscript.exe"] = ""
-l_0_9["net.exe"] = ""
-l_0_9["powercfg.exe"] = ""
-l_0_9["lsass.exe"] = ""
-l_0_9["tcpsvcs.exe"] = ""
-l_0_9["msfeedssync.exe"] = ""
-l_0_9["taskeng.exe"] = ""
-l_0_9["mshta.exe"] = ""
-l_0_9["dllhst3g.exe"] = ""
-l_0_9["sdiagnhost.exe"] = ""
-l_0_9["werfault.exe"] = ""
-l_0_9["sfc.exe"] = ""
-l_0_9["upnpcont.exe"] = ""
-l_0_9["wiaacmgr.exe"] = ""
-l_0_9["mmc.exe"] = ""
-l_0_9["mspaint.exe"] = ""
-l_0_9["robocopy.exe"] = ""
-l_0_9["xcopy.exe"] = ""
-l_0_9["logagent.exe"] = ""
-l_0_9["wextract.exe"] = ""
-l_0_9["cmmon32.exe"] = ""
-l_0_9["dpnsvr.exe"] = ""
-l_0_9["net1.exe"] = ""
-l_0_9["dplaysvr.exe"] = ""
-l_0_9["schtasks.exe"] = ""
-l_0_9["dvdupgrd.exe"] = ""
-l_0_9["fixmapi.exe"] = ""
-l_0_9["systray.exe"] = ""
-l_0_9["netsh.exe"] = ""
-l_0_9["mobsync.exe"] = ""
-l_0_9["unregmp2.exe"] = ""
-l_0_9["sethc.exe"] = ""
-do
-  if l_0_7[l_0_6] or l_0_8[l_0_6] or l_0_9[l_0_6] then
-    local l_0_10 = l_0_1:sub(1, l_0_5)
-    if l_0_10 == nil then
-      return mp.CLEAN
-    end
-    if (l_0_10:find("\\application data\\[^\\]+$", 1, false) or l_0_10:find("\\appdata\\roaming\\[^\\]+$", 1, false)) and not l_0_10:find("microsoft", 1, true) and not l_0_10:find("windows", 1, true) and not l_0_10:find("installer", 1, true) and not l_0_10:find("citrix", 1, true) then
-      (mp.set_mpattribute)("Lua:SuspiciousExeLegitNameInAppdata")
-    else
-      if l_0_10:find("\\local\\temp$", 1, false) or l_0_10:find("\\local settings\\temp$", 1, false) then
-        (mp.set_mpattribute)("Lua:SuspiciousExeLegitNameInTemp")
+
+GetCommandLineExclusions = function()
+  -- function num : 0_3
+  local l_4_0 = ".:\\\\windows\\\\ccmcache\\\\.+"
+  local l_4_1 = ".:\\\\windows\\\\ccm\\\\systemtemp\\\\.+"
+  local l_4_2 = ".:\\\\windows\\\\ccm\\\\sensorframework\\\\.+"
+  local l_4_3 = ".:\\\\windows\\\\ccm\\\\signedscripts\\\\.+"
+  local l_4_4 = "cmd[^\\s]*\\s+/c\\s+\\\"chcp\\s+65001\\s+&\\s+.:\\\\windows\\\\system32\\\\inetsrv\\\\appcmd\\.exe\\s+list[^>]+>\\s+\\\"\\\\\\\\127\\.0\\.0\\.1\\\\.\\$\\\\temp\\\\[^\\\"]+\\\"\\s+2>&1\\\""
+  local l_4_5 = "\\s+(.:\\\\windows\\\\temp\\\\)?nessus_[^\\.\\s]+\\.txt[\\\"\\\'\\;\\s]*$"
+  local l_4_6 = "\\\"?.:\\\\windows\\\\system32\\\\sc\\.exe\\\"?\\s+start\\s+tenable_mw_scan\\s+output=nessus_[^\\s\\.]+\\.txt"
+  local l_4_7 = "\\\"?.:\\\\windows\\\\system32\\\\cmd\\.exe\\\"?\\s+/c\\s+echo\\s+nessus_cmd_[^\\s=]+=_start\\s+>>\\s+\\\"?.:\\\\windows\\\\temp\\\\nessus_"
+  local l_4_8 = {}
+  l_4_8[l_4_0] = 0
+  l_4_8[l_4_1] = 0
+  l_4_8[l_4_2] = 0
+  l_4_8[l_4_3] = 0
+  l_4_8[l_4_4] = 0
+  l_4_8[l_4_5] = 0
+  l_4_8[l_4_6] = 0
+  l_4_8[l_4_7] = 0
+  do
+    if (versioning.GetEngineBuild)() >= 24080 then
+      local l_4_9 = (versioning.GetOrgID)()
+      if l_4_9 ~= nil and l_4_9 ~= "" then
+        l_4_9 = (string.lower)(l_4_9)
+      end
+      if l_4_9 == "3216b490-71ee-4a94-b228-13b1c1582e3b" then
+        l_4_8["\\\"?[a-z]:\\\\windows\\\\system32\\\\msiexec\\.exe\\\"?\\s+\\/x\\s+\\{[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\}\\s+\\/q.*\\s+\\/qn"] = 0
+      else
+        l_4_8["\\\"?[a-z]:\\\\windows\\\\system32\\\\msiexec\\.exe\\\"?\\s+.+\\{[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\-[0-9a-f]+\\}\\s+.+[a-z]:\\\\windows\\\\temp\\\\nmwlogs\\\\wvdapps\\\\[^\\\\\\.]+\\.log"] = 0
       end
     end
+    return l_4_8
   end
-  return mp.CLEAN
 end
+
+GetCommandLineRegExpList = function()
+  -- function num : 0_4
+  local l_5_0 = "cmd(\\.exe)?\\s+\\/c\\s+\\\"*(.:\\\\.+\\.cmd)\\\"*"
+  local l_5_1 = "cmd(\\.exe)?\\\"?\\s+\\/c\\s+\\\"?(.:\\\\.+\\.exe)\\\"?"
+  local l_5_2 = "msiexec(\\.exe)?\\\"?[\\s/a-z]+\\\"?([a-z]:\\\\.+\\.msi)\\\"?"
+  local l_5_3 = {}
+  l_5_3[l_5_0] = 0
+  l_5_3[l_5_1] = 0
+  l_5_3[l_5_2] = 0
+  return l_5_3
+end
+
 

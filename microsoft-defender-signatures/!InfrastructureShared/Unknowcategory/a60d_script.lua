@@ -3,19 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  if (string.find)(l_0_0, ".ps1", 1, true) and not (string.find)(l_0_0, " -", 1, true) then
-    return mp.CLEAN
-  else
-    if (string.find)(l_0_1, ".dll", 1, true) or (string.find)(l_0_1, ".cpl", 1, true) or (string.find)(l_0_1, ".ocx", 1, true) or (string.find)(l_0_1, ".wcx", 1, true) or (string.find)(l_0_1, ".inf", 1, true) or (string.find)(l_0_1, "\\drivers\\", 1, true) or (string.find)(l_0_1, "\\windows\\installer\\", 1, true) or (string.find)(l_0_1, "tsworkspace", 1, true) then
-      return mp.CLEAN
-    end
-  end
-  return mp.INFECTED
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
+  return mp.LOWFI
 end
-do
-  return mp.CLEAN
+if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 and (hstrlog[10]).hitcount == 0 then
+  return mp.LOWFI
 end
+if (hstrlog[11]).hitcount == 0 and (hstrlog[12]).hitcount == 0 and (hstrlog[13]).hitcount == 0 and (hstrlog[14]).hitcount == 0 and (hstrlog[15]).hitcount == 0 and (hstrlog[16]).hitcount == 0 then
+  return mp.LOWFI
+end
+if (hstrlog[17]).hitcount == 0 and (hstrlog[18]).hitcount == 0 and (hstrlog[19]).hitcount == 0 and (hstrlog[20]).hitcount == 0 and (hstrlog[21]).hitcount == 0 then
+  return mp.LOWFI
+end
+return mp.INFECTED
 

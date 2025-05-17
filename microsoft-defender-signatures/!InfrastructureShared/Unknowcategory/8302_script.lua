@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.no_boundimport == true and peattributes.no_debug == true and peattributes.no_delayimport == true and peattributes.no_loadconfig == true then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 65536 and l_0_0 <= 131072 and (mp.get_mpattribute)("NID:Buran.A!Pra1") then
   return mp.INFECTED
 end
 return mp.CLEAN

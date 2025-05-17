@@ -3,44 +3,17 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if l_0_1:find("\\appdata\\locallow", 1, true) ~= nil then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_2 == "iexplore.exe" then
+      (mp.set_mpattribute)("Lua:ContextualDropIELocalLow")
+    end
+  end
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-      local l_0_1 = (this_sigattrlog[2]).wp1
-    end
-    -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
-
-    local l_0_2 = (string.match)(l_0_1, "\\(%w+%.%w+)$")
-    if l_0_2 == nil then
-      return mp.CLEAN
-    end
-    if (this_sigattrlog[4]).matched then
-      local l_0_3 = (this_sigattrlog[4]).utf8p2
-      local l_0_4, l_0_5 = (string.find)(l_0_3, ".bat", 1, true)
-      if l_0_5 and (string.find)(l_0_3, l_0_2, l_0_5 + 1, true) then
-        return mp.INFECTED
-      end
-    else
-      do
-        do
-          if (this_sigattrlog[5]).matched then
-            local l_0_6 = (this_sigattrlog[5]).utf8p2
-            if (string.find)(l_0_6, l_0_2, 1, true) then
-              return mp.INFECTED
-            end
-          end
-          return mp.CLEAN
-        end
-      end
-    end
-  end
+  return mp.CLEAN
 end
 

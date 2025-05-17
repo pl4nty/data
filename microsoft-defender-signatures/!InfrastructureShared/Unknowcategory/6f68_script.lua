@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "iexplore.exe" then
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 4048000 then
   return mp.INFECTED
 end
 return mp.CLEAN

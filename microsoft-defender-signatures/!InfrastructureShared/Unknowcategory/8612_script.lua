@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.hasexports and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
-  return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if not l_0_0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.find)((string.lower)(l_0_0), "windows\\system32\\svchost.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

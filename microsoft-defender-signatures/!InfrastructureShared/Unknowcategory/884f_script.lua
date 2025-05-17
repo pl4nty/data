@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 11 then
-  if pehdr.Subsystem == 1 then
-    (mp.changedetectionname)(805306436)
-  else
-    if pehdr.Machine == 34404 then
-      (mp.changedetectionname)(805306435)
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "mmc.exe" and (versioning.IsSeville)() then
+      return mp.INFECTED
     end
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
 

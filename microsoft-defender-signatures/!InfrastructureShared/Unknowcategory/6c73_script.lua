@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/LummaC.G") then
+  return mp.INFECTED
 end
-;
-(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_ONCE)
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("SIGATTR:SetItselfRunKey") and (mp.get_mpattribute)("SIGATTR:mzinresource") then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.sub)(l_0_0.image_path, -9)) == "mshta.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

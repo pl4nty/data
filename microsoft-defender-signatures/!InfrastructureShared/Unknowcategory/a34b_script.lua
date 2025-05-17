@@ -3,34 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (this_sigattrlog[1]).matched then
-  local l_0_1 = nil
-  local l_0_2, l_0_3 = (bm.get_process_relationships)()
-  for l_0_7,l_0_8 in ipairs(l_0_2) do
-    l_0_1 = l_0_8.image_path
-    if (string.find)(l_0_1, "\\WINWORD.EXE") then
-      l_0_0 = l_0_0 + 1
-      break
-    end
-  end
-  do
-    local l_0_9 = nil
-    for l_0_13,l_0_14 in ipairs(l_0_3) do
-      l_0_9 = l_0_14.image_path
-      if (string.find)(l_0_9, "\\powershell.exe") or (string.find)(l_0_9, "\\cmd.exe") then
-        l_0_0 = l_0_0 + 1
-        break
-      end
-    end
-    do
-      do
-        if l_0_0 == 2 then
-          return mp.INFECTED
-        end
-        return mp.CLEAN
-      end
-    end
-  end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+  return mp.CLEAN
 end
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)).IntegrityLevel then
+  return mp.CLEAN
+end
+if (string.lower)((string.sub)((bm.get_imagepath)(), -13)) == "\\explorer.exe" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

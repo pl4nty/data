@@ -3,28 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-local l_0_6 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).Size
-if l_0_6 > 100000 then
-  local l_0_7, l_0_8 = (pe.get_exports)()
-  if l_0_7 > 200 then
-    local l_0_9 = nil
-    for l_0_13 = 1, l_0_7 do
-      if l_0_9 ~= nil and (l_0_8[l_0_13]).rva == l_0_9 then
-        return mp.INFECTED
-      end
-      if (l_0_8[l_0_13]).fn == 2750976013 or (l_0_8[l_0_13]).fn == 2955234196 then
-        l_0_9 = (l_0_8[l_0_13]).rva
-      end
-    end
-  end
-end
-do
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1500000 or l_0_0 < 10000 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("system32", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

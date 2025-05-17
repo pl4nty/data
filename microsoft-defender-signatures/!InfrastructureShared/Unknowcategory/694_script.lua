@@ -3,25 +3,12 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\userprofilemigrationservice.exe", 1, true) or (string.find)(l_0_0, "\\transwiz.exe", 1, true) or (string.find)(l_0_0, "\\msiexec.exe", 1, true) then
+    return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC43: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (string.find)((string.lower)(l_0_0), "\\appdata\\local\\temp\\", 1, true) ~= nil and ((string.find)((string.lower)(l_0_0), ".com", 1, true) ~= nil or (string.find)((string.lower)(l_0_0), ".pif", 1, true) ~= nil or (string.find)((string.lower)(l_0_0), ".src", 1, true) ~= nil) then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  return mp.INFECTED
 end
+return mp.CLEAN
 

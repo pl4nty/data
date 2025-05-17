@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Win32/Mortis.MA!MTB") then
+if peattributes.isexe and (mp.getfilesize)() > 2000000 and (mp.getfilesize)() < 9000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

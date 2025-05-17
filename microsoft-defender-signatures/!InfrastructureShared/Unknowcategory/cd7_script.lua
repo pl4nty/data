@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:ConvertAd:Bit")
+(mp.set_mpattribute)("PUA:Block:KipodToolsCby")
 return mp.INFECTED
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
-  return mp.CLEAN
+if peattributes.ismsil and peattributes.has_msilresources then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

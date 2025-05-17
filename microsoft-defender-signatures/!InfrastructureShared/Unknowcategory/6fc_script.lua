@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(nri.AddTelemetry)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY)
-return mp.INFECTED
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0 ~= nil and l_0_0.CompanyName == "Brain Damage LLC" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

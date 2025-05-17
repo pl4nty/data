@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)((string.lower)(l_0_0), ".asar$") ~= nil then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security and (l_0_0 == 151552 or l_0_0 == 147456) then
   return mp.INFECTED
 end
 return mp.CLEAN

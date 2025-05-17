@@ -3,43 +3,69 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_2 = nil
-  if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_3 = nil
-  local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_2)
-  if l_0_4 ~= nil then
-    for l_0_8,l_0_9 in ipairs(l_0_4) do
-      local l_0_5 = 0
-      -- DECOMPILER ERROR at PC42: Confused about usage of register: R8 in 'UnsetPending'
-
-      R8_PC42 = (mp.ContextualExpandEnvironmentVariables)(R8_PC42)
-      if (sysio.IsFileExists)(R8_PC42) and ((sysio.GetLastResult)()).Success and (sysio.GetFileLastWriteTime)(R8_PC42) ~= 0 then
-        local l_0_11 = (sysio.GetFileLastWriteTime)(R8_PC42) / 10000000 - 11644473600
-        if l_0_11 < (MpCommon.GetCurrentTimeT)() and (MpCommon.GetCurrentTimeT)() - l_0_11 < 600 then
-          l_0_5 = 1
-          ;
-          (bm.add_related_file)(l_0_10)
-        end
-      end
-    end
-  end
-  do
-    -- DECOMPILER ERROR at PC80: Confused about usage of register: R3 in 'UnsetPending'
-
-    if l_0_5 == 1 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if MpCommon.SECURITY_MANDATORY_HIGH_RID <= l_0_0.integrity_level then
+  return mp.CLEAN
+end
+local l_0_1 = (bm.get_imagepath)()
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+if (string.find)(l_0_1, "\\windowsapps\\", 1, true) ~= nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "\\appdata\\local\\packages\\", 1, true) ~= nil then
+  return mp.CLEAN
+end
+local l_0_2 = 4294967295
+local l_0_3 = nil
+if (this_sigattrlog[1]).matched then
+  l_0_3 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1)
+  if l_0_3 ~= nil then
+    l_0_2 = (sysio.GetFileAttributes)(l_0_3)
+    if l_0_2 ~= nil and l_0_2 ~= 4294967295 and (mp.bitand)(l_0_2, 1024) == 1024 then
+      (bm.add_related_file)(l_0_3)
       return mp.INFECTED
     end
-    return mp.CLEAN
   end
 end
+l_0_2 = 4294967295
+l_0_3 = nil
+if (this_sigattrlog[2]).matched then
+  l_0_3 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1)
+  if l_0_3 ~= nil then
+    l_0_2 = (sysio.GetFileAttributes)(l_0_3)
+    if l_0_2 ~= nil and l_0_2 ~= 4294967295 and (mp.bitand)(l_0_2, 1024) == 1024 then
+      (bm.add_related_file)(l_0_3)
+      return mp.INFECTED
+    end
+  end
+end
+l_0_2 = 4294967295
+l_0_3 = nil
+if (this_sigattrlog[3]).matched then
+  l_0_3 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1)
+  if l_0_3 ~= nil then
+    l_0_2 = (sysio.GetFileAttributes)(l_0_3)
+    if l_0_2 ~= nil and l_0_2 ~= 4294967295 and (mp.bitand)(l_0_2, 1024) == 1024 then
+      return mp.INFECTED
+    end
+  end
+end
+l_0_2 = 4294967295
+l_0_3 = nil
+if (this_sigattrlog[4]).matched then
+  l_0_3 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[4]).utf8p1)
+  if l_0_3 ~= nil then
+    l_0_2 = (sysio.GetFileAttributes)(l_0_3)
+    if l_0_2 ~= nil and l_0_2 ~= 4294967295 and (mp.bitand)(l_0_2, 1024) == 1024 then
+      return mp.INFECTED
+    end
+  end
+end
+return mp.CLEAN
 

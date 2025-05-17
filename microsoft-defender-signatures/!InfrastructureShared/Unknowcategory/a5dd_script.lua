@@ -3,14 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and pehdr.NumberOfSections == 5 and pevars.epsec == 1 and not peattributes.no_exports and not peattributes.no_resources and peattributes.no_tls and pehdr.SizeOfImage >= 221184 and pehdr.SizeOfImage <= 1048576 and (pesecs[pevars.epsec]).SizeOfRawData >= 151552 and (pesecs[pevars.epsec]).SizeOfRawData <= 655360 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (pesecs[pevars.epsec]).Name == ".text" then
-  (mp.set_mpattribute)("MpSimulateParanoid")
-  ;
-  (mp.set_mpattribute)("MpEnableCOM")
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
-  ;
-  (pe.reemulate)()
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -18) == "\\mailstorehome.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.sub)(l_0_0, -20) == "\\mailstoreclient.exe" then
+  return mp.CLEAN
+end
+if (string.sub)(l_0_0, -13) == "\\explorer.exe" then
+  return mp.CLEAN
+end
+local l_0_1 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  l_0_1 = (this_sigattrlog[1]).utf8p2
+end
+if l_0_1 ~= nil then
+  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+    if (sysio.IsFileExists)(l_0_7) then
+      (bm.add_related_file)(l_0_7)
+    end
+  end
+end
+do
+  l_0_2 = mp
+  l_0_2 = l_0_2.INFECTED
+  return l_0_2
+end
 

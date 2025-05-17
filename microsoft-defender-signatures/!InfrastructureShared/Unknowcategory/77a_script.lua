@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((mp.getfilename)(), -3)) ~= "url" then
+if (string.lower)((string.sub)((mp.getfilename)(), -3)) ~= "hta" then
   return mp.CLEAN
 end
 if (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true) ~= 0 or not "Lua:SingleFileInZip" then

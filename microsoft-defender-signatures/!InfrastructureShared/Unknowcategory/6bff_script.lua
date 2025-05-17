@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 983040 and l_0_0 <= 1179648 and pehdr.NumberOfSections == 3 then
+if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win32/Qakbot.MA!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

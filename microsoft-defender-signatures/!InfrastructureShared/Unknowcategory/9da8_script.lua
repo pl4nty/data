@@ -3,11 +3,21 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-local l_0_1 = (mp.readfile)(l_0_0, 60)
-if (mp.crc32)(-1, l_0_1, 1, 60) ~= 2693178178 then
-  return mp.CLEAN
+if peattributes.isexe == true and (mp.getfilesize)() > 1800000 and (mp.getfilesize)() < 4800000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
 end
-return mp.INFECTED
+do
+  l_0_0 = pe
+  l_0_0 = l_0_0.get_versioninfo
+  l_0_0 = l_0_0()
+  if l_0_0 ~= nil then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
+end
 

@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_2 == "kldconfig.plug" and (string.sub)(l_0_1, -5) == "\\temp" then
-    (mp.set_mpattribute)("Lua:CarbanakDownloadFile")
-  end
+local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+if ((string.find)(l_0_1, "->xl/vbaproject.bin") or (string.find)(l_0_1, "->word/vbaproject.bin")) and (mp.get_mpattribute)("MHSTR:MacroInside") then
+  (mp.set_mpattribute)("//LUA:MacroInsideContainer")
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

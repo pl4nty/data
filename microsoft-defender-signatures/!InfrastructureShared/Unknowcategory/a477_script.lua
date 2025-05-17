@@ -3,23 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_netmetadata)()
-local l_0_1 = l_0_0.usheap_RVA
-local l_0_2 = l_0_0.usheap_size
-local l_0_3 = l_0_1 + pehdr.ImageBase
-local l_0_4 = (pe.vm_search)(l_0_3, l_0_3 + 80, "\144\" \v0-9A-Za-z/+\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_4 == 4294967295 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+      local l_0_1, l_0_2, l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2)
+    end
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.find)(l_0_1, "iexplore", 1, true) then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC67: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC76: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.find)(l_0_1, " iex", 1, true) or (string.find)(l_0_1, "iex ", 1, true) then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-local l_0_5 = (pe.vm_search)(l_0_4 + 8, l_0_4 + l_0_2, "\000\000\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_5 == 4294967295 then
-  return mp.CLEAN
-end
-local l_0_6 = l_0_5 - l_0_4
-;
-(mp.readprotection)(false)
-local l_0_7 = (pe.mmap_va)(l_0_4, l_0_6)
-;
-(mp.vfo_add_buffer)(l_0_7, "[ldstr_msil]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.INFECTED
 

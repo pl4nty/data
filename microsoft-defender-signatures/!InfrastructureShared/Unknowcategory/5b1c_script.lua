@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() < 20000 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT == 1 then
+  (mp.set_mpattribute)("HSTR:Trojan:Win32/Sodebral.A1")
 end
-return mp.CLEAN
+return mp.INFECTED
 

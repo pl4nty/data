@@ -3,24 +3,20 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 3, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 8, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-local l_0_0 = 512
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr - 256, l_0_0)
-local l_0_2 = (string.find)(l_0_1, "@B\015%z")
-local l_0_3 = (string.find)(l_0_1, "`\174\n%z")
-local l_0_4 = (string.find)(l_0_1, "h\132\003%z%z")
-if l_0_2 and l_0_3 and l_0_4 then
-  for l_0_8 = 1, 160 do
-    if (pe.mmap_va)(pevars.sigaddr + l_0_8 + l_0_3 - 256, 1) == "\232" then
-      (pe.mmap_patch_va)(pevars.sigaddr + l_0_8 + l_0_3 - 256, "êêêê\144")
-    end
-  end
+local l_0_0 = {}
+l_0_0["AB7A951E-E36A-4B49-8D35-F5927069A103"] = ""
+l_0_0["EDD78F8D-8DA4-443A-ACE8-987CA9D400AD"] = ""
+l_0_0["716CA90D-9ACE-4F1E-AC33-5B3C505C0FFB"] = ""
+l_0_0["CE76777D-E5C5-4EBB-BB1A-6B17BFF08D01"] = ""
+l_0_0["5F40E508-8BBC-4A2E-86B0-8FCB6117CFA8"] = ""
+l_0_0["88293C87-BC59-4F96-AFD3-81A92CAAE5A8"] = ""
+l_0_0["AA457A77-ADC4-4857-BB2C-CBF83B7012AC"] = ""
+l_0_0["C20A962A-4B9A-47BF-87D9-EA35EEA7BE01"] = ""
+l_0_0["7C45F355-8D17-43DB-8165-8021FDD9044C"] = ""
+l_0_0["E98BB072-FDBD-42AB-928A-F98DF17BFAEE"] = ""
+local l_0_1 = (mp.GetMachineGUID)()
+if l_0_1 and l_0_0[l_0_1] then
+  return mp.LOWFI
 end
-do
-  return mp.INFECTED
-end
+return mp.INFECTED
 

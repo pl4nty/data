@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("pea_no_security") then
-  return mp.INFECTED
+if peattributes.isdll and peattributes.hasexports then
+  (mp.set_mpattribute)("ChangeEPtoExport")
 end
-return mp.CLEAN
+return mp.INFECTED
 

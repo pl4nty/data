@@ -3,21 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and ((string.lower)((string.sub)(l_0_0, -15))):match("\\([^\\]+%.exe)$") == "explorer.exe" and (string.lower)((string.sub)((mp.ContextualExpandEnvironmentVariables)(l_0_0), 2, 11)) == ":\\windows\\" then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil or l_0_0.image_path == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-local l_0_2 = l_0_1:match("([^\\]+)$")
-local l_0_3 = {}
-l_0_3["explorer.exe"] = true
-l_0_3["powershell.exe"] = true
-l_0_3["mshta.exe"] = true
-if l_0_3[l_0_2] then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

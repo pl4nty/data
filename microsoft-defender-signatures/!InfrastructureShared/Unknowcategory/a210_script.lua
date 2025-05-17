@@ -3,20 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if ((pehdr.DataDirectory)[5]).RVA <= 0 then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, 13)) == "\\wmiprvse.exe" or (string.lower)((string.sub)(l_0_6.image_path, 12)) == "\\scrcons.exe") then
+    return mp.INFECTED
+  end
 end
-if ((pehdr.DataDirectory)[5]).Size <= 0 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)(((pehdr.DataDirectory)[5]).RVA, 9)
-if (mp.readu_u32)(l_0_0, 5) ~= 131584 then
-  return mp.CLEAN
-end
-if l_0_0:byte(9) ~= 48 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

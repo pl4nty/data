@@ -3,73 +3,47 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC15: Overwrote pending register: R1 in 'AssignReg'
-
-  do
-    if (this_sigattrlog[6]).matched then
-      local l_0_1 = nil
-    end
-    local l_0_2, l_0_3 = , nil
-    if (bm.get_process_relationships)() then
-      for l_0_7,l_0_8 in ipairs((bm.get_process_relationships)()) do
-        local l_0_4, l_0_5 = nil
-        -- DECOMPILER ERROR at PC25: Confused about usage of register: R8 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC51: Overwrote pending register: R9 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC55: Confused about usage of register: R9 in 'UnsetPending'
-
-        if R8_PC25.image_path and (mp.bitand)(R8_PC25.reason_ex, 1) == 1 and (string.find)(R8_PC25.image_path, "\\explorer.exe", 1, true) then
-          if l_0_2 and nil then
-            for l_0_13,l_0_14 in ipairs(nil) do
-              local l_0_11 = nil
-              -- DECOMPILER ERROR at PC60: Confused about usage of register: R14 in 'UnsetPending'
-
-              R14_PC60 = (mp.ContextualExpandEnvironmentVariables)(R14_PC60)
-              if (sysio.IsFileExists)(R14_PC60) then
-                (bm.add_related_file)(R14_PC60)
-              end
-            end
-          end
-          do
-            -- DECOMPILER ERROR at PC85: Confused about usage of register: R9 in 'UnsetPending'
-
-            if l_0_3 and (mp.GetExecutablesFromCommandLine)(l_0_3) then
-              for l_0_18,l_0_19 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
-                local l_0_15, l_0_16 = nil
-                -- DECOMPILER ERROR at PC90: Confused about usage of register: R14 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC101: Confused about usage of register: R14 in 'UnsetPending'
-
-                if (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(R14_PC60)) then
-                  (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(R14_PC60))
-                end
-              end
-            end
-            do
-              do
-                do return mp.INFECTED end
-                -- DECOMPILER ERROR at PC108: LeaveBlock: unexpected jumping out DO_STMT
-
-                -- DECOMPILER ERROR at PC108: LeaveBlock: unexpected jumping out DO_STMT
-
-                -- DECOMPILER ERROR at PC108: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC108: LeaveBlock: unexpected jumping out IF_STMT
-
-              end
-            end
-          end
-        end
-      end
-    end
-    return mp.CLEAN
-  end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
 end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.TimeDateStamp ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfHeaders ~= 1024 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode < 1536 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode > 2048 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfInitializedData ~= 4608 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfUninitializedData ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.BaseOfCode ~= 4096 then
+  return mp.CLEAN
+end
+if pehdr.FileAlignment ~= 512 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfHeaders ~= 1024 then
+  return mp.CLEAN
+end
+if pehdr.Subsystem ~= 2 then
+  return mp.CLEAN
+end
+if pehdr.CheckSum ~= 94440 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

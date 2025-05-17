@@ -3,26 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("ALF:FOP:Backdoor:Win64/Drixed.Q!dha") then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if peattributes.isdll ~= true then
+l_0_0 = (string.lower)(l_0_0)
+if (string.find)(l_0_0, "\\windows\\ccmcache\\", 1, true) then
   return mp.CLEAN
 end
-if peattributes.hasexports ~= true then
+if (string.find)(l_0_0, "\\windows\\ccm\\systemtemp\\", 1, true) then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 400000 or l_0_0 > 1000000 then
+if (string.find)(l_0_0, "\\microsoft\\windows defender advanced threat protection\\", 1, true) then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections < 8 then
+if (mp.IsTrustedFile)(false) == true then
   return mp.CLEAN
 end
-if (pesecs[1]).VirtualSize > 4096 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("LUA:Drixed.A!dll")
-return mp.CLEAN
+return mp.INFECTED
 

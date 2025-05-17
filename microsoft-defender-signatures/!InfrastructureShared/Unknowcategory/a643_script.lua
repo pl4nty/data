@@ -3,34 +3,62 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("Lua:ZIPExt") and not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_11 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[2]).utf8p2) > 3 then
+    local l_0_4 = nil
+    local l_0_5 = ((string.lower)((bm.get_imagepath)()))
+    -- DECOMPILER ERROR at PC45: Overwrote pending register: R2 in 'AssignReg'
+
+    if l_0_5 ~= nil and (string.len)(l_0_5) > 3 then
+      for l_0_9 in (string.gmatch)(l_0_4, "%S+") do
+        local l_0_6 = nil
+        -- DECOMPILER ERROR at PC52: Confused about usage of register: R6 in 'UnsetPending'
+
+        if R6_PC52 ~= nil and (string.len)(R6_PC52) >= 1 and (string.sub)(R6_PC52, 0, 1) ~= "/" then
+          if (sysio.IsFileExists)(R6_PC52) then
+            (bm.add_related_file)(R6_PC52)
+          else
+            if l_0_6 ~= nil and (sysio.IsFileExists)(l_0_6 .. R6_PC52) then
+              (bm.add_related_file)(l_0_10)
+            end
+          end
+        end
+      end
+      do
+        l_0_5 = this_sigattrlog
+        l_0_5 = l_0_5[3]
+        l_0_5 = l_0_5.matched
+        if l_0_5 then
+          l_0_5 = this_sigattrlog
+          l_0_5 = l_0_5[3]
+          l_0_5 = l_0_5.utf8p1
+          local l_0_12 = nil
+          if l_0_5 ~= nil then
+            l_0_12 = sysio
+            l_0_12 = l_0_12.IsFileExists
+            l_0_12 = l_0_12(l_0_5)
+            if l_0_12 then
+              l_0_12 = bm
+              l_0_12 = l_0_12.add_related_file
+              l_0_12(l_0_5)
+            end
+          end
+        end
+        do
+          l_0_5 = mp
+          l_0_5 = l_0_5.INFECTED
+          return l_0_5
+        end
+      end
+    end
+  end
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 800000 or l_0_0 < 4000 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("\\usr\\lib\\system", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("/usr/lib/system", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("\\libiphoneaccess", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("backup", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("recovery", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("restore", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("iosdevicemanagerex", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() > 10485760 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil and (l_0_5.Signers).IsValid == true then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("lua_codepatch_obfuscator_xt_5")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\2359")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+;
+(mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT")
+return mp.SUSPICIOUS
 

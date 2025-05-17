@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
-  if l_0_1 ~= nil and l_0_1.image_path ~= nil then
-    local l_0_2 = (string.lower)(l_0_1.image_path)
-    ;
-    (bm.add_related_file)(l_0_2)
+local l_0_0 = (MpCommon.GetPersistContextNoPath)("MiKatzExe")
+if l_0_0 ~= nil then
+  for l_0_4,l_0_5 in ipairs(l_0_0) do
+    if (sysio.IsFileExists)(l_0_5) then
+      (bm.add_threat_file)(l_0_5)
+    end
   end
-end
-do
   return mp.INFECTED
 end
+return mp.CLEAN
 

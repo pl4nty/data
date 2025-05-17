@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 do
-  if epcode[1] == 233 and epcode[2] == 90 and epcode[3] == 94 and epcode[11] == 233 and peattributes.isexe == true and peattributes.amd64_image then
+  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (mp.get_mpattribute)("pea_no_security") then
     local l_0_0 = (mp.GetCertificateInfo)()
     for l_0_4,l_0_5 in pairs(l_0_0) do
       if l_0_5.Signers ~= nil then

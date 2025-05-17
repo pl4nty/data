@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched or (hstrlog[2]).matched) and mp.HSTR_WEIGHT > 1 then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 4)
+if (mp.readu_u32)(l_0_0, 1) < 720896 then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("HSTR:Trojan:Win32/Sefnit!ths")
-return mp.CLEAN
+return mp.INFECTED
 

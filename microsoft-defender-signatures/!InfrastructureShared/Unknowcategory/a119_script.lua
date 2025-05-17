@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("VirTool:Win32/Vbcrypts") and (pe.query_import)(pe.IMPORT_STATIC, 1976129679) ~= 0 and (string.lower)((string.sub)(((pe.get_versioninfo)()).ProductName, 1, 5)) == "skype" then
-  return mp.INFECTED
+if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 238592 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
+  if mp.HSTR_WEIGHT == 21 then
+    return mp.SUSPICIOUS
+  end
 end
 return mp.CLEAN
 

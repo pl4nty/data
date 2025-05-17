@@ -3,23 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Clients\\StartMenuInternet\\IEXPLORE.EXE\\shell\\open\\command")
-if l_0_0 ~= nil then
-  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, nil)
-  if l_0_1 ~= nil and ((string.find)((string.lower)(l_0_1), "v9%.com") or (string.find)((string.lower)(l_0_1), "22find%.com") or (string.find)((string.lower)(l_0_1), "22apple%.com") or (string.find)((string.lower)(l_0_1), "qvo6%.com") or (string.find)((string.lower)(l_0_1), "portaldosites%.com") or (string.find)((string.lower)(l_0_1), "onmylike%.com") or (string.find)((string.lower)(l_0_1), "laban%.vn") or (string.find)((string.lower)(l_0_1), "delta-homes%.com")) then
-    if (string.sub)(l_0_1, 1, 1) == "\"" then
-      local l_0_2, l_0_3 = (string.find)((string.lower)(l_0_1), "iexplore.exe\"")
-      if l_0_2 then
-        (sysio.SetRegValueAsString)(l_0_0, nil, (string.sub)(l_0_1, 2, l_0_3 - 1))
-      end
-    else
-      do
-        local l_0_4, l_0_5 = (string.find)((string.lower)(l_0_1), "iexplore.exe")
-        if l_0_4 then
-          (sysio.SetRegValueAsString)(l_0_0, nil, (string.sub)(l_0_1, 1, l_0_5))
-        end
-      end
+do
+  if (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator!InstalleRex") or (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator!InstalleRex.B") or (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator!InstalleRex.C") or (mp.get_mpattribute)("HSTR:VirTool:Win32/Obfuscator!InstalleRex.D") then
+    local l_0_0 = (string.lower)((mp.getfilename)())
+    if (string.sub)(l_0_0, -4) == ".exe" and ((string.find)(l_0_0, "\\temp\\", 1, true) or (string.find)(l_0_0, "\\downloads\\", 1, true) or (string.match)(l_0_0, "\\all users\\application data\\{%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x}") or (string.match)(l_0_0, "\\programdata\\{%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x}")) then
+      (mp.set_mpattribute)("PUA:Block:InstalleRex")
+      return mp.INFECTED
     end
   end
+  return mp.CLEAN
 end
 

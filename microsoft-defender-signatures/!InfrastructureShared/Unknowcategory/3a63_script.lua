@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:[EmbeddedEnc]") then
+if peattributes.isexe and peattributes.ismsil then
   return mp.INFECTED
 end
 return mp.CLEAN

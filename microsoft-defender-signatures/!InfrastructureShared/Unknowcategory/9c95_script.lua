@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 10 and peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+if peattributes.isexe and pehdr.NumberOfSections == 3 and (pesecs[3]).VirtualSize >= 2176 and (pesecs[3]).VirtualSize <= 4096 and pehdr.SizeOfImage >= 20480 and pehdr.SizeOfImage <= 36864 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "\002\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "\000\000\000\000")
-return mp.INFECTED
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "xl/drawings/_rels/drawing1.xml.rels") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

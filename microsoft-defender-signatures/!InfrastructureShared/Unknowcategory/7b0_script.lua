@@ -3,7 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Ranbyus!obf") or (mp.get_mpattribute)("HSTR:Worm:Win32/Rebhip!encrsrc") or (mp.get_mpattribute)("HSTR:VirTool:Win32/VBInject.ADR") or (mp.get_mpattribute)("HSTR:VirTool:Win32/VBInject.ADS") then
+if peattributes.isdll then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 17920 or l_0_0 > 70656 then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("SIGATTR:PostMessage!Unusual") or (mp.get_mpattribute)("SIGATTR:SendMessage!Unusual") then
   return mp.INFECTED
 end
 return mp.CLEAN

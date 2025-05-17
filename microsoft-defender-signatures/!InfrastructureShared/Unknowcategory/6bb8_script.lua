@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:UpatreFragA_Nonprocess")
 return mp.CLEAN
 

@@ -3,26 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)((string.sub)(l_0_0, -20))
-  if l_0_1 ~= "\\umworkerprocess.exe" then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = nil
   end
-  local l_0_2 = nil
-  if (this_sigattrlog[1]).matched then
-    l_0_2 = (this_sigattrlog[1]).utf8p1
-  else
-    if (this_sigattrlog[2]).matched then
-      l_0_2 = (this_sigattrlog[2]).utf8p1
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0)
+    local l_0_2 = l_0_1:match("(.+)\\svchost%.exe")
+    l_0_2 = (MpCommon.PathToWin32Path)(l_0_2)
+    if l_0_2 == nil then
+      return mp.CLEAN
+    end
+    l_0_2 = (mp.ContextualExpandEnvironmentVariables)(l_0_2)
+    if l_0_2 == nil then
+      return mp.CLEAN
+    end
+    if l_0_2:match("\\windows\\system32") or l_0_2:match("\\windows\\syswow64") then
+      return mp.CLEAN
     end
   end
-  if l_0_2 ~= nil and (sysio.IsFileExists)(l_0_2) and (string.sub)(l_0_2, -5) == ".aspx" then
-    (bm.add_threat_file)(l_0_2)
+  do
     return mp.INFECTED
   end
-end
-do
-  return mp.CLEAN
 end
 

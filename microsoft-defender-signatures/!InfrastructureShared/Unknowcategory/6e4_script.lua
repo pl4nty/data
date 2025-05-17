@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsKnownFriendlyFile)((bm.get_imagepath)(), true, true) == true then
-  return mp.CLEAN
+if (mp.get_mpattributesubstring)("VbsMLCloudExclusion") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1 = l_0_0:match("(.+\\)([^\\]+)$")
-if (string.sub)(l_0_1, -18) == "\\windows\\system32\\" or (string.sub)(l_0_1, -18) == "\\windows\\syswow64\\" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = {}
+l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+return mp.INFECTED
 

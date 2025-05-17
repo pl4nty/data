@@ -3,16 +3,28 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if peattributes.isexe then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 7340032 and l_0_0 < 10485760 and (pe.query_import)(pe.IMPORT_STATIC, 660922497) ~= 0 then
-      if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-        (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-      end
-      return mp.INFECTED
-    end
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  ;
+  (bm.add_related_string)("MockSystem32_File", l_0_0, bm.RelatedStringBMReport)
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC33: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (sysio.IsFileExists)(l_0_0) then
+    (bm.add_related_file)(l_0_0)
+  end
+  return mp.INFECTED
 end
 

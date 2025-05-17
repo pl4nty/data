@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if not l_0_0 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0:lower(), "decrypt", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 3, "\001\000\000\000")
+return mp.CLEAN
 

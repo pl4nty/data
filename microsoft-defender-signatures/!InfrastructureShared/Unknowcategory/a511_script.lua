@@ -3,21 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoHotKey_+") then
-  return mp.CLEAN
-end
-if ((mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv")) and (hstrlog[1]).matched then
-  local l_0_0 = ((hstrlog[1]).match_offsets)[3]
-  local l_0_1 = (hstrlog[1]).VA + l_0_0
-  local l_0_2 = (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1)
-  if (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1) ~= 557012289 then
-    return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2, l_0_3 = nil, nil
+for l_0_7,l_0_8 in ipairs(l_0_0) do
+  if l_0_8.image_path ~= nil and (mp.bitand)(l_0_8.reason_ex, 1) == 1 then
+    l_0_2 = (string.lower)(l_0_8.image_path)
+    if l_0_2:find("excel.exe") or l_0_2:find("winword.exe") then
+      l_0_3 = (string.lower)((mp.GetProcessCommandLine)(l_0_8.ppid))
+      if (string.find)(l_0_3, "rs4_winatp-intro-invoice", 1, true) or (string.find)(l_0_3, "onboardingwindows11tomicrosoftdefender", 1, true) then
+        return mp.CLEAN
+      end
+      return mp.INFECTED
+    end
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

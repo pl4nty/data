@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 11, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if peattributes.isdll and (mp.getfilesize)() < 126976 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

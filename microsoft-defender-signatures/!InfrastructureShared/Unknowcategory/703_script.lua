@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((bm.get_imagepath)(), -12)) ~= "\\svchost.exe" then
-  return mp.CLEAN
+if (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched and (this_sigattrlog[2]).wp1 == (this_sigattrlog[3]).wp1 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

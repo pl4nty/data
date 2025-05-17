@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
-  return mp.CLEAN
-end
-if (pe.get_exports)() > 100 then
+if peattributes.isexe and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 7 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 then
   return mp.INFECTED
 end
 return mp.CLEAN

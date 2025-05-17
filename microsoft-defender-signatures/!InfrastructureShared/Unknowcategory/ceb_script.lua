@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+(mp.set_mpattribute)("PUA:Block:SuperOptimizer")
 return mp.INFECTED
 

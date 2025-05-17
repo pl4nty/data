@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 then
-  l_0_0 = (string.lower)(l_0_0)
-  if l_0_0:find("viewer.aspx", 1, true) then
-    return mp.CLEAN
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil then
+    local l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_0)
+    if (sysio.IsFileExists)(l_0_1) then
+      (bm.add_related_file)(l_0_1)
+    end
   end
-  if l_0_0:find("\\appdata\\.+\\outlook\\.+autodiscover.xml") then
-    return mp.CLEAN
-  end
+end
+do
   return mp.INFECTED
 end
-return mp.CLEAN
 

@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
+if peattributes.ismsil == true and (mp.getfilesize)() < 10240 and peattributes.isdll == true then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Program:Win32/SoftwareClicker.A")
 return mp.CLEAN
 

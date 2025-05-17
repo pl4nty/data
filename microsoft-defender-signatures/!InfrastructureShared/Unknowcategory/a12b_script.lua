@@ -3,25 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not peattributes.hasexports then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 > 3 then
-  return mp.CLEAN
-end
-local l_0_2 = 0
-for l_0_6 = 1, l_0_0 do
-  local l_0_7 = (pe.mmap_string_rva)((l_0_1[l_0_6]).namerva, 64)
-  if l_0_7 == "UMEP" then
-    l_0_2 = l_0_2 + 1
-  end
-  if l_0_7 == "VFEP" then
-    l_0_2 = l_0_2 + 1
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.match)(l_0_0, "bypass.+%-c.+servercertificatevalidationcallback.*=.*%{.*%$true.+iex.+system%.net%.webclient.+downloadstring.+http") ~= nil then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
   end
 end
-if l_0_2 < 2 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,14 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "cab rtf doc chm hlp ttf pdf fb2 xls ppt mdb cda wav wma mp3 avi mpg mdv flv swf wmv vob bmp gif jpg png iso mdf mds bin dat nrg 3gp ogg vob exe dll"
-local l_0_1 = (bm.get_imagepath)()
-local l_0_2 = (string.match)((string.lower)(l_0_1), "\\([^\\]+)%.%l%l%l")
-local l_0_3, l_0_4 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "(.+\\)[^\\]+%.(%l%l%l)")
-local l_0_5, l_0_6 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), "(.+\\)([^\\]+)%.rtf")
-if l_0_2 ~= nil and l_0_3 ~= nil and l_0_4 ~= nil and l_0_5 ~= nil and l_0_6 ~= nil and l_0_2 == l_0_6 and (string.find)(l_0_0, l_0_4, 1, true) and (string.find)(l_0_3, "\\temp\\", 1, true) and (string.find)(l_0_5, "\\temp\\", 1, true) then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_1), 1079587454)
-  return mp.INFECTED
+Infrastructure_NewmanScan = function()
+  -- function num : 0_0
+  (MpDetection.ScanResource)("specialfolder://recursive:file:%ExchangeInstallPath%\\FrontEnd\\HttpProxy\\owa\\auth")
+  ;
+  (MpDetection.ScanResource)("specialfolder://recursive:file:%ExchangeInstallPath%\\ClientAccess\\ecp")
+  ;
+  (MpDetection.ScanResource)("specialfolder://recursive:file:%ExchangeInstallPath%\\FrontEnd\\HttpProxy\\ecp\\auth")
+  ;
+  (MpDetection.ScanResource)("specialfolder://recursive:file:%ExchangeInstallPath%\\FrontEnd\\HttpProxy\\bin")
+  ;
+  (MpDetection.ScanResource)("specialfolder://recursive:file:%Windir%\\Microsoft.NET\\Framework64\\v4.0.30319\\Temporary ASP.NET Files\\")
+  ;
+  (MpDetection.ScanResource)("specialfolder://recursive:file:%SystemDrive%\\inetpub\\wwwroot")
+  ;
+  (MpDetection.ScanResource)("specialfolder://recursive:file:%ProgramData%\\COM")
 end
-return mp.CLEAN
+
 

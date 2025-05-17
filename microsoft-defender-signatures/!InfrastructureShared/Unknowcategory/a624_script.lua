@@ -3,31 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  l_0_0 = (string.gsub)(l_0_0, " ", "")
-  if (string.len)(l_0_0) < 200 then
+if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p2)
+  if (string.find)(l_0_0, ".ps1", 1, true) and not (string.find)(l_0_0, " -", 1, true) then
     return mp.CLEAN
+  else
+    if (string.find)(l_0_1, ".dll", 1, true) or (string.find)(l_0_1, ".cpl", 1, true) or (string.find)(l_0_1, ".ocx", 1, true) or (string.find)(l_0_1, ".wcx", 1, true) or (string.find)(l_0_1, ".inf", 1, true) or (string.find)(l_0_1, "\\drivers\\", 1, true) or (string.find)(l_0_1, "\\windows\\installer\\", 1, true) or (string.find)(l_0_1, "tsworkspace", 1, true) then
+      return mp.CLEAN
+    end
   end
-  if (string.len)(l_0_0) > 1024 then
-    return mp.INFECTED
-  end
-  if (string.find)(l_0_0, "powershell", 1, true) or (string.find)(l_0_0, "iex(", 1, true) or (string.find)(l_0_0, "join[regex]::matches", 1, true) or (string.find)(l_0_0, "::frombase64string", 1, true) then
-    return mp.INFECTED
-  end
-  local l_0_1 = 0
-  for l_0_5 in (string.gmatch)(l_0_0, "^") do
-    l_0_1 = l_0_1 + 1
-  end
-  for l_0_9 in (string.gmatch)(l_0_0, "\'.-\'%+") do
-    l_0_1 = l_0_1 + 1
-  end
-  for l_0_13 in (string.gmatch)(l_0_0, "{%d%d?}{%d%d?}") do
-    l_0_1 = l_0_1 + 1
-  end
-  if l_0_1 >= 10 then
-    return mp.INFECTED
-  end
+  return mp.INFECTED
 end
 do
   return mp.CLEAN

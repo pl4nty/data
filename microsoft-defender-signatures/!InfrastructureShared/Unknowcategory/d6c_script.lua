@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
-end
-return mp.INFECTED
+(mp.set_mpattribute)("attrmatch_rescan_notiexplore")
+return mp.CLEAN
 

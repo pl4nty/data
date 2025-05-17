@@ -3,53 +3,45 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("BM_RTF_FILE") or not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("RoyalRoadRTF.vfo") then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = 16384
-local l_0_2 = nil
-if l_0_0 < l_0_1 then
-  l_0_2 = (mp.readfile)(1, l_0_0)
-else
-  l_0_2 = (mp.readfile)(l_0_0 - l_0_1 - 1, l_0_1)
-end
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (string.find)(l_0_2, "{\\*\\objdata", 1, true)
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-l_0_2 = (string.sub)(l_0_2, l_0_3)
-local l_0_4 = 0
-local l_0_5, l_0_6, l_0_7 = (string.find)(l_0_2, "([{}])")
-while 1 do
-  if l_0_5 ~= nil and l_0_7 ~= nil then
-    if l_0_7 == "{" then
-      l_0_4 = l_0_4 + 1
-    else
-      if l_0_7 == "}" then
-        l_0_4 = l_0_4 - 1
-      end
-    end
-    -- DECOMPILER ERROR at PC109: Unhandled construct in 'MakeBoolean' P1
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-    if l_0_4 < 1 and l_0_5 > 10 then
-      (mp.vfo_add_buffer)((string.sub)(l_0_2, 1, l_0_5 + 1), "[RTFobjdata]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+      local l_0_1 = (this_sigattrlog[2]).utf8p2
+    else
+    end
+    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
+        local l_0_2, l_0_3 = (this_sigattrlog[4]).utf8p2
+      end
+      -- DECOMPILER ERROR at PC69: Confused about usage of register: R0 in 'UnsetPending'
+
+      if l_0_2 == nil then
+        return mp.CLEAN
+      end
+      local l_0_4 = nil
+      local l_0_5 = {[".js"] = true, vbs = true, wsf = true, jse = true, vbe = true}
+      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
+        local l_0_6 = nil
+        -- DECOMPILER ERROR at PC90: Confused about usage of register: R7 in 'UnsetPending'
+
+        if (string.len)(R7_PC90) > 3 and (sysio.IsFileExists)(R7_PC90) and l_0_5[(string.sub)(R7_PC90, -3)] then
+          (bm.add_related_file)(l_0_11)
+          ;
+          (mp.ReportLowfi)(l_0_11, 2518044239)
+        end
+      end
       return mp.INFECTED
     end
   end
-  do break end
-  l_0_5 = (string.find)(l_0_2, "([{}])", l_0_5 + 1)
 end
-return mp.CLEAN
 

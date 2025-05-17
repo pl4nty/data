@@ -3,36 +3,46 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = false
-local l_0_1 = nil
-local l_0_2 = ""
-local l_0_3 = (mp.GetBruteMatchData)()
-local l_0_4 = l_0_3.match_offset + 1
-local l_0_5 = l_0_3.match_offset + 1 + 200
-if l_0_3.is_header then
-  l_0_2 = ((tostring(headerpage)):sub(l_0_4, l_0_5)):lower()
-else
-  l_0_2 = ((tostring(footerpage)):sub(l_0_4, l_0_5)):lower()
-end
-l_0_1 = l_0_2:match("%(gi ([^%)]*)%).FullName;")
-if l_0_1 == nil then
-  l_0_1 = l_0_2:match("%(get%-item ([^%)]*)%).FullName;")
-  if l_0_1 == nil then
-    l_0_1 = l_0_2:match("%.gacinstall%([\"\']([^%)]*)[\"\']")
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_0, l_0_1, l_0_2 = nil
+  end
+  local l_0_3 = nil
+  if l_0_3 == nil then
+    return mp.CLEAN
+  end
+  local l_0_4, l_0_5 = ".vbs", (string.gsub)(l_0_3, "\\", "")
+  -- DECOMPILER ERROR at PC41: Unhandled construct in 'MakeBoolean' P1
+
+  if (string.byte)(l_0_3) == (string.byte)("%") and (l_0_3 == nil or l_0_3 ~= 1) then
+    return mp.CLEAN
+  end
+  if l_0_3 == nil or l_0_3 ~= 3 then
+    return mp.CLEAN
+  end
+  if (string.lower)((string.sub)(l_0_3, -#l_0_4)) ~= l_0_4 then
+    return mp.CLEAN
+  end
+  local l_0_6 = nil
+  -- DECOMPILER ERROR at PC77: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC82: Confused about usage of register: R4 in 'UnsetPending'
+
+  if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p2 == nil or nil ~= nil then
+    local l_0_7 = nil
+    for l_0_11,l_0_12 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
+      local l_0_8 = nil
+      -- DECOMPILER ERROR at PC92: Confused about usage of register: R10 in 'UnsetPending'
+
+      if (string.find)((string.lower)(R10_PC92), "\\javaw.exe") == nil and (sysio.IsFileExists)(R10_PC92) then
+        (bm.add_threat_file)(R10_PC92)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
   end
 end
-if not l_0_1 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, ".dll", -4, true) == nil then
-  return mp.CLEAN
-end
-if (sysio.IsFileExists)(l_0_1) and not (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
-  (mp.ReportLowfi)(l_0_1, 2494279482)
-  l_0_0 = true
-end
-if l_0_0 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

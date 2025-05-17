@@ -6,8 +6,8 @@
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
+  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_8 = nil
   end
   -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
 
@@ -19,13 +19,14 @@ do
       local l_0_3 = nil
       -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
 
-      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
       if (sysio.IsFileExists)(R6_PC25) then
         (bm.add_related_file)(R6_PC25)
       end
     end
   end
   do
+    ;
+    (mp.TriggerScanResource)("wmi", "")
     return mp.INFECTED
   end
 end

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("BM_DHA")
+(bm.ApplyDeferredActions)()
 return mp.INFECTED
 

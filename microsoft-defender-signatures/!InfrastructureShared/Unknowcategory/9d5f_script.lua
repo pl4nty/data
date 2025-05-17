@@ -3,21 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.TimeProvOpen = ""
-l_0_0.TimeProvClose = ""
-l_0_0.TimeProvCommand = ""
-local l_0_1 = 0
-local l_0_2, l_0_3 = (pe.get_exports)()
-if l_0_2 > 2 then
-  for l_0_7 = 1, l_0_2 do
-    if l_0_0[(pe.mmap_string_rva)((l_0_3[l_0_7]).namerva, 64)] then
-      l_0_1 = l_0_1 + 1
-    end
+if (mp.getfilesize)() < 273152 and (mp.getfilesize)() > 112640 and peattributes.isdll and peattributes.hasexports then
+  if peattributes.dt_error_heur_exit_criteria then
+    (pe.set_peattribute)("deep_analysis", true)
   end
-  if l_0_1 == 3 then
-    return mp.INFECTED
-  end
+  ;
+  (pe.reemulate)()
 end
-return mp.CLEAN
+return mp.INFECTED
 

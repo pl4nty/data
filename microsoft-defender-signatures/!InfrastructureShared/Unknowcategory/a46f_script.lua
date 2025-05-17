@@ -3,13 +3,36 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  local l_0_0 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 4, 4)
-  local l_0_1 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 9, 4)
-  ;
-  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.2_%02X%02X%02X%02X_%02X%02X%02X%02X", (string.byte)(l_0_0, 4), (string.byte)(l_0_0, 3), (string.byte)(l_0_0, 2), (string.byte)(l_0_0, 1), (string.byte)(l_0_1, 4), (string.byte)(l_0_1, 3), (string.byte)(l_0_1, 2), (string.byte)(l_0_1, 1)))
-end
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.CLEAN
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched then
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == nil or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == "" then
+      return mp.CLEAN
+    end
+    local l_0_5 = nil
+    -- DECOMPILER ERROR at PC45: Overwrote pending register: R1 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
+
+    if nil == nil or nil == "" then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC61: Confused about usage of register: R1 in 'UnsetPending'
+
+    if (sysio.IsFileExists)(nil) then
+      (bm.add_related_file)(nil)
+    end
+    return mp.INFECTED
+  end
 end
 

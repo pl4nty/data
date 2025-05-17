@@ -3,37 +3,42 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil and l_0_6.reason == bm.RELATIONSHIP_INJECTION then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (string.find)(l_0_7, "\\comodo internet security\\cavwp.exe", -35, true) or (string.find)(l_0_7, "\\hummingheads\\securityplatform\\bkhost.exe", -41, true) then
-        return mp.CLEAN
-      end
-    end
+bytes_to_int = function(l_1_0, l_1_1, l_1_2, l_1_3)
+  -- function num : 0_0
+  if not l_1_3 then
+    error("need four bytes to convert to int", 2)
+  end
+  return l_1_0 + l_1_1 * 256 + l_1_2 * 65536 + l_1_3 * 16777216
+end
+
+pointer2int = function(l_2_0, l_2_1)
+  -- function num : 0_1
+  local l_2_2 = (string.byte)(l_2_0, l_2_1)
+  local l_2_3 = (string.byte)(l_2_0, l_2_1 + 1)
+  local l_2_4 = (string.byte)(l_2_0, l_2_1 + 2)
+  local l_2_5 = (string.byte)(l_2_0, l_2_1 + 3)
+  return bytes_to_int(l_2_2, l_2_3, l_2_4, l_2_5)
+end
+
+;
+(mp.readprotection)(false)
+if (hstrlog[1]).matched and peattributes.isdll and peattributes.hasexports then
+  local l_0_0 = (hstrlog[1]).VA
+  local l_0_1 = (pe.mmap_va)(l_0_0 - 12, 5)
+  local l_0_2 = pointer2int(l_0_1, 1)
+  local l_0_3 = (pe.mmap_va)(l_0_2, 65)
+  if (string.match)(l_0_3, "Informe") ~= nil and (string.match)(l_0_3, "para") ~= nil then
+    return mp.CLEAN
+  end
+  l_0_3 = (string.gsub)(l_0_3, "@", "")
+  l_0_3 = (string.gsub)(l_0_3, "!", "")
+  l_0_3 = (string.gsub)(l_0_3, "*", "")
+  l_0_3 = (string.gsub)(l_0_3, "#", "")
+  if (string.match)(l_0_3, "Informe o iToken para ter acesso") ~= nil then
+    return mp.INFECTED
   end
 end
 do
-  if l_0_1 ~= nil then
-    for l_0_11,l_0_12 in ipairs(l_0_1) do
-      if l_0_12.image_path ~= nil and l_0_12.reason == bm.RELATIONSHIP_INJECTION then
-        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
-        if (string.find)(l_0_13, "\\acrord32.exe", -13, true) or (string.find)(l_0_13, "\\adobearm.exe", -13, true) or (string.find)(l_0_13, "\\comodo internet security\\cavwp.exe", -35, true) or (string.find)(l_0_13, "\\acrobat reader dc\\reader\\reader_sl.exe", -39, true) or (string.find)(l_0_13, "\\\\hummingheads\\securityplatform\\bkhost.exe", -41, true) or (string.find)(l_0_13, "\\rdrcef.exe", -11, true) then
-          return mp.CLEAN
-        end
-        ;
-        (bm.request_SMS)(l_0_12.ppid, "l+")
-        ;
-        (bm.add_action)("SmsAsyncScanEvent", 1)
-        ;
-        (bm.trigger_sig)("Arya", "Acrord32")
-        return mp.INFECTED
-      end
-    end
-  end
-  do
-    return mp.CLEAN
-  end
+  return mp.CLEAN
 end
 

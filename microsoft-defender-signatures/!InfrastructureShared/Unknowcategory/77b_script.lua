@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 256 then
+if (string.lower)((string.sub)((mp.getfilename)(), -3)) ~= "url" then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 2019846262 then
+if (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true) ~= 0 or not "Lua:SingleFileInZip" then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 5) ~= 1701603686 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("Lua:VhdxFile")
-return mp.CLEAN
+return mp.INFECTED
 

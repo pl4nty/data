@@ -3,14 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    if l_0_1:find("roaming.exe", 1, true) ~= nil and (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "powershell.exe" then
-      return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)((string.sub)(l_0_0, -20))
+  if l_0_1 ~= "\\umworkerprocess.exe" then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  if (this_sigattrlog[1]).matched then
+    l_0_2 = (this_sigattrlog[1]).utf8p1
+  else
+    if (this_sigattrlog[2]).matched then
+      l_0_2 = (this_sigattrlog[2]).utf8p1
     end
   end
+  if l_0_2 ~= nil and (sysio.IsFileExists)(l_0_2) and (string.sub)(l_0_2, -5) == ".aspx" then
+    (bm.add_threat_file)(l_0_2)
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
 

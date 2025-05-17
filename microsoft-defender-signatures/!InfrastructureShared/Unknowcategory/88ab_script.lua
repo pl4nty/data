@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)) then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 172032 and l_0_0 <= 176128 and pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 6 and (mp.get_mpattribute)("NID:GandCrab.A!Pra1") then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("HSTR:AADInternalWin32Ntv") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

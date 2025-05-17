@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 3 then
-  return mp.LOWFI
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Neoreblamy.BE!MTB") then
+  return mp.INFECTED
 end
-if (pesecs[2]).Name ~= ".scot" then
-  return mp.LOWFI
-end
-return mp.SUSPICIOUS
+return mp.CLEAN
 

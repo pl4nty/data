@@ -3,25 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 64)
+local l_0_1 = (mp.readu_u32)(l_0_0, 6)
+if l_0_1 == 4294967295 then
   return mp.CLEAN
 end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if not l_0_1 then
+local l_0_2 = (mp.readu_u32)(l_0_0, 22)
+if l_0_1 ~= l_0_2 then
   return mp.CLEAN
 end
-local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
-if not l_0_2 then
+local l_0_3 = (mp.readu_u32)(l_0_0, 30)
+if l_0_1 ~= l_0_3 then
   return mp.CLEAN
 end
-do
-  if (string.find)((string.lower)(l_0_2), "\\windows\\temp", 1, true) then
-    local l_0_3 = (mp.GetParentProcInfo)()
-    if l_0_3 and (string.find)((string.lower)(l_0_3.image_path), "python", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_4 = (mp.bitand)((mp.readu_u16)(l_0_0, 28), 255)
+if l_0_4 < 112 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 27, "\127")
+  return mp.LOWFI
 end
+return mp.CLEAN
 

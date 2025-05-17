@@ -3,17 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  if (hstrlog[1]).hitcount >= 3 and (mp.getfilesize)() <= 131072 and (mp.getfilesize)() >= 4096 then
-    local l_0_0 = (mp.readheader)(0, 1024)
-    local l_0_1 = (mp.readfooter)(mp.FOOTERPAGE_SZ - 1024, 1024)
-    if (string.find)(l_0_0, "MAD!", 1, true) ~= nil and (string.find)(l_0_1, "MAD!", 1, true) ~= nil then
-      return mp.INFECTED
-    end
-  end
-  do
-    do return mp.CLEAN end
-    return mp.INFECTED
-  end
+if (mp.getfilesize)() <= 47 then
+  return mp.CLEAN
 end
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 26
+local l_0_2 = 16
+local l_0_3 = ""
+if l_0_0.is_header then
+  l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
+else
+  l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
+end
+local l_0_4, l_0_5, l_0_6 = (string.find)(l_0_3, "(%d+)")
+if l_0_6 ~= nil and tonumber(l_0_6) >= 5 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:SelfDelCMD") then
+if (mp.get_mpattribute)("MHSTR:MacroExecute") then
   return mp.INFECTED
 end
 return mp.CLEAN

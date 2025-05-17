@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_obfuscator_xt_2")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 29, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 49, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-;
-(mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT")
-return mp.SUSPICIOUS
+do
+  if (pesecs[6]).Name == ".EGlobal" and (pesecs[7]).Name == ".EGlobal" and (pesecs[8]).Name == ".EGlobal" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

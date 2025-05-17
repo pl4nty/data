@@ -3,37 +3,15 @@
 
 -- params : ...
 -- function num : 0
-add_related_file_wrapper = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0 ~= nil then
-    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
-    for l_1_5,l_1_6 in ipairs(l_1_1) do
-      l_1_6 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_1_6))
-      if (string.find)(l_1_6, "cmstp.exe$") == nil and (sysio.IsFileExists)(l_1_6) then
-        (bm.add_related_file)(l_1_6)
-      end
-    end
-  end
+if peattributes.is_process or pehdr.NumberOfSections < 2 or (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= 1024 then
+  return mp.CLEAN
 end
+-- DECOMPILER ERROR at PC171: Unhandled construct in 'MakeBoolean' P3
 
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-    local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-    if l_0_7 == 1 and ((string.find)(l_0_8, "vpn", 1, true) or (string.find)(l_0_8, ":\\users\\", 1, true) or (string.find)(l_0_8, "\\msiexe.exe", 1, true) or (string.find)(l_0_8, ":\\program files", 1, true) or (string.find)(l_0_8, ":\\windows\\immersivecontrolpanel\\systemsettings.exe", 1, true)) then
-      return mp.CLEAN
-    end
-  end
+-- DECOMPILER ERROR at PC171: Unhandled construct in 'MakeBoolean' P3
+
+if (((epcode[1] ~= 232 or epcode[6] ~= 233 or epcode[10] ~= 255) and epcode[1] == 85 and epcode[2] == 139 and epcode[3] == 236 and epcode[1] == 139 and epcode[2] == 255 and epcode[3] == 85 and epcode[4] == 139 and epcode[5] ~= 236) or (pesecs[1]).Name ~= ".text" or ((pesecs[pehdr.NumberOfSections]).Name ~= ".reloc" and (pesecs[pehdr.NumberOfSections]).Name ~= ".rsrc" and (pesecs[pehdr.NumberOfSections]).Name ~= ".data") or not (mp.get_mpattribute)("pea_no_relocs") or not (mp.get_mpattribute)("pea_lastscn_executable") or not (mp.get_mpattribute)("pea_lastscn_writable") or not (mp.get_mpattribute)("pea_no_security") or not (mp.get_mpattribute)("pea_epinfirstsect") or not (mp.get_mpattribute)("pea_isexe") or not (mp.get_mpattribute)("pea_lastscn_vfalign") or (pesecs[pehdr.NumberOfSections]).SizeOfRawData + 8192 > (pesecs[pehdr.NumberOfSections]).VirtualSize or (pesecs[pehdr.NumberOfSections]).VirtualSize % 4096 ~= 0 or (pesecs[pehdr.NumberOfSections]).SizeOfRawData % pehdr.FileAlignment == 0) then
+  return mp.INFECTED
 end
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[1]).utf8p2)
-end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[3]).utf8p1)
-end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[3]).utf8p2)
-end
-return mp.INFECTED
+return mp.CLEAN
 

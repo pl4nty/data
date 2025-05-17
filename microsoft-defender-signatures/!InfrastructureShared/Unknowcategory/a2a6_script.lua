@@ -3,18 +3,25 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R1 in 'AssignReg'
 
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
+local l_0_1 = nil
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC28: Overwrote pending register: R2 in 'AssignReg'
 
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
-if (peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096448) or (pesecs[pehdr.NumberOfSections]).Characteristics == 3791650816 then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_2, l_0_3 = nil
+  end
+  if not (this_sigattrlog[3]).matched or l_0_0 == nil then
+    return mp.CLEAN
+  end
+  if l_0_0 == "" then
+    return mp.CLEAN
+  end
+  if l_0_0 == l_0_1 and l_0_0 == (string.match)((this_sigattrlog[3]).utf8p1, "\\(%l+)%.exe") then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

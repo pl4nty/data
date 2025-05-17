@@ -3,21 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 20480 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readheader)(0, 16)
-local l_0_2 = (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true)
-if l_0_2 then
-  (mp.set_mpattribute)("BM_SerializedObj.A")
-  local l_0_3 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-  if (string.find)(l_0_3, "\\local\\microsoft\\event viewer\\", 1, true) then
-    (mp.set_mpattribute)("Lua:FileInsideEventviewFolder")
-  end
+-- DECOMPILER ERROR at PC77: Unhandled construct in 'MakeBoolean' P3
+
+if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched) and not (hstrlog[9]).matched) or not (hstrlog[10]).matched) and not (hstrlog[12]).matched) or 0 + 2 + 1 + 1 >= 2 then
   return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

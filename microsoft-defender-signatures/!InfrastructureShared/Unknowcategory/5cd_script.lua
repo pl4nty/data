@@ -3,43 +3,43 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[4]).utf8p1
-if not l_0_0 then
-  return mp.CLEAN
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if not l_0_1 or l_0_1.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-  return mp.CLEAN
-end
-l_0_0 = l_0_0:lower()
-if (this_sigattrlog[1]).matched and (l_0_0:find("__psscriptpolicytest_[^\\]*%.ps1") or l_0_0:find("[^%.]+%.[^%.]+%.ps1$")) then
-  return mp.CLEAN
-end
-if l_0_0:find("\\amazon\\elasticbeanstalk\\", 1, true) then
-  return mp.CLEAN
-end
-if not (mp.IsKnownFriendlyFile)(l_0_0, false, false) then
-  local l_0_2 = (string.match)(l_0_0, "(%.[^%.]+)$")
-  if not l_0_2 then
-    return mp.INFECTED
-  end
-  local l_0_3 = {}
-  l_0_3[".dat"] = true
-  l_0_3[".pif"] = true
-  l_0_3[".js"] = true
-  l_0_3[".jse"] = true
-  l_0_3[".ps1"] = true
-  l_0_3[".vbs"] = true
-  l_0_3[".vbe"] = true
-  l_0_3[".hta"] = true
-  l_0_3[".wsf"] = true
-  l_0_3[".cmd"] = true
-  l_0_3[".bat"] = true
-  if l_0_3[l_0_2] then
-    return mp.INFECTED
-  end
-end
+-- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.CLEAN
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched then
+    do return mp.CLEAN end
+    local l_0_3 = nil
+    if not (this_sigattrlog[2]).utf8p2 then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC27: Confused about usage of register: R1 in 'UnsetPending'
+
+    local l_0_4 = nil
+    if not (string.match)((string.lower)((this_sigattrlog[2]).utf8p2), "[/-]e:([%a]+)") then
+      return mp.CLEAN
+    end
+    local l_0_5 = nil
+    local l_0_6 = nil
+    if not ({jscript = ".js", javascript = ".js", vbscript = ".vbs", vbs = ".vbs"})[l_0_5] then
+      return mp.CLEAN
+    end
+    local l_0_7 = nil
+    for l_0_11,l_0_12 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
+      local l_0_8 = nil
+      -- DECOMPILER ERROR at PC61: Confused about usage of register: R10 in 'UnsetPending'
+
+      if (string.match)(R10_PC61, "(%.[^%.]+)$") ~= l_0_7 then
+        local l_0_14 = nil
+        if (string.lower)((string.match)(l_0_13, "([^\\]+)$")) ~= "wscript.exe" and (string.lower)((string.match)(l_0_13, "([^\\]+)$")) ~= "cscript.exe" and not (((string.lower)((string.match)(l_0_13, "([^\\]+)$"))).find)("capainstaller", 1, true) and (sysio.IsFileExists)(l_0_13) and not (mp.IsKnownFriendlyFile)(l_0_13, false, false) then
+          (mp.ReportLowfi)(l_0_13, 4091252919)
+        end
+      end
+    end
+    return mp.CLEAN
+  end
 end
 

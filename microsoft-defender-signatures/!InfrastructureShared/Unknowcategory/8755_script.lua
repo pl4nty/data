@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0 ~= nil and (string.find)(l_0_0, "\\system", 1, true) == nil and (string.find)(l_0_0, "program files", 1, true) == nil then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[4]).utf8p1)
+    if (string.match)(l_0_0, "%.bin$") then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

@@ -3,30 +3,26 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+local l_0_0 = "(.+\\)"
+local l_0_1 = ((string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0))
+local l_0_2 = nil
+if (this_sigattrlog[2]).matched then
+  l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
+else
+  if (this_sigattrlog[3]).matched then
+    l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
   else
-  end
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[1]).utf8p2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC40: Overwrote pending register: R7 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC43: Confused about usage of register: R7 in 'UnsetPending'
-
-      if (l_0_10:len() <= 12 or nil ~= "rundll32.exe") and nil ~= "regsvr32.exe" and (sysio.IsFileExists)(l_0_10) then
-        (bm.add_related_file)(l_0_10)
+    if (this_sigattrlog[4]).matched then
+      l_0_2 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
+    else
+      if (this_sigattrlog[5]).matched then
+        l_0_2 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
       end
     end
   end
-  do
-    return mp.INFECTED
-  end
 end
+if l_0_1 ~= nil and l_0_1 == l_0_2 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

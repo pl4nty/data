@@ -3,26 +3,53 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = nil
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
   else
   end
-  -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC48: Confused about usage of register: R0 in 'UnsetPending'
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1 = (this_sigattrlog[3]).ppid
+    else
+    end
+    -- DECOMPILER ERROR at PC43: Overwrote pending register: R0 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC57: Confused about usage of register: R0 in 'UnsetPending'
+    do
+      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
+        local l_0_2, l_0_3 = (this_sigattrlog[5]).ppid, nil
+      end
+      do
+        if (this_sigattrlog[7]).matched then
+          local l_0_4 = nil
+        end
+        -- DECOMPILER ERROR at PC52: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC66: Confused about usage of register: R0 in 'UnsetPending'
+        if l_0_4 == nil or (this_sigattrlog[7]).utf8p1 == nil then
+          return mp.CLEAN
+        end
+        -- DECOMPILER ERROR at PC61: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC75: Confused about usage of register: R0 in 'UnsetPending'
+        local l_0_5 = nil
+        if (bm.get_process_notifications)(l_0_4) ~= nil then
+          for l_0_9,l_0_10 in ipairs((bm.get_process_notifications)(l_0_4)) do
+            local l_0_6, l_0_7 = nil
+            -- DECOMPILER ERROR at PC69: Confused about usage of register: R7 in 'UnsetPending'
 
-  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or (string.lower)((this_sigattrlog[2]).utf8p2)) and (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "linenum", 1, true) and ((string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "githubusercontent", 1, true) or (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "pastebin", 1, true) or (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "bit.ly", 1, true) or (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "goo.gl", 1, true)) then
-    return mp.INFECTED
+            if R7_PC69.tag == 4 and R7_PC69.rawutf8p1 == l_0_6 then
+              return mp.INFECTED
+            end
+          end
+        end
+        do
+          return mp.CLEAN
+        end
+      end
+    end
   end
-  return mp.CLEAN
 end
 

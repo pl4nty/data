@@ -3,23 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if (string.find)(l_0_0, "/u ", 1, true) and (string.find)(l_0_0, "/i:", 1, true) then
-    local l_0_1 = nil
-    if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-      l_0_1 = (this_sigattrlog[1]).utf8p2
-    end
-    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-    for l_0_6,l_0_7 in ipairs(l_0_2) do
-      l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-      ;
-      (bm.add_threat_file)(l_0_7)
-    end
-    return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  if (string.find)((string.lower)(l_0_6.image_path), "\\filename.bat", 1, true) then
+    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
+    local l_0_9 = tonumber(l_0_7)
+    local l_0_10 = tonumber(l_0_8)
+    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
+    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
+    ;
+    (mp.TriggerScanResource)("ems", l_0_13)
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.INFECTED
 

@@ -3,46 +3,11 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9 = (string.lower)((this_sigattrlog[3]).utf8p1)
-    else
-    end
-    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC62: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC71: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC80: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC87: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC93: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (not (this_sigattrlog[5]).matched or (string.lower)((this_sigattrlog[5]).utf8p1) ~= nil) and ((string.find)((string.lower)((this_sigattrlog[5]).utf8p1), "\\microsoft\\exchange server\\v%d%d\\frontend\\") ~= nil or (string.find)((string.lower)((this_sigattrlog[5]).utf8p1), "\\frontend\\httpproxy\\owa\\", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[5]).utf8p1), "\\inetpub\\wwwroot\\", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[5]).utf8p1), "\\microsoft\\exchange server\\v%d%d\\clientaccess\\") ~= nil) then
-      do
-        if (sysio.IsFileExists)((string.lower)((this_sigattrlog[5]).utf8p1)) then
-          local l_0_10 = nil
-          if (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), "(.*\\)[^\\]+$") then
-            (bm.trigger_sig)("TriggerShellPath", (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), "(.*\\)[^\\]+$"))
-          end
-          ;
-          (bm.add_related_file)(l_0_10)
-        end
-        do return mp.INFECTED end
-        return mp.CLEAN
-      end
-    end
-  end
+if peattributes.isexe and peattributes.x86_image and peattributes.epscn_writable and peattributes.suspicious_image_version and peattributes.epsec_not_executable and peattributes.no_imports_dir and peattributes.no_iat and pehdr.NumberOfSections <= 2 and (pesecs[pevars.epsec]).Characteristics == 3221487648 then
+  (mp.set_mpattribute)("LoD:Virus:Win32/Nabucur.B")
 end
+if peattributes.isexe and peattributes.x86_image and peattributes.epatstartentrysect and peattributes.epinfirstsect and peattributes.suspicious_image_version and pehdr.NumberOfSections <= 4 and not peattributes.hasstandardentry and (pesecs[pevars.epsec]).PointerToRawData == 1536 and (pesecs[pevars.epsec]).Characteristics == 1610612768 then
+  (mp.set_mpattribute)("LoD:Virus:Win32/Nabucur.C")
+end
+return mp.CLEAN
 

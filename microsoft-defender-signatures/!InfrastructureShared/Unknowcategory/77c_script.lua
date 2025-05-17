@@ -3,13 +3,16 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("SCRIPT:PowerShell/Ploty.C!head") then
-    local l_0_0 = (string.lower)((mp.getfilename)())
-    if (string.find)(l_0_0, "%->%[powershellb64%]%->%(base64%)") then
-      return mp.INFECTED
-    end
-  end
+if mp.HEADERPAGE_SZ < 256 then
   return mp.CLEAN
 end
+if (mp.readu_u32)(headerpage, 1) ~= 2019846262 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, 5) ~= 1701603686 then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("Lua:VhdxFile")
+return mp.CLEAN
 

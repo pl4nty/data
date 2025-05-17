@@ -3,49 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.no_resources then
-  if mp.HSTR_WEIGHT > 6 then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
     local l_0_0 = nil
-    ;
-    (mp.readprotection)(false)
-    local l_0_1 = 4294967295
-    if (hstrlog[4]).matched then
-      l_0_1 = (pe.foffset_va)((hstrlog[4]).VA + 14)
-    else
-      if (hstrlog[5]).matched then
-        l_0_1 = (pe.foffset_va)((hstrlog[5]).VA + 15)
-      else
-        if (hstrlog[6]).matched then
-          l_0_1 = (pe.foffset_va)((hstrlog[6]).VA + 14)
-        else
-          if (hstrlog[7]).matched then
-            l_0_1 = (pe.foffset_va)((hstrlog[7]).VA + 15)
-          end
-        end
-      end
-    end
-    if l_0_1 ~= 4294967295 then
-      l_0_0 = (mp.readfile)(l_0_1, 4)
-    end
-    if l_0_0 ~= nil then
-      local l_0_2 = (mp.readu_u32)(l_0_0, 1)
-      l_0_1 = (pe.foffset_va)(l_0_2)
-      if l_0_1 ~= 4294967295 then
-        local l_0_3 = (mp.readfile)(l_0_1, 4)
-        local l_0_4 = (mp.readu_u32)(l_0_3, 1)
-        local l_0_5 = (pe.foffset_va)(l_0_4)
-        if l_0_5 ~= 4294967295 then
-          local l_0_6 = (string.format)("HSTR:Gamarue_RC4_password_at_%08X", l_0_4)
-          ;
-          (mp.set_mpattribute)(l_0_6)
-        end
+  end
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  if (mp.ContextualExpandEnvironmentVariables)("%temp%") == nil or (mp.ContextualExpandEnvironmentVariables)("%temp%") == "" then
+    return mp.CLEAN
+  end
+  if (string.find)((string.lower)(l_0_2), (string.lower)((mp.ContextualExpandEnvironmentVariables)("%temp%"))) == nil then
+    return mp.CLEAN
+  end
+  if l_0_1 ~= nil then
+    local l_0_3 = nil
+    for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+      local l_0_4 = nil
+      -- DECOMPILER ERROR at PC81: Confused about usage of register: R8 in 'UnsetPending'
+
+      R8_PC81 = (mp.ContextualExpandEnvironmentVariables)(R8_PC81)
+      if (sysio.IsFileExists)(R8_PC81) and (R8_PC81:len() < 9 or (string.lower)((string.sub)(R8_PC81, -9)) ~= "mshta.exe") and (sysio.IsFileExists)(R8_PC81) then
+        (bm.add_related_file)(R8_PC81)
       end
     end
   end
   do
-    ;
-    (mp.set_mpattribute)("HSTR:Gamarue_RC4DecryptionLowfi")
-    return mp.CLEAN
+    return mp.INFECTED
   end
 end
 

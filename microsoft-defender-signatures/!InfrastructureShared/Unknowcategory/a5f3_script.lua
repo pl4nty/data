@@ -3,22 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 3
-if l_0_0 * 10000000 < (bm.GetSignatureMatchDuration)() then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\atbroker.exe$") then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((bm.get_imagepath)())
-if l_0_1 == nil or (string.len)(l_0_1) < 1 then
+local l_0_1 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+local l_0_2 = (sysio.GetProcessFromFileName)(l_0_1)
+if l_0_2 == nil or #l_0_2 >= 1 then
   return mp.CLEAN
 end
-if (string.find)((string.lower)(l_0_1), "\\program files", 1, true) or (string.find)((string.lower)(l_0_1), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_1), "\\mpcmdrun.exe", 1, true) then
-  return mp.CLEAN
-end
-local l_0_2, l_0_3 = (bm.get_process_relationships)()
-for l_0_7,l_0_8 in ipairs(l_0_2) do
-  if l_0_8.image_path ~= nil and (mp.bitand)(l_0_8.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_8.image_path), "\\powershell.exe", 1, true) then
-    return mp.INFECTED
+local l_0_3 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\atbroker.exe")
+do
+  if l_0_3 ~= nil then
+    local l_0_4 = (sysio.GetRegValueAsString)(l_0_3, "Debugger")
+    if l_0_4 ~= nil and (string.len)(l_0_4) >= 1 then
+      if (sysio.IsFileExists)(l_0_4) then
+        (mp.ReportLowfi)(l_0_4, 150658937)
+      end
+      return mp.INFECTED
+    end
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

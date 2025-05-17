@@ -6,9 +6,14 @@
 local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 ~= nil then
   local l_0_1 = (string.lower)(l_0_0.image_path)
-  if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) then
-    local l_0_2 = l_0_1:match("([^\\]+)$")
-    if l_0_2 == "fodhelper.exe" or l_0_2 == "computerdefaults.exe" or l_0_2 == "wsreset.exe" or l_0_2 == "changepk.exe" or l_0_2 == "control.exe" then
+  if l_0_1:match("([^\\]+)$") == "sdclt.exe" then
+    local l_0_2 = (mp.GetScannedPPID)()
+    if l_0_2 then
+      local l_0_3 = {}
+      ;
+      (table.insert)(l_0_3, l_0_2)
+      ;
+      (MpCommon.SetPersistContextNoPath)("UACBypassExp.A!sdclt", l_0_3, 5)
       return mp.INFECTED
     end
   end

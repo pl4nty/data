@@ -3,25 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.IsHipsRuleEnabled)("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550") then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if l_0_1 == "cleaner.exe" then
+    local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+    if (string.lower)(l_0_2:sub(-25, -9)) == "\\appdata\\roaming\\" or (string.lower)(l_0_2:sub(-26, -9)) == "\\application data\\" then
+      (mp.set_mpattribute)("Lua:DorkbotDropper.A")
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  return mp.CLEAN
-end
-local l_0_0 = {}
-l_0_0["iexplore.exe"] = true
-l_0_0["firefox.exe"] = true
-l_0_0["chrome.exe"] = true
-l_0_0["opera.exe"] = true
-l_0_0["microsoftedge.exe"] = true
-l_0_0["browser_broker.exe"] = true
-l_0_0["antimalware.tools.testhips.exe"] = true
-local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-if l_0_0[l_0_1] == nil then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("MpDisableCaching")
-return mp.CLEAN
 

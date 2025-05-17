@@ -3,9 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 19, 4), 1)
-if (pe.vm_search)(l_0_0, l_0_0 + 60, "C\000:\000\\\000S\000y\000s\000t\000e\000m\000 \000V\000o\000l\000u\000m\000e\000 \000I\000n\000f\000o\000r\000m\000a\000t\000i\000o\000n\000\\\000\000\000\144\000", nil, pe.VM_SEARCH_BM) == l_0_0 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 32, "\184\003\000\000\000\144")
+do
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 2183168 and (mp.getfilesize)() < 2207744 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

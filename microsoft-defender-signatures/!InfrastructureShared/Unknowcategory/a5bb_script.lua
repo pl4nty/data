@@ -3,44 +3,40 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
-
-  if (((hstrlog[1]).matched or (hstrlog[2]).matched) and (hstrlog[3]).matched) or (hstrlog[19]).matched then
-    local l_0_0 = 0 + 1 + 1
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
   end
-  -- DECOMPILER ERROR at PC98: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
 
-  if l_0_0 == 2 then
-    (pe.reemulate)()
+  local l_0_1 = (string.lower)(l_0_0)
+  if (string.len)(l_0_1) < 100 then
+    return mp.CLEAN
+  end
+  if (string.find)(l_0_1, "%.ps1") then
+    return mp.CLEAN
+  end
+  if not (string.find)(l_0_1, "{%d%d?}{%d%d?}") then
+    return mp.CLEAN
+  end
+  l_0_1 = (string.gsub)(l_0_1, " ", "")
+  local l_0_2 = 0
+  for l_0_6 in (string.gmatch)(l_0_1, "[\"\']%-f[\"\']") do
+    l_0_2 = l_0_2 + 1
+  end
+  if l_0_2 < 2 then
+    return mp.CLEAN
+  end
+  local l_0_7 = 0
+  for l_0_11 in (string.gmatch)(l_0_1, "{%d%d?}{%d%d?}") do
+    l_0_7 = l_0_7 + 1
+  end
+  if l_0_7 < 2 then
+    return mp.CLEAN
+  end
+  if (l_0_2 > 3 and l_0_7 > 3) or l_0_2 >= 2 and l_0_7 >= 2 and (string.find)(l_0_1, "`", 1, true) then
     return mp.INFECTED
   end
   return mp.CLEAN

@@ -3,19 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-do
-  if l_0_0 and (MpCommon.GetPersistContextCountNoPath)("OfficeWmiProc") > 0 then
-    local l_0_1 = (MpCommon.GetPersistContextNoPath)("OfficeWmiProc")
-    if (string.find)(l_0_0, "wmiprvse.exe", 1, true) then
-      for l_0_5,l_0_6 in ipairs(l_0_1) do
-        if (sysio.IsFileExists)(l_0_6) then
-          (bm.add_related_file)(l_0_6)
-        end
-      end
-      return mp.INFECTED
-    end
-  end
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
+if peattributes.lastscn_writable ~= true then
+  return mp.CLEAN
+end
+if peattributes.lastscn_eqsizes ~= true then
+  return mp.CLEAN
+end
+if peattributes.epscn_valign == true then
+  return mp.CLEAN
+end
+if peattributes.no_relocs ~= true then
+  return mp.CLEAN
+end
+if peattributes.epatstartentrysect ~= true then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode ~= 0 then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

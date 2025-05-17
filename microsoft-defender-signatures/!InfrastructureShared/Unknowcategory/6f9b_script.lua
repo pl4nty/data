@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((bm.get_imagepath)(), -10)) == "\\mshta.exe" then
+local l_0_0 = (mp.getfilesize)()
+if (mp.get_mpattribute)("HSTR:GolangBinary") and l_0_0 > 5242880 and l_0_0 < 15728640 then
   return mp.INFECTED
 end
 return mp.CLEAN

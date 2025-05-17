@@ -3,50 +3,46 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSIsRemoteSession)
-if l_0_1 then
-  local l_0_2 = (mp.ContextualExpandEnvironmentVariables)("%localappdata%")
-  local l_0_3 = (sysio.GetFsOwnerSidString)(l_0_2)
-  local l_0_4 = 1
-  local l_0_5 = (sysio.RegExpandUserKey)("HKCU\\Software")
-  if l_0_5 then
-    for l_0_9,l_0_10 in pairs(l_0_5) do
-      if #l_0_10 > 23 and not (string.find)(l_0_10, "-5..\\", -13) and not (string.find)(l_0_10, l_0_3, 6, true) then
-        l_0_4 = l_0_4 + 1
-        break
-      end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 4000000 or l_0_0 < 4000 then
+  return mp.CLEAN
+end
+if pehdr.Machine ~= 332 then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("pea_ismsil") then
+  return mp.CLEAN
+end
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("system32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("syswow64", 1, true) then
+  return mp.CLEAN
+end
+if (hstrlog[4]).matched and (hstrlog[4]).VA > 38 then
+  local l_0_2 = (pe.mmap_va)((hstrlog[4]).VA - 38, 38)
+  if l_0_2 == nil then
+    return mp.CLEAN
+  end
+  for l_0_6 = 1, #l_0_2 - 1 do
+    local l_0_7 = (string.byte)(l_0_2, l_0_6)
+    local l_0_8 = (string.byte)(l_0_2, l_0_6 + 1)
+    if l_0_7 == 106 and (l_0_8 >= 233 or l_0_8 <= 255) then
+      return mp.INFECTED
     end
   end
-  do
-    if l_0_4 > 1 then
-      local l_0_11 = "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
-      local l_0_12 = (sysio.RegOpenKey)(l_0_11)
-      if l_0_12 then
-        do
-          if not (sysio.GetRegValueAsDword)(l_0_12, "InstallDate") then
-            local l_0_13, l_0_14, l_0_15, l_0_16 = (sysio.GetRegValueAsDword)(l_0_12, "InstallTime")
-            if l_0_13 then
-              l_0_14 = l_0_13 / 10000000
-              l_0_13 = l_0_14 - 11644473600
-            end
-          end
-          -- DECOMPILER ERROR at PC80: Confused about usage of register: R8 in 'UnsetPending'
-
-          if l_0_13 then
-            local l_0_17 = nil
-            if (MpCommon.GetCurrentTimeT)() < l_0_17 or (MpCommon.GetCurrentTimeT)() - l_0_17 > 86400 then
-              local l_0_18 = nil
-              ;
-              (MpCommon.AppendPersistContextNoPath)("MpNewRemoteUsers", (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSUserName), 43200)
-            end
-          end
-          do
-            return mp.CLEAN
-          end
-        end
-      end
-    end
-  end
+end
+do
+  return mp.CLEAN
 end
 

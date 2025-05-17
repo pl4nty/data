@@ -3,19 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  local l_0_3 = (mp.getfilesize)()
-  if l_0_3 > 1000000 then
-    return mp.CLEAN
-  end
-  if l_0_2 == "exe[1].exe" and (string.sub)(l_0_1, -45, -22) == "temporary internet files" then
-    (mp.set_mpattribute)("LUA:SuspiciousDownloadFileName")
-  end
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block Office applications from creating executable content"
+  l_1_0.Description = "Windows Defender Exploit Guard detected the Office application creating executable content."
+  l_1_0.NotificationDedupingInterval = 120
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
+  return l_1_0
 end
-do
-  return mp.CLEAN
+
+GetCommandLineRegExp = function()
+  -- function num : 0_1
+  return "((windowsapps\\\\[^\\\\]+\\\\)|(microsoft office\\\\(root\\\\)?))office..\\\\[^\\.]+\\.exe\\\"?[^\\\"]+\\\"([^\\\"]+)\\\"?"
 end
+
 

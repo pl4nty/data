@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Subsystem ~= 1 then
+if (versioning.IsSeville)() then
   return mp.INFECTED
 end
 return mp.CLEAN

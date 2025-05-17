@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattributesubstring)("TEL:Ransom:HTML/") or (mp.get_mpattributesubstring)("TEL:Ransom:TXT/") then
+if #(mp.enum_mpattributesubstring)("SCPT:PSEmpireOneDrive") >= 2 then
   return mp.INFECTED
 end
 return mp.CLEAN

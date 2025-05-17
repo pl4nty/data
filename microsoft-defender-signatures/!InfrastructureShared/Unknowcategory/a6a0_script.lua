@@ -3,79 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = nil
-  if (this_sigattrlog[2]).matched then
-    l_0_0 = (this_sigattrlog[2]).utf8p2
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_0 = (this_sigattrlog[3]).utf8p2
-    else
-      if (this_sigattrlog[4]).matched then
-        l_0_0 = (this_sigattrlog[4]).utf8p2
-      else
-        if (this_sigattrlog[5]).matched then
-          l_0_0 = (this_sigattrlog[5]).utf8p2
-        else
-          if (this_sigattrlog[6]).matched then
-            l_0_0 = (this_sigattrlog[6]).utf8p2
-          else
-            if (this_sigattrlog[7]).matched then
-              l_0_0 = (this_sigattrlog[7]).utf8p2
-            else
-              if (this_sigattrlog[8]).matched then
-                l_0_0 = (this_sigattrlog[8]).utf8p2
-              else
-                if (this_sigattrlog[9]).matched then
-                  l_0_0 = (this_sigattrlog[9]).utf8p2
-                else
-                  if (this_sigattrlog[10]).matched then
-                    l_0_0 = (this_sigattrlog[10]).utf8p2
-                  else
-                    if (this_sigattrlog[11]).matched then
-                      l_0_0 = (this_sigattrlog[11]).utf8p2
-                    else
-                      if (this_sigattrlog[12]).matched then
-                        l_0_0 = (this_sigattrlog[12]).utf8p2
-                      else
-                        if (this_sigattrlog[13]).matched then
-                          l_0_0 = (this_sigattrlog[13]).utf8p2
-                        else
-                          if (this_sigattrlog[14]).matched then
-                            l_0_0 = (this_sigattrlog[14]).utf8p2
-                          else
-                            if (this_sigattrlog[15]).matched then
-                              l_0_0 = (this_sigattrlog[15]).utf8p2
-                            else
-                              if (this_sigattrlog[16]).matched then
-                                l_0_0 = (this_sigattrlog[16]).utf8p2
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
+do
+  if ((((((((((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and not (hstrlog[9]).matched) or (hstrlog[10]).matched) and not (hstrlog[11]).matched) or (hstrlog[12]).matched then
+    local l_0_0, l_0_1, l_0_2 = 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount + (hstrlog[3]).hitcount + (hstrlog[4]).hitcount + 1 + (hstrlog[6]).hitcount + (hstrlog[7]).hitcount + (hstrlog[8]).hitcount + (hstrlog[9]).hitcount + (hstrlog[10]).hitcount + (hstrlog[11]).hitcount + (hstrlog[12]).hitcount
+  end
+  -- DECOMPILER ERROR at PC106: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC112: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 >= 6 or mp.HSTR_WEIGHT >= 4 and l_0_0 > 4 then
+    if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+      (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
     end
-  end
-  if not l_0_0 then
-    return mp.CLEAN
-  end
-  local l_0_1 = (this_sigattrlog[1]).utf8p2
-  if not l_0_1 then
-    return mp.CLEAN
-  end
-  if l_0_1 == l_0_0 then
+    ;
+    (mp.set_mpattribute)("MpRequestSMSM")
     return mp.INFECTED
   end
-end
-do
   return mp.CLEAN
 end
 

@@ -3,21 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
+local l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p1)
 if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 ~= nil and (MpCommon.StringRegExpSearch)("[u0010-u00ff][u0100-uffff][u0010-u00ff]", l_0_1) == true then
-  local l_0_2 = (mp.GetParentProcInfo)()
-  if l_0_2 ~= nil then
-    local l_0_3 = (string.lower)(l_0_2.image_path)
-    if l_0_3 ~= nil and (string.find)(l_0_3, "explorer.exe", 1, true) then
-      return mp.INFECTED
-    end
-  end
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
 end
-do
-  return mp.CLEAN
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
 end
+return mp.INFECTED
 

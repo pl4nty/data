@@ -3,10 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - (mp.bitand)(0 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1)), 255), 4), 1)
-if (pe.get_api_id)(l_0_0) == 3164325074 then
-  (pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "Ðt", 1, true), "\235")
-  return mp.INFECTED
+if not peattributes.isdll or not peattributes.hasexports then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not (mp.get_mpattribute)("Excel_LLXLoader") then
+  (mp.set_mpattribute)("Excel_LLXLoader")
+end
+if not (mp.get_mpattribute)("MpPeekIntoResources") then
+  (mp.set_mpattribute)("MpPeekIntoResources")
+end
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+end
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+return mp.INFECTED
 

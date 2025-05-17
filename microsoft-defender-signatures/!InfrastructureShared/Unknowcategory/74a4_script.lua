@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 9728 and l_0_0 <= 13312 and (hstrlog[1]).matched and (hstrlog[2]).matched then
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 ~= nil and l_0_0.CompanyName == "Alpha programming team" and l_0_0.ProductName == "Dragon" then
+if pehdr.SizeOfImage == 151552 then
+  (mp.changedetectionname)(805306388)
   return mp.INFECTED
 end
-return mp.CLEAN
+if pehdr.SizeOfImage == 86016 then
+  (mp.changedetectionname)(805306389)
+  return mp.INFECTED
+end
+return mp.SUSPICIOUS
 

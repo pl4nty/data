@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:len() < 24 or (string.sub)(l_0_0, -6) ~= "v2.exe" then
-  return mp.CLEAN
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block use of copied or impersonated system tools"
+  l_1_0.Description = "Windows Defender Exploit Guard detected use of copied or impersonated system tool"
+  l_1_0.NotificationDedupingInterval = 120
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
+  l_1_0.Type = HIPS.RULE_DISABLE_AUDIT_INHERITANCE
+  return l_1_0
 end
-local l_0_1 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_1:match("\\users\\[^\\]+\\documents\\$") or l_0_1:match("\\users\\[^\\]+\\my documents\\$") or l_0_1:match("\\documents and settings\\[^\\]+\\my documents\\$") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+
 

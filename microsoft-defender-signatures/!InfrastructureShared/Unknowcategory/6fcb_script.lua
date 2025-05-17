@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.amd64_image then
-  return mp.CLEAN
+if peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Zilla.AMMG!MTB") then
+  return mp.INFECTED
 end
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

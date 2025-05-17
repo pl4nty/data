@@ -3,7 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount > 10 or (hstrlog[2]).hitcount > 10 or (hstrlog[3]).hitcount > 10 or (hstrlog[4]).hitcount > 10 or (hstrlog[5]).hitcount > 10 or (hstrlog[6]).hitcount > 10 then
+local l_0_0 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
+local l_0_1 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 5, 1))
+if l_0_0 + l_0_1 == 87 or l_0_1 - l_0_0 == 87 then
   return mp.INFECTED
 end
 return mp.CLEAN

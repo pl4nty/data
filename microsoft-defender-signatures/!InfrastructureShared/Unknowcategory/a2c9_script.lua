@@ -3,16 +3,23 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC7: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC8: Overwrote pending register: R1 in 'AssignReg'
+
 do
-  if (peattributes.isexe ~= true or ((pesecs[1]).Name ~= "UPX0" and (pesecs[1]).Name ~= ".text") or ((pesecs[2]).Name ~= "UPX1" and (pesecs[2]).Name ~= ".bss") or (mp.get_mpattribute)("pea_no_security")) then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  local l_0_1 = "AGGR:ContextFileInclusion.A"
+  -- DECOMPILER ERROR at PC9: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC10: Overwrote pending register: R3 in 'AssignReg'
+
+  for l_0_5,l_0_6 in ("Lua:Win32/ExeFileWithExport.A")("SIGATTR:MatchRegOpenKey") do
+    if (mp.get_mpattributevalue)(l_0_6) ~= nil and l_0_1 >= 6 then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

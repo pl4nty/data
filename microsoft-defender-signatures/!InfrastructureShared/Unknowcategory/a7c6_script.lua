@@ -3,119 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  local l_0_7 = (string.lower)(l_0_6.image_path)
+  if (string.find)(l_0_7, "perfmon.exe", 1, true) or (string.find)(l_0_7, "mmc.exe", 1, true) or (string.find)(l_0_7, "werfault.exe", 1, true) or (string.find)(l_0_7, "wermgr.exe", 1, true) or (string.find)(l_0_7, "control.exe", 1, true) or (string.find)(l_0_7, "openwith.exe", 1, true) or (string.find)(l_0_7, "iexplore.exe", 1, true) or (string.find)(l_0_7, "msedge.exe", 1, true) or (string.find)(l_0_7, "\\chrome", 1, true) or (string.find)(l_0_7, "\\opera", 1, true) or (string.find)(l_0_7, "browser", 1, true) or (string.find)(l_0_7, "\\program files", 1, true) or (string.find)(l_0_7, "\\tencent", 1, true) or (string.find)(l_0_7, "\\sogou", 1, true) or (string.find)(l_0_7, "\\qq", 1, true) or (string.find)(l_0_7, "\\yandex", 1, true) or (string.find)(l_0_7, "\\360se", 1, true) or (string.find)(l_0_7, "launchwinapp.exe", 1, true) or (string.find)(l_0_7, "sgtool.exe", 1, true) or (string.find)(l_0_7, "\\vivaldi", 1, true) or (string.find)(l_0_7, "\\onedrive", 1, true) or (string.find)(l_0_7, "firefox.exe", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_6.ppid)
+  local l_0_9 = (mp.bitand)(l_0_6.reason_ex, bm.RELATIONSHIP_CREATED)
+  if l_0_9 == bm.RELATIONSHIP_CREATED and l_0_8.IntegrityLevel == MpCommon.SECURITY_MANDATORY_HIGH_RID then
+    (bm.add_related_process)(l_0_6.ppid)
+    return mp.INFECTED
+  end
 end
-if peattributes.packed == true then
-  return mp.CLEAN
-end
-if peattributes.packersigmatched == true then
-  return mp.CLEAN
-end
-if peattributes.hasexports == true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.is_delphi == true then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if pehdr.CheckSum ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.DllCharacteristics ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.FileAlignment ~= 512 then
-  return mp.CLEAN
-end
-if pehdr.ImageBase ~= 4194304 then
-  return mp.CLEAN
-end
-if pehdr.MajorLinkerVersion ~= 7 then
-  return mp.CLEAN
-end
-if pehdr.MinorLinkerVersion ~= 10 then
-  return mp.CLEAN
-end
-if pehdr.MajorOperatingSystemVersion ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.MinorOperatingSystemVersion ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.MajorSubsystemVersion ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.MinorSubsystemVersion ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections <= 2 then
-  return mp.CLEAN
-end
-if pehdr.SectionAlignment ~= 4096 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode ~= 2048 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfHeaders ~= 1024 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfInitializedData <= 0 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfInitializedData >= 65535 then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size >= 336 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size >= 512 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[13]).Size ~= 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,16 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  ;
-  (bm.trigger_sig)("PowershellMasqueraded", l_0_0)
-  local l_0_1, l_0_2 = l_0_0:match("^(.+\\)([^\\]+)$")
-  if l_0_1 and l_0_2 and ((string.find)(l_0_1, "c:\\users\\", 1, true) or (string.find)(l_0_1, "\\temp\\", 1, true) or (string.find)(l_0_1, "\\appdata\\", 1, true) or (string.find)(l_0_1, "\\programdata\\", 1, true)) and ((string.find)(l_0_2, ".cmd.exe", 1, true) or (string.find)(l_0_2, ".bat.exe", 1, true) or (string.find)(l_0_2, ".vbs.exe", 1, true)) then
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (string.match)((this_sigattrlog[1]).utf8p1, "%.scr$") == nil then
+  return mp.CLEAN
+end
+if (mp.IsKnownFriendlyFile)(l_0_0, true, true) == true then
+  return mp.CLEAN
+end
+local l_0_1 = {}
+l_0_1["multitip.exe"] = true
+l_0_1["oawrapper.exe"] = true
+l_0_1["kindle.exe"] = true
+l_0_1["mysqlworkbench.exe"] = true
+l_0_1["360se.exe"] = true
+l_0_1["silhouette studio.exe"] = true
+l_0_1["scrivener.exe"] = true
+l_0_1["java.exe"] = true
+l_0_1["scratch 2.exe"] = true
+if l_0_1[(string.lower)(l_0_0:match("\\([^\\]+)$"))] then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

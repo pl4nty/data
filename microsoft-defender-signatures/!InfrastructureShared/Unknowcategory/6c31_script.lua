@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() > 69630 and (mp.getfilesize)() < 73730 then
+if mp.HSTR_WEIGHT >= 5 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan_sistakasti")
 return mp.CLEAN
 

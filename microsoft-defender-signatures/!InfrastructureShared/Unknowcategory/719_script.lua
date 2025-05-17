@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-SetAttributeFromClassifierScoresEx = function(l_1_0, l_1_1, l_1_2)
-  -- function num : 0_0
-  for l_1_6,l_1_7 in ipairs(l_1_1) do
-    if l_1_7 <= l_1_0 then
-      (mp.set_mpattribute)(l_1_2 .. l_1_7)
-      break
-    end
-  end
-end
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
+do
+  if (this_sigattrlog[8]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil and (mp.bitand)(l_0_0, 42) == 42 then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
+  return mp.INFECTED
+end
 

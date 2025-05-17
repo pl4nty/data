@@ -3,25 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
 local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 500000 or l_0_0 < 10000 then
+if l_0_0 < 56064 or l_0_0 > 458752 then
   return mp.CLEAN
 end
-if (((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()):find("program files", 1, true) then
+;
+(mp.readprotection)(false)
+do
+  if l_0_0 > 72448 and (mp.get_mpattribute)("RPF:XlsAbnormalSheetStateBits") and (mp.get_mpattribute)("MpExcelFormulaRoutines") then
+    local l_0_1 = tostring((mp.readfile)(0, l_0_0))
+    l_0_1 = (string.lower)(l_0_1)
+    if (string.find)(l_0_1, "%d%.ocx.*%d%.ocx.*%d%.ocx") ~= nil and (string.find)(l_0_1, "system32", 1, true) ~= nil and (string.find)(l_0_1, "egsv", 1, true) ~= nil and (string.find)(l_0_1, "urldownloadtofil", 1, true) ~= nil and (string.find)(l_0_1, "jjccbb", 1, true) ~= nil then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-local l_0_1 = ((string.sub)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)), -5)):match("(%.%w+)$")
-local l_0_2 = {}
-l_0_2[".dll"] = ""
-l_0_2[".exe"] = ""
-if not l_0_2[l_0_1] then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

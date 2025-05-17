@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
-  return mp.CLEAN
+if pehdr.Machine == 34404 then
+  (mp.changedetectionname)(805306454)
+  return mp.INFECTED
 end
 return mp.INFECTED
 

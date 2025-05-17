@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+if peattributes.isvbnative == true then
+  (pe.set_image_filename)("C:\\temp\\myapp.exe")
+  ;
+  (pe.reemulate)()
   return mp.INFECTED
 end
 return mp.CLEAN

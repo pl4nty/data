@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_spector")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_spector")
 end
-if (string.lower)((string.sub)(l_0_0.image_path, -9)) == "mshta.exe" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

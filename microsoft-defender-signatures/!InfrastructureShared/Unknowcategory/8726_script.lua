@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isvbpcode or peattributes.isvbnative) and (mp.getfilesize)() < 65536 then
-  if mp.HSTR_WEIGHT >= 12 then
-    return mp.INFECTED
-  end
-  return mp.LOWFI
+if peattributes.no_security == true and peattributes.isdll == true and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

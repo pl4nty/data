@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 ~= nil and l_0_0 > 20971520 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

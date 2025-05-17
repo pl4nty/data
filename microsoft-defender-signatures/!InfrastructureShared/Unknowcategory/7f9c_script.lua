@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (pesecs[2]).Name == ".rodata" and (pesecs[2]).Characteristics == 1610612768 then
+if mp.HSTR_WEIGHT < 11 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT == 11 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

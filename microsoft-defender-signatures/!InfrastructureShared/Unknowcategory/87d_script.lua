@@ -3,20 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = 0
-  local l_0_1 = (this_sigattrlog[1]).utf8p2
-  l_0_1 = (string.gsub)(l_0_1, "`", "")
-  if l_0_0 > 3 then
-    l_0_1 = (string.lower)(l_0_1)
-    if (string.find)(l_0_1, "frombase64string", 1, true) or (string.find)(l_0_1, "webclient", 1, true) or (string.find)(l_0_1, "newscriptblock", 1, true) or (string.find)(l_0_1, "http", 1, true) then
-      return mp.INFECTED
-    end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+  if l_0_1 == nil then
+    return mp.CLEAN
+  end
+  l_0_1 = (string.lower)(l_0_1)
+  local l_0_2 = {}
+  l_0_2["cscript.exe"] = true
+  l_0_2["wscript.exe"] = true
+  l_0_2["powershell.exe"] = true
+  l_0_2["cmd.exe"] = true
+  if l_0_2[l_0_1] == true then
+    (mp.set_mpattribute)("LuaIntproc!" .. l_0_1)
+    return mp.INFECTED
   end
 end
 do
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
-
-  return l_0_0.CLEAN
+  return mp.CLEAN
 end
 

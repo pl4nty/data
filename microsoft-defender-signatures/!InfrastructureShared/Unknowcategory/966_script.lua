@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (mp.UfsGetMetadataBool)("LnkWithPowerShellCmd", true)
+local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_2:match("anaconda powershell prompt.+%.lnk") then
+  (mp.set_mpattribute)("Lua:ExcludeAnacondaPS")
 end
-local l_0_1 = l_0_0:lower()
-if l_0_1:len() >= 21 and (l_0_1:sub(-13) == "\\mpcmdrun.exe" or l_0_1:sub(-14) == "\\mpsigstub.exe") then
-  return mp.CLEAN
+if l_0_0 == 0 and l_0_1 == true then
+  if (mp.get_mpattribute)("AGGR:PowerShell/EncodedCommand") or (mp.get_mpattribute)("AGGR:PowerShell/EncodedArgs") then
+    (mp.set_mpattribute)("Lua:LnkFileWithEncodedPSCmd")
+  end
+  if (mp.get_mpattribute)("AGGR:PowerShell/Hidden") then
+    (mp.set_mpattribute)("Lua:LnkFileWithHiddenPSCmd")
+  end
+  if (mp.get_mpattribute)("AGGR:PowerShell/ExecutionPolicyBypass") or (mp.get_mpattribute)("AGGR:PowerShell/ExecutionPolicyUnrestricted") then
+    (mp.set_mpattribute)("Lua:LnkFileWithExPolicyBypassedPSCmd")
+  end
 end
-if (string.find)(l_0_1, "\\program files", 1, true) and ((string.find)(l_0_1, "\\emailsecurity\\gfiscanm.exe", 1, true) or (string.find)(l_0_1, "\\bin\\ccsvchst.exe", 1, true) or (string.find)(l_0_1, "\\bin64\\ccsvchst.exe", 1, true) or (string.find)(l_0_1, "\\vipre business agent\\sbamsvc.exe", 1, true) or (string.find)(l_0_1, "\\nortonsecurity.exe", 1, true) or (string.find)(l_0_1, "security\\sapissvc.exe", 1, true) or (string.find)(l_0_1, "\\seqrite\\seqrite\\", 1, true) or (string.find)(l_0_1, "\\amsp\\coreserviceshell.exe", 1, true)) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

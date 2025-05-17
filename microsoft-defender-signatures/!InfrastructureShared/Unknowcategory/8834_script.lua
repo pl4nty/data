@@ -3,15 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and (mp.get_mpattribute)("TEL:TrojanDownloader:Win32/AdLoad.A!MSR") and l_0_0 > 2424832 and l_0_0 < 2621440 then
+  return mp.INFECTED
 end
-local l_0_1 = {}
-l_0_1["isxagent.exe"] = true
-l_0_1["totalrecoveryprosetup.exe"] = true
-if l_0_1[(string.lower)(l_0_0:match("\\([^\\]+)$"))] then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.LOWFI
 

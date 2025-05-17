@@ -3,26 +3,9 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if l_0_0 ~= nil then
-      local l_0_2 = nil
-      -- DECOMPILER ERROR at PC37: Confused about usage of register: R1 in 'UnsetPending'
-
-      if l_0_0:match("/e:javascript%S?(\"?[^/]*\")") ~= nil and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_0:match("/e:javascript%S?(\"?[^/]*\")"))) == true then
-        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_0:match("/e:javascript%S?(\"?[^/]*\")")))
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if (l_0_1 == "setup.log" or l_0_1 == "info.dat" or l_0_1 == "untitled.png" or l_0_1 == "message.") and l_0_0:find("\\appdata\\local\\{........%-....%-....%-....%-............}") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

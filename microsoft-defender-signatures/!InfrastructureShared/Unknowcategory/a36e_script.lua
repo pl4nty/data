@@ -3,8 +3,25 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Win32/Neurevt_loader")
-if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3187044 and (mp.readu_u32)(epcode, 9) == 1448280064 and (mp.readu_u32)(epcode, 13) == 108314757 and (mp.readu_u32)(epcode, 17) == 16939136 and (mp.readu_u32)(epcode, 21) == 1703096436 and (mp.readu_u32)(epcode, 25) == 4226285820 then
+local l_0_0 = pehdr.AddressOfEntryPoint + pehdr.ImageBase
+local l_0_1, l_0_2 = nil, nil
+if (hstrlog[1]).matched then
+  l_0_1 = 7
+  l_0_2 = (hstrlog[1]).VA
+end
+if (hstrlog[2]).matched then
+  l_0_1 = 7
+  l_0_2 = (hstrlog[2]).VA
+end
+if (hstrlog[3]).matched then
+  l_0_1 = 6
+  l_0_2 = (hstrlog[3]).VA
+end
+local l_0_3 = (pe.mmap_va)(l_0_2, 15)
+local l_0_4 = (mp.readu_u32)(l_0_3, l_0_1)
+local l_0_5 = l_0_2 + l_0_1 + 3 + l_0_4
+l_0_5 = (mp.bitand)(l_0_5, 4294967295)
+if l_0_5 == l_0_0 then
   return mp.INFECTED
 end
 return mp.CLEAN

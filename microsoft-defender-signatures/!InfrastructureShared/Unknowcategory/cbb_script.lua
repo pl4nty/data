@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(bm.add_action)("EmsScan", 5000)
-return mp.INFECTED
+(mp.set_mpattribute)("SIGATTR:Banker!wininet.vbs")
+return mp.LOWFI
 

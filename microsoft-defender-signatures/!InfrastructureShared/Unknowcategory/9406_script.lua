@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 3 and (pesecs[2]).VirtualSize > 336 and (pesecs[2]).VirtualSize < 432 and (pesecs[3]).VirtualSize >= 13354 and (pesecs[3]).VirtualSize <= 13356 then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -31)) ~= "altaro.services.backupagent.exe" and (string.lower)((string.sub)(l_0_0, -20)) ~= "coreserviceshell.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

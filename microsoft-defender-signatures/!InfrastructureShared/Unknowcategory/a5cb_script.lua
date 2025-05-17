@@ -3,37 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+if not (string.find)(l_0_0, "^c:\\") and not (string.find)(l_0_0, "^\\\\") then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == "" or l_0_1 == nil then
+if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\programa\\", 1, true) or (string.find)(l_0_0, "\\programas\\", 1, true) or (string.find)(l_0_0, "pedeletronico", 1, true) or (string.find)(l_0_0, "gerencial", 1, true) or (string.find)(l_0_0, "det.processador", 1, true) then
   return mp.CLEAN
 end
-local l_0_2 = (string.match)((string.lower)(l_0_1), "^(.-%.exe)")
-if l_0_2 == "" or l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (string.match)(l_0_2, "([^\\]+)$")
-if l_0_3 == "" or l_0_3 == nil then
-  return mp.CLEAN
-end
-if l_0_3 ~= "cmd.exe" then
-  return mp.CLEAN
-end
-local l_0_4 = (mp.GetParentProcInfo)()
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-if (string.lower)((string.match)(l_0_4.image_path, "\\([^\\]+)$")) ~= "razerinstaller.exe" then
-  return mp.CLEAN
-end
-local l_0_5 = (mp.GetProcessCommandLine)(l_0_4.ppid)
-if l_0_5 == "" or l_0_5 == nil then
-  return mp.CLEAN
-end
-if (string.find)((string.lower)(l_0_5), "razerinstaller%.exe[^/]+/showdevice$") == nil then
+if not (MpCommon.QueryPersistContext)(l_0_0, "ExecutedPENoCert") then
   return mp.CLEAN
 end
 return mp.INFECTED

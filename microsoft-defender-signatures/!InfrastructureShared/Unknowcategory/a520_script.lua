@@ -3,30 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
-  return mp.CLEAN
+local l_0_4 = nil
+if (this_sigattrlog[1]).matched then
+  local l_0_0, l_0_1, l_0_2, l_0_3 = "|.js|jse|vbs|vbe|wsf|wsh"
+else
+  do
+    -- DECOMPILER ERROR at PC17: Overwrote pending register: R0 in 'AssignReg'
+
+    if not (this_sigattrlog[2]).matched or l_0_4 ~= nil then
+      local l_0_5 = nil
+      if #(mp.GetExecutablesFromCommandLine)(l_0_4) > 1 then
+        local l_0_6 = nil
+        local l_0_7 = nil
+        if (string.find)(l_0_5, (string.sub)((string.lower)(((mp.GetExecutablesFromCommandLine)(l_0_4))[2]), -3), 1, true) then
+          l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+          if (sysio.IsFileExists)(l_0_7) then
+            (bm.add_related_file)(l_0_7)
+            ;
+            (mp.ReportLowfi)(l_0_7, 2419017217)
+          end
+        end
+      end
+    end
+    do
+      return mp.INFECTED
+    end
+  end
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if not l_0_1 or #l_0_1 <= 18 then
-  return mp.CLEAN
-end
-l_0_1 = (string.lower)(l_0_1)
-local l_0_2 = (string.match)(l_0_1, "[-/]p%s+\"?\'?([%d]+)\"?\'?")
-if not l_0_2 then
-  return mp.CLEAN
-end
-l_0_2 = tonumber(l_0_2)
-local l_0_3 = (mp.GetPPidFromPid)(l_0_2)
-local l_0_4 = (MpCommon.GetImagePathFromPid)(l_0_3)
-if not l_0_4 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, "%-watson%s%-unnamed") then
-  return mp.CLEAN
-end
-if (string.find)(l_0_4:lower(), "\\windows\\system32\\lsass.exe", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

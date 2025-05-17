@@ -3,16 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.IOAVGetDownloadUrl)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.len)(l_0_0) < 12 then
-  return mp.CLEAN
-end
-l_0_0 = (string.lower)(l_0_0)
-if (string.find)(l_0_0, "/.+invoice.+/") ~= nil or (string.find)(l_0_0, "/.+rechnung.+/") ~= nil then
+if (mp.get_mpattribute)("Lua:MsWordExt") then
+  (mp.UfsSetMetadataBool)("Lua:MsWordExt", true)
   return mp.INFECTED
+else
+  if (mp.get_mpattribute)("Lua:MsExcelExt") then
+    (mp.UfsSetMetadataBool)("Lua:MsExcelExt", true)
+    return mp.INFECTED
+  else
+    if (mp.get_mpattribute)("Lua:MsPowerpntExt") then
+      (mp.UfsSetMetadataBool)("Lua:MsPowerpntExt", true)
+      return mp.INFECTED
+    end
+  end
 end
 return mp.CLEAN
 

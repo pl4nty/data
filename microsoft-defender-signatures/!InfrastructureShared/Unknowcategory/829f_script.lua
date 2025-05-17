@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 36 then
+if pehdr.NumberOfSections == 7 and (pesecs[4]).Name == ".fuckyou" and (pesecs[5]).Name == ".fuckyou" and (pesecs[6]).Name == ".fuckyou" then
   return mp.INFECTED
-end
-if (mp.bitand)(mp.HSTR_WEIGHT, 15) >= 3 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_injector")
 end
 return mp.CLEAN
 

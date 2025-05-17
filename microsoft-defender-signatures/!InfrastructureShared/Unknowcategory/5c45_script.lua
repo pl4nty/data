@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 1408121872) == 0 then
-  return mp.CLEAN
+if peattributes.isdll == false and (mp.getfilesize)() < 5048000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if ((pe.get_versioninfo)()).CompanyName == "Microsoft" then
+  return mp.INFECTED
 end
-if not peattributes.ismsil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

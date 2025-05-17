@@ -3,23 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
--- DECOMPILER ERROR at PC7: No list found for R0 , SetList fails
-
--- DECOMPILER ERROR at PC8: Overwrote pending register: R1 in 'AssignReg'
-
-do
-  local l_0_1 = "AGGR:ContextFileInclusion.A"
-  -- DECOMPILER ERROR at PC9: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC10: Overwrote pending register: R3 in 'AssignReg'
-
-  for l_0_5,l_0_6 in ("Lua:Win32/ExeFileWithExport.A")("SIGATTR:MatchRegOpenKey") do
-    if (mp.get_mpattributevalue)(l_0_6) ~= nil and l_0_1 >= 6 then
-      return mp.INFECTED
-    end
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = pehdr.ImageBase
+local l_0_2 = (pesecs[1]).VirtualAddress + l_0_1 + 4096
+if l_0_0 < l_0_2 or l_0_1 + 28672 < l_0_0 then
+  return mp.CLEAN
 end
+local l_0_3 = pe.VM_SEARCH_BM
+local l_0_4 = pe.vm_search
+if l_0_4(l_0_2, l_0_0, "‰Œ…\001\003\255é\001\002\255\255‹…\144\000", nil, l_0_3) ~= 4294967295 then
+  return mp.INFECTED
+end
+if l_0_4(l_0_2, l_0_0, "‰L…\001\001é\001\002\255\255‹E\144\000", nil, l_0_3) ~= 4294967295 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

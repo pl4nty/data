@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (hstrlog[5]).matched) then
+if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "truesight" and (mp.getfilesize)() < 70000 then
   return mp.INFECTED
 end
 return mp.CLEAN

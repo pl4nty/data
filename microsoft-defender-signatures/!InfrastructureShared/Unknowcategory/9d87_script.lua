@@ -3,15 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->(Ole Stream", -18, true) == nil then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
-local l_0_1 = (mp.BMSearchFile)(7, 5, "ÎG\n\001\005\144\000")
-if l_0_1 ~= 0 then
+if peattributes.no_relocs ~= true then
   return mp.CLEAN
 end
-;
-(mp.UfsSetMetadataBool)("OleShellCode", true)
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 6 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

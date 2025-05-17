@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_0.ppid, "m")
+if pehdr.Machine == 332 then
+  (mp.changedetectionname)(805306517)
+  return mp.INFECTED
+end
 return mp.INFECTED
 

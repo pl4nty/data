@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil then
+(mp.readprotection)(false)
+local l_0_0 = (mp.getfilesize)()
+local l_0_1 = tostring((mp.readfile)(0, l_0_0))
+l_0_1 = (string.lower)(l_0_1)
+if (string.find)(l_0_1, "j7pjsibhd9dztmzk7ddgdohxux5lws3aa9fqa9lxwkrk4omnzgqt6euej4i", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

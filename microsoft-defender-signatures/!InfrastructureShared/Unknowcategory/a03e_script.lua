@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 214667374) and (mp.crc32)(-1, epcode, 17, 17) == 3988924912 then
+if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

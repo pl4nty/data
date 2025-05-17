@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  local l_0_0 = (string.lower)(tostring(headerpage))
-  if l_0_0 > 5 then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

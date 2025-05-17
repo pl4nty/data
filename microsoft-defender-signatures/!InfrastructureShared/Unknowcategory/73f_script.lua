@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 268435456 then
-  return mp.CLEAN
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block Webshell creation for Servers"
+  l_1_0.Description = "Windows Defender Exploit Guard detected Webshell creation"
+  return l_1_0
 end
-if #(mp.enum_mpattributesubstring)("SCPT:PyFlashA") >= 5 then
-  return mp.INFECTED
-else
-  return mp.CLEAN
-end
-return mp.CLEAN
+
 

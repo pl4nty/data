@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)((string.sub)(l_0_0, -29))
-  if l_0_0 == "\\windows defender\\msmpeng.exe" then
-    return mp.CLEAN
-  end
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0 ~= nil and l_0_0.CompanyName ~= nil and (l_0_0.CompanyName):find("Mizollo", 1, true) == 1 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,34 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if l_0_1 ~= nil then
-  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-      (bm.add_related_file)(l_0_7)
-    end
-  end
+if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched) or (hstrlog[9]).matched) then
+  return mp.INFECTED
 end
-do
-  l_0_2 = bm
-  l_0_2 = l_0_2.get_process_relationships
-  l_0_2 = l_0_2()
-  local l_0_8, l_0_9 = nil
-  l_0_9 = ipairs
-  l_0_9 = l_0_9(l_0_8)
-  for l_0_13,l_0_14 in l_0_9 do
-    local l_0_14 = nil
-    l_0_14 = bm
-    l_0_14 = l_0_14.request_SMS
-    l_0_14(l_0_13.ppid, "m")
-    l_0_14 = mp
-    l_0_14 = l_0_14.INFECTED
-    do return l_0_14 end
-  end
-  do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC54: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
-end
+return mp.CLEAN
 

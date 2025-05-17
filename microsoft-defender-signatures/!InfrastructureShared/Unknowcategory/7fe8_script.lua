@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattributesubstring)("PUA:Block:") or (mp.get_mpattributesubstring)("PUA:ML:Blocked:") or (mp.get_mpattributesubstring)("PUA:IRST:Block:") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 40, ")\203")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 23, "\000")
+return mp.INFECTED
 

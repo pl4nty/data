@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil and ((string.find)(l_0_0.image_path, "java.exe", -8, true) or (string.find)(l_0_0.image_path, "java", -4, true)) then
+if mp.HSTR_WEIGHT >= 2 then
   return mp.INFECTED
+else
+  if (hstrlog[1]).matched then
+    (mp.set_mpattribute)("HSTR:Trojan:Win32/Sefnit.AU")
+    return mp.LOWFI
+  end
 end
 return mp.CLEAN
 

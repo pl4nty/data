@@ -3,8 +3,34 @@
 
 -- params : ...
 -- function num : 0
-if (((((((((((((((((((((((((((((((((((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and not (hstrlog[9]).matched) or (hstrlog[10]).matched) and not (hstrlog[11]).matched) or (hstrlog[12]).matched) and not (hstrlog[13]).matched) or (hstrlog[14]).matched) and not (hstrlog[15]).matched) or (hstrlog[16]).matched) and not (hstrlog[17]).matched) or (hstrlog[18]).matched) and not (hstrlog[19]).matched) or (hstrlog[20]).matched) and not (hstrlog[21]).matched) or (hstrlog[22]).matched) and not (hstrlog[23]).matched) or (hstrlog[24]).matched) and not (hstrlog[25]).matched) or (hstrlog[26]).matched) and not (hstrlog[27]).matched) or (hstrlog[28]).matched) and not (hstrlog[29]).matched) or (hstrlog[30]).matched) and not (hstrlog[31]).matched) or (hstrlog[32]).matched) and not (hstrlog[33]).matched) or (hstrlog[34]).matched) and not (hstrlog[35]).matched) or 0 + 1 + 1 + 1 + 1 + 1 + 1 == 1) and 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 >= 4 and 0 + 1 + 1 + 1 + 2 >= 2 then
-  return mp.INFECTED
+if (bm.GetSignatureMatchDuration)() > 20000000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (this_sigattrlog[1]).matched and (this_sigattrlog[4]).matched and (MpCommon.GetPersistContextCountNoPath)("UACBypassExp.ZK!dllhost") > 0 then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  if (string.find)(l_0_0, "\\taskcache\\tree\\microsoft\\", 1, true) or (string.find)(l_0_0, "\\atp onboarding\\", 1, true) or (string.find)(l_0_0, "\\microsoftedgeupdate", 1, true) or (string.find)(l_0_0, "\\monitoring", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_1, l_0_2 = (bm.get_process_relationships)()
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_7.ppid)
+    local l_0_9 = (mp.bitand)(l_0_7.reason_ex, bm.RELATIONSHIP_CREATED)
+    if l_0_9 == bm.RELATIONSHIP_CREATED and l_0_8.IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+      local l_0_10 = (string.lower)((MpCommon.PathToWin32Path)(l_0_7.image_path))
+      local l_0_11 = (string.lower)((MpCommon.PathToWin32Path)((this_sigattrlog[4]).utf8p1))
+      if l_0_10 == l_0_11 then
+        local l_0_12 = (string.lower)((this_sigattrlog[4]).utf8p2)
+        if not (string.find)(l_0_12, "windowsdefenderatponboardingscript", 1, true) and not (string.find)(l_0_12, "taskhostw.exe", 1, true) then
+          (bm.add_related_process)(l_0_7.ppid)
+          return mp.INFECTED
+        end
+      end
+    end
+  end
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
+end
 

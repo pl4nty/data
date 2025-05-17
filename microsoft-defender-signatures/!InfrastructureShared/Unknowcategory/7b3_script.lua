@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((mp.getfilename)(), -4))
-do
-  if (mp.get_mpattribute)("pea_isexe") and l_0_0 == ".com" then
-    local l_0_1 = (string.lower)((mp.getfilename)())
-    if (string.find)(l_0_1, ".2017.com", 1, true) ~= nil then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
   return mp.CLEAN
 end
+if l_0_1:find("\\appdata\\local\\microsoft\\windows\\inetcookies", 1, true) and l_0_2:find(".dll$") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

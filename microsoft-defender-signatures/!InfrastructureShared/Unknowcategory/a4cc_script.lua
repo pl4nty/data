@@ -3,16 +3,32 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_12")
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
-local l_0_2 = (string.byte)(l_0_0, 8)
-local l_0_3 = (mp.readu_u32)(l_0_0, 12)
-local l_0_4 = (mp.readu_u32)(l_0_0, 23)
-local l_0_5 = (pe.get_regval)(pe.REG_EDX)
-local l_0_6 = (mp.ror32)(l_0_5, l_0_2) - (mp.bitxor)(l_0_4, l_0_3) + l_0_1
-;
-(pe.set_regval)(pe.REG_EBX, l_0_6)
+if peattributes.no_relocs ~= true then
+  return mp.CLEAN
+end
+if peattributes.epscn_writable ~= true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.BaseOfCode ~= 4096 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 2 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

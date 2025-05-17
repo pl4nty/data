@@ -3,34 +3,49 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p1
-if not l_0_0 or l_0_0 == "" then
-  return mp.CLEAN
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 and l_0_1.integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
-  local l_0_2 = (bm.get_imagepath)()
-  if l_0_2 then
-    l_0_2 = (string.lower)((MpCommon.PathToWin32Path)(l_0_2))
-    if l_0_2 and (not (mp.IsKnownFriendlyFile)(l_0_2, false, false) or (string.sub)(l_0_2, -15) == "\\powershell.exe" or (string.sub)(l_0_2, -8) == "\\cmd.exe") then
-      local l_0_3 = (sysio.QuerySymbolicLinkObject)("\\??\\globalroot\\device\\SystemPartition")
-      if l_0_3 then
-        local l_0_4 = (string.sub)(l_0_0, 1, -5)
-        local l_0_5 = (sysio.GetObjectDir)(l_0_4)
-        if l_0_5 then
-          for l_0_9,l_0_10 in pairs(l_0_5) do
-            if (string.find)(l_0_9, "Partition", 1, true) and (sysio.QuerySymbolicLinkObject)(l_0_4 .. "\\" .. l_0_9) == l_0_3 then
-              return mp.INFECTED
-            end
-          end
+local l_0_1 = nil
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_0 = (this_sigattrlog[2]).utf8p1
+  end
+  local l_0_2 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC29: Overwrote pending register: R1 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p1 == nil or nil ~= nil) and l_0_2 ~= nil then
+      local l_0_3, l_0_4 = nil
+      -- DECOMPILER ERROR at PC39: Overwrote pending register: R3 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC44: Overwrote pending register: R4 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC59: Confused about usage of register: R3 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC67: Confused about usage of register: R4 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC75: Confused about usage of register: R4 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC84: Confused about usage of register: R4 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC93: Confused about usage of register: R4 in 'UnsetPending'
+
+      if (sysio.IsFileExists)(nil) and (sysio.IsFileExists)(nil) and (mp.IsKnownFriendlyFile)(nil, true, false) and not (mp.IsKnownFriendlyFile)(nil, true, false) then
+        if (string.find)(nil, "\\system32\\mrt.exe", -17, true) or (string.find)(nil, "\\asep_inv.exe", -13, true) or (string.find)(nil, "\\mpsigstub.exe", -14, true) then
+          return mp.CLEAN
         end
+        -- DECOMPILER ERROR at PC105: Confused about usage of register: R4 in 'UnsetPending'
+
+        ;
+        (bm.add_related_file)(nil)
+        ;
+        (bm.request_SMS)(l_0_3, "l")
+        ;
+        (bm.add_action)("SingleProcessScan", 100)
+        return mp.INFECTED
       end
     end
+    return mp.CLEAN
   end
-end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
 end
 

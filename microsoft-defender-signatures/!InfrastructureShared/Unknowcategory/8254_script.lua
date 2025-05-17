@@ -3,10 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 4, 4)
-if (mp.readu_u32)(l_0_0, 1) < 1048576 then
-  return mp.CLEAN
-end
+(bm.set_scan_param)((mp.bitor)((mp.bitor)(bm.SCAN_PARAMETERS_DEEP_ANALYSIS, bm.SCAN_PARAMETERS_VMM_GROW), bm.SCAN_PARAMETERS_HSTR_EXHAUSTIVE))
 return mp.INFECTED
 

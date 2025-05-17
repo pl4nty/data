@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 8192 and peattributes.isdll then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:NiceHashMiner")
+;
+(mp.set_mpattribute)("Company:CoinMiner32:HBIT")
+return mp.INFECTED
 

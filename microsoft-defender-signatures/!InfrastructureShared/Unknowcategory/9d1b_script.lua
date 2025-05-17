@@ -3,22 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_3 = nil
-if (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME) == nil then
-  local l_0_0, l_0_1 = nil
-  if l_0_3 == nil then
-    return mp.CLEAN
-  end
-  l_0_0 = l_0_3:sub(-5)
-  local l_0_2 = nil
-else
-  do
-    -- DECOMPILER ERROR at PC21: Confused about usage of register: R2 in 'UnsetPending'
+-- DECOMPILER ERROR at PC15: Overwrote pending register: R0 in 'AssignReg'
 
-    if (string.find)((l_0_1:sub(-5)):lower(), ".asp") then
-      return mp.INFECTED
-    end
-    return mp.LOWFI
+do
+  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and ((string.find)(l_0_0, " /i ", 1, true) or (string.find)(l_0_0, " /package ", 1, true)) then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

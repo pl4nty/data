@@ -3,81 +3,52 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_1 = (this_sigattrlog[2]).utf8p2
+  local l_0_2 = nil
+else
+end
 do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
+
+  if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).utf8p2 ~= nil then
+    local l_0_3, l_0_4 = (this_sigattrlog[3]).utf8p1, (this_sigattrlog[3]).utf8p2
+    l_0_4 = (this_sigattrlog[4]).utf8p2
+    local l_0_5 = nil
   else
   end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
-
   do
-    if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
-      local l_0_1, l_0_2, l_0_4 = (this_sigattrlog[4]).utf8p2, nil
+    -- DECOMPILER ERROR at PC80: Overwrote pending register: R0 in 'AssignReg'
+
+    if (not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).utf8p2 == nil or (this_sigattrlog[6]).matched) and (this_sigattrlog[6]).utf8p2 ~= nil then
+      local l_0_6, l_0_7 = (this_sigattrlog[5]).utf8p1, (this_sigattrlog[5]).utf8p2
+      l_0_7 = (this_sigattrlog[6]).utf8p2
+      local l_0_8 = nil
     else
     end
     do
-      if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
-        local l_0_3, l_0_5 = (this_sigattrlog[6]).utf8p2, (this_sigattrlog[7]).utf8p2
+      -- DECOMPILER ERROR at PC114: Overwrote pending register: R0 in 'AssignReg'
+
+      if (not (this_sigattrlog[7]).matched or (this_sigattrlog[7]).utf8p2 == nil or (this_sigattrlog[8]).matched) and (this_sigattrlog[8]).utf8p2 ~= nil then
+        local l_0_9, l_0_10, l_0_12, l_0_13, l_0_15, l_0_16, l_0_18 = (this_sigattrlog[7]).utf8p1, (this_sigattrlog[7]).utf8p2
+        l_0_12 = this_sigattrlog
+        l_0_12 = l_0_12[8]
+        l_0_10 = l_0_12.utf8p2
+        local l_0_11, l_0_14, l_0_17, l_0_19 = nil
       else
       end
-      if (this_sigattrlog[8]).matched then
-        local l_0_6, l_0_7 = , (this_sigattrlog[8]).utf8p2
-        if (bm.get_process_relationships)() then
-          for l_0_11,l_0_12 in ipairs((bm.get_process_relationships)()) do
-            local l_0_8, l_0_9 = nil
-            -- DECOMPILER ERROR at PC61: Confused about usage of register: R8 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC87: Overwrote pending register: R9 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC91: Confused about usage of register: R9 in 'UnsetPending'
-
-            if R8_PC61.image_path and (mp.bitand)(R8_PC61.reason_ex, 1) == 1 and (string.find)(R8_PC61.image_path, "\\explorer.exe", 1, true) then
-              if l_0_6 and nil then
-                for l_0_17,l_0_18 in ipairs(nil) do
-                  local l_0_15 = nil
-                  -- DECOMPILER ERROR at PC96: Confused about usage of register: R14 in 'UnsetPending'
-
-                  R14_PC96 = (mp.ContextualExpandEnvironmentVariables)(R14_PC96)
-                  if (sysio.IsFileExists)(R14_PC96) then
-                    (bm.add_related_file)(R14_PC96)
-                  end
-                end
-              end
-              do
-                -- DECOMPILER ERROR at PC121: Confused about usage of register: R9 in 'UnsetPending'
-
-                if l_0_7 and (mp.GetExecutablesFromCommandLine)(l_0_7) then
-                  for l_0_22,l_0_23 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_7)) do
-                    local l_0_19, l_0_20 = nil
-                    -- DECOMPILER ERROR at PC126: Confused about usage of register: R14 in 'UnsetPending'
-
-                    -- DECOMPILER ERROR at PC137: Confused about usage of register: R14 in 'UnsetPending'
-
-                    if (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(R14_PC96)) then
-                      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(R14_PC96))
-                    end
-                  end
-                end
-                do
-                  do
-                    do return mp.INFECTED end
-                    -- DECOMPILER ERROR at PC144: LeaveBlock: unexpected jumping out DO_STMT
-
-                    -- DECOMPILER ERROR at PC144: LeaveBlock: unexpected jumping out DO_STMT
-
-                    -- DECOMPILER ERROR at PC144: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC144: LeaveBlock: unexpected jumping out IF_STMT
-
-                  end
-                end
-              end
-            end
-          end
+      do
+        if ((this_sigattrlog[9]).matched and (this_sigattrlog[9]).utf8p2 ~= nil and (this_sigattrlog[9]).utf8p1 == nil) or (this_sigattrlog[9]).utf8p2 == nil then
+          return mp.CLEAN
         end
-        return mp.CLEAN
+        local l_0_20 = nil
+        local l_0_21 = nil
+        ;
+        (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), {["[" .. l_0_20 .. "]"] = "[" .. l_0_21 .. "]"})
+        return mp.INFECTED
       end
     end
   end

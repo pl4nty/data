@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 17, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() < 77824 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

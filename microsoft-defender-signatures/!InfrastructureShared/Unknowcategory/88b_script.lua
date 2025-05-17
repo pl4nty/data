@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-;
-(mp.readprotection)(false)
-if l_0_0 < 8192 then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and peattributes.isdll then
+  local l_0_1 = (mp.getfilesize)()
+  if l_0_1 > 17664 and l_0_1 < 1200128 then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+    if (string.find)(l_0_2, "api%-ms%-win%-system%-%w+%-l1%-1%-0%.dll") then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 1196314761 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readfile)(256, 256)
-if (string.find)(l_0_1, "IEND", 1, true) ~= nil and (string.find)(l_0_1, "MZ", 1, true) ~= nil and (string.find)(l_0_1, "This program cannot be run in DOS mode", 1, true) ~= nil then
-  (mp.set_mpattribute)("Lua:PEEmbeddedAfterPng")
-end
-return mp.CLEAN
 

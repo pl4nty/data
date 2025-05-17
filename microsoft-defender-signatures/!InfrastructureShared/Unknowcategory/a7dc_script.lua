@@ -3,151 +3,39 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)(l_0_0.image_path)
+local l_0_2 = l_0_1:match("([^\\]+)$")
+local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
+if l_0_2 ~= nil and not (string.find)(l_0_3, l_0_2) then
+  return mp.CLEAN
+end
+local l_0_4 = (sysio.RegExpandUserKey)("HKCU\\Environment")
+if l_0_4 then
+  for l_0_8,l_0_9 in pairs(l_0_4) do
+    local l_0_10 = (sysio.RegOpenKey)(l_0_9)
+    if l_0_10 then
+      local l_0_11 = (sysio.RegEnumValues)(l_0_10)
+      for l_0_15,l_0_16 in pairs(l_0_11) do
+        if (string.lower)(l_0_16) == "windir" then
+          local l_0_17 = (string.lower)((sysio.GetRegValueAsString)(l_0_10, l_0_16))
+          if (string.len)(l_0_17) > 8 and ((string.find)(l_0_17, "cmd ", 1, true) or (string.find)(l_0_17, "cmd.exe", 1, true) or (string.find)(l_0_17, "powershell", 1, true) or (string.find)(l_0_17, "wscript", 1, true) or (string.find)(l_0_17, "cscript", 1, true) or (string.find)(l_0_17, "schtasks", 1, true) or (string.find)(l_0_17, "mshta", 1, true) or (string.find)(l_0_17, "reg add", 1, true) or (string.find)(l_0_17, "reg.exe add", 1, true) or (string.find)(l_0_17, "regedit.exe", 1, true) or (string.find)(l_0_17, "rundll32.exe", 1, true) or (string.find)(l_0_17, "regsvr32.exe", 1, true) or (string.find)(l_0_17, "bypass", 1, true) or (string.find)(l_0_17, "\\appdata\\roaming\\", 1, true) or (string.find)(l_0_17, "\\appdata\\local\\", 1, true) or (string.find)(l_0_17, "\\users\\public\\", 1, true) or (string.find)(l_0_17, "\\programdata\\", 1, true) or (string.find)(l_0_17, ".bat", 1, true) or (string.find)(l_0_17, ".cmd", 1, true) or (string.find)(l_0_17, ".js", 1, true) or (string.find)(l_0_17, ".vbs", 1, true) or (string.find)(l_0_17, ".wsf", 1, true)) then
+            return mp.INFECTED
+          end
+          if (string.len)(l_0_17) > 16 and ((string.find)(l_0_17, " /c ", 1, true) or (string.find)(l_0_17, " /k ", 1, true)) then
+            return mp.INFECTED
+          end
+        end
+      end
+    end
+  end
+end
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp1 ~= nil then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+  do return mp.CLEAN end
+  -- DECOMPILER ERROR at PC307: Confused about usage of register R6 for local variables in 'ReleaseLocals'
 
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp1 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).wp1 ~= nil then
-      local l_0_1 = (this_sigattrlog[2]).utf8p1
-    else
-    end
-    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).wp1 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).wp1 ~= nil then
-        local l_0_2 = (this_sigattrlog[4]).utf8p1
-      else
-      end
-      -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
-
-      do
-        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).wp1 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).wp1 ~= nil then
-          local l_0_3 = (this_sigattrlog[6]).utf8p1
-        else
-        end
-        -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
-
-        do
-          if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).wp1 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).wp1 ~= nil then
-            local l_0_4 = (this_sigattrlog[8]).utf8p1
-          else
-          end
-          -- DECOMPILER ERROR at PC152: Overwrote pending register: R0 in 'AssignReg'
-
-          do
-            if (not (this_sigattrlog[10]).matched or (this_sigattrlog[10]).wp1 == nil or (this_sigattrlog[11]).matched) and (this_sigattrlog[11]).wp1 ~= nil then
-              local l_0_5 = (this_sigattrlog[10]).utf8p1
-            else
-            end
-            -- DECOMPILER ERROR at PC180: Overwrote pending register: R0 in 'AssignReg'
-
-            do
-              if (not (this_sigattrlog[12]).matched or (this_sigattrlog[12]).wp1 == nil or (this_sigattrlog[13]).matched) and (this_sigattrlog[13]).wp1 ~= nil then
-                local l_0_6 = (this_sigattrlog[12]).utf8p1
-              else
-              end
-              -- DECOMPILER ERROR at PC208: Overwrote pending register: R0 in 'AssignReg'
-
-              do
-                if (not (this_sigattrlog[14]).matched or (this_sigattrlog[14]).wp1 == nil or (this_sigattrlog[15]).matched) and (this_sigattrlog[15]).wp1 ~= nil then
-                  local l_0_7 = (this_sigattrlog[14]).utf8p1
-                else
-                end
-                -- DECOMPILER ERROR at PC236: Overwrote pending register: R0 in 'AssignReg'
-
-                do
-                  if (not (this_sigattrlog[16]).matched or (this_sigattrlog[16]).wp1 == nil or (this_sigattrlog[17]).matched) and (this_sigattrlog[17]).wp1 ~= nil then
-                    local l_0_8 = (this_sigattrlog[16]).utf8p1
-                  else
-                  end
-                  -- DECOMPILER ERROR at PC264: Overwrote pending register: R0 in 'AssignReg'
-
-                  do
-                    if (not (this_sigattrlog[18]).matched or (this_sigattrlog[18]).wp1 == nil or (this_sigattrlog[19]).matched) and (this_sigattrlog[19]).wp1 ~= nil then
-                      local l_0_9 = (this_sigattrlog[18]).utf8p1
-                    else
-                    end
-                    -- DECOMPILER ERROR at PC292: Overwrote pending register: R0 in 'AssignReg'
-
-                    do
-                      if (not (this_sigattrlog[20]).matched or (this_sigattrlog[20]).wp1 == nil or (this_sigattrlog[21]).matched) and (this_sigattrlog[21]).wp1 ~= nil then
-                        local l_0_10 = (this_sigattrlog[20]).utf8p1
-                      else
-                      end
-                      -- DECOMPILER ERROR at PC320: Overwrote pending register: R0 in 'AssignReg'
-
-                      do
-                        if (not (this_sigattrlog[22]).matched or (this_sigattrlog[22]).wp1 == nil or (this_sigattrlog[23]).matched) and (this_sigattrlog[23]).wp1 ~= nil then
-                          local l_0_11 = (this_sigattrlog[22]).utf8p1
-                        else
-                        end
-                        -- DECOMPILER ERROR at PC348: Overwrote pending register: R0 in 'AssignReg'
-
-                        do
-                          if (not (this_sigattrlog[24]).matched or (this_sigattrlog[24]).wp1 == nil or (this_sigattrlog[25]).matched) and (this_sigattrlog[25]).wp1 ~= nil then
-                            local l_0_12 = (this_sigattrlog[24]).utf8p1
-                          else
-                          end
-                          -- DECOMPILER ERROR at PC376: Overwrote pending register: R0 in 'AssignReg'
-
-                          do
-                            if (not (this_sigattrlog[26]).matched or (this_sigattrlog[26]).wp1 == nil or (this_sigattrlog[27]).matched) and (this_sigattrlog[27]).wp1 ~= nil then
-                              local l_0_13 = (this_sigattrlog[26]).utf8p1
-                            else
-                            end
-                            -- DECOMPILER ERROR at PC404: Overwrote pending register: R0 in 'AssignReg'
-
-                            do
-                              if (not (this_sigattrlog[28]).matched or (this_sigattrlog[28]).wp1 == nil or (this_sigattrlog[29]).matched) and (this_sigattrlog[29]).wp1 ~= nil then
-                                local l_0_14 = (this_sigattrlog[28]).utf8p1
-                              else
-                              end
-                              -- DECOMPILER ERROR at PC432: Overwrote pending register: R0 in 'AssignReg'
-
-                              do
-                                if (not (this_sigattrlog[30]).matched or (this_sigattrlog[30]).wp1 == nil or (this_sigattrlog[31]).matched) and (this_sigattrlog[31]).wp1 ~= nil then
-                                  local l_0_15 = (this_sigattrlog[30]).utf8p1
-                                else
-                                end
-                                -- DECOMPILER ERROR at PC460: Overwrote pending register: R0 in 'AssignReg'
-
-                                do
-                                  if (not (this_sigattrlog[32]).matched or (this_sigattrlog[32]).wp1 == nil or (this_sigattrlog[33]).matched) and (this_sigattrlog[33]).wp1 ~= nil then
-                                    local l_0_16 = (this_sigattrlog[32]).utf8p1
-                                  end
-                                  -- DECOMPILER ERROR at PC461: Confused about usage of register: R0 in 'UnsetPending'
-
-                                  -- DECOMPILER ERROR at PC465: Confused about usage of register: R0 in 'UnsetPending'
-
-                                  do
-                                    if l_0_16 ~= nil then
-                                      local l_0_17 = (mp.ContextualExpandEnvironmentVariables)(l_0_16)
-                                      ;
-                                      (bm.add_related_file)(l_0_17)
-                                    end
-                                    return mp.INFECTED
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
 end
 

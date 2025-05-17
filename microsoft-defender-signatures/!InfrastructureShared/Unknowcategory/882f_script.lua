@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
-  return mp.CLEAN
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and pehdr.NumberOfSections == 8 then
+  (pe.set_image_filename)("\"myapp.exe\" /install")
+  ;
+  (pe.reemulate)()
 end
-if (pe.get_exports)() > 100 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

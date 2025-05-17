@@ -5,27 +5,29 @@
 -- function num : 0
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[3]).matched then
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
   do
-    if (this_sigattrlog[3]).utf8p1 ~= nil then
-      local l_0_0, l_0_2, l_0_4 = nil, nil
+    if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).wp2 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).wp2 ~= nil then
+      local l_0_1 = (this_sigattrlog[3]).utf8p2
+    else
     end
+    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+
     do
-      if (this_sigattrlog[3]).np2 ~= nil then
-        local l_0_1, l_0_3, l_0_5 = , (this_sigattrlog[3]).np2
+      if (not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).wp2 == nil or (this_sigattrlog[6]).matched) and (this_sigattrlog[6]).wp2 ~= nil then
+        local l_0_2 = (this_sigattrlog[5]).utf8p2
       end
-      -- DECOMPILER ERROR at PC21: Confused about usage of register: R1 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC71: Confused about usage of register: R0 in 'UnsetPending'
 
-      -- DECOMPILER ERROR at PC23: Confused about usage of register: R1 in 'UnsetPending'
-
-      if l_0_3 == 3 or l_0_3 == 0 then
+      if (string.find)(l_0_2, "smbclient", 1, true) then
         return mp.CLEAN
       end
-      local l_0_6 = nil
-      -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
-
-      ;
-      (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), {useragent = (nri.GetHttpRequestHeader)("User-Agent"), SmartScreen_category = l_0_6, SmartScreen_determination = l_0_3})
       return mp.INFECTED
     end
   end

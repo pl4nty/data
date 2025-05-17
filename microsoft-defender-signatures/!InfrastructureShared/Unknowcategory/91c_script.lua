@@ -3,38 +3,46 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R1 in 'AssignReg'
 
 do
   if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
+    local l_0_2 = nil
   end
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_2, l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2), (bm.get_process_relationships)()
-    if l_0_3 == nil then
-      return mp.CLEAN
+  do
+    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+      local l_0_0 = (this_sigattrlog[2]).utf8p1
     end
-    for l_0_7,l_0_8 in ipairs(l_0_3) do
-      local l_0_4 = nil
-      -- DECOMPILER ERROR at PC46: Confused about usage of register: R7 in 'UnsetPending'
+    local l_0_3 = nil
+    if l_0_3 ~= nil then
+      local l_0_1 = nil
+      if (sysio.IsFileExists)(l_0_3) then
+        (bm.add_related_file)(l_0_3)
+        ;
+        (table.insert)({}, l_0_3)
+        -- DECOMPILER ERROR at PC52: Confused about usage of register: R2 in 'UnsetPending'
 
-      if R7_PC46.image_path ~= nil and (string.lower)((string.match)(R7_PC46.image_path, "\\([^\\]+)$")) == "msiexec.exe" then
-        return mp.CLEAN
+        ;
+        (MpCommon.SetPersistContextNoPath)("ServiceCreationScript", {}, 100)
       end
-    end
-    if l_0_2 ~= nil then
-      local l_0_9 = nil
-      for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
-        local l_0_10 = nil
-        -- DECOMPILER ERROR at PC87: Confused about usage of register: R8 in 'UnsetPending'
+      if l_0_1 ~= nil then
+        local l_0_4 = nil
+        for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+          local l_0_5 = nil
+          -- DECOMPILER ERROR at PC67: Confused about usage of register: R8 in 'UnsetPending'
 
-        if (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)((string.lower)((string.match)(R7_PC46.image_path, "\\([^\\]+)$")))) == true then
-          (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((string.lower)((string.match)(R7_PC46.image_path, "\\([^\\]+)$"))))
+          R8_PC67 = (mp.ContextualExpandEnvironmentVariables)(R8_PC67)
+          if (sysio.IsFileExists)(R8_PC67) == true then
+            (bm.add_related_file)(R8_PC67)
+          end
         end
       end
-    end
-    do
-      return mp.INFECTED
+      do
+        do
+          do return mp.INFECTED end
+          return mp.CLEAN
+        end
+      end
     end
   end
 end

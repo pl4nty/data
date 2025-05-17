@@ -3,28 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 == nil or l_0_0 == "" then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if ((hstrlog[1]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[2]).matched) or (hstrlog[1]).matched and (hstrlog[5]).matched and (hstrlog[6]).matched and (hstrlog[2]).matched then
+  return mp.INFECTED
 end
-local l_0_3 = (string.match)(l_0_0, "(.*)%.(%a+)->%w+/%w+.bin$")
-if l_0_3 == nil or l_0_0 == nil then
-  l_0_3 = l_0_0
-  local l_0_1, l_0_2 = nil
-else
-  do
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R2 in 'UnsetPending'
-
-    l_0_3 = l_0_3 .. "." .. l_0_1
-    l_0_3 = (MpCommon.PathToWin32Path)(l_0_3)
-    if l_0_3 == nil or l_0_3 == "" then
-      return mp.CLEAN
-    end
-    l_0_3 = (string.lower)(l_0_3)
-    if (string.find)(l_0_3, ".:\\program files %(x86%)\\blp\\api\\office tools\\") ~= nil then
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
-end
+return mp.CLEAN
 

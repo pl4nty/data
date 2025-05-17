@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 1) then
-  (mp.set_mpattribute)("Lua:BafsCode1")
-end
-if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 3) then
-  (mp.set_mpattribute)("Lua:BafsCode3")
+if (mp.get_mpattributesubstring)("MpContentDetected") and ((mp.get_mpattributesubstring)("Detection:HackTool:") or (mp.get_mpattributesubstring)("Detection:VirTool:")) and not (mp.get_mpattributesubstring)("AutoKMS") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

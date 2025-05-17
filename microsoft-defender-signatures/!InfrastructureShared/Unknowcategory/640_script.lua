@@ -3,39 +3,30 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0, l_0_1 = pcall(mp.getfilename, mp.FILEPATH_QUERY_FNAME)
+if l_0_0 then
+  local l_0_2 = (string.sub)(l_0_1, -5)
+  if l_0_2 ~= ".lili" and l_0_2 ~= ".hoho" and l_0_2 ~= ".mama" and l_0_2 ~= ".crcr" then
+    l_0_2 = (string.sub)(l_0_1, -4)
+    if l_0_2 ~= ".log" then
+      return mp.CLEAN
+    end
+  end
+  local l_0_3 = headerpage[1]
+  local l_0_4 = (mp.readu_u32)(headerpage, 18)
+  if l_0_3 > 2 then
+    return mp.CLEAN
+  end
+  if l_0_4 ~= (mp.getfilesize)() - 21 then
+    return mp.CLEAN
+  end
+  if l_0_4 == 0 then
+    return mp.CLEAN
+  end
+  ;
+  (mp.set_mpattribute)("BM_KnotCryptDataFile")
+end
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1, l_0_2 = , nil
-  -- DECOMPILER ERROR at PC29: Overwrote pending register: R2 in 'AssignReg'
-
-  if not (this_sigattrlog[1]).matched or (this_sigattrlog[3]).matched then
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC38: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC43: Confused about usage of register: R3 in 'UnsetPending'
-
-    if ((this_sigattrlog[3]).matched and nil == nil) or not (string.find)(nil, "\\inetcache\\content.mso", 1, true) then
-      return mp.CLEAN
-    end
-    do
-      if l_0_2 < l_0_3 and l_0_3 - l_0_2 <= 30000000 then
-        local l_0_4 = nil
-        for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-          local l_0_5 = nil
-          -- DECOMPILER ERROR at PC68: Confused about usage of register: R9 in 'UnsetPending'
-
-          R9_PC68 = (mp.ContextualExpandEnvironmentVariables)(R9_PC68)
-          ;
-          (bm.add_threat_file)(R9_PC68)
-        end
-        return mp.INFECTED
-      end
-      return mp.CLEAN
-    end
-  end
+  return mp.CLEAN
 end
 

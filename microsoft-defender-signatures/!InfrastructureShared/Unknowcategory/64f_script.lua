@@ -3,74 +3,55 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[5]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil
-  else
+if (bm.GetSignatureMatchDuration)() > 100000000 then
+  return mp.CLEAN
+end
+local l_0_0 = nil
+if (this_sigattrlog[5]).matched then
+  l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
+end
+if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+  if (string.find)(l_0_0, "sqlite.dll", 1, true) or (string.find)(l_0_0, "axhub.dll", 1, true) or (string.find)(l_0_0, ".ocx", 1, true) then
+    return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[6]).utf8p2) > 3 then
-    local l_0_5 = nil
-    -- DECOMPILER ERROR at PC41: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC59: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC68: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC77: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC86: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC95: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC104: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC113: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC120: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC127: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC136: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC145: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC154: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
-
-    if ((string.find)((string.lower)((this_sigattrlog[6]).utf8p2), ".dll", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), ".cpl", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), ".ocx", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), ".tmp", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), ".dat", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), ".tlb", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), "-", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), ".exe", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), ".xll", 1, true) == nil and (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), "\\microsoft\\word\\startup\\%a+.%a") ~= nil) or (string.find)((string.lower)((this_sigattrlog[6]).utf8p2), "\\appdata\\roaming\\%a+.dll") ~= nil then
-      local l_0_6 = nil
-      if (mp.GetExecutablesFromCommandLine)(l_0_5) ~= nil then
-        for l_0_10,l_0_11 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_5)) do
-          local l_0_7 = nil
-          -- DECOMPILER ERROR at PC171: Confused about usage of register: R7 in 'UnsetPending'
-
-          R7_PC171 = (mp.ContextualExpandEnvironmentVariables)(R7_PC171)
-          ;
-          (bm.add_related_file)(R7_PC171)
+  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  if l_0_1 ~= nil then
+    for l_0_5,l_0_6 in ipairs(l_0_1) do
+      l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+      ;
+      (bm.add_related_file)(l_0_6)
+      local l_0_7 = (MpCommon.PathToWin32Path)(l_0_6)
+      if l_0_7 == nil then
+        return mp.CLEAN
+      end
+      l_0_7 = (string.lower)(l_0_7)
+      local l_0_8 = (MpCommon.QueryPersistContext)(l_0_7, "NewPECreatedNoCert")
+      if not l_0_8 then
+        return mp.CLEAN
+      end
+      if (mp.IsKnownFriendlyFile)(l_0_7, true, false) == true then
+        return mp.CLEAN
+      end
+      local l_0_9 = (sysio.GetFileLastWriteTime)(l_0_7)
+      if ((sysio.GetLastResult)()).Success and l_0_9 ~= 0 then
+        l_0_9 = l_0_9 / 10000000 - 11644473600
+        local l_0_10 = (MpCommon.GetCurrentTimeT)()
+        if l_0_10 < l_0_9 or l_0_10 - (l_0_9) > 600 then
+          return mp.CLEAN
         end
+        return mp.INFECTED
       end
       do
         do
-          do return mp.INFECTED end
-          return mp.CLEAN
+          do return mp.CLEAN end
+          -- DECOMPILER ERROR at PC144: LeaveBlock: unexpected jumping out DO_STMT
+
         end
       end
     end
   end
 end
+l_0_1 = mp
+l_0_1 = l_0_1.CLEAN
+return l_0_1
 

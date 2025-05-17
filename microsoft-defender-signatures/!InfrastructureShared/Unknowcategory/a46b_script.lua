@@ -3,21 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 98304 then
+local l_0_0 = (this_sigattrlog[8]).utf8p1
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if l_0_0 < 81920 then
+l_0_0 = (string.lower)(l_0_0)
+if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
   return mp.CLEAN
 end
-local l_0_1 = tostring(headerpage)
-if (string.find)(l_0_1, "\n", 1, true) ~= nil then
-  return mp.CLEAN
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
 end
-if (string.match)(l_0_1, "%(function%((%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+)") == nil then
-  return mp.CLEAN
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
 end
-;
-(mp.set_mpattribute)("SCRIPT:Worm:JS/Proslikefan_Lowfi3")
-return mp.CLEAN
+return mp.INFECTED
 

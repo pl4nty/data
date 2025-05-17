@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:ClaymoreDual")
+(mp.set_mpattribute)("PUA:Block:GlobalUpdate")
 return mp.INFECTED
 

@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (bm.get_current_process_startup_info)()
-  if l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-    local l_0_1 = (this_sigattrlog[1]).utf8p2
-    if l_0_1 ~= nil and (string.len)(l_0_1) > 2 then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 11, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(l_0_1, 4)
+l_0_1 = (mp.readu_u32)(l_0_0, 1)
+local l_0_2 = (pe.get_api_id)(l_0_1)
+if l_0_2 == 3267971814 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 7, "\235")
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

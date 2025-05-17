@@ -3,14 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-if l_0_0:find(" /n ", 1, true) == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R1 in 'AssignReg'
+
+if l_0_0 ~= nil then
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC19: Overwrote pending register: R2 in 'AssignReg'
+
+  local l_0_2 = nil
+  l_0_2 = l_0_2 .. "\000\000"
+  ;
+  (mp.ReportLowfi)(l_0_2, 618978737)
 end
-local l_0_1 = "|/xb|/in|/un|/u0|/u1|/rt|/i0|/i1|/i2|/b1|/p1|/up|/va|/vxxv|/mkey|/cp|"
-local l_0_2 = l_0_0:match("/i:\"(/%w+)\"")
-if l_0_2 == nil or l_0_2 == "" or l_0_1:find("|" .. l_0_2 .. "|", 1, true) == nil then
-  return mp.CLEAN
+do
+  return mp.INFECTED
 end
-return mp.INFECTED
 

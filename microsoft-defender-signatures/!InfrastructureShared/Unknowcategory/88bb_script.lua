@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)(pevars.sigaddr) then
-  if (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 then
-    return mp.INFECTED
-  end
-  if (pe.query_import)(pe.IMPORT_STATIC, 3150467781) ~= 0 then
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
+;
+(bm.add_threat_file)(l_0_0)
+return mp.INFECTED
 

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 110592 and l_0_0 <= 131072 and pehdr.NumberOfSections == 6 and ((pesecs[1]).VirtualSize > 4096 or (pesecs[1]).VirtualSize < 8192) then
   return mp.INFECTED
 end
 return mp.CLEAN

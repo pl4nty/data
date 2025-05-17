@@ -3,28 +3,24 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  (bm.request_SMS)(l_0_0.ppid, "M")
+end
 do
-  if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
-      ;
-      (bm.add_threat_file)(R6_PC25)
+  if (this_sigattrlog[3]).matched == true then
+    local l_0_1 = (this_sigattrlog[3]).ppid
+    if l_0_1 ~= nil then
+      (bm.request_SMS)(l_0_1, "M")
     end
   end
   do
+    if (this_sigattrlog[4]).matched == true then
+      local l_0_2 = (this_sigattrlog[4]).ppid
+      if l_0_2 ~= nil then
+        (bm.request_SMS)(l_0_2, "M")
+      end
+    end
     return mp.INFECTED
   end
 end

@@ -3,16 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 1024000 then
-  return mp.INFECTED
-end
-local l_0_1 = 0
-if (hstrlog[1]).matched then
-  l_0_1 = (hstrlog[1]).hitcount
-end
-if (hstrlog[2]).matched or l_0_1 > 1 then
-  return mp.INFECTED
+if (pe.isdynamic_va)(pevars.sigaddr) then
+  (mp.set_mpattribute)("PEBMPAT:Simda:AntiEmuProcessName")
+  ;
+  (pe.set_regval)(pe.REG_EAX, 0)
 end
 return mp.CLEAN
 

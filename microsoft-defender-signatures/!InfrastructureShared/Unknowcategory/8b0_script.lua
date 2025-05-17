@@ -3,27 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if l_0_1:sub(-7) == "\\startup" then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_2 == "winword.exe" or l_0_2 == "fltldr.exe" then
+      (mp.set_mpattribute)("Lua:WinWordOrFltLdrDropStartup.A")
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("SCRIPT:PSLummaStealerObfus.B") then
-  return mp.CLEAN
-end
-local l_0_0 = ""
-l_0_0 = tostring(footerpage)
-l_0_0 = (string.lower)(l_0_0)
-l_0_0 = (string.gsub)(l_0_0, "%z", "")
-l_0_0 = (string.gsub)(l_0_0, " ", "")
-local l_0_1 = 0
-for l_0_5 in (string.gmatch)(l_0_0, "%-as%[type%]%)::%$") do
-  l_0_1 = l_0_1 + 1
-end
-local l_0_6 = 0
-for l_0_10 in (string.gmatch)(l_0_0, "%d%d+,") do
-  l_0_6 = l_0_6 + 1
-end
-if l_0_1 >= 3 and l_0_6 >= 512 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

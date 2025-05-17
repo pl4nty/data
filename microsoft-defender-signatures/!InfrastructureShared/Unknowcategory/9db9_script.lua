@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:FileSizeLE80000.A") and (mp.get_mpattribute)("Lua:FileSizeGEC350") and (mp.get_mpattribute)("MpHasExpensiveLoop") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.get_mpattribute)("LUA:OverlaySize_0xd30_to_0xd40") then
-  return mp.INFECTED
+if peattributes.isdll and (mp.getfilesize)() < 390000 then
+  if mp.HSTR_WEIGHT >= 11 then
+    return mp.SUSPICIOUS
+  end
+  if mp.HSTR_WEIGHT >= 10 then
+    (pe.set_peattribute)("hstr_exhaustive", true)
+    ;
+    (pe.reemulate)()
+  end
+  return mp.LOWFI
 end
 return mp.CLEAN
 

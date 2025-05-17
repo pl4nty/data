@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
-end
-if (string.find)((string.lower)(l_0_0), "\\svchost.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\installshield\\setup.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\installshield\\x32\\setup.exe", 1, true) then
+if peattributes.ismsil == true and peattributes.no_security == true and (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[5]).matched and (hstrlog[6]).matched and ((hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched) then
   return mp.INFECTED
 end
 return mp.CLEAN

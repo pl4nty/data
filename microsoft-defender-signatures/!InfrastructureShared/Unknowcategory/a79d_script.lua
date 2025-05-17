@@ -3,66 +3,37 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-if (hstrlog[1]).matched then
-  local l_0_0 = (mp.readfile)((pe.foffset_va)((hstrlog[1]).VA + 14), 1)
-  local l_0_1 = (mp.readfile)((pe.foffset_va)((hstrlog[1]).VA + 17), 1)
-  ;
-  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_0), (string.byte)(l_0_1)))
-else
-  do
-    if (hstrlog[2]).matched then
-      local l_0_2 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA + 6), 1)
-      local l_0_3 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA + 14), 1)
-      ;
-      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_2), (string.byte)(l_0_3)))
-    else
-      do
-        if (hstrlog[3]).matched then
-          local l_0_4 = (mp.readfile)((pe.foffset_va)((hstrlog[3]).VA + 4), 1)
-          local l_0_5 = (mp.readfile)((pe.foffset_va)((hstrlog[3]).VA + 12), 1)
-          ;
-          (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_4), (string.byte)(l_0_5)))
-        else
-          do
-            if (hstrlog[4]).matched then
-              local l_0_6 = (mp.readfile)((pe.foffset_va)((hstrlog[4]).VA + 6), 1)
-              local l_0_7 = (mp.readfile)((pe.foffset_va)((hstrlog[4]).VA + 14), 1)
-              ;
-              (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_6), (string.byte)(l_0_7)))
-            else
-              do
-                if (hstrlog[5]).matched then
-                  local l_0_8 = (mp.readfile)((pe.foffset_va)((hstrlog[5]).VA - 1), 1)
-                  local l_0_9 = (mp.readfile)((pe.foffset_va)((hstrlog[5]).VA + 11), 1)
-                  ;
-                  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_8), (string.byte)(l_0_9)))
-                else
-                  do
-                    if (hstrlog[6]).matched then
-                      local l_0_10 = (mp.readfile)((pe.foffset_va)((hstrlog[6]).VA + 9), 1)
-                      ;
-                      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_10), 6))
-                    else
-                      do
-                        do
-                          if (hstrlog[7]).matched then
-                            local l_0_11 = (mp.readfile)((pe.foffset_va)((hstrlog[7]).VA + 9), 1)
-                            ;
-                            (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_11), 6))
-                          end
-                          return mp.INFECTED
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
+add_related_file_wrapper = function(l_1_0)
+  -- function num : 0_0
+  if l_1_0 ~= nil then
+    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
+    for l_1_5,l_1_6 in ipairs(l_1_1) do
+      l_1_6 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_1_6))
+      if (string.find)(l_1_6, "cmstp.exe$") == nil and (sysio.IsFileExists)(l_1_6) then
+        (bm.add_related_file)(l_1_6)
       end
     end
   end
 end
+
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+    local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+    if l_0_7 == 1 and ((string.find)(l_0_8, "vpn", 1, true) or (string.find)(l_0_8, ":\\users\\", 1, true) or (string.find)(l_0_8, "\\msiexe.exe", 1, true) or (string.find)(l_0_8, ":\\program files", 1, true) or (string.find)(l_0_8, ":\\windows\\immersivecontrolpanel\\systemsettings.exe", 1, true)) then
+      return mp.CLEAN
+    end
+  end
+end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[1]).utf8p2)
+end
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[2]).utf8p1)
+end
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[2]).utf8p2)
+end
+return mp.INFECTED
 

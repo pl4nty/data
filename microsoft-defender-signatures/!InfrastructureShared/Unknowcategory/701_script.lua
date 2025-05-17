@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == 8 then
-  (mp.set_mpattribute)("MpIsInMemoryScan")
+if not (mp.get_mpattribute)("MpInternal_IsPliScan") then
+  return mp.CLEAN
 end
+;
+(pe.set_peattribute)("disable_dropper_rescan", true)
 return mp.CLEAN
 

@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.sub)(l_0_0, -8, -8) == "." or (string.sub)(l_0_0, -8, -8) == " " then
-  local l_0_1 = (string.sub)(l_0_0, -7, -5)
-  if l_0_1 == "doc" or l_0_1 == "jpg" or l_0_1 == "pdf" or l_0_1 == "zip" or l_0_1 == "(1)" or l_0_1 == "   " then
-    local l_0_2 = (string.sub)(l_0_0, -4)
-    if l_0_2 == ".bat" or l_0_2 == ".scr" or l_0_2 == ".cpl" or l_0_2 == ".cmd" or l_0_2 == ".pif" then
-      return mp.INFECTED
-    end
-  end
-end
-do
+if mp.HEADERPAGE_SZ < 256 then
   return mp.CLEAN
 end
+local l_0_0 = (mp.readu_u16)(headerpage, 1)
+local l_0_1 = (mp.readu_u16)(headerpage, 3)
+if l_0_0 == 0 or l_0_1 == 0 or mp.HEADERPAGE_SZ < l_0_0 + 8 or mp.HEADERPAGE_SZ < l_0_1 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(headerpage, l_0_0 + 1) == 610044232 and (mp.readu_u32)(headerpage, l_0_0 + 5) == 1465275656 and headerpage[l_0_1] == 195 then
+  (mp.set_mpattribute)("MpNonPIIFileType")
+  return mp.INFECTED
+end
+return mp.CLEAN
 

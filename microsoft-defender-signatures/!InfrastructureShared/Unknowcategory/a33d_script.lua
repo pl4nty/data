@@ -3,16 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetSSLCertificate)()
-local l_0_1 = {}
-l_0_1.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-l_0_1.Subject = l_0_0.Subject
-l_0_1.Issuer = l_0_0.Issuer
-l_0_1.ValidFrom = l_0_0.ValidFrom
-l_0_1.ValidTo = l_0_0.ValidTo
-l_0_1.FingerprintSha1 = l_0_0.FingerprintSha1
-l_0_1.FingerprintSha256 = l_0_0.FingerprintSha256
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_1)
-return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[2]).utf8p2) > 3 then
+    local l_0_5 = nil
+    for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+      local l_0_6 = nil
+      -- DECOMPILER ERROR at PC35: Confused about usage of register: R6 in 'UnsetPending'
+
+      if (sysio.IsFileExists)(R6_PC35) then
+        (bm.add_related_file)(R6_PC35)
+        ;
+        (mp.ReportLowfi)(R6_PC35, 2473092433)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
+end
 

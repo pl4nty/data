@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[4]).Name == ".rsrc" and (pesecs[4]).Characteristics == 1073741888 and (mp.getfilesize)() >= 10000000 and (mp.getfilesize)() <= 20000000 then
+if mp.HSTR_WEIGHT >= 13 then
   return mp.INFECTED
+end
+if mp.HSTR_WEIGHT >= 12 then
+  (mp.set_mpattribute)("HSTR:Adware:Win32/ZoomyLib.D")
+end
+if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.CLEAN
 

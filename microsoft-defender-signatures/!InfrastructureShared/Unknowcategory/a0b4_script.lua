@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 64)
-local l_0_1 = (string.find)(l_0_0, "‰U\248", 1, true)
-if l_0_1 ~= nil then
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 9, "")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 18, "")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 24, "")
+if peattributes.isexe == true then
+  if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
+  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+  end
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

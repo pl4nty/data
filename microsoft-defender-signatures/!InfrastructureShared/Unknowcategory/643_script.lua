@@ -3,25 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = nil
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and (string.find)(l_0_0, " copy ", 1, true) and (string.find)(l_0_0, "\\windows\\temp\\", 1, true) and ((string.find)(l_0_0, "\\share$\\", 1, true) or (string.find)(l_0_0, " \\\\", 1, true) or (string.find)(l_0_0, " \"\"\\\\", 1, true)) then
-    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    if l_0_1 ~= nil then
-      for l_0_5,l_0_6 in ipairs(l_0_1) do
-        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-        ;
-        (bm.add_related_file)(l_0_6)
-      end
-    end
-    do
-      do
-        do return mp.INFECTED end
-        return mp.CLEAN
-      end
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if (string.byte)(l_0_0) == (string.byte)("%") and ((string.match)(l_0_0, "%%temp%%\\tmp%d+\\%a+%.exe$") or (string.match)(l_0_0, "%%temp%%\\{%x+%-%x+%-%x+%-%x+%-%x+}\\%a+%.exe$")) and (string.match)(l_0_0, "\\[b-t][aeiou][b-t][aeiou]%a+%.exe$") then
+      return mp.INFECTED
     end
   end
+  if ((string.match)(l_0_0, "\\local\\temp\\tmp%d+\\%a+%.exe$") or (string.match)(l_0_0, "\\local\\temp\\{%x+%-%x+%-%x+%-%x+%-%x+}\\%a+%.exe$")) and (string.match)(l_0_0, "\\[b-t][aeiou][b-t][aeiou]%a+%.exe$") then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (string.len)((mp.getfilename)()) < 15 then
+if (mp.getfilesize)() > 14680064 then
   return mp.CLEAN
 end
-if (string.lower)((string.sub)((mp.getfilename)(), -15)) == "flashplayer.hta" then
+if #(mp.enum_mpattributesubstring)("SCPT:VoorheesF") >= 3 then
   return mp.INFECTED
+else
+  return mp.CLEAN
 end
 return mp.CLEAN
 

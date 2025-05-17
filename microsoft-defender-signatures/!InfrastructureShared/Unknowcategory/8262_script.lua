@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find(".url", 1, true) then
+if (pesecs[5]).Name == ".qtmetad" and (pesecs[5]).Characteristics == 1342177344 and (pesecs[6]).Name == ".qtmimed" and (pesecs[6]).Characteristics == 1342177344 then
   return mp.INFECTED
 end
 return mp.CLEAN

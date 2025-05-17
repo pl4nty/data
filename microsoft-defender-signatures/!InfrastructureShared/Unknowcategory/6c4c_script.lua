@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("MpTrustCheck_NotDigitallySigned") then
-  return mp.INFECTED
+if (hstrlog[5]).matched then
+  (mp.set_mpattribute)("Lowfi:Komodia:LSP:NoVuln")
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

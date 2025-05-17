@@ -3,27 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetBruteMatchData)()
-if not l_0_0 then
-  return mp.CLEAN
-end
-local l_0_1 = ""
-if l_0_0.is_header then
-  l_0_1 = (string.lower)(tostring(headerpage))
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = nil
+if (this_sigattrlog[5]).matched then
+  l_0_2 = (this_sigattrlog[5]).image_path
 else
-  l_0_1 = (string.lower)(tostring(footerpage))
+  if (this_sigattrlog[6]).matched then
+    l_0_2 = (this_sigattrlog[6]).image_path
+  end
 end
-if not l_0_1 then
-  return mp.CLEAN
+if l_0_2 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_1) do
+    if l_0_7.image_path == l_0_2 then
+      local l_0_8, l_0_9 = (string.match)(l_0_7.ppid, "pid:(%w+),ProcessStart:(%w+)")
+      local l_0_10 = tonumber(l_0_8)
+      local l_0_11 = tonumber(l_0_9)
+      local l_0_12, l_0_13 = (mp.bsplit)(l_0_11, 32)
+      local l_0_14 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_10, l_0_12, l_0_13)
+      ;
+      (mp.TriggerScanResource)("ems", l_0_14)
+    end
+  end
 end
-local l_0_2 = "(?:set|add)-mppreference\\s+-exclusionpath\\s+[\"\']?c:\\\\+users\\\\+.*\\\\+music\\\\*?%?[\"\']?(?:[\\s;]|$)"
-local l_0_3 = false
-l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
-if l_0_3 == false then
-  return mp.CLEAN
+do
+  return mp.INFECTED
 end
-return mp.INFECTED
 

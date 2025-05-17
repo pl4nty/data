@@ -3,58 +3,57 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == false then
-  return mp.CLEAN
-end
-if pehdr.TimeDateStamp ~= 0 then
-  local l_0_0 = (MpCommon.GetCurrentTimeT)()
-  if pehdr.TimeDateStamp < l_0_0 then
-    local l_0_1 = l_0_0 - pehdr.TimeDateStamp
-    if l_0_1 <= 345600 then
-      (mp.set_mpattribute)("Lua:PETimeStampLastFiveDays")
-    end
-    if l_0_1 <= 777600 then
-      (mp.set_mpattribute)("Lua:PETimeStampLastTenDays")
-    end
-    if l_0_1 <= 2592000 then
-      (mp.set_mpattribute)("Lua:PETimeStampLastThirtyDays")
-    end
-    if l_0_1 <= 31536000 then
-      (mp.set_mpattribute)("Lua:PETimeStampLastYear")
+Infrastructure_ScanBlofeldCatKeyPath = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = (sysio.RegOpenKey)(l_1_0)
+  local l_1_2 = 0
+  if l_1_1 then
+    local l_1_3 = (sysio.RegEnumKeys)(l_1_1)
+    for l_1_7,l_1_8 in pairs(l_1_3) do
+      if l_1_8 then
+        local l_1_9 = (sysio.RegOpenKey)(l_1_0 .. "\\\\" .. l_1_8)
+        if l_1_9 then
+          local l_1_10 = (sysio.GetRegValueAsString)(l_1_9, "UpgradeData")
+          if l_1_10 and (string.len)(l_1_10) > 49 then
+            (MpCommon.SetGlobalMpAttribute)("BlofeldCatRegKey")
+            ;
+            (MpDetection.ScanResource)("regkeyvalue://" .. l_1_0 .. "\\" .. l_1_8 .. "\\\\UpgradeData")
+            ;
+            (MpCommon.DeleteGlobalMpAttribute)("BlofeldCatRegKey")
+          end
+        end
+      end
+      do
+        do
+          l_1_2 = l_1_2 + 1
+          if l_1_2 == 50 then
+            SetLuaInstrLimit((crypto.shl64)(1, 24))
+            l_1_2 = 0
+          end
+          -- DECOMPILER ERROR at PC67: LeaveBlock: unexpected jumping out DO_STMT
+
+        end
+      end
     end
   end
 end
-do
-  local l_0_2 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA
-  if l_0_2 ~= 0 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).Size ~= 0 then
-    (mp.readprotection)(false)
-    local l_0_3 = (mp.readu_u32)((pe.mmap_rva)(l_0_2 + 20, 4), 1)
-    if l_0_3 < 5 then
-      (mp.set_mpattribute)("Lua:ETWithLessThanFiveExports")
-    end
-    local l_0_4 = (MpCommon.GetCurrentTimeT)()
-    if pehdr.TimeDateStamp < l_0_4 then
-      local l_0_5 = l_0_4 - pehdr.TimeDateStamp
-      if l_0_5 <= 345600 then
-        (mp.set_mpattribute)("Lua:ExportTimeStampLastFiveDays")
-      end
-      if l_0_5 <= 777600 then
-        (mp.set_mpattribute)("Lua:ExportTimeStampLastTenDays")
-      end
-      if l_0_5 <= 2592000 then
-        (mp.set_mpattribute)("Lua:ExportTimeStampLastThirtyDays")
-      end
-      if l_0_5 <= 31536000 then
-        (mp.set_mpattribute)("Lua:ExportTimeStampLastYear")
-      end
-    end
-  else
-    do
-      if peattributes.isdll then
-        (mp.set_mpattribute)("Lua:DllWithNoExportTable")
-      end
-      return mp.CLEAN
+
+Infrastructure_ScanBlofeldCat = function()
+  -- function num : 0_1
+  Infrastructure_ScanBlofeldCatKeyPath("HKLM\\Software\\Microsoft\\DRM")
+  SetLuaInstrLimit((crypto.shl64)(1, 24))
+  local l_2_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\DRM")
+  local l_2_1 = 0
+  for l_2_5,l_2_6 in pairs(l_2_0) do
+    Infrastructure_ScanBlofeldCatKeyPath(l_2_6)
+    l_2_1 = l_2_1 + 1
+    if l_2_1 == 8 then
+      break
     end
   end
+  do
+    SetLuaInstrLimit((crypto.shl64)(1, 24))
+  end
 end
+
 

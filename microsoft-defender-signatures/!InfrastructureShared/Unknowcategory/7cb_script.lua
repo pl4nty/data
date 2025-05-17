@@ -3,14 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = 0
+if l_0_0 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_0) do
+    if l_0_7.image_path ~= nil then
+      local l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_7.image_path)
+      if (sysio.IsFileExists)(l_0_8) then
+        do
+          do
+            (bm.add_related_file)(l_0_8)
+            l_0_2 = l_0_2 + 1
+            if l_0_2 > 2 then
+              break
+            end
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out DO_STMT
+
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
+
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+      end
+    end
+  end
 end
-local l_0_3 = l_0_2:len()
-if l_0_3 > 14 and l_0_3 < 40 and l_0_2:find("^track_%d+%.exe") == 1 then
-  (mp.set_mpattribute)("Lua:SuspiciousPEFileName.C")
-end
-return mp.CLEAN
+return mp.INFECTED
 

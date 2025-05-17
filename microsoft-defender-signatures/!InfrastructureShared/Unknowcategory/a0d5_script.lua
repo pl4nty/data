@@ -3,13 +3,19 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.foffset_va)((hstrlog[1]).VA + 45)
-local l_0_1 = (mp.readfile)(l_0_0, 4)
-local l_0_2 = (pe.foffset_va)((mp.readu_u32)(l_0_1, 1))
-local l_0_3 = (mp.readfile)(l_0_2, 15)
-if l_0_3 == "D\000e\000l\000e\000t\000e\000d\000\000" then
-  (mp.set_mpattribute)("HSTR:BingSearchCby")
+do
+  if peattributes.isdll == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+      (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 264704 and l_0_0 <= 277272 then
+if (pesecs[7]).Name == ".taggant" and (pesecs[7]).Characteristics == 3758096448 then
   return mp.INFECTED
 end
 return mp.CLEAN

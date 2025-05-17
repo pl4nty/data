@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 56
-local l_0_1 = (hstrlog[3]).VA
-local l_0_2 = (hstrlog[4]).VA
-l_0_1 = (mp.bitor)(pehdr.ImageBase, l_0_1)
-l_0_2 = (mp.bitor)(pehdr.ImageBase, l_0_2)
-if not (pe.contains_va)(1, l_0_1) or not (pe.contains_va)(1, l_0_2) then
-  return mp.SUSPICIOUS
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 8 then
+    local l_0_1 = (string.lower)(l_0_0)
+    if (string.find)(l_0_1, "cpassword", 1, true) and (string.find)(l_0_1, "\\\\", 1, true) and ((string.find)(l_0_1, "/i", 1, true) or (string.find)(l_0_1, "-i", 1, true)) and (string.find)(l_0_1, "policies", 1, true) then
+      return mp.INFECTED
+    end
+  end
 end
-local l_0_3 = "HSTR:VirTool:Win32/DelfInject.W.info_" .. (string.format)("%.08x", l_0_1) .. "_" .. (string.format)("%.08x", l_0_2 + l_0_0)
-;
-(mp.set_mpattribute)(l_0_3)
-return mp.SUSPICIOUS
+do
+  return mp.CLEAN
+end
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and (l_0_0 == 135168 or l_0_0 == 139264) then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "word/_rels/document.xml.rels") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7.A0")
+(pe.set_peattribute)("dt_continue_after_unpacking", true)
 return mp.INFECTED
 

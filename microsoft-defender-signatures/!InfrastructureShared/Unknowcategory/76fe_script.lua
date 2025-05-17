@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+if (mp.bitand)(mp.HSTR_WEIGHT, 248) >= 8 then
+  if (mp.bitand)(mp.HSTR_WEIGHT, 7) >= 1 then
     return mp.INFECTED
   end
-  return mp.CLEAN
+  return mp.LOWFI
 end
+return mp.CLEAN
 

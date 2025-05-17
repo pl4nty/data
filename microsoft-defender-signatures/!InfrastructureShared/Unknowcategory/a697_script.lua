@@ -3,11 +3,47 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
+if peattributes.lastscn_writable ~= true then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections > 0 and epcode[1] == 72 and epcode[2] == 131 and epcode[3] == 236 and epcode[5] == 232 and epcode[11] == 131 and epcode[12] == 196 and epcode[13] == 40 and epcode[14] == 233 and (pesecs[1]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_lastscn_writable") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_executes_from_last_section") then
-  return mp.INFECTED
+if peattributes.epscn_islast ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.hasappendeddata ~= true then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA == 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).Size == 0 then
+  return mp.CLEAN
+end
+if peattributes.epscn_writable == false then
+  return mp.CLEAN
+end
+if peattributes.packed ~= false then
+  return mp.CLEAN
+end
+if peattributes.isdll ~= false then
+  return mp.CLEAN
+end
+if peattributes.hasexports ~= false then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 2 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 0 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).NameDW ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

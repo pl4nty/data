@@ -3,26 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
+local l_0_0 = "(.+\\)[^\\]+%."
+local l_0_1 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
+local l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
+local l_0_3 = ((string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0))
+local l_0_4 = nil
+if (this_sigattrlog[4]).matched then
+  l_0_4 = (this_sigattrlog[4]).utf8p1
+else
+  if (this_sigattrlog[5]).matched then
+    l_0_4 = (this_sigattrlog[5]).utf8p1
+  end
+end
+if l_0_4 == nil then
   return mp.CLEAN
 end
-if peattributes.epscn_writable ~= true then
-  return mp.CLEAN
+if l_0_1 ~= nil and l_0_1 == l_0_2 and l_0_1 == l_0_3 and l_0_1 == (string.match)((string.lower)(l_0_4), l_0_0) then
+  return mp.INFECTED
 end
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 1886613038 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1886613038 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
-  return mp.CLEAN
-end
-if (pesecs[1]).Characteristics ~= 4026531936 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

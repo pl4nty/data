@@ -3,46 +3,25 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
-  end
-  local l_0_1, l_0_2 = , (bm.get_process_relationships)()
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC17: Confused about usage of register: R7 in 'UnsetPending'
-
-    if (string.lower)(R7_PC17.image_path) ~= nil and ((string.find)((string.lower)(R7_PC17.image_path), "\\svchost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\msiexec.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\runtimebroker.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\maatunnel.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\cftpstes.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\explorer.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\dllhost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\msaccess.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\dwdesk.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\dsaccessservice.exe", 1, true)) then
-      return mp.CLEAN
-    end
-  end
-  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
-    local l_0_9 = nil
-    if (bm.get_current_process_startup_info)() == nil or ((bm.get_current_process_startup_info)()).command_line == nil or (string.find)((string.lower)(((bm.get_current_process_startup_info)()).command_line), "natsvc*") then
-      return mp.CLEAN
-    end
-    local l_0_10 = nil
-    if (mp.GetExecutablesFromCommandLine)(l_0_1) ~= nil then
-      for l_0_14,l_0_15 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-        local l_0_11 = nil
-        -- DECOMPILER ERROR at PC157: Confused about usage of register: R9 in 'UnsetPending'
-
-        if (string.find)(mp.CLEAN, "\\maslog_runxx.dl") then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC167: Confused about usage of register: R9 in 'UnsetPending'
-
-        ;
-        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(mp.CLEAN))
-      end
-    end
-  end
-  do
-    l_0_10 = mp
-    l_0_10 = l_0_10.INFECTED
-    return l_0_10
-  end
+local l_0_0 = (pe.get_regval)(pe.REG_ESI)
+if l_0_0 > 1048576 then
+  return mp.INFECTED
 end
+local l_0_1 = (pe.get_regval)(pe.REG_EAX)
+local l_0_2 = (pe.mmap_va)(pevars.sigaddr, 128)
+local l_0_3 = (mp.readu_u32)(l_0_2, 35)
+local l_0_4 = (pe.mmap_va)(l_0_3, 256)
+local l_0_5 = (mp.readu_u32)(l_0_2, 44)
+local l_0_6 = (mp.readu_u32)((pe.mmap_va)(l_0_5, 4), 1)
+local l_0_7 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
+local l_0_8 = "\190\000\000\000\000\189\001\000\000\000âË@%\255\000\000\000â≈âÔäóN\002@\000\015∂ \003\rJ\002@\000Å·\255\000\000\000äôN\002@\000àëN\002@\000\137\rJ\002@\000àüN\002@\000\015∂âN\002@\000\015∂”\001—Å\225\255\000\000\000\015∂ôN\002@\000∏N\003@\0000\0280ÉÓ\001u°√\000\000\000\000"
+local l_0_9 = (pe.mmap_va)(l_0_1, l_0_0)
+local l_0_10 = l_0_7 .. l_0_8 .. l_0_4 .. l_0_9
+;
+(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 2, l_0_0)
+;
+(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 107, l_0_6)
+;
+(mp.vfo_add_buffer)(l_0_10, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.INFECTED
 

@@ -3,24 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not peattributes.hasexports then
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 then
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 > 8 then
+if (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 then
   return mp.CLEAN
 end
-local l_0_2 = 0
-for l_0_6 = 1, l_0_0 do
-  local l_0_7 = (pe.mmap_string_rva)((l_0_1[l_0_6]).namerva, 64)
-  if l_0_7 == "Open" then
-    l_0_2 = l_0_2 + 1
-  end
-  if l_0_7 == "Close" then
-    l_0_2 = l_0_2 + 1
-  end
-end
-if l_0_2 < 2 then
+if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
-  return mp.CLEAN
+if (mp.getfilesize)() < 410000 and pehdr.NumberOfSections == 3 and pevars.epsec == 1 then
+  (mp.set_mpattribute)("attrmatch_rescan_psif")
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) ~= true then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

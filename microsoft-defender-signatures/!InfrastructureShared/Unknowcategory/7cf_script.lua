@@ -3,13 +3,18 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_3CXScan = function()
-  -- function num : 0_0
-  local l_1_0 = (MpCommon.ExpandEnvironmentVariables)("%localappdata%")
-  ;
-  (MpDetection.ScanResource)("file://" .. l_1_0 .. "\\Programs\\3CXDesktopApp\\app\\ffmpeg.dll")
-  ;
-  (MpDetection.ScanResource)("file://" .. l_1_0 .. "\\Programs\\3CXDesktopApp\\app\\d3dcompiler_47.dll")
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+do
+  if l_0_0 == mp.SCANREASON_AMSI then
+    local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+    if not l_0_1 then
+      return mp.CLEAN
+    end
+    l_0_1 = (string.lower)(l_0_1)
+    if l_0_1:find("portail_sync.exe", 1, true) then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-
 

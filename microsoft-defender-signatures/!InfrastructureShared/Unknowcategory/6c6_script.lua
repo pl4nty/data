@@ -3,18 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("ServiceCreationScript")
-if l_0_0 ~= nil then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    if (sysio.IsFileExists)(l_0_5) then
-      (mp.ReportLowfi)(l_0_5, 1919899276)
-      ;
-      (bm.add_related_file)(l_0_5)
-      return mp.INFECTED
-    end
-  end
-end
-do
+if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil then
   return mp.CLEAN
 end
+local l_0_0 = (this_sigattrlog[2]).utf8p1
+if (string.find)(l_0_0, "\\conhost.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

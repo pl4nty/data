@@ -3,21 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset + 1
-local l_0_2 = l_0_0.match_offset + 1 + 1024
-local l_0_3 = ((tostring(l_0_0.is_header and headerpage or footerpage)):sub(l_0_1, l_0_2)):lower()
-if not l_0_3 then
+if pehdr.AddressOfEntryPoint ~= 0 then
   return mp.CLEAN
 end
-local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_3)
-for l_0_8,l_0_9 in ipairs(l_0_4) do
-  if l_0_9:find("insert.ps1", 1, true) or l_0_9:find("get-bitlockerkeys.ps1", 1, true) then
-    return mp.CLEAN
-  end
-  if (sysio.IsFileExists)(l_0_9) and not (mp.IsKnownFriendlyFile)(l_0_9, false, false) then
-    (mp.ReportLowfi)(l_0_9, 443472619)
-  end
+if pehdr.SizeOfCode ~= 0 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 77 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 90 then
+  return mp.CLEAN
+end
+if epcode[4] ~= 235 then
+  return mp.CLEAN
+end
+if epcode[5] ~= 1 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData ~= 0 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).PointerToRawData ~= 0 then
+  return mp.CLEAN
+end
+if (pesecs[1]).Characteristics ~= 3758096480 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

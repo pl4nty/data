@@ -3,439 +3,101 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = nil
-  if (this_sigattrlog[2]).matched then
-    l_0_0 = (this_sigattrlog[2]).utf8p2
+ToGUID = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  return (string.format)("%02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x", l_1_0[l_1_1 + 3], l_1_0[l_1_1 + 2], l_1_0[l_1_1 + 1], l_1_0[l_1_1], l_1_0[l_1_1 + 5], l_1_0[l_1_1 + 4], l_1_0[l_1_1 + 7], l_1_0[l_1_1 + 6], l_1_0[l_1_1 + 8], l_1_0[l_1_1 + 9], l_1_0[l_1_1 + 10], l_1_0[l_1_1 + 11], l_1_0[l_1_1 + 12], l_1_0[l_1_1 + 13], l_1_0[l_1_1 + 14], l_1_0[l_1_1 + 15])
+end
+
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 ~= mp.SCANREASON_AMSI then
+  return mp.CLEAN
+end
+local l_0_1, l_0_2 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_APPNAME)
+if l_0_2 ~= "VSSAMSI" then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("MpVssAmsiScan")
+local l_0_3 = (mp.readu_u32)(headerpage, 1)
+local l_0_4 = (mp.readu_u32)(headerpage, 5)
+local l_0_5 = (mp.readu_u64)(headerpage, 9)
+local l_0_6 = (mp.readu_u32)(headerpage, 17)
+local l_0_7 = (mp.readu_u64)(headerpage, 21)
+if l_0_3 ~= 0 then
+  (mp.set_mpattributeex)("VSSAMSI_Version", l_0_3)
+end
+if l_0_5 ~= 0 then
+  (mp.set_mpattributeex)("VSSAMSI_ProcessStartKey", l_0_5)
+end
+if l_0_6 ~= 0 then
+  (mp.set_mpattributeex)("VSSAMSI_CallerPID", l_0_6)
+end
+if l_0_7 ~= 0 then
+  (mp.set_mpattributeex)("VSSAMSI_ProcessStartTime", l_0_7)
+end
+if l_0_4 == 0 then
+  (mp.set_mpattribute)("VSSAMSI_Shadow_Delete")
+  local l_0_8 = ToGUID(headerpage, 29)
+  local l_0_9 = (mp.readu_u32)(headerpage, 45)
+  local l_0_10 = (mp.readu_u32)(headerpage, 49)
+  if l_0_8 ~= 0 then
+    (mp.set_mpattribute)("VSSAMSI_Delete_ID:" .. l_0_8)
+  end
+  if l_0_9 == 0 then
+    (mp.set_mpattribute)("VSSAMSI_Delete_Object_Unknown")
   else
-    if (this_sigattrlog[3]).matched then
-      l_0_0 = (this_sigattrlog[3]).utf8p2
+    if l_0_9 == 1 then
+      (mp.set_mpattribute)("VSSAMSI_Delete_Object_None")
     else
-      if (this_sigattrlog[4]).matched then
-        l_0_0 = (this_sigattrlog[4]).utf8p2
+      if l_0_9 == 2 then
+        (mp.set_mpattribute)("VSSAMSI_Delete_Object_SnapshotSet")
       else
-        if (this_sigattrlog[5]).matched then
-          l_0_0 = (this_sigattrlog[5]).utf8p2
+        if l_0_9 == 3 then
+          (mp.set_mpattribute)("VSSAMSI_Delete_Object_Snapshot")
         else
-          if (this_sigattrlog[6]).matched then
-            l_0_0 = (this_sigattrlog[6]).utf8p2
+          if l_0_9 == 4 then
+            (mp.set_mpattribute)("VSSAMSI_Delete_Object_Provider")
           else
-            if (this_sigattrlog[7]).matched then
-              l_0_0 = (this_sigattrlog[7]).utf8p2
-            else
-              if (this_sigattrlog[8]).matched then
-                l_0_0 = (this_sigattrlog[8]).utf8p2
-              else
-                if (this_sigattrlog[9]).matched then
-                  l_0_0 = (this_sigattrlog[9]).utf8p2
-                else
-                  if (this_sigattrlog[10]).matched then
-                    l_0_0 = (this_sigattrlog[10]).utf8p2
-                  else
-                    if (this_sigattrlog[11]).matched then
-                      l_0_0 = (this_sigattrlog[11]).utf8p2
-                    else
-                      if (this_sigattrlog[12]).matched then
-                        l_0_0 = (this_sigattrlog[12]).utf8p2
-                      else
-                        if (this_sigattrlog[13]).matched then
-                          l_0_0 = (this_sigattrlog[13]).utf8p2
-                        else
-                          if (this_sigattrlog[14]).matched then
-                            l_0_0 = (this_sigattrlog[14]).utf8p2
-                          else
-                            if (this_sigattrlog[15]).matched then
-                              l_0_0 = (this_sigattrlog[15]).utf8p2
-                            else
-                              if (this_sigattrlog[16]).matched then
-                                l_0_0 = (this_sigattrlog[16]).utf8p2
-                              else
-                                if (this_sigattrlog[17]).matched then
-                                  l_0_0 = (this_sigattrlog[17]).utf8p2
-                                else
-                                  if (this_sigattrlog[18]).matched then
-                                    l_0_0 = (this_sigattrlog[18]).utf8p2
-                                  else
-                                    if (this_sigattrlog[19]).matched then
-                                      l_0_0 = (this_sigattrlog[19]).utf8p2
-                                    else
-                                      if (this_sigattrlog[20]).matched then
-                                        l_0_0 = (this_sigattrlog[20]).utf8p2
-                                      else
-                                        if (this_sigattrlog[21]).matched then
-                                          l_0_0 = (this_sigattrlog[21]).utf8p2
-                                        else
-                                          if (this_sigattrlog[22]).matched then
-                                            l_0_0 = (this_sigattrlog[22]).utf8p2
-                                          else
-                                            if (this_sigattrlog[23]).matched then
-                                              l_0_0 = (this_sigattrlog[23]).utf8p2
-                                            else
-                                              if (this_sigattrlog[24]).matched then
-                                                l_0_0 = (this_sigattrlog[24]).utf8p2
-                                              else
-                                                if (this_sigattrlog[25]).matched then
-                                                  l_0_0 = (this_sigattrlog[25]).utf8p2
-                                                else
-                                                  if (this_sigattrlog[26]).matched then
-                                                    l_0_0 = (this_sigattrlog[26]).utf8p2
-                                                  else
-                                                    if (this_sigattrlog[27]).matched then
-                                                      l_0_0 = (this_sigattrlog[27]).utf8p2
-                                                    else
-                                                      if (this_sigattrlog[28]).matched then
-                                                        l_0_0 = (this_sigattrlog[28]).utf8p2
-                                                      else
-                                                        if (this_sigattrlog[29]).matched then
-                                                          l_0_0 = (this_sigattrlog[29]).utf8p2
-                                                        else
-                                                          if (this_sigattrlog[30]).matched then
-                                                            l_0_0 = (this_sigattrlog[30]).utf8p2
-                                                          else
-                                                            if (this_sigattrlog[31]).matched then
-                                                              l_0_0 = (this_sigattrlog[31]).utf8p2
-                                                            else
-                                                              if (this_sigattrlog[32]).matched then
-                                                                l_0_0 = (this_sigattrlog[32]).utf8p2
-                                                              else
-                                                                if (this_sigattrlog[33]).matched then
-                                                                  l_0_0 = (this_sigattrlog[33]).utf8p2
-                                                                else
-                                                                  if (this_sigattrlog[34]).matched then
-                                                                    l_0_0 = (this_sigattrlog[34]).utf8p2
-                                                                  else
-                                                                    if (this_sigattrlog[35]).matched then
-                                                                      l_0_0 = (this_sigattrlog[35]).utf8p2
-                                                                    else
-                                                                      if (this_sigattrlog[36]).matched then
-                                                                        l_0_0 = (this_sigattrlog[36]).utf8p2
-                                                                      else
-                                                                        if (this_sigattrlog[37]).matched then
-                                                                          l_0_0 = (this_sigattrlog[37]).utf8p2
-                                                                        else
-                                                                          if (this_sigattrlog[38]).matched then
-                                                                            l_0_0 = (this_sigattrlog[38]).utf8p2
-                                                                          else
-                                                                            if (this_sigattrlog[39]).matched then
-                                                                              l_0_0 = (this_sigattrlog[39]).utf8p2
-                                                                            else
-                                                                              if (this_sigattrlog[40]).matched then
-                                                                                l_0_0 = (this_sigattrlog[40]).utf8p2
-                                                                              else
-                                                                                if (this_sigattrlog[41]).matched then
-                                                                                  l_0_0 = (this_sigattrlog[41]).utf8p2
-                                                                                else
-                                                                                  if (this_sigattrlog[42]).matched then
-                                                                                    l_0_0 = (this_sigattrlog[42]).utf8p2
-                                                                                  else
-                                                                                    if (this_sigattrlog[43]).matched then
-                                                                                      l_0_0 = (this_sigattrlog[43]).utf8p2
-                                                                                    else
-                                                                                      if (this_sigattrlog[44]).matched then
-                                                                                        l_0_0 = (this_sigattrlog[44]).utf8p2
-                                                                                      else
-                                                                                        if (this_sigattrlog[45]).matched then
-                                                                                          l_0_0 = (this_sigattrlog[45]).utf8p2
-                                                                                        else
-                                                                                          if (this_sigattrlog[46]).matched then
-                                                                                            l_0_0 = (this_sigattrlog[46]).utf8p2
-                                                                                          else
-                                                                                            if (this_sigattrlog[47]).matched then
-                                                                                              l_0_0 = (this_sigattrlog[47]).utf8p2
-                                                                                            else
-                                                                                              if (this_sigattrlog[48]).matched then
-                                                                                                l_0_0 = (this_sigattrlog[48]).utf8p2
-                                                                                              else
-                                                                                                if (this_sigattrlog[49]).matched then
-                                                                                                  l_0_0 = (this_sigattrlog[49]).utf8p2
-                                                                                                else
-                                                                                                  if (this_sigattrlog[50]).matched then
-                                                                                                    l_0_0 = (this_sigattrlog[50]).utf8p2
-                                                                                                  else
-                                                                                                    if (this_sigattrlog[51]).matched then
-                                                                                                      l_0_0 = (this_sigattrlog[51]).utf8p2
-                                                                                                    else
-                                                                                                      if (this_sigattrlog[52]).matched then
-                                                                                                        l_0_0 = (this_sigattrlog[52]).utf8p2
-                                                                                                      else
-                                                                                                        if (this_sigattrlog[53]).matched then
-                                                                                                          l_0_0 = (this_sigattrlog[53]).utf8p2
-                                                                                                        else
-                                                                                                          if (this_sigattrlog[54]).matched then
-                                                                                                            l_0_0 = (this_sigattrlog[54]).utf8p2
-                                                                                                          else
-                                                                                                            if (this_sigattrlog[55]).matched then
-                                                                                                              l_0_0 = (this_sigattrlog[55]).utf8p2
-                                                                                                            else
-                                                                                                              if (this_sigattrlog[56]).matched then
-                                                                                                                l_0_0 = (this_sigattrlog[56]).utf8p2
-                                                                                                              else
-                                                                                                                if (this_sigattrlog[57]).matched then
-                                                                                                                  l_0_0 = (this_sigattrlog[57]).utf8p2
-                                                                                                                else
-                                                                                                                  if (this_sigattrlog[58]).matched then
-                                                                                                                    l_0_0 = (this_sigattrlog[58]).utf8p2
-                                                                                                                  else
-                                                                                                                    if (this_sigattrlog[59]).matched then
-                                                                                                                      l_0_0 = (this_sigattrlog[59]).utf8p2
-                                                                                                                    else
-                                                                                                                      if (this_sigattrlog[60]).matched then
-                                                                                                                        l_0_0 = (this_sigattrlog[60]).utf8p2
-                                                                                                                      else
-                                                                                                                        if (this_sigattrlog[61]).matched then
-                                                                                                                          l_0_0 = (this_sigattrlog[61]).utf8p2
-                                                                                                                        else
-                                                                                                                          if (this_sigattrlog[62]).matched then
-                                                                                                                            l_0_0 = (this_sigattrlog[62]).utf8p2
-                                                                                                                          else
-                                                                                                                            if (this_sigattrlog[63]).matched then
-                                                                                                                              l_0_0 = (this_sigattrlog[63]).utf8p2
-                                                                                                                            else
-                                                                                                                              if (this_sigattrlog[64]).matched then
-                                                                                                                                l_0_0 = (this_sigattrlog[64]).utf8p2
-                                                                                                                              else
-                                                                                                                                if (this_sigattrlog[65]).matched then
-                                                                                                                                  l_0_0 = (this_sigattrlog[65]).utf8p2
-                                                                                                                                else
-                                                                                                                                  if (this_sigattrlog[66]).matched then
-                                                                                                                                    l_0_0 = (this_sigattrlog[66]).utf8p2
-                                                                                                                                  else
-                                                                                                                                    if (this_sigattrlog[67]).matched then
-                                                                                                                                      l_0_0 = (this_sigattrlog[67]).utf8p2
-                                                                                                                                    else
-                                                                                                                                      if (this_sigattrlog[68]).matched then
-                                                                                                                                        l_0_0 = (this_sigattrlog[68]).utf8p2
-                                                                                                                                      else
-                                                                                                                                        if (this_sigattrlog[69]).matched then
-                                                                                                                                          l_0_0 = (this_sigattrlog[69]).utf8p2
-                                                                                                                                        else
-                                                                                                                                          if (this_sigattrlog[70]).matched then
-                                                                                                                                            l_0_0 = (this_sigattrlog[70]).utf8p2
-                                                                                                                                          else
-                                                                                                                                            if (this_sigattrlog[71]).matched then
-                                                                                                                                              l_0_0 = (this_sigattrlog[71]).utf8p2
-                                                                                                                                            else
-                                                                                                                                              if (this_sigattrlog[72]).matched then
-                                                                                                                                                l_0_0 = (this_sigattrlog[72]).utf8p2
-                                                                                                                                              else
-                                                                                                                                                if (this_sigattrlog[73]).matched then
-                                                                                                                                                  l_0_0 = (this_sigattrlog[73]).utf8p2
-                                                                                                                                                else
-                                                                                                                                                  if (this_sigattrlog[74]).matched then
-                                                                                                                                                    l_0_0 = (this_sigattrlog[74]).utf8p2
-                                                                                                                                                  else
-                                                                                                                                                    if (this_sigattrlog[75]).matched then
-                                                                                                                                                      l_0_0 = (this_sigattrlog[75]).utf8p2
-                                                                                                                                                    else
-                                                                                                                                                      if (this_sigattrlog[76]).matched then
-                                                                                                                                                        l_0_0 = (this_sigattrlog[76]).utf8p2
-                                                                                                                                                      else
-                                                                                                                                                        if (this_sigattrlog[77]).matched then
-                                                                                                                                                          l_0_0 = (this_sigattrlog[77]).utf8p2
-                                                                                                                                                        else
-                                                                                                                                                          if (this_sigattrlog[78]).matched then
-                                                                                                                                                            l_0_0 = (this_sigattrlog[78]).utf8p2
-                                                                                                                                                          else
-                                                                                                                                                            if (this_sigattrlog[79]).matched then
-                                                                                                                                                              l_0_0 = (this_sigattrlog[79]).utf8p2
-                                                                                                                                                            else
-                                                                                                                                                              if (this_sigattrlog[80]).matched then
-                                                                                                                                                                l_0_0 = (this_sigattrlog[80]).utf8p2
-                                                                                                                                                              else
-                                                                                                                                                                if (this_sigattrlog[81]).matched then
-                                                                                                                                                                  l_0_0 = (this_sigattrlog[81]).utf8p2
-                                                                                                                                                                else
-                                                                                                                                                                  if (this_sigattrlog[82]).matched then
-                                                                                                                                                                    l_0_0 = (this_sigattrlog[82]).utf8p2
-                                                                                                                                                                  else
-                                                                                                                                                                    if (this_sigattrlog[83]).matched then
-                                                                                                                                                                      l_0_0 = (this_sigattrlog[83]).utf8p2
-                                                                                                                                                                    else
-                                                                                                                                                                      if (this_sigattrlog[84]).matched then
-                                                                                                                                                                        l_0_0 = (this_sigattrlog[84]).utf8p2
-                                                                                                                                                                      else
-                                                                                                                                                                        if (this_sigattrlog[85]).matched then
-                                                                                                                                                                          l_0_0 = (this_sigattrlog[85]).utf8p2
-                                                                                                                                                                        else
-                                                                                                                                                                          if (this_sigattrlog[86]).matched then
-                                                                                                                                                                            l_0_0 = (this_sigattrlog[86]).utf8p2
-                                                                                                                                                                          else
-                                                                                                                                                                            if (this_sigattrlog[87]).matched then
-                                                                                                                                                                              l_0_0 = (this_sigattrlog[87]).utf8p2
-                                                                                                                                                                            else
-                                                                                                                                                                              if (this_sigattrlog[88]).matched then
-                                                                                                                                                                                l_0_0 = (this_sigattrlog[88]).utf8p2
-                                                                                                                                                                              else
-                                                                                                                                                                                if (this_sigattrlog[89]).matched then
-                                                                                                                                                                                  l_0_0 = (this_sigattrlog[89]).utf8p2
-                                                                                                                                                                                else
-                                                                                                                                                                                  if (this_sigattrlog[90]).matched then
-                                                                                                                                                                                    l_0_0 = (this_sigattrlog[90]).utf8p2
-                                                                                                                                                                                  else
-                                                                                                                                                                                    if (this_sigattrlog[91]).matched then
-                                                                                                                                                                                      l_0_0 = (this_sigattrlog[91]).utf8p2
-                                                                                                                                                                                    else
-                                                                                                                                                                                      if (this_sigattrlog[92]).matched then
-                                                                                                                                                                                        l_0_0 = (this_sigattrlog[92]).utf8p2
-                                                                                                                                                                                      else
-                                                                                                                                                                                        if (this_sigattrlog[93]).matched then
-                                                                                                                                                                                          l_0_0 = (this_sigattrlog[93]).utf8p2
-                                                                                                                                                                                        else
-                                                                                                                                                                                          if (this_sigattrlog[94]).matched then
-                                                                                                                                                                                            l_0_0 = (this_sigattrlog[94]).utf8p2
-                                                                                                                                                                                          else
-                                                                                                                                                                                            if (this_sigattrlog[95]).matched then
-                                                                                                                                                                                              l_0_0 = (this_sigattrlog[95]).utf8p2
-                                                                                                                                                                                            else
-                                                                                                                                                                                              if (this_sigattrlog[96]).matched then
-                                                                                                                                                                                                l_0_0 = (this_sigattrlog[96]).utf8p2
-                                                                                                                                                                                              else
-                                                                                                                                                                                                if (this_sigattrlog[97]).matched then
-                                                                                                                                                                                                  l_0_0 = (this_sigattrlog[97]).utf8p2
-                                                                                                                                                                                                else
-                                                                                                                                                                                                  if (this_sigattrlog[98]).matched then
-                                                                                                                                                                                                    l_0_0 = (this_sigattrlog[98]).utf8p2
-                                                                                                                                                                                                  else
-                                                                                                                                                                                                    if (this_sigattrlog[99]).matched then
-                                                                                                                                                                                                      l_0_0 = (this_sigattrlog[99]).utf8p2
-                                                                                                                                                                                                    else
-                                                                                                                                                                                                      if (this_sigattrlog[100]).matched then
-                                                                                                                                                                                                        l_0_0 = (this_sigattrlog[100]).utf8p2
-                                                                                                                                                                                                      else
-                                                                                                                                                                                                        if (this_sigattrlog[101]).matched then
-                                                                                                                                                                                                          l_0_0 = (this_sigattrlog[101]).utf8p2
-                                                                                                                                                                                                        else
-                                                                                                                                                                                                          if (this_sigattrlog[102]).matched then
-                                                                                                                                                                                                            l_0_0 = (this_sigattrlog[102]).utf8p2
-                                                                                                                                                                                                          else
-                                                                                                                                                                                                            if (this_sigattrlog[103]).matched then
-                                                                                                                                                                                                              l_0_0 = (this_sigattrlog[103]).utf8p2
-                                                                                                                                                                                                            else
-                                                                                                                                                                                                              if (this_sigattrlog[104]).matched then
-                                                                                                                                                                                                                l_0_0 = (this_sigattrlog[104]).utf8p2
-                                                                                                                                                                                                              else
-                                                                                                                                                                                                                if (this_sigattrlog[105]).matched then
-                                                                                                                                                                                                                  l_0_0 = (this_sigattrlog[105]).utf8p2
-                                                                                                                                                                                                                else
-                                                                                                                                                                                                                  if (this_sigattrlog[106]).matched then
-                                                                                                                                                                                                                    l_0_0 = (this_sigattrlog[106]).utf8p2
-                                                                                                                                                                                                                  end
-                                                                                                                                                                                                                end
-                                                                                                                                                                                                              end
-                                                                                                                                                                                                            end
-                                                                                                                                                                                                          end
-                                                                                                                                                                                                        end
-                                                                                                                                                                                                      end
-                                                                                                                                                                                                    end
-                                                                                                                                                                                                  end
-                                                                                                                                                                                                end
-                                                                                                                                                                                              end
-                                                                                                                                                                                            end
-                                                                                                                                                                                          end
-                                                                                                                                                                                        end
-                                                                                                                                                                                      end
-                                                                                                                                                                                    end
-                                                                                                                                                                                  end
-                                                                                                                                                                                end
-                                                                                                                                                                              end
-                                                                                                                                                                            end
-                                                                                                                                                                          end
-                                                                                                                                                                        end
-                                                                                                                                                                      end
-                                                                                                                                                                    end
-                                                                                                                                                                  end
-                                                                                                                                                                end
-                                                                                                                                                              end
-                                                                                                                                                            end
-                                                                                                                                                          end
-                                                                                                                                                        end
-                                                                                                                                                      end
-                                                                                                                                                    end
-                                                                                                                                                  end
-                                                                                                                                                end
-                                                                                                                                              end
-                                                                                                                                            end
-                                                                                                                                          end
-                                                                                                                                        end
-                                                                                                                                      end
-                                                                                                                                    end
-                                                                                                                                  end
-                                                                                                                                end
-                                                                                                                              end
-                                                                                                                            end
-                                                                                                                          end
-                                                                                                                        end
-                                                                                                                      end
-                                                                                                                    end
-                                                                                                                  end
-                                                                                                                end
-                                                                                                              end
-                                                                                                            end
-                                                                                                          end
-                                                                                                        end
-                                                                                                      end
-                                                                                                    end
-                                                                                                  end
-                                                                                                end
-                                                                                              end
-                                                                                            end
-                                                                                          end
-                                                                                        end
-                                                                                      end
-                                                                                    end
-                                                                                  end
-                                                                                end
-                                                                              end
-                                                                            end
-                                                                          end
-                                                                        end
-                                                                      end
-                                                                    end
-                                                                  end
-                                                                end
-                                                              end
-                                                            end
-                                                          end
-                                                        end
-                                                      end
-                                                    end
-                                                  end
-                                                end
-                                              end
-                                            end
-                                          end
-                                        end
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
+            ;
+            (mp.set_mpattribute)("VSSAMSI_Delete_Object_Reserved")
           end
         end
       end
     end
   end
-  if not l_0_0 then
-    return mp.CLEAN
+  if l_0_10 == 1 then
+    (mp.set_mpattribute)("VSSAMSI_Delete_ForceDelete")
   end
-  local l_0_1 = (this_sigattrlog[1]).utf8p2
-  if not l_0_1 then
-    return mp.CLEAN
+else
+  do
+    if l_0_4 == 1 then
+      (mp.set_mpattribute)("VSSAMSI_Shadow_Resize")
+      local l_0_11 = (mp.readu_u64)(headerpage, 29)
+      local l_0_12 = (mp.readu_u32)(headerpage, 37)
+      if l_0_11 ~= 0 then
+        (mp.set_mpattributeex)("VSSAMSI_Resize_DiffAreaSize", l_0_11)
+      else
+        ;
+        (mp.set_mpattribute)("VSSAMSI_Resize_DiffAreaSizeZero")
+      end
+      local l_0_13, l_0_14 = nil, nil
+      if l_0_12 == 8 then
+        l_0_13 = (mp.readu_u32)(headerpage, 41)
+        l_0_14 = (mp.readu_u32)(headerpage, 49)
+        if l_0_13 == l_0_14 then
+          (mp.set_mpattribute)("VSSAMSI_Resize_SameVolume")
+        else
+          ;
+          (mp.set_mpattribute)("VSSAMSI_Resize_DifferentVolume")
+        end
+      else
+        ;
+        (mp.set_mpattribute)("VSSAMSI_Resize_NotNormalToFromVolume")
+      end
+    end
+    do
+      return mp.CLEAN
+    end
   end
-  if l_0_1 == l_0_0 then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.CLEAN
 end
 

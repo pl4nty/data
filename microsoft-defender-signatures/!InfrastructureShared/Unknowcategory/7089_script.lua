@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  if (hstrlog[4]).matched then
-    (mp.changedetectionname)(805306381)
-  end
+if peattributes.x86_image == true and (peattributes.isdll == true or peattributes.isexe == true) and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

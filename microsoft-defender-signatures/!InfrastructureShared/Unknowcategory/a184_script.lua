@@ -3,20 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if l_0_0 ~= nil then
-    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    for l_0_5,l_0_6 in ipairs(l_0_1) do
-      if (sysio.IsFileExists)(l_0_6) and (string.find)(l_0_6, "regsvr32", 1, true) == nil then
-        (bm.add_related_file)(l_0_6)
+do
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 276480 and (mp.getfilesize)() < 301056 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
       end
     end
+    return mp.INFECTED
   end
-end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+  return mp.CLEAN
 end
 

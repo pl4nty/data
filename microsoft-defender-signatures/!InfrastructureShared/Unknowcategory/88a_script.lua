@@ -3,17 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and peattributes.isdll then
-  local l_0_1 = (mp.getfilesize)()
-  if l_0_1 > 17664 and l_0_1 < 1200128 then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    if (string.find)(l_0_2, "api%-ms%-win%-system%-%w+%-l1%-1%-0%.dll") then
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
+  return mp.CLEAN
+end
+do
+  if l_0_1:len() > 20 and (string.sub)(l_0_1, -20) == "\\chrome\\application\\" then
+    local l_0_3 = {}
+    l_0_3["winmm.dll"] = true
+    l_0_3["wtsapi32.dll"] = true
+    l_0_3["rpcrt4.dll"] = true
+    l_0_3["advapi32.dll"] = true
+    l_0_3["version.dll"] = true
+    l_0_3["userenv.dll"] = true
+    l_0_3["user32.dll"] = true
+    l_0_3["kernel32.dll"] = true
+    l_0_3["winhttp.dll"] = true
+    if l_0_3[l_0_2] then
       return mp.INFECTED
     end
   end
-end
-do
   return mp.CLEAN
 end
 

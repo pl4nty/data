@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (hstrlog[1]).matched then
-  l_0_0 = (hstrlog[1]).hitcount
-end
-if l_0_0 >= 3 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 3, "\001\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 65, "\001\000")
+return mp.INFECTED
 

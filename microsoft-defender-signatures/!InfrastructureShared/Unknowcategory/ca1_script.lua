@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:QBitTorrent")
+(mp.set_mpattribute)("PUA:Block:InstallCore")
 return mp.INFECTED
 

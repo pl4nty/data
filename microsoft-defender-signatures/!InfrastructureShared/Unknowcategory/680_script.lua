@@ -9,7 +9,7 @@ if l_0_0 ~= nil and l_0_0.ppid ~= nil then
   if l_0_1 ~= nil and l_0_1.image_path ~= nil then
     local l_0_2 = (string.lower)(l_0_1.image_path)
     ;
-    (bm.add_threat_file)(l_0_2)
+    (bm.add_related_file)(l_0_2)
   end
 end
 do

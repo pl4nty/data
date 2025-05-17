@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:CnetInstaller")
+(mp.set_mpattribute)("PUA:Block:Chromipun:Bit")
 return mp.INFECTED
 

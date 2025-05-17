@@ -3,38 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1, l_0_3, l_0_4, l_0_6, l_0_7, l_0_9, l_0_10, l_0_13 = nil, nil, nil
-if (this_sigattrlog[1]).matched then
-  local l_0_2 = nil
-else
-  do
-    -- DECOMPILER ERROR at PC24: Overwrote pending register: R2 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC37: Overwrote pending register: R2 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-        local l_0_5, l_0_8, l_0_11, l_0_14 = , (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1)
-      else
-      end
-      -- DECOMPILER ERROR at PC55: Confused about usage of register: R2 in 'UnsetPending'
-
-      if not (this_sigattrlog[4]).matched or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[4]).utf8p1) ~= nil then
-        local l_0_12 = (string.match)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[4]).utf8p1), "\\([^\\]+%.exe)")
-        if l_0_12 ~= nil then
-          local l_0_15 = nil
-          if (bm.get_imagepath)() ~= nil then
-            l_0_15 = (string.match)((bm.get_imagepath)(), "\\([^\\]+%.exe)")
-            if l_0_15 ~= nil and l_0_12 ~= l_0_15 then
-              return mp.INFECTED
-            end
-          end
-        end
-      end
-      do
-        return mp.CLEAN
-      end
+(bm.DisableSignature)()
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = 0
+  local l_0_1 = (this_sigattrlog[1]).utf8p2
+  l_0_1 = (string.gsub)(l_0_1, "`", "")
+  if l_0_0 > 3 then
+    l_0_1 = (string.lower)(l_0_1)
+    if (string.find)(l_0_1, "frombase64string", 1, true) or (string.find)(l_0_1, "webclient", 1, true) or (string.find)(l_0_1, "newscriptblock", 1, true) or (string.find)(l_0_1, "http", 1, true) then
+      return mp.INFECTED
     end
   end
+end
+do
+  -- DECOMPILER ERROR at PC71: Overwrote pending register: R0 in 'AssignReg'
+
+  return l_0_0.CLEAN
 end
 

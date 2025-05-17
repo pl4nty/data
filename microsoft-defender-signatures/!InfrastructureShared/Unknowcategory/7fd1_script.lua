@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
-return mp.INFECTED
+if peattributes.isexe == true and (pesecs[7]).Name == ".reloc" and (pesecs[7]).Characteristics == 1107296320 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,71 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_6, l_0_8 = nil, nil
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = (this_sigattrlog[2]).utf8p1
-  else
-  end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1 = (this_sigattrlog[3]).utf8p1
-    else
-    end
-    -- DECOMPILER ERROR at PC43: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
-        local l_0_2 = (this_sigattrlog[5]).utf8p1
-      else
-      end
-      -- DECOMPILER ERROR at PC61: Overwrote pending register: R0 in 'AssignReg'
-
-      do
-        if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
-          local l_0_3 = (this_sigattrlog[7]).utf8p1
-        else
-        end
-        -- DECOMPILER ERROR at PC79: Overwrote pending register: R0 in 'AssignReg'
-
-        do
-          if not (this_sigattrlog[9]).matched or (this_sigattrlog[10]).matched then
-            local l_0_4 = (this_sigattrlog[9]).utf8p1
-          end
-          -- DECOMPILER ERROR at PC80: Confused about usage of register: R0 in 'UnsetPending'
-
-          if l_0_4 == nil then
-            return mp.CLEAN
-          end
-          -- DECOMPILER ERROR at PC87: Confused about usage of register: R0 in 'UnsetPending'
-
-          local l_0_5 = (string.lower)(l_0_4)
-          -- DECOMPILER ERROR at PC101: Overwrote pending register: R2 in 'AssignReg'
-
-          do
-            if (this_sigattrlog[11]).matched then
-              local l_0_7, l_0_9, l_0_11 = , nil
-            else
-            end
-            if (not (this_sigattrlog[12]).matched or l_0_5 ~= nil) and (string.lower)((this_sigattrlog[12]).utf8p2) ~= nil then
-              local l_0_10 = (string.match)(l_0_5, "\\([^\\]+)$")
-              -- DECOMPILER ERROR at PC127: Confused about usage of register: R2 in 'UnsetPending'
-
-              local l_0_12 = (string.match)((string.lower)((this_sigattrlog[12]).utf8p2), "\\([^\\]+)$")
-              if l_0_10 == l_0_12 then
-                (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_5), 2084403703)
-                return mp.INFECTED
-              end
-            end
-            do
-              return mp.CLEAN
-            end
-          end
-        end
-      end
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.find)(l_0_0, "\\msert.exe", -10, true) then
+    l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
+    if l_0_0 and (mp.IsKnownFriendlyFile)(l_0_0, false, false) then
+      return mp.CLEAN
     end
   end
 end
+local l_0_1 = (this_sigattrlog[3]).utf8p2
+if not l_0_1 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "%common_appdata%", 1, true) then
+  l_0_1 = (string.gsub)(l_0_1, "%%common_appdata%%", "\\ProgramData")
+end
+local l_0_2 = (sysio.GetCommandLineFromService)("windefend")
+if not l_0_2 then
+  return mp.CLEAN
+end
+local l_0_3, l_0_4 = (string.find)(l_0_2, ":\\", 1, true)
+local l_0_5 = -1
+if (string.byte)(l_0_2, -1) == 34 then
+  l_0_5 = -2
+end
+l_0_2 = (string.sub)(l_0_2, l_0_4, l_0_5)
+if not l_0_2 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, l_0_2, 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_amd64_image") and (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 380928 and (mp.getfilesize)() < 409600 then
-  return mp.INFECTED
+if (this_sigattrlog[9]).matched and (this_sigattrlog[10]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[9]).p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[10]).p1)
+  if l_0_0:match("c:\\temp\\(%l+)%.zip") == l_0_1:match("c:\\temp\\%l+%.(%l+)") then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

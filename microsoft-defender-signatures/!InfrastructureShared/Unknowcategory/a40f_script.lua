@@ -3,27 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
 do
-  if l_0_0 then
-    local l_0_1 = {}
-    l_0_1["powershell.exe"] = true
-    l_0_1["wscript.exe"] = true
-    l_0_1["cscript.exe"] = true
-    l_0_1["mshta.exe"] = true
-    l_0_1["cmd.exe"] = true
-    l_0_1["rundll32.exe"] = true
-    l_0_1["regsvr32.exe"] = true
-    l_0_1["msbuild.exe"] = true
-    l_0_1["vbcscompiler.exe"] = true
-    l_0_1["csc.exe"] = true
-    l_0_1["python.exe"] = true
-    l_0_1["pythonw.exe"] = true
-    l_0_1["winword.exe"] = true
-    l_0_1["excel.exe"] = true
-    l_0_1["powerpnt.exe"] = true
-    if l_0_1[(string.match)(l_0_0, "\\([^\\]+)$")] then
-      return mp.INFECTED
+  if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
+    local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+    if (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME) == "msimg32.dll" and (string.lower)((string.sub)(l_0_0, -5, -1)) == "\\temp" and ((pe.get_versioninfo)()).CompanyName ~= "Microsoft Corporation" then
+      return mp.LOWFI
     end
   end
   return mp.CLEAN

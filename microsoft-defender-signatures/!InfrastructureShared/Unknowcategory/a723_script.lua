@@ -3,58 +3,30 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[14]).matched or (hstrlog[21]).matched or (hstrlog[22]).matched then
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7.A0")
-else
-  if (hstrlog[15]).matched then
-    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!upk.1")
-    ;
-    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_4242")
-    ;
-    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7.A0")
-  else
-    if (hstrlog[16]).matched then
-      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!upk.1")
-      ;
-      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN.4")
-      ;
-      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_4343")
-      ;
-      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7.A0")
-    else
-      if (hstrlog[17]).matched then
-        (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7.1E")
-      else
-        if (hstrlog[18]).matched then
-          (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!upk.1")
-          ;
-          (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN.4")
-          ;
-          (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7.1E")
-        else
-          if (hstrlog[19]).matched then
-            (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!upk.1")
-            ;
-            (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN.4")
-            ;
-            (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_4444")
-            ;
-            (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7.A0")
-          else
-            if (hstrlog[20]).matched then
-              (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!upk.1")
-              ;
-              (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN.4")
-              ;
-              (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_4545")
-              ;
-              (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7.A0")
-            end
-          end
-        end
-      end
-    end
-  end
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
+
+if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched or not (hstrlog[16]).matched) and (hstrlog[23]).matched) or (hstrlog[15]).matched) and 1 or 0) + ((hstrlog[22]).matched and 1 or 0) + ((hstrlog[31]).matched and 1 or 0) >= 2 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

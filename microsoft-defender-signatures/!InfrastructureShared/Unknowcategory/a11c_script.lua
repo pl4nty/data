@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Adware:Win32/ZoomyLib.E")
-if (mp.bitand)(mp.HSTR_WEIGHT, 64) > 0 and (mp.bitand)(mp.HSTR_WEIGHT, 56) > 0 and (mp.bitand)(mp.HSTR_WEIGHT, 7) > 0 then
-  return mp.INFECTED
+for l_0_3 = mp.SIGATTR_LOG_SZ, 1, -1 do
+  if (sigattr_head[l_0_3]).matched and (sigattr_head[l_0_3]).attribute == 16384 then
+    local l_0_4 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[l_0_3]).utf8p1)
+    if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
+      (mp.ReportLowfi)(l_0_4, 1501004956)
+    end
+  end
 end
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_CALLER_SMS == (mp.GetHSTRCallerId)() then
+if (mp.get_mpattribute)("Win32/AutoIt_HSTR2") then
   return mp.INFECTED
 end
 return mp.CLEAN

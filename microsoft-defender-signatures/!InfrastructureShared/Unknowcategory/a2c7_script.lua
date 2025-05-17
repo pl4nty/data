@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = (pe.mmap_va)(l_0_0 + 8, 4)
+local l_0_2 = (string.byte)(l_0_1, 1) + (string.byte)(l_0_1, 2) * 256 + (string.byte)(l_0_1, 3) * 65536
+if l_0_2 < 1048575 then
+  (mp.readprotection)(false)
+  local l_0_3 = (pe.mmap_va)(l_0_0, l_0_2)
+  ;
+  (mp.vfo_add_buffer)(l_0_3, "[Cabinet]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+end
+do
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 4) == true then
-  (mp.set_mpattribute)("Lua:MpEnableCustomE5Signatures")
+if mp.HEADERPAGE_SZ < 256 then
+  return mp.CLEAN
 end
+if (mp.readu_u16)(headerpage, 1) ~= 60000 then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("Lua:ArjFile")
 return mp.CLEAN
 

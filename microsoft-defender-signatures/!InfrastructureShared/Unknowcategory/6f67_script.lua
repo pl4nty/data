@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.epatstartentrysect then
-  return mp.SUSPICIOUS
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 3140000 then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

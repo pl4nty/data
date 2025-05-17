@@ -3,27 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe or peattributes.hasstandardentry or pehdr.Machine ~= 332 then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() >= 3145728 then
-  return mp.CLEAN
-end
-if (this_sigattrlog[10]).matched and (this_sigattrlog[11]).matched then
-  local l_0_0 = (string.sub)((this_sigattrlog[10]).p1, 5)
-  local l_0_1 = (this_sigattrlog[11]).p1
-  if #l_0_0 ~= #l_0_1 then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_1, "\\", 1, true) ~= nil then
-    return mp.CLEAN
-  end
-  if (string.lower)((string.sub)(l_0_0, 1, 1)) == (string.lower)((string.sub)(l_0_1, 1, 1)) or (string.lower)((string.sub)(l_0_0, 2)) ~= (string.lower)((string.sub)(l_0_1, 2)) or (string.lower)((string.sub)(l_0_0, -4)) ~= ".dll" then
-    return mp.CLEAN
-  end
+if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched) or (not (hstrlog[9]).matched and not (hstrlog[10]).matched and not (hstrlog[11]).matched and not (hstrlog[12]).matched and not (hstrlog[13]).matched and not (hstrlog[14]).matched and not (hstrlog[15]).matched and not (hstrlog[16]).matched) or ((hstrlog[17]).matched or (hstrlog[18]).matched)) then
   return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

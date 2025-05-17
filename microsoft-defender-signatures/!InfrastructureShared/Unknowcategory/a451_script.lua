@@ -3,22 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[7]).utf8p1
-if l_0_0 == nil then
+if peattributes.lastscn_writable == false then
   return mp.CLEAN
 end
-l_0_0 = (string.lower)(l_0_0)
-if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
+if peattributes.epscn_islast == false then
   return mp.CLEAN
 end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
+if (mp.bitor)((mp.bitor)((mp.bitor)((mp.bitor)((mp.bitor)((mp.bitor)((mp.readu_u32)(headerpage, 33), (mp.readu_u32)(headerpage, 37)), (mp.readu_u32)(headerpage, 41)), (mp.readu_u32)(headerpage, 45)), (mp.readu_u32)(headerpage, 49)), (mp.readu_u32)(headerpage, 53)), (mp.readu_u32)(headerpage, 57)) == 0 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

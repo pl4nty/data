@@ -3,27 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "svchost.exe" or l_0_1:match("([^\\]+)$") == "rundll32.exe" or l_0_1:match("([^\\]+)$") == "mstsc.exe" or l_0_1:match("([^\\]+)$") == "dllhost.exe" or l_0_1:match("([^\\]+)$") == "wuauclt.exe" or l_0_1:match("([^\\]+)$") == "msfeedssync.exe" or l_0_1:match("([^\\]+)$") == "nslookup.exe" or l_0_1:match("([^\\]+)$") == "werfault.exe" or l_0_1:match("([^\\]+)$") == "eventvwr.exe" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetBruteMatchData)()
-if not l_0_0 then
-  return mp.CLEAN
-end
-local l_0_1 = ""
-if l_0_0.is_header then
-  l_0_1 = (string.lower)(tostring(headerpage))
-else
-  l_0_1 = (string.lower)(tostring(footerpage))
-end
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_2 = "(?:set|add)-mppreference\\s+-exclusionpath\\s+[\"\']?c:\\\\+programdata\\\\*?%?[\"\']?(?:[\\s;]|$)"
-local l_0_3 = false
-l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
-if l_0_3 == false then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

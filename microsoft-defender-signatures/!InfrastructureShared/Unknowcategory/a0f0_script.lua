@@ -3,27 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched == false then
+do
+  if peattributes.isexe == true and peattributes.ismsil == true and pehdr.AddressOfEntryPoint ~= 0 and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if (this_sigattrlog[2]).matched == false then
-  return mp.CLEAN
-end
-if (this_sigattrlog[3]).matched == false then
-  return mp.CLEAN
-end
-local l_0_0 = (this_sigattrlog[1]).ppid
-local l_0_1 = (this_sigattrlog[2]).ppid
-local l_0_2 = (this_sigattrlog[3]).ppid
-if l_0_0 ~= l_0_1 then
-  return mp.CLEAN
-end
-local l_0_3, l_0_4 = (bm.get_process_relationships)()
-if #l_0_4 < 2 then
-  return mp.CLEAN
-end
-if (l_0_4[2]).ppid ~= l_0_2 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

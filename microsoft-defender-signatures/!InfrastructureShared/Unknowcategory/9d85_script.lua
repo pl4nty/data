@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.reads_vdll_code and (peattributes.suspicious_image_version or peattributes.uses_access_violation or peattributes.uses_privinstr or peattributes.deep_analysis or peattributes.enable_vmm_grow) and peattributes.isdll then
+if mp.HSTR_WEIGHT >= 11 then
+  (mp.set_mpattribute)("PUA:Block:NheqMiner")
   return mp.INFECTED
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_nheqminer")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_nheqminer")
 end
 return mp.CLEAN
 

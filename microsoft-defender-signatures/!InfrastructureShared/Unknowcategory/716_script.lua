@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0.image_path ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:find("onenote.exe$") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+Infrastructure_ScanDetrahere = function()
+  -- function num : 0_0
+  (MpDetection.ScanResource)("regkeyvalue://HKLM\\SYSTEM\\CurrentControlSet\\Control\\Network\\\\set_pt")
 end
+
 

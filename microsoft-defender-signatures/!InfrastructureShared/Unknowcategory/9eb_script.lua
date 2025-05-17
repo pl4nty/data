@@ -3,111 +3,127 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  local l_1_2 = {}
-  l_1_2[1952539182] = ""
-  l_1_2[1684890414] = ""
-  l_1_2[1836016430] = ""
-  l_1_2[1819304750] = ""
-  l_1_2[1702389038] = ""
-  l_1_2[1718186030] = ""
-  l_1_2[1919120174] = ""
-  l_1_2[1935832622] = ""
-  l_1_2[1802398766] = ""
-  l_1_2[1718843182] = ""
-  l_1_2[1700951598] = ""
-  l_1_2[1702062638] = ""
-  l_1_2[1635018798] = ""
-  l_1_2[1936338432] = ""
-  l_1_2[1819042862] = ""
-  l_1_2[2019782446] = ""
-  l_1_2[1918986798] = ""
-  l_1_2[1668511534] = ""
-  l_1_2[1752397614] = ""
-  local l_1_3 = (mp.bitor)((mp.readu_u32)(l_1_0, l_1_1), 538976288)
-  if l_1_2[l_1_3] or l_1_2[(mp.bitand)(l_1_3, 4294967040)] then
-    return true
-  end
-  return false
-end
-
-if not (mp.IsHipsRuleEnabled)("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550") then
+local l_0_0 = (mp.getfilesize)()
+;
+(mp.readprotection)(false)
+if l_0_0 < 512 then
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+if (mp.readu_u32)(headerpage, 1) ~= 2948364855 then
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) ~= true then
+if (mp.readu_u32)(headerpage, 13) == 0 then
   return mp.CLEAN
 end
-if mp.HEADERPAGE_SZ < 1024 then
+local l_0_1 = (mp.readu_u32)(headerpage, 21)
+if l_0_1 < 50 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
+if mp.FOOTERPAGE_SZ < l_0_1 then
   return mp.CLEAN
 end
-if (mp.bitand)((mp.readu_u16)(headerpage, 7), 1) ~= 1 then
+if (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - l_0_1 + 1) ~= 394241 then
   return mp.CLEAN
 end
-local l_0_2 = function(l_2_0)
-  -- function num : 0_1 , upvalues : l_0_0
-  if (mp.readu_u32)(footerpage, l_2_0 + 1) == 33639248 and l_2_0 + 48 < mp.FOOTERPAGE_SZ then
-    local l_2_1 = 47
-    local l_2_2 = (mp.readu_u16)(footerpage, l_2_0 + 29)
-    if (mp.bitand)((mp.readu_u16)(footerpage, l_2_0 + 9), 1) == 1 and l_2_2 > 4 and l_2_0 + l_2_1 + l_2_2 < mp.FOOTERPAGE_SZ and l_0_0(footerpage, l_2_0 + l_2_1 + l_2_2 - 4) then
-      return true, 0
-    end
-    local l_2_3 = l_2_0 + l_2_1 + l_2_2 + (mp.readu_u16)(footerpage, l_2_0 + 31) - 1
-    return false, l_2_3
-  end
-end
-
-local l_0_3 = 31
-if (mp.readu_u16)(headerpage, 27) > 4 and l_0_3 + (mp.readu_u16)(headerpage, 27) < mp.HEADERPAGE_SZ and l_0_0(headerpage, l_0_3 + (mp.readu_u16)(headerpage, 27) - 4) then
-  (mp.set_mpattribute)("Lua:ZipHasEncryptedFileWithExeExtension")
+local l_0_2 = (mp.readu_u16)(footerpage, mp.FOOTERPAGE_SZ - l_0_1 + 1 + 46) - 1
+if l_0_2 < 8 or l_0_2 > 256 then
   return mp.CLEAN
 end
-local l_0_4 = nil
-local l_0_5 = (mp.getfilesize)()
-do
-  if (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 21) ~= 101010256 then
-    local l_0_6 = nil
-    if (tostring(footerpage)):find("PK\005\006", 1, true) == nil then
-      return mp.CLEAN
-    end
-  end
-  -- DECOMPILER ERROR at PC121: Confused about usage of register: R5 in 'UnsetPending'
-
-  local l_0_7 = nil
-  local l_0_8 = (mp.readu_u32)(footerpage, l_0_6 + 16)
-  -- DECOMPILER ERROR at PC128: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC133: Overwrote pending register: R7 in 'AssignReg'
-
-  if l_0_5 < mp.FOOTERPAGE_SZ then
-    local l_0_9 = 0
-    do
-      local l_0_10 = 0
-      while 1 do
-        -- DECOMPILER ERROR at PC147: Overwrote pending register: R9 in 'AssignReg'
-
-        if l_0_10 < 3 and l_0_9 + 4 < mp.FOOTERPAGE_SZ then
-          if nil then
-            (mp.set_mpattribute)("Lua:ZipHasEncryptedFileWithExeExtension")
-            return mp.CLEAN
+local l_0_3 = l_0_1 - 48
+if l_0_3 < l_0_2 then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.readfile)(l_0_0 - l_0_3 - 1, l_0_2)
+local l_0_5 = (string.gsub)(l_0_4, "%z", "")
+;
+(mp.set_mpattribute)("Lua:SingleFileIn7Z")
+;
+(mp.UfsSetMetadataBool)("Lua:SingleFileIn7Z!ufs", true)
+local l_0_6 = (string.lower)((string.sub)(l_0_5, -4))
+local l_0_7 = (string.lower)((string.sub)(l_0_5, -3))
+if l_0_6 == ".zip" then
+  (mp.set_mpattribute)("Lua:SingleZipIn7z")
+else
+  if l_0_6 == ".vbs" then
+    (mp.set_mpattribute)("Lua:SingleVBSIn7z")
+    ;
+    (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+  else
+    if l_0_6 == ".lnk" then
+      (mp.set_mpattribute)("Lua:SingleLNKIn7z")
+      ;
+      (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+    else
+      if l_0_6 == ".wsf" then
+        (mp.set_mpattribute)("Lua:SingleWSFIn7z")
+        ;
+        (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+      else
+        if l_0_6 == ".vbe" then
+          (mp.set_mpattribute)("Lua:SingleVBEIn7z")
+          ;
+          (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+        else
+          if l_0_6 == ".jse" then
+            (mp.set_mpattribute)("Lua:SingleJSEIn7z")
+            ;
+            (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+          else
+            if l_0_6 == "html" then
+              (mp.set_mpattribute)("Lua:SingleHTAIn7z")
+              ;
+              (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+            else
+              if l_0_6 == ".exe" then
+                (mp.set_mpattribute)("Lua:SingleEXEIn7z")
+                ;
+                (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+              else
+                if l_0_6 == ".dll" then
+                  (mp.set_mpattribute)("Lua:SingleDLLIn7z")
+                else
+                  if l_0_6 == ".com" then
+                    (mp.set_mpattribute)("Lua:SingleCOMIn7z")
+                    ;
+                    (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+                  else
+                    if l_0_6 == ".ps1" then
+                      (mp.set_mpattribute)("Lua:SinglePSIn7z")
+                      ;
+                      (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+                    else
+                      if l_0_6 == ".bat" then
+                        (mp.set_mpattribute)("Lua:SingleBATIn7z")
+                        ;
+                        (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+                      else
+                        if l_0_6 == ".rar" then
+                          (mp.set_mpattribute)("Lua:SingleRarIn7z")
+                        else
+                          if l_0_6 == ".ace" then
+                            (mp.set_mpattribute)("Lua:SingleACEIn7z")
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
           end
-          l_0_10 = l_0_10 + 1
-          -- DECOMPILER ERROR at PC158: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC158: LeaveBlock: unexpected jumping out IF_STMT
-
         end
       end
-      do return mp.CLEAN end
-      -- DECOMPILER ERROR at PC162: freeLocal<0 in 'ReleaseLocals'
-
     end
   end
 end
+if l_0_7 == ".js" then
+  (mp.set_mpattribute)("Lua:SingleJSIn7z")
+  ;
+  (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
+else
+  if l_0_7 == ".7z" then
+    (mp.set_mpattribute)("Lua:Single7zIn7z")
+  end
+end
+return mp.CLEAN
 

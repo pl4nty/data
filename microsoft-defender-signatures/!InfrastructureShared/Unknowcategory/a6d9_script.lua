@@ -3,59 +3,51 @@
 
 -- params : ...
 -- function num : 0
-local l_0_3 = nil
-if (MpCommon.GetPersistContextNoPath)("TemplateInjc") ~= nil then
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    l_0_3 = (this_sigattrlog[1]).utf8p2
-    local l_0_0 = nil
-  else
-    do
-      if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-        l_0_3 = (this_sigattrlog[2]).utf8p2
-      else
-        if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-          l_0_3 = (this_sigattrlog[3]).utf8p2
-          local l_0_1, l_0_2 = nil
-        end
+local l_0_0, l_0_1 = nil, nil
+local l_0_2, l_0_3 = nil
+if R3_PC3 ~= nil then
+  for l_0_7,l_0_8 in ipairs(R5_PC7) do
+    local l_0_4, l_0_5 = (bm.get_process_relationships)()
+    -- DECOMPILER ERROR at PC9: Confused about usage of register: R8 in 'UnsetPending'
+
+    if R8_PC9.image_path ~= nil and R8_PC9.reason == bm.RELATIONSHIP_INJECTION then
+      if not (string.find)((string.lower)((MpCommon.PathToWin32Path)(R8_PC9.image_path)), "\\system32\\svchost.exe", -21, true) or not (string.find)((string.lower)((MpCommon.PathToWin32Path)(R8_PC9.image_path)), "\\syswow64\\svchost.exe", -21, true) then
+        return mp.CLEAN
       end
-      do
-        local l_0_4 = nil
-        if l_0_3 ~= nil then
-          local l_0_5 = nil
-          local l_0_6 = (mp.GetExecutablesFromCommandLine)(l_0_3)
-          for l_0_10,l_0_11 in ipairs(l_0_6) do
-            local l_0_7 = {[".xls"] = true, [".doc"] = true, [".ppt"] = true, [".pps"] = true, docx = true, pptx = true, ppsx = true, xlsx = true, [".rtf"] = true, [".xml"] = true, dotx = true, dotm = true, [".odt"] = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, docm = true, xlsm = true, pptm = true}
-            -- DECOMPILER ERROR at PC82: Confused about usage of register: R9 in 'UnsetPending'
+      l_0_2 = R8_PC9.ppid
+    end
+  end
+end
+do
+  -- DECOMPILER ERROR at PC48: Confused about usage of register: R2 in 'UnsetPending'
 
-            if (sysio.IsFileExists)(R9_PC82) and l_0_7[(string.sub)(R9_PC82, -4)] then
-              l_0_5 = R9_PC82
-            end
-          end
-        end
-        do
-          l_0_6 = ipairs
-          l_0_6 = l_0_6(l_0_4)
-          for l_0_15,l_0_16 in l_0_6 do
-            local l_0_16 = nil
-            l_0_16 = string
-            l_0_16 = l_0_16.match
-            l_0_16 = l_0_16(l_0_5, R10_PC105)
-            if l_0_16 then
-              l_0_16 = mp
-              l_0_16 = l_0_16.INFECTED
-              return l_0_16
-            end
-          end
-          do
-            l_0_5 = mp
-            l_0_5 = l_0_5.CLEAN
-            do return l_0_5 end
-            -- DECOMPILER ERROR at PC116: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC51: Confused about usage of register: R2 in 'UnsetPending'
 
-          end
+  if l_0_4 ~= nil then
+    for l_0_13,l_0_14 in ipairs(l_0_4) do
+      local l_0_10, l_0_11 = nil
+      -- DECOMPILER ERROR at PC54: Confused about usage of register: R8 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC61: Confused about usage of register: R8 in 'UnsetPending'
+
+      if R8_PC9.image_path ~= nil then
+        l_0_3 = (string.lower)((MpCommon.PathToWin32Path)(R8_PC9.image_path))
+        if (sysio.IsFileExists)(l_0_3) and not (mp.IsKnownFriendlyFile)(l_0_3, true, false) then
+          (bm.add_related_file)(l_0_3)
         end
       end
     end
+  end
+  do
+    if l_0_2 ~= nil and l_0_3 ~= nil then
+      (bm.request_SMS)(l_0_2, "l+")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1000)
+      ;
+      (bm.trigger_sig)("Cheddar", "ShellcodeSvchost")
+      return mp.INFECTED
+    end
+    return mp.CLEAN
   end
 end
 

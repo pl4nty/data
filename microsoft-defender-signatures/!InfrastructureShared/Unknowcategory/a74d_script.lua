@@ -3,41 +3,37 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = false
-local l_0_1 = (bm.get_imagepath)()
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-l_0_1 = (string.lower)(l_0_1)
-if (string.sub)(l_0_1, -12) == "explorer.exe" then
-  return mp.CLEAN
-else
-  if (string.sub)(l_0_1, -10) ~= "cpufix.exe" and (string.sub)(l_0_1, -11) ~= "antiusb.exe" and (string.sub)(l_0_1, -12) ~= "streamer.exe" and (string.sub)(l_0_1, -13) ~= "radnewage.exe" and (string.sub)(l_0_1, -14) ~= "cpuchecker.exe" and (string.sub)(l_0_1, -19) ~= "winddowsupdater.exe" then
-    l_0_0 = true
-  end
-end
-local l_0_2 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-  l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1))
-else
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-    l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1))
-  else
-    return mp.CLEAN
-  end
-end
-local l_0_3 = {}
-local l_0_4 = 0
-for l_0_8 in (string.gmatch)(l_0_2, "[^\\]+") do
-  l_0_4 = l_0_4 + 1
-  l_0_3[l_0_4] = l_0_8
-end
-if #l_0_3 >= 2 and (string.len)(l_0_3[#l_0_3]) == (string.len)(l_0_3[#l_0_3 - 1]) + 9 and (string.sub)(l_0_3[#l_0_3], 1, (string.len)(l_0_3[#l_0_3 - 1])) == l_0_3[#l_0_3 - 1] then
-  if l_0_0 == true then
-    (mp.ReportLowfi)(l_0_1, 4187849358)
-  else
+if peattributes.reads_vdll_code or (mp.get_mpattribute)("SIGATTR:Rogue:Win32/FakePAV_1") or (mp.get_mpattribute)("LUA:StrangeImportRVA") or (mp.get_mpattribute)("PACKED:ASPROTECT") or (mp.get_mpattribute)("PACKED:UPX") then
+  if (mp.get_mpattribute)("RPF:PEHasIOAVURL") then
+    (mp.set_mpattribute)("HSTR:Rogue:Win32/FakePAV.A1")
     return mp.INFECTED
+  else
+    local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+    do
+      do
+        if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+          local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+          if l_0_1 == "java.exe" or l_0_1 == "javaw.exe" then
+            (mp.set_mpattribute)("HSTR:Rogue:Win32/FakePAV.A5")
+            return mp.CLEAN
+          else
+            if l_0_1 == "wscript.exe" then
+              (mp.set_mpattribute)("HSTR:Rogue:Win32/FakePAV.A5")
+              return mp.INFECTED
+            end
+          end
+        end
+        ;
+        (mp.set_mpattribute)("HSTR:Rogue:Win32/FakePAV.A2")
+        if (mp.get_mpattribute)("RPF:PEHasIOAVURL") then
+          (mp.set_mpattribute)("HSTR:Rogue:Win32/FakePAV.A3")
+        else
+          ;
+          (mp.set_mpattribute)("HSTR:Rogue:Win32/FakePAV.A4")
+        end
+        return mp.CLEAN
+      end
+    end
   end
 end
-return mp.CLEAN
 

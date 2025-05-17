@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 4000 then
+if pehdr.NumberOfSections ~= 4 or peattributes.epinfirstsect == false or (pesecs[2]).SizeOfRawData ~= 40960 or (pesecs[2]).Name ~= ".data1" or (hstrlog[1]).VA ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
   return mp.CLEAN
-end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
 return mp.INFECTED
 

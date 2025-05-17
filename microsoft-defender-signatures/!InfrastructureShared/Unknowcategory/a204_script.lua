@@ -3,25 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[7]).matched then
-  l_0_0 = (this_sigattrlog[7]).utf8p2
-else
-  if (this_sigattrlog[8]).matched then
-    l_0_0 = (this_sigattrlog[8]).utf8p2
-  else
-    if (this_sigattrlog[9]).matched then
-      l_0_0 = (this_sigattrlog[9]).utf8p2
-    else
-      if (this_sigattrlog[10]).matched then
-        l_0_0 = (this_sigattrlog[10]).utf8p2
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0.utf8p2)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC24: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC24 = (mp.ContextualExpandEnvironmentVariables)(R6_PC24)
+      if (sysio.IsFileExists)(R6_PC24) then
+        (bm.add_related_file)(R6_PC24)
       end
     end
   end
+  do
+    return mp.INFECTED
+  end
 end
-if l_0_0 ~= nil and l_0_0 ~= "" and (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-  return mp.INFECTED
-end
-return mp.CLEAN
 

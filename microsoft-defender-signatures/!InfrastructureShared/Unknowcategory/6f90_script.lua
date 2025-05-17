@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
+if peattributes.no_security == true and peattributes.isdll and pehdr.Machine == 34404 then
   return mp.INFECTED
 end
 return mp.CLEAN

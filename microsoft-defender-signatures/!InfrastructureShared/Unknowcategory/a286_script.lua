@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[5]).matched and (hstrlog[6]).matched and ((hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched) then
-  return mp.INFECTED
+if (mp.get_mpattribute)("MpInternal_IsPliScan") then
+  if not (mp.get_mpattribute)("MpPeekIntoResources") then
+    (mp.set_mpattribute)("MpPeekIntoResources")
+  end
+  if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
 end
-return mp.CLEAN
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+return mp.INFECTED
 

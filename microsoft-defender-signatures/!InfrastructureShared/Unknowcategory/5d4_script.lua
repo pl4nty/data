@@ -3,19 +3,65 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.match)(l_0_0, "\\tasks") ~= nil and mp.HEADERPAGE_SZ <= 4096 then
-  local l_0_1 = tostring(headerpage)
-  local l_0_2 = l_0_1:match("<Exec>.+<Command>(.+)</Command>")
-  if l_0_2 ~= nil and l_0_2:len() > 5 and (string.sub)(l_0_2, -4) == ".exe" and (string.match)((string.lower)(l_0_2), "google") == nil and (string.match)((string.lower)(l_0_2), "dropbox") == nil and (string.match)((string.lower)(l_0_2), "yandex") == nil and (string.match)((string.lower)(l_0_2), "coccoc") == nil and (string.match)((string.lower)(l_0_2), "chromium") == nil and (string.match)((string.lower)(l_0_2), "facebook") == nil and (string.match)((string.lower)(l_0_2), "microsoftedge") == nil and (string.match)((string.lower)(l_0_2), "bravesoftware") == nil and (string.match)((string.lower)(l_0_2), "tvinstall") == nil and (string.match)((string.lower)(l_0_2), "myasus") == nil and (string.match)((string.lower)(l_0_2), "easyxplore") == nil and (string.match)((string.lower)(l_0_2), "onedrive") == nil then
-    (mp.ReportLowfi)(l_0_2, 2451161169)
-    return mp.INFECTED
-  end
-end
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.CLEAN
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 ~= nil then
+    do return mp.CLEAN end
+    local l_0_3 = nil
+    for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+      local l_0_4 = nil
+      -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC39 = (mp.ContextualExpandEnvironmentVariables)(R6_PC39)
+      if (string.lower)((string.sub)(R6_PC39, -14)) == "\\litetouch.wsf" then
+        return mp.CLEAN
+      end
+      if (sysio.IsFileExists)(l_0_9) and not (mp.IsKnownFriendlyFile)(l_0_9, true, false) then
+        (bm.add_related_file)(l_0_9)
+      end
+    end
+    local l_0_10 = nil
+    -- DECOMPILER ERROR at PC87: Overwrote pending register: R2 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC100: Overwrote pending register: R2 in 'AssignReg'
+
+    if ((this_sigattrlog[3]).matched and not (this_sigattrlog[4]).matched) or not nil then
+      return mp.CLEAN
+    end
+    local l_0_11 = nil
+    for l_0_15,l_0_16 in ipairs(l_0_11) do
+      local l_0_12 = false
+      -- DECOMPILER ERROR at PC115: Confused about usage of register: R8 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC130: Confused about usage of register: R8 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC139: Confused about usage of register: R8 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC148: Confused about usage of register: R8 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC157: Confused about usage of register: R8 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC163: Confused about usage of register: R8 in 'UnsetPending'
+
+      if not (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), "\\windows\\system32\\", 1, true) and ((string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), "\\appdata\\", 1, true) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), "\\temp\\", 1, true) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), "\\public\\", 1, true)) and (sysio.IsFileExists)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file))) and not (mp.IsKnownFriendlyFile)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)), true, false) then
+        l_0_12 = true
+        -- DECOMPILER ERROR at PC172: Confused about usage of register: R8 in 'UnsetPending'
+
+        ;
+        (bm.add_related_file)((string.lower)((mp.ContextualExpandEnvironmentVariables)(bm.add_related_file)))
+      end
+    end
+    -- DECOMPILER ERROR at PC176: Confused about usage of register: R3 in 'UnsetPending'
+
+    if l_0_12 then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 

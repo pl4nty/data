@@ -3,31 +3,33 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
-
-  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
-
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasDiscordUrl") then
-      (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromDiscord") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromDiscord", 3600)
-        return mp.INFECTED
-      end
-    end
-  end
+if (this_sigattrlog[2]).timestamp == nil or (this_sigattrlog[3]).timestamp == nil then
   return mp.CLEAN
 end
+local l_0_0 = (this_sigattrlog[1]).ppid
+local l_0_1 = (this_sigattrlog[2]).ppid
+local l_0_2 = (this_sigattrlog[3]).ppid
+if l_0_0 ~= l_0_1 or l_0_1 ~= l_0_2 then
+  return mp.CLEAN
+end
+local l_0_3 = (this_sigattrlog[4]).ppid
+local l_0_4 = false
+local l_0_5, l_0_6 = (bm.get_process_relationships)(l_0_3)
+for l_0_10,l_0_11 in ipairs(l_0_6) do
+  if l_0_11.image_path ~= nil and (mp.bitand)(l_0_11.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_11.image_path), "\\curl.exe", 1, true) then
+    l_0_4 = true
+  end
+end
+if not l_0_4 then
+  return mp.CLEAN
+end
+local l_0_12 = (this_sigattrlog[2]).timestamp
+local l_0_13 = (this_sigattrlog[3]).timestamp
+if l_0_13 < l_0_12 then
+  return mp.CLEAN
+end
+if l_0_13 - l_0_12 > 6000000000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

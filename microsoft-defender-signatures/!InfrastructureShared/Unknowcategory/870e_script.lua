@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(bm.get_current_process_startup_info)
-do
-  if l_0_0 and l_0_1 ~= nil then
-    local l_0_2 = l_0_1.ppid
-    if (MpCommon.QueryPersistContextNoPath)("amsidetct", l_0_2) then
-      return mp.INFECTED
+if peattributes.isexe == true and (mp.getfilesize)() < 65000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
     end
   end
-  return mp.CLEAN
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

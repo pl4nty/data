@@ -3,12 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)()
+if l_0_0 then
+  local l_0_1 = {}
+  -- DECOMPILER ERROR at PC9: No list found for R1 , SetList fails
+
+  -- DECOMPILER ERROR at PC10: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC11: Overwrote pending register: R3 in 'AssignReg'
+
+  for l_0_5,l_0_6 in ("/var/tmp")("/tmp/") do
+    if l_0_0:find(l_0_6, 1, true) ~= nil then
+      return mp.INFECTED
+    end
+  end
 end
-local l_0_0 = (this_sigattrlog[2]).utf8p1
-if (string.find)(l_0_0, "\\conhost.exe", 1, true) then
-  return mp.CLEAN
+do
+  l_0_1 = mp
+  l_0_1 = l_0_1.CLEAN
+  return l_0_1
 end
-return mp.INFECTED
 

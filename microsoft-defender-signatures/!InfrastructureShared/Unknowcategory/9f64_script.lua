@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)(l_0_0, "\\windows fabric", 1, true) or (string.find)(l_0_0, "\\microsoft.net", 1, true) or (string.find)(l_0_0, "\\binn\\polybase\\mpdwsvc.exe", 1, true) then
-    return mp.CLEAN
-  end
+endswith = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  do return l_1_0:sub(-#l_1_1) == l_1_1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+if peattributes.isdll and not peattributes.hasexports and endswith((string.lower)((mp.getfilename)()), "magentloc.dll") then
   return mp.INFECTED
 end
 return mp.CLEAN

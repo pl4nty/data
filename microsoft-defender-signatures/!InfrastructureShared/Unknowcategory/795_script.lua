@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 <= 300 or l_0_0 > 600000 then
+if not (mp.get_mpattribute)("Lua:Wpbbin.A!cert") then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.getfilename)())
-if l_0_1 ~= nil and (l_0_1:match("%->.+/") or l_0_1:match("%->.+\\") or l_0_1:match("%->.+%->")) then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:len() < 28 or (string.sub)(l_0_0, -28) ~= "\\windows\\system32\\wpbbin.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,15 +3,43 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
--- DECOMPILER ERROR at PC4: No list found for R0 , SetList fails
-
--- DECOMPILER ERROR at PC5: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC7: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC9: Overwrote pending register: R3 in 'AssignReg'
-
+local l_0_0 = (mp.GetBruteMatchData)()
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = tostring(l_0_0.is_header and headerpage or footerpage)
+if not l_0_1 then
+  return mp.CLEAN
+end
+local l_0_2 = l_0_0.match_offset + (string.len)("begin signature block\r\n")
+if l_0_0.is_footer and (string.sub)(l_0_1, 1, 1) == "\000" then
+  _ = (string.find)(l_0_1, "[Bb]egin signature block[\r\n]+")
+end
+local l_0_3 = (string.find)(l_0_1, "[\r\n]+[#/\'*]+%sSIG%s[#/\'*]+%sEnd signature block")
+if not l_0_2 or not l_0_3 then
+  return mp.CLEAN
+end
+l_0_1 = (string.sub)(l_0_1, l_0_2 + 1, l_0_3 - 1)
+if not l_0_1 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "^#%s") then
+  l_0_1 = (string.gsub)(l_0_1, "%s*[\r\n]*#%s*", "")
+else
+  l_0_1 = (string.gsub)(l_0_1, "%s*[\r\n]*[#/\'*]+%sSIG%s[#/\'*]+%s*", "")
+end
+if not l_0_1 or #l_0_1 < 2 then
+  return mp.CLEAN
+end
+l_0_1 = (MpCommon.Base64Decode)(l_0_1)
+if not l_0_1 then
+  return mp.CLEAN
+end
 ;
-(("    {\n        \"version\": 1,\n        \"environment\": \"SenseTesting_Staging\",\n        \"usage\": 2,\n        \"hashType\": 0,\n        \"intThumbs\": [\n            \"847df6a78497943f27fc72eb93f9a637320a02b561d0a91b09e87a7807ed7c61\"\n        ],\n        \"rootThumbs\": [\n            \"df545bf919a2439c36983b54cdfc903dfa4f37d3996d8d84b4c31eec6f3c163e\",\n            \"89fa90e8ac4cbcf4e2b1dd6e01de981471e9b11b14ec9a511365cadfe279541a\",\n            \"9bd0f7cf6ed967519391bcd49a958867b955a60f22de5b8978474a2fcbad81a6\"\n        ]\n    }\n   ").LoadDBVar)(("    {\n        \"version\": 1,\n        \"environment\": \"SenseTesting_Staging\",\n        \"usage\": 1,\n        \"hashType\": 0,\n        \"intThumbs\": [\n            \"847df6a78497943f27fc72eb93f9a637320a02b561d0a91b09e87a7807ed7c61\"\n        ],\n        \"rootThumbs\": [\n            \"df545bf919a2439c36983b54cdfc903dfa4f37d3996d8d84b4c31eec6f3c163e\",\n            \"89fa90e8ac4cbcf4e2b1dd6e01de981471e9b11b14ec9a511365cadfe279541a\",\n            \"9bd0f7cf6ed967519391bcd49a958867b955a60f22de5b8978474a2fcbad81a6\"\n        ]\n    }\n   ").DBVAR_ARRAY_WIDESTRING, "", l_0_0, 1)
+(mp.set_mpattributeex)("ScriptCertSigSize", (string.len)(l_0_1))
+;
+(mp.vfo_add_buffer)(l_0_1, "[ScriptSig]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+;
+(mp.UfsSetMetadataBool)("ScriptSigDecoded", true, true)
+return mp.INFECTED
 

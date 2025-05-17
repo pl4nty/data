@@ -3,13 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 ~= nil and l_0_0 > 2048000 then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-local l_0_1 = (pe.get_versioninfo)()
-if l_0_1 ~= nil and l_0_1.OriginalFilename ~= nil and (l_0_1.OriginalFilename):lower() == "sync.exe" and l_0_1.InternalName ~= nil and (l_0_1.InternalName):lower() == "sync.exe" and l_0_1.ProductVersion ~= nil and (l_0_1.ProductVersion):lower() == "0.0.0.0" then
-  return mp.INFECTED
+if not peattributes.hasexports then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0, l_0_1 = (pe.get_exports)()
+do
+  if l_0_0 == 1 then
+    local l_0_2 = (pe.mmap_string_rva)((l_0_1[1]).namerva, 64)
+    if l_0_2 == "RegisterModule" then
+      (mp.set_mpattribute)("BM_IISMODULE")
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

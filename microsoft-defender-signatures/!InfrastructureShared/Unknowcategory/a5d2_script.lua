@@ -3,24 +3,46 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[4]).matched then
+do
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC98: Unhandled construct in 'MakeBoolean' P3
+
+  if (((hstrlog[1]).matched or (hstrlog[2]).matched) and (hstrlog[3]).matched) or (hstrlog[19]).matched then
+    local l_0_0 = 0 + 1 + 1
+  end
+  -- DECOMPILER ERROR at PC98: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == 2 then
+    (pe.reemulate)()
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-local l_0_0 = (bm.get_current_process_startup_info)()
-if not l_0_0 or l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[4]).utf8p1))
-if l_0_1 then
-  if (string.find)(l_0_1, "windows\\assembly\\nativeimages_v4", 1, true) then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_1, "packagemanagement\\providerassemblies\\nuget", 1, true) then
-    return mp.CLEAN
-  end
-  if not (mp.IsKnownFriendlyFile)(l_0_1, false, false) then
-    (mp.ReportLowfi)(l_0_1, 2040612934)
-  end
-end
-return mp.INFECTED
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SCPT:VBSSplit") and (mp.get_mpattribute)("BM_TEXT_FILE") then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:CoinMiner.BG")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

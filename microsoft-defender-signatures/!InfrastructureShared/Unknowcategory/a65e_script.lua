@@ -3,40 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "NewPECreatedNoCert")
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_2 = (sysio.GetFileLastWriteTime)(l_0_0)
-if ((sysio.GetLastResult)()).Success and l_0_2 ~= 0 then
-  l_0_2 = l_0_2 / 10000000 - 11644473600
-  local l_0_3 = (MpCommon.GetCurrentTimeT)()
-  if l_0_3 < l_0_2 or l_0_3 - (l_0_2) > 600 then
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  if l_0_0 == nil and (string.len)(l_0_0) < 3 then
     return mp.CLEAN
   end
-  local l_0_4 = -1
-  local l_0_5 = -1
-  local l_0_6 = (MpCommon.GetPersistContext)(l_0_0)
-  if l_0_6 ~= nil then
-    for l_0_10,l_0_11 in ipairs(l_0_6) do
-      local l_0_12 = tonumber((string.match)(l_0_11, "^Age:([0-9]+)$"))
-      if l_0_12 ~= nil and l_0_4 < l_0_12 then
-        l_0_4 = l_0_12
-      end
-      local l_0_13 = tonumber((string.match)(l_0_11, "^Prevalence:([0-9]+)$"))
-      if l_0_13 ~= nil and l_0_5 < l_0_13 then
-        l_0_5 = l_0_13
-      end
-    end
+  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
+  local l_0_1 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
+  if l_0_1 == nil and (string.len)(l_0_1) < 3 then
+    return mp.CLEAN
   end
-  do
-    do
-      if l_0_4 > -1 and l_0_4 <= 1 and l_0_5 > -1 and l_0_5 <= 100 then
-        return mp.INFECTED
-      end
-      return mp.CLEAN
-    end
+  local l_0_2 = {}
+  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\windows\\"))] = true
+  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\"))] = true
+  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\windows\\"))] = true
+  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\"))] = true
+  if l_0_2[l_0_1] then
+    return mp.INFECTED
   end
+end
+do
+  return mp.CLEAN
 end
 

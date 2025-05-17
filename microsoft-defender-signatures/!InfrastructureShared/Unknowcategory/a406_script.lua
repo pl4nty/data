@@ -3,29 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
--- DECOMPILER ERROR at PC7: Overwrote pending register: R1 in 'AssignReg'
-
-if (this_sigattrlog[3]).matched then
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC13: Overwrote pending register: R3 in 'AssignReg'
-
-  local l_0_3 = nil
-  -- DECOMPILER ERROR at PC14: Overwrote pending register: R2 in 'AssignReg'
-
-  local l_0_2 = nil
-  -- DECOMPILER ERROR at PC23: Confused about usage of register: R3 in 'UnsetPending'
-
-  if l_0_2 ~= nil and nil ~= nil then
-    l_0_1 = (string.sub)(l_0_3, 1, nil - 1)
-  else
-    l_0_1 = l_0_3
-  end
-  if l_0_1 == nil or l_0_1 == "" or (sysio.IsFileExists)(l_0_1) == false then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_1, ".exe", -4, true) or (string.find)(l_0_1, ".dll", -4, true) then
-    (bm.add_related_file)(l_0_1)
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = (string.lower)((mp.GetProcessCommandLine)(l_0_0.ppid))
+  if l_0_1 and l_0_2 and (string.find)(l_0_1, "\\system32\\cmd.exe", 1, true) and (string.find)(l_0_2, " /v /c ", 1, true) and (string.find)(l_0_2, " & set ", 1, true) and (string.find)(l_0_2, "! & !", 1, true) and (string.find)(l_0_2, ":~", 1, true) then
     return mp.INFECTED
   end
 end

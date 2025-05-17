@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
-  return mp.CLEAN
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-if (pe.get_exports)() > 200 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,35 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epinfirstsect and peattributes.entrybyte55 and not peattributes.epscn_eqsizes and (pesecs[pehdr.NumberOfSections]).Name == ".rsrc" then
-  if pehdr.NumberOfSections == 8 then
-    if pehdr.SizeOfImage >= 196608 and pehdr.SizeOfImage <= 327680 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.command_line)
+  if l_0_1 ~= nil and (string.sub)(l_0_1, -1) == "\"" then
+    if (string.find)(l_0_1, "\\program files (x86)\\", 1, true) or (string.find)(l_0_1, "\\program files\\", 1, true) or (string.find)(l_0_1, "qqpcmgr", 1, true) then
+      return mp.CLEAN
+    end
+    local l_0_2 = (string.sub)(l_0_1, -4, -2)
+    if l_0_2 == ".ax" then
+      return mp.CLEAN
+    end
+    local l_0_3 = (string.sub)(l_0_1, -5, -2)
+    if l_0_3 ~= ".dll" and l_0_3 ~= ".ocx" and l_0_3 ~= ".exe" and l_0_3 ~= ".cpl" and l_0_3 ~= ".spi" and l_0_3 ~= ".tlb" and l_0_3 ~= ".txt" and l_0_3 ~= ".ime" then
+      (bm.request_SMS)(l_0_0.ppid, "m")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1)
       return mp.INFECTED
     end
-    if pehdr.SizeOfImage >= 1310720 and pehdr.SizeOfImage <= 1769472 then
-      return mp.INFECTED
-    end
-  end
-  if pehdr.NumberOfSections == 6 then
-    if pehdr.SizeOfImage >= 1048576 and pehdr.SizeOfImage <= 1310720 then
-      return mp.INFECTED
-    end
-    if pehdr.SizeOfImage >= 131072 and pehdr.SizeOfImage <= 167936 then
-      return mp.INFECTED
-    end
-    if pehdr.SizeOfImage >= 217088 and pehdr.SizeOfImage <= 282624 then
-      return mp.INFECTED
-    end
-    if pehdr.SizeOfImage >= 466944 and pehdr.SizeOfImage <= 557056 then
-      return mp.INFECTED
-    end
-    if pehdr.SizeOfImage >= 749568 and pehdr.SizeOfImage <= 946176 then
-      return mp.INFECTED
-    end
-  end
-  if pehdr.NumberOfSections == 7 and pehdr.SizeOfImage >= 217088 and pehdr.SizeOfImage <= 589824 then
-    return mp.INFECTED
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

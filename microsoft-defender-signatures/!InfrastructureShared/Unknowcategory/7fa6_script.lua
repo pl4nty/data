@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Kelios.GD!MTB") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("InEmail") then
+  if mp.HSTR_WEIGHT >= 21 then
+    return mp.INFECTED
+  else
+    return mp.LOWFI
+  end
+else
+  if mp.HSTR_WEIGHT >= 21 then
+    return mp.LOWFI
+  end
 end
 return mp.CLEAN
 

@@ -3,32 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).utf8p2 ~= nil then
+      local l_0_1, l_0_2, l_0_3 = (string.lower)((this_sigattrlog[3]).utf8p2)
+    end
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC64: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC73: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.find)(l_0_1, "reflection.assembly", 1, true) and ((string.find)(l_0_1, ":load", 1, true) or (string.find)(l_0_1, ".load", 1, true)) then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-if peattributes.hasexports == true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.lastscn_writable ~= true then
-  return mp.CLEAN
-end
-if peattributes.epscn_islast ~= true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfHeaders ~= 1024 then
-  return mp.CLEAN
-end
-if pehdr.FileAlignment ~= 512 then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

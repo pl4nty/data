@@ -3,31 +3,35 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+if (this_sigattrlog[7]).matched then
+  local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
 
-  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
 
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasMediafireUrl") then
-      (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromMediafire") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromMediafire", 3600)
-        return mp.INFECTED
-      end
+    -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC34: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC46: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_0 ~= nil and ((string.match)(l_0_0, "/addfile [^ ]+ \\\\localhost\\[^ ]* [^ ]+") ~= nil or (string.match)(l_0_0, "/addfile [^ ]+ \\\\127%.0%.0%.1\\[^ ]* [^ ]+") ~= nil or (string.match)(l_0_0, "/addfile [^ ]+ .:\\[^ ]* [^ ]+") ~= nil or (string.match)(l_0_0, "/addfile [^ ]+ http[s]?%:%/%/[^ ]* [^ ]+") ~= nil) then
+      local l_0_6 = nil
+      local l_0_7 = nil
+      ;
+      (bm.add_related_file)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0:match("[^ ]*$"))))
+      return mp.INFECTED
+    end
+    do
+      return mp.CLEAN
     end
   end
-  return mp.CLEAN
 end
 

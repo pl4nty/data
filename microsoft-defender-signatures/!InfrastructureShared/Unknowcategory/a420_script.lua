@@ -3,17 +3,40 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\regasm.exe", 1, true) then
-    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-    local l_0_9 = tonumber(l_0_7)
-    local l_0_10 = tonumber(l_0_8)
-    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
-    ;
-    (mp.TriggerScanResource)("ems", l_0_13)
+local l_0_0 = (bm.get_connection_string)()
+if l_0_0 then
+  local l_0_1 = (string.match)(l_0_0, "DestPort=(%d+)")
+  local l_0_2 = {}
+  l_0_2["80"] = true
+  l_0_2["8080"] = true
+  l_0_2["443"] = true
+  l_0_2["53"] = true
+  l_0_2["21"] = true
+  l_0_2["25"] = true
+  l_0_2["22"] = true
+  l_0_2["389"] = true
+  l_0_2["9"] = true
+  l_0_2["636"] = true
+  l_0_2["1433"] = true
+  l_0_2["1434"] = true
+  l_0_2["1521"] = true
+  l_0_2["9389"] = true
+  l_0_2["8100"] = true
+  l_0_2["23"] = true
+  l_0_2["993"] = true
+  l_0_2["40000"] = true
+  l_0_2["9085"] = true
+  l_0_2["9092"] = true
+  l_0_2["3306"] = true
+  l_0_2["3300"] = true
+  l_0_2["5432"] = true
+  if l_0_2[l_0_1] then
+    return mp.CLEAN
+  else
+    return mp.INFECTED
   end
 end
-return mp.INFECTED
+do
+  return mp.CLEAN
+end
 

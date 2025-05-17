@@ -3,25 +3,37 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
+local l_0_0 = false
+local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+if l_0_1 ~= nil and l_0_1 ~= "" then
+  l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
+  if l_0_1 ~= nil and l_0_1 ~= "" and (sysio.IsFileExists)(l_0_1) then
+    l_0_1 = (string.lower)(l_0_1)
+    l_0_0 = true
+  end
 end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  return mp.CLEAN
+if l_0_0 == false then
+  l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+  if l_0_1 ~= nil and l_0_1 ~= "" then
+    l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
+    if l_0_1 ~= nil and l_0_1 ~= "" and (sysio.IsFileExists)(l_0_1) then
+      l_0_0 = true
+    end
+  end
 end
-local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-if (string.sub)(l_0_1, -10) ~= "\\downloads" and (string.find)(l_0_1, "\\temp\\", 1, true) == nil and (string.sub)(l_0_1, -5) ~= "\\temp" then
-  return mp.CLEAN
+if l_0_0 then
+  if (string.find)(l_0_1, "^.:\\windows\\ccmcache\\") then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.match)(l_0_1, "^.:\\(program files[^\\]*)\\tanium\\tanium client\\")
+  if l_0_2 == "program files" then
+    return mp.CLEAN
+  end
+  if l_0_2 == "program files (x86)" then
+    return mp.CLEAN
+  end
 end
-local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-local l_0_3 = (string.match)(l_0_2, "(.+)%(.%).exe$")
-if l_0_3 == nil then
-  return mp.CLEAN
+do
+  return mp.INFECTED
 end
-local l_0_4 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-if (string.match)(l_0_4, "(.+).exe$") ~= l_0_3 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

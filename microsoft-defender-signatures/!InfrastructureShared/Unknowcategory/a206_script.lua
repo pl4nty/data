@@ -3,19 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_isdll") then
-  return mp.CLEAN
-end
-local l_0_0 = pehdr.AddressOfEntryPoint + pehdr.ImageBase
-do
-  if l_0_0 == (hstrlog[1]).VA then
-    local l_0_1, l_0_2 = (pe.get_exports)()
-    if l_0_1 > 2 then
-      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    end
-    ;
-    (mp.set_mpattribute)("BorlandDelphiDllEntryPoint")
-  end
+if ((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched) or ((hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched)) then
   return mp.INFECTED
 end
+return mp.CLEAN
 

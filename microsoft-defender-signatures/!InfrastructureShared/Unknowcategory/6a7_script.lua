@@ -3,27 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[6]).utf8p2)
-  l_0_0 = (string.gsub)(l_0_0, "\"", "")
-  l_0_0 = (string.gsub)(l_0_0, "\'", "")
-  local l_0_1 = false
-  local l_0_2 = false
-  local l_0_3 = false
-  if (string.find)(l_0_0, "http", 1, true) then
-    l_0_1 = true
-  end
-  if (string.find)(l_0_0, "iwr ", 1, true) or (string.find)(l_0_0, "invoke-webrequest", 1, true) or (string.find)(l_0_0, "irm", 1, true) or (string.find)(l_0_0, "invoke-restmethod", 1, true) or (string.find)(l_0_0, ".downloadstring(", 1, true) or (string.find)(l_0_0, "curl", 1, true) or (string.find)(l_0_0, "& \\w", 1, true) then
-    l_0_2 = true
-  end
-  if (string.find)(l_0_0, "iex", 1, true) or (string.find)(l_0_0, "|powershell", 1, true) or (string.find)(l_0_0, ").invoke()", 1, true) or (string.find)(l_0_0, "cscript //nologo $", 1, true) or (string.find)(l_0_0, "c:\\users\\public\\", 1, true) then
-    l_0_3 = true
-  end
-  if l_0_1 and l_0_2 and l_0_3 then
-    return mp.INFECTED
-  end
+local l_0_0 = ""
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+  l_0_0 = (MpCommon.PathToWin32Path)((string.lower)((this_sigattrlog[2]).utf8p1))
 end
-do
+if l_0_0 == nil then
   return mp.CLEAN
 end
+if (string.find)(l_0_0, "\\cache\\", 1, true) or (string.find)(l_0_0, ".xps", 1, true) or (string.find)(l_0_0, ".config", 1, true) or (string.find)(l_0_0, ".tmp", 1, true) or (string.find)(l_0_0, ".db", 1, true) or (string.find)(l_0_0, "\\shadercache\\", 1, true) or (string.find)(l_0_0, "\\amd\\", 1, true) or (string.find)(l_0_0, "\\spool\\", 1, true) or (string.find)(l_0_0, "\\filecache", 1, true) then
+  return mp.CLEAN
+end
+local l_0_1 = (sysio.GetFileSize)(l_0_0)
+;
+(bm.add_related_string)("SuspFileWriteV", tostring(l_0_0), bm.RelatedStringBMReport)
+;
+(bm.add_related_string)("SuspFileWriteV_size", tostring(l_0_1), bm.RelatedStringBMReport)
+return mp.INFECTED
 

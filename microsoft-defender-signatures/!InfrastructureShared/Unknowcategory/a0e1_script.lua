@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.hasexports == true and (pesecs[3]).Name == "hydrated" and (pesecs[2]).Name == ".managed" and (pesecs[3]).Characteristics == 3221225600 and (mp.getfilesize)() >= 6000000 and (mp.getfilesize)() <= 8000000 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:PEHasIOAVURL") and (mp.get_mpattribute)("SIGATTR:SellExecuteExError") then
+  (mp.set_mpattribute)("lua_codepatch_tibs_3")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 7, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 14, "\178\000")
 end
-return mp.CLEAN
+return mp.INFECTED
 

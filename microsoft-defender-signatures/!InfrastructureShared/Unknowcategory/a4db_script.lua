@@ -3,18 +3,40 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
-if l_0_0 == nil or (string.find)(l_0_0, "programdata\\avastsvc", 1, true) == nil and (string.find)(l_0_0, "recycler.bin\\1", 1, true) == nil then
-  return mp.CLEAN
+local l_0_3 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = false
+else
+  do
+    -- DECOMPILER ERROR at PC27: Overwrote pending register: R0 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC41: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+        local l_0_1, l_0_2 = nil
+      end
+      if l_0_3 ~= nil then
+        local l_0_4 = nil
+        for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
+          local l_0_5 = nil
+          -- DECOMPILER ERROR at PC54: Confused about usage of register: R7 in 'UnsetPending'
+
+          R7_PC54 = (mp.ContextualExpandEnvironmentVariables)(R7_PC54)
+          if (sysio.IsFileExists)(R7_PC54) then
+            l_0_4 = true
+            ;
+            (bm.add_related_file)(R7_PC54)
+          end
+        end
+      end
+      do
+        if l_0_4 then
+          return mp.INFECTED
+        end
+        return mp.CLEAN
+      end
+    end
+  end
 end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
-end
-return mp.INFECTED
 

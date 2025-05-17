@@ -3,36 +3,23 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-      local l_0_1, l_0_2 = (this_sigattrlog[2]).utf8p2
-    end
-    -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_1 ~= nil then
-      local l_0_3 = nil
-      for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-        local l_0_4 = nil
-        -- DECOMPILER ERROR at PC53: Confused about usage of register: R6 in 'UnsetPending'
-
-        if (sysio.IsFileExists)(R6_PC53) then
-          (bm.add_related_file)(R6_PC53)
-        end
-      end
-    end
+local l_0_0 = (string.match)((this_sigattrlog[1]).utf8p1, "\\([%x]+)$")
+if l_0_0 and (string.len)(l_0_0) > 31 then
+  local l_0_1 = (mp.GetMachineGUID)()
+  if l_0_1 and l_0_1 == "E7000F4C-E95C-400D-8EAB-37FF728B4EF2" then
     do
-      return mp.INFECTED
+      do
+        if (this_sigattrlog[1]).matched then
+          local l_0_2 = (this_sigattrlog[1]).utf8p1
+          if l_0_2 then
+            l_0_2 = (mp.ContextualExpandEnvironmentVariables)(l_0_2)
+            ;
+            (bm.add_related_file)(l_0_2)
+          end
+        end
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
     end
   end
 end

@@ -3,28 +3,13 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
-      local l_0_1, l_0_2 = (this_sigattrlog[4]).utf8p1
-    end
-    -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC32: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_1 ~= nil then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_1), 2220734309)
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+if mp.HSTR_WEIGHT >= 6 then
+  return mp.INFECTED
 end
+if (mp.get_mpattribute)("CallsRtlDecompressBuffer") and peattributes.pea_dt_error_not_enough_memory then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
+end
+return mp.CLEAN
 

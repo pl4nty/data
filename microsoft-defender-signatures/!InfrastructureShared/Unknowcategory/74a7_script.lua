@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (((mp.getfilename)()):lower()):find("word/embeddings/oleobject1.bin->(ole stream 0)", -46, true) then
+if peattributes.isexe and peattributes.no_security and peattributes.x86_image and peattributes.dynmem_APIcall then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

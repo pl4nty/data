@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.hasexports == true and peattributes.epinfirstsect == true and peattributes.suspicious_linker_version == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true then
-  return mp.INFECTED
+do
+  if peattributes.isdll == true and (mp.getfilesize)() > 1002672 and (mp.getfilesize)() < 1752672 and peattributes.amd64_image then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

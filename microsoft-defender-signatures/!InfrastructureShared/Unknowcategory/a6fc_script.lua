@@ -3,107 +3,64 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[1]).matched then
-  local l_0_0, l_0_2 = nil, nil
-  if l_0_0 == nil or l_0_0 == "" then
-    return mp.CLEAN
-  end
-  l_0_2 = (string.match)(l_0_0, "\\appdata\\roaming\\([^\\]+)\\[^%.]+%.vbs")
-  local l_0_1, l_0_3 = nil
-  if l_0_2 ~= nil then
-    l_0_1 = string
-    l_0_1 = l_0_1.len
-    l_0_3 = l_0_2
-    l_0_1 = l_0_1(l_0_3)
-  end
-  if l_0_1 ~= 6 then
-    l_0_1 = mp
-    l_0_1 = l_0_1.CLEAN
-    return l_0_1
-  end
-  l_0_1 = sysio
-  l_0_1 = l_0_1.IsFileExists
-  l_0_3 = l_0_0
-  l_0_1 = l_0_1(l_0_3)
-  if l_0_1 then
-    l_0_1 = mp
-    l_0_1 = l_0_1.ReportLowfi
-    l_0_3 = l_0_0
-    l_0_1(l_0_3, 1248478195)
-    l_0_1 = bm
-    l_0_1 = l_0_1.add_related_file
-    l_0_3 = l_0_0
-    l_0_1(l_0_3)
-    l_0_1 = mp
-    l_0_1 = l_0_1.INFECTED
-    return l_0_1
-  end
-end
 do
-  local l_0_4, l_0_5 = nil
-  -- DECOMPILER ERROR at PC58: Overwrote pending register: R2 in 'AssignReg'
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC61: Confused about usage of register: R2 in 'UnsetPending'
-
-  if (this_sigattrlog[2]).matched then
-    if nil == nil or nil == "" then
-      return mp.CLEAN
+  do
+    if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p1 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).utf8p1 ~= nil then
+      local l_0_1 = (this_sigattrlog[3]).utf8p1
+    else
     end
-    -- DECOMPILER ERROR at PC68: Confused about usage of register: R2 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC71: Overwrote pending register: R3 in 'AssignReg'
+    do
+      if (not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).utf8p1 == nil or (this_sigattrlog[6]).matched) and (this_sigattrlog[6]).utf8p1 ~= nil then
+        local l_0_2, l_0_3, l_0_4, l_0_5 = (this_sigattrlog[5]).utf8p1
+      end
+      -- DECOMPILER ERROR at PC69: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC76: Confused about usage of register: R3 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC71: Confused about usage of register: R0 in 'UnsetPending'
 
-    if nil == nil or (string.len)(nil) ~= 6 then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC85: Confused about usage of register: R2 in 'UnsetPending'
+      if l_0_2 == nil or #l_0_2 < 4 then
+        return mp.CLEAN
+      end
+      -- DECOMPILER ERROR at PC79: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC91: Confused about usage of register: R2 in 'UnsetPending'
+      local l_0_6, l_0_7 = , (string.gsub)(l_0_2, "\\", "")
+      -- DECOMPILER ERROR at PC99: Unhandled construct in 'MakeBoolean' P1
 
-    if (sysio.IsFileExists)(nil) then
-      (mp.ReportLowfi)(nil, 3546485321)
-      -- DECOMPILER ERROR at PC96: Confused about usage of register: R2 in 'UnsetPending'
+      if (string.byte)(l_0_6) == (string.byte)("%") and (l_0_2 == nil or l_0_2 ~= 2) then
+        return mp.CLEAN
+      end
+      if l_0_2 == nil or l_0_2 ~= 4 then
+        return mp.CLEAN
+      end
+      local l_0_8 = nil
+      -- DECOMPILER ERROR at PC121: Overwrote pending register: R3 in 'AssignReg'
 
-      ;
-      (bm.add_related_file)(nil)
-      return mp.INFECTED
+      -- DECOMPILER ERROR at PC126: Confused about usage of register: R3 in 'UnsetPending'
+
+      if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p2 == nil or nil ~= nil then
+        local l_0_9 = nil
+        for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
+          local l_0_10 = nil
+          -- DECOMPILER ERROR at PC136: Confused about usage of register: R9 in 'UnsetPending'
+
+          if (string.find)((string.lower)(R9_PC136), "\\javaw.exe") == nil and (sysio.IsFileExists)(R9_PC136) then
+            (bm.add_threat_file)(R9_PC136)
+          end
+        end
+      end
+      do
+        return mp.INFECTED
+      end
     end
   end
-  local l_0_6, l_0_7 = nil
-  -- DECOMPILER ERROR at PC109: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC112: Confused about usage of register: R4 in 'UnsetPending'
-
-  if (this_sigattrlog[3]).matched then
-    if nil == nil or nil == "" then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC119: Confused about usage of register: R4 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC122: Overwrote pending register: R5 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC127: Confused about usage of register: R5 in 'UnsetPending'
-
-    if nil == nil or (string.len)(nil) ~= 6 then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC136: Confused about usage of register: R4 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC142: Confused about usage of register: R4 in 'UnsetPending'
-
-    if (sysio.IsFileExists)(nil) then
-      (mp.ReportLowfi)(nil, 2758025951)
-      -- DECOMPILER ERROR at PC147: Confused about usage of register: R4 in 'UnsetPending'
-
-      ;
-      (bm.add_related_file)(nil)
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
 end
 

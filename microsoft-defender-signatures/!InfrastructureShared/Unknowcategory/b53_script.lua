@@ -3,6 +3,5 @@
 
 -- params : ...
 -- function num : 0
-(pe.reemulate)()
-return mp.INFECTED
+return mp.SYNCLOWFI
 

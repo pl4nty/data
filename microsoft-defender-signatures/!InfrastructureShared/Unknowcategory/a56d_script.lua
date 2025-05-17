@@ -3,27 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata then
-  local l_0_0 = (mp.getfilesize)()
-  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
-
-  if (l_0_0 >= 6402040 and l_0_0 <= 6591488 and pehdr.SizeOfImage == 622592) or l_0_0 < 57671680 or l_0_0 >= 14188544 and l_0_0 <= 14254080 and pehdr.SizeOfImage == 921600 then
-    local l_0_1 = pehdr.NumberOfSections
-    local l_0_2 = (pesecs[l_0_1]).PointerToRawData + (pesecs[l_0_1]).SizeOfRawData
-    ;
-    (mp.readprotection)(false)
-    local l_0_3 = (mp.readfile)(l_0_2, 16)
-    if l_0_3 == "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" then
-      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
-      return mp.INFECTED
-    end
-  end
-end
-do
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) + 8, 4), 1)
+local l_0_1 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) + 12, 4), 1)
+local l_0_2 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) + 16, 4), 1)
+local l_0_3 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) + 20, 4), 1)
+if l_0_0 ~= 2089811968 or l_0_1 ~= 0 or l_0_3 ~= 8 then
   return mp.CLEAN
 end
+if l_0_2 == pehdr.ImageBase + (pesecs[1]).VirtualAddress then
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  return mp.INFECTED
+end
+return mp.CLEAN
 

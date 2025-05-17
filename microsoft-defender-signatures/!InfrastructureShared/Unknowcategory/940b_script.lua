@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (((hstrlog[1]).matched or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[4]).matched and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) >= 2 and (hstrlog[2]).matched then
-  return mp.INFECTED
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 20971520 then
+  return mp.CLEAN
+end
+if (pe.get_exports_count)() < 60 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

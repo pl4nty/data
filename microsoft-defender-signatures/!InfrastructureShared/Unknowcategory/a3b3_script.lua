@@ -3,23 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0 and (MpCommon.GetPersistContextCountNoPath)("OfficeWmiProc") > 0 then
+    local l_0_1 = (MpCommon.GetPersistContextNoPath)("OfficeWmiProc")
+    if (string.find)(l_0_0, "wmiprvse.exe", 1, true) then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        if (sysio.IsFileExists)(l_0_6) then
+          (bm.add_related_file)(l_0_6)
+        end
+      end
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if pehdr.NumberOfSections ~= 4 then
-  return mp.CLEAN
-end
-if (pesecs[1]).VirtualSize <= 12288 then
-  return mp.CLEAN
-end
-if (pesecs[1]).VirtualSize >= 81920 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pesecs[1]).VirtualSize + (pesecs[1]).PointerToRawData, 4)
-if (mp.readu_u32)(l_0_0, 1) == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

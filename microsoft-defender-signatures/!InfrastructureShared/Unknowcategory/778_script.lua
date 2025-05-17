@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = (((this_sigattrlog[3]).utf8p1):lower()):match("\\([^\\]+)$")
-  local l_0_1 = (((this_sigattrlog[3]).utf8p2):lower()):match("\\([^\\]+)%.exe$")
-  if l_0_0 ~= nil and l_0_1 ~= nil and l_0_0 == l_0_1 then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if (string.find)(l_0_0, "sgm_emotet_downloader_maldoc_", 1, true) ~= nil then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

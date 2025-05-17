@@ -3,8 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 232 and epcode[6] == 232 and epcode[11] == 51 and epcode[13] == 195 and pevars.lscnwr == 1 and (pesecs[pehdr.NumberOfSections]).PointerToRawData == 45056 then
-  return mp.INFECTED
+if peattributes.isvbnative == true then
+  local l_0_0 = (hstrlog[2]).VA
+  local l_0_1 = (pe.mmap_va)(l_0_0 + 7, 4)
+  local l_0_2 = 0
+  for l_0_6 = 4, 1, -1 do
+    l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
+  end
+  if l_0_2 > 8192 then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.LOWFI
+end
 

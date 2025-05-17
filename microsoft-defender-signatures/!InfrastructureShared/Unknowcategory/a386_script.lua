@@ -3,20 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[3]).utf8p2
-if not l_0_0 or #l_0_0 < 8 then
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
   return mp.CLEAN
 end
-local l_0_1, l_0_2 = (string.find)(l_0_0, "--%x+")
-if l_0_1 ~= 1 or l_0_2 < l_0_1 or l_0_2 - l_0_1 < 8 then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
-local l_0_3 = (bm.get_imagepath)()
-local l_0_4, l_0_5 = (bm.get_process_relationships)()
-for l_0_9,l_0_10 in ipairs(l_0_5) do
-  if l_0_10.image_path == l_0_3 then
-    (MpCommon.RequestSmsOnProcess)(l_0_10.ppid, MpCommon.SMS_SCAN_MED)
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 500000 or l_0_0 < 10000 then
+  return mp.CLEAN
+end
+if (((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()):find("program files", 1, true) then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

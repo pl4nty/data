@@ -3,51 +3,30 @@
 
 -- params : ...
 -- function num : 0
-checkProcessTree = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 == nil or l_1_1 == nil or type(l_1_1) ~= "table" then
-    return nil
-  end
-  local l_1_2 = l_1_0
-  local l_1_3 = {}
-  for l_1_7,l_1_8 in ipairs(l_1_1) do
-    local l_1_9 = 0
-    local l_1_10, l_1_11 = (bm.get_process_relationships)(l_1_2)
-    for l_1_15,l_1_16 in ipairs(l_1_11) do
-      if (mp.bitand)(l_1_16.reason_ex, 1) == 1 and (string.sub)(l_1_16.image_path, -(string.len)(l_1_8)) == l_1_8 then
-        l_1_2 = l_1_16.ppid
-        l_1_9 = l_1_9 + 1
-      end
-      if l_1_9 > 1 then
-        return nil
-      end
-    end
-    if l_1_9 == 0 then
-      return nil
-    end
-    ;
-    (table.insert)(l_1_3, l_1_2)
-  end
-  return l_1_3
-end
-
-if (bm.GetSignatureMatchDuration)() > 300000000 then
+local l_0_0 = pevars.sigaddr + 56
+if (pe.vm_search)(l_0_0, l_0_0 + 4040, "¡\001\004\139\016\137\021\144\001\004\255%\144\001\004j@h\000\016\000\000h\144\001\004j\000èÚ\255\255\255\144\000", nil, pe.VM_SEARCH_BM) == 4294967295 then
   return mp.CLEAN
 end
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 == nil or l_0_0.ppid == nil then
+local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "9\bu\144\001\001¸\001\004\255\a9\au\144\001\0011Òƒ\192\001¹\001\004\137\001¡\001\004°\144\001\004\139\029\144\001\004ë\144\001\004\144\004\001\002ëé\144\000", nil, pe.VM_SEARCH_BM)
+if l_0_1 == 4294967295 then
   return mp.CLEAN
 end
-local l_0_1 = l_0_0.ppid
-local l_0_2 = {}
--- DECOMPILER ERROR at PC25: No list found for R2 , SetList fails
-
--- DECOMPILER ERROR at PC26: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC27: Overwrote pending register: R4 in 'AssignReg'
-
-if ("cmd.exe")("powershell.exe", l_0_2) == nil then
-  return mp.CLEAN
-end
+local l_0_2 = (pe.mmap_va)(l_0_1 + 5, 4)
+local l_0_3 = (mp.readu_u32)(l_0_2, 1)
+;
+(pe.set_regval)(pe.REG_EAX, l_0_3)
+local l_0_4 = pevars.sigaddr + 6
+local l_0_5 = l_0_1 + 32 - l_0_4 - 5
+local l_0_6, l_0_7, l_0_8, l_0_9 = (mp.bsplit)(l_0_5, 8)
+;
+(pe.mmap_patch_va)(l_0_4, "\233")
+;
+(pe.mmap_patch_va)(l_0_4 + 1, (string.char)(l_0_6))
+;
+(pe.mmap_patch_va)(l_0_4 + 2, (string.char)(l_0_7))
+;
+(pe.mmap_patch_va)(l_0_4 + 3, (string.char)(l_0_8))
+;
+(pe.mmap_patch_va)(l_0_4 + 4, (string.char)(l_0_9))
 return mp.INFECTED
 

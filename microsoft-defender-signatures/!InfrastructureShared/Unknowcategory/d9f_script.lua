@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+if peattributes.isdll then
   return mp.CLEAN
 end
 return mp.INFECTED

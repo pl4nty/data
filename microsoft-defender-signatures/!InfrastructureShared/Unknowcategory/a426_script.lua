@@ -3,15 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0 then
+    local l_0_1 = {}
+    l_0_1["powershell.exe"] = true
+    l_0_1["wscript.exe"] = true
+    l_0_1["cscript.exe"] = true
+    l_0_1["mshta.exe"] = true
+    l_0_1["cmd.exe"] = true
+    l_0_1["rundll32.exe"] = true
+    l_0_1["regsvr32.exe"] = true
+    l_0_1["msbuild.exe"] = true
+    l_0_1["vbcscompiler.exe"] = true
+    l_0_1["csc.exe"] = true
+    l_0_1["python.exe"] = true
+    l_0_1["pythonw.exe"] = true
+    l_0_1["winword.exe"] = true
+    l_0_1["excel.exe"] = true
+    l_0_1["powerpnt.exe"] = true
+    if l_0_1[(string.match)(l_0_0, "\\([^\\]+)$")] then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
-  return mp.CLEAN
-end
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\184\028\024\127N\144")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

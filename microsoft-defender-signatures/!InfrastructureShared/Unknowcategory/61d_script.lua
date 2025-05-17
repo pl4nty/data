@@ -3,18 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  local l_0_7 = l_0_6.image_path
-  if l_0_7 ~= nil then
-    local l_0_8 = l_0_7:lower()
-    if l_0_8:find("setup", 1, true) then
-      return mp.CLEAN
-    end
-    if l_0_8:find("installer", 1, true) then
+do
+  if ((this_sigattrlog[5]).matched or this_sigattrlog[6]) and (this_sigattrlog[11]).matched then
+    local l_0_0 = (this_sigattrlog[11]).utf8p2
+    if l_0_0 and (string.find)(l_0_0, "/upn", 1, true) then
       return mp.CLEAN
     end
   end
+  return mp.INFECTED
 end
-return mp.INFECTED
 

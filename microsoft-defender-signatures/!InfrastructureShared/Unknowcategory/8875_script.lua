@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pevars.epsec == 1 and pehdr.NumberOfSections == 3 and (mp.readu_u32)(headerpage, 769) == 1702061426 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 8388608 or l_0_0 > 17825792 then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("HSTR:PYINSTALLER") and (mp.get_mpattribute)("HSTR:Linux/NativeAPIDirectoryEnumuerate.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

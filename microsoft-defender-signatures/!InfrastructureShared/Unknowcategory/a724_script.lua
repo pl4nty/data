@@ -3,42 +3,40 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\osk.exe$") then
-  return mp.CLEAN
-end
-do
-  if (string.find)(l_0_0, "\\systray.exe$") then
-    local l_0_1 = (versioning.GetOrgID)()
-    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
-      return mp.CLEAN
+if (mp.get_mpattribute)("SIGATTR:AntiEmuRaceThread") and (hstrlog[1]).matched then
+  local l_0_0 = 0
+  local l_0_1 = (mp.hstr_full_log)()
+  for l_0_5,l_0_6 in pairs(l_0_1) do
+    if l_0_6.matched and l_0_5 ~= "filter1" then
+      l_0_0 = l_0_6.VA
     end
   end
-  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
-  if l_0_3 == nil or #l_0_3 == 0 then
+  if l_0_0 == 0 then
     return mp.CLEAN
   end
-  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe")
-  if l_0_4 ~= nil then
-    local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
-    if l_0_5 == nil or (string.len)(l_0_5) <= 1 then
-      return mp.CLEAN
-    end
-  else
-    do
-      do return mp.CLEAN end
-      local l_0_6, l_0_7 = (bm.get_process_relationships)()
-      for l_0_11,l_0_12 in ipairs(l_0_6) do
-        if l_0_12.image_path ~= nil then
-          local l_0_13 = (string.lower)(l_0_12.image_path)
-          if (string.find)(l_0_13, "atbroker.exe", 1, true) or (string.find)(l_0_13, "utilman.exe", 1, true) then
-            return mp.INFECTED
-          end
-        end
-      end
-      return mp.CLEAN
-    end
+  local l_0_7 = l_0_0 - pehdr.AddressOfEntryPoint
+  if l_0_7 < 48 and l_0_7 > -48 then
+    return mp.CLEAN
   end
+  local l_0_8 = (pe.mmap_va)(pehdr.AddressOfEntryPoint + pehdr.ImageBase, 16)
+  local l_0_9 = (mp.readu_u32)(l_0_8, 1)
+  if (mp.bitand)(l_0_9, 16777215) ~= 15204458 then
+    return mp.CLEAN
+  end
+  local l_0_10 = l_0_0 - pehdr.AddressOfEntryPoint - 7 - pehdr.ImageBase
+  ;
+  (mp.readprotection)(false)
+  local l_0_11 = (mp.readfile)(0, (mp.getfilesize)())
+  ;
+  (mp.writeu_u32)(l_0_11, (pe.foffset_rva)(pehdr.AddressOfEntryPoint + 1), 15326001)
+  ;
+  (mp.writeu_u32)(l_0_11, (pe.foffset_rva)(pehdr.AddressOfEntryPoint + 4), l_0_10)
+  ;
+  (mp.vfo_add_buffer)(l_0_11, "[Obfuscator.AKH0]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  ;
+  (mp.set_mpattribute)("HSTR:PatchAntiEmuRaceThread")
+end
+do
+  return mp.CLEAN
 end
 

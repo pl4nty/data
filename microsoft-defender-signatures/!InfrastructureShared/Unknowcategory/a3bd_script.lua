@@ -3,24 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
+if peattributes.epscn_writable ~= true then
+  return mp.CLEAN
 end
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
-  local l_0_6 = (this_sigattrlog[1]).p1
-  local l_0_7 = (this_sigattrlog[2]).p1
-  local l_0_8 = (this_sigattrlog[3]).p1
-  if l_0_6:lower() .. l_0_7:lower() .. l_0_8:lower() == "unsafe" or l_0_6:lower() .. l_0_8:lower() .. l_0_7:lower() == "unsafe" then
-    return mp.INFECTED
-  end
+if pehdr.NumberOfSections ~= 3 then
+  return mp.CLEAN
 end
-do
-  return mp.LOWFI
+if (pesecs[1]).NameDW ~= 1886613038 then
+  return mp.CLEAN
 end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1886613038 then
+  return mp.CLEAN
+end
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+if (pesecs[1]).Characteristics ~= 4026532032 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

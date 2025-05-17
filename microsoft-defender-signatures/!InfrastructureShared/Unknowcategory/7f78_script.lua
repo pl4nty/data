@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("FOPEX:VirTool:Win32/Obfuscator.AKN") then
-  (pe.mmap_patch_va)(pevars.sigaddr + 6, "É¿\t")
+if (mp.get_mpattribute)("pea_isexe") and peattributes.no_security == true and (mp.getfilesize)() < 150000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

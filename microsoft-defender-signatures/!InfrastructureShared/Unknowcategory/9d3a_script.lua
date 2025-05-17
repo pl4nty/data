@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 4 then
+if mp.HSTR_WEIGHT >= 9 then
+  return mp.INFECTED
+end
+if not peattributes.isexe then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 5242880 then
-  return mp.CLEAN
-end
-for l_0_4 = 1, pehdr.NumberOfSections do
-  if (string.lower)(tostring((pesecs[l_0_4]).Name)) == ".shell" then
-    return mp.INFECTED
-  end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
 end
 return mp.CLEAN
 

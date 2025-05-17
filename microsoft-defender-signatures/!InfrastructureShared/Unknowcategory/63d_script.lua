@@ -3,28 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[2]).utf8p1
-if not l_0_0 then
+-- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+    if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, true, false) then
+      (bm.request_SMS)(l_0_1.ppid, "l+")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1000)
+      ;
+      (bm.add_related_file)(l_0_6)
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-l_0_0 = (string.lower)(l_0_0)
-if not l_0_0 or (string.len)(l_0_0) < 5 then
-  return mp.CLEAN
-end
-local l_0_1 = {}
-l_0_1[".jpg"] = true
-l_0_1.jpeg = true
-l_0_1[".png"] = true
-l_0_1[".gif"] = true
-l_0_1[".bmp"] = true
-l_0_1.tiff = true
-l_0_1[".tif"] = true
-l_0_1[".ppm"] = true
-l_0_1[".pnm"] = true
-l_0_1[".pgm"] = true
-l_0_1[".pbm"] = true
-if l_0_1[l_0_0:sub(-4)] and ((string.find)(l_0_0, "%appdata%\\", 1, true) or (string.find)(l_0_0, "appdata\\roaming\\", 1, true)) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

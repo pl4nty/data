@@ -3,14 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EBP)
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 8)
-local l_0_2 = (mp.bitor)((string.byte)(l_0_1, 3), 4294967040)
-l_0_1 = (pe.mmap_va)((mp.bitand)(l_0_0 + l_0_2, 4294967295), 4)
-local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1
-l_0_1 = (pe.mmap_va)(l_0_3, 4)
-if (mp.readu_u32)(l_0_1, 1) == 707406378 then
-  return mp.SUSPICIOUS
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+  end
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and ((string.find)(l_0_0, " whoami", 1, true) or (string.find)(l_0_0, " quser", 1, true) or (string.find)(l_0_0, " type ", 1, true) or (string.find)(l_0_0, " nltest", 1, true)) then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

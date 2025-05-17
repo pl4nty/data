@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[2]).Name == "UPX1" and (pesecs[4]).Name == "RlrtPtYn" and (pesecs[6]).Name == "NcbEZQRw" and (pesecs[13]).Name == "XeCVTXdm" then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 17, 5)
+if (mp.readu_u32)(l_0_0, 2) < 32768 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

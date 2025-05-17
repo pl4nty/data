@@ -3,32 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if not l_0_0 then
-  return mp.CLEAN
+local l_0_0 = nil
+local l_0_1 = nil
+if (sysio.IsFileExists)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))) and not (mp.IsKnownFriendlyFile)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), true, false) then
+  (bm.add_related_string)("VaultAccess", (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), bm.RelatedStringBMReport)
+  ;
+  (bm.add_related_file)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())))
+  return mp.INFECTED
 end
-l_0_0 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
-if not (sysio.IsFileExists)(l_0_0) then
-  return mp.CLEAN
-end
-local l_0_1 = (sysio.GetFileLastWriteTime)(l_0_0)
-if not ((sysio.GetLastResult)()).Success or l_0_1 == 0 then
-  return mp.CLEAN
-end
-l_0_1 = l_0_1 / 10000000 - 11644473600
-local l_0_2 = (MpCommon.GetCurrentTimeT)()
-if l_0_2 <= l_0_1 then
-  return mp.CLEAN
+local l_0_2, l_0_3 = , (bm.get_process_relationships)()
+if l_0_3 ~= nil then
+  for l_0_7,l_0_8 in ipairs(l_0_3) do
+    local l_0_4 = nil
+    -- DECOMPILER ERROR at PC46: Confused about usage of register: R8 in 'UnsetPending'
+
+    if R8_PC46.image_path ~= nil then
+      l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(R8_PC46.image_path))
+      if (sysio.IsFileExists)(l_0_1) and not (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+        (bm.add_related_string)("VaultAccess", l_0_1, bm.RelatedStringBMReport)
+        ;
+        (bm.add_related_file)(l_0_1)
+        return mp.INFECTED
+      end
+    end
+  end
 end
 do
-  local l_0_3 = (l_0_2 - (l_0_1)) / 60
-  if not l_0_3 <= 1440 then
-    return mp.CLEAN
-  end
-  if (#l_0_0 >= 9 and (string.sub)(l_0_0, 2, 9) == ":\\users\\") or #l_0_0 >= 15 and (string.sub)(l_0_0, 2, 15) == ":\\programdata\\" then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- DECOMPILER ERROR: 5 unprocessed JMP targets
+  return mp.CLEAN
 end
 

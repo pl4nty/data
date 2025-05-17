@@ -3,18 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata then
-  local l_0_0 = (mp.getfilesize)()
-  local l_0_1 = pehdr.NumberOfSections
-  local l_0_2 = (pesecs[l_0_1]).PointerToRawData + (pesecs[l_0_1]).SizeOfRawData
-  if l_0_2 + 4 < l_0_0 then
-    (mp.readprotection)(false)
-    if (mp.readfile)(l_0_2, 4) == "SO!#" then
-      return mp.INFECTED
-    end
+local l_0_0 = ""
+if (this_sigattrlog[2]).matched then
+  l_0_0 = (this_sigattrlog[2]).utf8p2
+end
+if l_0_0 ~= "" then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.find)(l_0_0, "domain ", 1, true) and (string.find)(l_0_0, "user ", 1, true) and (string.find)(l_0_0, "pass ", 1, true) then
+    return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

@@ -3,265 +3,103 @@
 
 -- params : ...
 -- function num : 0
+if peattributes.ismsil == false then
+  return mp.CLEAN
+end
+local l_0_0 = (pe.get_netmetadata)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+;
 (mp.readprotection)(false)
-if (hstrlog[1]).matched then
-  local l_0_0 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 5, 4)
-  local l_0_1 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 17, 1)
-  local l_0_2 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 20, 1)
-  ;
-  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_0, 1), (string.byte)(l_0_1, 1), (string.byte)(l_0_2, 1)))
-else
-  do
-    if (hstrlog[2]).matched then
-      local l_0_3 = (pe.mmap_va_nofastfail)((hstrlog[2]).VA + 5, 4)
-      local l_0_4 = (pe.mmap_va_nofastfail)((hstrlog[2]).VA + 11, 1)
-      local l_0_5 = (pe.mmap_va_nofastfail)((hstrlog[2]).VA + 14, 1)
-      ;
-      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_3, 1), (string.byte)(l_0_4, 1), (string.byte)(l_0_5, 1)))
+if (hstrlog[1]).matched == false then
+  return mp.CLEAN
+end
+if (hstrlog[2]).matched == false then
+  return mp.CLEAN
+end
+local l_0_1 = (pe.mmap_va)((hstrlog[1]).VA - 3, 4)
+local l_0_2 = (pe.mmap_va)((hstrlog[2]).VA + 6, 4)
+local l_0_3 = (mp.readu_u32)(l_0_1, 1)
+local l_0_4 = (mp.readu_u32)(l_0_2, 1)
+local l_0_5 = l_0_0.strheap_RVA + (pe.metadata_decode)(l_0_3, 2)
+local l_0_6 = l_0_0.strheap_RVA + (pe.metadata_decode)(l_0_4, 2)
+local l_0_7 = (pe.foffset_rva)(l_0_5)
+local l_0_8 = (pe.foffset_rva)(l_0_6)
+local l_0_9 = (mp.readfile)(l_0_7, 7)
+local l_0_10 = (mp.readfile)(l_0_8, 6)
+if (string.find)(l_0_9, "Replace", 1, true) == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_10, "Invoke", 1, true) == nil then
+  return mp.CLEAN
+end
+DecodeBlob = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = (mp.bitand)(l_1_0, 255)
+  local l_1_2 = (mp.bitand)(l_1_0, 65280)
+  local l_1_3 = (mp.bitand)(l_1_0, 16711680)
+  local l_1_4 = (mp.bitand)(l_1_0, 4278190080)
+  if l_1_1 == 0 then
+    return 0, 0
+  else
+    if (mp.bitand)(l_1_1, 128) == 0 then
+      return l_1_1, 1
     else
-      do
-        if (hstrlog[3]).matched then
-          local l_0_6 = (pe.mmap_va_nofastfail)((hstrlog[3]).VA + 6, 4)
-          local l_0_7 = (pe.mmap_va_nofastfail)((hstrlog[3]).VA + 17, 1)
-          ;
-          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_6, 1), 1, (string.byte)(l_0_7, 1)))
+      if (mp.bitand)(l_1_1, 192) == 128 then
+        return (mp.bitor)((mp.shl8)((mp.bitand)(l_1_1, 63), 8), l_1_2), 2
+      else
+        if (mp.bitand)(l_1_1, 224) == 12 then
+          local l_1_5 = (mp.shl8)((mp.bitand)(l_1_1, 31), 24)
+          local l_1_6 = (mp.shl8)(l_1_2, 16)
+          local l_1_7 = (mp.shl8)(l_1_3, 8)
+          return (mp.bitor)((mp.bitor)((mp.bitor)(l_1_5, l_1_6), l_1_7), l_1_4), 4
         else
           do
-            if (hstrlog[4]).matched then
-              local l_0_8 = (mp.readfile)((pe.foffset_va)((hstrlog[4]).VA - 6), 4)
-              local l_0_9 = (mp.readfile)((pe.foffset_va)((hstrlog[4]).VA - 8), 1)
-              ;
-              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_8, 1), (string.byte)(l_0_9, 1), 2))
-            else
-              do
-                if (hstrlog[5]).matched then
-                  local l_0_10 = (pe.mmap_va_nofastfail)((hstrlog[5]).VA + 14, 4)
-                  ;
-                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_10, 1), 1, 2))
-                else
-                  do
-                    if (hstrlog[6]).matched then
-                      local l_0_11 = (pe.mmap_va_nofastfail)((hstrlog[6]).VA + 6, 4)
-                      ;
-                      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_11, 1), 1, 2))
-                    else
-                      do
-                        if (hstrlog[7]).matched then
-                          local l_0_12 = (pe.mmap_va_nofastfail)((hstrlog[7]).VA - 4, 4)
-                          ;
-                          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_12, 1), 1, 2))
-                        else
-                          do
-                            if (hstrlog[8]).matched then
-                              local l_0_13 = (pe.mmap_va_nofastfail)((hstrlog[8]).VA + 9, 4)
-                              local l_0_14 = (pe.mmap_va_nofastfail)((hstrlog[8]).VA + 6, 1)
-                              ;
-                              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_13, 1), (string.byte)(l_0_14, 1), 2))
-                            else
-                              do
-                                if (hstrlog[9]).matched then
-                                  local l_0_15 = (mp.readfile)((pe.foffset_va)((hstrlog[9]).VA + 5), 4)
-                                  local l_0_16 = (mp.readfile)((pe.foffset_va)((hstrlog[9]).VA + 11), 1)
-                                  ;
-                                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_15, 1), (string.byte)(l_0_16, 1), 2))
-                                else
-                                  do
-                                    if (hstrlog[10]).matched then
-                                      local l_0_17 = (pe.mmap_va_nofastfail)((hstrlog[10]).VA + 6, 4)
-                                      local l_0_18 = (pe.mmap_va_nofastfail)((hstrlog[10]).VA + 12, 1)
-                                      ;
-                                      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_17, 1), (string.byte)(l_0_18, 1), 2))
-                                    else
-                                      do
-                                        if (hstrlog[11]).matched then
-                                          local l_0_19 = (mp.readfile)((pe.foffset_va)((hstrlog[11]).VA + 5), 4)
-                                          local l_0_20 = (mp.readfile)((pe.foffset_va)((hstrlog[11]).VA + 11), 1)
-                                          ;
-                                          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_19, 1), (string.byte)(l_0_20, 1), 2))
-                                        else
-                                          do
-                                            if (hstrlog[12]).matched then
-                                              local l_0_21 = (pe.mmap_va_nofastfail)((hstrlog[12]).VA + 11, 4)
-                                              local l_0_22 = (pe.mmap_va_nofastfail)((hstrlog[12]).VA + 6, 1)
-                                              ;
-                                              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_21, 1), (string.byte)(l_0_22, 1), 2))
-                                            else
-                                              do
-                                                if (hstrlog[13]).matched then
-                                                  local l_0_23 = (pe.mmap_va_nofastfail)((hstrlog[13]).VA + 5, 4)
-                                                  local l_0_24 = (pe.mmap_va_nofastfail)((hstrlog[13]).VA + 11, 1)
-                                                  ;
-                                                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_23, 1), (string.byte)(l_0_24, 1), 2))
-                                                else
-                                                  do
-                                                    if (hstrlog[14]).matched then
-                                                      local l_0_25 = (pe.mmap_va_nofastfail)((hstrlog[14]).VA + 11, 4)
-                                                      local l_0_26 = (pe.mmap_va_nofastfail)((hstrlog[14]).VA + 6, 1)
-                                                      ;
-                                                      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_25, 1), (string.byte)(l_0_26, 1), 2))
-                                                    else
-                                                      do
-                                                        if (hstrlog[15]).matched then
-                                                          local l_0_27 = (pe.mmap_va_nofastfail)((hstrlog[15]).VA + 5, 4)
-                                                          ;
-                                                          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_27, 1), 1, 2))
-                                                        else
-                                                          do
-                                                            if (hstrlog[16]).matched then
-                                                              local l_0_28 = (mp.readfile)((pe.foffset_va)((hstrlog[16]).VA - 7), 4)
-                                                              local l_0_29 = (mp.readfile)((pe.foffset_va)((hstrlog[16]).VA - 1), 1)
-                                                              ;
-                                                              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_28, 1), (string.byte)(l_0_29, 1), 2))
-                                                            else
-                                                              do
-                                                                if (hstrlog[17]).matched then
-                                                                  local l_0_30 = (mp.readfile)((pe.foffset_va)((hstrlog[17]).VA - 4), 4)
-                                                                  ;
-                                                                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_30, 1), 1, 2))
-                                                                else
-                                                                  do
-                                                                    if (hstrlog[18]).matched then
-                                                                      local l_0_31 = (pe.mmap_va_nofastfail)((hstrlog[18]).VA - 4, 4)
-                                                                      ;
-                                                                      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_31, 1), 1, 2))
-                                                                    else
-                                                                      do
-                                                                        if (hstrlog[19]).matched then
-                                                                          local l_0_32 = (mp.readfile)((pe.foffset_va)((hstrlog[19]).VA + 4), 4)
-                                                                          ;
-                                                                          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_32, 1), 1, 2))
-                                                                        else
-                                                                          do
-                                                                            if (hstrlog[20]).matched then
-                                                                              local l_0_33 = (mp.readfile)((pe.foffset_va)((hstrlog[20]).VA + 5), 4)
-                                                                              ;
-                                                                              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_33, 1), 1, 2))
-                                                                            else
-                                                                              do
-                                                                                if (hstrlog[21]).matched then
-                                                                                  local l_0_34 = (mp.readfile)((pe.foffset_va)((hstrlog[21]).VA + 5), 4)
-                                                                                  local l_0_35 = (mp.readfile)((pe.foffset_va)((hstrlog[21]).VA + 11), 1)
-                                                                                  ;
-                                                                                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_34, 1), (string.byte)(l_0_35, 1), 2))
-                                                                                else
-                                                                                  do
-                                                                                    if (hstrlog[22]).matched then
-                                                                                      local l_0_36 = (mp.readfile)((pe.foffset_va)((hstrlog[22]).VA + 5), 4)
-                                                                                      local l_0_37 = (mp.readfile)((pe.foffset_va)((hstrlog[22]).VA - 1), 1)
-                                                                                      ;
-                                                                                      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_36, 1), (string.byte)(l_0_37, 1), 2))
-                                                                                    else
-                                                                                      do
-                                                                                        if (hstrlog[23]).matched then
-                                                                                          local l_0_38 = (mp.readfile)((pe.foffset_va)((hstrlog[23]).VA + 7), 4)
-                                                                                          local l_0_39 = (mp.readfile)((pe.foffset_va)((hstrlog[23]).VA - 1), 1)
-                                                                                          ;
-                                                                                          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_38, 1), (string.byte)(l_0_39, 1), 2))
-                                                                                        else
-                                                                                          do
-                                                                                            if (hstrlog[24]).matched then
-                                                                                              local l_0_40 = (mp.readfile)((pe.foffset_va)((hstrlog[24]).VA + 7), 4)
-                                                                                              ;
-                                                                                              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_FFFFFFFE_%02X", (mp.readu_u32)(l_0_40, 1), 2))
-                                                                                            else
-                                                                                              do
-                                                                                                if (hstrlog[25]).matched then
-                                                                                                  local l_0_41 = (mp.readfile)((pe.foffset_va)((hstrlog[25]).VA + 4), 4)
-                                                                                                  ;
-                                                                                                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_FFFFFFFE_%02X", (mp.readu_u32)(l_0_41, 1), 2))
-                                                                                                else
-                                                                                                  do
-                                                                                                    if (hstrlog[26]).matched then
-                                                                                                      local l_0_42 = (mp.readfile)((pe.foffset_va)((hstrlog[26]).VA - 4), 4)
-                                                                                                      ;
-                                                                                                      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_42, 1), 1, 2))
-                                                                                                    else
-                                                                                                      do
-                                                                                                        if (hstrlog[27]).matched then
-                                                                                                          local l_0_43 = (mp.readfile)((pe.foffset_va)((hstrlog[27]).VA + 4), 4)
-                                                                                                          local l_0_44 = (mp.readfile)((pe.foffset_va)((hstrlog[27]).VA + 10), 1)
-                                                                                                          ;
-                                                                                                          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_43, 1), (string.byte)(l_0_44, 1), 2))
-                                                                                                        else
-                                                                                                          do
-                                                                                                            if (hstrlog[28]).matched then
-                                                                                                              local l_0_45 = (mp.readfile)((pe.foffset_va)((hstrlog[28]).VA + 4), 4)
-                                                                                                              ;
-                                                                                                              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_FFFFFFFE_%02X", (mp.readu_u32)(l_0_45, 1), -2, 2))
-                                                                                                            else
-                                                                                                              do
-                                                                                                                if (hstrlog[29]).matched then
-                                                                                                                  local l_0_46 = (mp.readfile)((pe.foffset_va)((hstrlog[29]).VA + 4), 4)
-                                                                                                                  local l_0_47 = (mp.readfile)((pe.foffset_va)((hstrlog[29]).VA - 1), 1)
-                                                                                                                  ;
-                                                                                                                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_46, 1), (string.byte)(l_0_47, 1), 2))
-                                                                                                                else
-                                                                                                                  do
-                                                                                                                    if (hstrlog[30]).matched then
-                                                                                                                      local l_0_48 = (mp.readfile)((pe.foffset_va)((hstrlog[30]).VA + 7), 4)
-                                                                                                                      local l_0_49 = (mp.readfile)((pe.foffset_va)((hstrlog[30]).VA - 1), 1)
-                                                                                                                      ;
-                                                                                                                      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.6_%08X_%08X_%02X", (mp.readu_u32)(l_0_48, 1), (string.byte)(l_0_49, 1), 2))
-                                                                                                                    end
-                                                                                                                    do
-                                                                                                                      return mp.CLEAN
-                                                                                                                    end
-                                                                                                                  end
-                                                                                                                end
-                                                                                                              end
-                                                                                                            end
-                                                                                                          end
-                                                                                                        end
-                                                                                                      end
-                                                                                                    end
-                                                                                                  end
-                                                                                                end
-                                                                                              end
-                                                                                            end
-                                                                                          end
-                                                                                        end
-                                                                                      end
-                                                                                    end
-                                                                                  end
-                                                                                end
-                                                                              end
-                                                                            end
-                                                                          end
-                                                                        end
-                                                                      end
-                                                                    end
-                                                                  end
-                                                                end
-                                                              end
-                                                            end
-                                                          end
-                                                        end
-                                                      end
-                                                    end
-                                                  end
-                                                end
-                                              end
-                                            end
-                                          end
-                                        end
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
+            do return 0, 0 end
           end
         end
       end
     end
   end
 end
+
+Uni2Ascii = function(l_2_0)
+  -- function num : 0_1
+  if l_2_0 == nil or l_2_0 == "" or l_2_0 == "\000" then
+    return ""
+  else
+    local l_2_1 = mp.utf16to8
+    local l_2_2 = l_2_0
+    do return l_2_1(l_2_2) end
+    -- DECOMPILER ERROR at PC14: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
+  end
+end
+
+GetUserString = function(l_3_0)
+  -- function num : 0_2 , upvalues : l_0_0
+  local l_3_1 = (mp.readu_u32)(l_3_0, 1)
+  local l_3_2 = l_0_0.usheap_RVA + (mp.bitand)(l_3_1, 16777215)
+  local l_3_3 = (mp.readfile)((pe.foffset_rva)(l_3_2), 4)
+  local l_3_4, l_3_5 = DecodeBlob((mp.readu_u32)(l_3_3, 1))
+  if (l_3_5 ~= 1 and l_3_5 ~= 2 and l_3_5 ~= 4) or l_3_4 > 256 then
+    return ""
+  end
+  local l_3_6 = (mp.readfile)((pe.foffset_rva)(l_3_2 + l_3_5), l_3_4)
+  local l_3_7 = Uni2Ascii
+  local l_3_8 = l_3_6
+  do return l_3_7(l_3_8) end
+  -- DECOMPILER ERROR at PC50: Confused about usage of register R8 for local variables in 'ReleaseLocals'
+
+end
+
+local l_0_11 = GetUserString((pe.mmap_va)((hstrlog[1]).VA - 18, 4))
+local l_0_12 = GetUserString((pe.mmap_va)((hstrlog[1]).VA - 13, 4))
+local l_0_13 = GetUserString((pe.mmap_va)((hstrlog[1]).VA - 8, 4))
+local l_0_14 = (string.gsub)(l_0_11, l_0_12, l_0_13)
+if (string.find)(l_0_14, "Initialize", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

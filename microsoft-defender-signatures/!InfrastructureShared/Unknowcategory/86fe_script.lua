@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  if peattributes.dt_error_not_enough_memory then
-    (pe.set_peattribute)("enable_vmm_grow", true)
-    ;
-    (pe.reemulate)()
-  end
+local l_0_0 = ((mp.getfilename)()):lower()
+if (mp.get_mpattribute)("BM_RTF_FILE") == true and (string.find)(l_0_0, ".rtf", -4, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

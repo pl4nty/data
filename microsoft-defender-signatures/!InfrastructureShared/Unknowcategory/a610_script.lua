@@ -3,33 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.byte)(l_0_0, 13) + (string.byte)(l_0_0, 14) * 256 + (string.byte)(l_0_0, 15) * 65536 + (string.byte)(l_0_0, 16) * 16777216
+if l_0_1 < 53248 then
+  return mp.INFECTED
 end
-if peattributes.isdll == true then
-  return mp.CLEAN
+local l_0_2 = (string.byte)(l_0_0, 18)
+if l_0_2 < 48 then
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 1048576 then
-  return mp.CLEAN
+local l_0_3 = pevars.sigaddr + 18 + l_0_2
+l_0_0 = (pe.mmap_va)(l_0_3 - 1, 4)
+local l_0_4 = (string.byte)(l_0_0, 1)
+if l_0_4 < 128 then
+  return mp.INFECTED
 end
-if (hstrlog[1]).hitcount > 40 then
-  return mp.CLEAN
-end
-local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-local l_0_1 = (pe.foffset_va)(pehdr.ImageBase + (pehdr.SizeOfImage - 1)) + 1
-if l_0_0 ~= l_0_1 then
-  l_0_0 = l_0_1
-end
-local l_0_2 = (mp.getfilesize)() - l_0_0
-if (pesecs[1]).SizeOfRawData > 61440 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData < 32768 and l_0_2 < 32768 then
-  return mp.CLEAN
+l_0_4 = (mp.bitor)(l_0_4, 4294967040)
+local l_0_5 = (mp.bitand)(l_0_3 + l_0_4, 4294967295)
+if l_0_5 ~= pevars.sigaddr then
+  return mp.INFECTED
 end
 ;
-(pe.set_peattribute)("hstr_exhaustive", true)
+(mp.set_mpattribute)("lua_codepatch_fakesysdef_1")
 ;
-(pe.reemulate)()
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\000\000\000\000")
 return mp.INFECTED
 

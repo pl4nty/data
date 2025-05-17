@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("Company:IntelliBreezeSoftware")
+(mp.set_mpattribute)("PUA:Block:TransmissionTorrent")
 return mp.INFECTED
 

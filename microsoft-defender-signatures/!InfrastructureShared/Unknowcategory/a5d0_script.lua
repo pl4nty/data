@@ -3,38 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_relocs ~= true then
-  return mp.CLEAN
+(mp.set_mpattribute)("HSTR:ZwangiDll")
+-- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
+
+if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or not (hstrlog[8]).matched) and (hstrlog[14]).matched) or (hstrlog[7]).matched) and 1 or 0) + ((hstrlog[13]).matched and 1 or 0) + ((hstrlog[15]).matched and 1 or 0) + ((hstrlog[16]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
-if peattributes.packed ~= false then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect == true then
-  return mp.CLEAN
-end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW ~= 1920168494 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 96 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpAPILimitReached") then
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.set_peattribute)("disable_apicall_limit", true)
-  ;
-  (pe.reemulate)()
+local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
+if (string.find)(l_0_0, "rundll32", 1, true) and (string.find)(l_0_0, "onlogon", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

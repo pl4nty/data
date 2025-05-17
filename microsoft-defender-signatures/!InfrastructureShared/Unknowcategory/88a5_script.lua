@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 19, 128)
+local l_0_1 = (string.byte)(l_0_0, 1) + 2
+if #l_0_0 < l_0_1 then
   return mp.CLEAN
 end
-l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
-;
-(bm.add_threat_file)(l_0_0)
-return mp.INFECTED
+if (string.byte)(l_0_0, l_0_1) == 232 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

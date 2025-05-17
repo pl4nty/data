@@ -3,110 +3,73 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
-  return mp.CLEAN
+local l_0_0 = false
+if (this_sigattrlog[2]).matched then
+  local l_0_1 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
+  if l_0_1 ~= nil then
+    local l_0_2 = (sysio.GetRegValueAsString)(l_0_1, "Debugger")
+    if l_0_2 ~= nil and (string.len)(l_0_2) > 3 and (sysio.IsFileExists)(l_0_2) then
+      (mp.ReportLowfi)(l_0_2, 2857668052)
+      l_0_0 = true
+    end
+  end
+else
+  do
+    if (this_sigattrlog[3]).matched then
+      local l_0_3 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe")
+      if l_0_3 ~= nil then
+        local l_0_4 = (sysio.GetRegValueAsString)(l_0_3, "Debugger")
+        if l_0_4 ~= nil and (string.len)(l_0_4) > 3 and (sysio.IsFileExists)(l_0_4) then
+          (mp.ReportLowfi)(l_0_4, 2615075110)
+          l_0_0 = true
+        end
+      end
+    else
+      do
+        if (this_sigattrlog[4]).matched then
+          local l_0_5 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\magnify.exe")
+          if l_0_5 ~= nil then
+            local l_0_6 = (sysio.GetRegValueAsString)(l_0_5, "Debugger")
+            if l_0_6 ~= nil and (string.len)(l_0_6) > 3 and (sysio.IsFileExists)(l_0_6) then
+              (mp.ReportLowfi)(l_0_6, 3488596662)
+              l_0_0 = true
+            end
+          end
+        else
+          do
+            if (this_sigattrlog[5]).matched then
+              local l_0_7 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\utilman.exe")
+              if l_0_7 ~= nil then
+                local l_0_8 = (sysio.GetRegValueAsString)(l_0_7, "Debugger")
+                if l_0_8 ~= nil and (string.len)(l_0_8) > 3 and (sysio.IsFileExists)(l_0_8) then
+                  (mp.ReportLowfi)(l_0_8, 375868929)
+                  l_0_0 = true
+                end
+              end
+            else
+              do
+                if (this_sigattrlog[6]).matched then
+                  local l_0_9 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\narrator.exe")
+                  if l_0_9 ~= nil then
+                    local l_0_10 = (sysio.GetRegValueAsString)(l_0_9, "Debugger")
+                    if l_0_10 ~= nil and (string.len)(l_0_10) > 3 and (sysio.IsFileExists)(l_0_10) then
+                      (mp.ReportLowfi)(l_0_10, 583855365)
+                      l_0_0 = true
+                    end
+                  end
+                end
+                do
+                  if l_0_0 == true then
+                    return mp.INFECTED
+                  end
+                  return mp.CLEAN
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
 end
-if peattributes.packed == true then
-  return mp.CLEAN
-end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < 3 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections > 5 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfHeaders ~= 1024 then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-if pehdr.DllCharacteristics ~= 512 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size >= 288 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size < 40 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size > 60 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[13]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[13]).Size <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[13]).Size >= 32 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 5) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 17) ~= 1 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 21) ~= 3 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) ~= 3 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 29) <= 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

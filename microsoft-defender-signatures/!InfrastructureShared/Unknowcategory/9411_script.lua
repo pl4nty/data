@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_ESP) + 24, 4), 1) < 262144 then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = nil
+for l_0_6,l_0_7 in ipairs(l_0_0) do
+  l_0_2 = l_0_7.image_path
+  if l_0_2 ~= nil then
+    l_0_2 = (string.lower)(l_0_2)
+    if l_0_2:find("excel.exe") or l_0_2:find("word.exe") then
+      return mp.INFECTED
+    end
+  end
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 1, "")
-return mp.INFECTED
+return mp.CLEAN
 

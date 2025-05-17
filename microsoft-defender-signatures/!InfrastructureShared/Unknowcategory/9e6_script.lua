@@ -3,98 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE or (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
-  local l_0_0 = (string.lower)((mp.getfilename)())
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  if l_0_0:len() < 50 then
-    return mp.CLEAN
-  end
-  if not l_0_0:find("\\downloads", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_1 = (mp.getfilesize)()
-  if l_0_1 > 1048576 then
-    return mp.CLEAN
-  end
-  local l_0_2, l_0_3 = l_0_0:match("(.+\\)([^\\]+)$")
-  if l_0_2 == nil then
-    return mp.CLEAN
-  end
-  if l_0_2:len() > 40 and l_0_3 ~= nil then
-    if l_0_2:find("\\users\\[^\\]+\\downloads\\[0-9a-f]+\\") == nil then
-      return mp.CLEAN
-    end
-    local l_0_4 = l_0_2:match("\\downloads\\[0-9a-f]+\\")
-    if l_0_4 == nil or l_0_4:len() < 44 then
-      return mp.CLEAN
-    end
-    local l_0_5 = {}
-    l_0_5[".xls->"] = "%.xls%->.+"
-    l_0_5["xlsx->"] = "%.xlsx%->.+"
-    l_0_5[".doc->"] = "%.doc%->.+"
-    l_0_5["docx->"] = "%.docx%->.+"
-    l_0_5[".rtf->"] = "%.rtf%->.+"
-    l_0_5["xlsm->"] = "%.xlsm%->.+"
-    l_0_5["xlsb->"] = "%.xlsb%->.+"
-    l_0_5["xltx->"] = "%.xltx%->.+"
-    l_0_5["xltm->"] = "%.xltm%->.+"
-    l_0_5["xlam->"] = "%.xlam%->.+"
-    l_0_5[".xla->"] = "%.xla%->.+"
-    l_0_5["docm->"] = "%.docm%->.+"
-    l_0_5["dotx->"] = "%.dotx%->.+"
-    l_0_5["dotm->"] = "%.dotm%->.+"
-    l_0_5[".ppt->"] = "%.ppt%->.+"
-    l_0_5["pptm->"] = "%.pptm%->.+"
-    l_0_5[".pps->"] = "%.pps%->.+"
-    l_0_5["pptx->"] = "%.pptx%->.+"
-    l_0_5["ppsx->"] = "%.ppsx%->.+"
-    l_0_5[".odt->"] = "%.odt%->.+"
-    l_0_5[".xml->"] = "%.xml%->.+"
-    for l_0_9,l_0_10 in pairs(l_0_5) do
-      if (string.find)(l_0_3, l_0_9, 1, true) then
-        do
-          do
-            local l_0_11 = (string.match)(l_0_3, l_0_10)
-            if l_0_11 == nil or (string.len)(l_0_11) < 4 then
-              return mp.CLEAN
-            end
-            -- DECOMPILER ERROR at PC170: Unhandled construct in 'MakeBoolean' P1
-
-            if (l_0_11:find(">word/", 1, true) or l_0_11:find(">xl/embeddings/", 1, true)) and (l_0_11:sub(-4) == ".bin" or l_0_11:sub(-4) == ".exe" or l_0_11:sub(-4) == ".scr") then
-              return mp.INFECTED
-            end
-            do break end
-            -- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P1
-
-            if l_0_11:find(".jar->", 1, true) and l_0_11:sub(-6) == ".class" then
-              return mp.INFECTED
-            end
-            do break end
-            -- DECOMPILER ERROR at PC207: Unhandled construct in 'MakeBoolean' P1
-
-            if l_0_11:find(">word/embeddings/ole", 1, true) and (l_0_11:sub(-4) == ".bin" or l_0_11:sub(-4) == ".exe") then
-              return mp.INFECTED
-            end
-            do break end
-            if l_0_11:match(">%(ole stream .%)%->.+", 1, true) then
-              return mp.INFECTED
-            end
-            do break end
-            -- DECOMPILER ERROR at PC220: LeaveBlock: unexpected jumping out DO_STMT
-
-            -- DECOMPILER ERROR at PC220: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC220: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
-        end
-      end
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 32 or l_0_0 > 65536 then
+  return mp.CLEAN
 end
-l_0_0 = mp
-l_0_0 = l_0_0.CLEAN
-return l_0_0
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  return mp.CLEAN
+end
+if not (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_1, "h_e_l_p_recover_", 1, true) or (string.find)(l_0_1, "help_instructions", 1, true) or (string.find)(l_0_1, "help_recover_", 1, true) or (string.find)(l_0_1, "help_restore_files", 1, true) or (string.find)(l_0_1, "help_to_decrypt_your_files", 1, true) or (string.find)(l_0_1, "help_to_save_your_files", 1, true) or (string.find)(l_0_1, "how_recover", 1, true) or (string.find)(l_0_1, "recover_file_", 1, true) or (string.find)(l_0_1, "recovery+", 1, true) or (string.find)(l_0_1, "recovery_", 1, true) or (string.find)(l_0_1, "recover+", 1, true) or (string.find)(l_0_1, "recover_instructions", 1, true) or (string.find)(l_0_1, "restore_files_", 1, true) or (string.find)(l_0_1, "restoring files", 1, true) or (string.find)(l_0_1, "decrypt my files", 1, true) or (string.find)(l_0_1, "howdo_text", 1, true) or (string.find)(l_0_1, "your_files_are_encrypted", 1, true) or (string.find)(l_0_1, "readme_for_save files", 1, true) or (string.find)(l_0_1, "save your files", 1, true) or (string.find)(l_0_1, "recover_file_%a%a%a%a%a%a%a%a%a%.txt$") or (string.find)(l_0_1, "^recover%.txt$") or (string.find)(l_0_1, "^recover_file%.txt$") or (string.find)(l_0_1, "^%+recover%+file%.txt$") or (string.find)(l_0_1, "^_recover_file%.txt$") or (string.find)(l_0_1, "^%-help%-file%.txt$") or (string.find)(l_0_1, "^%-!recover!%-!file!%-%.txt$") or (string.find)(l_0_1, "^help_%w+%.html$") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,101 +3,90 @@
 
 -- params : ...
 -- function num : 0
-ToGUID = function(l_1_0, l_1_1)
+add_it = function(l_1_0)
   -- function num : 0_0
-  return (string.format)("%02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x", l_1_0[l_1_1 + 3], l_1_0[l_1_1 + 2], l_1_0[l_1_1 + 1], l_1_0[l_1_1], l_1_0[l_1_1 + 5], l_1_0[l_1_1 + 4], l_1_0[l_1_1 + 7], l_1_0[l_1_1 + 6], l_1_0[l_1_1 + 8], l_1_0[l_1_1 + 9], l_1_0[l_1_1 + 10], l_1_0[l_1_1 + 11], l_1_0[l_1_1 + 12], l_1_0[l_1_1 + 13], l_1_0[l_1_1 + 14], l_1_0[l_1_1 + 15])
-end
-
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 ~= mp.SCANREASON_AMSI then
-  return mp.CLEAN
-end
-local l_0_1, l_0_2 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_APPNAME)
-if l_0_2 ~= "VSSAMSI" then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("MpVssAmsiScan")
-local l_0_3 = (mp.readu_u32)(headerpage, 1)
-local l_0_4 = (mp.readu_u32)(headerpage, 5)
-local l_0_5 = (mp.readu_u64)(headerpage, 9)
-local l_0_6 = (mp.readu_u32)(headerpage, 17)
-local l_0_7 = (mp.readu_u64)(headerpage, 21)
-if l_0_3 ~= 0 then
-  (mp.set_mpattributeex)("VSSAMSI_Version", l_0_3)
-end
-if l_0_5 ~= 0 then
-  (mp.set_mpattributeex)("VSSAMSI_ProcessStartKey", l_0_5)
-end
-if l_0_6 ~= 0 then
-  (mp.set_mpattributeex)("VSSAMSI_CallerPID", l_0_6)
-end
-if l_0_7 ~= 0 then
-  (mp.set_mpattributeex)("VSSAMSI_ProcessStartTime", l_0_7)
-end
-if l_0_4 == 0 then
-  (mp.set_mpattribute)("VSSAMSI_Shadow_Delete")
-  local l_0_8 = ToGUID(headerpage, 29)
-  local l_0_9 = (mp.readu_u32)(headerpage, 45)
-  local l_0_10 = (mp.readu_u32)(headerpage, 49)
-  if l_0_8 ~= 0 then
-    (mp.set_mpattribute)("VSSAMSI_Delete_ID:" .. l_0_8)
-  end
-  if l_0_9 == 0 then
-    (mp.set_mpattribute)("VSSAMSI_Delete_Object_Unknown")
+  if (string.find)(l_1_0, "\\powershell%.exe") ~= nil then
+    return 
   else
-    if l_0_9 == 1 then
-      (mp.set_mpattribute)("VSSAMSI_Delete_Object_None")
+    if (string.find)(l_1_0, "\\system32\\cmd%.exe") ~= nil then
+      return 
     else
-      if l_0_9 == 2 then
-        (mp.set_mpattribute)("VSSAMSI_Delete_Object_SnapshotSet")
+      if (string.find)(l_1_0, "\\monagentlauncher%.exe") ~= nil then
+        return 
       else
-        if l_0_9 == 3 then
-          (mp.set_mpattribute)("VSSAMSI_Delete_Object_Snapshot")
+        if (string.find)(l_1_0, "\\lwl%.profileunity%.client%.cmdservice%.exe") ~= nil then
+          return 
         else
-          if l_0_9 == 4 then
-            (mp.set_mpattribute)("VSSAMSI_Delete_Object_Provider")
+          if (string.find)(l_1_0, "\\noxcmdsvc%.exe") ~= nil then
+            return 
           else
-            ;
-            (mp.set_mpattribute)("VSSAMSI_Delete_Object_Reserved")
+            if (string.find)(l_1_0, "\\cmdagent%.exe") ~= nil then
+              return 
+            else
+              if (string.find)(l_1_0, "\\cbfsflt2017net%.dll") ~= nil then
+                return 
+              else
+                if (string.find)(l_1_0, "\\msica%.dll") ~= nil then
+                  return 
+                else
+                  if (string.find)(l_1_0, "\\ratoken%.dll") ~= nil then
+                    return 
+                  else
+                    ;
+                    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_1_0))
+                  end
+                end
+              end
+            end
           end
         end
       end
     end
   end
-  if l_0_10 == 1 then
-    (mp.set_mpattribute)("VSSAMSI_Delete_ForceDelete")
+end
+
+match_extension = function(l_2_0, l_2_1)
+  -- function num : 0_1
+  for l_2_5 in (string.gmatch)(l_2_0, "\"([^/&\"%%>]+%." .. l_2_1 .. ")\"") do
+    add_it(l_2_5)
   end
-else
-  do
-    if l_0_4 == 1 then
-      (mp.set_mpattribute)("VSSAMSI_Shadow_Resize")
-      local l_0_11 = (mp.readu_u64)(headerpage, 29)
-      local l_0_12 = (mp.readu_u32)(headerpage, 37)
-      if l_0_11 ~= 0 then
-        (mp.set_mpattributeex)("VSSAMSI_Resize_DiffAreaSize", l_0_11)
-      else
-        ;
-        (mp.set_mpattribute)("VSSAMSI_Resize_DiffAreaSizeZero")
-      end
-      local l_0_13, l_0_14 = nil, nil
-      if l_0_12 == 8 then
-        l_0_13 = (mp.readu_u32)(headerpage, 41)
-        l_0_14 = (mp.readu_u32)(headerpage, 49)
-        if l_0_13 == l_0_14 then
-          (mp.set_mpattribute)("VSSAMSI_Resize_SameVolume")
-        else
-          ;
-          (mp.set_mpattribute)("VSSAMSI_Resize_DifferentVolume")
-        end
-      else
-        ;
-        (mp.set_mpattribute)("VSSAMSI_Resize_NotNormalToFromVolume")
-      end
+  for l_2_9 in (string.gmatch)(l_2_0, "\"([^/&\"%%>]+%." .. l_2_1 .. ")\\\"") do
+    add_it(l_2_9)
+  end
+  for l_2_13 in (string.gmatch)(l_2_0, "%a:[^:/&\"%%>]+%." .. l_2_1) do
+    add_it(l_2_13)
+  end
+  for l_2_17 in (string.gmatch)(l_2_0, "\\\\[^:/&\"%%>]+%." .. l_2_1) do
+    add_it(l_2_17)
+  end
+  for l_2_21 in (string.gmatch)(l_2_0, "%%[^%%]+%%\\[^:/&\"%%>]+%." .. l_2_1) do
+    add_it(l_2_21)
+  end
+end
+
+process_alias = function(l_3_0)
+  -- function num : 0_2
+  if l_3_0.matched and l_3_0.utf8p2 ~= nil then
+    local l_3_1 = (string.lower)(l_3_0.utf8p2)
+    match_extension(l_3_1, "exe")
+    match_extension(l_3_1, "ps1")
+    match_extension(l_3_1, "bat")
+    match_extension(l_3_1, "cmd")
+    match_extension(l_3_1, "dll")
+    match_extension(l_3_1, "vbs")
+    match_extension(l_3_1, "sys")
+    for l_3_5 in (string.gmatch)(l_3_1, "rundll32.exe ([^ ]+) ") do
+      add_it(l_3_5)
     end
-    do
-      return mp.CLEAN
+    for l_3_9 in (string.gmatch)(l_3_1, "rundll32.exe \"([^\"]+)\"") do
+      add_it(l_3_9)
     end
   end
 end
+
+process_alias(this_sigattrlog[1])
+process_alias(this_sigattrlog[2])
+process_alias(this_sigattrlog[3])
+process_alias(this_sigattrlog[4])
+return mp.INFECTED
 

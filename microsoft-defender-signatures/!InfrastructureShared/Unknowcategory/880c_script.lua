@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("RPF:UrsnifDLL") then
-  if peattributes.amd64_image then
-    (mp.changedetectionname)(805306417)
-    return mp.INFECTED
-  end
-  return mp.INFECTED
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

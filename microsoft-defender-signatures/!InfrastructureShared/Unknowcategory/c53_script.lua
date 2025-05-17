@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+(mp.set_mpattribute)("attrmatch_rescan_psif")
 return mp.INFECTED
 

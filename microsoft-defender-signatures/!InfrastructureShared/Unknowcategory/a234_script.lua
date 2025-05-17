@@ -3,17 +3,21 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (mp.get_mpattribute)("LowFiJSChildFileHasIOAVURL") then
-    local l_0_0 = (string.lower)((mp.getfilename)())
-    if l_0_0 == nil then
-      return mp.CLEAN
-    end
-    if (string.match)(l_0_0, "edge") ~= nil or (string.match)(l_0_0, "chrome") ~= nil or (string.match)(l_0_0, "firefox") ~= nil or (string.match)(l_0_0, "download") ~= nil then
-      return mp.INFECTED
-    end
-    return mp.LOWFI
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_1, l_0_2 = nil
   end
-  return mp.CLEAN
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or (this_sigattrlog[2]).utf8p1 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC35: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_3 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1))
+  if (string.find)(l_0_3, "\\data.safe.bin", 1, true) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
 

@@ -3,10 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if (string.find)(l_0_0, ".cache", 1, true) and ((string.find)(l_0_0, "windows\\servicestate\\winhttpautoproxysvc", 1, true) or (string.find)(l_0_0, "windows\\serviceprofiles\\localservice\\winhttp", 1, true)) then
-  (mp.set_mpattribute)("MpNonPIIFileType")
-  return mp.INFECTED
+if (mp.IsKnownFriendlyFile)((bm.get_imagepath)(), true, true) == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = nil
+local l_0_1, l_0_2 = pcall(bm.get_current_process_startup_info)
+if l_0_1 then
+  l_0_0 = l_0_2.command_line
+end
+if l_0_0 ~= nil then
+  local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  for l_0_7,l_0_8 in ipairs(l_0_3) do
+    l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_8)
+    if (sysio.IsFileExists)(l_0_8) then
+      (bm.add_related_file)(l_0_8)
+    end
+  end
+end
+do
+  l_0_3 = mp
+  l_0_3 = l_0_3.INFECTED
+  return l_0_3
+end
 

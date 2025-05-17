@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 300000000 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

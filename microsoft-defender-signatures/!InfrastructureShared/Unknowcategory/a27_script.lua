@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[5]).matched and (this_sigattrlog[7]).matched and (string.find)((this_sigattrlog[7]).utf8p1, (this_sigattrlog[5]).utf8p1, 1, true) then
-  return mp.INFECTED
-end
-if (this_sigattrlog[6]).matched and (this_sigattrlog[8]).matched and (string.find)((this_sigattrlog[8]).utf8p1, (this_sigattrlog[6]).utf8p1, 1, true) then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and ((string.find)(l_0_6.image_path, "google chrome", 1, true) or (string.find)(l_0_6.image_path, "safari", 1, true) or (string.find)(l_0_6.image_path, "firefox", 1, true)) then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

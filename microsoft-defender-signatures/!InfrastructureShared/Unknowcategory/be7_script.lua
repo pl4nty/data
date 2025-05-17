@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:CCMiner")
+(mp.set_mpattribute)("PUA:Block:Compete")
 return mp.INFECTED
 

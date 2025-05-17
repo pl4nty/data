@@ -3,57 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil or l_0_1 == nil then
-  return mp.CLEAN
-end
-if l_0_1:len() < 6 then
-  return mp.CLEAN
-end
-local l_0_3 = l_0_2:len()
-if l_0_3 > 10 and l_0_2:find("^wpm_v.+%.exe$") == 1 then
-  (mp.set_mpattribute)("Lua:ContextFileNameSupTab.A")
-else
-  if l_0_3 > 10 and l_0_2:find("^minilite_v.+%.exe$") == 1 then
-    (mp.set_mpattribute)("Lua:ContextFileNameSupTab.B")
-  else
-    if l_0_2 == "oursurfing.exe" then
-      (mp.set_mpattribute)("Lua:ContextFileNameSupTab.C")
-    else
-      if l_0_3 > 8 and l_0_2:find("^amt_.+%.exe$") == 1 and l_0_1:find("\\temp\\", 1, true) ~= nil and l_0_2 ~= "amt_util.exe" then
-        (mp.set_mpattribute)("Lua:ContextFileNameSupTab.D")
-      else
-        if l_0_2 == "protectservice.exe" then
-          (mp.set_mpattribute)("Lua:ContextFileNameSupTab.E")
-        else
-          if l_0_2 == "winmanpro.exe" then
-            (mp.set_mpattribute)("Lua:ContextFileNameSupTab.F")
-          else
-            if l_0_2 == "ihpmserver.exe" then
-              (mp.set_mpattribute)("Lua:ContextFileNameSupTab.G")
-            else
-              if l_0_2 == "raydld.exe" then
-                (mp.set_mpattribute)("Lua:ContextFileNameSupTab.H")
-              else
-                if (l_0_3 > 10 and l_0_2:find("^ray_v.+%.exe$") == 1) or l_0_3 > 10 and l_0_2:find("^ray_%d.+%.exe$") == 1 then
-                  (mp.set_mpattribute)("Lua:ContextFileNameSupTab.I")
-                else
-                  if l_0_2 == "ssfk.exe" then
-                    (mp.set_mpattribute)("Lua:ContextFileNameSupTab.J")
-                  else
-                    if l_0_3 > 10 and l_0_2:find("^ssfk_v.+%.exe$") == 1 then
-                      (mp.set_mpattribute)("Lua:ContextFileNameSupTab.K")
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  if peattributes.isdll then
+    return mp.CLEAN
+  end
+  local l_0_1 = (mp.getfilesize)()
+  if l_0_1 > 17664 and l_0_1 < 1200128 then
+    local l_0_2 = pe.query_import
+    if l_0_2(pe.IMPORT_STATIC, 4288984855) == 0 then
+      return mp.CLEAN
+    end
+    if l_0_2(pe.IMPORT_STATIC, 3419395426) == 0 and l_0_2(pe.IMPORT_STATIC, 1058758707) == 0 then
+      return mp.CLEAN
+    end
+    local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+    local l_0_4 = (string.sub)(l_0_3, -4)
+    if (l_0_4 == ".zip" or l_0_4 == ".exe") and (l_0_3:find("aupost_info_", 1, true) ~= nil or l_0_3:find("auspost_info_", 1, true) ~= nil or l_0_3:find("enel_bolletta", 1, true) ~= nil or l_0_3:find("postdanmark_pakkeboksen", 1, true) ~= nil or l_0_3:find("postnord_info_", 1, true) ~= nil or l_0_3:find("posten_adresselapp", 1, true) ~= nil or l_0_3:find("turkcell_fatura", 1, true) ~= nil or l_0_3:find("turkcell_efatura", 1, true) ~= nil or l_0_3:find("turkcell_mart_fatura", 1, true) ~= nil or l_0_3:find("carta_certificada", 1, true) ~= nil or l_0_3:find("dhl_versandschein", 1, true) ~= nil or l_0_3:find("turkcell_subat_fatura", 1, true) ~= nil or l_0_3:find("poczta_track", 1, true) ~= nil) then
+      return mp.INFECTED
     end
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

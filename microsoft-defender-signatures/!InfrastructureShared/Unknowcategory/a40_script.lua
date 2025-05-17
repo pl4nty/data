@@ -3,24 +3,35 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (this_sigattrlog[4]).utf8p1 ~= nil then
-  if (string.find)((this_sigattrlog[1]).utf8p1, "/private/tmp/", 1, true) ~= 1 and (string.find)((this_sigattrlog[1]).utf8p1, "/tmp/", 1, true) ~= 1 then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+    local l_0_0 = nil
   end
-  if (this_sigattrlog[1]).utf8p1 == (this_sigattrlog[4]).utf8p1 then
-    local l_0_0 = (mp.GetExecutablesFromCommandLine)((this_sigattrlog[3]).utf8p2)
-    if l_0_0 ~= nil then
-      for l_0_4,l_0_5 in ipairs(l_0_0) do
-        if (string.find)(l_0_5, "/", 1, true) == 1 and (string.find)((this_sigattrlog[1]).utf8p1, l_0_5, 1, true) and ((string.find)((this_sigattrlog[2]).utf8p2, l_0_5, 1, true) or (string.find)((this_sigattrlog[2]).utf8p2, (this_sigattrlog[1]).utf8p1, 1, true)) then
+  -- DECOMPILER ERROR at PC29: Overwrote pending register: R1 in 'AssignReg'
+
+  do
+    if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
+      local l_0_1 = nil
+    end
+    -- DECOMPILER ERROR at PC42: Overwrote pending register: R2 in 'AssignReg'
+
+    do
+      if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
+        local l_0_2 = nil
+      end
+      local l_0_3, l_0_4 = , nil
+      for l_0_8,l_0_9 in ipairs((bm.get_process_relationships)()) do
+        local l_0_5, l_0_6, l_0_7 = nil
+        -- DECOMPILER ERROR at PC50: Confused about usage of register: R9 in 'UnsetPending'
+
+        if R9_PC50.image_path ~= nil and ((string.find)(R9_PC50.image_path, "/installd", -9, true) or (string.find)(R9_PC50.image_path, "/package_script_service", -23, true)) and (string.find)(l_0_4, l_0_3, 1, true) and (string.find)(l_0_5, l_0_3, 1, true) then
           return mp.INFECTED
         end
       end
+      return mp.CLEAN
     end
   end
-end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
 end
 

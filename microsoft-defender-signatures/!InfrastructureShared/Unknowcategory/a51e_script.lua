@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-if (string.find)(l_0_6:lower(), "microsoft.net\\framework.-\\v[0-9.].+\\temporary asp.net files\\") or (string.find)(l_0_6:lower(), "microsoft\\exchange server\\v[0-9].+\\clientaccess\\owa\\bin") or (string.find)(l_0_6:lower(), "microsoft\\exchange server\\v[0-9].+\\frontend\\httpproxy\\owa\\bin") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_tibs_14")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
+local l_0_2 = (mp.readu_u32)(l_0_0, 6)
+local l_0_3 = (string.byte)(l_0_0, 14)
+local l_0_4 = (mp.readu_u32)(l_0_0, 18)
+local l_0_5 = (mp.readu_u32)(l_0_0, 29)
+local l_0_6 = (pe.get_regval)(pe.REG_EDX)
+local l_0_7 = (mp.ror32)(l_0_6, l_0_3) - (mp.bitxor)(l_0_5, l_0_4) + l_0_1 - l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_7)
+return mp.INFECTED
 

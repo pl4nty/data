@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and pehdr.AddressOfEntryPoint == 5088 and (pesecs[7]).Name == ".idata" and (pesecs[7]).Characteristics == 3221225536 and (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 and (mp.getfilesize)() <= 500000 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "sdelete", 1, true) or (string.find)(l_0_1, "procdump", 1, true) or (string.find)(l_0_1, "psshutdown", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

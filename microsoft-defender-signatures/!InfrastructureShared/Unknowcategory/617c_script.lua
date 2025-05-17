@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and pehdr.NumberOfSections == 5 then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "->(Rtf", 1, true) == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

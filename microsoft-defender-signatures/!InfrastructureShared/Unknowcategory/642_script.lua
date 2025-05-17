@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if (string.byte)(l_0_0) == (string.byte)("%") and ((string.match)(l_0_0, "%%temp%%\\tmp%d+\\%a+%.exe$") or (string.match)(l_0_0, "%%temp%%\\{%x+%-%x+%-%x+%-%x+%-%x+}\\%a+%.exe$")) and (string.match)(l_0_0, "\\[b-t][aeiou][b-t][aeiou]%a+%.exe$") then
-      return mp.INFECTED
-    end
-  end
-  if ((string.match)(l_0_0, "\\local\\temp\\tmp%d+\\%a+%.exe$") or (string.match)(l_0_0, "\\local\\temp\\{%x+%-%x+%-%x+%-%x+%-%x+}\\%a+%.exe$")) and (string.match)(l_0_0, "\\[b-t][aeiou][b-t][aeiou]%a+%.exe$") then
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
+if (string.find)(l_0_0, "\\explorer.exe", 1, true) or (string.find)(l_0_0, "\\userprofilemanager.exe", 1, true) or (string.find)(l_0_0, "\\ir_agent.exe", 1, true) or (string.find)(l_0_0, "\\chrome.exe", 1, true) or (string.find)(l_0_0, "\\brhostsvr.exe", 1, true) or (string.find)(l_0_0, "\\dllhost.exe", 1, true) or (string.find)(l_0_0, "\\powershell.exe", 1, true) or (string.find)(l_0_0, "\\360se.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

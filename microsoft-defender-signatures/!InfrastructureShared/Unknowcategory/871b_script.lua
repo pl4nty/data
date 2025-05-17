@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-;
-(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_1")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 22, "")
-return mp.CLEAN
+do
+  if peattributes.isdll == true or peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    if l_0_0 ~= nil and #l_0_0 > 0 and (mp.IsTrustedFile)() then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

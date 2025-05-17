@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.no_security == true and pehdr.NumberOfSections == 7 and (mp.getfilesize)() > 716800 and (mp.getfilesize)() < 1024000 then
-  return mp.INFECTED
+if not peattributes.isexe and not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.hasappendeddata == false then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

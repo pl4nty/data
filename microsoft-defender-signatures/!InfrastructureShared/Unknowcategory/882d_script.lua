@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
-if (string.find)(l_0_0, "rundll32", 1, true) and (string.find)(l_0_0, "onlogon", 1, true) then
+if peattributes.isexe and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 9 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 4194304 then
   return mp.INFECTED
 end
 return mp.CLEAN

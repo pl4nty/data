@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isexe == true and peattributes.ismsil == true then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:TuneupMyMac.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

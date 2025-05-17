@@ -3,26 +3,46 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+local l_0_0 = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  do return l_1_1 == "" or (string.sub)(l_1_0, -(string.len)(l_1_1)) == l_1_1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  if l_0_1:sub(-4) ~= ".exe" then
-    return mp.CLEAN
-  end
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if l_0_2:sub(-10) == "\\all users" or l_0_2:sub(-12) == "\\programdata" or l_0_2:sub(-17) == "\\application data" or l_0_2:sub(-16) == "\\appdata\\roaming" then
-    if #l_0_1 < 9 or #l_0_1 > 16 then
-      return mp.CLEAN
-    end
-    if l_0_1:find("^ms[%p%w]+%.exe$") ~= nil and (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "msiexec.exe" then
-      return mp.INFECTED
+
+local l_0_1 = (skip.GetScanSource)()
+if l_0_1 ~= skip.SCANSOURCE_IOAV_WEB and l_0_1 ~= skip.SCANSOURCE_IOAV_FILE then
+  return 0
+end
+local l_0_2 = (skip.IOAVGetProcessPath)()
+if l_0_2 == nil then
+  return 0
+end
+l_0_2 = (string.lower)(l_0_2)
+if l_0_0(l_0_2, "\\winword.exe") then
+  return 1
+end
+if l_0_0(l_0_2, "\\excel.exe") then
+  return 1
+end
+if l_0_0(l_0_2, "\\powerpnt.exe") then
+  return 1
+end
+if l_0_1 == skip.SCANSOURCE_IOAV_FILE and (l_0_0(l_0_2, "\\explorer.exe") or l_0_0(l_0_2, "\\pr_zip_03_uncompressfiles.exe")) then
+  return 1
+end
+if l_0_1 == skip.SCANSOURCE_IOAV_FILE then
+  local l_0_3 = (skip.IOAVGetDownloadUrl)()
+  if l_0_3 ~= nil then
+    local l_0_4 = (skip.IOAVGetUrlPart)(l_0_3, 2, 0)
+    if l_0_4 ~= nil then
+      l_0_4 = (string.lower)(l_0_4)
+      if l_0_4 == "microsoft.com" or l_0_0(l_0_4, ".microsoft.com") then
+        return 1
+      end
     end
   end
 end
 do
-  return mp.CLEAN
+  return 0
 end
 

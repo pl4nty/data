@@ -3,46 +3,70 @@
 
 -- params : ...
 -- function num : 0
-simdmpemb = function(l_1_0, l_1_1, l_1_2)
-  -- function num : 0_0
-  if l_1_0 <= 0 or l_1_2 <= l_1_1 + 24 then
-    return mp.CLEAN
-  end
-  local l_1_3 = (mp.readfile)(l_1_1, 24)
-  if (mp.readu_u32)(l_1_3, 9) ~= 0 then
-    return mp.CLEAN
-  end
-  local l_1_4 = (mp.readu_u32)(l_1_3, 5)
-  if l_1_4 < 0 or l_1_2 <= l_1_4 then
-    return mp.CLEAN
-  end
-  do
-    if l_1_4 >= 32 then
-      local l_1_9 = mp.vfo_add_buffer
-      l_1_9((mp.readfile)(l_1_1 + 24, l_1_4), (string.format)("[SmrtInstMkrEmb%x]", l_1_1), mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+local l_0_0, l_0_1, l_0_2, l_0_3 = nil, nil, nil, nil
+local l_0_4 = nil
+local l_0_5 = nil
+local l_0_6 = nil
+local l_0_7 = nil
+local l_0_8 = true
+if (mp.GetScannedPPID)() == nil then
+  return mp.CLEAN
+end
+local l_0_9 = false
+if not (string.find)((string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())), " /nointeractive", 1, true) or true == false then
+  return mp.CLEAN
+end
+do
+  local l_0_10 = false
+  while 1 do
+    -- DECOMPILER ERROR at PC37: Confused about usage of register: R10 in 'UnsetPending'
+
+    if 0 <= 5 then
+      if 0 == 0 then
+        l_0_8 = pcall(mp.GetParentProcInfo)
+      else
+        -- DECOMPILER ERROR at PC51: Overwrote pending register: R0 in 'AssignReg'
+
+        l_0_8 = pcall(mp.GetParentProcInfo, l_0_5)
+      end
     end
-    local l_1_5 = simdmpemb
-    local l_1_6 = l_1_0 - 1
-    local l_1_7 = l_1_1 + l_1_4 + 24
-    do
-      local l_1_8 = l_1_2
-      do return l_1_5(l_1_6, l_1_7, l_1_8) end
-      -- DECOMPILER ERROR at PC59: Confused about usage of register R6 for local variables in 'ReleaseLocals'
+    if l_0_8 == true then
+      if l_0_4 == nil then
+        break
+      end
+      l_0_5 = l_0_4.ppid
+    end
+    if l_0_5 == nil then
+      break
+    end
+    l_0_6 = l_0_4.image_path
+    if l_0_6 == nil then
+      break
+    end
+    l_0_6 = (string.lower)(l_0_6)
+    l_0_7 = (string.match)(l_0_6, "\\([^\\]+)$")
+    if l_0_7 ~= nil then
+      if l_0_7 == "" then
+        break
+      end
+      if l_0_7 == "psexecsvc.exe" or l_0_7 == "wmiprvse.exe" or l_0_7 == "gpscript.exe" or l_0_7 == "winrm.exe" then
+        l_0_10 = true
+      end
+      if l_0_7 == "services.exe" then
+        l_0_9 = true
+      end
+      -- DECOMPILER ERROR at PC94: Confused about usage of register: R10 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC95: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+      -- DECOMPILER ERROR at PC95: LeaveBlock: unexpected jumping out IF_STMT
 
     end
   end
+  if l_0_10 == false or l_0_9 == false then
+    return mp.CLEAN
+  end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
 end
-
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 16777216 then
-  return mp.CLEAN
-end
-local l_0_1 = (pe.get_regval)(pe.REG_EAX)
-if l_0_1 <= 0 or l_0_1 > 16777216 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-simdmpemb(10, l_0_1, l_0_0)
-return mp.CLEAN
 

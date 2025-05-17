@@ -3,20 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (l_0_0.find)(l_0_0, "\\clicktorun\\officeclicktorun.exe", 1, true) ~= nil then
-    return mp.CLEAN
-  end
-end
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_1 = (this_sigattrlog[1]).utf8p2
-    if (sysio.IsFileExists)(l_0_1) and (mp.IsKnownFriendlyFile)(l_0_1, true, false) == false then
-      (bm.add_related_file)(l_0_1)
-      return mp.INFECTED
-    end
+  if (this_sigattrlog[3]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[4]).utf8p2) > 7 and ((string.find)((this_sigattrlog[4]).utf8p2, "TgBlAHcALQBJAHQAZQBt", 1, true) or (string.find)((this_sigattrlog[4]).utf8p2, "LgBQAFMAVgBFAFIAcwBpAE8Abg", 1, true) or (string.find)((this_sigattrlog[4]).utf8p2, "AHwASQBFAFgA", 1, true)) then
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

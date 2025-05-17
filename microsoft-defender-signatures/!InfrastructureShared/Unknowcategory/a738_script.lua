@@ -3,87 +3,56 @@
 
 -- params : ...
 -- function num : 0
-GetSuspiciuousFileType = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = {}
-  l_1_1[".au"] = "Bin"
-  l_1_1[".ax"] = "Bin"
-  l_1_1[".js"] = "Script"
-  l_1_1[".7z"] = "Archive"
-  local l_1_2 = {}
-  l_1_2.exe = "Bin"
-  l_1_2.com = "Bin"
-  l_1_2.scr = "Bin"
-  l_1_2.cpl = "Bin"
-  l_1_2.dll = "Bin"
-  l_1_2.ocx = "Bin"
-  l_1_2.msi = "Bin"
-  l_1_2.sys = "Bin"
-  l_1_2.bin = "Bin"
-  l_1_2.fon = "Bin"
-  l_1_2.drv = "Bin"
-  l_1_2.app = "Bin"
-  l_1_2.apl = "Bin"
-  l_1_2.bat = "Script"
-  l_1_2.cmd = "Script"
-  l_1_2.vbs = "Script"
-  l_1_2.reg = "Script"
-  l_1_2.shs = "Script"
-  l_1_2[".vb"] = "Script"
-  l_1_2.vbe = "Script"
-  l_1_2.wsc = "Script"
-  l_1_2.wsf = "Script"
-  l_1_2.wsh = "Script"
-  l_1_2.asm = "Script"
-  l_1_2.ini = "Script"
-  l_1_2.pif = "Script"
-  l_1_2.htm = "Script"
-  l_1_2.chm = "Script"
-  l_1_2.msp = "Script"
-  l_1_2.tlb = "Script"
-  l_1_2.asp = "Script"
-  l_1_2.msc = "Script"
-  l_1_2.api = "Script"
-  l_1_2.rar = "Archive"
-  l_1_2.zip = "Archive"
-  l_1_2.cab = "Archive"
-  l_1_2.tar = "Archive"
-  l_1_2.jar = "Archive"
-  l_1_2.doc = "Office"
-  l_1_2.xls = "Office"
-  l_1_2.ppt = "Office"
-  local l_1_3 = {}
-  l_1_3.docm = "Office"
-  l_1_3.xlsm = "Office"
-  l_1_3.pptm = "Office"
-  l_1_3.docx = "Office"
-  l_1_3.xlsx = "Office"
-  l_1_3.pptx = "Office"
-  l_1_3.html = "Script"
-  l_1_3.aspx = "Script"
-  l_1_3.bzip = "Archive"
-  if l_1_0 == nil or (string.len)(l_1_0) < 4 then
-    return nil
-  end
-  local l_1_4 = (string.lower)(l_1_0)
-  local l_1_5 = (string.match)(l_1_4, "%.(%l+)$")
-  if l_1_5 == nil then
-    return nil
-  end
-  local l_1_6 = ((string.len)(l_1_5))
-  local l_1_7 = nil
-  if l_1_6 == 2 then
-    l_1_7 = l_1_1[l_1_5]
-  else
-    if l_1_6 == 3 then
-      l_1_7 = l_1_2[l_1_5]
-    else
-      if l_1_6 == 4 then
-        l_1_7 = l_1_3[l_1_5]
-      end
-    end
-  end
-  return l_1_7
+if peattributes.isexe ~= true then
+  return mp.CLEAN
 end
-
+if peattributes.hasexports == true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.epscn_writable == false then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 85 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 139 then
+  return mp.CLEAN
+end
+if epcode[3] ~= 236 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).Size < 16 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[3]).RVA), 16)
+if (mp.readu_u32)(l_0_0, 1) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 5) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 9) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 13) ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,18 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(headerpage, 5) == 151587081 and (mp.getfilesize)() > 200000000 and (mp.crc32)(-1, headerpage, 1, 1024) == 2898363002 and (string.find)((mp.getfilename)(), "(RarSfx)", 1, true) then
-  (mp.set_mpattribute)("Lua:AutoItRarSfxLargeScript")
-  ;
-  (mp.set_mpattribute)("//AutRarLrgScpt")
-end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (mp.readu_u32)(headerpage, 5) == 168626701 then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 10000 and l_0_0 <= 60000 and (mp.crc32)(-1, headerpage, 1, 256) == 1133461959 and (string.find)((mp.getfilename)(), "(RarSfx)", 1, true) then
-      (mp.set_mpattribute)("Lua:TrimWhiteSpaceAutoItRarSfxConfig")
-    end
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2 = nil
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
+      local l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2)
+      if ((string.find)(l_0_3, "-ping ", 1, true) ~= nil or (string.find)(l_0_3, "/ping ", 1, true) ~= nil) and (string.find)(l_0_3, " http", 1, true) ~= nil and (string.find)(l_0_3, "kerberos ", 1, true) == nil then
+        return mp.INFECTED
+      end
+      if ((string.find)(l_0_3, "-urlcache ", 1, true) ~= nil or (string.find)(l_0_3, "/urlcache ", 1, true) ~= nil) and ((string.find)(l_0_3, " ftp:", 1, true) ~= nil or (string.find)(l_0_3, " http", 1, true) ~= nil) then
+        return mp.INFECTED
+      end
+    end
+    return mp.CLEAN
+  end
 end
 

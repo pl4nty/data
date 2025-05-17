@@ -3,22 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("LUA:FileSizeLE5000.A") then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[9]).matched or (this_sigattrlog[9]).utf8p2 == nil or (this_sigattrlog[9]).utf8p2 ~= nil) and ((string.find)((this_sigattrlog[9]).utf8p2, ".sct", 1, true) or (string.find)((this_sigattrlog[9]).utf8p2, "/i:http", 1, true) or (string.find)((this_sigattrlog[9]).utf8p2, "/u ", 1, true)) then
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-if l_0_2 == nil then
-  l_0_0 = (mp.getfilename)()
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  l_0_1 = l_0_0:sub(-5)
-else
-  l_0_1 = l_0_2:sub(-5)
-end
-if (string.find)(l_0_1:lower(), ".asp") then
-  return mp.INFECTED
-end
-return mp.LOWFI
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsTrustedFile)(false) == true or (mp.IsKnownFriendlyFile)((mp.getfilename)(), true, true) == true then
-  return mp.CLEAN
+if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 100000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

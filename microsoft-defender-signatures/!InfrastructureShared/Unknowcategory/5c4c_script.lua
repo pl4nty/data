@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-;
-(mp.set_mpattribute)("PEBMPAT:Exprio_Tick_Count")
-return mp.INFECTED
+if peattributes.isdll == false and (mp.getfilesize)() < 5048000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

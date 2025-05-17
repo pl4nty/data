@@ -3,30 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  local l_0_1, l_0_2 = (bm.get_process_relationships)()
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_7.image_path))
-    local l_0_9 = (MpCommon.QueryPersistContext)(l_0_8, "PsExecServiceStandardName")
-    if l_0_9 then
-      (mp.ReportLowfi)(l_0_0, 2705434468)
-      ;
-      (bm.add_related_file)(l_0_0)
-      return mp.INFECTED
-    end
-    local l_0_10 = (MpCommon.QueryPersistContext)(l_0_8, "PsExecServiceNonStandardName")
-    if l_0_10 then
-      (mp.ReportLowfi)(l_0_0, 2705434468)
-      ;
-      (bm.add_related_file)(l_0_0)
-      return mp.INFECTED
-    end
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 78
+local l_0_2 = 0
+local l_0_3 = (mp.getfilesize)()
+if l_0_0.is_header then
+  if mp.HEADERPAGE_SZ <= l_0_3 then
+    return mp.CLEAN
   end
+  l_0_2 = (mp.readheader)(l_0_1, l_0_3 - l_0_1)
+else
+  if mp.FOOTERPAGE_SZ <= l_0_3 then
+    return mp.CLEAN
+  end
+  l_0_2 = (mp.readfooter)(l_0_1, l_0_3 - l_0_1)
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+local l_0_4 = l_0_2:find("\')[0]))", 1, true)
+if l_0_4 ~= nil then
+  l_0_2 = l_0_2:sub(0, l_0_4 - 1)
+  ;
+  (mp.vfo_add_buffer)(l_0_2, "[Base64Enc1]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  ;
+  (mp.set_mpattribute)("//SCPT:Base64.EncodedEC")
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,21 +3,12 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC15: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and ((string.find)(l_0_0, " /i ", 1, true) or (string.find)(l_0_0, " /package ", 1, true)) then
-    return mp.INFECTED
-  end
+if not (this_sigattrlog[1]).ppid then
   return mp.CLEAN
 end
+local l_0_0 = (MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[1]).ppid)
+if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= l_0_0.IntegrityLevel then
+  (bm.trigger_sig)("EOP", "SYSTEM")
+end
+return mp.CLEAN
 

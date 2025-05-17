@@ -3,31 +3,44 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
+if (this_sigattrlog[1]).matched and (this_sigattrlog[5]).matched then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_1 = (this_sigattrlog[5]).utf8p1
+  local l_0_2 = nil
+else
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
+
+  if (not (this_sigattrlog[2]).matched or not (this_sigattrlog[6]).matched or (this_sigattrlog[3]).matched) and (this_sigattrlog[7]).matched then
+    local l_0_3, l_0_4, l_0_6, l_0_7, l_0_9, l_0_10, l_0_12, l_0_13 = (this_sigattrlog[2]).utf8p1, (this_sigattrlog[6]).utf8p1
+    l_0_6 = this_sigattrlog
+    l_0_6 = l_0_6[7]
+    l_0_4 = l_0_6.utf8p1
+    local l_0_5, l_0_8, l_0_11, l_0_14 = nil
   else
   end
-  if (this_sigattrlog[2]).matched then
-    do return mp.CLEAN end
-    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/addfile [^ ]+ \\\\localhost\\[^ ]* [^ ]+") ~= nil then
-      return mp.INFECTED
-    else
-      -- DECOMPILER ERROR at PC48: Confused about usage of register: R0 in 'UnsetPending'
-
-      if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/addfile [^ ]+ \\\\127%.0%.0%.1\\[^ ]* [^ ]+") ~= nil then
-        return mp.INFECTED
-      else
-        -- DECOMPILER ERROR at PC59: Confused about usage of register: R0 in 'UnsetPending'
-
-        if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/addfile [^ ]+ .:\\[^ ]* [^ ]+") ~= nil then
-          return mp.INFECTED
-        end
+  do
+    if (this_sigattrlog[4]).matched and (this_sigattrlog[8]).matched then
+      do return mp.CLEAN end
+      if not (this_sigattrlog[4]).utf8p1 or not (this_sigattrlog[8]).utf8p1 then
+        return mp.CLEAN
       end
+      -- DECOMPILER ERROR at PC78: Confused about usage of register: R0 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC80: Confused about usage of register: R1 in 'UnsetPending'
+
+      if ((this_sigattrlog[4]).utf8p1):lower() ~= ((this_sigattrlog[8]).utf8p1):lower() then
+        return mp.CLEAN
+      end
+      -- DECOMPILER ERROR at PC89: Confused about usage of register: R0 in 'UnsetPending'
+
+      ;
+      (bm.add_related_file)((this_sigattrlog[4]).utf8p1)
+      return mp.INFECTED
     end
-    return mp.CLEAN
   end
 end
 

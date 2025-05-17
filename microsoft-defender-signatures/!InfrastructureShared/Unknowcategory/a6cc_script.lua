@@ -3,40 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
-if (((((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and (hstrlog[5]).matched) or not (hstrlog[17]).matched) and (hstrlog[23]).matched) or (hstrlog[4]).matched) and 1 or 0) + ((hstrlog[16]).matched and 1 or 0) + ((hstrlog[22]).matched and 1 or 0) + ((hstrlog[26]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched or (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
+  local l_0_0, l_0_1 = (bm.get_process_relationships)()
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+      local l_0_8 = (string.lower)(l_0_6.image_path)
+      if l_0_7 == 1 and ((string.find)(l_0_8, "\\cmd.exe", 1, true) or (string.find)(l_0_8, "\\powershell.exe", 1, true) or (string.find)(l_0_8, "\\powershell_ise.exe", 1, true) or (string.find)(l_0_8, "\\javaw.exe", 1, true) or (string.find)(l_0_8, "\\java.exe", 1, true) or (string.find)(l_0_8, "\\ruby.exe", 1, true) or (string.find)(l_0_8, "\\explorer.exe", 1, true)) then
+        return mp.CLEAN
+      end
+      return mp.INFECTED
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
+end
 

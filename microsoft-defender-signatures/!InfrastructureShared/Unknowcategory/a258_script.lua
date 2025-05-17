@@ -3,16 +3,27 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = 6
 do
-  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (pesecs[3]).Name == "UPX2" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+  if not (string.find)((pe.mmap_va)(pevars.sigaddr, 16), "\015\132", 1, true) then
+    local l_0_1, l_0_2, l_0_3, l_0_4 = (string.find)((pe.mmap_va)(pevars.sigaddr, 16), "t", 1, true)
+    l_0_0 = 2
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC29: Confused about usage of register: R1 in 'UnsetPending'
+
+  if not l_0_1 then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC40: Confused about usage of register: R1 in 'UnsetPending'
+
+  if l_0_0 == 6 then
+    (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 - 1, "êêêêêê")
+  else
+    -- DECOMPILER ERROR at PC49: Confused about usage of register: R1 in 'UnsetPending'
+
+    ;
+    (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 - 1, "êê")
+  end
+  return mp.INFECTED
 end
 

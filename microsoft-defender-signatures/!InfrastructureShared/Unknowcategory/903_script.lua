@@ -3,58 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 == nil then
-    return false
-  end
-  local l_1_2 = 0
-  for l_1_6,l_1_7 in ipairs(l_1_0) do
-    l_1_2 = l_1_2 + 1
-    local l_1_8 = l_1_0[l_1_2]
-    local l_1_9 = l_1_8.FingerprintSha1
-    if l_1_9 == nil then
-      return false
-    end
-    if l_1_9.HashType ~= "SHA1" then
-      return false
-    end
-    do
-      do
-        local l_1_10 = l_1_9.Hash
-        if l_1_10 == nil then
-          return false
-        end
-        if l_1_1[l_1_10] then
-          return true
-        end
-        do break end
-        -- DECOMPILER ERROR at PC32: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
-  end
-end
-
-local l_0_1 = (mp.GetCertificateInfo)()
-if l_0_1 == nil then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:len() < 9 then
   return mp.CLEAN
 end
+local l_0_1 = (string.sub)(l_0_0, -4)
 local l_0_2 = {}
-l_0_2["õ²Oe\207$À_é»Np·¹D2ûp\v"] = true
-l_0_2["\006oÈTÌÍs\149!¯î\239\fC\255Íj\017k\191"] = true
-l_0_2["ÑŸ\b\200\020{ç§\a‚ú“k\023C\031Oj\023\251"] = true
-l_0_2["‚~r5=i\016©ÞÇó\209\006\022v\232\003VýS"] = true
-l_0_2[".\13544\140\0039\r$úùn†»\001³ž:ÔÛ"] = true
-l_0_2["z\001\240\"\162\002BE}u6\t\223\255\0005ä¢3\244"] = true
-l_0_2["1ªÊ;\141\030ƒD\181\tu¦Ä}\218\026\1707E\188"] = true
-for l_0_6,l_0_7 in ipairs(l_0_1) do
-  if l_0_0(l_0_7.Certificates, l_0_2) then
-    return mp.INFECTED
-  end
-  do break end
-end
-do
+l_0_2[".exe"] = ""
+l_0_2[".scr"] = ""
+if not l_0_2[l_0_1] then
   return mp.CLEAN
 end
+local l_0_3 = {}
+l_0_3[".®cod"] = ""
+l_0_3[".®slx"] = ""
+l_0_3[".®tpp"] = ""
+l_0_3[".®fdp"] = ""
+l_0_3[".®gpj"] = ""
+l_0_3[".®fig"] = ""
+l_0_3[".®gnp"] = ""
+l_0_3[".®cip"] = ""
+l_0_3[".®txt"] = ""
+l_0_3[".\1743pm"] = ""
+l_0_3["®xcod"] = ""
+l_0_3["®xlsx"] = ""
+l_0_3["®xslx"] = ""
+l_0_3["®xtpp"] = ""
+local l_0_4 = (string.sub)(l_0_0, -9)
+if l_0_3[(string.sub)(l_0_4, 1, 5)] then
+  (mp.set_mpattribute)("Lua:RTLOEXEDoubleExtension")
+end
+return mp.CLEAN
 

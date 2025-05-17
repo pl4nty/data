@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 8 then
-  (pe.set_image_filename)("\"myapp.exe\" /install")
-  ;
-  (pe.reemulate)()
+if not peattributes.amd64_image then
+  return mp.CLEAN
+end
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

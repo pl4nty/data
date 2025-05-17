@@ -3,62 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\displayswitch.exe$") then
   return mp.CLEAN
 end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
+do
+  if (string.find)(l_0_0, "\\systray.exe$") then
+    local l_0_1 = (versioning.GetOrgID)()
+    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
+      return mp.CLEAN
+    end
+  end
+  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
+  if l_0_3 == nil or #l_0_3 == 0 then
+    return mp.CLEAN
+  end
+  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\displayswitch.exe")
+  if l_0_4 ~= nil then
+    local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
+    if l_0_5 == nil or (string.len)(l_0_5) <= 1 then
+      return mp.CLEAN
+    end
+  else
+    do
+      do return mp.CLEAN end
+      local l_0_6, l_0_7 = (bm.get_process_relationships)()
+      for l_0_11,l_0_12 in ipairs(l_0_6) do
+        if l_0_12.image_path ~= nil and (string.find)((string.lower)(l_0_12.image_path), "winlogon.exe", 1, true) then
+          return mp.INFECTED
+        end
+      end
+      return mp.CLEAN
+    end
+  end
 end
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint <= 32768 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint >= 45056 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode < 32768 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode > 49152 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage < 274432 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage > 323584 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfInitializedData <= 225280 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfInitializedData >= 278528 then
-  return mp.CLEAN
-end
-if (pesecs[1]).Characteristics ~= 1610612768 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).Characteristics ~= 1073741888 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 8192 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData < 32768 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData > 49152 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
-  return mp.CLEAN
-end
-if (mp.readu_u16)(epcode, 1) ~= 60545 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

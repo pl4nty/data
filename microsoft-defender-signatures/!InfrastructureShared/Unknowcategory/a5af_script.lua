@@ -3,38 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 80)
+local l_0_1 = (mp.readu_u32)(l_0_0, 41)
+if l_0_1 < (pesecs[1]).VirtualAddress or (pesecs[pehdr.NumberOfSections]).VirtualAddress + (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= l_0_1 then
   return mp.CLEAN
 end
-if peattributes.hasstandardentry == true then
+local l_0_2 = (mp.readu_u16)(l_0_0, 26)
+if l_0_2 < 32768 or l_0_2 > 40960 then
   return mp.CLEAN
 end
-if peattributes.lastscn_falign ~= true then
+local l_0_3 = (mp.readu_u16)(l_0_0, 69)
+if l_0_3 < 49152 or l_0_3 > 57344 then
   return mp.CLEAN
 end
-if peattributes.epscn_writable == false then
-  return mp.CLEAN
-end
-if peattributes.hasappendeddata ~= true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 4 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 139 then
-  return mp.CLEAN
-end
+;
+(mp.set_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F")
+local l_0_4 = (string.format)("CURE:Virus:Win32/Xpaj.gen!F_%08X", l_0_1)
+;
+(mp.set_mpattribute)(l_0_4)
 return mp.INFECTED
 

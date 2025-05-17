@@ -3,37 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["svchost.exe"] = true
-  l_0_3["taskeng.exe"] = true
-  l_0_3["taskhostw.exe"] = true
-  if l_0_3[l_0_2] then
-    local l_0_4 = nil
-    if (this_sigattrlog[1]).matched then
-      l_0_4 = (this_sigattrlog[1]).utf8p2
-    end
-    if l_0_4 ~= nil then
-      local l_0_5 = (mp.GetExecutablesFromCommandLine)(l_0_4)
-      for l_0_9,l_0_10 in ipairs(l_0_5) do
-        if l_0_10 ~= nil and l_0_10:len() > 3 and (sysio.IsFileExists)(l_0_10) and (string.sub)(l_0_10, -4) == ".wsf" then
-          if (string.sub)(l_0_10, -15) == "iislogclean.wsf" then
-            return mp.CLEAN
-          end
-          ;
-          (bm.add_threat_file)(l_0_10)
-          return mp.INFECTED
-        end
-      end
-    end
-  end
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = (string.lower)(tostring(headerpage))
+else
+  l_0_1 = (string.lower)(tostring(footerpage))
 end
+l_0_1 = (string.gsub)(l_0_1, "%z", "")
+l_0_1 = (string.gsub)(l_0_1, " ", "")
+l_0_1 = (string.gsub)(l_0_1, "`", "")
 do
-  l_0_1 = mp
-  l_0_1 = l_0_1.CLEAN
-  return l_0_1
+  if (string.find)(l_0_1, "proxy", 1, true) and (string.find)(l_0_1, "::", 1, true) and (string.find)(l_0_1, "defaultnetworkcredentials", 1, true) then
+    local l_0_2 = (string.lower)((mp.getfilename)())
+    if (string.find)(l_0_2, "->%(%w+%)") or (string.find)(l_0_2, "->%[%w+%]") then
+      (mp.set_mpattribute)("SCRIPT:Packed")
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

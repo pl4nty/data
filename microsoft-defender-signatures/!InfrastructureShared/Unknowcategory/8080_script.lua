@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epscn_writable and peattributes.headerchecksum0 and peattributes.no_decription and peattributes.suspicious_image_version then
-  return mp.INFECTED
+do
+  if (nri.IsResponse)() then
+    local l_0_0 = (nri.GetRawResponseBlob)()
+    if l_0_0 and (string.find)(l_0_0, "Server: Microsoft%-IIS/7.5") then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

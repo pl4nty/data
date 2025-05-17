@@ -3,26 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("AndroidOS:HSTR:Generality.C") then
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:find("%.%w+$")
+if l_0_1 == nil then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("AndroidOS:HSTR:AndroidElf") then
-  local l_0_0 = ((string.sub)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)), -5)):match("(%.%w+)$")
-  local l_0_1 = {}
-  l_0_1[".ko"] = ""
-  l_0_1[".o"] = ""
-  if l_0_1[l_0_0] then
-    return mp.CLEAN
-  end
-  local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-  if l_0_2:find("snort", 1, true) then
-    return mp.CLEAN
-  end
+local l_0_3 = l_0_0:sub(l_0_1 + 1, l_0_2)
+local l_0_4 = false
+if l_0_3 == "jpg" or l_0_3 == "jpeg" or l_0_3 == "gif" or l_0_3 == "png" or l_0_3 == "bmp" or l_0_3 == "tiff" or l_0_3 == "tif" or l_0_3 == "pnm" or l_0_3 == "ppm" or l_0_3 == "pgm" or l_0_3 == "pbm" then
+  l_0_4 = true
 end
-do
-  if #(mp.enum_mpattributesubstring)("TEL:Exploit:Android/CVE") == 0 then
-    return mp.INFECTED
-  end
+if l_0_4 == false then
   return mp.CLEAN
 end
+local l_0_5 = l_0_0:sub(1, l_0_1 - 1)
+local l_0_6 = false
+if l_0_5 == "run32" or l_0_5 == "run64" or l_0_5 == "x32" or l_0_5 == "x64" or l_0_5 == "ms32" or l_0_5 == "ms64" then
+  l_0_6 = true
+end
+if l_0_6 then
+  (mp.set_mpattribute)("Lua:ExecutableUsingImageExtension!dha")
+else
+  ;
+  (mp.set_mpattribute)("Lua:ExecutableUsingImageExtension")
+end
+return mp.CLEAN
 

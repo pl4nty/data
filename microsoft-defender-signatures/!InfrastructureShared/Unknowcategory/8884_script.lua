@@ -3,19 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["winword.exe"] = true
-  l_0_3["excel.exe"] = true
-  l_0_3["powerpnt.exe"] = true
-  if l_0_3[l_0_2] then
+local l_0_0 = (bm.get_current_process_startup_info)()
+do
+  if l_0_0 ~= nil and l_0_0.command_line ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.command_line)
+    if l_0_1:find("azurearcagent", 1, true) then
+      return mp.CLEAN
+    end
     return mp.INFECTED
   end
-end
-do
   return mp.CLEAN
 end
 

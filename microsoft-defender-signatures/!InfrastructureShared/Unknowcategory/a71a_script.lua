@@ -3,28 +3,39 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = false
-if (hstrlog[15]).matched and ((hstrlog[16]).matched or (hstrlog[17]).matched or (hstrlog[18]).matched or (hstrlog[19]).matched) then
-  l_0_0 = true
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\utilman.exe$") then
+  return mp.CLEAN
 end
-if (hstrlog[1]).matched and (hstrlog[6]).matched and peattributes.isexe and peattributes.headerchecksum0 and not peattributes.no_comruntime and pehdr.NumberOfSections == 3 and (pesecs[1]).Name == ".text" and (pesecs[2]).Name == ".rsrc" and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" then
-  if (((hstrlog[7]).matched or ((hstrlog[8]).matched or (hstrlog[9]).matched) and ((hstrlog[10]).matched or (hstrlog[11]).matched) and ((hstrlog[12]).matched or (hstrlog[13]).matched))) then
-    if (hstrlog[14]).matched or l_0_0 then
-      return mp.INFECTED
-    else
-      if (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched then
-        return mp.INFECTED
-      else
-        if (hstrlog[20]).matched then
-          return mp.INFECTED
-        else
-          return mp.SUSPICIOUS
-        end
-      end
+do
+  if (string.find)(l_0_0, "\\systray.exe$") then
+    local l_0_1 = (versioning.GetOrgID)()
+    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
+      return mp.CLEAN
     end
-  else
+  end
+  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
+  if l_0_3 == nil or #l_0_3 == 0 then
     return mp.CLEAN
   end
+  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\utilman.exe")
+  if l_0_4 ~= nil then
+    local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
+    if l_0_5 == nil or (string.len)(l_0_5) <= 1 then
+      return mp.CLEAN
+    end
+  else
+    do
+      do return mp.CLEAN end
+      local l_0_6, l_0_7 = (bm.get_process_relationships)()
+      for l_0_11,l_0_12 in ipairs(l_0_6) do
+        if l_0_12.image_path ~= nil and (string.find)((string.lower)(l_0_12.image_path), "winlogon.exe", 1, true) then
+          return mp.INFECTED
+        end
+      end
+      return mp.CLEAN
+    end
+  end
 end
-return mp.CLEAN
 

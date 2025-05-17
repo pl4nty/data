@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 458752 and l_0_0 <= 1044480 and pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 9 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 15, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "é")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

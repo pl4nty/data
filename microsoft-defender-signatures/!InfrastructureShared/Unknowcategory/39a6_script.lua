@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 8, "")
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
 return mp.INFECTED
 

@@ -3,21 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (mp.UfsGetMetadataBool)("LnkWithPowerShellCmd", true)
-local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_2:match("anaconda powershell prompt.+%.lnk") then
-  (mp.set_mpattribute)("Lua:ExcludeAnacondaPS")
+if (mp.get_mpattribute)("SCRIPT:Exploit:HTML/NeutrinoEK.L!obj") then
+  local l_0_0 = (string.lower)(tostring(headerpage))
+  local l_0_1 = (string.match)(l_0_0, "(<object .-classid=\"clsid:d27cdb6e.-</object>)")
+  if l_0_1 then
+    local l_0_2 = (string.match)(l_0_1, "<object.- id=(%l+) .->")
+    local l_0_3 = (string.match)(l_0_1, "<object.- name=\"(%l+)\" .->")
+    local l_0_4 = (string.match)(l_0_1, "<object.- height=\"(%d+)\".->")
+    local l_0_5 = (string.match)(l_0_1, "<object.- width=\"(%d+).->")
+    if l_0_2 and l_0_4 and l_0_5 then
+      local l_0_6 = (string.match)(l_0_1, ">(<embed .-allowscriptaccess=\"samedomain\".->)")
+      if l_0_6 and l_0_2 == l_0_3 and (string.match)(l_0_6, "id=(%l+) .->") == (string.match)(l_0_6, "name=(%l+) .->") and l_0_5 == (string.match)(l_0_6, "width=(%d+) .->") and l_0_4 == (string.match)(l_0_6, "height=(%d+) .->") and (string.match)(l_0_6, "src=(/%w+/.-%.swf) .->") then
+        return mp.INFECTED
+      end
+    end
+  end
 end
-if l_0_0 == 0 and l_0_1 == true then
-  if (mp.get_mpattribute)("AGGR:PowerShell/EncodedCommand") or (mp.get_mpattribute)("AGGR:PowerShell/EncodedArgs") then
-    (mp.set_mpattribute)("Lua:LnkFileWithEncodedPSCmd")
-  end
-  if (mp.get_mpattribute)("AGGR:PowerShell/Hidden") then
-    (mp.set_mpattribute)("Lua:LnkFileWithHiddenPSCmd")
-  end
-  if (mp.get_mpattribute)("AGGR:PowerShell/ExecutionPolicyBypass") or (mp.get_mpattribute)("AGGR:PowerShell/ExecutionPolicyUnrestricted") then
-    (mp.set_mpattribute)("Lua:LnkFileWithExPolicyBypassedPSCmd")
-  end
+do
+  return mp.CLEAN
 end
-return mp.CLEAN
 

@@ -3,22 +3,20 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-  local l_0_0, l_0_1, l_0_2 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC33: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (MpCommon.QueryPersistContext)(l_0_0, "BitsadminTarget") then
-      (mp.ReportLowfi)(l_0_0, 1556043553)
-      return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = false
+for l_0_6,l_0_7 in ipairs(l_0_0) do
+  if l_0_7.image_path ~= nil then
+    l_0_2 = true
+    if (string.find)(l_0_7.image_path, "\\MSBuild%.exe$") ~= nil or (string.find)(l_0_7.image_path, "\\devenv%.exe$") ~= nil or (string.find)(l_0_7.image_path, "\\K2Studio%.exe$") ~= nil then
+      return mp.CLEAN
     end
-    return mp.CLEAN
+    ;
+    (bm.add_related_file)(l_0_7.image_path)
   end
 end
+if l_0_2 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,40 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_3 = nil
+if (bm.GetSignatureMatchDuration)() > 200000000 then
+  return mp.CLEAN
+end
+local l_0_0 = nil
 if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = false
+  l_0_0 = (this_sigattrlog[1]).utf8p2
 else
-  do
-    -- DECOMPILER ERROR at PC27: Overwrote pending register: R0 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC41: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-        local l_0_1, l_0_2 = nil
-      end
-      if l_0_3 ~= nil then
-        local l_0_4 = nil
-        for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
-          local l_0_5 = nil
-          -- DECOMPILER ERROR at PC54: Confused about usage of register: R7 in 'UnsetPending'
-
-          R7_PC54 = (mp.ContextualExpandEnvironmentVariables)(R7_PC54)
-          if (sysio.IsFileExists)(R7_PC54) then
-            l_0_4 = true
-            ;
-            (bm.add_related_file)(R7_PC54)
-          end
-        end
-      end
-      do
-        if l_0_4 then
-          return mp.INFECTED
-        end
-        return mp.CLEAN
-      end
-    end
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    l_0_0 = (this_sigattrlog[2]).utf8p2
   end
 end
+if l_0_0 == nil then
+  return mp.INFECTED
+end
+local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+  if (sysio.IsFileExists)(l_0_6) then
+    (bm.add_related_file)(l_0_6)
+  end
+end
+return mp.INFECTED
 

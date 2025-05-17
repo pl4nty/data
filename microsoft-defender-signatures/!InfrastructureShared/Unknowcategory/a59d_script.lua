@@ -3,40 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["svchost.exe"] = true
-  l_0_3["taskeng.exe"] = true
-  l_0_3["taskhostw.exe"] = true
-  if l_0_3[l_0_2] then
-    local l_0_4 = nil
-    if (this_sigattrlog[1]).matched then
-      l_0_4 = (this_sigattrlog[1]).utf8p2
-    end
-    if (this_sigattrlog[2]).matched then
-      l_0_4 = (this_sigattrlog[2]).utf8p2
-    end
-    if l_0_4 ~= nil then
-      local l_0_5 = (mp.GetExecutablesFromCommandLine)(l_0_4)
-      for l_0_9,l_0_10 in ipairs(l_0_5) do
-        if l_0_10 ~= nil and l_0_10:len() > 3 and (sysio.IsFileExists)(l_0_10) then
-          (bm.add_related_file)(l_0_10)
-        end
+local l_0_0 = (hstrlog[1]).VA + 24
+if not (pe.isdynamic_va)(l_0_0) and peattributes.isexe and pehdr.NumberOfSections < 5 then
+  local l_0_1 = (pe.foffset_va)(l_0_0)
+  for l_0_5 = 1, pehdr.NumberOfSections do
+    if (pe.contains_va)(l_0_5, l_0_0) then
+      local l_0_6 = l_0_1 - (pesecs[l_0_5]).PointerToRawData
+      if l_0_6 < 512 or l_0_6 > 4000000 then
+        return mp.CLEAN
       end
-    end
-    do
-      do
-        l_0_5 = mp
-        l_0_5 = l_0_5.INFECTED
-        do return l_0_5 end
-        l_0_1 = mp
-        l_0_1 = l_0_1.CLEAN
-        return l_0_1
-      end
+      ;
+      (mp.readprotection)(false)
+      local l_0_7 = (mp.readfile)(l_0_1 - l_0_6, l_0_6)
+      ;
+      (mp.vfo_add_buffer)((string.reverse)(l_0_7), "[b64mz_reverse]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+      return mp.CLEAN
     end
   end
+end
+do
+  return mp.LOWFI
 end
 

@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil or l_0_0.image_path == nil then
-  return mp.CLEAN
+if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true and peattributes.no_security == true then
+  return mp.INFECTED
 end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-if l_0_1:match("([^\\]+)$") ~= "explorer.exe" then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

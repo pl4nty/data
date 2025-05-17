@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((((not (hstrlog[6]).matched or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or 0 + 1 + 1 + 1 + 1 + 2 >= 3 then
+if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 200000 and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 9 then
+if pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

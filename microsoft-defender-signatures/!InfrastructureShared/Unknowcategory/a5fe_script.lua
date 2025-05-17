@@ -3,44 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
-  return mp.CLEAN
-end
-if peattributes.epscn_islast ~= true then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 5 then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.epscn_writable == false then
-  return mp.CLEAN
-end
-if epcode[1] ~= 80 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 104 then
-  return mp.CLEAN
-end
-if epcode[7] ~= 232 then
-  return mp.CLEAN
-end
-if epcode[12] ~= 232 then
-  return mp.CLEAN
-end
-if epcode[17] ~= 51 then
-  return mp.CLEAN
-end
-if epcode[18] ~= 192 then
-  return mp.CLEAN
-end
-if epcode[19] ~= 64 then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_21")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 48)
+local l_0_2 = (mp.readu_u32)(l_0_0, 6)
+local l_0_3 = (string.byte)(l_0_0, 16)
+local l_0_4 = (string.byte)(l_0_0, 19)
+local l_0_5 = (mp.readu_u32)(l_0_0, 21)
+local l_0_6 = (string.byte)(l_0_0, 27)
+local l_0_7 = (mp.readu_u32)(l_0_0, 31)
+local l_0_8 = (mp.readu_u32)(l_0_0, 42)
+local l_0_9 = (pe.get_regval)(pe.REG_EDX)
+local l_0_10 = (mp.ror32)((mp.ror32)((mp.ror32)(l_0_9, 1) - l_0_3, l_0_4) + l_0_5, l_0_6) - (mp.bitxor)(l_0_8, l_0_7) + l_0_1 - l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_10)
 return mp.INFECTED
 

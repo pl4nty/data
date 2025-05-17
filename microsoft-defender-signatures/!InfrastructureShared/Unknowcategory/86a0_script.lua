@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (versioning.GetEngineBuild)() >= 16700 then
-    local l_0_0 = (versioning.GetOrgID)()
-    if l_0_0 and (string.lower)(l_0_0) == "d7c7c745-195f-4223-9c7a-99fb420fd000" then
-      return mp.CLEAN
-    end
-  end
+if peattributes.isdll and (mp.getfilesize)() < 338000 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
   return mp.INFECTED
 end
+return mp.CLEAN
 

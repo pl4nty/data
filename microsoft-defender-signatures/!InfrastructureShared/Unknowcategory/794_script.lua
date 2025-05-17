@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("Lua:Wpbbin.A!cert") then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+if l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:len() < 28 or (string.sub)(l_0_0, -28) ~= "\\windows\\system32\\wpbbin.exe" then
+if l_0_0:lower() == "cmd.exe" then
+  (mp.set_mpattribute)("LUA:RtpProc_cmd")
   return mp.CLEAN
 end
-return mp.INFECTED
+if l_0_0:lower() == "telegram.exe" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

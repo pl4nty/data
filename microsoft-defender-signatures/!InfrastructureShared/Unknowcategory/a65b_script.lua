@@ -4,30 +4,11 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\sethc.exe$") then
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
-do
-  if (string.find)(l_0_0, "\\systray.exe$") then
-    local l_0_1 = (versioning.GetOrgID)()
-    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
-      return mp.CLEAN
-    end
-  end
-  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
-  if l_0_3 == nil or #l_0_3 == 0 then
-    return mp.CLEAN
-  end
-  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
-  do
-    if l_0_4 ~= nil then
-      local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
-      if l_0_5 ~= nil and (string.len)(l_0_5) >= 1 then
-        return mp.INFECTED
-      end
-    end
-    return mp.CLEAN
-  end
+if (string.find)(l_0_0, "\\systemsettings.exe", 1, true) or (string.find)(l_0_0, "\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\explorer.exe", 1, true) or (string.find)(l_0_0, "\\openwith.exe", 1, true) or (string.find)(l_0_0, "\\searchprotocolhost.exe", 1, true) or (string.find)(l_0_0, "\\searchindexer.exe", 1, true) or (string.find)(l_0_0, "\\runtimebroker.exe", 1, true) or (string.find)(l_0_0, "\\msiexec.exe", 1, true) or (string.find)(l_0_0, "\\taskhostw.exe", 1, true) or (string.find)(l_0_0, "\\userprofilemanager.exe", 1, true) then
+  return mp.CLEAN
 end
+return mp.INFECTED
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT < 4 and mp.HSTR_WEIGHT > 1 then
+  (mp.set_mpattribute)("HSTR:Nivdort.EXP05")
 end
-return mp.CLEAN
+return mp.INFECTED
 

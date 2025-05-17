@@ -3,22 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_7C01")
-  ;
-  (mp.set_mpattribute)("HSTR:Obfuscator.PN!crc_key.1_075108AA_003272F1")
-else
-  if (hstrlog[2]).matched then
-    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_7D02")
-    ;
-    (mp.set_mpattribute)("HSTR:Obfuscator.PN!crc_key.1_075108AC_003272F3")
-  else
-    if (hstrlog[3]).matched then
-      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_78FC")
-      ;
-      (mp.set_mpattribute)("HSTR:Obfuscator.PN!crc_key.1_075108A3_003272EA")
-    end
-  end
+if not (mp.get_mpattribute)("Trojan:Script/FakeUpdates.A") and not (mp.get_mpattribute)("Trojan:Script/FakeUpdates.C") and not (mp.get_mpattribute)("Backdoor:JS/FakeUpdates.C!dha") and not (mp.get_mpattribute)("Backdoor:JS/FakeUpdates.D!dha") then
+  return mp.CLEAN
 end
-return mp.INFECTED
+local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+if l_0_0 and (sysio.IsFileExists)(l_0_1) and not (mp.IsKnownFriendlyFile)(l_0_1, false, false) then
+  (mp.ReportLowfi)(l_0_1, 73467367)
+  return mp.CLEAN
+end
+return mp.CLEAN
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 and (mp.crc32)(-1, epcode, 1, 15) == 183454422 then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 18, 5)
+if (mp.readu_u32)(l_0_0, 2) < 32768 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

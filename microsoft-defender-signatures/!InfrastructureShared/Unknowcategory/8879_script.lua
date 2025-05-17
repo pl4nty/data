@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 1, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-;
-(mp.readprotection)(false)
-if (pe.mmap_va)(l_0_1, 9) == "myapp.exe" then
-  return mp.INFECTED
+if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.isdll == true then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

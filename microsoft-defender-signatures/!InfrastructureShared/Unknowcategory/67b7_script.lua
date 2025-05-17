@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+if peattributes.isdll == true and peattributes.hasexports == true and peattributes.amd64_image then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

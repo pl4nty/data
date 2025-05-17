@@ -3,22 +3,41 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 32 or l_0_0 > 65536 then
-  return mp.CLEAN
+local l_0_0 = nil
+local l_0_1 = nil
+local l_0_2 = nil
+if (sysio.RegOpenKey)((sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")) then
+  local l_0_3 = nil
+  for l_0_7,l_0_8 in pairs((sysio.RegEnumValues)((sysio.RegOpenKey)((sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")))) do
+    local l_0_4 = nil
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R8 in 'UnsetPending'
+
+    l_0_1 = (string.lower)((sysio.GetRegValueAsString)(l_0_3, R8_PC23))
+    if l_0_1 ~= nil then
+      if (string.match)(l_0_1, "regsvr32.+/i%:http.+scrobj%.dll") and (string.find)(l_0_1, "/u ", 1, true) and (string.find)(l_0_1, "/s ", 1, true) then
+        (sysio.DeleteRegValue)(l_0_3, R8_PC23)
+      end
+      if (string.find)(l_0_1, "powershell.exe", 1, true) and (string.match)(l_0_1, "iex%s*%(%[text%.encoding%]%:%:ascii%.getstring%(%[convert%]%:%:frombase64string%(%(gp%s*%\'hk") then
+        (sysio.DeleteRegValue)(l_0_3, R8_PC23)
+      end
+    end
+  end
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  return mp.CLEAN
+do
+  l_0_3 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run")
+  if l_0_3 then
+    local l_0_9 = (sysio.RegEnumValues)(l_0_3)
+    for l_0_13,l_0_14 in pairs(l_0_9) do
+      l_0_1 = (string.lower)((sysio.GetRegValueAsString)(l_0_3, l_0_14))
+      if l_0_1 ~= nil then
+        if (string.match)(l_0_1, "regsvr32.+/i%:http.+scrobj%.dll") and (string.find)(l_0_1, "/u ", 1, true) and (string.find)(l_0_1, "/s ", 1, true) then
+          (sysio.DeleteRegValue)(l_0_3, l_0_14)
+        end
+        if (string.find)(l_0_1, "powershell.exe", 1, true) and (string.match)(l_0_1, "iex%s*%(%[text%.encoding%]%:%:ascii%.getstring%(%[convert%]%:%:frombase64string%(%(gp%s*%\'hk") then
+          (sysio.DeleteRegValue)(l_0_3, l_0_14)
+        end
+      end
+    end
+  end
 end
-if not (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, "r3adm3", 1, true) or (string.find)(l_0_1, "decrypt_information", 1, true) or (string.find)(l_0_1, "how_to_back_files", 1, true) or (string.find)(l_0_1, "^hillary.") or (string.find)(l_0_1, "^ykcol.") or (string.find)(l_0_1, "^osiris.") or (string.find)(l_0_1, "^_[%w]+_readme_") or (string.find)(l_0_1, "_how_to_decrypt_my_files_[%w]+_") or (string.find)(l_0_1, "_help_decrypt_[%w]+_") or (string.find)(l_0_1, "_r_e_a_d___t_h_i_s___[%w]+_") or (string.find)(l_0_1, "_help_help_help_[%w]+") or (string.find)(l_0_1, "^_read_this_file_[%w]+_") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

@@ -3,42 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = (bm.get_connection_string)()
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-if l_0_2 == "" then
-  return mp.CLEAN
-end
-local l_0_3 = tonumber((string.match)(l_0_2, "DestPort=(%d+);"))
-if l_0_3 < 10050 or l_0_3 > 10063 then
-  return mp.CLEAN
-end
-local l_0_4, l_0_5, l_0_6 = l_0_1:match("(.+\\)([^\\]+)(%.%l%l%l)$")
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-if l_0_5 == nil then
-  return mp.CLEAN
-end
-if l_0_6 == nil or l_0_6 ~= ".exe" then
-  return mp.CLEAN
-end
-local l_0_7 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\SYSTEM32\\"))
-local l_0_8 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\SYSWOW64\\"))
-local l_0_9 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
--- DECOMPILER ERROR at PC102: Unhandled construct in 'MakeBoolean' P3
-
-if (l_0_7 and l_0_7 == l_0_4) or not l_0_8 or l_0_9 and l_0_9 == l_0_4 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_tibs_22")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 52)
+local l_0_2 = (mp.readu_u32)(l_0_0, 6)
+local l_0_3 = (string.byte)(l_0_0, 14)
+local l_0_4 = (string.byte)(l_0_0, 17)
+local l_0_5 = (string.byte)(l_0_0, 20)
+local l_0_6 = (mp.readu_u32)(l_0_0, 22)
+local l_0_7 = (string.byte)(l_0_0, 28)
+local l_0_8 = (mp.readu_u32)(l_0_0, 32)
+local l_0_9 = (mp.readu_u32)(l_0_0, 43)
+local l_0_10 = (pe.get_regval)(pe.REG_EDX)
+local l_0_11 = (mp.ror32)((mp.ror32)((mp.ror32)(l_0_10, l_0_3) - l_0_4, l_0_5) + l_0_6, l_0_7) - (mp.bitxor)(l_0_9, l_0_8) + l_0_1 - l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_11)
+return mp.INFECTED
 

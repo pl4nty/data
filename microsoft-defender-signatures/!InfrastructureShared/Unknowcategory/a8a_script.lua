@@ -6,19 +6,12 @@
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil, nil
-  end
-  do
-    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-      local l_0_2 = nil
-    end
-    -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.find)(l_0_2, "echo 1", 1, true) and (string.find)((this_sigattrlog[2]).utf8p1, "/proc/sys/net/ip", 1, true) then
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0 = nil
+    if (string.find)(l_0_0, "sock_stream", 1, true) and (string.find)(l_0_0, "subprocess.call", 1, true) and (string.find)(l_0_0, "/bin/sh", 1, true) then
       return mp.INFECTED
     end
-    return mp.CLEAN
   end
+  return mp.CLEAN
 end
 

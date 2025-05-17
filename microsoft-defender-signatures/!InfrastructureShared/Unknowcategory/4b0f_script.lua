@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true then
+if (mp.get_mpattribute)("MACRO_HSTR:OfficeAutoOpen") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

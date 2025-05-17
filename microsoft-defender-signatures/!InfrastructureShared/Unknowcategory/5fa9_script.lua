@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[3]).Name == ".qhw" and (pesecs[2]).Name == ".g" then
-  return mp.INFECTED
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

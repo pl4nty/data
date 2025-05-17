@@ -3,29 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = nil
-  local l_0_1 = (string.lower)((bm.get_imagepath)())
-  if (this_sigattrlog[3]).utf8p2 ~= nil then
-    l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  end
-  if l_0_1:find("appvclient%.exe") ~= nil then
-    return mp.CLEAN
-  end
-  if l_0_0 ~= nil then
-    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    for l_0_6,l_0_7 in ipairs(l_0_2) do
-      l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-      if (sysio.IsFileExists)(l_0_7) then
-        (bm.add_related_file)(l_0_7)
-        return mp.INFECTED
-      end
-    end
+if not (mp.get_mpattribute)("SCRIPT:Poshkod.gen!A") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1048576 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(0, l_0_0)
+if #l_0_1 < 4096 and #l_0_1 > 1048576 then
+  return mp.CLEAN
+end
+for l_0_5 in (string.gmatch)(l_0_1, "AFsAcgBlAGYAbABl[%w+/]+=?=?") do
+  if #l_0_5 > 4096 then
+    (mp.vfo_add_buffer)((MpCommon.Base64Decode)("JwBCAG0AJwA7" .. l_0_5), "[Poshkod.gen!A]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    break
   end
 end
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+  return mp.CLEAN
 end
 

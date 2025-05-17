@@ -3,30 +3,27 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
-      if (sysio.IsFileExists)(R6_PC25) and (string.find)((string.lower)(R6_PC25), "javaw.exe") == nil then
-        (bm.add_related_file)(R6_PC25)
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+    if l_0_7 == 1 then
+      local l_0_8, l_0_9 = (bm.get_process_relationships)(l_0_6.ppid)
+      for l_0_13,l_0_14 in ipairs(l_0_8) do
+        if l_0_14.image_path ~= nil then
+          local l_0_15 = (mp.bitand)(l_0_14.reason_ex, 1)
+          if l_0_15 == 1 then
+            local l_0_16 = (string.lower)(l_0_14.image_path)
+            if (string.find)(l_0_16, "excel.exe", 1, true) or (string.find)(l_0_16, "winword.exe", 1, true) then
+              return mp.INFECTED
+            end
+          end
+        end
       end
     end
   end
-  do
-    return mp.INFECTED
-  end
 end
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC67: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
 

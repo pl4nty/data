@@ -3,9 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pehdr.ImageBase + pehdr.AddressOfEntryPoint
-if (hstrlog[1]).VA == l_0_0 or (hstrlog[2]).VA == l_0_0 or (hstrlog[3]).VA == l_0_0 or (hstrlog[4]).VA == l_0_0 or (hstrlog[5]).VA == l_0_0 or (hstrlog[6]).VA == l_0_0 or (hstrlog[7]).VA == l_0_0 or (hstrlog[8]).VA == l_0_0 + 7 or (hstrlog[9]).VA == l_0_0 + 7 or (hstrlog[10]).VA == l_0_0 + 12 or (hstrlog[11]).VA == l_0_0 + 2 then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
+      if (sysio.IsFileExists)(R6_PC25) and (string.find)((string.lower)(R6_PC25), "javaw.exe") == nil then
+        (bm.add_threat_file)(R6_PC25)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
 

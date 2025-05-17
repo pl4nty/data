@@ -3,61 +3,54 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+if mp.HEADERPAGE_SZ < 1024 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-if l_0_1 == nil then
+if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
   return mp.CLEAN
 end
-l_0_1 = (string.lower)(l_0_1)
-if l_0_1 ~= "cmd.exe" and not (mp.get_mpattribute)("BM_CMD_EXE") then
+if (mp.readu_u16)(headerpage, 5) ~= 20 then
   return mp.CLEAN
 end
-local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
-local l_0_3 = (mp.GetProcessCommandLine)(l_0_2)
-if l_0_3 == nil then
+if (mp.readu_u16)(headerpage, 7) ~= 9 then
   return mp.CLEAN
 end
-local l_0_4 = (string.len)(l_0_3)
-if l_0_4 < 1000 then
+local l_0_0 = (mp.readu_u32)(headerpage, 19)
+if l_0_0 < 24576 or l_0_0 > 131072 then
   return mp.CLEAN
 end
-do
-  if l_0_4 > 1000 then
-    local l_0_5 = 1000
-  end
-  local l_0_6 = nil
-  local l_0_7 = 0
-  local l_0_8 = 0
-  local l_0_9 = 0
-  local l_0_10 = 0
-  local l_0_11 = 0
-  if l_0_11 >= 30 then
-    (mp.set_mpattribute)("LUA:Dosfuscator2Semicolon")
-  end
-  local l_0_12 = true
-  _ = (string.gsub)((string.gsub)(l_0_3, "%^[&<>%^|\\]", ""), "%^", "", 30)
-  if l_0_7 >= 30 then
-    (mp.set_mpattribute)("LUA:DosfuscatorExp")
-    l_0_12 = true
-  end
-  if l_0_8 > 10 then
-    (mp.set_mpattribute)("LUA:DosfuscatorSharp")
-    l_0_12 = true
-  end
-  if l_0_9 > 30 then
-    (mp.set_mpattribute)("LUA:DosfuscatorComma")
-    l_0_12 = true
-  end
-  if l_0_10 > 30 then
-    (mp.set_mpattribute)("LUA:DosfuscatorParenthesis")
-    l_0_12 = true
-  end
-  if l_0_12 then
-    return mp.INFECTED
-  end
+local l_0_1 = (mp.readu_u16)(headerpage, 27)
+local l_0_2 = (mp.readu_u16)(headerpage, 29)
+if l_0_1 > 128 then
   return mp.CLEAN
 end
+local l_0_3 = (string.lower)((string.char)(headerpage[31], headerpage[32], headerpage[33], headerpage[34], headerpage[35]))
+if l_0_1 > 8 and l_0_3 == "senha" then
+  (mp.set_mpattribute)("Lua:PossibleFourthremZIP")
+end
+if not (mp.get_mpattribute)("RPF:AnyFileHasIOAVURL") then
+  return mp.CLEAN
+end
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+  return mp.CLEAN
+end
+if l_0_1 < 4 then
+  return mp.CLEAN
+end
+local l_0_4 = (string.lower)((string.char)(headerpage[31 + l_0_1 - 4], headerpage[31 + l_0_1 - 3], headerpage[31 + l_0_1 - 2], headerpage[31 + l_0_1 - 1]))
+if l_0_4 ~= ".exe" and l_0_4 ~= ".pif" and l_0_4 ~= ".scr" then
+  return mp.CLEAN
+end
+local l_0_5 = 30 + l_0_1 + l_0_2 + l_0_0
+local l_0_6 = (mp.getfilesize)()
+if l_0_6 < l_0_5 + 16 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_7 = (mp.readfile)(l_0_5, 4)
+if l_0_7 ~= "PK\003\004" then
+  (mp.set_mpattribute)("Lua:IOAVZIPSingleEncryptedEXE")
+end
+return mp.CLEAN
 

@@ -3,18 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p1)
-if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
+do
+  if peattributes.isdll == true or peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    end
+    if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+      (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
-end
-return mp.INFECTED
 

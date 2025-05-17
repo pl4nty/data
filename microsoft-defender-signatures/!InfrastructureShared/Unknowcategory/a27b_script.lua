@@ -4,14 +4,11 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -17) == "\\inetsrv\\w3wp.exe" then
-  return mp.INFECTED
-end
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-for l_0_6,l_0_7 in ipairs(l_0_1) do
-  if l_0_7.image_path ~= nil and (mp.bitand)(l_0_7.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_7.image_path, -17)) == "\\inetsrv\\w3wp.exe" then
-    return mp.INFECTED
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\steam", 1, true) or (string.find)((string.lower)(l_0_0), "torrent.exe", 1, true) or (string.find)((string.lower)(l_0_0), "game", 1, true) then
+    return mp.CLEAN
   end
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("PUA:Block:MacOptimizer.B")
+if peattributes.ismsil == true and peattributes.isdll == false and peattributes.hasexports == false then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

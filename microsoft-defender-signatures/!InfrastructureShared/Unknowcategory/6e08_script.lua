@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("HSTR:Trojan:Win32/Tracur_01")
+if peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() < 1000000 then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("do_deep_rescan")
-return mp.INFECTED
+return mp.CLEAN
 

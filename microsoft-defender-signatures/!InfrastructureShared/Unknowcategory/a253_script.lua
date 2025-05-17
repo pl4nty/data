@@ -3,9 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -10) == "\\mstsc.exe" or (string.sub)(l_0_0, -27) == "\\remotedesktopmanager64.exe" or (string.sub)(l_0_0, -11) == "\\rdcman.exe" or (string.sub)(l_0_0, -14) == "\\mremoteng.exe" or (string.sub)(l_0_0, -10) == "\\lsass.exe" then
+if not (mp.get_mpattribute)("LUA:FileSizeLE5000.A") then
   return mp.CLEAN
 end
-return mp.INFECTED
+local l_0_0, l_0_1 = nil, nil
+local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+if l_0_2 == nil then
+  l_0_0 = (mp.getfilename)()
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  l_0_1 = l_0_0:sub(-5)
+else
+  l_0_1 = l_0_2:sub(-5)
+end
+if (string.find)(l_0_1:lower(), ".asp") then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

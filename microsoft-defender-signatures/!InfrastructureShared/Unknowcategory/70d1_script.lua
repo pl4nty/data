@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
-return mp.INFECTED
+if peattributes.isexe and peattributes.no_security == false and peattributes.x86_image and peattributes.ismsil == false then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

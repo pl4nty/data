@@ -3,30 +3,34 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports and peattributes.amd64_image then
-  if (mp.getfilesize)() > 1703936 then
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
+    local l_0_0 = nil
+  end
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == nil then
     return mp.CLEAN
   end
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC39: Overwrote pending register: R1 in 'AssignReg'
+
+  if not (this_sigattrlog[11]).matched or (this_sigattrlog[11]).utf8p1 == nil or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs({"windir%\\winsxs\\", ":windows\\winsxs\\", "windir%\\servicing\\", ":windows\\servicing\\"}) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC59: Confused about usage of register: R7 in 'UnsetPending'
+
+    if (string.sub)(l_0_1, 2, #R7_PC59) == R7_PC59 or (string.sub)(l_0_2, 2, #R7_PC59) == R7_PC59 then
       return mp.CLEAN
     end
   end
-  local l_0_6 = (pe.get_exports_count)()
-  if l_0_6 >= 2 and l_0_6 <= 8 then
-    local l_0_7, l_0_8 = (pe.get_exports)()
-    for l_0_12 = 1, l_0_7 do
-      local l_0_13 = (l_0_8[l_0_12]).rva
-      local l_0_14 = (mp.readu_u16)((pe.mmap_rva)(l_0_13, 2), 1)
-      local l_0_15 = (mp.bsplit)(l_0_14, 8)
-      if l_0_15 == 235 or l_0_15 == 233 then
-        return mp.INFECTED
-      end
-    end
-  end
-end
-do
-  return mp.CLEAN
+  ;
+  (bm.add_related_file)(l_0_2)
+  return mp.INFECTED
 end
 

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 100000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+return mp.INFECTED
 

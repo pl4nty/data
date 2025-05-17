@@ -3,20 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN then
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_DEVICE_CHARACTERISTICS)
-  if l_0_1 == 2305 or l_0_1 == 289 or l_0_1 == 262433 or l_0_1 == 34 or l_0_1 == 35 or l_0_1 == 393249 or l_0_1 == 262435 then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if l_0_2:find("^\\device\\cdrom[0-9][0-9]?$") ~= nil then
-      local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_ATTRIBUTES)
-      if (mp.bitand)(l_0_3, 1) == 1 and not peattributes.isdll then
-        return mp.INFECTED
-      end
-    end
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 250 or l_0_0 > 512 then
   return mp.CLEAN
 end
+local l_0_1 = (mp.getfilename)()
+if (string.sub)(l_0_1, -4) ~= ".txt" then
+  return mp.CLEAN
+end
+local l_0_2 = headerpage[1]
+if l_0_2 ~= 49 and l_0_2 ~= 51 then
+  return mp.CLEAN
+end
+if headerpage[35] ~= 13 and headerpage[36] ~= 10 then
+  return mp.CLEAN
+end
+if l_0_1:find("recover_file", 1, true) ~= nil then
+  return mp.INFECTED
+end
+if l_0_1:find("recovery_file", 1, true) ~= nil then
+  return mp.INFECTED
+end
+if l_0_1:find("restore_file", 1, true) ~= nil then
+  return mp.INFECTED
+end
+if l_0_1:find("how_recover", 1, true) ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

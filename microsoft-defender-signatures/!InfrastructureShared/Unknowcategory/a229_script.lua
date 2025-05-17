@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 81920 and (mp.getfilesize)() < 83200 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+if (l_0_0 == nil and l_0_0:len() < 12) or l_0_1 == nil then
   return mp.CLEAN
 end
+if not l_0_1:find(">word/", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:sub(-4) == ".xml" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

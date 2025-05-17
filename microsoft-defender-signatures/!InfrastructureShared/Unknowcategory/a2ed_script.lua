@@ -3,19 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(pevars.sigaddr - 11, 11)
-if (mp.readu_u32)(l_0_0, 2) ~= l_0_1 then
+if peattributes.ismsil ~= true then
   return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u32)(l_0_0, 8)
-l_0_0 = (pe.mmap_va)(l_0_2, 4)
-local l_0_3 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
-if l_0_3 ~= 1269389306 then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a")
-return mp.INFECTED
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0.OriginalFilename ~= nil and (l_0_0.OriginalFilename):lower() == "sync.exe" and l_0_0.InternalName ~= nil and (l_0_0.InternalName):lower() == "sync.exe" and l_0_0.ProductVersion ~= nil and (l_0_0.ProductVersion):lower() == "0.0.0.0" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

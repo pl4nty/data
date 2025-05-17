@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
-return mp.INFECTED
+if peattributes.isdll and (mp.getfilesize)() < 200000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

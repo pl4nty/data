@@ -3,22 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[6]).utf8p2
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 then
-    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    if l_0_1 ~= nil then
-      for l_0_5,l_0_6 in ipairs(l_0_1) do
-        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-        ;
-        (bm.add_related_file)(l_0_6)
-      end
-    end
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
   end
 end
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+  if (this_sigattrlog[2]).matched then
+    local l_0_6 = (this_sigattrlog[2]).p1
+    if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") then
+      return mp.INFECTED
+    end
+  end
+  return mp.LOWFI
 end
 

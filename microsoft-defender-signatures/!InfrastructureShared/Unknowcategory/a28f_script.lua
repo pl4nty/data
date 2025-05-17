@@ -3,24 +3,12 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R1 in 'AssignReg'
-
-local l_0_1 = nil
-local l_0_0 = nil
--- DECOMPILER ERROR at PC28: Overwrote pending register: R2 in 'AssignReg'
-
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_2, l_0_3 = nil
-  end
-  if not (this_sigattrlog[3]).matched or l_0_0 == nil then
-    return mp.CLEAN
-  end
-  if l_0_0 == "" then
-    return mp.CLEAN
-  end
-  if l_0_0 == l_0_1 and l_0_0 == (string.match)((this_sigattrlog[3]).utf8p1, "\\(%l+)%.exe") then
-    return mp.INFECTED
+  if peattributes.isdll then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 5447680 and l_0_0 < 6164480 and (pe.query_import)(pe.IMPORT_STATIC, 3164448353) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2744197095) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2717511079) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 537135066) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3293213921) ~= 0 then
+      return mp.INFECTED
+    end
   end
   return mp.CLEAN
 end

@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.ismsil == true and pehdr.AddressOfEntryPoint ~= 0 and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 100 then
   return mp.CLEAN
 end
+;
+(mp.readprotection)(false)
+local l_0_1 = tostring((mp.readfile)(0, 100))
+if (string.find)(l_0_1, "\\rt[^f]") ~= nil or (string.find)(l_0_1, "\\rtf[^1]") ~= nil or (string.find)(l_0_1, "\\rtf1[^\\]") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

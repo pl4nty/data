@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.isexe == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.INFECTED
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.INFECTED
+end
+;
+(mp.set_mpattribute)("SLF:Win64/Shelcorid.C")
+return mp.LOWFI
 

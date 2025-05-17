@@ -3,15 +3,19 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
-    ;
-    (mp.ReportLowfi)(l_0_0, 694214086)
-    ;
-    (bm.add_related_file)(l_0_0)
-    return mp.INFECTED
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
   end
-  return mp.CLEAN
+  if (this_sigattrlog[2]).matched then
+    local l_0_3 = nil
+    if (string.lower)((string.sub)((this_sigattrlog[2]).utf8p1, -1)) ~= "\\" or (string.lower)((string.sub)((this_sigattrlog[2]).utf8p1, -1)) ~= "/" then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 

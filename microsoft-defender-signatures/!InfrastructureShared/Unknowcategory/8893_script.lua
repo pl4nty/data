@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 111 and mp.HSTR_WEIGHT % 100 >= 11 and mp.HSTR_WEIGHT % 10 >= 1 then
-  if pehdr.Machine == 34404 then
-    (mp.changedetectionname)(805306476)
+do
+  if peattributes.ismsil and (mp.get_mpattribute)("pea_isdll") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.LOWFI
 

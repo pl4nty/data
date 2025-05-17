@@ -3,89 +3,133 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_ScanSuweezy = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = false
-  local l_1_2 = nil
-  local l_1_3 = (sysio.RegOpenKey)(l_1_0)
-  if l_1_3 then
-    local l_1_4 = (sysio.RegEnumValues)(l_1_3)
-    for l_1_8,l_1_9 in pairs(l_1_4) do
-      local l_1_10 = (string.lower)(l_1_9)
-      if l_1_10:find("^.:\\users\\ms.default\\") or l_1_10:find("^.:\\documents and settings\\ms.default\\") or l_1_10:find("^.:\\users\\msuser.default\\") or l_1_10:find("^.:\\documents and settings\\msuser.default\\") or l_1_10:find("^.:\\users\\soeasyhelper\\") or l_1_10:find("^.:\\users\\undp\\") or l_1_10:find("^.:\\documents and settings\\undp\\") or l_1_10:find("^.:\\program files\\undp\\") or l_1_10:find("^.:\\program files (x86)\\undp\\") or l_1_10:find("^.:\\users\\udpdp\\") or l_1_10:find("^.:\\documents and settings\\udpdp\\") or l_1_10:find("^.:\\program files\\udpdp\\") or l_1_10:find("^.:\\program files (x86)\\udpdp\\") or l_1_10:find("^.:\\program files\\ms.default\\") or l_1_10:find("^.:\\program files\\msuser.default\\") or l_1_10:find("^.:\\program files (x86)\\ms.default\\") or l_1_10:find("^.:\\program files (x86)\\msuser.default\\") then
-        (MpDetection.ReportResource)("regkeyvalue", l_1_0 .. "\\\\" .. l_1_9, 805306490, false)
-      end
-      if (string.len)(l_1_9) > 1 then
-        (MpDetection.ScanResource)("regkeyvalue://" .. l_1_0 .. "\\\\" .. l_1_9)
-      end
-      if not l_1_1 and (string.sub)(l_1_10, -1) == "\\" and (string.sub)(l_1_10, -2) ~= ":\\" then
-        l_1_1 = true
-        l_1_2 = l_1_9
-      end
-    end
-    if l_1_1 then
-      for l_1_14,l_1_15 in pairs(l_1_4) do
-        local l_1_16 = (string.lower)(l_1_15)
-        if l_1_16 == (string.lower)((string.sub)(l_1_2, 1, 1)) .. ":\\" then
-          do
-            do
-              (MpDetection.ReportResource)("regkeyvalue", l_1_0 .. "\\\\" .. l_1_2, 805306490, false)
-              do break end
-              -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out DO_STMT
-
-              -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out IF_STMT
-
+local l_0_0 = (mp.GetCertificateInfo)()
+if l_0_0 == nil or #l_0_0 == 0 then
+  return mp.CLEAN
+end
+for l_0_4,l_0_5 in ipairs(l_0_0) do
+  if l_0_5.AuthenticodeContentType ~= "PE" then
+    return mp.CLEAN
+  end
+  local l_0_6 = l_0_5.Certificates
+  if l_0_6 ~= nil then
+    for l_0_10,l_0_11 in ipairs(l_0_6) do
+      local l_0_12 = l_0_11.Subject
+      if l_0_12 ~= nil and l_0_12.Organization ~= nil and l_0_12.CommonName then
+        local l_0_13 = {}
+        l_0_13["Yuanyuan Mei"] = true
+        l_0_13["Tianjing Cheng"] = true
+        l_0_13["Ding Ruan"] = true
+        l_0_13["Xin Zhou"] = true
+        l_0_13["Yu Bao"] = true
+        l_0_13["Yuanyuan Zhang"] = true
+        l_0_13["Yupeng Zhang"] = true
+        l_0_13["Chao Wei"] = true
+        l_0_13["Beijing Caiyunshidai Technology Co., Ltd."] = true
+        l_0_13["BIG JOURNEY TECHNOLOGY LIMITED"] = true
+        l_0_13["VANKY TECHNOLOGY LIMITED"] = true
+        local l_0_14 = {}
+        l_0_14["Beijing Caiyunshidai Technology Co., Ltd."] = true
+        l_0_14["BIG JOURNEY TECHNOLOGY LIMITED"] = true
+        l_0_14["VANKY TECHNOLOGY LIMITED"] = true
+        local l_0_15 = {}
+        l_0_15["Wenchao Zhang"] = true
+        l_0_15["Junyan Li"] = true
+        l_0_15["Skytouch Technology Co., Limited"] = true
+        l_0_15["Beijing Xingyunwang Technology Co., Ltd"] = true
+        l_0_15["Hefei Infinity Technology Co., Ltd."] = true
+        l_0_15["Shanghai Yuntong Technology Co., Ltd."] = true
+        l_0_15["Xiaodong Wang"] = true
+        l_0_15["Jia Lu"] = true
+        l_0_15["Peng Zhang"] = true
+        l_0_15["Thinknice Co. Limited"] = true
+        local l_0_16 = {}
+        l_0_16["Skytouch Technology Co., Limited"] = true
+        l_0_16["Beijing Xingyunwang Technology Co., Ltd"] = true
+        l_0_16["Hefei Infinity Technology Co., Ltd."] = true
+        l_0_16["Shanghai Yuntong Technology Co., Ltd."] = true
+        l_0_16["Thinknice Co. Limited"] = true
+        local l_0_17 = {}
+        l_0_17["Nayun Online Network Technology (Shenzhen) Co., Ltd."] = true
+        local l_0_18 = {}
+        l_0_18["Jinnan Wu"] = true
+        l_0_18["Yang Liu"] = true
+        l_0_18["Chencheng Cai"] = true
+        l_0_18["Yanling Sun"] = true
+        l_0_18["Jianfei Zhu"] = true
+        l_0_18["Dening Hu"] = true
+        l_0_18["Nayun Online Network Technology (Shenzhen) Co., Ltd."] = true
+        l_0_18["Yuesong Pu"] = true
+        local l_0_19 = {}
+        l_0_19["EVANGEL TECHNOLOGY(HK) LIMITED"] = true
+        local l_0_20 = {}
+        l_0_20["Weiwei He"] = true
+        l_0_20["EVANGEL TECHNOLOGY(HK) LIMITED"] = true
+        local l_0_21 = {}
+        l_0_21["Sice Xing"] = true
+        l_0_21["Wei Liu"] = true
+        l_0_21["Shan Feng"] = true
+        l_0_21["Shulan Hou"] = true
+        l_0_21["Fuyuan Zhou"] = true
+        l_0_21["Luhong Han"] = true
+        l_0_21["Yongli Zhang"] = true
+        l_0_21["Jiang Liu"] = true
+        l_0_21["Yongli Li"] = true
+        l_0_21["Sivi Technology Limited"] = true
+        l_0_21["Zhiming Yuan"] = true
+        local l_0_22 = {}
+        l_0_22["Sivi Technology Limited"] = true
+        local l_0_23 = {}
+        l_0_23["Zhongju Wu"] = true
+        l_0_23["Houtao Zhou"] = true
+        local l_0_24 = (mp.utf16to8)(l_0_12.Organization)
+        local l_0_25 = (mp.utf16to8)(l_0_12.CommonName)
+        if l_0_24 == "No Organization Affiliation" then
+          if l_0_13[l_0_25] then
+            (mp.set_mpattribute)("Lua:ElexCertSasquor.A")
+          else
+            if l_0_15[l_0_25] then
+              (mp.set_mpattribute)("Lua:ElexCertSupTab.A")
+            else
+              if l_0_18[l_0_25] then
+                (mp.set_mpattribute)("Lua:ElexCertXadupi.A")
+              else
+                if l_0_21[l_0_25] then
+                  (mp.set_mpattribute)("Lua:ElexCertGhokswa.A")
+                else
+                  if l_0_23[l_0_25] then
+                    (mp.set_mpattribute)("Lua:ElexCertSuweezy.A")
+                  else
+                    if l_0_20[l_0_25] then
+                      (mp.set_mpattribute)("Lua:ElexCertChuckenit.A")
+                    end
+                  end
+                end
+              end
             end
+          end
+        else
+          if l_0_14[l_0_24] and l_0_13[l_0_25] then
+            (mp.set_mpattribute)("Lua:ElexCertSasquor.A")
           end
         end
       end
-    end
-  end
-end
-
-SuweezyReportExclusionLatents = function(l_2_0)
-  -- function num : 0_1
-  local l_2_1 = "HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths"
-  local l_2_2 = (sysio.RegOpenKey)(l_2_1)
-  if l_2_2 then
-    local l_2_3 = (sysio.RegEnumValues)(l_2_2)
-    for l_2_7,l_2_8 in pairs(l_2_3) do
-      if (string.sub)(l_2_8, -1) == "\\" then
-        (MpDetection.ReportResource)("regkeyvalue", l_2_1 .. "\\\\" .. l_2_8, l_2_0, false)
+      if l_0_16[l_0_24] and l_0_15[l_0_25] then
+        (mp.set_mpattribute)("Lua:ElexCertSupTab.A")
+      end
+      if l_0_19[l_0_24] and l_0_20[l_0_25] then
+        (mp.set_mpattribute)("Lua:ElexCertChuckenit.A")
+      end
+      if l_0_22[l_0_24] and l_0_21[l_0_25] then
+        (mp.set_mpattribute)("Lua:ElexCertGhokswa.A")
+      end
+      if l_0_17[l_0_24] and l_0_18[l_0_25] then
+        (mp.set_mpattribute)("Lua:ElexCertXadupi.A")
       end
     end
   end
-  do
-    l_2_3 = "HKLM\\SOFTWARE\\Microsoft\\Microsoft Antimalware\\Exclusions\\Paths"
-    local l_2_9 = nil
-    l_2_9 = sysio
-    l_2_9 = l_2_9.RegOpenKey
-    l_2_9 = l_2_9(l_2_3)
-    local l_2_10 = nil
-    if l_2_9 then
-      l_2_10 = sysio
-      l_2_10 = l_2_10.RegEnumValues
-      l_2_10 = l_2_10(l_2_9)
-      local l_2_11 = nil
-      l_2_11 = pairs
-      l_2_11 = l_2_11(l_2_10)
-      for l_2_15,l_2_16 in l_2_11 do
-        local l_2_16 = nil
-        l_2_16 = string
-        l_2_16 = l_2_16.sub
-        l_2_16 = l_2_16(l_2_15, -1)
-        if l_2_16 == "\\" then
-          l_2_16 = MpDetection
-          l_2_16 = l_2_16.ReportResource
-          l_2_16("regkeyvalue", l_2_3 .. "\\\\" .. l_2_15, l_2_0, false)
-        end
-      end
-      -- DECOMPILER ERROR at PC68: Confused about usage of register R6 for local variables in 'ReleaseLocals'
-
-    end
-  end
 end
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC222: Confused about usage of register R1 for local variables in 'ReleaseLocals'
 
 

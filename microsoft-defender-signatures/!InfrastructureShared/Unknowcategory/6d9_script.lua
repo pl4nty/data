@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2000 then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("Lua:RData.GetAPIs")
 return mp.CLEAN
 

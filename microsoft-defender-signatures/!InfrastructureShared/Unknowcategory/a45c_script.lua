@@ -3,19 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if l_0_0 then
-  if not (string.find)(l_0_0, "^c:\\") then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\game", 1, true) then
-    return mp.CLEAN
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if (string.find)(l_0_0, "/u ", 1, true) and (string.find)(l_0_0, "/i:", 1, true) then
+    local l_0_1 = nil
+    if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+      l_0_1 = (this_sigattrlog[1]).utf8p2
+    end
+    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+    for l_0_6,l_0_7 in ipairs(l_0_2) do
+      l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+      ;
+      (bm.add_threat_file)(l_0_7)
+    end
+    return mp.INFECTED
   end
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_1.ppid, "M")
-;
-(bm.add_action)("SmsAsyncScanEvent", 1000)
-return mp.INFECTED
+do
+  return mp.CLEAN
+end
 

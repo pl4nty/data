@@ -3,44 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if (MpCommon.QueryPersistContext)(l_0_0, "RunsDestructiveCMDsParentBlock") then
-  if (mp.IsHipsRuleEnabled)("c1db55ab-c21a-4637-bb3f-a12568109d35") == true then
-    return mp.INFECTED
-  else
-    ;
-    (mp.ReportLowfi)(l_0_0, 3371538283)
-    return mp.CLEAN
-  end
-end
-if not (MpCommon.QueryPersistContext)(l_0_0, "RunsDestructiveCMDsParent") then
-  return mp.CLEAN
-end
-local l_0_1 = -1
-local l_0_2 = -1
-local l_0_3 = (MpCommon.GetPersistContext)((string.lower)(l_0_0))
-if l_0_3 ~= nil then
-  for l_0_7,l_0_8 in ipairs(l_0_3) do
-    local l_0_9 = tonumber((string.match)(l_0_8, "^Age:([0-9]+)$"))
-    if l_0_9 ~= nil and l_0_1 < l_0_9 then
-      l_0_1 = l_0_9
-    end
-    local l_0_10 = tonumber((string.match)(l_0_8, "^Prevalence:([0-9]+)$"))
-    if l_0_10 ~= nil and l_0_2 < l_0_10 then
-      l_0_2 = l_0_10
-    end
-  end
-end
-do
-  if l_0_1 > -1 and l_0_1 <= 1 and l_0_2 > -1 and l_0_2 <= 100 then
-    if (mp.IsHipsRuleEnabled)("c1db55ab-c21a-4637-bb3f-a12568109d35") == true then
+if peattributes.epinfirstsect and peattributes.entrybyte55 and not peattributes.epscn_eqsizes and (pesecs[pehdr.NumberOfSections]).Name == ".rsrc" then
+  if pehdr.NumberOfSections == 8 then
+    if pehdr.SizeOfImage >= 196608 and pehdr.SizeOfImage <= 327680 then
       return mp.INFECTED
-    else
-      ;
-      (mp.ReportLowfi)(l_0_0, 3371538283)
-      return mp.CLEAN
+    end
+    if pehdr.SizeOfImage >= 1310720 and pehdr.SizeOfImage <= 1769472 then
+      return mp.INFECTED
     end
   end
-  return mp.CLEAN
+  if pehdr.NumberOfSections == 6 then
+    if pehdr.SizeOfImage >= 1048576 and pehdr.SizeOfImage <= 1310720 then
+      return mp.INFECTED
+    end
+    if pehdr.SizeOfImage >= 131072 and pehdr.SizeOfImage <= 167936 then
+      return mp.INFECTED
+    end
+    if pehdr.SizeOfImage >= 217088 and pehdr.SizeOfImage <= 282624 then
+      return mp.INFECTED
+    end
+    if pehdr.SizeOfImage >= 466944 and pehdr.SizeOfImage <= 557056 then
+      return mp.INFECTED
+    end
+    if pehdr.SizeOfImage >= 749568 and pehdr.SizeOfImage <= 946176 then
+      return mp.INFECTED
+    end
+  end
+  if pehdr.NumberOfSections == 7 and pehdr.SizeOfImage >= 217088 and pehdr.SizeOfImage <= 589824 then
+    return mp.INFECTED
+  end
 end
+return mp.CLEAN
 

@@ -3,22 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 184320 then
+if peattributes.isdll or peattributes.isdamaged then
   return mp.CLEAN
 end
-if (mp.bitor)((mp.readu_u32)(headerpage, 1), 538976288) ~= 1667594341 then
-  return mp.CLEAN
-end
-if (mp.bitor)((mp.readu_u32)(headerpage, 5), 538976288) ~= 677737589 then
-  return mp.CLEAN
-end
-local l_0_0 = tostring(headerpage)
-if l_0_0:match("^[eE][xX][eE][cC][uU][tT][eE]%([cC][hH][rR]%(") ~= nil then
-  return mp.INFECTED
-else
-  if l_0_0:match("^[eE][xX][eE][cC][uU][tT][eE][gG][lL][oO][bB][aA][lL]%([cC][hH][rR]%(") ~= nil then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN and (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) == true then
+  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_ID)
+  if l_0_0 == 4 then
+    local l_0_1 = ((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)):lower()
+    if l_0_1 == "cmd.exe" then
+      (mp.set_mpattribute)("TEL:SystemLaunchCmd")
+    end
     return mp.INFECTED
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

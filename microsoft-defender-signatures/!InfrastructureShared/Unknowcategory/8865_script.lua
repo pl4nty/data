@@ -3,10 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 6, 1)
-;
-(pe.set_regval)(pe.REG_EAX, (string.byte)(l_0_0, 1))
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "êêêê\144")
-return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[5]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
+  end
+  if (this_sigattrlog[6]).matched then
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (this_sigattrlog[6]).utf8p2 == nil or (string.len)((this_sigattrlog[6]).utf8p2) == 0 then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
+  end
+end
 

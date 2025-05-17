@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 2, 4)
-local l_0_1 = (string.byte)(l_0_0, 1) + (string.byte)(l_0_0, 2) * 256 + (string.byte)(l_0_0, 3) * 65536 + (string.byte)(l_0_0, 4) * 16777216
-if (pe.mmap_va)(l_0_1, 7) == "%x.exe\000" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
+;
+(pe.mmap_patch_va)((mp.bitand)((pe.get_regval)(pe.REG_EBP) + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 32, 4), 1), 4294967295), "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000")
+return mp.INFECTED
 

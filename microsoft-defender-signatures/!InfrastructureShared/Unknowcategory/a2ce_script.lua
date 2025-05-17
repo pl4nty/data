@@ -3,18 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)(tostring(headerpage))
-local l_0_1 = l_0_0:match("==(%w+)msscriptcontrol.scriptcontrol")
-local l_0_2 = (mp.GetBruteMatchData)()
-local l_0_3 = l_0_2.match_offset + 1
-local l_0_4 = 95
-local l_0_5 = ""
-if l_0_2.is_header then
-  l_0_5 = l_0_0:sub(l_0_3, l_0_3 + l_0_4)
-else
-  l_0_5 = (string.lower)((tostring(footerpage)):sub(l_0_3, l_0_3 + l_0_4))
-end
-if l_0_1 ~= nil and l_0_5:match(l_0_1) then
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 2, 4), 1), 4), 1)
+if (pe.get_api_id)(l_0_0) == 3164325074 then
+  (pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr + 12, 16), "t", 1, true) + 11, "\235")
   return mp.INFECTED
 end
 return mp.CLEAN

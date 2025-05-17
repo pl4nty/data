@@ -3,31 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC39 = (mp.ContextualExpandEnvironmentVariables)(R6_PC39)
-      R6_PC39 = (string.lower)(R6_PC39)
-      if (string.find)(R6_PC39, "control.exe$") == nil and (sysio.IsFileExists)(R6_PC39) and (string.find)(R6_PC39, "\\windows\\.*%.cpl$") == nil and (string.find)(R6_PC39, "\\windows\\.*%.dll$") == nil then
-        (bm.add_related_file)(R6_PC39)
-        return mp.INFECTED
-      end
-    end
-  end
-  do
+local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1)
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 and l_0_1.integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.find)(l_0_0, "\\appdata\\local\\packages", 1, true) then
     return mp.CLEAN
   end
+  local l_0_2 = (string.lower)((bm.get_imagepath)())
+  if not (string.find)(l_0_2, "packages\\canonicalgrouplimited.ubuntu", 1, true) and not (string.find)(l_0_2, "packages\\thedebianproject.debiangnulinux", 1, true) then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
 end
 

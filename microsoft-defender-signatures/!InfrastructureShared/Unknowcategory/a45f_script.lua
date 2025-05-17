@@ -3,30 +3,9 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = (string.lower)((this_sigattrlog[3]).utf8p2)
-    else
-    end
-    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC61: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC70: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (not (this_sigattrlog[5]).matched or (string.lower)((this_sigattrlog[5]).utf8p2) ~= nil) and (string.len)((string.lower)((this_sigattrlog[5]).utf8p2)) > 4 and (string.find)((string.lower)((this_sigattrlog[5]).utf8p2), "administrators", 1, true) and (string.find)((string.lower)((this_sigattrlog[5]).utf8p2), "/add", 1, true) then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\chrome\\application\\chrome.exe", 1, true) or (string.find)(l_0_0, "\\microsoftedge", 1, true) or (string.find)(l_0_0, "windows\\system32\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\sophos\\", 1, true) or (string.find)(l_0_0, "\\application\\browser.exe", 1, true)) then
+  return mp.CLEAN
 end
+return mp.INFECTED
 

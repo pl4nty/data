@@ -3,28 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and not peattributes.no_exports then
-  local l_0_0 = {}
-  l_0_0["rsasec.dll"] = true
-  l_0_0["secctp.dll"] = true
-  l_0_0["module_ls.dll"] = true
-  l_0_0["deploy.dll"] = true
-  l_0_0["deplay.dll"] = true
-  l_0_0["jpicom.dll"] = true
-  l_0_0["nbdcom.dll"] = true
-  local l_0_1 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))
-  if l_0_1 and l_0_0[l_0_1] then
-    return mp.INFECTED
-  end
-  local l_0_2 = (pe.get_versioninfo)()
-  if l_0_2 then
-    local l_0_3 = l_0_2.OriginalFilename
-    if l_0_3 and l_0_0[(string.lower)(l_0_3)] then
-      return mp.INFECTED
-    end
-  end
-end
-do
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1500000 or l_0_0 < 8000 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("system32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("syswow64", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

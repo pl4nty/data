@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(bm.get_connection_string)
-if l_0_0 and l_0_1:match("DestPort=4242;") then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.SUSPICIOUS
 end
-return mp.INFECTED
+;
+(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOV")
+return mp.CLEAN
 

@@ -3,9 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -13))
-if (string.find)(l_0_0, "\\excel.exe", 1, true) or (string.find)(l_0_0, "\\powerpnt.exe", 1, true) or (string.find)(l_0_0, "\\winword.exe", 1, true) then
-  return mp.INFECTED
+if not (mp.istriggercloudyfriendlyscan)() then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (mp.get_parent_filehandle)()
+if not (mp.is_handle_nil)(l_0_0) then
+  return mp.CLEAN
+end
+if not (mp.isfriendlyscan)() then
+  return mp.CLEAN
+end
+if peattributes.msil_ngenimage then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

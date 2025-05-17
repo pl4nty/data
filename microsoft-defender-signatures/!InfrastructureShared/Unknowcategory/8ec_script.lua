@@ -3,17 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-  if l_0_1 ~= nil and l_0_1:len() > 7 and ((string.sub)(l_0_1, -8) == "cscc.dat" or (string.sub)(l_0_1, -10) == "infpub.dat") then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if l_0_2 ~= nil and l_0_2:len() > 9 and l_0_2:find("\\windows\\", 1, true) ~= nil then
-      return mp.INFECTED
-    end
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 256 or l_0_0 > 1048576 then
   return mp.CLEAN
 end
+if (mp.readu_u32)(headerpage, 1) ~= 875721283 or (mp.readu_u32)(headerpage, 5) ~= 2 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readu_u32)(headerpage, 9)
+if l_0_1 == 0 then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.readu_u32)(headerpage, 13)
+if l_0_2 == 0 then
+  return mp.CLEAN
+end
+local l_0_3 = l_0_1 + l_0_2 + 17
+if mp.HEADERPAGE_SZ <= l_0_3 then
+  return mp.CLEAN
+end
+if (mp.readu_u16)(headerpage, l_0_3) ~= 19280 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+;
+(mp.vfo_add_buffer)((mp.readfile)(l_0_3 - 1, l_0_0 - l_0_3 + 1), "[ChromeCrxPackage]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.CLEAN
 

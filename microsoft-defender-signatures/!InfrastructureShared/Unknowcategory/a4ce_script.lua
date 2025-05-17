@@ -3,19 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched and (this_sigattrlog[2]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  if l_0_0 ~= nil and l_0_1 ~= nil and l_0_2 ~= nil then
-    local l_0_3 = (string.match)(l_0_1, ":\\([^\\]+)\\csrss.exe")
-    local l_0_4 = (string.match)(l_0_0, ":\\([^\\]+)\\csrss.exe")
-    local l_0_5 = (string.match)(l_0_2, ":\\([^\\]+)\\desktop.ini")
-    if l_0_3 == l_0_4 and l_0_3 == l_0_5 and l_0_3 ~= nil then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_0), 3247936890)
-      return mp.INFECTED
-    end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 20480 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 16)
+local l_0_2 = (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true)
+if l_0_2 then
+  (mp.set_mpattribute)("BM_SerializedObj.A")
+  local l_0_3 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+  if (string.find)(l_0_3, "\\local\\microsoft\\event viewer\\", 1, true) then
+    (mp.set_mpattribute)("Lua:FileInsideEventviewFolder")
   end
+  return mp.INFECTED
 end
 do
   return mp.CLEAN

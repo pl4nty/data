@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
-  return mp.CLEAN
+if peattributes.isdll == true and (pesecs[2]).Name == ".rodata" and (pesecs[2]).Characteristics == 1610612768 then
+  return mp.INFECTED
 end
-if (mp.GetSMSProcArchitecture)() ~= mp.SMS_PROC_ARCH_X64 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

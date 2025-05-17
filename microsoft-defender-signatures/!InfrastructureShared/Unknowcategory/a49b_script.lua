@@ -3,24 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  if (MpCommon.GetPersistContextCountNoPath)("Lua:ExecPatpoopy.A") > 0 then
-    local l_0_1 = (MpCommon.GetPersistContextNoPath)("Lua:ExecPatpoopy.A")
-    if l_0_1 then
-      for l_0_5,l_0_6 in ipairs(l_0_1) do
-        local l_0_7 = (string.match)(l_0_6, "\\([^\\]+)$")
-        if (string.find)(l_0_0, l_0_7, 1, true) then
-          (bm.add_action)("EmsScan", 3000)
-          return mp.INFECTED
-        end
-      end
-    end
-  end
+if peattributes.no_relocs ~= true then
+  return mp.CLEAN
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
 end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 2 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

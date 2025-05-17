@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-  local l_0_0 = (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 18, 4), 1), 4), 1))
-  local l_0_1 = (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 34, 4), 1), 4), 1))
-  if l_0_0 == 1467596470 and (l_0_1 == 3909456120 or l_0_1 == 4231370131) then
-    return mp.INFECTED
-  end
+if peattributes.isexe and peattributes.epinfirstsect and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections < 6 and (pesecs[pehdr.NumberOfSections]).Name == ".data0" and (pesecs[pevars.epsec]).SizeOfRawData == 512 and (pe.mmap_rva)((pesecs[pehdr.NumberOfSections]).VirtualAddress + 4, 2) == "MZ" then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

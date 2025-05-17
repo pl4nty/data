@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 3 then
+if peattributes.executes_from_dynamic_memory and peattributes.x86_image and peattributes.hasappendeddata then
   return mp.INFECTED
 end
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
 return mp.CLEAN
 

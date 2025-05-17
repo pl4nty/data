@@ -3,32 +3,28 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC17: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 ~= nil and (this_sigattrlog[6]).utf8p1 ~= "" then
-    local l_0_0, l_0_2, l_0_3, l_0_4 = nil, nil
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+  else
   end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
   do
-    if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 ~= nil and (this_sigattrlog[7]).utf8p1 ~= "" then
-      local l_0_1 = nil
+    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
+      local l_0_1, l_0_2, l_0_3, l_0_4 = (this_sigattrlog[2]).utf8p2
+    else
     end
-    -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC40: Confused about usage of register: R1 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC46: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC44: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC51: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_1 ~= nil and (this_sigattrlog[7]).utf8p1 ~= nil and (l_0_1 == (this_sigattrlog[7]).utf8p1 or (string.match)(l_0_1, "^127.") or (string.match)(l_0_1, "^::1*") or (string.match)(l_0_1, "^0.0.0.0")) then
-      return mp.CLEAN
+    if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 ~= nil) and ((string.match)((this_sigattrlog[4]).utf8p2, "-[is] [^\\]+\\ ") or (string.match)((this_sigattrlog[4]).utf8p2, "-[is] [^\\]+\\$")) then
+      return mp.INFECTED
     end
-    return mp.INFECTED
+    return mp.CLEAN
   end
 end
 

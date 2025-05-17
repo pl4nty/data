@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 and (hstrlog[1]).matched then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 20480 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 16)
+local l_0_2 = (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true)
+if l_0_2 then
+  (mp.set_mpattribute)("BM_SerializedObj.A")
   return mp.INFECTED
 end
-;
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win64/Rovnix.C")
 return mp.CLEAN
 

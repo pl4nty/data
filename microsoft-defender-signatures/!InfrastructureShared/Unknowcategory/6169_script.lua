@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%->%(ZipSfx%)%->.+%.bat$") == nil then
-  return mp.CLEAN
+if pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

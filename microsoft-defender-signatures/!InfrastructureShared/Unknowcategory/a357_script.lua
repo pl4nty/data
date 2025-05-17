@@ -3,26 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pehdr.AddressOfEntryPoint + pehdr.ImageBase
-local l_0_1, l_0_2 = nil, nil
-if (hstrlog[1]).matched then
-  l_0_1 = 7
-  l_0_2 = (hstrlog[1]).VA
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R1 in 'AssignReg'
+
+if (this_sigattrlog[2]).matched then
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC13: Overwrote pending register: R3 in 'AssignReg'
+
+  local l_0_3 = nil
+  -- DECOMPILER ERROR at PC14: Overwrote pending register: R2 in 'AssignReg'
+
+  local l_0_2 = nil
+  -- DECOMPILER ERROR at PC23: Confused about usage of register: R3 in 'UnsetPending'
+
+  if l_0_2 ~= nil and nil ~= nil then
+    l_0_1 = (string.sub)(l_0_3, 1, nil - 1)
+  else
+    l_0_1 = l_0_3
+  end
+  if l_0_1 == nil or l_0_1 == "" or (sysio.IsFileExists)(l_0_1) == false then
+    return mp.CLEAN
+  end
+  if (string.find)(l_0_1, ".cpl", -4, true) then
+    (bm.add_related_file)(l_0_1)
+    return mp.INFECTED
+  end
 end
-if (hstrlog[2]).matched then
-  l_0_1 = 7
-  l_0_2 = (hstrlog[2]).VA
+do
+  return mp.CLEAN
 end
-if (hstrlog[3]).matched then
-  l_0_1 = 6
-  l_0_2 = (hstrlog[3]).VA
-end
-local l_0_3 = (pe.mmap_va)(l_0_2, 15)
-local l_0_4 = (mp.readu_u32)(l_0_3, l_0_1)
-local l_0_5 = l_0_2 + l_0_1 + 3 + l_0_4
-l_0_5 = (mp.bitand)(l_0_5, 4294967295)
-if l_0_5 == l_0_0 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

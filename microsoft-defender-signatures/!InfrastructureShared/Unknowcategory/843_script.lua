@@ -3,26 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)((string.sub)(l_0_0, -20))
-  if l_0_1 ~= "\\umworkerprocess.exe" then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  if (this_sigattrlog[1]).matched then
-    l_0_2 = (this_sigattrlog[1]).utf8p1
-  else
-    if (this_sigattrlog[2]).matched then
-      l_0_2 = (this_sigattrlog[2]).utf8p1
-    end
-  end
-  if l_0_2 ~= nil and (sysio.IsFileExists)(l_0_2) then
-    (bm.add_threat_file)(l_0_2)
-  end
-  return mp.INFECTED
-end
-do
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:len() < 24 or (string.sub)(l_0_0, -6) ~= "v2.exe" then
   return mp.CLEAN
 end
+local l_0_1 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_1:match("\\users\\[^\\]+\\documents\\$") or l_0_1:match("\\users\\[^\\]+\\my documents\\$") or l_0_1:match("\\documents and settings\\[^\\]+\\my documents\\$") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

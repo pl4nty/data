@@ -3,9 +3,39 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -12) == "\\outlook.exe" or (string.sub)(l_0_0, -8) == "\\olk.exe" or (string.sub)(l_0_0, -10) == "\\lsass.exe" or (string.sub)(l_0_0, -12) == "\\winword.exe" or (string.sub)(l_0_0, -10) == "\\excel.exe" or (string.sub)(l_0_0, -13) == "\\powerpnt.exe" or (string.sub)(l_0_0, -13) == "\\msaccess.exe" or (string.sub)(l_0_0, -12) == "\\onenote.exe" or (string.sub)(l_0_0, -10) == "\\visio.exe" or (string.sub)(l_0_0, -11) == "\\groove.exe" or (string.sub)(l_0_0, -13) == "\\onenotem.exe" or (string.sub)(l_0_0, -13) == "\\onedrive.exe" or (string.sub)(l_0_0, -9) == "\\lync.exe" or (string.sub)(l_0_0, -11) == "\\ucmapi.exe" or (string.sub)(l_0_0, -10) == "\\skype.exe" or (string.sub)(l_0_0, -10) == "\\teams.exe" or (string.sub)(l_0_0, -12) == "\\msteams.exe" or (string.sub)(l_0_0, -40) == "\\incidentmanagement.client.applaunch.exe" or (string.sub)(l_0_0, -17) == "\\osfinstaller.exe" or (string.sub)(l_0_0, -19) == "\\officehubwin32.exe" or (string.sub)(l_0_0, -17) == "\\lynchtmlconv.exe" or (string.sub)(l_0_0, -30) == "\\microsoft.skyperoomsystem.exe" then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 16777216 then
+  return mp.SUSPICIOUS
 end
-return mp.INFECTED
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(0, l_0_0)
+if (mp.readu_u16)(l_0_1, 19) == 20557 then
+  return mp.SUSPICIOUS
+else
+  ;
+  (mp.writeu_u16)(l_0_1, 19, 20557)
+end
+local l_0_2 = (pe.mmap_va)(pevars.sigaddr, 256)
+if (mp.readu_u16)(l_0_2, 52) == 53503 and (string.byte)(l_0_2, 68) == 116 then
+  (mp.writeu_u16)(l_0_1, (pe.foffset_va)(pevars.sigaddr) + 68, 37008)
+else
+  if (mp.readu_u16)(l_0_2, 56) == 53503 and (string.byte)(l_0_2, 74) == 116 then
+    (mp.writeu_u16)(l_0_1, (pe.foffset_va)(pevars.sigaddr) + 74, 37008)
+  else
+    if (mp.readu_u16)(l_0_2, 58) == 53503 and (string.byte)(l_0_2, 69) == 116 then
+      (mp.writeu_u16)(l_0_1, (pe.foffset_va)(pevars.sigaddr) + 69, 37008)
+    else
+      return mp.SUSPICIOUS
+    end
+  end
+end
+local l_0_3 = doshdr.e_lfanew + pehdr.SizeOfOptionalHeader + 61
+for l_0_7 = 1, pehdr.NumberOfSections do
+  (mp.writeu_u32)(l_0_1, l_0_3, (mp.bitor)((pesecs[l_0_7]).Characteristics, 2147483648))
+  l_0_3 = l_0_3 + 40
+end
+;
+(mp.vfo_add_buffer)(l_0_1, "[Obfuscator.ACT]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.SUSPICIOUS
 

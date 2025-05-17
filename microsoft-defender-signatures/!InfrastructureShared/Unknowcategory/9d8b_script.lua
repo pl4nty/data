@@ -3,21 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() > 1800000 and (mp.getfilesize)() < 4800000 then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
-end
-do
-  l_0_0 = pe
-  l_0_0 = l_0_0.get_versioninfo
-  l_0_0 = l_0_0()
-  if l_0_0 ~= nil then
-    return mp.CLEAN
-  end
+if mp.HSTR_WEIGHT == 3 then
   return mp.INFECTED
 end
+if peattributes.isdll and (mp.getfilesize)() < 100000 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT == 2 then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

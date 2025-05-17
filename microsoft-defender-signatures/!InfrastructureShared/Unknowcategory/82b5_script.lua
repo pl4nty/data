@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 5120 then
-  return mp.CLEAN
-end
-if (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)) == "cnqmutil.dll" then
+if mp.HSTR_WEIGHT >= 36 then
   return mp.INFECTED
+end
+if (mp.bitand)(mp.HSTR_WEIGHT, 15) >= 3 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_injector")
 end
 return mp.CLEAN
 

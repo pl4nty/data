@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if not l_0_0 then
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 then
   return mp.CLEAN
 end
-l_0_0 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-if not l_0_0 then
+if (hstrlog[4]).hitcount == 0 then
   return mp.CLEAN
 end
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  if l_0_5 and (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, false, false) then
-    (bm.add_related_file)(l_0_5)
-  end
+if (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 then
+  return mp.CLEAN
+end
+if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

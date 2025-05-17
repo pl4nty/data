@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 4 and pehdr.NumberOfSections < 16 and (pesecs[pehdr.NumberOfSections]).Name == ".idata" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 32768 and (pesecs[pehdr.NumberOfSections - 1]).Name == ".v-lizer" then
+if (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Ranbyus!obf") or (mp.get_mpattribute)("HSTR:Worm:Win32/Rebhip!encrsrc") or (mp.get_mpattribute)("HSTR:VirTool:Win32/VBInject.ADR") or (mp.get_mpattribute)("HSTR:VirTool:Win32/VBInject.ADS") then
   return mp.INFECTED
 end
 return mp.CLEAN

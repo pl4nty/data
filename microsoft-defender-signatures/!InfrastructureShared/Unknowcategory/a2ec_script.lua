@@ -3,19 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(pevars.sigaddr - 11, 11)
-if (mp.readu_u32)(l_0_0, 2) ~= l_0_1 then
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u32)(l_0_0, 8)
-l_0_0 = (pe.mmap_va)(l_0_2, 4)
-local l_0_3 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
-if l_0_3 ~= 1269389306 then
-  return mp.CLEAN
+if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil or (string.match)(l_0_0, "apps%-helper") ~= nil or (string.match)(l_0_0, "app%-helper") ~= nil then
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a")
-return mp.INFECTED
+return mp.CLEAN
 

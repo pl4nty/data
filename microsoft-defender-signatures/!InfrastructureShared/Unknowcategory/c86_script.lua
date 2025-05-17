@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Crossrider")
+(mp.set_mpattribute)("PUA:Block:CrossRider")
 return mp.INFECTED
 

@@ -3,18 +3,20 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
+if peattributes.isexe and pehdr.NumberOfSections >= 6 then
+  local l_0_0 = 0
+  local l_0_1 = 0
+  for l_0_5 = 2, pehdr.NumberOfSections do
+    l_0_0 = l_0_0 + (pesecs[l_0_5]).SizeOfRawData
+    if l_0_1 < (pesecs[l_0_5]).SizeOfRawData then
+      l_0_1 = (pesecs[l_0_5]).SizeOfRawData
+    end
+  end
+  if (l_0_0 - l_0_1) * 100 < l_0_1 * 15 then
+    return mp.INFECTED
+  end
+end
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2 = nil, nil
-  end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_3 = nil
-  if (string.find)(l_0_3, ":\\windows", 2, true) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), ":\\windows", 2, true) then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 589824 and l_0_0 < 786432 and ((mp.get_mpattribute)("TEL:Trojan:Win32/Qakbot.E!sl1") or (mp.get_mpattribute)("TEL:Trojan:Win32/Qakbot.E!sl2")) then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_HIGH)
+;
+(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 5000)
+return mp.INFECTED
 

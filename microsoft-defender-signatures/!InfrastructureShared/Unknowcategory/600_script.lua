@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsKnownFriendlyFile)((bm.get_imagepath)(), true, true) == true then
+if 3 * 10000000 < (bm.GetSignatureMatchDuration)() then
   return mp.CLEAN
 end
 return mp.INFECTED

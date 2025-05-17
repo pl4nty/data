@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).VirtualSize == 8192 and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3221225472) == 3221225472 and (mp.bitand)((pesecs[pehdr.NumberOfSections - 1]).Characteristics, 3221225472) == 3221225472 then
+if peattributes.isvbnative == true and peattributes.isexe == true and (mp.getfilesize)() < 1048000 then
   return mp.INFECTED
+else
+  if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true and (mp.getfilesize)() < 1048000 then
+    return mp.INFECTED
+  end
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 2000000 or l_0_0 < 4000 then
-  return mp.CLEAN
+if (hstrlog[1]).matched or (hstrlog[2]).matched then
+  if (hstrlog[1]).matched and (hstrlog[2]).matched then
+    return mp.CLEAN
+  end
+  if (hstrlog[3]).hitcount == 1 and (hstrlog[4]).hitcount == 1 then
+    if (mp.get_mpattribute)("PACKED_WITH:(ActiveMime)") or (mp.get_mpattribute)("PACKED_WITH:(Base64)") then
+      return mp.INFECTED
+    end
+    return mp.LOWFI
+  end
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()):find("program files", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

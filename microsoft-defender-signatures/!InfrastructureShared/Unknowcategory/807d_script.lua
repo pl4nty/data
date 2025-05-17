@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil then
-  return mp.CLEAN
+if (hstrlog[14]).hitcount >= 5 and pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
+  return mp.INFECTED
 end
-if (string.find)(l_0_0, "system32\\mrt.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

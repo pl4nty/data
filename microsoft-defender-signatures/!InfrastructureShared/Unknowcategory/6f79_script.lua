@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((mp.getfilename)()):lower()
-if (string.find)(l_0_0, ":\\users\\", 1, true) ~= nil then
-  return mp.INFECTED
+if (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.epatstartentrysect then
+  return mp.SUSPICIOUS
 end
-return mp.CLEAN
+return mp.LOWFI
 

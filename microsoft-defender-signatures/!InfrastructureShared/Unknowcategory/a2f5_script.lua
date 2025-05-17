@@ -3,23 +3,26 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC3: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
-if l_0_0 == nil then
+if pehdr.NumberOfSections ~= 4 then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC14: Overwrote pending register: R1 in 'AssignReg'
-
-local l_0_1 = nil
-if l_0_1 == nil then
+if ((pehdr.DataDirectory)[2]).RVA == 0 then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC24: Overwrote pending register: R2 in 'AssignReg'
-
-local l_0_2 = nil
-if l_0_2 ~= nil and ((string.find)(l_0_2, "wget", 1, true) or (string.find)(l_0_2, "powershell", 1, true) or (string.find)(l_0_2, "python", 1, true)) then
-  return mp.INFECTED
+if ((pehdr.DataDirectory)[2]).Size == 0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if ((pehdr.DataDirectory)[13]).RVA == 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[13]).Size == 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA ~= 36864 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).Size <= 65536 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

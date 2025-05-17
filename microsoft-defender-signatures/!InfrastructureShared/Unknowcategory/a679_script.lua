@@ -3,41 +3,40 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsHipsRuleEnabled)("c1db55ab-c21a-4637-bb3f-a12568109d35") ~= true then
+local l_0_2 = nil
+local l_0_0 = nil
+local l_0_1 = mp.CLEAN
+if not l_0_2 or not l_0_0 then
   return mp.CLEAN
 end
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 == nil then
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC24: Overwrote pending register: R1 in 'AssignReg'
+
+if (string.find)(l_0_0, ":\\windows\\servicing\\trustedinstaller.exe", 1, true) then
   return mp.CLEAN
 end
-if (mp.IsKnownFriendlyFile)((MpCommon.PathToWin32Path)(l_0_0), true, true) == true then
+if (string.find)(l_0_0, "%windir%\\servicing\\trustedinstaller.exe", 1, true) then
   return mp.CLEAN
 end
-if (MpCommon.QueryPersistContext)(l_0_0, "RansomExtensionParentBlock") then
-  return mp.INFECTED
-end
-if not (MpCommon.QueryPersistContext)(l_0_0, "RansomExtensionParent") then
-  return mp.CLEAN
-end
-local l_0_1 = -1
-local l_0_2 = -1
-local l_0_3 = (MpCommon.GetPersistContext)(l_0_0)
-if l_0_3 ~= nil then
+local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_2)
+if l_0_3 then
   for l_0_7,l_0_8 in ipairs(l_0_3) do
-    local l_0_9 = tonumber((string.match)(l_0_8, "^Age:([0-9]+)$"))
-    if l_0_9 ~= nil and l_0_1 < l_0_9 then
-      l_0_1 = l_0_9
-    end
-    local l_0_10 = tonumber((string.match)(l_0_8, "^Prevalence:([0-9]+)$"))
-    if l_0_10 ~= nil and l_0_2 < l_0_10 then
-      l_0_2 = l_0_10
+    if (string.len)(l_0_8) >= 3 then
+      if l_0_1 ~= mp.INFECTED and (string.find)(l_0_0, l_0_8, 1, true) then
+        l_0_1 = mp.INFECTED
+      else
+        if (sysio.IsFileExists)(l_0_8) and not (mp.IsKnownFriendlyFile)(l_0_8, false, false) then
+          (bm.add_related_file)(l_0_8)
+        end
+      end
     end
   end
 end
 do
-  if l_0_1 > -1 and l_0_1 <= 1 and l_0_2 > -1 and l_0_2 <= 100 then
-    return mp.INFECTED
+  if l_0_2 ~= mp.INFECTED then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

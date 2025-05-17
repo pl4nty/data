@@ -3,21 +3,33 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_NewmanScan = function()
-  -- function num : 0_0
-  (MpDetection.ScanResource)("specialfolder://recursive:file:%ExchangeInstallPath%\\FrontEnd\\HttpProxy\\owa\\auth")
-  ;
-  (MpDetection.ScanResource)("specialfolder://recursive:file:%ExchangeInstallPath%\\ClientAccess\\ecp")
-  ;
-  (MpDetection.ScanResource)("specialfolder://recursive:file:%ExchangeInstallPath%\\FrontEnd\\HttpProxy\\ecp\\auth")
-  ;
-  (MpDetection.ScanResource)("specialfolder://recursive:file:%ExchangeInstallPath%\\FrontEnd\\HttpProxy\\bin")
-  ;
-  (MpDetection.ScanResource)("specialfolder://recursive:file:%Windir%\\Microsoft.NET\\Framework64\\v4.0.30319\\Temporary ASP.NET Files\\")
-  ;
-  (MpDetection.ScanResource)("specialfolder://recursive:file:%SystemDrive%\\inetpub\\wwwroot")
-  ;
-  (MpDetection.ScanResource)("specialfolder://recursive:file:%ProgramData%\\COM")
+if (this_sigattrlog[2]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
+  l_0_0 = (string.gsub)(l_0_0, " ", "")
+  if (string.len)(l_0_0) < 200 then
+    return mp.CLEAN
+  end
+  if (string.len)(l_0_0) > 1024 then
+    return mp.INFECTED
+  end
+  if (string.find)(l_0_0, "powershell", 1, true) or (string.find)(l_0_0, "iex(", 1, true) or (string.find)(l_0_0, "join[regex]::matches", 1, true) or (string.find)(l_0_0, "::frombase64string", 1, true) then
+    return mp.INFECTED
+  end
+  local l_0_1 = 0
+  for l_0_5 in (string.gmatch)(l_0_0, "^") do
+    l_0_1 = l_0_1 + 1
+  end
+  for l_0_9 in (string.gmatch)(l_0_0, "\'.-\'%+") do
+    l_0_1 = l_0_1 + 1
+  end
+  for l_0_13 in (string.gmatch)(l_0_0, "{%d%d?}{%d%d?}") do
+    l_0_1 = l_0_1 + 1
+  end
+  if l_0_1 >= 10 then
+    return mp.INFECTED
+  end
 end
-
+do
+  return mp.CLEAN
+end
 

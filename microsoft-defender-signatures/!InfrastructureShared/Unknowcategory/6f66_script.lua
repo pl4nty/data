@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 49920 and l_0_0 > 49152 and (mp.get_mpattribute)("BM_MACHO64_FILE") then
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 3048000 then
   return mp.INFECTED
 end
 return mp.CLEAN

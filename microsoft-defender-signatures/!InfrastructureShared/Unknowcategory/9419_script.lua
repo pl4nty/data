@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 65, 32)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+(pe.set_peattribute)("hstr_exhaustive", true)
 ;
-(pe.mmap_patch_va)(l_0_1, "\b\000\000\000")
+(pe.reemulate)()
 ;
-(pe.set_regval)(pe.REG_ESI, l_0_1)
+(mp.set_mpattribute)("do_deep_rescan")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr, "ÎF")
-return mp.INFECTED
+(pe.set_peattribute)("disable_apicall_limit", true)
+if mp.HSTR_WEIGHT == 2 then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

@@ -3,39 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if peattributes.no_code ~= false then
+if peattributes.isdll == true and peattributes.hasexports == true and ((pehdr.DataDirectory)[1]).Size ~= 0 then
+  local l_0_0 = ((pehdr.DataDirectory)[1]).RVA
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)((pe.foffset_rva)(l_0_0), 36)
+  if (mp.readu_u32)(l_0_1, 21) == 2 and (mp.readu_u32)(l_0_1, 25) == 2 then
+    local l_0_2 = (mp.readu_u32)(l_0_1, 33)
+    l_0_1 = (pe.mmap_rva)(l_0_2, 4)
+    local l_0_3 = (mp.readu_u32)(l_0_1, 1)
+    if (pe.mmap_rva)(l_0_3, 19) == "RunDllEntry\000runDll\000" then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_1 = pehdr.SizeOfCode
-if l_0_1 == nil or l_0_1 <= 0 then
-  return mp.CLEAN
-end
-if peattributes.no_idata ~= false then
-  return mp.CLEAN
-end
-local l_0_2 = pehdr.SizeOfInitializedData
-if l_0_2 == nil or l_0_2 <= 0 then
-  return mp.CLEAN
-end
-if l_0_2 <= l_0_1 then
-  return mp.CLEAN
-end
-l_0_0 = tonumber(l_0_2 / l_0_1)
-;
-(mp.set_mpattributeex)("Lua:InitDataToCodeRatio", l_0_0)
-if peattributes.no_resources ~= false then
-  return mp.CLEAN
-end
-local l_0_3 = ((pehdr.DataDirectory)[3]).Size
-if l_0_3 == nil or l_0_3 <= 0 then
-  return mp.CLEAN
-end
-if l_0_3 <= l_0_1 then
-  return mp.CLEAN
-end
-l_0_0 = tonumber(l_0_3 / l_0_1)
-;
-(mp.set_mpattributeex)("Lua:RsrcDataToCodeRatio", l_0_0)
-return mp.CLEAN
 

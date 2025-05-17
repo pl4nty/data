@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_AMSI and peattributes.no_security == true then
+if peattributes.isexe == true and pehdr.NumberOfSections == 5 and (pesecs[5]).Name == ".extra" then
   return mp.INFECTED
 end
 return mp.CLEAN

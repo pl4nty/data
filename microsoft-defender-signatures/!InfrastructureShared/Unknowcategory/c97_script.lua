@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:CnDownloader")
+(mp.set_mpattribute)("PUA:Block:ShopHome:Bit")
 return mp.INFECTED
 

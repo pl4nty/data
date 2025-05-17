@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if Info.OSMajorVersion == 5 then
-  (Remediation.DefaultSpecialRegistry)("HKLM\\Software\\Classes\\CLSID\\{73E709EA-5D93-4B2E-BBB0-99B7938DA9E4}")
-  ;
-  (Remediation.DefaultSpecialRegistry)("HKCU\\Software\\Classes\\CLSID\\{73E709EA-5D93-4B2E-BBB0-99B7938DA9E4}")
-else
-  ;
-  (Remediation.DefaultSpecialRegistry)("HKLM\\Software\\Classes\\CLSID\\{AB8902B4-09CA-4bb6-B78D-A8F59079A8D5}")
-  ;
-  (Remediation.DefaultSpecialRegistry)("HKCU\\Software\\Classes\\CLSID\\{AB8902B4-09CA-4bb6-B78D-A8F59079A8D5}")
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if l_0_1 == "my.dat" then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_2:len() > 7 and (string.sub)(l_0_2, -5) == "\\temp" then
+      return mp.INFECTED
+    end
+  end
+end
+do
+  return mp.CLEAN
 end
 

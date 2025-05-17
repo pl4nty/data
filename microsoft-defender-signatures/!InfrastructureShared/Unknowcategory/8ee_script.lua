@@ -3,33 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "HKLM\\System\\CurrentControlSet\\Services"
-local l_0_1 = (sysio.RegOpenKey)(l_0_0)
-if not l_0_1 then
-  return nil
+if not (mp.get_mpattribute)("MpIsOfficeVbaAMSIScan") and not (mp.get_mpattribute)("MpIsVBScriptAMSIScan") and not (mp.get_mpattribute)("MpIsJScriptAMSIScan") and not (mp.get_mpattribute)("MpPowershellHasValidAmsiContentName") and not (mp.get_mpattribute)("MpIsXl4mAmsiScan") then
+  return mp.CLEAN
 end
-local l_0_2 = (sysio.RegEnumKeys)(l_0_1)
-if not l_0_2 then
-  return nil
+local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+if l_0_0 and (sysio.IsFileExists)(l_0_1) and not (mp.IsKnownFriendlyFile)(l_0_1, false, false) then
+  (mp.SetAmsiReportPath)(l_0_1)
+  ;
+  (mp.ReportLowfi)(l_0_1, 1649668719)
+  return mp.CLEAN
 end
-for l_0_6,l_0_7 in pairs(l_0_2) do
-  if l_0_7:match("^%d%d%d%d%d%d+") then
-    local l_0_8 = l_0_0 .. "\\" .. l_0_7
-    local l_0_9 = (sysio.RegOpenKey)(l_0_8)
-    if l_0_9 then
-      local l_0_10 = (sysio.GetRegValueAsString)(l_0_9, "Type")
-      if l_0_10 and l_0_10 == (string.char)(16) then
-        local l_0_11 = (sysio.GetRegValueAsString)(l_0_9, "ImagePath")
-        if l_0_11:match("^%%SystemRoot%%\\%d%d%d%d%d%d+.exe$") then
-          local l_0_12 = (sysio.ExpandFilePath)(l_0_11)
-          if (sysio.IsFileExists)(l_0_12) then
-            (Remediation.BtrDeleteFile)(l_0_12)
-            ;
-            (Remediation.BtrDeleteRegKey)(l_0_8)
-          end
-        end
-      end
-    end
-  end
-end
+return mp.CLEAN
 

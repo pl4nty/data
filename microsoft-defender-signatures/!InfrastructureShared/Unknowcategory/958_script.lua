@@ -3,55 +3,57 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 4294967295
-local l_0_1 = nil
-local l_0_2 = mp.CLEAN
-if (this_sigattrlog[2]).matched then
-  l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1)
-  if l_0_1 ~= nil then
-    l_0_0 = (sysio.GetFileAttributes)(l_0_1)
-    if l_0_0 ~= 4294967295 and (mp.bitand)(l_0_0, 2) == 2 then
-      (bm.add_related_file)(l_0_1)
-      return mp.INFECTED
-    end
-  end
-else
-  if (this_sigattrlog[3]).matched then
-    l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1)
-    if l_0_1 ~= nil then
-      l_0_0 = (sysio.GetFileAttributes)(l_0_1)
-      if l_0_0 ~= 4294967295 and (mp.bitand)(l_0_0, 2) == 2 then
-        (bm.add_related_file)(l_0_1)
-        return mp.INFECTED
-      end
-    end
-  else
-    if (this_sigattrlog[1]).matched then
-      local l_0_3 = (mp.GetExecutablesFromCommandLine)((this_sigattrlog[1]).utf8p2)
-      for l_0_7,l_0_8 in ipairs(l_0_3) do
-        l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_8)
-        if (sysio.IsFileExists)(l_0_8) then
-          l_0_0 = 4294967295
-          l_0_0 = (sysio.GetFileAttributes)(l_0_8)
-          if l_0_0 ~= 4294967295 and (mp.bitand)(l_0_0, 2) == 2 then
-            (bm.add_related_file)(l_0_8)
-            l_0_2 = mp.INFECTED
-          end
-        end
-      end
-    end
-  end
-end
+-- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  l_0_3 = mp
-  l_0_3 = l_0_3.INFECTED
-  if l_0_2 == l_0_3 then
-    l_0_3 = mp
-    l_0_3 = l_0_3.INFECTED
-    return l_0_3
+  if (mp.get_mpattribute)("SCPT:JS/Obfuscator.ShellExecute.Cmd") then
+    local l_0_0, l_0_1 = nil
+  else
   end
-  l_0_3 = mp
-  l_0_3 = l_0_3.CLEAN
-  return l_0_3
+  if (mp.get_mpattribute)("SCPT:JS/Obfuscator.Null.Constant") then
+    do return mp.CLEAN end
+    local l_0_2 = 2
+    if (mp.getfilesize)() < 2000 or (mp.getfilesize)() > 30000 then
+      return mp.CLEAN
+    end
+    ;
+    (mp.readprotection)(false)
+    local l_0_3 = nil
+    local l_0_4, l_0_5 = ((mp.readfile)(0, (mp.getfilesize)())), nil
+    -- DECOMPILER ERROR at PC46: Overwrote pending register: R4 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC48: Overwrote pending register: R3 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC57: Overwrote pending register: R4 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC58: Overwrote pending register: R3 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC59: Overwrote pending register: R3 in 'AssignReg'
+
+    if l_0_2 ~= 1 or l_0_2 == 2 then
+      do return mp.CLEAN end
+      if nil == nil then
+        return mp.CLEAN
+      end
+      local l_0_6 = nil
+      -- DECOMPILER ERROR at PC79: Overwrote pending register: R5 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC80: Overwrote pending register: R3 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC91: Overwrote pending register: R5 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC92: Overwrote pending register: R3 in 'AssignReg'
+
+      if l_0_2 ~= 1 or l_0_2 == 2 then
+        do return mp.CLEAN end
+        if nil < 25 then
+          return mp.CLEAN
+        end
+        ;
+        (mp.set_mpattribute)("//LUA:JS/Obfuscator.Equal.Apostrophe.Caret")
+        return mp.CLEAN
+      end
+    end
+  end
 end
 

@@ -3,40 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = this_sigattrlog[6]
-if not l_0_0 or not l_0_0.p1 or not l_0_0.p2 then
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+if not (string.find)(l_0_0, "c:\\users\\", 1, true) and not (string.find)(l_0_0, "c:\\programdata\\", 1, true) and not (string.find)(l_0_0, "\\appdata\\local\\", 1, true) and not (string.find)(l_0_0, "\\kmspico\\", 1, true) then
   return mp.CLEAN
 end
-local l_0_1 = l_0_0.utf8p2
-local l_0_2 = (string.match)(l_0_1, "Delay:(%d+);")
-local l_0_3 = (string.match)(l_0_1, "Type:([%w_]+);")
-local l_0_4 = (string.match)(l_0_1, "Origin:([%w:/%.%d]+);")
-if not l_0_3 or not l_0_2 then
-  return mp.CLEAN
-end
-l_0_3 = (string.upper)(l_0_3)
-l_0_2 = tonumber(l_0_2)
-if l_0_3:find("SMS_", 1, true) == 1 then
-  local l_0_5 = l_0_3:sub(-1)
-  if l_0_5 ~= "H" and l_0_5 ~= "M" and l_0_5 ~= "L" and l_0_5 ~= "1" then
-    return mp.CLEAN
-  end
-  local l_0_6 = (bm.get_current_process_startup_info)()
-  ;
-  (bm.request_SMS)(l_0_6.ppid, l_0_5)
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", l_0_2)
-else
-  do
-    if l_0_3 == "EMS" then
-      (bm.add_action)("EmsScan", l_0_2)
-    else
-      return mp.CLEAN
+local l_0_1 = (MpCommon.GetPersistContextNoPath)("bm_uacbypass_connmgr")
+if l_0_1 then
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    local l_0_7, l_0_8 = (string.match)(l_0_6, "(.+);ImagePath:(.+)")
+    if l_0_8 then
+      l_0_8 = (MpCommon.PathToWin32Path)(l_0_8)
+      if (sysio.IsFileExists)(l_0_8) then
+        (bm.add_related_file)(l_0_8)
+        l_0_6 = (string.gsub)(l_0_6, ",", "_")
+        ;
+        (bm.add_related_string)("PossibleTrigger", l_0_6, bm.RelatedStringBMReport)
+      end
     end
-    if l_0_4 and l_0_4:find("Behavior:", 1, true) == 1 then
-      (bm.add_related_string)("RelatedBMHits", l_0_4, bm.RelatedStringBMReport)
-    end
-    return mp.INFECTED
   end
+  return mp.INFECTED
 end
+return mp.CLEAN
 

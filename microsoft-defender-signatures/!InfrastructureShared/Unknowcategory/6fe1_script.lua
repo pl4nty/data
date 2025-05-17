@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and ((pe.get_exports_count)() == 11 or (pe.get_exports_count)() == 31) then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, ".rtf->word", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

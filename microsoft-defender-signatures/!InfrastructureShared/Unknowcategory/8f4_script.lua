@@ -3,15 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 16777216 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("//Lua:GIOAVTopLevelRarHasSingleStoredFileWithExeExtension") and not (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("//GIOAVSingleStoredEXEInTopLevelRARFile") then
+  (mp.set_mpattribute)("Lua:IOAVSingleStoredEXEInTopLevelRARFile")
+  ;
+  (mp.set_mpattribute)("//GIOAVSingleStoredEXEInTopLevelRARFile")
+  ;
+  (mp.set_mpattribute)("MpNonCachedLowfi")
 end
-if (mp.readu_u32)(headerpage, 1) == 944130375 and (mp.readu_u32)(headerpage, 5) == 20996409 and (mp.readu_u32)(headerpage, 9) == 7799024 and (mp.readu_u32)(headerpage, 13) == 83435776 and (mp.readu_u32)(headerpage, 17) == 0 and (mp.readu_u32)(headerpage, 21) == 11264 and (mp.readu_u32)(headerpage, 25) == 20971520 and (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 5) == (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 9) then
-  (mp.set_mpattribute)("MpNonPIIFileType")
-  return mp.INFECTED
-else
-  return mp.CLEAN
+if (mp.get_mpattribute)("//Lua:GIOAVTopLevelRarHasSingleFileWithExeExtension") and not (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("//GIOAVSingleEXEInTopLevelRARFile") then
+  (mp.set_mpattribute)("Lua:IOAVSingleEXEInTopLevelRARFile")
+  ;
+  (mp.set_mpattribute)("//GIOAVSingleEXEInTopLevelRARFile")
+  ;
+  (mp.set_mpattribute)("MpNonCachedLowfi")
 end
 return mp.CLEAN
 

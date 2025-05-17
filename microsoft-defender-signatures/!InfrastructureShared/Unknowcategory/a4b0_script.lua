@@ -3,22 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (bm.get_imagepath)()
-if l_0_0 == nil or l_0_1 == nil then
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.get_mpattribute)("pea_no_uidata") and (mp.getfilesize)() >= 86016 and (mp.getfilesize)() < 151552 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-local l_0_2 = l_0_0.ppid .. ";ImagePath:" .. l_0_1
-if not (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
-  (MpCommon.AppendPersistContextNoPath)("bm_uacbypass_connmgr", l_0_2, 2)
-end
-local l_0_3, l_0_4 = (bm.get_process_relationships)(l_0_0.ppid)
-for l_0_8,l_0_9 in ipairs(l_0_3) do
-  if l_0_9.ppid and l_0_9.image_path and not (mp.IsKnownFriendlyFile)(l_0_9.image_path, true, false) then
-    l_0_2 = l_0_9.ppid .. ";ImagePath:" .. l_0_9.ImagePath
-    ;
-    (MpCommon.AppendPersistContextNoPath)("bm_uacbypass_connmgr", l_0_2, 2)
-  end
-end
-return mp.CLEAN
 

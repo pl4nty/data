@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.nx_bit_set == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_obfuscator_th_1")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 5, "êê")
+return mp.SUSPICIOUS
 

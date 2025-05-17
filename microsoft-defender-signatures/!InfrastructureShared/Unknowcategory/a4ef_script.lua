@@ -3,18 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if peattributes.isexe ~= true then
+min = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_0 < l_1_1 then
+    return l_1_0
+  end
+  return l_1_1
+end
+
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 32768 then
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)(0, l_0_0)
+  local l_0_2 = (string.find)(l_0_1, "rO0ABXVy", 1, true)
+  if l_0_2 ~= nil then
+    local l_0_3 = (mp.readfile)(l_0_2 - 3, 2)
+    local l_0_4 = (mp.readfile)(l_0_2 - 1, min((string.byte)(l_0_3) * 256 + (string.byte)(l_0_3, 2), l_0_0 - l_0_2))
+    ;
+    (mp.vfo_add_buffer)(l_0_4, "[serialized_class]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\vipre business agent\\sbamsvc.exe", 1, true) or (string.find)(l_0_0, "win10clean", 1, true) then
-  return mp.CLEAN
-end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
 

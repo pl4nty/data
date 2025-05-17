@@ -3,34 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC23: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-      local l_0_1, l_0_2 = (this_sigattrlog[2]).utf8p2
-    end
-    -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_1 == nil then
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.match)((string.lower)(l_0_0.image_path), "([^\\]+)$")
+    if l_0_1 == "powershell.exe" then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-    local l_0_3 = nil
-    local l_0_4 = nil
-    if (string.find)(((mp.GetExecutablesFromCommandLine)(l_0_1))[2], ",", 1, true) == nil then
+    if l_0_1 == "cmd.exe" then
       return mp.CLEAN
     end
-    local l_0_5 = nil
     ;
-    (mp.ReportLowfi)((string.sub)(l_0_4[2], 1, (string.find)(((mp.GetExecutablesFromCommandLine)(l_0_1))[2], ",", 1, true) - 1), 2300354182)
+    (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+    ;
+    (mp.AddDeferredBMAction)("SmsAsyncScanEvent", 10000)
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

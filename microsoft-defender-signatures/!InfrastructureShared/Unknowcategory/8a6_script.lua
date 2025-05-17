@@ -3,23 +3,17 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_MicrosoftIRScan = function()
-  -- function num : 0_0
-  if (versioning.GetProduct)() ~= 17 then
-    return 
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if l_0_1:sub(-5) == "\\temp" then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_2 == "winword.exe" or l_0_2 == "fltldr.exe" then
+      (mp.set_mpattribute)("Lua:WinWordOrFltLdrDropTemp.A")
+    end
   end
-  ;
-  (MpCommon.SetGlobalMpAttribute)("IRScanGlobal")
-  ;
-  (MpCommon.SetGlobalMpAttribute)("MpIsExhaustiveScriptScan")
-  ;
-  (MpDetection.ScanResource)("specialfolder://recursive:file:%SystemDrive%\\inetpub\\logs\\LogFiles\\W3SVC1")
-  ;
-  (MpDetection.ScanResource)("specialfolder://recursive:file:%SystemDrive%\\inetpub\\logs\\LogFiles\\W3SVC2")
-  ;
-  (MpCommon.DeleteGlobalMpAttribute)("MpIsExhaustiveScriptScan")
-  ;
-  (MpCommon.DeleteGlobalMpAttribute)("IRScanGlobal")
 end
-
+do
+  return mp.CLEAN
+end
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 3695440085)
-return mp.INFECTED
+if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 100000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

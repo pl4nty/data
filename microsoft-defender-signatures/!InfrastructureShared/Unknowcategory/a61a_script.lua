@@ -3,22 +3,30 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
-l_0_0 = (string.lower)(l_0_0)
-if l_0_0 == nil or (string.find)(l_0_0, ":\\windows\\", 2, true) or (string.find)(l_0_0, "^%%", 1) or (string.find)(l_0_0, ":\\programdata\\", 2, true) or (string.find)(l_0_0, "^:\\users\\.*\\appdata", 2, false) or (string.find)(l_0_0, ":\\program files (x86)\\", 2, true) or (string.find)(l_0_0, ":\\program files\\", 2, true) then
-  return mp.CLEAN
-end
-local l_0_1 = (sysio.GetFileLastWriteTime)(l_0_0)
-if ((sysio.GetLastResult)()).Success and l_0_1 ~= 0 then
-  l_0_1 = l_0_1 / 10000000 - 11644473600
-  local l_0_2 = (MpCommon.GetCurrentTimeT)()
-  if l_0_2 < l_0_1 or l_0_2 - (l_0_1) > 600 then
+if peattributes.isdll and peattributes.hasexports then
+  local l_0_0 = ((pehdr.DataDirectory)[1]).RVA
+  local l_0_1 = ((pehdr.DataDirectory)[1]).Size
+  local l_0_2 = (pe.foffset_rva)(l_0_0)
+  ;
+  (mp.readprotection)(false)
+  local l_0_3 = (mp.readfile)(l_0_2, l_0_1)
+  local l_0_4 = (mp.ror32)((mp.readu_u32)(l_0_3, 20), 8)
+  if l_0_4 ~= 1 then
     return mp.CLEAN
   end
+  local l_0_5 = (mp.ror32)((mp.readu_u32)(l_0_3, 40), 8)
+  local l_0_6 = (mp.readfile)(0, (mp.getfilesize)())
+  local l_0_7 = (mp.ror32)((mp.readu_u32)(l_0_6, 60), 8)
+  local l_0_8 = (mp.ror32)((mp.readu_u32)(l_0_6, l_0_7 + 40), 8)
+  if l_0_8 == l_0_5 then
+    return mp.CLEAN
+  end
+  ;
+  (mp.writeu_u32)(l_0_6, l_0_7 + 40 + 1, l_0_5)
+  ;
+  (mp.vfo_add_buffer)(l_0_6, "[ExportEP]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 end
 do
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

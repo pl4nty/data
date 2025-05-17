@@ -3,12 +3,39 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil or l_0_1 == nil or l_0_0 == "" or l_0_1 == "" then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "/tmp/", 1, true) == 1 or (string.find)(l_0_0, "/var/tmp/", 1, true) == 1 or (string.find)(l_0_0, "/root/", 1, true) == 1 or (string.find)(l_0_0, "/home/", 1, true) == 1 or (string.find)(l_0_0, "/run/shm/", 1, true) == 1 or (string.find)(l_0_0, "/dev/shm/", 1, true) == 1 or (string.find)(l_0_1, ".", 1, true) == 1 then
+if (mp.get_mpattribute)("elfa_isgocompiled") then
+  local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+  if l_0_0 == nil or #l_0_0 < 4 then
+    return mp.CLEAN
+  end
+  local l_0_1 = {}
+  -- DECOMPILER ERROR at PC28: No list found for R1 , SetList fails
+
+  -- DECOMPILER ERROR at PC29: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC30: Overwrote pending register: R3 in 'AssignReg'
+
+  for l_0_5,l_0_6 in (".deb")(".iso") do
+    if (string.find)(l_0_0, l_0_6, -1 * #l_0_6, true) then
+      return mp.CLEAN
+    end
+  end
+  local l_0_7 = {}
+  -- DECOMPILER ERROR at PC54: No list found for R2 , SetList fails
+
+  -- DECOMPILER ERROR at PC55: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC56: Overwrote pending register: R4 in 'AssignReg'
+
+  for l_0_11,l_0_12 in ("kali")(".dpkg") do
+    if (string.find)(l_0_0, l_0_12, 1, true) then
+      return mp.CLEAN
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
+do
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
+end
 

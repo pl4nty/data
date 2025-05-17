@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("RDTSC_LoD_trick")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 42, "")
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+-- DECOMPILER ERROR at PC17: Unhandled construct in 'MakeBoolean' P3
+
+if (l_0_0 >= 147456 and l_0_0 <= 184320) or l_0_0 < 217088 or l_0_0 >= 131072 and l_0_0 <= 135168 then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

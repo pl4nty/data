@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.GetBruteMatchData)()).match_offset == 0 then
-  if headerpage == nil then
-    return mp.CLEAN
-  end
-  if (mp.readu_u32)(headerpage, 1) == 1497451600 and (mp.readu_u16)(headerpage, 5) == 2573 then
+if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[3]).p1)
+  if (string.find)(l_0_1, l_0_0 .. ".exe", nil, true) then
     return mp.INFECTED
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

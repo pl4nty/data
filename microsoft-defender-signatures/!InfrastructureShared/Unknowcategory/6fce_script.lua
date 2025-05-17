@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if pehdr.SizeOfImage >= 819200 and pehdr.SizeOfImage < 827392 then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+;
+(mp.changedetectionname)(805306376)
+return mp.SUSPICIOUS
 

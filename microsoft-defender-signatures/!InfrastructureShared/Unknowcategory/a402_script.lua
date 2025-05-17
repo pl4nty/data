@@ -3,21 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 16777216 then
+if not (mp.get_mpattribute)("//AGGR:OleFile") and not (mp.get_mpattribute)("Lua:FileSizeLT2000") then
   return mp.CLEAN
 end
-local l_0_1 = (pe.mmap_va)((pe.get_regval)(pe.REG_ESP), 16)
-local l_0_2 = (mp.readu_u32)(l_0_1, 1)
-if l_0_2 <= 0 or l_0_2 > 4194304 or not (pe.isdynamic_va)(l_0_2) then
+local l_0_0 = (string.lower)(tostring(footerpage))
+local l_0_1, l_0_2, l_0_3 = (string.find)(l_0_0, "(<a href%=\"http.-\">https%://businessonline%.o2%.co%.uk/)")
+if l_0_3 == nil then
   return mp.CLEAN
 end
-local l_0_3 = (mp.readu_u32)(l_0_1, 5)
-if l_0_3 <= 0 or l_0_0 <= l_0_3 then
-  return mp.CLEAN
+if (string.match)(l_0_3, "<a href%=\"https%://businessonline%.o2%.co%.uk/.-\">https%://businessonline%.o2%.co%.uk/") == nil then
+  return mp.INFECTED
 end
-local l_0_4 = (pe.mmap_va)(l_0_2, l_0_3)
-;
-(mp.vfo_add_buffer)(l_0_4, "[EvrStkExeScpt]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 return mp.CLEAN
 

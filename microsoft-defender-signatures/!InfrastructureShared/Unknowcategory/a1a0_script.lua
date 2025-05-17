@@ -3,17 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 12 then
-  (mp.set_mpattribute)("PUA:Block:SGMinerGM")
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-if (mp.bitand)(mp.HSTR_WEIGHT, 3) >= 2 then
-  if peattributes.amd64_image then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_sgminer")
-  else
-    ;
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan_sgminer")
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
   end
 end
-return mp.CLEAN
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_6 = (this_sigattrlog[2]).p1
+    if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 65536 and (mp.get_mpattribute)("pea_no_security") then
+if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 20480 then
   return mp.INFECTED
 end
 return mp.CLEAN

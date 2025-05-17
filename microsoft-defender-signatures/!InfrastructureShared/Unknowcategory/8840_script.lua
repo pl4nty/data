@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_exe == false then
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((mp.utf16to8)((this_sigattrlog[1]).wp1))
+    if l_0_0 ~= nil and (string.find)(l_0_0, "\\%d+%.exe") ~= nil then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 2430426247) == 0 then
-  return mp.CLEAN
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 4186436034) == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

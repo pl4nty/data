@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= ((bm.get_current_process_startup_info)()).integrity_level then
+if (mp.getfilesize)() > 2000 then
+  return mp.CLEAN
+end
+if (mp.getfilename)() == "C:\\Windows\\System32\\setting.ini" then
   return mp.INFECTED
 end
 return mp.CLEAN

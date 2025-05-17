@@ -3,12 +3,22 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (mp.get_mpattribute)("LUA:FileSizeLE40000.A") and (mp.get_mpattribute)("Lua:FileSizeGEC350") and (mp.get_mpattribute)("BM_DropperObfuscatorUR") and (mp.get_mpattribute)("MpHasExpensiveLoop") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.get_mpattribute)("LUA:OverlaySize_0xd30_to_0xd40") and pehdr.TimeDateStamp ~= 0 then
-    local l_0_0 = (MpCommon.GetCurrentTimeT)()
-    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 2592000 then
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if l_0_0 == nil or l_0_0 == "" or (sysio.IsFileExists)(l_0_0) == false then
+      return mp.CLEAN
+    end
+    if (string.sub)(l_0_0, 1, 3) == "COM" then
+      return mp.CLEAN
+    end
+    if (string.find)(l_0_0, ".exe", -4, true) or (string.find)(l_0_0, ".dll", -4, true) or (string.find)(l_0_0, ".sys", -4, true) then
+      (bm.add_related_file)(l_0_0)
       return mp.INFECTED
     end
+    return mp.CLEAN
   end
   return mp.CLEAN
 end

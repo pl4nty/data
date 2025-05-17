@@ -3,37 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports and peattributes.amd64_image then
-  if (mp.getfilesize)() > 1703936 then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
-  local l_0_6 = (pe.get_exports_count)()
-  if l_0_6 >= 2 and l_0_6 <= 10 then
-    local l_0_7, l_0_8 = (pe.get_exports)()
-    local l_0_9 = 0
-    local l_0_10 = 0
-    for l_0_14 = 1, l_0_7 do
-      local l_0_15 = (l_0_8[l_0_14]).rva
-      if l_0_15 <= 12288 then
-        l_0_9 = 1
-      else
-        if l_0_15 >= 131072 then
-          l_0_10 = 1
-        end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_7,l_0_8 in ipairs(l_0_3) do
+      local l_0_4 = {[".xls"] = true, xlsx = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, xlsm = true}
+      -- DECOMPILER ERROR at PC34: Confused about usage of register: R7 in 'UnsetPending'
+
+      if (string.len)(R7_PC34) > 4 and (sysio.IsFileExists)(R7_PC34) and l_0_4[(string.sub)(R7_PC34, -4)] then
+        (bm.add_related_file)(l_0_9)
       end
     end
-    if l_0_9 == 1 and l_0_10 == 1 then
-      return mp.INFECTED
-    end
   end
-end
-do
-  return mp.CLEAN
+  do
+    l_0_3 = mp
+    l_0_3 = l_0_3.INFECTED
+    return l_0_3
+  end
 end
 

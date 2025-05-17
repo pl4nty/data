@@ -3,31 +3,32 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
-
-  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
-
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasGitlabUrl") then
-      (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromGitlab") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromGitlab", 3600)
-        return mp.INFECTED
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1, l_0_2 = (string.match)(l_0_0, " pid:(%d+) (.+)")
+if l_0_1 == nil or l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.GetPPidFromPid)(l_0_1)
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_2, "^ems$") then
+  (bm.trigger_sig)("AsyncTriggerEMS", "EMS", l_0_3)
+else
+  if (string.find)(l_0_2, "^sms:") then
+    local l_0_4 = (string.match)(l_0_2, "sms:(.+)")
+    ;
+    (bm.trigger_sig)("AsyncTriggerSMS", l_0_4, l_0_3)
+  else
+    do
+      if (string.find)(l_0_2, "^exhaustive$") then
+        (bm.trigger_sig)("AsyncTriggerProc", "Exhaustive", l_0_3)
       end
+      return mp.INFECTED
     end
   end
-  return mp.CLEAN
 end
 

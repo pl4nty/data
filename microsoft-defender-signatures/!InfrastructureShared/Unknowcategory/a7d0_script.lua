@@ -3,59 +3,124 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = nil
-local l_0_3 = nil
-if (bm.get_current_process_startup_info)() == nil or (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) == nil or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon.des", -22, true) then
-  return mp.CLEAN
-end
-local l_0_4, l_0_5 = nil
-if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) ~= nil then
-  for l_0_9,l_0_10 in ipairs(R7_PC44) do
-    local l_0_6, l_0_7 = (bm.get_process_relationships)()
-    -- DECOMPILER ERROR at PC46: Confused about usage of register: R10 in 'UnsetPending'
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
-    if R10_PC46.image_path ~= nil and R10_PC46.reason == bm.RELATIONSHIP_INJECTION then
-      if (string.find)((string.lower)(R10_PC46.image_path), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\system32\\mrt.exe", -17, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\asep_inv.exe", -13, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\mpsigstub.exe", -14, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\gameguard\\gamemon.des", -22, true) then
-        return mp.CLEAN
-      end
-      l_0_3 = R10_PC46.ppid
-    end
-  end
-end
 do
-  -- DECOMPILER ERROR at PC109: Confused about usage of register: R4 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC112: Confused about usage of register: R4 in 'UnsetPending'
-
-  if l_0_6 ~= nil then
-    for l_0_15,l_0_16 in ipairs(l_0_6) do
-      local l_0_12, l_0_13 = nil
-      -- DECOMPILER ERROR at PC115: Confused about usage of register: R10 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC122: Confused about usage of register: R10 in 'UnsetPending'
-
-      if R10_PC46.image_path ~= nil then
-        l_0_2 = (string.lower)((MpCommon.PathToWin32Path)(R10_PC46.image_path))
-        if (string.find)(l_0_2, "\\mcafee\\systemcore\\mfehcs.exe", -29, true) or (string.find)(l_0_2, "(x86)\\pharossystems\\printscout\\ctskmstr.exe", -43, true) or (string.find)(l_0_2, "(x86)\\hp\\printscout\\ctskmstr.exe", -32, true) or (string.find)(l_0_2, "\\mcafee\\endpoint security\\threat prevention\\mfetp.exe", -53, true) or (string.find)(l_0_2, "\\anti-malware\\mbamservice.exe", -29, true) or (string.find)(l_0_2, "\\cnext\\radeonsoftware.exe", -25, true) or (string.find)(l_0_2, "(x86)\\panda security\\wac\\psanhost.exe", -37, true) or (string.find)(l_0_2, "(x86)\\cloudvolumes\\agent\\svservice.exe", -38, true) or (string.find)(l_0_2, "\\gameguard\\gamemon64.des", -24, true) or (string.find)(l_0_2, "\\gameguard\\gamemon.des", -22, true) or (string.find)(l_0_2, "(x86)\\f-secure\\server security\\", 1, true) then
-          return mp.CLEAN
-        end
-      end
-    end
+  if (this_sigattrlog[11]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13, l_0_14, l_0_15, l_0_16, l_0_17, l_0_18, l_0_19, l_0_20, l_0_21, l_0_22, l_0_23, l_0_24, l_0_25, l_0_26, l_0_27, l_0_28, l_0_29, l_0_30 = nil
   end
-  do
-    if (sysio.IsFileExists)(l_0_2) and not (mp.IsKnownFriendlyFile)(l_0_2, true, false) then
-      (bm.add_related_file)(l_0_2)
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+    if (string.find)(l_0_0, "googleupdate", 1, true) then
+      return mp.CLEAN
     end
-    if (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, true, false) and l_0_3 ~= nil then
-      (bm.request_SMS)(l_0_3, "h+")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1)
-      ;
-      (bm.add_related_file)(l_0_5)
+    -- DECOMPILER ERROR at PC34: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC43: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC52: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC61: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC70: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC79: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC88: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC97: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC106: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC115: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC124: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC133: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC142: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC151: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC160: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC169: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC178: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC187: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC196: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC205: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC214: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC223: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC232: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC241: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC250: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC259: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC268: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC277: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC286: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC295: Unhandled construct in 'MakeBoolean' P3
+
+    if (string.find)(l_0_0, " whoami", 1, true) or ((((string.find)(l_0_0, "net user", 1, true) or (string.find)(l_0_0, "net1 user", 1, true) or (string.find)(l_0_0, "net.exe user", 1, true) or (string.find)(l_0_0, "net1.exe user", 1, true)) and (string.find)(l_0_0, "2>&1", 1, true)) or (string.find)(l_0_0, "makecab", 1, true)) then
       return mp.INFECTED
     end
-    return mp.CLEAN
   end
+  return mp.CLEAN
 end
 

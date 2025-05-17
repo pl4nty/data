@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_6.image_path, 9)) == "\\wmic.exe" then
-    local l_0_7 = (string.lower)((mp.GetProcessCommandLine)(l_0_6.ppid))
-    if (string.find)(l_0_7, "/format", 1, true) then
-      return mp.INFECTED
-    end
-  end
+if (mp.readu_u32)(epcode, 1) ~= 1610613227 or (mp.readu_u32)(epcode, 5) ~= 673477691 or pehdr.Subsystem ~= 1 then
+  return mp.LOWFI
 end
-return mp.CLEAN
+local l_0_0 = pehdr.ImageBase + (pesecs[1]).VirtualAddress
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+if (string.sub)(l_0_1, 1, 4) == "(re)" then
+  (mp.changedetectionname)(805306430)
+end
+return mp.INFECTED
 

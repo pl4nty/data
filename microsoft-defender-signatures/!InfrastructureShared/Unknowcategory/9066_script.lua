@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
+if (mp.getfilesize)() < 2048000 and (mp.get_mpattribute)("pea_headerchecksum0") and pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("Lua:OverSizedLnkFile") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

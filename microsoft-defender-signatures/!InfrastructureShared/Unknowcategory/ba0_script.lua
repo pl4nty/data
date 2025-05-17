@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Ogimant")
+(mp.set_mpattribute)("PUA:Block:DealPly")
 return mp.INFECTED
 

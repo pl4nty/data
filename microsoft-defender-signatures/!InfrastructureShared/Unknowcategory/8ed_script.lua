@@ -3,15 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsOfficeVbaAMSIScan") and not (mp.get_mpattribute)("MpIsVBScriptAMSIScan") and not (mp.get_mpattribute)("MpIsJScriptAMSIScan") and not (mp.get_mpattribute)("MpPowershellHasValidAmsiContentName") and not (mp.get_mpattribute)("MpIsXl4mAmsiScan") then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+  if l_0_1 ~= nil and l_0_1:len() > 7 and ((string.sub)(l_0_1, -8) == "cscc.dat" or (string.sub)(l_0_1, -10) == "infpub.dat") then
+    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_2 ~= nil and l_0_2:len() > 9 and l_0_2:find("\\windows\\", 1, true) ~= nil then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
-if l_0_0 and (sysio.IsFileExists)(l_0_1) and not (mp.IsKnownFriendlyFile)(l_0_1, false, false) then
-  (mp.SetAmsiReportPath)(l_0_1)
-  ;
-  (mp.ReportLowfi)(l_0_1, 1649668719)
-  return mp.CLEAN
-end
-return mp.CLEAN
 

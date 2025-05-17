@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[3]).Name == ".qhw" or (pesecs[2]).Name == "DrtWJgcR" then
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Genieo.M")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

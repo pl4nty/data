@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:PEHasIOAVURL") and (mp.get_mpattribute)("MpCPlApplet") and not (mp.get_mpattribute)("//GCPLFileHasIOAVURL") then
-  (mp.set_mpattribute)("Lua:CPLFileHasIOAVURL")
-  ;
-  (mp.set_mpattribute)("//GCPLFileHasIOAVURL")
+if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 1) then
+  (mp.set_mpattribute)("Lua:BafsCode1")
+end
+if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 3) then
+  (mp.set_mpattribute)("Lua:BafsCode3")
 end
 return mp.CLEAN
 

@@ -3,28 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "(.+\\)"
-local l_0_1, l_0_2 = nil, nil
-if (this_sigattrlog[1]).matched then
-  l_0_2 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
-    else
-      if (this_sigattrlog[4]).matched then
-        l_0_2 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
-      end
-    end
-  end
+if peattributes.isdll ~= true then
+  return mp.CLEAN
 end
-if (this_sigattrlog[5]).matched then
-  l_0_1 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
+if (pesecs[1]).NameDW ~= 0 then
+  return mp.CLEAN
 end
-if l_0_1 ~= nil and l_0_1 == l_0_2 then
-  return mp.INFECTED
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633968430 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if pehdr.NumberOfSections <= 5 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections >= 10 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode <= 1792 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode >= 9472 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 96 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 232 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,12 +3,43 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+local l_0_0 = (mp.GetScannedPPID)()
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\microsoft\\edge\\", 1, true) or (string.find)(l_0_0, "\\internet explorer\\", 1, true) or (string.find)(l_0_0, "\\google\\chrome\\", 1, true) or (string.find)(l_0_0, "\\brave-browser\\", 1, true) or (string.find)(l_0_0, "yandexbrowser", 1, true) or (string.find)(l_0_0, "\\mozilla firefox\\", 1, true) or (string.find)(l_0_0, "\\opera", 1, true) or (string.find)(l_0_0, "\\safari\\", 1, true) or (string.find)(l_0_0, "\\sogouexplorer\\", 1, true) or (string.find)(l_0_0, "\\qqbrowser\\", 1, true) or (string.find)(l_0_0, "\\2345explorer\\", 1, true) or (string.find)(l_0_0, "360", 1, true) or (string.find)(l_0_0, "browser", 1, true) or (string.find)(l_0_0, "chrome", 1, true) or (string.find)(l_0_0, "sketchup", 1, true) or (string.find)(l_0_0, "mysql", 1, true) or (string.find)(l_0_0, "proxy", 1, true) or (string.find)(l_0_0, "\\chromium\\", 1, true) then
+if (string.len)(l_0_1) < 1024 then
   return mp.CLEAN
 end
-return mp.INFECTED
+local l_0_2 = (string.match)(l_0_1, "(JABlAHgAdABQAGEA[a-zA-Z0-9%+/=]+)")
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+l_0_2 = (string.sub)(l_0_2, 1, 512)
+local l_0_3 = (MpCommon.Base64Decode)(l_0_2)
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+l_0_3 = (string.gsub)(l_0_3, "%z", "")
+l_0_3 = (string.lower)((string.gsub)(l_0_3, " ", ""))
+if (string.find)(l_0_3, "confpath", 1, true) and (string.find)(l_0_3, "archivename", 1, true) and (string.find)(l_0_3, "taskname", 1, true) and (string.find)(l_0_3, "domain", 1, true) then
+  local l_0_4 = (string.match)(l_0_3, "%$taskname=\"(.-)\"")
+  if l_0_4 ~= nil then
+    local l_0_5 = (mp.GetParentProcInfo)()
+    if l_0_5 ~= nil then
+      local l_0_6 = (string.lower)(l_0_5.image_path)
+      local l_0_7 = l_0_6:match("([^\\]+)$")
+      local l_0_8 = "svchost.exe|taskeng.exe|taskhostw.exe"
+      if l_0_7 ~= nil and (string.find)(l_0_8, l_0_7) then
+        (mp.TriggerScanResource)("taskscheduler", "C:\\Windows\\System32\\Tasks\\" .. l_0_4)
+      end
+    end
+  end
+  do
+    do
+      do return mp.INFECTED end
+      return mp.CLEAN
+    end
+  end
+end
 

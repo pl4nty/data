@@ -3,35 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] ~= 77 then
+if mp.HSTR_WEIGHT >= 7 then
+  return mp.INFECTED
+end
+do
+  -- DECOMPILER ERROR at PC59: Unhandled construct in 'MakeBoolean' P3
+
+  if not (hstrlog[1]).matched or ((((hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched) and not (hstrlog[2]).matched) or (hstrlog[9]).matched or (hstrlog[3]).matched) then
+    local l_0_2 = 0 + 1 + 1
+    if (hstrlog[11]).matched then
+      local l_0_0, l_0_1 = 0 + 1 + 1 + 1
+    end
+  end
+  if l_0_2 >= 2 then
+    return mp.INFECTED
+  else
+    -- DECOMPILER ERROR at PC76: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC78: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (hstrlog[4]).matched and (l_0_0 == 3 or l_0_2 == 1) then
+      return mp.INFECTED
+    end
+  end
+  ;
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AMO")
   return mp.CLEAN
 end
-if epcode[2] ~= 90 then
-  return mp.CLEAN
-end
-if epcode[5] ~= 233 then
-  return mp.CLEAN
-end
-if epcode[8] ~= 0 then
-  return mp.CLEAN
-end
-if epcode[9] ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint ~= 0 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 1162104643 then
-  return mp.CLEAN
-end
-if (pesecs[1]).VirtualAddress ~= 4096 then
-  return mp.CLEAN
-end
-if peattributes.epscn_islast ~= false then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect == true then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

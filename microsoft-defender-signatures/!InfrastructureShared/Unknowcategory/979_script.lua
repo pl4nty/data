@@ -3,24 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if (string.sub)(l_0_1, -4) ~= ".exe" and (string.sub)(l_0_1, -4) ~= ".scr" then
-    return mp.CLEAN
-  end
-  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if (string.find)(l_0_2, "\\recycle", 1, true) == nil then
-    return mp.CLEAN
-  end
-  if (string.sub)(l_0_2, 1, 8) == "\\device\\" then
-    l_0_2 = (MpCommon.PathToWin32Path)(l_0_2)
-  end
-  if (string.sub)(l_0_2, 2, 12) == ":\\recycler\\" or (string.sub)(l_0_2, 2, 11) == ":\\recycle\\" or (string.sub)(l_0_2, 2, 12) == ":\\recycled\\" then
-    (mp.set_mpattribute)("Lua:NewRecyclerPE")
-  end
-end
+local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_CONTROL_GUID)
+local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_SCANREASON)
 do
-  return mp.CLEAN
+  if l_0_0 and ((string.match)(l_0_1, "cafeefac%-dec7%-0000%-0001%-abcdeffedcba") or (string.match)(l_0_1, "08b0e5c0%-4fcb%-11cf%-aaa5%-00401c608501") or (string.match)(l_0_1, "d27cdb6e%-ae6d%-11cf%-96b8%-444553540000") or (string.match)(l_0_1, "dfeaf541%-f3e1%-4c24%-acac%-99c30715084a")) then
+    local l_0_4, l_0_5 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_FRAME_URL)
+    if l_0_4 and ((string.sub)(l_0_5, -3) == "/?1" or (string.sub)(l_0_5, -3) == "/?2" or (string.sub)(l_0_5, -3) == "/?3" or (string.sub)(l_0_5, -3) == "/?4") then
+      if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+        (mp.aggregate_mpattribute)("Context:FrameNumeralParam")
+      end
+      ;
+      (mp.aggregate_mpattribute)("//MpIsIEVScan")
+      return mp.TRUE
+    end
+  end
+  return mp.FALSE
 end
 

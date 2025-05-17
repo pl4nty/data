@@ -3,41 +3,41 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-if not l_0_0 then
+if not (mp.get_mpattribute)("AndroidOS:HSTR:AndroidElf") then
   return mp.CLEAN
 end
-local l_0_1 = tostring(l_0_0.is_header and headerpage or footerpage)
-if not l_0_1 then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
-local l_0_2 = (string.len)("<signature>\r\n")
-local l_0_3 = l_0_0.match_offset + l_0_2
-if l_0_0.is_footer and (string.sub)(l_0_1, 1, 1) == "\000" then
-  _ = (string.find)(l_0_1, "<signature>[\r\n]*")
-end
-if not l_0_3 then
+if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
   return mp.CLEAN
 end
-local l_0_4 = (string.find)(l_0_1, "[%w=][^%w=]*</signature>", l_0_0.match_offset)
-if not l_0_4 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 700000 or l_0_0 < 4000 then
   return mp.CLEAN
 end
-l_0_1 = (string.sub)(l_0_1, l_0_3, l_0_4 - 1)
-if not l_0_1 then
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("adbcopy", 1, true) then
   return mp.CLEAN
 end
-l_0_1 = (string.gsub)(l_0_1, "%s*[\r\n]+..%sSIG%s..%s*", "")
-if not l_0_1 or #l_0_1 < 2 then
+if l_0_1:find("libbaiduzeus", 1, true) then
   return mp.CLEAN
 end
-local l_0_5, l_0_6 = pcall(MpCommon.Base64Decode, l_0_1)
-if not l_0_5 or not l_0_6 then
+if l_0_1:find("libmiui", 1, true) then
   return mp.CLEAN
 end
-;
-(mp.vfo_add_buffer)(l_0_6, "[ScriptSig]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-;
-(mp.UfsSetMetadataBool)("ScriptSigDecoded", true, true)
+if l_0_1:find("liboctvm", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("getdbfile", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("\\atcid", 1, true) then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_2:find("root", 1, true) then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

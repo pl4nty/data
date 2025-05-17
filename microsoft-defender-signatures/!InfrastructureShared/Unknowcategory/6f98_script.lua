@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
+if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 2097152 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

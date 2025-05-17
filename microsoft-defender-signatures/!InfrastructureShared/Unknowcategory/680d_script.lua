@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(mp.set_mpattribute)("attrmatch_rescan_psif")
-return mp.INFECTED
+if peattributes.no_security == true and pehdr.NumberOfSections == 3 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

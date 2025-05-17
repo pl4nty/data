@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("dt_continue_after_unpacking", true)
-return mp.INFECTED
+if pehdr.NumberOfSections == 3 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:DownloadAdmin")
+(bm.add_action)("EmsScan", 3000)
 return mp.INFECTED
 

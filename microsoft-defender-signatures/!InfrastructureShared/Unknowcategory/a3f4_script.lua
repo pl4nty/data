@@ -3,14 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_6.image_path), "\\powershell.exe", 1, true) then
-    local l_0_7 = (string.lower)((mp.GetProcessCommandLine)(l_0_6.ppid))
-    if (string.find)(l_0_7, "invoke-expression %$env:") or (string.find)(l_0_7, "iex %$env:") then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p1)
+if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
+end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
+end
+return mp.INFECTED
 

@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:XMRig")
+  return mp.INFECTED
 end
-local l_0_1 = {}
-l_0_1["Trojan:Win32/TIImpersonation.A!sms"] = true
-l_0_1["Trojan:Win32/TIImpersonation.B!sms"] = true
-l_0_1["Trojan:Win32/W3WP_BackdoorDLL"] = true
-l_0_1["Trojan:Win32/ShellMemoryArtifacts.B"] = true
-l_0_1["Trojan:Win32/ShellMemoryArtifacts.C"] = true
-if l_0_1[l_0_0] then
-  return mp.CLEAN
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrig")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrig")
 end
-return mp.INFECTED
+;
+(mp.set_mpattribute)("Miner:XMRigNoBlock")
+return mp.CLEAN
 

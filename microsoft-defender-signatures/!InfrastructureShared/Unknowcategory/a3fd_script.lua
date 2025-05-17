@@ -3,29 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC18: Confused about usage of register: R6 in 'UnsetPending'
-
-      if (R6_PC18:len() < 7 or (string.lower)((string.sub)(R6_PC18, -9)) == "mshta.exe" or (string.lower)((string.sub)(R6_PC18, -7)) ~= "cmd.exe") and (sysio.IsFileExists)(R6_PC18) then
-        (bm.add_related_file)(R6_PC18)
-      end
+  if (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
+    local l_0_0 = tostring(headerpage)
+    l_0_0 = (string.lower)(l_0_0:gsub("`", "", 100))
+    if (string.find)(l_0_0, "new-object", 1, true) or (string.find)(l_0_0, "webclient", 1, true) or (string.find)(l_0_0, "newscriptblock", 1, true) or (string.find)(l_0_0, "executioncontext", 1, true) then
+      return mp.INFECTED
     end
   end
-  do
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
 

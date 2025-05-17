@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpInternal_IsPliScan") then
-  return mp.CLEAN
+if (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) then
+  (mp.set_mpattribute)("MpNewlyCreatedHint")
 end
-;
-(pe.set_peattribute)("disable_dropper_rescan", true)
 return mp.CLEAN
 

@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)(((pe.get_versioninfo)()).CompanyName) == "project: sakura-editor" then
-  return mp.INFECTED
+local l_0_0 = (string.lower)(tostring(headerpage))
+local l_0_1, l_0_2 = (string.gsub)(l_0_0, "&#x0a;", "")
+local l_0_3, l_0_4 = (string.gsub)(l_0_0, "&#x0d;", "")
+if l_0_2 == 0 then
+  return mp.CLEAN
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
+if l_0_4 == 0 then
+  return mp.CLEAN
+end
+if l_0_2 > 50 and l_0_4 > 50 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

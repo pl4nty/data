@@ -3,15 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-if (l_0_0 == nil and l_0_0:len() < 12) or l_0_1 == nil then
-  return mp.CLEAN
+if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[6]).utf8p2
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    if l_0_1 ~= nil then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+        ;
+        (bm.add_related_file)(l_0_6)
+      end
+    end
+  end
 end
-if not l_0_1:find(">word/", 1, true) then
-  return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
 end
-if l_0_1:sub(-4) == ".xml" then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

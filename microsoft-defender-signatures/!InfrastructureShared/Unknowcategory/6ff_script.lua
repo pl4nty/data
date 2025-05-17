@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) then
-  (mp.set_mpattribute)("MpNewlyCreatedHint")
-end
-return mp.CLEAN
+(nri.AddTelemetry)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY)
+return mp.INFECTED
 

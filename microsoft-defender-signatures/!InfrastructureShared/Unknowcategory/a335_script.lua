@@ -3,19 +3,8 @@
 
 -- params : ...
 -- function num : 0
-for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
-  if (sigattr_tail[l_0_3]).matched and (sigattr_tail[l_0_3]).attribute == 16393 then
-    local l_0_4 = (sigattr_tail[l_0_3]).utf8p1
-    if l_0_4 then
-      l_0_4 = (string.lower)(l_0_4)
-      if l_0_4 and ((string.find)(l_0_4, "useraccountcontrolsettings.exe") or (string.find)(l_0_4, "taskmgr.exe")) then
-        local l_0_5 = (sigattr_tail[l_0_3]).utf8p2
-        if (string.len)(l_0_5) > 1 then
-          return mp.INFECTED
-        end
-      end
-    end
-  end
+if peattributes.isexe == true and epcode[1] == 104 and epcode[2] == 15 and peattributes.hasexports == true and pehdr.AddressOfEntryPoint == 12647710 and (pesecs[4]).Name == ".data020" and (pesecs[5]).Name == ".data021" and (mp.getfilesize)() >= 6000000 and (mp.getfilesize)() <= 7000000 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

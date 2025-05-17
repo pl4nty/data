@@ -3,28 +3,28 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+  else
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC27: Confused about usage of register: R6 in 'UnsetPending'
-
-      if (string.find)((string.lower)(R6_PC27), "\\javaw.exe") == nil and (sysio.IsFileExists)(R6_PC27) then
-        (bm.add_related_file)(R6_PC27)
-      end
-    end
-  end
   do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1, l_0_2 = (string.lower)((this_sigattrlog[3]).utf8p2)
+    end
+    -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC48: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil and (string.len)(l_0_1) > 3 and (string.find)(l_0_1, "start https:", 1, true) then
+      return mp.CLEAN
+    end
     return mp.INFECTED
   end
 end

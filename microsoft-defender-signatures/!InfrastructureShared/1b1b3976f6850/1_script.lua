@@ -6,7 +6,7 @@
 local l_0_0 = ""
 do
   if (this_sigattrlog[9]).matched then
-    local l_0_1, l_0_2, l_0_3 = (this_sigattrlog[9]).utf8p2
+    local l_0_1, l_0_2 = (this_sigattrlog[9]).utf8p2
   end
   -- DECOMPILER ERROR at PC9: Confused about usage of register: R1 in 'UnsetPending'
 
@@ -19,6 +19,11 @@ do
   if not l_0_0 then
     return mp.CLEAN
   end
+  local l_0_3 = nil
+  ;
+  (bm.request_SMS)(((bm.get_current_process_startup_info)()).ppid, "H")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 100)
   local l_0_4 = nil
   local l_0_5, l_0_6 = {SIG_CONTEXT = "LummaC2_tempPath", CONTENT_SOURCE = "BM", TAG = "INTERFLOW"}, (mp.CheckUrl)(l_0_0)
   if l_0_6 == 1 and l_0_0 == 1 then

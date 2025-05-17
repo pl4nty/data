@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 9, 1)
-;
-(pe.set_regval)(pe.REG_EAX, (string.byte)(l_0_0, 1))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 13, "êê")
-return mp.INFECTED
+do
+  if peattributes.isexe == true and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

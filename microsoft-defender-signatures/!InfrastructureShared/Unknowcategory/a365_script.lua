@@ -3,28 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if not l_0_1 or #l_0_1 <= 18 then
+if not peattributes.hasexports then
   return mp.CLEAN
 end
-l_0_1 = (string.lower)(l_0_1)
-local l_0_2 = (string.match)(l_0_1, "%-p \"?([%d]+)\"? %-r \"?([%d]+)\"?")
-if not l_0_2 then
+local l_0_0 = {}
+l_0_0.SUUAFindUser = ""
+l_0_0.SUUAGetAttribute = ""
+l_0_0.SUUASetAttribute = ""
+l_0_0.SUUAEnumDirAccess = ""
+local l_0_1 = 0
+local l_0_2, l_0_3 = (pe.get_exports)()
+if l_0_2 < 4 then
   return mp.CLEAN
 end
-do
-  local l_0_3 = l_0_1 or 999
-  l_0_2 = tonumber(l_0_2)
-  -- DECOMPILER ERROR at PC43: Confused about usage of register: R3 in 'UnsetPending'
-
-  local l_0_4 = tonumber(l_0_3)
-  local l_0_5 = (mp.GetPPidFromPid)(l_0_2)
-  ;
-  (MpCommon.SetTaintedProcess)(l_0_5, l_0_4)
+for l_0_7 = 1, l_0_2 do
+  if l_0_0[(pe.mmap_string_rva)((l_0_3[l_0_7]).namerva, 64)] then
+    l_0_1 = l_0_1 + 1
+  end
+end
+if l_0_1 == 4 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

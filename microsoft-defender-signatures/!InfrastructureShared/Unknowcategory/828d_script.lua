@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) then
-    return mp.CLEAN
-  end
+if (mp.get_mpattribute)("pea_no_exports") and not (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 106496 and (mp.getfilesize)() < 139264 then
   return mp.INFECTED
 end
 return mp.CLEAN

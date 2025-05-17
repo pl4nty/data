@@ -3,31 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SCRIPT:Worm:JS/Bondat!lnk") and (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
-  local l_0_0 = tostring(headerpage)
-  do
-    if l_0_0:match("/c start wscript \"(%.Trashes\\%d+\\%l+%.js)\" &") == nil then
-      local l_0_1 = l_0_0:match("/c start wscript%.exe \"(%.Trashes\\%d+\\%l+%.js)\" &")
-      if l_0_1 == nil then
-        return mp.CLEAN
-      end
-    end
-    local l_0_2 = nil
-    do
-      local l_0_3 = nil
-      if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN or (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-        l_0_3 = (MpCommon.PathToWin32Path)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-      end
-      if l_0_3 == nil then
-        l_0_3 = ((mp.getfilename)()):match("(.+)\\[^\\]+$")
-      end
-      if l_0_3 == nil then
-        return mp.CLEAN
-      end
-      ;
-      (mp.ReportLowfi)(l_0_3 .. "\\" .. l_0_2, 2916175846)
-      return mp.CLEAN
+if mp.HEADERPAGE_SZ < 4096 or mp.FOOTERPAGE_SZ < 4096 then
+  return mp.CLEAN
+end
+if (mp.bitand)((mp.readu_u16)(headerpage, 1), 61680) == 24656 and (mp.bitand)((mp.readu_u16)(headerpage, 6), 61680) == 57344 then
+  local l_0_0 = (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 7)
+  local l_0_1 = (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 3)
+  if l_0_0 ~= 0 and l_0_1 ~= 0 and (mp.bitand)(l_0_0, 61680) == 0 and (mp.bitand)(l_0_1, 61680) == 0 then
+    local l_0_2 = (mp.getfilesize)()
+    local l_0_3 = (mp.readu_u16)(footerpage, mp.FOOTERPAGE_SZ - 40 - l_0_2 % 40 + 1)
+    local l_0_4 = footerpage[mp.FOOTERPAGE_SZ - 40 - l_0_2 % 40 + 7]
+    if l_0_3 ~= 0 and l_0_4 ~= 0 and (mp.bitxor)((mp.readu_u16)(headerpage, 1), l_0_3) == 26704 and (mp.bitxor)(headerpage[7], l_0_4) == 232 then
+      (mp.set_mpattribute)("MpNonPIIFileType")
+      return mp.INFECTED
     end
   end
+end
+do
+  return mp.CLEAN
 end
 

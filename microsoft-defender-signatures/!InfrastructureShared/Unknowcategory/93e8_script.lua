@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 20000000 then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
+  return mp.INFECTED
 end
-if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p1 == nil then
-  return mp.CLEAN
-end
-local l_0_0 = (this_sigattrlog[1]).utf8p1
-;
-(bm.trigger_sig)("BMGenericCodeInjector.A", l_0_0)
 return mp.CLEAN
 

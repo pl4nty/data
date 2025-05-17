@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and pehdr.MajorImageVersion == 13 and pehdr.MinorImageVersion == 32 then
-  (mp.changedetectionname)(805306482)
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_1 = (string.sub)(l_0_0, 15, 15)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\187" .. l_0_1 .. "\000\000\000êê\144")
 return mp.INFECTED
 

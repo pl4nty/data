@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
-  local l_0_1 = (string.len)(l_0_0)
-  local l_0_2 = (string.lower)((this_sigattrlog[3]).p1)
-  if (string.find)(l_0_2, l_0_0, (string.len)(l_0_2) - l_0_1, true) then
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
   return mp.CLEAN
 end
+if (string.match)(l_0_0, "extensions") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,13 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil or l_0_1 == nil then
-  return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0.integrity_level > 4096 then
+  local l_0_1 = (string.match)((this_sigattrlog[1]).utf8p1, "\\([^\\]+)$")
+  do
+    do
+      if l_0_1 then
+        local l_0_2 = (string.lower)(l_0_1)
+        if l_0_2 == "lzma.exe" or l_0_2 == "lzma_exe" or l_0_2 == "atinst.exe" then
+          return mp.CLEAN
+        end
+      end
+      do return mp.INFECTED end
+      return mp.CLEAN
+    end
+  end
 end
-if (l_0_1:find("\\application data\\$") ~= nil or l_0_1:find("\\appdata\\roaming\\$") ~= nil) and l_0_2 == "btvstack.dll" then
-  (mp.set_mpattribute)("Lua:ContextFileNameBtvstack.A")
-end
-return mp.CLEAN
 

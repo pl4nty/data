@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 118784 and l_0_0 <= 139264 and (pehdr.NumberOfSections >= 5 or pehdr.NumberOfSections <= 7) then
+local l_0_0 = "(.+\\)"
+local l_0_1 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
+if l_0_1 ~= nil and l_0_1 == (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0) then
   return mp.INFECTED
 end
 return mp.CLEAN

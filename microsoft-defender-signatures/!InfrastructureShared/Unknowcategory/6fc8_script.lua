@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 10240000 then
-  return mp.CLEAN
-end
-if pehdr.Subsystem == 11 or pehdr.Subsystem == 12 then
+if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") then
   return mp.INFECTED
 end
 return mp.CLEAN

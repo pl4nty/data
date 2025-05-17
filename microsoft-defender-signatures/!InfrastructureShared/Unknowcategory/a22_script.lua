@@ -3,12 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_2 = nil, nil
+  end
+  do
+    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+      local l_0_1 = nil
+    end
+    -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC32: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC33: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil and (this_sigattrlog[2]).utf8p2 ~= nil and (string.find)((this_sigattrlog[2]).utf8p2, l_0_1, 1, true) then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-if (string.find)(l_0_0, ".terminal", 1, true) ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

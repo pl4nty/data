@@ -3,39 +3,44 @@
 
 -- params : ...
 -- function num : 0
-checkPossibleEncoded = function(l_1_0, l_1_1, l_1_2)
-  -- function num : 0_0
-  for l_1_6 in l_1_0:gmatch(l_1_1) do
-    if l_1_2 <= (string.len)(l_1_6) then
-      return true
-    end
-  end
-  return false
-end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-local l_0_0 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_0 = (this_sigattrlog[1]).utf8p2
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_1 = (this_sigattrlog[2]).utf8p2
+  local l_0_2 = nil
 else
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    l_0_0 = (this_sigattrlog[2]).utf8p2
-  end
-end
-l_0_0 = (string.lower)(l_0_0)
-if (string.len)(l_0_0) < 2048 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "%.ps1") then
-  return mp.CLEAN
 end
 do
-  if checkPossibleEncoded(l_0_0, "%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w%w+", 2048) then
-    local l_0_1, l_0_2 = (string.match)(l_0_0, " ([-/]wi?n?d?o?w?s?s?t?y?l?e?)%s+(%w+)%s")
-    if l_0_2 == "1" or (string.find)(l_0_2, "^hi") then
-      (bm.add_action)("EmsScan", 5000)
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
+
+  if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).utf8p2 ~= nil then
+    local l_0_3, l_0_4 = (this_sigattrlog[3]).utf8p1, (this_sigattrlog[3]).utf8p2
+    l_0_4 = (this_sigattrlog[4]).utf8p2
+    local l_0_5 = nil
+  else
+  end
+  do
+    -- DECOMPILER ERROR at PC80: Overwrote pending register: R0 in 'AssignReg'
+
+    if (not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).utf8p2 == nil or (this_sigattrlog[6]).matched) and (this_sigattrlog[6]).utf8p2 ~= nil then
+      local l_0_6, l_0_7, l_0_9, l_0_10, l_0_12, l_0_13, l_0_15 = (this_sigattrlog[5]).utf8p1, (this_sigattrlog[5]).utf8p2
+      l_0_9 = this_sigattrlog
+      l_0_9 = l_0_9[6]
+      l_0_7 = l_0_9.utf8p2
+      local l_0_8, l_0_11, l_0_14, l_0_16 = nil
+    else
+    end
+    do
+      if ((this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p2 ~= nil and (this_sigattrlog[7]).utf8p1 == nil) or (this_sigattrlog[7]).utf8p2 == nil then
+        return mp.CLEAN
+      end
+      local l_0_17 = nil
+      local l_0_18 = nil
+      ;
+      (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), {["[" .. l_0_17 .. "]"] = "[" .. l_0_18 .. "]"})
       return mp.INFECTED
     end
   end
-  return mp.CLEAN
 end
 

@@ -3,28 +3,41 @@
 
 -- params : ...
 -- function num : 0
-local l_0_1 = nil
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = "base64_plist_creation"
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R1 in 'UnsetPending'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R1 in 'UnsetPending'
+if (this_sigattrlog[2]).matched then
+  local l_0_0, l_0_1, l_0_3, l_0_4, l_0_6 = nil, nil
+else
+  do
+    do return mp.CLEAN end
+    if (this_sigattrlog[9]).matched then
+      local l_0_2, l_0_5, l_0_7 = , (this_sigattrlog[9]).utf8p1
+    else
+      do
+        do return mp.CLEAN end
+        -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
 
-  if l_0_1 ~= nil and (MpCommon.GetPersistContextCountNoPath)(l_0_0) > 0 then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((MpCommon.GetPersistContextNoPath)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC28: Confused about usage of register: R7 in 'UnsetPending'
+        local l_0_8 = nil
+        -- DECOMPILER ERROR at PC27: Confused about usage of register: R1 in 'UnsetPending'
 
-      if (string.find)(l_0_1, R7_PC28, 1, true) then
+        local l_0_9 = nil
+        if l_0_5:match("/users/([^/]+)/") ~= l_0_2:match("/users/([^/]+)/") then
+          return mp.CLEAN
+        end
+        local l_0_10 = nil
+        if l_0_8:match("([^/]+)$") == nil then
+          return mp.CLEAN
+        end
+        local l_0_11 = nil
+        if l_0_9:match("([^/]+).plist$") == nil then
+          return mp.CLEAN
+        end
+        if l_0_8:match("([^/]+)$") ~= l_0_9:match("([^/]+).plist$") then
+          return mp.CLEAN
+        end
         return mp.INFECTED
       end
     end
-  end
-  do
-    return mp.CLEAN
   end
 end
 

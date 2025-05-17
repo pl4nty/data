@@ -3,35 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  if (this_sigattrlog[1]).utf8p1 ~= nil then
-    if (string.match)((this_sigattrlog[1]).utf8p1, "\\\\BitTorrent$") ~= nil then
-      return mp.CLEAN
-    end
-    if (string.match)((this_sigattrlog[1]).utf8p1, "\\\\uTorrent$") ~= nil then
-      return mp.CLEAN
-    end
-  end
-  if (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (string.match)((this_sigattrlog[1]).utf8p2, "%a:[^:\"]+%.exe")
-    if l_0_0 then
-      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
-    end
-    local l_0_1 = (string.match)((this_sigattrlog[1]).utf8p2, "%a:[^:\"]+%.ps1")
-    if l_0_1 then
-      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_1))
-    end
-    local l_0_2 = (string.match)((this_sigattrlog[1]).utf8p2, "%a:[^:\"]+%.bat")
-    if l_0_2 then
-      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_2))
-    end
-    local l_0_3 = (string.match)((this_sigattrlog[1]).utf8p2, "%a:[^:\"]+%.dll")
-    if l_0_3 then
-      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_3))
-    end
-  end
-end
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.INFECTED
+  if (this_sigattrlog[3]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
+  end
+  if not (this_sigattrlog[4]).matched or not (string.lower)((this_sigattrlog[4]).utf8p2) then
+    return mp.CLEAN
+  end
+  local l_0_3 = nil
+  if (bm.get_current_process_startup_info)() and ((bm.get_current_process_startup_info)()).integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
+    if (string.find)(l_0_3, "\\opencover.profiler.dll", 1, true) or (string.find)(l_0_3, "mscoree.dll", 1, true) then
+      return mp.CLEAN
+    end
+    if (sysio.IsFileExists)(l_0_3) and not (mp.IsKnownFriendlyFile)(l_0_3, false, false) then
+      (bm.add_related_file)(l_0_3)
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

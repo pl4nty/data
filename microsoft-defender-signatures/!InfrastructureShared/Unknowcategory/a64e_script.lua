@@ -3,27 +3,48 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 3
-local l_0_1 = pevars.epsec
-if (hstrlog[1]).matched and mp.HSTR_WEIGHT >= 2 then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+  end
+  -- DECOMPILER ERROR at PC35: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
+      local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p2)
+    end
+    -- DECOMPILER ERROR at PC59: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
+        local l_0_2 = (string.lower)((this_sigattrlog[4]).utf8p2)
+      end
+      -- DECOMPILER ERROR at PC83: Overwrote pending register: R0 in 'AssignReg'
+
+      do
+        if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
+          local l_0_3, l_0_4, l_0_5, l_0_6, l_0_7 = (string.lower)((this_sigattrlog[6]).utf8p2), nil, nil
+        end
+        -- DECOMPILER ERROR at PC100: Confused about usage of register: R0 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC107: Confused about usage of register: R0 in 'UnsetPending'
+
+        if (not (this_sigattrlog[8]).matched or (string.lower)((this_sigattrlog[8]).utf8p2) ~= nil) and (string.find)((string.lower)((this_sigattrlog[8]).utf8p2), "\" ..") then
+          local l_0_8 = nil
+          local l_0_9 = nil
+          ;
+          (mp.ReportLowfi)(l_0_9, 138103733)
+          ;
+          (mp.ReportLowfi)((string.gsub)((string.gsub)((string.lower)((this_sigattrlog[8]).utf8p2), " ..", ""), "\"", ""), 138103733)
+          return mp.INFECTED
+        end
+        do
+          return mp.INFECTED
+        end
+      end
+    end
+  end
 end
-if (mp.getfilesize)() < 40960 or pehdr.NumberOfSections < l_0_0 then
-  return mp.CLEAN
-end
-local l_0_2 = (hstrlog[1]).VA - pehdr.ImageBase
-local l_0_3 = (pesecs[l_0_0]).VirtualAddress
-local l_0_4 = (pesecs[l_0_0]).VirtualSize
-local l_0_5 = (pesecs[l_0_1]).VirtualAddress
-local l_0_6 = (pesecs[l_0_1]).VirtualSize
-if (l_0_3 <= l_0_2 and l_0_2 <= l_0_3 + l_0_4) or l_0_5 <= l_0_2 and l_0_2 <= l_0_5 + l_0_6 then
-  return mp.INFECTED
-end
-if peattributes.epscn_islast == true and peattributes.lastscn_executable == true and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3758096384) == 3758096384 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
-  return mp.CLEAN
-end
-return mp.CLEAN
 

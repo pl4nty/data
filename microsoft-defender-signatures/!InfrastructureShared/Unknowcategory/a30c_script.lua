@@ -3,29 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
+-- DECOMPILER ERROR at PC3: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if peattributes.epscn_islast ~= true then
+-- DECOMPILER ERROR at PC14: Overwrote pending register: R1 in 'AssignReg'
+
+local l_0_1 = nil
+if l_0_1 == nil then
   return mp.CLEAN
 end
-if peattributes.lastscn_writable ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC24: Overwrote pending register: R2 in 'AssignReg'
+
+local l_0_2 = nil
+if l_0_2 ~= nil and ((string.find)(l_0_2, "wget", 1, true) or (string.find)(l_0_2, "powershell", 1, true) or (string.find)(l_0_2, "python", 1, true)) then
+  return mp.INFECTED
 end
-if epcode[1] ~= 131 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 124 then
-  return mp.CLEAN
-end
-if epcode[3] ~= 36 then
-  return mp.CLEAN
-end
-if epcode[5] ~= 1 then
-  return mp.CLEAN
-end
-if epcode[6] ~= 117 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

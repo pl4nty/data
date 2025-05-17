@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 2 then
-  (mp.set_mpattribute)("HSTR:Nivdort.AE1")
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

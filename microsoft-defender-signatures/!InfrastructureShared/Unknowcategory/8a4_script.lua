@@ -3,21 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine ~= 332 and pehdr.Machine ~= 34404 then
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = nil
+  local l_0_1 = (string.lower)((bm.get_imagepath)())
+  if (this_sigattrlog[1]).utf8p2 ~= nil then
+    l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  end
+  if l_0_1:find("appvclient%.exe") ~= nil then
+    return mp.CLEAN
+  end
+  if l_0_0 ~= nil then
+    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_6,l_0_7 in ipairs(l_0_2) do
+      l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+      if (sysio.IsFileExists)(l_0_7) then
+        (bm.add_related_file)(l_0_7)
+      end
+    end
+  end
 end
-if pehdr.SectionAlignment >= 4096 then
-  return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
-local l_0_0 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA
-local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).Size
-if l_0_0 == 0 or l_0_1 == 0 then
-  return mp.CLEAN
-end
-local l_0_2 = pehdr.AddressOfEntryPoint
-local l_0_3 = (pe.foffset_rva)(l_0_2)
-if l_0_0 < l_0_3 and l_0_3 < l_0_0 + l_0_1 then
-  (mp.set_mpattribute)("Lua:PE:SignedAndSubPageSectionAligned_EPInCert")
-end
-return mp.INFECTED
 

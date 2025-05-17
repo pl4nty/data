@@ -3,19 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = (bm.get_process_relationships)()
-    for l_0_5,l_0_6 in ipairs(l_0_0) do
-      if l_0_6.image_path ~= nil then
-        local l_0_7 = (string.lower)(l_0_6.image_path)
-        if (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)(l_0_7, "\\cmd.exe", 1, true) or (string.find)(l_0_7, "\\powershell.exe", 1, true) or (string.find)(l_0_7, "\\sdiagnhost.exe", 1, true) or (string.find)(l_0_7, "\\qualysagent.exe", 1, true) or (string.find)(l_0_7, "\\pulsesecureservice.exe", 1, true) or (string.find)(l_0_7, "\\javaw.exe", 1, true) or (string.find)(l_0_7, "\\java.exe", 1, true) or (string.find)(l_0_7, "\\ruby.exe", 1, true) or (string.find)(l_0_7, "\\logmein.exe", 1, true) or (string.find)(l_0_7, "\\fasm.exe", 1, true) or (string.find)(l_0_7, ":\\windows\\assembly\\", 1, true) or (string.find)(l_0_7, "\\911 location manager.exe", 1, true)) then
-          return mp.CLEAN
-        end
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
+if (string.find)(l_0_0, "\\microsoft\\edge\\", 1, true) or (string.find)(l_0_0, "\\systemsettings.exe", 1, true) or (string.find)(l_0_0, "\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\explorer.exe", 1, true) or (string.find)(l_0_0, "\\msiexec.exe", 1, true) or (string.find)(l_0_0, ".tmp\\setup.exe", 1, true) or (string.find)(l_0_0, "\\openwith.exe", 1, true) or (string.find)(l_0_0, "\\searchprotocolhost.exe", 1, true) or (string.find)(l_0_0, "\\searchindexer.exe", 1, true) or (string.find)(l_0_0, "\\runtimebroker.exe", 1, true) or (string.find)(l_0_0, "\\msiexec.exe", 1, true) or (string.find)(l_0_0, "\\chrmstp.exe", 1, true) or (string.find)(l_0_0, "\\userprofilemanager.exe", 1, true) or (string.find)(l_0_0, "\\taskhostw.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

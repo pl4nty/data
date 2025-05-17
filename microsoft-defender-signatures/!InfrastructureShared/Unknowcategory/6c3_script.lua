@@ -3,5 +3,31 @@
 
 -- params : ...
 -- function num : 0
-return mp.INFECTED
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+    local l_0_1 = ((string.lower)((bm.get_imagepath)()))
+    local l_0_2 = nil
+    if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
+      l_0_2 = (string.match)(l_0_1, "(.-)[^\\]-[^\\%.]+$")
+    end
+    for l_0_6 in (string.gmatch)(l_0_0, "%S+") do
+      if (sysio.IsFileExists)(l_0_6) then
+        (bm.add_related_file)(l_0_6)
+      else
+        if l_0_2 ~= nil and (string.len)(l_0_2) > 3 then
+          local l_0_7 = l_0_2 .. l_0_6
+          if (sysio.IsFileExists)(l_0_7) then
+            (bm.add_related_file)(l_0_6)
+          end
+        end
+      end
+    end
+  end
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

@@ -672,9 +672,9 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
           local l_5_18 = l_5_16 / 1440
           local l_5_19 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1)
           if not l_5_19 then
-            if l_5_2 < l_5_17 then
-              l_5_4.Marker_Days_Elapsed = l_5_17
-              l_5_4.Marker_Days_Elapsed_Event = l_5_18
+            if l_5_2 < l_5_18 then
+              l_5_4.Marker_Days_Elapsed_ActualTime = l_5_17
+              l_5_4.Marker_Days_Elapsed_EventUnbiasedTime = l_5_18
               return true, false, l_5_4
             else
               l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
@@ -686,8 +686,8 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
               end
               l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
               if l_5_4 then
-                l_5_4.Marker_Days_Elapsed = l_5_17
-                l_5_4.Marker_Days_Elapsed_Event = l_5_18
+                l_5_4.Marker_Days_Elapsed_ActualTime = l_5_17
+                l_5_4.Marker_Days_Elapsed_EventUnbiasedTime = l_5_18
               end
               return true, true, l_5_4
             end
@@ -704,8 +704,8 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
             end
             l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
             if l_5_4 then
-              l_5_4.Marker_Days_Elapsed = l_5_17
-              l_5_4.Marker_Days_Elapsed_Event = l_5_18
+              l_5_4.Marker_Days_Elapsed_ActualTime = l_5_17
+              l_5_4.Marker_Days_Elapsed_EventUnbiasedTime = l_5_18
             end
             local l_5_21 = false
             return l_5_21, l_5_17 < l_5_2, l_5_4
@@ -729,8 +729,8 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
           end
           l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
           if l_5_4 then
-            l_5_4.Marker_Days_Elapsed = 0
-            l_5_4.Marker_Days_Elapsed_Event = 0
+            l_5_4.Marker_Days_Elapsed_ActualTime = 0
+            l_5_4.Marker_Days_Elapsed_EventUnbiasedTime = 0
           end
           return true, true, l_5_4
         end
@@ -1751,6 +1751,21 @@ isSimilarIndicator = function(l_23_0, l_23_1, l_23_2)
         l_23_4 = true
         if l_23_29.IndicatorScore < l_23_3 then
           l_23_3 = l_23_29.IndicatorScore
+        end
+      end
+    end
+    if l_23_4 then
+      return true, l_23_3 / 2
+    else
+      return false
+    end
+  end
+  if (string.find)(l_23_1, "SuspDirectoryDrop", 1, true) then
+    for l_23_33,l_23_34 in pairs(l_23_0) do
+      if l_23_33 == l_23_1 then
+        l_23_4 = true
+        if l_23_34.IndicatorScore < l_23_3 then
+          l_23_3 = l_23_34.IndicatorScore
         end
       end
     end

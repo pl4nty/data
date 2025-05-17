@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("Lua:OverSizedLnkFile") and (mp.getfilesize)() < 1024000 then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 11)
+if (mp.readu_u32)(l_0_0, 7) < 4194304 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,35 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_3 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = "|.xls|.doc|.ppt|.pps|docx|pptx|ppsx|xlsx|"
-else
-  do
-    -- DECOMPILER ERROR at PC27: Overwrote pending register: R0 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC41: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-        local l_0_1, l_0_2 = nil
-      end
-      if l_0_3 ~= nil then
-        local l_0_4 = nil
-        for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
-          local l_0_5 = nil
-          -- DECOMPILER ERROR at PC54: Confused about usage of register: R7 in 'UnsetPending'
-
-          R7_PC54 = (mp.ContextualExpandEnvironmentVariables)(R7_PC54)
-          if (sysio.IsFileExists)(R7_PC54) and (string.find)(l_0_4, (string.sub)(R7_PC54, -4), 1, true) then
-            (bm.add_related_file)(R7_PC54)
-          end
-        end
-      end
-      do
-        return mp.INFECTED
-      end
+do
+  if (versioning.GetEngineBuild)() >= 16700 then
+    local l_0_0 = (versioning.GetOrgID)()
+    if l_0_0 and (string.lower)(l_0_0) == "d7c7c745-195f-4223-9c7a-99fb420fd000" then
+      return mp.CLEAN
     end
+  end
+  local l_0_1 = nil
+  if (this_sigattrlog[2]).matched then
+    l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p1)
+    end
+  end
+  if l_0_1 ~= nil then
+    local l_0_2 = (string.sub)(l_0_1, -4)
+    local l_0_3 = "|.asp|aspx|ashx|asmx|"
+    if (string.find)(l_0_3, l_0_2, 1, true) then
+      if (sysio.IsFileExists)(l_0_1) then
+        (bm.add_related_file)(l_0_1)
+      end
+      return mp.INFECTED
+    end
+  end
+  do
+    return mp.CLEAN
   end
 end
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -12) == "\\svchost.exe" then
-  return mp.CLEAN
+if pehdr.NumberOfSections >= 2 and (pesecs[pehdr.NumberOfSections]).Name == ".imports" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

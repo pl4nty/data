@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  (mp.changedetectionname)(805306415)
+if peattributes.is_process and not peattributes.hstr_exhaustive then
   return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

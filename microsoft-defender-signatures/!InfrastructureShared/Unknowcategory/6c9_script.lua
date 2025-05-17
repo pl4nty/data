@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-do
-  if (string.find)(l_0_1, "mshta", 1, true) ~= nil and (string.find)(l_0_1, "http", 1, true) ~= nil then
-    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-    for l_0_6,l_0_7 in ipairs(l_0_2) do
-      if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-        (bm.add_related_file)(l_0_7)
-      end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) then
+    local l_0_2 = l_0_1:match("([^\\]+)$")
+    if l_0_2 == "fodhelper.exe" or l_0_2 == "computerdefaults.exe" or l_0_2 == "wsreset.exe" or l_0_2 == "changepk.exe" or l_0_2 == "control.exe" then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

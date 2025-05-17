@@ -3,20 +3,24 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
+if (this_sigattrlog[2]).matched then
+  local l_0_0 = nil
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    if l_0_1 ~= nil then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+        ;
+        (bm.add_related_file)(l_0_6)
+      end
+    end
+  end
+end
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC46: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (string.lower)((this_sigattrlog[2]).utf8p2) ~= nil) and (string.match)((string.lower)((this_sigattrlog[2]).utf8p2), "\\appdata\\") and (string.match)((string.lower)((this_sigattrlog[2]).utf8p2), " %-%-su$") then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  l_0_1 = mp
+  l_0_1 = l_0_1.INFECTED
+  return l_0_1
 end
 

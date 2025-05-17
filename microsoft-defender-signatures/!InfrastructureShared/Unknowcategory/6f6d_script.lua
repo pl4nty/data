@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 6 then
-  (mp.set_mpattribute)("HSTR:Outbrowse_Concrete.A1")
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.sub)(l_0_0, -16) == "skypelogview.exe" then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("PUA:Block:OutBrows")
-return mp.INFECTED
+return mp.LOWFI
 

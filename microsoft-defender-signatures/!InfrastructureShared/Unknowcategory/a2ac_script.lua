@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil then
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if ((string.match)(l_0_0, "%%localappdata%%\\%a+\\%a+%.exe$") or (string.match)(l_0_0, "%%localappdata%%\\{%x+%-%x+%-%x+%-%x+%-%x+}\\%a+%.exe$")) and (string.match)(l_0_0, "\\[b-t][aeiou][b-t][aeiou]%a+%.exe$") then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\endpoint agent\\edpa.exe", 1, true) or (string.find)(l_0_0, "\\program files (x86)\\internet explorer\\iexplore.exe", 1, true) or (string.find)(l_0_0, "mars\\microsoft azure recovery services agent\\bin\\cbengine.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

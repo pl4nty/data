@@ -3,12 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+if not peattributes.isexe or peattributes.hasstandardentry or pehdr.Machine ~= 332 then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\systemsettings.exe", 1, true) or (string.find)(l_0_0, "\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\explorer.exe", 1, true) or (string.find)(l_0_0, "\\openwith.exe", 1, true) or (string.find)(l_0_0, "\\searchprotocolhost.exe", 1, true) or (string.find)(l_0_0, "\\searchindexer.exe", 1, true) or (string.find)(l_0_0, "\\runtimebroker.exe", 1, true) or (string.find)(l_0_0, "\\msiexec.exe", 1, true) or (string.find)(l_0_0, "\\taskhostw.exe", 1, true) or (string.find)(l_0_0, "\\userprofilemanager.exe", 1, true) then
+if (mp.getfilesize)() >= 3145728 then
   return mp.CLEAN
 end
-return mp.INFECTED
+if (this_sigattrlog[10]).matched and (this_sigattrlog[11]).matched then
+  local l_0_0 = (string.sub)((this_sigattrlog[10]).p1, 5)
+  local l_0_1 = (this_sigattrlog[11]).p1
+  if #l_0_0 ~= #l_0_1 then
+    return mp.CLEAN
+  end
+  if (string.find)(l_0_1, "\\", 1, true) ~= nil then
+    return mp.CLEAN
+  end
+  if (string.lower)((string.sub)(l_0_0, 1, 1)) == (string.lower)((string.sub)(l_0_1, 1, 1)) or (string.lower)((string.sub)(l_0_0, 2)) ~= (string.lower)((string.sub)(l_0_1, 2)) or (string.lower)((string.sub)(l_0_0, -4)) ~= ".dll" then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
+end
+do
+  return mp.CLEAN
+end
 

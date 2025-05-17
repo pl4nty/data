@@ -3,21 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_2 = nil
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = (bm.get_current_process_startup_info)()
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
-  if l_0_2.utf8p1 == nil then
-    return mp.CLEAN
-  end
-  local l_0_3 = nil
-  if (sysio.GetFileSize)(l_0_2.utf8p1) < 10485760 and l_0_3 ~= nil and l_0_3.ppid ~= nil then
-    (bm.request_SMS)(l_0_3.ppid, "m")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 1)
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if l_0_0 ~= nil then
+      local l_0_2 = nil
+      -- DECOMPILER ERROR at PC37: Confused about usage of register: R1 in 'UnsetPending'
+
+      if l_0_0:match("/e:javascript%S?(\"?[^/]*\")") ~= nil and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_0:match("/e:javascript%S?(\"?[^/]*\")"))) == true then
+        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_0:match("/e:javascript%S?(\"?[^/]*\")")))
+      end
+    end
     return mp.INFECTED
   end
-  return mp.CLEAN
 end
 

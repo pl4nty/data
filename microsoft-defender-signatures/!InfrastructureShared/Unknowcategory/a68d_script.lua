@@ -3,34 +3,47 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).matched or not (this_sigattrlog[2]).matched then
+if peattributes.no_relocs ~= true then
   return mp.CLEAN
 end
-if not (this_sigattrlog[1]).wp2 or not (this_sigattrlog[2]).utf8p1 then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
-local l_0_0 = (mp.utf16to8)((this_sigattrlog[1]).wp2)
-local l_0_1 = (this_sigattrlog[2]).utf8p1
-if #l_0_1 <= #l_0_0 or (string.sub)(l_0_1, -#l_0_0) ~= l_0_0 then
+if pehdr.MajorLinkerVersion ~= 6 then
   return mp.CLEAN
 end
-if not (sysio.IsFileExists)(l_0_1) then
+if peattributes.epinfirstsect ~= true then
   return mp.CLEAN
 end
-if (versioning.GetCloudBlockLevel)() == 4 then
-  (mp.TriggerScanResource)("taskscheduler", l_0_1)
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
 end
-if (MpCommon.GetPersistContextCountNoPath)("bm_ipc_taskschd") > 0 then
-  local l_0_2 = (MpCommon.GetPersistContextNoPath)("bm_ipc_taskschd")
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_8, l_0_9, l_0_10 = (string.match)(l_0_7, "([%w%p]+);([%w%p]+);([%w%p]+)")
-    ;
-    (mp.ReportLowfi)(l_0_10, tonumber(l_0_9))
-  end
+if pehdr.SizeOfImage < 262144 then
+  return mp.CLEAN
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
+if pehdr.SizeOfImage > 389120 then
+  return mp.CLEAN
 end
+if pehdr.AddressOfEntryPoint < 192512 then
+  return mp.CLEAN
+end
+if pehdr.AddressOfEntryPoint > 323584 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData < 217088 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData > 327680 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size < 160 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size > 240 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

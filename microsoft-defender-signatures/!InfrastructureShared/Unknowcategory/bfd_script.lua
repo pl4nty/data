@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  return mp.LOWFI
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:InstallIQ")
+return mp.INFECTED
 

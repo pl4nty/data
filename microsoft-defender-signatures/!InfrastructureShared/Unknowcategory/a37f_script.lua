@@ -3,25 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = -1
-if (pesecs[3]).Name == ".data" then
-  l_0_0 = 3
-end
-if (pesecs[2]).Name == ".data" then
-  l_0_0 = 2
-end
-if l_0_0 == -1 then
+if not peattributes.isdll or pehdr.TimeDateStamp ~= 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA == 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).Size < 9 then
   return mp.CLEAN
 end
-if (pesecs[l_0_0]).SizeOfRawData > 4096 then
-  local l_0_1 = pehdr.ImageBase + (pesecs[l_0_0]).VirtualAddress + 16
-  local l_0_2 = (pe.mmap_va)(l_0_1, 16)
-  if (string.byte)(l_0_2, 1) == 77 and (string.byte)(l_0_2, 2) == 90 then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+;
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_rva)(((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA, 9)
+if (mp.readu_u32)(l_0_0, 5) == 4294967295 then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

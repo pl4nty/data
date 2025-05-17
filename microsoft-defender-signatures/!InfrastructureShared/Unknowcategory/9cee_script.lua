@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 13 and (mp.getfilesize)() >= 5200000 and (mp.getfilesize)() <= 5850000 and (pesecs[8]).Name == ".idata" and (pesecs[9]).Name == ".tls" and (pesecs[13]).Name == ".reloc" then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.find)(l_0_1, "\\windows\\system32\\services.exe", 1, true) then
+      if (versioning.IsSeville)() then
+        return mp.INFECTED
+      end
+      return mp.LOWFI
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

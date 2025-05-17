@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if headerpage[41] == 32 and headerpage[42] == 69 and headerpage[43] == 77 and headerpage[44] == 70 then
-  (mp.set_mpattribute)("EMF_FILE")
+if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 4) == true then
+  (mp.set_mpattribute)("Lua:MpEnableCustomE5Signatures")
 end
 return mp.CLEAN
 

@@ -3,17 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_1 == "my.dat" then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if l_0_2:len() > 7 and (string.sub)(l_0_2, -5) == "\\temp" and (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "mediaget.exe" then
-      return mp.INFECTED
+local l_0_0 = (mp.IOAVGetDownloadBrowser)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  if l_0_0 == "utorrent.exe" or l_0_0 == "bittorrent.exe" then
+    (mp.set_mpattribute)("Lua:IOAVBrowserUtorrent")
+  else
+    if l_0_0 == "chrome.exe" then
+      (mp.set_mpattribute)("Lua:IOAVBrowserChrome")
+    else
+      if l_0_0 == "browser_broker.exe" then
+        (mp.set_mpattribute)("Lua:IOAVBrowserEdge")
+      else
+        if l_0_0 == "iexplore.exe" then
+          (mp.set_mpattribute)("Lua:IOAVBrowserIE")
+        else
+          if l_0_0 == "opera.exe" then
+            (mp.set_mpattribute)("Lua:IOAVBrowserOpera")
+          end
+        end
+      end
     end
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

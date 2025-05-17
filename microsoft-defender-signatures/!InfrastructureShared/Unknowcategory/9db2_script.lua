@@ -3,16 +3,10 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-    if l_0_0 ~= nil then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2107638873)
-      return mp.INFECTED
-    end
-  end
+if (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr - 2, 2), 1) ~= 55295 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "ût", 1, true), "\235")
+return mp.INFECTED
 

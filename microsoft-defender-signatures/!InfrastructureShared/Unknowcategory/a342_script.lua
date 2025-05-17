@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint and (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 18, 4), 1), 4), 1)) == 1467596470 and (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 24, 4), 1), 4), 1)) == 3909456120 then
-  return mp.INFECTED
+if peattributes.isdll and (hstrlog[3]).matched then
+  local l_0_0 = (hstrlog[3]).VA + 6
+  local l_0_1 = (mp.readu_u32)((pe.mmap_va)(l_0_0 + 1, 4), 1)
+  local l_0_2 = (pe.mmap_va)(l_0_1, 95)
+  if (string.sub)(l_0_2, 1, 95) == "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\CLSID\\{871C5380-42A0-1069-A2EA-08002B30309D}" then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.LOWFI
+end
 

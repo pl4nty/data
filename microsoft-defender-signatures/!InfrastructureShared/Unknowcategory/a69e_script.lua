@@ -3,44 +3,18 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+if l_0_0 then
+  if not (string.find)(l_0_0, "^c:\\") and not (string.find)(l_0_0, "^\\\\") then
+    return mp.CLEAN
   end
-  local l_0_1, l_0_2 = , (bm.get_process_relationships)()
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC17: Confused about usage of register: R7 in 'UnsetPending'
-
-    if (string.lower)(R7_PC17.image_path) ~= nil and ((string.find)((string.lower)(R7_PC17.image_path), "\\wmiprvse.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\winrshost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\powershell.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\scrcons.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\wsmprovhost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\cmd.exe", 1, true)) then
-      if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
-        local l_0_9 = nil
-        if (mp.GetExecutablesFromCommandLine)(l_0_1) ~= nil then
-          for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-            local l_0_10 = nil
-            -- DECOMPILER ERROR at PC95: Confused about usage of register: R14 in 'UnsetPending'
-
-            R14_PC95 = (mp.ContextualExpandEnvironmentVariables)(R14_PC95)
-            ;
-            (bm.add_related_file)(R14_PC95)
-          end
-        end
-      end
-      do
-        do
-          do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
-    end
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\windows\\", 1, true) or (string.find)(l_0_0, "\\steam", 1, true) or (string.find)(l_0_0, "robloxplayer", 1, true) or (string.find)(l_0_0, "kartrider", 1, true) or (string.find)(l_0_0, "apex", 1, true) or (string.find)(l_0_0, "\\fivem", 1, true) or (string.find)(l_0_0, "\\yandex", 1, true) or (string.find)(l_0_0, "game", 1, true) then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  if not (MpCommon.QueryPersistContext)(l_0_0, "ExecutedPENoCert") then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
+return mp.CLEAN
 

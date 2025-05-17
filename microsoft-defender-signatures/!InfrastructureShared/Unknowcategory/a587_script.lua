@@ -3,33 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsKnownFriendlyFile)((MpCommon.PathToWin32Path)((bm.get_imagepath)()), true, true) == true then
-  return mp.CLEAN
-end
-is_in_program_files = function(l_1_0)
-  -- function num : 0_0
-  if (string.match)(l_1_0, "%a:\\program files") ~= nil then
-    return true
-  else
-    return false
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
+  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    if not (string.find)(l_0_6, "\\cmd.exe", 1, true) and not (string.find)(l_0_6, "\\svchost.exe", 1, true) and not (string.find)(l_0_6, "\\winrshost.exe", 1, true) and not (string.find)(l_0_6, "\\bcryptprimitives.dll", 1, true) and l_0_6 ~= nil and (string.len)(l_0_6) > 3 and (sysio.IsFileExists)(l_0_6) then
+      (bm.add_related_file)(l_0_6)
+    end
   end
 end
-
-is_clickonce_app = function(l_2_0)
-  -- function num : 0_1
-  if (string.match)(l_2_0, "\\appdata\\local\\apps\\2.0\\") ~= nil then
-    return true
-  else
-    return false
-  end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
-
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if is_in_program_files(l_0_0) then
-  return mp.CLEAN
-end
-if is_clickonce_app(l_0_0) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

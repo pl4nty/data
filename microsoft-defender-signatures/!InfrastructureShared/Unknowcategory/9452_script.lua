@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 246 and epcode[2] == 195 and epcode[3] == 1 and epcode[4] == 116 and peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and peattributes.no_security == true and l_0_0 <= 53248 and l_0_0 >= 36864 and peattributes.isdll == true and (mp.get_mpattribute)("Trojan:MSIL/MalInject.A!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

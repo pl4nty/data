@@ -3,15 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil == true then
-    local l_0_0 = (string.lower)((mp.getfilename)())
-    if (string.find)(l_0_0, ".scr$") or (string.find)(l_0_0, ".tmp$") then
-      return mp.INFECTED
-    else
-      return mp.LOWFI
-    end
-  end
-  return mp.CLEAN
-end
+local l_0_0 = {}
+l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+return mp.INFECTED
 

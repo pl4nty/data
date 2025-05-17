@@ -5,90 +5,97 @@
 -- function num : 0
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0, l_0_1 = nil, nil
+  l_0_1 = (this_sigattrlog[1]).utf8p2
+  local l_0_2 = nil
+else
+end
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-    local l_0_0 = nil
-  else
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R0 in 'AssignReg'
+
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+    local l_0_3, l_0_4, l_0_5 = (this_sigattrlog[2]).ppid, (this_sigattrlog[2]).utf8p2
+    l_0_5 = this_sigattrlog
+    l_0_5 = l_0_5[3]
+    l_0_4 = l_0_5.utf8p2
+    local l_0_6 = nil
   end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
-
   do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).wp2 ~= nil then
-      local l_0_1 = (this_sigattrlog[2]).utf8p2
-    else
+    -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_3 == nil then
+      return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+    if (this_sigattrlog[4]).matched == false then
+      return mp.CLEAN
+    end
+    local l_0_7 = nil
+    if l_0_7 ~= (this_sigattrlog[4]).ppid then
+      return mp.CLEAN
+    end
+    local l_0_8, l_0_9 = nil
+    local l_0_10 = (bm.get_process_relationships)(l_0_7)
+    for l_0_14,l_0_15 in ipairs(R7_PC78) do
+      local l_0_11, l_0_12 = , nil
+      -- DECOMPILER ERROR at PC82: Confused about usage of register: R10 in 'UnsetPending'
 
+      if (mp.bitand)(R10_PC82.reason_ex, 1) == 1 and (string.len)(R10_PC82.image_path) > 8 and (string.sub)(R10_PC82.image_path, -8) == "\\cmd.exe" then
+        l_0_12 = R10_PC82.ppid
+        break
+      end
+    end
     do
-      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).wp2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).wp2 ~= nil then
-        local l_0_2 = (this_sigattrlog[4]).utf8p2
-      else
+      -- DECOMPILER ERROR at PC104: Confused about usage of register: R5 in 'UnsetPending'
+
+      if l_0_12 == nil then
+        return mp.CLEAN
       end
-      -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
+      -- DECOMPILER ERROR at PC111: Confused about usage of register: R5 in 'UnsetPending'
 
-      do
-        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).wp2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).wp2 ~= nil then
-          local l_0_3 = (this_sigattrlog[6]).utf8p2
-        else
-        end
-        -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
+      local l_0_16, l_0_17 = nil
+      if l_0_12 == nil or #l_0_12 < 2 then
+        return mp.CLEAN
+      end
+      if (this_sigattrlog[5]).matched == false then
+        return mp.CLEAN
+      end
+      local l_0_18 = (bm.get_process_relationships)(l_0_12)
+      if (this_sigattrlog[6]).matched == false then
+        return mp.CLEAN
+      end
+      local l_0_19 = nil
+      local l_0_20 = (this_sigattrlog[5]).ppid
+      local l_0_21 = (this_sigattrlog[6]).ppid
+      for l_0_25,l_0_26 in ipairs(l_0_19) do
+        local l_0_22, l_0_23 = false, false
+        -- DECOMPILER ERROR at PC151: Confused about usage of register: R16 in 'UnsetPending'
 
-        do
-          if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).wp2 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).wp2 ~= nil then
-            local l_0_4 = (this_sigattrlog[8]).utf8p2
+        if (mp.bitand)(R16_PC151.reason_ex, 1) == 1 and (string.len)(R16_PC151.image_path) > 8 and (string.sub)(R16_PC151.image_path, -8) == "\\cmd.exe" then
+          if R16_PC151.ppid == l_0_20 then
+            l_0_22 = true
           else
-          end
-          -- DECOMPILER ERROR at PC152: Overwrote pending register: R0 in 'AssignReg'
-
-          do
-            if (not (this_sigattrlog[10]).matched or (this_sigattrlog[10]).wp2 == nil or (this_sigattrlog[11]).matched) and (this_sigattrlog[11]).wp2 ~= nil then
-              local l_0_5 = (this_sigattrlog[10]).utf8p2
-            else
-            end
-            -- DECOMPILER ERROR at PC180: Overwrote pending register: R0 in 'AssignReg'
-
-            do
-              if (not (this_sigattrlog[12]).matched or (this_sigattrlog[12]).wp2 == nil or (this_sigattrlog[13]).matched) and (this_sigattrlog[13]).wp2 ~= nil then
-                local l_0_6 = (this_sigattrlog[12]).utf8p2
-              else
-              end
-              -- DECOMPILER ERROR at PC208: Overwrote pending register: R0 in 'AssignReg'
-
-              do
-                if (not (this_sigattrlog[14]).matched or (this_sigattrlog[14]).wp2 == nil or (this_sigattrlog[15]).matched) and (this_sigattrlog[15]).wp2 ~= nil then
-                  local l_0_7, l_0_8, l_0_9, l_0_10, l_0_17 = (this_sigattrlog[14]).utf8p2
-                else
-                end
-                -- DECOMPILER ERROR at PC227: Confused about usage of register: R0 in 'UnsetPending'
-
-                if not (this_sigattrlog[16]).matched or (this_sigattrlog[16]).wp2 == nil or (this_sigattrlog[16]).utf8p2 ~= nil then
-                  local l_0_11 = nil
-                  for l_0_15,l_0_16 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[16]).utf8p2)) do
-                    local l_0_12 = nil
-                    -- DECOMPILER ERROR at PC235: Confused about usage of register: R6 in 'UnsetPending'
-
-                    if (sysio.IsFileExists)(R6_PC235) then
-                      (bm.add_related_file)(R6_PC235)
-                    end
-                  end
-                end
-                do
-                  local l_0_18 = nil
-                  if (this_sigattrlog[17]).matched and (this_sigattrlog[17]).wp1 ~= nil then
-                    l_0_18 = (this_sigattrlog[17]).utf8p1
-                  end
-                  if l_0_18 ~= nil then
-                    l_0_18 = (mp.ContextualExpandEnvironmentVariables)(l_0_18)
-                    ;
-                    (bm.add_related_file)(l_0_18)
-                  end
-                  return mp.INFECTED
-                end
-              end
+            if R16_PC151.ppid == l_0_21 then
+              l_0_23 = true
             end
           end
         end
       end
+      -- DECOMPILER ERROR at PC180: Confused about usage of register: R10 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC182: Confused about usage of register: R11 in 'UnsetPending'
+
+      if l_0_22 == false or l_0_23 == false then
+        return mp.CLEAN
+      end
+      local l_0_27 = nil
+      for l_0_31,l_0_32 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_8)) do
+        local l_0_28, l_0_29 = nil
+        if (mp.bitand)(R16_PC151.reason_ex, 1) ~= nil and (string.len)((mp.bitand)(R16_PC151.reason_ex, 1)) >= 4 and (string.lower)((string.sub)((mp.bitand)(R16_PC151.reason_ex, 1), -4)) ~= ".exe" and (sysio.IsFileExists)((mp.bitand)(R16_PC151.reason_ex, 1)) then
+          (bm.add_related_file)((mp.bitand)(R16_PC151.reason_ex, 1))
+        end
+      end
+      return mp.INFECTED
     end
   end
 end

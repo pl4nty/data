@@ -3,17 +3,37 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_15")
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
-local l_0_2 = (mp.readu_u32)(l_0_0, 6)
-local l_0_3 = (string.byte)(l_0_0, 15)
-local l_0_4 = (mp.readu_u32)(l_0_0, 19)
-local l_0_5 = (mp.readu_u32)(l_0_0, 30)
-local l_0_6 = (pe.get_regval)(pe.REG_EDX)
-local l_0_7 = (mp.ror32)(l_0_6 + 1, l_0_3) - (mp.bitxor)(l_0_5, l_0_4) + l_0_1 - l_0_2
-;
-(pe.set_regval)(pe.REG_EBX, l_0_7)
-return mp.INFECTED
+if (this_sigattrlog[2]).matched then
+  local l_0_0 = (this_sigattrlog[2]).utf8p1
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 and (string.sub)(l_0_0, -4) == ".lnk" then
+    local l_0_1, l_0_2 = (bm.get_process_relationships)()
+    for l_0_6,l_0_7 in ipairs(l_0_1) do
+      if l_0_7.image_path ~= nil then
+        local l_0_8 = (mp.bitand)(l_0_7.reason_ex, 1)
+        if l_0_8 == 1 and (string.find)((string.lower)(l_0_7.image_path), "\\regsvr32.exe", 1, true) then
+          do
+            do
+              (bm.add_threat_process)(l_0_7.ppid)
+              do break end
+              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out DO_STMT
+
+              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_STMT
+
+              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_STMT
+
+            end
+          end
+        end
+      end
+    end
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
+end
 

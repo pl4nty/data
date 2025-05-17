@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = (string.lower)(l_0_6.image_path)
-    if (string.find)(l_0_7, "excel.exe", 1, true) or (string.find)(l_0_7, "winword.exe", 1, true) then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 and ((string.find)(l_0_0, "\\java.exe", 1, true) or (string.find)(l_0_0, "\\javaw.exe", 1, true)) then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

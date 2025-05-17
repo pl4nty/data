@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and ((string.find)(l_0_6.image_path, "google chrome", 1, true) or (string.find)(l_0_6.image_path, "safari", 1, true) or (string.find)(l_0_6.image_path, "firefox", 1, true)) then
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = (bm.get_process_relationships)()
+    for l_0_5,l_0_6 in ipairs(l_0_0) do
+      if l_0_6.image_path ~= nil and (string.find)(l_0_6.image_path, "xpcproxy", 1, true) then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

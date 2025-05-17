@@ -3,72 +3,42 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  if (string.find)(l_0_0, "\\werfault.exe\\\\debugger", 1, true) or (string.find)(l_0_0, "\\osppsvc.exe\\\\debugger", 1, true) or (string.find)(l_0_0, "\\sppextcomobj.exe\\\\debugger", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_1 = (this_sigattrlog[1]).utf8p2
+  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
+    l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
+    if not (sysio.IsFileExists)(l_0_1) then
+      l_0_1 = (string.lower)((bm.get_imagepath)())
+    end
+    if (mp.IsKnownFriendlyFile)(l_0_1, true, false) == true then
+      return mp.CLEAN
+    end
+    local l_0_2 = (sysio.GetFileLastWriteTime)(l_0_1)
+    if ((sysio.GetLastResult)()).Success and l_0_2 ~= 0 then
+      l_0_2 = l_0_2 / 10000000 - 11644473600
+      local l_0_3 = (MpCommon.GetCurrentTimeT)()
+      if l_0_3 < l_0_2 or l_0_3 - (l_0_2) > 600 then
+        return mp.CLEAN
+      end
+    end
+    do
+      do
+        l_0_1 = (string.lower)(l_0_1)
+        if (string.find)(l_0_1, "awdump.exe", 1, true) or (string.find)(l_0_1, "awdumpifeo.exe", 1, true) or (string.find)(l_0_1, "AppDeployToolkit_BlockAppExecutionMessage.vbs", 1, true) then
+          return mp.CLEAN
+        end
+        ;
+        (mp.ReportLowfi)(l_0_1, 794607441)
+        ;
+        (bm.add_related_file)(l_0_1)
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
+    end
+  end
 end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size >= 256 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).Size ~= 0 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 5) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 17) ~= 1 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 21) ~= 4 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) ~= 4 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 29) <= 0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 13)
-if (mp.crc32)(-1, l_0_1, 1, 13) ~= 1625655034 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

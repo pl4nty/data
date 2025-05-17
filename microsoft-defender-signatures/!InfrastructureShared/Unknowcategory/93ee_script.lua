@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
-
-  if (sigattr_head[R4_PC6]).matched and (sigattr_head[R4_PC6]).attribute == 16384 and l_0_1 == nil and (sigattr_head[R4_PC6]).wp1 ~= nil then
-    (mp.ReportLowfi)((sigattr_head[R4_PC6]).utf8p1, 2175865982)
+do
+  if peattributes.isdll == true or peattributes.isdll == true and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

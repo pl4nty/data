@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 1179951594) ~= 0 and epcode[6] == 233 then
-  return mp.LOWFI
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 327680 and l_0_0 <= 360448 and (mp.get_mpattribute)("NID:Win32/IcedId.PK!MTB") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

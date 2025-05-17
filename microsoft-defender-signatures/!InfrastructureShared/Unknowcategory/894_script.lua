@@ -3,51 +3,27 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+local l_0_4 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0, l_0_1, l_0_2, l_0_3 = "|.js|jse|vbs|vbe|"
+else
+  do
+    -- DECOMPILER ERROR at PC27: Overwrote pending register: R0 in 'AssignReg'
 
-do
-  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+    if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or l_0_4 ~= nil then
+      local l_0_5 = nil
+      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
+        local l_0_6 = nil
+        -- DECOMPILER ERROR at PC40: Confused about usage of register: R7 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_1, l_0_8 = (string.lower)(l_0_0)
-    l_0_8 = string
-    l_0_8 = l_0_8.find
-    l_0_8 = l_0_8(l_0_1, "\\windows\\ccm\\systemtemp\\", 1, true)
-    if l_0_8 then
-      l_0_8 = mp
-      l_0_8 = l_0_8.CLEAN
-      return l_0_8
-    end
-    l_0_8 = mp
-    l_0_8 = l_0_8.GetExecutablesFromCommandLine
-    l_0_8 = l_0_8(l_0_1)
-    local l_0_2 = nil
-    l_0_2 = ipairs
-    l_0_2 = l_0_2(l_0_8)
-    for l_0_6,l_0_7 in l_0_2 do
-      local l_0_7 = nil
-      l_0_7 = sysio
-      l_0_7 = l_0_7.IsFileExists
-      l_0_7 = l_0_7(l_0_6)
-      if l_0_7 then
-        l_0_7 = bm
-        l_0_7 = l_0_7.add_related_file
-        l_0_7(l_0_6)
+        if (sysio.IsFileExists)(R7_PC40) and (string.find)(l_0_5, (string.lower)((string.sub)(R7_PC40, -3)), 1, true) then
+          (bm.add_related_file)(l_0_11)
+        end
       end
     end
-  end
-  do
-    l_0_8 = mp
-    l_0_8 = l_0_8.TriggerScanResource
-    l_0_8("wmi", "")
-    l_0_8 = mp
-    l_0_8 = l_0_8.INFECTED
-    return l_0_8
+    do
+      return mp.INFECTED
+    end
   end
 end
 

@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.hasappendeddata then
-  return mp.CLEAN
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
+  return mp.INFECTED
 end
-if not peattributes.isvbpcode then
-  return mp.CLEAN
-end
-if not peattributes.dirty_wx_branch then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

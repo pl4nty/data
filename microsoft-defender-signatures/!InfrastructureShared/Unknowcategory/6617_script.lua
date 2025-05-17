@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true then
   return mp.INFECTED
 end
 return mp.CLEAN

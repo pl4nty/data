@@ -3,44 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 128 or mp.FOOTERPAGE_SZ < 22 then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 <= 276 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_1 = 276
-local l_0_2 = (mp.readfile)((mp.getfilesize)() - l_0_1, l_0_1)
-;
-(mp.readprotection)(true)
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = mp.FOOTERPAGE_SZ - 21
-if (mp.readu_u32)(footerpage, l_0_3) ~= 101010256 then
-  l_0_3 = (string.find)(l_0_2, "PK\005\006", 1, true)
-  if l_0_3 == nil then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+  if l_0_1:sub(-4) ~= ".exe" then
     return mp.CLEAN
   end
-  l_0_3 = l_0_3 + mp.FOOTERPAGE_SZ - l_0_1
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if l_0_2:sub(-10) == "\\all users" or l_0_2:sub(-12) == "\\programdata" or l_0_2:sub(-17) == "\\application data" or l_0_2:sub(-16) == "\\appdata\\roaming" then
+    if #l_0_1 < 9 or #l_0_1 > 16 then
+      return mp.CLEAN
+    end
+    if l_0_1:find("^ms[%p%w]+%.exe$") ~= nil and (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "msiexec.exe" then
+      return mp.INFECTED
+    end
+  end
 end
-;
-(mp.UfsSetMetadataBool)("Lua:FileInZip", true)
-local l_0_4 = (mp.readu_u16)(footerpage, l_0_3 + 10)
-if l_0_4 > 100 then
-  (mp.set_mpattribute)("//Lua:MoreThan100FilesFoldersInZip")
+do
   return mp.CLEAN
 end
-if l_0_4 > 10 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("//Lua:LessThanTenFilesFoldersInZip")
-return mp.INFECTED
 

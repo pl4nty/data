@@ -3,11 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
-  return mp.CLEAN
+local l_0_0 = 19
+if (string.byte)((pe.mmap_va)(pevars.sigaddr + 13, 1)) ~= 232 then
+  l_0_0 = 20
 end
-if pehdr.NumberOfSections > 0 and epcode[1] == 232 and epcode[6] == 233 and epcode[10] == 255 and (pesecs[1]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_lastscn_writable") then
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 16)
+if (string.find)(l_0_1, "ƒÁ", 1, true) == nil and (string.find)(l_0_1, "ƒé", 1, true) == nil and (string.find)(l_0_1, "ƒê", 1, true) == nil and (string.find)(l_0_1, "ƒë", 1, true) == nil and (string.find)(l_0_1, "ƒî", 1, true) == nil and (string.find)(l_0_1, "\128,", 1, true) ~= nil then
+  l_0_0 = l_0_0 - 1
+  -- DECOMPILER ERROR at PC81: Confused about usage of register: R2 in 'UnsetPending'
+
+  local l_0_2, l_0_3 = (string.find)(l_0_1, "\128,", 1, true) + 1
+end
+do
+  -- DECOMPILER ERROR at PC83: Confused about usage of register: R2 in 'UnsetPending'
+
+  for l_0_7 = 1, l_0_2 - 1 do
+    local l_0_4 = nil
+    -- DECOMPILER ERROR at PC91: Confused about usage of register: R6 in 'UnsetPending'
+
+    ;
+    (pe.mmap_patch_va)(pevars.sigaddr + (l_0_0) + 1 - 1, "\144")
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

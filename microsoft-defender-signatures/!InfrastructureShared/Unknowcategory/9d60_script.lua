@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("lua_injector_cl_ep") == false then
-  return mp.CLEAN
-end
-if (hstrlog[1]).matched then
-  (mp.set_mpattribute)("InjCLT!02" .. "itsapproaching")
-else
-  if (hstrlog[2]).matched then
-    (mp.set_mpattribute)("InjCLT!02" .. "thereyougo")
+if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) then
+  if pehdr.SizeOfImage > 327680 and pehdr.SizeOfImage < 1048576 then
+    (mp.changedetectionname)(805306419)
+    return mp.INFECTED
+  else
+    return mp.SUSPICIOUS
   end
 end
-return mp.LOWFI
+return mp.CLEAN
 

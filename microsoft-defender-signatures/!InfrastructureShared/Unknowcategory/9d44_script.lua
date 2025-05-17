@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT") then
-  (mp.set_mpattribute)("lua_codepatch_obfuscator_xt_1")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 17, "\235 ")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 49, "\235")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -17) == "searchindexer.exe" or (string.sub)(l_0_0, -22) == "searchprotocolhost.exe" or (string.sub)(l_0_0, -20) == "searchfilterhost.exe" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

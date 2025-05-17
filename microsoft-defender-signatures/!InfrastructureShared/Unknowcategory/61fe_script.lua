@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_OLE_FILE") then
-  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+if (mp.get_sigattr_event_count)(16384) > 4 and (mp.get_sigattr_event_count)(16387) > 4 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

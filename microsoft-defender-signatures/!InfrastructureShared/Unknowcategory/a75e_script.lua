@@ -3,39 +3,58 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 16777216 then
-  return mp.SUSPICIOUS
+if (bm.GetSignatureMatchDuration)() > 600000000 then
+  return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(0, l_0_0)
-if (mp.readu_u16)(l_0_1, 19) == 20557 then
-  return mp.SUSPICIOUS
+local l_0_0, l_0_1 = nil, nil
+if (this_sigattrlog[15]).matched and (this_sigattrlog[15]).utf8p2 ~= nil then
+  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[15]).utf8p2))
+  if (string.find)(l_0_0, "/upload", 1, true) ~= nil then
+    return mp.CLEAN
+  end
+  l_0_1 = (string.match)(l_0_0, "\\([^\\]+)$")
 else
-  ;
-  (mp.writeu_u16)(l_0_1, 19, 20557)
+  return mp.CLEAN
 end
-local l_0_2 = (pe.mmap_va)(pevars.sigaddr, 256)
-if (mp.readu_u16)(l_0_2, 52) == 53503 and (string.byte)(l_0_2, 68) == 116 then
-  (mp.writeu_u16)(l_0_1, (pe.foffset_va)(pevars.sigaddr) + 68, 37008)
-else
-  if (mp.readu_u16)(l_0_2, 56) == 53503 and (string.byte)(l_0_2, 74) == 116 then
-    (mp.writeu_u16)(l_0_1, (pe.foffset_va)(pevars.sigaddr) + 74, 37008)
-  else
-    if (mp.readu_u16)(l_0_2, 58) == 53503 and (string.byte)(l_0_2, 69) == 116 then
-      (mp.writeu_u16)(l_0_1, (pe.foffset_va)(pevars.sigaddr) + 69, 37008)
-    else
-      return mp.SUSPICIOUS
+do
+  if (this_sigattrlog[16]).matched and (this_sigattrlog[16]).utf8p2 ~= nil then
+    local l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[16]).utf8p2))
+    if (string.find)(l_0_2, l_0_1, 1, true) ~= nil then
+      return mp.INFECTED
+    end
+  end
+  do
+    if (this_sigattrlog[17]).matched and (this_sigattrlog[17]).utf8p2 ~= nil then
+      local l_0_3 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[17]).utf8p2))
+      if (string.find)(l_0_3, l_0_1, 1, true) ~= nil then
+        return mp.INFECTED
+      end
+    end
+    do
+      if (this_sigattrlog[18]).matched and (this_sigattrlog[18]).utf8p2 ~= nil then
+        local l_0_4 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[18]).utf8p2))
+        if (string.find)(l_0_4, l_0_1, 1, true) ~= nil then
+          return mp.INFECTED
+        end
+      end
+      do
+        if (this_sigattrlog[19]).matched and (this_sigattrlog[19]).utf8p2 ~= nil then
+          local l_0_5 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[19]).utf8p2))
+          if (string.find)(l_0_5, l_0_1, 1, true) ~= nil then
+            return mp.INFECTED
+          end
+        end
+        do
+          if (this_sigattrlog[20]).matched and (this_sigattrlog[20]).utf8p2 ~= nil then
+            local l_0_6 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[20]).utf8p2))
+            if (string.find)(l_0_6, l_0_1, 1, true) ~= nil then
+              return mp.INFECTED
+            end
+          end
+          return mp.CLEAN
+        end
+      end
     end
   end
 end
-local l_0_3 = doshdr.e_lfanew + pehdr.SizeOfOptionalHeader + 61
-for l_0_7 = 1, pehdr.NumberOfSections do
-  (mp.writeu_u32)(l_0_1, l_0_3, (mp.bitor)((pesecs[l_0_7]).Characteristics, 2147483648))
-  l_0_3 = l_0_3 + 40
-end
-;
-(mp.vfo_add_buffer)(l_0_1, "[Obfuscator.ACT]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.SUSPICIOUS
 

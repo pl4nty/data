@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 5, 5)
-if (mp.readu_u32)(l_0_0, 2) < 589824 then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)()
+l_0_0 = (l_0_0.lower)(l_0_0)
+if (string.find)(l_0_0, ".py", 1, true) or (string.find)(l_0_0, ".ps1", 1, true) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

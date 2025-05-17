@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 34, "ǅ")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 44, "\015\132")
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

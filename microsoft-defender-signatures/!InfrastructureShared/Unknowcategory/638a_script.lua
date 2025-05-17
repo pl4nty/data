@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 21, "\235")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 60, "\235")
-return mp.CLEAN
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:Pirrit.B!xp")
+  return mp.INFECTED
+end
+return mp.LOWFI
 

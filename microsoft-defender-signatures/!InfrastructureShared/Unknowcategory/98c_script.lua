@@ -3,40 +3,47 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("Behavior:Win32/BlockMpTamper")
-if #l_0_0 == 0 or l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.enum_mpattributesubstring)("Behavior:Win32/ShadowCopyDelete")
-local l_0_2 = (mp.enum_mpattributesubstring)("Behavior:Win32/RunsBcdedit")
-local l_0_3 = (mp.enum_mpattributesubstring)("Behavior:Win32/StartupRepair")
-local l_0_4 = (mp.enum_mpattributesubstring)("Behavior:Win32/FsutilUsnDeleteJournal")
-if #l_0_1 > 0 or #l_0_2 > 0 or #l_0_3 > 0 or #l_0_4 > 0 then
-  for l_0_8,l_0_9 in ipairs(l_0_0) do
-    (bm.add_related_string)("RelatedBMHits", l_0_9, bm.RelatedStringBMReport)
-  end
-  local l_0_10 = nil
-  for l_0_14 = 1, mp.SIGATTR_LOG_SZ do
-    if (sigattr_tail[l_0_14]).matched and (sigattr_tail[l_0_14]).attribute == 16393 then
-      l_0_10 = (sigattr_tail[l_0_14]).utf8p2
-      if l_0_10 ~= nil then
-        local l_0_15 = (mp.GetExecutablesFromCommandLine)(l_0_10)
-        if l_0_15 ~= nil and #l_0_15 > 0 then
-          for l_0_19,l_0_20 in ipairs(l_0_15) do
-            l_0_20 = (mp.ContextualExpandEnvironmentVariables)(l_0_20)
-            if (sysio.IsFileExists)(l_0_20) then
-              (bm.add_related_file)(l_0_20)
-            end
-          end
-        end
-      end
+Infrastructure_FindEFISystemPartitions = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  local l_1_1 = "\\\\?\\HarddiskVolume%d\\EFI"
+  local l_1_2 = 10
+  for l_1_6 = 1, l_1_2 do
+    local l_1_7 = l_1_1:format(l_1_6)
+    if (sysio.IsFolderExists)(l_1_7) then
+      l_1_0[#l_1_0 + 1] = l_1_7
     end
   end
-  do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC108: Confused about usage of register R6 for local variables in 'ReleaseLocals'
-
+  return l_1_0
 end
-l_0_10 = mp
-l_0_10 = l_0_10.CLEAN
-return l_0_10
+
+ScanEFIBootloaders = function(l_2_0)
+  -- function num : 0_1
+  local l_2_1 = 2
+  local l_2_2 = (sysio.FindFiles)(l_2_0, "*.efi", l_2_1)
+  for l_2_6,l_2_7 in ipairs(l_2_2) do
+    (MpCommon.SetGlobalMpAttribute)("UefiLuaBootloaderScan")
+    ;
+    (MpDetection.ScanResource)("file://" .. l_2_7)
+    ;
+    (MpCommon.DeleteGlobalMpAttribute)("UefiLuaBootloaderScan")
+  end
+  local l_2_8 = (sysio.FindFiles)(l_2_0, "grub.cfg", l_2_1)
+  for l_2_12,l_2_13 in ipairs(l_2_8) do
+    (MpCommon.SetGlobalMpAttribute)("UefiLuaGrubCfgScan")
+    ;
+    (MpDetection.ScanResource)("file://" .. l_2_13)
+    ;
+    (MpCommon.DeleteGlobalMpAttribute)("UefiLuaGrubCfgScan")
+  end
+end
+
+Infrastructure_ScanEFISystemPartitions = function()
+  -- function num : 0_2
+  local l_3_0 = Infrastructure_FindEFISystemPartitions()
+  for l_3_4,l_3_5 in ipairs(l_3_0) do
+    ScanEFIBootloaders(l_3_5)
+  end
+end
+
 

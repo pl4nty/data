@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  if mp.HSTR_WEIGHT >= 4 then
-    return mp.INFECTED
-  end
-  return mp.LOWFI
+if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 500000 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,61 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdamaged or peattributes.arm_image or peattributes.hasappendeddata == false then
+if (mp.GetResmgrBasePlugin)() ~= "regkeyvalue" then
   return mp.CLEAN
 end
-local l_0_0 = pehdr.NumberOfSections
-if l_0_0 < 1 then
+local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (pesecs[l_0_0]).PointerToRawData + (pesecs[l_0_0]).SizeOfRawData
-local l_0_2 = (mp.getfilesize)()
-if l_0_2 < l_0_1 then
+if (string.find)(l_0_0, "hklm\\system\\currentcontrolset\\control\\secureboot\\state", 1, true) == nil then
   return mp.CLEAN
 end
-local l_0_3 = l_0_2 - l_0_1
-local l_0_4 = "LUA:OverlaySize_gt_0x10000000"
-if l_0_3 <= 256 then
-  l_0_4 = (string.format)("LUA:OverlaySize_0x%x", l_0_3)
-  ;
-  (mp.set_mpattribute)("LUA:OverlaySize_1_to_0x100")
-else
-  if l_0_3 <= 4096 then
-    local l_0_5 = (mp.bitand)(l_0_3, 4080)
-    l_0_4 = (string.format)("LUA:OverlaySize_0x%x_to_0x%x", l_0_5, l_0_5 + 16)
-  else
-    do
-      if l_0_3 <= 65536 then
-        local l_0_6 = (mp.bitand)(l_0_3, 65280)
-        l_0_4 = (string.format)("LUA:OverlaySize_0x%x_to_0x%x", l_0_6, l_0_6 + 256)
-      else
-        do
-          if l_0_3 <= 1048576 then
-            local l_0_7 = (mp.bitand)(l_0_3, 1044480)
-            l_0_4 = (string.format)("LUA:OverlaySize_0x%x_to_0x%x", l_0_7, l_0_7 + 4096)
-          else
-            do
-              if l_0_3 <= 16777216 then
-                local l_0_8 = (mp.bitand)(l_0_3, 16711680)
-                l_0_4 = (string.format)("LUA:OverlaySize_0x%x_to_0x%x", l_0_8, l_0_8 + 65536)
-              else
-                do
-                  do
-                    if l_0_3 <= 268435456 then
-                      local l_0_9 = (mp.bitand)(l_0_3, 267386880)
-                      l_0_4 = (string.format)("LUA:OverlaySize_0x%x_to_0x%x", l_0_9, l_0_9 + 1048576)
-                    end
-                    ;
-                    (mp.set_mpattribute)(l_0_4)
-                    return mp.CLEAN
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+local l_0_1 = (string.lower)(tostring(headerpage))
+if (string.find)(l_0_1, "{68baf0cf-8e96-4cd9-8f02-5a162dc86f12}", 1, true) ~= nil or (string.find)(l_0_1, "{e15ae303-8ae6-4c44-847a-152c2019fe85}", 1, true) ~= nil or (string.find)(l_0_1, "{8d70e18f-c94b-4dde-8900-569f4a3b370a}", 1, true) ~= nil or (string.find)(l_0_1, "{4217eb99-f9d8-4867-ad00-4a36563ebe23}", 1, true) ~= nil or (string.find)(l_0_1, "{1b9a9f0f-cbf7-4742-93a1-2fe3ffaeff98}", 1, true) ~= nil or (string.find)(l_0_1, "{6a093464-7cec-4f19-adb0-a47228778ec3}", 1, true) ~= nil or (string.find)(l_0_1, "{9ed089a1-8e30-420a-9285-4427ace66ba5}", 1, true) ~= nil then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

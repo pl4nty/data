@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:PremiumInstaller")
+(mp.set_mpattribute)("PUA:Block:OptimumInstaller")
 return mp.INFECTED
 

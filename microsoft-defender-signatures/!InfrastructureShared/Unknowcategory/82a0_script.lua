@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 5 and mp.HSTR_WEIGHT < 10 then
-  (mp.set_mpattribute)("HSTR:Torwofun.A")
-else
-  if mp.HSTR_WEIGHT == 5 then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan_torwofun_a1")
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if (string.find)(l_0_0, "%.ps1") then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

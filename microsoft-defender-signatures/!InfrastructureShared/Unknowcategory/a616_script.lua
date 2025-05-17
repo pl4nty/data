@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched) or (not (hstrlog[9]).matched and not (hstrlog[10]).matched and not (hstrlog[11]).matched and not (hstrlog[12]).matched and not (hstrlog[13]).matched and not (hstrlog[14]).matched and not (hstrlog[15]).matched and not (hstrlog[16]).matched) or ((hstrlog[17]).matched or (hstrlog[18]).matched)) then
-  return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.ps1)")
+l_0_1 = (string.lower)(l_0_1)
+if (string.find)(l_0_1, ":\\program files", 1, true) or (string.find)(l_0_1, "\\windows defender advanced threat protection\\", 1, true) or (string.find)(l_0_1, "sentinel", 1, true) or (string.find)(l_0_1, "format-list", 1, true) or (string.find)(l_0_1, "-outputformat", 1, true) or (string.find)(l_0_1, "get-vm", 1, true) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if l_0_2 and (sysio.IsFileExists)(l_0_2) then
+  (mp.ReportLowfi)(l_0_2, 1120308759)
+  ;
+  (bm.add_related_file)(l_0_2)
+end
+return mp.INFECTED
 

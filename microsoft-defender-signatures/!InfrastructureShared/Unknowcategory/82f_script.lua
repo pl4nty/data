@@ -3,14 +3,24 @@
 
 -- params : ...
 -- function num : 0
-GetRuleInfo = function()
-  -- function num : 0_0
-  local l_1_0 = {}
-  l_1_0.Name = "Block untrusted and unsigned processes that run from USB"
-  l_1_0.Description = "Windows Defender Exploit Guard detected launching of an untrusted or unsigned executable from a removable USB media."
-  l_1_0.NotificationDedupingInterval = 120
-  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
-  return l_1_0
+if (this_sigattrlog[3]).matched then
+  local l_0_0 = nil
+  if (this_sigattrlog[3]).utf8p2 ~= nil then
+    l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
+  end
+  if l_0_0 ~= nil then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_5,l_0_6 in ipairs(l_0_1) do
+      l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+      if (sysio.IsFileExists)(l_0_6) then
+        (bm.add_related_file)(l_0_6)
+      end
+    end
+  end
 end
-
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

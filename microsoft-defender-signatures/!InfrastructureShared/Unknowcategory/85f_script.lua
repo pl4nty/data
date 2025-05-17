@@ -3,25 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("//GIOAVFirstExeInSingleExeZip") then
-  if (mp.get_mpattribute)("//RPF:G_IOAV_SINGLE_EXE_IN_ZIP") then
-    (mp.set_mpattribute)("Lua:IOAVFirstExeInSingleExeZip")
-    ;
-    (mp.set_mpattribute)("//GIOAVFirstExeInSingleExeZip")
-    ;
-    (mp.set_mpattribute)("MpNonCachedLowfi")
-  else
-    local l_0_0, l_0_1 = (mp.UfsGetMetadataBool)("Lua:UfsIOAVSingleEXEZip", true)
-    if l_0_0 == 0 and l_0_1 then
-      (mp.set_mpattribute)("Lua:IOAVFirstExeInSingleExeZip")
-      ;
-      (mp.set_mpattribute)("//GIOAVFirstExeInSingleExeZip")
-      ;
-      (mp.set_mpattribute)("MpNonCachedLowfi")
-    end
-  end
-end
-do
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0 == nil or (string.len)(l_0_0) < 15 then
   return mp.CLEAN
 end
+if (string.find)(l_0_0, "->", 1, true) == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "/resources/", 1, true) == nil then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("Lua:InsideResources")
+if (string.match)(l_0_0, "/resources/[^%.]+$") == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

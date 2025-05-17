@@ -3,53 +3,42 @@
 
 -- params : ...
 -- function num : 0
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+local l_0_0 = nil
+local l_0_1 = 0
+;
+(mp.readprotection)(false)
 if (hstrlog[1]).matched then
-  local l_0_0 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 9, 4)
-  local l_0_1 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 15, 1)
-  ;
-  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.5_%08X_%08X", (mp.readu_u32)(l_0_0, 1), (string.byte)(l_0_1, 1)))
-else
-  do
-    if (hstrlog[2]).matched then
-      local l_0_2 = (pe.mmap_va_nofastfail)((hstrlog[2]).VA + 5, 4)
-      ;
-      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.5_%08X_%08X", (mp.readu_u32)(l_0_2, 1), 2))
-    else
-      do
-        if (hstrlog[3]).matched then
-          local l_0_3 = (pe.mmap_va_nofastfail)((hstrlog[3]).VA + 11, 4)
-          ;
-          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.5_%08X_%08X", (mp.readu_u32)(l_0_3, 1), 2))
-        else
-          do
-            if (hstrlog[4]).matched then
-              local l_0_4 = (pe.mmap_va_nofastfail)((hstrlog[4]).VA + 5, 4)
-              ;
-              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.5_%08X_%08X", (mp.readu_u32)(l_0_4, 1), 2))
-            else
-              do
-                if (hstrlog[5]).matched then
-                  local l_0_5 = (pe.mmap_va_nofastfail)((hstrlog[5]).VA + 5, 4)
-                  ;
-                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.5_%08X_%08X", (mp.readu_u32)(l_0_5, 1), 2))
-                else
-                  do
-                    do
-                      if (hstrlog[6]).matched then
-                        local l_0_6 = (pe.mmap_va_nofastfail)((hstrlog[6]).VA + 15, 4)
-                        ;
-                        (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.5_%08X_%08X", (mp.readu_u32)(l_0_6, 1), 2))
-                      end
-                      return mp.CLEAN
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
+  l_0_0 = (pe.mmap_va)((hstrlog[1]).VA, 80)
+  l_0_1 = (string.find)(l_0_0, "\185....\190.....-ó¥")
+  if l_0_1 == nil then
+    return mp.CLEAN
   end
+  l_0_1 = (mp.readu_u32)(l_0_0, l_0_1 + 6)
+else
+  if (hstrlog[2]).matched then
+    l_0_1 = (hstrlog[2]).VA
+    local l_0_2 = (pe.foffset_va)(l_0_1)
+    l_0_0 = (mp.readfile)(l_0_2, 80)
+    l_0_1 = (string.find)(l_0_0, "‰E.h....h....‹E")
+    if l_0_1 == nil then
+      return mp.CLEAN
+    end
+    l_0_1 = (mp.readu_u32)(l_0_0, l_0_1 + 9)
+  end
+end
+do
+  if l_0_1 == pehdr.AddressOfEntryPoint + pehdr.ImageBase then
+    return mp.CLEAN
+  end
+  local l_0_3 = (mp.readfile)(0, (mp.getfilesize)())
+  local l_0_4 = (mp.readu_u32)(l_0_3, 61)
+  ;
+  (mp.writeu_u32)(l_0_3, l_0_4 + 40 + 1, l_0_1 - pehdr.ImageBase)
+  ;
+  (mp.vfo_add_buffer)(l_0_3, "[VmAllocCall]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  return mp.INFECTED
 end
 

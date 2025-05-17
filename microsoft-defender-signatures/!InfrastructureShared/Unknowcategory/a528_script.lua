@@ -3,24 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-local l_0_1 = (mp.GetBruteMatchData)()
-local l_0_2 = l_0_1.match_offset + 1
-local l_0_3 = l_0_1.match_offset + 1 + 512
-if l_0_1.is_header then
-  l_0_0 = ((tostring(headerpage)):sub(l_0_2, l_0_3)):lower()
-else
-  l_0_0 = ((tostring(footerpage)):sub(l_0_2, l_0_3)):lower()
-end
-local l_0_4 = l_0_0:match("([^:]+:)")
-if not l_0_4 then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-if (string.len)(l_0_4) >= (string.len)(l_0_0) then
+if (mp.ispackedwith)("AutoHotKey_+") then
   return mp.CLEAN
 end
-if l_0_4:find("post/owa/", 1, true) and l_0_4:find("powershell", 1, true) and l_0_0:find("x-owa-explicitlogonuser:", 1, true) then
-  return mp.INFECTED
+if ((mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv")) and (hstrlog[1]).matched then
+  local l_0_0 = ((hstrlog[1]).match_offsets)[3]
+  local l_0_1 = (hstrlog[1]).VA + l_0_0
+  local l_0_2 = (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1)
+  if (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1) ~= 557012289 then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

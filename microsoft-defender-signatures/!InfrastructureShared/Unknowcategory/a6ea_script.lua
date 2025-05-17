@@ -3,56 +3,38 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 3 then
+if (mp.get_mpattribute)("//FOPEX:PyInstScrDrp") then
   return mp.CLEAN
 end
-if pehdr.SizeOfImage < 282624 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 16777216 then
   return mp.CLEAN
 end
-if pehdr.SizeOfImage > 344064 then
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(0, l_0_0)
+;
+(mp.writeu_u8)(l_0_1, (pe.foffset_va)(pevars.sigaddr) + 5, 115)
+if peattributes.packed == true then
+  local l_0_2 = (mp.get_parent_filehandle)()
+  if l_0_2 == nil then
+    return mp.CLEAN
+  end
+  local l_0_3 = (pe.mmap_va)((pe.get_regval)(pe.REG_EDI), 20)
+  if (mp.readu_u32)(l_0_3, 17) ~= 206128461 then
+    return mp.CLEAN
+  end
+  local l_0_4 = (mp.readu_u32)(l_0_3, 5)
+  if l_0_4 < 4096 or l_0_4 > 16777216 then
+    return mp.CLEAN
+  end
+  l_0_1 = l_0_1 .. (mp.readfile_by_handle)(l_0_2, l_0_4, (mp.get_filesize_by_handle)(l_0_2) - l_0_4)
+end
+do
+  ;
+  (mp.vfo_add_buffer)(l_0_1, "[PyInstScrDrp]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  ;
+  (mp.set_mpattribute)("//FOPEX:PyInstScrDrp")
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[2]).Size < 192 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size > 240 then
-  return mp.CLEAN
-end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if peattributes.lastscn_writable ~= true then
-  return mp.CLEAN
-end
-if peattributes.no_relocs ~= true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).VirtualAddress ~= 4096 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData < 4096 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData > 8192 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).VirtualAddress > 20480 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).VirtualAddress < 12288 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData < 262144 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 323584 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

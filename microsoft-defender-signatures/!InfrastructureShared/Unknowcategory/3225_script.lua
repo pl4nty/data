@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7.A0")
+return mp.INFECTED
 

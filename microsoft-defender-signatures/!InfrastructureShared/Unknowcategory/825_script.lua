@@ -3,19 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:len() < 12 then
+if not (mp.get_mpattribute)("MacOS:HSTR:Generality.E") then
   return mp.CLEAN
 end
-local l_0_1 = (string.sub)(l_0_0, -4)
-local l_0_2 = {}
-l_0_2[".lnk"] = ""
-if not l_0_2[l_0_1] then
-  return mp.CLEAN
-end
-local l_0_3 = {}
-l_0_3["®cip.rcs"] = ""
-if l_0_3[(string.sub)(l_0_0, -12, -5)] then
+if #(mp.enum_mpattributesubstring)("Detection:Exploit:iPhoneOS") == 0 and #(mp.enum_mpattributesubstring)("TEL:Exploit:iPhoneOS") == 0 and #(mp.enum_mpattributesubstring)("Detection:Exploit:MacOS") == 0 and #(mp.enum_mpattributesubstring)("TEL:Exploit:MacOS") == 0 then
   return mp.INFECTED
 end
 return mp.CLEAN

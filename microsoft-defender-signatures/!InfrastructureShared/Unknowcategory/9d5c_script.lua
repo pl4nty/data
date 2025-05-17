@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:EthMiner")
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_ethminer")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_ethminer")
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 14, "\141\r")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 1)
+local l_0_1 = pevars.sigaddr + 20 + (string.byte)(l_0_0, 1) + 2 - 2
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "")
+;
+(pe.mmap_patch_va)(l_0_1, "")
+return mp.INFECTED
 

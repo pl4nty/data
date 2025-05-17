@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil or l_0_0.image_path == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-if l_0_1:match("([^\\]+)$") ~= "explorer.exe" then
+local l_0_0 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
+if l_0_0:find(".deb", 1, true) then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,9 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if (string.find)(l_0_0, "emotet%-maldoc.bin") ~= nil then
-  return mp.INFECTED
+if peattributes.hasexports ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.isdll ~= true then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() > 131072 then
+  return mp.CLEAN
+end
+if pehdr.Machine ~= 332 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

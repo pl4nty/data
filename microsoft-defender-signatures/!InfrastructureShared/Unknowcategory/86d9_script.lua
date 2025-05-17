@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 40, 5)
-if (mp.readu_u32)(l_0_0, 2) < 3145728 then
-  return mp.CLEAN
+if (pe.isdynamic_va)(pevars.sigaddr) then
+  (mp.set_mpattribute)("PEBMPAT:Simda:AntiEmuProcessName")
+  ;
+  (pe.set_regval)(pe.REG_EAX, 0)
 end
-return mp.INFECTED
+return mp.CLEAN
 

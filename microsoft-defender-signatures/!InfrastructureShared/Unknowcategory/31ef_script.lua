@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.TimeDateStamp == 0 then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 ~= nil and l_0_0 > 20971520 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

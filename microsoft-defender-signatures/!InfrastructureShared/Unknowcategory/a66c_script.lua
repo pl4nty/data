@@ -3,28 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr == 2138046464 then
-  (mp.readprotection)(false)
-  local l_0_0 = ((pe.mmap_va)(pevars.sigaddr, 512))
-  local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-  l_0_1 = (string.gsub)(l_0_0, "ã¿", "")
-  l_0_1 = (string.gsub)(l_0_1, "ã“", "")
-  l_0_1 = (string.gsub)(l_0_1, "ä“", "")
-  l_0_1 = (string.gsub)(l_0_1, "\135\255", "")
-  l_0_1 = (string.gsub)(l_0_1, "ãˆ", "")
-  l_0_1 = (string.gsub)(l_0_1, "QY", "")
-  l_0_1 = (string.gsub)(l_0_1, "äÌ", "")
-  l_0_1 = (string.gsub)(l_0_1, "êê+", "")
-  l_0_1 = (string.gsub)(l_0_1, "á“", "")
-  l_0_1 = (string.gsub)(l_0_1, "V^", "")
-  local l_0_12 = l_0_2 + l_0_3 + l_0_4 + l_0_5 + l_0_6 + l_0_7 + l_0_8 + l_0_9 + l_0_10 + l_0_11
-  if l_0_12 < 65 then
+local l_0_0 = nil
+local l_0_1 = nil
+if (bm.get_current_process_startup_info)() ~= nil and ((bm.get_current_process_startup_info)()).ppid ~= nil then
+  local l_0_2 = nil
+  if (mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid) == nil then
     return mp.CLEAN
   end
-  local l_0_13 = "!decrypted" .. l_0_1
-  ;
-  (mp.vfo_add_buffer)(l_0_13, "[Obfuscator.ZV]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-  return mp.LOWFI
+  l_0_1 = (string.lower)((mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid))
+  if (string.find)(l_0_1, "/create", 1, true) and (string.find)(l_0_1, "cmd.exe", 1, true) and (string.find)(l_0_1, "wordpad.exe", 1, true) and (string.find)(l_0_1, "/sc", 1, true) and (string.find)(l_0_1, "/tr", 1, true) and (string.find)(l_0_1, "/st", 1, true) and (string.find)(l_0_1, "/sd", 1, true) then
+    (bm.request_SMS)(l_0_2.ppid, "M")
+    local l_0_3 = nil
+    local l_0_4, l_0_5 = (bm.get_imagepath)(), (bm.get_process_relationships)()
+    for l_0_9,l_0_10 in ipairs(R7_PC98) do
+      local l_0_6 = nil
+      -- DECOMPILER ERROR at PC100: Confused about usage of register: R10 in 'UnsetPending'
+
+      if R10_PC100.image_path == l_0_4 then
+        (bm.request_SMS)(l_0_2.ppid, "M")
+      end
+    end
+    return mp.INFECTED
+  end
 end
 do
   return mp.CLEAN

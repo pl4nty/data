@@ -3,35 +3,40 @@
 
 -- params : ...
 -- function num : 0
-offset2bin = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = string.format
-  local l_1_2 = "%c%c%c%c"
-  local l_1_3 = (mp.bitand)(l_1_0, 255)
-  local l_1_4 = (mp.bitand)((mp.shr32)(l_1_0, 8), 255)
-  local l_1_5 = (mp.bitand)((mp.shr32)(l_1_0, 16), 255)
-  do
-    local l_1_6, l_1_7, l_1_8, l_1_9 = (mp.bitand)((mp.shr32)(l_1_0, 24), 255), .end
-    do return l_1_1(l_1_2, l_1_3, l_1_4, l_1_5, l_1_6, l_1_7, l_1_8, l_1_9) end
-    -- DECOMPILER ERROR at PC37: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+      local l_0_1, l_0_2 = (this_sigattrlog[2]).utf8p2
+    end
+    -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil then
+      local l_0_3 = nil
+      local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+      for l_0_8,l_0_9 in ipairs(l_0_4) do
+        local l_0_5 = {[".xls"] = true, [".doc"] = true, [".ppt"] = true, [".pps"] = true, docx = true, pptx = true, ppsx = true, xlsx = true, [".rtf"] = true, [".xml"] = true, dotx = true, dotm = true, [".odt"] = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, docm = true, xlsm = true, pptm = true}
+        -- DECOMPILER ERROR at PC75: Confused about usage of register: R7 in 'UnsetPending'
+
+        if (string.len)(R7_PC75) > 4 and (sysio.IsFileExists)(R7_PC75) and l_0_5[(string.sub)(R7_PC75, -4)] then
+          (bm.add_related_file)(l_0_10)
+        end
+      end
+    end
+    do
+      l_0_4 = mp
+      l_0_4 = l_0_4.INFECTED
+      return l_0_4
+    end
   end
 end
-
-local l_0_0 = 33
-if (string.byte)((pe.mmap_va)(pevars.sigaddr + 16, 1)) == 131 then
-  l_0_0 = 30
-end
-if (mp.bitand)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr - 4, 4), 1), 16777215) == 15401588 then
-  (pe.mmap_patch_va)(pevars.sigaddr - 2, "")
-end
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 256)
-local l_0_2 = (string.find)(l_0_1, "‹U\252", 1, true)
-if l_0_2 ~= nil then
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_0, "\235")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_0 + 1, offset2bin(l_0_2 - 3))
-  return mp.INFECTED
-end
-return mp.CLEAN
 

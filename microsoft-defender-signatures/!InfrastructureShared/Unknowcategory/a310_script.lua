@@ -6,21 +6,26 @@
 -- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
-  else
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = nil
   end
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC18: Confused about usage of register: R6 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[4]).utf8p2) > 7 and ((string.find)((this_sigattrlog[4]).utf8p2, "TgBlAHcALQBJAHQAZQBt", 1, true) or (string.find)((this_sigattrlog[4]).utf8p2, "LgBQAFMAVgBFAFIAcwBpAE8Abg", 1, true) or (string.find)((this_sigattrlog[4]).utf8p2, "AHwASQBFAFgA", 1, true)) then
+      if (R6_PC18:len() < 12 or (string.lower)((string.sub)(R6_PC18, -12)) ~= "rundll32.exe") and (sysio.IsFileExists)(R6_PC18) then
+        (bm.add_related_file)(R6_PC18)
+      end
+    end
+  end
+  do
     return mp.INFECTED
   end
-  return mp.CLEAN
 end
 

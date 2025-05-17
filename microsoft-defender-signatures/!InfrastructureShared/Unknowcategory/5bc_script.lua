@@ -3,19 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0.integrity_level < MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-  return mp.CLEAN
-end
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-if l_0_1 then
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    if l_0_7.image_path and (mp.bitand)(l_0_7.reason_ex, 1) == 1 and (string.find)(l_0_7.image_path, "\\consent.exe", 1, true) then
-      return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil, nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    -- DECOMPILER ERROR at PC25: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC27: Overwrote pending register: R2 in 'AssignReg'
+
+    if (string.match)(l_0_0, "%.exe\".+\"(.+%.wsf)") ~= nil then
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC36: Confused about usage of register: R2 in 'UnsetPending'
+
+      if (sysio.IsFileExists)(nil) then
+        (bm.add_related_file)(nil)
+        -- DECOMPILER ERROR at PC40: Confused about usage of register: R2 in 'UnsetPending'
+
+        ;
+        (mp.ReportLowfi)(nil, 927347397)
+        return mp.INFECTED
+      end
     end
   end
-end
-do
-  return mp.CLEAN
+  do
+    return mp.CLEAN
+  end
 end
 

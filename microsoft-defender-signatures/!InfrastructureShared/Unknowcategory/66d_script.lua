@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and (string.find)(l_0_0, "explorer.exe", 1, true) then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC15: Overwrote pending register: R0 in 'AssignReg'
+
+if not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or #nil < 62 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

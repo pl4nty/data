@@ -3,7 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not (Remediation.Threat).Offline and (string.find)((Remediation.Threat).Name, "Detrahere!reg", 1, true) then
-  (Remediation.SetCallistoRequired)()
+SetAttributeFromClassifierScores = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  for l_1_5,l_1_6 in pairs(l_1_1) do
+    if l_1_6 <= l_1_0 then
+      (mp.set_mpattribute)(l_1_5)
+    end
+  end
 end
+
 

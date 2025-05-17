@@ -3,9 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pcall(bm.get_connection_string)
-if l_0_0:match("DestIp=5.149.248.") or l_0_0:match("DestIp=79.142.66.") or l_0_0:match("DestIp=217.23.15.") or l_0_0:match("DestIp=65.98.83.") or l_0_0:match("DestIp=69.57.173.") or l_0_0:match("DestIp=74.82.216.") or l_0_0:match("DestIp=88.198.247.") or l_0_0:match("DestIp=98.142.243.") then
-  return mp.INFECTED
+do
+  if peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    end
+    if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+      (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

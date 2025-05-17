@@ -3,9 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (string.sub)(l_0_0, 22, 22)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 19, "\187" .. l_0_1 .. "\000\000\000\144")
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+do
+  if l_0_0 ~= nil and l_0_0 >= 20480000 then
+    local l_0_1 = (pe.get_versioninfo)()
+    if not l_0_1 then
+      return mp.CLEAN
+    end
+    if not l_0_1.CompanyName then
+      return mp.CLEAN
+    end
+    if l_0_1.CompanyName == "Microsoft Corporation" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

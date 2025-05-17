@@ -3,62 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_3, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10 = nil
-if (this_sigattrlog[1]).matched then
-  local l_0_1 = nil
-  local l_0_2 = nil
-  if (string.match)((string.lower)((this_sigattrlog[1]).utf8p2), "%.exe%s(.+%.exe)%s") ~= nil and (string.len)((string.match)((string.lower)((this_sigattrlog[1]).utf8p2), "%.exe%s(.+%.exe)%s")) > 3 then
-    l_0_1 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p2), "%.exe%s(.+%.exe)%s")
-  end
-else
-  do
-    if (this_sigattrlog[2]).matched then
-      local l_0_4 = nil
-      local l_0_5 = nil
-      if (string.match)((string.lower)((this_sigattrlog[2]).utf8p2), "%.exe%s\".-([^\\]-[^\\%.]+)\"%s") ~= nil and (string.len)((string.match)((string.lower)((this_sigattrlog[2]).utf8p2), "%.exe%s\".-([^\\]-[^\\%.]+)\"%s")) > 3 then
-        l_0_4 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p2), "%.exe%s\".-([^\\]-[^\\%.]+)\"%s")
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[5]).matched then
+  local l_0_0 = nil
+  -- DECOMPILER ERROR at PC20: Overwrote pending register: R1 in 'AssignReg'
+
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+    local l_0_1 = nil
+    -- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
+
+    if ((string.find)(l_0_1, ".dll", 1, true) == nil and (string.find)(l_0_1, ".cpl", 1, true) == nil and (string.find)(l_0_1, ".tmp", 1, true) == nil and (string.find)(l_0_1, ".dat", 1, true) == nil and (string.find)(l_0_1, "-", 1, true) == nil and (string.find)(l_0_1, ".exe", 1, true) == nil and (string.find)(l_0_1, "\\microsoft\\word\\startup\\%a+.%a") ~= nil) or (string.find)(l_0_1, "\\appdata\\roaming\\%a+.dll") ~= nil then
+      local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+      if l_0_2 ~= nil then
+        for l_0_6,l_0_7 in ipairs(l_0_2) do
+          l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+          ;
+          (bm.add_related_file)(l_0_7)
+        end
       end
-    end
-    do
-      -- DECOMPILER ERROR at PC51: Confused about usage of register: R0 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC61: Confused about usage of register: R0 in 'UnsetPending'
-
-      if l_0_4 == nil or (string.len)(l_0_4) < 4 or (string.sub)(l_0_4, -4) ~= ".exe" then
-        return mp.CLEAN
-      end
-      -- DECOMPILER ERROR at PC70: Confused about usage of register: R0 in 'UnsetPending'
-
-      local l_0_11 = nil
-      local l_0_12 = nil
-      if (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\" .. l_0_4) ~= nil then
-        local l_0_13 = nil
-        if (sysio.GetRegValueAsString)((sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\" .. l_0_4), "Debugger") ~= nil and (string.len)((sysio.GetRegValueAsString)((sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\" .. l_0_4), "Debugger")) >= 1 then
-          if (sysio.IsFileExists)((sysio.GetRegValueAsString)((sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\" .. l_0_4), "Debugger")) then
-            (mp.ReportLowfi)((sysio.GetRegValueAsString)((sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\" .. l_0_4), "Debugger"), 1806419140)
-            ;
-            (bm.add_related_file)((sysio.GetRegValueAsString)((sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\" .. l_0_4), "Debugger"))
-          else
-            local l_0_14 = nil
-            for l_0_18,l_0_19 in ipairs((mp.GetExecutablesFromCommandLine)((sysio.GetRegValueAsString)((sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\" .. l_0_4), "Debugger"))) do
-              local l_0_15 = nil
-              -- DECOMPILER ERROR at PC115: Confused about usage of register: R9 in 'UnsetPending'
-
-              if R9_PC115 ~= nil and (string.len)(R9_PC115) > 3 and (sysio.IsFileExists)(R9_PC115) then
-                (mp.ReportLowfi)(R9_PC115, 1806419140)
-                ;
-                (bm.add_related_file)(R9_PC115)
-              end
-            end
-          end
-          do
-            do
-              do return mp.INFECTED end
-              return mp.CLEAN
-            end
-          end
+      do
+        do
+          do return mp.INFECTED end
+          return mp.CLEAN
         end
       end
     end

@@ -3,27 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if (bm.get_current_process_startup_info)() ~= nil and ((bm.get_current_process_startup_info)()).ppid ~= nil then
-  l_0_1 = (string.lower)((mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid))
-  if (string.find)(l_0_1, "/create", 1, true) and (string.find)(l_0_1, "cmd.exe", 1, true) and (string.find)(l_0_1, "wordpad.exe", 1, true) and (string.find)(l_0_1, "/sc", 1, true) and (string.find)(l_0_1, "/tr", 1, true) and (string.find)(l_0_1, "/st", 1, true) and (string.find)(l_0_1, "/sd", 1, true) then
-    (bm.request_SMS)(((bm.get_current_process_startup_info)()).ppid, "M")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 1)
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((bm.get_process_relationships)()) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC96: Confused about usage of register: R7 in 'UnsetPending'
-
-      if R7_PC96.ppid ~= nil then
-        (bm.request_SMS)(R7_PC96.ppid, "M")
-      end
-    end
+if pehdr.NumberOfSections > 0 and epcode[2] == 131 and epcode[3] == 236 and epcode[5] == 232 and epcode[11] == 131 and epcode[12] == 196 and epcode[14] == 233 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_lastscn_writable") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") then
+  if (pesecs[1]).SizeOfRawData < (pesecs[pehdr.NumberOfSections]).SizeOfRawData then
+    return mp.INFECTED
+  end
+  if (mp.get_mpattribute)("pea_executes_from_last_section") then
     return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

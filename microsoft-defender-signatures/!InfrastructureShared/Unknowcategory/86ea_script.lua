@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.ismsil == true and l_0_0 > 589824 and l_0_0 < 720896 and (mp.get_mpattribute)("NID:Trojan:MSIL/TeslaCryptIH") then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 16, 5)
+if (mp.readu_u32)(l_0_0, 2) < 9437184 then
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

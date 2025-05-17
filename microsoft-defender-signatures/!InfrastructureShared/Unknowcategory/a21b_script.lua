@@ -3,23 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
+local l_0_0 = ""
+if (this_sigattrlog[7]).matched then
+  l_0_0 = (this_sigattrlog[7]).utf8p2
+else
+  if (this_sigattrlog[8]).matched then
+    l_0_0 = (this_sigattrlog[8]).utf8p2
+  else
+    if (this_sigattrlog[9]).matched then
+      l_0_0 = (this_sigattrlog[9]).utf8p2
+    else
+      if (this_sigattrlog[10]).matched then
+        l_0_0 = (this_sigattrlog[10]).utf8p2
+      end
+    end
   end
 end
-if (this_sigattrlog[4]).matched and (this_sigattrlog[5]).matched then
-  local l_0_6 = (this_sigattrlog[4]).p1
-  local l_0_7 = (this_sigattrlog[5]).p1
-  if l_0_6:lower() .. l_0_7:lower() == "unsafe" then
-    return mp.INFECTED
-  end
+if l_0_0 ~= nil and l_0_0 ~= "" and (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
+  return mp.INFECTED
 end
-do
-  return mp.LOWFI
-end
+return mp.CLEAN
 

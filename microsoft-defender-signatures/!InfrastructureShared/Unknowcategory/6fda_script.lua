@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and pehdr.AddressOfEntryPoint ~= 36446 then
+if (mp.getfilesize)() > 10240000 then
+  return mp.CLEAN
+end
+if pehdr.Subsystem == 11 or pehdr.Subsystem == 12 then
   return mp.INFECTED
 end
 return mp.CLEAN

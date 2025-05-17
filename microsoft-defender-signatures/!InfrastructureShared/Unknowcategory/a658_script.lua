@@ -3,38 +3,27 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_2 = nil, nil
-  end
-  do
-    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-      local l_0_1, l_0_3 = , (this_sigattrlog[2]).utf8p2
-    end
-    -- DECOMPILER ERROR at PC28: Confused about usage of register: R1 in 'UnsetPending'
-
-    local l_0_4 = nil
-    if (string.find)((string.lower)(l_0_3), "\\program files", 1, true) or (string.find)((string.lower)(l_0_3), ":\\windows\\system", 1, true) then
-      return mp.CLEAN
-    end
-    if l_0_4 ~= nil then
-      local l_0_5 = nil
-      local l_0_6 = nil
-      for l_0_10,l_0_11 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
-        local l_0_7, l_0_8 = , {[".xls"] = true, xlsx = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, xlsm = true}
-        -- DECOMPILER ERROR at PC72: Confused about usage of register: R9 in 'UnsetPending'
-
-        if (string.len)(R9_PC72) > 4 and (sysio.IsFileExists)(R9_PC72) and l_0_8[(string.sub)(R9_PC72, -4)] then
-          (bm.add_related_file)(R9_PC72)
-          return mp.INFECTED
-        end
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1, l_0_2 = (bm.get_process_relationships)()
+if l_0_2 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_7.ppid)
+    if l_0_0.integrity_level < l_0_8.IntegrityLevel then
+      local l_0_9 = (string.lower)(l_0_7.image_path)
+      if (string.find)(l_0_9, "\\system32\\mrt.exe", -17, true) or (string.find)(l_0_9, "\\asep_inv.exe", -13, true) or (string.find)(l_0_9, "\\mpsigstub.exe", -14, true) then
+        return mp.CLEAN
       end
-    end
-    do
-      return mp.CLEAN
+      ;
+      (bm.request_SMS)(l_0_7.ppid, "h+")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1000)
+      ;
+      (bm.trigger_sig)("Gouda", "Chrome")
+      return mp.INFECTED
     end
   end
+end
+do
+  return mp.CLEAN
 end
 

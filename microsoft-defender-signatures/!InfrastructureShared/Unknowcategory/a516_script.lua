@@ -3,31 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("lua_injector_cl_ep") == false then
-  return mp.CLEAN
-end
-if (hstrlog[1]).matched then
-  (mp.set_mpattribute)("InjCLT!01" .. "Yaparih")
-else
-  if (hstrlog[2]).matched then
-    (mp.set_mpattribute)("InjCLT!01" .. "thissshit")
-  else
-    if (hstrlog[3]).matched then
-      (mp.set_mpattribute)("InjCLT!01" .. "dressforless")
-    else
-      if (hstrlog[4]).matched then
-        (mp.set_mpattribute)("InjCLT!01" .. "MunchenGood")
-      else
-        if (hstrlog[5]).matched then
-          (mp.set_mpattribute)("InjCLT!01" .. "Nuremberg")
-        else
-          if (hstrlog[6]).matched then
-            (mp.set_mpattribute)("InjCLT!01" .. "goingbacksoon")
-          end
-        end
-      end
+(pe.mmap_patch_va)(pevars.sigaddr + 3, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+local l_0_0 = 512
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr - 256, l_0_0)
+local l_0_2 = (string.find)(l_0_1, "@B\015%z")
+local l_0_3 = (string.find)(l_0_1, "`\174\n%z")
+local l_0_4 = (string.find)(l_0_1, "h\132\003%z%z")
+if l_0_2 and l_0_3 and l_0_4 then
+  for l_0_8 = 1, 160 do
+    if (pe.mmap_va)(pevars.sigaddr + l_0_8 + l_0_3 - 256, 1) == "\232" then
+      (pe.mmap_patch_va)(pevars.sigaddr + l_0_8 + l_0_3 - 256, "êêêê\144")
     end
   end
 end
-return mp.CLEAN
+do
+  return mp.INFECTED
+end
 

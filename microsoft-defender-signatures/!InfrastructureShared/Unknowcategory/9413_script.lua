@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
-  l_0_0 = 16
-end
-l_0_0 = l_0_0 + (mp.bitand)(mp.HSTR_WEIGHT, 15)
-if l_0_0 >= 18 then
+if (pesecs[pehdr.NumberOfSections]).VirtualSize == 8192 and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3221225472) == 3221225472 and (mp.bitand)((pesecs[pehdr.NumberOfSections - 1]).Characteristics, 3221225472) == 3221225472 then
   return mp.INFECTED
-else
-  if l_0_0 >= 2 then
-    (mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
-  end
 end
-return mp.CLEAN
+return mp.LOWFI
 

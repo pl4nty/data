@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:BetterSurf")
-if mp.HSTR_WEIGHT >= 7 then
+if peattributes.no_security == true and (mp.getfilesize)() < 3000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

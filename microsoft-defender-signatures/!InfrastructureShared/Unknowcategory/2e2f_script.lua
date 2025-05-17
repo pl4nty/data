@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("SIGATTR:SIGATTR_LOG_ALL_FIRED")
 return mp.CLEAN
 

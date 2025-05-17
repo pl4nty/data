@@ -3,26 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  if (string.find)(l_0_1, "%w+[:]%w+%.%w+$") ~= nil then
-    local l_0_2 = {}
-    l_0_2[".cpl"] = ""
-    l_0_2[".exe"] = ""
-    l_0_2[".dll"] = ""
-    l_0_2[".scr"] = ""
-    l_0_2[".pif"] = ""
-    l_0_2[".jse"] = ""
-    l_0_2[".vbs"] = ""
-    l_0_2[".vbe"] = ""
-    l_0_2[".ps1"] = ""
-    if l_0_2[(string.lower)((string.sub)(l_0_1, -4))] then
-      return mp.INFECTED
+GetFolderPathFromFile = function(l_1_0)
+  -- function num : 0_0
+  if not l_1_0 then
+    return nil
+  end
+  local l_1_1 = (string.len)(l_1_0)
+  local l_1_2 = (string.reverse)(l_1_0)
+  if l_1_2 and (string.find)(l_1_2, "\\", 1, true) then
+    l_1_2 = (string.sub)(l_1_0, 1, l_1_1 - l_1_2 + 1)
+    return l_1_2
+  end
+  return nil
+end
+
+local l_0_0 = (MpDetection.GetCurrentThreat)()
+if (string.match)(l_0_0.Name, "Kilim") then
+  local l_0_1 = nil
+  for l_0_5,l_0_6 in pairs(l_0_0.Resources) do
+    if l_0_6.Schema == "file" then
+      l_0_1 = GetFolderPathFromFile(l_0_6.Path)
+      if l_0_1 and (sysio.IsFolderExists)(l_0_1) then
+        (MpDetection.ScanResource)("folder://" .. l_0_1)
+      end
     end
   end
-end
-do
-  return mp.CLEAN
 end
 

@@ -3,31 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative ~= true then
-  return mp.CLEAN
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_AMSI then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+  do
+    if l_0_1 then
+      local l_0_2 = (string.lower)(l_0_1)
+      if l_0_2:find("frtool.exe", 1, true) then
+        return mp.INFECTED
+      end
+    end
+    local l_0_3, l_0_4 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+    do
+      if l_0_3 and l_0_4 then
+        local l_0_5 = (string.lower)(l_0_4)
+        if l_0_5:find("fr_forensic.run.ps1") or l_0_5:find("installplazavcdriver-012121.ps1") then
+          return mp.INFECTED
+        end
+      end
+      return mp.CLEAN
+    end
+  end
 end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)()
-if not l_0_0 then
-  return mp.CLEAN
-end
-l_0_0 = (string.lower)(l_0_0)
-local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = (string.find)(l_0_0, "part00[0-9]+:(.+)%.(.+)%)%-%>(.+)%.(.+)$")
-if not l_0_3 or not l_0_4 or not l_0_5 or not l_0_6 then
-  return mp.CLEAN
-end
-local l_0_7 = "|ace|arj|iso|gz|r14|rar|zip|"
-if l_0_7:find("|" .. l_0_4 .. "|") == nil then
-  return mp.CLEAN
-end
-local l_0_8 = "|com|exe|scr|"
-if l_0_8:find("|" .. l_0_6 .. "|") == nil then
-  return mp.CLEAN
-end
-if l_0_3 == l_0_5 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

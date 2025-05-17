@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources then
+if peattributes.ismsil and (mp.get_mpattribute)("HSTR:MSIL/Confuser") then
   return mp.INFECTED
 end
 return mp.CLEAN

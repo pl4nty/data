@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = ""
-if l_0_0.is_header then
-  l_0_1 = (string.lower)(tostring(headerpage))
-else
-  l_0_1 = (string.lower)(tostring(footerpage))
+if not (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
+  return mp.CLEAN
 end
-l_0_1 = (string.gsub)(l_0_1, " ", "")
-l_0_1 = (string.gsub)(l_0_1, "`", "")
-if (string.find)(l_0_1, "globalassemblycache", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 48)
+local l_0_1 = (mp.readu_u32)(l_0_0, 6)
+local l_0_2 = (mp.readu_u32)(l_0_0, 38)
+local l_0_3 = (string.format)("CURE:Virus:Win32/Xpaj.C_%08X_%08X", l_0_1, l_0_2)
+;
+(mp.set_mpattribute)(l_0_3)
+return mp.INFECTED
 

@@ -3,39 +3,27 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 == nil or (this_sigattrlog[3]).utf8p2 ~= nil then
-    if (string.len)((this_sigattrlog[3]).utf8p2) < 100 then
-      return mp.CLEAN
+add_related_file_wrapper = function(l_1_0)
+  -- function num : 0_0
+  if l_1_0 ~= nil then
+    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
+    for l_1_5,l_1_6 in ipairs(l_1_1) do
+      l_1_6 = (mp.ContextualExpandEnvironmentVariables)(l_1_6)
+      if (string.find)(l_1_6, "cmstp.exe$") == nil and (sysio.IsFileExists)(l_1_6) then
+        (bm.add_related_file)(l_1_6)
+      end
     end
-    -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.find)((this_sigattrlog[3]).utf8p2, "%.ps1") then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
-
-    if not (string.find)((this_sigattrlog[3]).utf8p2, "{%d%d?}{%d%d?}") then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC62: Confused about usage of register: R0 in 'UnsetPending'
-
-    local l_0_7 = nil
-    local l_0_8 = nil
-    if (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "/admin/", 1, true) and (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "get.", 1, true) and (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "php", 1, true) and (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "invoke", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  do
-    return mp.CLEAN
   end
 end
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[1]).utf8p2)
+end
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[3]).utf8p1)
+end
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[3]).utf8p2)
+end
+return mp.INFECTED
 

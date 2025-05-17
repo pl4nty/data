@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (not (hstrlog[5]).matched or (hstrlog[6]).matched) and mp.HSTR_WEIGHT == 3 then
-  return mp.CLEAN
+if peattributes.isexe == true and peattributes.hasexports == false and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
+  return mp.INFECTED
 end
-if peattributes.hasstandardentry then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

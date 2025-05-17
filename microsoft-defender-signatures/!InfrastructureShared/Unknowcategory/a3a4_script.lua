@@ -3,30 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (nri.GetSSLCertificate)()
+local l_0_1 = {}
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
+  if l_0_0 then
+    local l_0_2 = {}
+    l_0_2.useragent = (nri.GetHttpRequestHeader)("User-Agent")
+    l_0_2.Subject = l_0_0.Subject
+    l_0_2.Issuer = l_0_0.Issuer
+    l_0_2.ValidFrom = l_0_0.ValidFrom
+    l_0_2.ValidTo = l_0_0.ValidTo
+    l_0_2.FingerprintSha1 = l_0_0.FingerprintSha1
+    l_0_2.FingerprintSha256 = l_0_0.FingerprintSha256
+    l_0_1 = l_0_2
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
-      if (sysio.IsFileExists)(R6_PC25) and (string.find)((string.lower)(R6_PC25), "javaw.exe") == nil then
-        (bm.add_threat_file)(R6_PC25)
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+  ;
+  (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_1)
+  return mp.INFECTED
 end
 

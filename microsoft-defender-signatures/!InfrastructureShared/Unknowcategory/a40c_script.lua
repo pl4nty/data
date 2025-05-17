@@ -3,17 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
-if l_0_0 ~= nil then
-  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
-  if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then
-    local l_0_2 = (string.lower)(l_0_1)
-    if (string.find)(l_0_2, "cmd", 1, true) or (string.find)(l_0_2, "msconfig", 1, true) or (string.find)(l_0_2, "taskmgr", 1, true) then
-      return mp.INFECTED
-    end
-  end
-end
-do
+if pehdr.NumberOfSections ~= 5 then
   return mp.CLEAN
 end
+if not peattributes.x86_image then
+  return mp.CLEAN
+end
+if (pesecs[1]).SizeOfRawData < 483328 or (pesecs[1]).SizeOfRawData > 495616 then
+  return mp.CLEAN
+end
+if (pesecs[2]).SizeOfRawData > 8192 then
+  return mp.CLEAN
+end
+if (pesecs[3]).SizeOfRawData ~= 12288 then
+  return mp.CLEAN
+end
+if (pesecs[4]).SizeOfRawData ~= 4096 then
+  return mp.CLEAN
+end
+if (pesecs[5]).SizeOfRawData < 1146880 or (pesecs[5]).SizeOfRawData > 1196032 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

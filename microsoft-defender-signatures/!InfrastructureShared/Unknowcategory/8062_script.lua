@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = (pe.get_versioninfo)()
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if (string.lower)((string.sub)(l_0_0.image_path, -11)) == "wscript.exe" then
-  return mp.INFECTED
+if (string.find)(l_0_0.CompanyName, "LaplFink Software", 1, true) == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,21 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(bm.get_current_process_startup_info)
-if l_0_0 then
-  local l_0_2, l_0_3, l_0_4 = pcall(bm.get_process_relationships)
-  if l_0_2 then
-    for l_0_8,l_0_9 in ipairs(l_0_3) do
-      if l_0_9.image_path ~= nil and ((string.find)((string.lower)(l_0_9.image_path), "\\syswow64\\regsvr32.exe", 1, true) or (string.find)((string.lower)(l_0_9.image_path), "\\syswow64\\rundll32.exe", 1, true)) and l_0_1 ~= nil and l_0_1.ppid ~= nil then
-        (bm.request_SMS)(l_0_1.ppid, "m")
-        return mp.INFECTED
-      end
-    end
-  end
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or (mp.getfilesize)() > 1048576 then
+  return mp.CLEAN
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+if (pe.get_exports_count)() > 3 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

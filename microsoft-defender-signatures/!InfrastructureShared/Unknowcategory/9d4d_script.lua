@@ -3,16 +3,7 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC9: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
--- DECOMPILER ERROR at PC19: Overwrote pending register: R1 in 'AssignReg'
-
-local l_0_1 = nil
-if l_0_0 ~= nil and l_0_1 ~= nil and l_0_0 == l_0_1 then
-  if (string.find)(l_0_0, "c:\\windows\\system32\\", 1, true) then
-    return mp.CLEAN
-  end
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
   return mp.INFECTED
 end
 return mp.CLEAN

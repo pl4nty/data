@@ -3,80 +3,57 @@
 
 -- params : ...
 -- function num : 0
-DeleteAutoRun = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0 then
-    local l_1_1 = (sysio.RegEnumValues)(l_1_0)
-    for l_1_5,l_1_6 in pairs(l_1_1) do
-      if l_1_6 then
-        local l_1_7 = (sysio.GetRegValueAsString)(l_1_0, l_1_6)
-        if l_1_7 then
-          local l_1_8, l_1_9 = (string.match)(l_1_7, "(.+\\)([^\\]+%.exe)\"$")
-          if l_1_8 ~= nil and l_1_9 ~= nil then
-            l_1_8 = (string.lower)(l_1_8)
-            if l_1_8:find(":\\programdata\\", 1, true) == nil and l_1_8:find(":\\program files\\common files\\", 1, true) == nil then
-              return 
-            end
-            local l_1_10 = (string.len)(l_1_9)
-            if l_1_10 == 13 then
-              for l_1_14 = 1, l_1_10 - 4 do
-                local l_1_15 = (string.byte)(l_1_9, l_1_14)
-                if l_1_15 < 97 or l_1_15 > 122 then
-                  return 
-                end
-              end
-            end
-            do
-              do
-                local l_1_16 = "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\" .. l_1_9
-                ;
-                (Remediation.BtrDeleteRegKey)(l_1_16)
-                l_1_16 = "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\\\" .. l_1_6
-                ;
-                (Remediation.BtrDeleteRegValue)(l_1_16)
-                ;
-                (sysio.DeleteRegValue)(l_1_0, l_1_6)
-                if (sysio.IsFileExists)(l_1_7) then
-                  (Remediation.BtrDeleteFile)(l_1_7)
-                end
-                ;
-                (Remediation.BtrDeleteRegKey)("HKLM\\SOFTWARE\\Win7zip")
-                ;
-                (Remediation.BtrDeleteRegValue)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\spybotsd.exe\\\\" .. "Debugger")
-                ;
-                (Remediation.BtrDeleteRegValue)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\hijackthis.exe\\\\" .. "Debugger")
-                ;
-                (Remediation.BtrDeleteRegValue)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\rstrui.exe\\\\" .. "Debugger")
-                ;
-                (Remediation.BtrDeleteRegValue)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\housecalllauncher.exe\\\\" .. "Debugger")
-                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out DO_STMT
-
-                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_STMT
-
-                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_STMT
-
-                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_STMT
-
-              end
-            end
-          end
-        end
-      end
-    end
+if pehdr.Machine ~= 332 or peattributes.isappcontainer or peattributes.resource_only_dll or peattributes.no_ep or peattributes.dmg_entrypoint or peattributes.dmg_not_executable_image or peattributes.dmg_truncated then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 256 or l_0_0 > 5242880 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_1 ~= nil and l_0_1 ~= mp.SCANREASON_UNKNOWN then
+  return mp.CLEAN
+end
+if (mp.GetResmgrBasePlugin)() ~= "Folder" then
+  return mp.CLEAN
+end
+local l_0_2 = (string.lower)((mp.getfilename)())
+if l_0_2:find(":\\windows\\winsxs", 1, true) ~= nil then
+  return mp.CLEAN
+end
+if l_0_2:find(":\\windows\\installer", 1, true) ~= nil then
+  return mp.CLEAN
+end
+if l_0_2:find(":\\sccmcontentlib\\filelib", 1, true) ~= nil then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.gethost)()
+if l_0_3 ~= mp.HOST_X86 and l_0_3 ~= mp.HOST_X64 then
+  return mp.CLEAN
+end
+local l_0_4, l_0_5 = pcall(mp.get_parent_filehandle)
+if l_0_4 then
+  l_0_4 = pcall(mp.get_filesize_by_handle, l_0_5)
+  if l_0_4 then
+    return mp.CLEAN
   end
 end
+local l_0_6 = (mp.utf16to8)((mp.getwfilename)())
+local l_0_7 = (sysio.GetFileAttributes)(l_0_6)
+local l_0_8 = "|" .. (l_0_6:match("..-[^\\/]-(%.?[^%.\\/:]+):?[^%.\\/:]*$")):lower() .. "|"
+local l_0_9 = "|.exe|.bat|.cmd|.pif|.scr|.cpl|.dll|.ocx|.sys|.drv|.data|.metadata_dll|.mptest|.api|.ax|.pmp|.mpp|.x3d|.mp|.pun|.ref|.p3k|.acm|.ime|.deploy"
+local l_0_10 = {}
+-- DECOMPILER ERROR at PC191: No list found for R10 , SetList fails
 
-if (Remediation.Threat).Active and (string.match)((Remediation.Threat).Name, "Behavior:") then
-  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    local l_0_6 = (sysio.RegOpenKey)(l_0_5)
-    DeleteAutoRun(l_0_6)
-  end
-end
+-- DECOMPILER ERROR at PC192: Overwrote pending register: R11 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC194: Overwrote pending register: R12 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC196: Overwrote pending register: R13 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC197: Overwrote pending register: R14 in 'AssignReg'
+
+;
+(("Lua:GenericNonRtp").set_mpattribute)((((not l_0_6:find(".", 1, true) or l_0_9:find(l_0_8, 1, true) == nil) and "N" or "_").concat)(l_0_7 ~= 4294967295 and (mp.bitand)(l_0_7, 2) ~= 0 and "H" or "_", peattributes.genpacked and "P" or "_"))
+return mp.CLEAN
 

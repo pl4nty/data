@@ -3,32 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" or l_0_1:match("([^\\]+)$") == "explorer.exe" or l_0_1:match("([^\\]+)$") == "mmc.exe" then
-    if (versioning.IsSeville)() then
-      local l_0_2 = (versioning.GetOrgID)()
-      if l_0_2 ~= nil then
-        l_0_2 = (string.lower)(l_0_2)
-        local l_0_3 = {}
-        l_0_3["d542d020-ab72-4d56-b7b6-b9f1e998a75a"] = true
-        l_0_3["2135e9fa-2274-4c30-a08d-e47c01dda1ec"] = true
-        l_0_3["3dc7d3ea-10d3-4100-987a-21d7cccef59b"] = true
-        if l_0_3[l_0_2] then
-          return mp.LOWFI
-        end
-      end
-      do
-        do
-          do
-            do return mp.INFECTED end
-            do return mp.LOWFI end
-            return mp.CLEAN
-          end
-        end
-      end
-    end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if (string.find)((string.lower)(l_0_6.image_path), "\\powershell.exe", 1, true) then
+    (MpCommon.TurnNriOnProcess)(l_0_6.ppid)
+    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
+    local l_0_9 = tonumber(l_0_7)
+    local l_0_10 = tonumber(l_0_8)
+    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
+    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
+    ;
+    (mp.TriggerScanResource)("ems", l_0_13)
   end
 end
+return mp.INFECTED
 

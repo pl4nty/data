@@ -3,26 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
+local l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p1)
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
 end
-if (pesecs[1]).SizeOfRawData > 36864 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < 3 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections > 5 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage < 94208 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage > 131072 then
-  return mp.CLEAN
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
 end
 return mp.INFECTED
 

@@ -3,39 +3,67 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\displayswitch.exe$") then
-  return mp.CLEAN
-end
-do
-  if (string.find)(l_0_0, "\\systray.exe$") then
-    local l_0_1 = (versioning.GetOrgID)()
-    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
-      return mp.CLEAN
-    end
-  end
-  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
-  if l_0_3 == nil or #l_0_3 == 0 then
-    return mp.CLEAN
-  end
-  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\displayswitch.exe")
-  if l_0_4 ~= nil then
-    local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
-    if l_0_5 == nil or (string.len)(l_0_5) <= 1 then
-      return mp.CLEAN
-    end
-  else
-    do
-      do return mp.CLEAN end
-      local l_0_6, l_0_7 = (bm.get_process_relationships)()
-      for l_0_11,l_0_12 in ipairs(l_0_6) do
-        if l_0_12.image_path ~= nil and (string.find)((string.lower)(l_0_12.image_path), "winlogon.exe", 1, true) then
-          return mp.INFECTED
+local l_0_0 = nil
+local l_0_1 = nil
+local l_0_2 = ((string.lower)((bm.get_imagepath)()))
+-- DECOMPILER ERROR at PC20: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
+
+if (((l_0_2 == nil or (string.len)(l_0_2) <= 3 or (this_sigattrlog[1]).matched) and not (this_sigattrlog[2]).matched) or l_0_1 ~= nil) and (string.len)(l_0_1) > 3 then
+  for l_0_6 in (string.gmatch)(l_0_1, "%S+") do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC52: Confused about usage of register: R6 in 'UnsetPending'
+
+    if R6_PC52 ~= nil and (string.len)(R6_PC52) >= 1 and (string.sub)(R6_PC52, 0, 1) ~= "/" then
+      if (sysio.IsFileExists)(R6_PC52) then
+        (bm.add_related_file)(R6_PC52)
+      else
+        if l_0_3 ~= nil and (sysio.IsFileExists)(l_0_3 .. R6_PC52) then
+          (bm.add_related_file)(l_0_7)
         end
       end
-      return mp.CLEAN
     end
+  end
+end
+do
+  local l_0_8 = nil
+  -- DECOMPILER ERROR at PC104: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC113: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC118: Confused about usage of register: R3 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC124: Confused about usage of register: R3 in 'UnsetPending'
+
+  if (((this_sigattrlog[3]).matched and not (this_sigattrlog[4]).matched) or nil ~= nil) and (string.len)(nil) > 3 then
+    for l_0_12 in (string.gmatch)(nil, "%S+") do
+      local l_0_9 = nil
+      -- DECOMPILER ERROR at PC128: Confused about usage of register: R7 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC132: Confused about usage of register: R7 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC138: Confused about usage of register: R7 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC146: Confused about usage of register: R7 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC152: Confused about usage of register: R7 in 'UnsetPending'
+
+      if l_0_3 .. R6_PC52 ~= nil and (string.len)(l_0_3 .. R6_PC52) >= 1 and (string.sub)(l_0_3 .. R6_PC52, 0, 1) ~= "/" then
+        if (sysio.IsFileExists)(l_0_3 .. R6_PC52) then
+          (bm.add_related_file)(l_0_3 .. R6_PC52)
+        else
+          -- DECOMPILER ERROR at PC158: Confused about usage of register: R7 in 'UnsetPending'
+
+          if l_0_8 ~= nil and (sysio.IsFileExists)(l_0_8 .. l_0_3 .. R6_PC52) then
+            (bm.add_related_file)(l_0_13)
+          end
+        end
+      end
+    end
+  end
+  do
+    return mp.INFECTED
   end
 end
 

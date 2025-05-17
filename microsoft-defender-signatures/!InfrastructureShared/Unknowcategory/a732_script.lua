@@ -3,43 +3,74 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-if (string.len)(l_0_1) < 1024 then
-  return mp.CLEAN
-end
-local l_0_2 = (string.match)(l_0_1, "(JABlAHgAdABQAGEA[a-zA-Z0-9%+/=]+)")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-l_0_2 = (string.sub)(l_0_2, 1, 512)
-local l_0_3 = (MpCommon.Base64Decode)(l_0_2)
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-l_0_3 = (string.gsub)(l_0_3, "%z", "")
-l_0_3 = (string.lower)((string.gsub)(l_0_3, " ", ""))
-if (string.find)(l_0_3, "confpath", 1, true) and (string.find)(l_0_3, "archivename", 1, true) and (string.find)(l_0_3, "taskname", 1, true) and (string.find)(l_0_3, "domain", 1, true) then
-  local l_0_4 = (string.match)(l_0_3, "%$taskname=\"(.-)\"")
-  if l_0_4 ~= nil then
-    local l_0_5 = (mp.GetParentProcInfo)()
-    if l_0_5 ~= nil then
-      local l_0_6 = (string.lower)(l_0_5.image_path)
-      local l_0_7 = l_0_6:match("([^\\]+)$")
-      local l_0_8 = "svchost.exe|taskeng.exe|taskhostw.exe"
-      if l_0_7 ~= nil and (string.find)(l_0_8, l_0_7) then
-        (mp.TriggerScanResource)("taskscheduler", "C:\\Windows\\System32\\Tasks\\" .. l_0_4)
+-- DECOMPILER ERROR at PC8: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (hstrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC34: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if not (pe.isdynamic_va)((hstrlog[2]).VA - 32) and (peattributes.isexe or peattributes.ismsil) and pehdr.NumberOfSections < 5 then
+      local l_0_4 = nil
+      for l_0_8 = 1, pehdr.NumberOfSections do
+        local l_0_5 = (pe.foffset_va)((hstrlog[2]).VA - 32)
+        -- DECOMPILER ERROR at PC43: Confused about usage of register: R5 in 'UnsetPending'
+
+        if (pe.contains_va)(R5_PC43, l_0_4) then
+          (mp.readprotection)(false)
+          local l_0_10 = (pesecs[R5_PC43]).SizeOfRawData - (l_0_5 - (pesecs[R5_PC43]).PointerToRawData)
+          -- DECOMPILER ERROR at PC72: Overwrote pending register: R7 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC79: Overwrote pending register: R7 in 'AssignReg'
+
+          if (pe.isencrypted_va)(l_0_4) then
+            local l_0_11 = nil
+            local l_0_12 = 0
+            -- DECOMPILER ERROR at PC83: Confused about usage of register: R9 in 'UnsetPending'
+
+            for l_0_16 = 2048, 2048 + 8 do
+              local l_0_13 = nil
+              -- DECOMPILER ERROR at PC89: Confused about usage of register: R13 in 'UnsetPending'
+
+              if (string.byte)(l_0_11, R13_PC89 + 1) < 42 or (string.byte)(l_0_11, R13_PC89 + 1) > 122 then
+                l_0_12 = l_0_12 + 1
+              else
+                break
+              end
+            end
+            do
+              do
+                -- DECOMPILER ERROR at PC112: Confused about usage of register: R9 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC117: Confused about usage of register: R9 in 'UnsetPending'
+
+                if l_0_12 > 0 then
+                  (mp.vfo_add_buffer)((string.sub)(l_0_11, 0, l_0_13) .. (string.sub)(l_0_11, l_0_13 + (l_0_12) + 1), "[b64mz]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+                else
+                  ;
+                  (mp.vfo_add_buffer)(l_0_11, "[b64mz]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+                end
+                do return mp.CLEAN end
+                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out DO_STMT
+
+                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_STMT
+
+                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_STMT
+
+              end
+            end
+          end
+        end
       end
     end
-  end
-  do
-    do
-      do return mp.INFECTED end
-      return mp.CLEAN
-    end
+    return mp.CLEAN
   end
 end
 

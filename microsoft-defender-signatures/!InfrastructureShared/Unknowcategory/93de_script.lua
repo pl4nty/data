@@ -3,12 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EBX)
-local l_0_1 = (pe.get_api_id)(l_0_0)
-if l_0_1 == 1269389306 then
-  (mp.set_mpattribute)("lua_codepatch_Obfuscator.zg")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 16, "êê")
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["winword.exe"] = true
+  l_0_3["excel.exe"] = true
+  l_0_3["powerpnt.exe"] = true
+  l_0_3["outlook.exe"] = true
+  if l_0_3[l_0_2] then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

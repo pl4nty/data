@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Destroysom.MBXK!MTB") then
+if (hstrlog[1]).matched or (hstrlog[2]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

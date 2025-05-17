@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() < 77824 then
+if pehdr.SizeOfImage >= 65536 and pehdr.SizeOfImage <= 131072 and peattributes.executes_from_dynamic_memory then
   return mp.INFECTED
+else
+  ;
+  (mp.changedetectionname)(805306395)
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

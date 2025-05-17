@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.TriggerScanResource)("wmi", "")
+(mp.set_mpattribute)("PUA:Block:EoRezod")
 return mp.INFECTED
 

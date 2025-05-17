@@ -3,21 +3,31 @@
 
 -- params : ...
 -- function num : 0
-(bm.DisableSignature)()
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = 0
-  local l_0_1 = (this_sigattrlog[1]).utf8p2
-  l_0_1 = (string.gsub)(l_0_1, "`", "")
-  if l_0_0 > 3 then
-    l_0_1 = (string.lower)(l_0_1)
-    if (string.find)(l_0_1, "frombase64string", 1, true) or (string.find)(l_0_1, "webclient", 1, true) or (string.find)(l_0_1, "newscriptblock", 1, true) or (string.find)(l_0_1, "http", 1, true) then
-      return mp.INFECTED
-    end
-  end
+if peattributes.isvbnative ~= true then
+  return mp.CLEAN
 end
-do
-  -- DECOMPILER ERROR at PC71: Overwrote pending register: R0 in 'AssignReg'
-
-  return l_0_0.CLEAN
+if peattributes.isexe ~= true then
+  return mp.CLEAN
 end
+local l_0_0 = (mp.getfilename)()
+if not l_0_0 then
+  return mp.CLEAN
+end
+l_0_0 = (string.lower)(l_0_0)
+local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = (string.find)(l_0_0, "part00[0-9]+:(.+)%.(.+)%)%-%>(.+)%.(.+)$")
+if not l_0_3 or not l_0_4 or not l_0_5 or not l_0_6 then
+  return mp.CLEAN
+end
+local l_0_7 = "|ace|arj|iso|gz|r14|rar|zip|"
+if l_0_7:find("|" .. l_0_4 .. "|") == nil then
+  return mp.CLEAN
+end
+local l_0_8 = "|com|exe|scr|"
+if l_0_8:find("|" .. l_0_6 .. "|") == nil then
+  return mp.CLEAN
+end
+if l_0_3 == l_0_5 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

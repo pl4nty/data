@@ -3,45 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if mp.HEADERPAGE_SZ < 4096 or l_0_0 < 4096 or l_0_0 > 16777216 then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-if (mp.readu_u16)(headerpage, 1) == 23117 then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if l_0_1 ~= "msiexec.exe" then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if l_0_2:sub(-17) == "\\windows\\system32" then
+    local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+    local l_0_4 = (string.lower)(l_0_3)
+    if l_0_4:sub(1, 2) == "ob" and l_0_4:sub(-4) == ".exe" then
+      local l_0_5 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
+      local l_0_6 = (string.lower)(l_0_5)
+      if l_0_6:sub(-10) == "\\all users" or l_0_6:sub(-12) == "\\programdata" or l_0_6:sub(-17) == "\\application data" or l_0_6:sub(-16) == "\\appdata\\roaming" then
+        local l_0_7 = (MpCommon.PathToWin32Path)(l_0_5) .. "\\" .. l_0_4
+        ;
+        (mp.ReportLowfi)(l_0_7, 3603965388)
+      end
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_1 = (mp.readu_u32)(headerpage, 57)
-if l_0_1 == 0 then
-  return mp.CLEAN
-end
-if (mp.bitand)((mp.bitxor)((mp.readu_u32)(headerpage, 1), l_0_1), 65535) ~= 23117 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_2 = (mp.readfile)(0, 4096)
-for l_0_6 = 1, 4096, 4 do
-  (mp.writeu_u32)(l_0_2, l_0_6, (mp.bitxor)((mp.readu_u32)(l_0_2, l_0_6), l_0_1))
-end
-local l_0_7 = (mp.readu_u32)(l_0_2, 61) + 1
-if l_0_7 > 4096 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_2, l_0_7) ~= 17744 then
-  return mp.CLEAN
-end
-local l_0_8 = (mp.readu_u32)(l_0_2, l_0_7 + 28)
-if l_0_8 ~= 2560 then
-  return mp.CLEAN
-end
-local l_0_9 = (mp.readu_u32)(l_0_2, l_0_7 + 84)
-if l_0_9 ~= 1024 then
-  return mp.CLEAN
-end
-if (mp.crc32)(-1, l_0_2, l_0_9 + 1, 32) ~= 3735068208 then
-  return mp.CLEAN
-end
-;
-(mp.vfo_add_buffer)(l_0_2, "[CeeInject.gen!DZ]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.CLEAN
 

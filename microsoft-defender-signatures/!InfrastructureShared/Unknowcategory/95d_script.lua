@@ -3,32 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if (string.sub)(l_0_1, 2) == ":\\program files\\common files" or (string.sub)(l_0_1, 2) == ":\\programdata" then
-    if peattributes.isdll then
-      return mp.CLEAN
-    end
-    local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-    local l_0_3 = (string.len)(l_0_2)
-    if l_0_3 ~= 13 then
-      return mp.CLEAN
-    end
-    for l_0_7 = 1, l_0_3 - 4 do
-      local l_0_8 = (string.byte)(l_0_2, l_0_7)
-      if l_0_8 < 97 or l_0_8 > 122 then
-        return mp.CLEAN
-      end
-    end
-    local l_0_9 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_ATTRIBUTES)
-    if (mp.bitand)(l_0_9, 3) ~= 0 then
-      (mp.set_mpattribute)("Lua:Neurevt.A")
-      return mp.INFECTED
-    end
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 16 or l_0_0 > 1048576 then
   return mp.CLEAN
 end
+if mp.HEADERPAGE_SZ == 0 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)()
+if l_0_1:find("\\Temporary Internet Files\\Content.IE5\\") then
+  return mp.CLEAN
+end
+local l_0_2, l_0_3 = nil, nil
+l_0_2 = l_0_1:find("%.%w+$")
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_4 = l_0_1:sub(l_0_2, l_0_3)
+local l_0_5 = false
+if l_0_4 == ".asp" or l_0_4 == ".aspx" or l_0_4 == ".php" or l_0_4 == ".php5" or l_0_4 == ".phtml" or l_0_4 == ".cgi" or l_0_4 == ".pl" or l_0_4 == ".cfm" or l_0_4 == ".cfc" or l_0_4 == ".jsp" or l_0_4 == ".js" or l_0_4 == ".py" or l_0_4 == ".rb" then
+  l_0_5 = true
+end
+if l_0_5 == false then
+  return mp.CLEAN
+end
+if (mp.crc32)(0, headerpage, 1, 3) == 3665532023 then
+  if mp.FOOTERPAGE_SZ ~= 0 and (mp.crc32)(0, footerpage, mp.FOOTERPAGE_SZ - 1, 2) == 1814796034 then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

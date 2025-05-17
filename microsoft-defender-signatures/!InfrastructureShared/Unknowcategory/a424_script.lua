@@ -3,24 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  if mp.HSTR_WEIGHT >= 18 then
-    (mp.changedetectionname)(805306420)
-    return mp.INFECTED
-  else
-    if mp.HSTR_WEIGHT >= 1 and (hstrlog[11]).matched then
-      (pe.set_peattribute)("hstr_exhaustive", true)
-      ;
-      (pe.reemulate)()
-    end
-  end
+if not (this_sigattrlog[1]).matched or not (this_sigattrlog[1]).ppid or not (this_sigattrlog[2]).matched then
   return mp.CLEAN
-else
-  if mp.HSTR_WEIGHT >= 18 then
-    return mp.INFECTED
-  else
-    if mp.HSTR_WEIGHT >= 7 then
-      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+end
+local l_0_0, l_0_1 = (bm.get_process_relationships)((this_sigattrlog[1]).ppid)
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path and (string.find)(l_0_6.image_path, "svchost.exe", 1, true) then
+    local l_0_7 = (this_sigattrlog[2]).utf8p1
+    if l_0_7 and not (mp.IsKnownFriendlyFile)(l_0_7, false, false) then
+      (mp.ReportLowfi)(l_0_7, 3377723068)
+      return mp.CLEAN
     end
   end
 end

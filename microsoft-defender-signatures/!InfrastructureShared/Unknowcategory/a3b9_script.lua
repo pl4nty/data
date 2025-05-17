@@ -3,30 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = nil, nil
-for l_0_5 = 1, mp.SIGATTR_LOG_SZ do
-  local l_0_2, l_0_3 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R5 in 'UnsetPending'
-
-  if (sigattr_head[R5_PC6]).matched then
-    if (sigattr_head[R5_PC6]).attribute == 16384 and l_0_2 == nil then
-      l_0_2 = (string.lower)((sigattr_head[R5_PC6]).utf8p1)
-    else
-      if (sigattr_head[R5_PC6]).attribute == 16393 and l_0_3 == nil then
-        l_0_3 = (string.lower)((sigattr_head[R5_PC6]).utf8p2)
-        l_0_3 = (string.gsub)(l_0_3, "\"", "")
-      end
-    end
-    -- DECOMPILER ERROR at PC58: Unhandled construct in 'MakeBoolean' P1
-
-    if l_0_2 ~= nil and l_0_3 ~= nil and l_0_2 == l_0_3 then
-      (mp.ReportLowfi)((sigattr_head[R5_PC6]).utf8p1, 3836302819)
-      return mp.INFECTED
-    end
-    break
-  end
+local l_0_0 = (mp.GetBruteMatchData)()
+if l_0_0.match_offset + 14 < mp.HEADERPAGE_SZ then
+  return mp.CLEAN
 end
 do
+  if l_0_0.is_header and headerpage[l_0_0.match_offset + 13] > 32 then
+    local l_0_1 = tostring(headerpage)
+    if (string.match)(l_0_1, "\253\028%Xm") ~= nil and (string.match)(l_0_1, "\004\017%Xm") ~= nil and (string.match)(l_0_1, "h\149%Xm") ~= nil then
+      (mp.set_mpattribute)("SCPT:Englist.Size")
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
 

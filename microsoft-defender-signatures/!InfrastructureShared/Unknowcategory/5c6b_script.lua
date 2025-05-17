@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() < 500000 then
-  return mp.INFECTED
+if (pe.query_import)(pe.IMPORT_STATIC, 1976185273) == 0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

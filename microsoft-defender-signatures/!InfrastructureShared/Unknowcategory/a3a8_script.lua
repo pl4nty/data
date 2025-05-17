@@ -3,26 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
-  return mp.CLEAN
+if (((((((((((hstrlog[1]).matched and not (hstrlog[2]).matched) or (hstrlog[3]).matched) and not (hstrlog[4]).matched) or (hstrlog[5]).matched) and not (hstrlog[6]).matched) or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 >= 7) and (mp.getfilesize)() < 483328 then
+  return mp.INFECTED
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if (string.sub)(l_0_1, 1, 7) == "msiexec" then
-  local l_0_2 = (mp.GetParentProcInfo)()
-  if l_0_2 ~= nil then
-    local l_0_3 = (string.lower)(l_0_2.image_path)
-    local l_0_4 = ((string.sub)(l_0_3, -15)):match("\\([^\\]+)$")
-    local l_0_5 = {}
-    l_0_5["svchost.exe"] = true
-    l_0_5["taskeng.exe"] = true
-    l_0_5["taskhostw.exe"] = true
-    if l_0_5[l_0_4] then
-      return mp.INFECTED
-    end
-  end
-end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

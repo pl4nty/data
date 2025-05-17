@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.ismsil == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (bm.get_imagepath)()
+if not l_0_0 then
   return mp.CLEAN
 end
+if (string.find)((string.lower)(l_0_0), "windows\\system32\\poqexec.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

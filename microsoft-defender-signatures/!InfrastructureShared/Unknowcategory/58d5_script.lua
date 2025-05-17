@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:DisableRealtimeMonitoring") then
+if (mp.get_mpattribute)("NID:Trojan:Win64/Baryas.MBXI!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

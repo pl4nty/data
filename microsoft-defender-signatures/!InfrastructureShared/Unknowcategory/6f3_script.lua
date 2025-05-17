@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattributesubstring)("AllowList:") or (mp.get_mpattributesubstring)("Allowlist:") then
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 and (string.len)(l_0_0) > 50 then
   return mp.INFECTED
 end
 return mp.CLEAN

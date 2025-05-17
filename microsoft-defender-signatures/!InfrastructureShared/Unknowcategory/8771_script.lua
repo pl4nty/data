@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "(.+\\)"
-local l_0_1 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
-if l_0_1 ~= nil and l_0_1 == (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0) then
+if (((hstrlog[12]).matched and (hstrlog[13]).matched) or not (hstrlog[14]).matched or (hstrlog[15]).matched) and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

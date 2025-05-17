@@ -3,33 +3,40 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (versioning.GetEngineBuild)() >= 16700 then
-    local l_0_0 = (versioning.GetOrgID)()
-    if l_0_0 and (string.lower)(l_0_0) == "d7c7c745-195f-4223-9c7a-99fb420fd000" then
-      return mp.CLEAN
-    end
-  end
-  local l_0_1 = nil
-  if (this_sigattrlog[2]).matched then
-    l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p1)
-    end
-  end
-  if l_0_1 ~= nil then
-    local l_0_2 = (string.sub)(l_0_1, -4)
-    local l_0_3 = "|.asp|aspx|ashx|asmx|"
-    if (string.find)(l_0_3, l_0_2, 1, true) then
-      if (sysio.IsFileExists)(l_0_1) then
-        (bm.add_related_file)(l_0_1)
-      end
-      return mp.INFECTED
-    end
-  end
-  do
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
+  return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = (string.match)(l_0_1, "werfault%.exe\"?%s+-s%s+.+%s+-e%s+(%d+)")
+if l_0_2 == "" or l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = tonumber(l_0_2)
+if l_0_3 == "" or l_0_3 == nil then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.GetPPidFromPid)(l_0_3)
+if l_0_4 == "" or l_0_4 == nil then
+  return mp.CLEAN
+end
+local l_0_5 = (mp.GetProcessCommandLine)(l_0_4)
+if l_0_5 == "" or l_0_5 == nil then
+  return mp.CLEAN
+end
+l_0_5 = (string.lower)(l_0_5)
+if l_0_5 == "" or l_0_5 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_5, "lsass.exe", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-for l_0_3 = mp.SIGATTR_LOG_SZ, 1, -1 do
-  if (sigattr_head[l_0_3]).matched and (sigattr_head[l_0_3]).attribute == 16384 then
-    local l_0_4 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[l_0_3]).utf8p1)
-    if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
-      (mp.ReportLowfi)(l_0_4, 1501004956)
+if (hstrlog[18]).matched or (hstrlog[19]).matched then
+  (mp.changedetectionname)(805306447)
+else
+  if (hstrlog[20]).matched then
+    (mp.changedetectionname)(805306448)
+  else
+    if (hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or (hstrlog[17]).matched then
+      (mp.changedetectionname)(805306432)
     end
   end
 end

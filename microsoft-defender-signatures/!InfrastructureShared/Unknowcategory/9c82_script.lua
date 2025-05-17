@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 101 then
-  return mp.INFECTED
-end
-if (hstrlog[1]).matched or (hstrlog[2]).matched then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if (hstrlog[1]).matched and (hstrlog[2]).matched then
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
   return mp.CLEAN
 end
-return mp.LOWFI
+if (string.match)(l_0_0, "extensions") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

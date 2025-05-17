@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:BetterInstall")
+(mp.set_mpattribute)("PUA:Block:NiceHashMiner")
 return mp.INFECTED
 

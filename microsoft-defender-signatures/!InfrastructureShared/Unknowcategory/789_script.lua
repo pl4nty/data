@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not (Remediation.Threat).Active then
-  return 
+local l_0_0 = (mp.IOAVGetDownloadUrl)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-local l_0_0 = (sysio.RegOpenKey)("hklm\\system\\currentcontrolset\\services\\trustedinstaller")
-if l_0_0 then
-  (sysio.SetRegValueAsStringExpand)(l_0_0, "ImagePath", "%SystemRoot%\\servicing\\TrustedInstaller.exe")
+if (string.len)(l_0_0) < 51 then
+  return mp.CLEAN
 end
+if (l_0_0:sub(1, 51)):lower() ~= "https://vtsamples.commondatastorage.googleapis.com/" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

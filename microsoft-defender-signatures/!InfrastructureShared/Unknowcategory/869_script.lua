@@ -3,11 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.suspicious_timestamp and not peattributes.deep_analysis and not peattributes.dt_error_heur_exit_criteria and not peattributes.suspicious_image_version then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.sub)(l_0_0, -8, -8) == "." or (string.sub)(l_0_0, -8, -8) == " " then
+  local l_0_1 = (string.sub)(l_0_0, -7, -5)
+  if l_0_1 == "doc" or l_0_1 == "jpg" or l_0_1 == "pdf" or l_0_1 == "zip" or l_0_1 == "(1)" or l_0_1 == "   " then
+    local l_0_2 = (string.sub)(l_0_0, -4)
+    if l_0_2 == ".bat" or l_0_2 == ".scr" or l_0_2 == ".cpl" or l_0_2 == ".cmd" or l_0_2 == ".pif" then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Rebhip!custom") or (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Rebhip!rsrc") or (mp.get_mpattribute)("HSTR:TrojanSpy:Win32/Rebhip!exhaustive") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

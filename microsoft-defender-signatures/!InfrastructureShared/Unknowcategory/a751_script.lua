@@ -3,30 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = true
-local l_0_3 = false
-for l_0_7,l_0_8 in ipairs(l_0_1) do
-  local l_0_9 = (mp.bitand)(l_0_8.reason_ex, bm.RELATIONSHIP_CREATED)
-  if l_0_9 == bm.RELATIONSHIP_CREATED then
-    local l_0_10 = (string.lower)(l_0_8.image_path)
-    if (string.find)(l_0_10, "\\windows\\sys", 1, true) or (string.find)(l_0_10, "\\program files", 1, true) or (string.find)(l_0_10, "\\choco", 1, true) or (string.find)(l_0_10, "\\wlanscan", 1, true) or (string.find)(l_0_10, "\\csc.exe", 1, true) or (string.find)(l_0_10, "\\7z", 1, true) or (string.find)(l_0_10, "\\bginfo", 1, true) or (string.find)(l_0_10, "\\cloudbuild\\", 1, true) or (string.find)(l_0_10, "\\winscp.exe", 1, true) or (string.find)(l_0_10, "\\dismhost", 1, true) then
-      l_0_2 = false
-    else
-      l_0_2 = true
-    end
-    if (string.find)(l_0_10, "regsvr32.exe", 1, true) or (string.find)(l_0_10, "rundll32.exe", 1, true) or (string.find)(l_0_10, "\\java", 1, true) then
-      l_0_2 = true
-    end
-    if l_0_2 == true then
-      (MpCommon.TurnNriOnProcess)(l_0_8.ppid)
-      ;
-      (bm.trigger_sig)("AmsiDownloadExecProc", "Trigger", l_0_8.ppid)
-      l_0_3 = true
-    end
-  end
+if peattributes.is_process or pehdr.NumberOfSections < 2 or pevars.epsec == 1 or pehdr.FileAlignment == 0 then
+  return mp.CLEAN
 end
-if l_0_3 == true then
+if pevars.epsec > 0 and pehdr.AddressOfEntryPoint ~= (pesecs[pevars.epsec]).VirtualAddress then
+  return mp.CLEAN
+end
+-- DECOMPILER ERROR at PC135: Unhandled construct in 'MakeBoolean' P3
+
+if (not (mp.get_mpattribute)("pea_lastscn_executable") or not (mp.get_mpattribute)("pea_epatstartentrysect") or (epcode[1] == 104 and (((epcode[6] == 232 or epcode[6] == 144) and epcode[11] == 233) or epcode[16] ~= 85 or epcode[17] ~= 139 or epcode[18] ~= 236 or epcode[6] ~= 232 or epcode[7] ~= 5 or epcode[8] ~= 0 or epcode[9] ~= 0 or epcode[10] ~= 0 or epcode[11] == 0) and (mp.bitand)(epcode[15], 240) ~= 240) or (pesecs[pevars.epsec]).SizeOfRawData ~= (pesecs[pevars.epsec]).VirtualSize or (pesecs[pevars.epsec]).SizeOfRawData % pehdr.FileAlignment > 0) then
   return mp.INFECTED
 end
 return mp.CLEAN

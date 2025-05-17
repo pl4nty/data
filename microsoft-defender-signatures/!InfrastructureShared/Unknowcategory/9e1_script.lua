@@ -3,70 +3,70 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (mp.getfilesize)()
-  if l_0_1 > 700416 or l_0_1 < 196608 then
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if peattributes.hasappendeddata then
+  return mp.CLEAN
+end
+if peattributes.ismsil then
+  return mp.CLEAN
+end
+if peattributes.isvbnative or peattributes.isvbpcode then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("Win32/AutoIt") or (mp.get_mpattribute)("Win32/AutoIt_HSTR1") or (mp.get_mpattribute)("Win32/AutoIt_HSTR2") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") or (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("HSTR:NSIS.gen!A") or (mp.get_mpattribute)("HSTR:NSIS_Installer") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("ValidDigitalSignature") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("Lua:SenseIRCretaeFileinTemp") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 209715200 then
+  return mp.CLEAN
+end
+if l_0_0 < 52428800 then
+  return mp.CLEAN
+end
+local l_0_1 = pehdr.NumberOfSections
+if l_0_1 > 5 then
+  return mp.CLEAN
+end
+if l_0_1 < 3 then
+  return mp.CLEAN
+end
+local l_0_2 = (pesecs[1]).SizeOfRawData
+if l_0_2 <= 196608 and l_0_2 >= 36864 then
+  local l_0_3 = (pesecs[l_0_1]).SizeOfRawData
+  local l_0_4 = (pesecs[l_0_1]).PointerToRawData
+  if l_0_3 > 208666624 then
     return mp.CLEAN
   end
-  if not (mp.get_mpattribute)("BM_UNKNOWN_FILE") then
-    if (mp.readu_u16)(headerpage, 1) == 23117 then
-      return mp.CLEAN
-    end
-    if (mp.readu_u16)(headerpage, 1) == 53200 then
-      return mp.CLEAN
-    end
-    if (mp.readu_u16)(headerpage, 1) == 19280 then
-      return mp.CLEAN
-    end
-    if (mp.readu_u32)(headerpage, 1) == 1836597052 then
-      return mp.CLEAN
-    end
-    if (mp.readu_u32)(headerpage, 1) == 1179866185 then
-      return mp.CLEAN
-    end
-  end
-  local l_0_2 = (string.lower)((string.sub)((mp.getfilename)(), -3))
-  if l_0_2 == "log" then
+  if l_0_3 < 51380224 then
     return mp.CLEAN
   end
-  if mp.FOOTERPAGE_SZ < 256 or #footerpage < 256 then
-    return mp.CLEAN
-  end
-  if (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 3) == 0 then
-    return mp.CLEAN
-  end
-  if (mp.readu_u32)(footerpage, mp.FOOTERPAGE_SZ - 7) == 0 then
-    return mp.CLEAN
-  end
-  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  if (string.sub)(l_0_3, -5) == "\\temp" then
-    local l_0_4 = tostring(footerpage)
-    if l_0_4:find("\000\000\000\000\000\000\000\000", 1, true) or l_0_4:find("PADDING", 1, true) then
+  ;
+  (mp.readprotection)(false)
+  local l_0_5 = (mp.readfile)(l_0_4, 16)
+  if (string.find)(l_0_5, "%z[^%z][^%z][^%z]%z[^%z][^%z][^%z]%z[^%z][^%z][^%z]%z[^%z][^%z][^%z]") then
+    local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+    if l_0_6:sub(-4) ~= ".exe" then
       return mp.CLEAN
     end
-    local l_0_5 = 1768444961
-    local l_0_6 = 1881145459
-    local l_0_7 = 1919381362
-    local l_0_8 = 536898913
-    local l_0_9 = ""
-    local l_0_10 = ""
-    local l_0_11 = 512
-    for l_0_15 = l_0_11, 1536 do
-      l_0_9 = (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15), l_0_5)
-      l_0_10 = (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 4), l_0_6)
-      for l_0_19 = 1, 6 do
-        if l_0_9 + l_0_19 == l_0_10 and l_0_9 + l_0_19 * 2 == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 8), l_0_7) and l_0_9 + l_0_19 * 3 == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 12), l_0_8) then
-          return mp.INFECTED
-        end
-        if l_0_9 - l_0_19 == l_0_10 and l_0_9 - l_0_19 * 2 == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 8), l_0_7) and l_0_9 - l_0_19 * 3 == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 12), l_0_8) then
-          return mp.INFECTED
-        end
-        if (mp.rol32)(l_0_9, l_0_19) == l_0_10 and (mp.rol32)(l_0_9, l_0_19 * 2) == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 8), l_0_7) and (mp.rol32)(l_0_9, l_0_19 * 3) == (mp.bitxor)((mp.readu_u32)(headerpage, l_0_15 + 12), l_0_8) then
-          return mp.INFECTED
-        end
-      end
+    local l_0_7 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if (l_0_7:sub(-10) == "\\all users" or l_0_7:sub(-12) == "\\programdata" or l_0_7:sub(-17) == "\\application data" or l_0_7:sub(-16) == "\\appdata\\roaming") and (l_0_6:sub(1, 2) == "ms" or l_0_6:sub(1, 2) == "ob") then
+      (mp.set_mpattribute)("Lua:ExeGamObfusHugeLastSection")
     end
+    return mp.INFECTED
   end
 end
 do

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and (mp.getfilesize)() <= 393216 then
+if ((pe.get_versioninfo)()).OriginalFilename == "rclone.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

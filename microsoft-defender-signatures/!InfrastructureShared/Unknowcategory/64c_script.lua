@@ -3,54 +3,39 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[4]).matched then
-  l_0_0 = (string.lower)((this_sigattrlog[4]).utf8p1)
-else
-  if (this_sigattrlog[5]).matched then
-    l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p1)
-  else
-    if (this_sigattrlog[6]).matched then
-      l_0_0 = (string.lower)((this_sigattrlog[6]).utf8p1)
-    else
-      if (this_sigattrlog[7]).matched then
-        l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p1)
-      else
-        if (this_sigattrlog[8]).matched then
-          l_0_0 = (string.lower)((this_sigattrlog[8]).utf8p2)
-        else
-          if (this_sigattrlog[9]).matched then
-            l_0_0 = (string.lower)((this_sigattrlog[9]).utf8p2)
-          else
-            if (this_sigattrlog[10]).matched then
-              l_0_0 = (string.lower)((this_sigattrlog[10]).utf8p2)
-            else
-              if (this_sigattrlog[11]).matched then
-                l_0_0 = (string.lower)((this_sigattrlog[11]).utf8p2)
-              end
-            end
-          end
-        end
-      end
-    end
-  end
-end
-local l_0_1 = ""
-if (this_sigattrlog[12]).matched then
-  l_0_1 = (string.lower)((this_sigattrlog[12]).utf8p2)
-end
-local l_0_2 = ""
-if (this_sigattrlog[13]).matched then
-  l_0_2 = (string.lower)((this_sigattrlog[13]).utf8p2)
-end
-if l_0_0 == nil or l_0_0 == "" then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
   return mp.CLEAN
 end
-if l_0_1 ~= "" and l_0_1 ~= nil and (string.find)(l_0_1, l_0_0) then
+local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+for l_0_5 in (string.gmatch)(l_0_1, "[^|]+") do
+  if not (string.find)(l_0_5, "fileshares", 1, true) then
+    return mp.CLEAN
+  end
+end
+do
+  if not (sysio.RegOpenKey)("HKLM\\SOFTWARE\\POLICIES\\Microsoft\\Windows Defender\\Signature Updates") then
+    local l_0_6, l_0_7 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Signature Updates")
+    if not l_0_6 then
+      l_0_7 = mp
+      l_0_7 = l_0_7.INFECTED
+      return l_0_7
+    end
+  end
+  -- DECOMPILER ERROR at PC55: Confused about usage of register: R2 in 'UnsetPending'
+
+  local l_0_8 = nil
+  if not (sysio.GetRegValueAsString)(l_0_6, "DefinitionUpdateFileSharesSources") then
+    return mp.INFECTED
+  end
+  for l_0_12 in (string.gmatch)((sysio.GetRegValueAsString)(l_0_6, "DefinitionUpdateFileSharesSources"), "[^|]+") do
+    local l_0_9 = nil
+    -- DECOMPILER ERROR at PC71: Confused about usage of register: R7 in 'UnsetPending'
+
+    if (string.find)(l_0_5, "\\\\[^\\]+\\[^\\]+") then
+      return mp.CLEAN
+    end
+  end
   return mp.INFECTED
 end
-if l_0_2 ~= "" and l_0_2 ~= nil and (string.find)(l_0_2, l_0_0) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

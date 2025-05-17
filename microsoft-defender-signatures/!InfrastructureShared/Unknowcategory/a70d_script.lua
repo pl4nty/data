@@ -3,40 +3,56 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:AntiEmuRaceThread") and (hstrlog[1]).matched then
-  local l_0_0 = 0
-  local l_0_1 = (mp.hstr_full_log)()
-  for l_0_5,l_0_6 in pairs(l_0_1) do
-    if l_0_6.matched and l_0_5 ~= "filter1" then
-      l_0_0 = l_0_6.VA
-    end
-  end
-  if l_0_0 == 0 then
-    return mp.CLEAN
-  end
-  local l_0_7 = l_0_0 - pehdr.AddressOfEntryPoint
-  if l_0_7 < 48 and l_0_7 > -48 then
-    return mp.CLEAN
-  end
-  local l_0_8 = (pe.mmap_va)(pehdr.AddressOfEntryPoint + pehdr.ImageBase, 16)
-  local l_0_9 = (mp.readu_u32)(l_0_8, 1)
-  if (mp.bitand)(l_0_9, 16777215) ~= 15204458 then
-    return mp.CLEAN
-  end
-  local l_0_10 = l_0_0 - pehdr.AddressOfEntryPoint - 7 - pehdr.ImageBase
-  ;
-  (mp.readprotection)(false)
-  local l_0_11 = (mp.readfile)(0, (mp.getfilesize)())
-  ;
-  (mp.writeu_u32)(l_0_11, (pe.foffset_rva)(pehdr.AddressOfEntryPoint + 1), 15326001)
-  ;
-  (mp.writeu_u32)(l_0_11, (pe.foffset_rva)(pehdr.AddressOfEntryPoint + 4), l_0_10)
-  ;
-  (mp.vfo_add_buffer)(l_0_11, "[Obfuscator.AKH0]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-  ;
-  (mp.set_mpattribute)("HSTR:PatchAntiEmuRaceThread")
-end
-do
+if peattributes.epscn_writable ~= true then
   return mp.CLEAN
 end
+if epcode[1] ~= 104 then
+  return mp.CLEAN
+end
+if pehdr.AddressOfEntryPoint ~= 4096 then
+  return mp.CLEAN
+end
+if pehdr.ImageBase ~= 268435456 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData <= 8192 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData >= 16384 then
+  return mp.CLEAN
+end
+if peattributes.packed ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.isdll ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasexports == true then
+  return mp.CLEAN
+end
+if peattributes.epatstartentrysect ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasboundimports == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 5 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections > 6 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size <= 240 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size >= 512 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

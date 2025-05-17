@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)(pevars.sigaddr) and (mp.get_mpattribute)("PEBMPAT:AntiEmuGetCopyOnWriteCount") then
-  (pe.set_regval)(pe.REG_EAX, 4294967295)
-  ;
-  (mp.set_mpattribute)("PEBMPAT:AntiEmuChkCopyOnWriteCount")
+if ((((((this_sigattrlog[3]).matched and not (this_sigattrlog[1]).matched) or (this_sigattrlog[4]).matched) and not (this_sigattrlog[2]).matched) or (this_sigattrlog[5]).matched) and not (this_sigattrlog[6]).matched) or 0 + 1 + 1 + 1 + 1 + 1 + 1 >= 4 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

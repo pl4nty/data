@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpRequestSMSH")
+(mp.set_mpattribute)("MpRequestSMSM")
 return mp.INFECTED
 

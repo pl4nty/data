@@ -3,21 +3,55 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_ismsil") then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 96)
+local l_0_1 = 1
+while 1 do
+  while 1 do
+    while 1 do
+      if l_0_1 < #l_0_0 then
+        local l_0_3 = 1
+        if (string.byte)(l_0_0, l_0_1) == 254 then
+          if (string.byte)(l_0_0, l_0_1 + 1) ~= 192 then
+            return mp.CLEAN
+          end
+          l_0_1 = l_0_1 + 2
+          l_0_3 = l_0_3 + 1
+          do
+            local l_0_2 = nil
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
+
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+      end
+    end
+    -- DECOMPILER ERROR at PC32: Confused about usage of register: R3 in 'UnsetPending'
+
+    if l_0_2 == 60 then
+      local l_0_4 = nil
+      if (string.byte)(l_0_0, l_0_1 + 1) ~= l_0_3 + 111 and (string.byte)(l_0_0, l_0_1 + 1) ~= l_0_3 + 118 then
+        return mp.CLEAN
+      end
+      do
+        local l_0_5 = nil
+        ;
+        (pe.mmap_patch_va)(pevars.sigaddr + (l_0_1) + 11, "\235")
+        do return mp.INFECTED end
+        -- DECOMPILER ERROR at PC60: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+        -- DECOMPILER ERROR at PC60: LeaveBlock: unexpected jumping out IF_STMT
+
+      end
+    end
+  end
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+do
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("system32", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

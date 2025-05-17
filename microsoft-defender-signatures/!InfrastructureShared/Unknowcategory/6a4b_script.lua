@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports and peattributes.isdll and peattributes.executable_image then
+if (mp.get_mpattribute)("BM_MZ_DLL") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

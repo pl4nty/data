@@ -3,23 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC27: Confused about usage of register: R6 in 'UnsetPending'
+
+      if (string.find)((string.lower)(R6_PC27), "\\javaw.exe") == nil and (sysio.IsFileExists)(R6_PC27) then
+        (bm.add_related_file)(R6_PC27)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if pehdr.ImageBase ~= 268435456 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData ~= 512 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

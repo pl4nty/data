@@ -3,9 +3,18 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Worm:MSIL/Murkados.A")
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched and (hstrlog[4]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[7]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("system32", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

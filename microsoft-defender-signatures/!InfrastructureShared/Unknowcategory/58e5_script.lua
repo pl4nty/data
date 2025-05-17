@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.has_msilresources and peattributes.ismsil then
+if (mp.get_mpattribute)("SIGATTR:DisableRealtimeMonitoring") then
   return mp.INFECTED
 end
 return mp.CLEAN

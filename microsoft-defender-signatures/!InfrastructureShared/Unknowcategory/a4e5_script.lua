@@ -3,31 +3,21 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  if (this_sigattrlog[2]).matched then
-    do return mp.CLEAN end
-    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/addfile [^ ]+ \\\\localhost\\[^ ]* [^ ]+") ~= nil then
+if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched and (this_sigattrlog[2]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p1)
+  if l_0_0 ~= nil and l_0_1 ~= nil and l_0_2 ~= nil then
+    local l_0_3 = (string.match)(l_0_1, ":\\([^\\]+)\\csrss.exe")
+    local l_0_4 = (string.match)(l_0_0, ":\\([^\\]+)\\csrss.exe")
+    local l_0_5 = (string.match)(l_0_2, ":\\([^\\]+)\\desktop.ini")
+    if l_0_3 == l_0_4 and l_0_3 == l_0_5 and l_0_3 ~= nil then
+      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_0), 3247936890)
       return mp.INFECTED
-    else
-      -- DECOMPILER ERROR at PC48: Confused about usage of register: R0 in 'UnsetPending'
-
-      if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/addfile [^ ]+ \\\\127%.0%.0%.1\\[^ ]* [^ ]+") ~= nil then
-        return mp.INFECTED
-      else
-        -- DECOMPILER ERROR at PC59: Confused about usage of register: R0 in 'UnsetPending'
-
-        if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/addfile [^ ]+ .:\\[^ ]* [^ ]+") ~= nil then
-          return mp.INFECTED
-        end
-      end
     end
-    return mp.CLEAN
   end
+end
+do
+  return mp.CLEAN
 end
 

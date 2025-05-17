@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Nscript:Type_bat") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("pea_reads_vdll_code") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

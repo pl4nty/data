@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[7]).Name == ".mackt" and (pesecs[8]).Name == ".topo0" and (pesecs[13]).Name == ".Orion" then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.suspicious_image_version and not peattributes.suspicious_timestamp then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

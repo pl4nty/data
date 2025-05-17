@@ -3,25 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSIsRemoteSession)
-if l_0_1 then
-  local l_0_2 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSUserName)
-  if (MpCommon.QueryPersistContextNoPath)("MpNewRemoteUsers", l_0_2) then
-    local l_0_3 = (this_sigattrlog[1]).utf8p1
-    if l_0_3 then
-      l_0_3 = (string.lower)(l_0_3)
-      if (string.find)(l_0_3, "vcredist_x64.exe", -16, true) or (string.find)(l_0_3, "vcredist_x86.exe", -16, true) or (string.find)(l_0_3, "GL.....%.tmp", -12) then
-        return mp.CLEAN
+if (MpCommon.NidSearch)(mp.NID_DISABLE_NW_REPORTING, 1) then
+  return mp.CLEAN
+end
+-- DECOMPILER ERROR at PC26: Overwrote pending register: R0 in 'AssignReg'
+
+if (MpCommon.NidSearch)(mp.NID_ENABLE_NW_REPORTING, 1) then
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil then
+      local l_0_1 = nil
+      if (string.match)(l_0_0, "^\"%z[^\"]*\"%z") ~= nil then
+        l_0_1 = (string.gsub)((string.match)(l_0_0, "\"%z[^\"]*\"%z"), "\"%z", "")
+      else
+        if (string.match)(l_0_0, "%.%ze%zx%ze%z") ~= nil then
+          l_0_1 = (string.match)(l_0_0, "%.%ze%zx%ze%z")
+        else
+          if (string.match)((string.lower)(l_0_0), "%.%zd%zl%zl%z") ~= nil then
+            l_0_1 = (string.match)(l_0_0, "%.%zd%zl%zl%z")
+          end
+        end
       end
-      if (mp.IsKnownFriendlyFile)(l_0_3, false, false) then
-        return mp.CLEAN
+      if l_0_1 ~= nil then
+        (mp.ReportLowfi)(l_0_1, 734424339)
       end
     end
-    return mp.INFECTED
   end
-end
-do
-  return mp.CLEAN
+  do
+    do return mp.INFECTED end
+    return mp.CLEAN
+  end
 end
 

@@ -3,49 +3,34 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_8 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R6_PC25) and (string.find)(".hta", (string.sub)((string.lower)(R6_PC25), -4), 1, true) then
-        (mp.ReportLowfi)(R6_PC25, 3795027138)
+local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+if l_0_0 ~= nil and (string.find)(l_0_0, "//b", 1, true) and (string.find)(l_0_0, "//e:jscript", 1, true) then
+  local l_0_1 = ((mp.GetExecutablesFromCommandLine)(l_0_0))
+  local l_0_2, l_0_3 = nil, nil
+  for l_0_7,l_0_8 in ipairs(l_0_1) do
+    l_0_2 = (mp.ContextualExpandEnvironmentVariables)("%temp%\\") .. l_0_8
+    l_0_3 = (mp.ContextualExpandEnvironmentVariables)("%temp%\\low\\") .. l_0_8
+    if (sysio.IsFileExists)(l_0_8) then
+      (bm.add_related_file)(l_0_8)
+      ;
+      (mp.ReportLowfi)(l_0_8, 3307547556)
+    else
+      if (sysio.IsFileExists)(l_0_2) then
+        (bm.add_related_file)(l_0_2)
         ;
-        (bm.add_related_file)(R6_PC25)
-      end
-    end
-  end
-  do
-    local l_0_9 = nil
-    if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-      l_0_9 = (this_sigattrlog[3]).utf8p2
-    end
-    if l_0_9 ~= nil then
-      local l_0_10 = (mp.GetExecutablesFromCommandLine)(l_0_9)
-      for l_0_14,l_0_15 in ipairs(l_0_10) do
-        if (sysio.IsFileExists)(l_0_15) and (string.find)(".js", (string.sub)((string.lower)(l_0_15), -3), 1, true) then
-          (mp.ReportLowfi)(l_0_15, 3795027138)
+        (mp.ReportLowfi)(l_0_2, 3307547556)
+      else
+        if (sysio.IsFileExists)(l_0_3) then
+          (bm.add_related_file)(l_0_3)
           ;
-          (bm.add_related_file)(l_0_15)
+          (mp.ReportLowfi)(l_0_3, 3307547556)
         end
       end
     end
-    do
-      l_0_10 = mp
-      l_0_10 = l_0_10.INFECTED
-      return l_0_10
-    end
   end
+  return mp.INFECTED
+end
+do
+  return mp.CLEAN
 end
 

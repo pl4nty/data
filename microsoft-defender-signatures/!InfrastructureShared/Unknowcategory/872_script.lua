@@ -3,33 +3,20 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+if peattributes.isdll then
+  return mp.CLEAN
+end
+if peattributes.isdamaged then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0)
-    local l_0_2 = l_0_1:match("(.+)\\svchost%.exe")
-    l_0_2 = (MpCommon.PathToWin32Path)(l_0_2)
-    if l_0_2 == nil then
-      return mp.CLEAN
-    end
-    l_0_2 = (mp.ContextualExpandEnvironmentVariables)(l_0_2)
-    if l_0_2 == nil then
-      return mp.CLEAN
-    end
-    if l_0_2:match("\\windows\\system32") or l_0_2:match("\\windows\\syswow64") then
-      return mp.CLEAN
+  if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_1:find("\\downloads$") then
+      return mp.INFECTED
     end
   end
-  do
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
 

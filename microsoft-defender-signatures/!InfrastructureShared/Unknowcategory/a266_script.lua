@@ -3,24 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (MpCommon.GetOriginalFileName)(l_0_2)
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if l_0_3 == "powershell.exe" and not (string.find)((string.lower)(l_0_2), "powershell.exe", 1, true) then
-  return mp.INFECTED
+if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 237568 then
+  if mp.HSTR_WEIGHT == 11 then
+    return mp.SUSPICIOUS
+  end
+  ;
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.reemulate)()
 end
 return mp.CLEAN
 

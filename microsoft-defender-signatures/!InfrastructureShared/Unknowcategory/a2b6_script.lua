@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr + 32
-do
-  if (string.find)((pe.mmap_va)(l_0_0, 64), "t\017", 1, true) == nil and (string.find)((pe.mmap_va)(l_0_0, 32), "t\003", 1, true) == nil and (string.find)((pe.mmap_va)(l_0_0, 64), "t\018", 1, true) == nil then
-    local l_0_1 = (string.find)((pe.mmap_va)(l_0_0, 64), "t\002", 1, true)
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)(l_0_6.image_path, "\\jumpcloud-agent.exe", 1, true) or (string.find)(l_0_6.image_path, "\\icinga2.exe", 1, true) or (string.find)(l_0_6.image_path, "\\plesksrv.exe", 1, true)) then
+    return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC58: Confused about usage of register: R1 in 'UnsetPending'
-
-  ;
-  (pe.mmap_patch_va)(l_0_0 + l_0_1 - 1, "\235")
-  return mp.INFECTED
 end
+return mp.INFECTED
 

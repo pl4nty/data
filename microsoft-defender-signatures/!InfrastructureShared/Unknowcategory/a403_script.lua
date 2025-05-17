@@ -3,21 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 16777216 then
-  return mp.CLEAN
+local l_0_0, l_0_1, l_0_2 = nil, nil, nil
+for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_3, l_0_4, l_0_5 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R6 in 'UnsetPending'
+
+  if (sigattr_head[R6_PC6]).matched then
+    if (sigattr_head[R6_PC6]).attribute == 16384 and l_0_3 == nil then
+      l_0_3 = (string.lower)((sigattr_head[R6_PC6]).utf8p1)
+      l_0_4 = (string.match)(l_0_3, "\\([^\\]+)$")
+    else
+      if (sigattr_head[R6_PC6]).attribute == 16393 and l_0_5 == nil then
+        l_0_5 = (string.lower)((sigattr_head[R6_PC6]).utf8p2)
+        l_0_5 = (string.match)(l_0_5, "\\([^\\]+)$")
+      end
+    end
+    -- DECOMPILER ERROR at PC63: Unhandled construct in 'MakeBoolean' P1
+
+    if l_0_3 ~= nil and l_0_5 ~= nil and l_0_4 == l_0_5 then
+      (mp.ReportLowfi)((sigattr_head[R6_PC6]).utf8p1, 444988102)
+      return mp.INFECTED
+    end
+    break
+  end
 end
-local l_0_1 = (pe.mmap_va)((pe.get_regval)(pe.REG_ESP), 16)
-local l_0_2 = (mp.readu_u32)(l_0_1, 1)
-if l_0_2 <= 0 or l_0_2 > 4194304 or not (pe.isdynamic_va)(l_0_2) then
-  return mp.CLEAN
+do
+  return mp.INFECTED
 end
-local l_0_3 = (mp.readu_u32)(l_0_1, 5)
-if l_0_3 <= 0 or l_0_3 > 16777216 then
-  return mp.CLEAN
-end
-local l_0_4 = (pe.mmap_va)(l_0_2, l_0_3)
-;
-(mp.vfo_add_buffer)(l_0_4, "[EvrStkExeScpt]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.CLEAN
 

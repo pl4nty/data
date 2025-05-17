@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:PCFixCleaner")
+(mp.set_mpattribute)("PUA:Block:CnDownloader")
 return mp.INFECTED
 

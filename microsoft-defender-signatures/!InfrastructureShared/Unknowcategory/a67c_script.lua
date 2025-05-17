@@ -3,47 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 ~= 16958 then
+    return mp.CLEAN
+  end
+  local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+  if (string.sub)(l_0_1, -4) ~= ".ico" then
+    return mp.CLEAN
+  end
+  local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+  if l_0_2 ~= nil then
+    (MpCommon.RequestSmsOnProcess)(l_0_2, MpCommon.SMS_SCAN_HIGH)
+    ;
+    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=FileName=%s,FileSize=%d,PPID=%s", l_0_1, l_0_0, l_0_2))
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 6 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 233 then
-  return mp.CLEAN
-end
-if epcode[4] ~= 255 then
-  return mp.CLEAN
-end
-if epcode[5] ~= 255 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pesecs[1]).PointerToRawData, 80)
-if l_0_0:byte(1) ~= 85 then
-  return mp.CLEAN
-end
-if l_0_0:byte(54) ~= 80 then
-  return mp.CLEAN
-end
-if l_0_0:byte(79) ~= 85 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

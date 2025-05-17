@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattributesubstring)("PUA:") then
+if (mp.GetScanSource)() == mp.SCANSOURCE_UCL then
   return mp.INFECTED
 end
 return mp.CLEAN

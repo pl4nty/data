@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x64_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (pesecs[5]).Name == ".rsrc" and (pesecs[5]).VirtualSize > 93955 and (pesecs[5]).VirtualSize < 93961 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

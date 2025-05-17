@@ -3,12 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 128)
-local l_0_1 = (string.byte)(l_0_0, 1) + 2
-if #l_0_0 < l_0_1 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_0, l_0_1) == 232 then
+if peattributes.isdll and peattributes.no_security == true and pehdr.NumberOfSections == 7 and (mp.getfilesize)() > 716800 and (mp.getfilesize)() < 1024000 then
   return mp.INFECTED
 end
 return mp.CLEAN

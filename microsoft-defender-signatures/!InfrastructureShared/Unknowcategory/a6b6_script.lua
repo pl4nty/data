@@ -3,50 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.ms = ""
-l_0_0.dx = ""
-local l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil, nil, nil
-if (this_sigattrlog[2]).matched then
-  l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
-else
-  if (this_sigattrlog[3]).matched then
-    l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p1)
-  else
-    if (this_sigattrlog[4]).matched then
-      l_0_1 = (string.lower)((this_sigattrlog[4]).utf8p1)
-    else
-      if (this_sigattrlog[5]).matched then
-        l_0_1 = (string.lower)((this_sigattrlog[5]).utf8p1)
-      else
-        if (this_sigattrlog[6]).matched then
-          l_0_1 = (string.lower)((this_sigattrlog[6]).utf8p1)
-        else
-          if (this_sigattrlog[7]).matched then
-            l_0_1 = (string.lower)((this_sigattrlog[7]).utf8p1)
-          end
-        end
-      end
-    end
-  end
+if not (MpCommon.QueryPersistContextNoPath)("MacMatchesHighRiskProtectionTarget", "on") then
+  return mp.CLEAN
 end
-if (this_sigattrlog[8]).matched then
-  l_0_3 = (string.lower)((this_sigattrlog[8]).utf8p2)
-else
-  if (this_sigattrlog[9]).matched then
-    l_0_3 = (string.lower)((this_sigattrlog[9]).utf8p2)
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if not l_0_0 then
+  return mp.CLEAN
 end
-if l_0_1 ~= nil and l_0_3 ~= nil then
-  l_0_2 = (string.match)(l_0_1, "\\([^\\]+)$")
-  l_0_4 = l_0_2:sub(1, 2)
-  if l_0_0[l_0_4] then
-    l_0_3 = (string.match)(l_0_3, "\\([^\\]+)$")
-    if l_0_2 == l_0_3 then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_1), 501759711)
-      return mp.INFECTED
-    end
-  end
+local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
+if not l_0_1:find("\\cmd.exe") then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.GetParentProcInfo)()
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (string.lower)(l_0_2.image_path)
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+if not l_0_3:find("\\wmiprvse.exe") then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.GetProcessCommandLine)(l_0_0)
+if not l_0_4 or #l_0_4 <= 8 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_4, "/Q ", 1, true) and (string.find)(l_0_4, "/c ", 1, true) and not (string.find)(l_0_4, "/Q /D ", 1, true) and not (string.find)(l_0_4, "/Q /c netstat -anop TCP 1>", 1, true) and not (string.find)(l_0_4, "/U /Q ", 1, true) then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

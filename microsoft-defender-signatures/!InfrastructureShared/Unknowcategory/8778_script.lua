@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true or peattributes.isdll == true and (pesecs[4]).Name == ".ndata" and (pesecs[3]).Characteristics == 3221225600 then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if l_0_0 ~= nil and (string.find)(l_0_0, "\\services.exe\\", 1, true) then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

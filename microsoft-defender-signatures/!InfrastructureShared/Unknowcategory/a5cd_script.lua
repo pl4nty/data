@@ -3,11 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasstandardentry == true or peattributes.isdll == false or peattributes.hasexports == false or pehdr.SizeOfImage >= 393216 then
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R1 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched then
+  local l_0_1 = nil
+  l_0_1 = nil
+  local l_0_0 = nil
+  if l_0_1 == nil or l_0_1 == "" then
+    return mp.CLEAN
+  end
+  l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_1))
+  if (sysio.IsFileExists)(l_0_1) then
+    local l_0_2 = (string.lower)(l_0_0)
+    if (string.sub)(l_0_2, 1, 1) == "%" and ((string.find)(l_0_2, "%commonprogramfiles%\\system\\wab32.dll", 1, true) or (string.find)(l_0_2, "%CommonProgramFiles(x86)%\\system\\wab32.dll", 1, true)) then
+      return mp.CLEAN
+    end
+    if not (string.find)(l_0_1, "\\outlook express\\wab32.dll", 1, true) then
+      (bm.add_related_file)(l_0_1)
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or not (hstrlog[8]).matched) and (hstrlog[10]).matched) or (hstrlog[7]).matched) and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) + ((hstrlog[12]).matched and 1 or 0) >= 2 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

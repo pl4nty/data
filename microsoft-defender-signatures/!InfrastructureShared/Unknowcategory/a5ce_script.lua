@@ -3,27 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = nil
-  l_0_0 = (this_sigattrlog[1]).utf8p2
-  if l_0_0 == nil or l_0_0 == "" then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_0, "-k", 1, true) or (string.find)(l_0_0, "UnistackSvcGroup", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_1 = (bm.get_current_process_startup_info)()
-  if l_0_1.integrity_level < MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-    local l_0_2, l_0_3 = (bm.get_process_relationships)()
-    for l_0_7,l_0_8 in ipairs(l_0_2) do
-      if l_0_8.image_path ~= nil and (mp.bitand)(l_0_8.reason_ex, 1) == 1 and (string.find)(l_0_8.image_path, "windows\\system32\\svchost.exe", 1, true) then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (bm.get_imagepath)()
+if not l_0_0 then
+  return mp.CLEAN
+end
+l_0_0 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
+if not (sysio.IsFileExists)(l_0_0) then
+  return mp.CLEAN
+end
+local l_0_1 = (sysio.GetFileLastWriteTime)(l_0_0)
+if not ((sysio.GetLastResult)()).Success or l_0_1 == 0 then
+  return mp.CLEAN
+end
+l_0_1 = l_0_1 / 10000000 - 11644473600
+local l_0_2 = (MpCommon.GetCurrentTimeT)()
+if l_0_2 <= l_0_1 then
+  return mp.CLEAN
 end
 do
-  return mp.CLEAN
+  local l_0_3 = (l_0_2 - (l_0_1)) / 60
+  if not l_0_3 <= 1440 then
+    return mp.CLEAN
+  end
+  if (#l_0_0 >= 9 and (string.sub)(l_0_0, 2, 9) == ":\\users\\") or #l_0_0 >= 15 and (string.sub)(l_0_0, 2, 15) == ":\\programdata\\" then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- DECOMPILER ERROR: 5 unprocessed JMP targets
 end
 

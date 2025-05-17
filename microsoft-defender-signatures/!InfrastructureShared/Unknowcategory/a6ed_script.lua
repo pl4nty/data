@@ -3,53 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -9)) ~= "\\w3wp.exe" then
-  return mp.CLEAN
+(mp.set_mpattribute)("HSTR:ZwangiDll")
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC119: Unhandled construct in 'MakeBoolean' P3
+
+if (((((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or not (hstrlog[5]).matched) and (hstrlog[11]).matched) or not (hstrlog[18]).matched) and (hstrlog[22]).matched) or (hstrlog[4]).matched) and 1 or 0) + ((hstrlog[10]).matched and 1 or 0) + ((hstrlog[17]).matched and 1 or 0) + ((hstrlog[21]).matched and 1 or 0) + ((hstrlog[24]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
-local l_0_1 = nil
-if (this_sigattrlog[1]).matched then
-  l_0_1 = (this_sigattrlog[1]).utf8p1
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_1 = (this_sigattrlog[2]).utf8p1
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_1 = (this_sigattrlog[3]).utf8p1
-    else
-      if (this_sigattrlog[4]).matched then
-        l_0_1 = (this_sigattrlog[4]).utf8p1
-      end
-    end
-  end
-end
-if l_0_1 ~= nil then
-  local l_0_2 = (string.sub)(l_0_1, -4)
-  local l_0_3 = "|.asp|aspx|ashx|asmx|"
-  if (string.find)(l_0_3, l_0_2, 1, true) == nil then
-    return mp.CLEAN
-  end
-end
-do
-  local l_0_4 = (bm.get_current_process_startup_info)()
-  local l_0_5 = l_0_4.command_line
-  if not (string.find)(l_0_5, "-ap \"MSExchange", 1, true) then
-    return mp.CLEAN
-  end
-  do
-    if (sysio.IsFileExists)(l_0_1) then
-      local l_0_6 = (string.match)(l_0_1, "(.*\\)[^\\]+$")
-      if l_0_6 then
-        (bm.trigger_sig)("TriggerShellPath", l_0_6)
-      end
-      ;
-      (mp.ReportLowfi)(l_0_1, 560784057)
-      ;
-      (bm.add_related_file)(l_0_1)
-      ;
-      (bm.add_threat_file)(l_0_1)
-    end
-    return mp.INFECTED
-  end
-end
+return mp.CLEAN
 

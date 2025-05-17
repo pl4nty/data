@@ -4,14 +4,12 @@
 -- params : ...
 -- function num : 0
 do
-  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 1110016 and (mp.getfilesize)() < 1134592 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if (mp.get_mpattribute)("Lua:XMLExt") then
+    local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+    if l_0_0:find("abusepreventionengineconfig.xml", 1, true) then
+      (mp.set_mpattribute)("MpNonPIIFileType")
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

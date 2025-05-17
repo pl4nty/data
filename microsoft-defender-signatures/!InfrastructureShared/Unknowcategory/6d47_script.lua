@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (string.match)((this_sigattrlog[1]).utf8p1, "\\%l%l%l%l%l%.exe$") ~= nil then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("MpRequestSMSM")
-return mp.INFECTED
+return mp.CLEAN
 

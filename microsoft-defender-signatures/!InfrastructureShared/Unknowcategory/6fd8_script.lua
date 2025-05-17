@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 8 then
-  return mp.INFECTED
+if pehdr.NumberOfSections ~= 3 then
+  return mp.LOWFI
 end
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (pesecs[2]).Name ~= ".scot" then
+  return mp.LOWFI
 end
-return mp.CLEAN
+return mp.SUSPICIOUS
 

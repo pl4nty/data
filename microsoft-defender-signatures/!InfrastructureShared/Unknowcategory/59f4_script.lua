@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("Exception:Tisifi")
-;
-(mp.set_mpattribute)("HSTR:TR_Win32_Tisifi_B_exclusion")
+if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+end
 return mp.INFECTED
 

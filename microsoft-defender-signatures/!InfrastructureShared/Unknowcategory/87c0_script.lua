@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win32/Meterpreter") and peattributes.no_security == true and (mp.getfilesize)() == 16896 then
+  return mp.INFECTED
 end
-;
-(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
-;
-(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 2000)
-return mp.INFECTED
+return mp.CLEAN
 

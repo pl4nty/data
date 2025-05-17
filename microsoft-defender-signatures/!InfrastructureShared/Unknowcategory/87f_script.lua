@@ -3,14 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    if l_0_1:find("^security center update - %d%d%d%d%d%d%d%d?%d?%d?%.job$") == 1 then
-      (mp.set_mpattribute)("Lua:ContextualDropJob.A")
-    end
-  end
+if pehdr.Subsystem ~= 1 then
   return mp.CLEAN
 end
+if pehdr.Machine ~= 332 then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() < 4096 then
+  return mp.CLEAN
+end
+for l_0_3 = 1, pehdr.NumberOfSections do
+  if (mp.bitand)((pesecs[l_0_3]).Characteristics, 2147483648) ~= 2147483648 then
+    return mp.CLEAN
+  end
+end
+;
+(mp.readprotection)(false)
+if (mp.readfile)((pesecs[1]).PointerToRawData, 4) == "(re)" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

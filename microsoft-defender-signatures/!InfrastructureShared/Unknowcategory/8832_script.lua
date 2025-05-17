@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 10 and (pesecs[9]).PointerToRawData == 1536 and pehdr.Machine == 332 and pehdr.Subsystem == 2 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 28672 and l_0_0 < 40960 and pehdr.NumberOfSections == 1 and (pesecs[pevars.epsec]).Name == ".text" then
   return mp.INFECTED
 end
 return mp.CLEAN

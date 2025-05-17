@@ -3,10 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-local l_0_1 = (string.lower)(l_0_0)
-if (l_0_1:find("hklm\\software\\microsoft\\windows defender\\exclusions\\paths\\", 1, true) or l_0_1:find("hklm\\software\\microsoft\\microsoft antimalware\\exclusions\\paths\\", 1, true)) and (string.sub)(l_0_1, -1) == "\\" and (string.sub)(l_0_1, -2) ~= ":\\" and (string.find)(l_0_0, "WTT 2.2\\Client\\", 1, true) == nil then
-  return mp.INFECTED
+local l_0_0 = Remediation.Threat
+if l_0_0.Name == "Virus:Win32/Grenam.A" or l_0_0.Name == "Virus:Win32/Grenam.B" then
+  for l_0_4,l_0_5 in ipairs(l_0_0.Resources) do
+    if l_0_5.Schema == "file" and (sysio.IsFileExists)(l_0_5.Path) then
+      local l_0_6, l_0_7 = (l_0_5.Path):match("(.+\\)([^\\]+)$")
+      local l_0_8 = nil
+      if l_0_0.Name == "Virus:Win32/Grenam.A" then
+        l_0_8 = "g"
+      else
+        if l_0_0.Name == "Virus:Win32/Grenam.B" then
+          l_0_8 = "v"
+        end
+      end
+      local l_0_9 = l_0_6 .. l_0_8 .. (string.sub)(l_0_7, 0, -4) .. "ico"
+      if (sysio.IsFileExists)(l_0_9) then
+        (sysio.DeleteFile)(l_0_9)
+      end
+    end
+  end
 end
-return mp.CLEAN
 

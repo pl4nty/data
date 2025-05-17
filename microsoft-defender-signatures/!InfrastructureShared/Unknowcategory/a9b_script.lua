@@ -3,33 +3,31 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 ~= nil then
-    local l_0_0 = nil
-  else
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
   end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
 
-  do
-    if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).wp2 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).wp2 ~= nil then
-      local l_0_1 = (this_sigattrlog[3]).utf8p2
-    else
-    end
-    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).wp2 == nil or (this_sigattrlog[6]).matched) and (this_sigattrlog[6]).wp2 ~= nil then
-        local l_0_2 = (this_sigattrlog[5]).utf8p2
-      end
-      -- DECOMPILER ERROR at PC71: Confused about usage of register: R0 in 'UnsetPending'
-
-      if (string.find)(l_0_2, "smbclient", 1, true) then
-        return mp.CLEAN
-      end
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or (string.lower)((this_sigattrlog[2]).utf8p2) ~= nil then
+    if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-hashes ", 1, true) then
       return mp.INFECTED
+    else
+      -- DECOMPILER ERROR at PC51: Confused about usage of register: R0 in 'UnsetPending'
+
+      if (string.find)((string.lower)((this_sigattrlog[2]).utf8p2), "-target-ip ", 1, true) then
+        return mp.INFECTED
+      else
+        -- DECOMPILER ERROR at PC64: Confused about usage of register: R0 in 'UnsetPending'
+
+        if (string.match)((string.lower)((this_sigattrlog[2]).utf8p2), "@%d+%.%d+%.%d+%.%d+") then
+          return mp.INFECTED
+        end
+      end
     end
   end
+  return mp.CLEAN
 end
 

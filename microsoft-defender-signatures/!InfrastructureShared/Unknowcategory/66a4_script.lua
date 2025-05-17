@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 3, "\001\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 59, "\001\000")
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("classes.dex") then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

@@ -3,25 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (hstrlog[3]).VA + 42
-local l_0_1 = (pe.mmap_va)(l_0_0, 4)
-if (string.byte)(l_0_1, 1) == 69 then
-  l_0_0 = l_0_0 + 5
-else
-  if (string.byte)(l_0_1, 1) == 133 then
-    l_0_0 = l_0_0 + 8
-  else
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+if l_0_0 then
+  if not (string.find)(l_0_0, "^c:\\") then
+    return mp.CLEAN
+  end
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\game", 1, true) then
     return mp.CLEAN
   end
 end
-l_0_1 = (pe.mmap_va)(l_0_0, 4)
-local l_0_2 = (mp.readu_u32)(l_0_1, 1)
-local l_0_3 = (pe.mmap_va)(l_0_2, 16)
-if (string.sub)(l_0_3, 1, 7) == "dfghjkl" then
-  return mp.INFECTED
-end
-if (string.sub)(l_0_3, 1, 14) == "dfertter2342zc" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_1 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_1.ppid, "M")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1000)
+return mp.INFECTED
 

@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("attrmatch_rescan_psif")
-;
-(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
+if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>inst%.vbs$") == nil then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

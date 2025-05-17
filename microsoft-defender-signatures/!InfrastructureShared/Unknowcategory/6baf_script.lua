@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
+if mp.HSTR_WEIGHT >= 11 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("HSTR:VirTool:Win32/Injector.gen!EE")
 return mp.CLEAN
 

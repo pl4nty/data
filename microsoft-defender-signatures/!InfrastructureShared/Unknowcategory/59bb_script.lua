@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata and peattributes.entrybyte55 then
+if (mp.get_mpattribute)("SCPT:VirTool:JS/FunctionPacked.A") == false then
   return mp.INFECTED
 end
 return mp.CLEAN

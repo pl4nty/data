@@ -3,30 +3,14 @@
 
 -- params : ...
 -- function num : 0
-fastBinaryTransform = function(l_1_0, l_1_1, l_1_2, l_1_3)
-  -- function num : 0_0
-  local l_1_4 = {}
-  local l_1_5 = nil
-  local l_1_6 = string.char
-  for l_1_10 = 0, 255 do
-    local l_1_19 = l_1_6
-    l_1_19 = l_1_19(l_1_3(l_1_2, l_1_10))
-    local l_1_11, l_1_16 = nil
-    l_1_11 = l_1_6
-    l_1_16 = l_1_10
-    local l_1_18 = nil
-    l_1_11 = l_1_11(l_1_16)
-    local l_1_17 = nil
-    l_1_4[l_1_19] = l_1_11
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
+      return mp.INFECTED
+    end
   end
-  local l_1_12, l_1_13 = l_1_0:gsub, l_1_0
-  local l_1_14 = l_1_1
-  do
-    local l_1_15 = l_1_4
-    do return l_1_12(l_1_13, l_1_14, l_1_15) end
-    -- DECOMPILER ERROR at PC24: Confused about usage of register R8 for local variables in 'ReleaseLocals'
-
-  end
+  return mp.CLEAN
 end
-
 

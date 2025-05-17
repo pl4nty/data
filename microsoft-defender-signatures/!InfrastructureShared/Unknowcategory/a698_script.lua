@@ -3,45 +3,36 @@
 
 -- params : ...
 -- function num : 0
-local l_0_4 = nil
-local l_0_5 = (nri.IsResponse)()
-if l_0_5 then
-  local l_0_0, l_0_1, l_0_2, l_0_3 = 16
-else
-  do
-    -- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
+local l_0_0 = nil
+local l_0_1, l_0_2 = , (bm.get_process_relationships)()
+local l_0_3 = nil
+if l_0_2 ~= nil then
+  for l_0_7,l_0_8 in ipairs(l_0_2) do
+    local l_0_4 = (bm.get_current_process_startup_info)()
+    -- DECOMPILER ERROR at PC12: Confused about usage of register: R8 in 'UnsetPending'
 
-    if not l_0_4 then
-      return mp.CLEAN
+    if R8_PC12.image_path ~= nil then
+      l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(R8_PC12.image_path))
+      if (string.find)(l_0_1, "\\svchost.exe", -12, true) or (string.find)(l_0_1, "\\rastools.exe", -13, true) or (string.find)(l_0_1, "\\rastoolsservice.exe", -20, true) then
+        return mp.CLEAN
+      end
     end
-    local l_0_6, l_0_7, l_0_8, l_0_9 = , (MpCommon.BinaryRegExpSearch)("(...)üSMB(....)[\001\002\003\004]...(....)", l_0_4)
-    if not l_0_7 then
-      return mp.CLEAN
-    end
-    readu32 = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  -- DECOMPILER ERROR at PC5: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC11: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC17: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC23: Overwrote pending register: R5 in 'AssignReg'
-
-  return nil + nil * 256 + nil * 65536 + nil * 16777216
+  end
 end
-
-    l_0_8 = (mp.bitand)((string.byte)(l_0_8, 1), 1) * 65536 + (string.byte)(l_0_8, 2) * 256 + (string.byte)(l_0_8, 3)
-    l_0_9 = readu32(l_0_9, 1)
-    if 4294967295 - readu32(R8_PC63, 1) < l_0_9 then
-      return mp.INFECTED
-    end
-    -- DECOMPILER ERROR at PC74: Confused about usage of register: R6 in 'UnsetPending'
-
-    if l_0_6 < l_0_8 and l_0_8 - l_0_6 < readu32(R8_PC63, 1) then
-      return mp.INFECTED
-    end
+do
+  if l_0_1 == nil then
     return mp.CLEAN
   end
+  -- DECOMPILER ERROR at PC76: Confused about usage of register: R3 in 'UnsetPending'
+
+  if (sysio.IsFileExists)(l_0_1) and not (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+    (bm.request_SMS)(l_0_4.ppid, "h+")
+    ;
+    (bm.add_action)("SmsAsyncScanEvent", 1000)
+    ;
+    (bm.add_related_file)(l_0_1)
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

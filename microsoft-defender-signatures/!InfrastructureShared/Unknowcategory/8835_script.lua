@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
   return mp.CLEAN
 end
-if (pe.get_exports)() ~= 1 then
-  return mp.CLEAN
-end
-if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "main" then
+if (pe.get_exports)() > 200 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((mp.getfilename)()):lower()
-if (mp.get_mpattribute)("BM_RTF_FILE") == true and (string.find)(l_0_0, ".rtf", -4, true) ~= nil then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 6, 5)
+if (mp.readu_u32)(l_0_0, 2) < 1048576 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

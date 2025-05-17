@@ -3,21 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "NewPECreatedNoCert")
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_2 = (sysio.GetFileLastWriteTime)(l_0_0)
-if ((sysio.GetLastResult)()).Success and l_0_2 ~= 0 then
-  l_0_2 = l_0_2 / 10000000 - 11644473600
-  local l_0_3 = (MpCommon.GetCurrentTimeT)()
-  if l_0_3 < l_0_2 or l_0_3 - (l_0_2) > 600 then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_0 = nil
+  end
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+
+  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
     return mp.CLEAN
   end
-  return mp.INFECTED
-end
-do
+  local l_0_2 = nil
+  local l_0_3 = (string.match)((string.lower)(l_0_1), "([^\\]+)$")
+  if l_0_3 == nil or (string.match)((string.lower)(l_0_2), "([^\\]+)$") == nil then
+    return mp.CLEAN
+  end
+  if #l_0_3 < #(string.match)((string.lower)(l_0_2), "([^\\]+)$") and (string.sub)((string.match)((string.lower)(l_0_2), "([^\\]+)$"), 1, #l_0_3) == l_0_3 then
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
 

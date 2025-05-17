@@ -3,31 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("/Lua:Worm:JS/Bondat.A!lnk") and (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
-  local l_0_0 = (mp.GetBruteMatchData)()
-  if l_0_0.match_offset ~= 2 then
-    return mp.CLEAN
-  end
-  if l_0_0.is_header then
-    local l_0_1 = (mp.getfilesize)()
-    do
-      if l_0_1 - 2 < 256 then
-        local l_0_2, l_0_3, l_0_4 = l_0_1 - 2
-      end
-      ;
-      (mp.readprotection)(false)
-      -- DECOMPILER ERROR at PC39: Confused about usage of register: R2 in 'UnsetPending'
-
-      local l_0_5 = nil
-      do
-        local l_0_6 = nil
-        if (((mp.readfile)(l_0_0.match_offset, l_0_2)):lower()):match("\\users\\[^\\]+\\appdata\\roaming\\%l+\\%w+%.exe%z\"(%w:\\users\\[^\\]+\\appdata\\roaming\\%l+\\%l+%.js)\"%z") ~= nil then
-          (mp.ReportLowfi)((((mp.readfile)(l_0_0.match_offset, l_0_2)):lower()):match("\\users\\[^\\]+\\appdata\\roaming\\%l+\\%w+%.exe%z\"(%w:\\users\\[^\\]+\\appdata\\roaming\\%l+\\%l+%.js)\"%z"), 593118850)
-          return mp.INFECTED
-        end
-        return mp.CLEAN
-      end
-    end
-  end
+if not peattributes.isexe or peattributes.packed or not peattributes.no_exception or not peattributes.no_exports or not peattributes.no_security or not peattributes.x86_image then
+  return mp.CLEAN
 end
+local l_0_0 = pevars.sigaddr
+local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 256, "`\156", nil, pe.VM_SEARCH_FOP)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = (pe.vm_search)(l_0_1, l_0_1 + 256, "\185", nil, pe.VM_SEARCH_FOP)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+l_0_2 = (pe.vm_search)(l_0_2, l_0_2 + 256, "\226", nil, pe.VM_SEARCH_FOP)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattributeex)("Lua:fopex_shellter_trick", l_0_1)
+return mp.INFECTED
 

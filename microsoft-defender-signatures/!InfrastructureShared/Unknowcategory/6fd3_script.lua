@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 28, "")
-;
-(mp.set_mpattribute)("do_deep_rescan")
-return mp.INFECTED
+if peattributes.ismsil == true and pehdr.NumberOfSections == 3 and peattributes.isexe == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

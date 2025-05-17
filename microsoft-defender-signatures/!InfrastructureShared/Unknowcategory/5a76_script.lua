@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() < 70000000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:GMiner")
+;
+(mp.set_mpattribute)("Company:CoinMiner64:DevelSoftware")
+return mp.INFECTED
 

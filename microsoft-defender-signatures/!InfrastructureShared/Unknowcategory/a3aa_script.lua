@@ -3,20 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (pesecs[1]).Characteristics ~= 1610612768 then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_6")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (mp.readu_u32)(l_0_0, 10)
+local l_0_2 = (mp.readu_u32)(l_0_0, 21)
+local l_0_3 = (pe.get_regval)(pe.REG_EDX)
+local l_0_4 = (string.byte)(l_0_0, 6)
+local l_0_5 = (mp.ror32)(l_0_3, l_0_4) - (mp.bitxor)(l_0_2, l_0_1) - 1
 ;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(pehdr.AddressOfEntryPoint), 24)
-if (mp.crc32)(-1, l_0_0, 1, 24) ~= 1525313111 then
-  return mp.CLEAN
-end
+(pe.set_regval)(pe.REG_EBX, l_0_5)
 return mp.INFECTED
 

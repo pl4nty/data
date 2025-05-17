@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 then
-  return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
+  if l_0_2 ~= nil and (string.find)(l_0_3, l_0_2) then
+    (mp.TriggerScanResource)("folder", "C:\\Windows\\System32\\Tasks\\")
+    return mp.INFECTED
+  end
 end
-if (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 then
-  return mp.CLEAN
+do
+  return mp.LOWFI
 end
-if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

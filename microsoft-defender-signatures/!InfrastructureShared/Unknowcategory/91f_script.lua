@@ -3,31 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.sub)(l_0_0, -10) == "chrome.exe" or (string.sub)(l_0_0, -11) == "firefox.exe" or (string.sub)(l_0_0, -12) == "iexplore.exe" then
-    local l_0_1 = nil
-    for l_0_5 = 1, mp.SIGATTR_LOG_SZ do
-      if (sigattr_tail[l_0_5]).matched and (sigattr_tail[l_0_5]).attribute == 16393 then
-        l_0_1 = (sigattr_tail[l_0_5]).utf8p2
-        if l_0_1 ~= nil then
-          local l_0_6 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-          for l_0_10,l_0_11 in ipairs(l_0_6) do
-            l_0_11 = (mp.ContextualExpandEnvironmentVariables)(l_0_11)
-            if (sysio.IsFileExists)(l_0_11) then
-              (bm.add_related_file)(l_0_11)
-            end
-          end
-        end
-      end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if not peattributes.isdll and (string.sub)(l_0_2, -4) == ".dll" and ((string.sub)(l_0_1, -5) == "\\temp" or (string.sub)(l_0_1, -9) == "\\temp\\low") then
+    local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_3 == "svchost.exe" then
+      (mp.set_mpattribute)("Lua:ContextualDropSvchostTemp")
     end
-    do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC81: Confused about usage of register R2 for local variables in 'ReleaseLocals'
-
   end
 end
-l_0_1 = mp
-l_0_1 = l_0_1.CLEAN
-return l_0_1
+do
+  return mp.CLEAN
+end
 

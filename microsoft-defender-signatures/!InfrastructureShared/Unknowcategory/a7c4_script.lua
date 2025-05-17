@@ -3,37 +3,85 @@
 
 -- params : ...
 -- function num : 0
-add_it = function(l_1_0)
-  -- function num : 0_0
-  if (string.find)(l_1_0, "\\powershell%.exe") ~= nil then
-    return 
-  else
-    if (string.find)(l_1_0, "\\system32\\cmd%.exe") ~= nil then
-      return 
+(mp.readprotection)(false)
+if (hstrlog[1]).matched then
+  local l_0_0 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 4, 4)
+  ;
+  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_0, 1), 2))
+else
+  do
+    if (hstrlog[2]).matched then
+      local l_0_1 = (pe.mmap_va_nofastfail)((hstrlog[2]).VA + 13, 4)
+      ;
+      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_1, 1), 2))
     else
-      if (string.find)(l_1_0, "\\monagentlauncher%.exe") ~= nil then
-        return 
-      else
-        if (string.find)(l_1_0, "\\lwl%.profileunity%.client%.cmdservice%.exe") ~= nil then
-          return 
+      do
+        if (hstrlog[3]).matched then
+          local l_0_2 = (pe.mmap_va_nofastfail)((hstrlog[3]).VA + 4, 4)
+          ;
+          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_2, 1), 2))
         else
-          if (string.find)(l_1_0, "\\noxcmdsvc%.exe") ~= nil then
-            return 
-          else
-            if (string.find)(l_1_0, "\\cmdagent%.exe") ~= nil then
-              return 
+          do
+            if (hstrlog[4]).matched then
+              local l_0_3 = (pe.mmap_va_nofastfail)((hstrlog[4]).VA - 4, 4)
+              ;
+              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_3, 1), 2))
             else
-              if (string.find)(l_1_0, "\\cbfsflt2017net%.dll") ~= nil then
-                return 
-              else
-                if (string.find)(l_1_0, "\\msica%.dll") ~= nil then
-                  return 
+              do
+                if (hstrlog[5]).matched then
+                  local l_0_4 = (pe.mmap_va_nofastfail)((hstrlog[5]).VA + 24, 4)
+                  ;
+                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_4, 1), 2))
                 else
-                  if (string.find)(l_1_0, "\\ratoken%.dll") ~= nil then
-                    return 
-                  else
-                    ;
-                    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_1_0))
+                  do
+                    if (hstrlog[6]).matched then
+                      local l_0_5 = (pe.mmap_va_nofastfail)((hstrlog[6]).VA + 8, 4)
+                      ;
+                      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_5, 1), 2))
+                    else
+                      do
+                        if (hstrlog[7]).matched then
+                          local l_0_6 = (pe.mmap_va_nofastfail)((hstrlog[7]).VA + 6, 4)
+                          ;
+                          (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_6, 1), 2))
+                        else
+                          do
+                            if (hstrlog[8]).matched then
+                              local l_0_7 = (pe.mmap_va_nofastfail)((hstrlog[8]).VA - 4, 4)
+                              ;
+                              (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_7, 1), 2))
+                            else
+                              do
+                                if (hstrlog[9]).matched then
+                                  local l_0_8 = (mp.readfile)((pe.foffset_va)((hstrlog[9]).VA + 25), 4)
+                                  ;
+                                  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_8, 1), 2))
+                                else
+                                  do
+                                    if (hstrlog[10]).matched then
+                                      local l_0_9 = (mp.readfile)((pe.foffset_va)((hstrlog[10]).VA + 4), 4)
+                                      ;
+                                      (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_9, 1), 2))
+                                    else
+                                      do
+                                        do
+                                          if (hstrlog[11]).matched then
+                                            local l_0_10 = (mp.readfile)((pe.foffset_va)((hstrlog[11]).VA + 4), 4)
+                                            ;
+                                            (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.8_k1_%08X_%02X", (mp.readu_u32)(l_0_10, 1), 2))
+                                          end
+                                          return mp.CLEAN
+                                        end
+                                      end
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
                   end
                 end
               end
@@ -44,49 +92,4 @@ add_it = function(l_1_0)
     end
   end
 end
-
-match_extension = function(l_2_0, l_2_1)
-  -- function num : 0_1
-  for l_2_5 in (string.gmatch)(l_2_0, "\"([^/&\"%%>]+%." .. l_2_1 .. ")\"") do
-    add_it(l_2_5)
-  end
-  for l_2_9 in (string.gmatch)(l_2_0, "\"([^/&\"%%>]+%." .. l_2_1 .. ")\\\"") do
-    add_it(l_2_9)
-  end
-  for l_2_13 in (string.gmatch)(l_2_0, "%a:[^:/&\"%%>]+%." .. l_2_1) do
-    add_it(l_2_13)
-  end
-  for l_2_17 in (string.gmatch)(l_2_0, "\\\\[^:/&\"%%>]+%." .. l_2_1) do
-    add_it(l_2_17)
-  end
-  for l_2_21 in (string.gmatch)(l_2_0, "%%[^%%]+%%\\[^:/&\"%%>]+%." .. l_2_1) do
-    add_it(l_2_21)
-  end
-end
-
-process_alias = function(l_3_0)
-  -- function num : 0_2
-  if l_3_0.matched and l_3_0.utf8p2 ~= nil then
-    local l_3_1 = (string.lower)(l_3_0.utf8p2)
-    match_extension(l_3_1, "exe")
-    match_extension(l_3_1, "ps1")
-    match_extension(l_3_1, "bat")
-    match_extension(l_3_1, "cmd")
-    match_extension(l_3_1, "dll")
-    match_extension(l_3_1, "vbs")
-    match_extension(l_3_1, "sys")
-    for l_3_5 in (string.gmatch)(l_3_1, "rundll32.exe ([^ ]+) ") do
-      add_it(l_3_5)
-    end
-    for l_3_9 in (string.gmatch)(l_3_1, "rundll32.exe \"([^\"]+)\"") do
-      add_it(l_3_9)
-    end
-  end
-end
-
-process_alias(this_sigattrlog[1])
-process_alias(this_sigattrlog[2])
-process_alias(this_sigattrlog[3])
-process_alias(this_sigattrlog[4])
-return mp.INFECTED
 

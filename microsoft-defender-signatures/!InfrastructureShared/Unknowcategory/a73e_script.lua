@@ -6,36 +6,62 @@
 -- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[20]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11 = nil
+  if (this_sigattrlog[3]).matched then
+    local l_0_0 = nil
+  else
   end
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
+  do
+    if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
+      local l_0_1 = (string.lower)((this_sigattrlog[4]).utf8p2)
+    else
+    end
+    -- DECOMPILER ERROR at PC63: Overwrote pending register: R0 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC35: Confused about usage of register: R0 in 'UnsetPending'
+    do
+      if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
+        local l_0_2, l_0_3, l_0_4, l_0_5 = (string.lower)((this_sigattrlog[6]).utf8p2), nil
+      else
+      end
+      if (this_sigattrlog[8]).matched then
+        local l_0_6 = (string.lower)((this_sigattrlog[8]).utf8p2)
+        -- DECOMPILER ERROR at PC91: Confused about usage of register: R1 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC99: Confused about usage of register: R1 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC108: Confused about usage of register: R1 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC65: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC75: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC85: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC95: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC105: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC115: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC125: Confused about usage of register: R0 in 'UnsetPending'
-
-  if ((((((((((((string.find)(l_0_0, "disablerealtimemonitoring $true", 1, true) and not (string.find)(l_0_0, "disablebehaviormonitoring $true", 1, true)) or (string.find)(l_0_0, "disableblockatfirstseen $true", 1, true)) and not (string.find)(l_0_0, "disableioavprotection $true", 1, true)) or (string.find)(l_0_0, "disableprivacymode $true", 1, true)) and not (string.find)(l_0_0, "disableintrusionpreventionsystem $true", 1, true)) or (string.find)(l_0_0, "disablescriptscanning $true", 1, true)) and not (string.find)(l_0_0, "severethreatdefaultaction 6", 1, true)) or (string.find)(l_0_0, "lowthreatdefaultaction 6", 1, true)) and not (string.find)(l_0_0, "moderatethreatdefaultaction 6", 1, true)) or (string.find)(l_0_0, "mapsreporting disabled", 1, true)) and not (string.find)(l_0_0, "enablecontrolledfolderaccess disabled", 1, true)) or nil + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 > 2 then
-    return mp.INFECTED
+        if l_0_6 and (string.lower)((this_sigattrlog[1]).utf8p1) and (string.find)(l_0_6, (string.lower)((this_sigattrlog[1]).utf8p1), 1, true) then
+          if (string.find)((string.lower)((this_sigattrlog[1]).utf8p1), "\\appdata\\", 1, true) then
+            local l_0_7, l_0_9, l_0_10 = , (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "(.+\\)([^\\]+)$")
+            if l_0_9 then
+              if (string.sub)(l_0_9, -17) == "\\appdata\\roaming\\" then
+                return mp.INFECTED
+              else
+                if (string.sub)(l_0_9, -15) == "\\appdata\\local\\" then
+                  return mp.INFECTED
+                else
+                  if (string.sub)(l_0_9, -18) == "\\appdata\\locallow\\" then
+                    return mp.INFECTED
+                  end
+                end
+              end
+            end
+          else
+            do
+              do
+                local l_0_8 = nil
+                if (string.find)(l_0_8, ":\\programdata\\", 1, true) and (string.match)(l_0_8, "(.+\\)([^\\]+)$") and (string.sub)((string.match)(l_0_8, "(.+\\)([^\\]+)$"), -14) == ":\\programdata\\" then
+                  return mp.INFECTED
+                end
+                return mp.CLEAN
+              end
+            end
+          end
+        end
+      end
+    end
   end
-  return mp.CLEAN
 end
 

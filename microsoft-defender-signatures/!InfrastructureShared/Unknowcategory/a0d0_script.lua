@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)(((pe.get_versioninfo)()).OriginalFilename) == "ultraviewer_service.exe" then
-  return mp.CLEAN
+if ((((((((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[1]).matched) or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and 0 + 1 + 1 >= 1) or 0 + 1 + 1 + 1 + 1 + 1 + 1 >= 2 then
+  return mp.INFECTED
 end
-if peattributes.is_process then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-return mp.INFECTED
+return mp.CLEAN
 

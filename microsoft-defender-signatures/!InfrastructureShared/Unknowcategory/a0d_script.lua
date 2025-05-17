@@ -3,400 +3,70 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.GetMachineGUID)())
-if l_0_0 == nil or l_0_0 ~= "15e7fdb4-69ea-447f-90ea-4622da7a88d6" and l_0_0 ~= "b2343ede-44a4-4178-bd92-d36186294555" and l_0_0 ~= "cafefeed-0000-0c7c-ab00-facebeadface" then
-  return mp.CLEAN
-end
-if (mp.get_mpattributesubstring)("Heraklez") or (mp.get_mpattributesubstring)("SLF:") or (mp.get_mpattributesubstring)("ALF:") or (mp.get_mpattributesubstring)("SLFPER:") or (mp.get_mpattributesubstring)("ALFPER:") then
-  return mp.CLEAN
-end
-local l_0_1 = 256
-local l_0_2 = 67108864
-local l_0_3 = (mp.getfilesize)()
-if l_0_3 < l_0_1 or l_0_2 < l_0_3 then
-  return mp.CLEAN
-end
-local l_0_4 = (MpCommon.GetCurrentTimeT)()
-local l_0_5 = (mp.crc32)(l_0_4, headerpage, 1, mp.HEADERPAGE_SZ)
-local l_0_6 = (mp.crc32)(l_0_5, footerpage, 1, mp.FOOTERPAGE_SZ)
-local l_0_7 = l_0_6 % 10000
-local l_0_8 = "Lua:vCtxt"
-local l_0_9 = 5000
-local l_0_10 = "BM_MZ_FILE"
-if (mp.get_mpattribute)(l_0_10) then
-  if l_0_7 < 2000 then
-    (mp.set_mpattribute)(l_0_8 .. l_0_10)
-    return mp.INFECTED
-  end
-  if l_0_7 < 4000 then
-    (mp.set_mpattribute)(l_0_8 .. l_0_10 .. "_1")
-    return mp.INFECTED
-  end
-  if l_0_7 < 6000 then
-    (mp.set_mpattribute)(l_0_8 .. l_0_10 .. "_2")
-    return mp.INFECTED
-  end
-  if l_0_7 < 8000 then
-    (mp.set_mpattribute)(l_0_8 .. l_0_10 .. "_3")
-    return mp.INFECTED
-  end
-  ;
-  (mp.set_mpattribute)(l_0_8 .. l_0_10 .. "_4")
-  return mp.INFECTED
-end
-local l_0_11 = "BM_DEX_FILE"
-if (mp.get_mpattribute)(l_0_11) then
-  if l_0_7 < 2000 then
-    (mp.set_mpattribute)(l_0_8 .. l_0_11)
-    return mp.INFECTED
-  end
-  if l_0_7 < 4000 then
-    (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_1")
-    return mp.INFECTED
-  end
-  if l_0_7 < 6000 then
-    (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_2")
-    return mp.INFECTED
-  end
-  if l_0_7 < 8000 then
-    (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_3")
-    return mp.INFECTED
-  end
-end
+local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_CONTROL_GUID)
+local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_SCANREASON)
 do
-  if (mp.get_mpattribute)("BM_MACHO32_FILE") or (mp.get_mpattribute)("BM_MACHO64_FILE") or (mp.get_mpattribute)("BM_DMG_FILE") or (mp.get_mpattribute)("BM_ELF_FILE") or (mp.get_mpattribute)("BM_XAR_ARCHIVE_FILE") then
-    local l_0_12 = 0
-    l_0_11 = "BM_MACHO32_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      l_0_12 = 1
-    end
-    l_0_11 = "BM_MACHO64_FILE"
-    if l_0_12 == 0 and (mp.get_mpattribute)(l_0_11) then
-      l_0_12 = 1
-    end
-    l_0_11 = "BM_DMG_FILE"
-    if l_0_12 == 0 and (mp.get_mpattribute)(l_0_11) then
-      l_0_12 = 1
-    end
-    l_0_11 = "BM_ELF_FILE"
-    if l_0_12 == 0 and (mp.get_mpattribute)(l_0_11) then
-      l_0_12 = 1
-    end
-    l_0_11 = "BM_XAR_ARCHIVE_FILE"
-    if l_0_12 == 0 and (mp.get_mpattribute)(l_0_11) then
-      l_0_12 = 1
-    end
-    if l_0_7 < 2000 then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_0")
-      return mp.INFECTED
-    end
-    if l_0_7 < 4000 then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_1")
-      return mp.INFECTED
-    end
-    if l_0_7 < 6000 then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_2")
-      return mp.INFECTED
-    end
-    if l_0_7 < 8000 then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_3")
-      return mp.INFECTED
-    end
-    ;
-    (mp.set_mpattribute)(l_0_8 .. l_0_11 .. "_4")
-    return mp.INFECTED
-  end
-  local l_0_13 = 0
-  local l_0_14 = 0
-  l_0_9 = 1000
-  if l_0_7 < l_0_9 or l_0_14 == 1 then
-    l_0_11 = "SCPT:HTMLFile"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "Html_file"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    if l_0_13 == 1 then
-      return mp.INFECTED
-    end
-  end
-  l_0_9 = 100
-  if l_0_7 < l_0_9 or l_0_14 == 1 then
-    l_0_11 = "SIGATTR:JAVAFile"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_SMALL_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_TIFF_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_CAB_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_MEDIA_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_XML_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_UNICODE_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_RTF_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_OLE_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_BMP_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_PNG_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_JPG_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_GIF_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_OFFICE_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_ZIP_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_RAR_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_7Z_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_CRX_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_SWF_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_MP3_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_PDF_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_FLV_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_OGG_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_FONT_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_JOB_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_TORRENT_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_DEBIAN_PKG_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_GZIP_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_VBE_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_AUTOCAD_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_CURSOR_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_SYMBIAN_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_LNK_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_PHOTOSHOP_IMG_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_HANGUL_WORD_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_WARCRAFT_MAP_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_DLM_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_SQLlite_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_WMF_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_PNF_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_JDIFF_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_LHA_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_SDB_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_TEXT_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    l_0_11 = "BM_UNKNOWN_FILE"
-    if (mp.get_mpattribute)(l_0_11) then
-      (mp.set_mpattribute)(l_0_8 .. l_0_11)
-      l_0_13 = 1
-    end
-    if l_0_13 == 1 then
-      return mp.INFECTED
-    end
-  end
-  l_0_13 = 0
-  if (mp.get_mpattribute)("Nscript:Type_js") or (mp.get_mpattribute)("Nscript:Type_vbs") or (mp.get_mpattribute)("Nscript:Type_bat") or (mp.get_mpattribute)("Nscript:Type_irc") or (mp.get_mpattribute)("Nscript:Type_ps") then
-    l_0_8 = "Lua:vCtxt"
-    if (mp.get_mpattribute)("RPF:TopLevelFile") then
-      l_0_9 = 7500
-      if l_0_7 < l_0_9 then
-        l_0_13 = 1
+  if l_0_0 and ((string.match)(l_0_1, "cafeefac%-dec7%-0000%-0001%-abcdeffedcba") or (string.match)(l_0_1, "08b0e5c0%-4fcb%-11cf%-aaa5%-00401c608501") or (string.match)(l_0_1, "d27cdb6e%-ae6d%-11cf%-96b8%-444553540000") or (string.match)(l_0_1, "dfeaf541%-f3e1%-4c24%-acac%-99c30715084a")) then
+    local l_0_4, l_0_5 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_FRAME_URL)
+    if l_0_4 then
+      if (string.find)(l_0_5, ".hopto.org", 7, true) or (string.find)(l_0_5, ".serveftp.com", 7, true) or (string.find)(l_0_5, ".myftp.biz", 7, true) or (string.find)(l_0_5, ".ddnsking.com", 7, true) or (string.find)(l_0_5, ".ddns.net", 7, true) or (string.find)(l_0_5, ".servepics.com", 7, true) then
+        if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+          (mp.aggregate_mpattribute)("Context:NoIP")
+        end
+        ;
+        (mp.aggregate_mpattribute)("//MpIsIEVScan")
+        return mp.TRUE
       end
-    end
-    if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-      l_0_9 = 20
-      if l_0_7 < l_0_9 then
-        l_0_13 = 1
+      if (string.find)(l_0_5, ".xyz/", 7, true) or (string.find)(l_0_5, ".trade/", 7, true) or (string.find)(l_0_5, ".systems/", 7, true) or (string.find)(l_0_5, ".army/", 7, true) or (string.find)(l_0_5, ".click/", 7, true) or (string.find)(l_0_5, ".space/", 7, true) or (string.find)(l_0_5, ".mobi/", 7, true) then
+        if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+          (mp.aggregate_mpattribute)("Context:GenericTLD")
+        end
+        ;
+        (mp.aggregate_mpattribute)("//MpIsIEVScan")
+        return mp.TRUE
       end
-    end
-    if l_0_13 == 1 then
-      l_0_7 = l_0_7 % 4
-      l_0_11 = "Nscript:Type_js"
-      if (mp.get_mpattribute)(l_0_11) then
-        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
+      if (string.find)(l_0_5, ".asia/", 7, true) or (string.find)(l_0_5, ".bid/", 7, true) or (string.find)(l_0_5, ".cafe/", 7, true) or (string.find)(l_0_5, ".club/", 7, true) or (string.find)(l_0_5, ".coop/", 7, true) or (string.find)(l_0_5, ".desi/", 7, true) or (string.find)(l_0_5, ".farm/", 7, true) or (string.find)(l_0_5, ".film/", 7, true) or (string.find)(l_0_5, ".guru/", 7, true) or (string.find)(l_0_5, ".life/", 7, true) or (string.find)(l_0_5, ".moe/", 7, true) or (string.find)(l_0_5, ".name/", 7, true) or (string.find)(l_0_5, ".news/", 7, true) or (string.find)(l_0_5, ".nyc/", 7, true) or (string.find)(l_0_5, ".tips/", 7, true) or (string.find)(l_0_5, ".top/", 7, true) then
+        if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+          (mp.aggregate_mpattribute)("Context:GenericTLD2")
+        end
+        ;
+        (mp.aggregate_mpattribute)("//MpIsIEVScan")
+        return mp.TRUE
       end
-      l_0_11 = "Nscript:Type_vbs"
-      if (mp.get_mpattribute)(l_0_11) then
-        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
+      if (string.find)((string.match)(l_0_5, "http://(.-/)"), "%.%l%l%l%l%l+/") then
+        if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+          (mp.aggregate_mpattribute)("Context:GenericLongTLD")
+        end
+        ;
+        (mp.aggregate_mpattribute)("//MpIsIEVScan")
+        return mp.TRUE
       end
-      l_0_11 = "Nscript:Type_ps"
-      if (mp.get_mpattribute)(l_0_11) then
-        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
+      if (string.find)(l_0_5, ".com:", 7, true) or (string.find)(l_0_5, ".org:", 7, true) or (string.find)(l_0_5, ".info:", 7, true) or (string.find)(l_0_5, ".net:", 7, true) or (string.find)(l_0_5, ".ca:", 7, true) or (string.find)(l_0_5, ".ws:", 7, true) or (string.find)(l_0_5, ".eu:", 7, true) or (string.find)(l_0_5, ".us:", 7, true) or (string.find)(l_0_5, ".in:", 7, true) or (string.find)(l_0_5, ".vu:", 7, true) or (string.find)(l_0_5, ".br:", 7, true) or (string.find)(l_0_5, ".ru:", 7, true) or (string.find)(l_0_5, ".pw:", 7, true) then
+        if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+          (mp.aggregate_mpattribute)("Context:PortTLD")
+        end
+        ;
+        (mp.aggregate_mpattribute)("//MpIsIEVScan")
+        return mp.TRUE
       end
-      l_0_11 = "Nscript:Type_bat"
-      if (mp.get_mpattribute)(l_0_11) then
-        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
+      if (string.find)(l_0_5, ".cf/", 7, true) or (string.find)(l_0_5, ".gq/", 7, true) or (string.find)(l_0_5, ".ga/", 7, true) or (string.find)(l_0_5, ".ml/", 7, true) or (string.find)(l_0_5, ".eu/", 7, true) or (string.find)(l_0_5, ".in/", 7, true) or (string.find)(l_0_5, ".me/", 7, true) then
+        if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+          (mp.aggregate_mpattribute)("Context:CountryCodeTLD")
+        end
+        ;
+        (mp.aggregate_mpattribute)("//MpIsIEVScan")
+        return mp.TRUE
       end
-      l_0_11 = "Nscript:Type_irc"
-      if (mp.get_mpattribute)(l_0_11) then
-        (mp.set_mpattribute)(l_0_8 .. l_0_11 .. l_0_7)
-      end
-      if l_0_13 == 1 then
-        return mp.INFECTED
+      if (string.find)(l_0_5, ".ag/", 7, true) or (string.find)(l_0_5, ".am/", 7, true) or (string.find)(l_0_5, ".at/", 7, true) or (string.find)(l_0_5, ".be/", 7, true) or (string.find)(l_0_5, ".bg/", 7, true) or (string.find)(l_0_5, ".bz/", 7, true) or (string.find)(l_0_5, ".cc/", 7, true) or (string.find)(l_0_5, ".ch/", 7, true) or (string.find)(l_0_5, ".cz/", 7, true) or (string.find)(l_0_5, ".dk/", 7, true) or (string.find)(l_0_5, ".ec/", 7, true) or (string.find)(l_0_5, ".eg/", 7, true) or (string.find)(l_0_5, ".es/", 7, true) or (string.find)(l_0_5, ".fi/", 7, true) or (string.find)(l_0_5, ".fm/", 7, true) or (string.find)(l_0_5, ".gr/", 7, true) or (string.find)(l_0_5, ".gs/", 7, true) or (string.find)(l_0_5, ".hr/", 7, true) or (string.find)(l_0_5, ".hu/", 7, true) or (string.find)(l_0_5, ".id/", 7, true) or (string.find)(l_0_5, ".il/", 7, true) or (string.find)(l_0_5, ".io/", 7, true) or (string.find)(l_0_5, ".ir/", 7, true) or (string.find)(l_0_5, ".it/", 7, true) or (string.find)(l_0_5, ".la/", 7, true) or (string.find)(l_0_5, ".lt/", 7, true) or (string.find)(l_0_5, ".lu/", 7, true) or (string.find)(l_0_5, ".ms/", 7, true) or (string.find)(l_0_5, ".mx/", 7, true) or (string.find)(l_0_5, ".my/", 7, true) or (string.find)(l_0_5, ".nl/", 7, true) or (string.find)(l_0_5, ".no/", 7, true) or (string.find)(l_0_5, ".ph/", 7, true) or (string.find)(l_0_5, ".pl/", 7, true) or (string.find)(l_0_5, ".pt/", 7, true) or (string.find)(l_0_5, ".pw/", 7, true) or (string.find)(l_0_5, ".se/", 7, true) or (string.find)(l_0_5, ".sk/", 7, true) or (string.find)(l_0_5, ".so/", 7, true) or (string.find)(l_0_5, ".th/", 7, true) or (string.find)(l_0_5, ".tk/", 7, true) or (string.find)(l_0_5, ".tn/", 7, true) or (string.find)(l_0_5, ".to/", 7, true) or (string.find)(l_0_5, ".tt/", 7, true) or (string.find)(l_0_5, ".ua/", 7, true) or (string.find)(l_0_5, ".uk/", 7, true) or (string.find)(l_0_5, ".us/", 7, true) or (string.find)(l_0_5, ".vn/", 7, true) or (string.find)(l_0_5, ".ws/", 7, true) then
+        if l_0_2 and l_0_3 ~= mp.SCANREASON_VALIDATION_PRESCAN then
+          (mp.aggregate_mpattribute)("Context:CountryCodeTLD2")
+        end
+        ;
+        (mp.aggregate_mpattribute)("//MpIsIEVScan")
+        return mp.TRUE
       end
     end
   end
-  return mp.CLEAN
+  return mp.FALSE
 end
 

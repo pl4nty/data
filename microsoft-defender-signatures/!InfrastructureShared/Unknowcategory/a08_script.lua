@@ -3,119 +3,18 @@
 
 -- params : ...
 -- function num : 0
-getCachePaths = function(l_1_0)
+Infrastructure_NeobarReportPathExclusions = function(l_1_0)
   -- function num : 0_0
-  if l_1_0 == nil or l_1_0 == "" then
-    return nil
-  end
-  local l_1_1 = {}
-  local l_1_2 = {}
-  -- DECOMPILER ERROR at PC13: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC16: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC17: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC44: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC57: Overwrote pending register: R7 in 'AssignReg'
-
-  l_1_1["wlmail.exe"], l_1_2 = l_1_2, {"%internet_cache%\\content.ie5\\", "%internet_cache%\\ie\\", "microsoft\\windows\\temporary internet files\\content.ie5\\", "microsoft\\windows\\inetcache\\ie\\", "appdata\\roaming\\qualcomm\\eudora\\attachments\\"}
-  l_1_1["hxmail.exe"], l_1_2 = l_1_2, {"appdata\\local\\packages\\microsoft.windowscommunicationsapps"}
-  l_1_1["hxtsr.exe"], l_1_2 = l_1_2, {"appdata\\local\\packages\\microsoft.windowscommunicationsapps"}
-  l_1_1["runtimebroker.exe"], l_1_2 = l_1_2, {"appdata\\local\\packages\\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\\localstate\\files\\s0\\"}
-  l_1_2 = l_1_2(l_1_0)
-  l_1_2 = l_1_1[l_1_2]
-  return l_1_2
-end
-
-isOutlookProcess = function(l_2_0)
-  -- function num : 0_1
-  if l_2_0 or (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME) == nil then
-    return 
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R1 in 'UnsetPending'
-
-  if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "outlook.exe" or (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "olk.exe" then
-    (mp.set_mpattribute)("BM_OutlookProcessOlk")
-    return true
-  else
-    -- DECOMPILER ERROR at PC26: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "msedgewebview2.exe" then
-      local l_2_1 = nil
-      if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) == nil then
-        return false
-      end
-      local l_2_2 = nil
-      if (string.lower)((mp.GetProcessCommandLine)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID))) == nil or #(string.lower)((mp.GetProcessCommandLine)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID))) <= 25 then
-        return false
-      end
-      local l_2_3 = nil
-      if (string.match)((string.lower)((string.gsub)((string.lower)((mp.GetProcessCommandLine)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID))), " ", "")), "%-%-webview%-exe%-name=olk%.exe") then
-        (mp.set_mpattribute)("BM_OutlookProcessWebView")
-        return true
+  local l_1_1 = (sysio.RegOpenKey)(l_1_0)
+  if l_1_1 then
+    local l_1_2 = (sysio.RegEnumValues)(l_1_1)
+    for l_1_6,l_1_7 in pairs(l_1_2) do
+      local l_1_8 = (string.lower)(l_1_7)
+      if (string.sub)(l_1_8, -31) == "\\programdata\\torrent_search_ped" or (string.sub)(l_1_8, -29) == "\\appdata\\locallow\\ytbeadblock" or (string.sub)(l_1_8, -29) == "\\appdata\\locallow\\tubealckset" or (string.sub)(l_1_8, -26) == "\\appdata\\locallow\\tbeackst" or (string.sub)(l_1_8, -26) == "\\appdata\\locallow\\medserch" or (string.sub)(l_1_8, -26) == "\\appdata\\locallow\\coynbolc" or (string.sub)(l_1_8, -26) == "\\appdata\\locallow\\tutubebl" or (string.sub)(l_1_8, -25) == "\\appdata\\locallow\\tmasech" or (string.sub)(l_1_8, -25) == "\\appdata\\locallow\\kontodn" or (string.sub)(l_1_8, -25) == "\\appdata\\locallow\\tsearch" or (string.sub)(l_1_8, -24) == "\\appdata\\locallow\\tserch" or (string.sub)(l_1_8, -24) == "\\appdata\\locallow\\msaver" or (string.sub)(l_1_8, -23) == "\\appdata\\locallow\\vk_ok" or (string.sub)(l_1_8, -20) == "\\appdata\\locallow\\yd" or (string.sub)(l_1_8, -18) == "\\youtube adblockie" or (string.sub)(l_1_8, -18) == "\\youtube adblockun" or (string.sub)(l_1_8, -17) == "\\youtube adblocku" or (string.sub)(l_1_8, -16) == "\\youtube adblock" or (string.sub)(l_1_8, -17) == "\\youtubeadblockie" or (string.sub)(l_1_8, -17) == "\\youtubeadblockun" or (string.sub)(l_1_8, -16) == "\\youtubeadblocku" or (string.sub)(l_1_8, -15) == "\\youtubeadblock" or (string.sub)(l_1_8, -13) == "\\ytubeablckie" or (string.sub)(l_1_8, -13) == "\\ytubeablckun" or (string.sub)(l_1_8, -12) == "\\ytubeablcku" or (string.sub)(l_1_8, -11) == "\\yubealckie" or (string.sub)(l_1_8, -11) == "\\yubealckun" or (string.sub)(l_1_8, -10) == "\\yubealcku" or (string.sub)(l_1_8, -17) == "\\torrent searchie" or (string.sub)(l_1_8, -17) == "\\torrent searchun" or (string.sub)(l_1_8, -16) == "\\torrent searchu" or (string.sub)(l_1_8, -15) == "\\torrent search" or (string.sub)(l_1_8, -13) == "\\mediaserchie" or (string.sub)(l_1_8, -13) == "\\mediaserchun" or (string.sub)(l_1_8, -12) == "\\mediaserchu" or (string.sub)(l_1_8, -10) == "\\mafarchie" or (string.sub)(l_1_8, -10) == "\\mafarchun" or (string.sub)(l_1_8, -10) == "\\mafarchu2" or (string.sub)(l_1_8, -9) == "\\mafarchu" or (string.sub)(l_1_8, -10) == "\\msearchie" or (string.sub)(l_1_8, -10) == "\\msearchun" or (string.sub)(l_1_8, -9) == "\\msearchu" or (string.sub)(l_1_8, -10) == "\\tsearchie" or (string.sub)(l_1_8, -10) == "\\tsearchun" or (string.sub)(l_1_8, -9) == "\\tsearchu" or (string.sub)(l_1_8, -8) == "\\tsearch" or (string.sub)(l_1_8, -16) == "\\vk ok adblockie" or (string.sub)(l_1_8, -16) == "\\vk ok adblockun" or (string.sub)(l_1_8, -15) == "\\vk ok adblocku" or (string.sub)(l_1_8, -14) == "\\vk ok adblock" or (string.sub)(l_1_8, -16) == "\\vkontodnblockie" or (string.sub)(l_1_8, -16) == "\\vkontodnblockun" or (string.sub)(l_1_8, -15) == "\\vkontodnblocku" or (string.sub)(l_1_8, -14) == "\\vkokadblockie" or (string.sub)(l_1_8, -14) == "\\vkokadblockun" or (string.sub)(l_1_8, -13) == "\\vkokadblocku" or (string.sub)(l_1_8, -12) == "\\vkokadblock" or (string.sub)(l_1_8, -19) == "\\youtube downloader" or (string.sub)(l_1_8, -12) == "\\media saver" or (string.find)(l_1_7, "\\YiuAsk", 1, true) or (string.find)(l_1_7, "\\conyanBloc", 1, true) then
+        (MpDetection.ReportResource)("regkeyvalue", l_1_0 .. "\\\\" .. l_1_7, 805306502, false)
       end
     end
   end
-  do
-    return false
-  end
-end
-
-IsWebmailDownloadURL = function(l_3_0)
-  -- function num : 0_2
-  if l_3_0 == nil then
-    return false
-  end
-  if (string.len)(l_3_0) > 34 and l_3_0:find("_task=mail&_action=get&_mbox=inbox", 1, true) ~= nil then
-    return true
-  end
-  local l_3_1 = l_3_0:match("https?://([%w%.-]+)")
-  if l_3_1 == nil then
-    return false
-  end
-  l_3_1 = l_3_1:lower()
-  local l_3_2 = (string.len)(l_3_1)
-  -- DECOMPILER ERROR at PC106: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC106: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC106: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC106: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC106: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC106: Unhandled construct in 'MakeBoolean' P3
-
-  if (l_3_2 > 11 and l_3_1:find("mail.google", 1, true) ~= nil) or l_3_2 <= 16 or l_3_2 <= 19 or l_3_2 <= 13 or l_3_2 <= 18 or l_3_2 <= 11 or l_3_2 <= 16 or l_3_2 > 23 and l_3_1:find("docs.googleusercontent.", 1, true) ~= nil then
-    return true
-  end
-  return false
-end
-
-IsCommonFileSharingURL = function(l_4_0)
-  -- function num : 0_3
-  if l_4_0 == nil then
-    return false
-  end
-  local l_4_1 = l_4_0:match("https?://([%w%.-]+)")
-  if l_4_1 == nil then
-    return false
-  end
-  l_4_1 = l_4_1:lower()
-  local l_4_2 = (string.len)(l_4_1)
-  -- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
-  if (l_4_2 > 25 and l_4_1:find("download.spaces.hightail.", 1, true) ~= nil) or l_4_2 <= 20 or l_4_2 <= 22 or l_4_2 > 14 and l_4_1:find("onedrive.live.", 1, true) ~= nil then
-    return true
-  end
-  return false
 end
 
 

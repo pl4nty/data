@@ -3,18 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true then
-  local l_0_0 = (hstrlog[2]).VA
-  local l_0_1 = (pe.mmap_va)(l_0_0 + 7, 4)
-  local l_0_2 = 0
-  for l_0_6 = 4, 1, -1 do
-    l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
-  end
-  if l_0_2 > 8192 then
-    return mp.INFECTED
-  end
-end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.LOWFI
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p1 == nil or (string.lower)((string.sub)((this_sigattrlog[3]).utf8p1, -11)) == "\\target.lnk" then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 114 and peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 454656 and l_0_0 > 356352 then
+  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched then
+    return mp.INFECTED
+  end
+  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[4]).matched then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

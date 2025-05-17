@@ -3,13 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("Trojan:Script/FakeUpdates.A") and not (mp.get_mpattribute)("Trojan:Script/FakeUpdates.C") and not (mp.get_mpattribute)("Backdoor:JS/FakeUpdates.C!dha") and not (mp.get_mpattribute)("Backdoor:JS/FakeUpdates.D!dha") then
-  return mp.CLEAN
+Infrastructure_AsrLinkScan = function(l_1_0)
+  -- function num : 0_0
+  (MpCommon.SetGlobalMpAttribute)("DefenderAsrLinkRescue")
+  if l_1_0 == "postsig" then
+    (MpDetection.ScanResource)("regkeyvalue://HKLM\\Software\\Microsoft\\ASRFix\\\\scriptresult")
+  else
+    if l_1_0 == "qscanmachine" or l_1_0 == "qscanuser" then
+      (MpDetection.ScanResource)("regkeyvalue://HKCU\\Software\\Microsoft\\ASRFix\\\\scriptresult")
+      ;
+      (MpDetection.ScanResource)("regkeyvalue://HKCU\\Software\\Microsoft\\ASRFix\\\\mptaskbarrecoverversion")
+    end
+  end
+  ;
+  (MpCommon.DeleteGlobalMpAttribute)("DefenderAsrLinkRescue")
 end
-local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
-if l_0_0 and (sysio.IsFileExists)(l_0_1) and not (mp.IsKnownFriendlyFile)(l_0_1, false, false) then
-  (mp.ReportLowfi)(l_0_1, 73467367)
-  return mp.CLEAN
-end
-return mp.CLEAN
+
 

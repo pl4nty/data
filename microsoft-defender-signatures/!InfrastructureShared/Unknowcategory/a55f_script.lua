@@ -3,40 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 44540 or l_0_0 > 44570 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == "" or l_0_1 == nil then
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(14448, 640)
+local l_0_2 = l_0_1:find("\">To protect access to your account, you will need to provide your Discover Bank Account Number,", 1, true)
+if l_0_2 == nil then
   return mp.CLEAN
 end
-l_0_1 = (string.lower)(l_0_1)
-if l_0_1 == "" or l_0_1 == nil then
+local l_0_3 = l_0_1:find("<form name=\"regForm1\" id=\"regForm1\" method=\"post\" action=\"http://", l_0_2 + 98, true)
+if l_0_3 == nil then
   return mp.CLEAN
 end
-local l_0_2 = (string.match)(l_0_1, "werfault%.exe\"?%s+-s%s+.+%s+-e%s+(%d+)")
-if l_0_2 == "" or l_0_2 == nil then
+l_0_3 = l_0_1:find("/wp-", l_0_3 + 74, true)
+if l_0_3 == nil then
   return mp.CLEAN
 end
-local l_0_3 = tonumber(l_0_2)
-if l_0_3 == "" or l_0_3 == nil then
+l_0_3 = l_0_1:find(".php\" autocomplete=\"on\">", l_0_3 + 5, true)
+if l_0_3 == nil then
   return mp.CLEAN
 end
-local l_0_4 = (mp.GetPPidFromPid)(l_0_3)
-if l_0_4 == "" or l_0_4 == nil then
-  return mp.CLEAN
-end
-local l_0_5 = (mp.GetProcessCommandLine)(l_0_4)
-if l_0_5 == "" or l_0_5 == nil then
-  return mp.CLEAN
-end
-l_0_5 = (string.lower)(l_0_5)
-if l_0_5 == "" or l_0_5 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_5, "lsass.exe", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

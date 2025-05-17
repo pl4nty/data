@@ -3,28 +3,45 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  if (mp.getfilesize)() > 350000 then
+if peattributes.is_delphi then
+  return mp.CLEAN
+end
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if not peattributes.hasappendeddata then
+  return mp.CLEAN
+end
+if (mp.ispackedwith)("AutoHotKey_+") then
+  return mp.CLEAN
+end
+if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 < 2048000 then
     return mp.CLEAN
   end
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-  if l_0_1 == nil then
+  local l_0_1 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+  if l_0_0 - l_0_1 <= 20480 then
     return mp.CLEAN
   end
-  l_0_1 = (string.lower)(l_0_1)
-  if l_0_1 == "excel.exe" or l_0_1 == "winword.exe" or l_0_1 == "powerpnt.exe" then
-    local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-    if l_0_2 == nil then
-      return mp.CLEAN
-    end
-    l_0_2 = (string.lower)(l_0_2)
-    local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-    local l_0_4 = (string.sub)(l_0_3, -4)
-    if (l_0_4 == ".exe" or l_0_4 == ".scr" or l_0_4 == ".pif") and ((string.sub)(l_0_2, -19) == "\\appdata\\local\\temp" or (string.sub)(l_0_2, -20) == "\\local settings\\temp") then
-      (mp.set_mpattribute)("Lua:ContextualDropOfficeTmpExe.B")
-    end
+  ;
+  (mp.readprotection)(false)
+  local l_0_2 = (mp.readfile)(l_0_1, 24)
+  local l_0_3 = (mp.crc32)(-1, l_0_2, 1, 24)
+  if l_0_3 == 3604511246 then
+    return mp.CLEAN
   end
+  if l_0_3 == 1339108276 then
+    return mp.CLEAN
+  end
+  local l_0_4 = (mp.crc32)(-1, l_0_2, 1, 17)
+  if l_0_4 == 2991533544 then
+    return mp.CLEAN
+  end
+  if l_0_4 == 1547783364 then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
 do
   return mp.CLEAN

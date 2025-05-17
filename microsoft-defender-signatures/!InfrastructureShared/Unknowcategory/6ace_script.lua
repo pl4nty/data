@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
+if (pesecs[4]).Name == "pxsZHe0" and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

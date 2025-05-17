@@ -3,43 +3,29 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  else
-  end
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p2)
-    if (string.len)(l_0_2) < 100 then
-      return mp.CLEAN
-    end
-    if (string.find)(l_0_2, "%.ps1") then
-      return mp.CLEAN
-    end
-    if not (string.find)(l_0_2, "{%d%d?}{%d%d?}") then
-      return mp.CLEAN
-    end
-    l_0_2 = (string.gsub)(l_0_2, " ", "")
-    local l_0_3 = 0
-    for l_0_7 in (string.gmatch)(l_0_2, "[\"\']%-f[\"\']") do
-      l_0_3 = l_0_3 + 1
-    end
-    if l_0_3 < 2 then
-      return mp.CLEAN
-    end
-    local l_0_8 = 0
-    for l_0_12 in (string.gmatch)(l_0_2, "{%d%d?}{%d%d?}") do
-      l_0_8 = l_0_8 + 1
-    end
-    if l_0_8 < 2 then
-      return mp.CLEAN
-    end
-    if (l_0_3 > 3 and l_0_8 > 3) or l_0_3 >= 2 and l_0_8 >= 2 and (string.find)(l_0_2, "`", 1, true) then
-      return mp.INFECTED
-    end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (mp.getfilesize)()
+  if l_0_1 > 5242880 then
     return mp.CLEAN
   end
+  local l_0_2 = (string.lower)((mp.getfilename)())
+  if l_0_2 == nil or (string.len)(l_0_2) < 10 then
+    return mp.CLEAN
+  end
+  local l_0_3 = l_0_2:sub(-4)
+  local l_0_4 = {}
+  l_0_4[".exe"] = true
+  l_0_4[".scr"] = true
+  l_0_4[".pif"] = true
+  if l_0_4[l_0_3] == true then
+    if not l_0_2:find(".iso->", 1, true) and not l_0_2:find(".vhd->", 1, true) and not l_0_2:find("ppkg->", 1, true) and not l_0_2:find(".img->", 1, true) then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
 end
 

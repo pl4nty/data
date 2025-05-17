@@ -3,38 +3,40 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[3]).matched or not (this_sigattrlog[3]).wp2 then
+if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
   return mp.CLEAN
 end
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("mshta_start")
-if l_0_0 then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    l_0_5 = (mp.ContextualExpandEnvironmentVariables)(l_0_5)
-    if (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, false, false) then
-      (mp.ReportLowfi)(l_0_5, 1632017330)
-    end
-  end
-  local l_0_6 = (this_sigattrlog[3]).utf8p2
-  if l_0_6 then
-    l_0_6 = l_0_6:lower()
-    if (string.find)(l_0_6, "windows\\ccm", 1, true) or (string.find)(l_0_6, "\\ccm\\systemtemp\\", 1, true) then
-      return mp.CLEAN
-    end
-    local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_6)
-    if l_0_7 then
-      for l_0_11,l_0_12 in ipairs(l_0_7) do
-        l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
-        if (sysio.IsFileExists)(l_0_12) and not (mp.IsKnownFriendlyFile)(l_0_12, false, false) then
-          (mp.ReportLowfi)(l_0_12, 705262311)
-        end
-      end
-    end
-    do
-      do
-        do return mp.INFECTED end
-        return mp.CLEAN
-      end
-    end
-  end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
+if (mp.get_mpattribute)("pea_ismsil") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1000000 or l_0_0 < 4000 then
+  return mp.CLEAN
+end
+local l_0_1 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("system32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("syswow64", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("winu.dll", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("win32u.dll", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("dcompfuzzer", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

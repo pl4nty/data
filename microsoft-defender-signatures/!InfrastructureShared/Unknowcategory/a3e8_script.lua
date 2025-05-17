@@ -3,30 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 < 10 then
-  return mp.CLEAN
-end
-local l_0_2 = {}
-l_0_2.svr_create = 1
-l_0_2.svr_start = 1
-l_0_2.svr_stop = 1
-l_0_2.svr_close = 1
-l_0_2.svr_user_accept = 1
-l_0_2.svr_user_get_wlan = 1
-l_0_2.svr_user_recv_notify = 1
-l_0_2.svr_user_send_notify = 1
-l_0_2.svr_user_manager = 1
-l_0_2.svr_user_close = 1
-local l_0_3 = 0
-for l_0_7 = 1, l_0_0 do
-  local l_0_8 = (pe.mmap_string_rva)((l_0_1[l_0_7]).namerva, 64)
-  if l_0_2[l_0_8] then
-    l_0_3 = l_0_3 + l_0_2[l_0_8]
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1, l_0_2, l_0_3, l_0_4 = (this_sigattrlog[3]).utf8p2
+    end
+    -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC54: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil and (string.len)(l_0_1) > 7 and ((string.find)(l_0_1, "TgBlAHcALQBJAHQAZQBt", 1, true) or (string.find)(l_0_1, "LgBQAFMAVgBFAFIAcwBpAE8Abg", 1, true) or (string.find)(l_0_1, "AHwASQBFAFgA", 1, true)) then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
   end
 end
-if l_0_3 == 10 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

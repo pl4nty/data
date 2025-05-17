@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if epcode[6] == 191 and epcode[11] == 185 and epcode[16] == 73 and epcode[17] == 128 and epcode[21] == 133 and epcode[23] == 117 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "miniunz%.exe") or (string.find)(l_0_0, "miniunz %(2015_") or (string.find)(l_0_0, "%.svn%-base") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[3]).p1)
-  if (string.find)(l_0_1, l_0_0 .. ".exe", nil, true) then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 17, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

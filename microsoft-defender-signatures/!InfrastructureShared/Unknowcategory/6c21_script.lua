@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_MpIsInstaller") and peattributes.no_security == true then
+if peattributes.ismsil == true and peattributes.isexe == true and (mp.getfilesize)() < 500000 then
   return mp.INFECTED
 end
 return mp.CLEAN

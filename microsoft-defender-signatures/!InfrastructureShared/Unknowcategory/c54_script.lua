@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:InstallCore")
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
 return mp.INFECTED
 

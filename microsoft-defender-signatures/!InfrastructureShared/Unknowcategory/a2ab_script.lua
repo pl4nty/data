@@ -3,19 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = "%localappdata%\\Microsoft\\Edge\\User Data\\Default\\Extensions\\"
+local l_0_1 = (sysio.FindFiles)(l_0_0, "manifest.json", -1)
+for l_0_5,l_0_6 in pairs(l_0_1) do
+  (bm.add_related_file)(l_0_6)
+  ;
+  (bm.add_related_string)("file", l_0_6, bm.RelatedStringBMReport)
+  ;
+  (bm.add_related_string)("file", l_0_6, bm.RelatedStringFileReport)
+  if l_0_5 > 10 then
+    break
+  end
 end
-if (string.lower)((string.match)(l_0_0.image_path, "\\([^\\]+)$")) ~= "razerinstaller.exe" then
-  return mp.CLEAN
+do
+  return mp.INFECTED
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0.ppid)
-if l_0_1 == "" or l_0_1 == nil then
-  return mp.CLEAN
-end
-if (string.find)((string.lower)(l_0_1), "razerinstaller%.exe[^/]+/showdevice$") == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

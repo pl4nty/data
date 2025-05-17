@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_4")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 11, "\000")
-return mp.INFECTED
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/CobaltStrike.PA!Pra1") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

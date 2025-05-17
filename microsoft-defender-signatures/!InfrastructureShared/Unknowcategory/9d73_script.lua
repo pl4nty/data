@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 3 then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:EthMiner")
   return mp.INFECTED
 end
-if peattributes.isdll and (mp.getfilesize)() < 850000 then
-  (pe.set_peattribute)("hstr_exhaustive", true)
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_ethminer")
+else
   ;
-  (pe.reemulate)()
-end
-if mp.HSTR_WEIGHT == 2 then
-  return mp.LOWFI
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_ethminer")
 end
 return mp.CLEAN
 

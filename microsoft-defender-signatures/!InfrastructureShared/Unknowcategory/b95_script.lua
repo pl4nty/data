@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Coupoon")
+(mp.TriggerScanResource)("wmi", "")
 return mp.INFECTED
 

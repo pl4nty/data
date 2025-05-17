@@ -3,26 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 200000000 then
-  return mp.CLEAN
-end
-local l_0_0 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_0 = (this_sigattrlog[1]).utf8p2
-else
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    l_0_0 = (this_sigattrlog[2]).utf8p2
-  end
-end
-if l_0_0 == nil then
-  return mp.INFECTED
-end
-local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-  if (sysio.IsFileExists)(l_0_6) then
-    (bm.add_related_file)(l_0_6)
-  end
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_16")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
+local l_0_2 = (mp.readu_u32)(l_0_0, 6)
+local l_0_3 = (mp.readu_u32)(l_0_0, 18)
+local l_0_4 = (mp.readu_u32)(l_0_0, 29)
+local l_0_5 = (pe.get_regval)(pe.REG_EDX)
+local l_0_6 = (mp.ror32)(l_0_5 + 1, 1) - (mp.bitxor)(l_0_4, l_0_3) + l_0_1 - l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_6)
 return mp.INFECTED
 

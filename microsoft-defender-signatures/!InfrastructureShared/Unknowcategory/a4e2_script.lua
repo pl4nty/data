@@ -3,41 +3,50 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC21: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0, l_0_1, l_0_2, l_0_3 = nil, nil, nil, nil
+local l_0_4 = nil
+local l_0_5 = nil
+local l_0_6 = nil
 do
-  if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p2 ~= nil and (this_sigattrlog[10]).ppid ~= nil then
-    local l_0_0, l_0_1, l_0_3, l_0_4 = nil, nil
-    l_0_3 = MpCommon
-    l_0_3 = l_0_3.GetProcessElevationAndIntegrityLevel
-    l_0_4 = this_sigattrlog
-    l_0_4 = l_0_4[10]
-    l_0_4 = l_0_4.ppid
-    l_0_3 = l_0_3(l_0_4)
-    l_0_1 = l_0_3
-    local l_0_2 = nil
+  local l_0_7 = nil
+  while 1 do
+    -- DECOMPILER ERROR at PC6: Confused about usage of register: R7 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC13: Overwrote pending register: R4 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC20: Overwrote pending register: R0 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC21: Overwrote pending register: R4 in 'AssignReg'
+
+    if 0 <= 5 and (0 ~= 0 or true == true) then
+      if l_0_4 == nil then
+        break
+      end
+    end
+    if l_0_5 == nil then
+      break
+    end
+    if l_0_6 == nil then
+      break
+    end
+    -- DECOMPILER ERROR at PC39: Overwrote pending register: R2 in 'AssignReg'
+
+    if l_0_7 ~= nil then
+      if l_0_7 == "" then
+        break
+      end
+      -- DECOMPILER ERROR at PC63: Confused about usage of register: R7 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+      -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_STMT
+
+    end
   end
-  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC34: Confused about usage of register: R1 in 'UnsetPending'
-
-  if l_0_0 == nil or #l_0_0 <= 20 or l_0_1 == nil then
+  if (((l_0_7 ~= "psexecsvc.exe" and l_0_7 ~= "wmiprvse.exe" and l_0_7 ~= "gpscript.exe" and l_0_7 ~= "winrm.exe") or l_0_7 == "services.exe") and true == false) or true == false then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC39: Confused about usage of register: R1 in 'UnsetPending'
-
-  if l_0_1.IntegrityLevel < MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (string.find)(l_0_0, "-enc", 1, true) ~= nil or (string.find)(l_0_0, ".downloadstring(", 1, true) ~= nil then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

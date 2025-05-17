@@ -3,12 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 20), "|", 1, true) - 1
-if (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "t\005", 1, true) == nil then
-  local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "u\002", 1, true) - 2 - l_0_0 - 1
-  local l_0_2 = (string.format)("\235%s", (string.char)(l_0_1))
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_0, l_0_2)
-  return mp.INFECTED
+local l_0_0 = {}
+l_0_0["winword.exe"] = true
+l_0_0["excel.exe"] = true
+l_0_0["powerpnt.exe"] = true
+l_0_0["outlook.exe"] = true
+local l_0_1 = (mp.GetParentProcInfo)()
+do
+  if l_0_1 ~= nil then
+    local l_0_2 = (string.lower)(l_0_1.image_path)
+    if l_0_0[l_0_2:match("([^\\]+)$")] then
+      return mp.INFECTED
+    end
+  end
+  local l_0_3 = (mp.GetParentProcInfo)(l_0_1.ppid)
+  do
+    if l_0_3 ~= nil then
+      local l_0_4 = (string.lower)(l_0_3.image_path)
+      if l_0_0[((string.sub)(l_0_4, -15)):match("\\([^\\]+)$")] then
+        return mp.INFECTED
+      end
+    end
+    return mp.CLEAN
+  end
 end
 

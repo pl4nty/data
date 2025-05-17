@@ -3,17 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
+if (Remediation.Threat).Active then
+  (Remediation.ResetBcdWmiParameter)(Remediation.BCD_INTEGER_BOOT_STATUS_POLICY, 0)
+  ;
+  (Remediation.ResetBcdWmiParameter)(Remediation.BCD_BOOLEAN_AUTORECOVERY_ENABLED, true)
+  ;
+  (Remediation.ResetBcdWmiParameter)(Remediation.BCD_BOOLEAN_EMS_ENABLED, true)
 end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 131072 then
-  return mp.CLEAN
-end
-if pehdr.Machine ~= 332 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

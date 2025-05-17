@@ -3,28 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0["winword.exe"] = true
-l_0_0["excel.exe"] = true
-l_0_0["powerpnt.exe"] = true
-l_0_0["outlook.exe"] = true
-local l_0_1 = (mp.GetParentProcInfo)()
-do
-  if l_0_1 ~= nil then
-    local l_0_2 = (string.lower)(l_0_1.image_path)
-    if l_0_0[l_0_2:match("([^\\]+)$")] then
-      return mp.INFECTED
-    end
-  end
-  local l_0_3 = (mp.GetParentProcInfo)(l_0_1.ppid)
-  do
-    if l_0_3 ~= nil then
-      local l_0_4 = (string.lower)(l_0_3.image_path)
-      if l_0_0[((string.sub)(l_0_4, -15)):match("\\([^\\]+)$")] then
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
+if l_0_1 ~= nil and (MpCommon.GetPersistContextCountNoPath)("UACBypassRegSet.A") > 0 then
+  local l_0_2 = (MpCommon.GetPersistContextNoPath)("UACBypassRegSet.A")
+  if l_0_2 then
+    for l_0_6,l_0_7 in ipairs(l_0_2) do
+      if (string.lower)(l_0_7) == (string.lower)(l_0_1.ppid) then
         return mp.INFECTED
       end
     end
-    return mp.CLEAN
   end
+end
+do
+  l_0_2 = mp
+  l_0_2 = l_0_2.CLEAN
+  return l_0_2
 end
 

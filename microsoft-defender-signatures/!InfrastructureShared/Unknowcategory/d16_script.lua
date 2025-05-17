@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_regval)(pe.REG_EAX, 1)
-return mp.CLEAN
+(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+return mp.INFECTED
 

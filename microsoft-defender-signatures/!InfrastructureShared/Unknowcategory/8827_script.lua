@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and ((hstrlog[1]).matched or (hstrlog[2]).matched) and (mp.getfilesize)() > 20000 and (mp.getfilesize)() < 30000 then
-  return mp.INFECTED
+do
+  if peattributes.isexe and peattributes.no_security and peattributes.isvbnative and peattributes.x86_image then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 35840 and l_0_0 < 204800 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.LOWFI
 

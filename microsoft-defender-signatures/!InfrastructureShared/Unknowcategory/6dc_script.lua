@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetResmgrBasePlugin)() == "AutorunInf" then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("MpInternal_TencodeV2")
 return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process == false and peattributes.x86_image == true then
-  return mp.LOWFI
+if peattributes.isexe == true and peattributes.no_security == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

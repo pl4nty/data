@@ -3,28 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
-  return mp.CLEAN
+if (Remediation.Threat).Active then
+  (Remediation.DefaultSpecialRegistry)("HKLM\\Software\\Classes\\CLSID\\{DDC05A5A-351A-4E06-8EAF-54EC1BC2DCEA}")
+  ;
+  (Remediation.DefaultSpecialRegistry)("HKCU\\Software\\Classes\\CLSID\\{1F486A52-3CB1-48FD-8F50-B8DC300D9F9D}")
+  ;
+  (Remediation.DefaultSpecialRegistry)("HKCU\\Software\\Classes\\CLSID\\{4590F811-1D3A-11D0-891F-00AA004B2E24}")
+  ;
+  (Remediation.DefaultSpecialRegistry)("HKCU\\Software\\Classes\\CLSID\\{4DE225BF-CF59-4CFC-85F7-68B90F185355}")
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1024 then
-  (mp.set_mpattribute)("LnkArggt400b")
-else
-  if l_0_0 > 512 then
-    (mp.set_mpattribute)("LnkArggt200b")
-  else
-    if l_0_0 > 256 then
-      (mp.set_mpattribute)("LnkArggt100b")
-    else
-      if l_0_0 > 128 then
-        (mp.set_mpattribute)("LnkArggt80b")
-      else
-        if l_0_0 > 80 then
-          (mp.set_mpattribute)("LnkArggt50b")
-        end
-      end
-    end
-  end
-end
-return mp.CLEAN
 

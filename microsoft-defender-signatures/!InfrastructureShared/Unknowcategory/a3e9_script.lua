@@ -3,31 +3,20 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
-      if (sysio.IsFileExists)(R6_PC25) and (string.lower)((string.sub)(R6_PC25, -4)) == ".ps1" then
-        (bm.add_related_file)(R6_PC25)
-        return mp.INFECTED
-      end
+for l_0_3 = 1, pehdr.NumberOfSections do
+  if (pesecs[l_0_3]).Name == "snapshot" then
+    local l_0_4 = (pesecs[l_0_3]).PointerToRawData
+    local l_0_5 = (pesecs[l_0_3]).SizeOfRawData
+    if l_0_4 ~= 0 and l_0_5 ~= 0 and l_0_4 + l_0_5 <= (mp.getfilesize)() then
+      (mp.readprotection)(false)
+      local l_0_6 = (mp.readfile)(l_0_4, l_0_5)
+      ;
+      (mp.readprotection)(true)
+      ;
+      (mp.vfo_add_buffer)(l_0_6, "[DartAotSnapshot]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+      return mp.INFECTED
     end
   end
-  do
-    return mp.INFECTED
-  end
 end
+return mp.CLEAN
 

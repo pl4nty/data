@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%-%>%(RarSfx%)%-%>%w+%.vbs$") == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Genieo.M!xp")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

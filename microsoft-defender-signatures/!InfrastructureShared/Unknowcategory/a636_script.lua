@@ -3,44 +3,44 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-    local l_0_1 = ((string.lower)((bm.get_imagepath)()))
-    local l_0_2 = nil
-    if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
-      l_0_2 = (string.match)(l_0_1, "(.-)[^\\]-[^\\%.]+$")
-    end
-    for l_0_6 in (string.gmatch)(l_0_0, "%S+") do
-      local l_0_7 = (string.match)(l_0_6, "([^\\]-)[^\\%.]+$") .. "xoml"
-      if (sysio.IsFileExists)(l_0_6) then
-        (bm.add_related_file)(l_0_6)
-        if (sysio.IsFileExists)(l_0_7) then
-          (bm.add_related_file)(l_0_7)
-        end
-      else
-        if l_0_2 ~= nil and (string.len)(l_0_2) > 3 then
-          local l_0_8 = l_0_2 .. l_0_6
-          if (sysio.IsFileExists)(l_0_8) then
-            (bm.add_related_file)(l_0_6)
-          end
-          local l_0_9 = l_0_2 .. l_0_7
-          if (sysio.IsFileExists)(l_0_9) then
-            (bm.add_related_file)(l_0_9)
-          end
-        end
-      end
-    end
-  end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
 end
-do
-  l_0_0 = bm
-  l_0_0 = l_0_0.add_action
-  l_0_1 = "EmsScan"
-  l_0_2 = 20000
-  l_0_0(l_0_1, l_0_2)
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
 end
+if peattributes.lastscn_falign ~= true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 233 then
+  return mp.CLEAN
+end
+if epcode[3] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[4] ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.bitand)(mp.HSTR_WEIGHT, 992) >= 32 and (mp.bitand)(mp.HSTR_WEIGHT, 31) >= 5 then
+if peattributes.ismsil == true and peattributes.hasexports == false and (mp.getfilesize)() < 651792 then
   return mp.INFECTED
 end
 return mp.CLEAN

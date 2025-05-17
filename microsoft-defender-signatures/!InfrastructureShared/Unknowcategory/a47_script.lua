@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("elfa_isharedlib") then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 512 and l_0_0 <= 2048 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

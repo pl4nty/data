@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount > 0 and (hstrlog[2]).hitcount > 0 and mp.HSTR_WEIGHT == 4 then
+do
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 173568 and (mp.getfilesize)() < 198144 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if (hstrlog[3]).hitcount > 0 and (hstrlog[4]).hitcount > 0 and mp.HSTR_WEIGHT == 4 then
-  return mp.CLEAN
-end
-if (hstrlog[1]).hitcount > 0 and (hstrlog[2]).hitcount > 0 and (hstrlog[3]).hitcount > 0 and (hstrlog[4]).hitcount > 0 and mp.HSTR_WEIGHT == 5 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

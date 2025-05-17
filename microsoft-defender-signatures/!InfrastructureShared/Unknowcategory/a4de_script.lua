@@ -3,18 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\powershell.exe", 1, true) then
-    (MpCommon.TurnNriOnProcess)(l_0_6.ppid)
-    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-    local l_0_9 = tonumber(l_0_7)
-    local l_0_10 = tonumber(l_0_8)
-    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
+min = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_0 < l_1_1 then
+    return l_1_0
+  end
+  return l_1_1
+end
+
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 32768 then
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)(0, l_0_0)
+  local l_0_2 = (string.find)(l_0_1, "yv66vgAA", 1, true)
+  if l_0_2 ~= nil then
+    local l_0_3 = (mp.readfile)(l_0_2 - 3, 2)
+    local l_0_4 = (mp.readfile)(l_0_2 - 1, min((string.byte)(l_0_3) * 256 + (string.byte)(l_0_3, 2), l_0_0 - l_0_2))
     ;
-    (mp.TriggerScanResource)("ems", l_0_13)
+    (mp.vfo_add_buffer)(l_0_4, "[java_class]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    return mp.INFECTED
   end
 end
-return mp.INFECTED
+do
+  return mp.CLEAN
+end
 

@@ -3,16 +3,36 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_10")
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
-local l_0_1 = (mp.readu_u32)(l_0_0, 3)
-local l_0_2 = (mp.readu_u32)(l_0_0, 9)
-local l_0_3 = (mp.readu_u32)(l_0_0, 21)
-local l_0_4 = (mp.readu_u32)(l_0_0, 32)
-local l_0_5 = (pe.get_regval)(pe.REG_EDX)
-local l_0_6 = (string.byte)(l_0_0, 17)
-local l_0_7 = (mp.ror32)(l_0_5, l_0_6) - (mp.bitxor)(l_0_4, l_0_3) - l_0_2 + l_0_1
-;
-(pe.set_regval)(pe.REG_EBX, l_0_7)
-return mp.INFECTED
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched then
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == nil or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == "" then
+      return mp.CLEAN
+    end
+    local l_0_5 = nil
+    -- DECOMPILER ERROR at PC45: Overwrote pending register: R1 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
+
+    if nil == nil or nil == "" then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC61: Confused about usage of register: R1 in 'UnsetPending'
+
+    if (sysio.IsFileExists)(nil) then
+      (bm.add_related_file)(nil)
+    end
+    return mp.INFECTED
+  end
+end
 

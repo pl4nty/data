@@ -3,32 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() > 1700000 and (mp.getfilesize)() < 4800000 then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if (mp.get_mpattribute)("NID:TelAttrib") and peattributes.no_security == true and l_0_0 <= 77824 and l_0_0 >= 73728 and peattributes.isdll and peattributes.hasexports and pehdr.NumberOfSections == 4 and pehdr.SizeOfImage == 86016 then
+  return mp.INFECTED
 end
-do
-  l_0_0 = pe
-  l_0_0 = l_0_0.get_versioninfo
-  l_0_0 = l_0_0()
-  local l_0_6 = nil
-  if l_0_0 == nil then
-    l_0_6 = mp
-    l_0_6 = l_0_6.CLEAN
-    return l_0_6
-  end
-  l_0_6 = l_0_0.OriginalFilename
-  if l_0_6 ~= "defOff.exe" then
-    l_0_6 = mp
-    l_0_6 = l_0_6.CLEAN
-    return l_0_6
-  end
-  l_0_6 = mp
-  l_0_6 = l_0_6.INFECTED
-  return l_0_6
-end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process and not peattributes.hstr_exhaustive then
+if peattributes.amd64_image and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

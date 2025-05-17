@@ -3,29 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = Remediation.Threat
-if l_0_0.Active and (string.match)(l_0_0.Name, "Behavior:Win32/MaleficAms.I") then
-  for l_0_4,l_0_5 in ipairs((Remediation.Threat).Resources) do
-    if l_0_5.Schema == "behavior" then
-      local l_0_6 = (string.match)(l_0_5.Path, "process: (%a:\\[^,]+%.exe)")
-      if l_0_6 and (sysio.IsFileExists)(l_0_6) then
-        do
-          do
-            (sysio.DeleteFile)(l_0_6)
-            do break end
-            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out DO_STMT
-
-            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
-
-            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC39: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
-        end
-      end
+local l_0_0 = false
+for l_0_4,l_0_5 in pairs((Remediation.Threat).Resources) do
+  if l_0_5.Schema == "file" and (string.match)((Remediation.Threat).Name, "BrobanLaw") then
+    l_0_0 = true
+    break
+  end
+end
+do
+  if l_0_0 then
+    local l_0_6 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\AXSPH")
+    if l_0_6 then
+      (sysio.DeleteRegKey)(l_0_6, nil)
+    end
+    local l_0_7 = (sysio.RegOpenKey)("HKCU\\SOFTWARE\\fgiusji")
+    if l_0_7 then
+      (sysio.DeleteRegKey)(l_0_7, nil)
     end
   end
 end

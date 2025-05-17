@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "\144")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 42, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 40, ";\203")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 20, "\000")
-return mp.INFECTED
+if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
+  return mp.CLEAN
+end
+if (pe.get_exports)() > 100 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 16, 96)
-local l_0_1 = (string.byte)(l_0_0, 1) + 2
-if #l_0_0 < l_0_1 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_0, l_0_1) == 232 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 1, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(mp.readprotection)(false)
+if (pe.mmap_va)(l_0_1, 9) == "myapp.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

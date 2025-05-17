@@ -3,22 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if (string.lower)(((pe.get_versioninfo)()).OriginalFilename) == "ultraviewer_service.exe" then
   return mp.CLEAN
 end
-if peattributes.no_exports then
+if peattributes.is_process then
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 > 1 then
-  for l_0_5 = 1, l_0_0 do
-    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
-    if (string.lower)(l_0_6) == "splsamodeinitialize" then
-      return mp.INFECTED
-    end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.INFECTED
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:InstallCore")
+(mp.set_mpattribute)("PUA:Block:SearchSuite")
 return mp.INFECTED
 

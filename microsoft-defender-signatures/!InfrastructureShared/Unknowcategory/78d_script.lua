@@ -3,19 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u16)(headerpage, 1) ~= 33328 then
+local l_0_0 = (mp.enum_mpattributesubstring)("Behavior:Win32/BlockMpTamper")
+if #l_0_0 == 0 or l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_0 = headerpage[3] * 256 + headerpage[4] + 4
-if l_0_0 < 256 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilesize)()
-if l_0_1 <= l_0_0 then
-  return mp.CLEAN
-end
-if l_0_1 - l_0_0 < 256 then
-  return mp.CLEAN
+for l_0_4,l_0_5 in ipairs(l_0_0) do
+  (bm.add_related_string)("RelatedBMHits", l_0_5, bm.RelatedStringBMReport)
 end
 return mp.INFECTED
 

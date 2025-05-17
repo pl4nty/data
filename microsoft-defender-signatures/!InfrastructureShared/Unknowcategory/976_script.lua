@@ -3,19 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if headerpage[1] ~= 70 or headerpage[2] ~= 87 or headerpage[3] ~= 83 then
-  return mp.CLEAN
-end
-if headerpage[9] == 72 and headerpage[10] == 1 and headerpage[11] == 144 and headerpage[12] == 0 and headerpage[13] == 100 and headerpage[14] == 0 then
-  (mp.set_mpattribute)("Lua:SWF/OddFrameSize10x10.A")
-end
-if (mp.bitand)(headerpage[9], 248) == 48 then
-  local l_0_0 = (mp.bitor)((mp.shl8)((mp.bitand)(headerpage[9], 7), 3), (mp.shr8)(headerpage[10], 5))
-  local l_0_1 = (mp.bitor)((mp.shl8)((mp.bitand)(headerpage[10], 31), 1), (mp.shr8)(headerpage[11], 7))
-  local l_0_2 = (mp.shr8)((mp.bitand)(headerpage[11], 126), 1)
-  local l_0_3 = (mp.bitor)((mp.shl8)((mp.bitand)(headerpage[11], 1), 5), (mp.shr8)(headerpage[12], 3))
-  if l_0_1 < 40 and l_0_3 < 40 and (l_0_0 > 0 or l_0_2 > 0) then
-    (mp.set_mpattribute)("SCPT:SWF/OddFrameSize1x1.B")
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+  if (string.len)(l_0_2) == 15 and (string.sub)(l_0_2, -4) == ".exe" and ((string.sub)(l_0_1, -19) == "\\appdata\\local\\temp" or (string.sub)(l_0_1, -20) == "\\local settings\\temp") then
+    if (string.match)(l_0_2, "%l%l%l%l%l%l%l%l%l%l%l") == nil and (string.match)(l_0_2, "%u%u%u%u%u%u%u%u%u%u%u") == nil then
+      return mp.CLEAN
+    end
+    local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_3 == "excel.exe" or l_0_3 == "winword.exe" then
+      (mp.set_mpattribute)("Lua:AdnelProcessFilename.A")
+    else
+      ;
+      (mp.set_mpattribute)("Lua:AdnelFilename.A")
+    end
   end
 end
 do

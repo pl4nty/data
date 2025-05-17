@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdriver then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
+return mp.INFECTED
 

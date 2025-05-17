@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 200000 and pehdr.NumberOfSections >= 7 and (pesecs[5]).Name == ".code" and (pesecs[6]).Name == ".crt" then
-  return mp.INFECTED
+do
+  if peattributes.isexe and peattributes.no_security and peattributes.isvbnative and peattributes.x86_image then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 35840 and l_0_0 < 204800 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

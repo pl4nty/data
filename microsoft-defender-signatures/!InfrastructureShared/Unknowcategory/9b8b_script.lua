@@ -3,10 +3,13 @@
 
 -- params : ...
 -- function num : 0
-for l_0_3 = 1, pehdr.NumberOfSections do
-  if (pesecs[l_0_3]).Name == ".." and (pesecs[l_0_3]).VirtualAddress == (hstrlog[1]).VA - pehdr.ImageBase and pevars.epsec ~= l_0_3 then
-    return mp.INFECTED
-  end
+(mp.set_mpattribute)("SCPT:HackTool.Win32.POWERGAP.A1")
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "link.ps1") ~= nil or (string.find)(l_0_0, "procvas.ps1") ~= nil then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,22 +3,13 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Features")
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_1 = (string.lower)(l_0_0)
-  if (string.find)(l_0_1, " privacy", 1, true) then
-    return mp.INFECTED
+  if l_0_0 then
+    local l_0_1 = (sysio.GetRegValueAsDword)(l_0_0, "TamperProtection")
+    if l_0_1 and (mp.bitand)(l_0_1, 1) == 1 then
+      return mp.INFECTED
+    end
   end
   return mp.CLEAN
 end

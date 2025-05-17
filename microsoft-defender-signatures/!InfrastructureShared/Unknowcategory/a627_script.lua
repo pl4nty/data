@@ -3,18 +3,33 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-      if (string.find)(l_0_0, "cisco", 1, true) or (string.find)(l_0_0, "dosbox", 1, true) or (string.find)(l_0_0, "install", 1, true) or (string.find)(l_0_0, "setup", 1, true) or (string.find)(l_0_0, "\\icheck\\", 1, true) or (string.find)(l_0_0, "\\ccm\\", 1, true) or (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "netstat", 1, true) or (string.find)(l_0_0, "vc_redist", 1, true) or (string.find)(l_0_0, "restarthealthservice", 1, true) then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
+if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
   return mp.CLEAN
 end
+if peattributes.isdll == true then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() > 1048576 then
+  return mp.CLEAN
+end
+if (hstrlog[1]).hitcount > 40 then
+  return mp.CLEAN
+end
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+local l_0_1 = (pe.foffset_va)(pehdr.ImageBase + (pehdr.SizeOfImage - 1)) + 1
+if l_0_0 ~= l_0_1 then
+  l_0_0 = l_0_1
+end
+local l_0_2 = (mp.getfilesize)() - l_0_0
+if (pesecs[1]).SizeOfRawData > 61440 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData < 32768 and l_0_2 < 32768 then
+  return mp.CLEAN
+end
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

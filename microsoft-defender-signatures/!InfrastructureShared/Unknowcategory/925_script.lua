@@ -3,27 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == false then
+if peattributes.isdll == true and peattributes.hasexports == true and pehdr.Machine == 332 and ((pehdr.DataDirectory)[1]).Size ~= 0 then
+  local l_0_0 = ((pehdr.DataDirectory)[1]).RVA
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)((pe.foffset_rva)(l_0_0), 36)
+  if (mp.readu_u32)(l_0_1, 21) < 3 and (mp.readu_u32)(l_0_1, 21) ~= 0 and (mp.readu_u32)(l_0_1, 25) < 3 and (mp.readu_u32)(l_0_1, 25) ~= 0 then
+    local l_0_2 = (mp.readu_u32)(l_0_1, 33)
+    l_0_1 = (pe.mmap_rva)(l_0_2, 4)
+    local l_0_3 = (mp.readu_u32)(l_0_1, 1)
+    local l_0_4 = (pe.mmap_rva)(l_0_3, 13)
+    if l_0_4:sub(8) == "initXTN\000" or l_0_4 == "crashHandler\000" then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 990000 then
-  return mp.CLEAN
-end
-local l_0_1 = (pe.get_versioninfo)()
-if l_0_1 ~= nil then
-  return mp.CLEAN
-end
-local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-if l_0_3 == "googletalk.exe" and (string.sub)(l_0_2, -28, -1) == "\\appdata\\roaming\\google talk" then
-  return mp.INFECTED
-end
-if l_0_3 == "skype.exe" and (string.sub)(l_0_2, -28, -1) == "\\appdata\\roaming\\skype\\phone" then
-  return mp.INFECTED
-end
-if l_0_3 == "advantage.exe" and (string.sub)(l_0_2, -26, -1) == "\\appdata\\roaming\\advantage" then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

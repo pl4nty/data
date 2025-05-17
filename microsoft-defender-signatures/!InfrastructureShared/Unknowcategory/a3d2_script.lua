@@ -3,20 +3,9 @@
 
 -- params : ...
 -- function num : 0
-for l_0_3 = 1, pehdr.NumberOfSections do
-  if (pesecs[l_0_3]).Name == "snapshot" then
-    local l_0_4 = (pesecs[l_0_3]).PointerToRawData
-    local l_0_5 = (pesecs[l_0_3]).SizeOfRawData
-    if l_0_4 ~= 0 and l_0_5 ~= 0 and l_0_4 + l_0_5 <= (mp.getfilesize)() then
-      (mp.readprotection)(false)
-      local l_0_6 = (mp.readfile)(l_0_4, l_0_5)
-      ;
-      (mp.readprotection)(true)
-      ;
-      (mp.vfo_add_buffer)(l_0_6, "[DartAotSnapshot]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = pehdr.ImageBase + pehdr.AddressOfEntryPoint
+if (hstrlog[1]).VA == l_0_0 or (hstrlog[2]).VA == l_0_0 or (hstrlog[3]).VA == l_0_0 or (hstrlog[4]).VA == l_0_0 or (hstrlog[5]).VA == l_0_0 or (hstrlog[6]).VA == l_0_0 or (hstrlog[7]).VA == l_0_0 or (hstrlog[8]).VA == l_0_0 + 7 or (hstrlog[9]).VA == l_0_0 + 7 or (hstrlog[10]).VA == l_0_0 + 12 or (hstrlog[11]).VA == l_0_0 + 2 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

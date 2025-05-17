@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not (pe.isdynamic_va)(pevars.sigaddr) then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
-  return mp.CLEAN
+if (string.lower)((string.sub)(l_0_0.image_path, -11)) == "wscript.exe" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

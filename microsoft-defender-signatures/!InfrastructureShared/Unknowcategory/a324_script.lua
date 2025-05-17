@@ -3,13 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 7, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(l_0_1, 4)
-l_0_1 = (mp.readu_u32)(l_0_0, 1)
-local l_0_2 = (pe.get_api_id)(l_0_1)
-if (pe.query_import)(pe.IMPORT_STATIC, 1753664949) and (pe.query_import)(pe.IMPORT_STATIC, 4207106400) and l_0_2 == 3141119381 then
-  (mp.set_mpattribute)("FOP:VirTool:Win32/Obfuscator.Fareit")
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1, l_0_2 = (bm.get_process_relationships)()
+if l_0_2 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_7.ppid)
+    if l_0_0.integrity_level < l_0_8.IntegrityLevel then
+      (bm.request_SMS)(l_0_7.ppid, "l+")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1)
+      return mp.INFECTED
+    end
+  end
 end
-return mp.LOWFI
+do
+  return mp.CLEAN
+end
 

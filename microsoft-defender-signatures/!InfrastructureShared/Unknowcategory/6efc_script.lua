@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Ekstak.AD!MTB") then
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 8194 then
   return mp.INFECTED
 end
 return mp.CLEAN

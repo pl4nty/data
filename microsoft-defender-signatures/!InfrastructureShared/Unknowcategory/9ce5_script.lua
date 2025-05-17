@@ -3,15 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:XMRig")
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 then
+  return mp.LOWFI
+end
+if (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 then
+  return mp.LOWFI
+end
+if (hstrlog[5]).hitcount == 0 then
+  return mp.LOWFI
+end
+if peattributes.ismsil then
   return mp.INFECTED
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrig")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrig")
-end
-return mp.CLEAN
+return mp.LOWFI
 

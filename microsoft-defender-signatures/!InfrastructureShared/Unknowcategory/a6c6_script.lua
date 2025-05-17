@@ -3,24 +3,32 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
-
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched and not (hstrlog[9]).matched and not (hstrlog[10]).matched and not (hstrlog[11]).matched and not (hstrlog[12]).matched and not (hstrlog[13]).matched and not (hstrlog[14]).matched and not (hstrlog[15]).matched and not (hstrlog[16]).matched and not (hstrlog[17]).matched and not (hstrlog[18]).matched) or not (hstrlog[19]).matched) and not (hstrlog[28]).matched) or 0 + 1 + 1 == 2 then
-  return mp.INFECTED
+(mp.readprotection)(false)
+if (hstrlog[1]).matched then
+  local l_0_0 = (mp.readfile)((pe.foffset_va)((hstrlog[1]).VA + 6), 1)
+  ;
+  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (mp.bitand)(-(string.byte)(l_0_0), 255), 1))
+else
+  do
+    if (hstrlog[2]).matched then
+      local l_0_1 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA + 32), 1)
+      local l_0_2 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA), 4)
+      ;
+      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (mp.bitand)(-(string.byte)(l_0_1), 255), 1))
+      ;
+      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!l1_cnt_%08X", (mp.readu_u32)(l_0_2, 1)))
+    else
+      do
+        do
+          if (hstrlog[3]).matched then
+            local l_0_3 = (mp.readfile)((pe.foffset_va)((hstrlog[3]).VA + 5), 1)
+            ;
+            (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (mp.bitand)(-(string.byte)(l_0_3), 255), 1))
+          end
+          return mp.INFECTED
+        end
+      end
+    end
+  end
 end
-return mp.CLEAN
 

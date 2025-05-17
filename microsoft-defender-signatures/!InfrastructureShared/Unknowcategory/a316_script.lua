@@ -3,18 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\atbroker.exe") then
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-local l_0_1 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\atbroker.exe")
-do
-  if l_0_1 ~= nil then
-    local l_0_2 = (sysio.GetRegValueAsString)(l_0_1, "Debugger")
-    if l_0_2 ~= nil and (string.len)(l_0_2) >= 1 then
-      return mp.INFECTED
-    end
-  end
+if peattributes.headerchecksum0 ~= true then
   return mp.CLEAN
 end
+if (pesecs[1]).SizeOfRawData > 36864 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 3 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections > 5 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage < 94208 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage > 131072 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

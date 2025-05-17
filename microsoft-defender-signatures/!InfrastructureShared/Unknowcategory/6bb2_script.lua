@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 15 then
+  (mp.set_mpattribute)("ALFPER:Rakzmer.A2X")
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:Rakzmer")
+return mp.INFECTED
 

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[8]).matched then
-  (mp.changedetectionname)(805306421)
-else
-  if (hstrlog[10]).matched then
-    (mp.changedetectionname)(805306427)
-  end
+if peattributes.no_exports and peattributes.amd64_image and pehdr.NumberOfSections == 6 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

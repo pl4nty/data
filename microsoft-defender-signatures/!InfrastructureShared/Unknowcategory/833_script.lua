@@ -3,21 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("ALFPER:Win32/Prifou!vbs") then
-  local l_0_0 = (mp.getfilesize)()
-  if l_0_0 > 24576 then
-    return mp.CLEAN
-  end
-  ;
-  (mp.readprotection)(false)
-  local l_0_1 = (mp.readfile)(0, l_0_0)
-  local l_0_2, l_0_3 = l_0_1:gsub("\'.-\n", "")
-  if l_0_2 and l_0_3 > 100 then
-    (mp.vfo_add_buffer)(l_0_2, "[Prifou!vbs]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-    return mp.INFECTED
-  end
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block abuse of in-the-wild exploited vulnerable signed drivers"
+  l_1_0.Description = "Windows Defender Exploit Guard detected an application writing an exploited vulnerable signed driver to the disk"
+  l_1_0.NotificationDedupingInterval = 3600
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
+  return l_1_0
 end
-do
-  return mp.CLEAN
-end
+
 

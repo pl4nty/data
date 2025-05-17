@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if MpCommon.SECURITY_MANDATORY_HIGH_RID <= ((bm.get_current_process_startup_info)()).integrity_level then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -18) == "\\processhacker.exe" then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Eorezo")
+(mp.set_mpattribute)("PUA:Block:EoRezo")
 return mp.INFECTED
 

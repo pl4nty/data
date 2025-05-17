@@ -3,49 +3,43 @@
 
 -- params : ...
 -- function num : 0
-local l_0_1 = nil
+local l_0_0 = (this_sigattrlog[5]).utf8p1
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if not l_0_1 or l_0_1.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+  return mp.CLEAN
+end
+l_0_0 = l_0_0:lower()
+if (this_sigattrlog[1]).matched and (l_0_0:find("__psscriptpolicytest_[^\\]*%.ps1") or l_0_0:find("[^%.]+%.[^%.]+%.ps1$")) then
+  return mp.CLEAN
+end
+if l_0_0:find("\\amazon\\elasticbeanstalk\\", 1, true) then
+  return mp.CLEAN
+end
+if not (mp.IsKnownFriendlyFile)(l_0_0, false, false) then
+  local l_0_2 = (string.match)(l_0_0, "(%.[^%.]+)$")
+  if not l_0_2 then
+    return mp.INFECTED
+  end
+  local l_0_3 = {}
+  l_0_3[".dat"] = true
+  l_0_3[".pif"] = true
+  l_0_3[".js"] = true
+  l_0_3[".jse"] = true
+  l_0_3[".ps1"] = true
+  l_0_3[".vbs"] = true
+  l_0_3[".vbe"] = true
+  l_0_3[".hta"] = true
+  l_0_3[".wsf"] = true
+  l_0_3[".cmd"] = true
+  l_0_3[".bat"] = true
+  if l_0_3[l_0_2] then
+    return mp.INFECTED
+  end
+end
 do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-    local l_0_0 = (this_sigattrlog[2]).utf8p1
-  end
-  local l_0_2 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC29: Overwrote pending register: R1 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p1 == nil or nil ~= nil) and l_0_2 ~= nil then
-      local l_0_3, l_0_4 = nil
-      -- DECOMPILER ERROR at PC39: Overwrote pending register: R3 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC44: Overwrote pending register: R4 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC59: Confused about usage of register: R3 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC67: Confused about usage of register: R4 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC75: Confused about usage of register: R4 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC84: Confused about usage of register: R4 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC93: Confused about usage of register: R4 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(nil) and (sysio.IsFileExists)(nil) and (mp.IsKnownFriendlyFile)(nil, true, false) and not (mp.IsKnownFriendlyFile)(nil, true, false) then
-        if (string.find)(nil, "\\system32\\mrt.exe", -17, true) or (string.find)(nil, "\\asep_inv.exe", -13, true) or (string.find)(nil, "\\mpsigstub.exe", -14, true) then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC105: Confused about usage of register: R4 in 'UnsetPending'
-
-        ;
-        (bm.add_related_file)(nil)
-        ;
-        (bm.request_SMS)(l_0_3, "l")
-        ;
-        (bm.add_action)("SingleProcessScan", 100)
-        return mp.INFECTED
-      end
-    end
-    return mp.CLEAN
-  end
+  return mp.CLEAN
 end
 

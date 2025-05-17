@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpInternal_IsPliScan") and (mp.get_mpattribute)("BM_TEXT_FILE") then
-  (mp.set_mpattribute)("NScript:JSEnableEmulation")
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.sub)(l_0_0, -22) == "\\updatetask\\vmhost.exe" then
+  (mp.set_mpattribute)("Lua:Vmhost.A")
 end
 return mp.CLEAN
 

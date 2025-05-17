@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpInternal_IsPliScan") then
-  if not (mp.get_mpattribute)("MpPeekIntoResources") then
-    (mp.set_mpattribute)("MpPeekIntoResources")
+do
+  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (pesecs[3]).Name == "UPX2" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
   end
-  if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
+  return mp.CLEAN
 end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
 

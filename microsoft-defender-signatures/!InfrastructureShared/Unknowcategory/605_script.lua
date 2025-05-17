@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_sigattr_event_count)(16385) > 10 and (mp.get_sigattr_event_count)(16386) > 10 then
-  return mp.INFECTED
+if (mp.IsKnownFriendlyFile)((bm.get_imagepath)(), true, true) == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

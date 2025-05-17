@@ -3,8 +3,47 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched and 1 or 0) + ((hstrlog[2]).matched and 1 or 0) + ((hstrlog[3]).matched and 1 or 0) + ((hstrlog[4]).matched and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[7]).matched and 1 or 0) + ((hstrlog[8]).matched and 1 or 0) >= 2 and (pesecs[1]).SizeOfRawData > 1310720 and (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 385024 and pehdr.MajorLinkerVersion == 2 and pehdr.MinorLinkerVersion == 25 and pehdr.NumberOfSections >= 9 and pehdr.MajorImageVersion == 0 and pehdr.MajorImageVersion == 0 and pehdr.MajorOperatingSystemVersion == 5 and pehdr.MinorOperatingSystemVersion == 0 and pevars.epsec == 2 then
-  return mp.INFECTED
+getu32 = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  -- DECOMPILER ERROR at PC5: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC11: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC17: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC23: Overwrote pending register: R5 in 'AssignReg'
+
+  return nil + nil * 256 + nil * 65536 + nil * 1048576
 end
-return mp.CLEAN
+
+local l_0_0 = nil
+if (hstrlog[1]).matched then
+  l_0_0 = (hstrlog[1]).VA - 1280
+else
+  if (hstrlog[2]).matched then
+    l_0_0 = (hstrlog[2]).VA - 1360
+  else
+    if (hstrlog[3]).matched then
+      l_0_0 = (hstrlog[3]).VA - 1744
+    else
+      if (hstrlog[4]).matched then
+        l_0_0 = (hstrlog[4]).VA - 1280
+      else
+        if (hstrlog[5]).matched then
+          l_0_0 = (hstrlog[5]).VA - 944
+        else
+          return mp.CLEAN
+        end
+      end
+    end
+  end
+end
+local l_0_1 = (pe.mmap_va)(l_0_0, 16)
+if #l_0_1 ~= 16 then
+  return mp.CLEAN
+end
+if getu32(l_0_1, 1) ~= 0 or getu32(l_0_1, 5) == 0 or getu32(l_0_1, 9) ~= 0 or getu32(l_0_1, 13) == 0 or getu32(l_0_1, 5) ~= getu32(l_0_1, 13) then
+  return mp.CLEAN
+end
+return mp.SUSPICIOUS
 

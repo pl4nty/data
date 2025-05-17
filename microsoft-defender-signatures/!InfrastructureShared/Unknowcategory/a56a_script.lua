@@ -3,20 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  if l_0_0 == nil then
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[3]).matched then
+  local l_0_0 = nil
+  local l_0_1 = (string.lower)(l_0_0)
+  if (string.find)(l_0_1, "\\udcofficeaddin2000.dll", 1, true) or (string.find)(l_0_1, "\\microsoft.bdd.utility.dll", 1, true) or (string.find)(l_0_1, "\\mscal.ocx", 1, true) then
     return mp.CLEAN
   end
-  if (string.find)(l_0_0, "prefix=tomcatwar", 1, true) and (string.find)(l_0_0, "java.io.inputstream", 1, true) and (string.find)(l_0_0, "class.module.classloader", 1, true) then
-    local l_0_1 = {}
-    l_0_1.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-    ;
-    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_1)
-    return mp.INFECTED
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+    local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    if l_0_2 ~= nil then
+      for l_0_6,l_0_7 in ipairs(l_0_2) do
+        l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+        ;
+        (bm.add_related_file)(l_0_7)
+      end
+    end
+    do
+      do
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
+    end
   end
-end
-do
-  return mp.CLEAN
 end
 

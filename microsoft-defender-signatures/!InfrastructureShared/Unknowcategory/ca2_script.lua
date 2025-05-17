@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:WinMaxMiner")
+(mp.set_mpattribute)("PUA:Block:QBitTorrent")
 return mp.INFECTED
 

@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("OfficeLaunchesWmi")
-if l_0_0 then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    if (sysio.IsFileExists)(l_0_5) then
-      (bm.add_related_file)(l_0_5)
-    end
-  end
-  return mp.INFECTED
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+if (string.find)(l_0_0:lower(), "\\teams.exe") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

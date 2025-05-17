@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 32 and (mp.bitand)(mp.HSTR_WEIGHT, 15) >= 2 then
-  return mp.INFECTED
+do
+  if peattributes.isexe == true or peattributes.isdll == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("HSTR:BrowserModifier:Win32/Neobar.A")
-return mp.CLEAN
 

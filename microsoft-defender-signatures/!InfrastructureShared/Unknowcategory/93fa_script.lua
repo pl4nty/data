@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-for l_0_6,l_0_7 in ipairs(l_0_0) do
-  l_0_2 = l_0_7.image_path
-  if l_0_2 ~= nil then
-    l_0_2 = (string.lower)(l_0_2)
-    if l_0_2:find("excel.exe") or l_0_2:find("word.exe") then
-      return mp.INFECTED
-    end
-  end
+if mp.HSTR_WEIGHT >= 5 then
+  return mp.INFECTED
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_minipopups")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_minipopups")
 end
 return mp.CLEAN
 

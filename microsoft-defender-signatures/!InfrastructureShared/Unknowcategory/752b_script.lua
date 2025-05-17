@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+if (string.match)((string.sub)((sigattr_head[1]).p1, 2, 7), "%d+") then
   return mp.INFECTED
 end
 return mp.CLEAN

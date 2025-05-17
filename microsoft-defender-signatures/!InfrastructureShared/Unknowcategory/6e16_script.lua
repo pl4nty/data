@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.ismsil == true and (mp.getfilesize)() < 5000000 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("HSTR:IBryteDownloaderz.A3")
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:IBryte")
+return mp.INFECTED
 

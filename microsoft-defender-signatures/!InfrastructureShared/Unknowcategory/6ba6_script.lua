@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 29, "ÇE")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 36, "")
+return mp.INFECTED
 

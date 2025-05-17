@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 233 and epcode[2] == 155 and epcode[3] == 219 and epcode[4] == 255 and pehdr.TimeDateStamp == 0 and pehdr.PointerToSymbolTable > 1048576 then
+local l_0_0 = (hstrlog[2]).VA + 45
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+local l_0_2 = (mp.readu_u32)(l_0_1, 1)
+local l_0_3 = (pe.mmap_va)(l_0_2, 16)
+if (string.sub)(l_0_3, 1, 8) == "IExplore" then
   return mp.INFECTED
 end
 return mp.CLEAN

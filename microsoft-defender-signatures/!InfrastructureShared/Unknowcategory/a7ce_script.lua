@@ -3,57 +3,102 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = nil
-local l_0_3 = nil
-if (bm.get_current_process_startup_info)() == nil or (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) == nil or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon.des", -22, true) then
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-local l_0_4, l_0_5 = nil
-if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) ~= nil then
-  for l_0_9,l_0_10 in ipairs(R7_PC44) do
-    local l_0_6, l_0_7 = (bm.get_process_relationships)()
-    -- DECOMPILER ERROR at PC46: Confused about usage of register: R10 in 'UnsetPending'
-
-    if R10_PC46.image_path ~= nil and R10_PC46.reason == bm.RELATIONSHIP_INJECTION then
-      if (string.find)((string.lower)(R10_PC46.image_path), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\system32\\mrt.exe", -17, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\asep_inv.exe", -13, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\mpsigstub.exe", -14, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\gameguard\\gamemon.des", -22, true) then
-        return mp.CLEAN
-      end
-      l_0_3 = R10_PC46.ppid
-    end
-  end
+if peattributes.packed == true then
+  return mp.CLEAN
 end
-do
-  -- DECOMPILER ERROR at PC109: Confused about usage of register: R4 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC112: Confused about usage of register: R4 in 'UnsetPending'
-
-  if l_0_6 ~= nil then
-    for l_0_15,l_0_16 in ipairs(l_0_6) do
-      local l_0_12, l_0_13 = nil
-      -- DECOMPILER ERROR at PC115: Confused about usage of register: R10 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC122: Confused about usage of register: R10 in 'UnsetPending'
-
-      if R10_PC46.image_path ~= nil then
-        l_0_2 = (string.lower)((MpCommon.PathToWin32Path)(R10_PC46.image_path))
-        if (string.find)(l_0_2, "\\mcafee\\systemcore\\mfehcs.exe", -29, true) or (string.find)(l_0_2, "(x86)\\pharossystems\\printscout\\ctskmstr.exe", -43, true) or (string.find)(l_0_2, "(x86)\\hp\\printscout\\ctskmstr.exe", -32, true) or (string.find)(l_0_2, "\\mcafee\\endpoint security\\threat prevention\\mfetp.exe", -53, true) or (string.find)(l_0_2, "\\anti-malware\\mbamservice.exe", -29, true) or (string.find)(l_0_2, "\\cnext\\radeonsoftware.exe", -25, true) or (string.find)(l_0_2, "(x86)\\panda security\\wac\\psanhost.exe", -37, true) or (string.find)(l_0_2, "(x86)\\cloudvolumes\\agent\\svservice.exe", -38, true) or (string.find)(l_0_2, "\\gameguard\\gamemon64.des", -24, true) or (string.find)(l_0_2, "\\gameguard\\gamemon.des", -22, true) or (string.find)(l_0_2, "(x86)\\f-secure\\server security\\", 1, true) then
-          return mp.CLEAN
-        end
-      end
-    end
-  end
-  do
-    if (sysio.IsFileExists)(l_0_2) and not (mp.IsKnownFriendlyFile)(l_0_2, true, false) then
-      (bm.add_related_file)(l_0_2)
-    end
-    if (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, true, false) and l_0_3 ~= nil then
-      (bm.request_SMS)(l_0_3, "h+")
-      ;
-      (bm.add_related_file)(l_0_5)
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+if peattributes.packersigmatched == true then
+  return mp.CLEAN
 end
+if peattributes.hasexports == true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.is_delphi == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections <= 2 then
+  return mp.CLEAN
+end
+if pehdr.ImageBase ~= 268435456 then
+  return mp.CLEAN
+end
+if pehdr.Subsystem ~= 2 then
+  return mp.CLEAN
+end
+if pehdr.FileAlignment < 512 then
+  return mp.CLEAN
+end
+if pehdr.FileAlignment > 4096 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfStackReserve ~= 1048576 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode <= 4096 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode >= 524288 then
+  return mp.CLEAN
+end
+if pehdr.MajorOperatingSystemVersion ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.MinorOperatingSystemVersion ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.MajorSubsystemVersion ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.MinorSubsystemVersion ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData <= 0 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData >= 524288 then
+  return mp.CLEAN
+end
+local l_0_0 = pehdr.SizeOfCode - (pesecs[pevars.epsec]).SizeOfRawData
+if (mp.bitand)(l_0_0, 2147483648) == 2147483648 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).RVA <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size >= 336 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).Size >= 512 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[5]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).Size ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

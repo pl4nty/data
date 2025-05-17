@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("ValidDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

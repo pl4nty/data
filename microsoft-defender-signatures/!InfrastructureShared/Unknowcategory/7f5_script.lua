@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 do
-  if (string.sub)(l_0_0, -4) == ".vbe" then
-    local l_0_1, l_0_2 = (string.match)(l_0_0, "(.+\\)([^\\]+)$")
-    if (string.sub)(l_0_2, 1, 9) == "setup.exe" or (string.sub)(l_0_2, 1, 5) == "hello" then
-      (mp.set_mpattribute)("Lua:FakePAVVBEFileName")
+  if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+    if l_0_1 == "setup_fsu_cid.exe" then
+      (mp.set_mpattribute)("Lua:SefnitFileScoutFileName")
     end
   end
   return mp.CLEAN

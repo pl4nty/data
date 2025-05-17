@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.UfsGetMetadataBool)("PSScriptWithServiceStopCommand", true) == 0 and "PSScriptWithServiceStopCommand" == true and (mp.UfsGetMetadataBool)("PSScriptWithConvertFromB64", true) == 0 and "PSScriptWithConvertFromB64" == true then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and pehdr.NumberOfSections == 5 and l_0_0 >= 2138112 and l_0_0 <= 2281472 then
   return mp.INFECTED
 end
 return mp.CLEAN

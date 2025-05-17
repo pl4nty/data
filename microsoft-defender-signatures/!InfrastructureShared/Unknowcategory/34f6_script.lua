@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:FileSizeLE100.A") then
+if (mp.get_mpattribute)("MpCmdLineFoundB64") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

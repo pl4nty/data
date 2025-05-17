@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Ufasoft")
+(mp.set_mpattribute)("PUA:Block:Diplugem")
 return mp.INFECTED
 

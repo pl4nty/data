@@ -3,38 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_connection_string)()
-if l_0_0 then
-  local l_0_1 = (string.match)(l_0_0, "DestPort=(%d+)")
-  local l_0_2 = {}
-  l_0_2["80"] = true
-  l_0_2["8080"] = true
-  l_0_2["443"] = true
-  l_0_2["53"] = true
-  l_0_2["21"] = true
-  l_0_2["25"] = true
-  l_0_2["22"] = true
-  l_0_2["389"] = true
-  l_0_2["9"] = true
-  l_0_2["636"] = true
-  l_0_2["1433"] = true
-  l_0_2["1434"] = true
-  l_0_2["1521"] = true
-  l_0_2["9389"] = true
-  l_0_2["8100"] = true
-  l_0_2["23"] = true
-  l_0_2["993"] = true
-  l_0_2["40000"] = true
-  l_0_2["9085"] = true
-  l_0_2["9092"] = true
-  l_0_2["3306"] = true
-  l_0_2["3300"] = true
-  l_0_2["5432"] = true
-  if l_0_2[l_0_1] then
+local l_0_0 = ""
+if (this_sigattrlog[1]).matched then
+  l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+end
+if l_0_0 ~= "" and ((string.find)(l_0_0, "\\appdata\\local\\temp\\acrobat_sbx\\", 1, true) or (string.find)(l_0_0, "\\appdata\\local\\temp\\acrord32_sbx\\", 1, true)) then
+  if (string.find)(l_0_0, "\\spoon\\cache\\", 1, true) or (string.find)(l_0_0, "\\bullseyecoverage", 1, true) then
+    return mp.CLEAN
+  else
     return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

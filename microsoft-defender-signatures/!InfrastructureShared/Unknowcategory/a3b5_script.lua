@@ -3,25 +3,20 @@
 
 -- params : ...
 -- function num : 0
-byte_to_dword = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = 0
-  for l_1_5 = 4, 1, -1 do
-    l_1_1 = l_1_1 * 256 + (string.byte)(l_1_0, l_1_5)
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
+  do
+    do
+      if l_0_0:len() > 13 and (string.sub)(l_0_0, -13) == "\\win32spl.dll" then
+        local l_0_1 = (string.lower)((bm.get_imagepath)())
+        if (string.sub)(l_0_1, -11) == "svchost.exe" then
+          return mp.CLEAN
+        end
+      end
+      ;
+      (bm.add_related_file)(l_0_0)
+      return mp.INFECTED
+    end
   end
-  return l_1_1
 end
-
-local l_0_0 = (hstrlog[1]).VA
-local l_0_1 = (pe.mmap_va)(l_0_0 - 2, 4)
-local l_0_2 = byte_to_dword(l_0_1)
-if (pe.mmap_va)(l_0_2, 2) ~= "MZ" then
-  return mp.CLEAN
-end
-local l_0_3 = (pe.mmap_va)(l_0_0 + 12, 4)
-local l_0_4 = byte_to_dword(l_0_3)
-if (pe.mmap_va)(l_0_4, 4) ~= "\000\000\255\255" then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

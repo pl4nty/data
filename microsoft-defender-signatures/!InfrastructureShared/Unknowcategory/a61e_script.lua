@@ -3,22 +3,41 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched or (this_sigattrlog[2]).matched then
-  local l_0_0, l_0_1 = (bm.get_process_relationships)()
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-      local l_0_8 = (string.lower)(l_0_6.image_path)
-      if l_0_7 == 1 and ((string.find)(l_0_8, "\\cmd.exe", 1, true) or (string.find)(l_0_8, "\\powershell.exe", 1, true) or (string.find)(l_0_8, "\\powershell_ise.exe", 1, true) or (string.find)(l_0_8, "\\javaw.exe", 1, true) or (string.find)(l_0_8, "\\java.exe", 1, true) or (string.find)(l_0_8, "\\log-agent.exe", 1, true) or (string.find)(l_0_8, "\\ossec-agent.exe", 1, true)) then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
+if peattributes.hasexports == true then
+  return mp.CLEAN
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+if peattributes.isdll ~= true then
+  return mp.CLEAN
 end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 6 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 233 then
+  return mp.CLEAN
+end
+if epcode[4] ~= 255 then
+  return mp.CLEAN
+end
+if epcode[5] ~= 255 then
+  return mp.CLEAN
+end
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pesecs[1]).PointerToRawData, 64)
+if l_0_0:byte(1) ~= 85 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

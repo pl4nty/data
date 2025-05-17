@@ -3,27 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[9]).utf8p1 ~= nil then
-  l_0_0 = (string.lower)((this_sigattrlog[9]).utf8p1)
-else
-  if (this_sigattrlog[10]).utf8p1 ~= nil then
-    l_0_0 = (string.lower)((this_sigattrlog[10]).utf8p1)
-  else
-    return mp.CLEAN
-  end
-end
-if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
-  return mp.CLEAN
-end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
+if peattributes.isdll and pehdr.NumberOfSections == 5 and pevars.epsec == 1 and not peattributes.no_exports and peattributes.no_tls and pehdr.SizeOfImage >= 221184 and pehdr.SizeOfImage <= 1069056 and (pesecs[pevars.epsec]).SizeOfRawData >= 151552 and (pesecs[pevars.epsec]).SizeOfRawData <= 909312 then
+  (mp.set_mpattribute)("MpSimulateParanoid")
   ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
+  (mp.set_mpattribute)("MpEnableCOM")
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
+  ;
+  (pe.reemulate)()
 end
-return mp.INFECTED
+return mp.CLEAN
 

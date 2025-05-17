@@ -3,17 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_AMSI then
-  local l_0_1, l_0_2 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
-  if l_0_1 and l_0_2 ~= nil then
-    local l_0_3 = (string.lower)(l_0_2)
-    if (string.match)(l_0_3, "\\\\fxx%d*.munich.munichre.com\\") then
-      return mp.INFECTED
-    end
-  end
-end
-do
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil or l_0_0:len() < 5 then
   return mp.CLEAN
 end
+local l_0_1 = {}
+-- DECOMPILER ERROR at PC22: No list found for R1 , SetList fails
+
+-- DECOMPILER ERROR at PC23: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC24: Overwrote pending register: R3 in 'AssignReg'
+
+for l_0_5 = "^deedee%.exe$", "^tm%(.+%)11%d%d%.exe$" do
+  if l_0_0:find(l_0_1[l_0_5]) then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

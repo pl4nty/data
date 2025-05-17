@@ -3,15 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetUACMetadata)()
-if l_0_0 == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
+      if (string.find)(R6_PC25, ":\\program files", 1, true) then
+        return mp.CLEAN
+      else
+        if (string.find)(R6_PC25, "\\ccmcache\\", 1, true) then
+          return mp.CLEAN
+        else
+          if (string.find)(R6_PC25, "ccm32bitlauncher", 1, true) then
+            return mp.CLEAN
+          end
+        end
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-if l_0_0.Type ~= mp.AMSI_UAC_REQUEST_TYPE_EXE then
-  return mp.CLEAN
-end
-if (string.sub)((string.lower)((l_0_0.Info).ApplicationName), -24) == "exesampleuacdetected.exe" or (string.sub)((string.lower)((l_0_0.Info).CommandLine), -25) == "exesampleuacdetected.exe\"" or (string.sub)((string.lower)((l_0_0.Info).CommandLine), -62) == "exesampleuacdetected-9f298338-4c4e-49e8-bd3b-9a3d453c9b79.exe\"" then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

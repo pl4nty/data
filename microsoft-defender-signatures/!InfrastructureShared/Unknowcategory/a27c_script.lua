@@ -3,23 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = nil, nil
-for l_0_5 = 1, mp.SIGATTR_LOG_SZ do
-  local l_0_2, l_0_3 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R5 in 'UnsetPending'
-
-  if (sigattr_head[R5_PC6]).matched then
-    if (sigattr_head[R5_PC6]).attribute == 16384 or (sigattr_head[R5_PC6]).attribute == 16385 then
-      l_0_3 = (string.lower)((sigattr_head[R5_PC6]).utf8p1)
-    else
-      if (sigattr_head[R5_PC6]).attribute == 16393 then
-        l_0_2 = (string.lower)((sigattr_head[R5_PC6]).utf8p2)
-      end
-    end
-    if l_0_3 and l_0_2 and (string.find)(l_0_2, l_0_3) then
-      return mp.INFECTED
-    end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\steam", 1, true) or (string.find)((string.lower)(l_0_0), "torrent.exe", 1, true) or (string.find)((string.lower)(l_0_0), "game", 1, true) then
+    return mp.CLEAN
   end
+  return mp.INFECTED
 end
 return mp.CLEAN
 

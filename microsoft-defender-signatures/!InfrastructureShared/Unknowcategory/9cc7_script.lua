@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_relocs") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_lastscn_writable") and (mp.get_mpattribute)("pea_firstsectwritable") and (mp.get_mpattribute)("pea_epoutofimage") then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.reason == 1 then
+    if (string.lower)((string.match)(l_0_6.image_path, "\\([^\\]+)$")) == "razerinstaller.exe" then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 return mp.CLEAN
 

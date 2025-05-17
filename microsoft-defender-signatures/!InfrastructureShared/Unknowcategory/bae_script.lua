@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:BitLord")
+(mp.set_mpattribute)("PUA:Block:Bassmod")
 return mp.INFECTED
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.getfilesize)() > 30000000 and pehdr.Magic == 523 then
-  return mp.INFECTED
+if not peattributes.hasappendeddata then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.isvbpcode then
+  return mp.CLEAN
+end
+if not peattributes.dirty_wx_branch then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

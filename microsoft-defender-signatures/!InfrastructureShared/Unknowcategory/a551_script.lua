@@ -3,30 +3,35 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  local l_0_1, l_0_2 = (bm.get_process_relationships)()
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_7.image_path))
-    local l_0_9 = (MpCommon.QueryPersistContext)(l_0_8, "PsExecServiceStandardName")
-    if l_0_9 then
-      (mp.ReportLowfi)(l_0_0, 2705434468)
-      ;
-      (bm.add_related_file)(l_0_0)
-      return mp.INFECTED
-    end
-    local l_0_10 = (MpCommon.QueryPersistContext)(l_0_8, "PsExecServiceNonStandardName")
-    if l_0_10 then
-      (mp.ReportLowfi)(l_0_0, 2705434468)
-      ;
-      (bm.add_related_file)(l_0_0)
-      return mp.INFECTED
-    end
-  end
+if peattributes.hasexports == true then
+  return mp.CLEAN
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
 end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 0 then
+  return mp.CLEAN
+end
+if peattributes.epscn_islast ~= true then
+  return mp.CLEAN
+end
+if epcode[1] ~= 80 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 83 then
+  return mp.CLEAN
+end
+if epcode[3] <= 224 then
+  return mp.CLEAN
+end
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

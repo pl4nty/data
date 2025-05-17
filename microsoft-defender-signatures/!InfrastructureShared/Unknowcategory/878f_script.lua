@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 458752 and l_0_0 <= 1044480 and pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 9 then
+if peattributes.isexe == true or peattributes.isdll == true and (pesecs[4]).Name == ".ndata" and (pesecs[3]).Characteristics == 3221225600 then
   return mp.INFECTED
 end
 return mp.CLEAN

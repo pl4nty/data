@@ -3,49 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_4 = nil, nil
-if (this_sigattrlog[6]).matched then
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R1 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R1 in 'UnsetPending'
-
-  if (this_sigattrlog[6]).utf8p1 and (string.lower)((this_sigattrlog[6]).utf8p1) then
-    l_0_1 = (string.len)((string.lower)((this_sigattrlog[6]).utf8p1))
-    -- DECOMPILER ERROR at PC26: Confused about usage of register: R1 in 'UnsetPending'
-
-    if l_0_1 >= 16 then
-      local l_0_2, l_0_3 = , (string.match)((string.lower)((this_sigattrlog[6]).utf8p1), "^%l:\\(%w+)\\(%w+)%.exe")
-      if l_0_3 ~= nil and (string.lower)((this_sigattrlog[6]).utf8p1) ~= nil and l_0_3 == (string.lower)((this_sigattrlog[6]).utf8p1) then
-        (bm.add_related_file)((this_sigattrlog[6]).utf8p1)
-        return mp.INFECTED
-      end
-    end
-  end
-else
-  do
-    if (this_sigattrlog[7]).matched then
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC57: Confused about usage of register: R1 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC64: Confused about usage of register: R1 in 'UnsetPending'
-
-      if (this_sigattrlog[7]).utf8p1 and (string.lower)((this_sigattrlog[7]).utf8p1) then
-        l_0_5 = (string.len)((string.lower)((this_sigattrlog[7]).utf8p1))
-        -- DECOMPILER ERROR at PC71: Confused about usage of register: R1 in 'UnsetPending'
-
-        if l_0_5 >= 16 then
-          local l_0_6, l_0_7 = , (string.match)((string.lower)((this_sigattrlog[7]).utf8p1), "^%l:\\(%w+)\\(%w+)%.dll")
-          if l_0_7 ~= nil and (string.lower)((this_sigattrlog[7]).utf8p1) ~= nil and l_0_7 == (string.lower)((this_sigattrlog[7]).utf8p1) then
-            (bm.add_related_file)((this_sigattrlog[7]).utf8p1)
-            return mp.INFECTED
-          end
-        end
-      end
-    end
-    do
-      return mp.CLEAN
-    end
-  end
+GetRuleInfo = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  l_1_0.Name = "Block execution of potentially obfuscated scripts"
+  l_1_0.Description = "Windows Defender Exploit Guard detected either obfuscated JavaScript, VBScript, or macro code."
+  l_1_0.NotificationDedupingInterval = 120
+  l_1_0.NotificationDedupingScope = HIPS.DEDUPE_SCOPE_UI
+  return l_1_0
 end
+
+GetCommandLineRegExp = function()
+  -- function num : 0_1
+  return "((windowsapps\\\\[^\\\\]+\\\\)|(microsoft office\\\\(root\\\\)?))office..\\\\[^\\.]+\\.exe\\\"?[^\\\"]+\\\"([^\\\"]+)\\\"?"
+end
+
 

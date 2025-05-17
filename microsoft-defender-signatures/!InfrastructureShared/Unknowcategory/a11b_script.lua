@@ -3,21 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
+if (mp.getfilesize)() < 1048576 then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil and l_0_0.image_path == nil then
-  return mp.CLEAN
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-local l_0_2 = l_0_1:match("([^\\]+)$")
-local l_0_3 = {}
-l_0_3["explorer.exe"] = true
-l_0_3["powershell.exe"] = true
-l_0_3["mshta.exe"] = true
-if l_0_3[l_0_2] then
-  return mp.INFECTED
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,28 +3,57 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  if peattributes.isdll then
-    return mp.CLEAN
-  end
-  local l_0_1 = (mp.getfilesize)()
-  if l_0_1 > 17664 and l_0_1 < 1200128 then
-    local l_0_2 = pe.query_import
-    if l_0_2(pe.IMPORT_STATIC, 4288984855) == 0 then
-      return mp.CLEAN
-    end
-    if l_0_2(pe.IMPORT_STATIC, 3419395426) == 0 and l_0_2(pe.IMPORT_STATIC, 1058758707) == 0 then
-      return mp.CLEAN
-    end
-    local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    local l_0_4 = (string.sub)(l_0_3, -4)
-    if (l_0_4 == ".zip" or l_0_4 == ".exe") and (l_0_3:find("aupost_info_", 1, true) ~= nil or l_0_3:find("auspost_info_", 1, true) ~= nil or l_0_3:find("enel_bolletta", 1, true) ~= nil or l_0_3:find("postdanmark_pakkeboksen", 1, true) ~= nil or l_0_3:find("postnord_info_", 1, true) ~= nil or l_0_3:find("posten_adresselapp", 1, true) ~= nil or l_0_3:find("turkcell_fatura", 1, true) ~= nil or l_0_3:find("turkcell_efatura", 1, true) ~= nil or l_0_3:find("turkcell_mart_fatura", 1, true) ~= nil or l_0_3:find("carta_certificada", 1, true) ~= nil or l_0_3:find("dhl_versandschein", 1, true) ~= nil or l_0_3:find("turkcell_subat_fatura", 1, true) ~= nil or l_0_3:find("poczta_track", 1, true) ~= nil) then
-      return mp.INFECTED
-    end
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if mp.HEADERPAGE_SZ < 4096 or l_0_0 < 4096 or l_0_0 > 16777216 then
   return mp.CLEAN
 end
+if (mp.readu_u16)(headerpage, 1) == 23117 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readu_u32)(headerpage, 41)
+local l_0_2 = (mp.readu_u32)(headerpage, 45)
+local l_0_3 = (mp.readu_u32)(headerpage, 49)
+local l_0_4 = (mp.readu_u32)(headerpage, 53)
+local l_0_5 = (mp.readu_u32)(headerpage, 57)
+if l_0_1 == 0 then
+  return mp.CLEAN
+end
+if (mp.bitand)((mp.bitxor)((mp.readu_u32)(headerpage, 1), l_0_1), 65535) ~= 23117 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_6 = (mp.readfile)(0, 4096)
+for l_0_10 = 1, 3840, 20 do
+  (mp.writeu_u32)(l_0_6, l_0_10, (mp.bitxor)((mp.readu_u32)(l_0_6, l_0_10), l_0_1))
+  ;
+  (mp.writeu_u32)(l_0_6, l_0_10 + 4, (mp.bitxor)((mp.readu_u32)(l_0_6, l_0_10 + 4), l_0_2))
+  ;
+  (mp.writeu_u32)(l_0_6, l_0_10 + 8, (mp.bitxor)((mp.readu_u32)(l_0_6, l_0_10 + 8), l_0_3))
+  ;
+  (mp.writeu_u32)(l_0_6, l_0_10 + 12, (mp.bitxor)((mp.readu_u32)(l_0_6, l_0_10 + 12), l_0_4))
+  ;
+  (mp.writeu_u32)(l_0_6, l_0_10 + 16, (mp.bitxor)((mp.readu_u32)(l_0_6, l_0_10 + 16), l_0_5))
+end
+local l_0_11 = (mp.readu_u32)(l_0_6, 61) + 1
+if l_0_11 > 4096 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_6, l_0_11) ~= 17744 then
+  return mp.CLEAN
+end
+local l_0_12 = (mp.readu_u32)(l_0_6, l_0_11 + 28)
+if l_0_12 ~= 2560 then
+  return mp.CLEAN
+end
+local l_0_13 = (mp.readu_u32)(l_0_6, l_0_11 + 84)
+if l_0_13 ~= 1024 then
+  return mp.CLEAN
+end
+if (mp.crc32)(-1, l_0_6, l_0_13 + 1, 32) ~= 3735068208 then
+  return mp.CLEAN
+end
+;
+(mp.vfo_add_buffer)(l_0_6, "[CeeInject.gen!DZ]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.CLEAN
 

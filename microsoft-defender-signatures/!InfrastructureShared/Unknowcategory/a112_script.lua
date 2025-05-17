@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isvbnative and not peattributes.isvbpcode then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
-if (hstrlog[1]).matched then
-  local l_0_0 = (hstrlog[1]).VA
-  local l_0_1 = "HSTR:VirTool:Win32/VBInject.gen!LM_ptr_" .. (string.format)("%.08x", l_0_0 + 62)
-  ;
-  (mp.set_mpattribute)(l_0_1)
-  return mp.INFECTED
-end
-do
+if (string.find)(l_0_0, "\\microsoft\\edge", 1, true) or (string.find)(l_0_0, "\\temp\\edgemitmp", 1, true) or (string.find)(l_0_0, "\\google\\chrome\\", 1, true) then
   return mp.CLEAN
 end
+return mp.INFECTED
 

@@ -3,8 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\chrome\\application\\chrome.exe", 1, true) or (string.find)(l_0_0, "\\microsoftedge", 1, true) or (string.find)(l_0_0, "windows\\system32\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\sophos\\", 1, true) or (string.find)(l_0_0, "\\application\\browser.exe", 1, true)) then
+if peattributes.isdll ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasexports == true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections <= 4 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfHeaders ~= 1024 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfUninitializedData ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.FileAlignment ~= 512 then
+  return mp.CLEAN
+end
+if pehdr.Subsystem ~= 2 then
   return mp.CLEAN
 end
 return mp.INFECTED

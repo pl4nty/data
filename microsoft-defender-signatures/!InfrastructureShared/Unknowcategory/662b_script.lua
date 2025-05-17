@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "veeamp.exe" then
-  return mp.CLEAN
+if peattributes.isdll and peattributes.amd64_image and peattributes.hasexports then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

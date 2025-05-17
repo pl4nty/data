@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
 do
-  if l_0_0 == 47104 or l_0_0 == 47574 or l_0_0 == 48128 then
-    local l_0_1 = (string.lower)((mp.getfilename)())
-    if (string.find)(l_0_1, "%-%>%(ole stream") ~= nil then
-      return mp.INFECTED
+  if (mp.get_mpattribute)("SCRIPT:Twitter!Cookie") then
+    local l_0_0 = (mp.getfilename)()
+    if (string.find)(l_0_0, "[Cc][oO][oO][kK][Ii][Ee][Ss]") ~= nil then
+      (mp.set_mpattribute)("#Twitter!Cookie")
     end
   end
   return mp.CLEAN

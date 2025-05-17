@@ -3,69 +3,76 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.IsHipsRuleEnabled)("5beb7efe-fd9a-4556-801d-275e5ffc04cc") then
-  return mp.INFECTED
-end
--- DECOMPILER ERROR at PC35: Unhandled construct in 'MakeBoolean' P3
-
-if (not (mp.get_mpattribute)("Nscript:Type_js") and not (mp.get_mpattribute)("Nscript:Type_vbs")) or (mp.get_mpattribute)("Lua:ProgrammingLangFileExtension") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil or l_0_0 == "" then
-  return mp.CLEAN
-end
-l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
-local l_0_1 = (string.sub)(l_0_0, -5)
-local l_0_2 = (string.sub)(l_0_1, -4)
-if l_0_1 == ".psd1" or l_0_1 == ".psm1" or l_0_1 == "s1xml" or l_0_2 == ".ps1" or l_0_1 == ".psrc" or l_0_1 == ".pssc" or l_0_1 == "cdxml" then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, ">%[msilres") then
-  (mp.set_mpattribute)("LUA:InsideMSILRES")
-  return mp.CLEAN
-end
-if (mp.IsPathExcludedForHipsRule)(l_0_0, "5beb7efe-fd9a-4556-801d-275e5ffc04cc") then
-  return mp.CLEAN
-end
-if (mp.IsTrustedFile)(false) == true then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "\\appdata\\roaming\\microsoft\\office\\16.0\\[^\\]+\\proofing\\") then
-  return mp.CLEAN
-else
-  if (string.find)(l_0_0, "\\program files[^\\]*\\microsoft office\\root\\office%d+\\%d+\\%a+naivebayescommandranker.txt") then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  if (mp.bitand)((mp.get_contextdata)(mp.CONTEXT_DATA_DEVICE_CHARACTERISTICS), 264193) ~= 264193 then
     return mp.CLEAN
-  else
-    if (string.find)(l_0_0, "\\windows\\imecache\\[^\\]+\\appdeploytoolkit\\appdeploytoolkitmain.cs") then
+  end
+  if not peattributes.isdll then
+    return mp.CLEAN
+  end
+  if not peattributes.hasexports then
+    return mp.CLEAN
+  end
+  if ((pehdr.DataDirectory)[1]).Size == 0 then
+    return mp.CLEAN
+  end
+  if (mp.get_mpattribute)("Lua:SenseIRCretaeFileinTemp") then
+    return mp.CLEAN
+  end
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+  local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_LOWERCASE))
+  if l_0_2 == nil or l_0_2 == "" then
+    return mp.CLEAN
+  end
+  l_0_2 = (MpCommon.PathToWin32Path)(l_0_2)
+  if l_0_2 == nil or l_0_2 == "" then
+    return mp.CLEAN
+  end
+  l_0_2 = (string.lower)(l_0_2)
+  if (string.find)(l_0_2, "\\windows\\temp\\", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_3 = {}
+  l_0_3[".exe"] = true
+  l_0_3[".dll"] = true
+  l_0_3[".cpl"] = true
+  l_0_3[".ocx"] = true
+  l_0_3[".pyd"] = true
+  if l_0_3[l_0_1:sub(-4)] then
+    return mp.CLEAN
+  end
+  local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+  if not l_0_4:find("\160", 1, true) then
+    return mp.CLEAN
+  end
+  if (string.find)((string.lower)(l_0_4), "\\windows\\temp\\", 1, true) then
+    return mp.CLEAN
+  end
+  if l_0_1:find("^%l+%.%l%l%l$") or l_0_1:find("^~%$%l+%.%l%l%l$") or l_0_1:find("^%w+%.%w+%.%w+%.%w+%.%w+%.%w+%.%w+%.%w+$") or l_0_1:find("^%w%w%w%w%w+%.%w+$") then
+    local l_0_5 = ((pehdr.DataDirectory)[1]).RVA
+    ;
+    (mp.readprotection)(false)
+    local l_0_6 = (mp.readfile)((pe.foffset_rva)(l_0_5), 36)
+    if (mp.readu_u32)(l_0_6, 21) ~= 1 then
       return mp.CLEAN
-    else
-      if (string.find)(l_0_0, "\\windows\\ccmcache\\[^\\]+\\appdeploytoolkit\\appdeploytoolkitmain.cs") then
-        return mp.CLEAN
-      end
+    end
+    if (mp.readu_u32)(l_0_6, 25) ~= 1 then
+      return mp.CLEAN
+    end
+    local l_0_7 = (mp.readu_u32)(l_0_6, 33)
+    l_0_6 = (pe.mmap_rva)(l_0_7, 4)
+    local l_0_8 = (mp.readu_u32)(l_0_6, 1)
+    local l_0_9 = (pe.mmap_rva)(l_0_8, 32)
+    if l_0_9:find("^%l+") and ((string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "msiexec.exe" or (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "rundll32.exe") then
+      local l_0_10 = (MpCommon.PathToWin32Path)(l_0_4) .. "\\IndexerVolumeGuid"
+      ;
+      (mp.ReportLowfi)(l_0_10, 162679141)
+      return mp.INFECTED
     end
   end
 end
-if (string.find)(l_0_0, "\\windowspowershell\\v1.0\\modules\\", 1, true) then
-  return mp.CLEAN
-else
-  if (string.find)(l_0_0, "\\eceagentservice\\[^\\]+\\[^\\]+%.psd1$") then
-    return mp.CLEAN
-  end
-end
-local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-if l_0_3 == nil then
+do
   return mp.CLEAN
 end
-local l_0_4 = {}
-l_0_4["cscript.exe"] = ""
-l_0_4["wscript.exe"] = ""
-l_0_4["winword.exe"] = ""
-l_0_4["powerpnt.exe"] = ""
-l_0_4["excel.exe"] = ""
-l_0_4["powershell.exe"] = ""
-if l_0_4[(string.lower)(l_0_3)] or (mp.get_mpattribute)("BM_CSCRIPT_EXE") or (mp.get_mpattribute)("BM_POWERSHELL_EXE") or (mp.get_mpattribute)("BM_POWERSHELL_ISE_EXE") or (mp.get_mpattribute)("BM_WSCRIPT_EXE") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

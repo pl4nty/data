@@ -3,45 +3,36 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_delphi then
-  return mp.CLEAN
-end
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if not peattributes.hasappendeddata then
-  return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoHotKey_+") then
-  return mp.CLEAN
-end
-if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") then
-  local l_0_0 = (mp.getfilesize)()
-  if l_0_0 < 2048000 then
-    return mp.CLEAN
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = {}
+  l_0_1["arsiv.exe"] = true
+  l_0_1["chromenet.exe"] = true
+  l_0_1["chromium.exe"] = true
+  l_0_1["app.exe"] = true
+  l_0_1["winsnrnr.exe"] = true
+  l_0_1["denemeisim.exe"] = true
+  local l_0_2 = {}
+  l_0_2["asdfghjklmn.exe"] = true
+  l_0_2["dwmvs.exe"] = true
+  l_0_2["tplmk.exe"] = true
+  l_0_2["goup.exe"] = true
+  l_0_2["per.zip"] = true
+  l_0_2["nod32.exe"] = true
+  l_0_2["google.exe"] = true
+  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  local l_0_4 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  -- DECOMPILER ERROR at PC63: Unhandled construct in 'MakeBoolean' P1
+
+  if l_0_1[l_0_4] and ((string.sub)(l_0_3, -16) == "\\appdata\\roaming" or (string.sub)(l_0_3, -17) == "\\application data") then
+    return mp.INFECTED
   end
-  local l_0_1 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-  if l_0_0 - l_0_1 <= 20480 then
-    return mp.CLEAN
+  if l_0_2[l_0_4] and l_0_3 == "c:\\windows" then
+    return mp.INFECTED
   end
-  ;
-  (mp.readprotection)(false)
-  local l_0_2 = (mp.readfile)(l_0_1, 24)
-  local l_0_3 = (mp.crc32)(-1, l_0_2, 1, 24)
-  if l_0_3 == 3604511246 then
-    return mp.CLEAN
+  if l_0_3 == "c:" and (l_0_4 == "debgr.txt" or l_0_4 == "chrome1.exe") then
+    return mp.INFECTED
   end
-  if l_0_3 == 1339108276 then
-    return mp.CLEAN
-  end
-  local l_0_4 = (mp.crc32)(-1, l_0_2, 1, 17)
-  if l_0_4 == 2991533544 then
-    return mp.CLEAN
-  end
-  if l_0_4 == 1547783364 then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
 end
 do
   return mp.CLEAN

@@ -3,8 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("do_exhaustivehstr_rescan_vbinject_fa") and (mp.getfilesize)() == 208384 and pehdr.NumberOfSections == 3 and (pesecs[2]).SizeOfRawData == 8192 and (pesecs[2]).VirtualAddress == 131072 and (pesecs[2]).Name == "UPX1" then
-  return mp.INFECTED
+local l_0_0 = ""
+if (this_sigattrlog[2]).matched then
+  l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
+else
+  return mp.CLEAN
+end
+if l_0_0 ~= "" then
+  if (string.match)(l_0_0, "%.[a-z]+$") or (string.match)(l_0_0, "%.[a-z]+\"$") or (string.find)(l_0_0, "\\downloads\\", 1, true) then
+    return mp.CLEAN
+  else
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

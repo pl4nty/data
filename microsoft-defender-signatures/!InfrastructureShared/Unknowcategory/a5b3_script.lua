@@ -3,41 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (mp.readu_u16)(l_0_0, 1)
-if l_0_1 ~= 32129 then
+if pehdr.NumberOfSections < 5 or (pesecs[1]).SizeOfRawData < 249856 or pehdr.MajorImageVersion ~= 0 or pehdr.MinorImageVersion ~= 0 then
   return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u16)(l_0_0, 8)
-if l_0_2 ~= 5245 then
-  return mp.CLEAN
-end
-local l_0_3 = (mp.readu_u32)(l_0_0, 4)
-if l_0_3 < 16777216 then
-  return mp.CLEAN
-end
-local l_0_4 = (string.byte)(l_0_0, 3)
-local l_0_6 = (string.byte)(l_0_0, 12)
-if (string.byte)(l_0_0, 15) > 2 then
-  return mp.CLEAN
-end
-if l_0_4 ~= l_0_6 then
-  return mp.CLEAN
-end
-l_0_6 = (string.byte)(l_0_0, 18)
-if l_0_4 ~= l_0_6 then
-  return mp.CLEAN
-end
-l_0_6 = (string.byte)(l_0_0, 21)
-if l_0_4 ~= l_0_6 then
-  return mp.CLEAN
-end
-l_0_6 = (string.byte)(l_0_0, 27)
-local l_0_5 = nil
-if l_0_4 ~= l_0_6 then
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+if (mp.getfilesize)() < l_0_0 + 2048 then
   return mp.CLEAN
 end
 ;
-(pe.mmap_patch_va)(pevars.sigaddr, "ÇE")
-return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(l_0_0, 12)
+do
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC62: No list found for R2 , SetList fails
+
+  -- DECOMPILER ERROR at PC63: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC64: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC65: Overwrote pending register: R5 in 'AssignReg'
+
+  for l_0_6 = 88, 77, 67 do
+    -- DECOMPILER ERROR at PC67: Overwrote pending register: R7 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC69: Overwrote pending register: R8 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC70: Overwrote pending register: R9 in 'AssignReg'
+
+    if ((1).byte)(0, 0) ~= l_0_2[l_0_6] then
+      return mp.CLEAN
+    end
+  end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
+end
 

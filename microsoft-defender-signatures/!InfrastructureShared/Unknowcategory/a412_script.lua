@@ -3,20 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not peattributes.hasexports then
+if (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("Excel_LLXLoader") then
-  (mp.set_mpattribute)("Excel_LLXLoader")
+if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
+  return mp.CLEAN
 end
-if not (mp.get_mpattribute)("MpPeekIntoResources") then
-  (mp.set_mpattribute)("MpPeekIntoResources")
+if (hstrlog[10]).hitcount == 0 and (hstrlog[11]).hitcount == 0 and (hstrlog[12]).hitcount == 0 then
+  return mp.CLEAN
 end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if (hstrlog[13]).hitcount == 0 and (hstrlog[14]).hitcount == 0 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

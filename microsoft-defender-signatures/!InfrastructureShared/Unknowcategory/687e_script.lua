@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  (mp.set_mpattribute)("PUA:Block:WizzRemote:Bit")
+if peattributes.isexe and peattributes.hasappendeddata and peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

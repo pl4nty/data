@@ -3,41 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true then
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+local l_0_1 = l_0_0:match("(%w+%.exe)$")
+if l_0_0 == nil or l_0_1 == nil then
   return mp.CLEAN
 end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+local l_0_2 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%"))
+if (l_0_0:find(l_0_2 .. "\\system32", 1, true) or l_0_0:find(l_0_2 .. "\\syswow64", 1, true)) and l_0_1 == "rundll32.exe" then
+  if (this_sigattrlog[4]).matched then
+    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 3153487608)
+  else
+    ;
+    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2865379549)
+  end
+  return mp.INFECTED
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 6 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 1633972782 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 233 then
-  return mp.CLEAN
-end
-if epcode[4] ~= 255 then
-  return mp.CLEAN
-end
-if epcode[5] ~= 255 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)(1024, 1)
-if l_0_0:byte(1) ~= 80 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

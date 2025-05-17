@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_11")
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
-local l_0_2 = (string.byte)(l_0_0, 8)
-local l_0_3 = (mp.readu_u32)(l_0_0, 12)
-local l_0_4 = (mp.readu_u32)(l_0_0, 23)
-local l_0_5 = (pe.get_regval)(pe.REG_EDX)
-local l_0_6 = (mp.ror32)(l_0_5, l_0_2) - (mp.bitxor)(l_0_4, l_0_3) - l_0_1
-;
-(pe.set_regval)(pe.REG_EBX, l_0_6)
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 20480 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 16)
+local l_0_2 = (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true)
+if l_0_2 then
+  (mp.set_mpattribute)("BM_SerializedObj.A")
+  local l_0_3 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+  if (string.find)(l_0_3, "\\local\\microsoft\\event viewer\\", 1, true) then
+    (mp.set_mpattribute)("Lua:FileInsideEventviewFolder")
+  end
+  return mp.INFECTED
+end
+do
+  return mp.CLEAN
+end
 

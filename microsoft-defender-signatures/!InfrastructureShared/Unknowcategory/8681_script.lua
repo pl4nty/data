@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(0, l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-if l_0_1:gsub("%+%$", "") > 20 then
+if (pesecs[pehdr.NumberOfSections]).NameDW == 1163217994 and peattributes.epscn_islast == true then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.changedetectionname)(805306404)
+return mp.INFECTED
 

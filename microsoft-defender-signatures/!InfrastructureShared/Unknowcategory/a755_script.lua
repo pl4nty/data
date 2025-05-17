@@ -3,165 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections < 5 then
-  return mp.CLEAN
-end
-local l_0_0 = {}
-local l_0_1 = {}
-l_0_1.sig = "‹|$\016ƒï\b…Ét\0060\023IO\235"
-l_0_1.xray_type = 11
-l_0_1.bytes_to_decrypt = 0
-local l_0_2 = {}
-l_0_2.sig = "‹|$\016ƒï\006…Ét\0060\023IO\235"
-l_0_2.xray_type = 11
-l_0_2.bytes_to_decrypt = 0
--- DECOMPILER ERROR at PC16: No list found for R0 , SetList fails
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
-l_0_1 = pe
-l_0_1 = l_0_1.xray_block
-l_0_2 = l_0_0
-l_0_1 = l_0_1(l_0_2, 2, 1, 0, 8192)
-l_0_2 = mp
-l_0_2 = l_0_2.INFECTED
-if l_0_1 == l_0_2 then
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  return l_0_2
-end
-l_0_2 = pehdr
-l_0_2 = l_0_2.NumberOfSections
-if l_0_2 >= 5 then
-  l_0_2 = pesecs
-  l_0_2 = l_0_2[5]
-  l_0_2 = l_0_2.VirtualSize
-  if l_0_2 >= 9216 then
-    l_0_2 = pe
-    l_0_2 = l_0_2.xray_block
-    l_0_2 = l_0_2(l_0_0, 2, 4, 6656, 9216)
-    l_0_1 = l_0_2
-    l_0_2 = mp
-    l_0_2 = l_0_2.INFECTED
-    if l_0_1 == l_0_2 then
-      l_0_2 = mp
-      l_0_2 = l_0_2.INFECTED
-      return l_0_2
-    end
-  end
-  l_0_2 = pe
-  l_0_2 = l_0_2.xray_block
-  l_0_2 = l_0_2(l_0_0, 2, 4, 2048, 5120)
-  l_0_1 = l_0_2
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  if l_0_1 == l_0_2 then
-    l_0_2 = mp
-    l_0_2 = l_0_2.INFECTED
-    return l_0_2
-  end
-end
-l_0_2 = pehdr
-l_0_2 = l_0_2.NumberOfSections
-if l_0_2 >= 7 then
-  l_0_2 = pe
-  l_0_2 = l_0_2.xray_block
-  l_0_2 = l_0_2(l_0_0, 2, 2, 0, 1024)
-  l_0_1 = l_0_2
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  if l_0_1 == l_0_2 then
-    l_0_2 = mp
-    l_0_2 = l_0_2.INFECTED
-    return l_0_2
-  end
-  l_0_2 = pe
-  l_0_2 = l_0_2.xray_block
-  l_0_2 = l_0_2(l_0_0, 2, 6, 0, 2048)
-  l_0_1 = l_0_2
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  if l_0_1 == l_0_2 then
-    l_0_2 = mp
-    l_0_2 = l_0_2.INFECTED
-    return l_0_2
-  end
-  l_0_2 = pesecs
-  l_0_2 = l_0_2[7]
-  l_0_2 = l_0_2.VirtualSize
-  if l_0_2 >= 5120 then
-    l_0_2 = pe
-    l_0_2 = l_0_2.xray_block
-    l_0_2 = l_0_2(l_0_0, 2, 6, 4096, 5120)
-    l_0_1 = l_0_2
-    l_0_2 = mp
-    l_0_2 = l_0_2.INFECTED
-    if l_0_1 == l_0_2 then
-      l_0_2 = mp
-      l_0_2 = l_0_2.INFECTED
-      return l_0_2
-    end
-  end
-  l_0_2 = pehdr
-  l_0_2 = l_0_2.NumberOfSections
-  if l_0_2 >= 8 then
-    l_0_2 = pe
-    l_0_2 = l_0_2.xray_block
-    l_0_2 = l_0_2(l_0_0, 2, 7, 0, 1024)
-    l_0_1 = l_0_2
-    l_0_2 = mp
-    l_0_2 = l_0_2.INFECTED
-    if l_0_1 == l_0_2 then
-      l_0_2 = mp
-      l_0_2 = l_0_2.INFECTED
-      return l_0_2
-    end
-    l_0_2 = pesecs
-    l_0_2 = l_0_2[8]
-    l_0_2 = l_0_2.VirtualSize
-    if l_0_2 >= 5120 then
-      l_0_2 = pe
-      l_0_2 = l_0_2.xray_block
-      l_0_2 = l_0_2(l_0_0, 2, 7, 4096, 5120)
-      l_0_1 = l_0_2
-      l_0_2 = mp
-      l_0_2 = l_0_2.INFECTED
-      if l_0_1 == l_0_2 then
-        l_0_2 = mp
-        l_0_2 = l_0_2.INFECTED
-        return l_0_2
-      end
-    end
-  end
-  l_0_2 = pehdr
-  l_0_2 = l_0_2.NumberOfSections
-  if l_0_2 >= 9 then
-    l_0_2 = pesecs
-    l_0_2 = l_0_2[9]
-    l_0_2 = l_0_2.VirtualSize
-    if l_0_2 >= 5120 then
-      l_0_2 = pe
-      l_0_2 = l_0_2.xray_block
-      l_0_2 = l_0_2(l_0_0, 2, 8, 4096, 5120)
-      l_0_1 = l_0_2
-      l_0_2 = mp
-      l_0_2 = l_0_2.INFECTED
-      if l_0_1 == l_0_2 then
-        l_0_2 = mp
-        l_0_2 = l_0_2.INFECTED
-        return l_0_2
-      end
-    end
-  end
-end
-l_0_2 = pe
-l_0_2 = l_0_2.xray_block
-local l_0_3 = l_0_0
-local l_0_4 = 2
-local l_0_5 = 5
-local l_0_6 = 0
 do
-  local l_0_7 = 4096
-  do return l_0_2(l_0_3, l_0_4, l_0_5, l_0_6, l_0_7) end
-  -- DECOMPILER ERROR at PC205: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+  if (this_sigattrlog[20]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11 = nil
+  end
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
 
+  -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC35: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC65: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC75: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC85: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC95: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC105: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC115: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC125: Confused about usage of register: R0 in 'UnsetPending'
+
+  if ((((((((((((string.find)(l_0_0, "disablerealtimemonitoring $true", 1, true) and not (string.find)(l_0_0, "disablebehaviormonitoring $true", 1, true)) or (string.find)(l_0_0, "disableblockatfirstseen $true", 1, true)) and not (string.find)(l_0_0, "disableioavprotection $true", 1, true)) or (string.find)(l_0_0, "disableprivacymode $true", 1, true)) and not (string.find)(l_0_0, "disableintrusionpreventionsystem $true", 1, true)) or (string.find)(l_0_0, "disablescriptscanning $true", 1, true)) and not (string.find)(l_0_0, "severethreatdefaultaction 6", 1, true)) or (string.find)(l_0_0, "lowthreatdefaultaction 6", 1, true)) and not (string.find)(l_0_0, "moderatethreatdefaultaction 6", 1, true)) or (string.find)(l_0_0, "mapsreporting disabled", 1, true)) and not (string.find)(l_0_0, "enablecontrolledfolderaccess disabled", 1, true)) or nil + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 > 2 then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

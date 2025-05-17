@@ -3,18 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = l_0_0.OriginalFilename
-  local l_0_2 = l_0_0.ProductName
-  if l_0_1 == nil or l_0_2 == nil then
-    return mp.CLEAN
-  end
-  if l_0_1 == "SharpExchangeKing.exe" and l_0_2 == "ExchangeKing" then
-    return mp.INFECTED
-  end
+if pehdr.Machine == 332 and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-do
-  return mp.CLEAN
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
+return mp.CLEAN
 

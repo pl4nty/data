@@ -3,35 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched then
+    do return mp.CLEAN end
+    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/replaceremoteprefix [^ ]+ [^ ]+ \\\\localhost\\[^ ]*") ~= nil then
+      return mp.INFECTED
+    else
+      -- DECOMPILER ERROR at PC48: Confused about usage of register: R0 in 'UnsetPending'
+
+      if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/replaceremoteprefix [^ ]+ [^ ]+ \\\\127%.0%.0%.1\\[^ ]*") ~= nil then
+        return mp.INFECTED
+      else
+        -- DECOMPILER ERROR at PC59: Confused about usage of register: R0 in 'UnsetPending'
+
+        if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/replaceremoteprefix [^ ]+ [^ ]+ .:\\[^ ]*") ~= nil then
+          return mp.INFECTED
+        end
+      end
+    end
+    return mp.CLEAN
+  end
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 4 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 0 then
-  return mp.CLEAN
-end
-if peattributes.epscn_islast ~= true then
-  return mp.CLEAN
-end
-if epcode[1] ~= 80 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 83 then
-  return mp.CLEAN
-end
-if epcode[3] <= 224 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

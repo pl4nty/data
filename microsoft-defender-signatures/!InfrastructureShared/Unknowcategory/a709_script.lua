@@ -3,51 +3,47 @@
 
 -- params : ...
 -- function num : 0
-reportwinlogon = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = (string.lower)(l_1_0)
-  for l_1_5 in (string.gmatch)(l_1_1, "[^,]+") do
-    if l_1_5:find("recycle", 1, true) then
-      (mp.ReportLowfi)(l_1_5, 3865603081)
+local l_0_0 = 0
+local l_0_1 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 14, 1), 1)
+if l_0_1 == 129 then
+  l_0_0 = 20
+else
+  if l_0_1 == 131 then
+    l_0_0 = 17
+  else
+    l_0_0 = 24
+  end
+end
+local l_0_2 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 64)
+local l_0_3 = (string.find)(l_0_2, "t", 1, true)
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_0 + l_0_3 - 1, "\235")
+if (string.byte)((pe.mmap_va)(pevars.sigaddr + 9, 1), 1) == 185 then
+  for l_0_7 = 15, l_0_0 + l_0_3 - 1 do
+    (pe.mmap_patch_va)(pevars.sigaddr + l_0_7 - 1, "\144")
+  end
+else
+  do
+    if (string.byte)((pe.mmap_va)(pevars.sigaddr + 9, 1), 1) == 96 then
+      for l_0_11 = (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "a\185", 1, true) + 1, l_0_0 + l_0_3 - 1 do
+        (pe.mmap_patch_va)(pevars.sigaddr + l_0_11 - 1, "\144")
+      end
+      for l_0_15 = 10, (string.find)((pe.mmap_va)(pevars.sigaddr + 9, 32), "a", 1, true) + 9 do
+        (pe.mmap_patch_va)(pevars.sigaddr + l_0_15 - 1, "\144")
+      end
+    else
+      do
+        for l_0_19 = (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "\185", 1, true), l_0_0 + l_0_3 - 1 do
+          (pe.mmap_patch_va)(pevars.sigaddr + l_0_19 - 1, "\144")
+        end
+        do
+          return mp.INFECTED
+        end
+      end
     end
   end
 end
-
-if (this_sigattrlog[1]).matched then
-  (mp.ReportLowfi)((this_sigattrlog[1]).utf8p2, 3865603081)
-end
-if (this_sigattrlog[2]).matched then
-  (mp.ReportLowfi)((this_sigattrlog[2]).utf8p2, 3865603081)
-end
-if (this_sigattrlog[3]).matched then
-  reportwinlogon((this_sigattrlog[3]).utf8p2)
-end
-if (this_sigattrlog[4]).matched then
-  reportwinlogon((this_sigattrlog[4]).utf8p2)
-end
-if (this_sigattrlog[5]).matched then
-  (mp.ReportLowfi)((this_sigattrlog[5]).utf8p2, 3865603081)
-end
-if (this_sigattrlog[6]).matched then
-  (mp.ReportLowfi)((this_sigattrlog[6]).utf8p2, 3865603081)
-end
-if (this_sigattrlog[7]).matched then
-  reportwinlogon((this_sigattrlog[7]).utf8p2)
-end
-if (this_sigattrlog[8]).matched then
-  reportwinlogon((this_sigattrlog[8]).utf8p2)
-end
-if (this_sigattrlog[9]).matched then
-  (mp.ReportLowfi)((this_sigattrlog[9]).utf8p2, 3865603081)
-end
-if (this_sigattrlog[10]).matched then
-  (mp.ReportLowfi)((this_sigattrlog[10]).utf8p2, 3865603081)
-end
-if (this_sigattrlog[11]).matched then
-  reportwinlogon((this_sigattrlog[11]).utf8p2)
-end
-if (this_sigattrlog[12]).matched then
-  reportwinlogon((this_sigattrlog[12]).utf8p2)
-end
-return mp.INFECTED
 

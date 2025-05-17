@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() >= 3145728 then
+if (mp.getfilesize)() <= 20480 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

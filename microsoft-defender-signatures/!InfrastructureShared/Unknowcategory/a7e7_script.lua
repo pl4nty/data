@@ -3,120 +3,59 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 26100
-if (versioning.GetSafeReleaseRing)() == 200 then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_0_INTERNAL, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_0_INTERNAL, 1)
-  ;
-  (database.AddStudyId)("LUA-RR0-OptInV2")
-  return 
+local l_0_0, l_0_1 = nil, nil
+local l_0_2 = nil
+local l_0_3 = nil
+if (bm.get_current_process_startup_info)() == nil or (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) == nil or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon.des", -22, true) then
+  return mp.CLEAN
 end
-if (versioning.GetSafeReleaseRing)() == 1 then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_1_PRERELEASE, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_1_PRERELEASE, 1)
-  ;
-  (database.AddStudyId)("LUA-RR1-OptInV2")
-  return 
-end
-if (versioning.GetSafeReleaseRing)() == 2 then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_2_PREVIEW, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_2_PREVIEW, 1)
-  ;
-  (database.AddStudyId)("LUA-RR2-OptInV2")
-  return 
-end
-if (versioning.GetSafeReleaseRing)() == 3 then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_3_STAGED, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_3_STAGED, 1)
-  ;
-  (database.AddStudyId)("LUA-RR3-OptInV2")
-  return 
-end
-if (versioning.IsBeta)() and (versioning.GetPlatform)() == 6 then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_1_PRERELEASE, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_1_PRERELEASE, 1)
-  ;
-  (database.AddStudyId)("LUA-RR1-BetaV2")
-  return 
-end
-if (versioning.GetPlatform)() == 6 and (versioning.GetOsVersion)() > 393219 and l_0_0 < (versioning.GetOsBuildNumber)() and (MpCommon.IsSampled)(83911080, false, true, true) then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_1_PRERELEASE, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_1_PRERELEASE, 1)
-  ;
-  (database.AddStudyId)("LUA-RR1-InsidersV2")
-  return 
-end
-if (versioning.GetPlatform)() == 6 and (versioning.GetPvpRing)() > 0 and (versioning.GetPvpRing)() < 10000 then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_1_PRERELEASE, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_1_PRERELEASE, 1)
-  ;
-  (database.AddStudyId)("LUA-RR1-SUVPV2")
-  return 
-end
-local l_0_1 = (versioning.GetOfficeConfigRing)()
-if l_0_1 == 0 or l_0_1 == 1 then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_1_PRERELEASE, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_1_PRERELEASE, 1)
-  if l_0_1 == 0 then
-    (database.AddStudyId)("LUA-RR1-OfficeRing0_DogfoodCanary_Selected")
-  else
-    ;
-    (database.AddStudyId)("LUA-RR1-OfficeRing1_DogfoodMain_Selected")
+local l_0_4, l_0_5 = nil
+if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) ~= nil then
+  for l_0_9,l_0_10 in ipairs(R7_PC44) do
+    local l_0_6, l_0_7 = (bm.get_process_relationships)()
+    -- DECOMPILER ERROR at PC46: Confused about usage of register: R10 in 'UnsetPending'
+
+    if R10_PC46.image_path ~= nil and R10_PC46.reason == bm.RELATIONSHIP_INJECTION then
+      if (string.find)((string.lower)(R10_PC46.image_path), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\system32\\mrt.exe", -17, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\asep_inv.exe", -13, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\mpsigstub.exe", -14, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\gameguard\\gamemon.des", -22, true) then
+        return mp.CLEAN
+      end
+      l_0_3 = R10_PC46.ppid
+    end
   end
-  return 
 end
-if (versioning.IsMSFT)() and (versioning.GetPlatform)() == 6 and (MpCommon.IsSampled)(83896080, false, true, true) then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_2_PREVIEW, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_2_PREVIEW, 1)
-  ;
-  (database.AddStudyId)("LUA-RR2-MSFTV2")
-  return 
+do
+  -- DECOMPILER ERROR at PC109: Confused about usage of register: R4 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC112: Confused about usage of register: R4 in 'UnsetPending'
+
+  if l_0_6 ~= nil then
+    for l_0_15,l_0_16 in ipairs(l_0_6) do
+      local l_0_12, l_0_13 = nil
+      -- DECOMPILER ERROR at PC115: Confused about usage of register: R10 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC122: Confused about usage of register: R10 in 'UnsetPending'
+
+      if R10_PC46.image_path ~= nil then
+        l_0_2 = (string.lower)((MpCommon.PathToWin32Path)(R10_PC46.image_path))
+        if (string.find)(l_0_2, "\\mcafee\\systemcore\\mfehcs.exe", -29, true) or (string.find)(l_0_2, "(x86)\\pharossystems\\printscout\\ctskmstr.exe", -43, true) or (string.find)(l_0_2, "(x86)\\hp\\printscout\\ctskmstr.exe", -32, true) or (string.find)(l_0_2, "\\mcafee\\endpoint security\\threat prevention\\mfetp.exe", -53, true) or (string.find)(l_0_2, "\\anti-malware\\mbamservice.exe", -29, true) or (string.find)(l_0_2, "\\cnext\\radeonsoftware.exe", -25, true) or (string.find)(l_0_2, "(x86)\\panda security\\wac\\psanhost.exe", -37, true) or (string.find)(l_0_2, "(x86)\\cloudvolumes\\agent\\svservice.exe", -38, true) or (string.find)(l_0_2, "\\gameguard\\gamemon64.des", -24, true) or (string.find)(l_0_2, "\\gameguard\\gamemon.des", -22, true) or (string.find)(l_0_2, "(x86)\\f-secure\\server security\\", 1, true) then
+          return mp.CLEAN
+        end
+      end
+    end
+  end
+  do
+    if (sysio.IsFileExists)(l_0_2) and not (mp.IsKnownFriendlyFile)(l_0_2, true, false) then
+      (bm.add_related_file)(l_0_2)
+    end
+    if (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, true, false) and l_0_3 ~= nil then
+      (bm.request_SMS)(l_0_3, "h+")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1)
+      ;
+      (bm.add_related_file)(l_0_5)
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-if (versioning.GetPlatform)() == 6 and l_0_0 < (versioning.GetOsBuildNumber)() and (MpCommon.IsSampled)(83936080, false, true, true) then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_2_PREVIEW, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_2_PREVIEW, 1)
-  ;
-  (database.AddStudyId)("LUA-RR2-InsidersV2")
-  return 
-end
-if (versioning.GetPlatform)() == 6 and (MpCommon.IsSampled)(83886580, false, true, true) then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_2_PREVIEW, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_2_PREVIEW, 1)
-  ;
-  (database.AddStudyId)("LUA-RR2-LimitedV2")
-  return 
-end
-local l_0_2 = (MpCommon.IsSampled)(25000, false, true, true)
-if l_0_1 == 5 and l_0_2 then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_2_PREVIEW, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_2_PREVIEW, 1)
-  ;
-  (database.AddStudyId)("LUA-RR2-OfficeRing5_MicrosoftFork_Selected")
-  return 
-end
-if l_0_1 == 5 and not l_0_2 then
-  (database.AddStudyId)("LUA-RR2-OfficeRing5_MicrosoftFork_NotSelected")
-end
-if (versioning.GetPlatform)() == 6 and (MpCommon.IsSampled)(83896080, false, true, true) then
-  (database.LoadDBVar)(database.DBVAR_DW, "MpEngineRing", versioning.ENGINE_RING_3_STAGED, 1)
-  ;
-  (database.LoadDBVar)(database.DBVAR_DW, "MpCampRing", versioning.PLATFORM_RING_3_STAGED, 1)
-  ;
-  (database.AddStudyId)("LUA-RR3-LimitedV2")
-  return 
-end
-;
-(database.AddStudyId)("LUA-RR-NotSelected")
 

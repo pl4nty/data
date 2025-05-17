@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.debug_stripped then
+if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 300000 then
   return mp.INFECTED
 end
 return mp.CLEAN

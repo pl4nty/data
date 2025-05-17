@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  (bm.add_related_file)((this_sigattrlog[3]).utf8p2)
+if ((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched) and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
+  return mp.INFECTED
 end
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-  (bm.add_related_file)((this_sigattrlog[4]).utf8p2)
-end
-return mp.INFECTED
+return mp.CLEAN
 

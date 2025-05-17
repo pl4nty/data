@@ -3,44 +3,33 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_relocs ~= false then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-if peattributes.epscn_writable == false then
+if (mp.ispackedwith)("AutoHotKey_+") then
   return mp.CLEAN
 end
-if peattributes.packed ~= false then
+if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv") then
+  local l_0_0, l_0_1 = nil, nil
+  if (hstrlog[1]).matched then
+    l_0_0 = ((hstrlog[1]).match_offsets)[3]
+    l_0_1 = (hstrlog[1]).VA + l_0_0
+    local l_0_2 = (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1)
+    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 8, 4), 1) ~= 3192604835 then
+      return mp.INFECTED
+    end
+    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 12, 4), 1) ~= 2840226968 then
+      return mp.INFECTED
+    end
+    if (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1) ~= 173231257 then
+      return mp.INFECTED
+    end
+    if (mp.readu_u32)((pe.mmap_va)(l_0_2 + 4, 4), 1) ~= 2101925510 then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasexports == true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).VirtualSize ~= 8192 then
-  return mp.CLEAN
-end
-if (mp.bitand)((pesecs[pevars.epsec]).Characteristics, 2147483648) ~= 2147483648 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections <= 5 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections >= 10 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

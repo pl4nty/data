@@ -3,22 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  if l_0_1 == "svchost.exe" then
-    local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-    if (string.sub)(l_0_2, -17) == "\\application data" or (string.sub)(l_0_2, -16) == "\\appdata\\roaming" then
-      (mp.set_mpattribute)("Lua:SuspDropped_svchost.A")
-      local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_ATTRIBUTES)
-      if (mp.bitand)(l_0_3, 3) ~= 0 then
-        (mp.set_mpattribute)("Lua:SuspDropped_svchost.A!RH")
-      end
-      return mp.INFECTED
-    end
-  end
-end
-do
+if peattributes.no_security == false then
   return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 990000 then
+  return mp.CLEAN
+end
+local l_0_1 = (pe.get_versioninfo)()
+if l_0_1 ~= nil then
+  return mp.CLEAN
+end
+local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+if l_0_3 == "googletalk.exe" and (string.sub)(l_0_2, -28, -1) == "\\appdata\\roaming\\google talk" then
+  return mp.INFECTED
+end
+if l_0_3 == "skype.exe" and (string.sub)(l_0_2, -28, -1) == "\\appdata\\roaming\\skype\\phone" then
+  return mp.INFECTED
+end
+if l_0_3 == "advantage.exe" and (string.sub)(l_0_2, -26, -1) == "\\appdata\\roaming\\advantage" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

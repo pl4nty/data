@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false and (mp.getfilesize)() < 1048576 then
-  return mp.INFECTED
-end
+local l_0_0 = {}
+local l_0_1 = (MpCommon.GetCurrentTimeT)()
+;
+(table.insert)(l_0_0, l_0_1)
+;
+(MpCommon.SetPersistContextNoPath)("TaskSchedMiscTrigger", l_0_0, 3)
 return mp.CLEAN
 

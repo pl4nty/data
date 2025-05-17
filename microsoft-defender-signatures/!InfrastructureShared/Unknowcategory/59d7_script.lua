@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.executable_image and peattributes.amd64_image then
+if mp.HSTR_WEIGHT > 3 and peattributes.ismsil then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

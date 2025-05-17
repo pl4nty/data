@@ -3,24 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.isexe == true and (pesecs[5]).Name == ".reloc" and (pesecs[5]).Characteristics == 1107296320 and (mp.getfilesize)() >= 9000000 and (mp.getfilesize)() <= 15000000 then
+  return mp.INFECTED
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-local l_0_2 = (string.lower)(l_0_1)
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = MpCommon.SetPersistContextNoPath
-local l_0_4 = "DllFromOdbcAction"
-local l_0_5 = {}
--- DECOMPILER ERROR at PC26: No list found for R5 , SetList fails
-
--- DECOMPILER ERROR at PC27: Overwrote pending register: R6 in 'AssignReg'
-
-l_0_3(l_0_4, l_0_5, l_0_2)
-l_0_3 = mp
-l_0_3 = l_0_3.CLEAN
-return l_0_3
+return mp.CLEAN
 

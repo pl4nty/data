@@ -3,52 +3,38 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("lua_codepatch_obfuscatorALG") == false then
+local l_0_0 = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1, l_1_2 = l_1_0:match("(.-)([^\\/]-%.?[^%.\\/]*)$")
+  return l_1_1:lower(), l_1_2:lower()
+end
+
+local l_0_1 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
+if l_0_1 == nil then
+  return mp.CLEAN
+else
+  l_0_1 = (string.lower)(l_0_1)
+end
+if (string.find)(l_0_1, "\\svchost.exe", 1, true) then
   return mp.CLEAN
 end
-local l_0_0 = ((pe.mmap_va)(pevars.sigaddr + 12, 6))
-local l_0_1, l_0_2, l_0_3 = nil, nil, nil
-if (string.byte)(l_0_0, 1) == 116 then
-  l_0_1 = (string.byte)(l_0_0, 2)
-  l_0_2 = pevars.sigaddr + 14
-else
-  l_0_1 = (mp.readu_u32)(l_0_0, 3)
-  l_0_2 = pevars.sigaddr + 18
+if (string.find)(l_0_1, "\\filecoauth.exe", 1, true) then
+  return mp.CLEAN
 end
-if (mp.bitand)(l_0_1, 16777216) ~= 0 then
-  l_0_3 = l_0_2 - (mp.bitxor)(l_0_1, 4294967295) - 1
-else
-  l_0_3 = l_0_1 + (l_0_2)
-end
-local l_0_4 = 0
-local l_0_5 = (pe.mmap_va)(l_0_3, 9)
-while (string.byte)(l_0_5, 1) == 106 do
-  local l_0_6 = (mp.readu_u32)(l_0_5, 6)
-  local l_0_7, l_0_8, l_0_9, l_0_10 = (mp.bsplit)(l_0_6, 8)
-  local l_0_11 = "Å}\f" .. (string.char)(l_0_7, l_0_8, l_0_9, l_0_10) .. "\144\003\004\005t\144\001\001\015Ñê\001\004\144\002`\255u\020\255u\016\255u\f\255u\b\255\021\144\000"
-  local l_0_12 = (pe.vm_search)(pevars.sigaddr - 1024, pevars.sigaddr, l_0_11, nil, pe.VM_SEARCH_BM)
-  if l_0_12 == 4294967295 then
-    return mp.CLEAN
+if (this_sigattrlog[8]).matched and (this_sigattrlog[6]).matched and (this_sigattrlog[8]).utf8p1 ~= nil and (this_sigattrlog[8]).utf8p2 ~= nil and (this_sigattrlog[6]).utf8p2 ~= nil then
+  local l_0_2 = (string.lower)((this_sigattrlog[8]).utf8p1)
+  local l_0_3 = (string.lower)((this_sigattrlog[8]).utf8p2)
+  local l_0_4, l_0_5 = l_0_0(l_0_1)
+  local l_0_6, l_0_7 = l_0_0((this_sigattrlog[6]).utf8p2)
+  local l_0_8, l_0_9 = l_0_0(l_0_2)
+  local l_0_10, l_0_11 = l_0_0(l_0_3)
+  if (string.find)(l_0_2, l_0_4, 1, true) and (string.find)(l_0_3, l_0_6, 1, true) and l_0_9 ~= l_0_11 and (sysio.IsFileExists)(l_0_3) and (mp.IsKnownFriendlyFile)(l_0_3, false, false) == false then
+    (bm.add_related_file)(l_0_3)
   end
-  local l_0_13 = ((pe.mmap_va)(l_0_12 + 7, 6))
-  local l_0_14 = nil
-  if (string.byte)(l_0_13, 1) == 116 then
-    l_0_14 = (string.byte)(l_0_13, 2) + 2
-  else
-    l_0_14 = (mp.readu_u32)(l_0_13, 3) + 6
-  end
-  l_0_4 = l_0_12 + 7 + (l_0_14)
-  l_0_5 = (pe.mmap_va)(l_0_4, 9)
 end
 do
-  if l_0_4 == 0 then
-    return mp.CLEAN
-  end
-  local l_0_15 = l_0_4 - (l_0_3 + 5)
-  local l_0_16, l_0_17, l_0_18, l_0_19 = (mp.bsplit)(l_0_15, 8)
-  local l_0_20 = "\233" .. (string.char)(l_0_16, l_0_17, l_0_18, l_0_19)
   ;
-  (pe.mmap_patch_va)(l_0_3, l_0_20)
+  (bm.trigger_sig_self_propagate)("SuspSlugResinProcessLaunch", "Behavior:Win32/SnailResin.A!dha")
   return mp.INFECTED
 end
 

@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT < 20 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  return mp.LOWFI
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-if pehdr.Subsystem == 1 then
-  (mp.changedetectionname)(805306386)
-else
-  if (hstrlog[4]).matched ~= true then
-    (mp.changedetectionname)(805306397)
-  end
+if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

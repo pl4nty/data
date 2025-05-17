@@ -3,16 +3,18 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    l_0_0 = (string.lower)(l_0_0)
-    if (string.match)(l_0_0, "/s") == nil or (string.match)(l_0_0, "/i") == nil or (string.match)(l_0_0, "\\\\sysvol\\policies") == nil then
-      return mp.CLEAN
-    else
-      return mp.INFECTED
-    end
+(mp.readprotection)(false)
+if (mp.getfilesize)() > 155652 then
+  local l_0_0 = (mp.readfile)(155648, 4)
+  local l_0_1 = (mp.readu_u16)(l_0_0, 1)
+  if l_0_1 == 23117 then
+    (mp.set_mpattribute)("LobaostInfected")
+    return mp.INFECTED
   end
-  return mp.CLEAN
+end
+do
+  ;
+  (mp.set_mpattribute)("LobaostOriginal")
+  return mp.INFECTED
 end
 

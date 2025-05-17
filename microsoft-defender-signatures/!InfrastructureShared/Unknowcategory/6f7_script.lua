@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((mp.getfilename)(), -4)) == ".lnk" then
-  return mp.INFECTED
+Infrastructure_RetliftenScan = function()
+  -- function num : 0_0
+  (MpDetection.ScanResource)("ncfile://%APPDATA%\\netfilter.sys")
 end
-return mp.CLEAN
+
 

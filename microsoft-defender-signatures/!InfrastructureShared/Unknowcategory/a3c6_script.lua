@@ -3,20 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 8 then
+local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+do
+  if l_0_0 ~= nil and (string.find)(l_0_0, "wmic", 1, true) and (string.find)(l_0_0, "\\low\\", 1, true) and (string.find)(l_0_0, ".tmp", 1, true) then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_5,l_0_6 in ipairs(l_0_1) do
+      if (sysio.IsFileExists)(l_0_6) then
+        (bm.add_related_file)(l_0_6)
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if pehdr.SizeOfImage ~= 151552 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(headerpage, 561) ~= 1651336557 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(pehdr.AddressOfEntryPoint), 23)
-if (mp.crc32)(-1, l_0_0, 1, 23) ~= 1267305419 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

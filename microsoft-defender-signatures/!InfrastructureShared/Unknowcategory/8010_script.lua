@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+if ((not (hstrlog[4]).matched or (hstrlog[5]).matched) and not (hstrlog[6]).matched) or 0 + 1 + 1 + 1 >= 2 then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("SLF:Win64/Shelcorid.B")
-return mp.LOWFI
+return mp.CLEAN
 

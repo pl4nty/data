@@ -3,53 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.match)(l_0_0, "excel%.exe\".+\"(.+%.xls[mx]?\"-)")
-  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 and (sysio.IsFileExists)(l_0_1) then
-    (mp.ReportLowfi)(l_0_1, 2118770245)
-    ;
-    (bm.add_related_file)(l_0_1)
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  else
   end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
   do
-    if (this_sigattrlog[2]).matched then
-      local l_0_2 = (this_sigattrlog[2]).utf8p1
-      if l_0_2 ~= nil and (sysio.IsFileExists)(l_0_2) then
-        (mp.ReportLowfi)(l_0_2, 1810820440)
-        ;
-        (bm.add_related_file)(l_0_2)
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+      local l_0_1, l_0_2 = (this_sigattrlog[2]).utf8p2
+    end
+    -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil then
+      local l_0_3 = nil
+      local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+      for l_0_8,l_0_9 in ipairs(l_0_4) do
+        local l_0_5 = {[".xls"] = true, [".doc"] = true, [".ppt"] = true, [".pps"] = true, docx = true, pptx = true, ppsx = true, xlsx = true, [".rtf"] = true, [".xml"] = true, dotx = true, dotm = true, [".odt"] = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, docm = true, xlsm = true, pptm = true}
+        -- DECOMPILER ERROR at PC75: Confused about usage of register: R7 in 'UnsetPending'
+
+        if (string.len)(R7_PC75) > 4 and (sysio.IsFileExists)(R7_PC75) and l_0_5[(string.sub)(R7_PC75, -4)] then
+          (bm.add_related_file)(l_0_10)
+        end
       end
     end
     do
-      if (this_sigattrlog[3]).matched then
-        local l_0_3 = (this_sigattrlog[3]).utf8p1
-        if l_0_3 ~= nil and (sysio.IsFileExists)(l_0_3) then
-          (mp.ReportLowfi)(l_0_3, 3314032788)
-          ;
-          (bm.add_related_file)(l_0_3)
-        end
-      end
-      do
-        if (this_sigattrlog[4]).matched then
-          local l_0_4 = (this_sigattrlog[4]).utf8p1
-          if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
-            (mp.ReportLowfi)(l_0_4, 1967658443)
-            ;
-            (bm.add_related_file)(l_0_4)
-          end
-        end
-        do
-          if (this_sigattrlog[5]).matched then
-            local l_0_5 = (this_sigattrlog[5]).utf8p1
-            if l_0_5 ~= nil and (sysio.IsFileExists)(l_0_5) then
-              (mp.ReportLowfi)(l_0_5, 829931515)
-              ;
-              (bm.add_related_file)(l_0_5)
-            end
-          end
-          return mp.INFECTED
-        end
-      end
+      l_0_4 = mp
+      l_0_4 = l_0_4.INFECTED
+      return l_0_4
     end
   end
 end

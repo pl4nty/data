@@ -3,29 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-if (this_sigattrlog[5]).matched then
-  l_0_2 = (this_sigattrlog[5]).image_path
-else
-  if (this_sigattrlog[6]).matched then
-    l_0_2 = (this_sigattrlog[6]).image_path
-  end
-end
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    if l_0_7.image_path == l_0_2 then
-      local l_0_8, l_0_9 = (string.match)(l_0_7.ppid, "pid:(%w+),ProcessStart:(%w+)")
-      local l_0_10 = tonumber(l_0_8)
-      local l_0_11 = tonumber(l_0_9)
-      local l_0_12, l_0_13 = (mp.bsplit)(l_0_11, 32)
-      local l_0_14 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_10, l_0_12, l_0_13)
-      ;
-      (mp.TriggerScanResource)("ems", l_0_14)
-    end
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 8192 then
   return mp.INFECTED
 end
+local l_0_1 = (mp.GetBruteMatchData)()
+if not l_0_1.is_header then
+  return mp.INFECTED
+end
+;
+(mp.readprotection)(false)
+local l_0_2 = (mp.readfile)(0, l_0_0)
+local l_0_3 = (string.match)(l_0_2, "powershell.exe %-nop %-w hidden %-e ([%w%+/]+=-)")
+if l_0_3 == nil then
+  return mp.INFECTED
+end
+;
+(mp.vfo_add_buffer)(l_0_3, "[PowerShellB64]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+;
+(mp.set_mpattribute)("//SCPT:PowershellNopWHiddenE.Decoded")
+return mp.INFECTED
 

@@ -3,11 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative and peattributes.dirty_wx_branch and peattributes.hstr_exhaustive and peattributes.hasappendeddata then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC8: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (hstrlog[3]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
+  end
+  if (hstrlog[4]).matched then
+    do return mp.CLEAN end
+    local l_0_3 = nil
+    if (mp.readu_u32)((pe.mmap_va)((hstrlog[4]).VA - 4, 4), 1) >= 24576 and (mp.readu_u32)((pe.mmap_va)((hstrlog[4]).VA - 4, 4), 1) < 28672 then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-if not peattributes.suspicious_timestamp and not peattributes.suspicious_image_version then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

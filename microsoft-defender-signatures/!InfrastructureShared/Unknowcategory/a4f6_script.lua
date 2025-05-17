@@ -3,24 +3,38 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("Lua:ZIPExt") and not (mp.get_mpattribute)("RPF:TopLevelFile") then
+if pehdr.NumberOfSections < 5 then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("\\usr\\lib\\system", 1, true) then
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+if (mp.getfilesize)() < l_0_0 + 2048 then
   return mp.CLEAN
 end
-if l_0_0:find("/usr/lib/system", 1, true) then
-  return mp.CLEAN
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(l_0_0, 12)
+do
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC49: No list found for R2 , SetList fails
+
+  -- DECOMPILER ERROR at PC50: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC51: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R5 in 'AssignReg'
+
+  for l_0_6 = 88, 77, 67 do
+    -- DECOMPILER ERROR at PC54: Overwrote pending register: R7 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC56: Overwrote pending register: R8 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC57: Overwrote pending register: R9 in 'AssignReg'
+
+    if ((1).byte)(0, 0) ~= l_0_2[l_0_6] then
+      return mp.CLEAN
+    end
+  end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
 end
-if l_0_0:find("backup", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("recovery", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("restore", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

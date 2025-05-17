@@ -3,22 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//RPF:IS_Pdf") then
-  local l_0_0 = (mp.getfilesize)()
-  if l_0_0 < 20000 then
-    return mp.CLEAN
-  end
-  if l_0_0 > 50000 then
-    return mp.CLEAN
-  end
-  ;
-  (mp.readprotection)(false)
-  local l_0_1 = (mp.readfile)(0, l_0_0)
-  if l_0_1:match("/URI %(http%://usaa%.com%-sec%-inet%-auth%-logon%-ent%-logon%-logon%-") then
-    return mp.INFECTED
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_5,l_0_6 in ipairs(l_0_1) do
+      if (sysio.IsFileExists)(l_0_6) and (string.find)(l_0_6, "regsvr32", 1, true) == nil then
+        (bm.add_related_file)(l_0_6)
+      end
+    end
   end
 end
 do
-  return mp.CLEAN
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

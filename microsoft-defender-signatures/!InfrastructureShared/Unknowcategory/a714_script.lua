@@ -3,41 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  l_0_0 = (string.gsub)(l_0_0, "\\\\", "\\")
-  l_0_1 = (string.gsub)(l_0_1, "\\\\", "\\")
-  if l_0_0 == l_0_1 then
-    local l_0_2 = (string.lower)((bm.get_imagepath)())
-    if l_0_2 then
-      local l_0_3 = {}
-      l_0_3["powershell.exe"] = true
-      l_0_3["wscript.exe"] = true
-      l_0_3["cscript.exe"] = true
-      l_0_3["mshta.exe"] = true
-      l_0_3["cmd.exe"] = true
-      l_0_3["rundll32.exe"] = true
-      l_0_3["regsvr32.exe"] = true
-      l_0_3["msbuild.exe"] = true
-      l_0_3["vbcscompiler.exe"] = true
-      l_0_3["csc.exe"] = true
-      l_0_3["python.exe"] = true
-      l_0_3["pythonw.exe"] = true
-      l_0_3["winword.exe"] = true
-      l_0_3["excel.exe"] = true
-      l_0_3["powerpnt.exe"] = true
-      if l_0_3[(string.match)(l_0_2, "\\([^\\]+)$")] then
-        return mp.INFECTED
-      end
-      if (string.find)(l_0_2, "\\windows\\", 1, true) or (string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "\\scanner\\", 1, true) or (string.find)(l_0_2, "\\chrome", 1, true) or (string.find)(l_0_2, "\\programfiles\\", 1, true) then
-        return mp.CLEAN
-      end
+do
+  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[5]).matched and (hstrlog[6]).matched then
+    local l_0_0 = (hstrlog[7]).matched
+  end
+  do
+    if (((hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or ((hstrlog[17]).matched and (hstrlog[18]).matched and (hstrlog[19]).matched) or (hstrlog[20]).matched or (hstrlog[21]).matched or (hstrlog[22]).matched or (hstrlog[23]).matched or (hstrlog[24]).matched or ((hstrlog[25]).matched and (hstrlog[26]).matched) or ((hstrlog[27]).matched and (hstrlog[28]).matched) or not (hstrlog[29]).matched)) then
+      local l_0_1 = nil
+    end
+    -- DECOMPILER ERROR at PC146: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 and (hstrlog[30]).matched then
+      (mp.changedetectionname)(805306383)
       return mp.INFECTED
     end
+    return mp.CLEAN
   end
-end
-do
-  return mp.CLEAN
 end
 

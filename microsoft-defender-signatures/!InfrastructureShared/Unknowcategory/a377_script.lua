@@ -3,19 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[5]).utf8p2
-local l_0_1 = (this_sigattrlog[5]).utf8p1
-l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
-l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_1))
-if (string.find)(l_0_0, ":\\program ", 1, true) then
+do
+  if peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    end
+    if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+      (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if l_0_1 == nil or (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
-  return mp.CLEAN
-end
-;
-(bm.add_related_file)(l_0_1)
-;
-(bm.add_related_file)(l_0_0)
-return mp.INFECTED
 

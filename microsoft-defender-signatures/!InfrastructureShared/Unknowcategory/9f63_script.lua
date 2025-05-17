@@ -3,21 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).matched then
+if pehdr.NumberOfSections ~= 6 then
   return mp.CLEAN
 end
-if not (this_sigattrlog[2]).matched and not (this_sigattrlog[3]).matched then
+if pehdr.SizeOfImage < 106496 then
   return mp.CLEAN
 end
-local l_0_0 = this_sigattrlog[1]
-do
-  if not (this_sigattrlog[2]).matched or not this_sigattrlog[2] then
-    local l_0_1 = this_sigattrlog[3]
-  end
-  local l_0_2, l_0_3 = , (bm.get_process_relationships)(l_0_0.ppid)
-  if #l_0_0.ppid >= 1 and ((l_0_0.ppid)[1]).ppid == l_0_2.ppid then
-    return mp.INFECTED
-  end
+if pehdr.SizeOfImage > 110592 then
   return mp.CLEAN
 end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if (pesecs[1]).Characteristics ~= 1610612768 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

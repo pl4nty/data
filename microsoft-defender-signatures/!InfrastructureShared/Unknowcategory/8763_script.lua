@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 14, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+if peattributes.isdll and peattributes.hasexports then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

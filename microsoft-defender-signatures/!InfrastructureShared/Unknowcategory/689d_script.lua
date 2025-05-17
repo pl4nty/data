@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 3000000 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.isvbnative and l_0_0 >= 512000 and l_0_0 <= 716800 then
   return mp.INFECTED
 end
 return mp.CLEAN

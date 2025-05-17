@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched) or (not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched) or (hstrlog[7]).matched) then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+if not (string.find)(l_0_0, "^c:\\") and not (string.find)(l_0_0, "^\\\\") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_1.ppid, "M")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1000)
+return mp.INFECTED
 

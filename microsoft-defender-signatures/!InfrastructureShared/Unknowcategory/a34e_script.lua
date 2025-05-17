@@ -6,26 +6,14 @@
 if not peattributes.isdll then
   return mp.CLEAN
 end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-local l_0_0 = {}
-l_0_0.SUUAFindUser = ""
-l_0_0.SUUAGetAttribute = ""
-l_0_0.SUUASetAttribute = ""
-l_0_0.SUUAEnumDirAccess = ""
-local l_0_1 = 0
-local l_0_2, l_0_3 = (pe.get_exports)()
-if l_0_2 < 4 then
-  return mp.CLEAN
-end
-for l_0_7 = 1, l_0_2 do
-  if l_0_0[(pe.mmap_string_rva)((l_0_3[l_0_7]).namerva, 64)] then
-    l_0_1 = l_0_1 + 1
-  end
-end
-if l_0_1 == 4 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EAX), 4)
+local l_0_1 = (string.byte)(l_0_0) - 1
+local l_0_2 = (string.byte)(l_0_0, 3) + 16
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX), (string.char)(l_0_1))
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX) + 2, (string.char)(l_0_2))
+return mp.INFECTED
 

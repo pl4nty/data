@@ -3,104 +3,60 @@
 
 -- params : ...
 -- function num : 0
-getFirstChildPpid = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 == nil then
-    return nil
-  end
-  local l_1_2 = true
-  local l_1_3 = 0
-  if l_1_1 ~= nil or (string.len)(l_1_1) > 0 then
-    l_1_2 = false
-    l_1_3 = (string.len)(l_1_1)
-  end
-  local l_1_4, l_1_5 = (bm.get_process_relationships)(l_1_0)
-  if l_1_5 == nil or #l_1_5 < 1 or #l_1_5 > 4 then
-    return nil
-  end
-  local l_1_6 = nil
-  for l_1_10,l_1_11 in ipairs(l_1_5) do
-    if (mp.bitand)(l_1_11.reason_ex, 1) == 1 and (l_1_2 == true or l_1_3 >= (string.len)(l_1_11.image_path) or (string.sub)(l_1_11.image_path, -l_1_3) == l_1_1) then
-      l_1_6 = l_1_11.ppid
-      break
-    end
-  end
-  do
-    return l_1_6
-  end
-end
-
-local l_0_0, l_0_1 = nil, nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_0 = (this_sigattrlog[1]).ppid
-  l_0_1 = (this_sigattrlog[1]).utf8p2
-else
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    l_0_0 = (this_sigattrlog[2]).ppid
-    l_0_1 = (this_sigattrlog[2]).utf8p2
-  else
-    if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-      l_0_0 = (this_sigattrlog[3]).ppid
-      l_0_1 = (this_sigattrlog[3]).utf8p2
-    end
-  end
-end
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = getFirstChildPpid(l_0_0, "\\cmd.exe")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = getFirstChildPpid(l_0_2, "\\powershell.exe")
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if (this_sigattrlog[6]).matched == false then
-  return mp.CLEAN
-end
-local l_0_4 = (this_sigattrlog[6]).ppid
-if l_0_3 ~= l_0_4 then
-  return mp.CLEAN
-end
-;
-(bm.add_threat_process)(l_0_2)
-;
-(bm.add_threat_process)(l_0_4)
-local l_0_5 = (this_sigattrlog[6]).utf8p1
-if (sysio.IsFileExists)(l_0_5) and (mp.IsKnownFriendlyFile)(l_0_5, true, false) == false then
-  (bm.add_threat_file)(l_0_5)
-end
-local l_0_6 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-local l_0_7 = {}
-l_0_7[".xls"] = true
-l_0_7[".doc"] = true
-l_0_7[".ppt"] = true
-l_0_7[".pps"] = true
-l_0_7.docx = true
-l_0_7.pptx = true
-l_0_7.ppsx = true
-l_0_7.xlsx = true
-l_0_7[".rtf"] = true
-l_0_7[".xml"] = true
-l_0_7.dotx = true
-l_0_7.dotm = true
-l_0_7[".odt"] = true
-l_0_7.xlsb = true
-l_0_7.xltx = true
-l_0_7.xltm = true
-l_0_7.xlam = true
-l_0_7[".xla"] = true
-l_0_7.docm = true
-l_0_7.xlsm = true
-l_0_7.pptm = true
-for l_0_11,l_0_12 in ipairs(l_0_6) do
-  if (string.len)(l_0_12) > 4 and (sysio.IsFileExists)(l_0_12) then
-    local l_0_13 = (string.sub)(l_0_12, -4)
-    if l_0_7[l_0_13] and (mp.IsKnownFriendlyFile)(l_0_12, true, false) == false then
-      (bm.add_threat_file)(l_0_12)
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  if l_0_1:match("([^\\]+)$") == "fodhelper.exe" or l_0_1:match("([^\\]+)$") == "computerdefaults.exe" or l_0_1:match("([^\\]+)$") == "wsreset.exe" or l_0_1:match("([^\\]+)$") == "slui.exe" or l_0_1:match("([^\\]+)$") == "changepk.exe" or l_0_1:match("([^\\]+)$") == "control.exe" or l_0_1:match("([^\\]+)$") == "compmgmtlauncher.exe" then
+    local l_0_2 = true
+    if l_0_1:match("([^\\]+)$") == "control.exe" then
+      if (MpCommon.GetPersistContextCountNoPath)("UACBypassExp.A!sdclt") == 0 then
+        return mp.CLEAN
+      end
+      local l_0_3 = (MpCommon.GetPersistContextNoPath)("UACBypassExp.A!sdclt")
+      if l_0_3 then
+        local l_0_4 = l_0_0.ppid
+        local l_0_5 = false
+        for l_0_9,l_0_10 in ipairs(l_0_3) do
+          if l_0_10 == l_0_4 then
+            l_0_5 = true
+            break
+          end
+        end
+        do
+          do
+            if l_0_5 == false then
+              l_0_2 = false
+            end
+            if l_0_2 == false then
+              return mp.CLEAN
+            end
+            if (MpCommon.GetPersistContextCountNoPath)("UACBypassExp.T!ShieldUp") > 0 then
+              local l_0_11 = (MpCommon.GetPersistContextNoPath)("UACBypassExp.T!ShieldUp")
+              if l_0_11 then
+                local l_0_12 = (mp.GetScannedPPID)()
+                local l_0_13 = (string.lower)((mp.GetProcessCommandLine)(l_0_12))
+                local l_0_14 = (string.match)(l_0_13, "^(.-)%s+")
+                l_0_14 = l_0_14:gsub("%.exe$", "")
+                for l_0_18,l_0_19 in ipairs(l_0_11) do
+                  l_0_19 = (string.lower)(l_0_19)
+                  if (string.find)(l_0_19, l_0_14, 1, true) then
+                    return mp.INFECTED
+                  end
+                  if (string.len)(l_0_19) > 8 and ((string.find)(l_0_19, ".bat", 1, true) or (string.find)(l_0_19, ".cmd", 1, true) or (string.find)(l_0_19, ".js", 1, true) or (string.find)(l_0_19, ".vbs", 1, true) or (string.find)(l_0_19, ".wsf", 1, true)) and (string.find)(l_0_13, l_0_19, 1, true) then
+                    return mp.INFECTED
+                  end
+                end
+              end
+            end
+            do
+              l_0_1 = mp
+              l_0_1 = l_0_1.CLEAN
+              return l_0_1
+            end
+          end
+        end
+      end
     end
   end
 end
-return mp.INFECTED
 

@@ -3,74 +3,40 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 100000000 then
-  return mp.CLEAN
-end
-local l_0_0 = nil
-if (this_sigattrlog[5]).matched then
-  l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
-else
-  if (this_sigattrlog[6]).matched then
-    l_0_0 = (string.lower)((this_sigattrlog[6]).utf8p2)
-  else
-    if (this_sigattrlog[7]).matched then
-      l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p2)
-    else
-      if (this_sigattrlog[8]).matched then
-        l_0_0 = (string.lower)((this_sigattrlog[8]).utf8p2)
-      else
-        if (this_sigattrlog[9]).matched then
-          l_0_0 = (string.lower)((this_sigattrlog[9]).utf8p2)
-        else
-          if (this_sigattrlog[10]).matched then
-            l_0_0 = (string.lower)((this_sigattrlog[10]).utf8p2)
-          end
-        end
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1, l_0_2 = (bm.get_process_relationships)()
+if l_0_1 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_1) do
+    if l_0_7.image_path ~= nil and l_0_7.reason == bm.RELATIONSHIP_INJECTION then
+      local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_7.image_path))
+      if (string.find)(l_0_8, "\\comodo internet security\\cavwp.exe", -35, true) or (string.find)(l_0_8, "\\hummingheads\\securityplatform\\bkhost.exe", -41, true) then
+        return mp.CLEAN
       end
     end
   end
 end
-if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-  if (string.find)(l_0_0, "sqlite.dll", 1, true) or (string.find)(l_0_0, "axhub.dll", 1, true) or (string.find)(l_0_0, ".ocx", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-  if l_0_1 ~= nil then
-    for l_0_5,l_0_6 in ipairs(l_0_1) do
-      l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-      ;
-      (bm.add_related_file)(l_0_6)
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6))
-      if l_0_7 == nil then
-        return mp.CLEAN
-      end
-      local l_0_8 = (MpCommon.QueryPersistContext)(l_0_7, "NewPECreatedNoCert")
-      if not l_0_8 then
-        return mp.CLEAN
-      end
-      if (mp.IsKnownFriendlyFile)(l_0_7, true, false) == true then
-        return mp.CLEAN
-      end
-      local l_0_9 = (sysio.GetFileLastWriteTime)(l_0_7)
-      if ((sysio.GetLastResult)()).Success and l_0_9 ~= 0 then
-        l_0_9 = l_0_9 / 10000000 - 11644473600
-        local l_0_10 = (MpCommon.GetCurrentTimeT)()
-        if l_0_10 < l_0_9 or l_0_10 - (l_0_9) > 600 then
+do
+  if l_0_2 ~= nil then
+    for l_0_12,l_0_13 in ipairs(l_0_2) do
+      if l_0_13.image_path ~= nil and l_0_13.reason == bm.RELATIONSHIP_INJECTION then
+        local l_0_14 = (string.lower)((MpCommon.PathToWin32Path)(l_0_13.image_path))
+        if (string.find)(l_0_14, "\\acrord32.exe", -13, true) or (string.find)(l_0_14, "\\adobearm.exe", -13, true) or (string.find)(l_0_14, "\\comodo internet security\\cavwp.exe", -35, true) or (string.find)(l_0_14, "\\acrobat reader dc\\reader\\reader_sl.exe", -39, true) or (string.find)(l_0_14, "\\hummingheads\\securityplatform\\bkhost.exe", -41, true) or (string.find)(l_0_14, "\\rdrcef.exe", -11, true) then
           return mp.CLEAN
         end
-        return mp.INFECTED
-      end
-      do
-        do
-          do return mp.CLEAN end
-          -- DECOMPILER ERROR at PC207: LeaveBlock: unexpected jumping out DO_STMT
-
+        local l_0_15 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_13.ppid)
+        if l_0_0.integrity_level < l_0_15.IntegrityLevel then
+          (bm.request_SMS)(l_0_13.ppid, "l+")
+          ;
+          (bm.add_action)("SmsAsyncScanEvent", 1)
+          ;
+          (bm.trigger_sig)("Arya", "Acrord32")
+          return mp.INFECTED
         end
       end
     end
   end
+  do
+    return mp.CLEAN
+  end
 end
-l_0_1 = mp
-l_0_1 = l_0_1.CLEAN
-return l_0_1
 

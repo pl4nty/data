@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true then
-  (mp.set_mpattribute)("LoD:VBStudyExpensiveLoops")
+if (versioning.GetProduct)() == 13 then
+  (mp.set_mpattribute)("/IsMSRTProduct")
 end
 return mp.CLEAN
 

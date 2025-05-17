@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
+if peattributes.is_process then
+  return mp.CLEAN
+end
 do
-  if (mp.get_mpattribute)("pea_amd64_image") and (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() < 65536 then
+  if peattributes.isexe == true and pehdr.NumberOfSections == 7 then
     local l_0_0 = (mp.GetCertificateInfo)()
     for l_0_4,l_0_5 in pairs(l_0_0) do
       if l_0_5.Signers ~= nil then

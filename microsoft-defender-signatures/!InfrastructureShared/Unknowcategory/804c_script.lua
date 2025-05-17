@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 4 and (pesecs[4]).SizeOfRawData == 75776 and (pesecs[4]).PointerToRawData == 91648 then
-  return mp.INFECTED
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 153600 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

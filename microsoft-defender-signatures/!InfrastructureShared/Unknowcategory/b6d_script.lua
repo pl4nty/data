@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Imali")
+(mp.set_mpattribute)("PUA:Block:IObit")
 return mp.INFECTED
 

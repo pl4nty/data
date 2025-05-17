@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1, l_0_2 = nil, nil, nil
-local l_0_3 = nil
-if ((string.lower)((bm.get_imagepath)())):find("explorer.exe") then
-  l_0_3 = (string.match)((this_sigattrlog[1]).utf8p2, ".exe")
-  if l_0_3 ~= nil then
-    l_0_3 = (this_sigattrlog[1]).utf8p2
-    if l_0_3 == (this_sigattrlog[2]).utf8p2 and l_0_3 == (this_sigattrlog[3]).utf8p1 then
-      return mp.INFECTED
-    end
-  end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -19) == "\\browser_broker.exe" or (string.sub)(l_0_0, -13) == "\\explorer.exe" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

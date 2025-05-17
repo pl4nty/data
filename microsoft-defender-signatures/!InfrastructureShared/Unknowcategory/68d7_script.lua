@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:DelphiFile") and peattributes.isdll then
+if peattributes.isexe and peattributes.amd64_image and peattributes.debug_stripped then
   return mp.INFECTED
 end
 return mp.CLEAN

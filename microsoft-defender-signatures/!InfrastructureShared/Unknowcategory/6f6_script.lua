@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_RetliftenScan = function()
-  -- function num : 0_0
-  (MpDetection.ScanResource)("ncfile://%APPDATA%\\netfilter.sys")
+if #(mp.enum_mpattributesubstring)("SCPT:LogduckbillA") >= 2 then
+  return mp.INFECTED
 end
-
+return mp.CLEAN
 

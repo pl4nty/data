@@ -3,29 +3,41 @@
 
 -- params : ...
 -- function num : 0
-if ((pehdr.DataDirectory)[5]).RVA <= 0 then
+-- DECOMPILER ERROR at PC21: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p2 ~= nil and (this_sigattrlog[10]).ppid ~= nil then
+    local l_0_0, l_0_1, l_0_3, l_0_4 = nil, nil
+    l_0_3 = MpCommon
+    l_0_3 = l_0_3.GetProcessElevationAndIntegrityLevel
+    l_0_4 = this_sigattrlog
+    l_0_4 = l_0_4[10]
+    l_0_4 = l_0_4.ppid
+    l_0_3 = l_0_3(l_0_4)
+    l_0_1 = l_0_3
+    local l_0_2 = nil
+  end
+  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC34: Confused about usage of register: R1 in 'UnsetPending'
+
+  if l_0_0 == nil or #l_0_0 <= 20 or l_0_1 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC39: Confused about usage of register: R1 in 'UnsetPending'
+
+  if l_0_1.IntegrityLevel < MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (string.find)(l_0_0, "-enc", 1, true) ~= nil or (string.find)(l_0_0, ".downloadstring(", 1, true) ~= nil then
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[5]).Size <= 0 then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() <= ((pehdr.DataDirectory)[5]).RVA then
-  return mp.INFECTED
-end
-;
-(mp.readprotection)(false)
-if (mp.getfilesize)() <= ((pehdr.DataDirectory)[5]).RVA + 9 then
-  return mp.INFECTED
-end
-local l_0_0 = (mp.readfile)(((pehdr.DataDirectory)[5]).RVA, 9)
-if (mp.readu_u32)(l_0_0, 5) ~= 131584 then
-  return mp.CLEAN
-end
-if l_0_0:byte(9) ~= 48 then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() < ((pehdr.DataDirectory)[5]).RVA + ((pehdr.DataDirectory)[5]).Size then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

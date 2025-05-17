@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
+    local l_0_1 = {}
+    l_0_1["winword.exe"] = true
+    l_0_1["powerpnt.exe"] = true
+    l_0_1["excel.exe"] = true
+    if l_0_1[(string.lower)((l_0_0.image_path):match("([^\\]+)$"))] then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_istuni")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_istuni")
-end
-return mp.CLEAN
 

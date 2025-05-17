@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("PACKED_WITH:(EncScript)") then
+if pehdr.NumberOfSections >= 10 then
   return mp.CLEAN
 end
-if (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true) ~= 0 or not "Lua:SingleFileInZip" then
-  return mp.CLEAN
+for l_0_3 = 1, pehdr.NumberOfSections do
+  if (pesecs[l_0_3]).Name == "UPX0" or (pesecs[l_0_3]).Name == "UPX1" then
+    return mp.INFECTED
+  end
 end
-return mp.INFECTED
+return mp.CLEAN
 

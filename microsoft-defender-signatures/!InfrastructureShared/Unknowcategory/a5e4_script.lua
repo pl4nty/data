@@ -3,25 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_7.ppid)
-    if l_0_0.integrity_level < l_0_8.IntegrityLevel then
-      local l_0_9 = (string.lower)(l_0_7.image_path)
-      if (string.find)(l_0_9, "\\system32\\mrt.exe", -17, true) or (string.find)(l_0_9, "\\asep_inv.exe", -13, true) or (string.find)(l_0_9, "\\mpsigstub.exe", -14, true) then
-        return mp.CLEAN
-      end
-      ;
-      (bm.request_SMS)(l_0_7.ppid, "h+")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1)
-      return mp.INFECTED
-    end
-  end
-end
-do
+if peattributes.hasstandardentry == true or peattributes.isdll == false or peattributes.hasexports == false or pehdr.SizeOfImage >= 393216 then
   return mp.CLEAN
 end
+if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or not (hstrlog[8]).matched) and (hstrlog[10]).matched) or (hstrlog[7]).matched) and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) + ((hstrlog[12]).matched and 1 or 0) >= 2 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

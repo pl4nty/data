@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.hasappendeddata and peattributes.has_msilresources then
+if (mp.get_mpattribute)("BM_MpIsInstaller") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

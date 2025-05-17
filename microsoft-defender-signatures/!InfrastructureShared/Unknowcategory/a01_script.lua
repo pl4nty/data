@@ -3,135 +3,44 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil
-if mp.HEADERPAGE_SZ < 1024 then
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 1) ~= 561144146 then
-  return mp.CLEAN
-end
-if (mp.readu_u16)(headerpage, 5) ~= 1818 then
-  return mp.CLEAN
-end
-local l_0_6 = nil
--- DECOMPILER ERROR at PC86: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC86: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC86: Unhandled construct in 'MakeBoolean' P3
-
-if (((mp.get_mpattribute)("Lua:RarHasFileNameWithPassword") or (mp.get_mpattribute)("Lua:RarHasEncryptedFile") or (mp.get_mpattribute)("Lua:RarHasStoredFileWithExeExtension")) and (mp.get_mpattribute)("RPF:TopLevelFile")) or (mp.get_mpattribute)("Lua:RarHasFileWithExeExtension") and (mp.getfilesize)() < 100000 and (mp.getfilesize)() > 512 and (mp.get_mpattribute)("RPF:TopLevelFile") then
-  (mp.readprotection)(false)
-  local l_0_7 = nil
-  while 1 do
-    -- DECOMPILER ERROR at PC96: Confused about usage of register: R4 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC100: Confused about usage of register: R5 in 'UnsetPending'
-
-    if 0 < 10 and 7 ~= 0 then
-      do
-        local l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13 = , (function(l_1_0, l_1_1)
-  -- function num : 0_0 , upvalues : l_0_5, l_0_1
-  if l_1_1 < l_1_0 + 7 then
-    return 0
-  end
-  local l_1_2 = (mp.readfile)(l_1_0, 7)
-  local l_1_3 = (string.byte)(l_1_2, 3)
-  local l_1_4 = (mp.readu_u16)(l_1_2, 6)
-  local l_1_5 = 0
-  if l_1_3 == 122 and l_1_0 + 48 < l_1_1 then
-    l_1_2 = (mp.readfile)(l_1_0, 48)
-    l_1_5 = (mp.readu_u32)(l_1_2, 8)
-    if (string.byte)(l_1_2, 27) == 3 and (string.sub)(l_1_2, 33, 35) == "CMT" then
-      (mp.set_mpattribute)("Lua:RarHasCommentBlock")
-    end
+local l_0_3 = l_0_2:len()
+if l_0_1:find("\\appdata\\locallow\\{........%-....%-....%-....%-............}") ~= nil then
+  if l_0_2 == "migsetup.exe" then
+    (mp.set_mpattribute)("Lua:BedepFileName.A")
   else
-    if l_1_3 == 116 and l_1_0 + 48 < l_1_1 then
-      l_0_5 = l_0_5 + 1
-      l_1_2 = (mp.readfile)(l_1_0, 48)
-      l_1_5 = (mp.readu_u32)(l_1_2, 8)
-      if (string.byte)(l_1_2, 26) == 48 then
-        (mp.set_mpattribute)("Lua:RarHasStoredFile")
-      end
-      local l_1_6 = (mp.readu_u16)(l_1_2, 4)
-      if (mp.bitand)(l_1_6, 4) == 4 then
-        (mp.set_mpattribute)("Lua:RarHasEncryptedFile")
-      end
-      local l_1_7 = (mp.readu_u16)(l_1_2, 27)
-      if l_1_7 > 4 and l_1_7 < 288 then
-        do
-          if (mp.bitand)(l_1_6, 256) == 256 then
-            local l_1_8, l_1_9 = 32 + 8
-          end
-          -- DECOMPILER ERROR at PC123: Confused about usage of register: R8 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC129: Confused about usage of register: R8 in 'UnsetPending'
-
-          if l_1_0 + l_1_8 + l_1_7 < l_1_1 then
-            local l_1_10 = nil
-            if (l_1_7 > 8 and l_1_7 < 64 and ((mp.readfile)(l_1_0 + l_1_8, l_1_7)):find("[Pp][Aa][Ss][Ss][Ww][Oo][Rr][Dd]")) or l_1_7 > 8 and l_1_7 < 64 and ((mp.readfile)(l_1_0 + l_1_8, l_1_7)):find("[Tt][Oo] [Oo][Pp][Ee][Nn]") then
-              (mp.set_mpattribute)("Lua:RarHasFileNameWithPassword")
-            end
-            if ((mp.readfile)(l_1_0 + l_1_8, l_1_7) == "to open enter 1234" and l_1_5 == 1) or (mp.readfile)(l_1_0 + l_1_8, l_1_7) == "1 2 3 4" and l_1_5 == 1 then
-              (mp.set_mpattribute)("Lua:RarHasMizenotaPWFile")
-            end
-            local l_1_11 = nil
-            local l_1_12 = {[".bat"] = "", [".cmd"] = "", [".com"] = "", [".cpl"] = "", [".exe"] = "", [".pif"] = "", [".scr"] = "", [".vbs"] = "", [".lnk"] = "", [".wsf"] = "", [".vbe"] = "", [".jse"] = "", [".hta"] = "", [".js"] = ""}
-            if l_1_12[(string.sub)(l_1_11, -4)] or l_1_12[(string.sub)(l_1_11, -3)] then
-              (mp.set_mpattribute)("Lua:RarHasFileWithExeExtension")
-              l_0_1 = l_0_1 + 1
-              if (mp.bitand)(l_1_6, 4) == 4 then
-                (mp.set_mpattribute)("Lua:RarHasEncryptedFileWithExeExtension")
-              end
-              if (string.byte)(l_1_2, 26) == 48 then
-                (mp.set_mpattribute)("Lua:RarHasStoredFileWithExeExtension")
-              end
-            end
-          end
-          do
-            if l_1_3 ~= 115 then
-              return 0
-            end
-            return l_1_0 + l_1_4 + l_1_5
-          end
-        end
+    if l_0_2 == "cryptbase.dll" then
+      (mp.set_mpattribute)("Lua:BedepFileName.B")
+    else
+      if (string.sub)(l_0_2, 1, 7) == "api-ms-" then
+        (mp.set_mpattribute)("Lua:BedepFileName.C")
       end
     end
   end
-end
-)(7, (mp.getfilesize)()), 0 + 1
-        -- DECOMPILER ERROR at PC101: LeaveBlock: unexpected jumping out IF_THEN_STMT
+else
+  -- DECOMPILER ERROR at PC230: Unhandled construct in 'MakeBoolean' P1
 
-        -- DECOMPILER ERROR at PC101: LeaveBlock: unexpected jumping out IF_STMT
-
-      end
-    end
-  end
-  if l_0_6 == 1 and l_0_7 == 1 then
-    if (mp.get_mpattribute)("RPF:AnyFileHasIOAVURL") then
-      if (mp.get_mpattribute)("Lua:RarHasStoredFileWithExeExtension") then
-        (mp.set_mpattribute)("Lua:RarHasSingleStoredFileWithExeExtension")
-        ;
-        (mp.set_mpattribute)("//Lua:GIOAVTopLevelRarHasSingleStoredFileWithExeExtension")
-      else
-        ;
-        (mp.set_mpattribute)("//Lua:GIOAVTopLevelRarHasSingleFileWithExeExtension")
-      end
-    end
-    ;
-    (mp.set_mpattribute)("Lua:RarHasSingleFileWithExeExtension")
-  end
-  if l_0_6 == 1 then
-    (mp.set_mpattribute)("Lua:SingleFileInRar")
-    ;
-    (mp.UfsSetMetadataBool)("Lua:SingleFileInRar", true)
+  if (l_0_1:find("\\programdata\\{9a88e103-a20a-4ea5-8636-c73b709a5bf8}", 1, true) ~= nil or l_0_1:find("\\programdata\\{f66cb4ee-546f-4d54-9332-216de189aab0}", 1, true) ~= nil or l_0_1:find("\\programdata\\{698e0848-6d29-4305-80dc-e8d609260ce2}", 1, true) ~= nil or l_0_1:find("\\programdata\\{49a0bac7-3326-4433-9373-4aa8793abb5c}", 1, true) ~= nil or l_0_1:find("\\programdata\\{effc3e07-aed7-4c3c-992f-2c5eb14af4a8}", 1, true) ~= nil or l_0_1:find("\\programdata\\{d9e629dc-cb1c-4a97-9900-81922b4effd4}", 1, true) ~= nil or l_0_1:find("\\programdata\\{ca2facf7-9029-4a21-892b-e7f60b39ff1a}", 1, true) ~= nil or l_0_1:find("\\programdata\\{4ba6ab29-2eab-46fc-8b33-a767b5dbb0f3}", 1, true) ~= nil or l_0_1:find("\\application data\\{4d03d701-c800-49f0-8590-127eff2877ff}", 1, true) ~= nil or l_0_1:find("\\programdata\\{9b82496a-c211-4fcf-84b5-e2b3a1d99f8f}", 1, true) ~= nil or l_0_1:find("\\programdata\\{d93bcbeb-07b6-4fa0-86bf-5552dfc4404c}", 1, true) ~= nil or l_0_1:find("\\programdata\\{65ee3202-cce0-4ec4-9369-0a126e1da09c}", 1, true) ~= nil or l_0_1:find("\\programdata\\{b7a719fb-068f-41ad-8261-3569c22edec2}", 1, true) ~= nil or l_0_1:find("\\programdata\\{18067bd7-3c56-4e2e-8627-51ee9adc5a30}", 1, true) ~= nil or l_0_1:find("\\programdata\\{1016e27d-c6ce-4668-9211-5ec18caadbf8}", 1, true) ~= nil or l_0_1:find("\\programdata\\{39567fd8-2a86-4514-8b0a-406c6e60a8bb}", 1, true) ~= nil or l_0_1:find("\\programdata\\{9925001e-4d97-434f-8579-2e06af34678f}", 1, true) ~= nil or l_0_1:find("\\programdata\\{0bf6ab17-0058-462c-8274-0655b925c812}", 1, true) ~= nil or l_0_1:find("\\programdata\\{a4682c3b-ab83-49b3-8eb5-b44e3f044b59}", 1, true) ~= nil or l_0_1:find("\\programdata\\{0a41da87-d172-4c26-9422-d2c4f5549861}", 1, true) ~= nil or l_0_1:find("\\programdata\\{2cd18189-70a0-4ae9-899e-05bad272e52e}", 1, true) ~= nil or l_0_1:find("\\programdata\\{33896b39-667b-48e5-8c29-b02174b09d04}", 1, true) ~= nil or l_0_1:find("\\programdata\\{2f752dac-f812-4497-9e91-d8701a4745cb}", 1, true) ~= nil or l_0_1:find("\\programdata\\{9cad18b2-ff9b-4cca-8ee0-a4cda3ad5f51}", 1, true) ~= nil) and l_0_3 > 4 and (string.sub)(l_0_2, -4) == ".dll" then
+    (mp.set_mpattribute)("Lua:BedepFileName.D")
   end
 end
 do
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC149: freeLocal<0 in 'ReleaseLocals'
-
+  if l_0_1:find("\\programdata\\{........%-....%-....%-....%-............}\\$") ~= nil and l_0_3 > 4 and (string.sub)(l_0_2, -4) == ".dll" then
+    local l_0_4, l_0_5 = pcall(mp.get_parent_filehandle)
+    if l_0_4 then
+      l_0_4 = pcall(mp.get_filesize_by_handle, l_0_5)
+    end
+    if not l_0_4 then
+      (mp.set_mpattribute)("Lua:BedepFileName.E")
+    end
   end
+  if l_0_2 == "spinstall.exewdscore.dll" then
+    (mp.set_mpattribute)("Lua:BedepFileName.F")
+  end
+  return mp.CLEAN
 end
 

@@ -3,9 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "tiworker.exe", 1, true) or (string.find)(l_0_0, "trustedinstaller.exe", 1, true) then
-  return mp.CLEAN
+local l_0_0, l_0_1, l_0_2 = nil, nil, nil
+local l_0_3 = nil
+if ((string.lower)((bm.get_imagepath)())):find("explorer.exe") then
+  l_0_3 = (string.match)((this_sigattrlog[1]).utf8p2, ".exe")
+  if l_0_3 ~= nil then
+    l_0_3 = (this_sigattrlog[1]).utf8p2
+    if l_0_3 == (this_sigattrlog[2]).utf8p2 and l_0_3 == (this_sigattrlog[3]).utf8p1 then
+      return mp.INFECTED
+    end
+  end
 end
-return mp.INFECTED
+return mp.CLEAN
 

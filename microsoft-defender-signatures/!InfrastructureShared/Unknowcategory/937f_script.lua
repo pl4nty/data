@@ -3,16 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (mp.getfilesize)() > 1000000 and (mp.getfilesize)() < 11000000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)(15437, 4)
+if (mp.readu_u32)(l_0_0, 1) == 4018468997 and l_0_0 ~= "ÆÐÔÇÖÝ›ÛÔØÐÄÀÐÇÌ›ÖÚØ" then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

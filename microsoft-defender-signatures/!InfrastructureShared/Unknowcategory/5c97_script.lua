@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.get_versioninfo)()).CompanyName == "Microsoft Corporation" then
+if peattributes.isexe and pehdr.ImageBase == 675807232 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 21, 4), 1) > 40960 then
-  return mp.INFECTED
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((bm.get_current_process_startup_info)()).integrity_level then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 65536 then
+if peattributes.isexe == true and (mp.get_mpattribute)("SIGATTR:Trojan:Win64/KillWin.AAE") then
   return mp.INFECTED
 end
 return mp.CLEAN

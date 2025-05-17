@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
+if pevars.epsec ~= 1 and pehdr.NumberOfSections == 10 and (pesecs[1]).NameDW == 1701995822 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -6,7 +6,7 @@
 if (mp.getfilesize)() > 1048576 then
   return mp.CLEAN
 end
-if #(mp.enum_mpattributesubstring)("SCPT:BelmontL") >= 4 then
+if #(mp.enum_mpattributesubstring)("SCPT:BelmontK") >= 3 then
   return mp.INFECTED
 else
   return mp.CLEAN

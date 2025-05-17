@@ -3,20 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if peattributes.ismsil == true and l_0_0 < 20480 then
-    local l_0_1 = (pe.get_versioninfo)()
-    -- DECOMPILER ERROR at PC46: Unhandled construct in 'MakeBoolean' P3
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC46: Unhandled construct in 'MakeBoolean' P3
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC46: Unhandled construct in 'MakeBoolean' P3
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC18: Confused about usage of register: R6 in 'UnsetPending'
 
-    if (l_0_1.OriginalFilename ~= nil and l_0_1.OriginalFilename == "WindowsApp.exe") or l_0_1.InternalName == nil or l_0_1.CompanyName == nil or l_0_1.FileDescription == nil or l_0_1.ProductName ~= nil and l_0_1.ProductName == "WindowsApp" then
-      return mp.INFECTED
+      if (R6_PC18:len() < 9 or (string.lower)((string.sub)(R6_PC18, -9)) ~= "mshta.exe") and (sysio.IsFileExists)(R6_PC18) then
+        (bm.add_related_file)(R6_PC18)
+      end
     end
   end
-  return mp.CLEAN
+  do
+    return mp.INFECTED
+  end
 end
 

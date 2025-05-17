@@ -3,35 +3,42 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 15000 or l_0_0 > 18000 then
-  return mp.CLEAN
+do
+  if (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or (hstrlog[17]).matched or (hstrlog[18]).matched or (hstrlog[19]).matched then
+    local l_0_0, l_0_1 = 0 + 1
+  end
+  -- DECOMPILER ERROR at PC51: Confused about usage of register: R0 in 'UnsetPending'
+
+  if mp.HSTR_WEIGHT == 1 then
+    if l_0_0 == 1 then
+      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ALT1")
+      return mp.CLEAN
+    end
+    ;
+    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ALT2")
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC117: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if (hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched then
+      local l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = l_0_0 + 1
+    end
+    -- DECOMPILER ERROR at PC118: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_2 == 2 then
+      if not (mp.get_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.3") then
+        (pe.set_peattribute)("disable_apicall_limit", true)
+        ;
+        (mp.set_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.3")
+        ;
+        (pe.reemulate)()
+      end
+      return mp.INFECTED
+    end
+    ;
+    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ALT3")
+    return mp.CLEAN
+  end
 end
-local l_0_1 = 0
-;
-(mp.readprotection)(false)
-local l_0_2 = (mp.readfile)(0, l_0_0)
-if l_0_2:match("[Ee][Xx][Ee].?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?=") then
-  l_0_1 = l_0_1 + 1
-end
-if l_0_2:match("[Rr][Uu][Nn].?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?=") then
-  l_0_1 = l_0_1 + 1
-end
-if l_0_2:match("[Tt][Xx][Tt].?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?=") then
-  l_0_1 = l_0_1 + 1
-end
-if l_0_2:match("[Pp][Hh][Pp].?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?=") then
-  l_0_1 = l_0_1 + 1
-end
-if l_0_2:match("[Ww][Rr][Ii][Tt][Ee].?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?= %d%d?%d?;.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?.?=") then
-  l_0_1 = l_0_1 + 1
-end
-if l_0_1 > 1 then
-  (mp.set_mpattribute)("//SCPT:JS/Nemucod.HH!2plus")
-  return mp.CLEAN
-end
-if l_0_1 > 0 then
-  (mp.set_mpattribute)("//SCPT:JS/Nemucod.HH!1plus")
-end
-return mp.CLEAN
 

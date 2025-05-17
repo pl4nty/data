@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("Behavior:Win32/BlockMpTamper")
-if #l_0_0 == 0 or l_0_0 == nil then
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_1 = (string.match)(l_0_0, "winword%.exe\".+\"(.+%.doc)") .. "\000"
+  ;
+  (mp.ReportLowfi)(l_0_1, 2293281986)
 end
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  (bm.add_related_string)("RelatedBMHits", l_0_5, bm.RelatedStringBMReport)
+do
+  return mp.INFECTED
 end
-return mp.INFECTED
 

@@ -3,66 +3,79 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+      local l_0_1 = (this_sigattrlog[2]).utf8p2
+    else
+    end
+    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
+        local l_0_2 = (this_sigattrlog[4]).utf8p2
+      else
+      end
+      -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
+
+      do
+        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p2 ~= nil then
+          local l_0_3 = (this_sigattrlog[6]).utf8p2
+        else
+        end
+        -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
+
+        do
+          if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p2 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p2 ~= nil then
+            local l_0_4, l_0_5, l_0_6, l_0_7 = (this_sigattrlog[8]).utf8p2
+          else
+          end
+          if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p2 ~= nil then
+            local l_0_8 = (this_sigattrlog[10]).utf8p2
+            if l_0_8 ~= nil then
+              local l_0_9 = false
+              for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_8)) do
+                local l_0_10 = nil
+                -- DECOMPILER ERROR at PC152: Confused about usage of register: R7 in 'UnsetPending'
+
+                R7_PC152 = (mp.ContextualExpandEnvironmentVariables)(R7_PC152)
+                -- DECOMPILER ERROR at PC176: Confused about usage of register: R8 in 'UnsetPending'
+
+                if (sysio.IsFileExists)(R7_PC152) then
+                  do
+                    do
+                      if (this_sigattrlog[2]).matched and (string.sub)(l_0_15, -(string.len)("AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe")) == "AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe" then
+                        return mp.CLEAN
+                      end
+                      l_0_9 = true
+                      do break end
+                      -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out DO_STMT
+
+                      -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                      -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out IF_STMT
+
+                    end
+                  end
+                end
+              end
+            end
+            if (this_sigattrlog[6]).matched and not l_0_9 then
+              return mp.CLEAN
+            end
+            return mp.INFECTED
+          end
+        end
+      end
+    end
+  end
 end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size >= 256 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).Size ~= 0 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 5) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 17) ~= 1 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 21) ~= 4 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) ~= 4 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 29) <= 0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 13)
-if (mp.crc32)(-1, l_0_1, 1, 13) ~= 3058262260 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -4,21 +4,15 @@
 -- params : ...
 -- function num : 0
 do
-  if ((hstrlog[9]).matched and not (hstrlog[10]).matched) or (hstrlog[11]).matched then
-    local l_0_0, l_0_1 = 0 + 1 + 1 + 1
-  end
-  -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-  if mp.HSTR_WEIGHT >= 100 and l_0_0 >= 2 then
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 32768 and (mp.getfilesize)() < 77824 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
-  -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 >= 3 and (hstrlog[12]).matched then
-    return mp.INFECTED
-  end
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
   return mp.CLEAN
 end
 

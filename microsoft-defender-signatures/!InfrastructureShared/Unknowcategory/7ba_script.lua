@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil or l_0_1 == nil then
-  return mp.CLEAN
-end
-if l_0_1:find("\\temp\\", 1, true) ~= nil and l_0_2:find("^awh[0-9a-f][0-9a-f][0-9a-f]?[0-9a-f]?%.tmp$") == 1 then
+if (mp.get_mpattribute)("Lua:JSExt") or (mp.get_mpattribute)("Lua:VBSExt") or (mp.get_mpattribute)("Lua:WSFExt") then
+  (mp.UfsSetMetadataBool)("Lua:WSHExt", true)
   return mp.INFECTED
+else
+  if (mp.UfsGetMetadataBool)("Lua:WSHExt", true) == 0 and "Lua:WSHExt" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

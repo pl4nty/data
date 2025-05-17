@@ -3,11 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
-local l_0_1 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 33, 1))
-local l_0_2 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, 4), 1)
-local l_0_3 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_1, 4), 1)
-;
-(mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (mp.bitand)((mp.shr32)(l_0_2, 2), 255), (mp.bitand)((mp.shr32)(l_0_3, 2), 255)))
+if peattributes.hasexports == true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.epscn_islast == true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 5 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if (mp.bitand)(((pesecs[pehdr.NumberOfSections]).Name)[0], 255) == 46 then
+  return mp.CLEAN
+end
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

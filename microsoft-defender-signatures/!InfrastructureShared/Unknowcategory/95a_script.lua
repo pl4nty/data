@@ -3,39 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 ~= mp.SCANREASON_ONMOUNT then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("SCRIPT:PSLummaStealerObfus.A") then
+if mp.HEADERPAGE_SZ < 512 then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = ""
-if l_0_0.is_header then
-  l_0_1 = tostring(headerpage)
-else
-  l_0_1 = tostring(footerpage)
+if (mp.readu_u16)(headerpage, 511) == 43605 then
+  local l_0_1 = tostring(headerpage)
+  local l_0_2 = (string.sub)(l_0_1, 1, 512)
+  if l_0_2 == nil then
+    return mp.CLEAN
+  end
+  l_0_2 = (string.lower)(l_0_2)
+  if (string.find)(l_0_2, "ransom", 1, true) or (string.find)(l_0_2, "bitcoin", 1, true) or (string.find)(l_0_2, "wallet", 1, true) or (string.find)(l_0_2, "encrypt", 1, true) or (string.find)(l_0_2, "decrypt", 1, true) or (string.find)(l_0_2, "instruction", 1, true) or (string.find)(l_0_2, " pay", 1, true) or (string.find)(l_0_2, "email", 1, true) then
+    return mp.INFECTED
+  end
 end
-l_0_1 = (string.lower)(l_0_1)
-l_0_1 = (string.gsub)(l_0_1, "%z", "")
-if not (string.find)(l_0_1, "}).name", 1, true) then
+do
   return mp.CLEAN
 end
-if not (string.find)(l_0_1, "http", 1, true) and not (string.find)(l_0_1, "c:\\programdata\\", 1, true) then
-  return mp.CLEAN
-end
-local l_0_2 = 0
-for l_0_6 in (string.gmatch)(l_0_1, "%-variable%s+") do
-  l_0_2 = l_0_2 + 1
-end
-for l_0_10 in (string.gmatch)(l_0_1, "%s+variable:") do
-  l_0_2 = l_0_2 + 1
-end
-for l_0_14 in (string.gmatch)(l_0_1, "\'[A-Za-z*%-]*%*[A-Za-z*%-]*\'") do
-  l_0_2 = l_0_2 + 1
-end
-if l_0_2 >= 5 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

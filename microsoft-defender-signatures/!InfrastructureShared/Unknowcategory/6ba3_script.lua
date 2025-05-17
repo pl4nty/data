@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and (mp.getfilesize)() > 20000000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\199\005")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "")
+return mp.INFECTED
 

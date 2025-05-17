@@ -3,25 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Active and (string.match)((Remediation.Threat).Name, "Behavior:Win32/Kuluoz.gen!A") then
-  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    local l_0_6 = (sysio.RegOpenKey)(l_0_5)
-    if l_0_6 then
-      local l_0_7 = (sysio.RegEnumValues)(l_0_6)
-      for l_0_11,l_0_12 in pairs(l_0_7) do
-        if l_0_12 and (string.match)(l_0_12, "^%l%l%l%l%l%l%l%l$") then
-          local l_0_13 = (sysio.GetRegValueAsString)(l_0_6, l_0_12)
-          if l_0_13 and ((string.match)((string.lower)(l_0_13), "\\appdata\\local\\%a%a%a%a%a%a%a%a%.exe\"$") or (string.match)((string.lower)(l_0_13), "\\local settings\\application data\\%a%a%a%a%a%a%a%a%.exe\"$")) then
-            l_0_13 = (string.gsub)(l_0_13, "\"", "")
-            ;
-            (sysio.DeleteRegValue)(l_0_6, l_0_12)
-            ;
-            (Remediation.BtrDeleteFile)(l_0_13)
-          end
-        end
-      end
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 65536 then
+  return mp.CLEAN
 end
+if ((((((not (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr01") or (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr02")) and not (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr03")) or (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr04")) and not (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr05")) or (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr06")) and not (mp.get_mpattribute)("SCRIPT:Exploit:SWF/CVE-2014-0515!attr07")) or 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 >= 5 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

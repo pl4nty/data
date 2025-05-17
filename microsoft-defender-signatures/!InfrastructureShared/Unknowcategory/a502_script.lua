@@ -3,28 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = this_sigattrlog[4]
-if not l_0_0 or not l_0_0.utf8p2 or not l_0_0.utf8p1 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_7,l_0_8 in ipairs(l_0_3) do
+      local l_0_4 = {[".xls"] = true, xlsx = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, xlsm = true}
+      -- DECOMPILER ERROR at PC34: Confused about usage of register: R7 in 'UnsetPending'
+
+      if (string.len)(R7_PC34) > 4 and (sysio.IsFileExists)(R7_PC34) and l_0_4[(string.sub)(R7_PC34, -4)] then
+        (bm.add_related_file)(l_0_9)
+        return mp.INFECTED
+      end
+    end
+  end
+  do
+    l_0_3 = mp
+    l_0_3 = l_0_3.CLEAN
+    return l_0_3
+  end
 end
-local l_0_1 = (string.match)(l_0_0.utf8p2, ";vmregionsize:(%d+)")
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_2 = tonumber(l_0_1)
-if l_0_2 > 300000 or l_0_2 < 200000 then
-  return mp.CLEAN
-end
-local l_0_3 = (string.match)(l_0_0.utf8p2, ";vmbaseaddress:(%d+)")
-if not l_0_3 then
-  return mp.CLEAN
-end
-local l_0_4, l_0_5 = (string.match)(l_0_0.utf8p1, "targetprocessppid:(%d+):(%d+)")
-if not l_0_4 or not l_0_5 then
-  return mp.CLEAN
-end
-local l_0_6 = (string.format)("pid:%s,ProcessStart:%s,address:%s,size:0", l_0_4, l_0_5, l_0_3)
-;
-(mp.TriggerScanResource)("ems", l_0_6)
-return mp.INFECTED
 

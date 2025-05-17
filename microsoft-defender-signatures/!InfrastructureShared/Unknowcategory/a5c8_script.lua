@@ -3,27 +3,22 @@
 
 -- params : ...
 -- function num : 0
-add_related_file_wrapper = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0 ~= nil then
-    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
-    for l_1_5,l_1_6 in ipairs(l_1_1) do
-      l_1_6 = (mp.ContextualExpandEnvironmentVariables)(l_1_6)
-      if (string.find)(l_1_6, "cmstp.exe$") == nil and (sysio.IsFileExists)(l_1_6) then
-        (bm.add_related_file)(l_1_6)
-      end
+if not (mp.get_mpattribute)("//HSTR:Necurs_Patched") and (mp.getfilesize)() < 180000 then
+  local l_0_0 = pehdr.ImageBase
+  if (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_ESP), 4), 1) == pehdr.AddressOfEntryPoint + 5 + l_0_0 then
+    local l_0_1 = (pesecs[1]).VirtualAddress + l_0_0 + 4096
+    local l_0_2 = l_0_1 + 1280
+    local l_0_3 = 0
+    l_0_3 = (pe.vm_search)(l_0_1, l_0_2, "\255\255‹E\144\t\v\000‰L…\001\001é\000", nil, pe.VM_SEARCH_BM)
+    if l_0_3 ~= 4294967295 then
+      (pe.mmap_patch_va)(l_0_3 - 6, "D")
+      ;
+      (mp.set_mpattribute)("//HSTR:Necurs_Patched")
+      return mp.INFECTED
     end
   end
 end
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[1]).utf8p2)
+do
+  return mp.CLEAN
 end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[3]).utf8p1)
-end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[3]).utf8p2)
-end
-return mp.INFECTED
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == false and (mp.getfilesize)() < 5048000 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
+  return mp.CLEAN
+end
+if mp.HSTR_WEIGHT == 4 then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

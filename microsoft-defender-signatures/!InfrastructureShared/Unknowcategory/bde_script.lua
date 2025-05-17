@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:uTorrent")
+(mp.set_mpattribute)("PUA:Block:BitComet")
 return mp.INFECTED
 

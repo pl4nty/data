@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("mroot", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("temproot", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("-root", 1, true) then
-  return mp.CLEAN
+local l_0_0 = ((string.lower)((this_sigattrlog[2]).utf8p2)):match("|app=(.-)|")
+if l_0_0 ~= nil then
+  l_0_0 = (mp.ContextualExpandEnvironmentVariables)(l_0_0)
+  if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
+    (mp.ReportLowfi)(l_0_0, 2240217800)
+  end
 end
 return mp.INFECTED
 

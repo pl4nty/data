@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:FindBaiuduAV") and (mp.get_mpattribute)("SIGATTR:FindAvastAV") then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr + 33, "êê\144")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 38, "êê")
+return mp.INFECTED
 

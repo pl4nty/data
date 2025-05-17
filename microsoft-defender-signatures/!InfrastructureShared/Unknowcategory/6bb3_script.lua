@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
-  return mp.INFECTED
+if peattributes.isexe == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:HSTR:OnePlatformInstaller")
+return mp.INFECTED
 

@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil or l_0_1 == nil then
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 2 then
   return mp.CLEAN
 end
-if l_0_2:find("optin%[%d%]%.php") == 1 then
-  return mp.INFECTED
+if (mp.getfilesize)() >= 400000 then
+  (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
 end
-return mp.CLEAN
+return mp.INFECTED
 

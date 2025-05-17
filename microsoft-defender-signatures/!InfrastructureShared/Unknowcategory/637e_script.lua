@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:BackTrack.B")
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Win32/Sasquor.F")
-return mp.CLEAN
+return mp.LOWFI
 

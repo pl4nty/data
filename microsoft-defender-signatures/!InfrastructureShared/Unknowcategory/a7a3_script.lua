@@ -3,73 +3,53 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = false
-if (this_sigattrlog[2]).matched then
-  local l_0_1 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
-  if l_0_1 ~= nil then
-    local l_0_2 = (sysio.GetRegValueAsString)(l_0_1, "Debugger")
-    if l_0_2 ~= nil and (string.len)(l_0_2) > 3 and (sysio.IsFileExists)(l_0_2) then
-      (mp.ReportLowfi)(l_0_2, 2857668052)
-      l_0_0 = true
-    end
+local l_0_0 = pevars.sigaddr + 56
+local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "j@h\000\016\000\000h\144\001\004j\000\144\019¡\001\004\139\016\137\021\144\001\004\255%\144\000", nil, pe.VM_SEARCH_BM)
+if l_0_1 == 4294967295 then
+  return mp.CLEAN
+end
+local l_0_2 = 9
+local l_0_3 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "°\144\001\004\139\029\144\001\004ë\144\001\004\144\003\003\000\144\001\t\144\004\001\002ëé\144\000", nil, pe.VM_SEARCH_BM)
+if l_0_3 == 4294967295 then
+  return mp.CLEAN
+end
+local l_0_4 = (pe.vm_search)(l_0_3 - 30, l_0_3, "1Òƒ\192\001¹\001\004\137\001¡\000", nil, pe.VM_SEARCH_BM)
+if l_0_4 == 4294967295 then
+  return mp.CLEAN
+end
+if (pe.vm_search)(l_0_4 - 36, l_0_4, "9\b\015…\001\004¸\001\004\255\a9\a\015…\000", nil, pe.VM_SEARCH_BM) == 4294967295 then
+  l_0_2 = 5
+  local l_0_5 = (pe.vm_search)(l_0_4 - 28, l_0_4, "9\bu\144\001\001¸\001\004\255\a9\au\144\000", nil, pe.VM_SEARCH_BM)
+  if l_0_5 == 4294967295 then
+    return mp.CLEAN
   end
-else
-  do
-    if (this_sigattrlog[3]).matched then
-      local l_0_3 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe")
-      if l_0_3 ~= nil then
-        local l_0_4 = (sysio.GetRegValueAsString)(l_0_3, "Debugger")
-        if l_0_4 ~= nil and (string.len)(l_0_4) > 3 and (sysio.IsFileExists)(l_0_4) then
-          (mp.ReportLowfi)(l_0_4, 2615075110)
-          l_0_0 = true
-        end
-      end
-    else
-      do
-        if (this_sigattrlog[4]).matched then
-          local l_0_5 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\magnify.exe")
-          if l_0_5 ~= nil then
-            local l_0_6 = (sysio.GetRegValueAsString)(l_0_5, "Debugger")
-            if l_0_6 ~= nil and (string.len)(l_0_6) > 3 and (sysio.IsFileExists)(l_0_6) then
-              (mp.ReportLowfi)(l_0_6, 3488596662)
-              l_0_0 = true
-            end
-          end
-        else
-          do
-            if (this_sigattrlog[5]).matched then
-              local l_0_7 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\utilman.exe")
-              if l_0_7 ~= nil then
-                local l_0_8 = (sysio.GetRegValueAsString)(l_0_7, "Debugger")
-                if l_0_8 ~= nil and (string.len)(l_0_8) > 3 and (sysio.IsFileExists)(l_0_8) then
-                  (mp.ReportLowfi)(l_0_8, 375868929)
-                  l_0_0 = true
-                end
-              end
-            else
-              do
-                if (this_sigattrlog[6]).matched then
-                  local l_0_9 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\narrator.exe")
-                  if l_0_9 ~= nil then
-                    local l_0_10 = (sysio.GetRegValueAsString)(l_0_9, "Debugger")
-                    if l_0_10 ~= nil and (string.len)(l_0_10) > 3 and (sysio.IsFileExists)(l_0_10) then
-                      (mp.ReportLowfi)(l_0_10, 583855365)
-                      l_0_0 = true
-                    end
-                  end
-                end
-                do
-                  if l_0_0 == true then
-                    return mp.INFECTED
-                  end
-                  return mp.CLEAN
-                end
-              end
-            end
-          end
-        end
-      end
-    end
+end
+do
+  local l_0_6 = nil
+  if (mp.readu_u16)((pe.mmap_va)(l_0_3 + 17, 9), 1) == 15747 and (string.byte)((pe.mmap_va)(l_0_3 + 17, 9), 8) == 124 then
+    (pe.mmap_patch_va)(l_0_3 + 25, "\000")
   end
+  local l_0_7 = nil
+  local l_0_8 = nil
+  ;
+  (pe.set_regval)(pe.REG_EAX, (mp.readu_u32)((pe.mmap_va)(l_0_6 + l_0_2, 4), 1))
+  local l_0_9 = nil
+  local l_0_10 = nil
+  local l_0_11, l_0_12, l_0_13, l_0_14 = , (mp.bsplit)(l_0_3 - (pevars.sigaddr + 6) - 5, 8)
+  ;
+  (pe.mmap_patch_va)(l_0_10, "\233")
+  ;
+  (pe.mmap_patch_va)(l_0_10 + 1, (string.char)(l_0_12))
+  ;
+  (pe.mmap_patch_va)(l_0_10 + 2, (string.char)(l_0_13))
+  ;
+  (pe.mmap_patch_va)(l_0_10 + 3, (string.char)(l_0_14))
+  ;
+  (pe.mmap_patch_va)(l_0_10 + 4, (string.char)(R18_PC158))
+  local l_0_15 = nil
+  if (mp.readu_u16)((pe.mmap_va)(l_0_1 + 27, 16), 1) == 15747 and (mp.readu_u16)((pe.mmap_va)(l_0_1 + 27, 16), 8) == 35855 then
+    (pe.mmap_patch_va)(l_0_1 + 34, "\000\000\000\000")
+  end
+  return mp.INFECTED
 end
 

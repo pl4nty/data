@@ -7,7 +7,7 @@ local l_0_0, l_0_1 = (bm.get_process_relationships)()
 for l_0_5,l_0_6 in ipairs(l_0_0) do
   if l_0_6.image_path ~= nil then
     local l_0_7 = (string.lower)(l_0_6.image_path)
-    if (string.find)(l_0_7, "rundll32.exe", 1, true) or (string.find)(l_0_7, "regsvr32.exe", 1, true) then
+    if (string.find)(l_0_7, "excel.exe", 1, true) or (string.find)(l_0_7, "winword.exe", 1, true) then
       return mp.INFECTED
     end
   end

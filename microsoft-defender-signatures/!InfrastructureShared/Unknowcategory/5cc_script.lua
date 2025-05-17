@@ -3,43 +3,63 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
   if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2 = nil
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
   else
   end
   if (this_sigattrlog[2]).matched then
     do return mp.CLEAN end
-    local l_0_3 = nil
     if not (this_sigattrlog[2]).utf8p2 then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC27: Confused about usage of register: R1 in 'UnsetPending'
+    hexToAscii = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = {}
+  for l_1_5 = 1, #l_1_0, 2 do
+    local l_1_10 = nil
+    l_1_10 = #l_1_1
+    l_1_10 = l_1_10 + 1
+    local l_1_6, l_1_11 = nil
+    l_1_6 = string
+    l_1_6 = l_1_6.char
+    l_1_11 = tonumber
+    do
+      local l_1_13, l_1_14, l_1_15, l_1_16, l_1_17 = .end
+      l_1_6 = l_1_6(l_1_11(l_1_0:sub(l_1_5, l_1_5 + 1), 16), l_1_13, l_1_14, l_1_15, l_1_16, l_1_17)
+      local l_1_12 = nil
+      l_1_1[l_1_10] = l_1_6
+      -- DECOMPILER ERROR at PC18: Confused about usage of register R8 for local variables in 'ReleaseLocals'
 
-    local l_0_4 = nil
-    if not (string.match)((string.lower)((this_sigattrlog[2]).utf8p2), "[/-]e:([%a]+)") then
-      return mp.CLEAN
-    end
-    local l_0_5 = nil
-    local l_0_6 = nil
-    if not ({jscript = ".js", javascript = ".js", vbscript = ".vbs", vbs = ".vbs"})[l_0_5] then
-      return mp.CLEAN
-    end
-    local l_0_7 = nil
-    for l_0_11,l_0_12 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
-      local l_0_8 = nil
-      -- DECOMPILER ERROR at PC61: Confused about usage of register: R10 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC18: LeaveBlock: unexpected jumping out DO_STMT
 
-      if (string.match)(R10_PC61, "(%.[^%.]+)$") ~= l_0_7 then
-        local l_0_14 = nil
-        if (string.lower)((string.match)(l_0_13, "([^\\]+)$")) ~= "wscript.exe" and (string.lower)((string.match)(l_0_13, "([^\\]+)$")) ~= "cscript.exe" and not (((string.lower)((string.match)(l_0_13, "([^\\]+)$"))).find)("capainstaller", 1, true) and (sysio.IsFileExists)(l_0_13) and not (mp.IsKnownFriendlyFile)(l_0_13, false, false) then
-          (mp.ReportLowfi)(l_0_13, 4091252919)
-        end
+    end
+  end
+  local l_1_7 = nil
+  local l_1_8 = nil
+  local l_1_9 = nil
+  return (table.concat)(l_1_1, "")
+end
+
+    -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+
+    for l_0_7 in (string.gmatch)((this_sigattrlog[2]).utf8p2, "(%x%x%x%x[%x]+)") do
+      local l_0_4 = nil
+      -- DECOMPILER ERROR at PC34: Confused about usage of register: R4 in 'UnsetPending'
+
+      if R4_PC34:find("^68747470") then
+        R4_PC34 = hexToAscii(R4_PC34)
+        ;
+        (bm.add_related_string)("bmurl", R4_PC34, bm.RelatedStringBMReport)
+      else
+        R4_PC34 = hexToAscii(R4_PC34)
+        ;
+        (bm.add_related_file)(R4_PC34)
       end
     end
-    return mp.CLEAN
+    return mp.INFECTED
   end
 end
 

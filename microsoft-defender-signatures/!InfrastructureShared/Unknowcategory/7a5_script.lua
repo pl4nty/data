@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if (mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE) == "msi.exe" and (string.sub)(l_0_0, -10) == "\\microsoft" then
+local l_0_0 = (mp.IOAVGetDownloadUrl)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.len)(l_0_0) < 12 then
+  return mp.CLEAN
+end
+l_0_0 = (string.lower)(l_0_0)
+if (string.find)(l_0_0, "/.+invoice.+/") ~= nil or (string.find)(l_0_0, "/.+rechnung.+/") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

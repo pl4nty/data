@@ -3,25 +3,22 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
-    local l_0_0 = (hstrlog[1]).hitcount
-    if l_0_0 > 10 then
-      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsGT10")
-    end
-    if l_0_0 > 20 then
-      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsGT20")
-    else
-      ;
-      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsLE20")
-    end
-    if l_0_0 > 30 then
-      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsGT30")
-    else
-      ;
-      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsLE30")
-    end
+if (this_sigattrlog[5]).matched then
+  local l_0_0 = (string.match)((this_sigattrlog[5]).utf8p1, "imagepath:(.*)")
+  if not l_0_0 then
+    return mp.CLEAN
   end
+  local l_0_1 = (sysio.GetPEVersionInfo)(l_0_0)
+  if l_0_1 and (string.lower)(l_0_1.OriginalFilename) == "autoit3.exe" then
+    local l_0_2 = (bm.get_current_process_startup_info)()
+    ;
+    (bm.request_SMS)(l_0_2.ppid, "M")
+    ;
+    (bm.add_action)("SmsAsyncScanEvent", 1)
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
 

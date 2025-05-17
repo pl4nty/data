@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("App:CoinMiner64:lolMiner")
+(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
 return mp.INFECTED
 

@@ -3,38 +3,36 @@
 
 -- params : ...
 -- function num : 0
-add_related_file_wrapper = function(l_1_0)
+local l_0_0 = ""
+local l_0_1 = (mp.GetBruteMatchData)()
+local l_0_2 = l_0_1.match_offset + 1
+local l_0_3 = l_0_1.match_offset + 1 + 200
+if l_0_1.is_header then
+  l_0_0 = ((tostring(headerpage)):sub(l_0_2, l_0_3)):lower()
+else
+  l_0_0 = ((tostring(footerpage)):sub(l_0_2, l_0_3)):lower()
+end
+if not l_0_0:find("get/autodiscover/autodiscover.json?", 1, true) and not l_0_0:find("post/autodiscover/autodiscover.json?", 1, true) then
+  return mp.CLEAN
+end
+local l_0_4 = function(l_1_0)
   -- function num : 0_0
-  if l_1_0 ~= nil then
-    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
-    for l_1_5,l_1_6 in ipairs(l_1_1) do
-      l_1_6 = (mp.ContextualExpandEnvironmentVariables)(l_1_6)
-      if (sysio.IsFileExists)(l_1_6) then
-        (bm.add_related_file)(l_1_6)
-      end
+  return l_1_0:gsub("%%(%x%x)", function(l_2_0)
+    -- function num : 0_0_0
+    local l_2_1 = string.char
+    do
+      local l_2_2, l_2_3, l_2_4 = tonumber(l_2_0, 16), .end
+      do return l_2_1(l_2_2, l_2_3, l_2_4) end
+      -- DECOMPILER ERROR at PC8: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
     end
   end
+)
 end
 
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[3]).utf8p1)
-end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[3]).utf8p2)
-end
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("bm_uacbypass_connmgr")
-if l_0_0 then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    local l_0_6, l_0_7 = (string.match)(l_0_5, "(.+);ImagePath:(.+)")
-    if l_0_7 then
-      l_0_7 = (MpCommon.PathToWin32Path)(l_0_7)
-      if (sysio.IsFileExists)(l_0_7) then
-        (mp.ReportLowfi)(l_0_7, 3039453400)
-      end
-    end
-  end
-end
-do
+local l_0_5 = (string.lower)((string.gsub)(l_0_4(l_0_0), "%%", ""))
+if l_0_5:find("/powershell?", 1, true) or l_0_5:find("/powershell/?", 1, true) then
   return mp.INFECTED
 end
+return mp.CLEAN
 

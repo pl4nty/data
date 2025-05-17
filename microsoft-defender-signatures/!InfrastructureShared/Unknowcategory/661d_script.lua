@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("BM_UnsignedDll") then
-  return mp.INFECTED
+if peattributes.isdll and peattributes.hasexports then
+  (mp.set_mpattribute)("ChangeEPtoExport")
 end
 return mp.CLEAN
 

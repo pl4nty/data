@@ -3,17 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
 
-  if (sigattr_head[R4_PC6]).matched and (sigattr_head[R4_PC6]).attribute == 16401 then
-    l_0_1 = (string.lower)((sigattr_head[R4_PC6]).utf8p1)
-    if (string.find)(l_0_1, "\\program files", 1, true) then
-      return mp.CLEAN
-    end
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and (string.find)(l_0_0, "\\appdata\\local\\temp\\system", 1, true) ~= nil and (string.find)(l_0_0, ".", 1, true) == nil then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

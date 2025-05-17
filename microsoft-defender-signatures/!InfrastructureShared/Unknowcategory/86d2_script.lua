@@ -3,10 +3,13 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 14, 4)
-if (mp.readu_u32)(l_0_0, 1) < 4194304 then
-  return mp.CLEAN
+do
+  if (versioning.GetEngineBuild)() >= 16700 then
+    local l_0_0 = (versioning.GetOrgID)()
+    if l_0_0 and (string.lower)(l_0_0) == "d7c7c745-195f-4223-9c7a-99fb420fd000" then
+      return mp.CLEAN
+    end
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
 

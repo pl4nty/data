@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
-  return mp.INFECTED
+if (mp.readu_u32)(headerpage, 1) ~= 1953651835 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+return mp.INFECTED
 

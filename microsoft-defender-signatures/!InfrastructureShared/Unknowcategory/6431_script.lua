@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->(pdf", 1, true) then
+(mp.set_mpattribute)("HSTR:JSUtilsFramework")
+if mp.HSTR_WEIGHT >= 7 then
   return mp.INFECTED
 end
 return mp.CLEAN

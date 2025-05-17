@@ -3,27 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if not l_0_0 then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.PathToWin32Path)(l_0_0)
-if not l_0_1 then
-  return mp.CLEAN
-end
-if (mp.IsKnownFriendlyFile)(l_0_1, true, true) then
-  return mp.CLEAN
-end
-local l_0_2, l_0_3 = (bm.get_process_relationships)()
-for l_0_7,l_0_8 in ipairs(l_0_3) do
-  local l_0_9 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_8.ppid)
-  if l_0_8.reason == bm.RELATIONSHIP_INJECTION and l_0_9.IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID and (string.find)((string.lower)(l_0_8.image_path), "\\windows\\", 1, true) then
-    local l_0_10 = (string.lower)((bm.get_imagepath)())
-    if (string.find)((string.lower)(l_0_10), "\\program files\\", 1, true) or (string.find)((string.lower)(l_0_10), "\\program files (x86)\\", 1, true) or (string.find)((string.lower)(l_0_10), "\\steamapps\\common\\", 1, true) or (string.find)((string.lower)(l_0_10), "\\games\\", 1, true) then
-      return mp.CLEAN
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  if (string.find)(l_0_0, "\\werfault.exe\\debugger", 1, true) or (string.find)(l_0_0, "\\osppsvc.exe\\debugger", 1, true) or (string.find)(l_0_0, "\\sppextcomobj.exe\\debugger", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_1 = (this_sigattrlog[1]).utf8p2
+  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
+    l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
+    if (sysio.IsFileExists)(l_0_1) and (mp.IsKnownFriendlyFile)(l_0_1, true, false) == false then
+      (mp.ReportLowfi)(l_0_1, 794607441)
+      ;
+      (bm.add_related_file)(l_0_1)
+    else
+      local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+      for l_0_6,l_0_7 in ipairs(l_0_2) do
+        if l_0_7 ~= nil and (string.len)(l_0_7) > 3 and (sysio.IsFileExists)(l_0_7) and (mp.IsKnownFriendlyFile)(l_0_7, true, false) == false then
+          (mp.ReportLowfi)(l_0_7, 794607441)
+          ;
+          (bm.add_related_file)(l_0_7)
+        end
+      end
     end
-    return mp.INFECTED
   end
 end
-return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

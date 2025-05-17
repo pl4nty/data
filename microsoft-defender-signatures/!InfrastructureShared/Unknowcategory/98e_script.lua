@@ -3,19 +3,61 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetResmgrBasePlugin)() ~= "regkeyvalue" then
-  return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0.integrity_level <= MpCommon.SECURITY_MANDATORY_MEDIUM_RID then
+  local l_0_1 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)
+  if l_0_0.integrity_level < l_0_1.IntegrityLevel then
+    local l_0_2 = nil
+    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
+      if (sigattr_tail[l_0_6]).matched and (sigattr_tail[l_0_6]).attribute == 16393 then
+        l_0_2 = (sigattr_tail[l_0_6]).utf8p2
+        if l_0_2 ~= nil then
+          local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_2)
+          for l_0_11,l_0_12 in ipairs(l_0_7) do
+            l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
+            if (sysio.IsFileExists)(l_0_12) then
+              (bm.add_related_file)(l_0_12)
+            end
+          end
+        end
+      end
+    end
+    if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
+      l_0_2 = (this_sigattrlog[5]).utf8p2
+    else
+      if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
+        l_0_2 = (this_sigattrlog[6]).utf8p2
+      end
+    end
+    if l_0_2 ~= nil then
+      local l_0_13 = nil
+      l_0_13 = l_0_13((mp.GetExecutablesFromCommandLine)(l_0_2))
+      for l_0_17,l_0_18 in l_0_13 do
+        local l_0_18 = nil
+        l_0_18 = mp
+        l_0_18 = l_0_18.ContextualExpandEnvironmentVariables
+        l_0_18 = l_0_18(l_0_17)
+        l_0_17 = l_0_18
+        l_0_18 = sysio
+        l_0_18 = l_0_18.IsFileExists
+        l_0_18 = l_0_18(l_0_17)
+        if l_0_18 then
+          l_0_18 = mp
+          l_0_18 = l_0_18.ReportLowfi
+          l_0_18(l_0_17, 2668059089)
+        end
+      end
+    end
+    do
+      do return mp.INFECTED end
+      -- DECOMPILER ERROR at PC121: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
+      l_0_1 = mp
+      l_0_1 = l_0_1.CLEAN
+      do return l_0_1 end
+      -- DECOMPILER ERROR at PC124: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
+    end
+  end
 end
-local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "hklm\\system\\currentcontrolset\\control\\secureboot\\state", 1, true) == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(tostring(headerpage))
-if (string.find)(l_0_1, "{68baf0cf-8e96-4cd9-8f02-5a162dc86f12}", 1, true) ~= nil or (string.find)(l_0_1, "{e15ae303-8ae6-4c44-847a-152c2019fe85}", 1, true) ~= nil or (string.find)(l_0_1, "{8d70e18f-c94b-4dde-8900-569f4a3b370a}", 1, true) ~= nil or (string.find)(l_0_1, "{4217eb99-f9d8-4867-ad00-4a36563ebe23}", 1, true) ~= nil or (string.find)(l_0_1, "{1b9a9f0f-cbf7-4742-93a1-2fe3ffaeff98}", 1, true) ~= nil or (string.find)(l_0_1, "{6a093464-7cec-4f19-adb0-a47228778ec3}", 1, true) ~= nil or (string.find)(l_0_1, "{9ed089a1-8e30-420a-9285-4427ace66ba5}", 1, true) ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

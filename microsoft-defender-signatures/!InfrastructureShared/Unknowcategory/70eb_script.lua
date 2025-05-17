@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("BitlockerRansom")
-if l_0_0 ~= nil then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    if l_0_5 == "D" then
-      return mp.INFECTED
-    end
-  end
+if peattributes.x86_image == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-do
-  return mp.CLEAN
-end
+return mp.INFECTED
 

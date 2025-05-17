@@ -3,72 +3,66 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
-end
 local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1800000 or l_0_0 < 4000 then
+if l_0_0 > 1200000 or l_0_0 < 4000 then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("kali", 1, true) then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_ismsil") then
+if l_0_1:find("\\data\\exploits\\", 1, true) then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_isdriver") then
+if l_0_1:find("metasploit", 1, true) then
   return mp.CLEAN
 end
-local l_0_1 = (mp.enum_mpattributesubstring)("Exploit:")
-if #l_0_1 > 0 then
+if l_0_1:find("program files", 1, true) then
   return mp.CLEAN
 end
-local l_0_2 = (mp.enum_mpattributesubstring)("TEL:Exploit:")
-if #l_0_2 > 0 then
+if l_0_1:find("oxy", 1, true) then
   return mp.CLEAN
 end
-local l_0_3 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
-if l_0_3:find("\\immunity", 1, true) or l_0_3:find("\\canvas", 1, true) then
-  (mp.set_mpattribute)("HSTR:ImmunityCanvasFile")
+if l_0_1:find("mtk-su", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("program files", 1, true) then
+if l_0_1:find("cve-20", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("system32", 1, true) then
+if l_0_1:find("supersu", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("\\matlab\\", 1, true) then
+if l_0_1:find("strace", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("picus", 1, true) then
+if l_0_1:find("unlock", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("syswow64", 1, true) then
+if l_0_1:find("ctssecurity", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("\\cylance", 1, true) then
+if l_0_1:find("\\so_rules\\precompiled\\", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("libclang", 1, true) then
+if l_0_1:find("\\bin\\sys\\", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("introum_steal_token", 1, true) then
+if l_0_1:find("android-ndk-r", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("metasploit", 1, true) then
+if l_0_1:find("llvmcache", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("softwaredistribution", 1, true) then
+if l_0_1:find("\\toolchains\\llvm\\", 1, true) then
   return mp.CLEAN
 end
-if l_0_3:find("\\protector32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_3:find("\\unrealeditor", 1, true) then
+local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_3 = ((string.sub)(l_0_2, -5)):match("(%.%w+)$")
+local l_0_4 = {}
+l_0_4[".ko"] = ""
+l_0_4[".dwo"] = ""
+l_0_4[".rc"] = ""
+if l_0_4[l_0_3] then
   return mp.CLEAN
 end
 return mp.INFECTED

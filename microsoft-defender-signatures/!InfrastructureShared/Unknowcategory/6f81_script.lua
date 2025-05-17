@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>%w+%.bat$") == nil then
-  return mp.CLEAN
+if (mp.get_mpattribute)("CallsZwQuerySystemInformation") then
+  (mp.set_mpattribute)("PEBMPAT:AntiEmuGetCopyOnWriteCount")
 end
-return mp.INFECTED
+return mp.CLEAN
 

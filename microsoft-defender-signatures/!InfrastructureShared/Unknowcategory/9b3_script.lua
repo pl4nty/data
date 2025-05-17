@@ -3,69 +3,73 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("SCPT:CodeOnly")
-if #l_0_0 == 0 then
-  return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0.integrity_level <= MpCommon.SECURITY_MANDATORY_MEDIUM_RID then
+  local l_0_1 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)
+  if l_0_0.integrity_level < l_0_1.IntegrityLevel then
+    local l_0_2 = nil
+    for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
+      if (sigattr_tail[l_0_6]).matched and (sigattr_tail[l_0_6]).attribute == 16393 then
+        l_0_2 = (sigattr_tail[l_0_6]).utf8p2
+        if l_0_2 ~= nil then
+          local l_0_7 = (mp.GetExecutablesFromCommandLine)(l_0_2)
+          for l_0_11,l_0_12 in ipairs(l_0_7) do
+            l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_12)
+            if (sysio.IsFileExists)(l_0_12) then
+              (bm.add_related_file)(l_0_12)
+            end
+          end
+        end
+      end
+    end
+    if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p2 ~= nil then
+      l_0_2 = (this_sigattrlog[7]).utf8p2
+    else
+      if (this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p2 ~= nil then
+        l_0_2 = (this_sigattrlog[8]).utf8p2
+      else
+        if (this_sigattrlog[9]).matched and (this_sigattrlog[9]).utf8p2 ~= nil then
+          l_0_2 = (this_sigattrlog[9]).utf8p2
+        else
+          if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
+            l_0_2 = (this_sigattrlog[10]).utf8p1
+          else
+            if (this_sigattrlog[11]).matched and (this_sigattrlog[11]).utf8p1 ~= nil then
+              l_0_2 = (this_sigattrlog[11]).utf8p1
+            end
+          end
+        end
+      end
+    end
+    if l_0_2 ~= nil then
+      local l_0_13 = nil
+      l_0_13 = l_0_13((mp.GetExecutablesFromCommandLine)(l_0_2))
+      for l_0_17,l_0_18 in l_0_13 do
+        local l_0_18 = nil
+        l_0_18 = mp
+        l_0_18 = l_0_18.ContextualExpandEnvironmentVariables
+        l_0_18 = l_0_18(l_0_17)
+        l_0_17 = l_0_18
+        l_0_18 = sysio
+        l_0_18 = l_0_18.IsFileExists
+        l_0_18 = l_0_18(l_0_17)
+        if l_0_18 then
+          l_0_18 = mp
+          l_0_18 = l_0_18.ReportLowfi
+          l_0_18(l_0_17, 2668059089)
+        end
+      end
+    end
+    do
+      do return mp.INFECTED end
+      -- DECOMPILER ERROR at PC163: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
+      l_0_1 = mp
+      l_0_1 = l_0_1.CLEAN
+      do return l_0_1 end
+      -- DECOMPILER ERROR at PC166: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
+    end
+  end
 end
-local l_0_1 = {}
-l_0_1[".asm"] = ""
-l_0_1[".asm64"] = ""
-l_0_1[".c"] = ""
-l_0_1[".cpp"] = ""
-l_0_1[".cxx"] = ""
-l_0_1[".h"] = ""
-l_0_1[".m"] = ""
-local l_0_2 = {}
-l_0_2[".java"] = ""
-l_0_2[".cs"] = ""
-l_0_2[".lua"] = ""
-l_0_2[".go"] = ""
-local l_0_3 = {}
-l_0_3[".py"] = ""
-l_0_3[".pyc"] = ""
-l_0_3[".ps1"] = ""
-l_0_3[".pl"] = ""
-l_0_3[".rb"] = ""
-l_0_3[".bat"] = ""
-l_0_3[".sh"] = ""
-l_0_3[".vba"] = ""
-l_0_3[".vbs"] = ""
-l_0_3[".vb"] = ""
-l_0_3[".hta"] = ""
-local l_0_4 = {}
-l_0_4[".js"] = ""
-l_0_4[".html"] = ""
-l_0_4[".htm"] = ""
-l_0_4[".aspx"] = ""
-l_0_4[".php"] = ""
-l_0_4[".cgi"] = ""
-l_0_4[".jsp"] = ""
-l_0_4[".wasm"] = ""
-l_0_4[".wat"] = ""
-local l_0_5 = {}
-l_0_5[".md"] = ""
-l_0_5[".txt"] = ""
-l_0_5[".bin"] = ""
-local l_0_6 = ((string.sub)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)), -5)):match("(%.%w+)$")
-if l_0_1[l_0_6] then
-  (mp.set_mpattribute)("Lua:CppLangFileExtension")
-  return mp.INFECTED
-end
-if l_0_2[l_0_6] then
-  (mp.set_mpattribute)("Lua:ProgrammingLangFileExtension")
-  return mp.INFECTED
-end
-if l_0_3[l_0_6] then
-  (mp.set_mpattribute)("Lua:ScriptFileExtension")
-  return mp.INFECTED
-end
-if l_0_4[l_0_6] then
-  (mp.set_mpattribute)("Lua:WebFileExtension")
-  return mp.INFECTED
-end
-if l_0_5[l_0_6] then
-  (mp.set_mpattribute)("Lua:ProgrammingRelatedFileExtension")
-  return mp.INFECTED
-end
-return mp.CLEAN
 

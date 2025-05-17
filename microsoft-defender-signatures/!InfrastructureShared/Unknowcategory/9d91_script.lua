@@ -3,21 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() > 1800000 and (mp.getfilesize)() < 4800000 then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-do
-  l_0_0 = pe
-  l_0_0 = l_0_0.get_versioninfo
-  l_0_0 = l_0_0()
-  if l_0_0 ~= nil then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+local l_0_2 = (string.find)(l_0_1[2], ",", 1, true)
+if l_0_2 == nil then
+  return mp.CLEAN
 end
+local l_0_3 = (string.sub)(l_0_1[2], 1, l_0_2 - 1)
+;
+(mp.ReportLowfi)(l_0_3, 503412062)
+return mp.INFECTED
 

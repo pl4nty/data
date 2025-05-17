@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("//SneakyShutdown")
+(mp.set_mpattribute)("SIGATTR:Fakepool")
 return mp.INFECTED
 

@@ -3,29 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset + 8
-local l_0_2 = 0
-local l_0_3 = (mp.getfilesize)()
-if l_0_0.is_header then
-  if mp.HEADERPAGE_SZ <= l_0_3 then
-    return mp.CLEAN
-  end
-  l_0_2 = (mp.readheader)(l_0_1, l_0_3 - l_0_1)
-else
-  if mp.FOOTERPAGE_SZ <= l_0_3 then
-    return mp.CLEAN
-  end
-  l_0_2 = (mp.readfooter)(l_0_1, l_0_3 - l_0_1)
+if peattributes.hasexports == true then
+  return mp.CLEAN
 end
-local l_0_4 = l_0_2:find("\"\"\" | base64", 1, true)
-if l_0_4 ~= nil then
-  l_0_2 = l_0_2:sub(0, l_0_4 - 1)
-  ;
-  (mp.vfo_add_buffer)(l_0_2, "[Base64Enc]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-  ;
-  (mp.set_mpattribute)("//SCPT:Base64.Encoded")
-  return mp.INFECTED
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 6 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 1094992942 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 72 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 72 then
+  return mp.CLEAN
+end
+if epcode[3] ~= 235 then
+  return mp.CLEAN
+end
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

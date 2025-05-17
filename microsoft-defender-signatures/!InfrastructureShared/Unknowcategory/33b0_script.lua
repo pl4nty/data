@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".ntest0" then
-  return mp.INFECTED
-end
+(mp.set_mpattributeex)("FOP:GoLang32", pevars.sigaddr)
 return mp.CLEAN
 

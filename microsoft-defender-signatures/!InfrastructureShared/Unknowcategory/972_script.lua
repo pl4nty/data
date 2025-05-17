@@ -4,34 +4,42 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_1 = {}
-  l_0_1["arsiv.exe"] = true
-  l_0_1["chromenet.exe"] = true
-  l_0_1["chromium.exe"] = true
-  l_0_1["app.exe"] = true
-  l_0_1["winsnrnr.exe"] = true
-  l_0_1["denemeisim.exe"] = true
-  local l_0_2 = {}
-  l_0_2["asdfghjklmn.exe"] = true
-  l_0_2["dwmvs.exe"] = true
-  l_0_2["tplmk.exe"] = true
-  l_0_2["goup.exe"] = true
-  l_0_2["per.zip"] = true
-  l_0_2["nod32.exe"] = true
-  l_0_2["google.exe"] = true
-  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-  local l_0_4 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  -- DECOMPILER ERROR at PC63: Unhandled construct in 'MakeBoolean' P1
-
-  if l_0_1[l_0_4] and ((string.sub)(l_0_3, -16) == "\\appdata\\roaming" or (string.sub)(l_0_3, -17) == "\\application data") then
-    return mp.INFECTED
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+  if l_0_1 == nil then
+    return mp.CLEAN
   end
-  if l_0_2[l_0_4] and l_0_3 == "c:\\windows" then
-    return mp.INFECTED
+  l_0_1 = (string.lower)(l_0_1)
+  if l_0_1 == nil or (string.len)(l_0_1) < 4 then
+    return mp.CLEAN
   end
-  if l_0_3 == "c:" and (l_0_4 == "debgr.txt" or l_0_4 == "chrome1.exe") then
-    return mp.INFECTED
+  local l_0_2 = (string.sub)(l_0_1, -4)
+  local l_0_3 = (string.sub)(l_0_1, -3)
+  local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+  if l_0_4 == nil then
+    return mp.CLEAN
+  end
+  l_0_4 = (string.lower)(l_0_4)
+  if (string.len)(l_0_4) < 4 then
+    return mp.CLEAN
+  end
+  local l_0_5 = (string.sub)(l_0_4, -4)
+  if l_0_5 == ".exe" then
+    if l_0_2 == ".lnk" then
+      (mp.set_mpattribute)("Lua:LNKdroppedByProcess")
+    end
+    if l_0_3 == ".js" then
+      (mp.set_mpattribute)("Lua:JSdroppedByProcess")
+    end
+    if l_0_2 == ".vbs" then
+      (mp.set_mpattribute)("Lua:VBSdroppedByProcess")
+    end
+    if l_0_2 == ".com" then
+      (mp.set_mpattribute)("Lua:COMdroppedByProcess")
+    end
+    if l_0_2 == ".ps1" then
+      (mp.set_mpattribute)("Lua:PSdroppedByProcess")
+    end
   end
 end
 do

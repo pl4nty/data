@@ -3,34 +3,46 @@
 
 -- params : ...
 -- function num : 0
-if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 5) then
-  local l_0_0 = {}
-  l_0_0["677e004c-862d-46a1-8cd7-2e37087bec9e"] = true
-  l_0_0.logmein = true
-  l_0_0.teamviewer = true
-  l_0_0.rescueassist = true
-  l_0_0.gotomeeting = true
-  local l_0_1 = {}
-  l_0_1[".exe"] = true
-  l_0_1[".msi"] = true
-  local l_0_2, l_0_3 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-  local l_0_4 = false
-  local l_0_5 = false
-  for l_0_9,l_0_10 in pairs(l_0_0) do
-    if l_0_3:find(l_0_9, 1, true) ~= nil then
-      l_0_4 = true
-    end
-  end
-  for l_0_14,l_0_15 in pairs(l_0_1) do
-    if l_0_3:find(l_0_14, 1, true) ~= nil then
-      l_0_5 = true
-    end
-  end
-  if l_0_4 == true and l_0_5 == true then
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1280 or l_0_0 < 48 then
   return mp.CLEAN
 end
+local l_0_1 = {}
+-- DECOMPILER ERROR at PC17: No list found for R1 , SetList fails
+
+-- DECOMPILER ERROR at PC18: Overwrote pending register: R2 in 'AssignReg'
+
+local l_0_2 = 252
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC21: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC23: Overwrote pending register: R5 in 'AssignReg'
+
+local l_0_3 = ((232).bitxor)((nil)[1], 0)
+-- DECOMPILER ERROR at PC27: Overwrote pending register: R6 in 'AssignReg'
+
+for l_0_7 = 2, l_0_2, 0 do
+  local l_0_8 = headerpage[l_0_7]
+  local l_0_9 = l_0_3
+  if l_0_1[l_0_7] == nil or l_0_9 ~= l_0_3 then
+    return mp.CLEAN
+  else
+  end
+end
+local l_0_10 = l_0_3
+local l_0_11 = {}
+-- DECOMPILER ERROR at PC52: No list found for R5 , SetList fails
+
+-- DECOMPILER ERROR at PC53: Overwrote pending register: R6 in 'AssignReg'
+
+for l_0_15 = "\"", l_0_0 do
+  (table.insert)(l_0_11, "%" .. (string.format)("%02X", (mp.bitxor)(headerpage[l_0_15], l_0_10)))
+end
+;
+(table.insert)(l_0_11, "\"")
+local l_0_16 = (table.concat)(l_0_11)
+;
+(mp.vfo_add_buffer)(l_0_16, "[Vatet_Crypt_v1]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.INFECTED
 

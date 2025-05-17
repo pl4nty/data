@@ -3,10 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe or not peattributes.epinfirstsect or (pehdr.NumberOfSections > 7 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).Size > 4718592 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).Size < 6291456 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).Size > 2048 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_BASERELOC]).Size > 4096) == false then
-  (mp.changedetectionname)(268436426)
+local l_0_0 = "(.+\\)"
+local l_0_1, l_0_2 = nil, nil
+if (this_sigattrlog[1]).matched then
+  l_0_2 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
+    else
+      if (this_sigattrlog[4]).matched then
+        l_0_2 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
+      end
+    end
+  end
+end
+if (this_sigattrlog[5]).matched then
+  l_0_1 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
+end
+if l_0_1 ~= nil and l_0_1 == l_0_2 then
   return mp.INFECTED
 end
-do return mp.INFECTED end
--- DECOMPILER ERROR: 3 unprocessed JMP targets
+return mp.CLEAN
 

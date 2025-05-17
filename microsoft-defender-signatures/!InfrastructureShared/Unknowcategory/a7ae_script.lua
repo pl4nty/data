@@ -3,102 +3,120 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+if peattributes.no_security == true then
+  return mp.CLEAN
+end
+if not peattributes.isdriver then
+  return mp.CLEAN
+end
+if mp.HSTR_WEIGHT >= 20 then
+  return mp.CLEAN
+end
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+  return mp.CLEAN
+end
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC81: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC82: Overwrote pending register: R1 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC83: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC84: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC85: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC86: Overwrote pending register: R5 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC87: Overwrote pending register: R6 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC88: Overwrote pending register: R7 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC89: Overwrote pending register: R8 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC90: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC91: Overwrote pending register: R10 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC92: Overwrote pending register: R11 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC93: Overwrote pending register: R12 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC94: Overwrote pending register: R13 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC95: Overwrote pending register: R14 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC96: Overwrote pending register: R15 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC97: Overwrote pending register: R16 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC98: Overwrote pending register: R17 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC99: Overwrote pending register: R18 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC100: Overwrote pending register: R19 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC101: Overwrote pending register: R20 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC102: Overwrote pending register: R21 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC103: Overwrote pending register: R22 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC104: Overwrote pending register: R23 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC105: Overwrote pending register: R24 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC106: Overwrote pending register: R25 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC107: Overwrote pending register: R26 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC108: Overwrote pending register: R27 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC109: Overwrote pending register: R28 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC110: Overwrote pending register: R29 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC111: Overwrote pending register: R30 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC112: Overwrote pending register: R31 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC113: Overwrote pending register: R32 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC114: Overwrote pending register: R33 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC115: Overwrote pending register: R34 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC116: Overwrote pending register: R35 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC117: Overwrote pending register: R36 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC118: Overwrote pending register: R37 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC119: Overwrote pending register: R38 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC120: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC121: Overwrote pending register: R1 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+  local l_0_1 = (("AsrDrv").hstr_full_log)()
+  -- DECOMPILER ERROR at PC124: Overwrote pending register: R2 in 'AssignReg'
 
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-      local l_0_1 = (this_sigattrlog[2]).utf8p2
-    else
-    end
-    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+  -- DECOMPILER ERROR at PC125: Overwrote pending register: R3 in 'AssignReg'
 
-    do
-      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
-        local l_0_2 = (this_sigattrlog[4]).utf8p2
-      else
-      end
-      -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
+  for l_0_5,l_0_6 in (nil)("AsusGio") do
+    -- DECOMPILER ERROR at PC128: Overwrote pending register: R7 in 'AssignReg'
 
-      do
-        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p2 ~= nil then
-          local l_0_3 = (this_sigattrlog[6]).utf8p2
-        else
-        end
-        -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
+    -- DECOMPILER ERROR at PC136: Overwrote pending register: R8 in 'AssignReg'
 
-        do
-          if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p2 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p2 ~= nil then
-            local l_0_4, l_0_5, l_0_6, l_0_7 = (this_sigattrlog[8]).utf8p2
-          else
-          end
-          if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p2 ~= nil then
-            local l_0_8 = (this_sigattrlog[10]).utf8p2
-            if l_0_8 ~= nil then
-              local l_0_9 = false
-              for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_8)) do
-                local l_0_10 = nil
-                -- DECOMPILER ERROR at PC152: Confused about usage of register: R7 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC137: Overwrote pending register: R9 in 'AssignReg'
 
-                R7_PC152 = (mp.ContextualExpandEnvironmentVariables)(R7_PC152)
-                if R7_PC152 then
-                  R7_PC152 = R7_PC152:lower()
-                  if (string.match)(R7_PC152, "^c:\\program files %(x86%)\\adobe\\") ~= nil or (string.match)(R7_PC152, "^c:\\program files\\adobe\\") ~= nil then
-                    return mp.CLEAN
-                  end
-                  -- DECOMPILER ERROR at PC206: Confused about usage of register: R8 in 'UnsetPending'
-
-                  if (sysio.IsFileExists)(R7_PC152) and not (mp.IsKnownFriendlyFile)(R7_PC152, false, false) then
-                    do
-                      do
-                        if (this_sigattrlog[2]).matched then
-                          if (string.sub)(l_0_15, -(string.len)("appdata\\local\\microsoft\\onedrive\\onedrive.exe")) == "appdata\\local\\microsoft\\onedrive\\onedrive.exe" then
-                            return mp.CLEAN
-                          end
-                          if (string.sub)(l_0_15, -62, -36) == "\\google\\chrome\\application\\" then
-                            return mp.CLEAN
-                          end
-                        end
-                        -- DECOMPILER ERROR at PC225: Confused about usage of register: R7 in 'UnsetPending'
-
-                        if (string.find)(l_0_15, ":\\users\\.+\\appdata\\local\\deepl\\app.+\\deepl%.exe") then
-                          return mp.CLEAN
-                        end
-                        l_0_9 = true
-                        -- DECOMPILER ERROR at PC236: Confused about usage of register: R7 in 'UnsetPending'
-
-                        ;
-                        (mp.ReportLowfi)(l_0_15, 1132070965)
-                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out DO_STMT
-
-                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC239: LeaveBlock: unexpected jumping out IF_STMT
-
-                      end
-                    end
-                  end
-                end
-              end
-            end
-            if (this_sigattrlog[6]).matched and not l_0_9 then
-              return mp.CLEAN
-            end
-            return mp.INFECTED
-          end
-        end
-      end
+    if "GLCKIo" and l_0_0[l_0_5] then
+      (mp.set_mpattribute)(nil .. "GDrv")
+      return mp.INFECTED
     end
   end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

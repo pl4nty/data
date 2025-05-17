@@ -3,22 +3,44 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched or (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
-  local l_0_0, l_0_1 = (bm.get_process_relationships)()
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-      local l_0_8 = (string.lower)(l_0_6.image_path)
-      if l_0_7 == 1 and ((string.find)(l_0_8, "\\cmd.exe", 1, true) or (string.find)(l_0_8, "\\powershell.exe", 1, true) or (string.find)(l_0_8, "\\powershell_ise.exe", 1, true) or (string.find)(l_0_8, "\\javaw.exe", 1, true) or (string.find)(l_0_8, "\\java.exe", 1, true) or (string.find)(l_0_8, "\\ruby.exe", 1, true) or (string.find)(l_0_8, "\\explorer.exe", 1, true)) then
-        return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+  end
+  local l_0_1, l_0_2 = , (bm.get_process_relationships)()
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC17: Confused about usage of register: R7 in 'UnsetPending'
+
+    if (string.lower)(R7_PC17.image_path) ~= nil and ((string.find)((string.lower)(R7_PC17.image_path), "\\wmiprvse.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\winrshost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\powershell.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\scrcons.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\wsmprovhost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\cmd.exe", 1, true)) then
+      if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
+        local l_0_9 = nil
+        if (mp.GetExecutablesFromCommandLine)(l_0_1) ~= nil then
+          for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+            local l_0_10 = nil
+            -- DECOMPILER ERROR at PC95: Confused about usage of register: R14 in 'UnsetPending'
+
+            R14_PC95 = (mp.ContextualExpandEnvironmentVariables)(R14_PC95)
+            ;
+            (bm.add_related_file)(R14_PC95)
+          end
+        end
       end
-      return mp.INFECTED
+      do
+        do
+          do return mp.INFECTED end
+          -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out DO_STMT
+
+          -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
     end
   end
-end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+  return mp.CLEAN
 end
 

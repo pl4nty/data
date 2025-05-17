@@ -5,45 +5,33 @@
 -- function num : 0
 local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  if not peattributes.isdll then
+  local l_0_1 = {}
+  l_0_1["msdcsc.exe"] = true
+  l_0_1["mdcsc.exe"] = true
+  l_0_1["msdcs.exe"] = true
+  l_0_1["msdc.exe"] = true
+  l_0_1["IMDCSC.exe"] = true
+  l_0_1["IMJDC.exe"] = true
+  l_0_1["facecall.exe"] = true
+  l_0_1["svcost.exe"] = true
+  l_0_1["svhost.exe"] = true
+  l_0_1["sv_chost.exe"] = true
+  l_0_1["svhostss.exe"] = true
+  l_0_1["Profoma Invoice.exe"] = true
+  l_0_1["Profoma_Invoice.exe"] = true
+  l_0_1["monthlyreport.exe"] = true
+  l_0_1["ttpayment.scr"] = true
+  l_0_1["crypted server.exe"] = true
+  l_0_1["DCModule.exe"] = true
+  l_0_1["lssass.exe"] = true
+  l_0_1["DarkCommet.exe"] = true
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  if l_0_1[l_0_2] then
+    if (string.match)(l_0_3, "\\.-documents\\.+") or (string.match)(l_0_3, "\\start menu\\.+") or (string.match)(l_0_3, "\\programdata") or (string.match)(l_0_3, "\\administrator\\application data") or (string.match)(l_0_3, "\\appdata\\local") or (string.match)(l_0_3, "\\appdata\\roaming") or (string.match)(l_0_3, "\\desktop\\.+") or (string.match)(l_0_3, "\\windows\\system32\\.+") or (string.match)(l_0_3, "\\local settings\\application data") or (string.match)(l_0_3, "\\local settings\\temp") then
+      return mp.INFECTED
+    end
     return mp.CLEAN
-  end
-  if not peattributes.hasexports then
-    return mp.CLEAN
-  end
-  if ((pehdr.DataDirectory)[1]).Size == 0 then
-    return mp.CLEAN
-  end
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  local l_0_2 = {}
-  l_0_2[".exe"] = true
-  l_0_2[".dll"] = true
-  l_0_2[".cpl"] = true
-  l_0_2[".ocx"] = true
-  l_0_2[".pyd"] = true
-  l_0_2[".pyc"] = true
-  l_0_2[".sys"] = true
-  l_0_2[".asi"] = true
-  l_0_2[".xmx"] = true
-  l_0_2[".arx"] = true
-  l_0_2[".crx"] = true
-  l_0_2[".bpi"] = true
-  l_0_2[".bpl"] = true
-  l_0_2[".enu"] = true
-  l_0_2[".jpn"] = true
-  l_0_2[".tpm"] = true
-  if l_0_2[((string.lower)(l_0_1)):sub(-4)] then
-    return mp.CLEAN
-  end
-  local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-  if not l_0_3:find("\160", 1, true) then
-    return mp.CLEAN
-  end
-  if (string.find)((string.lower)(l_0_3), "\\windows\\temp\\", 1, true) then
-    return mp.CLEAN
-  end
-  if (l_0_1:find("^%l%l%l%l%l%l%l%l%l%l+%.%l%l%l$") or l_0_1:find("^~%$%l%l%l%l%l+%.%l%l%l$") or l_0_1:find("^%w+%.%w+%.%w+%.%w+%.%w+%.%w+%.%w+%.%w+$") or l_0_1:find("^%w%w%w%w%w+_? ?%w-%.%w%w%w%w%w+$")) and ((string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "msiexec.exe" or (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "rundll32.exe") then
-    return mp.INFECTED
   end
 end
 do

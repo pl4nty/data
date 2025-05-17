@@ -3,19 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if l_0_1 ~= nil then
-  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    if (sysio.IsFileExists)(l_0_7) then
-      (bm.add_related_file)(l_0_7)
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 == nil or l_0_0 > 500 then
+  return mp.CLEAN
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  return l_0_2
+if headerpage == nil then
+  return mp.CLEAN
 end
+local l_0_1 = (mp.GetBruteMatchData)()
+if l_0_1 == nil or l_0_1.match_offset == nil then
+  return mp.CLEAN
+end
+if l_0_0 - 12 <= l_0_1.match_offset and headerpage[l_0_0] == 0 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

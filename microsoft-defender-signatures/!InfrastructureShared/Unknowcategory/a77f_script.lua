@@ -3,72 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size >= 256 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).Size ~= 0 then
-  return mp.CLEAN
-end
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC4: No list found for R0 , SetList fails
+
+local l_0_1 = {}
+-- DECOMPILER ERROR at PC6: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC8: No list found for R1 , SetList fails
+
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R3 in 'AssignReg'
+
 ;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 5) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 17) ~= 1 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 21) ~= 4 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) ~= 4 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 29) <= 0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 2)
-if (mp.crc32)(-1, l_0_1, 1, 2) ~= 3038897196 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+(("    {\n        \"version\": 1,\n        \"environment\": \"MpTesting\",\n        \"usage\": 1,\n        \"hashType\": 0,\n        \"intThumbs\": [\n            \"50a0a57796ce1d8bee7c74c5541b66639e5ecf688901d8f16db388210b60718c\"\n        ],\n        \"rootThumbs\": [\n            \"6108d51df89fb6095bbd51edd95465ce8f6b70c1c85c2f0aa9e4629d6d06ed6e\",\n            \"0f2de5cb4e3e240a2635510c6085763a8a3eb882fb0495428f82e20044c24e44\"\n        ]\n    }\n   ").LoadDBVar)(("").DBVAR_ARRAY_WIDESTRING, "TrustAnchor_MpTesting", l_0_0, 1)
+;
+(database.LoadDBVar)(database.DBVAR_ARRAY_WIDESTRING, "TrustAnchor_MpTestingNoTLS", l_0_1, 1)
 

@@ -3,5 +3,5 @@
 
 -- params : ...
 -- function num : 0
-return mp.SYNCLOWFI
+return mp.LOWFI
 

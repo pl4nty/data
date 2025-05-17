@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 15 then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "kendo", 1, true) ~= nil then
   return mp.INFECTED
-else
-  if mp.HSTR_WEIGHT >= 11 then
-    (mp.set_mpattribute)("HSTR:KasidetLowfi")
-  end
 end
 return mp.CLEAN
 

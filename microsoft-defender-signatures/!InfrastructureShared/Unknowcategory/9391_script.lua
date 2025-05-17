@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).p2)
-  local l_0_1 = (string.lower)((this_sigattrlog[2]).p1)
-  if (string.find)(l_0_1, l_0_0, 10, true) then
-    return mp.INFECTED
-  end
+if pehdr.NumberOfSections > 6 and (string.find)((pesecs[5]).Name, "^%.data%d$") and (string.find)((pesecs[6]).Name, "^%.data%d$") and (pesecs[5]).Name ~= (pesecs[6]).Name then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

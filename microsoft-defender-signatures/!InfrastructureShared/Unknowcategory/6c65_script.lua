@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.x86_image and peattributes.suspicious_linker_version then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "xl/drawings/_rels/drawing1.xml.rels") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

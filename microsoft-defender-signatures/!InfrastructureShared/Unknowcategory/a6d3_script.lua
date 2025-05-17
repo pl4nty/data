@@ -3,38 +3,38 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//FOPEX:PyInstScrDrp") then
-  return mp.CLEAN
+add_related_file_wrapper = function(l_1_0)
+  -- function num : 0_0
+  if l_1_0 ~= nil then
+    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
+    for l_1_5,l_1_6 in ipairs(l_1_1) do
+      l_1_6 = (mp.ContextualExpandEnvironmentVariables)(l_1_6)
+      if (sysio.IsFileExists)(l_1_6) then
+        (bm.add_related_file)(l_1_6)
+      end
+    end
+  end
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 16777216 then
-  return mp.CLEAN
+
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[3]).utf8p1)
 end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(0, l_0_0)
-;
-(mp.writeu_u8)(l_0_1, (pe.foffset_va)(pevars.sigaddr) + 5, 115)
-if peattributes.packed == true then
-  local l_0_2 = (mp.get_parent_filehandle)()
-  if l_0_2 == nil then
-    return mp.CLEAN
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[3]).utf8p2)
+end
+local l_0_0 = (MpCommon.GetPersistContextNoPath)("bm_uacbypass_connmgr")
+if l_0_0 then
+  for l_0_4,l_0_5 in ipairs(l_0_0) do
+    local l_0_6, l_0_7 = (string.match)(l_0_5, "(.+);ImagePath:(.+)")
+    if l_0_7 then
+      l_0_7 = (MpCommon.PathToWin32Path)(l_0_7)
+      if (sysio.IsFileExists)(l_0_7) then
+        (mp.ReportLowfi)(l_0_7, 3039453400)
+      end
+    end
   end
-  local l_0_3 = (pe.mmap_va)((pe.get_regval)(pe.REG_EDI), 20)
-  if (mp.readu_u32)(l_0_3, 17) ~= 206128461 then
-    return mp.CLEAN
-  end
-  local l_0_4 = (mp.readu_u32)(l_0_3, 5)
-  if l_0_4 < 4096 or l_0_4 > 16777216 then
-    return mp.CLEAN
-  end
-  l_0_1 = l_0_1 .. (mp.readfile_by_handle)(l_0_2, l_0_4, (mp.get_filesize_by_handle)(l_0_2) - l_0_4)
 end
 do
-  ;
-  (mp.vfo_add_buffer)(l_0_1, "[PyInstScrDrp]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-  ;
-  (mp.set_mpattribute)("//FOPEX:PyInstScrDrp")
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

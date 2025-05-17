@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_ep == true then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 210000 and l_0_0 <= 240000 and pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 7 then
   return mp.INFECTED
 end
 return mp.CLEAN

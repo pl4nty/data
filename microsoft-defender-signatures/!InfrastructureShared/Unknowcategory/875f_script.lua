@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis_VMM_Grow")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 15, "\235")
+(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_4")
 ;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+(pe.mmap_patch_va)(pevars.sigaddr + 27, "êê")
+return mp.CLEAN
 

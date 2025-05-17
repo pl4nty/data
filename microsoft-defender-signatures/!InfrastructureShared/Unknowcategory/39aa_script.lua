@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 9, "\000\000")
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "")
 return mp.INFECTED
 

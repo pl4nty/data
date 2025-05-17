@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 then
-  return mp.LOWFI
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 45056 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-if (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 then
-  return mp.LOWFI
-end
-if (hstrlog[5]).hitcount == 0 then
-  return mp.LOWFI
-end
-if peattributes.ismsil then
-  return mp.INFECTED
-end
-return mp.LOWFI
 

@@ -3,63 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched then
-  local l_0_0, l_0_1 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-    if not l_0_0 then
-      return mp.CLEAN
-    end
-    hexToAscii = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = {}
-  for l_1_5 = 1, #l_1_0, 2 do
-    local l_1_10 = nil
-    l_1_10 = #l_1_1
-    l_1_10 = l_1_10 + 1
-    local l_1_6, l_1_11 = nil
-    l_1_6 = string
-    l_1_6 = l_1_6.char
-    l_1_11 = tonumber
-    do
-      local l_1_13, l_1_14, l_1_15, l_1_16, l_1_17 = .end
-      l_1_6 = l_1_6(l_1_11(l_1_0:sub(l_1_5, l_1_5 + 1), 16), l_1_13, l_1_14, l_1_15, l_1_16, l_1_17)
-      local l_1_12 = nil
-      l_1_1[l_1_10] = l_1_6
-      -- DECOMPILER ERROR at PC18: Confused about usage of register R8 for local variables in 'ReleaseLocals'
-
-      -- DECOMPILER ERROR at PC18: LeaveBlock: unexpected jumping out DO_STMT
-
-    end
-  end
-  local l_1_7 = nil
-  local l_1_8 = nil
-  local l_1_9 = nil
-  return (table.concat)(l_1_1, "")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
-
-    -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-    for l_0_5 in (string.gmatch)(l_0_0, "(%x%x%x%x[%x]+)") do
-      local l_0_2 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R4 in 'UnsetPending'
-
-      if R4_PC25:find("^68747470") then
-        R4_PC25 = hexToAscii(R4_PC25)
-        ;
-        (bm.add_related_string)("bmurl", R4_PC25, bm.RelatedStringBMReport)
-      else
-        R4_PC25 = hexToAscii(R4_PC25)
-        ;
-        (bm.add_related_file)(R4_PC25)
-      end
-    end
-    return mp.INFECTED
-  end
+if (string.find)(l_0_0, "\\chrome.exe", 1, true) or (string.find)(l_0_0, "\\opera.exe", 1, true) or (string.find)(l_0_0, "\\360se.exe", 1, true) or (string.find)(l_0_0, "\\brave.exe", 1, true) or (string.find)(l_0_0, "\\msedge.exe", 1, true) or (string.find)(l_0_0, "\\vivaldi.exe", 1, true) or (string.find)(l_0_0, "\\sogouexplorer.exe", 1, true) or (string.find)(l_0_0, "\\browser.exe", 1, true) then
+  return mp.CLEAN
 end
+if (string.find)(l_0_0, "\\appdata\\", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

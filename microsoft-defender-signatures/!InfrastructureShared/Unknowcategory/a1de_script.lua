@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "êê")
-if (string.byte)((pe.mmap_va)(pevars.sigaddr + 5, 1), 1) == 157 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 5, "\149")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 11, "\002")
-else
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr, "j\003YêâM")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 8, "\002")
+local l_0_0 = {}
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28768 then
+    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
+    l_0_0.TlsJa3CHash = l_0_5
+    ;
+    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+  end
 end
 return mp.INFECTED
 

@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true or peattributes.isdll == true and (pesecs[6]).Name == "TqwuH" and (pesecs[6]).Characteristics == 3221225536 then
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[2]).utf8p2
+    if (sysio.IsFileExists)(l_0_0) then
+      (bm.add_related_file)(l_0_0)
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

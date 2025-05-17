@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)) ~= "sbiedll.dll" then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 5 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+;
+(mp.set_mpattribute)("HSTR:Program:Win32/SoftwareClicker.A")
+return mp.CLEAN
 

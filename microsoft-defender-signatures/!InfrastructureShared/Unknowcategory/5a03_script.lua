@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 307200 and peattributes.isdll then
+if pehdr.Subsystem == 1 then
+  (mp.changedetectionname)(805306385)
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.INFECTED
 

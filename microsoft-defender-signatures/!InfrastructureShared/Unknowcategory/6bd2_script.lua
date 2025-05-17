@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.getfilesize)() > 2000000 and (mp.getfilesize)() < 9000000 then
-  return mp.INFECTED
+if pevars.sigaddr ~= 4198400 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+return mp.INFECTED
 

@@ -3,14 +3,30 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched and (this_sigattrlog[5]).matched and (this_sigattrlog[6]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p1
-  local l_0_1 = (this_sigattrlog[4]).utf8p1
-  if l_0_0 ~= nil and l_0_0 ~= "" and l_0_1 ~= nil and l_0_1 ~= "" and (string.find)((this_sigattrlog[2]).utf8p2, l_0_0, 1, true) and (string.find)((this_sigattrlog[3]).utf8p2, l_0_0, 1, true) and (string.find)((this_sigattrlog[5]).utf8p2, l_0_1, 1, true) and (string.find)((this_sigattrlog[6]).utf8p2, l_0_1, 1, true) then
-    return mp.INFECTED
+local l_0_4 = nil
+if (this_sigattrlog[2]).matched then
+  local l_0_0, l_0_1, l_0_2, l_0_3 = "base64_plist_creation"
+else
+  do
+    -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC32: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC38: Confused about usage of register: R1 in 'UnsetPending'
+
+    if (not (this_sigattrlog[3]).matched or l_0_4 ~= nil) and l_0_4 ~= "" then
+      if (MpCommon.GetPersistContextCountNoPath)(l_0_0) > 0 then
+        (MpCommon.AppendPersistContextNoPath)(l_0_0, l_0_4, 3600)
+      else
+        local l_0_5 = nil
+        ;
+        (MpCommon.SetPersistContextNoPath)(l_0_5, {[1] = l_0_4}, 3600)
+      end
+      do
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
+    end
   end
-end
-do
-  return mp.CLEAN
 end
 

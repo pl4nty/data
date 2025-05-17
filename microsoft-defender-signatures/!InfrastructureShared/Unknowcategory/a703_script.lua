@@ -3,38 +3,74 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\utilman.exe$") then
-  return mp.CLEAN
-end
 do
-  if (string.find)(l_0_0, "\\systray.exe$") then
-    local l_0_1 = (versioning.GetOrgID)()
-    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
-      return mp.CLEAN
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
+      (bm.add_related_file)(l_0_0)
+      ;
+      (mp.ReportLowfi)(l_0_0, 1002594803)
     end
   end
-  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
-  if l_0_3 == nil or #l_0_3 == 0 then
-    return mp.CLEAN
-  end
-  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\utilman.exe")
-  if l_0_4 ~= nil then
-    local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
-    if l_0_5 == nil or (string.len)(l_0_5) <= 1 then
-      return mp.CLEAN
+  do
+    if (this_sigattrlog[2]).matched then
+      local l_0_1 = (this_sigattrlog[2]).utf8p2
+      if l_0_1 ~= nil and (sysio.IsFileExists)(l_0_1) then
+        (bm.add_related_file)(l_0_1)
+        ;
+        (mp.ReportLowfi)(l_0_1, 1696514977)
+      end
     end
-  else
     do
-      do return mp.CLEAN end
-      local l_0_6, l_0_7 = (bm.get_process_relationships)()
-      for l_0_11,l_0_12 in ipairs(l_0_6) do
-        if l_0_12.image_path ~= nil and (string.find)((string.lower)(l_0_12.image_path), "winlogon.exe", 1, true) then
-          return mp.INFECTED
+      if (this_sigattrlog[3]).matched then
+        local l_0_2 = (this_sigattrlog[3]).utf8p2
+        if l_0_2 ~= nil and (sysio.IsFileExists)(l_0_2) then
+          (bm.add_related_file)(l_0_2)
+          ;
+          (mp.ReportLowfi)(l_0_2, 2037309813)
         end
       end
-      return mp.CLEAN
+      do
+        if (this_sigattrlog[4]).matched then
+          local l_0_3 = (this_sigattrlog[4]).utf8p2
+          if l_0_3 ~= nil and (sysio.IsFileExists)(l_0_3) then
+            (bm.add_related_file)(l_0_3)
+            ;
+            (mp.ReportLowfi)(l_0_3, 3163967254)
+          end
+        end
+        do
+          if (this_sigattrlog[5]).matched then
+            local l_0_4 = (this_sigattrlog[5]).utf8p2
+            if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
+              (bm.add_related_file)(l_0_4)
+              ;
+              (mp.ReportLowfi)(l_0_4, 4100536160)
+            end
+          end
+          do
+            if (this_sigattrlog[6]).matched then
+              local l_0_5 = (this_sigattrlog[6]).utf8p2
+              if l_0_5 ~= nil and (sysio.IsFileExists)(l_0_5) then
+                (bm.add_related_file)(l_0_5)
+                ;
+                (mp.ReportLowfi)(l_0_5, 1676364795)
+              end
+            end
+            do
+              if (this_sigattrlog[7]).matched then
+                local l_0_6 = (this_sigattrlog[7]).utf8p2
+                if l_0_6 ~= nil and (sysio.IsFileExists)(l_0_6) then
+                  (bm.add_related_file)(l_0_6)
+                  ;
+                  (mp.ReportLowfi)(l_0_6, 372502474)
+                end
+              end
+              return mp.INFECTED
+            end
+          end
+        end
+      end
     end
   end
 end

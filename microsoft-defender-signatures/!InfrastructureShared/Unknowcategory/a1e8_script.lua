@@ -3,18 +3,16 @@
 
 -- params : ...
 -- function num : 0
-add_related_file_if_exists = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0.matched and l_1_0.utf8p2 ~= nil then
-    local l_1_1 = (mp.ContextualExpandEnvironmentVariables)(l_1_0.utf8p2)
-    ;
-    (bm.add_related_file)(l_1_1)
+do
+  if not (mp.get_mpattribute)("pea_genpacked") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 71168 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
-
-add_related_file_if_exists(this_sigattrlog[1])
-add_related_file_if_exists(this_sigattrlog[2])
-add_related_file_if_exists(this_sigattrlog[3])
-add_related_file_if_exists(this_sigattrlog[4])
-return mp.INFECTED
 

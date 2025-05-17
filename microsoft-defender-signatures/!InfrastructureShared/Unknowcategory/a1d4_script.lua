@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 12 then
-  (mp.set_mpattribute)("PUA:Block:SGMinerAvermore")
-  return mp.INFECTED
-end
-if (mp.bitand)(mp.HSTR_WEIGHT, 3) >= 2 then
-  if peattributes.amd64_image then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_sgminer")
-  else
+local l_0_0 = {}
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28768 then
+    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
+    l_0_0.TlsJa3CHash = l_0_5
     ;
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan_sgminer")
+    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
   end
 end
-return mp.CLEAN
+return mp.INFECTED
 

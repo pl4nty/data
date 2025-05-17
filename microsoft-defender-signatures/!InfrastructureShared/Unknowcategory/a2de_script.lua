@@ -3,26 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 4 then
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[2]).RVA == 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size == 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[13]).RVA == 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[13]).Size == 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).RVA ~= 36864 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size <= 65536 then
-  return mp.CLEAN
-end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

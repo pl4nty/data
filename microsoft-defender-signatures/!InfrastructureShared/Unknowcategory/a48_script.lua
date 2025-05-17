@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if #(mp.GetProcessCommandLine)(l_0_0) > 200 then
+if not (mp.get_mpattribute)("elfa_isharedlib") then
   return mp.CLEAN
 end
 return mp.INFECTED

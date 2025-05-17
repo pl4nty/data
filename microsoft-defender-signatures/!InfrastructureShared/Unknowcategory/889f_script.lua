@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (hstrlog[6]).matched and (hstrlog[7]).matched then
-    local l_0_0 = mp.HSTR_WEIGHT - 2
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 >= 5 then
-    return mp.INFECTED
-  end
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_vbinject_ky")
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+if (string.find)(l_0_0.ProductName, "AUTORUN", 1, true) == nil or (string.find)(l_0_0.FileDescription, "AUTORUN", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

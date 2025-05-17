@@ -3,12 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (hstrlog[3]).matched and l_0_0 >= 163840 and l_0_0 <= 196608 then
-  return mp.INFECTED
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 10, 32)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+if (mp.readu_u32)(l_0_0, 14) ~= l_0_1 then
+  return mp.CLEAN
 end
-if peattributes.no_security == true and l_0_0 >= 163840 and l_0_0 <= 176128 and pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 8 and (mp.get_mpattribute)("NID:Emotet.PB!MSR!Pra1") then
-  return mp.INFECTED
+local l_0_2 = (mp.readu_u32)(l_0_0, 7)
+l_0_0 = (pe.mmap_va)(l_0_2, 4)
+local l_0_3 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
+if l_0_3 ~= 1269389306 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(l_0_1, "\221\a")
+return mp.INFECTED
 

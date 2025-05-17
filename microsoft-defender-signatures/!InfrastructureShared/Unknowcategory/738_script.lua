@@ -4,11 +4,8 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:len() < 6 then
-  return mp.CLEAN
-end
-if (string.sub)(l_0_0, -5) == "..wsf" then
-  return mp.INFECTED
+if (string.sub)(l_0_0, -12) == "\\temp\\tl.vbs" then
+  (mp.set_mpattribute)("Lua:FakePAVVBSFileName.A")
 end
 return mp.CLEAN
 

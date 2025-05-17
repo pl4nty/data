@@ -3,30 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[3]).matched or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2) ~= nil) and (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2) ~= "" then
-    local l_0_5 = nil
-    for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2))) do
-      local l_0_6 = nil
-      -- DECOMPILER ERROR at PC37: Confused about usage of register: R6 in 'UnsetPending'
-
-      if R6_PC37 ~= nil and R6_PC37 ~= "" and (sysio.IsFileExists)(R6_PC37) and not (mp.IsKnownFriendlyFile)(R6_PC37, false, false) then
-        (bm.add_related_file)(R6_PC37)
-      end
-    end
-  end
-  do
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\python", 1, true) then
     return mp.INFECTED
   end
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\microsoft vs code\\", 1, true) or (string.find)(l_0_0, "microsoft.watson", 1, true) or (string.find)(l_0_0, "mpsigstub.exe", 1, true) or (string.find)(l_0_0, "virtualboxvm.exe", 1, true) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
+return mp.CLEAN
 

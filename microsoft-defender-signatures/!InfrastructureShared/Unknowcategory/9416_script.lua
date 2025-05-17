@@ -3,12 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "torrent.exe", 1, true) then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if mp.SIGATTR_LOG_SZ > 5 then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
   end
-  return mp.INFECTED
+  for l_0_6 = mp.SIGATTR_LOG_SZ, 1, -1 do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC15: Confused about usage of register: R4 in 'UnsetPending'
+
+    if (sigattr_tail[R4_PC15]).attribute ~= 12305 and (sigattr_tail[R4_PC15]).attribute ~= 12362 then
+      if (sigattr_tail[R4_PC15]).attribute == 12421 then
+        return mp.INFECTED
+      else
+        return mp.CLEAN
+      end
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

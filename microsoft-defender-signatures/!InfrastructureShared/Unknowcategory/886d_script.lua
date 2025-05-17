@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-do
-  if l_0_0 ~= nil and l_0_0.command_line ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.command_line)
-    if l_0_1:find("azurearcagent", 1, true) then
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or not (mp.get_mpattribute)("pea_hasexports") then
   return mp.CLEAN
 end
+if (mp.getfilesize)() > 2097152 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 2048000 then
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("SIGA:MSIL/Suspicious.CreateRunKey.B") then
   return mp.INFECTED
 end
 return mp.CLEAN

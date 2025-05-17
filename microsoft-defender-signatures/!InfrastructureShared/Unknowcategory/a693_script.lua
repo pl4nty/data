@@ -3,26 +3,47 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
-local l_0_1 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, 4), 1)
-local l_0_2 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0 - 16, 4), 1)
-local l_0_3 = 0
-if l_0_0 == 104 then
-  l_0_3 = 32
-else
-  if l_0_0 == 88 then
-    l_0_3 = 16
-  else
-    return mp.CLEAN
-  end
+if peattributes.hasexports == true then
+  return mp.CLEAN
 end
-local l_0_4 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0 + l_0_3, 4), 1)
-if l_0_4 ~= 4096 and l_0_4 ~= 4097 then
+if peattributes.isdll ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 6 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
+  return mp.CLEAN
+end
+if (pesecs[1]).NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 233 then
+  return mp.CLEAN
+end
+if epcode[4] ~= 255 then
+  return mp.CLEAN
+end
+if epcode[5] ~= 255 then
+  return mp.CLEAN
+end
+if (pesecs[1]).PointerToRawData ~= 1024 then
   return mp.CLEAN
 end
 ;
-(mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (mp.bitand)((mp.shr32)(l_0_1, 2), 255), (mp.bitand)((mp.shr32)(l_0_2, 2), 255)))
-;
-(mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!l1_cnt_%08X", l_0_4))
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pesecs[1]).PointerToRawData, 80)
+if l_0_0:byte(1) ~= 85 then
+  return mp.CLEAN
+end
+if l_0_0:byte(54) ~= 80 then
+  return mp.CLEAN
+end
+if l_0_0:byte(79) ~= 85 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

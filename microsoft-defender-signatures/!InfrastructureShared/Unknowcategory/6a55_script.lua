@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and peattributes.ismsil == true then
-  return mp.INFECTED
+local l_0_0 = (pe.get_regval)(pe.REG_EDI) - 262148
+if l_0_0 == 7749888 then
+  (pe.mmap_patch_va)(l_0_0, "h\000Az\000\195")
 end
-return mp.CLEAN
+return mp.INFECTED
 

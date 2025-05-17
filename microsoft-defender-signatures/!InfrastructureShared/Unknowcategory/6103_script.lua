@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%-%>%(%w+Sfx%)%-%>CMT$") == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT > 8 and mp.HSTR_WEIGHT < 18 then
+  (mp.set_mpattribute)("HSTR:Hicrazyk.D1")
 end
 return mp.INFECTED
 

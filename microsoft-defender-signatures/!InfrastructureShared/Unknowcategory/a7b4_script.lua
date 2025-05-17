@@ -3,64 +3,61 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.mmap_va)(pevars.sigaddr + 2, 4) == "`\174\n\000" or (pe.mmap_va)(pevars.sigaddr + 2, 4) == "‡ì\004\000" or (pe.mmap_va)(pevars.sigaddr + 2, 4) == "@B\015\000" or (pe.mmap_va)(pevars.sigaddr + 2, 4) == "\128\132\030\000" or (pe.mmap_va)(pevars.sigaddr + 2, 4) == "\136\019\000\000" or (pe.mmap_va)(pevars.sigaddr + 2, 4) == "@KL\000") and ((pe.mmap_va)(pevars.sigaddr + 9, 1) == "]" or (pe.mmap_va)(pevars.sigaddr + 9, 1) == "}") then
-  (pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
+(mp.readprotection)(false)
+if (hstrlog[1]).matched then
+  local l_0_0 = (mp.readfile)((pe.foffset_va)((hstrlog[1]).VA + 14), 1)
+  local l_0_1 = (mp.readfile)((pe.foffset_va)((hstrlog[1]).VA + 17), 1)
   ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 11, "\235")
-  ;
-  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-  local l_0_0 = 256
-  local l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
-  local l_0_2 = (string.find)(l_0_1, "h@B\015%z")
-  local l_0_3 = (string.find)(l_0_1, "`\174\n%z")
-  local l_0_4 = (string.find)(l_0_1, "j%z")
-  local l_0_5 = (string.find)(l_0_1, "j\002", 1, true)
-  local l_0_6 = (string.find)(l_0_1, "\255%z%z%zj")
-  local l_0_7 = (string.find)(l_0_1, "\255%z%z%zh")
-  local l_0_8 = (string.find)(l_0_1, "j\001", 1, true)
-  local l_0_9 = (string.find)(l_0_1, "h\001%z\031%z")
-  local l_0_10 = (string.find)(l_0_1, "h\132\003%z%z")
-  local l_0_11 = (string.find)(l_0_1, "h \003%z%z")
-  if l_0_2 and l_0_3 then
-    if l_0_4 and l_0_5 then
-      for l_0_15 = 1, 48 do
-        if (pe.mmap_va)(pevars.sigaddr + l_0_15 + l_0_5, 3) == "\000\255\021" then
-          (pe.mmap_patch_va)(pevars.sigaddr + l_0_15 + l_0_5 + 1, "YYYêê\144")
-        end
-      end
-    end
-    do
-      if (l_0_6 or l_0_7) and l_0_8 then
-        for l_0_19 = 1, 48 do
-          if (pe.mmap_va)(pevars.sigaddr + l_0_19 + l_0_8, 3) == "\000\255\021" then
-            (pe.mmap_patch_va)(pevars.sigaddr + l_0_19 + l_0_8 + 1, "YYYêê\144")
-          end
-        end
-      end
+  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_0), (string.byte)(l_0_1)))
+else
+  do
+    if (hstrlog[2]).matched then
+      local l_0_2 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA + 6), 1)
+      local l_0_3 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA + 14), 1)
+      ;
+      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_2), (string.byte)(l_0_3)))
+    else
       do
-        if l_0_9 then
-          for l_0_23 = 1, 48 do
-            if (pe.mmap_va)(pevars.sigaddr + l_0_23 + l_0_9, 3) == "\000\255\021" then
-              (pe.mmap_patch_va)(pevars.sigaddr + l_0_23 + l_0_9 + 1, "YYYêê\144")
-            end
-          end
-        end
-        do
-          if l_0_10 or l_0_11 then
-            for l_0_27 = 1, 160 do
-              if (pe.mmap_va)(pevars.sigaddr + l_0_27 + l_0_3, 1) == "\232" then
-                (pe.mmap_patch_va)(pevars.sigaddr + l_0_27 + l_0_3, "êêêê\144")
-              else
-                if (pe.mmap_va)(pevars.sigaddr + l_0_27 + l_0_3, 2) == "\255\021" then
-                  (pe.mmap_patch_va)(pevars.sigaddr + l_0_27 + l_0_3, "êêêêêê")
+        if (hstrlog[3]).matched then
+          local l_0_4 = (mp.readfile)((pe.foffset_va)((hstrlog[3]).VA + 4), 1)
+          local l_0_5 = (mp.readfile)((pe.foffset_va)((hstrlog[3]).VA + 12), 1)
+          ;
+          (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_4), (string.byte)(l_0_5)))
+        else
+          do
+            if (hstrlog[4]).matched then
+              local l_0_6 = (mp.readfile)((pe.foffset_va)((hstrlog[4]).VA + 6), 1)
+              local l_0_7 = (mp.readfile)((pe.foffset_va)((hstrlog[4]).VA + 14), 1)
+              ;
+              (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_6), (string.byte)(l_0_7)))
+            else
+              do
+                if (hstrlog[5]).matched then
+                  local l_0_8 = (mp.readfile)((pe.foffset_va)((hstrlog[5]).VA - 1), 1)
+                  local l_0_9 = (mp.readfile)((pe.foffset_va)((hstrlog[5]).VA + 11), 1)
+                  ;
+                  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_8), (string.byte)(l_0_9)))
+                else
+                  do
+                    if (hstrlog[6]).matched then
+                      local l_0_10 = (mp.readfile)((pe.foffset_va)((hstrlog[6]).VA + 9), 1)
+                      ;
+                      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_10), 6))
+                    else
+                      do
+                        do
+                          if (hstrlog[7]).matched then
+                            local l_0_11 = (mp.readfile)((pe.foffset_va)((hstrlog[7]).VA + 9), 1)
+                            ;
+                            (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k1_k2.0_%02X%02X", (string.byte)(l_0_11), 6))
+                          end
+                          return mp.INFECTED
+                        end
+                      end
+                    end
+                  end
                 end
               end
-            end
-          end
-          do
-            do
-              do return mp.INFECTED end
-              return mp.CLEAN
             end
           end
         end

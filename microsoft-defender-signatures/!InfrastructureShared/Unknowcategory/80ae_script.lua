@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 and (string.find)((string.lower)(l_0_0.image_path), "sbsimulation_sb_", 1, true) then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win32/Empire.B")
-return mp.LOWFI
+return mp.CLEAN
 

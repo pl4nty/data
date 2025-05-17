@@ -3,23 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("SCPT:Rebhip_Config!B") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 50000 or l_0_0 > 500000 then
-  return mp.CLEAN
-end
-local l_0_1 = headerpage[1]
-if l_0_1 ~= 67 and l_0_1 ~= 99 then
-  return mp.CLEAN
-end
-l_0_1 = headerpage[2]
-if l_0_1 ~= 58 then
-  return mp.CLEAN
-end
-l_0_1 = headerpage[3]
-if l_0_1 ~= 92 then
+if pevars.epsec < 4 or pehdr.NumberOfSections < pevars.epsec or (pesecs[pevars.epsec]).NameDW ~= (pesecs[pevars.epsec - 1]).NameDW or (pesecs[pevars.epsec - 1]).SizeOfRawData ~= 0 or (pesecs[pevars.epsec - 1]).PointerToRawData ~= 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() < 8192 then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:AMCleaner.TA")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

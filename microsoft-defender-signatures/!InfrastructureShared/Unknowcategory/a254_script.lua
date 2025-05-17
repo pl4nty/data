@@ -3,18 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 30, 64)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-if (mp.readu_u32)(l_0_0, 47) ~= l_0_1 then
+if not (mp.get_mpattribute)("LUA:FileSizeLE5000.A") then
   return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u32)(l_0_0, 8)
-l_0_0 = (pe.mmap_va)(l_0_2, 4)
-local l_0_3 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
-if l_0_3 ~= 1269389306 then
-  return mp.CLEAN
+local l_0_0, l_0_1 = nil, nil
+local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+if l_0_2 == nil then
+  l_0_0 = (mp.getfilename)()
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  l_0_1 = l_0_0:sub(-5)
+else
+  l_0_1 = l_0_2:sub(-5)
 end
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a\005\000")
-return mp.INFECTED
+if (string.find)(l_0_1:lower(), ".asp") then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

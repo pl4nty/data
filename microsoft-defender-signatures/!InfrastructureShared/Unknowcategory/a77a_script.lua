@@ -3,72 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
+if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 ~= nil then
+  local l_0_0 = (bm.get_current_process_startup_info)()
+  local l_0_1 = (string.lower)(l_0_0.command_line)
+  if (string.find)(l_0_1, "chocolatey.", 1, true) or (string.find)(l_0_1, "-appxprovisioned", 1, true) or (string.find)(l_0_1, ".visualstudio.com", 1, true) or (string.find)(l_0_1, ".azure.com", 1, true) or (string.find)(l_0_1, "cloudtest", 1, true) or (string.find)(l_0_1, " -nologo ", 1, true) or (string.find)(l_0_1, " -noprofile ", 1, true) or (string.find)(l_0_1, "get-windowsoptionalfeature", 1, true) or (string.find)(l_0_1, "enableagent", 1, true) or (string.find)(l_0_1, "\\syncro\\", 1, true) or (string.find)(l_0_1, "\\program files", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.lower)((this_sigattrlog[6]).utf8p1)
+  if (string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "\\chocolatey", 1, true) or (string.find)(l_0_2, "\\dismhost.exe", 1, true) or (string.find)(l_0_2, "\\lgpo.exe", 1, true) then
+    return mp.CLEAN
+  end
+  if (mp.IsKnownFriendlyFile)(l_0_2, true, false) == false then
+    (bm.add_related_file)(l_0_2)
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if pehdr.Subsystem ~= 2 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).RVA <= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size < 32 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).Size > 256 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[5]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[10]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[12]).Size ~= 0 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 1) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 5) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 9) ~= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 17) ~= 1 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 21) ~= 5 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) ~= 5 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 29) <= 0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 18)
-if (mp.crc32)(-1, l_0_1, 1, 10) ~= 3287701648 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

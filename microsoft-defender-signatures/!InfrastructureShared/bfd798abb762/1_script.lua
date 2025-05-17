@@ -52,7 +52,7 @@ do
 
   -- DECOMPILER ERROR at PC82: Overwrote pending register: R7 in 'AssignReg'
 
-  if not (".shop/")(".hair/", "invoke-wmimethod") then
+  if not (".shop")(".hair", "invoke-wmimethod") then
     return mp.CLEAN
   end
   do return mp.INFECTED end

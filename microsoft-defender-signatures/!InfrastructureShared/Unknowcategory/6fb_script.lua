@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 ~= nil and l_0_0.CompanyName == "Brain Damage LLC" then
+if (mp.get_mpattributesubstring)("TEL:Ransom:HTML/") or (mp.get_mpattributesubstring)("TEL:Ransom:TXT/") then
   return mp.INFECTED
 end
 return mp.CLEAN

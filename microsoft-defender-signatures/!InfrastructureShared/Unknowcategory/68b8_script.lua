@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 <= 2097152 then
+local l_0_0 = (mp.getfilename)()
+if (string.find)((string.lower)(l_0_0), ".sdb$") ~= nil then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("ALF:Trojan:Win32/GenMal.A")
 return mp.CLEAN
 

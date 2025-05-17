@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "assets/meta-data", 1, true) then
+if peattributes.isdll == true and peattributes.hasexports == true and (pe.get_exports_count)() == 19 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,13 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-if R1_PC17 ~= nil and (pe.get_exports)() == 1 then
+if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:GoMainFunc") and (mp.get_mpattribute)("LUA:FileSizeGT12M.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

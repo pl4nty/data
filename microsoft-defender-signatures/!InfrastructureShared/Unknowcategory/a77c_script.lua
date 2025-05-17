@@ -3,60 +3,66 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC189: Unhandled construct in 'MakeBoolean' P3
-
-if (pehdr.NumberOfSections >= 4 and (pesecs[2]).NameDW == 1634952494) or (((pesecs[3]).NameDW == 1633974062 and (pesecs[3]).Name == ".wdat1") or pehdr.NumberOfSections < 5 or pehdr.NumberOfSections >= 10 and ((pesecs[1]).NameDW == 1481002542 or pehdr.NumberOfSections < 6 or (pesecs[6]).NameDW == 1481002542)) then
-  return mp.INFECTED
+if peattributes.isdll ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.hasexports ~= true then
+  return mp.CLEAN
+end
+if pehdr.Subsystem ~= 2 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).RVA <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).Size <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).Size >= 256 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).Size ~= 0 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
+if (mp.readu_u32)(l_0_0, 1) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 5) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 9) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 13) <= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 17) ~= 1 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 21) ~= 4 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 25) ~= 4 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 29) <= 0 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 13)
+if (mp.crc32)(-1, l_0_1, 1, 13) ~= 3058262260 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

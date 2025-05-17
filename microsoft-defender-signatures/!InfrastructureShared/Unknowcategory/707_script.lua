@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 2 and (pesecs[pehdr.NumberOfSections]).Name == ".imports" then
-  return mp.INFECTED
+if (mp.readu_u32)(headerpage, 1) ~= 175662436 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.readu_u32)(headerpage, 5) ~= 3486512 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

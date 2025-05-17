@@ -3,22 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC10: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC34: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
+      local l_0_1, l_0_2, l_0_3 = ((this_sigattrlog[2]).utf8p1):lower()
+    else
+    end
+    -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
+
+    if ((this_sigattrlog[4]).matched and ((this_sigattrlog[4]).utf8p1):lower() == nil) or ((this_sigattrlog[4]).utf8p1):lower() == "https://clients2.google.com/service/update2/crx" then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
+  end
 end
-if not peattributes.amd64_image then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-  ;
-  (pe.reemulate)()
-end
-return mp.INFECTED
 

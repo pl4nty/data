@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 and (string.find)((string.lower)(l_0_0), "\\servicing\\packages\\microsoft%-windows%-client%-desktop%-required%-package.+%.mum") then
-  (mp.set_mpattribute)("SelectableWinDefendPkgInServicing")
+if pehdr.NumberOfSections > 3 and (pesecs[2]).VirtualSize > 336 and (pesecs[2]).VirtualSize < 432 and (pesecs[3]).VirtualSize >= 13354 and (pesecs[3]).VirtualSize <= 13356 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

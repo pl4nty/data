@@ -3,18 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p1)
-if (string.find)(l_0_0, ":\\windows\\", 1, true) then
-  return mp.CLEAN
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 20), "|", 1, true) - 1
+if (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "t\005", 1, true) == nil then
+  local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "u\002", 1, true) - 2 - l_0_0 - 1
+  local l_0_2 = (string.format)("\235%s", (string.char)(l_0_1))
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_0, l_0_2)
+  return mp.INFECTED
 end
-l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
-if l_0_1 == nil or (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
-  return mp.CLEAN
-end
-;
-(bm.add_threat_file)(l_0_0)
-;
-(bm.add_threat_file)(l_0_1)
-return mp.INFECTED
 

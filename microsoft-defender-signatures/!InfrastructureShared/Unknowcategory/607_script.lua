@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)((string.lower)(l_0_0), ".ini") ~= nil then
+if (mp.get_sigattr_event_count)(16385) > 10 and (mp.get_sigattr_event_count)(16386) > 10 then
   return mp.INFECTED
 end
 return mp.CLEAN

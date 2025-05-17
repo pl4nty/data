@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.NumberOfSections == 4 and pehdr.SizeOfImage >= 3342336 and pehdr.SizeOfImage <= 3538944 and (pesecs[pehdr.NumberOfSections]).Name == ".rsrc" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData == 32768 then
-  return mp.SUSPICIOUS
+if pevars.epsec == 1 and (pesecs[pevars.epsec]).Name == ".text" and (pesecs[2]).Name == ".data" and (pesecs[3]).Name == ".rsrc" and peattributes.no_decription and peattributes.suspicious_image_version then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

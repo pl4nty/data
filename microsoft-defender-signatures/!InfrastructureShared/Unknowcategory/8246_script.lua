@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  (bm.request_SMS)(l_0_0.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1000)
+if pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("Lua:OverSizedLnkFile") and (mp.getfilesize)() < 1024000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

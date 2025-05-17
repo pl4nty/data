@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  if pehdr.Subsystem == 1 then
-    (mp.changedetectionname)(805306439)
-  else
-    if pehdr.Machine == 34404 then
-      (mp.changedetectionname)(805306438)
-    end
-  end
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\144")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 42, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 40, ";\203")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "\000")
+return mp.INFECTED
 

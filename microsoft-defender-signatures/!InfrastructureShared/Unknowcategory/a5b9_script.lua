@@ -3,17 +3,25 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:ZwangiDll")
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
-if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or not (hstrlog[8]).matched) and (hstrlog[14]).matched) or (hstrlog[7]).matched) and 1 or 0) + ((hstrlog[13]).matched and 1 or 0) + ((hstrlog[15]).matched and 1 or 0) + ((hstrlog[16]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  if l_0_0 == nil and (string.len)(l_0_0) < 3 then
+    return mp.CLEAN
+  end
+  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
+  local l_0_1 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
+  if l_0_1 == nil and (string.len)(l_0_1) < 3 then
+    return mp.CLEAN
+  end
+  local l_0_2 = {}
+  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\windows\\"))] = true
+  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\"))] = true
+  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\windows\\"))] = true
+  if l_0_2[l_0_1] then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

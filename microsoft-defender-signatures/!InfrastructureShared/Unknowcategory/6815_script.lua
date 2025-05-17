@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("pea_no_security") then
-  return mp.INFECTED
+if (hstrlog[5]).matched or (hstrlog[6]).matched then
+  (mp.changedetectionname)(805306370)
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,32 +3,79 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID or l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_PROTECTED_PROCESS_RID then
-  return mp.CLEAN
-end
-local l_0_1, l_0_2 = nil, nil
 if (this_sigattrlog[1]).matched then
-  l_0_1 = (this_sigattrlog[1]).timestamp
+  local l_0_0 = nil
+  if (this_sigattrlog[2]).matched then
+    l_0_0 = (this_sigattrlog[2]).utf8p2
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_0 = (this_sigattrlog[3]).utf8p2
+    else
+      if (this_sigattrlog[4]).matched then
+        l_0_0 = (this_sigattrlog[4]).utf8p2
+      else
+        if (this_sigattrlog[5]).matched then
+          l_0_0 = (this_sigattrlog[5]).utf8p2
+        else
+          if (this_sigattrlog[6]).matched then
+            l_0_0 = (this_sigattrlog[6]).utf8p2
+          else
+            if (this_sigattrlog[7]).matched then
+              l_0_0 = (this_sigattrlog[7]).utf8p2
+            else
+              if (this_sigattrlog[8]).matched then
+                l_0_0 = (this_sigattrlog[8]).utf8p2
+              else
+                if (this_sigattrlog[9]).matched then
+                  l_0_0 = (this_sigattrlog[9]).utf8p2
+                else
+                  if (this_sigattrlog[10]).matched then
+                    l_0_0 = (this_sigattrlog[10]).utf8p2
+                  else
+                    if (this_sigattrlog[11]).matched then
+                      l_0_0 = (this_sigattrlog[11]).utf8p2
+                    else
+                      if (this_sigattrlog[12]).matched then
+                        l_0_0 = (this_sigattrlog[12]).utf8p2
+                      else
+                        if (this_sigattrlog[13]).matched then
+                          l_0_0 = (this_sigattrlog[13]).utf8p2
+                        else
+                          if (this_sigattrlog[14]).matched then
+                            l_0_0 = (this_sigattrlog[14]).utf8p2
+                          else
+                            if (this_sigattrlog[15]).matched then
+                              l_0_0 = (this_sigattrlog[15]).utf8p2
+                            else
+                              if (this_sigattrlog[16]).matched then
+                                l_0_0 = (this_sigattrlog[16]).utf8p2
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  if not l_0_0 then
+    return mp.CLEAN
+  end
+  local l_0_1 = (this_sigattrlog[1]).utf8p2
+  if not l_0_1 then
+    return mp.CLEAN
+  end
+  if l_0_1 == l_0_0 then
+    return mp.INFECTED
+  end
 end
-if (this_sigattrlog[2]).matched then
-  l_0_1 = (this_sigattrlog[2]).timestamp
-end
-if (this_sigattrlog[3]).matched then
-  l_0_1 = (this_sigattrlog[3]).timestamp
-end
-if (this_sigattrlog[4]).matched then
-  l_0_2 = (this_sigattrlog[4]).timestamp
-end
-if l_0_2 < l_0_1 or l_0_0.ppid == nil or (string.find)(l_0_0.ppid, "pid:4$", 1, false) ~= nil or (string.find)(l_0_0.ppid, "pid:4,", 1, true) ~= nil then
+do
   return mp.CLEAN
 end
-local l_0_3 = (MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[4]).ppid)
-if l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_MEDIUM_RID and l_0_3.IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-  return mp.INFECTED
-end
-if l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_HIGH_RID and l_0_3.IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 1, "\245")
-return mp.INFECTED
+if peattributes.ismsil and peattributes.isexe then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

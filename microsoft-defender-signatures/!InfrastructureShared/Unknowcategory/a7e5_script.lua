@@ -3,117 +3,57 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-if (hstrlog[1]).matched then
-  local l_0_0 = (mp.readfile)((pe.foffset_va)((hstrlog[1]).VA + 8), 1)
-  local l_0_1 = (mp.readfile)((pe.foffset_va)((hstrlog[1]).VA + 11), 1)
-  local l_0_2 = (mp.readfile)((pe.foffset_va)((hstrlog[1]).VA + 14), 1)
-  ;
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!hdsz.1C")
-  ;
-  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k3.0_%02X", (string.byte)(l_0_0)))
-  ;
-  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_%02X%02X", (string.byte)(l_0_1), (string.byte)(l_0_2)))
-else
-  do
-    if (hstrlog[2]).matched then
-      local l_0_3 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA + 8), 1)
-      local l_0_4 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA + 11), 1)
-      local l_0_5 = (mp.readfile)((pe.foffset_va)((hstrlog[2]).VA + 14), 1)
-      ;
-      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!hdsz.1C")
-      ;
-      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k3.0_%02X", (string.byte)(l_0_3)))
-      ;
-      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_%02X%02X", (string.byte)(l_0_4), (mp.bitand)(-(string.byte)(l_0_5), 255)))
-    else
-      do
-        if (hstrlog[3]).matched then
-          local l_0_6 = (mp.readfile)((pe.foffset_va)((hstrlog[3]).VA + 8), 1)
-          local l_0_7 = (mp.readfile)((pe.foffset_va)((hstrlog[3]).VA + 11), 1)
-          local l_0_8 = (mp.readfile)((pe.foffset_va)((hstrlog[3]).VA + 14), 1)
-          ;
-          (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!hdsz.1C")
-          ;
-          (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k3.0_%02X", (string.byte)(l_0_6)))
-          ;
-          (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_%02X%02X", (string.byte)(l_0_7), (mp.bitand)(-(string.byte)(l_0_8), 255)))
-        else
-          do
-            if (hstrlog[4]).matched then
-              local l_0_9 = (mp.readfile)((pe.foffset_va)((hstrlog[4]).VA + 8), 1)
-              local l_0_10 = (mp.readfile)((pe.foffset_va)((hstrlog[4]).VA + 11), 1)
-              local l_0_11 = (mp.readfile)((pe.foffset_va)((hstrlog[4]).VA + 14), 1)
-              ;
-              (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!hdsz.1C")
-              ;
-              (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k3.0_%02X", (mp.bitand)(-(string.byte)(l_0_9), 255)))
-              ;
-              (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_%02X%02X", (string.byte)(l_0_10), (mp.bitand)(-(string.byte)(l_0_11), 255)))
-            else
-              do
-                if (hstrlog[5]).matched then
-                  local l_0_12 = (mp.readfile)((pe.foffset_va)((hstrlog[5]).VA + 6), 1)
-                  local l_0_13 = (mp.readfile)((pe.foffset_va)((hstrlog[5]).VA + 12), 1)
-                  local l_0_14 = (mp.readfile)((pe.foffset_va)((hstrlog[5]).VA + 18), 1)
-                  ;
-                  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!hdsz.1C")
-                  ;
-                  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k3.0_%02X", (string.byte)(l_0_12)))
-                  ;
-                  (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_%02X%02X", (string.byte)(l_0_13), (string.byte)(l_0_14)))
-                else
-                  do
-                    if (hstrlog[6]).matched then
-                      local l_0_15 = (mp.readfile)((pe.foffset_va)((hstrlog[6]).VA + 6), 1)
-                      local l_0_16 = (mp.readfile)((pe.foffset_va)((hstrlog[6]).VA + 9), 1)
-                      local l_0_17 = (mp.readfile)((pe.foffset_va)((hstrlog[6]).VA + 12), 1)
-                      ;
-                      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!hdsz.1C")
-                      ;
-                      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k3.0_%02X", (string.byte)(l_0_15)))
-                      ;
-                      (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_%02X%02X", (string.byte)(l_0_16), (string.byte)(l_0_17)))
-                    else
-                      do
-                        if (hstrlog[7]).matched then
-                          local l_0_18 = (mp.readfile)((pe.foffset_va)((hstrlog[7]).VA + 6), 1)
-                          local l_0_19 = (mp.readfile)((pe.foffset_va)((hstrlog[7]).VA + 9), 1)
-                          local l_0_20 = (mp.readfile)((pe.foffset_va)((hstrlog[7]).VA + 12), 1)
-                          ;
-                          (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!hdsz.1C")
-                          ;
-                          (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k3.0_%02X", (string.byte)(l_0_18)))
-                          ;
-                          (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_%02X%02X", (string.byte)(l_0_19), (string.byte)(l_0_20)))
-                        else
-                          do
-                            if (hstrlog[8]).matched then
-                              local l_0_21 = (mp.readfile)((pe.foffset_va)((hstrlog[8]).VA + ((hstrlog[8]).match_offsets)[2]), 1)
-                              local l_0_22 = (mp.readfile)((pe.foffset_va)((hstrlog[8]).VA + ((hstrlog[8]).match_offsets)[3]), 1)
-                              local l_0_23 = (mp.readfile)((pe.foffset_va)((hstrlog[8]).VA + ((hstrlog[8]).match_offsets)[4]), 1)
-                              ;
-                              (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!hdsz.1C")
-                              ;
-                              (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k3.0_%02X", (string.byte)(l_0_21)))
-                              ;
-                              (mp.set_mpattribute)((string.format)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_%02X%02X", (string.byte)(l_0_22), (string.byte)(l_0_23)))
-                            end
-                            do
-                              return mp.INFECTED
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
+local l_0_0, l_0_1 = nil, nil
+local l_0_2 = nil
+local l_0_3 = nil
+if (bm.get_current_process_startup_info)() == nil or (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) == nil or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon.des", -22, true) then
+  return mp.CLEAN
+end
+local l_0_4, l_0_5 = nil
+if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) ~= nil then
+  for l_0_9,l_0_10 in ipairs(R7_PC44) do
+    local l_0_6, l_0_7 = (bm.get_process_relationships)()
+    -- DECOMPILER ERROR at PC46: Confused about usage of register: R10 in 'UnsetPending'
+
+    if R10_PC46.image_path ~= nil and R10_PC46.reason == bm.RELATIONSHIP_INJECTION then
+      if (string.find)((string.lower)(R10_PC46.image_path), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\system32\\mrt.exe", -17, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\asep_inv.exe", -13, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\mpsigstub.exe", -14, true) or (string.find)((string.lower)(R10_PC46.image_path), "\\gameguard\\gamemon.des", -22, true) then
+        return mp.CLEAN
+      end
+      l_0_3 = R10_PC46.ppid
+    end
+  end
+end
+do
+  -- DECOMPILER ERROR at PC109: Confused about usage of register: R4 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC112: Confused about usage of register: R4 in 'UnsetPending'
+
+  if l_0_6 ~= nil then
+    for l_0_15,l_0_16 in ipairs(l_0_6) do
+      local l_0_12, l_0_13 = nil
+      -- DECOMPILER ERROR at PC115: Confused about usage of register: R10 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC122: Confused about usage of register: R10 in 'UnsetPending'
+
+      if R10_PC46.image_path ~= nil then
+        l_0_2 = (string.lower)((MpCommon.PathToWin32Path)(R10_PC46.image_path))
+        if (string.find)(l_0_2, "\\mcafee\\systemcore\\mfehcs.exe", -29, true) or (string.find)(l_0_2, "(x86)\\pharossystems\\printscout\\ctskmstr.exe", -43, true) or (string.find)(l_0_2, "(x86)\\hp\\printscout\\ctskmstr.exe", -32, true) or (string.find)(l_0_2, "\\mcafee\\endpoint security\\threat prevention\\mfetp.exe", -53, true) or (string.find)(l_0_2, "\\anti-malware\\mbamservice.exe", -29, true) or (string.find)(l_0_2, "\\cnext\\radeonsoftware.exe", -25, true) or (string.find)(l_0_2, "(x86)\\panda security\\wac\\psanhost.exe", -37, true) or (string.find)(l_0_2, "(x86)\\cloudvolumes\\agent\\svservice.exe", -38, true) or (string.find)(l_0_2, "\\gameguard\\gamemon64.des", -24, true) or (string.find)(l_0_2, "\\gameguard\\gamemon.des", -22, true) or (string.find)(l_0_2, "(x86)\\f-secure\\server security\\", 1, true) then
+          return mp.CLEAN
         end
       end
     end
+  end
+  do
+    if (sysio.IsFileExists)(l_0_2) and not (mp.IsKnownFriendlyFile)(l_0_2, true, false) then
+      (bm.add_related_file)(l_0_2)
+    end
+    if (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, true, false) and l_0_3 ~= nil then
+      (bm.request_SMS)(l_0_3, "h+")
+      ;
+      (bm.add_related_file)(l_0_5)
+      return mp.INFECTED
+    end
+    return mp.CLEAN
   end
 end
 

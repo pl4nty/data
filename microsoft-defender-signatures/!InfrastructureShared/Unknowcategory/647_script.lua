@@ -3,36 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = false
-local l_0_1 = false
-local l_0_2 = nil
-local l_0_3, l_0_4 = (bm.get_process_relationships)()
-for l_0_8,l_0_9 in ipairs(l_0_3) do
-  l_0_2 = l_0_9.ppid
-  local l_0_10, l_0_11 = (bm.get_process_relationships)(l_0_2)
-  for l_0_15,l_0_16 in ipairs(l_0_10) do
-    if l_0_16.image_path ~= nil then
-      local l_0_17 = (string.lower)((MpCommon.PathToWin32Path)(l_0_16.image_path))
-      if not (string.find)(l_0_17, "\\calc.exe", -9, true) then
-        local l_0_18 = l_0_16.ppid
-        if (sysio.IsFileExists)(l_0_17) and not (mp.IsKnownFriendlyFile)(l_0_17, true, false) then
-          (bm.add_related_file)(l_0_17)
-          ;
-          (bm.request_SMS)(l_0_18, "m+")
-          l_0_0 = true
-        end
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSIsRemoteSession)
+if l_0_1 then
+  local l_0_2 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSUserName)
+  if (MpCommon.QueryPersistContextNoPath)("MpNewRemoteUsers", l_0_2) then
+    local l_0_3 = (this_sigattrlog[1]).utf8p1
+    if l_0_3 then
+      l_0_3 = (string.lower)(l_0_3)
+      if (string.find)(l_0_3, "vcredist_x64.exe", -16, true) or (string.find)(l_0_3, "vcredist_x86.exe", -16, true) or (string.find)(l_0_3, "GL.....%.tmp", -12) then
+        return mp.CLEAN
+      end
+      if (mp.IsKnownFriendlyFile)(l_0_3, false, false) then
+        return mp.CLEAN
       end
     end
-  end
-  if not (MpCommon.IsFriendlyProcess)(l_0_2) then
-    (bm.add_related_process)(l_0_2)
-    ;
-    (bm.request_SMS)(l_0_2, "m+")
-    l_0_1 = true
+    return mp.INFECTED
   end
 end
-if l_0_0 == false and l_0_3 ~= nil and l_0_1 == false then
-  (bm.request_SMS)(l_0_2, "m+")
+do
+  return mp.CLEAN
 end
-return mp.INFECTED
 

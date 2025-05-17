@@ -3,48 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    local l_0_1 = nil
-    -- DECOMPILER ERROR at PC30: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC44: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC49: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC51: Unhandled construct in 'MakeBoolean' P3
-
-    if ((this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil and not (this_sigattrlog[2]).matched) or nil ~= nil then
-      local l_0_2 = nil
-      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
-        local l_0_3 = nil
-        -- DECOMPILER ERROR at PC57: Confused about usage of register: R7 in 'UnsetPending'
-
-        if (sysio.IsFileExists)(R7_PC57) then
-          (bm.add_related_file)(R7_PC57)
-        end
-      end
-    end
-    do
-      if l_0_1 ~= nil then
-        local l_0_8 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-        for l_0_12,l_0_13 in ipairs(l_0_8) do
-          if (sysio.IsFileExists)(l_0_13) then
-            (bm.add_related_file)(l_0_13)
-          end
-        end
-      end
-      do
-        l_0_8 = mp
-        l_0_8 = l_0_8.INFECTED
-        return l_0_8
-      end
-    end
-  end
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_13")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
+local l_0_2 = (string.byte)(l_0_0, 9)
+local l_0_3 = (mp.readu_u32)(l_0_0, 13)
+local l_0_4 = (mp.readu_u32)(l_0_0, 24)
+local l_0_5 = (pe.get_regval)(pe.REG_EDX)
+local l_0_6 = (mp.ror32)(l_0_5, l_0_2) - (mp.bitxor)(l_0_4, l_0_3) + l_0_1 - 1
+;
+(pe.set_regval)(pe.REG_EBX, l_0_6)
+return mp.INFECTED
 

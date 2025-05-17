@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr
-local l_0_1 = (pe.mmap_va)(l_0_0 + 2287, 32)
-if (mp.readu_u32)(l_0_1, 1) ~= 1935939071 or (mp.readu_u32)(l_0_1, 5) ~= 3277652040 or (mp.readu_u16)(l_0_1, 9) == 52428 or (mp.readu_u32)(l_0_1, 11) == 3435973836 or (mp.readu_u32)(l_0_1, 15) == 3435973836 or (mp.readu_u32)(l_0_1, 18) == 3435973836 or (mp.readu_u32)(l_0_1, 22) ~= 1098924136 then
-  (mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Autoit!obfuscated")
+local l_0_0 = (nri.GetHttpRequestHeader)("User-Agent")
+local l_0_1 = (string.lower)((nri.GetURI)())
+local l_0_2 = (string.find)(l_0_1, "?", 1, true)
+if (string.find)(l_0_1, "&signature_id=%d+&_action_=getbin", l_0_2) == nil and (string.find)(l_0_0, "Guarded New Install System", 1, true) == nil then
   return mp.CLEAN
 end
-return mp.SUSPICIOUS
+local l_0_3 = {}
+l_0_3.useragent = l_0_0
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_3)
+return mp.INFECTED
 

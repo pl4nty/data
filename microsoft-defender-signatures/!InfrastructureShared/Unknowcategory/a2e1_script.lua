@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
-end
-if not l_0_0:find("impacket", 1, true) and not l_0_0:find("conficker", 1, true) and not l_0_0:find("\\salt", 1, true) and not l_0_0:find("metasploit", 1, true) then
+if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched) or (not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched) or (hstrlog[7]).matched) then
   return mp.INFECTED
 end
 return mp.CLEAN

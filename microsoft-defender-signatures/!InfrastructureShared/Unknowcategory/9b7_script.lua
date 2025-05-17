@@ -3,54 +3,94 @@
 
 -- params : ...
 -- function num : 0
-if mp.HEADERPAGE_SZ < 1024 then
-  return mp.CLEAN
+string_starts = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  do return (string.sub)(l_1_0, 1, (string.len)(l_1_1)) == l_1_1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
-if (mp.readu_u32)(headerpage, 1) ~= 67324752 then
-  return mp.CLEAN
+
+if (mp.get_mpattribute)("SCRIPT:Worm:JS/Bondat.A!lnk") then
+  if (mp.readu_u32)(headerpage, 1) ~= 76 then
+    return mp.CLEAN
+  end
+  local l_0_0 = (string.lower)(tostring(headerpage))
+  local l_0_1 = (string.match)(l_0_0, "\\appdata\\roaming\\%w+\\(%w+%.exe)%z")
+  if l_0_1 == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC46: No list found for R2 , SetList fails
+
+  local l_0_3 = {}
+  -- DECOMPILER ERROR at PC48: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC49: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC50: Overwrote pending register: R6 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC51: Overwrote pending register: R7 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R8 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC53: Overwrote pending register: R9 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC54: Overwrote pending register: R10 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC55: Overwrote pending register: R11 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC56: Overwrote pending register: R12 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC57: No list found for R3 , SetList fails
+
+  local l_0_4 = {}
+  -- DECOMPILER ERROR at PC59: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC60: Overwrote pending register: R6 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC61: Overwrote pending register: R7 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC62: No list found for R4 , SetList fails
+
+  -- DECOMPILER ERROR at PC63: Overwrote pending register: R5 in 'AssignReg'
+
+  local l_0_5 = "disk"
+  -- DECOMPILER ERROR at PC64: Overwrote pending register: R6 in 'AssignReg'
+
+  local l_0_6 = "dsk"
+  -- DECOMPILER ERROR at PC65: Overwrote pending register: R7 in 'AssignReg'
+
+  local l_0_7 = "ms"
+  -- DECOMPILER ERROR at PC66: Overwrote pending register: R8 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC67: Overwrote pending register: R9 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC68: Overwrote pending register: R10 in 'AssignReg'
+
+  for l_0_11 = "hp", "intel", "amd" do
+    -- DECOMPILER ERROR at PC70: Overwrote pending register: R12 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC71: Overwrote pending register: R13 in 'AssignReg'
+
+    if ("tcp")("udp", l_0_2[l_0_11]) then
+      for l_0_15 = 1, l_0_6 do
+        if string_starts((string.sub)(l_0_1, (string.len)(l_0_2[l_0_11]) + 1), l_0_3[l_0_15]) then
+          for l_0_19 = 1, l_0_7 do
+            if (string.sub)(l_0_1, (string.len)(l_0_2[l_0_11]) + (string.len)(l_0_3[l_0_15]) + 1) == l_0_4[l_0_19] then
+              local l_0_20 = (string.lower)((mp.getfilename)())
+              if (string.find)(l_0_20, "windows explorer%.lnk") then
+                return mp.INFECTED
+              end
+              return mp.LOWFI
+            end
+          end
+        end
+      end
+    end
+  end
+  return mp.LOWFI
 end
-if (mp.readu_u16)(headerpage, 5) ~= 20 then
-  return mp.CLEAN
+do
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
-if (mp.readu_u16)(headerpage, 7) ~= 9 then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.readu_u32)(headerpage, 19)
-if l_0_0 < 24576 or l_0_0 > 131072 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readu_u16)(headerpage, 27)
-local l_0_2 = (mp.readu_u16)(headerpage, 29)
-if l_0_1 > 128 then
-  return mp.CLEAN
-end
-local l_0_3 = (string.lower)((string.char)(headerpage[31], headerpage[32], headerpage[33], headerpage[34], headerpage[35]))
-if l_0_1 > 8 and l_0_3 == "senha" then
-  (mp.set_mpattribute)("Lua:PossibleFourthremZIP")
-end
-if not (mp.get_mpattribute)("RPF:AnyFileHasIOAVURL") then
-  return mp.CLEAN
-end
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
-end
-if l_0_1 < 4 then
-  return mp.CLEAN
-end
-local l_0_4 = (string.lower)((string.char)(headerpage[31 + l_0_1 - 4], headerpage[31 + l_0_1 - 3], headerpage[31 + l_0_1 - 2], headerpage[31 + l_0_1 - 1]))
-if l_0_4 ~= ".exe" and l_0_4 ~= ".pif" and l_0_4 ~= ".scr" then
-  return mp.CLEAN
-end
-local l_0_5 = 30 + l_0_1 + l_0_2 + l_0_0
-local l_0_6 = (mp.getfilesize)()
-if l_0_6 < l_0_5 + 16 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_7 = (mp.readfile)(l_0_5, 4)
-if l_0_7 ~= "PK\003\004" then
-  (mp.set_mpattribute)("Lua:IOAVZIPSingleEncryptedEXE")
-end
-return mp.CLEAN
 

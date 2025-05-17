@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and peattributes.no_security == true and pehdr.AddressOfEntryPoint ~= 18609262 then
-  return mp.INFECTED
-end
+local l_0_0 = (pe.get_regval)(pe.REG_EDI)
+;
+(mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.7_k1_%08X_%02X", l_0_0, 2))
 return mp.CLEAN
 

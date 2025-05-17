@@ -3,102 +3,80 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-      local l_0_1 = (this_sigattrlog[2]).utf8p2
-    else
-    end
-    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
-        local l_0_2 = (this_sigattrlog[4]).utf8p2
-      else
-      end
-      -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
-
-      do
-        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p2 ~= nil then
-          local l_0_3 = (this_sigattrlog[6]).utf8p2
-        else
-        end
-        -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
-
-        do
-          if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p2 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p2 ~= nil then
-            local l_0_4 = (this_sigattrlog[8]).utf8p2
-          else
-          end
-          -- DECOMPILER ERROR at PC152: Overwrote pending register: R0 in 'AssignReg'
-
-          do
-            if (not (this_sigattrlog[10]).matched or (this_sigattrlog[10]).utf8p2 == nil or (this_sigattrlog[11]).matched) and (this_sigattrlog[11]).utf8p2 ~= nil then
-              local l_0_5 = (this_sigattrlog[10]).utf8p2
-            else
+DeleteAutoRun = function(l_1_0)
+  -- function num : 0_0
+  if l_1_0 then
+    local l_1_1 = (sysio.RegEnumValues)(l_1_0)
+    for l_1_5,l_1_6 in pairs(l_1_1) do
+      if l_1_6 then
+        local l_1_7 = (sysio.GetRegValueAsString)(l_1_0, l_1_6)
+        if l_1_7 then
+          local l_1_8, l_1_9 = (string.match)(l_1_7, "(.+\\)([^\\]+%.exe)\"$")
+          if l_1_8 ~= nil and l_1_9 ~= nil then
+            l_1_8 = (string.lower)(l_1_8)
+            if l_1_8:find(":\\programdata\\", 1, true) == nil and l_1_8:find(":\\program files\\common files\\", 1, true) == nil then
+              return 
             end
-            -- DECOMPILER ERROR at PC180: Overwrote pending register: R0 in 'AssignReg'
-
+            local l_1_10 = (string.len)(l_1_9)
+            if l_1_10 == 13 then
+              for l_1_14 = 1, l_1_10 - 4 do
+                local l_1_15 = (string.byte)(l_1_9, l_1_14)
+                if l_1_15 < 97 or l_1_15 > 122 then
+                  return 
+                end
+              end
+            end
             do
-              if (not (this_sigattrlog[12]).matched or (this_sigattrlog[12]).utf8p2 == nil or (this_sigattrlog[13]).matched) and (this_sigattrlog[13]).utf8p2 ~= nil then
-                local l_0_6 = (this_sigattrlog[12]).utf8p2
-              else
-              end
-              -- DECOMPILER ERROR at PC208: Overwrote pending register: R0 in 'AssignReg'
-
               do
-                if (not (this_sigattrlog[14]).matched or (this_sigattrlog[14]).utf8p2 == nil or (this_sigattrlog[15]).matched) and (this_sigattrlog[15]).utf8p2 ~= nil then
-                  local l_0_7 = (this_sigattrlog[14]).utf8p2
-                else
+                local l_1_16 = "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\" .. l_1_9
+                ;
+                (Remediation.BtrDeleteRegKey)(l_1_16)
+                l_1_16 = "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\\\" .. l_1_6
+                ;
+                (Remediation.BtrDeleteRegValue)(l_1_16)
+                ;
+                (sysio.DeleteRegValue)(l_1_0, l_1_6)
+                if (sysio.IsFileExists)(l_1_7) then
+                  (Remediation.BtrDeleteFile)(l_1_7)
                 end
-                -- DECOMPILER ERROR at PC236: Overwrote pending register: R0 in 'AssignReg'
+                ;
+                (Remediation.BtrDeleteRegKey)("HKLM\\SOFTWARE\\Win7zip")
+                ;
+                (Remediation.BtrDeleteRegValue)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\spybotsd.exe\\\\" .. "Debugger")
+                ;
+                (Remediation.BtrDeleteRegValue)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\hijackthis.exe\\\\" .. "Debugger")
+                ;
+                (Remediation.BtrDeleteRegValue)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\rstrui.exe\\\\" .. "Debugger")
+                ;
+                (Remediation.BtrDeleteRegValue)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\housecalllauncher.exe\\\\" .. "Debugger")
+                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out DO_STMT
 
-                do
-                  if (not (this_sigattrlog[16]).matched or (this_sigattrlog[16]).utf8p2 == nil or (this_sigattrlog[17]).matched) and (this_sigattrlog[17]).utf8p2 ~= nil then
-                    local l_0_8 = (this_sigattrlog[16]).utf8p2
-                  else
-                  end
-                  -- DECOMPILER ERROR at PC264: Overwrote pending register: R0 in 'AssignReg'
+                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  do
-                    if (not (this_sigattrlog[18]).matched or (this_sigattrlog[18]).utf8p2 == nil or (this_sigattrlog[19]).matched) and (this_sigattrlog[19]).utf8p2 ~= nil then
-                      local l_0_9, l_0_10, l_0_11 = (this_sigattrlog[18]).utf8p2
-                    else
-                    end
-                    -- DECOMPILER ERROR at PC283: Confused about usage of register: R0 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_STMT
 
-                    if not (this_sigattrlog[20]).matched or (this_sigattrlog[20]).utf8p2 == nil or (this_sigattrlog[20]).utf8p2 ~= nil then
-                      local l_0_12 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[20]).utf8p2)
-                      l_0_12 = (string.lower)(l_0_12)
-                      local l_0_13 = l_0_12:match("\\([^\\]+)$")
-                      local l_0_14 = (string.sub)(l_0_12, 1, (string.len)(l_0_12) - (string.len)(l_0_13) - 1)
-                      if l_0_14:find(":\\windows\\system32", 1, true) or l_0_14:find(":\\windows\\syswow64", 1, true) then
-                        return mp.CLEAN
-                      end
-                      if l_0_14:find(":\\windows\\servicing", 1, true) or l_0_14:find(":\\windows\\winsxs", 1, true) then
-                        return mp.CLEAN
-                      end
-                      return mp.INFECTED
-                    end
-                    do
-                      return mp.CLEAN
-                    end
-                  end
-                end
+                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_STMT
+
+                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out IF_STMT
+
               end
             end
           end
         end
       end
     end
+  end
+end
+
+if (Remediation.Threat).Active and (string.match)((Remediation.Threat).Name, "Behavior:") then
+  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    local l_0_6 = (sysio.RegOpenKey)(l_0_5)
+    DeleteAutoRun(l_0_6)
   end
 end
 

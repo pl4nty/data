@@ -3,26 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-if (string.len)(l_0_1) > 5120 then
-  return mp.CLEAN
-end
-local l_0_2 = (string.match)(l_0_1, "(PAAjA[a-zA-Z0-9%+/=]+)")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (MpCommon.Base64Decode)(l_0_2)
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-l_0_3 = (string.gsub)(l_0_3, "%z", "")
-l_0_3 = (string.lower)((string.gsub)(l_0_3, " ", ""))
-if (string.find)(l_0_3, "add-mppreference", 1, true) and (string.find)(l_0_3, "-exclusionpath@($env:userprofile,$env:systemdrive)", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_tibs_17")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_2 = (mp.readu_u32)(l_0_0, 6)
+local l_0_3 = (mp.readu_u32)(l_0_0, 13)
+local l_0_4 = (string.byte)(l_0_0, 19)
+local l_0_5 = (mp.readu_u32)(l_0_0, 23)
+local l_0_6 = (mp.readu_u32)(l_0_0, 34)
+local l_0_7 = (pe.get_regval)(pe.REG_EDX)
+local l_0_8 = (mp.ror32)(l_0_7 + l_0_3, l_0_4) - (mp.bitxor)(l_0_6, l_0_5) + l_0_1 - l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_8)
+return mp.INFECTED
 

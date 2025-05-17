@@ -3,23 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (sysio.IsFileExists)(l_0_7) and (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-        (bm.add_related_file)(l_0_7)
-        if l_0_6.ppid ~= nil then
-          (bm.request_SMS)(l_0_6.ppid, "m")
-          ;
-          (bm.add_action)("SmsAsyncScanEvent", 1)
-        end
-      end
-    end
-  end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-do
-  return mp.INFECTED
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 3000000 or l_0_0 < 10000 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("\\program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("\\system32", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

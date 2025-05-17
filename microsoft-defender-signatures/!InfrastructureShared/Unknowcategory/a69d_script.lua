@@ -3,47 +3,62 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epscn_writable ~= false then
-  return mp.CLEAN
+local l_0_0 = "DoplikM"
+local l_0_1 = nil
+local l_0_2 = 300
+if (this_sigattrlog[1]).matched then
+  l_0_1 = "A"
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_1 = "B"
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_1 = "C"
+    else
+      if (this_sigattrlog[4]).matched then
+        l_0_1 = "D"
+      else
+        if (this_sigattrlog[5]).matched then
+          l_0_1 = "E"
+        else
+          if (this_sigattrlog[6]).matched then
+            l_0_1 = "F"
+          else
+            if (this_sigattrlog[7]).matched then
+              l_0_1 = "G"
+            else
+              if (this_sigattrlog[8]).matched then
+                l_0_1 = "H"
+              else
+                if (this_sigattrlog[9]).matched then
+                  l_0_1 = "I"
+                else
+                  if (this_sigattrlog[10]).matched then
+                    l_0_1 = "J"
+                  else
+                    if (this_sigattrlog[11]).matched then
+                      l_0_1 = "K"
+                    else
+                      if (this_sigattrlog[12]).matched then
+                        l_0_1 = "L"
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
 end
-if peattributes.packed ~= false then
-  return mp.CLEAN
+local l_0_3 = (MpCommon.QueryPersistContextNoPath)(l_0_0, l_0_1)
+if not l_0_3 then
+  (MpCommon.AppendPersistContextNoPath)(l_0_0, l_0_1, l_0_2)
 end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
+if (MpCommon.GetPersistContextCountNoPath)(l_0_0) >= 4 then
+  return mp.INFECTED
 end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).Size ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).Size <= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData >= 2048 then
-  return mp.CLEAN
-end
-if epcode[1] ~= 85 then
-  return mp.CLEAN
-end
-if epcode[2] ~= 137 then
-  return mp.CLEAN
-end
-if epcode[3] ~= 229 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

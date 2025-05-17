@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 1638400 and l_0_0 <= 1769472 then
+if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_relocs == true then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

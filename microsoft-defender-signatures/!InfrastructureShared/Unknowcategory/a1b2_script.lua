@@ -3,11 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlservr.exe" or (string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlagent.exe") then
+if (mp.get_mpattribute)("//RPF:IS_Pdf") then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 < 20000 then
+    return mp.CLEAN
+  end
+  if l_0_0 > 50000 then
+    return mp.CLEAN
+  end
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)(0, l_0_0)
+  if l_0_1:match("/URI %(http%://usaa%.com%-sec%-inet%-auth%-logon%-ent%-logon%-logon%-") then
     return mp.INFECTED
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

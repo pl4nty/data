@@ -3,17 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\magnify.exe")
-if l_0_0 ~= nil then
-  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
-  if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then
-    local l_0_2 = (string.lower)(l_0_1)
-    if (string.find)(l_0_2, "cmd", 1, true) or (string.find)(l_0_2, "msconfig", 1, true) or (string.find)(l_0_2, "taskmgr", 1, true) then
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = tostring(headerpage)
+else
+  l_0_1 = tostring(footerpage)
+end
+if (string.find)(l_0_1, "%${[0-1][0-1][0-1][0-1]+}") then
+  return mp.INFECTED
+else
+  if (string.find)(l_0_1, "%${[_/\\=][_/\\=][_/\\=][_/\\=]+}") then
+    return mp.INFECTED
+  else
+    if (string.find)(l_0_1, "%${%w%w%w%w%w%w%w%w+}") then
       return mp.INFECTED
+    else
+      if (string.find)(l_0_1, "%${[1-9][1-9]+}") then
+        return mp.INFECTED
+      end
     end
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

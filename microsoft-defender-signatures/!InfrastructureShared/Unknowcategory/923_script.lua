@@ -3,30 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("TEL:MpCloudSuspicious_")
-if #l_0_0 == 0 or l_0_0 == nil then
+if (mp.readu_u32)(headerpage, 1) ~= 1953651835 then
   return mp.CLEAN
 end
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  local l_0_6, l_0_7, l_0_8, l_0_9, l_0_10 = (string.match)(l_0_5, "MpCloudSuspicious_(%d*)_(%d*)_(%d*)_(%d*)_(%d*)")
-  if l_0_6 ~= nil and l_0_7 ~= nil and l_0_8 ~= nil and l_0_9 ~= nil and l_0_10 ~= nil then
-    l_0_6 = tonumber(l_0_6)
-    l_0_7 = tonumber(l_0_7)
-    l_0_8 = tonumber(l_0_8)
-    l_0_9 = tonumber(l_0_9)
-    l_0_10 = tonumber(l_0_10)
-    ;
-    (mp.set_mpattributeex)("Cloud:EnsembleV1_Clean:Probability", l_0_6)
-    ;
-    (mp.set_mpattributeex)("Cloud:EnsembleV1_Malware:Probability", l_0_7)
-    ;
-    (mp.set_mpattributeex)("Cloud:FileInfo:Age", l_0_8)
-    ;
-    (mp.set_mpattributeex)("Cloud:FileInfo:Prevalence", l_0_9)
-    ;
-    (mp.set_mpattributeex)("Cloud:FileInfo:Rtp60", l_0_10)
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 204800 or l_0_0 > 2097152 then
+  return mp.CLEAN
+end
+local l_0_1 = tostring(headerpage)
+if (string.find)(l_0_1, "generator Riched20 6.3.9600", 1, true) ~= nil and (string.find)(l_0_1, "ansi\\ansicpg1252\\deff0\\nouicompat\\deflang1033\\deflangfe2052", 1, true) ~= nil and ((string.find)(l_0_1, "WOW SUCH FAKE MUCH", 1, true) ~= nil or (string.find)(l_0_1, "Please Wait While", 1, true) ~= nil) then
+  return mp.INFECTED
+end
+if (string.find)(l_0_1, "panose 02020603050405020304}Times New Roman;}", 1, true) ~= nil and (string.find)(l_0_1, "rtf1\\adeflang1025\\ansi\\ansicpg125", 1, true) ~= nil then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

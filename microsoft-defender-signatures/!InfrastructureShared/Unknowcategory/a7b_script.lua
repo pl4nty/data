@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (mp.GetScannedPPID)()
+do
+  if l_0_0 ~= nil and l_0_0 ~= "" then
+    local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
+    if l_0_1 ~= nil and l_0_1 ~= "" then
+      (mp.set_mpattribute)((string.format)("MpInternal_researchdata=fullcmd=%s", l_0_1))
+    end
+  end
+  return mp.INFECTED
 end
-if l_0_0.image_path == nil or l_0_0.image_path == "" then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-if l_0_1 ~= nil and (string.find)(l_0_1, "/usr/bin/dpkg", 1, true) == 1 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-if (string.find)(l_0_0:lower(), "microsoft.net\\framework.-\\v[0-9.].+\\temporary asp.net files\\") then
+local l_0_0 = (mp.getfilesize)()
+if (hstrlog[1]).matched and peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 159744 and (pehdr.NumberOfSections == 9 or pehdr.NumberOfSections == 6) then
   return mp.INFECTED
 end
 return mp.CLEAN

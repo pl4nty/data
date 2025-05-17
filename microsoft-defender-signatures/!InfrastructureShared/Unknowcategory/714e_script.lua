@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched then
-  (mp.changedetectionname)(805306407)
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 5000 and l_0_0 < 1000000 and not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

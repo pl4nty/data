@@ -3,22 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Active and (string.match)((Remediation.Threat).Name, "Trojan:Win32/Chanitor") then
-  local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run")
-  if l_0_0 then
-    local l_0_1 = (sysio.RegEnumValues)(l_0_0)
-    for l_0_5,l_0_6 in pairs(l_0_1) do
-      if l_0_6 and (string.match)(l_0_6, "^winlogin$") then
-        local l_0_7 = (sysio.GetRegValueAsString)(l_0_0, l_0_6)
-        if l_0_7 and (string.match)((string.lower)(l_0_7), "\\windows\\winlogin.exe$") then
-          l_0_7 = (string.lower)(l_0_7)
-          ;
-          (sysio.DeleteRegValue)(l_0_0, l_0_6)
-          ;
-          (Remediation.BtrDeleteFile)(l_0_7)
-        end
-      end
-    end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  local l_0_3 = (mp.getfilesize)()
+  if l_0_3 > 1000000 then
+    return mp.CLEAN
   end
+  if l_0_2 == "exe[1].exe" and (string.sub)(l_0_1, -45, -22) == "temporary internet files" then
+    (mp.set_mpattribute)("LUA:SuspiciousDownloadFileName")
+  end
+end
+do
+  return mp.CLEAN
 end
 

@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 4, 4)
-if (mp.readu_u32)(l_0_0, 1) < 2097152 then
+if (pe.query_import)(pe.IMPORT_STATIC, 3604202544) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 1712054030) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 3310839974) == 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

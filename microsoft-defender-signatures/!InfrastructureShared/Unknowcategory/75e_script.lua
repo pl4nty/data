@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 2 then
-  return mp.CLEAN
+if (mp.get_mpattributesubstring)("PUA:ML:Blocked:") then
+  (mp.set_mpattribute)("Lua:PUAPoorCertRepML")
 end
-if (mp.getfilesize)() >= 400000 then
-  (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
+if (mp.get_mpattributesubstring)("PUA:ML:Staged:") then
+  (mp.set_mpattribute)("Lua:PUAPoorCertRepMLStaged")
 end
-return mp.INFECTED
+return mp.CLEAN
 

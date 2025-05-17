@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 106496 and l_0_0 <= 110592 and (pehdr.NumberOfSections >= 4 or pehdr.NumberOfSections <= 6) then
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
+if (string.find)(l_0_1, ":\"\\..\\", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isexe and (mp.get_mpattribute)("Lua:NoVerinfo") then
+if peattributes.suspicious_image_version and peattributes.lastscn_writable and peattributes.lastscn_executable then
   return mp.INFECTED
 end
 return mp.CLEAN

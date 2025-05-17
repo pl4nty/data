@@ -3,28 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1, l_0_2 = nil, nil, nil
-for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
-  local l_0_3, l_0_4, l_0_5 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R6 in 'UnsetPending'
-
-  if (sigattr_head[R6_PC6]).matched then
-    if (sigattr_head[R6_PC6]).attribute == 16384 and l_0_3 == nil then
-      l_0_3 = (string.lower)((sigattr_head[R6_PC6]).utf8p1)
-      l_0_4 = (string.match)(l_0_3, "\\([^\\]+)$")
-    else
-      if (sigattr_head[R6_PC6]).attribute == 16393 and l_0_5 == nil then
-        l_0_5 = (string.lower)((sigattr_head[R6_PC6]).utf8p2)
-        l_0_5 = (string.match)(l_0_5, "\\([^\\]+)$")
-      end
-    end
-    -- DECOMPILER ERROR at PC63: Unhandled construct in 'MakeBoolean' P1
-
-    if l_0_3 ~= nil and l_0_5 ~= nil and l_0_4 == l_0_5 then
-      (mp.ReportLowfi)((sigattr_head[R6_PC6]).utf8p1, 444988102)
-      return mp.INFECTED
-    end
-    break
+local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -15))
+if l_0_0 == "\\appvclient.exe" then
+  return mp.CLEAN
+end
+local l_0_1 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  l_0_1 = (this_sigattrlog[1]).utf8p2
+end
+local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+if l_0_2 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
+    ;
+    (bm.add_related_file)(l_0_7)
   end
 end
 do

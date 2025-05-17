@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr
-local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 144, "\129=\144\001\004ðI\002\000s\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_1 == 4294967295 then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\automationmanager.agentservice.exe", 1, true) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(l_0_0 + 52, "j\001\144")
-;
-(pe.mmap_patch_va)(l_0_1 + 6, "\001\000\000")
-return mp.INFECTED
+return mp.CLEAN
 

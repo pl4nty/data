@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Somoto")
+(mp.set_mpattribute)("PUA:Block:Tixati")
 return mp.INFECTED
 

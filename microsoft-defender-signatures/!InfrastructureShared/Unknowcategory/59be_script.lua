@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  (mp.changedetectionname)(805306400)
+if (mp.get_mpattribute)("NID:ALF:INTL:Trojan:Win32/Multiverze") then
   return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

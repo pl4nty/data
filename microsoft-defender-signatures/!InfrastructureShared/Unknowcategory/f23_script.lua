@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() == 64 then
+if (mp.getfilesize)() == 1906688 then
   return mp.INFECTED
 end
 return mp.CLEAN

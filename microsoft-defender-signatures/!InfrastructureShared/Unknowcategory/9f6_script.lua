@@ -3,154 +3,96 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 153 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-if (mp.readu_u16)(headerpage, 1) ~= 60000 then
-  return mp.CLEAN
-end
-if (mp.readu_u16)(headerpage, 3) == 0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readu_u16)(headerpage, 3)
-local l_0_2 = (mp.readu_u16)(headerpage, 3 + l_0_1 + 8)
-local l_0_3 = (mp.readu_u16)(headerpage, 3 + l_0_1 + 10)
-if l_0_2 ~= 60000 then
-  return mp.CLEAN
-end
-if l_0_3 == 0 then
-  return mp.CLEAN
-end
-local l_0_4 = (mp.readu_u32)(headerpage, 3 + l_0_1 + 10 + 14)
-local l_0_5 = l_0_1 + l_0_3 + l_0_4 + 24
-if l_0_5 ~= l_0_0 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("Lua:SingleFileInARJ")
-local l_0_6 = 3 + l_0_1 + 8 + 50 - 1
-local l_0_7 = 256
-local l_0_8 = (mp.readfile)(l_0_6, l_0_6 + l_0_7)
-local l_0_9, l_0_10 = (string.find)(l_0_8, "\000", 1, true)
-local l_0_11 = (mp.readfile)(l_0_6, l_0_9 - 1)
-local l_0_12 = (string.lower)((string.sub)(l_0_11, -4))
-local l_0_13 = (string.lower)((string.sub)(l_0_11, -3))
-if l_0_13 == ".js" then
-  (mp.set_mpattribute)("Lua:SingleJSInARJ")
-  ;
-  (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-else
-  if l_0_13 == ".7z" then
-    (mp.set_mpattribute)("Lua:Single7zInInARJ")
-  else
-    if l_0_13 == ".gz" then
-      (mp.set_mpattribute)("Lua:SingleGZipInARJ")
-    end
-  end
-end
-if l_0_12 == ".zip" then
-  (mp.set_mpattribute)("Lua:SingleZipInARJ")
-  return mp.CLEAN
-else
-  if l_0_12 == ".vbs" then
-    (mp.set_mpattribute)("Lua:SingleVBSInARJ")
-    ;
-    (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-    return mp.CLEAN
-  else
-    if l_0_12 == ".lnk" then
-      (mp.set_mpattribute)("Lua:SingleLNKInARJ")
-      ;
-      (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-      return mp.CLEAN
-    else
-      if l_0_12 == ".wsf" then
-        (mp.set_mpattribute)("Lua:SingleWSFInARJ")
-        ;
-        (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-        return mp.CLEAN
-      else
-        if l_0_12 == ".vbe" then
-          (mp.set_mpattribute)("Lua:SingleVBEInARJ")
-          ;
-          (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-          return mp.CLEAN
-        else
-          if l_0_12 == ".jse" then
-            (mp.set_mpattribute)("Lua:SingleJSEInARJ")
-            ;
-            (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-            return mp.CLEAN
-          else
-            if l_0_12 == ".hta" then
-              (mp.set_mpattribute)("Lua:SingleHTAInARJ")
-              ;
-              (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-              return mp.CLEAN
-            else
-              if l_0_12 == ".exe" then
-                (mp.set_mpattribute)("Lua:SingleEXEInARJ")
-                ;
-                (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-                return mp.CLEAN
-              else
-                if l_0_12 == ".dll" then
-                  (mp.set_mpattribute)("Lua:SingleDLLInARJ")
-                  ;
-                  (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-                  return mp.CLEAN
-                else
-                  if l_0_12 == ".com" then
-                    (mp.set_mpattribute)("Lua:SingleCOMInARJ")
-                    ;
-                    (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-                    return mp.CLEAN
-                  else
-                    if l_0_12 == ".ps1" then
-                      (mp.set_mpattribute)("Lua:SinglePSInARJ")
-                      ;
-                      (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-                      return mp.CLEAN
-                    else
-                      if l_0_12 == ".bat" then
-                        (mp.set_mpattribute)("Lua:SingleBATInARJ")
-                        ;
-                        (mp.set_mpattribute)("Lua:SingleSuspiciousExtensionInARJ")
-                        return mp.CLEAN
-                      else
-                        if l_0_12 == ".rar" then
-                          (mp.set_mpattribute)("Lua:SingleRarInARJ")
-                          return mp.CLEAN
-                        else
-                          if l_0_12 == ".ace" then
-                            (mp.set_mpattribute)("Lua:SingleACEInARJ")
-                            return mp.CLEAN
-                          else
-                            if l_0_12 == ".iso" then
-                              (mp.set_mpattribute)("Lua:SingleISOInARJ")
-                              return mp.CLEAN
-                            else
-                              if l_0_12 == ".arj" then
-                                (mp.set_mpattribute)("Lua:SingleARJInARJ")
-                                return mp.CLEAN
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
+Infrastructure_ScanFileLessMalwareKeyPath = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = (sysio.RegOpenKey)(l_1_0)
+  local l_1_2 = 0
+  if l_1_1 then
+    local l_1_3 = (sysio.RegEnumValues)(l_1_1)
+    for l_1_7,l_1_8 in pairs(l_1_3) do
+      do
+        do
+          if l_1_8 then
+            local l_1_9 = (sysio.GetRegValueAsString)(l_1_1, l_1_8)
+            if l_1_9 ~= nil then
+              l_1_9 = (string.lower)(l_1_9)
+              if (string.len)(l_1_9) > 48 and (string.find)(l_1_9, "%.%.\\") and ((string.find)(l_1_9, "javascript:", 2, true) or (string.find)(l_1_9, "vbscript:", 2, true)) and (string.find)(l_1_9, "runhtmlapplication", 2, true) then
+                (MpDetection.ReportResource)("regkey", l_1_0 .. "\\\\" .. l_1_8, 277, false)
+              end
+              if (string.match)(l_1_9, "regsvr32.+/i%:http.+scrobj%.dll") and (string.find)(l_1_9, "/u ", 1, true) and (string.find)(l_1_9, "/s ", 1, true) then
+                (MpDetection.ReportResource)("regkey", l_1_0 .. "\\\\" .. l_1_8, 805306523, false)
+              end
+              if (string.find)(l_1_9, "powershell.exe", 1, true) and (string.match)(l_1_9, "iex%s*%(%[text%.encoding%]%:%:ascii%.getstring%(%[convert%]%:%:frombase64string%(%(gp%s*%\'hk") then
+                (MpDetection.ReportResource)("regkey", l_1_0 .. "\\\\" .. l_1_8, 805306523, false)
               end
             end
           end
+          l_1_2 = l_1_2 + 1
+          if l_1_2 == 50 then
+            SetLuaInstrLimit((crypto.shl64)(1, 24))
+            l_1_2 = 0
+          end
+          -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out DO_STMT
+
         end
       end
     end
   end
 end
-return mp.CLEAN
+
+Infrastructure_ScanFileLessMalware = function()
+  -- function num : 0_1
+  local l_2_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
+  local l_2_1 = 0
+  for l_2_5,l_2_6 in pairs(l_2_0) do
+    Infrastructure_ScanFileLessMalwareKeyPath(l_2_6)
+    l_2_1 = l_2_1 + 1
+    if l_2_1 == 8 then
+      break
+    end
+  end
+  do
+    Infrastructure_ScanFileLessMalwareKeyPath("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run")
+    SetLuaInstrLimit((crypto.shl64)(1, 24))
+    local l_2_7 = "HKCU\\Software\\Classes\\CLSID"
+    local l_2_8 = ((sysio.RegExpandUserKey)(l_2_7))
+    local l_2_9, l_2_10 = nil, nil
+    local l_2_11 = 0
+    local l_2_12 = 0
+    for l_2_16,l_2_17 in pairs(l_2_8) do
+      l_2_9 = (sysio.RegOpenKey)(l_2_17)
+      if l_2_9 then
+        local l_2_18 = (sysio.RegEnumKeys)(l_2_9)
+        if l_2_18 then
+          for l_2_22,l_2_23 in pairs(l_2_18) do
+            l_2_10 = l_2_17 .. "\\" .. l_2_23 .. "\\LocalServer32"
+            Infrastructure_ScanFileLessMalwareKeyPath(l_2_10)
+            l_2_12 = l_2_12 + 1
+            if l_2_12 == 25 then
+              SetLuaInstrLimit((crypto.shl64)(1, 24))
+              l_2_12 = 0
+            end
+          end
+        end
+      end
+      do
+        do
+          l_2_11 = l_2_11 + 1
+          if l_2_11 == 8 then
+            break
+          end
+          -- DECOMPILER ERROR at PC82: LeaveBlock: unexpected jumping out DO_STMT
+
+        end
+      end
+    end
+    SetLuaInstrLimit((crypto.shl64)(1, 24))
+    Infrastructure_ScanFileLessMalwareKeyPath("HKLM\\Software\\Classes\\CLSID\\{73E709EA-5D93-4B2E-BBB0-99B7938DA9E4}\\LocalServer32")
+    Infrastructure_ScanFileLessMalwareKeyPath("HKLM\\Software\\Classes\\CLSID\\{AB8902B4-09CA-4bb6-B78D-A8F59079A8D5}\\LocalServer32")
+    collectgarbage("collect")
+    -- DECOMPILER ERROR at PC100: Confused about usage of register R8 for local variables in 'ReleaseLocals'
+
+  end
+end
+
 

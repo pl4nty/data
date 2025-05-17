@@ -3,18 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if not l_0_0 then
-  return mp.CLEAN
-end
-l_0_0 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-if not l_0_0 then
-  return mp.CLEAN
-end
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  if l_0_5 and (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, false, false) then
-    (bm.add_related_file)(l_0_5)
+do
+  if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() < 5283840 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

@@ -3,48 +3,53 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr + 56
-local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "j@h\000\016\000\000h\144\001\004j\000\144\019¡\001\004\139\016\137\021\144\001\004\255%\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_1 == 4294967295 then
+if not peattributes.ismsil then
   return mp.CLEAN
 end
-local l_0_2 = 9
-local l_0_3 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "1Òƒ\192\001¹\001\004\137\001¡\001\004°\144\001\004\139\029\144\001\004ë\144\001\004\144\003\003\000\144\001\t\144\004\001\002ëé\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_3 == 4294967295 then
+if not peattributes.hasappendeddata then
   return mp.CLEAN
+end
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+local l_0_1 = (mp.getfilesize)() - l_0_0
+if l_0_1 < 4096 or l_0_1 > 9437184 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_2 = (mp.readfile)(l_0_0, l_0_1)
+if #l_0_2 < 4096 then
+  return mp.CLEAN
+end
+for l_0_6 in (string.gmatch)(l_0_2, "TV[%w+/]+=?=?") do
+  if #l_0_6 > 4096 then
+    (mp.set_mpattribute)("//MpBase64DecodeLongLines")
+    ;
+    (mp.vfo_add_buffer)(l_0_6, "[Obfuscator.AN]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    break
+  end
 end
 do
-  if (pe.vm_search)(l_0_3 - 36, l_0_3, "9\b\015…\001\004¸\001\004\255\a9\a\015…\000", nil, pe.VM_SEARCH_BM) == 4294967295 then
-    local l_0_4 = (pe.vm_search)(l_0_3 - 28, l_0_3, "9\bu\144\001\001¸\001\004\255\a9\au\144\000", nil, pe.VM_SEARCH_BM)
-    if l_0_4 == 4294967295 then
-      return mp.CLEAN
-    end
+  if (mp.crc32)(-1, l_0_2, 1, 66) == 711333360 then
+    return mp.SUSPICIOUS
   end
-  local l_0_5 = nil
-  if (mp.readu_u16)((pe.mmap_va)(l_0_3 + 35, 9), 1) == 15747 and (string.byte)((pe.mmap_va)(l_0_3 + 35, 9), 8) == 124 then
-    (pe.mmap_patch_va)(l_0_3 + 43, "\000")
+  if (mp.crc32)(-1, l_0_2, 1, 13) == 3050913556 then
+    return mp.SUSPICIOUS
   end
-  local l_0_6 = nil
-  local l_0_7 = nil
-  ;
-  (pe.set_regval)(pe.REG_EAX, (mp.readu_u32)((pe.mmap_va)(l_0_5 + l_0_2, 4), 1))
-  local l_0_8 = nil
-  local l_0_9 = nil
-  local l_0_10, l_0_11, l_0_12, l_0_13 = , (mp.bsplit)(l_0_3 + 17 - (pevars.sigaddr + 6) - 5, 8)
-  ;
-  (pe.mmap_patch_va)(l_0_9, "\233")
-  ;
-  (pe.mmap_patch_va)(l_0_9 + 1, (string.char)(l_0_11))
-  ;
-  (pe.mmap_patch_va)(l_0_9 + 2, (string.char)(l_0_12))
-  ;
-  (pe.mmap_patch_va)(l_0_9 + 3, (string.char)(l_0_13))
-  ;
-  (pe.mmap_patch_va)(l_0_9 + 4, (string.char)(R17_PC144))
-  local l_0_14 = nil
-  if (mp.readu_u16)((pe.mmap_va)(l_0_1 + 27, 16), 1) == 15747 and (mp.readu_u16)((pe.mmap_va)(l_0_1 + 27, 16), 8) == 35855 then
-    (pe.mmap_patch_va)(l_0_1 + 34, "\000\000\000\000")
+  if (mp.crc32)(-1, l_0_2, 1, 34) == 3919771653 then
+    return mp.SUSPICIOUS
   end
-  return mp.INFECTED
+  if (mp.crc32)(-1, l_0_2, 1, 25) == 3301795126 then
+    return mp.SUSPICIOUS
+  end
+  if (mp.crc32)(-1, l_0_2, 1, 27) == 1939688586 then
+    return mp.SUSPICIOUS
+  end
+  if (mp.crc32)(-1, l_0_2, 1, 16) == 1008989909 then
+    return mp.SUSPICIOUS
+  end
+  if (mp.crc32)(-1, l_0_2, 1, 13) == 3958531149 then
+    return mp.SUSPICIOUS
+  end
+  return mp.CLEAN
 end
 

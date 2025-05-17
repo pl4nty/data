@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if #(mp.enum_mpattributesubstring)("SCPT:Weelada") >= 2 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("//LOWFI:LUA:Bladabindi") == true then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

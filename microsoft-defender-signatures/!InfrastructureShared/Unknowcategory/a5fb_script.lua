@@ -3,58 +3,25 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1, l_0_2 = (bm.get_process_relationships)()
+if l_0_2 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_7.ppid)
+    if l_0_0.integrity_level < l_0_8.IntegrityLevel then
+      local l_0_9 = (string.lower)(l_0_7.image_path)
+      if (string.find)(l_0_9, "\\system32\\mrt.exe", -17, true) or (string.find)(l_0_9, "\\asep_inv.exe", -13, true) or (string.find)(l_0_9, "\\mpsigstub.exe", -14, true) then
+        return mp.CLEAN
+      end
+      ;
+      (bm.request_SMS)(l_0_7.ppid, "h+")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1)
+      return mp.INFECTED
+    end
+  end
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
-  else
-  end
-  if (this_sigattrlog[2]).matched then
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == nil or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == "" then
-      return mp.CLEAN
-    end
-    local l_0_5 = nil
-    -- DECOMPILER ERROR at PC45: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
-
-    if nil == nil or nil == "" then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC55: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC61: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (sysio.IsFileExists)(nil) then
-      (bm.add_related_file)(nil)
-    end
-    -- DECOMPILER ERROR at PC71: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC74: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC78: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC84: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (this_sigattrlog[4]).matched and nil ~= nil and nil ~= "" and (sysio.IsFileExists)(nil) then
-      (bm.add_related_file)(nil)
-    end
-    -- DECOMPILER ERROR at PC94: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC97: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC101: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC107: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (this_sigattrlog[5]).matched and nil ~= nil and nil ~= "" and (sysio.IsFileExists)(nil) then
-      (bm.add_related_file)(nil)
-    end
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
 

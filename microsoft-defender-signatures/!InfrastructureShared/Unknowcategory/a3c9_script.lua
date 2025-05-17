@@ -3,24 +3,23 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    local l_0_3 = {["\\winhlp32.exe"] = true, ["\\werfault.exe"] = true, ["\\imepadsv.exe"] = true, ["\\splwow64.exe"] = true, ["\\sgtool.exe"] = true, ["\\mdm.exe"] = true, ["\\sgpicfacetool.exe"] = true}
-    local l_0_4 = nil
-    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$") ~= nil and l_0_3[(string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$")] == true then
-      return mp.CLEAN
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+local l_0_0 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA
+if l_0_0 == 0 then
+  return mp.LOWFI
 end
+if (mp.getfilesize)() < l_0_0 + 4096 then
+  return mp.LOWFI
+end
+;
+(mp.readprotection)(false)
+if (mp.readfile)(l_0_0 + 3904, 27) == "\004\b\019\002OR1\0180\016\006\003U\004\a\019\tBeaverton1" then
+  return mp.INFECTED
+end
+if (mp.readfile)(l_0_0 + 3876, 27) == "\004\b\019\002OR1\0180\016\006\003U\004\a\019\tBeaverton1" then
+  return mp.INFECTED
+end
+if (mp.readfile)(l_0_0 + 3602, 27) == "\004\b\019\002OR1\0180\016\006\003U\004\a\019\tBeaverton1" then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

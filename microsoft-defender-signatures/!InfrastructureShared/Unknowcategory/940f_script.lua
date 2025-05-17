@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (pe.isdynamic_va)(pevars.sigaddr) then
-    local l_0_0 = (pe.get_regval)(pe.REG_EAX)
-    if l_0_0 == 1247748109 then
-      (mp.set_mpattribute)("PEBMPAT:AntiEmuVirtualProtectLayout")
-      ;
-      (pe.set_regval)(pe.REG_EAX, 3047219186)
-    end
-  end
-  return mp.CLEAN
+if (string.lower)(((pe.get_versioninfo)()).CompanyName) == "project: sakura-editor" then
+  return mp.INFECTED
 end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
+return mp.CLEAN
 

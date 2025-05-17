@@ -3,29 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if mp.HSTR_CALLER_SMS == l_0_0 then
-  local l_0_1 = (mp.GetSMSLevel)()
-  if l_0_1 ~= mp.SMS_SCAN_ONCE_ADV and l_0_1 ~= mp.SMS_SCAN_LOW_ADV and l_0_1 ~= mp.SMS_SCAN_MED_ADV and l_0_1 ~= mp.SMS_SCAN_HIGH_ADV then
+-- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched then
+    do return mp.CLEAN end
+    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/addfile [^ ]+ \\\\localhost\\[^ ]* [^ ]+") ~= nil then
+      return mp.INFECTED
+    else
+      -- DECOMPILER ERROR at PC48: Confused about usage of register: R0 in 'UnsetPending'
+
+      if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/addfile [^ ]+ \\\\127%.0%.0%.1\\[^ ]* [^ ]+") ~= nil then
+        return mp.INFECTED
+      else
+        -- DECOMPILER ERROR at PC59: Confused about usage of register: R0 in 'UnsetPending'
+
+        if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "/addfile [^ ]+ .:\\[^ ]* [^ ]+") ~= nil then
+          return mp.INFECTED
+        end
+      end
+    end
     return mp.CLEAN
   end
-  local l_0_2 = (mp.hstr_full_log)()
-  for l_0_6,l_0_7 in pairs(l_0_2) do
-    if l_0_7.matched and l_0_7.VA then
-      local l_0_8, l_0_9 = (mp.SMSVirtualQuery)(l_0_7.VA)
-      if l_0_8 ~= true then
-        return mp.CLEAN
-      end
-      if l_0_9.prot ~= 64 or l_0_9.state_type ~= mp.SMS_MBI_PRIVATE then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
-end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.CLEAN
-  return l_0_1
 end
 

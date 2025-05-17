@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == false then
-  return mp.CLEAN
+if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("PUA:HSTR:OnePlatformInstaller")
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,262 +3,37 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = l_0_2:len()
-local l_0_4 = false
-local l_0_5 = false
-local l_0_6 = false
-local l_0_7 = false
-local l_0_8 = false
-local l_0_9 = false
-local l_0_10 = false
-local l_0_11 = false
-local l_0_12 = false
-local l_0_13 = true
-if l_0_2 == "kperra.exe" or l_0_2 == "sys_drivere.exe" or l_0_2 == "sys_drive.exe" or l_0_2 == "sys_drivepp.exe" or l_0_2 == "ntfs_clean.exe" or l_0_2 == "ntfs_cleanf.exe" or l_0_2 == "ms_cleanerre.exe" or l_0_2 == "ms_cleaner.exe" or l_0_2 == "wiupdat.exe" or l_0_2 == "vbupdat.exe" or l_0_2 == "wcrash.exe" or l_0_2 == "obupdat.exe" or l_0_2 == "pterra.exe" or l_0_2 == "tierra.exe" or l_0_2 == "stuprt.exe" or l_0_2 == "syserrfix.exe" or l_0_2 == "diskfix.exe" or l_0_2 == "dumpfix.exe" or l_0_2 == "bvtray.exe" or l_0_2 == "repfix.exe" or l_0_2 == "fixutil.exe" or l_0_2 == "urepair.exe" or l_0_2 == "errfix.exe" or l_0_2 == "anwres.exe" or l_0_2 == "hptcpu.exe" or l_0_2 == "sysdfg.exe" or l_0_2 == "diskchk.exe" or l_0_2 == "sysrestore.exe" or l_0_2 == "aptcpu.exe" or l_0_2 == "apucpu.exe" or l_0_2 == "defsrag.exe" or l_0_2 == "diskswtool.exe" or l_0_2 == "dissdkchk.exe" then
-  l_0_4 = true
-else
-  if l_0_2 == "commandre.exe" or l_0_2 == "wifi-cfg.exe" or l_0_2 == "wifi-cfgf.exe" or l_0_2 == "restor.exe" or l_0_2 == "mornef0.exe" or l_0_2 == "video player.com" or l_0_2 == "mondarf0.exe" or l_0_2 == "svchostre.exe" then
-    l_0_9 = true
-  else
-    if l_0_2 == "video player.exe" then
-      (mp.set_mpattribute)("Lua:SuspiciousPEFileName.B")
-    else
-      if l_0_2 == "wiupdate.exe" or l_0_2 == "fixtool.exe" or l_0_2 == "conhost.exe" or l_0_2 == "shell32.dll" or l_0_2 == "dwtray.exe" or l_0_2 == "defrag.exe" or l_0_2 == "disktool.exe" or l_0_2 == "systemrestore.exe" then
-        l_0_4 = true
-        l_0_10 = true
-      else
-        if l_0_2 == "fvjcrgr0.exe" or l_0_2 == "setup0.exe" then
-          l_0_5 = true
-        else
-          if l_0_2 == "tmp1.log" or l_0_2 == "tmpe.log" then
-            l_0_4 = true
-            l_0_6 = true
-          else
-            -- DECOMPILER ERROR at PC167: Unhandled construct in 'MakeBoolean' P1
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_VALIDATION_PRESCAN then
+  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_URL)
+  if (string.match)(l_0_0, "/in%.cgi%?") or (string.match)(l_0_0, "/go%.php%?sid=") or (string.match)(l_0_0, "/runforestrun%?sid=") or (string.sub)(l_0_0, -12) == "/counter.php" or (string.match)(l_0_0, "%.php%?tp=") then
+    (mp.aggregate_mpattribute)("Context:HighRiskURL")
+    ;
+    (mp.aggregate_mpattribute)("//MpIsIEVScan")
+    return mp.TRUE
+  end
+  if (string.match)(l_0_0, "globalnewsweekly%.com") or (string.match)(l_0_0, "militaryexponews%.com") or (string.match)(l_0_0, "evrosatory%.com") or (string.match)(l_0_0, "osce%-oscc%.org") or (string.match)(l_0_0, "militaryinf%.com") or (string.match)(l_0_0, "academl%.com") or (string.match)(l_0_0, "natoexhibitionff14%.com") or (string.match)(l_0_0, "world%-oil%-company%.com") or (string.match)(l_0_0, "eurosatory%-2014%.com") or (string.match)(l_0_0, "tolonevvs%.com") or (string.match)(l_0_0, "enisa%-europa%.org") or (string.match)(l_0_0, "westinqhousenuclear%.com") or (string.match)(l_0_0, "bostondyn%.com") or (string.match)(l_0_0, "tusexpo2015%.com") or (string.match)(l_0_0, "enisa%-europa%.com") or (string.match)(l_0_0, "evronaval%.com") or (string.match)(l_0_0, "politicalreview%.eu") or (string.match)(l_0_0, "login%-osce%.org") or (string.match)(l_0_0, "assaas%.org") or (string.match)(l_0_0, "militaryobserver%.net") or (string.match)(l_0_0, "nshq%.in") or (string.match)(l_0_0, "amtxy%.com") or (string.match)(l_0_0, "cajalibertad%.net") or (string.match)(l_0_0, "rapidleechcdn%.com") or (string.match)(l_0_0, "dailyforeignnews%.com") or (string.match)(l_0_0, "farnboroughair2014%.com") or (string.match)(l_0_0, "itec2014%.co%.uk") or (string.match)(l_0_0, "readcbn%.com") or (string.match)(l_0_0, "natopress%.org") or (string.match)(l_0_0, "ausxxl%.com") or (string.match)(l_0_0, "defencereview%.eu") or (string.match)(l_0_0, "tubeloc%.com") or (string.match)(l_0_0, "nato%-press%.org") or (string.match)(l_0_0, "aowiejf%.com") or (string.match)(l_0_0, "middle%-eastreview%.com") or (string.match)(l_0_0, "nato%-hq%.com") or (string.match)(l_0_0, "hujutrust%.com") or (string.match)(l_0_0, "eurosatory%-2014%.com") or (string.match)(l_0_0, "defenceadviser%.org") or (string.match)(l_0_0, "armypress%.org") or (string.match)(l_0_0, "abtcd%.com") or (string.match)(l_0_0, "baikaltrading%.com") or (string.match)(l_0_0, "brnlv%-gv%.eu") or (string.match)(l_0_0, "policeoracle%.org") or (string.match)(l_0_0, "bagacamesmo%.biz") or (string.match)(l_0_0, "militaryadviser%.org") or (string.match)(l_0_0, "evrosatory%.com") or (string.match)(l_0_0, "intelnetservice%.com") or (string.match)(l_0_0, "techcruncln%.com") or (string.match)(l_0_0, "mediarea%.org") or (string.match)(l_0_0, "bulletin%-center%.com") or (string.match)(l_0_0, "iacr%-tcc%.org") or (string.match)(l_0_0, "myusufruct%.com") or (string.match)(l_0_0, "azureon%-line%.com") or (string.match)(l_0_0, "worldpoliticsnews%.org") or (string.match)(l_0_0, "lukasgruenberger%.com") or (string.match)(l_0_0, "natopress%.com") or (string.match)(l_0_0, "foreign%-review%.com") or (string.match)(l_0_0, "newsdailyworld%.com") or (string.match)(l_0_0, "zerocashtalk%.org") or (string.match)(l_0_0, "flashsecurity%.org") or (string.match)(l_0_0, "neodice%.com") or (string.match)(l_0_0, "netassistcache%.com") or (string.match)(l_0_0, "kwqx%.us") or (string.match)(l_0_0, "mfapress%.org") or (string.match)(l_0_0, "nato%-info%.com") or (string.match)(l_0_0, "contenthosts%.net") or (string.match)(l_0_0, "nato%-press%.com") or (string.match)(l_0_0, "mediacloudsolution%.com") or (string.match)(l_0_0, "cryptoplans%.com") or (string.match)(l_0_0, "mfapress%.com") or (string.match)(l_0_0, "osce%-military%.org") or (string.match)(l_0_0, "dailypoliticsnews%.com") or (string.match)(l_0_0, "appleupdate%.org") or (string.match)(l_0_0, "ikbenzo%.com") or (string.match)(l_0_0, "qov%.hu%.com") or (string.match)(l_0_0, "intelisearch%-inc%.com") or (string.match)(l_0_0, "eurasiaglobalnews%.com") or (string.match)(l_0_0, "qov%.hu") or (string.match)(l_0_0, "jihadfire%.com") or (string.match)(l_0_0, "al7ruae2014%.com") or (string.match)(l_0_0, "europeanda%.com") or (string.match)(l_0_0, "academl%.com") or (string.match)(l_0_0, "eurosatory2014%.com") or (string.match)(l_0_0, "yovtube%.co") or (string.match)(l_0_0, "sofexjordan2014%.com") or (string.match)(l_0_0, "worldmilitarynews%.org") or (string.match)(l_0_0, "adobearmsvc%.com") or (string.match)(l_0_0, "middle%-easterview%.com") or (string.match)(l_0_0, "globalnewsweekly%.com") or (string.match)(l_0_0, "mfa%-gov%.info") or (string.match)(l_0_0, "gpwpl%.com") or (string.match)(l_0_0, "zerocashwiki%.org") or (string.match)(l_0_0, "foreignreview%.com") or (string.match)(l_0_0, "defencereview%.net") or (string.match)(l_0_0, "escrowlogica%.com") or (string.match)(l_0_0, "advpdxapi%.com") or (string.match)(l_0_0, "chaukilos%.com") or (string.match)(l_0_0, "intelsupport%.net") or (string.match)(l_0_0, "aadexpo2014%.co%.za") or (string.match)(l_0_0, "llamadas%-whatsapp%.com") or (string.match)(l_0_0, "nato%-int%.com") or (string.match)(l_0_0, "thunderminer%.com") or (string.match)(l_0_0, "diplomatnews%.org") or (string.match)(l_0_0, "kg%-news%.org") or (string.match)(l_0_0, "middle%-eastreview%.org") or (string.match)(l_0_0, "mscoresvw%.com") or (string.match)(l_0_0, "uz%-news%.org") or (string.match)(l_0_0, "bbcnewsweek%.com") or (string.match)(l_0_0, "natoint%.com") or (string.match)(l_0_0, "nytimesnews%.net") or (string.match)(l_0_0, "defenceiq%.us") or (string.match)(l_0_0, "mfadaily%.com") or (string.match)(l_0_0, "newsdailyinhk%.com") or (string.match)(l_0_0, "anti%-wars%.org") or (string.match)(l_0_0, "ncmp2014%.com") or (string.match)(l_0_0, "aunewsonline%.com") or (string.match)(l_0_0, "new%-agency%.us") or (string.match)(l_0_0, "gdforum%.info") or (string.match)(l_0_0, "standartnevvs%.com") or (string.match)(l_0_0, "ns%.mfanews%.org") or (string.match)(l_0_0, "eurosatary%.com") or (string.match)(l_0_0, "eurosator%.com") or (string.match)(l_0_0, "mfanews%.org") or (string.match)(l_0_0, "imperialc0nsult%.com") or (string.match)(l_0_0, "xuetue2013%.com") or (string.match)(l_0_0, "www%.gdforum%.info") or (string.match)(l_0_0, "www%.sofexjordanx%.com") or (string.match)(l_0_0, "sofexjordanx%.com") or (string.match)(l_0_0, "heidelberqcement%.com") or (string.match)(l_0_0, "ifcdsc%.org") or (string.match)(l_0_0, "northropgrumman%.org%.uk") or (string.match)(l_0_0, "counterterorexpo%.com") or (string.match)(l_0_0, "nato%.nshq%.in") or (string.match)(l_0_0, "bostondynamlcs%.com") or (string.match)(l_0_0, "vice%-news%.com") or (string.match)(l_0_0, "mfanews%.info") or (string.match)(l_0_0, "ns1%.mfanews%.org") or (string.match)(l_0_0, "mail%.sofexjordanx%.com") or (string.match)(l_0_0, "kavkazcentr%.info") or (string.match)(l_0_0, "www%.eurosatory%-2014%.com") or (string.match)(l_0_0, "gdforum%.net") or (string.match)(l_0_0, "osce%-press%.org") or (string.match)(l_0_0, "thediplomat%-press%.com") or (string.match)(l_0_0, "bbcnewsweek%.com") or (string.match)(l_0_0, "ausa%.info") or (string.match)(l_0_0, "nuclear%-reactor%.org") or (string.match)(l_0_0, "ausameetings%.com") or (string.match)(l_0_0, "defensenews%.org") or (string.match)(l_0_0, "aliazeera%.org") or (string.match)(l_0_0, "104%.171%.117%.211") or (string.match)(l_0_0, "198%.105%.122%.184") or (string.match)(l_0_0, "91%.229%.78%.224") or (string.match)(l_0_0, "185%.77%.129%.122") or (string.match)(l_0_0, "23%.227%.196%.122") or (string.match)(l_0_0, "188%.241%.140%.243") or (string.match)(l_0_0, "69%.90%.132%.136") or (string.match)(l_0_0, "93%.115%.86%.170") or (string.match)(l_0_0, "95%.215%.45%.189") or (string.match)(l_0_0, "193%.169%.244%.85") or (string.match)(l_0_0, "104%.223%.7%.10") or (string.match)(l_0_0, "87%.236%.215%.60") or (string.match)(l_0_0, "173%.194%.112%.246") or (string.match)(l_0_0, "37%.46%.114%.143") or (string.match)(l_0_0, "182%.77%.129%.122") or (string.match)(l_0_0, "80%.255%.3%.118") or (string.match)(l_0_0, "185%.82%.200%.235") or (string.match)(l_0_0, "167%.114%.214%.62") or (string.match)(l_0_0, "pravdaonline%.com") or (string.match)(l_0_0, "wmepadtech%.com") or (string.match)(l_0_0, "swsupporttools%.com") or (string.match)(l_0_0, "acledit%.com") or (string.match)(l_0_0, "biocpl%.org") or (string.match)(l_0_0, "winsyschecks%.com") then
+    (mp.aggregate_mpattribute)("Context:Foosace.A!Lure!dha")
+    ;
+    (mp.aggregate_mpattribute)("//MpIsIEVScan")
+    return mp.TRUE
+  end
+  local l_0_1 = {}
+  -- DECOMPILER ERROR at PC1292: No list found for R1 , SetList fails
 
-            if l_0_2 == "msiexec.exe" and (l_0_1:find("\\windows genuine advantage\\{", 1, true) ~= nil or l_0_1:find("\\windows\\installer\\{", 1, true) ~= nil) then
-              l_0_7 = true
-            end
-          end
-        end
-      end
+  -- DECOMPILER ERROR at PC1293: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC1294: Overwrote pending register: R3 in 'AssignReg'
+
+  for l_0_5 = "alertfromwindows%.com", "err0x%x+%.tech" do
+    if (string.match)(l_0_0, l_0_1[l_0_5]) then
+      (mp.aggregate_mpattribute)("Context:Techscam")
+      ;
+      (mp.aggregate_mpattribute)("//MpIsIEVScan")
+      return mp.TRUE
     end
   end
 end
--- DECOMPILER ERROR at PC178: Unhandled construct in 'MakeBoolean' P1
-
-if l_0_2 == "cryptbase.dll" and l_0_1:find("\\appdata\\locallow\\{", 1, true) ~= nil then
-  l_0_4 = true
-end
-if l_0_2 == "errcntrl.exe" or l_0_2 == "xzhian.exe" then
-  l_0_4 = true
-  l_0_11 = true
-else
-  if (string.sub)(l_0_2, -4) == ".exe" or (string.sub)(l_0_2, -4) == ".dll" then
-    -- DECOMPILER ERROR at PC273: Unhandled construct in 'MakeBoolean' P1
-
-    if l_0_3 == 9 and (l_0_2:find("^%dvolk%.") == 1 or l_0_2:find("^%dzomi%.") == 1 or l_0_2:find("^%dffvv%.") == 1 or l_0_2:find("^%dfggd%.") == 1 or l_0_2:find("^%dbito%.") == 1 or l_0_2:find("^%dreff%.") == 1 or l_0_2:find("^%dbrtd%.") == 1 or l_0_2:find("^%dtuba%.") == 1 or l_0_2:find("^%dfana%.") == 1 or l_0_2:find("^%dvaaz%.") == 1 or l_0_2:find("^%dglum%.") == 1 or l_0_2:find("^%dlona%.") == 1 or l_0_2:find("^%dtora%.") == 1 or l_0_2:find("^%dgeea%.") == 1) then
-      l_0_5 = true
-    end
-    -- DECOMPILER ERROR at PC372: Unhandled construct in 'MakeBoolean' P1
-
-    if l_0_3 == 10 and (l_0_2:find("^%dvoika%.") == 1 or l_0_2:find("^%dtiman%.") == 1 or l_0_2:find("^%dvikia%.") == 1 or l_0_2:find("^%dvaman%.") == 1 or l_0_2:find("^%dvilic%.") == 1 or l_0_2:find("^%dzoman%.") == 1 or l_0_2:find("^%dtumba%.") == 1 or l_0_2:find("^%ddcvvv%.") == 1 or l_0_2:find("^%dtemad%.") == 1 or l_0_2:find("^%dbudda%.") == 1 or l_0_2:find("^%dbyuut%.") == 1 or l_0_2:find("^%dtroja%.") == 1 or l_0_2:find("^%dgansa%.") == 1 or l_0_2:find("^%dbewff%.") == 1 or l_0_2:find("^%ddesta%.") == 1 or l_0_2:find("^%dbalik%.") == 1 or l_0_2:find("^%doiran%.") == 1 or l_0_2:find("^%derree%.") == 1 or l_0_2:find("^%dslota%.") == 1) then
-      l_0_5 = true
-    end
-    -- DECOMPILER ERROR at PC441: Unhandled construct in 'MakeBoolean' P1
-
-    if l_0_3 == 11 and (l_0_2:find("^%drokato%.") == 1 or l_0_2:find("^%dtorkan%.") == 1 or l_0_2:find("^%dcerber%.") == 1 or l_0_2:find("^%dpliuna%.") == 1 or l_0_2:find("^%dtomand%.") == 1 or l_0_2:find("^%dvalium%.") == 1 or l_0_2:find("^%dblonde%.") == 1 or l_0_2:find("^%drfeeee%.") == 1 or l_0_2:find("^%dgeorki%.") == 1 or l_0_2:find("^%dvoider%.") == 1 or l_0_2:find("^%dfugaze%.") == 1 or l_0_2:find("^%dloshek%.") == 1 or l_0_2:find("^%dvomina%.") == 1) then
-      l_0_5 = true
-    end
-    -- DECOMPILER ERROR at PC470: Unhandled construct in 'MakeBoolean' P1
-
-    if l_0_3 == 12 and (l_0_2:find("^%dsysconf%.") == 1 or l_0_2:find("^%dtokinau%.") == 1 or l_0_2:find("^%dvaevaod%.") == 1 or l_0_2:find("^%dvokrena%.") == 1 or l_0_2:find("^%dpalitra%.") == 1) then
-      l_0_5 = true
-    end
-    -- DECOMPILER ERROR at PC489: Unhandled construct in 'MakeBoolean' P1
-
-    if l_0_3 == 13 and (l_0_2:find("^%dskkkkkkk%.") == 1 or l_0_2:find("^%dfile_saw%.") == 1 or l_0_2:find("^%dpolismen%.") == 1) then
-      l_0_5 = true
-    end
-    -- DECOMPILER ERROR at PC503: Unhandled construct in 'MakeBoolean' P1
-
-    if l_0_3 == 14 and (l_0_2:find("^%ddsve2wefd%.") == 1 or l_0_2:find("^%dbovtensdf%.") == 1) then
-      l_0_5 = true
-    end
-    if l_0_3 == 18 and l_0_2:find("^%d%d%d%d%d%d%d%d%d%d%d%d%d%d%.exe") == 1 then
-      (mp.set_mpattribute)("Lua:SuspiciousPEFileName.B")
-    else
-      -- DECOMPILER ERROR at PC538: Unhandled construct in 'MakeBoolean' P3
-
-      if (l_0_3 == 23 and l_0_2:find("^%dsyasdsgscsafgrwonf%.") == 1) or l_0_3 ~= 21 or l_0_3 == 14 and l_0_2:find("^%dchtototam%.") == 1 then
-        l_0_5 = true
-      else
-        if l_0_3 == 31 and l_0_2:find("^[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]%[%d%]%.exe") == 1 then
-          l_0_4 = true
-        else
-          if l_0_3 == 8 and l_0_2:find("^%d%[%d%]%.") == 1 then
-            l_0_6 = true
-            l_0_10 = true
-          end
-        end
-      end
-    end
-    if l_0_3 > 25 and l_0_3 < 100 and (string.sub)(l_0_2, 1, 18) == "api-ms-win-system-" and (string.sub)(l_0_2, -4) == ".dll" then
-      if l_0_1:find("\\appdata\\locallow\\{", 1, true) ~= nil then
-        l_0_4 = true
-      else
-        if l_0_1:find("\\windows genuine advantage\\{", 1, true) ~= nil or l_0_1:find("\\windows\\installer\\{", 1, true) ~= nil or l_0_1:find("\\appdata\\local\\temp\\{........%-....%-....%-....%-............}\\") ~= nil or l_0_1:find("\\local settings\\temp\\{........%-....%-....%-....%-............}\\") ~= nil then
-          l_0_7 = true
-        end
-      end
-    end
-    if ((l_0_1:find("\\programdata\\{", 1, true) == nil and l_0_1:find("\\application data\\{", 1, true) == nil) or (l_0_1:find("\\programdata\\{9a88e103-a20a-4ea5-8636-c73b709a5bf8}\\", 1, true) == nil and l_0_1:find("\\programdata\\{f66cb4ee-546f-4d54-9332-216de189aab0}\\", 1, true) == nil and l_0_1:find("\\programdata\\{698e0848-6d29-4305-80dc-e8d609260ce2}\\", 1, true) == nil and l_0_1:find("\\programdata\\{49a0bac7-3326-4433-9373-4aa8793abb5c}\\", 1, true) == nil and l_0_1:find("\\programdata\\{effc3e07-aed7-4c3c-992f-2c5eb14af4a8}\\", 1, true) == nil and l_0_1:find("\\programdata\\{d9e629dc-cb1c-4a97-9900-81922b4effd4}\\", 1, true) == nil and l_0_1:find("\\programdata\\{ca2facf7-9029-4a21-892b-e7f60b39ff1a}\\", 1, true) == nil and l_0_1:find("\\programdata\\{4ba6ab29-2eab-46fc-8b33-a767b5dbb0f3}\\", 1, true) == nil and l_0_1:find("\\application data\\{4d03d701-c800-49f0-8590-127eff2877ff}\\", 1, true) == nil and l_0_1:find("\\programdata\\{9b82496a-c211-4fcf-84b5-e2b3a1d99f8f}", 1, true) == nil and l_0_1:find("\\programdata\\{d93bcbeb-07b6-4fa0-86bf-5552dfc4404c}", 1, true) == nil and l_0_1:find("\\programdata\\{65ee3202-cce0-4ec4-9369-0a126e1da09c}", 1, true) == nil and l_0_1:find("\\programdata\\{b7a719fb-068f-41ad-8261-3569c22edec2}", 1, true) == nil and l_0_1:find("\\programdata\\{18067bd7-3c56-4e2e-8627-51ee9adc5a30}", 1, true) == nil and l_0_1:find("\\programdata\\{1016e27d-c6ce-4668-9211-5ec18caadbf8}", 1, true) == nil and l_0_1:find("\\programdata\\{39567fd8-2a86-4514-8b0a-406c6e60a8bb}", 1, true) == nil and l_0_1:find("\\programdata\\{9925001e-4d97-434f-8579-2e06af34678f}", 1, true) == nil and l_0_1:find("\\programdata\\{0bf6ab17-0058-462c-8274-0655b925c812}", 1, true) == nil and l_0_1:find("\\programdata\\{a4682c3b-ab83-49b3-8eb5-b44e3f044b59}", 1, true) == nil and l_0_1:find("\\programdata\\{0a41da87-d172-4c26-9422-d2c4f5549861}", 1, true) == nil and l_0_1:find("\\programdata\\{2cd18189-70a0-4ae9-899e-05bad272e52e}", 1, true) == nil and l_0_1:find("\\programdata\\{33896b39-667b-48e5-8c29-b02174b09d04}", 1, true) == nil and l_0_1:find("\\programdata\\{2f752dac-f812-4497-9e91-d8701a4745cb}", 1, true) == nil and l_0_1:find("\\programdata\\{9cad18b2-ff9b-4cca-8ee0-a4cda3ad5f51}\\", 1, true) == nil) or l_0_3 <= 4 or (string.sub)(l_0_2, -4) == ".dll") then
-      l_0_7 = true
-      l_0_10 = true
-      l_0_13 = false
-    end
-    if ((l_0_2:find("^rad.....%.tmp%.exe") ~= 1 and l_0_2:find("^rad.....%.tmp%.dll") ~= 1) or l_0_1:len() <= 20 or (l_0_1:find("\\appdata\\local\\temp\\", 1, true) == nil and l_0_1:find("\\local settings\\temp\\", 1, true) == nil) or ((string.sub)(l_0_1, -6) == "\\temp\\" or (string.sub)(l_0_1, -10) == "\\temp\\low\\")) then
-      l_0_8 = true
-    end
-  end
-end
-if (l_0_3 == 27 and l_0_2:find("^~tmf%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%.tmp") == 1) or l_0_3 > 18 and l_0_3 < 26 and l_0_2:find("^0%.%d+%.log") == 1 then
-  l_0_5 = true
-else
-  if (l_0_3 == 12 and l_0_2:find("^logos%[%d%]%.php") == 1) or l_0_3 > 13 and l_0_3 < 23 and l_0_2:find("^%d%d?%d?_%d%d?%d?_%d%d?%d?_%d%d?%d?%[%d%]%.htm") == 1 then
-    l_0_4 = true
-  end
-end
-if (string.sub)(l_0_2, -4) == ".dll" and l_0_1:find("\\appdata\\locallow\\{........%-....%-....%-....%-............}\\") ~= nil then
-  l_0_4 = true
-  ;
-  (mp.set_mpattribute)("Lua:BedepFileName.G")
-else
-  if (string.sub)(l_0_2, -4) == ".tmp" then
-    if l_0_1:find("\\programdata\\windows genuine advantage\\{........%-....%-....%-....%-............}\\") ~= nil then
-      l_0_7 = true
-    else
-      if (l_0_3 == 7 or l_0_3 == 8) and l_0_2:find("^[0-9a-f][0-9a-f][0-9a-f][0-9a-f]?%.tmp") == 1 then
-        if l_0_1:len() > 20 and (l_0_1:find("\\appdata\\local\\temp\\", 1, true) ~= nil or l_0_1:find("\\local settings\\temp\\", 1, true) ~= nil) and ((string.sub)(l_0_1, -6) == "\\temp\\" or (string.sub)(l_0_1, -10) == "\\temp\\low\\") then
-          l_0_4 = true
-          l_0_10 = true
-          l_0_12 = true
-          l_0_13 = false
-        end
-        if l_0_1:len() > 10 and (string.sub)(l_0_1, -10) == "\\temp\\low\\" then
-          l_0_4 = true
-          l_0_10 = true
-          l_0_12 = true
-          l_0_13 = false
-        end
-      end
-    end
-    if (l_0_1:find("\\appdata\\local\\temp\\{........%-....%-....%-....%-............}\\$") ~= nil or l_0_1:find("\\local settings\\temp\\{........%-....%-....%-....%-............}\\$") ~= nil) and l_0_3 == 11 and l_0_2:find("^tmp[0-9a-f][0-9a-f][0-9a-f][0-9a-f]%.tmp") == 1 then
-      l_0_7 = true
-      l_0_13 = false
-    end
-  end
-end
-if (l_0_4 or l_0_5 or l_0_6 or l_0_7 or l_0_8 or l_0_9) and not l_0_10 then
-  (mp.set_mpattribute)("Lua:SuspiciousPEFileName.A")
-end
-if l_0_4 or l_0_5 or l_0_6 or l_0_7 or l_0_8 then
-  local l_0_14 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-  local l_0_15 = false
-  local l_0_16, l_0_17 = pcall(mp.get_parent_filehandle)
-  if l_0_16 then
-    l_0_16 = pcall(mp.get_filesize_by_handle, l_0_17)
-  end
-  if not l_0_16 then
-    l_0_15 = true
-  end
-  local l_0_18 = false
-  if peattributes.isdll and peattributes.no_exports and (peattributes.no_ep or epcode[1] ~= 184 or (mp.readu_u32)(epcode, 3) ~= 3254779904 or (mp.readu_u16)(epcode, 7) == 12) then
-    l_0_18 = true
-  end
-  local l_0_19 = false
-  if pehdr.NumberOfSections > 0 and (mp.getfilesize)() < (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData then
-    l_0_19 = true
-  end
-  if l_0_15 and not l_0_18 and not l_0_19 and l_0_14 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-    local l_0_20 = false
-    local l_0_21 = false
-    l_0_20 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_NEWLYCREATEDHINT)
-    -- DECOMPILER ERROR at PC1120: Overwrote pending register: R21 in 'AssignReg'
-
-    if not l_0_20 then
-      do
-        local l_0_22 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-        if l_0_4 and l_0_22 == "iexplore.exe" then
-          if l_0_11 or l_0_13 and not l_0_21 then
-            (mp.set_mpattribute)("Lua:ContextEKIEDropTest")
-          else
-            ;
-            (mp.set_mpattribute)("Lua:ContextEKIEDrop")
-          end
-        else
-          if l_0_4 and l_0_22 == "opera.exe" and not l_0_12 then
-            if l_0_11 or l_0_13 and not l_0_21 then
-              (mp.set_mpattribute)("Lua:ContextEKOperaDropTest")
-            else
-              ;
-              (mp.set_mpattribute)("Lua:ContextEKOperaDrop")
-            end
-          else
-            if l_0_4 and l_0_22 == "plugin-container.exe" and not l_0_12 then
-              if l_0_11 or l_0_13 and not l_0_21 then
-                (mp.set_mpattribute)("Lua:ContextEKFirefoxDropTest")
-              else
-                ;
-                (mp.set_mpattribute)("Lua:ContextEKFirefoxDrop")
-              end
-            else
-              if l_0_5 and l_0_22 == "java.exe" then
-                if l_0_11 or l_0_13 and not l_0_21 then
-                  (mp.set_mpattribute)("Lua:ContextEKJavaDropTest")
-                else
-                  ;
-                  (mp.set_mpattribute)("Lua:ContextEKJavaDrop")
-                end
-              else
-                if l_0_6 and l_0_22 == "acrord32.exe" then
-                  if l_0_11 or l_0_13 and not l_0_21 then
-                    (mp.set_mpattribute)("Lua:ContextEKAcroRdDropTest")
-                  else
-                    ;
-                    (mp.set_mpattribute)("Lua:ContextEKAcroRdDrop")
-                  end
-                else
-                  if not l_0_4 or (((l_0_22 == "aolbrowser.exe" or l_0_22 == "msn.exe") and not l_0_12) or not l_0_8 or l_0_22 == "wscript.exe") then
-                    if l_0_11 or l_0_13 and not l_0_21 then
-                      (mp.set_mpattribute)("Lua:ContextEKOtherDropTest")
-                    else
-                      ;
-                      (mp.set_mpattribute)("Lua:ContextEKOtherDrop")
-                    end
-                  else
-                    if l_0_7 and l_0_22 == "explorer.exe" then
-                      if l_0_11 or l_0_13 and not l_0_21 then
-                        (mp.set_mpattribute)("Lua:ContextEKExplorerDropTest")
-                      else
-                        ;
-                        (mp.set_mpattribute)("Lua:ContextEKExplorerDrop")
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-        return mp.CLEAN
-      end
-    end
-  end
+do
+  return mp.FALSE
 end
 

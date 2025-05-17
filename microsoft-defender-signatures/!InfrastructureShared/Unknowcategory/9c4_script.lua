@@ -3,49 +3,57 @@
 
 -- params : ...
 -- function num : 0
-IsStrLower = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 == nil or l_1_1 <= 0 or l_1_1 > 128 then
-    return false
-  end
-  for l_1_5 = 1, l_1_1 do
-    local l_1_6 = (string.byte)(l_1_0, l_1_5)
-    if l_1_6 < 97 or l_1_6 > 122 then
-      return false
-    end
-  end
-  return true
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
+  return mp.CLEAN
 end
-
-IsDofoilPath = function(l_2_0, l_2_1)
-  -- function num : 0_1
-  do return (string.len)(l_2_0) == 8 and (string.len)(l_2_1) == 12 and IsStrLower(l_2_0, 8) == true and IsStrLower(l_2_1, 8) == true end
-  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+if l_0_1:len() < 6 then
+  return mp.CLEAN
 end
-
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-  if (string.lower)(l_0_1:sub(-25, -9)) == "\\appdata\\roaming\\" or (string.lower)(l_0_1:sub(-26, -9)) == "\\application data\\" then
-    local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_ATTRIBUTES)
-    if l_0_2 ~= 4294967295 then
-      l_0_2 = (mp.bitand)(l_0_2, 3)
-      if l_0_2 == 3 then
-        (mp.set_mpattribute)("Lua:SuspiciousDropExeAttrib.C")
+local l_0_3 = l_0_2:len()
+if l_0_3 > 10 and l_0_2:find("^wpm_v.+%.exe$") == 1 then
+  (mp.set_mpattribute)("Lua:ContextFileNameSupTab.A")
+else
+  if l_0_3 > 10 and l_0_2:find("^minilite_v.+%.exe$") == 1 then
+    (mp.set_mpattribute)("Lua:ContextFileNameSupTab.B")
+  else
+    if l_0_2 == "oursurfing.exe" then
+      (mp.set_mpattribute)("Lua:ContextFileNameSupTab.C")
+    else
+      if l_0_3 > 8 and l_0_2:find("^amt_.+%.exe$") == 1 and l_0_1:find("\\temp\\", 1, true) ~= nil and l_0_2 ~= "amt_util.exe" then
+        (mp.set_mpattribute)("Lua:ContextFileNameSupTab.D")
       else
-        if l_0_2 ~= 0 then
-          if IsDofoilPath(l_0_1:sub(-8), (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == true then
-            (mp.set_mpattribute)("Lua:DofoilFilename.A")
+        if l_0_2 == "protectservice.exe" then
+          (mp.set_mpattribute)("Lua:ContextFileNameSupTab.E")
+        else
+          if l_0_2 == "winmanpro.exe" then
+            (mp.set_mpattribute)("Lua:ContextFileNameSupTab.F")
+          else
+            if l_0_2 == "ihpmserver.exe" then
+              (mp.set_mpattribute)("Lua:ContextFileNameSupTab.G")
+            else
+              if l_0_2 == "raydld.exe" then
+                (mp.set_mpattribute)("Lua:ContextFileNameSupTab.H")
+              else
+                if (l_0_3 > 10 and l_0_2:find("^ray_v.+%.exe$") == 1) or l_0_3 > 10 and l_0_2:find("^ray_%d.+%.exe$") == 1 then
+                  (mp.set_mpattribute)("Lua:ContextFileNameSupTab.I")
+                else
+                  if l_0_2 == "ssfk.exe" then
+                    (mp.set_mpattribute)("Lua:ContextFileNameSupTab.J")
+                  else
+                    if l_0_3 > 10 and l_0_2:find("^ssfk_v.+%.exe$") == 1 then
+                      (mp.set_mpattribute)("Lua:ContextFileNameSupTab.K")
+                    end
+                  end
+                end
+              end
+            end
           end
-          ;
-          (mp.set_mpattribute)("Lua:SuspiciousDropExeAttrib.D")
-          return mp.INFECTED
         end
       end
     end
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

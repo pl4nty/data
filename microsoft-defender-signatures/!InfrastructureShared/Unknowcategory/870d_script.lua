@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)(pevars.sigaddr) then
-  (pe.set_regval)(pe.REG_EAX, 0)
-  ;
-  (mp.set_mpattribute)("PEBMPAT:Simda:AntiEmuTimeStampCheck")
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.find)(l_0_1, "\\windows\\system32\\services.exe", 1, true) then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

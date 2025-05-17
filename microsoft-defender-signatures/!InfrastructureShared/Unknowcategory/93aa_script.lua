@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0 = nil
+    if (string.find)(l_0_0, "\\seal systems\\p2p_scripts\\", 1, true) then
+      return mp.CLEAN
+    end
+  end
   return mp.INFECTED
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_stapcore")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_stapcore")
-end
-return mp.CLEAN
 

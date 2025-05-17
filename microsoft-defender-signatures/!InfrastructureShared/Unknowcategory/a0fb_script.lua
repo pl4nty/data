@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "\\microsoft\\edge", 1, true) or (string.find)(l_0_0, "\\temp\\edgemitmp", 1, true) or (string.find)(l_0_0, "\\google\\chrome\\", 1, true) then
+if (string.find)((string.lower)((mp.getfilename)()), "lenovo", 1, true) ~= nil or (mp.get_mpattribute)("PACKED_WITH:[MSILRES:DisplayFusion.Properties.Resources.resources]") then
+  (mp.set_mpattribute)("HSTR:AllowList:SkypeSneak")
   return mp.CLEAN
 end
 return mp.INFECTED

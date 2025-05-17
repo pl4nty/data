@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_0.ppid, "M")
-;
-(bm.add_action)("SmsAsyncScanEvent", 5000)
-return mp.INFECTED
+if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) and mp.HSTR_WEIGHT >= 8 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

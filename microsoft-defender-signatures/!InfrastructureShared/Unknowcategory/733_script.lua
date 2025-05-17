@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.sub)(l_0_0, -14) == "\\component_600" then
-  (mp.set_mpattribute)("Lua:FilCoutFileName.A")
-end
-return mp.CLEAN
+(MpDetection.ScanResource)("regkey://HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Internet Explorer\\Main\\\\Start Page")
+;
+(MpDetection.ScanResource)("regkey://HKEY_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\Main\\\\Start Page")
 

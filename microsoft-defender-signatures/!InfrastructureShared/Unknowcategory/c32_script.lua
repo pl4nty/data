@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:DownloadMR")
+(mp.set_mpattribute)("PUA:Block:Dartsmound")
 return mp.INFECTED
 

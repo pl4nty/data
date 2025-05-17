@@ -3,41 +3,36 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
+local l_0_0 = ""
+if (this_sigattrlog[3]).matched then
+  l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
+else
+  if (this_sigattrlog[4]).matched then
+    l_0_0 = (string.lower)((this_sigattrlog[4]).utf8p2)
+  else
+    if (this_sigattrlog[5]).matched then
+      l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
+    else
+      if (this_sigattrlog[6]).matched then
+        l_0_0 = (string.lower)((this_sigattrlog[6]).utf8p2)
+      else
+        if (this_sigattrlog[7]).matched then
+          l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p2)
+        else
+          if (this_sigattrlog[8]).matched then
+            l_0_0 = (string.lower)((this_sigattrlog[8]).utf8p2)
+          else
+            if (this_sigattrlog[9]).matched then
+              l_0_0 = (string.lower)((this_sigattrlog[9]).utf8p2)
+            end
+          end
+        end
+      end
+    end
+  end
 end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
+if l_0_0 ~= nil and (string.len)(l_0_0) > 8 and ((string.find)(l_0_0, "stop", 1, true) or (string.find)(l_0_0, "disabled", 1, true)) then
+  return mp.INFECTED
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.epscn_writable ~= false then
-  return mp.CLEAN
-end
-if peattributes.packed ~= false then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[1]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
-  return mp.CLEAN
-end
-if peattributes.hasexports ~= false then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

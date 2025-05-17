@@ -3,52 +3,44 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.match)(l_0_0, "winword%.exe\".+\"(.+%.doc[mx]?\"-)")
-  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 and (sysio.IsFileExists)(l_0_1) then
-    (mp.ReportLowfi)(l_0_1, 3879768063)
-    ;
-    (bm.add_related_file)(l_0_1)
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+  else
   end
+  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
+
   do
-    if (this_sigattrlog[2]).matched then
-      local l_0_2 = (this_sigattrlog[2]).utf8p1
-      if l_0_2 ~= nil and (sysio.IsFileExists)(l_0_2) then
-        (mp.ReportLowfi)(l_0_2, 743348104)
-        ;
-        (bm.add_related_file)(l_0_2)
-      end
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9 = (string.lower)((this_sigattrlog[3]).utf8p1)
+    else
     end
-    do
-      if (this_sigattrlog[3]).matched then
-        local l_0_3 = (this_sigattrlog[3]).utf8p1
-        if l_0_3 ~= nil and (sysio.IsFileExists)(l_0_3) then
-          (mp.ReportLowfi)(l_0_3, 2183682628)
-          ;
-          (bm.add_related_file)(l_0_3)
-        end
-      end
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC62: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC71: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC80: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC87: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC93: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (not (this_sigattrlog[5]).matched or (string.lower)((this_sigattrlog[5]).utf8p1) ~= nil) and ((string.find)((string.lower)((this_sigattrlog[5]).utf8p1), "\\microsoft\\exchange server\\v%d%d\\frontend\\") ~= nil or (string.find)((string.lower)((this_sigattrlog[5]).utf8p1), "\\frontend\\httpproxy\\owa\\", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[5]).utf8p1), "\\inetpub\\wwwroot\\", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[5]).utf8p1), "\\microsoft\\exchange server\\v%d%d\\clientaccess\\") ~= nil) then
       do
-        if (this_sigattrlog[4]).matched then
-          local l_0_4 = (this_sigattrlog[4]).utf8p1
-          if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
-            (mp.ReportLowfi)(l_0_4, 854093595)
-            ;
-            (bm.add_related_file)(l_0_4)
+        if (sysio.IsFileExists)((string.lower)((this_sigattrlog[5]).utf8p1)) then
+          local l_0_10 = nil
+          if (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), "(.*\\)[^\\]+$") then
+            (bm.trigger_sig)("TriggerShellPath", (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), "(.*\\)[^\\]+$"))
           end
+          ;
+          (bm.add_related_file)(l_0_10)
         end
-        do
-          if (this_sigattrlog[5]).matched then
-            local l_0_5 = (this_sigattrlog[5]).utf8p1
-            if l_0_5 ~= nil and (sysio.IsFileExists)(l_0_5) then
-              (mp.ReportLowfi)(l_0_5, 1993852203)
-              ;
-              (bm.add_related_file)(l_0_5)
-            end
-          end
-          return mp.INFECTED
-        end
+        do return mp.INFECTED end
+        return mp.CLEAN
       end
     end
   end

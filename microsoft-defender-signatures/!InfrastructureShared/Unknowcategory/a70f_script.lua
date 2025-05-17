@@ -3,41 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 4000000 or l_0_0 < 4000 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if (string.find)(l_0_0, "\\microsoft\\edge\\", 1, true) or (string.find)(l_0_0, "\\internet explorer\\", 1, true) or (string.find)(l_0_0, "\\brave-browser\\", 1, true) or (string.find)(l_0_0, "yandexbrowser", 1, true) or (string.find)(l_0_0, "\\mozilla firefox\\", 1, true) or (string.find)(l_0_0, "\\opera", 1, true) or (string.find)(l_0_0, "\\safari\\", 1, true) or (string.find)(l_0_0, "\\sogouexplorer\\", 1, true) or (string.find)(l_0_0, "\\qqbrowser\\", 1, true) or (string.find)(l_0_0, "\\2345explorer\\", 1, true) or (string.find)(l_0_0, "360", 1, true) or (string.find)(l_0_0, "browser", 1, true) or (string.find)(l_0_0, "chrome", 1, true) or (string.find)(l_0_0, "proxy", 1, true) or (string.find)(l_0_0, "\\chromium\\", 1, true) then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_ismsil") then
-  return mp.CLEAN
-end
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("system32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("syswow64", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("xboxgames", 1, true) then
-  return mp.CLEAN
-end
-local l_0_2 = (pe.get_versioninfo)()
-if l_0_2 ~= nil then
-  local l_0_3 = l_0_2.OriginalFilename
-  local l_0_4 = l_0_2.CompanyName
-  if l_0_3 and l_0_4 and ((string.find)((string.lower)(l_0_3), "fstx.dll", 1, true) or (string.find)((string.lower)(l_0_3), "clfsw32.dll", 1, true)) and (string.find)((string.lower)(l_0_4), "microsoft corporation", 1, true) then
-    return mp.CLEAN
-  end
-end
-do
-  return mp.INFECTED
-end
+return mp.INFECTED
 

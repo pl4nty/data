@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Baryas.MBXI!MTB") then
+if peattributes.ismsil == true and peattributes.amd64_image then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,21 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched and (this_sigattrlog[6]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), "^(.+)\\\\imagepath")
-  if l_0_0 ~= l_0_1 then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+  local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+  if (string.sub)(l_0_2, -4) ~= ".exe" then
     return mp.CLEAN
   end
-  local l_0_2 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  if l_0_2 == nil or (string.len)(l_0_2) <= 8 or (string.find)(l_0_2, "\\tweaking_ras.exe", 1, true) then
+  if (string.sub)(l_0_1, -10) == "\\downloads" or l_0_1:find("\\temporary internet files\\", 1, true) ~= nil or l_0_1:find("\\inetcache\\", 1, true) ~= nil then
     return mp.CLEAN
+  end
+  local l_0_3 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+  if l_0_3 == "iexplore.exe" then
+    (mp.set_mpattribute)("Lua:ContextualDropFileIE")
   else
-    if (string.find)(l_0_2, "powershell", 1, true) or (string.find)(l_0_2, "wscript", 1, true) or (string.find)(l_0_2, "cscript", 1, true) or (string.find)(l_0_2, "mshta", 1, true) or (string.find)(l_0_2, "cmd.exe /c ", 1, true) or (string.find)(l_0_2, "cmd.exe /q /c ", 1, true) or (string.find)(l_0_2, "cmd /c ", 1, true) or (string.find)(l_0_2, "cmd /q /c ", 1, true) or (string.find)(l_0_2, "%comspec% ", 1, true) or (string.find)(l_0_2, "/c start ", 1, true) then
-      return mp.INFECTED
+    if l_0_3 == "chrome.exe" then
+      (mp.set_mpattribute)("Lua:ContextualDropFileChrome")
+    else
+      if l_0_3 == "firefox.exe" then
+        (mp.set_mpattribute)("Lua:ContextualDropFileFirefox")
+      else
+        if l_0_3 == "opera.exe" then
+          (mp.set_mpattribute)("Lua:ContextualDropFileOpera")
+        end
+      end
     end
   end
-  return mp.CLEAN
 end
 do
   return mp.CLEAN

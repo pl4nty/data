@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "sharpshares.exe" then
-  return mp.CLEAN
+if (hstrlog[6]).matched or (hstrlog[3]).matched and (hstrlog[7]).matched then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

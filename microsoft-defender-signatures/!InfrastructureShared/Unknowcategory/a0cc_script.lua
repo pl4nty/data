@@ -3,22 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 13, 4)
-if (string.find)(l_0_0, "­‹\240", 1, true) ~= nil then
-  local l_0_1 = (string.find)(l_0_0, "\1396", 1, true)
-  if l_0_1 ~= nil then
-    local l_0_2 = 44 + 1 + 2
-  else
-    do
-      do
-        do return mp.LOWFI end
-        -- DECOMPILER ERROR at PC38: Confused about usage of register: R2 in 'UnsetPending'
-
-        ;
-        (pe.mmap_patch_va)(pevars.sigaddr + l_0_2, ")öë ")
-        return mp.CLEAN
-      end
-    end
-  end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 64)
+local l_0_1 = (string.find)(l_0_0, "a}", 1, true)
+if l_0_1 ~= nil then
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 7, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 16, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 22, "")
+  return mp.INFECTED
 end
+return mp.LOWFI
 

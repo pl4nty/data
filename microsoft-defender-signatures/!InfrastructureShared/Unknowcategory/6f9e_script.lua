@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:TrojanDropper:Win32/Jacard!MTB") then
+if (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 536870912) == 536870912 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,18 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (mp.GetExecutablesFromCommandLine)((this_sigattrlog[1]).utf8p2)
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    l_0_5 = (mp.ContextualExpandEnvironmentVariables)(l_0_5)
-    if (sysio.IsFileExists)(l_0_5) then
-      (bm.add_related_file)(l_0_5)
-    end
-  end
+if ((not (mp.get_mpattribute)("SCPT:TrojanDownloader:JS/Nemucod!ret0x0a") or (mp.get_mpattribute)("SCPT:TrojanDownloader:JS/Nemucod!ret0x0d")) and not (mp.get_mpattribute)("SCPT:TrojanDownloader:JS/Nemucod!ret0x2c")) or 0 + 1 + 1 + 1 >= 2 then
+  return mp.INFECTED
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
-end
+return mp.CLEAN
 

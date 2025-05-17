@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 96)
-local l_0_1 = (string.find)(l_0_0, "t\002\235", 1, true) - 1
-local l_0_2 = (string.find)(l_0_0, "t\002\235", l_0_1 + 4, true) - 1
-if l_0_1 ~= nil and l_0_2 ~= nil then
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\235")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_2, "\235")
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if l_0_0 ~= nil and (string.find)(l_0_0, "\\msbuild.exe", 1, true) then
+      (bm.add_action)("EmsScan", 5000)
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.LOWFI
 

@@ -3,34 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 101 then
-  do
-    -- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
-    if (((((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and (hstrlog[5]).matched) or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched then
-      local l_0_0, l_0_1 = 0 + 1 + 1 + 1 + 1 + 1
-    end
-    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_0 == 5 then
-      return mp.INFECTED
-    end
-    do
-      if (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched then
-        local l_0_2 = nil
-      end
-      -- DECOMPILER ERROR at PC82: Confused about usage of register: R0 in 'UnsetPending'
-
-      if l_0_2 >= 3 and 0 + 1 == 1 then
-        return mp.INFECTED
-      end
-      ;
-      (mp.set_mpattribute)("HSTR:TrojanDownloader:O97M/Donoff.gen!E.1")
-      do return mp.CLEAN end
-      ;
-      (mp.set_mpattribute)("HSTR:TrojanDownloader:O97M/Donoff.gen!E")
-      return mp.CLEAN
-    end
-  end
-end
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 54, 4)
+l_0_0 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(l_0_0, 4)
+l_0_0 = (mp.readu_u32)(l_0_0, 1)
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr + 23, 4)
+l_0_1 = (mp.readu_u32)(l_0_1, 1)
+l_0_1 = (mp.bitxor)(l_0_1, l_0_0)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "\191")
+local l_0_2, l_0_3, l_0_4, l_0_5 = (mp.bsplit)(l_0_1, 8)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 22, (string.char)(l_0_2))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 23, (string.char)(l_0_3))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 24, (string.char)(l_0_4))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 25, (string.char)(l_0_5))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 26, "êêêê")
+return mp.INFECTED
 

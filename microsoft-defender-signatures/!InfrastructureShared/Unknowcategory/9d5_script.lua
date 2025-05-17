@@ -3,125 +3,76 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)(((mp.getfilename)()):sub(-9))
-local l_0_1 = 4
-if l_0_0:sub(-4, -4) ~= "." then
-  return mp.CLEAN
-end
--- DECOMPILER ERROR at PC33: Unhandled construct in 'MakeBoolean' P1
+escape_word = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1, l_1_2 = l_1_0:gsub, l_1_0
+  local l_1_3 = "[%(%)%.%%%+%-%*%?%[%]%^%$]"
+  do
+    local l_1_4 = function(l_2_0)
+    -- function num : 0_0_0
+    return "%" .. l_2_0
+  end
 
-if l_0_0:sub(-8, -8) ~= "." and l_0_0:sub(-9, -9) ~= "." then
-  return mp.CLEAN
+    do return l_1_1(l_1_2, l_1_3, l_1_4) end
+    -- DECOMPILER ERROR at PC5: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
+  end
 end
-l_0_1 = 3
-local l_0_2 = {}
-l_0_2.exe = ""
-l_0_2.scr = ""
-l_0_2.cpl = ""
-l_0_2.cmd = ""
-l_0_2.bat = ""
-l_0_2.pif = ""
-do
-  if l_0_2[l_0_0:sub(-3)] then
-    local l_0_3 = {}
-    l_0_3.doc = ""
-    l_0_3.docm = ""
-    l_0_3.docx = ""
-    l_0_3.dot = ""
-    l_0_3.dotm = ""
-    l_0_3.dotx = ""
-    l_0_3.odt = ""
-    l_0_3.rtf = ""
-    l_0_3.ods = ""
-    l_0_3.xla = ""
-    l_0_3.xls = ""
-    l_0_3.xlam = ""
-    l_0_3.xlsb = ""
-    l_0_3.xlsm = ""
-    l_0_3.xlsx = ""
-    l_0_3.xlt = ""
-    l_0_3.xltm = ""
-    l_0_3.xltx = ""
-    l_0_3.odp = ""
-    l_0_3.pot = ""
-    l_0_3.potm = ""
-    l_0_3.potx = ""
-    l_0_3.ppa = ""
-    l_0_3.ppam = ""
-    l_0_3.pps = ""
-    l_0_3.ppsm = ""
-    l_0_3.ppsx = ""
-    l_0_3.ppt = ""
-    l_0_3.pptm = ""
-    l_0_3.pptx = ""
-    l_0_3.ani = ""
-    l_0_3.bmp = ""
-    l_0_3.cur = ""
-    l_0_3.emf = ""
-    l_0_3.gif = ""
-    l_0_3.ico = ""
-    l_0_3.jpeg = ""
-    l_0_3.jpg = ""
-    l_0_3.png = ""
-    l_0_3.raw = ""
-    l_0_3.tif = ""
-    l_0_3.tiff = ""
-    l_0_3.wmf = ""
-    l_0_3["3gp"] = ""
-    l_0_3.aac = ""
-    l_0_3.asf = ""
-    l_0_3.avi = ""
-    l_0_3.fla = ""
-    l_0_3.flac = ""
-    l_0_3.flv = ""
-    l_0_3.m3u = ""
-    l_0_3.m4v = ""
-    l_0_3.mkv = ""
-    l_0_3.mov = ""
-    l_0_3.mp3 = ""
-    l_0_3.mp4 = ""
-    l_0_3.mpe = ""
-    l_0_3.mpeg = ""
-    l_0_3.mpg = ""
-    l_0_3.ogg = ""
-    l_0_3.vma = ""
-    l_0_3.wav = ""
-    l_0_3.wmv = ""
-    l_0_3.cpp = ""
-    l_0_3.css = ""
-    l_0_3.csv = ""
-    l_0_3.eml = ""
-    l_0_3.gdoc = ""
-    l_0_3.hta = ""
-    l_0_3.htm = ""
-    l_0_3.html = ""
-    l_0_3.mht = ""
-    l_0_3.pdf = ""
-    l_0_3.php = ""
-    l_0_3.ttf = ""
-    l_0_3.txt = ""
-    l_0_3.xml = ""
-    l_0_3.cab = ""
-    l_0_3.gzip = ""
-    l_0_3.iso = ""
-    l_0_3.rar = ""
-    l_0_3.tar = ""
-    l_0_3.vhd = ""
-    l_0_3.zip = ""
-    l_0_3["3ds"] = ""
-    l_0_3.acad = ""
-    l_0_3.aws = ""
-    l_0_3.dwg = ""
-    l_0_3.dxf = ""
-    l_0_3.fas = ""
-    l_0_3.lsp = ""
-    l_0_3.mnl = ""
-    l_0_3.plf = ""
-    l_0_3.vlx = ""
-    if l_0_3[l_0_0:sub(-l_0_1 - 4, -5)] then
-      return mp.INFECTED
+
+if (mp.get_mpattribute)("SCRIPT:PowShellFormat!obfus") or (mp.get_mpattribute)("SCRIPT:PowShellFormat!obfus2") or (mp.get_mpattribute)("SCRIPT:PowShellFormat!obfus3") then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 > 131072 then
+    return mp.CLEAN
+  end
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)(0, l_0_0)
+  l_0_1 = (string.lower)(l_0_1)
+  l_0_1 = (string.gsub)(l_0_1, " ", "")
+  if (mp.get_mpattribute)("SCRIPT:PowShellFormat!obfus2") then
+    l_0_1 = (string.gsub)(l_0_1, "\\\'", "\'")
+    l_0_1 = (string.gsub)(l_0_1, "`", "")
+  end
+  if (mp.get_mpattribute)("SCRIPT:PowShellFormat!obfus3") then
+    l_0_1 = (string.gsub)(l_0_1, "%+chr%(34%)%+\"", "")
+    l_0_1 = (string.gsub)(l_0_1, "`", "")
+  end
+  local l_0_2 = 0
+  for l_0_6 in (string.gmatch)(l_0_1, "%(\"{%d+}{%d+}.-\"%-f\'.-\',\'.-[^,]\'%)") do
+    local l_0_7, l_0_8 = (string.match)(l_0_6, "%(\"({%d+}{%d+}.-)\"%-f(\'.-\',\'.-[^,]\')%)")
+    if l_0_7 and l_0_8 then
+      local l_0_9 = {}
+      for l_0_13 in (string.gmatch)(l_0_7, "{(%d+)}") do
+        (table.insert)(l_0_9, l_0_13)
+      end
+      local l_0_14 = {}
+      for l_0_18 in (string.gmatch)(l_0_8, "\'(.-)\'") do
+        (table.insert)(l_0_14, l_0_18)
+      end
+      if #l_0_9 == #l_0_14 then
+        local l_0_19 = #l_0_9
+        local l_0_20 = ""
+        for l_0_24 = 1, l_0_19 do
+          l_0_20 = l_0_20 .. l_0_14[l_0_9[l_0_24] + 1]
+        end
+        l_0_6 = escape_word(l_0_6)
+        l_0_1 = (string.gsub)(l_0_1, l_0_6, l_0_20)
+        l_0_2 = l_0_2 + 1
+      end
     end
   end
+  if l_0_2 >= 3 then
+    l_0_1 = (string.gsub)(l_0_1, "`([%a%d])", "%1")
+    l_0_1 = (string.gsub)(l_0_1, "\"%+\"", "")
+    l_0_1 = (string.gsub)(l_0_1, "\'%+\'", "")
+    l_0_1 = (string.gsub)(l_0_1, "%.\"(%w+)\"", "%.%1")
+    l_0_1 = (string.gsub)(l_0_1, "::\"(%w+)\"", "::%1")
+    ;
+    (mp.vfo_add_buffer)(l_0_1, "[deobfus]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
 

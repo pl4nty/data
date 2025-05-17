@@ -3,29 +3,72 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = (string.lower)(l_0_6.image_path)
-    if (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)(l_0_7, "\\program files (x86)\\", 1, true) or (string.find)(l_0_7, "\\program files\\", 1, true) or (string.find)(l_0_7, "\\winreseau.exe", 1, true)) then
-      return mp.CLEAN
-    end
-  end
-end
-local l_0_8 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_8, "\\program files\\", 1, true) or (string.find)(l_0_8, "\\program files (x86)\\", 1, true) or (string.find)(l_0_8, "\\putty.exe", 1, true) or (string.find)(l_0_8, "\\taputty.exe", 1, true) or (string.find)(l_0_8, "\\njlink.exe", 1, true) or (string.find)(l_0_8, "\\bmc", 1, true) or (string.find)(l_0_8, "\\ebarsoftware", 1, true) or (string.find)(l_0_8, "\\aethos", 1, true) or (string.find)(l_0_8, "\\aquasuite_rap", 1, true) or (string.find)(l_0_8, "\\runremote", 1, true) or (string.find)(l_0_8, "\\util\\bin\\ssh", 1, true) or (string.find)(l_0_8, "\\tightvnc", 1, true) then
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-local l_0_9 = ""
-if (this_sigattrlog[1]).matched then
-  l_0_9 = (this_sigattrlog[1]).utf8p2
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_9 = (this_sigattrlog[2]).utf8p2
-  end
+if peattributes.hasexports ~= true then
+  return mp.CLEAN
 end
-if l_0_9 ~= "" and (string.find)(l_0_9, " -pw ", 1, true) and (string.find)(l_0_9, " -P ", 1, true) and (string.find)(l_0_9, " -R ", 1, true) then
-  return mp.INFECTED
+if pehdr.Subsystem ~= 2 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if ((pehdr.DataDirectory)[1]).RVA <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).Size <= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[1]).Size >= 256 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[5]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[10]).Size ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[12]).Size ~= 0 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
+if (mp.readu_u32)(l_0_0, 1) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 5) <= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 9) ~= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 13) <= 0 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 17) ~= 1 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 21) ~= 4 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 25) ~= 4 then
+  return mp.CLEAN
+end
+if (mp.readu_u32)(l_0_0, 29) <= 0 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 2)
+if (mp.crc32)(-1, l_0_1, 1, 2) ~= 3038897196 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,30 +3,18 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC7: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC11: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0.utf8p2)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC19: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC19 = (mp.ContextualExpandEnvironmentVariables)(R6_PC19)
-      if (sysio.IsFileExists)(R6_PC19) then
-        (bm.add_related_file)(R6_PC19)
-      end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_1 = (string.gmatch)(l_0_0, "::readallbytes%([\'\"](.+%.lnk)[\'\"]%)")
+  for l_0_5 in l_0_1 do
+    if (sysio.IsFileExists)(l_0_5) then
+      (bm.add_related_file)(l_0_5)
     end
   end
-  do
-    return mp.INFECTED
-  end
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

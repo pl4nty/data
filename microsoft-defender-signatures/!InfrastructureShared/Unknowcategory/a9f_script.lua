@@ -3,39 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_1 = nil
-local l_0_2 = "ssh-brute-"
-local l_0_3 = 100
-local l_0_4 = 30
-local l_0_5 = 0
+local l_0_0, l_0_2 = nil, nil
 do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = 10
+  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
+    local l_0_1, l_0_3, l_0_5 = , (string.lower)((this_sigattrlog[3]).utf8p1)
+  else
   end
-  if l_0_1 ~= nil then
+  if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p1 == nil or (this_sigattrlog[5]).matched) and (string.lower)((this_sigattrlog[4]).utf8p1) ~= nil then
+    local l_0_4 = this_sigattrlog[5]
     local l_0_6 = nil
-    local l_0_7, l_0_8 = , pcall(MpCommon.RollingQueueCreate, l_0_2 .. l_0_1, l_0_3, l_0_4, 0)
-    if not l_0_8 then
-      return mp.CLEAN
+    if (string.lower)(l_0_4.utf8p1) ~= nil and (string.find)((string.lower)(l_0_4.utf8p1), l_0_6, 1, true) then
+      (bm.add_related_file)(l_0_6)
+      return mp.INFECTED
     end
-    if not l_0_8 then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC52: Overwrote pending register: R7 in 'AssignReg'
-
-    if not l_0_8 then
-      return mp.CLEAN
-    end
-    if l_0_6 <= l_0_5 then
-      pcall(MpCommon.RollingQueueErase, l_0_7)
+    local l_0_7 = nil
+    if (string.find)((string.lower)(l_0_4.utf8p2), l_0_6, 1, true) then
+      (bm.add_related_file)(l_0_6)
       return mp.INFECTED
     end
   end
   do
-    do
-      do return mp.CLEAN end
-      -- WARNING: undefined locals caused missing assignments!
-    end
+    return mp.CLEAN
   end
 end
 

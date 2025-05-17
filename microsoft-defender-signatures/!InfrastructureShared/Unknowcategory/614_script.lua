@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\program files", 1, true) then
+if (MpCommon.NidSearch)(mp.NID_DISABLE_NW_REPORTING, 1) then
   return mp.CLEAN
 end
-;
-(mp.ReportLowfi)(l_0_0, 1160269835)
-return mp.INFECTED
+if (MpCommon.NidSearch)(mp.NID_ENABLE_NW_REPORTING, 1) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

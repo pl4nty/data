@@ -3,16 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() >= 512000 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData < 65536 then
-  return mp.CLEAN
-end
-if peattributes.isvbnative == true then
+if pehdr.Machine == 34404 and pehdr.Subsystem == 1 and peattributes.isdriver and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.getfilesize)() < 100000 then
   return mp.INFECTED
 end
 return mp.CLEAN

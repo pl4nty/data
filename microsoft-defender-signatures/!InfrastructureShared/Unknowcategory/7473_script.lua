@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or 0 + 1 + 1 + 1 == 1 then
+if peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_ep == true then
   return mp.INFECTED
 end
 return mp.CLEAN

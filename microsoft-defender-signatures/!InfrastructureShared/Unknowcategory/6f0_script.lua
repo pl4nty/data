@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if #(mp.enum_mpattributesubstring)("SCPT:JS/Belmont.ZD") >= 2 then
-  return mp.INFECTED
+if (mp.readu_u32)(headerpage, 9) == 1717724275 then
+  (mp.set_mpattribute)("Lua:IsSdbFile")
 end
 return mp.CLEAN
 

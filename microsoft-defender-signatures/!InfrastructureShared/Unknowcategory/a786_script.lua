@@ -3,37 +3,25 @@
 
 -- params : ...
 -- function num : 0
-add_related_file_wrapper = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0 ~= nil then
-    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
-    for l_1_5,l_1_6 in ipairs(l_1_1) do
-      l_1_6 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_1_6))
-      if (string.find)(l_1_6, "cmstp.exe$") == nil and (sysio.IsFileExists)(l_1_6) then
-        (bm.add_related_file)(l_1_6)
-      end
-    end
-  end
+local l_0_0 = (pe.get_regval)(pe.REG_EDI)
+if l_0_0 <= 0 or l_0_0 > 1048576 then
+  return mp.INFECTED
 end
-
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-    local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-    if l_0_7 == 1 and ((string.find)(l_0_8, "vpn", 1, true) or (string.find)(l_0_8, ":\\users\\", 1, true) or (string.find)(l_0_8, "\\msiexe.exe", 1, true) or (string.find)(l_0_8, ":\\program files", 1, true) or (string.find)(l_0_8, ":\\windows\\immersivecontrolpanel\\systemsettings.exe", 1, true)) then
-      return mp.CLEAN
-    end
-  end
-end
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[1]).utf8p2)
-end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p1)
-end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p2)
-end
+local l_0_1 = (pe.get_regval)(pe.REG_EBX)
+local l_0_2 = (pe.mmap_va)(pevars.sigaddr, 128)
+local l_0_3 = (mp.readu_u32)(l_0_2, 28)
+local l_0_4 = (pe.mmap_va)(l_0_3, 256)
+local l_0_5 = (mp.readu_u32)(l_0_2, 37)
+local l_0_6 = (mp.readu_u32)((pe.mmap_va)(l_0_5, 4), 1)
+local l_0_7 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
+local l_0_8 = "\190\000\000\000\000\189\001\000\000\000âË@%\255\000\000\000â≈âÔäóN\002@\000\015∂ \003\rJ\002@\000Å·\255\000\000\000äôN\002@\000àëN\002@\000\137\rJ\002@\000àüN\002@\000\015∂âN\002@\000\015∂”\001—Å\225\255\000\000\000\015∂ôN\002@\000∏N\003@\0000\0280ÉÓ\001u°√\000\000\000\000"
+local l_0_9 = (pe.mmap_va)(l_0_1, l_0_0)
+local l_0_10 = l_0_7 .. l_0_8 .. l_0_4 .. l_0_9
+;
+(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 2, l_0_0)
+;
+(mp.writeu_u32)(l_0_10, (string.len)(l_0_7) + 107, l_0_6)
+;
+(mp.vfo_add_buffer)(l_0_10, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 return mp.INFECTED
 

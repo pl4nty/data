@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, " -noprofile ", 1, true) or (string.find)(l_0_0, " -noninteractive ", 1, true) or (string.find)(l_0_0, "wsmprovhost", 1, true)) then
+local l_0_0 = pevars.sigaddr
+local l_0_1 = (pe.mmap_va)(l_0_0 + 2287, 32)
+if (mp.readu_u32)(l_0_1, 1) ~= 1935939071 or (mp.readu_u32)(l_0_1, 5) ~= 3277652040 or (mp.readu_u16)(l_0_1, 9) == 52428 or (mp.readu_u32)(l_0_1, 11) == 3435973836 or (mp.readu_u32)(l_0_1, 15) == 3435973836 or (mp.readu_u32)(l_0_1, 18) == 3435973836 or (mp.readu_u32)(l_0_1, 22) ~= 1098924136 then
+  (mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Autoit!obfuscated")
   return mp.CLEAN
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-local l_0_2 = (string.lower)(l_0_1.command_line)
-if (string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "taskschedulerinvoke", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.SUSPICIOUS
 

@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "×ÀÒººÂÜÍ\000\000\000\000\000\000\000\000×ÀÒÏÊÌÀæ\000\000\000\000\000\000\000\000×ÀÒÞÕÍÅÅÂÈ\000\000\000\000\000\000ßþäåÚòÙÛ÷¾\000\000\000\000\000\000¬ô\255éä¯¬ö¤\aù÷óå\218\000\144\000"
-do
-  if (mp.getfilesize)() > 50331648 then
-    local l_0_1 = 50331648
-  end
-  -- DECOMPILER ERROR at PC10: Confused about usage of register: R1 in 'UnsetPending'
-
-  if (mp.BMSearchFile)(0, l_0_1, l_0_0) ~= -1 then
+local l_0_0 = (nri.GetSSLCertificate)()
+if l_0_0 and l_0_0.Subject == l_0_0.Issuer then
+  local l_0_1 = l_0_0.Subject
+  local l_0_2, l_0_3 = (string.match)(l_0_1, ", OU=(.+), CN=(.+), EMAIL=(.+)")
+  if ", OU=(.+), CN=(.+), EMAIL=(.+)" == l_0_2 .. "@" .. l_0_3 then
     return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

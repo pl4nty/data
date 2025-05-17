@@ -3,33 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(headerpage, 1) == 76 then
-  if (mp.readu_u32)(headerpage, 5) ~= 136193 then
-    return mp.CLEAN
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[4]).utf8p2
+  if (string.find)(l_0_0, "/u ", 1, true) and (string.find)(l_0_0, "/s ", 1, true) then
+    local l_0_1 = nil
+    if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+      l_0_1 = (this_sigattrlog[1]).utf8p2
+    else
+      if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+        l_0_1 = (this_sigattrlog[2]).utf8p2
+      else
+        if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+          l_0_1 = (this_sigattrlog[3]).utf8p2
+        end
+      end
+    end
+    if l_0_1 ~= nil then
+      local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+      for l_0_6,l_0_7 in ipairs(l_0_2) do
+        if (sysio.IsFileExists)(l_0_7) then
+          (bm.add_related_file)(l_0_7)
+        end
+      end
+    end
+    do
+      do
+        l_0_2 = mp
+        l_0_2 = l_0_2.INFECTED
+        do return l_0_2 end
+        l_0_0 = mp
+        l_0_0 = l_0_0.CLEAN
+        return l_0_0
+      end
+    end
   end
-  if (mp.readu_u32)(headerpage, 9) ~= 0 then
-    return mp.CLEAN
-  end
-  if (mp.readu_u32)(headerpage, 13) ~= 192 then
-    return mp.CLEAN
-  end
-  if (mp.readu_u32)(headerpage, 17) ~= 1174405120 then
-    return mp.CLEAN
-  end
-  local l_0_0, l_0_1 = (mp.UfsGetMetadataBool)("Lua:FileInZip", true)
-  if l_0_0 ~= 0 or not l_0_1 then
-    return mp.CLEAN
-  end
-  local l_0_2, l_0_3 = (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true)
-  if l_0_2 == 0 and l_0_3 then
-    (mp.set_mpattribute)("//Lua:ZipWithSingleLnk")
-  end
-  if (mp.UfsGetMetadataBool)("Lua:ZipWithMotw", true) ~= 0 or not "Lua:ZipWithMotw" then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
-end
-do
-  return mp.CLEAN
 end
 

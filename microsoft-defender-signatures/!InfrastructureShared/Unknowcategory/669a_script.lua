@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 then
+if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
   return mp.INFECTED
 end
 return mp.CLEAN

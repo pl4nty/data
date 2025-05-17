@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "odbior_1000%d%d%d%d%d%d%d%d%dU.vbs") ~= nil or (string.find)(l_0_0, "przesylka_1000%d%d%d%d%d%d%d%d%dU.vbs") ~= nil then
+if (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 and (mp.crc32)(-1, epcode, 1, 15) == 183454422 then
   return mp.INFECTED
 end
 return mp.CLEAN

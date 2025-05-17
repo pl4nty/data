@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_0 = (this_sigattrlog[1]).ppid
 ;
-(bm.request_SMS)(l_0_0.ppid, "m+")
-return mp.CLEAN
+(MpCommon.TurnNriOnProcess)(l_0_0)
+return mp.INFECTED
 

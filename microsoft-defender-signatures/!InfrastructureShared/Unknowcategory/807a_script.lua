@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("SCPT:RansomNote:")
-if l_0_0 ~= nil and #l_0_0 >= 5 then
-  (mp.set_mpattribute)("MpDisableCaching")
+if (mp.get_mpattribute)("pea_isdll") and pehdr.NumberOfSections == 5 and peattributes.hasexports == true then
   return mp.INFECTED
 end
 return mp.CLEAN

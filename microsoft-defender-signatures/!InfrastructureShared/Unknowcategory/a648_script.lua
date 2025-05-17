@@ -3,29 +3,44 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 200000000 then
+if peattributes.isdll ~= true then
   return mp.CLEAN
 end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  local l_0_1 = (string.match)((this_sigattrlog[5]).utf8p2, ";regionsize:(%d+)")
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_0, ";destport=80;", 1, true) or (string.find)(l_0_0, ";destport=443;", 1, true) then
-    return mp.CLEAN
-  end
-  if tonumber(l_0_1) < 110000 then
-    return mp.CLEAN
-  end
-  local l_0_2 = (bm.get_current_process_startup_info)()
-  ;
-  (bm.request_SMS)(l_0_2.ppid, "M")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1000)
-  return mp.INFECTED
-end
-do
+if peattributes.hasexports ~= false then
   return mp.CLEAN
 end
+if epcode[1] ~= 106 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 40 then
+  return mp.CLEAN
+end
+if epcode[3] ~= 104 then
+  return mp.CLEAN
+end
+if epcode[8] ~= 232 then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.ImageBase ~= 268435456 then
+  return mp.CLEAN
+end
+if (pesecs[1]).SizeOfRawData ~= 512 then
+  return mp.CLEAN
+end
+if (pesecs[1]).VirtualAddress ~= 4096 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData ~= 8704 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 6 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

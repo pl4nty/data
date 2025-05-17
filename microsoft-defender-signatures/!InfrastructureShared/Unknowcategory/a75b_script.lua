@@ -3,86 +3,70 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched or (hstrlog[2]).matched or hstrlog[3] or hstrlog[4]) and pehdr.NumberOfSections < 6 and pehdr.NumberOfSections >= 3 then
-  local l_0_0 = 1280
-  local l_0_1 = 256
-  local l_0_2 = 8192
-  if (pesecs[1]).Name == ".text" and l_0_0 + l_0_1 < (pesecs[1]).VirtualSize and l_0_2 < (pesecs[3]).VirtualSize then
-    local l_0_3 = (pe.mmap_rva)((pesecs[1]).VirtualAddress + l_0_1, l_0_0)
-    local l_0_4 = true
-    local l_0_5 = 0
-    local l_0_6 = 0
-    for l_0_10 = 1, 8 do
-      local l_0_11 = (mp.readu_u32)(l_0_3, l_0_10)
-      if (mp.bitand)(l_0_11, 65535) > 0 and (mp.bitand)(l_0_11, 4294901760) == 0 then
-        do
-          do
-            l_0_6 = l_0_10
-            do break end
-            -- DECOMPILER ERROR at PC81: LeaveBlock: unexpected jumping out DO_STMT
-
-            -- DECOMPILER ERROR at PC81: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC81: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
+checkChildProcessExist = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_0 == nil or l_1_1 == nil or type(l_1_1) ~= "table" then
+    return nil
+  end
+  local l_1_2, l_1_3 = (bm.get_process_relationships)(l_1_0)
+  for l_1_7,l_1_8 in ipairs(l_1_3) do
+    if (mp.bitand)(l_1_8.reason_ex, 1) == 1 then
+      local l_1_9 = l_1_8.image_path
+      for l_1_13,l_1_14 in ipairs(l_1_1) do
+        if (string.sub)(l_1_9, -(string.len)(l_1_14)) == l_1_14 then
+          return l_1_8.ppid
         end
       end
     end
-    for l_0_15 = l_0_6, l_0_0 - 4 - l_0_6, 4 do
-      local l_0_16 = (mp.readu_u32)(l_0_3, l_0_15)
-      if (mp.bitand)(l_0_16, 65535) > 0 then
-        l_0_5 = l_0_5 + 1
-      end
-      if (mp.bitand)(l_0_16, 4294901760) > 0 then
-        do
-          do
-            l_0_4 = false
-            do break end
-            -- DECOMPILER ERROR at PC109: LeaveBlock: unexpected jumping out DO_STMT
+  end
+  do return nil end
+  -- DECOMPILER ERROR at PC50: Confused about usage of register R4 for local variables in 'ReleaseLocals'
 
-            -- DECOMPILER ERROR at PC109: LeaveBlock: unexpected jumping out IF_THEN_STMT
+end
 
-            -- DECOMPILER ERROR at PC109: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
-        end
-      end
-    end
-    if l_0_4 and l_0_0 / 4 / 2 < l_0_5 then
-      local l_0_17 = (pe.foffset_rva)((pesecs[3]).VirtualAddress + (pesecs[3]).VirtualSize - l_0_2)
-      ;
-      (mp.readprotection)(false)
-      local l_0_18 = (mp.readfile)(l_0_17, l_0_2)
-      local l_0_19 = -1
-      for l_0_23 = l_0_2 - 4, 1, -1 do
-        local l_0_24 = (mp.readu_u32)(l_0_18, l_0_23)
-        if l_0_24 == 720895 or l_0_24 == 655359 then
-          do
-            do
-              l_0_19 = l_0_17 + l_0_23
-              do break end
-              -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out DO_STMT
-
-              -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
-
+local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+local l_0_1 = (sysio.GetProcessFromFileName)(l_0_0)
+if l_0_1 == nil or #l_0_1 == 0 then
+  return mp.CLEAN
+end
+local l_0_2 = nil
+if (this_sigattrlog[1]).matched then
+  l_0_2 = (this_sigattrlog[1]).ppid
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_2 = (this_sigattrlog[2]).ppid
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_2 = (this_sigattrlog[3]).ppid
+    else
+      if (this_sigattrlog[4]).matched then
+        l_0_2 = (this_sigattrlog[4]).ppid
+      else
+        if (this_sigattrlog[5]).matched then
+          l_0_2 = (this_sigattrlog[5]).ppid
+        else
+          if (this_sigattrlog[6]).matched then
+            l_0_2 = (this_sigattrlog[6]).ppid
+          else
+            if (this_sigattrlog[7]).matched then
+              l_0_2 = (this_sigattrlog[7]).ppid
             end
           end
         end
       end
-      if l_0_19 ~= -1 then
-        local l_0_25 = (mp.readfile)(0, (mp.getfilesize)())
-        ;
-        (mp.writeu_u32)(l_0_25, l_0_19, 1)
-        ;
-        (mp.vfo_add_buffer)(l_0_25, "xorgetti_patched", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-      end
     end
   end
 end
-do
+if l_0_2 == nil then
   return mp.CLEAN
 end
+local l_0_3 = {}
+-- DECOMPILER ERROR at PC88: No list found for R3 , SetList fails
+
+-- DECOMPILER ERROR at PC89: Overwrote pending register: R4 in 'AssignReg'
+
+if ("conhost.exe")(l_0_2, l_0_3) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

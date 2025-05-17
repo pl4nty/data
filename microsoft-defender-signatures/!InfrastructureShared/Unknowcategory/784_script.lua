@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.IOAVGetDownloadUrl)()
-if l_0_0 == nil then
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
   return mp.CLEAN
 end
-if (string.len)(l_0_0) < 12 then
-  return mp.CLEAN
-end
-l_0_0 = (string.lower)(l_0_0)
-if (string.find)(l_0_0, "sharepoint", 1, true) then
+if l_0_2 == "libglib-2.0-0.dll" and l_0_1:find("\\temp\\sea.+%.tmp") then
   return mp.INFECTED
 end
 return mp.CLEAN

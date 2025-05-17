@@ -3,18 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-if l_0_0.match_offset + 14 < mp.HEADERPAGE_SZ then
-  return mp.CLEAN
-end
-do
-  if l_0_0.is_header and headerpage[l_0_0.match_offset + 13] > 32 then
-    local l_0_1 = tostring(headerpage)
-    if (string.match)(l_0_1, "\253\028%Xm") ~= nil and (string.match)(l_0_1, "\004\017%Xm") ~= nil and (string.match)(l_0_1, "h\149%Xm") ~= nil then
-      (mp.set_mpattribute)("SCPT:Englist.Size")
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+    if l_0_7 == 1 then
+      local l_0_8, l_0_9 = (bm.get_process_relationships)(l_0_6.ppid)
+      for l_0_13,l_0_14 in ipairs(l_0_8) do
+        if l_0_14.image_path ~= nil then
+          local l_0_15 = (mp.bitand)(l_0_14.reason_ex, 1)
+          if l_0_15 == 1 then
+            local l_0_16 = (string.lower)(l_0_14.image_path)
+            if (string.find)(l_0_16, "excel.exe", 1, true) or (string.find)(l_0_16, "winword.exe", 1, true) then
+              return mp.INFECTED
+            end
+          end
+        end
+      end
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
 end
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC67: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
 

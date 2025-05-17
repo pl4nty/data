@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetMachineGUID)()
-if l_0_0 == nil or l_0_0:len() ~= 36 then
-  return mp.CLEAN
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)((string.sub)(l_0_0, -12))
+  if l_0_0 == "\\svchost.exe" and MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((bm.get_current_process_startup_info)()).integrity_level then
+    return mp.CLEAN
+  end
 end
-local l_0_1 = {}
-l_0_1["15e7fdb4-69ea-447f-90ea-4622da7a88d6"] = "Lua:Guid.1"
-l_0_1["b2343ede-44a4-4178-bd92-d36186294555"] = "Lua:Guid.1"
-l_0_1["cafefeed-0000-0c7c-ab00-facebeadface"] = "Lua:Guid.1"
-local l_0_2 = l_0_1[l_0_0:lower()]
-if l_0_2 ~= nil then
-  (mp.set_mpattribute)(l_0_2)
-end
-return mp.CLEAN
+return mp.INFECTED
 

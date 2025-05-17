@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 == nil then
-  return mp.CLEAN
+if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 325888 then
+  (pe.reemulate)()
+  return mp.INFECTED
 end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 == nil then
-  return mp.CLEAN
-end
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).wp2 == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

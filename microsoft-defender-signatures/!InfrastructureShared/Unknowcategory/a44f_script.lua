@@ -3,22 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[7]).utf8p1
-if l_0_0 == nil then
+if peattributes.isdll and not peattributes.no_exports then
+  local l_0_0 = {}
+  l_0_0["rsasec.dll"] = true
+  l_0_0["secctp.dll"] = true
+  l_0_0["module_ls.dll"] = true
+  l_0_0["deploy.dll"] = true
+  l_0_0["deplay.dll"] = true
+  l_0_0["jpicom.dll"] = true
+  l_0_0["nbdcom.dll"] = true
+  local l_0_1 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))
+  if l_0_1 and l_0_0[l_0_1] then
+    return mp.INFECTED
+  end
+  local l_0_2 = (pe.get_versioninfo)()
+  if l_0_2 then
+    local l_0_3 = l_0_2.OriginalFilename
+    if l_0_3 and l_0_0[(string.lower)(l_0_3)] then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-l_0_0 = (string.lower)(l_0_0)
-if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
-  return mp.CLEAN
-end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
-end
-return mp.INFECTED
 

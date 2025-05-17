@@ -3,38 +3,28 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[5]).matched then
-  local l_0_0 = nil
-  -- DECOMPILER ERROR at PC20: Overwrote pending register: R1 in 'AssignReg'
-
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-    local l_0_1 = nil
-    -- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
-    -- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
-    if ((string.find)(l_0_1, ".dll", 1, true) == nil and (string.find)(l_0_1, ".cpl", 1, true) == nil and (string.find)(l_0_1, ".tmp", 1, true) == nil and (string.find)(l_0_1, ".dat", 1, true) == nil and (string.find)(l_0_1, "-", 1, true) == nil and (string.find)(l_0_1, ".exe", 1, true) == nil and (string.find)(l_0_1, "\\microsoft\\word\\startup\\%a+.%a") ~= nil) or (string.find)(l_0_1, "\\appdata\\roaming\\%a+.dll") ~= nil then
-      local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-      if l_0_2 ~= nil then
-        for l_0_6,l_0_7 in ipairs(l_0_2) do
-          l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-          ;
-          (bm.add_related_file)(l_0_7)
-        end
-      end
-      do
-        do
-          do return mp.INFECTED end
-          return mp.CLEAN
-        end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\chrome\\application\\chrome.exe", 1, true) or (string.find)(l_0_0, "\\microsoftedge", 1, true) or (string.find)(l_0_0, "windows\\system32\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\sophos\\", 1, true) or (string.find)(l_0_0, "\\application\\browser.exe", 1, true)) then
+  return mp.CLEAN
+end
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_head[l_0_4]).matched and ((sigattr_head[l_0_4]).attribute == 16401 or (sigattr_head[l_0_4]).attribute == 16400 or (sigattr_head[l_0_4]).attribute == 16404) then
+    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
+    if (sigattr_head[l_0_4]).utf8p1 ~= nil then
+      local l_0_6 = {}
+      l_0_6["iexplore.exe"] = true
+      l_0_6["chrome.exe"] = true
+      l_0_6["firefox.exe"] = true
+      l_0_6["teams.exe"] = true
+      l_0_6["ccmsetup.exe"] = true
+      l_0_6["ccmexec.exe"] = true
+      l_0_6["outlook.exe"] = true
+      l_0_6["olk.exe"] = true
+      if l_0_6[(string.match)((string.lower)(l_0_5), "\\([^\\]+)$")] then
+        return mp.CLEAN
       end
     end
   end
 end
+return mp.INFECTED
 

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative or peattributes.isvbpcode then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\144")
+return mp.INFECTED
 

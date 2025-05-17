@@ -3,7 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(sysio.StopService)("mssecsvc2.0")
-;
-(sysio.DeleteService)("mssecsvc2.0")
+(mp.set_mpattribute)("Lua:RdEgos")
+return mp.CLEAN
 

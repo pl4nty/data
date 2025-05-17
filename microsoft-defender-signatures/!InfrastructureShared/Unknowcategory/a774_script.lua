@@ -3,58 +3,58 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 ~= nil and l_0_0 > 20971520 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1 == nil or #l_0_1 < 4 then
-  return mp.CLEAN
-end
-local l_0_2 = {}
--- DECOMPILER ERROR at PC39: No list found for R2 , SetList fails
+if (mp.getfilesize)() <= 102400 then
+  local l_0_1 = 0
+  local l_0_2 = 0
+  do
+    do
+      if (hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched then
+        local l_0_0 = 0
+        l_0_0 = 1
+      end
+      -- DECOMPILER ERROR at PC75: Overwrote pending register: R0 in 'AssignReg'
 
--- DECOMPILER ERROR at PC40: Overwrote pending register: R3 in 'AssignReg'
+      -- DECOMPILER ERROR at PC101: Overwrote pending register: R0 in 'AssignReg'
 
--- DECOMPILER ERROR at PC41: Overwrote pending register: R4 in 'AssignReg'
+      -- DECOMPILER ERROR at PC127: Overwrote pending register: R0 in 'AssignReg'
 
-for l_0_6,l_0_7 in ("/usr/")("/var/lib/") do
-  -- DECOMPILER ERROR at PC44: Overwrote pending register: R9 in 'AssignReg'
+      -- DECOMPILER ERROR at PC133: Overwrote pending register: R0 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC44: Overwrote pending register: R8 in 'AssignReg'
+      -- DECOMPILER ERROR at PC134: Confused about usage of register: R2 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC45: Overwrote pending register: R10 in 'AssignReg'
+      -- DECOMPILER ERROR at PC143: Unhandled construct in 'MakeBoolean' P3
 
-  -- DECOMPILER ERROR at PC46: Overwrote pending register: R11 in 'AssignReg'
+      -- DECOMPILER ERROR at PC143: Unhandled construct in 'MakeBoolean' P3
 
-  if ("/opt/")("/etc/", "/snap/", "/boot/") == l_0_7 then
-    return mp.CLEAN
-  end
-end
-do
-  local l_0_8 = {}
-  -- DECOMPILER ERROR at PC64: Overwrote pending register: R12 in 'AssignReg'
+      -- DECOMPILER ERROR at PC143: Unhandled construct in 'MakeBoolean' P3
 
-  -- DECOMPILER ERROR at PC90: No list found for R3 , SetList fails
+      -- DECOMPILER ERROR at PC143: Unhandled construct in 'MakeBoolean' P3
 
-  -- DECOMPILER ERROR at PC91: Overwrote pending register: R4 in 'AssignReg'
+      -- DECOMPILER ERROR at PC143: Unhandled construct in 'MakeBoolean' P3
 
-  -- DECOMPILER ERROR at PC92: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC143: Unhandled construct in 'MakeBoolean' P3
 
-  for l_0_12,l_0_13 in ("/altair/")("-altair.") do
-    -- DECOMPILER ERROR at PC95: Overwrote pending register: R9 in 'AssignReg'
+      if (((((((not (hstrlog[10]).matched and not (hstrlog[11]).matched and not (hstrlog[12]).matched and not (hstrlog[13]).matched) or not (hstrlog[14]).matched) and not (hstrlog[18]).matched) or not (hstrlog[19]).matched) and not (hstrlog[23]).matched) or (hstrlog[24]).matched) and l_0_1 >= 3) or l_0_0 + 1 >= 2 then
+        if l_0_2 then
+          return mp.INFECTED
+        end
+        if (mp.get_mpattribute)("SIGATTR:Trojan:Win32/Figyek.A") then
+          return mp.SUSPICIOUS
+        end
+      end
+      -- DECOMPILER ERROR at PC158: Confused about usage of register: R2 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC97: Overwrote pending register: R10 in 'AssignReg'
+      if (mp.getfilesize)() == 77824 or l_0_0 + 1 == 1 then
+        (mp.set_mpattribute)("HSTR:Trojan:Win32/Figyek.A.1")
+        return mp.CLEAN
+      end
+      -- DECOMPILER ERROR at PC167: Overwrote pending register: R0 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC98: Overwrote pending register: R11 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC99: Overwrote pending register: R12 in 'AssignReg'
-
-    if (("/ansys_").find)("/ansys/", "nginx", "/proc/", true) then
+      if l_0_1.HSTR_WEIGHT >= 3 then
+        (mp.set_mpattribute)("HSTR:Trojan:Win32/Figyek.A.2")
+      end
       return mp.CLEAN
     end
   end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
 end
 

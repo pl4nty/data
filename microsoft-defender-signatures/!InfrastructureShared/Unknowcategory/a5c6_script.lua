@@ -3,32 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -18) == "\\mailstorehome.exe" then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
-if (string.sub)(l_0_0, -20) == "\\mailstoreclient.exe" then
+if peattributes.hasstandardentry == true then
   return mp.CLEAN
 end
-if (string.sub)(l_0_0, -13) == "\\explorer.exe" then
+if peattributes.lastscn_falign ~= true then
   return mp.CLEAN
 end
-local l_0_1 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_1 = (this_sigattrlog[1]).utf8p2
+if peattributes.epscn_writable == false then
+  return mp.CLEAN
 end
-if l_0_1 ~= nil then
-  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-    if (sysio.IsFileExists)(l_0_7) then
-      (bm.add_related_file)(l_0_7)
-    end
-  end
+if peattributes.hasappendeddata ~= true then
+  return mp.CLEAN
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  return l_0_2
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
 end
+if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
+  return mp.CLEAN
+end
+if epcode[2] ~= 139 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

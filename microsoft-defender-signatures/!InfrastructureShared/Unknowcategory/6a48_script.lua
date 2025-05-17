@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((mp.getfilename)(), -3)) == "r2w" then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:PerfectKeylogger.A")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

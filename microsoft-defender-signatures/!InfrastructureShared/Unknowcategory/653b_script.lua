@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:HistGrabber.B")
+if peattributes.isexe and peattributes.no_security and peattributes.ismsil == false then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

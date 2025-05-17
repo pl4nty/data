@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == false then
+if (mp.readu_u16)(headerpage, 1) ~= 23117 then
   return mp.INFECTED
 end
 return mp.CLEAN

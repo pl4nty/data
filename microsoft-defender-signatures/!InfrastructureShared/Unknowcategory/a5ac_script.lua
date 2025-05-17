@@ -3,25 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset + 9
-local l_0_2 = 256
-local l_0_3 = ""
-local l_0_4 = 0
-local l_0_5 = 0
-if l_0_0.is_header then
-  l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
-else
-  l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
+local l_0_0 = {}
+l_0_0["AB7A951E-E36A-4B49-8D35-F5927069A103"] = ""
+l_0_0["EDD78F8D-8DA4-443A-ACE8-987CA9D400AD"] = ""
+l_0_0["716CA90D-9ACE-4F1E-AC33-5B3C505C0FFB"] = ""
+l_0_0["CE76777D-E5C5-4EBB-BB1A-6B17BFF08D01"] = ""
+l_0_0["5F40E508-8BBC-4A2E-86B0-8FCB6117CFA8"] = ""
+l_0_0["88293C87-BC59-4F96-AFD3-81A92CAAE5A8"] = ""
+l_0_0["AA457A77-ADC4-4857-BB2C-CBF83B7012AC"] = ""
+l_0_0["C20A962A-4B9A-47BF-87D9-EA35EEA7BE01"] = ""
+l_0_0["7C45F355-8D17-43DB-8165-8021FDD9044C"] = ""
+l_0_0["E98BB072-FDBD-42AB-928A-F98DF17BFAEE"] = ""
+local l_0_1 = (mp.GetMachineGUID)()
+if l_0_1 and l_0_0[l_0_1] then
+  return mp.LOWFI
 end
-l_0_3 = (string.gsub)(l_0_3, "%^", "")
-l_0_3 = (string.gsub)(l_0_3, "`", "")
-l_0_3 = (string.lower)(l_0_3)
-if l_0_4 + l_0_5 > 10 and (string.find)(l_0_3, "powershell", 1, true) then
-  (mp.set_mpattribute)("SCPT:rtcShellPSObfus.A")
-end
-if l_0_4 > 20 and (string.find)(l_0_3, "cmd", 1, true) then
-  (mp.set_mpattribute)("SCPT:rtcShellCmdObfus.A")
+if peattributes.amd64_image then
+  (mp.changedetectionname)(805306630)
 end
 return mp.INFECTED
 

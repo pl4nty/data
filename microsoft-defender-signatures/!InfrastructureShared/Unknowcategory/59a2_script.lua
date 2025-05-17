@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 1796572604) then
+if peattributes.ismsil and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,19 +3,38 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
+if peattributes.is_delphi then
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-if l_0_0 ~= "iexplore.exe" and l_0_0 ~= "microsoftedgecp.exe" then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH))
-if l_0_1 == nil then
+if (mp.ispackedwith)("AutoHotKey_+") then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "bitdefender", 1, true) or (string.find)(l_0_1, "eset", 1, true) or (string.find)(l_0_1, "ffdec", 1, true) or (string.find)(l_0_1, "fiddler", 1, true) or (string.find)(l_0_1, "oracle", 1, true) or (string.find)(l_0_1, "vmware", 1, true) or (string.find)(l_0_1, "wireshark", 1, true) then
-  return mp.INFECTED
+if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv") then
+  if (pesecs[1]).Name ~= ".text" then
+    return mp.CLEAN
+  end
+  local l_0_0 = 0
+  do
+    do
+      while l_0_0 < 2 do
+        local l_0_1 = (pesecs[pehdr.NumberOfSections - l_0_0]).Name
+        if l_0_1 ~= ".extra" then
+          if l_0_1 == ".rsrc" then
+            return mp.CLEAN
+          end
+          if l_0_1 == ".reloc" and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_BASERELOC]).Size < (pesecs[1]).SizeOfRawData / 2 then
+            return mp.CLEAN
+          end
+          l_0_0 = l_0_0 + 1
+        end
+        l_0_0 = l_0_0 + 1
+      end
+      do return mp.INFECTED end
+      return mp.CLEAN
+    end
+  end
 end
-return mp.CLEAN
 

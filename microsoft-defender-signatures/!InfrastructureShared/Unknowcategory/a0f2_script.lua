@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 4000000 or l_0_0 < 10000 then
+if (nri.GetHttpCommand)() ~= nri.HTTP_POST then
   return mp.CLEAN
 end
-local l_0_1 = ((MpCommon.ExpandEnvironmentVariables)("%windir%")):lower()
-if (((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()):sub(1, #l_0_1) == l_0_1 then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((nri.GetHttpRequestHeader)("User-Agent"))
+if l_0_0 == "winhttp" then
+  (nri.AddTelemetry)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH))
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

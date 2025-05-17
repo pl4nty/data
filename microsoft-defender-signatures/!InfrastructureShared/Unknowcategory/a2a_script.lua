@@ -3,25 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-  local l_0_0 = nil
-  l_0_0 = (this_sigattrlog[5]).utf8p2
-  do
-    if (this_sigattrlog[2]).matched then
-      local l_0_1 = (this_sigattrlog[2]).utf8p1
-      if (string.find)(l_0_0, l_0_1, 1, true) then
-        return mp.INFECTED
-      end
-    end
-    do
-      if (this_sigattrlog[3]).matched then
-        local l_0_2 = (this_sigattrlog[3]).utf8p1
-        if (string.find)(l_0_0, l_0_2, 1, true) then
-          return mp.INFECTED
-        end
-      end
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
+  return mp.CLEAN
 end
+if (string.find)(l_0_0, "/webapp/ROOT/", 1, true) ~= nil and (string.find)(l_0_0, ".jsp", 1, true) ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,48 +3,26 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    local l_0_1 = nil
-    -- DECOMPILER ERROR at PC30: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC44: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC49: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC51: Unhandled construct in 'MakeBoolean' P3
-
-    if ((this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil and not (this_sigattrlog[2]).matched) or nil ~= nil then
-      local l_0_2 = nil
-      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
-        local l_0_3 = nil
-        -- DECOMPILER ERROR at PC57: Confused about usage of register: R7 in 'UnsetPending'
-
-        if (sysio.IsFileExists)(R7_PC57) then
-          (bm.add_related_file)(R7_PC57)
-        end
-      end
-    end
-    do
-      if l_0_1 ~= nil then
-        local l_0_8 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-        for l_0_12,l_0_13 in ipairs(l_0_8) do
-          if (sysio.IsFileExists)(l_0_13) then
-            (bm.add_related_file)(l_0_13)
-          end
-        end
-      end
-      do
-        l_0_8 = mp
-        l_0_8 = l_0_8.INFECTED
-        return l_0_8
-      end
-    end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\application\\msedge.exe", 1, true) or (string.find)(l_0_0, "\\application\\chrome.exe", 1, true) or (string.find)(l_0_0, "\\application\\360se.exe", 1, true) or (string.find)(l_0_0, "\\application\\brave.exe", 1, true) or (string.find)(l_0_0, "\\application\\360chromex.exe", 1, true) or (string.find)(l_0_0, "\\desktop\\", 1, true) or (string.find)(l_0_0, "\\program files\\windowsapps\\", 1, true) or (string.find)(l_0_0, "\\local\\programs\\opera", 1, true) or (string.find)(l_0_0, "\\local\\programs\\quark\\quark.exe", 1, true) or (string.find)(l_0_0, "\\netchp.exe", 1, true) or (string.find)(l_0_0, "\\application\\browser.exe", 1, true) or (string.find)(l_0_0, "\\mpsigstub.exe", 1, true) then
+    return mp.CLEAN
+  end
+  if (string.find)(l_0_0, "\\users\\public\\", 1, true) or (string.find)(l_0_0, "\\appdata\\roaming\\", 1, true) or (string.find)(l_0_0, "\\appdata\\local\\temp\\", 1, true) or (string.find)(l_0_0, "\\windows\\temp\\", 1, true) or (string.find)(l_0_0, "\\python", 1, true) then
+    return mp.INFECTED
   end
 end
+local l_0_1 = (bm.get_current_process_startup_info)()
+local l_0_2 = l_0_1.command_line
+if l_0_2 then
+  l_0_2 = (string.gsub)(l_0_2, "\"", "")
+  l_0_2 = (string.gsub)(l_0_2, "\'", "")
+  l_0_2 = (string.lower)(l_0_2)
+  -- DECOMPILER ERROR at PC311: Unhandled construct in 'MakeBoolean' P3
+
+  if (string.find)(l_0_2, "curl", 1, true) or (((string.find)(l_0_2, "mshta", 1, true) and (string.find)(l_0_2, "http", 1, true)) or not (string.find)(l_0_2, "msiexec", 1, true) or not (string.find)(l_0_2, "powershell", 1, true) or (string.find)(l_0_2, "iex", 1, true)) then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

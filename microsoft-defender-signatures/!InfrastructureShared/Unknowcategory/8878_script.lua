@@ -3,9 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 491520 and l_0_0 <= 499712 and pehdr.NumberOfSections >= 7 and pehdr.NumberOfSections <= 8 and (mp.get_mpattribute)("NID:Emotet.GU!Pra1") then
-  return mp.INFECTED
+do
+  if not (hstrlog[1]).matched then
+    local l_0_0 = (hstrlog[2]).matched
+  end
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  if mp.HSTR_WEIGHT >= 3 and (l_0_0 or (hstrlog[3]).matched) then
+    return mp.INFECTED
+  end
+  if mp.HSTR_WEIGHT >= 2 then
+    return mp.LOWFI
+  else
+    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_0 then
+      return mp.LOWFI
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

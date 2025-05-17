@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%-%>%(VFS%:%d+%.bat%)$") == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:Adload.J")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:iBryte:Bit")
+(mp.set_mpattribute)("PUA:Block:DownloadMR")
 return mp.INFECTED
 

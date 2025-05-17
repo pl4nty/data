@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "A\235", 1, true), "\235\001")
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 4096 and l_0_0 <= 16384 and peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

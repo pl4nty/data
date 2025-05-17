@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and mp.HSTR_WEIGHT >= 3 and (mp.get_mpattribute)("SIGA:FileOperationDelete.S001") then
+if mp.HSTR_WEIGHT >= 21 then
   return mp.INFECTED
 end
-return mp.LOWFI
+;
+(mp.set_mpattribute)("HSTR:TrojanDownloader:Win32/Krado.A")
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+return mp.CLEAN
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image and peattributes.isexe and (mp.getfilesize)() > 1000000 then
+if (hstrlog[7]).matched and (hstrlog[8]).matched then
+  (mp.changedetectionname)(805306748)
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.INFECTED
 

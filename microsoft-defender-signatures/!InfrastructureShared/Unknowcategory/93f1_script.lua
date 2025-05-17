@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 16896 then
+  return mp.CLEAN
+end
 ;
-(pe.set_peattribute)("enable_vmm_grow", true)
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.set_peattribute)("disable_seh_limit", true)
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-;
-(pe.reemulate)()
-return mp.CLEAN
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(l_0_0 - 16896, 16896)
+if l_0_1:find("qxgxwddm)(if(findfile \"bakdwg.fas\")(load \"bakdwg.fas\")))", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

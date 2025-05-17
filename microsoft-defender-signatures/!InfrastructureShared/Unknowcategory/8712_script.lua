@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
+if peattributes.no_security == true and peattributes.no_exports == true and peattributes.headerchecksum0 == true and peattributes.entrybyte55 == true and peattributes.no_exception == true then
   return mp.INFECTED
 end
 return mp.CLEAN

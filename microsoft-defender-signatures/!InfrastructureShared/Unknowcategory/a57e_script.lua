@@ -3,47 +3,31 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[14]).matched then
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
     local l_0_0 = nil
-  else
   end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
 
-  do
-    if not (this_sigattrlog[15]).matched or (this_sigattrlog[16]).matched then
-      local l_0_1, l_0_2, l_0_3, l_0_4 = (this_sigattrlog[15]).utf8p1
-    else
-    end
-    if (this_sigattrlog[17]).matched then
-      do return mp.CLEAN end
-      if (this_sigattrlog[17]).utf8p1 == nil then
-        return mp.CLEAN
-      end
-      local l_0_5 = nil
-      local l_0_6 = -1
-      local l_0_7 = -1
-      if (MpCommon.GetPersistContext)(l_0_5) ~= nil then
-        for l_0_11,l_0_12 in ipairs((MpCommon.GetPersistContext)(l_0_5)) do
-          local l_0_8 = nil
-          -- DECOMPILER ERROR at PC59: Confused about usage of register: R8 in 'UnsetPending'
+  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
 
-          if tonumber((string.match)(R8_PC59, "^Age:([0-9]+)$")) ~= nil and l_0_6 < tonumber((string.match)(R8_PC59, "^Age:([0-9]+)$")) then
-            l_0_6 = tonumber((string.match)(R8_PC59, "^Age:([0-9]+)$"))
-          end
-          local l_0_14 = nil
-          if tonumber((string.match)(l_0_13, "^Prevalence:([0-9]+)$")) ~= nil and l_0_7 < tonumber((string.match)(l_0_13, "^Prevalence:([0-9]+)$")) then
-            l_0_7 = tonumber((string.match)(l_0_13, "^Prevalence:([0-9]+)$"))
-          end
-        end
-        if l_0_6 > -1 and l_0_6 <= 1 and l_0_7 > -1 and l_0_7 <= 100 then
-          return mp.INFECTED
-        end
+    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasMediafireUrl") then
+      (bm.add_related_file)(R7_PC42)
+      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromMediafire") then
+        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromMediafire", 3600)
+        return mp.INFECTED
       end
-      return mp.CLEAN
     end
   end
+  return mp.CLEAN
 end
 

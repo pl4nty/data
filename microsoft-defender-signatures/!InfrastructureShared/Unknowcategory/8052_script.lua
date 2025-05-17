@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[6]).hitcount >= 7 and pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if mp.HSTR_CALLER_SMS == l_0_0 then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("SLF:Win32/BruterShell.A")
+return mp.LOWFI
 

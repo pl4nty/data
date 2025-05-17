@@ -19,7 +19,7 @@ if l_0_1 then
   end
 end
 if l_0_0 then
-  if (string.find)(l_0_0, "\\windows\\system32\\", 1, true) or (string.find)(l_0_0, "\\360safe\\", 1, true) or (string.find)(l_0_0, "\\qiyi\\", 1, true) or (string.find)(l_0_0, "}.tm.blf", 1, true) or (string.find)(l_0_0, "}.txr.blf", 1, true) then
+  if (string.find)(l_0_0, "\\windows\\system32\\", 1, true) or (string.find)(l_0_0, "ntuser.dat", 1, true) or (string.find)(l_0_0, "}.tm.blf", 1, true) then
     return mp.CLEAN
   else
     ;

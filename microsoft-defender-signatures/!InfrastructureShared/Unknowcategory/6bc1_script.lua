@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr ~= 4198400 then
-  return mp.CLEAN
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
+  return mp.INFECTED
 end
-;
-(pe.set_peattribute)("hstr_exhaustive", true)
-return mp.INFECTED
+return mp.CLEAN
 

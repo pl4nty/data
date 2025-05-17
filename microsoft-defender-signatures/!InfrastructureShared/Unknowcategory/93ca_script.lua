@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_1.ppid, l_0_0)
+;
+(bm.add_action)("SmsAsyncScanEvent", 1000)
 return mp.INFECTED
 

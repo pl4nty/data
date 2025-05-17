@@ -3,79 +3,37 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
+  -- DECOMPILER ERROR at PC167: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC167: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC167: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC167: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC167: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC167: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC167: Unhandled construct in 'MakeBoolean' P3
+
+  -- DECOMPILER ERROR at PC167: Unhandled construct in 'MakeBoolean' P3
+
+  if ((((((((((((hstrlog[10]).matched or (hstrlog[11]).matched) and not (hstrlog[12]).matched and (hstrlog[14]).matched) or (hstrlog[15]).matched) and not (hstrlog[16]).matched and (hstrlog[18]).matched) or (hstrlog[20]).matched or (hstrlog[21]).matched) and not (hstrlog[32]).matched and (hstrlog[22]).matched) or (hstrlog[23]).matched) and not (hstrlog[24]).matched and not (hstrlog[26]).matched and (hstrlog[22]).matched) or (hstrlog[23]).matched) and not (hstrlog[24]).matched and not (hstrlog[28]).matched and (hstrlog[30]).matched) or (hstrlog[31]).matched) and ((hstrlog[34]).matched or (hstrlog[35]).matched or (hstrlog[32]).matched or (hstrlog[33]).matched) then
+    local l_0_0, l_0_1 = 0 + 1 + 1 + 1 + 1 + 1 + 1
+  end
+  -- DECOMPILER ERROR at PC167: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 >= 2 then
+    return mp.INFECTED
   else
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+    -- DECOMPILER ERROR at PC173: Confused about usage of register: R0 in 'UnsetPending'
 
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-      local l_0_1 = (this_sigattrlog[2]).utf8p2
-    else
-    end
-    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
-        local l_0_2 = (this_sigattrlog[4]).utf8p2
-      else
-      end
-      -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
-
-      do
-        if (not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p2 == nil or (this_sigattrlog[7]).matched) and (this_sigattrlog[7]).utf8p2 ~= nil then
-          local l_0_3 = (this_sigattrlog[6]).utf8p2
-        else
-        end
-        -- DECOMPILER ERROR at PC124: Overwrote pending register: R0 in 'AssignReg'
-
-        do
-          if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p2 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p2 ~= nil then
-            local l_0_4, l_0_5, l_0_6, l_0_7 = (this_sigattrlog[8]).utf8p2
-          else
-          end
-          if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p2 ~= nil then
-            local l_0_8 = (this_sigattrlog[10]).utf8p2
-            if l_0_8 ~= nil then
-              local l_0_9 = false
-              for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_8)) do
-                local l_0_10 = nil
-                -- DECOMPILER ERROR at PC152: Confused about usage of register: R7 in 'UnsetPending'
-
-                R7_PC152 = (mp.ContextualExpandEnvironmentVariables)(R7_PC152)
-                -- DECOMPILER ERROR at PC176: Confused about usage of register: R8 in 'UnsetPending'
-
-                if (sysio.IsFileExists)(R7_PC152) then
-                  do
-                    do
-                      if (this_sigattrlog[2]).matched and (string.sub)(l_0_15, -(string.len)("AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe")) == "AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe" then
-                        return mp.CLEAN
-                      end
-                      l_0_9 = true
-                      do break end
-                      -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out DO_STMT
-
-                      -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                      -- DECOMPILER ERROR at PC183: LeaveBlock: unexpected jumping out IF_STMT
-
-                    end
-                  end
-                end
-              end
-            end
-            if (this_sigattrlog[6]).matched and not l_0_9 then
-              return mp.CLEAN
-            end
-            return mp.INFECTED
-          end
-        end
-      end
+    if l_0_0 == 1 then
+      (mp.set_mpattribute)("HSTR:Browser:PassDump:Single")
     end
   end
+  return mp.CLEAN
 end
 

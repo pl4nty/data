@@ -3,17 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
-  return mp.CLEAN
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if not l_0_1 or #l_0_1 <= 10 then
-  return mp.CLEAN
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-local l_0_2 = " -u [a-zA-Z0-9]{1,25}:[a-zA-Z0-9]{1,25}"
-if (MpCommon.StringRegExpSearch)(l_0_2, l_0_1) == true then
-  return mp.LOWFI
-end
-return mp.CLEAN
+return mp.INFECTED
 
