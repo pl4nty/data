@@ -109,6 +109,7 @@
                 "UX_Compliance",
                 "UX_DeviceConfig",
                 "UX_EPM",
+                "UX_MAM",
                 "UX_Pivot",
                 "UX_TenantSetup"
             ],
@@ -145,6 +146,7 @@
     },
     "SVC_DataInfra": {
         "FlightingV2": {
+            "QBSFSICoreMigrationDuplicateBatch1": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true
         }
     },
