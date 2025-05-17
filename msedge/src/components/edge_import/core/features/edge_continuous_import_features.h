@@ -345,6 +345,10 @@ COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(
     kOpenTabsImportFailedTriggerPersonalizedTabsAddition);
 
+// Feature flag for open tabs perf optimization
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kCIOpenTabsPerfOptimization);
+
 }  // namespace edge_continuous_import
 }  // namespace features
 

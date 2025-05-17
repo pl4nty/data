@@ -48,6 +48,14 @@ bool IsModuleTrackerV3FeatureEnabled() {
 bool IsModuleTrackerV4FeatureEnabled() {
   return IsDiskFeatureEnabled(edge_early_features::kModuleTrackerV4);
 }
+
+bool IsModuleTrackerV5FeatureEnabled() {
+  return IsDiskFeatureEnabled(edge_early_features::kModuleTrackerV5);
+}
+
+bool IsModuleTrackerV6FeatureEnabled() {
+  return IsDiskFeatureEnabled(edge_early_features::kModuleTrackerV6);
+}
 #endif  // defined(ARCH_CPU_X86_64)
 
 bool IsThirdPartyHookFeatureEnabled() {

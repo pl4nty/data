@@ -146,7 +146,7 @@
   },
   {
     "name": "blink",
-    "size": 161713049,
+    "size": 161716347,
     "file_count": 22045
   },
   {
@@ -906,7 +906,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 219328600,
+    "size": 219328604,
     "file_count": 336
   },
   {
@@ -1311,8 +1311,8 @@
   },
   {
     "name": "skia",
-    "size": 138946970,
-    "file_count": 9651
+    "size": 138891752,
+    "file_count": 9653
   },
   {
     "name": "smhasher",
@@ -1351,8 +1351,8 @@
   },
   {
     "name": "sqlite",
-    "size": 193737002,
-    "file_count": 2353
+    "size": 194658039,
+    "file_count": 2367
   },
   {
     "name": "sqlite4java",

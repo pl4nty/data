@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1664890,
+    "size": 1664881,
     "file_count": 163
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14600647,
+    "size": 14603039,
     "file_count": 830
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32059577,
+    "size": 32069059,
     "file_count": 3942
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17963811,
+    "size": 17963713,
     "file_count": 1009
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16395965,
+    "size": 16386137,
     "file_count": 252
   },
   {
@@ -326,7 +326,7 @@
   },
   {
     "name": "jetstream",
-    "size": 128907804,
+    "size": 128908365,
     "file_count": 54
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18986987,
+    "size": 18978795,
     "file_count": 19
   },
   {
@@ -511,8 +511,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 21815,
-    "file_count": 11
+    "size": 24877,
+    "file_count": 12
   },
   {
     "name": "oneds_sdk",
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3583215,
+    "size": 3583412,
     "file_count": 559
   },
   {
@@ -631,7 +631,7 @@
   },
   {
     "name": "skia",
-    "size": 3431536,
+    "size": 3432565,
     "file_count": 1171
   },
   {
@@ -716,7 +716,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6164155,
+    "size": 6164342,
     "file_count": 171
   },
   {
@@ -746,7 +746,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 28588388,
+    "size": 28588532,
     "file_count": 625
   },
   {

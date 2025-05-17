@@ -278,3 +278,16 @@ template("edge_overlay_config_compiler") {
     }
   }
 }
+
+if (is_apple) {
+  template("edge_overlay_config_enable_arc") {
+    config(target_name) {
+      forward_variables_from(invoker, "*", [])
+      if (is_ios) {
+        common_flags -= [ "-Wobjc-property-assign-on-object-type" ]
+        cflags_objc -= [ "-Wobjc-property-assign-on-object-type" ]
+        cflags_objcc -= [ "-Wobjc-property-assign-on-object-type" ]
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "main": "reclient-health-check.js",
+  "devDependencies": {
+    "@grpc/grpc-js": "^1.13.3",
+    "grpc-health-check": "^2.0.2"
+  }
+}

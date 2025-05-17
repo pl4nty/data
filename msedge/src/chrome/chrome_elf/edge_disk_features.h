@@ -19,6 +19,8 @@ bool IsModuleTrackerFeatureEnabled();
 bool IsModuleTrackerV2FeatureEnabled();
 bool IsModuleTrackerV3FeatureEnabled();
 bool IsModuleTrackerV4FeatureEnabled();
+bool IsModuleTrackerV5FeatureEnabled();
+bool IsModuleTrackerV6FeatureEnabled();
 #endif  // defined(ARCH_CPU_X86_64)
 
 // Feature flag to disable upstream third party dll hook code, which leverages
