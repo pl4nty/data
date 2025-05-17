@@ -85,8 +85,8 @@ if __name__ == "__main__":
             "https://ecs.office.com/config/v1/OneShell/1.0.0.0?IsConsumer=false&UserId=3387110e-a323-4cf4-8925-055e2d149b43", "ecs/OneShell.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/LokiService/1.0.0.0?ClientWorkload=M365AdminCenter&id=3387110e-a323-4cf4-8925-055e2d149b43&TenantID=77274a75-f318-4f60-b319-57d7e3012825&ring=Prod&ApEnvironment=Prod", "ecs/LokiService.json")
-        fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/Skype/1.0.0.0?AudienceGroup=ring0&Debug=false&TenantID=77274a75-f318-4f60-b319-57d7e3012825&Environment=prod", "ecs/Skype.json")
+        # fetch_and_prettify_json(
+        #     "https://ecs.office.com/config/v1/Skype/1.0.0.0?AudienceGroup=ring0&Debug=false&TenantID=77274a75-f318-4f60-b319-57d7e3012825&Environment=prod", "ecs/Skype.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/MicrosoftTeams/1.0.0.0?TenantID=77274a75-f318-4f60-b319-57d7e3012825", "ecs/MicrosoftTeams.json")
         fetch_and_prettify_json(
@@ -101,8 +101,8 @@ if __name__ == "__main__":
             "https://ecs.office.com/config/v1/PortalsMakerExperiences/1.0.0.0", "ecs/PortalsMakerExperiences.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/RemoteAssist/1.0", "ecs/RemoteAssist.json")
-        fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/SCOM/1.0.0.0", "ecs/SCOM.json")
+        # fetch_and_prettify_json(
+        #     "https://ecs.office.com/config/v1/SCOM/1.0.0.0", "ecs/SCOM.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/SkypeLyncWebExperience/1.0.0.0", "ecs/SkypeLyncWebExperience.json")
         fetch_and_prettify_json(
@@ -111,7 +111,7 @@ if __name__ == "__main__":
             "https://ecs.office.com/config/v1/AuthClientAndroid/1.0.0.0", "ecs/AuthClientAndroid.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/EdgeUpdate/1.0.0.0", "ecs/EdgeUpdate.json")
-        
+
         fetch_and_prettify_json(
             "https://api.steampowered.com/ISteamApps/GetSDRConfig/v1?appid=440", "network_config_tf2.json")
 
@@ -122,11 +122,13 @@ if __name__ == "__main__":
             "https://login.microsoftonline.com/common/.well-known/openid-configuration", "microsoft_oidc_config.json")
         fetch_and_prettify_json(
             "https://login.windows-ppe.net/common/.well-known/openid-configuration", "microsoft_oidc_config_ppe.json")
-        fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json", "keys")
-        fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
-        fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json", "keys")
-        fetch_and_prettify_json(
-            "https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json", "keys")
+
+        # JWKS keys now rotate every 12 hours
+        # fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json", "keys")
+        # fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
+        # fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json", "keys")
+        # fetch_and_prettify_json(
+        #     "https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json", "keys")
 
         fetch_and_prettify_json(
             "https://www.microsoft.com/releasecommunications/api/v1/m365", "microsoft_365_roadmap.json")
@@ -141,19 +143,27 @@ if __name__ == "__main__":
             "https://endpoints.office.com/endpoints/worldwide?clientrequestid=bfefa92b-5f67-46b7-b01a-f3f80672645c", "microsoft_endpoints.json")
         fetch_and_prettify_json(
             "https://endpoints.office.com/endpoints/worldwide?serviceareas=MEM&clientrequestid=bfefa92b-5f67-46b7-b01a-f3f80672645c", "microsoft_endpoints_intune.json")
-        
-        fetch_and_prettify_json("https://geo.int.do.dsp.mp.microsoft.com/geo", "microsoft_delivery_geo_int.json")
-        fetch_and_prettify_json("https://kv201.int.do.dsp.mp.microsoft.com/all?doClientVersion=10.1.0.13", "microsoft_delivery_kv_int.json")
-        fetch_and_prettify_json("https://kv501.prod.do.dsp.mp.microsoft.com/all?doClientVersion=10.10.0.13", "microsoft_delivery_kv_prod.json")
-        
-        # https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/DataBoxEdge/1.1.0/artifact/Az.DataBoxEdge.zip
-        fetch_and_prettify_json("https://prod.api.toolbox.azure-test.net/api/tool", "microsoft_gov_toolbox.json")
 
-        fetch_and_prettify_json("https://learn.microsoft.com/en-us/product-style-guide-msft-internal/toc.json", "microsoft_style_guide.json")
-        
+        fetch_and_prettify_json(
+            "https://geo.int.do.dsp.mp.microsoft.com/geo", "microsoft_delivery_geo_int.json")
+        fetch_and_prettify_json(
+            "https://kv201.int.do.dsp.mp.microsoft.com/all?doClientVersion=10.1.0.13", "microsoft_delivery_kv_int.json")
+        fetch_and_prettify_json(
+            "https://kv501.prod.do.dsp.mp.microsoft.com/all?doClientVersion=10.10.0.13", "microsoft_delivery_kv_prod.json")
+
+        # https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/DataBoxEdge/1.1.0/artifact/Az.DataBoxEdge.zip
+        fetch_and_prettify_json(
+            "https://prod.api.toolbox.azure-test.net/api/tool", "microsoft_gov_toolbox.json")
+
+        fetch_and_prettify_json(
+            "https://learn.microsoft.com/en-us/product-style-guide-msft-internal/toc.json", "microsoft_style_guide.json")
+
         creds = DefaultAzureCredential()
-        headers = {"Authorization": f"Bearer {creds.get_token('https://management.azure.com//.default').token}"}
-        fetch_and_prettify_json("https://management.azure.com/subscriptions/8e8bbf73-03c1-44da-a079-6db5df3c079d/providers?api-version=2021-04-01", "microsoft_azure_providers.json", headers=headers)
+        headers = {
+            "Authorization": f"Bearer {creds.get_token('https://management.azure.com//.default').token}"}
+        # non-deterministic?
+        # fetch_and_prettify_json("https://management.azure.com/subscriptions/8e8bbf73-03c1-44da-a079-6db5df3c079d/providers?api-version=2021-04-01",
+        #                         "microsoft_azure_providers.json", headers=headers)
     else:
         url = sys.argv[1]
         output_file = sys.argv[2]
