@@ -1,8 +1,0 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\34d7a2010f79\0x00000713_luac 
-
--- params : ...
--- function num : 0
-TrackPidAndTechnique("CMDHSTR", "T1218", "rundll_perflogs")
-return mp.INFECTED
-

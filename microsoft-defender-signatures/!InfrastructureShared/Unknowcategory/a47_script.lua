@@ -1,0 +1,10 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\Unknowcategory\a47_luac 
+
+-- params : ...
+-- function num : 0
+if not (mp.get_mpattribute)("elfa_isharedlib") then
+  return mp.CLEAN
+end
+return mp.INFECTED
+

@@ -1,8 +1,0 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\141b39c50495d\0x00006f16_luac 
-
--- params : ...
--- function num : 0
-TrackPidAndTechniqueBM("BM", "T1562.001", "mptamper_gp")
-return mp.INFECTED
-
