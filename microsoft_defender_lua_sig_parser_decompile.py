@@ -206,10 +206,16 @@ with open(infile, 'r') as file:
 
         out_dir = os.path.join(indir, "lua", threat, category)
         os.makedirs(out_dir, exist_ok=True)
-        out_file = os.path.join(out_dir, "%x_luac" % index)
+        # ~10k signatures, so insertions cause noisy diffs
+        # size forces name change on insertion, which helps diff algo
+        if key == "!InfrastructureShared-Unknowcategory": 
+            prefix = "%x_%x" % (index, size)
+        else:
+            prefix = "%x" % index
+        out_file = os.path.join(out_dir, f"{prefix}.luac")
 
         if (convert_lua(out_file, data)):
-            out_script = os.path.join(out_dir, "%x_script.lua" % index)
+            out_script = os.path.join(out_dir, f"{prefix}.lua")
             decompile(out_file, out_script)
             decompile_files += 1
         else:
