@@ -50,7 +50,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     // fill the Learn More content for render
                     let learnMoreIFrame = document.getElementById("learnMoreIFrame");
                     let doc = learnMoreIFrame.contentWindow.document;
-                    oobeSettingsData.showLearnMoreContent(doc, resources.LearnMoreDataTransferUrl, document.documentElement.dir, isInternetAvailable, resources.NavigationError, targetPersonality);
+                    oobeSettingsData.showLearnMoreContent(learnMoreIFrame, doc, resources.LearnMoreDataTransferUrl, document.documentElement.dir, isInternetAvailable, resources.NavigationError, targetPersonality);
                     this.processingFlag(false);
                     KoHelpers.setFocusOnAutofocusElement();
                 }
@@ -130,7 +130,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     // fill the Privacy content for render
                     let privacyIFrame = document.getElementById("privacyIFrame");
                     let doc = privacyIFrame.contentWindow.document;
-                    oobeSettingsData.showLearnMoreContent(doc, resources.PrivacyStatementUrl, document.documentElement.dir, isInternetAvailable, resources.NavigationError, targetPersonality);
+                    oobeSettingsData.showLearnMoreContent(privacyIFrame, doc, resources.PrivacyStatementUrl, document.documentElement.dir, isInternetAvailable, resources.NavigationError, targetPersonality);
                     this.processingFlag(false);
 					KoHelpers.setFocusOnAutofocusElement();
                 }
@@ -163,6 +163,55 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
 
             this.privacyPageFooterButtons = [
                 this.privacyContinueButton
+            ];
+
+            // the refund link was clicked, make the refund content visible and hide the learnmore, privacy, and PDE content
+            this.onRefundLinkClick = () => {
+                if (!this.processingFlag()) {
+                    bridge.invoke("CloudExperienceHost.Telemetry.logUserInteractionEvent", "MainPageRefundLinkClicked");
+                    this.processingFlag(true);
+                    this.learnMoreVisible(false);
+                    this.refundVisible(true);
+                    this.pageVisible(false);
+                    this.privacyVisible(false);
+
+                    // fill the Refund content for render
+                    let refundIFrame = document.getElementById("refundIFrame");
+                    let doc = refundIFrame.contentWindow.document;
+                    oobeSettingsData.showLearnMoreContent(refundIFrame, doc, resources.RefundLinkUrl, document.documentElement.dir, isInternetAvailable, resources.NavigationError, targetPersonality);
+                    this.processingFlag(false);
+                    KoHelpers.setFocusOnAutofocusElement();
+                }
+            };
+
+            // set up the Continue button on the Refund Statement page section
+            this.refundContinueButton = {
+                buttonText: resources.ContinueButtonText,
+                buttonType: "button",
+                isPrimaryButton: true,
+                autoFocus: false,
+                disableControl: this.disableControl,
+                buttonClickHandler: () => {
+                    this.onRefundContinue();
+                }
+            };
+
+            // the privacy continue button was clicked, make the PDE content visible and hide the LearnMore and Privacy content
+            this.onRefundContinue = () => {
+                if (!this.processingFlag()) {
+                    this.processingFlag(true);
+                    bridge.invoke("CloudExperienceHost.Telemetry.logUserInteractionEvent", "RefundContinueButtonClicked");
+                    this.learnMoreVisible(false);
+                    this.privacyVisible(false);
+                    this.refundVisible(false);
+                    this.pageVisible(true);
+                    this.processingFlag(false);
+                    KoHelpers.setFocusOnAutofocusElement();
+                }
+            };
+
+            this.refundPageFooterButtons = [
+                this.refundContinueButton
             ];
         }
     }

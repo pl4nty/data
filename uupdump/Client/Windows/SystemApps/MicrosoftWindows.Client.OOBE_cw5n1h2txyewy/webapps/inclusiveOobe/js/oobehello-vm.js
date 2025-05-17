@@ -1,11 +1,9 @@
 ﻿//
 // Copyright (C) Microsoft. All rights reserved.
 //
-define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobeSettingsData, bridge, constants, core, KoHelpers) => {
+define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, bridge, constants, core, KoHelpers) => {
     class HelloViewModel {
-        constructor(resourceStrings, enrollmentKinds, targetPersonality, isInternetAvailable) {
-            const cxhSpeech = CloudExperienceHostAPI.Speech;
-            const winSpeech = Windows.Media.SpeechRecognition;
+        constructor(resourceStrings, enrollmentKinds, targetPersonality) {
             this.isLiteWhitePersonality = (targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite);
 
             this.resourceStrings = resourceStrings;
@@ -25,9 +23,12 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             this.skipOnIncompleteEnrollment = this.isLiteWhitePersonality;
             this.switchEnrollmentKindText = ko.observable(resourceStrings.HelloSwitchFaceToFingerprint);
             this.isConfirmationPageVisible = ko.observable(false);
-            this.isInternetAvailable = isInternetAvailable;
-            this.learnMoreContent = oobeSettingsData.getLearnMoreContent();
 
+            let href = "https://go.microsoft.com/fwlink/p/?linkid=2169254";
+            let personalityQSParam = (this.isLiteWhitePersonality) ? "&profile=transparentLight" : "";
+            let url = href + personalityQSParam;
+
+            this.learnMoreWebSource = url;
             this.learnMoreVisible = ko.observable(false);
             this.learnMoreVisible.subscribe((newValue) => {
                 if (newValue === false) {
@@ -152,75 +153,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     this.flexEndButtons()[0].buttonClickHandler();
                 }
             }
-
-            // Setup simple voiceover and speech recognition using the resource strings
-            try {
-                cxhSpeech.SpeechRecognition.stop();
-                let constraints = [];
-                const constraintsTags = {
-                    setUp: "setUp", // Enroll with current selection (applicable to single and multi sensor cases)
-                    multiFace: "multiFace", // Enroll with face in a multi sensor case
-                    multiFingerprint: "multiFingerprint", // Enroll with fingerprint in a multi sensor case
-                    skip: "skip" // Skip Windows Hello enrollment
-                };
-
-                if (this.isMultiChoice) {
-                    let multiFaceConstraint = new winSpeech.SpeechRecognitionListConstraint([this.resourceStrings.HelloMultiFace1SpeechConstraint, this.resourceStrings.HelloMultiFace2SpeechConstraint, this.resourceStrings.HelloMultiFace3SpeechConstraint, this.resourceStrings.HelloMultiFace4SpeechConstraint, this.resourceStrings.HelloMultiFace5SpeechConstraint, this.resourceStrings.HelloMultiFace6SpeechConstraint]);
-                    multiFaceConstraint.tag = constraintsTags.multiFace;
-                    let multiFingerprintConstraint = new winSpeech.SpeechRecognitionListConstraint([this.resourceStrings.HelloMultiFingerprint1SpeechConstraint, this.resourceStrings.HelloMultiFingerprint2SpeechConstraint, this.resourceStrings.HelloMultiFingerprint3SpeechConstraint, this.resourceStrings.HelloMultiFingerprint4SpeechConstraint, this.resourceStrings.HelloMultiFingerprint5SpeechConstraint, this.resourceStrings.HelloMultiFingerprint6SpeechConstraint, this.resourceStrings.HelloMultiFingerprint7SpeechConstraint]);
-                    multiFingerprintConstraint.tag = constraintsTags.multiFingerprint;
-                    constraints.push(multiFaceConstraint, multiFingerprintConstraint);
-                } else {
-                    // Yes and no variations only apply for single sensor case
-                    constraints.push(cxhSpeech.SpeechRecognitionKnownCommands.yes, cxhSpeech.SpeechRecognitionKnownCommands.no);
-                }
-
-                let setUpConstraint = new winSpeech.SpeechRecognitionListConstraint([this.resourceStrings.HelloSetUpSpeechConstraint]);
-                setUpConstraint.tag = constraintsTags.setUp;
-
-                let skipConstraint = new winSpeech.SpeechRecognitionListConstraint([this.resourceStrings.HelloSkip1SpeechConstraint, this.resourceStrings.HelloSkip2SpeechConstraint]);
-                skipConstraint.tag = constraintsTags.skip;
-
-                constraints.push(cxhSpeech.SpeechRecognitionKnownCommands.next, setUpConstraint, skipConstraint);
-                if (constraints && (constraints.length > 0)) {
-                    let helloVoiceOver = null;
-                    if (this.isMultiChoice) {
-                        helloVoiceOver = this.resourceStrings.HelloMultiVoiceOver;
-                    } else {
-                        if (this.enrollmentKinds.face) {
-                            helloVoiceOver = this.resourceStrings.HelloFaceVoiceOver;
-                        } else if (this.enrollmentKinds.fingerprint) {
-                            helloVoiceOver = this.resourceStrings.HelloFingerprintVoiceOver;
-                        }
-                    }
-
-                    cxhSpeech.SpeechRecognition.promptForCommandsAsync(helloVoiceOver, constraints).done((result) => {
-                        if (result && !this.processingFlag()) {
-                            if ((result.constraint.tag == constraintsTags.skip) || (result.constraint.tag == cxhSpeech.SpeechRecognitionKnownCommands.no.tag)) {
-                                this.onSkipClick();
-                            } else {
-                                let enrollmentKind = null;
-                                if ((result.constraint.tag == constraintsTags.setUp) || (result.constraint.tag == cxhSpeech.SpeechRecognitionKnownCommands.yes.tag) || (result.constraint.tag == cxhSpeech.SpeechRecognitionKnownCommands.next.tag)) {
-                                    enrollmentKind = {
-                                        face: ((this.isMultiChoice && this.selectedItem().face) || (!this.isMultiChoice && this.enrollmentKinds.face)),
-                                        fingerprint: ((this.isMultiChoice && this.selectedItem().fingerprint) || (!this.isMultiChoice && this.enrollmentKinds.fingerprint))
-                                    };
-                                } else if ((result.constraint.tag == constraintsTags.multiFace) || (result.constraint.tag == constraintsTags.multiFingerprint)) {
-                                    enrollmentKind = {
-                                        face: (result.constraint.tag == constraintsTags.multiFace),
-                                        fingerprint: (result.constraint.tag == constraintsTags.multiFingerprint)
-                                    };
-                                }
-                                if (enrollmentKind) {
-                                    this.onSetUpClick(enrollmentKind);
-                                }
-                            }
-                        }
-                    });
-                }
-            }
-            catch (err) {
-            }
         }
 
         renderFace() {
@@ -233,7 +165,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             } else {
                 this.subtitle(resourceStrings.HelloLeadTextFace);
                 this.switchEnrollmentKindText(resourceStrings.HelloSwitchFaceToFingerprint);
-                bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", "winhellofaceLottie.json");
+                bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", "helloLottie.json");
             }
             this.title(resourceStrings.HelloTitleFace);
         }
@@ -246,7 +178,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             } else {
                 this.subtitle(resourceStrings.HelloLeadTextFingerprint);
                 this.switchEnrollmentKindText(resourceStrings.HelloSwitchFingerprintToFace);
-                bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", "winhellofingerprintLottie.json");
+                bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", "hellofingerprintLottie.json");
             }
             this.title(resourceStrings.HelloTitleFingerprint);
         }
@@ -270,22 +202,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
 
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "HelloEnrollmentShowingEnrollmentApp");
 
-                try {
-                    const cxhSpeech = CloudExperienceHostAPI.Speech;
-                    cxhSpeech.SpeechRecognition.stop();
-
-                    let helloVoiceOver = null;
-                    if (enrollmentKind.face) {
-                        helloVoiceOver = this.resourceStrings.HelloFaceEnrollmentVoiceOver;
-                    } else if (enrollmentKind.fingerprint) {
-                        helloVoiceOver = this.resourceStrings.HelloFingerprintEnrollmentVoiceOver;
-                    }
-
-                    cxhSpeech.SpeechRecognition.promptForCommandsAsync(helloVoiceOver, null);
-                }
-                catch (err) {
-                }
-
                 bridge.invoke(this.isLiteWhitePersonality ? "CloudExperienceHost.getFrameViewBoundingRect" : "CloudExperienceHost.getBoundingClientRect").done((result) => {
                     const rect = {
                         height: result.height,
@@ -304,9 +220,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                         document.getElementById("helloFlexEndButtons").style.visibility = "hidden";
                     }
 
-                    let enrollmentPersonality = this.getEnrollmentPersonality();
-
-                    bridge.invoke("CloudExperienceHost.Hello.startHelloEnrollment", enrollmentKind, rect, enrollmentPersonality).done((enrollResult) => {
+                    bridge.invoke("CloudExperienceHost.Hello.startHelloEnrollment", enrollmentKind, rect).done((enrollResult) => {
                         this.contentContainerVisibility(false);
                         window.removeEventListener("resize", HelloViewModel._onResize);
 
@@ -333,7 +247,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                               bridge.invoke("CloudExperienceHost.undimChrome");
                               if (!this.hideContentWhileBioAppIsLaunched)
                               {
-                                    document.getElementById("helloFlexEndButtons").style.visibility = "visible";
+                                  document.getElementById("helloFlexEndButtons").style.visibility = "visible";
                               }
 
                               this.processingFlag(false);
@@ -371,9 +285,10 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 this.processingFlag(true);
                 this.learnMoreVisible(true);
 
+                // Since the iframe isn't scrolled to the right anchor when loaded, we need to refresh the page for it to scroll to the Windows Hello section
                 let learnMoreIFrame = document.getElementById("hello-learnmore-iframe");
-                let doc = learnMoreIFrame.contentWindow.document;
-                oobeSettingsData.updateLearnMoreContentForRender(learnMoreIFrame, doc, document.documentElement.dir, this.isInternetAvailable, resourceStrings.HelloLearnMoreNavigationError, targetPersonality, "WindowsHello");
+                learnMoreIFrame.src = learnMoreIFrame.src;
+                learnMoreIFrame.focus();
                 this.processingFlag(false);
             }
         }
@@ -389,7 +304,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
 
         updateToConfirmationPage() {
             this.isConfirmationPageVisible(true);
-            this.title(resourceStrings.AllSetText);
+            this.title(resourceStrings.AllSetText2);
             this.subtitle("");
             this.flexEndButtons([{
                 buttonText: resourceStrings.NextButtonText,
@@ -403,31 +318,14 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             }]);
             document.getElementById("helloFlexEndButtons").style.visibility = "visible";
 
-            // Center the header vertically by adding class to the flex container (parentElement of oobeHeader)
-            document.getElementById("oobeHeader").parentElement.classList.add("centered-header-container");
+            document.getElementById("oobeHeader").classList.add("error-light");
 
             this.processingFlag(false);
             this.contentContainerVisibility(true);
         }
 
-        getEnrollmentPersonality() {
-            let personality = CloudExperienceHostBroker.Hello.EnrollmentPersonality.notSpecified;
-            switch(targetPersonality)
-            {
-                case CloudExperienceHost.TargetPersonality.InclusiveBlue:
-                    personality = CloudExperienceHostBroker.Hello.EnrollmentPersonality.inclusiveBlue;
-                    break;
-                case CloudExperienceHost.TargetPersonality.LiteWhite:
-                    personality = CloudExperienceHostBroker.Hello.EnrollmentPersonality.liteWhite;
-                    break;
-                default:
-                    break;
-            }
-            return personality;
-        }
-
         static _onResize(param) {
-            bridge.invoke("CloudExperienceHost.getBoundingClientRect").done((result) => {
+            bridge.invoke(this.isLiteWhitePersonality ? "CloudExperienceHost.getFrameViewBoundingRect" : "CloudExperienceHost.getBoundingClientRect").done((result) => {
                 try {
                     const rect = {
                         height: result.height,

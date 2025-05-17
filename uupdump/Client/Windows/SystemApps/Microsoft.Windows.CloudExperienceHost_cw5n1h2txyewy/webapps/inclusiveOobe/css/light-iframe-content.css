@@ -49,8 +49,9 @@ body:focus {
 @media (-ms-high-contrast) {
     body:focus {
         background: transparent;
+    }
+    body:focus::after {
         outline: 2px solid Highlight;
-        outline: none;
     }
 }
 

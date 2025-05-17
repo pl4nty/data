@@ -105,7 +105,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             let learnMoreIFrame = document.getElementById("learnMoreIFrame");
             let doc = learnMoreIFrame.contentWindow.document;
             let requiredDataCollectionPage = "https://go.microsoft.com/fwlink/?linkid=2162067";
-            oobeSettingsData.showLearnMoreContent(doc, requiredDataCollectionPage, document.documentElement.dir, this.isInternetAvailable, this.resourceStrings.NavigationError, this.targetPersonality);
+            oobeSettingsData.showLearnMoreContent(learnMoreIFrame, doc, requiredDataCollectionPage, document.documentElement.dir, this.isInternetAvailable, this.resourceStrings.NavigationError, this.targetPersonality);
         }
 
         onNext() {

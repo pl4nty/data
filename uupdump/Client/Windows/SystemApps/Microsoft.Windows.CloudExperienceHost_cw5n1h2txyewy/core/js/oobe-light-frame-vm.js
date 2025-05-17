@@ -47,6 +47,12 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
             appViewManager.subscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.UpdateDirection);
             appViewManager.subscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.InputSwitchButton);
             appViewManager.subscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.ResetFooterFocus);
+
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GamepadLegendEnabled")) {
+                if (this.showGamepadLegend()) {
+                    appViewManager.subscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.GamepadLegendB);
+                }
+            }
         }
 
         getResources(updateTag) {
@@ -60,18 +66,20 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
             this.showGamepadBButton = ko.observable(false);
             this.gamepadButtonAText = ko.observable("");
             this.gamepadButtonBText = ko.observable("");
-            this.gamepadButtonASelectAccName = ko.observable("");
-            this.gamepadButtonBBackAccName = ko.observable("");
+            this.gamepadButtonAAccName = ko.observable("");
+            this.gamepadButtonBAccName = ko.observable("");
+
 
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GamepadLegendEnabled")) {
-                let shouldShowGamepadLegend = this.showLightFooter && CloudExperienceHost.Environment.isGamepadBasedDevice();
+                this.gamepadBTextOverride = null;
+                this.showGamepadLegendEntryForBack = false
 
+                let shouldShowGamepadLegend = this.showLightFooter && CloudExperienceHost.Environment.isGamepadBasedDevice();
                 if (shouldShowGamepadLegend) {
-                    this.gamepadButtonAText = this.getResources().GamepadButtonASelect;
-                    this.gamepadButtonBText = this.getResources().GamepadButtonBBack;
-                    this.gamepadButtonASelectAccName = this.getResources().GamepadButtonASelectAccName;
-                    this.gamepadButtonBBackAccName = this.getResources().GamepadButtonBBackAccName;
+                    this.updateGamepadAButton();
+                    this.updateGamepadBButton();
                     this.showGamepadLegend(true);
+
                     navManager.addEventListener("ShowBackButton", this.onShowGamepadBButton.bind(this));
                     navManager.addEventListener("HideBackButton", this.onHideGamepadBButton.bind(this));
                 }
@@ -79,11 +87,35 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
         }
 
         onShowGamepadBButton() {
-            this.showGamepadBButton(true);
+            this.showBackInGamepadLegend = true;
+            this.updateGamepadBButton();
         }
 
         onHideGamepadBButton() {
-            this.showGamepadBButton(false);
+            this.showBackInGamepadLegend = false;
+            this.updateGamepadBButton();
+        }
+
+        updateGamepadAButton() {
+             let resources = this.getResources();
+
+             this.gamepadButtonAText(resources.GamepadButtonSelect);
+             this.gamepadButtonAAccName(resources.GamepadButtonAccName
+                 .replace("%1", resources.GamepadButtonA)
+                 .replace("%2", resources.GamepadButtonSelect));
+        }
+
+        updateGamepadBButton() {
+            this.showGamepadBButton(this.showBackInGamepadLegend || (!!this.gamepadBTextOverride))
+
+             if (this.showGamepadBButton) {
+                 let resources = this.getResources();
+
+                 this.gamepadButtonBText(this.gamepadBTextOverride || resources.GamepadButtonBack)
+                 this.gamepadButtonBAccName(resources.GamepadButtonAccName
+                     .replace("%1", resources.GamepadButtonB)
+                     .replace("%2", this.gamepadButtonBText()));
+             }
         }
 
         InputPaneShowing(e) {
@@ -270,6 +302,12 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
             appViewManager.unsubscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.InputSwitchButton);
             appViewManager.unsubscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.ResetFooterFocus);
 
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GamepadLegendEnabled")) {
+                if (this.showGamepadLegend()) {
+                    appViewManager.unsubscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.GamepadLegendB);
+                }
+            }
+
             if (this._webViewCtrl) {
                 WinJS.Utilities.empty(this._webViewCtrl);
             }
@@ -395,7 +433,7 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
                     if (this._webViewCtrl) {
                         this._webViewCtrl.removeAttribute("aria-hidden");
 
-                        // Put the focus on the web view control on any show view 
+                        // Put the focus on the web view control on any show view
                         // This will move focus from chrome elements into the page on navigation by voice/back button
                         this._webViewCtrl.focus();
                         this.setInputModalityChangeListeners();
@@ -430,6 +468,12 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
                     }
                     document.title = this.getResources().MainFrameAccName;
 
+                    completeDispatch();
+                    break;
+
+                case CloudExperienceHost.FrameViewModelUpdateType.GamepadLegendB:
+                    this.gamepadBTextOverride = updateTag;
+                    this.updateGamepadBButton();
                     completeDispatch();
                     break;
 

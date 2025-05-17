@@ -164,7 +164,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 let learnMoreIFrame = document.getElementById("learnMoreIFrame");
                 let doc = learnMoreIFrame.contentWindow.document;
                 let currentItem = this.settingsObjects[this.currentPanelIndex()];
-                oobeSettingsData.updateLearnMoreContentForRender(doc, document.documentElement.dir, isInternetAvailable, this.resources.NavigationError, targetPersonality, currentItem.canonicalName);
+                oobeSettingsData.updateLearnMoreContentForRender(learnMoreIFrame, doc, document.documentElement.dir, isInternetAvailable, this.resources.NavigationError, targetPersonality, currentItem.canonicalName);
             }
 
             handleBackNavigation() {

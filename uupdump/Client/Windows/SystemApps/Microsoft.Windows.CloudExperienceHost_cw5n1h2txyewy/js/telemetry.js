@@ -259,6 +259,44 @@ var CloudExperienceHost;
             });
         }
         Telemetry.tryGetIntentPropertyDWORDAsync = tryGetIntentPropertyDWORDAsync;
+        function setMachineFirstSignInSettingsAsync(experienceProperty, experiencePropertyValue) {
+            return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("FirstSignInSettings")) {
+                    CloudExperienceHost.Telemetry.logEvent("FirstSignInSettings_setMachineFirstSignInSettingsAsyncStarted_propValue", JSON.stringify({ experienceProperty, experiencePropertyValue }));
+                    CloudExperienceHostAPI.FirstSignInSettingsManagerStatics.setMachineFirstSignInSettingsAsync(experienceProperty, experiencePropertyValue).then(() => {
+                        CloudExperienceHost.Telemetry.logEvent("FirstSignInSettings_setMachineFirstSignInSettingsAsyncSucceeded");
+                        completeDispatch();
+                    }, (err) => {
+                        CloudExperienceHost.Telemetry.logEvent("FirstSignInSettings_setMachineFirstSignInSettingsAsyncFailure", CloudExperienceHost.GetJsonFromError(err));
+                        errorDispatch(err);
+                    });
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("FirstSignInSettings_setMachineFirstSignInSettingsAsyncFailure", "ApiNonexistentOnClient");
+                    errorDispatch("ApiNonexistentOnClient");
+                }
+            });
+        }
+        Telemetry.setMachineFirstSignInSettingsAsync = setMachineFirstSignInSettingsAsync;
+        function setUserFirstSignInSettingsAsync(experienceProperty, experiencePropertyValue) {
+            return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("FirstSignInSettings")) {
+                    CloudExperienceHost.Telemetry.logEvent("FirstSignInSettings_setUserFirstSignInSettingsAsyncStarted_propValue", JSON.stringify({ experienceProperty, experiencePropertyValue }));
+                    CloudExperienceHostAPI.FirstSignInSettingsManagerStatics.setUserFirstSignInSettingsAsync(experienceProperty, experiencePropertyValue).then(() => {
+                        CloudExperienceHost.Telemetry.logEvent("FirstSignInSettings_setUserFirstSignInSettingsAsyncSucceeded");
+                        completeDispatch();
+                    }, (err) => {
+                        CloudExperienceHost.Telemetry.logEvent("FirstSignInSettings_setUserFirstSignInSettingsAsyncFailure", CloudExperienceHost.GetJsonFromError(err));
+                        errorDispatch(err);
+                    });
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("FirstSignInSettings_setUserFirstSignInSettingsAsyncFailure", "ApiNonexistentOnClient");
+                    errorDispatch("ApiNonexistentOnClient");
+                }
+            });
+        }
+        Telemetry.setUserFirstSignInSettingsAsync = setUserFirstSignInSettingsAsync;
     })(Telemetry = CloudExperienceHost.Telemetry || (CloudExperienceHost.Telemetry = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
 if ((typeof define === "function") && define.amd) {

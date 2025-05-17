@@ -105,6 +105,7 @@
     "CloudExperienceHost.UserManager.*": [ "*" ],
     "CloudExperienceHost.DeviceIntegrationPolicy.*": [ "*" ],
     "CloudExperienceHost.WindowsAccountSyncConsent.*": [ "*" ],
+    "CloudExperienceHost.ShellHostedApplication.*": [ "*" ],
     "WinJS.xhr": [ "*" ]
   }
 }

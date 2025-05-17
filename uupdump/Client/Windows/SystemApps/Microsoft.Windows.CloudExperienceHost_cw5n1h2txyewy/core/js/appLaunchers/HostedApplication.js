@@ -39,6 +39,75 @@ define(['legacy/appViewManager', 'legacy/core'], (appViewManager, core) => {
             }
         }
 
+        launchShellHostedApplicationAsync(moduleName, targetRect, propertySetArgs) {
+            const scaledRect = HostedApplication._scaleRectCoordinates(targetRect);
+
+            if (!moduleName || !targetRect || !propertySetArgs) {
+                CloudExperienceHost.Telemetry.logEvent("launchShellHostedApplicationAsyncFailedDueToInvalidArgs", JSON.stringify(moduleName, targetRect, propertySetArgs));
+                return CloudExperienceHost.AppResult.fail;
+            }
+
+            const launchShellHostedApplicationPromise = CloudExperienceHostAPI.HostedApplicationCore.showOobeShellHostedAppAsync(moduleName, scaledRect, propertySetArgs)
+                .then(hostedApplicationResult => {
+                    // Undimchrome now that we know the app exited
+                    appViewManager.undimChrome();
+
+                    CloudExperienceHost.Telemetry.logEvent("launchShellHostedApplicationAsyncExitedWithResult", JSON.stringify(hostedApplicationResult));
+                    return hostedApplicationResult.exitResult;
+                }, (error) => {
+                    // Undimchrome since we failed to launch it.
+                    appViewManager.undimChrome();
+
+                    CloudExperienceHost.Telemetry.logEvent("launchShellHostedApplicationAsyncBridgeCallFailed", core.GetJsonFromError(error));
+                    return CloudExperienceHost.AppResult.fail;
+                });
+
+            appViewManager.dimChrome();
+
+            return launchShellHostedApplicationPromise;
+        }
+
+        requestDismissShellHostedApplication() {
+            const manager = CloudExperienceHostAPI.HostedApplicationCore.getForCurrentView();
+
+            if (!manager) {
+                CloudExperienceHost.Telemetry.logEvent("requestDismissShellHostedApplicationFailedManagerUnavailable", core.GetJsonFromError(error));
+                return false;
+            }
+
+            CloudExperienceHost.Telemetry.logEvent("requestDismissShellHostedApplication");
+            manager.requestHostedAppDismiss();
+            return true;
+        }
+
+        invokeMessageToShellHostedApplication(message) {
+            const manager = CloudExperienceHostAPI.HostedApplicationCore.getForCurrentView();
+
+            if (!manager) {
+                CloudExperienceHost.Telemetry.logEvent("invokeMessageToShellHostedApplicationFailedManagerUnavailable", core.GetJsonFromError(error));
+                return false;
+            }
+
+            CloudExperienceHost.Telemetry.logEvent("invokeMessageToShellHostedApplication", JSON.stringify(message));
+            manager.invokeMessageToHostedApp(message);
+            return true;
+        }
+
+        repositionShellHostedApplication(targetRect) {
+            const manager = CloudExperienceHostAPI.HostedApplicationCore.getForCurrentView();
+
+            if (!manager) {
+                CloudExperienceHost.Telemetry.logEvent("repositionShellHostedApplicationFailedManagerUnavailable", core.GetJsonFromError(error));
+                return false;
+            }
+
+            CloudExperienceHost.Telemetry.logEvent("repositionShellHostedApplication", JSON.stringify(targetRect));
+            const scaledRect = HostedApplication._scaleRectCoordinates(targetRect);
+
+            manager.windowLocation = scaledRect;
+            return true;
+        }
+
         launchAsyncWithNavigationCompletedCallback(currentNode, args, callback) {
             if (currentNode && currentNode.appUserModelId) {
                 let clientRect = appViewManager.getBoundingClientRect();

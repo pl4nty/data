@@ -54,15 +54,19 @@ define([
 
             // Troubleshooting model metadata
             this.TSM_PROCESS_NAME = "DeviceLinkPage";
+            this.TSM_STATE_CONFIGURE_DEVICE_LINK = "ConfigureDeviceLink";
+            this.TSM_STATE_CONFIGURE_DEVICE_LINK_APPLY_DEVICE_LINK = "ApplyDeviceLink";
+            this.TSM_STATE_CONFIGURE_DEVICE_LINK_MAA_ATTEST = "MaaAttestation";
+            this.TSM_STATE_CONFIGURE_DEVICE_LINK_RETRIEVE_DEVICE_LINK = "RetrieveDeviceLink";
+            this.TSM_STATE_CONFIGURE_DEVICE_LINK_TPM_ATTEST = "TpmAttestation";
+            this.TSM_STATE_EXPORT_DEVICE_LINK_INFO = "ExportDeviceLinkInfo";
+            this.TSM_STATE_GENERATE_QR = "GenerateQrCode";
+            this.TSM_STATE_LINK_DEVICE = "LinkDevice";
+            this.TSM_STATE_LINK_DEVICE_OPTIONS = "LinkDeviceOptions";
             this.TSM_STATE_PAGE = "Page";
             this.TSM_STATE_PAGE_INITIALIZATION = "PageInitialization";
-            this.TSM_STATE_LINK_DEVICE_OPTIONS = "LinkDeviceOptionsPage";
-            this.TSM_STATE_LINK_DEVICE = "LinkDevice";
-            this.TSM_STATE_GENERATE_QR = "GenerateQrCode";
             this.TSM_STATE_REQUEST_DISCOVERY_URL = "RequestDiscoverUrl";
-            this.TSM_STATE_CONFIGURE_DEVICE_LINK = "ConfigureDeviceLink";
-            this.TSM_STATE_EXPORT_DEVICE_LINK_INFO = "ExportDeviceLinkInfo";
-
+            
             // Page commands constants (DAP == device association page)
             this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT = "onSuccessfulDapPageExit";
             this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT_TO_OOBE_START = "onSuccessfulDapPageExitToOobeStart";
@@ -74,6 +78,9 @@ define([
             // Lottie animations
             this.LOTTIE_FILE_SUCCESS = "autopilotLottie.json";
             this.LOTTIE_FILE_ERROR = "errorLottie.json";
+
+            // Read the velocity value from the OOBE feature staging API
+            this.AUTOPILOT_DEVICE_TAGGING_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging");
 
             // Device link info format flags
             this.DEVICE_LINK_FORMAT_FLAGS = ModernDeployment.Autopilot.Core.DeviceLinkFormatFlags.json | ModernDeployment.Autopilot.Core.DeviceLinkFormatFlags.base64;
@@ -244,6 +251,11 @@ define([
 
             this.currentVirtualPageId = ko.observable(this.VIRTUAL_PAGE_ID_DEVICE_LINK_OPTIONS);
 
+            // Check the feature is enabled
+            if (!this.AUTOPILOT_DEVICE_TAGGING_ENABLED) {
+                return WinJS.Promise.as(CloudExperienceHost.AppResult.abort);
+            }
+
             // Set up the button groupings.
             this.flexEndButtons = ko.pureComputed(() => {
                 return this.allVirtualPages[this.currentVirtualPageId()].buttonSet;
@@ -251,8 +263,8 @@ define([
 
             return this.waitForDebuggerAttachmentAsync().then(async () => {
                 // TSM logging
-                await this.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE)
-                await this.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
+                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE)
+                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
             }).then(async () => {
                 try {
                     // Initialize the device link utilities and get the device link info.
@@ -270,7 +282,7 @@ define([
                         this.currentVirtualPageId(this.VIRTUAL_PAGE_ID_DEVICE_LINK_ERROR_RESULT);
                     }
 
-                    await this.logTsmProcessEndErrorAsync(
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                         this.TSM_PROCESS_NAME, 
                         this.TSM_STATE_PAGE_INITIALIZATION,
                         null,
@@ -279,7 +291,7 @@ define([
                 }
             }).done(async () => {
                 if (this.initializationSucceeded) {
-                    await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
                 }
 
                 // Display virtual page
@@ -292,7 +304,7 @@ define([
 
         async createQrCodeAsync() {
             try {
-                await this.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR);
+                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR);
 
                 let walletBarcode = new Windows.ApplicationModel.Wallet.WalletBarcode(Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.qr, this.deviceLinkInfo);
 
@@ -306,12 +318,12 @@ define([
                     let qrImageStream = MSApp.createStreamFromInputStream("image/bmp", blob);
                     qrCodeElement.src = URL.createObjectURL(qrImageStream);
 
-                    await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR);
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR);
                 } else {
-                    await this.logTsmProcessEndErrorAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR, null, "Could not get QR image", null);
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR, null, "Could not get QR image", null);
                 }
             } catch (e) {
-                await this.logTsmProcessEndErrorAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR, null, "Failed to create QR code", e);
+                await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR, null, "Failed to create QR code", e);
             }
         }
 
@@ -334,80 +346,6 @@ define([
             });
         }
 
-        createFullyQualifiedStateName(processName, stateName, extraStateNameDetails) {
-            let fullyQualifiedStateName = `${processName}.${stateName}`;
-            if ((extraStateNameDetails != null) && (extraStateNameDetails != undefined) && (extraStateNameDetails.length > 0)) {
-                fullyQualifiedStateName += `_${extraStateNameDetails}`;
-            }
-
-            return fullyQualifiedStateName;
-        }
-
-        async logTsmProcessStartAsync(processName, stateName) {
-            let fullyQualifiedStateName = `${this.createFullyQualifiedStateName(processName, stateName, null)}_Start`;
-
-            await this.commercialDiagnosticsUtilities.logTroubleshootingModelProcessStartEventAsync(
-                processName,
-                fullyQualifiedStateName,
-                null
-            );
-
-            this.commercialDiagnosticsUtilities.logInfoEvent(
-                fullyQualifiedStateName,
-                `${processName}: ${stateName} is starting`);
-        }
-
-        async logTsmProcessEndSuccessAsync(processName, stateName, eventMessage) {
-            let fullyQualifiedStateName = `${this.createFullyQualifiedStateName(processName, stateName, null)}_End_Success`;
-
-            await this.commercialDiagnosticsUtilities.logTroubleshootingModelProcessEndEventAsync(
-                processName,
-                fullyQualifiedStateName,
-                null
-            );
-
-            let additionalMessage = ((eventMessage != null) && (eventMessage.length > 0)) ? ` - ${eventMessage}` : "";
-            this.commercialDiagnosticsUtilities.logInfoEvent(
-                fullyQualifiedStateName,
-                `${processName}: ${stateName} ended successfully. ${additionalMessage}`);
-        }
-
-        async logTsmProcessEndErrorAsync(processName, stateName, extraStateNameDetails, eventMessage, exception) {
-            let fullyQualifiedStateName = `${this.createFullyQualifiedStateName(processName, stateName, extraStateNameDetails)}_End_Error`;
-            await this.commercialDiagnosticsUtilities.logTroubleshootingModelProcessEndEventAsync(
-                processName,
-                fullyQualifiedStateName,
-                eventMessage
-            );
-
-            let additionalMessage = ((eventMessage != null ) && (eventMessage != undefined)) ? eventMessage : "";
-            let formattedEventMessage = `${processName}: ${stateName} ended in failure. ${additionalMessage}`;
-            if ((exception === null) || (exception === undefined)) {
-                this.commercialDiagnosticsUtilities.logErrorEvent(
-                    fullyQualifiedStateName,
-                    formattedEventMessage);
-            } else {
-                this.commercialDiagnosticsUtilities.logExceptionEvent(
-                    fullyQualifiedStateName,
-                    formattedEventMessage,
-                    exception);
-            }
-        }
-
-        async logTsmProcessInfoAsync(processName, stateName, extraStateNameDetails, eventMessage) {
-            let fullyQualifiedStateName = this.createFullyQualifiedStateName(processName, stateName, extraStateNameDetails);
-            await this.commercialDiagnosticsUtilities.logTroubleshootingModelProcessInfoEventAsync(
-                processName,
-                fullyQualifiedStateName,
-                eventMessage
-            );
-
-            let additionalMessage = ((eventMessage != null ) && (eventMessage != undefined)) ? `- ${eventMessage}` : "";
-            this.commercialDiagnosticsUtilities.logInfoEvent(
-                fullyQualifiedStateName,
-                `${processName}: ${stateName} ${additionalMessage}`);
-        }
-
         // This method is invoked only when the pgae is fully exiting (as opposed to going to the diagnostics page transiently or to virtual pages).
         async exitPageAsync(pageExitStatus) {
             try {
@@ -420,21 +358,21 @@ define([
                         result = CloudExperienceHost.AppResult.success;
                         dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT;
 
-                        await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE);
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE);
                         break;
 
                     case this.PAGE_EXIT_STATUS_SUCCESS_BACK_TO_OOBE_START:
                         result = CloudExperienceHost.AppResult.action1;
                         dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT_TO_OOBE_START;
 
-                        await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE, "Navigating back to OOBE start.");
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE, "Navigating back to OOBE start.");
                         break;
 
                     case this.PAGE_EXIT_STATUS_ERROR:
                         result = CloudExperienceHost.AppResult.fail;
                         dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_ERROR_DAP_PAGE_EXIT;
 
-                        await this.logTsmProcessEndErrorAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE, null, "Exiting page on error.", null);
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE, null, "Exiting page on error.", null);
                         break;
 
                     case this.PAGE_EXIT_STATUS_CANCELED:
@@ -442,7 +380,7 @@ define([
                         dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_CANCELED_DAP_PAGE_EXIT;
 
                         // User cancellation is considered successful from a troubleshooting perspective, since it's the intention of the user.
-                        await this.logTsmProcessEndSuccessAsync(
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(
                             this.TSM_PROCESS_NAME, 
                             this.TSM_STATE_PAGE, 
                             "Exiting page on user-initiated cancellation");
@@ -453,7 +391,7 @@ define([
                         dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_CANCELED_DAP_PAGE_EXIT_TO_OOBE_START;
 
                         // User cancellation is considered successful from a troubleshooting perspective, since it's the intention of the user.
-                        await this.logTsmProcessEndSuccessAsync(
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(
                             this.TSM_PROCESS_NAME, 
                             this.TSM_STATE_PAGE, 
                             "Exiting page on user-initiated cancellation and navigating back to OOBE start.");
@@ -463,7 +401,7 @@ define([
                         result = CloudExperienceHost.AppResult.action1;
                         dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_UNSUPPORTED_DEVICE_DAP_EXIT_TO_OOBE_START;
 
-                        await this.logTsmProcessEndErrorAsync(
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                             this.TSM_PROCESS_NAME, 
                             this.TSM_STATE_PAGE, 
                             "UnsupportedDevice",
@@ -569,7 +507,7 @@ define([
                 "DeviceLinkPage_NextButtonClicked_Started",
                 "DeviceLinkPage: Next button clicked");
 
-            await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE_OPTIONS, null);
+            await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE_OPTIONS, null);
             
             this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS);
         }
@@ -611,19 +549,18 @@ define([
                 return;
             }
 
-            await this.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_EXPORT_DEVICE_LINK_INFO);
+            await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_EXPORT_DEVICE_LINK_INFO);
 
             this.DIAGNOSTICS_LOGS_EXPORT_MAX_DURATION_IN_MILLISECONDS = 3 * 60 * 1000; // 3 minutes;
 
             // Disable the link so the user can't click this many times in parallel.
             this.exportDeviceLinkInfoEnabled(false);
 
-            return bridge.invoke("CloudExperienceHost.showFolderPicker").then(
-                async (folderPath) => {
-                    await this.logTsmProcessInfoAsync(
-                        this.TSM_PROCESS_NAME, 
-                        this.TSM_STATE_EXPORT_DEVICE_LINK_INFO, 
-                        "FolderSelected", 
+            // TODO: Bug 57182578: [AP-DA] Add UX message indicating no exportable drive was found when invoking getExportLogsFolderPathAsync fails
+            return this.commercialDiagnosticsUtilities.getExportLogsFolderPathAsync().then(
+                async (folderPath) => {                   
+                    this.commercialDiagnosticsUtilities.logInfoEvent(
+                        "DeviceLinkPage_ExportDeviceLinkInfo_FolderSelected",
                         `Export device link info to folder: ${folderPath}`);
 
                     let hasTimedOut = false;
@@ -642,7 +579,7 @@ define([
                                 // Success
                                 this.exportDeviceLinkInfoEnabled(true);
 
-                                await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_EXPORT_DEVICE_LINK_INFO, null);
+                                await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_EXPORT_DEVICE_LINK_INFO, null);
                             },
 
                             // Case: Timed out
@@ -650,7 +587,7 @@ define([
                                 hasTimedOut = true;
                                 this.exportDeviceLinkInfoEnabled(true);
 
-                                await this.logTsmProcessEndErrorAsync(
+                                await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                                     this.TSM_PROCESS_NAME, 
                                     this.TSM_STATE_EXPORT_DEVICE_LINK_INFO,
                                     "TimedOut" ,
@@ -659,11 +596,11 @@ define([
                             });
                 },
                 async (e) => {
-                    await this.logTsmProcessEndErrorAsync(
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                         this.TSM_PROCESS_NAME, 
                         this.TSM_STATE_EXPORT_DEVICE_LINK_INFO,
                         "FolderPicker",
-                        "Folder picker failed, usually because the user clicked cancel.", 
+                        "No exportable drive found.", 
                         e);
 
                     this.exportDeviceLinkInfoEnabled(true);
@@ -688,11 +625,11 @@ define([
         }
 
         async onOptionsVirtualPageVisible() {
-            await this.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE_OPTIONS);
+            await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE_OPTIONS);
 
             if (this.deviceLinkManager.getConfigureDeviceLinkResult() === ModernDeployment.Autopilot.Core.ConfigureDeviceLinkResult.successfullyAppliedLink) {
                 // Device link already applied.
-                await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE_OPTIONS, "Device link is already configured.");
+                await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE_OPTIONS, "Device link is already configured.");
 
                 this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_SUCCESS_RESULT);
             } else {
@@ -703,23 +640,23 @@ define([
         async onProgressVirtualPageVisible() {
             try {
                 // We need to first request the discovery URL for the device link
-                await this.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE);
-                await this.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_REQUEST_DISCOVERY_URL);
+                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE);
+                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_REQUEST_DISCOVERY_URL);
 
                 let discoveryUrlRequestInfo = await this.deviceLinkManager.requestDiscoveryUrlAsync(this.deviceLinkInfo);
 
-                if (((discoveryUrlRequestInfo.requestResult !== ModernDeployment.Autopilot.Core.DiscoveryUrlRequestResult.successfullyRetrievedUrl) &&
-                    (discoveryUrlRequestInfo.requestResult !== ModernDeployment.Autopilot.Core.DiscoveryUrlRequestResult.successfullyRetrievedUrlAndReceivedRedirection)) ||
+                if (((discoveryUrlRequestInfo.discoveryUrlRequestResultValue !== ModernDeployment.Autopilot.Core.DiscoveryUrlRequestResult.successfullyRetrievedUrl) &&
+                    (discoveryUrlRequestInfo.discoveryUrlRequestResultValue !== ModernDeployment.Autopilot.Core.DiscoveryUrlRequestResult.successfullyRetrievedUrlAndReceivedRedirection)) ||
                     ((discoveryUrlRequestInfo.discoveryUrl == null ) || (discoveryUrlRequestInfo.discoveryUrl.length == 0))) {
                     // Log the failure and transition to the failure page.
-                    await this.logTsmProcessEndErrorAsync(
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                         this.TSM_PROCESS_NAME, 
                         this.TSM_STATE_REQUEST_DISCOVERY_URL,
                         null,
-                        `Failed to request discovery URL with result: ${discoveryUrlRequestInfo.requestResult}`,
+                        `Failed to request discovery URL with result: ${discoveryUrlRequestInfo.discoveryUrlRequestResultValue}`,
                         null);
 
-                    await this.logTsmProcessEndErrorAsync(
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                         this.TSM_PROCESS_NAME, 
                         this.TSM_STATE_LINK_DEVICE,
                         "RequestDiscoveryUrl",
@@ -731,10 +668,12 @@ define([
                 }
 
                 let discoveryUrl = discoveryUrlRequestInfo.discoveryUrl;
-                await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_REQUEST_DISCOVERY_URL, `Discovery URL: ${discoveryUrl}`);
+                await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_REQUEST_DISCOVERY_URL, `Discovery URL: ${discoveryUrl}`);
 
                 // Now attempt to configure the device link
-                await this.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK);
+                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK);
+
+                let currentConfigurationStep = null;
         
                 // Call the ConfigureDeviceLinkAsync function and handle progress updates
                 return this.deviceLinkManager.configureDeviceLinkAsync(this.deviceLinkInfo, discoveryUrl, null).then(async (result) => {
@@ -743,19 +682,27 @@ define([
                     if (this.currentVirtualPageId() == this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS) {
                         // Display the results page for either success or failure
                         if (result === ModernDeployment.Autopilot.Core.ConfigureDeviceLinkResult.successfullyAppliedLink) {
-                            await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK);
-                            await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE);
+                            if (currentConfigurationStep != null) {
+                                await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
+                            }
+
+                            await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK);
+                            await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE);
 
                             this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_SUCCESS_RESULT);
                         } else {
-                            await this.logTsmProcessEndErrorAsync(
+                            if (currentConfigurationStep != null) {
+                                await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(this.TSM_PROCESS_NAME, currentConfigurationStep, null, null, null);
+                            }
+
+                            await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                                 this.TSM_PROCESS_NAME, 
                                 this.TSM_STATE_CONFIGURE_DEVICE_LINK,
                                 null, 
                                 `Failed to apply device link with result: ${result}.`,
                                 null);
 
-                            await this.logTsmProcessEndErrorAsync(
+                            await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                                 this.TSM_PROCESS_NAME, 
                                 this.TSM_STATE_LINK_DEVICE, 
                                 "ConfigureDeviceLink", 
@@ -767,19 +714,19 @@ define([
                     }
                     else
                     {
-                        await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK, "User cancelled.");
-                        await this.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE, "User cancelled.");
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK, "User cancelled.");
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE, "User cancelled.");
                     }
                 }, async (e) => {
                     // Error callback
-                    await this.logTsmProcessEndErrorAsync(
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                         this.TSM_PROCESS_NAME, 
                         this.this.TSM_STATE_CONFIGURE_DEVICE_LINK,
                         null, 
                         "Unexpected error configuring device link",
                         e);
 
-                    await this.logTsmProcessEndErrorAsync(
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                         this.TSM_PROCESS_NAME, 
                         this.TSM_STATE_LINK_DEVICE, 
                         "ConfigureDeviceLink", 
@@ -792,44 +739,49 @@ define([
                     // Ensure the user didn't click the cancel button while the device tagging operation was running
                     if (this.currentVirtualPageId() == this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS) {
                         switch (progress) {
-                            case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.tPMAttesting:
-                                await this.logTsmProcessInfoAsync(
-                                    this.TSM_PROCESS_NAME, 
-                                    this.TSM_STATE_CONFIGURE_DEVICE_LINK, 
-                                    "TpmAttesting",
-                                    "TPM attesting...");
+                            case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.tpmAttesting:
+                                if (currentConfigurationStep != null) {
+                                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
+                                }
+
+                                currentConfigurationStep = this.TSM_STATE_CONFIGURE_DEVICE_LINK_TPM_ATTEST;
+                                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK_TPM_ATTEST);
                                 break;
 
-                            case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.initiatingMaaAttestationRequest:
-                                await this.logTsmProcessInfoAsync(
-                                    this.TSM_PROCESS_NAME, 
-                                    this.TSM_STATE_CONFIGURE_DEVICE_LINK, 
-                                    "MaaAttesting", 
-                                    "Initiating MAA attestation request...");
+                            case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.initiatingMaaAttestationRequest:                                
+                                if (currentConfigurationStep != null) {
+                                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
+                                }
+
+                                currentConfigurationStep = this.TSM_STATE_CONFIGURE_DEVICE_LINK_MAA_ATTEST;
+                                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK_MAA_ATTEST);
                                 break;
 
                             case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.retrievingDeviceLink:
-                                await this.logTsmProcessInfoAsync(
-                                    this.TSM_PROCESS_NAME, 
-                                    this.TSM_STATE_CONFIGURE_DEVICE_LINK, 
-                                    "RetrievingDeviceLink", 
-                                    "Retrieving device link...");
+                                if (currentConfigurationStep != null) {
+                                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
+                                }
+
+                                currentConfigurationStep = this.TSM_STATE_CONFIGURE_DEVICE_LINK_RETRIEVE_DEVICE_LINK;
+                                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK_RETRIEVE_DEVICE_LINK);
                                 break;
 
                             case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.retrievingDeviceLinkFromRedirectedUrl:
-                                await this.logTsmProcessInfoAsync(
-                                    this.TSM_PROCESS_NAME, 
-                                    this.TSM_STATE_CONFIGURE_DEVICE_LINK, 
-                                    "RetrievingDeviceLinkFromRedirectUrl", 
-                                    "Retrieving device link from redirected URL...");
+                                if (currentConfigurationStep != null) {
+                                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
+                                }
+
+                                currentConfigurationStep = this.TSM_STATE_CONFIGURE_DEVICE_LINK_RETRIEVE_DEVICE_LINK;
+                                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK_RETRIEVE_DEVICE_LINK);
                                 break;
 
                             case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.applyingDeviceLink:
-                                await this.logTsmProcessInfoAsync(
-                                    this.TSM_PROCESS_NAME, 
-                                    this.TSM_STATE_CONFIGURE_DEVICE_LINK, 
-                                    "ApplyingDeviceLink", 
-                                    "Applying device link...");
+                                if (currentConfigurationStep != null) {
+                                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
+                                }
+
+                                currentConfigurationStep = this.TSM_STATE_CONFIGURE_DEVICE_LINK_APPLY_DEVICE_LINK;
+                                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK_APPLY_DEVICE_LINK);
                                 break;
 
                             default:
@@ -841,7 +793,7 @@ define([
                     }
                 });
             } catch (e) {
-                await this.logTsmProcessEndErrorAsync(
+                await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                     this.TSM_PROCESS_NAME, 
                     this.TSM_STATE_LINK_DEVICE, 
                     "ExceptionOccurred", 

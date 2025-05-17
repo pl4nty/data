@@ -347,6 +347,104 @@ var CloudExperienceHost;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
+    var ShellHostedApplication;
+    (function (ShellHostedApplication) {
+        class rect {
+            constructor() {
+                this.x = 0;
+                this.y = 0;
+                this.width = 0;
+                this.height = 0;
+                this.top = 0;
+                this.right = 0;
+                this.bottom = 0;
+                this.left = 0;
+            }
+        }
+        function convertMapToPropertySet(argMap) {
+            let propertySet = new Windows.Foundation.Collections.PropertySet();
+            Object.keys(argMap).map((key) => { propertySet.insert(key, argMap[key]); });
+            return propertySet;
+        }
+        ShellHostedApplication.convertMapToPropertySet = convertMapToPropertySet;
+        function launchShellHostedApplication(moduleName, clientRect, launcherArgs) {
+            return new WinJS.Promise(function (completeDispatch, errorDispatch, progressDispatch) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ShellHostedApplication")) {
+                    require(["appLaunchers/HostedApplication"], (LauncherClass) => {
+                        const launcherInstance = new LauncherClass();
+                        const propertySetArgs = launcherArgs ? convertMapToPropertySet(launcherArgs) : null;
+                        if (!launcherInstance.launchShellHostedApplicationAsync || !propertySetArgs) {
+                            completeDispatch(CloudExperienceHost.AppResult.fail);
+                        }
+                        launcherInstance.launchShellHostedApplicationAsync(moduleName, clientRect, propertySetArgs)
+                            .done(appResult => completeDispatch(appResult));
+                    });
+                }
+                else {
+                    completeDispatch(CloudExperienceHost.AppResult.fail);
+                }
+            });
+        }
+        ShellHostedApplication.launchShellHostedApplication = launchShellHostedApplication;
+        function requestDismissShellHostedApplication() {
+            return new WinJS.Promise(function (completeDispatch, errorDispatch, progressDispatch) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ShellHostedApplication")) {
+                    require(["appLaunchers/HostedApplication"], (LauncherClass) => {
+                        const launcherInstance = new LauncherClass();
+                        if (!launcherInstance.requestDismissShellHostedApplication) {
+                            completeDispatch(false);
+                        }
+                        const result = launcherInstance.requestDismissShellHostedApplication();
+                        completeDispatch(result);
+                    });
+                }
+                else {
+                    completeDispatch(false);
+                }
+            });
+        }
+        ShellHostedApplication.requestDismissShellHostedApplication = requestDismissShellHostedApplication;
+        function invokeMessageToShellHostedApplication(message) {
+            return new WinJS.Promise(function (completeDispatch, errorDispatch, progressDispatch) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ShellHostedApplication_Wave2")) {
+                    require(["appLaunchers/HostedApplication"], (LauncherClass) => {
+                        const launcherInstance = new LauncherClass();
+                        const propertySetArgs = message ? convertMapToPropertySet(message) : null;
+                        if (!launcherInstance.invokeMessageToShellHostedApplication || !propertySetArgs) {
+                            completeDispatch(false);
+                        }
+                        const result = launcherInstance.invokeMessageToShellHostedApplication(propertySetArgs);
+                        completeDispatch(result);
+                    });
+                }
+                else {
+                    completeDispatch(false);
+                }
+            });
+        }
+        ShellHostedApplication.invokeMessageToShellHostedApplication = invokeMessageToShellHostedApplication;
+        function repositionShellHostedApplication(clientRect) {
+            return new WinJS.Promise(function (completeDispatch, errorDispatch, progressDispatch) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ShellHostedApplication_Wave2")) {
+                    require(["appLaunchers/HostedApplication"], (LauncherClass) => {
+                        const launcherInstance = new LauncherClass();
+                        if (!launcherInstance.repositionShellHostedApplication || !clientRect) {
+                            completeDispatch(false);
+                        }
+                        const result = launcherInstance.repositionShellHostedApplication(clientRect);
+                        completeDispatch(result);
+                    });
+                }
+                else {
+                    completeDispatch(false);
+                }
+            });
+        }
+        ShellHostedApplication.repositionShellHostedApplication = repositionShellHostedApplication;
+    })(ShellHostedApplication = CloudExperienceHost.ShellHostedApplication || (CloudExperienceHost.ShellHostedApplication = {}));
+})(CloudExperienceHost || (CloudExperienceHost = {}));
+var CloudExperienceHost;
+(function (CloudExperienceHost) {
     var UserManager;
     (function (UserManager) {
         function setIUserFromId(userId) {

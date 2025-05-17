@@ -2197,7 +2197,6 @@
         "OobeMSAHello": {
             "cxid": "OobeMSAHello",
             "url": "ms-appx-web:///webapps/inclusiveOobe/view/OobeHello-main.html",
-            "requiredDisabledFeatureName": "OobeHostPostMSAFlowMigration",
             "ignoreResult": true,
             "successID": "OobeMSANGCEnrollWithHello",
             "failID": "OobeMSANGCEnroll",
@@ -2212,7 +2211,6 @@
             "frameAnimation": "lockandpinLottie.json",
             "url": "https://account.live.com/msangc?fl=enroll&hello=1",
             "urlint": "https://account.live-int.com/msangc?fl=enroll&hello=1",
-            "requiredDisabledFeatureName": "OobeHostPostMSAFlowMigration",
             "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForAccount",
             "internetRequired": true,
             "ignoreResult": true,
@@ -2230,7 +2228,6 @@
             "frameAnimation": "lockandpinLottie.json",
             "url": "https://account.live.com/msangc?fl=enroll",
             "urlint": "https://account.live-int.com/msangc?fl=enroll",
-            "requiredDisabledFeatureName": "OobeHostPostMSAFlowMigration",
             "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForAccount",
             "internetRequired": true,
             "ignoreResult": true,

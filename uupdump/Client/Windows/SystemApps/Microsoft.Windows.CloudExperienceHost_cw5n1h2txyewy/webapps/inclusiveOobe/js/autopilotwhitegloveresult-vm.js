@@ -67,6 +67,7 @@ define([
             // By default, show the default view
             this.shouldShowDefaultView = ko.observable(true);
             this.shouldShowDesktopLiteView = ko.observable(false);
+            this.useRedGreenBackground = ko.observable(false);
 
             // All flags gating visibility of regions of the main content must be added to this
             // array.
@@ -509,13 +510,21 @@ define([
         displayDesktopLiteResult(result)
         {
             this.resetStrings();
+            let autopilotPreprovisioningRedGreenBackground = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotPreprovisioningRedGreenBackground");
+            if (autopilotPreprovisioningRedGreenBackground) {
+                this.useRedGreenBackground(true);
+            }
 
             if (result === "Success") {
                 bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", this.successLottieFile);
 
                 this.isFailure(false);
                 this.title(resourceStrings.WhiteGloveResultSuccessTitle);
-
+                if (autopilotPreprovisioningRedGreenBackground) {
+                    this.resultBackground("success-background && shared-background");
+                    this.showResultFooter("success-footer");
+                }
+                
                 this.hyperlinkVisibility(this.HYPERLINK_WHITE_GLOVE_NONE);
                 this.buttonVisibility(this.BUTTON_WHITE_GLOVE_SUCCESS);
                 this.resultInstructionsText(this.resourceStrings.WhiteGloveCompletedText);
@@ -532,6 +541,10 @@ define([
 
                 this.isFailure(true);
                 this.title(resourceStrings.WhiteGloveResultFailureTitle);
+                if (autopilotPreprovisioningRedGreenBackground) {
+                    this.resultBackground("failure-background && shared-background");
+                    this.showResultFooter("failure-footer");
+                }
 
                 this.hyperlinkVisibility(this.HYPERLINK_WHITE_GLOVE_NONE);
                 this.buttonVisibility(this.BUTTON_WHITE_GLOVE_FAILURE);

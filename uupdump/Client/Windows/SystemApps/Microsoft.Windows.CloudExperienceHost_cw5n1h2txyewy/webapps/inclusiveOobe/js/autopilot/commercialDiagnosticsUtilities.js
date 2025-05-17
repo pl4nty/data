@@ -111,7 +111,7 @@ define(['legacy/bridge'], (bridge) => {
         ////////////////////
         // APIs logging for troubleshooting models (TSMs)
 
-        // Private method
+        // Private methods
         async _logTroubleshootingModelCoreAsync(
             stateType,
             processName,
@@ -133,6 +133,81 @@ define(['legacy/bridge'], (bridge) => {
             }
         }
 
+        _createFullyQualifiedStateName(processName, stateName, extraStateNameDetails) {
+            if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging")) {
+                let fullyQualifiedStateName = `${processName}.${stateName}`;
+                if ((extraStateNameDetails != null) && (extraStateNameDetails != undefined) && (extraStateNameDetails.length > 0)) {
+                    fullyQualifiedStateName += `_${extraStateNameDetails}`;
+                }
+
+                return fullyQualifiedStateName;
+            }
+        }
+
+        // Log troubleshooting model event for process start
+        async logTsmProcessStartAsync(processName, stateName) {
+            if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging")) {
+                let fullyQualifiedStateName = `${this._createFullyQualifiedStateName(processName, stateName, null)}_Start`;
+
+                await this._logTroubleshootingModelCoreAsync(
+                    this.TROUBLESHOOTING_MODEL_STATE_TYPE_START,
+                    processName,
+                    fullyQualifiedStateName,
+                    null
+                );
+
+                this.logInfoEvent(
+                    fullyQualifiedStateName,
+                    `${processName}: ${stateName} is starting`);
+            }
+        }
+
+        // Log troubleshooting model event for process end in success
+        async logTsmProcessEndSuccessAsync(processName, stateName, eventMessage) {
+            if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging")) {
+                let fullyQualifiedStateName = `${this._createFullyQualifiedStateName(processName, stateName, null)}_End_Success`;
+
+                await this._logTroubleshootingModelCoreAsync(
+                    this.TROUBLESHOOTING_MODEL_STATE_TYPE_END,
+                    processName,
+                    fullyQualifiedStateName,
+                    null
+                );
+
+                let additionalMessage = ((eventMessage != null) && (eventMessage.length > 0)) ? ` - ${eventMessage}` : "";
+                this.logInfoEvent(
+                    fullyQualifiedStateName,
+                    `${processName}: ${stateName} ended successfully. ${additionalMessage}`);
+            }
+        }
+
+        // Log troubleshooting model event for process end in failure
+        async logTsmProcessEndErrorAsync(processName, stateName, extraStateNameDetails, eventMessage, exception) {
+            if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging")) {
+                let fullyQualifiedStateName = `${this._createFullyQualifiedStateName(processName, stateName, extraStateNameDetails)}_End_Error`;
+                await this._logTroubleshootingModelCoreAsync(
+                    this.TROUBLESHOOTING_MODEL_STATE_TYPE_END,
+                    processName,
+                    fullyQualifiedStateName,
+                    eventMessage
+                );
+
+                let additionalMessage = ((eventMessage != null ) && (eventMessage != undefined)) ? eventMessage : "";
+                let formattedEventMessage = `${processName}: ${stateName} ended in failure. ${additionalMessage}`;
+                if ((exception === null) || (exception === undefined)) {
+                    this.logErrorEvent(
+                        fullyQualifiedStateName,
+                        formattedEventMessage);
+                } else {
+                    this.logExceptionEvent(
+                        fullyQualifiedStateName,
+                        formattedEventMessage,
+                        exception);
+                }
+            }
+        }
+
+        // Legacy APIs for logging troubleshooting model events
         async logTroubleshootingModelProcessStartEventAsync(processName, stateName, eventMessage) {
             await this._logTroubleshootingModelCoreAsync(
                 this.TROUBLESHOOTING_MODEL_STATE_TYPE_START,

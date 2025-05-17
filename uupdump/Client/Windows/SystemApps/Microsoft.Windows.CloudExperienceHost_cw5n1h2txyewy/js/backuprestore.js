@@ -186,6 +186,11 @@ var CloudExperienceHost;
         (function (OobeCloudBackupRestore) {
             function getShouldSkipAsync() {
                 return new WinJS.Promise(function (completeDispatch /*, errorDispatch */) {
+                    if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OOBEGamingHandheldNavigation")) {
+                        if (CloudExperienceHost.Environment.isGamepadBasedDevice()) {
+                            completeDispatch(true);
+                        }
+                    }
                     let policyValue = CloudExperienceHostAPI.UtilStaticsCore.getLicensingPolicyValue("OOBE-Skip-CloudBackupRestore");
                     completeDispatch(policyValue != 0);
                 });

@@ -48,7 +48,7 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             return this.learnMoreContent;
         }
 
-        updateLearnMoreContentForRender(doc, dirVal, isInternetAvailable, errorMessage, targetPersonality, elementToAnchor) {
+        updateLearnMoreContentForRender(iFrameElement, doc, dirVal, isInternetAvailable, errorMessage, targetPersonality, elementToAnchor) {
             let cssOverride = this.getCssOverride(targetPersonality);
 
             if (cssOverride && (cssOverride !== "")) {
@@ -73,7 +73,7 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             for (let i = 0; i < privacyLinks.length; i++) {
                 let link = privacyLinks[i];
                 link.onclick = (e) => {
-                    this.showLearnMoreContent(doc, e.target.href, dirVal, isInternetAvailable, errorMessage, targetPersonality);
+                    this.showLearnMoreContent(iFrameElement, doc, e.target.href, dirVal, isInternetAvailable, errorMessage, targetPersonality);
                     e.preventDefault();
                 };
             }
@@ -89,7 +89,7 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             return "";
         }
 
-        showLearnMoreContent(doc, href, dirVal, isInternetAvailable, errorMessage, targetPersonality) {
+        showLearnMoreContent(iFrameElement, doc, href, dirVal, isInternetAvailable, errorMessage, targetPersonality) {
             let cssOverride = this.getCssOverride(targetPersonality);
 
             if (isInternetAvailable) {
@@ -108,7 +108,7 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                         html = html + "<link href=\"" + cssOverride + "\" rel=\"stylesheet\">";
                     }
                     html = html + "</head><body><p>" + errorMessage + "</p></body></html>";
-                    KoHelpers.loadIframeContent(doc, { content: html, dir: dirVal });
+                    KoHelpers.loadIframeContent(iFrameElement, doc, { content: html, dir: dirVal });
                 });
             }
             else {

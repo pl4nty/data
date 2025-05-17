@@ -190,6 +190,74 @@
             }
         </style>
     </div>
+
+    <div data-bind="if: $root.useRedGreenBackground">
+        <style>
+            .success-background {
+                background: #007533;
+            }
+
+            .failure-background {
+                background: #750008;
+            }
+
+            .shared-background {
+                color: rgba(255, 255, 255, 1);
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+
+            .error-lite {
+                color: #ffff00;
+            }
+
+            .category-lite {
+                color: rgba(255, 255, 255, 0.6);
+            }
+
+            .value-lite {
+                color: rgba(255, 255, 255, 0.6);
+            }
+
+            .failure-footer > .button-group button.win-button {
+                background: #5c0006;
+            }
+
+            .failure-footer > .button-group button.win-button.alt-button {
+                background-color: transparent;
+                color: #FFFFFF;
+            }
+
+            .failure-footer > .button-group button.win-button.alt-button[disabled] {
+                color: GrayText;
+            }
+
+            .success-footer > .button-group button.win-button {
+                background: #005c28;
+            }
+
+            @media (-ms-high-contrast) {
+                .failure-footer > .button-group button.win-button {
+                    background: ButtonFace;
+                    color: ButtonText;
+                }
+
+                .failure-footer > .button-group button.win-button.alt-button {
+                    background-color: ButtonFace;
+                    color: ButtonText;
+                }
+
+                .failure-footer > .button-group button.win-button.alt-button[disabled] {
+                    color: GrayText;
+                }
+
+                .success-footer > .button-group button.win-button {
+                    background: ButtonFace;
+                    color: ButtonText;
+                }
+            }
+        </style>
+    </div>
 </head>
 <body class="webapp-inner">
     <!-- Default view -->
@@ -231,7 +299,7 @@
     </div>
 
     <!-- Desktop Lite view -->
-    <div class="body-container" data-bind="visible: $root.shouldShowDesktopLiteView && $root.showUIElements">
+    <div class="body-container" data-bind="css: resultBackground, visible: $root.shouldShowDesktopLiteView && $root.showUIElements">
         <div class="container-content no-scroll">
             <oobe-header params="title: $root.title"></oobe-header>
             <p id="errorMessageSubtitle" class="error-lite body-sub-header" data-bind="html: $root.errorMessage"></p>
@@ -276,7 +344,7 @@
                 </div>
             </div>
         </div>
-        <oobe-footer params="flexStartHyperLinks: $root.flexStartHyperLinks, flexEndButtons: $root.flexEndButtons"></oobe-footer>
+        <oobe-footer params="flexStartHyperLinks: $root.flexStartHyperLinks, flexEndButtons: $root.flexEndButtons" data-bind="css: showResultFooter"></oobe-footer>
     </div>
 </body>
 </html>

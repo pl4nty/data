@@ -1,12 +1,12 @@
 {
-  "OOBEDSMA": {
+  "OOBEDEFAULTUSERSESSION": {
     "irisPlacementId": {
       "value": "",
       "overrideValue": "88001035",
       "overrideFeature": "OobeCloudNavmesh"
     },
     "start": "StartSelector",
-    "error": "Error",
+    "error": "OobeError",
     "msaTicketContext": "OOBE",
     "notifyOnFirstVisible": true,
     "notifyOnLastFinished": true,
@@ -21,12 +21,12 @@
     "StartSelector": {
       "cxid": "StartSelector",
       "launcher": "js:OOBEStartSelector",
-      "successID": "OobeSnapshotCapture",
+      "successID": "OobeMSAHello",
       "visibility": false,
       "measureId": 48471513
     },
-    "Error": {
-      "cxid": "Error",
+    "OobeError": {
+      "cxid": "OobeError",
       "frameAnimation": "errorLottie.json",
       "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
       "visibility": false,
@@ -39,6 +39,62 @@
       "disableErrorPageOnFailure": true,
       "visibility": false,
       "measureId": 48471668
+    },
+    "OobeMSAHello": {
+      "cxid": "OobeMSAHello",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/OobeHello-main.html",
+      "requiredFeatureName": "OobeHostPostMSAFlowMigration",
+      "ignoreResult": true,
+      "internetRequired": true,
+      "successID": "OobeMSANGCEnrollWithHello",
+      "failID": "OobeMSANGCEnroll",
+      "cancelID": "OobeMSANGCEnroll",
+      "abortID": "OobeMSANGCEnroll",
+      "offlineID": "OobeMSANGCEnroll",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "measureId": 56733615
+    },
+    "OobeMSANGCEnrollWithHello": {
+      "cxid": "OobeMSANGCEnrollWithHello",
+      "frameAnimation": "lockandpinLottie.json",
+      "url": "https://account.live.com/msangc?fl=enroll&hello=1",
+      "urlint": "https://account.live-int.com/msangc?fl=enroll&hello=1",
+      "requiredFeatureName": "OobeHostPostMSAFlowMigration",
+      "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForAccount",
+      "ignoreResult": true,
+      "internetRequired": true,
+      "successID": "OobeSnapshotCapture",
+      "failID": "OobeSnapshotCapture",
+      "cancelID": "OobeSnapshotCapture",
+      "abortID": "OobeSnapshotCapture",
+      "offlineID": "OobeSnapshotCapture",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "intraWebAppVisibility": false,
+      "measureId": 56733616
+    },
+    "OobeMSANGCEnroll": {
+      "cxid": "OobeMSANGCEnroll",
+      "frameAnimation": "lockandpinLottie.json",
+      "url": "https://account.live.com/msangc?fl=enroll",
+      "urlint": "https://account.live-int.com/msangc?fl=enroll",
+      "requiredFeatureName": "OobeHostPostMSAFlowMigration",
+      "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForAccount",
+      "ignoreResult": true,
+      "internetRequired": true,
+      "successID": "OobeSnapshotCapture",
+      "failID": "OobeSnapshotCapture",
+      "cancelID": "OobeSnapshotCapture",
+      "abortID": "OobeSnapshotCapture",
+      "offlineID": "OobeSnapshotCapture",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "intraWebAppVisibility": false,
+      "measureId": 56733617
     },
     "OobeSnapshotCapture": {
       "cxid": "OobeSnapshotCapture",
@@ -65,7 +121,11 @@
       "overrideFeature": "OobeCloudNavmesh"
     },
     "start": "StartSelector",
-    "error": "Error",
+    "error": {
+      "value": "Error",
+      "overrideValue": "OobeError",
+      "overrideFeature": "OobeNaviNameFix"
+    },
     "msaTicketContext": "OOBE",
     "notifyOnFirstVisible": true,
     "notifyOnLastFinished": true,
@@ -92,6 +152,14 @@
       "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
       "visibility": false,
       "measureId": 48471631
+    },
+    "OobeError": {
+      "cxid": "OobeError",
+      "frameAnimation": "errorLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
+      "visibility": false,
+      "measureId": 48471631,
+      "requiredFeatureName": "OobeNaviNameFix"
     },
     "OobeExit": {
       "cxid": "OobeExit",
@@ -151,6 +219,7 @@
       "cxid": "OobePostUserIntentExperimentation",
       "url": "https://sdx.microsoft.com/frx/oobe-post-user-intent-experimentation",
       "urlint": "https://sdx.microsoft-int.com/frx/oobe-post-user-intent-experimentation",
+      "requiredDisabledFeatureName": "DisableOobePostUserIntentExperimentation",
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,
@@ -258,6 +327,7 @@
       "cxid": "OobePostGamepassExperimentation",
       "url": "https://sdx.microsoft.com/frx/oobe-post-gamepass-experimentation",
       "urlint": "https://sdx.microsoft-int.com/frx/oobe-post-gamepass-experimentation",
+      "requiredDisabledFeatureName": "DisableOobePostGamepassExperimentation",
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,

@@ -543,7 +543,7 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
             let learnMoreIFrame = document.querySelector(".eula-iframe[data-iframe-index='" + this.currentPanelIndex() + "']");
             let doc = learnMoreIFrame.contentWindow.document;
             let msaInformationPage = "https://go.microsoft.com/fwlink/?linkid=2162068";
-            oobeSettingsData.showLearnMoreContent(doc, msaInformationPage, document.documentElement.dir, this.isInternetAvailable, this.resourceStrings.AgeConfirmationNavigationError, this.targetPersonality);
+            oobeSettingsData.showLearnMoreContent(learnMoreIFrame, doc, msaInformationPage, document.documentElement.dir, this.isInternetAvailable, this.resourceStrings.AgeConfirmationNavigationError, this.targetPersonality);
             this.processingFlag(false);
         }
 

@@ -41,6 +41,8 @@ var CloudExperienceHost;
             this._errorAppFailedNavigationMaxAttemptsAllowed = 5;
             this._narratorInstruction = null;
             this._endIntroVideoTimer = null;
+            this._introVideoElement = null;
+            this._videoWrapperElement = null;
             WinJS.Namespace.define("CloudExperienceHost", {
                 getVersion: this._getVersion.bind(this),
                 getContext: this._getContext.bind(this),
@@ -94,7 +96,12 @@ var CloudExperienceHost;
                 if (!validReboot) {
                     let videoSrc = navMesh.getIntroVideoPath();
                     if (videoSrc !== "") {
-                        this._playIntroVideo(videoSrc);
+                        if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("OobeIntroVideoSynchronization")) {
+                            this._initializeIntroVideo(videoSrc);
+                        }
+                        else {
+                            this._playIntroVideo(videoSrc);
+                        }
                     }
                 }
                 if (navMesh.getInclusive() != 0) {
@@ -196,6 +203,45 @@ var CloudExperienceHost;
                 CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("EndToPlayIntroVideo");
             });
         }
+        _initializeIntroVideo(videoSrc) {
+            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("StartToInitializeIntroVideo");
+            // local variables for the elements
+            let videoWrapperElement = document.createElement('div');
+            videoWrapperElement.setAttribute('class', 'introvideo-wrapper');
+            let introVideoElement = document.createElement('video');
+            // Early return if HTMLMediaElement cannot play the video type.
+            // Return without appending any video or container elements to the document body, so execution will proceed
+            // the same as Scenarios which don't specify an intro video, and interactive ux will not be covered at any point.
+            // e.g. .canPlayType is undefined on HTMLMediaElement on N SKUs, which are not packaged with media components
+            let mediaElement = introVideoElement;
+            if (!mediaElement.canPlayType || !mediaElement.canPlayType("video/mp4")) {
+                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("CannotPlayVideoType");
+                return;
+            }
+            introVideoElement.setAttribute('class', 'introvideo-container');
+            introVideoElement.src = videoSrc;
+            videoWrapperElement.appendChild(introVideoElement);
+            document.body.appendChild(videoWrapperElement);
+            this._setRootElementDisplayed(false);
+            // If video fails to load - remove the video and let scenario proceed.
+            const onError = () => {
+                this._setRootElementDisplayed(true);
+                videoWrapperElement.style.display = "none";
+                introVideoElement.removeEventListener("error", onError);
+                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("IntroVideoError");
+            };
+            introVideoElement.addEventListener("error", onError);
+            const onEnded = () => {
+                this._removeIntroVideoWrapper(videoWrapperElement);
+                this._stopPlayIntrovideoTimer();
+                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("EndToPlayIntroVideo");
+                introVideoElement.removeEventListener('ended', onEnded);
+            };
+            introVideoElement.addEventListener('ended', onEnded);
+            // Local elements assigned to class properties if everything succeeds
+            this._videoWrapperElement = videoWrapperElement;
+            this._introVideoElement = introVideoElement;
+        }
         _removeIntroVideoWrapper(videoWrapperElement) {
             // Adding the animation style into the root view element when it's time to show up after removing the intro video element from the layout.
             let controlsContainer = document.getElementsByClassName("Container");
@@ -218,6 +264,38 @@ var CloudExperienceHost;
                 message: data && (data.message || data.errorMessage || (data.error && data.error.message) || (data.exception && data.exception.message) || null),
                 stack: data && (data.stack || (data.exception && (data.exception.stack || data.exception.message)) || (data.error && ((data.error.stack) || (data.error.error && data.error.error.stack))) || "empty").split("  at ").join(""),
             };
+        }
+        _startIntroVideoPlayback() {
+            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("StartToPlayIntroVideo");
+            this._introVideoElement.play();
+            AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onFirstOOBEWebAppVisible();
+            // This is a timeout that will remove the video wrapper element from the layout when we are not otherwise notified that the video playback ended
+            let videoDuration = (this._introVideoElement.duration && (this._introVideoElement.duration > 0)) ? this._introVideoElement.duration : 5; // default to be 5s if failed to get the video duration
+            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("IntroVideoDuration", videoDuration);
+            this._startPlayIntroVideoTimer(this._videoWrapperElement, videoDuration);
+        }
+        _playIntroVideoIfLoaded() {
+            if (this._introVideoElement.readyState == HTMLMediaElement.HAVE_ENOUGH_DATA) {
+                this._startIntroVideoPlayback();
+            }
+            else {
+                // If the video is not ready to play, wait for the loadeddata event
+                const onLoadedData = () => {
+                    if (this._introVideoElement.readyState == HTMLMediaElement.HAVE_ENOUGH_DATA) {
+                        //remove the event listener
+                        this._introVideoElement.removeEventListener("loadeddata", onLoadedData);
+                        //start video now that it is ready
+                        this._startIntroVideoPlayback();
+                    }
+                };
+                // Add the event listener to wait for the loadeddata event
+                this._introVideoElement.addEventListener("loadeddata", onLoadedData);
+                // Immediately check readyState in case the readyState changes betweeen the check and the handler
+                if (this._introVideoElement.readyState == HTMLMediaElement.HAVE_ENOUGH_DATA) {
+                    this._introVideoElement.removeEventListener("loadeddata", onLoadedData);
+                    this._startIntroVideoPlayback();
+                }
+            }
         }
         onUnhandledException(e) {
             return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch */) {
@@ -267,6 +345,13 @@ var CloudExperienceHost;
             if (navigateCallback) {
                 this._appView.showProgress().then(() => {
                     this._appView.resetFooterFocus();
+                    try {
+                        if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GamepadLegendEnabled")) {
+                            this._appView.setGamepadLegendDisplayOverrideForB(null);
+                        }
+                    }
+                    catch (ex) {
+                    }
                 }).then(() => {
                     navigateCallback();
                 }).done(() => {
@@ -817,7 +902,17 @@ var CloudExperienceHost;
                 this._hasNotifiedFirstVisible = true;
                 CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logCriticalEvent2("FirstWebAppVisible", this._currentNode && this._currentNode.cxid);
                 if (this._navigator && this._navigator.getNavMesh().getNotifyOnFirstVisible()) {
-                    AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onFirstOOBEWebAppVisible();
+                    if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("OobeIntroVideoSynchronization")) {
+                        if (this._introVideoElement != null) {
+                            this._playIntroVideoIfLoaded();
+                        }
+                        else {
+                            AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onFirstOOBEWebAppVisible();
+                        }
+                    }
+                    else {
+                        AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onFirstWebAppVisible();
+                    }
                 }
                 if (CloudExperienceHost.getContext().host.toLowerCase() === "frx") {
                     AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventNotificationManager").notifyOobeReadyStateChanged(true);

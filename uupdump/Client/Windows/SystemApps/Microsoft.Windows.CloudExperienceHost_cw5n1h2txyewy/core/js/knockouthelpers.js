@@ -41,7 +41,45 @@ define(['lib/knockout', 'legacy/bridge',
         let gamepadEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadEnabledOobe");
         return (gamepadEnabledObj.result && gamepadEnabledObj.value);
     }
-    let gamepadEnabledOobe = initializeIsGamepadEnabled(); 
+    let gamepadEnabledOobe = initializeIsGamepadEnabled();
+
+    function initializeIsGamepadLegendEnabled() {
+        let gamepadLegendEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadLegendEnabled");
+        return (gamepadLegendEnabledObj.result && gamepadLegendEnabledObj.value);
+    }
+    let gamepadLegendEnabled = initializeIsGamepadLegendEnabled();
+
+    function initializeIsOOBEDeviceFormEnabled() {
+        let deviceFormEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("OOBEDeviceForm");
+        return (deviceFormEnabledObj.result && deviceFormEnabledObj.value);
+    }
+    let deviceFormEnabledOobe = initializeIsOOBEDeviceFormEnabled();
+
+    let currentKeyInputModality;
+    if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+        // Assume keyboard as the default/starting key input modality, except on gamepad-based devices.
+        currentKeyInputModality = "keyboard";
+        if (CloudExperienceHostAPI.Environment.deviceForm === CloudExperienceHost.TargetDevice.HANDHELD) {
+            currentKeyInputModality = "gamepad";
+        }
+
+        // Register a keydown handler, on the document root, in the capture phase so elements can use this information when they eventually handle events.
+        document.addEventListener("keydown", (ev) => {
+            let oldModality = currentKeyInputModality;
+
+            // The range of Gamepad VKeys is from A (195) to RightThumbstickLeft (218)
+            if ((ev.keyCode >= WinJS.Utilities.Key.GamepadA) && (ev.keyCode <= WinJS.Utilities.Key.GamepadRightThumbstickLeft)) {
+                currentKeyInputModality = "gamepad";
+            }
+            else {
+                currentKeyInputModality = "keyboard";
+            }
+
+            if (oldModality !== currentKeyInputModality) {
+                document.dispatchEvent(new Event("keyInputModalityChanged"))
+            }
+        }, { capture: true });
+    }
 
     let componentsRegistered = false;
     let dialogComponentsRegistered = false;
@@ -274,46 +312,247 @@ define(['lib/knockout', 'legacy/bridge',
             }
         }
 
-        static loadIframeContent(iframeDocument, value) {
-            iframeDocument.open('text/html', 'replace');
-            iframeDocument.write(value.content);
-            iframeDocument.close();
+        static loadIframeContent(iFrameElement, iFrameDocument, value) {
+            iFrameDocument.open('text/html', 'replace');
+            iFrameDocument.write(value.content);
+            iFrameDocument.close();
 
-            iframeDocument.dir = value.dir;
-            iframeDocument.body.setAttribute("tabindex", "0");
+            if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+                // We need the iFrame to participate in the tab-order only when we're navigating using gamepad.
+                // This allows us to treat the iFrameElement (the <iframe /> itself) as a distinct stop where the
+                // user can opt to direct focus into the frame (with GamepadA).
+                let updateTabIndexBasedOnInputModality = () => {
+                    if (currentKeyInputModality === "gamepad") {
+                        iFrameElement.setAttribute("tabindex", "0");
+                        WinJS.UI.XYFocus._iframeHelper.registerIFrame(iFrameElement);
+                    }
+                    else {
+                        iFrameElement.removeAttribute("tabindex");
+                        WinJS.UI.XYFocus._iframeHelper.unregisterIFrame(iFrameElement);
+                    }
+                };
+                updateTabIndexBasedOnInputModality();
+                document.addEventListener("keyInputModalityChanged", updateTabIndexBasedOnInputModality);
+            }
+
+            iFrameDocument.dir = value.dir;
+            iFrameDocument.body.setAttribute("tabindex", "0");
             if (value.focusBody) {
-                iframeDocument.body.focus();
+                if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+                    if (currentKeyInputModality === "gamepad") {
+                        iFrameElement.focus();
+                    }
+                    else {
+                        iFrameDocument.body.focus();
+                    }
+                }
+                else {
+                    iFrameDocument.body.focus();
+                }
             }
 
             if (value.addStyleSheet && (value.addStyleSheet !== "")) {
-                let fileRef = iframeDocument.head.ownerDocument.createElement("link");
+                let fileRef = iFrameDocument.head.ownerDocument.createElement("link");
                 fileRef.setAttribute("rel", "stylesheet");
                 fileRef.setAttribute("type", "text/css");
                 fileRef.setAttribute("href", value.addStyleSheet);
-                iframeDocument.head.appendChild(fileRef);
+                iFrameDocument.head.appendChild(fileRef);
             }
 
             if (value.frameTitle) {
-                iframeDocument.title = value.frameTitle;
+                iFrameDocument.title = value.frameTitle;
+
+                if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+                    iFrameElement.title = value.frameTitle;
+                }
             }
 
-            if (value.pageDefaultAction) {
-                let lastSelectedElement;
-                function enterKeyDownHandler(ev) {
-                    if (isEnterKey(ev)) {
-                        lastSelectedElement = ev.target;
+            if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+                let setPseudoFocus = () => {
+                    iFrameElement.classList.add("pseudo-focused");
+                    iFrameDocument.body.classList.add("pseudo-focused");
+
+                    if (gamepadLegendEnabled) {
+                        bridge.invoke("CloudExperienceHost.StringResources.makeResourceObject", "oobeCommon", ["GamepadButtonDeselect"]).done((result) => {
+                            let resourceStrings = JSON.parse(result);
+                            bridge.invoke("CloudExperienceHost.AppFrame.setGamepadLegendDisplayOverrideForB", resourceStrings.GamepadButtonDeselect);
+                        });
+                    }
+                };
+
+                let removePseudoFocus = () => {
+                    iFrameElement.classList.remove("pseudo-focused");
+                    iFrameDocument.body.classList.remove("pseudo-focused");
+
+                    if (gamepadLegendEnabled) {
+                        bridge.invoke("CloudExperienceHost.AppFrame.setGamepadLegendDisplayOverrideForB", null);
+                    }
+                };
+
+                // Register keydown/up listeners on the <iframe /> itself to be able to handle:
+                // - `enter` invoking pageDefaultAction
+                // - `GamepadA` "capturing" focus within this iFrame
+                let lastObservedTarget;
+                iFrameElement.addEventListener("keydown", (ev) => {
+                    switch (ev.keyCode) {
+                        // Capture the target element on keyDown so we can check in keyUp if focus may have moved
+                        // between the two events (which is possible if another key is pressed down before this one is raised).
+                        case WinJS.Utilities.Key.enter:
+                        case WinJS.Utilities.Key.GamepadA:
+                            lastObservedTarget = ev.target;
+                            break;
+
+                        default:
+                            break;
                     }
                     return true; // Tells Knockout to allow the default action
-                }
-                iframeDocument.addEventListener("keydown", enterKeyDownHandler);
-                function enterKeyUpHandler(ev) {
-                    if (isPageDefaultActionAllowed(ev, lastSelectedElement)) {
-                        value.pageDefaultAction();
-                        return false;
+                });
+
+                iFrameElement.addEventListener("keyup", (ev) => {
+                    let handled = false;
+
+                    switch (ev.keyCode) {
+                        case WinJS.Utilities.Key.enter:
+                            if (isPageDefaultActionAllowed(ev, lastObservedTarget)) {
+                                value.pageDefaultAction();
+                                handled = true;
+                            }
+                            break;
+
+                        case WinJS.Utilities.Key.GamepadA:
+                            if (ev.target === lastObservedTarget) {
+                                setPseudoFocus();
+                                iFrameDocument.body.focus();
+                                handled = true;
+                            }
+
+                        default:
+                            break;
                     }
-                    return true; // Tells Knockout to allow the default action
+
+                    return !handled;
+                });
+
+                // Register keydown/up listeners on the root document within the iFrame to be able to handle:
+                // - `enter` invoking pageDefaultAction
+                // - `GamepadB` "releasing" captured focus from this iFrame
+                // - `GamepadDPad*` and `GamepadLeftThumbstick*` scrolling the contents of the iFrame
+                // - `Gamepad*Trigger` approximating PageUp/PageDown scrolling of the iFrame
+                let lastObservedTargetWithinIFrame;
+                iFrameDocument.addEventListener("keydown", (ev) => {
+                    let handled = false;
+                    let goingUpOrLeft = false;
+
+                    switch (ev.keyCode) {
+                        // Capture the target element on keyDown so we can check in keyUp if focus may have moved
+                        // between the two events (which is possible if another key is pressed down before this one is raised).
+                        case WinJS.Utilities.Key.enter:
+                        case WinJS.Utilities.Key.GamepadB:
+                            lastObservedTargetWithinIFrame = ev.target;
+                            break;
+
+                        // Approximate what a PageUp/PageDown would scroll
+                        case WinJS.Utilities.Key.GamepadLeftTrigger:
+                            goingUpOrLeft = true;
+                        case WinJS.Utilities.Key.GamepadRightTrigger:
+                            if (iFrameElement.classList.contains("pseudo-focused")) {
+                                iFrameDocument.body.scrollTop += (goingUpOrLeft ? -0.87 : 0.87) * iFrameDocument.defaultView.innerHeight;
+                                handled = true;
+                            }
+                            break;
+
+                        // Approximate what an Up/Down arrow key would scroll
+                        case WinJS.Utilities.Key.GamepadDPadUp:
+                        case WinJS.Utilities.Key.GamepadLeftThumbstickUp:
+                            goingUpOrLeft = true;
+                        case WinJS.Utilities.Key.GamepadDPadDown:
+                        case WinJS.Utilities.Key.GamepadLeftThumbstickDown:
+                            if (iFrameElement.classList.contains("pseudo-focused")) {
+                                iFrameDocument.body.scrollTop += (goingUpOrLeft ? -0.13 : 0.13) * iFrameDocument.defaultView.innerHeight;
+                                handled = true;
+                            }
+                            break;
+
+                        // Approximate what an Left/Right arrow key would scroll
+                        case WinJS.Utilities.Key.GamepadDPadLeft:
+                        case WinJS.Utilities.Key.GamepadLeftThumbstickLeft:
+                            goingUpOrLeft = true;
+                        case WinJS.Utilities.Key.GamepadDPadRight:
+                        case WinJS.Utilities.Key.GamepadLeftThumbstickRight:
+                            if (iFrameElement.classList.contains("pseudo-focused")) {
+                                iFrameDocument.body.scrollLeft += (goingUpOrLeft ? -0.13 : 0.13) * iFrameDocument.defaultView.innerWidth;
+                                handled = true;
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+
+                    return !handled;
+                });
+
+                iFrameDocument.addEventListener("keyup", (ev) => {
+                    let handled = false;
+
+                    switch (ev.keyCode) {
+                        case WinJS.Utilities.Key.enter:
+                            if (isPageDefaultActionAllowed(ev, lastObservedTargetWithinIFrame)) {
+                                value.pageDefaultAction();
+                                handled = true;
+                            }
+                            break;
+
+                        case WinJS.Utilities.Key.GamepadB:
+                            if (ev.target === lastObservedTargetWithinIFrame) {
+                                removePseudoFocus();
+                                iFrameElement.focus();
+
+                                handled = true;
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+
+                    return !handled;
+                });
+
+                // Register focusin/focusout listeners on the root document within the iFrame so that if a user directs
+                // focus in/out of an iFrame through some other means (like touch or mouse), we can still correctly update
+                // the pseudo-focus "state" on this iFrame.
+                iFrameDocument.addEventListener("focusin", (ev) => {
+                    if (currentKeyInputModality === "gamepad") {
+                        setPseudoFocus();
+                    }
+                    return true;
+                }, { capture: true });
+
+                iFrameDocument.addEventListener("focusout", (ev) => {
+                    removePseudoFocus();
+                    return true;
+                }, { capture: true });
+            }
+            else {
+                if (value.pageDefaultAction) {
+                    let lastSelectedElement;
+                    function enterKeyDownHandler(ev) {
+                        if (isEnterKey(ev)) {
+                            lastSelectedElement = ev.target;
+                        }
+                        return true; // Tells Knockout to allow the default action
+                    }
+                    iFrameDocument.addEventListener("keydown", enterKeyDownHandler);
+                    function enterKeyUpHandler(ev) {
+                        if (isPageDefaultActionAllowed(ev, lastSelectedElement)) {
+                            value.pageDefaultAction();
+                            return false;
+                        }
+                        return true; // Tells Knockout to allow the default action
+                    }
+                    iFrameDocument.addEventListener("keyup", enterKeyUpHandler);
                 }
-                iframeDocument.addEventListener("keyup", enterKeyUpHandler);
             }
         }
     };
@@ -482,7 +721,7 @@ define(['lib/knockout', 'legacy/bridge',
         update: function (element, valueAccessor, allBindings) {
             let value = ko.utils.unwrapObservable(valueAccessor());
             if (value.content && value.dir) {
-                let iframeDocument = element.contentWindow.document;
+                let iFrameDocument = element.contentWindow.document;
 
                 if (value.preventLinkNavigation) {
                     // Prevent navigation from loaded iframe content within the iframe.
@@ -495,7 +734,7 @@ define(['lib/knockout', 'legacy/bridge',
                             event.srcElement.initialLoadComplete = true;
                         }
                         else if (event.srcElement.needReload) {
-                            KnockoutHelpers.loadIframeContent(event.srcElement.contentWindow.document, value);
+                            KnockoutHelpers.loadIframeContent(element, event.srcElement.contentWindow.document, value);
                             event.srcElement.needReload = false;
                         }
                         else {
@@ -506,7 +745,7 @@ define(['lib/knockout', 'legacy/bridge',
                     }
                     element.addEventListener("load", loadHandler);
                 }
-                KnockoutHelpers.loadIframeContent(iframeDocument, value);
+                KnockoutHelpers.loadIframeContent(element, iFrameDocument, value);
             }
         }
     };

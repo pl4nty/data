@@ -94,7 +94,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
 
                     let learnMoreIFrame = document.getElementById("learnMoreIFrame");
                     let doc = learnMoreIFrame.contentWindow.document;
-                    oobeSettingsData.updateLearnMoreContentForRender(doc, document.documentElement.dir, isInternetAvailable, resources.HelloLearnMoreNavigationError, targetPersonality, "WindowsHello");
+                    oobeSettingsData.updateLearnMoreContentForRender(learnMoreIFrame, doc, document.documentElement.dir, isInternetAvailable, resources.HelloLearnMoreNavigationError, targetPersonality, "WindowsHello");
                     this.processingFlag(false);
                 }
             };
