@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\5ecd72ea59d56\1.luac 
+-- Command line: lua\!InfrastructureShared\644d73507b100\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -12,13 +12,13 @@ if l_0_1 ~= nil then
   l_0_1 = (string.lower)(l_0_1)
 end
 local l_0_2 = {}
--- DECOMPILER ERROR at PC25: No list found for R2 , SetList fails
+-- DECOMPILER ERROR at PC26: No list found for R2 , SetList fails
 
--- DECOMPILER ERROR at PC26: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC27: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC27: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC28: Overwrote pending register: R4 in 'AssignReg'
 
--- DECOMPILER ERROR at PC28: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC29: Overwrote pending register: R5 in 'AssignReg'
 
 if not ("mshta")("powershell", "curl") then
   return mp.CLEAN
@@ -27,6 +27,8 @@ local l_0_3 = (mp.GetParentProcInfo)()
 do
   if l_0_3 ~= nil and l_0_3.image_path ~= nil then
     local l_0_4 = (string.lower)(l_0_3.image_path)
+    -- DECOMPILER ERROR at PC48: Overwrote pending register: R6 in 'AssignReg'
+
     if l_0_4:match("([^\\]+)$") == "explorer.exe" then
       return mp.INFECTED
     end
