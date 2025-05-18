@@ -7,54 +7,25 @@
 
 do
   if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_3, l_0_4, l_0_6 = nil, nil, nil
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC18: Confused about usage of register: R6 in 'UnsetPending'
+
+      if (R6_PC18:len() < 7 or (string.lower)((string.sub)(R6_PC18, -9)) == "mshta.exe" or (string.lower)((string.sub)(R6_PC18, -7)) ~= "cmd.exe") and (sysio.IsFileExists)(R6_PC18) then
+        (bm.add_related_file)(R6_PC18)
+      end
+    end
   end
   do
-    if (this_sigattrlog[2]).matched then
-      local l_0_1, l_0_5, l_0_7 = , (this_sigattrlog[2]).utf8p1
-    end
-    do
-      if (this_sigattrlog[3]).matched then
-        local l_0_2, l_0_8 = nil
-      end
-      -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC26: Confused about usage of register: R1 in 'UnsetPending'
-
-      if l_0_2 == nil or l_0_8 == nil or (this_sigattrlog[3]).utf8p1 == nil then
-        return mp.CLEAN
-      end
-      -- DECOMPILER ERROR at PC33: Confused about usage of register: R2 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC33: Confused about usage of register: R1 in 'UnsetPending'
-
-      if l_0_8 ~= (this_sigattrlog[3]).utf8p1 then
-        return mp.CLEAN
-      end
-      -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
-
-      local l_0_9, l_0_10 = nil
-      local l_0_11, l_0_12 = , l_0_2:match("(.+\\)([^\\]+)$")
-      if l_0_12 ~= l_0_10:match("(.+\\)([^\\]+)$") then
-        return mp.CLEAN
-      end
-      local l_0_13 = nil
-      -- DECOMPILER ERROR at PC55: Overwrote pending register: R8 in 'AssignReg'
-
-      local l_0_14 = nil
-      if (string.match)(R8_PC53, "(.+)(%.[^%.]*)") == nil or R8_PC53 == nil then
-        R9_PC58 = mp
-        R9_PC58 = R9_PC58.CLEAN
-        return R9_PC58
-      end
-      R9_PC58 = string
-      R9_PC58 = R9_PC58.match
-      R9_PC58 = R9_PC58(R8_PC53, "(.+)%(%d%d%d%d%)$")
-      if R9_PC58 ~= (string.match)(R8_PC53, "(.+)(%.[^%.]*)") then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
+    return mp.INFECTED
   end
 end
 

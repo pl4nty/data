@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[2]).Name == ".sedata" and (pesecs[2]).Characteristics == 1744830496 then
+if peattributes.ismsil == true and (pesecs[2]).Name == ".sdata" and (pesecs[2]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,29 +3,29 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
     local l_0_0, l_0_1 = nil
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
 
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+  local l_0_2 = nil
+  local l_0_3 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
+  for l_0_7,l_0_8 in pairs({"\\windows\\system32\\"}) do
+    local l_0_4 = nil
+    -- DECOMPILER ERROR at PC38: Confused about usage of register: R7 in 'UnsetPending'
 
-      if (sysio.IsFileExists)(R6_PC25) and (string.find)(".hta", (string.sub)((string.lower)(R6_PC25), -4), 1, true) then
-        (bm.add_threat_file)(R6_PC25)
-      end
+    if #R7_PC38 < #l_0_3 and (string.sub)(l_0_3, -#R7_PC38) == R7_PC38 then
+      return mp.CLEAN
     end
   end
-  do
-    return mp.INFECTED
-  end
+  return mp.INFECTED
 end
 

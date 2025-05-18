@@ -3,17 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p1 == nil or (string.lower)((string.sub)((this_sigattrlog[3]).utf8p1, -11)) == "\\target.lnk" then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
-local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-local l_0_2 = (string.find)(l_0_1[2], ",", 1, true)
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (string.sub)(l_0_1[2], 1, l_0_2 - 1)
-;
-(mp.ReportLowfi)(l_0_3, 503412062)
-return mp.INFECTED
 

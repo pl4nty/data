@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 and (hstrlog[1]).matched then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+  return mp.CLEAN
+end
+if l_0_0.integrity_level < ((MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)).IntegrityLevel then
   return mp.INFECTED
 end
-;
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win64/Rovnix.C")
 return mp.CLEAN
 

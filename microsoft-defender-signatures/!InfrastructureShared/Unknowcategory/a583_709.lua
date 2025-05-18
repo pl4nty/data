@@ -3,31 +3,27 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+if peattributes.hasappendeddata then
+  local l_0_0 = (mp.getfilesize)()
+  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
 
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
 
-  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
 
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasSoftbiturlUrl") then
-      (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromSoftbiturl") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromSoftbiturl", 3600)
-        return mp.INFECTED
-      end
+  if (l_0_0 >= 6402040 and l_0_0 <= 6591488 and pehdr.SizeOfImage == 622592) or l_0_0 < 57671680 or l_0_0 >= 14188544 and l_0_0 <= 14254080 and pehdr.SizeOfImage == 921600 then
+    local l_0_1 = pehdr.NumberOfSections
+    local l_0_2 = (pesecs[l_0_1]).PointerToRawData + (pesecs[l_0_1]).SizeOfRawData
+    ;
+    (mp.readprotection)(false)
+    local l_0_3 = (mp.readfile)(l_0_2, 16)
+    if l_0_3 == "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" then
+      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
+      return mp.INFECTED
     end
   end
+end
+do
   return mp.CLEAN
 end
 

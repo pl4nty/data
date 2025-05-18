@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.suspicious_falign == true and peattributes.epoutofimage == true and peattributes.hasappendeddata == true then
-  return mp.INFECTED
+if peattributes.isdll and (mp.getfilesize)() < 390000 then
+  if mp.HSTR_WEIGHT >= 11 then
+    return mp.SUSPICIOUS
+  end
+  if mp.HSTR_WEIGHT >= 10 then
+    (pe.set_peattribute)("hstr_exhaustive", true)
+    ;
+    (pe.reemulate)()
+  end
+  return mp.LOWFI
 end
 return mp.CLEAN
 

@@ -29,11 +29,11 @@ end
 if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
   add_related_file_wrapper((this_sigattrlog[1]).utf8p2)
 end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p1)
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[3]).utf8p1)
 end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p2)
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[3]).utf8p2)
 end
 return mp.INFECTED
 

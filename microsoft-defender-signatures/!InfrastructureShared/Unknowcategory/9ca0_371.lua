@@ -3,15 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
-  local l_0_1 = (string.len)(l_0_0)
-  local l_0_2 = (string.lower)((this_sigattrlog[3]).p1)
-  if (string.find)(l_0_2, l_0_0, (string.len)(l_0_2) - l_0_1, true) then
-    return mp.INFECTED
-  end
+if peattributes.is_process then
+  return mp.CLEAN
 end
 do
+  if peattributes.isexe == true and pehdr.NumberOfSections == 7 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
 

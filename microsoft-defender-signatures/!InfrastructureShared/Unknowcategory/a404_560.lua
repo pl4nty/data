@@ -3,30 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (sysio.IsFileExists)(l_0_7) then
-        (bm.add_related_file)(l_0_7)
-      end
-    end
+if (bm.GetSignatureMatchDuration)() > 80000000 then
+  return mp.CLEAN
+end
+if (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
+  local l_0_0, l_0_1 = (string.match)((this_sigattrlog[2]).utf8p1, ";targetprocessp(pid:%d%d+):(%d%d%d%d+)$")
+  local l_0_2, l_0_3 = (string.match)((this_sigattrlog[3]).utf8p1, ";targetprocessp(pid:%d%d+):(%d%d%d%d+)$")
+  if l_0_0 == l_0_2 and l_0_1 == l_0_3 then
+    local l_0_4 = (string.format)("%s,ProcessStart:%s", l_0_0, l_0_1)
+    ;
+    (bm.trigger_sig)("ProcessInjectedBy", "BMGenCodeInjector.C", l_0_4)
   end
 end
 do
-  if l_0_1 ~= nil then
-    for l_0_11,l_0_12 in ipairs(l_0_1) do
-      if l_0_12.image_path ~= nil then
-        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
-        if (sysio.IsFileExists)(l_0_13) and (mp.IsKnownFriendlyFile)(l_0_13, true, false) then
-          (bm.add_related_file)(l_0_13)
-        end
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
 

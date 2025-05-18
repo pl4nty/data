@@ -3,17 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-    if l_0_7 == 1 then
-      local l_0_8 = (string.lower)(l_0_6.image_path)
-      if (string.find)(l_0_8, "\\wscript.exe", 1, true) or (string.find)(l_0_8, "\\cscript.exe", 1, true) then
-        return mp.INFECTED
-      end
+do
+  if (mp.get_mpattribute)("RPF:SmartAssembly") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+    local l_0_0 = (pe.get_versioninfo)()
+    if l_0_0 ~= nil and (string.find)((string.lower)(l_0_0.InternalName), "luckyleap", 1, true) then
+      (mp.set_mpattribute)("Trojan:Win32/LuckyLeap")
     end
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

@@ -3,10 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EIP)
-local l_0_1 = (pe.get_regval)(pe.REG_ESP)
-if peattributes.isdll and l_0_1 < l_0_0 and l_0_0 - l_0_1 < 512 and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
-  return mp.LOWFI
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = {}
+local l_0_1 = {}
+l_0_1.sig = "f\001Úk\210\003f÷ÒÁ\202\005‰×0\016"
+l_0_1.xray_type = 3
+l_0_1.bytes_to_decrypt = 0
+-- DECOMPILER ERROR at PC12: No list found for R0 , SetList fails
+
+l_0_1 = pe
+l_0_1 = l_0_1.xray_block
+local l_0_2 = l_0_0
+local l_0_3 = 1
+local l_0_4 = 2
+local l_0_5 = 0
+do
+  local l_0_6 = 256
+  do return l_0_1(l_0_2, l_0_3, l_0_4, l_0_5, l_0_6) end
+  -- DECOMPILER ERROR at PC22: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
+end
 

@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or #l_0_0 < 1 then
-  return mp.CLEAN
+if peattributes.isvbnative and peattributes.dirty_wx_branch and peattributes.hstr_exhaustive and peattributes.hasappendeddata then
+  return mp.INFECTED
 end
-if (string.find)((string.lower)(l_0_0), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpcmdrun.exe", 1, true) then
+if not peattributes.suspicious_timestamp and not peattributes.suspicious_image_version then
   return mp.CLEAN
 end
 return mp.INFECTED

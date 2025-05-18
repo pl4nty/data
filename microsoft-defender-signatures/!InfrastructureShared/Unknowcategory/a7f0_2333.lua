@@ -3,60 +3,78 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = nil
-if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) == nil or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\msexchangehmworker.exe", -23, true) or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), "\\gameguard\\gamemon.des", -22, true) then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P3
+
+if (((((((((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or (hstrlog[17]).matched or not (hstrlog[19]).matched) and (hstrlog[25]).matched) or not (hstrlog[28]).matched) and (hstrlog[37]).matched) or not (hstrlog[55]).matched) and (hstrlog[58]).matched) or not (hstrlog[66]).matched) and (hstrlog[68]).matched) or (hstrlog[18]).matched) and 1 or 0) + ((hstrlog[24]).matched and 1 or 0) + ((hstrlog[27]).matched and 1 or 0) + ((hstrlog[36]).matched and 1 or 0) + ((hstrlog[54]).matched and 1 or 0) + ((hstrlog[57]).matched and 1 or 0) + ((hstrlog[65]).matched and 1 or 0) + ((hstrlog[67]).matched and 1 or 0) + ((hstrlog[69]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
-local l_0_3, l_0_4 = nil
-if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) ~= nil then
-  for l_0_8,l_0_9 in ipairs(R6_PC48) do
-    local l_0_5, l_0_6 = (bm.get_process_relationships)()
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R9 in 'UnsetPending'
-
-    if R9_PC50.image_path ~= nil and (R9_PC50.reason == bm.RELATIONSHIP_INJECTION or R9_PC50.reason == bm.RELATIONSHIP_CREATED) then
-      if (string.find)((string.lower)(R9_PC50.image_path), "\\gameguard\\gamemon64.des", -24, true) or (string.find)((string.lower)(R9_PC50.image_path), "\\system32\\mrt.exe", -17, true) or (string.find)((string.lower)(R9_PC50.image_path), "\\asep_inv.exe", -13, true) or (string.find)((string.lower)(R9_PC50.image_path), "\\mpsigstub.exe", -14, true) or (string.find)((string.lower)(R9_PC50.image_path), "\\gameguard\\gamemon.des", -22, true) then
-        return mp.CLEAN
-      end
-      if (string.find)((string.lower)(R9_PC50.image_path), "\\nslookup.exe", -13, true) then
-        l_0_3 = R9_PC50.ppid
-      end
-    end
-  end
-end
-do
-  -- DECOMPILER ERROR at PC127: Confused about usage of register: R3 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC130: Confused about usage of register: R3 in 'UnsetPending'
-
-  if l_0_5 ~= nil then
-    for l_0_14,l_0_15 in ipairs(l_0_5) do
-      local l_0_11, l_0_12 = nil
-      -- DECOMPILER ERROR at PC133: Confused about usage of register: R9 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC140: Confused about usage of register: R9 in 'UnsetPending'
-
-      if R9_PC50.image_path ~= nil then
-        l_0_2 = (string.lower)((MpCommon.PathToWin32Path)(R9_PC50.image_path))
-        if (string.find)(l_0_2, "\\mcafee\\systemcore\\mfehcs.exe", -29, true) or (string.find)(l_0_2, "(x86)\\pharossystems\\printscout\\ctskmstr.exe", -43, true) or (string.find)(l_0_2, "(x86)\\hp\\printscout\\ctskmstr.exe", -32, true) or (string.find)(l_0_2, "\\mcafee\\endpoint security\\threat prevention\\mfetp.exe", -53, true) or (string.find)(l_0_2, "\\anti-malware\\mbamservice.exe", -29, true) or (string.find)(l_0_2, "\\cnext\\radeonsoftware.exe", -25, true) or (string.find)(l_0_2, "(x86)\\panda security\\wac\\psanhost.exe", -37, true) or (string.find)(l_0_2, "(x86)\\cloudvolumes\\agent\\svservice.exe", -38, true) or (string.find)(l_0_2, "\\gameguard\\gamemon64.des", -24, true) or (string.find)(l_0_2, "\\gameguard\\gamemon.des", -22, true) or (string.find)(l_0_2, "(x86)\\f-secure\\server security\\", 1, true) then
-          return mp.CLEAN
-        end
-      end
-      if (sysio.IsFileExists)(l_0_2) and not (mp.IsKnownFriendlyFile)(l_0_2, true, false) then
-        (bm.add_related_file)(l_0_2)
-      end
-    end
-  end
-  do
-    if (sysio.IsFileExists)(l_0_4) and not (mp.IsKnownFriendlyFile)(l_0_4, true, false) and l_0_3 ~= nil then
-      (bm.request_SMS)(l_0_3, "h+")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1)
-      ;
-      (bm.add_related_file)(l_0_4)
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
-end
+return mp.CLEAN
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-  (pe.set_peattribute)("disable_apicall_limit", true)
+if peattributes.isexe == true and peattributes.no_security == true and (pesecs[5]).Name == "vnbvhyaf" and (pesecs[6]).Name == "evpaqbyf" then
   return mp.INFECTED
 end
 return mp.CLEAN

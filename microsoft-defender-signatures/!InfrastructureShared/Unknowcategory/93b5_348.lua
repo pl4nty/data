@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[5]).Name == ".reloc" and (pesecs[5]).Characteristics == 1107296320 and (mp.getfilesize)() >= 9000000 and (mp.getfilesize)() <= 15000000 then
+if peattributes.isexe == true and (pesecs[7]).Name == ".idata" and (pesecs[7]).Characteristics == 1073741888 and (mp.getfilesize)() >= 400000 and (mp.getfilesize)() <= 4000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

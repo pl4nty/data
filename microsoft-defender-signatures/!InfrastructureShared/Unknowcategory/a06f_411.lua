@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (bm.get_current_process_startup_info)()
-  if l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-    local l_0_1 = (this_sigattrlog[1]).utf8p2
-    if l_0_1 ~= nil and (string.len)(l_0_1) > 2 then
-      return mp.INFECTED
-    end
-  end
-end
 do
+  if (pesecs[6]).Name == ".Sharper" and (pesecs[7]).Name == ".Sharper" and (pesecs[8]).Name == ".Sharper" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
 

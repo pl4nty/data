@@ -3,42 +3,66 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\magnify.exe$") then
-  return mp.CLEAN
-end
-do
-  if (string.find)(l_0_0, "\\systray.exe$") then
-    local l_0_1 = (versioning.GetOrgID)()
-    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
-      return mp.CLEAN
-    end
-  end
-  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
-  if l_0_3 == nil or #l_0_3 == 0 then
-    return mp.CLEAN
-  end
-  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\magnify.exe")
-  if l_0_4 ~= nil then
-    local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
-    if l_0_5 == nil or (string.len)(l_0_5) <= 1 then
-      return mp.CLEAN
-    end
+local l_0_0 = 0
+local l_0_1 = ""
+if (this_sigattrlog[1]).matched then
+  l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p2)
   else
-    do
-      do return mp.CLEAN end
-      local l_0_6, l_0_7 = (bm.get_process_relationships)()
-      for l_0_11,l_0_12 in ipairs(l_0_6) do
-        if l_0_12.image_path ~= nil then
-          local l_0_13 = (string.lower)(l_0_12.image_path)
-          if (string.find)(l_0_13, "atbroker.exe", 1, true) or (string.find)(l_0_13, "utilman.exe", 1, true) then
-            return mp.INFECTED
-          end
+    if (this_sigattrlog[3]).matched then
+      l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p2)
+    else
+      if (this_sigattrlog[4]).matched then
+        l_0_1 = (string.lower)((this_sigattrlog[4]).utf8p2)
+      else
+        if (this_sigattrlog[5]).matched then
+          l_0_1 = (string.lower)((this_sigattrlog[5]).utf8p2)
+        else
+          return mp.CLEAN
         end
       end
-      return mp.CLEAN
     end
   end
 end
+if l_0_1 ~= "" then
+  if (string.find)(l_0_1, " /mhp ", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /mds ", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /mnt ", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /aflt=", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /ext=", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /ext:", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /sfns ", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /rsf= ", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /lrun=", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /noadmin", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+  if (string.find)(l_0_1, " /flow=", 1, true) then
+    l_0_0 = l_0_0 + 1
+  end
+end
+if l_0_0 >= 5 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

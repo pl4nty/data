@@ -3,6 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(bm.set_scan_param)((mp.bitor)((mp.bitor)(bm.SCAN_PARAMETERS_DEEP_ANALYSIS, bm.SCAN_PARAMETERS_VMM_GROW), bm.SCAN_PARAMETERS_HSTR_EXHAUSTIVE))
-return mp.INFECTED
+local l_0_0 = (mp.getfilename)()
+l_0_0 = (l_0_0.lower)(l_0_0)
+if (string.find)(l_0_0, ".py", 1, true) or (string.find)(l_0_0, ".ps1", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

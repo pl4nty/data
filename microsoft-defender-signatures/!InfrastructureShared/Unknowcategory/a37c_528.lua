@@ -3,28 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
-  return mp.CLEAN
+local l_0_0 = false
+local l_0_1 = false
+if (hstrlog[1]).hitcount >= 1 or (hstrlog[2]).hitcount >= 1 or (hstrlog[3]).hitcount >= 1 then
+  l_0_0 = true
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if not l_0_1 or #l_0_1 <= 18 then
-  return mp.CLEAN
+if (hstrlog[4]).hitcount >= 1 or (hstrlog[5]).hitcount >= 1 or (hstrlog[6]).hitcount >= 1 then
+  l_0_1 = true
 end
-l_0_1 = (string.lower)(l_0_1)
-local l_0_2 = (string.match)(l_0_1, "%-p \"?([%d]+)\"? %-r \"?([%d]+)\"?")
-if not l_0_2 then
-  return mp.CLEAN
+if (hstrlog[7]).hitcount >= 1 or (hstrlog[8]).hitcount >= 1 or (hstrlog[9]).hitcount >= 1 then
+  l_0_1 = true
 end
-do
-  local l_0_3 = l_0_1 or 999
-  l_0_2 = tonumber(l_0_2)
-  -- DECOMPILER ERROR at PC43: Confused about usage of register: R3 in 'UnsetPending'
-
-  local l_0_4 = tonumber(l_0_3)
-  local l_0_5 = (mp.GetPPidFromPid)(l_0_2)
-  ;
-  (MpCommon.SetTaintedProcess)(l_0_5, l_0_4)
+if (hstrlog[10]).hitcount >= 1 or (hstrlog[11]).hitcount >= 1 or (hstrlog[12]).hitcount >= 1 then
+  l_0_1 = true
+end
+if l_0_0 and l_0_1 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

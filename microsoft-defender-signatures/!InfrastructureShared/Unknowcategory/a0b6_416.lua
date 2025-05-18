@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true then
-  if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\openfiles.exe", 1, true) or (string.find)(l_0_0, "\\microsoft\\teams\\current\\teams.exe", 1, true) then
+    return mp.CLEAN
   end
-  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-  end
+  ;
+  (bm.add_action)("EmsScan", 5000)
   return mp.INFECTED
 end
 return mp.CLEAN

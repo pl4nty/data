@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
+if peattributes.ismsil == true and (mp.get_mpattribute)("LUA:FileSizeLE2000.A") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
   return mp.INFECTED
-end
-if (hstrlog[1]).matched and (hstrlog[2]).matched then
-  return mp.INFECTED
-end
-if (hstrlog[1]).matched or (hstrlog[2]).matched then
-  return mp.LOWFI
 end
 return mp.CLEAN
 

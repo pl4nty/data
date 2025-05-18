@@ -5,9 +5,9 @@
 -- function num : 0
 (pe.mmap_patch_va)(pevars.sigaddr + 6, "")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 11, "")
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "\235")
+(pe.mmap_patch_va)(pevars.sigaddr + 18, "\235")
 ;
 (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED

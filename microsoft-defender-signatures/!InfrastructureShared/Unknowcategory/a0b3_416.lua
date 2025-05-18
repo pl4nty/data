@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (pe.get_regval)(pe.REG_EBX) ~= 2147348480 then
-  return mp.CLEAN
+if peattributes.isexe == true then
+  if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
+  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+  end
+  return mp.INFECTED
 end
-if (string.byte)((pe.mmap_va)(pevars.sigaddr + 13, 1)) == 117 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 13, "")
-else
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 13, "\235")
-end
-return mp.INFECTED
+return mp.CLEAN
 

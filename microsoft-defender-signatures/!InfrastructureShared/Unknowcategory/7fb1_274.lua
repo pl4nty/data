@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 2 and (pesecs[2]).PointerToRawData == 2701144064 and pehdr.SizeOfImage < (pesecs[2]).PointerToRawData then
-  return mp.INFECTED
+if (mp.shr32)(pehdr.TimeDateStamp, 22) and (mp.shl32)(pehdr.TimeDateStamp, 22) == 0 then
+  (mp.changedetectionname)(805306369)
 end
-return mp.CLEAN
+return mp.INFECTED
 

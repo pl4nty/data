@@ -3,20 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.NumberOfSections >= 6 then
-  local l_0_0 = 0
-  local l_0_1 = 0
-  for l_0_5 = 2, pehdr.NumberOfSections do
-    l_0_0 = l_0_0 + (pesecs[l_0_5]).SizeOfRawData
-    if l_0_1 < (pesecs[l_0_5]).SizeOfRawData then
-      l_0_1 = (pesecs[l_0_5]).SizeOfRawData
-    end
-  end
-  if (l_0_0 - l_0_1) * 100 < l_0_1 * 15 then
-    return mp.INFECTED
-  end
-end
-do
+if peattributes.is_process then
   return mp.CLEAN
 end
+if peattributes.isdriver then
+  return mp.CLEAN
+end
+if peattributes.isdll then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
+if peattributes.isexe then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

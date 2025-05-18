@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 83 and epcode[2] == 85 and epcode[3] == 187 and epcode[4] == 149 and epcode[5] == 31 and peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+if peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Name == ".htext" and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096480 and ((pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3758096448 or (pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3791650880) then
   return mp.INFECTED
 end
 return mp.CLEAN

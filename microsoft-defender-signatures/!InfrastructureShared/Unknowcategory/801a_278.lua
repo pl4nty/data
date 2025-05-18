@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-if peattributes.ismsil == true and peattributes.isdll then
-  return mp.INFECTED
+if not peattributes.suspicious_image_version then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.executes_from_dynamic_memory then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

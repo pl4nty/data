@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.amd64_image == true and peattributes.isexe == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil and (l_0_5.Signers).IsValid == true then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if (mp.getfilesize)() > 293417 then
   return mp.CLEAN
 end
+;
+(mp.set_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.2")
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

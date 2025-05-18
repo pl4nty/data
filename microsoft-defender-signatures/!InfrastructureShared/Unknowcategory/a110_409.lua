@@ -11,7 +11,7 @@ if pehdr.NumberOfSections ~= 11 then
 end
 ;
 (mp.readprotection)(false)
-local l_0_0 = (mp.readfile)(544, 6)
+local l_0_0 = (mp.readfile)(640, 6)
 if (mp.crc32)(-1, l_0_0, 1, 6) ~= 3246015244 then
   return mp.CLEAN
 end

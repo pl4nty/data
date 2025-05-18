@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 100 and l_0_0 <= 10240 then
-  local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_PATH)
-  if l_0_1 == nil or l_0_1 == "" then
-    return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
+  if l_0_2 ~= nil and (string.find)(l_0_3, l_0_2) then
+    return mp.INFECTED
   end
-  local l_0_2 = "/opt/"
-  if l_0_1:sub(1, #l_0_2) == l_0_2 then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
 end
 do
   return mp.CLEAN

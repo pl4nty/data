@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if ((string.match)(l_0_0, "%%localappdata%%\\%a+\\%a+%.exe$") or (string.match)(l_0_0, "%%localappdata%%\\{%x+%-%x+%-%x+%-%x+%-%x+}\\%a+%.exe$")) and (string.match)(l_0_0, "\\[b-t][aeiou][b-t][aeiou]%a+%.exe$") then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -13) == "\\iexplore.exe" or (string.sub)(l_0_0, -11) == "\\chrome.exe" or (string.sub)(l_0_0, -18) == "\\microsoftedge.exe" or (string.sub)(l_0_0, -20) == "\\microsoftedgecp.exe" or (string.sub)(l_0_0, -12) == "\\firefox.exe" then
   return mp.CLEAN
 end
+return mp.INFECTED
 

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpSimulateParanoid")
-;
-(mp.set_mpattribute)("MpEnableCOM")
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
-;
-(pe.reemulate)()
+if (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 1048000 and peattributes.no_security == true then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

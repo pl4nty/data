@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
+do
+  if peattributes.isexe == true and (pesecs[8]).Name == ".vmp0" then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 17920 or l_0_0 > 70656 then
-  return mp.CLEAN
-end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "\001\000\000")
-return mp.INFECTED
 

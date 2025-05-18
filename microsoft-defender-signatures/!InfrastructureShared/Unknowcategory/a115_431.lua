@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.suspicious_falign == true and peattributes.no_comruntime == true and peattributes.no_delayimport == true and peattributes.no_uidata == true then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
+  if l_0_2 ~= nil and (string.find)(l_0_3, l_0_2) then
+    (mp.TriggerScanResource)("folder", "C:\\Windows\\System32\\Tasks\\")
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.LOWFI
+end
 

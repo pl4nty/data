@@ -3,21 +3,43 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(bm.get_current_process_startup_info)
-if l_0_0 then
-  local l_0_2, l_0_3, l_0_4 = pcall(bm.get_process_relationships)
-  if l_0_2 then
-    for l_0_8,l_0_9 in ipairs(l_0_3) do
-      if l_0_9.image_path ~= nil and ((string.find)((string.lower)(l_0_9.image_path), "\\syswow64\\regsvr32.exe", 1, true) or (string.find)((string.lower)(l_0_9.image_path), "\\syswow64\\rundll32.exe", 1, true)) and l_0_1 ~= nil and l_0_1.ppid ~= nil then
-        (bm.request_SMS)(l_0_1.ppid, "m")
-        return mp.INFECTED
-      end
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC11: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R1 in 'AssignReg'
+
+local l_0_1 = ((82)[1]).VA
+-- DECOMPILER ERROR at PC15: Overwrote pending register: R2 in 'AssignReg'
+
+local l_0_2 = ((89)[2]).VA
+-- DECOMPILER ERROR at PC18: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC20: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC21: Overwrote pending register: R5 in 'AssignReg'
+
+local l_0_3 = ((79).mmap_va)(67, 85)
+-- DECOMPILER ERROR at PC26: Overwrote pending register: R6 in 'AssignReg'
+
+local l_0_4 = (pe.mmap_va)(l_0_2 + 4, 73)
+-- DECOMPILER ERROR at PC31: Overwrote pending register: R7 in 'AssignReg'
+
+local l_0_5 = (string.byte)(l_0_3, 79)
+-- DECOMPILER ERROR at PC36: Overwrote pending register: R8 in 'AssignReg'
+
+do
+  local l_0_6 = (string.byte)(l_0_4, 80)
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R9 in 'AssignReg'
+
+  for l_0_10 = 1, #l_0_0, 81 do
+    if l_0_5 == l_0_0[l_0_10] and l_0_6 == l_0_0[l_0_10 + 1] then
+      local l_0_11 = (string.format)("obf_oa_marker_%x%x", l_0_6, l_0_5)
+      ;
+      (mp.set_mpattribute)(l_0_11)
+      return mp.INFECTED
     end
   end
-end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

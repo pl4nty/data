@@ -3,19 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["winword.exe"] = true
-  l_0_3["excel.exe"] = true
-  l_0_3["powerpnt.exe"] = true
-  if l_0_3[l_0_2] then
+do
+  if peattributes.x86_image == true and peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil and (l_0_5.Signers).IsValid == true then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
-end
-do
   return mp.CLEAN
 end
 

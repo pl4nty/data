@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 13 and (mp.getfilesize)() >= 5200000 and (mp.getfilesize)() <= 5850000 and (pesecs[8]).Name == ".idata" and (pesecs[9]).Name == ".tls" and (pesecs[13]).Name == ".reloc" then
+if peattributes.x86_image == true and peattributes.hasexports == true and peattributes.epinfirstsect == true and peattributes.suspicious_linker_version == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true then
   return mp.INFECTED
 end
 return mp.CLEAN

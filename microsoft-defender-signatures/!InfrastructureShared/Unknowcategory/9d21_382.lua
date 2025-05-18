@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] ~= 106 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections < 5 or (pesecs[5]).Name ~= ".import" then
+if l_0_0:find("\\trend micro\\", 1, true) or l_0_0:find("\\smex_master.exe", 1, true) or l_0_0:find("\\windows\\ccm\\ccmexec.exe", 1, true) then
   return mp.CLEAN
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 2142642642) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

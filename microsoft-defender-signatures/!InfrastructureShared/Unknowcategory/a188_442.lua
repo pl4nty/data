@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 do
-  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 3272704 and (mp.getfilesize)() < 3297280 then
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 163840 and (mp.getfilesize)() < 188416 then
     local l_0_0 = (mp.GetCertificateInfo)()
     for l_0_4,l_0_5 in pairs(l_0_0) do
       if l_0_5.Signers ~= nil then

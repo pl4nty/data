@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (l_0_0 >= 1500000 and l_0_0 <= 2000000 and (pesecs[1]).Name == "UPX0") or l_0_0 >= 3300000 and l_0_0 <= 4000000 then
+if pehdr.NumberOfSections == 8 and (pesecs[1]).Name == "CODE" and (pesecs[2]).Name == "DATA" then
   return mp.INFECTED
 end
 return mp.CLEAN

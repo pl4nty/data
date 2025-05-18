@@ -3,26 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 19
-if (string.byte)((pe.mmap_va)(pevars.sigaddr + 13, 1)) ~= 232 then
-  l_0_0 = 20
-end
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 16)
-if (string.find)(l_0_1, "ƒÁ", 1, true) == nil and (string.find)(l_0_1, "ƒé", 1, true) == nil and (string.find)(l_0_1, "ƒê", 1, true) == nil and (string.find)(l_0_1, "ƒë", 1, true) == nil and (string.find)(l_0_1, "ƒî", 1, true) == nil and (string.find)(l_0_1, "\128,", 1, true) ~= nil then
-  l_0_0 = l_0_0 - 1
-  -- DECOMPILER ERROR at PC81: Confused about usage of register: R2 in 'UnsetPending'
-
-  local l_0_2, l_0_3 = (string.find)(l_0_1, "\128,", 1, true) + 1
+if (this_sigattrlog[6]).matched == false and (this_sigattrlog[7]).matched == false then
+  return mp.CLEAN
 end
 do
-  -- DECOMPILER ERROR at PC83: Confused about usage of register: R2 in 'UnsetPending'
+  if not (this_sigattrlog[6]).utf8p1 then
+    local l_0_0 = (this_sigattrlog[7]).utf8p1
+  end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
 
-  for l_0_7 = 1, l_0_2 - 1 do
-    local l_0_4 = nil
-    -- DECOMPILER ERROR at PC91: Confused about usage of register: R6 in 'UnsetPending'
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
 
+  local l_0_1 = (string.lower)(l_0_0)
+  if l_0_1 == nil or (string.find)(l_0_1, "c:\\", 1, true) == nil then
+    return mp.CLEAN
+  end
+  if (sysio.IsFileExists)(l_0_1) then
+    (bm.add_related_file)(l_0_1)
+  end
+  local l_0_2 = (bm.get_current_process_startup_info)()
+  if l_0_2 ~= nil and l_0_2.ppid ~= nil then
+    (bm.request_SMS)(l_0_2.ppid, "m")
     ;
-    (pe.mmap_patch_va)(pevars.sigaddr + (l_0_0) + 1 - 1, "\144")
+    (bm.add_action)("SmsAsyncScanEvent", 1)
   end
   return mp.INFECTED
 end

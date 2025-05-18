@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\device\\harddiskvolume.\\windows\\system32\\ie4uinit%.exe", 1, false) ~= nil or (string.find)(l_0_0, "\\device\\harddiskvolume.\\windows\\syswow64\\ie4uinit%.exe", 1, false) ~= nil then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("mroot", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("temproot", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("-root", 1, true) then
   return mp.CLEAN
 end
 return mp.INFECTED

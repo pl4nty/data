@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "truesight" and (mp.getfilesize)() < 70000 then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\mozilla firefox\\", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -4,11 +4,14 @@
 -- params : ...
 -- function num : 0
 do
-  if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-    local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 48)
-    if (mp.readu_u32)(l_0_0, 18) ~= 0 then
-      return mp.INFECTED
+  if peattributes.isvbnative == true and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

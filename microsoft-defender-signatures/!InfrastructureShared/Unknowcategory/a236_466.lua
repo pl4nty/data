@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  (mp.readprotection)(false)
-  local l_0_0 = (mp.readfile)(0, (mp.getfilesize)())
-  local l_0_1 = (pe.foffset_va)((hstrlog[1]).VA)
-  ;
-  (mp.writeu_u32)(l_0_0, l_0_1 + 1, (hstrlog[1]).VA + 4)
-  ;
-  (mp.vfo_add_buffer)(l_0_0, "locale_patched", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset
+local l_0_2 = 128
+local l_0_3 = ""
+if l_0_0.is_header then
+  l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
+else
+  l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
 end
-do
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+local l_0_4 = (string.gsub)(l_0_3, "[%d+%-*%/()]+", "")
+if l_0_4 ~= nil and #l_0_3 - #l_0_4 > 40 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

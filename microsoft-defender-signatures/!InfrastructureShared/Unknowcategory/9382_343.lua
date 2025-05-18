@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 100)
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.find)(l_0_0, "\129;\026\164\006\000u", 1, true)
-    if l_0_1 ~= nil then
-      (pe.mmap_patch_va)(pevars.sigaddr + 21 + l_0_1 + 5, "êê")
-    end
-  end
-  return mp.INFECTED
+local l_0_0 = (pe.get_regval)(pe.REG_EIP)
+local l_0_1 = (pe.get_regval)(pe.REG_ESP)
+if peattributes.isdll and l_0_1 < l_0_0 and l_0_0 - l_0_1 < 512 and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+  return mp.LOWFI
 end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_12")
+(mp.set_mpattribute)("lua_codepatch_tibs_11")
 local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
 local l_0_1 = (mp.readu_u32)(l_0_0, 1)
 l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
@@ -11,7 +11,7 @@ local l_0_2 = (string.byte)(l_0_0, 8)
 local l_0_3 = (mp.readu_u32)(l_0_0, 12)
 local l_0_4 = (mp.readu_u32)(l_0_0, 23)
 local l_0_5 = (pe.get_regval)(pe.REG_EDX)
-local l_0_6 = (mp.ror32)(l_0_5, l_0_2) - (mp.bitxor)(l_0_4, l_0_3) + l_0_1
+local l_0_6 = (mp.ror32)(l_0_5, l_0_2) - (mp.bitxor)(l_0_4, l_0_3) - l_0_1
 ;
 (pe.set_regval)(pe.REG_EBX, l_0_6)
 return mp.INFECTED

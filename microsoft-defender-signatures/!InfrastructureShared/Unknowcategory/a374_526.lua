@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if l_0_0 == mp.SCANREASON_ONOPEN then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-    if l_0_1 == "new folder.exe" or l_0_1 == "documents.exe" or l_0_1 == "music.exe" or l_0_1 == "pictures.exe" or l_0_1 == "videos.exe" or l_0_1 == "recycler.exe" then
-      (mp.set_mpattribute)("Lowfi:SIGATTR:Worm:Win32/PossibleSillyShareCopy.gen")
-    end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).ppid
+  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  if (string.find)(l_0_1, ".dat", 1, true) and (string.find)(l_0_1, "--", 1, true) and (string.find)(l_0_1, "#1", 1, true) and (string.find)(l_0_1, "=\"", 1, true) and l_0_0 then
+    (bm.request_SMS)(l_0_0, "m")
+    return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

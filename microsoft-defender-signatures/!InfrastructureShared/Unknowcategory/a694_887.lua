@@ -37,7 +37,7 @@ do
         if (string.len)(R7_PC90) > 3 and (sysio.IsFileExists)(R7_PC90) and l_0_5[(string.sub)(R7_PC90, -3)] then
           (bm.add_related_file)(l_0_11)
           ;
-          (mp.ReportLowfi)(l_0_11, 4023056107)
+          (mp.ReportLowfi)(l_0_11, 2518044239)
         end
       end
       return mp.INFECTED

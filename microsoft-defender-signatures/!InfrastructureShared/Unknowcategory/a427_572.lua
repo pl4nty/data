@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\magnify.exe")
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\utilman.exe")
 if l_0_0 ~= nil then
   local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
   if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then

@@ -9,7 +9,7 @@ if l_0_1 == 4294967295 then
   return mp.CLEAN
 end
 ;
-(pe.mmap_patch_va)(l_0_0 + 41, "j\001\144")
+(pe.mmap_patch_va)(l_0_0 + 52, "j\001\144")
 ;
 (pe.mmap_patch_va)(l_0_1 + 6, "\001\000\000")
 return mp.INFECTED

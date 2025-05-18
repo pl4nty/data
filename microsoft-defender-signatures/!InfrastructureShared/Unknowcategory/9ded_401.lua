@@ -3,19 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 ~= nil then
-  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-    if (sysio.IsFileExists)(l_0_6) then
-      (bm.add_related_file)(l_0_6)
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) and (l_0_1:match("([^\\]+)$") == "fodhelper.exe" or l_0_1:match("([^\\]+)$") == "computerdefaults.exe") then
+      return mp.INFECTED
     end
   end
-end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.INFECTED
-  return l_0_1
+  return mp.CLEAN
 end
 

@@ -3,18 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-do
-  local l_0_1 = ""
-  if l_0_0.is_header then
-    l_0_1 = (string.lower)(tostring(headerpage))
-  else
-    l_0_1 = (string.lower)(tostring(footerpage))
-  end
-  if l_0_1 > 3 then
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  local l_0_7 = (mp.bitand)(l_0_6.reason_ex, bm.RELATIONSHIP_CREATED)
+  if l_0_7 == bm.RELATIONSHIP_CREATED then
+    (bm.trigger_sig)("Behavior:Win32/SelfdelProcCreate.A", "INFECTED", l_0_6.ppid)
     return mp.INFECTED
   end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
 end
+return mp.CLEAN
 

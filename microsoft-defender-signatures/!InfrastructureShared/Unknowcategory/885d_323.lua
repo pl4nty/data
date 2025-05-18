@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" and (versioning.IsSeville)() then
+      return mp.LOWFI
+    end
+  end
   return mp.CLEAN
 end
-if peattributes.isdll and (mp.getfilesize)() <= 716800 and (mp.getfilesize)() >= 614400 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

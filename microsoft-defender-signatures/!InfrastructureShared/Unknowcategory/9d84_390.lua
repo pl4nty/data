@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.find)(l_0_0, "AZQAqADsAIABOAGUAdwAtAE0AYQBuAGEAZwBlAG0AZQBuAHQAUgBvAGwAZQBBAHMAcwBpAGcAbgBtAGUAbgB0ACAALQBuAGEAbQBlADoA", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 11 then
+  (mp.set_mpattribute)("PUA:Block:NheqMiner")
+  return mp.INFECTED
 end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_nheqminer")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_nheqminer")
+end
+return mp.CLEAN
 

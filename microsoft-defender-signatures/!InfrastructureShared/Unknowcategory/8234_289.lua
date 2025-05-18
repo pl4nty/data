@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 9)
-if (mp.readu_u32)(l_0_0, 6) < 983040 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "program files\\mcafee", 1, true) then
   return mp.CLEAN
 end
 return mp.INFECTED

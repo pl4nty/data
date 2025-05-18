@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isexe == true and (mp.getfilesize)() < 200000 and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
+if peattributes.isvbnative == true and peattributes.isexe == true and (mp.getfilesize)() < 1048000 then
   return mp.INFECTED
+else
+  if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true and (mp.getfilesize)() < 1048000 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

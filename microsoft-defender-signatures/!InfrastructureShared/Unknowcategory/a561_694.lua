@@ -3,35 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (sysio.IsFileExists)(l_0_7) then
-        (bm.add_related_file)(l_0_7)
-      end
+if (this_sigattrlog[3]).matched then
+  local l_0_0, l_0_1 = (bm.get_process_relationships)()
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    if (string.find)((string.lower)(l_0_6.image_path), "\\powershell.exe", 1, true) then
+      (MpCommon.TurnNriOnProcess)(l_0_6.ppid)
+      local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
+      local l_0_9 = tonumber(l_0_7)
+      local l_0_10 = tonumber(l_0_8)
+      local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
+      local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
+      ;
+      (mp.TriggerScanResource)("ems", l_0_13)
     end
   end
 end
 do
-  if l_0_1 ~= nil then
-    for l_0_11,l_0_12 in ipairs(l_0_1) do
-      if l_0_12.image_path ~= nil then
-        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
-        if (sysio.IsFileExists)(l_0_13) and (mp.IsKnownFriendlyFile)(l_0_13, true, false) then
-          (bm.add_related_file)(l_0_13)
-          if l_0_12.ppid ~= nil then
-            (bm.request_SMS)(l_0_12.ppid, "m")
-            ;
-            (bm.add_action)("SmsAsyncScanEvent", 1)
-          end
-        end
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

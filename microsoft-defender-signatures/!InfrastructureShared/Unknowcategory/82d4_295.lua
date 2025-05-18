@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "word/_rels", 1, true) ~= nil and (mp.getfilesize)() < 400 then
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
+    local l_0_1 = (l_0_0.image_path):lower()
+    if (string.find)(l_0_1, "\\program files", 1, true) == nil then
+      return mp.CLEAN
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

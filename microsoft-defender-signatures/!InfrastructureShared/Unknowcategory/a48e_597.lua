@@ -3,23 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_netmetadata)()
-local l_0_1 = l_0_0.usheap_RVA
-local l_0_2 = l_0_0.usheap_size
-local l_0_3 = l_0_1 + pehdr.ImageBase
-local l_0_4 = (pe.vm_search)(l_0_3, l_0_3 + 80, "\144\" \v0-9A-Za-z/+\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_4 == 4294967295 then
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_1 = (string.match)(l_0_0, "wscript%.exe\".+\"(.+%.doc[x]?%.js\"-)")
+  if l_0_1 ~= nil then
+    (mp.ReportLowfi)(l_0_1 .. "\000", 2164430518)
+    return mp.INFECTED
+  end
 end
-local l_0_5 = (pe.vm_search)(l_0_4 + 8, l_0_4 + l_0_2, "\000\000\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_5 == 4294967295 then
-  return mp.CLEAN
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 ~= nil then
+    local l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p2)
+    local l_0_3 = (string.match)(l_0_2, "cscript%.exe\".+\"(.+%.doc[x]?%.js\"-)")
+    if l_0_3 ~= nil then
+      (mp.ReportLowfi)(l_0_3 .. "\000", 403425036)
+      return mp.INFECTED
+    end
+  end
+  do
+    return mp.CLEAN
+  end
 end
-local l_0_6 = l_0_5 - l_0_4
-;
-(mp.readprotection)(false)
-local l_0_7 = (pe.mmap_va)(l_0_4, l_0_6)
-;
-(mp.vfo_add_buffer)(l_0_7, "[ldstr_msil]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.INFECTED
 

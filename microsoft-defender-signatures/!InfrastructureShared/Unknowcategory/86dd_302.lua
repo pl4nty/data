@@ -4,8 +4,8 @@
 -- params : ...
 -- function num : 0
 (mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
-if (mp.readu_u32)(l_0_0, 1) < 1048576 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 7, 4)
+if (mp.readu_u32)(l_0_0, 1) < 16777216 then
   return mp.CLEAN
 end
 return mp.INFECTED

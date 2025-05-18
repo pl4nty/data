@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.no_resources and (pe.contains_va)(3, (hstrlog[1]).VA) and (pesecs[3]).Name == ".data" then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.dynmem_APIcall then
+  return mp.CLEAN
+end
+if not peattributes.dynmem_uses_access_violation and not peattributes.executes_from_dynamic_memory then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

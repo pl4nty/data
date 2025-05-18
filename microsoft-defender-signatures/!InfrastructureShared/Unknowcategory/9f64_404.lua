@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-endswith = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  do return l_1_0:sub(-#l_1_1) == l_1_1 end
-  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil or l_0_0 == "" then
+  return mp.CLEAN
 end
-
-if peattributes.isdll and not peattributes.hasexports and endswith((string.lower)((mp.getfilename)()), "magentloc.dll") then
+if (string.find)(l_0_0, "cymulate", 1, true) or (string.find)(l_0_0, "edr_attack", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

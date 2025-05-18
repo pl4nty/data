@@ -3,38 +3,34 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 3781839709) ~= 0 then
-  return mp.INFECTED
+local l_0_0 = {}
+l_0_0["explorer.exe"] = ""
+l_0_0["hh.exe"] = ""
+l_0_0["isuninst.exe"] = ""
+l_0_0["notepad.exe"] = ""
+l_0_0["regedit.exe"] = ""
+l_0_0["slrundll.exe"] = ""
+l_0_0["taskman.exe"] = ""
+l_0_0["twunk_16.exe"] = ""
+l_0_0["twunk_32.exe"] = ""
+l_0_0["winhelp.exe"] = ""
+l_0_0["winhlp32.exe"] = ""
+l_0_0["bfsvc.exe"] = ""
+l_0_0["fveupdate.exe"] = ""
+l_0_0["helppane.exe"] = ""
+l_0_0["write.exe"] = ""
+l_0_0["splwow64.exe"] = ""
+local l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil, nil, nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
+  l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  l_0_4 = (string.lower)((this_sigattrlog[2]).utf8p2)
+  l_0_3 = (string.lower)((this_sigattrlog[3]).utf8p1)
+  if l_0_1 ~= nil and l_0_4 ~= nil and l_0_3 ~= nil and l_0_1 == l_0_3 then
+    l_0_2 = (string.match)(l_0_1, "\\([^\\]+)$")
+    if l_0_0[l_0_2] and (string.find)(l_0_4, l_0_2) then
+      return mp.INFECTED
+    end
+  end
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 3358620111) ~= 0 then
-  return mp.INFECTED
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 4213996749) ~= 0 then
-  return mp.INFECTED
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 2125492999) ~= 0 then
-  return mp.INFECTED
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 890811841) ~= 0 then
-  return mp.INFECTED
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 4180176840) ~= 0 then
-  return mp.INFECTED
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 1497271799) ~= 0 then
-  return mp.INFECTED
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 3287693681) ~= 0 then
-  return mp.INFECTED
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 2455191392) ~= 0 then
-  return mp.INFECTED
-end
-if (mp.get_mpattribute)("HSTR:Adware:Win32/Lollipop_Check_ARG") then
-  return mp.INFECTED
-end
-if mp.HSTR_WEIGHT > 21 and peattributes.suspicious_image_version then
-  return mp.INFECTED
-end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,17 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1, 4), 1)
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readu_u32)((pe.mmap_va)(l_0_0, 4), 1)
-if l_0_1 ~= 67372036 then
+if not (mp.get_mpattribute)("pea_isdll") then
   return mp.CLEAN
 end
-if (mp.readu_u32)((pe.mmap_va)(l_0_1, 16), 1) ~= 0 then
-  return mp.CLEAN
+local l_0_0 = pehdr.AddressOfEntryPoint + pehdr.ImageBase
+do
+  if l_0_0 == (hstrlog[1]).VA then
+    local l_0_1, l_0_2 = (pe.get_exports)()
+    if l_0_1 > 2 then
+      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    end
+    ;
+    (mp.set_mpattribute)("BorlandDelphiDllEntryPoint")
+  end
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "3\192")
-return mp.INFECTED
 

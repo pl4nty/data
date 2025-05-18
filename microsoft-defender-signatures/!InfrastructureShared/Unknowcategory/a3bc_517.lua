@@ -21,7 +21,7 @@ end
 if (pesecs[1]).PointerToRawData ~= 1024 then
   return mp.CLEAN
 end
-if (pesecs[1]).Characteristics ~= 4026531936 then
+if (pesecs[1]).Characteristics ~= 4026532032 then
   return mp.CLEAN
 end
 return mp.INFECTED

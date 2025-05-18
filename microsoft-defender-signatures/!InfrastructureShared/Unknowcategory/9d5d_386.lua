@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 17, "\141\r")
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 24, 1)
-local l_0_1 = pevars.sigaddr + 23 + (string.byte)(l_0_0, 1) + 2 - 2
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 23, "")
-;
-(pe.mmap_patch_va)(l_0_1, "")
-return mp.INFECTED
+if ((((((this_sigattrlog[3]).matched and not (this_sigattrlog[1]).matched) or (this_sigattrlog[4]).matched) and not (this_sigattrlog[2]).matched) or (this_sigattrlog[5]).matched) and not (this_sigattrlog[6]).matched) or 0 + 1 + 1 + 1 + 1 + 1 + 1 >= 4 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

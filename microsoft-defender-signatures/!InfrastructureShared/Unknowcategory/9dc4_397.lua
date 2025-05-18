@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if pehdr.Subsystem ~= 1 and ((pehdr.DataDirectory)[1]).Size < 256 then
-    local l_0_0 = (string.lower)((mp.getfilename)())
-    if l_0_0 ~= nil and l_0_0:find("\\system", 1, true) == nil and l_0_0:find("program files", 1, true) == nil then
-      return mp.INFECTED
-    end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 17, 1)
+local l_0_1 = 21
+if (string.byte)(l_0_0) == 129 then
+  l_0_1 = 24
+  if (string.byte)((pe.mmap_va)(pevars.sigaddr + 21, 1)) == 2 then
+    return mp.CLEAN
   end
-  return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\235")
+return mp.INFECTED
 

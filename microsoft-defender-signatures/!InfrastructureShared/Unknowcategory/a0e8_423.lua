@@ -3,13 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 ~= nil and l_0_0 > 2048000 then
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (pe.get_versioninfo)()
-if l_0_1 ~= nil and l_0_1.OriginalFilename ~= nil and (l_0_1.OriginalFilename):lower() == "sync.exe" and l_0_1.InternalName ~= nil and (l_0_1.InternalName):lower() == "sync.exe" and l_0_1.ProductVersion ~= nil and (l_0_1.ProductVersion):lower() == "0.0.0.0" then
-  return mp.INFECTED
+local l_0_1 = {}
+l_0_1["Trojan:Win32/TIImpersonation.A!sms"] = true
+l_0_1["Trojan:Win32/TIImpersonation.B!sms"] = true
+l_0_1["Trojan:Win32/W3WP_BackdoorDLL"] = true
+l_0_1["Trojan:Win32/ShellMemoryArtifacts.B"] = true
+l_0_1["Trojan:Win32/ShellMemoryArtifacts.C"] = true
+if l_0_1[l_0_0] then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

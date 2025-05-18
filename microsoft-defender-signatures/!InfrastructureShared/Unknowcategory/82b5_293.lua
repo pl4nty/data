@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 36 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 5 and mp.HSTR_WEIGHT < 10 then
+  (mp.set_mpattribute)("HSTR:Torwofun.A")
+else
+  if mp.HSTR_WEIGHT == 5 then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan_torwofun_a1")
+  end
 end
-if (mp.bitand)(mp.HSTR_WEIGHT, 15) >= 3 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_injector")
-end
-return mp.CLEAN
+return mp.INFECTED
 

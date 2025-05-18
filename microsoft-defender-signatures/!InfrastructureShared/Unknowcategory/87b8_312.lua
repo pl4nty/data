@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 458752 and l_0_0 <= 1044480 and pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 9 then
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
+end
+if (hstrlog[1]).matched then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
 end
 return mp.CLEAN
 

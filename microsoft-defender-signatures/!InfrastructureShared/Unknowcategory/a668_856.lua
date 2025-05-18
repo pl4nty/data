@@ -3,20 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset + 32
-local l_0_2 = 16
-local l_0_3 = ""
-if l_0_0.is_header then
-  l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
-else
-  l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
-end
-if l_0_3 ~= nil then
-  l_0_3 = l_0_3:lower()
-  if (string.find)(l_0_3, "calc", 1, true) or (string.find)(l_0_3, "reg", 1, true) or (string.find)(l_0_3, "mshta", 1, true) or (string.find)(l_0_3, "powershell", 1, true) or (string.find)(l_0_3, "bitsadmin", 1, true) or (string.find)(l_0_3, "schtasks", 1, true) or (string.find)(l_0_3, "rundll", 1, true) or (string.find)(l_0_3, "wscript", 1, true) or (string.find)(l_0_3, "cscript", 1, true) then
-    return mp.INFECTED
-  end
+local l_0_0 = "cab rtf doc chm hlp ttf pdf fb2 xls ppt mdb cda wav wma mp3 avi mpg mdv flv swf wmv vob bmp gif jpg png iso mdf mds bin dat nrg 3gp ogg vob exe dll"
+local l_0_1 = (bm.get_imagepath)()
+local l_0_2 = (string.match)((string.lower)(l_0_1), "\\([^\\]+)%.%l%l%l")
+local l_0_3, l_0_4 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "(.+\\)[^\\]+%.(%l%l%l)")
+local l_0_5, l_0_6 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), "(.+\\)([^\\]+)%.rtf")
+if l_0_2 ~= nil and l_0_3 ~= nil and l_0_4 ~= nil and l_0_5 ~= nil and l_0_6 ~= nil and l_0_2 == l_0_6 and (string.find)(l_0_0, l_0_4, 1, true) and (string.find)(l_0_3, "\\temp\\", 1, true) and (string.find)(l_0_5, "\\temp\\", 1, true) then
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_1), 1079587454)
+  return mp.INFECTED
 end
 return mp.CLEAN
 

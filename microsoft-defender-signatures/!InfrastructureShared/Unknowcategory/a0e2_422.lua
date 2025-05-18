@@ -3,8 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.no_mipsgp == true and peattributes.no_boundimport == true and peattributes.no_ep == true then
-  return mp.INFECTED
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 13, 4)
+if (string.find)(l_0_0, "­‹\240", 1, true) ~= nil then
+  local l_0_1 = (string.find)(l_0_0, "\1396", 1, true)
+  if l_0_1 ~= nil then
+    local l_0_2 = 44 + 1 + 2
+  else
+    do
+      do
+        do return mp.LOWFI end
+        -- DECOMPILER ERROR at PC38: Confused about usage of register: R2 in 'UnsetPending'
+
+        ;
+        (pe.mmap_patch_va)(pevars.sigaddr + l_0_2, ")öë ")
+        return mp.CLEAN
+      end
+    end
+  end
 end
-return mp.CLEAN
 

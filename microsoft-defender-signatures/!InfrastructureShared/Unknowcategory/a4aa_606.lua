@@ -3,20 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -11)) == "svchost.exe" then
-  if (this_sigattrlog[1]).matched then
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 3296241983)
-  else
-    if (this_sigattrlog[2]).matched then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 669256468)
-    else
-      if (this_sigattrlog[3]).matched then
-        (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1), 3230147973)
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.get_mpattribute)("pea_no_uidata") and (mp.getfilesize)() >= 249856 and (mp.getfilesize)() < 282624 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
       end
     end
+    return mp.INFECTED
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
 

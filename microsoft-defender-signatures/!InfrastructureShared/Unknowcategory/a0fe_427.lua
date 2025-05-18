@@ -3,22 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if peattributes.no_exports then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 > 1 then
-  for l_0_5 = 1, l_0_0 do
-    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
-    if (string.lower)(l_0_6) == "splsamodeinitialize" then
-      return mp.INFECTED
+local l_0_0 = ((string.lower)((string.sub)((bm.get_imagepath)(), -10)))
+local l_0_1 = nil
+if l_0_0 == "\\lsass.exe" then
+  if (this_sigattrlog[1]).matched then
+    l_0_1 = (this_sigattrlog[1]).utf8p1
+  else
+    if (this_sigattrlog[2]).matched then
+      l_0_1 = (this_sigattrlog[2]).utf8p1
     end
   end
+  if l_0_1 ~= nil then
+    (bm.add_threat_file)(l_0_1)
+  end
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

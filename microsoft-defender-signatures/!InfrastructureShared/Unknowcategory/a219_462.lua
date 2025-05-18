@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0.ppid == nil or (string.find)(l_0_0.ppid, "pid:4$", 1, false) ~= nil or (string.find)(l_0_0.ppid, "pid:4,", 1, true) ~= nil then
-  return mp.CLEAN
+if (mp.get_mpattribute)("do_exhaustivehstr_rescan_vbinject_fa") and (mp.getfilesize)() == 208384 and pehdr.NumberOfSections == 3 and (pesecs[2]).SizeOfRawData == 8192 and (pesecs[2]).VirtualAddress == 131072 and (pesecs[2]).Name == "UPX1" then
+  return mp.INFECTED
 end
-if ((MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)).IntegrityLevel <= l_0_0.integrity_level then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

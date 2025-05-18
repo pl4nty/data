@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 3 then
+local l_0_0 = ""
+if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
+  l_0_0 = (MpCommon.PathToWin32Path)((string.lower)((this_sigattrlog[10]).utf8p1))
+end
+if (mp.IsKnownFriendlyFile)(l_0_0, true, false) then
   return mp.CLEAN
 end
-if (mp.getfilesize)() >= 512000 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData < 65536 then
-  return mp.CLEAN
-end
-if peattributes.isvbnative == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

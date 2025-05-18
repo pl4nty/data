@@ -3,18 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 30, 64)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-if (mp.readu_u32)(l_0_0, 47) ~= l_0_1 then
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() >= 524288 and (mp.getfilesize)() < 565248 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u32)(l_0_0, 8)
-l_0_0 = (pe.mmap_va)(l_0_2, 4)
-local l_0_3 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
-if l_0_3 ~= 1269389306 then
-  return mp.CLEAN
-end
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a\005\000")
-return mp.INFECTED
 

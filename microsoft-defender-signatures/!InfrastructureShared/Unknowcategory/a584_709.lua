@@ -3,27 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata then
-  local l_0_0 = (mp.getfilesize)()
-  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
-
-  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
-
-  if (l_0_0 >= 6402040 and l_0_0 <= 6591488 and pehdr.SizeOfImage == 622592) or l_0_0 < 57671680 or l_0_0 >= 14188544 and l_0_0 <= 14254080 and pehdr.SizeOfImage == 921600 then
-    local l_0_1 = pehdr.NumberOfSections
-    local l_0_2 = (pesecs[l_0_1]).PointerToRawData + (pesecs[l_0_1]).SizeOfRawData
-    ;
-    (mp.readprotection)(false)
-    local l_0_3 = (mp.readfile)(l_0_2, 16)
-    if l_0_3 == "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" then
-      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
-      return mp.INFECTED
-    end
-  end
-end
-do
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
   return mp.CLEAN
 end
+if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1800000 or l_0_0 < 4000 then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+local l_0_1 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("system32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("\\appdata\\local\\", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

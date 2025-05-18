@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-;
-(mp.set_mpattribute)("do_deep_rescan")
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-if mp.HSTR_WEIGHT == 2 then
+if (peattributes.isexe == true and peattributes.no_security == true and peattributes.ismsil == false and (mp.getfilesize)() < 900000 and (mp.getfilesize)() > 620000) or (mp.getfilesize)() < 307200 and (mp.getfilesize)() > 204800 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

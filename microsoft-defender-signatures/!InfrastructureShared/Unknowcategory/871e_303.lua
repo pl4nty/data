@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.has_msilresources and peattributes.x86_image and peattributes.suspicious_number_of_dirs then
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("pea_no_tls") then
   return mp.INFECTED
 end
 return mp.CLEAN

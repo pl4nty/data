@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("com.atlassian.applinks.", 1, true) then
-  return mp.INFECTED
+if (mp.getfilesize)() > 1000000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pesecs[1]).Name == "UPX0" then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 15000)
+return mp.INFECTED
 

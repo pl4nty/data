@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if ((((((this_sigattrlog[3]).matched and not (this_sigattrlog[1]).matched) or (this_sigattrlog[4]).matched) and not (this_sigattrlog[2]).matched) or (this_sigattrlog[5]).matched) and not (this_sigattrlog[6]).matched) or 0 + 1 + 1 + 1 + 1 + 1 + 1 >= 4 then
-  return mp.INFECTED
+if (mp.getfilesize)() < 273152 and (mp.getfilesize)() > 112640 and peattributes.isdll and peattributes.hasexports then
+  if peattributes.dt_error_heur_exit_criteria then
+    (pe.set_peattribute)("deep_analysis", true)
+  end
+  ;
+  (pe.reemulate)()
 end
-return mp.CLEAN
+return mp.INFECTED
 

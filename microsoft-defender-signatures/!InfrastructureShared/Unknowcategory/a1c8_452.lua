@@ -3,17 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.hasappendeddata then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() < 150000 then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 200000 then
-  return mp.CLEAN
-end
-if epcode[1] == 137 and epcode[2] == 224 and epcode[3] == 163 and epcode[8] == 137 and epcode[9] == 232 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlservr.exe" or (string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlagent.exe") then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

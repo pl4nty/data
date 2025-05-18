@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
-local l_0_1 = (string.sub)(l_0_0, 17, 17)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 21, 21)
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 14, "\187" .. l_0_1 .. "\000\000\000\144")
+(pe.mmap_patch_va)(pevars.sigaddr + 18, "\187" .. l_0_1 .. "\000\000\000\144")
 return mp.INFECTED
 

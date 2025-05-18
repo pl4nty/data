@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 250000 then
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") or peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.INFECTED
+if peattributes.ismsil == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

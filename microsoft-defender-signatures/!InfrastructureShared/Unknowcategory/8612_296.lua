@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if not l_0_0 then
-  return mp.CLEAN
+do
+  if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[7]).utf8p2
+    ;
+    (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
+  end
+  return mp.INFECTED
 end
-if (string.find)((string.lower)(l_0_0), "windows\\system32\\svchost.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

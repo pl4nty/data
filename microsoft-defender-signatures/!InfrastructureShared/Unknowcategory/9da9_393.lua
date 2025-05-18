@@ -3,18 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true then
-  local l_0_0 = (hstrlog[2]).VA
-  local l_0_1 = (pe.mmap_va)(l_0_0 + 7, 4)
-  local l_0_2 = 0
-  for l_0_6 = 4, 1, -1 do
-    l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
-  end
-  if l_0_2 > 8192 then
+do
+  if (peattributes.isexe == true or peattributes.isdll == true) and peattributes.x86_image == true and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
-end
-do
-  return mp.LOWFI
+  return mp.CLEAN
 end
 

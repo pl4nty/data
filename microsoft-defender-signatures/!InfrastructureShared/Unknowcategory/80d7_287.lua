@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and pehdr.NumberOfSections == 5 and l_0_0 >= 2138112 and l_0_0 <= 2281472 then
+if pehdr.NumberOfSections > 3 and (pesecs[2]).PointerToRawData - (pesecs[1]).SizeOfRawData >= 12288 then
   return mp.INFECTED
 end
 return mp.CLEAN

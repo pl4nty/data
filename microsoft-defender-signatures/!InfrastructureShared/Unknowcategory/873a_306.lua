@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) ~= true then
+local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
+if l_0_1 == nil then
   return mp.CLEAN
 end
+;
+(MpCommon.SetPersistContextNoPath)("MiKatzExe", l_0_1, 100)
 return mp.INFECTED
 

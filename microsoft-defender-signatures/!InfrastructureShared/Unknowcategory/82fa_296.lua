@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true or peattributes.isdll == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if peattributes.isexe == true and peattributes.amd64_image then
+  return mp.INFECTED
+end
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

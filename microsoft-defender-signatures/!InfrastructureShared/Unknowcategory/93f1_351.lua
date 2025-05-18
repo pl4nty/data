@@ -4,14 +4,8 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 16896 then
-  return mp.CLEAN
+if peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 131072 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size == 56 then
+  return mp.INFECTED
 end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(l_0_0 - 16896, 16896)
-if l_0_1:find("qxgxwddm)(if(findfile \"bakdwg.fas\")(load \"bakdwg.fas\")))", 1, true) == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

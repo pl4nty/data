@@ -4,56 +4,56 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = false
-if (this_sigattrlog[1]).matched then
+if (this_sigattrlog[2]).matched then
   local l_0_1 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
   if l_0_1 ~= nil then
     local l_0_2 = (sysio.GetRegValueAsString)(l_0_1, "Debugger")
     if l_0_2 ~= nil and (string.len)(l_0_2) > 3 and (sysio.IsFileExists)(l_0_2) then
-      (mp.ReportLowfi)(l_0_2, 203654752)
+      (mp.ReportLowfi)(l_0_2, 2857668052)
       l_0_0 = true
     end
   end
 else
   do
-    if (this_sigattrlog[2]).matched then
+    if (this_sigattrlog[3]).matched then
       local l_0_3 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe")
       if l_0_3 ~= nil then
         local l_0_4 = (sysio.GetRegValueAsString)(l_0_3, "Debugger")
         if l_0_4 ~= nil and (string.len)(l_0_4) > 3 and (sysio.IsFileExists)(l_0_4) then
-          (mp.ReportLowfi)(l_0_4, 2797521046)
+          (mp.ReportLowfi)(l_0_4, 2615075110)
           l_0_0 = true
         end
       end
     else
       do
-        if (this_sigattrlog[3]).matched then
+        if (this_sigattrlog[4]).matched then
           local l_0_5 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\magnify.exe")
           if l_0_5 ~= nil then
             local l_0_6 = (sysio.GetRegValueAsString)(l_0_5, "Debugger")
             if l_0_6 ~= nil and (string.len)(l_0_6) > 3 and (sysio.IsFileExists)(l_0_6) then
-              (mp.ReportLowfi)(l_0_6, 3633633013)
+              (mp.ReportLowfi)(l_0_6, 3488596662)
               l_0_0 = true
             end
           end
         else
           do
-            if (this_sigattrlog[4]).matched then
+            if (this_sigattrlog[5]).matched then
               local l_0_7 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\utilman.exe")
               if l_0_7 ~= nil then
                 local l_0_8 = (sysio.GetRegValueAsString)(l_0_7, "Debugger")
                 if l_0_8 ~= nil and (string.len)(l_0_8) > 3 and (sysio.IsFileExists)(l_0_8) then
-                  (mp.ReportLowfi)(l_0_8, 18635330)
+                  (mp.ReportLowfi)(l_0_8, 375868929)
                   l_0_0 = true
                 end
               end
             else
               do
-                if (this_sigattrlog[5]).matched then
+                if (this_sigattrlog[6]).matched then
                   local l_0_9 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\narrator.exe")
                   if l_0_9 ~= nil then
                     local l_0_10 = (sysio.GetRegValueAsString)(l_0_9, "Debugger")
                     if l_0_10 ~= nil and (string.len)(l_0_10) > 3 and (sysio.IsFileExists)(l_0_10) then
-                      (mp.ReportLowfi)(l_0_10, 3440281147)
+                      (mp.ReportLowfi)(l_0_10, 583855365)
                       l_0_0 = true
                     end
                   end

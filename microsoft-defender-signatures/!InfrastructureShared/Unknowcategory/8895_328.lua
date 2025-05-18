@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 == nil then
-  return mp.CLEAN
+if pehdr.Machine == 332 and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 == nil then
-  return mp.CLEAN
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).wp2 == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

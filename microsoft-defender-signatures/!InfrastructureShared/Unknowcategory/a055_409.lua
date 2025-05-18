@@ -3,11 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    if (sysio.IsFileExists)(l_0_6) then
+      (bm.add_related_file)(l_0_6)
+      ;
+      (mp.ReportLowfi)(l_0_6, 2969606243)
+    end
+  end
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 214667374) and (mp.crc32)(-1, epcode, 17, 17) == 3988924912 then
-  return mp.INFECTED
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
-return mp.CLEAN
 

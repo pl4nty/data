@@ -3,14 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -17) == "\\inetsrv\\w3wp.exe" then
-  return mp.INFECTED
-end
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-for l_0_6,l_0_7 in ipairs(l_0_1) do
-  if l_0_7.image_path ~= nil and (mp.bitand)(l_0_7.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_7.image_path, -17)) == "\\inetsrv\\w3wp.exe" then
-    return mp.INFECTED
+local l_0_0, l_0_1 = nil, nil
+for l_0_5 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_2, l_0_3 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R5 in 'UnsetPending'
+
+  if (sigattr_head[R5_PC6]).matched then
+    if (sigattr_head[R5_PC6]).attribute == 16384 or (sigattr_head[R5_PC6]).attribute == 16385 then
+      l_0_3 = (string.lower)((sigattr_head[R5_PC6]).utf8p1)
+    else
+      if (sigattr_head[R5_PC6]).attribute == 16393 then
+        l_0_2 = (string.lower)((sigattr_head[R5_PC6]).utf8p2)
+      end
+    end
+    if l_0_3 and l_0_2 and (string.find)(l_0_2, l_0_3) then
+      return mp.INFECTED
+    end
   end
 end
 return mp.CLEAN

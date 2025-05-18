@@ -3,26 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).ppid then
-  return mp.CLEAN
-end
-local l_0_0 = (MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[1]).ppid)
-if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= l_0_0.IntegrityLevel then
-  local l_0_1, l_0_2 = (bm.get_process_relationships)()
-  if l_0_1 ~= nil then
-    for l_0_6,l_0_7 in ipairs(l_0_1) do
-      if l_0_7.image_path ~= nil then
-        local l_0_8 = (string.lower)(l_0_7.image_path)
-        if (string.find)(l_0_8, "\\chromium.exe", -11, true) then
-          return mp.INFECTED
-        end
-      end
+-- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+    if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, false, true) then
+      (bm.request_SMS)(l_0_1.ppid, "l+")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1000)
+      ;
+      (bm.add_related_file)(l_0_6)
     end
   end
 end
 do
-  l_0_1 = mp
-  l_0_1 = l_0_1.CLEAN
-  return l_0_1
+  return mp.CLEAN
 end
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[4]).Name == ".rsrc" and (pesecs[4]).Characteristics == 1073741888 and (mp.getfilesize)() >= 10000000 and (mp.getfilesize)() <= 20000000 then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).p2)
+  local l_0_1 = (string.lower)((this_sigattrlog[2]).p1)
+  if (string.find)(l_0_1, l_0_0, 10, true) then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

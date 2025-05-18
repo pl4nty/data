@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if pehdr.NumberOfSections == 7 and peattributes.no_security == true and l_0_0 >= 348160 and l_0_0 <= 393216 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size == 56 then
+if (mp.get_mpattribute)("LUA:FileSizeLE80000.A") and (mp.get_mpattribute)("Lua:FileSizeGEC350") and (mp.get_mpattribute)("MpHasExpensiveLoop") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.get_mpattribute)("LUA:OverlaySize_0xd30_to_0xd40") then
   return mp.INFECTED
 end
 return mp.CLEAN

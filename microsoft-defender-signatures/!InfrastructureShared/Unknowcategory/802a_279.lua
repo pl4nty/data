@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:DeleteMyAppExe") and (mp.get_mpattribute)("SIGATTR:DropMZ") and (mp.get_mpattribute)("SIGATTR:WRITESYSDIR") then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+  ;
+  (mp.SMSAsyncScan)(l_0_0.ppid)
+  return mp.LOWFI
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 5 and mp.HSTR_WEIGHT < 10 then
-  (mp.set_mpattribute)("HSTR:Torwofun.A")
-else
-  if mp.HSTR_WEIGHT == 5 then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan_torwofun_a1")
-  end
+if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("DOTNET_Reactor_Obfuscator") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

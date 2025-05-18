@@ -3,22 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-l_0_1 = (string.gsub)((string.lower)(l_0_1), "%^", "")
-if (string.find)(l_0_1, "win32_shadowcopy).delete() && cmd /c echo %", 1, true) or (string.find)(l_0_1, "-enablecontrolledfolderaccess 0 && cmd /c echo %", 1, true) then
-  local l_0_2 = (mp.GetParentProcInfo)()
-  if l_0_2 ~= nil then
-    local l_0_3 = (string.lower)(l_0_2.image_path)
-    if (string.find)(l_0_3, "\\windows\\system32\\", 1, true) and l_0_3:match("([^\\]+)$") == "dllhost.exe" then
-      return mp.INFECTED
-    end
-  end
-end
-do
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_17")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_2 = (mp.readu_u32)(l_0_0, 6)
+local l_0_3 = (mp.readu_u32)(l_0_0, 13)
+local l_0_4 = (string.byte)(l_0_0, 19)
+local l_0_5 = (mp.readu_u32)(l_0_0, 23)
+local l_0_6 = (mp.readu_u32)(l_0_0, 34)
+local l_0_7 = (pe.get_regval)(pe.REG_EDX)
+local l_0_8 = (mp.ror32)(l_0_7 + l_0_3, l_0_4) - (mp.bitxor)(l_0_6, l_0_5) + l_0_1 - l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_8)
+return mp.INFECTED
 

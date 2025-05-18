@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_0.ppid, "m+")
-;
-(bm.add_action)("SmsAsyncScanEvent", 1)
-return mp.INFECTED
+local l_0_0, l_0_1 = (pe.get_exports)()
+for l_0_5 = 1, l_0_0 do
+  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "ServiceMain" then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

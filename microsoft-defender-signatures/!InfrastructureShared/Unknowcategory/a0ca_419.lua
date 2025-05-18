@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.BaseOfData == 0 and pehdr.SizeOfInitializedData == 0 and pehdr.SizeOfUninitializedData == 0 and pehdr.SizeOfCode == 0 and (hstrlog[1]).VA - pehdr.ImageBase - (pesecs[1]).VirtualAddress == 4336 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 64)
+local l_0_1 = (string.find)(l_0_0, "‰U\248", 1, true)
+if l_0_1 ~= nil then
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 9, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 18, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 24, "")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

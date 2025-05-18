@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find(".deb", 1, true) then
-  return mp.CLEAN
+if (mp.get_mpattribute)("pea_no_exports") and not (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 786432 and (mp.getfilesize)() < 819200 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

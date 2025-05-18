@@ -3,7 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 5 and pevars.epsec == 1 and (pesecs[pevars.epsec]).Name == ".text" and (pesecs[pevars.epsec]).SizeOfRawData >= 237568 and (pesecs[pevars.epsec]).SizeOfRawData <= 393216 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData >= 9216 and (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= 12288 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, ".tmp\\", 1, true) or (string.find)(l_0_0, "\\temp\\", 1, true) then
+  return mp.INFECTED
+end
+if (string.find)(l_0_0, "\\program files\\", 1, true) or (string.find)(l_0_0, "\\program files (x86)\\", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

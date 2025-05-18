@@ -3,38 +3,40 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).utf8p1
-  local l_0_1 = false
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC21: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC22: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC23: Overwrote pending register: R4 in 'AssignReg'
-
-  for l_0_6,l_0_7 in ("ALF:")("SLF:") do
-    -- DECOMPILER ERROR at PC26: Overwrote pending register: R8 in 'AssignReg'
-
-    if (("TELPER:").sub)(l_0_0, 1, (string.len)(l_0_7)) == l_0_7 then
-      break
-    end
-  end
-  do
-    do
-      if not l_0_1 then
-        return mp.CLEAN
-      end
-      ;
-      (bm.trigger_sig)("DHA_LOWFI_AMSI_MATCH", l_0_0)
-      ;
-      (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", l_0_0)
-      ;
-      (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
-      do return mp.INFECTED end
-      do return mp.CLEAN end
-      -- WARNING: undefined locals caused missing assignments!
-    end
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
+  return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = (string.match)(l_0_1, "werfault%.exe\"?%s+-s%s+.+%s+-e%s+(%d+)")
+if l_0_2 == "" or l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = tonumber(l_0_2)
+if l_0_3 == "" or l_0_3 == nil then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.GetPPidFromPid)(l_0_3)
+if l_0_4 == "" or l_0_4 == nil then
+  return mp.CLEAN
+end
+local l_0_5 = (mp.GetProcessCommandLine)(l_0_4)
+if l_0_5 == "" or l_0_5 == nil then
+  return mp.CLEAN
+end
+l_0_5 = (string.lower)(l_0_5)
+if l_0_5 == "" or l_0_5 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_5, "lsass.exe", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,18 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata then
-  local l_0_0 = (mp.getfilesize)()
-  local l_0_1 = pehdr.NumberOfSections
-  local l_0_2 = (pesecs[l_0_1]).PointerToRawData + (pesecs[l_0_1]).SizeOfRawData
-  if l_0_2 + 4 < l_0_0 then
-    (mp.readprotection)(false)
-    if (mp.readfile)(l_0_2, 4) == "SO!#" then
-      return mp.INFECTED
-    end
-  end
-end
 do
+  if peattributes.isexe == true and peattributes.amd64_image and (pesecs[5]).Name == "/19" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
 

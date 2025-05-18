@@ -3,19 +3,33 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  if (string.find)(l_0_0, ".ps1", 1, true) and not (string.find)(l_0_0, " -", 1, true) then
-    return mp.CLEAN
-  else
-    if (string.find)(l_0_1, ".dll", 1, true) or (string.find)(l_0_1, ".cpl", 1, true) or (string.find)(l_0_1, ".ocx", 1, true) or (string.find)(l_0_1, ".wcx", 1, true) or (string.find)(l_0_1, ".inf", 1, true) or (string.find)(l_0_1, "\\drivers\\", 1, true) or (string.find)(l_0_1, "\\windows\\installer\\", 1, true) or (string.find)(l_0_1, "tsworkspace", 1, true) then
-      return mp.CLEAN
-    end
-  end
-  return mp.INFECTED
-end
-do
+if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
   return mp.CLEAN
 end
+if peattributes.isdll == true then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() > 1048576 then
+  return mp.CLEAN
+end
+if (hstrlog[1]).hitcount > 40 then
+  return mp.CLEAN
+end
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+local l_0_1 = (pe.foffset_va)(pehdr.ImageBase + (pehdr.SizeOfImage - 1)) + 1
+if l_0_0 ~= l_0_1 then
+  l_0_0 = l_0_1
+end
+local l_0_2 = (mp.getfilesize)() - l_0_0
+if (pesecs[1]).SizeOfRawData > 61440 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData < 32768 and l_0_2 < 32768 then
+  return mp.CLEAN
+end
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

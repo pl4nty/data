@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[4]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[4]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[4]).p2)
-  if l_0_0 and l_0_1 and (string.find)(l_0_0, "^%d%d%d+") and (string.find)(l_0_1, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") then
-    return mp.INFECTED
-  end
+if elfhdr.type ~= 2 and elfhdr.type ~= 3 then
   return mp.CLEAN
 end
-do
+if elfhdr.phnum ~= 3 or elfhdr.shnum ~= 0 then
   return mp.CLEAN
 end
+local l_0_0 = 1
+local l_0_1 = 62
+local l_0_2 = 3
+local l_0_3 = elfhdr.ident
+if (string.byte)(l_0_3, 6) ~= l_0_0 or elfhdr.machine ~= l_0_1 and elfhdr.machine ~= l_0_2 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

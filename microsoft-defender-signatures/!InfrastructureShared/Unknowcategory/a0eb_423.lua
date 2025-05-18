@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 (mp.readprotection)(false)
-local l_0_0 = (pe.foffset_va)((hstrlog[1]).VA + 42)
+local l_0_0 = (pe.foffset_va)((hstrlog[1]).VA + 45)
 local l_0_1 = (mp.readfile)(l_0_0, 4)
 local l_0_2 = (pe.foffset_va)((mp.readu_u32)(l_0_1, 1))
 local l_0_3 = (mp.readfile)(l_0_2, 15)

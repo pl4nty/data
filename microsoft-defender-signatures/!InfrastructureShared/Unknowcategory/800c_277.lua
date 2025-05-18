@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil and (mp.get_mpattribute)("InEmail") then
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.getfilesize)() >= 100000 then
   return mp.INFECTED
 end
 return mp.CLEAN

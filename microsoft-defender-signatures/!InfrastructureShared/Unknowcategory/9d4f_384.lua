@@ -3,7 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0:find("svchost.exe") then
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 2527504772)
   return mp.INFECTED
 end
 return mp.CLEAN

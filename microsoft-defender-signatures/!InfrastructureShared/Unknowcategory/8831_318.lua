@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 28672 and l_0_0 < 40960 and pehdr.NumberOfSections == 1 and (pesecs[pevars.epsec]).Name == ".text" then
+  return mp.INFECTED
 end
-if not peattributes.dynmem_APIcall then
-  return mp.CLEAN
-end
-if not peattributes.dynmem_uses_access_violation and not peattributes.executes_from_dynamic_memory then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

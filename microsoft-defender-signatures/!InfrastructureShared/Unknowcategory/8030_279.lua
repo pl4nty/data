@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeGT1M.A") then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilename)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.find)(l_0_0, "\\lenovo\\visualdiscovery\\", 1, true) ~= nil then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+return mp.LOWFI
 

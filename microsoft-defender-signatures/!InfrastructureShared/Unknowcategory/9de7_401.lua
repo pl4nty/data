@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\002")
-;
-(pe.mmap_patch_va)((mp.bitand)((pe.get_regval)(pe.REG_EBP) + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 2, 4), 1), 4294967295), "\003\000\000\000")
-return mp.INFECTED
+local l_0_0 = (bm.get_connection_string)()
+if l_0_0:find("DestIp=185.22.172.157;", 1, true) or l_0_0:find("DestIp=91.121.222.184;", 1, true) or l_0_0:find("DestIp=185.22.172.69;", 1, true) or l_0_0:find("DestIp=185.18.53.247;", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

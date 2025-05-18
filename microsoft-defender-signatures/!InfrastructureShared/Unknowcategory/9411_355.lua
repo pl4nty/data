@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-for l_0_6,l_0_7 in ipairs(l_0_0) do
-  l_0_2 = l_0_7.image_path
-  if l_0_2 ~= nil then
-    l_0_2 = (string.lower)(l_0_2)
-    if l_0_2:find("excel.exe") or l_0_2:find("word.exe") then
-      return mp.INFECTED
-    end
-  end
+if mp.HSTR_WEIGHT >= 6 then
+  return mp.INFECTED
 end
-return mp.CLEAN
+if mp.HSTR_WEIGHT > 3 and (mp.get_mpattribute)("HSTR:Fareit.gen") then
+  return mp.INFECTED
+end
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
+return mp.LOWFI
 

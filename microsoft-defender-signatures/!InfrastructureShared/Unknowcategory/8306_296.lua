@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 <= 221184 and l_0_0 >= 204800 and (mp.get_mpattribute)("NID:PossibleRyuk") then
-  return mp.INFECTED
+if peattributes.isdll and (mp.getfilesize)() < 238593 then
+  if mp.HSTR_WEIGHT == 11 then
+    return mp.SUSPICIOUS
+  end
+  if mp.HSTR_WEIGHT == 10 then
+    return mp.LOWFI
+  end
 end
 return mp.CLEAN
 

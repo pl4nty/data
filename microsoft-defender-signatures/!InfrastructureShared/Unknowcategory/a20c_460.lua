@@ -3,18 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-    if l_0_0:find(":\\users", 1, true) ~= nil or l_0_0:find(":\\windows", 1, true) ~= nil then
-      if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
-        (bm.add_related_file)(l_0_0)
-      end
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, "\n\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 32, "\255T$\bêê")
+;
+(pe.set_image_filename)("notepad.exe")
+;
+(pe.reemulate)()
+return mp.INFECTED
 

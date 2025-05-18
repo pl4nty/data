@@ -3,25 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-if (this_sigattrlog[4]).matched then
-  l_0_2 = (this_sigattrlog[4]).image_path
-end
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    if l_0_7.image_path == l_0_2 then
-      local l_0_8, l_0_9 = (string.match)(l_0_7.ppid, "pid:(%w+),ProcessStart:(%w+)")
-      local l_0_10 = tonumber(l_0_8)
-      local l_0_11 = tonumber(l_0_9)
-      local l_0_12, l_0_13 = (mp.bsplit)(l_0_11, 32)
-      local l_0_14 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_10, l_0_12, l_0_13)
-      ;
-      (mp.TriggerScanResource)("ems", l_0_14)
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[3]).matched or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2) ~= nil) and (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2) ~= "" then
+    local l_0_5 = nil
+    for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2))) do
+      local l_0_6 = nil
+      -- DECOMPILER ERROR at PC37: Confused about usage of register: R6 in 'UnsetPending'
+
+      if R6_PC37 ~= nil and R6_PC37 ~= "" and (sysio.IsFileExists)(R6_PC37) and not (mp.IsKnownFriendlyFile)(R6_PC37, false, false) then
+        (bm.add_related_file)(R6_PC37)
+      end
     end
   end
-end
-do
-  return mp.INFECTED
+  do
+    return mp.INFECTED
+  end
 end
 

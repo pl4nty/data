@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("MiKatzExe")
-if l_0_0 ~= nil then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    if (sysio.IsFileExists)(l_0_5) then
-      (bm.add_threat_file)(l_0_5)
-    end
-  end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 128)
+local l_0_1 = (string.byte)(l_0_0, 1) + 2
+if #l_0_0 < l_0_1 then
+  return mp.CLEAN
+end
+if (string.byte)(l_0_0, l_0_1) == 232 then
   return mp.INFECTED
 end
 return mp.CLEAN

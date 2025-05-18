@@ -16,11 +16,11 @@ add_related_file_wrapper = function(l_1_0)
   end
 end
 
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p1)
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[3]).utf8p1)
 end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p2)
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  add_related_file_wrapper((this_sigattrlog[3]).utf8p2)
 end
 local l_0_0 = (MpCommon.GetPersistContextNoPath)("bm_uacbypass_connmgr")
 if l_0_0 then

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and peattributes.no_security == true and (mp.getfilesize)() < 120000 then
+if peattributes.isexe == true and pehdr.NumberOfSections == 5 and (pesecs[5]).Name == ".extra" then
   return mp.INFECTED
 end
 return mp.CLEAN

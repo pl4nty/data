@@ -3,8 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.enable_vmm_grow and peattributes.no_uidata and peattributes.no_comruntime and (mp.getfilesize)() >= 150000 and (mp.getfilesize)() < 330000 then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+do
+  if l_0_0 ~= nil and l_0_0 >= 20480000 then
+    local l_0_1 = (pe.get_versioninfo)()
+    if not l_0_1 then
+      return mp.CLEAN
+    end
+    if not l_0_1.CompanyName then
+      return mp.CLEAN
+    end
+    if l_0_1.CompanyName == "Microsoft Corporation" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

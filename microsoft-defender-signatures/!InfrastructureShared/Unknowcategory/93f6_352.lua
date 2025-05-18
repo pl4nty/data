@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win32/RopProof.RPX!MTB") and (pesecs[7]).Name == ".ropf" and (mp.getfilesize)() < 85000 and peattributes.isdll == true then
+if peattributes.isdll and peattributes.reads_vdll_code and (mp.get_mpattribute)("LoD:VirTool:Win32/Obfuscator.UR") and (mp.getfilesize)() >= 300000 and (mp.getfilesize)() < 900000 then
   return mp.INFECTED
 end
 return mp.CLEAN

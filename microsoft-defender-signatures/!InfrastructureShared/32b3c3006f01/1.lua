@@ -16,8 +16,8 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
   local l_0_5 = l_0_1:match("([^\\]+)$")
   local l_0_6 = {}
   l_0_6.Dll_Path = l_0_2
-  local l_0_7, l_0_8 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_3, l_0_4, false)
-  local l_0_9, l_0_10 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_3, l_0_5, false)
+  local l_0_7, l_0_8 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_4, l_0_3, false)
+  local l_0_9, l_0_10 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_5, l_0_3, false)
   if l_0_7 and l_0_9 then
     l_0_6.DllAndExecInArchive = true
     l_0_6.Archive_Exe = l_0_10

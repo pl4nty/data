@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true or peattributes.isexe == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    if l_0_0 ~= nil and #l_0_0 > 0 and (mp.IsTrustedFile)() then
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if pehdr.NumberOfSections >= 4 and (pesecs[4]).Name == ".newimp" and (mp.bitand)((pesecs[4]).Characteristics, 2147483648) == 2147483648 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

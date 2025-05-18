@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 9 and (pesecs[pehdr.NumberOfSections]).Name == ".CN" and (pesecs[pevars.epsec]).SizeOfRawData >= 475136 and pevars.epsecwr == 1 then
+if mp.HSTR_WEIGHT >= 2 then
   return mp.INFECTED
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_swiminen")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_swiminen")
 end
 return mp.CLEAN
 

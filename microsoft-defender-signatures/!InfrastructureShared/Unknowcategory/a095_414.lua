@@ -3,14 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 48)
-local l_0_1 = (string.find)(l_0_0, "u\002", 1, true)
-if l_0_1 ~= nil then
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 - 1, "\235")
-  l_0_1 = (string.find)(l_0_0, "\184\001\000\000\000\015\162", 1, true)
-  if l_0_1 ~= nil then
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\002")
-  end
+if epcode[1] == 72 and epcode[2] == 137 and peattributes.isexe == true and pehdr.AddressOfEntryPoint == 314640 and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
   return mp.INFECTED
 end
 return mp.CLEAN

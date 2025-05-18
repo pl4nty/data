@@ -3,17 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\filename.bat", 1, true) then
-    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-    local l_0_9 = tonumber(l_0_7)
-    local l_0_10 = tonumber(l_0_8)
-    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
-    ;
-    (mp.TriggerScanResource)("ems", l_0_13)
-  end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 3000000 or l_0_0 < 10000 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("\\program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("\\system32", 1, true) then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true or peattributes.isdll == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 16896 then
   return mp.CLEAN
 end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(l_0_0 - 16896, 16896)
+if l_0_1:find("qxgxwddm)(if(findfile \"bakdwg.fas\")(load \"bakdwg.fas\")))", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

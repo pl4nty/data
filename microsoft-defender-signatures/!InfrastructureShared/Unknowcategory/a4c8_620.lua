@@ -3,20 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
   return mp.CLEAN
 end
-if (mp.ispackedwith)("AutoHotKey_+") then
+local l_0_0 = (mp.GetBruteMatchData)()
+if not l_0_0 then
   return mp.CLEAN
 end
-if ((mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv")) and (hstrlog[1]).matched then
-  local l_0_0 = ((hstrlog[1]).match_offsets)[1]
-  local l_0_1 = (hstrlog[1]).VA + l_0_0
-  if (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1) ~= 557012289 then
-    return mp.INFECTED
-  end
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = (string.lower)(tostring(headerpage))
+else
+  l_0_1 = (string.lower)(tostring(footerpage))
 end
-do
+if not l_0_1 then
   return mp.CLEAN
 end
+local l_0_2 = "(?:set|add)-mppreference\\s+-exclusionpath\\s+[\"\']?c:\\\\+perflogs\\\\*?%?[\"\']?(?:[\\s;]|$)"
+local l_0_3 = false
+l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
+if l_0_3 == false then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

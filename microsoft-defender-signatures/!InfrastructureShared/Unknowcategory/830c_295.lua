@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 <= 3997696 and l_0_0 >= 3538944 and (mp.get_mpattribute)("NID:GolangSnake") then
+if mp.HSTR_WEIGHT >= 32 and (mp.bitand)(mp.HSTR_WEIGHT, 15) >= 2 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("HSTR:BrowserModifier:Win32/Neobar.A")
 return mp.CLEAN
 

@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 273152 and (mp.getfilesize)() > 112640 and peattributes.isdll and peattributes.hasexports then
-  if peattributes.dt_error_heur_exit_criteria then
-    (pe.set_peattribute)("deep_analysis", true)
+if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) then
+  if pehdr.SizeOfImage > 327680 and pehdr.SizeOfImage < 1048576 then
+    (mp.changedetectionname)(805306419)
+    return mp.INFECTED
+  else
+    return mp.SUSPICIOUS
   end
-  ;
-  (pe.reemulate)()
 end
-return mp.INFECTED
+return mp.CLEAN
 

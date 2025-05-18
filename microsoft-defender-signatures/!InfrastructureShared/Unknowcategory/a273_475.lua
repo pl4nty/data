@@ -3,16 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->[XLMSharedStrings]", -20, true) ~= nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.match)(l_0_0, "bypass.+hidden.+%-c%s*if%s*%(.+%)%s*%{.+net%.webclient.+downloadstring.+http.+|%s*iex%s*%}%s*else%s*%{.+net%.webclient.+downloadstring.+http.+|%s*iex%s*%}") ~= nil then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-local l_0_1 = ((mp.GetNormalizedScript)(true))
-local l_0_2 = nil
-l_0_1 = (string.gsub)(l_0_1, "\"&amp;\"", "")
-if l_0_2 > 3 then
-  (mp.vfo_add_buffer)(l_0_1, "[XLMSharedStrings]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-  return mp.INFECTED
-end
-return mp.CLEAN
 

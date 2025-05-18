@@ -3,17 +3,37 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 18
+local l_0_2 = 0
+local l_0_3 = 0
+local l_0_4 = (mp.getfilesize)()
+if l_0_0.is_header then
+  if mp.HEADERPAGE_SZ >= 4095 then
+    l_0_2 = 4095
+  else
+    l_0_2 = mp.HEADERPAGE_SZ
+  end
+else
+  if mp.FOOTERPAGE_SZ >= 4095 then
+    l_0_2 = 4095
+  else
+    l_0_2 = mp.FOOTERPAGE_SZ
+  end
+  if l_0_4 < mp.FOOTERPAGE_SZ then
     return mp.CLEAN
   end
+  l_0_1 = l_0_4 - mp.FOOTERPAGE_SZ + l_0_1
 end
-local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-if (string.find)(l_0_6:lower(), "microsoft.net\\framework.-\\v[0-9.].+\\temporary asp.net files\\") or (string.find)(l_0_6:lower(), "microsoft\\exchange server\\v[0-9].+\\clientaccess\\owa\\bin") or (string.find)(l_0_6:lower(), "microsoft\\exchange server\\v[0-9].+\\frontend\\httpproxy\\owa\\bin") then
+if l_0_1 ~= nil then
+  if l_0_1 < l_0_2 then
+    (mp.readprotection)(false)
+    l_0_3 = (mp.readfile)(l_0_1, l_0_2 - (l_0_1))
+    ;
+    (mp.vfo_add_buffer)(l_0_3, "[Base64Decode]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    ;
+    (mp.set_mpattribute)("//SCPT:Base64.Decoded")
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

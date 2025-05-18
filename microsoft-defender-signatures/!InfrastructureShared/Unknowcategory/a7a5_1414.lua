@@ -3,27 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 16)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-if l_0_1 <= 0 or l_0_1 > 1048576 then
+if (((((((((((((((((((((((((((((((((((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and not (hstrlog[9]).matched) or (hstrlog[10]).matched) and not (hstrlog[11]).matched) or (hstrlog[12]).matched) and not (hstrlog[13]).matched) or (hstrlog[14]).matched) and not (hstrlog[15]).matched) or (hstrlog[16]).matched) and not (hstrlog[17]).matched) or (hstrlog[18]).matched) and not (hstrlog[19]).matched) or (hstrlog[20]).matched) and not (hstrlog[21]).matched) or (hstrlog[22]).matched) and not (hstrlog[23]).matched) or (hstrlog[24]).matched) and not (hstrlog[25]).matched) or (hstrlog[26]).matched) and not (hstrlog[27]).matched) or (hstrlog[28]).matched) and not (hstrlog[29]).matched) or (hstrlog[30]).matched) and not (hstrlog[31]).matched) or (hstrlog[32]).matched) and not (hstrlog[33]).matched) or (hstrlog[34]).matched) and not (hstrlog[35]).matched) or 0 + 1 + 1 + 1 + 1 + 1 + 1 == 1) and 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 >= 4 and 0 + 1 + 1 + 1 + 2 >= 2 then
   return mp.INFECTED
 end
-l_0_0 = (pe.mmap_va)(pevars.sigaddr, 256)
-local l_0_2 = (mp.readu_u32)(l_0_0, 117)
-local l_0_3 = (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1)
-local l_0_4 = (mp.readu_u32)(l_0_0, 35)
-local l_0_5 = (pe.mmap_va)(l_0_4, 256)
-local l_0_6 = (mp.readu_u32)(l_0_0, 45)
-local l_0_7 = (mp.readu_u32)((pe.mmap_va)(l_0_6, 4), 1)
-local l_0_8 = "MZ\144\000\003\000\000\000\004\000\000\000\255\255\000\000\184\000\000\000\000\000\000\000@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\192\000\000\000\014\031\186\014\000\180\t\205!\184\001L\205![DYNEXE] A HELPER STUB TO EMULATE WIN32 MALWARES.$-----------------------------------------------------------jirehPE\000\000L\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\002\001\v\001\n\n\004\000\000\000\000\000\000\000\000\000\000\000\224\001\000\000\224\001\000\000\228\001\000\000\000\000@\000\001\000\000\000\001\000\000\000\005\000\001\000\000\000\000\000\005\000\001\000\000\000\000\000\224\001\016\000\224\001\000\000\000\000\000\000\003\000@\133\000\000\016\000\000\016\000\000\000\000\016\000\000\016\000\000\000\000\000\000\016\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000.text\000\000\000\000\000\016\000\224\001\000\000\000\000\000\000\224\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\224\000\000\224"
-local l_0_9 = "\190\000\000\000\000\189\001\000\000\000âË@%\255\000\000\000â≈âÔäóN\002@\000\015∂ \003\rJ\002@\000Å·\255\000\000\000äôN\002@\000àëN\002@\000\137\rJ\002@\000àüN\002@\000\015∂âN\002@\000\015∂”\001—Å\225\255\000\000\000\015∂ôN\002@\000∏N\003@\0000\0280ÉÓ\001u°√\000\000\000\000"
-local l_0_10 = (pe.mmap_va)(l_0_3, l_0_1)
-local l_0_11 = l_0_8 .. l_0_9 .. l_0_5 .. l_0_10
-;
-(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 2, l_0_1)
-;
-(mp.writeu_u32)(l_0_11, (string.len)(l_0_8) + 107, l_0_7)
-;
-(mp.vfo_add_buffer)(l_0_11, "[VUNDO_DYNEXE]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.INFECTED
+return mp.CLEAN
 

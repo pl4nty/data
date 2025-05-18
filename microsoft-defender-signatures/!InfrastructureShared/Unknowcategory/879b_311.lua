@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr, "ÇE\240\001\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\144")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 17, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 27, "")
+if peattributes.suspicious_image_version and pehdr.MajorImageVersion == 13 and pehdr.MinorImageVersion == 32 then
+  (mp.changedetectionname)(805306482)
+end
 return mp.INFECTED
 

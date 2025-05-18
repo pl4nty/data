@@ -3,40 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  end
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+
+  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+
+    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasUploadeeUrl") then
+      (bm.add_related_file)(R7_PC42)
+      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromUploadee") then
+        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromUploadee", 3600)
+        return mp.INFECTED
+      end
+    end
+  end
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == "" or l_0_1 == nil then
-  return mp.CLEAN
-end
-l_0_1 = (string.lower)(l_0_1)
-if l_0_1 == "" or l_0_1 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = (string.match)(l_0_1, "werfault%.exe\"?%s+-s%s+.+%s+-e%s+(%d+)")
-if l_0_2 == "" or l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = tonumber(l_0_2)
-if l_0_3 == "" or l_0_3 == nil then
-  return mp.CLEAN
-end
-local l_0_4 = (mp.GetPPidFromPid)(l_0_3)
-if l_0_4 == "" or l_0_4 == nil then
-  return mp.CLEAN
-end
-local l_0_5 = (mp.GetProcessCommandLine)(l_0_4)
-if l_0_5 == "" or l_0_5 == nil then
-  return mp.CLEAN
-end
-l_0_5 = (string.lower)(l_0_5)
-if l_0_5 == "" or l_0_5 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_5, "lsass.exe", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

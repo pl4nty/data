@@ -3,27 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
-  end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and ((string.find)(l_0_0, " whoami", 1, true) or (string.find)(l_0_0, " quser", 1, true) or (string.find)(l_0_0, " type ", 1, true) or (string.find)(l_0_0, " nltest", 1, true)) then
-    return mp.INFECTED
-  end
+if (mp.getfilesize)() > 25360 or peattributes.ismsil ~= true then
   return mp.CLEAN
 end
+local l_0_0 = ((pe.get_versioninfo)()).FileDescription
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if l_0_0 == "vshost64-clr3" or l_0_0 == "vshost64-clr2" or l_0_0 == "vshost32-clr3" or l_0_0 == "vshost32-clr2" or l_0_0 == ".NET Framework" or l_0_0 == "XML Protector" or l_0_0 == "Microsoft" then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

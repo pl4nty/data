@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if not (pe.isdynamic_va)(pevars.sigaddr) then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
+if (string.find)(l_0_0, "system32\\mrt.exe", 1, true) then
   return mp.CLEAN
 end
 return mp.INFECTED

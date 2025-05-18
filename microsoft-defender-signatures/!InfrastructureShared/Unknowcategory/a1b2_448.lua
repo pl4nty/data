@@ -3,22 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//RPF:IS_Pdf") then
-  local l_0_0 = (mp.getfilesize)()
-  if l_0_0 < 20000 then
-    return mp.CLEAN
-  end
-  if l_0_0 > 50000 then
-    return mp.CLEAN
-  end
-  ;
-  (mp.readprotection)(false)
-  local l_0_1 = (mp.readfile)(0, l_0_0)
-  if l_0_1:match("/URI %(http%://usaa%.com%-sec%-inet%-auth%-logon%-ent%-logon%-logon%-") then
+do
+  if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_no_security") and peattributes.has_msilresources and (mp.getfilesize)() > 1000000 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
-end
-do
   return mp.CLEAN
 end
 

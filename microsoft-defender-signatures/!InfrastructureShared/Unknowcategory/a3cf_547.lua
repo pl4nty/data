@@ -3,19 +3,30 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+local l_0_0, l_0_1 = nil, nil
+for l_0_5 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_2, l_0_3 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R5 in 'UnsetPending'
 
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+  if (sigattr_head[R5_PC6]).matched then
+    if (sigattr_head[R5_PC6]).attribute == 16384 and l_0_2 == nil then
+      l_0_2 = (string.lower)((sigattr_head[R5_PC6]).utf8p1)
+    else
+      if (sigattr_head[R5_PC6]).attribute == 16393 and l_0_3 == nil then
+        l_0_3 = (string.lower)((sigattr_head[R5_PC6]).utf8p2)
+        l_0_3 = (string.gsub)(l_0_3, "\"", "")
+      end
+    end
+    -- DECOMPILER ERROR at PC58: Unhandled construct in 'MakeBoolean' P1
 
-    if (string.match)(l_0_0, "if%s*%(%s*!%s*%(%s*%[%s*string%s*%]%s*%(%s*get%-wmiobject%s*-namespace%s*root\\subscription%s*%-class%s*__filtertoconsumerbinding%s*%)%)%.contains%(%s*\'scm event filter\'%s*%)%).*%{.*iex.+net%.webclient.+downloadstring.+http.*%}") ~= nil then
+    if l_0_2 ~= nil and l_0_3 ~= nil and l_0_2 == l_0_3 then
+      (mp.ReportLowfi)((sigattr_head[R5_PC6]).utf8p1, 3836302819)
       return mp.INFECTED
     end
-    return mp.CLEAN
+    break
   end
+end
+do
+  return mp.CLEAN
 end
 

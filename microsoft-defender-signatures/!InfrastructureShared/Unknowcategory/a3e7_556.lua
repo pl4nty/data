@@ -3,12 +3,33 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
+      local l_0_1, l_0_2, l_0_3, l_0_4 = (this_sigattrlog[3]).utf8p2
+    end
+    -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC54: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_1 ~= nil and (string.len)(l_0_1) > 7 and ((string.find)(l_0_1, "TgBlAHcALQBJAHQAZQBt", 1, true) or (string.find)(l_0_1, "LgBQAFMAVgBFAFIAcwBpAE8Abg", 1, true) or (string.find)(l_0_1, "AHwASQBFAFgA", 1, true)) then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\184\028\024~=\144")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

@@ -3,16 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (mp.getfilesize)() < 50000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if (mp.crc32)(-1, epcode, 1, 9) == 2556408724 and pevars.epsec == pehdr.NumberOfSections then
+  return mp.INFECTED
+else
+  return mp.LOWFI
 end
+return mp.CLEAN
 

@@ -3,25 +3,34 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
+if not (this_sigattrlog[1]).matched or not (this_sigattrlog[2]).matched then
+  return mp.CLEAN
+end
+if not (this_sigattrlog[1]).wp2 or not (this_sigattrlog[2]).utf8p1 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.utf16to8)((this_sigattrlog[1]).wp2)
+local l_0_1 = (this_sigattrlog[2]).utf8p1
+if #l_0_1 <= #l_0_0 or (string.sub)(l_0_1, -#l_0_0) ~= l_0_0 then
+  return mp.CLEAN
+end
+if not (sysio.IsFileExists)(l_0_1) then
+  return mp.CLEAN
+end
+if (versioning.GetCloudBlockLevel)() == 4 then
+  (mp.TriggerScanResource)("taskscheduler", l_0_1)
+end
+if (MpCommon.GetPersistContextCountNoPath)("bm_ipc_taskschd") > 0 then
+  local l_0_2 = (MpCommon.GetPersistContextNoPath)("bm_ipc_taskschd")
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    local l_0_8, l_0_9, l_0_10 = (string.match)(l_0_7, "([%w%p]+);([%w%p]+);([%w%p]+)")
+    ;
+    (mp.ReportLowfi)(l_0_10, tonumber(l_0_9))
+  end
+end
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC23: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10 = (this_sigattrlog[3]).utf8p2
-    end
-    if (this_sigattrlog[5]).matched then
-      local l_0_11 = nil
-      if l_0_11 == nil or (string.find)(l_0_11, "searchsettings\\nthook64.dll", 1, true) or (string.find)(l_0_11, "searchsettings\\nthook.dll", 1, true) or (string.find)(l_0_11, "cognitas\\csathl64.dll", 1, true) or (string.find)(l_0_11, "cognitas\\csathl.dll", 1, true) or (string.find)(l_0_11, "sun\\java\\deployment\\cache", 1, true) or (string.find)(l_0_11, "surfcanyon\\iesearchplugin64.dll", 1, true) or (mp.IsKnownFriendlyFile)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[5]).utf8p2)), true, false) then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
+  l_0_2 = mp
+  l_0_2 = l_0_2.CLEAN
+  return l_0_2
 end
 

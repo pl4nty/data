@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pe.get_api_id)((pe.get_regval)(pe.REG_EAX)) ~= 4111270722 then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\001\000\000\000")
-return mp.INFECTED
+if peattributes.isdll and pehdr.NumberOfSections > 5 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

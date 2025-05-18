@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
+if peattributes.isdll and pehdr.NumberOfSections == 5 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 then
+  return mp.INFECTED
 end
-if not peattributes.isvbnative and not peattributes.isvbpcode then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 2097152 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

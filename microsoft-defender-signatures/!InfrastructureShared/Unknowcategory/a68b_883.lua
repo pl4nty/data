@@ -3,29 +3,41 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_HIGH_RID <= l_0_0.integrity_level then
+if not peattributes.ismsil then
   return mp.CLEAN
 end
-local l_0_1, l_0_2 = nil, nil
-if (this_sigattrlog[1]).matched then
-  l_0_1 = (this_sigattrlog[1]).timestamp
-end
-if (this_sigattrlog[2]).matched then
-  l_0_1 = (this_sigattrlog[2]).timestamp
-end
-if (this_sigattrlog[3]).matched then
-  l_0_1 = (this_sigattrlog[3]).timestamp
-end
-if (this_sigattrlog[4]).matched then
-  l_0_2 = (this_sigattrlog[4]).timestamp
-end
-if l_0_2 < l_0_1 or l_0_0.ppid == nil or (string.find)(l_0_0.ppid, "pid:4$", 1, false) ~= nil or (string.find)(l_0_0.ppid, "pid:4,", 1, true) ~= nil then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 16777216 then
   return mp.CLEAN
 end
-local l_0_3 = (MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[4]).ppid)
-if l_0_0.token_elevation_type ~= MpCommon.TOKEN_ELEVATION_TYPE_FULL and l_0_0.integrity_level < l_0_3.IntegrityLevel and l_0_3.IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+local l_0_1 = nil
+if (hstrlog[3]).matched then
+  l_0_1 = (hstrlog[3]).VA
+else
+  if (hstrlog[4]).matched then
+    l_0_1 = (hstrlog[4]).VA
+  else
+    return mp.CLEAN
+  end
+end
+if not (pe.contains_va)(1, l_0_1) then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_2 = (mp.readfile)((pesecs[1]).PointerToRawData, (pesecs[1]).SizeOfRawData)
+if #l_0_2 < 4096 and #l_0_2 > 16777216 then
+  return mp.CLEAN
+end
+for l_0_6 in (string.gmatch)(l_0_2, "zsrvvgEAAA[%w+/]+=?=?") do
+  if #l_0_6 > 4096 then
+    (mp.set_mpattribute)("//MpBase64DecodeLongLines")
+    ;
+    (mp.vfo_add_buffer)(l_0_6, "[Obfuscator.AO]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    break
+  end
+end
+do
   return mp.INFECTED
 end
-return mp.CLEAN
 

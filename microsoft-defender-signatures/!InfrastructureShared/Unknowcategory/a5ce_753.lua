@@ -3,32 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if not l_0_0 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 2000000 or l_0_0 < 4000 then
   return mp.CLEAN
 end
-l_0_0 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
-if not (sysio.IsFileExists)(l_0_0) then
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("threatsieve", 1, true) then
   return mp.CLEAN
 end
-local l_0_1 = (sysio.GetFileLastWriteTime)(l_0_0)
-if not ((sysio.GetLastResult)()).Success or l_0_1 == 0 then
+if l_0_1:find("pc-sdk-setup", 1, true) then
   return mp.CLEAN
 end
-l_0_1 = l_0_1 / 10000000 - 11644473600
-local l_0_2 = (MpCommon.GetCurrentTimeT)()
-if l_0_2 <= l_0_1 then
+if l_0_1:find("processcheck", 1, true) then
   return mp.CLEAN
 end
-do
-  local l_0_3 = (l_0_2 - (l_0_1)) / 60
-  if not l_0_3 <= 1440 then
-    return mp.CLEAN
-  end
-  if (#l_0_0 >= 9 and (string.sub)(l_0_0, 2, 9) == ":\\users\\") or #l_0_0 >= 15 and (string.sub)(l_0_0, 2, 15) == ":\\programdata\\" then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- DECOMPILER ERROR: 5 unprocessed JMP targets
+if l_0_1:find("empengine", 1, true) then
+  return mp.CLEAN
 end
+if l_0_1:find("browser", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("lhshield", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find(".arx", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find(".zrx", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

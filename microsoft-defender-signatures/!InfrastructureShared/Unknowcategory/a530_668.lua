@@ -3,23 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe or peattributes.packed or not peattributes.no_exception or not peattributes.no_exports or not peattributes.no_security or not peattributes.x86_image then
+local l_0_0 = ""
+if (this_sigattrlog[8]).utf8p1 ~= nil then
+  l_0_0 = (string.lower)((this_sigattrlog[8]).utf8p1)
+else
+  if (this_sigattrlog[9]).utf8p1 ~= nil then
+    l_0_0 = (string.lower)((this_sigattrlog[9]).utf8p1)
+  else
+    return mp.CLEAN
+  end
+end
+if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
   return mp.CLEAN
 end
-local l_0_0 = pevars.sigaddr
-local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 256, "`\156", nil, pe.VM_SEARCH_FOP)
-if l_0_1 == nil then
-  return mp.CLEAN
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
 end
-local l_0_2 = (pe.vm_search)(l_0_1, l_0_1 + 256, "\185", nil, pe.VM_SEARCH_FOP)
-if l_0_2 == nil then
-  return mp.CLEAN
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
 end
-l_0_2 = (pe.vm_search)(l_0_2, l_0_2 + 256, "\226", nil, pe.VM_SEARCH_FOP)
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattributeex)("Lua:fopex_shellter_trick", l_0_1)
 return mp.INFECTED
 

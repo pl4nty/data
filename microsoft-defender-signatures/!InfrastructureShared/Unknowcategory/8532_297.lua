@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv") then
   return mp.INFECTED
 end
-if (mp.get_mpattribute)("Tracur_decryption") then
-  return mp.INFECTED
-end
-;
-(mp.set_mpattribute)("HSTR:Tracur_Antiemu")
-return mp.LOWFI
+return mp.CLEAN
 

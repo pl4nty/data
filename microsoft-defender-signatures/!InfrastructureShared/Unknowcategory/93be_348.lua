@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata and (mp.getfilesize)() - ((pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData) > 65536 then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if (string.len)(l_0_0) < 4096 then
+      return mp.CLEAN
+    end
+    if (string.find)(l_0_0, "%.ps1") then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.LOWFI
 

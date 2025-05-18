@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
+local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\virtualboxvm.exe", 1, true) then
-  return mp.CLEAN
+if (string.lower)((string.sub)(l_0_0.image_path, -14)) == "rmmservice.exe" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\windows\\", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpcmdrun.exe", 1, true) then
-    return mp.CLEAN
+local l_0_0 = pevars.sigaddr + 32
+do
+  if (string.find)((pe.mmap_va)(l_0_0, 64), "t\017", 1, true) == nil and (string.find)((pe.mmap_va)(l_0_0, 32), "t\003", 1, true) == nil and (string.find)((pe.mmap_va)(l_0_0, 64), "t\018", 1, true) == nil then
+    local l_0_1 = (string.find)((pe.mmap_va)(l_0_0, 64), "t\002", 1, true)
   end
+  -- DECOMPILER ERROR at PC58: Confused about usage of register: R1 in 'UnsetPending'
+
+  ;
+  (pe.mmap_patch_va)(l_0_0 + l_0_1 - 1, "\235")
   return mp.INFECTED
 end
-return mp.CLEAN
 

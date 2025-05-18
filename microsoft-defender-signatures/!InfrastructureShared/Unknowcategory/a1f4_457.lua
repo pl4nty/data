@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 512
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr - 256, l_0_0)
-local l_0_2 = (string.find)(l_0_1, "JB\015%z")
-if l_0_2 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 7, "")
+(pe.mmap_patch_va)(pevars.sigaddr + 2, "")
+if (string.byte)((pe.mmap_va)(pevars.sigaddr + 5, 1), 1) == 157 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 5, "\149")
   ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 16, "\235")
+  (pe.mmap_patch_va)(pevars.sigaddr + 11, "\002")
+else
   ;
-  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-  return mp.INFECTED
+  (pe.mmap_patch_va)(pevars.sigaddr, "j\003Y‰M")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 8, "\002")
 end
-return mp.CLEAN
+return mp.INFECTED
 

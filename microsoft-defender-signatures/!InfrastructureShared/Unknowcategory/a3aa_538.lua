@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_6")
+(mp.set_mpattribute)("lua_codepatch_tibs_7")
 local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (mp.readu_u32)(l_0_0, 10)
-local l_0_2 = (mp.readu_u32)(l_0_0, 21)
+local l_0_1 = (mp.readu_u32)(l_0_0, 12)
+local l_0_2 = (mp.readu_u32)(l_0_0, 23)
 local l_0_3 = (pe.get_regval)(pe.REG_EDX)
-local l_0_4 = (string.byte)(l_0_0, 6)
+local l_0_4 = (string.byte)(l_0_0, 8)
 local l_0_5 = (mp.ror32)(l_0_3, l_0_4) - (mp.bitxor)(l_0_2, l_0_1) - 1
 ;
 (pe.set_regval)(pe.REG_EBX, l_0_5)

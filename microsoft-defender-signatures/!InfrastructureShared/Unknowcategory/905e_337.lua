@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EBP) - 328
-local l_0_1 = (pe.mmap_va)(l_0_0, 4)
-local l_0_2 = (mp.readu_u32)(l_0_1, 1)
-if l_0_2 ~= 268675836 then
-  (mp.set_mpattribute)("PEBMPAT:AntiEmuCheckConstantMemAdd")
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p1
+    if (string.find)((string.lower)(l_0_0), "\\microsoft\\windows\\wer\\report", 1, true) == nil then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

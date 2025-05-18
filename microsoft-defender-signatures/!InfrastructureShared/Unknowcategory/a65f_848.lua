@@ -3,29 +3,58 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 200000000 then
+local l_0_0 = {}
+l_0_0["cmd.exe"] = true
+l_0_0["powershell.exe"] = true
+local l_0_1 = nil
+if (this_sigattrlog[1]).matched then
+  l_0_1 = (this_sigattrlog[1]).ppid
+else
+  if (this_sigattrlog[2]).matched then
+    l_0_1 = (this_sigattrlog[2]).ppid
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_1 = (this_sigattrlog[3]).ppid
+    else
+      if (this_sigattrlog[4]).matched then
+        l_0_1 = (this_sigattrlog[4]).ppid
+      else
+        if (this_sigattrlog[5]).matched then
+          l_0_1 = (this_sigattrlog[5]).ppid
+        else
+          return mp.CLEAN
+        end
+      end
+    end
+  end
+end
+local l_0_2 = nil
+if (this_sigattrlog[6]).matched then
+  l_0_2 = (this_sigattrlog[6]).ppid
+else
   return mp.CLEAN
 end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  local l_0_1 = (string.match)((this_sigattrlog[5]).utf8p2, ";regionsize:(%d+)")
-  if l_0_1 == nil then
+for l_0_6 = 1, 5 do
+  if l_0_6 > 6 then
     return mp.CLEAN
   end
-  if (string.find)(l_0_0, ";destport=80;", 1, true) or (string.find)(l_0_0, ";destport=443;", 1, true) then
-    return mp.CLEAN
+  local l_0_7, l_0_8 = (bm.get_process_relationships)(l_0_1)
+  for l_0_12,l_0_13 in ipairs(l_0_8) do
+    if l_0_13.reason == 1 then
+      local l_0_14 = (string.lower)((string.match)(l_0_13.image_path, "\\([^\\]+)$"))
+      if l_0_13.ppid == l_0_2 then
+        return mp.INFECTED
+      else
+        if l_0_0[l_0_14] ~= true then
+          (mp.ReportLowfi)(l_0_13.image_path, 187850996)
+          return mp.CLEAN
+        end
+      end
+      l_0_1 = l_0_13.ppid
+    end
   end
-  if tonumber(l_0_1) < 110000 then
-    return mp.CLEAN
-  end
-  local l_0_2 = (bm.get_current_process_startup_info)()
-  ;
-  (bm.request_SMS)(l_0_2.ppid, "M")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1000)
-  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC118: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
 

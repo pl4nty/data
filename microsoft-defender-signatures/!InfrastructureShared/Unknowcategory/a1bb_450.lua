@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("RPF:SmartAssembly") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-    local l_0_0 = (pe.get_versioninfo)()
-    if l_0_0 ~= nil and (string.find)((string.lower)(l_0_0.InternalName), "luckyleap", 1, true) then
-      (mp.set_mpattribute)("Trojan:Win32/LuckyLeap")
-    end
-  end
+if peattributes.isdll ~= true or peattributes.hasexports ~= false then
   return mp.CLEAN
 end
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+end
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+return mp.INFECTED
 

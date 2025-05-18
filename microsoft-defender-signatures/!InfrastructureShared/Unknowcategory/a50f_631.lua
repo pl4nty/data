@@ -3,35 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.lastscn_falign ~= true then
+if ((pehdr.DataDirectory)[5]).RVA <= 0 then
   return mp.CLEAN
 end
-if peattributes.no_relocs ~= true then
+if ((pehdr.DataDirectory)[5]).Size <= 0 then
   return mp.CLEAN
 end
-if peattributes.epinfirstsect ~= true then
+if (mp.getfilesize)() <= ((pehdr.DataDirectory)[5]).RVA then
+  return mp.INFECTED
+end
+;
+(mp.readprotection)(false)
+if (mp.getfilesize)() <= ((pehdr.DataDirectory)[5]).RVA + 9 then
+  return mp.INFECTED
+end
+local l_0_0 = (mp.readfile)(((pehdr.DataDirectory)[5]).RVA, 9)
+if (mp.readu_u32)(l_0_0, 5) ~= 131584 then
   return mp.CLEAN
 end
-if peattributes.isexe ~= true then
+if l_0_0:byte(9) ~= 48 then
   return mp.CLEAN
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
+if (mp.getfilesize)() < ((pehdr.DataDirectory)[5]).RVA + ((pehdr.DataDirectory)[5]).Size then
+  return mp.INFECTED
 end
-if ((pehdr.DataDirectory)[1]).RVA <= 0 then
-  return mp.CLEAN
-end
-if pehdr.MajorImageVersion ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.MinorImageVersion ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.BaseOfCode ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode ~= 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

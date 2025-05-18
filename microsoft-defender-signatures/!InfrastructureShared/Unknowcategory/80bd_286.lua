@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-if l_0_1:match("([^\\]+)$") == "spoolsv.exe" then
+if mp.HSTR_WEIGHT >= 8 then
   return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT >= 6 then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    ;
+    (pe.reemulate)()
+  end
 end
-return mp.CLEAN
+return mp.LOWFI
 

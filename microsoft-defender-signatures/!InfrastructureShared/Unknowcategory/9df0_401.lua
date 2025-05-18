@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) and (l_0_1:match("([^\\]+)$") == "fodhelper.exe" or l_0_1:match("([^\\]+)$") == "computerdefaults.exe") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if pevars.epsec == 1 and (pesecs[pevars.epsec]).Name == ".text" and (pesecs[2]).Name == ".data" and (pesecs[3]).Name == ".rsrc" and peattributes.no_decription and peattributes.suspicious_image_version then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

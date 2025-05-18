@@ -3,29 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = (this_sigattrlog[3]).utf8p1
-  local l_0_1 = (this_sigattrlog[3]).utf8p2
-  if l_0_0 == nil or l_0_1 == nil then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC2: Confused about usage of register: R0 in 'UnsetPending'
+
+string.tohex = function(l_1_0)
+  -- function num : 0_0
+  return l_1_0:gsub(".", function(l_2_0)
+    -- function num : 0_0_0
+    local l_2_1 = string.format
+    local l_2_2 = "%02X"
+    do
+      local l_2_3, l_2_4 = (string.byte)(l_2_0), .end
+      do return l_2_1(l_2_2, l_2_3, l_2_4) end
+      -- DECOMPILER ERROR at PC9: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
+    end
   end
-  local l_0_2 = (string.lower)((string.sub)(l_0_0, 0, 3))
-  if l_0_2 == nil or #l_0_2 ~= 3 or (string.sub)(l_0_2, -2) ~= ":\\" then
-    return mp.CLEAN
-  end
-  local l_0_3 = (string.lower)((string.sub)(l_0_1, 0, 3))
-  if l_0_3 == nil or #l_0_3 ~= 3 or (string.sub)(l_0_3, -2) ~= ":\\" then
-    return mp.CLEAN
-  end
-  if l_0_2 == l_0_3 then
-    return mp.CLEAN
-  end
-  if (sysio.IsFileExists)(l_0_1) then
-    (mp.ReportLowfi)(l_0_1, 1104973016)
+)
+end
+
+local l_0_0 = (nri.GetRawResponseBlob)()
+do
+  if l_0_0 ~= nil and (string.len)(l_0_0) < 4096 then
+    local l_0_1 = {}
+    l_0_1.NRI_ResponseBlob = l_0_0:tohex()
+    ;
+    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_1)
   end
   return mp.INFECTED
-end
-do
-  return mp.CLEAN
 end
 

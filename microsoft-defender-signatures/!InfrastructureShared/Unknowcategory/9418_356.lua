@@ -3,9 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:ZwangiExe")
-if ((hstrlog[1]).matched and 1 or 0) + ((hstrlog[2]).matched and 1 or 0) + ((hstrlog[3]).matched and 1 or 0) >= 3 then
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
+;
+(mp.set_mpattribute)("do_deep_rescan")
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+if mp.HSTR_WEIGHT == 2 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

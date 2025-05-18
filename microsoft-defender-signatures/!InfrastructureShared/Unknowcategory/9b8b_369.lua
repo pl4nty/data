@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("SCPT:HackTool.Win32.POWERGAP.A1")
+(mp.set_mpattribute)("SCPT:HackTool.Win32.POWERGAP.A2")
 local l_0_0 = (string.lower)((mp.getfilename)())
 if l_0_0 == nil then
   return mp.CLEAN

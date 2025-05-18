@@ -3,17 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "omadmclient.exe" or l_0_1:match("([^\\]+)$") == "provtool.exe" then
-      return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[5]).matched then
+  local l_0_0 = nil
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    if l_0_1 ~= nil then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+        ;
+        (bm.add_related_file)(l_0_6)
+      end
     end
   end
-  if (versioning.IsSeville)() and (versioning.GetCloudBlockLevel)() >= 4 then
-    return mp.INFECTED
-  end
-  return mp.LOWFI
+end
+do
+  l_0_1 = mp
+  l_0_1 = l_0_1.INFECTED
+  return l_0_1
 end
 

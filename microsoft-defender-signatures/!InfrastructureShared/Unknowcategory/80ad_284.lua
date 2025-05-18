@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 7744 and l_0_0 <= 9000 and (pesecs[2]).Name == ".wtf" and peattributes.isdll == true then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 and (string.find)((string.lower)(l_0_0.image_path), "sbsimulation_sb_", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

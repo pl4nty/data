@@ -3,9 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 and (string.find)((string.lower)(l_0_0), "\\servicing\\packages\\microsoft%-windows%-client%-desktop%-required%-package.+%.mum") then
-  (mp.set_mpattribute)("SelectableWinDefendPkgInServicing")
+do
+  if ((pe.get_versioninfo)()).CompanyName == "Company & Sons" and peattributes.ismsil == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

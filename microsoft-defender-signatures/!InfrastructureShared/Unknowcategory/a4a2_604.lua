@@ -3,25 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("BM_UnsignedDll") and (mp.getfilesize)() < 512000 then
-  local l_0_0, l_0_1 = (pe.get_exports)()
-  if l_0_1 == nil or l_0_0 == 0 then
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil and (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[4]).utf8p1)
+  if l_0_0:match("([^\\]+)$") ~= l_0_1 then
     return mp.CLEAN
   end
   local l_0_2 = {}
-  l_0_2.npgetcaps = true
-  l_0_2.nplogonnotify = true
-  l_0_2.nppasswordchangenotify = true
-  local l_0_3 = 0
-  for l_0_7 = 1, l_0_0 do
-    local l_0_8 = (pe.mmap_string_rva)((l_0_1[l_0_7]).namerva, 64)
-    if l_0_8 ~= nil and l_0_2[(string.lower)(l_0_8)] then
-      l_0_3 = l_0_3 + 1
-    end
-    if l_0_3 == 3 then
-      return mp.INFECTED
-    end
+  l_0_2["winword.exe"] = true
+  l_0_2["excel.exe"] = true
+  l_0_2["outlook.exe"] = true
+  l_0_2["olk.exe"] = true
+  l_0_2["splwow64.exe"] = true
+  l_0_2["deletelogfiles.exe"] = true
+  l_0_2["dw20.exe"] = true
+  l_0_2["microsoft.uev.synccontroller.exe"] = true
+  if l_0_2[l_0_1] then
+    return mp.CLEAN
   end
+  return mp.INFECTED
 end
 do
   return mp.CLEAN

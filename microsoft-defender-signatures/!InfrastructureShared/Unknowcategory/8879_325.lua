@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if peattributes.isdll == true then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+;
+(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 5000)
 return mp.INFECTED
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[4]).Name == ".didat" and (pesecs[4]).Characteristics == 3221225536 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("FOPEX:VirTool:Win32/Obfuscator.AKN") then
+  (pe.mmap_patch_va)(pevars.sigaddr + 6, "É¿\t")
 end
-return mp.CLEAN
+return mp.INFECTED
 

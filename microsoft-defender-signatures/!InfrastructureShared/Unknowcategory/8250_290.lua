@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-    if l_0_0 ~= nil then
-      (bm.add_related_file)(l_0_0)
-    end
-  end
+if (pe.query_import)(pe.IMPORT_STATIC, 2832782153) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3514167808) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 1794917727) ~= 0 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

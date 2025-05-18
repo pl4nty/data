@@ -3,19 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if l_0_0 then
-  if not (string.find)(l_0_0, "^c:\\") then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\game", 1, true) then
-    return mp.CLEAN
-  end
+if pevars.epsec < pehdr.NumberOfSections or (mp.readu_u32)(epcode, 1) ~= 2030270560 or peattributes.epoutofimage or peattributes.amd64_image or (mp.getfilesize)() < pehdr.SizeOfImage then
+  (mp.changedetectionname)(805306412)
+  return mp.INFECTED
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_1.ppid, "M")
-;
-(bm.add_action)("SmsAsyncScanEvent", 1000)
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_INMEMORY then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

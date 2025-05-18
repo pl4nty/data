@@ -3,17 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
-    if l_0_1 ~= nil and (string.len)(l_0_1) > 1 then
-      if (sysio.IsFileExists)(l_0_1) then
-        (mp.ReportLowfi)(l_0_1, 2782132239)
-      end
+if (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() < 153600 then
+  local l_0_0, l_0_1 = (pe.get_exports)()
+  if l_0_1 == nil or l_0_0 == 0 then
+    return mp.CLEAN
+  end
+  for l_0_5 = 1, l_0_0 do
+    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
+    if l_0_6 ~= nil and (string.lower)(l_0_6) == "dllgetclassobject" then
       return mp.INFECTED
     end
   end
+end
+do
   return mp.CLEAN
 end
 

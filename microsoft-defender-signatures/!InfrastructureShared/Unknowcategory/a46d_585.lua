@@ -3,22 +3,36 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[8]).utf8p1
-if l_0_0 == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched then
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == nil or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == "" then
+      return mp.CLEAN
+    end
+    local l_0_5 = nil
+    -- DECOMPILER ERROR at PC45: Overwrote pending register: R1 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
+
+    if nil == nil or nil == "" then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC61: Confused about usage of register: R1 in 'UnsetPending'
+
+    if (sysio.IsFileExists)(nil) then
+      (bm.add_related_file)(nil)
+    end
+    return mp.INFECTED
+  end
 end
-l_0_0 = (string.lower)(l_0_0)
-if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
-  return mp.CLEAN
-end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
-end
-return mp.INFECTED
 

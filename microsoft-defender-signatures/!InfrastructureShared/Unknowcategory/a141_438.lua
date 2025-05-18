@@ -3,15 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.ps1)")
-if l_0_2 and (sysio.IsFileExists)(l_0_2) then
-  (mp.ReportLowfi)(l_0_2, 1120308759)
-  ;
-  (bm.add_related_file)(l_0_2)
+if not peattributes.isdll or not peattributes.hasexports then
+  return mp.CLEAN
 end
-;
-(bm.add_action)("EmsScan", 3000)
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 3 then
+  return mp.CLEAN
+end
+local l_0_2 = 0
+for l_0_6 = 1, l_0_0 do
+  local l_0_7 = (pe.mmap_string_rva)((l_0_1[l_0_6]).namerva, 64)
+  if l_0_7 == "UMEP" then
+    l_0_2 = l_0_2 + 1
+  end
+  if l_0_7 == "VFEP" then
+    l_0_2 = l_0_2 + 1
+  end
+end
+if l_0_2 < 2 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

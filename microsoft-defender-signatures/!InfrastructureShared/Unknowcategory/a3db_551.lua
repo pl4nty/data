@@ -3,10 +3,37 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+local l_0_0, l_0_1 = nil, nil
+if (this_sigattrlog[2]).matched then
+  do
+    if (this_sigattrlog[2]).utf8p2 ~= nil then
+      local l_0_2 = nil
+      -- DECOMPILER ERROR at PC21: Confused about usage of register: R2 in 'UnsetPending'
 
-if (((((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and (hstrlog[5]).matched) or not (hstrlog[8]).matched) and (hstrlog[10]).matched) or (hstrlog[4]).matched) and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+      if (sysio.IsFileExists)((this_sigattrlog[2]).utf8p2) then
+        (bm.add_related_file)((this_sigattrlog[2]).utf8p2)
+      end
+    end
+    do
+      if (this_sigattrlog[2]).utf8p1 ~= nil then
+        local l_0_3, l_0_4 = (string.lower)((this_sigattrlog[2]).utf8p1)
+      end
+      do
+        if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+          local l_0_5 = nil
+        end
+        -- DECOMPILER ERROR at PC52: Confused about usage of register: R0 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC59: Confused about usage of register: R1 in 'UnsetPending'
+
+        if l_0_5 ~= nil and (string.lower)((this_sigattrlog[3]).utf8p2) ~= nil and (string.find)(l_0_5, (string.lower)((this_sigattrlog[3]).utf8p2), 1, true) then
+          return mp.INFECTED
+        end
+        return mp.CLEAN
+      end
+    end
+  end
 end
-return mp.CLEAN
 

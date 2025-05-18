@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\mozilla firefox\\", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win32/Empire.B")
-return mp.LOWFI
+return mp.CLEAN
 

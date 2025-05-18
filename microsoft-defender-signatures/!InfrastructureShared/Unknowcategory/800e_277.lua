@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if peattributes.isexe == true or peattributes.isdll == true then
+if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("Lua:DelphiHeuristicsThrottle") and (mp.getfilesize)() < 1843200 then
   return mp.INFECTED
 end
 return mp.CLEAN

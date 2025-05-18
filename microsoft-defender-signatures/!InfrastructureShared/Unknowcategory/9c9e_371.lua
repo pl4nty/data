@@ -3,18 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if not peattributes.isdll or l_0_0 > 500000 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["svchost.exe"] = true
+  l_0_3["taskeng.exe"] = true
+  l_0_3["taskhostw.exe"] = true
+  if l_0_3[l_0_2] then
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_1 = 0
-local l_0_2 = 0
-if (hstrlog[1]).matched and (hstrlog[2]).matched then
-  l_0_1 = (hstrlog[1]).hitcount
-  l_0_2 = (hstrlog[2]).hitcount
-end
-if l_0_1 == 2 and l_0_2 == 2 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

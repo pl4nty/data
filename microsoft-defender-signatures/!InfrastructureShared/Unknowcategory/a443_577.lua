@@ -3,24 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 98304 then
+if not (this_sigattrlog[1]).ppid then
   return mp.CLEAN
 end
-if l_0_0 < 40960 then
-  return mp.CLEAN
+local l_0_0 = (MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[1]).ppid)
+if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= l_0_0.IntegrityLevel then
+  local l_0_1, l_0_2 = (bm.get_process_relationships)()
+  if l_0_1 ~= nil then
+    for l_0_6,l_0_7 in ipairs(l_0_1) do
+      if l_0_7.image_path ~= nil then
+        local l_0_8 = (string.lower)(l_0_7.image_path)
+        if (string.find)(l_0_8, "\\chromium.exe", -11, true) then
+          return mp.INFECTED
+        end
+      end
+    end
+  end
 end
-local l_0_1 = tostring(headerpage)
-if (string.find)(l_0_1, "\n", 1, true) ~= nil then
-  return mp.CLEAN
+do
+  l_0_1 = mp
+  l_0_1 = l_0_1.CLEAN
+  return l_0_1
 end
-local l_0_2, l_0_3, l_0_4 = l_0_1:match("function%((%l%l%l%l%l%l+),(%l%l%l%l%l%l+),(%l%l%l%l%l%l+)[^%l]")
-local l_0_5 = #l_0_3 - 1
-local l_0_6 = #l_0_3 + 1
-if (#l_0_2 ~= #l_0_3 and #l_0_2 ~= l_0_5 and #l_0_2 ~= l_0_6) or #l_0_3 ~= #l_0_4 and l_0_5 ~= #l_0_4 and l_0_6 ~= #l_0_4 then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("SCRIPT:Worm:JS/Proslikefan_Lowfi")
-return mp.CLEAN
 

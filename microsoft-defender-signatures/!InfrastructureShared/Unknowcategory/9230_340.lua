@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true and (mp.get_mpattribute)("LUA:FileSizeGT100M.A") == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = 0
+if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
+  l_0_0 = 16
 end
+if (mp.bitand)(mp.HSTR_WEIGHT, 15) + l_0_0 >= 18 then
+  return mp.INFECTED
+end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan_prepscram")
+return mp.CLEAN
 

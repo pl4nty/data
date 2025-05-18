@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 4 and peattributes.isdll and peattributes.hasexports and peattributes.epinfirstsect then
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if mp.HSTR_CALLER_SMS == l_0_0 then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("HSTR:CobaltStrike.F!entry")
+return mp.LOWFI
 

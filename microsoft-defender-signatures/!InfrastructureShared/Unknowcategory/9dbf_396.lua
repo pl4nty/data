@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-local l_0_1 = (mp.readfile)(l_0_0, 60)
-if (mp.crc32)(-1, l_0_1, 1, 60) ~= 2693178178 then
-  return mp.CLEAN
+if epcode[1] == 232 and epcode[6] == 232 and epcode[11] == 51 and epcode[13] == 195 and pevars.lscnwr == 1 and (pesecs[pehdr.NumberOfSections]).PointerToRawData == 45056 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

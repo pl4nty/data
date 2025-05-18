@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and (string.find)(l_0_0, "cryptneturlcache", 1, true) then
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.hasexports == true and (mp.get_mpattribute)("NID:Trojan:Win64/DllHijack.G5") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

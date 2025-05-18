@@ -3,22 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("LUA:FileSizeLE5000.A") then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-if l_0_2 == nil then
-  l_0_0 = (mp.getfilename)()
-  if l_0_0 == nil then
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[2]).matched then
+  local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_0 == nil then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC34: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC43: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_0 ~= nil and ((string.find)(l_0_0, "\\microsoft\\onedrive\\", 1, true) or (string.find)(l_0_0, "\\microsoft\\teams\\", 1, true)) then
+      (bm.add_related_file)(l_0_0)
+      return mp.INFECTED
+    end
     return mp.CLEAN
   end
-  l_0_1 = l_0_0:sub(-5)
-else
-  l_0_1 = l_0_2:sub(-5)
 end
-if (string.find)(l_0_1:lower(), ".asp") then
-  return mp.INFECTED
-end
-return mp.LOWFI
 

@@ -3,8 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and pehdr.AddressOfEntryPoint == 5088 and (pesecs[7]).Name == ".idata" and (pesecs[7]).Characteristics == 3221225536 and (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 and (mp.getfilesize)() <= 500000 then
-  return mp.INFECTED
+if not peattributes.isdll or not peattributes.hasexports then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 8 then
+  return mp.CLEAN
+end
+local l_0_2 = 0
+for l_0_6 = 1, l_0_0 do
+  local l_0_7 = (pe.mmap_string_rva)((l_0_1[l_0_6]).namerva, 64)
+  if l_0_7 == "Open" then
+    l_0_2 = l_0_2 + 1
+  end
+  if l_0_7 == "Close" then
+    l_0_2 = l_0_2 + 1
+  end
+end
+if l_0_2 < 2 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

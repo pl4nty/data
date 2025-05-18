@@ -3,23 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr
-local l_0_1 = 256
-local l_0_2 = (pe.mmap_va)(l_0_0, l_0_1)
-local l_0_3 = (string.find)(l_0_2, "h\132\003%z%z")
-local l_0_4 = (string.find)(l_0_2, "`\174\n%z")
-if l_0_3 > 0 and l_0_4 > 0 then
-  (pe.mmap_patch_va)(l_0_0 + 6, "êê")
+if (hstrlog[1]).matched and (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  local l_0_0 = (pe.foffset_va)((hstrlog[1]).VA)
   ;
-  (pe.mmap_patch_va)(l_0_0 + 14, "\235")
-  for l_0_8 = 1, 192 do
-    if (pe.mmap_va)(l_0_0 + l_0_8 + 64, 3) == "\000\255\021" then
-      (pe.mmap_patch_va)(l_0_0 + l_0_8 + 65, "êêêêêê")
-    end
-  end
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)(0, (mp.getfilesize)())
   ;
-  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+  (mp.writeu_u8)(l_0_1, l_0_0 + 12, 132)
+  ;
+  (mp.writeu_u32)(l_0_1, l_0_0 + 20, 696)
+  ;
+  (mp.writeu_u8)(l_0_1, l_0_0 + 24, 0)
+  ;
+  (mp.vfo_add_buffer)(l_0_1, "[Obfuscator.ALC]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+end
+do
   return mp.INFECTED
 end
-return mp.CLEAN
 

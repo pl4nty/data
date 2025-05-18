@@ -3,22 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_0 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+      if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
+        (bm.add_related_file)(l_0_7)
+      end
+    end
   end
 end
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_6 = (this_sigattrlog[2]).p1
-    if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") then
-      return mp.INFECTED
-    end
-  end
   return mp.CLEAN
 end
 

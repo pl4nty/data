@@ -3,19 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (hstrlog[1]).VA
-if (pe.isdynamic_va)(l_0_0) == false and (pe.isencrypted_va)(l_0_0 + 7) == false and (pe.isencrypted_va)(l_0_0 + 8) == false then
-  local l_0_1 = (pe.foffset_va)(l_0_0)
-  if l_0_1 ~= 4294967295 then
-    (mp.readprotection)(false)
-    local l_0_2 = (mp.readfile)(0, (mp.getfilesize)())
-    ;
-    (mp.writeu_u16)(l_0_2, l_0_1 + 8, 2027)
-    ;
-    (mp.vfo_add_buffer)(l_0_2, "[Obfuscator]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 16777216 then
+  return mp.CLEAN
 end
-do
-  return mp.LOWFI
+local l_0_1 = (pe.mmap_va)((pe.get_regval)(pe.REG_ESP), 16)
+local l_0_2 = (mp.readu_u32)(l_0_1, 1)
+if l_0_2 <= 0 or l_0_2 > 4194304 or not (pe.isdynamic_va)(l_0_2) then
+  return mp.CLEAN
 end
+local l_0_3 = (mp.readu_u32)(l_0_1, 5)
+if l_0_3 <= 0 or l_0_0 <= l_0_3 then
+  return mp.CLEAN
+end
+local l_0_4 = (pe.mmap_va)(l_0_2, l_0_3)
+;
+(mp.vfo_add_buffer)(l_0_4, "[EvrStkExeScpt]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.CLEAN
 

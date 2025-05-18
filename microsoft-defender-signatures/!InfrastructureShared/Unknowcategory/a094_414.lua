@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.bitand)(pevars.sigaddr + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 15, 4), 1) + 19, 4294967295)
-if (pe.vm_search)(l_0_0, l_0_0 + 12, "ƒø\004u\144\001\001è\001\004\129\005\144\000", nil, pe.VM_SEARCH_BM) == l_0_0 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 48)
+local l_0_1 = (string.find)(l_0_0, "u\002", 1, true)
+if l_0_1 ~= nil then
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 - 1, "\235")
+  l_0_1 = (string.find)(l_0_0, "\184\001\000\000\000\015\162", 1, true)
+  if l_0_1 ~= nil then
+    (pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\002")
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

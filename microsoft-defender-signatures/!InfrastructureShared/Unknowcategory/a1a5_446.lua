@@ -3,23 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
+if (hstrlog[4]).hitcount == 0 then
+  return mp.CLEAN
 end
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
-  local l_0_6 = (this_sigattrlog[1]).p1
-  local l_0_7 = (this_sigattrlog[2]).p1
-  if l_0_6 .. l_0_7 == "unsafe" then
-    return mp.INFECTED
-  end
+if (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 then
+  return mp.CLEAN
 end
-do
-  return mp.LOWFI
+if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
+  return mp.CLEAN
 end
+return mp.INFECTED
 

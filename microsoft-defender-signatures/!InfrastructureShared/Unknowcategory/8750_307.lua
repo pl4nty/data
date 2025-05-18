@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.hstr_full_log)()
-if not l_0_0 then
-  return mp.INFECTED
+do
+  if (mp.get_mpattribute)("pea_isdll") and (pe.get_exports_count)() <= 4 and (pe.get_exports_count)() >= 1 then
+    local l_0_0 = (pe.get_imports)()
+    if l_0_0 <= 4 and l_0_0 >= 1 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-if (l_0_0[2]).matched or (l_0_0[3]).matched then
-  (mp.TriggerScanResource)("folder", "c:\\tempcaches\\", 0, 5000)
-end
-return mp.INFECTED
 

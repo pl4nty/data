@@ -3,23 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[9]).matched then
-  local l_0_6 = (this_sigattrlog[2]).p1
-  local l_0_7 = (this_sigattrlog[9]).p1
-  if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") and (string.len)(l_0_6) < 20 and (string.match)(l_0_7:lower(), "^[a-z0-9]+$") and (string.len)(l_0_7) < 20 then
-    return mp.INFECTED
-  end
-end
+(mp.readprotection)(false)
+local l_0_0 = (mp.getfilesize)()
 do
-  return mp.LOWFI
+  if l_0_0 > 20480 then
+    local l_0_1 = tostring((mp.readfile)(l_0_0 - 9472, 8192))
+    l_0_1 = (string.lower)(l_0_1)
+    if (string.find)(l_0_1, "https://icam%.cl/wp%-content/%.%.%./%.%.%./x3%.php") ~= nil or (string.find)(l_0_1, "https://smartcheckautos%.com/wp%-content/%.%.%./%.%.%./x3%.php") ~= nil or (string.find)(l_0_1, "url:https://calfeutragebprs%.com/wp%-content/image/s3%.php") ~= nil then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
 

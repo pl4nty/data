@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil and (this_sigattrlog[5]).utf8p2 ~= nil then
-  (bm.add_related_file)((this_sigattrlog[5]).utf8p1)
-  ;
-  (bm.add_related_file)((this_sigattrlog[5]).utf8p2)
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 65536 and l_0_0 <= 131072 and (mp.get_mpattribute)("NID:Buran.A!Pra1") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

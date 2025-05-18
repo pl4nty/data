@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
   local l_0_1, l_0_2 = (bm.get_process_relationships)()
   for l_0_6,l_0_7 in ipairs(l_0_1) do
     local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_7.image_path))

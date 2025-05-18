@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.getfilesize)() >= 589824 and (mp.getfilesize)() <= 917504 and pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 9 then
+if peattributes.isexe and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 6 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1114112 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,16 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true and peattributes.hasexports == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if ((hstrlog[1]).matched or (hstrlog[2]).matched) and mp.HSTR_WEIGHT > 1 then
+  return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Sefnit!ths")
+return mp.CLEAN
 

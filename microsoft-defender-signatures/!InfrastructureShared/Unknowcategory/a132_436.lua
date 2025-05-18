@@ -3,21 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil and l_0_0.image_path == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-local l_0_2 = l_0_1:match("([^\\]+)$")
-local l_0_3 = {}
-l_0_3["explorer.exe"] = true
-l_0_3["powershell.exe"] = true
-l_0_3["mshta.exe"] = true
-if l_0_3[l_0_2] then
+(mp.set_mpattribute)("HSTR:Adware:Win32/ZoomyLib.E")
+if (mp.bitand)(mp.HSTR_WEIGHT, 64) > 0 and (mp.bitand)(mp.HSTR_WEIGHT, 56) > 0 and (mp.bitand)(mp.HSTR_WEIGHT, 7) > 0 then
   return mp.INFECTED
+end
+if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.CLEAN
 

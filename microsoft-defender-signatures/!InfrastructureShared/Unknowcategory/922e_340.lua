@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 25, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+do
+  if peattributes.ismsil == true then
+    local l_0_0 = (string.lower)((mp.getfilename)())
+    if (string.find)(l_0_0, ".scr$") or (string.find)(l_0_0, ".tmp$") then
+      return mp.INFECTED
+    else
+      return mp.LOWFI
+    end
+  end
+  return mp.CLEAN
+end
 

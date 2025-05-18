@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 12 then
+if peattributes.ismsil and mp.HSTR_WEIGHT >= 3 and (mp.get_mpattribute)("SIGA:FileOperationDelete.S001") then
   return mp.INFECTED
-else
-  if (hstrlog[3]).matched then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
 end
-return mp.CLEAN
+return mp.LOWFI
 

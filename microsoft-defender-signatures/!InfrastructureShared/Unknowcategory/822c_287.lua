@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 15 then
-  if mp.HSTR_WEIGHT <= 25 then
-    (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A2")
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.sub)(l_0_1, -11) == "\\jstart.exe" then
+      return mp.INFECTED
+    end
   end
-  if mp.HSTR_WEIGHT > 25 then
-    (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A2X")
-  end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

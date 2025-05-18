@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.ps1)")
-if l_0_2 and (sysio.IsFileExists)(l_0_2) then
-  (mp.ReportLowfi)(l_0_2, 1120308759)
-  ;
-  (bm.add_related_file)(l_0_2)
+if peattributes.isexe == true and peattributes.hasexports == true and (pesecs[3]).Name == ".cdata" and (pesecs[3]).Characteristics == 3221225536 and (mp.getfilesize)() >= 10000000 and (mp.getfilesize)() <= 15000000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

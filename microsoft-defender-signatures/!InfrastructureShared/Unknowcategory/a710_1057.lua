@@ -3,37 +3,83 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC2: Confused about usage of register: R0 in 'UnsetPending'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
-string.fromhex = function(l_1_0)
-  -- function num : 0_0
-  return l_1_0:gsub("..", function(l_2_0)
-    -- function num : 0_0_0
-    local l_2_1 = string.char
-    do
-      local l_2_2, l_2_3, l_2_4 = tonumber(l_2_0, 16), .end
-      do return l_2_1(l_2_2, l_2_3, l_2_4) end
-      -- DECOMPILER ERROR at PC8: Confused about usage of register R2 for local variables in 'ReleaseLocals'
-
-    end
-  end
-)
-end
-
-local l_0_0 = (string.lower)((nri.GetURI)())
-if l_0_0 then
-  local l_0_1 = (string.match)(l_0_0, "^http://canonicalizer.ucsuri.tcs/(%w%w+)$")
-  l_0_1 = (string.gsub)(l_0_1, "00", "")
-  l_0_1 = l_0_1:fromhex()
-  l_0_1 = (string.match)(l_0_1, "^%d%d?%d?%.%d%d?%d?%.%d%d?%d?%.%d%d?%d?:%d%d%d+/(.*)$")
-  if l_0_1 and (string.len)(l_0_1) > 24 and (string.find)(l_0_1, "^[%w/_%-=]+$") and (nri.GetHttpCommand)() == nri.HTTP_GET and (nri.GetHttpResponseHeader)("Server") == "Apache" and (nri.GetHttpResponseHeader)("Content-Type") == "application/octet-stream" then
-    local l_0_2 = tonumber((nri.GetHttpResponseHeader)("Content-Length"))
-    if l_0_2 and l_0_2 > 160000 and l_0_2 < 220000 then
-      return mp.INFECTED
-    end
-  end
-end
 do
-  return mp.CLEAN
+  if (this_sigattrlog[3]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
+      local l_0_1, l_0_2, l_0_4 = (this_sigattrlog[4]).utf8p2, nil
+    else
+    end
+    do
+      if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
+        local l_0_3, l_0_5 = (this_sigattrlog[6]).utf8p2, (this_sigattrlog[7]).utf8p2
+      else
+      end
+      if (this_sigattrlog[8]).matched then
+        local l_0_6, l_0_7 = , (this_sigattrlog[8]).utf8p2
+        if (bm.get_process_relationships)() then
+          for l_0_11,l_0_12 in ipairs((bm.get_process_relationships)()) do
+            local l_0_8, l_0_9 = nil
+            -- DECOMPILER ERROR at PC61: Confused about usage of register: R8 in 'UnsetPending'
+
+            -- DECOMPILER ERROR at PC87: Overwrote pending register: R9 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC91: Confused about usage of register: R9 in 'UnsetPending'
+
+            if R8_PC61.image_path and (mp.bitand)(R8_PC61.reason_ex, 1) == 1 and (string.find)(R8_PC61.image_path, "\\explorer.exe", 1, true) then
+              if l_0_6 and nil then
+                for l_0_17,l_0_18 in ipairs(nil) do
+                  local l_0_15 = nil
+                  -- DECOMPILER ERROR at PC96: Confused about usage of register: R14 in 'UnsetPending'
+
+                  R14_PC96 = (mp.ContextualExpandEnvironmentVariables)(R14_PC96)
+                  if (sysio.IsFileExists)(R14_PC96) then
+                    (bm.add_related_file)(R14_PC96)
+                  end
+                end
+              end
+              do
+                -- DECOMPILER ERROR at PC121: Confused about usage of register: R9 in 'UnsetPending'
+
+                if l_0_7 and (mp.GetExecutablesFromCommandLine)(l_0_7) then
+                  for l_0_22,l_0_23 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_7)) do
+                    local l_0_19, l_0_20 = nil
+                    -- DECOMPILER ERROR at PC126: Confused about usage of register: R14 in 'UnsetPending'
+
+                    -- DECOMPILER ERROR at PC137: Confused about usage of register: R14 in 'UnsetPending'
+
+                    if (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(R14_PC96)) then
+                      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(R14_PC96))
+                    end
+                  end
+                end
+                do
+                  do
+                    do return mp.INFECTED end
+                    -- DECOMPILER ERROR at PC144: LeaveBlock: unexpected jumping out DO_STMT
+
+                    -- DECOMPILER ERROR at PC144: LeaveBlock: unexpected jumping out DO_STMT
+
+                    -- DECOMPILER ERROR at PC144: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                    -- DECOMPILER ERROR at PC144: LeaveBlock: unexpected jumping out IF_STMT
+
+                  end
+                end
+              end
+            end
+          end
+        end
+        return mp.CLEAN
+      end
+    end
+  end
 end
 

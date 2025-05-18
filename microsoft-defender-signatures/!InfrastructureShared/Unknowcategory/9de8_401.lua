@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_connection_string)()
-if l_0_0:find("DestIp=185.22.172.157;", 1, true) or l_0_0:find("DestIp=91.121.222.184;", 1, true) or l_0_0:find("DestIp=185.22.172.69;", 1, true) or l_0_0:find("DestIp=185.18.53.247;", 1, true) then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 and ((string.find)(l_0_0, "\\skype.mdn.mp.service.exe", 1, true) or (string.find)(l_0_0, "\\microsoft.skype.", 1, true)) then
+  return mp.CLEAN
 end
+;
+(bm.trigger_sig)("SpringShellExpl", "EncodedPost")
 return mp.CLEAN
 

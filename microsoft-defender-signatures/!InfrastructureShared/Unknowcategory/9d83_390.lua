@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_6.image_path), "\\mshta.exe", 1, true) then
-    return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if (string.find)(l_0_0, "AZQAqADsAIABOAGUAdwAtAE0AYQBuAGEAZwBlAG0AZQBuAHQAUgBvAGwAZQBBAHMAcwBpAGcAbgBtAGUAbgB0ACAALQBuAGEAbQBlADoA", 1, true) then
+      return mp.INFECTED
+    end
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

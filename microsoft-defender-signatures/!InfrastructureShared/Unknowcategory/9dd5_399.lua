@@ -3,17 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-if (string.find)(l_0_0, "\\spyhunter\\", 1, true) then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = nil
 else
-  if (string.find)(l_0_0, "\\yandex\\", 1, true) then
-    return mp.CLEAN
-  else
-    if (string.find)(l_0_0, "\\utiltool\\", 1, true) then
-      return mp.CLEAN
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.match)(l_0_0, "hidden.+bypass.+system%.net%.webclient.+downloadfile%(\'http:.+%.asp\'%).*|.*iex") ~= nil then
+      return mp.INFECTED
     end
+    return mp.CLEAN
   end
 end
-return mp.INFECTED
 

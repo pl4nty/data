@@ -3,15 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("lua_codepatch_Obfuscator_XQ") then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R1 in 'AssignReg'
+
+if l_0_0 ~= nil then
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC19: Overwrote pending register: R2 in 'AssignReg'
+
+  local l_0_2 = nil
+  l_0_2 = l_0_2 .. "\000\000"
+  ;
+  (mp.ReportLowfi)(l_0_2, 618978737)
 end
-if (pe.get_regval)(pe.REG_EBX) ~= 2011627520 then
-  return mp.CLEAN
+do
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

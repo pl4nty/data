@@ -3,11 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)((string.lower)(l_0_6.image_path), "data\\winscan.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "zalo.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "htkk.exe", 1, true)) then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or this_sigattrlog[2] ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC37: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC37 = (mp.ContextualExpandEnvironmentVariables)(R6_PC37)
+      if (sysio.IsFileExists)(R6_PC37) then
+        (bm.add_related_file)(R6_PC37)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
   end
 end
-return mp.INFECTED
 

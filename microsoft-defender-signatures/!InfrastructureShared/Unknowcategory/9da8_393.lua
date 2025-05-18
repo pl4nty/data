@@ -3,21 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() > 1800000 and (mp.getfilesize)() < 4800000 then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
+if peattributes.isvbnative == true then
+  local l_0_0 = (hstrlog[2]).VA
+  local l_0_1 = (pe.mmap_va)(l_0_0 + 7, 4)
+  local l_0_2 = 0
+  for l_0_6 = 4, 1, -1 do
+    l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
+  end
+  if l_0_2 > 8192 then
+    return mp.INFECTED
   end
 end
 do
-  l_0_0 = pe
-  l_0_0 = l_0_0.get_versioninfo
-  l_0_0 = l_0_0()
-  if l_0_0 ~= nil then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+  return mp.LOWFI
 end
 

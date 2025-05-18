@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil and (mp.get_mpattribute)("InEmail") then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.suspicious_section_name then
+  return mp.CLEAN
+end
+if not peattributes.executes_from_dynamic_memory then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

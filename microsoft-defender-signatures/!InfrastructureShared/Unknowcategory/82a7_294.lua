@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find(".lnk", 1, true) then
+if l_0_0:find(".wer", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

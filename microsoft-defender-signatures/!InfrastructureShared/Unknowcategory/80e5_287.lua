@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.INFECTED
+do
+  if (mp.get_mpattribute)("pea_no_exports") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-if mp.HSTR_WEIGHT >= 2 or (hstrlog[4]).matched or (hstrlog[5]).matched then
-  return mp.LOWFI
-end
-return mp.CLEAN
 

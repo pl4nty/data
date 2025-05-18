@@ -3,20 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_7.ppid)
-    if l_0_0.integrity_level < l_0_8.IntegrityLevel then
-      (bm.request_SMS)(l_0_7.ppid, "l+")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1)
-      return mp.INFECTED
-    end
-  end
-end
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC35: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC44: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC53: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (((this_sigattrlog[4]).matched and (string.lower)((this_sigattrlog[4]).utf8p2) == nil) or (string.len)((string.lower)((this_sigattrlog[4]).utf8p2)) <= 3 or (not (string.find)((string.lower)((this_sigattrlog[4]).utf8p2), "transfer", 1, true) and not (string.find)((string.lower)((this_sigattrlog[4]).utf8p2), "addfile", 1, true)) or (string.find)((string.lower)((this_sigattrlog[4]).utf8p2), "bitsadmin", 1, true)) then
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
 

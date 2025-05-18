@@ -6,7 +6,7 @@
 if mp.HSTR_WEIGHT == 3 then
   return mp.INFECTED
 end
-if peattributes.isdll and (mp.getfilesize)() < 850000 then
+if peattributes.isdll and (mp.getfilesize)() < 100000 then
   (pe.set_peattribute)("hstr_exhaustive", true)
   ;
   (pe.reemulate)()

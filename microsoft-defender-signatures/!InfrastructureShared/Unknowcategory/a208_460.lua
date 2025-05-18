@@ -3,31 +3,8 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC18: Confused about usage of register: R6 in 'UnsetPending'
-
-      if R6_PC18 ~= nil and R6_PC18:len() > 3 and (sysio.IsFileExists)(R6_PC18) then
-        (mp.ReportLowfi)(R6_PC18, 4042885441)
-        ;
-        (bm.add_related_file)(R6_PC18)
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.aslr_bit_set == true and peattributes.no_boundimport == true and peattributes.no_ep == true and peattributes.no_comruntime == true then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

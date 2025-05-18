@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pe.isdynamic_va)(pevars.sigaddr) == false then
-  local l_0_0 = pevars.sigaddr + 7
-  local l_0_1 = pevars.sigaddr + 26
-  local l_0_2 = (pe.vm_search)(l_0_0, l_0_1, "u\184+", nil, pe.VM_SEARCH_FOP)
-  ;
-  (pe.mmap_patch_va)(l_0_2, "êê")
-  ;
-  (pe.mmap_patch_va)(l_0_2 + 7, "êê")
-  return mp.LOWFI
-end
-do
-  return mp.LOWFI
-end
+(mp.set_mpattribute)("lua_codepatch_obfuscator_xt_2")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 29, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 49, "êê")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+;
+(mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT")
+return mp.SUSPICIOUS
 

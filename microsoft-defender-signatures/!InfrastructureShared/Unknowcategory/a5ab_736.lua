@@ -3,19 +3,23 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_19")
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
-local l_0_2 = (mp.readu_u32)(l_0_0, 6)
-local l_0_3 = (string.byte)(l_0_0, 14)
-local l_0_4 = (mp.readu_u32)(l_0_0, 16)
-local l_0_5 = (string.byte)(l_0_0, 22)
-local l_0_6 = (mp.readu_u32)(l_0_0, 26)
-local l_0_7 = (mp.readu_u32)(l_0_0, 37)
-local l_0_8 = (pe.get_regval)(pe.REG_EDX)
-local l_0_9 = (mp.ror32)((mp.ror32)(l_0_8, l_0_3) + l_0_4, l_0_5) - (mp.bitxor)(l_0_7, l_0_6) + l_0_1 - l_0_2
-;
-(pe.set_regval)(pe.REG_EBX, l_0_9)
+local l_0_0 = {}
+l_0_0["AB7A951E-E36A-4B49-8D35-F5927069A103"] = ""
+l_0_0["EDD78F8D-8DA4-443A-ACE8-987CA9D400AD"] = ""
+l_0_0["716CA90D-9ACE-4F1E-AC33-5B3C505C0FFB"] = ""
+l_0_0["CE76777D-E5C5-4EBB-BB1A-6B17BFF08D01"] = ""
+l_0_0["5F40E508-8BBC-4A2E-86B0-8FCB6117CFA8"] = ""
+l_0_0["88293C87-BC59-4F96-AFD3-81A92CAAE5A8"] = ""
+l_0_0["AA457A77-ADC4-4857-BB2C-CBF83B7012AC"] = ""
+l_0_0["C20A962A-4B9A-47BF-87D9-EA35EEA7BE01"] = ""
+l_0_0["7C45F355-8D17-43DB-8165-8021FDD9044C"] = ""
+l_0_0["E98BB072-FDBD-42AB-928A-F98DF17BFAEE"] = ""
+local l_0_1 = (mp.GetMachineGUID)()
+if l_0_1 and l_0_0[l_0_1] then
+  return mp.LOWFI
+end
+if peattributes.amd64_image then
+  (mp.changedetectionname)(805306630)
+end
 return mp.INFECTED
 

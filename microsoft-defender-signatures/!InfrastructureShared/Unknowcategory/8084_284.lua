@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false and (mp.getfilesize)() < 600000 then
-  return mp.SUSPICIOUS
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("BM_HAS_DIGITALSIGNATURE") then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Obfuscator_CheckApiArtifact2")
 return mp.CLEAN
 

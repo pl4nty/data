@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.set_peattribute)("enable_vmm_grow", true)
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.set_peattribute)("disable_seh_limit", true)
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-return mp.LOWFI
+if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 325888 then
+  (pe.reemulate)()
+  return mp.INFECTED
+end
+return mp.CLEAN
 

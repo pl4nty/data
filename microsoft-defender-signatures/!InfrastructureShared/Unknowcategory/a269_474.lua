@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = ""
-if l_0_0.is_header then
-  l_0_1 = (string.lower)(tostring(headerpage))
-else
-  l_0_1 = (string.lower)(tostring(footerpage))
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -10) == "\\mstsc.exe" or (string.sub)(l_0_0, -27) == "\\remotedesktopmanager64.exe" or (string.sub)(l_0_0, -11) == "\\rdcman.exe" or (string.sub)(l_0_0, -14) == "\\mremoteng.exe" or (string.sub)(l_0_0, -10) == "\\lsass.exe" then
+  return mp.CLEAN
 end
-l_0_1 = (string.gsub)(l_0_1, " ", "")
-l_0_1 = (string.gsub)(l_0_1, "`", "")
-if (string.find)(l_0_1, "globalassemblycache", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 131 and epcode[2] == 236 and epcode[30] == 185 and epcode[35] == 128 and epcode[36] == 48 then
+if (mp.getfilesize)() > 5120 then
+  return mp.CLEAN
+end
+if (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)) == "cnqmutil.dll" then
   return mp.INFECTED
 end
 return mp.CLEAN

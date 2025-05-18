@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_AMSI and peattributes.no_security == true then
-  return mp.INFECTED
+if (this_sigattrlog[2]).matched then
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 644432144)
 end
-return mp.CLEAN
+return mp.INFECTED
 

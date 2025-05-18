@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pehdr.AddressOfEntryPoint + pehdr.ImageBase
-local l_0_1, l_0_2 = nil, nil
-if (hstrlog[1]).matched then
-  l_0_1 = 14
-  l_0_2 = (hstrlog[1]).VA
+if not peattributes.isvbnative and not peattributes.isvbpcode then
+  return mp.CLEAN
 end
-local l_0_3 = (pe.mmap_va)(l_0_2, 21)
-local l_0_4 = (mp.readu_u32)(l_0_3, l_0_1)
-local l_0_5 = l_0_2 + l_0_1 + 3 + l_0_4
-l_0_5 = (mp.bitand)(l_0_5, 4294967295)
-if l_0_5 == l_0_0 then
+if (hstrlog[1]).matched then
+  local l_0_0 = (hstrlog[1]).VA
+  local l_0_1 = "HSTR:VirTool:Win32/VBInject.gen!LM_ptr_" .. (string.format)("%.08x", l_0_0 + 62)
+  ;
+  (mp.set_mpattribute)(l_0_1)
   return mp.INFECTED
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

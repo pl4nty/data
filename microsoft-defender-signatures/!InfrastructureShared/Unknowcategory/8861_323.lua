@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount > 10 or (hstrlog[2]).hitcount > 10 or (hstrlog[3]).hitcount > 10 or (hstrlog[4]).hitcount > 10 or (hstrlog[5]).hitcount > 10 or (hstrlog[6]).hitcount > 10 then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.isexe and (mp.getfilesize)() <= 2918400 and (mp.getfilesize)() >= 1894400 then
   return mp.INFECTED
 end
 return mp.CLEAN

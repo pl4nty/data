@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 976800 and (mp.getfilesize)() < 1330584 and (pesecs[5]).Name == "INIT" and (pesecs[5]).Characteristics == 3791650848 then
+if peattributes.isexe == true or peattributes.isdll == true and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
 return mp.CLEAN

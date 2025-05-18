@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\narrator.exe")
-if l_0_0 ~= nil then
-  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
-  if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then
-    local l_0_2 = (string.lower)(l_0_1)
-    if (string.find)(l_0_2, "cmd", 1, true) or (string.find)(l_0_2, "msconfig", 1, true) or (string.find)(l_0_2, "taskmgr", 1, true) then
+local l_0_0 = (string.lower)(tostring(headerpage))
+local l_0_1 = (string.match)(l_0_0, "<param name=\"movie\" value=\"/(.-)\">")
+if l_0_1 then
+  local l_0_2 = (string.match)(l_0_0, "<embed name=\"%l-\" width=\"115\" height=\"110\" align=\"middle\" pluginspage=\".-\" src=\"/(.-)\" type=\"")
+  if l_0_2 and l_0_2 == l_0_1 and (string.find)(l_0_1, "^%l-%.%l-%?%w%w%w%w-=") then
+    local l_0_3 = 0
+    for l_0_7 in (string.gmatch)(l_0_1, "=%w%w%w%w-&") do
+      l_0_3 = l_0_3 + 1
+    end
+    if l_0_3 >= 2 then
       return mp.INFECTED
     end
   end

@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_0.ppid, "M")
-;
-(bm.add_action)("SmsAsyncScanEvent", 1000)
-return mp.INFECTED
+if peattributes.epscn_islast and pehdr.NumberOfSections >= 2 and peattributes.hasstandardentry ~= 1 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

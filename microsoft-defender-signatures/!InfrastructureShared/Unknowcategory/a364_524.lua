@@ -3,34 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (this_sigattrlog[1]).matched then
-  local l_0_1 = nil
-  local l_0_2, l_0_3 = (bm.get_process_relationships)()
-  for l_0_7,l_0_8 in ipairs(l_0_2) do
-    l_0_1 = l_0_8.image_path
-    if (string.find)(l_0_1, "\\WINWORD.EXE") then
-      l_0_0 = l_0_0 + 1
-      break
-    end
-  end
-  do
-    local l_0_9 = nil
-    for l_0_13,l_0_14 in ipairs(l_0_3) do
-      l_0_9 = l_0_14.image_path
-      if (string.find)(l_0_9, "\\powershell.exe") or (string.find)(l_0_9, "\\cmd.exe") then
-        l_0_0 = l_0_0 + 1
-        break
-      end
-    end
-    do
-      do
-        if l_0_0 == 2 then
-          return mp.INFECTED
-        end
-        return mp.CLEAN
-      end
-    end
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+local l_0_0 = {}
+l_0_0.SUUAFindUser = ""
+l_0_0.SUUAGetAttribute = ""
+l_0_0.SUUASetAttribute = ""
+l_0_0.SUUAEnumDirAccess = ""
+local l_0_1 = 0
+local l_0_2, l_0_3 = (pe.get_exports)()
+if l_0_2 < 4 then
+  return mp.CLEAN
+end
+for l_0_7 = 1, l_0_2 do
+  if l_0_0[(pe.mmap_string_rva)((l_0_3[l_0_7]).namerva, 64)] then
+    l_0_1 = l_0_1 + 1
   end
 end
+if l_0_1 == 4 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

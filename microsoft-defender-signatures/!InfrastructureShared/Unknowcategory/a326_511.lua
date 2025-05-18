@@ -3,24 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[4]).matched then
-  local l_0_0 = (this_sigattrlog[4]).utf8p1
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 and (string.sub)(l_0_0, -4) == ".lnk" then
-    local l_0_1 = (string.match)(l_0_0, "([^\\]+)$")
-    if l_0_1 == nil then
-      return mp.CLEAN
-    end
-    local l_0_2 = (string.len)(l_0_1)
-    if l_0_2 <= 3 or l_0_2 > 15 then
-      return mp.CLEAN
-    end
-    if (string.find)(l_0_1, " ", 1, true) then
-      return mp.CLEAN
-    end
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC36: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[4]).utf8p2) > 7 and ((string.find)((this_sigattrlog[4]).utf8p2, "TgBlAHcALQBJAHQAZQBt", 1, true) or (string.find)((this_sigattrlog[4]).utf8p2, "LgBQAFMAVgBFAFIAcwBpAE8Abg", 1, true) or (string.find)((this_sigattrlog[4]).utf8p2, "AHwASQBFAFgA", 1, true)) then
     return mp.INFECTED
   end
-end
-do
   return mp.CLEAN
 end
 

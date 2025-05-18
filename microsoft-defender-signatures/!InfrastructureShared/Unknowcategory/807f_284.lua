@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\opera software\\", 1, true) then
-    return mp.CLEAN
+do
+  if (nri.IsResponse)() then
+    local l_0_0 = (nri.GetRawResponseBlob)()
+    if l_0_0 and (string.find)(l_0_0, "Server: Microsoft%-IIS/7.5") then
+      return mp.INFECTED
+    end
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
 

@@ -3,10 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-local l_0_1, l_0_2 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 > 16410 and l_0_1 ~= nil and l_0_2 ~= nil and ((string.find)(l_0_1, "/tmp", 1, true) or (string.find)(l_0_1, "/home", 1, true) or (string.find)(l_0_1, "/dev/shm", 1, true) or (string.find)(l_0_1, "/var/crash", 1, true)) and l_0_2 == "java" then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = ""
+if (string.sub)(l_0_1, -1) == "\"" then
+  l_0_2 = (string.match)(l_0_1, " (\"[^\"]+\")[%s]*$")
+else
+  l_0_2 = (string.match)(l_0_1, " (%S+)[%s]*$")
+end
+if l_0_2 == "" or l_0_2 == nil then
+  return mp.CLEAN
+end
+if not (MpCommon.QueryPersistContext)(l_0_2, "DroppedByBitsadmin") then
+  (MpCommon.AppendPersistContext)(l_0_2, "DroppedByBitsadmin", 0)
+end
+return mp.INFECTED
 

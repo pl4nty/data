@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Formbook.AMA") then
+if (mp.getfilesize)() < 2097152 then
+  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+  ;
+  (mp.set_mpattribute)("NScript:NoParsingLimits")
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,19 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "%localappdata%\\Microsoft\\Edge\\User Data\\Default\\Extensions\\"
-local l_0_1 = (sysio.FindFiles)(l_0_0, "manifest.json", -1)
-for l_0_5,l_0_6 in pairs(l_0_1) do
-  (bm.add_related_file)(l_0_6)
-  ;
-  (bm.add_related_string)("file", l_0_6, bm.RelatedStringBMReport)
-  ;
-  (bm.add_related_string)("file", l_0_6, bm.RelatedStringFileReport)
-  if l_0_5 > 10 then
-    break
-  end
-end
 do
-  return mp.INFECTED
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if ((string.match)(l_0_0, "%%localappdata%%\\%a+\\%a+%.exe$") or (string.match)(l_0_0, "%%localappdata%%\\{%x+%-%x+%-%x+%-%x+%-%x+}\\%a+%.exe$")) and (string.match)(l_0_0, "\\[b-t][aeiou][b-t][aeiou]%a+%.exe$") then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
 

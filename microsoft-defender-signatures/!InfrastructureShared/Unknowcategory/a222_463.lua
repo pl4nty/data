@@ -3,18 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true and peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 20000 and l_0_0 > 60000 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint ~= 0 or pehdr.ImageBase ~= 4194304 then
-  return mp.CLEAN
-end
-local l_0_1 = (pe.get_exports)()
-if l_0_1 >= 2 and l_0_1 <= 5 then
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.suspicious_dosheader == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_XML_FILE") and not (mp.get_mpattribute)("SCPT:TrojanDownloader:O97M/Ploty_excl1.A") and not (mp.get_mpattribute)("SCPT:TrojanDownloader:O97M/Ploty_excl2.A") then
+local l_0_0 = ""
+if (this_sigattrlog[2]).matched then
+  l_0_0 = (nri.GetURI)()
+end
+if l_0_0 ~= "" and (string.find)(l_0_0, "&X-Rps-CAT=", 1, true) then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.get_versioninfo)()).OriginalFilename == "riched32.dll" and ((pe.get_versioninfo)()).CompanyName == "Microsoft Corporation" then
+if peattributes.ismsil == true and (pesecs[3]).Name == ".reloc" and (pesecs[3]).Characteristics == 1107296320 then
   return mp.INFECTED
 end
 return mp.CLEAN

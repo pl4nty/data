@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (peattributes.isexe == true or peattributes.isdll == true) and peattributes.x86_image == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_6.image_path, 13)) == "\\services.exe" then
     return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

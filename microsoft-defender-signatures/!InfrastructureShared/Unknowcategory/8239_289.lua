@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p1
-    ;
-    (mp.TriggerScanResource)("file", l_0_0, 0)
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if peattributes.packed and peattributes.checks_teb_lasterror and peattributes.dynmem_APIcall and peattributes.executes_from_dynamic_memory then
+  return mp.SUSPICIOUS
 end
+return mp.CLEAN
 

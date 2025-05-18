@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "lenovo", 1, true) ~= nil or (mp.get_mpattribute)("PACKED_WITH:[MSILRES:DisplayFusion.Properties.Resources.resources]") then
-  (mp.set_mpattribute)("HSTR:AllowList:SkypeSneak")
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 2, 4)
+local l_0_1 = (string.byte)(l_0_0, 1) + (string.byte)(l_0_0, 2) * 256 + (string.byte)(l_0_0, 3) * 65536 + (string.byte)(l_0_0, 4) * 16777216
+if (pe.mmap_va)(l_0_1, 7) == "%x.exe\000" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

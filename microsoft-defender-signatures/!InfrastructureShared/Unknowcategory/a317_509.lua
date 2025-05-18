@@ -3,21 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (pe.get_regval)(pe.REG_EBP)
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 8)
+local l_0_2 = (mp.bitor)((string.byte)(l_0_1, 3), 4294967040)
+l_0_1 = (pe.mmap_va)((mp.bitand)(l_0_0 + l_0_2, 4294967295), 4)
+local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1
+l_0_1 = (pe.mmap_va)(l_0_3, 4)
+if (mp.readu_u32)(l_0_1, 1) == 707406378 then
+  return mp.SUSPICIOUS
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 ~= nil and (MpCommon.StringRegExpSearch)("[u0010-u00ff][u0100-uffff][u0010-u00ff]", l_0_1) == true then
-  local l_0_2 = (mp.GetParentProcInfo)()
-  if l_0_2 ~= nil then
-    local l_0_3 = (string.lower)(l_0_2.image_path)
-    if l_0_3 ~= nil and (string.find)(l_0_3, "explorer.exe", 1, true) then
-      return mp.INFECTED
-    end
-  end
-end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

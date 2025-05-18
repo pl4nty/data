@@ -3,33 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
+if (bm.GetSignatureMatchDuration)() > 100000000 then
   return mp.CLEAN
 end
-if peattributes.isdll == true then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  if (string.find)((string.lower)(l_0_6.image_path), "\\rundll32.exe", 1, true) then
+    (MpCommon.TurnNriOnProcess)(l_0_6.ppid)
+    ;
+    (bm.request_SMS)(l_0_6.ppid, "M")
+    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
+    local l_0_9 = tonumber(l_0_7)
+    local l_0_10 = tonumber(l_0_8)
+    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
+    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
+    ;
+    (mp.TriggerScanResource)("ems", l_0_13, mp.SCANSOURCE_RTSIG, 5000)
+    return mp.INFECTED
+  end
 end
-if (mp.getfilesize)() > 1048576 then
-  return mp.CLEAN
-end
-if (hstrlog[1]).hitcount > 40 then
-  return mp.CLEAN
-end
-local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-local l_0_1 = (pe.foffset_va)(pehdr.ImageBase + (pehdr.SizeOfImage - 1)) + 1
-if l_0_0 ~= l_0_1 then
-  l_0_0 = l_0_1
-end
-local l_0_2 = (mp.getfilesize)() - l_0_0
-if (pesecs[1]).SizeOfRawData > 61440 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData < 32768 and l_0_2 < 32768 then
-  return mp.CLEAN
-end
-;
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-return mp.INFECTED
+return mp.CLEAN
 

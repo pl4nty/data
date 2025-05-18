@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EIP)
-local l_0_1 = (pe.get_regval)(pe.REG_ESP)
-if peattributes.isdll and l_0_1 < l_0_0 and l_0_0 - l_0_1 < 512 and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 720896 and l_0_0 <= 851968 and peattributes.amd64_image and peattributes.headerchecksum0 and peattributes.suspicious_linker_version then
   return mp.INFECTED
 end
 return mp.CLEAN

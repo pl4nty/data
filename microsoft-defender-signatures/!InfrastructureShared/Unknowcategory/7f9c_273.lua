@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT < 11 then
+if mp.HSTR_WEIGHT == 3 then
+  return mp.INFECTED
+end
+if mp.HSTR_WEIGHT < 3 then
   (mp.set_mpattribute)("do_exhaustivehstr_rescan")
   ;
   (pe.reemulate)()
-end
-if mp.HSTR_WEIGHT == 11 then
-  return mp.INFECTED
 end
 return mp.LOWFI
 

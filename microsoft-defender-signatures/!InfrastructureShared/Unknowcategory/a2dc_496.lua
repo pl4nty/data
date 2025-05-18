@@ -3,12 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
+local l_0_0 = 20
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 256)
+local l_0_2 = (string.find)(l_0_1, "t", 1, true)
+if l_0_2 == nil then
   return mp.CLEAN
 end
+l_0_0 = l_0_0 + l_0_2 - 1
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+(pe.mmap_patch_va)(pevars.sigaddr + (l_0_0), "\235")
+l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
+for l_0_6 = 1, l_0_0 do
+  local l_0_7 = (string.find)(l_0_1, "`\185....ó¤a", l_0_6, true)
+  if not l_0_7 then
+    break
+  end
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_7 - 1, "\144")
+end
+do
+  return mp.INFECTED
+end
 

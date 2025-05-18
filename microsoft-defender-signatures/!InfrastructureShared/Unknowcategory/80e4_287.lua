@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (mp.getfilesize)() < 1000000 and (string.sub)(l_0_0, -12) == "goopdate.dll" then
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
+end
+if mp.HSTR_WEIGHT >= 2 or (hstrlog[4]).matched or (hstrlog[5]).matched then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

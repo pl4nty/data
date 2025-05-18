@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("//AGGR:OleFile") and not (mp.get_mpattribute)("Lua:FileSizeLT2000") then
+if peattributes.is_process then
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)(tostring(headerpage))
-local l_0_1, l_0_2, l_0_3 = (string.find)(l_0_0, "(<a href%=\"http%://.-\">https%://dhl24%.com%.uk/)")
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if (string.match)(l_0_3, "<a href%=\"https%://dhl24%.com%.uk/.-\">https%://dhl24%.com%.uk/") == nil then
+if (mp.get_mpattribute)("pea_epscn_writable") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_firstsectwritable") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_entrybyte60") and (mp.get_mpattribute)("pea_headerchecksum0") then
   return mp.INFECTED
 end
 return mp.CLEAN

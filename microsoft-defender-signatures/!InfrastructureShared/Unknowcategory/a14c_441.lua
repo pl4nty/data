@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 8, 1))
-if (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, 4), 1) ~= 139 then
+do
+  if epcode[1] == 233 and epcode[2] == 90 and epcode[3] == 94 and epcode[11] == 233 and peattributes.isexe == true and peattributes.amd64_image then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 9, "\235")
-return mp.INFECTED
 

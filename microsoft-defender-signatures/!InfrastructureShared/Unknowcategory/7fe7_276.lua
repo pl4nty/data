@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 80)
-local l_0_1 = (mp.readu_u32)(l_0_0, 31) - 1
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "")
 ;
-(pe.set_regval)(pe.REG_ECX, l_0_1)
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 40, ")\203")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 23, "\000")
+return mp.INFECTED
 

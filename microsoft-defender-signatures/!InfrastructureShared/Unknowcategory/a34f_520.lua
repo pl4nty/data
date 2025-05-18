@@ -3,22 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
-  return mp.CLEAN
-end
-local l_0_1 = (bm.get_imagepath)()
-do
-  if l_0_1 ~= nil then
-    local l_0_2 = {}
-    l_0_2["cmstp.exe"] = true
-    l_0_2["dllhost.exe"] = true
-    if l_0_2[((string.lower)((string.sub)(l_0_1, -15))):match("\\([^\\]+)$")] then
-      return mp.CLEAN
-    end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)((string.lower)(l_0_6.image_path), "data\\winscan.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "zalo.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "htkk.exe", 1, true)) then
+    return mp.CLEAN
   end
-  ;
-  (bm.add_related_file)(l_0_1)
-  return mp.INFECTED
 end
+return mp.INFECTED
 

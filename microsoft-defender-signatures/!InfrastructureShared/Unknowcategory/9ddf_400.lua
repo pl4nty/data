@@ -3,19 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-if (string.sub)(l_0_1, -5, -1) == ",RS32" then
-  if l_0_0 ~= nil then
-    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
-  return mp.INFECTED
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
+      ;
+      (bm.add_threat_file)(R6_PC25)
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
 

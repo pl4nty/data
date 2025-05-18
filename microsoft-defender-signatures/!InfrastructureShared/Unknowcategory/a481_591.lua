@@ -3,18 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\atbroker.exe$") then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 98304 then
   return mp.CLEAN
 end
-local l_0_1 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\atbroker.exe")
-do
-  if l_0_1 ~= nil then
-    local l_0_2 = (sysio.GetRegValueAsString)(l_0_1, "Debugger")
-    if l_0_2 ~= nil and (string.len)(l_0_2) >= 1 and (sysio.IsFileExists)(l_0_2) then
-      (mp.ReportLowfi)(l_0_2, 202313540)
-    end
-  end
-  return mp.INFECTED
+if l_0_0 < 81920 then
+  return mp.CLEAN
 end
+local l_0_1 = tostring(headerpage)
+if (string.find)(l_0_1, "\n", 1, true) ~= nil then
+  return mp.CLEAN
+end
+if (string.match)(l_0_1, "%(function%((%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+)") == nil then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("SCRIPT:Worm:JS/Proslikefan_Lowfi3")
+return mp.CLEAN
 

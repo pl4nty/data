@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("\\extensions", 1, true) then
-  return mp.CLEAN
+(mp.set_mpattribute)("HSTR:ZwangiExe")
+if ((hstrlog[1]).matched and 1 or 0) + ((hstrlog[2]).matched and 1 or 0) + ((hstrlog[3]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
-if l_0_0:find("\\inetcache", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

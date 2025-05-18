@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("//AGGR:OleFile") and not (mp.get_mpattribute)("Lua:FileSizeLT2000") then
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 8 then
+    local l_0_1 = (string.lower)(l_0_0)
+    if (string.find)(l_0_1, "cpassword", 1, true) and (string.find)(l_0_1, "\\\\", 1, true) and ((string.find)(l_0_1, "/i", 1, true) or (string.find)(l_0_1, "-i", 1, true)) and (string.find)(l_0_1, "policies", 1, true) then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)(tostring(headerpage))
-local l_0_1, l_0_2, l_0_3 = (string.find)(l_0_0, "(<a href%=\"http%://.-\">http%://www%.natwest%.com/)")
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if (string.match)(l_0_3, "<a href%=\"http%://www%.natwest%.com/.-\">http%://www%.natwest%.com/") == nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

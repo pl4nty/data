@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_ESP) + 24, 4), 1) < 262144 then
-  return mp.CLEAN
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 and peattributes.no_security == true then
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 1, "")
-return mp.INFECTED
+return mp.CLEAN
 

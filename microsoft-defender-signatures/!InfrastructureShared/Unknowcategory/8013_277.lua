@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.INFECTED
 end
-if not peattributes.suspicious_section_name then
-  return mp.CLEAN
+if (hstrlog[1]).matched then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-if not peattributes.executes_from_dynamic_memory then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

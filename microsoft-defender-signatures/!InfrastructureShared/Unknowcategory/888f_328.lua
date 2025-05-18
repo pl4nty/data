@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 491520 and l_0_0 <= 499712 and pehdr.NumberOfSections >= 7 and pehdr.NumberOfSections <= 8 and (mp.get_mpattribute)("NID:Emotet.GU!Pra1") then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 1, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(mp.readprotection)(false)
+if (pe.mmap_va)(l_0_1, 9) == "myapp.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

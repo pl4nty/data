@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 4, 21)
+local l_0_1 = (string.byte)(l_0_0, 2)
+if l_0_1 ~= (string.byte)(l_0_0, 11) then
   return mp.CLEAN
 end
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 1)
-if (mp.bitand)((string.byte)(l_0_0, 1), 128) == 0 then
-  return mp.CLEAN
-end
+;
+(pe.set_regval)(pe.REG_EAX, l_0_1)
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\144")
 return mp.INFECTED
 

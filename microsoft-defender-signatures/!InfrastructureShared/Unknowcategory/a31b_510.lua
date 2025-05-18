@@ -3,19 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
 do
-  if l_0_1 ~= nil then
-    local l_0_2 = (string.lower)(l_0_1.image_path)
-    if l_0_2:match("([^\\]+)$") == "svchost.exe" then
-      (MpCommon.TurnNriOnProcess)(l_0_0.ppid)
-      ;
-      (bm.request_SMS)(l_0_0.ppid, "M")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1000)
-      return mp.INFECTED
+  if (this_sigattrlog[4]).matched then
+    local l_0_0 = tonumber((this_sigattrlog[4]).p1, 16)
+    if not (pe.contains_va)(2, l_0_0) and not (pe.contains_va)(3, l_0_0) then
+      return mp.CLEAN
     end
+    if (mp.bitand)(l_0_0, 4095) == 0 then
+      (mp.set_mpattribute)("LOWFI:SIGATTR:VirTool:Win32/OwnProcessWriteProcMemVA000")
+      return mp.CLEAN
+    end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

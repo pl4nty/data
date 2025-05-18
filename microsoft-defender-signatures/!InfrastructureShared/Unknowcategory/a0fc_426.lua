@@ -3,10 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 2, 4)
-local l_0_1 = (string.byte)(l_0_0, 1) + (string.byte)(l_0_0, 2) * 256 + (string.byte)(l_0_0, 3) * 65536 + (string.byte)(l_0_0, 4) * 16777216
-if (pe.mmap_va)(l_0_1, 7) == "%x.exe\000" then
-  return mp.INFECTED
+local l_0_0 = {}
+l_0_0["winword.exe"] = true
+l_0_0["excel.exe"] = true
+l_0_0["powerpnt.exe"] = true
+l_0_0["outlook.exe"] = true
+local l_0_1 = (mp.GetParentProcInfo)()
+if l_0_1 ~= nil then
+  for l_0_5 = 1, 4 do
+    local l_0_6 = (string.lower)(l_0_1.image_path)
+    if l_0_0[l_0_6:match("([^\\]+)$")] then
+      return mp.INFECTED
+    else
+      l_0_1 = (mp.GetParentProcInfo)(l_0_1.ppid)
+      l_0_5 = l_0_5 + 1
+    end
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

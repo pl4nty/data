@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
 if peattributes.hasexports == true then
@@ -18,7 +18,7 @@ end
 if peattributes.epscn_writable == false then
   return mp.CLEAN
 end
-if (pesecs[pehdr.NumberOfSections]).NameDW == 1920168494 then
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
   return mp.CLEAN
 end
 if (pesecs[1]).NameDW ~= 2019914798 then

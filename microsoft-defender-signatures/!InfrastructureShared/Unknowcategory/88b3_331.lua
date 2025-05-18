@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 293417 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0 then
+    local l_0_1 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
+    if l_0_0:find(l_0_1, 1, true) then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.2")
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
-return mp.INFECTED
 

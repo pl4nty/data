@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-    if (string.find)(l_0_0, "wscript.shell", 1, true) and ((string.find)(l_0_0, "eval(", 1, true) or (string.find)(l_0_0, "\'ev\'+\'al\'", 1, true)) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 20), "u", 1, true) - 1
+local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 96), "u", 80, true) - l_0_0 - 1
+local l_0_2 = (string.format)("\235%s", (string.char)(l_0_1))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, l_0_2)
+return mp.INFECTED
 

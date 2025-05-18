@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") and peattributes.isexe == true and (mp.getfilesize)() < 1064000 then
-  return mp.INFECTED
+if peattributes.isdll and (mp.getfilesize)() < 250000 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
 end
-return mp.CLEAN
+return mp.INFECTED
 

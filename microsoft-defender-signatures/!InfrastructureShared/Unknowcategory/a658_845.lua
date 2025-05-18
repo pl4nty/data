@@ -3,27 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_7.ppid)
-    if l_0_0.integrity_level < l_0_8.IntegrityLevel then
-      local l_0_9 = (string.lower)(l_0_7.image_path)
-      if (string.find)(l_0_9, "\\system32\\mrt.exe", -17, true) or (string.find)(l_0_9, "\\asep_inv.exe", -13, true) or (string.find)(l_0_9, "\\mpsigstub.exe", -14, true) then
-        return mp.CLEAN
-      end
-      ;
-      (bm.request_SMS)(l_0_7.ppid, "h+")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1000)
-      ;
-      (bm.trigger_sig)("Gouda", "Chrome")
-      return mp.INFECTED
-    end
-  end
-end
-do
+if (mp.IsHipsRuleEnabled)("3b576869-a4ec-4529-8536-b80a7769e899") ~= true then
   return mp.CLEAN
 end
+local l_0_0 = "enghipscpy:blockaccess:3b576869-a4ec-4529-8536-b80a7769e899"
+local l_0_1 = ""
+local l_0_2 = ""
+if (this_sigattrlog[5]).matched then
+  l_0_1 = (this_sigattrlog[5]).utf8p1
+  l_0_2 = (this_sigattrlog[5]).utf8p2
+  if l_0_1 == nil or l_0_1 == "" or l_0_2 == nil or l_0_2 == "" then
+    return mp.CLEAN
+  end
+else
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "%", 1, true) ~= nil or (string.find)(l_0_2, "%", 1, true) ~= nil then
+  return mp.CLEAN
+end
+local l_0_3 = {}
+l_0_3.exe = true
+l_0_3.dll = true
+l_0_3.sys = true
+local l_0_4 = (string.lower)((string.match)(l_0_1, "%.([^%.]+)$"))
+if l_0_3[l_0_4] == true and not (MpCommon.QueryPersistContext)(l_0_2, l_0_0) then
+  (MpCommon.AppendPersistContext)(l_0_2, l_0_0, 0)
+  return mp.INFECTED
+end
+return mp.CLEAN
 

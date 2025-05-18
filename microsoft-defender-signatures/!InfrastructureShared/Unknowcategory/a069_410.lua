@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 10485760 and peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (string.lower)(l_0_0.command_line)
+if (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "windowsazure", 1, true) or (string.find)(l_0_1, "chocolatey.", 1, true) then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

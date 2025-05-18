@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0:len() >= 12 and (string.sub)(l_0_0, -12) == "iexplore.exe" then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "externallink1.xml") ~= nil and (mp.getfilesize)() < 1000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

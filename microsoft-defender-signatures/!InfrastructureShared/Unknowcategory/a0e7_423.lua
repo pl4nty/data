@@ -3,17 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)(((pe.get_versioninfo)()).OriginalFilename) == "ultraviewer_service.exe" then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 ~= nil and l_0_0 > 2048000 then
   return mp.CLEAN
 end
-if peattributes.is_process then
-  return mp.CLEAN
+local l_0_1 = (pe.get_versioninfo)()
+if l_0_1 ~= nil and l_0_1.OriginalFilename ~= nil and (l_0_1.OriginalFilename):lower() == "sync.exe" and l_0_1.InternalName ~= nil and (l_0_1.InternalName):lower() == "sync.exe" and l_0_1.ProductVersion ~= nil and (l_0_1.ProductVersion):lower() == "0.0.0.0" then
+  return mp.INFECTED
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-return mp.INFECTED
+return mp.CLEAN
 

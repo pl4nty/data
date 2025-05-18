@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and peattributes.amd64_image and (mp.getfilesize)() >= 892000 and (mp.getfilesize)() <= 892010 then
+if (mp.get_mpattribute)("BM_MZ_FILE") and pehdr.NumberOfSections > 8 and (pesecs[6]).VirtualSize > 2097152 then
   return mp.INFECTED
 end
 return mp.CLEAN

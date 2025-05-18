@@ -3,22 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 then
   return mp.CLEAN
 end
-if peattributes.no_exports then
+if (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 then
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 > 1 then
-  for l_0_5 = 1, l_0_0 do
-    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
-    if (string.lower)(l_0_6) == "rathbuige" then
-      return mp.INFECTED
-    end
-  end
-end
-do
+if (hstrlog[5]).hitcount == 0 then
   return mp.CLEAN
 end
+if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

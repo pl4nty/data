@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
+if peattributes.ismsil ~= true then
   return mp.CLEAN
 end
-if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil or (string.match)(l_0_0, "apps%-helper") ~= nil or (string.match)(l_0_0, "app%-helper") ~= nil then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0.OriginalFilename ~= nil and (l_0_0.OriginalFilename):lower() == "sync.exe" and l_0_0.InternalName ~= nil and (l_0_0.InternalName):lower() == "sync.exe" and l_0_0.ProductVersion ~= nil and (l_0_0.ProductVersion):lower() == "0.0.0.0" then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,32 +3,36 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_2 = l_0_0.match_offset + 17
-if l_0_0._is_footer then
-  l_0_2 = (mp.getfilesize)() - mp.FOOTERPAGE_SZ + l_0_2
-  local l_0_1 = nil
+if mp.HSTR_WEIGHT == 1 then
+  local l_0_0 = nil
+  if (hstrlog[1]).matched then
+    l_0_0 = (hstrlog[1]).VA
+  end
+  if (hstrlog[2]).matched then
+    l_0_0 = (hstrlog[2]).VA
+  end
+  if (hstrlog[3]).matched then
+    l_0_0 = (hstrlog[3]).VA
+  end
+  if (hstrlog[4]).matched then
+    l_0_0 = (hstrlog[4]).VA
+  end
+  if (hstrlog[5]).matched then
+    l_0_0 = (hstrlog[5]).VA
+  end
+  if (hstrlog[6]).matched then
+    l_0_0 = (hstrlog[6]).VA
+  end
+  if (hstrlog[7]).matched then
+    l_0_0 = (hstrlog[7]).VA
+  end
+  if l_0_0 ~= nil then
+    local l_0_1 = "HSTR:VirTool:Win32/Obfuscator.WU.offset_" .. (string.format)("%.08x", l_0_0)
+    ;
+    (mp.set_mpattribute)(l_0_1)
+  end
 end
 do
-  ;
-  (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R2 in 'UnsetPending'
-
-  local l_0_3 = nil
-  ;
-  (mp.readprotection)(true)
-  if l_0_2 ~= nil then
-    for l_0_7 in (string.find)((mp.readfile)(l_0_2, l_0_1 - (l_0_2)), "[%w+/]+=?=?") do
-      local l_0_4 = nil
-      -- DECOMPILER ERROR at PC36: Confused about usage of register: R7 in 'UnsetPending'
-
-      if R7_PC36 ~= nil and R7_PC36 ~= "" then
-        (mp.vfo_add_buffer)("CWSHACK\000" .. (MpCommon.Base64Decode)(R7_PC36), "[PyMacZlib]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+  return mp.INFECTED
 end
 

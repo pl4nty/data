@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if (hstrlog[1]).hitcount > 10 or (hstrlog[2]).hitcount > 10 or (hstrlog[3]).hitcount > 10 or (hstrlog[4]).hitcount > 10 or (hstrlog[5]).hitcount > 10 or (hstrlog[6]).hitcount > 10 then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 4000000 or l_0_0 < 10000 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

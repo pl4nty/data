@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (nri.IsResponse)() then
-    local l_0_0 = (nri.GetRawResponseBlob)()
-    if l_0_0 and (string.find)(l_0_0, "Server: Microsoft%-IIS/7.5") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
+else
+  return mp.INFECTED
 end
+return mp.CLEAN
 

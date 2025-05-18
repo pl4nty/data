@@ -3,17 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\dllhost.exe", 1, true) then
-    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-    local l_0_9 = tonumber(l_0_7)
-    local l_0_10 = tonumber(l_0_8)
-    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
-    ;
-    (mp.TriggerScanResource)("ems", l_0_13)
-  end
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - (mp.bitand)(0 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1)), 255), 4), 1)
+if (pe.get_api_id)(l_0_0) == 3164325074 then
+  (pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "Ðt", 1, true), "\235")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

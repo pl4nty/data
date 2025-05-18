@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 4 and pevars.epsec == pehdr.NumberOfSections and (pesecs[pehdr.NumberOfSections]).Name == "" and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3758096384) == 3221225472 then
-  return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  if (string.lower)((string.sub)(l_0_0, -14)) == "\\gvfs\\gvfs.exe" then
+    return mp.CLEAN
+  end
+  if (string.lower)((string.sub)(l_0_0, -36)) == "\\urbrowser\\application\\urbrowser.exe" then
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

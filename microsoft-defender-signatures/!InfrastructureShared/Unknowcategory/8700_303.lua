@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 22, "")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 > 589824 and l_0_0 < 720896 and (mp.get_mpattribute)("NID:Trojan:MSIL/TeslaCryptIH") then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

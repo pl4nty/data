@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 16384 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).utf8p1 then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC33: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[2]).matched or not (this_sigattrlog[4]).utf8p1 or (this_sigattrlog[2]).utf8p1 ~= nil then
+    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 4280357157)
     return mp.INFECTED
   end
   return mp.CLEAN

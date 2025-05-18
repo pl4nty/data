@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
-  if l_0_2 ~= nil and (string.find)(l_0_3, l_0_2) then
-    return mp.INFECTED
-  end
-end
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Features")
 do
+  if l_0_0 then
+    local l_0_1 = (sysio.GetRegValueAsDword)(l_0_0, "TamperProtection")
+    if l_0_1 and (mp.bitand)(l_0_1, 1) == 1 then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

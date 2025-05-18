@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\000" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\016" then
-  (pe.mmap_patch_va)(pevars.sigaddr + 10, "")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 19, "")
-  ;
-  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
+end
+if (string.find)((string.lower)(l_0_0), "\\svchost.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\installshield\\setup.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\installshield\\x32\\setup.exe", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

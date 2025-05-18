@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 300000000 then
+if (bm.GetSignatureMatchDuration)() > 20000000 then
   return mp.CLEAN
 end
-local l_0_0 = (bm.get_current_process_startup_info)()
+if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p1 == nil then
+  return mp.CLEAN
+end
+local l_0_0 = (this_sigattrlog[1]).utf8p1
 ;
-(bm.request_SMS)(l_0_0.ppid, "M")
-;
-(bm.add_action)("SmsAsyncScanEvent", 1000)
-return mp.INFECTED
+(bm.trigger_sig)("BMGenericCodeInjector.A", l_0_0)
+return mp.CLEAN
 

@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win32/Ekstak.GM!MTB")) then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "\141\r")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 16, 1)
+local l_0_1 = pevars.sigaddr + 15 + (string.byte)(l_0_0, 1) + 2 - 2
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 15, "êê")
+;
+(pe.mmap_patch_va)(l_0_1, "êê")
+return mp.INFECTED
 

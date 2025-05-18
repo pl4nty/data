@@ -3,10 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
-local l_0_1 = (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 4, 4), 1)
-if l_0_0 + l_0_1 == 1623 or l_0_1 - l_0_0 == 1623 then
-  return mp.INFECTED
+do
+  if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+    local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 48)
+    if (mp.readu_u32)(l_0_0, 18) ~= 0 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

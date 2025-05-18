@@ -3,20 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata then
-  local l_0_0 = pehdr.NumberOfSections
-  local l_0_1 = (pesecs[l_0_0]).PointerToRawData + (pesecs[l_0_0]).SizeOfRawData
-  ;
-  (mp.readprotection)(false)
-  local l_0_2 = (mp.readfile)(l_0_1, 16)
-  if l_0_2 == "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" then
-    if (mp.getfilesize)() >= 4194304 then
-      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
-    end
-    return mp.INFECTED
-  end
-end
+local l_0_0 = (mp.getfilesize)()
 do
+  if peattributes.ismsil == true and l_0_0 < 20480 then
+    local l_0_1 = (pe.get_versioninfo)()
+    -- DECOMPILER ERROR at PC46: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC46: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC46: Unhandled construct in 'MakeBoolean' P3
+
+    if (l_0_1.OriginalFilename ~= nil and l_0_1.OriginalFilename == "WindowsApp.exe") or l_0_1.InternalName == nil or l_0_1.CompanyName == nil or l_0_1.FileDescription == nil or l_0_1.ProductName ~= nil and l_0_1.ProductName == "WindowsApp" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

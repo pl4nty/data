@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).NameDW == 1163217994 and peattributes.epscn_islast == true then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if not l_0_0:find("rpcservices", 1, true) then
   return mp.INFECTED
 end
-;
-(mp.changedetectionname)(805306404)
-return mp.INFECTED
+return mp.CLEAN
 

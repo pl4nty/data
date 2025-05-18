@@ -3,26 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 98304 then
-  return mp.CLEAN
-end
-if l_0_0 < 40960 then
-  return mp.CLEAN
-end
-local l_0_1 = tostring(headerpage)
-if (string.find)(l_0_1, "\n", 1, true) ~= nil then
-  return mp.CLEAN
-end
-local l_0_2, l_0_3, l_0_4, l_0_5 = l_0_1:match("%(function%((%l%l%l%l%l%l+),(%l%l%l%l%l%l+)%){(%l%l%l%l%l%l+)=function%(%){return (%l%l%l%l%l%l+)%.pop%(%)}")
-local l_0_6 = #l_0_3 - 1
-local l_0_7 = #l_0_3 + 1
--- DECOMPILER ERROR at PC67: Unhandled construct in 'MakeBoolean' P3
+local l_0_0, l_0_1, l_0_2 = nil, nil, nil
+for l_0_6 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_3, l_0_4, l_0_5 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R6 in 'UnsetPending'
 
-if (#l_0_2 ~= #l_0_3 and #l_0_2 ~= l_0_6 and #l_0_2 ~= l_0_7) or #l_0_3 == #l_0_4 or l_0_6 == #l_0_4 or #l_0_3 ~= #l_0_5 and l_0_6 ~= #l_0_5 and l_0_7 ~= #l_0_5 then
-  return mp.CLEAN
+  if (sigattr_head[R6_PC6]).matched then
+    if (sigattr_head[R6_PC6]).attribute == 16384 and (sigattr_head[R6_PC6]).utf8p1 and l_0_3 == nil then
+      l_0_3 = (string.lower)((sigattr_head[R6_PC6]).utf8p1)
+      l_0_4 = (string.match)(l_0_3, "\\roaming\\%x%x+\\([^\\]+)$")
+    else
+      if (sigattr_head[R6_PC6]).attribute == 16393 and (sigattr_head[R6_PC6]).utf8p2 and l_0_5 == nil then
+        l_0_5 = (string.lower)((sigattr_head[R6_PC6]).utf8p2)
+        l_0_5 = (string.match)(l_0_5, "\\roaming\\%x%x+\\([^\\]+)$")
+      end
+    end
+    if l_0_3 ~= nil and l_0_5 ~= nil and l_0_4 == l_0_5 then
+      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((sigattr_head[R6_PC6]).utf8p1), 3276690080)
+      return mp.INFECTED
+    end
+  end
 end
-;
-(mp.set_mpattribute)("SCRIPT:Worm:JS/Proslikefan_Lowfi2")
-return mp.CLEAN
+return mp.INFECTED
 

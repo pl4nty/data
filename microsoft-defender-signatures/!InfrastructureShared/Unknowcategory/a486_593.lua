@@ -3,13 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  local l_0_0 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 4, 4)
-  local l_0_1 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 9, 4)
-  ;
-  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.2_%02X%02X%02X%02X_%02X%02X%02X%02X", (string.byte)(l_0_0, 4), (string.byte)(l_0_0, 3), (string.byte)(l_0_0, 2), (string.byte)(l_0_0, 1), (string.byte)(l_0_1, 4), (string.byte)(l_0_1, 3), (string.byte)(l_0_1, 2), (string.byte)(l_0_1, 1)))
+local l_0_0 = "\\powershell.exe"
+local l_0_1 = (string.len)(l_0_0)
+local l_0_2 = false
+local l_0_3, l_0_4 = (bm.get_process_relationships)()
+for l_0_8,l_0_9 in ipairs(l_0_3) do
+  if l_0_9.image_path ~= nil and (mp.bitand)(l_0_9.reason_ex, 1) == 1 and l_0_1 < (string.len)(l_0_9.image_path) and (string.sub)(l_0_9.image_path, -l_0_1) == l_0_0 then
+    l_0_2 = true
+    break
+  end
 end
 do
-  return mp.CLEAN
+  if l_0_2 == false then
+    return mp.CLEAN
+  end
+  local l_0_10 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+  if l_0_10 ~= nil then
+    (mp.ReportLowfi)(l_0_10, 3640120989)
+  end
+  return mp.INFECTED
 end
 

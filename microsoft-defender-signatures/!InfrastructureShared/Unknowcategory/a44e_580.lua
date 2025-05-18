@@ -3,18 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  if (string.lower)((string.sub)(l_0_0, -12)) == "\\wsfadec.dll" then
-    return mp.CLEAN
+if peattributes.isdll and not peattributes.no_exports then
+  local l_0_0 = {}
+  l_0_0["rsasec.dll"] = true
+  l_0_0["secctp.dll"] = true
+  l_0_0["module_ls.dll"] = true
+  l_0_0["deploy.dll"] = true
+  l_0_0["deplay.dll"] = true
+  l_0_0["jpicom.dll"] = true
+  l_0_0["nbdcom.dll"] = true
+  local l_0_1 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))
+  if l_0_1 and l_0_0[l_0_1] then
+    return mp.INFECTED
   end
-  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    if l_0_6 ~= nil and (string.len)(l_0_6) > 3 and (sysio.IsFileExists)(l_0_6) then
-      (bm.add_related_file)(l_0_6)
+  local l_0_2 = (pe.get_versioninfo)()
+  if l_0_2 then
+    local l_0_3 = l_0_2.OriginalFilename
+    if l_0_3 and l_0_0[(string.lower)(l_0_3)] then
+      return mp.INFECTED
     end
   end
-  return mp.INFECTED
 end
 do
   return mp.CLEAN

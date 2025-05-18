@@ -3,11 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
-local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
-local l_0_3 = l_0_2 .. "\\" .. l_0_0
-;
-(mp.set_mpattribute)("MpInternal_researchdata=parentProcessPath=" .. l_0_3)
-return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R6 in 'UnsetPending'
+
+    if (sysio.IsFileExists)(R6_PC23) then
+      (bm.add_related_file)(R6_PC23)
+    end
+  end
+  return mp.INFECTED
+end
 

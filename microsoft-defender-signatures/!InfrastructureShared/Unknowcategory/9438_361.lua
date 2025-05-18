@@ -3,21 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-local l_0_1 = 0
-local l_0_2 = {}
-local l_0_3 = (nri.GetConnectionHistory)()
-for l_0_7,l_0_8 in pairs(l_0_3) do
-  if l_0_8.DestinationPort == 3389 then
-    if l_0_2[l_0_8.DestinationAddressLow] == nil then
-      l_0_2[l_0_8.DestinationAddressLow] = 1
-      l_0_1 = l_0_1 + 1
-    end
-    l_0_0 = l_0_0 + 1
-  end
-end
 do
-  if l_0_1 > 5 or l_0_0 > 10 then
+  if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll and peattributes.ismsil then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
   return mp.CLEAN

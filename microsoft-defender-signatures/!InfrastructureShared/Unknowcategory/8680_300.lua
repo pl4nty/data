@@ -3,6 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_regval)(pe.REG_EIP, (pe.get_regval)(pe.REG_EIP) + (string.byte)((pe.mmap_va)(pevars.sigaddr - 1, 1), 1))
+if (pesecs[pehdr.NumberOfSections]).NameDW == 1163217994 and peattributes.epscn_islast == true then
+  return mp.INFECTED
+end
+;
+(mp.changedetectionname)(805306404)
 return mp.INFECTED
 

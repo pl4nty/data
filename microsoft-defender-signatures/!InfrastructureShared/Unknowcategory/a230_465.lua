@@ -3,21 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-  local l_0_0 = (string.lower)((mp.utf16to8)((this_sigattrlog[1]).wp2))
-  if (string.find)(l_0_0, ".downloadstring", 1, true) ~= nil then
-    do
-      do
-        if (string.find)(l_0_0, "-dumpcreds", 1, true) ~= nil then
-          local l_0_1 = (string.find)(l_0_0, "-computername", 1, true)
-        else
-        end
-        if false ~= nil then
-          return mp.INFECTED
-        end
-        return mp.CLEAN
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
+  end
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
+    return mp.INFECTED
+  end
+  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if (string.lower)((this_sigattrlog[2]).utf8p2) ~= nil then
+      local l_0_3 = (string.gsub)((string.lower)((this_sigattrlog[2]).utf8p2), "\"", "")
+      if (string.find)(l_0_3, "/c cd /d", 1, true) then
+        return mp.INFECTED
       end
     end
+    return mp.CLEAN
   end
 end
 

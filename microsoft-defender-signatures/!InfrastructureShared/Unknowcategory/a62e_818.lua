@@ -28,8 +28,8 @@ do
   end
   do
     local l_0_9 = nil
-    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-      l_0_9 = (this_sigattrlog[2]).utf8p2
+    if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+      l_0_9 = (this_sigattrlog[3]).utf8p2
     end
     if l_0_9 ~= nil then
       local l_0_10 = (mp.GetExecutablesFromCommandLine)(l_0_9)

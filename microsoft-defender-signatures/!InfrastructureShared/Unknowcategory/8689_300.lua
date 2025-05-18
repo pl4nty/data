@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() > 800000 and (mp.getfilesize)() < 950000 then
+if peattributes.isexe == true or peattributes.isdll == true and (pesecs[6]).Name == ".edata" and (pesecs[6]).Characteristics == 1073741888 then
   return mp.INFECTED
 end
 return mp.CLEAN

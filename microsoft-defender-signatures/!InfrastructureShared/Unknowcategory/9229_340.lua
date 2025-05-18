@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("enable_vmm_grow", true)
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.set_peattribute)("disable_seh_limit", true)
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-;
-(pe.set_peattribute)("disable_thread_apicall_limit", true)
+if not (this_sigattrlog[1]).ppid then
+  return mp.CLEAN
+end
+if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= ((MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[1]).ppid)).IntegrityLevel then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

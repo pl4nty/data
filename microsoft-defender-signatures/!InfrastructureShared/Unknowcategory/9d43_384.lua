@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  local l_0_7 = (mp.bitand)(l_0_6.reason_ex, bm.RELATIONSHIP_CREATED)
-  if l_0_7 == bm.RELATIONSHIP_CREATED then
-    (bm.trigger_sig)("Behavior:Win32/SelfdelProcCreate.A", "INFECTED", l_0_6.ppid)
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -17) == "searchindexer.exe" or (string.sub)(l_0_0, -22) == "searchprotocolhost.exe" or (string.sub)(l_0_0, -20) == "searchfilterhost.exe" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

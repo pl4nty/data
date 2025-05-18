@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 17, 5)
-if (mp.readu_u32)(l_0_0, 2) < 32768 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
+;
+(pe.mmap_patch_va)(pevars.sigaddr - 2, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "\001\000\000\000")
+return mp.CLEAN
 

@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, " -noprofile ", 1, true) or (string.find)(l_0_0, " -noninteractive ", 1, true) or (string.find)(l_0_0, "wsmprovhost", 1, true)) then
-  return mp.CLEAN
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-local l_0_2 = (string.lower)(l_0_1.command_line)
-if (string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "taskschedulerinvoke", 1, true) then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_13")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
+local l_0_2 = (string.byte)(l_0_0, 9)
+local l_0_3 = (mp.readu_u32)(l_0_0, 13)
+local l_0_4 = (mp.readu_u32)(l_0_0, 24)
+local l_0_5 = (pe.get_regval)(pe.REG_EDX)
+local l_0_6 = (mp.ror32)(l_0_5, l_0_2) - (mp.bitxor)(l_0_4, l_0_3) + l_0_1 - 1
+;
+(pe.set_regval)(pe.REG_EBX, l_0_6)
 return mp.INFECTED
 

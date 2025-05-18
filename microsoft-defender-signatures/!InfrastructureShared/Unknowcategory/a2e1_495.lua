@@ -3,8 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched) or (not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched) or (hstrlog[7]).matched) then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_6 = (this_sigattrlog[1]).p1
+    if (string.match)(l_0_6:lower(), "^[a-z]+$") and (string.len)(l_0_6) > 20 then
+      return mp.INFECTED
+    end
+  end
+  return mp.LOWFI
+end
 

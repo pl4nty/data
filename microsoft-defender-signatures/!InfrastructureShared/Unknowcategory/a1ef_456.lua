@@ -3,21 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "\232\000\000\000\000", 1, true) + 5 - 1
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 16)
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
 do
-  if (string.find)(l_0_1, "\128,", 1, true) == nil then
-    local l_0_2 = (string.find)(l_0_1, "\128\004", 1, true)
+  if (this_sigattrlog[2]).matched then
+    local l_0_6 = (this_sigattrlog[2]).p1
+    if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") then
+      return mp.INFECTED
+    end
   end
-  -- DECOMPILER ERROR at PC39: Confused about usage of register: R2 in 'UnsetPending'
-
-  for l_0_6 = 1, l_0_2 - 1 do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC47: Confused about usage of register: R6 in 'UnsetPending'
-
-    ;
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_0 + 1 - 1, "\144")
-  end
-  return mp.INFECTED
+  return mp.LOWFI
 end
 

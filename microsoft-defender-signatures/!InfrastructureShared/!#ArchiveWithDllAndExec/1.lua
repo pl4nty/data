@@ -11,7 +11,7 @@ if (l_0_0 and (MpCommon.PathToWin32Path)(l_0_0)) or not l_0_0 then
   return mp.CLEAN
 end
 l_0_0 = (string.lower)(l_0_0)
-local l_0_1 = (string.match)(l_0_0, "(.*)->")
+local l_0_1 = (string.match)(l_0_0, "(.*)%->")
 local l_0_2 = (string.match)(l_0_0, "%w+%->.*/(.*)")
 local l_0_3 = 259200
 local l_0_4 = 8000

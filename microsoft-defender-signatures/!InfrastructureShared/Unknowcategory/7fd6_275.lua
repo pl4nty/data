@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.AddressOfEntryPoint == 0 and (pe.get_exports)() > 646 and peattributes.isdll == true then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.isdll or peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

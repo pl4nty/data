@@ -3,34 +3,8 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC97: Unhandled construct in 'MakeBoolean' P3
-
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched) or not (hstrlog[4]).matched) and not (hstrlog[18]).matched) or 0 + 1 + 1 == 2 then
+if ((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched) and ((hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or (hstrlog[17]).matched or (hstrlog[18]).matched or (hstrlog[19]).matched) then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

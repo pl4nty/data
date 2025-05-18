@@ -3,6 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "A\235", 1, true), "\235\001")
-return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "explorer.exe" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

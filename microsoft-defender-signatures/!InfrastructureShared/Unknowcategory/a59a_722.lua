@@ -3,28 +3,34 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 == nil or (string.find)((string.lower)(l_0_0), "/reporting", 1, true) ~= nil then
   return mp.CLEAN
 end
-if peattributes.isdll == true then
-  return mp.CLEAN
+do
+  if not (this_sigattrlog[7]).utf8p1 then
+    local l_0_1 = (this_sigattrlog[8]).utf8p1
+  end
+  -- DECOMPILER ERROR at PC28: Confused about usage of register: R1 in 'UnsetPending'
+
+  if l_0_1 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
+
+  local l_0_2 = (string.lower)(l_0_1)
+  if l_0_2 == nil or (string.find)(l_0_2, "c:\\", 1, true) == nil then
+    return mp.CLEAN
+  end
+  if (sysio.IsFileExists)(l_0_2) then
+    (bm.add_related_file)(l_0_2)
+  end
+  local l_0_3 = (bm.get_current_process_startup_info)()
+  if l_0_3 ~= nil and l_0_3.ppid ~= nil then
+    (bm.request_SMS)(l_0_3.ppid, "m")
+    ;
+    (bm.add_action)("SmsAsyncScanEvent", 1)
+  end
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 1048576 then
-  return mp.CLEAN
-end
-if (hstrlog[1]).hitcount > 40 then
-  return mp.CLEAN
-end
-local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
-local l_0_1 = (pe.foffset_va)(pehdr.ImageBase + (pehdr.SizeOfImage - 1)) + 1
-if l_0_0 ~= l_0_1 then
-  l_0_0 = l_0_1
-end
-if (pesecs[1]).SizeOfRawData > 61440 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData < 65536 and (mp.getfilesize)() - l_0_0 < 65536 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

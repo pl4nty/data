@@ -3,30 +3,37 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports then
-  local l_0_0 = ((pehdr.DataDirectory)[1]).RVA
-  local l_0_1 = ((pehdr.DataDirectory)[1]).Size
-  local l_0_2 = (pe.foffset_rva)(l_0_0)
-  ;
-  (mp.readprotection)(false)
-  local l_0_3 = (mp.readfile)(l_0_2, l_0_1)
-  local l_0_4 = (mp.ror32)((mp.readu_u32)(l_0_3, 20), 8)
-  if l_0_4 ~= 1 then
-    return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["svchost.exe"] = true
+  l_0_3["taskeng.exe"] = true
+  l_0_3["taskhostw.exe"] = true
+  if l_0_3[l_0_2] then
+    local l_0_4 = nil
+    if (this_sigattrlog[1]).matched then
+      l_0_4 = (this_sigattrlog[1]).utf8p2
+    end
+    if l_0_4 ~= nil then
+      local l_0_5 = (mp.GetExecutablesFromCommandLine)(l_0_4)
+      for l_0_9,l_0_10 in ipairs(l_0_5) do
+        if l_0_10 ~= nil and l_0_10:len() > 3 and (sysio.IsFileExists)(l_0_10) and (string.sub)(l_0_10, -4) == ".wsf" then
+          if (string.sub)(l_0_10, -15) == "iislogclean.wsf" then
+            return mp.CLEAN
+          end
+          ;
+          (bm.add_threat_file)(l_0_10)
+          return mp.INFECTED
+        end
+      end
+    end
   end
-  local l_0_5 = (mp.ror32)((mp.readu_u32)(l_0_3, 40), 8)
-  local l_0_6 = (mp.readfile)(0, (mp.getfilesize)())
-  local l_0_7 = (mp.ror32)((mp.readu_u32)(l_0_6, 60), 8)
-  local l_0_8 = (mp.ror32)((mp.readu_u32)(l_0_6, l_0_7 + 40), 8)
-  if l_0_8 == l_0_5 then
-    return mp.CLEAN
-  end
-  ;
-  (mp.writeu_u32)(l_0_6, l_0_7 + 40 + 1, l_0_5)
-  ;
-  (mp.vfo_add_buffer)(l_0_6, "[ExportEP]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 end
 do
-  return mp.CLEAN
+  l_0_1 = mp
+  l_0_1 = l_0_1.CLEAN
+  return l_0_1
 end
 

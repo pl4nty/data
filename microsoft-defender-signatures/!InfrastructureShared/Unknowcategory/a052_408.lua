@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 155648 and l_0_0 <= 204800 and (pehdr.NumberOfSections >= 6 or pehdr.NumberOfSections <= 7) and ((pesecs[1]).VirtualSize > 106496 or (pesecs[1]).VirtualSize < 118784) then
   return mp.INFECTED
 end
 return mp.CLEAN

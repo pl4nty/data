@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if peattributes.no_security == true and peattributes.isexe == true and peattributes.amd64_image == true then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
 end
-if (pe.get_exports)() ~= 1 then
-  return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
-if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "maggie" then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

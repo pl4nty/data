@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasExpensiveLoop") then
-  if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
+if peattributes.packed and (mp.get_mpattribute)("SIGATTR:deepemu") and (mp.get_mpattribute)("MpHasExpensiveLoop") then
   return mp.INFECTED
 end
 return mp.CLEAN

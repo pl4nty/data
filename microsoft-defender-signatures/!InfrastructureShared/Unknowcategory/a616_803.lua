@@ -3,17 +3,33 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.ps1)")
-l_0_1 = (string.lower)(l_0_1)
-if (string.find)(l_0_1, ":\\program files", 1, true) or (string.find)(l_0_1, "\\windows defender advanced threat protection\\", 1, true) or (string.find)(l_0_1, "sentinel", 1, true) or (string.find)(l_0_1, "format-list", 1, true) or (string.find)(l_0_1, "-outputformat", 1, true) or (string.find)(l_0_1, "get-vm", 1, true) then
+local l_0_0 = (mp.GetScannedPPID)()
+if not l_0_0 then
   return mp.CLEAN
 end
-if l_0_2 and (sysio.IsFileExists)(l_0_2) then
-  (mp.ReportLowfi)(l_0_2, 1120308759)
-  ;
-  (bm.add_related_file)(l_0_2)
+local l_0_1 = (mp.GetParentProcInfo)()
+if l_0_1 == nil then
+  return mp.CLEAN
 end
-return mp.INFECTED
+local l_0_2 = (string.lower)(l_0_1.image_path)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+if not l_0_2:find("\\explorer.exe") then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.GetProcessCommandLine)(l_0_0)
+if not l_0_3 or #l_0_3 <= 60 then
+  return mp.CLEAN
+end
+local l_0_4 = (string.match)(l_0_3, "replace%(%\'(.-)%\'")
+if l_0_4 == nil or #l_0_4 ~= 1 then
+  return mp.CLEAN
+end
+local l_0_5 = (string.gsub)(l_0_3, "%" .. l_0_4, "")
+local l_0_6 = (string.lower)(l_0_5)
+if (string.find)(l_0_6, "curl", 1, true) and (string.find)(l_0_6, "http", 1, true) and ((string.find)(l_0_6, "iex", 1, true) or (string.find)(l_0_6, "invoke-expression", 1, true)) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

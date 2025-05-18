@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
+if (this_sigattrlog[5]).matched then
   local l_0_0, l_0_1 = (bm.get_process_relationships)()
   for l_0_5,l_0_6 in ipairs(l_0_1) do
     if (string.find)((string.lower)(l_0_6.image_path), "\\powershell.exe", 1, true) then

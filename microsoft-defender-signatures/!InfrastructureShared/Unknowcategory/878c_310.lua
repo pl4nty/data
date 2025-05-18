@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 5 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\mmc.exe") then
+  return mp.CLEAN
+else
+  if (string.find)(l_0_0, "\\officeclicktorun.exe") then
+    return mp.CLEAN
+  end
 end
-if mp.HSTR_WEIGHT > 4 then
-  return mp.SUSPICIOUS
-end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-;
-(pe.reemulate)()
-return mp.CLEAN
+return mp.INFECTED
 

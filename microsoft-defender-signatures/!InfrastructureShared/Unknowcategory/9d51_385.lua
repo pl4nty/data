@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 4 then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 5242880 then
-  return mp.CLEAN
-end
-for l_0_4 = 1, pehdr.NumberOfSections do
-  if (string.lower)(tostring((pesecs[l_0_4]).Name)) == ".shell" then
-    return mp.INFECTED
+if peattributes.isdll == true then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 >= 400000 and l_0_0 <= 750000 then
+    local l_0_1 = (string.lower)((mp.getfilename)())
+    if l_0_1:find("\\appdata\\roaming\\microsoft\\windows\\templates\\", 1, true) then
+      return mp.INFECTED
+    end
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

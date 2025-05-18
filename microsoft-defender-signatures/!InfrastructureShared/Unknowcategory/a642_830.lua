@@ -3,42 +3,62 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = (bm.get_connection_string)()
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-if l_0_2 == "" then
-  return mp.CLEAN
-end
-local l_0_3 = tonumber((string.match)(l_0_2, "DestPort=(%d+);"))
-if l_0_3 < 10050 or l_0_3 > 10063 then
-  return mp.CLEAN
-end
-local l_0_4, l_0_5, l_0_6 = l_0_1:match("(.+\\)([^\\]+)(%.%l%l%l)$")
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-if l_0_5 == nil then
-  return mp.CLEAN
-end
-if l_0_6 == nil or l_0_6 ~= ".exe" then
-  return mp.CLEAN
-end
-local l_0_7 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\SYSTEM32\\"))
-local l_0_8 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\SYSWOW64\\"))
-local l_0_9 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
--- DECOMPILER ERROR at PC102: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
-if (l_0_7 and l_0_7 == l_0_4) or not l_0_8 or l_0_9 and l_0_9 == l_0_4 then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_11 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[2]).utf8p2) > 3 then
+    local l_0_4 = nil
+    local l_0_5 = ((string.lower)((bm.get_imagepath)()))
+    -- DECOMPILER ERROR at PC45: Overwrote pending register: R2 in 'AssignReg'
+
+    if l_0_5 ~= nil and (string.len)(l_0_5) > 3 then
+      for l_0_9 in (string.gmatch)(l_0_4, "%S+") do
+        local l_0_6 = nil
+        -- DECOMPILER ERROR at PC52: Confused about usage of register: R6 in 'UnsetPending'
+
+        if R6_PC52 ~= nil and (string.len)(R6_PC52) >= 1 and (string.sub)(R6_PC52, 0, 1) ~= "/" then
+          if (sysio.IsFileExists)(R6_PC52) then
+            (bm.add_related_file)(R6_PC52)
+          else
+            if l_0_6 ~= nil and (sysio.IsFileExists)(l_0_6 .. R6_PC52) then
+              (bm.add_related_file)(l_0_10)
+            end
+          end
+        end
+      end
+      do
+        l_0_5 = this_sigattrlog
+        l_0_5 = l_0_5[3]
+        l_0_5 = l_0_5.matched
+        if l_0_5 then
+          l_0_5 = this_sigattrlog
+          l_0_5 = l_0_5[3]
+          l_0_5 = l_0_5.utf8p1
+          local l_0_12 = nil
+          if l_0_5 ~= nil then
+            l_0_12 = sysio
+            l_0_12 = l_0_12.IsFileExists
+            l_0_12 = l_0_12(l_0_5)
+            if l_0_12 then
+              l_0_12 = bm
+              l_0_12 = l_0_12.add_related_file
+              l_0_12(l_0_5)
+            end
+          end
+        end
+        do
+          l_0_5 = mp
+          l_0_5 = l_0_5.INFECTED
+          return l_0_5
+        end
+      end
+    end
+  end
 end
-return mp.CLEAN
 

@@ -3,8 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.suspicious_dosheader == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  if l_0_2 == "powershell.exe" or (string.find)(l_0_2, "^%d+%.exe") then
+    local l_0_3 = (mp.GetScannedPPID)()
+    if l_0_3 == nil then
+      return mp.CLEAN
+    end
+    ;
+    (MpCommon.RequestSmsOnProcess)(l_0_3, MpCommon.SMS_SCAN_LOW)
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

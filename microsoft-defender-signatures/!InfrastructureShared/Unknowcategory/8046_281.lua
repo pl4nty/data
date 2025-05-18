@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EDI)
-;
-(mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.7_k1_%08X_%02X", l_0_0, 2))
+if (string.lower)((string.sub)(((pe.get_versioninfo)()).OriginalFilename, 1, 5)) == "lsass" then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

@@ -3,9 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "wzunzip%.exe") or (string.find)(l_0_0, "wzcline40%-64%.exe") or (string.find)(l_0_0, "wzcline40%-32%.exe") then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-return mp.INFECTED
+if (this_sigattrlog[5]).matched and (this_sigattrlog[6]).matched then
+  local l_0_0 = (this_sigattrlog[5]).p1
+  local l_0_1 = (this_sigattrlog[6]).p1
+  if l_0_0 .. l_0_1 == "unsafe" then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.LOWFI
+end
 

@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil and (string.len)(l_0_0) > 14 then
-  l_0_0 = (string.lower)((string.sub)(l_0_0, -14))
-  if l_0_0 == "\\mpsigstub.exe" then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  local l_0_2 = nil
+  if #{l_0_2:match("/D:(%d+)%.(%d+)%.(%d+)%.(%d+)")} == 4 then
     return mp.CLEAN
   end
+  return mp.INFECTED
 end
-return mp.INFECTED
 

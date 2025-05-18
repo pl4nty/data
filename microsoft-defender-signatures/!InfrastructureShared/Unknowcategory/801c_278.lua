@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Emotet.BD!Pra1") or (mp.get_mpattribute)("NID:Emotet.BD!Pra2") or (mp.get_mpattribute)("NID:Emotet.BD!Pra3") then
-  return mp.INFECTED
+do
+  local l_0_0, l_0_1 = (hstrlog[1]).matched and 1 or 0
+  do
+    local l_0_2 = nil
+    -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (mp.bitxor)(l_0_2, (hstrlog[2]).matched and 1 or 0) ~= 0 then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
 

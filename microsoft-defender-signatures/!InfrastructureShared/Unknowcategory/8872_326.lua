@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.find)(l_0_0, "\\\\(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)\\") then
-      return mp.INFECTED
-    end
-  end
+if not peattributes.isexe and not peattributes.isdll then
   return mp.CLEAN
 end
+if peattributes.hasappendeddata == false then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

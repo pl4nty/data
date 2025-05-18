@@ -3,11 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, 13)) == "\\wmiprvse.exe" or (string.lower)((string.sub)(l_0_6.image_path, 12)) == "\\scrcons.exe") then
-    return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    if l_0_1 ~= nil then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+        ;
+        (bm.add_related_file)(l_0_6)
+      end
+    end
   end
 end
-return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
+end
 

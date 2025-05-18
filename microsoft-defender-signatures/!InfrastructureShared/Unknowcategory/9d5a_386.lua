@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EAX)
-local l_0_1 = (pe.get_api_id)(l_0_0)
-if l_0_1 ~= 671954542 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT") then
+  (mp.set_mpattribute)("lua_codepatch_obfuscator_xt_1")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 17, "\235 ")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 49, "\235")
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 29, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+return mp.CLEAN
 

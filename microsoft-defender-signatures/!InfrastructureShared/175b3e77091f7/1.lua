@@ -40,117 +40,165 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
         l_0_4.Archive_Dll = l_0_9
         l_0_7 = true
       end
-      local l_0_12, l_0_13 = pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped", l_0_0)
-      if l_0_12 and l_0_13 then
-        l_0_4.FileDropperInfo = safeJsonSerialize(l_0_13)
+      local l_0_12 = l_0_1 .. "\\" .. l_0_5
+      l_0_12 = (string.gsub)(l_0_12, "\\", "\\\\")
+      l_0_12 = l_0_12:gsub("([%^%$%(%)%.%[%]%*%+%-%?])", "\\%1")
+      local l_0_13, l_0_14 = pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped", l_0_12)
+      if l_0_13 and l_0_14 then
+        l_0_4.FileDropperInfo = safeJsonSerialize(l_0_14)
+        l_0_4.FileDroppedRecently = true
         l_0_7 = true
       else
         l_0_4.potentiallyOldDll = true
       end
-      local l_0_14 = l_0_2:match("([^\\]+)$")
-      local l_0_15 = (string.gsub)(l_0_0, "%d+", "0")
-      local l_0_16 = (string.gsub)(l_0_5, "%d+", "0")
-      local l_0_17 = l_0_14 .. "|" .. l_0_16 .. "|" .. l_0_15
-      local l_0_18, l_0_19, l_0_20 = AnomalyTableCheck("Appomaly_LoadedDlls_Path_Normalized", l_0_17, 2, "MarkerRecord_" .. l_0_14)
-      if l_0_18 then
-        local l_0_21 = (MpCommon.GetOriginalFileName)(l_0_2)
+      local l_0_15 = l_0_2:match("([^\\]+)$")
+      local l_0_16 = (string.gsub)(l_0_0, "%d+", "0")
+      local l_0_17 = (string.gsub)(l_0_5, "%d+", "0")
+      local l_0_18 = l_0_15 .. "|" .. l_0_17 .. "|" .. l_0_16
+      local l_0_19, l_0_20, l_0_21 = AnomalyTableCheck("Appomaly_LoadedDlls_Path_Normalized", l_0_18, 2, "MarkerRecord_" .. l_0_15)
+      if l_0_19 then
+        local l_0_22 = (MpCommon.GetOriginalFileName)(l_0_2)
         do
           do
-            if not l_0_21 then
-              local l_0_22 = (sysio.GetPEVersionInfo)(l_0_2)
-              if l_0_22 and l_0_22.OriginalFilename then
-                l_0_21 = l_0_22.OriginalFilename
+            if not l_0_22 then
+              local l_0_23 = (sysio.GetPEVersionInfo)(l_0_2)
+              if l_0_23 and l_0_23.OriginalFilename then
+                l_0_22 = l_0_23.OriginalFilename
                 ;
-                (MpCommon.SetOriginalFileName)(l_0_2, l_0_21)
+                (MpCommon.SetOriginalFileName)(l_0_2, l_0_22)
               end
             end
-            if l_0_21 then
-              l_0_17 = l_0_21 .. "|" .. l_0_16 .. "|" .. l_0_15
-              l_0_18 = AnomalyTableCheck("Appomaly_LoadedDlls_Path_Normalized", l_0_17, 2, "MarkerRecord_" .. l_0_14)
+            if l_0_22 then
+              l_0_18 = l_0_22 .. "|" .. l_0_17 .. "|" .. l_0_16
+              l_0_19 = AnomalyTableCheck("Appomaly_LoadedDlls_Path_Normalized", l_0_18, 2, "MarkerRecord_" .. l_0_15)
             end
             ;
-            (bm.add_related_string)("Anomaly_LoadedDlls_TblInfo", safeJsonSerialize(l_0_20), bm.RelatedStringBMReport)
-            l_0_4.AppName = l_0_14
+            (bm.add_related_string)("Anomaly_LoadedDlls_TblInfo", safeJsonSerialize(l_0_21), bm.RelatedStringBMReport)
+            l_0_4.AppName = l_0_15
             l_0_4.Dll_FileSize = (sysio.GetFileSize)(l_0_0) or 0
-            l_0_4.Key = l_0_17
-            local l_0_23 = "Appomaly_LoadedDlls_Size"
-            local l_0_24 = 31536000
-            local l_0_25 = 1000
-            local l_0_26 = l_0_14 .. l_0_5
-            l_0_4.Dll_PrevFileSize = GetRollingQueueKeyValue(l_0_23, l_0_26) or -1
-            if l_0_4.Dll_PrevFileSize == -1 and l_0_19 then
-              AppendToRollingQueue(l_0_23, l_0_26, l_0_4.Dll_FileSize, l_0_24, l_0_25)
+            l_0_4.Key = l_0_18
+            local l_0_24 = "Appomaly_LoadedDlls_Size"
+            local l_0_25 = 31536000
+            local l_0_26 = 1000
+            local l_0_27 = l_0_15 .. l_0_5
+            l_0_4.Dll_PrevFileSize = GetRollingQueueKeyValue(l_0_24, l_0_27) or -1
+            if (l_0_4.Dll_PrevFileSize == -1 or l_0_4.Dll_PrevFileSize == 0) and l_0_4.Dll_FileSize > 0 then
+              AppendToRollingQueue(l_0_24, l_0_27, l_0_4.Dll_FileSize, l_0_25, l_0_26)
             else
-              if l_0_4.Dll_PrevFileSize == -1 and not l_0_19 then
-                l_0_4.DLLLoadAfterTraining = true
-              else
-                l_0_4.Dll_PrevFileSize = tonumber(l_0_4.Dll_PrevFileSize)
-                if l_0_4.Dll_PrevFileSize * 2 < l_0_4.Dll_FileSize or l_0_4.Dll_FileSize < l_0_4.Dll_PrevFileSize / 2 then
-                  l_0_4.DllFileSizeAnomalous = true
-                end
+              l_0_4.Dll_PrevFileSize = tonumber(l_0_4.Dll_PrevFileSize)
+              if l_0_4.Dll_PrevFileSize * 2 < l_0_4.Dll_FileSize or l_0_4.Dll_FileSize < l_0_4.Dll_PrevFileSize / 2 then
+                l_0_4.DllFileSizeAnomalous = true
               end
             end
-            l_0_4.inTraining = l_0_19
-            if not l_0_18 and not l_0_19 and not l_0_4.DllFileSizeAnomalous then
+            if l_0_4.Dll_PrevFileSize == -1 and not l_0_20 then
+              l_0_4.DLLLoadAfterTraining = true
+            end
+            l_0_4.inTraining = l_0_20
+            if not l_0_19 and not l_0_20 and not l_0_4.DllFileSizeAnomalous then
               return mp.CLEAN
             end
             if l_0_4.Dll_PrevFileSize == l_0_4.Dll_FileSize then
               return mp.CLEAN
             end
-            local l_0_27 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_5)
-            -- DECOMPILER ERROR at PC307: Unhandled construct in 'MakeBoolean' P1
+            if l_0_19 and not l_0_20 then
+              l_0_4.Dll_PathNew = true
+            end
+            local l_0_28 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_5)
+            -- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P1
 
-            if l_0_27 and l_0_27 ~= "NONE" then
-              l_0_4.POTENTIAL_SIDE_LOADING = l_0_27
+            if l_0_28 and l_0_28 ~= "NONE" then
+              l_0_4.POTENTIAL_SIDE_LOADING = l_0_28
               l_0_7 = true
             end
             do
-              local l_0_28 = "NONE"
+              local l_0_29 = "NONE"
               if (sysio.IsFileExists)("c:\\Windows\\System32\\" .. l_0_5) then
-                l_0_28 = "System32"
-                l_0_7 = true
+                l_0_29 = "System32"
                 l_0_4.POTENTIAL_SIDE_LOADING = "System32"
               else
                 if (sysio.IsFileExists)("c:\\Windows\\SysWOW64\\" .. l_0_5) then
-                  l_0_28 = "SysWOW64"
-                  l_0_7 = true
+                  l_0_29 = "SysWOW64"
                   l_0_4.POTENTIAL_SIDE_LOADING = "SysWOW64"
                 end
               end
-              AppendToRollingQueue("SYSTEM_DLLs", l_0_5, l_0_28, 31104000, 5000)
-              local l_0_29, l_0_30 = pcall(MpCommon.RollingQueueQueryMultiKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", l_0_1 .. "\\" .. l_0_5)
-              if l_0_29 and l_0_30 then
-                for l_0_34,l_0_35 in ipairs(l_0_30) do
-                  if (string.find)(l_0_35.value, "FileAttributes", 1, true) or (string.find)(l_0_35.value, "UnsignedFile", 1, true) then
+              AppendToRollingQueue("SYSTEM_DLLs", l_0_5, l_0_29, 31104000, 5000)
+              local l_0_30, l_0_31 = pcall(MpCommon.RollingQueueQueryMultiKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", l_0_12)
+              if l_0_30 and l_0_31 then
+                for l_0_35,l_0_36 in ipairs(l_0_31) do
+                  if (string.find)(l_0_36.value, "FileAttributes", 1, true) or (string.find)(l_0_36.value, "UnsignedFile", 1, true) then
                     l_0_4.FileDroppedRecently = true
-                    l_0_4.FileInfo = l_0_30
+                    l_0_4.FileInfo = l_0_31
                     l_0_7 = true
                   end
                 end
               end
               do
+                if not l_0_30 then
+                  (bm.add_related_string)("Error", l_0_31, bm.RelatedStringBMReport)
+                end
                 if not l_0_7 then
                   return mp.CLEAN
                 end
-                local l_0_36, l_0_37 = safeJsonSerialize(l_0_4, 100, nil, true)
-                local l_0_38 = bm.add_related_string
-                local l_0_39 = "Additional_Info"
-                do
-                  l_0_38(l_0_39, l_0_36 or l_0_37 or "", bm.RelatedStringBMReport)
-                  l_0_38 = bm
-                  l_0_38 = l_0_38.add_related_string
-                  l_0_39 = "Anomaly_LoadedDlls_TblInfo"
-                  l_0_38(l_0_39, safeJsonSerialize(l_0_20), bm.RelatedStringBMReport)
-                  l_0_38 = bm
-                  l_0_38 = l_0_38.add_related_file
-                  l_0_39 = l_0_0
-                  l_0_38(l_0_39)
-                  l_0_38 = mp
-                  l_0_38 = l_0_38.INFECTED
-                  do return l_0_38 end
-                  -- DECOMPILER ERROR at PC419: freeLocal<0 in 'ReleaseLocals'
+                local l_0_37 = "Appomaly_LoadedDlls_Version"
+                local l_0_38 = 31536000
+                local l_0_39 = 1000
+                local l_0_40 = l_0_15 .. l_0_5 .. l_0_4.Dll_FileSize
+                l_0_4.Dll_VersionInfo = GetRollingQueueKeyValue(l_0_37, l_0_40) or ""
+                if l_0_4.Dll_VersionInfo == "" then
+                  do
+                    if not (sysio.GetPEVersionInfo)(l_0_0) then
+                      local l_0_41, l_0_42, l_0_43, l_0_44 = {}
+                    end
+                    -- DECOMPILER ERROR at PC440: Confused about usage of register: R33 in 'UnsetPending'
 
-                  return mp.CLEAN
+                    -- DECOMPILER ERROR at PC445: Confused about usage of register: R33 in 'UnsetPending'
+
+                    -- DECOMPILER ERROR at PC450: Confused about usage of register: R33 in 'UnsetPending'
+
+                    do
+                      local l_0_45 = nil
+                      l_0_4.Dll_VersionInfo = (l_0_41.OriginalFilename or "") .. "|" .. (l_0_41.CompanyName or "") .. "|" .. (l_0_41.FileDescription or "")
+                      -- DECOMPILER ERROR at PC459: Confused about usage of register: R34 in 'UnsetPending'
+
+                      AppendToRollingQueue(l_0_37, l_0_40, (l_0_41.OriginalFilename or "") .. "|" .. (l_0_41.CompanyName or "") .. "|" .. (l_0_41.FileDescription or ""), l_0_38, l_0_39)
+                      if (string.find)(l_0_4.Dll_VersionInfo, "Microsoft", 1, true) then
+                        return mp.CLEAN
+                      end
+                      local l_0_46, l_0_47 = pcall(MpCommon.RollingQueueQueryKeyRegex, l_0_37, l_0_15 .. l_0_5)
+                      if not l_0_47 then
+                        l_0_4.Dll_PrevVersionInfo = {}
+                        if l_0_4.Dll_VersionInfo ~= "||" then
+                          for l_0_52,i_2 in ipairs(l_0_47) do
+                            if i_2.value == l_0_4.Dll_VersionInfo then
+                              return mp.CLEAN
+                            end
+                          end
+                        end
+                        do
+                          local l_0_53, l_0_54 = safeJsonSerialize(l_0_4, 100, nil, true)
+                          local l_0_55 = bm.add_related_string
+                          local l_0_56 = "Additional_Info"
+                          do
+                            l_0_55(l_0_56, l_0_53 or l_0_54 or "", bm.RelatedStringBMReport)
+                            l_0_55 = bm
+                            l_0_55 = l_0_55.add_related_string
+                            l_0_56 = "Anomaly_LoadedDlls_TblInfo"
+                            l_0_55(l_0_56, safeJsonSerialize(l_0_21), bm.RelatedStringBMReport)
+                            l_0_55 = bm
+                            l_0_55 = l_0_55.add_related_file
+                            l_0_56 = l_0_0
+                            l_0_55(l_0_56)
+                            l_0_55 = mp
+                            l_0_55 = l_0_55.INFECTED
+                            do return l_0_55 end
+                            -- DECOMPILER ERROR at PC536: freeLocal<0 in 'ReleaseLocals'
+
+                            return mp.CLEAN
+                          end
+                        end
+                      end
+                    end
+                  end
                 end
               end
             end

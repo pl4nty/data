@@ -3,17 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 12 then
-  (mp.set_mpattribute)("PUA:Block:SGMinerGM")
-  return mp.INFECTED
-end
-if (mp.bitand)(mp.HSTR_WEIGHT, 3) >= 2 then
-  if peattributes.amd64_image then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_sgminer")
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
   else
-    ;
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan_sgminer")
+  end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
+      local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = (this_sigattrlog[2]).utf8p1
+    else
+    end
+    -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC47: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p1) and (mp.IsKnownFriendlyFile)((this_sigattrlog[4]).utf8p1, false, true) == false then
+      (bm.add_related_file)((this_sigattrlog[4]).utf8p1)
+      return mp.INFECTED
+    end
+    return mp.CLEAN
   end
 end
-return mp.CLEAN
 

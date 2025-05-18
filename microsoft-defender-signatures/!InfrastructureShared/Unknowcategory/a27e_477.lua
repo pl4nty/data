@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (hstrlog[3]).matched and l_0_0 >= 163840 and l_0_0 <= 196608 then
-  return mp.INFECTED
-end
-if peattributes.no_security == true and l_0_0 >= 163840 and l_0_0 <= 176128 and pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 8 and (mp.get_mpattribute)("NID:Emotet.PB!MSR!Pra1") then
+if (mp.get_mpattribute)("pea_hasexports") and (mp.getfilesize)() > 20000000 then
+  if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
+  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
-  return mp.CLEAN
-end
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
+if mp.HSTR_WEIGHT > 5 then
   return mp.INFECTED
 end
+if mp.HSTR_WEIGHT > 4 then
+  return mp.SUSPICIOUS
+end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+;
+(pe.reemulate)()
 return mp.CLEAN
 

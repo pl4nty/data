@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.enable_vmm_grow and peattributes.no_uidata and peattributes.no_comruntime and (mp.getfilesize)() >= 150000 and (mp.getfilesize)() < 330000 then
-  return mp.INFECTED
+do
+  if peattributes.isdll == true and peattributes.hasexports == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    if l_0_0 ~= nil and #l_0_0 > 0 and (mp.IsTrustedFile)() then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

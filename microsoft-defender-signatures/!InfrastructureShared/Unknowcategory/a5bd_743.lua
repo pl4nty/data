@@ -6,28 +6,24 @@
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = nil
   end
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
 
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC39 = (mp.ContextualExpandEnvironmentVariables)(R6_PC39)
-      R6_PC39 = (string.lower)(R6_PC39)
-      if (string.find)(R6_PC39, "control.exe$") == nil and (sysio.IsFileExists)(R6_PC39) and (string.find)(R6_PC39, "\\windows\\.*%.cpl$") == nil and (string.find)(R6_PC39, "\\windows\\.*%.dll$") == nil then
-        (bm.add_related_file)(R6_PC39)
-        return mp.INFECTED
-      end
-    end
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or not (string.find)(l_0_1, "\\windows mail\\", 1, true) then
+    return mp.INFECTED
   end
-  do
+  local l_0_2 = nil
+  if (string.sub)((string.lower)(nil), 1, 1) == "%" and (string.find)((string.lower)(nil), "%commonprogramfiles%\\system", 1, true) then
     return mp.CLEAN
   end
+  l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2))
+  if not (string.find)(l_0_2, "\\outlook express\\", 1, true) then
+    (bm.add_related_file)(l_0_2)
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

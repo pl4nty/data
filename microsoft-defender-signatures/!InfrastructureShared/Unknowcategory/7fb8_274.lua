@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.shr32)(pehdr.TimeDateStamp, 22) and (mp.shl32)(pehdr.TimeDateStamp, 22) == 0 then
-  (mp.changedetectionname)(805306402)
+if peattributes.no_security == true and peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Kelios.GD!MTB") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

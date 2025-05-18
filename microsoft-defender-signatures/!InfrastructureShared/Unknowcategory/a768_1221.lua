@@ -3,31 +3,42 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = true
-local l_0_3 = false
-for l_0_7,l_0_8 in ipairs(l_0_1) do
-  local l_0_9 = (mp.bitand)(l_0_8.reason_ex, bm.RELATIONSHIP_CREATED)
-  if l_0_9 == bm.RELATIONSHIP_CREATED then
-    local l_0_10 = (string.lower)(l_0_8.image_path)
-    if (string.find)(l_0_10, "\\windows\\sys", 1, true) or (string.find)(l_0_10, "\\program files", 1, true) or (string.find)(l_0_10, "\\choco", 1, true) or (string.find)(l_0_10, "\\wlanscan", 1, true) or (string.find)(l_0_10, "\\csc.exe", 1, true) or (string.find)(l_0_10, "\\7z", 1, true) or (string.find)(l_0_10, "\\bginfo", 1, true) or (string.find)(l_0_10, "\\cloudbuild\\", 1, true) or (string.find)(l_0_10, "\\winscp.exe", 1, true) or (string.find)(l_0_10, "\\dismhost", 1, true) then
-      l_0_2 = false
-    else
-      l_0_2 = true
-    end
-    if (string.find)(l_0_10, "regsvr32.exe", 1, true) or (string.find)(l_0_10, "rundll32.exe", 1, true) or (string.find)(l_0_10, "\\java", 1, true) then
-      l_0_2 = true
-    end
-    if l_0_2 == true then
-      (MpCommon.TurnNriOnProcess)(l_0_8.ppid)
-      ;
-      (bm.trigger_sig)("AmsiDownloadExecProc", "Trigger", l_0_8.ppid)
-      l_0_3 = true
-    end
+bytes_to_int = function(l_1_0, l_1_1, l_1_2, l_1_3)
+  -- function num : 0_0
+  if not l_1_3 then
+    error("need four bytes to convert to int", 2)
+  end
+  return l_1_0 + l_1_1 * 256 + l_1_2 * 65536 + l_1_3 * 16777216
+end
+
+pointer2int = function(l_2_0, l_2_1)
+  -- function num : 0_1
+  local l_2_2 = (string.byte)(l_2_0, l_2_1)
+  local l_2_3 = (string.byte)(l_2_0, l_2_1 + 1)
+  local l_2_4 = (string.byte)(l_2_0, l_2_1 + 2)
+  local l_2_5 = (string.byte)(l_2_0, l_2_1 + 3)
+  return bytes_to_int(l_2_2, l_2_3, l_2_4, l_2_5)
+end
+
+;
+(mp.readprotection)(false)
+if (hstrlog[1]).matched and peattributes.isdll and peattributes.hasexports then
+  local l_0_0 = (hstrlog[1]).VA
+  local l_0_1 = (pe.mmap_va)(l_0_0 + 7, 5)
+  local l_0_2 = pointer2int(l_0_1, 1)
+  local l_0_3 = (pe.mmap_va)(l_0_2, 93)
+  if (string.match)(l_0_3, "Sistema indispon") ~= nil and (string.match)(l_0_3, "vel no momento, tente mais tarde") ~= nil then
+    return mp.CLEAN
+  end
+  l_0_3 = (string.gsub)(l_0_3, "@", "")
+  l_0_3 = (string.gsub)(l_0_3, "!", "")
+  l_0_3 = (string.gsub)(l_0_3, "*", "")
+  l_0_3 = (string.gsub)(l_0_3, "#", "")
+  if (string.match)(l_0_3, "Sistema indispon") ~= nil and (string.match)(l_0_3, "vel no momento, tente mais tarde") ~= nil then
+    return mp.INFECTED
   end
 end
-if l_0_3 == true then
-  return mp.INFECTED
+do
+  return mp.CLEAN
 end
-return mp.CLEAN
 

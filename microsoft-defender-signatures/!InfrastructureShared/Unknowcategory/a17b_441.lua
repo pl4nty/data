@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 4096 and (mp.getfilesize)() < 20480 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:MinerGate")
+  ;
+  (mp.set_mpattribute)("Company:CoinMiner32:MinerGate")
+  return mp.INFECTED
 end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_minergate")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_minergate")
+end
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasValidProjPath") and (mp.get_mpattribute)("pea_hasappendeddata") and peattributes.isexe then
-  return mp.LOWFI
+if peattributes.isexe == true and (pesecs[7]).Name == ".idata" and (pesecs[7]).Characteristics == 1073741888 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -7,7 +7,7 @@ local l_0_0 = (mp.getfilesize)()
 if l_0_0 < 20000 or l_0_0 > 400000 then
   return mp.CLEAN
 end
-local l_0_1 = tostring(footerpage)
+local l_0_1 = tostring(headerpage)
 local l_0_2, l_0_3, l_0_4 = (string.find)(l_0_1, "\'..?.?.?.?.?.?.?.?.?\'[,%+]")
 if l_0_2 == nil then
   return mp.CLEAN

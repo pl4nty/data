@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)(((pe.get_versioninfo)()).CompanyName, 1, 8)) == "viracure" then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (pe.get_regval)(pe.REG_EIP)
+local l_0_1 = (pe.get_regval)(pe.REG_ESP)
+if peattributes.isdll and l_0_1 < l_0_0 and l_0_0 - l_0_1 < 512 and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,50 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if (string.sub)((string.lower)((bm.get_imagepath)()), -13) == "\\sqlservr.exe" or (string.sub)((string.lower)((bm.get_imagepath)()), -13) == "\\sqlagent.exe" then
-  l_0_1 = true
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 13, 64)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+if (mp.readu_u32)(l_0_0, 57) - 2 ~= l_0_1 then
+  return mp.CLEAN
 end
-if not l_0_1 then
-  local l_0_2, l_0_3 = , (bm.get_process_relationships)()
-  for l_0_7,l_0_8 in ipairs(l_0_3) do
-    local l_0_4 = nil
-    -- DECOMPILER ERROR at PC30: Confused about usage of register: R8 in 'UnsetPending'
-
-    if R8_PC30.image_path ~= nil and (mp.bitand)(R8_PC30.reason_ex, 1) == 1 and ((string.lower)((string.sub)(R8_PC30.image_path, -13)) == "\\sqlservr.exe" or (string.lower)((string.sub)(R8_PC30.image_path, -13)) == "\\sqlagent.exe") then
-      l_0_1 = true
-      break
-    end
-  end
+local l_0_2 = (mp.readu_u32)(l_0_0, 10)
+local l_0_3 = (mp.readu_u32)(l_0_0, 24)
+local l_0_4 = (string.byte)(l_0_0, 19)
+l_0_0 = (pe.mmap_va)(l_0_2, 4)
+if (pe.get_api_id)((mp.readu_u32)(l_0_0, 1)) ~= 2185195070 then
+  return mp.CLEAN
 end
-do
-  if l_0_1 ~= nil then
-    l_0_3 = nil
-    local l_0_9 = nil
-    l_0_9 = this_sigattrlog
-    l_0_9 = l_0_9[3]
-    l_0_9 = l_0_9.matched
-    if l_0_9 then
-      l_0_9 = this_sigattrlog
-      l_0_9 = l_0_9[3]
-      l_0_3 = l_0_9.utf8p2
-    end
-    if l_0_3 ~= nil then
-      l_0_9 = l_0_9(l_0_3, "Detection:([^\\]+)$")
-      local l_0_10 = nil
-      l_0_10 = bm
-      l_0_10 = l_0_10.trigger_sig
-      l_0_10(l_0_9, "MalwareDroppedBySQL")
-      l_0_10 = mp
-      l_0_10 = l_0_10.INFECTED
-      return l_0_10
-    end
-  end
-  do
-    l_0_3 = mp
-    l_0_3 = l_0_3.CLEAN
-    return l_0_3
-  end
+l_0_0 = (pe.mmap_va)(l_0_3, 4)
+local l_0_5 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
+if l_0_5 ~= 3267971814 then
+  return mp.CLEAN
 end
+;
+(pe.set_regval)(pe.REG_EBX, l_0_4)
+;
+(pe.mmap_patch_va)(l_0_1, "\221\a\005\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "êê\144")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "êê")
+return mp.INFECTED
 

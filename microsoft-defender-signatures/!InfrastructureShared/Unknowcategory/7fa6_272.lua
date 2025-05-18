@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("InEmail") then
-  if mp.HSTR_WEIGHT >= 21 then
-    return mp.INFECTED
-  else
-    return mp.LOWFI
-  end
-else
-  if mp.HSTR_WEIGHT >= 21 then
-    return mp.LOWFI
+if peattributes.is_process then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
   end
 end
-return mp.CLEAN
+return mp.INFECTED
 

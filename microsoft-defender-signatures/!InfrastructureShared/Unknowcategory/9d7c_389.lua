@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 13 then
+  (mp.set_mpattribute)("PUA:Block:GenoilEthMiner")
+  return mp.INFECTED
 end
-local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
-if l_0_1 ~= "wmiprvse.exe" or l_0_1 == "services.exe" then
-  return mp.CLEAN
-end
-if (versioning.GetLocaleIdentifier)() == 1049 then
-  return mp.LOWFI
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_genoil")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_genoil")
 end
 return mp.CLEAN
 

@@ -3,25 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-if (string.find)(l_0_0, "\\spyhunter\\", 1, true) then
-  return mp.CLEAN
-else
-  if (string.find)(l_0_0, "\\yandex\\", 1, true) then
-    return mp.CLEAN
-  else
-    if (string.find)(l_0_0, "\\utiltool\\", 1, true) then
-      return mp.CLEAN
-    else
-      if (string.find)(l_0_0, "\\tmus\\", 1, true) then
-        return mp.CLEAN
-      else
-        if (string.find)(l_0_0, "\\tmpscore.exe", 1, true) then
-          return mp.CLEAN
-        end
-      end
-    end
-  end
+local l_0_0 = -1
+if (pesecs[3]).Name == ".data" then
+  l_0_0 = 3
 end
-return mp.INFECTED
+if (pesecs[2]).Name == ".data" then
+  l_0_0 = 2
+end
+if l_0_0 == -1 then
+  return mp.CLEAN
+end
+if (pesecs[l_0_0]).SizeOfRawData > 4096 then
+  local l_0_1 = pehdr.ImageBase + (pesecs[l_0_0]).VirtualAddress + 16
+  local l_0_2 = (pe.mmap_va)(l_0_1, 16)
+  if (string.byte)(l_0_2, 1) == 77 and (string.byte)(l_0_2, 2) == 90 then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
+do
+  return mp.CLEAN
+end
 

@@ -3,22 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-    if l_0_0 == nil or l_0_0 == "" or (sysio.IsFileExists)(l_0_0) == false then
-      return mp.CLEAN
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_executable_image") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_no_boundimport") and (mp.get_mpattribute)("pea_no_delayimport") and (mp.getfilesize)() >= 696320 and (mp.getfilesize)() < 937984 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
-    if (string.sub)(l_0_0, 1, 3) == "COM" then
-      return mp.CLEAN
-    end
-    if (string.find)(l_0_0, ".exe", -4, true) or (string.find)(l_0_0, ".dll", -4, true) or (string.find)(l_0_0, ".sys", -4, true) then
-      (bm.add_related_file)(l_0_0)
-      return mp.INFECTED
-    end
-    return mp.CLEAN
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

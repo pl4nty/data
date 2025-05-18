@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and peattributes.no_security and peattributes.isvbnative and peattributes.x86_image then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 35840 and l_0_0 < 204800 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT == 4 then
+  return mp.SUSPICIOUS
 end
+if (hstrlog[1]).matched and (hstrlog[2]).matched then
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AMY")
+end
+return mp.LOWFI
 

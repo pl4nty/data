@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.AddressOfEntryPoint == 0 and (pe.get_exports)() > 296 and peattributes.isdll == true then
+if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

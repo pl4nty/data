@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" and (versioning.IsSeville)() then
-      return mp.LOWFI
-    end
-  end
+if not peattributes.isdll then
   return mp.CLEAN
 end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 3000000 or l_0_0 < 10000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

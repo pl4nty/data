@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isdll == true or peattributes.isexe == true) and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (pesecs[1]).VirtualSize > 45056 and (pesecs[1]).VirtualSize < 61440 and (pesecs[2]).VirtualSize > 768 and (pesecs[2]).VirtualSize < 1536 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

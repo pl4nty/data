@@ -5,7 +5,7 @@
 -- function num : 0
 (mp.readprotection)(false)
 local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 5, 5)
-if (mp.readu_u32)(l_0_0, 2) < 589824 then
+if (mp.readu_u32)(l_0_0, 2) < 3145728 then
   return mp.CLEAN
 end
 return mp.INFECTED

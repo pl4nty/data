@@ -3,16 +3,32 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if l_0_0 and (string.len)(l_0_0) > 48 and (string.find)(l_0_0, "%.%.\\") then
-      l_0_0 = (string.lower)(l_0_0)
-      if (string.find)(l_0_0, "javascript:", 2, true) or (string.find)(l_0_0, "vbscript:", 2, true) then
-        return mp.INFECTED
-      end
+if peattributes.isexe == true and (mp.getfilesize)() > 1700000 and (mp.getfilesize)() < 4800000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
     end
   end
-  return mp.CLEAN
+end
+do
+  l_0_0 = pe
+  l_0_0 = l_0_0.get_versioninfo
+  l_0_0 = l_0_0()
+  local l_0_6 = nil
+  if l_0_0 == nil then
+    l_0_6 = mp
+    l_0_6 = l_0_6.CLEAN
+    return l_0_6
+  end
+  l_0_6 = l_0_0.OriginalFilename
+  if l_0_6 ~= "defOff.exe" then
+    l_0_6 = mp
+    l_0_6 = l_0_6.CLEAN
+    return l_0_6
+  end
+  l_0_6 = mp
+  l_0_6 = l_0_6.INFECTED
+  return l_0_6
 end
 

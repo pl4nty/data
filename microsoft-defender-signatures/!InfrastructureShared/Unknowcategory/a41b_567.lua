@@ -3,12 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-l_0_1 = (string.lower)((string.gsub)(l_0_1, "`", ""))
-local l_0_2 = (string.gsub)(l_0_1, " ", "")
-if (string.find)(l_0_2, "\\appdata\\roaming\\", 1, true) or (string.find)(l_0_2, "\\public\\", 1, true) or (string.find)(l_0_2, "\\programdata\\", 1, true) or (string.find)(l_0_1, "[\\start menu\\programs\\startup\\] ", 1, true) then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil and (MpCommon.GetPersistContextCountNoPath)("Lua:MSIL/Quiltran.D") > 0 then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  local l_0_1 = (MpCommon.GetPersistContextNoPath)("Lua:MSIL/Quiltran.D")
+  if l_0_1 then
+    for l_0_5,l_0_6 in ipairs(l_0_1) do
+      if (string.find)(l_0_0, l_0_6) then
+        (bm.add_action)("EmsScan", 3000)
+        return mp.INFECTED
+      end
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
+end
 

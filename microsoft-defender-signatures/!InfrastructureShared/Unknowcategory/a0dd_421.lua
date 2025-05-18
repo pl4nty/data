@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
-  return mp.INFECTED
+local l_0_0, l_0_1, l_0_2 = nil, nil, nil
+local l_0_3 = nil
+if ((string.lower)((bm.get_imagepath)())):find("explorer.exe") then
+  l_0_3 = (string.match)((this_sigattrlog[1]).utf8p2, ".exe")
+  if l_0_3 ~= nil then
+    l_0_3 = (this_sigattrlog[1]).utf8p2
+    if l_0_3 == (this_sigattrlog[2]).utf8p2 and l_0_3 == (this_sigattrlog[3]).utf8p1 then
+      return mp.INFECTED
+    end
+  end
 end
 return mp.CLEAN
 

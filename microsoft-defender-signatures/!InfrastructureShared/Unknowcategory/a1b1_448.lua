@@ -3,18 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_1 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (sysio.IsFileExists)(l_0_7) and (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-        (bm.add_related_file)(l_0_7)
-      end
-    end
+if (mp.get_mpattribute)("//RPF:IS_Pdf") then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 < 20000 then
+    return mp.CLEAN
+  end
+  if l_0_0 > 50000 then
+    return mp.CLEAN
+  end
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)(0, l_0_0)
+  if l_0_1:match("/URI %(http%://usaa%.com%-sec%-inet%-auth%-logon%-ent%-logon%-logon%-") then
+    return mp.INFECTED
   end
 end
 do
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

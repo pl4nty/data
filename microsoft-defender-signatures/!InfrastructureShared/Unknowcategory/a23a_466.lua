@@ -3,25 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-;
-(table.insert)(l_0_0, "https://thiscannotpossiblywork.local/")
-local l_0_1 = {}
-l_0_1.isLocal = "false"
-l_0_1.certutil = "true"
-l_0_1.E2ETestScenario = "true"
-local l_0_2 = (mp.GetUrlReputation)(l_0_0, l_0_1)
-if l_0_2 ~= nil then
-  local l_0_3 = l_0_2.urls
-  for l_0_7,l_0_8 in ipairs(l_0_3) do
-    if l_0_8.determination == 2 and l_0_8.confidence > 60 then
-      return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[5]).matched then
+  local l_0_0 = nil
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    if l_0_1 ~= nil then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+        ;
+        (bm.add_related_file)(l_0_6)
+      end
+    end
+    do
+      do
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
     end
   end
-end
-do
-  l_0_3 = mp
-  l_0_3 = l_0_3.CLEAN
-  return l_0_3
 end
 

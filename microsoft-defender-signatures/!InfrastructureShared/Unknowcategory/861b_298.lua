@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true and peattributes.no_security == true then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find(".vcxproj", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

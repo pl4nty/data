@@ -3,29 +3,8 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_2 = nil
-  local l_0_3 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
-  for l_0_7,l_0_8 in pairs({"\\windows\\system32\\"}) do
-    local l_0_4 = nil
-    -- DECOMPILER ERROR at PC38: Confused about usage of register: R7 in 'UnsetPending'
-
-    if #R7_PC38 < #l_0_3 and (string.sub)(l_0_3, -#R7_PC38) == R7_PC38 then
-      return mp.CLEAN
-    end
-  end
+if peattributes.isexe == true and epcode[1] == 104 and epcode[2] == 15 and peattributes.hasexports == true and pehdr.AddressOfEntryPoint == 12647710 and (pesecs[4]).Name == ".data020" and (pesecs[5]).Name == ".data021" and (mp.getfilesize)() >= 6000000 and (mp.getfilesize)() <= 7000000 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

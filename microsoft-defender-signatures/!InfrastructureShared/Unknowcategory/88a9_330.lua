@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 30, 96)
-local l_0_1 = (string.byte)(l_0_0, 1) + 2
-if #l_0_0 < l_0_1 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_0, l_0_1) == 232 then
+if mp.HSTR_WEIGHT >= 111 and mp.HSTR_WEIGHT % 100 >= 11 and mp.HSTR_WEIGHT % 10 >= 1 then
+  if pehdr.Machine == 34404 then
+    (mp.changedetectionname)(805306476)
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

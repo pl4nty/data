@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  if (string.lower)((string.sub)(l_0_0, -14)) == "\\gvfs\\gvfs.exe" then
-    return mp.CLEAN
-  end
-  if (string.lower)((string.sub)(l_0_0, -36)) == "\\urbrowser\\application\\urbrowser.exe" then
-    return mp.CLEAN
-  end
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.INFECTED
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+if (string.find)(l_0_0:lower(), "microsoft.net\\framework.-\\v[0-9.].+\\temporary asp.net files\\") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

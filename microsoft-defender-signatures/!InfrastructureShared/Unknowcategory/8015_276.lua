@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_OLE_FILE") and ((mp.get_mpattribute)("MHSTR:MacroExecute") or (mp.get_mpattribute)("MHSTR:MacroJustAutoOpen")) then
+if (mp.get_mpattribute)("HSTR:NSIS_Installer") or (mp.get_mpattribute)("HSTR:NSIS.gen!A") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

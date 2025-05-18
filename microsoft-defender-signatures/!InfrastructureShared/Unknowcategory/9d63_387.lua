@@ -3,20 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-do
-  if l_0_0 then
-    local l_0_1 = {}
-    l_0_1["powershell.exe"] = true
-    l_0_1["wscript.exe"] = true
-    l_0_1["cscript.exe"] = true
-    l_0_1["winword.exe"] = true
-    l_0_1["excel.exe"] = true
-    l_0_1["powerpnt.exe"] = true
-    if l_0_1[(string.match)(l_0_0, "\\([^\\]+)$")] then
-      return mp.INFECTED
-    end
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R1 in 'AssignReg'
+
+local l_0_1 = nil
+if l_0_0 ~= nil and l_0_1 ~= nil and l_0_0 == l_0_1 then
+  if (string.find)(l_0_0, "c:\\windows\\system32\\", 1, true) then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,14 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-  local l_0_0 = (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 18, 4), 1), 4), 1))
-  local l_0_1 = (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 34, 4), 1), 4), 1))
-  if l_0_0 == 1467596470 and (l_0_1 == 3909456120 or l_0_1 == 4231370131) then
-    return mp.INFECTED
-  end
-end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
 do
+  if l_0_0 and (MpCommon.GetPersistContextCountNoPath)("OfficeWmiProc") > 0 then
+    local l_0_1 = (MpCommon.GetPersistContextNoPath)("OfficeWmiProc")
+    if (string.find)(l_0_0, "wmiprvse.exe", 1, true) then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        if (sysio.IsFileExists)(l_0_6) then
+          (bm.add_related_file)(l_0_6)
+        end
+      end
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

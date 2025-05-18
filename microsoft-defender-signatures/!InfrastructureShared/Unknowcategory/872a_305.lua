@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
+if peattributes.isexe == true and ((pesecs[4]).Name == ".hertdhr" or (pesecs[4]).Name == ".jrehtrj") and (mp.getfilesize)() < 2690050 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,10 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size
-if peattributes.no_security == true and l_0_0 >= 32768 and l_0_0 <= 655360 and (l_0_1 >= 56 or pehdr.SizeOfImage <= l_0_1) then
+if mp.HSTR_WEIGHT >= 7 then
+  (mp.set_mpattribute)("PUA:Block:XMRigCC")
   return mp.INFECTED
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrigcc")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrigcc")
 end
 return mp.CLEAN
 

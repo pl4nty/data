@@ -3,30 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (l_0_6.reason_ex == bm.RELATIONSHIP_CREATED or l_0_6.reason_ex == bm.RELATIONSHIP_INJECTION) and (sysio.IsFileExists)(l_0_7) then
-        (bm.add_related_file)(l_0_7)
-      end
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if (mp.ispackedwith)("AutoHotKey_+") then
+  return mp.CLEAN
+end
+if (mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv") then
+  local l_0_0, l_0_1 = nil, nil
+  if (hstrlog[1]).matched then
+    l_0_0 = ((hstrlog[1]).match_offsets)[3]
+    l_0_1 = (hstrlog[1]).VA + l_0_0
+    local l_0_2 = (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1)
+    if (mp.readu_u32)((pe.mmap_va)(l_0_2, 4), 1) ~= 909132101 then
+      return mp.INFECTED
     end
   end
 end
 do
-  if l_0_1 ~= nil then
-    for l_0_11,l_0_12 in ipairs(l_0_1) do
-      if l_0_12.image_path ~= nil then
-        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
-        if (sysio.IsFileExists)(l_0_13) and (mp.IsKnownFriendlyFile)(l_0_13, true, false) then
-          (bm.add_related_file)(l_0_13)
-        end
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
 

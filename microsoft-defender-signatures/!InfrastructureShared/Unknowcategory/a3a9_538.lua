@@ -3,27 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-    if l_0_7 == 1 then
-      local l_0_8, l_0_9 = (bm.get_process_relationships)(l_0_6.ppid)
-      for l_0_13,l_0_14 in ipairs(l_0_8) do
-        if l_0_14.image_path ~= nil then
-          local l_0_15 = (mp.bitand)(l_0_14.reason_ex, 1)
-          if l_0_15 == 1 then
-            local l_0_16 = (string.lower)(l_0_14.image_path)
-            if (string.find)(l_0_16, "wscript.exe", 1, true) or (string.find)(l_0_16, "cscript.exe", 1, true) then
-              return mp.INFECTED
-            end
-          end
-        end
-      end
-    end
-  end
-end
-do return mp.CLEAN end
--- DECOMPILER ERROR at PC67: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
+(mp.set_mpattribute)("lua_codepatch_tibs_6")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (mp.readu_u32)(l_0_0, 10)
+local l_0_2 = (mp.readu_u32)(l_0_0, 21)
+local l_0_3 = (pe.get_regval)(pe.REG_EDX)
+local l_0_4 = (string.byte)(l_0_0, 6)
+local l_0_5 = (mp.ror32)(l_0_3, l_0_4) - (mp.bitxor)(l_0_2, l_0_1) - 1
+;
+(pe.set_regval)(pe.REG_EBX, l_0_5)
+return mp.INFECTED
 

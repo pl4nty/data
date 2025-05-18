@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.ismsil == true and pehdr.AddressOfEntryPoint ~= 0 and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if (nri.GetHttpCommand)() ~= nri.HTTP_POST then
   return mp.CLEAN
 end
+local l_0_0 = (string.lower)((nri.GetHttpRequestHeader)("User-Agent"))
+if l_0_0 == "winhttp" then
+  (nri.AddTelemetry)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH))
+  return mp.INFECTED
+end
+return mp.CLEAN
 

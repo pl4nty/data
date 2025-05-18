@@ -3,31 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if (string.len)(l_0_0) < 4096 then
-    return mp.CLEAN
-  end
-  if (MpCommon.GetPersistContextCountNoPath)("Lua:MalPsSmsScanAmsi") > 0 then
-    local l_0_1 = (bm.get_current_process_startup_info)()
-    local l_0_2 = (MpCommon.GetPersistContextNoPath)("Lua:MalPsSmsScanAmsi")
-    if l_0_2 then
-      for l_0_6,l_0_7 in ipairs(l_0_2) do
-        if l_0_7 == l_0_1.ppid then
-          return mp.INFECTED
-        end
-      end
+if pehdr.Machine == 34404 then
+  if mp.HSTR_WEIGHT >= 18 then
+    (mp.changedetectionname)(805306420)
+    return mp.INFECTED
+  else
+    if mp.HSTR_WEIGHT >= 1 and (hstrlog[11]).matched then
+      (pe.set_peattribute)("hstr_exhaustive", true)
+      ;
+      (pe.reemulate)()
     end
   end
-  do
-    do
-      l_0_1 = mp
-      l_0_1 = l_0_1.CLEAN
-      do return l_0_1 end
-      l_0_0 = mp
-      l_0_0 = l_0_0.CLEAN
-      return l_0_0
+  return mp.CLEAN
+else
+  if mp.HSTR_WEIGHT >= 18 then
+    return mp.INFECTED
+  else
+    if mp.HSTR_WEIGHT >= 7 then
+      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
     end
   end
 end
+return mp.CLEAN
 

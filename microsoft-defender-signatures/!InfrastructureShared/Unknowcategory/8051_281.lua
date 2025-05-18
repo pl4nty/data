@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil and l_0_0.image_path ~= nil and (string.lower)((string.sub)(l_0_0.image_path, -9)) == "httpd.exe" then
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if mp.HSTR_CALLER_SMS == l_0_0 then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("SLF:Win32/BruterShell.A")
+return mp.LOWFI
 

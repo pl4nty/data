@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.aslr_bit_set == true and peattributes.no_boundimport == true and peattributes.no_ep == true and peattributes.no_comruntime == true then
-  return mp.INFECTED
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+  return mp.CLEAN
+end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 1, "\255\255\255\255")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

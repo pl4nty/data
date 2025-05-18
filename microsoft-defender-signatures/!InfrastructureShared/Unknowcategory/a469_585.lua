@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[7]).utf8p1
+local l_0_0 = (this_sigattrlog[8]).utf8p1
 if l_0_0 == nil then
   return mp.CLEAN
 end

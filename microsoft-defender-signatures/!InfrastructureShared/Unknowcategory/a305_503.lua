@@ -3,9 +3,18 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Worm:MSIL/Murkados.A")
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched and (hstrlog[4]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[7]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+if peattributes.isdll and (mp.getfilesize)() < 399000 then
+  if mp.HSTR_WEIGHT >= 301 and ((mp.bitand)(mp.HSTR_WEIGHT, 1) == 1 or (mp.bitand)(mp.HSTR_WEIGHT, 2) == 2) then
+    return mp.SUSPICIOUS
+  end
+  if mp.HSTR_WEIGHT >= 100 then
+    return mp.LOWFI
+  end
+  if mp.HSTR_WEIGHT >= 1 then
+    (pe.set_peattribute)("hstr_exhaustive", true)
+    ;
+    (pe.reemulate)()
+  end
 end
 return mp.CLEAN
 

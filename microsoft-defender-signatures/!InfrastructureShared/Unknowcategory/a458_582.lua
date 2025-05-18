@@ -7,32 +7,24 @@
 
 do
   if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    local l_0_3 = ((string.lower)((string.sub)(l_0_0, -32))):match("\\([^\\]+)$")
-    if ({["pcpitstopscheduleservice.exe"] = true})[l_0_3] then
-      return mp.CLEAN
-    end
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
     local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
       local l_0_5 = nil
-      -- DECOMPILER ERROR at PC44: Confused about usage of register: R8 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC38: Confused about usage of register: R6 in 'UnsetPending'
 
-      if (sysio.IsFileExists)(R8_PC44) then
-        (bm.add_related_file)(R8_PC44)
+      R6_PC38 = (mp.ContextualExpandEnvironmentVariables)(R6_PC38)
+      if (sysio.IsFileExists)(R6_PC38) and (string.sub)(R6_PC38, -4) == ".jar" then
+        (bm.add_threat_file)(R6_PC38)
       end
     end
   end
   do
-    l_0_3 = mp
-    l_0_3 = l_0_3.INFECTED
-    return l_0_3
+    return mp.INFECTED
   end
 end
 

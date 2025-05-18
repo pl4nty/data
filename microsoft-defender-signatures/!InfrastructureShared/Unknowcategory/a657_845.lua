@@ -3,31 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1, l_0_2 = (bm.get_process_relationships)()
+if l_0_2 ~= nil then
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    local l_0_8 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_7.ppid)
+    if l_0_0.integrity_level < l_0_8.IntegrityLevel then
+      local l_0_9 = (string.lower)(l_0_7.image_path)
+      if (string.find)(l_0_9, "\\system32\\mrt.exe", -17, true) or (string.find)(l_0_9, "\\asep_inv.exe", -13, true) or (string.find)(l_0_9, "\\mpsigstub.exe", -14, true) then
+        return mp.CLEAN
+      end
+      ;
+      (bm.request_SMS)(l_0_7.ppid, "h+")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1000)
+      ;
+      (bm.trigger_sig)("Gouda", "Chrome")
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-if not (mp.get_mpattribute)("Lua:VirTool:Win32/VMProtect.A") then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() < 5242880 then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == "generator.exe" or l_0_0 == "g1.exe" then
-  (mp.set_mpattribute)("HSTR:GGenerator.D")
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("\\g1\\", 1, true) then
-  (mp.set_mpattribute)("HSTR:GGenerator.D")
-end
-if l_0_1:find("\\g1-beta\\", 1, true) then
-  return mp.INFECTED
-end
-if l_0_1:find("g1\\generator\\", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

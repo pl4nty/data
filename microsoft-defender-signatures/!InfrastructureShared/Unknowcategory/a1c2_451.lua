@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 ~= nil then
-  if (string.find)(l_0_0, "\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\rubyw.exe", 1, true) then
-    return mp.CLEAN
-  end
-  if (mp.IsKnownFriendlyFile)((MpCommon.PathToWin32Path)(l_0_0), true, true) == true then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+local l_0_0 = (pe.get_regval)(pe.REG_EBP)
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 8)
+local l_0_2 = (mp.readu_u32)(l_0_1, 3)
+l_0_1 = (pe.mmap_va)((mp.bitand)(l_0_0 + l_0_2, 4294967295), 4)
+local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1
+l_0_1 = (pe.mmap_va)(l_0_3, 4)
+if (mp.readu_u32)(l_0_1, 1) == 707406378 then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

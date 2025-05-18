@@ -3,18 +3,20 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-if (mp.getfilesize)() > 155652 then
-  local l_0_0 = (mp.readfile)(155648, 4)
-  local l_0_1 = (mp.readu_u16)(l_0_0, 1)
-  if l_0_1 == 23117 then
-    (mp.set_mpattribute)("LobaostInfected")
+if peattributes.isexe and pehdr.NumberOfSections >= 6 then
+  local l_0_0 = 0
+  local l_0_1 = 0
+  for l_0_5 = 2, pehdr.NumberOfSections do
+    l_0_0 = l_0_0 + (pesecs[l_0_5]).SizeOfRawData
+    if l_0_1 < (pesecs[l_0_5]).SizeOfRawData then
+      l_0_1 = (pesecs[l_0_5]).SizeOfRawData
+    end
+  end
+  if (l_0_0 - l_0_1) * 100 < l_0_1 * 15 then
     return mp.INFECTED
   end
 end
 do
-  ;
-  (mp.set_mpattribute)("LobaostOriginal")
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

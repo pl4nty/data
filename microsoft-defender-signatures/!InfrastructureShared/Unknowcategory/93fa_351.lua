@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
+if peattributes.no_security == true and peattributes.isexe == true and (mp.getfilesize)() < 200000 and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
   return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_minipopups")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_minipopups")
 end
 return mp.CLEAN
 

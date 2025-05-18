@@ -3,24 +3,23 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = nil
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
 
-  if l_0_0 == nil then
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).wp1 ~= nil then
+      local l_0_4 = nil
+      if (string.find)((mp.utf16to8)((this_sigattrlog[3]).wp1), ":\\ \\[%w%s%p]+$") and (string.find)((mp.utf16to8)((this_sigattrlog[3]).wp1), ":\\ \\[^\\]+$") then
+        return mp.INFECTED
+      end
+    end
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC18: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_1 = l_0_0 .. ".zip"
-  if (MpCommon.QueryPersistContext)(l_0_1, "NewlyCreatedZip") then
-    (bm.add_related_file)(l_0_1)
-    return mp.INFECTED
-  end
-  return mp.CLEAN
 end
 
