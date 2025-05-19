@@ -913,6 +913,7 @@
         "Nh_Disable_WebCodecs_Firefox": true,
         "Nh_Enable_Iframe_Support": true,
         "Nh_Enable_Request_Caching": true,
+        "Nh_Flw_Flu_Direct_Connection": true,
         "Nh_New_Error_Handler": true,
         "Nh_New_Mobius_Branding": true,
         "Nh_SendDirectConnection_Diagnostics": true,
