@@ -349,6 +349,28 @@ BASE_DECLARE_FEATURE_TRIGGER(
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kCIOpenTabsPerfOptimization);
 
+// Trigger fired for a CI active user whose Chrome usage is greater than
+// `kChromeNetworkThresholdToEnableOpenTabs`, open tabs CI enabled and a visible
+// browser window added.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCIOpenTabsActivatedBrowserAdded);
+
+// Trigger fired for a CI active user whose Chrome usage is greater than
+// `kChromeNetworkThresholdToEnableOpenTabs` and a visible
+// browser window added.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCIOpenTabsChromeThresholdBreachedBrowserAdded);
+
+// Trigger fired for a CI active user whose Chrome usage is greater than
+// `kChromeNetworkThresholdToEnableOpenTabs`, open tabs CI enabled.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCIOpenTabsChromeThresholdBreached);
+
+// Trigger fired for a CI active user whose open tabs CI enabled and a visible
+// browser window added.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCIActiveUserOnFirstBrowserAdded);
+
 }  // namespace edge_continuous_import
 }  // namespace features
 
