@@ -9,16 +9,15 @@
       "Microsoft.Exchange.Management.ExoPowershellGalleryModule/1.0.0": {
         "dependencies": {
           "BldSync": "1.0.3",
-          "CodeSign.Exchange": "1.3.21",
-          "ExchangeLabBuildTools": "2.2.4",
+          "CodeSign.Exchange": "1.3.24",
           "Microsoft.CodeAnalysis.FxCopAnalyzers": "3.3.2",
           "Microsoft.Exchange.Management.AdminApiProvider": "0.0.0",
           "Microsoft.Exchange.Management.RestApiClient": "0.0.0",
           "Microsoft.Internal.Analyzers": "2.9.7",
           "Microsoft.NETFramework.ReferenceAssemblies": "1.0.3",
           "Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation": "0.0.0",
-          "MsBuildRetail.Exchange": "1.1.0",
-          "MsBuild.Exchange": "17.6.0",
+          "MsBuildRetail.Exchange": "2.0.0",
+          "MsBuild.Exchange": "18.0.0",
           "NSubstitute.Analyzers.CSharp": "1.0.17",
           "Newtonsoft.Json": "13.0.3",
           "OSS.RoslynAnalysis": "1.4.10",
@@ -70,8 +69,7 @@
         }
       },
       "BldSync/1.0.3": {},
-      "CodeSign.Exchange/1.3.21": {},
-      "ExchangeLabBuildTools/2.2.4": {},
+      "CodeSign.Exchange/1.3.24": {},
       "Microsoft.Azure.Cosmos/3.37.0": {
         "dependencies": {
           "Azure.Core": "1.19.0",
@@ -830,8 +828,8 @@
           }
         }
       },
-      "MsBuild.Exchange/17.6.0": {},
-      "MsBuildRetail.Exchange/1.1.0": {},
+      "MsBuild.Exchange/18.0.0": {},
+      "MsBuildRetail.Exchange/2.0.0": {},
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -1934,7 +1932,7 @@
         "runtime": {
           "Microsoft.Exchange.Management.AdminApiProvider.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.20.8511.0"
+            "fileVersion": "15.20.8699.0"
           }
         }
       },
@@ -1942,7 +1940,7 @@
         "runtime": {
           "Microsoft.Exchange.Management.RestApiClient.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.20.8511.0"
+            "fileVersion": "15.20.8699.0"
           }
         }
       },
@@ -1950,7 +1948,7 @@
         "runtime": {
           "Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.20.8511.0"
+            "fileVersion": "15.20.8699.0"
           }
         }
       }
@@ -1997,19 +1995,12 @@
       "path": "bldsync/1.0.3",
       "hashPath": "bldsync.1.0.3.nupkg.sha512"
     },
-    "CodeSign.Exchange/1.3.21": {
+    "CodeSign.Exchange/1.3.24": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qAsQLQhrLKciu5jhxQ83LjPvruFdaYBZIKIBpEv4r8kn3fbVLNPbj2BPNQ5QBP3yDXKa1KjC8tTGXOfVW88gKA==",
-      "path": "codesign.exchange/1.3.21",
-      "hashPath": "codesign.exchange.1.3.21.nupkg.sha512"
-    },
-    "ExchangeLabBuildTools/2.2.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aOigdArWurS0u4ieQgpPCo/hBN0KigcMWvZ+Afd1ZCAhx0zCHvbMKdnfdCZz0F0dIkW+kHjf14ghTxaHApg6LQ==",
-      "path": "exchangelabbuildtools/2.2.4",
-      "hashPath": "exchangelabbuildtools.2.2.4.nupkg.sha512"
+      "sha512": "sha512-bV6yPHK3DhWvuebalHZHOEImyoIKIodp0Hf41loHCGlAHUnh7nZuPKpZD1fW6cg+fVR8S4SMFQP5RAkWQLWvyw==",
+      "path": "codesign.exchange/1.3.24",
+      "hashPath": "codesign.exchange.1.3.24.nupkg.sha512"
     },
     "Microsoft.Azure.Cosmos/3.37.0": {
       "type": "package",
@@ -2249,19 +2240,19 @@
       "path": "microsoft.win32.systemevents/7.0.0",
       "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
-    "MsBuild.Exchange/17.6.0": {
+    "MsBuild.Exchange/18.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+06xpXnXK08j6v7ma5dInbItTtcQ5ezdeg2xaXh8PNcgenjBciVEVOtGQza9KDbBCz+U/SuIfRbfpcBpyNS99w==",
-      "path": "msbuild.exchange/17.6.0",
-      "hashPath": "msbuild.exchange.17.6.0.nupkg.sha512"
+      "sha512": "sha512-8cnQ4Q3lkj8TiSxb51/bVTvtXp80X4IxGxIQDa4iPoOPdhA5GbTSTs3vFpX5CsyrU6xgs7KYPoqpuRMjNrKnZw==",
+      "path": "msbuild.exchange/18.0.0",
+      "hashPath": "msbuild.exchange.18.0.0.nupkg.sha512"
     },
-    "MsBuildRetail.Exchange/1.1.0": {
+    "MsBuildRetail.Exchange/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uyt+Q2QCa7Ql7eZUAA86eOx3Y7e71Xi3ChjddQorMNKpYLrh/8aqpInnO0QGK/VJcmuS6i/kJ0PezdAGcOm1EQ==",
-      "path": "msbuildretail.exchange/1.1.0",
-      "hashPath": "msbuildretail.exchange.1.1.0.nupkg.sha512"
+      "sha512": "sha512-rKz9aYAXn4+0MOobdOWLUGXt60YBlWxb0egurQE61O21xoMVtlBiHL790o7u3xv9ye0vBk9xunOHPaVjD4tYSQ==",
+      "path": "msbuildretail.exchange/2.0.0",
+      "hashPath": "msbuildretail.exchange.2.0.0.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",

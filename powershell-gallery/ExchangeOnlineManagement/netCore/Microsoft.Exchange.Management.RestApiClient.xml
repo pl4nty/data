@@ -6605,7 +6605,7 @@
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.AddVivaModuleFeaturePolicy">
             <summary>
-            This class implements "Add-VivaModuleFeaturePolicy" Cmdlet, which adds a new Policy to a Module Feature or Category.
+            This class implements "Add-VivaModuleFeaturePolicy" Cmdlet, which adds a new Policy to a Module Feature.
             </summary>
         </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.AddVivaModuleFeaturePolicy.ModuleId">
@@ -6633,6 +6633,11 @@
             Determines whether the policy acts to enable or disable the user control
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.AddVivaModuleFeaturePolicy.IsUserOptedInByDefault">
+            <summary>
+            Determines the default opt-in state for users when user control is enabled
+            </summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.AddVivaModuleFeaturePolicy.GroupIds">
             <summary>
             The group ids to apply the policy to
@@ -6648,16 +6653,6 @@
             Whether to apply to policy to all users
             </summary>
         </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.AddVivaModuleFeaturePolicy.CategoryId">
-            <summary>
-            Gets a value indicating a category in Viva
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.AddVivaModuleFeaturePolicy.IsCategoryEnabled">
-            <summary>
-            Determines whether the policy acts to enable or disable the category
-            </summary>
-        </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.AddVivaModuleFeaturePolicy.InternalProcessRecord">
             <summary>
             The business logic specific to this cmdlet.
@@ -6666,21 +6661,6 @@
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.AddVivaModuleFeaturePolicy.CreateModuleFeaturePolicy">
             <summary>
             Create Module Feature Policy
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.AddVivaModuleFeaturePolicy.CreateCategoryPolicy">
-            <summary>
-            Create Category Policy 
-            </summary>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaFeatureCategory">
-            <summary>
-            This class implements "Get-VivaFeatureCategory" Cmdlet to fetch the specified feature(s) and display the category metadata.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaFeatureCategory.InternalProcessRecord">
-            <summary>
-            The business logic specific to this cmdlet.
             </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeature">
@@ -6732,7 +6712,7 @@
             <summary>
             This class implements "Get-VivaModuleFeaturePolicy" Cmdlet, 
             which gets the specific policy or policies and displays the policy data.
-            This can either be a feature or category level policy.
+            This can either be a feature level policy.
             </summary>
         </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.ModuleId">
@@ -6743,11 +6723,6 @@
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.FeatureId">
             <summary>
             The feature identifier of the policy or policies to get.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.CategoryId">
-            <summary>
-            The category identifier of the policy or policies to get.
             </summary>
         </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.PolicyId">
@@ -6762,7 +6737,7 @@
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.RemoveVivaModuleFeaturePolicy">
             <summary>
-            This class implements "Remove-VivaModuleFeaturePolicy" Cmdlet. Removes the specifed policy from the specified module feature or the specified category.
+            This class implements "Remove-VivaModuleFeaturePolicy" Cmdlet. Removes the specifed policy from the specified module feature.
             </summary>
         </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.RemoveVivaModuleFeaturePolicy.ModuleId">
@@ -6773,11 +6748,6 @@
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.RemoveVivaModuleFeaturePolicy.FeatureId">
             <summary>
             The feature identifier of the policy to delete.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.RemoveVivaModuleFeaturePolicy.CategoryId">
-            <summary>
-            The category identifier of the policy to delete.
             </summary>
         </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.RemoveVivaModuleFeaturePolicy.PolicyId">
@@ -6795,16 +6765,11 @@
             Delete Module Feature Policy
             </summary>
         </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.RemoveVivaModuleFeaturePolicy.DeleteCategoryPolicy">
-            <summary>
-            Delete Category Policy
-            </summary>
-        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy">
             <summary>
             Implements the "Update-VivaModuleFeaturePolicy" Cmdlet. Updates the specified policy with any of the attributes
             provided. Any provided data related to the access control list will override the existing access control list for the policy.
-            This can either be a feature or category level policy.
+            This can either be a feature level policy.
             </summary>
         </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.ModuleId">
@@ -6837,6 +6802,11 @@
             Determines whether the policy acts to enable or disable the user control
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.IsUserOptedInByDefault">
+            <summary>
+            Determines the default opt-in state for users when user control is enabled
+            </summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.GroupIds">
             <summary>
             The new set of group ids the admin would like to apply the policy to.
@@ -6852,16 +6822,6 @@
             Indicates the admin would like to update whether the policy to apply to everyone.
             </summary>
         </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.CategoryId">
-            <summary>
-            The category identifier of the policy to update.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.IsCategoryEnabled">
-            <summary>
-            The new category disablement status the admin would like to set for the policy.
-            </summary>
-        </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.InternalProcessRecord">
             <summary>
             The business logic specific to this cmdlet.
@@ -6869,27 +6829,22 @@
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.IsEmptyAccessControlList(Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[])">
             <summary>
-            Determines if the proivided access control list is null or empty.
+            Determines if the provided access control list is null or empty.
             </summary>
             <param name="accessControlList">The access control list.</param>
             <returns>Whether the provided list is null or empty.</returns>
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.IsDisabled(System.Boolean,System.Nullable{System.Boolean})">
             <summary>
-            This is to convert the double negative senario on IsFeatureDisabled/IsCategoryDisabled and match with service side.
+            This is to convert the double negative scenario on IsFeatureDisabled and match with service side.
             </summary>
-            <param name="oldPolicyIsDisabled">IsFeatureDisabled/IsCategoryDisabled flag in the old policy</param>
-            <param name="newPolicyIsEnabled">IsFeatureEnabled/IsCategoryEnabled flag in new policy</param>
-            <returns>If feature/category is disabled or not</returns>
+            <param name="oldPolicyIsDisabled">IsFeatureDisabled flag in the old policy</param>
+            <param name="newPolicyIsEnabled">IsFeatureEnabled flag in new policy</param>
+            <returns>If feature is disabled or not</returns>
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.UpdateModuleFeaturePolicy">
             <summary>
             Update Module Feature Policy
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.UpdateVivaModuleFeaturePolicy.UpdateCategoryPolicy">
-            <summary>
-            Update Category Policy
             </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants">
@@ -6898,11 +6853,6 @@
             </summary>
         </member>
         <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.FeaturePolicy">
-            <summary>
-            The string used for parameter set name
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.CategoryPolicy">
             <summary>
             The string used for parameter set name
             </summary>
@@ -6956,27 +6906,6 @@
             <param name="moduleId">The module identifier.</param>
             <param name="featureId">The feature identifier.</param>
             <param name="email">The user or group's identifier</param>
-            <returns>The URI for the endpoint.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.AllVivaCategoryPolicyUri(System.String)">
-            <summary>
-            The endpoint to interact with all CategoryPolicies of a Viva Feature Category.
-            </summary>
-            <param name="categoryId">The category identifier.</param>
-            <returns>The URI for the endpoint.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.VivaCategoryPolicyUri(System.String,System.String)">
-            <summary>
-            The endpoint to interact with a specific Policy of a Viva Module Feature.
-            </summary>
-            <param name="categoryId">The category identifier.</param>
-            <param name="policyId">The policy identifier.</param>
-            <returns>The URI for the endpoint.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.AllVivaCategoryUri">
-            <summary>
-            The endpoint to interact with all category metadata of a Viva Feature Category.
-            </summary>
             <returns>The URI for the endpoint.</returns>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation">
@@ -7057,117 +6986,6 @@
             <param name="featureId">The identifier of the feature.</param>
             <param name="enabled">Whether the feature is effectively enabled.</param>
         </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy">
-            <summary>
-            CategoryPolicy model class.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy.Name">
-            <summary>
-            Name of the policy.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy.CategoryId">
-            <summary>
-            Category id to which the policy is associated with.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy.CategoryPolicyId">
-            <summary>
-            The unique identifier for the policy.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy.ModifiedOn">
-            <summary>
-            Time when policy was last modified.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy.CreatedOn">
-            <summary>
-            Time when policy was created.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy.IsCategoryDisabled">
-            <summary>
-            Whether the policy serves to enable or disable the associated category for the associated access control list.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy.AccessControlList">
-            <summary>
-            Access control information to which this policy is applied.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy.#ctor(System.String,System.String,System.String,System.DateTime,System.DateTime,System.Boolean,Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[])">
-            <summary>
-            Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy"/> class
-            </summary>
-            <param name="name">Name of the policy.</param>
-            <param name="categoryId">Category id to which the policy is associated with.</param>
-            <param name="categoryPolicyId">The unique identifier for the policy.</param>
-            <param name="modifiedOn">Time when policy was last modified.</param>
-            <param name="createdOn">Time when policy was created.</param>
-            <param name="isCategoryDisabled">Whether the policy serves to enable or disable the associated feature for the associated access control list.</param>
-            <param name="accessControlList">Access control information to which this policy is applied.</param>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicy.CreatePolicyDisplay">
-            <summary>
-            Creates an object used for friendly display of the policy within PowerShell.
-            </summary>
-            <returns>The write-friendly object for display in PowerShell.</returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category">
-            <summary>
-            Model for Category
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category.Id">
-            <summary>
-            The string representing the unique category.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category.Title">
-            <summary>
-            Title/Name of the category.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category.Description">
-            <summary>
-            Long description of the feature. Max size is 300 characters. 
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category.ShortDescription">
-            <summary>
-            Short description of the feature. This will be needed for UX.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category.IsCategoryDisabledByDefault">
-            <summary>
-            This value is used as the default ship state for a category.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category.Features">
-            <summary>
-            ModuleFeatures belong to the category
-            Sample: {"TestModule": ["TestFeature2"]}
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category.#ctor(System.String,System.String,System.String,System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.List{System.String}})">
-            <summary>
-            Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category"/> class
-            </summary>
-            <param name="id">The id of the feature.</param>
-            <param name="title">Title/Name of the feature.</param>       
-            <param name="description">Long description of the feature.</param>
-            <param name="shortDescription">Short description of the feature.</param>
-            <param name="isCategoryDisabledByDefault">Whether the category is disabled by default</param>
-            <param name="features">List of features that belong to the category</param>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Category.CreateCategoryDisplay">
-            <summary>
-            Creates an object used for friendly display of the category within PowerShell.
-            </summary>
-            <returns>The write-friendly object for display in PowerShell.</returns>
-        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature">
             <summary>
             Model for Feature.
@@ -7214,12 +7032,27 @@
             If the feature is disabled by default.
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature.PolicyModes">
+            <summary>
+            List of the policy enablement modes supported by the feature.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature.ParentFeature">
+            <summary>
+            Parent feature of the feature.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature.ChildFeatures">
+            <summary>
+            List of child features of the feature.
+            </summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature.PolicyScopes">
             <summary>
             List of the policy scopes supported by the feature.
             </summary>
         </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.String,System.String,System.Boolean,System.String[])">
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.String,System.String,System.Boolean,System.String[],System.String,System.String[],System.String[])">
             <summary>
             Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature"/> class
             </summary>
@@ -7231,6 +7064,9 @@
             <param name="description">Long description of the feature.</param>
             <param name="shortDescription">Short description of the feature.</param>
             <param name="isFeatureDisabledByDefault">If the feature is disabled by default.</param>
+            <param name="policyModes">List of the policy enablement modes supported by the feature.</param>
+            <param name="parentFeature">Parent feature of the feature.</param>
+            <param name="childFeatures">List of child features of the feature.</param>
             <param name="policyScopes">List of the policy scopes supported by the feature.</param>
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature.CreateFeatureDisplay">
@@ -7279,12 +7115,18 @@
             Whether the policy serves to enable or disable the user control.
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.IsUserOptedInByDefault">
+            <summary>
+            Default opt-in state for users when user control is enabled.
+            When null, the default from feature configuration is used.
+            </summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.AccessControlList">
             <summary>
             Access control information to which this policy is applied.
             </summary>
         </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.#ctor(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Nullable{System.Boolean},Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[])">
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.#ctor(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Nullable{System.Boolean},System.Nullable{System.Boolean},Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[])">
             <summary>
             Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy"/> class
             </summary>
@@ -7294,7 +7136,8 @@
             <param name="modifiedOn">Time when policy was last modified.</param>
             <param name="createdOn">Time when policy was created.</param>
             <param name="isFeatureDisabled">Whether the policy serves to enable or disable the associated feature for the associated access control list.</param>
-            <param name="isUserControlEnabled">Whether the policy serves to enable or disable the user control.</param>        
+            <param name="isUserControlEnabled">Whether the policy serves to enable or disable the user control.</param>
+            <param name="isUserOptedInByDefault">Default opt-in state for users when user control is enabled.</param> 
             <param name="accessControlList">Access control information to which this policy is applied.</param>
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.CreatePolicyDisplay">
@@ -7323,46 +7166,25 @@
             Whether the policy serves to enable or disable the user control.
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyDetail.IsUserOptedInByDefault">
+            <summary>
+            Default opt-in state for users when user control is enabled.
+            When null, the default from feature configuration is used.
+            </summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyDetail.AccessControlList">
             <summary>
             Access control information to which this policy is applied.
             </summary>
         </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyDetail.#ctor(System.String,System.Boolean,System.Nullable{System.Boolean},Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[])">
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyDetail.#ctor(System.String,System.Boolean,System.Nullable{System.Boolean},System.Nullable{System.Boolean},Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[])">
             <summary>
             Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyDetail"/> class
             </summary>
             <param name="name">The name of the policy.</param>
             <param name="isFeatureDisabled">Whether the policy serves to enable or disable the associated feature for the associated access control list.</param>
-            <param name="isUserControlEnabled">Whether the policy serves to enable or disable the user control.</param>        
-            <param name="accessControlList">Access control information to which this policy is applied.</param>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicyDetail">
-            <summary>
-            CategoryPolicyDetail model class. Represents the subset of policy information that an admin can modify.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicyDetail.Name">
-            <summary>
-            The name of the policy.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicyDetail.IsCategoryDisabled">
-            <summary>
-            Whether the policy serves to enable or disable the associated category for the associated access control list.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicyDetail.AccessControlList">
-            <summary>
-            Access control information to which this policy is applied.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicyDetail.#ctor(System.String,System.Boolean,Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[])">
-            <summary>
-            Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicyDetail"/> class
-            </summary>
-            <param name="name">The name of the policy.</param>
-            <param name="isCategoryDisabled">Whether the policy serves to enable or disable the associated category for the associated access control list.</param>
+            <param name="isUserControlEnabled">Whether the policy serves to enable or disable the user control.</param>     
+            <param name="isUserOptedInByDefault">Default opt-in state for users when user control is enabled.</param>
             <param name="accessControlList">Access control information to which this policy is applied.</param>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Service.VivaGFACHttpProvider">
@@ -7448,7 +7270,7 @@
         </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Service.VivaGFACServiceErrorResponse.Message">
             <summary>
-            A messaage providing additional context into the error.
+            A message providing additional context into the error.
             </summary>
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Service.VivaGFACServiceErrorResponse.#ctor(System.String,System.String)">
@@ -7703,12 +7525,6 @@
             <param name="moduleId">The identifier of the module.</param>
             <returns>The list of features for the specified module.</returns>
         </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.GetAllCategoriesAsync">
-            <summary>
-            Makes the http GET request to fetch details of all enabled categories.
-            </summary>
-            <returns>The list of categories enabled by ECS.</returns>
-        </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.GetModuleFeaturePolicyAsync(System.String,System.String,System.String)">
             <summary>
             Gets a specific policy of one of a module's features.
@@ -7753,46 +7569,6 @@
             <param name="moduleId">The identifier of the module.</param>
             <param name="featureId">The identifier of the feature.</param>
             <returns>The policies of the provided module feature.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.GetAllCategoryPoliciesAsync(System.String)">
-            <summary>
-            Gets an array of all of the category policies of one of the category. 
-            </summary>
-            <param name="categoryId">The identifier of the category.</param>
-            <returns>The policies of the provided module feature.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.GetCategoryPolicyAsync(System.String,System.String)">
-            <summary>
-            Gets a specific policy of one of a category.
-            </summary>
-            <param name="categoryId">The identifier of the module.</param>
-            <param name="policyId">The identifier of the policy.</param>
-            <returns>The policy specified by the provided identifiers.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.CreateCategoryPolicyAsync(System.String,Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicyDetail)">
-            <summary>
-            Creates a policy for the specified category using the provided policy specification.
-            </summary>
-            <param name="categoryId">The identifier for the category.</param>
-            <param name="policy">The policy details of the policy to be created.</param>
-            <returns>The created policy.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.DeleteCategoryPolicyAsync(System.String,System.String)">
-            <summary>
-            Deletes the specified category policy.
-            </summary>
-            <param name="categoryId">The identifier for the module.</param>
-            <param name="policyId">The identifier for the policy.</param>
-            <returns>The deleted policy.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.UpdateCategoryPolicyAsync(System.String,System.String,Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.CategoryPolicyDetail)">
-            <summary>
-            Updates the specified category policy.
-            </summary>
-            <param name="categoryId">The identifier for the category.</param>
-            <param name="policyId">The identifier for the policy.</param>
-            <param name="policy">The policy details to update the policy with.</param>
-            <returns>The updated policy.</returns>
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.GetUsersEffectiveEnablementAsync(System.String,System.String,System.String)">
             <summary>

@@ -154,6 +154,11 @@
             Azure AD Auth Endpoint Uri
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.DisableWAM">
+            <summary>
+            Disable WAM
+            </summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.NewEXOModuleBaseUri">
             <summary>
             Base Uri for the NewEXOModule
@@ -1445,6 +1450,11 @@
         <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.AcceptLanguage">
             <summary>
             AcceptLanguage Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.DisableWAMHeader">
+            <summary>
+            DisableWAM Header
             </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule">

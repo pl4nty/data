@@ -771,6 +771,11 @@
             CmdletLogger class
             </summary>
         </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.msalCorrelationID">
+            <summary>
+            MSAL CorrelationID
+            </summary>
+        </member>
         <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.currentLogFilePath">
             <summary>
             Path of the file
@@ -849,6 +854,12 @@
             <summary>
             stores the cmdlet logs for currently executing cmdlets
             </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.SetMsalCorrelationID(System.String)">
+            <summary>
+            set MSAL CorrelationID
+            </summary>
+            <param name="msalcorrelationID">MSAL CorrelationID</param>
         </member>
         <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.GetCurrentLogFilePath">
             <summary>
@@ -944,7 +955,7 @@
         </member>
         <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.GetInfoRow">
             <summary>
-            the information row for the file consisting of ExoModule version and ConnectionID
+            the information row for the file consisting of ExoModule version, ConnectionID and MSAL CorrelationID
             </summary>
             <returns>comma separated string of headers</returns>
         </member>
@@ -1408,6 +1419,12 @@
             </summary>
             <param name="cmdletId">cmdletID to add to</param>
             <param name="parameters">dict of cmdlet parameters</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.SetMsalCorrelationID(System.String)">
+            <summary>
+            set MSAL CorrelationID
+            </summary>
+            <param name="msalcorrelationID">MSAL CorrelationID</param>
         </member>
         <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.GetCurrentLogFilePath">
             <summary>
