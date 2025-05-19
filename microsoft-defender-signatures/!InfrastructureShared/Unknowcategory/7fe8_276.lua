@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isdll == true or peattributes.isexe) and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 40, ")\203")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 23, "\000")
 return mp.INFECTED
 

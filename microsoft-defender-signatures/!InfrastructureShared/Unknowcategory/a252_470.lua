@@ -3,22 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("LUA:FileSizeLE5000.A") then
+local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if ((string.match)(l_0_0, "\\amazon\\codedeploy\\bin") ~= nil and l_0_1 == "winagent.exe") or (string.match)(l_0_0, "\\spiceworks") ~= nil and l_0_1 == "spiceworks_safemode.exe" then
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-if l_0_2 == nil then
-  l_0_0 = (mp.getfilename)()
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  l_0_1 = l_0_0:sub(-5)
-else
-  l_0_1 = l_0_2:sub(-5)
-end
-if (string.find)(l_0_1:lower(), ".asp") then
-  return mp.INFECTED
-end
-return mp.LOWFI
+return mp.INFECTED
 

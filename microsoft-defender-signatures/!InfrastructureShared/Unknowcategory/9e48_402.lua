@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSIsRemoteSession)
 do
-  if l_0_1 then
-    local l_0_2 = (MpCommon.QuerySessionInformation)(l_0_0.ppid, MpCommon.WTSUserName)
-    if (MpCommon.QueryPersistContextNoPath)("MpNewRemoteUsers", l_0_2) then
-      return mp.INFECTED
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 69632 and (mp.getfilesize)() < 94208 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

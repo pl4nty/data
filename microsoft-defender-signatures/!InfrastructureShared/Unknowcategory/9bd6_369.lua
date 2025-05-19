@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if peattributes.isexe == true and pehdr.NumberOfSections == 9 and (pesecs[4]).Name == "seg1" then
+if pehdr.NumberOfSections == 4 and (pesecs[pehdr.NumberOfSections]).Name == "" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData == 0 and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3758096384) == 3758096384 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,11 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = pehdr.ImageBase
+local l_0_2 = (pesecs[1]).VirtualAddress + l_0_1 + 4096
+if l_0_0 < l_0_2 or l_0_1 + 28672 < l_0_0 then
   return mp.CLEAN
 end
-if (string.find)((string.lower)(l_0_0), "\\svchost.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\installshield\\setup.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\installshield\\x32\\setup.exe", 1, true) then
+local l_0_3 = pe.VM_SEARCH_BM
+local l_0_4 = pe.vm_search
+if l_0_4(l_0_2, l_0_0, "‰Œ…\001\003\255é\001\002\255\255‹…\144\000", nil, l_0_3) ~= 4294967295 then
+  return mp.INFECTED
+end
+if l_0_4(l_0_2, l_0_0, "‰L…\001\001é\001\002\255\255‹E\144\000", nil, l_0_3) ~= 4294967295 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
+(mp.set_mpattribute)("PUA:Block:NiceHashMiner")
 ;
-(bm.request_SMS)(l_0_0.ppid, "M")
+(mp.set_mpattribute)("Company:CoinMiner32:HBIT")
 return mp.INFECTED
 

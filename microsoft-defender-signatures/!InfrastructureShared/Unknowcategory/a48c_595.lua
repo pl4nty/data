@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.getfilesize)()
-do
-  if l_0_0 > 20480 then
-    local l_0_1 = tostring((mp.readfile)(l_0_0 - 9472, 8192))
-    l_0_1 = (string.lower)(l_0_1)
-    if (string.find)(l_0_1, "https://icam%.cl/wp%-content/%.%.%./%.%.%./x3%.php") ~= nil or (string.find)(l_0_1, "https://smartcheckautos%.com/wp%-content/%.%.%./%.%.%./x3%.php") ~= nil or (string.find)(l_0_1, "url:https://calfeutragebprs%.com/wp%-content/image/s3%.php") ~= nil then
-      return mp.INFECTED
-    end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp1 ~= nil and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
+  local l_0_2, l_0_3 = (string.match)(l_0_0, "\\microsoft\\(%a+)\\(%a+)%.dll")
+  local l_0_4, l_0_5 = (string.match)(l_0_1, "\\microsoft\\(%a+)\\(%a+)%.exe")
+  if l_0_2 and l_0_3 and l_0_4 and l_0_5 and l_0_2 == l_0_4 and (string.sub)(l_0_2, 0, -3) == l_0_3 and (string.sub)(l_0_4, 0, -2) == l_0_5 then
+    return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

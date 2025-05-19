@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 293417 then
-  return mp.CLEAN
+if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) == (string.lower)((mp.utf16to8)((this_sigattrlog[3]).wp1)) then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.2")
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[3]).matched then
-  (mp.changedetectionname)(805306429)
+if peattributes.hasappendeddata and peattributes.isexe then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

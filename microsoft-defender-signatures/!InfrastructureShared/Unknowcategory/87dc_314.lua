@@ -3,8 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 1 or (hstrlog[2]).hitcount == 1 or (hstrlog[3]).hitcount == 1 or (hstrlog[4]).hitcount == 1 or (hstrlog[5]).hitcount == 1 or (hstrlog[6]).hitcount == 1 then
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
+
+  ;
+  (bm.add_related_file)(l_0_0)
   return mp.INFECTED
 end
-return mp.CLEAN
 

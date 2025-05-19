@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security and l_0_0 > 190000 and l_0_0 < 230000 and pehdr.NumberOfSections == 4 and (pesecs[4]).Name == ".crt2" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

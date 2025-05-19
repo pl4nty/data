@@ -3,33 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[6]).matched == false and (this_sigattrlog[7]).matched == false then
+if (mp.get_mpattribute)("pea_ismsil") then
   return mp.CLEAN
 end
-do
-  if not (this_sigattrlog[6]).utf8p1 then
-    local l_0_0 = (this_sigattrlog[7]).utf8p1
-  end
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_1 = (string.lower)(l_0_0)
-  if l_0_1 == nil or (string.find)(l_0_1, "c:\\", 1, true) == nil then
-    return mp.CLEAN
-  end
-  if (sysio.IsFileExists)(l_0_1) then
-    (bm.add_related_file)(l_0_1)
-  end
-  local l_0_2 = (bm.get_current_process_startup_info)()
-  if l_0_2 ~= nil and l_0_2.ppid ~= nil then
-    (bm.request_SMS)(l_0_2.ppid, "m")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 1)
-  end
-  return mp.INFECTED
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
 end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1500000 or l_0_0 < 4000 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("system32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("syswow64", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

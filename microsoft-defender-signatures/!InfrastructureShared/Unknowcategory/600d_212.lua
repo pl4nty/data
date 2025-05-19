@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if peattributes.no_security == true and (mp.getfilesize)() < 150530 then
+  return mp.INFECTED
 end
-if not peattributes.suspicious_timestamp then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

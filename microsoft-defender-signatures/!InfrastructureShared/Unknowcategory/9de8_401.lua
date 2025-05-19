@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and ((string.find)(l_0_0, "\\skype.mdn.mp.service.exe", 1, true) or (string.find)(l_0_0, "\\microsoft.skype.", 1, true)) then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "\002")
 ;
-(bm.trigger_sig)("SpringShellExpl", "EncodedPost")
-return mp.CLEAN
+(pe.mmap_patch_va)((mp.bitand)((pe.get_regval)(pe.REG_EBP) + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 2, 4), 1), 4294967295), "\003\000\000\000")
+return mp.INFECTED
 

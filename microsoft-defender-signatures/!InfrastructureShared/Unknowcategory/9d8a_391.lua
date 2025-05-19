@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 3 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
-if peattributes.isdll and (mp.getfilesize)() < 100000 then
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
+local l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
+local l_0_2 = (sysio.GetFileSize)(l_0_1)
+if l_0_2 > 716800 or l_0_2 < 307200 then
+  return mp.CLEAN
 end
-if mp.HSTR_WEIGHT == 2 then
-  return mp.LOWFI
-end
-return mp.CLEAN
+return mp.INFECTED
 

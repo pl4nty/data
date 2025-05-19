@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() > 1800000 and (mp.getfilesize)() < 3300000 then
+if peattributes.isexe == true and (mp.getfilesize)() > 1700000 and (mp.getfilesize)() < 4800000 then
   local l_0_0 = (mp.GetCertificateInfo)()
   for l_0_4,l_0_5 in pairs(l_0_0) do
     if l_0_5.Signers ~= nil then
@@ -15,9 +15,9 @@ do
   l_0_0 = pe
   l_0_0 = l_0_0.get_versioninfo
   l_0_0 = l_0_0()
-  if l_0_0 ~= nil then
-    return mp.CLEAN
+  if l_0_0 == nil then
+    return mp.INFECTED
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

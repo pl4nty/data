@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.ismsil == true then
+if (mp.get_mpattribute)("SIGATTR:IndigoRoseSetupFactory") then
   return mp.INFECTED
 end
 return mp.CLEAN

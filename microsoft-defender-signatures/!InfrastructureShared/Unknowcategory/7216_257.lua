@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
+if peattributes.isexe == true and peattributes.no_boundimport == true and peattributes.no_debug == true and peattributes.x86_image == true then
   return mp.INFECTED
 end
 return mp.CLEAN

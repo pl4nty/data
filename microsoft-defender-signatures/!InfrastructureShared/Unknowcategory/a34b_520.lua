@@ -3,19 +3,22 @@
 
 -- params : ...
 -- function num : 0
-for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
-  if (sigattr_tail[l_0_3]).matched and (sigattr_tail[l_0_3]).attribute == 16393 then
-    local l_0_4 = (sigattr_tail[l_0_3]).utf8p1
-    if l_0_4 then
-      l_0_4 = (string.lower)(l_0_4)
-      if l_0_4 and ((string.find)(l_0_4, "useraccountcontrolsettings.exe") or (string.find)(l_0_4, "taskmgr.exe")) then
-        local l_0_5 = (sigattr_tail[l_0_3]).utf8p2
-        if (string.len)(l_0_5) > 1 then
-          return mp.INFECTED
-        end
-      end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+  return mp.CLEAN
+end
+local l_0_1 = (bm.get_imagepath)()
+do
+  if l_0_1 ~= nil then
+    local l_0_2 = {}
+    l_0_2["cmstp.exe"] = true
+    l_0_2["dllhost.exe"] = true
+    if l_0_2[((string.lower)((string.sub)(l_0_1, -15))):match("\\([^\\]+)$")] then
+      return mp.CLEAN
     end
   end
+  ;
+  (bm.add_related_file)(l_0_1)
+  return mp.INFECTED
 end
-return mp.CLEAN
 

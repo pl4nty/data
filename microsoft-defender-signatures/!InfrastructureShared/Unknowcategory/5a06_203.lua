@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:TrojanProxy:Win32/Dorando.gen!B") then
+if pehdr.Subsystem == 1 then
+  (mp.changedetectionname)(805306387)
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.INFECTED
 

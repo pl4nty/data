@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
 do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() >= 163840 and (mp.getfilesize)() < 184320 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
+  if l_0_0 ~= nil then
+    local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
+    if l_0_1 ~= nil and (string.len)(l_0_1) > 1 then
+      if (sysio.IsFileExists)(l_0_1) then
+        (mp.ReportLowfi)(l_0_1, 2782132239)
       end
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
-  local l_0_1 = (string.len)(l_0_0)
-  local l_0_2 = (string.lower)((this_sigattrlog[3]).p1)
-  if (string.find)(l_0_2, l_0_0, (string.len)(l_0_2) - l_0_1, true) then
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if not peattributes.isdll or l_0_0 > 500000 then
   return mp.CLEAN
 end
+local l_0_1 = 0
+local l_0_2 = 0
+if (hstrlog[1]).matched and (hstrlog[2]).matched then
+  l_0_1 = (hstrlog[1]).hitcount
+  l_0_2 = (hstrlog[2]).hitcount
+end
+if l_0_1 == 2 and l_0_2 == 2 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

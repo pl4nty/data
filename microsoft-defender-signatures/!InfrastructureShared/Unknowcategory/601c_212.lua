@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".wfweger" or (pesecs[4]).Name == ".gergreg" then
-  return mp.INFECTED
+if not (mp.get_mpattribute)("pea_isexe") and not (mp.get_mpattribute)("pea_isdll") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

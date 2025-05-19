@@ -3,19 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.getfilesize)() >= 380928 and (mp.getfilesize)() < 413696 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 1000 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("\\program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("\\system32", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

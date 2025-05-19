@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
+if peattributes.isexe == true and (mp.get_mpattribute)("pea_headerchecksum0") then
   return mp.INFECTED
 end
 return mp.CLEAN

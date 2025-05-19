@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr + 3, 4), 1) < 4096 or (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr + 51, 4), 1) < 4096 then
+do
+  if peattributes.isexe == true and peattributes.ismsil == true and pehdr.AddressOfEntryPoint ~= 0 and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 46, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 55, "")
-return mp.INFECTED
 

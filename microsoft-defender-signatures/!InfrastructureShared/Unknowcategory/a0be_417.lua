@@ -3,22 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_deep_analysis") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.set_peattribute)("disable_apicall_limit", true)
+  ;
+  (pe.reemulate)()
+else
+  return mp.INFECTED
 end
-if peattributes.no_exports then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 > 1 then
-  for l_0_5 = 1, l_0_0 do
-    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
-    if (string.lower)(l_0_6) == "rathbuige" then
-      return mp.INFECTED
-    end
-  end
-end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

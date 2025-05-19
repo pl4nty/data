@@ -3,14 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Features")
-do
-  if l_0_0 then
-    local l_0_1 = (sysio.GetRegValueAsDword)(l_0_0, "TamperProtection")
-    if l_0_1 and (mp.bitand)(l_0_1, 1) == 1 then
-      return mp.INFECTED
-    end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 100 and l_0_0 <= 10240 then
+  local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_PATH)
+  if l_0_1 == nil or l_0_1 == "" then
+    return mp.CLEAN
   end
+  local l_0_2 = "/opt/"
+  if l_0_1:sub(1, #l_0_2) == l_0_2 then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
+end
+do
   return mp.CLEAN
 end
 

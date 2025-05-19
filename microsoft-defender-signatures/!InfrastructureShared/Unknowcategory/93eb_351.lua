@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true or peattributes.isdll == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 458752 and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

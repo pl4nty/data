@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\000" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\016" then
+if (pe.mmap_va)(pevars.sigaddr + 9, 1) == "\000" or (pe.mmap_va)(pevars.sigaddr + 9, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 9, 1) == "\016" then
   (pe.mmap_patch_va)(pevars.sigaddr + 10, "")
   ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 19, "")
+  (pe.mmap_patch_va)(pevars.sigaddr + 16, "")
   ;
   (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
   return mp.INFECTED

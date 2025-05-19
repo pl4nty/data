@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Renos_msposer")
-if (mp.get_mpattribute)("PEPCODE:VirTool:Win32/Obfuscator.ED") then
+if (mp.IsTrustedFile)(false) ~= false then
+  return mp.CLEAN
+end
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
+end
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

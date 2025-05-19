@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_no_security") then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:HiddenAd.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

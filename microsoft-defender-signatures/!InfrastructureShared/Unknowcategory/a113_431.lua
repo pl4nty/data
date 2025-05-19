@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.suspicious_falign == true and peattributes.no_comruntime == true and peattributes.no_delayimport == true and peattributes.no_uidata == true then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.find)(l_0_0, "\\microsoft\\edge", 1, true) or (string.find)(l_0_0, "\\temp\\edgemitmp", 1, true) or (string.find)(l_0_0, "\\google\\chrome\\", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -7,8 +7,8 @@ local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if (string.lower)((string.sub)(l_0_0.image_path, -9)) == "mshta.exe" then
-  return mp.INFECTED
+if (string.lower)((string.sub)(l_0_0.image_path, -12)) ~= "explorer.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.LOWFI
 

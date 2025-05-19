@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:GT32SupportGeeks.B")
+if peattributes.ismsil then
+  (mp.set_mpattribute)("PUA:Block:WizzRemote:Bit")
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

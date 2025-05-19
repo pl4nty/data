@@ -3,26 +3,31 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((bm.get_imagepath)()))
-if (string.find)(l_0_0, "\\system32\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\system32\\taskeng.exe", 1, true) then
-  return mp.CLEAN
-end
-local l_0_1 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_1 = (this_sigattrlog[1]).utf8p2
-end
-if l_0_1 == nil and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  l_0_1 = (this_sigattrlog[2]).utf8p2
-end
-local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-    ;
-    (bm.add_related_file)(l_0_7)
-  end
-end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.INFECTED
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  end
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+
+  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+
+    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasGoogleDriveUrl") then
+      (bm.add_related_file)(R7_PC42)
+      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromGoogleDrive") then
+        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromGoogleDrive", 3600)
+        return mp.INFECTED
+      end
+    end
+  end
+  return mp.CLEAN
 end
 

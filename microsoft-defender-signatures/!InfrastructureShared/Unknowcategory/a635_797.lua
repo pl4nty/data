@@ -3,43 +3,43 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
+if peattributes.isdriver ~= true then
   return mp.CLEAN
 end
-if peattributes.hasstandardentry == true then
+if pehdr.NumberOfSections ~= 5 then
   return mp.CLEAN
 end
-if peattributes.lastscn_falign ~= true then
+if pehdr.SizeOfCode > 1792 then
   return mp.CLEAN
 end
-if peattributes.epinfirstsect ~= true then
+if pehdr.SizeOfHeaders > 1792 then
   return mp.CLEAN
 end
-if peattributes.headerchecksum0 ~= true then
+if pehdr.SizeOfImage > 28672 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[3]).RVA ~= 0 then
+if ((pehdr.DataDirectory)[3]).Size ~= 0 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[6]).RVA ~= 0 then
+if ((pehdr.DataDirectory)[5]).Size ~= 0 then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections ~= 4 then
+if pehdr.Characteristics ~= 270 then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections < pevars.epsec then
+if pehdr.MajorLinkerVersion < 5 then
   return mp.CLEAN
 end
-if (pesecs[pevars.epsec]).NameDW ~= 2019914798 then
+if pehdr.MajorLinkerVersion > 7 then
   return mp.CLEAN
 end
-if epcode[1] ~= 233 then
+if pehdr.MajorLinkerVersion == 6 then
   return mp.CLEAN
 end
-if epcode[3] ~= 0 then
+if pehdr.MajorSubsystemVersion ~= 5 then
   return mp.CLEAN
 end
-if epcode[4] ~= 0 then
+if pehdr.DllCharacteristics ~= 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

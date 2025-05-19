@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-;
-(mp.readprotection)(false)
-local l_0_1 = tostring((mp.readfile)(0, l_0_0))
-if (string.find)(l_0_1, "http://www.j.mp/") ~= nil then
-  return mp.INFECTED
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

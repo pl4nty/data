@@ -3,12 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:DelphiFile") and pehdr.NumberOfSections == 8 then
-  (pe.set_image_filename)("\"myapp.exe\" /install")
-  ;
-  (pe.reemulate)()
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  local l_0_1 = (string.lower)((string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$"))
+  if l_0_1 ~= nil and (string.len)(l_0_1) == 3 and l_0_1 ~= "c:\\" then
+    return mp.INFECTED
+  end
 end
-;
-(mp.set_mpattribute)("PUA:Block:Prifou")
-return mp.INFECTED
+do
+  return mp.CLEAN
+end
 

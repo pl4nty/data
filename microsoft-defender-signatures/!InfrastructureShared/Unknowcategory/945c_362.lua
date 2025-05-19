@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and pehdr.NumberOfSections == 5 and (pesecs[2]).Name == ".rdata" and (pesecs[2]).SizeOfRawData > 20480 and (pesecs[2]).SizeOfRawData < 28672 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.sub)(l_0_0.image_path, -11)) ~= "svchost.exe" then
+  return mp.CLEAN
+end
+if (versioning.GetLocaleIdentifier)() == 1049 then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

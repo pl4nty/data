@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
-    if (string.find)(l_0_0, "^%d%d%d%d+$") then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
+if (mp.getfilesize)() < 1000000 and peattributes.executes_from_last_section == true then
+  if mp.HSTR_WEIGHT >= 3 then
+    return mp.SUSPICIOUS
+  else
+    return mp.LOWFI
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

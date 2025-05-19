@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 65536 then
+if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 2097152 then
   return mp.INFECTED
 end
 return mp.CLEAN

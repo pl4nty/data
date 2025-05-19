@@ -3,27 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("InEmail") then
-  return mp.CLEAN
-end
-if mp.HEADERPAGE_SZ < 11 then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 11 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readheader)(0, 12)
-if l_0_1 == nil then
-  return mp.CLEAN
+if (hstrlog[1]).matched then
+  local l_0_0 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 4, 4)
+  local l_0_1 = (pe.mmap_va_nofastfail)((hstrlog[1]).VA + 9, 4)
+  ;
+  (mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.2_%02X%02X%02X%02X_%02X%02X%02X%02X", (string.byte)(l_0_0, 4), (string.byte)(l_0_0, 3), (string.byte)(l_0_0, 2), (string.byte)(l_0_0, 1), (string.byte)(l_0_1, 4), (string.byte)(l_0_1, 3), (string.byte)(l_0_1, 2), (string.byte)(l_0_1, 1)))
 end
 do
-  if (string.find)(l_0_1, "по\017Ю║\177\026\225\000\000\000", 1, true) ~= nil or (string.find)(l_0_1, "PK\003\004\020\000\006\000", 1, true) ~= nil then
-    local l_0_2 = (mp.BMSearchFile)(0, l_0_0, "V\000B\000A\000_\000P\000R\000O\000J\000E\000C\000T\000\144\000")
-    if l_0_2 and l_0_2 >= 0 and l_0_2 < l_0_0 then
-      return mp.INFECTED
-    end
-  end
   return mp.CLEAN
 end
 

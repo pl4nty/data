@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Win32/HiveCrypt.PB!MTB") then
+if (mp.get_mpattribute)("SIGATTR:FirewallBypassList") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (string.lower)((bm.get_imagepath)())
 do
-  if (hstrlog[6]).matched and (hstrlog[7]).matched then
-    local l_0_0 = mp.HSTR_WEIGHT - 2
+  if l_0_0 then
+    local l_0_1 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
+    if l_0_0:find(l_0_1, 1, true) then
+      return mp.INFECTED
+    end
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 >= 5 then
-    return mp.INFECTED
-  end
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_vbinject_ky")
   return mp.CLEAN
 end
 

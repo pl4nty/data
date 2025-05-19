@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 3695440085)
+if (mp.IsTrustedFile)(false) == true or (mp.IsKnownFriendlyFile)((mp.getfilename)(), true, true) == true then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

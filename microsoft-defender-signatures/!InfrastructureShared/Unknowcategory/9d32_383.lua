@@ -3,12 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[5]).wp1
-for l_0_4 = mp.SIGATTR_LOG_SZ, 1, -1 do
-  if ((sigattr_tail[l_0_4]).attribute == 16384 or (sigattr_tail[l_0_4]).attribute == 16385) and (sigattr_tail[l_0_4]).wp1 == l_0_0 then
-    (bm.add_related_file)(l_0_0)
-    return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and not (string.find)((string.lower)(l_0_0), " /create ", 1, true) and not (string.find)((string.lower)(l_0_0), ".hta", 1, true) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
-return mp.CLEAN
 

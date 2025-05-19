@@ -3,18 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).matched or not (this_sigattrlog[1]).ppid or not (this_sigattrlog[2]).matched then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = (bm.get_process_relationships)((this_sigattrlog[1]).ppid)
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path and (string.find)(l_0_6.image_path, "svchost.exe", 1, true) then
-    local l_0_7 = (this_sigattrlog[2]).utf8p1
-    if l_0_7 and not (mp.IsKnownFriendlyFile)(l_0_7, false, false) then
-      (mp.ReportLowfi)(l_0_7, 3377723068)
+if (hstrlog[1]).matched then
+  local l_0_0 = (hstrlog[1]).VA + 14
+  local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+  local l_0_2 = (mp.readu_u32)(l_0_1, 1)
+  local l_0_3 = (pe.mmap_va)(l_0_2, 16)
+  if (string.sub)(l_0_3, 1, 3) == "cmd" then
+    return mp.INFECTED
+  end
+else
+  do
+    if (hstrlog[2]).matched then
+      local l_0_4 = (hstrlog[2]).VA + 9
+      local l_0_5 = (pe.mmap_va)(l_0_4, 4)
+      local l_0_6 = (mp.readu_u32)(l_0_5, 1)
+      local l_0_7 = (pe.mmap_va)(l_0_6, 16)
+      if (string.sub)(l_0_7, 1, 7) == "[Shift]" then
+        return mp.INFECTED
+      end
+    end
+    do
       return mp.CLEAN
     end
   end
 end
-return mp.CLEAN
 

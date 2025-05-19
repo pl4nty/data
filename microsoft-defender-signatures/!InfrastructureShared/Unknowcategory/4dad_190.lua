@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:Ransom:Win32/Sodin") then
-  return mp.INFECTED
+if not peattributes.isdll or not peattributes.hasexports then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

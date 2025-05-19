@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp1 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1, l_0_2 = (string.match)(l_0_0, "\\microsoft\\(%a+)\\(%a+)%.exe")
-  if l_0_1 and l_0_2 and (string.sub)(l_0_1, 0, -2) == l_0_2 then
-    return mp.INFECTED
-  end
+endswith = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  do return l_1_0:sub(-#l_1_1) == l_1_1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
-do
-  return mp.CLEAN
+
+if peattributes.isdll and not peattributes.hasexports and endswith((string.lower)((mp.getfilename)()), "magentloc.dll") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

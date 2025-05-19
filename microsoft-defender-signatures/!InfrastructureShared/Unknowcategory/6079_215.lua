@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "AppxManifest.xml") ~= nil then
+if peattributes.ismsil == true and (peattributes.isexe == true or peattributes.isdll == true) then
   return mp.INFECTED
 end
 return mp.CLEAN

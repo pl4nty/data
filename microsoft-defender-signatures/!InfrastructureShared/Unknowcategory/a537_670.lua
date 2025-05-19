@@ -3,16 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (string.byte)(l_0_0, 28) + (string.byte)(l_0_0, 29) * 256 + (string.byte)(l_0_0, 30) * 65536 + (string.byte)(l_0_0, 31) * 16777216
-local l_0_2 = pevars.sigaddr + 31 + l_0_1
-l_0_0 = (pe.mmap_va)(l_0_2 - 4, 32)
-local l_0_3 = (string.byte)(l_0_0, 1) + (string.byte)(l_0_0, 2) * 256 + (string.byte)(l_0_0, 3) * 65536 + (string.byte)(l_0_0, 4) * 16777216
-local l_0_4 = (mp.bitand)(l_0_2 + l_0_3, 4294967295)
-if l_0_4 ~= pevars.sigaddr then
-  return mp.CLEAN
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 18
+local l_0_2 = 0
+local l_0_3 = 0
+local l_0_4 = (mp.getfilesize)()
+if l_0_0.is_header then
+  if mp.HEADERPAGE_SZ >= 4095 then
+    l_0_2 = 4095
+  else
+    l_0_2 = mp.HEADERPAGE_SZ
+  end
+else
+  if mp.FOOTERPAGE_SZ >= 4095 then
+    l_0_2 = 4095
+  else
+    l_0_2 = mp.FOOTERPAGE_SZ
+  end
+  if l_0_4 < mp.FOOTERPAGE_SZ then
+    return mp.CLEAN
+  end
+  l_0_1 = l_0_4 - mp.FOOTERPAGE_SZ + l_0_1
 end
-;
-(mp.changedetectionname)(805306375)
-return mp.SUSPICIOUS
+if l_0_1 ~= nil then
+  if l_0_1 < l_0_2 then
+    (mp.readprotection)(false)
+    l_0_3 = (mp.readfile)(l_0_1, l_0_2 - (l_0_1))
+    ;
+    (mp.vfo_add_buffer)(l_0_3, "[Base64Decode]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    ;
+    (mp.set_mpattribute)("//SCPT:Base64.Decoded")
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

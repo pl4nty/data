@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.executable_image then
-  return mp.INFECTED
+if (string.lower)((string.sub)((mp.getfilename)(), -3)) == "r2w" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

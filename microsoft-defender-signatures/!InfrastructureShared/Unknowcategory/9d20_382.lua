@@ -3,14 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] ~= 106 then
-  return mp.CLEAN
+local l_0_0 = (mp.GetBruteMatchData)()
+do
+  local l_0_1 = ""
+  if l_0_0.is_header then
+    l_0_1 = (string.lower)(tostring(headerpage))
+  else
+    l_0_1 = (string.lower)(tostring(footerpage))
+  end
+  if l_0_1 > 3 then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
-if pehdr.NumberOfSections < 5 or (pesecs[5]).Name ~= ".import" then
-  return mp.CLEAN
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 2142642642) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

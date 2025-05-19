@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 (mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 7, 4)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 6, 4)
 if (mp.readu_u32)(l_0_0, 1) < 1048576 then
   return mp.CLEAN
 end

@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
-  return mp.CLEAN
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and pehdr.NumberOfSections == 8 then
+  (pe.set_image_filename)("\"myapp.exe\" /install")
+  ;
+  (pe.reemulate)()
 end
-if l_0_0.integrity_level < ((MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)).IntegrityLevel then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:Prifou")
+return mp.INFECTED
 

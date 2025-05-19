@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe and not peattributes.isdll then
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 13, 4), 1) < 1048576 then
   return mp.CLEAN
 end
-if peattributes.hasappendeddata == false then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 17, "")
 return mp.INFECTED
 

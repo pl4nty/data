@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode ~= true then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 512000 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+return mp.CLEAN
 

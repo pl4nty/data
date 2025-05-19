@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 4 or peattributes.isdll == false or peattributes.hasexports == false or peattributes.epinfirstsect == false or (pesecs[1]).SizeOfRawData ~= 61440 then
-  return mp.CLEAN
+local l_0_0 = nil
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+
+  if (sigattr_head[R4_PC6]).matched and (sigattr_head[R4_PC6]).attribute == 16384 and l_0_1 == nil and (sigattr_head[R4_PC6]).wp1 ~= nil then
+    (mp.ReportLowfi)((sigattr_head[R4_PC6]).utf8p1, 2175865982)
+    return mp.INFECTED
+  end
 end
 return mp.INFECTED
 

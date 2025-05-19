@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.executble_image and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+local l_0_0 = (mp.getfilesize)()
+if mp.HSTR_WEIGHT >= 4 and l_0_0 < 327680 then
+  (mp.set_mpattribute)("PUA:Block:Bundlore.R")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

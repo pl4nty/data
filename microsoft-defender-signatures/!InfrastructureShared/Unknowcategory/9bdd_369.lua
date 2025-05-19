@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("AGGR:MSIL:GenCommercialObfuscator.A") and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 then
-  return mp.INFECTED
+do
+  if peattributes.isdll == true and peattributes.hasexports == false and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

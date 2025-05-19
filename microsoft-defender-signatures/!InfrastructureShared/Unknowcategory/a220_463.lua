@@ -3,11 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+if not peattributes.isexe and not peattributes.isdll then
   return mp.CLEAN
 end
-if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpcmdrun.exe", 1, true) then
+if (mp.getfilesize)() > 5000000 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
+local l_0_6 = pe.query_import
+if l_0_6(pe.IMPORT_STATIC, 933026593) == 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 13 and (mp.getfilesize)() >= 5200000 and (mp.getfilesize)() <= 5850000 and (pesecs[8]).Name == ".idata" and (pesecs[9]).Name == ".tls" and (pesecs[13]).Name == ".reloc" then
-  return mp.INFECTED
+if not (this_sigattrlog[1]).ppid then
+  return mp.CLEAN
+end
+local l_0_0 = (MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[1]).ppid)
+if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= l_0_0.IntegrityLevel then
+  (bm.trigger_sig)("EOP", "SYSTEM")
 end
 return mp.CLEAN
 

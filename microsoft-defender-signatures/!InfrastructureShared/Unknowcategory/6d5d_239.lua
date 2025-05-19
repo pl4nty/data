@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("Trojan:MSIL/Injector.B1!ibt") then
+if peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() > 100000 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.ismsil then
+if peattributes.amd64_image and peattributes.ismsil then
   return mp.INFECTED
 end
 return mp.CLEAN

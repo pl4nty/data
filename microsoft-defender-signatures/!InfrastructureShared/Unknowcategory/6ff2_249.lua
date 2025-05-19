@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if pehdr.NumberOfSections == 8 then
+  (pe.set_image_filename)("\"myapp.exe\" /install")
+  ;
+  (pe.reemulate)()
 end
 return mp.INFECTED
 

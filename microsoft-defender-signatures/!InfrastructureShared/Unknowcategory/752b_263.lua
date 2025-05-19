@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.sub)((sigattr_head[1]).p1, 2, 7), "%d+") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr, "\235+")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 45, "ù")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 53, "\235")
+return mp.INFECTED
 

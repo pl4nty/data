@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win64/IcedId.PAH!MTB") and l_0_0 > 1572864 and l_0_0 < 1638400 then
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
+    ;
+    (bm.add_related_file)(l_0_0)
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

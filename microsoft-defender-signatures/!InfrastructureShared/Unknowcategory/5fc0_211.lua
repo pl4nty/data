@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (hstrlog[1]).hitcount > 5 then
+if mp.HSTR_WEIGHT == 5 and (hstrlog[5]).hitcount > 3 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((string.lower)((this_sigattrlog[2]).utf8p2)):match("|app=(.-)|")
-if l_0_0 ~= nil then
-  l_0_0 = (mp.ContextualExpandEnvironmentVariables)(l_0_0)
-  if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
-    (mp.ReportLowfi)(l_0_0, 2240217800)
-  end
+if epcode[1] == 232 and epcode[6] == 232 and epcode[11] == 51 and epcode[13] == 195 and pevars.lscnwr == 1 and (pesecs[pehdr.NumberOfSections]).PointerToRawData == 45056 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

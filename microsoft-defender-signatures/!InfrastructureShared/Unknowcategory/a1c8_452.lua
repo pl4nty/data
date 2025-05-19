@@ -3,11 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlservr.exe" or (string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlagent.exe") then
-    return mp.INFECTED
+if (mp.get_mpattribute)("BM_OLE_FILE") then
+  (mp.set_mpattribute)("SCRIPT:PDFinOLE")
+  if (mp.get_mpattribute)("InEmail") then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 == nil or l_0_0 > 1000000 or l_0_0 < 1000 then
+      return mp.CLEAN
+    end
+    if (mp.BMSearchFile)(0, l_0_0, ".Document.DC\144\001@\144\002@h\000t\000t\000p\000:\000/\000/\144\000") > 0 then
+      return mp.INFECTED
+    end
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

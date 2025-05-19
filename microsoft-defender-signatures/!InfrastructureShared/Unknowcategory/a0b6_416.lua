@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)(l_0_0, "\\openfiles.exe", 1, true) or (string.find)(l_0_0, "\\microsoft\\teams\\current\\teams.exe", 1, true) then
-    return mp.CLEAN
-  end
-  ;
-  (bm.add_action)("EmsScan", 5000)
-  return mp.INFECTED
+if (bm.GetSignatureMatchDuration)() > 12000000000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = nil
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+  l_0_0 = (this_sigattrlog[4]).utf8p2
+end
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+;
+(bm.add_related_string)("ProcessCreateParam", l_0_0, bm.RelatedStringBMReport)
+return mp.INFECTED
 

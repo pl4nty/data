@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+if mp.HSTR_WEIGHT >= 11 then
   if pehdr.Subsystem == 1 then
-    (mp.changedetectionname)(805306439)
+    (mp.changedetectionname)(805306436)
   else
     if pehdr.Machine == 34404 then
-      (mp.changedetectionname)(805306438)
+      (mp.changedetectionname)(805306435)
     end
   end
   return mp.INFECTED

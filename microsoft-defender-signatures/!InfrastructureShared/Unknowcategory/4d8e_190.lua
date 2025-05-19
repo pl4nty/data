@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Adload.A")
 end
-return mp.CLEAN
+return mp.LOWFI
 

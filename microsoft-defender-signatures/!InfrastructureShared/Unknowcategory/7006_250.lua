@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 327680 and l_0_0 <= 360448 and (mp.get_mpattribute)("NID:Win32/IcedId.PK!MTB") then
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Trojan:Win32/PswStealer.ats01") then
   return mp.INFECTED
 end
 return mp.CLEAN

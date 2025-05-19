@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (mp.getfilesize)() < 245762 then
+if peattributes.isdll == true and (mp.getfilesize)() > 2900 then
   return mp.INFECTED
 end
 return mp.CLEAN

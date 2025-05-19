@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (mp.getfilesize)() < 1000000 and (string.sub)(l_0_0, -12) == "goopdate.dll" then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 147456 and l_0_0 <= 155648 and pehdr.NumberOfSections == 4 then
   return mp.INFECTED
 end
 return mp.CLEAN

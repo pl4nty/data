@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win32/Qakbot.MA!MTB") then
+if pehdr.NumberOfSections > 6 and (pesecs[pehdr.NumberOfSections]).Name == ".config" then
   return mp.INFECTED
 end
 return mp.CLEAN

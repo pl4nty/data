@@ -3,34 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
+local l_0_3 = nil
+if (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME) == nil then
+  local l_0_0, l_0_1 = nil
+  if l_0_3 == nil then
+    return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC15: Overwrote pending register: R1 in 'AssignReg'
-
+  l_0_0 = l_0_3:sub(-5)
+  local l_0_2 = nil
+else
   do
-    if (this_sigattrlog[3]).matched then
-      local l_0_2 = nil
-    end
-    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC21: Confused about usage of register: R2 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_2 ~= nil and nil ~= nil then
-      local l_0_1 = (string.lower)(l_0_2)
-      -- DECOMPILER ERROR at PC27: Confused about usage of register: R1 in 'UnsetPending'
-
-      local l_0_3 = (string.lower)(nil)
-      if l_0_1:match("(.+\\)([^\\]+)$") == l_0_3:match("(.+\\)([^\\]+)$") then
-        return mp.INFECTED
-      end
+    if (string.find)((l_0_1:sub(-5)):lower(), ".asp") then
+      return mp.INFECTED
     end
-    do
-      return mp.CLEAN
-    end
+    return mp.LOWFI
   end
 end
 

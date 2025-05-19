@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 7744 and l_0_0 <= 9000 and (pesecs[2]).Name == ".wtf" and peattributes.isdll == true then
+if ((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (hstrlog[5]).matched) then
   return mp.INFECTED
 end
 return mp.CLEAN

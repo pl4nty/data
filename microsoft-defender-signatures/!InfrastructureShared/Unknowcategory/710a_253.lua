@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and pehdr.AddressOfEntryPoint == 0 and peattributes.hasexports == true then
+if (hstrlog[1]).hitcount + (hstrlog[2]).hitcount + (hstrlog[3]).hitcount + (hstrlog[4]).hitcount >= 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

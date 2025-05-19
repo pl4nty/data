@@ -3,16 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
+if pehdr.NumberOfSections ~= 5 then
   return mp.CLEAN
 end
-if (hstrlog[6]).hitcount == 0 then
+if not peattributes.x86_image then
   return mp.CLEAN
 end
-if (hstrlog[7]).hitcount == 0 and (hstrlog[9]).hitcount == 0 and (hstrlog[8]).hitcount == 0 then
+if (pesecs[1]).SizeOfRawData < 483328 or (pesecs[1]).SizeOfRawData > 495616 then
   return mp.CLEAN
 end
-if (hstrlog[10]).hitcount == 0 and (hstrlog[11]).hitcount == 0 and (hstrlog[12]).hitcount == 0 and (hstrlog[13]).hitcount == 0 then
+if (pesecs[2]).SizeOfRawData > 8192 then
+  return mp.CLEAN
+end
+if (pesecs[3]).SizeOfRawData ~= 12288 then
+  return mp.CLEAN
+end
+if (pesecs[4]).SizeOfRawData ~= 4096 then
+  return mp.CLEAN
+end
+if (pesecs[5]).SizeOfRawData < 1146880 or (pesecs[5]).SizeOfRawData > 1196032 then
   return mp.CLEAN
 end
 return mp.INFECTED

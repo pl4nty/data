@@ -3,16 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = l_0_0.image_path
-local l_0_2 = (string.lower)((string.match)(l_0_1, "\\([^\\]+)$"))
-if l_0_2 == nil or l_0_2 == "" then
-  return mp.CLEAN
-end
-if (string.find)(l_0_2, "tomcat%d.exe") ~= nil then
+if peattributes.isdriver == false and peattributes.isexe and peattributes.no_security and (mp.getfilesize)() > 1376256 and (mp.getfilesize)() < 5242880 and (pesecs[3]).Name == ".data" then
   return mp.INFECTED
 end
 return mp.CLEAN

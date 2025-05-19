@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)(pevars.sigaddr) and (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 then
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

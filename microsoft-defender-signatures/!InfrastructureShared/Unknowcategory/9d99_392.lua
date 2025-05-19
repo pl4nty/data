@@ -3,20 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.NumberOfSections >= 6 then
-  local l_0_0 = 0
-  local l_0_1 = 0
-  for l_0_5 = 2, pehdr.NumberOfSections do
-    l_0_0 = l_0_0 + (pesecs[l_0_5]).SizeOfRawData
-    if l_0_1 < (pesecs[l_0_5]).SizeOfRawData then
-      l_0_1 = (pesecs[l_0_5]).SizeOfRawData
-    end
-  end
-  if (l_0_0 - l_0_1) * 100 < l_0_1 * 15 then
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_6.image_path), "\\spoolsv.exe", 1, true) then
     return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

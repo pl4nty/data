@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
-  return mp.CLEAN
+if (mp.get_mpattribute)("SIGATTR:Adware:Win32/GameVance.A") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

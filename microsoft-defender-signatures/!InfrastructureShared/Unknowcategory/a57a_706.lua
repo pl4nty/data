@@ -3,19 +3,33 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+if (string.find)((string.lower)((mp.getfilename)()), ".htaccess") ~= nil then
+  local l_0_0 = (mp.GetBruteMatchData)()
+  local l_0_1 = 256
+  local l_0_2 = ""
+  if l_0_0.is_header then
+    l_0_2 = (tostring(headerpage)):sub(l_0_0.match_offset, l_0_0.match_offset + l_0_1)
+  else
+    l_0_2 = (tostring(footerpage)):sub(l_0_0.match_offset, l_0_0.match_offset + l_0_1)
+  end
+  l_0_2 = (string.lower)(l_0_2)
+  local l_0_3 = {}
+  -- DECOMPILER ERROR at PC50: No list found for R3 , SetList fails
 
+  -- DECOMPILER ERROR at PC51: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R5 in 'AssignReg'
+
+  for l_0_7,l_0_8 in ("x-httpd-php .jpg")("x-httpd-php .jpeg") do
+    if (string.find)(l_0_2, l_0_8, 1, true) then
+      return mp.INFECTED
+    end
+  end
+end
 do
-  if (this_sigattrlog[5]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC70: Overwrote pending register: R0 in 'AssignReg'
 
-  local l_0_2 = nil
-  if (((string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "\\microsoft\\onedrive\\", 1, true) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "\\microsoft onedrive\\", 1, true)) and (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "filesyncshell64.dll", 1, true)) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "\\microsoft\\teams\\", 1, true) and (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), "userenv.dll", 1, true) then
-    (bm.add_related_file)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)))
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  do return l_0_0 end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

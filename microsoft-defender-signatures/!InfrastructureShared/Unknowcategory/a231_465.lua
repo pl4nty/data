@@ -3,23 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+  local l_0_0 = (string.lower)((mp.utf16to8)((this_sigattrlog[1]).wp2))
+  if (string.find)(l_0_0, ".downloadstring", 1, true) ~= nil then
+    do
+      do
+        if (string.find)(l_0_0, "-dumpcreds", 1, true) ~= nil then
+          local l_0_1 = (string.find)(l_0_0, "-computername", 1, true)
+        else
+        end
+        if false ~= nil then
+          return mp.INFECTED
+        end
+        return mp.CLEAN
+      end
+    end
   end
-end
-if (this_sigattrlog[4]).matched and (this_sigattrlog[5]).matched then
-  local l_0_6 = (this_sigattrlog[4]).p1
-  local l_0_7 = (this_sigattrlog[5]).p1
-  if l_0_6:lower() .. l_0_7:lower() == "unsafe" then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.LOWFI
 end
 

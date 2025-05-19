@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Trojan:Win32/PswStealer.ats01") then
+if peattributes.isexe == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/SnakeKeyLogger.AMDA") then
   return mp.INFECTED
 end
 return mp.CLEAN

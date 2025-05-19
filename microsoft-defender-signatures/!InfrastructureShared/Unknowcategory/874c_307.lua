@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_isdll") and (pe.get_exports_count)() <= 4 and (pe.get_exports_count)() >= 1 then
-    local l_0_0 = (pe.get_imports)()
-    if l_0_0 <= 4 and l_0_0 >= 1 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_1 = (string.sub)(l_0_0, 15, 15)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\187" .. l_0_1 .. "\000\000\000")
+return mp.INFECTED
 

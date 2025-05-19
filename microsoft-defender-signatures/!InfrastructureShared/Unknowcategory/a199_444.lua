@@ -3,20 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if l_0_0 ~= nil then
-    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    for l_0_5,l_0_6 in ipairs(l_0_1) do
-      if (sysio.IsFileExists)(l_0_6) and (string.find)(l_0_6, "rundll32", 1, true) == nil then
-        (bm.add_related_file)(l_0_6)
-      end
-    end
-  end
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 19, 4), 1)
+if (pe.vm_search)(l_0_0, l_0_0 + 60, "C\000:\000\\\000S\000y\000s\000t\000e\000m\000 \000V\000o\000l\000u\000m\000e\000 \000I\000n\000f\000o\000r\000m\000a\000t\000i\000o\000n\000\\\000\000\000\144\000", nil, pe.VM_SEARCH_BM) == l_0_0 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 32, "\184\003\000\000\000\144")
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
-end
+return mp.INFECTED
 

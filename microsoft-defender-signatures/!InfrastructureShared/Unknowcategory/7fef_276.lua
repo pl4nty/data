@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil and (mp.get_mpattribute)("HSTR:ollama!MTB") then
-    return mp.INFECTED
-  end
+if peattributes.isdll and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.ismsil then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

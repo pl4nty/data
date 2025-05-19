@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  (bm.add_related_process)(l_0_6.ppid)
+if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "sharpshares.exe" then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

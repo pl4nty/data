@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_LNK_FILE") and (mp.get_mpattribute)("Exploit:O97M/DDEDownloader.C.2") then
+if peattributes.isexe == true and ((mp.getfilesize)() < 15000 or (mp.getfilesize)() > 30000) then
   return mp.INFECTED
 end
 return mp.CLEAN

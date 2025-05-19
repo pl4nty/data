@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[3]).Name == ".qhw" or (pesecs[2]).Name == "DrtWJgcR" then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%-%>%(%w+Sfx%)%-%>CMT$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

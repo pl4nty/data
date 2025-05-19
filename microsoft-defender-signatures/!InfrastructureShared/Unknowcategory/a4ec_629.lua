@@ -3,33 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.match)(l_0_0, "([^\\]-[^\\%.]+)$")
-end
-if l_0_0 == nil then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, " -noprofile ", 1, true) or (string.find)(l_0_0, " -noninteractive ", 1, true) or (string.find)(l_0_0, "wsmprovhost", 1, true)) then
   return mp.CLEAN
 end
-local l_0_1 = nil
-if (this_sigattrlog[3]).matched then
-  l_0_1 = (this_sigattrlog[3]).utf8p2
-end
-if l_0_1 == nil and (string.len)(l_0_1) < 3 then
+local l_0_1 = (bm.get_current_process_startup_info)()
+local l_0_2 = (string.lower)(l_0_1.command_line)
+if (string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "taskschedulerinvoke", 1, true) then
   return mp.CLEAN
 end
-local l_0_2 = nil
-if (this_sigattrlog[4]).matched then
-  l_0_2 = (this_sigattrlog[4]).utf8p1
-  l_0_2 = (string.match)(l_0_2, "([^\\]-[^\\%.]+)$")
-end
-if l_0_2 == nil and (string.len)(l_0_2) < 3 then
-  return mp.CLEAN
-end
-if l_0_0 == l_0_2 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, l_0_0, 1, true) and (string.find)(l_0_1, l_0_2, 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

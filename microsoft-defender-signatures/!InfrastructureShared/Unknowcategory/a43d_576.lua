@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\svchost.exe", 1, true) then
-    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-    local l_0_9 = tonumber(l_0_7)
-    local l_0_10 = tonumber(l_0_8)
-    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
-    ;
-    (mp.TriggerScanResource)("ems", l_0_13)
-  end
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or (mp.getfilesize)() > 1048576 then
+  return mp.CLEAN
+end
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+end
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+if (pe.get_exports_count)() > 3 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

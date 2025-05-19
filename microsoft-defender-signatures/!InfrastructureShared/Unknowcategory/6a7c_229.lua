@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and (l_0_0 == 135168 or l_0_0 == 139264) then
+if (pesecs[1]).VirtualSize > 20480 and (pesecs[1]).VirtualAddress == 4096 then
   return mp.INFECTED
 end
 return mp.CLEAN

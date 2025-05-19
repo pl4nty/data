@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)(pevars.sigaddr) then
+if peattributes.ismsil and peattributes.no_security then
   return mp.INFECTED
 end
 return mp.CLEAN

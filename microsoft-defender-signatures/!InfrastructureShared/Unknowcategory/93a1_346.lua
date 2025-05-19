@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if ((l_0_0 >= 53248 and l_0_0 <= 61440) or l_0_0 < 315392 or l_0_0 <= 327680) and (pehdr.NumberOfSections >= 2 or pehdr.NumberOfSections <= 4) then
+local l_0_0 = (pe.get_regval)(pe.REG_EIP)
+local l_0_1 = (pe.get_regval)(pe.REG_ESP)
+if peattributes.isdll and l_0_1 < l_0_0 and l_0_0 - l_0_1 < 512 and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

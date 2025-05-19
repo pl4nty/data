@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.executable_image and peattributes.amd64_image then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

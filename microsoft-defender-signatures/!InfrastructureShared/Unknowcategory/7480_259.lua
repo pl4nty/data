@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0 ~= nil and (string.find)(l_0_0, "\\w64time.dll", 1, true) == nil then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

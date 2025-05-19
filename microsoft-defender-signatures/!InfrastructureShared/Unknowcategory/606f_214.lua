@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("CODEPATCH:CheckStackValGetModuleHandle")
-return mp.INFECTED
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData == 0 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

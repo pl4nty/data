@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 1 and pehdr.Subsystem ~= 1 then
+if (mp.get_mpattribute)("SIGATTR:DisableRealtimeMonitoring") then
   return mp.INFECTED
 end
 return mp.CLEAN

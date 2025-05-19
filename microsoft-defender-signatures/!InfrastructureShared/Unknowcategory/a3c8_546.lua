@@ -3,23 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA
-if l_0_0 == 0 then
-  return mp.LOWFI
+local l_0_0 = ""
+if (this_sigattrlog[1]).matched then
+  l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
 end
-if (mp.getfilesize)() < l_0_0 + 4096 then
-  return mp.LOWFI
+if l_0_0 ~= "" and ((string.find)(l_0_0, "\\appdata\\local\\temp\\acrobat_sbx\\", 1, true) or (string.find)(l_0_0, "\\appdata\\local\\temp\\acrord32_sbx\\", 1, true)) then
+  if (string.find)(l_0_0, "\\spoon\\cache\\", 1, true) or (string.find)(l_0_0, "\\bullseyecoverage", 1, true) then
+    return mp.CLEAN
+  else
+    return mp.INFECTED
+  end
 end
-;
-(mp.readprotection)(false)
-if (mp.readfile)(l_0_0 + 3904, 27) == "\004\b\019\002OR1\0180\016\006\003U\004\a\019\tBeaverton1" then
-  return mp.INFECTED
-end
-if (mp.readfile)(l_0_0 + 3876, 27) == "\004\b\019\002OR1\0180\016\006\003U\004\a\019\tBeaverton1" then
-  return mp.INFECTED
-end
-if (mp.readfile)(l_0_0 + 3602, 27) == "\004\b\019\002OR1\0180\016\006\003U\004\a\019\tBeaverton1" then
-  return mp.INFECTED
-end
-return mp.LOWFI
+return mp.CLEAN
 

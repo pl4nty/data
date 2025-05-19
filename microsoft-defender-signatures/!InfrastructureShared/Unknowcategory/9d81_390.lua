@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_6.image_path), "\\mshta.exe", 1, true) then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 3, 4), 1), 4), 1)
+local l_0_1 = (pe.get_api_id)(l_0_0)
+if l_0_1 ~= 3267971814 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 34, "êê")
+return mp.INFECTED
 

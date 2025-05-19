@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
+if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
   local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p2)
+  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p2)
   if (string.find)(l_0_0, ".ps1", 1, true) and not (string.find)(l_0_0, " -", 1, true) then
     return mp.CLEAN
   else

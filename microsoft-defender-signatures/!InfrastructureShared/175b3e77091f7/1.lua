@@ -46,7 +46,7 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
       local l_0_13, l_0_14 = pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped", l_0_12)
       if l_0_13 and l_0_14 then
         l_0_4.FileDropperInfo = safeJsonSerialize(l_0_14)
-        l_0_4.FileDroppedRecently = true
+        l_0_4.FileDroppedRecently_LongTermStrg = true
         l_0_7 = true
       else
         l_0_4.potentiallyOldDll = true
@@ -72,8 +72,6 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
               l_0_18 = l_0_22 .. "|" .. l_0_17 .. "|" .. l_0_16
               l_0_19 = AnomalyTableCheck("Appomaly_LoadedDlls_Path_Normalized", l_0_18, 2, "MarkerRecord_" .. l_0_15)
             end
-            ;
-            (bm.add_related_string)("Anomaly_LoadedDlls_TblInfo", safeJsonSerialize(l_0_21), bm.RelatedStringBMReport)
             l_0_4.AppName = l_0_15
             l_0_4.Dll_FileSize = (sysio.GetFileSize)(l_0_0) or 0
             l_0_4.Key = l_0_18
@@ -104,7 +102,7 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
               l_0_4.Dll_PathNew = true
             end
             local l_0_28 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_5)
-            -- DECOMPILER ERROR at PC332: Unhandled construct in 'MakeBoolean' P1
+            -- DECOMPILER ERROR at PC323: Unhandled construct in 'MakeBoolean' P1
 
             if l_0_28 and l_0_28 ~= "NONE" then
               l_0_4.POTENTIAL_SIDE_LOADING = l_0_28
@@ -131,70 +129,74 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
                     l_0_7 = true
                   end
                 end
-              end
-              do
-                if not l_0_30 then
-                  (bm.add_related_string)("Error", l_0_31, bm.RelatedStringBMReport)
-                end
-                if not l_0_7 then
+                if not l_0_4.FileDroppedRecently then
                   return mp.CLEAN
                 end
-                local l_0_37 = "Appomaly_LoadedDlls_Version"
-                local l_0_38 = 31536000
-                local l_0_39 = 1000
-                local l_0_40 = l_0_15 .. l_0_5 .. l_0_4.Dll_FileSize
-                l_0_4.Dll_VersionInfo = GetRollingQueueKeyValue(l_0_37, l_0_40) or ""
-                if l_0_4.Dll_VersionInfo == "" then
+              end
+              if not l_0_30 then
+                (bm.add_related_string)("Error", l_0_31, bm.RelatedStringBMReport)
+              end
+              if not l_0_7 then
+                return mp.CLEAN
+              end
+              local l_0_37 = "Appomaly_LoadedDlls_Version"
+              local l_0_38 = 31536000
+              local l_0_39 = 1000
+              local l_0_40 = l_0_15 .. l_0_5 .. l_0_4.Dll_FileSize
+              l_0_4.Dll_VersionInfo = GetRollingQueueKeyValue(l_0_37, l_0_40) or ""
+              if l_0_4.Dll_VersionInfo == "" then
+                do
+                  if not (sysio.GetPEVersionInfo)(l_0_0) then
+                    local l_0_41, l_0_42, l_0_43, l_0_44 = {}
+                  end
+                  -- DECOMPILER ERROR at PC437: Confused about usage of register: R33 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC442: Confused about usage of register: R33 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC447: Confused about usage of register: R33 in 'UnsetPending'
+
                   do
-                    if not (sysio.GetPEVersionInfo)(l_0_0) then
-                      local l_0_41, l_0_42, l_0_43, l_0_44 = {}
+                    local l_0_45 = nil
+                    l_0_4.Dll_VersionInfo = (l_0_41.OriginalFilename or "") .. "|" .. (l_0_41.CompanyName or "") .. "|" .. (l_0_41.FileDescription or "")
+                    -- DECOMPILER ERROR at PC456: Confused about usage of register: R34 in 'UnsetPending'
+
+                    AppendToRollingQueue(l_0_37, l_0_40, (l_0_41.OriginalFilename or "") .. "|" .. (l_0_41.CompanyName or "") .. "|" .. (l_0_41.FileDescription or ""), l_0_38, l_0_39)
+                    if (string.find)(l_0_4.Dll_VersionInfo, "Microsoft", 1, true) then
+                      return mp.CLEAN
                     end
-                    -- DECOMPILER ERROR at PC440: Confused about usage of register: R33 in 'UnsetPending'
-
-                    -- DECOMPILER ERROR at PC445: Confused about usage of register: R33 in 'UnsetPending'
-
-                    -- DECOMPILER ERROR at PC450: Confused about usage of register: R33 in 'UnsetPending'
-
-                    do
-                      local l_0_45 = nil
-                      l_0_4.Dll_VersionInfo = (l_0_41.OriginalFilename or "") .. "|" .. (l_0_41.CompanyName or "") .. "|" .. (l_0_41.FileDescription or "")
-                      -- DECOMPILER ERROR at PC459: Confused about usage of register: R34 in 'UnsetPending'
-
-                      AppendToRollingQueue(l_0_37, l_0_40, (l_0_41.OriginalFilename or "") .. "|" .. (l_0_41.CompanyName or "") .. "|" .. (l_0_41.FileDescription or ""), l_0_38, l_0_39)
-                      if (string.find)(l_0_4.Dll_VersionInfo, "Microsoft", 1, true) then
-                        return mp.CLEAN
-                      end
-                      local l_0_46, l_0_47 = pcall(MpCommon.RollingQueueQueryKeyRegex, l_0_37, l_0_15 .. l_0_5)
-                      if not l_0_47 then
-                        l_0_4.Dll_PrevVersionInfo = {}
-                        if l_0_4.Dll_VersionInfo ~= "||" then
-                          for l_0_52,i_2 in ipairs(l_0_47) do
-                            if i_2.value == l_0_4.Dll_VersionInfo then
-                              return mp.CLEAN
-                            end
-                          end
-                        end
-                        do
-                          local l_0_53, l_0_54 = safeJsonSerialize(l_0_4, 100, nil, true)
-                          local l_0_55 = bm.add_related_string
-                          local l_0_56 = "Additional_Info"
-                          do
-                            l_0_55(l_0_56, l_0_53 or l_0_54 or "", bm.RelatedStringBMReport)
-                            l_0_55 = bm
-                            l_0_55 = l_0_55.add_related_string
-                            l_0_56 = "Anomaly_LoadedDlls_TblInfo"
-                            l_0_55(l_0_56, safeJsonSerialize(l_0_21), bm.RelatedStringBMReport)
-                            l_0_55 = bm
-                            l_0_55 = l_0_55.add_related_file
-                            l_0_56 = l_0_0
-                            l_0_55(l_0_56)
-                            l_0_55 = mp
-                            l_0_55 = l_0_55.INFECTED
-                            do return l_0_55 end
-                            -- DECOMPILER ERROR at PC536: freeLocal<0 in 'ReleaseLocals'
-
+                    local l_0_46, l_0_47 = pcall(MpCommon.RollingQueueQueryKeyRegex, l_0_37, l_0_15 .. l_0_5)
+                    if not l_0_47 then
+                      l_0_4.Dll_PrevVersionInfo = {}
+                      if l_0_4.Dll_VersionInfo ~= "||" then
+                        for l_0_52,i_2 in ipairs(l_0_47) do
+                          if i_2.value == l_0_4.Dll_VersionInfo then
                             return mp.CLEAN
                           end
+                        end
+                      end
+                      do
+                        if l_0_4.Dll_VersionInfo ~= "||" and l_0_4.Dll_VersionInfo == (l_0_4.Dll_PrevVersionInfo).value then
+                          return mp.CLEAN
+                        end
+                        local l_0_53, l_0_54 = safeJsonSerialize(l_0_4, 100, nil, true)
+                        local l_0_55 = bm.add_related_string
+                        local l_0_56 = "Additional_Info"
+                        do
+                          l_0_55(l_0_56, l_0_53 or l_0_54 or "", bm.RelatedStringBMReport)
+                          l_0_55 = bm
+                          l_0_55 = l_0_55.add_related_string
+                          l_0_56 = "Anomaly_LoadedDlls_TblInfo"
+                          l_0_55(l_0_56, safeJsonSerialize(l_0_21), bm.RelatedStringBMReport)
+                          l_0_55 = bm
+                          l_0_55 = l_0_55.add_related_file
+                          l_0_56 = l_0_0
+                          l_0_55(l_0_56)
+                          l_0_55 = mp
+                          l_0_55 = l_0_55.INFECTED
+                          do return l_0_55 end
+                          -- DECOMPILER ERROR at PC544: freeLocal<0 in 'ReleaseLocals'
+
+                          return mp.CLEAN
                         end
                       end
                     end

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/InvisibleFerret.A!dha")
-return mp.INFECTED
+if (peattributes.isexe == true or peattributes.isdll == true) and peattributes.no_security == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

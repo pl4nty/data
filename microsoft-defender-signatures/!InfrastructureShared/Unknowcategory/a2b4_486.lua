@@ -3,19 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-l_0_1 = (string.lower)(l_0_1)
-if (string.sub)(l_0_1, -6, -1) == ",enter" or (string.sub)(l_0_1, -7, -1) == ", enter" then
-  if l_0_0 ~= nil then
-    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
-  end
+if (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\000" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 18, 1) == "\016" then
+  (pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 19, "êê")
+  ;
+  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
   return mp.INFECTED
 end
 return mp.CLEAN

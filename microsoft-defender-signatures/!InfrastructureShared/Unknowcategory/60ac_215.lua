@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".air0" and (pesecs[6]).Name == ".air1" then
+if mp.HSTR_WEIGHT >= 11 then
+  (mp.set_mpattribute)("PUA:Block:Glims.F")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

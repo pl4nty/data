@@ -3,45 +3,51 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  else
+checkProcessTree = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_0 == nil or l_1_1 == nil or type(l_1_1) ~= "table" then
+    return nil
   end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-      local l_0_1 = (this_sigattrlog[2]).utf8p2
-    else
+  local l_1_2 = l_1_0
+  local l_1_3 = {}
+  for l_1_7,l_1_8 in ipairs(l_1_1) do
+    local l_1_9 = 0
+    local l_1_10, l_1_11 = (bm.get_process_relationships)(l_1_2)
+    for l_1_15,l_1_16 in ipairs(l_1_11) do
+      if (mp.bitand)(l_1_16.reason_ex, 1) == 1 and (string.sub)(l_1_16.image_path, -(string.len)(l_1_8)) == l_1_8 then
+        l_1_2 = l_1_16.ppid
+        l_1_9 = l_1_9 + 1
+      end
+      if l_1_9 > 1 then
+        return nil
+      end
     end
-    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
-        local l_0_2, l_0_3 = (this_sigattrlog[4]).utf8p2
-      end
-      -- DECOMPILER ERROR at PC69: Confused about usage of register: R0 in 'UnsetPending'
-
-      if l_0_2 == nil then
-        return mp.CLEAN
-      end
-      local l_0_4 = nil
-      local l_0_5 = {[".js"] = true, vbs = true, wsf = true, jse = true, vbe = true}
-      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
-        local l_0_6 = nil
-        -- DECOMPILER ERROR at PC90: Confused about usage of register: R7 in 'UnsetPending'
-
-        if (string.len)(R7_PC90) > 3 and (sysio.IsFileExists)(R7_PC90) and l_0_5[(string.sub)(R7_PC90, -3)] then
-          (bm.add_related_file)(l_0_11)
-          ;
-          (mp.ReportLowfi)(l_0_11, 4023056107)
-        end
-      end
-      return mp.INFECTED
+    if l_1_9 == 0 then
+      return nil
     end
+    ;
+    (table.insert)(l_1_3, l_1_2)
   end
+  return l_1_3
 end
+
+if (bm.GetSignatureMatchDuration)() > 300000000 then
+  return mp.CLEAN
+end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 == nil or l_0_0.ppid == nil then
+  return mp.CLEAN
+end
+local l_0_1 = l_0_0.ppid
+local l_0_2 = {}
+-- DECOMPILER ERROR at PC25: No list found for R2 , SetList fails
+
+-- DECOMPILER ERROR at PC26: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC27: Overwrote pending register: R4 in 'AssignReg'
+
+if ("cmd.exe")("powershell.exe", l_0_2) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

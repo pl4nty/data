@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
+(mp.set_mpattribute)("PUA:Block:NiceHashMiner")
+;
+(mp.set_mpattribute)("Company:CoinMiner32:HBIT")
 return mp.INFECTED
 

@@ -3,16 +3,18 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_no_security") and peattributes.has_msilresources and (mp.getfilesize)() > 1000000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_1 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+      if (sysio.IsFileExists)(l_0_7) and (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
+        (bm.add_related_file)(l_0_7)
       end
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
+end
+do
+  return mp.INFECTED
 end
 

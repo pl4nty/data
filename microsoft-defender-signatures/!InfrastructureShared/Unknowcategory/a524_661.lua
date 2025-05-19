@@ -3,34 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC39: Overwrote pending register: R1 in 'AssignReg'
-
-  if not (this_sigattrlog[11]).matched or (this_sigattrlog[11]).utf8p1 == nil or nil == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs({"windir%\\winsxs\\", ":windows\\winsxs\\", "windir%\\servicing\\", ":windows\\servicing\\"}) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC59: Confused about usage of register: R7 in 'UnsetPending'
-
-    if (string.sub)(l_0_1, 2, #R7_PC59) == R7_PC59 or (string.sub)(l_0_2, 2, #R7_PC59) == R7_PC59 then
-      return mp.CLEAN
-    end
-  end
-  ;
-  (bm.add_related_file)(l_0_2)
-  return mp.INFECTED
+local l_0_0 = (nri.GetConnectionString)()
+local l_0_1 = (string.match)(l_0_0, "SrcIp=(.-)%.")
+local l_0_2 = (string.match)(l_0_0, "DestIp=(.-)%.")
+if l_0_1 == l_0_2 then
+  return mp.CLEAN
 end
+if (this_sigattrlog[2]).timestamp < (this_sigattrlog[1]).timestamp then
+  return mp.CLEAN
+end
+local l_0_3 = (this_sigattrlog[2]).timestamp - (this_sigattrlog[1]).timestamp
+if l_0_3 > 300000000 then
+  return mp.CLEAN
+end
+local l_0_4 = {}
+l_0_4.useragent = (nri.GetHttpRequestHeader)("User-Agent")
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_4)
+return mp.INFECTED
 

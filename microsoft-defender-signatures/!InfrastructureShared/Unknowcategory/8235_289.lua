@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Rootkit.MBXI!MTB") and (mp.get_mpattribute)("Lua:Issuer.Microsoft") and (mp.get_mpattribute)("pea_isdriver") then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.find)(l_0_0, "program files\\mcafee", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

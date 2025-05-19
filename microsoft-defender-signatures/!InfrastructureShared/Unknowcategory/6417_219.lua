@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("PUA:Block:Adload.A!xp")
+if mp.HSTR_WEIGHT >= 31 then
+  (mp.set_mpattribute)("PUA:Block:AMCleaner.E")
   return mp.INFECTED
 end
 return mp.LOWFI

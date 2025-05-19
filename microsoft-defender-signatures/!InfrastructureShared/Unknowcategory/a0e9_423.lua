@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[2]).matched then
-  l_0_0 = (this_sigattrlog[2]).utf8p2
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 ~= nil and l_0_0 > 2048000 then
+  return mp.CLEAN
 end
-if l_0_0 ~= "" then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "domain ", 1, true) and (string.find)(l_0_0, "user ", 1, true) and (string.find)(l_0_0, "pass ", 1, true) then
-    return mp.INFECTED
-  end
+local l_0_1 = (pe.get_versioninfo)()
+if l_0_1 ~= nil and l_0_1.OriginalFilename ~= nil and (l_0_1.OriginalFilename):lower() == "sync.exe" and l_0_1.InternalName ~= nil and (l_0_1.InternalName):lower() == "sync.exe" and l_0_1.ProductVersion ~= nil and (l_0_1.ProductVersion):lower() == "0.0.0.0" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

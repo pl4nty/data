@@ -3,20 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 64)
+local l_0_1 = (string.find)(l_0_0, "aÅ}", 1, true)
+if l_0_1 ~= nil then
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 7, "êê")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 16, "êê")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 22, "êê")
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_ismsil") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.LOWFI
 

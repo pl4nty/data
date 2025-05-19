@@ -3,10 +3,13 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis_VMM_Grow")
+local l_0_1 = nil
+local l_0_0 = (pe.get_regval)(pe.REG_ECX) - (4294967295 - (pe.get_regval)(pe.REG_EBX))
 ;
-(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_4")
+(pe.set_regval)(pe.REG_EAX, 0)
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 27, "êê")
+(pe.set_regval)(pe.REG_EBX, l_0_1)
+;
+(pe.set_regval)(pe.REG_ECX, l_0_0)
 return mp.CLEAN
 

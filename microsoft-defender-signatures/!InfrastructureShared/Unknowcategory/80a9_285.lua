@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "externallink1.xml") ~= nil and (mp.getfilesize)() < 1000 then
+  return mp.INFECTED
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
-end
+return mp.CLEAN
 

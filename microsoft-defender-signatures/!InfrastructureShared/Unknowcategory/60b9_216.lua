@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096480 then
+if (pesecs[4]).Name == ".ctls0" and (pesecs[6]).Name == ".jetb" then
   return mp.INFECTED
 end
 return mp.CLEAN

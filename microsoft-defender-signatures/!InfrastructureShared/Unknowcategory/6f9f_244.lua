@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
--- DECOMPILER ERROR at PC17: Unhandled construct in 'MakeBoolean' P3
-
-if (l_0_0 >= 147456 and l_0_0 <= 184320) or l_0_0 < 217088 or l_0_0 >= 131072 and l_0_0 <= 135168 then
+if (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 536870912) == 536870912 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

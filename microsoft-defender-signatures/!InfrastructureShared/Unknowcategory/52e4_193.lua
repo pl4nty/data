@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:MacSearch.A")
+if peattributes.no_security == true and peattributes.isdll == true then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

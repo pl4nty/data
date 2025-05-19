@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (string.lower)(l_0_0.command_line)
-if (string.find)(l_0_1, "/browser:", 1, true) then
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
+    if (string.find)(l_0_0, "^%d%d%d%d+$") then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
   return mp.CLEAN
 end
-return mp.INFECTED
 

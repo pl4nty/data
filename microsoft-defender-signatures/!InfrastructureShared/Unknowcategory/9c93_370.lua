@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 454656 and l_0_0 > 356352 then
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched then
+do
+  if epcode[1] == 232 and epcode[5] == 0 and epcode[6] == 233 and epcode[10] == 255 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[4]).matched then
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

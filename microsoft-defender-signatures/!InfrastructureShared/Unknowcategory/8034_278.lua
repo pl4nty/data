@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and ((mp.get_mpattribute)("SIGATTR:DelphiFile") or (mp.get_mpattribute)("HSTR:Win32/DelphiFile")) then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("\\temp\\", 1, true) ~= nil and l_0_0:find("\\system", 1, true) == nil then
   return mp.INFECTED
 end
 return mp.CLEAN

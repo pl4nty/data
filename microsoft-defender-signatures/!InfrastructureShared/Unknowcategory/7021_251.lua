@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x64_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-return mp.INFECTED
+(mp.set_mpattribute)("lua_codepatch_obfuscator_tc_1")
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "»‹æ[_")
+return mp.SUSPICIOUS
 

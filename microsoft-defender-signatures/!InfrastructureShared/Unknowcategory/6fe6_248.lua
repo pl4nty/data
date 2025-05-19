@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if peattributes.isdll then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 28, "")
+;
+(mp.set_mpattribute)("do_deep_rescan")
+return mp.INFECTED
 

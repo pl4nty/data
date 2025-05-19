@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:VirTool:BattleNetWipe") then
+if peattributes.no_security == true and peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

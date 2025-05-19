@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("Suspicious:CraftedPE_Import") then
+  (mp.set_mpattribute)("Suspicious:CraftedFile_Import")
 end
 return mp.CLEAN
 

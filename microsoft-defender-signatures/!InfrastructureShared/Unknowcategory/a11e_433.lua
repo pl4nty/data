@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 33554432 then
+if (mp.getfilesize)() < 1048576 then
   return mp.CLEAN
 end
 if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then

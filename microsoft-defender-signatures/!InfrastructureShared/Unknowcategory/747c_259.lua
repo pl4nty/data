@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and (pe.query_import)(pe.IMPORT_STATIC, 1751160259) then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 1703936 and l_0_0 <= 1769472 and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

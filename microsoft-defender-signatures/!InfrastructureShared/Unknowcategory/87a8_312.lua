@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and pehdr.NumberOfSections > 3 and pehdr.NumberOfSections < 7 and (pesecs[4]).Name == ".pdata" then
+if (mp.get_mpattribute)("NID:Win64/DarkRat.PA") and peattributes.no_security == true and (mp.getfilesize)() >= 230000 and (mp.getfilesize)() <= 260000 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

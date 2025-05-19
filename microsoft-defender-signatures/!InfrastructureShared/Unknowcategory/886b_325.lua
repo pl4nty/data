@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "svchost.exe" and (versioning.IsSeville)() then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 2, 4), 1) >= 65536 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 6, "\235")
+  return mp.INFECTED
 end
+return mp.CLEAN
 

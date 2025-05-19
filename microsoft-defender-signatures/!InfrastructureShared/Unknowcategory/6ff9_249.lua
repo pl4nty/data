@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and #(pe.get_exports)() == 1 then
+if peattributes.isexe and peattributes.x86_image and (pesecs[1]).Name == "   " then
   return mp.INFECTED
 end
 return mp.CLEAN

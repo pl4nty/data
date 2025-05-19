@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-for l_0_6,l_0_7 in ipairs(l_0_0) do
-  l_0_2 = l_0_7.image_path
-  if l_0_2 ~= nil then
-    l_0_2 = (string.lower)(l_0_2)
-    if l_0_2:find("excel.exe") or l_0_2:find("word.exe") then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 35000 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("messages", 1, true) then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

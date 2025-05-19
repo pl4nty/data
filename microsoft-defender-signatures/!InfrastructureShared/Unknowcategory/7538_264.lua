@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)((string.sub)(l_0_0, -12))
-  if l_0_0 == "rundll32.exe" then
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 and (string.find)(l_0_0, "2345soft", 1, true) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

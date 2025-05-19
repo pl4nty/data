@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.ismsil == true and (mp.getfilesize)() < 11000 then
+local l_0_0 = (mp.getfilesize)()
+if pehdr.NumberOfSections == 9 and l_0_0 >= 32768 and l_0_0 <= 49152 then
   return mp.INFECTED
 end
 return mp.CLEAN

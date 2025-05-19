@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
-  return mp.INFECTED
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-return mp.LOWFI
+;
+(mp.set_mpattribute)("MpRequestSMSM")
+return mp.INFECTED
 

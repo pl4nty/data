@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
+local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\virtualboxvm.exe", 1, true) then
-  return mp.CLEAN
+local l_0_1 = (string.lower)(l_0_0.image_path)
+if l_0_1:match("([^\\]+)$") == "spoolsv.exe" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

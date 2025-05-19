@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignatur") or peattributes.isexe == false then
   return mp.CLEAN
 end
-if mp.HSTR_WEIGHT == 4 then
-  return mp.LOWFI
-end
-return mp.CLEAN
+return mp.INFECTED
 

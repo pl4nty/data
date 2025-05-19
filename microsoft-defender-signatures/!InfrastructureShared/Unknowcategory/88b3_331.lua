@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
 do
-  if l_0_0 then
-    local l_0_1 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
-    if l_0_0:find(l_0_1, 1, true) then
-      return mp.INFECTED
+  if peattributes.amd64_image == true and peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil and (l_0_5.Signers).IsValid == true then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

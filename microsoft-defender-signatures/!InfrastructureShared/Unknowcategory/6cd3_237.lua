@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pe.get_regval)(pe.REG_EAX) == 106 and (pe.get_regval)(pe.REG_EDX) == 80 then
+if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") then
   return mp.INFECTED
 end
 return mp.CLEAN

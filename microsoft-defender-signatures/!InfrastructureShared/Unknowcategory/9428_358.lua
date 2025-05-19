@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 and peattributes.no_security == true then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.find)(l_0_0, "\\edge\\", 1, true) or (string.find)(l_0_0, "ccleaner", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,16 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp1 ~= nil and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  local l_0_2, l_0_3 = (string.match)(l_0_0, "\\microsoft\\(%a+)\\(%a+)%.dat")
-  local l_0_4, l_0_5 = (string.match)(l_0_1, "\\microsoft\\(%a+)\\(%a+)%.exe")
-  if l_0_2 and l_0_3 and l_0_4 and l_0_5 and l_0_2 == l_0_4 and (string.sub)(l_0_2, 1, -3) == l_0_3 and (string.sub)(l_0_4, 1, -2) == l_0_5 then
-    return mp.INFECTED
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+if l_0_0 then
+  if not (string.find)(l_0_0, "^c:\\") then
+    return mp.CLEAN
+  end
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\game", 1, true) then
+    return mp.CLEAN
   end
 end
-do
-  return mp.CLEAN
-end
+local l_0_1 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_1.ppid, "M")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1000)
+return mp.INFECTED
 

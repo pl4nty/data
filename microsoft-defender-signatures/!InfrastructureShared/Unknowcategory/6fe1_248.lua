@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, ".rtf->word", 1, true) then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

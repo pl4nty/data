@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or 0 + 1 + 1 + 1 == 1 then
-  return mp.INFECTED
+if MpCommon.SECURITY_MANDATORY_HIGH_RID <= ((bm.get_current_process_startup_info)()).integrity_level then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

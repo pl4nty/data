@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 823159601) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 680197589) == 0 then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_4")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\000")
 return mp.INFECTED
 

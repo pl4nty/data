@@ -3,21 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  if l_0_2 == "powershell.exe" or (string.find)(l_0_2, "^%d+%.exe") then
-    local l_0_3 = (mp.GetScannedPPID)()
-    if l_0_3 == nil then
-      return mp.CLEAN
-    end
-    ;
-    (MpCommon.RequestSmsOnProcess)(l_0_3, MpCommon.SMS_SCAN_LOW)
-    return mp.INFECTED
-  end
-end
-do
+if peattributes.isdll ~= true and peattributes.hasexports ~= true then
   return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 20000 and l_0_0 > 60000 then
+  return mp.CLEAN
+end
+if pehdr.AddressOfEntryPoint ~= 0 or pehdr.ImageBase ~= 4194304 then
+  return mp.CLEAN
+end
+local l_0_1 = (pe.get_exports)()
+if l_0_1 >= 2 and l_0_1 <= 5 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

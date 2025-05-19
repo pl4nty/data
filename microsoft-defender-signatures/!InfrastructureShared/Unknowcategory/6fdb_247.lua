@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/CobaltStrike.PA!Pra1") then
+if (mp.getfilesize)() > 10240000 then
+  return mp.CLEAN
+end
+if pehdr.Subsystem == 11 or pehdr.Subsystem == 12 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if not peattributes.is_delphi then
-  return mp.CLEAN
+if pehdr.Machine == 34404 then
+  (mp.changedetectionname)(805306480)
+  return mp.INFECTED
 end
 return mp.INFECTED
 

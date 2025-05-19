@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Win64/CryptInject.PG!MTB") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 13, "\144")
+return mp.INFECTED
 

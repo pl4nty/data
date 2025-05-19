@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "svchost.exe" then
-      if (versioning.IsSeville)() then
-        return mp.INFECTED
-      end
-      return mp.LOWFI
-    end
-  end
-  return mp.CLEAN
+if peattributes.isexe == true and (pesecs[5]).Name == ".reloc" and (pesecs[5]).Characteristics == 1107296320 and (mp.getfilesize)() >= 9000000 and (mp.getfilesize)() <= 15000000 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

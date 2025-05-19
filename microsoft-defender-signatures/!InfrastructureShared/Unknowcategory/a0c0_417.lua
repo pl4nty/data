@@ -3,14 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-local l_0_1 = (this_sigattrlog[1]).utf8p1
-local l_0_2 = (string.match)(l_0_1, "\\%l%l%l%l%l%l%l%l.exe")
-if l_0_2 ~= nil then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_0), 83782614)
-  ;
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_1), 83782614)
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.no_exports then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 1 then
+  for l_0_5 = 1, l_0_0 do
+    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
+    if (string.lower)(l_0_6) == "rathbuige" then
+      return mp.INFECTED
+    end
+  end
+end
+do
+  return mp.CLEAN
+end
 

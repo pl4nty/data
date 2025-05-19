@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 9 and (pesecs[pehdr.NumberOfSections]).Name == ".CN" and (pesecs[pevars.epsec]).SizeOfRawData >= 475136 and pevars.epsecwr == 1 then
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0 = nil
+    if (string.find)(l_0_0, "\\seal systems\\p2p_scripts\\", 1, true) then
+      return mp.CLEAN
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

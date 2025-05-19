@@ -3,26 +3,36 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "(.+\\)"
-local l_0_1 = ((string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0))
-local l_0_2 = nil
-if (this_sigattrlog[2]).matched then
-  l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[3]).matched then
-    l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[4]).matched then
-      l_0_2 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
-    else
-      if (this_sigattrlog[5]).matched then
-        l_0_2 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    local l_0_3 = ((string.lower)((string.sub)(l_0_0, -32))):match("\\([^\\]+)$")
+    if ({["pcpitstopscheduleservice.exe"] = true})[l_0_3] then
+      return mp.CLEAN
+    end
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC44: Confused about usage of register: R8 in 'UnsetPending'
+
+      if (sysio.IsFileExists)(R8_PC44) then
+        (bm.add_related_file)(R8_PC44)
       end
     end
   end
+  do
+    l_0_3 = mp
+    l_0_3 = l_0_3.INFECTED
+    return l_0_3
+  end
 end
-if l_0_1 ~= nil and l_0_1 == l_0_2 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

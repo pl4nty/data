@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched and (hstrlog[10]).matched then
+if (mp.bitand)(mp.HSTR_WEIGHT, 3) >= 2 then
+  (mp.set_mpattribute)("PUA:Block:TurtleCoin")
   return mp.INFECTED
 end
 return mp.CLEAN

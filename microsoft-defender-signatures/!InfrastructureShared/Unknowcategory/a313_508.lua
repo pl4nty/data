@@ -3,13 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(epcode, 1) ~= 1610613227 or (mp.readu_u32)(epcode, 5) ~= 673477691 or pehdr.Subsystem ~= 1 then
-  return mp.LOWFI
+if peattributes.hasappendeddata then
+  local l_0_0 = pehdr.NumberOfSections
+  local l_0_1 = (pesecs[l_0_0]).PointerToRawData + (pesecs[l_0_0]).SizeOfRawData
+  ;
+  (mp.readprotection)(false)
+  local l_0_2 = (mp.readfile)(l_0_1, 16)
+  if l_0_2 == "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" then
+    if (mp.getfilesize)() >= 4194304 then
+      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
+    end
+    return mp.INFECTED
+  end
 end
-local l_0_0 = pehdr.ImageBase + (pesecs[1]).VirtualAddress
-local l_0_1 = (pe.mmap_va)(l_0_0, 4)
-if (string.sub)(l_0_1, 1, 4) == "(re)" then
-  (mp.changedetectionname)(805306430)
+do
+  return mp.CLEAN
 end
-return mp.INFECTED
 

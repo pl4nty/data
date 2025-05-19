@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:TrojanDropper:Win32/Jacard!MTB") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("ValidDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

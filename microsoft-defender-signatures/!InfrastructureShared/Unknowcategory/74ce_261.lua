@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
-  return mp.CLEAN
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((bm.get_current_process_startup_info)()).integrity_level then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("PUA:Block:BrowseFox")
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,30 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.exe = ""
-l_0_0.cmd = ""
-l_0_0.bat = ""
-l_0_0.com = ""
-l_0_0.pif = ""
-l_0_0.scr = ""
-local l_0_1 = {}
-l_0_1.ms = ""
-l_0_1.cc = ""
-local l_0_2 = nil
-if (this_sigattrlog[1]).matched then
-  l_0_2 = (string.lower)((this_sigattrlog[1]).utf8p1)
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  end
-end
 do
-  if l_0_2 ~= nil then
-    local l_0_3 = l_0_2:match("([^\\]-([^%.]+))$")
-    if l_0_0[l_0_2] and l_0_1[l_0_3:sub(1, 2)] then
-      return mp.INFECTED
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.getfilesize)() >= 339968 and (mp.getfilesize)() < 368640 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

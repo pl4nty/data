@@ -3,18 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if not l_0_0 then
-  return mp.CLEAN
-end
-l_0_0 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-if not l_0_0 then
-  return mp.CLEAN
-end
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  if l_0_5 and (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, false, false) then
-    (bm.add_related_file)(l_0_5)
+do
+  if (mp.get_mpattribute)("RPF:SmartAssembly") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+    local l_0_0 = (pe.get_versioninfo)()
+    if l_0_0 ~= nil and (string.find)((string.lower)(l_0_0.InternalName), "luckyleap", 1, true) then
+      (mp.set_mpattribute)("Trojan:Win32/LuckyLeap")
+    end
   end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

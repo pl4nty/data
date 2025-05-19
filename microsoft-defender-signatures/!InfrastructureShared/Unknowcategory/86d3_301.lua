@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_boundimport") and (mp.getfilesize)() >= 1814528 and (mp.getfilesize)() < 1855488 then
+do
+  if (versioning.GetEngineBuild)() >= 16700 then
+    local l_0_0 = (versioning.GetOrgID)()
+    if l_0_0 and (string.lower)(l_0_0) == "d7c7c745-195f-4223-9c7a-99fb420fd000" then
+      return mp.CLEAN
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

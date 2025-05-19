@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pehdr.ImageBase + (pesecs[1]).VirtualAddress
-local l_0_1 = (pe.mmap_va)(l_0_0, 4)
-if (string.sub)(l_0_1, 1, 4) == "(re)" then
-  (mp.changedetectionname)(805306418)
+local l_0_0 = pevars.sigaddr
+local l_0_1 = (pe.mmap_va)(l_0_0 + 2287, 32)
+if (mp.readu_u32)(l_0_1, 1) ~= 1935939071 or (mp.readu_u32)(l_0_1, 5) ~= 3277652040 or (mp.readu_u16)(l_0_1, 9) == 52428 or (mp.readu_u32)(l_0_1, 11) == 3435973836 or (mp.readu_u32)(l_0_1, 15) == 3435973836 or (mp.readu_u32)(l_0_1, 18) == 3435973836 or (mp.readu_u32)(l_0_1, 22) ~= 1098924136 then
+  (mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Autoit!obfuscated")
+  return mp.CLEAN
 end
-if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3898037843 and (mp.readu_u32)(epcode, 13) == 4278738315 and (mp.readu_u32)(epcode, 17) == 1703089267 and (mp.readu_u16)(epcode, 21) == 252 then
-  (mp.changedetectionname)(805306418)
-end
-return mp.INFECTED
+return mp.SUSPICIOUS
 

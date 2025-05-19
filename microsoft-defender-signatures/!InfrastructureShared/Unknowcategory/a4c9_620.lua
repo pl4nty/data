@@ -3,24 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-local l_0_1 = (bm.get_imagepath)()
-if l_0_1 ~= nil then
-  l_0_1 = (string.lower)(l_0_1)
-  if (l_0_1.find)(l_0_1, "\\windows\\system32\\", 1, true) ~= nil then
-    return mp.CLEAN
+if (mp.ispackedwith)("AutoHotKey_+") then
+  return mp.CLEAN
+end
+if ((mp.ispackedwith)("AutoIt_+") or (mp.get_mpattributesubstring)("Win32/AutoIt") or (mp.get_mpattributesubstring)("PESTATIC:cleanstub_autoitv")) and (hstrlog[1]).matched then
+  local l_0_0 = ((hstrlog[1]).match_offsets)[1]
+  local l_0_1 = (hstrlog[1]).VA + l_0_0
+  if (mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1) ~= 557012289 then
+    return mp.INFECTED
   end
 end
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_2 = (this_sigattrlog[1]).utf8p2
-    if (sysio.IsFileExists)(l_0_2) then
-      (bm.add_related_file)(l_0_2)
-    end
-  end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

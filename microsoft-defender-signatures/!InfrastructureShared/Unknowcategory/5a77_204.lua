@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:GMiner")
+;
+(mp.set_mpattribute)("Company:CoinMiner64:DevelSoftware")
+return mp.INFECTED
 

@@ -3,20 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC8: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (hstrlog[3]).matched then
-    local l_0_0, l_0_1, l_0_2 = nil
-  else
-  end
-  if (hstrlog[4]).matched then
-    do return mp.CLEAN end
-    local l_0_3 = nil
-    if (mp.readu_u32)((pe.mmap_va)((hstrlog[4]).VA - 4, 4), 1) >= 24576 and (mp.readu_u32)((pe.mmap_va)((hstrlog[4]).VA - 4, 4), 1) < 28672 then
-      return mp.INFECTED
+  if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.getfilesize)() < 4096 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
-    return mp.CLEAN
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

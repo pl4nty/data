@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("%-%>.%d%d%d%d%d%d%d%d%d%d+/.%d%d%d%d%d%d%d%d%d%d+%.class$") ~= nil and (mp.getfilesize)() <= 2048 then
+  (mp.set_mpattribute)("Lua:Java/MaliciousClassName")
 end
 return mp.INFECTED
 

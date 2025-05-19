@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
-  l_0_0 = (MpCommon.PathToWin32Path)((string.lower)((this_sigattrlog[10]).utf8p1))
-end
-if (mp.IsKnownFriendlyFile)(l_0_0, true, false) then
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if l_0_0 ~= nil and (string.find)(l_0_0, "\\msbuild.exe", 1, true) then
+      (bm.add_action)("EmsScan", 5000)
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-return mp.INFECTED
 

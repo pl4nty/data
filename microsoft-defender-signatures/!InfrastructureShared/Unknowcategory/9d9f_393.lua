@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_6.image_path, 13)) == "\\sqlservr.exe" then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->(Ole Stream", -18, true) == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (mp.BMSearchFile)(7, 5, "ÎG\n\001\005\144\000")
+if l_0_1 ~= 0 then
+  return mp.CLEAN
+end
+;
+(mp.UfsSetMetadataBool)("OleShellCode", true)
+return mp.INFECTED
 

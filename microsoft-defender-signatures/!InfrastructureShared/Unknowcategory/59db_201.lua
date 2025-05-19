@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 16 and (mp.getfilesize)() < 2097152 then
+if peattributes.x86_image and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

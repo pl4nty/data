@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 3, "\235")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "\235")
-return mp.INFECTED
+if (string.match)((string.lower)((mp.getfilename)()), "%.c$") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

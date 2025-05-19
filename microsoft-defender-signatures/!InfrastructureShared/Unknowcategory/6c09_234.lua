@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() < 15000 then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "xl/drawings/_rels/drawing1.xml.rels") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

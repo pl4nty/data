@@ -10,6 +10,6 @@ end
 ;
 (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
 ;
-(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 10000)
+(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 3000)
 return mp.INFECTED
 

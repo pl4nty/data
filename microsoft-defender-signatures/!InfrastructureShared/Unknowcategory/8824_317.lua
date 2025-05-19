@@ -3,10 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".rsrc" and (mp.bitand)((pesecs[4]).Characteristics, 3221487648) == 3221487648 then
+if peattributes.isdll and (mp.get_mpattribute)("RPF:UrsnifDLL") then
+  if peattributes.amd64_image then
+    (mp.changedetectionname)(805306417)
+    return mp.INFECTED
+  end
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Win32/Nabucur.01")
 return mp.CLEAN
 

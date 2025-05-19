@@ -3,25 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
+if (this_sigattrlog[1]).matched == false then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == "" or l_0_1 == nil then
+local l_0_0 = (this_sigattrlog[1]).ppid
+local l_0_1, l_0_2 = (bm.get_process_relationships)(l_0_0)
+if l_0_1 == nil or #l_0_1 < 1 then
   return mp.CLEAN
 end
-local l_0_2 = ""
-if (string.sub)(l_0_1, -1) == "\"" then
-  l_0_2 = (string.match)(l_0_1, " (\"[^\"]+\")[%s]*$")
-else
-  l_0_2 = (string.match)(l_0_1, " (%S+)[%s]*$")
+local l_0_3 = nil
+for l_0_7,l_0_8 in ipairs(l_0_1) do
+  if (mp.bitand)(l_0_8.reason_ex, 1) == 1 and (string.len)(l_0_8.image_path) > 15 and (string.sub)(l_0_8.image_path, -15) == "\\powershell.exe" then
+    l_0_3 = l_0_8.ppid
+    ;
+    (bm.add_related_process)(l_0_8.ppid)
+    break
+  end
 end
-if l_0_2 == "" or l_0_2 == nil then
-  return mp.CLEAN
+do
+  if l_0_3 == nil then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
-if not (MpCommon.QueryPersistContext)(l_0_2, "DroppedByBitsadmin") then
-  (MpCommon.AppendPersistContext)(l_0_2, "DroppedByBitsadmin", 0)
-end
-return mp.INFECTED
 

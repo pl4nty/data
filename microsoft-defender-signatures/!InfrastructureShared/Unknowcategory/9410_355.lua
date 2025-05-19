@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-for l_0_6,l_0_7 in ipairs(l_0_0) do
-  l_0_2 = l_0_7.image_path
-  if l_0_2 ~= nil then
-    l_0_2 = (string.lower)(l_0_2)
-    if l_0_2:find("excel.exe") or l_0_2:find("word.exe") then
-      return mp.INFECTED
-    end
+if (string.lower)(((pe.get_versioninfo)()).CompanyName) == "project: sakura-editor" then
+  return mp.INFECTED
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
   end
 end
 return mp.CLEAN

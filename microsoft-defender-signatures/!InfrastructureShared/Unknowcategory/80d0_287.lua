@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.AddressOfEntryPoint == 90675 and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "\bu", 1, true), "êê")
+return mp.INFECTED
 

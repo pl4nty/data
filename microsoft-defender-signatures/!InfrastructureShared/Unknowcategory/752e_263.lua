@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (l_0_0 >= 315392 and l_0_0 <= 327680) or l_0_0 >= 405504 and l_0_0 <= 466944 then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 and (string.find)((string.lower)(l_0_0), "\\edge\\", 1, true) == nil then
   return mp.INFECTED
 end
 return mp.CLEAN

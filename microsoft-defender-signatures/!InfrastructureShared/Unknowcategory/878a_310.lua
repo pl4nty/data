@@ -3,11 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
-  return mp.CLEAN
+local l_0_0 = {}
+l_0_0.cert = "unk"
+local l_0_1 = (nri.GetRawSSLCertificate)()
+if l_0_1 then
+  l_0_1 = (MpCommon.Base64Encode)(l_0_1)
+  if l_0_1 then
+    local l_0_2 = {}
+    l_0_2.cert = l_0_1
+    l_0_0 = l_0_2
+  end
 end
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
+do
+  ;
+  (nri.AddTelemetry)(nri.Telemetry_HOSTNAME, l_0_0)
   return mp.INFECTED
 end
-return mp.CLEAN
 

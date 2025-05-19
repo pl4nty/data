@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 28672 and l_0_0 < 40960 and pehdr.NumberOfSections == 1 and (pesecs[pevars.epsec]).Name == ".text" then
+if not peattributes.no_resources and (pe.contains_va)(3, (hstrlog[1]).VA) and (pesecs[3]).Name == ".data" then
   return mp.INFECTED
 end
 return mp.CLEAN

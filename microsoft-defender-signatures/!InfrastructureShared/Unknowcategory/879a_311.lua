@@ -3,12 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr, "ÇE\240\001\000\000\000")
+(pe.mmap_patch_va)(pevars.sigaddr + 15, "")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\144")
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "é")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 17, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 27, "")
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

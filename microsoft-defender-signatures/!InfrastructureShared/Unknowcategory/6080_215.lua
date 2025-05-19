@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("InEmail") then
-  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if not peattributes.dt_error_heur_API_limit then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

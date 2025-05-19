@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "\\program files", 1, true) ~= nil and (string.find)(l_0_0, "\\malwarebytes", 1, true) ~= nil then
-    return mp.CLEAN
-  end
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.INFECTED
+if (pe.get_exports)() ~= 1 then
+  return mp.CLEAN
+end
+if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "InitiateTheAttack" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+if not peattributes.hasexports and pehdr.SizeOfImage == 2351104 and pehdr.SizeOfCode == 57344 and pehdr.AddressOfEntryPoint == 14780 then
   return mp.INFECTED
-else
-  if (hstrlog[1]).matched then
-    (mp.set_mpattribute)("HSTR:Trojan:Win32/Sefnit.AU")
-    return mp.LOWFI
-  end
 end
 return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((pehdr.DataDirectory)[1]).Size < 256 then
-  return mp.INFECTED
+if peattributes.is_process == false and peattributes.x86_image == true then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

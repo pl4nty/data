@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 10 and (pesecs[8]).Name == ".crt1" then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.SUSPICIOUS
 end
+;
+(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOV")
 return mp.CLEAN
 

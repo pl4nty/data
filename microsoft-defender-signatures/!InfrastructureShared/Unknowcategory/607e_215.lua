@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:ASPXExt") or (mp.get_mpattribute)("Lua:ASPExt") then
+if peattributes.ismsil == true and (peattributes.isexe == true or peattributes.isdll == true) then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

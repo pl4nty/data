@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:FakeApp.N")
+  (mp.set_mpattribute)("PUA:Block:Conduit.A")
   return mp.INFECTED
 end
 return mp.LOWFI

@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:FileSizeLE80000.A") and (mp.get_mpattribute)("Lua:FileSizeGEC350") and (mp.get_mpattribute)("MpHasExpensiveLoop") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.get_mpattribute)("LUA:OverlaySize_0xd30_to_0xd40") then
-  return mp.INFECTED
+do
+  if peattributes.isexe == true and (pesecs[6]).Name == "dv1171" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

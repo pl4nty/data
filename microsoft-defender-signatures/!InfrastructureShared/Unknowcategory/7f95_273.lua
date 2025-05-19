@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_AMSI and peattributes.no_security == true then
+if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

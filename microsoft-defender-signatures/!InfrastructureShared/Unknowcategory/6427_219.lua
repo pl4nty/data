@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and pehdr.NumberOfSections == 3 then
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Genieo.M!xp")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "word/_rels/settings.xml.rels") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

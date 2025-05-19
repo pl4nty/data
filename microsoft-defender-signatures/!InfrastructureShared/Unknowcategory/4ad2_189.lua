@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
+if peattributes.isexe and peattributes.is_delphi then
   return mp.INFECTED
 end
 return mp.CLEAN

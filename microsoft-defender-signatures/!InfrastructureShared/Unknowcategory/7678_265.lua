@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1048000 and pehdr.NumberOfSections <= 5 and (pesecs[5]).Name == "" then
+if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%l%l%l%l%l%l%l%l.exe") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

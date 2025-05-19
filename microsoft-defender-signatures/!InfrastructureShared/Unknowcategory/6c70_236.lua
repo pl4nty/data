@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".zip#**." and (pesecs[5]).Name == ".zip#**." and (pesecs[6]).Name == ".zip#**." then
+if peattributes.isdll and peattributes.hasexports and (mp.getfilesize)() < 142000 then
   return mp.INFECTED
 end
 return mp.CLEAN

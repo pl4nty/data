@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or not (mp.get_mpattribute)("pea_hasexports") then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if (mp.getfilesize)() > 2097152 then
-  return mp.CLEAN
-end
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+;
+(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 3000)
 return mp.INFECTED
 

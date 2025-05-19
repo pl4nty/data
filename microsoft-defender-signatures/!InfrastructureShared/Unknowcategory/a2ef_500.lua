@@ -3,8 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.suspicious_dosheader == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true and peattributes.hasappendeddata == true then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("pea_isdriver") then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_0:find("system32", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

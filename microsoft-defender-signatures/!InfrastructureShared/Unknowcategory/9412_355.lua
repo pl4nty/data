@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).VirtualSize == 8192 and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3221225472) == 3221225472 and (mp.bitand)((pesecs[pehdr.NumberOfSections - 1]).Characteristics, 3221225472) == 3221225472 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = nil
+for l_0_6,l_0_7 in ipairs(l_0_0) do
+  l_0_2 = l_0_7.image_path
+  if l_0_2 ~= nil then
+    l_0_2 = (string.lower)(l_0_2)
+    if l_0_2:find("excel.exe") or l_0_2:find("word.exe") then
+      return mp.INFECTED
+    end
+  end
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-do
-  if ((pe.get_versioninfo)()).Comments == "Web Browser Password Viewer" and peattributes.ismsil == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+if mp.HSTR_WEIGHT >= 100 then
+  return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT >= 10 and mp.HSTR_WEIGHT < 50 then
+    (mp.changedetectionname)(805306522)
     return mp.INFECTED
+  else
+    if mp.HSTR_WEIGHT > 1 then
+      (mp.set_mpattribute)("SLF:Ransom:Win32/Wadhrama.A")
+    end
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

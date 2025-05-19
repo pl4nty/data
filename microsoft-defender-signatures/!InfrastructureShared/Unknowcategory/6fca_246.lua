@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Bayads")
-if (mp.get_mpattribute)("//HSTR:Win32/Bayads!Exc") then
-  return mp.CLEAN
+if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

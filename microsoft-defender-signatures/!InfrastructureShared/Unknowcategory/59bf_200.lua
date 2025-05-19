@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.has_msilresources then
+if (mp.get_mpattribute)("NID:ALF:INTL:Trojan:Win32/Multiverze") then
   return mp.INFECTED
 end
 return mp.CLEAN

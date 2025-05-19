@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((mp.getfilename)(mp.FILEPATH_QUERY_FULL)):lower()
-if not l_0_0:find("assets/", 1, true) then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pe.get_exports)() >= 10 then
+  return mp.CLEAN
+end
+return mp.LOWFI
 

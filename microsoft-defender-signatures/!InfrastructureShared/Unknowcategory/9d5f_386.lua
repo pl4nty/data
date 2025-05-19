@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) then
-  if pehdr.SizeOfImage > 327680 and pehdr.SizeOfImage < 1048576 then
-    (mp.changedetectionname)(805306419)
-    return mp.INFECTED
-  else
-    return mp.SUSPICIOUS
-  end
+if ((((((this_sigattrlog[3]).matched and not (this_sigattrlog[1]).matched) or (this_sigattrlog[4]).matched) and not (this_sigattrlog[2]).matched) or (this_sigattrlog[5]).matched) and not (this_sigattrlog[6]).matched) or 0 + 1 + 1 + 1 + 1 + 1 + 1 >= 4 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

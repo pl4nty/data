@@ -4,11 +4,14 @@
 -- params : ...
 -- function num : 0
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-    if (string.find)(l_0_0, "hidden", 1, true) and (string.find)(l_0_0, "iex", 1, true) and (string.find)(l_0_0, "text.encoding", 1, true) then
-      return mp.INFECTED
+  if peattributes.isdll == true and (mp.getfilesize)() < 663042 and peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.has_msilresources then
+if peattributes.ismsil and (mp.getfilesize)() <= 393216 then
   return mp.INFECTED
 end
 return mp.CLEAN

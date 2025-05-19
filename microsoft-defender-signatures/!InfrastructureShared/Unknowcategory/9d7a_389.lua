@@ -4,15 +4,19 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["winword.exe"] = true
+  l_0_3["excel.exe"] = true
+  l_0_3["powerpnt.exe"] = true
+  l_0_3["outlook.exe"] = true
+  if l_0_3[l_0_2] then
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
-if l_0_1 ~= "wmiprvse.exe" or l_0_1 == "services.exe" then
-  return mp.CLEAN
-end
-if (versioning.GetLocaleIdentifier)() == 1049 then
-  return mp.LOWFI
-end
-return mp.CLEAN
 

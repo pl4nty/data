@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (mp.GetProcessCommandLine)(l_0_0.ppid)
-    if (string.find)(l_0_1, " --headless ", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if peattributes.isexe and pehdr.SizeOfImage >= 217088 and pehdr.SizeOfImage <= 393216 then
+  (mp.set_mpattribute)("Obf:Nivdort.S1")
+  return mp.SUSPICIOUS
 end
+return mp.LOWFI
 

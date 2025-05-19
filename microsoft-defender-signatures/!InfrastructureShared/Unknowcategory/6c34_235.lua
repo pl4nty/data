@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:[FunctionPacked]") and (mp.get_mpattribute)("SCRIPT:base64") then
+if peattributes.isexe == true and (mp.getfilesize)() > 197000 and (mp.getfilesize)() < 198000 then
   return mp.INFECTED
 end
 return mp.CLEAN

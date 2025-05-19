@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
-if (string.find)(l_0_0, "document.xml") ~= nil then
-  return mp.INFECTED
+if not (hstrlog[4]).matched then
+  (mp.set_mpattribute)("HSTR:TrojanDownloader:Win32/Banload.gen!B.encryption_filtered")
 end
-return mp.CLEAN
+return mp.INFECTED
 

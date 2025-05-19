@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and (mp.get_mpattribute)("pea_headerchecksum0") and pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("Lua:OverSizedLnkFile") then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "wzunzip%.exe") or (string.find)(l_0_0, "wzcline40%-64%.exe") or (string.find)(l_0_0, "wzcline40%-32%.exe") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

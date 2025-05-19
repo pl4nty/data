@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  if l_0_2 == "powershell.exe" or (string.find)(l_0_2, "^%d+%.exe") then
+    local l_0_3 = (mp.GetScannedPPID)()
+    if l_0_3 == nil then
+      return mp.CLEAN
+    end
+    ;
+    (MpCommon.RequestSmsOnProcess)(l_0_3, MpCommon.SMS_SCAN_LOW)
+    return mp.INFECTED
+  end
 end
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = (string.lower)((this_sigattrlog[2]).p1)
-    if (string.find)(l_0_0, "data source=%w%w[%w%.%-]+") and (string.find)(l_0_0, "user id=%p?%w...+;") and (string.find)(l_0_0, "password=%p?%w%w%w.+") then
-      return mp.INFECTED
-    end
-  end
   return mp.CLEAN
 end
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "workbook.bin", 1, true) ~= nil then
-  return mp.INFECTED
+if peattributes.x64_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

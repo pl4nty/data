@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = "×ÀÒººÂÜÍ\000\000\000\000\000\000\000\000×ÀÒÏÊÌÀæ\000\000\000\000\000\000\000\000×ÀÒÞÕÍÅÅÂÈ\000\000\000\000\000\000ßþäåÚòÙÛ÷¾\000\000\000\000\000\000¬ô\255éä¯¬ö¤\aù÷óå\218\000\144\000"
 do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" and (versioning.IsSeville)() then
-      return mp.LOWFI
-    end
+  if (mp.getfilesize)() > 50331648 then
+    local l_0_1 = 50331648
+  end
+  -- DECOMPILER ERROR at PC10: Confused about usage of register: R1 in 'UnsetPending'
+
+  if (mp.BMSearchFile)(0, l_0_1, l_0_0) ~= -1 then
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

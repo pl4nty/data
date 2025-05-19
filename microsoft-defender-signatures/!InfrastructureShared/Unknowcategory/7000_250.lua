@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.amd64_image then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 49152 and l_0_0 <= 57344 and (mp.get_mpattribute)("NID:Win64/Atosev.PA!MTB") then
+  return mp.INFECTED
 end
-if not peattributes.enable_vmm_grow then
-  (pe.set_peattribute)("enable_vmm_grow", true)
-end
-return mp.INFECTED
+return mp.CLEAN
 

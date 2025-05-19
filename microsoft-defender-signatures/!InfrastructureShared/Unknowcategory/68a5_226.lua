@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(bm.trigger_sig_self_propagate)("SuspHHChildProcessLaunch", "Behavior:Win32/SuspHHProcessCreate.A!dha")
+return mp.INFECTED
 

@@ -3,12 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "firefox", 1, true) or (string.find)(l_0_0, "backup", 1, true) or (string.find)(l_0_0, "sync", 1, true) or (string.find)(l_0_0, "waterfox", 1, true) then
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
   return mp.CLEAN
 end
-return mp.INFECTED
+if (string.sub)(l_0_1, -5, -1) == ",XS88" or (string.sub)(l_0_1, -6, -1) == ", XS88" then
+  if l_0_0 ~= nil then
+    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

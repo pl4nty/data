@@ -3,16 +3,20 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if peattributes.isdll == true and peattributes.hasexports == false and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC10: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_3 = nil
+  if l_0_3 == nil or (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_0), true, false) then
+    return mp.CLEAN
+  end
+  ;
+  (bm.add_threat_file)(l_0_3)
+  return mp.INFECTED
 end
 

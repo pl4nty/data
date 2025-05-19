@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("NID:Trojan:MSIL/AgentTesla") then
+if pehdr.NumberOfSections == 9 and (mp.get_mpattribute)("TELPER:QQBrowser") then
   return mp.INFECTED
 end
 return mp.CLEAN

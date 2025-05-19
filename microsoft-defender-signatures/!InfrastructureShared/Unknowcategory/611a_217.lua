@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 7 and (mp.getfilesize)() >= 5844992 then
+if (mp.getfilesize)() <= 256 and (mp.get_mpattribute)("InEmail") then
   return mp.INFECTED
 end
 return mp.CLEAN

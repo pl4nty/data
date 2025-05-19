@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win64/Trickbot.PA!Pra1") then
+if peattributes.isexe == true and (pehdr.NumberOfSections == 3 or pehdr.NumberOfSections == 4) then
   return mp.INFECTED
 end
 return mp.CLEAN

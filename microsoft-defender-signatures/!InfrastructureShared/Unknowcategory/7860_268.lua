@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "->%(mof%d+%)") then
-  (mp.set_mpattribute)("MofPackedScript")
+if peattributes.no_security == true and (mp.getfilesize)() > 1000000 and (mp.getfilesize)() < 4000000 and peattributes.isexe == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

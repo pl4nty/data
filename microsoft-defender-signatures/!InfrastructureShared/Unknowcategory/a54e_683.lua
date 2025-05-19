@@ -3,32 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "(.+\\)"
-local l_0_1, l_0_2 = nil, nil
-if (this_sigattrlog[1]).matched then
-  l_0_2 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
+do
+  if not (mp.get_mpattribute)("attrmatch_rescan_notmyapp") then
+    local l_0_0 = pe.query_import
+    if l_0_0(pe.IMPORT_STATIC, 4288984855) == 0 then
+      return mp.CLEAN
     end
-  end
-end
-if (this_sigattrlog[4]).matched then
-  l_0_1 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[5]).matched then
-    l_0_1 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[6]).matched then
-      l_0_1 = (string.match)((string.lower)((this_sigattrlog[6]).utf8p1), l_0_0)
+    if l_0_0(pe.IMPORT_STATIC, 3419395426) == 0 and l_0_0(pe.IMPORT_STATIC, 1058758707) == 0 then
+      return mp.CLEAN
     end
+    if l_0_0(pe.IMPORT_STATIC, 1881577768) == 0 then
+      return mp.CLEAN
+    end
+    if l_0_0(pe.IMPORT_STATIC, 2560256095) == 0 then
+      return mp.CLEAN
+    end
+    if l_0_0(pe.IMPORT_STATIC, 1256947212) == 0 then
+      return mp.CLEAN
+    end
+    if l_0_0(pe.IMPORT_STATIC, 453198482) == 0 then
+      return mp.CLEAN
+    end
+    if l_0_0(pe.IMPORT_STATIC, 133826329) == 0 then
+      return mp.CLEAN
+    end
+    ;
+    (mp.set_mpattribute)("attrmatch_rescan_notmyapp")
+    ;
+    (pe.reemulate)()
   end
-end
-if l_0_1 ~= nil and l_0_1 == l_0_2 then
   return mp.INFECTED
 end
-return mp.CLEAN
 

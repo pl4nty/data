@@ -3,17 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\dllhost.exe", 1, true) then
-    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-    local l_0_9 = tonumber(l_0_7)
-    local l_0_10 = tonumber(l_0_8)
-    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
-    ;
-    (mp.TriggerScanResource)("ems", l_0_13)
-  end
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
+  return mp.CLEAN
 end
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+  return mp.CLEAN
+end
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\184\028\024\127N\144")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

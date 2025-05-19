@@ -3,22 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\python", 1, true) then
+    return mp.INFECTED
+  end
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\microsoft vs code\\", 1, true) or (string.find)(l_0_0, "microsoft.watson", 1, true) or (string.find)(l_0_0, "mpsigstub.exe", 1, true) or (string.find)(l_0_0, "virtualboxvm.exe", 1, true) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1500000 or l_0_0 < 8000 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("system32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("syswow64", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

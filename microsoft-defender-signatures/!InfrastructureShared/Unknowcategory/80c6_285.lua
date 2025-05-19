@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 3 and peattributes.epinfirstsect and (pesecs[pehdr.NumberOfSections]).Name == ".rsrc" then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 4096 and l_0_0 <= 16384 and peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
   return mp.INFECTED
 end
 return mp.CLEAN

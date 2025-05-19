@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.hasexports and pehdr.SizeOfImage == 2351104 and pehdr.SizeOfCode == 57344 and pehdr.AddressOfEntryPoint == 14780 then
+if epcode[1] == 139 and epcode[2] == 255 and peattributes.isdll == true and peattributes.hasexports == false and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

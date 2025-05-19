@@ -3,19 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.match)(l_0_0, "bypass.+hidden.+%-c%s*if%s*%(.+%)%s*%{.+net%.webclient.+downloadstring.+http.+|%s*iex%s*%}%s*else%s*%{.+net%.webclient.+downloadstring.+http.+|%s*iex%s*%}") ~= nil then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+if (l_0_0 == nil and l_0_0:len() < 12) or l_0_1 == nil then
+  return mp.CLEAN
 end
+if not l_0_1:find(">word/_rels/", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:sub(-9) == ".xml.rels" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

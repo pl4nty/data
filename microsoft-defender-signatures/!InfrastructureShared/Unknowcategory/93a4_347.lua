@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 18, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if peattributes.isexe == true and (pesecs[4]).Name == ".rsrc" and (pesecs[4]).Characteristics == 1073741888 and (mp.getfilesize)() >= 1000000 and (mp.getfilesize)() <= 5000000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

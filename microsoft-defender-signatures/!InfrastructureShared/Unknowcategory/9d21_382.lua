@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.hasexports == true and (pesecs[4]).Name == ".fptable" and (pesecs[4]).Characteristics == 3221225536 and (mp.getfilesize)() >= 5000000 and (mp.getfilesize)() <= 20000000 then
+  return mp.INFECTED
 end
-if l_0_0:find("\\trend micro\\", 1, true) or l_0_0:find("\\smex_master.exe", 1, true) or l_0_0:find("\\windows\\ccm\\ccmexec.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

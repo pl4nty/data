@@ -3,23 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
-  return mp.CLEAN
-end
-if peattributes.isdriver then
-  return mp.CLEAN
-end
-if peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
+(mp.readprotection)(false)
+if (mp.getfilesize)() > 155652 then
+  local l_0_0 = (mp.readfile)(155648, 4)
+  local l_0_1 = (mp.readu_u16)(l_0_0, 1)
+  if l_0_1 == 23117 then
+    (mp.set_mpattribute)("LobaostInfected")
+    return mp.INFECTED
   end
 end
-if peattributes.isexe then
+do
+  ;
+  (mp.set_mpattribute)("LobaostOriginal")
   return mp.INFECTED
 end
-return mp.CLEAN
 

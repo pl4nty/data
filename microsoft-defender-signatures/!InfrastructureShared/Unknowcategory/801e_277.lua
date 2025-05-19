@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 ~= nil and mp.HSTR_CALLER_SMS == l_0_0 then
-  return mp.INFECTED
-end
-if peattributes.isdll and peattributes.ismsil then
+if peattributes.isexe and peattributes.x86_image and peattributes.suspicious_dosheader and peattributes.suspicious_image_version then
   return mp.INFECTED
 end
 return mp.CLEAN

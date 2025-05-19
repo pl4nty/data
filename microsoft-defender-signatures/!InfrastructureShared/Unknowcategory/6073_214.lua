@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilename)()):sub(-28) == "word/_rels/document.xml.rels" then
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Zako.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

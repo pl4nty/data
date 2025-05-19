@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC27: Unhandled construct in 'MakeBoolean' P3
-
-if (peattributes.amd64_image and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096448) or (pesecs[pehdr.NumberOfSections]).Characteristics == 3761242176 then
-  return mp.INFECTED
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or (mp.getfilesize)() > 1048576 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pe.get_exports_count)() > 2 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

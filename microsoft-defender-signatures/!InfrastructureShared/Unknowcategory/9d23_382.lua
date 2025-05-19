@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 917504 and l_0_0 <= 958464 and pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 6 and (mp.get_mpattribute)("NID:GerWiper.A!Pra1") then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if l_0_0:find("\\trend micro\\", 1, true) or l_0_0:find("\\smex_master.exe", 1, true) or l_0_0:find("\\windows\\ccm\\ccmexec.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

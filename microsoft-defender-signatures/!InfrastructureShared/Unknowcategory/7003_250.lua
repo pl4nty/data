@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if peattributes.isexe == true then
+if mp.HSTR_WEIGHT == 3 then
   return mp.INFECTED
 end
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
 return mp.CLEAN
 

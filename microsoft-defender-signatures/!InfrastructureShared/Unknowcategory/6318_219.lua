@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and pehdr.NumberOfSections == 3 then
+if (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() < 7168 then
   return mp.INFECTED
 end
 return mp.CLEAN

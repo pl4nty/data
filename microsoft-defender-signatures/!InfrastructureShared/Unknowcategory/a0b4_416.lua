@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 12000000000 then
+if (pe.get_regval)(pe.REG_EBX) ~= 2147348480 then
   return mp.CLEAN
 end
-local l_0_0 = nil
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-  l_0_0 = (this_sigattrlog[4]).utf8p2
+if (string.byte)((pe.mmap_va)(pevars.sigaddr + 13, 1)) == 117 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 13, "êê")
+else
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 13, "\235")
 end
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-;
-(bm.add_related_string)("ProcessCreateParam", l_0_0, bm.RelatedStringBMReport)
 return mp.INFECTED
 

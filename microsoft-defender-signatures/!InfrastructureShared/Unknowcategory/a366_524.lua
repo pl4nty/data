@@ -3,24 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_2 = nil
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = "|.doc|docx|docm|dotx|dotm|docb"
-  end
-  if l_0_2 ~= nil then
-    local l_0_3 = nil
-    for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
-      local l_0_4 = nil
-      -- DECOMPILER ERROR at PC26: Confused about usage of register: R7 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R7_PC26) and (string.find)(l_0_3, (string.sub)(R7_PC26, -4), 1, true) then
-        (bm.add_related_file)(R7_PC26)
-      end
-    end
-  end
-  do
-    return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+local l_0_0 = {}
+l_0_0.SUUAFindUser = ""
+l_0_0.SUUAGetAttribute = ""
+l_0_0.SUUASetAttribute = ""
+l_0_0.SUUAEnumDirAccess = ""
+local l_0_1 = 0
+local l_0_2, l_0_3 = (pe.get_exports)()
+if l_0_2 < 4 then
+  return mp.CLEAN
+end
+for l_0_7 = 1, l_0_2 do
+  if l_0_0[(pe.mmap_string_rva)((l_0_3[l_0_7]).namerva, 64)] then
+    l_0_1 = l_0_1 + 1
   end
 end
+if l_0_1 == 4 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

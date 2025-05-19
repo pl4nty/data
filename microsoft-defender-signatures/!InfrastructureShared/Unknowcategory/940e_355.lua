@@ -3,14 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)(((pe.get_versioninfo)()).CompanyName) == "project: sakura-editor" then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 == nil or l_0_0 > 500 then
+  return mp.CLEAN
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
+if headerpage == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetBruteMatchData)()
+if l_0_1 == nil or l_0_1.match_offset == nil then
+  return mp.CLEAN
+end
+if l_0_0 - 12 <= l_0_1.match_offset and headerpage[l_0_0] == 0 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

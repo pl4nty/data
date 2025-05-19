@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if peattributes.ismsil and peattributes.isexe then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if (this_sigattrlog[3]).matched then
+    local l_0_0 = nil
+    -- DECOMPILER ERROR at PC16: Overwrote pending register: R1 in 'AssignReg'
+
+    if nil == ".cmd" then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

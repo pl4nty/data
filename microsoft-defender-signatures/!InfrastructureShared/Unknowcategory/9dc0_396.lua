@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (pesecs[6]).Name == ".?:9" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+(mp.readprotection)(false)
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+local l_0_1 = (mp.readfile)(l_0_0, 60)
+if (mp.crc32)(-1, l_0_1, 1, 60) ~= 2693178178 then
   return mp.CLEAN
 end
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1000 and (mp.get_mpattribute)("BM_TEXT_FILE") then
+if peattributes.isvbpcode == true and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

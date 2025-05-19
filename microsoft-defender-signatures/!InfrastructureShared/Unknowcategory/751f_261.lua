@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.nx_bit_set == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
-  return mp.INFECTED
+if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 2500000 or l_0_0 < 4000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

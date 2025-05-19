@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true and peattributes.hasexports == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = ""
+if (this_sigattrlog[1]).matched then
+  l_0_0 = (this_sigattrlog[1]).utf8p2
+end
+if l_0_0 ~= "" then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.find)(l_0_0, "maccount ", 1, true) and (string.find)(l_0_0, "dc ", 1, true) then
     return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

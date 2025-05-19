@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 1000219088) == 0 then
-  return mp.CLEAN
+if peattributes.isexe == true and peattributes.no_boundimport == true and peattributes.no_exports == true and peattributes.no_security == true then
+  return mp.INFECTED
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 1830286805) == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "androidmanifest", 1, true) then
+if peattributes.isdll == true and pehdr.AddressOfEntryPoint == 0 and peattributes.hasexports == true then
   return mp.INFECTED
 end
 return mp.CLEAN

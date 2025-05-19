@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not (hstrlog[2]).matched and not (hstrlog[3]).matched then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 65536 and l_0_0 <= 131072 and (mp.get_mpattribute)("NID:Buran.A!Pra1") then
+  return mp.INFECTED
 end
-if not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

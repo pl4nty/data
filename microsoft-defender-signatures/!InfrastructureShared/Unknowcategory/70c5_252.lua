@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security == false and peattributes.x86_image == false and peattributes.ismsil == false then
+if (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RF!MTB") or (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RG!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

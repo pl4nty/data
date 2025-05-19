@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 and (string.find)((string.lower)(l_0_0), "\\edge\\", 1, true) == nil then
+if (string.match)((string.sub)((sigattr_head[1]).p1, 2, 7), "%d+") then
   return mp.INFECTED
 end
 return mp.CLEAN

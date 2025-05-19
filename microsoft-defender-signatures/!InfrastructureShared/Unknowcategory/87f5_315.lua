@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (hstrlog[1]).hitcount > 2 then
-  return mp.INFECTED
+do
+  if peattributes.isdll == true and (mp.getfilesize)() < 60000 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-if (hstrlog[2]).matched and (hstrlog[2]).hitcount > 2 then
-  return mp.INFECTED
-end
-if (hstrlog[2]).matched and (hstrlog[1]).matched then
-  return mp.INFECTED
-end
-return mp.LOWFI
 

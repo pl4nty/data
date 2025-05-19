@@ -3,16 +3,20 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 7340032 and l_0_0 < 10485760 and (pe.query_import)(pe.IMPORT_STATIC, 660922497) ~= 0 then
-      if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-        (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-      end
-      return mp.INFECTED
-    end
-  end
+if not peattributes.isdll then
   return mp.CLEAN
 end
+if not peattributes.amd64_image then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+return mp.INFECTED
 

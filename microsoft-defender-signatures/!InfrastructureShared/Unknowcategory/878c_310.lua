@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\mmc.exe") then
+if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
   return mp.CLEAN
-else
-  if (string.find)(l_0_0, "\\officeclicktorun.exe") then
-    return mp.CLEAN
-  end
 end
-return mp.INFECTED
+if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

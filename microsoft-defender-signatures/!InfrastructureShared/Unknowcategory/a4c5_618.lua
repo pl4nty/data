@@ -3,25 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode or peattributes.isvbnative then
-  if (mp.getfilesize)() < 65536 then
-    if mp.HSTR_WEIGHT >= 9 then
-      if (hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched then
-        return mp.INFECTED
-      end
-      ;
-      (mp.set_mpattribute)("HSTR:Trojan:Win32/Rekilc.B_1")
-      return mp.CLEAN
-    else
-      ;
-      (mp.set_mpattribute)("HSTR:Trojan:Win32/Rekilc.B_2")
-      return mp.CLEAN
-    end
-  else
-    ;
-    (mp.set_mpattribute)("HSTR:Program:Win32/SoftwareClicker.B")
-    return mp.CLEAN
+if (bm.GetSignatureMatchDuration)() > 200000000 then
+  return mp.CLEAN
+end
+local l_0_0 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  l_0_0 = (this_sigattrlog[1]).utf8p2
+else
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    l_0_0 = (this_sigattrlog[2]).utf8p2
   end
 end
-return mp.CLEAN
+if l_0_0 == nil then
+  return mp.INFECTED
+end
+local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+  if (sysio.IsFileExists)(l_0_6) then
+    (bm.add_related_file)(l_0_6)
+  end
+end
+return mp.INFECTED
 

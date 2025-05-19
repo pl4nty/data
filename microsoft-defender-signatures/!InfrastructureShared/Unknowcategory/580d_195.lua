@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.executble_image then
-  return mp.INFECTED
+if (hstrlog[4]).matched then
+  (mp.changedetectionname)(805306398)
 end
-return mp.CLEAN
+return mp.INFECTED
 

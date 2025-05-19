@@ -3,15 +3,21 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (mp.getfilesize)()
 do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.get_mpattribute)("pea_no_uidata") and (mp.getfilesize)() >= 249856 and (mp.getfilesize)() < 282624 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if peattributes.ismsil == true and l_0_0 < 20480 then
+    local l_0_1 = (pe.get_versioninfo)()
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
+
+    if (l_0_1.OriginalFilename ~= nil and (l_0_1.OriginalFilename):lower() == "monitor.exe") or l_0_1.InternalName == nil or l_0_1.CompanyName == nil or l_0_1.FileDescription == nil or l_0_1.LegalTrademarks == nil or l_0_1.ProductName ~= nil and (l_0_1.ProductName):lower() == "monitor" then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

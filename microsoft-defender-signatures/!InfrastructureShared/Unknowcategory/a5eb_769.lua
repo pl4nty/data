@@ -11,10 +11,10 @@ end
 local l_0_2 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%"))
 if (l_0_0:find(l_0_2 .. "\\system32", 1, true) or l_0_0:find(l_0_2 .. "\\syswow64", 1, true)) and l_0_1 == "rundll32.exe" then
   if (this_sigattrlog[4]).matched then
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 3153487608)
+    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2471941984)
   else
     ;
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2865379549)
+    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 1925377452)
   end
   return mp.INFECTED
 end

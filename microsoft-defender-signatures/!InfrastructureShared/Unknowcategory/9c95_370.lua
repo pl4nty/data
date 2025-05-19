@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.match)(l_0_0, "extensions") ~= nil then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 454656 and l_0_0 > 356352 then
+  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched then
+    return mp.INFECTED
+  end
+  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[4]).matched then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

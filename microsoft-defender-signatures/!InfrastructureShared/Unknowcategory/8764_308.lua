@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isexe == true and (pesecs[2]).Name == ".managed" and (pesecs[2]).Characteristics == 1610612768 then
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+if peattributes.isdll and peattributes.hasexports then
   return mp.INFECTED
 end
 return mp.CLEAN

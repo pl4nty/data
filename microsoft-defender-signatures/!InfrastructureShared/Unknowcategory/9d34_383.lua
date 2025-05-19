@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 110592 and l_0_0 <= 131072 and pehdr.NumberOfSections == 6 and ((pesecs[1]).VirtualSize > 4096 or (pesecs[1]).VirtualSize < 8192) then
-  return mp.INFECTED
+local l_0_0 = (this_sigattrlog[5]).wp1
+for l_0_4 = mp.SIGATTR_LOG_SZ, 1, -1 do
+  if ((sigattr_tail[l_0_4]).attribute == 16384 or (sigattr_tail[l_0_4]).attribute == 16385) and (sigattr_tail[l_0_4]).wp1 == l_0_0 then
+    (bm.add_related_file)(l_0_0)
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

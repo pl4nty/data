@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 and (pesecs[1]).SizeOfRawData > 1245184 then
+if (pesecs[5]).Name == ".qtmetad" and (pesecs[5]).Characteristics == 1342177344 and (pesecs[6]).Name == ".qtmimed" and (pesecs[6]).Characteristics == 1342177344 then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

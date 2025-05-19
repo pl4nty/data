@@ -3,23 +3,24 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-    if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, false, true) then
-      (bm.request_SMS)(l_0_1.ppid, "l+")
-      ;
-      (bm.add_action)("SmsAsyncScanEvent", 1000)
-      ;
-      (bm.add_related_file)(l_0_6)
-    end
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 98304 then
   return mp.CLEAN
 end
+if l_0_0 < 40960 then
+  return mp.CLEAN
+end
+local l_0_1 = tostring(headerpage)
+if (string.find)(l_0_1, "\n", 1, true) ~= nil then
+  return mp.CLEAN
+end
+local l_0_2, l_0_3, l_0_4 = l_0_1:match("function%((%l%l%l%l%l%l+),(%l%l%l%l%l%l+),(%l%l%l%l%l%l+)[^%l]")
+local l_0_5 = #l_0_3 - 1
+local l_0_6 = #l_0_3 + 1
+if (#l_0_2 ~= #l_0_3 and #l_0_2 ~= l_0_5 and #l_0_2 ~= l_0_6) or #l_0_3 ~= #l_0_4 and l_0_5 ~= #l_0_4 and l_0_6 ~= #l_0_4 then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("SCRIPT:Worm:JS/Proslikefan_Lowfi")
+return mp.CLEAN
 

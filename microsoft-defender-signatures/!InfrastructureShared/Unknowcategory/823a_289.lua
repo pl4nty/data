@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 <= 393216 and l_0_0 >= 327680 and (pesecs[4]).Name == ".py" then
-  return mp.INFECTED
+if peattributes.packed and peattributes.checks_teb_lasterror and peattributes.dynmem_APIcall and peattributes.executes_from_dynamic_memory then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

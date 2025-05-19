@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Worm:MSIL/Cribz!modules") then
+if peattributes.isdll == true and peattributes.hasexports == true then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

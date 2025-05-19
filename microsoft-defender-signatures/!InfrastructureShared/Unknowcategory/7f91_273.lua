@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a")
+if (this_sigattrlog[2]).matched then
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2416696475)
+end
 return mp.INFECTED
 

@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\mozilla firefox\\", 1, true) then
-    return mp.CLEAN
-  end
+if (hstrlog[1]).hitcount == 2 and (hstrlog[2]).hitcount == 1 and (hstrlog[3]).hitcount == 1 and (hstrlog[4]).hitcount == 2 and (hstrlog[5]).hitcount == 1 then
   return mp.INFECTED
 end
 return mp.CLEAN

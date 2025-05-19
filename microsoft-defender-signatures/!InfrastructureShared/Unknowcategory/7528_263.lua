@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 20, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+if (string.match)((string.sub)((sigattr_head[1]).p1, 2, 7), "%d+") then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

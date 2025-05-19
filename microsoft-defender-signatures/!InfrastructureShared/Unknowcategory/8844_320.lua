@@ -3,15 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetSSLCertificate)()
-if l_0_0 and l_0_0.Subject == l_0_0.Issuer then
-  local l_0_1 = l_0_0.Subject
-  local l_0_2, l_0_3 = (string.match)(l_0_1, ", OU=(.+), CN=(.+), EMAIL=(.+)")
-  if ", OU=(.+), CN=(.+), EMAIL=(.+)" == l_0_2 .. "@" .. l_0_3 then
-    return mp.INFECTED
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT == 2 then
+    return mp.LOWFI
   end
 end
-do
-  return mp.CLEAN
+if (hstrlog[3]).matched then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
+return mp.CLEAN
 

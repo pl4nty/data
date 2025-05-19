@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 90112 and l_0_0 <= 98304 and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 and (mp.get_mpattribute)("NID:Hupigon.A!Pra1") then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 1, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(mp.readprotection)(false)
+if (pe.mmap_va)(l_0_1, 9) == "myapp.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

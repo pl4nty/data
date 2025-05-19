@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 976800 and (mp.getfilesize)() < 1330584 and (pesecs[4]).Name == "INIT" and (pesecs[4]).Characteristics == 3791650848 then
+if peattributes.isexe and peattributes.no_security and peattributes.amd64_image and (mp.getfilesize)() >= 892000 and (mp.getfilesize)() <= 892010 then
   return mp.INFECTED
 end
 return mp.CLEAN

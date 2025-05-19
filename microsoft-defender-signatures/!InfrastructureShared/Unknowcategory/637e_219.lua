@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:BackTrack.B")
+if (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() < 40960 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

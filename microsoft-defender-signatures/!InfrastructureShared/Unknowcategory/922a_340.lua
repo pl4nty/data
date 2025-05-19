@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
-local l_0_1 = (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 4, 4), 1)
-if l_0_0 + l_0_1 == 1623 or l_0_1 - l_0_0 == 1623 then
-  return mp.INFECTED
-end
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+;
+(pe.set_peattribute)("disable_thread_apicall_limit", true)
 return mp.CLEAN
 

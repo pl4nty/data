@@ -3,41 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("AndroidOS:HSTR:AndroidElf") then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
+
+if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched and not (hstrlog[9]).matched and not (hstrlog[10]).matched and not (hstrlog[11]).matched and not (hstrlog[12]).matched and not (hstrlog[13]).matched and not (hstrlog[14]).matched and not (hstrlog[15]).matched and not (hstrlog[16]).matched and not (hstrlog[17]).matched and not (hstrlog[18]).matched) or not (hstrlog[19]).matched) and not (hstrlog[28]).matched) or 0 + 1 + 1 == 2 then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 700000 or l_0_0 < 4000 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("adbcopy", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("libbaiduzeus", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("libmiui", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("liboctvm", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("getdbfile", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("\\atcid", 1, true) then
-  return mp.CLEAN
-end
-local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_2:find("root", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

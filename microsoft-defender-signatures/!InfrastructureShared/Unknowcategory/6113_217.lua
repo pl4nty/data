@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%-%>%(%w+Sfx%)%-%>CMT$") == nil then
-  return mp.CLEAN
+if (pesecs[4]).Name == ".btls2" and (pesecs[6]).Name == ".dcard" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

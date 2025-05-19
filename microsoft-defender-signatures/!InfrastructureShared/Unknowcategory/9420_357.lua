@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SLF:Win32/Sysdupate.E") then
-  return mp.CLEAN
-end
-if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 4 then
+local l_0_0 = (mp.getfilesize)()
+if ((pesecs[1]).Name == "sijJ" or (pesecs[1]).Name == "EVJ") and (pesecs[2]).Name == ".mr" and peattributes.no_security == true and l_0_0 >= 119808 and l_0_0 <= 169984 then
   return mp.INFECTED
 end
 return mp.CLEAN

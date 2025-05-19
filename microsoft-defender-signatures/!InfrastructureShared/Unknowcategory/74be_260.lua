@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:find("\\wscript.exe") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 516096 and l_0_0 <= 524288 and (mp.get_mpattribute)("TEL:Trojan:Win32/Emotet.PAC!Lowfi") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

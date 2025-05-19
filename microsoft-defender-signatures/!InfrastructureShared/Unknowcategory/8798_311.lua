@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 15, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 21, "é")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0:len() >= 12 then
+    local l_0_1 = (string.sub)(l_0_0, -12)
+    if l_0_1 == "ie4uinit.exe" or l_0_1 == "iexplore.exe" then
+      return mp.CLEAN
+    end
+  end
+  return mp.INFECTED
+end
 

@@ -3,40 +3,45 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
+local l_0_4 = nil
+local l_0_5 = (nri.IsResponse)()
+if l_0_5 then
+  local l_0_0, l_0_1, l_0_2, l_0_3 = 16
+else
+  do
+    -- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
+
+    if not l_0_4 then
+      return mp.CLEAN
+    end
+    local l_0_6, l_0_7, l_0_8, l_0_9 = , (MpCommon.BinaryRegExpSearch)("(...)üSMB(....)[\001\002\003\004]...(....)", l_0_4)
+    if not l_0_7 then
+      return mp.CLEAN
+    end
+    readu32 = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  -- DECOMPILER ERROR at PC5: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC11: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC17: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC23: Overwrote pending register: R5 in 'AssignReg'
+
+  return nil + nil * 256 + nil * 65536 + nil * 16777216
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+
+    l_0_8 = (mp.bitand)((string.byte)(l_0_8, 1), 1) * 65536 + (string.byte)(l_0_8, 2) * 256 + (string.byte)(l_0_8, 3)
+    l_0_9 = readu32(l_0_9, 1)
+    if 4294967295 - readu32(R8_PC63, 1) < l_0_9 then
+      return mp.INFECTED
+    end
+    -- DECOMPILER ERROR at PC74: Confused about usage of register: R6 in 'UnsetPending'
+
+    if l_0_6 < l_0_8 and l_0_8 - l_0_6 < readu32(R8_PC63, 1) then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-if (mp.get_mpattribute)("pea_ismsil") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 4000 then
-  return mp.CLEAN
-end
-local l_0_1 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("system32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("syswow64", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("winu.dll", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("win32u.dll", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("dcompfuzzer", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

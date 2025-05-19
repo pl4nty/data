@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).VA < pehdr.ImageBase + (pesecs[1]).VirtualAddress + 240 and (hstrlog[1]).VA + 10704 < pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-  return mp.SUSPICIOUS
+if pehdr.NumberOfSections == 9 and (pesecs[pehdr.NumberOfSections]).Name == ".CN" and (pesecs[pevars.epsec]).SizeOfRawData >= 475136 and pevars.epsecwr == 1 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

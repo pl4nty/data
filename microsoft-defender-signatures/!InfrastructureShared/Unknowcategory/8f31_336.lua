@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-    if l_0_0 ~= nil and l_0_0:find("system", 1, true) and l_0_0:find("security", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if peattributes.isexe == true and peattributes.amd64_image and (pesecs[3]).Name == ".pdata" and (pesecs[4]).Name == ".idata" and (pesecs[5]).Name == "INIT" then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

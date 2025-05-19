@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_tls == true then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 22, "")
 ;
-(pe.set_peattribute)("hstr_exhaustive", true)
+(pe.mmap_patch_va)(pevars.sigaddr + 27, "\144")
 return mp.INFECTED
 

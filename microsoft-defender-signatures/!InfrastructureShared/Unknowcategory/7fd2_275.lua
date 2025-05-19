@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Trojan:Win64/RedLine.AL!MTB") then
+if (mp.get_mpattribute)("MpInternal_IsPliScan") then
+  return mp.INFECTED
+end
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 ~= nil and l_0_0 == mp.HSTR_CALLER_SMS then
   return mp.INFECTED
 end
 return mp.CLEAN

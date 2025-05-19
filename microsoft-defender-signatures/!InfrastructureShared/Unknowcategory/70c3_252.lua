@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
-return mp.INFECTED
+if pehdr.AddressOfEntryPoint == 34224 and pehdr.Magic == 523 and pehdr.SizeOfImage == 1249280 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

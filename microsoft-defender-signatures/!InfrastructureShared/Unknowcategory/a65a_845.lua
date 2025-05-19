@@ -3,12 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+if (mp.IsHipsRuleEnabled)("3b576869-a4ec-4529-8536-b80a7769e899") ~= true then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\systemsettings.exe", 1, true) or (string.find)(l_0_0, "\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\explorer.exe", 1, true) or (string.find)(l_0_0, "\\openwith.exe", 1, true) or (string.find)(l_0_0, "\\searchprotocolhost.exe", 1, true) or (string.find)(l_0_0, "\\searchindexer.exe", 1, true) or (string.find)(l_0_0, "\\runtimebroker.exe", 1, true) or (string.find)(l_0_0, "\\msiexec.exe", 1, true) or (string.find)(l_0_0, "\\taskhostw.exe", 1, true) or (string.find)(l_0_0, "\\userprofilemanager.exe", 1, true) then
+local l_0_0 = "enghipscpy:blockaccess:3b576869-a4ec-4529-8536-b80a7769e899"
+local l_0_1 = ""
+local l_0_2 = ""
+if (this_sigattrlog[5]).matched then
+  l_0_1 = (this_sigattrlog[5]).utf8p1
+  l_0_2 = (this_sigattrlog[5]).utf8p2
+  if l_0_1 == nil or l_0_1 == "" or l_0_2 == nil or l_0_2 == "" then
+    return mp.CLEAN
+  end
+else
   return mp.CLEAN
 end
-return mp.INFECTED
+if (string.find)(l_0_1, "%", 1, true) ~= nil or (string.find)(l_0_2, "%", 1, true) ~= nil then
+  return mp.CLEAN
+end
+local l_0_3 = {}
+l_0_3.exe = true
+l_0_3.dll = true
+l_0_3.sys = true
+local l_0_4 = (string.lower)((string.match)(l_0_1, "%.([^%.]+)$"))
+if l_0_3[l_0_4] == true and not (MpCommon.QueryPersistContext)(l_0_2, l_0_0) then
+  (MpCommon.AppendPersistContext)(l_0_2, l_0_0, 0)
+  return mp.INFECTED
+end
+return mp.CLEAN
 

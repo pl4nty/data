@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false then
+  return mp.CLEAN
+end
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+  return mp.CLEAN
+end
 ;
-(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, "\n\000\000\000")
+(pe.mmap_patch_va)(pevars.sigaddr + 1, "\255\255\255\255")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 32, "\255T$\bêê")
-;
-(pe.set_image_filename)("notepad.exe")
-;
-(pe.reemulate)()
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

@@ -3,32 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp1 ~= nil and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
+  local l_0_2, l_0_3 = (string.match)(l_0_0, "\\microsoft\\(%a+)\\(%a+)%.dat")
+  local l_0_4, l_0_5 = (string.match)(l_0_1, "\\microsoft\\(%a+)\\(%a+)%.exe")
+  if l_0_2 and l_0_3 and l_0_4 and l_0_5 and l_0_2 == l_0_4 and (string.sub)(l_0_2, 1, -3) == l_0_3 and (string.sub)(l_0_4, 1, -2) == l_0_5 then
+    return mp.INFECTED
+  end
+end
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-      local l_0_1, l_0_2, l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2)
-    end
-    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.find)(l_0_1, "iexplore", 1, true) then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC67: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC76: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.find)(l_0_1, " iex", 1, true) or (string.find)(l_0_1, "iex ", 1, true) then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+  return mp.CLEAN
 end
 

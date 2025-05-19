@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.isexe == true then
+if pehdr.SizeOfImage > 135168 and pehdr.SizeOfImage < 143360 then
   return mp.INFECTED
 end
 return mp.CLEAN

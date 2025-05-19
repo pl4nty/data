@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
-  l_0_0 = 16
+do
+  if peattributes.ismsil == true then
+    local l_0_0 = (string.lower)((mp.getfilename)())
+    if (string.find)(l_0_0, ".scr$") or (string.find)(l_0_0, ".tmp$") then
+      return mp.INFECTED
+    else
+      return mp.LOWFI
+    end
+  end
+  return mp.CLEAN
 end
-if (mp.bitand)(mp.HSTR_WEIGHT, 15) + l_0_0 >= 18 then
-  return mp.INFECTED
-end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan_prepscram")
-return mp.CLEAN
 

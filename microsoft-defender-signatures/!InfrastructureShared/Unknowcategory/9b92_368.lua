@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "s", 1, true) - 1
+local l_0_0 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 4, 1), 1)
+local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr + l_0_0, 64), "\187\000\000\002\000", 1, true) - 1
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + l_0_0, "3Û")
 return mp.INFECTED
 

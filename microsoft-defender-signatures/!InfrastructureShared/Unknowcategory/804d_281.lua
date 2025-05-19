@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[9]).Name == ".boot" and (pesecs[8]).Characteristics == 3758096480 then
-  return mp.INFECTED
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 20971520 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

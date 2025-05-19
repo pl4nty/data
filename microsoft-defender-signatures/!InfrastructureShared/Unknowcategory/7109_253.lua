@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount + (hstrlog[2]).hitcount + (hstrlog[3]).hitcount + (hstrlog[4]).hitcount >= 5 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
+return mp.INFECTED
 

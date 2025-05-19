@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() > 800000 and (mp.getfilesize)() < 850000 then
-  return mp.INFECTED
+if (hstrlog[5]).matched then
+  (mp.set_mpattribute)("Lowfi:Komodia:WFP:NoVuln")
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_4634")
-  ;
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7_k8.2CCB")
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
+    if l_0_1 == "wmiprvse.exe" or l_0_1 == "services.exe" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

@@ -3,16 +3,23 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-    if l_0_0 ~= nil then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2107638873)
-      return mp.INFECTED
-    end
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
   end
-  return mp.CLEAN
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).wp1 ~= nil then
+      local l_0_4 = nil
+      if (string.find)((mp.utf16to8)((this_sigattrlog[3]).wp1), ":\\ \\[%w%s%p]+$") and (string.find)((mp.utf16to8)((this_sigattrlog[3]).wp1), ":\\ \\[^\\]+$") then
+        return mp.INFECTED
+      end
+    end
+    return mp.CLEAN
+  end
 end
 

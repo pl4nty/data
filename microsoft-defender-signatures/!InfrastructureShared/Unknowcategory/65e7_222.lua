@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:MacOS/Yontoo.B")
+if mp.HSTR_WEIGHT >= 4 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.LOWFI
 

@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1))
-    if l_0_0 ~= nil and (string.find)(l_0_0, "\\dismcore.dll$", 1, false) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+return mp.INFECTED
 

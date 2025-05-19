@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
-  return mp.CLEAN
+if (hstrlog[1]).matched or (hstrlog[2]).matched then
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_56CB")
 end
-;
-(mp.set_mpattribute)("PUA:Block:CrossRider")
 return mp.INFECTED
 

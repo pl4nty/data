@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and pehdr.NumberOfSections == 3 and peattributes.isexe == true then
-  return mp.INFECTED
+if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>inst%.vbs$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

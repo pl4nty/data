@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process and not peattributes.hstr_exhaustive then
+if peattributes.ismsil == true and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

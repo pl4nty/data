@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((bm.get_imagepath)(), -12)) == "\\svchost.exe" then
-  return mp.CLEAN
+if pehdr.NumberOfSections ~= 3 then
+  return mp.LOWFI
 end
-return mp.INFECTED
+if (pesecs[2]).Name ~= ".scot" then
+  return mp.LOWFI
+end
+return mp.SUSPICIOUS
 

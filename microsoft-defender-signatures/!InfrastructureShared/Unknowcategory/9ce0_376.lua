@@ -3,12 +3,20 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_obfuscator_xt_6")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 23, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-;
-(mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT")
-return mp.SUSPICIOUS
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  end
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  ;
+  (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
+  -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+  ;
+  (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", l_0_0)
+  return mp.INFECTED
+end
 

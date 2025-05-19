@@ -3,9 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (mp.get_mpattribute)("NID:PossibleParadiseSh") and peattributes.no_security == true and l_0_0 <= 8704 and l_0_0 >= 7680 and peattributes.isdll == false and pehdr.NumberOfSections == 4 then
-  return mp.INFECTED
+local l_0_0 = {}
+l_0_0.TimeProvOpen = ""
+l_0_0.TimeProvClose = ""
+l_0_0.TimeProvCommand = ""
+local l_0_1 = 0
+local l_0_2, l_0_3 = (pe.get_exports)()
+if l_0_2 > 2 then
+  for l_0_7 = 1, l_0_2 do
+    if l_0_0[(pe.mmap_string_rva)((l_0_3[l_0_7]).namerva, 64)] then
+      l_0_1 = l_0_1 + 1
+    end
+  end
+  if l_0_1 == 3 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 720896 and l_0_0 <= 851968 and peattributes.amd64_image and peattributes.headerchecksum0 and peattributes.suspicious_linker_version then
+if (string.lower)((string.sub)(((pe.get_versioninfo)()).CompanyName, 1, 8)) == "viracure" then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,16 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.ismsil == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+(pe.set_regval)(pe.REG_EAX, 11)
+;
+(pe.set_regval)(pe.REG_EBX, 1970169159)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 1, "êêêê")
+return mp.INFECTED
 

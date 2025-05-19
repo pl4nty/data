@@ -3,27 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -20))
+if (string.find)(l_0_0, "\\iexplore.exe", 8, true) or (string.find)(l_0_0, "\\chrome.exe", 10, true) or (string.find)(l_0_0, "\\browser_broker.exe", 2, true) or (string.find)(l_0_0, "\\microsoftedge.exe", 3, true) or (string.find)(l_0_0, "\\microsoftedgecp.exe", 1, true) or (string.find)(l_0_0, "\\firefox.exe", 9, true) then
+  return mp.INFECTED
 end
-local l_0_0 = (mp.GetBruteMatchData)()
-if not l_0_0 then
-  return mp.CLEAN
-end
-local l_0_1 = ""
-if l_0_0.is_header then
-  l_0_1 = (string.lower)(tostring(headerpage))
-else
-  l_0_1 = (string.lower)(tostring(footerpage))
-end
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_2 = "(?:set|add)-mppreference\\s+-exclusionpath\\s+[\"\']?c:\\\\+users\\\\+.*\\\\+music\\\\*?%?[\"\']?(?:[\\s;]|$)"
-local l_0_3 = false
-l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
-if l_0_3 == false then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

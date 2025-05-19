@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 27, "«D$\016\016\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 96, "êê")
-return mp.INFECTED
+if (mp.get_mpattribute)("HSTR:Trojan:Win32/ChineseKeyboardCheck!MTB") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

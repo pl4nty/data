@@ -3,28 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-local l_0_0 = {}
-l_0_0.SUUAFindUser = ""
-l_0_0.SUUAGetAttribute = ""
-l_0_0.SUUASetAttribute = ""
-l_0_0.SUUAEnumDirAccess = ""
-local l_0_1 = 0
-local l_0_2, l_0_3 = (pe.get_exports)()
-if l_0_2 < 4 then
-  return mp.CLEAN
-end
-for l_0_7 = 1, l_0_2 do
-  if l_0_0[(pe.mmap_string_rva)((l_0_3[l_0_7]).namerva, 64)] then
-    l_0_1 = l_0_1 + 1
-  end
-end
-if l_0_1 == 4 then
+if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.headerchecksum0 == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.no_debug == true and peattributes.no_mipsgp == true and peattributes.no_boundimport == true and peattributes.no_ep == true and peattributes.no_comruntime == true then
   return mp.INFECTED
 end
 return mp.CLEAN

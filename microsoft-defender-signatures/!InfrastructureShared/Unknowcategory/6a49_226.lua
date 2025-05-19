@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[6]).matched or (hstrlog[3]).matched and (hstrlog[7]).matched then
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:PerfectKeylogger.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

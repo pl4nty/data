@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") and (hstrlog[2]).hitcount >= 3 then
+if peattributes.isdll == true and peattributes.no_resources == true and peattributes.no_debug == true and peattributes.no_delayimport == true and peattributes.no_loadconfig == true then
   return mp.INFECTED
 end
 return mp.CLEAN

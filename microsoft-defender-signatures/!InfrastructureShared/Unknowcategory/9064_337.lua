@@ -3,17 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if (this_sigattrlog[5]).matched and (this_sigattrlog[6]).matched then
-  local l_0_0 = (this_sigattrlog[5]).p1
-  local l_0_1 = (this_sigattrlog[6]).p1
-  if l_0_0 .. l_0_1 == "unsafe" then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.LOWFI
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 9, 1)
+;
+(pe.set_regval)(pe.REG_EAX, (string.byte)(l_0_0, 1))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 13, "êê")
+return mp.INFECTED
 

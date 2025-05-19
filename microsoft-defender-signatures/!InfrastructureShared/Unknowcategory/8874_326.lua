@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 8388608 or l_0_0 > 17825792 then
+if not peattributes.isexe and not peattributes.isdll then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("HSTR:PYINSTALLER") and (mp.get_mpattribute)("HSTR:Linux/NativeAPIDirectoryEnumuerate.A") then
-  return mp.INFECTED
+if peattributes.hasappendeddata == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

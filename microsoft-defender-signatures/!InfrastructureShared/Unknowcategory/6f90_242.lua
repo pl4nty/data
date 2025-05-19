@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll and pehdr.Machine == 34404 then
+if (mp.bitand)(mp.HSTR_WEIGHT, 992) >= 32 and (mp.bitand)(mp.HSTR_WEIGHT, 31) >= 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

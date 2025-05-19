@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.isdll == true and peattributes.hasexports == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 118784 and l_0_0 <= 139264 and (pehdr.NumberOfSections >= 5 or pehdr.NumberOfSections <= 7) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

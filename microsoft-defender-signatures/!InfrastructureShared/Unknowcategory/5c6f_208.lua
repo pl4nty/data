@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:SRBMiner")
-;
-(mp.set_mpattribute)("Company:CoinMiner64:D0kt0rSolutions")
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
 return mp.INFECTED
 

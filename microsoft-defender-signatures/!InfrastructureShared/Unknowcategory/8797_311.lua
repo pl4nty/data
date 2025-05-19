@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if ((pesecs[1]).Name == "CODE" and (pesecs[2]).Name == "DATA" and (pesecs[3]).Name == "BSS") or (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0:len() >= 12 then
+    local l_0_1 = (string.sub)(l_0_0, -12)
+    if l_0_1 == "ie4uinit.exe" or l_0_1 == "iexplore.exe" then
+      return mp.CLEAN
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:FindBaiuduAV") and (mp.get_mpattribute)("SIGATTR:FindAvastAV") then
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
 end
-return mp.LOWFI
+if (hstrlog[1]).matched then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

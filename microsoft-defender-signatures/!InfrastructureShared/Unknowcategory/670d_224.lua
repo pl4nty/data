@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+if peattributes.isexe == true and (pesecs[5]).Name == "memcpy_" then
   return mp.INFECTED
 end
 return mp.CLEAN

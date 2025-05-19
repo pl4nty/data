@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not peattributes.hasexports then
+if (mp.getfilesize)() > 1000000 then
   return mp.CLEAN
 end
-local l_0_0 = 0
-if (hstrlog[1]).matched then
-  l_0_0 = (hstrlog[1]).hitcount
+if (pesecs[1]).Name == "UPX0" then
+  return mp.CLEAN
 end
-if l_0_0 >= 3 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 15000)
+return mp.INFECTED
 

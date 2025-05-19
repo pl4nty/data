@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "wzunzip%.exe") or (string.find)(l_0_0, "wzcline40%-64%.exe") or (string.find)(l_0_0, "wzcline40%-32%.exe") then
-  return mp.CLEAN
+if peattributes.isexe == true and peattributes.ismsil == true and (pesecs[2]).Name == ".rsrc" and (pesecs[3]).Name == ".reloc" and (mp.getfilesize)() > 500000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

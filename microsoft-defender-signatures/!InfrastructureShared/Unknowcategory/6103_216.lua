@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 8 and mp.HSTR_WEIGHT < 18 then
-  (mp.set_mpattribute)("HSTR:Hicrazyk.D1")
+if mp.HSTR_WEIGHT >= 12 then
+  (mp.set_mpattribute)("PUA:Block:Spigot.D")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

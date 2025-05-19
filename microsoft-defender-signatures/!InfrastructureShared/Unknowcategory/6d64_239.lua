@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 125000 and peattributes.no_security == true and peattributes.isexe == true then
+if peattributes.no_security == true and peattributes.isexe == true and (mp.getfilesize)() >= 487000 then
   return mp.INFECTED
 end
 return mp.CLEAN

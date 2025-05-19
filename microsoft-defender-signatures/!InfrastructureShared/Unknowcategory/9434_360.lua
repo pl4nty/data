@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-do
-  if ((pe.get_versioninfo)()).CompanyName == "Company & Sons" and peattributes.ismsil == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = l_0_0.image_path
+local l_0_2 = (string.lower)((string.match)(l_0_1, "\\([^\\]+)$"))
+if l_0_2 == nil or l_0_2 == "" then
+  return mp.CLEAN
+end
+if (string.find)(l_0_2, "tomcat%d.exe") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

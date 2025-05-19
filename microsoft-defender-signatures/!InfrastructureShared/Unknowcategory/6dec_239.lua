@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "settings.xml.rels") ~= nil then
+if peattributes.isexe == true and peattributes.amd64_image and (mp.getfilesize)() < 20000 then
   return mp.INFECTED
 end
 return mp.CLEAN

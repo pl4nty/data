@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and (mp.getfilesize)() >= 102400 and (mp.getfilesize)() <= 1536000 and pehdr.NumberOfSections == 3 then
-  return mp.INFECTED
+local l_0_0 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
+if l_0_0:find(".deb", 1, true) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

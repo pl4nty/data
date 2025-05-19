@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:(Base64)") and ((mp.getfilename)()):match(".dll") then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "(RarSfx)", 1, true) then
+  (mp.set_mpattribute)("//RarSfxPwdAppdata")
 end
 return mp.CLEAN
 

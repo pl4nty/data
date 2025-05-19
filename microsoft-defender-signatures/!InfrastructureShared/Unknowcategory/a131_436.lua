@@ -3,20 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil and l_0_0.image_path == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-local l_0_2 = l_0_1:match("([^\\]+)$")
-local l_0_3 = {}
-l_0_3["explorer.exe"] = true
-l_0_3["powershell.exe"] = true
-l_0_3["mshta.exe"] = true
-if l_0_3[l_0_2] then
+if (mp.get_mpattribute)("VirTool:Win32/Vbcrypts") and (pe.query_import)(pe.IMPORT_STATIC, 1976129679) ~= 0 and (string.lower)((string.sub)(((pe.get_versioninfo)()).ProductName, 1, 5)) == "skype" then
   return mp.INFECTED
 end
 return mp.CLEAN

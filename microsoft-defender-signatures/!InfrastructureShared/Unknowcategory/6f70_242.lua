@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "websettings.xml.rels") ~= nil then
+if (mp.get_mpattribute)("NID:Trojan:Win64/StrelaStealer.MBXI!MTB") and (mp.get_mpattribute)("pea_isdll") then
   return mp.INFECTED
 end
 return mp.CLEAN

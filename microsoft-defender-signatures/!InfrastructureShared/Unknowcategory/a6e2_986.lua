@@ -3,40 +3,23 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC127: Unhandled construct in 'MakeBoolean' P3
-
-if (((((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and (hstrlog[5]).matched) or not (hstrlog[17]).matched) and (hstrlog[23]).matched) or (hstrlog[4]).matched) and 1 or 0) + ((hstrlog[16]).matched and 1 or 0) + ((hstrlog[22]).matched and 1 or 0) + ((hstrlog[26]).matched and 1 or 0) >= 3 then
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  l_0_1 = (string.gsub)(l_0_1, " ", "")
+  l_0_1 = (string.gsub)(l_0_1, "\"", "")
+  if l_0_0 ~= l_0_1 then
+    return mp.CLEAN
+  end
+end
+do
+  if (mp.IsKnownFriendlyFile)((MpCommon.PathToWin32Path)((bm.get_imagepath)()), true, true) == true then
+    return mp.CLEAN
+  end
+  local l_0_2 = (string.lower)((bm.get_imagepath)())
+  if l_0_2 and ((string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "\\windows\\", 1, true) or (string.find)(l_0_2, "\\atx", 1, true) or (string.find)(l_0_2, "pdv\\", 1, true) or (string.find)(l_0_2, "\\pdv", 1, true) or (string.find)(l_0_2, "caixa", 1, true) or (string.find)(l_0_2, "\\frente", 1, true) or (string.find)(l_0_2, "\\setuphost", 1, true)) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

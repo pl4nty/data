@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if (string.find)(l_0_1, " %d%d%d?%d?%d? ", 1, false) then
+if (string.lower)((string.sub)(((pe.get_versioninfo)()).OriginalFilename, 1, 5)) == "lsass" then
   return mp.INFECTED
 end
 return mp.CLEAN

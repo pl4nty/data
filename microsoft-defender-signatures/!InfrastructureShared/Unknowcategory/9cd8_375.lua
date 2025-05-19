@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 21307622)
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 520192 and l_0_0 <= 589824 and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 and (pesecs[2]).Name == ".jnbcf" then
   return mp.INFECTED
 end
-if (this_sigattrlog[3]).matched then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1), 1488451358)
-  return mp.INFECTED
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 147456 and l_0_0 <= 155648 and pehdr.NumberOfSections == 4 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)(l_0_0.image_path)
+if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

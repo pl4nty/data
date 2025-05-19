@@ -3,65 +3,9 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
-      local l_0_1 = (string.lower)((this_sigattrlog[4]).utf8p2)
-    else
-    end
-    -- DECOMPILER ERROR at PC63: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
-        local l_0_2, l_0_3, l_0_4, l_0_5 = (string.lower)((this_sigattrlog[6]).utf8p2), nil
-      else
-      end
-      if (this_sigattrlog[8]).matched then
-        local l_0_6 = (string.lower)((this_sigattrlog[8]).utf8p2)
-        -- DECOMPILER ERROR at PC91: Confused about usage of register: R1 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC99: Confused about usage of register: R1 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC108: Confused about usage of register: R1 in 'UnsetPending'
-
-        if l_0_6 and (string.lower)((this_sigattrlog[1]).utf8p1) and (string.find)(l_0_6, (string.lower)((this_sigattrlog[1]).utf8p1), 1, true) then
-          if (string.find)((string.lower)((this_sigattrlog[1]).utf8p1), "\\appdata\\", 1, true) then
-            local l_0_7, l_0_9, l_0_10 = , (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "(.+\\)([^\\]+)$")
-            if l_0_9 then
-              if (string.sub)(l_0_9, -17) == "\\appdata\\roaming\\" then
-                return mp.INFECTED
-              else
-                if (string.sub)(l_0_9, -15) == "\\appdata\\local\\" then
-                  return mp.INFECTED
-                else
-                  if (string.sub)(l_0_9, -18) == "\\appdata\\locallow\\" then
-                    return mp.INFECTED
-                  end
-                end
-              end
-            end
-          else
-            do
-              do
-                local l_0_8 = nil
-                if (string.find)(l_0_8, ":\\programdata\\", 1, true) and (string.match)(l_0_8, "(.+\\)([^\\]+)$") and (string.sub)((string.match)(l_0_8, "(.+\\)([^\\]+)$"), -14) == ":\\programdata\\" then
-                  return mp.INFECTED
-                end
-                return mp.CLEAN
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -18))
+if (string.find)(l_0_0, "skype.exe") or (string.find)(l_0_0, "lync.exe") or (string.find)(l_0_0, "icq.exe") or (string.find)(l_0_0, "pidgin.exe") or (string.find)(l_0_0, "trillian.exe") or (string.find)(l_0_0, "yahoomessenger.exe") or (string.find)(l_0_0, "qq.exe") or (string.find)(l_0_0, "msnmsgr.exe") or (string.find)(l_0_0, "nlnotes.exe") or (string.find)(l_0_0, "notes.exe") or (string.find)(l_0_0, "notes2.exe") or (string.find)(l_0_0, "thunderbird.exe") or (string.find)(l_0_0, "msimn.exe") or (string.find)(l_0_0, "winmail.exe") or (string.find)(l_0_0, "excel.exe") or (string.find)(l_0_0, "infopath.exe") or (string.find)(l_0_0, "onenote.exe") or (string.find)(l_0_0, "powerpnt.exe") or (string.find)(l_0_0, "visio.exe") or (string.find)(l_0_0, "winword.exe") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

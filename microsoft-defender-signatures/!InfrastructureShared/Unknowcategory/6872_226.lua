@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:GT32SupportGeeks.A")
+local l_0_0 = (mp.getfilesize)()
+if peattributes.isvbnative and l_0_0 >= 765952 and l_0_0 <= 872448 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

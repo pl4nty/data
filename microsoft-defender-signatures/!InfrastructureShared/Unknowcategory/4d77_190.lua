@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(headerpage, 1) ~= 1953651835 then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 14, "\144")
 return mp.INFECTED
 

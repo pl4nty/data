@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/SnakeKeyLogger.AMDA") then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.isexe == true then
   return mp.INFECTED
 end
 return mp.CLEAN

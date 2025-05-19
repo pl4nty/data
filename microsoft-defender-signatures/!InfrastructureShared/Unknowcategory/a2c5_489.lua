@@ -4,11 +4,27 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = {}
-l_0_0.server = (nri.GetHttpRequestHeader)("Server")
-l_0_0.accept = (nri.GetHttpRequestHeader)("Accept")
-l_0_0["accept-encoding"] = (nri.GetHttpRequestHeader)("Accept-Encoding")
-l_0_0.connection = (nri.GetHttpRequestHeader)("Connection")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
+l_0_0["winword.exe"] = true
+l_0_0["excel.exe"] = true
+l_0_0["powerpnt.exe"] = true
+l_0_0["outlook.exe"] = true
+local l_0_1 = (mp.GetParentProcInfo)()
+do
+  if l_0_1 ~= nil then
+    local l_0_2 = (string.lower)(l_0_1.image_path)
+    if l_0_0[l_0_2:match("([^\\]+)$")] then
+      return mp.INFECTED
+    end
+  end
+  local l_0_3 = (mp.GetParentProcInfo)(l_0_1.ppid)
+  do
+    if l_0_3 ~= nil then
+      local l_0_4 = (string.lower)(l_0_3.image_path)
+      if l_0_0[((string.sub)(l_0_4, -15)):match("\\([^\\]+)$")] then
+        return mp.INFECTED
+      end
+    end
+    return mp.CLEAN
+  end
+end
 

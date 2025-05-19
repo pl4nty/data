@@ -3,12 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil and (string.len)(l_0_0) > 14 then
-  l_0_0 = (string.lower)((string.sub)(l_0_0, -14))
-  if l_0_0 == "\\mpsigstub.exe" then
-    return mp.CLEAN
-  end
-end
-return mp.INFECTED
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis_VMM_Grow")
+;
+(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_4")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 27, "êê")
+return mp.CLEAN
 

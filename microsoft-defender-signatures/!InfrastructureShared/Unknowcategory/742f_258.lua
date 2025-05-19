@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false or peattributes.hasexports == false then
-  return mp.CLEAN
-end
-if (pe.get_exports)() > 100 then
+if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll == true and peattributes.hasexports then
   return mp.INFECTED
 end
 return mp.CLEAN

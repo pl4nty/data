@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpAPILimitReached") then
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.set_peattribute)("disable_apicall_limit", true)
-  ;
-  (pe.reemulate)()
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if (pe.get_exports)() ~= 1 then
+  return mp.CLEAN
+end
+if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "maggie" then
   return mp.INFECTED
 end
 return mp.CLEAN

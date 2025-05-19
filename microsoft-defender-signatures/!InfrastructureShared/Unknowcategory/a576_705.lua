@@ -3,31 +3,38 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  local l_0_1 = false
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC21: No list found for R2 , SetList fails
 
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+  -- DECOMPILER ERROR at PC22: Overwrote pending register: R3 in 'AssignReg'
 
-  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC23: Overwrote pending register: R4 in 'AssignReg'
 
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasUploadeeUrl") then
-      (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromUploadee") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromUploadee", 3600)
-        return mp.INFECTED
-      end
+  for l_0_6,l_0_7 in ("ALF:")("SLF:") do
+    -- DECOMPILER ERROR at PC26: Overwrote pending register: R8 in 'AssignReg'
+
+    if (("TELPER:").sub)(l_0_0, 1, (string.len)(l_0_7)) == l_0_7 then
+      break
     end
   end
-  return mp.CLEAN
+  do
+    do
+      if not l_0_1 then
+        return mp.CLEAN
+      end
+      ;
+      (bm.trigger_sig)("DHA_LOWFI_AMSI_MATCH", l_0_0)
+      ;
+      (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", l_0_0)
+      ;
+      (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
+      do return mp.INFECTED end
+      do return mp.CLEAN end
+      -- WARNING: undefined locals caused missing assignments!
+    end
+  end
 end
 

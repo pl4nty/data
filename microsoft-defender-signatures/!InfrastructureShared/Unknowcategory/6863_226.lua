@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll == true then
+if (mp.getfilesize)() < 450000 and (pesecs[3]).VirtualSize > 524288 then
   return mp.INFECTED
 end
 return mp.CLEAN

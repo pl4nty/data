@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+if peattributes.ismsil == true and peattributes.nx_bit_set == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
   return mp.INFECTED
 end
 return mp.CLEAN

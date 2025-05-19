@@ -3,18 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if elfhdr.type ~= 2 and elfhdr.type ~= 3 then
-  return mp.CLEAN
+if peattributes.isexe == true and peattributes.hasexports == true and (pesecs[3]).Name == "hydrated" and (pesecs[2]).Name == ".managed" and (pesecs[3]).Characteristics == 3221225600 and (mp.getfilesize)() >= 6000000 and (mp.getfilesize)() <= 8000000 then
+  return mp.INFECTED
 end
-if elfhdr.phnum ~= 3 or elfhdr.shnum ~= 0 then
-  return mp.CLEAN
-end
-local l_0_0 = 1
-local l_0_1 = 62
-local l_0_2 = 3
-local l_0_3 = elfhdr.ident
-if (string.byte)(l_0_3, 6) ~= l_0_0 or elfhdr.machine ~= l_0_1 and elfhdr.machine ~= l_0_2 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

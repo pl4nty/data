@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EBP)
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 8)
-local l_0_2 = (mp.readu_u32)(l_0_1, 3)
-l_0_1 = (pe.mmap_va)((mp.bitand)(l_0_0 + l_0_2, 4294967295), 4)
-local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1
-l_0_1 = (pe.mmap_va)(l_0_3, 4)
-if (mp.readu_u32)(l_0_1, 1) == 707406378 then
-  return mp.SUSPICIOUS
+local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+if l_0_0:find(" /n ", 1, true) == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = "|/xb|/in|/un|/u0|/u1|/rt|/i0|/i1|/i2|/b1|/p1|/up|/va|/vxxv|/mkey|/cp|"
+local l_0_2 = l_0_0:match("/i:\"(/%w+)\"")
+if l_0_2 == nil or l_0_2 == "" or l_0_1:find("|" .. l_0_2 .. "|", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

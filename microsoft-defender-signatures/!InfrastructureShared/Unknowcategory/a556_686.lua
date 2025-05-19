@@ -3,32 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1, l_0_2 = (string.match)(l_0_0, " pid:(%d+) (.+)")
-if l_0_1 == nil or l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (mp.GetPPidFromPid)(l_0_1)
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_2, "^ems$") then
-  (bm.trigger_sig)("AsyncTriggerEMS", "EMS", l_0_3)
-else
-  if (string.find)(l_0_2, "^sms:") then
-    local l_0_4 = (string.match)(l_0_2, "sms:(.+)")
-    ;
-    (bm.trigger_sig)("AsyncTriggerSMS", l_0_4, l_0_3)
-  else
-    do
-      if (string.find)(l_0_2, "^exhaustive$") then
-        (bm.trigger_sig)("AsyncTriggerProc", "Exhaustive", l_0_3)
-      end
-      return mp.INFECTED
-    end
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 8
+local l_0_2 = 0
+local l_0_3 = (mp.getfilesize)()
+if l_0_0.is_header then
+  if mp.HEADERPAGE_SZ <= l_0_3 then
+    return mp.CLEAN
   end
+  l_0_2 = (mp.readheader)(l_0_1, l_0_3 - l_0_1)
+else
+  if mp.FOOTERPAGE_SZ <= l_0_3 then
+    return mp.CLEAN
+  end
+  l_0_2 = (mp.readfooter)(l_0_1, l_0_3 - l_0_1)
 end
+local l_0_4 = l_0_2:find("\"\"\" | base64", 1, true)
+if l_0_4 ~= nil then
+  l_0_2 = l_0_2:sub(0, l_0_4 - 1)
+  ;
+  (mp.vfo_add_buffer)(l_0_2, "[Base64Enc]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  ;
+  (mp.set_mpattribute)("//SCPT:Base64.Encoded")
+  return mp.INFECTED
+end
+return mp.CLEAN
 

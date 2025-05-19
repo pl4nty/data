@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096480 then
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 32768 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("BM_HAS_DIGITALSIGNATURE") then
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
+else
   return mp.INFECTED
 end
 return mp.CLEAN

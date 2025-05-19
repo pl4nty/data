@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.sub)((sigattr_head[1]).p1, 2, 7), "%d+") then
+local l_0_0 = (mp.getfilesize)()
+if (l_0_0 > 1000000 and l_0_0 < 2000000) or l_0_0 > 200000 and l_0_0 < 500000 then
   return mp.INFECTED
 end
 return mp.CLEAN

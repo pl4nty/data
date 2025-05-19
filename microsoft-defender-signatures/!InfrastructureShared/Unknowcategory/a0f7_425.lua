@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.hasexports == true and (pesecs[3]).Name == "hydrated" and (pesecs[2]).Name == ".managed" and (pesecs[3]).Characteristics == 3221225600 and (mp.getfilesize)() >= 6000000 and (mp.getfilesize)() <= 8000000 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\virtualbox", 1, true) or (string.find)(l_0_0, "msmpeng.exe", 1, true) or (string.find)(l_0_0, "mrt.exe", 1, true)) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

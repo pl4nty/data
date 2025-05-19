@@ -3,23 +3,31 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil and (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  local l_0_2 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  if (string.find)(l_0_0, l_0_1, 1, true) then
-    local l_0_3 = (mp.ContextualExpandEnvironmentVariables)(l_0_2)
-    local l_0_4 = (string.lower)(l_0_3)
-    if (string.find)(l_0_4, "\\program files", 1, true) or (string.find)(l_0_4, "\\windows\\", 1, true) then
-      return mp.CLEAN
-    end
-    if (sysio.IsFileExists)(l_0_3) then
-      (bm.add_related_file)(l_0_3)
-    end
-    return mp.INFECTED
-  end
-end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  end
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+
+  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+
+    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasDropboxUrl") then
+      (bm.add_related_file)(R7_PC42)
+      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromDropbox") then
+        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromDropbox", 3600)
+        return mp.INFECTED
+      end
+    end
+  end
   return mp.CLEAN
 end
 

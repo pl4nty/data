@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and pehdr.NumberOfSections == 4 then
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
   return mp.INFECTED
 end
 return mp.CLEAN

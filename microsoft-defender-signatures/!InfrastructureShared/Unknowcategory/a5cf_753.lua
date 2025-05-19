@@ -3,17 +3,32 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:ZwangiDll")
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
-if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or not (hstrlog[8]).matched) and (hstrlog[14]).matched) or (hstrlog[7]).matched) and 1 or 0) + ((hstrlog[13]).matched and 1 or 0) + ((hstrlog[15]).matched and 1 or 0) + ((hstrlog[16]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if not l_0_0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+l_0_0 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
+if not (sysio.IsFileExists)(l_0_0) then
+  return mp.CLEAN
+end
+local l_0_1 = (sysio.GetFileLastWriteTime)(l_0_0)
+if not ((sysio.GetLastResult)()).Success or l_0_1 == 0 then
+  return mp.CLEAN
+end
+l_0_1 = l_0_1 / 10000000 - 11644473600
+local l_0_2 = (MpCommon.GetCurrentTimeT)()
+if l_0_2 <= l_0_1 then
+  return mp.CLEAN
+end
+do
+  local l_0_3 = (l_0_2 - (l_0_1)) / 60
+  if not l_0_3 <= 1440 then
+    return mp.CLEAN
+  end
+  if (#l_0_0 >= 9 and (string.sub)(l_0_0, 2, 9) == ":\\users\\") or #l_0_0 >= 15 and (string.sub)(l_0_0, 2, 15) == ":\\programdata\\" then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- DECOMPILER ERROR: 5 unprocessed JMP targets
+end
 

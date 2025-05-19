@@ -3,9 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\device\\harddiskvolume.\\windows\\system32\\ie4uinit%.exe", 1, false) ~= nil or (string.find)(l_0_0, "\\device\\harddiskvolume.\\windows\\syswow64\\ie4uinit%.exe", 1, false) ~= nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.match)(l_0_0, "hidden.+bypass.+system%.net%.webclient.+downloadfile%(\'http:.+%.asp\'%).*|.*iex") ~= nil then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-return mp.INFECTED
 

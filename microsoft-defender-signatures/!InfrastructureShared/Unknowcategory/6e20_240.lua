@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:ExcelFormulaRoutines") and (mp.get_mpattribute)("LUA:FileSizeLE40000.A") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 3695440085)
+return mp.INFECTED
 

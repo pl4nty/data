@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 10240000 then
+if (string.lower)((string.sub)((bm.get_imagepath)(), -12)) == "\\svchost.exe" then
   return mp.CLEAN
 end
-if pehdr.Subsystem == 11 or pehdr.Subsystem == 12 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

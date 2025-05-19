@@ -11,6 +11,6 @@ if mp.HSTR_CALLER_SMS == l_0_0 then
   return mp.INFECTED
 end
 ;
-(mp.set_mpattribute)("SLF:Win64/Shelcorid.C")
+(mp.set_mpattribute)("SLF:Win64/Shelcorid.B")
 return mp.LOWFI
 

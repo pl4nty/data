@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.ismsil then
+if (mp.get_mpattribute)("HSTR:Worm:MSIL/Cribz!modules") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

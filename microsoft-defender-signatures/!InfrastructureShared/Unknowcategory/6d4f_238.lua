@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 9 and (mp.get_mpattribute)("TELPER:QQBrowser") then
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0.OriginalFilename ~= nil and (l_0_0.OriginalFilename):lower() == "schedctl.dll" then
   return mp.INFECTED
 end
 return mp.CLEAN

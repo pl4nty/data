@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll and peattributes.ismsil and (mp.getfilesize)() < 12000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\windows fabric", 1, true) or (string.find)(l_0_0, "\\microsoft.net", 1, true) or (string.find)(l_0_0, "\\binn\\polybase\\mpdwsvc.exe", 1, true) then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
+return mp.CLEAN
 

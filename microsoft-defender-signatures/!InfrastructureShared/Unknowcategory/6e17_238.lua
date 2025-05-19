@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() < 972234 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("HSTR:IBryteDownloaderz.A3")
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:IBryte")
+return mp.INFECTED
 

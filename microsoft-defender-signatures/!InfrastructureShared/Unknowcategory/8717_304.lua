@@ -3,7 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsAbnormalSheetStateBits")) or (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
+if (mp.getfilesize)() >= 512000 then
+  return mp.CLEAN
+end
+if (pesecs[1]).SizeOfRawData < 65536 then
+  return mp.CLEAN
+end
+if peattributes.isvbnative == true then
   return mp.INFECTED
 end
 return mp.CLEAN

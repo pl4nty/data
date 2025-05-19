@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Emotet.BD!Pra1") or (mp.get_mpattribute)("NID:Emotet.BD!Pra2") or (mp.get_mpattribute)("NID:Emotet.BD!Pra3") then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.suspicious_image_version then
+  return mp.CLEAN
+end
+if not peattributes.executes_from_dynamic_memory then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

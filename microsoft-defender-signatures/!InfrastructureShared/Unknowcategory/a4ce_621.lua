@@ -3,35 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports and peattributes.amd64_image then
-  if (mp.getfilesize)() > 1703936 then
-    return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 20480 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 16)
+local l_0_2 = (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true)
+if l_0_2 then
+  (mp.set_mpattribute)("BM_SerializedObj.A")
+  local l_0_3 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+  if (string.find)(l_0_3, "\\local\\microsoft\\event viewer\\", 1, true) then
+    (mp.set_mpattribute)("Lua:FileInsideEventviewFolder")
   end
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
-  local l_0_6 = (pe.get_exports_count)()
-  if l_0_6 >= 2 and l_0_6 <= 10 then
-    local l_0_7, l_0_8 = (pe.get_exports)()
-    local l_0_9 = 0
-    local l_0_10 = 0
-    for l_0_14 = 1, l_0_7 do
-      local l_0_15 = (l_0_8[l_0_14]).rva
-      if l_0_15 <= 12288 then
-        l_0_9 = 1
-      else
-        if l_0_15 >= 131072 then
-          l_0_10 = 1
-        end
-      end
-    end
-    if l_0_9 == 1 and l_0_10 == 1 then
-      return mp.INFECTED
-    end
-  end
+  return mp.INFECTED
 end
 do
   return mp.CLEAN

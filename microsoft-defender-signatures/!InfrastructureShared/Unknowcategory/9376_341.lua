@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or (mp.getfilesize)() > 1048576 then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1 = l_0_0:match("(.+\\)([^\\]+)$")
+if (string.sub)(l_0_1, -18) == "\\windows\\system32\\" or (string.sub)(l_0_1, -18) == "\\windows\\syswow64\\" then
+  return mp.INFECTED
 end
-if (pe.get_exports_count)() > 2 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

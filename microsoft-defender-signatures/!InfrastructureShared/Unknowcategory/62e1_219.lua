@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.no_security then
+if (mp.get_mpattribute)("BM_DEVICE_DRIVER") and (mp.get_mpattribute)("BM_MZ_DLL") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -16,7 +16,7 @@ do
   -- DECOMPILER ERROR at PC18: Confused about usage of register: R0 in 'UnsetPending'
 
   if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
-    (bm.add_related_file)(l_0_0)
+    (mp.ReportLowfi)(l_0_0, 3879253063)
   end
   return mp.INFECTED
 end

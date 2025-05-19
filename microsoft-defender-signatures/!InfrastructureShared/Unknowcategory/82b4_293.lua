@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 36 then
+if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 98304 and (mp.getfilesize)() < 126976 then
   return mp.INFECTED
-end
-if (mp.bitand)(mp.HSTR_WEIGHT, 15) >= 3 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_injector")
 end
 return mp.CLEAN
 

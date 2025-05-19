@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched then
-  (mp.changedetectionname)(805306407)
-end
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
 return mp.INFECTED
 

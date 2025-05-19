@@ -3,21 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 16
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 96)
-local l_0_2 = (string.byte)(l_0_1, 1) + 2
-if #l_0_1 < l_0_2 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_1, l_0_2 - 2) == 117 and (string.byte)(l_0_1, l_0_2 - 4) == 116 then
-  local l_0_3 = (string.byte)(l_0_1, l_0_2 - 3) + l_0_2 - 2
-  if #l_0_1 < l_0_3 then
-    return mp.CLEAN
-  end
-  if (string.byte)(l_0_1, l_0_3) == 232 then
-    local l_0_4 = "\235"
-    ;
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_0 + l_0_2 - 5, l_0_4)
+local l_0_0 = (bm.get_connection_string)()
+if l_0_0 then
+  local l_0_1 = (string.match)(l_0_0, "DestPort=(%d+)")
+  local l_0_2 = {}
+  l_0_2["80"] = true
+  l_0_2["8080"] = true
+  l_0_2["443"] = true
+  l_0_2["53"] = true
+  l_0_2["21"] = true
+  l_0_2["25"] = true
+  l_0_2["22"] = true
+  l_0_2["389"] = true
+  l_0_2["9"] = true
+  l_0_2["636"] = true
+  l_0_2["1433"] = true
+  l_0_2["1434"] = true
+  l_0_2["1521"] = true
+  l_0_2["9389"] = true
+  l_0_2["8100"] = true
+  l_0_2["23"] = true
+  l_0_2["993"] = true
+  l_0_2["40000"] = true
+  l_0_2["9085"] = true
+  l_0_2["9092"] = true
+  l_0_2["3306"] = true
+  l_0_2["3300"] = true
+  l_0_2["5432"] = true
+  if l_0_2[l_0_1] then
     return mp.INFECTED
   end
 end

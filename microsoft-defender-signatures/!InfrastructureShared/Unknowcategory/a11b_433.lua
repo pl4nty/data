@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-for l_0_3 = mp.SIGATTR_LOG_SZ, 1, -1 do
-  if (sigattr_head[l_0_3]).matched and (sigattr_head[l_0_3]).attribute == 16384 then
-    local l_0_4 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[l_0_3]).utf8p1)
-    if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
-      (mp.ReportLowfi)(l_0_4, 1501004956)
-    end
-  end
+if (mp.getfilesize)() < 1048576 then
+  return mp.CLEAN
+end
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+end
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
 return mp.INFECTED
 

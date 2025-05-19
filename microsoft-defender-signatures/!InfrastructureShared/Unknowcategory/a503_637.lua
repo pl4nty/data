@@ -5,46 +5,31 @@
 -- function num : 0
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_7,l_0_8 in ipairs(l_0_3) do
+      local l_0_4 = {[".xls"] = true, xlsx = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, xlsm = true}
+      -- DECOMPILER ERROR at PC34: Confused about usage of register: R7 in 'UnsetPending'
+
+      if (string.len)(R7_PC34) > 4 and (sysio.IsFileExists)(R7_PC34) and l_0_4[(string.sub)(R7_PC34, -4)] then
+        (bm.add_related_file)(l_0_9)
+        return mp.INFECTED
+      end
+    end
+  end
   do
-    do return mp.CLEAN end
-    local l_0_1 = nil
-    -- DECOMPILER ERROR at PC30: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC44: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC49: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC51: Unhandled construct in 'MakeBoolean' P3
-
-    if ((this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil and not (this_sigattrlog[2]).matched) or nil ~= nil then
-      local l_0_2 = nil
-      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
-        local l_0_3 = nil
-        -- DECOMPILER ERROR at PC57: Confused about usage of register: R7 in 'UnsetPending'
-
-        if (sysio.IsFileExists)(R7_PC57) then
-          (bm.add_related_file)(R7_PC57)
-        end
-      end
-    end
-    do
-      if l_0_1 ~= nil then
-        local l_0_8 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-        for l_0_12,l_0_13 in ipairs(l_0_8) do
-          if (sysio.IsFileExists)(l_0_13) then
-            (bm.add_related_file)(l_0_13)
-          end
-        end
-      end
-      do
-        l_0_8 = mp
-        l_0_8 = l_0_8.INFECTED
-        return l_0_8
-      end
-    end
+    l_0_3 = mp
+    l_0_3 = l_0_3.CLEAN
+    return l_0_3
   end
 end
 

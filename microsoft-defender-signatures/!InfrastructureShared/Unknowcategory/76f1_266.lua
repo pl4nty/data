@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
+if mp.HSTR_WEIGHT < 103 and peattributes.isexe and (mp.get_mpattribute)("reads_vdll_code") then
   return mp.INFECTED
 end
 return mp.CLEAN

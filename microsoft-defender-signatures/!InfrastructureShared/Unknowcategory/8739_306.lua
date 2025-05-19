@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) ~= true then
-  return mp.CLEAN
+if peattributes.isdll and pehdr.NumberOfSections > 5 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

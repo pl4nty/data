@@ -3,15 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetHttpRequestHeader)("User-Agent")
-local l_0_1 = (string.lower)((nri.GetURI)())
-local l_0_2 = (string.find)(l_0_1, "?", 1, true)
-if (string.find)(l_0_1, "&signature_id=%d+&_action_=getbin", l_0_2) == nil and (string.find)(l_0_0, "Guarded New Install System", 1, true) == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_7,l_0_8 in ipairs(l_0_3) do
+      local l_0_4 = {[".xls"] = true, xlsx = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, xlsm = true}
+      -- DECOMPILER ERROR at PC34: Confused about usage of register: R7 in 'UnsetPending'
+
+      if (string.len)(R7_PC34) > 4 and (sysio.IsFileExists)(R7_PC34) and l_0_4[(string.sub)(R7_PC34, -4)] then
+        (bm.add_related_file)(l_0_9)
+      end
+    end
+  end
+  do
+    l_0_3 = mp
+    l_0_3 = l_0_3.INFECTED
+    return l_0_3
+  end
 end
-local l_0_3 = {}
-l_0_3.useragent = l_0_0
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_3)
-return mp.INFECTED
 

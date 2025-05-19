@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.hasstandardentry and pehdr.NumberOfSections >= 5 and (pesecs[4]).Name == ".rsrc" and (pesecs[4]).SizeOfRawData >= 86016 then
+if (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("AGGR:MSIL:GenCommercialObfuscator.A") and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 then
   return mp.INFECTED
 end
-return mp.SUSPICIOUS
+return mp.CLEAN
 

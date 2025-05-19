@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata and peattributes.dirty_wx_branch then
+if (pesecs[1]).Name == "hitl3r" and (pesecs[2]).Name == "hitl3r" then
   return mp.INFECTED
 end
 return mp.CLEAN

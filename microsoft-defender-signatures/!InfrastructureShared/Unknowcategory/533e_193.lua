@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.amd64_image then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT == 4 then
+  (mp.set_mpattribute)("HSTR:Nivdort.EXP01")
 end
-return mp.CLEAN
+return mp.INFECTED
 
