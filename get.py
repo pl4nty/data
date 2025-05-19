@@ -73,8 +73,8 @@ if __name__ == "__main__":
         # Experimentation and Configuration Service
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/Edge/131.0.2903.112?osname=win&client=edge&channel=stable&osarch=x86_64&devicefamily=desktop&uma=0&sessionid=152&mngd=0&installdate=1694958418&edu=0&bphint=2&fg=1", "ecs/Edge.json")
-        fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/Intune/1.0.0.0", "ecs/Intune.json")
+        # fetch_and_prettify_json(
+        #     "https://ecs.office.com/config/v1/Intune/1.0.0.0", "ecs/Intune.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/CMD/1.0.0.0?Environment=SH&tenantId=77274a75-f318-4f60-b319-57d7e3012825", "ecs/CMD_sh.json")
         fetch_and_prettify_json(
@@ -103,8 +103,8 @@ if __name__ == "__main__":
             "https://ecs.office.com/config/v1/RemoteAssist/1.0", "ecs/RemoteAssist.json")
         # fetch_and_prettify_json(
         #     "https://ecs.office.com/config/v1/SCOM/1.0.0.0", "ecs/SCOM.json")
-        fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/SkypeLyncWebExperience/1.0.0.0", "ecs/SkypeLyncWebExperience.json")
+        # fetch_and_prettify_json(
+        #     "https://ecs.office.com/config/v1/SkypeLyncWebExperience/1.0.0.0", "ecs/SkypeLyncWebExperience.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/SkypeElectronWrapper/1.0.0.0", "ecs/SkypeElectronWrapper.json")
         fetch_and_prettify_json(
