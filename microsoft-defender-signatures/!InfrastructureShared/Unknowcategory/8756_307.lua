@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[4]).utf8p1)
-    if (string.match)(l_0_0, "%.bin$") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 15, 15)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\187" .. l_0_1 .. "\000\000\000")
+return mp.INFECTED
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 520000 and l_0_0 <= 600000 then
+if hstrlog[3] or hstrlog[4] then
   return mp.INFECTED
 end
 return mp.CLEAN

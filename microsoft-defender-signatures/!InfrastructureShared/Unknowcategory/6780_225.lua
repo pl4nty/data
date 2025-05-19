@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and peattributes.hasexports == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 17, "\000\000\000")
+return mp.INFECTED
 

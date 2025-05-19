@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image then
+if pehdr.Machine == 34404 then
   return mp.INFECTED
 end
 return mp.CLEAN

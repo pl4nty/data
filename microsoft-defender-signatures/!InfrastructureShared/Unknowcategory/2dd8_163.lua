@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:ConduitSearchProtect")
-return mp.INFECTED
+if peattributes.is_process then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

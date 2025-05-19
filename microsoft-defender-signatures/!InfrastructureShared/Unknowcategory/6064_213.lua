@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:BetterSurf")
-if mp.HSTR_WEIGHT >= 7 then
+if (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" then
   return mp.INFECTED
 end
 return mp.CLEAN

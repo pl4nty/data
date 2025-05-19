@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "word/_rels", 1, true) ~= nil and (mp.getfilesize)() < 400 then
+if epcode[1] == 131 and epcode[2] == 236 and epcode[30] == 185 and epcode[35] == 128 and epcode[36] == 48 then
   return mp.INFECTED
 end
 return mp.CLEAN

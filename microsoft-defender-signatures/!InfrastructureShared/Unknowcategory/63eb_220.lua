@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.no_exports == true then
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:MacBooster.N")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

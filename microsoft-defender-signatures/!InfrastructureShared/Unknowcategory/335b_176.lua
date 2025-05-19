@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[3]).Name == "@5E4^ " then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 131072 and l_0_0 < 421888 then
   return mp.INFECTED
 end
 return mp.CLEAN

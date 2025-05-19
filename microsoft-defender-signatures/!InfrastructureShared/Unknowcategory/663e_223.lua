@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_deep_rescan")
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-return mp.INFECTED
+if pehdr.NumberOfSections == 4 and (pesecs[4]).Name == ".mdn" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

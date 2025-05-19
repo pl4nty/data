@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_XML_FILE") then
-  return mp.INFECTED
-end
+(pe.mmap_patch_va)(pevars.sigaddr, "_^][Y\195")
 return mp.CLEAN
 

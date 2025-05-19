@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 6144 and (mp.get_mpattribute)("elfa_isharedlib") then
+if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 18944 then
   return mp.INFECTED
 end
 return mp.CLEAN

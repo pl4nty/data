@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p1)
+local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
 if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
   return mp.CLEAN
 end

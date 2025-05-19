@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.lower)((string.sub)(l_0_0.image_path, -9)) == "mshta.exe" then
-  return mp.INFECTED
-end
+local l_0_0 = (pe.get_regval)(pe.REG_EDI)
+;
+(mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.7_k1_%08X_%02X", l_0_0, 2))
 return mp.CLEAN
 

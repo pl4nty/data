@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 1669632 and l_0_0 <= 1677824 then
+if l_0_0 ~= nil and l_0_0 <= 3072000 and (pesecs[1]).Name == "UPX0" then
   return mp.INFECTED
 end
 return mp.CLEAN

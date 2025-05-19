@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-if not peattributes.suspicious_section_name then
+if not peattributes.hasexports then
   return mp.CLEAN
 end
-if not peattributes.executes_from_dynamic_memory then
-  return mp.CLEAN
+if R1_PC17 ~= nil and (pe.get_exports)() == 1 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

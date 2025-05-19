@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  return mp.INFECTED
 end
-if not peattributes.isvbnative then
-  return mp.CLEAN
+if peattributes.dt_error_heur_exit_criteria then
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 90000 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("MpHasValidProjPath") then
+  return mp.INFECTED
 end
-if not peattributes.dt_error_heur_exit_criteria then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

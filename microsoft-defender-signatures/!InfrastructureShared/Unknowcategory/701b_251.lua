@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -12) == "rundll32.exe" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 1, "\000\000\000\000")
+;
+(pe.set_regval)(pe.REG_ECX, 2147483647)
+return mp.INFECTED
 

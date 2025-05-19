@@ -3,26 +3,29 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC10: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+local l_0_1, l_0_2, l_0_3 = l_0_0:find("DestIp=(.-;)")
+if l_0_3 == nil then
+  return mp.CLEAN
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC34: Overwrote pending register: R0 in 'AssignReg'
+  local l_0_4 = {}
+  -- DECOMPILER ERROR at PC19: No list found for R4 , SetList fails
 
-  do
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-      local l_0_1, l_0_2, l_0_3 = ((this_sigattrlog[2]).utf8p1):lower()
-    else
-    end
-    -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC20: Overwrote pending register: R5 in 'AssignReg'
 
-    if ((this_sigattrlog[4]).matched and ((this_sigattrlog[4]).utf8p1):lower() == nil) or ((this_sigattrlog[4]).utf8p1):lower() == "https://clients2.google.com/service/update2/crx" then
+  -- DECOMPILER ERROR at PC21: Overwrote pending register: R6 in 'AssignReg'
+
+  for l_0_8,l_0_9 in ("127.0.0.1")("204.174.66.") do
+    -- DECOMPILER ERROR at PC24: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC26: Overwrote pending register: R11 in 'AssignReg'
+
+    if (("208.94.117.").find)("209.53.113.", l_0_9, 1, false) ~= nil then
       return mp.CLEAN
     end
-    return mp.INFECTED
   end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

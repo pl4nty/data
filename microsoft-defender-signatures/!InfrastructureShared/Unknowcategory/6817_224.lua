@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
-  return mp.INFECTED
+if peattributes.ismsil then
+  if mp.HSTR_WEIGHT >= 4 then
+    return mp.INFECTED
+  end
+  return mp.LOWFI
 end
 return mp.CLEAN
 

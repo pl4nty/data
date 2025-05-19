@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() > 200000 and (mp.getfilesize)() < 220000 then
+if peattributes.ismsil == true and (mp.getfilesize)() > 600000 and (mp.getfilesize)() < 610000 then
   local l_0_0 = (mp.GetCertificateInfo)()
   for l_0_4,l_0_5 in pairs(l_0_0) do
     if l_0_5.Signers ~= nil then

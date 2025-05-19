@@ -3,9 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.referer = (nri.GetHttpRequestHeader)("referer")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
+local l_0_0 = (nri.GetSSLCertificate)()
+if l_0_0 and l_0_0.Subject == l_0_0.Issuer then
+  local l_0_1 = l_0_0.Subject
+  local l_0_2, l_0_3 = (string.match)(l_0_1, ", OU=(.+), CN=(.+), EMAIL=(.+)")
+  if ", OU=(.+), CN=(.+), EMAIL=(.+)" == l_0_2 .. "@" .. l_0_3 then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
+end
 

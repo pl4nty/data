@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT < 8 and mp.HSTR_WEIGHT > 1 then
-  (mp.set_mpattribute)("HSTR:Trojan:Win32/Emotet.M1")
+if (mp.get_mpattribute)("pea_no_security") and peattributes.ismsil == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

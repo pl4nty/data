@@ -3,7 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and peattributes.no_security == true and pehdr.AddressOfEntryPoint ~= 874974 then
+if mp.HSTR_WEIGHT == 3 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT == 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

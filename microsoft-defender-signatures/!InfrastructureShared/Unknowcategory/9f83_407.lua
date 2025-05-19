@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll and peattributes.ismsil and (mp.getfilesize)() < 12000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = nil
+for l_0_6,l_0_7 in ipairs(l_0_1) do
+  if l_0_7.image_path ~= nil and (mp.bitand)(l_0_7.reason_ex, 1) == 1 then
+    l_0_2 = (string.lower)(l_0_7.image_path)
+    if (string.find)(l_0_2, "\\powershell.exe", 1, true) then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

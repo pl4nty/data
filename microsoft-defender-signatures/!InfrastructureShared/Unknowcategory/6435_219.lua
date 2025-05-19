@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:PEHasIOAVURL") then
-  (mp.set_mpattribute)("HSTR:IOAVDownloadAdmin")
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Genieo.Q!xp")
+  return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (pe.get_exports_count)() == 1 then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:MacRemover.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

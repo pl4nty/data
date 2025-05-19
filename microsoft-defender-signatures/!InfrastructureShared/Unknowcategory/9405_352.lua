@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if ((((not (hstrlog[6]).matched or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or 0 + 1 + 1 + 1 + 1 + 2 >= 3 then
-  return mp.INFECTED
+do
+  if (pesecs[6]).Name == "c.VnxYB" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

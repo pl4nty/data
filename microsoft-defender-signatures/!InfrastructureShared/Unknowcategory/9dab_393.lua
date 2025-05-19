@@ -3,16 +3,23 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (peattributes.isexe == true or peattributes.isdll == true) and peattributes.x86_image == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = {}
+l_0_0["winword.exe"] = true
+l_0_0["excel.exe"] = true
+l_0_0["powerpnt.exe"] = true
+l_0_0["outlook.exe"] = true
+local l_0_1 = (mp.GetParentProcInfo)()
+if l_0_1 ~= nil then
+  local l_0_2 = l_0_1.image_path
+  local l_0_3 = (string.lower)((string.match)(l_0_2, "\\([^\\]+)$"))
+  if l_0_3 == "" or l_0_3 == nil then
+    return mp.CLEAN
+  end
+  if l_0_0[l_0_3] == true then
     return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

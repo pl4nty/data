@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1000 and (mp.get_mpattribute)("BM_TEXT_FILE") then
-  return mp.INFECTED
+if peattributes.isvbpcode ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 512000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

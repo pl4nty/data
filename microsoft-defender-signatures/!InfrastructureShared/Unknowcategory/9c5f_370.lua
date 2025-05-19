@@ -7,7 +7,7 @@ local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if (string.match)(l_0_0, "extensions") ~= nil then
+if (string.match)(l_0_0, "preference") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\mozilla firefox\\", 1, true) then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0:len() >= 12 and (string.sub)(l_0_0, -12) == "iexplore.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

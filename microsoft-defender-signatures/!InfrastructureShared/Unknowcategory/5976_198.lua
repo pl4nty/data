@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if (mp.get_mpattribute)("NID:VirTool:Win32/Obfuscator.ANJ") then
+  return mp.SUSPICIOUS
 end
-if not peattributes.ismsil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.LOWFI
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 888800 and l_0_0 <= 888850 and pehdr.NumberOfSections == 4 then
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Win32/Mortis.MA!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

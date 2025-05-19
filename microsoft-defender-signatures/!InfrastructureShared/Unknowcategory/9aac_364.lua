@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 255 then
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1))
+    if l_0_0 ~= nil and (string.find)(l_0_0, "\\dismcore.dll$", 1, false) then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.getfilename)())
-if l_0_1:find("%.eml%->%(part000%d:%)$") or l_0_1:find("%->%(ole stream %d%)%->%(msg%)%->%(rtfbody%)") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

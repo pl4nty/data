@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+if peattributes.amd64_image then
+  (mp.changedetectionname)(805306485)
 end
 return mp.INFECTED
 

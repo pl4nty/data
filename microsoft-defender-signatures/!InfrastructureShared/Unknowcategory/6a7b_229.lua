@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isvbpcode == true or peattributes.isvbnative == true) and peattributes.no_security == true then
+if (mp.get_mpattribute)("pea_hasappendeddata") and (mp.getfilesize)() < 500000 then
   return mp.INFECTED
 end
 return mp.CLEAN

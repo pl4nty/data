@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr ~= 4198400 then
-  return mp.CLEAN
+if peattributes.is_process then
+  return mp.INFECTED
 end
 ;
-(pe.set_peattribute)("hstr_exhaustive", true)
-return mp.INFECTED
+(mp.set_mpattribute)("HSTR:UpatreFragA_Nonprocess")
+return mp.CLEAN
 

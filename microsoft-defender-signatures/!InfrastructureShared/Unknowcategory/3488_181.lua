@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.executes_from_dynamic_memory then
+if (mp.get_mpattribute)("PACKED_WITH:(SWC)") then
   return mp.INFECTED
 end
 return mp.CLEAN

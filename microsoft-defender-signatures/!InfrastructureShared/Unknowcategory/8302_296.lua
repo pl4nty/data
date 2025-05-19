@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 65536 and l_0_0 <= 131072 and (mp.get_mpattribute)("NID:Buran.A!Pra1") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), (mp.bitor)(nri.Telemetry_QUERY, nri.Telemetry_REFERER)))
+return mp.INFECTED
 

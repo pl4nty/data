@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[6]).matched and (hstrlog[7]).matched then
-  return mp.CLEAN
+if (hstrlog[3]).matched ~= true then
+  (mp.changedetectionname)(805306397)
 end
 return mp.INFECTED
 

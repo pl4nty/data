@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 11 then
-  if pehdr.Subsystem == 1 then
-    (mp.changedetectionname)(805306436)
-  else
-    if pehdr.Machine == 34404 then
-      (mp.changedetectionname)(805306435)
-    end
-  end
+if (mp.get_mpattribute)("MpAPILimitReached") then
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.set_peattribute)("disable_apicall_limit", true)
+  ;
+  (pe.reemulate)()
   return mp.INFECTED
 end
 return mp.CLEAN

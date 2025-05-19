@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true then
+if (mp.get_mpattribute)("Lua:FnameAttr!ffmpeg.dll") then
   return mp.INFECTED
 end
 return mp.CLEAN

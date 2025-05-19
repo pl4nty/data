@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:(ActiveMime)") or (mp.get_mpattribute)("PACKED_WITH:(Base64)") then
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/LummaC!MTB") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

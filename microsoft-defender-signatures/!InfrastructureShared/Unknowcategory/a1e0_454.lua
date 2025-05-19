@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_no_relocs") and (mp.getfilesize)() >= 315392 and (mp.getfilesize)() < 368640 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+local l_0_0 = {}
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28768 then
+    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
+    l_0_0.TlsJa3CHash = l_0_5
+    ;
+    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
   end
-  return mp.CLEAN
 end
+return mp.INFECTED
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/InvisibleFerret.A!dha")
-return mp.INFECTED
+if (mp.get_mpattribute)("MpCPlApplet") and peattributes.isdll then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

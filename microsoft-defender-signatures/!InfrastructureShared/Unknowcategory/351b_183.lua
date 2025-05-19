@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trickbot.PI!MSR") then
-  return mp.INFECTED
+if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "[DocWrite]", 1, true) ~= nil then
+if (mp.get_mpattribute)("HSTR:SkypeSneak") and (mp.get_mpattribute)("HSTR:Win32/GenSpy") then
   return mp.INFECTED
 end
 return mp.CLEAN

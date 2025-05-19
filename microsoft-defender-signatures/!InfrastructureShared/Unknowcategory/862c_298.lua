@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.hasexports and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (pe.get_exports)()
+for l_0_5 = 1, l_0_0 do
+  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "cJSON_ReplaceItemInObjectCaseSensitive" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

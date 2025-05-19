@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.NumberOfSections == 8 then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:Ganlet.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

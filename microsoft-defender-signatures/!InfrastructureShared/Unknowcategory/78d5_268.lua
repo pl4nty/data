@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("SIGATTR:Upatre!antiemu_vdll_max8_noseccheck")
-if (pesecs[1]).SizeOfRawData ~= 1536 then
-  return mp.CLEAN
+if peattributes.no_security and peattributes.ismsil and ((pe.get_versioninfo)()).CompanyName == "" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

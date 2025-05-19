@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (mp.get_mpattribute)("NID:Win64/Qakbot.PAN!MTB") and l_0_0 > 131072 and l_0_0 < 327680 then
+if peattributes.x86_image == true and (peattributes.isdll == true or peattributes.isexe == true) and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

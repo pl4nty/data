@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".rrdata" and (pesecs[6]).Name == ".lif\a" then
+if peattributes.isexe and peattributes.ismsil and peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

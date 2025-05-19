@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.no_security then
+if (mp.get_mpattribute)("NID:Win32/CryptInject.PN!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

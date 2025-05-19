@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.suspicious_dosheader and peattributes.suspicious_image_version then
+if mp.HSTR_WEIGHT >= 2 then
   return mp.INFECTED
+end
+if (hstrlog[1]).matched then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.CLEAN
 

@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.SizeOfImage == 151552 then
-  (mp.changedetectionname)(805306388)
+if pehdr.NumberOfSections == 4 and peattributes.isdll and peattributes.hasexports and peattributes.epinfirstsect then
   return mp.INFECTED
 end
-if pehdr.SizeOfImage == 86016 then
-  (mp.changedetectionname)(805306389)
-  return mp.INFECTED
-end
-return mp.SUSPICIOUS
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:(MSG)") then
-  return mp.INFECTED
+if (bm.GetSignatureMatchDuration)() > 10000000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

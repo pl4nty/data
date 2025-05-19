@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() < 5000 and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if pevars.sigaddr ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
   return mp.CLEAN
 end
+if (pe.query_import)(pe.IMPORT_STATIC, 214667374) and (mp.crc32)(-1, epcode, 17, 17) == 3988924912 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

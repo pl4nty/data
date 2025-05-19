@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.packed and peattributes.checks_teb_lasterror and peattributes.dynmem_APIcall and peattributes.executes_from_dynamic_memory then
-  return mp.SUSPICIOUS
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 11)
+if (mp.readu_u32)(l_0_0, 7) < 4194304 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".xdata" and (pesecs[5]).Characteristics == 1073741888 then
+if (mp.get_mpattribute)("pea_isexe") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

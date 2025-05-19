@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("inetpub\\solarwinds", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 14, 14)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\187" .. l_0_1 .. "\000\000\000")
+return mp.INFECTED
 

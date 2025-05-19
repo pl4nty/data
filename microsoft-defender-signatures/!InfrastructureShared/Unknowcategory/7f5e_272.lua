@@ -3,8 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and peattributes.no_security == true and (mp.getfilesize)() < 245000 then
-  return mp.INFECTED
+if (hstrlog[1]).hitcount >= 3 then
+  return mp.LOWFI
+else
+  if (hstrlog[2]).hitcount >= 3 then
+    return mp.LOWFI
+  else
+    if (hstrlog[3]).hitcount >= 3 then
+      return mp.LOWFI
+    else
+      return mp.CLEAN
+    end
+  end
 end
 return mp.CLEAN
 

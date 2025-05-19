@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).Name == "hitl3r" and (pesecs[2]).Name == "hitl3r" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
+return mp.INFECTED
 

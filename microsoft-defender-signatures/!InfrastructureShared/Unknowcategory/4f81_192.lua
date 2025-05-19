@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("CERT:PUA:Win32/FusionCore.AB") then
+if (pe.isdynamic_va)(pevars.sigaddr) then
   return mp.INFECTED
 end
 return mp.CLEAN

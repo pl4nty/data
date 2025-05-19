@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:VSearch!MTB")
+if mp.HSTR_WEIGHT >= 31 then
+  (mp.set_mpattribute)("PUA:Block:AMCleaner.E")
   return mp.INFECTED
 end
 return mp.LOWFI

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.isdll == true and peattributes.no_security == true then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("udaxihh.rsa") then
   return mp.INFECTED
 end
 return mp.CLEAN

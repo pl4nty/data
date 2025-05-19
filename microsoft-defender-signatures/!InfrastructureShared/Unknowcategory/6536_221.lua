@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports and peattributes.x86_image then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:TuneupMyMac.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

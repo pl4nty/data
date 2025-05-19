@@ -3,7 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 1 and (hstrlog[2]).hitcount == 1 and (hstrlog[3]).hitcount == 1 and (hstrlog[4]).hitcount == 1 and (hstrlog[5]).hitcount == 2 and (hstrlog[6]).hitcount == 1 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 20480 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 16)
+if (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

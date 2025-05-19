@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.format)("HSTR:VirTool:Win32/Obfuscator.ZG!upk.1_%08X_%08X", (hstrlog[1]).VA, (hstrlog[2]).VA)
+(pe.set_peattribute)("enable_vmm_grow", true)
 ;
-(mp.set_mpattribute)(l_0_0)
-return mp.SUSPICIOUS
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+return mp.CLEAN
 

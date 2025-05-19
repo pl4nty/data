@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.len)(l_0_0) < 4096 then
-      return mp.CLEAN
-    end
-    if (string.find)(l_0_0, "%.ps1") then
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if peattributes.isexe == true and (pesecs[5]).Name == ".reloc" and (pesecs[5]).Characteristics == 1107296320 and (mp.getfilesize)() >= 9000000 and (mp.getfilesize)() <= 15000000 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
-  return mp.CLEAN
+if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 98 and peattributes.isexe then
+  return mp.INFECTED
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) ~= true then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

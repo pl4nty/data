@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or 0 + 1 + 1 + 1 == 1 then
+if (mp.get_mpattribute)("pea_isdll") and (pe.query_import)(pe.IMPORT_STATIC, 1751160259) then
   return mp.INFECTED
 end
 return mp.CLEAN

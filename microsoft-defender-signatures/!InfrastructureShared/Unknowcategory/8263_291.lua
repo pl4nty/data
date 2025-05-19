@@ -3,10 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 and (pesecs[1]).SizeOfRawData > 1245184 then
-  return mp.INFECTED
-end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "\249\000t", 1, true) + 1, "\235")
+return mp.INFECTED
 

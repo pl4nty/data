@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Trojan:Win32/Tarcloin")
-if mp.HSTR_WEIGHT >= 3 then
+if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

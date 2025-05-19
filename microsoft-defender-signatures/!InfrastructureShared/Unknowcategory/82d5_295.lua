@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
-    local l_0_1 = (l_0_0.image_path):lower()
-    if (string.find)(l_0_1, "\\program files", 1, true) == nil then
-      return mp.CLEAN
-    end
-  end
+if (mp.getfilesize)() > 5120 then
+  return mp.CLEAN
+end
+if (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)) == "cnqmutil.dll" then
   return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[5]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[5]).utf8p2)
-  if l_0_0 ~= nil and l_0_1 ~= nil and (string.find)(l_0_1, l_0_0, 1, true) then
-    return mp.INFECTED
-  end
+if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 50 and peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

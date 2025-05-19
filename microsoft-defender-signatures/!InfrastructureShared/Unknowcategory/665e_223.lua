@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.no_security then
+if mp.HSTR_WEIGHT >= 6 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Ramdo.H")
 return mp.CLEAN
 

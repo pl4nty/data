@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+if (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  return mp.INFECTED
+end
+if peattributes.dt_error_heur_exit_criteria then
   return mp.INFECTED
 end
 return mp.CLEAN

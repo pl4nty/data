@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//RPF:IS_Lnk") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("HSTR:GoMainFunc") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

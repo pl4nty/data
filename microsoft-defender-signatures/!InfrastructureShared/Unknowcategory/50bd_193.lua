@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.amd64_image then
-  return mp.INFECTED
+if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.LOWFI
 

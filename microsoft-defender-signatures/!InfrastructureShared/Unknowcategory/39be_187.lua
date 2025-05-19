@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:Win32/BINinRsrc") then
+if peattributes.isdll == true or peattributes.isexe == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  (bm.add_related_process)(l_0_6.ppid)
+local l_0_0 = (mp.getfilesize)()
+if peattributes.hasexports == true and l_0_0 >= 100000 and l_0_0 <= 300000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() <= 819200 and (mp.getfilesize)() >= 614400 then
+if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("HSTR:VirTool:Win32/AscUrlExe") then
   return mp.INFECTED
 end
 return mp.CLEAN

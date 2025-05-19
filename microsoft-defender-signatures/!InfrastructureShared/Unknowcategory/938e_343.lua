@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 126976 then
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
-end
-if mp.HSTR_WEIGHT >= 2 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 100)
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.find)(l_0_0, "\129;\026\164\006\000u", 1, true)
+    if l_0_1 ~= nil then
+      (pe.mmap_patch_va)(pevars.sigaddr + 21 + l_0_1 + 5, "êê")
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

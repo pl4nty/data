@@ -3,8 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:ASEP") and peattributes.reads_vdll_code then
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    (bm.add_threat_file)(l_0_0)
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

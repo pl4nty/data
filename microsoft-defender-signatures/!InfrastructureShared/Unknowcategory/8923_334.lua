@@ -3,19 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-    if l_0_0 == nil or l_0_0 == "" then
-      return mp.CLEAN
-    end
-    if (sysio.IsFileExists)(l_0_0) then
-      (bm.add_related_file)(l_0_0)
-    end
-    return mp.INFECTED
-  end
+if not peattributes.isdll then
   return mp.CLEAN
 end
+if (pe.get_exports)() ~= 1 then
+  return mp.CLEAN
+end
+if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "InitiateTheAttack" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

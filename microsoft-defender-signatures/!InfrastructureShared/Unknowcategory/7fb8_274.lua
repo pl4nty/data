@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.shr32)(pehdr.TimeDateStamp, 22) and (mp.shl32)(pehdr.TimeDateStamp, 22) == 0 then
-  (mp.changedetectionname)(805306402)
+if peattributes.ismsil == true and (pesecs[3]).Name == ".reloc" and (pesecs[3]).Characteristics == 1107296320 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

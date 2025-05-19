@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:Bundlore.B")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr, "\199\005")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "\235")
+return mp.INFECTED
 

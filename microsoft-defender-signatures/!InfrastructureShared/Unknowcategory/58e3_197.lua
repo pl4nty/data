@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.x86_image == true then
-  return mp.INFECTED
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "‹}\b‹u\f‹M\016ó¤‹å]\195")
 return mp.CLEAN
 

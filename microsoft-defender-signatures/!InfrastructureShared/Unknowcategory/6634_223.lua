@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Social2Search.A")
+if peattributes.isdll and peattributes.amd64_image and peattributes.hasexports then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

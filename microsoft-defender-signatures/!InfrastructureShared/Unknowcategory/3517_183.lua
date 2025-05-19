@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:FileSizeLE200.A") then
+if (mp.get_mpattribute)("SIGATTR:MadCodeHook") then
   return mp.INFECTED
 end
 return mp.CLEAN

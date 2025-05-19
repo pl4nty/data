@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size
-if peattributes.no_security == true and l_0_0 >= 32768 and l_0_0 <= 655360 and (l_0_1 >= 56 or pehdr.SizeOfImage <= l_0_1) then
-  return mp.INFECTED
+do
+  if pehdr.NumberOfSections >= 16 and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_isdll") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

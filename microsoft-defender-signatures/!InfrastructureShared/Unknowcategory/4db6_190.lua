@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image then
+if (mp.get_mpattribute)("SIGATTR:Ransom:Win32/Sodin") then
   return mp.INFECTED
 end
 return mp.CLEAN

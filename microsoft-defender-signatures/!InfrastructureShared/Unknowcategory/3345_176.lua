@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[6]).Name == ".wt727" then
+if peattributes.suspicious_section_name then
   return mp.INFECTED
 end
 return mp.CLEAN

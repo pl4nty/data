@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and #(pe.get_exports)() == 1 then
+if peattributes.executes_from_dynamic_memory and peattributes.x86_image and peattributes.hasappendeddata then
   return mp.INFECTED
 end
 return mp.CLEAN

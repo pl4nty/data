@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
-  return mp.INFECTED
+if MpCommon.SECURITY_MANDATORY_LOW_RID < ((bm.get_current_process_startup_info)()).integrity_level then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

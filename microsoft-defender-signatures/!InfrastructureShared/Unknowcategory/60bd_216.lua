@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("PUA:Block:Hiddad.C")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Backdoor:Win64/PepticStunt.A!dha")
+return mp.INFECTED
 

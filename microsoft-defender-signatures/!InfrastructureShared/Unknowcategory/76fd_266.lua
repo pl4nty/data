@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and (mp.getfilesize)() >= 458752 and (mp.getfilesize)() <= 483328 then
+if peattributes.suspicious_timestamp or peattributes.suspicious_image_version or peattributes.suspicious_linker_version then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

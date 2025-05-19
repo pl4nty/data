@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(bm.trigger_sig_self_propagate)("SuspSlugResinProcessLaunch", "Behavior:Win32/SnailResin.B!dha")
-return mp.INFECTED
+if peattributes.no_security and peattributes.isdll and peattributes.ismsil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

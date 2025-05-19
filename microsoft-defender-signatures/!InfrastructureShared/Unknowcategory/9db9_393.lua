@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.suspicious_falign == true and peattributes.epoutofimage == true and peattributes.hasappendeddata == true then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+    if l_0_7 == 1 then
+      local l_0_8 = (string.lower)(l_0_6.image_path)
+      if (string.find)(l_0_8, "\\zoom.exe", 1, true) then
+        return mp.INFECTED
+      end
+    end
+  end
 end
 return mp.CLEAN
 

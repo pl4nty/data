@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_isexe") and not (mp.get_mpattribute)("pea_isdll") then
-  return mp.CLEAN
+if (mp.get_mpattribute)("BM_XML_FILE") and (mp.get_mpattribute)("InEmail") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

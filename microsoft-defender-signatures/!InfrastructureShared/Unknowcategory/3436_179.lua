@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if (mp.get_mpattribute)("BM_UNKNOWN_FILE") then
-  return mp.CLEAN
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

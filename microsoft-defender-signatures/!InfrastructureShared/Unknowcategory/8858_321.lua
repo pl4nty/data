@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_exe == false then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 2430426247) == 0 then
+if (pe.get_exports)() ~= 1 then
   return mp.CLEAN
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 4186436034) == 0 then
-  return mp.CLEAN
+if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "main" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Trojan:Win32/CryptInject.K!MSR") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

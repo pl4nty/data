@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_PROTECTED_PROCESS_RID then
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Strictor.AMCV") then
   return mp.INFECTED
 end
 return mp.CLEAN

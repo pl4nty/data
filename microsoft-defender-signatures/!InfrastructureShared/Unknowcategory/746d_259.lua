@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 210000 and l_0_0 <= 240000 and pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 7 then
-  return mp.INFECTED
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

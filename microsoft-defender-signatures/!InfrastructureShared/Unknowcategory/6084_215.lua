@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Kuguo.B")
+if peattributes.ismsil == true and (peattributes.isdll or peattributes.isexe) then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.no_security == true then
+if peattributes.has_msilresources and peattributes.ismsil then
   return mp.INFECTED
 end
 return mp.CLEAN

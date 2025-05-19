@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2064000 and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+if (hstrlog[1]).hitcount >= 10 and pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
   return mp.INFECTED
 end
 return mp.CLEAN

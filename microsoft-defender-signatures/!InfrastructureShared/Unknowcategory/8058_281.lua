@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and mp.HSTR_WEIGHT >= 3 and (mp.get_mpattribute)("SIGA:FileOperationDelete.S001") then
+if peattributes.isexe == true and (pesecs[9]).Name == ".boot" and (pesecs[8]).Characteristics == 3758096480 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

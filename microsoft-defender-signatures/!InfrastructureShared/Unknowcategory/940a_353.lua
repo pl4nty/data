@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) and l_0_1:match("([^\\]+)$") == "dllhost.exe" then
-      return mp.INFECTED
-    end
-  end
+if (bm.GetSignatureMatchDuration)() > 300000000 then
   return mp.CLEAN
 end
+local l_0_0 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_0.ppid, "M")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1000)
+return mp.INFECTED
 

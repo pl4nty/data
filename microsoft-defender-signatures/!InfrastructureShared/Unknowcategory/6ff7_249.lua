@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, ".diagcab->", 1, true) ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_tibs_4")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\000")
+return mp.INFECTED
 

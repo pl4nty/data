@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeGT1M.A") then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.sub)(l_0_0.image_path, -7)) == "cmd.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

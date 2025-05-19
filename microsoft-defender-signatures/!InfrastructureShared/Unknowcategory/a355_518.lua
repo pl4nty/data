@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetSSLCertificate)()
-local l_0_1 = {}
-l_0_1.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-l_0_1.Subject = l_0_0.Subject
-l_0_1.Issuer = l_0_0.Issuer
-l_0_1.ValidFrom = l_0_0.ValidFrom
-l_0_1.ValidTo = l_0_0.ValidTo
-l_0_1.FingerprintSha1 = l_0_0.FingerprintSha1
-l_0_1.FingerprintSha256 = l_0_0.FingerprintSha256
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_1)
-return mp.INFECTED
+if peattributes.x86_image == true and peattributes.line_numbers_stripped == true and peattributes.locals_symbols_stripped == true and peattributes.no_security == true and peattributes.headerchecksum0 == true and peattributes.hasappendeddata == true and peattributes.isexe == true and peattributes.no_debug == true and peattributes.no_relocs == true and peattributes.no_comruntime == true and peattributes.no_boundimport == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "rar%.exe") then
-  return mp.CLEAN
+if peattributes.ismsil and peattributes.has_msilresources and peattributes.x86_image then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

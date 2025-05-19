@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(headerpage, 1) ~= 1953651835 then
-  return mp.CLEAN
+if peattributes.isdll and peattributes.hasexports then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

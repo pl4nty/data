@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 8 and (pesecs[1]).VirtualAddress == 4096 then
+if peattributes.isdll == true and peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/Qbot.ZXX!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

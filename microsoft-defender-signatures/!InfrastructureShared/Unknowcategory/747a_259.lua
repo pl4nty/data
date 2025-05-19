@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_ep == true then
-  return mp.INFECTED
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:ASEP") then
+if (pesecs[3]).Name == "@5E4^ " then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

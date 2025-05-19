@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpRequestSMSM")
-;
-(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 3000)
-return mp.INFECTED
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "word/_rels/document.xml.rels") ~= nil then
+if epcode[1] == 104 and epcode[6] == 195 and epcode[7] == 144 then
   return mp.INFECTED
 end
 return mp.CLEAN

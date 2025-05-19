@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:InstallMiez.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "sharpshares.exe" then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)()
+if (string.find)((string.lower)(l_0_0), ".asar$") ~= nil then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

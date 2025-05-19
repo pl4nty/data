@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+local l_0_0, l_0_1, l_0_2 = ((bm.get_connection_string)()):find("DestIp=(.-;)")
+if l_0_2 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
-if not (sysio.IsFileExists)(l_0_1) then
-  return mp.CLEAN
-end
-if (sysio.GetFileSize)(l_0_1) > 262144000 then
+l_0_2 = ";" .. l_0_2
+local l_0_3 = ";217.23.8.164;85.17.87.163;46.165.244.105;209.239.112.229;185.6.80.139;184.75.253.146;176.9.245.16;178.250.245.198;217.23.3.113;217.23.8.164;"
+if l_0_3:find(l_0_2, 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

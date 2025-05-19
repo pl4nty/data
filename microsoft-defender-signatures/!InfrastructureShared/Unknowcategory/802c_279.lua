@@ -3,12 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("HSTR:Trojan:Win32/Colisi")
-if mp.HSTR_WEIGHT >= 4 then
+if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win32/Fragtor.AD!MTB")) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.hasexports == true and (mp.get_mpattribute)("NID:Trojan:Win64/DllHijack.G5") then
+  return mp.INFECTED
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-return mp.INFECTED
+return mp.CLEAN
 

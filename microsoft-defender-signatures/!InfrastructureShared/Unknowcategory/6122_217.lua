@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.isexe and peattributes.x86_image then
+if (mp.getfilesize)() <= 256 and (mp.get_mpattribute)("InEmail") then
   return mp.INFECTED
 end
 return mp.CLEAN

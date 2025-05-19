@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and (mp.get_mpattribute)("pea_has_msilresources") and (mp.get_mpattribute)("pea_no_security") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

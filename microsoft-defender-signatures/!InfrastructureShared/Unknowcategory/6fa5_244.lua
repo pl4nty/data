@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/LockCrypt.PA!Pra1") then
+local l_0_0 = (mp.getfilesize)()
+if (mp.get_mpattribute)("HSTR:GolangBinary") and l_0_0 > 5242880 and l_0_0 < 15728640 then
   return mp.INFECTED
 end
 return mp.CLEAN

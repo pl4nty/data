@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+;
+(bm.add_threat_file)(l_0_0)
 return mp.INFECTED
 

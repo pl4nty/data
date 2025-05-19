@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win64/IcedId.PAE!MTB") and l_0_0 > 241664 and l_0_0 < 249856 then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find(".vcxproj", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

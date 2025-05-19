@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).VA < pehdr.ImageBase + (pesecs[1]).VirtualAddress + 240 and (hstrlog[1]).VA + 10704 < pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-  return mp.SUSPICIOUS
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 18, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

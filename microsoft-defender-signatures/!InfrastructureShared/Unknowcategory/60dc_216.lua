@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Ganlet.B")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
+;
+(pe.reemulate)()
+return mp.INFECTED
 

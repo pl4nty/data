@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+if pehdr.NumberOfSections == 9 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

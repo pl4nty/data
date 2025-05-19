@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[7]).Name == ".EGlobal" and (pesecs[8]).Name == ".EGlobal" then
+if peattributes.ismsil == true and (mp.getfilesize)() < 20480000 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.UfsSetMetadataBool)("PSScriptWithServiceStopCommand", true)
+if not peattributes.has_msilresources then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

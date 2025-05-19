@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 338000 then
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
+if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+  (pe.set_peattribute)("disable_apicall_limit", true)
   return mp.INFECTED
 end
 return mp.CLEAN

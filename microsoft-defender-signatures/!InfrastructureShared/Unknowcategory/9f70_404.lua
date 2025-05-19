@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA ~= 0 then
-  return mp.CLEAN
+endswith = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  do return l_1_0:sub(-#l_1_1) == l_1_1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
-if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).RVA == 0 then
-  return mp.CLEAN
+
+if peattributes.isdll and not peattributes.hasexports and endswith((string.lower)((mp.getfilename)()), "magentloc.dll") then
+  return mp.INFECTED
 end
-if (mp.getfilesize)() >= 307200 or (mp.getfilesize)() < 51200 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

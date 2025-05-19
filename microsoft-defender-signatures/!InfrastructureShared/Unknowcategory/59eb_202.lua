@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Sigattr:TrojanSpy:Win32/Banker.gen!E.1") then
-  return mp.INFECTED
+if (pe.isdynamic_va)((hstrlog[1]).VA) then
+  return mp.SYNCLOWFI
 end
-return mp.CLEAN
+return mp.LOWFI
 

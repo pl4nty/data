@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 2 and (hstrlog[3]).hitcount > 2 then
+if (pesecs[3]).Name == ".qhw" and (pesecs[2]).Name == ".g" then
   return mp.INFECTED
 end
 return mp.CLEAN

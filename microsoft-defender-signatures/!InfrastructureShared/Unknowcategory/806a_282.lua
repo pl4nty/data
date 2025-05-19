@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("SIGATTR:MSIL/LoadPEBase64.J") then
+if pehdr.NumberOfSections == 4 and (pesecs[4]).SizeOfRawData == 75776 and (pesecs[4]).PointerToRawData == 91648 then
   return mp.INFECTED
 end
 return mp.CLEAN

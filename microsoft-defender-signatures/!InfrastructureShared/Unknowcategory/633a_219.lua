@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.no_security and peattributes.isdll then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Framaroot.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

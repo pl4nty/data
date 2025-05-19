@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() >= 17000 then
+if peattributes.ismsil == true and (mp.getfilesize)() < 300000 and peattributes.isexe == true then
   return mp.INFECTED
 end
 return mp.CLEAN

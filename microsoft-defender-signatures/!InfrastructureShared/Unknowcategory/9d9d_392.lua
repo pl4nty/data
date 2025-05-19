@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.reads_vdll_code and (peattributes.suspicious_image_version or peattributes.uses_access_violation or peattributes.uses_privinstr or peattributes.deep_analysis or peattributes.enable_vmm_grow) and peattributes.isdll then
-  return mp.INFECTED
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+local l_0_2 = (string.find)(l_0_1[2], ",", 1, true)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (string.sub)(l_0_1[2], 1, l_0_2 - 1)
+;
+(mp.ReportLowfi)(l_0_3, 503412062)
+return mp.INFECTED
 

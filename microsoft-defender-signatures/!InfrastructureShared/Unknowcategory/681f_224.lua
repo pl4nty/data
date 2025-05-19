@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(mp.set_mpattribute)("attrmatch_rescan_psif")
-return mp.INFECTED
+if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

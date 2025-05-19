@@ -3,18 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true then
-  local l_0_0 = (hstrlog[2]).VA
-  local l_0_1 = (pe.mmap_va)(l_0_0 + 7, 4)
-  local l_0_2 = 0
-  for l_0_6 = 4, 1, -1 do
-    l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
-  end
-  if l_0_2 > 8192 then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->(Ole Stream", -18, true) == nil then
+  return mp.CLEAN
 end
-do
-  return mp.LOWFI
+local l_0_1 = (mp.BMSearchFile)(7, 5, "ÎG\n\001\005\144\000")
+if l_0_1 ~= 0 then
+  return mp.CLEAN
 end
+;
+(mp.UfsSetMetadataBool)("OleShellCode", true)
+return mp.INFECTED
 
