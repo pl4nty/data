@@ -1855,6 +1855,10 @@
                 {
                     "Flight": "Microsoft.Teams.Augloop.TimeModerator.loopAgendaTrackingAllowed",
                     "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingMeetingStateUpdate",
+                    "IsEnabled": false
                 }
             ]
         }
@@ -2236,6 +2240,7 @@
             "JPN": "jp",
             "KOR": "kr",
             "MEX": "mx",
+            "MYS": "my",
             "NAM": "amer",
             "NOR": "no",
             "NZL": "nz",
@@ -2270,6 +2275,7 @@
                 "JPN": "jp",
                 "KOR": "kr",
                 "MEX": "mx",
+                "MYS": "my",
                 "NAM": "amer",
                 "NOR": "no",
                 "NZL": "nz",
