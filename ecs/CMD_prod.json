@@ -306,7 +306,7 @@
         "EnableImagePermissionGrantFlow": true,
         "EnableImageQueryOptimize": true,
         "EnableImageValidationNewRetryPolicy": true,
-        "EnableIndexOptimizationOne": true,
+        "EnableIndexOptimizationOne": false,
         "EnableIndexOptimizationTwo": false,
         "EnableInitiatedByColumn": false,
         "EnableInstallGridDriverForT4Sku": true,
