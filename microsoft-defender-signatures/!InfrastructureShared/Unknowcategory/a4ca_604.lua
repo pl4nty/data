@@ -3,17 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:VeriatoCertClean") or (mp.get_mpattribute)("Exception:MonitoringTool:Uninstaller:Veriato") or (mp.get_mpattribute)("CERT:Clean:Veriato") then
-  return mp.CLEAN
-end
-if (hstrlog[2]).hitcount > 3 then
-  if mp.HSTR_WEIGHT == 26 then
-    return mp.INFECTED
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil and (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[4]).utf8p1)
+  if l_0_0:match("([^\\]+)$") ~= l_0_1 then
+    return mp.CLEAN
   end
-  local l_0_0 = (pe.mmap_va)((hstrlog[1]).VA - 18, 16)
-  if (string.find)(l_0_0, "DenyListedUsers", 1, true) then
-    return mp.INFECTED
+  local l_0_2 = {}
+  l_0_2["winword.exe"] = true
+  l_0_2["excel.exe"] = true
+  l_0_2["outlook.exe"] = true
+  l_0_2["olk.exe"] = true
+  l_0_2["splwow64.exe"] = true
+  l_0_2["deletelogfiles.exe"] = true
+  l_0_2["dw20.exe"] = true
+  l_0_2["microsoft.uev.synccontroller.exe"] = true
+  if l_0_2[l_0_1] then
+    return mp.CLEAN
   end
+  return mp.INFECTED
 end
 do
   return mp.CLEAN

@@ -3,17 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
-if l_0_0 ~= nil then
-  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
-  if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then
-    local l_0_2 = (string.lower)(l_0_1)
-    if (string.find)(l_0_2, "cmd", 1, true) or (string.find)(l_0_2, "msconfig", 1, true) or (string.find)(l_0_2, "taskmgr", 1, true) then
-      return mp.INFECTED
+if (hstrlog[1]).matched then
+  local l_0_0 = (hstrlog[1]).VA + 14
+  local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+  local l_0_2 = (mp.readu_u32)(l_0_1, 1)
+  local l_0_3 = (pe.mmap_va)(l_0_2, 16)
+  if (string.sub)(l_0_3, 1, 3) == "cmd" then
+    return mp.INFECTED
+  end
+else
+  do
+    if (hstrlog[2]).matched then
+      local l_0_4 = (hstrlog[2]).VA + 9
+      local l_0_5 = (pe.mmap_va)(l_0_4, 4)
+      local l_0_6 = (mp.readu_u32)(l_0_5, 1)
+      local l_0_7 = (pe.mmap_va)(l_0_6, 16)
+      if (string.sub)(l_0_7, 1, 7) == "[Shift]" then
+        return mp.INFECTED
+      end
+    end
+    do
+      return mp.CLEAN
     end
   end
-end
-do
-  return mp.CLEAN
 end
 

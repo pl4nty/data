@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 135000 and l_0_0 < 150000 and pehdr.NumberOfSections >= 6 and (pesecs[3]).Name == ".zfq" and (pesecs[4]).Name == ".flq" then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 2 and not (mp.get_mpattribute)("deep_analysis") then
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.reemulate)()
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:BrowseFox")
+return mp.INFECTED
 

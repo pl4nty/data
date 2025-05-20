@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_hstr_exhaustive") then
-  (pe.set_peattribute)("enable_vmm_grow", true)
-  ;
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
-else
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.reason == 1 then
+    if (string.lower)((string.match)(l_0_6.image_path, "\\([^\\]+)$")) == "razerinstaller.exe" then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 return mp.CLEAN
 

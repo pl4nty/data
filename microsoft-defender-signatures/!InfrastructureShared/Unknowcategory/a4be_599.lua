@@ -3,38 +3,25 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-      local l_0_3 = nil
-      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
-      if (string.find)(R6_PC25, ":\\program files", 1, true) then
-        return mp.CLEAN
-      else
-        if (string.find)(R6_PC25, "\\ccmcache\\", 1, true) then
-          return mp.CLEAN
-        else
-          if (string.find)(R6_PC25, "ccm32bitlauncher", 1, true) then
-            return mp.CLEAN
-          end
-        end
-      end
+  if peattributes.isexe and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+    local l_0_0 = (hstrlog[1]).hitcount
+    if l_0_0 > 10 then
+      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsGT10")
+    end
+    if l_0_0 > 20 then
+      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsGT20")
+    else
+      ;
+      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsLE20")
+    end
+    if l_0_0 > 30 then
+      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsGT30")
+    else
+      ;
+      (mp.set_mpattribute)("HSTR:DelphiPacker.DummyCallsLE30")
     end
   end
-  do
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
 

@@ -3,23 +3,26 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
   end
-end
-if (this_sigattrlog[4]).matched and (this_sigattrlog[5]).matched then
-  local l_0_6 = (this_sigattrlog[4]).p1
-  local l_0_7 = (this_sigattrlog[5]).p1
-  if l_0_6:lower() .. l_0_7:lower() == "unsafe" then
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
     return mp.INFECTED
   end
-end
-do
-  return mp.LOWFI
+  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if (string.lower)((this_sigattrlog[2]).utf8p2) ~= nil then
+      local l_0_3 = (string.gsub)((string.lower)((this_sigattrlog[2]).utf8p2), "\"", "")
+      if (string.find)(l_0_3, "/c cd /d", 1, true) then
+        return mp.INFECTED
+      end
+    end
+    return mp.CLEAN
+  end
 end
 

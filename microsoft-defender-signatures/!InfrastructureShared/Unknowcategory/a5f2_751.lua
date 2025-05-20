@@ -3,30 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+if not (string.find)(l_0_0, "^c:\\") and not (string.find)(l_0_0, "^\\\\") then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
+if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\programa\\", 1, true) or (string.find)(l_0_0, "\\programas\\", 1, true) or (string.find)(l_0_0, "pedeletronico", 1, true) or (string.find)(l_0_0, "gerencial", 1, true) or (string.find)(l_0_0, "det.processador", 1, true) then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 2000000 or l_0_0 < 4000 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("system32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("syswow64", 1, true) then
+if not (MpCommon.QueryPersistContext)(l_0_0, "ExecutedPENoCert") then
   return mp.CLEAN
 end
 return mp.INFECTED

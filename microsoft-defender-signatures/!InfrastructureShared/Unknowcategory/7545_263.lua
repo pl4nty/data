@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (l_0_0 > 1000000 and l_0_0 < 2000000) or l_0_0 > 200000 and l_0_0 < 500000 then
+if peattributes.ismsil and peattributes.has_msilresources and (hstrlog[2]).hitcount > 300 then
   return mp.INFECTED
 end
 return mp.CLEAN

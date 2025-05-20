@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false and peattributes.no_security == true then
+if ((hstrlog[1]).matched or (hstrlog[2]).matched) and ((hstrlog[3]).matched or (hstrlog[4]).matched) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -15,9 +15,9 @@ do
   l_0_0 = pe
   l_0_0 = l_0_0.get_versioninfo
   l_0_0 = l_0_0()
-  if l_0_0 == nil then
-    return mp.INFECTED
+  if l_0_0 ~= nil then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

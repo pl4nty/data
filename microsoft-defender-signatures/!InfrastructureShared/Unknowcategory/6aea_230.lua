@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == "pxsZHe0" and peattributes.no_security == true then
+if peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
   return mp.INFECTED
 end
 return mp.CLEAN

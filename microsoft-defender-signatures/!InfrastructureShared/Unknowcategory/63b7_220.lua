@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 2 and (hstrlog[1]).hitcount > 3 then
-  return mp.INFECTED
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "\235")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 60, "\235")
 return mp.CLEAN
 

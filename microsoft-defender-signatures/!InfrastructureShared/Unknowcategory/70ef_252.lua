@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.isdll == false and pehdr.NumberOfSections == 9 then
+if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%a+.exe") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

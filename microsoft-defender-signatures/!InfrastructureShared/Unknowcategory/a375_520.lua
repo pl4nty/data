@@ -3,22 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-local l_0_1 = (bm.get_imagepath)()
-do
-  if l_0_1 ~= nil then
-    local l_0_2 = {}
-    l_0_2["cmstp.exe"] = true
-    l_0_2["dllhost.exe"] = true
-    if l_0_2[((string.lower)((string.sub)(l_0_1, -15))):match("\\([^\\]+)$")] then
-      return mp.CLEAN
-    end
-  end
-  ;
-  (bm.add_related_file)(l_0_1)
-  return mp.INFECTED
-end
+;
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EAX), 4)
+local l_0_1 = (string.byte)(l_0_0) - 1
+local l_0_2 = (string.byte)(l_0_0, 3) + 16
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX), (string.char)(l_0_1))
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX) + 2, (string.char)(l_0_2))
+return mp.INFECTED
 

@@ -3,25 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 16
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 96)
-local l_0_2 = (string.byte)(l_0_1, 1) + 2
-if #l_0_1 < l_0_2 then
-  return mp.CLEAN
-end
-if (string.byte)(l_0_1, l_0_2 - 2) == 117 and (string.byte)(l_0_1, l_0_2 - 4) == 116 then
-  local l_0_3 = (string.byte)(l_0_1, l_0_2 - 3) + l_0_2 - 2
-  if #l_0_1 < l_0_3 then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
-  if (string.byte)(l_0_1, l_0_3) == 232 then
-    local l_0_4 = "\235"
-    ;
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_0 + l_0_2 - 5, l_0_4)
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    local l_0_3 = {["\\winhlp32.exe"] = true, ["\\werfault.exe"] = true, ["\\imepadsv.exe"] = true, ["\\splwow64.exe"] = true, ["\\sgtool.exe"] = true, ["\\mdm.exe"] = true, ["\\sgpicfacetool.exe"] = true}
+    local l_0_4 = nil
+    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$") ~= nil and l_0_3[(string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$")] == true then
+      return mp.CLEAN
+    end
+  end
+  do
     return mp.INFECTED
   end
-end
-do
-  return mp.CLEAN
 end
 

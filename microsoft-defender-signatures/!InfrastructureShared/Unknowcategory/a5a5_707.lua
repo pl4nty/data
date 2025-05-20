@@ -20,10 +20,10 @@ do
     local l_0_3 = nil
     -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
 
-    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasBitbucketUrl") then
+    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasMediafireUrl") then
       (bm.add_related_file)(R7_PC42)
-      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromBitbucket") then
-        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromBitbucket", 3600)
+      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromMediafire") then
+        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromMediafire", 3600)
         return mp.INFECTED
       end
     end

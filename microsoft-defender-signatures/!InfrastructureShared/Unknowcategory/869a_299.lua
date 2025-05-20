@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 976800 and (mp.getfilesize)() < 1330584 and (pesecs[4]).Name == "INIT" and (pesecs[4]).Characteristics == 3791650848 then
+if (mp.get_mpattribute)("BM_MZ_FILE") and pehdr.NumberOfSections > 8 and (pesecs[6]).VirtualSize > 2097152 then
   return mp.INFECTED
 end
 return mp.CLEAN

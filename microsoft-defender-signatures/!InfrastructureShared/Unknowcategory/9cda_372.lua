@@ -3,14 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[5]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[5]).utf8p2)
-  if l_0_0 ~= nil and l_0_1 ~= nil and (string.find)(l_0_1, l_0_0, 1, true) then
-    return mp.INFECTED
-  end
-end
+-- DECOMPILER ERROR at PC8: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.CLEAN
+  if (hstrlog[3]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
+  end
+  if (hstrlog[4]).matched then
+    do return mp.CLEAN end
+    local l_0_3 = nil
+    if (mp.readu_u32)((pe.mmap_va)((hstrlog[4]).VA - 4, 4), 1) >= 24576 and (mp.readu_u32)((pe.mmap_va)((hstrlog[4]).VA - 4, 4), 1) < 28672 then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 

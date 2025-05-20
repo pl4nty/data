@@ -3,19 +3,46 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  if (string.find)(l_0_0, ".ps1", 1, true) and not (string.find)(l_0_0, " -", 1, true) then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil, nil
   else
-    if (string.find)(l_0_1, ".dll", 1, true) or (string.find)(l_0_1, ".cpl", 1, true) or (string.find)(l_0_1, ".ocx", 1, true) or (string.find)(l_0_1, ".wcx", 1, true) or (string.find)(l_0_1, ".inf", 1, true) or (string.find)(l_0_1, "\\drivers\\", 1, true) or (string.find)(l_0_1, "\\windows\\installer\\", 1, true) or (string.find)(l_0_1, "tsworkspace", 1, true) then
-      return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 ~= nil) and (string.len)((this_sigattrlog[3]).utf8p2) > 3 then
+    local l_0_5 = nil
+    -- DECOMPILER ERROR at PC39: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC57: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC66: Confused about usage of register: R1 in 'UnsetPending'
+
+    if (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "\\%d+.dll") ~= nil or (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "startw", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "dllregisterserver", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "plugininit", 1, true) ~= nil or (string.find)((string.lower)((this_sigattrlog[3]).utf8p2), "\\appdata\\roaming\\%a+.dll") ~= nil then
+      local l_0_6 = nil
+      if (mp.GetExecutablesFromCommandLine)(l_0_5) ~= nil then
+        for l_0_10,l_0_11 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_5)) do
+          local l_0_7 = nil
+          -- DECOMPILER ERROR at PC83: Confused about usage of register: R7 in 'UnsetPending'
+
+          R7_PC83 = (mp.ContextualExpandEnvironmentVariables)(R7_PC83)
+          ;
+          (bm.add_related_file)(R7_PC83)
+        end
+      end
+      do
+        do
+          do return mp.INFECTED end
+          return mp.CLEAN
+        end
+      end
     end
   end
-  return mp.INFECTED
-end
-do
-  return mp.CLEAN
 end
 

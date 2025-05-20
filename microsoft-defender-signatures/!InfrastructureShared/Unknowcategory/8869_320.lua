@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+if epcode[2] == 131 and epcode[3] == 236 and epcode[5] == 232 and epcode[11] == 131 and epcode[12] == 196 and epcode[14] == 233 then
   return mp.INFECTED
-else
-  if mp.HSTR_WEIGHT == 2 then
-    return mp.LOWFI
-  end
-end
-if (hstrlog[3]).matched then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.CLEAN
 

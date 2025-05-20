@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 48, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.sub)(l_0_0, -9) ~= "steam.exe" then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

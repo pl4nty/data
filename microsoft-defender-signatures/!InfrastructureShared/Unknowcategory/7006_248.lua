@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)()
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if (string.lower)(l_0_2) == "mpkview.exe" then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.LOWFI
 

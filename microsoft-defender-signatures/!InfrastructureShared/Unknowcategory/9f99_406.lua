@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not peattributes.ismsil then
-  return mp.CLEAN
+if peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Name == ".htext" and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096480 and ((pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3758096448 or (pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3791650880) then
+  return mp.INFECTED
 end
-local l_0_0 = (hstrlog[3]).VA
-local l_0_1 = (hstrlog[4]).VA
-if l_0_1 < l_0_0 then
-  return mp.CLEAN
-end
-local l_0_2 = (pe.mmap_va)(l_0_0, l_0_1 - l_0_0 + 10)
-;
-(mp.vfo_add_buffer)(l_0_2, "[ShellDump]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 return mp.CLEAN
 

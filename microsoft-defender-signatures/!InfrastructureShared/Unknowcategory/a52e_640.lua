@@ -3,37 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched then
-  local l_0_0 = (this_sigattrlog[2]).utf8p1
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 and (string.sub)(l_0_0, -4) == ".lnk" then
-    local l_0_1, l_0_2 = (bm.get_process_relationships)()
-    for l_0_6,l_0_7 in ipairs(l_0_1) do
-      if l_0_7.image_path ~= nil then
-        local l_0_8 = (mp.bitand)(l_0_7.reason_ex, 1)
-        if l_0_8 == 1 and (string.find)((string.lower)(l_0_7.image_path), "\\regsvr32.exe", 1, true) then
-          do
-            do
-              (bm.add_threat_process)(l_0_7.ppid)
-              do break end
-              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out DO_STMT
-
-              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_STMT
-
-              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_STMT
-
-            end
-          end
-        end
-      end
-    end
-    return mp.INFECTED
-  end
-end
-do
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
+if peattributes.ismsil then
+  (mp.set_mpattribute)("HSTR:PossibleMSILDownloader.A")
+  return mp.INFECTED
+end
+if peattributes.isvbpcode or peattributes.isvbnative then
+  (mp.set_mpattribute)("HSTR:PossibleVBDownloader.A")
+  return mp.INFECTED
+end
+if peattributes.is_delphi or (mp.get_mpattribute)("SIGATTR:DelphiFile") or (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+  (mp.set_mpattribute)("HSTR:PossibleDelphiDownloader.A")
+  return mp.INFECTED
+end
+return mp.CLEAN
 

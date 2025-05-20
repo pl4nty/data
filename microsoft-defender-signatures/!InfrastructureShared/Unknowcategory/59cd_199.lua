@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image and peattributes.no_security == true then
+if (pe.query_import)(pe.IMPORT_STATIC, 1796572604) then
   return mp.INFECTED
 end
 return mp.CLEAN

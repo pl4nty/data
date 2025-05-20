@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>inst%.vbs$") == nil then
-  return mp.CLEAN
+if (sigattr_tail[mp.SIGATTR_LOG_SZ]).matched == true and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12352 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

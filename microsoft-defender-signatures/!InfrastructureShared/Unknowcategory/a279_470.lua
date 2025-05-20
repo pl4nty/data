@@ -3,22 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("LUA:FileSizeLE5000.A") then
+if not (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-if l_0_2 == nil then
-  l_0_0 = (mp.getfilename)()
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  l_0_1 = l_0_0:sub(-5)
-else
-  l_0_1 = l_0_2:sub(-5)
-end
-if (string.find)(l_0_1:lower(), ".asp") then
-  return mp.INFECTED
-end
-return mp.LOWFI
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 48)
+local l_0_1 = (mp.readu_u32)(l_0_0, 6)
+local l_0_2 = (mp.readu_u32)(l_0_0, 38)
+local l_0_3 = (string.format)("CURE:Virus:Win32/Xpaj.C_%08X_%08X", l_0_1, l_0_2)
+;
+(mp.set_mpattribute)(l_0_3)
+return mp.INFECTED
 

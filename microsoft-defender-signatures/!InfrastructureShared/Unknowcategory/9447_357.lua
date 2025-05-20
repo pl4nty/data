@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SLF:Win32/Sysdupate.E") then
-  return mp.CLEAN
-end
-if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 4 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (string.find)(l_0_6.image_path, "rundll32.exe", 1, true) then
-    return mp.INFECTED
-  end
+if peattributes.ismsil == true and (mp.get_mpattribute)("LUA:FileSizeLE2000.A") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

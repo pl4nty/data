@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%->%(RarSfx%)%->%w+%.exe%->%(RarSfx%)") == nil then
-  return mp.CLEAN
+if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 2 and peattributes.isexe and peattributes.lastscn_writable and peattributes.lastscn_executable and peattributes.lastscn_vfalign and (pesecs[pehdr.NumberOfSections]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).VirtualAddress <= (hstrlog[1]).VA - pehdr.ImageBase then
-  return mp.INFECTED
+local l_0_0 = (pe.get_regval)(pe.REG_EBP)
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 8)
+local l_0_2 = (mp.bitor)((string.byte)(l_0_1, 3), 4294967040)
+l_0_1 = (pe.mmap_va)((mp.bitand)(l_0_0 + l_0_2, 4294967295), 4)
+local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1
+l_0_1 = (pe.mmap_va)(l_0_3, 4)
+if (mp.readu_u32)(l_0_1, 1) == 707406378 then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

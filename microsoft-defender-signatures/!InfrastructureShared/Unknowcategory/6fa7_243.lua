@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (hstrlog[1]).VA
-local l_0_1 = (hstrlog[2]).VA
-local l_0_2 = 0
-if l_0_0 < l_0_1 then
-  l_0_2 = l_0_1 - l_0_0
-else
-  l_0_2 = l_0_0 - l_0_1
-end
-if l_0_2 > 160 and l_0_2 < 256 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 50, "\235")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 86, "")
+return mp.INFECTED
 

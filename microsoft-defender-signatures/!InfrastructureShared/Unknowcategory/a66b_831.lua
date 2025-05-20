@@ -9,9 +9,9 @@ end
 if (mp.getfilesize)() >= 3145728 then
   return mp.CLEAN
 end
-if (this_sigattrlog[10]).matched and (this_sigattrlog[12]).matched then
+if (this_sigattrlog[10]).matched and (this_sigattrlog[11]).matched then
   local l_0_0 = (string.sub)((this_sigattrlog[10]).p1, 5)
-  local l_0_1 = (this_sigattrlog[12]).p1
+  local l_0_1 = (this_sigattrlog[11]).p1
   if #l_0_0 ~= #l_0_1 then
     return mp.CLEAN
   end

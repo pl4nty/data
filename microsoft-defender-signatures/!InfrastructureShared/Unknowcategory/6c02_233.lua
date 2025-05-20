@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Dexel.B!Pra1") then
+if peattributes.isexe and (mp.getfilesize)() > 2000000 and (mp.getfilesize)() < 9000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

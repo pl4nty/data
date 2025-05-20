@@ -4,13 +4,13 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 64)
-local l_0_1 = (string.find)(l_0_0, "a}", 1, true)
+local l_0_1 = (string.find)(l_0_0, "‰U\248", 1, true)
 if l_0_1 ~= nil then
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 7, "")
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 9, "")
   ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 16, "")
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 18, "")
   ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 22, "")
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 24, "")
   return mp.INFECTED
 end
 return mp.LOWFI

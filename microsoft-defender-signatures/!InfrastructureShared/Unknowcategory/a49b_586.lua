@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp1 ~= nil and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  local l_0_2, l_0_3 = (string.match)(l_0_0, "\\microsoft\\(%a+)\\(%a+)%.dat")
-  local l_0_4, l_0_5 = (string.match)(l_0_1, "\\microsoft\\(%a+)\\(%a+)%.exe")
-  if l_0_2 and l_0_3 and l_0_4 and l_0_5 and l_0_2 == l_0_4 and (string.sub)(l_0_2, 1, -3) == l_0_3 and (string.sub)(l_0_4, 1, -2) == l_0_5 then
-    return mp.INFECTED
-  end
+if pevars.epsec < pehdr.NumberOfSections or (mp.readu_u32)(epcode, 1) ~= 2030270560 or peattributes.epoutofimage or peattributes.amd64_image or (mp.getfilesize)() < pehdr.SizeOfImage then
+  (mp.changedetectionname)(805306412)
+  return mp.INFECTED
 end
-do
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_INMEMORY then
   return mp.CLEAN
 end
+return mp.INFECTED
 

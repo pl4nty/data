@@ -3,33 +3,53 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
-    if (string.find)(l_0_0, ":\\windows", 2, true) or (string.find)(l_0_0, "%windir%", 1, true) or (string.find)(l_0_0, "\"%windows%", 1, true) then
-      return mp.CLEAN
-    end
+checkProcessTree = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_0 == nil or l_1_1 == nil or type(l_1_1) ~= "table" then
+    return nil
   end
-  local l_0_1 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
-  if (mp.IsKnownFriendlyFile)(l_0_1, true, false) == false then
-    (bm.add_related_file)(l_0_1)
-  end
-  local l_0_2 = ((bm.get_current_process_startup_info)()).ppid
-  if l_0_2 ~= nil then
-    local l_0_3 = (string.lower)((mp.GetProcessCommandLine)(l_0_2))
-    if l_0_3 ~= nil then
-      local l_0_4 = (mp.GetExecutablesFromCommandLine)(l_0_3)
-      for l_0_8,l_0_9 in ipairs(l_0_4) do
-        if (sysio.IsFileExists)(l_0_9) then
-          (bm.add_related_file)(l_0_9)
-        end
+  local l_1_2 = l_1_0
+  local l_1_3 = {}
+  for l_1_7,l_1_8 in ipairs(l_1_1) do
+    local l_1_9 = 0
+    local l_1_10, l_1_11 = (bm.get_process_relationships)(l_1_2)
+    for l_1_15,l_1_16 in ipairs(l_1_11) do
+      if (mp.bitand)(l_1_16.reason_ex, 1) == 1 and (string.sub)(l_1_16.image_path, -(string.len)(l_1_8)) == l_1_8 then
+        l_1_2 = l_1_16.ppid
+        l_1_9 = l_1_9 + 1
+      end
+      if l_1_9 > 1 then
+        return nil
       end
     end
+    if l_1_9 == 0 then
+      return nil
+    end
+    ;
+    (table.insert)(l_1_3, l_1_2)
   end
-  do
-    l_0_3 = mp
-    l_0_3 = l_0_3.INFECTED
-    return l_0_3
-  end
+  return l_1_3
 end
+
+if (bm.GetSignatureMatchDuration)() > 300000000 then
+  return mp.CLEAN
+end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 == nil or l_0_0.ppid == nil then
+  return mp.CLEAN
+end
+local l_0_1 = l_0_0.ppid
+local l_0_2 = {}
+-- DECOMPILER ERROR at PC26: No list found for R2 , SetList fails
+
+-- DECOMPILER ERROR at PC27: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC28: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC29: Overwrote pending register: R5 in 'AssignReg'
+
+if ("cmd.exe")("cmd.exe", "powershell.exe") == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

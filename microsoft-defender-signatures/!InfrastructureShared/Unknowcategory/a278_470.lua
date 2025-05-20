@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
+local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if ((string.match)(l_0_0, "\\amazon\\codedeploy\\bin") ~= nil and l_0_1 == "winagent.exe") or (string.match)(l_0_0, "\\spiceworks") ~= nil and l_0_1 == "spiceworks_safemode.exe" then
   return mp.CLEAN
 end
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 48)
-local l_0_1 = (mp.readu_u32)(l_0_0, 6)
-local l_0_2 = (mp.readu_u32)(l_0_0, 38)
-local l_0_3 = (string.format)("CURE:Virus:Win32/Xpaj.C_%08X_%08X", l_0_1, l_0_2)
-;
-(mp.set_mpattribute)(l_0_3)
 return mp.INFECTED
 

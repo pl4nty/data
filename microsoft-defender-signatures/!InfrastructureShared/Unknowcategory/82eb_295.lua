@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-local l_0_1 = (sysio.GetProcessFromFileName)(l_0_0)
-if l_0_1 == nil or #l_0_1 == 0 then
-  return mp.CLEAN
+if peattributes.isexe and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") and (hstrlog[2]).hitcount >= 3 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

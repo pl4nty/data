@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[4]).matched then
-  (mp.changedetectionname)(805306398)
+if ((pehdr.DataDirectory)[1]).Size < 256 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

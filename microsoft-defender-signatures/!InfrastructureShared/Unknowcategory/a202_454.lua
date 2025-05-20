@@ -3,18 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -12) == "explorer.exe" then
-  return mp.CLEAN
-end
-if (string.sub)(l_0_0, -10) == "chrome.exe" then
-  return mp.CLEAN
-end
-if (string.sub)(l_0_0, -11) == "control.exe" then
-  return mp.CLEAN
-end
-if (string.sub)(l_0_0, -17) == "runtimebroker.exe" then
-  return mp.CLEAN
+local l_0_0 = {}
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28769 then
+    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
+    l_0_0.TlsJa3SHash = l_0_5
+    ;
+    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+  end
 end
 return mp.INFECTED
 

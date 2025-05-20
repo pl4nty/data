@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.find)(l_0_6.image_path, "wscript", 1, true) ~= nil then
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("%-%>.%d%d%d%d%d%d%d%d%d%d+/.%d%d%d%d%d%d%d%d%d%d+%.class$") ~= nil and (mp.getfilesize)() <= 2048 then
+  (mp.set_mpattribute)("Lua:Java/MaliciousClassName")
 end
-return mp.CLEAN
+return mp.INFECTED
 

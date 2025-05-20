@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:FindAvastAV") and (mp.get_mpattribute)("SIGATTR:ExCheckInstalledAV") and (mp.get_mpattribute)("SIGATTR:DirectoryWalkerVfs") and (mp.get_mpattribute)("SIGATTR:FindBaiuduAV") then
+if peattributes.no_security == true and peattributes.isexe == true and (pesecs[6]).Name == ".symtab" and (pesecs[3]).Characteristics == 3221225536 and (pesecs[4]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
 return mp.CLEAN

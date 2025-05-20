@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:DelphiFile") and pehdr.NumberOfSections == 8 then
-  (pe.set_image_filename)("\"myapp.exe\" /install")
-  ;
-  (pe.reemulate)()
+if (hstrlog[1]).matched and (hstrlog[1]).VA == 4194905 and pehdr.AddressOfEntryPoint == 4112 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).RVA == 4240 then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("PUA:Block:Prifou")
-return mp.INFECTED
+return mp.CLEAN
 

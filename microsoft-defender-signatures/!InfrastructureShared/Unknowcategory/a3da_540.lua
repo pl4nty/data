@@ -3,19 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-if (string.sub)(l_0_1, -5, -1) == ",WW50" or (string.sub)(l_0_1, -6, -1) == ", WW50" or (string.sub)(l_0_1, -5, -1) == ",N115" or (string.sub)(l_0_1, -6, -1) == ", N115" then
-  if l_0_0 ~= nil then
-    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0 and (MpCommon.GetPersistContextCountNoPath)("OfficeWmiProc") > 0 then
+    local l_0_1 = (MpCommon.GetPersistContextNoPath)("OfficeWmiProc")
+    if (string.find)(l_0_0, "wmiprvse.exe", 1, true) then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        if (sysio.IsFileExists)(l_0_6) then
+          (bm.add_related_file)(l_0_6)
+        end
+      end
+      return mp.INFECTED
+    end
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
 

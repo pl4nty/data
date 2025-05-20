@@ -3,12 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if l_0_1 ~= "regsvr32.exe " then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.GetParentProcInfo)()
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (string.lower)(l_0_2.image_path)
+if l_0_3:match("([^\\]+)$") ~= "regsvr32.exe" then
   return mp.CLEAN
 end
 ;
-(pe.mmap_patch_va)(pevars.sigaddr, "\184\028\024~=\144")
+(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
 ;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+(MpCommon.RequestSmsOnProcess)(l_0_2.ppid, MpCommon.SMS_SCAN_MED)
 return mp.INFECTED
 

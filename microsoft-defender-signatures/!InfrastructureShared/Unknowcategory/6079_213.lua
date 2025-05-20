@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("dt_continue_after_unpacking", true)
-;
-(pe.set_peattribute)("enable_vmm_grow", true)
-return mp.INFECTED
+if (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

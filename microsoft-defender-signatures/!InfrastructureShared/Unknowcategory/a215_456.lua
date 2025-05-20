@@ -3,21 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "\232\000\000\000\000", 1, true) + 5 - 1
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr + l_0_0, 16)
+if peattributes.isexe == true and (mp.getfilesize)() > 6000000 and (mp.getfilesize)() < 6300000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
+end
 do
-  if (string.find)(l_0_1, "\128,", 1, true) == nil then
-    local l_0_2 = (string.find)(l_0_1, "\128\004", 1, true)
+  l_0_0 = pe
+  l_0_0 = l_0_0.get_versioninfo
+  l_0_0 = l_0_0()
+  local l_0_6 = nil
+  if l_0_0 == nil then
+    l_0_6 = mp
+    l_0_6 = l_0_6.CLEAN
+    return l_0_6
   end
-  -- DECOMPILER ERROR at PC39: Confused about usage of register: R2 in 'UnsetPending'
-
-  for l_0_6 = 1, l_0_2 - 1 do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC47: Confused about usage of register: R6 in 'UnsetPending'
-
-    ;
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_0 + 1 - 1, "\144")
+  l_0_6 = l_0_0.OriginalFilename
+  if l_0_6 ~= "ladddad.exe" then
+    l_0_6 = mp
+    l_0_6 = l_0_6.CLEAN
+    return l_0_6
   end
-  return mp.INFECTED
+  l_0_6 = mp
+  l_0_6 = l_0_6.INFECTED
+  return l_0_6
 end
 

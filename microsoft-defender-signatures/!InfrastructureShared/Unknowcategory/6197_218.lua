@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "->(Rtf", 1, true) == nil then
-  return mp.CLEAN
+if peattributes.no_security and (peattributes.isexe or peattributes.isdll) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

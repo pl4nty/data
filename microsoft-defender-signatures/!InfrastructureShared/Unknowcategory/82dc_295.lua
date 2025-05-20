@@ -3,10 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-local l_0_1 = (sysio.GetProcessFromFileName)(l_0_0)
-if l_0_1 == nil or #l_0_1 == 0 then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "\015\133", 1, true) - 1, "")
 return mp.INFECTED
 

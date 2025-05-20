@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 6, 1)
 ;
-(pe.set_peattribute)("enable_vmm_grow", true)
+(pe.set_regval)(pe.REG_EAX, (string.byte)(l_0_0, 1))
 ;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.set_peattribute)("disable_seh_limit", true)
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr, "\144")
+return mp.INFECTED
 

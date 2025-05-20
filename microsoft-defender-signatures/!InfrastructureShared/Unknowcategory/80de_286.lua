@@ -3,19 +3,13 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and not (string.find)(l_0_0, ".zip", 1, true) then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = (string.lower)(l_0_0.image_path)
+if l_0_1:match("([^\\]+)$") == "spoolsv.exe" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

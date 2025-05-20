@@ -12,7 +12,7 @@ end
 if peattributes.lastscn_writable ~= true then
   return mp.CLEAN
 end
-if epcode[1] ~= 131 then
+if epcode[1] ~= 128 then
   return mp.CLEAN
 end
 if epcode[2] ~= 124 then

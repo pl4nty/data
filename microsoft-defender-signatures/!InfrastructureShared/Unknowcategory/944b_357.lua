@@ -3,13 +3,19 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
--- DECOMPILER ERROR at PC36: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC36: Unhandled construct in 'MakeBoolean' P3
-
-if ((hstrlog[1]).matched and (hstrlog[2]).matched) or not (hstrlog[1]).matched or (hstrlog[3]).matched == true then
-  return mp.SUSPICIOUS
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if l_0_1 ~= nil then
+  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    if (sysio.IsFileExists)(l_0_7) then
+      (bm.add_related_file)(l_0_7)
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_2 = mp
+  l_0_2 = l_0_2.INFECTED
+  return l_0_2
+end
 

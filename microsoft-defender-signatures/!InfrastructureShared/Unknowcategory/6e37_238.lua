@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 197000 then
+if (mp.getfilesize)() < 240000 then
   (mp.set_mpattribute)("do_exhaustivehstr_rescan")
   ;
   (pe.reemulate)()

@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[4]).Name == ".ndata" and (pesecs[4]).Characteristics == 3221225600 then
+if mp.HSTR_WEIGHT < 31 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT >= 31 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

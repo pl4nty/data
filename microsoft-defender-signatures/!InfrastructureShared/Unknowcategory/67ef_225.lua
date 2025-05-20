@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 618496 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

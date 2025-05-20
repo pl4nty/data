@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and pehdr.NumberOfSections == 3 and (mp.getfilesize)() == 80384 then
-  return mp.INFECTED
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "êê")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.CLEAN
 

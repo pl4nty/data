@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isvbnative == true then
-  return mp.INFECTED
+if peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.ismsil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

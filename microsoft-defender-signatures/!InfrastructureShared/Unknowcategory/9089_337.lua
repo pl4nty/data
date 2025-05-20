@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 9, 1)
-;
-(pe.set_regval)(pe.REG_EAX, (string.byte)(l_0_0, 1))
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 13, "")
-return mp.INFECTED
+if peattributes.isexe == true and peattributes.ismsil == true and (pesecs[2]).Name == ".rsrc" and (pesecs[3]).Name == ".reloc" and (mp.getfilesize)() > 500000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

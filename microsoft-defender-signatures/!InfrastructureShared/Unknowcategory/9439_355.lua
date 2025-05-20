@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).VirtualSize == 8192 and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3221225472) == 3221225472 and (mp.bitand)((pesecs[pehdr.NumberOfSections - 1]).Characteristics, 3221225472) == 3221225472 then
+if mp.HSTR_WEIGHT >= 6 then
   return mp.INFECTED
 end
+if mp.HSTR_WEIGHT > 3 and (mp.get_mpattribute)("HSTR:Fareit.gen") then
+  return mp.INFECTED
+end
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
 return mp.LOWFI
 

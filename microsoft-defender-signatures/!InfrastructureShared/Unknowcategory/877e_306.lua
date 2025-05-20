@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:VeriatoCertClean") or (mp.get_mpattribute)("Exception:MonitoringTool:Uninstaller:Veriato") or (mp.get_mpattribute)("CERT:Clean:Veriato") then
+if (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 then
+  return mp.CLEAN
+end
+if (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 9 or (hstrlog[1]).VA ~= 4214784 then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "\235")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\002")
 return mp.INFECTED
 

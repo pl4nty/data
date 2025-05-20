@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "svchost.exe" and (versioning.IsSeville)() then
-      return mp.INFECTED
-    end
-  end
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or not (mp.get_mpattribute)("pea_hasexports") then
   return mp.CLEAN
 end
+if (mp.getfilesize)() > 2097152 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

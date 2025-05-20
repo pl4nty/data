@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+if peattributes.isdll and (mp.getfilesize)() <= 819200 and (mp.getfilesize)() >= 614400 then
   return mp.INFECTED
-end
-if (hstrlog[1]).matched then
-  return mp.LOWFI
 end
 return mp.CLEAN
 

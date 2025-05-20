@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.enable_vmm_grow and (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.dynmem_APIcall and peattributes.suspicious_linker_version then
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0 = nil
+    if (string.find)(l_0_0, "\\seal systems\\p2p_scripts\\", 1, true) then
+      return mp.CLEAN
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

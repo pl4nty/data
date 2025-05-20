@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true then
-  if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
-  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-  end
-  return mp.INFECTED
+if (bm.GetSignatureMatchDuration)() > 12000000000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = nil
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+  l_0_0 = (this_sigattrlog[4]).utf8p2
+end
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+;
+(bm.add_related_string)("ProcessCreateParam", l_0_0, bm.RelatedStringBMReport)
+return mp.INFECTED
 

@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_obfuscator_xt_4")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 20, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 67, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-;
-(mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT")
-return mp.SUSPICIOUS
+for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_tail[l_0_3]).matched and (sigattr_tail[l_0_3]).attribute == 16384 then
+    local l_0_4 = (string.lower)((mp.utf16to8)((sigattr_tail[l_0_3]).wp1))
+    if (string.find)(l_0_4, "\\temp\\%a%a%a%a%a%a%a%a.exe") then
+      return mp.INFECTED
+    end
+  end
+end
+return mp.CLEAN
 

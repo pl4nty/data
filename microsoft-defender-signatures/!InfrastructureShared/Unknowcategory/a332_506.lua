@@ -3,23 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC3: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil and (mp.get_mpattribute)("HSTR:ollama!MTB") and peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
+  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+  end
 end
--- DECOMPILER ERROR at PC14: Overwrote pending register: R1 in 'AssignReg'
-
-local l_0_1 = nil
-if l_0_1 == nil then
-  return mp.CLEAN
-end
--- DECOMPILER ERROR at PC24: Overwrote pending register: R2 in 'AssignReg'
-
-local l_0_2 = nil
-if l_0_2 ~= nil and ((string.find)(l_0_2, "wget", 1, true) or (string.find)(l_0_2, "powershell", 1, true) or (string.find)(l_0_2, "python", 1, true)) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 83 and epcode[2] == 85 and epcode[3] == 187 and epcode[4] == 149 and epcode[5] == 31 and peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+if (string.match)((string.lower)((mp.getfilename)()), "%.jpg$") or (string.match)((string.lower)((mp.getfilename)()), "%.jpeg$") or (string.match)((string.lower)((mp.getfilename)()), "%.png$") or (string.match)((string.lower)((mp.getfilename)()), "%.gif$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

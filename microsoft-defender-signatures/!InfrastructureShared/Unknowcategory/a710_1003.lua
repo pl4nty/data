@@ -20,7 +20,7 @@ if peattributes.packed == true then
   if l_0_2 == nil then
     return mp.CLEAN
   end
-  local l_0_3 = (pe.mmap_va)((pe.get_regval)(pe.REG_EDI), 20)
+  local l_0_3 = (pe.mmap_va)((pe.get_regval)(pe.REG_ECX), 20)
   if (mp.readu_u32)(l_0_3, 17) ~= 206128461 then
     return mp.CLEAN
   end

@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 124160 and pehdr.NumberOfSections == 5 and (pesecs[4]).Name == ".zdata" then
+if (string.lower)((string.sub)(((pe.get_versioninfo)()).CompanyName, 1, 12)) == "bilberrysoft" then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

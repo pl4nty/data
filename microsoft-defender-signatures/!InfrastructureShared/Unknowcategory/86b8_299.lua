@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports then
-  (mp.set_mpattribute)("ChangeEPtoExport")
-  ;
-  (mp.set_mpattribute)("HSTR:TrojanProxy:Win32/Bunitu.F")
-  return mp.LOWFI
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil or l_0_0.image_path == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (string.lower)(l_0_0.image_path)
+if l_0_1:match("([^\\]+)$") ~= "explorer.exe" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

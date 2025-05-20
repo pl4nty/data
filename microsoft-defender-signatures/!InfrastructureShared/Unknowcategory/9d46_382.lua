@@ -3,8 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == true and (pesecs[4]).Name == ".fptable" and (pesecs[4]).Characteristics == 3221225536 and (mp.getfilesize)() >= 5000000 and (mp.getfilesize)() <= 20000000 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetBruteMatchData)()
+do
+  local l_0_1 = ""
+  if l_0_0.is_header then
+    l_0_1 = (string.lower)(tostring(headerpage))
+  else
+    l_0_1 = (string.lower)(tostring(footerpage))
+  end
+  if l_0_1 > 3 then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
-return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 10 and (pesecs[9]).PointerToRawData == 1536 and pehdr.Machine == 332 and pehdr.Subsystem == 2 then
+if peattributes.isexe == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.epinfirstsect == true and peattributes.no_security == true and peattributes.no_debug == true then
   return mp.INFECTED
 end
 return mp.CLEAN

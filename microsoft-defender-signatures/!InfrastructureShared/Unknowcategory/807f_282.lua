@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.no_security == true and pehdr.AddressOfEntryPoint ~= 837630 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 55, "")
+;
+(pe.set_regval)(pe.REG_EAX, (pe.get_regval)(pe.REG_EAX) - 1)
+return mp.LOWFI
 

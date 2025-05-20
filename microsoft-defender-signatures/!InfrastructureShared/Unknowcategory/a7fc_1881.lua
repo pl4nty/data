@@ -47,10 +47,10 @@ if l_0_8 == false then
   return mp.CLEAN
 end
 if (this_sigattrlog[4]).matched then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2717791813)
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2751503853)
 else
   ;
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 3542909154)
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 330380806)
 end
 return mp.INFECTED
 

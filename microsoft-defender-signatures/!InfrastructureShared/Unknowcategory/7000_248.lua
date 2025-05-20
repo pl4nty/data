@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("attrmatch_rescan_psif")
-;
-(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
-return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, ".rtf->word", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

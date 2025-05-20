@@ -3,9 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (mp.get_mpattribute)("NID:PossibleParadiseSh") and peattributes.no_security == true and l_0_0 <= 8704 and l_0_0 >= 7680 and peattributes.isdll == false and pehdr.NumberOfSections == 4 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("lua_injector_cl_ep") == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (hstrlog[1]).matched then
+  (mp.set_mpattribute)("InjCLT!02" .. "itsapproaching")
+else
+  if (hstrlog[2]).matched then
+    (mp.set_mpattribute)("InjCLT!02" .. "thereyougo")
+  end
+end
+return mp.LOWFI
 

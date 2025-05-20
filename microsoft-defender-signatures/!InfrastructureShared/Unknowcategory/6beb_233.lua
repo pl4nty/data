@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
+(mp.set_mpattribute)("HSTR:VirTool:MSIL/Injector.GM")
+if peattributes.ismsil == true then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:UpatreFragC_Nonprocess")
-return mp.CLEAN
+return mp.LOWFI
 

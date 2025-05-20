@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = (this_sigattrlog[3]).utf8p2
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 7 then
-    local l_0_1 = (string.lower)(l_0_0)
-    if (string.find)(l_0_1, "nop", 1, true) and ((string.find)(l_0_1, "encoded", 1, true) or (string.find)(l_0_1, "bypass", 1, true)) then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (pe.get_regval)(pe.REG_EBP)
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 8)
+local l_0_2 = (mp.readu_u32)(l_0_1, 3)
+l_0_1 = (pe.mmap_va)((mp.bitand)(l_0_0 + l_0_2, 4294967295), 4)
+local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1
+l_0_1 = (pe.mmap_va)(l_0_3, 4)
+if (mp.readu_u32)(l_0_1, 1) == 707406378 then
+  return mp.SUSPICIOUS
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

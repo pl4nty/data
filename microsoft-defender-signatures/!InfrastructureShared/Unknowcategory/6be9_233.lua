@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
+if pehdr.NumberOfSections == 10 and (pesecs[6]).Name == "WET_J" then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:UpatreFragB_Nonprocess")
 return mp.CLEAN
 

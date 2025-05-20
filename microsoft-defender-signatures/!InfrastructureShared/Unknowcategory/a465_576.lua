@@ -5,7 +5,7 @@
 -- function num : 0
 local l_0_0, l_0_1 = (bm.get_process_relationships)()
 for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\dllhost.exe", 1, true) then
+  if (string.find)((string.lower)(l_0_6.image_path), "\\svchost.exe", 1, true) then
     local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
     local l_0_9 = tonumber(l_0_7)
     local l_0_10 = tonumber(l_0_8)

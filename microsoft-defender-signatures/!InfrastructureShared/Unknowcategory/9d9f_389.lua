@@ -3,20 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["winword.exe"] = true
-  l_0_3["excel.exe"] = true
-  l_0_3["powerpnt.exe"] = true
-  l_0_3["outlook.exe"] = true
-  if l_0_3[l_0_2] then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilesize)()
+if (mp.get_mpattribute)("NID:PossibleParadiseSh") and peattributes.no_security == true and l_0_0 <= 8704 and l_0_0 >= 7680 and peattributes.isdll == false and pehdr.NumberOfSections == 4 then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

@@ -3,20 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[1]).matched then
-  l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
+do
+  if (mp.get_mpattribute)("LUA:FileSizeLE80000.A") and (mp.get_mpattribute)("Lua:FileSizeGEC350") and (mp.get_mpattribute)("BM_DropperObfuscatorUR") and (mp.get_mpattribute)("MpHasExpensiveLoop") and pehdr.TimeDateStamp ~= 0 then
+    local l_0_0 = (MpCommon.GetCurrentTimeT)()
+    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 2592000 then
+      return mp.INFECTED
     end
   end
+  return mp.CLEAN
 end
-if l_0_0 ~= nil and (string.len)(l_0_0) > 10 and (string.find)(l_0_0, "pskill", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

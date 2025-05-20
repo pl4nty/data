@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 11 then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%->%(RarSfx%)%->%w+%.exe%->%(RarSfx%)") == nil then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win32/Injector.gen!EE")
-return mp.CLEAN
+return mp.INFECTED
 

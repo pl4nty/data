@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.getfilesize)() > 1300000 and (mp.getfilesize)() < 3200000 and peattributes.isexe == true then
+if peattributes.isdll == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Win64/IcedId.PAG!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:find(".rsa") then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%-%>%(VFS%:%d+%.bat%)$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

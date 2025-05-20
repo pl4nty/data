@@ -3,23 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.suspicious_dosheader == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true and peattributes.firstsectwritable == true and peattributes.no_relocs == true then
+  return mp.INFECTED
 end
-if l_0_0:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("system32", 1, true) then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.PathToWin32Path)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = (string.find)(l_0_1, "->")
-if l_0_2 then
-  l_0_1 = (string.sub)(l_0_1, 1, l_0_2 - 1)
-end
-return mp.INFECTED
+return mp.CLEAN
 

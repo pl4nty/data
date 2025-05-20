@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/LummaC!MTB") then
+if peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() < 160000 then
   return mp.INFECTED
 end
 return mp.CLEAN

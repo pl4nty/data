@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
-if l_0_1 == nil then
+if (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "sdelete", 1, true) or (string.find)(l_0_1, "procdump", 1, true) or (string.find)(l_0_1, "psshutdown", 1, true) then
+if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

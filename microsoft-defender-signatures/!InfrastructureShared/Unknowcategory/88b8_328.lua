@@ -3,9 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 90112 and l_0_0 <= 98304 and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 and (mp.get_mpattribute)("NID:Hupigon.A!Pra1") then
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  (bm.request_SMS)(l_0_0.ppid, "M")
+end
+do
+  if (this_sigattrlog[2]).matched == true then
+    local l_0_1 = (this_sigattrlog[2]).ppid
+    if l_0_1 ~= nil then
+      (bm.request_SMS)(l_0_1, "M")
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

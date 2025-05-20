@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)) ~= "sbiedll.dll" then
-  return mp.CLEAN
+if peattributes.isexe and pehdr.SizeOfImage >= 65536 and pehdr.SizeOfImage <= 98304 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

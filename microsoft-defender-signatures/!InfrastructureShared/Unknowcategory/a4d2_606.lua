@@ -3,28 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "(.+\\)"
-local l_0_1, l_0_2 = nil, nil
-if (this_sigattrlog[1]).matched then
-  l_0_2 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
-    else
-      if (this_sigattrlog[4]).matched then
-        l_0_2 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.get_mpattribute)("pea_no_uidata") and (mp.getfilesize)() >= 249856 and (mp.getfilesize)() < 282624 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
       end
     end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
-if (this_sigattrlog[5]).matched then
-  l_0_1 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
-end
-if l_0_1 ~= nil and l_0_1 == l_0_2 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

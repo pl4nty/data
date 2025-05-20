@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "(RarSfx)", 1, true) then
-  (mp.set_mpattribute)("//RarSfxPwdAppdata")
+local l_0_0 = ((mp.getfilename)(mp.FILEPATH_QUERY_FULL)):lower()
+if not l_0_0:find("assets/", 1, true) then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

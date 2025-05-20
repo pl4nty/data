@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 10485760 and peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+    if (string.find)(l_0_0, " -url ", 1, true) and (string.find)(l_0_0, " http", 1, true) and (string.find)(l_0_0, " -path ", 1, true) then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
 

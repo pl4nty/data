@@ -3,26 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\atbroker.exe$") then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-local l_0_2 = (sysio.GetProcessFromFileName)(l_0_1)
-if l_0_2 == nil or #l_0_2 >= 1 then
-  return mp.CLEAN
-end
-local l_0_3 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\atbroker.exe")
-do
-  if l_0_3 ~= nil then
-    local l_0_4 = (sysio.GetRegValueAsString)(l_0_3, "Debugger")
-    if l_0_4 ~= nil and (string.len)(l_0_4) >= 1 then
-      if (sysio.IsFileExists)(l_0_4) then
-        (mp.ReportLowfi)(l_0_4, 150658937)
-      end
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 38, 4)
+l_0_0 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(l_0_0, 4)
+l_0_0 = (mp.readu_u32)(l_0_0, 1)
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr + 21, 4)
+l_0_1 = (mp.readu_u32)(l_0_1, 1)
+l_0_1 = (mp.bitxor)(l_0_1, l_0_0)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 19, "\191")
+local l_0_2, l_0_3, l_0_4, l_0_5 = (mp.bsplit)(l_0_1, 8)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, (string.char)(l_0_2))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 21, (string.char)(l_0_3))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 22, (string.char)(l_0_4))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 23, (string.char)(l_0_5))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 24, "")
+return mp.INFECTED
 

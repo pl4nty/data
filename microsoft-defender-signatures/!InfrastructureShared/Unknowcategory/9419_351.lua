@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.isexe == true and (mp.getfilesize)() < 2048000 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 131072 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size == 56 then
   return mp.INFECTED
-else
-  if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true and (mp.getfilesize)() < 2048000 then
-    return mp.INFECTED
-  end
 end
 return mp.CLEAN
 

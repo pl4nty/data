@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.hstr_full_log)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.matched and (string.byte)((pe.mmap_va)(l_0_5.VA + 4, 1)) == (string.byte)((pe.mmap_va)(l_0_5.VA - 4, 1)) then
-    (mp.set_mpattribute)("HSTR:Trojan:Win32/Medfos_Packer")
-    ;
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    return mp.INFECTED
-  end
+-- DECOMPILER ERROR at PC44: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC44: Unhandled construct in 'MakeBoolean' P3
+
+if (((((hstrlog[1]).matched or (hstrlog[2]).matched or not (hstrlog[4]).matched) and (hstrlog[7]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

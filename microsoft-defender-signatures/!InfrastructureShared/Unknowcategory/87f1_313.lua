@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 11 and (pesecs[7]).Name == ".app0" and (pesecs[9]).Name == ".app1" and (pesecs[10]).Name == ".app2" then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

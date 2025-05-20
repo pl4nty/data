@@ -3,41 +3,29 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC22: Overwrote pending register: R0 in 'AssignReg'
-
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-    local l_0_1, l_0_2 = this_sigattrlog[2]
-  else
-    do
-      do return mp.CLEAN end
-      -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
-
-      if not l_0_1.utf8p2 then
-        return mp.CLEAN
-      end
-      local l_0_3 = nil
-      local l_0_4 = {}
-      local l_0_5 = "0x0c347ca0"
-      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3.utf8p2)) do
-        local l_0_6 = nil
-        -- DECOMPILER ERROR at PC45: Confused about usage of register: R8 in 'UnsetPending'
-
-        if (string.lower)(R8_PC45) ~= (string.lower)(l_0_3.image_path) and (sysio.IsFileExists)(R8_PC45) then
-          (table.insert)(l_0_4, l_0_3.ppid .. ";" .. l_0_5 .. ";" .. R8_PC45)
-        end
-      end
-      if #l_0_4 > 0 then
-        (MpCommon.SetPersistContextNoPath)("bm_ipc_taskschd", l_0_4, 10)
-      end
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_ESP) + 4, 4)
+l_0_0 = (mp.readu_u32)(l_0_0, 1)
+local l_0_1 = (pe.moffset_va)(l_0_0)
+;
+(mp.readprotection)(false)
+local l_0_2 = (pe.mmap_va)(l_0_1, 4)
+l_0_2 = (mp.readu_u32)(l_0_2, 1)
+if l_0_2 ~= 909132101 then
+  return mp.CLEAN
 end
+l_0_2 = (pe.mmap_va)(l_0_1 - 4, 4)
+l_0_2 = (mp.readu_u32)(l_0_2, 1)
+if l_0_2 == 557012289 then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("Lua:Autoit!Modified")
+local l_0_3 = (mp.getfilesize)()
+if l_0_3 < 65536 or l_0_3 > 5242880 then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.readfile)(l_0_0 - 20, l_0_3 - (l_0_0 - 20))
+;
+(mp.vfo_add_buffer)(l_0_4, "[AutoIT_Script]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.CLEAN
 

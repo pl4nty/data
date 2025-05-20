@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 3604202544) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 1712054030) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 3310839974) == 0 then
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "installutil.exe" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-return mp.INFECTED
 

@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-  return mp.CLEAN
+if (pe.mmap_va)((mp.bitand)(pevars.sigaddr + 10 + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 6, 4), 1), 4294967295), 6) == "çd$\f\015\133" then
+  (pe.mmap_patch_va)(pevars.sigaddr + 1, "\002\000\000\000")
+  return mp.INFECTED
 end
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 1)
-if (mp.bitand)((string.byte)(l_0_0, 1), 128) == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

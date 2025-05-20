@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_EBX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
   return mp.CLEAN
 end
 ;

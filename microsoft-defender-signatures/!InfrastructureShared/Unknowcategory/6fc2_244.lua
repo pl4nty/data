@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/LockCrypt.PA!Pra1") then
-  return mp.INFECTED
+local l_0_0 = (bm.get_process_relationships)()
+for l_0_4,l_0_5 in ipairs(l_0_0) do
+  if l_0_5.image_path ~= nil then
+    (bm.add_related_file)(l_0_5.image_path)
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

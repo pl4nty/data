@@ -3,20 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2, l_0_3 = nil, nil
+for l_0_7,l_0_8 in ipairs(l_0_0) do
+  if l_0_8.image_path ~= nil and (mp.bitand)(l_0_8.reason_ex, 1) == 1 then
+    l_0_2 = (string.lower)(l_0_8.image_path)
+    if l_0_2:find("excel.exe") or l_0_2:find("winword.exe") then
+      l_0_3 = (string.lower)((mp.GetProcessCommandLine)(l_0_8.ppid))
+      if (string.find)(l_0_3, "rs4_winatp-intro-invoice", 1, true) or (string.find)(l_0_3, "onboardingwindows11tomicrosoftdefender", 1, true) then
+        return mp.CLEAN
+      end
+      return mp.INFECTED
+    end
+  end
 end
-if peattributes.ismsil then
-  (mp.set_mpattribute)("SIGATTR:PossibleMSILDownloader.A")
-  return mp.INFECTED
-end
-if peattributes.isvbpcode or peattributes.isvbnative then
-  (mp.set_mpattribute)("SIGATTR:PossibleVBDownloader.A")
-  return mp.INFECTED
-end
-if peattributes.is_delphi or (mp.get_mpattribute)("SIGATTR:DelphiFile") or (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
-  (mp.set_mpattribute)("SIGATTR:PossibleDelphiDownloader.A")
-  return mp.INFECTED
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,18 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
+(mp.set_mpattribute)("HSTR:Win32/Neurevt_loader")
+if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3187044 and (mp.readu_u32)(epcode, 9) == 1448280064 and (mp.readu_u32)(epcode, 13) == 108314757 and (mp.readu_u32)(epcode, 17) == 16939136 and (mp.readu_u32)(epcode, 21) == 1703096436 and (mp.readu_u32)(epcode, 25) == 4226285820 then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 500000 or l_0_0 < 10000 then
-  return mp.CLEAN
-end
-if (((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()):find("program files", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

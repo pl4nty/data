@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 4 and peattributes.isdll and peattributes.hasexports and peattributes.epinfirstsect then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\google\\chrome\\", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

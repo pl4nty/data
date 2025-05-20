@@ -3,10 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 13, 4), 1) < 1048576 then
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if (string.find)(l_0_0, "\\\\(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)\\") then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 17, "")
-return mp.INFECTED
 

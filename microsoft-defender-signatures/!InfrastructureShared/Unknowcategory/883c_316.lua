@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.isexe and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 6 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1114112 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -6,7 +6,7 @@
 -- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
     local l_0_0, l_0_1 = nil
   end
   -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'

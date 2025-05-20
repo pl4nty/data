@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[3]).matched or not (this_sigattrlog[3]).wp2 then
+if not (this_sigattrlog[2]).matched or not (this_sigattrlog[2]).wp2 then
   return mp.CLEAN
 end
 local l_0_0 = (MpCommon.GetPersistContextNoPath)("mshta_start")
@@ -14,7 +14,7 @@ if l_0_0 then
       (mp.ReportLowfi)(l_0_5, 1632017330)
     end
   end
-  local l_0_6 = (this_sigattrlog[3]).utf8p2
+  local l_0_6 = (this_sigattrlog[2]).utf8p2
   if l_0_6 then
     l_0_6 = l_0_6:lower()
     if (string.find)(l_0_6, "windows\\ccm", 1, true) or (string.find)(l_0_6, "\\ccm\\systemtemp\\", 1, true) then

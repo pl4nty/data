@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
-  (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/WinterCoat.A!dha")
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("HSTR:TrojanClicker:Win64/Fleercivet.B")
+end
+if mp.HSTR_WEIGHT >= 7 then
+  if pehdr.Machine == 332 then
+    (mp.changedetectionname)(805306451)
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

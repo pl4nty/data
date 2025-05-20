@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-l_0_0 = (l_0_0.lower)(l_0_0)
-if (string.find)(l_0_0, ".lnk", 1, true) then
+if peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Zilla.AMMG!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

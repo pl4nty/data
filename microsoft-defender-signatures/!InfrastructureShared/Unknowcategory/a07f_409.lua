@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() > 35000000 and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 11, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(l_0_1, 4)
+l_0_1 = (mp.readu_u32)(l_0_0, 1)
+local l_0_2 = (pe.get_api_id)(l_0_1)
+if l_0_2 == 3267971814 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 7, "\235")
+  return mp.INFECTED
 end
+return mp.CLEAN
 

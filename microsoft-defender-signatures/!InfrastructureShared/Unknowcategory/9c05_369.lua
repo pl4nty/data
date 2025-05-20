@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("AGGR:MSIL:GenCommercialObfuscator.A") and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 then
+  return mp.INFECTED
 end
-if (string.find)(l_0_0, "\\dllhost.exe", 1, true) or (string.find)(l_0_0, "\\explorer.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

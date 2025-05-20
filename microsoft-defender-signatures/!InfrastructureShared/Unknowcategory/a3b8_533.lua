@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.suspicious_dosheader == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true and peattributes.firstsectwritable == true and peattributes.no_relocs == true then
+if peattributes.isdll and epcode[1] == 106 and epcode[2] == 16 and epcode[3] == 104 and epcode[4] == 0 and epcode[5] == 2 and epcode[6] == 0 and epcode[7] == 0 and epcode[8] == 104 and epcode[9] == 44 and epcode[10] == 250 and epcode[11] == 250 and epcode[12] == 255 then
   return mp.INFECTED
 end
 return mp.CLEAN

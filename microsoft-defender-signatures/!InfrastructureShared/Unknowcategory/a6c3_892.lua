@@ -3,62 +3,39 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "DoplikM"
-local l_0_1 = nil
-local l_0_2 = 300
-if (this_sigattrlog[1]).matched then
-  l_0_1 = "A"
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_1 = "B"
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_1 = "C"
-    else
-      if (this_sigattrlog[4]).matched then
-        l_0_1 = "D"
-      else
-        if (this_sigattrlog[5]).matched then
-          l_0_1 = "E"
-        else
-          if (this_sigattrlog[6]).matched then
-            l_0_1 = "F"
-          else
-            if (this_sigattrlog[7]).matched then
-              l_0_1 = "G"
-            else
-              if (this_sigattrlog[8]).matched then
-                l_0_1 = "H"
-              else
-                if (this_sigattrlog[9]).matched then
-                  l_0_1 = "I"
-                else
-                  if (this_sigattrlog[10]).matched then
-                    l_0_1 = "J"
-                  else
-                    if (this_sigattrlog[11]).matched then
-                      l_0_1 = "K"
-                    else
-                      if (this_sigattrlog[12]).matched then
-                        l_0_1 = "L"
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  end
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  if (mp.ContextualExpandEnvironmentVariables)("%temp%") == nil or (mp.ContextualExpandEnvironmentVariables)("%temp%") == "" then
+    return mp.CLEAN
+  end
+  if (string.find)((string.lower)(l_0_2), (string.lower)((mp.ContextualExpandEnvironmentVariables)("%temp%"))) == nil then
+    return mp.CLEAN
+  end
+  if l_0_1 ~= nil then
+    local l_0_3 = nil
+    for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+      local l_0_4 = nil
+      -- DECOMPILER ERROR at PC81: Confused about usage of register: R8 in 'UnsetPending'
+
+      R8_PC81 = (mp.ContextualExpandEnvironmentVariables)(R8_PC81)
+      if (sysio.IsFileExists)(R8_PC81) and (R8_PC81:len() < 9 or (string.lower)((string.sub)(R8_PC81, -9)) ~= "mshta.exe") and (sysio.IsFileExists)(R8_PC81) then
+        (bm.add_related_file)(R8_PC81)
       end
     end
   end
+  do
+    return mp.INFECTED
+  end
 end
-local l_0_3 = (MpCommon.QueryPersistContextNoPath)(l_0_0, l_0_1)
-if not l_0_3 then
-  (MpCommon.AppendPersistContextNoPath)(l_0_0, l_0_1, l_0_2)
-end
-if (MpCommon.GetPersistContextCountNoPath)(l_0_0) >= 4 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

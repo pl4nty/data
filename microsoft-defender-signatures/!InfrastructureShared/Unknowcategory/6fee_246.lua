@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (sigattr_tail[mp.SIGATTR_LOG_SZ]).matched == true and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12352 then
+if (peattributes.isdll or peattributes.isexe or peattributes.ismsil) and peattributes.no_security then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if ((hstrlog[1]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[2]).matched) or (hstrlog[1]).matched and (hstrlog[5]).matched and (hstrlog[6]).matched and (hstrlog[2]).matched then
-  return mp.INFECTED
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

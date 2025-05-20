@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") and ((mp.get_mpattribute)("SIGATTR:DelphiFile") or (mp.get_mpattribute)("HSTR:Win32/DelphiFile")) then
-  (mp.set_mpattribute)("SIGATTR:Reboon_Lowfi")
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if l_0_0:find("\\trend micro\\", 1, true) or l_0_0:find("\\smex_master.exe", 1, true) or l_0_0:find("\\windows\\ccm\\ccmexec.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

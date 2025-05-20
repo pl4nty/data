@@ -3,16 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-do
-  if l_0_0 then
-    local l_0_1 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
-    if l_0_0:find(l_0_1, 1, true) then
-      return mp.CLEAN
-    end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["winword.exe"] = true
+  l_0_3["excel.exe"] = true
+  l_0_3["powerpnt.exe"] = true
+  l_0_3["outlook.exe"] = true
+  if l_0_3[l_0_2] then
+    return mp.INFECTED
   end
-  ;
-  (bm.trigger_sig)("SuspRedirAttempt", "DllDrop")
+end
+do
   return mp.CLEAN
 end
 

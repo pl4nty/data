@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (pesecs[2]).Name == ".sdata" and (pesecs[2]).Characteristics == 3221225536 then
-  return mp.INFECTED
+if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.GetSMSProcArchitecture)() ~= mp.SMS_PROC_ARCH_X64 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

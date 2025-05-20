@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "sharpshares.exe" then
+if (string.lower)((string.sub)((mp.getfilename)(), -3)) == "r2w" then
   return mp.CLEAN
 end
 return mp.INFECTED

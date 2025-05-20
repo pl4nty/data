@@ -4,10 +4,11 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("\\program files", 1, true) then
-  return mp.CLEAN
+if l_0_0:find("\\windows\\system32\\ime\\", 1, true) then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("BM_ExchgTransportAgent")
-return mp.INFECTED
+if l_0_0:find("\\loadertest", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

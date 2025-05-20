@@ -3,9 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "fabricrouter", 1, true) or (string.find)(l_0_0, "game", 1, true) or (string.find)(l_0_0, "\\kodi", 1, true) then
-  return mp.CLEAN
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    if (sysio.IsFileExists)(l_0_6) then
+      (bm.add_related_file)(l_0_6)
+      ;
+      (mp.ReportLowfi)(l_0_6, 2969606243)
+    end
+  end
 end
-return mp.INFECTED
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+if peattributes.is_exe == false then
   return mp.CLEAN
 end
-if not peattributes.isvbnative then
+if (pe.query_import)(pe.IMPORT_STATIC, 2430426247) == 0 then
   return mp.CLEAN
 end
-if (mp.getfilesize)() > 90000 then
-  return mp.CLEAN
-end
-if not peattributes.dt_error_heur_exit_criteria then
+if (pe.query_import)(pe.IMPORT_STATIC, 4186436034) == 0 then
   return mp.CLEAN
 end
 return mp.INFECTED

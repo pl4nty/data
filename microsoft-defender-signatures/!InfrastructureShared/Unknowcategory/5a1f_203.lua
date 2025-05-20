@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Subsystem == 1 then
-  (mp.changedetectionname)(805306387)
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("Exception:Tisifi")
+;
+(mp.set_mpattribute)("HSTR:TR_Win32_Tisifi_B_exclusion")
 return mp.INFECTED
 

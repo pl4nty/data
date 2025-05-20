@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
+if mp.HSTR_WEIGHT >= 6 then
   return mp.INFECTED
 end
-if not peattributes.isexe then
+if not peattributes.isdll then
   return mp.CLEAN
 end
 if peattributes.amd64_image then

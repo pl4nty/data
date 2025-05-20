@@ -3,16 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (peattributes.isexe ~= true or ((pesecs[1]).Name ~= "UPX0" and (pesecs[1]).Name ~= ".text") or ((pesecs[2]).Name ~= "UPX1" and (pesecs[2]).Name ~= ".bss") or (mp.get_mpattribute)("pea_no_security")) then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if ((hstrlog[1]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[2]).matched) or (hstrlog[1]).matched and (hstrlog[5]).matched and (hstrlog[6]).matched and (hstrlog[2]).matched then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

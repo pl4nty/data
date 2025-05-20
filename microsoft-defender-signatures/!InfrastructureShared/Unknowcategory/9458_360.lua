@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if peattributes.isdriver == false and peattributes.isexe and peattributes.no_security and (mp.getfilesize)() > 1376256 and (mp.getfilesize)() < 5242880 and (pesecs[3]).Name == ".data" then
+  return mp.INFECTED
 end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("\\program files", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

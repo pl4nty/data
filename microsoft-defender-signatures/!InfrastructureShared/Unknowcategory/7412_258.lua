@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[7]).Name == ".mackt" and (pesecs[8]).Name == ".topo0" and (pesecs[13]).Name == ".Orion" then
+if peattributes.isdll == false or peattributes.hasexports == false then
+  return mp.CLEAN
+end
+if (pe.get_exports)() > 100 then
   return mp.INFECTED
 end
 return mp.CLEAN

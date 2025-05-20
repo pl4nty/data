@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 10 then
+if peattributes.isexe and peattributes.x86_image and peattributes.has_msilresources then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
 return mp.CLEAN
 

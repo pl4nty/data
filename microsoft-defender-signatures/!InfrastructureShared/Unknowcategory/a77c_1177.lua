@@ -3,42 +3,39 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or (hstrlog[17]).matched or (hstrlog[18]).matched or (hstrlog[19]).matched then
-    local l_0_0, l_0_1 = 0 + 1
+  if (this_sigattrlog[20]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11 = nil
   end
-  -- DECOMPILER ERROR at PC51: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
 
-  if mp.HSTR_WEIGHT == 1 then
-    if l_0_0 == 1 then
-      (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ALT1")
-      return mp.CLEAN
-    end
-    ;
-    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ALT2")
-    return mp.CLEAN
+  -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC35: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC65: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC75: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC85: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC95: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC105: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC115: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC125: Confused about usage of register: R0 in 'UnsetPending'
+
+  if ((((((((((((string.find)(l_0_0, "disablerealtimemonitoring $true", 1, true) and not (string.find)(l_0_0, "disablebehaviormonitoring $true", 1, true)) or (string.find)(l_0_0, "disableblockatfirstseen $true", 1, true)) and not (string.find)(l_0_0, "disableioavprotection $true", 1, true)) or (string.find)(l_0_0, "disableprivacymode $true", 1, true)) and not (string.find)(l_0_0, "disableintrusionpreventionsystem $true", 1, true)) or (string.find)(l_0_0, "disablescriptscanning $true", 1, true)) and not (string.find)(l_0_0, "severethreatdefaultaction 6", 1, true)) or (string.find)(l_0_0, "lowthreatdefaultaction 6", 1, true)) and not (string.find)(l_0_0, "moderatethreatdefaultaction 6", 1, true)) or (string.find)(l_0_0, "mapsreporting disabled", 1, true)) and not (string.find)(l_0_0, "enablecontrolledfolderaccess disabled", 1, true)) or nil + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 > 2 then
+    return mp.INFECTED
   end
-  -- DECOMPILER ERROR at PC117: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if (hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched then
-      local l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = l_0_0 + 1
-    end
-    -- DECOMPILER ERROR at PC118: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_2 == 2 then
-      if not (mp.get_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.3") then
-        (pe.set_peattribute)("disable_apicall_limit", true)
-        ;
-        (mp.set_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.3")
-        ;
-        (pe.reemulate)()
-      end
-      return mp.INFECTED
-    end
-    ;
-    (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.ALT3")
-    return mp.CLEAN
-  end
+  return mp.CLEAN
 end
 

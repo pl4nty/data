@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and pehdr.Subsystem == 2 then
+if mp.HSTR_WEIGHT == 2 and (hstrlog[3]).hitcount > 2 then
   return mp.INFECTED
 end
 return mp.CLEAN

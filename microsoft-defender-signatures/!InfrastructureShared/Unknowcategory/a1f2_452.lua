@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (mp.get_mpattribute)("NID:TelAttrib") and peattributes.no_security == true and l_0_0 <= 77824 and l_0_0 >= 73728 and peattributes.isdll and peattributes.hasexports and pehdr.NumberOfSections == 4 and pehdr.SizeOfImage == 86016 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlservr.exe" or (string.lower)((string.sub)(l_0_6.image_path, -13)) == "\\sqlagent.exe") then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

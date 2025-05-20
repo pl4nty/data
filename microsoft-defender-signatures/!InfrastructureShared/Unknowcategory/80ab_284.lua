@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 5 and pehdr.SizeOfImage >= 20480 and pehdr.SizeOfImage <= 131072 and (mp.getfilesize)() >= 1048576 then
+local l_0_0 = (mp.getfilesize)()
+if (hstrlog[5]).matched and peattributes.no_security == true and l_0_0 >= 303104 and l_0_0 <= 1601536 then
   return mp.INFECTED
 end
 return mp.CLEAN

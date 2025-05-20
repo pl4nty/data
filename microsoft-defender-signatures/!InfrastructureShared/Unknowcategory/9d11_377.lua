@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 and (hstrlog[1]).matched then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and pehdr.NumberOfSections == 8 then
+  (pe.set_image_filename)("\"myapp.exe\" /install")
+  ;
+  (pe.reemulate)()
 end
 ;
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win64/Rovnix.C")
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:Prifou")
+return mp.INFECTED
 

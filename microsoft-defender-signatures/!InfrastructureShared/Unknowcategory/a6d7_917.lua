@@ -3,40 +3,33 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
+local l_0_0 = (string.lower)(tostring(footerpage))
+l_0_0 = (string.gsub)(l_0_0, "[ \n\r\t]", "")
+l_0_0 = (string.gsub)(l_0_0, "&?chrw%((%d+)%)", string.char)
+l_0_0 = (string.gsub)(l_0_0, "&?chrw%((%d+)%+?%-(%d+)%)", function(l_1_0, l_1_1)
+  -- function num : 0_0
+  local l_1_2 = string.char
+  local l_1_3 = l_1_0 - l_1_1
+  do return l_1_2(l_1_3) end
+  -- DECOMPILER ERROR at PC5: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+)
+l_0_0 = (string.gsub)(l_0_0, "&?chrw%((%d+)%+(%d+)%)", function(l_2_0, l_2_1)
+  -- function num : 0_1
+  local l_2_2 = string.char
+  local l_2_3 = l_2_0 + l_2_1
+  do return l_2_2(l_2_3) end
+  -- DECOMPILER ERROR at PC5: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
 end
-if (mp.get_mpattribute)("pea_ismsil") then
-  return mp.CLEAN
+)
+l_0_0 = (string.gsub)(l_0_0, "&?string%(\"(.?)\"%)", "%1")
+l_0_0 = (string.gsub)(l_0_0, "&?\"(.)\"", "%1")
+l_0_0 = (string.gsub)(l_0_0, "&string%(%.%)", ".")
+l_0_0 = (string.lower)(l_0_0)
+if (string.match)(l_0_0, "\\googleupdate.lnk%).*thenfilecreateshortcut%(.*\\googlechrome.*exe,@startupcommondir\\googleupdate.lnk,") then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 4000 then
-  return mp.CLEAN
-end
-local l_0_1 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("system32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("syswow64", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("winu.dll", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("win32u.dll", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("dcompfuzzer", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.LOWFI
 

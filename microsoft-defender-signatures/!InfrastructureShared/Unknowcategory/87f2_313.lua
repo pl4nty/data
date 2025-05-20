@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll and peattributes.hasexports then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 409600 and l_0_0 < 716800 and (pe.get_exports_count)() == 9 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if pehdr.NumberOfSections == 11 and (pesecs[7]).Name == ".app0" and (pesecs[9]).Name == ".app1" and (pesecs[10]).Name == ".app2" then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

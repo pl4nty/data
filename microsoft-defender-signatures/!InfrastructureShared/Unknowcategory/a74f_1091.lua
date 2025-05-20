@@ -5,7 +5,7 @@
 -- function num : 0
 -- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[14]).matched then
+if (this_sigattrlog[13]).matched then
   local l_0_0 = nil
   if (string.match)(l_0_0, "/addfile [^ ]+ \\\\localhost\\[^ ]* [^ ]+") ~= nil then
     return mp.INFECTED
@@ -22,8 +22,8 @@ if (this_sigattrlog[14]).matched then
   end
 else
   do
-    if (this_sigattrlog[15]).matched then
-      local l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[15]).utf8p2))
+    if (this_sigattrlog[14]).matched then
+      local l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[14]).utf8p2))
       if (string.match)(l_0_1, "/replaceremoteprefix [^ ]+ [^ ]+ \\\\localhost\\[^ ]*") ~= nil then
         return mp.INFECTED
       else
@@ -40,8 +40,8 @@ else
     else
       do
         do
-          if (this_sigattrlog[16]).matched then
-            local l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[16]).utf8p2))
+          if (this_sigattrlog[15]).matched then
+            local l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[15]).utf8p2))
             if (string.match)(l_0_2, "http[s]?%:%/%/") ~= nil then
               return mp.INFECTED
             else

@@ -3,11 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (string.find)(l_0_6.image_path, "werfault.exe", 1, true) then
-    return mp.INFECTED
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
+
+  ;
+  (bm.add_related_file)(l_0_0)
+  return mp.INFECTED
 end
-return mp.CLEAN
 

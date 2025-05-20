@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[11] == 233 and peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
-  return mp.INFECTED
+do
+  if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.getfilesize)() < 4096 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

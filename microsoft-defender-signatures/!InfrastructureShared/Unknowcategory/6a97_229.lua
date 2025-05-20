@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).VirtualSize > 20480 and (pesecs[1]).VirtualAddress == 4096 then
+if (peattributes.isvbpcode == true or peattributes.isvbnative == true) and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

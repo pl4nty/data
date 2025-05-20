@@ -3,25 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p1
-  if l_0_0 == nil and (string.len)(l_0_0) < 3 then
-    return mp.CLEAN
-  end
-  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
-  local l_0_1 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
-  if l_0_1 == nil and (string.len)(l_0_1) < 3 then
-    return mp.CLEAN
-  end
-  local l_0_2 = {}
-  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\windows\\"))] = true
-  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\"))] = true
-  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\windows\\"))] = true
-  if l_0_2[l_0_1] then
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (string.lower)((nri.GetHttpRequestHeader)("referer"))
+if (string.find)(l_0_0, "live.com", 1, true) or (string.find)(l_0_0, "bing.com", 1, true) or (string.find)(l_0_0, "msn.com", 1, true) or (string.find)(l_0_0, "yahoo.com", 1, true) or (string.find)(l_0_0, "windowssearch.com", 1, true) or (string.find)(l_0_0, "conduit.com", 1, true) then
   return mp.CLEAN
 end
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), (mp.bitor)(nri.Telemetry_QUERY, nri.Telemetry_REFERER)))
+return mp.INFECTED
 

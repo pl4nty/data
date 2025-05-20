@@ -3,22 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 100)
-local l_0_1 = (string.find)(l_0_0, "Yt", 1, true)
-local l_0_2 = (string.find)(l_0_0, "\015\132", 1, true)
-if l_0_2 ~= nil and l_0_1 ~= nil then
-  if l_0_1 <= l_0_2 then
-    local l_0_3 = (string.byte)(l_0_0, l_0_2 + 2)
-    local l_0_4 = (string.char)(l_0_2 - l_0_1 + l_0_3)
-    ;
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_1, (string.format)("\233%s\000\000\000", l_0_4))
-  else
-    do
-      ;
-      (pe.mmap_patch_va)(pevars.sigaddr + l_0_2 - 1, "é")
-      return mp.LOWFI
-    end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).ppid
+  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  if (string.find)(l_0_1, ".dat", 1, true) and (string.find)(l_0_1, "--", 1, true) and (string.find)(l_0_1, ",init ", 1, true) and (string.find)(l_0_1, "=\"", 1, true) and l_0_0 then
+    (bm.request_SMS)(l_0_0, "m")
+    return mp.INFECTED
   end
+end
+do
+  return mp.CLEAN
 end
 

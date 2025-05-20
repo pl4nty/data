@@ -3,19 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["svchost.exe"] = true
-  l_0_3["taskeng.exe"] = true
-  l_0_3["taskhostw.exe"] = true
-  if l_0_3[l_0_2] then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.CLEAN
-end
+local l_0_0 = {}
+l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
+l_0_0.referer = (nri.GetHttpRequestHeader)("referer")
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+return mp.INFECTED
 

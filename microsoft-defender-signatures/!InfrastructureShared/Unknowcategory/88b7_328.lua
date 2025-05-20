@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  (bm.request_SMS)(l_0_0.ppid, "M")
-end
-do
-  if (this_sigattrlog[2]).matched == true then
-    local l_0_1 = (this_sigattrlog[2]).ppid
-    if l_0_1 ~= nil then
-      (bm.request_SMS)(l_0_1, "M")
-    end
-  end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 1, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(mp.readprotection)(false)
+if (pe.mmap_va)(l_0_1, 9) == "myapp.exe" then
   return mp.INFECTED
 end
+return mp.CLEAN
 

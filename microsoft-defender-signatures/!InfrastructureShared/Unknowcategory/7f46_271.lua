@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 and (mp.getfilesize)() >= 9472 and (mp.getfilesize)() <= 20480 then
+if pehdr.NumberOfSections == 8 and (pesecs[1]).Name == "CODE" and (pesecs[2]).Name == "DATA" then
   return mp.INFECTED
 end
 return mp.CLEAN

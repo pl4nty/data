@@ -3,17 +3,34 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:ZwangiDll")
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
-if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or not (hstrlog[8]).matched) and (hstrlog[14]).matched) or (hstrlog[7]).matched) and 1 or 0) + ((hstrlog[13]).matched and 1 or 0) + ((hstrlog[15]).matched and 1 or 0) + ((hstrlog[16]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 2000000 or l_0_0 < 4000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("threatsieve", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("pc-sdk-setup", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("processcheck", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("empengine", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("browser", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("lhshield", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find(".arx", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find(".zrx", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

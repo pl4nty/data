@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:MadCodeHook") and peattributes.executes_from_dynamic_memory then
+if peattributes.x86_image == true and (peattributes.isexe == true or peattributes.isdll == true) and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

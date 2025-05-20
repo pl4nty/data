@@ -3,40 +3,38 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["svchost.exe"] = true
-  l_0_3["taskeng.exe"] = true
-  l_0_3["taskhostw.exe"] = true
-  if l_0_3[l_0_2] then
-    local l_0_4 = nil
-    if (this_sigattrlog[1]).matched then
-      l_0_4 = (this_sigattrlog[1]).utf8p2
-    end
-    if (this_sigattrlog[2]).matched then
-      l_0_4 = (this_sigattrlog[2]).utf8p2
-    end
-    if l_0_4 ~= nil then
-      local l_0_5 = (mp.GetExecutablesFromCommandLine)(l_0_4)
-      for l_0_9,l_0_10 in ipairs(l_0_5) do
-        if l_0_10 ~= nil and l_0_10:len() > 3 and (sysio.IsFileExists)(l_0_10) then
-          (bm.add_related_file)(l_0_10)
-        end
-      end
-    end
-    do
-      do
-        l_0_5 = mp
-        l_0_5 = l_0_5.INFECTED
-        do return l_0_5 end
-        l_0_1 = mp
-        l_0_1 = l_0_1.CLEAN
-        return l_0_1
-      end
+if pehdr.NumberOfSections < 5 or (pesecs[1]).SizeOfRawData < 249856 or pehdr.MajorImageVersion ~= 0 or pehdr.MinorImageVersion ~= 0 then
+  return mp.CLEAN
+end
+local l_0_0 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+if (mp.getfilesize)() < l_0_0 + 2048 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(l_0_0, 12)
+do
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC62: No list found for R2 , SetList fails
+
+  -- DECOMPILER ERROR at PC63: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC64: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC65: Overwrote pending register: R5 in 'AssignReg'
+
+  for l_0_6 = 88, 77, 67 do
+    -- DECOMPILER ERROR at PC67: Overwrote pending register: R7 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC69: Overwrote pending register: R8 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC70: Overwrote pending register: R9 in 'AssignReg'
+
+    if ((1).byte)(0, 0) ~= l_0_2[l_0_6] then
+      return mp.CLEAN
     end
   end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

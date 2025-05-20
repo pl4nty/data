@@ -3,34 +3,44 @@
 
 -- params : ...
 -- function num : 0
-if not (MpCommon.QueryPersistContextNoPath)("MacMatchesHighRiskProtectionTarget", "on") then
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+  end
+  local l_0_1, l_0_2 = , (bm.get_process_relationships)()
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC17: Confused about usage of register: R7 in 'UnsetPending'
+
+    if (string.lower)(R7_PC17.image_path) ~= nil and ((string.find)((string.lower)(R7_PC17.image_path), "\\wmiprvse.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\winrshost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\powershell.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\scrcons.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\wsmprovhost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\cmd.exe", 1, true)) then
+      if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
+        local l_0_9 = nil
+        if (mp.GetExecutablesFromCommandLine)(l_0_1) ~= nil then
+          for l_0_13,l_0_14 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+            local l_0_10 = nil
+            -- DECOMPILER ERROR at PC95: Confused about usage of register: R14 in 'UnsetPending'
+
+            R14_PC95 = (mp.ContextualExpandEnvironmentVariables)(R14_PC95)
+            ;
+            (bm.add_related_file)(R14_PC95)
+          end
+        end
+      end
+      do
+        do
+          do return mp.INFECTED end
+          -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out DO_STMT
+
+          -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC107: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
+    end
+  end
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if not l_0_1:find("\\cmd.exe") then
-  return mp.CLEAN
-end
-local l_0_2 = (mp.GetParentProcInfo)()
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (string.lower)(l_0_2.image_path)
-if l_0_3 == nil then
-  return mp.CLEAN
-end
-if not l_0_3:find("\\wmiprvse.exe") then
-  return mp.CLEAN
-end
-local l_0_4 = (mp.GetProcessCommandLine)(l_0_0)
-if not l_0_4 or #l_0_4 <= 8 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_4, "/Q ", 1, true) and (string.find)(l_0_4, "/c ", 1, true) and not (string.find)(l_0_4, "/Q /D ", 1, true) and not (string.find)(l_0_4, "/Q /c netstat -anop TCP 1>", 1, true) and not (string.find)(l_0_4, "/U /Q ", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

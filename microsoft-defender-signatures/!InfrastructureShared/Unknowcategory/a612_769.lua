@@ -3,20 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-local l_0_1 = l_0_0:match("(%w+%.exe)$")
-if l_0_0 == nil or l_0_1 == nil then
+if not (this_sigattrlog[5]).matched then
   return mp.CLEAN
 end
-local l_0_2 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%"))
-if (l_0_0:find(l_0_2 .. "\\system32", 1, true) or l_0_0:find(l_0_2 .. "\\syswow64", 1, true)) and l_0_1 == "rundll32.exe" then
-  if (this_sigattrlog[4]).matched then
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 3153487608)
-  else
-    ;
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2865379549)
-  end
-  return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+if not l_0_0 or l_0_0.integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[5]).utf8p1))
+if l_0_1 then
+  if (string.find)(l_0_1, "windows\\assembly\\nativeimages_v4", 1, true) then
+    return mp.CLEAN
+  end
+  if (string.find)(l_0_1, "packagemanagement\\providerassemblies\\nuget", 1, true) then
+    return mp.CLEAN
+  end
+  if not (mp.IsKnownFriendlyFile)(l_0_1, false, false) then
+    (mp.ReportLowfi)(l_0_1, 2040612934)
+  end
+end
+return mp.INFECTED
 

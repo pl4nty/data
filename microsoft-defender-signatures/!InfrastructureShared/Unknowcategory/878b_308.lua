@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isexe == true and (pesecs[2]).Name == ".managed" and (pesecs[2]).Characteristics == 1610612768 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = pcall(mp.GetParentProcInfo)
+if l_0_1 and (string.find)((l_0_1.image_path):lower(), "solarwinds.businesslayerhost.exe", 1, true) then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

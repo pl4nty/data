@@ -19,8 +19,8 @@ do
     end
   end
   local l_0_3 = nil
-  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-    l_0_3 = (this_sigattrlog[3]).utf8p2
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    l_0_3 = (this_sigattrlog[2]).utf8p2
   end
   if l_0_3 ~= nil and (string.find)(l_0_3, "UnistackSvcGroup", 1, true) then
     return mp.CLEAN

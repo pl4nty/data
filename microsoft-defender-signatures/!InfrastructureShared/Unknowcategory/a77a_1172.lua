@@ -3,38 +3,46 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1, l_1_2 = l_1_0:match("(.-)([^\\/]-%.?[^%.\\/]*)$")
-  return l_1_1:lower(), l_1_2:lower()
-end
-
-local l_0_1 = (MpCommon.PathToWin32Path)((bm.get_imagepath)())
-if l_0_1 == nil then
-  return mp.CLEAN
-else
-  l_0_1 = (string.lower)(l_0_1)
-end
-if (string.find)(l_0_1, "\\svchost.exe", 1, true) then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, "\\filecoauth.exe", 1, true) then
-  return mp.CLEAN
-end
-if (this_sigattrlog[8]).matched and (this_sigattrlog[6]).matched and (this_sigattrlog[8]).utf8p1 ~= nil and (this_sigattrlog[8]).utf8p2 ~= nil and (this_sigattrlog[6]).utf8p2 ~= nil then
-  local l_0_2 = (string.lower)((this_sigattrlog[8]).utf8p1)
-  local l_0_3 = (string.lower)((this_sigattrlog[8]).utf8p2)
-  local l_0_4, l_0_5 = l_0_0(l_0_1)
-  local l_0_6, l_0_7 = l_0_0((this_sigattrlog[6]).utf8p2)
-  local l_0_8, l_0_9 = l_0_0(l_0_2)
-  local l_0_10, l_0_11 = l_0_0(l_0_3)
-  if (string.find)(l_0_2, l_0_4, 1, true) and (string.find)(l_0_3, l_0_6, 1, true) and l_0_9 ~= l_0_11 and (sysio.IsFileExists)(l_0_3) and (mp.IsKnownFriendlyFile)(l_0_3, false, false) == false then
-    (bm.add_related_file)(l_0_3)
+if (MpCommon.GetPersistContextCountNoPath)("Lua:MpRequestEmsScan") > 0 then
+  local l_0_0 = (MpCommon.GetPersistContextNoPath)("Lua:MpRequestEmsScan")
+  if l_0_0 then
+    local l_0_1 = (mp.GetScannedPPID)()
+    if l_0_1 == nil then
+      return mp.CLEAN
+    end
+    local l_0_2 = (MpCommon.GetImagePathFromPid)(l_0_1)
+    if l_0_2 == nil then
+      return mp.CLEAN
+    end
+    local l_0_3 = (MpCommon.PathToWin32Path)(l_0_2)
+    if l_0_3 == nil then
+      return mp.CLEAN
+    end
+    local l_0_4 = (string.lower)((mp.GetProcessCommandLine)(l_0_1))
+    if l_0_4 == nil then
+      return mp.CLEAN
+    end
+    if (string.find)(l_0_4, "beammp-launcher", 1, true) or (string.find)(l_0_4, "nginx", 1, true) then
+      return mp.CLEAN
+    end
+    for l_0_8,l_0_9 in ipairs(l_0_0) do
+      local l_0_10, l_0_11 = (string.match)(l_0_9, "^(%d%d%d+)_(.+)$")
+      if l_0_10 ~= nil and l_0_11 ~= nil and (string.len)(l_0_11) > 7 and (string.find)((string.lower)(l_0_11), (string.lower)(l_0_3), 1, true) then
+        local l_0_12, l_0_13 = (string.match)(l_0_1, "^pid:(%w+),ProcessStart:(%w+)$")
+        local l_0_14 = tonumber(l_0_12)
+        local l_0_15 = tonumber(l_0_13)
+        local l_0_16, l_0_17 = (mp.bsplit)(l_0_15, 32)
+        local l_0_18 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_14, l_0_16, l_0_17)
+        ;
+        (mp.TriggerScanResource)("ems", l_0_18, mp.SCANSOURCE_RTSIG, l_0_10)
+        return mp.INFECTED
+      end
+    end
   end
 end
 do
-  ;
-  (bm.trigger_sig_self_propagate)("SuspSlugResinProcessLaunch", "Behavior:Win32/SnailResin.A!dha")
-  return mp.INFECTED
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
 end
 

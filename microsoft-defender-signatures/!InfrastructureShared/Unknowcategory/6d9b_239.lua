@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)(((mp.getfilename)()):lower(), "appdata\\roaming\\%l+\\[^\\]+$") then
+if peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() < 355842 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[1]).Name == ".data" then
+if (mp.getfilesize)() < 4000 and (mp.get_mpattribute)("BM_TEXT_FILE") then
   return mp.INFECTED
 end
 return mp.CLEAN

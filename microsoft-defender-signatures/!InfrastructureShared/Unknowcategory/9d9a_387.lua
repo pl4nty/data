@@ -3,15 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:lolMiner")
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:EthMiner")
   return mp.INFECTED
 end
 if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_lolminer")
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_ethminer")
 else
   ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_lolminer")
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_ethminer")
 end
 return mp.CLEAN
 

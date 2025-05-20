@@ -3,13 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pehdr.ImageBase + (pesecs[1]).VirtualAddress
-local l_0_1 = (pe.mmap_va)(l_0_0, 4)
-if (string.sub)(l_0_1, 1, 4) == "(re)" then
-  (mp.changedetectionname)(805306418)
+if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
+  return mp.CLEAN
 end
-if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3898037843 and (mp.readu_u32)(epcode, 13) == 4278738315 and (mp.readu_u32)(epcode, 17) == 1703089267 and (mp.readu_u16)(epcode, 21) == 252 then
-  (mp.changedetectionname)(805306418)
+local l_0_0 = (mp.GetBruteMatchData)()
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = (string.lower)(tostring(headerpage))
+else
+  l_0_1 = (string.lower)(tostring(footerpage))
+end
+if not l_0_1 then
+  return mp.CLEAN
+end
+local l_0_2 = "(?:set|add)-mppreference\\s+-exclusionpath\\s+[\"\']?c:\\\\+programdata\\\\*?%?[\"\']?(?:[\\s;]|$)"
+local l_0_3 = false
+l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
+if l_0_3 == false then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

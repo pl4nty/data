@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilename)()):match("(Ole Stream 0).*%.scr") and peattributes.isexe then
+if peattributes.suspicious_image_version and peattributes.hasappendeddata and peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

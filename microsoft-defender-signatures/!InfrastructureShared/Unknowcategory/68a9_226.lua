@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  (mp.set_mpattribute)("PUA:Block:WizzRemote:Bit")
-  return mp.INFECTED
+if not (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+  (mp.set_mpattribute)("SIGATTR:DelphiFile")
+  ;
+  (mp.set_mpattribute)("MpEnableCOM")
 end
 return mp.CLEAN
 

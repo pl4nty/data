@@ -3,40 +3,50 @@
 
 -- params : ...
 -- function num : 0
-local l_0_2 = nil
-local l_0_0 = nil
-local l_0_1 = mp.CLEAN
-if not l_0_2 or not l_0_0 then
-  return mp.CLEAN
-end
--- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
+local l_0_0 = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = tonumber
+  local l_1_4 = (l_1_0:reverse()):gsub
+  do
+    local l_1_5 = l_1_0:reverse()
+    l_1_4 = l_1_4(l_1_5, ".", function(l_2_0)
+    -- function num : 0_0_0
+    local l_2_1 = string.format
+    local l_2_2 = "%02x"
+    do
+      local l_2_3, l_2_4 = (string.byte)(l_2_0), .end
+      do return l_2_1(l_2_2, l_2_3, l_2_4) end
+      -- DECOMPILER ERROR at PC9: Confused about usage of register R2 for local variables in 'ReleaseLocals'
 
--- DECOMPILER ERROR at PC24: Overwrote pending register: R1 in 'AssignReg'
-
-if (string.find)(l_0_0, ":\\windows\\servicing\\trustedinstaller.exe", 1, true) then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "%windir%\\servicing\\trustedinstaller.exe", 1, true) then
-  return mp.CLEAN
-end
-local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_2)
-if l_0_3 then
-  for l_0_7,l_0_8 in ipairs(l_0_3) do
-    if (string.len)(l_0_8) >= 3 then
-      if l_0_1 ~= mp.INFECTED and (string.find)(l_0_0, l_0_8, 1, true) then
-        l_0_1 = mp.INFECTED
-      else
-        if (sysio.IsFileExists)(l_0_8) and not (mp.IsKnownFriendlyFile)(l_0_8, false, false) then
-          (bm.add_related_file)(l_0_8)
-        end
-      end
     end
   end
-end
-do
-  if l_0_2 ~= mp.INFECTED then
-    return mp.CLEAN
+)
+    local l_1_2 = nil
+    l_1_5 = 16
+    local l_1_3 = nil
+    do return l_1_1(l_1_4, l_1_5) end
+    -- DECOMPILER ERROR at PC10: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
   end
+end
+
+if not peattributes.hasappendeddata then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilesize)()
+local l_0_2 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA
+if l_0_2 == 0 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_3 = l_0_0((mp.readfile)(l_0_2, 4))
+;
+(mp.readprotection)(true)
+local l_0_4 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+local l_0_5 = l_0_1 - l_0_4
+if l_0_1 < l_0_3 and l_0_5 > 0 and l_0_5 < 20480 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

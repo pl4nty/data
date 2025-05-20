@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.get_versioninfo)()).OriginalFilename == "riched32.dll" and ((pe.get_versioninfo)()).CompanyName == "Microsoft Corporation" then
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Taskun.AMAK!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

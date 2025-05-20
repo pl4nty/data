@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+if mp.HSTR_WEIGHT >= 7 then
+  (mp.set_mpattribute)("PUA:Block:RefogKeylogger")
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-return mp.CLEAN
+return mp.LOWFI
 

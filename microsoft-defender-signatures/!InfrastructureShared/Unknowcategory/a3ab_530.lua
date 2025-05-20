@@ -3,9 +3,22 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Win32/Neurevt_loader")
-if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3187044 and (mp.readu_u32)(epcode, 9) == 1448280064 and (mp.readu_u32)(epcode, 13) == 108314757 and (mp.readu_u32)(epcode, 17) == 16939136 and (mp.readu_u32)(epcode, 21) == 1703096436 and (mp.readu_u32)(epcode, 25) == 4226285820 then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 100)
+local l_0_1 = (string.find)(l_0_0, "Yt", 1, true)
+local l_0_2 = (string.find)(l_0_0, "\015\132", 1, true)
+if l_0_2 ~= nil and l_0_1 ~= nil then
+  if l_0_1 <= l_0_2 then
+    local l_0_3 = (string.byte)(l_0_0, l_0_2 + 2)
+    local l_0_4 = (string.char)(l_0_2 - l_0_1 + l_0_3)
+    ;
+    (pe.mmap_patch_va)(pevars.sigaddr + l_0_1, (string.format)("\233%s\000\000\000", l_0_4))
+  else
+    do
+      ;
+      (pe.mmap_patch_va)(pevars.sigaddr + l_0_2 - 1, "é")
+      return mp.LOWFI
+    end
+  end
 end
-return mp.CLEAN
 

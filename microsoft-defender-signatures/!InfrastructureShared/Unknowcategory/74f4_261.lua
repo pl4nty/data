@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%l%l%l%l%l%l.exe") ~= nil then
-  return mp.INFECTED
+if (pe.query_import)(pe.IMPORT_STATIC, 1000219088) == 0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pe.query_import)(pe.IMPORT_STATIC, 1830286805) == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

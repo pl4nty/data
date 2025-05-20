@@ -10,7 +10,7 @@ end
 if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpsigstub.exe", 1, true) or (string.find)((string.lower)(l_0_0), "\\mpcmdrun.exe", 1, true) then
   return mp.CLEAN
 end
-if (bm.GetSignatureMatchDuration)() < 10000000 then
+if (bm.GetSignatureMatchDuration)() < 40000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

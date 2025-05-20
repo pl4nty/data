@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0.command_line)
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, true, false) then
-    (mp.ReportLowfi)(l_0_6, 1834945633)
+do
+  if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() > 35000000 and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

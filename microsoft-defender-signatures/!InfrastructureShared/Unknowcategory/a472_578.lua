@@ -3,17 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 122880 and l_0_0 <= 131072 and (pehdr.NumberOfSections >= 4 or pehdr.NumberOfSections <= 7) then
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched then
-    return mp.INFECTED
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
+  else
   end
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[4]).matched then
-    return mp.INFECTED
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (not (this_sigattrlog[3]).matched or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2) ~= nil) and (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2) ~= "" then
+    local l_0_5 = nil
+    for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2))) do
+      local l_0_6 = nil
+      -- DECOMPILER ERROR at PC37: Confused about usage of register: R6 in 'UnsetPending'
+
+      if R6_PC37 ~= nil and R6_PC37 ~= "" and (sysio.IsFileExists)(R6_PC37) and not (mp.IsKnownFriendlyFile)(R6_PC37, false, false) then
+        (bm.add_related_file)(R6_PC37)
+      end
+    end
   end
-  if (hstrlog[1]).matched and (hstrlog[4]).matched and (hstrlog[5]).matched then
+  do
     return mp.INFECTED
   end
 end
-return mp.CLEAN
 

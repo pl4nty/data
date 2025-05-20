@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if peattributes.isexe and pehdr.NumberOfSections == 5 then
-  return mp.INFECTED
+local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(MpCommon.SetPersistContextNoPath)("MiKatzExe", l_0_1, 100)
+return mp.INFECTED
 

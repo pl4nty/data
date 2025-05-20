@@ -3,12 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.match)(l_0_0, "extensions") ~= nil then
+if mp.HSTR_WEIGHT >= 100 then
   return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT >= 10 and mp.HSTR_WEIGHT < 50 then
+    (mp.changedetectionname)(805306522)
+    return mp.INFECTED
+  else
+    if mp.HSTR_WEIGHT > 1 then
+      (mp.set_mpattribute)("SLF:Ransom:Win32/Wadhrama.A")
+    end
+  end
 end
 return mp.CLEAN
 

@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and (mp.get_mpattribute)("pea_headerchecksum0") and pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("Lua:OverSizedLnkFile") then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (this_sigattrlog[5]).matched and (this_sigattrlog[6]).matched then
+  local l_0_0 = (this_sigattrlog[5]).p1
+  local l_0_1 = (this_sigattrlog[6]).p1
+  if l_0_0 .. l_0_1 == "unsafe" then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.LOWFI
+end
 

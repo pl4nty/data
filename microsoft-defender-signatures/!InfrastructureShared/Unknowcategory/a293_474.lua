@@ -3,21 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
-  do
-    if (mp.getfilesize)() < 20480 then
-      local l_0_0 = (mp.GetCertificateInfo)()
-      for l_0_4,l_0_5 in pairs(l_0_0) do
-        if l_0_5.Signers ~= nil then
-          return mp.CLEAN
-        end
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() >= 524288 and (mp.getfilesize)() < 565248 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
       end
-      return mp.INFECTED
     end
-    if (mp.getfilesize)() >= 20480 and (mp.getfilesize)() < 49152 then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

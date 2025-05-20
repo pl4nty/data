@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_imports and peattributes.no_exports and peattributes.x86_image and peattributes.executable_image then
+if peattributes.no_security == true and peattributes.isexe == true and (pesecs[11]).Characteristics == 3758096480 then
   return mp.INFECTED
 end
 return mp.CLEAN

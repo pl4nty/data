@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() < 10000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
+end
 do
-  if (hstrlog[6]).matched and (hstrlog[7]).matched then
-    local l_0_0 = mp.HSTR_WEIGHT - 2
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 >= 5 then
-    return mp.INFECTED
-  end
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_vbinject_ky")
-  return mp.CLEAN
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

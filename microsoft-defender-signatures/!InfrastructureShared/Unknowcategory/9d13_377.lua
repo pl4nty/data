@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (pesecs[6]).Name == "qhnxjbuu" and (pesecs[5]).Name == "dyzwkzqi" then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
   return mp.CLEAN
 end
+if l_0_0.integrity_level < ((MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)).IntegrityLevel then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:GT32SupportGeeks.C")
+if (mp.get_mpattribute)("BM_DEVICE_DRIVER") and (mp.get_mpattribute)("RPF:TopLevelFile") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC27: Unhandled construct in 'MakeBoolean' P3
-
-if (peattributes.amd64_image and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096448) or (pesecs[pehdr.NumberOfSections]).Characteristics == 3761242176 then
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1 = l_0_0:match("(.+\\)([^\\]+)$")
+if (string.sub)(l_0_1, -18) == "\\windows\\system32\\" or (string.sub)(l_0_1, -18) == "\\windows\\syswow64\\" then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (((mp.getfilename)()):lower()):find("word/embeddings/oleobject1.bin->(ole stream 0)", -46, true) then
+if ((pe.get_versioninfo)()).InternalName == "Bluthmon.exe" and ((pe.get_versioninfo)()).CompanyName == "Mototech.co" then
   return mp.INFECTED
 end
 return mp.LOWFI

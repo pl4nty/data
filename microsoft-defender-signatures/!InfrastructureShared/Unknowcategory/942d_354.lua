@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 4 or peattributes.isdll == false or peattributes.hasexports == false or peattributes.epinfirstsect == false or (pesecs[1]).SizeOfRawData ~= 61440 then
-  return mp.CLEAN
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -31)) ~= "altaro.services.backupagent.exe" and (string.lower)((string.sub)(l_0_0, -20)) ~= "coreserviceshell.exe" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() == 47576 and peattributes.no_security == true and peattributes.isexe == true and (pesecs[4]).Name == ".ex_rsc" then
+if (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 and (mp.crc32)(-1, epcode, 1, 15) == 183454422 then
   return mp.INFECTED
 end
 return mp.CLEAN

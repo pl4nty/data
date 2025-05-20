@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[4]).utf8p1)
-    if (string.match)(l_0_0, "%.bin$") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if not peattributes.hasexports and pehdr.SizeOfImage == 2351104 and pehdr.SizeOfCode == 57344 and pehdr.AddressOfEntryPoint == 14780 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

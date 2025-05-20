@@ -18,7 +18,7 @@ end
 if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
   return mp.CLEAN
 end
-if (pesecs[1]).NameDW ~= 2019914752 then
+if (pesecs[1]).NameDW ~= 2019914798 then
   return mp.CLEAN
 end
 if epcode[1] ~= 233 then

@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() >= 512000 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData < 65536 then
-  return mp.CLEAN
-end
-if peattributes.isvbnative == true then
+if peattributes.ismsil then
+  if peattributes.dt_error_not_enough_memory then
+    (pe.set_peattribute)("enable_vmm_grow", true)
+    ;
+    (pe.reemulate)()
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

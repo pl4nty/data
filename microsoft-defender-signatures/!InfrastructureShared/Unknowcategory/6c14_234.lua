@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if pehdr.NumberOfSections == 6 and l_0_0 >= 15000000 and l_0_0 <= 22000000 then
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() < 11000 then
   return mp.INFECTED
 end
 return mp.CLEAN

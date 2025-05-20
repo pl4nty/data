@@ -6,20 +6,20 @@
 -- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[14]).matched then
+  if (this_sigattrlog[13]).matched then
     local l_0_0 = nil
   else
   end
   -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
 
   do
-    if not (this_sigattrlog[15]).matched or (this_sigattrlog[16]).matched then
-      local l_0_1, l_0_2, l_0_3, l_0_4 = (this_sigattrlog[15]).utf8p1
+    if not (this_sigattrlog[14]).matched or (this_sigattrlog[15]).matched then
+      local l_0_1, l_0_2, l_0_3, l_0_4 = (this_sigattrlog[14]).utf8p1
     else
     end
-    if (this_sigattrlog[17]).matched then
+    if (this_sigattrlog[16]).matched then
       do return mp.CLEAN end
-      if (this_sigattrlog[17]).utf8p1 == nil then
+      if (this_sigattrlog[16]).utf8p1 == nil then
         return mp.CLEAN
       end
       local l_0_5 = nil

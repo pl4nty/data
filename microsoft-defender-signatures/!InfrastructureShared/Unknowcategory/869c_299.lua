@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 976800 and (mp.getfilesize)() < 1330584 and (pesecs[5]).Name == "INIT" and (pesecs[5]).Characteristics == 3791650848 then
+if pehdr.NumberOfSections == 6 and (mp.getfilesize)() >= 210000 and (mp.getfilesize)() <= 213000 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

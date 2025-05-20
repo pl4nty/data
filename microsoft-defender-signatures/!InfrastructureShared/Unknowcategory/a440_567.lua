@@ -13,7 +13,7 @@ if l_0_2 <= 0 or l_0_2 > 4194304 or not (pe.isdynamic_va)(l_0_2) then
   return mp.CLEAN
 end
 local l_0_3 = (mp.readu_u32)(l_0_1, 5)
-if l_0_3 <= 0 or l_0_3 > 16777216 then
+if l_0_3 <= 0 or l_0_0 <= l_0_3 then
   return mp.CLEAN
 end
 local l_0_4 = (pe.mmap_va)(l_0_2, l_0_3)

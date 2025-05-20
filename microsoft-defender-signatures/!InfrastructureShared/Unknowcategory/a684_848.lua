@@ -3,22 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p1
-  if l_0_0 == nil and (string.len)(l_0_0) < 3 then
-    return mp.CLEAN
-  end
-  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
-  local l_0_1 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
-  if l_0_1 == nil and (string.len)(l_0_1) < 3 then
-    return mp.CLEAN
-  end
-  local l_0_2 = {}
-  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\windows\\"))] = true
-  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\"))] = true
-  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\windows\\"))] = true
-  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\"))] = true
-  if l_0_2[l_0_1] then
+local l_0_0 = nil
+local l_0_1 = nil
+if (bm.get_current_process_startup_info)() ~= nil and ((bm.get_current_process_startup_info)()).ppid ~= nil then
+  l_0_1 = (string.lower)((mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid))
+  if (string.find)(l_0_1, "/create", 1, true) and (string.find)(l_0_1, "cmd.exe", 1, true) and (string.find)(l_0_1, "wordpad.exe", 1, true) and (string.find)(l_0_1, "/sc", 1, true) and (string.find)(l_0_1, "/tr", 1, true) and (string.find)(l_0_1, "/st", 1, true) and (string.find)(l_0_1, "/sd", 1, true) then
+    (bm.request_SMS)(((bm.get_current_process_startup_info)()).ppid, "M")
+    ;
+    (bm.add_action)("SmsAsyncScanEvent", 1)
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((bm.get_process_relationships)()) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC96: Confused about usage of register: R7 in 'UnsetPending'
+
+      if R7_PC96.ppid ~= nil then
+        (bm.request_SMS)(R7_PC96.ppid, "M")
+      end
+    end
     return mp.INFECTED
   end
 end

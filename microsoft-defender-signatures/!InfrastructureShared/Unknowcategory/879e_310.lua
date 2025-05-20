@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if l_0_0 ~= nil and (string.find)(l_0_0, "\\services.exe\\", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

@@ -3,16 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
-if l_0_0 ~= nil then
-  local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-  local l_0_2 = (string.match)(l_0_1, "[Ww][Ii][Nn][Ww][Oo][Rr][Dd]%.[Ee][Xx][Ee]\".+\"(.+%.[Dd][Oo][Cc][MmXx]?\"-)")
-  if l_0_2 ~= nil and (string.len)(l_0_2) > 3 and (sysio.IsFileExists)(l_0_2) then
-    (mp.ReportLowfi)(l_0_2, 1344846517)
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)(tostring(headerpage))
+local l_0_1 = l_0_0:match("==(%w+)msscriptcontrol.scriptcontrol")
+local l_0_2 = (mp.GetBruteMatchData)()
+local l_0_3 = l_0_2.match_offset + 1
+local l_0_4 = 95
+local l_0_5 = ""
+if l_0_2.is_header then
+  l_0_5 = l_0_0:sub(l_0_3, l_0_3 + l_0_4)
+else
+  l_0_5 = (string.lower)((tostring(footerpage)):sub(l_0_3, l_0_3 + l_0_4))
 end
-do
+if l_0_1 ~= nil and l_0_5:match(l_0_1) then
   return mp.INFECTED
 end
+return mp.CLEAN
 

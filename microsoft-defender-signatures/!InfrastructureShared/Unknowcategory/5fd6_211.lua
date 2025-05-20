@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 2 and (hstrlog[2]).hitcount > 30 then
+if peattributes.isvbnative == true and (mp.getfilesize)() == 61440 then
   return mp.INFECTED
 end
 return mp.CLEAN

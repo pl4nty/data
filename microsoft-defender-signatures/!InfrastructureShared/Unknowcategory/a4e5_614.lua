@@ -3,30 +3,14 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if not (this_sigattrlog[8]).utf8p1 then
-    local l_0_0 = (this_sigattrlog[9]).utf8p1
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "svchost.exe" or l_0_1:match("([^\\]+)$") == "rundll32.exe" or l_0_1:match("([^\\]+)$") == "mstsc.exe" or l_0_1:match("([^\\]+)$") == "dllhost.exe" or l_0_1:match("([^\\]+)$") == "wuauclt.exe" or l_0_1:match("([^\\]+)$") == "msfeedssync.exe" or l_0_1:match("([^\\]+)$") == "nslookup.exe" or l_0_1:match("([^\\]+)$") == "werfault.exe" or l_0_1:match("([^\\]+)$") == "eventvwr.exe" then
+      return mp.INFECTED
+    end
   end
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_1 = (string.lower)(l_0_0)
-  if l_0_1 == nil or (string.find)(l_0_1, "c:\\", 1, true) == nil then
-    return mp.CLEAN
-  end
-  if (sysio.IsFileExists)(l_0_1) then
-    (bm.add_related_file)(l_0_1)
-  end
-  local l_0_2 = (bm.get_current_process_startup_info)()
-  if l_0_2 ~= nil and l_0_2.ppid ~= nil then
-    (bm.request_SMS)(l_0_2.ppid, "m")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 1)
-  end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

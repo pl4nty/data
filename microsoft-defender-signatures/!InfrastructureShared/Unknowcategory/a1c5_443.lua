@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:TradeTec")
-  ;
-  (mp.set_mpattribute)("Company:CoinMiner64:DrosteTradeTec")
-  return mp.INFECTED
+do
+  if peattributes.isexe == true and (mp.getfilesize)() < 98308 and (pesecs[5]).Name == ".ropf" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_tradetec")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_tradetec")
-end
-return mp.CLEAN
 

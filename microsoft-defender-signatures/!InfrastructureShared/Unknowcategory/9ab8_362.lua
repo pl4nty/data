@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
-  l_0_0 = 2
-end
-if (mp.bitand)(mp.HSTR_WEIGHT, 15) + l_0_0 >= 4 then
-  if pehdr.Machine ~= 332 then
-    (mp.changedetectionname)(805306465)
+do
+  if (peattributes.isdll == true or peattributes.isexe) and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
 

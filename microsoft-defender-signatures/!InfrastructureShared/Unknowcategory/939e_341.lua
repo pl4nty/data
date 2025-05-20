@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.SizeOfImage >= 65536 and pehdr.SizeOfImage <= 131072 and peattributes.executes_from_dynamic_memory then
-  return mp.INFECTED
-else
-  ;
-  (mp.changedetectionname)(805306395)
-  return mp.SUSPICIOUS
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or (mp.getfilesize)() > 1048576 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pe.get_exports_count)() > 2 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

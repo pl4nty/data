@@ -3,17 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\narrator.exe")
-if l_0_0 ~= nil then
-  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
-  if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then
-    local l_0_2 = (string.lower)(l_0_1)
-    if (string.find)(l_0_2, "cmd", 1, true) or (string.find)(l_0_2, "msconfig", 1, true) or (string.find)(l_0_2, "taskmgr", 1, true) then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (pe.foffset_va)((hstrlog[1]).VA)
+local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).RVA
+local l_0_2 = (pe.mmap_rva)(l_0_1 + 12, 4)
+local l_0_3 = (string.byte)(l_0_2, 1) + (string.byte)(l_0_2, 2) * 256 + (string.byte)(l_0_2, 3) * 65536 + (string.byte)(l_0_2, 4) * 16777216
+local l_0_4 = (pe.foffset_rva)(l_0_3)
+if l_0_4 < l_0_0 and l_0_0 - l_0_4 < 48 then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

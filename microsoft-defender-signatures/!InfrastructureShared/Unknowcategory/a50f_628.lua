@@ -3,39 +3,41 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 10000 or l_0_0 > 100000 then
+if (this_sigattrlog[3]).matched == false or (this_sigattrlog[3]).utf8p1 == nil then
   return mp.CLEAN
 end
-local l_0_1 = tostring(footerpage)
-l_0_1 = (string.lower)(l_0_1)
-local l_0_2 = l_0_1:match("createelement%((.-)%)\r\n")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = {}
--- DECOMPILER ERROR at PC33: No list found for R3 , SetList fails
+local l_0_0 = (this_sigattrlog[3]).utf8p1
+local l_0_1 = "\\wmiprvse.exe"
+local l_0_2 = (string.len)(l_0_1)
+local l_0_3 = false
+local l_0_4, l_0_5 = (bm.get_process_relationships)()
+for l_0_9,l_0_10 in ipairs(l_0_4) do
+  if l_0_10.image_path ~= nil then
+    local l_0_11 = (string.lower)(l_0_10.image_path)
+    if (mp.bitand)(l_0_10.reason_ex, 1) == 1 and l_0_2 < (string.len)(l_0_11) and (string.sub)(l_0_11, -l_0_2) == l_0_1 then
+      do
+        do
+          l_0_3 = true
+          do break end
+          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out DO_STMT
 
--- DECOMPILER ERROR at PC34: Overwrote pending register: R4 in 'AssignReg'
+          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-local l_0_4 = "b"
-local l_0_5 = {}
--- DECOMPILER ERROR at PC36: Overwrote pending register: R6 in 'AssignReg'
+          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_STMT
 
-local l_0_6 = "s"
--- DECOMPILER ERROR at PC37: Overwrote pending register: R7 in 'AssignReg'
+          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
--- DECOMPILER ERROR at PC39: Overwrote pending register: R8 in 'AssignReg'
+          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_STMT
 
--- DECOMPILER ERROR at PC40: Overwrote pending register: R9 in 'AssignReg'
-
-for l_0_10,l_0_11 in (("e").gmatch)("6", "4") do
-  local l_0_12 = l_0_4(l_0_10, l_0_11)
-  l_0_5[l_0_6] = (string.char)(l_0_12)
-  if l_0_5[l_0_6] ~= l_0_3[l_0_6] then
-    return mp.CLEAN
+        end
+      end
+    end
   end
-  l_0_6 = l_0_6 + 1
 end
+if l_0_3 == false then
+  return mp.CLEAN
+end
+;
+(mp.ReportLowfi)(l_0_0, 2563793617)
 return mp.INFECTED
 

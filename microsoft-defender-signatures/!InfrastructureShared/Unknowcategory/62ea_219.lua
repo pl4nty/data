@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (hstrlog[1]).hitcount
-local l_0_1 = (hstrlog[2]).hitcount
-if l_0_0 > 15 or l_0_1 > 15 or l_0_0 + l_0_1 > 15 then
+if peattributes.isexe and peattributes.ismsil and peattributes.amd64_image then
   return mp.INFECTED
 end
 return mp.CLEAN

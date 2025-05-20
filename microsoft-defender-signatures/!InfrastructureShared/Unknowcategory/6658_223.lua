@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_deep_rescan")
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
+if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "veeamp.exe" then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

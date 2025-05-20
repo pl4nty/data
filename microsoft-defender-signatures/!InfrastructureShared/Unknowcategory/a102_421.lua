@@ -3,7 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 24576 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = tostring((mp.readfile)(0, l_0_0))
+l_0_1 = (string.lower)(l_0_1)
+if (string.find)(l_0_1, "c%z:%z\\%zc%zo%zs%zu%zv%z\\%zw%ze%zg%ze%zr%zb%z\\%z.+%.%ze%zx%ze") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

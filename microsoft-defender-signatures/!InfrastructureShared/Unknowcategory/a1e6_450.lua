@@ -3,11 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.ismsil then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1000000 or l_0_0 < 4000 then
   return mp.CLEAN
 end
-if (mp.enum_mpattributesubstring)("Lua:PeCompanyName!microsoft") ~= nil or (mp.enum_mpattributesubstring)("Lua:PeInternalName!microsoft.") ~= nil or (mp.enum_mpattributesubstring)("Lua:PeOriginalName!microsoft.") ~= nil or (mp.get_mpattribute)("Lua:Company_Microsoft") then
-  return mp.CLEAN
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+end
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
 return mp.INFECTED
 

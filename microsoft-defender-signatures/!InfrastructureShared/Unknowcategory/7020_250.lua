@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 3 then
+if (pesecs[5]).Name == ".rsrc" and (pesecs[5]).VirtualSize > 93955 and (pesecs[5]).VirtualSize < 93961 then
   return mp.INFECTED
 end
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
 return mp.CLEAN
 

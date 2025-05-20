@@ -4,11 +4,11 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = ""
-if (this_sigattrlog[9]).utf8p1 ~= nil then
-  l_0_0 = (string.lower)((this_sigattrlog[9]).utf8p1)
+if (this_sigattrlog[8]).utf8p1 ~= nil then
+  l_0_0 = (string.lower)((this_sigattrlog[8]).utf8p1)
 else
-  if (this_sigattrlog[10]).utf8p1 ~= nil then
-    l_0_0 = (string.lower)((this_sigattrlog[10]).utf8p1)
+  if (this_sigattrlog[9]).utf8p1 ~= nil then
+    l_0_0 = (string.lower)((this_sigattrlog[9]).utf8p1)
   else
     return mp.CLEAN
   end

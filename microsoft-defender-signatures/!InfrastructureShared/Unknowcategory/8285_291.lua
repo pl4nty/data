@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".qtmetad" and (pesecs[5]).Characteristics == 1342177344 and (pesecs[6]).Name == ".qtmimed" and (pesecs[6]).Characteristics == 1342177344 then
+if (mp.get_mpattribute)("NID:Win32/Sednit") and peattributes.no_security == true and pehdr.NumberOfSections == 9 then
   return mp.INFECTED
 end
 return mp.CLEAN

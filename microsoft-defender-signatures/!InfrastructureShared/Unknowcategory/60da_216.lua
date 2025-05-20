@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
-;
-(pe.reemulate)()
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if not peattributes.suspicious_image_version then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

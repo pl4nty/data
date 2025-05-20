@@ -3,10 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-local l_0_1, l_0_2 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 > 16410 and l_0_1 ~= nil and l_0_2 ~= nil and ((string.find)(l_0_1, "/tmp", 1, true) or (string.find)(l_0_1, "/home", 1, true) or (string.find)(l_0_1, "/dev/shm", 1, true) or (string.find)(l_0_1, "/var/crash", 1, true)) and l_0_2 == "java" then
+if (this_sigattrlog[1]).matched == false then
+  return mp.CLEAN
+end
+local l_0_0 = (this_sigattrlog[1]).ppid
+local l_0_1, l_0_2 = (bm.get_process_relationships)(l_0_0)
+if l_0_1 == nil or #l_0_1 < 1 then
+  return mp.CLEAN
+end
+local l_0_3 = nil
+for l_0_7,l_0_8 in ipairs(l_0_1) do
+  if (mp.bitand)(l_0_8.reason_ex, 1) == 1 and (string.len)(l_0_8.image_path) > 15 and (string.sub)(l_0_8.image_path, -15) == "\\powershell.exe" then
+    l_0_3 = l_0_8.ppid
+    ;
+    (bm.add_related_process)(l_0_8.ppid)
+    break
+  end
+end
+do
+  if l_0_3 == nil then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

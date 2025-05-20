@@ -3,10 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - (mp.bitand)(0 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1)), 255), 4), 1)
-if (pe.get_api_id)(l_0_0) == 3164325074 then
-  (pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr + 12, 16), "t", 1, true) + 11, "\235")
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 8192 then
   return mp.INFECTED
 end
-return mp.CLEAN
+local l_0_1 = (mp.GetBruteMatchData)()
+if not l_0_1.is_header then
+  return mp.INFECTED
+end
+;
+(mp.readprotection)(false)
+local l_0_2 = (mp.readfile)(0, l_0_0)
+local l_0_3 = (string.match)(l_0_2, "powershell.+%-e ([a-zA-Z0-9%+/]+)")
+if l_0_3 == nil then
+  return mp.INFECTED
+end
+;
+(mp.vfo_add_buffer)(l_0_3, "[PowerShellB64]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+;
+(mp.set_mpattribute)("//SCPT:PowershellNopWHiddenE.Decoded")
+return mp.INFECTED
 

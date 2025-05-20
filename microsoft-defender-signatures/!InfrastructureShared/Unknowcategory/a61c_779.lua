@@ -3,39 +3,32 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 == nil or (this_sigattrlog[3]).utf8p2 ~= nil then
-    if (string.len)((this_sigattrlog[3]).utf8p2) < 100 then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.find)((this_sigattrlog[3]).utf8p2, "%.ps1") then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
-
-    if not (string.find)((this_sigattrlog[3]).utf8p2, "{%d%d?}{%d%d?}") then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC62: Confused about usage of register: R0 in 'UnsetPending'
-
-    local l_0_7 = nil
-    local l_0_8 = nil
-    if (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "/admin/", 1, true) and (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "get.", 1, true) and (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "php", 1, true) and (string.find)((string.gsub)((string.lower)((string.gsub)((this_sigattrlog[3]).utf8p2, "`", "")), " ", ""), "invoke", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  do
+if not (mp.IsHipsRuleEnabled)("3b576869-a4ec-4529-8536-b80a7769e899") then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = nil, nil
+if (this_sigattrlog[1]).matched then
+  if (this_sigattrlog[1]).wp2 == nil or (this_sigattrlog[1]).wp2 == "" then
     return mp.CLEAN
   end
+  l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
+  if l_0_0 == nil or l_0_0 == "" then
+    return mp.CLEAN
+  end
+  if not (MpCommon.QueryPersistContext)(l_0_0, "DroppedByOfficeProc") then
+    return mp.CLEAN
+  end
+  if (this_sigattrlog[1]).wp1 == nil or (this_sigattrlog[1]).wp1 == "" then
+    return mp.CLEAN
+  end
+  l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1)
+  if l_0_1 == nil or l_0_1 == "" then
+    return mp.CLEAN
+  end
+  if not (MpCommon.QueryPersistContext)(l_0_1, "DroppedByOfficeProc") then
+    (MpCommon.AppendPersistContext)(l_0_1, "DroppedByOfficeProc", 0)
+    return mp.INFECTED
+  end
 end
+return mp.CLEAN
 

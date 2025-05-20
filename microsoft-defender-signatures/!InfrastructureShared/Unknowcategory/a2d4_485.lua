@@ -3,21 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
-if l_0_1 ~= nil and (MpCommon.GetPersistContextCountNoPath)("UACBypassRegSet.A") > 0 then
-  local l_0_2 = (MpCommon.GetPersistContextNoPath)("UACBypassRegSet.A")
-  if l_0_2 then
-    for l_0_6,l_0_7 in ipairs(l_0_2) do
-      if (string.lower)(l_0_7) == (string.lower)(l_0_1.ppid) then
-        return mp.INFECTED
-      end
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -13) == "\\iexplore.exe" or (string.sub)(l_0_0, -11) == "\\chrome.exe" or (string.sub)(l_0_0, -18) == "\\microsoftedge.exe" or (string.sub)(l_0_0, -20) == "\\microsoftedgecp.exe" or (string.sub)(l_0_0, -12) == "\\firefox.exe" then
+  return mp.CLEAN
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
-end
+return mp.INFECTED
 

@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 15 then
-  (mp.set_mpattribute)("ALFPER:Rakzmer.A2X")
+if peattributes.isvbnative and (pesecs[3]).SizeOfRawData > 65536 then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("PUA:Block:Rakzmer")
-return mp.INFECTED
+return mp.CLEAN
 

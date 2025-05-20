@@ -3,25 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (string.lower)(l_0_0.command_line)
+if (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "gizmoinvoker", 1, true) or (string.find)(l_0_1, "monitorworkeragent", 1, true) or (string.find)(l_0_1, "\\programdata\\microsoft\\windows defender advanced threat protection", 1, true) then
   return mp.CLEAN
 end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
-if not l_0_2 then
-  return mp.CLEAN
-end
-do
-  if (string.find)((string.lower)(l_0_2), "\\windows\\temp", 1, true) then
-    local l_0_3 = (mp.GetParentProcInfo)()
-    if l_0_3 and (string.find)((string.lower)(l_0_3.image_path), "python", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+return mp.INFECTED
 

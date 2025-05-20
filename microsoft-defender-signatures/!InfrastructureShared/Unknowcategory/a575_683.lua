@@ -3,31 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "(.+\\)"
-local l_0_1, l_0_2 = nil, nil
-if (this_sigattrlog[1]).matched then
-  l_0_2 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
-    end
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset + 83
+local l_0_2 = 0
+local l_0_3 = (mp.getfilesize)()
+if l_0_0.is_header then
+  if mp.HEADERPAGE_SZ <= l_0_3 then
+    return mp.CLEAN
   end
-end
-if (this_sigattrlog[4]).matched then
-  l_0_1 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
+  l_0_2 = (mp.readheader)(l_0_1, l_0_3 - l_0_1)
 else
-  if (this_sigattrlog[5]).matched then
-    l_0_1 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[6]).matched then
-      l_0_1 = (string.match)((string.lower)((this_sigattrlog[6]).utf8p1), l_0_0)
-    end
+  if mp.FOOTERPAGE_SZ <= l_0_3 then
+    return mp.CLEAN
   end
+  l_0_2 = (mp.readfooter)(l_0_1, l_0_3 - l_0_1)
 end
-if l_0_1 ~= nil and l_0_1 == l_0_2 then
+local l_0_4 = l_0_2:find("|base64 -d", 1, true)
+if l_0_4 ~= nil then
+  l_0_2 = l_0_2:sub(0, l_0_4 - 1)
+  ;
+  (mp.vfo_add_buffer)(l_0_2, "[BaseDump]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  ;
+  (mp.set_mpattribute)("//SCPT:Base64.Encoded")
   return mp.INFECTED
 end
 return mp.CLEAN

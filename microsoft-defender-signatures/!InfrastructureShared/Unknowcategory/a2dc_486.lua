@@ -3,11 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)(l_0_6.image_path, "\\jumpcloud-agent.exe", 1, true) or (string.find)(l_0_6.image_path, "\\icinga2.exe", 1, true) or (string.find)(l_0_6.image_path, "\\plesksrv.exe", 1, true)) then
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.INFECTED
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+if (string.sub)(l_0_1, -6, -1) == ",enter" or (string.sub)(l_0_1, -7, -1) == ", enter" then
+  if l_0_0 ~= nil then
+    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

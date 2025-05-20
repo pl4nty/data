@@ -3,19 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 144
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
-local l_0_2 = 66
-while (string.byte)(l_0_1, l_0_2) == 104 do
-  if l_0_0 < l_0_2 then
-    return mp.CLEAN
-  end
-  if 0 + 1 >= 20 then
-    return mp.CLEAN
+if (mp.get_mpattribute)("InEmail") then
+  local l_0_0 = (mp.get_parent_filehandle)()
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.GetNormalizedScript)((mp.readfile_by_handle)(l_0_0, 0, 8192))
+  ;
+  (mp.readprotection)(true)
+  local l_0_2, l_0_3 = (string.gsub)(l_0_1, "%<meta", "", 4)
+  local l_0_4, l_0_5 = (string.gsub)(l_0_1, "%<pclass=", "", 4)
+  if l_0_3 < 3 and l_0_5 < 3 then
+    (mp.set_mpattribute)("SCRIPT:JS/ObfusScript_C.guardpassed")
   end
 end
-if (mp.readu_u32)(l_0_1, l_0_2) == 1146486612 and (mp.readu_u32)(l_0_1, l_0_2 + 4) == 3296978315 and (mp.readu_u16)(l_0_1, l_0_2 + 8) == 24912 and (string.byte)(l_0_1, l_0_2 + 10) == 233 then
+do
   return mp.INFECTED
 end
-return mp.CLEAN
 

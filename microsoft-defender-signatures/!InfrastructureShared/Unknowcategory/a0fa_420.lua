@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\chrome\\application\\chrome.exe", 1, true) or (string.find)(l_0_0, "\\application\\browser.exe", 1, true) then
-    return mp.CLEAN
-  end
+if pehdr.NumberOfSections > 0 and epcode[1] == 131 and epcode[2] == 60 and epcode[5] == 119 and epcode[6] == 254 and ((pesecs[pehdr.NumberOfSections]).Name == ".reloc" or (pesecs[pehdr.NumberOfSections]).Name == ".rsrc") then
   return mp.INFECTED
 end
 return mp.CLEAN

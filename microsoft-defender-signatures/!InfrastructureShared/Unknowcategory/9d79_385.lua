@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" or l_0_1:match("([^\\]+)$") == "mshta.exe" or l_0_1:match("([^\\]+)$") == "rundll32.exe" or l_0_1:match("([^\\]+)$") == "wscript.exe" then
+if peattributes.isdll == true then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 >= 400000 and l_0_0 <= 750000 then
+    local l_0_1 = (string.lower)((mp.getfilename)())
+    if l_0_1:find("\\appdata\\roaming\\microsoft\\windows\\templates\\", 1, true) then
       return mp.INFECTED
     end
   end
+end
+do
   return mp.CLEAN
 end
 

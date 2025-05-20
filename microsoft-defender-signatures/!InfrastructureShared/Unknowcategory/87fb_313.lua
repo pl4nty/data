@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[2]).matched and not (hstrlog[3]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched) or not (hstrlog[1]).matched or (hstrlog[4]).matched) then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_HIGH)
+;
+(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 5000)
+return mp.INFECTED
 

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.no_mipsgp == true and peattributes.no_boundimport == true and peattributes.no_ep == true then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:PEHasIOAVURL") and (mp.get_mpattribute)("SIGATTR:SellExecuteExError") then
+  (mp.set_mpattribute)("lua_codepatch_tibs_3")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 7, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 14, "\178\000")
 end
-return mp.CLEAN
+return mp.INFECTED
 

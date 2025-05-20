@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if pehdr.TimeDateStamp ~= 0 then
-    local l_0_0 = (MpCommon.GetCurrentTimeT)()
-    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 86400 then
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:find("\\wscript.exe") then
       return mp.INFECTED
     end
   end

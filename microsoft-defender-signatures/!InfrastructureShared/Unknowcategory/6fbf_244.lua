@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0 ~= nil and l_0_0:find("putty", 1, true) ~= nil then
-  return mp.CLEAN
+if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

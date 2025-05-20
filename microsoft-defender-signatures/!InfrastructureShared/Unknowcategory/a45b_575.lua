@@ -3,17 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\regasm.exe", 1, true) then
-    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-    local l_0_9 = tonumber(l_0_7)
-    local l_0_10 = tonumber(l_0_8)
-    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
-    ;
-    (mp.TriggerScanResource)("ems", l_0_13)
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\python", 1, true) then
+    return mp.INFECTED
   end
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\microsoft vs code\\", 1, true) or (string.find)(l_0_0, "microsoft.watson", 1, true) or (string.find)(l_0_0, "mpsigstub.exe", 1, true) or (string.find)(l_0_0, "virtualboxvm.exe", 1, true) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

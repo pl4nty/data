@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 21, 4), 1) > 40960 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:CrossRider")
+return mp.INFECTED
 

@@ -3,7 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.reads_vdll_code and (peattributes.suspicious_image_version or peattributes.uses_access_violation or peattributes.uses_privinstr or peattributes.deep_analysis or peattributes.enable_vmm_grow) and peattributes.isdll then
+if peattributes.is_process then
+  return mp.CLEAN
+end
+if peattributes.isdriver then
+  return mp.CLEAN
+end
+if peattributes.isdll then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
+if peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

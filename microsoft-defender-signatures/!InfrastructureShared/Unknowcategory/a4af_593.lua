@@ -3,15 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.CheckSum == 0 and peattributes.isexe and peattributes.hasexports and pevars.epsec < 3 and pehdr.MajorLinkerVersion == 10 and pehdr.MinorLinkerVersion == 0 and pehdr.NumberOfSections == 7 then
-  if mp.HSTR_WEIGHT == 1 then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    ;
-    (pe.reemulate)()
-  end
-  if mp.HSTR_WEIGHT == 2 then
-    return mp.INFECTED
-  end
+if not (mp.get_mpattribute)("InEmail") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if mp.HEADERPAGE_SZ < 11 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 11 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 12)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+do
+  if (string.find)(l_0_1, "по\017Ю║\177\026\225\000\000\000", 1, true) ~= nil or (string.find)(l_0_1, "PK\003\004\020\000\006\000", 1, true) ~= nil then
+    local l_0_2 = (mp.BMSearchFile)(0, l_0_0, "V\000B\000A\000_\000P\000R\000O\000J\000E\000C\000T\000\144\000")
+    if l_0_2 and l_0_2 >= 0 and l_0_2 < l_0_0 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

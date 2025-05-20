@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -7) == "cmd.exe" or (string.sub)(l_0_0, -12) == "explorer.exe" or (string.sub)(l_0_0, -14) == "powershell.exe" or (string.sub)(l_0_0, -12) == "mpcmdrun.exe" then
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
+  local l_0_1, l_0_2 = (string.match)(l_0_0, "\\microsoft\\(%a+)\\(%a+)%.exe")
+  if l_0_1 and l_0_2 and (string.sub)(l_0_1, 0, -2) == l_0_2 then
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-return mp.INFECTED
 

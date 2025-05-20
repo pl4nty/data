@@ -3,36 +3,20 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    local l_0_3 = ((string.lower)((string.sub)(l_0_0, -32))):match("\\([^\\]+)$")
-    if ({["pcpitstopscheduleservice.exe"] = true})[l_0_3] then
-      return mp.CLEAN
-    end
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC44: Confused about usage of register: R8 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R8_PC44) then
-        (bm.add_related_file)(R8_PC44)
-      end
-    end
-  end
-  do
-    l_0_3 = mp
-    l_0_3 = l_0_3.INFECTED
-    return l_0_3
+if (bm.GetSignatureMatchDuration)() > 40000000 then
+  return mp.CLEAN
+end
+local l_0_0 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  if (string.find)(l_0_0, "\\program files", 1, true) then
+    return mp.CLEAN
   end
 end
+local l_0_1 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_1.ppid, "M")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1000)
+return mp.INFECTED
 

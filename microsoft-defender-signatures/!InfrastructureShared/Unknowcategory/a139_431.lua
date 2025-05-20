@@ -3,23 +3,12 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (string.find)(l_0_0, "frombase64string", 1, true) and (string.find)(l_0_0, "wsqmcons", 1, true) and (string.find)(l_0_0, "iex", 1, true) then
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
+if (string.find)(l_0_0, "\\microsoft\\edge", 1, true) or (string.find)(l_0_0, "\\temp\\edgemitmp", 1, true) or (string.find)(l_0_0, "\\google\\chrome\\", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

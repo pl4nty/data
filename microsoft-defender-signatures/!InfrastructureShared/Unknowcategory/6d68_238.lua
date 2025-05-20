@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%[cmdembedded%]$") == nil then
-  return mp.CLEAN
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/LummaC!MTB") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
+local l_0_1 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 5, 1))
+if l_0_0 + l_0_1 == 87 or l_0_1 - l_0_0 == 87 then
+  return mp.INFECTED
 end
-local l_0_1 = {}
-l_0_1["isxagent.exe"] = true
-l_0_1["totalrecoveryprosetup.exe"] = true
-if l_0_1[(string.lower)(l_0_0:match("\\([^\\]+)$"))] then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

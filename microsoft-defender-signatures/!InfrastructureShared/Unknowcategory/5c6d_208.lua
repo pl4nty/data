@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.crc32)(-1, epcode, 1, 16) == 3504257948 then
-  return mp.INFECTED
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

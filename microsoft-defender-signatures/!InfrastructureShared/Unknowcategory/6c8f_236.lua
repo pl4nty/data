@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "\002\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "\000\000\000\000")
-return mp.INFECTED
+if (pesecs[4]).Name == ".zip#**." and (pesecs[5]).Name == ".zip#**." and (pesecs[6]).Name == ".zip#**." then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

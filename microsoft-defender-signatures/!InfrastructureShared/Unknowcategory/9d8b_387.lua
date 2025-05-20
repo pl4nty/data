@@ -3,19 +3,17 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R1 in 'AssignReg'
 
-    if (string.match)(l_0_0, "hidden.+bypass.+iex.+text%.encoding.+frombase64string.+gp.*hkcu:.+") ~= nil then
-      return mp.INFECTED
-    end
+local l_0_1 = nil
+if l_0_0 ~= nil and l_0_1 ~= nil and l_0_0 == l_0_1 then
+  if (string.find)(l_0_0, "c:\\windows\\system32\\", 1, true) then
     return mp.CLEAN
   end
+  return mp.INFECTED
 end
+return mp.CLEAN
 

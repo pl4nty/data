@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-;
-(table.insert)(l_0_0, (bm.get_imagepath)())
-;
-(MpCommon.SetPersistContextNoPath)("UACBypassExp.ZK!dllhost", l_0_0, 3)
-return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "winword.exe" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

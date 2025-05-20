@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Win64/IcedID.MT!MTB") then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 and (string.find)((string.lower)(l_0_0), "\\chromium\\", 1, true) == nil then
   return mp.INFECTED
 end
 return mp.CLEAN

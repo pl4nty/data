@@ -3,17 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "omadmclient.exe" or l_0_1:match("([^\\]+)$") == "provtool.exe" then
-      return mp.CLEAN
-    end
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil, nil
   end
-  if (versioning.IsSeville)() and (versioning.GetCloudBlockLevel)() >= 4 then
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_2 = nil
+  local l_0_3 = R1_PC23
+  local l_0_4 = ((bm.get_imagepath)())
+  -- DECOMPILER ERROR at PC31: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC39: Confused about usage of register: R3 in 'UnsetPending'
+
+  if (l_0_4 == nil or nil ~= nil) and l_0_3 ~= nil and (string.lower)(nil) == (string.lower)(l_0_3) then
     return mp.INFECTED
   end
-  return mp.LOWFI
+  return mp.CLEAN
 end
 

@@ -3,17 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:XMRig")
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrig")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrig")
+if not peattributes.hasexports then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("Miner:XMRigNoBlock")
-return mp.CLEAN
+local l_0_0, l_0_1 = (pe.get_exports)()
+do
+  if l_0_0 == 1 then
+    local l_0_2 = (pe.mmap_string_rva)((l_0_1[1]).namerva, 64)
+    if l_0_2 == "RegisterModule" then
+      (mp.set_mpattribute)("BM_IISMODULE")
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

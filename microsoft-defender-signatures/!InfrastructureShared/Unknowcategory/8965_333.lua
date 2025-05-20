@@ -3,8 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 69632 and (mp.getfilesize)() < 94208 then
-  return mp.INFECTED
+local l_0_0 = 8
+for l_0_4 = 1, 50 do
+  if l_0_0 < 1 then
+    return mp.CLEAN
+  end
+  if (sigattr_head[l_0_4]).attribute == 12429 then
+    (mp.set_mpattribute)("SIGATTR:AntiEmuRaceThread")
+    return mp.CLEAN
+  end
+  if (sigattr_head[l_0_4]).attribute ~= 12362 then
+    l_0_0 = l_0_0 - 1
+  end
 end
 return mp.CLEAN
 

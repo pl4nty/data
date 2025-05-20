@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 and l_0_0.integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
+if peattributes.ismsil == true and peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 10000 then
   return mp.INFECTED
 end
 return mp.CLEAN

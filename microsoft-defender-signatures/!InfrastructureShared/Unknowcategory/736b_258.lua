@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((bm.get_current_process_startup_info)()).integrity_level <= MpCommon.SECURITY_MANDATORY_LOW_RID then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 13, "")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
+return mp.INFECTED
 

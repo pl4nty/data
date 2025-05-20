@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+if peattributes.ismsil == true and (mp.getfilesize)() > 290000 and (mp.getfilesize)() < 320000 then
   return mp.INFECTED
 end
 return mp.CLEAN

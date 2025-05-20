@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+if peattributes.isdll and (mp.getfilesize)() < 390000 then
+  if mp.HSTR_WEIGHT >= 11 then
+    return mp.SUSPICIOUS
   end
-  return mp.CLEAN
+  if mp.HSTR_WEIGHT >= 10 then
+    (pe.set_peattribute)("hstr_exhaustive", true)
+    ;
+    (pe.reemulate)()
+  end
+  return mp.LOWFI
 end
+return mp.CLEAN
 

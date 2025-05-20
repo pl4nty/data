@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched) and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
-  return mp.INFECTED
+do
+  if peattributes.isdll and peattributes.hasexports then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 409600 and l_0_0 < 716800 and (pe.get_exports_count)() == 9 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

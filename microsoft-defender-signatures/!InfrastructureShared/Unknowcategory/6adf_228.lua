@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[7]).Name == ".taggant" and (pesecs[7]).Characteristics == 3758096448 then
+if peattributes.ismsil and peattributes.x86_image and peattributes.executable_image then
   return mp.INFECTED
 end
 return mp.CLEAN

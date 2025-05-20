@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1000000 and peattributes.executes_from_last_section == true then
-  if mp.HSTR_WEIGHT >= 3 then
-    return mp.SUSPICIOUS
-  else
-    return mp.LOWFI
-  end
-end
-return mp.CLEAN
+(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 3695440085)
+;
+(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2615380485)
+return mp.INFECTED
 

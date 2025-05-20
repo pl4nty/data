@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if (string.len)(l_0_1) < 1024 then
-  return mp.CLEAN
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/CobaltStrike.PA!Pra1") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

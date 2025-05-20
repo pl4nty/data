@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == true and peattributes.amd64_image then
+if peattributes.isexe and peattributes.x86_image and peattributes.dynmem_APIcall then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,21 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
-  do
-    if (mp.getfilesize)() < 47872 then
-      local l_0_0 = (mp.GetCertificateInfo)()
-      for l_0_4,l_0_5 in pairs(l_0_0) do
-        if l_0_5.Signers ~= nil then
-          return mp.CLEAN
-        end
+do
+  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (pesecs[3]).Name == "UPX2" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
       end
-      return mp.INFECTED
     end
-    if (mp.getfilesize)() >= 47872 and (mp.getfilesize)() < 57088 then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

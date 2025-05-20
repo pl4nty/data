@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:XMRig")
-  return mp.INFECTED
+do
+  if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() > 10485760 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil and (l_0_5.Signers).IsValid == true then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrig")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrig")
-end
-return mp.CLEAN
 

@@ -3,20 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-  do
-    do
-      if l_0_0:len() > 13 and (string.sub)(l_0_0, -13) == "\\win32spl.dll" then
-        local l_0_1 = (string.lower)((bm.get_imagepath)())
-        if (string.sub)(l_0_1, -11) == "svchost.exe" then
-          return mp.CLEAN
-        end
-      end
-      ;
-      (bm.add_related_file)(l_0_0)
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if (string.sub)(l_0_1, -5, -1) == ",WW50" or (string.sub)(l_0_1, -6, -1) == ", WW50" or (string.sub)(l_0_1, -5, -1) == ",N115" or (string.sub)(l_0_1, -6, -1) == ", N115" then
+  if l_0_0 ~= nil then
+    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

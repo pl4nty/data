@@ -3,17 +3,39 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
+if peattributes.ismsil and (mp.get_mpattribute)("LUA:FileSizeLE5000.A") and (mp.get_mpattribute)("pea_no_security") then
+  local l_0_0 = (pe.get_versioninfo)()
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  local l_0_1 = {}
+  -- DECOMPILER ERROR at PC26: No list found for R1 , SetList fails
+
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC29: No list found for R2 , SetList fails
+
+  -- DECOMPILER ERROR at PC30: Overwrote pending register: R3 in 'AssignReg'
+
+  local l_0_3 = "0.0.0.0"
+  local l_0_4 = 0
+  local l_0_5 = 0
+  for l_0_9 = 1, #l_0_1 do
+    if l_0_0.FileVersion == l_0_1[l_0_9] then
+      l_0_3 = l_0_3 + 1
+      l_0_5 = l_0_5 + 1
+    end
+  end
+  for l_0_13 = 1, #l_0_2 do
+    if l_0_0.ProductVersion == l_0_2[l_0_13] then
+      l_0_4 = l_0_4 + 1
+      l_0_5 = l_0_5 + 1
+    end
+  end
+  if l_0_5 >= 2 and l_0_4 >= 1 and l_0_3 >= 1 then
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if (hstrlog[6]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[7]).hitcount == 0 and (hstrlog[9]).hitcount == 0 and (hstrlog[8]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[10]).hitcount == 0 and (hstrlog[11]).hitcount == 0 and (hstrlog[12]).hitcount == 0 and (hstrlog[13]).hitcount == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

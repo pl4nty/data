@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_4634")
-  ;
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7_k8.2CCB")
+if peattributes.isexe and peattributes.hasexports and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.hasexports and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
+if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

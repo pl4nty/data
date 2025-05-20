@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr, "\235+")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 45, "ù")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 53, "\235")
-return mp.INFECTED
+if peattributes.ismsil and pehdr.NumberOfSections == 3 and (mp.getfilesize)() == 80384 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

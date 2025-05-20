@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Win32/Ropmola.PA!MTB") then
+if peattributes.isexe == true and (mp.getfilesize)() >= 240000 and (mp.getfilesize)() <= 254000 then
   return mp.INFECTED
 end
 return mp.CLEAN

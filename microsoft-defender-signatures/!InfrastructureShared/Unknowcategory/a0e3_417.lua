@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_deep_analysis") then
-  (pe.set_peattribute)("enable_vmm_grow", true)
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (this_sigattrlog[1]).utf8p2 ~= nil then
+  (bm.add_related_file)((this_sigattrlog[1]).utf8p1)
   ;
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.set_peattribute)("disable_apicall_limit", true)
-  ;
-  (pe.reemulate)()
+  (bm.add_related_file)((this_sigattrlog[1]).utf8p2)
 else
-  return mp.INFECTED
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[2]).utf8p2 ~= nil then
+    (bm.add_related_file)((this_sigattrlog[2]).utf8p1)
+    ;
+    (bm.add_related_file)((this_sigattrlog[2]).utf8p2)
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

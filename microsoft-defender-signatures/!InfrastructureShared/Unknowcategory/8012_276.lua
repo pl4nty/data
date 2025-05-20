@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if peattributes.ismsil then
+if peattributes.ismsil and (mp.get_mpattribute)("pea_has_msilresources") and (mp.get_mpattribute)("pea_no_security") then
   return mp.INFECTED
 end
 return mp.CLEAN

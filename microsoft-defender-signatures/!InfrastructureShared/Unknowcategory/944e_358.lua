@@ -3,10 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_ESP) + 24, 4), 1) < 262144 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 1, "")
+if (string.find)(l_0_0, "\\edge\\", 1, true) or (string.find)(l_0_0, "ccleaner", 1, true) then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.hstr_full_log)()
-if not l_0_0 then
+if peattributes.isexe == true and peattributes.hasexports == false and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
   return mp.INFECTED
 end
-if (l_0_0[2]).matched or (l_0_0[3]).matched then
-  (mp.TriggerScanResource)("folder", "c:\\tempcaches\\", 0, 5000)
-end
-return mp.INFECTED
+return mp.CLEAN
 

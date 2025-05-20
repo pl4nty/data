@@ -3,26 +3,25 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
-    local l_0_0 = nil
+if not peattributes.isdll or not peattributes.hasexports then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 3 then
+  return mp.CLEAN
+end
+local l_0_2 = 0
+for l_0_6 = 1, l_0_0 do
+  local l_0_7 = (pe.mmap_string_rva)((l_0_1[l_0_6]).namerva, 64)
+  if l_0_7 == "UMEP" then
+    l_0_2 = l_0_2 + 1
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if l_0_0 ~= nil then
-      local l_0_1, l_0_2 = (mp.ContextualExpandEnvironmentVariables)(l_0_0)
-      l_0_2 = bm
-      l_0_2 = l_0_2.add_related_file
-      l_0_2(l_0_1)
-    end
-    ;
-    (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/Tinplate.A!dha")
-    return mp.INFECTED
+  if l_0_7 == "VFEP" then
+    l_0_2 = l_0_2 + 1
   end
 end
+if l_0_2 < 2 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,27 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("InEmail") then
-  return mp.CLEAN
-end
-if mp.HEADERPAGE_SZ < 11 then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 11 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readheader)(0, 12)
-if l_0_1 == nil then
-  return mp.CLEAN
+local l_0_0 = "\\powershell.exe"
+local l_0_1 = (string.len)(l_0_0)
+local l_0_2 = false
+local l_0_3, l_0_4 = (bm.get_process_relationships)()
+for l_0_8,l_0_9 in ipairs(l_0_3) do
+  if l_0_9.image_path ~= nil and (mp.bitand)(l_0_9.reason_ex, 1) == 1 and l_0_1 < (string.len)(l_0_9.image_path) and (string.sub)(l_0_9.image_path, -l_0_1) == l_0_0 then
+    l_0_2 = true
+    break
+  end
 end
 do
-  if (string.find)(l_0_1, "по\017Ю║\177\026\225\000\000\000", 1, true) ~= nil or (string.find)(l_0_1, "PK\003\004\020\000\006\000", 1, true) ~= nil then
-    local l_0_2 = (mp.BMSearchFile)(0, l_0_0, "V\000B\000A\000_\000P\000R\000O\000J\000E\000C\000T\000\144\000")
-    if l_0_2 and l_0_2 >= 0 and l_0_2 < l_0_0 then
-      return mp.INFECTED
-    end
+  if l_0_2 == false then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  local l_0_10 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+  if l_0_10 ~= nil then
+    (mp.ReportLowfi)(l_0_10, 3640120989)
+  end
+  return mp.INFECTED
 end
 

@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 9 and (pesecs[pehdr.NumberOfSections]).Name == ".CN" and (pesecs[pevars.epsec]).SizeOfRawData >= 475136 and pevars.epsecwr == 1 then
-  return mp.INFECTED
+if peattributes.isexe == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.no_resources == true then
+  return mp.CLEAN
+end
+if peattributes.hasappendeddata == false then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

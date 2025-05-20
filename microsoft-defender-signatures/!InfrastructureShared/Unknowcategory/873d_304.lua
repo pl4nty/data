@@ -3,7 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 36864 then
+if (mp.getfilesize)() >= 512000 then
+  return mp.CLEAN
+end
+if (pesecs[1]).SizeOfRawData < 65536 then
+  return mp.CLEAN
+end
+if peattributes.isvbnative == true then
   return mp.INFECTED
 end
 return mp.CLEAN

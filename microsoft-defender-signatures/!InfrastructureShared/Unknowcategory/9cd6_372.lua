@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:PEHasIOAVURL") and (mp.get_mpattribute)("SIGATTR:SellExecuteExError") then
-  (mp.set_mpattribute)("lua_codepatch_tibs_1")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 9, "\235")
+local l_0_0 = pehdr.ImageBase + ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).RVA
+if l_0_0 <= 0 then
+  return mp.CLEAN
 end
-return mp.INFECTED
+local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).Size
+local l_0_2 = (hstrlog[1]).VA
+if l_0_0 < l_0_2 and l_0_2 < l_0_0 + l_0_1 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

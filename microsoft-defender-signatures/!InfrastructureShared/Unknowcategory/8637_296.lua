@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if not l_0_0 then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 118784 and l_0_0 <= 122880 and pehdr.NumberOfSections == 6 and (pesecs[4]).Name == ".crt1" then
+  return mp.INFECTED
 end
-if (string.find)((string.lower)(l_0_0), "windows\\system32\\svchost.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

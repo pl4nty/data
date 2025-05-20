@@ -3,15 +3,17 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\atbroker.exe") then
+  return mp.CLEAN
+end
+local l_0_1 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\atbroker.exe")
 do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.get_mpattribute)("pea_line_numbers_stripped") and (mp.getfilesize)() >= 3764224 and (mp.getfilesize)() < 3788800 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if l_0_1 ~= nil then
+    local l_0_2 = (sysio.GetRegValueAsString)(l_0_1, "Debugger")
+    if l_0_2 ~= nil and (string.len)(l_0_2) >= 1 then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

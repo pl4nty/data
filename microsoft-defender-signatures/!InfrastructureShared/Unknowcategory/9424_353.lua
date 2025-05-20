@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 300000000 then
+do
+  if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll == true and peattributes.hasexports and peattributes.no_imports then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 >= 80000 and l_0_0 <= 250000 then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-local l_0_0 = (bm.get_current_process_startup_info)()
-;
-(bm.request_SMS)(l_0_0.ppid, "M")
-;
-(bm.add_action)("SmsAsyncScanEvent", 1000)
-return mp.INFECTED
 

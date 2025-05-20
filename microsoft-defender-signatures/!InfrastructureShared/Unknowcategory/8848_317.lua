@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "/externallinks", 1, true) or (string.find)(l_0_0, "->(ole stream 0)->(msg)", 1, true) then
-  return mp.INFECTED
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1, 4), 1) < 1048576 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
+return mp.INFECTED
 

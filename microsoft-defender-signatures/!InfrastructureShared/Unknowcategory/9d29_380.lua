@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).ppid then
-  return mp.CLEAN
-end
-local l_0_0 = (MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[1]).ppid)
-if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= l_0_0.IntegrityLevel then
-  (bm.trigger_sig)("EOP", "SYSTEM")
+if peattributes.isexe == true and peattributes.hasexports == true and (pesecs[3]).Name == ".cdata" and (pesecs[3]).Characteristics == 3221225536 and (mp.getfilesize)() >= 10000000 and (mp.getfilesize)() <= 15000000 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

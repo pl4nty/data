@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(mp.GetParentProcInfo)
-if l_0_1 and (string.find)((l_0_1.image_path):lower(), "solarwinds.businesslayerhost.exe", 1, true) then
-  return mp.LOWFI
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+if peattributes.isdll and peattributes.hasexports then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

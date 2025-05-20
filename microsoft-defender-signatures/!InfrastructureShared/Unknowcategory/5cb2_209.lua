@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdriver == true and (mp.getfilesize)() < 1000000 then
+if peattributes.isexe and pehdr.ImageBase == 675807232 then
   return mp.INFECTED
 end
 return mp.CLEAN

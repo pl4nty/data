@@ -3,13 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 126976 then
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
+do
+  if peattributes.isdll == true and peattributes.ismsil == true and (mp.getfilesize)() < 440000 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-if mp.HSTR_WEIGHT >= 2 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

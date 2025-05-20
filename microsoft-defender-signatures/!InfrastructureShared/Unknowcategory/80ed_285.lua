@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 720896 and l_0_0 <= 917504 and peattributes.ismsil == true and peattributes.isdll == false and peattributes.hasexports == false then
+if peattributes.isvbnative == true and peattributes.isexe == true then
   return mp.INFECTED
+else
+  if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 160)
-local l_0_1 = (mp.readu_u32)(l_0_0, 83)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 80)
+local l_0_1 = (mp.readu_u32)(l_0_0, 33)
 if l_0_1 < (pesecs[1]).VirtualAddress or (pesecs[pehdr.NumberOfSections]).VirtualAddress + (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= l_0_1 then
   return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u16)(l_0_0, 68)
-if l_0_2 < 32768 or l_0_2 > 45056 then
+local l_0_2 = (mp.readu_u16)(l_0_0, 18)
+if l_0_2 < 32768 or l_0_2 > 40960 then
   return mp.CLEAN
 end
-local l_0_3 = (mp.readu_u16)(l_0_0, 111)
-if l_0_3 < 49152 or l_0_3 > 61440 then
+local l_0_3 = (mp.readu_u16)(l_0_0, 61)
+if l_0_3 < 49152 or l_0_3 > 57344 then
   return mp.CLEAN
 end
 ;

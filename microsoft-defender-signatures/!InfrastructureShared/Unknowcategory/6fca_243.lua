@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:WizzDownload")
-if mp.HSTR_WEIGHT >= 15 then
-  (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A3")
+if pehdr.NumberOfSections == 3 and (pesecs[1]).PointerToRawData == 4096 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

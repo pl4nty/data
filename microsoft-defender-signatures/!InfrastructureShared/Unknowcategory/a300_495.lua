@@ -3,22 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
-  if l_0_0 ~= nil then
-    local l_0_1, l_0_2 = nil, nil
-    l_0_1 = (string.match)(l_0_0, "\\microsoft\\(.+)\\(.+)%.exe")
-    if l_0_1 and l_0_2 then
-      if l_0_1 == l_0_2 and (string.len)(l_0_2) > 3 then
+-- DECOMPILER ERROR at PC17: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or (string.match)((this_sigattrlog[2]).utf8p1, "\\([^\\]+)$") then
+      local l_0_4 = nil
+      if (string.find)((string.lower)((string.match)((this_sigattrlog[2]).utf8p1, "\\([^\\]+)$")), "%.xla") or (string.find)((string.lower)((string.match)((this_sigattrlog[2]).utf8p1, "\\([^\\]+)$")), "personal.xlsb") then
         return mp.INFECTED
       end
-      ;
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1), 1966641469)
-      return mp.INFECTED
     end
+    return mp.CLEAN
   end
-end
-do
-  return mp.CLEAN
 end
 

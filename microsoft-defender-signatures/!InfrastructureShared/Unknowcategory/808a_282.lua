@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
-  ;
-  (mp.SMSAsyncScan)(l_0_0.ppid)
+if (hstrlog[6]).hitcount >= 7 and pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
   return mp.INFECTED
 end
 return mp.CLEAN

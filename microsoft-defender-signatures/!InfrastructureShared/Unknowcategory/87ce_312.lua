@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if (mp.get_mpattribute)("NID:Win64/DarkRat.PA") and peattributes.no_security == true and (mp.getfilesize)() >= 230000 and (mp.getfilesize)() <= 260000 then
+  return mp.INFECTED
 end
-;
-(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
-;
-(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 10000)
-return mp.INFECTED
+return mp.CLEAN
 

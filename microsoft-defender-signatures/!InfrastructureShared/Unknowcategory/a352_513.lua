@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-do
-  if l_0_0 and l_0_0.integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
-    local l_0_1 = (string.lower)((bm.get_imagepath)())
-    if not (string.find)(l_0_1, "packages\\canonicalgrouplimited.ubuntu", 1, true) and not (string.find)(l_0_1, "packages\\thedebianproject.debiangnulinux", 1, true) then
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_6.image_path, 9)) == "\\wmic.exe" then
+    local l_0_7 = (string.lower)((mp.GetProcessCommandLine)(l_0_6.ppid))
+    if (string.find)(l_0_7, "/format", 1, true) then
       return mp.INFECTED
     end
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

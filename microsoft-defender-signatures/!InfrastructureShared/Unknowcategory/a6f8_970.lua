@@ -3,38 +3,54 @@
 
 -- params : ...
 -- function num : 0
-add_related_file_wrapper = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0 ~= nil then
-    local l_1_1 = (mp.GetExecutablesFromCommandLine)(l_1_0)
-    for l_1_5,l_1_6 in ipairs(l_1_1) do
-      l_1_6 = (mp.ContextualExpandEnvironmentVariables)(l_1_6)
-      if (sysio.IsFileExists)(l_1_6) then
-        (bm.add_related_file)(l_1_6)
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_1 = (string.match)(l_0_0, "excel%.exe\".+\"(.+%.xls[mx]?\"-)")
+  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 and (sysio.IsFileExists)(l_0_1) then
+    (mp.ReportLowfi)(l_0_1, 2118770245)
+    ;
+    (bm.add_related_file)(l_0_1)
+  end
+  do
+    if (this_sigattrlog[2]).matched then
+      local l_0_2 = (this_sigattrlog[2]).utf8p1
+      if l_0_2 ~= nil and (sysio.IsFileExists)(l_0_2) then
+        (mp.ReportLowfi)(l_0_2, 1810820440)
+        ;
+        (bm.add_related_file)(l_0_2)
+      end
+    end
+    do
+      if (this_sigattrlog[3]).matched then
+        local l_0_3 = (this_sigattrlog[3]).utf8p1
+        if l_0_3 ~= nil and (sysio.IsFileExists)(l_0_3) then
+          (mp.ReportLowfi)(l_0_3, 3314032788)
+          ;
+          (bm.add_related_file)(l_0_3)
+        end
+      end
+      do
+        if (this_sigattrlog[4]).matched then
+          local l_0_4 = (this_sigattrlog[4]).utf8p1
+          if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
+            (mp.ReportLowfi)(l_0_4, 1967658443)
+            ;
+            (bm.add_related_file)(l_0_4)
+          end
+        end
+        do
+          if (this_sigattrlog[5]).matched then
+            local l_0_5 = (this_sigattrlog[5]).utf8p1
+            if l_0_5 ~= nil and (sysio.IsFileExists)(l_0_5) then
+              (mp.ReportLowfi)(l_0_5, 829931515)
+              ;
+              (bm.add_related_file)(l_0_5)
+            end
+          end
+          return mp.INFECTED
+        end
       end
     end
   end
-end
-
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p1)
-end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  add_related_file_wrapper((this_sigattrlog[2]).utf8p2)
-end
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("bm_uacbypass_connmgr")
-if l_0_0 then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    local l_0_6, l_0_7 = (string.match)(l_0_5, "(.+);ImagePath:(.+)")
-    if l_0_7 then
-      l_0_7 = (MpCommon.PathToWin32Path)(l_0_7)
-      if (sysio.IsFileExists)(l_0_7) then
-        (mp.ReportLowfi)(l_0_7, 3039453400)
-      end
-    end
-  end
-end
-do
-  return mp.INFECTED
 end
 

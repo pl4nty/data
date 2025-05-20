@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 19, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+local l_0_0 = ((mp.getfilename)()):lower()
+if (mp.get_mpattribute)("BM_RTF_FILE") == true and (string.find)(l_0_0, ".rtf", -4, true) ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.no_resources == true and peattributes.no_debug == true and peattributes.no_delayimport == true and peattributes.no_loadconfig == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "\015\133", 1, true) - 1, "")
+return mp.INFECTED
 

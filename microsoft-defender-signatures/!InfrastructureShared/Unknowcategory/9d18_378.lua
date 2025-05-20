@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 96)
+local l_0_1 = (string.find)(l_0_0, "t\002\235", 1, true) - 1
+local l_0_2 = (string.find)(l_0_0, "t\002\235", l_0_1 + 4, true) - 1
+if l_0_1 ~= nil and l_0_2 ~= nil then
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\235")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_2, "\235")
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+return mp.LOWFI
 

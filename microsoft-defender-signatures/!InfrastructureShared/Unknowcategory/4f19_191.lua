@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Adware:Win32/Linkury.A1") then
+if peattributes.isexe and peattributes.amd64_image then
   return mp.INFECTED
 end
 return mp.CLEAN

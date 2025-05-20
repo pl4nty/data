@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Win32/Mortis.MA!MTB") then
+if peattributes.isdamaged == true and (mp.get_mpattribute)("SLF:Win64/CobPipe.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

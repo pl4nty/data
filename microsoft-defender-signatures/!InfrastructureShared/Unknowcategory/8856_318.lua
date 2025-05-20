@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.no_resources and (pe.contains_va)(3, (hstrlog[1]).VA) and (pesecs[3]).Name == ".data" then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and pehdr.NumberOfSections == 8 then
+  (pe.set_image_filename)("\"myapp.exe\" /install")
+  ;
+  (pe.reemulate)()
 end
-return mp.CLEAN
+return mp.INFECTED
 

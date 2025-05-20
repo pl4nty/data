@@ -66,8 +66,8 @@ end
 if (mp.readu_u32)(l_0_0, 29) <= 0 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 13)
-if (mp.crc32)(-1, l_0_1, 1, 13) ~= 1625655034 then
+local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 2)
+if (mp.crc32)(-1, l_0_1, 1, 2) ~= 3038897196 then
   return mp.CLEAN
 end
 return mp.INFECTED

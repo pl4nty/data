@@ -3,8 +3,34 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.headerchecksum0 == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.no_debug == true and peattributes.no_mipsgp == true and peattributes.no_boundimport == true and peattributes.no_ep == true and peattributes.no_comruntime == true then
-  return mp.INFECTED
+local l_0_0 = 0
+if (this_sigattrlog[1]).matched then
+  local l_0_1 = nil
+  local l_0_2, l_0_3 = (bm.get_process_relationships)()
+  for l_0_7,l_0_8 in ipairs(l_0_2) do
+    l_0_1 = l_0_8.image_path
+    if (string.find)(l_0_1, "\\WINWORD.EXE") then
+      l_0_0 = l_0_0 + 1
+      break
+    end
+  end
+  do
+    local l_0_9 = nil
+    for l_0_13,l_0_14 in ipairs(l_0_3) do
+      l_0_9 = l_0_14.image_path
+      if (string.find)(l_0_9, "\\powershell.exe") or (string.find)(l_0_9, "\\cmd.exe") then
+        l_0_0 = l_0_0 + 1
+        break
+      end
+    end
+    do
+      do
+        if l_0_0 == 2 then
+          return mp.INFECTED
+        end
+        return mp.CLEAN
+      end
+    end
+  end
 end
-return mp.CLEAN
 

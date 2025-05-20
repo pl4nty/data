@@ -15,7 +15,7 @@ do
     return mp.CLEAN
   end
   local l_0_3 = nil
-  local l_0_4 = {[".wsf"] = true}
+  local l_0_4 = {[".vbs"] = true}
   for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
     local l_0_5 = nil
     -- DECOMPILER ERROR at PC30: Confused about usage of register: R7 in 'UnsetPending'
@@ -23,7 +23,7 @@ do
     if (string.len)(R7_PC30) > 4 and (sysio.IsFileExists)(R7_PC30) and l_0_4[(string.sub)(R7_PC30, -4)] then
       (bm.add_related_file)(l_0_10)
       ;
-      (mp.ReportLowfi)(l_0_10, 29661127)
+      (mp.ReportLowfi)(l_0_10, 111760350)
     end
   end
   return mp.INFECTED

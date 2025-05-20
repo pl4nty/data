@@ -3,33 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.match)(l_0_0, "([^\\]-[^\\%.]+)$")
-end
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = nil
-if (this_sigattrlog[3]).matched then
-  l_0_1 = (this_sigattrlog[3]).utf8p2
-end
-if l_0_1 == nil and (string.len)(l_0_1) < 3 then
-  return mp.CLEAN
-end
-local l_0_2 = nil
-if (this_sigattrlog[4]).matched then
-  l_0_2 = (this_sigattrlog[4]).utf8p1
-  l_0_2 = (string.match)(l_0_2, "([^\\]-[^\\%.]+)$")
-end
-if l_0_2 == nil and (string.len)(l_0_2) < 3 then
-  return mp.CLEAN
-end
-if l_0_0 == l_0_2 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, l_0_0, 1, true) and (string.find)(l_0_1, l_0_2, 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_tibs_13")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
+local l_0_2 = (string.byte)(l_0_0, 9)
+local l_0_3 = (mp.readu_u32)(l_0_0, 13)
+local l_0_4 = (mp.readu_u32)(l_0_0, 24)
+local l_0_5 = (pe.get_regval)(pe.REG_EDX)
+local l_0_6 = (mp.ror32)(l_0_5, l_0_2) - (mp.bitxor)(l_0_4, l_0_3) + l_0_1 - 1
+;
+(pe.set_regval)(pe.REG_EBX, l_0_6)
+return mp.INFECTED
 

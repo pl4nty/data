@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:SearchProtect.A")
+  (mp.set_mpattribute)("PUA:Block:Social2Search.B")
   return mp.INFECTED
 end
 return mp.LOWFI

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%l%l%l%l%l%l%l%l.exe") ~= nil then
+if (hstrlog[2]).matched then
   return mp.INFECTED
 end
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
 return mp.CLEAN
 

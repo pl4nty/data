@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilesize)() < 2048000 or (mp.getfilesize)() < 39845887 or (mp.getfilesize)() <= 40000000) and pehdr.NumberOfSections == 3 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

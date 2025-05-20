@@ -5,8 +5,8 @@
 -- function num : 0
 local l_0_0 = (pe.get_regval)(pe.REG_ESP)
 local l_0_1 = (pe.mmap_va)(l_0_0, 16)
-local l_0_2 = (mp.readu_u32)(l_0_1, 5)
-local l_0_3 = (mp.readu_u32)(l_0_1, 9)
+local l_0_2 = (mp.readu_u32)(l_0_1, 9)
+local l_0_3 = (mp.readu_u32)(l_0_1, 13)
 do
   if l_0_2 == 2088763392 then
     local l_0_4 = (pe.mmap_va)(l_0_3, 12)

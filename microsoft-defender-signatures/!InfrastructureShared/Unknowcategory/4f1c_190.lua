@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:ExCheckInstalledAV") then
-  return mp.CLEAN
+if peattributes.isexe and peattributes.hasexports then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

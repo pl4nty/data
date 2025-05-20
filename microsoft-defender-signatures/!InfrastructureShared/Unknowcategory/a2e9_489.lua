@@ -3,11 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
+local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\\endpoint agent\\edpa.exe", 1, true) or (string.find)(l_0_0, "\\program files (x86)\\internet explorer\\iexplore.exe", 1, true) or (string.find)(l_0_0, "mars\\microsoft azure recovery services agent\\bin\\cbengine.exe", 1, true) then
+if (string.lower)((string.match)(l_0_0.image_path, "\\([^\\]+)$")) ~= "razerinstaller.exe" then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0.ppid)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
+end
+if (string.find)((string.lower)(l_0_1), "razerinstaller%.exe[^/]+/showdevice$") == nil then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 8000000 or l_0_0 < 10000 then
+if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("mkvie-porting-working", 1, true) then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil or l_0_0.image_path == nil then
   return mp.CLEAN
 end
-if l_0_1:find("slurm", 1, true) then
-  return mp.CLEAN
+local l_0_1 = (string.lower)(l_0_0.image_path)
+local l_0_2 = l_0_1:match("([^\\]+)$")
+local l_0_3 = {}
+l_0_3["explorer.exe"] = true
+l_0_3["powershell.exe"] = true
+l_0_3["mshta.exe"] = true
+if l_0_3[l_0_2] then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

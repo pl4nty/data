@@ -3,13 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] ~= 106 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < 5 or (pesecs[5]).Name ~= ".import" then
-  return mp.CLEAN
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 2142642642) then
+if peattributes.isdll == true and peattributes.hasexports == true and (pesecs[4]).Name == ".fptable" and (pesecs[4]).Characteristics == 3221225536 and (mp.getfilesize)() >= 5000000 and (mp.getfilesize)() <= 20000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

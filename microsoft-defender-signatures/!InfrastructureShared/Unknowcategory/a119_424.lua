@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr + 3, 4), 1) < 4096 or (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr + 51, 4), 1) < 4096 then
+if (nri.GetHttpCommand)() ~= nri.HTTP_POST then
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 46, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 55, "")
-return mp.INFECTED
+local l_0_0 = (string.lower)((nri.GetHttpRequestHeader)("User-Agent"))
+if l_0_0 == "winhttp" then
+  (nri.AddTelemetry)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH))
+  return mp.INFECTED
+end
+return mp.CLEAN
 

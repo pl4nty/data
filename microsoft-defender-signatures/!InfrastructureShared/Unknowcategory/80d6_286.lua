@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "u", 21, true)
+(pe.set_peattribute)("enable_vmm_grow", true)
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, "3\255")
-return mp.INFECTED
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+return mp.LOWFI
 

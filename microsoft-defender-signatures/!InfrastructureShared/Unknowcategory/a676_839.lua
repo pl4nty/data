@@ -3,31 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-local l_0_1 = (string.lower)((bm.get_imagepath)())
-if (this_sigattrlog[1]).matched or (string.find)(l_0_1, "\\avclean.exe", 1, true) then
-  return mp.INFECTED
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_0 = (this_sigattrlog[2]).utf8p2
+if pevars.epsec ~= 2 or (pesecs[2]).Name ~= ".rsrc" or (pesecs[2]).SizeOfRawData ~= 512 and (pesecs[2]).SizeOfRawData ~= 1024 then
+  return mp.CLEAN
+end
+local l_0_0 = (hstrlog[2]).VA + 15
+local l_0_1 = (pe.mmap_va)(l_0_0, 6)
+local l_0_2 = (string.byte)((pe.mmap_va)(l_0_0 + 6, 1)) + (string.byte)((pe.mmap_va)(l_0_0 + 7, 1)) * 256
+local l_0_3 = (string.byte)((pe.mmap_va)(l_0_0 + 11, 1)) + (string.byte)((pe.mmap_va)(l_0_0 + 12, 1)) * 256
+for l_0_7 = 15, 105, 15 do
+  local l_0_8 = l_0_0 + l_0_7
+  if l_0_1 ~= (pe.mmap_va)(l_0_8, 6) or l_0_2 - l_0_7 ~= (string.byte)((pe.mmap_va)(l_0_8 + 6, 1)) + (string.byte)((pe.mmap_va)(l_0_8 + 7, 1)) * 256 or l_0_3 - l_0_7 ~= (string.byte)((pe.mmap_va)(l_0_8 + 11, 1)) + (string.byte)((pe.mmap_va)(l_0_8 + 12, 1)) * 256 then
+    return mp.CLEAN
   end
 end
-local l_0_2 = {}
--- DECOMPILER ERROR at PC40: No list found for R2 , SetList fails
-
--- DECOMPILER ERROR at PC41: Overwrote pending register: R3 in 'AssignReg'
-
-local l_0_3 = "defender"
--- DECOMPILER ERROR at PC44: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC46: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC47: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC48: Overwrote pending register: R7 in 'AssignReg'
-
-if l_0_0 ~= "" and (("eset").find)("symantec", "avtest", "general", true) and (string.find)(l_0_0, " -i ", 1, true) and (string.find)(l_0_0, " -a ", 1, true) and l_0_3(l_0_2, l_0_0) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

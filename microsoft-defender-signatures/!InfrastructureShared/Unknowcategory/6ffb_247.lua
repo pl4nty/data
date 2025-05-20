@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.amd64_image then
-  return mp.CLEAN
-end
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if (string.len)(l_0_1) < 1024 then
   return mp.CLEAN
 end
 return mp.INFECTED

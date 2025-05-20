@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and (string.find)(l_0_0, "\\barco\\cmsclient\\", 1, true) then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+if mp.HSTR_WEIGHT < 3 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
+end
+return mp.CLEAN
 

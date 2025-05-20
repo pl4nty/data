@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EAX)
-local l_0_1 = (pe.get_api_id)(l_0_0)
-if l_0_1 ~= 671954542 then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "\141\r")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 16, 1)
+local l_0_1 = pevars.sigaddr + 15 + (string.byte)(l_0_0, 1) + 2 - 2
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 29, "\235")
+(pe.mmap_patch_va)(pevars.sigaddr + 15, "êê")
 ;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+(pe.mmap_patch_va)(l_0_1, "êê")
 return mp.INFECTED
 

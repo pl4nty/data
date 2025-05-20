@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true and peattributes.no_security == true then
-  return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (string.lower)(l_0_0.command_line)
+if (string.find)(l_0_1, "/browser:", 1, true) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

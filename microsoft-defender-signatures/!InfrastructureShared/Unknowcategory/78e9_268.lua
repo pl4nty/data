@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 3145728 then
+if (mp.getfilesize)() > 65536 then
   return mp.CLEAN
 end
 local l_0_0 = (mp.GetCertificateInfo)()

@@ -3,9 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
-if ((string.match)(l_0_0, "\\amazon\\codedeploy\\bin") ~= nil and l_0_1 == "winagent.exe") or (string.match)(l_0_0, "\\spiceworks") ~= nil and l_0_1 == "spiceworks_safemode.exe" then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if l_0_0 ~= nil then
+      local l_0_2 = nil
+      if l_0_2:match("%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d|%d+%.%d+%.%d+%.%d+|%d+%.%d+%.%d+%.%d+") then
+        (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/KoalaTwin.A!dha")
+        return mp.INFECTED
+      end
+    end
+    return mp.CLEAN
+  end
 end
-return mp.INFECTED
 

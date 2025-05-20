@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll and peattributes.ismsil and (mp.getfilesize)() < 15000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+(mp.readprotection)(false)
+local l_0_0 = (mp.getfilesize)()
+local l_0_1 = tostring((mp.readfile)(0, l_0_0))
+l_0_1 = (string.lower)(l_0_1)
+if (string.find)(l_0_1, "j7pjsibhd9dztmzk7ddgdohxux5lws3aa9fqa9lxwkrk4omnzgqt6euej4i", 1, true) ~= nil then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

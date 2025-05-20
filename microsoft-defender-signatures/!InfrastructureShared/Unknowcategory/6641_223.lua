@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[6]).Name == ".htext" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 25, "\132")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 48, "\132")
+return mp.INFECTED
 

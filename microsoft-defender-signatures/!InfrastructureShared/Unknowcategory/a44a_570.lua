@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).matched or not (this_sigattrlog[1]).ppid or not (this_sigattrlog[2]).matched then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = (bm.get_process_relationships)((this_sigattrlog[1]).ppid)
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path and (string.find)(l_0_6.image_path, "svchost.exe", 1, true) then
-    local l_0_7 = (this_sigattrlog[2]).utf8p1
-    if l_0_7 and not (mp.IsKnownFriendlyFile)(l_0_7, false, false) then
-      (mp.ReportLowfi)(l_0_7, 3377723068)
-      return mp.CLEAN
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
+if l_0_0 ~= nil then
+  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
+  if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then
+    local l_0_2 = (string.lower)(l_0_1)
+    if (string.find)(l_0_2, "cmd", 1, true) or (string.find)(l_0_2, "msconfig", 1, true) or (string.find)(l_0_2, "taskmgr", 1, true) then
+      return mp.INFECTED
     end
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

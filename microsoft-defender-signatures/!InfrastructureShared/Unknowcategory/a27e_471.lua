@@ -3,27 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 6
+if not (this_sigattrlog[1]).matched or not (this_sigattrlog[1]).wp2 then
+  return mp.CLEAN
+end
+local l_0_0 = (this_sigattrlog[1]).utf8p2
 do
-  if not (string.find)((pe.mmap_va)(pevars.sigaddr, 16), "\015\132", 1, true) then
-    local l_0_1, l_0_2, l_0_3, l_0_4 = (string.find)((pe.mmap_va)(pevars.sigaddr, 16), "t", 1, true)
-    l_0_0 = 2
-  end
-  -- DECOMPILER ERROR at PC29: Confused about usage of register: R1 in 'UnsetPending'
-
-  if not l_0_1 then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC40: Confused about usage of register: R1 in 'UnsetPending'
-
-  if l_0_0 == 6 then
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 - 1, "êêêêêê")
-  else
-    -- DECOMPILER ERROR at PC49: Confused about usage of register: R1 in 'UnsetPending'
-
+  if l_0_0 and not (string.find)(l_0_0:lower(), "\\amazon\\amazon assistant\\", 1, true) then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
     ;
-    (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 - 1, "êê")
+    (MpCommon.SetPersistContextNoPath)("mshta_start", l_0_1, 3)
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

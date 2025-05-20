@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:MsilOverlappingMethods") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:ExCheckInstalledAV") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

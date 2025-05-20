@@ -13,8 +13,8 @@ for l_0_4,l_0_5 in pairs(l_0_0) do
   end
 end
 do
-  if (this_sigattrlog[5]).matched then
-    local l_0_6 = (this_sigattrlog[5]).p1
+  if (this_sigattrlog[3]).matched then
+    local l_0_6 = (this_sigattrlog[3]).p1
     if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") then
       return mp.INFECTED
     end

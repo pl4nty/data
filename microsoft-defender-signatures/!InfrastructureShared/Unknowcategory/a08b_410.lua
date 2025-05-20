@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-if l_0_0.match_offset == 0 and l_0_0.is_header then
-  if (mp.getfilesize)() > 64 then
-    return mp.CLEAN
-  end
-  if (mp.readu_u32)(headerpage, 1) == 1497451600 and (mp.readu_u16)(headerpage, 5) == 2573 then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 614400 and l_0_0 <= 720896 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size == 56 and pehdr.Subsystem == 2 and pehdr.NumberOfSections >= 7 and pehdr.NumberOfSections <= 10 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

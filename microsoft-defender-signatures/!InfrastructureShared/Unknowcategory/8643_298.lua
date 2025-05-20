@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() > 98304 and (mp.getfilesize)() < 102400 then
-  return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (string.lower)(l_0_0.command_line)
+if (string.find)(l_0_1, "/browser:", 1, true) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

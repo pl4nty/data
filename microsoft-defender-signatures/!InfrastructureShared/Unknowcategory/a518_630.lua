@@ -3,18 +3,40 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
-if l_0_0 == nil or (string.find)(l_0_0, "programdata\\avastsvc", 1, true) == nil and (string.find)(l_0_0, "recycler.bin\\1", 1, true) == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched then
+  local l_0_0, l_0_2 = nil, nil
+else
+  do
+    do return mp.CLEAN end
+    if (this_sigattrlog[3]).matched then
+      local l_0_1, l_0_3 = , (this_sigattrlog[3]).timestamp
+    else
+      do
+        do return mp.CLEAN end
+        -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC24: Confused about usage of register: R1 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC26: Confused about usage of register: R1 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
+
+        if l_0_3 < l_0_1 or l_0_3 - l_0_1 > 50000000 then
+          return mp.CLEAN
+        end
+        local l_0_4 = nil
+        if MpCommon.SECURITY_MANDATORY_HIGH_RID < ((bm.get_current_process_startup_info)()).integrity_level then
+          return mp.CLEAN
+        end
+        local l_0_5 = nil
+        if ((MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[3]).ppid)).IntegrityLevel == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+          return mp.INFECTED
+        end
+        return mp.CLEAN
+      end
+    end
+  end
 end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
-end
-return mp.INFECTED
 

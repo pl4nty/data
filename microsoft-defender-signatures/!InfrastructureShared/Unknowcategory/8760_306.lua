@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
-  return mp.CLEAN
+if peattributes.isvbnative == true and (mp.getfilesize)() < 300000 and (pe.query_import)(pe.IMPORT_STATIC, 3727706256) ~= 0 then
+  return mp.INFECTED
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) ~= true then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

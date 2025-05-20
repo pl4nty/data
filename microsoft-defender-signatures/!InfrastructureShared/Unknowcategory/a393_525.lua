@@ -3,15 +3,24 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (mp.GetScannedPPID)()
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
+if not l_0_1 then
+  return mp.CLEAN
+end
+local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
+if not l_0_2 then
+  return mp.CLEAN
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = (bm.get_process_relationships)()
-    for l_0_5,l_0_6 in ipairs(l_0_0) do
-      if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)((string.lower)(l_0_6.image_path), "\\explorer.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "\\svchost.exe", 1, true)) then
-        return mp.CLEAN
-      end
+  if (string.find)((string.lower)(l_0_2), "\\windows\\temp", 1, true) then
+    local l_0_3 = (mp.GetParentProcInfo)()
+    if l_0_3 and (string.find)((string.lower)(l_0_3.image_path), "python", 1, true) then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

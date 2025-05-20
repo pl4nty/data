@@ -3,13 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_1 = (string.match)(l_0_0, "winword%.exe\".+\"(.+%.doc)") .. "\000"
-  ;
-  (mp.ReportLowfi)(l_0_1, 2140448455)
-end
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and ((string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\windows\\", 1, true)) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:Genieo.M")
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 8 and mp.HSTR_WEIGHT < 18 then
+  (mp.set_mpattribute)("HSTR:Hicrazyk.D1")
 end
-return mp.LOWFI
+return mp.INFECTED
 

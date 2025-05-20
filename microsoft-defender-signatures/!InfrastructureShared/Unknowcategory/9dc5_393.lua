@@ -3,23 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0["winword.exe"] = true
-l_0_0["excel.exe"] = true
-l_0_0["powerpnt.exe"] = true
-l_0_0["outlook.exe"] = true
-local l_0_1 = (mp.GetParentProcInfo)()
-if l_0_1 ~= nil then
-  local l_0_2 = l_0_1.image_path
-  local l_0_3 = (string.lower)((string.match)(l_0_2, "\\([^\\]+)$"))
-  if l_0_3 == "" or l_0_3 == nil then
-    return mp.CLEAN
-  end
-  if l_0_0[l_0_3] == true then
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->(Ole Stream", -18, true) == nil then
   return mp.CLEAN
 end
+local l_0_1 = (mp.BMSearchFile)(7, 5, "ÎG\n\001\005\144\000")
+if l_0_1 ~= 0 then
+  return mp.CLEAN
+end
+;
+(mp.UfsSetMetadataBool)("OleShellCode", true)
+return mp.INFECTED
 

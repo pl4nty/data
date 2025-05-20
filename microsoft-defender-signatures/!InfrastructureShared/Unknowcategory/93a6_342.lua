@@ -3,7 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 393216 and (mp.getfilesize)() < 446464 then
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)(15437, 4)
+if (mp.readu_u32)(l_0_0, 1) == 4018468997 and l_0_0 ~= "ÆÐÔÇÖÝ›ÛÔØÐÄÀÐÇÌ›ÖÚØ" then
   return mp.INFECTED
 end
 return mp.CLEAN

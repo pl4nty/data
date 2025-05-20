@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true and (mp.get_mpattribute)("pea_isexe") then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+;
+(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 5000)
+return mp.INFECTED
 

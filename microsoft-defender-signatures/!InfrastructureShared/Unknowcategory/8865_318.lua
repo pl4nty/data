@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 200000 and pehdr.NumberOfSections >= 7 and (pesecs[5]).Name == ".code" and (pesecs[6]).Name == ".crt" then
+if peattributes.ismsil and ((hstrlog[1]).matched or (hstrlog[2]).matched) and (mp.getfilesize)() > 20000 and (mp.getfilesize)() < 30000 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,48 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr + 56
-local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "j@h\000\016\000\000h\144\001\004j\000\144\019¡\001\004\139\016\137\021\144\001\004\255%\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_1 == 4294967295 then
+if peattributes.is_process or pehdr.NumberOfSections < 2 or (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= 1024 then
   return mp.CLEAN
 end
-local l_0_2 = 9
-local l_0_3 = (pe.vm_search)(l_0_0, l_0_0 + 4040, "1Òƒ\192\001¹\001\004\137\001¡\001\004°\144\001\004\139\029\144\001\004ë\144\001\004\144\003\003\000\144\001\t\144\004\001\002ëé\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_3 == 4294967295 then
-  return mp.CLEAN
-end
-do
-  if (pe.vm_search)(l_0_3 - 36, l_0_3, "9\b\015…\001\004¸\001\004\255\a9\a\015…\000", nil, pe.VM_SEARCH_BM) == 4294967295 then
-    local l_0_4 = (pe.vm_search)(l_0_3 - 28, l_0_3, "9\bu\144\001\001¸\001\004\255\a9\au\144\000", nil, pe.VM_SEARCH_BM)
-    if l_0_4 == 4294967295 then
-      return mp.CLEAN
-    end
-  end
-  local l_0_5 = nil
-  if (mp.readu_u16)((pe.mmap_va)(l_0_3 + 35, 9), 1) == 15747 and (string.byte)((pe.mmap_va)(l_0_3 + 35, 9), 8) == 124 then
-    (pe.mmap_patch_va)(l_0_3 + 43, "\000")
-  end
-  local l_0_6 = nil
-  local l_0_7 = nil
-  ;
-  (pe.set_regval)(pe.REG_EAX, (mp.readu_u32)((pe.mmap_va)(l_0_5 + l_0_2, 4), 1))
-  local l_0_8 = nil
-  local l_0_9 = nil
-  local l_0_10, l_0_11, l_0_12, l_0_13 = , (mp.bsplit)(l_0_3 + 17 - (pevars.sigaddr + 6) - 5, 8)
-  ;
-  (pe.mmap_patch_va)(l_0_9, "\233")
-  ;
-  (pe.mmap_patch_va)(l_0_9 + 1, (string.char)(l_0_11))
-  ;
-  (pe.mmap_patch_va)(l_0_9 + 2, (string.char)(l_0_12))
-  ;
-  (pe.mmap_patch_va)(l_0_9 + 3, (string.char)(l_0_13))
-  ;
-  (pe.mmap_patch_va)(l_0_9 + 4, (string.char)(R17_PC144))
-  local l_0_14 = nil
-  if (mp.readu_u16)((pe.mmap_va)(l_0_1 + 27, 16), 1) == 15747 and (mp.readu_u16)((pe.mmap_va)(l_0_1 + 27, 16), 8) == 35855 then
-    (pe.mmap_patch_va)(l_0_1 + 34, "\000\000\000\000")
-  end
+-- DECOMPILER ERROR at PC171: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC171: Unhandled construct in 'MakeBoolean' P3
+
+if (((epcode[1] ~= 232 or epcode[6] ~= 233 or epcode[10] ~= 255) and epcode[1] == 85 and epcode[2] == 139 and epcode[3] == 236 and epcode[1] == 139 and epcode[2] == 255 and epcode[3] == 85 and epcode[4] == 139 and epcode[5] ~= 236) or (pesecs[1]).Name ~= ".text" or ((pesecs[pehdr.NumberOfSections]).Name ~= ".reloc" and (pesecs[pehdr.NumberOfSections]).Name ~= ".rsrc" and (pesecs[pehdr.NumberOfSections]).Name ~= ".data") or not (mp.get_mpattribute)("pea_no_relocs") or not (mp.get_mpattribute)("pea_lastscn_executable") or not (mp.get_mpattribute)("pea_lastscn_writable") or not (mp.get_mpattribute)("pea_no_security") or not (mp.get_mpattribute)("pea_epinfirstsect") or not (mp.get_mpattribute)("pea_isexe") or not (mp.get_mpattribute)("pea_lastscn_vfalign") or (pesecs[pehdr.NumberOfSections]).SizeOfRawData + 8192 > (pesecs[pehdr.NumberOfSections]).VirtualSize or (pesecs[pehdr.NumberOfSections]).VirtualSize % 4096 ~= 0 or (pesecs[pehdr.NumberOfSections]).SizeOfRawData % pehdr.FileAlignment == 0) then
   return mp.INFECTED
 end
+return mp.CLEAN
 

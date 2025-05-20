@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_4")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 11, "\000")
-return mp.INFECTED
+if peattributes.ismsil == true and peattributes.isexe == true and pehdr.AddressOfEntryPoint ~= 36446 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

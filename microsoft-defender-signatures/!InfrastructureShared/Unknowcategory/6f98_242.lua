@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "iexplore.exe" then
-  return mp.INFECTED
+if (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.epatstartentrysect then
+  return mp.SUSPICIOUS
 end
-return mp.CLEAN
+return mp.LOWFI
 

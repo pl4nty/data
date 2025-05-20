@@ -3,54 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 96)
-local l_0_1 = 1
-while 1 do
-  while 1 do
-    while 1 do
-      if l_0_1 < #l_0_0 then
-        local l_0_3 = 120
-        if (string.byte)(l_0_0, l_0_1) == 254 then
-          if (string.byte)(l_0_0, l_0_1 + 1) ~= 192 then
-            return mp.CLEAN
-          end
-          l_0_1 = l_0_1 + 2
-          l_0_3 = l_0_3 + 1
-          do
-            local l_0_2 = nil
-            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
-
-            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
+for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_tail[l_0_3]).matched and (sigattr_tail[l_0_3]).attribute == 16393 then
+    local l_0_4 = (sigattr_tail[l_0_3]).utf8p1
+    if l_0_4 then
+      l_0_4 = (string.lower)(l_0_4)
+      if l_0_4 and ((string.find)(l_0_4, "useraccountcontrolsettings.exe") or (string.find)(l_0_4, "taskmgr.exe")) then
+        local l_0_5 = (sigattr_tail[l_0_3]).utf8p2
+        if (string.len)(l_0_5) > 1 then
+          return mp.INFECTED
         end
       end
     end
-    -- DECOMPILER ERROR at PC32: Confused about usage of register: R3 in 'UnsetPending'
-
-    if l_0_2 == 60 then
-      if (string.byte)(l_0_0, l_0_1 + 1) ~= l_0_3 then
-        return mp.CLEAN
-      end
-      do
-        local l_0_4 = nil
-        ;
-        (pe.mmap_patch_va)(pevars.sigaddr + (l_0_1) + 11, "\235")
-        do return mp.INFECTED end
-        -- DECOMPILER ERROR at PC56: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC56: LeaveBlock: unexpected jumping out IF_STMT
-
-      end
-    end
   end
-  return mp.CLEAN
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

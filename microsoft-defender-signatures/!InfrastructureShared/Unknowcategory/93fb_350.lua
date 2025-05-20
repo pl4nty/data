@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)(((pe.get_versioninfo)()).CompanyName, 1, 12)) == "bilberrysoft" then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  return mp.INFECTED
+if ((mp.GetBruteMatchData)()).match_offset == 0 then
+  if headerpage == nil then
+    return mp.CLEAN
+  end
+  if (mp.readu_u32)(headerpage, 1) == 1497451600 and (mp.readu_u16)(headerpage, 5) == 2573 then
+    return mp.INFECTED
+  end
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() < 131072 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = (nri.GetRawRequestBlob)()
+local l_0_1, l_0_2, l_0_3 = (MpCommon.BinaryRegExpSearch)("([\\x00-\\xFF]+)\\x05\\x00\\x00\\x03\\x10\\x00\\x00\\x00(..)...\\x00\\x00\\x00....\\x00\\x00\\x04\\x00", l_0_0)
+if l_0_1 and l_0_3 then
+  local l_0_4 = (mp.readu_u16)(l_0_3, 1)
+  local l_0_5 = (string.sub)(l_0_0, #l_0_2 + 1, #l_0_2 + l_0_4)
+  if (MpCommon.BinaryRegExpSearch)("\\x0A\\x06..\\x7F\\x35\\x01\\x00", l_0_5) then
     return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

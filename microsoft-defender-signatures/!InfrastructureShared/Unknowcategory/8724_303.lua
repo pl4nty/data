@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((mp.getfilename)()):lower()
-if (mp.get_mpattribute)("BM_RTF_FILE") == true and (string.find)(l_0_0, ".rtf", -4, true) ~= nil then
+if (mp.get_mpattribute)("pea_isexe") and peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

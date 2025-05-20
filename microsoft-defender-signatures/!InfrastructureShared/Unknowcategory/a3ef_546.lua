@@ -3,23 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA
-if l_0_0 == 0 then
-  return mp.LOWFI
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and (string.find)(l_0_0, " copy ", 1, true) and (string.find)(l_0_0, "\\windows\\temp\\", 1, true) and ((string.find)(l_0_0, "\\share$\\", 1, true) or (string.find)(l_0_0, " \\\\", 1, true) or (string.find)(l_0_0, " \"\"\\\\", 1, true)) then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-if (mp.getfilesize)() < l_0_0 + 4096 then
-  return mp.LOWFI
-end
-;
-(mp.readprotection)(false)
-if (mp.readfile)(l_0_0 + 3904, 27) == "\004\b\019\002OR1\0180\016\006\003U\004\a\019\tBeaverton1" then
-  return mp.INFECTED
-end
-if (mp.readfile)(l_0_0 + 3876, 27) == "\004\b\019\002OR1\0180\016\006\003U\004\a\019\tBeaverton1" then
-  return mp.INFECTED
-end
-if (mp.readfile)(l_0_0 + 3602, 27) == "\004\b\019\002OR1\0180\016\006\003U\004\a\019\tBeaverton1" then
-  return mp.INFECTED
-end
-return mp.LOWFI
 

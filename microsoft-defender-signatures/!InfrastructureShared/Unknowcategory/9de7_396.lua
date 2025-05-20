@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (pesecs[6]).Name == ".?:9" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if epcode[1] == 232 and epcode[6] == 232 and epcode[11] == 51 and epcode[13] == 195 and pevars.lscnwr == 1 and (pesecs[pehdr.NumberOfSections]).PointerToRawData == 45056 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

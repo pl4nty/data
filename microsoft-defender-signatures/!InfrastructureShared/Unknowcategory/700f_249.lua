@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 8 then
-  (pe.set_image_filename)("\"myapp.exe\" /install")
-  ;
-  (pe.reemulate)()
+if peattributes.executes_from_dynamic_memory and peattributes.x86_image and peattributes.hasappendeddata then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
-    ;
-    (mp.ReportLowfi)(l_0_0, 694214086)
-    ;
-    (bm.add_related_file)(l_0_0)
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if peattributes.isexe == true and (pesecs[4]).Name == ".ndata" and (pesecs[4]).Characteristics == 3221225600 and (mp.getfilesize)() >= 200000 and (mp.getfilesize)() <= 1000000 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

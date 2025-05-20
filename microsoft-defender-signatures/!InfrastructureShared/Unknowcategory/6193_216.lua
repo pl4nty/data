@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and (pesecs[5]).Name == "" then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 2 and mp.HSTR_WEIGHT < 7 then
+  (mp.set_mpattribute)("HSTR:Strakupa.A1")
 end
-return mp.CLEAN
+return mp.INFECTED
 

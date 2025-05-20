@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if (pe.get_exports)() ~= 1 then
+local l_0_1 = {}
+l_0_1["isxagent.exe"] = true
+l_0_1["totalrecoveryprosetup.exe"] = true
+if l_0_1[(string.lower)(l_0_0:match("\\([^\\]+)$"))] then
   return mp.CLEAN
 end
-if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "main" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

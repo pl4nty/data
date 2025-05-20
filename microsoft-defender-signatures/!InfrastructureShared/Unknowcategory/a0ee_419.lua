@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-    if (string.find)(l_0_0, "wscript.shell", 1, true) and ((string.find)(l_0_0, "eval(", 1, true) or (string.find)(l_0_0, "\'ev\'+\'al\'", 1, true)) then
-      return mp.INFECTED
-    end
-  end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 == nil then
   return mp.CLEAN
 end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -19) == "\\browser_broker.exe" or (string.sub)(l_0_0, -13) == "\\explorer.exe" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

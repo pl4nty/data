@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".rsrc" and (mp.bitand)((pesecs[4]).Characteristics, 3221487648) == 3221487648 then
-  return mp.INFECTED
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr - 4, 4), 1) < 65536 then
+  return mp.CLEAN
 end
 ;
-(mp.set_mpattribute)("HSTR:Win32/Nabucur.01")
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 30, "")
+return mp.INFECTED
 

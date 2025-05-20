@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsTrustedFile)(false) ~= false then
-  return mp.CLEAN
-end
-if mp.HSTR_WEIGHT >= 3 then
+if (((mp.getfilename)()):lower()):find("word/embeddings/oleobject1.bin->(ole stream 0)", -46, true) then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT >= 2 then
-  return mp.LOWFI
-end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,16 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil and peattributes.isexe then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+local l_0_1 = (sysio.GetProcessFromFileName)(l_0_0)
+if l_0_1 == nil or #l_0_1 == 0 then
   return mp.CLEAN
 end
+return mp.INFECTED
 

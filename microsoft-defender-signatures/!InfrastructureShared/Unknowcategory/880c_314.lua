@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("LUA:FileSizeLE5000.A") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+if (hstrlog[1]).hitcount == 1 and (hstrlog[2]).hitcount == 1 and (hstrlog[3]).hitcount == 1 and (hstrlog[4]).hitcount == 1 and (hstrlog[5]).hitcount == 2 and (hstrlog[6]).hitcount == 1 then
   return mp.INFECTED
 end
 return mp.CLEAN

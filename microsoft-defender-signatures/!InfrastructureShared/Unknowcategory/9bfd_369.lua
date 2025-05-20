@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+do
+  if peattributes.isdll == false and peattributes.hasexports == true and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if peattributes.isexe == true and pehdr.NumberOfSections == 9 and (pesecs[4]).Name == "seg1" then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

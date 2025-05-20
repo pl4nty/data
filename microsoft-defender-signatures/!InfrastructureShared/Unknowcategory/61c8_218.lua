@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT < 4 and mp.HSTR_WEIGHT > 1 then
-  (mp.set_mpattribute)("HSTR:Nivdort.EXP05")
+if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_no_security") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

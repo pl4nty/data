@@ -3,18 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if not peattributes.suspicious_heap_size and not peattributes.suspicious_linker_version and not peattributes.suspicious_image_version and not peattributes.suspicious_os_version and not peattributes.suspicious_timestamp then
-    local l_0_0, l_0_1 = peattributes.suspicious_section_vsize
-  end
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 then
-    (pe.set_peattribute)("hstr_exhaustive", true)
-    ;
-    (mp.set_mpattribute)("attrmatch_rescan_psif")
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = pcall(bm.get_connection_string)
+if l_0_0:match("DestIp=5.149.248.") or l_0_0:match("DestIp=79.142.66.") or l_0_0:match("DestIp=217.23.15.") or l_0_0:match("DestIp=65.98.83.") or l_0_0:match("DestIp=69.57.173.") or l_0_0:match("DestIp=74.82.216.") or l_0_0:match("DestIp=88.198.247.") or l_0_0:match("DestIp=98.142.243.") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

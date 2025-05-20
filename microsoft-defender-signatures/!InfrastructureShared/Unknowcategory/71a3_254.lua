@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_exports and peattributes.amd64_image and pehdr.NumberOfSections == 6 then
+if mp.HSTR_WEIGHT >= 2 then
+  if pehdr.Machine == 34404 then
+    (mp.changedetectionname)(805306678)
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

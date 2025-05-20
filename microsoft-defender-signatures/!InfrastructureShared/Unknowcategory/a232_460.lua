@@ -3,18 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-    if l_0_0:find(":\\users", 1, true) ~= nil or l_0_0:find(":\\windows", 1, true) ~= nil then
-      if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
-        (bm.add_related_file)(l_0_0)
-      end
-      return mp.INFECTED
-    end
-  end
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false then
   return mp.CLEAN
 end
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+  return mp.CLEAN
+end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 1, "\255\255\255\255")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

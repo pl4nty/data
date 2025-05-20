@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
+if (mp.get_mpattribute)("BM_LNK_FILE") then
   return mp.INFECTED
 end
 ;
-(mp.set_mpattribute)("HSTR:UpatreFragA_Nonprocess")
+(mp.set_mpattribute)("SCRIPT:Regsvr32")
 return mp.CLEAN
 

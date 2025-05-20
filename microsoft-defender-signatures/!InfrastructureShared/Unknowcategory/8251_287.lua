@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.getfilesize)() < 1024000 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.sub)(l_0_1, -11) == "\\jstart.exe" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

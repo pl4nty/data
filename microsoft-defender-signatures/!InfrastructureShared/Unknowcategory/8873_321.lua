@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasExpensiveLoop") then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-if peattributes.dt_error_heur_exit_criteria then
-  return mp.INFECTED
+if (pe.get_exports)() ~= 1 then
+  return mp.CLEAN
 end
-if (mp.get_mpattribute)("MpHasValidProjPath") then
+if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "main" then
   return mp.INFECTED
 end
 return mp.CLEAN

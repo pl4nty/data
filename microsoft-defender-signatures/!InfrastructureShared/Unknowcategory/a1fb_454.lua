@@ -5,9 +5,9 @@
 -- function num : 0
 local l_0_0 = {}
 for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
-  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28769 then
+  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28768 then
     local l_0_5 = (sigattr_head[l_0_4]).utf8p1
-    l_0_0.TlsJa3SHash = l_0_5
+    l_0_0.TlsJa3CHash = l_0_5
     ;
     (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
   end

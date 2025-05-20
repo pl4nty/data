@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "mmc.exe" and (versioning.IsSeville)() then
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if (string.find)(l_0_0, "\\programdata\\", 1, true) then
       return mp.INFECTED
     end
   end

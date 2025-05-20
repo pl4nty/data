@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
+if mp.HSTR_WEIGHT >= 7 then
   (mp.set_mpattribute)("PUA:Block:XMRigCC")
   return mp.INFECTED
 end

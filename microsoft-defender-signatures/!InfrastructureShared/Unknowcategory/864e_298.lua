@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.hasexports and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find(".vcxproj", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 5 and (pesecs[1]).Name == "AUTO" and (pesecs[2]).Name == "DGROUP" then
+if epcode[1] == 83 and epcode[2] == 156 and peattributes.isexe == true and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

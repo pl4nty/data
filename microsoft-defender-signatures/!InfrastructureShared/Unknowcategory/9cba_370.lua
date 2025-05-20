@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 454656 and l_0_0 > 356352 then
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched then
-    return mp.INFECTED
-  end
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[4]).matched then
-    return mp.INFECTED
-  end
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_deep_analysis") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.reemulate)()
+else
+  return mp.INFECTED
 end
 return mp.CLEAN
 

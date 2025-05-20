@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 32, "")
-return mp.INFECTED
+if peattributes.lastscn_writable and peattributes.hasexports then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

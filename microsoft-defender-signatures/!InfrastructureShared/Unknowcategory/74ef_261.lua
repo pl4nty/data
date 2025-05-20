@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((bm.get_current_process_startup_info)()).integrity_level then
+if peattributes.isexe == true and peattributes.no_boundimport == true and peattributes.no_exports == true and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

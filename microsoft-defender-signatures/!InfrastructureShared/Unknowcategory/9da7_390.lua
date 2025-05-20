@@ -3,20 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  if l_0_1:find("\\powershell.exe") then
-    local l_0_2 = (mp.GetProcessCommandLine)(l_0_0.ppid)
-    if l_0_2 ~= nil then
-      l_0_2 = (string.lower)(l_0_2)
-      if l_0_2:find("iex", 1, true) then
-        return mp.INFECTED
-      end
-    end
-  end
-end
-do
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 3, 4), 1), 4), 1)
+local l_0_1 = (pe.get_api_id)(l_0_0)
+if l_0_1 ~= 3267971814 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 34, "êê")
+return mp.INFECTED
 

@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 8 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -8) == "ekrn.exe" then
+  return mp.CLEAN
 end
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-return mp.CLEAN
+return mp.INFECTED
 

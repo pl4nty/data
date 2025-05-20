@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isexe then
+if (mp.get_mpattribute)("AGGREGATOR:CheckInstalledAV") then
   return mp.INFECTED
 end
 return mp.CLEAN

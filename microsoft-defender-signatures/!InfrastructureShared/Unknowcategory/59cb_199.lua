@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.amd64_image then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

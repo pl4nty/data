@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("HSTR:Obfuscator_Upatre_Downloader")
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
+return mp.INFECTED
 

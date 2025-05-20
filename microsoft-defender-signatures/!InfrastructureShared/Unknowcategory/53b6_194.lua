@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.no_exports then
+if (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
   return mp.INFECTED
 end
 return mp.CLEAN

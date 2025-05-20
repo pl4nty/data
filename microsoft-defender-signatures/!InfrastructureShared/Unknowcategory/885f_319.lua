@@ -3,12 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_PATH)
+if l_0_0 then
+  local l_0_1 = (sysio.FindFiles)(l_0_0, "*.pdb", 4)
+  if l_0_1 then
+    for l_0_5,l_0_6 in pairs(l_0_1) do
+      (mp.ReportLowfi)(l_0_6, 3390914334)
+    end
+  end
 end
-if (string.find)(l_0_0, "\\monagentcore.exe", 1, true) then
-  return mp.CLEAN
+do
+  l_0_1 = mp
+  l_0_1 = l_0_1.INFECTED
+  return l_0_1
 end
-return mp.INFECTED
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and (mp.get_mpattribute)("pea_isdll") then
-  return mp.INFECTED
+if pehdr.Machine == 34404 then
+  (mp.set_mpattribute)("Lowfi:Win64/Minxer_Coinminer")
+else
+  ;
+  (mp.set_mpattribute)("HSTR:Minxer_Coinminer")
 end
 return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".btls2" and (pesecs[6]).Name == ".dcard" then
-  return mp.INFECTED
+if (mp.get_mpattribute)("InEmail") then
+  (mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

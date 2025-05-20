@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = (string.lower)((mp.GetProcessCommandLine)(l_0_0.ppid))
-  if l_0_1 and l_0_2 and (string.find)(l_0_1, "\\system32\\cmd.exe", 1, true) and (string.find)(l_0_2, " /v /c ", 1, true) and (string.find)(l_0_2, " & set ", 1, true) and (string.find)(l_0_2, "! & !", 1, true) and (string.find)(l_0_2, ":~", 1, true) then
-    return mp.INFECTED
+if (bm.GetSignatureMatchDuration)() > 80000000 then
+  return mp.CLEAN
+end
+if (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
+  local l_0_0, l_0_1 = (string.match)((this_sigattrlog[2]).utf8p1, ";targetprocessp(pid:%d%d+):(%d%d%d%d+)$")
+  local l_0_2, l_0_3 = (string.match)((this_sigattrlog[3]).utf8p1, ";targetprocessp(pid:%d%d+):(%d%d%d%d+)$")
+  if l_0_0 == l_0_2 and l_0_1 == l_0_3 then
+    local l_0_4 = (string.format)("%s,ProcessStart:%s", l_0_0, l_0_1)
+    ;
+    (bm.trigger_sig)("ProcessInjectedBy", "BMGenCodeInjector.C", l_0_4)
   end
 end
 do

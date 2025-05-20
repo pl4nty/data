@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.format)("HSTR:VirTool:Win32/Obfuscator.ZG!upk.1_%08X_%08X", (hstrlog[1]).VA, (hstrlog[2]).VA)
-;
-(mp.set_mpattribute)(l_0_0)
-return mp.SUSPICIOUS
+if mp.HSTR_WEIGHT >= 8 then
+  return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT >= 6 then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    ;
+    (pe.reemulate)()
+  end
+end
+return mp.LOWFI
 

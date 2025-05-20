@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.ismsil and peattributes.isdll and (mp.getfilesize)() < 32768 then
+if (mp.getfilesize)() < 2560000 and pehdr.NumberOfSections == 5 and (pesecs[5]).Name == "" then
   return mp.INFECTED
 end
 return mp.CLEAN

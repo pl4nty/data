@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdriver == false and peattributes.isexe and peattributes.no_security and (mp.getfilesize)() > 1376256 and (mp.getfilesize)() < 5242880 and (pesecs[3]).Name == ".data" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 65, 32)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(pe.mmap_patch_va)(l_0_1, "\b\000\000\000")
+;
+(pe.set_regval)(pe.REG_ESI, l_0_1)
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "ëF")
+return mp.INFECTED
 

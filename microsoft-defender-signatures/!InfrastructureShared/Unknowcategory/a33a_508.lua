@@ -3,13 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)(epcode, 1) ~= 1610613227 or (mp.readu_u32)(epcode, 5) ~= 673477691 or pehdr.Subsystem ~= 1 then
-  return mp.LOWFI
+local l_0_0 = (mp.getfilesize)()
+do
+  if peattributes.ismsil == true and l_0_0 < 20480 then
+    local l_0_1 = (pe.get_versioninfo)()
+    -- DECOMPILER ERROR at PC46: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC46: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC46: Unhandled construct in 'MakeBoolean' P3
+
+    if (l_0_1.OriginalFilename ~= nil and l_0_1.OriginalFilename == "WindowsApp.exe") or l_0_1.InternalName == nil or l_0_1.CompanyName == nil or l_0_1.FileDescription == nil or l_0_1.ProductName ~= nil and l_0_1.ProductName == "WindowsApp" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-local l_0_0 = pehdr.ImageBase + (pesecs[1]).VirtualAddress
-local l_0_1 = (pe.mmap_va)(l_0_0, 4)
-if (string.sub)(l_0_1, 1, 4) == "(re)" then
-  (mp.changedetectionname)(805306430)
-end
-return mp.INFECTED
 

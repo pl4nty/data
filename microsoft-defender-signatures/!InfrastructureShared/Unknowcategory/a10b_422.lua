@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "êêêêêê")
-;
-(pe.mmap_patch_va)((mp.bitand)((pe.get_regval)(pe.REG_EBP) + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 32, 4), 1), 4294967295), "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000")
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+end
+local l_0_1 = (bm.get_imagepath)()
+local l_0_2, l_0_3 = (bm.get_process_relationships)()
+for l_0_7,l_0_8 in ipairs(l_0_3) do
+  if l_0_8.image_path == l_0_1 then
+    (MpCommon.RequestSmsOnProcess)(l_0_8.ppid, MpCommon.SMS_SCAN_MED)
+  end
+end
 return mp.INFECTED
 

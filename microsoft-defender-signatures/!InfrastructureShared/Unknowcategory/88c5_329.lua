@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 == nil then
+do
+  if peattributes.x86_image == true and peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil and (l_0_5.Signers).IsValid == true then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if (string.find)(l_0_0.ProductName, "AUTORUN", 1, true) == nil or (string.find)(l_0_0.FileDescription, "AUTORUN", 1, true) == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

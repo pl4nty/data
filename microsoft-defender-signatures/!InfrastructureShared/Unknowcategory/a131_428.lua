@@ -3,16 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  do
+    if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
+      local l_0_4 = nil
+      if (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)) then
+        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2))
+      end
+    end
+    return mp.INFECTED
+  end
 end
-local l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
-if not (sysio.IsFileExists)(l_0_1) then
-  return mp.CLEAN
-end
-if (sysio.GetFileSize)(l_0_1) > 262144000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

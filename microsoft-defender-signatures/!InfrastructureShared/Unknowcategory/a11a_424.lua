@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[6]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!A")
+if (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr + 3, 4), 1) < 4096 or (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr + 51, 4), 1) < 4096 then
   return mp.CLEAN
 end
-if (hstrlog[7]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!B")
-  return mp.CLEAN
-end
-if (hstrlog[8]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!C")
-  return mp.CLEAN
-end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 46, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 55, "")
 return mp.INFECTED
 

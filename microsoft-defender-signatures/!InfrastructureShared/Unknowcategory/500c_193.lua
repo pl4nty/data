@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 51 and epcode[2] == 192 then
+if peattributes.no_security == true and peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.x86_image then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%-%>%(RarSfx%)%-%>CMT$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,19 +3,19 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["winword.exe"] = true
+  l_0_3["excel.exe"] = true
+  l_0_3["powerpnt.exe"] = true
+  if l_0_3[l_0_2] then
+    return mp.LOWFI
+  end
+end
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
-  end
-  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 ~= nil) and (sysio.IsFileExists)((this_sigattrlog[2]).utf8p1) then
-    (bm.add_related_file)((this_sigattrlog[2]).utf8p1)
-  end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

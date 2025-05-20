@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_ismsil") and peattributes.no_security == true and (mp.getfilesize)() < 1064000 then
-  return mp.INFECTED
+if peattributes.x86_image and peattributes.isdll == true and peattributes.hasexports == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

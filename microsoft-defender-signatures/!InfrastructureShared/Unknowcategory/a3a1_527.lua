@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 3 and (pesecs[2]).SizeOfRawData > 1376256 then
-  (pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
-  ;
-  (pe.reemulate)()
-  return mp.INFECTED
+if peattributes.is_process then
+  return mp.CLEAN
 end
-if pehdr.NumberOfSections == 4 and (pesecs[1]).SizeOfRawData > 2359296 and (mp.get_mpattribute)("attrmatch_codepatch_EIP_00000004_EB") then
+if (mp.get_mpattribute)("pea_epscn_writable") and (mp.get_mpattribute)("pea_lastscn_executable") and (mp.get_mpattribute)("pea_firstsectwritable") and (mp.get_mpattribute)("pea_epinfirstsect") and (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_entrybyte60") and (mp.get_mpattribute)("pea_headerchecksum0") then
   return mp.INFECTED
 end
 return mp.CLEAN

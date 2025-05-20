@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true and (mp.getfilesize)() < 663042 and peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if epcode[1] == 72 and epcode[2] == 137 and peattributes.isexe == true and pehdr.AddressOfEntryPoint == 314640 and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

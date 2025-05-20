@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "t", 1, true) - 1, "\235")
 return mp.INFECTED
 

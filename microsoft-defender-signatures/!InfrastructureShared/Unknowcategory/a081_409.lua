@@ -3,18 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-do
-  local l_0_1 = ""
-  if l_0_0.is_header then
-    l_0_1 = (string.lower)(tostring(headerpage))
-  else
-    l_0_1 = (string.lower)(tostring(footerpage))
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0.command_line)
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, true, false) then
+    (mp.ReportLowfi)(l_0_6, 1834945633)
   end
-  if l_0_1 > 20 then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
 end
+return mp.INFECTED
 

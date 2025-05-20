@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1), 1) == 233 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 2, "\144")
-else
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + 2, "")
+do
+  if peattributes.isdll == true and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

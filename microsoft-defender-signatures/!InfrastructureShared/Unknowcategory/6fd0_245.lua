@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("RDTSC_LoD_trick")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 42, "êê")
+return mp.INFECTED
 

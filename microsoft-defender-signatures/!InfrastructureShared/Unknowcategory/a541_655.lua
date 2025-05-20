@@ -3,14 +3,33 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and pehdr.NumberOfSections == 5 and pevars.epsec == 1 and not peattributes.no_exports and peattributes.no_tls and pehdr.SizeOfImage >= 221184 and pehdr.SizeOfImage <= 1069056 and (pesecs[pevars.epsec]).SizeOfRawData >= 151552 and (pesecs[pevars.epsec]).SizeOfRawData <= 909312 then
-  (mp.set_mpattribute)("MpSimulateParanoid")
-  ;
-  (mp.set_mpattribute)("MpEnableCOM")
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
-  ;
-  (pe.reemulate)()
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 == nil or #l_0_0 < 1 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+l_0_0 = (string.lower)(l_0_0)
+local l_0_1 = (mp.IsKnownFriendlyFile)(l_0_0, true, false)
+if l_0_1 ~= true then
+  return mp.CLEAN
+end
+local l_0_2 = nil
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  l_0_2 = (this_sigattrlog[1]).utf8p1
+end
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+l_0_2 = (string.lower)(l_0_2)
+if (string.sub)(l_0_0, -#l_0_2) ~= l_0_2 then
+  return mp.CLEAN
+end
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_3 = (this_sigattrlog[2]).utf8p2
+    if (sysio.IsFileExists)(l_0_3) then
+      (bm.add_related_file)(l_0_3)
+    end
+  end
+  return mp.INFECTED
+end
 

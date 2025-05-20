@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_LNK_FILE") or (mp.get_mpattribute)("Lua:TopLevelFileExt.A!lnk") then
-  return mp.INFECTED
+if pehdr.NumberOfSections ~= 9 or (hstrlog[1]).VA ~= 4214784 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

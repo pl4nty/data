@@ -3,17 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.hasappendeddata then
+if (mp.get_mpattribute)("BM_OLE_FILE") then
+  (mp.set_mpattribute)("SCRIPT:PDFinOLE")
+  if (mp.get_mpattribute)("InEmail") then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 == nil or l_0_0 > 1000000 or l_0_0 < 1000 then
+      return mp.CLEAN
+    end
+    if (mp.BMSearchFile)(0, l_0_0, ".Document.DC\144\001@\144\002@h\000t\000t\000p\000:\000/\000/\144\000") > 0 then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if (mp.getfilesize)() < 150000 then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 200000 then
-  return mp.CLEAN
-end
-if epcode[1] == 137 and epcode[2] == 224 and epcode[3] == 163 and epcode[8] == 137 and epcode[9] == 232 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

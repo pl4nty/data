@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 500000 and peattributes.no_security == true then
+if (pesecs[4]).Name == ".wfweger" or (pesecs[4]).Name == ".gergreg" then
   return mp.INFECTED
 end
 return mp.CLEAN

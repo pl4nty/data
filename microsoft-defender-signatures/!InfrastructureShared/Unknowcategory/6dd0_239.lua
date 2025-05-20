@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "drawing1.xml.rels") ~= nil then
+if peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() < 3000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

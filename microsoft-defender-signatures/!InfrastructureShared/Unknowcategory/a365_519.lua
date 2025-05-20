@@ -3,21 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 47 then
-  return mp.CLEAN
+local l_0_0 = nil
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+
+  if (sigattr_tail[R4_PC6]).matched and (sigattr_tail[R4_PC6]).attribute == 16401 then
+    l_0_1 = (sigattr_tail[R4_PC6]).utf8p2
+    if l_0_1 ~= nil then
+      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+        local l_0_6 = nil
+        -- DECOMPILER ERROR at PC30: Confused about usage of register: R10 in 'UnsetPending'
+
+        R10_PC30 = (mp.ContextualExpandEnvironmentVariables)(R10_PC30)
+        if (sysio.IsFileExists)(R10_PC30) then
+          (bm.add_related_file)(R10_PC30)
+        end
+      end
+    end
+  end
 end
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset + 26
-local l_0_2 = 16
-local l_0_3 = ""
-if l_0_0.is_header then
-  l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
-else
-  l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
-end
-local l_0_4, l_0_5, l_0_6 = (string.find)(l_0_3, "(%d+)")
-if l_0_6 ~= nil and tonumber(l_0_6) >= 5 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

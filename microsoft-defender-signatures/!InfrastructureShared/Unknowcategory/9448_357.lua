@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (((hstrlog[1]).matched or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[4]).matched and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) >= 2 and (hstrlog[2]).matched then
+if (mp.get_mpattribute)("SLF:Win32/Sysdupate.E") then
+  return mp.CLEAN
+end
+if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 4 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 2, 4), 1) >= 65536 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 6, "\235")
+if peattributes.epinfirstsect and (pe.contains_va)(1, (hstrlog[1]).VA) and (mp.get_mpattribute)("LUA:Win32/Tarctox") then
   return mp.INFECTED
 end
 return mp.CLEAN

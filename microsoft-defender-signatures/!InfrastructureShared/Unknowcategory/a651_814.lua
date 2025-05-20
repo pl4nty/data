@@ -3,21 +3,13 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_22")
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(pevars.sigaddr, 52)
-local l_0_2 = (mp.readu_u32)(l_0_0, 6)
-local l_0_3 = (string.byte)(l_0_0, 14)
-local l_0_4 = (string.byte)(l_0_0, 17)
-local l_0_5 = (string.byte)(l_0_0, 20)
-local l_0_6 = (mp.readu_u32)(l_0_0, 22)
-local l_0_7 = (string.byte)(l_0_0, 28)
-local l_0_8 = (mp.readu_u32)(l_0_0, 32)
-local l_0_9 = (mp.readu_u32)(l_0_0, 43)
-local l_0_10 = (pe.get_regval)(pe.REG_EDX)
-local l_0_11 = (mp.ror32)((mp.ror32)((mp.ror32)(l_0_10, l_0_3) - l_0_4, l_0_5) + l_0_6, l_0_7) - (mp.bitxor)(l_0_9, l_0_8) + l_0_1 - l_0_2
-;
-(pe.set_regval)(pe.REG_EBX, l_0_11)
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 == nil or l_0_0.command_line == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)(l_0_0.command_line)
+if (string.find)(l_0_1, ">", 1, true) or (string.find)(l_0_1, ".txt", 1, true) or (string.find)(l_0_1, ".log", 1, true) or (string.find)(l_0_1, "robocopy", 1, true) or (string.find)(l_0_1, "xcopy", 1, true) or (string.find)(l_0_1, "cmtrace", 1, true) or (string.find)(l_0_1, " /c del ", 1, true) or (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "adcrcpy", 1, true) or (string.find)(l_0_1, "smstsvc", 1, true) or (string.find)(l_0_1, "install", 1, true) then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

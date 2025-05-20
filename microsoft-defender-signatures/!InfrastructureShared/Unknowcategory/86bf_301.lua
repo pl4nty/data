@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true and peattributes.hasexports then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilesize)()
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(0, l_0_0)
+if l_0_1 == nil then
   return mp.CLEAN
 end
+if l_0_1:gsub("%+%$", "") > 20 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

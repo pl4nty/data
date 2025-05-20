@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if (string.find)(l_0_0, "/format:", 1, true) ~= nil and (string.find)(l_0_0, "/format:list", 1, true) == nil then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

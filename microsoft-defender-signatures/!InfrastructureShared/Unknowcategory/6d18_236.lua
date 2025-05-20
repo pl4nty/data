@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() > 4900000 and (mp.getfilesize)() < 5000000 then
-  return mp.INFECTED
+if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(encscript%)$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

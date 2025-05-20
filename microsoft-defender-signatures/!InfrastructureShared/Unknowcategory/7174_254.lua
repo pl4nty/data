@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 290000 then
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
+local l_0_0 = (mp.getfilesize)()
+if peattributes.isdll and peattributes.no_security and l_0_0 > 1572864 and l_0_0 < 1638400 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[2]).matched then
-  l_0_0 = (this_sigattrlog[2]).utf8p2
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-if l_0_0 ~= "" then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "domain ", 1, true) and (string.find)(l_0_0, "user ", 1, true) and (string.find)(l_0_0, "pass ", 1, true) then
-    return mp.INFECTED
-  end
+local l_0_1 = {}
+l_0_1["Trojan:Win32/TIImpersonation.A!sms"] = true
+l_0_1["Trojan:Win32/TIImpersonation.B!sms"] = true
+l_0_1["Trojan:Win32/W3WP_BackdoorDLL"] = true
+l_0_1["Trojan:Win32/ShellMemoryArtifacts.B"] = true
+l_0_1["Trojan:Win32/ShellMemoryArtifacts.C"] = true
+if l_0_1[l_0_0] then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

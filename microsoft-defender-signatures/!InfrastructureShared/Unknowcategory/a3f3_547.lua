@@ -3,21 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
+byte_to_dword = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = 0
+  for l_1_5 = 4, 1, -1 do
+    l_1_1 = l_1_1 * 256 + (string.byte)(l_1_0, l_1_5)
+  end
+  return l_1_1
+end
+
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = (pe.mmap_va)(l_0_0 - 2, 4)
+local l_0_2 = byte_to_dword(l_0_1)
+if (pe.mmap_va)(l_0_2, 2) ~= "MZ" then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil or (string.find)(l_0_1, "stop", 1, true) == nil and (string.find)(l_0_1, "disabled", 1, true) == nil then
+local l_0_3 = (pe.mmap_va)(l_0_0 + 12, 4)
+local l_0_4 = byte_to_dword(l_0_3)
+if (pe.mmap_va)(l_0_4, 4) ~= "\000\000\255\255" then
   return mp.CLEAN
 end
-local l_0_2 = (mp.GetParentProcInfo)()
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (string.lower)(l_0_2.image_path)
-if l_0_3:match("([^\\]+)$") == "su64.exe" or l_0_3:match("([^\\]+)$") == "su32.exe" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

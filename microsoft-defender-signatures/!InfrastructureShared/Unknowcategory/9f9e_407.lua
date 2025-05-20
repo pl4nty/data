@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.getfilesize)()
-local l_0_1 = tostring((mp.readfile)(0, l_0_0))
-l_0_1 = (string.lower)(l_0_1)
-if (string.find)(l_0_1, "j7pjsibhd9dztmzk7ddgdohxux5lws3aa9fqa9lxwkrk4omnzgqt6euej4i", 1, true) ~= nil then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = nil
+for l_0_6,l_0_7 in ipairs(l_0_1) do
+  if l_0_7.image_path ~= nil and (mp.bitand)(l_0_7.reason_ex, 1) == 1 then
+    l_0_2 = (string.lower)(l_0_7.image_path)
+    if (string.find)(l_0_2, "\\powershell.exe", 1, true) then
+      return mp.INFECTED
+    end
+  end
 end
 return mp.CLEAN
 

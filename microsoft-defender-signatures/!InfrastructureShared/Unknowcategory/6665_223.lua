@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.no_security then
+if (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("FOP64:GoLang64") then
   return mp.INFECTED
 end
 return mp.CLEAN

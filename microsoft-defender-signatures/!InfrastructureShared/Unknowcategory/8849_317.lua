@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("RPF:UrsnifDLL") then
-  if peattributes.amd64_image then
-    (mp.changedetectionname)(805306417)
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "/externallinks", 1, true) or (string.find)(l_0_0, "->(ole stream 0)->(msg)", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

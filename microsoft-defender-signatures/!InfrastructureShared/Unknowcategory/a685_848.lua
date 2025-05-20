@@ -3,27 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if (bm.GetSignatureMatchDuration)() > 200000000 then
-  return mp.CLEAN
-end
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  local l_0_1 = (string.match)((this_sigattrlog[5]).utf8p2, ";regionsize:(%d+)")
-  if l_0_1 == nil then
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  if l_0_0 == nil and (string.len)(l_0_0) < 3 then
     return mp.CLEAN
   end
-  if (string.find)(l_0_0, ";destport=80;", 1, true) or (string.find)(l_0_0, ";destport=443;", 1, true) then
+  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
+  local l_0_1 = (string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$")
+  if l_0_1 == nil and (string.len)(l_0_1) < 3 then
     return mp.CLEAN
   end
-  if tonumber(l_0_1) < 110000 then
-    return mp.CLEAN
+  local l_0_2 = {}
+  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\windows\\"))] = true
+  l_0_2[(string.lower)((mp.ContextualExpandEnvironmentVariables)("%localappdata%\\microsoft\\"))] = true
+  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\windows\\"))] = true
+  l_0_2[(string.lower)((MpCommon.ExpandEnvironmentVariables)("%system%\\config\\systemprofile\\appdata\\local\\microsoft\\"))] = true
+  if l_0_2[l_0_1] then
+    return mp.INFECTED
   end
-  local l_0_2 = (bm.get_current_process_startup_info)()
-  ;
-  (bm.request_SMS)(l_0_2.ppid, "M")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1000)
-  return mp.INFECTED
 end
 do
   return mp.CLEAN

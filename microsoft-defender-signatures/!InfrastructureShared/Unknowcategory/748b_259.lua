@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 210000 and l_0_0 <= 240000 and pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 7 then
+if (mp.get_mpattribute)("NID:Trojan:Win64/Stealc.RPX1!MTB") and (mp.get_mpattribute)("CERT:Trojan:Win64/Stealc.RPX1!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

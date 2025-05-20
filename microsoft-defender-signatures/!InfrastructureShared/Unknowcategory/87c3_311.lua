@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.suspicious_image_version and pehdr.MajorImageVersion == 13 and pehdr.MinorImageVersion == 32 then
+  (mp.changedetectionname)(805306482)
 end
-local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
-if (string.find)(l_0_1, ":\"\\..\\", 1, true) ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

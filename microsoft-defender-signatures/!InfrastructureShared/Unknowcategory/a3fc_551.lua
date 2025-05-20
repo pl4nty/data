@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
-
-if (((((not (hstrlog[1]).matched and (hstrlog[3]).matched) or not (hstrlog[6]).matched) and (hstrlog[9]).matched) or (hstrlog[2]).matched) and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) + ((hstrlog[8]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) >= 4 then
+if (pe.mmap_va)(pevars.sigaddr + 2, 4) == "à“\004\000" or (pe.mmap_va)(pevars.sigaddr + 2, 4) == "\0005\f\000" or (pe.mmap_va)(pevars.sigaddr + 1, 1) == "\255" or (pe.mmap_va)(pevars.sigaddr + 1, 1) == "\254" then
+  (pe.mmap_patch_va)(pevars.sigaddr + 6, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 11, "\235")
+  ;
+  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
   return mp.INFECTED
 end
 return mp.CLEAN

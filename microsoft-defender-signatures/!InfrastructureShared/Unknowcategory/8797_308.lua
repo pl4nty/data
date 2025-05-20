@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (((hstrlog[12]).matched and (hstrlog[13]).matched) or not (hstrlog[14]).matched or (hstrlog[15]).matched) and peattributes.no_security == true then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.match)(l_0_0, "appdata\\local\\temp\\bk[%a%d]+.tmp\\p[%a%d]+.exe") then
+  (mp.set_mpattribute)("HSTR:Win32/PCHunter.B")
 end
-return mp.CLEAN
+return mp.INFECTED
 

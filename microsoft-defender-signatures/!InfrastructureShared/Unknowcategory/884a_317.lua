@@ -3,10 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr - 4, 4), 1) < 65536 then
-  return mp.CLEAN
+if peattributes.isdll and (mp.get_mpattribute)("RPF:UrsnifDLL") then
+  if peattributes.amd64_image then
+    (mp.changedetectionname)(805306417)
+    return mp.INFECTED
+  end
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 30, "")
-return mp.INFECTED
+return mp.CLEAN
 

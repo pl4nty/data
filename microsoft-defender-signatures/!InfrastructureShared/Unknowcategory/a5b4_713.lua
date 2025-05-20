@@ -3,32 +3,33 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-    local l_0_0 = nil
+  if (versioning.GetEngineBuild)() >= 16700 then
+    local l_0_0 = (versioning.GetOrgID)()
+    if l_0_0 and (string.lower)(l_0_0) == "d7c7c745-195f-4223-9c7a-99fb420fd000" then
+      return mp.CLEAN
+    end
   end
   local l_0_1 = nil
-  -- DECOMPILER ERROR at PC34: Overwrote pending register: R1 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R1 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC59: Unhandled construct in 'MakeBoolean' P3
-
-  if ((not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p2 == nil or (this_sigattrlog[4]).matched) and l_0_1 == nil) or nil == nil then
-    return mp.CLEAN
-  end
-  if not (string.find)(l_0_1, " +h", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  if (string.find)(l_0_2, (string.match)(l_0_1, " (%l:\\.+%.class)"), 1, true) then
-    if (sysio.IsFileExists)((string.match)(l_0_1, " (%l:\\.+%.class)")) then
-      (bm.add_threat_file)((string.match)(l_0_1, " (%l:\\.+%.class)"))
+  if (this_sigattrlog[2]).matched then
+    l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p1)
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
+  if l_0_1 ~= nil then
+    local l_0_2 = (string.sub)(l_0_1, -4)
+    local l_0_3 = "|.asp|aspx|ashx|asmx|"
+    if (string.find)(l_0_3, l_0_2, 1, true) then
+      if (sysio.IsFileExists)(l_0_1) then
+        (bm.add_related_file)(l_0_1)
+      end
+      return mp.INFECTED
+    end
+  end
+  do
+    return mp.CLEAN
+  end
 end
 

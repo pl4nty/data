@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "mmc.exe" or l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
-      if (versioning.IsSeville)() then
-        return mp.INFECTED
-      end
-      return mp.LOWFI
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 917504 and l_0_0 <= 958464 and pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 6 and (mp.get_mpattribute)("NID:GerWiper.A!Pra1") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

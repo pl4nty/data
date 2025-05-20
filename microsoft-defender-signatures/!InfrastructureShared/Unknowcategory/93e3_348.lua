@@ -3,14 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[3]).p1)
-  if (string.find)(l_0_1, l_0_0 .. ".exe", nil, true) then
-    return mp.INFECTED
-  end
-end
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  return mp.CLEAN
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  else
+  end
+  if (this_sigattrlog[2]).matched then
+    local l_0_3 = nil
+    if (string.lower)((string.sub)((this_sigattrlog[2]).utf8p1, -1)) ~= "\\" or (string.lower)((string.sub)((this_sigattrlog[2]).utf8p1, -1)) ~= "/" then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 

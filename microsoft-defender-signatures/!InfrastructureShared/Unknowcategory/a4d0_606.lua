@@ -3,20 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -11)) == "svchost.exe" then
-  if (this_sigattrlog[1]).matched then
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 3296241983)
-  else
-    if (this_sigattrlog[2]).matched then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 669256468)
-    else
-      if (this_sigattrlog[3]).matched then
-        (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1), 3230147973)
-      end
+local l_0_0 = (mp.getfilesize)()
+do
+  if peattributes.ismsil == true and l_0_0 < 20480 then
+    local l_0_1 = (pe.get_versioninfo)()
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
+
+    -- DECOMPILER ERROR at PC64: Unhandled construct in 'MakeBoolean' P3
+
+    if (l_0_1.OriginalFilename ~= nil and (l_0_1.OriginalFilename):lower() == "monitor.exe") or l_0_1.InternalName == nil or l_0_1.CompanyName == nil or l_0_1.FileDescription == nil or l_0_1.LegalTrademarks == nil or l_0_1.ProductName ~= nil and (l_0_1.ProductName):lower() == "monitor" then
+      return mp.INFECTED
     end
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
 

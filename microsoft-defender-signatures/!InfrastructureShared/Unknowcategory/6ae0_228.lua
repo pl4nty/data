@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:GolangBinary") then
+if (pesecs[7]).Name == ".taggant" and (pesecs[7]).Characteristics == 3758096448 then
   return mp.INFECTED
 end
 return mp.CLEAN

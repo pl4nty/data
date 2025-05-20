@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "\\program files", 1, true) ~= nil then
+do
+  if peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

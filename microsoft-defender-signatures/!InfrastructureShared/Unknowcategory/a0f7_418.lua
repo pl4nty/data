@@ -3,21 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if ((((((((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[1]).matched) or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and 0 + 1 + 1 >= 1) or 0 + 1 + 1 + 1 + 1 + 1 + 1 >= 2 then
+  return mp.INFECTED
 end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = (pe.get_exports)()
-do
-  if l_0_0 == 1 then
-    local l_0_2 = (pe.mmap_string_rva)((l_0_1[1]).namerva, 64)
-    if l_0_2 == "RegisterModule" then
-      (mp.set_mpattribute)("BM_IISMODULE")
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+return mp.CLEAN
 

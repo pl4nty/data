@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "\000\000u", 1, true) + 1, "êê")
-return mp.INFECTED
+if peattributes.packed and (mp.get_mpattribute)("SIGATTR:deepemu") and (mp.get_mpattribute)("SIGATTR:VirTool:Win32/Obfuscator.QG") then
+  return mp.SUSPICIOUS
+end
+return mp.CLEAN
 

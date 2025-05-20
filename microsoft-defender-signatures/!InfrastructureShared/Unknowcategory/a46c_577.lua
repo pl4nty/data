@@ -3,17 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (string.find)((string.lower)(l_0_6.image_path), "\\filename.bat", 1, true) then
-    local l_0_7, l_0_8 = (string.match)(l_0_6.ppid, "^pid:(%w+),ProcessStart:(%w+)$")
-    local l_0_9 = tonumber(l_0_7)
-    local l_0_10 = tonumber(l_0_8)
-    local l_0_11, l_0_12 = (mp.bsplit)(l_0_10, 32)
-    local l_0_13 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_9, l_0_11, l_0_12)
-    ;
-    (mp.TriggerScanResource)("ems", l_0_13)
+-- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil then
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+    if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, false, true) then
+      (bm.request_SMS)(l_0_1.ppid, "l+")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1000)
+      ;
+      (bm.add_related_file)(l_0_6)
+    end
   end
 end
-return mp.INFECTED
+do
+  return mp.CLEAN
+end
 

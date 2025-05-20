@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()
-if l_0_0:find(".deb", 1, true) then
-  return mp.CLEAN
+if peattributes.isexe and peattributes.hasexports and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

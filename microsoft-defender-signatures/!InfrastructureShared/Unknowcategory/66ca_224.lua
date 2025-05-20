@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (hstrlog[1]).matched then
-  l_0_0 = (hstrlog[1]).hitcount
-end
-if l_0_0 >= 3 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 > 458752 and l_0_0 < 589824 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

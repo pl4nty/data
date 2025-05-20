@@ -3,29 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if not (string.find)(l_0_0, "^c:\\") and not (string.find)(l_0_0, "^\\\\") then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "ExecutedPENoCert")
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_2 = (MpCommon.GetPersistContextNoPath)("bm_uacbypass_connmgr")
-if l_0_2 then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_8, l_0_9 = (string.match)(l_0_7, "(.+);ImagePath:(.+)")
-    if l_0_9 then
-      l_0_9 = (MpCommon.PathToWin32Path)(l_0_9)
-      if (sysio.IsFileExists)(l_0_9) then
-        (bm.add_related_file)(l_0_9)
-        l_0_7 = (string.gsub)(l_0_7, ",", "_")
-        ;
-        (bm.add_related_string)("PossibleTrigger", l_0_7, bm.RelatedStringBMReport)
+local l_0_0 = nil
+local l_0_1 = nil
+if (bm.get_current_process_startup_info)() ~= nil and ((bm.get_current_process_startup_info)()).ppid ~= nil then
+  local l_0_2 = nil
+  if (mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid) == nil then
+    return mp.CLEAN
+  end
+  l_0_1 = (string.lower)((mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid))
+  if (string.find)(l_0_1, "/create", 1, true) and (string.find)(l_0_1, "cmd.exe", 1, true) and (string.find)(l_0_1, "wordpad.exe", 1, true) and (string.find)(l_0_1, "/sc", 1, true) and (string.find)(l_0_1, "/tr", 1, true) and (string.find)(l_0_1, "/st", 1, true) and (string.find)(l_0_1, "/sd", 1, true) then
+    (bm.request_SMS)(l_0_2.ppid, "M")
+    local l_0_3 = nil
+    local l_0_4, l_0_5 = (bm.get_imagepath)(), (bm.get_process_relationships)()
+    for l_0_9,l_0_10 in ipairs(R7_PC98) do
+      local l_0_6 = nil
+      -- DECOMPILER ERROR at PC100: Confused about usage of register: R10 in 'UnsetPending'
+
+      if R10_PC100.image_path == l_0_4 then
+        (bm.request_SMS)(l_0_2.ppid, "M")
       end
     end
+    return mp.INFECTED
   end
-  return mp.INFECTED
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

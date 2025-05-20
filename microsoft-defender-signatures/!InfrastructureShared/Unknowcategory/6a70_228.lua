@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and (mp.get_mpattribute)("HSTR:MSIL/Confuser") then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.hasexports == true and l_0_0 >= 100000 and l_0_0 <= 300000 then
   return mp.INFECTED
 end
 return mp.CLEAN

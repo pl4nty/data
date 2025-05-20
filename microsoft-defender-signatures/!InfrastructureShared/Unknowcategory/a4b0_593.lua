@@ -3,25 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (hstrlog[3]).VA + 42
-local l_0_1 = (pe.mmap_va)(l_0_0, 4)
-if (string.byte)(l_0_1, 1) == 69 then
-  l_0_0 = l_0_0 + 5
-else
-  if (string.byte)(l_0_1, 1) == 133 then
-    l_0_0 = l_0_0 + 8
-  else
-    return mp.CLEAN
+if pehdr.CheckSum == 0 and peattributes.isexe and peattributes.hasexports and pevars.epsec < 3 and pehdr.MajorLinkerVersion == 10 and pehdr.MinorLinkerVersion == 0 and pehdr.NumberOfSections == 7 then
+  if mp.HSTR_WEIGHT == 1 then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    ;
+    (pe.reemulate)()
   end
-end
-l_0_1 = (pe.mmap_va)(l_0_0, 4)
-local l_0_2 = (mp.readu_u32)(l_0_1, 1)
-local l_0_3 = (pe.mmap_va)(l_0_2, 16)
-if (string.sub)(l_0_3, 1, 7) == "dfghjkl" then
-  return mp.INFECTED
-end
-if (string.sub)(l_0_3, 1, 14) == "dfertter2342zc" then
-  return mp.INFECTED
+  if mp.HSTR_WEIGHT == 2 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

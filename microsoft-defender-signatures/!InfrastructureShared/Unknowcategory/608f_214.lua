@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Hula.A")
+if ((mp.getfilename)()):sub(-28) == "word/_rels/document.xml.rels" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

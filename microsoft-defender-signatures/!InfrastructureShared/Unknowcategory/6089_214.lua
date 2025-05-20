@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData == 0 then
+if peattributes.isdll == true and (pe.get_exports)() == 1 then
   return mp.INFECTED
 end
 return mp.CLEAN

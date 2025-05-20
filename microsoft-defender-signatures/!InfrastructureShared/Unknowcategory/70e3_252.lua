@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RF!MTB") or (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RG!MTB") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

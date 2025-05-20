@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true then
-  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-  end
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 15, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "é")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

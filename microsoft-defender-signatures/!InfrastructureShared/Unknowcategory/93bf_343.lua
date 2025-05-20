@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() < 50000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 5 then
+  return mp.INFECTED
 end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_istuni")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_istuni")
+end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("pea_amd64_image") and peattributes.no_security == true then
+if peattributes.isexe == true or peattributes.isdll == true and (pesecs[4]).Name == ".ndata" and (pesecs[3]).Characteristics == 3221225600 then
   return mp.INFECTED
 end
 return mp.CLEAN

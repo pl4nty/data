@@ -3,13 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[5]).matched and pehdr.NumberOfSections == 3 then
-    return mp.INFECTED
-  end
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[6]).matched and (hstrlog[7]).matched and (hstrlog[8]).matched and pehdr.NumberOfSections == 3 then
-    return mp.INFECTED
-  end
+local l_0_0 = -1
+if (pesecs[3]).Name == ".data" then
+  l_0_0 = 3
 end
-return mp.CLEAN
+if (pesecs[2]).Name == ".data" then
+  l_0_0 = 2
+end
+if l_0_0 == -1 then
+  return mp.CLEAN
+end
+if (pesecs[l_0_0]).SizeOfRawData > 4096 then
+  local l_0_1 = pehdr.ImageBase + (pesecs[l_0_0]).VirtualAddress + 16
+  local l_0_2 = (pe.mmap_va)(l_0_1, 16)
+  if (string.byte)(l_0_2, 1) == 77 and (string.byte)(l_0_2, 2) == 90 then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
+do
+  return mp.CLEAN
+end
 

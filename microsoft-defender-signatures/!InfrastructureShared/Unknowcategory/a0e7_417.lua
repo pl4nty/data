@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-local l_0_1 = (this_sigattrlog[1]).utf8p1
-local l_0_2 = (string.match)(l_0_1, "\\%l%l%l%l%l%l%l%l.exe")
-if l_0_2 ~= nil then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_0), 83782614)
-  ;
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_1), 83782614)
-  return mp.INFECTED
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 then
+  return mp.CLEAN
+end
+if (hstrlog[5]).hitcount == 0 then
+  return mp.CLEAN
+end
+if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

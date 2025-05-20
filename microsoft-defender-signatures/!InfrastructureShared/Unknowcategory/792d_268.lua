@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.getfilesize)() < 400000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if (mp.getfilesize)() > 148000 and (mp.getfilesize)() < 162000 and epcode[1] == 232 and epcode[6] == 233 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

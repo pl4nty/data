@@ -3,20 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not peattributes.hasexports then
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\utilman.exe")
+if l_0_0 ~= nil then
+  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
+  if l_0_1 ~= nil and (string.len)(l_0_1) >= 3 then
+    local l_0_2 = (string.lower)(l_0_1)
+    if (string.find)(l_0_2, "cmd", 1, true) or (string.find)(l_0_2, "msconfig", 1, true) or (string.find)(l_0_2, "taskmgr", 1, true) then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("Excel_LLXLoader") then
-  (mp.set_mpattribute)("Excel_LLXLoader")
-end
-if not (mp.get_mpattribute)("MpPeekIntoResources") then
-  (mp.set_mpattribute)("MpPeekIntoResources")
-end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
 

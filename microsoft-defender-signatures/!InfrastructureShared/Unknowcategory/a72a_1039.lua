@@ -3,53 +3,75 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -9)) ~= "\\w3wp.exe" then
-  return mp.CLEAN
-end
-local l_0_1 = nil
-if (this_sigattrlog[1]).matched then
-  l_0_1 = (this_sigattrlog[1]).utf8p1
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_1 = (this_sigattrlog[2]).utf8p1
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_1 = (this_sigattrlog[3]).utf8p1
-    else
-      if (this_sigattrlog[4]).matched then
-        l_0_1 = (this_sigattrlog[4]).utf8p1
-      end
-    end
-  end
-end
-if l_0_1 ~= nil then
-  local l_0_2 = (string.sub)(l_0_1, -4)
-  local l_0_3 = "|.asp|aspx|ashx|asmx|"
-  if (string.find)(l_0_3, l_0_2, 1, true) == nil then
-    return mp.CLEAN
-  end
-end
 do
-  local l_0_4 = (bm.get_current_process_startup_info)()
-  local l_0_5 = l_0_4.command_line
-  if not (string.find)(l_0_5, "-ap \"MSExchange", 1, true) then
-    return mp.CLEAN
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
+      (bm.add_related_file)(l_0_0)
+      ;
+      (mp.ReportLowfi)(l_0_0, 1002594803)
+    end
   end
   do
-    if (sysio.IsFileExists)(l_0_1) then
-      local l_0_6 = (string.match)(l_0_1, "(.*\\)[^\\]+$")
-      if l_0_6 then
-        (bm.trigger_sig)("TriggerShellPath", l_0_6)
+    if (this_sigattrlog[2]).matched then
+      local l_0_1 = (this_sigattrlog[2]).utf8p2
+      if l_0_1 ~= nil and (sysio.IsFileExists)(l_0_1) then
+        (bm.add_related_file)(l_0_1)
+        ;
+        (mp.ReportLowfi)(l_0_1, 1696514977)
       end
-      ;
-      (mp.ReportLowfi)(l_0_1, 560784057)
-      ;
-      (bm.add_related_file)(l_0_1)
-      ;
-      (bm.add_threat_file)(l_0_1)
     end
-    return mp.INFECTED
+    do
+      if (this_sigattrlog[3]).matched then
+        local l_0_2 = (this_sigattrlog[3]).utf8p2
+        if l_0_2 ~= nil and (sysio.IsFileExists)(l_0_2) then
+          (bm.add_related_file)(l_0_2)
+          ;
+          (mp.ReportLowfi)(l_0_2, 2037309813)
+        end
+      end
+      do
+        if (this_sigattrlog[4]).matched then
+          local l_0_3 = (this_sigattrlog[4]).utf8p2
+          if l_0_3 ~= nil and (sysio.IsFileExists)(l_0_3) then
+            (bm.add_related_file)(l_0_3)
+            ;
+            (mp.ReportLowfi)(l_0_3, 3163967254)
+          end
+        end
+        do
+          if (this_sigattrlog[5]).matched then
+            local l_0_4 = (this_sigattrlog[5]).utf8p2
+            if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
+              (bm.add_related_file)(l_0_4)
+              ;
+              (mp.ReportLowfi)(l_0_4, 4100536160)
+            end
+          end
+          do
+            if (this_sigattrlog[6]).matched then
+              local l_0_5 = (this_sigattrlog[6]).utf8p2
+              if l_0_5 ~= nil and (sysio.IsFileExists)(l_0_5) then
+                (bm.add_related_file)(l_0_5)
+                ;
+                (mp.ReportLowfi)(l_0_5, 1676364795)
+              end
+            end
+            do
+              if (this_sigattrlog[7]).matched then
+                local l_0_6 = (this_sigattrlog[7]).utf8p2
+                if l_0_6 ~= nil and (sysio.IsFileExists)(l_0_6) then
+                  (bm.add_related_file)(l_0_6)
+                  ;
+                  (mp.ReportLowfi)(l_0_6, 372502474)
+                end
+              end
+              return mp.INFECTED
+            end
+          end
+        end
+      end
+    end
   end
 end
 

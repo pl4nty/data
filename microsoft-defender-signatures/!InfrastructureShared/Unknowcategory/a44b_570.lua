@@ -3,47 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_2 = nil, nil
-if (this_sigattrlog[2]).matched then
-  local l_0_1 = nil
-else
-  do
-    -- DECOMPILER ERROR at PC16: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC25: Overwrote pending register: R1 in 'AssignReg'
-
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_3, l_0_6 = , (this_sigattrlog[2]).wp1
-    else
-      do
-        -- DECOMPILER ERROR at PC38: Overwrote pending register: R2 in 'AssignReg'
-
-        do
-          if (this_sigattrlog[5]).matched then
-            local l_0_7 = nil
-          end
-          -- DECOMPILER ERROR at PC39: Confused about usage of register: R1 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC45: Confused about usage of register: R1 in 'UnsetPending'
-
-          if l_0_6 ~= nil then
-            local l_0_4, l_0_5 = (string.lower)((mp.utf16to8)(l_0_6))
-            if (string.find)(l_0_4, "\\ms%l+%.exe:%d+$") then
-              return mp.INFECTED
-            end
-          else
-            do
-              -- DECOMPILER ERROR at PC64: Confused about usage of register: R2 in 'UnsetPending'
-
-              if nil ~= nil and (string.find)(nil, "\\windows\\\\%d+$") then
-                return mp.INFECTED
-              end
-              return mp.CLEAN
-            end
-          end
-        end
-      end
+if not (this_sigattrlog[1]).matched or not (this_sigattrlog[1]).ppid or not (this_sigattrlog[2]).matched then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (bm.get_process_relationships)((this_sigattrlog[1]).ppid)
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path and (string.find)(l_0_6.image_path, "svchost.exe", 1, true) then
+    local l_0_7 = (this_sigattrlog[2]).utf8p1
+    if l_0_7 and not (mp.IsKnownFriendlyFile)(l_0_7, false, false) then
+      (mp.ReportLowfi)(l_0_7, 3377723068)
+      return mp.CLEAN
     end
   end
 end
+return mp.CLEAN
 

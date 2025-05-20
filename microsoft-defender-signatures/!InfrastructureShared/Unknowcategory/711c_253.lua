@@ -3,15 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("BitlockerRansom")
-if l_0_0 ~= nil then
-  for l_0_4,l_0_5 in ipairs(l_0_0) do
-    if l_0_5 == "D" then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "androidmanifest", 1, true) then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

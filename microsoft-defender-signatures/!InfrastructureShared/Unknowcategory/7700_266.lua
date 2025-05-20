@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "3\192")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if peattributes.isdll == true and peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/Qbot.ZXX!MTB") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

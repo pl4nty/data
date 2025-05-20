@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_obfuscator_xt_3")
+(mp.set_mpattribute)("lua_codepatch_obfuscator_xt_2")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 30, "")
+(pe.mmap_patch_va)(pevars.sigaddr + 29, "")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 50, "")
+(pe.mmap_patch_va)(pevars.sigaddr + 49, "")
 ;
 (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 ;

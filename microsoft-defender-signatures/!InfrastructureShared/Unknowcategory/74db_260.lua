@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:find("\\wscript.exe") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+(mp.set_mpattribute)("HSTR:Renos_msposer")
+if (mp.get_mpattribute)("PEPCODE:VirTool:Win32/Obfuscator.ED") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

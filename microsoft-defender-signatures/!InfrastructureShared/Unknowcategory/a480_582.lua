@@ -3,26 +3,28 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "(.+\\)"
-local l_0_1 = ((string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0))
-local l_0_2 = nil
-if (this_sigattrlog[2]).matched then
-  l_0_2 = (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0)
-else
-  if (this_sigattrlog[3]).matched then
-    l_0_2 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), l_0_0)
-  else
-    if (this_sigattrlog[4]).matched then
-      l_0_2 = (string.match)((string.lower)((this_sigattrlog[4]).utf8p1), l_0_0)
-    else
-      if (this_sigattrlog[5]).matched then
-        l_0_2 = (string.match)((string.lower)((this_sigattrlog[5]).utf8p1), l_0_0)
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  end
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC38: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC38 = (mp.ContextualExpandEnvironmentVariables)(R6_PC38)
+      if (sysio.IsFileExists)(R6_PC38) and (string.sub)(R6_PC38, -4) == ".jar" then
+        (bm.add_threat_file)(R6_PC38)
       end
     end
   end
+  do
+    return mp.INFECTED
+  end
 end
-if l_0_1 ~= nil and l_0_1 == l_0_2 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

@@ -3,24 +3,19 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if not (hstrlog[1]).matched then
-    local l_0_0 = (hstrlog[2]).matched
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
   end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
 
-  if mp.HSTR_WEIGHT >= 3 and (l_0_0 or (hstrlog[3]).matched) then
-    return mp.INFECTED
-  end
-  if mp.HSTR_WEIGHT >= 2 then
-    return mp.LOWFI
-  else
-    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
 
-    if l_0_0 then
-      return mp.LOWFI
-    end
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 ~= nil) and (sysio.IsFileExists)((this_sigattrlog[2]).utf8p1) then
+    (bm.add_related_file)((this_sigattrlog[2]).utf8p1)
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 
