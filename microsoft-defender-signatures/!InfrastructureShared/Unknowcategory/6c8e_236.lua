@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.isexe and peattributes.x86_image and peattributes.suspicious_linker_version then
+  return mp.INFECTED
 end
-;
-(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_ONCE)
-return mp.INFECTED
+return mp.CLEAN
 

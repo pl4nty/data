@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
-  return mp.CLEAN
+if peattributes.no_security == true and peattributes.isexe == true then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

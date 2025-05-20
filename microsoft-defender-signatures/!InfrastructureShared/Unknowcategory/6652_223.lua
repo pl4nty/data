@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("FOP64:GoLang64") then
-  return mp.INFECTED
+if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "veeamp.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

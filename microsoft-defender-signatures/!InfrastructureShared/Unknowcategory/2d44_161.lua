@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:ClaymoreCryptoNote")
-return mp.INFECTED
+if peattributes.ismsil == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

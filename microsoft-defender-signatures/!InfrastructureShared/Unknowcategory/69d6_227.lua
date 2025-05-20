@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.executble_image and peattributes.isvbnative then
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

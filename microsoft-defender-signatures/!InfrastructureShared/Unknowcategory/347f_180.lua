@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:TopLevelFile") then
+if (mp.get_mpattribute)("Nscript:Type_bat") then
   return mp.INFECTED
 end
 return mp.CLEAN

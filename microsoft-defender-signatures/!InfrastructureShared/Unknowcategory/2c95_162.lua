@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 332 then
+if pehdr.Machine == 34404 then
   return mp.INFECTED
 end
 return mp.CLEAN

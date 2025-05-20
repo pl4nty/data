@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.lower)((mp.getfilename)()), "%.c$") ~= nil then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:Social2Search.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "\000\001\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 58, "")
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 888800 and l_0_0 <= 888850 and pehdr.NumberOfSections == 4 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("HSTR:VirTool:Win32/AscUrlExe") then
+if (mp.get_mpattribute)("BM_LNK_FILE") then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("SCRIPT:Regsvr32")
 return mp.CLEAN
 

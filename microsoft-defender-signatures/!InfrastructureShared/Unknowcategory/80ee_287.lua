@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (mp.getfilesize)() < 1000000 and (string.sub)(l_0_0, -12) == "goopdate.dll" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "\bu", 1, true), "")
+return mp.INFECTED
 

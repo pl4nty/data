@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isdll and (mp.getfilesize)() < 14288 then
+if (pe.get_regval)(pe.REG_EAX) == 106 and (pe.get_regval)(pe.REG_EDX) == 80 then
   return mp.INFECTED
 end
 return mp.CLEAN

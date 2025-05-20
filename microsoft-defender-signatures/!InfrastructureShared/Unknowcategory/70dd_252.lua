@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.ismsil == true and pehdr.NumberOfSections == 3 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

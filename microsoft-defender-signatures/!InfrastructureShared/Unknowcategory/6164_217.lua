@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
-  (mp.set_mpattribute)("PUA:Block:SMSreg.TA")
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:VSearch.I")
   return mp.INFECTED
 end
 return mp.LOWFI

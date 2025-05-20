@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 3, "\001\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 65, "\001\000")
-return mp.INFECTED
+if (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative and (pesecs[3]).SizeOfRawData > 65536 then
+if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

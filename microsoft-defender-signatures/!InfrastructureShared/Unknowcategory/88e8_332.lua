@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 1986560 and (mp.getfilesize)() < 2015232 then
-  return mp.INFECTED
+if (pe.isdynamic_va)(pevars.sigaddr) then
+  if (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 then
+    return mp.INFECTED
+  end
+  if (pe.query_import)(pe.IMPORT_STATIC, 3150467781) ~= 0 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[6]).Name == ".wt727" then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 40000 or l_0_0 < 1000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

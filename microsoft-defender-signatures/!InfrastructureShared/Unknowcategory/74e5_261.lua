@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 28, "êê")
+return mp.INFECTED
 

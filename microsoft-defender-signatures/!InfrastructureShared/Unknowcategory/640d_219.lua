@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:BackTrack.C")
+if (mp.get_mpattribute)("SCPT:VBSSplit") and (mp.get_mpattribute)("BM_TEXT_FILE") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

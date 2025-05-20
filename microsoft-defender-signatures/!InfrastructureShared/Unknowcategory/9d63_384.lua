@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:XMRigCC")
-  return mp.INFECTED
+local l_0_0 = (mp.GetBruteMatchData)()
+do
+  local l_0_1 = ""
+  if l_0_0.is_header then
+    l_0_1 = (string.lower)(tostring(headerpage))
+  else
+    l_0_1 = (string.lower)(tostring(footerpage))
+  end
+  if l_0_1 > 3 then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrigcc")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrigcc")
-end
-return mp.CLEAN
 

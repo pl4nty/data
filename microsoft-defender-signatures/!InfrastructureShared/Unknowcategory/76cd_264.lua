@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+if (hstrlog[4]).matched or (hstrlog[8]).matched then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

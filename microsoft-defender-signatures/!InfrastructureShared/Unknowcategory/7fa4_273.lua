@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win64/Zusy.AP!MTB")) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(pe.mmap_patch_va)(l_0_1, "\221\a")
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("BM_UnsignedDll") then
+if (string.match)((string.lower)((mp.getfilename)()), "%.c$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

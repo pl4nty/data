@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("/Toketak.") then
+if (mp.get_mpattribute)("BM_MZ_DLL") then
   return mp.INFECTED
 end
 return mp.CLEAN

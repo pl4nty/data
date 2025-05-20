@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode or peattributes.isvbnative then
+if peattributes.ismsil == true and peattributes.amd64_image then
   return mp.INFECTED
 end
 return mp.CLEAN

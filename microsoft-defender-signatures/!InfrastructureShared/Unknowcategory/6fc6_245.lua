@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilename)()):match("(Ole Stream 0).*%.scr") and peattributes.isexe then
+if (string.lower)((string.sub)((bm.get_imagepath)(), -10)) == "\\mshta.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

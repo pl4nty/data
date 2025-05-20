@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 35000 or l_0_0 < 25000 then
-  return mp.CLEAN
+if peattributes.isexe and peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
+  return mp.INFECTED
 end
-if (pesecs[1]).SizeOfRawData ~= 1536 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

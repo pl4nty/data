@@ -3,21 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil, nil
-  else
-  end
-  if (this_sigattrlog[3]).matched then
-    local l_0_4 = (string.lower)((this_sigattrlog[3]).utf8p2)
-    -- DECOMPILER ERROR at PC39: Confused about usage of register: R1 in 'UnsetPending'
-
-    if l_0_4 and (string.lower)((this_sigattrlog[1]).utf8p1) and (string.find)(l_0_4, (string.lower)((this_sigattrlog[1]).utf8p1), 1, true) then
-      return mp.INFECTED
+  if (pesecs[6]).Name == ".EGlobal" and (pesecs[7]).Name == ".EGlobal" and (pesecs[8]).Name == ".EGlobal" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
-    return mp.CLEAN
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

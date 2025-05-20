@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Social2Search.A")
+if peattributes.isexe == true and (pesecs[6]).Name == ".htext" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

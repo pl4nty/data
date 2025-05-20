@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (not (hstrlog[5]).matched or (hstrlog[6]).matched) and mp.HSTR_WEIGHT == 3 then
+do
+  if (mp.get_mpattribute)("pea_isdll") and (pe.get_exports_count)() <= 4 and (pe.get_exports_count)() >= 1 then
+    local l_0_0 = (pe.get_imports)()
+    if l_0_0 <= 4 and l_0_0 >= 1 then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if peattributes.hasstandardentry then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

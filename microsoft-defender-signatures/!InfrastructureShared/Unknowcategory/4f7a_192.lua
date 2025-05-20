@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.no_security then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 68, "\144")
+return mp.INFECTED
 

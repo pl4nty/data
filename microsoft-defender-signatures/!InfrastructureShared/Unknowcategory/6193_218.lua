@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_no_security") then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "->(Rtf", 1, true) == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

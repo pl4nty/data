@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 ~= nil and mp.HSTR_CALLER_SMS == l_0_0 then
+if (pe.isdynamic_va)(pevars.sigaddr) then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

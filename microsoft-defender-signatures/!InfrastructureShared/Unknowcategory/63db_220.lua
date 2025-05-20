@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:MacOS/Yontoo")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/InvisibleFerret.A!dha")
+return mp.INFECTED
 

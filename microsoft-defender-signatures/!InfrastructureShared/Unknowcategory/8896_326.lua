@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.no_security == true and pehdr.NumberOfSections == 7 and (mp.getfilesize)() > 716800 and (mp.getfilesize)() < 1024000 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 8388608 or l_0_0 > 17825792 then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("HSTR:PYINSTALLER") and (mp.get_mpattribute)("HSTR:Linux/NativeAPIDirectoryEnumuerate.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports then
+if (mp.get_mpattribute)("SIGATTR:FirewallBypassList") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

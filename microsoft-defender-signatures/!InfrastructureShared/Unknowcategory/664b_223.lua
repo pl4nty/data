@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == false and peattributes.no_security == true then
+if pehdr.NumberOfSections == 4 and (pesecs[4]).Name == ".mdn" then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[9]).matched and (this_sigattrlog[10]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[9]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[10]).p1)
-  if l_0_0:match("c:\\temp\\(%l+)%.zip") == l_0_1:match("c:\\temp\\%l+%.(%l+)") then
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "/document.xml", 1, true) or (string.find)(l_0_0, "xl/externallinks/", 1, true) or (string.find)(l_0_0, "->(ole stream 0)->(msg)", 1, true) then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

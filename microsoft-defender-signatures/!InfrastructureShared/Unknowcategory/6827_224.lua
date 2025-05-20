@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(mp.set_mpattribute)("attrmatch_rescan_psif")
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 > 131072 and l_0_0 < 262144 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

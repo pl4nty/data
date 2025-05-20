@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 98304 and peattributes.isdll then
+if peattributes.x86_image and peattributes.suspicious_dosheader then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 and (mp.getfilesize)() < 2097152 then
+if peattributes.hasappendeddata and peattributes.amd64_image then
   return mp.INFECTED
 end
 return mp.CLEAN

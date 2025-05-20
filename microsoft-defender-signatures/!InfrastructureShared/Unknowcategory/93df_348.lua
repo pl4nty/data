@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
-    ;
-    (mp.ReportLowfi)(l_0_0, 694214086)
-    ;
-    (bm.add_related_file)(l_0_0)
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if peattributes.hasappendeddata and (mp.getfilesize)() - ((pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData) > 65536 then
+  return mp.INFECTED
 end
+return mp.LOWFI
 

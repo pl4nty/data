@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:Awecleaner.C")
+if (mp.get_mpattribute)("MpCPlApplet") and peattributes.isdll then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

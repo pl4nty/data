@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".ctls0" then
+if (mp.get_mpattribute)("//RPF:IS_Lnk") then
   return mp.INFECTED
 end
 return mp.CLEAN

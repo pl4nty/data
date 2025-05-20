@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and (peattributes.isdll == true or peattributes.isexe == true) and peattributes.no_security == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_obfuscator_tc_1")
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "»‹æ[_")
+return mp.SUSPICIOUS
 

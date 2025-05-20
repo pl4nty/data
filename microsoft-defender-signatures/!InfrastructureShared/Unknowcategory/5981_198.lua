@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.headerchecksum0 == true then
+if peattributes.ismsil and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

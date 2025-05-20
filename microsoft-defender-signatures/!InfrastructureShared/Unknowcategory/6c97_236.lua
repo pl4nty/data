@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount >= 3 and ((hstrlog[2]).hitcount >= 4 or (hstrlog[3]).hitcount >= 4) then
+if (mp.get_mpattribute)("MHSTR:MacroJustAutoOpen") and (mp.get_mpattribute)("MHSTR:MacroDownload") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:AMCleaner.B!xp")
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil and l_0_0 < 16384 and l_0_0 > 2000 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

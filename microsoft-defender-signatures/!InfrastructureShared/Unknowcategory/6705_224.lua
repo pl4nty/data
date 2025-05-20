@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:EliteKeylogger.C")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

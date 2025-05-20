@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() >= 512000 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData < 65536 then
-  return mp.CLEAN
-end
-if peattributes.isvbnative == true then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.reason == 1 then
+    if (string.lower)((string.match)(l_0_6.image_path, "\\([^\\]+)$")) == "razerinstaller.exe" then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
 return mp.CLEAN
 

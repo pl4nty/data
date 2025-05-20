@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") or peattributes.isexe == false then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 27, "«D$\016\016\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 96, "êê")
 return mp.INFECTED
 

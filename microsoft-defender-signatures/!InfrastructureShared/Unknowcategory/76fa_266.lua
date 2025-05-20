@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT < 103 and peattributes.isexe and (mp.get_mpattribute)("reads_vdll_code") then
+if peattributes.isdll == true and peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/Qbot.ZXX!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

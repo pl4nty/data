@@ -3,14 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 13 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 100 and l_0_0 <= 10240 then
+  local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_PATH)
+  if l_0_1 == nil or l_0_1 == "" then
+    return mp.CLEAN
+  end
+  local l_0_2 = "/opt/"
+  if l_0_1:sub(1, #l_0_2) == l_0_2 then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT >= 12 then
-  (mp.set_mpattribute)("HSTR:Adware:Win32/ZoomyLib.D")
+do
+  return mp.CLEAN
 end
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-return mp.CLEAN
 

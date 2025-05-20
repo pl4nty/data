@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 339417 then
-  return mp.CLEAN
+if pehdr.NumberOfSections > 4 and pevars.epsec == pehdr.NumberOfSections and (pesecs[pehdr.NumberOfSections]).Name == "" and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3758096384) == 3221225472 then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("MpAPILimitReached") then
-  (pe.set_peattribute)("disable_apicall_limit", true)
-end
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
-return mp.INFECTED
+return mp.CLEAN
 

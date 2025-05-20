@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Win32/HiveCrypt.PB!MTB") then
+if peattributes.ismsil and peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

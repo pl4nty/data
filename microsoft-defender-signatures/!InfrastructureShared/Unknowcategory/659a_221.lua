@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:Bundlore.I!xp")
+if mp.HSTR_WEIGHT >= 22 then
+  (mp.set_mpattribute)("PUA:Block:InstallCore.C")
   return mp.INFECTED
 end
 return mp.LOWFI

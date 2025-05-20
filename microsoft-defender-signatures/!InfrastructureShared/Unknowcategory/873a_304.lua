@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() >= 512000 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData < 65536 then
-  return mp.CLEAN
-end
-if peattributes.isvbnative == true then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "odbior_1000%d%d%d%d%d%d%d%d%dU.vbs") ~= nil or (string.find)(l_0_0, "przesylka_1000%d%d%d%d%d%d%d%d%dU.vbs") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

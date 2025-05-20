@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = (pe.mmap_va)(l_0_0 + 30, 4)
+local l_0_2 = 0
+for l_0_6 = 4, 1, -1 do
+  l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
 end
-if (string.lower)((string.sub)(l_0_0.image_path, -11)) ~= "svchost.exe" then
-  return mp.CLEAN
-end
-if (versioning.GetLocaleIdentifier)() == 1049 then
+if l_0_2 + 6 + 30 + l_0_0 ~= (hstrlog[2]).VA then
   return mp.LOWFI
 end
 return mp.CLEAN

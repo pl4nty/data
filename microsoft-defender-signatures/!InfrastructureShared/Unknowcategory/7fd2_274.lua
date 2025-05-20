@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 and (string.find)((string.lower)(l_0_0.image_path), "python", 1, true) then
+if peattributes.isexe == true and (pesecs[2]).Name == ".sedata" and (pesecs[2]).Characteristics == 1744830496 then
   return mp.INFECTED
 end
 return mp.CLEAN

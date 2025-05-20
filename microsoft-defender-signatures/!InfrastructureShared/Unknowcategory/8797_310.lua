@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
-  return mp.CLEAN
-end
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 15, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

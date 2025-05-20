@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 100000 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("AllowList:documentation_word_macro_n.dot") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

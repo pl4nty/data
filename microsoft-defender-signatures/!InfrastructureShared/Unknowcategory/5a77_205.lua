@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata and peattributes.dirty_wx_branch then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
+return mp.INFECTED
 

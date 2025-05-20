@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil and l_0_0 < 720896 and l_0_0 > 50000 then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-return mp.LOWFI
+return mp.CLEAN
 

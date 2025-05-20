@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdriver == true then
-  return mp.INFECTED
+if not peattributes.isvbnative then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

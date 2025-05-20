@@ -3,8 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or not (hstrlog[5]).matched or not (hstrlog[6]).matched or not (hstrlog[7]).matched or (hstrlog[8]).matched) then
-  return mp.INFECTED
+if peattributes.is_process then
+  return mp.CLEAN
 end
-return mp.CLEAN
+do
+  if peattributes.isexe == true and pehdr.NumberOfSections == 7 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

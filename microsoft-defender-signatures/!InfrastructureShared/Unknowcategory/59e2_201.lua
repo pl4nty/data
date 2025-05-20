@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if pehdr.Machine == 34404 then
-  (mp.changedetectionname)(805306455)
+  (mp.changedetectionname)(805306392)
   return mp.INFECTED
 end
 return mp.INFECTED

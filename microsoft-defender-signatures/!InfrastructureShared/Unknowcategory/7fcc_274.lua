@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
-  return mp.CLEAN
+if peattributes.ismsil == true and (pesecs[3]).Name == ".reloc" and (pesecs[3]).Characteristics == 1107296320 then
+  return mp.INFECTED
 end
-if (mp.GetSMSProcArchitecture)() ~= mp.SMS_PROC_ARCH_X64 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

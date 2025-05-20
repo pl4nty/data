@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:GT32SupportGeeks.C")
+if peattributes.isexe == true and (mp.get_mpattribute)("pea_no_security") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

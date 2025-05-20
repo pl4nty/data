@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.isexe then
+if pehdr.NumberOfSections == 6 and (mp.getfilesize)() >= 5868504 then
   return mp.INFECTED
 end
 return mp.CLEAN

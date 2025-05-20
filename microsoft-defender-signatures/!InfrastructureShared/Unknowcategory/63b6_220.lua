@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Crossrider.B")
+if peattributes.isexe == true or peattributes.isdll == true and peattributes.amd64_image then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

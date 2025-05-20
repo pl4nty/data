@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode == true then
+if pehdr.Subsystem == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

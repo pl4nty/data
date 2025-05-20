@@ -3,14 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_deep_analysis") then
-  (pe.set_peattribute)("enable_vmm_grow", true)
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  end
+  -- DECOMPILER ERROR at PC10: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_3 = nil
+  if l_0_3 == nil or (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_0), true, false) then
+    return mp.CLEAN
+  end
   ;
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
-else
+  (bm.add_related_file)(l_0_3)
   return mp.INFECTED
 end
-return mp.CLEAN
 

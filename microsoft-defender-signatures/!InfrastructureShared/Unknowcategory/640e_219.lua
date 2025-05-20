@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Genieo.K!xp")
+if (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() < 8192 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pevars.epsec < 3 and pehdr.NumberOfSections == 6 then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

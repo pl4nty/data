@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[7]).matched then
-  (mp.changedetectionname)(805306431)
+if (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Zusy.RX!MTB") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

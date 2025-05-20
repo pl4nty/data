@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.ismsil == true and peattributes.isexe == true and pehdr.AddressOfEntryPoint ~= 36446 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

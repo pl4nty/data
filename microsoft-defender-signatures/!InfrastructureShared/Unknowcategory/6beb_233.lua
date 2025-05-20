@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.INFECTED
+if pevars.sigaddr ~= 4198400 then
+  return mp.CLEAN
 end
-if (hstrlog[1]).matched then
-  return mp.LOWFI
-end
-return mp.CLEAN
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+return mp.INFECTED
 

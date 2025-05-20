@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.get_mpattribute)("TEL:Trojan:Win32/Kovter_Config") then
+if peattributes.isexe == true and peattributes.no_security == true and (mp.getfilesize)() < 45058 then
   return mp.INFECTED
 end
 return mp.CLEAN

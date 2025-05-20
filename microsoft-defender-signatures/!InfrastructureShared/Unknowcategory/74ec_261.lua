@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (peattributes.isexe == true or peattributes.isdll == true) and (mp.getfilesize)() <= 1804800 then
+if (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  return mp.INFECTED
+end
+if peattributes.dt_error_heur_exit_criteria then
   return mp.INFECTED
 end
 return mp.CLEAN

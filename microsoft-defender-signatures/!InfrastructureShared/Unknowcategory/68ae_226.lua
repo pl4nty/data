@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched then
+if peattributes.ismsil then
+  (mp.set_mpattribute)("PUA:Block:WizzRemote:Bit")
   return mp.INFECTED
 end
 return mp.CLEAN

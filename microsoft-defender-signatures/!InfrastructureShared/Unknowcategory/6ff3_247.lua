@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -8) == "ekrn.exe" then
+if (mp.getfilesize)() > 10240000 then
   return mp.CLEAN
 end
-return mp.INFECTED
+if pehdr.Subsystem == 11 or pehdr.Subsystem == 12 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

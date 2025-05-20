@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 50000 and (mp.getfilesize)() < 1000000 and not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 8 and (pesecs[1]).VirtualAddress == 4096 then
   return mp.INFECTED
 end
 return mp.CLEAN

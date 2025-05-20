@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:MaxOfferDeal.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

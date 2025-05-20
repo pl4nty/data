@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.isexe then
+if (mp.get_sigattr_event_count)(16385) > 2 or (mp.get_sigattr_event_count)(16386) > 2 then
   return mp.INFECTED
 end
 return mp.CLEAN

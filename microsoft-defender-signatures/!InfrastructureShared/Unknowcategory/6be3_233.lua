@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_loadconfig == true then
+if pehdr.NumberOfSections == 10 and (pesecs[6]).Name == "WET_J" then
   return mp.INFECTED
 end
 return mp.CLEAN

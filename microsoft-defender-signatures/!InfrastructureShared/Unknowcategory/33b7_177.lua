@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SCPT:HTMLFile") then
-  return mp.INFECTED
-end
+(mp.set_mpattributeex)("FOP:GoLang32", pevars.sigaddr)
 return mp.CLEAN
 

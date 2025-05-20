@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 1 and pehdr.Subsystem ~= 1 then
-  return mp.INFECTED
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "‹}\b‹u\f‹M\016ó¤‹å]\195")
 return mp.CLEAN
 

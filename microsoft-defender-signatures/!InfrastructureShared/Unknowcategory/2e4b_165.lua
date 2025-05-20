@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative ~= true then
-  return mp.CLEAN
+if peattributes.isvbnative == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

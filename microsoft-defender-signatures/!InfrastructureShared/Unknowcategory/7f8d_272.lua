@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and pehdr.NumberOfSections == 5 and (pesecs[5]).Name == ".extra" then
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Strictor.AMCV") then
   return mp.INFECTED
 end
 return mp.CLEAN

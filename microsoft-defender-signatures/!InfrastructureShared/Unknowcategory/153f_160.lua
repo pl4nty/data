@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-return mp.INFECTED
+if peattributes.isexe == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

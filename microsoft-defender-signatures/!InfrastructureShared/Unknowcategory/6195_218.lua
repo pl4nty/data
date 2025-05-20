@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and pehdr.NumberOfSections == 5 then
+if peattributes.isexe and (pesecs[1]).Name == "   " then
   return mp.INFECTED
 end
 return mp.CLEAN

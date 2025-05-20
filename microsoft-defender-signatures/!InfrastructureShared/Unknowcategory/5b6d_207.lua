@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if peattributes.ismsil == true and (mp.getfilesize)() < 300000 then
+  return mp.INFECTED
 end
-if not peattributes.hasappendeddata then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

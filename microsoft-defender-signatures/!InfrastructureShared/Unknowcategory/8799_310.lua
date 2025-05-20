@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\mmc.exe") then
-  return mp.CLEAN
-else
-  if (string.find)(l_0_0, "\\officeclicktorun.exe") then
-    return mp.CLEAN
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+    if l_0_0 ~= nil and (string.find)(l_0_0, "\\services.exe\\", 1, true) then
+      return mp.INFECTED
+    end
   end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

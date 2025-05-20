@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("GenericAllowlist") then
-  return mp.CLEAN
+if (mp.get_mpattribute)("Nscript:Type_bat") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

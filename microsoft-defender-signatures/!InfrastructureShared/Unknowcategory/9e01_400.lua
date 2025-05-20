@@ -3,34 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections < 1 then
-  return mp.CLEAN
-end
-local l_0_0 = {}
-local l_0_1 = {}
-l_0_1.sig = "\255Ðƒ\236\bÇD$\016@\000\000\000ÇD$\f\0000\000\000"
-l_0_1.xray_type = 11
-l_0_1.bytes_to_decrypt = 0
--- DECOMPILER ERROR at PC12: No list found for R0 , SetList fails
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-l_0_1 = pesecs
-l_0_1 = l_0_1[1]
-l_0_1 = l_0_1.SizeOfRawData
-if l_0_1 >= 65536 then
-  l_0_1 = mp
-  l_0_1 = l_0_1.CLEAN
-  return l_0_1
-end
-l_0_1 = pe
-l_0_1 = l_0_1.xray_block
-local l_0_2 = l_0_0
-local l_0_3 = 1
-local l_0_4 = 0
-local l_0_5 = 0
 do
-  local l_0_6 = (pesecs[1]).SizeOfRawData
-  do return l_0_1(l_0_2, l_0_3, l_0_4, l_0_5, l_0_6) end
-  -- DECOMPILER ERROR at PC32: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
 
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
+      ;
+      (bm.add_threat_file)(R6_PC25)
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
 

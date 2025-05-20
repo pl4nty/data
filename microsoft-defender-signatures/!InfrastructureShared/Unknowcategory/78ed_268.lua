@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() > 400000 and (mp.getfilesize)() < 600000 then
-  return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.sub)(l_0_0, -12) ~= "iexplore.exe" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

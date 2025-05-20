@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+if pehdr.AddressOfEntryPoint == 90675 and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
   return mp.INFECTED
-end
-if mp.HSTR_WEIGHT >= 2 or (hstrlog[4]).matched or (hstrlog[5]).matched then
-  return mp.LOWFI
 end
 return mp.CLEAN
 

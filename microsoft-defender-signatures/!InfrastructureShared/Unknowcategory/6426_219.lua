@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Yontoo.B!xp")
+if peattributes.ismsil == true and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

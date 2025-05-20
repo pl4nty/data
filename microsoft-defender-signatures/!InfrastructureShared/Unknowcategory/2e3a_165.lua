@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("disable_drop_mz_only", true)
-return mp.INFECTED
+if (mp.get_mpattribute)("c") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

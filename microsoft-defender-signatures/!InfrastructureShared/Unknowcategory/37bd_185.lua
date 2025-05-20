@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_has_msilresources") then
-  return mp.INFECTED
+if peattributes.isdll then
+  (mp.changedetectionname)(805306443)
 end
-return mp.CLEAN
+return mp.INFECTED
 

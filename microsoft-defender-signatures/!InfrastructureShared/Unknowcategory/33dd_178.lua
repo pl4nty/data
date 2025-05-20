@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("FOP64:GoLang64") then
+if (mp.get_mpattribute)("SIGATTR:Reboon") then
   return mp.INFECTED
 end
 return mp.CLEAN

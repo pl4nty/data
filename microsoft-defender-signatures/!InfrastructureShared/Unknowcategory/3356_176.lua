@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//RPF:IS_Pdf") then
+if (mp.get_mpattribute)("SIGATTR:ASEP") then
   return mp.INFECTED
 end
 return mp.CLEAN

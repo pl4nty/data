@@ -3,14 +3,22 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if l_0_0 ~= nil and (string.find)(l_0_0, "\\msbuild.exe", 1, true) then
-      (bm.add_action)("EmsScan", 5000)
+local l_0_3 = nil
+if (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME) == nil then
+  local l_0_0, l_0_1 = nil
+  if l_0_3 == nil then
+    return mp.CLEAN
+  end
+  l_0_0 = l_0_3:sub(-6)
+  local l_0_2 = nil
+else
+  do
+    -- DECOMPILER ERROR at PC21: Confused about usage of register: R2 in 'UnsetPending'
+
+    if (string.find)((l_0_1:sub(-6)):lower(), ".plist") then
       return mp.INFECTED
     end
+    return mp.CLEAN
   end
-  return mp.CLEAN
 end
 

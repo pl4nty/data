@@ -3,21 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not l_0_0 then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_2 = nil
-  if (string.match)(l_0_0, "minidump (%d+) ") and tonumber((string.match)(l_0_0, "minidump (%d+) ")) < 1500 then
+  if (peattributes.isdll == true or peattributes.isexe) and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
   return mp.CLEAN

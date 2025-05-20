@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)(pevars.sigaddr) then
-  if (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 then
-    return mp.INFECTED
+do
+  if not peattributes.hasappendeddata then
+    local l_0_0 = pehdr.NumberOfSections
+    if (pesecs[l_0_0]).SizeOfRawData > 3670016 then
+      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
+      return mp.INFECTED
+    end
   end
-  if (pe.query_import)(pe.IMPORT_STATIC, 3150467781) ~= 0 then
-    return mp.INFECTED
-  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

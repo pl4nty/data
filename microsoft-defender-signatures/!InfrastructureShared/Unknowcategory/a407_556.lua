@@ -3,8 +3,28 @@
 
 -- params : ...
 -- function num : 0
-if ((((((((((((((hstrlog[1]).matched and not (hstrlog[2]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and not (hstrlog[1]).matched) or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and not (hstrlog[7]).matched) or (hstrlog[8]).matched) and 0 + 1 + 1 + 1 + 1 + 1 >= 2) or 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 >= 5 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if l_0_1 ~= "regsvr32.exe " then
+  return mp.CLEAN
+end
+local l_0_2 = (mp.GetParentProcInfo)()
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (string.lower)(l_0_2.image_path)
+if l_0_3:match("([^\\]+)$") ~= "regsvr32.exe" then
+  return mp.CLEAN
+end
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+;
+(MpCommon.RequestSmsOnProcess)(l_0_2.ppid, MpCommon.SMS_SCAN_MED)
+return mp.INFECTED
 

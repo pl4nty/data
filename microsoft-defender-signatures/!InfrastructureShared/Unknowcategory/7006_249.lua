@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 10240000 then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_4")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\000")
 return mp.INFECTED
 

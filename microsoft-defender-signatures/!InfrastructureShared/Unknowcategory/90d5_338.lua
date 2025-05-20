@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 32768 and l_0_0 <= 720896 and (pesecs[4]).Name == "-l41W" and (pesecs[1]).Name == (pesecs[7]).Name and (pesecs[2]).Name == (pesecs[3]).Name then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

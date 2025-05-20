@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("SCRIPT:PythonCode.A") then
-  return mp.INFECTED
+if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

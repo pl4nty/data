@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true or peattributes.isdll == true then
-  return mp.INFECTED
+if (pe.get_regval)(pe.REG_EBX) < 16777216 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.amd64_image and peattributes.debug_stripped then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 <= 2097152 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("ALF:Trojan:Win32/GenMal.A")
 return mp.CLEAN
 

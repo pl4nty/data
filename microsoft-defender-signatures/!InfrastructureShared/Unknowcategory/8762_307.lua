@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  return mp.INFECTED
-else
-  if (hstrlog[1]).matched then
-    (mp.set_mpattribute)("HSTR:Trojan:Win32/Sefnit.AU")
-    return mp.LOWFI
-  end
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 19, 19)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\187" .. l_0_1 .. "\000\000\000")
+return mp.INFECTED
 

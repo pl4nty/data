@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 290000 then
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
+if (peattributes.isvbpcode == true or peattributes.isvbnative == true) and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

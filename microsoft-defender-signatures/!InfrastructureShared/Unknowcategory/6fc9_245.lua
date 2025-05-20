@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(zipsfx%)%-%>%w+%.bat$") == nil then
-  return mp.CLEAN
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:TrojanDropper:Win32/Jacard!MTB") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

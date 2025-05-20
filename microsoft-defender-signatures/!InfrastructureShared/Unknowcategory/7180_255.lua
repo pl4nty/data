@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 262144 and l_0_0 <= 458752 and peattributes.isdll == true and peattributes.hasexports == true then
+if peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Name == "Zero" then
   return mp.INFECTED
 end
 return mp.CLEAN

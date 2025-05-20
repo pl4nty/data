@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 101 then
+if peattributes.x86_image == true and (peattributes.isexe == true or peattributes.isdll == true) and peattributes.no_security == true then
   return mp.INFECTED
-else
-  if mp.HSTR_WEIGHT >= 1 then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2097152 and peattributes.no_security == true then
+if peattributes.no_decription and peattributes.suspicious_image_version then
   return mp.INFECTED
 end
 return mp.CLEAN

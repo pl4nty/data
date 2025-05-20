@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.INFECTED
-else
-  if (mp.get_mpattribute)("MHSTR:MacroDownload") and (mp.get_mpattribute)("MHSTR:MacroJustOpen") then
-    return mp.INFECTED
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil then
+      (bm.add_related_file)(l_0_0)
+    end
   end
+  return mp.INFECTED
 end
-return mp.LOWFI
 

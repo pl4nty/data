@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.SUSPICIOUS
+if peattributes.is_process then
+  return mp.INFECTED
 end
 ;
-(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOV")
+(mp.set_mpattribute)("HSTR:UpatreFragB_Nonprocess")
 return mp.CLEAN
 

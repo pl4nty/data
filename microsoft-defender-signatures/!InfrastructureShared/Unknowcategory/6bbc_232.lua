@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 15 then
-  (mp.set_mpattribute)("ALFPER:Rakzmer.A2X")
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\199\005")
 ;
-(mp.set_mpattribute)("PUA:Block:Rakzmer")
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "")
 return mp.INFECTED
 

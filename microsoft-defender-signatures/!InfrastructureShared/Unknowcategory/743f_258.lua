@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 <= 720896 and l_0_0 >= 65536 and peattributes.isdll == false then
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
   return mp.INFECTED
 end
 return mp.CLEAN

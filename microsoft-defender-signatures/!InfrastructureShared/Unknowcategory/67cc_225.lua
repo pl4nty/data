@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.has_msilresources then
+if peattributes.isexe and peattributes.x86_image and peattributes.dynmem_APIcall then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and (mp.getfilesize)() < 300000 and (pe.query_import)(pe.IMPORT_STATIC, 3727706256) ~= 0 then
-  return mp.INFECTED
+if (pe.isdynamic_va)(pevars.sigaddr) then
+  (pe.set_regval)(pe.REG_EAX, 0)
+  ;
+  (mp.set_mpattribute)("PEBMPAT:Simda:AntiEmuTimeStampCheck")
 end
 return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == false and (mp.getfilesize)() < 5048000 then
-  return mp.INFECTED
+if (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)) ~= "sbiedll.dll" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

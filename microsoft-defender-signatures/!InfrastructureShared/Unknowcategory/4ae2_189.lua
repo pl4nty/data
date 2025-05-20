@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image then
+if peattributes.is_delphi and peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

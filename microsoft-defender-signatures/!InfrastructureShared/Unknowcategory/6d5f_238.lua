@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() <= 200000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "¹ð\127\a\000\144")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 110, "")
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image then
+if (versioning.IsSeville)() then
   return mp.INFECTED
 end
 return mp.CLEAN

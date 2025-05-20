@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
-  l_0_0 = (MpCommon.PathToWin32Path)((string.lower)((this_sigattrlog[10]).utf8p1))
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_hstr_exhaustive") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
+else
+  return mp.INFECTED
 end
-if (mp.IsKnownFriendlyFile)(l_0_0, true, false) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

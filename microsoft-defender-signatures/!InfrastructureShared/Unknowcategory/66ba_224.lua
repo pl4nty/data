@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("classes.dex") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == false and (mp.get_mpattribute)("TEL:REVCERT:SinghAgile.A") then
+if peattributes.isdll == true and (mp.get_mpattribute)("NID:Trojan:Win32/GhostSocks.G5") then
   return mp.INFECTED
 end
 return mp.CLEAN

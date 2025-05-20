@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 8 then
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/CobaltStrike.PA!Pra1") then
   return mp.INFECTED
-end
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.CLEAN
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and peattributes.x86_image then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:AMCleaner.C")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.isdll and peattributes.no_security and l_0_0 > 196608 and l_0_0 < 262144 then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "(RarSfx)", 1, true) then
+  (mp.set_mpattribute)("//RarSfxPwdAppdata")
 end
 return mp.CLEAN
 

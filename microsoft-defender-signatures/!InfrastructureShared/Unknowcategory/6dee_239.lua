@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.has_msilresources and peattributes.x86_image and peattributes.executable_image then
+if peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() < 50000 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if machohdr.Magic == 4277009103 or machohdr.Magic == 3405691582 then
+if (mp.getfilesize)() >= 75008 and (mp.getfilesize)() <= 208640 then
   return mp.INFECTED
 end
 return mp.CLEAN

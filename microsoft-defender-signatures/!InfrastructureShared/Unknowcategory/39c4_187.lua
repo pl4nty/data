@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pe.get_regval)(pe.REG_ESP) == 1245124 then
+if (mp.get_mpattribute)("SIGATTR:Win32/BINinRsrc") then
   return mp.INFECTED
 end
 return mp.CLEAN

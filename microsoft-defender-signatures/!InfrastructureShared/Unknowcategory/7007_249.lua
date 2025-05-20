@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (pehdr.NumberOfSections >= 5 or pehdr.NumberOfSections <= 7) then
-  return mp.INFECTED
+if (pe.query_import)(pe.IMPORT_STATIC, 823159601) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 680197589) == 0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

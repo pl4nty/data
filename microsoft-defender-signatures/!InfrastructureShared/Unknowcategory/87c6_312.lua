@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
+if (nri.IsResponse)() then
   return mp.CLEAN
 end
 ;
-(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
-;
-(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 3000)
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
 return mp.INFECTED
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.LOWFI
+if (pesecs[6]).Name == ".qFx722" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

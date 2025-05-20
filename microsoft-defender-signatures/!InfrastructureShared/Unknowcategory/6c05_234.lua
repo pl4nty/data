@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and (mp.getfilesize)() < 75780 then
+if (mp.get_mpattribute)("NID:Trojan:Win32/Symmi.MBXJ!MTB") and (mp.get_mpattribute)("pea_isdll") then
   return mp.INFECTED
 end
 return mp.CLEAN

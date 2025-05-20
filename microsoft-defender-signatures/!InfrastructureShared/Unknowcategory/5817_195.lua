@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[4]).matched then
-  (mp.changedetectionname)(805306442)
+if (mp.get_mpattribute)("MpTrustCheck_NotDigitallySigned") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

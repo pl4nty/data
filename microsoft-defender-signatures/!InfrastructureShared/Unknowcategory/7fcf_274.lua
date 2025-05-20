@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "svchost.exe" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT == 2 and (pesecs[2]).PointerToRawData == 2701144064 and pehdr.SizeOfImage < (pesecs[2]).PointerToRawData then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

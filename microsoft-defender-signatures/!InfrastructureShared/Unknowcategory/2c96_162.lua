@@ -6,5 +6,5 @@
 if peattributes.is_delphi then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

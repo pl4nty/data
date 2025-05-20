@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:JS:eval") then
-  return mp.INFECTED
-end
+(mp.set_mpattributeex)("FOP64:GoLang64", pevars.sigaddr)
 return mp.CLEAN
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Genieo.B!xp")
+if (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 2048000 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

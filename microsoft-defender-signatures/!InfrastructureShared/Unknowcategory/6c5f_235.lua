@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[5]).matched then
-  (mp.set_mpattribute)("Lowfi:Komodia:WFP:NoVuln")
-  return mp.CLEAN
+if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win32/Qakbot.PAA!MTB") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

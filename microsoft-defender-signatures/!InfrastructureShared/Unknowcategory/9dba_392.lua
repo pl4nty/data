@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:CoinMiner64")
+(mp.readprotection)(false)
+if (mp.getfilesize)() > 155652 then
+  local l_0_0 = (mp.readfile)(155648, 4)
+  local l_0_1 = (mp.readu_u16)(l_0_0, 1)
+  if l_0_1 == 23117 then
+    (mp.set_mpattribute)("LobaostInfected")
+    return mp.INFECTED
+  end
+end
+do
+  ;
+  (mp.set_mpattribute)("LobaostOriginal")
   return mp.INFECTED
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_coinminer")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_coinminer")
-end
-return mp.CLEAN
 

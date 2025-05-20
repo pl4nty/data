@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Airpush.A")
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%-%>%(%w+Sfx%)%-%>CMT$") == nil then
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

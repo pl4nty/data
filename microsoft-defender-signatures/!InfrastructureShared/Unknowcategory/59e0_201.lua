@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 3 and peattributes.ismsil then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr + 32, "")
+return mp.INFECTED
 

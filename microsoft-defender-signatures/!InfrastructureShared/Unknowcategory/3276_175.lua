@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") then
+if (mp.get_mpattribute)("BM_LNK_FILE") then
   return mp.INFECTED
 end
 return mp.CLEAN

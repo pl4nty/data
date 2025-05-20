@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe and not peattributes.isvbpcode then
-  return mp.CLEAN
+if peattributes.isexe and peattributes.ismsil then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

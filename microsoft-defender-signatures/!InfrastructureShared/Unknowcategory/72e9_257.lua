@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)):lower()
-if l_0_0:find("blackbone", 1, true) then
-  return mp.CLEAN
+if peattributes.isexe == true and peattributes.no_boundimport == true and peattributes.no_debug == true and peattributes.x86_image == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

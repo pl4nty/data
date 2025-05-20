@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_hasappendeddata") == false then
+if (mp.get_mpattribute)("pea_has_msilresources") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

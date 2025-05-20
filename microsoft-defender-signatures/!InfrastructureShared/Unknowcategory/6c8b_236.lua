@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 33, "")
+(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_ONCE)
 return mp.INFECTED
 

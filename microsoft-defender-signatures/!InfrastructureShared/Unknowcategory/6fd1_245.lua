@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[7]).matched and peattributes.isdll and peattributes.hasexports then
-  return mp.INFECTED
+if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>%w+%.bat$") == nil then
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

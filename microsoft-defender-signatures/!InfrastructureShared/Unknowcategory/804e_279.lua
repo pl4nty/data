@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 21 then
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeGT1M.A") then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:TrojanDownloader:Win32/Krado.A")
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

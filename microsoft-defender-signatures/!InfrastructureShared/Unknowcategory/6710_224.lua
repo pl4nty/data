@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and pehdr.NumberOfSections == 7 then
+if pehdr.NumberOfSections == 6 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

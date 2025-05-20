@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() < 5000 then
+local l_0_0 = (mp.getfilename)()
+if l_0_0:len() >= 28 and (l_0_0:sub(-28)):lower() == "word/_rels/settings.xml.rels" then
   return mp.INFECTED
 end
 return mp.CLEAN

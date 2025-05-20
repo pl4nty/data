@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("//AGGR:OfficeFileOLE_1") then
+if peattributes.ismsil and peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

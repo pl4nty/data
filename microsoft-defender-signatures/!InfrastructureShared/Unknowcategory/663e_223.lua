@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 4 and (pesecs[4]).Name == ".mdn" then
+if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

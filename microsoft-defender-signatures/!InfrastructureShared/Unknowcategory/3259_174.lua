@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Golang") then
+if (pesecs[1]).Name == "AUTO" then
   return mp.INFECTED
 end
 return mp.CLEAN

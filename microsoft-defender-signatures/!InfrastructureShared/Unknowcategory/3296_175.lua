@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:ASPXExt") then
+if (mp.get_mpattribute)("MpCPlApplet") then
   return mp.INFECTED
 end
 return mp.CLEAN

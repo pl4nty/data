@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[5]).Name == "memcpy_" then
+if peattributes.amd64_image and (mp.get_mpattribute)("pea_isexe") then
   return mp.INFECTED
 end
 return mp.CLEAN

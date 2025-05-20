@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_istuni")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_istuni")
+local l_0_0 = (pe.get_regval)(pe.REG_EIP)
+local l_0_1 = (pe.get_regval)(pe.REG_ESP)
+if peattributes.isdll and l_0_1 < l_0_0 and l_0_0 - l_0_1 < 512 and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 458752 and l_0_0 < 786432 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("HSTR:GoMainFunc") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

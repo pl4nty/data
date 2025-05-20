@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilename)()
+if not l_0_0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.find)(l_0_0:lower(), "decrypt", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

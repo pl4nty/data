@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[1]).Name == ".data" then
+if peattributes.isexe and peattributes.no_security and peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

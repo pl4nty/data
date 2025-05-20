@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
-    if l_0_1 == "wmiprvse.exe" or l_0_1 == "services.exe" then
-      return mp.INFECTED
-    end
+if (mp.getfilesize)() < 1000000 and peattributes.executes_from_last_section == true then
+  if mp.HSTR_WEIGHT >= 3 then
+    return mp.SUSPICIOUS
+  else
+    return mp.LOWFI
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

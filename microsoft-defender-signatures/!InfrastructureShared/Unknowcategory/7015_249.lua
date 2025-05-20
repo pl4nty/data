@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
-if (string.find)(l_0_0, "document.xml") ~= nil then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 10240000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

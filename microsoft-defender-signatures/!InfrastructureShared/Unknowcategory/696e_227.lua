@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and peattributes.ismsil == true then
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:MacinstDownloader.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

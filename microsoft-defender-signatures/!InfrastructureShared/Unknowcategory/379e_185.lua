@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_has_msilresources") then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 ~= nil and l_0_0 > 50 and l_0_0 < 200 then
   return mp.INFECTED
 end
 return mp.CLEAN

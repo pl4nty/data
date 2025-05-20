@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "j2êê")
 return mp.INFECTED
 

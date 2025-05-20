@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.has_msilresources then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and (mp.get_mpattribute)("SIGATTR:OpensBHOKey") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_regval)(pe.REG_EDI, 1)
+return mp.INFECTED
 

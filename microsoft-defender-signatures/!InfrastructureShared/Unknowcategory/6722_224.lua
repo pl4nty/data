@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:TuguuInstaller.B")
+if peattributes.isexe == true and (pesecs[5]).Name == "memcpy_" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

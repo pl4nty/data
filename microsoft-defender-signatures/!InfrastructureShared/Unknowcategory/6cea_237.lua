@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("Suspicious:CraftedPE_Import") then
+  (mp.set_mpattribute)("Suspicious:CraftedFile_Import")
 end
 return mp.CLEAN
 

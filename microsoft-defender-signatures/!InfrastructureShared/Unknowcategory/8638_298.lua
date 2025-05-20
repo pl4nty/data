@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_4634")
-  ;
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k7_k8.2CCB")
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
+    if (string.find)(l_0_0, "^%d%d%d%d+$") then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

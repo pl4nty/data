@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 10 then
+if pehdr.ImageBase + pehdr.SizeOfHeaders < (hstrlog[1]).VA then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
 return mp.CLEAN
 

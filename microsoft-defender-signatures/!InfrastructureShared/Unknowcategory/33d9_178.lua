@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:Reboon") then
+if (mp.get_mpattribute)("MpIsWmiMofScan") then
   return mp.INFECTED
 end
 return mp.CLEAN

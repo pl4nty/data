@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_section_name then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 300 or l_0_0 < 100 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

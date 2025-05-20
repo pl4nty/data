@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 2 and ((pesecs[2]).Name == ".rdat" or (pesecs[2]).Name == ".rtxt") then
-  (mp.set_mpattribute)("HSTR:Virus:Win32/Nemim!mother")
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 36864 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

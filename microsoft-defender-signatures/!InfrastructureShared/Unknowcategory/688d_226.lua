@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.amd64_image and peattributes.no_security == true then
+if (pesecs[5]).Name == ".xdata" and (pesecs[5]).Characteristics == 1073741888 then
   return mp.INFECTED
 end
 return mp.CLEAN

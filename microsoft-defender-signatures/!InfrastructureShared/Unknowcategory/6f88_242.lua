@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (hstrlog[1]).matched and (hstrlog[2]).matched then
+if (mp.get_mpattribute)("NID:Trojan:Win64/StrelaStealer.MBXI!MTB") and (mp.get_mpattribute)("pea_isdll") then
   return mp.INFECTED
 end
 return mp.CLEAN

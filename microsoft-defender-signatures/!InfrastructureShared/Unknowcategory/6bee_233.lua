@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Dexel.B!Pra1") then
+if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_loadconfig == true then
   return mp.INFECTED
 end
 return mp.CLEAN

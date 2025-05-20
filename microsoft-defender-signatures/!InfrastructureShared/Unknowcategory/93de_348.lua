@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[4]).Name == ".ndata" and (pesecs[4]).Characteristics == 3221225600 and (mp.getfilesize)() >= 200000 and (mp.getfilesize)() <= 1000000 then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[3]).p1)
+  if (string.find)(l_0_1, l_0_0 .. ".exe", nil, true) then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

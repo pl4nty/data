@@ -3,41 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched == false or (this_sigattrlog[3]).utf8p1 == nil then
-  return mp.CLEAN
-end
-local l_0_0 = (this_sigattrlog[3]).utf8p1
-local l_0_1 = "\\wmiprvse.exe"
-local l_0_2 = (string.len)(l_0_1)
-local l_0_3 = false
-local l_0_4, l_0_5 = (bm.get_process_relationships)()
-for l_0_9,l_0_10 in ipairs(l_0_4) do
-  if l_0_10.image_path ~= nil then
-    local l_0_11 = (string.lower)(l_0_10.image_path)
-    if (mp.bitand)(l_0_10.reason_ex, 1) == 1 and l_0_2 < (string.len)(l_0_11) and (string.sub)(l_0_11, -l_0_2) == l_0_1 then
-      do
-        do
-          l_0_3 = true
-          do break end
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_STMT
-
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
+Infrastructure_AsrLinkScan = function(l_1_0)
+  -- function num : 0_0
+  (MpCommon.SetGlobalMpAttribute)("DefenderAsrLinkRescue")
+  if l_1_0 == "postsig" then
+    (MpDetection.ScanResource)("regkeyvalue://HKLM\\Software\\Microsoft\\ASRFix\\\\scriptresult")
+  else
+    if l_1_0 == "qscanmachine" or l_1_0 == "qscanuser" then
+      (MpDetection.ScanResource)("regkeyvalue://HKCU\\Software\\Microsoft\\ASRFix\\\\scriptresult")
+      ;
+      (MpDetection.ScanResource)("regkeyvalue://HKCU\\Software\\Microsoft\\ASRFix\\\\mptaskbarrecoverversion")
     end
   end
+  ;
+  (MpCommon.DeleteGlobalMpAttribute)("DefenderAsrLinkRescue")
 end
-if l_0_3 == false then
-  return mp.CLEAN
-end
-;
-(mp.ReportLowfi)(l_0_0, 2563793617)
-return mp.INFECTED
+
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.ismsil == true then
+if (hstrlog[1]).hitcount - 1 == (hstrlog[2]).hitcount then
   return mp.INFECTED
 end
 return mp.CLEAN

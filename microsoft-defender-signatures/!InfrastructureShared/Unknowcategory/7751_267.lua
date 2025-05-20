@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr, "\235-")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 47, "ù")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 55, "\235")
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 32768 and l_0_0 <= 720896 and (pesecs[4]).Name == ".text" and (pesecs[1]).Name == ".text" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

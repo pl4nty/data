@@ -3,10 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (pe.get_regval)(pe.REG_EAX) == 0 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 3, "4\000\000\000")
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "\015\133", 1, true) - 1, "êêêêêê")
-return mp.INFECTED
+if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -4,8 +4,8 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and peattributes.ismsil == true and l_0_0 >= 12288 and l_0_0 <= 86016 then
+if l_0_0 >= 290816 and l_0_0 <= 299008 and (mp.get_mpattribute)("ALF:Trojan:Win32/IcedId.PJ!MTB") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (hstrlog[4]).matched then
-  (mp.set_mpattribute)("HSTR:TrojanDownloader:Win32/Banload.gen!B.encryption_filtered")
+if peattributes.isexe == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.INFECTED
 
