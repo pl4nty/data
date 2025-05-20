@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:DirectHW.A")
+if peattributes.no_security and (peattributes.isexe or peattributes.isdll) then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

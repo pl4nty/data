@@ -3,7 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 11 and (pesecs[7]).Name == ".app0" and (pesecs[9]).Name == ".app1" and (pesecs[10]).Name == ".app2" then
+if not peattributes.isdll or not peattributes.hasexports then
+  return mp.CLEAN
+end
+local l_0_0 = 0
+if (hstrlog[1]).matched then
+  l_0_0 = (hstrlog[1]).hitcount
+end
+if l_0_0 >= 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

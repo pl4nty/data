@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 77824 and l_0_0 <= 86016 and (pehdr.NumberOfSections >= 5 or pehdr.NumberOfSections <= 7) then
+if (mp.get_mpattribute)("NID:Win64/DarkRat.PA") and peattributes.no_security == true and (mp.getfilesize)() >= 230000 and (mp.getfilesize)() <= 260000 then
   return mp.INFECTED
 end
 return mp.CLEAN

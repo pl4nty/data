@@ -3,21 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 == nil then
+do
+  if ((hstrlog[9]).matched and not (hstrlog[10]).matched) or (hstrlog[11]).matched then
+    local l_0_0, l_0_1 = 0 + 1 + 1 + 1
+  end
+  -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+  if mp.HSTR_WEIGHT >= 100 and l_0_0 >= 2 then
+    return mp.INFECTED
+  end
+  -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 >= 3 and (hstrlog[12]).matched then
+    return mp.INFECTED
+  end
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
   return mp.CLEAN
 end
-if (string.lower)(l_0_0.CompanyName) == "microsoft corporation" then
-  return mp.INFECTED
-end
-if (string.lower)(l_0_0.CompanyName) == "adobe corporation" then
-  return mp.INFECTED
-end
-if (string.lower)(l_0_0.CompanyName) == "pfu limited" then
-  return mp.INFECTED
-end
-if (string.lower)(l_0_0.CompanyName) == " scriptlogic corporation" then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

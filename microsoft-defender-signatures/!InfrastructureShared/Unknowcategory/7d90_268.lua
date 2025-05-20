@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 232 and epcode[6] == 233 and (mp.getfilesize)() > 94208 and (mp.getfilesize)() < 196608 then
+if peattributes.ismsil == true and peattributes.isexe == true and peattributes.hasexports == false and (mp.getfilesize)() < 24117248 then
   return mp.INFECTED
 end
 return mp.CLEAN

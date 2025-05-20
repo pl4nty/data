@@ -3,10 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-if peattributes.isexe == true or peattributes.isdll == true then
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+if R1_PC17 ~= nil and (pe.get_exports)() == 1 then
   return mp.INFECTED
 end
 return mp.CLEAN

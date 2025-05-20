@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("HSTR:VirTool:Win32/AscUrlExe") then
-  return mp.INFECTED
+if pevars.sigaddr ~= 4198400 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+return mp.INFECTED
 

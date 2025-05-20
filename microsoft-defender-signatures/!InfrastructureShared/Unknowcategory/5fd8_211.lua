@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and pehdr.Subsystem == 2 then
+if (hstrlog[4]).matched and (hstrlog[4]).hitcount > 5 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

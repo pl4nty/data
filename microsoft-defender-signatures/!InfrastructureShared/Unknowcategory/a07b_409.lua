@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0.command_line)
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, true, false) then
-    (mp.ReportLowfi)(l_0_6, 1834945633)
-  end
+if pevars.sigaddr ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+  return mp.CLEAN
 end
-return mp.INFECTED
+if (pe.query_import)(pe.IMPORT_STATIC, 214667374) and (mp.crc32)(-1, epcode, 17, 17) == 3988924912 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

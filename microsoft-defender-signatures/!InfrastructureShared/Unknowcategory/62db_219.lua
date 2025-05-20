@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.LOWFI
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

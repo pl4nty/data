@@ -3,38 +3,41 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  local l_0_0 = nil
+  -- DECOMPILER ERROR at PC15: Overwrote pending register: R1 in 'AssignReg'
+
+  local l_0_1 = nil
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == "" or l_0_1 == nil then
-  return mp.CLEAN
+do
+  local l_0_2, l_0_3 = nil
+  -- DECOMPILER ERROR at PC34: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC37: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC46: Confused about usage of register: R2 in 'UnsetPending'
+
+  if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or (this_sigattrlog[2]).utf8p2 == nil or nil ~= nil) and nil ~= nil and l_0_2 ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(nil)) do
+      local l_0_5, l_0_6 = nil
+      -- DECOMPILER ERROR at PC54: Confused about usage of register: R9 in 'UnsetPending'
+
+      R9_PC54 = (mp.ContextualExpandEnvironmentVariables)(R9_PC54)
+      if (sysio.IsFileExists)(R9_PC54) and R9_PC54 == l_0_2 and (sysio.IsFileExists)(l_0_5) then
+        (bm.add_related_file)(l_0_5)
+        ;
+        (bm.request_SMS)(l_0_3, "h+")
+        ;
+        (bm.add_action)("SingleProcessScan", 100)
+        return mp.INFECTED
+      end
+    end
+  end
+  do
+    return mp.CLEAN
+  end
 end
-local l_0_2 = (string.match)((string.lower)(l_0_1), "^(.-%.exe)")
-if l_0_2 == "" or l_0_2 == nil then
-  return mp.CLEAN
-end
-local l_0_3 = (string.match)(l_0_2, "([^\\]+)$")
-if l_0_3 == "" or l_0_3 == nil then
-  return mp.CLEAN
-end
-if l_0_3 ~= "explorer.exe" then
-  return mp.CLEAN
-end
-local l_0_4 = (mp.GetParentProcInfo)()
-if l_0_4 == nil then
-  return mp.CLEAN
-end
-if (string.lower)((string.match)(l_0_4.image_path, "\\([^\\]+)$")) ~= "razerinstaller.exe" then
-  return mp.CLEAN
-end
-local l_0_5 = (mp.GetProcessCommandLine)(l_0_4.ppid)
-if l_0_5 == "" or l_0_5 == nil then
-  return mp.CLEAN
-end
-if (string.find)((string.lower)(l_0_5), "razerinstaller%.exe[^/]+/showdevice$") == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

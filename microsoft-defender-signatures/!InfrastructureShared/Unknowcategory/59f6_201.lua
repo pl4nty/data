@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 332 then
-  (mp.changedetectionname)(805306517)
+if mp.HSTR_WEIGHT >= 6 and (mp.getfilesize)() < 2097152 then
   return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

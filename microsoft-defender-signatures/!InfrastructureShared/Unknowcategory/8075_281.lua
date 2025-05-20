@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 12 then
-  return mp.INFECTED
-else
-  if (hstrlog[3]).matched then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.INFECTED
+end
+;
+(mp.set_mpattribute)("SLF:Win32/BruterShell.A")
+return mp.LOWFI
 

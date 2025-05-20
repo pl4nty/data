@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).matched then
-  return mp.INFECTED
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "\235")
 ;
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-return mp.CLEAN
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

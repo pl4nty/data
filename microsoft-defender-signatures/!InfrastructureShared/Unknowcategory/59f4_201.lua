@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  (mp.changedetectionname)(805306475)
+if peattributes.x86_image and peattributes.has_msilresources then
   return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

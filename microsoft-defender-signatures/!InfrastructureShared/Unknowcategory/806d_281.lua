@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("PEPCODE:VirTool:Win32/VMProtect") then
+  return mp.INFECTED
 end
-if (string.lower)((string.sub)(l_0_0.image_path, -12)) ~= "explorer.exe" then
-  return mp.CLEAN
-end
-return mp.LOWFI
+return mp.CLEAN
 

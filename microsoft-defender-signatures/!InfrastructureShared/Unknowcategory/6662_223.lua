@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports and peattributes.no_security then
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:AoboKeylogger.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

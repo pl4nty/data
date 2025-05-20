@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 and (mp.getfilesize)() >= 9472 and (mp.getfilesize)() <= 20480 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (pe.get_exports)()
+for l_0_5 = 1, l_0_0 do
+  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "ServiceMain" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

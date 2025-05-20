@@ -3,20 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[1]).matched then
-  l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-else
-  if (this_sigattrlog[2]).matched then
-    l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  else
-    if (this_sigattrlog[3]).matched then
-      l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
+do
+  if peattributes.isdll then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 5447680 and l_0_0 < 7290880 and (pe.query_import)(pe.IMPORT_STATIC, 3164448353) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2744197095) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2717511079) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 537135066) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3293213921) ~= 0 then
+      return mp.INFECTED
     end
   end
+  return mp.CLEAN
 end
-if l_0_0 ~= nil and (string.len)(l_0_0) > 10 and (string.find)(l_0_0, "pskill", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

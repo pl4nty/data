@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[11]).Name == ".GSM_UTF" then
+if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 90112 then
   return mp.INFECTED
 end
 return mp.CLEAN

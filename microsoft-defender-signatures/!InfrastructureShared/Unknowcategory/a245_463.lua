@@ -3,21 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  if l_0_2 == "powershell.exe" or (string.find)(l_0_2, "^%d+%.exe") then
-    local l_0_3 = (mp.GetScannedPPID)()
-    if l_0_3 == nil then
-      return mp.CLEAN
-    end
-    ;
-    (MpCommon.RequestSmsOnProcess)(l_0_3, MpCommon.SMS_SCAN_LOW)
-    return mp.INFECTED
-  end
-end
-do
+if not peattributes.isexe and not peattributes.isdll then
   return mp.CLEAN
 end
+if (mp.getfilesize)() > 5000000 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
+local l_0_6 = pe.query_import
+if l_0_6(pe.IMPORT_STATIC, 933026593) == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports and (hstrlog[1]).VA - (hstrlog[2]).VA < 9472 then
+if mp.HSTR_WEIGHT == 2 and (pesecs[2]).PointerToRawData == 2701144064 and pehdr.SizeOfImage < (pesecs[2]).PointerToRawData then
   return mp.INFECTED
 end
 return mp.CLEAN

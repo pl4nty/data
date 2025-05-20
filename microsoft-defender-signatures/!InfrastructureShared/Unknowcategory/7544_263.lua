@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr, "\235+")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 45, "ù")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 53, "\235")
-return mp.INFECTED
+if peattributes.ismsil and peattributes.has_msilresources and (hstrlog[2]).hitcount > 300 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

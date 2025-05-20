@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetSSLCertificate)()
-if l_0_0 and l_0_0.Subject == l_0_0.Issuer then
-  local l_0_1 = l_0_0.Subject
-  local l_0_2, l_0_3 = (string.match)(l_0_1, ", OU=(.+), CN=(.+), EMAIL=(.+)")
-  if ", OU=(.+), CN=(.+), EMAIL=(.+)" == l_0_2 .. "@" .. l_0_3 then
-    return mp.INFECTED
-  end
-end
 do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((mp.utf16to8)((this_sigattrlog[1]).wp1))
+    if l_0_0 ~= nil and (string.find)(l_0_0, "\\%d+%.exe") ~= nil then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

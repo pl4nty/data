@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[5]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[5]).utf8p2)
-  if l_0_0 ~= nil and l_0_1 ~= nil and (string.find)(l_0_1, l_0_0, 1, true) then
-    return mp.INFECTED
-  end
-end
-do
+local l_0_0 = pehdr.ImageBase + ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).RVA
+if l_0_0 <= 0 then
   return mp.CLEAN
 end
+local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).Size
+local l_0_2 = (hstrlog[1]).VA
+if l_0_0 < l_0_2 and l_0_2 < l_0_0 + l_0_1 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

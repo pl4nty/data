@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_no_security") then
+local l_0_0 = ((mp.getfilename)(mp.FILEPATH_QUERY_FULL)):lower()
+if not l_0_0:find("assets/", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

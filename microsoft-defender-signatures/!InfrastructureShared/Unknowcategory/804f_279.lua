@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "\\lenovo\\visualdiscovery\\", 1, true) ~= nil then
-    return mp.INFECTED
-  end
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.LOWFI
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Colisi")
+if mp.HSTR_WEIGHT >= 4 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

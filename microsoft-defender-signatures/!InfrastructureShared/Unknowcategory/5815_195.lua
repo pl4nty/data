@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.no_security then
+if ((pehdr.DataDirectory)[1]).Size < 256 then
   return mp.INFECTED
 end
 return mp.CLEAN

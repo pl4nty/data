@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 then
+if pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1064000 then
   return mp.INFECTED
 end
 return mp.CLEAN

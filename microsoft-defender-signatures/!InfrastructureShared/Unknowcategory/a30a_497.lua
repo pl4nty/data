@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 and hstrlog[6] == 0 then
-  return mp.LOWFI
+if not (mp.get_mpattribute)("InEmail") then
+  return mp.CLEAN
 end
-if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 and (hstrlog[10]).hitcount == 0 and hstrlog[11] == 0 and hstrlog[12] == 0 then
-  return mp.LOWFI
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = ((mp.GetNormalizedScript)(l_0_0.is_header)):lower()
+if l_0_1 == nil or #l_0_1 < 600 then
+  return mp.CLEAN
 end
-return mp.INFECTED
+if (MpCommon.StringRegExpSearch)("\\+([\\w]+)\\((?:\\d+|0x[\\da-f]+)\\)((\\+\\1\\((?:\\d+|0x[\\da-f]+)\\)|\\+\'[\\w\\/\\+]+\')+)", l_0_1) == true and #l_0_1 > 600 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

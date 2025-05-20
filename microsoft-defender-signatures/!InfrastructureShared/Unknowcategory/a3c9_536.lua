@@ -3,8 +3,27 @@
 
 -- params : ...
 -- function num : 0
-if (((((((((((hstrlog[1]).matched and not (hstrlog[2]).matched) or (hstrlog[3]).matched) and not (hstrlog[4]).matched) or (hstrlog[5]).matched) and not (hstrlog[6]).matched) or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 >= 7) and (mp.getfilesize)() < 483328 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+    if l_0_7 == 1 then
+      local l_0_8, l_0_9 = (bm.get_process_relationships)(l_0_6.ppid)
+      for l_0_13,l_0_14 in ipairs(l_0_8) do
+        if l_0_14.image_path ~= nil then
+          local l_0_15 = (mp.bitand)(l_0_14.reason_ex, 1)
+          if l_0_15 == 1 then
+            local l_0_16 = (string.lower)(l_0_14.image_path)
+            if (string.find)(l_0_16, "excel.exe", 1, true) or (string.find)(l_0_16, "winword.exe", 1, true) then
+              return mp.INFECTED
+            end
+          end
+        end
+      end
+    end
+  end
 end
-return mp.CLEAN
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC67: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
 

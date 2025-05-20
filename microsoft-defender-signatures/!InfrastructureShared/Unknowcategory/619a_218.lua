@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Bundlore.K")
+if peattributes.isexe and (pesecs[1]).Name == "   " then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

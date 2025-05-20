@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:(ActiveMime)") or (mp.get_mpattribute)("PACKED_WITH:(Base64)") then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "¹ğ\127\a\000\144")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 110, "")
+return mp.INFECTED
 

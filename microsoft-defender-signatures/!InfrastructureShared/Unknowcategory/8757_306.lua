@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 65 and epcode[2] == 85 and epcode[3] == 81 and epcode[4] == 156 and peattributes.isdll then
+if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 168 and peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 410000 and pehdr.NumberOfSections == 3 and pevars.epsec == 1 then
-  (mp.set_mpattribute)("attrmatch_rescan_psif")
+if peattributes.isexe and peattributes.ismsil and peattributes.has_msilresources and peattributes.x86_image and peattributes.suspicious_number_of_dirs then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

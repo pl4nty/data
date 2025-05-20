@@ -3,19 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 ~= nil then
-  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-    if (sysio.IsFileExists)(l_0_6) then
-      (bm.add_related_file)(l_0_6)
-    end
-  end
+local l_0_0 = (bm.get_connection_string)()
+if l_0_0:find("DestIp=185.22.172.157;", 1, true) or l_0_0:find("DestIp=91.121.222.184;", 1, true) or l_0_0:find("DestIp=185.22.172.69;", 1, true) or l_0_0:find("DestIp=185.18.53.247;", 1, true) then
+  return mp.INFECTED
 end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.INFECTED
-  return l_0_1
-end
+return mp.CLEAN
 

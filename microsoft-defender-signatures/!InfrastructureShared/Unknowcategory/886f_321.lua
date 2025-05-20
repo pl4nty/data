@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if (string.find)(l_0_0, "\\programdata\\", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if pehdr.NumberOfSections == 10 and (pesecs[9]).PointerToRawData == 1536 and pehdr.Machine == 332 and pehdr.Subsystem == 2 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Zusy.RX!MTB") then
+if peattributes.x86_image and peattributes.no_security then
   return mp.INFECTED
 end
 return mp.CLEAN

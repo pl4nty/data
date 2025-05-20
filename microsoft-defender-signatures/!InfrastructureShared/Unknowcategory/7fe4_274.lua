@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "winword.exe" then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (mp.GetSMSProcArchitecture)() ~= mp.SMS_PROC_ARCH_X32 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

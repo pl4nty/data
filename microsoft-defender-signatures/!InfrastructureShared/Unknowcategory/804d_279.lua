@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
+if (mp.get_mpattribute)("SIGATTR:DeleteMyAppExe") and (mp.get_mpattribute)("SIGATTR:DropMZ") and (mp.get_mpattribute)("SIGATTR:WRITESYSDIR") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

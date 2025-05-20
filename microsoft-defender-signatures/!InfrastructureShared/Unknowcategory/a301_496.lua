@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (peattributes.isexe ~= true or ((pesecs[1]).Name ~= "UPX0" and (pesecs[1]).Name ~= ".text") or ((pesecs[2]).Name ~= "UPX1" and (pesecs[2]).Name ~= ".bss") or (mp.get_mpattribute)("pea_no_security")) then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 20), "|", 1, true) - 1
+if (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "t\005", 1, true) == nil then
+  local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "u\002", 1, true) - 2 - l_0_0 - 1
+  local l_0_2 = (string.format)("\235%s", (string.char)(l_0_1))
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_0, l_0_2)
+  return mp.INFECTED
 end
 

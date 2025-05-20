@@ -3,8 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and epcode[1] == 104 and epcode[2] == 15 and peattributes.hasexports == true and pehdr.AddressOfEntryPoint == 12647710 and (pesecs[4]).Name == ".data020" and (pesecs[5]).Name == ".data021" and (mp.getfilesize)() >= 6000000 and (mp.getfilesize)() <= 7000000 then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+
+      if (sysio.IsFileExists)(R6_PC25) and (string.find)(".hta", (string.sub)((string.lower)(R6_PC25), -4), 1, true) then
+        (bm.add_threat_file)(R6_PC25)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
 

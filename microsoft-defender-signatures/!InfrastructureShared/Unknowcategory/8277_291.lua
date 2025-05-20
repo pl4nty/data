@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "\249\000t", 1, true) + 1, "\235")
+(bm.set_scan_param)((mp.bitor)((mp.bitor)(bm.SCAN_PARAMETERS_DEEP_ANALYSIS, bm.SCAN_PARAMETERS_VMM_GROW), bm.SCAN_PARAMETERS_HSTR_EXHAUSTIVE))
 return mp.INFECTED
 

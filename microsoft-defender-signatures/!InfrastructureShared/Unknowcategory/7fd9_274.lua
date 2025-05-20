@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-;
-(table.insert)(l_0_0, (bm.get_imagepath)())
-;
-(MpCommon.SetPersistContextNoPath)("UACBypassExp.ZK!dllhost", l_0_0, 3)
+if peattributes.isdll and peattributes.hasexports and (hstrlog[1]).VA - (hstrlog[2]).VA < 9472 then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

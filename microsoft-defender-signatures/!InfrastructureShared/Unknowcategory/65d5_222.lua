@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+if (mp.getfilesize)() < 1000 and (mp.get_mpattribute)("BM_TEXT_FILE") then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

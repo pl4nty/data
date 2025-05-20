@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if MpCommon.SECURITY_MANDATORY_HIGH_RID <= ((bm.get_current_process_startup_info)()).integrity_level then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0 ~= nil and (string.find)(l_0_0, "\\w64time.dll", 1, true) == nil then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

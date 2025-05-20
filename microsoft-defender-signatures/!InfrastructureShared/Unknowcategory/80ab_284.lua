@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) and ((hstrlog[4]).matched or (hstrlog[5]).matched) then
+if pehdr.NumberOfSections == 5 and pehdr.SizeOfImage >= 20480 and pehdr.SizeOfImage <= 131072 and (mp.getfilesize)() >= 1048576 then
   return mp.INFECTED
 end
 return mp.CLEAN

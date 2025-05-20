@@ -3,22 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 then
-    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    if l_0_1 ~= nil then
-      for l_0_5,l_0_6 in ipairs(l_0_1) do
-        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-        ;
-        (bm.add_related_file)(l_0_6)
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if l_0_0:find(":\\users", 1, true) ~= nil or l_0_0:find(":\\windows", 1, true) ~= nil then
+      if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
+        (bm.add_related_file)(l_0_0)
       end
+      return mp.INFECTED
     end
   end
-end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+  return mp.CLEAN
 end
 

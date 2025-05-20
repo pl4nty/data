@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image and peattributes.isexe then
-  (mp.set_mpattribute)("HSTR:VirTool:Win64/Obfuscator.AKO")
+if mp.HSTR_WEIGHT >= 13 then
   return mp.INFECTED
+end
+if mp.HSTR_WEIGHT >= 12 then
+  (mp.set_mpattribute)("HSTR:BrowserModifier:Win32/YahooSearch.C!Cby")
 end
 return mp.CLEAN
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() > 800000 and (mp.getfilesize)() < 950000 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.sub)(l_0_0, -13) == "uninstall.exe" or (string.sub)(l_0_0, -15) == "uninstaller.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

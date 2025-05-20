@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)(l_0_6.image_path, "\\jumpcloud-agent.exe", 1, true) or (string.find)(l_0_6.image_path, "\\icinga2.exe", 1, true) or (string.find)(l_0_6.image_path, "\\plesksrv.exe", 1, true)) then
-    return mp.CLEAN
-  end
+if (pe.mmap_va)(pevars.sigaddr + 9, 1) == "\000" or (pe.mmap_va)(pevars.sigaddr + 9, 1) == "\001" or (pe.mmap_va)(pevars.sigaddr + 9, 1) == "\016" then
+  (pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 16, "êê")
+  ;
+  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

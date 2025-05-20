@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil and l_0_0.image_path ~= nil and (string.lower)((string.sub)(l_0_0.image_path, -9)) == "httpd.exe" then
-  return mp.INFECTED
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 153600 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

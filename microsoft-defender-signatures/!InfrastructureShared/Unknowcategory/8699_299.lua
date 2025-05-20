@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true or peattributes.isdll == true and (pesecs[6]).Name == "TqwuH" and (pesecs[6]).Characteristics == 3221225536 then
+if (mp.get_mpattribute)("BM_MZ_FILE") and pehdr.NumberOfSections > 8 and (pesecs[6]).VirtualSize > 2097152 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 5376 then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+do
+  if l_0_0 ~= nil and l_0_0 >= 20480000 then
+    local l_0_1 = (pe.get_versioninfo)()
+    if not l_0_1 then
+      return mp.CLEAN
+    end
+    if not l_0_1.CompanyName then
+      return mp.CLEAN
+    end
+    if l_0_1.CompanyName == "Microsoft Corporation" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

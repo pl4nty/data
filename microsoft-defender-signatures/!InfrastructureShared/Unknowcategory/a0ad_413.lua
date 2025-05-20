@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
+if peattributes.isexe and (pe.isdynamic_va)(pevars.sigaddr) == false then
+  local l_0_0 = pevars.sigaddr + 7
+  local l_0_1 = pevars.sigaddr + 26
+  local l_0_2 = (pe.vm_search)(l_0_0, l_0_1, "u\184+", nil, pe.VM_SEARCH_FOP)
+  ;
+  (pe.mmap_patch_va)(l_0_2, "")
+  ;
+  (pe.mmap_patch_va)(l_0_2 + 7, "")
+  return mp.LOWFI
+end
 do
-  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 9472 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  return mp.LOWFI
 end
 

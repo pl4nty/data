@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "mmc.exe" and (versioning.IsSeville)() then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
+local l_0_1 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 5, 1))
+if l_0_0 + l_0_1 == 87 or l_0_1 - l_0_0 == 87 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

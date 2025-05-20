@@ -3,7 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("SIGATTR:MSIL/LoadPEBase64.J") then
+if mp.HSTR_WEIGHT == 20 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT == 22 then
   return mp.INFECTED
 end
 return mp.CLEAN

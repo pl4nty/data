@@ -3,12 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 20 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
-end
-if mp.HSTR_WEIGHT == 22 then
+if pehdr.NumberOfSections == 4 and (pesecs[4]).SizeOfRawData == 75776 and (pesecs[4]).PointerToRawData == 91648 then
   return mp.INFECTED
 end
 return mp.CLEAN

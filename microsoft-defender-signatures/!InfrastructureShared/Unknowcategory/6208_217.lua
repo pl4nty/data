@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (versioning.IsSeville)() and (versioning.GetCloudBlockLevel)() >= 4 then
+if (mp.getfilesize)() < 1048000 and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

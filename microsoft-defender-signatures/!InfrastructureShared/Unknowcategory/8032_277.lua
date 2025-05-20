@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("Lua:DelphiHeuristicsThrottle") and (mp.getfilesize)() < 1843200 then
   return mp.INFECTED
-end
-if (hstrlog[1]).matched then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.CLEAN
 

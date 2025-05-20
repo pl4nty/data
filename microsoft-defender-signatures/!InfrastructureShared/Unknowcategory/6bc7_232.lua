@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%->%(RarSfx%)%->%w+%.exe%->%(RarSfx%)") == nil then
-  return mp.CLEAN
+if peattributes.ismsil and peattributes.amd64_image and peattributes.requests_elevation then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

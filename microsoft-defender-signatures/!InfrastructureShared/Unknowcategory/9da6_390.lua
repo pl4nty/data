@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 11 then
-  (mp.set_mpattribute)("PUA:Block:NheqMiner")
-  return mp.INFECTED
+local l_0_0 = (mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 3, 4), 1), 4), 1)
+local l_0_1 = (pe.get_api_id)(l_0_0)
+if l_0_1 ~= 3267971814 then
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_nheqminer")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_nheqminer")
-end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 34, "êê")
+return mp.INFECTED
 

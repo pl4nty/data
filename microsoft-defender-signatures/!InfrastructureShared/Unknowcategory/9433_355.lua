@@ -3,15 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 == nil or l_0_0 > 500 then
+  return mp.CLEAN
+end
+if headerpage == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetBruteMatchData)()
+if l_0_1 == nil or l_0_1.match_offset == nil then
+  return mp.CLEAN
+end
+if l_0_0 - 12 <= l_0_1.match_offset and headerpage[l_0_0] == 0 then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT > 3 and (mp.get_mpattribute)("HSTR:Fareit.gen") then
-  return mp.INFECTED
-end
-;
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-return mp.LOWFI
+return mp.CLEAN
 

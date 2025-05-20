@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
 ;
-(mp.set_mpattribute)("attrmatch_rescan_psif")
-;
-(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
+(bm.add_threat_file)(l_0_0)
 return mp.INFECTED
 

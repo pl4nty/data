@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 and (mp.crc32)(-1, epcode, 1, 15) == 183454422 then
+if (mp.get_mpattribute)("pea_isexe") and peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

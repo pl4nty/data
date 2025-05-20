@@ -3,12 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_HIGH)
-  ;
-  (mp.SMSAsyncScan)(l_0_0.ppid)
-  return mp.LOWFI
+do
+  if (mp.getfilesize)() <= 4096 then
+    local l_0_0 = nil
+    l_0_0 = (mp.getfilename)()
+    if l_0_0 == nil then
+      return mp.CLEAN
+    end
+    if l_0_0:sub(-19) == "->word/document.xml" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

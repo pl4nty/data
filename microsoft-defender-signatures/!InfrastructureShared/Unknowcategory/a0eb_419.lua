@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.BaseOfData == 0 and pehdr.SizeOfInitializedData == 0 and pehdr.SizeOfUninitializedData == 0 and pehdr.SizeOfCode == 0 and (hstrlog[1]).VA - pehdr.ImageBase - (pesecs[1]).VirtualAddress == 4336 then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -19) == "\\browser_broker.exe" or (string.sub)(l_0_0, -13) == "\\explorer.exe" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

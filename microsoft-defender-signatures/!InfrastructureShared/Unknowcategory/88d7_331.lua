@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (hstrlog[6]).matched and (hstrlog[7]).matched then
-    local l_0_0 = mp.HSTR_WEIGHT - 2
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 >= 5 then
-    return mp.INFECTED
-  end
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_vbinject_ky")
-  return mp.CLEAN
+if (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())) == (string.lower)((mp.utf16to8)((this_sigattrlog[3]).wp1)) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

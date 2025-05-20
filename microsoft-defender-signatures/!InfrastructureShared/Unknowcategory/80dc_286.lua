@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 8 then
-  return mp.INFECTED
-else
-  if mp.HSTR_WEIGHT >= 6 then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    ;
-    (pe.reemulate)()
-  end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if (string.lower)((string.sub)(l_0_0.image_path, -14)) == "rmmservice.exe" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

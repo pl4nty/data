@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount + (hstrlog[2]).hitcount + (hstrlog[3]).hitcount + (hstrlog[4]).hitcount >= 5 then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "androidmanifest", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.isdll == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_spector")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_spector")
 end
 return mp.INFECTED
 

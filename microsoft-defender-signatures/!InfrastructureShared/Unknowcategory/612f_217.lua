@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 256 and (mp.get_mpattribute)("InEmail") then
+if (pesecs[3]).Name == ".qhw" or (pesecs[2]).Name == "DrtWJgcR" then
   return mp.INFECTED
 end
 return mp.CLEAN

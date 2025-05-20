@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil and ((string.find)(l_0_0.image_path, "java.exe", -8, true) or (string.find)(l_0_0.image_path, "java", -4, true)) then
-  return mp.INFECTED
+do
+  if peattributes.isdll == true and peattributes.hasexports == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    if l_0_0 ~= nil and #l_0_0 > 0 and (mp.IsTrustedFile)() then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

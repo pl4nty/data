@@ -15,10 +15,10 @@ end
 if ((pehdr.DataDirectory)[1]).RVA <= 0 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[1]).Size <= 0 then
+if ((pehdr.DataDirectory)[1]).Size < 32 then
   return mp.CLEAN
 end
-if ((pehdr.DataDirectory)[1]).Size >= 256 then
+if ((pehdr.DataDirectory)[1]).Size > 256 then
   return mp.CLEAN
 end
 if ((pehdr.DataDirectory)[5]).RVA ~= 0 then
@@ -57,17 +57,17 @@ end
 if (mp.readu_u32)(l_0_0, 17) ~= 1 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(l_0_0, 21) ~= 4 then
+if (mp.readu_u32)(l_0_0, 21) ~= 5 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(l_0_0, 25) ~= 4 then
+if (mp.readu_u32)(l_0_0, 25) ~= 5 then
   return mp.CLEAN
 end
 if (mp.readu_u32)(l_0_0, 29) <= 0 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 2)
-if (mp.crc32)(-1, l_0_1, 1, 2) ~= 3038897196 then
+local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 18)
+if (mp.crc32)(-1, l_0_1, 1, 10) ~= 3287701648 then
   return mp.CLEAN
 end
 return mp.INFECTED

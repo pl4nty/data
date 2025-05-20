@@ -3,6 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "Iƒù", 1, true) + 3, "")
-return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(0, l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if l_0_1:gsub("%+%$", "") > 20 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

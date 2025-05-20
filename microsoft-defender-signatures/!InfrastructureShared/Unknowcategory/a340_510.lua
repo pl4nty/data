@@ -3,19 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[3]).utf8p1
-if l_0_0 == nil then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4000 then
   return mp.CLEAN
 end
-l_0_0 = (string.lower)(l_0_0)
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find(".bin", 1, true) or l_0_1:find("\\payload", 1, true) or l_0_1:find("\\loader", 1, true) or l_0_1:find("\\sbx", 1, true) or l_0_1:find("\\sbe", 1, true) then
+  return mp.INFECTED
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
-end
-return mp.INFECTED
+return mp.CLEAN
 

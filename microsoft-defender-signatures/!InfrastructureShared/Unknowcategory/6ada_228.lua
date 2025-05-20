@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[7]).Name == ".taggant" and (pesecs[7]).Characteristics == 3758096448 then
-  return mp.INFECTED
+if (string.lower)((string.sub)((mp.getfilename)(), -3)) == "r2w" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

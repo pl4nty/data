@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and peattributes.x86_image then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

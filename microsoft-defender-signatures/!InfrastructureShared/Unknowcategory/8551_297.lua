@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "workbook.bin", 1, true) ~= nil and (mp.getfilesize)() < 1000 then
   return mp.INFECTED
 end
-if (mp.get_mpattribute)("Tracur_decryption") then
-  return mp.INFECTED
-end
-;
-(mp.set_mpattribute)("HSTR:Tracur_Antiemu")
-return mp.LOWFI
+return mp.CLEAN
 

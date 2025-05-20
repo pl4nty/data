@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 2 then
-  (mp.set_mpattribute)("HSTR:Sindomorl.D1")
+if peattributes.isdll == true and peattributes.hasexports == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

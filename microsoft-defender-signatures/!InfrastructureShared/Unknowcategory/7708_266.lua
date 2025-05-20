@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isexe == true or peattributes.isdll == true) and (mp.getfilesize)() < 2097152 and peattributes.no_security == true then
+if pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 8 and (pesecs[1]).VirtualAddress == 4096 then
   return mp.INFECTED
 end
 return mp.CLEAN

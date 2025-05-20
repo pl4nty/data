@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount >= 3 and ((hstrlog[2]).hitcount >= 4 or (hstrlog[3]).hitcount >= 4) then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr + 25, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 52, "")
+return mp.INFECTED
 

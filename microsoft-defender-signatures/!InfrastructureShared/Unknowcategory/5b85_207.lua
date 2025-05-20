@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() < 3000000 then
+if peattributes.no_resources and peattributes.suspicious_dosheader then
   return mp.INFECTED
 end
 return mp.CLEAN

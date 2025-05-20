@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 5 and pehdr.SizeOfImage >= 20480 and pehdr.SizeOfImage <= 131072 and (mp.getfilesize)() >= 1048576 then
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
+else
   return mp.INFECTED
 end
 return mp.CLEAN

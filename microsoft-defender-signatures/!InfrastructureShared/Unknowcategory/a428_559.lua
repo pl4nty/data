@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LowFiDropboxUnderWin") and (mp.get_mpattribute)("SIGATTR:ASEP") then
+if not (mp.get_mpattribute)("//AGGR:OleFile") and not (mp.get_mpattribute)("Lua:FileSizeLT2000") then
+  return mp.CLEAN
+end
+local l_0_0 = (string.lower)(tostring(footerpage))
+local l_0_1, l_0_2, l_0_3 = (string.find)(l_0_0, "(<a href%=\"http.-\">https%://businessonline%.o2%.co%.uk/)")
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+if (string.match)(l_0_3, "<a href%=\"https%://businessonline%.o2%.co%.uk/.-\">https%://businessonline%.o2%.co%.uk/") == nil then
   return mp.INFECTED
 end
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

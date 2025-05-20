@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("ALF:HSTR:Trojan:Win32/FauppodPDB.S010") then
+if (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 2048000 and peattributes.no_security == true then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Trojan:Win32/Fauppod.SA")
-return mp.LOWFI
+return mp.CLEAN
 

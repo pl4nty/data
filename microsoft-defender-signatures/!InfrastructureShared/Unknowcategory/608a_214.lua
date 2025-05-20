@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Hula.A")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("CODEPATCH:CheckStackValGetModuleHandle")
+return mp.INFECTED
 

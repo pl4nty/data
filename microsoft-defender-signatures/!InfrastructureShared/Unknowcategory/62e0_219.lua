@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.no_security then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.LOWFI
 end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

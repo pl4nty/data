@@ -5,7 +5,7 @@
 -- function num : 0
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
   local l_0_0 = nil
 else
   do

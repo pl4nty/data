@@ -4,9 +4,9 @@
 -- params : ...
 -- function num : 0
 do
-  if (mp.get_mpattribute)("LUA:FileSizeLE80000.A") and (mp.get_mpattribute)("Lua:FileSizeGEC350") and (mp.get_mpattribute)("BM_DropperObfuscatorUR") and (mp.get_mpattribute)("MpHasExpensiveLoop") and pehdr.TimeDateStamp ~= 0 then
-    local l_0_0 = (MpCommon.GetCurrentTimeT)()
-    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 2592000 then
+  if peattributes.isdll then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 5447680 and l_0_0 < 6164480 and (pe.query_import)(pe.IMPORT_STATIC, 3164448353) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2744197095) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2717511079) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 537135066) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3293213921) ~= 0 then
       return mp.INFECTED
     end
   end

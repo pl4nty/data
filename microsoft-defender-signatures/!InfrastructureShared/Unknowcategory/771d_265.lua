@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2560000 and pehdr.NumberOfSections == 5 and (pesecs[5]).Name == "" then
-  return mp.INFECTED
+if (mp.bitand)(mp.HSTR_WEIGHT, 248) >= 8 then
+  if (mp.bitand)(mp.HSTR_WEIGHT, 7) >= 1 then
+    return mp.INFECTED
+  end
+  return mp.LOWFI
 end
 return mp.CLEAN
 

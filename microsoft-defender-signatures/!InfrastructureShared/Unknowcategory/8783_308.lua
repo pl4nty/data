@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  local l_0_2 = nil
-  if #{l_0_2:match("/D:(%d+)%.(%d+)%.(%d+)%.(%d+)")} == 4 then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
-end
+local l_0_1 = nil
+local l_0_0 = (pe.get_regval)(pe.REG_ECX) - (4294967295 - (pe.get_regval)(pe.REG_EBX))
+;
+(pe.set_regval)(pe.REG_EAX, 0)
+;
+(pe.set_regval)(pe.REG_EBX, l_0_1)
+;
+(pe.set_regval)(pe.REG_ECX, l_0_0)
+return mp.CLEAN
 

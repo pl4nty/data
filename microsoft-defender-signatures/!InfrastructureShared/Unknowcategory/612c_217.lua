@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%-%>%(VFS%:%d+%.bat%)$") == nil then
-  return mp.CLEAN
+if (mp.get_mpattribute)("InEmail") then
+  (mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
 end
 return mp.INFECTED
 

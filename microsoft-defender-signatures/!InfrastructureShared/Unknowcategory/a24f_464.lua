@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if ((string.lower)((bm.get_imagepath)())):find("svchost.exe") then
-  l_0_1 = (string.match)((this_sigattrlog[2]).utf8p1, "\\%l%l%l%l%l%l%l%l%.exe")
-  if l_0_1 ~= nil then
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2107638873)
-    return mp.INFECTED
-  end
+local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+if (l_0_0 == nil and l_0_0:len() < 12) or l_0_1 == nil then
+  return mp.CLEAN
+end
+if not l_0_1:find(">word/", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:sub(-4) == ".xml" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-    if l_0_0 ~= nil then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2107638873)
+  if pehdr.Subsystem ~= 1 and ((pehdr.DataDirectory)[1]).Size < 256 then
+    local l_0_0 = (string.lower)((mp.getfilename)())
+    if l_0_0 ~= nil and l_0_0:find("\\system", 1, true) == nil and l_0_0:find("program files", 1, true) == nil then
       return mp.INFECTED
     end
   end

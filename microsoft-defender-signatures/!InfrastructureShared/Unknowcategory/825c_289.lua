@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.no_security and peattributes.x86_image and peattributes.has_msilresources then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p1
+    ;
+    (mp.TriggerScanResource)("file", l_0_0, 0)
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

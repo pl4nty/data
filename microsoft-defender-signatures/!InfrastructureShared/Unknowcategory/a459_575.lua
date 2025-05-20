@@ -3,22 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
+      if (sysio.IsFileExists)(R6_PC25) and (string.find)((string.lower)(R6_PC25), "%.jar") ~= nil then
+        (bm.add_related_file)(R6_PC25)
+        ;
+        (bm.add_threat_file)(R6_PC25)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1500000 or l_0_0 < 8000 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("system32", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("syswow64", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

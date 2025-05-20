@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 13, "\001\000\000\000")
-return mp.INFECTED
+if peattributes.x86_image and peattributes.isexe then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

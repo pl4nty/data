@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and (mp.getfilesize)() < 600000 then
+if peattributes.isdamaged == true and (mp.get_mpattribute)("SLF:Win64/CobPipe.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

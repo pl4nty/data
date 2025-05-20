@@ -3,10 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.dt_error_not_enough_memory then
-  (pe.set_peattribute)("enable_vmm_grow", true)
-  ;
-  (pe.reemulate)()
+if (hstrlog[6]).matched then
+  (mp.changedetectionname)(805306431)
+else
+  if (hstrlog[7]).matched then
+    (mp.changedetectionname)(805306444)
+  end
 end
 return mp.INFECTED
 

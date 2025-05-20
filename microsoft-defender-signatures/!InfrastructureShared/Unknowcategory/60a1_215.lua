@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:Viser.B")
+  (mp.set_mpattribute)("PUA:Block:Utchi.A")
   return mp.INFECTED
 end
 return mp.LOWFI

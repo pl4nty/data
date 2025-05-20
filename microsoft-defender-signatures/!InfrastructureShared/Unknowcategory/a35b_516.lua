@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or pevars.epsec ~= 1 or (pesecs[pevars.epsec]).Name ~= ".text" or (pesecs[2]).Name ~= ".data" or (pesecs[3]).Name ~= ".rsrc" or not peattributes.no_decription or peattributes.suspicious_image_version) then
+if peattributes.isexe == true and epcode[1] == 104 and epcode[2] == 15 and peattributes.hasexports == true and pehdr.AddressOfEntryPoint == 12647710 and (pesecs[4]).Name == ".data020" and (pesecs[5]).Name == ".data021" and (mp.getfilesize)() >= 6000000 and (mp.getfilesize)() <= 7000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

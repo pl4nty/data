@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 8388608 or l_0_0 > 17825792 then
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if (string.find)(l_0_0, "\\\\(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)\\") then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("HSTR:PYINSTALLER") and (mp.get_mpattribute)("HSTR:Linux/NativeAPIDirectoryEnumuerate.A") then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

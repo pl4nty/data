@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.ismsil == true and peattributes.isexe == true then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->(pdf", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

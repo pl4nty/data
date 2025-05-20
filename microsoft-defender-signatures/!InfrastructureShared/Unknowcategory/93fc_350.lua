@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") and (mp.get_mpattribute)("MpExcelFormulaRoutines") and (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 124160 and pehdr.NumberOfSections == 5 and (pesecs[4]).Name == ".zdata" then
   return mp.INFECTED
 end
 return mp.CLEAN

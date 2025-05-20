@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if epcode[1] == 65 and epcode[2] == 85 and epcode[3] == 81 and epcode[4] == 156 and peattributes.isdll then
+  return mp.INFECTED
 end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-;
-(MpCommon.SetPersistContextNoPath)("MiKatzExe", l_0_1, 100)
-return mp.INFECTED
+return mp.CLEAN
 

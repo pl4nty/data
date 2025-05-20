@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 2048000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 3695440085)
+return mp.INFECTED
 

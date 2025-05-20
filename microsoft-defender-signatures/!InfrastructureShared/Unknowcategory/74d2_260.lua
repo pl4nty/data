@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.get_versioninfo)()).InternalName == "Bluthmon.exe" and ((pe.get_versioninfo)()).CompanyName == "Mototech.co" then
-  return mp.INFECTED
+if not peattributes.hasappendeddata then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if not peattributes.isvbpcode then
+  return mp.CLEAN
+end
+if not peattributes.dirty_wx_branch then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

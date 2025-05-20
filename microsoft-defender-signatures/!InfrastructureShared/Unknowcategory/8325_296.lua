@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 238593 then
-  if mp.HSTR_WEIGHT == 11 then
-    return mp.SUSPICIOUS
-  end
-  if mp.HSTR_WEIGHT == 10 then
-    return mp.LOWFI
-  end
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 65536 and l_0_0 <= 131072 and (mp.get_mpattribute)("NID:Buran.A!Pra1") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

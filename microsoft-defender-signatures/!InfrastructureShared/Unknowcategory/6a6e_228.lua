@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 2048 and (mp.get_mpattribute)("PACKED_WITH:[Eval]") then
+local l_0_0 = (mp.getfilename)()
+if (string.find)((string.lower)(l_0_0), ".asar$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 19, "3\246")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 30, "\000\001\000")
-return mp.INFECTED
+if pehdr.NumberOfSections == 10 and (pesecs[6]).Name == "WET_J" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

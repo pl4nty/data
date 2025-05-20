@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[2]).Name == "UPX1" and (pesecs[4]).Name == "RlrtPtYn" and (pesecs[6]).Name == "NcbEZQRw" and (pesecs[13]).Name == "XeCVTXdm" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 22, "êê")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

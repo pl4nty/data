@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll and peattributes.hasexports then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 122880 and l_0_0 < 358400 and (pe.get_exports_count)() == 1 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("com.atlassian.applinks.", 1, true) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

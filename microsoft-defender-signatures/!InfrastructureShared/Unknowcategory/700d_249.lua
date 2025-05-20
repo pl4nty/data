@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 30000 then
-  return mp.CLEAN
+if pehdr.NumberOfSections == 8 then
+  (pe.set_image_filename)("\"myapp.exe\" /install")
+  ;
+  (pe.reemulate)()
 end
 return mp.INFECTED
 

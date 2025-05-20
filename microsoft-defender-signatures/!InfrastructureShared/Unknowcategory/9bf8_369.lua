@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  if (string.lower)((string.sub)(l_0_0, -14)) == "\\gvfs\\gvfs.exe" then
+    return mp.CLEAN
+  end
+  if (string.lower)((string.sub)(l_0_0, -36)) == "\\urbrowser\\application\\urbrowser.exe" then
+    return mp.CLEAN
+  end
 end
-if peattributes.isexe == true and pehdr.NumberOfSections == 9 and (pesecs[4]).Name == "seg1" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

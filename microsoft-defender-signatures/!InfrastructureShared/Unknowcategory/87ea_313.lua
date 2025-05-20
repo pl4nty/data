@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RW!MTB") and (mp.getfilesize)() < 250000 and (mp.getfilesize)() > 220000 and peattributes.isexe then
-  return mp.INFECTED
+if (mp.getfilesize)() > 1000000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pesecs[1]).Name == "UPX0" then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 15000)
+return mp.INFECTED
 

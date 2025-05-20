@@ -3,17 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[5]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 then
-  return mp.CLEAN
-end
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 20), "u", 1, true) - 1
+local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "t", 1, true) - l_0_0 - 1
+local l_0_2 = (string.format)("\235%s", (string.char)(l_0_1))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, l_0_2)
 return mp.INFECTED
 

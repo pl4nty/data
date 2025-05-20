@@ -1181,7 +1181,7 @@ GetPathExclusions = function()
     l_3_1 = (string.lower)(l_3_1)
   end
   do
-    if l_3_1 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (versioning.IsSampled)(40000, false, true, true) == true then
+    if l_3_1 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (versioning.IsSampled)(60000, false, true, true) == true then
       local l_3_2 = "%localappdata%\\microsoft\\olk\\cache\\microsoftedgewebview2setup.exe"
       l_3_0[l_3_2] = 1
       l_3_2 = "%userprofile%\\appdata\\local\\microsoft\\olk\\cache\\microsoftedgewebview2setup.exe"

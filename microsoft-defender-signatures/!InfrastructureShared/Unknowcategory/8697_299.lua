@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 976800 and (mp.getfilesize)() < 1330584 and (pesecs[5]).Name == "INIT" and (pesecs[5]).Characteristics == 3791650848 then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("CoreAPI.py", 1, true) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

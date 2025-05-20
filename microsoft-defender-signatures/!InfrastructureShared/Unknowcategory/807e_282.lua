@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 4 and (pesecs[4]).SizeOfRawData == 75776 and (pesecs[4]).PointerToRawData == 91648 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 55, "êê")
+;
+(pe.set_regval)(pe.REG_EAX, (pe.get_regval)(pe.REG_EAX) - 1)
+return mp.LOWFI
 

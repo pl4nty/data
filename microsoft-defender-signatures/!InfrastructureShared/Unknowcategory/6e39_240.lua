@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:ExcelFormulaRoutines") and (mp.get_mpattribute)("LUA:FileSizeLE40000.A") then
+if (mp.get_mpattribute)("InEmail") then
+  (mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
   return mp.INFECTED
 end
 return mp.CLEAN

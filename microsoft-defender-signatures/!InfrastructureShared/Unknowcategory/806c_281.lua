@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[9]).Name == ".boot" and (pesecs[8]).Characteristics == 3758096480 then
+if (peattributes.isexe == true or peattributes.ismsil == true) and pehdr.SizeOfImage >= 57344 and pehdr.Subsystem == 2 then
   return mp.INFECTED
 end
 return mp.CLEAN

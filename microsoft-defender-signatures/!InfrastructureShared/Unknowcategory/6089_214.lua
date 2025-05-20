@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilename)()):sub(-28) == "word/_rels/document.xml.rels" then
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData == 0 then
   return mp.INFECTED
 end
 return mp.CLEAN

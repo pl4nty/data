@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 4 then
-  (mp.set_mpattribute)("HSTR:Nivdort.EXP01")
+if peattributes.no_security == true and peattributes.isexe == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

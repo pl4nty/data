@@ -3,8 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched) or (hstrlog[9]).matched) then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    local l_0_3 = {["\\winhlp32.exe"] = true, ["\\werfault.exe"] = true, ["\\imepadsv.exe"] = true, ["\\splwow64.exe"] = true, ["\\sgtool.exe"] = true, ["\\mdm.exe"] = true, ["\\sgpicfacetool.exe"] = true}
+    local l_0_4 = nil
+    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$") ~= nil and l_0_3[(string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_2)), "(\\[^\\]+)$")] == true then
+      return mp.CLEAN
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
 

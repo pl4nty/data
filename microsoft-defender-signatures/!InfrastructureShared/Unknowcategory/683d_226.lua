@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "[DocWrite]", 1, true) ~= nil then
+if (string.find)((string.lower)(l_0_0), ".xps") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

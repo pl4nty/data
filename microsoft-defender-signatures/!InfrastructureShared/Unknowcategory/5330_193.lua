@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.no_security == true then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Optimizer.B")
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and pehdr.NumberOfSections == 3 and peattributes.isexe == true then
+if pehdr.SizeOfImage >= 819200 and pehdr.SizeOfImage < 827392 then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.changedetectionname)(805306376)
+return mp.SUSPICIOUS
 

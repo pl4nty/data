@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.isvbnative and l_0_0 >= 327680 and l_0_0 <= 524288 then
+if (mp.get_mpattribute)("RktProtect.pdb") and peattributes.isdriver then
   return mp.INFECTED
 end
 return mp.CLEAN

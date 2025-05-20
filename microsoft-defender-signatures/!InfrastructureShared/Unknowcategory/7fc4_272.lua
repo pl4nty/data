@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("InEmail") then
-  if mp.HSTR_WEIGHT >= 21 then
-    return mp.INFECTED
-  else
-    return mp.LOWFI
-  end
-else
-  if mp.HSTR_WEIGHT >= 21 then
-    return mp.LOWFI
-  end
-end
+(mp.set_mpattribute)("MpSimulateParanoid")
+;
+(mp.set_mpattribute)("MpEnableCOM")
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
+;
+(pe.reemulate)()
 return mp.CLEAN
 

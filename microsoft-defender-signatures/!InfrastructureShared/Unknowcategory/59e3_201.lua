@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT < 42 and (mp.getfilesize)() > 4194304 then
-  return mp.CLEAN
+if peattributes.lastscn_writable and peattributes.hasexports then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

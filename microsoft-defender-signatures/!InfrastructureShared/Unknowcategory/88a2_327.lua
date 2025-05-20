@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "miniunz%.exe") or (string.find)(l_0_0, "miniunz %(2015_") or (string.find)(l_0_0, "%.svn%-base") then
-  return mp.CLEAN
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 6, 1)
+;
+(pe.set_regval)(pe.REG_EAX, (string.byte)(l_0_0, 1))
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\144")
 return mp.INFECTED
 

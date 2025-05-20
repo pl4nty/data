@@ -3,18 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    if (sysio.IsFileExists)(l_0_6) then
+      (bm.add_related_file)(l_0_6)
+      ;
+      (mp.ReportLowfi)(l_0_6, 2969606243)
+    end
+  end
+end
 do
-  local l_0_1 = ""
-  if l_0_0.is_header then
-    l_0_1 = (string.lower)(tostring(headerpage))
-  else
-    l_0_1 = (string.lower)(tostring(footerpage))
-  end
-  if l_0_1 > 20 then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

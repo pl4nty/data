@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("FOP64:GoLang64") then
+if peattributes.isvbnative == true and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

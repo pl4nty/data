@@ -3,36 +3,8 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched then
-  local l_0_0, l_0_1, l_0_2 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC18: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_0 == nil or l_0_0 == "" then
-      return mp.CLEAN
-    end
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC32: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
-
-    if nil == nil or nil == "" then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (sysio.IsFileExists)(nil) then
-      (bm.add_related_file)(nil)
-    end
-    return mp.INFECTED
-  end
+if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.headerchecksum0 == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.no_debug == true and peattributes.no_mipsgp == true and peattributes.no_boundimport == true and peattributes.no_ep == true and peattributes.no_comruntime == true then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

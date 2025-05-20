@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+if (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
 return mp.CLEAN

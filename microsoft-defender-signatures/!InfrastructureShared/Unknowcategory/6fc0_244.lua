@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 15 then
+if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
   return mp.INFECTED
-else
-  if mp.HSTR_WEIGHT >= 11 then
-    (mp.set_mpattribute)("HSTR:KasidetLowfi")
-  end
 end
 return mp.CLEAN
 

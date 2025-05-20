@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = "svchost.exe|taskeng.exe|taskhostw.exe"
-  if l_0_2 ~= nil and (string.find)(l_0_3, l_0_2) then
-    (mp.TriggerScanResource)("folder", "C:\\Windows\\System32\\Tasks\\")
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
-do
-  return mp.LOWFI
+if (string.find)(l_0_0, "\\microsoft\\edge", 1, true) or (string.find)(l_0_0, "\\temp\\edgemitmp", 1, true) or (string.find)(l_0_0, "\\google\\chrome\\", 1, true) then
+  return mp.CLEAN
 end
+return mp.INFECTED
 

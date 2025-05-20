@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
+do
+  if peattributes.isdll and peattributes.hasexports then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 409600 and l_0_0 < 716800 and (pe.get_exports_count)() == 9 then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-;
-(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_HIGH)
-;
-(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 5000)
-return mp.INFECTED
 

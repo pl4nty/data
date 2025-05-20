@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.isdll and peattributes.no_security and l_0_0 > 282624 and l_0_0 < 286720 then
+if (peattributes.isvbpcode == true or peattributes.isvbnative == true) and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

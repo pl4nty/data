@@ -3,17 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 12 then
-  (mp.set_mpattribute)("PUA:Block:SGMinerGM")
-  return mp.INFECTED
-end
-if (mp.bitand)(mp.HSTR_WEIGHT, 3) >= 2 then
-  if peattributes.amd64_image then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_sgminer")
-  else
-    ;
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan_sgminer")
+if (mp.get_mpattribute)("//RPF:IS_Pdf") then
+  local l_0_0 = (mp.getfilesize)()
+  if l_0_0 < 20000 then
+    return mp.CLEAN
+  end
+  if l_0_0 > 50000 then
+    return mp.CLEAN
+  end
+  ;
+  (mp.readprotection)(false)
+  local l_0_1 = (mp.readfile)(0, l_0_0)
+  if l_0_1:match("/URI %(http%://usaa%.com%-sec%-inet%-auth%-logon%-ent%-logon%-logon%-") then
+    return mp.INFECTED
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil then
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:KidLogger.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

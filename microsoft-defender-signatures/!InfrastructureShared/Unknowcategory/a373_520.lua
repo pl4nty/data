@@ -3,29 +3,54 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 96)
+local l_0_1 = 1
+while 1 do
+  while 1 do
+    while 1 do
+      if l_0_1 < #l_0_0 then
+        local l_0_3 = 120
+        if (string.byte)(l_0_0, l_0_1) == 254 then
+          if (string.byte)(l_0_0, l_0_1 + 1) ~= 192 then
+            return mp.CLEAN
+          end
+          l_0_1 = l_0_1 + 2
+          l_0_3 = l_0_3 + 1
+          do
+            local l_0_2 = nil
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
 
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or this_sigattrlog[2] ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC37: Confused about usage of register: R6 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-      R6_PC37 = (mp.ContextualExpandEnvironmentVariables)(R6_PC37)
-      if (sysio.IsFileExists)(R6_PC37) then
-        (bm.add_related_file)(R6_PC37)
+            -- DECOMPILER ERROR at PC31: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+      end
+    end
+    -- DECOMPILER ERROR at PC32: Confused about usage of register: R3 in 'UnsetPending'
+
+    if l_0_2 == 60 then
+      if (string.byte)(l_0_0, l_0_1 + 1) ~= l_0_3 then
+        return mp.CLEAN
+      end
+      do
+        local l_0_4 = nil
+        ;
+        (pe.mmap_patch_va)(pevars.sigaddr + (l_0_1) + 11, "\235")
+        do return mp.INFECTED end
+        -- DECOMPILER ERROR at PC56: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+        -- DECOMPILER ERROR at PC56: LeaveBlock: unexpected jumping out IF_STMT
+
       end
     end
   end
-  do
-    return mp.INFECTED
-  end
+  return mp.CLEAN
+end
+do
+  return mp.CLEAN
 end
 

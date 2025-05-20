@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 3604202544) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 1712054030) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 3310839974) == 0 then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "u", 1, true) - 1, "êê")
 return mp.INFECTED
 

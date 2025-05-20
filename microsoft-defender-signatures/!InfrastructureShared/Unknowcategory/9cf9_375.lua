@@ -3,23 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).wp1 ~= nil then
-      local l_0_4 = nil
-      if (string.find)((string.lower)((mp.utf16to8)((this_sigattrlog[3]).wp1)), "%(%d+gb%)%.lnk$") then
-        return mp.INFECTED
-      end
-    end
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 20480 then
+  return mp.CLEAN
 end
+local l_0_1 = (mp.readheader)(0, 16)
+local l_0_2 = (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true)
+if l_0_2 then
+  (mp.set_mpattribute)("BM_SerializedObj.A")
+  return mp.INFECTED
+end
+return mp.CLEAN
 

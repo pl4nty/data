@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("NID:Trojan:MSIL/AgentTesla") then
+if (mp.get_mpattribute)("PACKED_WITH:(ActiveMime)") or (mp.get_mpattribute)("PACKED_WITH:(Base64)") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

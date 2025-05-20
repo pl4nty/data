@@ -206,7 +206,7 @@ if not l_0_6 then
       l_0_7 = l_0_7 .. ".exe"
       l_0_8 = "exe"
     end
-    if l_0_5 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(45000, false, true, true) == true then
+    if l_0_5 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(65000, false, true, true) == true then
       l_0_8 = (string.lower)(l_0_8)
     end
     if l_0_8 == "exe" then
@@ -240,7 +240,7 @@ do
     end
     do
       do
-        if l_0_5 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(45000, false, true, true) == true and (string.find)(l_0_10, "onedrivesetup.*%.exe") ~= nil then
+        if l_0_5 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(65000, false, true, true) == true and (string.find)(l_0_10, "onedrivesetup.*%.exe") ~= nil then
           local l_0_12 = (ImageConfig.GetPpid)()
           if l_0_12 ~= nil and l_0_12 ~= "" and (MpCommon.IsFriendlyProcess)(l_0_12) == true then
             return false

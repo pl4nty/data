@@ -3,17 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 then
-  return mp.LOWFI
-end
-if (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 then
-  return mp.LOWFI
-end
-if (hstrlog[5]).hitcount == 0 then
-  return mp.LOWFI
-end
-if peattributes.ismsil then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  end
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  ;
+  (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
+  -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+  ;
+  (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", l_0_0)
   return mp.INFECTED
 end
-return mp.LOWFI
 

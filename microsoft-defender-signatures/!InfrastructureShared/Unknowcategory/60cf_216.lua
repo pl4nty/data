@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096480 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Backdoor:Win64/PepticStunt.A!dha")
+return mp.INFECTED
 

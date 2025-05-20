@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr, "\235+")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 45, "ù")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 53, "\235")
+return mp.INFECTED
 

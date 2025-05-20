@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)(534350, 1057)
-if (mp.crc32)(-1, l_0_0, 1, 1057) == 539295301 then
+if peattributes.isexe == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Trojan:Win64/RedLine.AL!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

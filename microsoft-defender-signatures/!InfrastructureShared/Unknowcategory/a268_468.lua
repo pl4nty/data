@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "system32\\shell32.dll"
-local l_0_1 = (mp.ContextualExpandEnvironmentVariables)("%temp%\\") .. l_0_0
-local l_0_2 = (mp.ContextualExpandEnvironmentVariables)("%temp%\\low\\") .. l_0_0
-if (sysio.IsFileExists)(l_0_1) then
-  (bm.add_related_file)(l_0_1)
-  ;
-  (mp.ReportLowfi)(l_0_1 .. "\000", 1695212180)
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe")
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "Debugger")
+    if l_0_1 ~= nil and (string.len)(l_0_1) > 1 then
+      if (sysio.IsFileExists)(l_0_1) then
+        (mp.ReportLowfi)(l_0_1, 2782132239)
+      end
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-if (sysio.IsFileExists)(l_0_2) then
-  (bm.add_related_file)(l_0_2)
-  ;
-  (mp.ReportLowfi)(l_0_2 .. "\000", 1695212180)
-end
-return mp.INFECTED
 

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
-  return mp.CLEAN
+if (string.lower)((string.sub)(((pe.get_versioninfo)()).OriginalFilename, 1, 5)) == "lsass" then
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 153600 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

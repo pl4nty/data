@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == false and peattributes.no_security == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("do_deep_rescan")
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+return mp.INFECTED
 

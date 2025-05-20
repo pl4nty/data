@@ -3,18 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 then
-  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-  if l_0_1 then
-    for l_0_5,l_0_6 in ipairs(l_0_1) do
-      (bm.add_related_file)(l_0_6)
-    end
-  end
+if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 442368 and (mp.getfilesize)() < 466944 then
+  return mp.INFECTED
 end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.INFECTED
-  return l_0_1
-end
+return mp.CLEAN
 

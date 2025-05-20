@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  if mp.HSTR_WEIGHT >= 4 then
-    return mp.INFECTED
-  end
-  return mp.LOWFI
+if peattributes.no_security == true and pehdr.NumberOfSections == 3 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

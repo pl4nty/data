@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata and peattributes.amd64_image then
+if peattributes.hasappendeddata and peattributes.entrybyte55 then
   return mp.INFECTED
 end
 return mp.CLEAN

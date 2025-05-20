@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)(l_0_0, "\\windows fabric", 1, true) or (string.find)(l_0_0, "\\microsoft.net", 1, true) or (string.find)(l_0_0, "\\binn\\polybase\\mpdwsvc.exe", 1, true) then
-    return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+local l_0_2 = nil
+for l_0_6,l_0_7 in ipairs(l_0_1) do
+  if l_0_7.image_path ~= nil and (mp.bitand)(l_0_7.reason_ex, 1) == 1 then
+    l_0_2 = (string.lower)(l_0_7.image_path)
+    if (string.find)(l_0_2, "\\powershell.exe", 1, true) then
+      return mp.INFECTED
+    end
   end
-  return mp.INFECTED
 end
 return mp.CLEAN
 

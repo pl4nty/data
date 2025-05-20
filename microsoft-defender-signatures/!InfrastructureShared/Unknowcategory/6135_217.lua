@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:FkCodec.A")
+if pehdr.NumberOfSections == 7 and (mp.getfilesize)() >= 5844992 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

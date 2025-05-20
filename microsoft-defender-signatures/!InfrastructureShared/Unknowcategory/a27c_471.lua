@@ -3,19 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-        (bm.add_related_file)(l_0_7)
-        return mp.INFECTED
-      end
-    end
-  end
+if not (this_sigattrlog[1]).matched or not (this_sigattrlog[1]).wp2 then
+  return mp.CLEAN
 end
+local l_0_0 = (this_sigattrlog[1]).utf8p2
 do
+  if l_0_0 and not (string.find)(l_0_0:lower(), "\\amazon\\amazon assistant\\", 1, true) then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    ;
+    (MpCommon.SetPersistContextNoPath)("mshta_start", l_0_1, 3)
+  end
   return mp.CLEAN
 end
 

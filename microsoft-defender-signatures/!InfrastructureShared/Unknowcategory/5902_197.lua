@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.no_security == true then
-  return mp.INFECTED
+if (hstrlog[6]).matched and (hstrlog[7]).matched then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

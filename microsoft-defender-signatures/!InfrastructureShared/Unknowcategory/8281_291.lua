@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 and (pesecs[1]).SizeOfRawData > 1245184 then
-  return mp.INFECTED
+if peattributes.isdll then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-return mp.CLEAN
+if not peattributes.isvbnative and not peattributes.isvbpcode then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() > 2097152 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

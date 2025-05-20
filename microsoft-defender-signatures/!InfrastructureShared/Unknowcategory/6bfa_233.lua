@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_loadconfig == true then
   return mp.INFECTED
-end
-if (hstrlog[1]).matched then
-  return mp.LOWFI
 end
 return mp.CLEAN
 

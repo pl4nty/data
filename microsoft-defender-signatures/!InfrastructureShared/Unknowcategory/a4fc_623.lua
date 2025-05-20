@@ -3,40 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_3 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = false
-else
-  do
-    -- DECOMPILER ERROR at PC27: Overwrote pending register: R0 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC41: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
-        local l_0_1, l_0_2 = nil
-      end
-      if l_0_3 ~= nil then
-        local l_0_4 = nil
-        for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
-          local l_0_5 = nil
-          -- DECOMPILER ERROR at PC54: Confused about usage of register: R7 in 'UnsetPending'
-
-          R7_PC54 = (mp.ContextualExpandEnvironmentVariables)(R7_PC54)
-          if (sysio.IsFileExists)(R7_PC54) then
-            l_0_4 = true
-            ;
-            (bm.add_related_file)(R7_PC54)
-          end
-        end
-      end
-      do
-        if l_0_4 then
-          return mp.INFECTED
-        end
-        return mp.CLEAN
-      end
-    end
-  end
+local l_0_0 = pehdr.ImageBase + (pesecs[1]).VirtualAddress
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+if (string.sub)(l_0_1, 1, 4) == "(re)" then
+  (mp.changedetectionname)(805306418)
 end
+if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3898037843 and (mp.readu_u32)(epcode, 13) == 4278738315 and (mp.readu_u32)(epcode, 17) == 1703089267 and (mp.readu_u16)(epcode, 21) == 252 then
+  (mp.changedetectionname)(805306418)
+end
+return mp.INFECTED
 

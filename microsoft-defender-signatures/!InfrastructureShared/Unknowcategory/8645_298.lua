@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win64/IcedId.PAH!MTB") and l_0_0 > 1572864 and l_0_0 < 1638400 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (pe.get_exports)()
+for l_0_5 = 1, l_0_0 do
+  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "cJSON_ReplaceItemInObjectCaseSensitive" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

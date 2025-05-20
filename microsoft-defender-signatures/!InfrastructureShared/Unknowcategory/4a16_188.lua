@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll then
+if (mp.get_mpattribute)("pea_suspicious_dosheader") then
   return mp.INFECTED
 end
 return mp.CLEAN

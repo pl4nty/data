@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT < 20 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  return mp.LOWFI
-end
-if pehdr.Subsystem == 1 then
-  (mp.changedetectionname)(805306386)
-else
-  if (hstrlog[4]).matched ~= true then
-    (mp.changedetectionname)(805306397)
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0.command_line)
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  if (sysio.IsFileExists)(l_0_6) and not (mp.IsKnownFriendlyFile)(l_0_6, true, false) then
+    (mp.ReportLowfi)(l_0_6, 1834945633)
   end
 end
 return mp.INFECTED

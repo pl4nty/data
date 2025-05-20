@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win64/MeduzaStealer!MTB") then
+if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
   return mp.INFECTED
 end
 return mp.CLEAN

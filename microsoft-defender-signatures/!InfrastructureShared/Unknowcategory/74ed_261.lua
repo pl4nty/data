@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.no_boundimport == true and peattributes.no_exports == true and peattributes.no_security == true then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:BrowseFox")
+return mp.INFECTED
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.hasappendeddata and peattributes.has_msilresources then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+return mp.INFECTED
 

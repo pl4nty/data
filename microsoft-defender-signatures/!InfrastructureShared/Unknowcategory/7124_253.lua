@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and pehdr.AddressOfEntryPoint == 0 and peattributes.hasexports == true then
-  return mp.INFECTED
+if peattributes.dt_error_not_enough_memory then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
 end
-return mp.CLEAN
+return mp.INFECTED
 

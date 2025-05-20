@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (mp.getfilesize)()
+if (mp.get_mpattribute)("NID:Win64/Qakbot.PAN!MTB") and l_0_0 > 131072 and l_0_0 < 327680 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,19 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if l_0_1 ~= nil then
-  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    if (sysio.IsFileExists)(l_0_7) then
-      (bm.add_related_file)(l_0_7)
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if ((pesecs[1]).Name == "sijJ" or (pesecs[1]).Name == "EVJ") and (pesecs[2]).Name == ".mr" and peattributes.no_security == true and l_0_0 >= 119808 and l_0_0 <= 169984 then
+  return mp.INFECTED
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  return l_0_2
-end
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.shr32)(pehdr.TimeDateStamp, 22) and (mp.shl32)(pehdr.TimeDateStamp, 22) == 0 then
-  (mp.changedetectionname)(805306369)
+if ((pe.get_versioninfo)()).OriginalFilename == "riched32.dll" and ((pe.get_versioninfo)()).CompanyName == "Microsoft Corporation" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

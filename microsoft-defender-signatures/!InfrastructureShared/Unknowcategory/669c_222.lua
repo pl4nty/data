@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.no_security then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil and l_0_0 >= 663552 and l_0_0 <= 715008 then
   return mp.INFECTED
 end
 return mp.CLEAN

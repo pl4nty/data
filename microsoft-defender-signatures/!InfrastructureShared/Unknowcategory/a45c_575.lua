@@ -3,26 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  if mp.HSTR_WEIGHT >= 18 then
-    (mp.changedetectionname)(805306420)
-    return mp.INFECTED
-  else
-    if mp.HSTR_WEIGHT >= 1 and (hstrlog[11]).matched then
-      (pe.set_peattribute)("hstr_exhaustive", true)
-      ;
-      (pe.reemulate)()
-    end
-  end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
-else
-  if mp.HSTR_WEIGHT >= 18 then
-    return mp.INFECTED
-  else
-    if mp.HSTR_WEIGHT >= 7 then
-      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    end
-  end
 end
-return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 1500000 or l_0_0 < 8000 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("program files", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("system32", 1, true) then
+  return mp.CLEAN
+end
+if l_0_1:find("syswow64", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

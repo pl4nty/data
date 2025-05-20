@@ -5,7 +5,11 @@
 -- function num : 0
 -- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
 
-if (((((not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and (hstrlog[5]).matched) or not (hstrlog[8]).matched) and (hstrlog[10]).matched) or (hstrlog[4]).matched) and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) >= 3 then
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
+
+if (((((not (hstrlog[1]).matched and (hstrlog[3]).matched) or not (hstrlog[6]).matched) and (hstrlog[9]).matched) or (hstrlog[2]).matched) and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) + ((hstrlog[8]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) >= 4 then
   return mp.INFECTED
 end
 return mp.CLEAN

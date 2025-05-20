@@ -3,10 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.dt_error_not_enough_memory then
-  (pe.set_peattribute)("enable_vmm_grow", true)
-  ;
-  (pe.reemulate)()
-end
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
 return mp.INFECTED
 

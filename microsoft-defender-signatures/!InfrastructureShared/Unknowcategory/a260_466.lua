@@ -3,16 +3,25 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 182784 and (mp.getfilesize)() < 183552 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+local l_0_0 = {}
+;
+(table.insert)(l_0_0, "https://thiscannotpossiblywork.local/")
+local l_0_1 = {}
+l_0_1.isLocal = "false"
+l_0_1.certutil = "true"
+l_0_1.E2ETestScenario = "true"
+local l_0_2 = (mp.GetUrlReputation)(l_0_0, l_0_1)
+if l_0_2 ~= nil then
+  local l_0_3 = l_0_2.urls
+  for l_0_7,l_0_8 in ipairs(l_0_3) do
+    if l_0_8.determination == 2 and l_0_8.confidence > 60 then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
+end
+do
+  l_0_3 = mp
+  l_0_3 = l_0_3.CLEAN
+  return l_0_3
 end
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Lazy.AIKA") then
+if peattributes.no_security and peattributes.ismsil and ((pe.get_versioninfo)()).CompanyName == "" then
   return mp.INFECTED
 end
 return mp.CLEAN

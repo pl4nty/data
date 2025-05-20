@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "\\virtualboxvm.exe", 1, true) then
-  return mp.CLEAN
-end
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "u", 21, true)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, "3\255")
 return mp.INFECTED
 

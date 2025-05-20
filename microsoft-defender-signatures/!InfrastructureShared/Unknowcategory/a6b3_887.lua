@@ -3,50 +3,46 @@
 
 -- params : ...
 -- function num : 0
-checkProcessTree = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if l_1_0 == nil or l_1_1 == nil or type(l_1_1) ~= "table" then
-    return nil
-  end
-  local l_1_2 = l_1_0
-  local l_1_3 = {}
-  for l_1_7,l_1_8 in ipairs(l_1_1) do
-    local l_1_9 = 0
-    local l_1_10, l_1_11 = (bm.get_process_relationships)(l_1_2)
-    for l_1_15,l_1_16 in ipairs(l_1_11) do
-      if (mp.bitand)(l_1_16.reason_ex, 1) == 1 and (string.sub)(l_1_16.image_path, -(string.len)(l_1_8)) == l_1_8 then
-        l_1_2 = l_1_16.ppid
-        l_1_9 = l_1_9 + 1
-      end
-      if l_1_9 > 1 then
-        return nil
-      end
-    end
-    if l_1_9 == 0 then
-      return nil
-    end
-    ;
-    (table.insert)(l_1_3, l_1_2)
-  end
-  return l_1_3
-end
-
-if (bm.GetSignatureMatchDuration)() > 300000000 then
+if peattributes.no_relocs ~= true then
   return mp.CLEAN
 end
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 == nil or l_0_0.ppid == nil then
+if peattributes.isexe ~= true then
   return mp.CLEAN
 end
-local l_0_1 = l_0_0.ppid
-local l_0_2 = {}
--- DECOMPILER ERROR at PC25: No list found for R2 , SetList fails
-
--- DECOMPILER ERROR at PC26: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC27: Overwrote pending register: R4 in 'AssignReg'
-
-if ("cmd.exe")("powershell.exe", l_0_2) == nil then
+if pehdr.MajorLinkerVersion ~= 6 then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage < 262144 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage > 389120 then
+  return mp.CLEAN
+end
+if pehdr.AddressOfEntryPoint < 192512 then
+  return mp.CLEAN
+end
+if pehdr.AddressOfEntryPoint > 323584 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < pevars.epsec then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData < 217088 then
+  return mp.CLEAN
+end
+if (pesecs[pevars.epsec]).SizeOfRawData > 327680 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size < 160 then
+  return mp.CLEAN
+end
+if ((pehdr.DataDirectory)[2]).Size > 240 then
   return mp.CLEAN
 end
 return mp.INFECTED

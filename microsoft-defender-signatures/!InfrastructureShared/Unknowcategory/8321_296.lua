@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not (hstrlog[2]).matched and not (hstrlog[3]).matched then
-  return mp.CLEAN
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    ;
+    (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
+  end
+  return mp.INFECTED
 end
-if not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetUACMetadata)()
-if l_0_0 == nil then
+if (bm.GetSignatureMatchDuration)() > 300000000 then
   return mp.CLEAN
 end
-if l_0_0.Type ~= mp.AMSI_UAC_REQUEST_TYPE_COM then
-  return mp.CLEAN
-end
-if (string.lower)((l_0_0.Info).Clsid) ~= "48012511-82cc-48f3-ae5b-40c7401a5a09" then
-  return mp.CLEAN
-end
+local l_0_0 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_0.ppid, "M")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1000)
 return mp.INFECTED
 

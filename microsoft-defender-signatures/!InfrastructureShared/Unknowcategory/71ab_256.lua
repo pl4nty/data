@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 1 or (hstrlog[2]).hitcount == 1 or (hstrlog[3]).hitcount == 1 or (hstrlog[4]).hitcount == 1 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -17) == "microsoftedge.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

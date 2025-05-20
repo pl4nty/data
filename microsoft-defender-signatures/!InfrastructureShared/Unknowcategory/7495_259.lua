@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 1703936 and l_0_0 <= 1769472 and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 then
+if ((mp.get_mpattribute)("pea_isexe") or (mp.get_mpattribute)("pea_isdll")) and (mp.get_mpattribute)("HSTR:GolangBinary") then
   return mp.INFECTED
 end
 return mp.CLEAN

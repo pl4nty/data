@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.no_security and peattributes.requests_elevation then
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 21, 4), 1) > 40960 then
   return mp.INFECTED
 end
 return mp.CLEAN

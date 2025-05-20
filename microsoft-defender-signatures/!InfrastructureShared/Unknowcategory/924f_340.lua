@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "")
+(pe.set_peattribute)("enable_vmm_grow", true)
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "")
+(pe.set_peattribute)("deep_analysis", true)
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 25, "")
+(pe.set_peattribute)("disable_seh_limit", true)
 ;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+(pe.set_peattribute)("disable_apicall_limit", true)
+;
+(pe.set_peattribute)("disable_thread_apicall_limit", true)
+return mp.CLEAN
 

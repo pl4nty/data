@@ -3,19 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["winword.exe"] = true
-  l_0_3["excel.exe"] = true
-  l_0_3["powerpnt.exe"] = true
-  if l_0_3[l_0_2] then
-    return mp.LOWFI
-  end
-end
-do
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 13, 4), 1) < 1048576 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 17, "")
+return mp.INFECTED
 

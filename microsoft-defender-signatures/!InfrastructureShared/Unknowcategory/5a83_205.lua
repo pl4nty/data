@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).Name == "hitl3r" and (pesecs[2]).Name == "hitl3r" then
+if peattributes.ismsil and (mp.getfilesize)() <= 393216 then
   return mp.INFECTED
 end
 return mp.CLEAN

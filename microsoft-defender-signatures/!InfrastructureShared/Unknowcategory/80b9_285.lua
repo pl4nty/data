@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0:len() >= 12 and (string.sub)(l_0_0, -12) == "iexplore.exe" then
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.hasexports == true and peattributes.no_security == true and (pe.get_exports_count)() == 1 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == "pxsZHe0" and peattributes.no_security == true then
-  return mp.INFECTED
+if pehdr.NumberOfSections ~= 9 or (hstrlog[1]).VA ~= 4214784 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

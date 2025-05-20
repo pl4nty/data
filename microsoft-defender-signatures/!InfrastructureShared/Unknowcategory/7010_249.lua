@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and (pesecs[1]).Name == "   " then
-  return mp.INFECTED
+if peattributes.isdll == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

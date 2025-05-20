@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x64_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT >= 1 then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,20 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["winword.exe"] = true
-  l_0_3["excel.exe"] = true
-  l_0_3["powerpnt.exe"] = true
-  l_0_3["outlook.exe"] = true
-  if l_0_3[l_0_2] then
-    return mp.INFECTED
-  end
+if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") and (mp.get_mpattribute)("MpExcelFormulaRoutines") and (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

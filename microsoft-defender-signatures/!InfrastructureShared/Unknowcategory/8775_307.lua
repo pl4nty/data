@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.hasexports and pehdr.SizeOfImage == 2351104 and pehdr.SizeOfCode == 57344 and pehdr.AddressOfEntryPoint == 14780 then
+if peattributes.isexe == true and peattributes.hasexports == false and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
   return mp.INFECTED
 end
 return mp.CLEAN

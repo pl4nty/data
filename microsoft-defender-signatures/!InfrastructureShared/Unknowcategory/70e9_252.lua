@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%a+.exe") ~= nil then
+if peattributes.isdll == true and peattributes.hasexports == true and (pe.get_exports_count)() == 19 then
   return mp.INFECTED
 end
 return mp.CLEAN

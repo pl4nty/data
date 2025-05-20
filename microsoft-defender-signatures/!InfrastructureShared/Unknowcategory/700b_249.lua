@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_4")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\000")
 return mp.INFECTED
 

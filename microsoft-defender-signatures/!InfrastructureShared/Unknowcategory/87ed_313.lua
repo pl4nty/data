@@ -6,7 +6,7 @@
 do
   if peattributes.isdll and peattributes.hasexports then
     local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 409600 and l_0_0 < 716800 and (pe.get_exports_count)() == 9 then
+    if l_0_0 > 122880 and l_0_0 < 358400 and (pe.get_exports_count)() == 1 then
       return mp.INFECTED
     end
   end

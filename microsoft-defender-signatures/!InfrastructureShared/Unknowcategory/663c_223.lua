@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[6]).Name == ".htext" then
+if (string.match)((string.lower)((mp.getfilename)()), "%.c$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

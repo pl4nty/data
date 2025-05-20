@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.ismsil then
+do
+  if (mp.get_mpattribute)("RPF:SmartAssembly") and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+    local l_0_0 = (pe.get_versioninfo)()
+    if l_0_0 ~= nil and (string.find)((string.lower)(l_0_0.InternalName), "luckyleap", 1, true) then
+      (mp.set_mpattribute)("Trojan:Win32/LuckyLeap")
+    end
+  end
   return mp.CLEAN
 end
-if (mp.enum_mpattributesubstring)("Lua:PeCompanyName!microsoft") ~= nil or (mp.enum_mpattributesubstring)("Lua:PeInternalName!microsoft.") ~= nil or (mp.enum_mpattributesubstring)("Lua:PeOriginalName!microsoft.") ~= nil or (mp.get_mpattribute)("Lua:Company_Microsoft") then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

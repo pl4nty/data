@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if (string.find)(l_0_1, "excel.exe", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if (hstrlog[6]).hitcount >= 7 and pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

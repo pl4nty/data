@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsTrustedFile)(false) ~= false then
+do
+  if pehdr.TimeDateStamp ~= 0 then
+    local l_0_0 = (MpCommon.GetCurrentTimeT)()
+    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 86400 then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.INFECTED
-end
-if mp.HSTR_WEIGHT >= 2 then
-  return mp.LOWFI
-end
-return mp.CLEAN
 

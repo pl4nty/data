@@ -229,7 +229,7 @@ if not l_0_8 then
       l_0_9 = l_0_9 .. ".exe"
       l_0_10 = "exe"
     end
-    if l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(45000, false, true, true) == true then
+    if l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(65000, false, true, true) == true then
       l_0_10 = (string.lower)(l_0_10)
     end
     if l_0_10 == "exe" then
@@ -262,7 +262,7 @@ do
       end
     end
     do
-      if l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(45000, false, true, true) == true and (string.find)(l_0_12, "onedrivesetup.*%.exe") ~= nil then
+      if l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(65000, false, true, true) == true and (string.find)(l_0_12, "onedrivesetup.*%.exe") ~= nil then
         local l_0_15 = (mp.IsTrustedFile)(false)
         if l_0_15 == true then
           return mp.CLEAN

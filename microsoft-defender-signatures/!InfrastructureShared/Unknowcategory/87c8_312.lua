@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Win64/DarkRat.PA") and peattributes.no_security == true and (mp.getfilesize)() >= 230000 and (mp.getfilesize)() <= 260000 then
+if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("pea_ismsil") and peattributes.no_security == true and (mp.getfilesize)() < 1064000 then
   return mp.INFECTED
 end
 return mp.CLEAN

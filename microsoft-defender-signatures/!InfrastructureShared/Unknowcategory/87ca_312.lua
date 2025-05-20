@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and pehdr.NumberOfSections > 3 and pehdr.NumberOfSections < 7 and (pesecs[4]).Name == ".pdata" then
-  return mp.INFECTED
+if (nri.IsResponse)() then
+  return mp.CLEAN
 end
-return mp.LOWFI
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
+return mp.INFECTED
 

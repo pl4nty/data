@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount > 10 or (hstrlog[2]).hitcount > 10 or (hstrlog[3]).hitcount > 10 or (hstrlog[4]).hitcount > 10 or (hstrlog[5]).hitcount > 10 or (hstrlog[6]).hitcount > 10 then
-  return mp.INFECTED
+local l_0_0 = "×ÀÒººÂÜÍ\000\000\000\000\000\000\000\000×ÀÒÏÊÌÀæ\000\000\000\000\000\000\000\000×ÀÒÞÕÍÅÅÂÈ\000\000\000\000\000\000ßþäåÚòÙÛ÷¾\000\000\000\000\000\000¬ô\255éä¯¬ö¤\aù÷óå\218\000\144\000"
+do
+  if (mp.getfilesize)() > 50331648 then
+    local l_0_1 = 50331648
+  end
+  -- DECOMPILER ERROR at PC10: Confused about usage of register: R1 in 'UnsetPending'
+
+  if (mp.BMSearchFile)(0, l_0_1, l_0_0) ~= -1 then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

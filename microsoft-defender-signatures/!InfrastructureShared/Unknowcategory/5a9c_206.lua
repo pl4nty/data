@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() < 70000000 then
-  return mp.INFECTED
+if (pesecs[pehdr.NumberOfSections]).Name == ".UniKey" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.LOWFI
 

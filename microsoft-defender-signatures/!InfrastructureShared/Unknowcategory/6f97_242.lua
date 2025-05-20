@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (hstrlog[1]).matched and (hstrlog[2]).matched then
-  return mp.INFECTED
+if (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.epatstartentrysect then
+  return mp.SUSPICIOUS
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,29 +3,21 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[2]).matched then
-  local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
-else
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
   do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_0 == nil then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC34: Confused about usage of register: R0 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC43: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_0 ~= nil and ((string.find)(l_0_0, "\\microsoft\\onedrive\\", 1, true) or (string.find)(l_0_0, "\\microsoft\\teams\\", 1, true)) then
-      (bm.add_related_file)(l_0_0)
-      return mp.INFECTED
+    if l_0_0 ~= nil then
+      local l_0_2 = nil
+      if l_0_2:match("%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d|%d+%.%d+%.%d+%.%d+|%d+%.%d+%.%d+%.%d+") then
+        (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/KoalaTwin.A!dha")
+        return mp.INFECTED
+      end
     end
     return mp.CLEAN
   end

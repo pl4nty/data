@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.match)(l_0_0.image_path, "\\([^\\]+)$")
-    l_0_1 = (string.lower)(l_0_1)
-    if l_0_1 == "msiexec.exe" then
-      return mp.CLEAN
-    end
-  end
+if pehdr.AddressOfEntryPoint == 90675 and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

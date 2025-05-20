@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 == nil then
-  return mp.CLEAN
-end
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -19) == "\\browser_broker.exe" or (string.sub)(l_0_0, -13) == "\\explorer.exe" then
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1, 4), 1) ~= pevars.sigaddr + 6 or (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1 + 6, 4), 1) ~= pevars.sigaddr + 12 or (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1 + 12, 4), 1) ~= pevars.sigaddr + 18 then
   return mp.CLEAN
 end
 return mp.INFECTED

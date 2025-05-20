@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Qakbot.IH!MTB") and peattributes.isdll then
+if peattributes.isexe == true and peattributes.no_security == true and peattributes.amd64_image then
   return mp.INFECTED
 end
 return mp.CLEAN

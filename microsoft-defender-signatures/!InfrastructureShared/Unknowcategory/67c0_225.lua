@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == true and peattributes.no_security == true then
+if (string.match)((string.lower)((mp.getfilename)()), "%.php$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

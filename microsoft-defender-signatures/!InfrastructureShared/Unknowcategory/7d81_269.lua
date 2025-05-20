@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Trojan:Win64/Zusy.AMS") then
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() > 1024000 and (mp.getfilesize)() < 2048000 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 102400 or l_0_0 > 204800 or peattributes.isdll then
-  return mp.CLEAN
-end
-return mp.INFECTED
+(pe.mmap_patch_va)(pevars.sigaddr + 39, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 61, "")
+return mp.CLEAN
 

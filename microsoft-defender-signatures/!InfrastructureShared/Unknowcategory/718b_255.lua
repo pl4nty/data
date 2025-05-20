@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 196608 and l_0_0 <= 327680 and peattributes.isdll == true and peattributes.hasexports == true then
+if peattributes.suspicious_image_version and peattributes.lastscn_writable and peattributes.lastscn_executable then
   return mp.INFECTED
 end
 return mp.CLEAN

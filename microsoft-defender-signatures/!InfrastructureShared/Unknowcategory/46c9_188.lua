@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() >= 959488 and (mp.getfilesize)() <= 961024 then
+if (mp.getfilesize)() <= 700000 and (mp.getfilesize)() >= 300000 then
   return mp.INFECTED
 end
 return mp.CLEAN

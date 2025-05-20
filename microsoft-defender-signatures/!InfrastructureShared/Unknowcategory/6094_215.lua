@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:ASPXExt") or (mp.get_mpattribute)("Lua:ASPExt") then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "AppxManifest.xml") ~= nil then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

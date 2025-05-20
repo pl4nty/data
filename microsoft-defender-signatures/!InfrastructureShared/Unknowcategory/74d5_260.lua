@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Renos_msposer")
-if (mp.get_mpattribute)("PEPCODE:VirTool:Win32/Obfuscator.ED") then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 9728 and l_0_0 <= 13312 and (hstrlog[1]).matched and (hstrlog[2]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

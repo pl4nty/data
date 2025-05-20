@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".xdata" and (pesecs[5]).Characteristics == 1073741888 then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:GT32SupportGeeks.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

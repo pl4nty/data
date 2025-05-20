@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
-return mp.INFECTED
+if (string.find)(l_0_0, "\\program files", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

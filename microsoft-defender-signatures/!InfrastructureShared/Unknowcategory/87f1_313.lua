@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched) and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
+if pehdr.NumberOfSections == 11 and (pesecs[7]).Name == ".app0" and (pesecs[9]).Name == ".app1" and (pesecs[10]).Name == ".app2" then
   return mp.INFECTED
 end
 return mp.CLEAN

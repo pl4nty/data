@@ -3,19 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[5]).utf8p2
-local l_0_1 = (this_sigattrlog[5]).utf8p1
-l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
-l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_1))
-if (string.find)(l_0_0, ":\\program ", 1, true) then
+do
+  if not peattributes.suspicious_heap_size and not peattributes.suspicious_linker_version and not peattributes.suspicious_image_version and not peattributes.suspicious_os_version and not peattributes.suspicious_timestamp then
+    local l_0_0, l_0_1 = peattributes.suspicious_section_vsize
+  end
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 then
+    (pe.set_peattribute)("hstr_exhaustive", true)
+    ;
+    (mp.set_mpattribute)("attrmatch_rescan_psif")
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if l_0_1 == nil or (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
-  return mp.CLEAN
-end
-;
-(bm.add_related_file)(l_0_1)
-;
-(bm.add_related_file)(l_0_0)
-return mp.INFECTED
 

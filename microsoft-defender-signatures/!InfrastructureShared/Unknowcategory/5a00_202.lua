@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Sigattr:TrojanSpy:Win32/Banker.gen!E.1") then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 6 and (mp.getfilesize)() >= 5868504 then
+if (pesecs[4]).Name == ".btls2" and (pesecs[6]).Name == ".dcard" then
   return mp.INFECTED
 end
 return mp.CLEAN

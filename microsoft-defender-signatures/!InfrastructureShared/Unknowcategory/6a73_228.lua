@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports and peattributes.isdll and peattributes.executable_image then
+if (mp.getfilesize)() <= 2048 and (mp.get_mpattribute)("PACKED_WITH:[Eval]") then
   return mp.INFECTED
 end
 return mp.CLEAN

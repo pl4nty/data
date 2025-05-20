@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.no_exports then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:ExCheckInstalledAV") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

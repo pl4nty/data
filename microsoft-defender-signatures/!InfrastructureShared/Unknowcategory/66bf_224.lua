@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (hstrlog[1]).matched then
-  l_0_0 = (hstrlog[1]).hitcount
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("classes.dex") then
+  return mp.CLEAN
 end
-if l_0_0 >= 3 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

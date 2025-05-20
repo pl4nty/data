@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isdll == true or peattributes.isexe) and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
+(pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
 return mp.INFECTED
 

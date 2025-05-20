@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)):lower()
-if l_0_0:find("blackbone", 1, true) then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 11 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+;
+(pe.reemulate)()
+return mp.CLEAN
 

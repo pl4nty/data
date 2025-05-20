@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_boundimport") and not (mp.get_mpattribute)("pea_no_tls") then
+if peattributes.isexe and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 and peattributes.no_security then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 and mp.HSTR_CALLER_SMS == l_0_0 then
-  (mp.changedetectionname)(805306755)
+if mp.HSTR_WEIGHT >= 7 then
+  (mp.set_mpattribute)("PUA:Block:SkypeCap.A")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

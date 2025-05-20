@@ -3,30 +3,32 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if not (this_sigattrlog[8]).utf8p1 then
-    local l_0_0 = (this_sigattrlog[9]).utf8p1
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
 
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
 
-  local l_0_1 = (string.lower)(l_0_0)
-  if l_0_1 == nil or (string.find)(l_0_1, "c:\\", 1, true) == nil then
-    return mp.CLEAN
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_7,l_0_8 in ipairs(l_0_3) do
+      local l_0_4 = {[".xls"] = true, xlsx = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, xlsm = true}
+      -- DECOMPILER ERROR at PC34: Confused about usage of register: R7 in 'UnsetPending'
+
+      if (string.len)(R7_PC34) > 4 and (sysio.IsFileExists)(R7_PC34) and l_0_4[(string.sub)(R7_PC34, -4)] then
+        (bm.add_related_file)(l_0_9)
+      end
+    end
   end
-  if (sysio.IsFileExists)(l_0_1) then
-    (bm.add_related_file)(l_0_1)
+  do
+    l_0_3 = mp
+    l_0_3 = l_0_3.INFECTED
+    return l_0_3
   end
-  local l_0_2 = (bm.get_current_process_startup_info)()
-  if l_0_2 ~= nil and l_0_2.ppid ~= nil then
-    (bm.request_SMS)(l_0_2.ppid, "m")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 1)
-  end
-  return mp.INFECTED
 end
 

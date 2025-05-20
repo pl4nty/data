@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((mp.getfilename)(), -3)) == "r2w" then
-  return mp.CLEAN
+if peattributes.ismsil and (mp.get_mpattribute)("HSTR:MSIL/Confuser") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

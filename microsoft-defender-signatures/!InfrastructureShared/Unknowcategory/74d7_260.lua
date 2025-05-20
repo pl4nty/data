@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 516096 and l_0_0 <= 524288 and (mp.get_mpattribute)("TEL:Trojan:Win32/Emotet.PAC!Lowfi") then
+if ((pe.get_versioninfo)()).InternalName == "Bluthmon.exe" and ((pe.get_versioninfo)()).CompanyName == "Mototech.co" then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

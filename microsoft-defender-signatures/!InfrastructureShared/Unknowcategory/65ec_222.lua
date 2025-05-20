@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.ismsil and l_0_0 < 720896 and l_0_0 > 50000 then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:MaxOfferDeal.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

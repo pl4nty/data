@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and pehdr.NumberOfSections == 3 then
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:CoinMiner.Q")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

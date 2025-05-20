@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.lastscn_writable and peattributes.hasappendeddata then
+if peattributes.isexe == true and (mp.getfilesize)() < 25000 then
   return mp.INFECTED
 end
 return mp.CLEAN

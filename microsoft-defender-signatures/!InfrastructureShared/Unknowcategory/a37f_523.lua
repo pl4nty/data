@@ -3,19 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint and (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 18, 4), 1), 4), 1)) == 1467596470 and (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 24, 4), 1), 4), 1)) == 3909456120 then
+  return mp.INFECTED
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 1000 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("\\program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_1:find("\\system32", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

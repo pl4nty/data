@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil == true and (mp.getfilesize)() < 10000 and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if epcode[1] ~= 106 then
   return mp.CLEAN
 end
+if pehdr.NumberOfSections < 5 or (pesecs[5]).Name ~= ".import" then
+  return mp.CLEAN
+end
+if (pe.query_import)(pe.IMPORT_STATIC, 2142642642) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

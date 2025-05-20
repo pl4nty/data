@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(bm.trigger_sig_self_propagate)("SuspSlugResinProcessLaunch", "Behavior:Win32/SnailResin.B!dha")
-return mp.INFECTED
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 8 and ((mp.get_mpattribute)("NID:CryptInject.AK!Pra1") or (mp.get_mpattribute)("NID:CryptInject.AK!Pra2")) then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.isexe and (mp.getfilesize)() <= 2918400 and (mp.getfilesize)() >= 1894400 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if (string.find)(l_0_1, "\\windows\\system32\\services.exe", 1, true) then
-      return mp.INFECTED
+if peattributes.isexe == true and (mp.getfilesize)() < 30000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
     end
   end
-  return mp.CLEAN
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

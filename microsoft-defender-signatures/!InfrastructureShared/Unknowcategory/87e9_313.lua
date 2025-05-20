@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and (mp.getfilesize)() > 9500000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if (mp.getfilesize)() > 1000000 then
   return mp.CLEAN
 end
+if (pesecs[1]).Name == "UPX0" then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 15000)
+return mp.INFECTED
 

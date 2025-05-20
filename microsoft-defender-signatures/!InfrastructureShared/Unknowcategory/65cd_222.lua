@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
-  (mp.set_mpattribute)("PUA:Block:RefogKeylogger")
-  return mp.INFECTED
+if peattributes.isvbpcode ~= true then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if (mp.getfilesize)() > 512000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

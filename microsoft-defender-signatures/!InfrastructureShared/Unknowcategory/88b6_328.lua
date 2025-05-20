@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 == nil then
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 1, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(mp.readprotection)(false)
+if (pe.mmap_va)(l_0_1, 9) == "myapp.exe" then
+  return mp.INFECTED
 end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 == nil then
-  return mp.CLEAN
-end
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).wp2 == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

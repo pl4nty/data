@@ -3,18 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 10, 32)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-if (mp.readu_u32)(l_0_0, 14) ~= l_0_1 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+do
+  if l_0_0 ~= nil and l_0_0.command_line ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.command_line)
+    if (string.sub)(l_0_1, -17) ~= "onedrivesetup.exe" then
+      return mp.CLEAN
+    end
+    if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+      (bm.request_SMS)(l_0_0.ppid, "m")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1)
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-local l_0_2 = (mp.readu_u32)(l_0_0, 7)
-l_0_0 = (pe.mmap_va)(l_0_2, 4)
-local l_0_3 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
-if l_0_3 ~= 1269389306 then
-  return mp.CLEAN
-end
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a")
-return mp.INFECTED
 

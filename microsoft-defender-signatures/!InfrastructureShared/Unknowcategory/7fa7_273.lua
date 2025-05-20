@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[4]).Name == ".didat" and (pesecs[4]).Characteristics == 3221225536 then
+if (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

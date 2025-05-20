@@ -3,12 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_hasexports") and (mp.getfilesize)() > 20000000 then
-  if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
-  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\steam", 1, true) or (string.find)((string.lower)(l_0_0), "torrent.exe", 1, true) or (string.find)((string.lower)(l_0_0), "game", 1, true) then
+    return mp.CLEAN
   end
   return mp.INFECTED
 end

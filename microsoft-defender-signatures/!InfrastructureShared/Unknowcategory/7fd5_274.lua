@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (pesecs[2]).Name == ".sdata" and (pesecs[2]).Characteristics == 3221225536 then
-  return mp.INFECTED
+if (mp.shr32)(pehdr.TimeDateStamp, 22) and (mp.shl32)(pehdr.TimeDateStamp, 22) == 0 then
+  (mp.changedetectionname)(805306369)
 end
-return mp.CLEAN
+return mp.INFECTED
 

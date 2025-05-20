@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and not (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.getfilesize)() < 114688 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if (mp.get_mpattribute)("RPF:PEHasIOAVURL") and (mp.get_mpattribute)("SIGATTR:SellExecuteExError") then
+  (mp.set_mpattribute)("lua_codepatch_tibs_3")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 7, "")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 14, "\178\000")
 end
+return mp.INFECTED
 

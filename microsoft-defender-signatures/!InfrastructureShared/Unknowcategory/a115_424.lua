@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[6]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!A")
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security and l_0_0 > 145000 and l_0_0 < 179000 and pehdr.NumberOfSections == 4 and (pesecs[3]).Name == "CONST" and (pesecs[3]).SizeOfRawData <= 8192 and (pesecs[3]).SizeOfRawData >= 2048 then
+  return mp.INFECTED
 end
-if (hstrlog[7]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!B")
-  return mp.CLEAN
-end
-if (hstrlog[8]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!C")
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

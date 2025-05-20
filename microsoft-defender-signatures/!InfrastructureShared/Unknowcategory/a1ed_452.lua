@@ -3,9 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (mp.get_mpattribute)("NID:TelAttrib") and peattributes.no_security == true and l_0_0 <= 77824 and l_0_0 >= 73728 and peattributes.isdll and peattributes.hasexports and pehdr.NumberOfSections == 4 and pehdr.SizeOfImage == 86016 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("BM_OLE_FILE") then
+  (mp.set_mpattribute)("SCRIPT:PDFinOLE")
+  if (mp.get_mpattribute)("InEmail") then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 == nil or l_0_0 > 1000000 or l_0_0 < 1000 then
+      return mp.CLEAN
+    end
+    if (mp.BMSearchFile)(0, l_0_0, ".Document.DC\144\001@\144\002@h\000t\000t\000p\000:\000/\000/\144\000") > 0 then
+      return mp.INFECTED
+    end
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

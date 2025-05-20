@@ -3,12 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  local l_0_1 = (string.lower)((string.match)(l_0_0, "(.-)[^\\]-[^\\%.]+$"))
+  if l_0_1 ~= nil and (string.len)(l_0_1) == 3 and l_0_1 ~= "c:\\" then
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if l_0_0.integrity_level < ((MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)).IntegrityLevel then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

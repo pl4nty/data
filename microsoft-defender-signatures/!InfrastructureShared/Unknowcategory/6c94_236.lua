@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)) ~= "sbiedll.dll" then
-  return mp.CLEAN
+if peattributes.isdll and peattributes.x86_image and peattributes.suspicious_linker_version then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

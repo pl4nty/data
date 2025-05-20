@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.lower)((string.sub)(l_0_0.image_path, -11)) ~= "svchost.exe" then
-  return mp.CLEAN
-end
-if (versioning.GetLocaleIdentifier)() == 1049 then
-  return mp.LOWFI
+local l_0_0 = (mp.hstr_full_log)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.matched and (string.byte)((pe.mmap_va)(l_0_5.VA - 39, 1)) == (string.byte)((pe.mmap_va)(l_0_5.VA - 25, 1)) then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

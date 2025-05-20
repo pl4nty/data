@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and pehdr.NumberOfSections == 4 and peattributes.hasexports == true then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\google\\chrome\\", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

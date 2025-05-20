@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 then
-  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\automationmanager.agentservice.exe", 1, true) then
-    return mp.CLEAN
+do
+  if (pe.isdynamic_va)(pevars.sigaddr) then
+    local l_0_0 = (pe.get_regval)(pe.REG_EAX)
+    if l_0_0 == 1247748109 then
+      (mp.set_mpattribute)("PEBMPAT:AntiEmuVirtualProtectLayout")
+      ;
+      (pe.set_regval)(pe.REG_EAX, 3047219186)
+    end
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
 

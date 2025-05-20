@@ -3,12 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
-if (string.find)(l_0_1, ":\"\\..\\", 1, true) ~= nil then
+if ((pesecs[1]).Name == "CODE" and (pesecs[2]).Name == "DATA" and (pesecs[3]).Name == "BSS") or (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" then
   return mp.INFECTED
 end
 return mp.CLEAN

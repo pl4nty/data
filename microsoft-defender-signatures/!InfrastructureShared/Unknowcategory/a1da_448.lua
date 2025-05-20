@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.getfilesize)() < 9000000 and ((mp.get_mpattribute)("HSTR:Win32/DelphiFile") or (mp.get_mpattribute)("SIGATTR:DelphiFile") or peattributes.is_delphi or peattributes.isvbpcode or peattributes.isvbnative) then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 and (string.find)(l_0_0, " for ", 1, true) and (string.find)(l_0_0, " in ", 1, true) and (string.find)(l_0_0, " do ", 1, true) then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

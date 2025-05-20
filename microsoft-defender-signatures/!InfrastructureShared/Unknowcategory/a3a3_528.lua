@@ -3,24 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = this_sigattrlog[9]
-if not l_0_0 or not l_0_0.utf8p1 then
-  return mp.CLEAN
+local l_0_0 = false
+local l_0_1 = false
+if (hstrlog[1]).hitcount >= 1 or (hstrlog[2]).hitcount >= 1 or (hstrlog[3]).hitcount >= 1 then
+  l_0_0 = true
 end
-local l_0_1 = this_sigattrlog[8]
-if not l_0_1 or not l_0_1.utf8p2 then
-  return mp.CLEAN
+if (hstrlog[4]).hitcount >= 1 or (hstrlog[5]).hitcount >= 1 or (hstrlog[6]).hitcount >= 1 then
+  l_0_1 = true
 end
-local l_0_2 = tonumber(l_0_0.utf8p1)
-if l_0_2 < 9000 or l_0_2 > 50000 then
-  return mp.CLEAN
+if (hstrlog[7]).hitcount >= 1 or (hstrlog[8]).hitcount >= 1 or (hstrlog[9]).hitcount >= 1 then
+  l_0_1 = true
 end
-local l_0_3 = (string.match)(l_0_1.utf8p2, "(%d+);regionsize:")
-if not l_0_3 then
-  return mp.CLEAN
+if (hstrlog[10]).hitcount >= 1 or (hstrlog[11]).hitcount >= 1 or (hstrlog[12]).hitcount >= 1 then
+  l_0_1 = true
 end
-local l_0_4 = (string.format)("%s,address:%s,size:0", l_0_0.ppid, l_0_3)
-;
-(mp.TriggerScanResource)("ems", l_0_4)
-return mp.INFECTED
+if l_0_0 and l_0_1 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

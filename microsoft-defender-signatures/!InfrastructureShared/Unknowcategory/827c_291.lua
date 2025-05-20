@@ -3,14 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
-end
-if not peattributes.isvbnative and not peattributes.isvbpcode then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 2097152 then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "\249\000t", 1, true) + 1, "\235")
 return mp.INFECTED
 

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 and (hstrlog[1]).matched then
-  return mp.INFECTED
-end
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("HSTR:TrojanDownloader:Win32/Lerspeng")
+if peattributes.packed and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG") and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG.2") then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

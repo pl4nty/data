@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).VA < pehdr.ImageBase + (pesecs[1]).VirtualAddress + 240 and (hstrlog[1]).VA + 10704 < pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-  return mp.SUSPICIOUS
+if peattributes.isdll and peattributes.enable_vmm_grow and (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.dynmem_APIcall and peattributes.suspicious_linker_version then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

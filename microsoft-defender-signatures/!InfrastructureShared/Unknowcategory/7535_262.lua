@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true or peattributes.isdll == true and (mp.getfilesize)() <= 35463936 and (mp.getfilesize)() >= 25463936 then
-  return mp.INFECTED
+if (hstrlog[1]).matched or (hstrlog[2]).matched then
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_56CB")
 end
-return mp.CLEAN
+return mp.INFECTED
 

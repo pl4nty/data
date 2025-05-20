@@ -3,22 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[6]).utf8p2
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 then
-    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    if l_0_1 ~= nil then
-      for l_0_5,l_0_6 in ipairs(l_0_1) do
-        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-        ;
-        (bm.add_related_file)(l_0_6)
-      end
-    end
-  end
-end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
-end
+local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, "\n\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 32, "\255T$\bêê")
+;
+(pe.set_image_filename)("notepad.exe")
+;
+(pe.reemulate)()
+return mp.INFECTED
 

@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if (string.find)(l_0_1, "\\windows\\system32\\services.exe", 1, true) then
-      if (versioning.IsSeville)() then
-        return mp.INFECTED
-      end
-      return mp.LOWFI
-    end
-  end
-  return mp.CLEAN
+if (hstrlog[1]).matched and (hstrlog[1]).VA == 4194905 and pehdr.AddressOfEntryPoint == 4112 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).RVA == 4240 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (pe.get_exports_count)() == 5 then
+if (string.find)((mp.getfilename)(), "(Rtf0000)", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -8,7 +8,7 @@ for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
   local l_0_1 = nil
   -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
 
-  if (sigattr_tail[R4_PC6]).matched and (sigattr_tail[R4_PC6]).attribute == 16393 then
+  if (sigattr_tail[R4_PC6]).matched and (sigattr_tail[R4_PC6]).attribute == 16401 then
     l_0_1 = (sigattr_tail[R4_PC6]).utf8p2
     if l_0_1 ~= nil then
       for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do

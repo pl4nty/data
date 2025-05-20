@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.isexe == true and peattributes.no_security == true then
+local l_0_0 = 0
+if (hstrlog[1]).matched then
+  l_0_0 = (hstrlog[1]).hitcount
+end
+if l_0_0 >= 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

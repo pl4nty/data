@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win64/Zusy.AP!MTB")) then
+if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

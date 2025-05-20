@@ -3,29 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-if (this_sigattrlog[5]).matched then
-  l_0_2 = (this_sigattrlog[5]).image_path
-else
-  if (this_sigattrlog[6]).matched then
-    l_0_2 = (this_sigattrlog[6]).image_path
-  end
+local l_0_0 = pevars.sigaddr
+local l_0_1 = (pe.mmap_va)(l_0_0 + 2287, 32)
+if (mp.readu_u32)(l_0_1, 1) ~= 1935939071 or (mp.readu_u32)(l_0_1, 5) ~= 3277652040 or (mp.readu_u16)(l_0_1, 9) == 52428 or (mp.readu_u32)(l_0_1, 11) == 3435973836 or (mp.readu_u32)(l_0_1, 15) == 3435973836 or (mp.readu_u32)(l_0_1, 18) == 3435973836 or (mp.readu_u32)(l_0_1, 22) ~= 1098924136 then
+  (mp.set_mpattribute)("PEBMPAT:VirTool:Win32/Autoit!obfuscated")
+  return mp.CLEAN
 end
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    if l_0_7.image_path == l_0_2 then
-      local l_0_8, l_0_9 = (string.match)(l_0_7.ppid, "pid:(%w+),ProcessStart:(%w+)")
-      local l_0_10 = tonumber(l_0_8)
-      local l_0_11 = tonumber(l_0_9)
-      local l_0_12, l_0_13 = (mp.bsplit)(l_0_11, 32)
-      local l_0_14 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_10, l_0_12, l_0_13)
-      ;
-      (mp.TriggerScanResource)("ems", l_0_14)
-    end
-  end
-end
-do
-  return mp.INFECTED
-end
+return mp.SUSPICIOUS
 

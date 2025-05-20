@@ -3,11 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (((((hstrlog[1]).matched and not (hstrlog[3]).matched) or (hstrlog[5]).matched) and not (hstrlog[7]).matched) or (hstrlog[2]).matched) and ((hstrlog[4]).matched or (hstrlog[6]).matched or (hstrlog[8]).matched) then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.LOWFI
+if peattributes.no_exports then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 1 then
+  for l_0_5 = 1, l_0_0 do
+    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
+    if (string.lower)(l_0_6) == "splsamodeinitialize" then
+      return mp.INFECTED
+    end
+  end
+end
+do
+  return mp.CLEAN
+end
 

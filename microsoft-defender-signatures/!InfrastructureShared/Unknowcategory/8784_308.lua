@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-if peattributes.isdll and peattributes.hasexports then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis_VMM_Grow")
+;
+(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_6")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 27, "êê")
 return mp.CLEAN
 

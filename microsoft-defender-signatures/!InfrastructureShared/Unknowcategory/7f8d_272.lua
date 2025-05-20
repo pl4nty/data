@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Strictor.AMCV") then
+if (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 1048000 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

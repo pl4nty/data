@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Win64/IcedID.MT!MTB") then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0.image_path, -7)) == "cmd.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

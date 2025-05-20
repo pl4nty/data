@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((pehdr.DataDirectory)[1]).Size < 256 then
+if peattributes.hasappendeddata and peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

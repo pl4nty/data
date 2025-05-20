@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.no_security == true then
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:Searchproxy.D")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

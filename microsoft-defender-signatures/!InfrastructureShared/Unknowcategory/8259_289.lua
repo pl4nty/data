@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 <= 393216 and l_0_0 >= 327680 and (pesecs[4]).Name == ".py" then
+if (mp.get_mpattribute)("NID:Trojan:Win64/Rootkit.MBXI!MTB") and (mp.get_mpattribute)("Lua:Issuer.Microsoft") and (mp.get_mpattribute)("pea_isdriver") then
   return mp.INFECTED
 end
 return mp.CLEAN

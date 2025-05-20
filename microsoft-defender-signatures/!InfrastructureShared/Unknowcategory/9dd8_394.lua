@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.get_mpattribute)("HSTR:NSIS_Installer") or (mp.get_mpattribute)("HSTR:NSIS.gen!A")) and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).Size == 0 then
-  return mp.INFECTED
+if (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr - 2, 2), 1) ~= 55295 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "ût", 1, true), "\235")
+return mp.INFECTED
 

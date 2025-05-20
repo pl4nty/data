@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
-return mp.INFECTED
+if peattributes.isdll == true and pehdr.AddressOfEntryPoint == 0 and peattributes.hasexports == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

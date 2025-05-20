@@ -24,7 +24,7 @@ GetPathInclusions = function()
   l_3_0["%systemroot%\\system32\\vssadmin.exe"] = 2
   l_3_0["%systemroot%\\system32\\wbem\\wmic.exe"] = 2
   l_3_0["%systemroot%\\syswow64\\wbem\\wmic.exe"] = 2
-  if (versioning.IsSampled)(60000, false, true, true) == true then
+  if (versioning.IsSampled)(75000, false, true, true) == true then
     l_3_0["%systemroot%\\syswow64\\vssadmin.exe"] = 2
     l_3_0["%systemroot%\\system32\\windowspowershell\\*\\powershell.exe"] = 2
     l_3_0["%systemroot%\\syswow64\\windowspowershell\\*\\powershell.exe"] = 2
@@ -39,10 +39,10 @@ GetCommandLineInclusions = function()
   local l_4_2 = {}
   l_4_2[l_4_0] = 0
   l_4_2[l_4_1] = 0
-  if (versioning.IsSampled)(60000, false, true, true) == true then
+  if (versioning.IsSampled)(75000, false, true, true) == true then
     l_4_2["powershell(.exe)?\"?s+.*\"?get-wmiobjects+win32_shadowcopys*|s*remove-wmiobjects*\"?"] = 0
   end
-  if (versioning.IsSampled)(8000, false, true, true) == true then
+  if (versioning.IsSampled)(15000, false, true, true) == true then
     l_4_2["vssadmin(.exe)?[s\"]+resizes+shadowstorages+.+?/maxsize=[0]+(((g|m)b)|%)"] = 0
   end
   return l_4_2

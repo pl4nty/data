@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if (string.find)(l_0_1, " %d%d%d?%d?%d? ", 1, false) and (string.find)(l_0_1, " %d%d?%d?%.%d%d?%d?%.%d%d?%d?%.%d%d?%d?% ", 1, false) then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 255 then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)((mp.getfilename)())
+if l_0_1:find("%.eml%->%(part000%d:%)$") or l_0_1:find("%->%(ole stream %d%)%->%(msg%)%->%(rtfbody%)") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,14 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_hstr_exhaustive") then
-  (pe.set_peattribute)("enable_vmm_grow", true)
-  ;
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
+local l_0_3 = nil
+if (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME) == nil then
+  local l_0_0, l_0_1 = nil
+  if l_0_3 == nil then
+    return mp.CLEAN
+  end
+  l_0_0 = l_0_3:sub(-6)
+  local l_0_2 = nil
 else
-  return mp.INFECTED
+  do
+    -- DECOMPILER ERROR at PC21: Confused about usage of register: R2 in 'UnsetPending'
+
+    if (string.find)((l_0_1:sub(-6)):lower(), ".plist") then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
 

@@ -3,20 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-  do
-    do
-      if l_0_0:len() > 13 and (string.sub)(l_0_0, -13) == "\\win32spl.dll" then
-        local l_0_1 = (string.lower)((bm.get_imagepath)())
-        if (string.sub)(l_0_1, -11) == "svchost.exe" then
-          return mp.CLEAN
-        end
-      end
-      ;
-      (bm.add_related_file)(l_0_0)
-      return mp.INFECTED
-    end
+if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+  local l_0_0 = (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 18, 4), 1), 4), 1))
+  local l_0_1 = (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 34, 4), 1), 4), 1))
+  if l_0_0 == 1467596470 and (l_0_1 == 3909456120 or l_0_1 == 4231370131) then
+    return mp.INFECTED
   end
+end
+do
+  return mp.CLEAN
 end
 

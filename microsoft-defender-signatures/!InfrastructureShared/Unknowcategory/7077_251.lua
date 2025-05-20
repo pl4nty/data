@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("TEL:NID:Trojan:Win32/Lolopak.A!al1") then
+if peattributes.isexe and peattributes.x86_image and peattributes.ismsil == false and peattributes.isvbnative then
   return mp.INFECTED
 end
 return mp.CLEAN

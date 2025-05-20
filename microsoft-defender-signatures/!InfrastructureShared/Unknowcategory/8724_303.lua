@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() == 47576 and peattributes.no_security == true and peattributes.isexe == true and (pesecs[4]).Name == ".ex_rsc" then
+local l_0_0 = ((mp.getfilename)()):lower()
+if (mp.get_mpattribute)("BM_RTF_FILE") == true and (string.find)(l_0_0, ".rtf", -4, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

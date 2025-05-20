@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and (pesecs[1]).Name == "   " then
+if peattributes.isdll == true and ((pe.get_exports_count)() == 11 or (pe.get_exports_count)() == 31) then
   return mp.INFECTED
 end
 return mp.CLEAN

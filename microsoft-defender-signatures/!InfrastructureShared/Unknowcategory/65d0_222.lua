@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1000 and (mp.get_mpattribute)("BM_TEXT_FILE") then
+if peattributes.isexe and peattributes.no_security and not peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

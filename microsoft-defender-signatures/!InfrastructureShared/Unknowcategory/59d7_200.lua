@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.executable_image and peattributes.x86_image then
+if (mp.get_mpattribute)("NID:Trojan:Win64/Destroysom.MBXK!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

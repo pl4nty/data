@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and peattributes.no_security and peattributes.isvbnative and peattributes.x86_image then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 35840 and l_0_0 < 204800 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "/externallinks", 1, true) or (string.find)(l_0_0, "->(ole stream 0)->(msg)", 1, true) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

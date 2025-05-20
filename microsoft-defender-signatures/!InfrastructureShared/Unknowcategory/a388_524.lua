@@ -3,24 +3,34 @@
 
 -- params : ...
 -- function num : 0
-local l_0_2 = nil
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = "|.doc|docx|docm|dotx|dotm|docb"
-  end
-  if l_0_2 ~= nil then
-    local l_0_3 = nil
-    for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
-      local l_0_4 = nil
-      -- DECOMPILER ERROR at PC26: Confused about usage of register: R7 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R7_PC26) and (string.find)(l_0_3, (string.sub)(R7_PC26, -4), 1, true) then
-        (bm.add_related_file)(R7_PC26)
-      end
+local l_0_0 = 0
+if (this_sigattrlog[1]).matched then
+  local l_0_1 = nil
+  local l_0_2, l_0_3 = (bm.get_process_relationships)()
+  for l_0_7,l_0_8 in ipairs(l_0_2) do
+    l_0_1 = l_0_8.image_path
+    if (string.find)(l_0_1, "\\WINWORD.EXE") then
+      l_0_0 = l_0_0 + 1
+      break
     end
   end
   do
-    return mp.INFECTED
+    local l_0_9 = nil
+    for l_0_13,l_0_14 in ipairs(l_0_3) do
+      l_0_9 = l_0_14.image_path
+      if (string.find)(l_0_9, "\\powershell.exe") or (string.find)(l_0_9, "\\cmd.exe") then
+        l_0_0 = l_0_0 + 1
+        break
+      end
+    end
+    do
+      do
+        if l_0_0 == 2 then
+          return mp.INFECTED
+        end
+        return mp.CLEAN
+      end
+    end
   end
 end
 

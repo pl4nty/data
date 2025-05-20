@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
+if peattributes.isexe and peattributes.x86_image and peattributes.no_exports and peattributes.hasappendeddata then
   return mp.INFECTED
 end
 return mp.CLEAN

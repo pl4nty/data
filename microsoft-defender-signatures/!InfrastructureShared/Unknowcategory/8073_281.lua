@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.sub)(l_0_0.image_path, -9)) == "mshta.exe" then
   return mp.INFECTED
-else
-  if (hstrlog[2]).matched then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
 end
 return mp.CLEAN
 

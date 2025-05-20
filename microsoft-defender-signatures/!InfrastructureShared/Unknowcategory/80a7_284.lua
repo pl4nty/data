@@ -3,12 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\opera software\\", 1, true) then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+if peattributes.isdll == false and (mp.getfilesize)() < 600000 then
+  return mp.SUSPICIOUS
 end
+;
+(mp.set_mpattribute)("HSTR:Obfuscator_CheckApiArtifact2")
 return mp.CLEAN
 

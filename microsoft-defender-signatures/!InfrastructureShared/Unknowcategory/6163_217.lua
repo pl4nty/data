@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".rrdata" and (pesecs[6]).Name == ".lif\a" then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:FakeApp.N")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

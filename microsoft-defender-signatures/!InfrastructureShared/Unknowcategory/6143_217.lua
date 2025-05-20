@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:AnyDown.A")
+if peattributes.ismsil and peattributes.x86_image and peattributes.isexe then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

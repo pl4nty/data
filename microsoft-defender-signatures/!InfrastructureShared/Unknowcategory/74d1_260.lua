@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:find("\\wscript.exe") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 14, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "x")
+return mp.INFECTED
 

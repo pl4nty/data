@@ -3,22 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("LUA:FileSizeLE5000.A") then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-if l_0_2 == nil then
-  l_0_0 = (mp.getfilename)()
-  if l_0_0 == nil then
-    return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
-  l_0_1 = l_0_0:sub(-5)
-else
-  l_0_1 = l_0_2:sub(-5)
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    if (mp.GetExecutablesFromCommandLine)(l_0_0) then
+      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+        local l_0_3 = nil
+        -- DECOMPILER ERROR at PC27: Confused about usage of register: R6 in 'UnsetPending'
+
+        R6_PC27 = (mp.ContextualExpandEnvironmentVariables)(R6_PC27)
+        if R6_PC27 and (sysio.IsFileExists)(R6_PC27) then
+          (mp.ReportLowfi)(R6_PC27, 3331634663)
+        end
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
-if (string.find)(l_0_1:lower(), ".asp") then
-  return mp.INFECTED
-end
-return mp.LOWFI
 

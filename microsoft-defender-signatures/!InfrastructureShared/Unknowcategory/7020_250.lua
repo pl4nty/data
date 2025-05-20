@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil and (string.find)(l_0_0.image_path, "java", -4, true) then
+if mp.HSTR_WEIGHT == 3 then
   return mp.INFECTED
 end
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
 return mp.CLEAN
 

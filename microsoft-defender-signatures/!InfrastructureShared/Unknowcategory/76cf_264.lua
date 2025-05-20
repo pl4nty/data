@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+local l_0_0 = (mp.getfilesize)()
+if mp.HSTR_WEIGHT >= 6 and l_0_0 < 327680 then
+  (mp.set_mpattribute)("PUA:Block:Bundlore.P")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

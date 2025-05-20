@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if pehdr.NumberOfSections == 6 and l_0_0 >= 15000000 and l_0_0 <= 22000000 then
+if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("BM_OLE_FILE") then
   return mp.INFECTED
 end
 return mp.CLEAN

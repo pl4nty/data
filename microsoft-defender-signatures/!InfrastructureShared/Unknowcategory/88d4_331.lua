@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 293417 then
+if peattributes.isdll then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 17920 or l_0_0 > 70656 then
   return mp.CLEAN
 end
 ;
-(mp.set_mpattribute)("LoD:VirTool:Win32/Obfuscator.ACV.2")
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\001\000\000")
 return mp.INFECTED
 

@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (string.lower)(l_0_0.command_line)
-if (string.find)(l_0_1, "/browser:", 1, true) then
-  return mp.CLEAN
-end
+(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 3695440085)
+;
+(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2615380485)
 return mp.INFECTED
 

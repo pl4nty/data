@@ -3,22 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if peattributes.no_exports then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 > 1 then
-  for l_0_5 = 1, l_0_0 do
-    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
-    if (string.lower)(l_0_6) == "rathbuige" then
-      return mp.INFECTED
-    end
-  end
-end
-do
-  return mp.CLEAN
-end
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 20), "u", 1, true) - 1
+local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "t", 1, true) - l_0_0 - 1
+local l_0_2 = (string.format)("\235%s", (string.char)(l_0_1))
+;
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, l_0_2)
+return mp.INFECTED
 

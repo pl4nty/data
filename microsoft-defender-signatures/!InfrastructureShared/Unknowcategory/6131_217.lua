@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_sigattr_event_count)(16385) > 2 or (mp.get_sigattr_event_count)(16386) > 2 then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%-%>%(VFS%:%d+%.bat%)$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

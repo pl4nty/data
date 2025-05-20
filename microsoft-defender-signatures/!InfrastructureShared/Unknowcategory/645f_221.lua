@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[7]).Name == "grYKEXdm" and (pesecs[8]).Name == "VruEoiBa" then
+if peattributes.isexe == true and (pesecs[5]).Name == "zaas" then
   return mp.INFECTED
 end
 return mp.CLEAN

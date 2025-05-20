@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isdll or peattributes.isexe or peattributes.ismsil) and peattributes.no_security then
-  return mp.INFECTED
+(mp.set_mpattribute)("PUA:Block:Bayads")
+if (mp.get_mpattribute)("//HSTR:Win32/Bayads!Exc") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

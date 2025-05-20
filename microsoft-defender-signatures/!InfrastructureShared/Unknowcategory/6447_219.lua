@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:JSUtilsFramework")
-if mp.HSTR_WEIGHT >= 7 then
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Genieo.Q!xp")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

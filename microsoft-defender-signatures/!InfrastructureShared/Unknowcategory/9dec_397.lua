@@ -3,25 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  (bm.request_SMS)(l_0_0.ppid, "M")
-end
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (this_sigattrlog[3]).matched == true then
-    local l_0_1 = (this_sigattrlog[3]).ppid
-    if l_0_1 ~= nil then
-      (bm.request_SMS)(l_0_1, "M")
-    end
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = nil
   end
-  do
-    if (this_sigattrlog[4]).matched == true then
-      local l_0_2 = (this_sigattrlog[4]).ppid
-      if l_0_2 ~= nil then
-        (bm.request_SMS)(l_0_2, "M")
-      end
-    end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC18: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_1 = l_0_0 .. ".zip"
+  if (MpCommon.QueryPersistContext)(l_0_1, "NewlyCreatedZip") then
+    (bm.add_related_file)(l_0_1)
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

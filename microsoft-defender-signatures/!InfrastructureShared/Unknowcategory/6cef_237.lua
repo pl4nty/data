@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_exports_count)()
-if peattributes.isdll == true and (l_0_0 == 10 or l_0_0 == 11) then
-  return mp.INFECTED
+if (mp.get_mpattribute)("Suspicious:CraftedPE_Import") then
+  (mp.set_mpattribute)("Suspicious:CraftedFile_Import")
 end
 return mp.CLEAN
 

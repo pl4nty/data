@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true and peattributes.hasexports ~= true then
+if MpCommon.SECURITY_MANDATORY_LOW_RID < ((bm.get_current_process_startup_info)()).integrity_level then
   return mp.CLEAN
 end
-if (pe.get_exports)() == 1 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

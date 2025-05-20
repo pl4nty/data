@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if mp.HSTR_WEIGHT >= 5 then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 < 61440 and l_0_0 > 57344 then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
-  return mp.LOWFI
+if peattributes.isdll == true and (mp.get_mpattribute)("NID:Trojan:Win32/GhostSocks.G5") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

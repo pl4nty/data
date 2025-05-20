@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.ismsil == true and peattributes.isexe == true and peattributes.amd64_image == true then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "(RarSfx)", 1, true) then
+  (mp.set_mpattribute)("//RarSfxPwdAppdata")
 end
 return mp.CLEAN
 

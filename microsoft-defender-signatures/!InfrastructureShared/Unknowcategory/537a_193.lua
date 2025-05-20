@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 50000 or l_0_0 > 150000 and l_0_0 < 400000 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 5 then
+  (mp.set_mpattribute)("ALFPER:Rakzmer.A1X")
 end
-return mp.CLEAN
+return mp.INFECTED
 

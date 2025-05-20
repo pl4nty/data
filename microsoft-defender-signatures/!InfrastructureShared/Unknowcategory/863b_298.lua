@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true and peattributes.no_security == true then
-  return mp.INFECTED
+if (mp.getfilesize)() < 1000000 and peattributes.executes_from_last_section == true then
+  if mp.HSTR_WEIGHT >= 3 then
+    return mp.SUSPICIOUS
+  else
+    return mp.LOWFI
+  end
 end
 return mp.CLEAN
 

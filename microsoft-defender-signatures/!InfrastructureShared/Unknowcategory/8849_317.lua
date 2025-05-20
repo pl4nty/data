@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and peattributes.no_security and peattributes.isvbnative and peattributes.x86_image then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 35840 and l_0_0 < 204800 then
-      return mp.INFECTED
-    end
+if peattributes.isdll and (mp.get_mpattribute)("RPF:UrsnifDLL") then
+  if peattributes.amd64_image then
+    (mp.changedetectionname)(805306417)
+    return mp.INFECTED
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
+return mp.CLEAN
 

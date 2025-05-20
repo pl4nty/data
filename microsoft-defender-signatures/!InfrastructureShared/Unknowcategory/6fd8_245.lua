@@ -3,7 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(zipsfx%)%-%>%w+%.bat$") == nil then
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if not peattributes.x86_image then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
   return mp.CLEAN
 end
 return mp.INFECTED

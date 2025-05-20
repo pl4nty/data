@@ -3,11 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpPeekIntoResources") then
-  (mp.set_mpattribute)("MpPeekIntoResources")
-end
-if peattributes.no_security == true and peattributes.isdll == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_regval)(pe.REG_EIP, (pe.get_regval)(pe.REG_EIP) + (string.byte)((pe.mmap_va)(pevars.sigaddr - 1, 1), 1))
+return mp.INFECTED
 

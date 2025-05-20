@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)) then
+do
+  if not peattributes.hasappendeddata then
+    local l_0_0 = pehdr.NumberOfSections
+    if (pesecs[l_0_0]).SizeOfRawData > 3670016 then
+      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("HSTR:AADInternalWin32Ntv") then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

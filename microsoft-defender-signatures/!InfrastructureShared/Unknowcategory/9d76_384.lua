@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
-  (mp.set_mpattribute)("PUA:Block:XMRigCC")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0:find("svchost.exe") then
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 2527504772)
   return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrigcc")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrigcc")
 end
 return mp.CLEAN
 

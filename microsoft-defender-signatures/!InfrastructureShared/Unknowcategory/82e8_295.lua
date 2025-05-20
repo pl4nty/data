@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 131 and epcode[2] == 236 and epcode[30] == 185 and epcode[35] == 128 and epcode[36] == 48 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "\015\133", 1, true) - 1, "")
+return mp.INFECTED
 

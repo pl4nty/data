@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.getfilesize)() > 2000000 and (mp.getfilesize)() < 9000000 then
-  return mp.INFECTED
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("SIGATTR:MPK64")
+else
+  ;
+  (mp.set_mpattribute)("SIGATTR:MPK32")
 end
 return mp.CLEAN
 

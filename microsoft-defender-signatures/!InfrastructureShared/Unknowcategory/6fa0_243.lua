@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("SIGATTR:Trojan:Win64/KillWin.AAE") then
+local l_0_0 = ((mp.getfilename)()):lower()
+if (string.find)(l_0_0, ":\\users\\", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

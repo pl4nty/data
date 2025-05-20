@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (pe.get_api_id)((pe.get_regval)(pe.REG_EAX)) ~= 4111270722 then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\001\000\000\000")
-return mp.INFECTED
+(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_1")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 22, "êê")
+return mp.CLEAN
 

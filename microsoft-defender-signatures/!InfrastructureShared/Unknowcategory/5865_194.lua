@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:MSIL/Obfuscator.Deepsea.D") then
+if peattributes.no_security == true and peattributes.ismsil == true then
   return mp.INFECTED
 end
 return mp.CLEAN

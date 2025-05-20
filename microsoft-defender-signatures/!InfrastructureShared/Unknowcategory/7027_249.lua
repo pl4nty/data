@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched or (hstrlog[2]).matched then
-  if (hstrlog[1]).matched and (hstrlog[2]).matched then
-    return mp.CLEAN
-  end
+if peattributes.isexe and peattributes.x86_image and (pesecs[1]).Name == "   " then
   return mp.INFECTED
 end
 return mp.CLEAN

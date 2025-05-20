@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (string.lower)(l_0_0.command_line)
-if (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "windowsazure", 1, true) or (string.find)(l_0_1, "chocolatey.", 1, true) then
-  return mp.CLEAN
+local l_0_0 = (mp.GetBruteMatchData)()
+if l_0_0.match_offset == 0 and l_0_0.is_header then
+  if (mp.getfilesize)() > 64 then
+    return mp.CLEAN
+  end
+  if (mp.readu_u32)(headerpage, 1) == 1497451600 and (mp.readu_u16)(headerpage, 5) == 2573 then
+    return mp.INFECTED
+  end
 end
-return mp.INFECTED
+return mp.CLEAN
 

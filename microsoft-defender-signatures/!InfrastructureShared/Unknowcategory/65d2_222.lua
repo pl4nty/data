@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.no_security then
+if mp.HSTR_WEIGHT >= 7 then
+  (mp.set_mpattribute)("PUA:Block:RefogKeylogger")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 
