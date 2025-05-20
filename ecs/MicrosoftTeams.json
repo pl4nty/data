@@ -1830,6 +1830,7 @@
         "ODSPFeatureFlags": {
             "DisableAtMentionSuggestionInWelcomeMessage": true,
             "EnableBizchatIntegration": true,
+            "EnableMessageSensitivityLabel": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
             "MigrateGetTeamsAppID": true
         },

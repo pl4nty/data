@@ -1057,6 +1057,7 @@
         "Nh_Enable_Request_Caching": true,
         "Nh_Flw_Flu_Direct_Connection": true,
         "Nh_Force_Web_Workers": 1,
+        "Nh_High_Dpi_Scale_4k": true,
         "Nh_New_Error_Handler": true,
         "Nh_New_Mobius_Branding": true,
         "Nh_SendDirectConnection_Diagnostics": true,
