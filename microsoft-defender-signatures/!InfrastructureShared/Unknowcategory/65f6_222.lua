@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode == true and pehdr.NumberOfSections == 3 then
+if mp.HSTR_WEIGHT >= 2 then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+return mp.LOWFI
 

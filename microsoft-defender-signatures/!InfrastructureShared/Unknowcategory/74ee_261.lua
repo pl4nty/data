@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
-  return mp.CLEAN
+if epcode[1] == 139 and epcode[2] == 255 and epcode[3] == 200 and epcode[4] == 128 then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("PUA:Block:BrowseFox")
-return mp.INFECTED
+return mp.CLEAN
 

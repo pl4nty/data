@@ -3,10 +3,13 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 8)
-if (mp.readu_u32)(l_0_0, 5) < 589824 then
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p1
+    ;
+    (mp.TriggerScanResource)("file", l_0_0, 0)
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-return mp.INFECTED
 

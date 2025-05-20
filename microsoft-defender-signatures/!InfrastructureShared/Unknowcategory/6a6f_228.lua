@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)((string.lower)(l_0_0), ".asar$") ~= nil then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  (bm.add_related_process)(l_0_6.ppid)
 end
-return mp.CLEAN
+return mp.INFECTED
 

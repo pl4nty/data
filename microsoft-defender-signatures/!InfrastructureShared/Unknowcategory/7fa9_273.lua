@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.packed and (mp.get_mpattribute)("SIGATTR:deepemu") and (mp.get_mpattribute)("MpHasExpensiveLoop") then
+if peattributes.isexe == true and (pesecs[7]).Name == ".reloc" and (pesecs[7]).Characteristics == 1107296320 then
   return mp.INFECTED
 end
 return mp.CLEAN

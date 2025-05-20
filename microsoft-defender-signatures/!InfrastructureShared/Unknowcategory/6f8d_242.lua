@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 614400 and l_0_0 < 716800 and (mp.get_mpattribute)("elfa_isstripped") then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "websettings.xml.rels") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

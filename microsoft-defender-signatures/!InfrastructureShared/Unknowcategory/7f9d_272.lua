@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_PROTECTED_PROCESS_RID then
+if (mp.get_mpattribute)("pea_isexe") and peattributes.no_security == true and (mp.getfilesize)() < 120000 then
   return mp.INFECTED
 end
 return mp.CLEAN

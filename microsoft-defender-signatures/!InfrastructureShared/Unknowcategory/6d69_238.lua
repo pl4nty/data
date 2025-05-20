@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%[cmdembedded%]$") == nil then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") or peattributes.isexe == false then
   return mp.CLEAN
 end
 return mp.INFECTED

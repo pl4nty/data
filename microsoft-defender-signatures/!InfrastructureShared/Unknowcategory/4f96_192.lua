@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("CERT:PUA:Win32/FusionCore.AB") then
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 ~= nil and mp.HSTR_CALLER_SMS == l_0_0 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

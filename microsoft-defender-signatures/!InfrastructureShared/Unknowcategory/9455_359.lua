@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0 ~= nil and (string.find)(l_0_0, "\\system", 1, true) == nil and (string.find)(l_0_0, "\\windows", 1, true) == nil and (string.find)(l_0_0, "program files", 1, true) == nil then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("HSTR:TrojanClicker:Win64/Fleercivet.B")
+end
+if mp.HSTR_WEIGHT >= 7 then
+  if pehdr.Machine == 332 then
+    (mp.changedetectionname)(805306451)
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

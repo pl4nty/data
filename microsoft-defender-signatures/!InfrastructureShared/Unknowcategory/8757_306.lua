@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 6 and peattributes.isexe then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.isdll and pehdr.NumberOfSections > 5 then
   return mp.INFECTED
 end
 return mp.CLEAN

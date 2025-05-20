@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 12 then
+  return mp.INFECTED
+else
+  if (hstrlog[3]).matched then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
 end
-if (string.lower)((string.sub)(l_0_0.image_path, -12)) ~= "explorer.exe" then
-  return mp.CLEAN
-end
-return mp.LOWFI
+return mp.CLEAN
 

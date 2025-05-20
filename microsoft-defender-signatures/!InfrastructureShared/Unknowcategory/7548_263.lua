@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 20, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+if peattributes.isvbnative == true then
+  (pe.set_image_filename)("C:\\temp\\myapp.exe")
+  ;
+  (pe.reemulate)()
+  return mp.INFECTED
+end
 return mp.CLEAN
 

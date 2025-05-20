@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if peattributes.x86_image == true and peattributes.isexe == true then
   return mp.INFECTED
 end
 return mp.CLEAN

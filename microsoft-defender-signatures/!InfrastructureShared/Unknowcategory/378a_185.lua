@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("ValidDigitalSignature") then
-  return mp.CLEAN
+if peattributes.isexe or peattributes.isdll then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 5 then
-  (mp.set_mpattribute)("ALFPER:Rakzmer.A1X")
+if peattributes.isdll == true and peattributes.no_security == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 2 and peattributes.isexe and peattributes.lastscn_writable and peattributes.lastscn_executable and peattributes.lastscn_vfalign and (pesecs[pehdr.NumberOfSections]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).VirtualAddress <= (hstrlog[1]).VA - pehdr.ImageBase then
+if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
+  return mp.LOWFI
+end
+if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 and (hstrlog[10]).hitcount == 0 then
+  return mp.LOWFI
+end
+if peattributes.ismsil then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

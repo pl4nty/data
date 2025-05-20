@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)(((pe.get_versioninfo)()).OriginalFilename, 1, 5)) == "lsass" then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.lower)((string.sub)(l_0_0.image_path, -12)) ~= "explorer.exe" then
+  return mp.CLEAN
+end
+return mp.LOWFI
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.packed and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG") and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG.2") then
-  return mp.SUSPICIOUS
+if peattributes.ismsil == true and (mp.get_mpattribute)("LUA:FileSizeLE5000.A") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

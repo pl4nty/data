@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".ctls0" and (pesecs[6]).Name == ".jetb" then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Genieo.D")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

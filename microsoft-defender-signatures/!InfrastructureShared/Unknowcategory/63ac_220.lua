@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "(Rtf0000)", 1, true) then
+if (peattributes.isexe == true or peattributes.isdll == true) and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

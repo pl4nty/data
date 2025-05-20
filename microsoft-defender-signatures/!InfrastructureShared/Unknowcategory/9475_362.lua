@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true and peattributes.hasexports and pehdr.AddressOfEntryPoint == 5136 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = (mp.hstr_full_log)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.matched and (string.byte)((pe.mmap_va)(l_0_5.VA - 39, 1)) == (string.byte)((pe.mmap_va)(l_0_5.VA - 25, 1)) then
     return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-;
-(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_1")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 22, "êê")
-return mp.CLEAN
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
+  return mp.CLEAN
+end
+if (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) ~= true then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

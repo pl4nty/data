@@ -4,14 +4,11 @@
 -- params : ...
 -- function num : 0
 do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if ((hstrlog[1]).matched or (hstrlog[2]).matched) and ((hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched) then
+    local l_0_0 = (mp.getfilesize)()
+    if (l_0_0 >= 1500000 and l_0_0 <= 2000000 and (pesecs[1]).Name == "UPX0") or l_0_0 >= 3300000 and l_0_0 <= 4000000 then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
   return mp.CLEAN
 end

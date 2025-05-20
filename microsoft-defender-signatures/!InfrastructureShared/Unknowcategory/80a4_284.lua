@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (nri.IsResponse)() then
-    local l_0_0 = (nri.GetRawResponseBlob)()
-    if l_0_0 and (string.find)(l_0_0, "Server: Microsoft%-IIS/7.5") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if pehdr.NumberOfSections == 5 and pehdr.SizeOfImage >= 20480 and pehdr.SizeOfImage <= 131072 and (mp.getfilesize)() >= 1048576 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

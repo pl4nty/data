@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignatur") or peattributes.isexe == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

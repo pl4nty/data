@@ -4,15 +4,11 @@
 -- params : ...
 -- function num : 0
 do
-  if peattributes.isexe == true or peattributes.isdll == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    ;
+    (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

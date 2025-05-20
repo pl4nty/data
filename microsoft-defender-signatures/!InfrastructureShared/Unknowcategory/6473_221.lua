@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[6]).Name == "OeZGWeDm" and (pesecs[7]).Name == "fkJVOvQR" then
+if peattributes.x86_image and peattributes.no_exports and peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

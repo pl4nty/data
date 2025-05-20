@@ -3,9 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
-local l_0_1 = (string.sub)(l_0_0, 15, 15)
+if mp.HSTR_WEIGHT > 5 then
+  return mp.INFECTED
+end
+if mp.HSTR_WEIGHT > 4 then
+  return mp.SUSPICIOUS
+end
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "\187" .. l_0_1 .. "\000\000\000êê\144")
-return mp.INFECTED
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+;
+(pe.reemulate)()
+return mp.CLEAN
 

@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr ~= 4198400 then
-  return mp.CLEAN
+if pehdr.NumberOfSections == 10 and (pesecs[8]).Name == ".crt1" then
+  return mp.INFECTED
 end
-;
-(pe.set_peattribute)("hstr_exhaustive", true)
-return mp.INFECTED
+return mp.CLEAN
 

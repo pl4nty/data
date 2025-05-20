@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if mp.HSTR_WEIGHT >= 5 then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 < 61440 and l_0_0 > 57344 then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
-  return mp.LOWFI
+if (mp.getfilesize)() >= 1100000 and (mp.getfilesize)() <= 1400000 and peattributes.no_security == true then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

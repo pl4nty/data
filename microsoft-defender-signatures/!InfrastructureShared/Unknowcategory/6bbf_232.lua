@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+if peattributes.ismsil and peattributes.amd64_image and peattributes.requests_elevation then
   return mp.INFECTED
 end
 return mp.CLEAN

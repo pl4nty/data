@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image then
+if peattributes.is_delphi then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,18 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_1 ~= nil then
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
-      if (sysio.IsFileExists)(l_0_7) and (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-        (bm.add_related_file)(l_0_7)
-      end
-    end
-  end
-end
-do
+if not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.getfilesize)() < 9000000 and ((mp.get_mpattribute)("HSTR:Win32/DelphiFile") or (mp.get_mpattribute)("SIGATTR:DelphiFile") or peattributes.is_delphi or peattributes.isvbpcode or peattributes.isvbnative) then
   return mp.INFECTED
 end
+return mp.CLEAN
 

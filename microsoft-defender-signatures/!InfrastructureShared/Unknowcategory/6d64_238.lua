@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 27, "«D$\016\016\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 96, "êê")
-return mp.INFECTED
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0.OriginalFilename ~= nil and (l_0_0.OriginalFilename):lower() == "schedctl.dll" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

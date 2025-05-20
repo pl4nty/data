@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1, 4), 1) < 1048576 then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT == 4 then
+  return mp.SUSPICIOUS
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
-return mp.INFECTED
+if (hstrlog[1]).matched and (hstrlog[2]).matched then
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AMY")
+end
+return mp.LOWFI
 

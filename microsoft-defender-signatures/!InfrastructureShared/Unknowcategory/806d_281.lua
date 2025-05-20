@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isexe == true or peattributes.ismsil == true) and pehdr.SizeOfImage >= 57344 and pehdr.Subsystem == 2 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil and l_0_0.image_path ~= nil and (string.lower)((string.sub)(l_0_0.image_path, -9)) == "httpd.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

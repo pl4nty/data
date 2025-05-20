@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[7]).Name == ".idata" and (pesecs[7]).Characteristics == 1073741888 then
+if mp.HSTR_WEIGHT < 11 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT == 11 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

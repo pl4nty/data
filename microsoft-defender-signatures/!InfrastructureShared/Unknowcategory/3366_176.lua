@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 3145728 and l_0_0 <= 20971520 then
+if (mp.get_mpattribute)("//RPF:IS_Pdf") then
   return mp.INFECTED
 end
 return mp.CLEAN

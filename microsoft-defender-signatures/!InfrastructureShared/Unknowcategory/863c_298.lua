@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1000000 and peattributes.executes_from_last_section == true then
-  if mp.HSTR_WEIGHT >= 3 then
-    return mp.SUSPICIOUS
-  else
-    return mp.LOWFI
-  end
+if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() > 98304 and (mp.getfilesize)() < 102400 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

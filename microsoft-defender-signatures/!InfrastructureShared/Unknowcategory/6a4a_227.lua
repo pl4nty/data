@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT < 6 and mp.HSTR_WEIGHT > 2 then
+  (mp.set_mpattribute)("HSTR:Trojan:Win32/Emotet.K1")
 end
-return mp.CLEAN
+return mp.INFECTED
 

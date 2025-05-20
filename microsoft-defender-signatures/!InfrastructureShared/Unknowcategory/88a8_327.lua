@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "miniunz%.exe") or (string.find)(l_0_0, "miniunz %(2015_") or (string.find)(l_0_0, "%.svn%-base") then
-  return mp.CLEAN
+if pehdr.NumberOfSections == 14 and peattributes.isexe == true and pehdr.AddressOfEntryPoint == 435072 and (pesecs[4]).Name == "/4" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

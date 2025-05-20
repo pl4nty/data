@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
+do
+  if (hstrlog[6]).matched and (hstrlog[7]).matched then
+    local l_0_0 = mp.HSTR_WEIGHT - 2
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 >= 5 then
+    return mp.INFECTED
+  end
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_vbinject_ky")
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 17920 or l_0_0 > 70656 then
-  return mp.CLEAN
-end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "\001\000\000")
-return mp.INFECTED
 

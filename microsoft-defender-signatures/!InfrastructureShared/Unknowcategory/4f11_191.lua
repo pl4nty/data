@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+if (mp.get_mpattribute)("NID:Adware:Win32/Linkury.A1") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

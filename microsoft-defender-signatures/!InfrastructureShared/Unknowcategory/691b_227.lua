@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources then
+if peattributes.no_security == true and peattributes.isdll and peattributes.hasexports == false then
   return mp.INFECTED
 end
 return mp.CLEAN

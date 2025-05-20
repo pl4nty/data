@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 9, "הה")
-local l_0_0 = 160
-local l_0_1 = (pe.mmap_va)(pevars.sigaddr, l_0_0)
-local l_0_2 = (string.find)(l_0_1, "P\232....=....u", 1, true)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_2 + 10, "\235")
-return mp.INFECTED
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = (pe.mmap_va)(l_0_0 + 30, 4)
+local l_0_2 = 0
+for l_0_6 = 4, 1, -1 do
+  l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
+end
+if l_0_2 + 6 + 30 + l_0_0 ~= (hstrlog[2]).VA then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

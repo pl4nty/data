@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).Name == "UPX0" and (pesecs[1]).SizeOfRawData == 0 then
+if peattributes.isvbpcode == true and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

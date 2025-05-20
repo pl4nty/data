@@ -3,35 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 20000 or l_0_0 > 400000 then
-  return mp.CLEAN
+if peattributes.isexe and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 and peattributes.no_security and ((hstrlog[1]).matched or (hstrlog[2]).matched) and ((hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched) then
+  return mp.INFECTED
 end
-local l_0_1 = tostring(headerpage)
-local l_0_2, l_0_3, l_0_4 = (string.find)(l_0_1, "\'..?.?.?.?.?.?.?.?.?\'[,%+]")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-while 1 do
-  if 0 < 250 then
-    l_0_2 = (string.find)(l_0_1, "\'..?.?.?.?.?.?.?.?.?\'[,%+]", l_0_3)
-  end
-  if l_0_2 == nil then
-    break
-  end
-  if #l_0_1 - 20 < l_0_3 then
-    break
-  end
-  -- DECOMPILER ERROR at PC43: Confused about usage of register: R5 in 'UnsetPending'
-
-  local l_0_5 = 0 + 1
-end
-do
-  -- DECOMPILER ERROR at PC45: Confused about usage of register: R5 in 'UnsetPending'
-
-  if l_0_5 > 200 then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+return mp.CLEAN
 

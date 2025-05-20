@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 ~= nil then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  local l_0_1, l_0_2 = (string.match)(l_0_0, "\\microsoft\\(%a+)\\(%a+)%.exe")
-  if l_0_1 and l_0_2 and (string.sub)(l_0_1, 0, -2) == l_0_2 then
-    return mp.INFECTED
-  end
-end
-do
+if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA ~= 0 then
   return mp.CLEAN
 end
+if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).RVA == 0 then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() >= 307200 or (mp.getfilesize)() < 51200 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

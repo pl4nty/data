@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 <= 393216 and l_0_0 >= 327680 and (pesecs[4]).Name == ".py" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

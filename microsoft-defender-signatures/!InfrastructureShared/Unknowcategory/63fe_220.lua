@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:MacBooster.N")
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:KextLogger.A")
   return mp.INFECTED
 end
 return mp.LOWFI

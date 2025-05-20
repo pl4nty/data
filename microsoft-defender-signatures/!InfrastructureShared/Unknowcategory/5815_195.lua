@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((pehdr.DataDirectory)[1]).Size < 256 then
+if (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Zusy.RX!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

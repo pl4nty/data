@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[2]).Name == "UPX1" then
+if (mp.get_mpattribute)("pea_ismsil") then
   return mp.INFECTED
 end
 return mp.CLEAN

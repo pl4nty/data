@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_security") then
+if (string.match)((string.lower)((mp.getfilename)()), "%.c$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

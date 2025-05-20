@@ -3,9 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 124160 and pehdr.NumberOfSections == 5 and (pesecs[4]).Name == ".zdata" then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["winword.exe"] = true
+  l_0_3["excel.exe"] = true
+  l_0_3["powerpnt.exe"] = true
+  l_0_3["outlook.exe"] = true
+  if l_0_3[l_0_2] then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

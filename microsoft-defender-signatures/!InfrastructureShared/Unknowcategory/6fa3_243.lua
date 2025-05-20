@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") and peattributes.no_security == true then
+if peattributes.isexe == true and (pehdr.NumberOfSections == 3 or pehdr.NumberOfSections == 4) then
   return mp.INFECTED
 end
 return mp.CLEAN

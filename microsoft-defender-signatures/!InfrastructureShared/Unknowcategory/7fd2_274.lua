@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (pesecs[3]).Name == ".reloc" and (pesecs[3]).Characteristics == 1107296320 then
+if peattributes.isdll and peattributes.hasexports and (hstrlog[1]).VA - (hstrlog[2]).VA < 9472 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") and peattributes.no_security == true then
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win64/Trickbot.PA!Pra1") then
   return mp.INFECTED
 end
 return mp.CLEAN

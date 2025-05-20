@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).VirtualSize > 45056 and (pesecs[1]).VirtualSize < 61440 and (pesecs[2]).VirtualSize > 768 and (pesecs[2]).VirtualSize < 1536 then
+if (mp.get_mpattribute)("HSTR:NSIS_Installer") or (mp.get_mpattribute)("HSTR:NSIS.gen!A") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

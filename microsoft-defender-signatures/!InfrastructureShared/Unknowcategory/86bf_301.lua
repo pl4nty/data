@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(0, l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-if l_0_1:gsub("%+%$", "") > 20 then
+if peattributes.isdll and (mp.getfilesize)() < 338000 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
   return mp.INFECTED
 end
 return mp.CLEAN

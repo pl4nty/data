@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+(mp.set_mpattribute)("HSTR:Trojan:MSIL/Grotseento")
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

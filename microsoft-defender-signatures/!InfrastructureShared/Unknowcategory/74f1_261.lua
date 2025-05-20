@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-if not (string.find)(l_0_0, "/upload", 1, true) then
+if peattributes.ismsil == true and peattributes.nx_bit_set == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
   return mp.INFECTED
 end
 return mp.CLEAN

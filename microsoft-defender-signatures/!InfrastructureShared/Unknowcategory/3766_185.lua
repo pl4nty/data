@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_has_msilresources") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("ValidDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

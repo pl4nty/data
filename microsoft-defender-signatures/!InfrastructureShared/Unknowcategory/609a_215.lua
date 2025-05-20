@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:ASPXExt") or (mp.get_mpattribute)("Lua:ASPExt") then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Refog.G")
   return mp.INFECTED
 end
 return mp.LOWFI

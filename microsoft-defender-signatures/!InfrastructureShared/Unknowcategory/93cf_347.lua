@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).p2)
-  local l_0_1 = (string.lower)((this_sigattrlog[2]).p1)
-  if (string.find)(l_0_1, l_0_0, 10, true) then
-    return mp.INFECTED
-  end
+if (hstrlog[2]).VA < pehdr.ImageBase + (pesecs[1]).VirtualAddress + 240 and (hstrlog[1]).VA + 10704 < pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+  return mp.SUSPICIOUS
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

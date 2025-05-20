@@ -3,18 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "IÅ˘", 1, true)
-do
-  if l_0_1 == nil then
-    local l_0_0 = 7
-    l_0_0 = 4
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_6.image_path), "\\spoolsv.exe", 1, true) then
+    return mp.INFECTED
   end
-  -- DECOMPILER ERROR at PC29: Overwrote pending register: R0 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
-
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + l_0_0, "êê")
-  return mp.INFECTED
 end
+return mp.CLEAN
 

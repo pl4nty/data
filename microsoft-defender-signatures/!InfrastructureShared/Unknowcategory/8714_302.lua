@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 18, 5)
-if (mp.readu_u32)(l_0_0, 2) < 9437184 then
+do
+  if peattributes.amd64_image == true and peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-return mp.INFECTED
 

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-    ;
-    (bm.add_related_file)(l_0_0)
-  end
+if peattributes.isexe and peattributes.hasexports and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

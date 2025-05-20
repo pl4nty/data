@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
+return mp.INFECTED
 

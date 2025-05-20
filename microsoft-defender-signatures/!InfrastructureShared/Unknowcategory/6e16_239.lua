@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 3000000 then
+if ((mp.getfilename)()):match("/embeddings/oleObject") then
+  (mp.changedetectionname)(805306516)
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.INFECTED
 

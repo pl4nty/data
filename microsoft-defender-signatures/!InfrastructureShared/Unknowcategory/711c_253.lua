@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "androidmanifest", 1, true) then
-  return mp.INFECTED
+if peattributes.dt_error_not_enough_memory then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
 end
-return mp.CLEAN
+return mp.INFECTED
 

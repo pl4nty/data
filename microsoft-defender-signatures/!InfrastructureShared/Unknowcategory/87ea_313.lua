@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 1000000 then
-  return mp.CLEAN
+if pehdr.NumberOfSections == 11 and (pesecs[7]).Name == ".app0" and (pesecs[9]).Name == ".app1" and (pesecs[10]).Name == ".app2" then
+  return mp.INFECTED
 end
-if (pesecs[1]).Name == "UPX0" then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 15000)
-return mp.INFECTED
+return mp.CLEAN
 

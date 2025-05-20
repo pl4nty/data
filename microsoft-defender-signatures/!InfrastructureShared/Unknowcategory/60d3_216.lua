@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 7 then
+  (mp.set_mpattribute)("PUA:Block:Aircrack")
+  return mp.INFECTED
 end
-if not peattributes.suspicious_image_version then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.LOWFI
 

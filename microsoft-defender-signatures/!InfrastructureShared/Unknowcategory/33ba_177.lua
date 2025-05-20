@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".ntest0" then
+if (mp.get_mpattribute)("SCPT:HTMLFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

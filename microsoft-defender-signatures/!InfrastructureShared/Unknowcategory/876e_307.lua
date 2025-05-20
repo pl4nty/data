@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (string.sub)(l_0_0, 14, 14)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 11, "\187" .. l_0_1 .. "\000\000\000")
-return mp.INFECTED
+if peattributes.isexe == true and peattributes.hasexports == false and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

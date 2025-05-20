@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pesecs[1]).Name == "   " then
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Maconomi.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 11, "\1397")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 15, "")
+if (string.find)((mp.getfilename)(), "%->%(RarSfx%)%->%w+%.exe%->%(RarSfx%)") == nil then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

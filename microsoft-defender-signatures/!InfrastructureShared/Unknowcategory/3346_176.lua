@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 1000 then
-  return mp.CLEAN
+if (pesecs[4]).Name == ".atls5" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

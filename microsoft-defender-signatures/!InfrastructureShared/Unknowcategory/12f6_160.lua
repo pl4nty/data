@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_regval)(pe.REG_EAX, 2147504136)
-return mp.INFECTED
+if peattributes.isexe == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

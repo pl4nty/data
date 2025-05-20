@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and peattributes.isdll then
+if peattributes.ismsil == true and peattributes.isdll == true and peattributes.no_exports == true then
   return mp.INFECTED
 end
 return mp.CLEAN

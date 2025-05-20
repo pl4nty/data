@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
-return mp.INFECTED
+if (mp.get_mpattribute)("NID:BrowserModifier:Win32/Prifou.A2") and peattributes.no_security == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

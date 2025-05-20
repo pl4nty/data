@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "xl/drawings/_rels/drawing1.xml.rels") ~= nil then
+if mp.HSTR_WEIGHT >= 5 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("HSTR:Program:Win32/SoftwareClicker.A")
 return mp.CLEAN
 

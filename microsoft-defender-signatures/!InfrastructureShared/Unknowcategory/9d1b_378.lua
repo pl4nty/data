@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:XMRig")
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrig")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrig")
+end
+return mp.CLEAN
 

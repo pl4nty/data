@@ -3,22 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
-  return mp.CLEAN
-end
-local l_0_1 = (bm.get_imagepath)()
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if l_0_1 ~= nil then
-    local l_0_2 = {}
-    l_0_2["cmstp.exe"] = true
-    l_0_2["dllhost.exe"] = true
-    if l_0_2[((string.lower)((string.sub)(l_0_1, -15))):match("\\([^\\]+)$")] then
-      return mp.CLEAN
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
+
+  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).wp2 == nil or this_sigattrlog[2] ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
+      local l_0_5 = nil
+      -- DECOMPILER ERROR at PC37: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC37 = (mp.ContextualExpandEnvironmentVariables)(R6_PC37)
+      if (sysio.IsFileExists)(R6_PC37) then
+        (bm.add_related_file)(R6_PC37)
+      end
     end
   end
-  ;
-  (bm.add_related_file)(l_0_1)
-  return mp.INFECTED
+  do
+    return mp.INFECTED
+  end
 end
 

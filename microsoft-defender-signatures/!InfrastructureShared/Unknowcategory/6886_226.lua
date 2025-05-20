@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("pea_no_security") then
+if (mp.get_mpattribute)("BM_DEVICE_DRIVER") and (mp.get_mpattribute)("RPF:TopLevelFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

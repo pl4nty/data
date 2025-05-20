@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 55, "")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if (mp.getfilesize)() > 50000 and (mp.getfilesize)() < 1000000 and not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

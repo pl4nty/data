@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 18, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if mp.HSTR_WEIGHT < 103 and peattributes.isexe and (mp.get_mpattribute)("reads_vdll_code") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

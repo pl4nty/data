@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 6 and (mp.getfilesize)() >= 5868504 then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Airpush.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

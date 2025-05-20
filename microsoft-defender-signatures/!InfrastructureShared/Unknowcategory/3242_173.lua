@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") then
-  return mp.INFECTED
+if pehdr.NumberOfSections > 6 then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

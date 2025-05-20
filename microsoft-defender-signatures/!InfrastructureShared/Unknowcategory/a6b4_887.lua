@@ -3,47 +3,45 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_relocs ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+      local l_0_1 = (this_sigattrlog[2]).utf8p2
+    else
+    end
+    -- DECOMPILER ERROR at PC68: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p2 ~= nil then
+        local l_0_2, l_0_3 = (this_sigattrlog[4]).utf8p2
+      end
+      -- DECOMPILER ERROR at PC69: Confused about usage of register: R0 in 'UnsetPending'
+
+      if l_0_2 == nil then
+        return mp.CLEAN
+      end
+      local l_0_4 = nil
+      local l_0_5 = {[".js"] = true, vbs = true, wsf = true, jse = true, vbe = true}
+      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
+        local l_0_6 = nil
+        -- DECOMPILER ERROR at PC90: Confused about usage of register: R7 in 'UnsetPending'
+
+        if (string.len)(R7_PC90) > 3 and (sysio.IsFileExists)(R7_PC90) and l_0_5[(string.sub)(R7_PC90, -3)] then
+          (bm.add_related_file)(l_0_11)
+          ;
+          (mp.ReportLowfi)(l_0_11, 2518044239)
+        end
+      end
+      return mp.INFECTED
+    end
+  end
 end
-if peattributes.isexe ~= true then
-  return mp.CLEAN
-end
-if pehdr.MajorLinkerVersion ~= 6 then
-  return mp.CLEAN
-end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 4 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage < 262144 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage > 389120 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint < 192512 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint > 323584 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections < pevars.epsec then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData < 217088 then
-  return mp.CLEAN
-end
-if (pesecs[pevars.epsec]).SizeOfRawData > 327680 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size < 160 then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[2]).Size > 240 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

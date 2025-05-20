@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Nscript:Type_js") and (mp.get_mpattribute)("Lua:FileSizeLT2000") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("MpRequestSMSM")
+;
+(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 3000)
+return mp.INFECTED
 

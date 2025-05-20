@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_LNK_FILE") then
-  return mp.INFECTED
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 33, "êê\144")
 ;
-(mp.set_mpattribute)("SCRIPT:Regsvr32")
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 38, "êê")
+return mp.INFECTED
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[5]).matched or (hstrlog[6]).matched then
-  (mp.changedetectionname)(805306370)
-end
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(mp.set_mpattribute)("attrmatch_rescan_psif")
 return mp.INFECTED
 

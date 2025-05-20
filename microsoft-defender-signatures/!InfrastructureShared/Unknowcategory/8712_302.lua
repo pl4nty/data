@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 18, 5)
-if (mp.readu_u32)(l_0_0, 2) < 32768 then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 1024000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+local l_0_1 = 0
+if (hstrlog[1]).matched then
+  l_0_1 = (hstrlog[1]).hitcount
+end
+if (hstrlog[2]).matched or l_0_1 > 1 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

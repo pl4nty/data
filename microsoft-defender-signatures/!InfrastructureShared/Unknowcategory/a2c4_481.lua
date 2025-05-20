@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[5]).matched and (hstrlog[6]).matched and ((hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched) then
-  return mp.INFECTED
+local l_0_0 = nil
+for l_0_4 = mp.SIGATTR_LOG_SZ, 1, -1 do
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+
+  if (sigattr_head[R4_PC6]).matched and ((sigattr_head[R4_PC6]).attribute == 16384 or (sigattr_head[R4_PC6]).attribute == 16389) then
+    l_0_1 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[R4_PC6]).utf8p1)
+    if l_0_1 ~= nil and (sysio.IsFileExists)(l_0_1) then
+      (mp.ReportLowfi)(l_0_1 .. "\000", 3307547556)
+    end
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

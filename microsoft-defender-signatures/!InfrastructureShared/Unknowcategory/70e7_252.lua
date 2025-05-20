@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isvbnative or peattributes.isvbpcode) and pehdr.NumberOfSections == 3 then
+if peattributes.hasexports == true and peattributes.isdll == false and pehdr.NumberOfSections == 9 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true or peattributes.isdll == true then
+if (pe.get_regval)(pe.REG_ESP) == 1245124 then
   return mp.INFECTED
 end
 return mp.CLEAN

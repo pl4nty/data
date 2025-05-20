@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("SLF:Win64/Shelcorid.C")
-return mp.LOWFI
+return mp.CLEAN
 

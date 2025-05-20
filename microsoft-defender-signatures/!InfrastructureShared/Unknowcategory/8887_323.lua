@@ -3,15 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 2 then
+  if pehdr.Subsystem == 1 then
+    (mp.changedetectionname)(805306439)
+  else
+    if pehdr.Machine == 34404 then
+      (mp.changedetectionname)(805306438)
+    end
+  end
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 4000000 or l_0_0 < 10000 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

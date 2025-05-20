@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() < 40960 then
+if peattributes.isexe and peattributes.x86_image and peattributes.ismsil == false then
   return mp.INFECTED
 end
 return mp.CLEAN

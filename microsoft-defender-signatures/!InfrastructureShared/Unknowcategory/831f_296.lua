@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.amd64_image then
-  return mp.INFECTED
-end
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
+if not (hstrlog[2]).matched and not (hstrlog[3]).matched then
   return mp.CLEAN
 end
-if mp.HSTR_CALLER_SMS == l_0_0 then
-  return mp.INFECTED
+if not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[3]).Name == ".qhw" or (pesecs[2]).Name == "DrtWJgcR" then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find(".rsa") then
   return mp.INFECTED
 end
 return mp.CLEAN

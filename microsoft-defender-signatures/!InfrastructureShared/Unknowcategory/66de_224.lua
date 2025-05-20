@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:find("udaxihh.rsa") then
+if pehdr.NumberOfSections == 3 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

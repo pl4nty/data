@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\235")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "\002")
-return mp.INFECTED
+if peattributes.ismsil then
+  (mp.set_mpattribute)("HSTR:Worm:MSIL/Cribz!modules")
+  return mp.INFECTED
+end
+return mp.CLEAN
 

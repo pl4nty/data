@@ -3,13 +3,16 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (mp.getfilesize)() < 1200000 and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if l_0_0 == nil or l_0_0 == "" then
+      return mp.CLEAN
+    end
+    if (sysio.IsFileExists)(l_0_0) then
+      (bm.add_related_file)(l_0_0)
     end
     return mp.INFECTED
   end

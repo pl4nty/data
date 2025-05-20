@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 13, "\144")
-return mp.INFECTED
+if (hstrlog[1]).hitcount - 1 == (hstrlog[2]).hitcount then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

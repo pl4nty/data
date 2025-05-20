@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).Name == ".UniKey" then
-  return mp.CLEAN
+if peattributes.lastscn_writable and peattributes.hasappendeddata then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

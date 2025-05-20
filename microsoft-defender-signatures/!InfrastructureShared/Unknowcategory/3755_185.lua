@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
-return mp.INFECTED
+if peattributes.isdll or peattributes.isexe then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

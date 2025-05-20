@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "oleObject%d%.bin$") ~= nil or (string.find)(l_0_0, "%.bin%->%(Ole Stream %d%)$") ~= nil then
+if peattributes.ismsil and (mp.get_mpattribute)("pea_has_msilresources") and (mp.get_mpattribute)("pea_no_security") then
   return mp.INFECTED
 end
 return mp.CLEAN

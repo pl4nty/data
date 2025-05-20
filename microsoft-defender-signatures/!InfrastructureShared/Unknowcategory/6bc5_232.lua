@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 29, "«E")
+if mp.HSTR_WEIGHT >= 11 then
+  return mp.INFECTED
+end
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 36, "êê")
-return mp.INFECTED
+(mp.set_mpattribute)("HSTR:VirTool:Win32/Injector.gen!EE")
+return mp.CLEAN
 

@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 9)
-if (mp.readu_u32)(l_0_0, 6) < 983040 then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 12000 and l_0_0 <= 17096 and (mp.get_mpattribute)("pea_no_security") and peattributes.isexe == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

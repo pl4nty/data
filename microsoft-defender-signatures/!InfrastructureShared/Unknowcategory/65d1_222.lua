@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and not peattributes.x86_image then
+if mp.HSTR_WEIGHT >= 2 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

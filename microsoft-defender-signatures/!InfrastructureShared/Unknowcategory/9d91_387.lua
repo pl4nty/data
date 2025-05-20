@@ -3,17 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
-      if (versioning.IsSeville)() then
-        return mp.INFECTED
-      end
-      return mp.LOWFI
-    end
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:CpuMulti")
+  return mp.INFECTED
 end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_cpumulti")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_cpumulti")
+end
+return mp.CLEAN
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.amd64_image and peattributes.requests_elevation then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 15 then
+  (mp.set_mpattribute)("ALFPER:Rakzmer.A2X")
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:Rakzmer")
+return mp.INFECTED
 

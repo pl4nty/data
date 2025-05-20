@@ -3,18 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
+local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if l_0_0 then
-    local l_0_1 = {}
-    l_0_1["powershell.exe"] = true
-    l_0_1["wscript.exe"] = true
-    l_0_1["cscript.exe"] = true
-    l_0_1["winword.exe"] = true
-    l_0_1["excel.exe"] = true
-    l_0_1["powerpnt.exe"] = true
-    if l_0_1[(string.match)(l_0_0, "\\([^\\]+)$")] then
-      return mp.INFECTED
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
+      if (versioning.IsSeville)() then
+        return mp.INFECTED
+      end
+      return mp.LOWFI
     end
   end
   return mp.CLEAN

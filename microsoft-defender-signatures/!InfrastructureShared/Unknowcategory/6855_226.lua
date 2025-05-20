@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (hstrlog[4]).hitcount >= 50 then
+if (mp.get_mpattribute)("RktProtect.pdb") and peattributes.isdriver then
   return mp.INFECTED
 end
 return mp.CLEAN

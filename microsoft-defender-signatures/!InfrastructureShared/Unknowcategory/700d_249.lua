@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 823159601) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 680197589) == 0 then
-  return mp.CLEAN
+if peattributes.isexe and peattributes.x86_image and (pesecs[1]).Name == "   " then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

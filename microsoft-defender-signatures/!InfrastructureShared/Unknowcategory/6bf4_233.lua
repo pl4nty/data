@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_loadconfig == true then
-  return mp.INFECTED
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("SIGATTR:MPK64")
+else
+  ;
+  (mp.set_mpattribute)("SIGATTR:MPK32")
 end
 return mp.CLEAN
 

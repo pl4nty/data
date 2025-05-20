@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false and (mp.getfilesize)() < 600000 then
-  return mp.SUSPICIOUS
+if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or not (hstrlog[3]).matched) and not (hstrlog[4]).matched) or 0 + 1 + 1 == 2 then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Obfuscator_CheckApiArtifact2")
 return mp.CLEAN
 

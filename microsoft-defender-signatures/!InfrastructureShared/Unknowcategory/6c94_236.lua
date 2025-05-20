@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.suspicious_linker_version then
+if (mp.get_mpattribute)("MHSTR:MacroJustAutoOpen") and (mp.get_mpattribute)("MHSTR:MacroDownload") then
   return mp.INFECTED
 end
 return mp.CLEAN

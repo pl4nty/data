@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Win32/CryptInject.PN!MTB") then
+if (mp.get_mpattribute)("SCPT:HTML/SuspiciousRedirect") then
   return mp.INFECTED
 end
 return mp.CLEAN

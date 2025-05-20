@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil then
+if (mp.get_mpattribute)("BM_DEVICE_DRIVER") and (mp.get_mpattribute)("BM_MZ_DLL") then
   return mp.INFECTED
 end
 return mp.CLEAN

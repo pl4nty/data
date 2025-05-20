@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.isexe and peattributes.has_msilresources then
+if (mp.getfilesize)() <= 6144 and (mp.get_mpattribute)("elfa_isharedlib") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpInternal_IsPliScan") then
-  return mp.INFECTED
-end
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 ~= nil and l_0_0 == mp.HSTR_CALLER_SMS then
+if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

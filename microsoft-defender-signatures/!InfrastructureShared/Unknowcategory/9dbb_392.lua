@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_isexe") then
-    local l_0_0 = (pe.get_versioninfo)()
-    if l_0_0.InternalName == "VideoProjectsLauncher" or l_0_0.CompanyName == "Microsoft Corporation" or l_0_0.OriginalFilename == "VideoProjectsLauncher.exe" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if peattributes.reads_vdll_code and (peattributes.suspicious_image_version or peattributes.uses_access_violation or peattributes.uses_privinstr or peattributes.deep_analysis or peattributes.enable_vmm_grow) and peattributes.isdll then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

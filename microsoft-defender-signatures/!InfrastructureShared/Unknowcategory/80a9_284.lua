@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("BM_HAS_DIGITALSIGNATURE") then
+if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) and ((hstrlog[4]).matched or (hstrlog[5]).matched) then
   return mp.INFECTED
 end
 return mp.CLEAN

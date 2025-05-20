@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetUACMetadata)()
-if l_0_0 == nil then
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
   return mp.CLEAN
 end
-if l_0_0.Type ~= mp.AMSI_UAC_REQUEST_TYPE_COM then
+if (mp.getfilesize)() > 20971520 then
   return mp.CLEAN
 end
-if (string.lower)((l_0_0.Info).Clsid) ~= "48012511-82cc-48f3-ae5b-40c7401a5a09" then
+if (pe.get_exports_count)() < 60 then
   return mp.CLEAN
 end
 return mp.INFECTED

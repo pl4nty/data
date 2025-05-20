@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-if (mp.get_mpattribute)("pea_ismsil") then
+if pehdr.SizeOfImage == 151552 then
+  (mp.changedetectionname)(805306388)
   return mp.INFECTED
 end
-return mp.CLEAN
+if pehdr.SizeOfImage == 86016 then
+  (mp.changedetectionname)(805306389)
+  return mp.INFECTED
+end
+return mp.SUSPICIOUS
 

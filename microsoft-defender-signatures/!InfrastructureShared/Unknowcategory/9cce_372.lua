@@ -3,7 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 242 and peattributes.isexe and (mp.get_mpattribute)("pea_no_security") then
+local l_0_0 = pehdr.ImageBase + ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).RVA
+if l_0_0 <= 0 then
+  return mp.CLEAN
+end
+local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).Size
+local l_0_2 = (hstrlog[1]).VA
+if l_0_0 < l_0_2 and l_0_2 < l_0_0 + l_0_1 then
   return mp.INFECTED
 end
 return mp.CLEAN

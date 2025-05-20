@@ -3,10 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (string.lower)(l_0_0.command_line)
-if (string.find)(l_0_1, "/browser:", 1, true) then
-  return mp.CLEAN
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
+    ;
+    (bm.add_related_file)(l_0_0)
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
 

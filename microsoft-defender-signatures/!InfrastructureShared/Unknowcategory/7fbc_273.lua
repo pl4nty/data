@@ -11,5 +11,5 @@ if mp.HSTR_WEIGHT < 3 then
   ;
   (pe.reemulate)()
 end
-return mp.LOWFI
+return mp.CLEAN
 

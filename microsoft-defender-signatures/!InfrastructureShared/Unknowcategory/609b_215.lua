@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Feiad.B")
+  return mp.INFECTED
 end
-if not peattributes.dt_error_heur_API_limit then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.LOWFI
 

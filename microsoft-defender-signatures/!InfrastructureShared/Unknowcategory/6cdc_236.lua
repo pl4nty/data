@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() >= 614400 and (mp.getfilesize)() <= 1536000 then
+if (hstrlog[7]).matched and (hstrlog[8]).matched then
+  (mp.changedetectionname)(805306748)
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.INFECTED
 

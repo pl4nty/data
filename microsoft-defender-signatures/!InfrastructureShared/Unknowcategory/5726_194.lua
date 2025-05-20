@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:Win32/Banload.ARM") then
+if peattributes.ismsil == true and peattributes.no_security == true then
   return mp.INFECTED
 end
-return mp.SUSPICIOUS
+return mp.CLEAN
 

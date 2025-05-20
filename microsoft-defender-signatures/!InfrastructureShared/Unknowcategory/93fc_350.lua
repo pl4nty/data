@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)(((pe.get_versioninfo)()).CompanyName, 1, 12)) == "bilberrysoft" then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") and (mp.get_mpattribute)("MpExcelFormulaRoutines") and (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

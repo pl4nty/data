@@ -3,18 +3,12 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC44: Unhandled construct in 'MakeBoolean' P3
 
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
-      if (string.find)(l_0_0, ".msc", 1, true) or (string.find)(l_0_0, "\\biztalk", 1, true) or (string.find)(l_0_0, "\\program files", 1, true) then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC44: Unhandled construct in 'MakeBoolean' P3
+
+if (((((hstrlog[1]).matched or (hstrlog[2]).matched or not (hstrlog[4]).matched) and (hstrlog[7]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) >= 3 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

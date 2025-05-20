@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-do
-  local l_0_1 = ""
-  if l_0_0.is_header then
-    l_0_1 = (string.lower)(tostring(headerpage))
-  else
-    l_0_1 = (string.lower)(tostring(footerpage))
-  end
-  if l_0_1 > 3 then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+if mp.HSTR_WEIGHT >= 7 then
+  return mp.INFECTED
 end
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
+end
+return mp.CLEAN
 

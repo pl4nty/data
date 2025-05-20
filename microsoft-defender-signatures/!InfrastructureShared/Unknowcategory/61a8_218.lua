@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and pehdr.NumberOfSections == 5 then
+if mp.HSTR_WEIGHT >= 11 then
+  (mp.set_mpattribute)("PUA:Block:Bundlore.L")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

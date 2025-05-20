@@ -3,7 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+local l_0_0 = (mp.getfilesize)()
+local l_0_1 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size
+if peattributes.no_security == true and l_0_0 >= 32768 and l_0_0 <= 655360 and (l_0_1 >= 56 or pehdr.SizeOfImage <= l_0_1) then
   return mp.INFECTED
 end
 return mp.CLEAN

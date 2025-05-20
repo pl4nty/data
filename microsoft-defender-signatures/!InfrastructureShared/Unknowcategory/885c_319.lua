@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -12) == "\\svchost.exe" then
   return mp.CLEAN
 end
-if (pe.get_exports)() > 200 then
-  return mp.INFECTED
+if (string.sub)(l_0_0, -13) == "\\explorer.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

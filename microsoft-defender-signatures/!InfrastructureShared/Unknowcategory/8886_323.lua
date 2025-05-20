@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if pehdr.NumberOfSections >= 6 and pehdr.NumberOfSections <= 8 and ((mp.get_mpattribute)("NID:CryptInject.AK!Pra1") or (mp.get_mpattribute)("NID:CryptInject.AK!Pra2")) then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 3000000 or l_0_0 < 10000 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

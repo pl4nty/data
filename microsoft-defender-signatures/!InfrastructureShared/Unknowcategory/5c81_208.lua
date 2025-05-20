@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
+(mp.set_mpattribute)("PUA:Block:SRBMiner")
 ;
-(mp.set_mpattribute)("PEBMPAT:Exprio_Tick_Count")
+(mp.set_mpattribute)("Company:CoinMiner64:D0kt0rSolutions")
 return mp.INFECTED
 

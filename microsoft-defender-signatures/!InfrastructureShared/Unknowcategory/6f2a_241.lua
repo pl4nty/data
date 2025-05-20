@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/Remcos.PI!Pra1") then
+if (mp.getfilesize)() > 1597900 and (mp.getfilesize)() < 1598100 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

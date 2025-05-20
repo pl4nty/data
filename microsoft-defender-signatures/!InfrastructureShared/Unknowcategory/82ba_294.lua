@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 1, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-if l_0_1 > 65536 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 17, "\000")
+do
+  if (mp.get_mpattribute)("pea_has_msilresources") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

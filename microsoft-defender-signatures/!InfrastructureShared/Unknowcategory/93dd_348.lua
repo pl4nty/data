@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[7]).Name == ".idata" and (pesecs[7]).Characteristics == 1073741888 and (mp.getfilesize)() >= 400000 and (mp.getfilesize)() <= 4000000 then
+if peattributes.hasappendeddata and (mp.getfilesize)() - ((pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData) > 65536 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

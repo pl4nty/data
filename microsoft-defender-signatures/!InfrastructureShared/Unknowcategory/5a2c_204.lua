@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-local l_0_1 = "/tmp"
-if l_0_0:find(l_0_1, 1, true) ~= nil then
+if ((pe.get_versioninfo)()).OriginalFilename == "winscp.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

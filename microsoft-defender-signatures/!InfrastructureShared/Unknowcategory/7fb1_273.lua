@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[7]).Name == ".reloc" and (pesecs[7]).Characteristics == 1107296320 then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_AMSI and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

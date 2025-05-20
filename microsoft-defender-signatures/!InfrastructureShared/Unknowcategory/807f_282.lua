@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 55, "")
-;
-(pe.set_regval)(pe.REG_EAX, (pe.get_regval)(pe.REG_EAX) - 1)
-return mp.LOWFI
+if peattributes.ismsil == true and peattributes.isexe == true and peattributes.no_security == true and pehdr.AddressOfEntryPoint ~= 328238 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

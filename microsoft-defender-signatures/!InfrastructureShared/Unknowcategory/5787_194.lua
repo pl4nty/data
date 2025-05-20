@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == false then
+if peattributes.hasexports == false and peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

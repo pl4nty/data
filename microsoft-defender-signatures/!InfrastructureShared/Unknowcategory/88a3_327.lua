@@ -3,10 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 6, 1)
-;
-(pe.set_regval)(pe.REG_EAX, (string.byte)(l_0_0, 1))
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\144")
-return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+do
+  if l_0_0 ~= nil and l_0_0.command_line ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.command_line)
+    if l_0_1:find("azurearcagent", 1, true) then
+      return mp.CLEAN
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

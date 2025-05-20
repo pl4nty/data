@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-    ;
-    (bm.add_related_file)(l_0_0)
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
+    if l_0_1 == "wmiprvse.exe" or l_0_1 == "services.exe" then
+      return mp.INFECTED
+    end
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

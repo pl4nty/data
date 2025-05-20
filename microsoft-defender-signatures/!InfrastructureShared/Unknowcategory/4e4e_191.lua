@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 35, "é­\a\000\000\144")
-return mp.INFECTED
+if peattributes.x86_image == true and peattributes.isdll == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

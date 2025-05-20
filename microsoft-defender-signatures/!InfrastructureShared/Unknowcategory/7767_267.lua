@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr, "\235-")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 47, "ù")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 55, "\235")
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
+end
 return mp.INFECTED
 

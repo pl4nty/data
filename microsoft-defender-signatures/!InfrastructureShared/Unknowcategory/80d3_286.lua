@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EBP) - 4
-local l_0_1 = (mp.readu_u32)((pe.mmap_va)(l_0_0, 4), 1)
-;
-(pe.set_regval)(pe.REG_EBX, l_0_1 + 1)
-return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)(l_0_0.image_path)
+if l_0_1:match("([^\\]+)$") == "spoolsv.exe" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

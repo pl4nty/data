@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 3 and peattributes.ismsil then
+if pehdr.Machine == 332 then
+  (mp.changedetectionname)(805306517)
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.INFECTED
 

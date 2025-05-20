@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true then
+if machohdr.Magic == 4277009103 or machohdr.Magic == 3405691582 then
   return mp.INFECTED
 end
 return mp.CLEAN

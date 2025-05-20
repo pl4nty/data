@@ -3,12 +3,17 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 18, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+if peattributes.isexe == false then
+  return mp.CLEAN
+end
+if peattributes.no_resources == true then
+  return mp.CLEAN
+end
+if peattributes.hasappendeddata == false then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

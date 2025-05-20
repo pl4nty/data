@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((this_sigattrlog[1]).utf8p1, "\\%l%l%l%l%l%l%d%.exe") ~= nil then
+if (mp.getfilesize)() > 2693700 and (mp.getfilesize)() < 2693800 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

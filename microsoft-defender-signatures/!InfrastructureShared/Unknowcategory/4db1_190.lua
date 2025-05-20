@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Win32/HiveCrypt.PB!MTB") then
+if peattributes.isdll and peattributes.hasexports then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

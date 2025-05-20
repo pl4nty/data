@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Dnotua.D!MTB")
+  (mp.set_mpattribute)("PUA:Block:Crossrider.D")
   return mp.INFECTED
 end
 return mp.LOWFI

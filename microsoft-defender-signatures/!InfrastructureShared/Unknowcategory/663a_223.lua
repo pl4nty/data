@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+if peattributes.isexe and peattributes.no_security and peattributes.isvbnative then
   return mp.INFECTED
 end
 return mp.CLEAN

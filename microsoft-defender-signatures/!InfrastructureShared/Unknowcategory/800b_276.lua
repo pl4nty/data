@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 80)
-local l_0_1 = (mp.readu_u32)(l_0_0, 31) - 1
-;
-(pe.set_regval)(pe.REG_ECX, l_0_1)
+if peattributes.isdll and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.ismsil then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

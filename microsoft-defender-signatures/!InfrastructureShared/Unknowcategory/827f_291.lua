@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetRawResponseBlob)()
-if l_0_0 and (MpCommon.BinaryRegExpSearch)("\\\\\\\\10\\.[0-9\\.]+|172\\.[0-9\\.]+|192\\.168\\.[0-9\\.]+\\\\d+", l_0_0) then
+if mp.HSTR_WEIGHT >= 4 and (pesecs[1]).SizeOfRawData > 1245184 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

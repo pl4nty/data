@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
+if peattributes.suspicious_image_version and peattributes.hasappendeddata and peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -5,7 +5,7 @@
 -- function num : 0
 local l_0_0, l_0_1 = (bm.get_process_relationships)()
 for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (string.find)(l_0_6.image_path, "werfault.exe", 1, true) then
+  if l_0_6.image_path ~= nil and (string.find)(l_0_6.image_path, "rundll32.exe", 1, true) then
     return mp.INFECTED
   end
 end

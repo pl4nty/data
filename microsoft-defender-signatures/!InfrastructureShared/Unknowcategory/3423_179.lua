@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattributeex)("FOP64:GoLang64", pevars.sigaddr)
+if (mp.get_mpattribute)("BM_UNKNOWN_FILE") then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

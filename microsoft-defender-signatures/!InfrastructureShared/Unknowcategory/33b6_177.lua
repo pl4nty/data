@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattributeex)("FOP:GoLang32", pevars.sigaddr)
+if (pesecs[6]).Name == "itx1018" then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

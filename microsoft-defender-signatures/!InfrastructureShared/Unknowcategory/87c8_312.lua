@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.isdll == true and peattributes.hasexports == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.no_security == true and pehdr.NumberOfSections > 3 and pehdr.NumberOfSections < 7 and (pesecs[4]).Name == ".pdata" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

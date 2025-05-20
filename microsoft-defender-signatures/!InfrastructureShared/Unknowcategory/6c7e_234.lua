@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("MpTrustCheck_NotDigitallySigned") then
+if peattributes.ismsil == true and (mp.getfilesize)() < 10240 and peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

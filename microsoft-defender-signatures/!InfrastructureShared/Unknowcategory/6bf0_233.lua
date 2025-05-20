@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 33, "êê\144")
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.SUSPICIOUS
+end
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 38, "êê")
-return mp.INFECTED
+(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOV")
+return mp.CLEAN
 

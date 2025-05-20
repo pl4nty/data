@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).hitcount > 5 or (hstrlog[1]).hitcount > 5 then
+if peattributes.ismsil == true and (mp.getfilesize)() < 2500000 then
   return mp.INFECTED
 end
 return mp.CLEAN

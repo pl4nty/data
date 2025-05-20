@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("BM_HAS_DIGITALSIGNATURE") then
-  return mp.INFECTED
+do
+  if peattributes.isexe and peattributes.no_security == false and peattributes.ismsil == false then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 >= 1126400 and l_0_0 <= 1945600 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

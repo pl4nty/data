@@ -3,12 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  if peattributes.dt_error_not_enough_memory then
-    (pe.set_peattribute)("enable_vmm_grow", true)
-    ;
-    (pe.reemulate)()
-  end
+if pehdr.NumberOfSections >= 4 and (pesecs[4]).Name == ".newimp" and (mp.bitand)((pesecs[4]).Characteristics, 2147483648) == 2147483648 then
   return mp.INFECTED
 end
 return mp.CLEAN

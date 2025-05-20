@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if (mp.get_mpattribute)("BM_XML_FILE") and (mp.get_mpattribute)("InEmail") then
+  return mp.INFECTED
 end
-if not peattributes.suspicious_timestamp then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

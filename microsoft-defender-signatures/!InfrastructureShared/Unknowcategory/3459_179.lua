@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("ExcelSiorType.D") then
+if (mp.get_mpattribute)("HSTR:SkypeSneak") then
   return mp.INFECTED
 end
 return mp.CLEAN

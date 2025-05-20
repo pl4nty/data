@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "AppxManifest.xml") ~= nil then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Refog.F")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

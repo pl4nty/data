@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if ((sigattr_head[1]).attribute == 12363 and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12375) or (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12381 then
-  return mp.INFECTED
+if peattributes.isdll and (mp.getfilesize)() < 238593 then
+  if mp.HSTR_WEIGHT == 11 then
+    return mp.SUSPICIOUS
+  end
+  if mp.HSTR_WEIGHT == 10 then
+    return mp.LOWFI
+  end
 end
 return mp.CLEAN
 

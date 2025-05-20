@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.get_versioninfo)()).OriginalFilename == "riched32.dll" and ((pe.get_versioninfo)()).CompanyName == "Microsoft Corporation" then
+if peattributes.ismsil == true and (pesecs[2]).Name == ".sdata" and (pesecs[2]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
 return mp.CLEAN

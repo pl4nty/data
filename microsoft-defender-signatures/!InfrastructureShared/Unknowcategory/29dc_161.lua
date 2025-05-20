@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(nri.AddTelemetry)(nri.Telemetry_HOSTNAME)
-return mp.INFECTED
+if peattributes.ismsil == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

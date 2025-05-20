@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image and peattributes.isexe and (mp.getfilesize)() > 1000000 then
+if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 then
   return mp.INFECTED
 end
 return mp.CLEAN

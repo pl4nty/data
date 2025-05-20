@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (pesecs[3]).Name == ".ACE0" and peattributes.isexe == true then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 196608 and l_0_0 <= 327680 and peattributes.isdll == true and peattributes.hasexports == true then
   return mp.INFECTED
 end
 return mp.CLEAN

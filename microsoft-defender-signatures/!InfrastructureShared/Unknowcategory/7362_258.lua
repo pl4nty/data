@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports and pevars.sigaddr == 268439552 then
-  (mp.set_mpattribute)("attrmatch_rescan_notiexplore")
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 13, "êê")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
+return mp.INFECTED
 

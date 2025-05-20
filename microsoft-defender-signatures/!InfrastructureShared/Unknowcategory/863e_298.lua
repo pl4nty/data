@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
-    if (string.find)(l_0_0, "^%d%d%d%d+$") then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
+local l_0_0, l_0_1 = (pe.get_exports)()
+for l_0_5 = 1, l_0_0 do
+  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "cJSON_ReplaceItemInObjectCaseSensitive" then
+    return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

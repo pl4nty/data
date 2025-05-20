@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((bm.get_imagepath)(), -10)) == "\\mshta.exe" then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("ValidDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,9 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a")
-return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if (string.find)(l_0_0, "/format:", 1, true) ~= nil then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

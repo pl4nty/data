@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -10) == "chrome.exe" then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() > 30000 then
   return mp.CLEAN
 end
 return mp.INFECTED

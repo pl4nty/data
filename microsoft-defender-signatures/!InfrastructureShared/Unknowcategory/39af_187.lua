@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.GetBruteMatchData)()).match_offset == 0 then
+if peattributes.isexe == true or peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

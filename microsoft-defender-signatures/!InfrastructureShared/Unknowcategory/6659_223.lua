@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_deep_rescan")
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-return mp.INFECTED
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:AoboKeylogger.G")
+  return mp.INFECTED
+end
+return mp.LOWFI
 

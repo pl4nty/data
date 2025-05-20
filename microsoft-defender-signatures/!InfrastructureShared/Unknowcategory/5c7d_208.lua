@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-;
-(mp.set_mpattribute)("PEBMPAT:Exprio_Tick_Count")
+if (pe.query_import)(pe.IMPORT_STATIC, 1976185273) == 0 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

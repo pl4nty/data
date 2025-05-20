@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EBP) - 328
-local l_0_1 = (pe.mmap_va)(l_0_0, 4)
-local l_0_2 = (mp.readu_u32)(l_0_1, 1)
-if l_0_2 ~= 268675836 then
-  (mp.set_mpattribute)("PEBMPAT:AntiEmuCheckConstantMemAdd")
+if (mp.getfilesize)() < 2048000 and (mp.get_mpattribute)("pea_headerchecksum0") and pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("Lua:OverSizedLnkFile") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

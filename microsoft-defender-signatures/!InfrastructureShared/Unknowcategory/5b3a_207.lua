@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("ALF:HeraklezEval:Trojan:Win32/Qakbot.SD!rfn") then
+if peattributes.ismsil == true and (mp.getfilesize)() < 20480000 then
   return mp.INFECTED
 end
 return mp.CLEAN

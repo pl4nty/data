@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_exports and peattributes.amd64_image and pehdr.NumberOfSections == 6 then
+if (mp.getfilesize)() < 290000 then
+  (pe.set_peattribute)("deep_analysis", true)
+  ;
+  (pe.reemulate)()
   return mp.INFECTED
 end
 return mp.CLEAN

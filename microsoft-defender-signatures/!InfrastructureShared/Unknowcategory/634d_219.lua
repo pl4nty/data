@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Framaroot.A")
+  (mp.set_mpattribute)("PUA:Block:ClearDisk.A")
   return mp.INFECTED
 end
 return mp.LOWFI

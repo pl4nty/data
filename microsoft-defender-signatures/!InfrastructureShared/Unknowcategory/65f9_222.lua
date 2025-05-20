@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == false and peattributes.hasexports == false then
+if mp.HSTR_WEIGHT >= 4 then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+return mp.LOWFI
 

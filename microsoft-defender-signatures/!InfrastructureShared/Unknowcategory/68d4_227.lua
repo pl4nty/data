@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, ".json") ~= nil then
+if peattributes.isexe == true and peattributes.ismsil == true and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

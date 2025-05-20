@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil and (mp.get_mpattribute)("InEmail") then
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 196418 then
-  return mp.CLEAN
-end
-if not peattributes.dt_error_heur_exit_criteria then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[3]).Name == ".qhw" and (pesecs[2]).Name == ".g" then
+if peattributes.isexe == true and pehdr.Subsystem == 2 then
   return mp.INFECTED
 end
 return mp.CLEAN

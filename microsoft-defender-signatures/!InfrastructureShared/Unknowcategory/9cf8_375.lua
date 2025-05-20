@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "/document.xml", 1, true) or (string.find)(l_0_0, "xl/externallinks/", 1, true) or (string.find)(l_0_0, "->(ole stream 0)->(msg)", 1, true) then
+if (this_sigattrlog[2]).matched then
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 21307622)
   return mp.INFECTED
 end
-return mp.CLEAN
+if (this_sigattrlog[3]).matched then
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1), 1488451358)
+  return mp.INFECTED
+end
+return mp.INFECTED
 

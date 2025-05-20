@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    ;
-    (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
-  end
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 <= 221184 and l_0_0 >= 204800 and (mp.get_mpattribute)("NID:PossibleRyuk") then
   return mp.INFECTED
 end
+return mp.CLEAN
 

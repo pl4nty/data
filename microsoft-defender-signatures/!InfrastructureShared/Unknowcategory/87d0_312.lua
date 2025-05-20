@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and pehdr.NumberOfSections > 3 and pehdr.NumberOfSections < 7 and (pesecs[4]).Name == ".pdata" then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.LOWFI
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+;
+(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 10000)
+return mp.INFECTED
 

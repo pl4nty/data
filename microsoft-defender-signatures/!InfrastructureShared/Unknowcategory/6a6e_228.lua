@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.ImageBase + pehdr.SizeOfHeaders < (hstrlog[1]).VA then
-  return mp.INFECTED
+if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "sharpshares.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

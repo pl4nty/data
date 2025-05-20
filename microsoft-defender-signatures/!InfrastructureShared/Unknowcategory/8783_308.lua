@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis_VMM_Grow")
-;
-(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_5")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 22, "êê")
+local l_0_0, l_0_1 = pcall(mp.GetParentProcInfo)
+if l_0_1 and (string.find)((l_0_1.image_path):lower(), "solarwinds.businesslayerhost.exe", 1, true) then
+  return mp.LOWFI
+end
 return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
-  return mp.LOWFI
+if mp.HSTR_WEIGHT == 2 and (hstrlog[1]).hitcount > 3 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

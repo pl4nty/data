@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:ExcelFormulaRoutines") and (mp.get_mpattribute)("LUA:FileSizeLE40000.A") then
+if peattributes.ismsil == true and (mp.getfilesize)() < 3048000 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.ismsil == true and peattributes.no_security == true and l_0_0 <= 53248 and l_0_0 >= 36864 and peattributes.isdll == true and (mp.get_mpattribute)("Trojan:MSIL/MalInject.A!MTB") then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.sub)(l_0_0.image_path, -11)) ~= "svchost.exe" then
+  return mp.CLEAN
+end
+if (versioning.GetLocaleIdentifier)() == 1049 then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

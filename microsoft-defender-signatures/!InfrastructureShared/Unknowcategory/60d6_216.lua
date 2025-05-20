@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Adload.F")
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 32768 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.LOWFI
 

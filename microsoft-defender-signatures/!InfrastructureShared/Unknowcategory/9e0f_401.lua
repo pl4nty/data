@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_connection_string)()
-if l_0_0:find("DestIp=185.22.172.157;", 1, true) or l_0_0:find("DestIp=91.121.222.184;", 1, true) or l_0_0:find("DestIp=185.22.172.69;", 1, true) or l_0_0:find("DestIp=185.18.53.247;", 1, true) then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) and (l_0_1:match("([^\\]+)$") == "fodhelper.exe" or l_0_1:match("([^\\]+)$") == "computerdefaults.exe") then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

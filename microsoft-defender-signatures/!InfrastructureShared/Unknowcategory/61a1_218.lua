@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:Bundlore.A")
+if (mp.get_mpattribute)("pea_amd64_image") and (mp.get_mpattribute)("pea_isdll") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

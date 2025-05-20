@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\002")
-;
-(pe.mmap_patch_va)((mp.bitand)((pe.get_regval)(pe.REG_EBP) + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 2, 4), 1), 4294967295), "\003\000\000\000")
-return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) and (l_0_1:match("([^\\]+)$") == "fodhelper.exe" or l_0_1:match("([^\\]+)$") == "computerdefaults.exe") then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

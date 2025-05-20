@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "\002\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "\000\000\000\000")
-return mp.INFECTED
+if peattributes.isexe and pehdr.SizeOfImage >= 65536 and pehdr.SizeOfImage <= 98304 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

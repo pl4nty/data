@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false and peattributes.no_security == true and (mp.getfilesize)() < 1508416 then
+if peattributes.no_security == false and (mp.get_mpattribute)("TEL:REVCERT:SinghAgile.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1, 4), 1) ~= pevars.sigaddr + 6 or (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1 + 6, 4), 1) ~= pevars.sigaddr + 12 or (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1 + 12, 4), 1) ~= pevars.sigaddr + 18 then
-  return mp.CLEAN
+if pehdr.BaseOfData == 0 and pehdr.SizeOfInitializedData == 0 and pehdr.SizeOfUninitializedData == 0 and pehdr.SizeOfCode == 0 and (hstrlog[1]).VA - pehdr.ImageBase - (pesecs[1]).VirtualAddress == 4336 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

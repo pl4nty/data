@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == true and (mp.get_mpattribute)("NID:Trojan:Win64/DllHijack.G5") then
+if peattributes.isexe == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Win64/CryptInject.MB!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

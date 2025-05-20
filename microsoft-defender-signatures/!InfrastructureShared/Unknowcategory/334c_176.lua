@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".ctls8" then
+if (pesecs[4]).Name == ".ctls0" then
   return mp.INFECTED
 end
 return mp.CLEAN

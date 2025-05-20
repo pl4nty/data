@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".btls2" and (pesecs[6]).Name == ".dcard" then
+if (mp.get_sigattr_event_count)(16385) > 2 or (mp.get_sigattr_event_count)(16386) > 2 then
   return mp.INFECTED
 end
 return mp.CLEAN

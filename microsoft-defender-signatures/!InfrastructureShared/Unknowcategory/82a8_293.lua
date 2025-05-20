@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.ImageBase + pehdr.AddressOfEntryPoint == 4198400 and peattributes.isexe and pehdr.NumberOfSections > 3 then
+if peattributes.isdll == true and (mp.getfilesize)() <= 150000 and (mp.get_mpattribute)("Sigattr:Win32/ShellcodeRunner.AL!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

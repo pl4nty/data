@@ -3,8 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.aslr_bit_set == true and peattributes.no_boundimport == true and peattributes.no_ep == true and peattributes.no_comruntime == true then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    if l_0_1 ~= nil then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+        ;
+        (bm.add_related_file)(l_0_6)
+      end
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
+end
 

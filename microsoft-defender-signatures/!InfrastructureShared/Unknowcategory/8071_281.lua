@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.INFECTED
+else
+  if (hstrlog[2]).matched then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
 end
-if (mp.getfilesize)() > 20971520 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

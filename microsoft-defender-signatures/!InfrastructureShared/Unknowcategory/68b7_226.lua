@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.relocs_stripped then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(bm.trigger_sig_self_propagate)("SuspHHChildProcessLaunch", "Behavior:Win32/SuspHHProcessCreate.A!dha")
+return mp.INFECTED
 

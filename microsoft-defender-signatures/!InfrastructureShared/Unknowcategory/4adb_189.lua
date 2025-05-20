@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
-  return mp.CLEAN
+if peattributes.is_delphi and peattributes.isexe then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

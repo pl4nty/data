@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".wfweger" or (pesecs[4]).Name == ".gergreg" then
+if (mp.get_mpattribute)("BM_XML_FILE") and (mp.get_mpattribute)("InEmail") then
   return mp.INFECTED
 end
 return mp.CLEAN

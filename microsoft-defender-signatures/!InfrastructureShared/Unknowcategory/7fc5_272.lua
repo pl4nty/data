@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpSimulateParanoid")
-;
-(mp.set_mpattribute)("MpEnableCOM")
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
-;
-(pe.reemulate)()
+if peattributes.ismsil == true and (pesecs[4]).Name == ".bsS" and (pesecs[4]).Characteristics == 3221225472 then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

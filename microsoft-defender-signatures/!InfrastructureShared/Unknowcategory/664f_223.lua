@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Social2Search.A")
-  return mp.INFECTED
+if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "veeamp.exe" then
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

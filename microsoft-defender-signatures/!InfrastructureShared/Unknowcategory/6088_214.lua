@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".lk90" and (pesecs[8]).Name == "8s7d" then
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:Ulbi.C")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

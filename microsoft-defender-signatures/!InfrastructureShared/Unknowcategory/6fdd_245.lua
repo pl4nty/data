@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Neoreblamy.AO!MTB") then
+if (hstrlog[7]).matched and peattributes.isdll and peattributes.hasexports then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("InEmail") then
-  (mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
+if pehdr.NumberOfSections == 7 and (mp.getfilesize)() >= 5844992 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

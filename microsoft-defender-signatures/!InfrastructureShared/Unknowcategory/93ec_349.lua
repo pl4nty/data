@@ -5,18 +5,15 @@
 -- function num : 0
 local l_0_0 = (bm.get_current_process_startup_info)()
 if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  local l_0_1, l_0_2, l_0_3 = pcall(bm.get_process_relationships, l_0_0.ppid)
-  if l_0_1 then
-    for l_0_7,l_0_8 in ipairs(l_0_3) do
-      if l_0_8 ~= nil and l_0_8.ppid ~= nil then
-        (bm.request_SMS)(l_0_8.ppid, "m")
-      end
-    end
-  end
+  (bm.request_SMS)(l_0_0.ppid, "M")
 end
 do
-  l_0_1 = mp
-  l_0_1 = l_0_1.INFECTED
-  return l_0_1
+  if (this_sigattrlog[3]).matched == true then
+    local l_0_1 = (this_sigattrlog[3]).ppid
+    if l_0_1 ~= nil and #l_0_1 > 1 then
+      (bm.request_SMS)(l_0_1, "M")
+    end
+  end
+  return mp.INFECTED
 end
 

@@ -3,21 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-local l_0_1 = l_0_0.match_offset
-local l_0_2 = 128
-local l_0_3 = ""
-if l_0_0.is_header then
-  l_0_3 = (tostring(headerpage)):sub(l_0_1, l_0_1 + l_0_2)
-else
-  l_0_3 = (tostring(footerpage)):sub(l_0_1, l_0_1 + l_0_2)
-end
-if l_0_3 == nil then
+do
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 182784 and (mp.getfilesize)() < 183552 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-local l_0_4 = (string.gsub)(l_0_3, "[%d+%-*%/()]+", "")
-if l_0_4 ~= nil and #l_0_3 - #l_0_4 > 40 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

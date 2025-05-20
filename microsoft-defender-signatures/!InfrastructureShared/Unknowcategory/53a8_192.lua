@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.no_security then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT == 2 then
+  (mp.set_mpattribute)("HSTR:Sindomorl.D1")
 end
-return mp.CLEAN
+return mp.INFECTED
 

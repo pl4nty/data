@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 35)
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.find)(l_0_0, "u", 1, true)
-    if l_0_1 ~= nil then
-      (pe.mmap_patch_va)(pevars.sigaddr + 21 + l_0_1 - 1, "êê")
-    end
-  end
-  return mp.INFECTED
+if pehdr.Machine == 332 and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+return mp.CLEAN
 

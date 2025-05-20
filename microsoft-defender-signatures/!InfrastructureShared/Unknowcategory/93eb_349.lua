@@ -3,20 +3,24 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  local l_0_1, l_0_2, l_0_3 = pcall(bm.get_process_relationships, l_0_0.ppid)
-  if l_0_1 then
-    for l_0_7,l_0_8 in ipairs(l_0_3) do
-      if l_0_8 ~= nil and l_0_8.ppid ~= nil then
-        (bm.request_SMS)(l_0_8.ppid, "m")
-      end
-    end
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.INFECTED
-  return l_0_1
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+local l_0_2 = (string.lower)(l_0_1)
+if l_0_2 == nil then
+  return mp.CLEAN
 end
+local l_0_3 = MpCommon.SetPersistContextNoPath
+local l_0_4 = "DllFromOdbcAction"
+local l_0_5 = {}
+-- DECOMPILER ERROR at PC26: No list found for R5 , SetList fails
+
+-- DECOMPILER ERROR at PC27: Overwrote pending register: R6 in 'AssignReg'
+
+l_0_3(l_0_4, l_0_5, l_0_2)
+l_0_3 = mp
+l_0_3 = l_0_3.CLEAN
+return l_0_3
 

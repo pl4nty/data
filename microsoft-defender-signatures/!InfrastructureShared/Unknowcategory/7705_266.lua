@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 19, "êÈ")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if (peattributes.isexe == true or peattributes.isdll == true) and (mp.getfilesize)() < 2097152 and peattributes.no_security == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

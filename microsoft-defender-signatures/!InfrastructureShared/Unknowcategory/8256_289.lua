@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "t", 1, true) - 1, "\235")
-return mp.INFECTED
+if peattributes.packed and peattributes.checks_teb_lasterror and peattributes.dynmem_APIcall and peattributes.executes_from_dynamic_memory then
+  return mp.SUSPICIOUS
+end
+return mp.CLEAN
 

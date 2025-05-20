@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 65536 and peattributes.no_security == true then
+if (mp.get_mpattribute)("BM_XML_FILE") and (mp.get_mpattribute)("InEmail") then
   return mp.INFECTED
 end
 return mp.CLEAN

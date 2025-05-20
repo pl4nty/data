@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "->(Rtf", 1, true) == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:Bundlore.A")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

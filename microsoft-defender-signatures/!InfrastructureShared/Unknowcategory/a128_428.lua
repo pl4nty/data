@@ -3,18 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata then
-  local l_0_0 = (mp.getfilesize)()
-  local l_0_1 = pehdr.NumberOfSections
-  local l_0_2 = (pesecs[l_0_1]).PointerToRawData + (pesecs[l_0_1]).SizeOfRawData
-  if l_0_2 + 4 < l_0_0 then
-    (mp.readprotection)(false)
-    if (mp.readfile)(l_0_2, 4) == "SO!#" then
-      return mp.INFECTED
-    end
-  end
-end
-do
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 4000000 or l_0_0 < 10000 then
   return mp.CLEAN
 end
+local l_0_1 = ((MpCommon.ExpandEnvironmentVariables)("%windir%")):lower()
+if (((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()):sub(1, #l_0_1) == l_0_1 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 <= 1000000 and l_0_0 >= 500000 and peattributes.no_security == true then
-  return mp.INFECTED
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") then
+  (mp.set_mpattribute)("pea_enable_vmm_grow")
+  ;
+  (pe.reemulate)()
 end
 return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".btls5" then
+if peattributes.suspicious_section_name then
   return mp.INFECTED
 end
 return mp.CLEAN

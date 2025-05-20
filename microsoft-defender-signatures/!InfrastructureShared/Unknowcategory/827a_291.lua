@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-l_0_0 = (l_0_0.lower)(l_0_0)
-if (string.find)(l_0_0, ".py", 1, true) or (string.find)(l_0_0, ".ps1", 1, true) then
-  return mp.INFECTED
+if peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.isvbnative and not peattributes.isvbpcode then
+  return mp.CLEAN
+end
+if (mp.getfilesize)() > 2097152 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("ValidDigitalSignature") then
+if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>%w+%.bat$") == nil then
   return mp.CLEAN
 end
 return mp.INFECTED

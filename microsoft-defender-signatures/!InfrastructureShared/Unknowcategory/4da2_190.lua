@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Adload.A")
+if peattributes.isdll and peattributes.hasexports then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

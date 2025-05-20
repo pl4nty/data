@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil then
+local l_0_0 = (hstrlog[1]).hitcount
+local l_0_1 = (hstrlog[2]).hitcount
+if l_0_0 > 15 or l_0_1 > 15 or l_0_0 + l_0_1 > 15 then
   return mp.INFECTED
 end
 return mp.CLEAN

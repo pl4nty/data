@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win32/Fragtor.AD!MTB")) then
+if (mp.get_mpattribute)("SIGATTR:DeleteMyAppExe") and (mp.get_mpattribute)("SIGATTR:DropMZ") and (mp.get_mpattribute)("SIGATTR:WRITESYSDIR") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

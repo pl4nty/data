@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and (mp.get_mpattribute)("TEL:TrojanDownloader:Win32/AdLoad.A!MSR") and l_0_0 > 2424832 and l_0_0 < 2621440 then
+if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
+  return mp.CLEAN
+end
+if (pe.get_exports)() > 100 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

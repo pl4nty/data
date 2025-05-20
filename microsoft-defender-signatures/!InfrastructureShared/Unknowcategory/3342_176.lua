@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".amail" then
+if (pesecs[6]).Name == ".wt727" then
   return mp.INFECTED
 end
 return mp.CLEAN

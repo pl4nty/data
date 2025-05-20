@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_ep == true then
+if (mp.get_mpattribute)("pea_isdll") and (pe.query_import)(pe.IMPORT_STATIC, 1751160259) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("enable_vmm_grow", true)
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.set_peattribute)("disable_seh_limit", true)
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-;
-(pe.reemulate)()
-return mp.INFECTED
+if peattributes.isexe and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 7 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

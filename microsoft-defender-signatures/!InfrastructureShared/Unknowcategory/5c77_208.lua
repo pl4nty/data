@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-;
-(mp.set_mpattribute)("PEBMPAT:Exprio_Tick_Count")
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
 return mp.INFECTED
 

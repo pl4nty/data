@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 21 and (hstrlog[3]).hitcount + (hstrlog[4]).hitcount + (hstrlog[5]).hitcount + (hstrlog[6]).hitcount >= 5 then
+  return mp.INFECTED
 end
-if (string.find)(l_0_0, "\\virtualboxvm.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.LOWFI
 

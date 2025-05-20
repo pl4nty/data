@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  local l_0_0 = (string.lower)(tostring(headerpage))
-  if l_0_0 > 5 then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 15, "\235\024")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

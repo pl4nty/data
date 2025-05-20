@@ -3,13 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if (pe.get_exports)() ~= 1 then
-  return mp.CLEAN
-end
-if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "maggie" then
+if (hstrlog[1]).hitcount > 10 or (hstrlog[2]).hitcount > 10 or (hstrlog[3]).hitcount > 10 or (hstrlog[4]).hitcount > 10 or (hstrlog[5]).hitcount > 10 or (hstrlog[6]).hitcount > 10 then
   return mp.INFECTED
 end
 return mp.CLEAN

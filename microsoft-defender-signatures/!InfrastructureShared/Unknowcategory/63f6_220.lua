@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:ExtInstall.A")
+if peattributes.isdll == true and (pe.get_exports_count)() == 1 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

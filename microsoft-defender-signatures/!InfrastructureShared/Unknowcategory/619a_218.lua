@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pesecs[1]).Name == "   " then
+if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_amd64_image") then
   return mp.INFECTED
 end
 return mp.CLEAN

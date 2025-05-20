@@ -3,19 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
-
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = nil
-  else
-  end
-  if (this_sigattrlog[2]).matched then
-    do return mp.CLEAN end
-    if (string.match)((string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2)), "http[s]?%:%/%/") ~= nil then
-      return mp.INFECTED
+  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 417792 and (mp.getfilesize)() < 466944 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
-    return mp.CLEAN
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

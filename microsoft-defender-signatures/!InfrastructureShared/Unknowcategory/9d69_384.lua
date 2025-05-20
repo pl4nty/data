@@ -3,18 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  local l_0_1 = ""
-  if l_0_0.is_header then
-    l_0_1 = (string.lower)(tostring(headerpage))
-  else
-    l_0_1 = (string.lower)(tostring(footerpage))
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
-  if l_0_1 > 3 then
-    return mp.INFECTED
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R6 in 'UnsetPending'
+
+    if (sysio.IsFileExists)(R6_PC23) then
+      (bm.add_related_file)(R6_PC23)
+    end
   end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+  return mp.INFECTED
 end
 

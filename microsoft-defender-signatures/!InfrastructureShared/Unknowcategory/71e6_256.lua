@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.amd64_image and peattributes.hasappendeddata and peattributes.isexe then
+if peattributes.suspicious_subsystem_version and peattributes.no_exports and peattributes.suspicious_os_version then
   return mp.INFECTED
 end
 return mp.CLEAN

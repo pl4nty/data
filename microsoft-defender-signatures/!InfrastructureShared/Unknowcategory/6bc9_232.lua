@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:find("androidmanifest.xml") then
-  return mp.INFECTED
+if peattributes.isexe == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:HSTR:OnePlatformInstaller")
+return mp.INFECTED
 

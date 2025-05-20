@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "settings%.xml%.rels") ~= nil then
+if (mp.getfilesize)() > 20480 and (mp.getfilesize)() < 65536 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

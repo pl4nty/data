@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:pwnet.A")
+if (pesecs[5]).Name == ".air0" and (pesecs[6]).Name == ".air1" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

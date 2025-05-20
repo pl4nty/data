@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
-  (mp.set_mpattribute)("PUA:Block:PerfectKeylogger")
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 <= 655360 and l_0_0 >= 598016 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

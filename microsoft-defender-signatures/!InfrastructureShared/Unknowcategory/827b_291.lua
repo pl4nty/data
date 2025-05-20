@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:VirTool:Win32/Injector.gen!BM") and (mp.get_mpattribute)("HSTR:HasSEH") and (mp.get_mpattribute)("Lua:DealPlyFileName") then
+if peattributes.isdll and pehdr.NumberOfSections == 5 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 then
   return mp.INFECTED
 end
 return mp.CLEAN

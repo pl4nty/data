@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Win32/Stealc.MI!MTB") then
+if peattributes.isexe and peattributes.ismsil == true and (mp.getfilesize)() < 30000 then
   return mp.INFECTED
 end
 return mp.CLEAN

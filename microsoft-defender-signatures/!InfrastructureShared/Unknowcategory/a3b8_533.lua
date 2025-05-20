@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and epcode[1] == 106 and epcode[2] == 16 and epcode[3] == 104 and epcode[4] == 0 and epcode[5] == 2 and epcode[6] == 0 and epcode[7] == 0 and epcode[8] == 104 and epcode[9] == 44 and epcode[10] == 250 and epcode[11] == 250 and epcode[12] == 255 then
+if peattributes.isexe and peattributes.epinfirstsect and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections < 6 and (pesecs[pehdr.NumberOfSections]).Name == ".data0" and (pesecs[pevars.epsec]).SizeOfRawData == 512 and (pe.mmap_rva)((pesecs[pehdr.NumberOfSections]).VirtualAddress + 4, 2) == "MZ" then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:VirTool:MSIL/Injector.IA")
-if peattributes.ismsil == true then
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
 end
-return mp.LOWFI
+if (hstrlog[1]).matched then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

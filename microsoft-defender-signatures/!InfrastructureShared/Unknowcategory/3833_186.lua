@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil then
+if (mp.get_mpattribute)("PEEMU:ObfuscatorBerrof") then
   return mp.INFECTED
 end
 return mp.CLEAN

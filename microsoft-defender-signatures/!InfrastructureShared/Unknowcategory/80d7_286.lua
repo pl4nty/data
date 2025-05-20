@@ -3,8 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "u", 21, true)
-;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, "3\255")
-return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[3]).matched then
+    local l_0_0 = nil
+  end
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and not (string.find)(l_0_0, ".zip", 1, true) then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

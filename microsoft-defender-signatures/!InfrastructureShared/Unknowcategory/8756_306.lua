@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 98 and peattributes.isexe then
-  return mp.INFECTED
+if (pe.get_api_id)((pe.get_regval)(pe.REG_EAX)) ~= 4111270722 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "\001\000\000\000")
+return mp.INFECTED
 

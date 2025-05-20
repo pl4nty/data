@@ -4,8 +4,8 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 3145728 and l_0_0 <= 20971520 then
-  return mp.INFECTED
+if l_0_0 < 250000 or l_0_0 > 800000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

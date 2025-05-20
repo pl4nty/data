@@ -3,12 +3,17 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 17, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 3, "\254\255\255\127")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "")
-;
-(pe.set_regval)(pe.REG_EAX, 2147483647)
-return mp.INFECTED
+if peattributes.ismsil == true and (mp.getfilesize)() > 22000 and (mp.getfilesize)() < 24000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

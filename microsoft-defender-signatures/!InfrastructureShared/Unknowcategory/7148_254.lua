@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+if (peattributes.isvbpcode == true or peattributes.isvbnative == true) and pehdr.NumberOfSections == 3 then
+  return mp.INFECTED
 end
-if (pe.get_exports)() >= 10 then
-  return mp.CLEAN
-end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == true and (pesecs[4]).Name == ".fptable" and (pesecs[4]).Characteristics == 3221225536 and (mp.getfilesize)() >= 5000000 and (mp.getfilesize)() <= 20000000 then
+if mp.HSTR_WEIGHT >= 7 then
   return mp.INFECTED
+end
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
 end
 return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[4]).Name == ".rsrc" and (pesecs[4]).Characteristics == 1073741888 and (mp.getfilesize)() >= 1000000 and (mp.getfilesize)() <= 5000000 then
+if peattributes.isdll and peattributes.enable_vmm_grow and (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.dynmem_APIcall and peattributes.suspicious_linker_version then
   return mp.INFECTED
 end
 return mp.CLEAN

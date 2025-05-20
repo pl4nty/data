@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 7 and (mp.getfilesize)() >= 5844992 then
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:LogKext.C")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

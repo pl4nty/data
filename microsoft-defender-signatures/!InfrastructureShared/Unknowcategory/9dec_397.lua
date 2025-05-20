@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 17, 1)
-local l_0_1 = 21
-if (string.byte)(l_0_0) == 129 then
-  l_0_1 = 24
-  if (string.byte)((pe.mmap_va)(pevars.sigaddr + 21, 1)) == 2 then
-    return mp.CLEAN
-  end
+if mp.HSTR_WEIGHT >= 6 then
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\235")
-return mp.INFECTED
+if (mp.get_mpattribute)("CallsRtlDecompressBuffer") and peattributes.pea_dt_error_not_enough_memory then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
+end
+return mp.CLEAN
 

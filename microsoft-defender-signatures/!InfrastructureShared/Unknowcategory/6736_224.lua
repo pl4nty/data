@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:TuguuInstaller.A")
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Tarcloin")
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

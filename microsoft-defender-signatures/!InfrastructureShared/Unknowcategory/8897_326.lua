@@ -4,10 +4,21 @@
 -- params : ...
 -- function num : 0
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.find)(l_0_0, "\\\\(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)\\") then
-      return mp.INFECTED
+  if not (hstrlog[1]).matched then
+    local l_0_0 = (hstrlog[2]).matched
+  end
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  if mp.HSTR_WEIGHT >= 3 and (l_0_0 or (hstrlog[3]).matched) then
+    return mp.INFECTED
+  end
+  if mp.HSTR_WEIGHT >= 2 then
+    return mp.LOWFI
+  else
+    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_0 then
+      return mp.LOWFI
     end
   end
   return mp.CLEAN

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if peattributes.amd64_image then
+  return mp.INFECTED
+end
+return mp.SUSPICIOUS
 

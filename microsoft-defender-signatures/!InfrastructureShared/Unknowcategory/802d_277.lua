@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-if R1_PC17 ~= nil and (pe.get_exports)() == 1 then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil and (mp.get_mpattribute)("InEmail") then
   return mp.INFECTED
 end
 return mp.CLEAN

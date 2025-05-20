@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 720896 and l_0_0 <= 917504 and peattributes.ismsil == true and peattributes.isdll == false and peattributes.hasexports == false then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win32/Empire.B")
-return mp.LOWFI
+return mp.CLEAN
 

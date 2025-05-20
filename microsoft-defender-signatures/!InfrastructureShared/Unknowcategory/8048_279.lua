@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Colisi")
+if mp.HSTR_WEIGHT >= 4 then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("SLF:Win64/Shelcorid.B")
-return mp.LOWFI
+return mp.CLEAN
 

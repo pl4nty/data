@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EIP) + 21, "\000\001\000\000")
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
 return mp.INFECTED
 

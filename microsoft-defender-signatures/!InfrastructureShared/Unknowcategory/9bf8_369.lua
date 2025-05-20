@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 4 and pevars.epsec == pehdr.NumberOfSections and (pesecs[pehdr.NumberOfSections]).Name == "" and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3758096384) == 3221225472 then
-  return mp.INFECTED
+do
+  if peattributes.isdll == false and peattributes.hasexports == true and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

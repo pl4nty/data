@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and ((pe.get_exports_count)() == 11 or (pe.get_exports_count)() == 31) then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 10240000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

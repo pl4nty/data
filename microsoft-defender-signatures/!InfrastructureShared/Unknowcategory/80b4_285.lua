@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (pe.isdynamic_va)(pevars.sigaddr) then
-  return mp.CLEAN
+if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "truesight" and (mp.getfilesize)() < 70000 then
+  return mp.INFECTED
 end
-if not (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

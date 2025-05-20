@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>%w+%.bat$") == nil then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("pea_isdriver") then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,28 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 == nil or l_0_0 == "" then
+local l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p1)
+if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_3 = (string.match)(l_0_0, "(.*)%.(%a+)->%w+/%w+.bin$")
-if l_0_3 == nil or l_0_0 == nil then
-  l_0_3 = l_0_0
-  local l_0_1, l_0_2 = nil
-else
-  do
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R2 in 'UnsetPending'
-
-    l_0_3 = l_0_3 .. "." .. l_0_1
-    l_0_3 = (MpCommon.PathToWin32Path)(l_0_3)
-    if l_0_3 == nil or l_0_3 == "" then
-      return mp.CLEAN
-    end
-    l_0_3 = (string.lower)(l_0_3)
-    if (string.find)(l_0_3, ".:\\program files %(x86%)\\blp\\api\\office tools\\") ~= nil then
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
 end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
+end
+return mp.INFECTED
 

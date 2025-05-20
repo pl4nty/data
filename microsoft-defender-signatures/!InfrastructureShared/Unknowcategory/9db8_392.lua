@@ -3,17 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 == nil then
-  return mp.CLEAN
+(mp.readprotection)(false)
+if (mp.getfilesize)() > 155652 then
+  local l_0_0 = (mp.readfile)(155648, 4)
+  local l_0_1 = (mp.readu_u16)(l_0_0, 1)
+  if l_0_1 == 23117 then
+    (mp.set_mpattribute)("LobaostInfected")
+    return mp.INFECTED
+  end
 end
-local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-local l_0_2 = (string.find)(l_0_1[2], ",", 1, true)
-if l_0_2 == nil then
-  return mp.CLEAN
+do
+  ;
+  (mp.set_mpattribute)("LobaostOriginal")
+  return mp.INFECTED
 end
-local l_0_3 = (string.sub)(l_0_1[2], 1, l_0_2 - 1)
-;
-(mp.ReportLowfi)(l_0_3, 503412062)
-return mp.INFECTED
 

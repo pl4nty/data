@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Yontoo.B!xp")
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Genieo.M!xp")
   return mp.INFECTED
 end
 return mp.LOWFI

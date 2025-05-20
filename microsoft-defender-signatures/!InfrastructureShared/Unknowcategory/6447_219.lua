@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and pehdr.NumberOfSections == 3 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:PEHasIOAVURL") then
+  (mp.set_mpattribute)("HSTR:IOAVDownloadAdmin")
 end
 return mp.CLEAN
 

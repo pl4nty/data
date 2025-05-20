@@ -3,19 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.match)(l_0_0, "bypass.+%-c.+servercertificatevalidationcallback.*=.*%{.*%$true.+iex.+system%.net%.webclient.+downloadstring.+http") ~= nil then
-      return mp.INFECTED
+do
+  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
-    return mp.CLEAN
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
 

@@ -3,9 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)):lower()
-if l_0_0:find("blackbone", 1, true) then
-  return mp.CLEAN
+if peattributes.isdll == true then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
 end
-return mp.INFECTED
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

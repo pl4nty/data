@@ -3,16 +3,20 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (mp.get_mpattribute)("NID:Worm:Win32/VBInject.G2!MTB") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["winword.exe"] = true
+  l_0_3["excel.exe"] = true
+  l_0_3["powerpnt.exe"] = true
+  l_0_3["outlook.exe"] = true
+  if l_0_3[l_0_2] then
     return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

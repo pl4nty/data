@@ -3,14 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or pehdr.TimeDateStamp ~= 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA == 0 or ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).Size < 9 then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_rva)(((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA, 9)
-if (mp.readu_u32)(l_0_0, 5) == 4294967295 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
+if (this_sigattrlog[2]).matched and (this_sigattrlog[7]).matched then
+  local l_0_6 = (this_sigattrlog[2]).p1
+  local l_0_7 = (this_sigattrlog[7]).p1
+  if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") and (string.match)(l_0_7:lower(), "^[a-z0-9]+$") then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.LOWFI
+end
 

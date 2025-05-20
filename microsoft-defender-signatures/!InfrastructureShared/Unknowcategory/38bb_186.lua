@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.ismsil then
+if (mp.getfilesize)() <= 512 then
   return mp.INFECTED
+else
+  return mp.LOWFI
 end
 return mp.CLEAN
 

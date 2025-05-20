@@ -3,17 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.getfilesize)() <= 4096 then
-    local l_0_0 = nil
-    l_0_0 = (mp.getfilename)()
-    if l_0_0 == nil then
-      return mp.CLEAN
-    end
-    if l_0_0:sub(-19) == "->word/document.xml" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if (string.find)(l_0_1, " %d%d%d?%d?%d?", 1, false) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

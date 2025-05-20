@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 3145728 then
-  return mp.CLEAN
+if peattributes.no_security == true and peattributes.isexe == true and (mp.getfilesize)() > 1700000 and (mp.getfilesize)() < 4000000 then
+  return mp.INFECTED
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-return mp.INFECTED
+return mp.CLEAN
 

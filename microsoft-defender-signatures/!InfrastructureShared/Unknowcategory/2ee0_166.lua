@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true then
-  return mp.INFECTED
-end
+(bm.trigger_sig)("Meterpreter", "VmAllocsx86")
 return mp.CLEAN
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.ismsil == true and l_0_0 > 458752 and l_0_0 < 589824 then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr + 3, "\001\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 66, "\001\000")
+return mp.INFECTED
 

@@ -3,17 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1, 4), 1)
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readu_u32)((pe.mmap_va)(l_0_0, 4), 1)
-if l_0_1 ~= 67372036 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  if l_0_2 == "powershell.exe" or (string.find)(l_0_2, "^%d+%.exe") then
+    local l_0_3 = (mp.GetScannedPPID)()
+    if l_0_3 == nil then
+      return mp.CLEAN
+    end
+    ;
+    (MpCommon.RequestSmsOnProcess)(l_0_3, MpCommon.SMS_SCAN_LOW)
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if (mp.readu_u32)((pe.mmap_va)(l_0_1, 16), 1) ~= 0 then
-  return mp.CLEAN
-end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "3\192")
-return mp.INFECTED
 

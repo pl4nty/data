@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.lower)((mp.getfilename)()), "%.xz$") ~= nil then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("udaxihh.rsa") then
   return mp.INFECTED
 end
 return mp.CLEAN

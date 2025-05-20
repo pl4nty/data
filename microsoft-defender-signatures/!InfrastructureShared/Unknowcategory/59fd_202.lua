@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)((hstrlog[1]).VA) then
-  return mp.SYNCLOWFI
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

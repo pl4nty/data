@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_exports_count)()
-if peattributes.isdll == true and (l_0_0 == 10 or l_0_0 == 11) then
-  return mp.INFECTED
+if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
+  return mp.CLEAN
+end
+if mp.HSTR_WEIGHT == 4 then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

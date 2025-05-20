@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.sub)(l_0_0, -10) ~= "chrome.exe" and (string.sub)(l_0_0, -11) ~= "firefox.exe" and (string.sub)(l_0_0, -10) ~= "safari.exe" then
-    return mp.INFECTED
-  end
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-return mp.CLEAN
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+end
+return mp.INFECTED
 

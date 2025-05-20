@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 32, "")
+if pehdr.Machine == 34404 then
+  (mp.changedetectionname)(805306437)
+  return mp.INFECTED
+end
 return mp.INFECTED
 

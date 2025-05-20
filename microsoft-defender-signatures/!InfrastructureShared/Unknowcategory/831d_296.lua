@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 == nil or l_0_0 == "" then
-  return mp.CLEAN
+if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil and (this_sigattrlog[5]).utf8p2 ~= nil then
+  (bm.add_related_file)((this_sigattrlog[5]).utf8p1)
+  ;
+  (bm.add_related_file)((this_sigattrlog[5]).utf8p2)
 end
-local l_0_1 = (string.sub)(l_0_0, -10)
-if l_0_1 and (string.lower)(l_0_1) == "\\mshta.exe" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

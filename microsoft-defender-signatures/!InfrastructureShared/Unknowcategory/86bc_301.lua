@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
-  (pe.set_peattribute)("disable_apicall_limit", true)
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "Iƒù", 1, true) + 3, "")
+return mp.INFECTED
 

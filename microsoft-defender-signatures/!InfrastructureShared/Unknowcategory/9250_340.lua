@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("enable_vmm_grow", true)
+local l_0_0 = 0
+if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
+  l_0_0 = 16
+end
+if (mp.bitand)(mp.HSTR_WEIGHT, 15) + l_0_0 >= 18 then
+  return mp.INFECTED
+end
 ;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.set_peattribute)("disable_seh_limit", true)
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-;
-(pe.set_peattribute)("disable_thread_apicall_limit", true)
+(mp.set_mpattribute)("do_exhaustivehstr_rescan_prepscram")
 return mp.CLEAN
 

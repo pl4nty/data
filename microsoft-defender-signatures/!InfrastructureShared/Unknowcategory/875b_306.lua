@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-;
-(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_3")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 22, "êê")
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.isexe and pehdr.NumberOfSections == 5 then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

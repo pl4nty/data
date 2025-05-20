@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil and peattributes.isexe then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if epcode[1] == 131 and epcode[2] == 236 and epcode[30] == 185 and epcode[35] == 128 and epcode[36] == 48 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

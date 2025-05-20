@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 27, "")
+if (pe.get_regval)(pe.REG_EBX) < 16777216 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

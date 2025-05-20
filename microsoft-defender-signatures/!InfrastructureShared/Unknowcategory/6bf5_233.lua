@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_loadconfig == true then
+if (peattributes.isdll == true or peattributes.isexe == true) and (mp.getfilesize)() < 900000 then
   return mp.INFECTED
 end
 return mp.CLEAN

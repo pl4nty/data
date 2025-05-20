@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:find("androidmanifest.xml") then
+if peattributes.isexe and peattributes.ismsil and (mp.getfilesize)() > 20000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

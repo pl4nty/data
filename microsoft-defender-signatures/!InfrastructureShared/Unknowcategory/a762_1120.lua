@@ -3,42 +3,58 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\osk.exe$") then
+if peattributes.isdll then
   return mp.CLEAN
 end
-do
-  if (string.find)(l_0_0, "\\systray.exe$") then
-    local l_0_1 = (versioning.GetOrgID)()
-    if l_0_1 ~= nil and (string.lower)(l_0_1) == "a58b13d8-a8f3-4b11-b655-2d93970f6374" then
-      return mp.CLEAN
-    end
-  end
-  local l_0_2 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
-  local l_0_3 = (sysio.GetProcessFromFileName)(l_0_2)
-  if l_0_3 == nil or #l_0_3 == 0 then
-    return mp.CLEAN
-  end
-  local l_0_4 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe")
-  if l_0_4 ~= nil then
-    local l_0_5 = (sysio.GetRegValueAsString)(l_0_4, "Debugger")
-    if l_0_5 == nil or (string.len)(l_0_5) <= 1 then
-      return mp.CLEAN
-    end
-  else
+if peattributes.isdamaged then
+  return mp.CLEAN
+end
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 4 then
+  return mp.CLEAN
+end
+local l_0_0 = -1
+for l_0_4 = 3, pehdr.NumberOfSections do
+  local l_0_5 = (string.lower)((pesecs[l_0_4]).Name)
+  if (string.sub)(l_0_5, 1, 8) == "cpadinfo" then
     do
-      do return mp.CLEAN end
-      local l_0_6, l_0_7 = (bm.get_process_relationships)()
-      for l_0_11,l_0_12 in ipairs(l_0_6) do
-        if l_0_12.image_path ~= nil then
-          local l_0_13 = (string.lower)(l_0_12.image_path)
-          if (string.find)(l_0_13, "atbroker.exe", 1, true) or (string.find)(l_0_13, "utilman.exe", 1, true) then
-            return mp.INFECTED
-          end
-        end
+      do
+        l_0_0 = l_0_4
+        do break end
+        -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out DO_STMT
+
+        -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+        -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_STMT
+
       end
-      return mp.CLEAN
     end
   end
 end
+if l_0_0 == -1 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_6 = (pe.mmap_rva)((pesecs[l_0_0]).VirtualAddress, 4)
+local l_0_7 = (mp.readu_u32)(l_0_6, 1)
+if l_0_7 ~= 1129341284 then
+  return mp.CLEAN
+end
+local l_0_8 = (pe.mmap_rva)(((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_EXPORT]).RVA, 40)
+local l_0_9 = (mp.readu_u32)(l_0_8, 13)
+local l_0_10 = (pe.mmap_rva)(l_0_9, 32)
+if (string.sub)(l_0_10, 1, 12) == "electron.exe" then
+  (mp.set_mpattribute)("Lua:ElectronExe.A")
+else
+  if (string.sub)(l_0_10, 1, 6) == "nw.exe" then
+    (mp.set_mpattribute)("Lua:NWJsExe.A")
+  end
+end
+return mp.INFECTED
 

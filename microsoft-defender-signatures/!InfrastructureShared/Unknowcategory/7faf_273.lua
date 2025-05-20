@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 83 and epcode[2] == 156 and peattributes.isexe == true and peattributes.no_security == true then
+if peattributes.isexe == true and (pesecs[7]).Name == ".idata" and (pesecs[7]).Characteristics == 1073741888 then
   return mp.INFECTED
 end
 return mp.CLEAN

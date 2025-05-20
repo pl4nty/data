@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-do
-  if not peattributes.hasappendeddata then
-    local l_0_0 = pehdr.NumberOfSections
-    if (pesecs[l_0_0]).SizeOfRawData > 3670016 then
-      (mp.set_mpattribute)("AutoItIgnoreMaxSizes")
-      return mp.INFECTED
+if peattributes.isexe == true and (mp.getfilesize)() > 320000 and (mp.getfilesize)() < 340000 then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
     end
   end
-  return mp.CLEAN
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

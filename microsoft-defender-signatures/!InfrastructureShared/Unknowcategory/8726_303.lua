@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 19, "êê")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("\\program files", 1, true) then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

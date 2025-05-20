@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -17) == "searchindexer.exe" or (string.sub)(l_0_0, -22) == "searchprotocolhost.exe" or (string.sub)(l_0_0, -20) == "searchfilterhost.exe" then
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
   return mp.INFECTED
 end
 return mp.CLEAN

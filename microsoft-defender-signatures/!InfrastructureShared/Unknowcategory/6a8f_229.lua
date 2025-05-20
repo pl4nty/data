@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_hasappendeddata") and (mp.getfilesize)() < 500000 then
+if (pesecs[1]).VirtualSize > 20480 and (pesecs[1]).VirtualAddress == 4096 then
   return mp.INFECTED
 end
 return mp.CLEAN

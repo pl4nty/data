@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and (string.find)(l_0_0, "2345soft", 1, true) then
-  return mp.CLEAN
+if peattributes.isdll and peattributes.executble_image and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

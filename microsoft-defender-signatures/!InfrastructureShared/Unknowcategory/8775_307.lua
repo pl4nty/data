@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_isdll") and (pe.get_exports_count)() <= 5 and (pe.get_exports_count)() >= 1 then
-    local l_0_0 = (pe.get_imports)()
-    if l_0_0 <= 5 and l_0_0 >= 1 then
-      return mp.INFECTED
-    end
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.INFECTED
+else
+  if (hstrlog[1]).matched then
+    (mp.set_mpattribute)("HSTR:Trojan:Win32/Sefnit.AU")
+    return mp.LOWFI
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

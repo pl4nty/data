@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 10 and (pesecs[8]).Name == ".crt1" then
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Dexel.B!Pra1") then
   return mp.INFECTED
 end
 return mp.CLEAN

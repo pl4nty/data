@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 8, 1))
-if (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, 4), 1) ~= 139 then
+do
+  if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 278528 and (mp.getfilesize)() < 303104 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 9, "\235")
-return mp.INFECTED
 

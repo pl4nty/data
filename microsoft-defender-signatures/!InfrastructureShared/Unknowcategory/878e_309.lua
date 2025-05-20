@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.enable_vmm_grow and peattributes.no_uidata and peattributes.no_comruntime and (mp.getfilesize)() >= 150000 and (mp.getfilesize)() < 330000 then
+if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 5376 then
   return mp.INFECTED
 end
 return mp.CLEAN

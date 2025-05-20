@@ -3,9 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "fabricrouter", 1, true) or (string.find)(l_0_0, "game", 1, true) or (string.find)(l_0_0, "\\kodi", 1, true) then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT < 20 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  return mp.LOWFI
+end
+if pehdr.Subsystem == 1 then
+  (mp.changedetectionname)(805306386)
+else
+  if (hstrlog[4]).matched ~= true then
+    (mp.changedetectionname)(805306397)
+  end
 end
 return mp.INFECTED
 

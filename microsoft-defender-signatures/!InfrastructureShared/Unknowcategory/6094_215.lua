@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (peattributes.isexe == true or peattributes.isdll == true) then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Glims.I")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

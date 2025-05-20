@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.x86_image and peattributes.hasexports and peattributes.suspicious_linker_version then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "->%(mof%d+%)") then
+  (mp.set_mpattribute)("MofPackedScript")
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("AGGR:MSIL:GenCommercialObfuscator.A") and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 then
-  return mp.INFECTED
+if (mp.getfilesize)() > 339417 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("MpAPILimitReached") then
+  (pe.set_peattribute)("disable_apicall_limit", true)
+end
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

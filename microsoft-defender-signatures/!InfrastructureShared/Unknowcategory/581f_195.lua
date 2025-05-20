@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == false and peattributes.no_security == true then
-  return mp.INFECTED
+if (hstrlog[4]).matched then
+  (mp.changedetectionname)(805306442)
 end
-return mp.CLEAN
+return mp.INFECTED
 

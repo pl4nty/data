@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_obfuscator_th_1")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 5, "êê")
-return mp.SUSPICIOUS
+if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%l%l%l%l%l%l.exe") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (pesecs[2]).Name == ".sdata" and (pesecs[2]).Characteristics == 3221225536 then
-  return mp.INFECTED
-end
+local l_0_0 = {}
+;
+(table.insert)(l_0_0, (bm.get_imagepath)())
+;
+(MpCommon.SetPersistContextNoPath)("UACBypassExp.ZK!dllhost", l_0_0, 3)
 return mp.CLEAN
 

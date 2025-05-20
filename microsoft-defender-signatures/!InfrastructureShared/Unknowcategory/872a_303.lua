@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() == 47576 and peattributes.no_security == true and peattributes.isexe == true and (pesecs[4]).Name == ".ex_rsc" then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 ~= nil and l_0_0 >= 7168000 and l_0_0 <= 10240000 then
+  if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

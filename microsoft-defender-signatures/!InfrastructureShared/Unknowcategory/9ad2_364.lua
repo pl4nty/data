@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 255 then
-  return mp.CLEAN
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-local l_0_1 = (string.lower)((mp.getfilename)())
-if l_0_1:find("%.eml%->%(part000%d:%)$") or l_0_1:find("%->%(ole stream %d%)%->%(msg%)%->%(rtfbody%)") then
-  return mp.INFECTED
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

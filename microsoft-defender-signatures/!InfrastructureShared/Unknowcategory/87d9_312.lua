@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+;
+(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 3000)
+return mp.INFECTED
 

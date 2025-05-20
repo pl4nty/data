@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 28, "êê")
+if (pe.query_import)(pe.IMPORT_STATIC, 1000219088) == 0 then
+  return mp.CLEAN
+end
+if (pe.query_import)(pe.IMPORT_STATIC, 1830286805) == 0 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("RDTSC_LoD_trick")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 42, "êê")
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if not peattributes.x86_image then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

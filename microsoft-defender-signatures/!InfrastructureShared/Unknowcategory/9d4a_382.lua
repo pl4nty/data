@@ -3,9 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") and ((mp.get_mpattribute)("SIGATTR:DelphiFile") or (mp.get_mpattribute)("HSTR:Win32/DelphiFile")) then
-  (mp.set_mpattribute)("SIGATTR:Reboon_Lowfi")
+if mp.HSTR_WEIGHT >= 7 then
   return mp.INFECTED
+end
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
 end
 return mp.CLEAN
 

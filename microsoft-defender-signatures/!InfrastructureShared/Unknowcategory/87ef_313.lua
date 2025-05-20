@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and (mp.getfilesize)() > 9500000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if ((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched) and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

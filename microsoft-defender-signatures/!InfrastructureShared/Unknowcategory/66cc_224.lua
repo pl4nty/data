@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+if (string.match)((string.lower)((mp.getfilename)()), "%.xz$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

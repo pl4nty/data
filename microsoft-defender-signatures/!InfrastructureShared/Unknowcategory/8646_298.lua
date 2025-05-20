@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (pe.get_exports)()
-for l_0_5 = 1, l_0_0 do
-  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "cJSON_ReplaceItemInObjectCaseSensitive" then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find(".vcxproj", 1, true) then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

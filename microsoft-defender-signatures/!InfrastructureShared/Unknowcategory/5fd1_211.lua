@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.checks_if_debugged_undocumented then
+if mp.HSTR_WEIGHT == 5 and (hstrlog[5]).hitcount > 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

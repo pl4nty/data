@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win32/Qakbot.PP!MTB") then
+if peattributes.ismsil == true and peattributes.isexe == true and (mp.getfilesize)() < 5048000 then
   return mp.INFECTED
 end
 return mp.CLEAN

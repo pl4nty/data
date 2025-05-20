@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

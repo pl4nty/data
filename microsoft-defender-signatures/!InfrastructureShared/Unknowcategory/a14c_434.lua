@@ -3,20 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[4]).matched then
-  local l_0_0 = (hstrlog[4]).VA
-  local l_0_1 = (pe.mmap_va)(l_0_0, 16)
-  if #l_0_1 == 16 then
-    local l_0_2 = (mp.readu_u32)(l_0_1, 7)
-    if l_0_2 ~= 0 then
-      local l_0_3, l_0_4, l_0_5, l_0_6 = (mp.bsplit)(l_0_2, 8)
-      local l_0_7 = "HSTR:Tovicrypt:CnC/" .. l_0_3 .. "." .. l_0_4 .. "." .. l_0_5 .. "." .. l_0_6
-      ;
-      (mp.set_mpattribute)(l_0_7)
-    end
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-do
-  return mp.INFECTED
+local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
+if l_0_1 == nil then
+  return mp.CLEAN
 end
+if (string.find)(l_0_1, "sdelete", 1, true) or (string.find)(l_0_1, "procdump", 1, true) or (string.find)(l_0_1, "psshutdown", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

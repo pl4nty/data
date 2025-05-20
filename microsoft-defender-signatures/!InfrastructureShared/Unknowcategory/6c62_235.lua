@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.hasappendeddata and peattributes.has_msilresources then
-  return mp.INFECTED
+if (hstrlog[5]).matched then
+  (mp.set_mpattribute)("Lowfi:Komodia:LSP:NoVuln")
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

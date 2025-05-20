@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.getfilesize)() >= 500000 and (mp.getfilesize)() <= 2000000 and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched) or (mp.get_mpattribute)("reads_vdll_code"))) then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

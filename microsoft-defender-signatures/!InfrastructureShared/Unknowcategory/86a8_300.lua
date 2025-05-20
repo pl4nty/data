@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if not l_0_0:find("rpcservices", 1, true) then
+if peattributes.no_security == true and peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() > 800000 and (mp.getfilesize)() < 950000 then
   return mp.INFECTED
 end
 return mp.CLEAN

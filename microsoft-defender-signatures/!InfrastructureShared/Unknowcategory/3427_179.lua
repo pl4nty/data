@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:JS:eval") then
+if (mp.get_mpattribute)("NID:Win32/Xworm") then
   return mp.INFECTED
 end
 return mp.CLEAN

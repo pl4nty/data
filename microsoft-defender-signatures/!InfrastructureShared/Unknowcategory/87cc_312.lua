@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (nri.IsResponse)() then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 2359296 and l_0_0 <= 2555904 and pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 6 then
+  return mp.INFECTED
 end
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_1 = nil
-local l_0_0 = (pe.get_regval)(pe.REG_ECX) - (4294967295 - (pe.get_regval)(pe.REG_EBX))
-;
-(pe.set_regval)(pe.REG_EAX, 0)
-;
-(pe.set_regval)(pe.REG_EBX, l_0_1)
-;
-(pe.set_regval)(pe.REG_ECX, l_0_0)
+if peattributes.no_security == true and peattributes.isexe == true and (pesecs[2]).Name == ".managed" and (pesecs[2]).Characteristics == 1610612768 then
+  return mp.INFECTED
+end
 return mp.CLEAN
 
