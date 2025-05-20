@@ -558,6 +558,9 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeVisualRefreshKumoColorsEnabled(bool trigger_usage = false);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeAIThemeUndoEnabled(bool trigger_usage = false);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeWebUIWebVitals);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeWebUIWebVitalsEnabled();
@@ -604,6 +607,14 @@ BASE_DECLARE_FEATURE(kEdgeProfileFlyoutV2Enable);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeProfileFlyoutV2Enable(bool trigger_usage = false);
 
+// If enabled, will adjust the position and padding of toolbar buttons.
+// And change the home button/forward button pref default value
+// At present, the experiment will only be availabled on Mac, and if the result
+// is good, it will be opened on Windows
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeToolbarButtonUIPolish);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeToolbarButtonUIPolishEnabled();
 }  // namespace edge
 }  // namespace features
 
