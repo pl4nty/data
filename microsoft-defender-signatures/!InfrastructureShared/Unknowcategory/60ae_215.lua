@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("PUA:Block:SpyMe.B")
+if peattributes.ismsil == true and (peattributes.isexe == true or peattributes.isdll == true) then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

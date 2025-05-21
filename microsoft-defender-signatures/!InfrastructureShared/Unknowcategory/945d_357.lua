@@ -3,13 +3,16 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
--- DECOMPILER ERROR at PC36: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC36: Unhandled construct in 'MakeBoolean' P3
-
-if ((hstrlog[1]).matched and (hstrlog[2]).matched) or not (hstrlog[1]).matched or (hstrlog[3]).matched == true then
-  return mp.SUSPICIOUS
-end
-return mp.CLEAN
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

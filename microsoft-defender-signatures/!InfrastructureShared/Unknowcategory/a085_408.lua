@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched) or (mp.get_mpattribute)("reads_vdll_code"))) then
+local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_FNAME), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.match)(l_0_0, "extensions") ~= nil or (string.match)(l_0_0, "temp") ~= nil then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

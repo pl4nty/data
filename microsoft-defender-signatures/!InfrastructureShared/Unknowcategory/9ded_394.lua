@@ -3,24 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 < 4 then
+if (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr - 2, 2), 1) ~= 55295 then
   return mp.CLEAN
 end
-local l_0_2 = {}
-l_0_2.ExecutePatch = 1
-l_0_2["Main@12"] = 1
-l_0_2.MakeUuid = 1
-l_0_2.kAiCode = 1
-local l_0_3 = 0
-for l_0_7 = 1, l_0_0 do
-  local l_0_8 = (pe.mmap_string_rva)((l_0_1[l_0_7]).namerva, 64)
-  if l_0_2[l_0_8] then
-    l_0_3 = l_0_3 + l_0_2[l_0_8]
-  end
-end
-if l_0_3 == 4 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "ût", 1, true), "\235")
+return mp.INFECTED
 

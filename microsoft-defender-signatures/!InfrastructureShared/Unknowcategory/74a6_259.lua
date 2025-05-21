@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 1703936 and l_0_0 <= 1769472 and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

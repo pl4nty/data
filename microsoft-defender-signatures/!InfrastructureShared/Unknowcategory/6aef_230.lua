@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "\235")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\002")
+return mp.INFECTED
 

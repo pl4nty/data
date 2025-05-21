@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (pehdr.NumberOfSections >= 5 or pehdr.NumberOfSections <= 7) then
+if peattributes.isexe and peattributes.x86_image and (pesecs[1]).Name == "   " then
   return mp.INFECTED
 end
 return mp.CLEAN

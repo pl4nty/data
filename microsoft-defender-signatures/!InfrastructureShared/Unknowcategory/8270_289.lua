@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 12000 and l_0_0 <= 17096 and (mp.get_mpattribute)("pea_no_security") and peattributes.isexe == true then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.find)(l_0_0, "program files\\mcafee", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

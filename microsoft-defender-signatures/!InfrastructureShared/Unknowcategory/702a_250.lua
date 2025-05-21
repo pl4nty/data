@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 327680 and l_0_0 <= 360448 and (mp.get_mpattribute)("NID:Win32/IcedId.PK!MTB") then
+if (pesecs[5]).Name == ".rsrc" and (pesecs[5]).VirtualSize > 93955 and (pesecs[5]).VirtualSize < 93961 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,10 +3,19 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)(15437, 4)
-if (mp.readu_u32)(l_0_0, 1) == 4018468997 and l_0_0 ~= "ÆĞÔÇÖİ›ÛÔØĞÄÀĞÇÌ›ÖÚØ" then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 100 and l_0_0 <= 10240 then
+  local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_PATH)
+  if l_0_1 == nil or l_0_1 == "" then
+    return mp.CLEAN
+  end
+  local l_0_2 = "/opt/"
+  if l_0_1:sub(1, #l_0_2) == l_0_2 then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

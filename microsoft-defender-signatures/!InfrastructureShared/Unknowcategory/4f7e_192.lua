@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 68, "\144")
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+;
+(pe.reemulate)()
 return mp.INFECTED
 

@@ -3,9 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 917504 and l_0_0 <= 958464 and pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 6 and (mp.get_mpattribute)("NID:GerWiper.A!Pra1") then
-  return mp.INFECTED
+local l_0_0 = (mp.GetBruteMatchData)()
+do
+  local l_0_1 = ""
+  if l_0_0.is_header then
+    l_0_1 = (string.lower)(tostring(headerpage))
+  else
+    l_0_1 = (string.lower)(tostring(footerpage))
+  end
+  if l_0_1 > 3 then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
-return mp.CLEAN
 

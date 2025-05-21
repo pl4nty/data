@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.has_msilresources then
+if (pesecs[5]).Name == "!EPack" and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

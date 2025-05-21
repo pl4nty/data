@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and pehdr.NumberOfSections == 3 then
+if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,16 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[14]).matched or (hstrlog[15]).matched then
-  (mp.changedetectionname)(805306447)
-else
-  if (hstrlog[16]).matched then
-    (mp.changedetectionname)(805306448)
-  else
-    if (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched then
-      (mp.changedetectionname)(805306432)
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if peattributes.no_exports then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 1 then
+  for l_0_5 = 1, l_0_0 do
+    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
+    if (string.lower)(l_0_6) == "splsamodeinitialize" then
+      return mp.INFECTED
     end
   end
 end
-return mp.INFECTED
+do
+  return mp.CLEAN
+end
 

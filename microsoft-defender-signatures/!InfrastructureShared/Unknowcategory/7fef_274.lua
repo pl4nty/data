@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
-  return mp.CLEAN
-end
-if (mp.GetSMSProcArchitecture)() ~= mp.SMS_PROC_ARCH_X64 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+local l_0_0 = {}
+;
+(table.insert)(l_0_0, (bm.get_imagepath)())
+;
+(MpCommon.SetPersistContextNoPath)("UACBypassExp.ZK!dllhost", l_0_0, 3)
+return mp.CLEAN
 

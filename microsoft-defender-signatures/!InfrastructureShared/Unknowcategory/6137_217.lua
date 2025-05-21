@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 6 and (mp.getfilesize)() >= 5868504 then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%-%>%(%w+Sfx%)%-%>CMT$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

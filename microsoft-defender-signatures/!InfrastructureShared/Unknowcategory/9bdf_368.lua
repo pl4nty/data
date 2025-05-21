@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 192512 and (mp.getfilesize)() > 122880 then
-  if mp.HSTR_WEIGHT == 3 then
-    (mp.set_mpattribute)("Dipsind.C_persist")
-    return mp.LOWFI
+for l_0_3 = 1, pehdr.NumberOfSections do
+  if (pesecs[l_0_3]).Name == ".." and (pesecs[l_0_3]).VirtualAddress == (hstrlog[1]).VA - pehdr.ImageBase and pevars.epsec ~= l_0_3 then
+    return mp.INFECTED
   end
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
 end
 return mp.CLEAN
 

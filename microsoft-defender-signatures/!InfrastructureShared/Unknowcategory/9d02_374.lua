@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative and peattributes.dirty_wx_branch and peattributes.hstr_exhaustive and peattributes.hasappendeddata then
+if pehdr.Machine == 34404 and pehdr.Subsystem == 1 and peattributes.isdriver and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.getfilesize)() < 100000 then
   return mp.INFECTED
 end
-if not peattributes.suspicious_timestamp and not peattributes.suspicious_image_version then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

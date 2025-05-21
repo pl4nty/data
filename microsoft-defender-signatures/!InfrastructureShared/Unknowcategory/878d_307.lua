@@ -4,9 +4,9 @@
 -- params : ...
 -- function num : 0
 do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[4]).utf8p1)
-    if (string.match)(l_0_0, "%.bin$") then
+  if (mp.get_mpattribute)("pea_isdll") and (pe.get_exports_count)() <= 5 and (pe.get_exports_count)() >= 1 then
+    local l_0_0 = (pe.get_imports)()
+    if l_0_0 <= 5 and l_0_0 >= 1 then
       return mp.INFECTED
     end
   end

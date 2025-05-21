@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P3
-
-if (((not (hstrlog[1]).matched and (hstrlog[4]).matched) or (hstrlog[2]).matched) and 1 or 0) + ((hstrlog[3]).matched and 1 or 0) + ((hstrlog[8]).matched and 1 or 0) >= 3 and mp.HSTR_WEIGHT >= 6 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\program files", 1, true) or (string.find)((string.lower)(l_0_0), "\\steam", 1, true) or (string.find)((string.lower)(l_0_0), "torrent.exe", 1, true) or (string.find)((string.lower)(l_0_0), "game", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

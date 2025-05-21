@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 720896 and l_0_0 <= 917504 and peattributes.ismsil == true and peattributes.isdll == false and peattributes.hasexports == false then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\mozilla firefox\\", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

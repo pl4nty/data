@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.isdll == false and pehdr.NumberOfSections == 9 then
+if peattributes.isdll == true and peattributes.hasexports == true and (pe.get_exports_count)() == 19 then
   return mp.INFECTED
 end
 return mp.CLEAN

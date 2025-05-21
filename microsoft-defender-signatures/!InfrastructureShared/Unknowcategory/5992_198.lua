@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("CERT:Trojan:Win32/Mansabo.RPX1!MTB") then
+if peattributes.ismsil and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

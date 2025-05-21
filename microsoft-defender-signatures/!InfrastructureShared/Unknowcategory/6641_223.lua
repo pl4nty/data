@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.lower)((mp.getfilename)()), "%.c$") ~= nil then
-  return mp.INFECTED
+if peattributes.isdll and peattributes.hasexports then
+  (mp.set_mpattribute)("ChangeEPtoExport")
 end
 return mp.CLEAN
 

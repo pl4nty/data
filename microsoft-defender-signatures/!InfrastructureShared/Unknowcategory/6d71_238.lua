@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Trojan:Win32/ChineseKeyboardCheck!MTB") then
+if peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() < 160000 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Bundlore.N!xp")
+if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

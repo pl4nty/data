@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.isdll == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.amd64_image and (pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3221225472 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

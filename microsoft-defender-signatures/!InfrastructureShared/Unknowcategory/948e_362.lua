@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.hstr_full_log)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.matched and (string.byte)((pe.mmap_va)(l_0_5.VA - 39, 1)) == (string.byte)((pe.mmap_va)(l_0_5.VA - 25, 1)) then
+do
+  if (peattributes.isdll == true or peattributes.isexe) and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

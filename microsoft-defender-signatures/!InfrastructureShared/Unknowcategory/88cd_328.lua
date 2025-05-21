@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp2 == nil then
-  return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 21, 35)
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.find)(l_0_0, "u", 1, true)
+    if l_0_1 ~= nil then
+      (pe.mmap_patch_va)(pevars.sigaddr + 21 + l_0_1 - 1, "êê")
+    end
+  end
+  return mp.INFECTED
 end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 == nil then
-  return mp.CLEAN
-end
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).wp2 == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("PUA:Block:Airpush.B")
+if (pesecs[3]).Name == ".qhw" or (pesecs[2]).Name == "DrtWJgcR" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

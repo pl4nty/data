@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 3 then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_AMSI and peattributes.no_security == true then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT < 3 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
-end
-return mp.LOWFI
+return mp.CLEAN
 

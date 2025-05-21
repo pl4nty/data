@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:DirectHW.B")
+if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_amd64_image") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

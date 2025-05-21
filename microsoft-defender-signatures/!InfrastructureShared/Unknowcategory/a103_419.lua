@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 64)
-local l_0_1 = (string.find)(l_0_0, "âU\248", 1, true)
-if l_0_1 ~= nil then
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 9, "êê")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 18, "êê")
-  ;
-  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + 24, "êê")
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).wp2 == nil then
+  return mp.CLEAN
 end
-return mp.LOWFI
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -19) == "\\browser_broker.exe" or (string.sub)(l_0_0, -13) == "\\explorer.exe" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

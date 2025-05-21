@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:WinNT/Bancos.K") then
+if peattributes.ismsil == true and peattributes.isexe == true then
   return mp.INFECTED
 end
-return mp.SUSPICIOUS
+return mp.CLEAN
 

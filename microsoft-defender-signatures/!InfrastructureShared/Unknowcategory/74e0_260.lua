@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Renos_msposer")
-if (mp.get_mpattribute)("PEPCODE:VirTool:Win32/Obfuscator.ED") then
-  return mp.INFECTED
+do
+  if pehdr.TimeDateStamp ~= 0 then
+    local l_0_0 = (MpCommon.GetCurrentTimeT)()
+    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 86400 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

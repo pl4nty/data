@@ -3,18 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
-do
-  local l_0_1 = ""
-  if l_0_0.is_header then
-    l_0_1 = (string.lower)(tostring(headerpage))
-  else
-    l_0_1 = (string.lower)(tostring(footerpage))
-  end
-  if l_0_1 > 20 then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+if pevars.sigaddr ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+  return mp.CLEAN
 end
+if (pe.query_import)(pe.IMPORT_STATIC, 214667374) and (mp.crc32)(-1, epcode, 17, 17) == 3988924912 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

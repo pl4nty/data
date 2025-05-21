@@ -26,6 +26,7 @@ l_0_1["Trojan:Win32/SystemBC.SA!sms"] = true
 l_0_1["Backdoor:Win32/Coroxy.E!sms"] = true
 l_0_1["Trojan:Win64/Shaolaod.A!sms"] = true
 l_0_1["Trojan:Win32/Lummac.SD!sms"] = true
+l_0_1["Trojan:Win32/Lummac.SDA!sms"] = true
 l_0_1["Trojan:Win32/Lummac.SB!sms"] = true
 l_0_1["Trojan:Win32/LummaStealer.STB!sms"] = true
 l_0_1["Trojan:Win32/LummaStealer.STE!sms"] = true

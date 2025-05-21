@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 200000 and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

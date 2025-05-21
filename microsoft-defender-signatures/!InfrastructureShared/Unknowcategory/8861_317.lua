@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 4 then
-  return mp.SUSPICIOUS
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "/externallinks", 1, true) or (string.find)(l_0_0, "->(ole stream 0)->(msg)", 1, true) then
+  return mp.INFECTED
 end
-if (hstrlog[1]).matched and (hstrlog[2]).matched then
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AMY")
-end
-return mp.LOWFI
+return mp.CLEAN
 

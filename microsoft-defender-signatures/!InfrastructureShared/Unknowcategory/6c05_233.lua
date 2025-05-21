@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() <= 819200 and (mp.getfilesize)() >= 614400 then
+if pehdr.NumberOfSections == 10 and (pesecs[8]).Name == ".crt1" then
   return mp.INFECTED
 end
 return mp.CLEAN

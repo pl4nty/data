@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() < 204800 then
-  return mp.INFECTED
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp2 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

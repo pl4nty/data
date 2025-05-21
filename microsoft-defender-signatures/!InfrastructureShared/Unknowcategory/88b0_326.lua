@@ -3,24 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if not (hstrlog[1]).matched then
-    local l_0_0 = (hstrlog[2]).matched
-  end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  if mp.HSTR_WEIGHT >= 3 and (l_0_0 or (hstrlog[3]).matched) then
-    return mp.INFECTED
-  end
-  if mp.HSTR_WEIGHT >= 2 then
-    return mp.LOWFI
-  else
-    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_0 then
-      return mp.LOWFI
-    end
-  end
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 13, 4), 1) < 1048576 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 17, "")
+return mp.INFECTED
 

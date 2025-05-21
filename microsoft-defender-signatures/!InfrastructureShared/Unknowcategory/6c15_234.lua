@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win32/Qakbot.PP!MTB") then
-  return mp.INFECTED
+local l_0_0, l_0_1 = pcall(bm.get_connection_string)
+if l_0_0 and l_0_1:match("DestPort=4242;") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

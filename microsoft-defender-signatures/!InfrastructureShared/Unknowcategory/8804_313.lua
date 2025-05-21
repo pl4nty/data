@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll and peattributes.hasexports then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 409600 and l_0_0 < 716800 and (pe.get_exports_count)() == 9 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == false and l_0_0 > 950272 and l_0_0 < 978944 and (mp.get_mpattribute)("TEL:Ransom:Win32/Megacortex!sl001") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

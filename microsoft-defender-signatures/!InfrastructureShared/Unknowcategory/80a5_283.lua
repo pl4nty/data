@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.lower)((string.sub)(l_0_0.image_path, -11)) == "svchost.exe" then
+if pehdr.NumberOfSections == 4 and peattributes.isdll and peattributes.hasexports and peattributes.epinfirstsect then
   return mp.INFECTED
 end
 return mp.CLEAN

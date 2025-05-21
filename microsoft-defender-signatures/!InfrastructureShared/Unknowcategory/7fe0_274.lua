@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (pesecs[2]).Name == ".sdata" and (pesecs[2]).Characteristics == 3221225536 then
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Taskun.AMAK!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

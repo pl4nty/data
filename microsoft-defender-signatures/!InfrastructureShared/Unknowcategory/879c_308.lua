@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(mp.GetParentProcInfo)
-if l_0_1 and (string.find)((l_0_1.image_path):lower(), "solarwinds.businesslayerhost.exe", 1, true) then
-  return mp.LOWFI
-end
+local l_0_1 = nil
+local l_0_0 = (pe.get_regval)(pe.REG_ECX) - (4294967295 - (pe.get_regval)(pe.REG_EBX))
+;
+(pe.set_regval)(pe.REG_EAX, 0)
+;
+(pe.set_regval)(pe.REG_EBX, l_0_1)
+;
+(pe.set_regval)(pe.REG_ECX, l_0_0)
 return mp.CLEAN
 

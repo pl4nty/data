@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil == true then
-    local l_0_0 = (string.lower)((mp.getfilename)())
-    if (string.find)(l_0_0, ".scr$") or (string.find)(l_0_0, ".tmp$") then
-      return mp.INFECTED
-    else
-      return mp.LOWFI
-    end
-  end
+if not (this_sigattrlog[1]).ppid then
   return mp.CLEAN
 end
+if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= ((MpCommon.GetProcessElevationAndIntegrityLevel)((this_sigattrlog[1]).ppid)).IntegrityLevel then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,26 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  if mp.HSTR_WEIGHT >= 18 then
-    (mp.changedetectionname)(805306420)
-    return mp.INFECTED
-  else
-    if mp.HSTR_WEIGHT >= 1 and (hstrlog[11]).matched then
-      (pe.set_peattribute)("hstr_exhaustive", true)
-      ;
-      (pe.reemulate)()
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
+      if (sysio.IsFileExists)(R6_PC25) and (string.find)((string.lower)(R6_PC25), "%.jar") ~= nil then
+        (bm.add_related_file)(R6_PC25)
+        ;
+        (bm.add_threat_file)(R6_PC25)
+      end
     end
   end
-  return mp.CLEAN
-else
-  if mp.HSTR_WEIGHT >= 18 then
+  do
     return mp.INFECTED
-  else
-    if mp.HSTR_WEIGHT >= 7 then
-      (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    end
   end
 end
-return mp.CLEAN
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() < 2000000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_0.ppid, "m+")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1)
+return mp.INFECTED
 

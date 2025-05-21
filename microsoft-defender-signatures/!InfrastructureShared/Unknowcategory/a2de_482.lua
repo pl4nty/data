@@ -3,25 +3,38 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R1 in 'AssignReg'
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
-local l_0_1 = nil
-local l_0_0 = nil
--- DECOMPILER ERROR at PC28: Overwrote pending register: R2 in 'AssignReg'
+if (this_sigattrlog[2]).matched then
+  local l_0_0, l_0_1, l_0_2 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
 
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_2, l_0_3 = nil
+    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_0 ~= nil and (string.len)(l_0_0) > 3 then
+      local l_0_3 = nil
+      if (mp.GetExecutablesFromCommandLine)(l_0_0) ~= nil then
+        for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+          local l_0_4 = nil
+          -- DECOMPILER ERROR at PC32: Confused about usage of register: R6 in 'UnsetPending'
+
+          R6_PC32 = (mp.ContextualExpandEnvironmentVariables)(R6_PC32)
+          ;
+          (bm.add_related_file)(R6_PC32)
+        end
+      end
+      do
+        do
+          do return mp.INFECTED end
+          return mp.CLEAN
+        end
+      end
+    end
   end
-  if not (this_sigattrlog[3]).matched or l_0_0 == nil then
-    return mp.CLEAN
-  end
-  if l_0_0 == "" then
-    return mp.CLEAN
-  end
-  if l_0_0 == l_0_1 and l_0_0 == (string.match)((this_sigattrlog[3]).utf8p1, "\\(%l+)%.exe") then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
 end
 

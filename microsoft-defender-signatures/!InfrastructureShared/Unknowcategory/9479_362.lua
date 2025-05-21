@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pevars.sigaddr
-local l_0_1 = (pe.vm_search)(l_0_0, l_0_0 + 144, "\129=\144\001\004ðI\002\000s\144\000", nil, pe.VM_SEARCH_BM)
-if l_0_1 == 4294967295 then
+do
+  if (peattributes.isexe == true or peattributes.isdll == true) and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(l_0_0 + 41, "j\001\144")
-;
-(pe.mmap_patch_va)(l_0_1 + 6, "\001\000\000")
-return mp.INFECTED
 

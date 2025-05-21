@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 172032 and l_0_0 <= 184320 and pehdr.NumberOfSections >= 5 and pehdr.NumberOfSections <= 7 and (pesecs[3]).Name == "EJf-ov" then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "/document.xml", 1, true) or (string.find)(l_0_0, "xl/externallinks/", 1, true) or (string.find)(l_0_0, "->(ole stream 0)->(msg)", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

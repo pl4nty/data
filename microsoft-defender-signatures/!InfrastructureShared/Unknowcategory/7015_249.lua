@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 8 then
-  (pe.set_image_filename)("\"myapp.exe\" /install")
-  ;
-  (pe.reemulate)()
+if peattributes.ismsil == true and peattributes.isexe == true and pehdr.AddressOfEntryPoint ~= 36446 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

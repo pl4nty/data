@@ -3,20 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+    if (string.find)(l_0_0, "wscript.shell", 1, true) and ((string.find)(l_0_0, "eval(", 1, true) or (string.find)(l_0_0, "\'ev\'+\'al\'", 1, true)) then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_ismsil") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

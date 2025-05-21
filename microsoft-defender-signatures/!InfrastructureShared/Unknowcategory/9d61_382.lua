@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 917504 and l_0_0 <= 958464 and pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 6 and (mp.get_mpattribute)("NID:GerWiper.A!Pra1") then
   return mp.INFECTED
-end
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
 end
 return mp.CLEAN
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if ((pesecs[1]).Name == "CODE" and (pesecs[2]).Name == "DATA" and (pesecs[3]).Name == "BSS") or (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_1 = (string.sub)(l_0_0, 9, 9)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "\187" .. l_0_1 .. "\000\000\000êêêê")
+return mp.INFECTED
 

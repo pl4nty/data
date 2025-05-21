@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (sigattr_tail[mp.SIGATTR_LOG_SZ]).matched == true and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12352 then
+if peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Zilla.AMMG!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

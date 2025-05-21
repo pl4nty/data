@@ -3,12 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-if (string.find)(l_0_0:lower(), "microsoft.net\\framework.-\\v[0-9.].+\\temporary asp.net files\\") then
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  end
+  -- DECOMPILER ERROR at PC10: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_3 = nil
+  if l_0_3 == nil or (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_0), true, false) then
+    return mp.CLEAN
+  end
+  ;
+  (bm.add_threat_file)(l_0_3)
   return mp.INFECTED
 end
-return mp.CLEAN
 

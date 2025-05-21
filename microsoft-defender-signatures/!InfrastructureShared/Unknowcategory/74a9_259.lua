@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if MpCommon.SECURITY_MANDATORY_HIGH_RID <= ((bm.get_current_process_startup_info)()).integrity_level then
-  return mp.CLEAN
+if peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_ep == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

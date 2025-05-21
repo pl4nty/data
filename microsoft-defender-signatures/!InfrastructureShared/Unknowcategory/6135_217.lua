@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.isexe then
-  return mp.INFECTED
+if (mp.get_mpattribute)("InEmail") then
+  (mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

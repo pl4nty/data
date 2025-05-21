@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "Iƒù", 1, true) + 3, "")
-return mp.INFECTED
+if peattributes.isexe == true and peattributes.no_security == true and (pesecs[5]).Name == "vnbvhyaf" and (pesecs[6]).Name == "evpaqbyf" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

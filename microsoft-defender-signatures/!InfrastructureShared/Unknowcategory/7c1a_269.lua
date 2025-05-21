@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() >= 20480 and (mp.getfilesize)() <= 36864 and peattributes.no_security == true then
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Zilla.AMCY") then
   return mp.INFECTED
 end
 return mp.CLEAN

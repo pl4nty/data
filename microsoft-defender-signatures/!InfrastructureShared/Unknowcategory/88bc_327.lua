@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-do
-  if l_0_0 ~= nil and l_0_0.command_line ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.command_line)
-    if l_0_1:find("azurearcagent", 1, true) then
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+return mp.LOWFI
 

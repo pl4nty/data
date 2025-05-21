@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)(pevars.sigaddr) and (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 then
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if mp.HSTR_CALLER_SMS == l_0_0 then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("SLF:Win64/Shelcorid.C")
+return mp.LOWFI
 

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.enable_vmm_grow and (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.dynmem_APIcall and peattributes.suspicious_linker_version then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 17, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

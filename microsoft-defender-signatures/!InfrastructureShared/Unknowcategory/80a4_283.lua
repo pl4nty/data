@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.lower)((string.sub)(l_0_0.image_path, -11)) == "svchost.exe" then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\google\\chrome\\", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

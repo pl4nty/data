@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 1000219088) == 0 then
+if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
   return mp.CLEAN
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 1830286805) == 0 then
-  return mp.CLEAN
-end
+;
+(mp.set_mpattribute)("PUA:Block:BrowseFox")
 return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+if peattributes.isexe == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Trojan:Win64/RedLine.AL!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

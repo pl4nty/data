@@ -3,19 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = (bm.get_imagepath)()
 if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["winword.exe"] = true
-  l_0_3["excel.exe"] = true
-  l_0_3["powerpnt.exe"] = true
-  if l_0_3[l_0_2] then
-    return mp.LOWFI
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.sub)(l_0_0, -9) ~= "steam.exe" and (string.sub)(l_0_0, -18) ~= "steamwebhelper.exe" then
+    return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

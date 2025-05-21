@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) and ((hstrlog[4]).matched or (hstrlog[5]).matched) then
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
+else
   return mp.INFECTED
 end
 return mp.CLEAN

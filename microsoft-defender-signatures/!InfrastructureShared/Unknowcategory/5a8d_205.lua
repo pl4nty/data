@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata and peattributes.dirty_wx_branch then
+if peattributes.ismsil and (mp.getfilesize)() <= 327680 then
   return mp.INFECTED
 end
 return mp.CLEAN

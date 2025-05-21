@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.amd64_image and peattributes.no_ep then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:CoinMiner.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

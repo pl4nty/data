@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find(".url", 1, true) then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 4, 4)
+if (mp.readu_u32)(l_0_0, 1) < 1048576 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

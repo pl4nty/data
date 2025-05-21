@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (((((((((((hstrlog[1]).matched and not (hstrlog[2]).matched) or (hstrlog[3]).matched) and not (hstrlog[4]).matched) or (hstrlog[5]).matched) and not (hstrlog[6]).matched) or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 >= 7) and (mp.getfilesize)() < 483328 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 16)
+local l_0_1 = (mp.readu_u32)(l_0_0, 3)
+local l_0_2 = (pe.mmap_va)(l_0_1, 6)
+if (string.byte)(l_0_2, 1) == 83 and (string.byte)(l_0_2, 2) == 108 and (string.byte)(l_0_2, 3) == 101 and (string.byte)(l_0_2, 4) == 101 and (string.byte)(l_0_2, 5) == 112 and (string.byte)(l_0_2, 6) == 0 then
   return mp.INFECTED
 end
 return mp.CLEAN

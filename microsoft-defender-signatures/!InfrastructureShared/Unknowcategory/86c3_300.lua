@@ -3,16 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.x86_image == true and peattributes.isexe == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.sub)(l_0_0, -13) == "uninstall.exe" or (string.sub)(l_0_0, -15) == "uninstaller.exe" then
   return mp.CLEAN
 end
+return mp.INFECTED
 

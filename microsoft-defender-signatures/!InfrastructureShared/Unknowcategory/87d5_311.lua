@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_0))
-if (string.find)(l_0_1, ":\"\\..\\", 1, true) ~= nil then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0:len() >= 12 then
+    local l_0_1 = (string.sub)(l_0_0, -12)
+    if l_0_1 == "ie4uinit.exe" or l_0_1 == "iexplore.exe" then
+      return mp.CLEAN
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

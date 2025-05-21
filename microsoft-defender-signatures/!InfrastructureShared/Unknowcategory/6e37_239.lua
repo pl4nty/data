@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdriver and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if peattributes.isexe == true and peattributes.no_security == true and (mp.getfilesize)() == 73728 then
   return mp.INFECTED
 end
 return mp.CLEAN

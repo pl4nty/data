@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.isexe == true and pehdr.NumberOfSections == 5 and peattributes.no_security == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

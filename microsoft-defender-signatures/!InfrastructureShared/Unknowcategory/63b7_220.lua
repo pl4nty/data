@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[5]).Name == ".V1" then
-  return mp.INFECTED
+if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

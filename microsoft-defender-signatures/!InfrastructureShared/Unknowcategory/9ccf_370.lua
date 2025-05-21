@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_enable_vmm_grow") and not (mp.get_mpattribute)("pea_deep_analysis") then
-  (pe.set_peattribute)("enable_vmm_grow", true)
-  ;
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
-else
-  return mp.INFECTED
+do
+  if epcode[1] == 232 and epcode[5] == 0 and epcode[6] == 233 and epcode[10] == 255 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

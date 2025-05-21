@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-;
-(table.insert)(l_0_0, (bm.get_imagepath)())
-;
-(MpCommon.SetPersistContextNoPath)("UACBypassExp.ZK!dllhost", l_0_0, 3)
+if peattributes.isexe == true and (pesecs[2]).Name == ".sedata" and (pesecs[2]).Characteristics == 1744830496 then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

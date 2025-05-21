@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RW!MTB") and (mp.getfilesize)() < 250000 and (mp.getfilesize)() > 220000 and peattributes.isexe then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("com.atlassian.applinks.", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

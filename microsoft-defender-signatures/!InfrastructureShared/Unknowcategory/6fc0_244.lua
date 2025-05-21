@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 1044480 then
+local l_0_0 = (mp.getfilesize)()
+if (mp.get_mpattribute)("HSTR:GolangBinary") and l_0_0 < 6291456 and l_0_0 < 8388608 then
   return mp.INFECTED
 end
 return mp.CLEAN

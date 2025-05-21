@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[5]).matched or (hstrlog[6]).matched then
-  (mp.changedetectionname)(805306370)
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 > 131072 and l_0_0 < 262144 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

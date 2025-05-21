@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasValidProjPath") and (mp.get_mpattribute)("pea_hasappendeddata") and peattributes.isexe then
-  return mp.LOWFI
+if epcode[1] == 83 and epcode[2] == 156 and peattributes.isexe == true and peattributes.no_security == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

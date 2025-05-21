@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find(".search-ms", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_regval)(pe.REG_EIP, (pe.get_regval)(pe.REG_EIP) + (string.byte)((pe.mmap_va)(pevars.sigaddr - 1, 1), 1))
+return mp.INFECTED
 

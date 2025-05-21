@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0:len() >= 28 and (l_0_0:sub(-28)):lower() == "word/_rels/settings.xml.rels" then
+if peattributes.x86_image and peattributes.isexe and peattributes.lastscn_writable and peattributes.lastscn_executable then
   return mp.INFECTED
 end
 return mp.CLEAN

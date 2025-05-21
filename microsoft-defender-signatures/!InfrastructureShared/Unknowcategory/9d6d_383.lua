@@ -3,9 +3,21 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 110592 and l_0_0 <= 131072 and pehdr.NumberOfSections == 6 and ((pesecs[1]).VirtualSize > 4096 or (pesecs[1]).VirtualSize < 8192) then
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and not (string.find)((string.lower)(l_0_0), " /create ", 1, true) and not (string.find)((string.lower)(l_0_0), ".hta", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

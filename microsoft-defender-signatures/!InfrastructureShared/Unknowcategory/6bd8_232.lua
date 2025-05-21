@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == false then
+if (string.find)((mp.getfilename)(), "%->%(RarSfx%)%->%w+%.exe%->%(RarSfx%)") == nil then
   return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("PUA:HSTR:OnePlatformInstaller")
 return mp.INFECTED
 

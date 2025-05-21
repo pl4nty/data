@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.ismsil and peattributes.isdll and (mp.getfilesize)() < 32768 then
-  return mp.INFECTED
+if (mp.bitand)(mp.HSTR_WEIGHT, 248) >= 8 then
+  if (mp.bitand)(mp.HSTR_WEIGHT, 7) >= 1 then
+    return mp.INFECTED
+  end
+  return mp.LOWFI
 end
 return mp.CLEAN
 

@@ -3,13 +3,6 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p1
-    ;
-    (mp.TriggerScanResource)("file", l_0_0, 0)
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "t", 1, true) - 1, "\235")
+return mp.INFECTED
 

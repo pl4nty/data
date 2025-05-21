@@ -3,13 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and peattributes.no_security == false and peattributes.ismsil == false then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 >= 1126400 and l_0_0 <= 1945600 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
+else
+  return mp.INFECTED
 end
+return mp.CLEAN
 

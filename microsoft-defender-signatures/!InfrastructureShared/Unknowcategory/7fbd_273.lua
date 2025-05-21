@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2416696475)
+if peattributes.isexe == true and (pesecs[4]).Name == ".didat" and (pesecs[4]).Characteristics == 3221225536 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

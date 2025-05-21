@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true or peattributes.isexe == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    if l_0_0 ~= nil and #l_0_0 > 0 and (mp.IsTrustedFile)() then
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if ((mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsAbnormalSheetStateBits")) or (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

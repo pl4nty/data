@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 and l_0_0.integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0.image_path, -7)) == "cmd.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

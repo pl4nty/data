@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and peattributes.ismsil == true and l_0_0 >= 12288 and l_0_0 <= 86016 then
+  return mp.INFECTED
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
-end
+return mp.LOWFI
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if ((l_0_0 >= 53248 and l_0_0 <= 61440) or l_0_0 < 315392 or l_0_0 <= 327680) and (pehdr.NumberOfSections >= 2 or pehdr.NumberOfSections <= 4) then
+if peattributes.isexe == true and (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 and (mp.getfilesize)() >= 1000000 and (mp.getfilesize)() <= 3000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[9]).Name == "m@@" then
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Didnarbois.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

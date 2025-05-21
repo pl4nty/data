@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.shr32)(pehdr.TimeDateStamp, 22) and (mp.shl32)(pehdr.TimeDateStamp, 22) == 0 then
-  (mp.changedetectionname)(805306369)
+if (epcode[1] == 184 and epcode[6] == 255 and epcode[7] == 224) or epcode[1] == 104 and epcode[6] == 232 then
+  return mp.LOWFI
 end
-return mp.INFECTED
+return mp.CLEAN
 

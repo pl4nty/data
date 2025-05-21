@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+if (mp.get_mpattribute)("Lua:ASPXExt") or (mp.get_mpattribute)("Lua:ASPExt") then
   return mp.INFECTED
 end
 return mp.LOWFI

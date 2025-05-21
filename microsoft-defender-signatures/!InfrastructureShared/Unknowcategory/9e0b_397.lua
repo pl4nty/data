@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.no_security and (mp.getfilesize)() > 1200000 and (mp.getfilesize)() < 5500000 and (pesecs[2]).Name == ".rsrc" and (pesecs[3]).Name == ".reloc" then
+if mp.HSTR_WEIGHT >= 6 then
   return mp.INFECTED
+end
+if (mp.get_mpattribute)("CallsRtlDecompressBuffer") and peattributes.pea_dt_error_not_enough_memory then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.reemulate)()
 end
 return mp.CLEAN
 

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isexe and (mp.get_mpattribute)("Lua:NoVerinfo") then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 196608 and l_0_0 <= 393216 and peattributes.isdll == true and peattributes.hasexports == true then
   return mp.INFECTED
 end
 return mp.CLEAN

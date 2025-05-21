@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "svchost.exe" then
-      if (versioning.IsSeville)() then
-        return mp.INFECTED
-      end
-      return mp.LOWFI
-    end
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = nil
+  else
+  end
+  if not (this_sigattrlog[2]).matched or ((string.lower)((this_sigattrlog[2]).utf8p2)):find("hkey", 1, true) then
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

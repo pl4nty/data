@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/SnakeKeyLogger.AMDA") then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 49152 and l_0_0 <= 57344 and (mp.get_mpattribute)("NID:Win64/Atosev.PA!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

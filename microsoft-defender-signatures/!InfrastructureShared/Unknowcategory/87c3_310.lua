@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
-  return mp.CLEAN
-end
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_1 = (string.sub)(l_0_0, 15, 15)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 12, "\187" .. l_0_1 .. "\000\000\000êê\144")
+return mp.INFECTED
 

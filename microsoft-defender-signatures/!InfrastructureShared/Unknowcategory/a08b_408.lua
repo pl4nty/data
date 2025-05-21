@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 155648 and l_0_0 <= 204800 and (pehdr.NumberOfSections >= 6 or pehdr.NumberOfSections <= 7) and ((pesecs[1]).VirtualSize > 106496 or (pesecs[1]).VirtualSize < 118784) then
+if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched) or (mp.get_mpattribute)("reads_vdll_code"))) then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

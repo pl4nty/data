@@ -3,9 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.ismsil == true and peattributes.no_security == true and l_0_0 <= 53248 and l_0_0 >= 36864 and peattributes.isdll == true and (mp.get_mpattribute)("Trojan:MSIL/MalInject.A!MTB") then
-  return mp.INFECTED
+do
+  if peattributes.isexe == true or peattributes.isdll == true and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

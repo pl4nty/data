@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".ctls0" and (pesecs[6]).Name == ".jetb" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Backdoor:Win64/PepticStunt.A!dha")
+return mp.INFECTED
 

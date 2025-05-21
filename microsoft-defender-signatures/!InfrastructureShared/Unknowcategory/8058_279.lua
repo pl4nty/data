@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
-  ;
-  (mp.SMSAsyncScan)(l_0_0.ppid)
-  return mp.LOWFI
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.INFECTED
+end
+;
+(mp.set_mpattribute)("SLF:Win64/Shelcorid.B")
+return mp.LOWFI
 

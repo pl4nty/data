@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
-  return mp.INFECTED
+if (hstrlog[1]).matched or (hstrlog[2]).matched then
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_56CB")
 end
-return mp.CLEAN
+return mp.INFECTED
 

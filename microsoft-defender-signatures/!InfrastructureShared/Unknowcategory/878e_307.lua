@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+if peattributes.isexe == true and peattributes.hasexports == false and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
   return mp.INFECTED
-else
-  if (hstrlog[1]).matched then
-    (mp.set_mpattribute)("HSTR:Trojan:Win32/Sefnit.AU")
-    return mp.LOWFI
-  end
 end
 return mp.CLEAN
 

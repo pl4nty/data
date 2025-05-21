@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.has_msilresources then
+if (string.match)((string.lower)((mp.getfilename)()), "%.php$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

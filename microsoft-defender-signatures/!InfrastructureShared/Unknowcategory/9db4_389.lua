@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
+if (mp.get_mpattribute)("lua_injector_cl_ep") == false then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
-if l_0_1 ~= "wmiprvse.exe" or l_0_1 == "services.exe" then
-  return mp.CLEAN
+if (hstrlog[1]).matched then
+  (mp.set_mpattribute)("InjCLT!02" .. "itsapproaching")
+else
+  if (hstrlog[2]).matched then
+    (mp.set_mpattribute)("InjCLT!02" .. "thereyougo")
+  end
 end
-if (versioning.GetLocaleIdentifier)() == 1049 then
-  return mp.LOWFI
-end
-return mp.CLEAN
+return mp.LOWFI
 

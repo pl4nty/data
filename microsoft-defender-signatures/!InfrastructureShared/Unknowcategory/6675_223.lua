@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:AoboKeylogger.E")
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Trojan:Win32/Ramdo.H")
-return mp.CLEAN
+return mp.LOWFI
 

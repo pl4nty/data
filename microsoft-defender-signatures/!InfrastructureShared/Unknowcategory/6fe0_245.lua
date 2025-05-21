@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilename)()):match("(Ole Stream 0).*%.scr") and peattributes.isexe then
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win64/MeduzaStealer!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

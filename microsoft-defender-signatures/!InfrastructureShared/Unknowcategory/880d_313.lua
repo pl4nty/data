@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[2]).matched and not (hstrlog[3]).matched) or (not (hstrlog[5]).matched and not (hstrlog[6]).matched) or not (hstrlog[1]).matched or (hstrlog[4]).matched) then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "services.exe" or l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

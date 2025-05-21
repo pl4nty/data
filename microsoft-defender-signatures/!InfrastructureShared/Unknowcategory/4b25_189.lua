@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 332 then
-  (mp.changedetectionname)(805306466)
+if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)(84, 2)
-if l_0_0 ~= nil and l_0_0 == 523 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security and (l_0_0 == 151552 or l_0_0 == 147456) then
   return mp.INFECTED
 end
 return mp.CLEAN

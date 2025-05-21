@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 1, "\000\000\000\000")
-;
-(pe.set_regval)(pe.REG_ECX, 2147483647)
+if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+end
 return mp.INFECTED
 

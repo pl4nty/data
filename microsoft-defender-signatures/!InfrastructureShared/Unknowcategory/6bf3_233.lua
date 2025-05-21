@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() > 2500000 and (mp.getfilesize)() < 3500000 then
+if peattributes.is_process then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("HSTR:UpatreFragA_Nonprocess")
 return mp.CLEAN
 

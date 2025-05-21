@@ -3,17 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
-  l_0_0 = 16
-end
-l_0_0 = l_0_0 + (mp.bitand)(mp.HSTR_WEIGHT, 15)
-if l_0_0 >= 18 then
-  return mp.INFECTED
-else
-  if l_0_0 >= 2 then
-    (mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
-  end
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+-- DECOMPILER ERROR at PC36: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC36: Unhandled construct in 'MakeBoolean' P3
+
+if ((hstrlog[1]).matched and (hstrlog[2]).matched) or not (hstrlog[1]).matched or (hstrlog[3]).matched == true then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

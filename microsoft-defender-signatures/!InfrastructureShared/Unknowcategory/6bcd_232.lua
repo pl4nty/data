@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:find("androidmanifest.xml") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\199\005")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "êê")
+return mp.INFECTED
 

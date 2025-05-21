@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") and (mp.get_mpattribute)("MpExcelFormulaRoutines") and (mp.get_mpattribute)("RPF:XlsWorksheetHidden") then
-  return mp.INFECTED
+if ((mp.GetBruteMatchData)()).match_offset == 0 then
+  if headerpage == nil then
+    return mp.CLEAN
+  end
+  if (mp.readu_u32)(headerpage, 1) == 1497451600 and (mp.readu_u16)(headerpage, 5) == 2573 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

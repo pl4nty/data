@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 1 and (hstrlog[2]).hitcount == 1 and (hstrlog[3]).hitcount == 1 and (hstrlog[4]).hitcount == 1 and (hstrlog[5]).hitcount == 2 and (hstrlog[6]).hitcount == 1 then
-  return mp.INFECTED
+if peattributes.packed and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG") and (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.QG.2") then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

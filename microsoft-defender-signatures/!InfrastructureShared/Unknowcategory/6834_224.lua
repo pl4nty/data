@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and pehdr.NumberOfSections == 3 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 > 5376 and l_0_0 < 12288 then
   return mp.INFECTED
 end
 return mp.CLEAN

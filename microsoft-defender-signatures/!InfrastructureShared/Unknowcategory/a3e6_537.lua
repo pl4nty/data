@@ -6,28 +6,23 @@
 -- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched then
+  if (this_sigattrlog[2]).matched then
     local l_0_0 = nil
-  else
   end
-  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
 
-  do
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-      local l_0_1, l_0_2, l_0_3, l_0_4 = (this_sigattrlog[2]).utf8p1
-    else
-    end
-    -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
-
-    do
-      if not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p1 then
-        local l_0_5 = nil
-        if (sysio.GetPEVersionInfo)((this_sigattrlog[4]).utf8p1) and ((sysio.GetPEVersionInfo)((this_sigattrlog[4]).utf8p1)).OriginalFilename == "bootmgr.exe" and (((sysio.GetPEVersionInfo)((this_sigattrlog[4]).utf8p1)).ProductVersion == "10.0.19041.1288" or ((sysio.GetPEVersionInfo)((this_sigattrlog[4]).utf8p1)).ProductVersion == "10.0.19041.1157") then
-          return mp.INFECTED
-        end
-      end
-      return mp.CLEAN
-    end
+  if not l_0_0 then
+    return mp.CLEAN
   end
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_1 = (string.lower)(l_0_0)
+  local l_0_2 = "net\\s+use\\s+(?<drive>\\w):\\s+\\\\\\\\\\w{2,5}\\.si@ssl\\\\\\w{1,3}\\s+\\&\\&\\s+(?:C:\\\\WINDOWS\\\\system32\\\\|C:\\\\WINDOWS\\\\syswow64\\\\)?rundll32(?:\\.exe)?\\s(?:\\k<drive>)\\:\\\\\\w\\\\\\w\\.dll,[\\%\\w+\\%]+"
+  local l_0_3 = false
+  l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
+  if l_0_3 == false then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
 

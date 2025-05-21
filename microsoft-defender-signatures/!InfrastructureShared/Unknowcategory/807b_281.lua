@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[9]).Name == ".boot" and (pesecs[8]).Characteristics == 3758096480 then
+if (string.lower)((string.sub)(((pe.get_versioninfo)()).OriginalFilename, 1, 5)) == "lsass" then
   return mp.INFECTED
 end
 return mp.CLEAN

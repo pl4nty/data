@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.ismsil == true and l_0_0 > 458752 and l_0_0 < 589824 then
+if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

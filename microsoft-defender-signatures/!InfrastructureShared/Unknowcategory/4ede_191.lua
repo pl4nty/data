@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image then
-  (mp.changedetectionname)(805306485)
+if mp.HSTR_WEIGHT > 2 then
+  (mp.set_mpattribute)("HSTR:Nivdort.AE1")
 end
 return mp.INFECTED
 

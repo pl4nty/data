@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilename)()):sub(-28) == "word/_rels/document.xml.rels" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("CODEPATCH:CheckStackValGetModuleHandle")
+return mp.INFECTED
 

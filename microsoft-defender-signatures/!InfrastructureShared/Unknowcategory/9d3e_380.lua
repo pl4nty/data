@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.hasexports == true and peattributes.epinfirstsect == true and peattributes.suspicious_linker_version == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true then
-  return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.ps1)")
+if l_0_2 and (sysio.IsFileExists)(l_0_2) then
+  (mp.ReportLowfi)(l_0_2, 1120308759)
+  ;
+  (bm.add_related_file)(l_0_2)
 end
-return mp.CLEAN
+return mp.INFECTED
 

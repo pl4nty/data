@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Ekstak.AN!MTB") then
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/Remcos.PI!Pra1") then
   return mp.INFECTED
 end
 return mp.CLEAN

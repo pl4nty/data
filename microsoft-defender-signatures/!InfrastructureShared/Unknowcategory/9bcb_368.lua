@@ -3,10 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "s", 1, true) - 1
-;
-(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+do
+  if peattributes.isexe == true and peattributes.amd64_image and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

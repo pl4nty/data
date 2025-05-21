@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-if not peattributes.hasexports then
+if (mp.getfilesize)() > 196418 then
   return mp.CLEAN
 end
-if R1_PC17 ~= nil and (pe.get_exports)() == 1 then
-  return mp.INFECTED
+if not peattributes.dt_error_heur_exit_criteria then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

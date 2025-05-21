@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[5]).Name == ".gr43" and (pesecs[6]).Name == ".00cfg" then
+local l_0_0 = (mp.getfilesize)()
+if (l_0_0 >= 315392 and l_0_0 <= 327680) or l_0_0 >= 405504 and l_0_0 <= 466944 then
   return mp.INFECTED
 end
 return mp.CLEAN

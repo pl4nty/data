@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096480 then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.suspicious_image_version then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

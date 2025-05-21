@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.lower)((mp.getfilename)()), "%.xz$") ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 3, "\001\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 59, "\001\000")
+return mp.INFECTED
 

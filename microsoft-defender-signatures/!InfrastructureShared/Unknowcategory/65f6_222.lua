@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.ismsil and l_0_0 < 720896 and l_0_0 > 50000 then
+if (mp.getfilesize)() < 4000 and (mp.get_mpattribute)("BM_TEXT_FILE") then
   return mp.INFECTED
 end
 return mp.CLEAN

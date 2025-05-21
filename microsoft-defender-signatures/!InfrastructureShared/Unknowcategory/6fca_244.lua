@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 323584 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0 ~= nil and l_0_0:find("putty", 1, true) ~= nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

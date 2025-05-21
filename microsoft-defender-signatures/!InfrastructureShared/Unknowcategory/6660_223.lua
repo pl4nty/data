@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.lower)((mp.getfilename)()), "%.c$") ~= nil then
-  return mp.INFECTED
+if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "veeamp.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

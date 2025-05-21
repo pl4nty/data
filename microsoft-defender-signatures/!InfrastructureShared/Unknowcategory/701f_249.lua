@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, ".diagcab->", 1, true) ~= nil then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 10 then
-  return mp.INFECTED
+if (string.lower)((string.sub)((mp.getfilename)(), -3)) == "r2w" then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
-return mp.CLEAN
+return mp.INFECTED
 

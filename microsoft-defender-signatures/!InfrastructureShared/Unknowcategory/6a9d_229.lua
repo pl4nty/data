@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).VirtualSize > 20480 and (pesecs[1]).VirtualAddress == 4096 then
-  return mp.INFECTED
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 34, "ǅ")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 44, "\015\132")
 return mp.CLEAN
 

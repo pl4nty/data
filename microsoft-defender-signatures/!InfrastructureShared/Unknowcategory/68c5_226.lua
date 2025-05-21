@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(bm.trigger_sig_self_propagate)("SuspHHChildProcessLaunch", "Behavior:Win32/SuspHHProcessCreate.A!dha")
-return mp.INFECTED
+if peattributes.isdll == true and (mp.get_mpattribute)("pea_no_security") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.SizeOfImage >= 65536 and pehdr.SizeOfImage <= 131072 and peattributes.executes_from_dynamic_memory then
-  return mp.INFECTED
-else
-  ;
-  (mp.changedetectionname)(805306395)
-  return mp.SUSPICIOUS
+do
+  if (mp.get_mpattribute)("pea_has_msilresources") and peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

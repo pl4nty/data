@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true then
-  (pe.set_image_filename)("C:\\temp\\myapp.exe")
-  ;
-  (pe.reemulate)()
+if (string.match)((string.sub)((sigattr_head[1]).p1, 2, 7), "%d+") then
   return mp.INFECTED
 end
 return mp.CLEAN

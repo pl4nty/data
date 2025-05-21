@@ -3,7 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("LUA:FileSizeLE2000.A") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 20480 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 16)
+if (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,22 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if peattributes.no_exports then
-  return mp.CLEAN
-end
-local l_0_0, l_0_1 = (pe.get_exports)()
-if l_0_0 > 1 then
-  for l_0_5 = 1, l_0_0 do
-    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
-    if (string.lower)(l_0_6) == "rathbuige" then
-      return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  local l_0_1, l_0_2, l_0_3 = pcall(bm.get_process_relationships, l_0_0.ppid)
+  if l_0_1 then
+    for l_0_7,l_0_8 in ipairs(l_0_3) do
+      if l_0_8 ~= nil and l_0_8.ppid ~= nil then
+        (bm.request_SMS)(l_0_8.ppid, "m")
+        ;
+        (bm.add_action)("SmsAsyncScanEvent", 1)
+      end
     end
   end
 end
 do
-  return mp.CLEAN
+  l_0_1 = mp
+  l_0_1 = l_0_1.INFECTED
+  return l_0_1
 end
 

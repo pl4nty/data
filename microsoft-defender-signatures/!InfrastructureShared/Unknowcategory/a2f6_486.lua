@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_amd64_image") and (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 528384 and (mp.getfilesize)() < 552960 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)(l_0_6.image_path, "\\jumpcloud-agent.exe", 1, true) or (string.find)(l_0_6.image_path, "\\icinga2.exe", 1, true) or (string.find)(l_0_6.image_path, "\\plesksrv.exe", 1, true)) then
+    return mp.CLEAN
   end
-  return mp.CLEAN
 end
+return mp.INFECTED
 

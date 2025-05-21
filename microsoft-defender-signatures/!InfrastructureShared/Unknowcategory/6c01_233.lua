@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_loadconfig == true then
+if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("HSTR:VirTool:Win32/AscUrlExe") then
   return mp.INFECTED
 end
 return mp.CLEAN

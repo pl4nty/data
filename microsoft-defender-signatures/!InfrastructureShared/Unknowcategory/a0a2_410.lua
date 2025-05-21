@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (string.lower)(l_0_0.command_line)
-if (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "windowsazure", 1, true) or (string.find)(l_0_1, "chocolatey.", 1, true) then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 614400 and l_0_0 <= 720896 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_DEBUG]).Size == 56 and pehdr.Subsystem == 2 and pehdr.NumberOfSections >= 7 and pehdr.NumberOfSections <= 10 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

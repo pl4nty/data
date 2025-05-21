@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isdll and peattributes.ismsil then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:MacRepair.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

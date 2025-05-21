@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  (mp.changedetectionname)(805306392)
+if peattributes.lastscn_writable and peattributes.hasexports then
   return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("do_deep_rescan")
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+return mp.INFECTED
 

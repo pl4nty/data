@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "\\lenovo\\visualdiscovery\\", 1, true) ~= nil then
-    return mp.INFECTED
-  end
+if (mp.get_mpattribute)("SIGATTR:DeleteMyAppExe") and (mp.get_mpattribute)("SIGATTR:DropMZ") and (mp.get_mpattribute)("SIGATTR:WRITESYSDIR") then
+  return mp.INFECTED
 end
 return mp.LOWFI
 

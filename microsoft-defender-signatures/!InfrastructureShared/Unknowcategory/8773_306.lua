@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
 ;
-(MpCommon.SetPersistContextNoPath)("MiKatzExe", l_0_1, 100)
-return mp.INFECTED
+(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_3")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 22, "êê")
+return mp.CLEAN
 

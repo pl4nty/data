@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win64/Zusy.AP!MTB")) then
-  return mp.INFECTED
+if (mp.get_mpattribute)("MpHasValidProjPath") and (mp.get_mpattribute)("pea_hasappendeddata") and peattributes.isexe then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

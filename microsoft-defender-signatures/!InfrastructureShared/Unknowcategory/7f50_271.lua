@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 5 and (mp.getfilesize)() >= 9472 and (mp.getfilesize)() <= 20480 then
+if (mp.getfilesize)() < 2097152 then
+  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+  ;
+  (mp.set_mpattribute)("NScript:NoParsingLimits")
   return mp.INFECTED
 end
 return mp.CLEAN

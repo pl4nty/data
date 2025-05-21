@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.NumberOfSections == 3 then
+if peattributes.isexe and pehdr.NumberOfSections == 8 then
   return mp.INFECTED
 end
 return mp.CLEAN

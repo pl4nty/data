@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if peattributes.ismsil and peattributes.amd64_image and peattributes.no_ep then
+  return mp.INFECTED
 end
-if not peattributes.dt_error_heur_exit_criteria then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

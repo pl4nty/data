@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
+if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win32/Fragtor.AD!MTB")) then
   return mp.INFECTED
 end
 return mp.CLEAN

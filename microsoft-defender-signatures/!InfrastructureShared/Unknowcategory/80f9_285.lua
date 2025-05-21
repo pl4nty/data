@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.isexe == true then
-  return mp.INFECTED
-else
-  if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true then
-    return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\mozilla firefox\\", 1, true) then
+    return mp.CLEAN
   end
+  return mp.INFECTED
 end
 return mp.CLEAN
 

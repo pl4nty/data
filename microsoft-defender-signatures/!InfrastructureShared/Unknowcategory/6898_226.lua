@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".xdata" and (pesecs[5]).Characteristics == 1073741888 then
+if (mp.get_mpattribute)("BM_DEVICE_DRIVER") and (mp.get_mpattribute)("RPF:TopLevelFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

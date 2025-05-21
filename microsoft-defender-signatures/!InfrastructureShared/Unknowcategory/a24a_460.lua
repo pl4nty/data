@@ -3,22 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[6]).utf8p2
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 4 then
-    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    if l_0_1 ~= nil then
-      for l_0_5,l_0_6 in ipairs(l_0_1) do
-        l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
-        ;
-        (bm.add_related_file)(l_0_6)
-      end
-    end
-  end
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false then
+  return mp.CLEAN
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false then
+  return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 1, "\255\255\255\255")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

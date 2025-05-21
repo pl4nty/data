@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 <= 221184 and l_0_0 >= 204800 and (mp.get_mpattribute)("NID:PossibleRyuk") then
+if ((sigattr_head[1]).attribute == 12363 and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12375) or (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12381 then
   return mp.INFECTED
 end
 return mp.CLEAN

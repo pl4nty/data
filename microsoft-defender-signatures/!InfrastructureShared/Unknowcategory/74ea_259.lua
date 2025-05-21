@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.getfilesize)() > 30000000 and pehdr.Magic == 523 then
-  return mp.INFECTED
+if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

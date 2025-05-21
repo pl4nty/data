@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
+if (mp.get_mpattribute)("SIGATTR:VirTool:Win32/Injector.gen!BM") and (mp.get_mpattribute)("HSTR:HasSEH") and (mp.get_mpattribute)("Lua:DealPlyFileName") then
+  return mp.INFECTED
 end
-if not peattributes.isvbnative and not peattributes.isvbpcode then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 2097152 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

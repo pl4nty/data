@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:(ActiveMime)") or (mp.get_mpattribute)("PACKED_WITH:(Base64)") then
+if (string.match)((this_sigattrlog[1]).utf8p1, "\\%l%l%l%l%l%.exe$") ~= nil then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:PossibleVcEpStub") then
+local l_0_0 = 0
+if (hstrlog[1]).matched then
+  l_0_0 = (hstrlog[1]).hitcount
+end
+if l_0_0 >= 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

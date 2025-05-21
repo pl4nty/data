@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (pesecs[1]).Name == "AUTO" then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security and l_0_0 > 290816 and l_0_0 < 589824 then
   return mp.INFECTED
 end
 return mp.CLEAN

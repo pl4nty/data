@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 273152 and (mp.getfilesize)() > 112640 and peattributes.isdll and peattributes.hasexports then
-  if peattributes.dt_error_heur_exit_criteria then
-    (pe.set_peattribute)("deep_analysis", true)
-  end
-  ;
-  (pe.reemulate)()
+local l_0_0 = (pe.get_regval)(pe.REG_EAX)
+local l_0_1 = (pe.get_api_id)(l_0_0)
+if l_0_1 ~= 671954542 then
+  return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 29, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

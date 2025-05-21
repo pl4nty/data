@@ -3,21 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched and (this_sigattrlog[2]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
-  local l_0_2 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  if l_0_0 ~= nil and l_0_1 ~= nil and l_0_2 ~= nil then
-    local l_0_3 = (string.match)(l_0_1, ":\\([^\\]+)\\csrss.exe")
-    local l_0_4 = (string.match)(l_0_0, ":\\([^\\]+)\\csrss.exe")
-    local l_0_5 = (string.match)(l_0_2, ":\\([^\\]+)\\desktop.ini")
-    if l_0_3 == l_0_4 and l_0_3 == l_0_5 and l_0_3 ~= nil then
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_0), 3247936890)
-      return mp.INFECTED
-    end
-  end
-end
-do
+if not (pe.isdynamic_va)((pe.get_regval)(pe.REG_EIP)) then
   return mp.CLEAN
 end
+if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).Size > 60 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 2 then
+  return mp.CLEAN
+end
+if (pesecs[2]).VirtualAddress > 12288 then
+  return mp.CLEAN
+end
+local l_0_0 = (pe.mmap_rva)(((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).RVA + 16, 4)
+if (mp.readu_u32)(l_0_0, 1) == (pesecs[2]).VirtualAddress then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

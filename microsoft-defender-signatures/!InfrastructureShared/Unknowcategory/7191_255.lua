@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.lastscn_writable and peattributes.lastscn_executable then
+if peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Name == "Zero" then
   return mp.INFECTED
 end
 return mp.CLEAN

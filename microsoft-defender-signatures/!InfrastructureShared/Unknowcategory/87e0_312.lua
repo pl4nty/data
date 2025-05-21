@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.x86_image and peattributes.isdll == true and peattributes.hasexports == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-;
-(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
-;
-(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 10000)
 return mp.INFECTED
 

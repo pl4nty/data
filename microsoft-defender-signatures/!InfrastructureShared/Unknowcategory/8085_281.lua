@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and mp.HSTR_WEIGHT >= 3 and (mp.get_mpattribute)("SIGA:FileOperationDelete.S001") then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil and l_0_0.image_path ~= nil and (string.lower)((string.sub)(l_0_0.image_path, -9)) == "httpd.exe" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

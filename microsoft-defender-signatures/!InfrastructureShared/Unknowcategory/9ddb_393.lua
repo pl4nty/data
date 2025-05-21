@@ -3,21 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.getfilesize)() > 1700000 and (mp.getfilesize)() < 4800000 then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->(Ole Stream", -18, true) == nil then
+  return mp.CLEAN
 end
-do
-  l_0_0 = pe
-  l_0_0 = l_0_0.get_versioninfo
-  l_0_0 = l_0_0()
-  if l_0_0 ~= nil then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+local l_0_1 = (mp.BMSearchFile)(7, 5, "ÎG\n\001\005\144\000")
+if l_0_1 ~= 0 then
+  return mp.CLEAN
 end
+;
+(mp.UfsSetMetadataBool)("OleShellCode", true)
+return mp.INFECTED
 

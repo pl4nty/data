@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isvbpcode == true or peattributes.isvbnative == true) and pehdr.NumberOfSections == 3 then
+if (mp.get_mpattribute)("PACKED_WITH:(Base64)") and ((mp.getfilename)()):match(".dll") then
   return mp.INFECTED
 end
 return mp.CLEAN

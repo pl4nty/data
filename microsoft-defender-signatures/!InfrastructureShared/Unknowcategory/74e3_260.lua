@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:find("\\wscript.exe") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if ((pe.get_versioninfo)()).InternalName == "Bluthmon.exe" and ((pe.get_versioninfo)()).CompanyName == "Mototech.co" then
+  return mp.INFECTED
 end
+return mp.LOWFI
 

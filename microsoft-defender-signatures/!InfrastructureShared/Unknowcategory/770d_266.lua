@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "\235\024")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+do
+  local l_0_0 = (string.lower)(tostring(headerpage))
+  if l_0_0 > 5 then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
+end
 

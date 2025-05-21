@@ -3,16 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[18]).matched or (hstrlog[19]).matched then
-  (mp.changedetectionname)(805306447)
-else
-  if (hstrlog[20]).matched then
-    (mp.changedetectionname)(805306448)
+local l_0_0 = ((string.lower)((string.sub)((bm.get_imagepath)(), -10)))
+local l_0_1 = nil
+if l_0_0 == "\\lsass.exe" then
+  if (this_sigattrlog[1]).matched then
+    l_0_1 = (this_sigattrlog[1]).utf8p1
   else
-    if (hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or (hstrlog[17]).matched then
-      (mp.changedetectionname)(805306432)
+    if (this_sigattrlog[2]).matched then
+      l_0_1 = (this_sigattrlog[2]).utf8p1
     end
   end
+  if l_0_1 ~= nil then
+    (bm.add_threat_file)(l_0_1)
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

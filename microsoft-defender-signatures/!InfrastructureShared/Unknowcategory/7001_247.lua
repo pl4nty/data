@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.amd64_image then
-  return mp.CLEAN
+if pehdr.NumberOfSections ~= 3 then
+  return mp.LOWFI
 end
-if not peattributes.isdll then
-  return mp.CLEAN
+if (pesecs[2]).Name ~= ".scot" then
+  return mp.LOWFI
 end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.SUSPICIOUS
 

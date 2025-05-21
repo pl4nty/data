@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata and (mp.getfilesize)() - ((pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData) > 65536 then
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "svchost.exe" then
+      if (versioning.IsSeville)() then
+        return mp.INFECTED
+      end
+      return mp.LOWFI
+    end
+  end
+  return mp.CLEAN
 end
-return mp.LOWFI
 

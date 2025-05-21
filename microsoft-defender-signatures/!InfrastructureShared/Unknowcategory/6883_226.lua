@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 450000 and (pesecs[3]).VirtualSize > 524288 then
+if (mp.get_mpattribute)("NID:Qakbot.IH!MTB") and peattributes.isdll then
   return mp.INFECTED
 end
 return mp.CLEAN

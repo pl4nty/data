@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 7 and (mp.getfilesize)() >= 5844992 then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%-%>%(VFS%:%d+%.bat%)$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

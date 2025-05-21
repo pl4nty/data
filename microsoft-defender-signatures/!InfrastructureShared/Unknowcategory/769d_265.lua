@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1048000 and pehdr.NumberOfSections <= 5 and (pesecs[5]).Name == "" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

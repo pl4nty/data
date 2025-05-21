@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.ismsil then
+if (mp.get_mpattribute)("CURE:Virus:Wi64/Expiro.CB1") then
   return mp.INFECTED
 end
 return mp.CLEAN

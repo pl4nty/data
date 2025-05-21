@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.amd64_image then
-  return mp.INFECTED
-end
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 512)
+if (string.find)(l_0_0, "taskmgr.exe, msconfig.exe, regedit.exe, cmd.exe") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

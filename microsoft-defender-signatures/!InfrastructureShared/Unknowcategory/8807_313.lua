@@ -4,11 +4,14 @@
 -- params : ...
 -- function num : 0
 do
-  if peattributes.isdll and peattributes.hasexports then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 > 409600 and l_0_0 < 716800 and (pe.get_exports_count)() == 9 then
-      return mp.INFECTED
+  if peattributes.isexe and (mp.getfilesize)() > 9500000 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

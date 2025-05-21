@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetRawResponseBlob)()
-if l_0_0 and (MpCommon.BinaryRegExpSearch)("\\\\\\\\10\\.[0-9\\.]+|172\\.[0-9\\.]+|192\\.168\\.[0-9\\.]+\\\\d+", l_0_0) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(bm.set_scan_param)((mp.bitor)((mp.bitor)(bm.SCAN_PARAMETERS_DEEP_ANALYSIS, bm.SCAN_PARAMETERS_VMM_GROW), bm.SCAN_PARAMETERS_HSTR_EXHAUSTIVE))
+return mp.INFECTED
 

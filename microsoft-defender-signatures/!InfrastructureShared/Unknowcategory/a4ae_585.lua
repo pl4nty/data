@@ -6,27 +6,33 @@
 -- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
   else
   end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
+  if (this_sigattrlog[2]).matched then
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
 
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = (string.lower)((this_sigattrlog[3]).utf8p2)
-    else
+    if (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == nil or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == "" then
+      return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
+    local l_0_5 = nil
+    -- DECOMPILER ERROR at PC45: Overwrote pending register: R1 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC61: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC70: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (not (this_sigattrlog[5]).matched or (string.lower)((this_sigattrlog[5]).utf8p2) ~= nil) and (string.len)((string.lower)((this_sigattrlog[5]).utf8p2)) > 4 and (string.find)((string.lower)((this_sigattrlog[5]).utf8p2), "administrators", 1, true) and (string.find)((string.lower)((this_sigattrlog[5]).utf8p2), "/add", 1, true) then
-      return mp.INFECTED
+    if nil == nil or nil == "" then
+      return mp.CLEAN
     end
-    return mp.CLEAN
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC61: Confused about usage of register: R1 in 'UnsetPending'
+
+    if (sysio.IsFileExists)(nil) then
+      (bm.add_related_file)(nil)
+    end
+    return mp.INFECTED
   end
 end
 

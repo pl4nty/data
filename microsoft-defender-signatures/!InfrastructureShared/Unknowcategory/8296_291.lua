@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".qtmetad" and (pesecs[5]).Characteristics == 1342177344 and (pesecs[6]).Name == ".qtmimed" and (pesecs[6]).Characteristics == 1342177344 then
+local l_0_0 = (nri.GetRawResponseBlob)()
+if l_0_0 and (MpCommon.BinaryRegExpSearch)("\\\\\\\\10\\.[0-9\\.]+|172\\.[0-9\\.]+|192\\.168\\.[0-9\\.]+\\\\d+", l_0_0) then
   return mp.INFECTED
 end
 return mp.CLEAN

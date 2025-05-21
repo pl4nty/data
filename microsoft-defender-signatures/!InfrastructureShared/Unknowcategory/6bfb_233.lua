@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_loadconfig == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 33, "\144")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 38, "")
+return mp.INFECTED
 

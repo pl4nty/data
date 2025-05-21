@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if not l_0_0 then
+if not (hstrlog[2]).matched and not (hstrlog[3]).matched then
   return mp.CLEAN
 end
-if (string.find)((string.lower)(l_0_0), "windows\\system32\\poqexec.exe", 1, true) then
+if not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched then
   return mp.CLEAN
 end
 return mp.INFECTED

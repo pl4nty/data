@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Lazy.MBXI!MTB") and peattributes.isexe == true then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "settings%.xml%.rels") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:VirTool:Win32/VMProtect.A") or mp.HSTR_WEIGHT >= 7 then
-  (mp.set_mpattribute)("PUA:Block:TRexMiner")
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_trex")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_trex")
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, 13)) == "\\wmiprvse.exe" or (string.lower)((string.sub)(l_0_6.image_path, 12)) == "\\scrcons.exe") then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

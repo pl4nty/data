@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 332 and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 491520 and l_0_0 <= 499712 and pehdr.NumberOfSections >= 7 and pehdr.NumberOfSections <= 8 and (mp.get_mpattribute)("NID:Emotet.GU!Pra1") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

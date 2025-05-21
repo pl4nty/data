@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (hstrlog[5]).matched and peattributes.no_security == true and l_0_0 >= 303104 and l_0_0 <= 1601536 then
-  return mp.INFECTED
+do
+  if (nri.IsResponse)() then
+    local l_0_0 = (nri.GetRawResponseBlob)()
+    if l_0_0 and (string.find)(l_0_0, "Server: Microsoft%-IIS/7.5") then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

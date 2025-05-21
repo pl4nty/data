@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 159744 and pehdr.NumberOfSections == 9 and (pesecs[6]).Name == "CONST" then
+local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -13))
+if (string.find)(l_0_0, "\\services.exe", 1, true) or (string.find)(l_0_0, "\\svchost.exe", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

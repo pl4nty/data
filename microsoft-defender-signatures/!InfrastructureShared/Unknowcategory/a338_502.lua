@@ -3,18 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p1)
-if l_0_0 == nil then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if not (mp.get_mpattribute)("RPF:TopLevelFile") then
   return mp.CLEAN
 end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
+if not l_0_0:find("impacket", 1, true) and not l_0_0:find("conficker", 1, true) and not l_0_0:find("\\salt", 1, true) and not l_0_0:find("metasploit", 1, true) then
+  return mp.INFECTED
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
-end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") or peattributes.isexe == false then
-  return mp.CLEAN
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0.OriginalFilename ~= nil and (l_0_0.OriginalFilename):lower() == "schedctl.dll" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

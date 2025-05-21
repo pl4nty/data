@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and (mp.getfilesize)() < 300000 and (pe.query_import)(pe.IMPORT_STATIC, 3727706256) ~= 0 then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
+;
+(mp.set_mpattribute)("lua_codepatch_obfuscator_tt_1")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 22, "")
 return mp.CLEAN
 

@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.AddressOfEntryPoint == 0 and (pe.get_exports)() > 296 and peattributes.isdll == true then
+if (mp.get_mpattribute)("MpInternal_IsPliScan") then
+  return mp.INFECTED
+end
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 ~= nil and l_0_0 == mp.HSTR_CALLER_SMS then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 21 and (hstrlog[3]).hitcount + (hstrlog[4]).hitcount + (hstrlog[5]).hitcount + (hstrlog[6]).hitcount >= 5 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.sub)(l_0_0.image_path, -14)) == "rmmservice.exe" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%l%l%l%l%l%l.exe") ~= nil then
+if peattributes.ismsil == true and peattributes.nx_bit_set == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
   return mp.INFECTED
 end
 return mp.CLEAN

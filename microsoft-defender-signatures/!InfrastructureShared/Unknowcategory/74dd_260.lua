@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.get_versioninfo)()).InternalName == "Bluthmon.exe" and ((pe.get_versioninfo)()).CompanyName == "Mototech.co" then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 14, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "x")
+return mp.INFECTED
 

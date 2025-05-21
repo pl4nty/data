@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:LeadBolt.A")
+  (mp.set_mpattribute)("PUA:Block:Bundlore.T")
   return mp.INFECTED
 end
 return mp.LOWFI

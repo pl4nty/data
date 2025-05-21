@@ -3,29 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6 ~= nil and l_0_6.reason_ex ~= nil and l_0_6.ppid ~= nil then
-    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-    if l_0_7 == 1 then
-      do
-        do
-          (bm.add_threat_process)(l_0_6.ppid)
-          do break end
-          -- DECOMPILER ERROR at PC27: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC27: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC27: LeaveBlock: unexpected jumping out IF_STMT
-
-          -- DECOMPILER ERROR at PC27: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC27: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 35)
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.find)(l_0_0, "u", 1, true)
+    if l_0_1 ~= nil then
+      (pe.mmap_patch_va)(pevars.sigaddr + 10 + l_0_1 - 1, "êê")
     end
   end
+  return mp.INFECTED
 end
-return mp.INFECTED
 

@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win64/Zusy.AP!MTB")) then
   return mp.INFECTED
-end
-if mp.HSTR_WEIGHT < 3 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
 end
 return mp.CLEAN
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:VSearch.F")
+if pehdr.NumberOfSections <= 5 and (mp.getfilesize)() < 2048000 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

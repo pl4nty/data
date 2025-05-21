@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_isdll") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_peattribute)("dt_continue_after_unpacking", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+return mp.INFECTED
 

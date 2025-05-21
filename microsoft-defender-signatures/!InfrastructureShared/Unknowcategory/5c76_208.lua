@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("Anti:StackValueCheck_LocalShrink")
-return mp.INFECTED
+if (mp.crc32)(-1, epcode, 1, 16) == 3504257948 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

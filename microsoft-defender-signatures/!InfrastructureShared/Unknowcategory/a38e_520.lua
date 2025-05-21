@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  if (hstrlog[1]).hitcount >= 3 and (mp.getfilesize)() <= 131072 and (mp.getfilesize)() >= 4096 then
-    local l_0_0 = (mp.readheader)(0, 1024)
-    local l_0_1 = (mp.readfooter)(mp.FOOTERPAGE_SZ - 1024, 1024)
-    if (string.find)(l_0_0, "MAD!", 1, true) ~= nil and (string.find)(l_0_1, "MAD!", 1, true) ~= nil then
-      return mp.INFECTED
-    end
-  end
-  do
-    do return mp.CLEAN end
-    return mp.INFECTED
-  end
+if not peattributes.isdll then
+  return mp.CLEAN
 end
+;
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EAX), 4)
+local l_0_1 = (string.byte)(l_0_0) - 1
+local l_0_2 = (string.byte)(l_0_0, 3) + 16
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX), (string.char)(l_0_1))
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX) + 2, (string.char)(l_0_2))
+return mp.INFECTED
 

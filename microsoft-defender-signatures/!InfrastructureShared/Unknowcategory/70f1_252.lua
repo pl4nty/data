@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:BrowserModifier:Win32/Prifou.A2") and peattributes.no_security == true then
-  return mp.INFECTED
+local l_0_0 = (this_sigattrlog[3]).utf8p1
+if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
 end
-return mp.CLEAN
+return mp.INFECTED
 

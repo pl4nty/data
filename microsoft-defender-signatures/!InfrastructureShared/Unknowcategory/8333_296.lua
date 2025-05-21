@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if ((sigattr_head[1]).attribute == 12363 and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12375) or (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12381 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), (mp.bitor)(nri.Telemetry_QUERY, nri.Telemetry_REFERER)))
+return mp.INFECTED
 

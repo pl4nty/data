@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\mozilla firefox\\", 1, true) then
-    return mp.CLEAN
-  end
+if peattributes.isdll == true and peattributes.hasexports == true and peattributes.no_security == true and (pe.get_exports_count)() == 1 then
   return mp.INFECTED
 end
 return mp.CLEAN

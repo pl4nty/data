@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("BM_OLE_FILE") then
+if (mp.get_mpattribute)("NID:Trojan:Win32/Symmi.MBXJ!MTB") and (mp.get_mpattribute)("pea_isdll") then
   return mp.INFECTED
 end
 return mp.CLEAN

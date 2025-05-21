@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
   return mp.CLEAN
 end
-if mp.HSTR_CALLER_SMS == l_0_0 then
-  return mp.INFECTED
+if (mp.getfilesize)() > 20971520 then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("SLF:Win64/BruterShell.A")
-return mp.LOWFI
+return mp.INFECTED
 

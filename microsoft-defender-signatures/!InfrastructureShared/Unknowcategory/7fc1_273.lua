@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 5 then
+if peattributes.isexe == true and (pesecs[7]).Name == ".reloc" and (pesecs[7]).Characteristics == 1107296320 then
   return mp.INFECTED
 end
 return mp.CLEAN

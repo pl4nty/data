@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.isdll and peattributes.no_security and l_0_0 > 589824 and l_0_0 < 655360 then
+if peattributes.no_exports and peattributes.amd64_image and pehdr.NumberOfSections == 6 then
   return mp.INFECTED
 end
 return mp.CLEAN

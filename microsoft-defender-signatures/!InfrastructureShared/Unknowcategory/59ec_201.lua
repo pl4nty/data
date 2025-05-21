@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT < 42 and (mp.getfilesize)() > 4194304 then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 32, "")
 return mp.INFECTED
 

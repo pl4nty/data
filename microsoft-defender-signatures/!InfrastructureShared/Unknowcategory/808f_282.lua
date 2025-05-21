@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0.CompanyName, "LaplFink Software", 1, true) == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+(pe.mmap_patch_va)(pevars.sigaddr + 55, "êê")
+;
+(pe.set_regval)(pe.REG_EAX, (pe.get_regval)(pe.REG_EAX) - 1)
+return mp.LOWFI
 

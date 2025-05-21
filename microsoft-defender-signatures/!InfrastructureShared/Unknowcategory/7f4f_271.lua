@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 8 and (pesecs[1]).Name == "CODE" and (pesecs[2]).Name == "DATA" then
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Formbook.AMA") then
   return mp.INFECTED
 end
 return mp.CLEAN

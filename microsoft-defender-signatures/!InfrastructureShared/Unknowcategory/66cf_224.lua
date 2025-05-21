@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (hstrlog[1]).matched then
-  l_0_0 = (hstrlog[1]).hitcount
-end
-if l_0_0 >= 3 then
+if (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,15 +3,8 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0 = nil
-    if (string.find)(l_0_0, "\\seal systems\\p2p_scripts\\", 1, true) then
-      return mp.CLEAN
-    end
-  end
+if peattributes.isexe == true and (pesecs[4]).Name == ".rsrc" and (pesecs[4]).Characteristics == 1073741888 and (mp.getfilesize)() >= 10000000 and (mp.getfilesize)() <= 20000000 then
   return mp.INFECTED
 end
+return mp.CLEAN
 

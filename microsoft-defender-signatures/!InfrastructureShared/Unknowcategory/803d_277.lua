@@ -3,7 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[4]).matched or (hstrlog[5]).matched) and not (hstrlog[6]).matched) or 0 + 1 + 1 + 1 >= 2 then
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+if R1_PC17 ~= nil and (pe.get_exports)() == 1 then
   return mp.INFECTED
 end
 return mp.CLEAN

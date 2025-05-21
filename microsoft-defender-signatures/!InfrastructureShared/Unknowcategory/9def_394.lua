@@ -3,8 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.get_mpattribute)("HSTR:NSIS_Installer") or (mp.get_mpattribute)("HSTR:NSIS.gen!A")) and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).Size == 0 then
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil, nil
+  end
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_3 = nil
+  if (string.find)(l_0_3, ":\\windows", 2, true) or (string.find)((string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0)), ":\\windows", 2, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

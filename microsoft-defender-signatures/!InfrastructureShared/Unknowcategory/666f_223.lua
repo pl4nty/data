@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:AcidKeylogger.A")
+if peattributes.isexe and peattributes.no_security and peattributes.isvbnative then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

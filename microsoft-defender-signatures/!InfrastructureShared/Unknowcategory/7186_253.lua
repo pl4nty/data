@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.dt_error_not_enough_memory then
-  (pe.set_peattribute)("enable_vmm_grow", true)
-  ;
-  (pe.reemulate)()
+if (mp.get_mpattribute)("pea_hasexports") and (mp.getfilesize)() >= 6242304 and (mp.getfilesize)() < 6246400 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

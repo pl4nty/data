@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("ALF:HSTR:Trojan:Win32/FauppodPDB.S010") then
+if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_PROTECTED_PROCESS_RID then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Trojan:Win32/Fauppod.SA")
-return mp.LOWFI
+return mp.CLEAN
 

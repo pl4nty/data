@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.format)("HSTR:VirTool:Win32/Obfuscator.ZG!upk.1_%08X_%08X", (hstrlog[1]).VA, (hstrlog[2]).VA)
-;
-(mp.set_mpattribute)(l_0_0)
-return mp.SUSPICIOUS
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "\\virtualboxvm.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

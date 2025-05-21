@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 9 and (mp.get_mpattribute)("TELPER:QQBrowser") then
-  return mp.INFECTED
+if (string.find)((string.lower)((mp.getfilename)()), "%-%>%[cmdembedded%]$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("InEmail") then
-  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "AppxManifest.xml") ~= nil then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

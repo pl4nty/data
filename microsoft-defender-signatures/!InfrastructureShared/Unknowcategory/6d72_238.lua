@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0.OriginalFilename ~= nil and (l_0_0.OriginalFilename):lower() == "schedctl.dll" then
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/LummaC!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

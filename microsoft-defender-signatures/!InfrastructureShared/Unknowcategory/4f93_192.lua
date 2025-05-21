@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 13, "\144")
-return mp.INFECTED
+if (pe.isdynamic_va)(pevars.sigaddr) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

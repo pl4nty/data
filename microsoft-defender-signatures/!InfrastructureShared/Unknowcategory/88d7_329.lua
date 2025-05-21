@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if epcode[6] == 191 and epcode[11] == 185 and epcode[16] == 73 and epcode[17] == 128 and epcode[21] == 133 and epcode[23] == 117 then
+  return mp.INFECTED
 end
-if (string.find)(l_0_0.ProductName, "AUTORUN", 1, true) == nil or (string.find)(l_0_0.FileDescription, "AUTORUN", 1, true) == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

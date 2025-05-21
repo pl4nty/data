@@ -3,16 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.x86_image and peattributes.isexe then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (string.lower)(l_0_0.command_line)
+if (string.find)(l_0_1, "/browser:", 1, true) then
   return mp.CLEAN
 end
+return mp.INFECTED
 

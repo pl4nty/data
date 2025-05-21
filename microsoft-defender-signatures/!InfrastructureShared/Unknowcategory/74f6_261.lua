@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-if not (string.find)(l_0_0, "/upload", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 28, "")
+return mp.INFECTED
 

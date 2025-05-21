@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and (mp.get_mpattribute)("HSTR:MSIL/Confuser") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and (mp.get_mpattribute)("SIGATTR:OpensBHOKey") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (((mp.getfilename)()):lower()):find("word/embeddings/oleobject1.bin->(ole stream 0)", -46, true) then
-  return mp.INFECTED
+if not peattributes.hasappendeddata then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if not peattributes.isvbpcode then
+  return mp.CLEAN
+end
+if not peattributes.dirty_wx_branch then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

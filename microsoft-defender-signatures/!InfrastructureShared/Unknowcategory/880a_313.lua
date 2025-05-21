@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if pehdr.NumberOfSections == 11 and (pesecs[7]).Name == ".app0" and (pesecs[9]).Name == ".app1" and (pesecs[10]).Name == ".app2" then
+  return mp.INFECTED
 end
-;
-(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_HIGH)
-;
-(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 5000)
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 then
+if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") then
   return mp.INFECTED
 end
 return mp.CLEAN

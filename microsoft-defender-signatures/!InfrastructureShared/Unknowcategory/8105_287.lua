@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 3 and (pesecs[2]).PointerToRawData - (pesecs[1]).SizeOfRawData >= 12288 then
+if pehdr.AddressOfEntryPoint == 90675 and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
   return mp.INFECTED
 end
 return mp.CLEAN

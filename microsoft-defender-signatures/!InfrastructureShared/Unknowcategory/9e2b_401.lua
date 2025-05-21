@@ -3,8 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if pevars.epsec == 1 and (pesecs[pevars.epsec]).Name == ".text" and (pesecs[2]).Name == ".data" and (pesecs[3]).Name == ".rsrc" and peattributes.no_decription and peattributes.suspicious_image_version then
-  return mp.INFECTED
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if l_0_0 ~= nil then
+  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
+    if (sysio.IsFileExists)(l_0_6) then
+      (bm.add_related_file)(l_0_6)
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_1 = mp
+  l_0_1 = l_0_1.INFECTED
+  return l_0_1
+end
 

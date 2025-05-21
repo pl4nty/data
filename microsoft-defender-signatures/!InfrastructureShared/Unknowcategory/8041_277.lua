@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.getfilesize)() >= 100000 then
   return mp.INFECTED
-end
-if (hstrlog[1]).matched then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.CLEAN
 

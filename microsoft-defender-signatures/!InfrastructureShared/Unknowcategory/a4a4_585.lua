@@ -3,22 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[8]).utf8p1
-if l_0_0 == nil then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  local l_0_3 = nil
+  local l_0_4 = {[".vbs"] = true}
+  for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
+    local l_0_5 = nil
+    -- DECOMPILER ERROR at PC30: Confused about usage of register: R7 in 'UnsetPending'
+
+    if (string.len)(R7_PC30) > 4 and (sysio.IsFileExists)(R7_PC30) and l_0_4[(string.sub)(R7_PC30, -4)] then
+      (bm.add_related_file)(l_0_10)
+      ;
+      (mp.ReportLowfi)(l_0_10, 111760350)
+    end
+  end
+  return mp.INFECTED
 end
-l_0_0 = (string.lower)(l_0_0)
-if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
-  return mp.CLEAN
-end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
-end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
-end
-return mp.INFECTED
 

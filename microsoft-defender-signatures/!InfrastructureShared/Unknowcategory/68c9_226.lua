@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  (mp.set_mpattribute)("PUA:Block:WizzRemote:Bit")
-  return mp.INFECTED
-end
-return mp.CLEAN
+(bm.trigger_sig_self_propagate)("SuspHHChildProcessLaunch", "Behavior:Win32/SuspHHProcessCreate.A!dha")
+return mp.INFECTED
 

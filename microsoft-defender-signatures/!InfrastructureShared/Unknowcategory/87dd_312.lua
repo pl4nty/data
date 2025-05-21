@@ -3,10 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (nri.IsResponse)() then
-  return mp.CLEAN
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.sub)(l_0_0, -11) == "wscript.exe" or (string.sub)(l_0_0, -11) == "cscript.exe" then
+    return mp.INFECTED
+  end
 end
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
-return mp.INFECTED
+return mp.CLEAN
 

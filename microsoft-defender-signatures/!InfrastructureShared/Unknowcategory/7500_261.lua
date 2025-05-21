@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((bm.get_current_process_startup_info)()).integrity_level == MpCommon.SECURITY_MANDATORY_SYSTEM_RID then
+if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%l%l%l%l%l%l.exe") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

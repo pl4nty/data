@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "truesight" and (mp.getfilesize)() < 70000 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.find)(l_0_0, "system32\\mrt.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 
