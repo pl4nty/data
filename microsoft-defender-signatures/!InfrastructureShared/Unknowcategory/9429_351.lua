@@ -3,12 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.isexe == true and (mp.getfilesize)() < 2048000 then
-  return mp.INFECTED
-else
-  if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true and (mp.getfilesize)() < 2048000 then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 16896 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfile)(l_0_0 - 16896, 16896)
+if l_0_1:find("qxgxwddm)(if(findfile \"bakdwg.fas\")(load \"bakdwg.fas\")))", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

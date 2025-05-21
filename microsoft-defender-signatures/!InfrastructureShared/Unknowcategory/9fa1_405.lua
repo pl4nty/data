@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "fodhelper.exe" or l_0_1:match("([^\\]+)$") == "computerdefaults.exe" or l_0_1:match("([^\\]+)$") == "wsreset.exe" or l_0_1:match("([^\\]+)$") == "compmgmtlauncher.exe" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if peattributes.isdll and peattributes.hasexports and (mp.getfilesize)() < 350000 and mp.HSTR_WEIGHT == 1 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
 end
+if mp.HSTR_WEIGHT == 2 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

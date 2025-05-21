@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.x86_image then
-  return mp.INFECTED
+if not peattributes.isexe and not peattributes.isvbpcode then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -6,7 +6,7 @@
 if (string.len)((mp.getfilename)()) < 15 then
   return mp.CLEAN
 end
-if (string.lower)((string.sub)((mp.getfilename)(), -15)) == "flashplayer.jse" then
+if (string.lower)((string.sub)((mp.getfilename)(), -15)) == "flashplayer.hta" then
   return mp.INFECTED
 end
 return mp.CLEAN

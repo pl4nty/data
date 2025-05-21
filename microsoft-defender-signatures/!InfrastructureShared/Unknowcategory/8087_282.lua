@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.no_security == true and pehdr.AddressOfEntryPoint ~= 837630 then
+if peattributes.ismsil == true and peattributes.isexe == true and peattributes.no_security == true and pehdr.AddressOfEntryPoint ~= 18609262 then
   return mp.INFECTED
 end
 return mp.CLEAN

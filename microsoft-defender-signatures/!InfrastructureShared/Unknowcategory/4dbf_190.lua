@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not peattributes.hasexports then
-  return mp.CLEAN
+if peattributes.isdll and not peattributes.hasexports then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

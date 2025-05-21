@@ -9,14 +9,14 @@ if l_0_0 ~= nil and l_0_0.ppid ~= nil then
   if l_0_1 ~= nil and l_0_1.image_path ~= nil then
     local l_0_2 = (string.lower)(l_0_1.image_path)
     ;
-    (bm.request_SMS)(l_0_0.ppid, "H")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 100)
-    ;
     (bm.add_related_file)(l_0_2)
   end
 end
 do
+  ;
+  (bm.request_SMS)(l_0_0.ppid, "H")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 100)
   return mp.INFECTED
 end
 

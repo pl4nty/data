@@ -3,14 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(0, l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-if l_0_1:gsub("%+%$", "") > 20 then
+if peattributes.isexe == true and peattributes.no_security == true and (pesecs[5]).Name == "vnbvhyaf" and (pesecs[6]).Name == "evpaqbyf" then
   return mp.INFECTED
 end
 return mp.CLEAN

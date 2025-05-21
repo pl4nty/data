@@ -3,9 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -13) == "\\iexplore.exe" or (string.sub)(l_0_0, -11) == "\\chrome.exe" or (string.sub)(l_0_0, -18) == "\\microsoftedge.exe" or (string.sub)(l_0_0, -20) == "\\microsoftedgecp.exe" or (string.sub)(l_0_0, -12) == "\\firefox.exe" then
-  return mp.CLEAN
+local l_0_0 = "%localappdata%\\Microsoft\\Edge\\User Data\\Default\\Extensions\\"
+local l_0_1 = (sysio.FindFiles)(l_0_0, "manifest.json", -1)
+for l_0_5,l_0_6 in pairs(l_0_1) do
+  (bm.add_related_file)(l_0_6)
+  ;
+  (bm.add_related_string)("file", l_0_6, bm.RelatedStringBMReport)
+  ;
+  (bm.add_related_string)("file", l_0_6, bm.RelatedStringFileReport)
+  if l_0_5 > 10 then
+    break
+  end
 end
-return mp.INFECTED
+do
+  return mp.INFECTED
+end
 

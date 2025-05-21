@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Name == "Zero" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)((mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 4, 4), 1), "<")
+return mp.INFECTED
 

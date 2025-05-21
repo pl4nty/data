@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("Miner:XMRigRelated")
+(mp.set_mpattribute)("PUA:Block:EthMiner")
 return mp.INFECTED
 

@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 4, 21)
-local l_0_1 = (string.byte)(l_0_0, 2)
-if l_0_1 ~= (string.byte)(l_0_0, 11) then
-  return mp.CLEAN
+if (pe.mmap_va)((mp.bitand)(pevars.sigaddr + 10 + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 6, 4), 1), 4294967295), 6) == "d$\f\015\133" then
+  (pe.mmap_patch_va)(pevars.sigaddr + 1, "\002\000\000\000")
+  return mp.INFECTED
 end
-;
-(pe.set_regval)(pe.REG_EAX, l_0_1)
-;
-(pe.mmap_patch_va)(pevars.sigaddr, "\144")
-return mp.INFECTED
+return mp.CLEAN
 

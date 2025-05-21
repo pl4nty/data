@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe then
-  return mp.INFECTED
+if peattributes.ismsil == true then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

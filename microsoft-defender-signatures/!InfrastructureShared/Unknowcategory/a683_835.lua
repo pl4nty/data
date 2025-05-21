@@ -3,44 +3,45 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsHipsRuleEnabled)("92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B") then
-  local l_0_0 = (mp.getfilename)()
-  if l_0_0 == nil or l_0_0 == "" then
+simdmpcab = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_0 <= 0 or (mp.getfilesize)() <= l_1_1 then
     return mp.CLEAN
   end
-  local l_0_3 = (string.match)(l_0_0, "(.*)%.(%a+)->%w+/%w+.bin$")
-  if l_0_3 == nil or l_0_0 == nil then
-    l_0_3 = l_0_0
-    local l_0_1, l_0_2 = nil
-  else
+  local l_1_2 = (mp.readfile)(l_1_1, 32)
+  local l_1_3 = (mp.readu_u32)(l_1_2, 5) - 4
+  if l_1_3 <= 0 or (mp.getfilesize)() <= l_1_3 then
+    return mp.CLEAN
+  end
+  if l_1_3 > 32 then
+    local l_1_4 = "MSCF" .. (mp.readfile)(l_1_1, l_1_3)
+    local l_1_10 = mp.vfo_add_buffer
+    local l_1_8 = l_1_4
+    local l_1_9 = (string.format)("[SmrtInstMkrCab%x]", l_1_1)
+    l_1_10(l_1_8, l_1_9, mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  end
+  do
+    local l_1_5 = simdmpcab
+    local l_1_6 = l_1_0 - 1
     do
-      -- DECOMPILER ERROR at PC29: Confused about usage of register: R2 in 'UnsetPending'
+      local l_1_7 = l_1_1 + l_1_3
+      do return l_1_5(l_1_6, l_1_7) end
+      -- DECOMPILER ERROR at PC56: Confused about usage of register R5 for local variables in 'ReleaseLocals'
 
-      l_0_3 = l_0_3 .. "." .. l_0_1
-      if (mp.get_mpattribute)("ASRWin32ApiMacroExclusion") == true then
-        return mp.CLEAN
-      end
-      -- DECOMPILER ERROR at PC40: Confused about usage of register: R2 in 'UnsetPending'
-
-      do
-        do
-          if l_0_1 == "zip" then
-            local l_0_4 = nil
-            if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME) == nil or (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME) == "" then
-              return mp.CLEAN
-            end
-            if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "explorer.exe" then
-              return mp.CLEAN
-            end
-          end
-          ;
-          (mp.set_mpattribute)("MpDisableCaching")
-          ;
-          (MpCommon.AppendPersistContext)(l_0_3, "enghipscpy:MHSTRLoadWin32importsfromMacroInside", 0)
-          return mp.INFECTED
-        end
-      end
     end
   end
 end
+
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 4096 or l_0_0 > 16777216 then
+  return mp.CLEAN
+end
+local l_0_1 = (pe.get_regval)(pe.REG_EAX)
+if l_0_1 <= 0 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+simdmpcab(5, l_0_1)
+return mp.CLEAN
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 30, "t")
-return mp.INFECTED
+if (mp.get_mpattribute)("PEEMU:ObfuscatorBerrof") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

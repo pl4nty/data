@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "word/_rels/settings.xml.rels") ~= nil then
+if (mp.get_mpattribute)("SIGATTR:ASEP") and (mp.get_mpattribute)("SIGATTR:RegKeyWinDiag") then
   return mp.INFECTED
 end
 return mp.CLEAN

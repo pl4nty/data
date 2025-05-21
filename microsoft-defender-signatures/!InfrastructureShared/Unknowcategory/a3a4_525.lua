@@ -3,26 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = pehdr.AddressOfEntryPoint + pehdr.ImageBase
-local l_0_1, l_0_2 = nil, nil
-if (hstrlog[1]).matched then
-  l_0_1 = 7
-  l_0_2 = (hstrlog[1]).VA
+local l_0_0 = (mp.GetScannedPPID)()
+if not l_0_0 then
+  return mp.CLEAN
 end
-if (hstrlog[2]).matched then
-  l_0_1 = 7
-  l_0_2 = (hstrlog[2]).VA
+local l_0_1 = (MpCommon.GetImagePathFromPid)(l_0_0)
+if not l_0_1 then
+  return mp.CLEAN
 end
-if (hstrlog[3]).matched then
-  l_0_1 = 6
-  l_0_2 = (hstrlog[3]).VA
+local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
+if not l_0_2 then
+  return mp.CLEAN
 end
-local l_0_3 = (pe.mmap_va)(l_0_2, 15)
-local l_0_4 = (mp.readu_u32)(l_0_3, l_0_1)
-local l_0_5 = l_0_2 + l_0_1 + 3 + l_0_4
-l_0_5 = (mp.bitand)(l_0_5, 4294967295)
-if l_0_5 == l_0_0 then
-  return mp.INFECTED
+do
+  if (string.find)((string.lower)(l_0_2), "\\windows\\temp", 1, true) then
+    local l_0_3 = (mp.GetParentProcInfo)()
+    if l_0_3 and (string.find)((string.lower)(l_0_3.image_path), "python", 1, true) then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

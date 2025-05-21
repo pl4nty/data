@@ -3,24 +3,19 @@
 
 -- params : ...
 -- function num : 0
-do
-  if not (hstrlog[1]).matched then
-    local l_0_0 = (hstrlog[2]).matched
-  end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  if mp.HSTR_WEIGHT >= 3 and (l_0_0 or (hstrlog[3]).matched) then
-    return mp.INFECTED
-  end
-  if mp.HSTR_WEIGHT >= 2 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["winword.exe"] = true
+  l_0_3["excel.exe"] = true
+  l_0_3["powerpnt.exe"] = true
+  if l_0_3[l_0_2] then
     return mp.LOWFI
-  else
-    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_0 then
-      return mp.LOWFI
-    end
   end
+end
+do
   return mp.CLEAN
 end
 

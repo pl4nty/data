@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true and (mp.get_mpattribute)("pea_isexe") then
-  return mp.INFECTED
+if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.isdll == true then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

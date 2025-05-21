@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 25, "")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+do
+  if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+    local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 48)
+    if (mp.readu_u32)(l_0_0, 18) ~= 0 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
+end
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 5 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("MpHasValidProjPath") and (mp.get_mpattribute)("pea_hasappendeddata") and peattributes.isexe then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

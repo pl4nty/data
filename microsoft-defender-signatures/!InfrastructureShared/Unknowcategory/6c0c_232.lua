@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") and peattributes.isexe == true then
+if (mp.get_mpattribute)("PACKED_WITH:[MSILRES:_]") and (mp.get_mpattribute)("pea_no_security") then
   return mp.INFECTED
 end
 return mp.CLEAN

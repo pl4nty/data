@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-l_0_0.cookie = (nri.GetHttpRequestHeader)("Cookie")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
+if (((((((hstrlog[1]).matched and not (hstrlog[2]).matched) or (hstrlog[3]).matched) and not (hstrlog[4]).matched) or (hstrlog[5]).matched) and not (hstrlog[6]).matched) or 0 + 1 + 1 >= 2) and 0 + 1 + 1 >= 1 and 0 + 1 + 1 == 2 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

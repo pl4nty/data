@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:DLHelper")
+(mp.set_mpattribute)("PUA:Block:Bundlore")
 return mp.INFECTED
 

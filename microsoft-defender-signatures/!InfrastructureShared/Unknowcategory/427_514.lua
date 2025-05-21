@@ -16,7 +16,7 @@ if l_0_2 == nil then
   return mp.CLEAN
 end
 local l_0_3 = (string.lower)(l_0_2.image_path)
-if l_0_3:match("([^\\]+)$") == "wscript.exe" then
+if l_0_3:match("([^\\]+)$") == "winword.exe" then
   if (versioning.GetCloudBlockLevel)() >= 4 then
     return mp.INFECTED
   end

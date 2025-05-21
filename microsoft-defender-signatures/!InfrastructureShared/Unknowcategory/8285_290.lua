@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 3604202544) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 1712054030) == 0 or (pe.query_import)(pe.IMPORT_STATIC, 3310839974) == 0 then
-  return mp.CLEAN
+if (pe.query_import)(pe.IMPORT_STATIC, 2832782153) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3514167808) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 1794917727) ~= 0 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

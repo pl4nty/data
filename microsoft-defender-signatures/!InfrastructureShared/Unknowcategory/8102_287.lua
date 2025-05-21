@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and pehdr.NumberOfSections == 5 and l_0_0 >= 2138112 and l_0_0 <= 2281472 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "\000u", 1, true), "")
+return mp.INFECTED
 

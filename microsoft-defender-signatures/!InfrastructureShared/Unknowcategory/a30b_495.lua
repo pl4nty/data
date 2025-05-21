@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-if (string.find)(l_0_0, "rdpclip.exe", 1, true) or (string.find)(l_0_0, "tsprintlogin.exe", 1, true) or (string.find)(l_0_0, "tsscanlist.exe", 1, true) or (string.find)(l_0_0, "uplaunch.exe", 1, true) or (string.find)(l_0_0, "svchost.exe", 1, true) then
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\184\r\024\141>\144")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

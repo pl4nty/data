@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.has_msilresources then
+if (hstrlog[5]).matched or (hstrlog[6]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

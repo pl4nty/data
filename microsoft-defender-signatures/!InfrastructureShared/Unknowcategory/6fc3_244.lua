@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0 ~= nil and l_0_0:find("putty", 1, true) ~= nil then
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+-- DECOMPILER ERROR at PC17: Unhandled construct in 'MakeBoolean' P3
+
+if (l_0_0 >= 147456 and l_0_0 <= 184320) or l_0_0 < 217088 or l_0_0 >= 131072 and l_0_0 <= 135168 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 and (string.find)((string.lower)(l_0_0.image_path), "python", 1, true) then
-  return mp.INFECTED
+if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.GetSMSProcArchitecture)() ~= mp.SMS_PROC_ARCH_X32 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

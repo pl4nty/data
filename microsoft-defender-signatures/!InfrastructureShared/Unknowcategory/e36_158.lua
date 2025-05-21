@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if peattributes.isexe then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

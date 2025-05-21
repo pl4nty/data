@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:HostModify") then
+if (mp.get_mpattribute)("MHSTR:MacroExecute") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

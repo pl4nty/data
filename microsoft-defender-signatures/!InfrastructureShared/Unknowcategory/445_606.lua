@@ -6,30 +6,27 @@
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
+  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
+  else
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
 
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  local l_0_3 = nil
-  do
-    local l_0_4 = {[".js"] = true}
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
+  if not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (this_sigattrlog[4]).utf8p2 ~= nil then
+    local l_0_4 = nil
+    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[4]).utf8p2)) do
       local l_0_5 = nil
-      -- DECOMPILER ERROR at PC30: Confused about usage of register: R7 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
 
-      if (string.len)(R7_PC30) > 3 and (sysio.IsFileExists)(R7_PC30) and l_0_4[(string.sub)(R7_PC30, -3)] then
-        local l_0_11 = nil
-        if (string.match)(l_0_10, "%.zip\\(.+)") <= 1 then
-          return mp.INFECTED
-        end
+      R6_PC39 = (mp.ContextualExpandEnvironmentVariables)(R6_PC39)
+      if (sysio.IsFileExists)(R6_PC39) and (string.sub)(R6_PC39, -11) ~= "sdelete.exe" then
+        (bm.add_related_file)(R6_PC39)
+        return mp.INFECTED
       end
     end
-    do return mp.CLEAN end
-    -- WARNING: undefined locals caused missing assignments!
+  end
+  do
+    return mp.INFECTED
   end
 end
 

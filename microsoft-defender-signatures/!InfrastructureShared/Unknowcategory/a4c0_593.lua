@@ -3,25 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (hstrlog[3]).VA + 42
-local l_0_1 = (pe.mmap_va)(l_0_0, 4)
-if (string.byte)(l_0_1, 1) == 69 then
-  l_0_0 = l_0_0 + 5
-else
-  if (string.byte)(l_0_1, 1) == 133 then
-    l_0_0 = l_0_0 + 8
-  else
-    return mp.CLEAN
+if not (mp.get_mpattribute)("InEmail") then
+  return mp.CLEAN
+end
+if mp.HEADERPAGE_SZ < 11 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 11 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 12)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+do
+  if (string.find)(l_0_1, "по\017Ю║\177\026\225\000\000\000", 1, true) ~= nil or (string.find)(l_0_1, "PK\003\004\020\000\006\000", 1, true) ~= nil then
+    local l_0_2 = (mp.BMSearchFile)(0, l_0_0, "V\000B\000A\000_\000P\000R\000O\000J\000E\000C\000T\000\144\000")
+    if l_0_2 and l_0_2 >= 0 and l_0_2 < l_0_0 then
+      return mp.INFECTED
+    end
   end
+  return mp.CLEAN
 end
-l_0_1 = (pe.mmap_va)(l_0_0, 4)
-local l_0_2 = (mp.readu_u32)(l_0_1, 1)
-local l_0_3 = (pe.mmap_va)(l_0_2, 16)
-if (string.sub)(l_0_3, 1, 7) == "dfghjkl" then
-  return mp.INFECTED
-end
-if (string.sub)(l_0_3, 1, 14) == "dfertter2342zc" then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

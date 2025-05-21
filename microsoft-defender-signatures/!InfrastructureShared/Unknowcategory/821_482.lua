@@ -3,33 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_2 = nil
-  if l_0_0:match("create%s(.*)") == nil then
-    return mp.CLEAN
-  end
-  local l_0_3 = nil
-  for l_0_7 in l_0_3:gmatch("([a-z]?:?[^/]\\?[a-z0-9.\\ ]*:[^\\][a-z0-9.]*)") do
-    local l_0_4 = false
-    -- DECOMPILER ERROR at PC28: Confused about usage of register: R6 in 'UnsetPending'
-
-    if (sysio.IsFileExists)(R6_PC28) then
-      (bm.add_related_file)(R6_PC28)
-      l_0_4 = true
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  local l_0_0 = (string.match)((this_sigattrlog[1]).utf8p1, "\\([^\\]+)$")
+  if l_0_0 then
+    local l_0_1 = (string.lower)(l_0_0)
+    if (string.find)(l_0_1, "$normal.dot", 1, true) or (string.sub)(l_0_1, 1, 4) == "~wrd" or (string.sub)(l_0_1, 1, 2) == "~$" then
+      return mp.CLEAN
     end
   end
-  -- DECOMPILER ERROR at PC39: Confused about usage of register: R2 in 'UnsetPending'
-
-  if l_0_4 then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+end
+do
+  return mp.INFECTED
 end
 

@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_1 = nil
-local l_0_0 = (pe.get_regval)(pe.REG_ECX) - (4294967295 - (pe.get_regval)(pe.REG_EBX))
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_1 = (string.sub)(l_0_0, 12, 12)
 ;
-(pe.set_regval)(pe.REG_EAX, 0)
-;
-(pe.set_regval)(pe.REG_EBX, l_0_1)
-;
-(pe.set_regval)(pe.REG_ECX, l_0_0)
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "\187" .. l_0_1 .. "\000\000\000\144")
+return mp.INFECTED
 

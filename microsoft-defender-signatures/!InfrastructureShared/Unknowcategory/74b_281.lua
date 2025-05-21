@@ -6,7 +6,7 @@
 if (mp.getfilesize)() > 1048576 then
   return mp.CLEAN
 end
-if #(mp.enum_mpattributesubstring)("SCPT:CVE-2019-1821-A") >= 5 then
+if #(mp.enum_mpattributesubstring)("SCPT:CVE-2019-1653-B") >= 3 then
   return mp.INFECTED
 else
   return mp.CLEAN

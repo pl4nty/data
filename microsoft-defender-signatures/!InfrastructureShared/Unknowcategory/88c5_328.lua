@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 491520 and l_0_0 <= 499712 and pehdr.NumberOfSections >= 7 and pehdr.NumberOfSections <= 8 and (mp.get_mpattribute)("NID:Emotet.GU!Pra1") then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 10, 35)
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.find)(l_0_0, "u", 1, true)
+    if l_0_1 ~= nil then
+      (pe.mmap_patch_va)(pevars.sigaddr + 10 + l_0_1 - 1, "")
+    end
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

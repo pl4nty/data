@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((mp.getfilename)(), -4)) ~= ".doc" then
+do
+  if (mp.get_mpattribute)("SCRIPT:PowerShell/Ploty.C!head") then
+    local l_0_0 = (string.lower)((mp.getfilename)())
+    if (string.find)(l_0_0, "%->%[powershellb64%]%->%(base64%)") then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true) ~= 0 or not "Lua:SingleFileInZip" then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

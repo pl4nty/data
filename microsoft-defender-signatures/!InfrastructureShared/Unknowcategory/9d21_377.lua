@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 and (hstrlog[1]).matched then
+if (hstrlog[1]).matched and (hstrlog[1]).VA == 4194905 and pehdr.AddressOfEntryPoint == 4112 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_IMPORT]).RVA == 4240 then
   return mp.INFECTED
 end
-;
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win64/Rovnix.C")
 return mp.CLEAN
 

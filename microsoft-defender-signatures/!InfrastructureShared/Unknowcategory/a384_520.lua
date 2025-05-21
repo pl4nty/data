@@ -3,17 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_tail[l_0_3]).matched and (sigattr_tail[l_0_3]).attribute == 16393 then
+    local l_0_4 = (sigattr_tail[l_0_3]).utf8p1
+    if l_0_4 then
+      l_0_4 = (string.lower)(l_0_4)
+      if l_0_4 and ((string.find)(l_0_4, "useraccountcontrolsettings.exe") or (string.find)(l_0_4, "taskmgr.exe")) then
+        local l_0_5 = (sigattr_tail[l_0_3]).utf8p2
+        if (string.len)(l_0_5) > 1 then
+          return mp.INFECTED
+        end
+      end
+    end
+  end
 end
-;
-(mp.readprotection)(false)
-local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EAX), 4)
-local l_0_1 = (string.byte)(l_0_0) - 1
-local l_0_2 = (string.byte)(l_0_0, 3) + 16
-;
-(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX), (string.char)(l_0_1))
-;
-(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX) + 2, (string.char)(l_0_2))
-return mp.INFECTED
+return mp.CLEAN
 

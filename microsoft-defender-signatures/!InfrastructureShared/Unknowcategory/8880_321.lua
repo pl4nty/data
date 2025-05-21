@@ -3,9 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
-local l_0_1 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 5, 1))
-if l_0_0 + l_0_1 == 87 or l_0_1 - l_0_0 == 87 then
+if peattributes.isexe == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.epinfirstsect == true and peattributes.no_security == true and peattributes.no_debug == true then
   return mp.INFECTED
 end
 return mp.CLEAN

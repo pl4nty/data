@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Dexel.B!Pra1") then
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
+end
+if (hstrlog[1]).matched then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

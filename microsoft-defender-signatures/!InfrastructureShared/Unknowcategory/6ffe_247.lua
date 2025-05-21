@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if (string.len)(l_0_1) < 1024 then
+if (mp.getfilesize)() > 10240000 then
   return mp.CLEAN
 end
-return mp.INFECTED
+if pehdr.Subsystem == 11 or pehdr.Subsystem == 12 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

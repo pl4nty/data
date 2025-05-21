@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 4 and (pesecs[4]).Name == ".newimp" and (mp.bitand)((pesecs[4]).Characteristics, 2147483648) == 2147483648 then
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 36864 then
   return mp.INFECTED
 end
 return mp.CLEAN

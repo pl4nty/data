@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:FrostWire")
+(mp.set_mpattribute)("PUA:Block:RocketTab")
 return mp.INFECTED
 

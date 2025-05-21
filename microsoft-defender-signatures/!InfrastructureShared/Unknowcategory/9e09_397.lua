@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.no_security and (mp.getfilesize)() > 1200000 and (mp.getfilesize)() < 5500000 and (pesecs[2]).Name == ".rsrc" and (pesecs[3]).Name == ".reloc" then
-  return mp.INFECTED
+do
+  if peattributes.isexe == true and (pesecs[6]).Name == ".ropf" and (mp.get_mpattribute)("pea_no_security") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

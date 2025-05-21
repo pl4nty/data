@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.shr32)(pehdr.TimeDateStamp, 22) and (mp.shl32)(pehdr.TimeDateStamp, 22) == 0 then
-  (mp.changedetectionname)(805306402)
+if peattributes.isdll and peattributes.hasexports and (hstrlog[1]).VA - (hstrlog[2]).VA < 9472 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

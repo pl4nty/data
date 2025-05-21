@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("CODEPATCH:CheckStackValGetModuleHandle")
-return mp.INFECTED
+if (pesecs[4]).Name == ".lk90" and (pesecs[8]).Name == "8s7d" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

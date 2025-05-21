@@ -3,19 +3,20 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.match)(l_0_0, "powershell.+hidden.+bypass.+system%.net%.webclient.+downloadfile.+http.+%.exe.+&%s*reg%s*add%s*hkcu.+software.+classes.+mscfile.+shell.+open.+command%s*/d%s*.+%.exe%s*/f%s*&%s*eventvwr%.exe") ~= nil then
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
+do
+  if l_0_1 ~= nil then
+    local l_0_2 = (string.lower)(l_0_1.image_path)
+    if l_0_2:match("([^\\]+)$") == "svchost.exe" then
+      (MpCommon.TurnNriOnProcess)(l_0_0.ppid)
+      ;
+      (bm.request_SMS)(l_0_0.ppid, "M")
+      ;
+      (bm.add_action)("SmsAsyncScanEvent", 1000)
       return mp.INFECTED
     end
-    return mp.CLEAN
   end
+  return mp.CLEAN
 end
 

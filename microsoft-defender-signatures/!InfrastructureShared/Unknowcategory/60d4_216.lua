@@ -3,11 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if not peattributes.suspicious_image_version then
-  return mp.CLEAN
-end
+(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Backdoor:Win64/PepticStunt.A!dha")
 return mp.INFECTED
 

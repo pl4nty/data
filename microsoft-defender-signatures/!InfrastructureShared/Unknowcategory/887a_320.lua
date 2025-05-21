@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
-if (string.find)(l_0_0, "rundll32", 1, true) and (string.find)(l_0_0, "onlogon", 1, true) then
+if epcode[2] == 131 and epcode[3] == 236 and epcode[5] == 232 and epcode[11] == 131 and epcode[12] == 196 and epcode[14] == 233 then
   return mp.INFECTED
 end
 return mp.CLEAN

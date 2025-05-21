@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "sharpshares.exe" then
-  return mp.CLEAN
+if (mp.getfilesize)() <= 2048 and (mp.get_mpattribute)("PACKED_WITH:[Eval]") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

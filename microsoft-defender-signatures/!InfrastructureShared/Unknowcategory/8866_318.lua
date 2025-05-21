@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.no_resources and (pe.contains_va)(3, (hstrlog[1]).VA) and (pesecs[3]).Name == ".data" then
-  return mp.INFECTED
+if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (this_sigattrlog[2]).utf8p1
+if (string.find)(l_0_0, "\\conhost.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

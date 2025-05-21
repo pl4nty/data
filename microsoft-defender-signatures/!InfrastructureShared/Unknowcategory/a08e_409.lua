@@ -3,14 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 11, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-l_0_0 = (pe.mmap_va)(l_0_1, 4)
-l_0_1 = (mp.readu_u32)(l_0_0, 1)
-local l_0_2 = (pe.get_api_id)(l_0_1)
-if l_0_2 == 3267971814 then
-  (pe.mmap_patch_va)(pevars.sigaddr + 7, "\235")
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+  for l_0_5,l_0_6 in ipairs(l_0_1) do
+    if (sysio.IsFileExists)(l_0_6) then
+      (bm.add_related_file)(l_0_6)
+      ;
+      (mp.ReportLowfi)(l_0_6, 2969606243)
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

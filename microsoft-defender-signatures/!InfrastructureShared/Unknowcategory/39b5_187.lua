@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == false or peattributes.isdll == false then
-  return mp.CLEAN
-end
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.reemulate)()
 return mp.INFECTED
 

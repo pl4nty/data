@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:WizzDownload")
-if mp.HSTR_WEIGHT >= 15 then
-  (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A3")
+if peattributes.ismsil and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

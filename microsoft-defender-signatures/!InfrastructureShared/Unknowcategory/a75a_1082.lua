@@ -3,30 +3,19 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC149: Unhandled construct in 'MakeBoolean' P3
-
-if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched or (hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched or not (hstrlog[16]).matched) and (hstrlog[23]).matched) or (hstrlog[15]).matched) and 1 or 0) + ((hstrlog[22]).matched and 1 or 0) + ((hstrlog[31]).matched and 1 or 0) >= 2 then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = (bm.get_process_relationships)()
+    for l_0_5,l_0_6 in ipairs(l_0_0) do
+      if l_0_6.image_path ~= nil then
+        local l_0_7 = (string.lower)(l_0_6.image_path)
+        if (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)(l_0_7, "\\cmd.exe", 1, true) or (string.find)(l_0_7, "\\powershell.exe", 1, true) or (string.find)(l_0_7, "\\sdiagnhost.exe", 1, true) or (string.find)(l_0_7, "\\qualysagent.exe", 1, true) or (string.find)(l_0_7, "\\pulsesecureservice.exe", 1, true) or (string.find)(l_0_7, "\\javaw.exe", 1, true) or (string.find)(l_0_7, "\\java.exe", 1, true) or (string.find)(l_0_7, "\\ruby.exe", 1, true) or (string.find)(l_0_7, "\\logmein.exe", 1, true) or (string.find)(l_0_7, "\\fasm.exe", 1, true) or (string.find)(l_0_7, ":\\windows\\assembly\\", 1, true) or (string.find)(l_0_7, "\\911 location manager.exe", 1, true)) then
+          return mp.CLEAN
+        end
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

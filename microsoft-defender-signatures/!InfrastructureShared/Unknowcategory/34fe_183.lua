@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("LUA:FileSizeLE100.A") then
+if (mp.get_mpattribute)("SIGATTR:RunsTempBat") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

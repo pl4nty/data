@@ -11,15 +11,24 @@ do
   end
   -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
 
-  do
-    if l_0_0 ~= nil then
-      local l_0_2 = nil
-      if l_0_2:match("%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d|%d+%.%d+%.%d+%.%d+|%d+%.%d+%.%d+%.%d+") then
-        (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/KoalaTwin.A!dha")
-        return mp.INFECTED
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    if (mp.GetExecutablesFromCommandLine)(l_0_0) then
+      for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+        local l_0_3 = nil
+        -- DECOMPILER ERROR at PC27: Confused about usage of register: R6 in 'UnsetPending'
+
+        R6_PC27 = (mp.ContextualExpandEnvironmentVariables)(R6_PC27)
+        if R6_PC27 and (sysio.IsFileExists)(R6_PC27) then
+          (mp.ReportLowfi)(R6_PC27, 3331634663)
+        end
       end
     end
-    return mp.CLEAN
+  end
+  do
+    return mp.INFECTED
   end
 end
 

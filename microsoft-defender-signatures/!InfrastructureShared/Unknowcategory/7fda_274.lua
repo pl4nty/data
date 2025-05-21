@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (pesecs[2]).Name == ".rodata" and (pesecs[2]).Characteristics == 1610612768 then
+if ((pe.get_versioninfo)()).OriginalFilename == "riched32.dll" and ((pe.get_versioninfo)()).CompanyName == "Microsoft Corporation" then
   return mp.INFECTED
 end
 return mp.CLEAN

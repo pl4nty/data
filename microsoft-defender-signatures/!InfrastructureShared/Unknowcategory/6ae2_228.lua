@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[7]).Name == ".taggant" and (pesecs[7]).Characteristics == 3758096448 then
+if (mp.get_mpattribute)("BM_OLE_FILE") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") then
   return mp.INFECTED
 end
 return mp.CLEAN

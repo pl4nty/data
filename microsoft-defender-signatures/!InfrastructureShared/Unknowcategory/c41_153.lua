@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:IronSource")
+(mp.set_mpattribute)("PUA:Block:ShopperPro")
 return mp.INFECTED
 

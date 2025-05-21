@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:ICLoader")
+(mp.set_mpattribute)("PUA:Block:Kradarre")
 return mp.INFECTED
 

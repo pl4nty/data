@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:PossibleVcEpStub")
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:DomainIQ")
+return mp.INFECTED
 

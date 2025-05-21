@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") then
+if peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Zilla.AMMG!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

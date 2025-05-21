@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isvbnative then
-  return mp.CLEAN
-end
+(mp.set_mpattribute)("PUA:Block:ConduitSearchProtect")
 return mp.INFECTED
 

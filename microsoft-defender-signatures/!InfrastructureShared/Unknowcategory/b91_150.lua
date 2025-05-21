@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("//ClearLockPWFile")
+(mp.set_mpattribute)("PUA:Block:Fitsnuf")
 return mp.INFECTED
 

@@ -3,15 +3,24 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.CheckSum == 0 and peattributes.isexe and peattributes.hasexports and pevars.epsec < 3 and pehdr.MajorLinkerVersion == 10 and pehdr.MinorLinkerVersion == 0 and pehdr.NumberOfSections == 7 then
-  if mp.HSTR_WEIGHT == 1 then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-    ;
-    (pe.reemulate)()
-  end
-  if mp.HSTR_WEIGHT == 2 then
-    return mp.INFECTED
+local l_0_0 = "\\powershell.exe"
+local l_0_1 = (string.len)(l_0_0)
+local l_0_2 = false
+local l_0_3, l_0_4 = (bm.get_process_relationships)()
+for l_0_8,l_0_9 in ipairs(l_0_3) do
+  if l_0_9.image_path ~= nil and (mp.bitand)(l_0_9.reason_ex, 1) == 1 and l_0_1 < (string.len)(l_0_9.image_path) and (string.sub)(l_0_9.image_path, -l_0_1) == l_0_0 then
+    l_0_2 = true
+    break
   end
 end
-return mp.CLEAN
+do
+  if l_0_2 == false then
+    return mp.CLEAN
+  end
+  local l_0_10 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+  if l_0_10 ~= nil then
+    (mp.ReportLowfi)(l_0_10, 3640120989)
+  end
+  return mp.INFECTED
+end
 

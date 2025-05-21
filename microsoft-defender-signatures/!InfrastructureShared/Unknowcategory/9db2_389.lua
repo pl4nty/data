@@ -3,16 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0 then
+    local l_0_1 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
+    if l_0_0:find(l_0_1, 1, true) then
+      return mp.CLEAN
+    end
+  end
+  ;
+  (bm.trigger_sig)("SuspRedirAttempt", "DllDrop")
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
-if l_0_1 ~= "wmiprvse.exe" or l_0_1 == "services.exe" then
-  return mp.CLEAN
-end
-if (versioning.GetLocaleIdentifier)() == 1049 then
-  return mp.LOWFI
-end
-return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (hstrlog[1]).matched and (hstrlog[2]).matched then
+if peattributes.isexe and peattributes.x86_image and peattributes.checks_if_debugged_undocumented then
   return mp.INFECTED
 end
 return mp.CLEAN

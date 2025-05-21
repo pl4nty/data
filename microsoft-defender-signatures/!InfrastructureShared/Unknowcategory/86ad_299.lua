@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true or peattributes.isdll == true and (pesecs[3]).Name == ".data" and (pesecs[3]).Characteristics == 3221225536 then
+if pehdr.NumberOfSections == 6 and (mp.getfilesize)() >= 210000 and (mp.getfilesize)() <= 213000 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_loadconfig == true then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.SUSPICIOUS
 end
+;
+(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOV")
 return mp.CLEAN
 

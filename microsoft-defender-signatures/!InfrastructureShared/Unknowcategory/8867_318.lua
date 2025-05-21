@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if not peattributes.dynmem_APIcall then
-  return mp.CLEAN
-end
-if not peattributes.dynmem_uses_access_violation and not peattributes.executes_from_dynamic_memory then
-  return mp.CLEAN
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and pehdr.NumberOfSections == 8 then
+  (pe.set_image_filename)("\"myapp.exe\" /install")
+  ;
+  (pe.reemulate)()
 end
 return mp.INFECTED
 

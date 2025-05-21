@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Chromipun:Bit")
+(mp.set_mpattribute)("PUA:Block:DownloadAdmin")
 return mp.INFECTED
 

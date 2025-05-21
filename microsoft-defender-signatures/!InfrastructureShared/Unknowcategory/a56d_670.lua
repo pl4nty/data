@@ -3,29 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if not l_0_1 or #l_0_1 <= 18 then
-  return mp.CLEAN
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
 end
-l_0_1 = (string.lower)(l_0_1)
-local l_0_2 = (string.match)(l_0_1, "[-/]p%s+\"?\'?([%d]+)\"?\'?")
-if not l_0_2 then
-  return mp.CLEAN
-end
-l_0_2 = tonumber(l_0_2)
-local l_0_3 = (mp.GetPPidFromPid)(l_0_2)
-local l_0_4 = (MpCommon.GetImagePathFromPid)(l_0_3)
-if not l_0_4 then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, "%-watson%s%-unnamed") then
-  return mp.CLEAN
-end
-if (string.find)(l_0_4:lower(), "\\windows\\system32\\lsass.exe", 1, true) then
+local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+if (string.find)(l_0_6:lower(), "microsoft.net\\framework.-\\v[0-9.].+\\temporary asp.net files\\") or (string.find)(l_0_6:lower(), "microsoft\\exchange server\\v[0-9].+\\clientaccess\\owa\\bin") or (string.find)(l_0_6:lower(), "microsoft\\exchange server\\v[0-9].+\\frontend\\httpproxy\\owa\\bin") then
   return mp.INFECTED
 end
 return mp.CLEAN

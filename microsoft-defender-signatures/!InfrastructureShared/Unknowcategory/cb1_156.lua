@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 100000 then
-  return mp.LOWFI
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:BetterInstall")
+return mp.INFECTED
 

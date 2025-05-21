@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[4]).utf8p1)
-    if (string.match)(l_0_0, "%.bin$") then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("inetpub\\solarwinds", 1, true) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

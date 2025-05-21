@@ -3,46 +3,47 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
-  end
-  local l_0_1, l_0_2 = , (bm.get_process_relationships)()
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC17: Confused about usage of register: R7 in 'UnsetPending'
-
-    if (string.lower)(R7_PC17.image_path) ~= nil and ((string.find)((string.lower)(R7_PC17.image_path), "\\svchost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\msiexec.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\runtimebroker.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\maatunnel.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\cftpstes.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\explorer.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\dllhost.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\msaccess.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\dwdesk.exe", 1, true) or (string.find)((string.lower)(R7_PC17.image_path), "\\dsaccessservice.exe", 1, true)) then
-      return mp.CLEAN
-    end
-  end
-  if l_0_1 ~= nil and (string.len)(l_0_1) > 3 then
-    local l_0_9 = nil
-    if (bm.get_current_process_startup_info)() == nil or ((bm.get_current_process_startup_info)()).command_line == nil or (string.find)((string.lower)(((bm.get_current_process_startup_info)()).command_line), "natsvc*") then
-      return mp.CLEAN
-    end
-    local l_0_10 = nil
-    if (mp.GetExecutablesFromCommandLine)(l_0_1) ~= nil then
-      for l_0_14,l_0_15 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-        local l_0_11 = nil
-        -- DECOMPILER ERROR at PC157: Confused about usage of register: R9 in 'UnsetPending'
-
-        if (string.find)(mp.CLEAN, "\\maslog_runxx.dl") then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC167: Confused about usage of register: R9 in 'UnsetPending'
-
+local l_0_0 = (hstrlog[1]).VA
+if (pe.isdynamic_va)(l_0_0) == false and (pe.isencrypted_va)(l_0_0 + 9) == false and (pe.isencrypted_va)(l_0_0 + 10) == false and (pe.isencrypted_va)(l_0_0 + 11) == false and (pe.isencrypted_va)(l_0_0 + 12) == false then
+  local l_0_1 = (pe.foffset_va)(l_0_0)
+  if l_0_1 ~= 4294967295 then
+    (mp.readprotection)(false)
+    local l_0_2 = (mp.readfile)(0, (mp.getfilesize)())
+    ;
+    (mp.writeu_u16)(l_0_2, l_0_1 + 6, 5867)
+    local l_0_3 = (mp.readu_u32)(l_0_2, 61)
+    local l_0_4 = (mp.readu_u32)(l_0_2, l_0_3 + 41)
+    local l_0_5 = (pe.foffset_va)(l_0_4 + pehdr.ImageBase)
+    local l_0_6 = (mp.readfile)(l_0_5, 32)
+    local l_0_7 = (string.find)(l_0_6, "`h", 1, true)
+    if l_0_7 ~= nil then
+      local l_0_8 = (mp.readu_u32)(l_0_2, l_0_5 + l_0_7 + 2)
+      local l_0_9 = (pe.foffset_va)(l_0_8)
+      local l_0_10 = (mp.readfile)(l_0_9, 64)
+      local l_0_11 = (string.find)(l_0_10, "NP_Initialize", 1, true)
+      if l_0_11 ~= nil then
+        (mp.writeu_u32)(l_0_2, l_0_9 + 1, 1836544110)
         ;
-        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(mp.CLEAN))
+        (mp.writeu_u32)(l_0_2, l_0_9 + 5, 1836213363)
+        ;
+        (mp.writeu_u32)(l_0_2, l_0_9 + 9, 0)
       end
     end
-  end
-  do
-    l_0_10 = mp
-    l_0_10 = l_0_10.INFECTED
-    return l_0_10
+    do
+      do
+        -- DECOMPILER ERROR at PC154: Unhandled construct in 'MakeBoolean' P1
+
+        if (mp.readu_u32)(l_0_6, 1) == 360 and (mp.readu_u32)(l_0_6, 4) == 369033216 and (mp.readu_u32)(l_0_6, 12) == 2425393296 then
+          (mp.writeu_u32)(l_0_2, l_0_3 + 41, l_0_4 + 11)
+        end
+        if (mp.readu_u32)(l_0_6, 1) == 2425393296 and (mp.readu_u32)(l_0_6, 6) == 3093336208 then
+          (mp.writeu_u32)(l_0_2, l_0_3 + 41, l_0_0 + 29 - pehdr.ImageBase)
+        end
+        ;
+        (mp.vfo_add_buffer)(l_0_2, "[Obfuscator]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+        return mp.LOWFI
+      end
+    end
   end
 end
 

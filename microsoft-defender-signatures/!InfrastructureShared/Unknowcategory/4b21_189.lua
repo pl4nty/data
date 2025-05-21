@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MACRO_HSTR:OfficeAutoOpen") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

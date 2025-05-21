@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  local l_0_0 = (string.lower)(tostring(headerpage))
-  if l_0_0 > 5 then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+if peattributes.isdll == true and peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/Qbot.ZXX!MTB") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

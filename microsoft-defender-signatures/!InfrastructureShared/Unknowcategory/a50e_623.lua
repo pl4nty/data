@@ -3,29 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-local l_0_2 = nil
-if (this_sigattrlog[5]).matched then
-  l_0_2 = (this_sigattrlog[5]).image_path
-else
-  if (this_sigattrlog[6]).matched then
-    l_0_2 = (this_sigattrlog[6]).image_path
-  end
+local l_0_0 = pehdr.ImageBase + (pesecs[1]).VirtualAddress
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+if (string.sub)(l_0_1, 1, 4) == "(re)" then
+  (mp.changedetectionname)(805306418)
 end
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    if l_0_7.image_path == l_0_2 then
-      local l_0_8, l_0_9 = (string.match)(l_0_7.ppid, "pid:(%w+),ProcessStart:(%w+)")
-      local l_0_10 = tonumber(l_0_8)
-      local l_0_11 = tonumber(l_0_9)
-      local l_0_12, l_0_13 = (mp.bsplit)(l_0_11, 32)
-      local l_0_14 = (string.format)("ppids:{{%d,%d,%d}}\000", l_0_10, l_0_12, l_0_13)
-      ;
-      (mp.TriggerScanResource)("ems", l_0_14)
-    end
-  end
+if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3898037843 and (mp.readu_u32)(epcode, 13) == 4278738315 and (mp.readu_u32)(epcode, 17) == 1703089267 and (mp.readu_u16)(epcode, 21) == 252 then
+  (mp.changedetectionname)(805306418)
 end
-do
-  return mp.INFECTED
-end
+return mp.INFECTED
 

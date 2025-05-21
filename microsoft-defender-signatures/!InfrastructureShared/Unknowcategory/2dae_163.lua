@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("FOPEX:Obfuscator_ACC_codepatch")
+return mp.INFECTED
 

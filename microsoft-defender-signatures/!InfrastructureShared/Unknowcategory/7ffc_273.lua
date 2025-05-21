@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[7]).Name == ".reloc" and (pesecs[7]).Characteristics == 1107296320 then
+if peattributes.isexe == true and (pesecs[4]).Name == ".ndata" and (pesecs[4]).Characteristics == 3221225600 then
   return mp.INFECTED
 end
 return mp.CLEAN

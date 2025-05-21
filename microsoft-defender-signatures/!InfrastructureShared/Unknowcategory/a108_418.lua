@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:XMRig")
+if ((((((((not (hstrlog[1]).matched or (hstrlog[2]).matched) and not (hstrlog[1]).matched) or (hstrlog[2]).matched) and not (hstrlog[3]).matched) or (hstrlog[4]).matched) and not (hstrlog[5]).matched) or (hstrlog[6]).matched) and 0 + 1 + 1 >= 1) or 0 + 1 + 1 + 1 + 1 + 1 + 1 >= 2 then
   return mp.INFECTED
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrig")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrig")
-end
-;
-(mp.set_mpattribute)("Miner:XMRigNoBlock")
 return mp.CLEAN
 

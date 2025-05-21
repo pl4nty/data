@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 3 and (pesecs[1]).PointerToRawData == 4096 then
-  return mp.INFECTED
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("MpRequestSMSM")
+return mp.INFECTED
 

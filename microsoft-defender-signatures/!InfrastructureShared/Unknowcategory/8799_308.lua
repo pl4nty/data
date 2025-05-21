@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and (string.len)(l_0_0) > 14 then
+  l_0_0 = (string.lower)((string.sub)(l_0_0, -14))
+  if l_0_0 == "\\mpsigstub.exe" then
+    return mp.CLEAN
+  end
 end
-if peattributes.isdll and peattributes.hasexports then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

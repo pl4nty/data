@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p2)
-  local l_0_2 = (string.lower)((this_sigattrlog[3]).utf8p2)
-  if l_0_0 ~= nil and l_0_1 ~= nil and l_0_2 ~= nil and (string.find)(l_0_1, l_0_0, 1, true) and (string.find)(l_0_2, l_0_0, 1, true) then
-    return mp.INFECTED
-  end
-end
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if l_0_0:find(":\\users", 1, true) ~= nil or l_0_0:find(":\\windows", 1, true) ~= nil then
+      if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
+        (bm.add_related_file)(l_0_0)
+      end
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
 

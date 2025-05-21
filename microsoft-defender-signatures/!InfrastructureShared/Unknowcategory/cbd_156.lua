@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 350000 then
-  return mp.LOWFI
-end
-return mp.CLEAN
+(bm.add_action)("EmsScan", 5000)
+return mp.INFECTED
 

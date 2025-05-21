@@ -3,17 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == false then
-  return mp.CLEAN
+if peattributes.isdll and peattributes.enable_vmm_grow and (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.dynmem_APIcall and peattributes.suspicious_linker_version then
+  return mp.INFECTED
 end
-if peattributes.no_resources == true then
-  return mp.CLEAN
-end
-if peattributes.hasappendeddata == false then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

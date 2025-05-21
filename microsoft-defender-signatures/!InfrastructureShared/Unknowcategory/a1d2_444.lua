@@ -3,24 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1, l_0_2 = nil, nil, nil
-local l_0_6 = nil
-if (string.lower)((string.sub)((bm.get_imagepath)(), -12)) == "\\msiexec.exe" then
-  local l_0_4 = nil
-  local l_0_3 = R2_PC21
-  -- DECOMPILER ERROR at PC29: Overwrote pending register: R3 in 'AssignReg'
-
-  do
-    do
-      if l_0_4 ~= nil then
-        local l_0_5 = nil
-        if (sysio.IsFileExists)(l_0_5) then
-          (bm.add_threat_file)(l_0_5)
-        end
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_5,l_0_6 in ipairs(l_0_1) do
+      if (sysio.IsFileExists)(l_0_6) and (string.find)(l_0_6, "rundll32", 1, true) == nil then
+        (bm.add_related_file)(l_0_6)
       end
-      do return mp.INFECTED end
-      return mp.CLEAN
     end
   end
+end
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

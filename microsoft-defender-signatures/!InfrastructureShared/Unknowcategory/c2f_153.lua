@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:RenoFlossLoader")
+(mp.set_mpattribute)("PUA:Block:MyPCBackup")
 return mp.INFECTED
 

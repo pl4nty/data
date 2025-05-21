@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((this_sigattrlog[1]).utf8p1, "\\%l%l%l%l%l%.exe$") ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 27, "«D$\016\016\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 96, "êê")
+return mp.INFECTED
 

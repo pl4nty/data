@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).matched or (hstrlog[3]).matched then
-  return mp.INFECTED
+if (hstrlog[6]).matched and (hstrlog[7]).matched then
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

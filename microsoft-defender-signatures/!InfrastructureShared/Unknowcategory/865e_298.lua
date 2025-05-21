@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.hasexports and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win64/IcedId.PAE!MTB") and l_0_0 > 241664 and l_0_0 < 249856 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 21 and (hstrlog[3]).hitcount + (hstrlog[4]).hitcount + (hstrlog[5]).hitcount + (hstrlog[6]).hitcount >= 5 then
+if mp.HSTR_WEIGHT >= 8 then
   return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT >= 6 then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+    ;
+    (pe.reemulate)()
+  end
 end
 return mp.LOWFI
 

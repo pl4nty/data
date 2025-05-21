@@ -3,16 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.set_peattribute)("enable_vmm_grow", true)
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.set_peattribute)("disable_seh_limit", true)
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-;
-(pe.reemulate)()
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and (string.lower)((string.sub)(l_0_0, -31)) ~= "altaro.services.backupagent.exe" and (string.lower)((string.sub)(l_0_0, -20)) ~= "coreserviceshell.exe" then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

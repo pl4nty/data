@@ -3,17 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched and (this_sigattrlog[5]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[4]).p1)
-  local l_0_2 = (string.lower)((this_sigattrlog[5]).p1)
-  local l_0_3 = (string.lower)((this_sigattrlog[5]).p2)
-  if l_0_0 and (string.find)(l_0_0, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") and l_0_1 and (string.find)(l_0_1, "^%d%d%d+") and l_0_2 and l_0_3 and (string.find)(l_0_2, "^%d%d%d+") and (string.find)(l_0_3, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_2 = l_0_0.match_offset + 17
+if l_0_0._is_footer then
+  l_0_2 = (mp.getfilesize)() - mp.FOOTERPAGE_SZ + l_0_2
+  local l_0_1 = nil
 end
 do
-  return mp.CLEAN
+  ;
+  (mp.readprotection)(false)
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R2 in 'UnsetPending'
+
+  local l_0_3 = nil
+  ;
+  (mp.readprotection)(true)
+  if l_0_2 ~= nil then
+    for l_0_7 in (string.find)((mp.readfile)(l_0_2, l_0_1 - (l_0_2)), "[%w+/]+=?=?") do
+      local l_0_4 = nil
+      -- DECOMPILER ERROR at PC36: Confused about usage of register: R7 in 'UnsetPending'
+
+      if R7_PC36 ~= nil and R7_PC36 ~= "" then
+        (mp.vfo_add_buffer)("CWSHACK\000" .. (MpCommon.Base64Decode)(R7_PC36), "[PyMacZlib]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
 

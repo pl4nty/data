@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if pehdr.NumberOfSections == 4 and (pesecs[4]).SizeOfRawData == 75776 and (pesecs[4]).PointerToRawData == 91648 then
+  return mp.INFECTED
 end
-if (string.find)(l_0_0.CompanyName, "LaplFink Software", 1, true) == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

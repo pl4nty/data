@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image then
+if peattributes.isvbpcode == true then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

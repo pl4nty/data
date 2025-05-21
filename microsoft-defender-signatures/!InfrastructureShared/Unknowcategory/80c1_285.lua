@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == true and peattributes.no_security == true and (pe.get_exports_count)() == 1 then
+if peattributes.epscn_writable and peattributes.headerchecksum0 and peattributes.no_decription and peattributes.suspicious_image_version then
   return mp.INFECTED
 end
 return mp.CLEAN

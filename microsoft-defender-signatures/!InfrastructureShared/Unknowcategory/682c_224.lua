@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  if mp.HSTR_WEIGHT >= 4 then
-    return mp.INFECTED
-  end
-  return mp.LOWFI
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 >= 4096 and l_0_0 <= 12288 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

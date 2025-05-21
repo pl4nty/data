@@ -3,30 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if not (this_sigattrlog[8]).utf8p1 then
-    local l_0_0 = (this_sigattrlog[9]).utf8p1
-  end
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_1 = (string.lower)(l_0_0)
-  if l_0_1 == nil or (string.find)(l_0_1, "c:\\", 1, true) == nil then
-    return mp.CLEAN
-  end
-  if (sysio.IsFileExists)(l_0_1) then
-    (bm.add_related_file)(l_0_1)
-  end
-  local l_0_2 = (bm.get_current_process_startup_info)()
-  if l_0_2 ~= nil and l_0_2.ppid ~= nil then
-    (bm.request_SMS)(l_0_2.ppid, "m")
-    ;
-    (bm.add_action)("SmsAsyncScanEvent", 1)
-  end
-  return mp.INFECTED
+local l_0_0 = (nri.GetHttpRequestHeader)("User-Agent")
+local l_0_1 = (string.lower)((nri.GetURI)())
+local l_0_2 = (string.find)(l_0_1, "?", 1, true)
+if (string.find)(l_0_1, "&signature_id=%d+&_action_=getbin", l_0_2) == nil and (string.find)(l_0_0, "Guarded New Install System", 1, true) == nil then
+  return mp.CLEAN
 end
+local l_0_3 = {}
+l_0_3.useragent = l_0_0
+;
+(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_3)
+return mp.INFECTED
 

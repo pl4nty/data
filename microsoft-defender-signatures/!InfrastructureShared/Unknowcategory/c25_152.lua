@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Hidap:Bit")
+(mp.set_mpattribute)("PUA:Block:CudaMiner")
 return mp.INFECTED
 

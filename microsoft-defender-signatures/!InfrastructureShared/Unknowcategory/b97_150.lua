@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Coupish")
+(mp.set_mpattribute)("PUA:Block:Coupoon")
 return mp.INFECTED
 

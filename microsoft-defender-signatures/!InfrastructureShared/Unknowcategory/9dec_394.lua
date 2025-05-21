@@ -3,16 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    l_0_0 = (string.lower)(l_0_0)
-    if (string.match)(l_0_0, "/s") == nil or (string.match)(l_0_0, "/i") == nil or (string.match)(l_0_0, "\\\\sysvol\\policies") == nil then
-      return mp.CLEAN
-    else
-      return mp.INFECTED
-    end
-  end
+if (mp.readu_u16)((pe.mmap_va)(pevars.sigaddr - 2, 2), 1) ~= 55295 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "ût", 1, true), "\235")
+return mp.INFECTED
 

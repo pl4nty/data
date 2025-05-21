@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:COPY_BELOW_WIN") then
+if peattributes.isexe and peattributes.ismsil then
   return mp.INFECTED
 end
 return mp.CLEAN

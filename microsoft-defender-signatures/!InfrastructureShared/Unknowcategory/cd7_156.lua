@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:KipodToolsCby")
-return mp.INFECTED
+if peattributes.ismsil then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

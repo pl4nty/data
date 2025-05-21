@@ -3,10 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = (string.lower)(l_0_0.command_line)
-if (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "windowsazure", 1, true) or (string.find)(l_0_1, "chocolatey.", 1, true) then
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+    if (string.find)(l_0_0, " -url ", 1, true) and (string.find)(l_0_0, " http", 1, true) and (string.find)(l_0_0, " -path ", 1, true) then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-return mp.INFECTED
 

@@ -3,21 +3,32 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = "svchost.exe|taskeng.exe|taskhostw.exe"
+    local l_0_8 = (string.lower)((string.match)(l_0_6.image_path, "\\([^\\]+)$"))
+    if l_0_8 ~= nil and (string.find)(l_0_7, l_0_8) then
+      local l_0_9 = "c:\\windows\\system32\\tasks"
+      ;
+      (mp.TriggerScanResource)("folder", l_0_9)
+    else
+      do
+        do
+          do return mp.CLEAN end
+          -- DECOMPILER ERROR at PC43: LeaveBlock: unexpected jumping out DO_STMT
 
-  if (sigattr_tail[R4_PC6]).matched and (sigattr_tail[R4_PC6]).attribute == 16393 then
-    l_0_1 = (sigattr_tail[R4_PC6]).utf8p2
-    if l_0_1 ~= nil then
-      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
-        local l_0_6 = nil
-        -- DECOMPILER ERROR at PC30: Confused about usage of register: R10 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC43: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-        R10_PC30 = (mp.ContextualExpandEnvironmentVariables)(R10_PC30)
-        if (sysio.IsFileExists)(R10_PC30) then
-          (bm.add_related_file)(R10_PC30)
+          -- DECOMPILER ERROR at PC43: LeaveBlock: unexpected jumping out IF_STMT
+
+          -- DECOMPILER ERROR at PC43: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC43: LeaveBlock: unexpected jumping out IF_STMT
+
         end
       end
     end

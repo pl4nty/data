@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 21, 4), 1) > 40960 then
-  return mp.INFECTED
+if (hstrlog[1]).matched or (hstrlog[2]).matched then
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.PN!k4_k5.0_56CB")
 end
-return mp.CLEAN
+return mp.INFECTED
 

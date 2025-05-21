@@ -3,12 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.SizeOfImage >= 65536 and pehdr.SizeOfImage <= 131072 and peattributes.executes_from_dynamic_memory then
+-- DECOMPILER ERROR at PC27: Unhandled construct in 'MakeBoolean' P3
+
+if (peattributes.amd64_image and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096448) or (pesecs[pehdr.NumberOfSections]).Characteristics == 3761242176 then
   return mp.INFECTED
-else
-  ;
-  (mp.changedetectionname)(805306395)
-  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

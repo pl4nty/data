@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isvbnative and not peattributes.isvbpcode then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and ((string.lower)((string.sub)(l_0_0, -15))):match("\\([^\\]+%.exe)$") == "explorer.exe" and (string.lower)((string.sub)((mp.ContextualExpandEnvironmentVariables)(l_0_0), 2, 11)) == ":\\windows\\" then
   return mp.CLEAN
 end
-if (hstrlog[1]).matched then
-  local l_0_0 = (hstrlog[1]).VA
-  local l_0_1 = "HSTR:VirTool:Win32/VBInject.gen!LM_ptr_" .. (string.format)("%.08x", l_0_0 + 62)
-  ;
-  (mp.set_mpattribute)(l_0_1)
-  return mp.INFECTED
-end
-do
-  return mp.CLEAN
-end
+return mp.INFECTED
 

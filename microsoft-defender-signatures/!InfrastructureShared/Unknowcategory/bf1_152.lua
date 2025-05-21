@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:ClickMeIn")
+(mp.set_mpattribute)("PUA:Block:Outbrowse")
 return mp.INFECTED
 

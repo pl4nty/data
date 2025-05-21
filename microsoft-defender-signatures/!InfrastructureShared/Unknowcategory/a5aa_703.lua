@@ -3,34 +3,31 @@
 
 -- params : ...
 -- function num : 0
-is_in_program_files = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0.matched and l_1_0.utf8p2 ~= nil then
-    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_1_0.utf8p2))
-    if (string.match)(l_1_0.utf8p2, "%a:\\Program Files") ~= nil then
-      return true
-    else
-      if (string.match)(l_1_0.utf8p2, "%%program_files%%\\") ~= nil then
-        return true
-      else
-        return false
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  end
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R1 in 'AssignReg'
+
+  if ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and l_0_1 == nil) or nil == nil then
+    return mp.CLEAN
+  end
+  local l_0_2 = nil
+  for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+    local l_0_3 = nil
+    -- DECOMPILER ERROR at PC42: Confused about usage of register: R7 in 'UnsetPending'
+
+    if R7_PC42:len() > 6 and (MpCommon.QueryPersistContext)(R7_PC42, "IOAVHasDiscordUrl") then
+      (bm.add_related_file)(R7_PC42)
+      if not (MpCommon.QueryPersistContext)(l_0_2, "LargePEInArchiveFromDiscord") then
+        (MpCommon.AppendPersistContext)(l_0_2, "LargePEInArchiveFromDiscord", 3600)
+        return mp.INFECTED
       end
     end
   end
-  return false
-end
-
-if is_in_program_files(this_sigattrlog[1]) then
   return mp.CLEAN
 end
-if is_in_program_files(this_sigattrlog[2]) then
-  return mp.CLEAN
-end
-if is_in_program_files(this_sigattrlog[3]) then
-  return mp.CLEAN
-end
-if is_in_program_files(this_sigattrlog[4]) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

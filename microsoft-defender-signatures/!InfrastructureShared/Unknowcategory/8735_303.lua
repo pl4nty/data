@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 19, "")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
+if (mp.get_mpattribute)("pea_isexe") and peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

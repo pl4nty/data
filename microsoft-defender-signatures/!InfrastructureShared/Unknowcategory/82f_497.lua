@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
+if (this_sigattrlog[2]).matched then
   local l_0_0 = nil
-  if (this_sigattrlog[3]).utf8p2 ~= nil then
-    l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
+  if (this_sigattrlog[2]).utf8p2 ~= nil then
+    l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
   end
   if l_0_0 ~= nil then
     local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)

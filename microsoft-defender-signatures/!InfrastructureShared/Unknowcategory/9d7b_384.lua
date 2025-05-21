@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
-local l_0_2 = (MpCommon.PathToWin32Path)(l_0_1)
-local l_0_3 = l_0_2 .. "\\" .. l_0_0
-;
-(mp.set_mpattribute)("MpInternal_researchdata=parentProcessPath=" .. l_0_3)
-return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_1) do
+  local l_0_7 = (mp.bitand)(l_0_6.reason_ex, bm.RELATIONSHIP_CREATED)
+  if l_0_7 == bm.RELATIONSHIP_CREATED then
+    (bm.trigger_sig)("Behavior:Win32/SelfdelProcCreate.A", "INFECTED", l_0_6.ppid)
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

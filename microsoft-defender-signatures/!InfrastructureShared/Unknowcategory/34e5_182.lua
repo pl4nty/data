@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:SelfDelCMD") then
-  return mp.INFECTED
+if (pesecs[1]).SizeOfRawData ~= 1536 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

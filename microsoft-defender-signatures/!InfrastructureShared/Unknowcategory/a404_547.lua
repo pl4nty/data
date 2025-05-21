@@ -3,19 +3,25 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = nil
-else
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (string.match)(l_0_0, "if%s*%(%s*!%s*%(%s*%[%s*string%s*%]%s*%(%s*get%-wmiobject%s*-namespace%s*root\\subscription%s*%-class%s*__filtertoconsumerbinding%s*%)%)%.contains%(%s*\'scm event filter\'%s*%)%).*%{.*iex.+net%.webclient.+downloadstring.+http.*%}") ~= nil then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
+byte_to_dword = function(l_1_0)
+  -- function num : 0_0
+  local l_1_1 = 0
+  for l_1_5 = 4, 1, -1 do
+    l_1_1 = l_1_1 * 256 + (string.byte)(l_1_0, l_1_5)
   end
+  return l_1_1
 end
+
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = (pe.mmap_va)(l_0_0 - 2, 4)
+local l_0_2 = byte_to_dword(l_0_1)
+if (pe.mmap_va)(l_0_2, 2) ~= "MZ" then
+  return mp.CLEAN
+end
+local l_0_3 = (pe.mmap_va)(l_0_0 + 12, 4)
+local l_0_4 = byte_to_dword(l_0_3)
+if (pe.mmap_va)(l_0_4, 4) ~= "\000\000\255\255" then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

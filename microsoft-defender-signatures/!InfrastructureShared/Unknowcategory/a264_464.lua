@@ -3,14 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if ((string.lower)((bm.get_imagepath)())):find("svchost.exe") then
-  l_0_1 = (string.match)((this_sigattrlog[2]).utf8p1, "\\%l%l%l%l%l%l%l%l%.exe")
-  if l_0_1 ~= nil then
-    (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2107638873)
-    return mp.INFECTED
+-- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+  local l_0_0, l_0_1, l_0_2 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC33: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (MpCommon.QueryPersistContext)(l_0_0, "BitsadminTarget") then
+      (mp.ReportLowfi)(l_0_0, 1556043553)
+      return mp.INFECTED
+    end
+    return mp.CLEAN
   end
 end
-return mp.CLEAN
 

@@ -3,15 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
 if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = (string.lower)((mp.GetProcessCommandLine)(l_0_0.ppid))
-  if l_0_1 and l_0_2 and (string.find)(l_0_1, "\\system32\\cmd.exe", 1, true) and (string.find)(l_0_2, " /v /c ", 1, true) and (string.find)(l_0_2, " & set ", 1, true) and (string.find)(l_0_2, "! & !", 1, true) and (string.find)(l_0_2, ":~", 1, true) then
-    return mp.INFECTED
+  for l_0_5,l_0_6 in ipairs(l_0_0) do
+    if l_0_6.image_path ~= nil then
+      local l_0_7 = (string.lower)((MpCommon.PathToWin32Path)(l_0_6.image_path))
+      if (sysio.IsFileExists)(l_0_7) then
+        (bm.add_related_file)(l_0_7)
+      end
+    end
   end
 end
 do
-  return mp.CLEAN
+  if l_0_1 ~= nil then
+    for l_0_11,l_0_12 in ipairs(l_0_1) do
+      if l_0_12.image_path ~= nil then
+        local l_0_13 = (string.lower)((MpCommon.PathToWin32Path)(l_0_12.image_path))
+        if (sysio.IsFileExists)(l_0_13) and (mp.IsKnownFriendlyFile)(l_0_13, true, false) then
+          (bm.add_related_file)(l_0_13)
+        end
+      end
+    end
+  end
+  do
+    return mp.INFECTED
+  end
 end
 

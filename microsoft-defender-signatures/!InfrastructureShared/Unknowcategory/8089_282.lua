@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount >= 10 and pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
+if peattributes.ismsil == true and peattributes.isdll == true and peattributes.no_security == true and pehdr.AddressOfEntryPoint ~= 837630 then
   return mp.INFECTED
 end
 return mp.CLEAN

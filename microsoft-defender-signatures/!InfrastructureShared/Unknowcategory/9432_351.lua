@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.isexe == true and (mp.getfilesize)() < 1048000 then
+if mp.HSTR_WEIGHT >= 5 then
   return mp.INFECTED
+end
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_minipopups")
 else
-  if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true and (mp.getfilesize)() < 1048000 then
-    return mp.INFECTED
-  end
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_minipopups")
 end
 return mp.CLEAN
 

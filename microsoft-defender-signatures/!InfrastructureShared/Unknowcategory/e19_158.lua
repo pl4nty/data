@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:DownloadSponsor")
-return mp.INFECTED
+if peattributes.isexe then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+if peattributes.hasstandardentry then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

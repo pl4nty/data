@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 15 then
-  if mp.HSTR_WEIGHT <= 25 then
-    (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A2")
-  end
-  if mp.HSTR_WEIGHT > 25 then
-    (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A2X")
-  end
+if pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.getfilesize)() < 2048000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

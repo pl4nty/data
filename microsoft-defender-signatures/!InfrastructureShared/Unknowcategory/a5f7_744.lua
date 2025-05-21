@@ -3,22 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched or (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
-  local l_0_0, l_0_1 = (bm.get_process_relationships)()
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.image_path ~= nil then
-      local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-      local l_0_8 = (string.lower)(l_0_6.image_path)
-      if l_0_7 == 1 and ((string.find)(l_0_8, "\\cmd.exe", 1, true) or (string.find)(l_0_8, "\\powershell.exe", 1, true) or (string.find)(l_0_8, "\\powershell_ise.exe", 1, true) or (string.find)(l_0_8, "\\javaw.exe", 1, true)) then
-        return mp.CLEAN
-      end
-      return mp.INFECTED
-    end
-  end
+if peattributes.isdll and pehdr.NumberOfSections == 5 and pevars.epsec == 1 and not peattributes.no_exports and peattributes.no_tls and pehdr.SizeOfImage >= 135168 and pehdr.SizeOfImage <= 1048576 and (pesecs[pevars.epsec]).SizeOfRawData >= 81920 and (pesecs[pevars.epsec]).SizeOfRawData <= 655360 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (pesecs[pevars.epsec]).Name == ".text" then
+  (mp.set_mpattribute)("MpSimulateParanoid")
+  ;
+  (mp.set_mpattribute)("MpEnableCOM")
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
+  ;
+  (pe.reemulate)()
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
-end
+return mp.CLEAN
 

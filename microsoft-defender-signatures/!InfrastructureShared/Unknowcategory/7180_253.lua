@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[7]).matched then
-  (mp.changedetectionname)(805306431)
-else
-  if (hstrlog[8]).matched then
-    (mp.changedetectionname)(805306444)
-  end
+if (mp.get_mpattribute)("pea_hasexports") and (mp.getfilesize)() >= 6242304 and (mp.getfilesize)() < 6246400 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Downer")
+(mp.set_mpattribute)("HSTR:Win32/Moure")
 return mp.INFECTED
 

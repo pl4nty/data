@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr ~= 4198400 then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 19, "3\246")
 ;
-(pe.set_peattribute)("hstr_exhaustive", true)
+(pe.mmap_patch_va)(pevars.sigaddr + 30, "\000\001\000")
 return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isexe and (mp.get_mpattribute)("Lua:NoVerinfo") then
+if (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or (hstrlog[7]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

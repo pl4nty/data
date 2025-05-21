@@ -3,9 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(mp.GetParentProcInfo)
-if l_0_1 and (string.find)((l_0_1.image_path):lower(), "solarwinds.businesslayerhost.exe", 1, true) then
-  return mp.LOWFI
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  local l_0_2 = nil
+  if #{l_0_2:match("/D:(%d+)%.(%d+)%.(%d+)%.(%d+)")} == 4 then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
-return mp.CLEAN
 

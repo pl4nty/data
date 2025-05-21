@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1048576 then
-  return mp.CLEAN
+if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 238592 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
+  if mp.HSTR_WEIGHT == 21 then
+    return mp.SUSPICIOUS
+  end
 end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
-end
-return mp.INFECTED
+return mp.CLEAN
 

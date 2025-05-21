@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-return mp.CLEAN
+(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+return mp.INFECTED
 

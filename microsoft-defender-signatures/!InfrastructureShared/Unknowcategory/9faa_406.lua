@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_packed") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Name == ".htext" and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096480 and ((pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3758096448 or (pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3791650880) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

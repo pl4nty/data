@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Subsystem == 3 then
+if peattributes.no_security then
   return mp.INFECTED
 end
 return mp.CLEAN

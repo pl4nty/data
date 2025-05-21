@@ -3,28 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-local l_0_6 = ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_RESOURCE]).Size
-if l_0_6 > 100000 then
-  local l_0_7, l_0_8 = (pe.get_exports)()
-  if l_0_7 > 200 then
-    local l_0_9 = nil
-    for l_0_13 = 1, l_0_7 do
-      if l_0_9 ~= nil and (l_0_8[l_0_13]).rva == l_0_9 then
-        return mp.INFECTED
-      end
-      if (l_0_8[l_0_13]).fn == 2750976013 or (l_0_8[l_0_13]).fn == 2955234196 then
-        l_0_9 = (l_0_8[l_0_13]).rva
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1 = (bm.get_process_relationships)()
+    for l_0_5,l_0_6 in ipairs(l_0_0) do
+      if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)((string.lower)(l_0_6.image_path), "\\explorer.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "\\svchost.exe", 1, true)) then
+        return mp.CLEAN
       end
     end
+    return mp.INFECTED
   end
-end
-do
   return mp.CLEAN
 end
 

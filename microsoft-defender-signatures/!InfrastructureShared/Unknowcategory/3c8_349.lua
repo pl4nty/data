@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = this_sigattrlog[14]
+local l_0_0 = this_sigattrlog[13]
 do
   if l_0_0 and l_0_0.matched then
     local l_0_1 = (MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%[cmdembedded%]$") == nil then
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() < 160000 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

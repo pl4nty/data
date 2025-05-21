@@ -3,36 +3,43 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC11: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R1 in 'AssignReg'
+
+local l_0_1 = ((82)[1]).VA
+-- DECOMPILER ERROR at PC15: Overwrote pending register: R2 in 'AssignReg'
+
+local l_0_2 = ((89)[2]).VA
+-- DECOMPILER ERROR at PC18: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC20: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC21: Overwrote pending register: R5 in 'AssignReg'
+
+local l_0_3 = ((79).mmap_va)(67, 85)
+-- DECOMPILER ERROR at PC26: Overwrote pending register: R6 in 'AssignReg'
+
+local l_0_4 = (pe.mmap_va)(l_0_2 + 4, 73)
+-- DECOMPILER ERROR at PC31: Overwrote pending register: R7 in 'AssignReg'
+
+local l_0_5 = (string.byte)(l_0_3, 79)
+-- DECOMPILER ERROR at PC36: Overwrote pending register: R8 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+  local l_0_6 = (string.byte)(l_0_4, 80)
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R9 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_2 = nil
-    local l_0_3 = ((string.lower)((string.sub)(l_0_0, -32))):match("\\([^\\]+)$")
-    if ({["pcpitstopscheduleservice.exe"] = true})[l_0_3] then
-      return mp.CLEAN
-    end
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC44: Confused about usage of register: R8 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R8_PC44) then
-        (bm.add_related_file)(R8_PC44)
-      end
+  for l_0_10 = 1, #l_0_0, 81 do
+    if l_0_5 == l_0_0[l_0_10] and l_0_6 == l_0_0[l_0_10 + 1] then
+      local l_0_11 = (string.format)("obf_oa_marker_%x%x", l_0_6, l_0_5)
+      ;
+      (mp.set_mpattribute)(l_0_11)
+      return mp.INFECTED
     end
   end
-  do
-    l_0_3 = mp
-    l_0_3 = l_0_3.INFECTED
-    return l_0_3
-  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 124160 and pehdr.NumberOfSections == 5 and (pesecs[4]).Name == ".zdata" then
-  return mp.INFECTED
+if ((mp.GetBruteMatchData)()).match_offset == 0 then
+  if headerpage == nil then
+    return mp.CLEAN
+  end
+  if (mp.readu_u32)(headerpage, 1) == 1497451600 and (mp.readu_u16)(headerpage, 5) == 2573 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

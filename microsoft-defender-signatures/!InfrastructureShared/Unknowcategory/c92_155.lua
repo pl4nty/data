@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:OneInstaller")
+(mp.set_mpattribute)("PUA:Block:AmonetizeWin")
 return mp.INFECTED
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 8, "êê")
-return mp.INFECTED
+if ((mp.GetBruteMatchData)()).match_offset == 0 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

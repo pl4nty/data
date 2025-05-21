@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 29, "ÇE")
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\199\005")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr + 36, "")
+(pe.mmap_patch_va)(pevars.sigaddr + 21, "")
 return mp.INFECTED
 

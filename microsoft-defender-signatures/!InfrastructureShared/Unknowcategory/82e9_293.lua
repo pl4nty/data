@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 and (mp.get_mpattribute)("DOTNET_Reactor_Obfuscator") then
+if mp.HSTR_WEIGHT >= 36 then
   return mp.INFECTED
+end
+if (mp.bitand)(mp.HSTR_WEIGHT, 15) >= 3 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_injector")
 end
 return mp.CLEAN
 

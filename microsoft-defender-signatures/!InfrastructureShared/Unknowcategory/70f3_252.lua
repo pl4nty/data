@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.isdll == false and pehdr.NumberOfSections == 9 then
+if peattributes.ismsil == true and pehdr.NumberOfSections == 3 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

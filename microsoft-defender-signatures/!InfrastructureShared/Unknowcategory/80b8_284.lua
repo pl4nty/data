@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) and ((hstrlog[4]).matched or (hstrlog[5]).matched) then
+if (hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

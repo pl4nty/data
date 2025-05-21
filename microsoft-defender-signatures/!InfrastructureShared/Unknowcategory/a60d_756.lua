@@ -19,8 +19,8 @@ if (this_sigattrlog[1]).matched then
   end
 end
 do
-  if (this_sigattrlog[3]).matched then
-    local l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2))
+  if (this_sigattrlog[2]).matched then
+    local l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2))
     if l_0_2 == nil then
       return mp.CLEAN
     end

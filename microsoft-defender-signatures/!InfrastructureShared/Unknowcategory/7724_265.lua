@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("BM_UnsignedDll") and peattributes.ismsil == true then
+if (mp.getfilesize)() < 1024000 and pehdr.NumberOfSections == 3 and peattributes.ismsil == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,19 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (mp.readu_u32)(l_0_0, 23)
+local l_0_2 = (mp.readu_u32)(l_0_0, 17)
+local l_0_3 = (pe.get_api_id)((mp.readu_u32)((pe.mmap_va)(l_0_1, 4), 1))
+if l_0_3 ~= 946125367 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
+local l_0_4 = (pe.mmap_va)(l_0_2, 32)
+local l_0_5 = (string.find)(l_0_4, "c\000:\000\\\000m\000y\000a\000p\000p\000", 1, true)
+if not l_0_5 then
   return mp.CLEAN
 end
-if (string.sub)(l_0_1, -5, -1) == ",WW50" or (string.sub)(l_0_1, -6, -1) == ", WW50" or (string.sub)(l_0_1, -5, -1) == ",N115" or (string.sub)(l_0_1, -6, -1) == ", N115" then
-  if l_0_0 ~= nil then
-    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
-  end
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 30, "êê")
+return mp.INFECTED
 

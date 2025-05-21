@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[2]).matched then
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if (string.find)(l_0_1, "\\\\.*%.bat", 1, false) then
   return mp.CLEAN
 end
-local l_0_0 = (this_sigattrlog[2]).utf8p2
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if #l_0_0 >= 600 and #l_0_0 <= 2500 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

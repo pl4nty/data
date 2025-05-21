@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true or peattributes.isdll == true and (mp.getfilesize)() <= 35463936 and (mp.getfilesize)() >= 25463936 then
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 21, 4), 1) > 40960 then
   return mp.INFECTED
 end
 return mp.CLEAN

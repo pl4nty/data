@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative or peattributes.isvbpcode then
+if peattributes.x86_image and peattributes.no_exports then
   return mp.INFECTED
 end
 return mp.CLEAN

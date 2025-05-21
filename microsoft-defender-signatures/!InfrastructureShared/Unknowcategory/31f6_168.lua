@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata then
-  return mp.INFECTED
+if pehdr.TimeDateStamp >= 1436340352 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

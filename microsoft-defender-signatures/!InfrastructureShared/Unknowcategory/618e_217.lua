@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:VSearch.E")
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 4 and mp.HSTR_WEIGHT < 9 then
+  (mp.set_mpattribute)("HSTR:Dradkiter.A1")
 end
-return mp.LOWFI
+return mp.INFECTED
 

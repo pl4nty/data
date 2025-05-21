@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not (hstrlog[2]).matched and not (hstrlog[3]).matched then
-  return mp.CLEAN
-end
-if not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched then
-  return mp.CLEAN
+if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil and (this_sigattrlog[5]).utf8p2 ~= nil then
+  (bm.add_related_file)((this_sigattrlog[5]).utf8p1)
+  ;
+  (bm.add_related_file)((this_sigattrlog[5]).utf8p2)
 end
 return mp.INFECTED
 

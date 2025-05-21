@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Compete")
+(mp.set_mpattribute)("PUA:Block:Tugspay")
 return mp.INFECTED
 

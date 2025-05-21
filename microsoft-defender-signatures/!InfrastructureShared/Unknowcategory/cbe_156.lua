@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:DownloadAdmin")
-return mp.INFECTED
+if (mp.getfilesize)() < 350000 then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

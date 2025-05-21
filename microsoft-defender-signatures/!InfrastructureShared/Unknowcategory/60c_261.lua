@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if MpCommon.SECURITY_MANDATORY_SYSTEM_RID <= ((bm.get_current_process_startup_info)()).integrity_level then
-  return mp.CLEAN
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((bm.get_current_process_startup_info)()).integrity_level then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

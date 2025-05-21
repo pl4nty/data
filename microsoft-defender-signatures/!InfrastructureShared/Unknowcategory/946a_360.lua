@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 and (string.find)((string.lower)(l_0_0), "\\servicing\\packages\\microsoft%-windows%-client%-desktop%-required%-package.+%.mum") then
-  (mp.set_mpattribute)("SelectableWinDefendPkgInServicing")
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("\\program files", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

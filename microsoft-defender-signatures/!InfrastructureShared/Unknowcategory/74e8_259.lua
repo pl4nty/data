@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.getfilesize)() > 30000000 and pehdr.Magic == 523 then
+if (mp.get_mpattribute)("pea_isdll") and ((pe.get_versioninfo)()).InternalName == "RunPE.dll" then
   return mp.INFECTED
 end
 return mp.CLEAN

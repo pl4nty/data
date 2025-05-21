@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 19 then
+if mp.HSTR_WEIGHT >= 16 then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT >= 13 then
-  (mp.set_mpattribute)("HSTR:BrowserModifier:Win32/Haycurst.A!Cby")
+if mp.HSTR_WEIGHT >= 12 then
+  (mp.set_mpattribute)("HSTR:BrowserModifier:Win32/CrassercueSP.A")
 end
 if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
   (mp.set_mpattribute)("do_exhaustivehstr_rescan")

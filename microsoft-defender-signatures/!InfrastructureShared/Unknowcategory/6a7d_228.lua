@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 10 then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  (bm.add_related_process)(l_0_6.ppid)
 end
-;
-(mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
-return mp.CLEAN
+return mp.INFECTED
 

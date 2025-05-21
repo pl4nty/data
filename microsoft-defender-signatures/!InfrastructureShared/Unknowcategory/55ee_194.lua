@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:KSRecorder.C")
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,7 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (pe.isdynamic_va)(pevars.sigaddr) and (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 then
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Colisi")
+if mp.HSTR_WEIGHT >= 4 then
   return mp.INFECTED
 end
 return mp.CLEAN

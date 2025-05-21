@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("AntiEmu:LoadIconW")
+(mp.set_mpattribute)("//ClearLockPWFile")
 return mp.INFECTED
 

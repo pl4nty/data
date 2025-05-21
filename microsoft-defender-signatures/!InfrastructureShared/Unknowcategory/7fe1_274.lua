@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports and (hstrlog[1]).VA - (hstrlog[2]).VA < 9472 then
+if peattributes.isexe == true and (pesecs[2]).Name == ".sedata" and (pesecs[2]).Characteristics == 1744830496 then
   return mp.INFECTED
 end
 return mp.CLEAN

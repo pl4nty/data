@@ -3,13 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    if (string.find)(l_0_0, "/u ", 1, true) and (string.find)(l_0_0, "/i:http", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (pe.get_regval)(pe.REG_EBP) - 328
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+local l_0_2 = (mp.readu_u32)(l_0_1, 1)
+if l_0_2 ~= 268675836 then
+  (mp.set_mpattribute)("PEBMPAT:AntiEmuCheckConstantMemAdd")
 end
+return mp.CLEAN
 

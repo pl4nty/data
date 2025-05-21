@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:CGMiner")
+(mp.set_mpattribute)("PUA:Block:Vintall")
 return mp.INFECTED
 

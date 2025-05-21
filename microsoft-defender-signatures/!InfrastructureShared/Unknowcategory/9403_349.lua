@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  (bm.request_SMS)(l_0_0.ppid, "M")
-end
-do
-  if (this_sigattrlog[3]).matched == true then
-    local l_0_1 = (this_sigattrlog[3]).ppid
-    if l_0_1 ~= nil and #l_0_1 > 1 then
-      (bm.request_SMS)(l_0_1, "M")
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 159744 and pehdr.NumberOfSections == 9 and (pesecs[6]).Name == "CONST" then
   return mp.INFECTED
 end
+return mp.CLEAN
 

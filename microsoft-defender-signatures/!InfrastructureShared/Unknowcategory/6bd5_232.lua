@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == false then
-  return mp.CLEAN
+if (mp.get_mpattribute)("PACKED_WITH:[MSILRES:_]") and (mp.get_mpattribute)("pea_no_security") then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("PUA:HSTR:OnePlatformInstaller")
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,24 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == "" or l_0_0 == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.GetParentProcInfo)()
-if l_0_1 ~= nil then
-  local l_0_2 = (string.lower)(l_0_1.image_path)
-  local l_0_3 = ((string.sub)(l_0_2, -15)):match("\\([^\\]+)$")
-  local l_0_4 = {}
-  l_0_4["winword.exe"] = true
-  l_0_4["excel.exe"] = true
-  l_0_4["powerpnt.exe"] = true
-  l_0_4["outlook.exe"] = true
-  if l_0_4[l_0_3] then
-    return mp.INFECTED
-  end
-end
 do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (this_sigattrlog[1]).utf8p2
+    if l_0_0 and (string.len)(l_0_0) > 48 and (string.find)(l_0_0, "%.%.\\") then
+      l_0_0 = (string.lower)(l_0_0)
+      if (string.find)(l_0_0, "javascript:", 2, true) or (string.find)(l_0_0, "vbscript:", 2, true) then
+        return mp.INFECTED
+      end
+    end
+  end
   return mp.CLEAN
 end
 

@@ -3,18 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if l_0_1 ~= nil then
+  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
+  for l_0_6,l_0_7 in ipairs(l_0_2) do
+    if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
+      (bm.add_related_file)(l_0_7)
+      return mp.INFECTED
+    end
+  end
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
+do
+  l_0_2 = mp
+  l_0_2 = l_0_2.CLEAN
+  return l_0_2
 end
-l_0_1 = (string.lower)(l_0_1)
-local l_0_2 = "\\\\exclusions\\\\paths\\\\*[\'\"\\s]+\\/v[\'\"\\s]+(?:c:\\\\+programdata\\\\*|%programdata%)(?:[\\s\'\"]+|$)"
-if (MpCommon.StringRegExpSearch)(l_0_2, l_0_1) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

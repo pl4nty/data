@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 8)
+if (mp.readu_u32)(l_0_0, 5) < 589824 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

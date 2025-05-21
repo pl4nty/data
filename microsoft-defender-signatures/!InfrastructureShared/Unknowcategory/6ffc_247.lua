@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 10240000 then
-  return mp.CLEAN
+if pehdr.NumberOfSections ~= 3 then
+  return mp.LOWFI
 end
-if pehdr.Subsystem == 11 or pehdr.Subsystem == 12 then
-  return mp.INFECTED
+if (pesecs[2]).Name ~= ".scot" then
+  return mp.LOWFI
 end
-return mp.CLEAN
+return mp.SUSPICIOUS
 

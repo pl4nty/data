@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:FirewallBypassList") then
+if peattributes.ismsil == true and peattributes.isdll == false then
   return mp.INFECTED
 end
 return mp.CLEAN

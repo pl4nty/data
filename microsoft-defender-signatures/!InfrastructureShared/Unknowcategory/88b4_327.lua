@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 325888 then
-  (pe.reemulate)()
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 6, 1)
+;
+(pe.set_regval)(pe.REG_EAX, (string.byte)(l_0_0, 1))
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\144")
+return mp.INFECTED
 

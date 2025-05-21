@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if peattributes.isexe and peattributes.no_security and #(pe.get_exports)() == 1 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

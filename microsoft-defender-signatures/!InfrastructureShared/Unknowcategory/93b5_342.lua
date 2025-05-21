@@ -3,10 +3,14 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)(15437, 4)
-if (mp.readu_u32)(l_0_0, 1) == 4018468997 and l_0_0 ~= "ÆÐÔÇÖÝ›ÛÔØÐÄÀÐÇÌ›ÖÚØ" then
-  return mp.INFECTED
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Features")
+do
+  if l_0_0 then
+    local l_0_1 = (sysio.GetRegValueAsDword)(l_0_0, "TamperProtection")
+    if l_0_1 and (mp.bitand)(l_0_1, 1) == 1 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

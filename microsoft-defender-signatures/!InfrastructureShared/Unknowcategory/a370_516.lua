@@ -3,7 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if ((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or pevars.epsec ~= 1 or (pesecs[pevars.epsec]).Name ~= ".text" or (pesecs[2]).Name ~= ".data" or (pesecs[3]).Name ~= ".rsrc" or not peattributes.no_decription or peattributes.suspicious_image_version) then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "firefox", 1, true) or (string.find)(l_0_0, "backup", 1, true) or (string.find)(l_0_0, "sync", 1, true) or (string.find)(l_0_0, "waterfox", 1, true) then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "\\appdata\\", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

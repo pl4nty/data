@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("SIGATTR:MPK64")
-else
-  ;
-  (mp.set_mpattribute)("SIGATTR:MPK32")
+if pehdr.NumberOfSections == 10 and (pesecs[8]).Name == ".crt1" then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

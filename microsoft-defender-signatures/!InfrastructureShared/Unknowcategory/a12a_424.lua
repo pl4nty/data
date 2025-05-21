@@ -3,17 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[6]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!A")
+if (nri.GetHttpCommand)() ~= nri.HTTP_POST then
   return mp.CLEAN
 end
-if (hstrlog[7]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!B")
-  return mp.CLEAN
+local l_0_0 = (string.lower)((nri.GetHttpRequestHeader)("User-Agent"))
+if l_0_0 == "winhttp" then
+  (nri.AddTelemetry)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH))
+  return mp.INFECTED
 end
-if (hstrlog[8]).matched then
-  (mp.set_mpattribute)("HSTR:Virus:Win64/Viknok.gen!C")
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

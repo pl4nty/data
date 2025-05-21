@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Imobie.BA")
+if (versioning.IsSeville)() and (versioning.GetCloudBlockLevel)() >= 4 then
   return mp.INFECTED
 end
 return mp.LOWFI

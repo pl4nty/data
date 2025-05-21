@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if (string.find)(l_0_0, "\\programdata\\", 1, true) then
-      return mp.INFECTED
-    end
-  end
+if not peattributes.isdll then
   return mp.CLEAN
 end
+if (pe.get_exports)() ~= 1 then
+  return mp.CLEAN
+end
+if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "main" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

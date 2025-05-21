@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 5 then
+if mp.HSTR_WEIGHT > 6 then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT > 4 then
+if mp.HSTR_WEIGHT > 5 then
   return mp.SUSPICIOUS
 end
 ;

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RF!MTB") or (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RG!MTB") then
+if pehdr.AddressOfEntryPoint == 34224 and pehdr.Magic == 523 and pehdr.SizeOfImage == 1249280 then
   return mp.INFECTED
 end
 return mp.CLEAN

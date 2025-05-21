@@ -3,19 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
-  return mp.CLEAN
-end
-do
-  if peattributes.isexe == true and pehdr.NumberOfSections == 7 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = ((string.sub)(l_0_1, -15)):match("\\([^\\]+)$")
+  local l_0_3 = {}
+  l_0_3["svchost.exe"] = true
+  l_0_3["taskeng.exe"] = true
+  l_0_3["taskhostw.exe"] = true
+  if l_0_3[l_0_2] then
     return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

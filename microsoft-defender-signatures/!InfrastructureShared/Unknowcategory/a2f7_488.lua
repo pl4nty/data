@@ -3,28 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  if (string.find)(l_0_1, "schtasks.exe", 1, true) and l_0_0.ppid ~= nil then
-    local l_0_2 = (mp.GetParentProcInfo)(l_0_0.ppid)
-    if l_0_2 ~= nil then
-      (MpCommon.RequestSmsOnProcess)(l_0_2.ppid, MpCommon.SMS_SCAN_MED)
-      ;
-      (mp.SMSAsyncScan)(l_0_2.ppid)
-      return mp.LOWFI
-    end
-  else
-    do
-      do
-        ;
-        (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
-        ;
-        (mp.SMSAsyncScan)(l_0_0.ppid)
-        do return mp.LOWFI end
-        return mp.LOWFI
-      end
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.find)(l_0_0, "\\program files", 1, true) then
+  return mp.CLEAN
 end
+if not (MpCommon.QueryPersistContext)(l_0_0, "SuspCredEnumerateAttempt") then
+  (MpCommon.AppendPersistContext)(l_0_0, "SuspCredEnumerateAttempt", 0)
+end
+if not (MpCommon.QueryPersistContext)(l_0_0, "queryAgePrev") then
+  (MpCommon.AppendPersistContext)(l_0_0, "queryAgePrev", 0)
+end
+return mp.INFECTED
 

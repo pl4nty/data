@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 5 and mp.HSTR_WEIGHT < 10 then
-  (mp.set_mpattribute)("HSTR:Torwofun.A")
-else
-  if mp.HSTR_WEIGHT == 5 then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan_torwofun_a1")
-  end
+if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 98304 and (mp.getfilesize)() < 126976 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

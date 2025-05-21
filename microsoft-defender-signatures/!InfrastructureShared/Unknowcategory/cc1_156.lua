@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:PriceFountain")
+(mp.set_mpattribute)("PUA:Block:DownloadAdmin")
 return mp.INFECTED
 

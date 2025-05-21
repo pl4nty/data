@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if pehdr.TimeDateStamp ~= 0 then
-    local l_0_0 = (MpCommon.GetCurrentTimeT)()
-    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 86400 then
-      return mp.INFECTED
-    end
-  end
+if not peattributes.hasappendeddata then
   return mp.CLEAN
 end
+if not peattributes.isvbpcode then
+  return mp.CLEAN
+end
+if not peattributes.dirty_wx_branch then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

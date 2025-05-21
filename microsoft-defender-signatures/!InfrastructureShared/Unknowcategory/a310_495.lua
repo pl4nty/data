@@ -3,22 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p1)
-  if l_0_0 ~= nil then
-    local l_0_1, l_0_2 = nil, nil
-    l_0_1 = (string.match)(l_0_0, "\\microsoft\\(.+)\\(.+)%.exe")
-    if l_0_1 and l_0_2 then
-      if l_0_1 == l_0_2 and (string.len)(l_0_2) > 3 then
-        return mp.INFECTED
-      end
-      ;
-      (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1), 1966641469)
-      return mp.INFECTED
-    end
-  end
-end
-do
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\184\r\024\141>\144")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

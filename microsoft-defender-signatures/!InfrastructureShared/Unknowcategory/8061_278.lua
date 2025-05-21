@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") and peattributes.isexe == true and (mp.getfilesize)() < 2048000 then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("\\temp\\", 1, true) ~= nil and l_0_0:find("\\system", 1, true) == nil then
   return mp.INFECTED
 end
 return mp.CLEAN

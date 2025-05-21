@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.no_security == true and pehdr.NumberOfSections == 4 then
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT >= 1 then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
 end
 return mp.CLEAN
 

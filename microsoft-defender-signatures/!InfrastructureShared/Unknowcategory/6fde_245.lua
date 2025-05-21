@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilename)()):match("(Ole Stream 0).*%.scr") and peattributes.isexe then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.x86_image then
+  return mp.CLEAN
+end
+if not peattributes.hasexports then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

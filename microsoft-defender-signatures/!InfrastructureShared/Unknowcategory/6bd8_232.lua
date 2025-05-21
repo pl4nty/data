@@ -1,0 +1,12 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\Unknowcategory\6bd8_232.luac 
+
+-- params : ...
+-- function num : 0
+if peattributes.isexe == false then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("PUA:HSTR:OnePlatformInstaller")
+return mp.INFECTED
+

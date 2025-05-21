@@ -10,10 +10,10 @@ if not peattributes.isexe then
   return mp.CLEAN
 end
 if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345cn")
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_haozip")
 else
   ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345cn")
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_haozip")
 end
 return mp.CLEAN
 

@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "fabricrouter", 1, true) or (string.find)(l_0_0, "game", 1, true) or (string.find)(l_0_0, "\\kodi", 1, true) then
+if pevars.sigaddr ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
   return mp.CLEAN
 end
-return mp.INFECTED
+if (pe.query_import)(pe.IMPORT_STATIC, 214667374) and (mp.crc32)(-1, epcode, 17, 17) == 3988924912 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if mp.HSTR_WEIGHT >= 4 then
+  if (hstrlog[4]).matched then
+    (mp.changedetectionname)(805306381)
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
-  return mp.LOWFI
+if (string.find)((mp.getfilename)(), "(Rtf0000)", 1, true) then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

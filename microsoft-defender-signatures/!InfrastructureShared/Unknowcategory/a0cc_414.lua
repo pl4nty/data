@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 72 and epcode[2] == 137 and peattributes.isexe == true and pehdr.AddressOfEntryPoint == 314640 and (pesecs[6]).Name == ".reloc" and (pesecs[6]).Characteristics == 1107296320 then
+local l_0_0 = (mp.bitand)(pevars.sigaddr + (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 15, 4), 1) + 19, 4294967295)
+if (pe.vm_search)(l_0_0, l_0_0 + 12, "ƒø\004u\144\001\001è\001\004\129\005\144\000", nil, pe.VM_SEARCH_BM) == l_0_0 then
   return mp.INFECTED
 end
 return mp.CLEAN

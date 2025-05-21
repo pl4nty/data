@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.epatstartentrysect then
-  return mp.SUSPICIOUS
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "websettings.xml.rels") ~= nil then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

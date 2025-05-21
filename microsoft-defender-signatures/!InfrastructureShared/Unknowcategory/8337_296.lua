@@ -3,16 +3,11 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-  ;
-  (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
-  return mp.INFECTED
+if not (hstrlog[2]).matched and not (hstrlog[3]).matched then
+  return mp.CLEAN
 end
+if not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

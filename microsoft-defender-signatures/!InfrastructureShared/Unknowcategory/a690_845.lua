@@ -3,31 +3,30 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsHipsRuleEnabled)("3b576869-a4ec-4529-8536-b80a7769e899") ~= true then
+if peattributes.isdll then
   return mp.CLEAN
 end
-local l_0_0 = "enghipscpy:blockaccess:3b576869-a4ec-4529-8536-b80a7769e899"
-local l_0_1 = ""
-local l_0_2 = ""
-if (this_sigattrlog[5]).matched then
-  l_0_1 = (this_sigattrlog[5]).utf8p1
-  l_0_2 = (this_sigattrlog[5]).utf8p2
-  if l_0_1 == nil or l_0_1 == "" or l_0_2 == nil or l_0_2 == "" then
-    return mp.CLEAN
-  end
-else
+if (mp.get_mpattribute)("pea_isdriver") then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "%", 1, true) ~= nil or (string.find)(l_0_2, "%", 1, true) ~= nil then
+if not (mp.get_mpattribute)("Lua:VirTool:Win32/VMProtect.A") then
   return mp.CLEAN
 end
-local l_0_3 = {}
-l_0_3.exe = true
-l_0_3.dll = true
-l_0_3.sys = true
-local l_0_4 = (string.lower)((string.match)(l_0_1, "%.([^%.]+)$"))
-if l_0_3[l_0_4] == true and not (MpCommon.QueryPersistContext)(l_0_2, l_0_0) then
-  (MpCommon.AppendPersistContext)(l_0_2, l_0_0, 0)
+if (mp.getfilesize)() < 5242880 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == "generator.exe" or l_0_0 == "g1.exe" then
+  (mp.set_mpattribute)("HSTR:GGenerator.D")
+end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1:find("\\g1\\", 1, true) then
+  (mp.set_mpattribute)("HSTR:GGenerator.D")
+end
+if l_0_1:find("\\g1-beta\\", 1, true) then
+  return mp.INFECTED
+end
+if l_0_1:find("g1\\generator\\", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

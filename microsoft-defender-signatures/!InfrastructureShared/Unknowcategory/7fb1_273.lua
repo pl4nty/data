@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a")
-return mp.INFECTED
+if (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

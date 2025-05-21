@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 9 then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(mp.set_mpattribute)("PUA:Block:ClaymoreDual")
+return mp.INFECTED
 

@@ -3,16 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)(tostring(headerpage))
-local l_0_1, l_0_2 = (string.gsub)(l_0_0, "&#x0a;", "")
-local l_0_3, l_0_4 = (string.gsub)(l_0_0, "&#x0d;", "")
-if l_0_2 == 0 then
-  return mp.CLEAN
-end
-if l_0_4 == 0 then
-  return mp.CLEAN
-end
-if l_0_2 > 50 and l_0_4 > 50 then
+if (mp.get_mpattribute)("NID:Trojan:Win32/RopProof.RPX!MTB") and (pesecs[7]).Name == ".ropf" and (mp.getfilesize)() < 85000 and peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 3695440085)
-return mp.INFECTED
+if (mp.get_mpattribute)("InEmail") then
+  (mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
+  return mp.INFECTED
+end
+return mp.CLEAN
 

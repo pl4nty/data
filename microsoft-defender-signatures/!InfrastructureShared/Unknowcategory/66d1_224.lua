@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 3, "\001\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 51, "\001\000")
-return mp.INFECTED
+if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

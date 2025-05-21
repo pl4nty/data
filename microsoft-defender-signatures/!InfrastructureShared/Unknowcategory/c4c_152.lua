@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Pokavampo")
-return mp.INFECTED
+(mp.set_mpattribute)("VirTool:Win32/Sipiel.A")
+return mp.LOWFI
 

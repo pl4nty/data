@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
-  return mp.CLEAN
+if mp.HSTR_CALLER_SMS == (mp.GetHSTRCallerId)() then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

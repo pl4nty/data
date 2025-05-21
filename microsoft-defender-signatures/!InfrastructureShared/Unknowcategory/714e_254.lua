@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED_WITH:(Base64)") and ((mp.getfilename)()):match(".dll") then
+local l_0_0 = ((mp.getfilename)(mp.FILEPATH_QUERY_FULL)):lower()
+if not l_0_0:find("assets/", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isvbpcode == true or peattributes.isvbnative == true) and peattributes.no_security == true then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 > 700000 and l_0_0 < 1600000 then
   return mp.INFECTED
 end
 return mp.CLEAN

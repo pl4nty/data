@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 ~= nil and (string.find)((string.lower)((mp.getfilename)()), ".php") and l_0_0 > 40000 and l_0_0 < 48000 then
-  return mp.INFECTED
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 5, 5)
+if (mp.readu_u32)(l_0_0, 2) < 3145728 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,6 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 32), "t", 1, true) - 1, "\235")
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 11)
+if (mp.readu_u32)(l_0_0, 7) < 4194304 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

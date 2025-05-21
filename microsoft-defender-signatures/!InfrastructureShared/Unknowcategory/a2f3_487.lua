@@ -3,17 +3,7 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC55: Unhandled construct in 'MakeBoolean' P3
-
-if (peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096448) or (pesecs[pehdr.NumberOfSections]).Characteristics == 3791650816 then
+if pehdr.NumberOfSections == 5 and pevars.epsec == 1 and (pesecs[pevars.epsec]).Name == ".text" and (pesecs[pevars.epsec]).SizeOfRawData >= 237568 and (pesecs[pevars.epsec]).SizeOfRawData <= 393216 and (pesecs[pehdr.NumberOfSections]).Name == ".reloc" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData >= 9216 and (pesecs[pehdr.NumberOfSections]).SizeOfRawData <= 12288 then
   return mp.INFECTED
 end
 return mp.CLEAN

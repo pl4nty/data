@@ -3,28 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0["winword.exe"] = true
-l_0_0["excel.exe"] = true
-l_0_0["powerpnt.exe"] = true
-l_0_0["outlook.exe"] = true
-local l_0_1 = (mp.GetParentProcInfo)()
-do
-  if l_0_1 ~= nil then
-    local l_0_2 = (string.lower)(l_0_1.image_path)
-    if l_0_0[l_0_2:match("([^\\]+)$")] then
-      return mp.INFECTED
-    end
-  end
-  local l_0_3 = (mp.GetParentProcInfo)(l_0_1.ppid)
-  do
-    if l_0_3 ~= nil then
-      local l_0_4 = (string.lower)(l_0_3.image_path)
-      if l_0_0[((string.sub)(l_0_4, -15)):match("\\([^\\]+)$")] then
-        return mp.INFECTED
-      end
-    end
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
+if (string.lower)((string.match)(l_0_0.image_path, "\\([^\\]+)$")) ~= "razerinstaller.exe" then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0.ppid)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
+end
+if (string.find)((string.lower)(l_0_1), "razerinstaller%.exe[^/]+/showdevice$") == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

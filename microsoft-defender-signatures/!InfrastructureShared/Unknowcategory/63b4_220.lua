@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[5]).Name == ".V1" then
+if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") then
   return mp.INFECTED
 end
 return mp.CLEAN

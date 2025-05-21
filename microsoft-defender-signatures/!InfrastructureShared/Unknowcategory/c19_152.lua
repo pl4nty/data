@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Prepscram")
+(mp.set_mpattribute)("PUA:Block:OpenCandy")
 return mp.INFECTED
 

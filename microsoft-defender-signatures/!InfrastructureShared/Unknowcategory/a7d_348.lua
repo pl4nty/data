@@ -3,19 +3,16 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[15]).matched and (this_sigattrlog[15]).wp2 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (string.find)(l_0_0, "/logrotate", 1, true) then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
+if l_0_0.image_path == nil or l_0_0.image_path == "" then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)(l_0_0.image_path)
+if l_0_1 ~= nil and (string.find)(l_0_1, "/usr/bin/dpkg", 1, true) == 1 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

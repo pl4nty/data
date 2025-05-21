@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RW!MTB") and (mp.getfilesize)() < 250000 and (mp.getfilesize)() > 220000 and peattributes.isexe then
-  return mp.INFECTED
+do
+  if peattributes.isdll and peattributes.hasexports then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 122880 and l_0_0 < 358400 and (pe.get_exports_count)() == 1 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

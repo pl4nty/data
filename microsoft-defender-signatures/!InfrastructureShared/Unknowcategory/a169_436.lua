@@ -3,12 +3,34 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Adware:Win32/ZoomyLib.E")
-if (mp.bitand)(mp.HSTR_WEIGHT, 64) > 0 and (mp.bitand)(mp.HSTR_WEIGHT, 56) > 0 and (mp.bitand)(mp.HSTR_WEIGHT, 7) > 0 then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+  end
+  -- DECOMPILER ERROR at PC15: Overwrote pending register: R1 in 'AssignReg'
+
+  do
+    if (this_sigattrlog[3]).matched then
+      local l_0_2 = nil
+    end
+    -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC22: Confused about usage of register: R0 in 'UnsetPending'
+
+    if l_0_2 ~= nil and nil ~= nil then
+      local l_0_1 = (string.lower)(l_0_2)
+      -- DECOMPILER ERROR at PC27: Confused about usage of register: R1 in 'UnsetPending'
+
+      local l_0_3 = (string.lower)(nil)
+      if l_0_1:find("\\appdata\\", 1, true) and l_0_1:match("(.+\\)([^\\]+)$") == l_0_3:match("(.+\\)([^\\]+)$") then
+        return mp.INFECTED
+      end
+    end
+    do
+      return mp.CLEAN
+    end
+  end
 end
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
-return mp.CLEAN
 

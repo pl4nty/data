@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (pesecs[4]).Name == ".bss" and (pesecs[4]).Characteristics == 3221225536 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("InEmail") then
+  if mp.HSTR_WEIGHT >= 21 then
+    return mp.INFECTED
+  else
+    return mp.LOWFI
+  end
+else
+  if mp.HSTR_WEIGHT >= 21 then
+    return mp.LOWFI
+  end
 end
 return mp.CLEAN
 

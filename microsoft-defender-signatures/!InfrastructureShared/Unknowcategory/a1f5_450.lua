@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 4000 then
+local l_0_0 = (this_sigattrlog[1]).utf8p2
+if not l_0_0 then
   return mp.CLEAN
 end
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+l_0_0 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+if not l_0_0 then
+  return mp.CLEAN
 end
-if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+for l_0_4,l_0_5 in ipairs(l_0_0) do
+  if l_0_5 and (sysio.IsFileExists)(l_0_5) and not (mp.IsKnownFriendlyFile)(l_0_5, false, false) then
+    (bm.add_related_file)(l_0_5)
+  end
 end
 return mp.INFECTED
 

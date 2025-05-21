@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.isexe then
+if (pesecs[4]).Name == ".btls2" and (pesecs[6]).Name == ".dcard" then
   return mp.INFECTED
 end
 return mp.CLEAN

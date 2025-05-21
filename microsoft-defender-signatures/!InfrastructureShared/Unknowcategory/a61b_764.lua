@@ -3,11 +3,38 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasstandardentry == true or peattributes.isdll == false or peattributes.hasexports == false or pehdr.SizeOfImage >= 393216 then
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
   return mp.CLEAN
 end
-if (((((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched or not (hstrlog[8]).matched) and (hstrlog[10]).matched) or (hstrlog[7]).matched) and 1 or 0) + ((hstrlog[9]).matched and 1 or 0) + ((hstrlog[11]).matched and 1 or 0) + ((hstrlog[12]).matched and 1 or 0) >= 2 then
-  return mp.INFECTED
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_2 = (string.match)((string.lower)(l_0_1), "^(.-%.exe)")
+if l_0_2 == "" or l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (string.match)(l_0_2, "([^\\]+)$")
+if l_0_3 == "" or l_0_3 == nil then
+  return mp.CLEAN
+end
+if l_0_3 ~= "cmd.exe" then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.GetParentProcInfo)()
+if l_0_4 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.match)(l_0_4.image_path, "\\([^\\]+)$")) ~= "razerinstaller.exe" then
+  return mp.CLEAN
+end
+local l_0_5 = (mp.GetProcessCommandLine)(l_0_4.ppid)
+if l_0_5 == "" or l_0_5 == nil then
+  return mp.CLEAN
+end
+if (string.find)((string.lower)(l_0_5), "razerinstaller%.exe[^/]+/showdevice$") == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

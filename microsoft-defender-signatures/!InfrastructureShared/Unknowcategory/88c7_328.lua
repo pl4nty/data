@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  (bm.request_SMS)(l_0_0.ppid, "M")
-end
-do
-  if (this_sigattrlog[2]).matched == true then
-    local l_0_1 = (this_sigattrlog[2]).ppid
-    if l_0_1 ~= nil then
-      (bm.request_SMS)(l_0_1, "M")
-    end
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 491520 and l_0_0 <= 499712 and pehdr.NumberOfSections >= 7 and pehdr.NumberOfSections <= 8 and (mp.get_mpattribute)("NID:Emotet.GU!Pra1") then
   return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (peattributes.isexe ~= true or ((pesecs[1]).Name ~= "UPX0" and (pesecs[1]).Name ~= ".text") or ((pesecs[2]).Name ~= "UPX1" and (pesecs[2]).Name ~= ".bss") or (mp.get_mpattribute)("pea_no_security")) then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if (pe.isvdllbase)((pe.get_regval)(pe.REG_EBX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 2, "d\000\000\000")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

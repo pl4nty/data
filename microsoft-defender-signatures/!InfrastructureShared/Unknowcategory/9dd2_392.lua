@@ -3,8 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.reads_vdll_code and (peattributes.suspicious_image_version or peattributes.uses_access_violation or peattributes.uses_privinstr or peattributes.deep_analysis or peattributes.enable_vmm_grow) and peattributes.isdll then
-  return mp.INFECTED
+if peattributes.isexe and pehdr.NumberOfSections >= 6 then
+  local l_0_0 = 0
+  local l_0_1 = 0
+  for l_0_5 = 2, pehdr.NumberOfSections do
+    l_0_0 = l_0_0 + (pesecs[l_0_5]).SizeOfRawData
+    if l_0_1 < (pesecs[l_0_5]).SizeOfRawData then
+      l_0_1 = (pesecs[l_0_5]).SizeOfRawData
+    end
+  end
+  if (l_0_0 - l_0_1) * 100 < l_0_1 * 15 then
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

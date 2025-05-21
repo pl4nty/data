@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 1000219088) == 0 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  return mp.INFECTED
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 1830286805) == 0 then
-  return mp.CLEAN
+if peattributes.dt_error_heur_exit_criteria then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

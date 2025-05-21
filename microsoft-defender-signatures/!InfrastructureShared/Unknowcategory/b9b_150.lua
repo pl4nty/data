@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Solimba")
+(mp.set_mpattribute)("PUA:Block:4Shared")
 return mp.INFECTED
 

@@ -3,9 +3,15 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Win32/Neurevt_loader")
-if (mp.readu_u32)(epcode, 1) == 1374456661 and (mp.readu_u32)(epcode, 5) == 3187044 and (mp.readu_u32)(epcode, 9) == 1448280064 and (mp.readu_u32)(epcode, 13) == 108314757 and (mp.readu_u32)(epcode, 17) == 16939136 and (mp.readu_u32)(epcode, 21) == 1703096436 and (mp.readu_u32)(epcode, 25) == 4226285820 then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).ppid
+  local l_0_1 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  if (string.find)(l_0_1, ".dat", 1, true) and (string.find)(l_0_1, "--", 1, true) and (string.find)(l_0_1, ",init ", 1, true) and (string.find)(l_0_1, "=\"", 1, true) and l_0_0 then
+    (bm.request_SMS)(l_0_0, "m")
+    return mp.INFECTED
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

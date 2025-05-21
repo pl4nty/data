@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() >= 512000 then
-  return mp.CLEAN
+if pehdr.NumberOfSections > 2 and ((pesecs[2]).Name == ".rdat" or (pesecs[2]).Name == ".rtxt") then
+  (mp.set_mpattribute)("HSTR:Virus:Win32/Nemim!mother")
 end
-if (pesecs[1]).SizeOfRawData < 65536 then
-  return mp.CLEAN
-end
-if peattributes.isvbnative == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 

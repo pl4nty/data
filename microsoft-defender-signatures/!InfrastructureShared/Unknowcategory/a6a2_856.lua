@@ -3,29 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = tonumber((this_sigattrlog[8]).utf8p1)
-if l_0_0 == nil or l_0_0 < 1441792 then
-  return mp.CLEAN
-end
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-if l_0_1 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_1) do
-    if l_0_7.image_path ~= nil then
-      local l_0_8 = (string.lower)((MpCommon.PathToWin32Path)(l_0_7.image_path))
-      if (string.find)(l_0_8, "gravostyle", 1, true) or (string.find)(l_0_8, "typeedit", 1, true) or (string.find)(l_0_8, "lasertype", 1, true) then
-        return mp.CLEAN
-      end
-    end
-  end
-end
-do
-  local l_0_9 = (bm.get_current_process_startup_info)()
-  ;
-  (bm.request_SMS)(l_0_9.ppid, "h+")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1000)
-  ;
-  (bm.trigger_sig)("ReflectiveLoading", "Netloader")
+local l_0_0 = "cab rtf doc chm hlp ttf pdf fb2 xls ppt mdb cda wav wma mp3 avi mpg mdv flv swf wmv vob bmp gif jpg png iso mdf mds bin dat nrg 3gp ogg vob exe dll"
+local l_0_1 = (bm.get_imagepath)()
+local l_0_2 = (string.match)((string.lower)(l_0_1), "\\([^\\]+)%.%l%l%l")
+local l_0_3, l_0_4 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), "(.+\\)[^\\]+%.(%l%l%l)")
+local l_0_5, l_0_6 = (string.match)((string.lower)((this_sigattrlog[3]).utf8p1), "(.+\\)([^\\]+)%.rtf")
+if l_0_2 ~= nil and l_0_3 ~= nil and l_0_4 ~= nil and l_0_5 ~= nil and l_0_6 ~= nil and l_0_2 == l_0_6 and (string.find)(l_0_0, l_0_4, 1, true) and (string.find)(l_0_3, "\\temp\\", 1, true) and (string.find)(l_0_5, "\\temp\\", 1, true) then
+  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)(l_0_1), 1079587454)
   return mp.INFECTED
 end
+return mp.CLEAN
 

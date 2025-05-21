@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = (bm.get_process_relationships)()
-    for l_0_5,l_0_6 in ipairs(l_0_0) do
-      if l_0_6.image_path ~= nil and (string.find)(l_0_6.image_path, "xpcproxy", 1, true) then
-        return mp.CLEAN
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    if (string.find)(l_0_6.image_path, "/sbin/sshd", -10, true) then
+      return mp.INFECTED
+    end
+    local l_0_7, l_0_8 = (bm.get_process_relationships)()
+    for l_0_12,l_0_13 in ipairs(l_0_7) do
+      if l_0_13.image_path ~= nil and (string.find)(l_0_13.image_path, "/sbin/sshd", -10, true) then
+        return mp.INFECTED
       end
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
 end
+do return mp.CLEAN end
+-- DECOMPILER ERROR at PC51: Confused about usage of register R3 for local variables in 'ReleaseLocals'
+
 

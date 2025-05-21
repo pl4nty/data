@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\235")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 12, "\002")
-return mp.INFECTED
+if (mp.get_mpattribute)("BM_LNK_FILE") or (mp.get_mpattribute)("Lua:TopLevelFileExt.A!lnk") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

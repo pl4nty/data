@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_regval)(pe.REG_EDX, 32078)
-return mp.LOWFI
+(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+return mp.INFECTED
 

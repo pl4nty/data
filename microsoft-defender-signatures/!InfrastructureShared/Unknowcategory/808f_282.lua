@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("SIGATTR:SetItselfRunKey") and (mp.get_mpattribute)("SIGATTR:mzinresource") then
-  return mp.INFECTED
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.find)(l_0_0.CompanyName, "LaplFink Software", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

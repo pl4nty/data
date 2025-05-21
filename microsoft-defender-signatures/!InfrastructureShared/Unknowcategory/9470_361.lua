@@ -3,8 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (mp.getfilesize)() < 15000 and peattributes.no_security == true and (pesecs[1]).Name == "AUTO" and pehdr.AddressOfEntryPoint == 0 then
-  return mp.INFECTED
+local l_0_0 = 0
+local l_0_1 = 0
+local l_0_2 = {}
+local l_0_3 = (nri.GetConnectionHistory)()
+for l_0_7,l_0_8 in pairs(l_0_3) do
+  if l_0_8.DestinationPort == 3389 then
+    if l_0_2[l_0_8.DestinationAddressLow] == nil then
+      l_0_2[l_0_8.DestinationAddressLow] = 1
+      l_0_1 = l_0_1 + 1
+    end
+    l_0_0 = l_0_0 + 1
+  end
 end
-return mp.CLEAN
+do
+  if l_0_1 > 5 or l_0_0 > 10 then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
+end
 

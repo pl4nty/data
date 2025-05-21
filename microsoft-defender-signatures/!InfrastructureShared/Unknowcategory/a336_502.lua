@@ -3,18 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p1)
-if l_0_0 == nil then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-if (sysio.IsFileExists)(l_0_0) then
-  (bm.add_related_file)(l_0_0)
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-if l_0_1 ~= nil and l_0_1.ppid ~= nil then
-  (bm.request_SMS)(l_0_1.ppid, "m")
-  ;
-  (bm.add_action)("SmsAsyncScanEvent", 1)
+if (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
+  local l_0_6 = (this_sigattrlog[2]).p1
+  local l_0_7 = (this_sigattrlog[3]).p1
+  if (string.match)(l_0_6:lower() .. l_0_7:lower(), "safe") then
+    return mp.INFECTED
+  end
 end
-return mp.INFECTED
+do
+  return mp.LOWFI
+end
 

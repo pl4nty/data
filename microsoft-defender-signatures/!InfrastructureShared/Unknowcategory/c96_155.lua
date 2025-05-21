@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Chinston:Bit")
+(mp.set_mpattribute)("PUA:Block:SmartPCFixer")
 return mp.INFECTED
 

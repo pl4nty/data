@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if l_0_0 and l_0_0.integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
-    local l_0_1 = (string.lower)((bm.get_imagepath)())
-    if not (string.find)(l_0_1, "packages\\canonicalgrouplimited.ubuntu", 1, true) and not (string.find)(l_0_1, "packages\\thedebianproject.debiangnulinux", 1, true) then
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) and (l_0_1:match("([^\\]+)$") == "fodhelper.exe" or l_0_1:match("([^\\]+)$") == "computerdefaults.exe" or l_0_1:match("([^\\]+)$") == "wsreset.exe" or l_0_1:match("([^\\]+)$") == "changepk.exe" or l_0_1:match("([^\\]+)$") == "control.exe") then
       return mp.INFECTED
     end
   end

@@ -3,7 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)(534350, 1057)
+if (mp.crc32)(-1, l_0_0, 1, 1057) == 539295301 then
   return mp.INFECTED
 end
 return mp.CLEAN

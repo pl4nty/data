@@ -3,21 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).matched then
-  return mp.CLEAN
+(mp.readprotection)(false)
+local l_0_0 = (mp.getfilesize)()
+local l_0_1 = tostring((mp.readfile)(0, l_0_0))
+l_0_1 = (string.lower)(l_0_1)
+if (string.find)(l_0_1, "j7pjsibhd9dztmzk7ddgdohxux5lws3aa9fqa9lxwkrk4omnzgqt6euej4i", 1, true) ~= nil then
+  return mp.INFECTED
 end
-if not (this_sigattrlog[2]).matched and not (this_sigattrlog[3]).matched then
-  return mp.CLEAN
-end
-local l_0_0 = this_sigattrlog[1]
-do
-  if not (this_sigattrlog[2]).matched or not this_sigattrlog[2] then
-    local l_0_1 = this_sigattrlog[3]
-  end
-  local l_0_2, l_0_3 = , (bm.get_process_relationships)(l_0_0.ppid)
-  if #l_0_0.ppid >= 1 and ((l_0_0.ppid)[1]).ppid == l_0_2.ppid then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+return mp.CLEAN
 

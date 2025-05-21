@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-l_0_0 = (l_0_0.lower)(l_0_0)
-if (string.find)(l_0_0, ".lnk", 1, true) then
-  return mp.INFECTED
+(mp.set_mpattribute)("PUA:Block:Bayads")
+if (mp.get_mpattribute)("//HSTR:Win32/Bayads!Exc") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

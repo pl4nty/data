@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:NSIS_Installer") or (mp.get_mpattribute)("HSTR:NSIS.gen!A") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
+if peattributes.isdll and (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.ismsil then
   return mp.INFECTED
 end
 return mp.CLEAN

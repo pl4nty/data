@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Disable_API_Limit")
-return mp.INFECTED
+if peattributes.isdll then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

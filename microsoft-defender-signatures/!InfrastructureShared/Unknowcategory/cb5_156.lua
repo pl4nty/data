@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Privitize:Bit")
+(mp.set_mpattribute)("PUA:Block:OneSystemHeal")
 return mp.INFECTED
 

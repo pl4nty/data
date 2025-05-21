@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Xibidpy:Bit")
+(mp.set_mpattribute)("PUA:Block:WinMaxMiner")
 return mp.INFECTED
 

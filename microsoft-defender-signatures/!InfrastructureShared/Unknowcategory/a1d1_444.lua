@@ -3,20 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
+
   if l_0_0 ~= nil then
-    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
-    for l_0_5,l_0_6 in ipairs(l_0_1) do
-      if (sysio.IsFileExists)(l_0_6) and (string.find)(l_0_6, "regsvr32", 1, true) == nil then
-        (bm.add_related_file)(l_0_6)
-      end
+    local l_0_2 = nil
+    local l_0_3 = (string.lower)((mp.ContextualExpandEnvironmentVariables)("%userprofile%"))
+    if (string.find)((string.lower)(l_0_2), l_0_3 .. "\\[^\\]+$") and (string.find)(l_0_2, "\\%l%l%l+%.exe$") then
+      return mp.INFECTED
     end
   end
-end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+  do
+    return mp.CLEAN
+  end
 end
 

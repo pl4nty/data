@@ -3,19 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
 do
-  if l_0_0 ~= nil and l_0_0 >= 20480000 then
-    local l_0_1 = (pe.get_versioninfo)()
-    if not l_0_1 then
+  if peattributes.isdll == true and peattributes.hasexports == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    if l_0_0 ~= nil and #l_0_0 > 0 and (mp.IsTrustedFile)() then
       return mp.CLEAN
     end
-    if not l_0_1.CompanyName then
-      return mp.CLEAN
-    end
-    if l_0_1.CompanyName == "Microsoft Corporation" then
-      return mp.INFECTED
-    end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

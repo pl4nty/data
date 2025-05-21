@@ -3,20 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+if peattributes.isdll == false or pehdr.NumberOfSections ~= 9 or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
   return mp.CLEAN
 end
-if not peattributes.suspicious_timestamp then
-  return mp.CLEAN
+if (pe.get_exports)() > 1000 then
+  return mp.INFECTED
 end
-if not peattributes.is_delphi then
-  return mp.CLEAN
-end
-if not peattributes.dirty_wx_branch then
-  return mp.CLEAN
-end
-if not peattributes.executes_from_dynamic_memory then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

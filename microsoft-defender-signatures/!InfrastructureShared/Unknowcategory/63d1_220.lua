@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:CoinMiner.zg")
+  (mp.set_mpattribute)("PUA:Block:SMSReg.H!MTB")
   return mp.INFECTED
 end
 return mp.LOWFI

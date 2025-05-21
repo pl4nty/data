@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Dartsmound")
-return mp.INFECTED
+(mp.set_mpattribute)("SIGATTR:IEXPL_BELOW_WIN")
+return mp.LOWFI
 

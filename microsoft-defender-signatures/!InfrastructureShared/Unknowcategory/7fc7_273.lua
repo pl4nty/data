@@ -3,13 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 3 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 1024000 then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT < 3 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
+local l_0_1 = 0
+if (hstrlog[1]).matched then
+  l_0_1 = (hstrlog[1]).hitcount
 end
-return mp.LOWFI
+if l_0_1 > 1 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

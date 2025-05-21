@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("SCRIPT:StrConcat!obfus")
+(mp.set_mpattribute)("FOPEX:Disable_APILimit")
 return mp.INFECTED
 

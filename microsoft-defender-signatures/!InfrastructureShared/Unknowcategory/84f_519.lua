@@ -3,29 +3,25 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+local l_0_0 = nil
+for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
 
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+  if (sigattr_tail[R4_PC6]).matched and (sigattr_tail[R4_PC6]).attribute == 16393 then
+    l_0_1 = (sigattr_tail[R4_PC6]).utf8p2
+    if l_0_1 ~= nil then
+      for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_1)) do
+        local l_0_6 = nil
+        -- DECOMPILER ERROR at PC30: Confused about usage of register: R10 in 'UnsetPending'
 
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((this_sigattrlog[2]).utf8p2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
-
-      R6_PC39 = (mp.ContextualExpandEnvironmentVariables)(R6_PC39)
-      if (sysio.IsFileExists)(R6_PC39) then
-        (bm.add_related_file)(R6_PC39)
+        R10_PC30 = (mp.ContextualExpandEnvironmentVariables)(R10_PC30)
+        if (sysio.IsFileExists)(R10_PC30) then
+          (bm.add_related_file)(R10_PC30)
+        end
       end
     end
   end
-  do
-    return mp.INFECTED
-  end
 end
+return mp.INFECTED
 

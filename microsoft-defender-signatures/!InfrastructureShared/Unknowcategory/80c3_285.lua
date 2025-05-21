@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "truesight" and (mp.getfilesize)() < 70000 then
+if peattributes.isdll == true and peattributes.hasexports == true and peattributes.no_security == true and (pe.get_exports_count)() == 1 then
   return mp.INFECTED
 end
 return mp.CLEAN

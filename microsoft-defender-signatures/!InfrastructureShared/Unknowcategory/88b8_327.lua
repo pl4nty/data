@@ -3,15 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = nil
-    if (string.find)(l_0_0, "/format:", 1, true) ~= nil and (string.find)(l_0_0, "/format:list", 1, true) == nil then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+return mp.LOWFI
 

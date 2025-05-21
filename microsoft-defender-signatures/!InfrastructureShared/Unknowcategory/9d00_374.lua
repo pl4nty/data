@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative and peattributes.dirty_wx_branch and peattributes.hstr_exhaustive and peattributes.hasappendeddata then
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") or not (mp.get_mpattribute)("pea_hstr_exhaustive") then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+  ;
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
+else
   return mp.INFECTED
 end
-if not peattributes.suspicious_timestamp and not peattributes.suspicious_image_version then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

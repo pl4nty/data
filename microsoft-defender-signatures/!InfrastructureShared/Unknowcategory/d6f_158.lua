@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("attrmatch_rescan_notiexplore")
 return mp.CLEAN
 

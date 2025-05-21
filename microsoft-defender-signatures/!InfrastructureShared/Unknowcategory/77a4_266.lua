@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_boundimport") and not (mp.get_mpattribute)("pea_no_tls") then
+if (mp.getfilesize)() > 5000 and (mp.getfilesize)() < 100000 and not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and epcode[1] == 106 and epcode[2] == 16 and epcode[3] == 104 and epcode[4] == 0 and epcode[5] == 2 and epcode[6] == 0 and epcode[7] == 0 and epcode[8] == 104 and epcode[9] == 44 and epcode[10] == 250 and epcode[11] == 250 and epcode[12] == 255 then
+if not (mp.get_mpattribute)("//AGGR:OleFile") and not (mp.get_mpattribute)("Lua:FileSizeLT2000") then
+  return mp.CLEAN
+end
+local l_0_0 = (string.lower)(tostring(headerpage))
+local l_0_1, l_0_2, l_0_3 = (string.find)(l_0_0, "(<a href%=\"http%://.-\">http%://www%.natwest%.com/)")
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+if (string.match)(l_0_3, "<a href%=\"http%://www%.natwest%.com/.-\">http%://www%.natwest%.com/") == nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("SIGATTR:IEProxyChange")
-return mp.LOWFI
+(mp.set_mpattribute)("PUA:Block:MediaGet")
+return mp.INFECTED
 

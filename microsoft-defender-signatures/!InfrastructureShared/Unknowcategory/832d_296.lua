@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.amd64_image then
-  return mp.INFECTED
-end
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+local l_0_1 = (string.sub)(l_0_0, -10)
+if l_0_1 and (string.lower)(l_0_1) == "\\mshta.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

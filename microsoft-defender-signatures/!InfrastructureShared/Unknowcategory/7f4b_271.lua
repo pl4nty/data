@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 8 and (pesecs[1]).Name == "CODE" and (pesecs[2]).Name == "DATA" then
-  return mp.INFECTED
+local l_0_0, l_0_1 = (pe.get_exports)()
+for l_0_5 = 1, l_0_0 do
+  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "ServiceMain" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

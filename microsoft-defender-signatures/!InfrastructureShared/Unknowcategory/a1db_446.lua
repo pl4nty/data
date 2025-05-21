@@ -3,23 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("program files", 1, true) then
+  return mp.CLEAN
 end
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
-  local l_0_6 = (this_sigattrlog[1]).p1
-  local l_0_7 = (this_sigattrlog[2]).p1
-  if l_0_6 .. l_0_7 == "unsafe" then
-    return mp.INFECTED
-  end
+if l_0_0:find("system32", 1, true) then
+  return mp.CLEAN
 end
-do
-  return mp.LOWFI
-end
+return mp.INFECTED
 

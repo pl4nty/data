@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("\\program files", 1, true) then
-  return mp.CLEAN
+if (pesecs[2]).Name == "UPX1" and (pesecs[4]).Name == "RlrtPtYn" and (pesecs[6]).Name == "NcbEZQRw" and (pesecs[13]).Name == "XeCVTXdm" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

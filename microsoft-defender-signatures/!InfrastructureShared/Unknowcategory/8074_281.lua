@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isexe == true or peattributes.ismsil == true) and pehdr.SizeOfImage >= 57344 and pehdr.Subsystem == 2 then
+if (string.lower)((string.sub)(((pe.get_versioninfo)()).OriginalFilename, 1, 5)) == "lsass" then
   return mp.INFECTED
 end
 return mp.CLEAN

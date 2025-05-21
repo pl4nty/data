@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 then
-  if (string.find)((string.lower)(l_0_0), "\\opera software\\", 1, true) then
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.getfilesize)()
+if (hstrlog[5]).matched and peattributes.no_security == true and l_0_0 >= 303104 and l_0_0 <= 1601536 then
   return mp.INFECTED
 end
 return mp.CLEAN

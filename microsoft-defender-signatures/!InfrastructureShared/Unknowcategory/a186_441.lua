@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  if not peattributes.hstr_exhaustive and peattributes.dt_error_heur_exit_criteria then
-    (pe.set_peattribute)("hstr_exhaustive", true)
-    ;
-    (pe.reemulate)()
+do
+  if (mp.get_mpattribute)("Lua:XMLExt") then
+    local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+    if l_0_0:find("abusepreventionengineconfig.xml", 1, true) then
+      (mp.set_mpattribute)("MpNonPIIFileType")
+      return mp.INFECTED
+    end
   end
-  ;
-  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOT!dll")
   return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOT")
-return mp.CLEAN
 

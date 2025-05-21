@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  (mp.set_mpattribute)("HSTR:Worm:MSIL/Cribz!modules")
+if (pesecs[4]).Name == "pxsZHe0" and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

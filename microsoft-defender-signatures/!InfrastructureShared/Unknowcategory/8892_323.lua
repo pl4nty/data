@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "×ÀÒººÂÜÍ\000\000\000\000\000\000\000\000×ÀÒÏÊÌÀæ\000\000\000\000\000\000\000\000×ÀÒÞÕÍÅÅÂÈ\000\000\000\000\000\000ßþäåÚòÙÛ÷¾\000\000\000\000\000\000¬ô\255éä¯¬ö¤\aù÷óå\218\000\144\000"
+if peattributes.no_security == true and peattributes.isexe == true and peattributes.amd64_image == true then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
+end
 do
-  if (mp.getfilesize)() > 50331648 then
-    local l_0_1 = 50331648
-  end
-  -- DECOMPILER ERROR at PC10: Confused about usage of register: R1 in 'UnsetPending'
-
-  if (mp.BMSearchFile)(0, l_0_1, l_0_0) ~= -1 then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

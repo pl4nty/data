@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (pesecs[6]).Name == "c.VnxYB" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if peattributes.isdll and peattributes.reads_vdll_code and (mp.get_mpattribute)("LoD:VirTool:Win32/Obfuscator.UR") and (mp.getfilesize)() >= 300000 and (mp.getfilesize)() < 900000 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 and (string.find)((string.lower)(l_0_0), "\\edge\\", 1, true) == nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr, "\235+")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 45, "ù")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 53, "\235")
+return mp.INFECTED
 

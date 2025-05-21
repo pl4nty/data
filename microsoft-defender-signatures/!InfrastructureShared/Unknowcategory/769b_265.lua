@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1048000 and pehdr.NumberOfSections <= 5 and (pesecs[5]).Name == "" then
+if (hstrlog[2]).matched then
   return mp.INFECTED
 end
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
 return mp.CLEAN
 

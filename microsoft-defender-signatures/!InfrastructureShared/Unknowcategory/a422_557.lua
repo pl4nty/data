@@ -3,23 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -15))
-if l_0_0 == "\\appvclient.exe" then
+local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
+if l_0_0 == nil or (string.find)(l_0_0, "c:\\", 1, true) == nil then
   return mp.CLEAN
 end
-local l_0_1 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_1 = (this_sigattrlog[1]).utf8p2
+if (sysio.IsFileExists)(l_0_0) then
+  (bm.add_related_file)(l_0_0)
 end
-local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-    ;
-    (bm.add_related_file)(l_0_7)
-  end
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  (bm.request_SMS)(l_0_1.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1)
 end
-do
-  return mp.INFECTED
-end
+return mp.INFECTED
 

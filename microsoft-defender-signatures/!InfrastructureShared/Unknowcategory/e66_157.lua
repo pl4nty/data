@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+(mp.set_mpattribute)("PUA:Block:PremierOpinion")
 return mp.INFECTED
 

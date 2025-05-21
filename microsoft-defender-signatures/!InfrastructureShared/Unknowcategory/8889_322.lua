@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "Q‹Ï", 1, true)
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\144")
 ;
-(pe.mmap_patch_va)(pevars.sigaddr, "\235" .. (string.char)(l_0_0 - 3))
+(pe.mmap_patch_va)(pevars.sigaddr + 42, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 40, ";\203")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "\000")
 return mp.INFECTED
 

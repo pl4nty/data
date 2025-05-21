@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 6 and (mp.getfilesize)() >= 210000 and (mp.getfilesize)() <= 213000 and peattributes.no_security == true then
+if (mp.get_mpattribute)("BM_MZ_FILE") and pehdr.NumberOfSections > 8 and (pesecs[6]).VirtualSize > 2097152 then
   return mp.INFECTED
 end
 return mp.CLEAN

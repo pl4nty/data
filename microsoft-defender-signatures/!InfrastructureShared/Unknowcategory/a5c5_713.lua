@@ -3,8 +3,33 @@
 
 -- params : ...
 -- function num : 0
-if ((((((((((((((((hstrlog[3]).matched and not (hstrlog[4]).matched) or (hstrlog[5]).matched) and not (hstrlog[6]).matched) or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or (hstrlog[11]).matched) and not (hstrlog[12]).matched) or (hstrlog[13]).matched) and not (hstrlog[14]).matched) or (hstrlog[15]).matched) and not (hstrlog[16]).matched) or (hstrlog[17]).matched) and (hstrlog[1]).matched) or (hstrlog[2]).matched and 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 == 15 then
-  return mp.INFECTED
+do
+  if (versioning.GetEngineBuild)() >= 16700 then
+    local l_0_0 = (versioning.GetOrgID)()
+    if l_0_0 and (string.lower)(l_0_0) == "d7c7c745-195f-4223-9c7a-99fb420fd000" then
+      return mp.CLEAN
+    end
+  end
+  local l_0_1 = nil
+  if (this_sigattrlog[2]).matched then
+    l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
+  else
+    if (this_sigattrlog[3]).matched then
+      l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p1)
+    end
+  end
+  if l_0_1 ~= nil then
+    local l_0_2 = (string.sub)(l_0_1, -4)
+    local l_0_3 = "|.asp|aspx|ashx|asmx|"
+    if (string.find)(l_0_3, l_0_2, 1, true) then
+      if (sysio.IsFileExists)(l_0_1) then
+        (bm.add_related_file)(l_0_1)
+      end
+      return mp.INFECTED
+    end
+  end
+  do
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
 

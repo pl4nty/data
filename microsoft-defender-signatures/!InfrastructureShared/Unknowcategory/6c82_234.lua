@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "xl/drawings/_rels/drawing1.xml.rels") ~= nil then
+if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("MpTrustCheck_NotDigitallySigned") then
   return mp.INFECTED
 end
 return mp.CLEAN

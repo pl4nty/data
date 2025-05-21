@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -12))
-if (string.find)(l_0_0, "\\wuauclt.exe", 1, true) then
+if pehdr.NumberOfSections == 7 and (pesecs[4]).Name == ".fuckyou" and (pesecs[5]).Name == ".fuckyou" and (pesecs[6]).Name == ".fuckyou" then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("Trojan:MSIL/Injector.B1!ibt") then
+if peattributes.isexe and peattributes.x86_image and peattributes.executes_from_dynamic_memory then
   return mp.INFECTED
 end
 return mp.CLEAN

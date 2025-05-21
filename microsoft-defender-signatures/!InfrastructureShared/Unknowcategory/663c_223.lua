@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
-  return mp.INFECTED
+if peattributes.isdll and peattributes.hasexports then
+  (mp.set_mpattribute)("ChangeEPtoExport")
 end
 return mp.CLEAN
 

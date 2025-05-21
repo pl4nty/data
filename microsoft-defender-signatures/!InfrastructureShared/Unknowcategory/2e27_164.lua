@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security then
+if (versioning.IsSeville)() then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

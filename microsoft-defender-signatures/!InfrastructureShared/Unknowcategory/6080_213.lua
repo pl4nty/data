@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:BetterSurf")
-if mp.HSTR_WEIGHT >= 7 then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:Glims")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

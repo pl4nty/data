@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 5000 and l_0_0 < 1000000 and not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if peattributes.no_exports and peattributes.amd64_image and pehdr.NumberOfSections == 6 then
   return mp.INFECTED
 end
 return mp.CLEAN

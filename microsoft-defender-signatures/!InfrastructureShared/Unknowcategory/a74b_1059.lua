@@ -3,21 +3,42 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[5]).matched and (hstrlog[6]).matched then
-    local l_0_0 = (hstrlog[7]).matched
-  end
-  do
-    if (((hstrlog[8]).matched or (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched or (hstrlog[15]).matched or (hstrlog[16]).matched or ((hstrlog[17]).matched and (hstrlog[18]).matched and (hstrlog[19]).matched) or (hstrlog[20]).matched or (hstrlog[21]).matched or (hstrlog[22]).matched or (hstrlog[23]).matched or (hstrlog[24]).matched or ((hstrlog[25]).matched and (hstrlog[26]).matched) or ((hstrlog[27]).matched and (hstrlog[28]).matched) or not (hstrlog[29]).matched)) then
-      local l_0_1 = nil
-    end
-    -- DECOMPILER ERROR at PC146: Confused about usage of register: R0 in 'UnsetPending'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-    if l_0_1 and (hstrlog[30]).matched then
-      (mp.changedetectionname)(805306383)
-      return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil then
+      local l_0_1, l_0_2 = (this_sigattrlog[2]).utf8p2
     end
-    return mp.CLEAN
+    local l_0_3 = nil
+    if l_0_3 ~= nil then
+      local l_0_4 = {}
+      local l_0_5 = (mp.GetExecutablesFromCommandLine)(l_0_3)
+      for l_0_9,l_0_10 in ipairs(l_0_5) do
+        local l_0_6 = {[".xls"] = true, [".doc"] = true, [".ppt"] = true, [".pps"] = true, docx = true, pptx = true, ppsx = true, xlsx = true, [".rtf"] = true, [".xml"] = true, dotx = true, dotm = true, [".odt"] = true, xlsb = true, xltx = true, xltm = true, xlam = true, [".xla"] = true, docm = true, xlsm = true, pptm = true}
+        -- DECOMPILER ERROR at PC76: Confused about usage of register: R8 in 'UnsetPending'
+
+        if (string.len)(R8_PC76) > 4 and (sysio.IsFileExists)(R8_PC76) and l_0_6[(string.sub)(R8_PC76, -4)] then
+          (bm.add_related_file)(l_0_11)
+          ;
+          (table.insert)(l_0_4, l_0_11)
+        end
+      end
+    end
+    do
+      l_0_5 = MpCommon
+      l_0_5 = l_0_5.SetPersistContextNoPath
+      l_0_5("OfficeWmiProc", l_0_4, 1)
+      l_0_5 = mp
+      l_0_5 = l_0_5.INFECTED
+      return l_0_5
+    end
   end
 end
 

@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_LOWERCASE))
-if (string.find)(l_0_0, "\\splunkuniversalforwarder\\", 1, true) ~= nil then
-  return mp.LOWFI
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+    if l_0_0 ~= nil and l_0_0:find("system", 1, true) and l_0_0:find("security", 1, true) then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

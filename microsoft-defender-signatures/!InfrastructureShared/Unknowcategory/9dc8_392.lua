@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "IÅ˘", 1, true)
 do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
+  if l_0_1 == nil then
+    local l_0_0 = 7
+    l_0_0 = 4
   end
-  if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p1 == nil or (string.lower)((string.sub)((this_sigattrlog[3]).utf8p1, -11)) == "\\target.lnk" then
-    return mp.CLEAN
-  end
+  -- DECOMPILER ERROR at PC29: Overwrote pending register: R0 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
+
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + l_0_0, "êê")
   return mp.INFECTED
 end
 

@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
-    local l_0_1 = (l_0_0.image_path):lower()
-    if (string.find)(l_0_1, "\\program files", 1, true) == nil then
-      return mp.CLEAN
+  if (this_sigattrlog[3]).matched then
+    local l_0_0 = nil
+    -- DECOMPILER ERROR at PC16: Overwrote pending register: R1 in 'AssignReg'
+
+    if nil == ".cmd" then
+      return mp.INFECTED
     end
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (string.match)((this_sigattrlog[1]).utf8p1, "%.ini$") ~= nil then
-  return mp.CLEAN
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_spector")
+else
+  ;
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan_spector")
 end
 return mp.INFECTED
 

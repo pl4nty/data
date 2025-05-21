@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 131 and epcode[2] == 236 and epcode[30] == 185 and epcode[35] == 128 and epcode[36] == 48 then
-  return mp.INFECTED
+local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+local l_0_1 = (sysio.GetProcessFromFileName)(l_0_0)
+if l_0_1 == nil or #l_0_1 == 0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

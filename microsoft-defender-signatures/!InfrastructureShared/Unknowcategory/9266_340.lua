@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true and (mp.get_mpattribute)("LUA:FileSizeGT100M.A") == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 25, "êê")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

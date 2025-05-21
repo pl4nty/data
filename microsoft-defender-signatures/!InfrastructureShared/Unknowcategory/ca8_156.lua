@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(bm.add_action)("EmsScan", 1000)
+(mp.set_mpattribute)("PUA:Block:OneSystemCare")
 return mp.INFECTED
 

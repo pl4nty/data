@@ -3,13 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[3]).matched and (hstrlog[4]).matched and (hstrlog[5]).matched and pehdr.NumberOfSections == 3 then
-    return mp.INFECTED
-  end
-  if (hstrlog[1]).matched and (hstrlog[2]).matched and (hstrlog[6]).matched and (hstrlog[7]).matched and (hstrlog[8]).matched and pehdr.NumberOfSections == 3 then
-    return mp.INFECTED
+local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+if (string.find)(l_0_0, "\\spyhunter\\", 1, true) then
+  return mp.CLEAN
+else
+  if (string.find)(l_0_0, "\\yandex\\", 1, true) then
+    return mp.CLEAN
+  else
+    if (string.find)(l_0_0, "\\utiltool\\", 1, true) then
+      return mp.CLEAN
+    else
+      if (string.find)(l_0_0, "\\tmus\\", 1, true) then
+        return mp.CLEAN
+      else
+        if (string.find)(l_0_0, "\\tmpscore.exe", 1, true) then
+          return mp.CLEAN
+        end
+      end
+    end
   end
 end
-return mp.CLEAN
+return mp.INFECTED
 

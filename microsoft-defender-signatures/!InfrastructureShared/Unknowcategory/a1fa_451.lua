@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[3]).matched then
-  local l_0_0 = (this_sigattrlog[3]).utf8p2
-  if l_0_0 ~= nil and (string.len)(l_0_0) > 7 then
-    local l_0_1 = (string.lower)(l_0_0)
-    if (string.find)(l_0_1, "nop", 1, true) and ((string.find)(l_0_1, "encoded", 1, true) or (string.find)(l_0_1, "bypass", 1, true)) then
-      return mp.INFECTED
-    end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 ~= nil then
+  if (string.find)(l_0_0, "\\svchost.exe", 1, true) or (string.find)(l_0_0, "\\rubyw.exe", 1, true) then
+    return mp.CLEAN
   end
+  if (mp.IsKnownFriendlyFile)((MpCommon.PathToWin32Path)(l_0_0), true, true) == true then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

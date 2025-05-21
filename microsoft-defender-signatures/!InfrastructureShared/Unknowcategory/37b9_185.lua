@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll or peattributes.isexe then
-  return mp.INFECTED
+if peattributes.isdll then
+  (mp.changedetectionname)(805306443)
 end
-return mp.CLEAN
+return mp.INFECTED
 

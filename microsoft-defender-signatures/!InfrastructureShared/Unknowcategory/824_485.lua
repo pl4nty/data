@@ -3,9 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -13) == "\\iexplore.exe" or (string.sub)(l_0_0, -11) == "\\chrome.exe" or (string.sub)(l_0_0, -18) == "\\microsoftedge.exe" or (string.sub)(l_0_0, -20) == "\\microsoftedgecp.exe" or (string.sub)(l_0_0, -12) == "\\firefox.exe" then
-  return mp.INFECTED
+local l_0_0, l_0_1 = pcall(bm.get_current_process_startup_info)
+if l_0_0 then
+  local l_0_2 = l_0_1.command_line
+  if l_0_2 ~= nil then
+    l_0_2 = (string.lower)(l_0_2)
+    local l_0_3 = (mp.GetExecutablesFromCommandLine)(l_0_2)
+    for l_0_7,l_0_8 in ipairs(l_0_3) do
+      l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_8)
+      if (sysio.IsFileExists)(l_0_8) then
+        (bm.add_related_file)(l_0_8)
+      end
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_2 = mp
+  l_0_2 = l_0_2.INFECTED
+  return l_0_2
+end
 

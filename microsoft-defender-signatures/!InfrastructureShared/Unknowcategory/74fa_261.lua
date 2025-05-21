@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 139 and epcode[2] == 255 and epcode[3] == 200 and epcode[4] == 128 then
+if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%l%l%l%l%l%l.exe") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

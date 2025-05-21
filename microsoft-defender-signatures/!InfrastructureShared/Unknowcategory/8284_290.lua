@@ -3,14 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "installutil.exe" then
-      return mp.INFECTED
+  if (this_sigattrlog[2]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil then
+      (bm.add_related_file)(l_0_0)
     end
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched and (hstrlog[4]).matched) or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) + ((hstrlog[6]).matched and 1 or 0) >= 3 then
-  return mp.INFECTED
+if (mp.getfilesize)() < 273152 and (mp.getfilesize)() > 112640 and peattributes.isdll and peattributes.hasexports then
+  if peattributes.dt_error_heur_exit_criteria then
+    (pe.set_peattribute)("deep_analysis", true)
+  end
+  ;
+  (pe.reemulate)()
 end
-return mp.CLEAN
+return mp.INFECTED
 

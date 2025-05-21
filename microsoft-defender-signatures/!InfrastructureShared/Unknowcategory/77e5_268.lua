@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isexe == true and (mp.getfilesize)() > 14000000 and (mp.getfilesize)() < 20000000 then
+if peattributes.isdll == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Win64/Emotet.PBI!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

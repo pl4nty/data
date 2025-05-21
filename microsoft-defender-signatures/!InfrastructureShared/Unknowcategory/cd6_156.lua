@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
+if (mp.getfilesize)() < 4000000 then
   return mp.LOWFI
 end
 return mp.CLEAN

@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (((hstrlog[1]).matched or (hstrlog[3]).matched) and 1 or 0) + ((hstrlog[4]).matched and 1 or 0) + ((hstrlog[5]).matched and 1 or 0) >= 2 and (hstrlog[2]).matched then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

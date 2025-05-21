@@ -3,14 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-for l_0_4 = 1, mp.SIGATTR_LOG_SZ do
-  if (sigattr_head[l_0_4]).matched and (sigattr_head[l_0_4]).attribute == 28769 then
-    local l_0_5 = (sigattr_head[l_0_4]).utf8p1
-    l_0_0.TlsJa3SHash = l_0_5
-    ;
-    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC25: Confused about usage of register: R6 in 'UnsetPending'
+
+      R6_PC25 = (mp.ContextualExpandEnvironmentVariables)(R6_PC25)
+      if (sysio.IsFileExists)(R6_PC25) then
+        (bm.add_related_file)(R6_PC25)
+      end
+    end
+  end
+  do
+    return mp.INFECTED
   end
 end
-return mp.INFECTED
 

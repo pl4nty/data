@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() == 47576 and peattributes.no_security == true and peattributes.isexe == true and (pesecs[4]).Name == ".ex_rsc" then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 > 589824 and l_0_0 < 720896 and (mp.get_mpattribute)("NID:Trojan:MSIL/TeslaCryptIH") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

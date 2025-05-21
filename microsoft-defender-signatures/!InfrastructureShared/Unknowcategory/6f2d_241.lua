@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/Remcos.PI!Pra1") then
+if (string.match)((this_sigattrlog[1]).utf8p1, "\\%l%l%l%l%l%l%d%.exe") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

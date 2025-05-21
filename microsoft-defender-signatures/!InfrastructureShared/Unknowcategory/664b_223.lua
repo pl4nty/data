@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("BM_UnsignedDll") then
+if peattributes.isdll and peattributes.amd64_image and peattributes.hasexports then
   return mp.INFECTED
 end
 return mp.CLEAN

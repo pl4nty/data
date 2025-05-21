@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("HSTR:SoftwareBundler:Win32/Avarus") then
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
+l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
 ;
-(mp.set_mpattribute)("PUA:Block:Avarus")
+(bm.add_threat_file)(l_0_0)
 return mp.INFECTED
 

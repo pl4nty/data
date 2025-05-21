@@ -9,7 +9,7 @@ if (this_sigattrlog[1]).matched then
     l_0_0 = (string.lower)(l_0_0)
     local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
     for l_0_5,l_0_6 in ipairs(l_0_1) do
-      if (string.sub)(l_0_6, -12) ~= "rundll32.exe" then
+      if (string.sub)(l_0_6, -12) ~= "regsvr32.exe" then
         l_0_6 = (mp.ContextualExpandEnvironmentVariables)(l_0_6)
         if (sysio.IsFileExists)(l_0_6) then
           (bm.add_related_file)(l_0_6)

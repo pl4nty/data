@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (string.find)(l_0_6.image_path, "rundll32.exe", 1, true) then
-    return mp.INFECTED
-  end
+if mp.HSTR_WEIGHT >= 5 then
+  return mp.INFECTED
+end
+if (hstrlog[1]).matched and (hstrlog[2]).matched then
+  return mp.INFECTED
+end
+if (hstrlog[1]).matched or (hstrlog[2]).matched then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

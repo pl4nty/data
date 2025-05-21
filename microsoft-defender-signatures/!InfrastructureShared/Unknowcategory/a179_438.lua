@@ -3,26 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if l_0_0 ~= nil then
-      local l_0_1, l_0_2 = (mp.ContextualExpandEnvironmentVariables)(l_0_0)
-      l_0_2 = bm
-      l_0_2 = l_0_2.add_related_file
-      l_0_2(l_0_1)
-    end
-    ;
-    (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/Tinplate.A!dha")
-    return mp.INFECTED
-  end
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.ps1)")
+if l_0_2 and (sysio.IsFileExists)(l_0_2) then
+  (mp.ReportLowfi)(l_0_2, 1120308759)
+  ;
+  (bm.add_related_file)(l_0_2)
 end
+;
+(bm.add_action)("EmsScan", 3000)
+return mp.INFECTED
 

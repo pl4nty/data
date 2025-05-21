@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (pesecs[6]).Name == "qhnxjbuu" and (pesecs[5]).Name == "dyzwkzqi" then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 2 and (hstrlog[1]).matched then
+  return mp.INFECTED
 end
+;
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.reemulate)()
+;
+(mp.set_mpattribute)("HSTR:VirTool:Win64/Rovnix.C")
+return mp.CLEAN
 

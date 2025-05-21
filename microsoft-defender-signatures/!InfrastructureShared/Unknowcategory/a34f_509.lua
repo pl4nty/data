@@ -3,8 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 2 and peattributes.isexe and peattributes.lastscn_writable and peattributes.lastscn_executable and peattributes.lastscn_vfalign and (pesecs[pehdr.NumberOfSections]).Name == ".text" and (pesecs[pehdr.NumberOfSections]).VirtualAddress <= (hstrlog[1]).VA - pehdr.ImageBase then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 ~= nil and (MpCommon.StringRegExpSearch)("[u0010-u00ff][u0100-uffff][u0010-u00ff]", l_0_1) == true then
+  local l_0_2 = (mp.GetParentProcInfo)()
+  if l_0_2 ~= nil then
+    local l_0_3 = (string.lower)(l_0_2.image_path)
+    if l_0_3 ~= nil and (string.find)(l_0_3, "explorer.exe", 1, true) then
+      return mp.INFECTED
+    end
+  end
+end
+do
+  return mp.CLEAN
+end
 

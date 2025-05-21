@@ -3,11 +3,19 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Rogue:Win32/Winwebsec_Lowfi")
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan_winwebsec")
-if mp.HSTR_WEIGHT >= 4 then
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[4]).matched then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC14: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

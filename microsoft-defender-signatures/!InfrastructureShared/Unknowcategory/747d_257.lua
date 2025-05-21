@@ -3,9 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.ismsil == true and peattributes.no_security == true and l_0_0 <= 983040 and l_0_0 >= 393216 then
-  return mp.INFECTED
+if peattributes.isexe ~= true then
+  local l_0_0 = (mp.GetCertificateInfo)()
+  for l_0_4,l_0_5 in pairs(l_0_0) do
+    if l_0_5.Signers ~= nil then
+      return mp.CLEAN
+    end
+  end
 end
-return mp.CLEAN
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
+end
 

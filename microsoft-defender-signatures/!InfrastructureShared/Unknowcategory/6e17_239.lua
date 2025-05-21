@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/WebShell") then
+if peattributes.no_security == true and peattributes.isdll == true and (mp.getfilesize)() < 100000 then
   return mp.INFECTED
 end
 return mp.CLEAN

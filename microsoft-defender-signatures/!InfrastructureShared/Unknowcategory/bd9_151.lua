@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Linkular")
+(mp.set_mpattribute)("Miner:XMRigRelated")
 return mp.INFECTED
 

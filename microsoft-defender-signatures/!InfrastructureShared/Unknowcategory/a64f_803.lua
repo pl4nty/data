@@ -3,34 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-if l_0_0 ~= nil and (string.find)(l_0_0, "//b", 1, true) and (string.find)(l_0_0, "//e:jscript", 1, true) then
-  local l_0_1 = ((mp.GetExecutablesFromCommandLine)(l_0_0))
-  local l_0_2, l_0_3 = nil, nil
-  for l_0_7,l_0_8 in ipairs(l_0_1) do
-    l_0_2 = (mp.ContextualExpandEnvironmentVariables)("%temp%\\") .. l_0_8
-    l_0_3 = (mp.ContextualExpandEnvironmentVariables)("%temp%\\low\\") .. l_0_8
-    if (sysio.IsFileExists)(l_0_8) then
-      (bm.add_related_file)(l_0_8)
-      ;
-      (mp.ReportLowfi)(l_0_8, 3307547556)
-    else
-      if (sysio.IsFileExists)(l_0_2) then
-        (bm.add_related_file)(l_0_2)
-        ;
-        (mp.ReportLowfi)(l_0_2, 3307547556)
-      else
-        if (sysio.IsFileExists)(l_0_3) then
-          (bm.add_related_file)(l_0_3)
-          ;
-          (mp.ReportLowfi)(l_0_3, 3307547556)
-        end
-      end
-    end
-  end
-  return mp.INFECTED
-end
-do
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+local l_0_2 = (string.match)(l_0_1, "(%a:\\[^\"]-%.ps1)")
+l_0_1 = (string.lower)(l_0_1)
+if (string.find)(l_0_1, ":\\program files", 1, true) or (string.find)(l_0_1, "\\windows defender advanced threat protection\\", 1, true) or (string.find)(l_0_1, "sentinel", 1, true) or (string.find)(l_0_1, "format-list", 1, true) or (string.find)(l_0_1, "-outputformat", 1, true) or (string.find)(l_0_1, "get-vm", 1, true) then
   return mp.CLEAN
 end
+if l_0_2 and (sysio.IsFileExists)(l_0_2) then
+  (mp.ReportLowfi)(l_0_2, 1120308759)
+  ;
+  (bm.add_related_file)(l_0_2)
+end
+return mp.INFECTED
 

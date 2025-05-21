@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("CURE:Virus:Wi64/Expiro.CB1")
+return mp.INFECTED
 

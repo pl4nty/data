@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpRequestSMSH")
-return mp.INFECTED
+(mp.set_mpattribute)("SIGATTR:BootASEP")
+return mp.LOWFI
 

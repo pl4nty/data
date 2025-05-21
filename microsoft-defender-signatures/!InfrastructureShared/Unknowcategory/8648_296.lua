@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[7]).utf8p2
-    ;
-    (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 118784 and l_0_0 <= 122880 and pehdr.NumberOfSections == 6 and (pesecs[4]).Name == ".crt1" then
   return mp.INFECTED
 end
+return mp.CLEAN
 

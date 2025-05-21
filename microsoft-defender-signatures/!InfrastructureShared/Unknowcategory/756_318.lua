@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((string.sub)((bm.get_imagepath)(), -10))
-if l_0_0 == "\\lsass.exe" then
-  (mp.TriggerScanResource)("rootkittelemetry", "")
-  return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil and (string.lower)((string.sub)((MpCommon.PathToWin32Path)(l_0_0), 2, 11)) == ":\\windows\\" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

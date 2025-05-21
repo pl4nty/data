@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_0, "program files\\mcafee", 1, true) then
-  return mp.CLEAN
+if peattributes.ismsil == true and peattributes.has_msilresources and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.INFECTED
 

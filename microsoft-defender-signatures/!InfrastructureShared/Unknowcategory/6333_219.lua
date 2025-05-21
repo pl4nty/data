@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(bm.trigger_sig_self_propagate)("SuspSlugResinProcessLaunch", "Behavior:Win32/SnailResin.B!dha")
-return mp.INFECTED
+if mp.HSTR_WEIGHT >= 3 then
+  (mp.set_mpattribute)("PUA:Block:Shopsmart.B")
+  return mp.INFECTED
+end
+return mp.LOWFI
 

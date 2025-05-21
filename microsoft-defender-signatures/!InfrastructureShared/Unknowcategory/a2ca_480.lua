@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("LUA:FileSizeLE80000.A") and (mp.get_mpattribute)("Lua:FileSizeGEC350") and (mp.get_mpattribute)("BM_DropperObfuscatorUR") and (mp.get_mpattribute)("MpHasExpensiveLoop") and pehdr.TimeDateStamp ~= 0 then
-    local l_0_0 = (MpCommon.GetCurrentTimeT)()
-    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 2592000 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -17) == "\\inetsrv\\w3wp.exe" then
+  return mp.INFECTED
 end
+local l_0_1, l_0_2 = (bm.get_process_relationships)()
+for l_0_6,l_0_7 in ipairs(l_0_1) do
+  if l_0_7.image_path ~= nil and (mp.bitand)(l_0_7.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_7.image_path, -17)) == "\\inetsrv\\w3wp.exe" then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

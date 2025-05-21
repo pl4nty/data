@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".wfweger" or (pesecs[4]).Name == ".gergreg" then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.suspicious_timestamp then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

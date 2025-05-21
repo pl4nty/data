@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.sub)((sigattr_head[1]).p1, 2, 7), "%d+") then
+if peattributes.ismsil and pehdr.NumberOfSections == 3 and (mp.getfilesize)() == 80384 then
   return mp.INFECTED
 end
 return mp.CLEAN

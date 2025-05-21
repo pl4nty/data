@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 339417 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("MpAPILimitReached") then
-  (pe.set_peattribute)("disable_apicall_limit", true)
+if (string.find)(l_0_0, "\\dllhost.exe", 1, true) or (string.find)(l_0_0, "\\explorer.exe", 1, true) then
+  return mp.CLEAN
 end
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
 return mp.INFECTED
 

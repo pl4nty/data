@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pesecs[1]).Name == "   " then
+if peattributes.no_security and (peattributes.isexe or peattributes.isdll) then
   return mp.INFECTED
 end
 return mp.CLEAN

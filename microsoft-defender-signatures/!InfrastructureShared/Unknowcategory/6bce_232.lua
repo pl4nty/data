@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "\198\005")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 13, "")
-return mp.INFECTED
+if peattributes.ismsil and peattributes.amd64_image and peattributes.requests_elevation then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

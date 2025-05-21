@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (pe.get_exports)()
-for l_0_5 = 1, l_0_0 do
-  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "ServiceMain" then
-    return mp.INFECTED
-  end
+if (mp.getfilesize)() < 2097152 then
+  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+  ;
+  (mp.set_mpattribute)("NScript:NoParsingLimits")
+  return mp.INFECTED
 end
 return mp.CLEAN
 

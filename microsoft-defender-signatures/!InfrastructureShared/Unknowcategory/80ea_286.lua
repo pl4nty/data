@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.format)("HSTR:VirTool:Win32/Obfuscator.ZG!upk.1_%08X_%08X", (hstrlog[1]).VA, (hstrlog[2]).VA)
-;
-(mp.set_mpattribute)(l_0_0)
-return mp.SUSPICIOUS
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = (string.lower)(l_0_0.image_path)
+if l_0_1:match("([^\\]+)$") == "spoolsv.exe" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

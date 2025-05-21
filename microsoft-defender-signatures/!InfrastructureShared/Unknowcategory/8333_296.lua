@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil and (this_sigattrlog[5]).utf8p2 ~= nil then
-  (bm.add_related_file)((this_sigattrlog[5]).utf8p1)
-  ;
-  (bm.add_related_file)((this_sigattrlog[5]).utf8p2)
+if ((sigattr_head[1]).attribute == 12363 and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12375) or (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12381 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

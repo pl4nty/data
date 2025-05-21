@@ -3,18 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_PATH)
-if l_0_0 then
-  local l_0_1 = (sysio.FindFiles)(l_0_0, "*.pdb", 4)
-  if l_0_1 then
-    for l_0_5,l_0_6 in pairs(l_0_1) do
-      (mp.ReportLowfi)(l_0_6, 3390914334)
-    end
-  end
+if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
+  return mp.CLEAN
 end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.INFECTED
-  return l_0_1
+if (pe.get_exports)() > 35 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

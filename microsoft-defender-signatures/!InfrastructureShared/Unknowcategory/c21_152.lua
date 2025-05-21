@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Softobase")
+(mp.set_mpattribute)("PUA:Block:AdGazelle")
 return mp.INFECTED
 

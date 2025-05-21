@@ -3,9 +3,18 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -17) == "searchindexer.exe" or (string.sub)(l_0_0, -22) == "searchprotocolhost.exe" or (string.sub)(l_0_0, -20) == "searchfilterhost.exe" then
-  return mp.INFECTED
+local l_0_0 = (mp.GetBruteMatchData)()
+do
+  local l_0_1 = ""
+  if l_0_0.is_header then
+    l_0_1 = (string.lower)(tostring(headerpage))
+  else
+    l_0_1 = (string.lower)(tostring(footerpage))
+  end
+  if l_0_1 > 3 then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
-return mp.CLEAN
 

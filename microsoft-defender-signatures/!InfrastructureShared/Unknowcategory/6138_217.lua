@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_sigattr_event_count)(16385) > 2 or (mp.get_sigattr_event_count)(16386) > 2 then
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:Airpush.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

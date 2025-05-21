@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_4")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 11, "\000")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -10) == "chrome.exe" then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

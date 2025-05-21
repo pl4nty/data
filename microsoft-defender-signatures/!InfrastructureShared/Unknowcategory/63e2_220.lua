@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/InvisibleFerret.A!dha")
-return mp.INFECTED
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:MacBooster.E")
+  return mp.INFECTED
+end
+return mp.LOWFI
 

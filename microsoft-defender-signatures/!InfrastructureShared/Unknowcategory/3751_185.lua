@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_image_filename)("c:\\syshost.exe")
+(pe.set_peattribute)("deep_analysis", true)
 ;
 (pe.reemulate)()
 return mp.INFECTED

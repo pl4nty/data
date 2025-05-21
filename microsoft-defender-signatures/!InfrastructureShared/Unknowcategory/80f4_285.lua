@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.isexe == true then
+if pehdr.NumberOfSections == 3 and peattributes.epinfirstsect and (pesecs[pehdr.NumberOfSections]).Name == ".rsrc" then
   return mp.INFECTED
-else
-  if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true then
-    return mp.INFECTED
-  end
 end
 return mp.CLEAN
 

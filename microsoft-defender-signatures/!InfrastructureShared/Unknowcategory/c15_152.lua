@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Softpulse")
-return mp.INFECTED
+(mp.set_mpattribute)("//HSTR:VadokristXors.A")
+return mp.CLEAN
 

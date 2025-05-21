@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:InstallMonster")
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.INFECTED
 

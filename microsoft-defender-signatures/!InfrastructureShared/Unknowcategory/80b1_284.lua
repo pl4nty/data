@@ -3,12 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("pea_enable_vmm_grow") then
-  (pe.set_peattribute)("enable_vmm_grow", true)
-  ;
-  (pe.reemulate)()
-else
-  return mp.INFECTED
+if peattributes.isdll == false and (mp.getfilesize)() < 600000 then
+  return mp.SUSPICIOUS
 end
+;
+(mp.set_mpattribute)("HSTR:Obfuscator_CheckApiArtifact2")
 return mp.CLEAN
 

@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.enable_vmm_grow and (mp.get_mpattribute)("MpHasExpensiveLoop") and peattributes.dynmem_APIcall and peattributes.suspicious_linker_version then
-  return mp.INFECTED
+do
+  if peattributes.isdll == true and (mp.get_mpattribute)("NID:Trojan:Win64/Rootkit.GZ") then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

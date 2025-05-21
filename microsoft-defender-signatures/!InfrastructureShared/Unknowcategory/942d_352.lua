@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.reads_vdll_code and (mp.get_mpattribute)("LoD:VirTool:Win32/Obfuscator.UR") and (mp.getfilesize)() >= 300000 and (mp.getfilesize)() < 900000 then
-  return mp.INFECTED
+local l_0_0 = (pe.get_regval)(pe.REG_EBX)
+local l_0_1 = (pe.get_api_id)(l_0_0)
+if l_0_1 == 1269389306 then
+  (mp.set_mpattribute)("lua_codepatch_Obfuscator.zg")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 16, "")
 end
 return mp.CLEAN
 

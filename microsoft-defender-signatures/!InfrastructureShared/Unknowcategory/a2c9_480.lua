@@ -3,23 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = nil, nil
-for l_0_5 = 1, mp.SIGATTR_LOG_SZ do
-  local l_0_2, l_0_3 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R5 in 'UnsetPending'
-
-  if (sigattr_head[R5_PC6]).matched then
-    if (sigattr_head[R5_PC6]).attribute == 16384 or (sigattr_head[R5_PC6]).attribute == 16385 then
-      l_0_3 = (string.lower)((sigattr_head[R5_PC6]).utf8p1)
-    else
-      if (sigattr_head[R5_PC6]).attribute == 16393 then
-        l_0_2 = (string.lower)((sigattr_head[R5_PC6]).utf8p2)
-      end
-    end
-    if l_0_3 and l_0_2 and (string.find)(l_0_2, l_0_3) then
+do
+  if peattributes.isexe then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 > 5447680 and l_0_0 < 6164480 and (pe.query_import)(pe.IMPORT_STATIC, 3164448353) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2744197095) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 2717511079) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 537135066) ~= 0 and (pe.query_import)(pe.IMPORT_STATIC, 3293213921) ~= 0 then
       return mp.INFECTED
     end
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

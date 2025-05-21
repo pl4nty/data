@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_sigattr_event_count)(16385) > 4 and (mp.get_sigattr_event_count)(16386) > 4 then
+if (mp.getfilesize)() < 1536000 and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

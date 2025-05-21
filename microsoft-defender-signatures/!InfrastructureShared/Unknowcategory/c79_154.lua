@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:InstalleRex")
+(mp.set_mpattribute)("PUA:Block:Linkury:Bit")
 return mp.INFECTED
 

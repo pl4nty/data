@@ -3,12 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)((string.sub)(l_0_0, -12))
-  if l_0_0 == "\\svchost.exe" and MpCommon.SECURITY_MANDATORY_MEDIUM_RID < ((bm.get_current_process_startup_info)()).integrity_level then
-    return mp.CLEAN
+local l_0_1 = nil
+do
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).wp1 ~= nil then
+    local l_0_0, l_0_2 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), nil
+    ;
+    (bm.add_related_file)(l_0_0)
+  end
+  do
+    if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).wp1 ~= nil then
+      local l_0_3 = nil
+      ;
+      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1))
+    end
+    return mp.INFECTED
   end
 end
-return mp.INFECTED
 

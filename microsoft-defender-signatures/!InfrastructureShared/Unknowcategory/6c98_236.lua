@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.x86_image and peattributes.suspicious_linker_version then
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/LummaC.G") then
   return mp.INFECTED
 end
 return mp.CLEAN

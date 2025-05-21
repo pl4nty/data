@@ -3,35 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 20000 or l_0_0 > 400000 then
-  return mp.CLEAN
-end
-local l_0_1 = tostring(footerpage)
-local l_0_2, l_0_3, l_0_4 = (string.find)(l_0_1, "\'..?.?.?.?.?.?.?.?.?\'[,%+]")
-if l_0_2 == nil then
-  return mp.CLEAN
-end
-while 1 do
-  if 0 < 250 then
-    l_0_2 = (string.find)(l_0_1, "\'..?.?.?.?.?.?.?.?.?\'[,%+]", l_0_3)
-  end
-  if l_0_2 == nil then
-    break
-  end
-  if #l_0_1 - 20 < l_0_3 then
-    break
-  end
-  -- DECOMPILER ERROR at PC43: Confused about usage of register: R5 in 'UnsetPending'
-
-  local l_0_5 = 0 + 1
+if (hstrlog[1]).matched then
+  (mp.readprotection)(false)
+  local l_0_0 = (mp.readfile)(0, (mp.getfilesize)())
+  local l_0_1 = (pe.foffset_va)((hstrlog[1]).VA)
+  ;
+  (mp.writeu_u32)(l_0_0, l_0_1 + 1, (hstrlog[1]).VA + 4)
+  ;
+  (mp.vfo_add_buffer)(l_0_0, "locale_patched", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 end
 do
-  -- DECOMPILER ERROR at PC45: Confused about usage of register: R5 in 'UnsetPending'
-
-  if l_0_5 > 200 then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

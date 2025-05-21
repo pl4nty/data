@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 ~= nil and l_0_0.ppid ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+if peattributes.x86_image == true and peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_uidata == true and peattributes.no_exception == true and peattributes.no_mipsgp == true and peattributes.no_boundimport == true and peattributes.no_ep == true then
+  return mp.INFECTED
 end
-local l_0_1 = (bm.get_imagepath)()
-local l_0_2, l_0_3 = (bm.get_process_relationships)()
-for l_0_7,l_0_8 in ipairs(l_0_3) do
-  if l_0_8.image_path == l_0_1 then
-    (MpCommon.RequestSmsOnProcess)(l_0_8.ppid, MpCommon.SMS_SCAN_MED)
-  end
-end
-return mp.INFECTED
+return mp.CLEAN
 

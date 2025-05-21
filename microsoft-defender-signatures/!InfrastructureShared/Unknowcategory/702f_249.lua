@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and (pesecs[1]).Name == "   " then
+local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
+if (string.find)(l_0_0, "document.xml") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

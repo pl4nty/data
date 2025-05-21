@@ -3,16 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil == true and (mp.getfilesize)() < 10000 and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 917504 and l_0_0 <= 958464 and pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 6 and (mp.get_mpattribute)("NID:GerWiper.A!Pra1") then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

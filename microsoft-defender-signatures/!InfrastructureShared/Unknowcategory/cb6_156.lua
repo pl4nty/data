@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(bm.add_action)("EmsScan", 3000)
+(mp.set_mpattribute)("PUA:Block:Privitize:Bit")
 return mp.INFECTED
 

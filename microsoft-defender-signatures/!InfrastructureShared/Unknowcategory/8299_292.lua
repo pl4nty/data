@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if peattributes.packed and (mp.get_mpattribute)("SIGATTR:deepemu") and (mp.get_mpattribute)("SIGATTR:VirTool:Win32/Obfuscator.QG") then
+  return mp.SUSPICIOUS
 end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

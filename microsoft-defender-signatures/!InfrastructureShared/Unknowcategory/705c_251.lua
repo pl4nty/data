@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.sub)(l_0_0, -12) == "rundll32.exe" then
+local l_0_0 = (mp.getfilesize)()
+if (mp.get_mpattribute)("NID:Win64/Qakbot.PAN!MTB") and l_0_0 > 131072 and l_0_0 < 327680 then
   return mp.INFECTED
 end
 return mp.CLEAN

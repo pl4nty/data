@@ -3,20 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-  do
-    do
-      if l_0_0:len() > 13 and (string.sub)(l_0_0, -13) == "\\win32spl.dll" then
-        local l_0_1 = (string.lower)((bm.get_imagepath)())
-        if (string.sub)(l_0_1, -11) == "svchost.exe" then
-          return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0 and (MpCommon.GetPersistContextCountNoPath)("OfficeWmiProc") > 0 then
+    local l_0_1 = (MpCommon.GetPersistContextNoPath)("OfficeWmiProc")
+    if (string.find)(l_0_0, "wmiprvse.exe", 1, true) then
+      for l_0_5,l_0_6 in ipairs(l_0_1) do
+        if (sysio.IsFileExists)(l_0_6) then
+          (bm.add_related_file)(l_0_6)
         end
       end
-      ;
-      (bm.add_related_file)(l_0_0)
       return mp.INFECTED
     end
   end
+  return mp.CLEAN
 end
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (hstrlog[4]).hitcount >= 50 then
+if peattributes.no_security == true and peattributes.isexe == true and peattributes.amd64_image == true then
   return mp.INFECTED
 end
 return mp.CLEAN

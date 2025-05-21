@@ -3,21 +3,8 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
--- DECOMPILER ERROR at PC9: Overwrote pending register: R1 in 'AssignReg'
-
-if l_0_0 ~= nil then
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC19: Overwrote pending register: R2 in 'AssignReg'
-
-  local l_0_2 = nil
-  l_0_2 = l_0_2 .. "\000\000"
-  ;
-  (mp.ReportLowfi)(l_0_2, 618978737)
+if pehdr.NumberOfSections ~= 4 or peattributes.epinfirstsect == false or (pesecs[2]).SizeOfRawData ~= 40960 or (pesecs[2]).Name ~= ".data1" or (hstrlog[1]).VA ~= pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+  return mp.CLEAN
 end
-do
-  return mp.INFECTED
-end
+return mp.INFECTED
 

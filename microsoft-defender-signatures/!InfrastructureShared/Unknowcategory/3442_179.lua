@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Clean:Cert:KLab") then
-  return mp.CLEAN
+if (mp.get_mpattribute)("Nscript:Type_js") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

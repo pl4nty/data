@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetUACMetadata)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if l_0_0.Type ~= mp.AMSI_UAC_REQUEST_TYPE_EXE then
-  return mp.CLEAN
-end
-if (string.sub)((string.lower)((l_0_0.Info).ApplicationName), -24) == "exesampleuacdetected.exe" or (string.sub)((string.lower)((l_0_0.Info).CommandLine), -25) == "exesampleuacdetected.exe\"" or (string.sub)((string.lower)((l_0_0.Info).CommandLine), -62) == "exesampleuacdetected-9f298338-4c4e-49e8-bd3b-9a3d453c9b79.exe\"" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_tibs_16")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 36)
+local l_0_2 = (mp.readu_u32)(l_0_0, 6)
+local l_0_3 = (mp.readu_u32)(l_0_0, 18)
+local l_0_4 = (mp.readu_u32)(l_0_0, 29)
+local l_0_5 = (pe.get_regval)(pe.REG_EDX)
+local l_0_6 = (mp.ror32)(l_0_5 + 1, 1) - (mp.bitxor)(l_0_4, l_0_3) + l_0_1 - l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_6)
+return mp.INFECTED
 

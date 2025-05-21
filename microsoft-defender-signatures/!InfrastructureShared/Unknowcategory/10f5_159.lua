@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:OptimumInstaller")
-return mp.INFECTED
+if (mp.getfilesize)() < 48000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and pehdr.MajorImageVersion == 13 and pehdr.MinorImageVersion == 32 then
-  (mp.changedetectionname)(805306482)
+if peattributes.isdll == true then
+  if peattributes.amd64_image and not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

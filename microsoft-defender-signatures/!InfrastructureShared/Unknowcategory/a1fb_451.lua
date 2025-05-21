@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
-local l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
-if l_0_0 == nil or (string.find)(l_0_1, "\\windows\\system32\\", 1, true) or (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
-  return mp.CLEAN
+local l_0_0 = (pe.get_regval)(pe.REG_EBP)
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr, 8)
+local l_0_2 = (mp.readu_u32)(l_0_1, 3)
+l_0_1 = (pe.mmap_va)((mp.bitand)(l_0_0 + l_0_2, 4294967295), 4)
+local l_0_3 = (mp.readu_u32)(l_0_1, 1) + 1
+l_0_1 = (pe.mmap_va)(l_0_3, 4)
+if (mp.readu_u32)(l_0_1, 1) == 707406378 then
+  return mp.SUSPICIOUS
 end
-;
-(bm.add_related_file)(l_0_1)
-return mp.INFECTED
+return mp.CLEAN
 

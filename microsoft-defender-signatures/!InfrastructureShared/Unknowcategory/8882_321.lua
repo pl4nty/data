@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-if (pe.get_exports)() ~= 1 then
-  return mp.CLEAN
-end
-if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "main" then
+local l_0_0 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 2, 1))
+local l_0_1 = (string.byte)((pe.mmap_va)(pevars.sigaddr + 5, 1))
+if l_0_0 + l_0_1 == 87 or l_0_1 - l_0_0 == 87 then
   return mp.INFECTED
 end
 return mp.CLEAN

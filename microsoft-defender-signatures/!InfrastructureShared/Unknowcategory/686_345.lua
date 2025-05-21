@@ -3,19 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
+local l_0_0 = (bm.get_current_process_startup_info)()
 do
-  if (this_sigattrlog[9]).matched and (this_sigattrlog[9]).utf8p1 ~= nil then
-    local l_0_0 = nil
+  if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+    local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
+    if l_0_1 ~= nil and l_0_1.image_path ~= nil and (sysio.IsFileExists)(l_0_1.image_path) then
+      (bm.add_related_file)(l_0_1.image_path)
+    end
   end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and (string.find)((string.lower)(l_0_0), "\\appdata\\local\\temp\\", 1, true) then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

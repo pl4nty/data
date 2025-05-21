@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
-if not (string.find)(l_0_0, "/upload", 1, true) then
-  return mp.INFECTED
+if (pe.query_import)(pe.IMPORT_STATIC, 1000219088) == 0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pe.query_import)(pe.IMPORT_STATIC, 1830286805) == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

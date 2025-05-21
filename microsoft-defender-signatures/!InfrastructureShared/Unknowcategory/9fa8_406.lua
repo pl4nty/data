@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and (pesecs[pehdr.NumberOfSections]).Name == ".htext" and (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096480 and ((pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3758096448 or (pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3791650880) then
+if (string.match)((string.lower)((mp.getfilename)()), "%.jpg$") or (string.match)((string.lower)((mp.getfilename)()), "%.jpeg$") or (string.match)((string.lower)((mp.getfilename)()), "%.png$") or (string.match)((string.lower)((mp.getfilename)()), "%.gif$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

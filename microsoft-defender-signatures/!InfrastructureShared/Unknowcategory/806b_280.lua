@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if (string.find)(l_0_1, " %d%d%d?%d?%d?", 1, false) then
-  return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (string.match)((this_sigattrlog[1]).utf8p1, "%.ini$") ~= nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

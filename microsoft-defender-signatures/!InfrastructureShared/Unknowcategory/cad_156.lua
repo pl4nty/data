@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 40000 then
+if (mp.getfilesize)() > 100000 then
   return mp.CLEAN
 end
 return mp.LOWFI

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 50, "\235")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 86, "")
-return mp.INFECTED
+local l_0_0 = ((mp.getfilename)()):lower()
+if (string.find)(l_0_0, ":\\users\\", 1, true) ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

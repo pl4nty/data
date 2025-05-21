@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:TeamRedMiner")
+(mp.set_mpattribute)("PUA:Block:EWBFEquihash")
 return mp.INFECTED
 

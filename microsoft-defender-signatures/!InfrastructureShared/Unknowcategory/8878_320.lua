@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if epcode[2] == 131 and epcode[3] == 236 and epcode[5] == 232 and epcode[11] == 131 and epcode[12] == 196 and epcode[14] == 233 then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((mp.utf16to8)((this_sigattrlog[1]).wp1))
+    if l_0_0 ~= nil and (string.find)(l_0_0, "\\%d+%.exe") ~= nil then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

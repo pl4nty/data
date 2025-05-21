@@ -3,15 +3,15 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[6]).matched then
-    local l_0_0 = nil
-    if (string.find)(l_0_0, "/download", 1, true) ~= nil then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if mp.HSTR_WEIGHT > 5 then
+  return mp.INFECTED
 end
+if mp.HSTR_WEIGHT > 4 then
+  return mp.SUSPICIOUS
+end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+;
+(pe.reemulate)()
+return mp.CLEAN
 

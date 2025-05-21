@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis")
+(mp.set_mpattribute)("PUA:Block:SoftPulse")
 return mp.INFECTED
 

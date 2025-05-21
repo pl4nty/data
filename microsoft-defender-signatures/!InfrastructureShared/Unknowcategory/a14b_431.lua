@@ -3,8 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.suspicious_falign == true and peattributes.no_comruntime == true and peattributes.no_delayimport == true and peattributes.no_uidata == true then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2 = nil
+  end
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and (string.find)(l_0_0, "frombase64string", 1, true) and (string.find)(l_0_0, "wsqmcons", 1, true) and (string.find)(l_0_0, "iex", 1, true) then
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

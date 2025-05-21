@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
-  return mp.CLEAN
+if (mp.get_mpattribute)("PACKED_WITH:(SWC)") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

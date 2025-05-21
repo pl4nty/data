@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") and (mp.getfilesize)() < 9000000 and ((mp.get_mpattribute)("HSTR:Win32/DelphiFile") or (mp.get_mpattribute)("SIGATTR:DelphiFile") or peattributes.is_delphi or peattributes.isvbpcode or peattributes.isvbnative) then
+if mp.HSTR_WEIGHT >= 12 then
+  (mp.set_mpattribute)("PUA:Block:SGMinerGM")
   return mp.INFECTED
+end
+if (mp.bitand)(mp.HSTR_WEIGHT, 3) >= 2 then
+  if peattributes.amd64_image then
+    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_sgminer")
+  else
+    ;
+    (mp.set_mpattribute)("do_exhaustivehstr_rescan_sgminer")
+  end
 end
 return mp.CLEAN
 

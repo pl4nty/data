@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isdll == true or peattributes.isexe == true then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    if l_0_0 ~= nil and #l_0_0 > 0 and (mp.IsTrustedFile)() then
-      return mp.CLEAN
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "odbior_1000%d%d%d%d%d%d%d%d%dU.vbs") ~= nil or (string.find)(l_0_0, "przesylka_1000%d%d%d%d%d%d%d%d%dU.vbs") ~= nil then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

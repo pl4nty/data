@@ -3,8 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched and not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched and not (hstrlog[7]).matched and not (hstrlog[8]).matched) or (not (hstrlog[9]).matched and not (hstrlog[10]).matched and not (hstrlog[11]).matched and not (hstrlog[12]).matched and not (hstrlog[13]).matched and not (hstrlog[14]).matched and not (hstrlog[15]).matched and not (hstrlog[16]).matched) or ((hstrlog[17]).matched or (hstrlog[18]).matched)) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_tibs_22")
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - 4, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+l_0_0 = (pe.mmap_va)(pevars.sigaddr, 52)
+local l_0_2 = (mp.readu_u32)(l_0_0, 6)
+local l_0_3 = (string.byte)(l_0_0, 14)
+local l_0_4 = (string.byte)(l_0_0, 17)
+local l_0_5 = (string.byte)(l_0_0, 20)
+local l_0_6 = (mp.readu_u32)(l_0_0, 22)
+local l_0_7 = (string.byte)(l_0_0, 28)
+local l_0_8 = (mp.readu_u32)(l_0_0, 32)
+local l_0_9 = (mp.readu_u32)(l_0_0, 43)
+local l_0_10 = (pe.get_regval)(pe.REG_EDX)
+local l_0_11 = (mp.ror32)((mp.ror32)((mp.ror32)(l_0_10, l_0_3) - l_0_4, l_0_5) + l_0_6, l_0_7) - (mp.bitxor)(l_0_9, l_0_8) + l_0_1 - l_0_2
+;
+(pe.set_regval)(pe.REG_EBX, l_0_11)
+return mp.INFECTED
 

@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsTrustedFile)(false) ~= false then
-  return mp.CLEAN
-end
-if mp.HSTR_WEIGHT >= 3 then
+if ((pe.get_versioninfo)()).InternalName == "Bluthmon.exe" and ((pe.get_versioninfo)()).CompanyName == "Mototech.co" then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT >= 2 then
-  return mp.LOWFI
-end
-return mp.CLEAN
+return mp.LOWFI
 

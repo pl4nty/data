@@ -3,23 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil then
-  return mp.CLEAN
+if peattributes.isdll and epcode[1] == 106 and epcode[2] == 16 and epcode[3] == 104 and epcode[4] == 0 and epcode[5] == 2 and epcode[6] == 0 and epcode[7] == 0 and epcode[8] == 104 and epcode[9] == 44 and epcode[10] == 250 and epcode[11] == 250 and epcode[12] == 255 then
+  return mp.INFECTED
 end
-if l_0_0:find("program files", 1, true) then
-  return mp.CLEAN
-end
-if l_0_0:find("system32", 1, true) then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.PathToWin32Path)(l_0_0)
-if l_0_1 == nil then
-  return mp.CLEAN
-end
-local l_0_2 = (string.find)(l_0_1, "->")
-if l_0_2 then
-  l_0_1 = (string.sub)(l_0_1, 1, l_0_2 - 1)
-end
-return mp.INFECTED
+return mp.CLEAN
 

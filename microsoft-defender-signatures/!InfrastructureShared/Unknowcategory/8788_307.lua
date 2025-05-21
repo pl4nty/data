@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 139 and epcode[2] == 255 and peattributes.isdll == true and peattributes.hasexports == false and peattributes.no_security == true then
+local l_0_0 = (mp.hstr_full_log)()
+if not l_0_0 then
   return mp.INFECTED
 end
-return mp.CLEAN
+if (l_0_0[2]).matched or (l_0_0[3]).matched then
+  (mp.TriggerScanResource)("folder", "c:\\tempcaches\\", 0, 5000)
+end
+return mp.INFECTED
 

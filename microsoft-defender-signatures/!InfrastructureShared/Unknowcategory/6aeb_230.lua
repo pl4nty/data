@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("pea_headerchecksum0") then
-  return mp.INFECTED
+if pehdr.NumberOfSections ~= 9 or (hstrlog[1]).VA ~= 4214784 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

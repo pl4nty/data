@@ -3,9 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 <= 393216 and l_0_0 >= 327680 and (pesecs[4]).Name == ".py" then
-  return mp.INFECTED
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0 = (this_sigattrlog[1]).utf8p1
+    ;
+    (mp.TriggerScanResource)("file", l_0_0, 0)
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

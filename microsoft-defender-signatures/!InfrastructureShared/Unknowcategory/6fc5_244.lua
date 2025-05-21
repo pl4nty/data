@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_process_relationships)()
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  if l_0_5.image_path ~= nil then
-    (bm.add_related_file)(l_0_5.image_path)
-  end
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0 ~= nil and l_0_0:find("putty", 1, true) ~= nil then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

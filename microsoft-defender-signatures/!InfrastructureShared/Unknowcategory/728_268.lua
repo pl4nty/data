@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 6) == true then
-  (mp.set_mpattribute)("Lua:MpEnableE5EmergencyAntiTampering")
+if (mp.get_mpattribute)("MpInternal_IsPliScan") and (mp.get_mpattribute)("BM_TEXT_FILE") then
+  (mp.set_mpattribute)("NScript:JSEnableEmulation")
 end
 return mp.CLEAN
 

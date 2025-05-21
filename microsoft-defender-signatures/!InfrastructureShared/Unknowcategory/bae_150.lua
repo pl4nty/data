@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Bassmod")
+(mp.set_mpattribute)("HSTR:CipdukLoader")
 return mp.INFECTED
 

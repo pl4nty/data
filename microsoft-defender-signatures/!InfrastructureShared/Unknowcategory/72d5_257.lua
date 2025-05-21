@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".gentee" and peattributes.isexe == true and peattributes.no_security == true then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security and peattributes.ismsil == true and l_0_0 >= 4096 and l_0_0 <= 12288 then
   return mp.INFECTED
 end
 return mp.CLEAN

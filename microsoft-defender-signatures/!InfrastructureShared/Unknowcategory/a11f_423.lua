@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
-if l_0_0 == nil then
+if (string.lower)(((pe.get_versioninfo)()).OriginalFilename) == "ultraviewer_service.exe" then
   return mp.CLEAN
 end
-local l_0_1 = {}
-l_0_1["Trojan:Win32/TIImpersonation.A!sms"] = true
-l_0_1["Trojan:Win32/TIImpersonation.B!sms"] = true
-l_0_1["Trojan:Win32/W3WP_BackdoorDLL"] = true
-l_0_1["Trojan:Win32/ShellMemoryArtifacts.B"] = true
-l_0_1["Trojan:Win32/ShellMemoryArtifacts.C"] = true
-if l_0_1[l_0_0] then
+if peattributes.is_process then
   return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
+  end
 end
 return mp.INFECTED
 

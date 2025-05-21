@@ -12,25 +12,25 @@ end
 if peattributes.hasstandardentry == true then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections ~= 6 then
+if pehdr.NumberOfSections ~= 5 then
   return mp.CLEAN
 end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1633972270 then
+if (pesecs[1]).PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+if (pesecs[pehdr.NumberOfSections]).NameDW ~= 0 then
   return mp.CLEAN
 end
 if (pesecs[1]).NameDW ~= 2019914798 then
   return mp.CLEAN
 end
-if epcode[1] ~= 139 then
+if epcode[1] ~= 80 then
   return mp.CLEAN
 end
-if epcode[2] ~= 237 then
+if epcode[2] ~= 104 then
   return mp.CLEAN
 end
-if epcode[3] ~= 235 then
-  return mp.CLEAN
-end
-if (pesecs[1]).PointerToRawData ~= 1024 then
+if epcode[7] ~= 232 then
   return mp.CLEAN
 end
 return mp.INFECTED

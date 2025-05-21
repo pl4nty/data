@@ -3,11 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.find)((string.lower)(l_0_6.image_path), "data\\winscan.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "zalo.exe", 1, true) or (string.find)((string.lower)(l_0_6.image_path), "htkk.exe", 1, true)) then
-    return mp.CLEAN
-  end
+if not peattributes.isdll then
+  return mp.CLEAN
 end
+;
+(mp.readprotection)(false)
+local l_0_0 = (pe.mmap_va)((pe.get_regval)(pe.REG_EAX), 4)
+local l_0_1 = (string.byte)(l_0_0) - 1
+local l_0_2 = (string.byte)(l_0_0, 3) + 16
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX), (string.char)(l_0_1))
+;
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EAX) + 2, (string.char)(l_0_2))
 return mp.INFECTED
 

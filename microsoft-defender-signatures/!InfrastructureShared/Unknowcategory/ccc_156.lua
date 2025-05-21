@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:SystemCleaner")
+(mp.set_mpattribute)("PUA:Block:LoadMoney:Bit")
 return mp.INFECTED
 

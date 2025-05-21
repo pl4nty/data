@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil and peattributes.ismsil == true then
-    return mp.CLEAN
-  end
+if (pesecs[7]).Name == ".mackt" and (pesecs[8]).Name == ".topo0" and (pesecs[13]).Name == ".Orion" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

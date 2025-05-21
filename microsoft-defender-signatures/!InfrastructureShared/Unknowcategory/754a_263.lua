@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.sub)((sigattr_head[1]).p1, 2, 7), "%d+") then
+if peattributes.ismsil and peattributes.has_msilresources and (hstrlog[2]).hitcount > 300 then
   return mp.INFECTED
 end
 return mp.CLEAN

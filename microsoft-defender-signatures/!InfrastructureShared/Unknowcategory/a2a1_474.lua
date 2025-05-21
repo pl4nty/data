@@ -3,18 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr - 30, 64)
-local l_0_1 = (mp.readu_u32)(l_0_0, 1)
-if (mp.readu_u32)(l_0_0, 47) ~= l_0_1 then
-  return mp.CLEAN
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = ""
+if l_0_0.is_header then
+  l_0_1 = (string.lower)(tostring(headerpage))
+else
+  l_0_1 = (string.lower)(tostring(footerpage))
 end
-local l_0_2 = (mp.readu_u32)(l_0_0, 8)
-l_0_0 = (pe.mmap_va)(l_0_2, 4)
-local l_0_3 = (pe.get_api_id)((mp.readu_u32)(l_0_0, 1))
-if l_0_3 ~= 1269389306 then
-  return mp.CLEAN
+l_0_1 = (string.gsub)(l_0_1, " ", "")
+l_0_1 = (string.gsub)(l_0_1, "`", "")
+if (string.find)(l_0_1, "globalassemblycache", 1, true) then
+  return mp.INFECTED
 end
-;
-(pe.mmap_patch_va)(l_0_1, "\221\a\005\000")
-return mp.INFECTED
+return mp.CLEAN
 

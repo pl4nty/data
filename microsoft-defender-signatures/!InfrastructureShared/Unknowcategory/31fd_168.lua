@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
+if peattributes.reads_vdll_code then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:XMRStak")
+(mp.set_mpattribute)("PUA:Block:CCMiner")
 return mp.INFECTED
 

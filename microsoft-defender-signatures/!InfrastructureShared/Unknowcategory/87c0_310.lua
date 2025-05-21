@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 6 then
+local l_0_0 = "(.+\\)"
+local l_0_1 = (string.match)((string.lower)((this_sigattrlog[1]).utf8p1), l_0_0)
+if l_0_1 ~= nil and l_0_1 == (string.match)((string.lower)((this_sigattrlog[2]).utf8p1), l_0_0) then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT > 5 then
-  return mp.SUSPICIOUS
-end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-;
-(pe.reemulate)()
 return mp.CLEAN
 

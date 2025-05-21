@@ -3,6 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("MpInternal_RichData_Ex")
-return mp.CLEAN
+(sysio.StopService)("mssecsvc2.0")
+;
+(sysio.DeleteService)("mssecsvc2.0")
 

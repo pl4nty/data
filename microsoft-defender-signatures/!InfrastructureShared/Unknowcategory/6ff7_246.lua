@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and (mp.get_mpattribute)("InEmail") then
+if peattributes.ismsil == true and pehdr.NumberOfSections == 3 and peattributes.isexe == true then
   return mp.INFECTED
 end
 return mp.CLEAN

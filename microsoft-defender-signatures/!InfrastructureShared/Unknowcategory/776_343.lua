@@ -3,16 +3,25 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched then
-  local l_0_0 = (this_sigattrlog[1]).utf8p2
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
   if l_0_0 ~= nil then
-    local l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_0)
-    if (sysio.IsFileExists)(l_0_1) then
-      (bm.add_related_file)(l_0_1)
+    local l_0_2 = nil
+    local l_0_3 = (string.lower)(l_0_0:match("\\([^\\]+)$"))
+    if ({["microsoft.com"] = true})[l_0_3] then
+      return mp.INFECTED
     end
   end
-end
-do
-  return mp.INFECTED
+  do
+    return mp.CLEAN
+  end
 end
 

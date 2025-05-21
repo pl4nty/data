@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:AddLyrics")
+(mp.set_mpattribute)("PUA:Block:ClickMeIn")
 return mp.INFECTED
 

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (nri.IsResponse)() == false then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_regval)(pe.REG_EAX, 4574)
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 11 and (pesecs[7]).Name == ".app0" and (pesecs[9]).Name == ".app1" and (pesecs[10]).Name == ".app2" then
+if (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RW!MTB") and (mp.getfilesize)() < 250000 and (mp.getfilesize)() > 220000 and peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

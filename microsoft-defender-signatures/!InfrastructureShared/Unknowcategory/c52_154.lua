@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("SIGATTR:CCXPO_13_wKSU")
-return mp.INFECTED
+(mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+return mp.CLEAN
 

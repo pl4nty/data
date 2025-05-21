@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or not (hstrlog[3]).matched) and not (hstrlog[4]).matched) or 0 + 1 + 1 == 2 then
-  return mp.INFECTED
+do
+  if peattributes.isexe and peattributes.no_security == false and peattributes.ismsil == false then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 >= 1126400 and l_0_0 <= 1945600 then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

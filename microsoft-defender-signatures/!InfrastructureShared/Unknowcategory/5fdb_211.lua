@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 5 and (hstrlog[5]).hitcount > 3 then
+if mp.HSTR_WEIGHT == 2 and (hstrlog[2]).hitcount > 30 then
   return mp.INFECTED
 end
 return mp.CLEAN

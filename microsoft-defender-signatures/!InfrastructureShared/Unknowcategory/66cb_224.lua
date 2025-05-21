@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.ismsil == true and l_0_0 > 458752 and l_0_0 < 589824 then
+if (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,7 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 100 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_1 = tostring((mp.readfile)(0, 100))
+if (string.find)(l_0_1, "\\rt[^f]") ~= nil or (string.find)(l_0_1, "\\rtf[^1]") ~= nil or (string.find)(l_0_1, "\\rtf1[^\\]") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+for l_0_3 = mp.SIGATTR_LOG_SZ, 1, -1 do
+  if (sigattr_head[l_0_3]).matched and (sigattr_head[l_0_3]).attribute == 16384 then
+    local l_0_4 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[l_0_3]).utf8p1)
+    if l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
+      (mp.ReportLowfi)(l_0_4, 1501004956)
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.INFECTED
 

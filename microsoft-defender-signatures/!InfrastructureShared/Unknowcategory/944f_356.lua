@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("hstr_exhaustive", true)
-;
-(pe.reemulate)()
-;
-(mp.set_mpattribute)("do_deep_rescan")
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-if mp.HSTR_WEIGHT == 2 then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:find("\\extensions", 1, true) then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if l_0_0:find("\\inetcache", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

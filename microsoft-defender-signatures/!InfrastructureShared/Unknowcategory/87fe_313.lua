@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and (mp.getfilesize)() > 9500000 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if not peattributes.isdll or not peattributes.hasexports then
   return mp.CLEAN
 end
+local l_0_0 = 0
+if (hstrlog[1]).matched then
+  l_0_0 = (hstrlog[1]).hitcount
+end
+if l_0_0 >= 3 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

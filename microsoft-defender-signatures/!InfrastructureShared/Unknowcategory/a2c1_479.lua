@@ -3,16 +3,20 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_locals_symbols_stripped") and (mp.getfilesize)() < 176128 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if not l_0_0 then
   return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if not l_0_1 or #l_0_1 <= 60 then
+  return mp.CLEAN
+end
+l_0_1 = (string.gsub)((string.lower)(l_0_1), "`", "")
+if (string.find)(l_0_1, "pipeclient", 1, true) and (string.find)(l_0_1, "pipewriter", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

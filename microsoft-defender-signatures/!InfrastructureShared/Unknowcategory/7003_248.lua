@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, ".rtf->word", 1, true) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+;
+(bm.add_threat_file)(l_0_0)
+return mp.INFECTED
 

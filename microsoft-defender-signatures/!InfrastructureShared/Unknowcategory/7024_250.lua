@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 3 then
-  return mp.INFECTED
+if not peattributes.amd64_image then
+  return mp.CLEAN
 end
-;
-(pe.set_peattribute)("deep_analysis", true)
-;
-(pe.reemulate)()
-return mp.CLEAN
+if not peattributes.enable_vmm_grow then
+  (pe.set_peattribute)("enable_vmm_grow", true)
+end
+return mp.INFECTED
 

@@ -3,16 +3,19 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_suspicious_section_name") and (mp.getfilesize)() >= 892928 and (mp.getfilesize)() < 917504 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+if (mp.get_mpattribute)("pea_isdll") and (mp.getfilesize)() < 153600 then
+  local l_0_0, l_0_1 = (pe.get_exports)()
+  if l_0_1 == nil or l_0_0 == 0 then
+    return mp.CLEAN
   end
+  for l_0_5 = 1, l_0_0 do
+    local l_0_6 = (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64)
+    if l_0_6 ~= nil and (string.lower)(l_0_6) == "dllgetclassobject" then
+      return mp.INFECTED
+    end
+  end
+end
+do
   return mp.CLEAN
 end
 

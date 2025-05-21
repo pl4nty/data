@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (nri.GetHttpCommand)() ~= nri.HTTP_POST then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+do
+  if l_0_0 == mp.SCANREASON_ONOPEN then
+    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+    if l_0_1 == "new folder.exe" or l_0_1 == "documents.exe" or l_0_1 == "music.exe" or l_0_1 == "pictures.exe" or l_0_1 == "videos.exe" or l_0_1 == "recycler.exe" then
+      (mp.set_mpattribute)("Lowfi:SIGATTR:Worm:Win32/PossibleSillyShareCopy.gen")
+    end
+  end
   return mp.CLEAN
 end
-local l_0_0 = {}
-l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent")
-l_0_0["accept-encoding"] = (nri.GetHttpRequestHeader)("Accept-Encoding")
-l_0_0.host = (nri.GetHttpRequestHeader)("Host")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
 

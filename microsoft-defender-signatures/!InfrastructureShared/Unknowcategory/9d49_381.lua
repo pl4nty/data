@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 do
-  if peattributes.isexe == true and (mp.getfilesize)() < 245762 and (mp.get_mpattribute)("pea_no_security") then
+  if peattributes.isexe == true and (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 12000000 then
     local l_0_0 = (mp.GetCertificateInfo)()
     for l_0_4,l_0_5 in pairs(l_0_0) do
       if l_0_5.Signers ~= nil then

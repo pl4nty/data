@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isdll or peattributes.isexe or peattributes.ismsil) and peattributes.no_security then
+if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") then
   return mp.INFECTED
 end
 return mp.CLEAN

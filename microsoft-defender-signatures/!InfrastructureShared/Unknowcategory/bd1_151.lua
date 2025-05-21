@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Isrocore")
-return mp.INFECTED
+(mp.set_mpattribute)("HSTR:PossibleVcEpStub")
+return mp.CLEAN
 

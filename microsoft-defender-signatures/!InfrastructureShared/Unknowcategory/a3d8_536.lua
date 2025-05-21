@@ -3,27 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil then
-    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
-    if l_0_7 == 1 then
-      local l_0_8, l_0_9 = (bm.get_process_relationships)(l_0_6.ppid)
-      for l_0_13,l_0_14 in ipairs(l_0_8) do
-        if l_0_14.image_path ~= nil then
-          local l_0_15 = (mp.bitand)(l_0_14.reason_ex, 1)
-          if l_0_15 == 1 then
-            local l_0_16 = (string.lower)(l_0_14.image_path)
-            if (string.find)(l_0_16, "excel.exe", 1, true) or (string.find)(l_0_16, "winword.exe", 1, true) then
-              return mp.INFECTED
-            end
-          end
-        end
-      end
-    end
-  end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 16)
+local l_0_1 = (mp.readu_u32)(l_0_0, 3)
+local l_0_2 = (pe.mmap_va)(l_0_1, 6)
+if (string.byte)(l_0_2, 1) == 83 and (string.byte)(l_0_2, 2) == 108 and (string.byte)(l_0_2, 3) == 101 and (string.byte)(l_0_2, 4) == 101 and (string.byte)(l_0_2, 5) == 112 and (string.byte)(l_0_2, 6) == 0 then
+  return mp.INFECTED
 end
-do return mp.CLEAN end
--- DECOMPILER ERROR at PC67: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
+return mp.CLEAN
 

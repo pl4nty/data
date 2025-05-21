@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 and (string.find)((string.lower)(l_0_0.image_path), "sbsimulation_sb_", 1, true) then
+if ((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or (not (hstrlog[3]).matched and not (hstrlog[4]).matched) or (hstrlog[5]).matched) then
   return mp.INFECTED
 end
 return mp.CLEAN

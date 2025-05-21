@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_spector")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_spector")
+if peattributes.amd64_image and (pesecs[pehdr.NumberOfSections - 1]).Characteristics == 3221225472 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

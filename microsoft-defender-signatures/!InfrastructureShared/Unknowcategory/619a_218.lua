@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "->(Rtf", 1, true) == nil then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr, "\199\005")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "\235")
 return mp.INFECTED
 

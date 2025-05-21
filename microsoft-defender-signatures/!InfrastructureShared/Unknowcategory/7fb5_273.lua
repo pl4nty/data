@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("FOPEX:VirTool:Win32/Obfuscator.AKN") then
-  (pe.mmap_patch_va)(pevars.sigaddr + 6, "É¿\t")
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 3, 4)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(pe.mmap_patch_va)(l_0_1, "\221\a")
 return mp.INFECTED
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(bm.trigger_sig)("Meterpreter", "VmAllocsx64")
+(bm.trigger_sig)("Meterpreter", "VmAllocsx86")
 return mp.CLEAN
 

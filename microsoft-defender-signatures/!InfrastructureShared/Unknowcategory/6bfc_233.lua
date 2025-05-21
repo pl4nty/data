@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.SUSPICIOUS
+if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("HSTR:VirTool:Win32/AscUrlExe") then
+  return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOV")
 return mp.CLEAN
 

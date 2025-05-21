@@ -7,7 +7,7 @@ local l_0_0 = this_sigattrlog[1]
 if not l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = l_0_0.utf8p1
+local l_0_1 = l_0_0.utf8p2
 if not l_0_1 then
   return mp.CLEAN
 end

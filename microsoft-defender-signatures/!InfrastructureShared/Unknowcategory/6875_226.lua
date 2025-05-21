@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and peattributes.hasexports then
-  (mp.set_mpattribute)("ChangeEPtoExport")
+if peattributes.isdll == true and peattributes.amd64_image and peattributes.no_security == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

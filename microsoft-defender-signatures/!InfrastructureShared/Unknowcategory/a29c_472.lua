@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 237568 then
-  if mp.HSTR_WEIGHT == 11 then
-    return mp.SUSPICIOUS
-  end
-  ;
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 2000000 or l_0_0 < 4000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if (((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL))):lower()):find("program files", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

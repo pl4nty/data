@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.hasappendeddata and peattributes.x86_image then
+if (mp.get_mpattribute)("MpExcelFormulaRoutines") and (mp.get_mpattribute)("RPF:XlsAbnormalSheetStateBits") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:Reboon") then
+if (hstrlog[1]).hitcount > 4 then
   return mp.INFECTED
 end
 return mp.CLEAN

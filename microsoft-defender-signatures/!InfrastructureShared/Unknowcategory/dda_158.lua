@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true then
-  return mp.LOWFI
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

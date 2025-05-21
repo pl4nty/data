@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (mp.get_mpattribute)("Sigattr:TrojanSpy:Win32/Banker.gen!E.1") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

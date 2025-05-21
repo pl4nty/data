@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[4]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[4]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[4]).p2)
-  if l_0_0 and l_0_1 and (string.find)(l_0_0, "^%d%d%d+") and (string.find)(l_0_1, "^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)$") then
-    return mp.INFECTED
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p2)
+  local l_0_1 = (string.gmatch)(l_0_0, "::readallbytes%([\'\"](.+%.lnk)[\'\"]%)")
+  for l_0_5 in l_0_1 do
+    if (sysio.IsFileExists)(l_0_5) then
+      (bm.add_related_file)(l_0_5)
+    end
   end
-  return mp.CLEAN
 end
 do
-  return mp.CLEAN
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

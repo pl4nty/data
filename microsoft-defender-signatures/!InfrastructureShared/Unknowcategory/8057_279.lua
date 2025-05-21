@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("HSTR:Trojan:Win32/Colisi")
-if mp.HSTR_WEIGHT >= 4 then
+if (mp.get_mpattribute)("SIGATTR:DeleteMyAppExe") and (mp.get_mpattribute)("SIGATTR:DropMZ") and (mp.get_mpattribute)("SIGATTR:WRITESYSDIR") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

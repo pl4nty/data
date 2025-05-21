@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:find("\\wscript.exe") then
-      return mp.INFECTED
-    end
-  end
+if (mp.IsTrustedFile)(false) ~= false then
   return mp.CLEAN
 end
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.INFECTED
+end
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

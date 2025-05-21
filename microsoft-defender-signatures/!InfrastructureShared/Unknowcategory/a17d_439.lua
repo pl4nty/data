@@ -3,16 +3,25 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil then
+if not peattributes.isdll or not peattributes.hasexports then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((string.sub)(l_0_0.image_path, -12))
-if l_0_1 ~= "wmiprvse.exe" or l_0_1 == "explorer.exe" or (string.sub)(l_0_1, -7) == "mmc.exe" then
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 8 then
   return mp.CLEAN
 end
-if (versioning.GetLocaleIdentifier)() == 1049 then
-  return mp.LOWFI
+local l_0_2 = 0
+for l_0_6 = 1, l_0_0 do
+  local l_0_7 = (pe.mmap_string_rva)((l_0_1[l_0_6]).namerva, 64)
+  if l_0_7 == "Open" then
+    l_0_2 = l_0_2 + 1
+  end
+  if l_0_7 == "Close" then
+    l_0_2 = l_0_2 + 1
+  end
 end
-return mp.CLEAN
+if l_0_2 < 2 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

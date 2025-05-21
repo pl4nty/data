@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 0 and (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 then
+do
+  if (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_amd64_image") and (mp.getfilesize)() >= 208384 and (mp.getfilesize)() < 232960 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if (hstrlog[4]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[5]).hitcount == 0 and (hstrlog[6]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

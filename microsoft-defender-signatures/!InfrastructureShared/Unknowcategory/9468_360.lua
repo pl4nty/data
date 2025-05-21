@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:find("\\program files", 1, true) then
-  return mp.CLEAN
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 65, 32)
+local l_0_1 = (mp.readu_u32)(l_0_0, 1)
+;
+(pe.mmap_patch_va)(l_0_1, "\b\000\000\000")
+;
+(pe.set_regval)(pe.REG_ESI, l_0_1)
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "ÎF")
 return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") then
+if (mp.get_mpattribute)("SIGATTR:ASEP") and peattributes.reads_vdll_code then
   return mp.INFECTED
 end
 return mp.CLEAN

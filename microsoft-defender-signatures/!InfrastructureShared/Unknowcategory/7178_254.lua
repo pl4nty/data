@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 290000 then
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.reemulate)()
+if peattributes.ismsil == true and peattributes.isexe == true and peattributes.amd64_image and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

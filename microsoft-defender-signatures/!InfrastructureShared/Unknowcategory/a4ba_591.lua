@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("lua_codepatch_tibs_8")
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
-local l_0_1 = (string.byte)(l_0_0, 3)
-local l_0_2 = (string.byte)(l_0_0, 6)
-local l_0_3 = (mp.readu_u32)(l_0_0, 15)
-local l_0_4 = (mp.readu_u32)(l_0_0, 26)
-local l_0_5 = (pe.get_regval)(pe.REG_EDX)
-local l_0_6 = (string.byte)(l_0_0, 11)
-local l_0_7 = (mp.ror32)(l_0_5, l_0_6) - (mp.bitxor)(l_0_4, l_0_3) - l_0_1 + l_0_2
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 98304 then
+  return mp.CLEAN
+end
+if l_0_0 < 81920 then
+  return mp.CLEAN
+end
+local l_0_1 = tostring(headerpage)
+if (string.find)(l_0_1, "\n", 1, true) ~= nil then
+  return mp.CLEAN
+end
+if (string.match)(l_0_1, "%(function%((%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+),(%x%x%x%x%x%x%x%x%x%x+)") == nil then
+  return mp.CLEAN
+end
 ;
-(pe.set_regval)(pe.REG_EBX, l_0_7)
-return mp.INFECTED
+(mp.set_mpattribute)("SCRIPT:Worm:JS/Proslikefan_Lowfi3")
+return mp.CLEAN
 

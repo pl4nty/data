@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:ClickRunSoftware")
-return mp.INFECTED
+if peattributes.ismsil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

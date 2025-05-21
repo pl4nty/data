@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win32/Fragtor.AD!MTB")) then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("SLF:Win64/Shelcorid.B")
-return mp.LOWFI
+return mp.CLEAN
 

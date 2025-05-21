@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if l_0_0 ~= nil then
-    local l_0_1 = (mp.GetProcessCommandLine)(l_0_0.ppid)
-    if (string.find)(l_0_1, " --headless ", 1, true) then
-      return mp.INFECTED
+  if peattributes.ismsil and peattributes.isexe then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

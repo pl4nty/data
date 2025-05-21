@@ -3,30 +3,25 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[3]).matched or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2) ~= nil) and (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2) ~= "" then
-    local l_0_5 = nil
-    for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p2))) do
-      local l_0_6 = nil
-      -- DECOMPILER ERROR at PC37: Confused about usage of register: R6 in 'UnsetPending'
-
-      if R6_PC37 ~= nil and R6_PC37 ~= "" and (sysio.IsFileExists)(R6_PC37) and not (mp.IsKnownFriendlyFile)(R6_PC37, false, false) then
-        (bm.add_related_file)(R6_PC37)
-      end
-    end
-  end
-  do
-    return mp.INFECTED
-  end
+local l_0_0 = ((bm.get_current_process_startup_info)())
+local l_0_1, l_0_2 = nil, nil
+if (this_sigattrlog[1]).matched then
+  l_0_1 = (this_sigattrlog[1]).timestamp
 end
+if (this_sigattrlog[2]).matched then
+  l_0_1 = (this_sigattrlog[2]).timestamp
+end
+if (this_sigattrlog[3]).matched then
+  l_0_1 = (this_sigattrlog[3]).timestamp
+end
+if (this_sigattrlog[5]).matched then
+  l_0_2 = (this_sigattrlog[5]).timestamp
+end
+if (this_sigattrlog[6]).matched then
+  l_0_2 = (this_sigattrlog[6]).timestamp
+end
+if l_0_0.ppid == nil or (string.find)(l_0_0.ppid, "pid:4$", 1, false) ~= nil or (string.find)(l_0_0.ppid, "pid:4,", 1, true) ~= nil or l_0_2 < l_0_1 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

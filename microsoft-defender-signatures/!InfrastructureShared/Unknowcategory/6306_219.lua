@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isdll and peattributes.ismsil then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.dt_error_heur_exit_criteria then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

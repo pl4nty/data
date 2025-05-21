@@ -3,7 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:VirTool:Win32/Injector.gen!BM") and (mp.get_mpattribute)("HSTR:HasSEH") and (mp.get_mpattribute)("Lua:DealPlyFileName") then
+local l_0_0 = (mp.getfilename)()
+l_0_0 = (l_0_0.lower)(l_0_0)
+if (string.find)(l_0_0, ".py", 1, true) or (string.find)(l_0_0, ".ps1", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

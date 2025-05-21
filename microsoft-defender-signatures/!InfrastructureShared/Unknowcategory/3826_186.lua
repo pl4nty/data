@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 1, "\245")
 return mp.INFECTED
 

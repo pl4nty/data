@@ -3,19 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if l_0_1 ~= nil then
-  local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    if (sysio.IsFileExists)(l_0_7) then
-      (bm.add_related_file)(l_0_7)
-    end
-  end
+if (mp.get_mpattribute)("SLF:Win32/Sysdupate.E") then
+  return mp.CLEAN
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.INFECTED
-  return l_0_2
+if ((hstrlog[1]).matched and not (hstrlog[2]).matched) or 0 + (hstrlog[1]).hitcount + (hstrlog[2]).hitcount >= 4 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

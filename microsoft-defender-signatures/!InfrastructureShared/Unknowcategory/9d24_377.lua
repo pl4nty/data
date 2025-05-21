@@ -3,17 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if (string.find)(l_0_1, "\\windows\\system32\\services.exe", 1, true) then
-      if (versioning.IsSeville)() then
-        return mp.INFECTED
-      end
-      return mp.LOWFI
-    end
-  end
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
   return mp.CLEAN
 end
+if l_0_0.integrity_level < ((MpCommon.GetProcessElevationAndIntegrityLevel)(l_0_0.ppid)).IntegrityLevel then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

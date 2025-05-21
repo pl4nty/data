@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  return mp.INFECTED
+if peattributes.isexe == false then
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_swiminen")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_swiminen")
+if peattributes.no_resources == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if peattributes.hasappendeddata == false then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

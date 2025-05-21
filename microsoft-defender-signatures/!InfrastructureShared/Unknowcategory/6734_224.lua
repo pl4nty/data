@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.lower)((mp.getfilename)()), "%.m4$") ~= nil then
+if pehdr.NumberOfSections == 2 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

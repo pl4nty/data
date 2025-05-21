@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSymbols > 80 and pehdr.NumberOfSections > 10 then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Tunenup.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

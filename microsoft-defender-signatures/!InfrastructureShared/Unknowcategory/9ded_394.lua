@@ -3,7 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.get_mpattribute)("HSTR:NSIS_Installer") or (mp.get_mpattribute)("HSTR:NSIS.gen!A")) and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).Size == 0 then
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 < 4 then
+  return mp.CLEAN
+end
+local l_0_2 = {}
+l_0_2.ExecutePatch = 1
+l_0_2["Main@12"] = 1
+l_0_2.MakeUuid = 1
+l_0_2.kAiCode = 1
+local l_0_3 = 0
+for l_0_7 = 1, l_0_0 do
+  local l_0_8 = (pe.mmap_string_rva)((l_0_1[l_0_7]).namerva, 64)
+  if l_0_2[l_0_8] then
+    l_0_3 = l_0_3 + l_0_2[l_0_8]
+  end
+end
+if l_0_3 == 4 then
   return mp.INFECTED
 end
 return mp.CLEAN

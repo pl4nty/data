@@ -3,14 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).wp2 == nil then
-  return mp.CLEAN
+local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_1 = l_0_0.match_offset
+local l_0_2 = ""
+if l_0_0.is_header then
+  l_0_2 = (tostring(headerpage)):sub(l_0_1 - 256, l_0_1 + 1)
+  l_0_2 = (string.gsub)(l_0_2, "(.)(.)", "%2")
+else
+  l_0_2 = (tostring(footerpage)):sub(l_0_1 - 256, l_0_1 + 1)
+  l_0_2 = (string.gsub)(l_0_2, "(.)(.)", "%2")
 end
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and ((string.lower)((string.sub)(l_0_6.image_path, -12)) == "\\wscript.exe" or (string.lower)((string.sub)(l_0_6.image_path, -12)) == "\\cscript.exe") then
-    return mp.INFECTED
-  end
+l_0_2 = (string.lower)(l_0_2)
+if (string.find)(l_0_2, ".connected -or $", 1, true) then
+  return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

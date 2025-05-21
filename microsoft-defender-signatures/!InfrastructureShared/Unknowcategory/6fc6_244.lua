@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/LockCrypt.PA!Pra1") then
+if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
   return mp.INFECTED
 end
 return mp.CLEAN

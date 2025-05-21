@@ -3,16 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-do
-  if l_0_0 then
-    local l_0_1 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
-    if l_0_0:find(l_0_1, 1, true) then
-      return mp.CLEAN
-    end
-  end
-  ;
-  (bm.trigger_sig)("SuspRedirAttempt", "DllDrop")
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if (mp.get_mpattribute)("NID:PossibleParadiseSh") and peattributes.no_security == true and l_0_0 <= 8704 and l_0_0 >= 7680 and peattributes.isdll == false and pehdr.NumberOfSections == 4 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

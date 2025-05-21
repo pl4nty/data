@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 5 and (pesecs[5]).Name == ".idata" then
+if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 16924672 then
   return mp.INFECTED
 end
 return mp.CLEAN

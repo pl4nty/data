@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((this_sigattrlog[1]).utf8p1, "\\%l%l%l%l%l%l%d%.exe") ~= nil then
+if peattributes.isdll == true and (mp.get_mpattribute)("NID:Trojan:Win32/GhostSocks.G5") then
   return mp.INFECTED
 end
 return mp.CLEAN

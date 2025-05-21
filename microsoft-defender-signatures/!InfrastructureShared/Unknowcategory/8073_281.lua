@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-local l_0_1 = l_0_0.command_line
-if (string.find)(l_0_1, " %d%d%d?%d?%d? ", 1, false) then
-  return mp.INFECTED
-end
+local l_0_0 = (pe.get_regval)(pe.REG_EDI)
+;
+(mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.7_k1_%08X_%02X", l_0_0, 2))
 return mp.CLEAN
 

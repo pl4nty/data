@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.UfsSetMetadataBool)("PSScriptWithServiceStopCommand", true)
+(mp.set_mpattribute)("//SCPT:TrojanSpy:AndroidOS/DmsSpy.BB1")
 return mp.INFECTED
 

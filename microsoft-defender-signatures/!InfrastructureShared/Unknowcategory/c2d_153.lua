@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:RenoFlossLoader")
-return mp.INFECTED
+(mp.set_mpattribute)("SIGATTR:RunExplorerHttp")
+return mp.LOWFI
 

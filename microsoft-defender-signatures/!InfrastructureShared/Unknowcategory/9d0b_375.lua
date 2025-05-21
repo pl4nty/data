@@ -4,7 +4,13 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 172032 and l_0_0 <= 184320 and pehdr.NumberOfSections >= 5 and pehdr.NumberOfSections <= 7 and (pesecs[3]).Name == "EJf-ov" then
+if l_0_0 > 20480 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.readheader)(0, 16)
+local l_0_2 = (string.find)(l_0_1, "\000\001\000\000\000\255\255\255\255\001\000\000\000\000\000\000", 1, true)
+if l_0_2 then
+  (mp.set_mpattribute)("BM_SerializedObj.A")
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  if (mp.get_mpattribute)("pea_isexe") then
-    local l_0_0 = (pe.get_versioninfo)()
-    if l_0_0.InternalName == "VideoProjectsLauncher" or l_0_0.CompanyName == "Microsoft Corporation" or l_0_0.OriginalFilename == "VideoProjectsLauncher.exe" then
-      return mp.INFECTED
-    end
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
   end
-  return mp.CLEAN
+  if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p1 == nil or (string.lower)((string.sub)((this_sigattrlog[3]).utf8p1, -11)) == "\\target.lnk" then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
 

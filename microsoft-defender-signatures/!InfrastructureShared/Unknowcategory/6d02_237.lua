@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignatur") or peattributes.isexe == false then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

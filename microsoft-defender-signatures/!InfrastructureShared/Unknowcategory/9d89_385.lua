@@ -3,14 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "wmiprvse.exe" or l_0_1:match("([^\\]+)$") == "mshta.exe" or l_0_1:match("([^\\]+)$") == "rundll32.exe" or l_0_1:match("([^\\]+)$") == "wscript.exe" then
-      return mp.INFECTED
-    end
-  end
+if pehdr.NumberOfSections > 4 then
   return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 5242880 then
+  return mp.CLEAN
+end
+for l_0_4 = 1, pehdr.NumberOfSections do
+  if (string.lower)(tostring((pesecs[l_0_4]).Name)) == ".shell" then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

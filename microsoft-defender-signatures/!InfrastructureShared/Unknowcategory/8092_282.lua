@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
+if mp.HSTR_WEIGHT == 20 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
   ;
-  (mp.SMSAsyncScan)(l_0_0.ppid)
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT == 22 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:PicoTorrent")
+(mp.set_mpattribute)("PUA:Block:InstalleRex")
 return mp.INFECTED
 

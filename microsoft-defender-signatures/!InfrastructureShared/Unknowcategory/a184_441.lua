@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("Lua:XMLExt") then
-    local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-    if l_0_0:find("abusepreventionengineconfig.xml", 1, true) then
-      (mp.set_mpattribute)("MpNonPIIFileType")
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = 256 - (string.byte)((pe.mmap_va)(pevars.sigaddr + 8, 1))
+if (mp.readu_u32)((pe.mmap_va)((pe.get_regval)(pe.REG_EBP) - l_0_0, 4), 1) ~= 139 then
   return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "\235")
+return mp.INFECTED
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+(mp.set_mpattribute)("AllowList:SEsendlog.A")
 return mp.INFECTED
 

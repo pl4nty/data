@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Einstall")
+(mp.set_mpattribute)("PUA:Block:Softonic")
 return mp.INFECTED
 

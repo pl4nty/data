@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:XMRig")
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrig")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrig")
+if (string.find)(l_0_0, "\\persbackup.exe", 1, true) or (string.find)(l_0_0, "\\wdbackupengine.exe", 1, true) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

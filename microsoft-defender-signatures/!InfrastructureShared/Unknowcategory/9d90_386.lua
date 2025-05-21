@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_regval)(pe.REG_EAX)
-local l_0_1 = (pe.get_api_id)(l_0_0)
-if l_0_1 ~= 671954542 then
+do
+  if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win32/Ekstak.GM!MTB")) then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 29, "\235")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
-return mp.INFECTED
 

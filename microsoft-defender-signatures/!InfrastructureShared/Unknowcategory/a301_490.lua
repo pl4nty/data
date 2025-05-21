@@ -3,20 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[4]).matched then
-  (mp.readprotection)(false)
-  local l_0_0 = (pe.mmap_va)((hstrlog[4]).VA - 27, 80)
-  local l_0_1 = (mp.readu_u32)(l_0_0, 2)
-  local l_0_2 = (pe.mmap_va)(l_0_1, 16)
-  for l_0_6 = 1, 16 do
-    local l_0_7 = (string.byte)(l_0_2, l_0_6)
-    if l_0_7 < 48 or l_0_7 > 90 or l_0_7 == 64 then
-      return mp.CLEAN
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC7: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC8: Overwrote pending register: R1 in 'AssignReg'
+
+do
+  local l_0_1 = "AGGR:ContextFileInclusion.A"
+  -- DECOMPILER ERROR at PC9: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC10: Overwrote pending register: R3 in 'AssignReg'
+
+  for l_0_5,l_0_6 in ("Lua:Win32/ExeFileWithExport.A")("SIGATTR:MatchRegOpenKey") do
+    if (mp.get_mpattributevalue)(l_0_6) ~= nil and l_0_1 >= 6 then
+      return mp.INFECTED
     end
   end
-  return mp.INFECTED
-end
-do
-  return mp.CLEAN
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

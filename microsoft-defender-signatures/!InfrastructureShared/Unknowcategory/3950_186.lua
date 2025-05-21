@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
+if not peattributes.isexe and not peattributes.isvbpcode then
   return mp.CLEAN
 end
-return mp.INFECTED
+return mp.LOWFI
 

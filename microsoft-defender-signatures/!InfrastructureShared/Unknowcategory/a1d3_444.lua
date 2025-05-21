@@ -3,22 +3,20 @@
 
 -- params : ...
 -- function num : 0
+if (this_sigattrlog[1]).matched then
+  local l_0_0 = (this_sigattrlog[1]).utf8p2
+  if l_0_0 ~= nil then
+    local l_0_1 = (mp.GetExecutablesFromCommandLine)(l_0_0)
+    for l_0_5,l_0_6 in ipairs(l_0_1) do
+      if (sysio.IsFileExists)(l_0_6) and (string.find)(l_0_6, "regsvr32", 1, true) == nil then
+        (bm.add_related_file)(l_0_6)
+      end
+    end
+  end
+end
 do
-  if ((hstrlog[9]).matched and not (hstrlog[10]).matched) or (hstrlog[11]).matched then
-    local l_0_0, l_0_1 = 0 + 1 + 1 + 1
-  end
-  -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-  if mp.HSTR_WEIGHT >= 100 and l_0_0 >= 2 then
-    return mp.INFECTED
-  end
-  -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 >= 3 and (hstrlog[12]).matched then
-    return mp.INFECTED
-  end
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  return mp.CLEAN
+  l_0_0 = mp
+  l_0_0 = l_0_0.INFECTED
+  return l_0_0
 end
 

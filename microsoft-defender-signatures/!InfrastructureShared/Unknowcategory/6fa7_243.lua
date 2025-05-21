@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") and peattributes.no_security == true then
+local l_0_0 = ((mp.getfilename)()):lower()
+if (string.find)(l_0_0, ":\\users\\", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:PoCExchgStrings")
-return mp.CLEAN
+(mp.set_mpattribute)("PUA:Block:Ufasoft")
+return mp.INFECTED
 

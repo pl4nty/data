@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 315392 and (mp.getfilesize)() < 327680 then
+if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 98304 and (mp.getfilesize)() < 126976 then
   return mp.INFECTED
 end
 return mp.CLEAN

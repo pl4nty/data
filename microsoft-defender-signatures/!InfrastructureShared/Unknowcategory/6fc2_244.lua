@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
+if (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 536870912) == 536870912 then
   return mp.INFECTED
 end
 return mp.CLEAN

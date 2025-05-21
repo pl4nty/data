@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("enable_vmm_grow", true)
-;
-(pe.reemulate)()
+(pe.mmap_patch_va)(pevars.sigaddr + 13, "")
 return mp.INFECTED
 

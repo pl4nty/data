@@ -6,7 +6,7 @@
 if peattributes.isexe == false or peattributes.no_imports == true then
   return mp.CLEAN
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 2358328843) ~= 0 or (pe.query_import)(pe.IMPORT_STATIC, 3567207411) ~= 0 then
+if (pe.query_import)(pe.IMPORT_STATIC, 2974543303) ~= 0 or (pe.query_import)(pe.IMPORT_STATIC, 4277576534) ~= 0 then
   return mp.INFECTED
 end
 return mp.CLEAN
