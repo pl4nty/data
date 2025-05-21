@@ -616,6 +616,7 @@
         "IsEnabledClientAgentSDKOnGov": true,
         "IsEnabledIncreaseANCCap": true,
         "IsEndpointConfigrationEnabled": true,
+        "IsNewDGSAPIEnabled": true,
         "MAC_Refresh_Token_IWP": true,
         "MFA_IWP": true,
         "MISE_IWP": true,

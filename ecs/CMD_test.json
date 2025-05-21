@@ -1157,6 +1157,7 @@
         "SendIncrementVMAndHostPools": true,
         "SendLogsToGeneva": true,
         "SendRasActionHistoryToDenormalize": true,
+        "SendScopeTagToDenormalize": true,
         "SendUpgradeMessageFlight": true,
         "SeparateCreateAndUpdateImageVersion": true,
         "ShareSnapshotSwitchToAMS": true,
