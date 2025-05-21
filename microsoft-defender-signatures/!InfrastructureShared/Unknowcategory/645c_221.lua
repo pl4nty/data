@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[7]).Name == "grYKEXdm" and (pesecs[8]).Name == "VruEoiBa" then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "->(pdf", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

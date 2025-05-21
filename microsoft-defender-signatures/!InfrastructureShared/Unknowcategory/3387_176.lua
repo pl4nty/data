@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if hstrlog[3] or hstrlog[4] then
+if (mp.get_mpattribute)("//RPF:IS_Lnk") then
   return mp.INFECTED
 end
 return mp.CLEAN

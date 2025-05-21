@@ -3,15 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:CoinMiner")
-  return mp.INFECTED
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  if l_0_1:find("\\powershell.exe") then
+    local l_0_2 = (mp.GetProcessCommandLine)(l_0_0.ppid)
+    if l_0_2 ~= nil then
+      l_0_2 = (string.lower)(l_0_2)
+      if l_0_2:find("iex", 1, true) then
+        return mp.INFECTED
+      end
+    end
+  end
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_coinminer")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_coinminer")
+do
+  return mp.CLEAN
 end
-return mp.CLEAN
 

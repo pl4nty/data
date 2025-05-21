@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
-  (mp.set_mpattribute)("PUA:Block:RefogKeylogger")
+if (pesecs[1]).Name == "UPX0" and (pesecs[1]).SizeOfRawData == 0 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

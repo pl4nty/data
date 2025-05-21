@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (((hstrlog[12]).matched and (hstrlog[13]).matched) or not (hstrlog[14]).matched or (hstrlog[15]).matched) and peattributes.no_security == true then
+if peattributes.no_security == true and peattributes.isexe == true and (pesecs[2]).Name == ".managed" and (pesecs[2]).Characteristics == 1610612768 then
   return mp.INFECTED
 end
 return mp.CLEAN

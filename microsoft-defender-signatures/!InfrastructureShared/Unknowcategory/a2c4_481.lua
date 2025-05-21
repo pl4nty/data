@@ -3,17 +3,29 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = nil
-for l_0_4 = mp.SIGATTR_LOG_SZ, 1, -1 do
-  local l_0_1 = nil
-  -- DECOMPILER ERROR at PC6: Confused about usage of register: R4 in 'UnsetPending'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-  if (sigattr_head[R4_PC6]).matched and ((sigattr_head[R4_PC6]).attribute == 16384 or (sigattr_head[R4_PC6]).attribute == 16389) then
-    l_0_1 = (mp.ContextualExpandEnvironmentVariables)((sigattr_head[R4_PC6]).utf8p1)
-    if l_0_1 ~= nil and (sysio.IsFileExists)(l_0_1) then
-      (mp.ReportLowfi)(l_0_1 .. "\000", 3307547556)
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    local l_0_2 = nil
+    for l_0_6,l_0_7 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
+      local l_0_3 = nil
+      -- DECOMPILER ERROR at PC27: Confused about usage of register: R6 in 'UnsetPending'
+
+      if (string.find)((string.lower)(R6_PC27), "\\javaw.exe") == nil and (sysio.IsFileExists)(R6_PC27) then
+        (bm.add_related_file)(R6_PC27)
+      end
     end
   end
+  do
+    return mp.INFECTED
+  end
 end
-return mp.INFECTED
 

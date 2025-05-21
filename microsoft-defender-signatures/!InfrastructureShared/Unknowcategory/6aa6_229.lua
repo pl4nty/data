@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
-  return mp.INFECTED
+if not (mp.get_mpattribute)("pea_enable_vmm_grow") then
+  (mp.set_mpattribute)("pea_enable_vmm_grow")
+  ;
+  (pe.reemulate)()
 end
 return mp.CLEAN
 

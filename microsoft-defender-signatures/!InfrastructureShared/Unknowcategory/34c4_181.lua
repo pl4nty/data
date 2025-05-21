@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:GolangBinary") then
+if (mp.get_mpattribute)("MpCmdLineFoundB64") then
   return mp.INFECTED
 end
 return mp.CLEAN

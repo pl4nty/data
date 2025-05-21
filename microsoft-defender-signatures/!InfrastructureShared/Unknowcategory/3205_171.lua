@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 10000)
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

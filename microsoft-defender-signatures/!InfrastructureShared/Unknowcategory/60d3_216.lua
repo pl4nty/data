@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
-  (mp.set_mpattribute)("PUA:Block:Aircrack")
+if (pesecs[pehdr.NumberOfSections]).Characteristics == 3758096480 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

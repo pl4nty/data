@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if (string.find)(l_0_0, "\\mmc.exe") then
-  return mp.CLEAN
-else
-  if (string.find)(l_0_0, "\\officeclicktorun.exe") then
-    return mp.CLEAN
-  end
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 22, 22)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 19, "\187" .. l_0_1 .. "\000\000\000êê\144")
 return mp.INFECTED
 

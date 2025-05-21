@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:NSIS_Installer") or (mp.get_mpattribute)("HSTR:NSIS.gen!A") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "oleObject%d%.bin$") ~= nil or (string.find)(l_0_0, "%.bin%->%(Ole Stream %d%)$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

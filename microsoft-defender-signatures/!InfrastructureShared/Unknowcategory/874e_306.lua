@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 235 and epcode[2] == 8 and epcode[3] == 15 and epcode[4] == 98 and peattributes.isexe then
-  return mp.INFECTED
+if (pe.isdynamic_va)(pevars.sigaddr) then
+  (pe.set_regval)(pe.REG_EAX, 0)
+  ;
+  (mp.set_mpattribute)("PEBMPAT:Simda:AntiEmuTimeStampCheck")
 end
 return mp.CLEAN
 

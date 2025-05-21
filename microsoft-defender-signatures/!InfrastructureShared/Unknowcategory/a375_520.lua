@@ -3,17 +3,22 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched then
-  if (hstrlog[1]).hitcount >= 3 and (mp.getfilesize)() <= 131072 and (mp.getfilesize)() >= 4096 then
-    local l_0_0 = (mp.readheader)(0, 1024)
-    local l_0_1 = (mp.readfooter)(mp.FOOTERPAGE_SZ - 1024, 1024)
-    if (string.find)(l_0_0, "MAD!", 1, true) ~= nil and (string.find)(l_0_1, "MAD!", 1, true) ~= nil then
-      return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+if MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+  return mp.CLEAN
+end
+local l_0_1 = (bm.get_imagepath)()
+do
+  if l_0_1 ~= nil then
+    local l_0_2 = {}
+    l_0_2["cmstp.exe"] = true
+    l_0_2["dllhost.exe"] = true
+    if l_0_2[((string.lower)((string.sub)(l_0_1, -15))):match("\\([^\\]+)$")] then
+      return mp.CLEAN
     end
   end
-  do
-    do return mp.CLEAN end
-    return mp.INFECTED
-  end
+  ;
+  (bm.add_related_file)(l_0_1)
+  return mp.INFECTED
 end
 

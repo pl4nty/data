@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 and (pesecs[1]).SizeOfRawData > 1245184 then
+if (mp.get_mpattribute)("SIGATTR:VirTool:Win32/Injector.gen!BM") and (mp.get_mpattribute)("HSTR:HasSEH") and (mp.get_mpattribute)("Lua:DealPlyFileName") then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

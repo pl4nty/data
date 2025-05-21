@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode ~= true and peattributes.isvbnative ~= true then
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or not (mp.get_mpattribute)("pea_hasexports") then
   return mp.CLEAN
 end
-if peattributes.isdll == true then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if (mp.getfilesize)() > 2097152 then
   return mp.CLEAN
 end
 return mp.INFECTED

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.isexe == true and (mp.getfilesize)() > 500000 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("Suspicious:CraftedPE_Import") then
+  (mp.set_mpattribute)("Suspicious:CraftedFile_Import")
 end
 return mp.CLEAN
 

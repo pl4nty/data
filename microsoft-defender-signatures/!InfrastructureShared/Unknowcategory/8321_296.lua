@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
-
-  ;
-  (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 == nil or l_0_0 == "" then
+  return mp.CLEAN
+end
+local l_0_1 = (string.sub)(l_0_0, -10)
+if l_0_1 and (string.lower)(l_0_1) == "\\mshta.exe" then
   return mp.INFECTED
 end
+return mp.CLEAN
 

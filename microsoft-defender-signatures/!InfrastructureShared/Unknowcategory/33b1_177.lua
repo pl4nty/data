@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".ntest0" then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PACKED:ASPROTECT") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

@@ -3,13 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_exe == false then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-if (pe.query_import)(pe.IMPORT_STATIC, 2430426247) == 0 then
-  return mp.CLEAN
-end
-if (pe.query_import)(pe.IMPORT_STATIC, 4186436034) == 0 then
+local l_0_1 = {}
+l_0_1["isxagent.exe"] = true
+l_0_1["totalrecoveryprosetup.exe"] = true
+if l_0_1[(string.lower)(l_0_0:match("\\([^\\]+)$"))] then
   return mp.CLEAN
 end
 return mp.INFECTED

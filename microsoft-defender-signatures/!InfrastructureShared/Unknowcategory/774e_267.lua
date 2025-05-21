@@ -3,9 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 32768 and l_0_0 <= 720896 and (pesecs[4]).Name == ".text" and (pesecs[1]).Name == ".text" then
-  return mp.INFECTED
+do
+  if peattributes.isexe then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

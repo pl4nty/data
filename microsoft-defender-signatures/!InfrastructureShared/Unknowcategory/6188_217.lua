@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 4 and mp.HSTR_WEIGHT < 9 then
+  (mp.set_mpattribute)("HSTR:Dradkiter.A1")
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,22 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if (pe.isvdllimage)((pe.get_regval)(pe.REG_ECX)) == false or (mp.readu_u32)((pe.mmap_va_nofastfail)(pevars.sigaddr + 2, 4), 1) <= 4096 then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_6 = (this_sigattrlog[1]).p1
-    if (string.match)(l_0_6:lower(), "^[a-z]+$") and (string.len)(l_0_6) > 20 then
-      return mp.INFECTED
-    end
-  end
-  return mp.LOWFI
-end
+;
+(pe.mmap_patch_va)(pevars.sigaddr, "\184\r\024\141>\144")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

@@ -3,20 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[13]).matched or (hstrlog[14]).matched then
-  (mp.changedetectionname)(805306447)
-else
-  if (hstrlog[15]).matched then
-    (mp.changedetectionname)(805306448)
-  else
-    if (hstrlog[16]).matched then
-      (mp.changedetectionname)(805306449)
-    else
-      if (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched then
-        (mp.changedetectionname)(805306432)
-      end
-    end
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -13) == "\\iexplore.exe" or (string.sub)(l_0_0, -11) == "\\chrome.exe" or (string.sub)(l_0_0, -18) == "\\microsoftedge.exe" or (string.sub)(l_0_0, -20) == "\\microsoftedgecp.exe" or (string.sub)(l_0_0, -12) == "\\firefox.exe" then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

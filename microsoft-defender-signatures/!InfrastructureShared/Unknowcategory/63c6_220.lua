@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:CoinMiner.CA")
+  (mp.set_mpattribute)("PUA:Block:Didnarbois.C")
   return mp.INFECTED
 end
 return mp.LOWFI

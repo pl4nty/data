@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbpcode == true and pehdr.NumberOfSections == 3 then
-  return mp.INFECTED
+if peattributes.isvbpcode ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 512000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

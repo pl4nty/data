@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 1048000 then
+if (mp.get_mpattribute)("InEmail") then
+  (mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+if peattributes.isexe == true and (pesecs[4]).Name == ".rsrc" and (pesecs[4]).Characteristics == 1073741888 and (mp.getfilesize)() >= 1000000 and (mp.getfilesize)() <= 5000000 then
   return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_swiminen")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_swiminen")
 end
 return mp.CLEAN
 

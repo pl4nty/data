@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.x86_image == true then
+if (mp.get_mpattribute)("CURE:Virus:Win32/Expiro.EK1") then
   return mp.INFECTED
 end
 return mp.CLEAN

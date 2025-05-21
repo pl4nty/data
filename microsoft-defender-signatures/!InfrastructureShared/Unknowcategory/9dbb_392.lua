@@ -3,8 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.reads_vdll_code and (peattributes.suspicious_image_version or peattributes.uses_access_violation or peattributes.uses_privinstr or peattributes.deep_analysis or peattributes.enable_vmm_grow) and peattributes.isdll then
+local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "IÅ˘", 1, true)
+do
+  if l_0_1 == nil then
+    local l_0_0 = 7
+    l_0_0 = 4
+  end
+  -- DECOMPILER ERROR at PC29: Overwrote pending register: R0 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
+
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1 + l_0_0, "êê")
   return mp.INFECTED
 end
-return mp.CLEAN
 

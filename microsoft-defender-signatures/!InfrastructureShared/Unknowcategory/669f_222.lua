@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == false and peattributes.hasexports == false then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:AMCleaner.B!xp")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

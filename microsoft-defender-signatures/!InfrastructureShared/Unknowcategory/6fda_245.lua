@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Neoreblamy.BD!MTB") then
+if peattributes.suspicious_image_version and peattributes.hasappendeddata and peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 540672 and (mp.getfilesize)() < 565248 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+if peattributes.isdll then
+  if not peattributes.hstr_exhaustive and peattributes.dt_error_heur_exit_criteria then
+    (pe.set_peattribute)("hstr_exhaustive", true)
+    ;
+    (pe.reemulate)()
   end
+  ;
+  (mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOT!dll")
   return mp.CLEAN
 end
+;
+(mp.set_mpattribute)("HSTR:VirTool:Win32/Obfuscator.AOT")
+return mp.CLEAN
 

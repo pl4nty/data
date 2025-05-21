@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 == nil then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
-  return mp.INFECTED
-end
+local l_0_0 = (pe.get_regval)(pe.REG_EDI)
 ;
-(mp.set_mpattribute)("SLF:Win32/BruterShell.A")
-return mp.LOWFI
+(mp.set_mpattribute)((string.format)("HSTR:Obfuscator.PN!crc_key.7_k1_%08X_%02X", l_0_0, 2))
+return mp.CLEAN
 

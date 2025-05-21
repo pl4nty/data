@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched) and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
-  return mp.INFECTED
+if (mp.getfilesize)() > 1000000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pesecs[1]).Name == "UPX0" then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 15000)
+return mp.INFECTED
 

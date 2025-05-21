@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 > 500000 and l_0_0 < 2000000 then
+if (pesecs[5]).Name == "!EPack" and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

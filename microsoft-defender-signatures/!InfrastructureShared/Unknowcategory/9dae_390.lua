@@ -3,15 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:EasyMiner")
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_easyminer")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_easyminer")
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.find)((string.lower)(l_0_6.image_path), "\\mshta.exe", 1, true) then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

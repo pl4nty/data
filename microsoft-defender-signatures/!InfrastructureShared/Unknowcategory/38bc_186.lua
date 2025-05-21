@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 512 then
+if peattributes.isexe and peattributes.ismsil then
   return mp.INFECTED
-else
-  return mp.LOWFI
 end
 return mp.CLEAN
 

@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 172032 and l_0_0 <= 176128 and pehdr.NumberOfSections >= 4 and pehdr.NumberOfSections <= 6 and (mp.get_mpattribute)("NID:GandCrab.A!Pra1") then
-  return mp.INFECTED
+local l_0_0 = (pe.get_versioninfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (string.find)(l_0_0.ProductName, "AUTORUN", 1, true) == nil or (string.find)(l_0_0.FileDescription, "AUTORUN", 1, true) == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 14 and peattributes.isexe == true and pehdr.AddressOfEntryPoint == 435072 and (pesecs[4]).Name == "/4" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+return mp.LOWFI
 

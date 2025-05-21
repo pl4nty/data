@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.has_msilresources and peattributes.ismsil then
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.ismsil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

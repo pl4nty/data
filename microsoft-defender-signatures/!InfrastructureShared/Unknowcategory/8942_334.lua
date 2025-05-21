@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if not peattributes.isdll then
   return mp.CLEAN
 end
+if (pe.get_exports)() ~= 1 then
+  return mp.CLEAN
+end
+if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "InitiateTheAttack" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

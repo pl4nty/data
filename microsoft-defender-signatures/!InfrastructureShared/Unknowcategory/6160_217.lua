@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".rrdata" and (pesecs[6]).Name == ".lif\a" then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Rootnik.A")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

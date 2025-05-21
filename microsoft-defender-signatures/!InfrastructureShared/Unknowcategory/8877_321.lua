@@ -3,17 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+if not peattributes.isdll then
   return mp.CLEAN
 end
-if not peattributes.isvbnative then
+if (pe.get_exports)() ~= 1 then
   return mp.CLEAN
 end
-if (mp.getfilesize)() > 90000 then
-  return mp.CLEAN
+if (pe.mmap_string_rva)((R1_PC17[1]).namerva, 64) == "main" then
+  return mp.INFECTED
 end
-if not peattributes.dt_error_heur_exit_criteria then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

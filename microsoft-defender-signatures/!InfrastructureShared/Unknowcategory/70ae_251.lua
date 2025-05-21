@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and (peattributes.isdll == true or peattributes.isexe == true) and peattributes.no_security == true then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -12) == "rundll32.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-l_0_0.referer = (nri.GetHttpRequestHeader)("referer")
-;
-(nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-return mp.INFECTED
+local l_0_0 = (string.lower)((this_sigattrlog[5]).utf8p2)
+if (string.find)(l_0_0, "rundll32", 1, true) and (string.find)(l_0_0, "onlogon", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

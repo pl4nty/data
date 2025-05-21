@@ -3,19 +3,9 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil and not (string.find)(l_0_0, ".zip", 1, true) then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+local l_0_0 = (pe.get_regval)(pe.REG_EBP) - 4
+local l_0_1 = (mp.readu_u32)((pe.mmap_va)(l_0_0, 4), 1)
+;
+(pe.set_regval)(pe.REG_EBX, l_0_1 + 1)
+return mp.INFECTED
 

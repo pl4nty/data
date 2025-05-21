@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (hstrlog[1]).hitcount > 5 then
+if (pesecs[3]).Name == ".qhw" and (pesecs[2]).Name == ".g" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

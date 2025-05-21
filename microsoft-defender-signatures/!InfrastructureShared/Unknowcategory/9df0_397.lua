@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (pesecs[6]).Name == ".ropf" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr + 17, 1)
+local l_0_1 = 21
+if (string.byte)(l_0_0) == 129 then
+  l_0_1 = 24
+  if (string.byte)((pe.mmap_va)(pevars.sigaddr + 21, 1)) == 2 then
+    return mp.CLEAN
   end
-  return mp.CLEAN
 end
+;
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\235")
+return mp.INFECTED
 

@@ -14,7 +14,7 @@ l_0_0 = (string.lower)(l_0_0)
 local l_0_1 = (string.match)(l_0_0, "(.*)%->")
 local l_0_2 = (string.match)(l_0_0, "%w+%->.*/(.*)")
 local l_0_3 = 259200
-local l_0_4 = 8000
+local l_0_4 = 1000
 AppendToRollingQueue("ArchivesWithExec_FileName", l_0_2, l_0_1, l_0_3, l_0_4, 0)
 local l_0_5 = ((string.match)(l_0_2, "%.(.*)$"))
 local l_0_6 = nil

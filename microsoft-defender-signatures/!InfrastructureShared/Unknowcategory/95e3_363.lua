@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+if (this_sigattrlog[1]).matched and (this_sigattrlog[3]).matched then
+  local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
+  local l_0_1 = (string.lower)((this_sigattrlog[3]).utf8p2)
+  if l_0_0 ~= nil and l_0_1 ~= nil and (string.find)(l_0_1, l_0_0, 1, true) then
     return mp.INFECTED
   end
+end
+do
   return mp.CLEAN
 end
 

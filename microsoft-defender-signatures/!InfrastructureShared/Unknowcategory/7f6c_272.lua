@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 2, "\000\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 10, "\000\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 16, "\000\000\000")
-return mp.INFECTED
+if peattributes.isexe == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Win64/CryptInject.MB!MTB") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

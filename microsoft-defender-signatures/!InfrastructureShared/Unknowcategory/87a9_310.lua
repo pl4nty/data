@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 6 then
-  return mp.INFECTED
-end
-if mp.HSTR_WEIGHT > 5 then
-  return mp.SUSPICIOUS
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
 ;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+(pe.mmap_patch_va)(pevars.sigaddr + 14, "\235")
 ;
-(pe.reemulate)()
-return mp.CLEAN
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

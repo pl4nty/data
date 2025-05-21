@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Dnotua.D!MTB")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

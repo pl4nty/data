@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Genieo.F!xp")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(bm.trigger_sig_self_propagate)("SuspSlugResinProcessLaunch", "Behavior:Win32/SnailResin.B!dha")
+return mp.INFECTED
 

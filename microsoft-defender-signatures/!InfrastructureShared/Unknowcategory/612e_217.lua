@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_sigattr_event_count)(16385) > 2 or (mp.get_sigattr_event_count)(16386) > 2 then
+if (pesecs[3]).Name == ".qhw" or (pesecs[2]).Name == "DrtWJgcR" then
   return mp.INFECTED
 end
 return mp.CLEAN

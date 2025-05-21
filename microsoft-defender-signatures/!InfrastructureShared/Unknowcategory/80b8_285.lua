@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 2 and (hstrlog[2]).hitcount == 1 and (hstrlog[3]).hitcount == 1 and (hstrlog[4]).hitcount == 2 and (hstrlog[5]).hitcount == 1 then
-  return mp.INFECTED
+if not (pe.isdynamic_va)(pevars.sigaddr) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not (mp.get_mpattribute)("PEBMPAT:Virus:Win32/Xpaj.gen!F") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

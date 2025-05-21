@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
-  l_0_0 = 16
-end
-l_0_0 = l_0_0 + (mp.bitand)(mp.HSTR_WEIGHT, 15)
-if l_0_0 >= 18 then
-  return mp.INFECTED
-else
-  if l_0_0 >= 2 then
-    (mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
-  end
-end
-return mp.CLEAN
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 32768 and l_0_0 <= 720896 then
+if (pesecs[4]).Name == ".ctls8" then
   return mp.INFECTED
 end
 return mp.CLEAN

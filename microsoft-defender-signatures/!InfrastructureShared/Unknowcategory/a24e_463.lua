@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
-  return mp.CLEAN
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.suspicious_dosheader == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true then
+  return mp.INFECTED
 end
-if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[10]).hitcount == 0 and (hstrlog[11]).hitcount == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

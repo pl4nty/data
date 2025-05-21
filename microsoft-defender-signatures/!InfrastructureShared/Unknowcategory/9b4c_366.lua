@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (mp.getfilesize)() > 190000 and (mp.getfilesize)() < 200000 and peattributes.hasexports == false then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
-end
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
+      (bm.add_related_file)(l_0_0)
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
 

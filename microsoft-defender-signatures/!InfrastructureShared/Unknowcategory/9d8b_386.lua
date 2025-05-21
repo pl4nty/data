@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.line_numbers_stripped == true and peattributes.locals_symbols_stripped == true and peattributes.no_security == true and peattributes.headerchecksum0 == true and peattributes.hasappendeddata == true and peattributes.isexe == true then
-  return mp.INFECTED
+if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) then
+  if pehdr.SizeOfImage > 327680 and pehdr.SizeOfImage < 1048576 then
+    (mp.changedetectionname)(805306419)
+    return mp.INFECTED
+  else
+    return mp.SUSPICIOUS
+  end
 end
 return mp.CLEAN
 

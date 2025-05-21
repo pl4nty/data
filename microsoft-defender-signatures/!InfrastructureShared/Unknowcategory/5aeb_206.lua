@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 2097152 and peattributes.isexe == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("CODEPATCH:CheckStackValSleepEx")
+return mp.INFECTED
 

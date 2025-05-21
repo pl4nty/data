@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.ismsil then
+if (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
-;
-(pe.reemulate)()
-return mp.INFECTED
+if (pesecs[4]).Name == ".ctls0" and (pesecs[6]).Name == ".jetb" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (versioning.IsSeville)() and (versioning.GetCloudBlockLevel)() >= 4 then
+if (mp.get_sigattr_event_count)(16385) > 4 and (mp.get_sigattr_event_count)(16386) > 4 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not peattributes.hasexports then
-  return mp.CLEAN
+if (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

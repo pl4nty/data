@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[9]).Name == ".tls" and (pesecs[9]).Characteristics == 3221225536 then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("classes.dex") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

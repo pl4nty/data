@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((mp.getfilename)(), -3)) == "r2w" then
-  return mp.CLEAN
+if pehdr.ImageBase + pehdr.SizeOfHeaders < (hstrlog[1]).VA then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

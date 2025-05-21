@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 21, "\235")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 60, "\235")
+if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

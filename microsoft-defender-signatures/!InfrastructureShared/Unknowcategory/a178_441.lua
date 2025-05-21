@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasValidProjPath") and (mp.get_mpattribute)("SIGATTR:mpinthandler") and peattributes.epinfirstsect and pehdr.NumberOfSections == 4 and (pesecs[1]).SizeOfRawData >= 106496 and (pesecs[1]).SizeOfRawData <= 147456 then
-  return mp.INFECTED
+do
+  if epcode[1] == 233 and epcode[2] == 90 and epcode[3] == 94 and epcode[11] == 233 and peattributes.isexe == true and peattributes.amd64_image then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.LOWFI
 

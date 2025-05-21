@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Renos_msposer")
-if (mp.get_mpattribute)("PEPCODE:VirTool:Win32/Obfuscator.ED") then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 14, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "x")
+return mp.INFECTED
 

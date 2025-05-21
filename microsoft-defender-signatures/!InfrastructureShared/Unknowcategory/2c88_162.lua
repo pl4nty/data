@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:XingCloudDownloader")
-return mp.INFECTED
+if peattributes.is_delphi then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

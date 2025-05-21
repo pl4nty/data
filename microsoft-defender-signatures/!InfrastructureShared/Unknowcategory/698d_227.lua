@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "word/_rels/settings.xml.rels") ~= nil then
+if peattributes.isdll and peattributes.x86_image and peattributes.hasstandardentry then
   return mp.INFECTED
 end
 return mp.CLEAN

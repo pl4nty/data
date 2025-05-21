@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MACRO_HSTR:OfficeAutoOpen") then
+if (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

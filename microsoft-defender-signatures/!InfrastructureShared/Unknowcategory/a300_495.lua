@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (not peattributes.isexe or not peattributes.no_security or (mp.getfilesize)() < 65535 or (mp.getfilesize)() > 1048575 or (not (hstrlog[1]).matched and not (hstrlog[2]).matched and not (hstrlog[3]).matched) or (not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched) or (hstrlog[7]).matched) then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
+if (string.find)(l_0_0, "rdpclip.exe", 1, true) or (string.find)(l_0_0, "tsprintlogin.exe", 1, true) or (string.find)(l_0_0, "tsscanlist.exe", 1, true) or (string.find)(l_0_0, "uplaunch.exe", 1, true) or (string.find)(l_0_0, "svchost.exe", 1, true) then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

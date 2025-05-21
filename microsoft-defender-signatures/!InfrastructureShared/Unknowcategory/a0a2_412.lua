@@ -3,18 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[3]).matched then
-  l_0_0 = (this_sigattrlog[3]).utf8p2
-end
-if (this_sigattrlog[4]).matched then
-  l_0_0 = (this_sigattrlog[3]).utf8p2
-end
-if l_0_0 ~= "" then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "-r ", 1, true) and (string.find)(l_0_0, "init", 1, true) then
+do
+  if (mp.get_mpattribute)("pea_isdll") and (mp.get_mpattribute)("pea_hasexports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 442368 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
     return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

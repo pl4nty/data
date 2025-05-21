@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_resources and peattributes.suspicious_dosheader then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.hasappendeddata then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Awecleaner.B")
+if mp.HSTR_WEIGHT == 2 and (hstrlog[1]).hitcount > 3 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

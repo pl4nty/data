@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process and not peattributes.hstr_exhaustive then
+if (mp.get_mpattribute)("NID:Trojan:Win64/Destroysom.MBXK!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

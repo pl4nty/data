@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.hasstandardentry and pehdr.NumberOfSections >= 5 and (pesecs[4]).Name == ".rsrc" and (pesecs[4]).SizeOfRawData >= 86016 then
-  return mp.INFECTED
+do
+  if peattributes.isexe == true and (pesecs[4]).Name == ".sn6" and (pesecs[7]).Name == ".83&" then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.SUSPICIOUS
 

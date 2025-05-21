@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((bm.get_current_process_startup_info)()).integrity_level <= MpCommon.SECURITY_MANDATORY_LOW_RID then
-  return mp.INFECTED
+if peattributes.hasexports and pevars.sigaddr == 268439552 then
+  (mp.set_mpattribute)("attrmatch_rescan_notiexplore")
 end
 return mp.CLEAN
 

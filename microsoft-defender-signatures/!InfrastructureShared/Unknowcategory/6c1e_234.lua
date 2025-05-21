@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "xl/drawings/_rels/drawing1.xml.rels") ~= nil then
+if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win32/Qakbot.MA!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

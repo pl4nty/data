@@ -3,19 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("RPF:TopLevelFile") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("CMN:HSTR:InstallerFile") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_ismsil") then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("pea_isdriver") then
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1, 4), 1) ~= pevars.sigaddr + 6 or (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1 + 6, 4), 1) ~= pevars.sigaddr + 12 or (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 1 + 12, 4), 1) ~= pevars.sigaddr + 18 then
   return mp.CLEAN
 end
 return mp.INFECTED

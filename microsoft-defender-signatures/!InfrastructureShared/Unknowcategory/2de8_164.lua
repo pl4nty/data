@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("CURE:Virus:Win32/Expiro.BA_0327")
-return mp.INFECTED
+if peattributes.no_security then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

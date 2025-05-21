@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount - 1 == (hstrlog[2]).hitcount then
+if peattributes.isvbnative or peattributes.isvbpcode then
   return mp.INFECTED
 end
 return mp.CLEAN

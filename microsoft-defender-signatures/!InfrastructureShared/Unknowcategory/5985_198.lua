@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("CERT:Trojan:Win32/Mansabo.RPX1!MTB") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("NID:VirTool:Win32/Obfuscator.ANJ") then
+  return mp.SUSPICIOUS
 end
-return mp.CLEAN
+return mp.LOWFI
 

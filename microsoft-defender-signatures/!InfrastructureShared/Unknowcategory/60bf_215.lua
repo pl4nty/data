@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".air0" and (pesecs[6]).Name == ".air1" then
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if mp.HSTR_CALLER_SMS == l_0_0 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

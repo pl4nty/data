@@ -3,16 +3,21 @@
 
 -- params : ...
 -- function num : 0
+-- DECOMPILER ERROR at PC2: Overwrote pending register: R0 in 'AssignReg'
+
+local l_0_0 = nil
+-- DECOMPILER ERROR at PC9: Overwrote pending register: R1 in 'AssignReg'
+
+if l_0_0 ~= nil then
+  local l_0_1 = nil
+  -- DECOMPILER ERROR at PC19: Overwrote pending register: R2 in 'AssignReg'
+
+  local l_0_2 = nil
+  l_0_2 = l_0_2 .. "\000\000"
+  ;
+  (mp.ReportLowfi)(l_0_2, 618978737)
+end
 do
-  if (mp.get_mpattribute)("pea_amd64_image") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 3483648 and (mp.getfilesize)() < 3508224 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+  return mp.INFECTED
 end
 

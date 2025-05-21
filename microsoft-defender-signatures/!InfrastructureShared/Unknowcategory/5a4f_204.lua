@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() > 9000000 then
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if l_0_0 == mp.HSTR_CALLER_SMS then
   return mp.INFECTED
 end
 return mp.CLEAN

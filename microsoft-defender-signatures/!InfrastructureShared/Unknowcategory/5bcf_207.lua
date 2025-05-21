@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (((mp.getfilename)()):lower()):match("\\poc.js$") ~= nil then
+if peattributes.ismsil == true and (mp.getfilesize)() < 153600 then
   return mp.INFECTED
 end
 return mp.CLEAN

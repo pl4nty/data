@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Spc.A")
+if (pesecs[4]).Name == ".)@s" and (pesecs[5]).Name == ".Oha" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

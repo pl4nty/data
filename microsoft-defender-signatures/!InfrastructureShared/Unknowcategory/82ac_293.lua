@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() >= 532480 and (mp.getfilesize)() < 557056 then
+if pehdr.ImageBase + pehdr.AddressOfEntryPoint == 4198400 and peattributes.isexe and pehdr.NumberOfSections > 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

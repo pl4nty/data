@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.format)("HSTR:VirTool:Win32/Obfuscator.ZG!upk.1_%08X_%08X", (hstrlog[1]).VA, (hstrlog[2]).VA)
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "u", 21, true)
 ;
-(mp.set_mpattribute)(l_0_0)
-return mp.SUSPICIOUS
+(pe.mmap_patch_va)(pevars.sigaddr + l_0_0, "3\255")
+return mp.INFECTED
 

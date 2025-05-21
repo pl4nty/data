@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
-  ;
-  (mp.SMSAsyncScan)(l_0_0.ppid)
+if peattributes.isvbnative == true and pehdr.NumberOfSections == 3 and peattributes.no_security == true then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

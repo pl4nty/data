@@ -3,17 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true then
-  local l_0_0 = (mp.GetCertificateInfo)()
-  for l_0_4,l_0_5 in pairs(l_0_0) do
-    if l_0_5.Signers ~= nil then
-      return mp.CLEAN
-    end
-  end
-end
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.INFECTED
-  return l_0_0
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  end
+  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC18: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
+    (mp.ReportLowfi)(l_0_0, 3879253063)
+  end
+  return mp.INFECTED
 end
 

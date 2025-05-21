@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 39, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 58, "")
+if peattributes.isexe == true and (pesecs[6]).Name == ".sc=" then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

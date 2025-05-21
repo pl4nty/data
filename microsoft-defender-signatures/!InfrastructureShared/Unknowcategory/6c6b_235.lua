@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if (hstrlog[5]).matched then
-  (mp.set_mpattribute)("Lowfi:Komodia:WFP:NoVuln")
+  (mp.set_mpattribute)("Lowfi:Komodia:LSP:NoVuln")
   return mp.CLEAN
 end
 return mp.INFECTED

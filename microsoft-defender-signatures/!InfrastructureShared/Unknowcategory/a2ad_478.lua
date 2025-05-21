@@ -3,20 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 300000 or (mp.getfilesize)() > 600000 then
-  return mp.CLEAN
-end
-if (this_sigattrlog[3]).matched and (this_sigattrlog[4]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[3]).p1)
-  if (string.sub)(l_0_0, -4) == ".dll" then
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  end
+  -- DECOMPILER ERROR at PC14: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_3 = nil
+  if l_0_3 == nil or (string.find)((mp.ContextualExpandEnvironmentVariables)(l_0_0), "\\windows\\system32\\", 1, true) == nil or (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_0), true, false) then
     return mp.CLEAN
   end
-  local l_0_1 = (string.lower)((this_sigattrlog[4]).p1)
-  if (string.find)(l_0_1, l_0_0) ~= nil then
-    return mp.INFECTED
-  end
-end
-do
-  return mp.CLEAN
+  ;
+  (bm.add_threat_file)((mp.ContextualExpandEnvironmentVariables)(l_0_0))
+  return mp.INFECTED
 end
 

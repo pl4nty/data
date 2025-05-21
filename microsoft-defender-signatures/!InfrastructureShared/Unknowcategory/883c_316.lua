@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.NumberOfSections >= 3 and pehdr.NumberOfSections <= 7 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "\\program files", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

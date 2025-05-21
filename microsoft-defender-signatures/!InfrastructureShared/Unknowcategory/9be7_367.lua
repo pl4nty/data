@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:OutBrowse")
-if not (mp.get_mpattribute)("HSTR:SoftwareBundler:Win32/Avarus") and not peattributes.hstr_exhaustive then
-  (pe.set_peattribute)("hstr_exhaustive", true)
-  ;
-  (pe.reemulate)()
+local l_0_0 = (mp.getfilesize)()
+if (hstrlog[1]).matched and peattributes.no_security == true and l_0_0 >= 114688 and l_0_0 <= 159744 and (pehdr.NumberOfSections == 9 or pehdr.NumberOfSections == 6) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

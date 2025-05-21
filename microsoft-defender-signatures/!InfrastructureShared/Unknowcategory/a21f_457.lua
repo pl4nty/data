@@ -3,18 +3,16 @@
 
 -- params : ...
 -- function num : 0
-add_related_file_if_exists = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0.matched and l_1_0.utf8p2 ~= nil then
-    local l_1_1 = (mp.ContextualExpandEnvironmentVariables)(l_1_0.utf8p2)
-    ;
-    (bm.add_related_file)(l_1_1)
-  end
+local l_0_0 = 512
+local l_0_1 = (pe.mmap_va)(pevars.sigaddr - 256, l_0_0)
+local l_0_2 = (string.find)(l_0_1, "JB\015%z")
+if l_0_2 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 7, "êê")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 16, "\235")
+  ;
+  (mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+  return mp.INFECTED
 end
-
-add_related_file_if_exists(this_sigattrlog[1])
-add_related_file_if_exists(this_sigattrlog[2])
-add_related_file_if_exists(this_sigattrlog[3])
-add_related_file_if_exists(this_sigattrlog[4])
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_deep_rescan")
-;
-(pe.set_peattribute)("disable_apicall_limit", true)
-return mp.INFECTED
+if peattributes.no_security and peattributes.isexe and peattributes.isvbnative then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

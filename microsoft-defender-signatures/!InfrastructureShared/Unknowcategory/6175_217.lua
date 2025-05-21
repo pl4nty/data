@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections <= 5 and (mp.getfilesize)() < 2048000 then
+if mp.HSTR_WEIGHT >= 7 then
+  (mp.set_mpattribute)("PUA:Block:SMSreg.TA")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

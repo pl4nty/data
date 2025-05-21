@@ -4,15 +4,14 @@
 -- params : ...
 -- function num : 0
 do
-  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
+  local l_0_0 = (pe.get_versioninfo)()
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  if l_0_0.InternalName == "mimikatz" or (string.find)(l_0_0.CompanyName, "gentilkiwi", 1, true) ~= nil or l_0_0.ProductName == "mimikatz" or (string.find)(l_0_0.SpecialBuild, "kiwi flavor", 1, true) ~= nil then
     return mp.INFECTED
   end
-  return mp.CLEAN
+  do return mp.CLEAN end
+  -- DECOMPILER ERROR: 2 unprocessed JMP targets
 end
 

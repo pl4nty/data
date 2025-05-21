@@ -3,11 +3,23 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path ~= nil and (mp.bitand)(l_0_6.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_6.image_path, 13)) == "\\services.exe" then
+local l_0_0 = {}
+l_0_0["winword.exe"] = true
+l_0_0["excel.exe"] = true
+l_0_0["powerpnt.exe"] = true
+l_0_0["outlook.exe"] = true
+local l_0_1 = (mp.GetParentProcInfo)()
+if l_0_1 ~= nil then
+  local l_0_2 = l_0_1.image_path
+  local l_0_3 = (string.lower)((string.match)(l_0_2, "\\([^\\]+)$"))
+  if l_0_3 == "" or l_0_3 == nil then
+    return mp.CLEAN
+  end
+  if l_0_0[l_0_3] == true then
     return mp.INFECTED
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

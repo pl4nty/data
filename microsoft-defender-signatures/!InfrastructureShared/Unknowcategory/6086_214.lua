@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilename)()):sub(-28) == "word/_rels/document.xml.rels" then
+if (pesecs[4]).Name == ".lk90" and (pesecs[8]).Name == "8s7d" then
   return mp.INFECTED
 end
 return mp.CLEAN

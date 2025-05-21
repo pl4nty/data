@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  (mp.set_mpattribute)("HSTR:Worm:MSIL/Cribz!modules")
-  return mp.INFECTED
+if pehdr.NumberOfSections ~= 9 or (hstrlog[1]).VA ~= 4214784 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

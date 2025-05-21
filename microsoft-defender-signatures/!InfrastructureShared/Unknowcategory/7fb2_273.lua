@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched then
-  (mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 644432144)
+if (mp.get_mpattribute)("FOPEX:VirTool:Win32/Obfuscator.AKN") then
+  (pe.mmap_patch_va)(pevars.sigaddr + 6, "É¿\t")
 end
 return mp.INFECTED
 

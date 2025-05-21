@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 536870912) == 536870912 then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "kendo", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

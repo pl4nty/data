@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:SpyMe.A")
+if mp.HSTR_WEIGHT >= 9 then
+  (mp.set_mpattribute)("PUA:Block:Umpay.B")
   return mp.INFECTED
 end
 return mp.LOWFI

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (((pe.get_versioninfo)()).OriginalFilename):lower() ~= "veeamp.exe" then
-  return mp.CLEAN
+if pehdr.NumberOfSections == 4 and (pesecs[4]).Name == ".mdn" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

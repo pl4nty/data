@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.match)(l_0_0, "appdata\\local\\temp\\bk[%a%d]+.tmp\\p[%a%d]+.exe") then
-  (mp.set_mpattribute)("HSTR:Win32/PCHunter.B")
+local l_0_0, l_0_1 = pcall(mp.GetParentProcInfo)
+if l_0_1 and (string.find)((l_0_1.image_path):lower(), "solarwinds.businesslayerhost.exe", 1, true) then
+  return mp.LOWFI
 end
-return mp.INFECTED
+return mp.CLEAN
 

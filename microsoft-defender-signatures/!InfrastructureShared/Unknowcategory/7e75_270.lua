@@ -3,8 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.has_msilresources then
-  return mp.INFECTED
+if pehdr.NumberOfSections >= 7 then
+  return mp.CLEAN
+end
+for l_0_3 = 1, pehdr.NumberOfSections do
+  if (pesecs[l_0_3]).Name == ".ndata" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

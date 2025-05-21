@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
-  return mp.CLEAN
+if (mp.get_mpattribute)("SCRIPT:scripthasexe") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

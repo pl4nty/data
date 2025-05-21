@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  local l_0_0, l_0_1 = (hstrlog[3]).matched and 1 or 0
-  do
-    local l_0_2 = nil
-    -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
-
-    if (mp.bitxor)(l_0_2, (hstrlog[2]).matched and 1 or 0) == 1 and (mp.bitxor)((hstrlog[6]).matched and 1 or 0, (hstrlog[7]).matched and 1 or 0) == 1 and (peattributes.epscn_writable or peattributes.hasappendeddata) then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+local l_0_0 = (string.find)((pe.mmap_va)(pevars.sigaddr, 20), "|", 1, true) - 1
+if (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "t\005", 1, true) == nil then
+  local l_0_1 = (string.find)((pe.mmap_va)(pevars.sigaddr, 80), "u\002", 1, true) - 2 - l_0_0 - 1
+  local l_0_2 = (string.format)("\235%s", (string.char)(l_0_1))
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_0, l_0_2)
+  return mp.INFECTED
 end
 

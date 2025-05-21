@@ -3,12 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if not l_0_0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
-if l_0_1 and #l_0_1 <= 400 then
+if peattributes.isexe == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Remcos") then
   return mp.INFECTED
 end
 return mp.CLEAN

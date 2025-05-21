@@ -3,12 +3,20 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0, l_0_1, l_0_2 = nil
+  end
+  -- DECOMPILER ERROR at PC10: Confused about usage of register: R0 in 'UnsetPending'
+
+  local l_0_3 = nil
+  if l_0_3 == nil or (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_0), true, false) then
+    return mp.CLEAN
+  end
+  ;
+  (bm.add_threat_file)(l_0_3)
+  return mp.INFECTED
 end
-if (string.find)(l_0_0, "\\dllhost.exe", 1, true) or (string.find)(l_0_0, "\\explorer.exe", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

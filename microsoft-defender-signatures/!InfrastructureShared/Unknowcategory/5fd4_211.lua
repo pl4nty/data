@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and pehdr.Subsystem == 2 then
+if peattributes.isvbnative == true and (mp.getfilesize)() == 61440 then
   return mp.INFECTED
 end
 return mp.CLEAN

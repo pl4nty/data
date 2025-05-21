@@ -3,15 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:VirTool:Win32/VMProtect.A") or mp.HSTR_WEIGHT >= 7 then
-  (mp.set_mpattribute)("PUA:Block:TRexMiner")
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if l_0_0:find(":\\users", 1, true) ~= nil or l_0_0:find(":\\windows", 1, true) ~= nil then
+      if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
+        (bm.add_related_file)(l_0_0)
+      end
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_trex")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_trex")
-end
-return mp.CLEAN
 

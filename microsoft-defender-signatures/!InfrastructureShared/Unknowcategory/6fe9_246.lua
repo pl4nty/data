@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and pehdr.NumberOfSections == 3 and peattributes.isexe == true then
-  return mp.INFECTED
+(mp.set_mpattribute)("PUA:Block:Bayads")
+if (mp.get_mpattribute)("//HSTR:Win32/Bayads!Exc") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

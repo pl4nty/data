@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
+if (bm.GetSignatureMatchDuration)() > 20000000 then
   return mp.CLEAN
 end
-if (mp.getfilesize)() > 20971520 then
+if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p1 == nil then
   return mp.CLEAN
 end
-if (pe.get_exports_count)() < 60 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+local l_0_0 = (this_sigattrlog[1]).utf8p1
+;
+(bm.trigger_sig)("BMGenericCodeInjector.A", l_0_0)
+return mp.CLEAN
 

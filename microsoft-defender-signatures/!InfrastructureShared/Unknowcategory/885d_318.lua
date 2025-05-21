@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and ((hstrlog[1]).matched or (hstrlog[2]).matched) and (mp.getfilesize)() > 20000 and (mp.getfilesize)() < 30000 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 28672 and l_0_0 < 40960 and pehdr.NumberOfSections == 1 and (pesecs[pevars.epsec]).Name == ".text" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

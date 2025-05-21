@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.isexe and peattributes.amd64_image then
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("PUA:Block:Convuster.C")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

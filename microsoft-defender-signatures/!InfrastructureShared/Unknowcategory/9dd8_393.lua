@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 390000 then
-  if mp.HSTR_WEIGHT >= 11 then
-    return mp.SUSPICIOUS
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path ~= nil then
+    local l_0_7 = (mp.bitand)(l_0_6.reason_ex, 1)
+    if l_0_7 == 1 then
+      local l_0_8 = (string.lower)(l_0_6.image_path)
+      if (string.find)(l_0_8, "\\zoom.exe", 1, true) then
+        return mp.INFECTED
+      end
+    end
   end
-  if mp.HSTR_WEIGHT >= 10 then
-    (pe.set_peattribute)("hstr_exhaustive", true)
-    ;
-    (pe.reemulate)()
-  end
-  return mp.LOWFI
 end
 return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.x86_image then
+if (versioning.IsSeville)() and (versioning.GetCloudBlockLevel)() >= 4 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

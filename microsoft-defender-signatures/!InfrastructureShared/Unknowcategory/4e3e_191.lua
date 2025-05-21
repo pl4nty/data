@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if pehdr.SizeOfImage > 135168 and pehdr.SizeOfImage < 143360 then
   return mp.INFECTED
 end
 return mp.CLEAN

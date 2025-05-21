@@ -3,22 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
-end
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_6 = (this_sigattrlog[2]).p1
-    if (string.match)(l_0_6:lower(), "^[a-z0-9]+$") then
-      return mp.INFECTED
-    end
-  end
-  return mp.LOWFI
-end
+(mp.set_mpattribute)("lua_codepatch_tibs_5")
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 22)
+local l_0_1 = (mp.readu_u32)(l_0_0, 7)
+local l_0_2 = (mp.readu_u32)(l_0_0, 18)
+local l_0_3 = (pe.get_regval)(pe.REG_EDX)
+local l_0_4 = l_0_3 - (mp.bitxor)(l_0_2, l_0_1) - 1
+;
+(pe.set_regval)(pe.REG_EBX, l_0_4)
+return mp.INFECTED
 

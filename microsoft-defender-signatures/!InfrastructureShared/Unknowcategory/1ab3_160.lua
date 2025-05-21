@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe then
-  return mp.SUSPICIOUS
+if peattributes.isexe == true then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

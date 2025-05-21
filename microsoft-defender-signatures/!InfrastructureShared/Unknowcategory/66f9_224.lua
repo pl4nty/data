@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:find("manifest.mf") then
+if (mp.get_mpattribute)("pea_isexe") and (mp.get_mpattribute)("HSTR:PossibleVcEpStub") then
   return mp.INFECTED
 end
 return mp.CLEAN

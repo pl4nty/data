@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[6]).Name == "OeZGWeDm" and (pesecs[7]).Name == "fkJVOvQR" then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 409600 and l_0_0 < 716800 and peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

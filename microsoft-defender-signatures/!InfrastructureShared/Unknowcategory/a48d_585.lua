@@ -3,36 +3,29 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
-  else
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+    local l_0_0, l_0_1, l_0_2 = nil
   end
-  if (this_sigattrlog[2]).matched then
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
 
-    if (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == nil or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p2) == "" then
-      return mp.CLEAN
-    end
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  local l_0_3 = nil
+  local l_0_4 = {[".vbe"] = true}
+  for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_3)) do
     local l_0_5 = nil
-    -- DECOMPILER ERROR at PC45: Overwrote pending register: R1 in 'AssignReg'
+    -- DECOMPILER ERROR at PC30: Confused about usage of register: R7 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
-
-    if nil == nil or nil == "" then
-      return mp.CLEAN
+    if (string.len)(R7_PC30) > 4 and (sysio.IsFileExists)(R7_PC30) and l_0_4[(string.sub)(R7_PC30, -4)] then
+      (bm.add_related_file)(l_0_10)
+      ;
+      (mp.ReportLowfi)(l_0_10, 2678063716)
     end
-    -- DECOMPILER ERROR at PC55: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC61: Confused about usage of register: R1 in 'UnsetPending'
-
-    if (sysio.IsFileExists)(nil) then
-      (bm.add_related_file)(nil)
-    end
-    return mp.INFECTED
   end
+  return mp.INFECTED
 end
 

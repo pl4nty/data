@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(mp.set_mpattribute)("PUA:Block:ConduitSearchProtect")
+return mp.INFECTED
 

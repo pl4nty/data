@@ -3,16 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 8000000 or l_0_0 < 10000 then
-  return mp.CLEAN
+(mp.set_mpattribute)("HSTR:Adware:Win32/ZoomyLib.E")
+if (mp.bitand)(mp.HSTR_WEIGHT, 64) > 0 and (mp.bitand)(mp.HSTR_WEIGHT, 56) > 0 and (mp.bitand)(mp.HSTR_WEIGHT, 7) > 0 then
+  return mp.INFECTED
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_1:find("mkvie-porting-working", 1, true) then
-  return mp.CLEAN
+if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
-if l_0_1:find("slurm", 1, true) then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

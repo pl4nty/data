@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount > 10 then
+if (pesecs[7]).Name == ".KrmpSec" then
   return mp.INFECTED
 end
 return mp.CLEAN

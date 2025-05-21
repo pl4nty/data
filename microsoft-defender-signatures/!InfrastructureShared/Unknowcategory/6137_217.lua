@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.isexe then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find(".rsa") then
   return mp.INFECTED
 end
 return mp.CLEAN

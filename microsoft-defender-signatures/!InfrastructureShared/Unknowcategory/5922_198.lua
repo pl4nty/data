@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount == 1 or (hstrlog[2]).hitcount == 1 then
+if peattributes.ismsil and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

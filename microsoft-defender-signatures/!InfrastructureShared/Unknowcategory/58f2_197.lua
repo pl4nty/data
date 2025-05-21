@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[3]).matched ~= true then
-  (mp.changedetectionname)(805306397)
-end
-return mp.INFECTED
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "‹}\b‹u\f‹M\016ó¤‹å]\195")
+return mp.CLEAN
 

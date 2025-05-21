@@ -3,17 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 12 then
-  (mp.set_mpattribute)("PUA:Block:SGMinerAvermore")
-  return mp.INFECTED
-end
-if (mp.bitand)(mp.HSTR_WEIGHT, 3) >= 2 then
-  if peattributes.amd64_image then
-    (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_sgminer")
-  else
-    ;
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan_sgminer")
+do
+  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_relocs_stripped") and (mp.get_mpattribute)("pea_no_relocs") and (mp.getfilesize)() >= 315392 and (mp.getfilesize)() < 368640 then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

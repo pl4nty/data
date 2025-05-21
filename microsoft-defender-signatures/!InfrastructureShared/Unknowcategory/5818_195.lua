@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasappendeddata and peattributes.isexe then
+if peattributes.x86_image and peattributes.no_security then
   return mp.INFECTED
 end
 return mp.CLEAN

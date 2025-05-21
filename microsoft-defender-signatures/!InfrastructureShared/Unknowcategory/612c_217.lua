@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 256 and (mp.get_mpattribute)("InEmail") then
+if (pesecs[4]).Name == ".btls2" and (pesecs[6]).Name == ".dcard" then
   return mp.INFECTED
 end
 return mp.CLEAN

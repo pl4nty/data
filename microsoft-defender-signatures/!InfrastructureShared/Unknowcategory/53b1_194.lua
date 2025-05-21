@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.hasexports == false then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 13, "ÇE\232\002-1\001")
+return mp.INFECTED
 

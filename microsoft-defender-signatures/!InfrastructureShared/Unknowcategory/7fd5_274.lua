@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Kelios.GD!MTB") then
+if ((pe.get_versioninfo)()).OriginalFilename == "riched32.dll" and ((pe.get_versioninfo)()).CompanyName == "Microsoft Corporation" then
   return mp.INFECTED
 end
 return mp.CLEAN

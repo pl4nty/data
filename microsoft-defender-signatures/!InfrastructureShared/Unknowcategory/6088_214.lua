@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:Ulbi.C")
+if (pesecs[pehdr.NumberOfSections]).SizeOfRawData == 0 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

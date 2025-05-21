@@ -3,16 +3,18 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = pehdr.AddressOfEntryPoint + pehdr.ImageBase
+local l_0_1, l_0_2 = nil, nil
+if (hstrlog[1]).matched then
+  l_0_1 = 14
+  l_0_2 = (hstrlog[1]).VA
 end
+local l_0_3 = (pe.mmap_va)(l_0_2, 21)
+local l_0_4 = (mp.readu_u32)(l_0_3, l_0_1)
+local l_0_5 = l_0_2 + l_0_1 + 3 + l_0_4
+l_0_5 = (mp.bitand)(l_0_5, 4294967295)
+if l_0_5 == l_0_0 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

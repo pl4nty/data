@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[6]).Name == "itx1018" then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:TopLevelFile") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

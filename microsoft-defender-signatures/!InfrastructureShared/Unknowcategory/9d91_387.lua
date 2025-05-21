@@ -3,15 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:CpuMulti")
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_cpumulti")
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = nil
 else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_cpumulti")
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.match)(l_0_0, "hidden.+bypass.+iex.+text%.encoding.+frombase64string.+gp.*hkcu:.+") ~= nil then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
 

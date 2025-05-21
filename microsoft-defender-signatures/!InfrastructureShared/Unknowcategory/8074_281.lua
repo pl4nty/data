@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and mp.HSTR_WEIGHT >= 3 and (mp.get_mpattribute)("SIGA:FileOperationDelete.S001") then
-  return mp.INFECTED
+if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if (mp.getfilesize)() > 153600 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

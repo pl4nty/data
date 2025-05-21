@@ -3,13 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 238593 then
-  if mp.HSTR_WEIGHT == 11 then
-    return mp.SUSPICIOUS
-  end
-  if mp.HSTR_WEIGHT == 10 then
-    return mp.LOWFI
-  end
+if peattributes.isexe == true and peattributes.amd64_image then
+  return mp.INFECTED
+end
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

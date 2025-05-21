@@ -3,8 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative and peattributes.no_security and (mp.getfilesize)() < 1111040 and pehdr.NumberOfSections == 3 and ((pesecs[3]).VirtualSize == 31486 or (pesecs[3]).VirtualSize == 31494) then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+  local l_0_0 = nil
+else
+  do
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
+
+    if (string.match)(l_0_0, "hidden.+bypass.+iex.+text%.encoding.+frombase64string.+gp.*hkcu:.+") ~= nil then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
 

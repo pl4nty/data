@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:NiceHashMiner")
-;
-(mp.set_mpattribute)("Company:CoinMiner32:HBIT")
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if not peattributes.isvbnative then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

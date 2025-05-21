@@ -3,17 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
-    local l_0_1 = {}
-    l_0_1["winword.exe"] = true
-    l_0_1["powerpnt.exe"] = true
-    l_0_1["excel.exe"] = true
-    if l_0_1[(string.lower)((l_0_0.image_path):match("([^\\]+)$"))] then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+local l_0_1 = l_0_0:match("(.+\\)([^\\]+)$")
+if (string.sub)(l_0_1, -18) == "\\windows\\system32\\" or (string.sub)(l_0_1, -18) == "\\windows\\syswow64\\" then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

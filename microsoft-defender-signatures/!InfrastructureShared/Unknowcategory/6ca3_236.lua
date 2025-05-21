@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount >= 3 and ((hstrlog[2]).hitcount >= 4 or (hstrlog[3]).hitcount >= 4) then
-  return mp.INFECTED
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-return mp.LOWFI
+;
+(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_ONCE)
+return mp.INFECTED
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->%(Ole Stream %d%)$") ~= nil then
-  return mp.INFECTED
+if (mp.get_mpattribute)("BM_OLE_FILE") then
+  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
 end
-return mp.CLEAN
+return mp.INFECTED
 

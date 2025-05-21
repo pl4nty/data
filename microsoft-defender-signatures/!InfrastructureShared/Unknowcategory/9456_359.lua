@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
-  (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/WinterCoat.A!dha")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\automationmanager.agentservice.exe", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

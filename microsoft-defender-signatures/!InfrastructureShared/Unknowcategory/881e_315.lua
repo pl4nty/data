@@ -3,12 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
-if (this_sigattrlog[2]).matched then
-  l_0_0 = (nri.GetURI)()
-end
-if l_0_0 ~= "" and (string.find)(l_0_0, "&X-Rps-CAT=", 1, true) then
+if (mp.crc32)(-1, epcode, 1, 9) == 2556408724 and pevars.epsec == pehdr.NumberOfSections then
   return mp.INFECTED
+else
+  return mp.LOWFI
 end
 return mp.CLEAN
 

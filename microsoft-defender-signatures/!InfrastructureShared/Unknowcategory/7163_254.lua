@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_exports and peattributes.amd64_image and pehdr.NumberOfSections == 6 then
+if peattributes.ismsil == true and peattributes.no_security == true and (mp.get_mpattribute)("pea_isdll") then
   return mp.INFECTED
 end
 return mp.CLEAN

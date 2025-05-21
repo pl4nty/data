@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(zipsfx%)%-%>%w+%.bat$") == nil then
+if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("ValidDigitalSignature") then
   return mp.CLEAN
 end
 return mp.INFECTED

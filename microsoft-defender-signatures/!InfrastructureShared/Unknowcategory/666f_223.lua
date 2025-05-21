@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+if mp.HSTR_WEIGHT >= 6 then
   return mp.INFECTED
 end
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Ramdo.H")
 return mp.CLEAN
 

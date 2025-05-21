@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.SizeOfImage >= 217088 and pehdr.SizeOfImage <= 393216 then
-  (mp.set_mpattribute)("Obf:Nivdort.S1")
-  return mp.SUSPICIOUS
+if (mp.getfilesize)() > 5120 then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME)) == "cnqmutil.dll" then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

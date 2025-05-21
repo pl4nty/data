@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "word/_rels", 1, true) ~= nil and (mp.getfilesize)() < 400 then
-  return mp.INFECTED
+local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\LogonUI.exe")
+local l_0_1 = (sysio.GetProcessFromFileName)(l_0_0)
+if l_0_1 == nil or #l_0_1 == 0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

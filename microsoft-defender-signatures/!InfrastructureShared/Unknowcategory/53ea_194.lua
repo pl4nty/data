@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 13, "\144")
-return mp.INFECTED
+if peattributes.isdll == true and peattributes.no_resources == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

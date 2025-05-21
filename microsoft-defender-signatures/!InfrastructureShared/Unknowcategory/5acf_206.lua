@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 % 4096 == 0 and l_0_0 >= 143360 and l_0_0 <= 155648 then
+if (mp.getfilesize)() < 500000 and peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

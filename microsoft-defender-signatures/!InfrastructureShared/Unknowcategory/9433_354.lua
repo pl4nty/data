@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 8 then
-  return mp.INFECTED
-end
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("HSTR:BrowserModifier:Win32/Iminent.A!Cby")
-end
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-end
+(pe.set_peattribute)("hstr_exhaustive", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+;
+(pe.reemulate)()
 return mp.CLEAN
 

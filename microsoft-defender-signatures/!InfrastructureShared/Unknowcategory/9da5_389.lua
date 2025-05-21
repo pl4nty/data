@@ -3,15 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:WildRigMulti")
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_wildrig")
-else
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0 then
+    local l_0_1 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%WINDIR%\\"))
+    if l_0_0:find(l_0_1, 1, true) then
+      return mp.CLEAN
+    end
+  end
   ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_wildrig")
+  (bm.trigger_sig)("SuspRedirAttempt", "DllDrop")
+  return mp.CLEAN
 end
-return mp.CLEAN
 

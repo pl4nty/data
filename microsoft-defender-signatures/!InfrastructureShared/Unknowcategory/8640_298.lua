@@ -3,12 +3,12 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-    ;
-    (bm.add_related_file)(l_0_0)
+if (mp.getfilesize)() < 1000000 and peattributes.executes_from_last_section == true then
+  if mp.HSTR_WEIGHT >= 3 then
+    return mp.SUSPICIOUS
+  else
+    return mp.LOWFI
   end
-  return mp.INFECTED
 end
+return mp.CLEAN
 

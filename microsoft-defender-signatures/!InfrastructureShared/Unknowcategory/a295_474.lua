@@ -3,16 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe == true and (pesecs[1]).Name == "UPX0" and (pesecs[2]).Name == "UPX1" and (pesecs[3]).Name == "UPX2" and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -10) == "\\mstsc.exe" or (string.sub)(l_0_0, -27) == "\\remotedesktopmanager64.exe" or (string.sub)(l_0_0, -11) == "\\rdcman.exe" or (string.sub)(l_0_0, -14) == "\\mremoteng.exe" or (string.sub)(l_0_0, -10) == "\\lsass.exe" then
   return mp.CLEAN
 end
+return mp.INFECTED
 

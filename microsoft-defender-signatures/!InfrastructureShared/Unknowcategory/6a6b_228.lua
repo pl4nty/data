@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 2048 and (mp.get_mpattribute)("PACKED_WITH:[Eval]") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and (mp.get_mpattribute)("SIGATTR:OpensBHOKey") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

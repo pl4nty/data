@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:TopLevelFile") and not (mp.get_mpattribute)("AGGR:MSIL:GenCommercialObfuscator.A") and ((pehdr.DataDirectory)[pe.IMAGE_DIRECTORY_ENTRY_SECURITY]).RVA == 0 then
-  return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  if (string.lower)((string.sub)(l_0_0, -14)) == "\\gvfs\\gvfs.exe" then
+    return mp.CLEAN
+  end
+  if (string.lower)((string.sub)(l_0_0, -36)) == "\\urbrowser\\application\\urbrowser.exe" then
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

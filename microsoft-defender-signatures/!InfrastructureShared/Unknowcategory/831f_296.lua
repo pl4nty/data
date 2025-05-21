@@ -3,11 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if not (hstrlog[2]).matched and not (hstrlog[3]).matched then
+do
+  if peattributes.isexe == true or peattributes.isdll == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
   return mp.CLEAN
 end
-if not (hstrlog[4]).matched and not (hstrlog[5]).matched and not (hstrlog[6]).matched then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

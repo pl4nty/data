@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 7, "\000\000\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 17, "\000\000\000")
-return mp.INFECTED
+if peattributes.isdll == true and peattributes.hasexports == true and peattributes.no_security == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

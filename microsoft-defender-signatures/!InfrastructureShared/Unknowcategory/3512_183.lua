@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:MadCodeHook") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.LOWFI
 

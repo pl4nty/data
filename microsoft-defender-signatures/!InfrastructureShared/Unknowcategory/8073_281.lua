@@ -3,12 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 12 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if (string.find)(l_0_1, " %d%d%d?%d?%d? ", 1, false) then
   return mp.INFECTED
-else
-  if (hstrlog[3]).matched then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
 end
 return mp.CLEAN
 

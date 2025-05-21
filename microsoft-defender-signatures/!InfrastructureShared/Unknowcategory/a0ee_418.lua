@@ -3,16 +3,25 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_amd64_image") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 28672 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if peattributes.hasexports ~= true then
   return mp.CLEAN
 end
+local l_0_0, l_0_1 = (pe.get_exports)()
+if l_0_0 > 8 then
+  return mp.CLEAN
+end
+local l_0_2 = 0
+for l_0_6 = 1, l_0_0 do
+  local l_0_7 = (pe.mmap_string_rva)((l_0_1[l_0_6]).namerva, 64)
+  if l_0_7 == "SetHook" then
+    l_0_2 = l_0_2 + 1
+  end
+  if l_0_7 == "UnHook" then
+    l_0_2 = l_0_2 + 1
+  end
+end
+if l_0_2 < 2 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

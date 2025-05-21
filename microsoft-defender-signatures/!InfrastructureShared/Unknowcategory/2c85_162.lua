@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:TransmissionTorrent")
-return mp.INFECTED
+if peattributes.x86_image then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

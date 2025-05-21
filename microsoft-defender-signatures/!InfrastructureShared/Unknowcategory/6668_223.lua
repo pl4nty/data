@@ -4,9 +4,8 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:AndroidArmour.A")
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Trojan:Win32/Ramdo.H")
-return mp.CLEAN
+return mp.LOWFI
 

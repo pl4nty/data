@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (not (mp.get_mpattribute)("NID:Trojan:Win64/Zusy.AP!MTB")) then
+if peattributes.isexe == true and (pesecs[7]).Name == ".reloc" and (pesecs[7]).Characteristics == 1107296320 then
   return mp.INFECTED
 end
 return mp.CLEAN

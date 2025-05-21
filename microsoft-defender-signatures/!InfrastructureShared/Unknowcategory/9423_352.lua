@@ -3,7 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if ((((not (hstrlog[6]).matched or (hstrlog[7]).matched) and not (hstrlog[8]).matched) or (hstrlog[9]).matched) and not (hstrlog[10]).matched) or 0 + 1 + 1 + 1 + 1 + 2 >= 3 then
+local l_0_0 = (string.lower)(tostring(headerpage))
+local l_0_1, l_0_2 = (string.gsub)(l_0_0, "&#x0a;", "")
+local l_0_3, l_0_4 = (string.gsub)(l_0_0, "&#x0d;", "")
+if l_0_2 == 0 then
+  return mp.CLEAN
+end
+if l_0_4 == 0 then
+  return mp.CLEAN
+end
+if l_0_2 > 50 and l_0_4 > 50 then
   return mp.INFECTED
 end
 return mp.CLEAN

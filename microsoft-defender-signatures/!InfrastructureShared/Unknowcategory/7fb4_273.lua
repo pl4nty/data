@@ -3,13 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
+if pehdr.NumberOfSections == 5 and (pesecs[1]).Name == "AUTO" and (pesecs[2]).Name == "DGROUP" then
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT < 3 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
-end
-return mp.LOWFI
+return mp.CLEAN
 
