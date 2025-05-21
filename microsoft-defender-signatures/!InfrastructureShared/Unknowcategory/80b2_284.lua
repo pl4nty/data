@@ -3,13 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.isexe and peattributes.no_security == false and peattributes.ismsil == false then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 >= 1126400 and l_0_0 <= 1945600 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+local l_0_0 = (mp.getfilesize)()
+if (hstrlog[5]).matched and peattributes.no_security == true and l_0_0 >= 303104 and l_0_0 <= 1601536 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,15 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:XMRig")
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_xmrig")
-else
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 96)
+local l_0_1 = (string.find)(l_0_0, "t\002\235", 1, true) - 1
+local l_0_2 = (string.find)(l_0_0, "t\002\235", l_0_1 + 4, true) - 1
+if l_0_1 ~= nil and l_0_2 ~= nil then
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_1, "\235")
   ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_xmrig")
+  (pe.mmap_patch_va)(pevars.sigaddr + l_0_2, "\235")
 end
-return mp.CLEAN
+return mp.LOWFI
 

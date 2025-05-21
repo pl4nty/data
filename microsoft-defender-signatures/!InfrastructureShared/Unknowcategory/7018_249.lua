@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and #(pe.get_exports)() == 1 then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, ".diagcab->", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

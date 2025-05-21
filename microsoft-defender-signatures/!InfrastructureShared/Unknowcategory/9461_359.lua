@@ -3,12 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("HSTR:TrojanClicker:Win64/Fleercivet.B")
-end
-if mp.HSTR_WEIGHT >= 7 then
-  if pehdr.Machine == 332 then
-    (mp.changedetectionname)(805306451)
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 then
+  if (string.find)(l_0_0, "\\program files", 1, true) or (string.find)(l_0_0, "\\automationmanager.agentservice.exe", 1, true) then
+    return mp.CLEAN
   end
   return mp.INFECTED
 end

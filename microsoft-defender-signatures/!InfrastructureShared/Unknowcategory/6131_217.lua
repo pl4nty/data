@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 6 and (mp.getfilesize)() >= 5868504 then
+if (pesecs[3]).Name == ".qhw" or (pesecs[2]).Name == "DrtWJgcR" then
   return mp.INFECTED
 end
 return mp.CLEAN

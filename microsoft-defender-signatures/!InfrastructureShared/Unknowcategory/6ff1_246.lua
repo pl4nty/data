@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>inst%.vbs$") == nil then
-  return mp.CLEAN
+if (peattributes.isdll or peattributes.isexe or peattributes.ismsil) and peattributes.no_security then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") then
+if mp.HSTR_WEIGHT == 2 and (hstrlog[1]).hitcount > 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

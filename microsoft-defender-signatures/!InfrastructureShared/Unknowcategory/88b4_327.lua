@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 14 and peattributes.isexe == true and pehdr.AddressOfEntryPoint == 435072 and (pesecs[4]).Name == "/4" then
+if peattributes.suspicious_image_version and peattributes.suspicious_timestamp and peattributes.isdll and (mp.getfilesize)() < 325888 then
+  (pe.reemulate)()
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (((not (hstrlog[1]).matched and not (hstrlog[2]).matched) or not (hstrlog[3]).matched) and not (hstrlog[4]).matched) or 0 + 1 + 1 == 2 then
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 then
+  if (string.find)((string.lower)(l_0_0), "\\opera software\\", 1, true) then
+    return mp.CLEAN
+  end
   return mp.INFECTED
 end
 return mp.CLEAN

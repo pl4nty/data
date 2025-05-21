@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Spc.A")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.set_peattribute)("dt_continue_after_unpacking", true)
+;
+(pe.set_peattribute)("enable_vmm_grow", true)
+return mp.INFECTED
 

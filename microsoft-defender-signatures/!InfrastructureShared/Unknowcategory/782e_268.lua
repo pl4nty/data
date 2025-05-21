@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.no_security == true and (mp.getfilesize)() > 100000 and (mp.getfilesize)() < 2000000 then
+if peattributes.isdll == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Tedy.AMCV") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:Dnotua.AS")
+if (pesecs[5]).Name == ".rrdata" and (pesecs[6]).Name == ".lif\a" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

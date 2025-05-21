@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:AMCleaner.Z")
+if mp.HSTR_WEIGHT >= 12 then
+  (mp.set_mpattribute)("PUA:Block:Coinminer.A")
   return mp.INFECTED
 end
 return mp.LOWFI

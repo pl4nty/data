@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[2]).Name == "UPX1" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_peattribute)("dt_continue_after_unpacking", true)
+return mp.SUSPICIOUS
 

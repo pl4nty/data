@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, ".diagcab->", 1, true) ~= nil then
+if peattributes.isdll == true and ((pe.get_exports_count)() == 11 or (pe.get_exports_count)() == 31) then
   return mp.INFECTED
 end
 return mp.CLEAN

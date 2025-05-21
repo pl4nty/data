@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/LummaC.G") then
+if (pesecs[4]).Name == ".zip#**." and (pesecs[5]).Name == ".zip#**." and (pesecs[6]).Name == ".zip#**." then
   return mp.INFECTED
 end
 return mp.CLEAN

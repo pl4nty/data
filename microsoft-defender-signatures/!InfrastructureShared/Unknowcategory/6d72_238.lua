@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") or peattributes.isexe == false then
-  return mp.CLEAN
+if peattributes.ismsil == true and (mp.get_mpattribute)("NID:Trojan:MSIL/AgentTesla") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

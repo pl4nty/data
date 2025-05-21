@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-do
-  if pehdr.TimeDateStamp ~= 0 then
-    local l_0_0 = (MpCommon.GetCurrentTimeT)()
-    if pehdr.TimeDateStamp < l_0_0 and l_0_0 - pehdr.TimeDateStamp <= 86400 then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 8, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 14, "x")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 20, "x")
+return mp.INFECTED
 

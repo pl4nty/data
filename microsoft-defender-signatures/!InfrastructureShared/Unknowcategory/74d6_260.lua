@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 9728 and l_0_0 <= 13312 and (hstrlog[1]).matched and (hstrlog[2]).matched then
-  return mp.INFECTED
+if not peattributes.hasappendeddata then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.isvbpcode then
+  return mp.CLEAN
+end
+if not peattributes.dirty_wx_branch then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

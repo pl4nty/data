@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Kuguo.B")
-  return mp.INFECTED
+if (mp.get_mpattribute)("InEmail") then
+  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
 end
-return mp.LOWFI
+return mp.INFECTED
 

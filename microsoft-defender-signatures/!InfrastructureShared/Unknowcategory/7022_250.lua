@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if not peattributes.amd64_image then
   return mp.CLEAN
 end
-if peattributes.isexe == true then
-  return mp.INFECTED
+if not peattributes.enable_vmm_grow then
+  (pe.set_peattribute)("enable_vmm_grow", true)
 end
-return mp.CLEAN
+return mp.INFECTED
 

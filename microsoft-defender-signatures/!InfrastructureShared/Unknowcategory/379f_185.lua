@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_hasappendeddata") then
-  return mp.SUSPICIOUS
+if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

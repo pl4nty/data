@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_process then
+if peattributes.isvbnative then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security == true and l_0_0 >= 106496 and l_0_0 <= 110592 and (pehdr.NumberOfSections >= 4 or pehdr.NumberOfSections <= 6) then
+if peattributes.no_security == true and pehdr.NumberOfSections > 3 and pehdr.NumberOfSections < 7 and (pesecs[4]).Name == ".pdata" then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

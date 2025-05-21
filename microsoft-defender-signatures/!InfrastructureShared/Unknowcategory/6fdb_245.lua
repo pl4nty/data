@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilename)()):match("(Ole Stream 0).*%.scr") and peattributes.isexe then
+if (mp.get_mpattribute)("MpExcelFormulaRoutines") and (mp.get_mpattribute)("RPF:XlsAbnormalSheetStateBits") then
   return mp.INFECTED
 end
 return mp.CLEAN

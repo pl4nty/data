@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("PUA:Block:MacTweaker.A")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/InvisibleFerret.A!dha")
+return mp.INFECTED
 

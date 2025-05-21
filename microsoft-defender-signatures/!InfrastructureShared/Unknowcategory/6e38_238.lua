@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 197000 then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  ;
-  (pe.reemulate)()
+if mp.HSTR_WEIGHT >= 4 then
+  (mp.set_mpattribute)("HSTR:IBryteDownloaderz.A3")
 end
+;
+(mp.set_mpattribute)("PUA:Block:IBryte")
 return mp.INFECTED
 

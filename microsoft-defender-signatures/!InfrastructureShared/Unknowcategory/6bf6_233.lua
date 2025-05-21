@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("HSTR:VirTool:Win32/AscUrlExe") then
+(mp.set_mpattribute)("HSTR:VirTool:MSIL/Injector.HZ")
+if peattributes.ismsil == true then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

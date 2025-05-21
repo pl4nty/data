@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe or peattributes.isdll then
+if (mp.get_mpattribute)("SIGATTR:FindDNFWindow") then
   return mp.INFECTED
 end
 return mp.CLEAN

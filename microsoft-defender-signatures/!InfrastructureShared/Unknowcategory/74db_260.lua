@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Renos_msposer")
-if (mp.get_mpattribute)("PEPCODE:VirTool:Win32/Obfuscator.ED") then
+if ((pe.get_versioninfo)()).InternalName == "Bluthmon.exe" and ((pe.get_versioninfo)()).CompanyName == "Mototech.co" then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

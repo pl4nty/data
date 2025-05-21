@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.no_security == true then
+if ((pe.get_versioninfo)()).CompanyName == "Microsoft" then
   return mp.INFECTED
 end
 return mp.CLEAN

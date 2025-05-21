@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Trojan:Win32/PswStealer.ats01") then
+if mp.HSTR_WEIGHT == 3 then
   return mp.INFECTED
 end
+;
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
 return mp.CLEAN
 

@@ -3,11 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_MED)
-  ;
-  (mp.SMSAsyncScan)(l_0_0.ppid)
+if (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("SIGATTR:SetItselfRunKey") and (mp.get_mpattribute)("SIGATTR:mzinresource") then
   return mp.INFECTED
 end
 return mp.CLEAN

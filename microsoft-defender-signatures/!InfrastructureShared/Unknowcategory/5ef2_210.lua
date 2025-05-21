@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetCertificateInfo)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.Signers ~= nil then
-    return mp.CLEAN
-  end
+if (mp.getfilesize)() > 5242880 and peattributes.amd64_image then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

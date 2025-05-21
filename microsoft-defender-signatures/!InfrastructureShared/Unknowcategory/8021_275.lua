@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((mp.getfilesize)() < 2048000 or (mp.getfilesize)() < 39845887 or (mp.getfilesize)() <= 40000000) and pehdr.NumberOfSections == 3 then
+if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:GoMainFunc") and (mp.get_mpattribute)("LUA:FileSizeGT12M.A") then
   return mp.INFECTED
 end
 return mp.CLEAN

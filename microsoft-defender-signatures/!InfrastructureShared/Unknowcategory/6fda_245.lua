@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.hasappendeddata and peattributes.x86_image then
-  return mp.INFECTED
+if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(rarsfx%)%-%>%w+%.bat$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

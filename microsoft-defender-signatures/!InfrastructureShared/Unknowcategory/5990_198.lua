@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.headerchecksum0 == true then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.ismsil then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

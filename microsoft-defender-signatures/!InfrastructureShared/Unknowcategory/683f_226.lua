@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and peattributes.amd64_image == true then
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "[DocWrite]", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

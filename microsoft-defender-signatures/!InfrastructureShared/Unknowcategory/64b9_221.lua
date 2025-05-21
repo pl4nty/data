@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("PUA:Block:InstallCore.A")
+if peattributes.no_security == true and peattributes.ismsil == true and peattributes.isexe == true then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,14 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).hitcount == 0 and (hstrlog[3]).hitcount == 0 and (hstrlog[4]).hitcount == 0 and (hstrlog[5]).hitcount == 0 then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_2 = l_0_1:match("([^\\]+)$")
+  if l_0_2 == "powershell.exe" or (string.find)(l_0_2, "^%d+%.exe") then
+    local l_0_3 = (mp.GetScannedPPID)()
+    if l_0_3 == nil then
+      return mp.CLEAN
+    end
+    ;
+    (MpCommon.RequestSmsOnProcess)(l_0_3, MpCommon.SMS_SCAN_LOW)
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
-if (hstrlog[6]).hitcount == 0 and (hstrlog[7]).hitcount == 0 and (hstrlog[8]).hitcount == 0 and (hstrlog[9]).hitcount == 0 then
-  return mp.CLEAN
-end
-if (hstrlog[10]).hitcount == 0 and (hstrlog[11]).hitcount == 0 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

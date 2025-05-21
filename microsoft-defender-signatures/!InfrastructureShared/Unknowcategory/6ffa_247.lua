@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/CobaltStrike.PA!Pra1") then
-  return mp.INFECTED
+if pehdr.NumberOfSections ~= 3 then
+  return mp.LOWFI
 end
-return mp.CLEAN
+if (pesecs[2]).Name ~= ".scot" then
+  return mp.LOWFI
+end
+return mp.SUSPICIOUS
 

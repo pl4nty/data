@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)((string.lower)(l_0_0), ".asar$") ~= nil then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:DelphiFile") and (mp.get_mpattribute)("SIGATTR:OpensBHOKey") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

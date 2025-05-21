@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[9]).hitcount >= 7 and pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
+if peattributes.ismsil and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("SIGATTR:MSIL/LoadPEBase64.J") then
   return mp.INFECTED
 end
 return mp.CLEAN

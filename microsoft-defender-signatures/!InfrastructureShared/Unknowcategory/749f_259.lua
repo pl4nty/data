@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0 ~= nil and (string.find)(l_0_0, "\\w64time.dll", 1, true) == nil then
+if (mp.get_mpattribute)("pea_isdll") and (pe.query_import)(pe.IMPORT_STATIC, 1751160259) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -6,5 +6,5 @@
 if peattributes.isvbnative then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

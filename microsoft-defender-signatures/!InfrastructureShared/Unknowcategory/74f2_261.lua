@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasExpensiveLoop") then
-  return mp.INFECTED
-end
-if peattributes.dt_error_heur_exit_criteria then
+if peattributes.isexe == true and peattributes.no_boundimport == true and peattributes.no_exports == true and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

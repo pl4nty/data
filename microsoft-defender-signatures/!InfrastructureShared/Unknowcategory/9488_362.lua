@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and pehdr.NumberOfSections == 5 and (pesecs[2]).Name == ".rdata" and (pesecs[2]).SizeOfRawData > 20480 and (pesecs[2]).SizeOfRawData < 28672 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and peattributes.no_security == true and l_0_0 <= 53248 and l_0_0 >= 36864 and peattributes.isdll == true and (mp.get_mpattribute)("Trojan:MSIL/MalInject.A!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("//SCPT:TrojanSpy:AndroidOS/DmsSpy.BB1")
+if not peattributes.has_msilresources then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

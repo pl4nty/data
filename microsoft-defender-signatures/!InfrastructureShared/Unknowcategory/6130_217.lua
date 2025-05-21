@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%-%>%(VFS%:%d+%.bat%)$") == nil then
+if (string.find)((mp.getfilename)(), "%-%>%(%w+Sfx%)%-%>CMT$") == nil then
   return mp.CLEAN
 end
 return mp.INFECTED

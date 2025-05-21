@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.hasexports == true and l_0_0 >= 100000 and l_0_0 <= 300000 then
+if pehdr.ImageBase + pehdr.SizeOfHeaders < (hstrlog[1]).VA then
   return mp.INFECTED
 end
 return mp.CLEAN

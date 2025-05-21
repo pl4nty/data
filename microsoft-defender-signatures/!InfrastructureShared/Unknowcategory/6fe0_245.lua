@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Neoreblamy.AO!MTB") then
+  return mp.INFECTED
 end
-if (mp.get_mpattribute)("pea_isdriver") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

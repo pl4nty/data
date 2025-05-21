@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  if (string.find)(l_0_0, "\\lenovo\\visualdiscovery\\", 1, true) ~= nil then
-    return mp.INFECTED
-  end
+if (pe.isdynamic_va)(pevars.sigaddr) and (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

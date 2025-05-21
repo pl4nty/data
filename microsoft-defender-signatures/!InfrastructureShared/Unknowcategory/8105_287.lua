@@ -3,16 +3,6 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (pesecs[5]).Name == ".msvcjmc" then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 128), "A\235", 1, true), "\235\001")
+return mp.INFECTED
 

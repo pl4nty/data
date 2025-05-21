@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 1048000 and pehdr.NumberOfSections <= 5 and (pesecs[5]).Name == "" then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilename)()
+if (string.sub)(l_0_0, -10) == "->(Upxw64)" then
+  (mp.set_mpattribute)("HSTR:HackTool:Win64/MikatzUPX")
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.isexe and peattributes.hasappendeddata and peattributes.has_msilresources then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+;
+(mp.set_mpattribute)("PUA:Block:CrossRider")
+return mp.INFECTED
 

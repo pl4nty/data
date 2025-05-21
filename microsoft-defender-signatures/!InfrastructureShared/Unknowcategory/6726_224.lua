@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[5]).Name == "memcpy_" then
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:EliteKeylogger.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

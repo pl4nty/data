@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.hasstandardentry and pehdr.NumberOfSections >= 5 and (pesecs[4]).Name == ".rsrc" and (pesecs[4]).SizeOfRawData >= 86016 then
+if pehdr.NumberOfSections == 4 and (pesecs[pehdr.NumberOfSections]).Name == "" and (pesecs[pehdr.NumberOfSections]).SizeOfRawData == 0 and (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 3758096384) == 3758096384 then
   return mp.INFECTED
 end
-return mp.SUSPICIOUS
+return mp.CLEAN
 

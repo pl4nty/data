@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.amd64_image then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 24, "\1850\000\000\000\144")
+return mp.INFECTED
 

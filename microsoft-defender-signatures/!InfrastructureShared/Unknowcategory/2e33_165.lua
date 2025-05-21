@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("c") then
+if peattributes.isvbnative == true then
   return mp.INFECTED
 end
 return mp.CLEAN

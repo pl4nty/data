@@ -3,12 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT == 3 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
 end
-if (string.find)(l_0_0.CompanyName, "LaplFink Software", 1, true) == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT == 5 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

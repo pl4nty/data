@@ -3,14 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if (string.find)(l_0_1, "\\windows\\system32\\", 1, true) and l_0_1:match("([^\\]+)$") == "dllhost.exe" then
-      return mp.INFECTED
-    end
-  end
+if (bm.GetSignatureMatchDuration)() > 20000000 then
   return mp.CLEAN
 end
+if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p1 == nil then
+  return mp.CLEAN
+end
+local l_0_0 = (this_sigattrlog[1]).utf8p1
+;
+(bm.trigger_sig)("BMGenericCodeInjector.A", l_0_0)
+return mp.CLEAN
 

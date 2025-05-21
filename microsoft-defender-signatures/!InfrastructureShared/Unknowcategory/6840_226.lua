@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.amd64_image and peattributes.no_security == true then
+local l_0_0 = (mp.getfilename)()
+if (string.find)((string.lower)(l_0_0), ".xps") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

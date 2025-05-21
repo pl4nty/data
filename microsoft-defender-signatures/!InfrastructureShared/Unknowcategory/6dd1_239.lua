@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_0, "drawing1.xml.rels") ~= nil then
-  return mp.INFECTED
+if (mp.get_mpattribute)("SIGATTR:Trojan:Win32/C2Lop.gen!G") and (mp.get_mpattribute)("HSTR:HasSEH") then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/SnakeKeyLogger.AMDA") then
+if (pesecs[5]).Name == ".rsrc" and (pesecs[5]).VirtualSize > 93955 and (pesecs[5]).VirtualSize < 93961 then
   return mp.INFECTED
 end
 return mp.CLEAN

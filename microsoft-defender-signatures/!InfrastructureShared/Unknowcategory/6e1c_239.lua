@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() < 100000 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 2000 and l_0_0 > 1000 and (mp.get_mpattribute)("BM_TEXT_FILE") then
   return mp.INFECTED
 end
 return mp.CLEAN

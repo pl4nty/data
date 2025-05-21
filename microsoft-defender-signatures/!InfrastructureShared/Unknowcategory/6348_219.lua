@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 6 then
-  (mp.set_mpattribute)("PUA:Block:Bundloreb.C")
+if peattributes.ismsil == true and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

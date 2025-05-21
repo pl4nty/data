@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win64/MeduzaStealer!MTB") then
+  return mp.INFECTED
 end
-if not peattributes.x86_image then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

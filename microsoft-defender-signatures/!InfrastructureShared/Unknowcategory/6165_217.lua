@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 then
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:FakeApp.N")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

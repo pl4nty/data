@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isexe == true or peattributes.isdll == true) and peattributes.no_security == true then
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if not peattributes.executes_from_dynamic_memory then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

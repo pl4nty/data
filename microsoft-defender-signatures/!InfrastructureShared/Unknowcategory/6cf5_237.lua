@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_exports_count)()
-if peattributes.isdll == true and (l_0_0 == 10 or l_0_0 == 11) then
+if (pe.get_regval)(pe.REG_EAX) == 106 and (pe.get_regval)(pe.REG_EDX) == 80 then
   return mp.INFECTED
 end
 return mp.CLEAN

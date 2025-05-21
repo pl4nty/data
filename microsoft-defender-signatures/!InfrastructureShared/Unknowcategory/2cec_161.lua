@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil ~= true then
-  return mp.CLEAN
+if peattributes.ismsil == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

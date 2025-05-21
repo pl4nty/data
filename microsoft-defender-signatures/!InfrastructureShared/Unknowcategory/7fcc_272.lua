@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isexe") and peattributes.no_security == true and (mp.getfilesize)() < 120000 then
-  return mp.INFECTED
-end
+(mp.set_mpattribute)("MpSimulateParanoid")
+;
+(mp.set_mpattribute)("MpEnableCOM")
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan_Adrotator")
+;
+(pe.reemulate)()
 return mp.CLEAN
 

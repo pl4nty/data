@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (pe.get_exports)()
-for l_0_5 = 1, l_0_0 do
-  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "ServiceMain" then
-    return mp.INFECTED
-  end
+if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("SIGATTR:Trojan:MSIL/Formbook.AMA") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

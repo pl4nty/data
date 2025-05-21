@@ -3,18 +3,16 @@
 
 -- params : ...
 -- function num : 0
-add_related_file_if_exists = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0.matched and l_1_0.utf8p2 ~= nil then
-    local l_1_1 = (mp.ContextualExpandEnvironmentVariables)(l_1_0.utf8p2)
-    ;
-    (bm.add_related_file)(l_1_1)
-  end
+(pe.mmap_patch_va)(pevars.sigaddr + 2, "")
+if (string.byte)((pe.mmap_va)(pevars.sigaddr + 5, 1), 1) == 157 then
+  (pe.mmap_patch_va)(pevars.sigaddr + 5, "\149")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 11, "\002")
+else
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr, "j\003Y‰M")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 8, "\002")
 end
-
-add_related_file_if_exists(this_sigattrlog[1])
-add_related_file_if_exists(this_sigattrlog[2])
-add_related_file_if_exists(this_sigattrlog[3])
-add_related_file_if_exists(this_sigattrlog[4])
 return mp.INFECTED
 

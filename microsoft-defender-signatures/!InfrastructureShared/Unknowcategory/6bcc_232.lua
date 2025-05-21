@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("androidmanifest.xml") then
   return mp.INFECTED
 end
 return mp.CLEAN

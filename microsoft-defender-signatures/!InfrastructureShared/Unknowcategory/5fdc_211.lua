@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and (mp.getfilesize)() == 73728 then
+if (hstrlog[1]).matched and (hstrlog[1]).hitcount > 5 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

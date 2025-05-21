@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll == true and (pe.get_exports_count)() == 70 and peattributes.no_security == true then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "androidmanifest", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

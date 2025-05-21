@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true or peattributes.isdll == true and (pesecs[6]).Name == ".edata" and (pesecs[6]).Characteristics == 1073741888 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_regval)(pe.REG_EIP, (pe.get_regval)(pe.REG_EIP) + (string.byte)((pe.mmap_va)(pevars.sigaddr - 1, 1), 1))
+return mp.INFECTED
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (mp.IsTrustedFile)(false) == true or (mp.IsKnownFriendlyFile)((mp.getfilename)(), true, true) == true then
-  return mp.CLEAN
+if (mp.get_mpattribute)("InEmail") then
+  (mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

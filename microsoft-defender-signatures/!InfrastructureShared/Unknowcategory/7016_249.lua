@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and (pesecs[1]).Name == "   " then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 30000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

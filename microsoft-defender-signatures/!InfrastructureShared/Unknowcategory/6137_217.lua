@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0:find(".rsa") then
+if pehdr.NumberOfSections == 7 and (mp.getfilesize)() >= 5844992 then
   return mp.INFECTED
 end
 return mp.CLEAN

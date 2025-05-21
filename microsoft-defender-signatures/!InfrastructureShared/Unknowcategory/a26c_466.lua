@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 and peattributes.no_security and ((hstrlog[1]).matched or (hstrlog[2]).matched) and ((hstrlog[3]).matched or (hstrlog[4]).matched or (hstrlog[5]).matched or (hstrlog[6]).matched) then
+if (hstrlog[1]).matched then
+  (mp.readprotection)(false)
+  local l_0_0 = (mp.readfile)(0, (mp.getfilesize)())
+  local l_0_1 = (pe.foffset_va)((hstrlog[1]).VA)
+  ;
+  (mp.writeu_u32)(l_0_0, l_0_1 + 1, (hstrlog[1]).VA + 4)
+  ;
+  (mp.vfo_add_buffer)(l_0_0, "locale_patched", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+end
+do
   return mp.INFECTED
 end
-return mp.CLEAN
 

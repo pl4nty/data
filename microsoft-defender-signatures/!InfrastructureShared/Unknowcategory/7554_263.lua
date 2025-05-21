@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[5]).Name == ".gr43" and (pesecs[6]).Name == ".00cfg" then
+if peattributes.isvbnative == true then
+  (pe.set_image_filename)("C:\\temp\\myapp.exe")
+  ;
+  (pe.reemulate)()
   return mp.INFECTED
 end
 return mp.CLEAN

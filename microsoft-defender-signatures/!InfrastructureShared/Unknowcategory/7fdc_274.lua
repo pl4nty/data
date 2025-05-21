@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[2]).Name == ".sedata" and (pesecs[2]).Characteristics == 1744830496 then
+if mp.HSTR_WEIGHT == 2 and (pesecs[2]).PointerToRawData == 2701144064 and pehdr.SizeOfImage < (pesecs[2]).PointerToRawData then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".btls5" then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 2048 and l_0_0 <= 10240 then
   return mp.INFECTED
 end
 return mp.CLEAN

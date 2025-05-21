@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and peattributes.isexe == true and (mp.getfilesize)() < 2048000 then
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
   return mp.INFECTED
-else
-  if (mp.get_mpattribute)("HSTR:IsVB6") and peattributes.isexe == true and (mp.getfilesize)() < 2048000 then
-    return mp.INFECTED
-  end
 end
 return mp.CLEAN
 

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (l_0_0 >= 1500000 and l_0_0 <= 2000000 and (pesecs[1]).Name == "UPX0") or l_0_0 >= 3300000 and l_0_0 <= 4000000 then
+if (mp.getfilesize)() < 2097152 then
+  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
+  ;
+  (mp.set_mpattribute)("NScript:NoParsingLimits")
   return mp.INFECTED
 end
 return mp.CLEAN

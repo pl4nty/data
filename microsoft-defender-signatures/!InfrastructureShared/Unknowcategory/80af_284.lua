@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (hstrlog[5]).matched and peattributes.no_security == true and l_0_0 >= 303104 and l_0_0 <= 1601536 then
-  return mp.INFECTED
+if peattributes.isdll == false and (mp.getfilesize)() < 600000 then
+  return mp.SUSPICIOUS
 end
+;
+(mp.set_mpattribute)("HSTR:Obfuscator_CheckApiArtifact2")
 return mp.CLEAN
 

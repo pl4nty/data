@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if (pesecs[4]).Name == ".ctls0" and (pesecs[6]).Name == ".jetb" then
+  return mp.INFECTED
 end
-if not peattributes.suspicious_image_version then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

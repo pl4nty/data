@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.ismsil == false and peattributes.isvbnative then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "workbook.bin", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:GoogleSoftwareRemovalTool") == true then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 7, "êê")
 ;
-(mp.set_mpattribute)("PUA:Block:BrowseFox")
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "êê")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 28, "êê")
 return mp.INFECTED
 

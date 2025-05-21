@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.get_mpattribute)("NID:Win32/LockCrypt.PA!Pra1") then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0 ~= nil and l_0_0:find("putty", 1, true) ~= nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

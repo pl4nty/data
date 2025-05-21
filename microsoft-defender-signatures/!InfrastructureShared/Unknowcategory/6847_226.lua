@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("pea_no_security") then
+local l_0_0 = (nri.GetConnectionString)()
+if l_0_0:find("DestPort=3389;", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

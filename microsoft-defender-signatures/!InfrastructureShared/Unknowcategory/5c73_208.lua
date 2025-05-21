@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
 ;
-(mp.set_mpattribute)("PEBMPAT:Exprio_Tick_Count")
+(mp.set_mpattribute)("Anti:StackValueCheck_LocalShrink")
 return mp.INFECTED
 

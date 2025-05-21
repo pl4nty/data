@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and (mp.getfilesize)() > 20000000 then
+if peattributes.isvbnative and (pesecs[3]).SizeOfRawData > 65536 then
   return mp.INFECTED
 end
 return mp.CLEAN

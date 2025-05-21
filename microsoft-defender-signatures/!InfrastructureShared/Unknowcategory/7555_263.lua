@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (l_0_0 > 2000000 and l_0_0 < 5500000) or l_0_0 > 8000000 and l_0_0 < 11000000 then
+local l_0_0, l_0_1 = (bm.get_process_relationships)()
+if not l_0_0 then
   return mp.INFECTED
 end
-return mp.CLEAN
+for l_0_5,l_0_6 in ipairs(l_0_0) do
+  if l_0_6.image_path then
+    (bm.add_related_file)(l_0_6.image_path)
+  end
+end
+return mp.INFECTED
 

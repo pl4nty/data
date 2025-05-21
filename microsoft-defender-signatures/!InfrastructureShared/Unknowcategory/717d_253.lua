@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[7]).matched then
+if (hstrlog[6]).matched then
   (mp.changedetectionname)(805306431)
 else
-  if (hstrlog[8]).matched then
+  if (hstrlog[7]).matched then
     (mp.changedetectionname)(805306444)
   end
 end

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SCPT:HTML/SuspiciousRedirect") then
+if peattributes.isexe == true and peattributes.hasexports == true then
   return mp.INFECTED
 end
 return mp.CLEAN

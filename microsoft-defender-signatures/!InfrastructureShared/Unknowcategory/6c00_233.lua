@@ -3,11 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  return mp.INFECTED
-end
-if (hstrlog[1]).matched then
-  return mp.LOWFI
+if peattributes.amd64_image then
+  (mp.set_mpattribute)("SIGATTR:MPK64")
+else
+  ;
+  (mp.set_mpattribute)("SIGATTR:MPK32")
 end
 return mp.CLEAN
 

@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
+local l_0_0 = (mp.getfilesize)()
+-- DECOMPILER ERROR at PC17: Unhandled construct in 'MakeBoolean' P3
+
+if (l_0_0 >= 147456 and l_0_0 <= 184320) or l_0_0 < 217088 or l_0_0 >= 131072 and l_0_0 <= 135168 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

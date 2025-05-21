@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.amd64_image then
+if (mp.getfilesize)() > 10240000 then
   return mp.CLEAN
 end
-if not peattributes.isdll then
-  return mp.CLEAN
+if pehdr.Subsystem == 11 or pehdr.Subsystem == 12 then
+  return mp.INFECTED
 end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

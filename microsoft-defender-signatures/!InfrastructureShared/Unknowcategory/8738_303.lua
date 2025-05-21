@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if (string.find)(l_0_1, "\\windows\\system32\\services.exe", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if (pe.query_import)(pe.IMPORT_STATIC, 1589549540) ~= 0 and (mp.crc32)(-1, epcode, 1, 15) == 183454422 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

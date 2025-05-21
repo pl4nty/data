@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[1]).utf8p2
-    ;
-    (bm.add_related_string)("vname", l_0_0, bm.RelatedStringBMReport)
-  end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 512)
+if (string.find)(l_0_0, "taskmgr.exe, msconfig.exe, regedit.exe, cmd.exe") ~= nil then
   return mp.INFECTED
 end
+return mp.CLEAN
 

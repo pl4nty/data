@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 10000)
-return mp.INFECTED
+if pehdr.NumberOfSections == 4 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

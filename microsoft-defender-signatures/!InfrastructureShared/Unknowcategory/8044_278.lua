@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Emotet.BD!Pra1") or (mp.get_mpattribute)("NID:Emotet.BD!Pra2") or (mp.get_mpattribute)("NID:Emotet.BD!Pra3") then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") or peattributes.isdll then
+  return mp.CLEAN
+end
+if peattributes.ismsil == true then
   return mp.INFECTED
 end
 return mp.CLEAN

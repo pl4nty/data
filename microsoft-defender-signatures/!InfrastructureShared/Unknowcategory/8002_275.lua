@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+if peattributes.isdll or peattributes.isexe then
   return mp.INFECTED
 end
 return mp.CLEAN

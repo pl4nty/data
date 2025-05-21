@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[12]).matched or (hstrlog[13]).matched or (hstrlog[14]).matched then
-  (mp.changedetectionname)(805306407)
+if (hstrlog[7]).matched then
+  (mp.changedetectionname)(805306431)
+else
+  if (hstrlog[8]).matched then
+    (mp.changedetectionname)(805306444)
+  end
 end
 return mp.INFECTED
 

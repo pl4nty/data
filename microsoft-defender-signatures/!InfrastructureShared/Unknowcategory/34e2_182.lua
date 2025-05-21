@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[1]).SizeOfRawData ~= 1536 then
-  return mp.CLEAN
+if (mp.get_mpattribute)("SIGATTR:HostModify") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

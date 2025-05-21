@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:AMCleaner.C!xp")
+if mp.HSTR_WEIGHT >= 12 then
   return mp.INFECTED
 end
-return mp.LOWFI
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
+return mp.CLEAN
 

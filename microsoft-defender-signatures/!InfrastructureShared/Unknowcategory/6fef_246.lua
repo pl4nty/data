@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (sigattr_tail[mp.SIGATTR_LOG_SZ]).matched == true and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12352 then
+if (mp.get_mpattribute)("RPF:XlsUnknownSheetVeryHidden") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") then
   return mp.INFECTED
 end
 return mp.CLEAN

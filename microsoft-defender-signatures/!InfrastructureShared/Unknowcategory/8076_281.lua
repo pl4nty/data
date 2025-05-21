@@ -3,7 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (pesecs[9]).Name == ".boot" and (pesecs[8]).Characteristics == 3758096480 then
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = l_0_0.command_line
+if (string.find)(l_0_1, " %d%d%d?%d?%d? ", 1, false) then
   return mp.INFECTED
 end
 return mp.CLEAN

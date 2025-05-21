@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 9, "¹ğ\127\a\000\144")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 110, "")
+if (mp.getfilesize)() < 155000 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
+end
 return mp.INFECTED
 

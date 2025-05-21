@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:MsilOverlappingMethods") then
+if peattributes.isdll and not peattributes.hasexports then
   return mp.INFECTED
 end
 return mp.CLEAN

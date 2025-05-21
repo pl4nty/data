@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
-  return mp.CLEAN
+if peattributes.isdll and peattributes.x86_image then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

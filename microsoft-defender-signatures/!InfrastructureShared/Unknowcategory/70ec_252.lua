@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:BrowserModifier:Win32/Prifou.A2") and peattributes.no_security == true then
+if peattributes.no_security == true and peattributes.ismsil == true and pehdr.NumberOfSections == 3 then
   return mp.INFECTED
 end
 return mp.CLEAN

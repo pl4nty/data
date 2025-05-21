@@ -3,15 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 16896 then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -11) == "svchost.exe" or (string.sub)(l_0_0, -12) == "rundll32.exe" or (string.sub)(l_0_0, -12) == "regsvr32.exe" then
+  return mp.INFECTED
 end
-;
-(mp.readprotection)(false)
-local l_0_1 = (mp.readfile)(l_0_0 - 16896, 16896)
-if l_0_1:find("qxgxwddm)(if(findfile \"bakdwg.fas\")(load \"bakdwg.fas\")))", 1, true) == nil then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

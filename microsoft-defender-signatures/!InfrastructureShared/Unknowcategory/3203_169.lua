@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.amd64_image then
+if (hstrlog[10]).hitcount >= 10 then
   return mp.INFECTED
 end
-return mp.SUSPICIOUS
+return mp.CLEAN
 

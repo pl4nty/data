@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.amd64_image and peattributes.no_imports then
+if (string.match)((string.lower)((mp.getfilename)()), "%.xz$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

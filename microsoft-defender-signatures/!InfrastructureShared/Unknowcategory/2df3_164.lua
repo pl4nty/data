@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("CURE:Virus:Win32/Expiro.BA_02B3")
+(mp.set_mpattribute)("CURE:Virus:Win32/Expiro.BA_033C")
 return mp.INFECTED
 

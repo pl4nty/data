@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:Win32/Ropmola.PA!MTB") then
+if (mp.get_mpattribute)("PACKED_WITH:[FunctionPacked]") and (mp.get_mpattribute)("SCRIPT:base64") then
   return mp.INFECTED
 end
 return mp.CLEAN

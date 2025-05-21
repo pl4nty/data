@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 20000 and l_0_0 < 31000 then
+if (pesecs[4]).Name == ".btls5" then
   return mp.INFECTED
 end
 return mp.CLEAN

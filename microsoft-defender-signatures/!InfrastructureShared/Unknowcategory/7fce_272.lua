@@ -3,16 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("InEmail") then
-  if mp.HSTR_WEIGHT >= 21 then
-    return mp.INFECTED
-  else
-    return mp.LOWFI
-  end
-else
-  if mp.HSTR_WEIGHT >= 21 then
-    return mp.LOWFI
-  end
+if (mp.get_mpattribute)("pea_isexe") and peattributes.no_security == true and (mp.getfilesize)() < 300000 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

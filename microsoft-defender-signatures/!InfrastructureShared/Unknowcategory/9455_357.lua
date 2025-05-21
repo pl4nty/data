@@ -3,17 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 0
-if (mp.bitand)(mp.HSTR_WEIGHT, 240) > 0 then
-  l_0_0 = 16
-end
-l_0_0 = l_0_0 + (mp.bitand)(mp.HSTR_WEIGHT, 15)
-if l_0_0 >= 18 then
+local l_0_0 = (mp.getfilesize)()
+if ((pesecs[1]).Name == "sijJ" or (pesecs[1]).Name == "EVJ") and (pesecs[2]).Name == ".mr" and peattributes.no_security == true and l_0_0 >= 119808 and l_0_0 <= 169984 then
   return mp.INFECTED
-else
-  if l_0_0 >= 2 then
-    (mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
-  end
 end
 return mp.CLEAN
 

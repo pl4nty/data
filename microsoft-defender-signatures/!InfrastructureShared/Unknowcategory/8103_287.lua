@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "explorer.exe" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if pehdr.NumberOfSections > 3 and (pesecs[2]).PointerToRawData - (pesecs[1]).SizeOfRawData >= 12288 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

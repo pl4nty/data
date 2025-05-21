@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SCPT:VirTool:JS/FunctionPacked.A") == false then
+if peattributes.ismsil and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

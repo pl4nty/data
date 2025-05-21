@@ -11,17 +11,20 @@ local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
 if l_0_1 == nil then
   return mp.CLEAN
 end
-local l_0_2 = {}
--- DECOMPILER ERROR at PC23: No list found for R2 , SetList fails
+do
+  local l_0_2 = {}
+  -- DECOMPILER ERROR at PC24: No list found for R2 , SetList fails
 
--- DECOMPILER ERROR at PC24: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC25: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC26: Overwrote pending register: R4 in 'AssignReg'
 
--- DECOMPILER ERROR at PC26: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC27: Overwrote pending register: R5 in 'AssignReg'
 
-if not ("+")("-", "=") then
-  return mp.CLEAN
+  if not ("+=+")("=+=", "=-=") then
+    return mp.CLEAN
+  end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
 end
-return mp.INFECTED
 

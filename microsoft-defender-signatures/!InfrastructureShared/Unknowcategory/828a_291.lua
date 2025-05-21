@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".qtmetad" and (pesecs[5]).Characteristics == 1342177344 and (pesecs[6]).Name == ".qtmimed" and (pesecs[6]).Characteristics == 1342177344 then
-  return mp.INFECTED
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.ppid ~= nil then
+  (bm.request_SMS)(l_0_0.ppid, "m")
+  ;
+  (bm.add_action)("SmsAsyncScanEvent", 1000)
 end
-return mp.CLEAN
+return mp.INFECTED
 

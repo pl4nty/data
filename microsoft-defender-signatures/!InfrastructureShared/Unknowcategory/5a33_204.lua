@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if ((pe.get_versioninfo)()).OriginalFilename == "winscp.exe" then
+if (mp.getfilesize)() < 8192 and peattributes.isdll then
   return mp.INFECTED
 end
 return mp.CLEAN

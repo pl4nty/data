@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 13 then
+if mp.HSTR_WEIGHT >= 7 then
   return mp.INFECTED
 end
 if not peattributes.isexe then

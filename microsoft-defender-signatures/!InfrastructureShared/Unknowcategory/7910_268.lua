@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pe.query_import)(pe.IMPORT_STATIC, 3141646879) and (mp.get_mpattribute)("MpHasExpensiveLoop") then
+if peattributes.isdll == true and peattributes.no_security == true and (mp.getfilesize)() > 1000000 and (mp.getfilesize)() < 4000000 then
   return mp.INFECTED
 end
 return mp.CLEAN

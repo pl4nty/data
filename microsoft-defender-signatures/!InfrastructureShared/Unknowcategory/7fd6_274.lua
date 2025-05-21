@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (pesecs[3]).Name == ".reloc" and (pesecs[3]).Characteristics == 1107296320 then
-  return mp.INFECTED
+if (epcode[1] == 184 and epcode[6] == 255 and epcode[7] == 224) or epcode[1] == 104 and epcode[6] == 232 then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

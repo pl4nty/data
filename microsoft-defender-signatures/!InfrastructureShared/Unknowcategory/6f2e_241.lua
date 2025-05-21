@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Trojan:Win64/Lazy.MBXI!MTB") and peattributes.isexe == true then
-  return mp.INFECTED
+do
+  if mp.HSTR_WEIGHT >= 5 then
+    local l_0_0 = (mp.getfilesize)()
+    if l_0_0 < 61440 and l_0_0 > 57344 then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
+  end
+  return mp.LOWFI
 end
-return mp.CLEAN
 

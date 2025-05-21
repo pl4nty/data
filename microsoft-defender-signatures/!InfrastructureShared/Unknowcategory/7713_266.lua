@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_timestamp or peattributes.suspicious_image_version or peattributes.suspicious_linker_version then
+if mp.HSTR_WEIGHT < 103 and peattributes.isexe and (mp.get_mpattribute)("reads_vdll_code") then
   return mp.INFECTED
 end
 return mp.CLEAN

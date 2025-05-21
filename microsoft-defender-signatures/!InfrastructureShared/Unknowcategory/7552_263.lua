@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if not l_0_0 then
+if peattributes.isexe == true and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
   return mp.INFECTED
 end
-for l_0_5,l_0_6 in ipairs(l_0_0) do
-  if l_0_6.image_path then
-    (bm.add_related_file)(l_0_6.image_path)
-  end
-end
-return mp.INFECTED
+return mp.CLEAN
 

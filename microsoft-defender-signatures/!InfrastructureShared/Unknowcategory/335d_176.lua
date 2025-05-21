@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 120000 and l_0_0 < 140000 then
+if (mp.get_mpattribute)("SIGATTR:ASEP") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

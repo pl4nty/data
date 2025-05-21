@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = pcall(mp.GetParentProcInfo)
-if l_0_1 and (string.find)((l_0_1.image_path):lower(), "solarwinds.businesslayerhost.exe", 1, true) then
-  return mp.LOWFI
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_1 = (string.sub)(l_0_0, 9, 9)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "\187" .. l_0_1 .. "\000\000\000\144")
+return mp.INFECTED
 

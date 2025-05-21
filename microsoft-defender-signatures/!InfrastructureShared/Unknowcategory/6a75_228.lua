@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.lower)((string.sub)((mp.getfilename)(), -3)) == "r2w" then
-  return mp.CLEAN
+if (mp.get_mpattribute)("BM_OLE_FILE") and (mp.get_mpattribute)("RPF:XlsMacroSheetHidden") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

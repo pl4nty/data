@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (((mp.getfilename)()):lower()):find("word/embeddings/oleobject1.bin->(ole stream 0)", -46, true) then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 >= 9728 and l_0_0 <= 13312 and (hstrlog[1]).matched and (hstrlog[2]).matched then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

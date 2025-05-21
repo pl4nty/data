@@ -3,7 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2064000 and (mp.get_mpattribute)("pea_headerchecksum0") and peattributes.no_security == true then
+if mp.HSTR_WEIGHT == 20 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT == 22 then
   return mp.INFECTED
 end
 return mp.CLEAN

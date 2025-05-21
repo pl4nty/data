@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%->%(RarSfx%)%->%w+%.exe%->%(RarSfx%)") == nil then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("androidmanifest.xml") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

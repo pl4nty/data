@@ -3,14 +3,16 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
 do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
-    local l_0_1 = (l_0_0.image_path):lower()
-    if (string.find)(l_0_1, "\\program files", 1, true) == nil then
-      return mp.CLEAN
+  if peattributes.ismsil and peattributes.isexe then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
     end
+    return mp.INFECTED
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

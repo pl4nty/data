@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if (l_0_0 > 1000000 and l_0_0 < 2000000) or l_0_0 > 200000 and l_0_0 < 500000 then
-  return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)((string.sub)(l_0_0, -11))
+  if l_0_0 == "winword.exe" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

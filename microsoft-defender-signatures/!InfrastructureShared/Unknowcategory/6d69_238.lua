@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%[cmdembedded%]$") == nil then
-  return mp.CLEAN
+if (string.match)((this_sigattrlog[1]).utf8p1, "\\%l%l%l%l%l%.exe$") ~= nil then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

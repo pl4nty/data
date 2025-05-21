@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("Anti:StackValueCheck_LocalShrink")
+if (pe.query_import)(pe.IMPORT_STATIC, 1408121872) == 0 then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

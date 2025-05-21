@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.AddressOfEntryPoint == 0 and (pe.get_exports)() > 646 and peattributes.isdll == true then
+if peattributes.isexe == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Trojan:Win64/RedLine.AL!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

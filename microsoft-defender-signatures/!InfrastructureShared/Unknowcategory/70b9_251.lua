@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
+if peattributes.no_security == true and (mp.get_mpattribute)("NID:Trojan:Win32/CryptInject.K!MSR") then
   return mp.INFECTED
-else
-  if mp.HSTR_WEIGHT >= 1 then
-    (mp.set_mpattribute)("do_exhaustivehstr_rescan")
-  end
 end
 return mp.CLEAN
 

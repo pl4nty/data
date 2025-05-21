@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (hstrlog[1]).hitcount > 2 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 589824 and l_0_0 < 786432 and ((mp.get_mpattribute)("TEL:Trojan:Win32/Qakbot.E!sl1") or (mp.get_mpattribute)("TEL:Trojan:Win32/Qakbot.E!sl2")) then
   return mp.INFECTED
 end
-if (hstrlog[2]).matched and (hstrlog[2]).hitcount > 2 then
-  return mp.INFECTED
-end
-if (hstrlog[2]).matched and (hstrlog[1]).matched then
-  return mp.INFECTED
-end
-return mp.LOWFI
+return mp.CLEAN
 

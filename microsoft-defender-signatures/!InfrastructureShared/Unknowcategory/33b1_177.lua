@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PACKED:ASPROTECT") then
-  return mp.LOWFI
-end
+(mp.set_mpattributeex)("FOP:GoLang32", pevars.sigaddr)
 return mp.CLEAN
 

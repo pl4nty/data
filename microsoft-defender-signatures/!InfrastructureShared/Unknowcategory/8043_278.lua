@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
-end
-if not peattributes.suspicious_image_version then
-  return mp.CLEAN
-end
-if not peattributes.executes_from_dynamic_memory then
-  return mp.CLEAN
+if peattributes.isdll and (mp.getfilesize)() < 250000 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
+  ;
+  (pe.reemulate)()
 end
 return mp.INFECTED
 

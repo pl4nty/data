@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%a+.exe") ~= nil then
+if (mp.get_mpattribute)("NID:BrowserModifier:Win32/Prifou.A2") and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

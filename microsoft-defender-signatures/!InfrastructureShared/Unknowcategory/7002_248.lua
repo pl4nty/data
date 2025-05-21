@@ -3,10 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
-;
-(mp.set_mpattribute)("attrmatch_rescan_psif")
-;
-(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

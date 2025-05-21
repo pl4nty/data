@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.ismsil and peattributes.no_security then
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:SurfBuyer.E")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

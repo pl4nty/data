@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if peattributes.ismsil == true then
-  return mp.INFECTED
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

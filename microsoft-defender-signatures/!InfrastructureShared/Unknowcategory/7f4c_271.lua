@@ -3,8 +3,19 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true and peattributes.hasexports == true and (mp.getfilesize)() < 2000000 then
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[2]).matched then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 ~= nil then
+    (bm.add_related_file)(l_0_0)
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

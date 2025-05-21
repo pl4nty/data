@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Win64/CryptInject.MB!MTB") then
+if (mp.get_mpattribute)("SIGATTR:VirTool:Win32/Injector.gen!BR") and peattributes.checks_if_debugged_undocumented then
   return mp.INFECTED
 end
 return mp.CLEAN

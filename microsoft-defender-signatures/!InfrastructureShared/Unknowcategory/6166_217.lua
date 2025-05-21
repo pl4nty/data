@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Genieo.AC")
+if mp.HSTR_WEIGHT >= 8 then
+  (mp.set_mpattribute)("PUA:Block:Conduit.B")
   return mp.INFECTED
 end
 return mp.LOWFI

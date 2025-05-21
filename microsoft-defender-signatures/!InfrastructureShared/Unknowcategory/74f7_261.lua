@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if epcode[1] == 139 and epcode[2] == 255 and epcode[3] == 200 and epcode[4] == 128 then
-  return mp.INFECTED
+if (pe.query_import)(pe.IMPORT_STATIC, 1000219088) == 0 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (pe.query_import)(pe.IMPORT_STATIC, 1830286805) == 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

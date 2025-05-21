@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "svchost.exe" then
-      return mp.INFECTED
-    end
-  end
+if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
   return mp.CLEAN
 end
+if (mp.GetSMSProcArchitecture)() ~= mp.SMS_PROC_ARCH_X64 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

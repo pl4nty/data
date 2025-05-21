@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr, "\144")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "\144")
+if not peattributes.isexe then
+  return mp.CLEAN
+end
+if not peattributes.suspicious_timestamp then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

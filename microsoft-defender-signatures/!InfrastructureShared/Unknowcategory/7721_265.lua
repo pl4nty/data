@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_MZ_DLL") and (mp.get_mpattribute)("BM_UnsignedDll") and peattributes.ismsil == true then
-  return mp.INFECTED
+if (mp.bitand)(mp.HSTR_WEIGHT, 248) >= 8 then
+  if (mp.bitand)(mp.HSTR_WEIGHT, 7) >= 1 then
+    return mp.INFECTED
+  end
+  return mp.LOWFI
 end
 return mp.CLEAN
 

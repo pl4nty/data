@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") then
-  return mp.CLEAN
+if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("PEPCODE:VirTool:Win32/VMProtect") then
+  return mp.INFECTED
 end
-if (mp.getfilesize)() > 20971520 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

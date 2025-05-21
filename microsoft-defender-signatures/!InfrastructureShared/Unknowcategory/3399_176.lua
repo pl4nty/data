@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 458752 and l_0_0 < 786432 then
+if (mp.get_mpattribute)("//RPF:IS_Lnk") then
   return mp.INFECTED
 end
 return mp.CLEAN

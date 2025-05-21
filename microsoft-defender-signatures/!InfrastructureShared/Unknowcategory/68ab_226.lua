@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:GT32SupportGeeks.B")
-  return mp.INFECTED
+if not (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+  (mp.set_mpattribute)("SIGATTR:DelphiFile")
+  ;
+  (mp.set_mpattribute)("MpEnableCOM")
 end
-return mp.LOWFI
+return mp.CLEAN
 

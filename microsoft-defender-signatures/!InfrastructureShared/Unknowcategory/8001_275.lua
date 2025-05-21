@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.AddressOfEntryPoint == 0 and (pe.get_exports)() > 296 and peattributes.isdll == true then
+if pehdr.AddressOfEntryPoint == 0 and (pe.get_exports)() > 646 and peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

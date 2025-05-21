@@ -3,7 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_isdll") and pehdr.NumberOfSections == 5 and peattributes.hasexports == true then
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.lower)((string.sub)(l_0_0.image_path, -11)) == "wscript.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

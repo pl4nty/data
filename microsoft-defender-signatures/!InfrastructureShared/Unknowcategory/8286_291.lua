@@ -3,14 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll then
-  return mp.CLEAN
-end
-if not peattributes.isvbnative and not peattributes.isvbpcode then
-  return mp.CLEAN
-end
-if (mp.getfilesize)() > 2097152 then
-  return mp.CLEAN
-end
+(bm.set_scan_param)((mp.bitor)((mp.bitor)(bm.SCAN_PARAMETERS_DEEP_ANALYSIS, bm.SCAN_PARAMETERS_VMM_GROW), bm.SCAN_PARAMETERS_HSTR_EXHAUSTIVE))
 return mp.INFECTED
 

@@ -4,13 +4,8 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "winword.exe" then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if l_0_0 and (string.find)((string.lower)(l_0_0.image_path), "python", 1, true) then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

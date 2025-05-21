@@ -3,23 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not l_0_0 then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_2 = nil
-  if (string.match)(l_0_0, "minidump (%d+) ") and tonumber((string.match)(l_0_0, "minidump (%d+) ")) < 1500 then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = (pe.mmap_va)(l_0_0 + 30, 4)
+local l_0_2 = 0
+for l_0_6 = 4, 1, -1 do
+  l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
 end
+if l_0_2 + 6 + 30 + l_0_0 ~= (hstrlog[2]).VA then
+  return mp.LOWFI
+end
+return mp.CLEAN
 

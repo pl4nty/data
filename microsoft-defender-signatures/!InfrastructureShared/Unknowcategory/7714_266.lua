@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.no_exports and peattributes.calls_unimplemented_api then
+if peattributes.isexe and peattributes.no_security and (mp.getfilesize)() >= 65535 and (mp.getfilesize)() <= 1048575 then
   return mp.INFECTED
 end
 return mp.CLEAN

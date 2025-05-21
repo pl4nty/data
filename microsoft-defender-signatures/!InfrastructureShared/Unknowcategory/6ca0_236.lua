@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 33, "")
-return mp.INFECTED
+if (mp.get_mpattribute)("MHSTR:MacroJustAutoOpen") and (mp.get_mpattribute)("MHSTR:MacroDownload") then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and (mp.getfilesize)() < 150000 then
-  return mp.INFECTED
+if (mp.IsTrustedFile)(false) == true or (mp.IsKnownFriendlyFile)((mp.getfilename)(), true, true) == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

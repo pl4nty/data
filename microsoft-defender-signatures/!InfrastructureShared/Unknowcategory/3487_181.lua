@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.executes_from_dynamic_memory then
-  return mp.INFECTED
+if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SCPT:HTMLFile") then
-  return mp.INFECTED
+if (mp.get_mpattribute)("RPF:TopLevelFile") then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

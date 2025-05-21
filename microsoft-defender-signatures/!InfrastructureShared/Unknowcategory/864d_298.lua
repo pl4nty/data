@@ -4,11 +4,13 @@
 -- params : ...
 -- function num : 0
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p2)
-    ;
-    (bm.add_related_file)(l_0_0)
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = (string.lower)((this_sigattrlog[1]).p1)
+    if (string.find)(l_0_0, "^%d%d%d%d+$") then
+      return mp.INFECTED
+    end
+    return mp.CLEAN
   end
-  return mp.INFECTED
+  return mp.CLEAN
 end
 

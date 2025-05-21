@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if ((hstrlog[1]).matched or (hstrlog[2]).matched or (hstrlog[3]).matched or (hstrlog[4]).matched) and ((hstrlog[5]).matched or (hstrlog[6]).matched) then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == false and l_0_0 > 950272 and l_0_0 < 978944 and (mp.get_mpattribute)("TEL:Ransom:Win32/Megacortex!sl001") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(pe.set_peattribute)("dt_continue_after_unpacking", true)
-return mp.SUSPICIOUS
+(pe.mmap_patch_va)(pevars.sigaddr, "\235\003")
+return mp.INFECTED
 

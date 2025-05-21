@@ -3,16 +3,15 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 1024000 then
-  return mp.INFECTED
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+    if (string.find)(l_0_0, "/format:", 1, true) ~= nil then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-local l_0_1 = 0
-if (hstrlog[1]).matched then
-  l_0_1 = (hstrlog[1]).hitcount
-end
-if l_0_1 > 1 then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

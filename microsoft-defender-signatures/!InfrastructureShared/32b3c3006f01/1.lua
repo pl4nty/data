@@ -44,7 +44,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
         l_0_6.POTENTIAL_SIDE_LOADING = "SysWOW64"
       end
     end
-    AppendToRollingQueue("SYSTEM_DLLs", l_0_4, l_0_14, 31104000, 5000)
+    AppendToRollingQueue("SYSTEM_DLLs", l_0_4, l_0_14, 31104000, 1000)
     local l_0_15 = safeJsonSerialize(l_0_6, 100, nil, true)
     local l_0_16 = bm.add_related_string
     local l_0_17 = "Additional_Info"

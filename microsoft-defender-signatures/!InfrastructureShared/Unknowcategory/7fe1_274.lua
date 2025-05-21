@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isexe == true and (mp.get_mpattribute)("NID:Trojan:Win32/Kelios.GD!MTB") then
+if peattributes.isdll and peattributes.hasexports and (hstrlog[1]).VA - (hstrlog[2]).VA < 9472 then
   return mp.INFECTED
 end
 return mp.CLEAN

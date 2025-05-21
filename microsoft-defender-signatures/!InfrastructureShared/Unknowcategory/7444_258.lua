@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if MpCommon.SECURITY_MANDATORY_LOW_RID < ((bm.get_current_process_startup_info)()).integrity_level then
-  return mp.CLEAN
+if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

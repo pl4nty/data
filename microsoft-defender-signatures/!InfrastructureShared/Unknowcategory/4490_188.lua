@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 2 then
-  (mp.set_mpattribute)("HSTR:Dyzap.T1")
+if peattributes.ismsil == true and peattributes.isexe == true then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

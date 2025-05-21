@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("PUA:Block:Miner.E")
+  (mp.set_mpattribute)("PUA:Block:Glims.C")
   return mp.INFECTED
 end
 return mp.LOWFI

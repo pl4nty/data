@@ -3,20 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
-  local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["winword.exe"] = true
-  l_0_3["excel.exe"] = true
-  l_0_3["powerpnt.exe"] = true
-  l_0_3["outlook.exe"] = true
-  if l_0_3[l_0_2] then
+if ((mp.GetBruteMatchData)()).match_offset == 0 then
+  if headerpage == nil then
+    return mp.CLEAN
+  end
+  if (mp.readu_u32)(headerpage, 1) == 1497451600 and (mp.readu_u16)(headerpage, 5) == 2573 then
     return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

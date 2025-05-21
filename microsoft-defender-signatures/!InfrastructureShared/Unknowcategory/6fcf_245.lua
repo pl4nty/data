@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and (mp.get_mpattribute)("NID:TrojanDropper:Win32/Jacard!MTB") then
+if (string.lower)((string.sub)((bm.get_imagepath)(), -10)) == "\\mshta.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN

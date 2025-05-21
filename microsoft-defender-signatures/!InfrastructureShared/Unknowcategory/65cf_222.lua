@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and not peattributes.x86_image then
-  return mp.INFECTED
+if peattributes.isvbpcode ~= true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.getfilesize)() > 512000 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

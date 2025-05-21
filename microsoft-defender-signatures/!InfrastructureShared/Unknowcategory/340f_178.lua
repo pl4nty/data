@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("FOP64:GoLang64") then
+if (this_sigattrlog[5]).matched == false then
   return mp.INFECTED
 end
 return mp.CLEAN

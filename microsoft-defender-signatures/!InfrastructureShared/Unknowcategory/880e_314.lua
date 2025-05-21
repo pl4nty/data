@@ -3,11 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 and (hstrlog[1]).matched then
+-- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+    local l_0_0, l_0_1 = nil
+  end
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
+
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC24: Confused about usage of register: R0 in 'UnsetPending'
+
+  ;
+  (bm.add_related_file)(l_0_0)
   return mp.INFECTED
 end
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("HSTR:TrojanDownloader:Win32/Lerspeng")
-end
-return mp.CLEAN
 

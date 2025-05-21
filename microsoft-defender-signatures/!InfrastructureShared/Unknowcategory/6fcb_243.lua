@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:WizzDownload")
-if mp.HSTR_WEIGHT >= 15 then
-  (mp.set_mpattribute)("HSTR:Wizzrem.Concrete.A3")
+if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
+  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
 end
+;
+(mp.set_mpattribute)("MpRequestSMSM")
 return mp.INFECTED
 

@@ -3,7 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and pehdr.NumberOfSections == 5 and (mp.getfilesize)() >= 65536 and (mp.getfilesize)() <= 1048576 then
+local l_0_0 = (mp.getfilename)()
+l_0_0 = (l_0_0.lower)(l_0_0)
+if (string.find)(l_0_0, ".py", 1, true) or (string.find)(l_0_0, ".ps1", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

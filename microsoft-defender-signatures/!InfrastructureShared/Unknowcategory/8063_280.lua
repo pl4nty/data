@@ -3,8 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and peattributes.isexe == true and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+do
+  if (mp.getfilesize)() <= 4096 then
+    local l_0_0 = nil
+    l_0_0 = (mp.getfilename)()
+    if l_0_0 == nil then
+      return mp.CLEAN
+    end
+    if l_0_0:sub(-19) == "->word/document.xml" then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.INFECTED
 

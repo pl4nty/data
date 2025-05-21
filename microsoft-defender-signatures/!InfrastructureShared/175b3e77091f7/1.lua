@@ -119,7 +119,7 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
                   l_0_4.POTENTIAL_SIDE_LOADING = "SysWOW64"
                 end
               end
-              AppendToRollingQueue("SYSTEM_DLLs", l_0_5, l_0_29, 31104000, 5000)
+              AppendToRollingQueue("SYSTEM_DLLs", l_0_5, l_0_29, 31104000, 1000)
               local l_0_30, l_0_31 = pcall(MpCommon.RollingQueueQueryMultiKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", l_0_12)
               if l_0_30 and l_0_31 then
                 for l_0_35,l_0_36 in ipairs(l_0_31) do

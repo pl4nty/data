@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0, l_0_1 = (pe.get_exports)()
-for l_0_5 = 1, l_0_0 do
-  if (pe.mmap_string_rva)((l_0_1[l_0_5]).namerva, 64) == "cJSON_ReplaceItemInObjectCaseSensitive" then
-    return mp.INFECTED
-  end
-end
-return mp.CLEAN
+(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[1]).utf8p1), 3695440085)
+;
+(mp.ReportLowfi)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1), 2615380485)
+return mp.INFECTED
 

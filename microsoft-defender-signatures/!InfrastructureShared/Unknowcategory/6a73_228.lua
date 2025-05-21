@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() <= 2048 and (mp.get_mpattribute)("PACKED_WITH:[Eval]") then
+if peattributes.ismsil and (mp.get_mpattribute)("HSTR:MSIL/Confuser") then
   return mp.INFECTED
 end
 return mp.CLEAN

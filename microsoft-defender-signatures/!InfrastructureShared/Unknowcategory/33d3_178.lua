@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[4]).hitcount > 45 then
+if (mp.get_mpattribute)("MpIsWmiMofScan") then
   return mp.INFECTED
 end
 return mp.CLEAN

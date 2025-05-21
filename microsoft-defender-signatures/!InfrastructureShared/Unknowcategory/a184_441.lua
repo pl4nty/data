@@ -3,8 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpHasValidProjPath") and (mp.get_mpattribute)("SIGATTR:mpinthandler") and peattributes.epinfirstsect and pehdr.NumberOfSections == 4 and (pesecs[1]).SizeOfRawData >= 106496 and (pesecs[1]).SizeOfRawData <= 147456 then
-  return mp.INFECTED
+do
+  if (mp.get_mpattribute)("Lua:XMLExt") then
+    local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+    if l_0_0:find("abusepreventionengineconfig.xml", 1, true) then
+      (mp.set_mpattribute)("MpNonPIIFileType")
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-return mp.LOWFI
 

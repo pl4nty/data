@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((string.lower)((mp.getfilename)()), "%-%>%(zipsfx%)%-%>%w+%.bat$") == nil then
-  return mp.CLEAN
+if ((mp.getfilename)()):match("(Ole Stream 0).*%.scr") and peattributes.isexe then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

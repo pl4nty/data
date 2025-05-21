@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[4]).matched or (hstrlog[8]).matched then
+local l_0_0 = (mp.getfilesize)()
+if mp.HSTR_WEIGHT >= 6 and l_0_0 < 327680 then
+  (mp.set_mpattribute)("PUA:Block:Bundlore.P")
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0 ~= nil and l_0_0:find("putty", 1, true) ~= nil then
-  return mp.CLEAN
+if (mp.bitand)((pesecs[pehdr.NumberOfSections]).Characteristics, 536870912) == 536870912 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

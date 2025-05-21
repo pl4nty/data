@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
+local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if mp.HSTR_CALLER_SMS == l_0_0 then
-  return mp.INFECTED
+if (string.lower)((string.sub)(l_0_0.image_path, -12)) ~= "explorer.exe" then
+  return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("SLF:Win32/BruterShell.A")
 return mp.LOWFI
 

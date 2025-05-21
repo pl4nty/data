@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 50, "\235")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 86, "")
-return mp.INFECTED
+if (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") and peattributes.no_security == true then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

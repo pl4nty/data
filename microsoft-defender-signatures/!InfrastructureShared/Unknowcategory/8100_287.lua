@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 3 and (pesecs[2]).PointerToRawData - (pesecs[1]).SizeOfRawData >= 12288 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + (string.find)((pe.mmap_va)(pevars.sigaddr, 64), "\000u", 1, true), "")
+return mp.INFECTED
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isexe then
+if (mp.get_mpattribute)("PACKED_WITH:[aPLib_034_mem]") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.no_boundimport == true and peattributes.no_exports == true and peattributes.no_security == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("lua_codepatch_obfuscator_th_1")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 5, "êê")
+return mp.SUSPICIOUS
 

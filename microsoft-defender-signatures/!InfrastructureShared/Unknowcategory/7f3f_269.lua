@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() >= 111616 and (mp.getfilesize)() <= 111680 and peattributes.no_security == true then
+if peattributes.isdll and (mp.get_mpattribute)("BM_UnsignedDll") and (mp.getfilesize)() < 20971520 then
   return mp.INFECTED
 end
 return mp.CLEAN

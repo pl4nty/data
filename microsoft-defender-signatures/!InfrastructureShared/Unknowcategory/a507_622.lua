@@ -3,8 +3,32 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections >= 4 and ((pesecs[4]).Name == ".Lax503" or (pesecs[3]).Name == ".Lax503" or (pesecs[2]).Name == ".On59" or (pesecs[3]).Name == ".On59" or (pesecs[3]).Name == ".Zek" or (pesecs[2]).Name == ".Reel" or (pesecs[3]).Name == ".Obis" or (pesecs[3]).Name == ".mon887" or (pesecs[3]).Name == ".Much" or (pesecs[3]).Name == ".oypac" or (pesecs[4]).Name == ".jibmed" or (pesecs[4]).Name == ".Much" or (pesecs[2]).Name == ".Waeson" or mp.HSTR_WEIGHT >= 2) then
+-- DECOMPILER ERROR at PC2: Confused about usage of register: R0 in 'UnsetPending'
+
+string.tohex = function(l_1_0)
+  -- function num : 0_0
+  return l_1_0:gsub(".", function(l_2_0)
+    -- function num : 0_0_0
+    local l_2_1 = string.format
+    local l_2_2 = "%02X"
+    do
+      local l_2_3, l_2_4 = (string.byte)(l_2_0), .end
+      do return l_2_1(l_2_2, l_2_3, l_2_4) end
+      -- DECOMPILER ERROR at PC9: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
+    end
+  end
+)
+end
+
+local l_0_0 = (nri.GetRawResponseBlob)()
+do
+  if l_0_0 ~= nil and (string.len)(l_0_0) < 4096 then
+    local l_0_1 = {}
+    l_0_1.NRI_ResponseBlob = l_0_0:tohex()
+    ;
+    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_1)
+  end
   return mp.INFECTED
 end
-return mp.CLEAN
 

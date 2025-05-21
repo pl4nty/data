@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-do
-  if mp.HSTR_WEIGHT >= 5 then
-    local l_0_0 = (mp.getfilesize)()
-    if l_0_0 < 61440 and l_0_0 > 57344 then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
-  return mp.LOWFI
+if (string.match)((this_sigattrlog[1]).utf8p1, "\\%l%l%l%l%l%l%d%.exe") ~= nil then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

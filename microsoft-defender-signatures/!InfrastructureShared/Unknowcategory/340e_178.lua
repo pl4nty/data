@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[5]).matched == false then
+if (mp.get_mpattribute)("//AGGR:OleFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

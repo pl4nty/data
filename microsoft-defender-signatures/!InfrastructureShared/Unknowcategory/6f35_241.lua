@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == false and (mp.get_mpattribute)("TEL:REVCERT:SinghAgile.A") then
+if (mp.getfilesize)() > 20480 and (mp.getfilesize)() < 65536 and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

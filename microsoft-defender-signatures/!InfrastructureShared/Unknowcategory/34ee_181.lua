@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("elfa_isgocompiled") then
-  return mp.INFECTED
+if (bm.GetSignatureMatchDuration)() > 300000000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

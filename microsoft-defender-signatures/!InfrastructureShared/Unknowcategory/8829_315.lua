@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_XML_FILE") and not (mp.get_mpattribute)("SCPT:TrojanDownloader:O97M/Ploty_excl1.A") and not (mp.get_mpattribute)("SCPT:TrojanDownloader:O97M/Ploty_excl2.A") then
+if (mp.crc32)(-1, epcode, 1, 9) == 2556408724 and pevars.epsec == pehdr.NumberOfSections then
   return mp.INFECTED
+else
+  return mp.LOWFI
 end
-return mp.LOWFI
+return mp.CLEAN
 

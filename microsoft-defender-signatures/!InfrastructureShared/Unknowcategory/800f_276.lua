@@ -3,9 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 80)
-local l_0_1 = (mp.readu_u32)(l_0_0, 31) - 1
+(pe.set_image_filename)("\"Lollipop.exe\" INSTALL:|14693||86400|1|0007||")
 ;
-(pe.set_regval)(pe.REG_ECX, l_0_1)
-return mp.CLEAN
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

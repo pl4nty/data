@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((this_sigattrlog[1]).utf8p1, "\\%l%l%l%l%l%.exe$") ~= nil then
+if (mp.get_mpattribute)("HSTR:Trojan:Win32/ChineseKeyboardCheck!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

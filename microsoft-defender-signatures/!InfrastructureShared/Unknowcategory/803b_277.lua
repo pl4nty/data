@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if ((not (hstrlog[4]).matched or (hstrlog[5]).matched) and not (hstrlog[6]).matched) or 0 + 1 + 1 + 1 >= 2 then
+  return mp.INFECTED
 end
-if not peattributes.suspicious_section_name then
-  return mp.CLEAN
-end
-if not peattributes.executes_from_dynamic_memory then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

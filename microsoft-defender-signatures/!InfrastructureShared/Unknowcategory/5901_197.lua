@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[6]).matched and (hstrlog[7]).matched then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 1 and pehdr.Subsystem ~= 1 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

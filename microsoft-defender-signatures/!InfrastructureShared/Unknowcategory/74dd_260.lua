@@ -3,9 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 516096 and l_0_0 <= 524288 and (mp.get_mpattribute)("TEL:Trojan:Win32/Emotet.PAC!Lowfi") then
+if (mp.IsTrustedFile)(false) ~= false then
+  return mp.CLEAN
+end
+if mp.HSTR_WEIGHT >= 3 then
   return mp.INFECTED
+end
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

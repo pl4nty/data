@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_suspicious_falign") then
+if peattributes.isexe or peattributes.isdll then
   return mp.INFECTED
 end
 return mp.CLEAN

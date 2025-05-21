@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if not peattributes.isexe then
   return mp.CLEAN
 end
-if (mp.getfilesize)() > 32768 then
+if not peattributes.suspicious_image_version then
   return mp.CLEAN
 end
 return mp.INFECTED

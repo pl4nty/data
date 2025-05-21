@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") and (mp.get_mpattribute)("pea_isexe") and (mp.getfilesize)() < 1024000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_0.ppid, "M")
+;
+(bm.add_action)("SmsAsyncScanEvent", 5000)
+return mp.INFECTED
 

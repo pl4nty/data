@@ -3,20 +3,21 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[13]).matched or (hstrlog[14]).matched then
-  (mp.changedetectionname)(805306447)
-else
-  if (hstrlog[15]).matched then
-    (mp.changedetectionname)(805306448)
-  else
-    if (hstrlog[16]).matched then
-      (mp.changedetectionname)(805306449)
-    else
-      if (hstrlog[9]).matched or (hstrlog[10]).matched or (hstrlog[11]).matched or (hstrlog[12]).matched then
-        (mp.changedetectionname)(805306432)
+local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
+if l_0_1 ~= nil and (MpCommon.GetPersistContextCountNoPath)("UACBypassRegSet.A") > 0 then
+  local l_0_2 = (MpCommon.GetPersistContextNoPath)("UACBypassRegSet.A")
+  if l_0_2 then
+    for l_0_6,l_0_7 in ipairs(l_0_2) do
+      if (string.lower)(l_0_7) == (string.lower)(l_0_1.ppid) then
+        return mp.INFECTED
       end
     end
   end
 end
-return mp.INFECTED
+do
+  l_0_2 = mp
+  l_0_2 = l_0_2.CLEAN
+  return l_0_2
+end
 

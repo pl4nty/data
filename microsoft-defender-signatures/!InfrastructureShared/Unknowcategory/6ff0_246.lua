@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (sigattr_tail[mp.SIGATTR_LOG_SZ]).matched == true and (sigattr_tail[mp.SIGATTR_LOG_SZ]).attribute == 12352 then
+if pehdr.SizeOfImage >= 819200 and pehdr.SizeOfImage < 827392 then
   return mp.INFECTED
 end
-return mp.CLEAN
+;
+(mp.changedetectionname)(805306376)
+return mp.SUSPICIOUS
 

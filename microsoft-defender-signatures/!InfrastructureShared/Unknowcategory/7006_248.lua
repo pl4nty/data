@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
-if (string.lower)(l_0_2) == "mpkview.exe" then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis")
+;
+(mp.set_mpattribute)("attrmatch_rescan_psif")
+;
+(mp.set_mpattribute)("LOWFI:CheckStackValLocalAlloc")
+return mp.INFECTED
 

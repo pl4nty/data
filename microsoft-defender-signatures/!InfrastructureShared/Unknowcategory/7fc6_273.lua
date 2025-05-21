@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if mp.HSTR_WEIGHT < 11 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
 end
-if mp.HSTR_WEIGHT >= 14 then
+if mp.HSTR_WEIGHT == 11 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

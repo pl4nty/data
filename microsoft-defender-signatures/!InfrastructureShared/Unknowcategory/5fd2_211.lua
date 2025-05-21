@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[3]).Name == ".qhw" and (pesecs[2]).Name == ".g" then
+if peattributes.isdll and peattributes.checks_if_debugged_undocumented then
   return mp.INFECTED
 end
 return mp.CLEAN

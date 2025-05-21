@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.no_security == true and peattributes.aslr_bit_set == true and peattributes.no_exception == true then
+if (mp.readu_u32)((pe.mmap_va)(pevars.sigaddr + 21, 4), 1) > 40960 then
   return mp.INFECTED
 end
 return mp.CLEAN

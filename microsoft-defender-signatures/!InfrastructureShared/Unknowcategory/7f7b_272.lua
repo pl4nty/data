@@ -3,18 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount >= 3 then
-  return mp.LOWFI
-else
-  if (hstrlog[2]).hitcount >= 3 then
-    return mp.LOWFI
-  else
-    if (hstrlog[3]).hitcount >= 3 then
-      return mp.LOWFI
-    else
-      return mp.CLEAN
-    end
-  end
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 2, "\000\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 10, "\000\000\000\000")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\000\000\000")
+return mp.INFECTED
 

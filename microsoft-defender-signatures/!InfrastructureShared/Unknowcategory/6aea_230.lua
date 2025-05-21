@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == "pxsZHe0" and peattributes.no_security == true then
+if (mp.get_mpattribute)("BM_LNK_FILE") or (mp.get_mpattribute)("Lua:TopLevelFileExt.A!lnk") then
   return mp.INFECTED
 end
 return mp.CLEAN

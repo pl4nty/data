@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched or (hstrlog[2]).matched then
-  if (hstrlog[1]).matched and (hstrlog[2]).matched then
-    return mp.CLEAN
-  end
+local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
+if (string.find)(l_0_0, "document.xml") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (mp.getfilesize)() > 300000 and (mp.getfilesize)() < 380000 then
+if (mp.get_mpattribute)("SIGATTR:FindBaiuduAV") and (mp.get_mpattribute)("SIGATTR:FindAvastAV") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

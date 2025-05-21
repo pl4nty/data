@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  (mp.set_mpattribute)("PUA:Block:Hiddad.B")
-  return mp.INFECTED
+if not peattributes.isdll then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if (mp.getfilesize)() > 32768 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

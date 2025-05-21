@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:BackTrack.B")
+if peattributes.ismsil == true and peattributes.isexe == true and peattributes.x86_image then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

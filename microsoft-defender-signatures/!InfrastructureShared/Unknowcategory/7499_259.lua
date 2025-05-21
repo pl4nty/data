@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epoutofimage == true and peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_ep == true then
+if ((mp.get_mpattribute)("pea_isexe") or (mp.get_mpattribute)("pea_isdll")) and (mp.get_mpattribute)("HSTR:GolangBinary") then
   return mp.INFECTED
 end
 return mp.CLEAN

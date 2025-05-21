@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_64bit_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan")
+if (pe.query_import)(pe.IMPORT_STATIC, 1976185273) == 0 then
+  return mp.CLEAN
 end
 return mp.INFECTED
 

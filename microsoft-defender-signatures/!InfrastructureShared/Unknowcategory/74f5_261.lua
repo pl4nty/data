@@ -3,7 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((mp.utf16to8)((this_sigattrlog[1]).wp1), "\\%l%l%l%l%l%l.exe") ~= nil then
+if (mp.get_mpattribute)("MpHasExpensiveLoop") then
+  return mp.INFECTED
+end
+if peattributes.dt_error_heur_exit_criteria then
   return mp.INFECTED
 end
 return mp.CLEAN

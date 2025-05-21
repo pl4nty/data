@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 20, "")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 40, ")\203")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 23, "\000")
-return mp.INFECTED
+local l_0_0 = (mp.getfilename)()
+if (string.find)(l_0_0, "oleObject%d%.bin$") ~= nil or (string.find)(l_0_0, "%.bin%->%(Ole Stream %d%)$") ~= nil then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

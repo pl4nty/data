@@ -3,14 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 2 then
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_swiminen")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_swiminen")
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 6, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

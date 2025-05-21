@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.sub)(l_0_0, -10) == "->(Upxw64)" then
-  (mp.set_mpattribute)("HSTR:HackTool:Win64/MikatzUPX")
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 16, "\235")
+;
+(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
 return mp.INFECTED
 

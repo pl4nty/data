@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() < 5048000 then
-  return mp.INFECTED
+if (mp.IsKnownFriendlyFile)((bm.get_imagepath)(), true, true) == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

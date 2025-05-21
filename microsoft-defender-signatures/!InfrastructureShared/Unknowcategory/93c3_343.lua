@@ -3,14 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  return mp.INFECTED
-end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_istuni")
-else
+if peattributes.isdll and (mp.getfilesize)() < 126976 then
+  (pe.set_peattribute)("hstr_exhaustive", true)
   ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_istuni")
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT >= 2 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

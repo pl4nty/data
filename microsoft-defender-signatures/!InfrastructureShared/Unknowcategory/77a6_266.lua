@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() > 10000 and (mp.getfilesize)() < 50000 and not (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.INFECTED
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 400000 or l_0_0 < 5000 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

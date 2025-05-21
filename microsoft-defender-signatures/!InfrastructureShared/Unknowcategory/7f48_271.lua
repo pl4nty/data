@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 8 and (pesecs[1]).Name == "CODE" and (pesecs[2]).Name == "DATA" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (bm.get_current_process_startup_info)()
+;
+(bm.request_SMS)(l_0_0.ppid, "m+")
+;
+(bm.add_action)("SmsAsyncScanEvent", 1)
+return mp.INFECTED
 

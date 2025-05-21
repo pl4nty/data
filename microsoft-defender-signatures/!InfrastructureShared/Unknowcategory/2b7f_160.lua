@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == false then
-  return mp.CLEAN
+if pehdr.Magic == 523 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

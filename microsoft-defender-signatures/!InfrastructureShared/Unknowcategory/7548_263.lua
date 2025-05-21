@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 20, "")
-;
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_Disable_APILimit")
+if peattributes.ismsil and peattributes.has_msilresources and (hstrlog[2]).hitcount > 300 then
+  return mp.INFECTED
+end
 return mp.CLEAN
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image and not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if (string.sub)(l_0_0, -12) == "sqlservr.exe" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.get_mpattribute)("pea_headerchecksum0") and (mp.get_mpattribute)("LUA:FileSizeLE1M.A") then
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+;
+(mp.set_mpattribute)("HSTR:Trojan:Win32/Colisi")
+if mp.HSTR_WEIGHT >= 4 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 101 then
+if (mp.get_mpattribute)("BM_XML_FILE") and (mp.get_mpattribute)("InEmail") then
   return mp.INFECTED
-else
-  if mp.HSTR_WEIGHT > 199 then
-    return mp.SUSPICIOUS
-  end
 end
 return mp.CLEAN
 

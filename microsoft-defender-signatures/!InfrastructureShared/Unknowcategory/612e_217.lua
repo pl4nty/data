@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[3]).Name == ".qhw" or (pesecs[2]).Name == "DrtWJgcR" then
-  return mp.INFECTED
+if (mp.get_mpattribute)("InEmail") then
+  (mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
 end
-return mp.CLEAN
+return mp.INFECTED
 
