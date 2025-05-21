@@ -8,11 +8,9 @@
 
 #include "base/strings/utf_string_conversions.h"
 #include "chrome/chrome_elf/nt_registry/nt_registry.h"
-#include "chrome/common/edge_early_feature_flag_win.h"
 #include "chrome/install_static/install_util.h"
 
 namespace edge_disk_features {
-namespace {
 // This file is for disk feature usage in chrome/chrome_elf, which is called
 // under the loader lock. Use the version under base/ outside of chrome_elf.
 bool IsDiskFeatureEnabled(
@@ -30,33 +28,6 @@ bool IsDiskFeatureEnabled(
   }
   return early_feature.feature.default_state;
 }
-}  // namespace
-
-#if defined(ARCH_CPU_X86_64)
-bool IsModuleTrackerFeatureEnabled() {
-  return IsDiskFeatureEnabled(edge_early_features::kModuleTracker);
-}
-
-bool IsModuleTrackerV2FeatureEnabled() {
-  return IsDiskFeatureEnabled(edge_early_features::kModuleTrackerV2);
-}
-
-bool IsModuleTrackerV3FeatureEnabled() {
-  return IsDiskFeatureEnabled(edge_early_features::kModuleTrackerV3);
-}
-
-bool IsModuleTrackerV4FeatureEnabled() {
-  return IsDiskFeatureEnabled(edge_early_features::kModuleTrackerV4);
-}
-
-bool IsModuleTrackerV5FeatureEnabled() {
-  return IsDiskFeatureEnabled(edge_early_features::kModuleTrackerV5);
-}
-
-bool IsModuleTrackerV6FeatureEnabled() {
-  return IsDiskFeatureEnabled(edge_early_features::kModuleTrackerV6);
-}
-#endif  // defined(ARCH_CPU_X86_64)
 
 bool IsThirdPartyHookFeatureEnabled() {
   return !IsDiskFeatureEnabled(edge_early_features::kEdgeDisableThirdPartyHook);

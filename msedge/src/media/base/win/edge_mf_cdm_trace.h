@@ -12,6 +12,12 @@
 #define STRSTR(x) STR(x)
 #define FILE_LINE __FILE__ " : " STRSTR(__LINE__)
 
+#if defined(_MSC_VER)
+#ifndef __func__
+#define __func__ __FUNCTION__
+#endif
+#endif
+
 // Internals.
 #define MFCDM_TRACETYPE0_INTERNAL(traceType) TRACE_EVENT0(traceType, __func__)
 

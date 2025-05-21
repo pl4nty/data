@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1664881,
+    "size": 1664917,
     "file_count": 163
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10728875,
+    "size": 10764613,
     "file_count": 177
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32075476,
+    "size": 32074561,
     "file_count": 3942
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16386137,
+    "size": 16386233,
     "file_count": 252
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 25010,
+    "size": 25004,
     "file_count": 12
   },
   {
@@ -551,8 +551,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3583418,
-    "file_count": 559
+    "size": 3585009,
+    "file_count": 560
   },
   {
     "name": "perl",
@@ -611,7 +611,7 @@
   },
   {
     "name": "screen-ai",
-    "size": 4832372,
+    "size": 4832454,
     "file_count": 83
   },
   {
@@ -646,17 +646,17 @@
   },
   {
     "name": "spirv-headers",
-    "size": 524495,
+    "size": 526772,
     "file_count": 15
   },
   {
     "name": "spirv-tools",
-    "size": 199326,
+    "size": 199429,
     "file_count": 11
   },
   {
     "name": "sqlite",
-    "size": 550143,
+    "size": 562158,
     "file_count": 12
   },
   {
@@ -716,7 +716,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6164315,
+    "size": 6160664,
     "file_count": 171
   },
   {
