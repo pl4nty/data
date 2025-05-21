@@ -1142,6 +1142,7 @@
         "UI_BookingsTeamsIntegration": true,
         "UI_CanEditCountryCode": false,
         "UI_DisplayCurrentMemberFirstInCalendar": true,
+        "UI_EnableAppDeprecationBanner": true,
         "UI_EnableAppTransitionExperience": true,
         "UI_EnableBatchAddStaff": true,
         "UI_EnableCombinedMenu": true,

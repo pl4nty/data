@@ -35,7 +35,7 @@
                 "https://gcchigh.loki.office365.us",
                 "https://graph.microsoft.com",
                 "https://loki.delve.office.com",
-                "https://nam.loki.delve.office.com",
+                "https://*.loki.delve.office.com",
                 "https://loki.office365.cn",
                 "https://loki.officenet.eaglex.ic.gov",
                 "https://loki.officenet.microsoft.scloud",
@@ -669,8 +669,8 @@
             "Prompts": {
                 "PeopleHighlightsCollabNetComment": [
                     {
-                        "commandText": "Where and why was {file} shared?",
-                        "displayText": "Where and why was {file} shared?",
+                        "commandText": "List recent activity in {file}",
+                        "displayText": "List recent activity in {file}",
                         "pillText": "What\u2019s changed?",
                         "sourceTypeId": "CollabNetComment"
                     }
@@ -701,17 +701,17 @@
                 ],
                 "PeopleHighlightsCollabNetReply": [
                     {
-                        "commandText": "Where and why was {file} shared?",
-                        "displayText": "Where and why was {file} shared?",
+                        "commandText": "List recent activity in {file}",
+                        "displayText": "List recent activity in {file}",
                         "pillText": "What\u2019s changed?",
                         "sourceTypeId": "CollabNetReply"
                     }
                 ],
                 "PeopleHighlightsCollabNetSharing": [
                     {
-                        "commandText": "List recent activity in {file}",
-                        "displayText": "List recent activity in {file}",
-                        "pillText": "What\u2019s changed?",
+                        "commandText": "Where and why was {file} shared?",
+                        "displayText": "Where and why was {file} shared?",
+                        "pillText": "Give me the context",
                         "sourceTypeId": "CollabNetSharing"
                     }
                 ],
