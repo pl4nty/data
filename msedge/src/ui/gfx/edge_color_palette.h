@@ -47,10 +47,6 @@ namespace gfx {
     constexpr SkColor kInfoBarDarkModeColor = SkColorSetRGB(77, 77, 77);
 
     // Color is used to set the background color in WebUi.
-    constexpr SkColor kColorEdgeBackgroundAppDark =
-        SkColorSetRGB(0x14, 0x14, 0x14);
-    constexpr SkColor kColorEdgeBackgroundAppLight =
-        SkColorSetRGB(0xeb, 0xeb, 0xeb);
     constexpr SkColor kColorEdgeBackgroundDialogDark =
         SkColorSetRGB(0x29, 0x29, 0x29);
     constexpr SkColor kColorEdgeBackgroundDialogLight =
@@ -59,10 +55,25 @@ namespace gfx {
         SkColorSetRGB(0x33, 0x33, 0x33);
     constexpr SkColor kColorEdgeLayerBackgroundBaseLight =
         SkColorSetRGB(0xfa, 0xfa, 0xfa);
-    constexpr SkColor kColorEdgeKumoLayerBackgroundBaseDark =
-        SkColorSetRGB(0x1E, 0x20, 0x24);
-    constexpr SkColor kColorEdgeKumoLayerBackgroundBaseLight =
+
+    // backgroundFlyoutSolid = 'var(--smtc-background-window-primary-solid)
+    constexpr SkColor kColorEdgeSemanticLayerFlyoutBackgroundDialogDark =
+        SkColorSetRGB(0X29, 0x29, 0x29);
+    constexpr SkColor kColorEdgeSemanticLayerFlyoutBackgroundDialogLight =
+        SkColorSetRGB(0xff, 0xff, 0xff);
+
+    // backgroundWindowPrimarySolid = 'var(--smtc-background-flyout-solid)
+    constexpr SkColor kColorEdgeSemanticLayerBackgroundBaseDark =
+        SkColorSetRGB(0X29, 0x29, 0x29);
+    constexpr SkColor kColorEdgeSemanticLayerBackgroundBaseLight =
         SkColorSetRGB(0xFF, 0xFF, 0xFF);
+
+    // for background with cards:
+    // backgroundLayerTertiary = 'var(--smtc-background-layer-tertiary)';
+    constexpr SkColor kColorEdgeSemanticLayerCardContainerBackgroundDark =
+        SkColorSetARGB(0x3D, 0x00, 0x00, 0x00);
+    constexpr SkColor kColorEdgeSemanticLayerCardContainerBackgroundLight =
+        SkColorSetARGB(0x05, 0x00, 0x00, 0x00);
 
     // The following set are different shades of grey based on
     // different alphas of black on a white background.
