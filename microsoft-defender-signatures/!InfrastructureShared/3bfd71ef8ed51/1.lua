@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\397d7384928c7\1.luac 
+-- Command line: lua\!InfrastructureShared\3bfd71ef8ed51\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -32,7 +32,7 @@ do
   end
   local l_0_4 = contains
   local l_0_7 = l_0_3
-  l_0_4 = l_0_4(l_0_7, {"mshta", "curl"})
+  l_0_4 = l_0_4(l_0_7, {"mshta", "curl", "conhost"})
   if l_0_4 then
     l_0_4 = mp
     l_0_4 = l_0_4.INFECTED

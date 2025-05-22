@@ -7,7 +7,7 @@ local l_0_0 = "FileTyperMetrics"
 local l_0_1 = "FileTyperTimer"
 local l_0_2 = (mp.enum_mpattributesubstring)("BM_")
 if l_0_2 ~= nil and #l_0_2 > 0 then
-  local l_0_3 = AddToAtomicCounter(l_0_1, 1, 7200)
+  local l_0_3 = AddToAtomicCounter(l_0_1, 1, 27000)
   if l_0_3 == nil or l_0_3 == 0 then
     (mp.set_mpattribute)("LUA:FileTyperReportMetrics")
   end
@@ -15,9 +15,9 @@ if l_0_2 ~= nil and #l_0_2 > 0 then
     if StringEndsWith(l_0_8, "_FILE") then
       local l_0_9 = GetRollingQueueKeyValue(l_0_0, l_0_8)
       if l_0_9 ~= nil then
-        AppendToRollingQueue(l_0_0, l_0_8, l_0_9 + 1, 10800)
+        AppendToRollingQueue(l_0_0, l_0_8, l_0_9 + 1, 32400)
       else
-        AppendToRollingQueue(l_0_0, l_0_8, 1, 10800)
+        AppendToRollingQueue(l_0_0, l_0_8, 1, 32400)
       end
     end
   end

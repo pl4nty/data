@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\285d7179b4266\1.luac 
+-- Command line: lua\!InfrastructureShared\2b6d79c852b66\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -49,26 +49,19 @@ if l_0_7 then
   l_0_8 = "powershell"
   l_0_7 = l_0_7(l_0_8, l_0_5)
   l_0_1 = l_0_7
-  if not l_0_1 then
-    l_0_7 = mp
-    l_0_7 = l_0_7.CLEAN
-    return l_0_7
-  end
 else
-  l_0_7 = contains
-  l_0_8 = l_0_6
-  l_0_7 = l_0_7(l_0_8, "cmd.exe")
-  if l_0_7 then
-    l_0_7 = NormalizeCmdline
-    l_0_8 = "cmd"
-    l_0_7 = l_0_7(l_0_8, l_0_5)
-    l_0_1 = l_0_7
-    if not l_0_1 then
-      l_0_7 = mp
-      l_0_7 = l_0_7.CLEAN
-      return l_0_7
-    end
-  end
+  l_0_7 = NormalizeCmdline
+  l_0_8 = "cmd"
+  l_0_7 = l_0_7(l_0_8, l_0_5)
+  l_0_1 = l_0_7
+end
+l_0_7 = isnull
+l_0_8 = l_0_1
+l_0_7 = l_0_7(l_0_8)
+if l_0_7 then
+  l_0_7 = mp
+  l_0_7 = l_0_7.CLEAN
+  return l_0_7
 end
 l_0_7 = string
 l_0_7 = l_0_7.gsub
@@ -83,10 +76,10 @@ l_0_1 = l_0_7
 l_0_7 = extract_urls
 l_0_8 = l_0_1
 l_0_7 = l_0_7(l_0_8)
-if isnull(R9_PC134) then
+if isnull(R9_PC126) then
   return mp.CLEAN
 end
-for l_0_12,i_2 in ipairs(R9_PC134) do
+for l_0_12,i_2 in ipairs(R9_PC126) do
   if not split(i_2, "%.") then
     return mp.CLEAN
   end
@@ -94,7 +87,7 @@ for l_0_12,i_2 in ipairs(R9_PC134) do
   if not "." .. tostring((split(i_2, "%."))[#split(i_2, "%.")]) then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC165: Confused about usage of register: R14 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC157: Confused about usage of register: R14 in 'UnsetPending'
 
   if isSuspTLD("." .. tostring((split(i_2, "%."))[#split(i_2, "%.")])) then
     return mp.INFECTED

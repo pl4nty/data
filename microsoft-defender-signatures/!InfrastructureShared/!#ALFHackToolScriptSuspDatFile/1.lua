@@ -9,19 +9,25 @@ if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOS
 end
 local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
--- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC103: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
 
-if l_0_1:find("\\windows\\system32\\spool\\drivers\\x64\\3\\", 1, true) or ((l_0_1:find("\\driverstore\\filerepository\\", 1, true) and l_0_1:find(".inf", 1, true)) or l_0_1:find("\\windows\\system32\\driverstore\\temp\\", 1, true)) then
+-- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
+
+if l_0_1:find("\\windows\\system32\\spool\\drivers\\x64\\3\\", 1, true) or ((l_0_1:find("\\driverstore\\filerepository\\", 1, true) and l_0_1:find(".inf", 1, true)) or l_0_1:find("\\windows\\system32\\spool\\{", 1, true)) then
   return mp.CLEAN
 end
 local l_0_2 = (mp.readheader)(0, 257)

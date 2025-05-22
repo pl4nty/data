@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\189d782f6b549\1.luac 
+-- Command line: lua\!InfrastructureShared\1bad70560003d\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -44,26 +44,19 @@ if l_0_7 then
   l_0_8 = "powershell"
   l_0_7 = l_0_7(l_0_8, l_0_5)
   l_0_1 = l_0_7
-  if not l_0_1 then
-    l_0_7 = mp
-    l_0_7 = l_0_7.CLEAN
-    return l_0_7
-  end
 else
-  l_0_7 = contains
-  l_0_8 = l_0_6
-  l_0_7 = l_0_7(l_0_8, "cmd.exe")
-  if l_0_7 then
-    l_0_7 = NormalizeCmdline
-    l_0_8 = "cmd"
-    l_0_7 = l_0_7(l_0_8, l_0_5)
-    l_0_1 = l_0_7
-    if not l_0_1 then
-      l_0_7 = mp
-      l_0_7 = l_0_7.CLEAN
-      return l_0_7
-    end
-  end
+  l_0_7 = NormalizeCmdline
+  l_0_8 = "cmd"
+  l_0_7 = l_0_7(l_0_8, l_0_5)
+  l_0_1 = l_0_7
+end
+l_0_7 = isnull
+l_0_8 = l_0_1
+l_0_7 = l_0_7(l_0_8)
+if l_0_7 then
+  l_0_7 = mp
+  l_0_7 = l_0_7.CLEAN
+  return l_0_7
 end
 l_0_7 = string
 l_0_7 = l_0_7.gsub
@@ -85,33 +78,33 @@ end
 if not l_0_8 then
   return mp.CLEAN
 end
-if ExtractPartsFromUri(R9_PC140) == "" or ExtractPartsFromUri(R9_PC140) == nil then
-  R9_PC140 = mp
-  R9_PC140 = R9_PC140.CLEAN
-  return R9_PC140
+if ExtractPartsFromUri(R9_PC132) == "" or ExtractPartsFromUri(R9_PC132) == nil then
+  R9_PC132 = mp
+  R9_PC132 = R9_PC132.CLEAN
+  return R9_PC132
 end
-R9_PC140 = (ExtractPartsFromUri(R9_PC140)).host
-if R9_PC140 ~= "" then
-  R9_PC140 = (ExtractPartsFromUri(R9_PC140)).host
+R9_PC132 = (ExtractPartsFromUri(R9_PC132)).host
+if R9_PC132 ~= "" then
+  R9_PC132 = (ExtractPartsFromUri(R9_PC132)).host
 end
-if R9_PC140 == nil then
-  R9_PC140 = mp
-  R9_PC140 = R9_PC140.CLEAN
-  return R9_PC140
+if R9_PC132 == nil then
+  R9_PC132 = mp
+  R9_PC132 = R9_PC132.CLEAN
+  return R9_PC132
 end
-R9_PC140 = split
-R9_PC140 = R9_PC140((ExtractPartsFromUri(R9_PC140)).host, "%.")
+R9_PC132 = split
+R9_PC132 = R9_PC132((ExtractPartsFromUri(R9_PC132)).host, "%.")
 local l_0_9 = nil
-if not R9_PC140 then
+if not R9_PC132 then
   return mp.CLEAN
 end
 local l_0_10 = nil
-if not "." .. tostring(R9_PC140[#R9_PC140]) then
+if not "." .. tostring(R9_PC132[#R9_PC132]) then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC178: Confused about usage of register: R10 in 'UnsetPending'
+-- DECOMPILER ERROR at PC170: Confused about usage of register: R10 in 'UnsetPending'
 
-if isSuspTLD("." .. tostring(R9_PC140[#R9_PC140])) then
+if isSuspTLD("." .. tostring(R9_PC132[#R9_PC132])) then
   return mp.INFECTED
 end
 return mp.CLEAN
