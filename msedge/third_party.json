@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10764613,
+    "size": 10763726,
     "file_count": 177
   },
   {
@@ -76,12 +76,12 @@
   },
   {
     "name": "blink",
-    "size": 32074561,
-    "file_count": 3942
+    "size": 32084230,
+    "file_count": 3943
   },
   {
     "name": "boringssl",
-    "size": 71829,
+    "size": 72073,
     "file_count": 16
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 19053,
+    "size": 21356,
     "file_count": 5
   },
   {
@@ -426,12 +426,12 @@
   },
   {
     "name": "libxml",
-    "size": 344905,
+    "size": 344904,
     "file_count": 36
   },
   {
     "name": "libxslt",
-    "size": 410208,
+    "size": 410214,
     "file_count": 18
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18979819,
+    "size": 18978795,
     "file_count": 19
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3585009,
+    "size": 3586155,
     "file_count": 560
   },
   {
@@ -631,7 +631,7 @@
   },
   {
     "name": "skia",
-    "size": 3432565,
+    "size": 3433723,
     "file_count": 1171
   },
   {
@@ -716,7 +716,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6160664,
+    "size": 6158457,
     "file_count": 171
   },
   {
@@ -736,8 +736,8 @@
   },
   {
     "name": "webrtc",
-    "size": 277424,
-    "file_count": 91
+    "size": 275903,
+    "file_count": 90
   },
   {
     "name": "webrtc_overrides",
@@ -746,8 +746,8 @@
   },
   {
     "name": "win_build_output",
-    "size": 28588532,
-    "file_count": 625
+    "size": 28609425,
+    "file_count": 626
   },
   {
     "name": "wp.client",
