@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.isdll == true and (mp.get_mpattribute)("NID:Win64/IcedId.PAE!MTB") and l_0_0 > 241664 and l_0_0 < 249856 then
-  return mp.INFECTED
+if (mp.getfilesize)() < 1000000 and peattributes.executes_from_last_section == true then
+  if mp.HSTR_WEIGHT >= 3 then
+    return mp.SUSPICIOUS
+  else
+    return mp.LOWFI
+  end
 end
 return mp.CLEAN
 

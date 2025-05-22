@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (hstrlog[2]).matched then
+if (mp.get_mpattribute)("SIGATTR:DisableRealtimeMonitoring") then
   return mp.INFECTED
 end
 return mp.CLEAN

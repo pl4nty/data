@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.no_security and peattributes.isvbnative then
+if (string.match)((string.lower)((mp.getfilename)()), "%.c$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

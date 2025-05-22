@@ -3,12 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.hstr_full_log)()
-if not l_0_0 then
-  return mp.INFECTED
-end
-if (l_0_0[2]).matched or (l_0_0[3]).matched then
-  (mp.TriggerScanResource)("folder", "c:\\tempcaches\\", 0, 5000)
-end
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 40)
+local l_0_1 = (string.sub)(l_0_0, 14, 14)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 11, "\187" .. l_0_1 .. "\000\000\000")
 return mp.INFECTED
 

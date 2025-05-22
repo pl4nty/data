@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_hasappendeddata") == false then
-  return mp.INFECTED
+if (mp.get_mpattribute)("pea_hasappendeddata") then
+  return mp.SUSPICIOUS
 end
-return mp.LOWFI
+return mp.CLEAN
 

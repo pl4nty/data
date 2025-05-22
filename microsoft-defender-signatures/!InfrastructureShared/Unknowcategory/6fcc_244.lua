@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_process_relationships)()
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  if l_0_5.image_path ~= nil then
-    (bm.add_related_file)(l_0_5.image_path)
-  end
+if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 2097152 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

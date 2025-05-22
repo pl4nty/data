@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isdll and peattributes.ismsil then
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:SProvider.B")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

@@ -3,33 +3,62 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
+
+do
+  if (this_sigattrlog[1]).matched then
+    local l_0_0 = nil
+  else
+  end
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
+
+  do
+    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
+      local l_0_1 = (this_sigattrlog[2]).utf8p2
+    else
+    end
+    -- DECOMPILER ERROR at PC43: Overwrote pending register: R0 in 'AssignReg'
+
+    do
+      if not (this_sigattrlog[4]).matched or (this_sigattrlog[5]).matched then
+        local l_0_2 = (this_sigattrlog[4]).utf8p2
+      else
+      end
+      -- DECOMPILER ERROR at PC61: Overwrote pending register: R0 in 'AssignReg'
+
+      do
+        if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
+          local l_0_3 = (this_sigattrlog[6]).utf8p2
+        else
+        end
+        -- DECOMPILER ERROR at PC79: Overwrote pending register: R0 in 'AssignReg'
+
+        do
+          if not (this_sigattrlog[8]).matched or (this_sigattrlog[9]).matched then
+            local l_0_4, l_0_5 = (this_sigattrlog[8]).utf8p2
+          end
+          -- DECOMPILER ERROR at PC80: Confused about usage of register: R0 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC84: Confused about usage of register: R0 in 'UnsetPending'
+
+          if l_0_4 ~= nil then
+            local l_0_6 = nil
+            for l_0_10,l_0_11 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
+              local l_0_7 = nil
+              -- DECOMPILER ERROR at PC92: Confused about usage of register: R6 in 'UnsetPending'
+
+              R6_PC92 = (mp.ContextualExpandEnvironmentVariables)(R6_PC92)
+              if (sysio.IsFileExists)(R6_PC92) then
+                (bm.add_related_file)(R6_PC92)
+              end
+            end
+          end
+          do
+            return mp.INFECTED
+          end
+        end
+      end
+    end
+  end
 end
-if epcode[16] ~= 255 then
-  return mp.CLEAN
-end
-if peattributes.entrybyte55 ~= true then
-  return mp.CLEAN
-end
-if peattributes.hasexports ~= true then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).Size <= 0 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_0 = (mp.readfile)((pe.foffset_rva)(((pehdr.DataDirectory)[1]).RVA), 32)
-if (mp.readu_u32)(l_0_0, 13) <= 0 then
-  return mp.CLEAN
-end
-if (mp.readu_u32)(l_0_0, 25) <= 0 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readfile)((pe.foffset_rva)((mp.readu_u32)(l_0_0, 13)), 12)
-if (mp.crc32)(-1, l_0_1, 1, 12) ~= 1965254513 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

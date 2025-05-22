@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
-  return mp.CLEAN
+if (mp.get_mpattribute)("//AGGR:OfficeFileOLE_1") then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

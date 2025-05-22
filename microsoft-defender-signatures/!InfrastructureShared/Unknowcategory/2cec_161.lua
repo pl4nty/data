@@ -6,5 +6,5 @@
 if peattributes.isdriver then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

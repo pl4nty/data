@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and pehdr.NumberOfSections == 3 then
+if (mp.get_mpattribute)("SCPT:VBSSplit") and (mp.get_mpattribute)("BM_TEXT_FILE") then
   return mp.INFECTED
 end
 return mp.CLEAN

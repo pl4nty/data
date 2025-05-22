@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
-    local l_0_1 = (l_0_0.image_path):lower()
-    if (string.find)(l_0_1, "\\program files", 1, true) == nil then
-      return mp.CLEAN
-    end
-  end
+local l_0_0 = (mp.getfilename)()
+if (string.find)((string.lower)(l_0_0), ".asar$") ~= nil then
+  (mp.set_mpattribute)("MpIsExhaustiveScriptScan")
   return mp.INFECTED
 end
+return mp.CLEAN
 

@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
-  return mp.CLEAN
-end
-if mp.HSTR_WEIGHT == 4 then
-  return mp.LOWFI
+if peattributes.isexe == true and (mp.get_mpattribute)("HSTR:Trojan:Win32/IsDelphi") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

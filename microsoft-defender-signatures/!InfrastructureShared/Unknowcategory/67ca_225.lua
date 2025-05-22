@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.lower)((mp.getfilename)()), "%.php$") ~= nil then
+if peattributes.isexe == true and (pesecs[11]).Name == ".GSM_UTF" then
   return mp.INFECTED
 end
 return mp.CLEAN

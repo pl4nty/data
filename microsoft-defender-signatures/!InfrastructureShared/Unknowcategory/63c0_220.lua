@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT == 2 and (hstrlog[1]).hitcount > 3 then
+if (peattributes.isdll == true or peattributes.isexe == true) and peattributes.no_security == true then
   return mp.INFECTED
 end
 return mp.CLEAN

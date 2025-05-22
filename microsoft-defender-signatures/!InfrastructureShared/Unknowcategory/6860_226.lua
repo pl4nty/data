@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (nri.GetConnectionString)()
-if l_0_0:find("DestPort=3389;", 1, true) then
+if peattributes.isexe and peattributes.x86_image and peattributes.hasappendeddata then
   return mp.INFECTED
 end
 return mp.CLEAN

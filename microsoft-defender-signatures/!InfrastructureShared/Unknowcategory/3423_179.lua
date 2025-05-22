@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpKernelModeEmu") then
-  return mp.CLEAN
-end
-return mp.INFECTED
+(mp.set_mpattributeex)("FOP64:GoLang64", pevars.sigaddr)
+return mp.CLEAN
 

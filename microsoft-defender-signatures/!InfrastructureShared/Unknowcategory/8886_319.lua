@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
+if peattributes.isdll == false or pehdr.AddressOfEntryPoint ~= 0 or peattributes.hasexports == false then
+  return mp.CLEAN
+end
+if (pe.get_exports)() > 35 then
   return mp.INFECTED
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_2345pdb")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_2345pdb")
-end
-return mp.INFECTED
+return mp.CLEAN
 

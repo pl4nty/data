@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("SIGATTR:FindBaiuduAV") and (mp.get_mpattribute)("SIGATTR:FindAvastAV") then
+if (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("HSTR:VirTool:Win32/AscUrlExe") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

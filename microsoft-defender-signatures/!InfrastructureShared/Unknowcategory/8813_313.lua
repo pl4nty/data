@@ -3,13 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
-if l_0_0 == nil then
+if (mp.getfilesize)() > 1000000 then
+  return mp.CLEAN
+end
+if (pesecs[1]).Name == "UPX0" then
   return mp.CLEAN
 end
 ;
-(MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_HIGH)
-;
-(mp.AddDeferredBMAction)("SmsAsyncScanEvent", 5000)
+(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 15000)
 return mp.INFECTED
 

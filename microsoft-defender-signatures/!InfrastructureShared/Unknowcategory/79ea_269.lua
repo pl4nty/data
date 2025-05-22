@@ -3,8 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[4]).Name == ".rsrc" and (pesecs[4]).VirtualSize == 984 and (pesecs[4]).SizeOfRawData == 1024 then
-  return mp.INFECTED
+do
+  if peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections > 6 then
-  return mp.SUSPICIOUS
+if (mp.get_mpattribute)("BM_MZ_DLL") then
+  return mp.INFECTED
 end
 return mp.CLEAN
 

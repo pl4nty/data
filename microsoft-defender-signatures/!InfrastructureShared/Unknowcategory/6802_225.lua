@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("HSTR:Trojan:MSIL/Grotseento")
-if mp.HSTR_WEIGHT >= 3 then
+if (mp.get_mpattribute)("pea_no_security") and (mp.getfilesize)() < 172032 then
   return mp.INFECTED
 end
 return mp.CLEAN

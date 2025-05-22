@@ -3,15 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:lolMiner")
-  return mp.INFECTED
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+do
+  if l_0_0 then
+    local l_0_1 = {}
+    l_0_1["powershell.exe"] = true
+    l_0_1["wscript.exe"] = true
+    l_0_1["cscript.exe"] = true
+    l_0_1["winword.exe"] = true
+    l_0_1["excel.exe"] = true
+    l_0_1["powerpnt.exe"] = true
+    if l_0_1[(string.match)(l_0_0, "\\([^\\]+)$")] then
+      return mp.INFECTED
+    end
+  end
+  return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_lolminer")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_lolminer")
-end
-return mp.CLEAN
 

@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if (mp.getfilesize)() < 1000000 and (string.sub)(l_0_0, -12) == "goopdate.dll" then
+if pehdr.NumberOfSections > 3 and (pesecs[2]).PointerToRawData - (pesecs[1]).SizeOfRawData >= 12288 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEEMU:ObfuscatorBerrof") then
+if (mp.getfilesize)() <= 80 then
   return mp.INFECTED
+else
+  return mp.LOWFI
 end
 return mp.CLEAN
 

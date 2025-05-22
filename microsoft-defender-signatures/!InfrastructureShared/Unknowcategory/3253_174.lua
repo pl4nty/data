@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("HSTR:IsVB6") then
+if (mp.get_mpattribute)("PACKED:UPX") then
   return mp.INFECTED
 end
 return mp.CLEAN

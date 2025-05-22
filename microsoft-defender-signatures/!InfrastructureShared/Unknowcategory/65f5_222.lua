@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:MaxOfferDeal.A")
+if peattributes.isexe and peattributes.no_security and peattributes.x86_image then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

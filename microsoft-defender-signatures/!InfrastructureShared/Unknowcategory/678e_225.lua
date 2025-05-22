@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pevars.sigaddr == pehdr.ImageBase + pehdr.AddressOfEntryPoint then
+if peattributes.ismsil and peattributes.isexe and peattributes.has_msilresources then
   return mp.INFECTED
 end
 return mp.CLEAN

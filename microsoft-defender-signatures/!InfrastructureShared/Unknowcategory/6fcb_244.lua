@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
+local l_0_0 = (mp.getfilesize)()
+if (mp.get_mpattribute)("HSTR:GolangBinary") and l_0_0 < 6291456 and l_0_0 < 8388608 then
   return mp.INFECTED
 end
 return mp.CLEAN

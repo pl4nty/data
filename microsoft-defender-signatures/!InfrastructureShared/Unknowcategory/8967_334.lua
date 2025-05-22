@@ -3,9 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 135000 and l_0_0 < 150000 and pehdr.NumberOfSections >= 6 and (pesecs[3]).Name == ".zfq" and (pesecs[4]).Name == ".flq" then
-  return mp.INFECTED
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.find)(l_0_0, "\\program files", 1, true) ~= nil and (string.find)(l_0_0, "\\malwarebytes", 1, true) ~= nil then
+    return mp.CLEAN
+  end
 end
-return mp.CLEAN
+return mp.INFECTED
 

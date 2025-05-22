@@ -3,16 +3,18 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_suspicious_section_name") and (mp.getfilesize)() >= 1331200 and (mp.getfilesize)() < 1347584 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = ""
+if (this_sigattrlog[2]).matched then
+  l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
+else
   return mp.CLEAN
 end
+if l_0_0 ~= "" then
+  if (string.match)(l_0_0, "%.[a-z]+$") or (string.match)(l_0_0, "%.[a-z]+\"$") or (string.find)(l_0_0, "\\downloads\\", 1, true) then
+    return mp.CLEAN
+  else
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

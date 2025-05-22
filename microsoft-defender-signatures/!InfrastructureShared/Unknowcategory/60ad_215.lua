@@ -3,9 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:Refog.D")
-  return mp.INFECTED
+if not peattributes.isexe then
+  return mp.CLEAN
 end
-return mp.LOWFI
+if not peattributes.dt_error_heur_API_limit then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

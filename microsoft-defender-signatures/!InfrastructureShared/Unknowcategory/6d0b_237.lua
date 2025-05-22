@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security and peattributes.isdll and (mp.getfilesize)() < 14288 then
+local l_0_0 = (pe.get_exports_count)()
+if peattributes.isdll == true and (l_0_0 == 10 or l_0_0 == 11) then
   return mp.INFECTED
 end
 return mp.CLEAN

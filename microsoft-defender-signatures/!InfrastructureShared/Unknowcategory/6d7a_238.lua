@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "¹ð\127\a\000\144")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 110, "")
 return mp.INFECTED
 

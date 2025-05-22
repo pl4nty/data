@@ -3,13 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
+if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
   return mp.CLEAN
 end
-if not peattributes.x86_image then
-  return mp.CLEAN
-end
-if not peattributes.hasexports then
+if (mp.get_mpattribute)("ValidDigitalSignature") then
   return mp.CLEAN
 end
 return mp.INFECTED

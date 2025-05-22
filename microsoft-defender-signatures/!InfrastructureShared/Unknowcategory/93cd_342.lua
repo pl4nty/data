@@ -3,14 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 13 then
+(mp.readprotection)(false)
+local l_0_0 = (mp.readfile)(15437, 4)
+if (mp.readu_u32)(l_0_0, 1) == 4018468997 and l_0_0 ~= "ÆÐÔÇÖÝ›ÛÔØÐÄÀÐÇÌ›ÖÚØ" then
   return mp.INFECTED
-end
-if mp.HSTR_WEIGHT >= 12 then
-  (mp.set_mpattribute)("HSTR:Adware:Win32/ZoomyLib.D")
-end
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
 end
 return mp.CLEAN
 

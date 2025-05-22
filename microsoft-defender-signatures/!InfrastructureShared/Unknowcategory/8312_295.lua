@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.SizeOfImage >= 217088 and pehdr.SizeOfImage <= 393216 then
-  (mp.set_mpattribute)("Obf:Nivdort.S1")
-  return mp.SUSPICIOUS
+if peattributes.isdll == true and peattributes.no_resources == true and peattributes.no_debug == true and peattributes.no_delayimport == true and peattributes.no_loadconfig == true then
+  return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

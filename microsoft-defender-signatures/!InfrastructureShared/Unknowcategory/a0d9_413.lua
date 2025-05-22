@@ -3,16 +3,13 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.getfilesize)() < 47872 then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
+for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
+  if (sigattr_tail[l_0_3]).matched and (sigattr_tail[l_0_3]).attribute == 16384 then
+    local l_0_4 = (string.lower)((mp.utf16to8)((sigattr_tail[l_0_3]).wp1))
+    if (string.find)(l_0_4, "\\temp\\%a%a%a%a%a%a%a%a.exe") then
+      return mp.INFECTED
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
 end
+return mp.CLEAN
 

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AllowList:documentation_word_macro_n.dot") then
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
-return mp.INFECTED
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

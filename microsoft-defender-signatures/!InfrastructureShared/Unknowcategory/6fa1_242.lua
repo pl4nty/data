@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 49920 and l_0_0 > 49152 and (mp.get_mpattribute)("BM_MACHO64_FILE") then
-  return mp.INFECTED
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.sub)(l_0_0, -16) == "skypelogview.exe" then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.LOWFI
 

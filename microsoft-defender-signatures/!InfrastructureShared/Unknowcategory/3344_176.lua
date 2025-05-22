@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_section_name then
+if (pesecs[5]).Name == ".alang" then
   return mp.INFECTED
 end
 return mp.CLEAN

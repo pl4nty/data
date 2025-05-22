@@ -3,14 +3,11 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = (string.lower)((this_sigattrlog[1]).utf8p1)
-    if l_0_0 ~= nil and (string.find)(l_0_0, "\\msbuild.exe", 1, true) then
-      (bm.add_action)("EmsScan", 5000)
-      return mp.INFECTED
-    end
-  end
+if peattributes.isvbnative and peattributes.dirty_wx_branch and peattributes.hstr_exhaustive and peattributes.hasappendeddata then
+  return mp.INFECTED
+end
+if not peattributes.suspicious_timestamp and not peattributes.suspicious_image_version then
   return mp.CLEAN
 end
+return mp.INFECTED
 

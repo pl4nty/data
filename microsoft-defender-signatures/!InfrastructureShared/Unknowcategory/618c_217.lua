@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (versioning.IsSeville)() and (versioning.GetCloudBlockLevel)() >= 4 then
+if mp.HSTR_WEIGHT >= 6 then
+  (mp.set_mpattribute)("PUA:Block:Skymobi.A")
   return mp.INFECTED
 end
 return mp.LOWFI

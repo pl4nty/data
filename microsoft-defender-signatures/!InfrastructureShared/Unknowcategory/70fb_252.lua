@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports == true and peattributes.isdll == false and pehdr.NumberOfSections == 9 then
+if (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RF!MTB") or (mp.get_mpattribute)("NID:Trojan:Win64/Lotok.RG!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true and pehdr.NumberOfSections == 3 then
+if peattributes.isexe == true and (pesecs[6]).Name == ".htext" then
   return mp.INFECTED
 end
 return mp.CLEAN

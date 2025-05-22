@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.find)((mp.getfilename)(), "%-%>%(RarSfx%)%-%>CMT$") == nil then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 5 then
+  (mp.set_mpattribute)("PUA:Block:Tunenup.A")
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.LOWFI
 

@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("do_exhaustivehstr_rescan")
-;
-(pe.reemulate)()
-return mp.INFECTED
+if peattributes.ismsil and peattributes.no_security then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:FakeAdBlocker.C!MTB")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(mp.set_mpattribute)("MpRequestSMSM")
+;
+(mp.set_mpattributeex)("MpRequestEmsScanTrigger", 3000)
+return mp.INFECTED
 

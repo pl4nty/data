@@ -6,7 +6,7 @@
 if not peattributes.isdll then
   return mp.CLEAN
 end
-if not peattributes.no_exports then
+if not peattributes.hasexports then
   return mp.CLEAN
 end
 return mp.INFECTED

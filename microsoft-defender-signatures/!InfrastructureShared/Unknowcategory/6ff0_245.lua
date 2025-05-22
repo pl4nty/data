@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[7]).matched and peattributes.isdll and peattributes.hasexports then
+if ((mp.getfilename)()):match("(Ole Stream 0).*%.scr") and peattributes.isexe then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

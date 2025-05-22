@@ -3,12 +3,16 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MpAPILimitReached") then
-  (pe.set_peattribute)("deep_analysis", true)
-  ;
-  (pe.set_peattribute)("disable_apicall_limit", true)
-  ;
-  (pe.reemulate)()
+do
+  if peattributes.ismsil == true and peattributes.isexe == true then
+    local l_0_0 = (mp.GetCertificateInfo)()
+    for l_0_4,l_0_5 in pairs(l_0_0) do
+      if l_0_5.Signers ~= nil then
+        return mp.CLEAN
+      end
+    end
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-return mp.LOWFI
 

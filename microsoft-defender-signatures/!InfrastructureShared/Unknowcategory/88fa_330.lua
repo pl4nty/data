@@ -3,12 +3,11 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 == nil or (string.len)(l_0_0) < 1 then
-  return mp.CLEAN
+if mp.HSTR_WEIGHT >= 111 and mp.HSTR_WEIGHT % 100 >= 11 and mp.HSTR_WEIGHT % 10 >= 1 then
+  if pehdr.Machine == 34404 then
+    (mp.changedetectionname)(805306476)
+  end
+  return mp.INFECTED
 end
-l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
-;
-(bm.add_threat_file)(l_0_0)
-return mp.INFECTED
+return mp.LOWFI
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.hasexports and pehdr.SizeOfImage == 2351104 and pehdr.SizeOfCode == 57344 and pehdr.AddressOfEntryPoint == 14780 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 21, 21)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 18, "\187" .. l_0_1 .. "\000\000\000")
+return mp.INFECTED
 

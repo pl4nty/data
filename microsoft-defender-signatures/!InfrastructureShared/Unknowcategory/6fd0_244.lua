@@ -3,12 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 15 then
+if peattributes.isvbnative == true and peattributes.no_security == true and (mp.getfilesize)() < 1044480 then
   return mp.INFECTED
-else
-  if mp.HSTR_WEIGHT >= 11 then
-    (mp.set_mpattribute)("HSTR:KasidetLowfi")
-  end
 end
 return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Magic == 523 then
+if peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.x86_image == true and peattributes.line_numbers_stripped == true and peattributes.locals_symbols_stripped == true and peattributes.no_security == true and peattributes.headerchecksum0 == true and peattributes.hasappendeddata == true and peattributes.isexe == true then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEBMPAT:VirTool:Win32/Obfuscator.XT") then
+  (mp.set_mpattribute)("lua_codepatch_obfuscator_xt_1")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 17, "\235 ")
+  ;
+  (pe.mmap_patch_va)(pevars.sigaddr + 49, "\235")
 end
 return mp.CLEAN
 

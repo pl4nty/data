@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("FOPEX:Deep_Analysis_VMM_Grow")
-;
-(mp.set_mpattribute)("PEBMPAT:Exprio_Tick_Count")
-return mp.INFECTED
+if (mp.crc32)(-1, epcode, 1, 16) == 3504257948 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

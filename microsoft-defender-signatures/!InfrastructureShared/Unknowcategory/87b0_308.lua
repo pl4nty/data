@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (((hstrlog[12]).matched and (hstrlog[13]).matched) or not (hstrlog[14]).matched or (hstrlog[15]).matched) and peattributes.no_security == true then
-  return mp.INFECTED
-end
-return mp.CLEAN
+local l_0_0 = (pe.mmap_va)(pevars.sigaddr, 32)
+local l_0_1 = (string.sub)(l_0_0, 12, 12)
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 9, "\187" .. l_0_1 .. "\000\000\000\144")
+return mp.INFECTED
 

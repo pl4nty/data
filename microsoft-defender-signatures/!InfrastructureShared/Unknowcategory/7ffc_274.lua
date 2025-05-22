@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 and (string.find)((string.lower)(l_0_0.image_path), "python", 1, true) then
-  return mp.INFECTED
+if (mp.shr32)(pehdr.TimeDateStamp, 22) and (mp.shl32)(pehdr.TimeDateStamp, 22) == 0 then
+  (mp.changedetectionname)(805306402)
 end
-return mp.CLEAN
+return mp.INFECTED
 

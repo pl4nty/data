@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[5]).matched or (hstrlog[6]).matched then
-  (mp.changedetectionname)(805306370)
+if peattributes.no_security == true and pehdr.NumberOfSections == 3 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

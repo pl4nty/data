@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("AGGR:CombinedJavaClass") then
-  return mp.CLEAN
+if (mp.getfilesize)() <= 512 then
+  return mp.INFECTED
+else
+  return mp.LOWFI
 end
-return mp.INFECTED
+return mp.CLEAN
 

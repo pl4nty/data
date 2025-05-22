@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+if peattributes.isdll == true and peattributes.amd64_image and (mp.get_mpattribute)("NID:Win32/Emotet.PBH!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

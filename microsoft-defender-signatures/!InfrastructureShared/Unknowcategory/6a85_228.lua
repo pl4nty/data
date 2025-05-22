@@ -3,10 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 10 then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.hasexports == true and l_0_0 >= 100000 and l_0_0 <= 300000 then
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("HSTR:Rogue:Win32/Trapwot_Lowfi")
 return mp.CLEAN
 

@@ -3,9 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
-  (bm.trigger_sig_self_propagate)("SuspChildProcessLaunch", "Behavior:Win32/WinterCoat.A!dha")
-  return mp.INFECTED
+do
+  if (pe.isdynamic_va)(pevars.sigaddr) then
+    local l_0_0 = (pe.get_regval)(pe.REG_EAX)
+    if l_0_0 == 1247748109 then
+      (mp.set_mpattribute)("PEBMPAT:AntiEmuVirtualProtectLayout")
+      ;
+      (pe.set_regval)(pe.REG_EAX, 3047219186)
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isexe == true or peattributes.isdll == true) and (mp.getfilesize)() < 2097152 and peattributes.no_security == true then
-  return mp.INFECTED
+do
+  local l_0_0 = (string.lower)(tostring(headerpage))
+  if l_0_0 > 5 then
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
-return mp.CLEAN
 

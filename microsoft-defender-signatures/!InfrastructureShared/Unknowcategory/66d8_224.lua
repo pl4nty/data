@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 3, "\001\000")
-;
-(pe.mmap_patch_va)(pevars.sigaddr + 51, "\001\000")
-return mp.INFECTED
+local l_0_0 = 0
+if (hstrlog[1]).matched then
+  l_0_0 = (hstrlog[1]).hitcount
+end
+if l_0_0 >= 3 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

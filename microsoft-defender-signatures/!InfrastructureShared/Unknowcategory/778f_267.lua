@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 and l_0_0.integrity_level < MpCommon.SECURITY_MANDATORY_HIGH_RID then
+if pehdr.Machine == 34404 then
+  (mp.changedetectionname)(805306425)
+end
+if (hstrlog[5]).matched then
   return mp.INFECTED
 end
 return mp.CLEAN

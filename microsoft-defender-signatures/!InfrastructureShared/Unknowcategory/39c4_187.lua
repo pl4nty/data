@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (pe.get_regval)(pe.REG_ESP) == 1245124 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 14, "êê")
+return mp.INFECTED
 

@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isexe then
-  return mp.CLEAN
+if peattributes.isdll and (mp.get_mpattribute)("MpCPlApplet") and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+  return mp.INFECTED
 end
-if not peattributes.dynmem_uses_access_violation then
-  return mp.CLEAN
-end
-if not peattributes.dynmem_APIcall then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

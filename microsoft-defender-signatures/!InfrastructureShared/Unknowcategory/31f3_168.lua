@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 ~= nil and l_0_0 > 20971520 then
-  return mp.CLEAN
+if peattributes.hasappendeddata then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

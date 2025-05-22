@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_has_msilresources") then
+if peattributes.dll == true and peattributes.isexe == true then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.hasexports and peattributes.isdll and peattributes.executable_image then
+if pehdr.ImageBase + pehdr.SizeOfHeaders < (hstrlog[1]).VA then
   return mp.INFECTED
 end
 return mp.CLEAN

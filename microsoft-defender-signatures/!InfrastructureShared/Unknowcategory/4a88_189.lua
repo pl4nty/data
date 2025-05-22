@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("FOP:Trojan:Win32/Chepdu.X") then
+if peattributes.isdll and peattributes.x86_image then
   return mp.INFECTED
 end
 return mp.CLEAN

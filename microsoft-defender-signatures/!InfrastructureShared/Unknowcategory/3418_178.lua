@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[4]).hitcount >= 20 then
+if (mp.get_mpattribute)("//AGGR:OleFile") then
   return mp.INFECTED
 end
 return mp.CLEAN

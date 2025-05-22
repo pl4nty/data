@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll or not (mp.get_mpattribute)("BM_UnsignedDll") or (mp.getfilesize)() > 204800 then
-  return mp.CLEAN
+if peattributes.isexe == true and pehdr.NumberOfSections == 1 and (pesecs[1]).Name == "foo" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

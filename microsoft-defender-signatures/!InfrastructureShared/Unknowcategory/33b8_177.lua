@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("RPF:TopLevelFile") then
+if (mp.get_mpattribute)("PACKED:ASPROTECT") then
   return mp.LOWFI
 end
 return mp.CLEAN

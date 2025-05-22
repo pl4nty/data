@@ -3,17 +3,17 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 7 then
-  return mp.INFECTED
-end
-if not peattributes.isexe then
+local l_0_0 = (mp.GetParentProcInfo)()
+do
+  if l_0_0 ~= nil then
+    local l_0_1 = (string.lower)(l_0_0.image_path)
+    if l_0_1:match("([^\\]+)$") == "mmc.exe" or l_0_1:match("([^\\]+)$") == "wmiprvse.exe" then
+      if (versioning.IsSeville)() then
+        return mp.INFECTED
+      end
+      return mp.LOWFI
+    end
+  end
   return mp.CLEAN
 end
-if peattributes.amd64_image then
-  (mp.set_mpattribute)("do_exhaustivehstr_64bit_rescan_haozip")
-else
-  ;
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan_haozip")
-end
-return mp.CLEAN
 

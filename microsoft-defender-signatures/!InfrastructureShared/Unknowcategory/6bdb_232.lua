@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative and (pesecs[3]).SizeOfRawData > 65536 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr + 29, "ÇE")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 36, "")
+return mp.INFECTED
 

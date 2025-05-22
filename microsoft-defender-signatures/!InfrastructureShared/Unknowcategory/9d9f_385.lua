@@ -3,16 +3,17 @@
 
 -- params : ...
 -- function num : 0
-do
-  if peattributes.ismsil and (mp.get_mpattribute)("pea_no_security") and (mp.get_mpattribute)("Lua:PeCompanyName!nil") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+if pehdr.NumberOfSections > 4 then
   return mp.CLEAN
 end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 > 5242880 then
+  return mp.CLEAN
+end
+for l_0_4 = 1, pehdr.NumberOfSections do
+  if (string.lower)(tostring((pesecs[l_0_4]).Name)) == ".shell" then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN
 

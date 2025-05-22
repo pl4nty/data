@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:SearchProtect.A")
-  return mp.INFECTED
-end
-return mp.LOWFI
+(pe.mmap_patch_va)(pevars.sigaddr + 45, "Z")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 129, "Z")
+return mp.INFECTED
 

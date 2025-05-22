@@ -3,18 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.isdll then
-  return mp.CLEAN
+local l_0_0 = (hstrlog[2]).VA + 45
+local l_0_1 = (pe.mmap_va)(l_0_0, 4)
+local l_0_2 = (mp.readu_u32)(l_0_1, 1)
+local l_0_3 = (pe.mmap_va)(l_0_2, 16)
+if (string.sub)(l_0_3, 1, 8) == "IExplore" then
+  return mp.INFECTED
 end
-if not peattributes.hasexports then
-  return mp.CLEAN
-end
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1000000 or l_0_0 < 4000 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

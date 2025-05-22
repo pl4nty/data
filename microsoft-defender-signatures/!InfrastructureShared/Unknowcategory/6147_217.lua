@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 3 then
-  (mp.set_mpattribute)("PUA:Block:LogKext.C")
+if (mp.getfilesize)() <= 256 and (mp.get_mpattribute)("InEmail") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

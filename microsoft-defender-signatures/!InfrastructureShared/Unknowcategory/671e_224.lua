@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 6 and peattributes.no_security == true then
+if mp.HSTR_WEIGHT >= 2 then
+  (mp.set_mpattribute)("PUA:Block:EliteKeylogger.C")
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

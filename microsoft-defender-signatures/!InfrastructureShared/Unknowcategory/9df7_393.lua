@@ -3,16 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.getfilesize)() < 390000 then
-  if mp.HSTR_WEIGHT >= 11 then
-    return mp.SUSPICIOUS
+if peattributes.isvbnative == true then
+  local l_0_0 = (hstrlog[2]).VA
+  local l_0_1 = (pe.mmap_va)(l_0_0 + 7, 4)
+  local l_0_2 = 0
+  for l_0_6 = 4, 1, -1 do
+    l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
   end
-  if mp.HSTR_WEIGHT >= 10 then
-    (pe.set_peattribute)("hstr_exhaustive", true)
-    ;
-    (pe.reemulate)()
+  if l_0_2 > 8192 then
+    return mp.INFECTED
   end
+end
+do
   return mp.LOWFI
 end
-return mp.CLEAN
 

@@ -3,7 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[14]).hitcount >= 5 and pehdr.NumberOfSections == 3 and (mp.getfilesize)() < 1048000 then
+if mp.HSTR_WEIGHT == 13 then
+  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+  ;
+  (pe.reemulate)()
+end
+if mp.HSTR_WEIGHT == 14 then
   return mp.INFECTED
 end
 return mp.CLEAN

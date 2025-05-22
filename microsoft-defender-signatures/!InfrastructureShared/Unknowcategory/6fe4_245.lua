@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.suspicious_image_version and peattributes.hasappendeddata and peattributes.x86_image then
+if peattributes.isexe == true and (mp.get_mpattribute)("NID:TrojanDropper:Win32/Jacard!MTB") then
   return mp.INFECTED
 end
 return mp.CLEAN

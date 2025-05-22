@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:MacCleaner.C")
+if peattributes.isexe == true and (pesecs[9]).Name == "m@@" then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

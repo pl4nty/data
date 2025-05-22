@@ -3,14 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = (mp.GetProcessCommandLine)(l_0_0.ppid)
-    if (string.find)(l_0_1, " --headless ", 1, true) then
-      return mp.INFECTED
-    end
-  end
-  return mp.CLEAN
+if peattributes.isexe and (mp.get_mpattribute)("HSTR:Win32/DelphiFile") and (hstrlog[2]).hitcount >= 3 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

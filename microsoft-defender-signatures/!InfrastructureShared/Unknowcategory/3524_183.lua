@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_hasappendeddata") then
+if not (mp.get_mpattribute)("SCRIPT:PythonCode.A") then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

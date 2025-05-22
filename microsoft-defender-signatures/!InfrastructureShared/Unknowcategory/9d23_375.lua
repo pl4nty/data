@@ -3,14 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[9]).matched and (this_sigattrlog[10]).matched then
-  local l_0_0 = (string.lower)((this_sigattrlog[9]).p1)
-  local l_0_1 = (string.lower)((this_sigattrlog[10]).p1)
-  if l_0_0:match("c:\\temp\\(%l+)%.zip") == l_0_1:match("c:\\temp\\%l+%.(%l+)") then
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.getfilesize)()
+if peattributes.no_security == true and l_0_0 >= 172032 and l_0_0 <= 184320 and pehdr.NumberOfSections >= 5 and pehdr.NumberOfSections <= 7 and (pesecs[3]).Name == "EJf-ov" then
+  return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
+return mp.CLEAN
 

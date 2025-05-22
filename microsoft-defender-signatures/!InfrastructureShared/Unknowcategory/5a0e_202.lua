@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("do_exhaustivehstr_rescan") then
-  (mp.set_mpattribute)("do_exhaustivehstr_rescan")
+if (pe.isdynamic_va)((hstrlog[1]).VA) then
+  return mp.SYNCLOWFI
 end
-return mp.INFECTED
+return mp.LOWFI
 

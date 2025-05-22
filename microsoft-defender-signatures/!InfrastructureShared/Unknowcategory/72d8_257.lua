@@ -3,11 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
-  (MpCommon.RequestSmsOnProcess)(l_0_0.ppid, MpCommon.SMS_SCAN_HIGH)
-  ;
-  (mp.SMSAsyncScan)(l_0_0.ppid)
+if pehdr.TimeDateStamp < 1433874509 then
+  (mp.set_mpattribute)("Lowfi:HSTR:BrowserModifier:Win32/AOLToolbarOld")
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

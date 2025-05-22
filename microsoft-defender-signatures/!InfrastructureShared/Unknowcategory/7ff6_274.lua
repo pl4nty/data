@@ -3,11 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
-  return mp.CLEAN
-end
-if (mp.GetSMSProcArchitecture)() ~= mp.SMS_PROC_ARCH_X64 then
-  return mp.CLEAN
+if (mp.shr32)(pehdr.TimeDateStamp, 22) and (mp.shl32)(pehdr.TimeDateStamp, 22) == 0 then
+  (mp.changedetectionname)(805306369)
 end
 return mp.INFECTED
 

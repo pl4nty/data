@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("MACRO_HSTR:OfficeAutoOpen") and (mp.get_mpattribute)("MACRO_HSTR:PowerShell") then
+if peattributes.no_security == true and peattributes.ismsil == true and (mp.getfilesize)() < 1024000 then
   return mp.INFECTED
 end
 return mp.CLEAN

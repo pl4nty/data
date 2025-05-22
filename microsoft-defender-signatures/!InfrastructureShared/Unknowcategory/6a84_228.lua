@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.has_msilresources then
+local l_0_0 = (mp.getfilename)()
+if (string.find)((string.lower)(l_0_0), ".asar$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

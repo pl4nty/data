@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount > 2 then
+if (pesecs[6]).Name == ".artm723" then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and peattributes.x86_image and peattributes.has_msilresources then
+if peattributes.hasexports == true and peattributes.no_security == true and peattributes.no_relocs == true then
   return mp.INFECTED
 end
 return mp.CLEAN

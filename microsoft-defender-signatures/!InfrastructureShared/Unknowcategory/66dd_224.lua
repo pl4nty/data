@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.lower)((mp.getfilename)()), "%.xz$") ~= nil then
+local l_0_0 = (mp.getfilesize)()
+if peattributes.ismsil == true and l_0_0 > 458752 and l_0_0 < 589824 then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

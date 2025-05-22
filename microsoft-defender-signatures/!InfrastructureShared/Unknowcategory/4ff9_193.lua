@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and peattributes.isdll == true then
-  return mp.INFECTED
-end
+(pe.set_regval)(pe.REG_EIP, (pe.get_regval)(pe.REG_EIP) + 31)
 return mp.CLEAN
 

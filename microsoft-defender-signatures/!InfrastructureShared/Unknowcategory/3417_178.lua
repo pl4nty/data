@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[4]).hitcount >= 7 then
+if (hstrlog[3]).hitcount >= 2 then
   return mp.INFECTED
 end
 return mp.CLEAN

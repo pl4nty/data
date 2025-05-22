@@ -3,10 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
-;
-(table.insert)(l_0_0, (bm.get_imagepath)())
-;
-(MpCommon.SetPersistContextNoPath)("UACBypassExp.ZK!dllhost", l_0_0, 3)
+if (epcode[1] == 184 and epcode[6] == 255 and epcode[7] == 224) or epcode[1] == 104 and epcode[6] == 232 then
+  return mp.LOWFI
+end
 return mp.CLEAN
 

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.is_delphi then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(mp.set_mpattribute)("Company:IntelliBreezeSoftware")
+return mp.INFECTED
 

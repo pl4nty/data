@@ -1057,7 +1057,7 @@ GetPathExclusions = function()
     l_3_1 = (string.lower)(l_3_1)
   end
   do
-    if l_3_1 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" and (versioning.IsSampled)(25000, false, true, true) == true then
+    if l_3_1 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" and (versioning.IsSampled)(15000, false, true, true) == true then
       local l_3_2 = "%windir%\\explorer.exe"
       l_3_0[l_3_2] = 2
       l_3_2 = "%windir%\\syswow64\\explorer.exe"
@@ -1100,7 +1100,7 @@ GetCommandLineExclusions = function()
   if l_4_11 == "5b6f47cc-82e3-4a14-a807-2356e5874779" then
     l_4_10["wscript(\\.exe)?\\\"?\\s+\\\"?.+?\\\\frappefwlauncher\\.vbs\\\"?\\s+\\\"?.+?\\\\appdata\\\\local\\\\temp\\\\.+?\\.tmp\\\"?"] = 0
   end
-  if l_4_11 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or (versioning.IsSampled)(25000, false, true, true) == false then
+  if l_4_11 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or (versioning.IsSampled)(15000, false, true, true) == false then
     l_4_10["explorer\\.exe\\\"?\\s+(?!.+\\.exe(\\s|$)).*"] = 0
   end
   return l_4_10

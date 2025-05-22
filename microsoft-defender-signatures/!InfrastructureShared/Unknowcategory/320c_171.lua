@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.NumberOfSections == 3 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(mp.set_mpattribute)("PEBMPAT:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED
 

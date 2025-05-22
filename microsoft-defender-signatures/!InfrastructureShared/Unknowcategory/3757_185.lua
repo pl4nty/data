@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe or peattributes.isdll then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_image_filename)("c:\\syshost.exe")
+;
+(pe.reemulate)()
+return mp.INFECTED
 

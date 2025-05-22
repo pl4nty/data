@@ -3,18 +3,14 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount >= 3 then
-  return mp.LOWFI
-else
-  if (hstrlog[2]).hitcount >= 3 then
-    return mp.LOWFI
-  else
-    if (hstrlog[3]).hitcount >= 3 then
-      return mp.LOWFI
-    else
-      return mp.CLEAN
-    end
+if peattributes.is_process then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetCertificateInfo)()
+for l_0_4,l_0_5 in pairs(l_0_0) do
+  if l_0_5.Signers ~= nil then
+    return mp.CLEAN
   end
 end
-return mp.CLEAN
+return mp.INFECTED
 

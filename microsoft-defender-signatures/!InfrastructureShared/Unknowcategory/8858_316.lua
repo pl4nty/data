@@ -3,12 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
+(pe.set_peattribute)("enable_vmm_grow", true)
 ;
-(mp.readprotection)(false)
-local l_0_1 = tostring((mp.readfile)(0, l_0_0))
-if (string.find)(l_0_1, "http://www.j.mp/") ~= nil then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.set_peattribute)("deep_analysis", true)
+;
+(pe.set_peattribute)("disable_seh_limit", true)
+;
+(pe.set_peattribute)("disable_apicall_limit", true)
+;
+(pe.reemulate)()
+return mp.INFECTED
 

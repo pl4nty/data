@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[5]).matched then
-  (mp.set_mpattribute)("Lowfi:Komodia:LSP:NoVuln")
-  return mp.CLEAN
+if peattributes.isexe == true and (mp.getfilesize)() <= 714320 and (mp.getfilesize)() >= 645960 then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

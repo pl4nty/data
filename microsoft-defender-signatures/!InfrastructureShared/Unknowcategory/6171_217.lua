@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[5]).Name == ".rrdata" and (pesecs[6]).Name == ".lif\a" then
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "%-%>%(RarSfx%)%-%>CMT$") == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

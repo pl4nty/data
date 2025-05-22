@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and peattributes.hasappendeddata then
+if (mp.getfilesize)() < 450000 and (pesecs[3]).VirtualSize > 524288 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil then
-  return mp.INFECTED
-end
-return mp.LOWFI
+(mp.set_mpattribute)("PUA:Block:ClickRunSoftware")
+return mp.INFECTED
 

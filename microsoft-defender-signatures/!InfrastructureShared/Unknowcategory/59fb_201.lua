@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.Machine == 34404 then
-  (mp.changedetectionname)(805306455)
+if peattributes.hasappendeddata and peattributes.amd64_image then
   return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

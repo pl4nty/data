@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT > 3 and peattributes.ismsil then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT < 42 and (mp.getfilesize)() > 4194304 then
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

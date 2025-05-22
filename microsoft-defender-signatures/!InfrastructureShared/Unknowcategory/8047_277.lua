@@ -6,10 +6,10 @@
 if not peattributes.isexe then
   return mp.CLEAN
 end
-if not peattributes.suspicious_section_name then
+if (mp.getfilesize)() > 196418 then
   return mp.CLEAN
 end
-if not peattributes.executes_from_dynamic_memory then
+if not peattributes.dt_error_heur_exit_criteria then
   return mp.CLEAN
 end
 return mp.INFECTED

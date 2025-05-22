@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isdll and (mp.get_mpattribute)("SIGATTR:DelphiFile") then
+if (mp.get_mpattribute)("HSTR:GolangBinary") and (mp.getfilesize)() < 10485760 then
   return mp.INFECTED
 end
 return mp.CLEAN

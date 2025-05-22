@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("SCRIPT:PythonCode.A") then
+if (mp.get_mpattribute)("SIGATTR:MadCodeHook") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

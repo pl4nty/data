@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if peattributes.no_security and (l_0_0 == 151552 or l_0_0 == 147456) then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT < 6 and mp.HSTR_WEIGHT > 2 then
+  (mp.set_mpattribute)("HSTR:Trojan:Win32/Emotet.K1")
 end
-return mp.CLEAN
+return mp.INFECTED
 

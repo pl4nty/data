@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 2048000 and pehdr.NumberOfSections == 3 then
+if (pesecs[5]).Name == ".rrdata" and (pesecs[6]).Name == ".lif\a" then
   return mp.INFECTED
 end
 return mp.CLEAN

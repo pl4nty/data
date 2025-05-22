@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:PerfectKeyLogger.D")
+if peattributes.isexe == true and (mp.get_mpattribute)("pea_no_security") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

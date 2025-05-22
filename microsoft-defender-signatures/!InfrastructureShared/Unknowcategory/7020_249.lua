@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and peattributes.x86_image and (pesecs[1]).Name == "   " then
+if peattributes.ismsil == true and peattributes.isexe == true and pehdr.AddressOfEntryPoint ~= 36446 then
   return mp.INFECTED
 end
 return mp.CLEAN

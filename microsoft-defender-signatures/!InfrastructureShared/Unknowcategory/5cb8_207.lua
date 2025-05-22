@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and (mp.getfilesize)() < 100000 then
-  return mp.INFECTED
+if peattributes.ismsil ~= true or (mp.getfilesize)() > 102400 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

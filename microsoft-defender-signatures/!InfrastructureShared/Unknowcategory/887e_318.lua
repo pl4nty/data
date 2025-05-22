@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() < 200000 and pehdr.NumberOfSections >= 7 and (pesecs[5]).Name == ".code" and (pesecs[6]).Name == ".crt" then
-  return mp.INFECTED
+if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_0 = (this_sigattrlog[2]).utf8p1
+if (string.find)(l_0_0, "\\conhost.exe", 1, true) then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

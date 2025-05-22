@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[2]).Name == "UPX1" then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)(pevars.sigaddr, "\235\003")
+return mp.INFECTED
 

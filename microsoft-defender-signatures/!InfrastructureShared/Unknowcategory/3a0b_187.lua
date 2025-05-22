@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("BM_HAS_DIGITALSIGNATURE") then
+if (mp.get_mpattribute)("HSTR:Win32/DelphiFile") == true then
   return mp.INFECTED
 end
 return mp.CLEAN

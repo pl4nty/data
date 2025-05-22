@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == true and peattributes.hasexports == false and (mp.getfilesize)() < 1048576 then
+if (hstrlog[1]).matched and ((hstrlog[2]).matched or (hstrlog[3]).matched) and mp.HSTR_WEIGHT >= 8 then
   return mp.INFECTED
 end
 return mp.CLEAN

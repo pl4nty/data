@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if pehdr.SizeOfImage > 56320 and pehdr.SizeOfImage < 57856 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT > 2 then
+  (mp.set_mpattribute)("HSTR:Nivdort.AE1")
 end
-return mp.CLEAN
+return mp.INFECTED
 

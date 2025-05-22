@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 4 then
-  (mp.set_mpattribute)("PUA:Block:MobiDash.H")
-  return mp.INFECTED
+if (string.find)((mp.getfilename)(), "->(Rtf", 1, true) == nil then
+  return mp.CLEAN
 end
-return mp.LOWFI
+return mp.INFECTED
 

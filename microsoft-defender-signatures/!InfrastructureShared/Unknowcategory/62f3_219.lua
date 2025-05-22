@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (hstrlog[1]).hitcount
-local l_0_1 = (hstrlog[2]).hitcount
-if l_0_0 > 15 or l_0_1 > 15 or l_0_0 + l_0_1 > 15 then
-  return mp.INFECTED
+if mp.HSTR_WEIGHT >= 3 then
+  return mp.LOWFI
 end
+;
+(mp.set_mpattribute)("do_exhaustivehstr_rescan")
 return mp.CLEAN
 

@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (pesecs[6]).Name == "qres918" then
-  return mp.INFECTED
-end
+(mp.set_mpattributeex)("FOP:GoLang32", pevars.sigaddr)
 return mp.CLEAN
 

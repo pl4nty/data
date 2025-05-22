@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and pehdr.SizeOfImage >= 65536 and pehdr.SizeOfImage <= 98304 then
+if peattributes.isdll and peattributes.hasexports and (mp.getfilesize)() < 142000 then
   return mp.INFECTED
 end
 return mp.CLEAN

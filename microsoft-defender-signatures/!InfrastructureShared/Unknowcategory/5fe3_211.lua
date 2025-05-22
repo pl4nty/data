@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).matched and (hstrlog[1]).hitcount > 5 then
+if peattributes.isdll and peattributes.checks_if_debugged_undocumented then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

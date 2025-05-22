@@ -3,8 +3,15 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[1]).hitcount + (hstrlog[2]).hitcount + (hstrlog[3]).hitcount + (hstrlog[4]).hitcount >= 5 then
-  return mp.INFECTED
+local l_0_0 = (MpCommon.GetPersistContextNoPath)("BitlockerRansom")
+if l_0_0 ~= nil then
+  for l_0_4,l_0_5 in ipairs(l_0_0) do
+    if l_0_5 == "D" then
+      return mp.INFECTED
+    end
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe and (pe.query_import)(pe.IMPORT_STATIC, 2269433638) then
+local l_0_0 = (string.lower)((mp.getfilename)())
+if (string.find)(l_0_0, "kendo", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN

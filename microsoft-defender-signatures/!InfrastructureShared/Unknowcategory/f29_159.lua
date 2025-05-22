@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:Soft32Downloader")
-return mp.INFECTED
+if (mp.getfilesize)() < 2000000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

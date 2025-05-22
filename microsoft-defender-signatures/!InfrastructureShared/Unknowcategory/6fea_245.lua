@@ -3,10 +3,10 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+if (mp.get_mpattribute)("RPF:TopLevelFile") == false then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("pea_isdriver") then
+if (mp.get_mpattribute)("ValidDigitalSignature") then
   return mp.CLEAN
 end
 return mp.INFECTED

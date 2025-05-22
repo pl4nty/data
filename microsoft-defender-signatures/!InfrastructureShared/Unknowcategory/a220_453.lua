@@ -3,20 +3,19 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 ~= nil and mp.HSTR_CALLER_SMS == l_0_0 then
-  return mp.INFECTED
-end
-do
-  if peattributes.isexe == true and peattributes.ismsil == true and (mp.get_mpattribute)("pea_no_security") then
-    local l_0_1 = (mp.GetCertificateInfo)()
-    for l_0_5,l_0_6 in pairs(l_0_1) do
-      if l_0_6.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == nil then
   return mp.CLEAN
 end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if (string.sub)(l_0_1, -5, -1) == ",XS88" or (string.sub)(l_0_1, -6, -1) == ", XS88" then
+  if l_0_0 ~= nil then
+    (MpCommon.RequestSmsOnProcess)(l_0_0, MpCommon.SMS_SCAN_MED)
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN
 

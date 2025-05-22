@@ -3,11 +3,14 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.hstr_full_log)()
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  if l_0_5.matched and (string.byte)((pe.mmap_va)(l_0_5.VA - 39, 1)) == (string.byte)((pe.mmap_va)(l_0_5.VA - 25, 1)) then
-    return mp.INFECTED
-  end
+local l_0_0 = (hstrlog[1]).VA
+local l_0_1 = (pe.mmap_va)(l_0_0 + 30, 4)
+local l_0_2 = 0
+for l_0_6 = 4, 1, -1 do
+  l_0_2 = l_0_2 * 256 + (string.byte)(l_0_1, l_0_6)
+end
+if l_0_2 + 6 + 30 + l_0_0 ~= (hstrlog[2]).VA then
+  return mp.LOWFI
 end
 return mp.CLEAN
 

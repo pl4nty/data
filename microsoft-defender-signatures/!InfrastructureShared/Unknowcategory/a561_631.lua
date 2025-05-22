@@ -3,32 +3,29 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.epscn_writable ~= true then
+if ((pehdr.DataDirectory)[5]).RVA <= 0 then
   return mp.CLEAN
 end
-if peattributes.epinfirstsect ~= true then
+if ((pehdr.DataDirectory)[5]).Size <= 0 then
   return mp.CLEAN
 end
-if peattributes.lastscn_falign == false then
+if (mp.getfilesize)() <= ((pehdr.DataDirectory)[5]).RVA then
+  return mp.INFECTED
+end
+;
+(mp.readprotection)(false)
+if (mp.getfilesize)() <= ((pehdr.DataDirectory)[5]).RVA + 9 then
+  return mp.INFECTED
+end
+local l_0_0 = (mp.readfile)(((pehdr.DataDirectory)[5]).RVA, 9)
+if (mp.readu_u32)(l_0_0, 5) ~= 131584 then
   return mp.CLEAN
 end
-if (pesecs[1]).NameDW ~= 2019914798 then
+if l_0_0:byte(9) ~= 48 then
   return mp.CLEAN
 end
-if peattributes.isdll ~= true then
-  return mp.CLEAN
+if (mp.getfilesize)() < ((pehdr.DataDirectory)[5]).RVA + ((pehdr.DataDirectory)[5]).Size then
+  return mp.INFECTED
 end
-if peattributes.hasstandardentry == true then
-  return mp.CLEAN
-end
-if peattributes.headerchecksum0 ~= true then
-  return mp.CLEAN
-end
-if ((pehdr.DataDirectory)[6]).Size ~= 0 then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-return mp.INFECTED
+return mp.CLEAN
 

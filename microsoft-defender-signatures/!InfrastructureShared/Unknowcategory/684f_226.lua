@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("pea_no_security") and peattributes.isdll == true then
+if (mp.get_mpattribute)("HSTR:SkypeSneak") and (mp.get_mpattribute)("HSTR:Win32/GenSpy") then
   return mp.INFECTED
 end
 return mp.CLEAN

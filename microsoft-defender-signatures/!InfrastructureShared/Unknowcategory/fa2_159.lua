@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if not peattributes.ismsil then
-  return mp.CLEAN
+if peattributes.packed then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("NID:Golang") then
+if (mp.get_mpattribute)("HSTR:IsVB6") then
   return mp.INFECTED
 end
 return mp.CLEAN

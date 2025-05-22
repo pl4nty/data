@@ -3,16 +3,14 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (mp.get_mpattribute)("pea_ismsil") and (mp.get_mpattribute)("pea_no_exports") and (mp.get_mpattribute)("pea_no_tls") and (mp.get_mpattribute)("pea_no_tls") then
-    local l_0_0 = (mp.GetCertificateInfo)()
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      if l_0_5.Signers ~= nil then
-        return mp.CLEAN
-      end
-    end
-    return mp.INFECTED
-  end
+local l_0_0 = (string.lower)((bm.get_imagepath)())
+if l_0_0 == nil or (string.len)(l_0_0) < 1 then
   return mp.CLEAN
 end
+local l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(l_0_0))
+local l_0_2 = (sysio.GetFileSize)(l_0_1)
+if l_0_2 < 6291456 or l_0_2 > 8388608 then
+  return mp.CLEAN
+end
+return mp.INFECTED
 

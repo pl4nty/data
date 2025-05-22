@@ -3,10 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isvbnative == true then
-  (pe.set_image_filename)("C:\\temp\\myapp.exe")
-  ;
-  (pe.reemulate)()
+if peattributes.ismsil and peattributes.has_msilresources and (hstrlog[2]).hitcount > 300 then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (peattributes.isdll == true or peattributes.isexe == true) and (mp.getfilesize)() < 900000 then
+(mp.set_mpattribute)("HSTR:VirTool:MSIL/Injector.HZ")
+if peattributes.ismsil == true then
   return mp.INFECTED
 end
-return mp.CLEAN
+return mp.LOWFI
 

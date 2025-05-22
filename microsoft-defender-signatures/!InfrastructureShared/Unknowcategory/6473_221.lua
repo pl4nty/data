@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe == true and peattributes.ismsil == true and peattributes.no_security == true then
+if peattributes.isexe == true and (pesecs[5]).Name == "zaas" then
   return mp.INFECTED
 end
 return mp.CLEAN

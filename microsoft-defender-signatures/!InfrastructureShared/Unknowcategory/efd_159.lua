@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("//MpIsExhaustiveScriptScan")
-return mp.INFECTED
+if (mp.getfilesize)() < 1000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(pe.mmap_patch_va)(pevars.sigaddr + 17, "\000\000\000\000")
+if (mp.get_mpattribute)("HSTR:Exception:Mimikatz.A") then
+  return mp.CLEAN
+end
 return mp.INFECTED
 

@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isdll == false and (mp.getfilesize)() < 5048000 then
-  return mp.INFECTED
+if peattributes.dt_error_not_enough_memory then
+  (mp.set_mpattribute)("do_vmmgrow_rescan")
+  return mp.LOWFI
 end
 return mp.CLEAN
 

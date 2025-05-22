@@ -3,9 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 <= 1000000 and l_0_0 >= 500000 and peattributes.no_security == true then
-  return mp.INFECTED
-end
+(pe.mmap_patch_va)(pevars.sigaddr + 34, "ǅ")
+;
+(pe.mmap_patch_va)(pevars.sigaddr + 44, "\015\132")
 return mp.CLEAN
 

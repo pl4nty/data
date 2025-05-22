@@ -20,6 +20,7 @@ if isnull(l_0_4) or isnull(l_0_5) or isnull(l_0_6) then
   return mp.CLEAN
 end
 if found_api_tampering(l_0_4, l_0_5, l_0_6, l_0_2, nil, l_0_3, nil, nil, l_0_0, l_0_1) then
+  (bm.add_threat_process)(l_0_5)
   return mp.INFECTED
 end
 return mp.CLEAN

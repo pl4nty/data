@@ -4,11 +4,12 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (bm.get_imagepath)()
-if not l_0_0 then
+if l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
-if (string.find)((string.lower)(l_0_0), "windows\\system32\\poqexec.exe", 1, true) then
-  return mp.CLEAN
+local l_0_1 = (string.sub)(l_0_0, -10)
+if l_0_1 and (string.lower)(l_0_1) == "\\mshta.exe" then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

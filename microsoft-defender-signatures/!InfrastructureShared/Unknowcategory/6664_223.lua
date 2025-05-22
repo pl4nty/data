@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((string.lower)((mp.getfilename)()), "%.c$") ~= nil then
+if pehdr.NumberOfSections == 4 and (pesecs[4]).Name == ".mdn" then
   return mp.INFECTED
 end
 return mp.CLEAN

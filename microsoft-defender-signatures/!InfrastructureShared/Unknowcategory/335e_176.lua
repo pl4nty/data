@@ -6,5 +6,5 @@
 if (mp.get_mpattribute)("SIGATTR:ASEP") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

@@ -3,62 +3,55 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.isexe ~= true then
-  return mp.CLEAN
+-- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
+
+if (this_sigattrlog[13]).matched then
+  local l_0_0 = nil
+  if (string.match)(l_0_0, "/addfile [^ ]+ \\\\localhost\\[^ ]* [^ ]+") ~= nil then
+    return mp.INFECTED
+  else
+    if (string.match)(l_0_0, "/addfile [^ ]+ \\\\127%.0%.0%.1\\[^ ]* [^ ]+") ~= nil then
+      return mp.INFECTED
+    else
+      if (string.match)(l_0_0, "/addfile [^ ]+ .:\\[^ ]* [^ ]+") ~= nil then
+        return mp.INFECTED
+      else
+        return mp.CLEAN
+      end
+    end
+  end
+else
+  do
+    if (this_sigattrlog[14]).matched then
+      local l_0_1 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[14]).utf8p2))
+      if (string.match)(l_0_1, "/replaceremoteprefix [^ ]+ [^ ]+ \\\\localhost\\[^ ]*") ~= nil then
+        return mp.INFECTED
+      else
+        if (string.match)(l_0_1, "/replaceremoteprefix [^ ]+ [^ ]+ \\\\127%.0%.0%.1\\[^ ]*") ~= nil then
+          return mp.INFECTED
+        else
+          if (string.match)(l_0_1, "/replaceremoteprefix [^ ]+ [^ ]+ .:\\[^ ]*") ~= nil then
+            return mp.INFECTED
+          else
+            return mp.CLEAN
+          end
+        end
+      end
+    else
+      do
+        do
+          if (this_sigattrlog[15]).matched then
+            local l_0_2 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[15]).utf8p2))
+            if (string.match)(l_0_2, "http[s]?%:%/%/") ~= nil then
+              return mp.INFECTED
+            else
+              return mp.CLEAN
+            end
+          end
+          return mp.CLEAN
+        end
+      end
+    end
+  end
 end
-if peattributes.epinfirstsect ~= true then
-  return mp.CLEAN
-end
-if pehdr.NumberOfSections ~= 3 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint <= 32768 then
-  return mp.CLEAN
-end
-if pehdr.AddressOfEntryPoint >= 45056 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode < 32768 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfCode > 49152 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage < 274432 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfImage > 323584 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfInitializedData <= 225280 then
-  return mp.CLEAN
-end
-if pehdr.SizeOfInitializedData >= 278528 then
-  return mp.CLEAN
-end
-if (pesecs[1]).Characteristics ~= 1610612768 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).Characteristics ~= 1073741888 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).SizeOfRawData > 8192 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData < 32768 then
-  return mp.CLEAN
-end
-if (pesecs[1]).SizeOfRawData > 49152 then
-  return mp.CLEAN
-end
-if (pesecs[1]).NameDW ~= 2019914798 then
-  return mp.CLEAN
-end
-if (pesecs[pehdr.NumberOfSections]).NameDW ~= 1920168494 then
-  return mp.CLEAN
-end
-if (mp.readu_u16)(epcode, 1) ~= 60545 then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

@@ -3,6 +3,8 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("PUA:Block:PremiumInstaller")
-return mp.INFECTED
+if (mp.getfilesize)() <= 150000 then
+  return mp.INFECTED
+end
+return mp.CLEAN
 

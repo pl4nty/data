@@ -3,9 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if mp.HSTR_WEIGHT >= 5 then
-  (mp.set_mpattribute)("PUA:Block:EliteKeylogger.A")
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0:find("manifest.mf") then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

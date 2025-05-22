@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil == true and peattributes.isexe == true and (mp.get_mpattribute)("InEmail") then
-  return mp.INFECTED
+(mp.set_mpattribute)("PUA:Block:Bayads")
+if (mp.get_mpattribute)("//HSTR:Win32/Bayads!Exc") then
+  return mp.CLEAN
 end
-return mp.CLEAN
+return mp.INFECTED
 

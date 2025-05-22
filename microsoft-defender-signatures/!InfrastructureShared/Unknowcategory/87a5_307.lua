@@ -3,11 +3,13 @@
 
 -- params : ...
 -- function num : 0
-if (not (hstrlog[5]).matched or (hstrlog[6]).matched) and mp.HSTR_WEIGHT == 3 then
+do
+  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
+    local l_0_0 = (string.lower)((this_sigattrlog[4]).utf8p1)
+    if (string.match)(l_0_0, "%.bin$") then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if peattributes.hasstandardentry then
-  return mp.CLEAN
-end
-return mp.INFECTED
 

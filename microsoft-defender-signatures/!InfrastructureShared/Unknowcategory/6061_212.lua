@@ -3,8 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.no_security == true and (mp.getfilesize)() < 3000000 then
+if mp.HSTR_WEIGHT == 101 then
   return mp.INFECTED
+else
+  if mp.HSTR_WEIGHT > 199 then
+    return mp.SUSPICIOUS
+  end
 end
 return mp.CLEAN
 

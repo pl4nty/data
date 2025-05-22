@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (hstrlog[2]).hitcount > 6 then
+if (mp.get_mpattribute)("FOP64:GoLang64") then
   return mp.INFECTED
 end
 return mp.CLEAN

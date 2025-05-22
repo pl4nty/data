@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if peattributes.ismsil and (mp.getfilesize)() < 500000 then
-  return mp.INFECTED
-end
-return mp.CLEAN
+(pe.mmap_patch_va)((pe.get_regval)(pe.REG_EIP) + 37, "\000\016\000\000")
+return mp.INFECTED
 

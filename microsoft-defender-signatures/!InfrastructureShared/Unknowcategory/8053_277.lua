@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetHSTRCallerId)()
-if l_0_0 ~= nil and mp.HSTR_CALLER_SMS == l_0_0 then
-  return mp.INFECTED
+if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
+  return mp.CLEAN
 end
-if peattributes.isdll and peattributes.ismsil then
+if peattributes.isexe == true or peattributes.isdll == true then
   return mp.INFECTED
 end
 return mp.CLEAN
