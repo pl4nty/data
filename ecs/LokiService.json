@@ -10,7 +10,7 @@
         "enableFlightsUrlOverrides": false
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250520.6.0",
+        "CalendarCompanionDFVersion": "1.20250521.2.0",
         "CalendarCompanionMsitVersion": "1.20250514.9.0",
         "CalendarCompanionProdVersion": "1.20250514.9.0",
         "CompanionRing": "Prod",
@@ -1181,7 +1181,7 @@
         "isReportsCountEnabled": true
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250513.5.0",
+        "PeopleInTaskbarDFVersion": "1.20250516.4.0",
         "PeopleInTaskbarMsitVersion": "1.20250507.2.0",
         "PeopleInTaskbarProdVersion": "1.20250430.2.0",
         "campaignSchedules": {

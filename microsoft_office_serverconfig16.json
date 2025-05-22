@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.18913.40131-->
+    <!--Build: 16.0.18413.40127-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -2318,7 +2318,6 @@
     <o:token o:name="PinRedemptionAADClientSecret">ia6LkjM5TSWFnL8isioR4iw0ld9h2jP6eNOfM8W1ruI=</o:token>
     <o:token o:name="PinRedemptionAADHost">login.microsoftonline.com</o:token>
     <o:token o:name="PopHostnames">https://outlook.office365.com|https://outlook.office.com</o:token>
-    <o:token o:name="PrivacyOptionalConnectedExperiencesDefaultEnabled">true</o:token>
     <o:token o:name="SharepointFilesHostFormat">{tenant}-files{host}</o:token>
     <o:token o:name="SharepointMyFilesHostFormat">{tenant}files{host}</o:token>
     <o:token o:name="SafelinksHostnames">safelinks.protection.com;safelinks.protection.office365.us;safelinks.protection.outlook.com;safelinks.protection.outlook.cn;safelinks.protection.outlook.de;safelinks.o365filtering-int.com</o:token>

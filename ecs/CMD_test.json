@@ -447,6 +447,7 @@
         "EnableFidalgoHandleFPAPermissionError": true,
         "EnableFidalgoToGetRestrictionStatus": false,
         "EnableFilterANCRegion": true,
+        "EnableFinalRecommendationByTrendAndUsage": true,
         "EnableFirstPartyPartnerOffboard": true,
         "EnableFirstPartyPartnerTenantOffboardInImage": true,
         "EnableFirstPartyPartnerTenantOffboardInPolicy": true,
