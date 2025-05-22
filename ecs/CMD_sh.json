@@ -255,6 +255,7 @@
         "EnableCloudPCBulkResizeAction": true,
         "EnableCloudPCBulkResizeActionUX": true,
         "EnableCloudPCDeviceFrontlineReporting": true,
+        "EnableCloudPCNugetClient": true,
         "EnableCloudPCPowerStateChangeAction": true,
         "EnableCloudPCReactViewMigration": "true",
         "EnableCloudPcBulkActionExecutionV2": true,

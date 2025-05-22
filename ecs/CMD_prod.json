@@ -858,7 +858,6 @@
         "ReportingRbacAuth": true,
         "ShowAutopatchAlertRemediations": true,
         "ShowClientBrokerOnAdminActions": true,
-        "SkipOnboardSTP": true,
         "SkipSqlUpdateForAP": true,
         "SplitConfig": true,
         "TenantValidationDecorator": true,
