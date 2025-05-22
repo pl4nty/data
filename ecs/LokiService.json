@@ -301,6 +301,7 @@
         "enterpriseOwaUrl": "https://outlook.office.com",
         "enterpriseTeamsUrl": "https://teams.microsoft.com",
         "extendeduserinfo": false,
+        "hideeditprofilebutton": false,
         "isAIx100": false,
         "isAddSmartNotesEnabled": true,
         "isDeclineGroupPendingMemberEnabled": true,
