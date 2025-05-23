@@ -4,7 +4,9 @@ import io
 import os
 import subprocess
 import csv
-
+# tried this but it performs worse than luadec https://github.com/CPunch/LuaDecompy
+# import lparser
+# import lundump
 
 class LuaConst(object):
     "Stand for Lua constants"

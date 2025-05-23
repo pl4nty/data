@@ -11,11 +11,12 @@ Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extrac
 & "$env:ProgramFiles\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\Launch-VsDevShell.ps1" -Arch amd64
 cl /std:c++17 /EHsc ..\extract_sig.cpp
 .\extract_sig.exe . mpasbase.vdm.extracted mpasdlta.vdm.extracted
-Write-Host "\nExit code: $LASTEXITCODE"
+.\extract_sig.exe . mpavbase.vdm.extracted mpavdlta.vdm.extracted
 
 Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/luadec.exe" -OutFile "luadec.exe"
-Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/lua_sig_parser_decompile.py" -OutFile "..\lua_sig_parser_decompile.py"
-python ..\data\microsoft_defender_lua_sig_parser_decompile.py lua_standalone_sig_mpasbase.vdm.extracted.csv
-# Get-ChildItem .\lua -Recurse -Filter *_luac | Remove-Item
-Remove-Item ..\data\microsoft-defender-signatures -Recurse -ErrorAction Ignore
-Move-Item .\lua ..\data\microsoft-defender-signatures
+'as', 'av' | ForEach-Object {
+  python ..\data\microsoft_defender_lua_sig_parser_decompile.py "lua_standalone_sig_mp$($_)base.vdm.extracted.csv"
+  # Get-ChildItem .\lua -Recurse -Filter *_luac | Remove-Item
+  Remove-Item ..\data\microsoft-defender-signatures\$_ -Recurse -ErrorAction Ignore
+  Move-Item .\lua ..\data\microsoft-defender-signatures\$_
+}
