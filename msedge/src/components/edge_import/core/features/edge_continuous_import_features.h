@@ -193,6 +193,25 @@ BASE_DECLARE_FEATURE(kContinuousMigrationGenerateTopMediaListWithGlobalList);
 // Triggers on profile load if chrome is installed
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kChromeInstalled);
+
+// Triggers on profile load if user is signed in (sync enabled)
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kSyncEnabledOnMultipleDevices);
+
+// Triggers on profile load if chrome is signed in and CI is active
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kSyncEnabledOnMultipleDevicesAndCIActive);
+
+// Triggers on profile load if chrome is installed and CI is active
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCIActiveAndChromeInstalled);
+
+// Triggers on profile load if chrome is installed, sync is enabled
+// and CI is active
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(
+    kSyncEnabledOnMultipleDevicesCIActiveAndChromeInstalled);
+
 // Triggers on profile load if chrome is installed and Edge is primary browser
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kChromeInstalledandEdgePB);
@@ -296,6 +315,16 @@ BASE_DECLARE_FEATURE(kPersonalizedLaunch);
 // specific profile.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kDisableAutolaunchDueToUserRejection);
+
+// Trigger corresponding to basic autolaunch conditions for  activating
+// Autolaunch.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(
+    kAutolaunchNeverActivatedAndBasicTargetingConditionsMet);
+
+// Trigger when Autolaunch is active to measure the impact of deactivation.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kAutolaunchActive);
 
 // Personalized launch genric triggers
 // Trigger when the ML-Suggested Sites setting is turned ON

@@ -249,6 +249,12 @@ namespace gfx {
     constexpr SkColor kWalletSeparatorDark = SkColorSetRGB(0x52, 0x52, 0x52);
     constexpr SkColor kWalletSeparatorLight = SkColorSetRGB(0xEF, 0xEF, 0xEF);
 
+    // Edge copilot mode
+    constexpr SkColor kEdgeCopilotModeDescDark =
+        SkColorSetRGB(0xFF, 0xFF, 0xFF);
+    constexpr SkColor kEdgeCopilotModeDescLight =
+        SkColorSetRGB(0x71, 0x71, 0x71);
+
     // Account Transfer
     constexpr SkColor kEdgeAccountTransferIcon =
         SkColorSetRGB(0x23, 0x5C, 0xCF);

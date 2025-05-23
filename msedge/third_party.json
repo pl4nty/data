@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10763726,
+    "size": 10763718,
     "file_count": 177
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32084230,
-    "file_count": 3943
+    "size": 32107495,
+    "file_count": 3944
   },
   {
     "name": "boringssl",
@@ -181,7 +181,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16999399,
+    "size": 17000704,
     "file_count": 2021
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3586155,
+    "size": 3586830,
     "file_count": 560
   },
   {
@@ -676,8 +676,8 @@
   },
   {
     "name": "tflite",
-    "size": 1747044,
-    "file_count": 489
+    "size": 1673005,
+    "file_count": 478
   },
   {
     "name": "tflite_support",
