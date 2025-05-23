@@ -413,6 +413,7 @@
         "EnableDismissProvisionWarnings": true,
         "EnableDisplayCpcPerfInReport": true,
         "EnableDownloadRdAgentByBroker": true,
+        "EnableDppProvisionForEnterprise": true,
         "EnableEditFLSForUX": true,
         "EnableEditFLSPolicy": true,
         "EnableElevateToUserAccessAdminIncludeOnlyGlobalAdminRole": true,

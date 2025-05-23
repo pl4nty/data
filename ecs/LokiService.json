@@ -1393,6 +1393,7 @@
             "b3d1ef68-c503-4286-a115-7463b8766952"
         ],
         "EnableIpv6Binding": true,
+        "EnableMeTAOutboundPftPop": true,
         "EnableOCPSConfig": false,
         "ExampleFlight": true,
         "ExampleSetting": "IamRunningProd",
