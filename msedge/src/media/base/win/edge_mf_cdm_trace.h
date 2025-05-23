@@ -203,6 +203,13 @@
   {MFCDM_TRACE4(arg5, arg6, arg7, arg8)};                                  \
   { MFCDM_TRACE1_INTERNAL(arg9); }
 
+#define MFCDM_TRACE_EVENT(name, ...) \
+  TRACE_EVENT("MFCdmTrace", name, ##__VA_ARGS__)
+
+#define MFCDM_TRACE_EVENT_THIS(name, ...)                           \
+  TRACE_EVENT("MFCdmTrace", name, "this", static_cast<void*>(this), \
+              ##__VA_ARGS__)
+
 // __func__ is not traced by the MACROs.
 #define MFCDM_TRACE_MESSAGE_EVENT0(message) \
   {TRACE_EVENT0("MFCdmTrace", message);}
