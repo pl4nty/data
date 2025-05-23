@@ -948,7 +948,8 @@
         ],
         "WorkingHoursPredictionLoggingEnabled": true,
         "WriteSelfAssociationToPapi": true,
-        "isActivityBEEnabled": false
+        "isActivityBEEnabled": false,
+        "isProfanityCensorNotificationPanelEnabled": true
     },
     "Lps": {
         "AllowLinkedInCallsWithJustDisplayName": false,
