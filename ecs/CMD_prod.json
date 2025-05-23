@@ -367,6 +367,8 @@
         "EnablePolicyAllotment": true,
         "EnablePolicyAllotmentUX": true,
         "EnablePolicyAssignmentRecalculationForResize": true,
+        "EnablePolicyCrossPoolMove": true,
+        "EnablePolicyCrossPoolMove-PolicyService": true,
         "EnablePolicyHostPoolMappingForEnterprise": true,
         "EnablePolicyUXFetchFLsRegionFromGraph": true,
         "EnablePostProvisioningFallbackForBusiness": true,

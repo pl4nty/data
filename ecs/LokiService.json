@@ -475,7 +475,7 @@
         "EnableTeamsLicenseCheck": true,
         "EnableVNextQuery": false,
         "EnableVivaTopicsUserResolution": true,
-        "EnabledAnnotations": "Birthday,PositionChange,WorkAnniversary,PendingRSVPToMeeting,PostedAnnouncement,EmailWithLotsOfReactions,CollabNetDocumentComment,CollabNetDocumentMentionedMe,CollabNetDocumentModify,CollabNetDocumentMultipleModify,CollabNetDocumentReply,CollabNetDocumentSharing,UpcomingMeeting",
+        "EnabledAnnotations": "Birthday,PositionChange,WorkAnniversary,PendingRSVPToMeeting,PostedAnnouncement,EmailWithLotsOfReactions,CollabNetDocumentComment,CollabNetDocumentMentionedMe,CollabNetDocumentModify,CollabNetDocumentMultipleModify,CollabNetDocumentReply,CollabNetDocumentSharing,UpcomingMeeting,MissedMeeting",
         "ExcludedPropertyBagKeys": [],
         "ExperimentalFieldsForSetOfUsersInMsitEnabled": false,
         "ExtendedUserInfoCacheTtl": "1d",
