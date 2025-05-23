@@ -46,48 +46,17 @@ end
 if l_0_4 < l_0_5 - l_0_7 / 10000000 - 11644473600 then
   return mp.CLEAN
 end
-local l_0_8 = (sysio.GetPEVersionInfo)(l_0_0)
-;
-(bm.add_related_string)("TEST", "called version info", bm.RelatedStringBMReport)
-if not isnull(l_0_8) then
-  for l_0_12,l_0_13 in pairs(l_0_8) do
-    (bm.add_related_string)("TEST", (string.format)("k: %s v: %s", tostring(l_0_12), tostring(l_0_13)), bm.RelatedStringBMReport)
-  end
-  ;
-  (bm.add_related_string)("TEST", "done loop version info", bm.RelatedStringBMReport)
-end
-;
-(bm.add_related_string)("TEST", "done version null check ", bm.RelatedStringBMReport)
-local l_0_14 = (sysio.GetPEFixedVersionInfo)(l_0_0)
-;
-(bm.add_related_string)("TEST", "called fixed version info", bm.RelatedStringBMReport)
-if not isnull(l_0_14) then
-  for l_0_18,l_0_19 in pairs(l_0_14) do
-    (bm.add_related_string)("TEST", (string.format)("k: %s v: %s", tostring(l_0_18), tostring(l_0_19)), bm.RelatedStringBMReport)
-  end
-  ;
-  (bm.add_related_string)("TEST", "done loop fixed version info", bm.RelatedStringBMReport)
-  if isnull(l_0_14.FileDate) then
-    return mp.CLEAN
-  end
-  ;
-  (bm.add_related_string)("TEST", "not null fixed version date", bm.RelatedStringBMReport)
-  ;
-  (bm.add_related_string)("TEST", (string.format)("Version date %s", tostring(l_0_14.FileDate)), bm.RelatedStringBMReport)
-end
-;
-(bm.add_related_string)("TEST", "done fixed version null check ", bm.RelatedStringBMReport)
-local l_0_20 = (sysio.GetFileAttributes)(l_0_0)
-local l_0_23 = l_0_20 ~= 4294967295 and (mp.bitand)(l_0_20, 2) == 2
+local l_0_8 = (sysio.GetFileAttributes)(l_0_0)
+local l_0_11 = l_0_8 ~= 4294967295 and (mp.bitand)(l_0_8, 2) == 2
 do
-  local l_0_24 = safeJsonSerialize
-  l_0_24 = l_0_24({Process = l_0_1, DLL = l_0_0, DLLHidden = l_0_23, ProcessCreateTime = l_0_6, DLLCreateTime = l_0_7})
+  local l_0_12 = safeJsonSerialize
+  l_0_12 = l_0_12({Process = l_0_1, DLL = l_0_0, DLLHidden = l_0_11, ProcessCreateTime = l_0_6, DLLCreateTime = l_0_7, CurrentTime = l_0_5})
   ;
   (bm.add_related_file)(l_0_0)
   ;
-  (bm.add_related_string)("PotentialSideload_Metadata", l_0_24, bm.RelatedStringBMReport)
+  (bm.add_related_string)("PotentialSideload_Metadata", l_0_12, bm.RelatedStringBMReport)
   ;
-  (bm.set_detection_string)(l_0_24)
+  (bm.set_detection_string)(l_0_12)
   do return mp.INFECTED end
   -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
