@@ -97,6 +97,11 @@ define([
 
             // UI element initialization
             this.resourceStrings = resourceStrings;
+            
+            // Cache resource strings for reuse
+            this.deviceLinkExportSuccessMessage = this.resourceStrings["DeviceLinkExportSuccessText"];
+            this.deviceLinkExportErrorMessage = this.resourceStrings["DeviceLinkExportErrorText"];
+            this.deviceLinkExportTimeoutMessage = this.resourceStrings["DeviceLinkExportTimeoutText"];
 
             this.sessionUtilities = new bootstrapSessionGeneralUtilities(true);
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities(this.sessionUtilities);
@@ -243,6 +248,12 @@ define([
 
             this.exportDeviceLinkInfoEnabled = ko.observable(true);
             this.exportDeviceLinkInfoText = ko.observable(this.resourceStrings["DeviceLinkExportLinkText"]);
+
+            this.showExportLinkSuccess = ko.observable(false);
+            this.exportLinkSuccessResult = ko.observable(this.deviceLinkExportSuccessMessage);
+            
+            this.showExportLinkError = ko.observable(false);
+            this.exportLinkErrorResult = ko.observable(this.deviceLinkExportErrorMessage);
 
             this.progressStatusText = ko.observable(this.resourceStrings["DeviceLinkProgressStatusText"]);
             this.successResultBody = ko.observable(this.resourceStrings["DeviceLinkSuccessResultBody"]);
@@ -548,6 +559,9 @@ define([
                 this.commercialDiagnosticsUtilities.logInfoEventName("DeviceLinkPage_ExportDeviceLinkInfo_AlreadyRunning");
                 return;
             }
+        
+            this.showExportLinkSuccess(false);
+            this.showExportLinkError(false);
 
             await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_EXPORT_DEVICE_LINK_INFO);
 
@@ -556,7 +570,6 @@ define([
             // Disable the link so the user can't click this many times in parallel.
             this.exportDeviceLinkInfoEnabled(false);
 
-            // TODO: Bug 57182578: [AP-DA] Add UX message indicating no exportable drive was found when invoking getExportLogsFolderPathAsync fails
             return this.commercialDiagnosticsUtilities.getExportLogsFolderPathAsync().then(
                 async (folderPath) => {                   
                     this.commercialDiagnosticsUtilities.logInfoEvent(
@@ -578,6 +591,8 @@ define([
 
                                 // Success
                                 this.exportDeviceLinkInfoEnabled(true);
+                                this.exportLinkSuccessResult(this.deviceLinkExportSuccessMessage);
+                                this.showExportLinkSuccess(true);
 
                                 await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_EXPORT_DEVICE_LINK_INFO, null);
                             },
@@ -586,6 +601,8 @@ define([
                             async (e) => {
                                 hasTimedOut = true;
                                 this.exportDeviceLinkInfoEnabled(true);
+                                this.exportLinkErrorResult(this.deviceLinkExportTimeoutMessage);
+                                this.showExportLinkError(true);
 
                                 await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                                     this.TSM_PROCESS_NAME, 
@@ -604,6 +621,8 @@ define([
                         e);
 
                     this.exportDeviceLinkInfoEnabled(true);
+                    this.exportLinkErrorResult(this.deviceLinkExportErrorMessage);
+                    this.showExportLinkError(true);
                 });
         }
 
@@ -626,6 +645,9 @@ define([
 
         async onOptionsVirtualPageVisible() {
             await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE_OPTIONS);
+
+            this.showExportLinkSuccess(false);
+            this.showExportLinkError(false);
 
             if (this.deviceLinkManager.getConfigureDeviceLinkResult() === ModernDeployment.Autopilot.Core.ConfigureDeviceLinkResult.successfullyAppliedLink) {
                 // Device link already applied.

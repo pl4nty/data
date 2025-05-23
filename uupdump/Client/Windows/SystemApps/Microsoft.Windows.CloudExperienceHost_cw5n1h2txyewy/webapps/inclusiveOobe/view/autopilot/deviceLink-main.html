@@ -56,6 +56,12 @@
                     <div>
                         <!-- Show the link as gray as long as it's still processing.  As long as it's processing, also disable click action. -->
                         <a href="#" class="link" style="padding-left:10px" data-bind="css: { 'link' : $root.exportDeviceLinkInfoEnabled(), 'disabledText' : !$root.exportDeviceLinkInfoEnabled() }, text: $root.exportDeviceLinkInfoText, click: $root.exportDeviceLinkInfoEnabled() ? $root.onExportDeviceLinkInfoClickAsync.bind($root) : null"></a>
+                        <div id="exportLinkSuccessResultSection" data-bind="if: $root.showExportLinkSuccess">
+                            <p id="exportLinkSuccessResult" style="padding-left:10px; font-weight: bold;" data-bind="html: $root.exportLinkSuccessResult"></p>
+                        </div>
+                        <div id="exportLinkErrorResultSection" data-bind="if: $root.showExportLinkError">
+                            <p id="exportLinkErrorResult" style="padding-left:10px; font-weight: bold;" class="error" data-bind="html: $root.exportLinkErrorResult"></p>
+                        </div>
                     </div>
                     <p id="option2Body2" data-bind="html: $root.option2Body2"></p>
                 </div>

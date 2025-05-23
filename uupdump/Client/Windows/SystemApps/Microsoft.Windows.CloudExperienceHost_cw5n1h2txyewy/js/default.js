@@ -19,9 +19,7 @@
 
         if (args.detail.kind === activation.ActivationKind.webAccountProvider ||
             args.detail.kind === activation.ActivationKind.componentUI) {
-            if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("Feature_ClearMsaWamCookies")) {
-                clearTempWebDataOp = MSApp.clearTemporaryWebDataAsync();
-            }
+            clearTempWebDataOp = MSApp.clearTemporaryWebDataAsync();
             appManager = new CloudExperienceHost.MSATokenProviderManager();
         } else {
             // AppManager scenario (Navigation json) execution can accrue cookies in the UWP/WWAHost inproc web layer; clear them to start new scenarios from a clean slate.
