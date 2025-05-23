@@ -15,16 +15,36 @@ local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QU
 if l_0_2 == nil or #l_0_2 < 4 then
   return mp.CLEAN
 end
+local l_0_3 = {}
+-- DECOMPILER ERROR at PC68: No list found for R3 , SetList fails
+
+-- DECOMPILER ERROR at PC69: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC70: Overwrote pending register: R5 in 'AssignReg'
+
+for l_0_7,l_0_8 in ("/var/tmp/mkinitramfs")("/ansible") do
+  -- DECOMPILER ERROR at PC73: Overwrote pending register: R9 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC75: Overwrote pending register: R10 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC76: Overwrote pending register: R11 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC77: Overwrote pending register: R12 in 'AssignReg'
+
+  if (("-salt-").find)("/tmp/go-build", "/var/intel", "/var/cache", true) then
+    return mp.CLEAN
+  end
+end
 do
-  local l_0_3 = {}
-  -- DECOMPILER ERROR at PC45: No list found for R3 , SetList fails
+  local l_0_9 = {}
+  -- DECOMPILER ERROR at PC92: No list found for R4 , SetList fails
 
-  -- DECOMPILER ERROR at PC46: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC93: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC47: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC94: Overwrote pending register: R6 in 'AssignReg'
 
-  for l_0_7,l_0_8 in ("/var/tmp/")("/tmp/") do
-    if l_0_2:sub(1, #l_0_8) == l_0_8 then
+  for l_0_13,l_0_14 in ("/var/tmp/")("/tmp/") do
+    if l_0_2:sub(1, #l_0_14) == l_0_14 then
       return mp.INFECTED
     end
   end

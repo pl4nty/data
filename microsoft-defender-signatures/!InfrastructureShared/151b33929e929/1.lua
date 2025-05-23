@@ -80,56 +80,86 @@ else
         l_0_22 = ""
       end
       l_0_22 = NormalizeDirectory(l_0_22)
-      local l_0_23 = "ShellCodeFileName"
-      local l_0_24 = (MpCommon.AnomalyEventLookup)(l_0_23, "MarkerRecord_table_creationtime", 1)
-      local l_0_25 = 0
-      local l_0_26 = (MpCommon.GetCurrentTimeT)()
-      local l_0_27 = l_0_26
-      if l_0_24 then
-        if l_0_24.Count then
-          l_0_27 = l_0_24.Count
-        end
-        l_0_25 = l_0_24.LastSeen
-      else
-        l_0_27 = l_0_26
-        ;
-        (MpCommon.AnomalyEventUpdate)(l_0_23, "MarkerRecord_table_creationtime", l_0_26, 1)
-      end
-      local l_0_28 = (l_0_26 - l_0_27) / 60
-      local l_0_29 = l_0_2 .. "_" .. l_0_22 .. l_0_21
-      local l_0_30 = (MpCommon.AnomalyEventLookup)(l_0_23, l_0_29, 1)
-      if not l_0_30 then
-        if l_0_28 > 43200 then
-          local l_0_31 = {}
-          l_0_31.FileName = l_0_10
-          l_0_31.FilePath = l_0_22
-          l_0_31.ShellCodeName_Normalzied = l_0_21
-          l_0_31.WebSrv = l_0_2
-          l_0_31.TableLastSeen = l_0_25
-          l_0_31.TableUnbiasedTime = l_0_28
-          l_0_31.isTest = false
+      if (MpCommon.IsSampled)(100000, true, true, true) then
+        local l_0_23 = "ShellCodeFileName"
+        local l_0_24 = l_0_2 .. "_" .. l_0_22 .. l_0_21
+        local l_0_25, l_0_26, l_0_27 = AnomalyTableCheck(l_0_23, l_0_24, 30)
+        if l_0_25 and not l_0_26 then
+          local l_0_28 = {}
+          l_0_28.FileName = l_0_10
+          l_0_28.FilePath = l_0_22
+          l_0_28.ShellCodeName_Normalzied = l_0_21
+          l_0_28.WebSrv = l_0_2
+          l_0_28.AnomalyTableInfo = l_0_27
           ;
-          (bm.add_related_string)("AnomalyData", safeJsonSerialize(l_0_31), bm.RelatedStringBMReport)
+          (bm.add_related_string)("AnomalyData", safeJsonSerialize(l_0_28), bm.RelatedStringBMReport)
           reportSessionInformation()
           add_parents()
-          local l_0_32 = (bm.get_current_process_startup_info)()
-          if l_0_32 then
-            local l_0_33 = "AnomalousFileNameDrop[" .. (l_0_32.ppid):match("pid:(%d+)") .. "]"
-            local l_0_34 = {}
-            l_0_34.ShellCodeName = l_0_10
-            l_0_34.Key = l_0_29
-            IncreaseProcessAnomalyScore(l_0_32.ppid, 5, l_0_33, "PFApp_Parent", l_0_34)
+          local l_0_29 = (bm.get_current_process_startup_info)()
+          if l_0_29 then
+            local l_0_30 = "AnomalousFileNameDrop[" .. (l_0_29.ppid):match("pid:(%d+)") .. "]"
+            local l_0_31 = {}
+            l_0_31.ShellCodeName = l_0_10
+            l_0_31.Key = l_0_24
+            IncreaseProcessAnomalyScore(l_0_29.ppid, 5, l_0_30, "PFApp_Parent", l_0_31)
           end
           do
             do
               do return mp.INFECTED end
-              ;
-              (MpCommon.AnomalyEventUpdate)(l_0_23, l_0_29, 1, 1)
-              do
-                local l_0_35 = l_0_30.Count + 1
+              local l_0_32 = "ShellCodeFileName"
+              local l_0_33 = (MpCommon.AnomalyEventLookup)(l_0_32, "MarkerRecord_table_creationtime", 1)
+              local l_0_34 = 0
+              local l_0_35 = (MpCommon.GetCurrentTimeT)()
+              local l_0_36 = l_0_35
+              if l_0_33 then
+                if l_0_33.Count then
+                  l_0_36 = l_0_33.Count
+                end
+                l_0_34 = l_0_33.LastSeen
+              else
+                l_0_36 = l_0_35
                 ;
-                (MpCommon.AnomalyEventUpdate)(l_0_23, l_0_29, l_0_35, 1)
-                return mp.CLEAN
+                (MpCommon.AnomalyEventUpdate)(l_0_32, "MarkerRecord_table_creationtime", l_0_35, 1)
+              end
+              local l_0_37 = (l_0_35 - l_0_36) / 60
+              local l_0_38 = l_0_2 .. "_" .. l_0_22 .. l_0_21
+              local l_0_39 = (MpCommon.AnomalyEventLookup)(l_0_32, l_0_38, 1)
+              if not l_0_39 then
+                if l_0_37 > 43200 then
+                  local l_0_40 = {}
+                  l_0_40.FileName = l_0_10
+                  l_0_40.FilePath = l_0_22
+                  l_0_40.ShellCodeName_Normalzied = l_0_21
+                  l_0_40.WebSrv = l_0_2
+                  l_0_40.TableLastSeen = l_0_34
+                  l_0_40.TableUnbiasedTime = l_0_37
+                  l_0_40.isTest = false
+                  ;
+                  (bm.add_related_string)("AnomalyData", safeJsonSerialize(l_0_40), bm.RelatedStringBMReport)
+                  reportSessionInformation()
+                  add_parents()
+                  local l_0_41 = (bm.get_current_process_startup_info)()
+                  if l_0_41 then
+                    local l_0_42 = "AnomalousFileNameDrop[" .. (l_0_41.ppid):match("pid:(%d+)") .. "]"
+                    local l_0_43 = {}
+                    l_0_43.ShellCodeName = l_0_10
+                    l_0_43.Key = l_0_38
+                    IncreaseProcessAnomalyScore(l_0_41.ppid, 5, l_0_42, "PFApp_Parent", l_0_43)
+                  end
+                  do
+                    do
+                      do return mp.INFECTED end
+                      ;
+                      (MpCommon.AnomalyEventUpdate)(l_0_32, l_0_38, 1, 1)
+                      do
+                        local l_0_44 = l_0_39.Count + 1
+                        ;
+                        (MpCommon.AnomalyEventUpdate)(l_0_32, l_0_38, l_0_44, 1)
+                        return mp.CLEAN
+                      end
+                    end
+                  end
+                end
               end
             end
           end

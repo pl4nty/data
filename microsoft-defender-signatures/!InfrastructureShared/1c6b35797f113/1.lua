@@ -68,53 +68,70 @@ do
         end
         local l_0_9, l_0_10 = (string.lower)((((bm.get_connection_string)()):match("Uri=(.-;)")):match("^%a+://([^:/]+)")), nil
         local l_0_11 = nil
-        local l_0_12 = {TrackedProcess = l_0_1, SignatureName = "PFAppAnomalousOutbound.B", AnomalyTableName = "Appomaly_Network_HOST", Key = l_0_1 .. "_" .. l_0_9}
-        local l_0_13 = nil
-        local l_0_14 = (MpCommon.AnomalyEventLookup)("Appomaly_Network_HOST", "MarkerRecord_" .. l_0_1, 1)
-        local l_0_15 = nil
-        -- DECOMPILER ERROR at PC186: Overwrote pending register: R12 in 'AssignReg'
-
-        if l_0_14 and l_0_14.Count then
-          if l_0_10 then
-            (bm.trigger_sig)("AnomalyTableMarker_Rcr", safeJsonSerialize(l_0_12))
-          else
-            ;
-            (bm.trigger_sig)("AnomalyTable_Error", safeJsonSerialize(l_0_12))
-            return mp.CLEAN
-          end
-        end
-        local l_0_16 = nil
-        local l_0_17 = (l_0_15 - (MpCommon.GetCurrentTimeT)()) / 60
-        local l_0_18 = nil
-        if not (MpCommon.AnomalyEventLookup)(l_0_13, l_0_1 .. "_" .. l_0_9, 1) then
-          if l_0_17 > 43200 then
-            l_0_12.minutes_elapsed = l_0_17
-            l_0_12.isTest = "false"
+        if (MpCommon.IsSampled)(100000, true, true, true) then
+          local l_0_12 = {TrackedProcess = l_0_1, SignatureName = "PFAppAnomalousOutbound.B", AnomalyTableName = "Appomaly_Network_HOST", Key = l_0_1 .. "_" .. l_0_9}
+          local l_0_13 = "Appomaly_Network_HOST"
+          local l_0_14, l_0_15, l_0_16 = , AnomalyTableCheck(l_0_13, l_0_1 .. "_" .. l_0_9, 30, "MarkerRecord_" .. l_0_1)
+          if l_0_15 and not l_0_16 then
             l_0_12.processAttrib = l_0_6
+            l_0_12.AnomalyTableInfo = l_0_1 .. "_" .. l_0_9
             ;
             (bm.add_related_string)("AdditionalInfo", safeJsonSerialize(l_0_12), bm.RelatedStringBMReport)
             return mp.INFECTED
-          else
-            -- DECOMPILER ERROR at PC262: Overwrote pending register: R7 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC263: Overwrote pending register: R6 in 'AssignReg'
-
           end
         else
-          local l_0_19 = nil
-          -- DECOMPILER ERROR at PC275: Overwrote pending register: R7 in 'AssignReg'
+          do
+            local l_0_17 = nil
+            local l_0_18 = nil
+            local l_0_19 = (MpCommon.AnomalyEventLookup)("Appomaly_Network_HOST", "MarkerRecord_" .. l_0_1, 1)
+            local l_0_20 = nil
+            -- DECOMPILER ERROR at PC227: Overwrote pending register: R12 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC276: Overwrote pending register: R6 in 'AssignReg'
+            if l_0_19 and l_0_19.Count then
+              if l_0_10 then
+                (bm.trigger_sig)("AnomalyTableMarker_Rcr", safeJsonSerialize(l_0_17))
+              else
+                ;
+                (bm.trigger_sig)("AnomalyTable_Error", safeJsonSerialize(l_0_17))
+                return mp.CLEAN
+              end
+            end
+            local l_0_21 = nil
+            local l_0_22 = (l_0_20 - (MpCommon.GetCurrentTimeT)()) / 60
+            local l_0_23 = nil
+            if not (MpCommon.AnomalyEventLookup)(l_0_18, l_0_1 .. "_" .. l_0_9, 1) then
+              if l_0_22 > 43200 then
+                l_0_17.minutes_elapsed = l_0_22
+                l_0_17.isTest = "false"
+                l_0_17.processAttrib = l_0_6
+                ;
+                (bm.add_related_string)("AdditionalInfo", safeJsonSerialize(l_0_17), bm.RelatedStringBMReport)
+                return mp.INFECTED
+              else
+                -- DECOMPILER ERROR at PC303: Overwrote pending register: R7 in 'AssignReg'
 
-        end
-        do
-          if not l_0_10 then
-            l_0_12.Key = l_0_18
-            l_0_12.Error = l_0_11
-            ;
-            (bm.trigger_sig)("AnomalyTable_Error", safeJsonSerialize(l_0_12))
+                -- DECOMPILER ERROR at PC304: Overwrote pending register: R6 in 'AssignReg'
+
+              end
+            else
+              local l_0_24 = nil
+              -- DECOMPILER ERROR at PC316: Overwrote pending register: R7 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC317: Overwrote pending register: R6 in 'AssignReg'
+
+            end
+            do
+              do
+                if not l_0_10 then
+                  l_0_17.Key = l_0_23
+                  l_0_17.Error = l_0_11
+                  ;
+                  (bm.trigger_sig)("AnomalyTable_Error", safeJsonSerialize(l_0_17))
+                end
+                return mp.CLEAN
+              end
+            end
           end
-          return mp.CLEAN
         end
       end
     end

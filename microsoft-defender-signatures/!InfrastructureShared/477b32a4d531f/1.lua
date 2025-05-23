@@ -10,10 +10,6 @@ end
 if isParentPackageManager(l_0_0.ppid, true) then
   return mp.CLEAN
 end
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
-for l_0_6,l_0_7 in ipairs(l_0_2) do
-  (bm.trigger_sig)("BmTraverseTreeBlock", "Detected", l_0_7.ppid)
-end
 TrackPidAndTechniqueBM("BM", "T1485", "Impact_DataDestruction_10dd")
 return mp.INFECTED
 
