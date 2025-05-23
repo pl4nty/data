@@ -4,8 +4,11 @@ Invoke-WebRequest -Uri "https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64"
 cd ..\mpam-fe
 Invoke-WebRequest -Uri "https://github.com/hfiref0x/WDExtract/raw/refs/heads/master/Bin/bin64/wdextract64.exe" -OutFile "..\wdextract64.exe"
 Invoke-WebRequest -Uri "https://github.com/hfiref0x/WDExtract/raw/refs/heads/master/Bin/bin64/zlibwapi.dll" -OutFile "..\zlibwapi.dll"
+Get-ChildItem .
 ..\wdextract64.exe mpasbase.vdm
 ..\wdextract64.exe mpasdlta.vdm
+..\wdextract64.exe mpavbase.vdm
+..\wdextract64.exe mpavdlta.vdm
 
 Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/extract_sig.cpp" -OutFile "..\extract_sig.cpp"
 & "$env:ProgramFiles\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\Launch-VsDevShell.ps1" -Arch amd64
