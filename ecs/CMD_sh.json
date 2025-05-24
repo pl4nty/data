@@ -336,6 +336,7 @@
         "EnableDiskExpansionInCoreProvisioning": true,
         "EnableDismissProvisionWarnings": true,
         "EnableDisplayCpcPerfInReport": true,
+        "EnableDppProvisionForEnterprise": true,
         "EnableEditFLSForUX": true,
         "EnableEditFLSPolicy": true,
         "EnableElevateToUserAccessAdminIncludeOnlyGlobalAdminRole": true,
