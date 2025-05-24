@@ -27,33 +27,33 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
   if l_0_11 and l_0_12 then
     l_0_6.FileDropperInfo = l_0_12
   end
-  local l_0_13 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_4)
+  local l_0_13, l_0_14 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_4)
   -- DECOMPILER ERROR at PC84: Unhandled construct in 'MakeBoolean' P1
 
-  if l_0_13 and l_0_13 ~= "NONE" then
-    l_0_6.POTENTIAL_SIDE_LOADING = l_0_13
+  if l_0_14 and l_0_14 ~= "NONE" then
+    l_0_6.POTENTIAL_SIDE_LOADING = l_0_14
   end
   do
-    local l_0_14 = "NONE"
+    local l_0_15 = "NONE"
     if (sysio.IsFileExists)("c:\\Windows\\System32\\" .. l_0_4) then
-      l_0_14 = "System32"
+      l_0_15 = "System32"
       l_0_6.POTENTIAL_SIDE_LOADING = "System32"
     else
       if (sysio.IsFileExists)("c:\\Windows\\SysWOW64\\" .. l_0_4) then
-        l_0_14 = "SysWOW64"
+        l_0_15 = "SysWOW64"
         l_0_6.POTENTIAL_SIDE_LOADING = "SysWOW64"
       end
     end
-    AppendToRollingQueue("SYSTEM_DLLs", l_0_4, l_0_14, 31104000, 1000)
-    local l_0_15 = safeJsonSerialize(l_0_6, 100, nil, true)
-    local l_0_16 = bm.add_related_string
-    local l_0_17 = "Additional_Info"
+    AppendToRollingQueue("SYSTEM_DLLs", l_0_4, l_0_15, 31104000, 1000)
+    local l_0_16 = safeJsonSerialize(l_0_6, 100, nil, true)
+    local l_0_17 = bm.add_related_string
+    local l_0_18 = "Additional_Info"
     do
-      l_0_16(l_0_17, l_0_15 or "", bm.RelatedStringBMReport)
-      l_0_16 = bm
-      l_0_16 = l_0_16.add_related_file
-      l_0_17 = l_0_2
-      l_0_16(l_0_17)
+      l_0_17(l_0_18, l_0_16 or "", bm.RelatedStringBMReport)
+      l_0_17 = bm
+      l_0_17 = l_0_17.add_related_file
+      l_0_18 = l_0_2
+      l_0_17(l_0_18)
       -- DECOMPILER ERROR at PC134: freeLocal<0 in 'ReleaseLocals'
 
       return mp.INFECTED
