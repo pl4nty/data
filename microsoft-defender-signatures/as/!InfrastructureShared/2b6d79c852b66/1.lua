@@ -20,12 +20,10 @@ local l_0_4 = nil
 if not (mp.GetProcessCommandLine)((mp.GetScannedPPID)()) then
   return mp.CLEAN
 end
-if #(string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())) < 50 then
+if #(mp.GetProcessCommandLine)((mp.GetScannedPPID)()) < 50 then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC53: Confused about usage of register: R4 in 'UnsetPending'
-
-if #(string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())) > 400 then
+if #(mp.GetProcessCommandLine)((mp.GetScannedPPID)()) > 450 then
   return mp.CLEAN
 end
 local l_0_5 = nil
@@ -76,10 +74,10 @@ l_0_1 = l_0_7
 l_0_7 = extract_urls
 l_0_8 = l_0_1
 l_0_7 = l_0_7(l_0_8)
-if isnull(R9_PC126) then
+if isnull(R9_PC121) then
   return mp.CLEAN
 end
-for l_0_12,i_2 in ipairs(R9_PC126) do
+for l_0_12,i_2 in ipairs(R9_PC121) do
   if not split(i_2, "%.") then
     return mp.CLEAN
   end
@@ -87,7 +85,7 @@ for l_0_12,i_2 in ipairs(R9_PC126) do
   if not "." .. tostring((split(i_2, "%."))[#split(i_2, "%.")]) then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC157: Confused about usage of register: R14 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC152: Confused about usage of register: R14 in 'UnsetPending'
 
   if isSuspTLD("." .. tostring((split(i_2, "%."))[#split(i_2, "%.")])) then
     return mp.INFECTED

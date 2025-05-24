@@ -20,7 +20,7 @@ local l_0_4 = nil
 if not (mp.GetProcessCommandLine)((mp.GetScannedPPID)()) then
   return mp.CLEAN
 end
-if #(string.lower)((mp.GetProcessCommandLine)((mp.GetScannedPPID)())) < 50 then
+if #(mp.GetProcessCommandLine)((mp.GetScannedPPID)()) < 50 then
   return mp.CLEAN
 end
 local l_0_5 = nil
@@ -78,33 +78,33 @@ end
 if not l_0_8 then
   return mp.CLEAN
 end
-if ExtractPartsFromUri(R9_PC132) == "" or ExtractPartsFromUri(R9_PC132) == nil then
-  R9_PC132 = mp
-  R9_PC132 = R9_PC132.CLEAN
-  return R9_PC132
+if ExtractPartsFromUri(R9_PC127) == "" or ExtractPartsFromUri(R9_PC127) == nil then
+  R9_PC127 = mp
+  R9_PC127 = R9_PC127.CLEAN
+  return R9_PC127
 end
-R9_PC132 = (ExtractPartsFromUri(R9_PC132)).host
-if R9_PC132 ~= "" then
-  R9_PC132 = (ExtractPartsFromUri(R9_PC132)).host
+R9_PC127 = (ExtractPartsFromUri(R9_PC127)).host
+if R9_PC127 ~= "" then
+  R9_PC127 = (ExtractPartsFromUri(R9_PC127)).host
 end
-if R9_PC132 == nil then
-  R9_PC132 = mp
-  R9_PC132 = R9_PC132.CLEAN
-  return R9_PC132
+if R9_PC127 == nil then
+  R9_PC127 = mp
+  R9_PC127 = R9_PC127.CLEAN
+  return R9_PC127
 end
-R9_PC132 = split
-R9_PC132 = R9_PC132((ExtractPartsFromUri(R9_PC132)).host, "%.")
+R9_PC127 = split
+R9_PC127 = R9_PC127((ExtractPartsFromUri(R9_PC127)).host, "%.")
 local l_0_9 = nil
-if not R9_PC132 then
+if not R9_PC127 then
   return mp.CLEAN
 end
 local l_0_10 = nil
-if not "." .. tostring(R9_PC132[#R9_PC132]) then
+if not "." .. tostring(R9_PC127[#R9_PC127]) then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC170: Confused about usage of register: R10 in 'UnsetPending'
+-- DECOMPILER ERROR at PC165: Confused about usage of register: R10 in 'UnsetPending'
 
-if isSuspTLD("." .. tostring(R9_PC132[#R9_PC132])) then
+if isSuspTLD("." .. tostring(R9_PC127[#R9_PC127])) then
   return mp.INFECTED
 end
 return mp.CLEAN

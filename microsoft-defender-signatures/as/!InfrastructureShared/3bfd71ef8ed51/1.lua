@@ -25,7 +25,7 @@ if #l_0_3 < 50 then
 end
 do
   if contains(l_0_3, "powershell") then
-    local l_0_5, l_0_6 = (MpCommon.StringRegExpSearch)("-w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3)
+    local l_0_5, l_0_6 = (MpCommon.StringRegExpSearch)("[â€\149-]w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3)
     if l_0_5 then
       return mp.INFECTED
     end
