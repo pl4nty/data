@@ -179,18 +179,6 @@
                 }
             ]
         },
-        "RAMLimiter": {
-            "enableFeatures": [
-                "msEdgeResourceControlsRamLimiter",
-                "msEdgeResourceControlsMicroFeedback"
-            ],
-            "parameters": [
-                {
-                    "name": "msEdgeResourceControlsRamLimiterUITreatment",
-                    "value": "1"
-                }
-            ]
-        },
         "RolloutPreconnectToSearch": {
             "disableFeatures": [
                 "NavigationPredictorPreconnectHoldback"
