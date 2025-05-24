@@ -3454,4 +3454,17 @@ IsDllInExpectedPath = function(l_39_0, l_39_1, l_39_2)
   return l_39_4, l_39_5, l_39_6
 end
 
+FiletimeToDaysElapsed = function(l_40_0)
+  -- function num : 0_39
+  if type(l_40_0) ~= "number" then
+    return -1
+  end
+  l_40_0 = l_40_0 / 10000000 - 11644473600
+  local l_40_1 = (MpCommon.GetCurrentTimeT)()
+  if l_40_1 <= l_40_0 then
+    return -1
+  end
+  return (l_40_1 - (l_40_0)) / 60 * 144
+end
+
 
