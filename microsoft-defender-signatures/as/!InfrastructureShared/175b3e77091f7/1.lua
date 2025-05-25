@@ -25,23 +25,24 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
     end
     local l_0_4 = {}
     l_0_4.Dll_Path = l_0_0
-    local l_0_5 = l_0_0:match("([^\\]+)$")
-    local l_0_6 = l_0_2:match("([^\\]+)$")
+    local l_0_5 = 0
+    local l_0_6 = l_0_0:match("([^\\]+)$")
+    local l_0_7 = l_0_2:match("([^\\]+)$")
     if (string.find)(l_0_3, "\\windows\\system32\\", 1, true) or (string.find)(l_0_3, "\\windows\\syswow64\\", 1, true) then
       return mp.CLEAN
     end
-    local l_0_7 = nil
+    local l_0_8 = nil
     if not l_0_1:match("\\device\\vhdharddisk.-\\(.*)") then
-      local l_0_8, l_0_9 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_5, l_0_1, false)
-      local l_0_10, l_0_11 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_6, l_0_1, false)
-      if l_0_8 and l_0_10 then
+      local l_0_9, l_0_10 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_6, l_0_1, false)
+      local l_0_11, l_0_12 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_7, l_0_1, false)
+      if l_0_9 and l_0_11 then
+        l_0_5 = l_0_5 + 100
         l_0_4.DllAndExecInArchive = true
-        l_0_4.Archive_Exe = l_0_11
-        l_0_4.Archive_Dll = l_0_9
-        l_0_7 = true
+        l_0_4.Archive_Exe = l_0_12
+        l_0_4.Archive_Dll = l_0_10
+        l_0_8 = true
       end
-      local l_0_12 = 0
-      local l_0_13 = l_0_1 .. "\\" .. l_0_5
+      local l_0_13 = l_0_1 .. "\\" .. l_0_6
       l_0_13 = (string.gsub)(l_0_13, "\\", "\\\\")
       l_0_13 = l_0_13:gsub("([%^%$%(%)%.%[%]%*%+%-%?])", "\\%1")
       local l_0_14, l_0_15 = pcall(MpCommon.RollingQueueQueryMultiKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", l_0_13)
@@ -50,8 +51,8 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
           if (string.find)(l_0_20.value, "FileAttributes", 1, true) or (string.find)(l_0_20.value, "UnsignedFile", 1, true) then
             l_0_4.FileDroppedRecently = true
             l_0_4.FileInfo = l_0_15
-            l_0_12 = l_0_12 + 50
-            l_0_7 = true
+            l_0_5 = l_0_5 + 50
+            l_0_8 = true
           end
         end
         if not l_0_4.FileDroppedRecently then
@@ -67,13 +68,13 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
           if (string.find)(l_0_27.value, "UnsignedFile", 1, true) and FiletimeToDaysElapsed(l_0_27.insert_time) < 1 then
             l_0_4.FileDroppedRecently_LongTermStrg = true
             l_0_4.FileDropperInfo = l_0_22
-            l_0_7 = true
-            l_0_12 = l_0_12 + 50
+            l_0_8 = true
+            l_0_5 = l_0_5 + 50
             if (string.find)(l_0_27.value, "FileAttributes", 1, true) then
               local l_0_28 = (string.match)(l_0_27.value, "%[(.*)%]")
               for l_0_32 in (string.gmatch)(l_0_28, "([^|]+)") do
                 if l_0_32 ~= "SLF:Aurora.A!rfn" then
-                  l_0_12 = l_0_12 + 1
+                  l_0_5 = l_0_5 + 1
                 end
               end
             end
@@ -84,33 +85,33 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
           if not l_0_4.FileDroppedRecently_LongTermStrg then
             return mp.CLEAN
           end
-          local l_0_33, l_0_34 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_5)
-          -- DECOMPILER ERROR at PC269: Unhandled construct in 'MakeBoolean' P1
+          local l_0_33, l_0_34 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_6)
+          -- DECOMPILER ERROR at PC270: Unhandled construct in 'MakeBoolean' P1
 
           if l_0_34 and l_0_34 ~= "NONE" then
             l_0_4.POTENTIAL_SIDE_LOADING = l_0_34
-            l_0_12 = l_0_12 + 50
+            l_0_5 = l_0_5 + 50
           end
           do
             local l_0_35 = "NONE"
-            if (sysio.IsFileExists)("c:\\Windows\\System32\\" .. l_0_5) then
+            if (sysio.IsFileExists)("c:\\Windows\\System32\\" .. l_0_6) then
               l_0_35 = "System32"
               l_0_4.POTENTIAL_SIDE_LOADING = "System32"
-              l_0_12 = l_0_12 + 50
+              l_0_5 = l_0_5 + 50
             else
-              if (sysio.IsFileExists)("c:\\Windows\\SysWOW64\\" .. l_0_5) then
+              if (sysio.IsFileExists)("c:\\Windows\\SysWOW64\\" .. l_0_6) then
                 l_0_35 = "SysWOW64"
                 l_0_4.POTENTIAL_SIDE_LOADING = "SysWOW64"
-                l_0_12 = l_0_12 + 50
+                l_0_5 = l_0_5 + 50
               end
             end
-            AppendToRollingQueue("SYSTEM_DLLs", l_0_5, l_0_35, 31104000, 1000)
-            if not l_0_7 then
+            AppendToRollingQueue("SYSTEM_DLLs", l_0_6, l_0_35, 31104000, 1000)
+            if not l_0_8 then
               return mp.CLEAN
             end
             local l_0_36 = l_0_2:match("([^\\]+)$")
             local l_0_37 = (string.gsub)(l_0_0, "%d+", "0")
-            local l_0_38 = (string.gsub)(l_0_5, "%d+", "0")
+            local l_0_38 = (string.gsub)(l_0_6, "%d+", "0")
             local l_0_39 = l_0_36 .. "|" .. l_0_38 .. "|" .. l_0_37
             local l_0_40, l_0_41, l_0_42 = AnomalyTableCheck("Appomaly_LoadedDlls_Path_Normalized", l_0_39, 2, "MarkerRecord_" .. l_0_36)
             if l_0_40 then
@@ -135,7 +136,7 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
                   local l_0_45 = "Appomaly_LoadedDlls_Size"
                   local l_0_46 = 31536000
                   local l_0_47 = 1000
-                  local l_0_48 = l_0_36 .. l_0_5
+                  local l_0_48 = l_0_36 .. l_0_6
                   l_0_4.Dll_PrevFileSize = GetRollingQueueKeyValue(l_0_45, l_0_48) or -1
                   if (l_0_4.Dll_PrevFileSize == -1 or l_0_4.Dll_PrevFileSize == 0) and l_0_4.Dll_FileSize > 0 then
                     AppendToRollingQueue(l_0_45, l_0_48, l_0_4.Dll_FileSize, l_0_46, l_0_47)
@@ -157,34 +158,34 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
                   end
                   if l_0_40 and not l_0_41 then
                     l_0_4.Dll_PathNew = true
-                    l_0_12 = l_0_12 + 5
+                    l_0_5 = l_0_5 + 5
                   end
                   local l_0_49 = "Appomaly_LoadedDlls_Version"
                   local l_0_50 = 31536000
                   local l_0_51 = 1000
-                  local l_0_52 = l_0_36 .. l_0_5 .. l_0_4.Dll_FileSize
+                  local l_0_52 = l_0_36 .. l_0_6 .. l_0_4.Dll_FileSize
                   l_0_4.Dll_VersionInfo = GetRollingQueueKeyValue(l_0_49, l_0_52) or ""
                   if l_0_4.Dll_VersionInfo == "" then
                     do
                       if not (sysio.GetPEVersionInfo)(l_0_0) then
                         local l_0_53, l_0_54, l_0_55, l_0_56 = {}
                       end
-                      -- DECOMPILER ERROR at PC490: Confused about usage of register: R35 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC491: Confused about usage of register: R35 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC495: Confused about usage of register: R35 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC496: Confused about usage of register: R35 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC500: Confused about usage of register: R35 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC501: Confused about usage of register: R35 in 'UnsetPending'
 
                       do
                         local l_0_57 = nil
                         l_0_4.Dll_VersionInfo = (l_0_53.OriginalFilename or "") .. "|" .. (l_0_53.CompanyName or "") .. "|" .. (l_0_53.FileDescription or "")
-                        -- DECOMPILER ERROR at PC509: Confused about usage of register: R36 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC510: Confused about usage of register: R36 in 'UnsetPending'
 
                         AppendToRollingQueue(l_0_49, l_0_52, (l_0_53.OriginalFilename or "") .. "|" .. (l_0_53.CompanyName or "") .. "|" .. (l_0_53.FileDescription or ""), l_0_50, l_0_51)
                         if (string.find)(l_0_4.Dll_VersionInfo, "Microsoft", 1, true) then
                           return mp.CLEAN
                         end
-                        local l_0_58, l_0_59 = pcall(MpCommon.RollingQueueQueryKeyRegex, l_0_49, l_0_36 .. l_0_5)
+                        local l_0_58, l_0_59 = pcall(MpCommon.RollingQueueQueryKeyRegex, l_0_49, l_0_36 .. l_0_6)
                         if not l_0_59 then
                           l_0_4.Dll_PrevVersionInfo = {}
                           if l_0_4.Dll_VersionInfo ~= "||" then
@@ -208,15 +209,15 @@ end
                             if l_0_4.Dll_VersionInfo ~= "||" and l_0_65(l_0_4.Dll_VersionInfo, (l_0_4.Dll_PrevVersionInfo).value) then
                               return mp.CLEAN
                             end
-                            local l_0_66, l_0_67, l_0_68 = IsDllInExpectedPath(l_0_5, l_0_1, l_0_6)
+                            local l_0_66, l_0_67, l_0_68 = IsDllInExpectedPath(l_0_6, l_0_1, l_0_7)
                             if l_0_66 and l_0_67 then
                               return mp.CLEAN
                             end
                             if l_0_66 then
-                              l_0_12 = l_0_12 + 50
+                              l_0_5 = l_0_5 + 50
                             end
                             if l_0_68 then
-                              l_0_12 = l_0_12 + 50
+                              l_0_5 = l_0_5 + 50
                             end
                             l_0_4.Known_VulnerableDll = l_0_66
                             l_0_4.Vulnerable_App = l_0_68
@@ -224,8 +225,14 @@ end
                             if not l_0_4.POTENTIAL_SIDE_LOADING and not l_0_66 then
                               return mp.CLEAN
                             end
-                            if l_0_4.POTENTIAL_SIDE_LOADING then
+                            if (MpCommon.StringRegExpSearch)("(desktop|download|onedrive|document|picture)", l_0_0) then
+                              l_0_5 = l_0_5 + 50
+                            end
+                            if l_0_4.POTENTIAL_SIDE_LOADING or l_0_4.Known_VulnerableDll then
                               (bm.trigger_sig)("PotentialSideLoading_C_Evaluator", l_0_69)
+                            end
+                            if l_0_4.POTENTIAL_SIDE_LOADING and l_0_4.Known_VulnerableDll then
+                              (bm.trigger_sig)("PotentialSideLoading_D2_Evaluator", l_0_69)
                             end
                             local l_0_71 = bm.add_related_string
                             local l_0_72 = "Additional_Info"
@@ -234,7 +241,7 @@ end
                               l_0_71 = bm
                               l_0_71 = l_0_71.add_related_string
                               l_0_72 = "Score"
-                              l_0_71(l_0_72, l_0_12, bm.RelatedStringBMReport)
+                              l_0_71(l_0_72, l_0_5, bm.RelatedStringBMReport)
                               l_0_71 = bm
                               l_0_71 = l_0_71.add_related_string
                               l_0_72 = "Anomaly_LoadedDlls_TblInfo"
@@ -246,7 +253,7 @@ end
                               l_0_71 = mp
                               l_0_71 = l_0_71.INFECTED
                               do return l_0_71 end
-                              -- DECOMPILER ERROR at PC643: freeLocal<0 in 'ReleaseLocals'
+                              -- DECOMPILER ERROR at PC666: freeLocal<0 in 'ReleaseLocals'
 
                               return mp.CLEAN
                             end

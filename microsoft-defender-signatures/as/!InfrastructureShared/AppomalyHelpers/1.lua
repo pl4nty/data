@@ -682,7 +682,7 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
                 l_5_7.Error = tostring(l_5_6) .. "; Failed to add a new event with marker"
                 ;
                 (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTable_Error", safeJsonSerialize(l_5_7))
-                return nil
+                return true, true, l_5_7.Error
               end
               l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
               if l_5_4 then
@@ -693,31 +693,32 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
             end
           else
             local l_5_20 = l_5_19.Count
-            -- DECOMPILER ERROR at PC147: Overwrote pending register: R6 in 'AssignReg'
+            -- DECOMPILER ERROR at PC149: Overwrote pending register: R6 in 'AssignReg'
 
             l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, l_5_20 + 1, 1)
             if not l_5_5 and l_5_8 and l_5_9 ~= "HSTR" then
               l_5_7.Error = tostring(l_5_6) .. "; Failed to update existing event with marker"
               ;
               (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTable_Error", safeJsonSerialize(l_5_7))
-              return nil
+              local l_5_21 = false
+              return l_5_21, l_5_17 < l_5_2, l_5_7.Error
             end
             l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
             if l_5_4 then
               l_5_4.Marker_Days_Elapsed_ActualTime = l_5_17
               l_5_4.Marker_Days_Elapsed_EventUnbiasedTime = l_5_18
             end
-            local l_5_21 = false
-            return l_5_21, l_5_17 < l_5_2, l_5_4
+            local l_5_24 = false
+            return l_5_24, l_5_17 < l_5_2, l_5_4
           end
         else
           l_5_13 = l_5_12
-          -- DECOMPILER ERROR at PC197: Overwrote pending register: R6 in 'AssignReg'
+          -- DECOMPILER ERROR at PC204: Overwrote pending register: R6 in 'AssignReg'
 
           l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_3, l_5_12, 1)
           if l_5_5 and l_5_8 and l_5_9 ~= "HSTR" then
             (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTableMarker_Rcr", safeJsonSerialize(l_5_7))
-            -- DECOMPILER ERROR at PC221: Overwrote pending register: R6 in 'AssignReg'
+            -- DECOMPILER ERROR at PC228: Overwrote pending register: R6 in 'AssignReg'
 
             l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
           end
@@ -725,7 +726,7 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
             l_5_7.Error = tostring(l_5_6) .. "; Failed to add a new event with marker for a new app"
             ;
             (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTable_Error", safeJsonSerialize(l_5_7))
-            return nil
+            return true, true, l_5_7.Error
           end
           l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
           if l_5_4 then
@@ -737,22 +738,22 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
         return nil
       end
       if l_5_4 and l_5_4.TableAge then
-        local l_5_24 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1)
-        local l_5_25 = l_5_4.TableAge / 1440 * 60
-        -- DECOMPILER ERROR at PC288: Overwrote pending register: R6 in 'AssignReg'
+        local l_5_27 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1)
+        local l_5_28 = l_5_4.TableAge / 1440 * 60
+        -- DECOMPILER ERROR at PC297: Overwrote pending register: R6 in 'AssignReg'
 
         if l_5_4.TableAge < 1440 * l_5_2 then
-          if not l_5_24 then
+          if not l_5_27 then
             l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
           else
-            -- DECOMPILER ERROR at PC300: Overwrote pending register: R6 in 'AssignReg'
+            -- DECOMPILER ERROR at PC309: Overwrote pending register: R6 in 'AssignReg'
 
-            l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, l_5_24.Count + 1, 1)
+            l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, l_5_27.Count + 1, 1)
           end
           if l_5_5 then
             l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
-            l_5_4.TableAgeDays = l_5_25
-            return l_5_24 == nil, true, l_5_4
+            l_5_4.TableAgeDays = l_5_28
+            return l_5_27 == nil, true, l_5_4
           else
             l_5_7.Error = tostring(l_5_6) .. "; Table age."
             if l_5_8 and l_5_9 ~= "HSTR" then
@@ -761,14 +762,14 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
             return nil
           end
         elseif not (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1) then
-          l_5_4.TableAgeDays = l_5_25
+          l_5_4.TableAgeDays = l_5_28
           return true, false, l_5_4
         else
-          l_5_4.TableAgeDays = l_5_25
+          l_5_4.TableAgeDays = l_5_28
           return false, false, l_5_4
         end
       else
-        -- DECOMPILER ERROR at PC367: Overwrote pending register: R6 in 'AssignReg'
+        -- DECOMPILER ERROR at PC376: Overwrote pending register: R6 in 'AssignReg'
 
         l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
         if l_5_5 then
@@ -786,7 +787,7 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
         end
       end
       do return nil end
-      -- DECOMPILER ERROR: 19 unprocessed JMP targets
+      -- DECOMPILER ERROR: 22 unprocessed JMP targets
     end
   end
 end
@@ -3422,7 +3423,7 @@ IsDllInExpectedPath = function(l_39_0, l_39_1, l_39_2)
   l_39_3[l_39_4], l_39_5 = l_39_5, {ExpectedLocation = "%programfiles%\\adobe\\acrobat %version%\\acrobat", VulnerableApps = "%programfiles%\\adobe\\acrobat %version%\\acrobat\\acrodist.exe"}
   l_39_4 = false
   l_39_5 = false
-  local l_39_6 = true
+  local l_39_6 = false
   local l_39_7 = l_39_3[l_39_0]
   if not l_39_7 then
     return l_39_4
