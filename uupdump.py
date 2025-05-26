@@ -65,7 +65,9 @@ try:
             '/Windows/SystemApps/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy',
             '/Windows/SystemApps/Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe',
             '/Windows/SystemApps/MicrosoftWindows.Client.OOBE_cw5n1h2txyewy',
-            '/Windows/System32/CodeIntegrity/driversipolicy.p7b'
+            '/Windows/System32/CodeIntegrity/driversipolicy.p7b',
+            '/Windows/schemas',
+            '/Windows/PolicyDefinitions'
         ]:
             subprocess.run([
                 'wimextract', metadata_file, '3', target,
