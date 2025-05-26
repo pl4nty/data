@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<xs:schema 
+      targetNamespace="http://www.microsoft.com/provisioning/EapTlsUserPropertiesV1" 
+      elementFormDefault="qualified" 
+      xmlns="http://www.microsoft.com/provisioning/EapTlsUserPropertiesV1" 
+      xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+      xmlns:baseEap="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1" 
+      version="1.0"
+   >
+   <xs:import 
+         namespace="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1" 
+         schemaLocation="BaseEapUserPropertiesV1.xsd" 
+   />
+   <xs:element name="Username" substitutionGroup="baseEap:Identity"/>
+   <xs:element name="EapType" substitutionGroup="baseEap:EapType">
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="baseEap:BaseEapTypeParameters">
+               <xs:sequence>
+                  <xs:element ref="Username" minOccurs="0" maxOccurs="1"/>
+                  <xs:element name="UserCert" type="xs:hexBinary"/>
+
+                  <!-- extension point for other namespaces -->
+                  <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##other"/>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>   
+</xs:schema>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="http://www.microsoft.com/provisioning/EapTtlsConnectionPropertiesV1"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/provisioning/EapTtlsConnectionPropertiesV1"
+    xmlns:baseEap="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    >
+    <xs:import
+        namespace="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"
+        schemaLocation="BaseEapConnectionPropertiesV1.xsd"
+        />
+    <xs:element name="eapTtls" type="EapTtls"/>
+    <xs:complexType name="EapTtls">
+        <xs:complexContent>
+            <xs:extension base="TtlsConfig"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="TtlsConfig">
+        <xs:sequence>
+            <xs:element name="ServerValidation" type="ServerValidationParameters" minOccurs="0"/>
+            <xs:element name="Phase2Authentication" type="Phase2AuthenticationParameters" minOccurs="0"/>
+            <xs:element name="Phase1Identity"  type="Phase1IdentityParameters" minOccurs="0"/>
+            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##other"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ServerValidationParameters">
+        <xs:sequence>
+            <xs:element name="ServerNames" type="xs:string" minOccurs="0"/>
+            <xs:element name="TrustedRootCAHash" type="xs:hexBinary" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DisablePrompt" type="xs:boolean" default="false" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Phase2AuthenticationParameters">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="baseEap:Eap" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="PAPAuthentication" type="emptyString" minOccurs="0"/>
+                <xs:element name="CHAPAuthentication" type="emptyString" minOccurs="0"/>
+                <xs:element name="MSCHAPAuthentication" type="emptyString" minOccurs="0"/>
+                <xs:element name="MSCHAPv2Authentication" type="MSCHAPv2AuthenticationParameters" minOccurs="0"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Phase1IdentityParameters">
+        <xs:sequence>
+            <xs:element name="IdentityPrivacy" type="xs:boolean" default="true" minOccurs="0"/>
+            <xs:element name="AnonymousIdentity" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MSCHAPv2AuthenticationParameters">
+        <xs:sequence>
+            <xs:element name="UseWinlogonCredentials" type="xs:boolean" default="false" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="emptyString">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="http://www.microsoft.com/provisioning/EapTeapUserPropertiesV1"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/provisioning/EapTeapUserPropertiesV1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:baseEap="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1"
+    version="1.0"
+    >
+    <xs:import
+        namespace="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1"
+        schemaLocation="BaseEapUserPropertiesV1.xsd"
+        />
+    <xs:element name="eapTeap" type="EapTeap"/>
+    <xs:complexType name="EapTeap">
+        <xs:complexContent>
+            <xs:extension base="TeapCred"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="TeapCred">
+        <xs:sequence>
+            <xs:element name="InnerMethodCredentials"  minOccurs="0" maxOccurs="unbounded"/>
+            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##other"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="InnerMethodCredentials">
+        <xs:sequence>
+            <xs:element ref="baseEap:Eap" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="Parameters" type="CredentialsParametersType" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CredentialsParametersType">
+      <xs:sequence>
+         <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##other"/>
+      </xs:sequence>
+    </xs:complexType>
+</xs:schema>

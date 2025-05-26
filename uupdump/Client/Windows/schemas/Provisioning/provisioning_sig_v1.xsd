@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+        targetNamespace="http://www.w3.org/2000/09/xmldsig#"
+        version="0.1" elementFormDefault="qualified">
+
+<!-- Basic Types Defined for Signatures -->
+
+<simpleType name="CryptoBinary">
+  <restriction base="base64Binary">
+  </restriction>
+</simpleType>
+
+<!-- Start Signature -->
+
+<element name="Signature" type="ds:SignatureType"/>
+<complexType name="SignatureType">
+  <sequence>
+    <element ref="ds:SignedInfo"/>
+    <element ref="ds:SignatureValue"/>
+    <element ref="ds:KeyInfo" minOccurs="0"/>
+  </sequence>
+  <attribute name="Id" type="ID" use="optional"/>
+</complexType>
+
+  <element name="SignatureValue" type="ds:SignatureValueType"/>
+  <complexType name="SignatureValueType">
+    <simpleContent>
+      <extension base="base64Binary">
+        <attribute name="Id" type="ID" use="optional"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+<!-- Start SignedInfo -->
+
+<element name="SignedInfo" type="ds:SignedInfoType"/>
+<complexType name="SignedInfoType">
+  <sequence>
+    <element ref="ds:CanonicalizationMethod"/>
+    <element ref="ds:SignatureMethod"/>
+    <element ref="ds:Reference"/>
+  </sequence>
+  <attribute name="Id" type="ID" use="optional"/>
+</complexType>
+
+  <element name="CanonicalizationMethod" type="ds:CanonicalizationMethodType"/>
+  <complexType name="CanonicalizationMethodType" mixed="true">
+    <attribute name="Algorithm" use="required">
+      <simpleType>
+        <restriction base="anyURI">
+          <enumeration value="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+          <enumeration value="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
+          <enumeration value="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+          <enumeration value="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/>
+        </restriction>
+      </simpleType>
+    </attribute>
+  </complexType>
+
+  <element name="SignatureMethod" type="ds:SignatureMethodType"/>
+  <complexType name="SignatureMethodType" mixed="true">
+    <sequence>
+      <element name="HMACOutputLength" minOccurs="0" type="ds:HMACOutputLengthType"/>
+      <any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+      <!-- (0,unbounded) elements from (1,1) external namespace -->
+    </sequence>
+    <attribute name="Algorithm" type="anyURI" use="required"/>
+  </complexType>
+
+<!-- Start Reference -->
+
+<element name="Reference" type="ds:ReferenceType"/>
+<complexType name="ReferenceType">
+  <sequence>
+    <element ref="ds:Transforms"/>
+    <element ref="ds:DigestMethod"/>
+    <element ref="ds:DigestValue"/>
+  </sequence>
+  <attribute name="Id" type="ID" use="optional"/>
+  <!-- Restrict to the "" URI -->
+  <attribute name="URI">
+    <simpleType>
+      <restriction base="anyURI">
+        <maxLength value="0"/>
+      </restriction>
+    </simpleType>
+  </attribute>
+</complexType>
+
+  <element name="Transforms" type="ds:TransformsType"/>
+  <complexType name="TransformsType">
+    <sequence>
+      <element ref="ds:Transform" maxOccurs="1"/>
+    </sequence>
+  </complexType>
+
+  <!-- Restrict to only the enveloped signature transform -->
+  <element name="Transform" type="ds:TransformType"/>
+  <complexType name="TransformType" mixed="true">
+    <attribute name="Algorithm" use="required">
+      <simpleType>
+        <restriction base="anyURI">
+          <enumeration value="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+        </restriction>
+      </simpleType>
+    </attribute>
+  </complexType>
+
+<!-- End Reference -->
+
+<element name="DigestMethod" type="ds:DigestMethodType"/>
+<complexType name="DigestMethodType" mixed="true">
+  <sequence>
+    <any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+  </sequence>
+  <attribute name="Algorithm" type="anyURI" use="required"/>
+</complexType>
+
+<element name="DigestValue" type="ds:DigestValueType"/>
+<simpleType name="DigestValueType">
+  <restriction base="base64Binary"/>
+</simpleType>
+
+<!-- End SignedInfo -->
+
+<!-- Start KeyInfo -->
+
+<element name="KeyInfo" type="ds:KeyInfoType"/>
+<complexType name="KeyInfoType" mixed="true">
+  <choice maxOccurs="unbounded">
+    <element ref="ds:KeyValue"/>
+    <element ref="ds:X509Data"/>
+    <any processContents="lax" namespace="##other"/>
+    <!-- (1,1) elements from (0,unbounded) namespaces -->
+  </choice>
+  <attribute name="Id" type="ID" use="optional"/>
+</complexType>
+
+
+  <element name="KeyValue" type="ds:KeyValueType"/>
+  <complexType name="KeyValueType" mixed="true">
+   <choice>
+     <element ref="ds:DSAKeyValue"/>
+     <element ref="ds:RSAKeyValue"/>
+     <any namespace="##other" processContents="lax"/>
+   </choice>
+  </complexType>
+
+<!-- Start X509Data -->
+
+<element name="X509Data" type="ds:X509DataType"/>
+<complexType name="X509DataType">
+  <sequence maxOccurs="unbounded">
+    <choice>
+      <element name="X509Certificate" type="base64Binary"/>
+    </choice>
+  </sequence>
+</complexType>
+
+<!-- End X509Data -->
+
+<!-- End KeyInfo -->
+
+<!-- Start Algorithm Parameters -->
+
+<simpleType name="HMACOutputLengthType">
+  <restriction base="integer"/>
+</simpleType>
+
+<!-- Start KeyValue Element-types -->
+
+<element name="DSAKeyValue" type="ds:DSAKeyValueType"/>
+<complexType name="DSAKeyValueType">
+  <sequence>
+    <sequence minOccurs="0">
+      <element name="P" type="ds:CryptoBinary"/>
+      <element name="Q" type="ds:CryptoBinary"/>
+    </sequence>
+    <element name="G" type="ds:CryptoBinary" minOccurs="0"/>
+    <element name="Y" type="ds:CryptoBinary"/>
+    <element name="J" type="ds:CryptoBinary" minOccurs="0"/>
+    <sequence minOccurs="0">
+      <element name="Seed" type="ds:CryptoBinary"/>
+      <element name="PgenCounter" type="ds:CryptoBinary"/>
+    </sequence>
+  </sequence>
+</complexType>
+
+<element name="RSAKeyValue" type="ds:RSAKeyValueType"/>
+<complexType name="RSAKeyValueType">
+  <sequence>
+    <element name="Modulus" type="ds:CryptoBinary"/>
+    <element name="Exponent" type="ds:CryptoBinary"/>
+  </sequence>
+</complexType>
+
+<!-- End KeyValue Element-types -->
+
+<!-- End Signature -->
+
+</schema>

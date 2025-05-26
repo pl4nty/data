@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.microsoft.com/networking/CarrierControl/v1"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/networking/CarrierControl/v1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:wwan="http://www.microsoft.com/networking/CarrierControl/WWAN/v1"
+    xmlns:wlan="http://www.microsoft.com/networking/CarrierControl/WLAN/v1"
+    xmlns:base="http://www.microsoft.com/networking/CarrierControl/Base/v1"
+    xmlns:plans="http://www.microsoft.com/networking/CarrierControl/Plans/v1"
+>
+
+  <xs:import namespace="http://www.microsoft.com/networking/CarrierControl/WLAN/v1" />
+  <xs:import namespace="http://www.microsoft.com/networking/CarrierControl/WWAN/v1" />
+  <xs:import namespace="http://www.microsoft.com/networking/CarrierControl/Base/v1" />
+  <xs:import namespace="http://www.microsoft.com/networking/CarrierControl/Plans/v1" />
+  <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" />
+
+  <xs:element name="CarrierProvisioning">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="Global">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CarrierId" type="base:GUID"/>
+              <xs:element name="SubscriberId" type="base:SubscriberType"/>
+              <xs:element name="DeviceId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:pattern value="\d{15,16}"/>
+                    <xs:pattern value="([a-fA-F0-9]{2}:){5}[a-fA-F0-9]{2}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Mobile Broadband info -->
+        <xs:element name="Activation" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="wwan:ActivationMethod"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MBNProfiles" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="wwan:DefaultProfile"
+                          minOccurs="0"/>
+              <xs:element ref="wwan:PurchaseProfile"
+                          minOccurs="0"/>
+              <xs:element ref="wwan:Messages" minOccurs="0"/>
+              <xs:element ref="wwan:Branding" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Wi-Fi info -->
+        <xs:element name="WLANProfiles" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="wlan:WLANProfile" maxOccurs="10" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Plan Information  -->
+        <xs:element name="Plans" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="plans:Plan" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Refresh and Trust -->
+        <xs:element name="Provisioning" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TrustedCertificates" minOccurs="0">
+                <xs:complexType>
+                  <xs:annotation>
+                    <xs:documentation xml:lang="en">
+                      This list enumerates the X.509 certificates whose signatures
+                      should be trusted on future provisioning files.
+                    </xs:documentation>
+                  </xs:annotation>
+                  <xs:sequence>
+                    <xs:element name="TrustedCertificate" type="base:CertificateDetails" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+
+              <xs:element name="RefreshParameters" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="DelayInDays" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                          <xs:maxExclusive value="731"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+
+                    <xs:element name="RefreshURL">
+                      <xs:simpleType>
+                        <xs:annotation>
+                          <xs:documentation xml:lang="en">
+                            This parameter gives the URL where the client can find the updated
+                            copy of this provisioning file in the future.  This URL will be
+                            accessed upon receipt of an SMS/USSD trigger or after the specified Delay.
+                          </xs:documentation>
+                        </xs:annotation>
+                        <xs:restriction base="xs:anyURI">
+                          <xs:pattern value="https://.+"/>
+                          <!-- Given IDN, is this valid? -->
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+
+                    <xs:element name="UserName" type="xs:token" minOccurs="0"/>
+                    <xs:element name="Password" type="xs:token" minOccurs="0"/>
+
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+        <!-- Extension point container for future additions -->
+        <xs:element name="Extensions" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Extensions_v2 element from v2 namespace can be set here.
+              <xs:element name="Extensions_v2" namespace="http://www.microsoft.com/networking/CarrierControl/v2"/>
+              -->
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="lax"/>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element ref="ds:Signature" minOccurs="0"/>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

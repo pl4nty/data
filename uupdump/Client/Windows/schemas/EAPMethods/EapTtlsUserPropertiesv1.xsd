@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="http://www.microsoft.com/provisioning/EapTtlsUserPropertiesV1"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/provisioning/EapTtlsUserPropertiesV1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:baseEap="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1"
+    version="1.0"
+    >
+    <xs:import
+        namespace="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1"
+        schemaLocation="BaseEapUserPropertiesV1.xsd"
+        />
+    <xs:element name="eapTtls" type="EapTtls"/>
+    <xs:complexType name="EapTtls">
+        <xs:complexContent>
+            <xs:extension base="TtlsCred"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="TtlsCred">
+        <xs:sequence>
+            <xs:element name="Username" type="xs:string" minOccurs="0"/>
+            <xs:element name="Password" type="xs:string" minOccurs="0"/>
+            <xs:element ref="baseEap:Eap" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

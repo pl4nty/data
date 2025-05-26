@@ -1,0 +1,1613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>1.0.0.5</VersionEx>
+  <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+    <Rule>
+      <Option>Disabled:Script Enforcement</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Audit Mode</Option>
+    </Rule>
+  </Rules>
+  <EKUs>
+    <EKU ID="ID_EKU_WINDOWS" Value="010a2b0601040182370a0306" FriendlyName ="1.3.6.1.4.1.311.10.3.6 Windows System Component Verification"/>
+    <EKU ID="ID_EKU_IUM" Value="010A2B0601040182370A0325" FriendlyName="1.3.6.1.4.1.311.10.3.37 Isolated User Mode"/>
+  </EKUs>
+  <!--File Rules-->
+  <FileRules>
+    <Allow ID="ID_ALLOW_ALL" FriendlyName="Allow all" FileName="*" />
+
+    <!-- WIP Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_RS_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.27749.0" />
+
+    <!-- Windows 11 24H2 Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_GE_CNG_SYS" FileName="cng.sys" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_HVAA64_EXE" FileName="hvaa64.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.2033" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_WINLOAD_SYS" FileName="winload.sys" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+
+    <!-- Windows 11 24H2 User mode (Scenario 12) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_GE_AZUREATTEST_DLL" FileName="AzureAttest.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_BIOISO_EXE" FileName="BioIso.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FSISO_EXE" FileName="FsIso.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_IUMCRYPT_DLL" FileName="iumcrypt.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_NGCISO_EXE" FileName="NgcIso.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SDFHOST_DLL" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SECUREUSBVIDEO_EXE" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SDFUSBXHCI_EXE" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_WUDFCOMPANIONHOST_EXE" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SGRMENCLAVE_DLL" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_VERTDLL_DLL" FileName="vertdll.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_CRYPTSP_DLL" FileName="cryptsp.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_KERB3961_DLL" FileName="Kerb3961.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_KERBCLIENTSHARED_DLL" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_KERNEL32" FileName="kernel32" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_KERNELBASE_DLL" FileName="Kernelbase.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_MSASN1_DLL" FileName="msasn1.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_MSVCP_WIN_DLL" FileName="msvcp_win.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_NSI_DLL" FileName="nsi.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_NTDLL_DLL" FileName="ntdll.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_NTLMSHARED_DLL" FileName="NtlmShared.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SBRESOURCES_DLL" FileName="sbresources.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SFAPE_DLL" FileName="SFAPE.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_TPMENGUM138_DLL" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_TPRT_DLL" FileName="tprt.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_VMSVC_DLL" FileName="vmsvc.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_WIN32U_DLL" FileName="Win32u.DLL" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_WOW64_DLL" FileName="wow64.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_WOW64BASE_DLL" FileName="wow64base.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_WOW64CON_DLL" FileName="wow64con.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_WOW64CPU_DLL" FileName="wow64cpu.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_WOW64LG2_DLL" FileName="wow64lg2.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="7.0.25400.0" MaximumFileVersion="7.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_ONNXRUNTIME_DLL" FileName="onnxruntime.dll" MinimumFileVersion="1.17.2403.0" MaximumFileVersion="1.17.2403.1200" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACEDETECTORRESOURCES_DLL" FileName="FaceDetectorResources.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACEPROCESSORCORE_DLL" FileName="FaceProcessorCore.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTER_DLL" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_DLL" FileName="FaceRecognitionEngineAdapterResources.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V2_DLL" FileName="FaceRecognitionEngineAdapterResources_v2.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V3_DLL" FileName="FaceRecognitionEngineAdapterResources_v3.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V5_DLL" FileName="FaceRecognitionEngineAdapterResources_v5.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" FileName="FaceRecognitionEngineAdapterResourcesCore.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCESSECURE_DLL" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONSENSORADAPTERRESOURCES_DLL" FileName="FaceRecognitionSensorAdapterResources.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACERECOGNITIONSENSORADAPTER_DLL" FileName="FaceRecognitionSensorAdapter.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_FACETRACKERINTERNAL_DLL" FileName="FaceTrackerInternal.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_HCIUSAGEENC_DLL" FileName="hciusageenc.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+
+    <!-- Windows Server 23H2 Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_ZN_CNG_SYS" FileName="cng.sys" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_HVAA64_EXE" FileName="hvaa64.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.1189" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_WINLOAD_SYS" FileName="winload.sys" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+
+    <!-- Windows Server 23H2 User mode (Scenario 12) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_ZN_AZUREATTEST_DLL" FileName="AzureAttest.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_IUMCRYPT_DLL" FileName="iumcrypt.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SDFHOST_DLL" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SDFUSBXHCI_EXE" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_WUDFCOMPANIONHOST_EXE" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SGRMENCLAVE_DLL" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_VERTDLL_DLL" FileName="vertdll.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.762" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.762" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_CRYPTSP_DLL" FileName="cryptsp.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_KERB3961_DLL" FileName="Kerb3961.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_KERBCLIENTSHARED_DLL" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.708" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_KERNEL32" FileName="kernel32" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.762" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_KERNELBASE_DLL" FileName="Kernelbase.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_MSASN1_DLL" FileName="msasn1.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_MSVCP_WIN_DLL" FileName="msvcp_win.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_NSI_DLL" FileName="nsi.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_NTDLL_DLL" FileName="ntdll.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.762" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_NTLMSHARED_DLL" FileName="NtlmShared.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.530" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SBRESOURCES_DLL" FileName="sbresources.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.762" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SFAPE_DLL" FileName="SFAPE.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_TPMENGUM138_DLL" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_VMSVC_DLL" FileName="vmsvc.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_WIN32U_DLL" FileName="Win32u.DLL" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_WOW64_DLL" FileName="wow64.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_WOW64CPU_DLL" FileName="wow64cpu.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_WOW64LG2_DLL" FileName="wow64lg2.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="7.0.23000.0" MaximumFileVersion="7.0.25398.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_HCIUSAGEENC_DLL" FileName="hciusageenc.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.762" />
+
+    <!-- Windows 11 22H2 Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_NI_CNG_SYS" FileName="cng.sys" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_HVAA64_EXE" FileName="hvaa64.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.4317" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <!-- NI User mode (Scenario 12) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_NI_AZUREATTEST_DLL" FileName="AzureAttest.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_BIOISO_EXE" FileName="BioIso.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FSISO_EXE" FileName="FsIso.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_IUMCRYPT_DLL" FileName="iumcrypt.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_NGCISO_EXE" FileName="NgcIso.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SDFHOST_DLL" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SECUREUSBVIDEO_EXE" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SDFUSBXHCI_EXE" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_WUDFCOMPANIONHOST_EXE" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SGRMENCLAVE_DLL" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3443" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_VERTDLL_DLL" FileName="vertdll.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_CRYPTSP_DLL" FileName="cryptsp.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_KERBCLIENTSHARED_DLL" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_KERNEL32" FileName="kernel32.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_KERNELBASE_DLL" FileName="Kernelbase.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_MSASN1_DLL" FileName="msasn1.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_MSVCP_WIN_DLL" FileName="msvcp_win.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_NSI_DLL" FileName="nsi.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_NTDLL_DLL" FileName="ntdll.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_NTLMSHARED_DLL" FileName="NtlmShared.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SBRESOURCES_DLL" FileName="sbresources.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.1" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3295" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SFAPE_DLL" FileName="SFAPE.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_TPMENGUM138_DLL" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_WIN32U_DLL" FileName="Win32u.DLL" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_WOW64_DLL" FileName="wow64.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_WOW64CPU_DLL" FileName="wow64cpu.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_WOW64LG2_DLL" FileName="wow64lg2.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="7.0.22001.0" MaximumFileVersion="7.0.22621.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_ONNXRUNTIME_DLL" FileName="onnxruntime.dll" MinimumFileVersion="1.10.2201.0" MaximumFileVersion="1.10.2201.2622" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACEDETECTORRESOURCES_DLL" FileName="FaceDetectorResources.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACEPROCESSORCORE_DLL" FileName="FaceProcessorCore.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTER_DLL" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_DLL" FileName="FaceRecognitionEngineAdapterResources.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V2_DLL" FileName="FaceRecognitionEngineAdapterResources_v2.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V3_DLL" FileName="FaceRecognitionEngineAdapterResources_v3.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V5_DLL" FileName="FaceRecognitionEngineAdapterResources_v5.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" FileName="FaceRecognitionEngineAdapterResourcesCore.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCESSECURE_DLL" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONSENSORADAPTERRESOURCES_DLL" FileName="FaceRecognitionSensorAdapterResources.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACERECOGNITIONSENSORADAPTER_DLL" FileName="FaceRecognitionSensorAdapter.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_FACETRACKERINTERNAL_DLL" FileName="FaceTrackerInternal.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
+
+    <!-- Windows 11 21H2 Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_CO_CNG_SYS" FileName="cng.sys" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_HVAA64_EXE" FileName="hvaa64.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.3260" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+
+    <!-- Windows 11 21H2 User mode (Scenario 12) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_CO_AZUREATTEST_DLL" FileName="AzureAttest.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_BIOISO_EXE" FileName="BioIso.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_FSISO_EXE" FileName="FsIso.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_IUMCRYPT_DLL" FileName="iumcrypt.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_NGCISO_EXE" FileName="NgcIso.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.22000.2776" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_SDFHOST_DLL" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_SECUREUSBVIDEO_EXE" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_SDFUSBXHCI_EXE" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_WUDFCOMPANIONHOST_EXE" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_SGRMENCLAVE_DLL" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_VERTDLL_DLL" FileName="vertdll.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2835" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_CRYPTSP_DLL" FileName="cryptsp.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_KERBCLIENTSHARED_DLL" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_KERNEL32" FileName="kernel32" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2835" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_KERNELBASE_DLL" FileName="Kernelbase.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_MSASN1_DLL" FileName="msasn1.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_MSVCP_WIN_DLL" FileName="msvcp_win.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_NSI_DLL" FileName="nsi.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_NTDLL_DLL" FileName="ntdll.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2835" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_NTLMSHARED_DLL" FileName="NtlmShared.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_SBRESOURCES_DLL" FileName="sbresources.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2835" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_TPMENGUM138_DLL" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" FriendlyName="f:\Windows\System32\Ucrtbase.dll" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_WIN32U_DLL" FileName="Win32u.DLL" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_WOW64_DLL" FileName="wow64.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_WOW64CPU_DLL" FileName="wow64cpu.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_WOW64LG2_DLL" FileName="wow64lg2.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2599" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="7.0.20400.0" MaximumFileVersion="7.0.22000.0" />
+
+    <!-- Windows Server 2022 Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_FE_CNG_SYS" FileName="cng.sys" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_HVAA64_EXE" FileName="hvaa64.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2760" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2401" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2401" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_WINLOAD_SYS" FileName="winload.sys" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2109" />
+
+    <!-- Windows Server 2022 User mode (Scenario 12) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_FE_AZUREATTEST_DLL" FileName="AzureAttest.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.1786" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.468" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_IUMCRYPT_DLL" FileName="iumcrypt.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.468" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.0" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.680" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_SDFHOST_DLL" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.0" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_SDFUSBXHCI_EXE" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.0" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_WUDFCOMPANIONHOST_EXE" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.1667" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_SGRMENCLAVE_DLL" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_VERTDLL_DLL" FileName="vertdll.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2339" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2339" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.0" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_CRYPTSP_DLL" FileName="cryptsp.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2109" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_KERBCLIENTSHARED_DLL" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_KERNEL32" FileName="kernel32" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2339" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_KERNELBASE_DLL" FileName="Kernelbase.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_MSASN1_DLL" FileName="msasn1.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.1248" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_MSVCP_WIN_DLL" FileName="msvcp_win.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.0" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_NSI_DLL" FileName="nsi.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2112" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_NTDLL_DLL" FileName="ntdll.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_NTLMSHARED_DLL" FileName="NtlmShared.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.1667" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_SBRESOURCES_DLL" FileName="sbresources.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.680" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2339" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.0" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_TPMENGUM138_DLL" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.0" FriendlyName="e:\Windows\System32\Ucrtbase.dll" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_WIN32U_DLL" FileName="Win32u.DLL" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_WOW64_DLL" FileName="wow64.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.1786" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_WOW64CPU_DLL" FileName="wow64cpu.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.1786" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_WOW64LG2_DLL" FileName="wow64lg2.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.1486" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.260" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="7.0.19100.0" MaximumFileVersion="7.0.20348.0" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_HCIUSAGEENC_DLL" FileName="hciusageenc.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2030" />
+
+    <!-- Windows 10 21H2 Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_VB_CNG_SYS" FileName="cng.sys" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_HVAA64_EXE" FileName="hvaa64.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.5007" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+
+    <!-- Windows 10 21H2 User mode (Scenario 12) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_VB_BIOISO_EXE" FileName="BioIso.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_FSISO_EXE" FileName="FsIso.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3995" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_IUMCRYPT_DLL" FileName="iumcrypt.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.0" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_NGCISO_EXE" FileName="NgcIso.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3995" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_SDFHOST_DLL" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.0" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_SECUREUSBVIDEO_EXE" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3757" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_SDFUSBXHCI_EXE" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3995" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_WUDFCOMPANIONHOST_EXE" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3757" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_SGRMENCLAVE_DLL" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.0" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_VERTDLL_DLL" FileName="vertdll.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_CRYPTSP_DLL" FileName="cryptsp.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_KERBCLIENTSHARED_DLL" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_KERNEL32" FileName="kernel32" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_KERNELBASE_DLL" FileName="Kernelbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_MSASN1_DLL" FileName="msasn1.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_MSVCP_WIN_DLL" FileName="msvcp_win.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_NSI_DLL" FileName="nsi.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_NTDLL_DLL" FileName="ntdll.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4238" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_NTLMSHARED_DLL" FileName="NtlmShared.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_SBRESOURCES_DLL" FileName="sbresources.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4169" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_TPMENGUM138_DLL" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_WIN32U_DLL" FileName="Win32u.DLL" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_WOW64_DLL" FileName="wow64.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_WOW64CPU_DLL" FileName="wow64cpu.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_WOW64LG2_DLL" FileName="wow64lg2.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3995" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="7.0.18000.0" MaximumFileVersion="7.0.19041.0" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTER_DLL" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" FileName="FaceRecognitionEngineAdapterResourcesCore.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCESSECURE_DLL" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_FACERECOGNITIONSENSORADAPTER_DLL" FileName="FaceRecognitionSensorAdapter.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+
+    <!-- Windows Server 2016/Windows 10 1809 Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_RS5_CNG_SYS" FileName="cng.sys" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4839" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_HVAA64_EXE" FileName="hvaa64.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.6414" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+
+    <!-- Windows Server 2019/Windows 10 1809 User mode (Scenario 12) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_RS5_FSISO_EXE" FileName="FsIso.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.2299" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4850" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_IUMCRYPT_DLL" FileName="iumcrypt.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4850" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_NGCISO_EXE" FileName="NgcIso.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_SDFHOST_DLL" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_SECUREUSBVIDEO_EXE" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_SDFUSBXHCI_EXE" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4009" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_WUDFCOMPANIONHOST_EXE" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_SGRMENCLAVE_DLL" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_VERTDLL_DLL" FileName="vertdll.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4850" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4643" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.3886" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_CRYPTSP_DLL" FileName="cryptsp.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4973" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_KERBCLIENTSHARED_DLL" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_KERNEL32" FileName="kernel32" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4973" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_KERNELBASE_DLL" FileName="Kernelbase.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_MSASN1_DLL" FileName="msasn1.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.3649" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_MSVCP_WIN_DLL" FileName="msvcp_win.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.347" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_NSI_DLL" FileName="nsi.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.1553" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_NTDLL_DLL" FileName="ntdll.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5457" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_NTLMSHARED_DLL" FileName="NtlmShared.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4251" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_SBRESOURCES_DLL" FileName="sbresources.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5575" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" FriendlyName="e:\Windows\System32\Ucrtbase.dll" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_WIN32U_DLL" FileName="Win32u.DLL" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_WOW64_DLL" FileName="wow64.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.2685" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_WOW64CPU_DLL" FileName="wow64cpu.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_WOW64LG2_DLL" FileName="wow64lg2.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.3886" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.2027" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="7.0.14400.0" MaximumFileVersion="7.0.17763.0" />
+
+    <!-- Windows Server 2016/Windows 10 1607 Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_RS1_CNG_SYS" FileName="cng.sys" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6980" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6980" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6980" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_HVLOADER_EFI" FileName="hvloader.efi" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6980" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_HVLOADER_EXE" FileName="hvloader.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6980" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.7426" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+
+    <!-- Windows Server 2016/Windows 10 1607 User mode (Scenario 12) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_RS1_BIOISO_EXE" FileName="BioIso.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14392.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.2968" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_IUMCRYPT_DLL" FileName="iumcrypt.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.2968" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14392.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6077" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.4769" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14392.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_CRYPTSP_DLL" FileName="cryptsp.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.2968" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_KERBCLIENTSHARED_DLL" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_KERNEL32" FileName="kernel32" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.5785" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_KERNELBASE_DLL" FileName="Kernelbase.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_MSASN1_DLL" FileName="msasn1.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.5500" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_MSVCP_WIN_DLL" FileName="msvcp_win.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.2998" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_NSI_DLL" FileName="nsi.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.3296" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_NTDLL_DLL" FileName="ntdll.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6342" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_NTLMSHARED_DLL" FileName="NtlmShared.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.5849" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_SBRESOURCES_DLL" FileName="SBRESOURCES.DLL" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.2006" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6794" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.3658" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_WIN32U_DLL" FileName="Win32u.DLL" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6980" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_WOW64_DLL" FileName="wow64.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.3502" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_WOW64CPU_DLL" FileName="wow64cpu.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.3502" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_WOW64LG2_DLL" FileName="wow64lg2.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.3382" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.3240" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="7.0.10300.0" MaximumFileVersion="7.0.14393.2456" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_FACERECOGNITIONENGINEADAPTER_DLL" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.4168" />
+
+    <!-- Windows 10 1507 Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_TH1_CNG_SYS" FileName="cng.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_HVLOADER_EFI" FileName="hvloader.efi" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_HVLOADER_EXE" FileName="hvloader.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20793" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+
+    <!-- Windows 10 1507 User mode (Scenario 12) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_TH1_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.17737" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.17737" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_PSP_EXE" FileName="psp.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.16383" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20047" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.19264" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.16383" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_CRYPTSP_DLL" FileName="cryptsp.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.16383" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_KERBCLIENTSHARED_DLL" FileName="KerbClientSHared.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_KERNEL32" FileName="kernel32" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.19804" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_KERNELBASE_DLL" FileName="Kernelbase.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_MSASN1_DLL" FileName="msasn1.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.19566" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_NSI_DLL" FileName="nsi.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.16383" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_NTDLL_DLL" FileName="ntdll.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20525" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_NTLMSHARED_DLL" FileName="NtlmShared.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.19868" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20522" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.17608" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.16941" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="7.0.10240.19234" />
+  </FileRules>
+  <Signers>
+    <!-- Match a specific set of Windows production signed binaries -->
+    <Signer ID="ID_SIGNER_IUM_DENIED_WINDOWS_PRODUCTION" Name="IUM Production denied">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_IUM"/>
+      <CertEKU ID="ID_EKU_WINDOWS"/>
+
+      <!-- Windows 11 24H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_KERB3961_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SFAPE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TPRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_VMSVC_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64BASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64CON_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_ONNXRUNTIME_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACEDETECTORRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACEPROCESSORCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V3_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V5_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCESSECURE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONSENSORADAPTERRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONSENSORADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACETRACKERINTERNAL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HCIUSAGEENC_DLL" />
+
+      <!-- Windows Server 23H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_KERB3961_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SFAPE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_VMSVC_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HCIUSAGEENC_DLL" />
+
+      <!-- Windows 22H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SFAPE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_ONNXRUNTIME_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACEDETECTORRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACEPROCESSORCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V3_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V5_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCESSECURE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONSENSORADAPTERRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONSENSORADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACETRACKERINTERNAL_DLL" />
+
+      <!-- Windows 21H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_MSVCRT_DLL" />
+
+      <!-- Windows Server 2022 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HCIUSAGEENC_DLL" />
+
+      <!-- Windows 10 21H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCESSECURE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONSENSORADAPTER_DLL" />
+
+      <!-- Windows Server 2019/Windows 10 1809 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_MSVCRT_DLL" />
+
+      <!-- Windows Server 2016/Windows 10 1607 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_FACERECOGNITIONENGINEADAPTER_DLL" />
+
+      <!-- Windows 10 1507 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_MSVCRT_DLL" />
+    </Signer>
+
+    <!-- Match a specific set of Windows flight signed binaries -->
+    <Signer ID="ID_SIGNER_IUM_DENIED_WINDOWS_FLIGHT" Name="IUM Flight denied">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_IUM"/>
+      <CertEKU ID="ID_EKU_WINDOWS"/>
+
+      <!-- Windows 11 24H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_KERB3961_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SFAPE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TPRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_VMSVC_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64BASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64CON_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_ONNXRUNTIME_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACEDETECTORRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACEPROCESSORCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V3_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCES_V5_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONENGINEADAPTERRESOURCESSECURE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONSENSORADAPTERRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACERECOGNITIONSENSORADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_FACETRACKERINTERNAL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HCIUSAGEENC_DLL" />
+
+      <!-- Windows Server 23H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_KERB3961_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SFAPE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_VMSVC_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HCIUSAGEENC_DLL" />
+
+      <!-- Windows 22H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SFAPE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_ONNXRUNTIME_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACEDETECTORRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACEPROCESSORCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V3_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCES_V5_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONENGINEADAPTERRESOURCESSECURE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONSENSORADAPTERRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACERECOGNITIONSENSORADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_FACETRACKERINTERNAL_DLL" />
+
+      <!-- Windows 21H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_MSVCRT_DLL" />
+
+      <!-- Windows Server 2022 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_AZUREATTEST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HCIUSAGEENC_DLL" />
+
+      <!-- Windows 10 21H2 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TPMENGUM138_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCESSECURE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONSENSORADAPTER_DLL" />
+
+      <!-- Windows Server 2019/Windows 10 1809 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_FSISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NGCISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SDFHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SECUREUSBVIDEO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SDFUSBXHCI_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WUDFCOMPANIONHOST_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SGRMENCLAVE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_VERTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_MSVCRT_DLL" />
+
+      <!-- Windows Server 2016/Windows 10 1607 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_BIOISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMSDK_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_MSVCP_WIN_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_SBRESOURCES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_UCRTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WIN32U_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WOW64_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WOW64CPU_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WOW64LG2_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_MSVCRT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_FACERECOGNITIONENGINEADAPTER_DLL" />
+
+      <!-- Windows 10 1507 User mode (Scenario 12) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_IUMBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_PSP_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_BCRYPT_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_BCRYPTPRIMITIVES_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_CRYPTBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_CRYPTSP_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_KERBCLIENTSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_KERNEL32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_KERNELBASE_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_MSASN1_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_NSI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_NTDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_NTLMSHARED_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_RPCRT4_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_TBS_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_TPMENGUM_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_WS2_32_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_MSVCRT_DLL" />
+    </Signer>
+
+    <!-- Match a specific set of Windows production signed binaries -->
+    <Signer ID="ID_SIGNER_KERNEL_DENIED_WINDOWS_PRODUCTION" Name="Kernel/Boot Production denied">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_WINDOWS"/>
+
+      <!-- RS Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS_SECUREKERNEL_EXE" />
+
+      <!-- Windows 11 24H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_OSLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WINLOAD_SYS" />
+
+      <!-- Windows Server 23H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_OSLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WINLOAD_SYS" />
+
+      <!-- Windows 22H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_OSLOADER_EXE" />
+
+      <!-- Windows 21H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_OSLOADER_EXE" />
+
+      <!-- Windows Server 2022 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_OSLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WINLOAD_SYS" />
+
+      <!-- Windows 10 21H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_OSLOADER_EXE" />
+
+      <!-- Windows Server 2019/Windows 10 1809 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_OSLOADER_EXE" />
+
+      <!-- Windows Server 2016/Windows 10 1607 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_HVLOADER_EFI" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_HVLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_OSLOADER_EXE" />
+
+      <!-- Windows 10 1507 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_HVLOADER_EFI" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_HVLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_OSLOADER_EXE" />
+    </Signer>
+
+    <!-- Match a specific set of Windows flight signed binaries -->
+    <Signer ID="ID_SIGNER_KERNEL_DENIED_WINDOWS_FLIGHT" Name="Kernel/Boot Flight denied">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_WINDOWS"/>
+
+      <!-- RS Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS_SECUREKERNEL_EXE" />
+
+      <!-- Windows 11 24H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_OSLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GE_WINLOAD_SYS" />
+
+      <!-- Windows Server 23H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_OSLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_WINLOAD_SYS" />
+
+      <!-- Windows 22H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_OSLOADER_EXE" />
+
+      <!-- Windows 21H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CO_OSLOADER_EXE" />
+
+      <!-- Windows Server 2022 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_OSLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FE_WINLOAD_SYS" />
+
+      <!-- Windows 10 21H2 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VB_OSLOADER_EXE" />
+
+      <!-- Windows Server 2019/Windows 10 1809 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_HVAA64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_HVLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_TCBLAUNCH_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_TCBLOADER_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_OSLOADER_EXE" />
+
+      <!-- Windows Server 2016/Windows 10 1607 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_HVLOADER_EFI" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_HVLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_OSLOADER_EXE" />
+
+      <!-- Windows 10 1507 Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_CNG_SYS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_HVAX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_HVIX64_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_HVLOADER_EFI" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_HVLOADER_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_SECUREKERNEL_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_SKCI_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_OSLOADER_EXE" />
+    </Signer>
+
+    <!-- Policy Update Signer must be Microsoft Windows signed-->
+    <Signer ID="ID_SIGNER_POLICY_WINDOWS" Name="Microsoft Root Certificate Authority 2010 with Windows EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_WINDOWS"/>
+    </Signer>
+  </Signers>
+
+  <!--Driver Signing Scenarios-->
+  <!-- Allow everything CI would normally allow except those explicitly denied -->
+  <SigningScenarios>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="IUM Rules">
+      <ProductSigners>
+        <DeniedSigners>
+          <DeniedSigner SignerId="ID_SIGNER_IUM_DENIED_WINDOWS_PRODUCTION" />
+          <DeniedSigner SignerId="ID_SIGNER_IUM_DENIED_WINDOWS_FLIGHT" />
+        </DeniedSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_ALL" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_KERNEL" FriendlyName="Kernel Rules">
+      <ProductSigners>
+        <DeniedSigners>
+          <DeniedSigner SignerId="ID_SIGNER_KERNEL_DENIED_WINDOWS_PRODUCTION" />
+          <DeniedSigner SignerId="ID_SIGNER_KERNEL_DENIED_WINDOWS_FLIGHT" />
+        </DeniedSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_ALL" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+
+  <UpdatePolicySigners />
+  <CiSigners />
+  <HvciOptions>0</HvciOptions>
+
+  <Settings>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>Microsoft Virtualization Based Security Audit Policy</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>1.0.0.5</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>

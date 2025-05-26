@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<xs:schema 
+      targetNamespace="http://www.microsoft.com/provisioning/MsChapV2ConnectionPropertiesV1" 
+      elementFormDefault="qualified" 
+      xmlns="http://www.microsoft.com/provisioning/MsChapV2ConnectionPropertiesV1" 
+      xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+      xmlns:baseEap="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1" 
+      version="1.0"
+   >
+   <xs:import 
+      namespace="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1" 
+      schemaLocation="BaseEapConnectionPropertiesV1.xsd" 
+   />
+   <xs:element name="EapType" substitutionGroup="baseEap:EapType">              
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="baseEap:BaseEapTypeParameters">
+                <xs:sequence>
+                    <xs:element name="UseWinLogonCredentials" type="xs:boolean" minOccurs="0" default="true"/>
+                    <!-- extension point for other namespaces -->
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##other"/>
+                </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>   
+</xs:schema>
+

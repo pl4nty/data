@@ -1,0 +1,195 @@
+<xs:schema targetNamespace="http://www.microsoft.com/networking/CarrierControl/v2"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/networking/CarrierControl/v2"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:base="http://www.microsoft.com/networking/CarrierControl/Base/v1"
+>
+
+  <xs:import namespace="http://www.microsoft.com/networking/CarrierControl/Base/v1" />
+
+  <xs:complexType name="ApnContextType">
+    <xs:sequence>
+      <xs:element name="AccessString" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="100"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="UserLogonCred" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="UserName" type="base:NameType"/>
+            <xs:element name="Password" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Compression" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="DISABLE"/>
+            <xs:enumeration value="ENABLE"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="AuthProtocol" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="NONE"/>
+            <xs:enumeration value="PAP"/>
+            <xs:enumeration value="CHAP"/>
+            <xs:enumeration value="MsCHAPv2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="MTUType">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="1280" />
+      <xs:maxInclusive value="1500" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DNSRetryIntervalType">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DNSRetryCountType">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="DNSRetrySettingsType">
+    <xs:sequence>
+      <xs:element name="DNSRetryIntervalInSeconds" type="DNSRetryIntervalType" />
+      <xs:element name="DNSRetryCount" type="DNSRetryCountType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="FriendlyNameType">
+    <xs:restriction base="xs:normalizedString">
+      <xs:minLength value="1" />
+      <xs:maxLength value="15" />
+      <xs:whiteSpace value="collapse" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TetheringMaxNumberofDeviceType">
+    <xs:restriction base="xs:positiveInteger" >
+      <xs:minInclusive value="3"/>
+      <xs:maxInclusive value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PhoneNumberType">
+    <xs:restriction base="xs:normalizedString">
+      <xs:minLength value="0" />
+      <xs:maxLength value="25" />
+      <xs:whiteSpace value="collapse" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="NetworkSettingsType">
+    <xs:sequence>
+      <xs:element name="IPv4LinkMTU" type="MTUType" minOccurs="0" />
+      <xs:element name="IPv6LinkMTU" type="MTUType" minOccurs="0" />
+      <xs:element name="DNSRetrySettings" type="DNSRetrySettingsType" minOccurs="0" />
+    </xs:sequence>
+
+  </xs:complexType>
+
+  <xs:complexType name="DataClassFriendlyNamesType">
+    <xs:sequence>
+      <xs:element name="NONE" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="GPRS" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="EDGE" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="UMTS" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="HSDPA" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="HSUPA" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="LTE" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="ONEXRTT" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="ONEXEVDO" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="ONEXEVDO_REVA" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="ONEXEVDV" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="THREEXRTT" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="ONEXEVDO_REVB" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="UMB" type="FriendlyNameType" minOccurs="0" />
+      <xs:element name="CUSTOM" type="FriendlyNameType" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AppIDListType">
+    <xs:sequence>
+      <xs:element name="AppID" type="xs:string" minOccurs="0"  maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PDPContextPolicyType">
+    <xs:sequence>
+      <xs:element name="Name" type="base:NameType" />
+      <xs:element name="Context" type="ApnContextType" />
+      <xs:element name="AppIDList" type="AppIDListType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MultiplePDPContextPoliciesType">
+    <xs:sequence>
+      <xs:element name="PDPContextPolicy" type="PDPContextPolicyType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="MultiplePDPContextSupport" type="xs:boolean" default="true" />
+  </xs:complexType>
+
+  <xs:complexType name="TetheringProfileType">
+  <xs:sequence>
+    <xs:element name="Name" type="base:NameType" />
+    <xs:element name="Context" type="ApnContextType" />
+  </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TetheringSettingsType">
+     <xs:sequence>
+      <xs:element name="TetheringProfile" type="TetheringProfileType" minOccurs="0" />
+       <xs:element name="MaxNumberOfDevices" type="TetheringMaxNumberofDeviceType" minOccurs="0" />
+     </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:element name="Extensions_v2">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="CarrierNetworkMetadata" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NetworkSettings"  type="NetworkSettingsType" minOccurs="0" />
+              <xs:element name="DataClassFriendlyNames" type="DataClassFriendlyNamesType" minOccurs="0" />
+              <xs:element name="CustomerSupportPhoneNumber" type="PhoneNumberType" minOccurs="0" />
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="AdditionalPDPContexts" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="MultiplePDPContextPolicies" type="MultiplePDPContextPoliciesType" minOccurs="0"  />
+              <xs:element name="TetheringSettings" type="TetheringSettingsType" minOccurs="0" />
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
