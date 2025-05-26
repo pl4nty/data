@@ -2655,4 +2655,32 @@ getOrgIdScrubbed = function()
   return 
 end
 
+isDefenderPath = function(l_85_0)
+  -- function num : 0_84
+  if l_85_0 == nil then
+    return 
+  end
+  local l_85_1 = normalize_path(l_85_0)
+  if l_85_1 == nil then
+    return 
+  end
+  l_85_1 = (string.lower)(l_85_1)
+  do
+    local l_85_2 = {}
+    -- DECOMPILER ERROR at PC20: No list found for R2 , SetList fails
+
+    -- DECOMPILER ERROR at PC21: Overwrote pending register: R3 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC22: Overwrote pending register: R4 in 'AssignReg'
+
+    for l_85_6,l_85_7 in ("c:\\programdata\\microsoft\\windows defender")("c:\\program files\\windows defender") do
+      if (string.find)(l_85_1, l_85_7, 1, true) then
+        return true
+      end
+    end
+    do return false end
+    -- WARNING: undefined locals caused missing assignments!
+  end
+end
+
 
