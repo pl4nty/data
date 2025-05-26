@@ -234,6 +234,7 @@
         "EnableAutoReservePartnerForWVDAndDedicated": true,
         "EnableAutoResetForUX": true,
         "EnableAutoResetTimer": true,
+        "EnableAutoUndispatchedQuotaGenerate": true,
         "EnableAutomaticDataCorrection": true,
         "EnableAutopatchAutomaticOnboardInBackend": true,
         "EnableAutopatchAutomaticOnboardInFrontend": true,
