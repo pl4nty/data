@@ -86,9 +86,11 @@ if not (MpCommon.PathToWin32Path)(l_0_0) then
                   if (l_0_8.Dll_PrevFileSize == -1 or l_0_8.Dll_PrevFileSize == 0) and l_0_8.Dll_FileSize > 0 then
                     AppendToRollingQueue(l_0_28, l_0_31, l_0_8.Dll_FileSize, l_0_29, l_0_30)
                   else
-                    l_0_8.Dll_PrevFileSize = tonumber(l_0_8.Dll_PrevFileSize)
-                    if l_0_8.Dll_PrevFileSize * 2 < l_0_8.Dll_FileSize or l_0_8.Dll_FileSize < l_0_8.Dll_PrevFileSize / 2 then
-                      l_0_8.DllFileSizeAnomalous = true
+                    if l_0_8.Dll_FileSize > 0 then
+                      l_0_8.Dll_PrevFileSize = tonumber(l_0_8.Dll_PrevFileSize)
+                      if l_0_8.Dll_PrevFileSize * 2 < l_0_8.Dll_FileSize or l_0_8.Dll_FileSize < l_0_8.Dll_PrevFileSize / 2 then
+                        l_0_8.DllFileSizeAnomalous = true
+                      end
                     end
                   end
                   if l_0_8.Dll_PrevFileSize == -1 and not l_0_24 then
@@ -110,16 +112,16 @@ if not (MpCommon.PathToWin32Path)(l_0_0) then
                       if not (sysio.GetPEVersionInfo)(l_0_2) then
                         local l_0_36, l_0_37, l_0_38, l_0_39 = {}
                       end
-                      -- DECOMPILER ERROR at PC333: Confused about usage of register: R24 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC336: Confused about usage of register: R24 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC338: Confused about usage of register: R24 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC341: Confused about usage of register: R24 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC343: Confused about usage of register: R24 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC346: Confused about usage of register: R24 in 'UnsetPending'
 
                       do
                         local l_0_40 = nil
                         l_0_8.Dll_VersionInfo = (l_0_36.OriginalFilename or "") .. "|" .. (l_0_36.CompanyName or "") .. "|" .. (l_0_36.FileDescription or "")
-                        -- DECOMPILER ERROR at PC352: Confused about usage of register: R25 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC355: Confused about usage of register: R25 in 'UnsetPending'
 
                         AppendToRollingQueue(l_0_32, l_0_35, (l_0_36.OriginalFilename or "") .. "|" .. (l_0_36.CompanyName or "") .. "|" .. (l_0_36.FileDescription or ""), l_0_33, l_0_34)
                         if (string.find)(l_0_8.Dll_VersionInfo, "Microsoft", 1, true) then
@@ -146,7 +148,7 @@ if not (MpCommon.PathToWin32Path)(l_0_0) then
                               l_0_9 = l_0_9 + 10
                             end
                             local l_0_50, l_0_51 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_3)
-                            -- DECOMPILER ERROR at PC425: Unhandled construct in 'MakeBoolean' P1
+                            -- DECOMPILER ERROR at PC428: Unhandled construct in 'MakeBoolean' P1
 
                             if l_0_51 and l_0_51 ~= "NONE" then
                               l_0_8.POTENTIAL_SIDE_LOADING = l_0_51
@@ -207,7 +209,7 @@ if not (MpCommon.PathToWin32Path)(l_0_0) then
                               do
                                 do
                                   do return mp.CLEAN end
-                                  -- DECOMPILER ERROR at PC543: freeLocal<0 in 'ReleaseLocals'
+                                  -- DECOMPILER ERROR at PC546: freeLocal<0 in 'ReleaseLocals'
 
                                 end
                               end

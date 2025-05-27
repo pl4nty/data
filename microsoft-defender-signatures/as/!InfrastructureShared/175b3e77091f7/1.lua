@@ -159,7 +159,7 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
                       end
                       if l_0_40 and not l_0_41 then
                         l_0_4.Dll_PathNew = true
-                        l_0_5 = l_0_5 + 5
+                        l_0_5 = l_0_5 + 50
                       end
                       local l_0_49 = "Appomaly_LoadedDlls_Version"
                       local l_0_50 = 31536000
