@@ -156,17 +156,6 @@
                 "msNurturingOnboardNTPToCE"
             ]
         },
-        "PasswordZeroStateV2": {
-            "enableFeatures": [
-                "msNurturingCIPasswordZeroStateV2"
-            ],
-            "parameters": [
-                {
-                    "name": "ImpressionCap",
-                    "value": "5"
-                }
-            ]
-        },
         "PrerenderEfficiencyMode": {
             "enableFeatures": [
                 "msPrerenderEfficiencyMode",

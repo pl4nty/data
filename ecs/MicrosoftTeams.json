@@ -594,7 +594,6 @@
     "MicrosoftTeamsMiddleTier": {
         "ringSettings": {
             "settings": {
-                "decodeParentServerRelativeUrlForAddTeamChannelSPOApi": true,
                 "deltaPercentageUserNonHumanUserCountForTwt": 100,
                 "disableCreatedAtPropertyRemoval": true,
                 "enableAADSyncCrossCloudAdditionUpdates": true,
