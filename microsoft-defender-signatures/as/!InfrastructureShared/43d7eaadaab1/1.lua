@@ -22,7 +22,7 @@ do
 
   -- DECOMPILER ERROR at PC32: Overwrote pending register: R5 in 'AssignReg'
 
-  if not ("iex")("invoke-expression", "iwr") then
+  if not (" iex")("invoke-expression", "iwr") then
     return mp.CLEAN
   end
   do return mp.INFECTED end
