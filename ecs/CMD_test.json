@@ -553,6 +553,7 @@
         "EnableInstantDeliveryForPostProvisioningPlugin": true,
         "EnableIntegrityValidationForAmsActionHistory": true,
         "EnableIntegrityValidationForRasActionHistory": true,
+        "EnableIntegrityValidationForScopeTag": true,
         "EnableIntuneEnrollmentThrottlingForAADJ": true,
         "EnableIntunePartnerSync": true,
         "EnableIntuneReEnrollNewActionType": true,

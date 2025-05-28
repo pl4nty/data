@@ -792,6 +792,7 @@
             "profile": 20
         },
         "LokiThrottlingTimeWindow": 10,
+        "LookBackDays": 7,
         "LpcResourceUrl_BaseCdnUrl": "https://res-1.cdn.office.net",
         "LpcResourceUrl_CdnContainerName": "midgard",
         "LpcResourceUrl_MaxReactMajorVersion": 18,
@@ -817,6 +818,7 @@
             "TopP": 1
         },
         "NetCoreEndpointEnabled": true,
+        "NumberOfMeetings": 10,
         "ObjectStoreEndpointForRelatedBrands": "https://ObjectStoreFD.Prod.CO.binginternal.com/sds/ObjectStoreQuery/V1",
         "ObjectStoreFailoverUrl": "",
         "ObjectStoreReplVIP": "https://ObjectStoreReplFD.Prod.WestUS2.binginternal.com:443/sds",
