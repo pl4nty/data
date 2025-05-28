@@ -578,6 +578,7 @@
         "HostPoolEHMigrationInProgress": true,
         "IWP_ConnectRedisByMI": true,
         "IWP_Enable_BuildAbsoluteScaleUnitUri": true,
+        "IWP_Enable_BuildUriWithUriHelper": true,
         "IWP_Enable_Third_Party_HP": true,
         "IWP_Fidalgo": true,
         "IWP_Power_Automate": true,
