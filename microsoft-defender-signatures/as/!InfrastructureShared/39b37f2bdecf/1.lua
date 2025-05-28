@@ -8,7 +8,7 @@ if GetRollingQueue("ExtendedDeviceProperties") ~= nil then
 end
 local l_0_0 = nil
 if (this_sigattrlog[1]).matched then
-  l_0_0 = (this_sigattrlog[1]).utf8p2
+  l_0_0 = (this_sigattrlog[1]).utf8p1
 end
 if l_0_0 ~= nil then
   local l_0_1 = (string.gsub)(l_0_0, "^CBM:TagHVA!", "")

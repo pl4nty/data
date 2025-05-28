@@ -19,6 +19,12 @@ l_0_1["Trojan:Win32/DarkGate.ZY!sms"] = true
 l_0_1["Trojan:Win32/DarkGate.ZX!sms"] = true
 l_0_1["Trojan:Win32/PikaBot.ZZ!sms"] = true
 l_0_1["HackTool:Win64/CobaltStrike.I!sms"] = true
+l_0_1["Trojan:Win64/CobaltStrike.C!sms"] = true
+l_0_1["HackTool:Win64/CobaltStrike.F!sms"] = true
+l_0_1["HackTool:Win64/CobaltStrike.G!sms"] = true
+l_0_1["HackTool:Win64/CobaltStrike.E!sms"] = true
+l_0_1["VirTool:Win32/CobaltStrike.A"] = true
+l_0_1["HackTool:Win64/CobaltStrike.K!sms"] = true
 l_0_1["Trojan:Win64/Qakbot.A!sms"] = true
 l_0_1["VirTool:Win32/Bruterat.A!sms"] = true
 l_0_1["Trojan:Win32/Latrodectus.A!sms"] = true
@@ -30,6 +36,7 @@ l_0_1["Trojan:Win32/Lummac.SDA!sms"] = true
 l_0_1["Trojan:Win32/Lummac.SB!sms"] = true
 l_0_1["Trojan:Win32/LummaStealer.STB!sms"] = true
 l_0_1["Trojan:Win32/LummaStealer.STE!sms"] = true
+l_0_1["Trojan:Win32/LummaStealer.STG!sms"] = true
 l_0_1["Trojan:Win32/LummaStealer.Z!sms"] = true
 if not l_0_1[l_0_0.utf8p2] then
   (bm.trigger_sig)("MaceNonVetted_Sig", tostring(l_0_0.utf8p2))
