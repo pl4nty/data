@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Test EC Release",
+    "downloadDescription": "Test EC Release",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DecommissionDownloadCentre.pdf",
+            "url": "https://download.microsoft.com/download/1a5ae81b-a98f-4a03-b5b9-3bf81c137e13/DecommissionDownloadCentre.pdf",
+            "size": "149922",
+            "version": "1.2.3.4",
+            "datePublished": "5/27/2025 6:51:51 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test EC Release",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.3.4",
+    "detailsSection_file_name": [
+        "DecommissionDownloadCentre.pdf"
+    ],
+    "detailsSection_file_size": [
+        "146.4 KB"
+    ],
+    "detailsSection_file_date": "5/27/2025",
+    "systemRequirementsSection": "Test EC Release",
+    "systemRequirementsSection_supportedOS": [
+        "Microsoft Windows NT"
+    ],
+    "installInstructionSection": "Test EC Release",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108188",
+    "downloadPreload": true
+}
