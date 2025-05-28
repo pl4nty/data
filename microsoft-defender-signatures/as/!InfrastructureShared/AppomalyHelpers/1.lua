@@ -466,150 +466,153 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
                 if l_4_4.IP then
                   l_4_19 = l_4_0
                 else
-                  if not l_4_0:match("ftp://.*@([^:/]+)") then
-                    l_4_19 = l_4_0:match("^%a+://([^:/]+)")
-                  end
-                end
-                if not l_4_19 then
-                  l_4_4.Url_Score = 100
-                  l_4_4.ERROR = "Error grading url"
-                  return 100, l_4_4
-                end
-                local l_4_20, l_4_21, l_4_22 = AnomalyTableCheck("Appomaly_Network_HOST_Global", l_4_19, 30)
-                if l_4_20 == true and l_4_21 == false then
-                  l_4_3 = l_4_3 + 20
-                  l_4_4.AnomalousHost = l_4_22
-                else
-                  if l_4_20 == false and l_4_21 == false then
-                    l_4_4.URL_CLEAN = "Global_Url_Cache_SeenBefore"
-                    l_4_4.Url_Score = 0
-                    return 0, l_4_4
-                  end
-                end
-                local l_4_23 = GetRollingQueueKeyValue("Global_CLEAN_Url_Cache", l_4_19)
-                if l_4_23 then
-                  l_4_4.URL_CLEAN = "Global_Url_Cache"
-                  l_4_4.Url_Score = 0
-                  return 0, l_4_4
-                end
-                local l_4_24 = {}
-                l_4_24.SIG_CONTEXT = "Appomaly" .. l_4_1 or ""
-                l_4_24.FILELESS = "true"
-                l_4_24.CMDLINE_URL = "true"
-                local l_4_25 = GetCurrentPPID()
-                do
-                  if l_4_25 then
-                    local l_4_26, l_4_27 = GetAppomalyProcessAttribute(l_4_25)
-                    if l_4_27 then
-                      l_4_24.PROCESS_CONTEXT = l_4_27
+                  if (string.find)(l_4_1, "FAppAnomalousOutbound", 1, true) and not l_4_0:match("^%a+://([^:/]+)") then
+                    l_4_19 = l_4_0:match("([^:/]+)")
+                    if not l_4_0:match("ftp://.*@([^:/]+)") then
+                      l_4_19 = l_4_0:match("^%a+://([^:/]+)")
                     end
-                  end
-                  local l_4_28 = GetRollingQueueKeyValue("Global_Url_Cache_Appomaly", l_4_19)
-                  if l_4_28 then
-                    l_4_28 = tonumber(l_4_28)
-                    l_4_4.UrlRep_Determination = l_4_28
-                    if l_4_28 == 7 then
-                      l_4_3 = l_4_3 + 10
-                      l_4_4.SusUrlRep = true
+                    if not l_4_19 then
+                      l_4_4.Url_Score = 0
+                      l_4_4.ERROR = "Error grading url"
+                      return 0, l_4_4
+                    end
+                    local l_4_20, l_4_21, l_4_22 = AnomalyTableCheck("Appomaly_Network_HOST_Global", l_4_19, 30)
+                    if l_4_20 == true and l_4_21 == false then
+                      l_4_3 = l_4_3 + 20
+                      l_4_4.AnomalousHost = l_4_22
                     else
-                      if l_4_28 == 2 or l_4_28 == 3 or l_4_28 == 5 or l_4_28 == 6 then
-                        l_4_3 = l_4_3 + 100
-                        l_4_4.BadUrlRep = true
-                        local l_4_29 = (MpCommon.Base64Encode)(l_4_19 .. "_" .. l_4_28)
-                        ;
-                        (mp.set_mpattribute)("Appomaly_BadUrlRep_Found_" .. l_4_29)
+                      if l_4_20 == false and l_4_21 == false then
+                        l_4_4.URL_CLEAN = "Global_Url_Cache_SeenBefore"
+                        l_4_4.Url_Score = 0
+                        return 0, l_4_4
                       end
                     end
-                  else
+                    local l_4_23 = GetRollingQueueKeyValue("Global_CLEAN_Url_Cache", l_4_19)
+                    if l_4_23 then
+                      l_4_4.URL_CLEAN = "Global_Url_Cache"
+                      l_4_4.Url_Score = 0
+                      return 0, l_4_4
+                    end
+                    local l_4_24 = {}
+                    l_4_24.SIG_CONTEXT = "Appomaly" .. l_4_1 or ""
+                    l_4_24.FILELESS = "true"
+                    l_4_24.CMDLINE_URL = "true"
+                    local l_4_25 = GetCurrentPPID()
                     do
-                      if l_4_2 then
-                        local l_4_30 = SafeGetUrlReputation
-                        local l_4_31 = {}
-                        -- DECOMPILER ERROR at PC308: No list found for R25 , SetList fails
-
-                        -- DECOMPILER ERROR at PC309: Overwrote pending register: R26 in 'AssignReg'
-
-                        l_4_30 = l_4_30(l_4_31, l_4_0, false, 2000)
-                        if l_4_30 then
-                          l_4_31 = l_4_30.urls
-                          if l_4_31 then
-                            l_4_31 = l_4_30.urls
-                            l_4_31 = l_4_31[l_4_0]
-                            if l_4_31 then
-                              l_4_31 = l_4_30.urls
-                              l_4_31 = l_4_31[l_4_0]
-                              l_4_31 = l_4_31.determination
-                              if l_4_31 == 1 then
-                                l_4_31 = l_4_30.urls
-                                l_4_31 = l_4_31[l_4_0]
-                                l_4_31 = l_4_31.confidence
-                                if l_4_31 >= 90 then
-                                  l_4_31 = AppendToRollingQueue
-                                  l_4_31("Global_CLEAN_Url_Cache", l_4_19, 1, 1209600, 1000)
-                                  l_4_4.URL_CLEAN = "UrlRepLookup"
-                                  l_4_4.Url_Score = 0
-                                  l_4_31 = 0
-                                  return l_4_31, l_4_4
-                                end
-                              end
-                            end
+                      if l_4_25 then
+                        local l_4_26, l_4_27 = GetAppomalyProcessAttribute(l_4_25)
+                        if l_4_27 then
+                          l_4_24.PROCESS_CONTEXT = l_4_27
+                        end
+                      end
+                      local l_4_28 = GetRollingQueueKeyValue("Global_Url_Cache_Appomaly", l_4_19)
+                      if l_4_28 then
+                        l_4_28 = tonumber(l_4_28)
+                        l_4_4.UrlRep_Determination = l_4_28
+                        if l_4_28 == 7 then
+                          l_4_3 = l_4_3 + 10
+                          l_4_4.SusUrlRep = true
+                        else
+                          if l_4_28 == 2 or l_4_28 == 3 or l_4_28 == 5 or l_4_28 == 6 then
+                            l_4_3 = l_4_3 + 100
+                            l_4_4.BadUrlRep = true
+                            local l_4_29 = (MpCommon.Base64Encode)(l_4_19 .. "_" .. l_4_28)
+                            ;
+                            (mp.set_mpattribute)("Appomaly_BadUrlRep_Found_" .. l_4_29)
                           end
                         end
-                        if l_4_30 then
-                          l_4_31 = l_4_30.urls
-                          if l_4_31 then
-                            l_4_31 = l_4_30.urls
-                            l_4_31 = l_4_31[l_4_0]
-                            if l_4_31 then
+                      else
+                        do
+                          if l_4_2 then
+                            local l_4_30 = SafeGetUrlReputation
+                            local l_4_31 = {}
+                            -- DECOMPILER ERROR at PC327: No list found for R25 , SetList fails
+
+                            -- DECOMPILER ERROR at PC328: Overwrote pending register: R26 in 'AssignReg'
+
+                            l_4_30 = l_4_30(l_4_31, l_4_0, false, 2000)
+                            if l_4_30 then
                               l_4_31 = l_4_30.urls
-                              l_4_31 = l_4_31[l_4_0]
-                              l_4_31 = l_4_31.confidence
                               if l_4_31 then
-                                l_4_31 = AppendToRollingQueue
-                                l_4_31("Global_Url_Cache_Appomaly", l_4_19, ((l_4_30.urls)[l_4_0]).determination, 864000, 1000)
                                 l_4_31 = l_4_30.urls
                                 l_4_31 = l_4_31[l_4_0]
-                                l_4_31 = l_4_31.confidence
-                                l_4_4.UrlRep_Confidence = l_4_31
-                                l_4_31 = l_4_30.urls
-                                l_4_31 = l_4_31[l_4_0]
-                                l_4_31 = l_4_31.determination
-                                l_4_4.UrlRep_Determination = l_4_31
-                                l_4_31 = l_4_30.urls
-                                l_4_31 = l_4_31[l_4_0]
-                                l_4_31 = l_4_31.determination
-                                if l_4_31 ~= 4 then
+                                if l_4_31 then
                                   l_4_31 = l_4_30.urls
                                   l_4_31 = l_4_31[l_4_0]
                                   l_4_31 = l_4_31.determination
-                                  if l_4_31 ~= 1 then
-                                    do
+                                  if l_4_31 == 1 then
+                                    l_4_31 = l_4_30.urls
+                                    l_4_31 = l_4_31[l_4_0]
+                                    l_4_31 = l_4_31.confidence
+                                    if l_4_31 >= 90 then
+                                      l_4_31 = AppendToRollingQueue
+                                      l_4_31("Global_CLEAN_Url_Cache", l_4_19, 1, 1209600, 1000)
+                                      l_4_4.URL_CLEAN = "UrlRepLookup"
+                                      l_4_4.Url_Score = 0
+                                      l_4_31 = 0
+                                      return l_4_31, l_4_4
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                            if l_4_30 then
+                              l_4_31 = l_4_30.urls
+                              if l_4_31 then
+                                l_4_31 = l_4_30.urls
+                                l_4_31 = l_4_31[l_4_0]
+                                if l_4_31 then
+                                  l_4_31 = l_4_30.urls
+                                  l_4_31 = l_4_31[l_4_0]
+                                  l_4_31 = l_4_31.confidence
+                                  if l_4_31 then
+                                    l_4_31 = AppendToRollingQueue
+                                    l_4_31("Global_Url_Cache_Appomaly", l_4_19, ((l_4_30.urls)[l_4_0]).determination, 864000, 1000)
+                                    l_4_31 = l_4_30.urls
+                                    l_4_31 = l_4_31[l_4_0]
+                                    l_4_31 = l_4_31.confidence
+                                    l_4_4.UrlRep_Confidence = l_4_31
+                                    l_4_31 = l_4_30.urls
+                                    l_4_31 = l_4_31[l_4_0]
+                                    l_4_31 = l_4_31.determination
+                                    l_4_4.UrlRep_Determination = l_4_31
+                                    l_4_31 = l_4_30.urls
+                                    l_4_31 = l_4_31[l_4_0]
+                                    l_4_31 = l_4_31.determination
+                                    if l_4_31 ~= 4 then
                                       l_4_31 = l_4_30.urls
                                       l_4_31 = l_4_31[l_4_0]
                                       l_4_31 = l_4_31.determination
-                                      if l_4_31 ~= 7 then
-                                        l_4_3 = l_4_3 + 100
-                                        l_4_4.BadUrlRep = true
-                                        l_4_31 = MpCommon
-                                        l_4_31 = l_4_31.Base64Encode
-                                        l_4_31 = l_4_31(l_4_0 .. "_" .. ((l_4_30.urls)[l_4_0]).determination)
-                                        ;
-                                        (mp.set_mpattribute)("Appomaly_BadUrlRep_Found_" .. l_4_31)
-                                      else
-                                        l_4_31 = l_4_30.urls
-                                        l_4_31 = l_4_31[l_4_0]
-                                        l_4_31 = l_4_31.determination
-                                        if l_4_31 == 7 then
-                                          l_4_3 = l_4_3 + 50
-                                          l_4_4.SusUrlRep = true
+                                      if l_4_31 ~= 1 then
+                                        do
+                                          l_4_31 = l_4_30.urls
+                                          l_4_31 = l_4_31[l_4_0]
+                                          l_4_31 = l_4_31.determination
+                                          if l_4_31 ~= 7 then
+                                            l_4_3 = l_4_3 + 100
+                                            l_4_4.BadUrlRep = true
+                                            l_4_31 = MpCommon
+                                            l_4_31 = l_4_31.Base64Encode
+                                            l_4_31 = l_4_31(l_4_0 .. "_" .. ((l_4_30.urls)[l_4_0]).determination)
+                                            ;
+                                            (mp.set_mpattribute)("Appomaly_BadUrlRep_Found_" .. l_4_31)
+                                          else
+                                            l_4_31 = l_4_30.urls
+                                            l_4_31 = l_4_31[l_4_0]
+                                            l_4_31 = l_4_31.determination
+                                            if l_4_31 == 7 then
+                                              l_4_3 = l_4_3 + 50
+                                              l_4_4.SusUrlRep = true
+                                            end
+                                          end
+                                          if (MpCommon.StringRegExpSearch)("\\.(exe|dll|ps1|bat|rar|msi|torrent|png|gif|bin|zip|img|gz|vbs)$", l_4_0) then
+                                            l_4_3 = l_4_3 + 20
+                                            l_4_4.Susfile_extension = true
+                                          end
+                                          l_4_4.Url_Score = l_4_3
+                                          return l_4_3, l_4_4
                                         end
                                       end
-                                      if (MpCommon.StringRegExpSearch)("\\.(exe|dll|ps1|bat|rar|msi|torrent|png|gif|bin|zip|img|gz|vbs)$", l_4_0) then
-                                        l_4_3 = l_4_3 + 20
-                                        l_4_4.Susfile_extension = true
-                                      end
-                                      l_4_4.Url_Score = l_4_3
-                                      return l_4_3, l_4_4
                                     end
                                   end
                                 end
@@ -1763,7 +1766,7 @@ isSimilarIndicator = function(l_23_0, l_23_1, l_23_2)
   end
   if (string.find)(l_23_1, "SuspDirectoryDrop", 1, true) then
     for l_23_33,l_23_34 in pairs(l_23_0) do
-      if l_23_33 == l_23_1 then
+      if (string.find)(l_23_33, "SuspDirectoryDrop", 1, true) then
         l_23_4 = true
         if l_23_34.IndicatorScore < l_23_3 then
           l_23_3 = l_23_34.IndicatorScore
@@ -1822,87 +1825,55 @@ IncreaseProcessAnomalyScore = function(l_24_0, l_24_1, l_24_2, l_24_3, l_24_4)
 
         l_24_9.ReasonCount = l_24_10
       end
-      -- DECOMPILER ERROR at PC60: Confused about usage of register: R7 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC61: Confused about usage of register: R7 in 'UnsetPending'
 
-      -- DECOMPILER ERROR at PC64: Confused about usage of register: R7 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC62: Confused about usage of register: R7 in 'UnsetPending'
 
-      -- DECOMPILER ERROR at PC65: Confused about usage of register: R7 in 'UnsetPending'
+      local l_24_14, l_24_15, l_24_16 = , CleanUpIndicators(l_24_9.Reason, l_24_9.Score)
+      if l_24_9.Reason < l_24_15.ReasonCount then
+        l_24_15.Reason = l_24_16
+        l_24_15.ReasonCount = l_24_9.Reason
+        l_24_15.Score = l_24_9.Score
+      end
+      if l_24_15.ReasonCount + 1 > 20 then
+        local l_24_17 = nil
+        ;
+        (MpCommon.BmTriggerSig)(l_24_0, "IncreaseProcAttribScoreError", "Indicators count exceeds the threshold" .. ";" .. safeJsonSerialize({CurrentAttributeValue = l_24_15, NewIndicator_Reason = l_24_2, NewIndicator_Value = l_24_4 or true}))
+        -- DECOMPILER ERROR at PC94: Confused about usage of register: R12 in 'UnsetPending'
 
+        return false, "Indicators count exceeds the threshold"
+      end
       do
-        if l_24_9.ReasonCount >= 20 then
-          local l_24_14, l_24_15 = nil
-          if l_24_9.Reason < l_24_15.ReasonCount then
-            l_24_15.Reason = CleanUpIndicators(l_24_9.Reason, l_24_9.Score)
-            l_24_15.ReasonCount = l_24_9.Reason
-            l_24_15.Score = l_24_9.Score
+        if not (l_24_15.Reason)[l_24_2] then
+          local l_24_19, l_24_20 = nil
+          if isSimilarIndicator(l_24_15.Reason, l_24_2, l_24_4) then
+            l_24_1 = 
+            l_24_4.IndicatorScore = l_24_15.Reason
           end
-        end
-        -- DECOMPILER ERROR at PC73: Confused about usage of register: R7 in 'UnsetPending'
+          if l_24_1 > 0 then
+            l_24_15.ReasonCount = l_24_15.ReasonCount + 1
+            l_24_15.Score = l_24_15.Score + l_24_1
+            -- DECOMPILER ERROR at PC118: Confused about usage of register: R13 in 'UnsetPending'
 
-        if l_24_15.ReasonCount + 1 > 20 then
-          local l_24_16 = nil
-          -- DECOMPILER ERROR at PC78: Confused about usage of register: R7 in 'UnsetPending'
-
-          ;
-          (MpCommon.BmTriggerSig)(l_24_0, "IncreaseProcAttribScoreError", "Indicators count exceeds the threshold" .. ";" .. safeJsonSerialize({CurrentAttributeValue = l_24_15, NewIndicator_Reason = l_24_2, NewIndicator_Value = l_24_4 or true}))
-          -- DECOMPILER ERROR at PC97: Confused about usage of register: R9 in 'UnsetPending'
-
-          return false, "Indicators count exceeds the threshold"
-        end
-        do
-          -- DECOMPILER ERROR at PC99: Confused about usage of register: R7 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC104: Confused about usage of register: R7 in 'UnsetPending'
-
-          do
-            if not (l_24_15.Reason)[l_24_2] then
-              local l_24_18, l_24_19 = nil
-              if isSimilarIndicator(l_24_15.Reason, l_24_2, l_24_4) then
-                l_24_1 = 
-                l_24_4.IndicatorScore = l_24_15.Reason
-              end
-              -- DECOMPILER ERROR at PC114: Confused about usage of register: R7 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC116: Confused about usage of register: R7 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC116: Confused about usage of register: R7 in 'UnsetPending'
-
-              if l_24_1 > 0 then
-                l_24_15.ReasonCount = l_24_15.ReasonCount + 1
-                -- DECOMPILER ERROR at PC117: Confused about usage of register: R7 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC119: Confused about usage of register: R7 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC119: Confused about usage of register: R7 in 'UnsetPending'
-
-                l_24_15.Score = l_24_15.Score + l_24_1
-                -- DECOMPILER ERROR at PC120: Confused about usage of register: R7 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC121: Confused about usage of register: R10 in 'UnsetPending'
-
-                ;
-                (l_24_15.Reason)[l_24_2] = l_24_4
-              end
-            end
-            -- DECOMPILER ERROR at PC126: Confused about usage of register: R5 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC128: Confused about usage of register: R7 in 'UnsetPending'
-
-            local l_24_20, l_24_21 = nil
-            if not pcall(MpCommon.AddProcessAttribute, l_24_0, l_24_18, safeJsonSerialize(l_24_15), true) then
-              local l_24_22 = nil
-              local l_24_23 = nil
-              local l_24_24 = nil
-              if not l_24_24 then
+            ;
+            (l_24_15.Reason)[l_24_2] = l_24_4
+          end
+          local l_24_21, l_24_22 = nil
+          if not pcall(MpCommon.AddProcessAttribute, l_24_0, l_24_7, safeJsonSerialize(l_24_15), true) then
+            local l_24_23 = nil
+            local l_24_24 = nil
+            local l_24_25 = nil
+            if not l_24_25 then
+              do
                 do
                   do
-                    (MpCommon.BmTriggerSig)(l_24_0, "IncreaseProcAttribScoreError", "" .. ";" .. safeJsonSerialize(l_24_22))
-                    do return false, l_24_24 end
+                    (MpCommon.BmTriggerSig)(l_24_0, "IncreaseProcAttribScoreError", "" .. ";" .. safeJsonSerialize(l_24_15))
+                    do return false, l_24_25 end
                     isAnomalousProcess(l_24_0)
-                    -- DECOMPILER ERROR at PC154: Confused about usage of register: R7 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC151: Confused about usage of register: R7 in 'UnsetPending'
 
-                    do return true, l_24_22 end
-                    -- DECOMPILER ERROR at PC156: freeLocal<0 in 'ReleaseLocals'
+                    do return true, l_24_15 end
+                    -- DECOMPILER ERROR at PC153: freeLocal<0 in 'ReleaseLocals'
 
                   end
                 end
