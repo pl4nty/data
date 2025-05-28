@@ -324,7 +324,7 @@
         "EnableKeepFailedVMForResizeV2": true,
         "EnableKeepFailedVMForRestore": true,
         "EnableKustoTelemetryCommands": true,
-        "EnableKustoTelemetryPrincipals": false,
+        "EnableKustoTelemetryPrincipals": true,
         "EnableKustoTelemetryQueries": true,
         "EnableLastestVesionForVDAWorkstationSetup": true,
         "EnableLastestVesionForWebSocketVdaRegistrationTool": true,
