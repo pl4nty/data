@@ -11,7 +11,7 @@ if l_0_1 then
   local l_0_2 = (string.lower)(l_0_1)
   local l_0_3 = 0
   local l_0_4 = false
-  if (string.find)(l_0_1, " %-[eE][ncodemaNCODEMA]*%s+") then
+  if (string.find)(l_0_1, " [%-/][eE][ncodemaNCODEMA]*%s+") then
     local l_0_5 = NormalizeCmdline("powershell", l_0_1)
     if l_0_5 == nil then
       return mp.CLEAN

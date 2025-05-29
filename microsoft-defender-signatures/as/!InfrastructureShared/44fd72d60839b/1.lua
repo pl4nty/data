@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\3bfd71ef8ed51\1.luac 
+-- Command line: lua\!InfrastructureShared\44fd72d60839b\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -25,7 +25,7 @@ if #l_0_3 < 50 then
 end
 do
   if contains(l_0_3, "powershell") then
-    local l_0_5, l_0_6 = (MpCommon.StringRegExpSearch)("[â€\149-]w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3)
+    local l_0_5, l_0_6 = (MpCommon.StringRegExpSearch)("(?i)[â€\149-]w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3)
     if l_0_5 then
       return mp.INFECTED
     end

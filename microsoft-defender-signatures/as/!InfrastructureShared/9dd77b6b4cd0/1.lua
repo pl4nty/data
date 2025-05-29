@@ -36,7 +36,7 @@ do
 
   -- DECOMPILER ERROR at PC99: Overwrote pending register: R7 in 'AssignReg'
 
-  if ("iex")("\'i\',\'e\',\'x\'", "iplogger.co") >= 2 and (MpCommon.StringRegExpSearch)("[â€\149-]w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3) then
+  if ("iex")("\'i\',\'e\',\'x\'", "iplogger.co") >= 2 and (MpCommon.StringRegExpSearch)("(?i)[â€\149-]w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3) then
     return mp.INFECTED
   end
   do return mp.CLEAN end

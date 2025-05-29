@@ -102,7 +102,12 @@ local l_0_10 = nil
 if not "." .. tostring(R9_PC127[#R9_PC127]) then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC165: Confused about usage of register: R10 in 'UnsetPending'
+-- DECOMPILER ERROR at PC164: Confused about usage of register: R10 in 'UnsetPending'
+
+if "." .. tostring(R9_PC127[#R9_PC127]) == ".ru" then
+  return mp.LOWFI
+end
+-- DECOMPILER ERROR at PC170: Confused about usage of register: R10 in 'UnsetPending'
 
 if isSuspTLD("." .. tostring(R9_PC127[#R9_PC127])) then
   return mp.INFECTED

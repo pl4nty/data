@@ -6,13 +6,5 @@
 AddResearchData("BM", true)
 reportRelatedBmHits()
 addRelatedProcess()
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  (bm.trigger_sig)("BmTraverseTreeBlock", "Detected", l_0_6.ppid)
-end
-local l_0_7 = (bm.get_imagepath)()
-if l_0_7 ~= "" and l_0_7 ~= nil and check_common_process_linux(l_0_7) == false then
-  (bm.add_threat_file)(l_0_7)
-end
 return mp.INFECTED
 

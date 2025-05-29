@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4dd7e95a51b4\1.luac 
+-- Command line: lua\!InfrastructureShared\59d712e246ee\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -23,7 +23,7 @@ if #l_0_3 > 450 then
   return mp.CLEAN
 end
 l_0_3 = (string.lower)(l_0_3)
-local l_0_4 = "(?:#.*?\\d{3,}\\s*$|<#.*?\\d{3,}\\s*#>|[-;:]{1,3}\\s*[^#<]{0,100}?\\d{3,}\\s*$)"
+local l_0_4 = "(?:#.*?\\d{3,}[\\s\'\"]*$|<#.*?\\d{3,}[\\s\'\"]*#>|[-;:]{1,3}\\s*[^#<]{0,100}?\\d{3,}[\\s\'\"]*$)"
 local l_0_5 = "(rem\\s+.*?\\d{3,}\\s*$|::\\s*.*?\\d{3,}\\s*$)"
 local l_0_6 = (MpCommon.GetImagePathFromPid)(l_0_0)
 if not l_0_6 then
