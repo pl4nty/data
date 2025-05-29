@@ -262,7 +262,7 @@ do
       end
     end
     do
-      if (l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(10, false, true, true) == true) and (string.find)(l_0_12, "onedrivesetup.*%.exe") ~= nil then
+      if (l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_7 == "17d35c23-784e-4395-a8e8-10ba00402072" or (MpCommon.IsSampled)(10, false, true, true) == true) and (string.find)(l_0_12, "onedrivesetup.*%.exe") ~= nil then
         local l_0_15 = (mp.IsTrustedFile)(false)
         if l_0_15 == true then
           return mp.CLEAN
