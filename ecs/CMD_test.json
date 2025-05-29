@@ -1052,6 +1052,7 @@
         "Nh_Avd_Additional_Telemetry": true,
         "Nh_Classic_Resource": true,
         "Nh_Enable_Iframe_Support": true,
+        "Nh_Enable_Monitor_Resize": true,
         "Nh_Enable_Request_Caching": true,
         "Nh_Flw_Flu_Direct_Connection": true,
         "Nh_Force_Web_Workers": 1,
