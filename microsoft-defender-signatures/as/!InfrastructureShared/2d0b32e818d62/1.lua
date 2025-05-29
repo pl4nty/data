@@ -26,44 +26,29 @@ do
     if not l_0_6 or isnull(R4_PC80) or #mp.GetExecutablesFromCommandLine < 2 then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC92: Overwrote pending register: R4 in 'AssignReg'
+    -- DECOMPILER ERROR at PC91: Overwrote pending register: R4 in 'AssignReg'
 
-    local l_0_7 = nil
-    -- DECOMPILER ERROR at PC94: Overwrote pending register: R4 in 'AssignReg'
+    local l_0_7, l_0_8 = , pcall(R4_PC80, (mp.GetExecutablesFromCommandLine)[#mp.GetExecutablesFromCommandLine])
+    -- DECOMPILER ERROR at PC109: Overwrote pending register: R6 in 'AssignReg'
 
-    R4_PC80 = R4_PC80((mp.ContextualExpandEnvironmentVariables)(R4_PC80))
-    if not R4_PC80 then
-      R4_PC80 = string
-      R4_PC80 = R4_PC80.find
-      R4_PC80 = R4_PC80((mp.ContextualExpandEnvironmentVariables)(R4_PC80), "mshta%.exe$")
-      if not R4_PC80 then
-        R4_PC80 = sysio
-        R4_PC80 = R4_PC80.IsFileExists
-        R4_PC80 = R4_PC80((mp.ContextualExpandEnvironmentVariables)(R4_PC80))
-        if R4_PC80 then
-          R4_PC80 = mp
-          R4_PC80 = R4_PC80.IsKnownFriendlyFile
-          R4_PC80 = R4_PC80((mp.ContextualExpandEnvironmentVariables)(R4_PC80), false, true)
-        end
-      end
+    -- DECOMPILER ERROR at PC115: Overwrote pending register: R6 in 'AssignReg'
+
+    if isnull(R6_PC97) or (string.find)(R6_PC97, "mshta%.exe$") or not (sysio.IsFileExists)(R6_PC97) or not (mp.IsKnownFriendlyFile)(R6_PC97, false, true) then
+      return mp.CLEAN
     end
-    if not R4_PC80 then
-      R4_PC80 = mp
-      R4_PC80 = R4_PC80.CLEAN
-      return R4_PC80
-    end
-    R4_PC80 = bm
-    R4_PC80 = R4_PC80.add_related_string
-    R4_PC80("MSHTA_ExecSignedPE", (mp.ContextualExpandEnvironmentVariables)(R4_PC80), bm.RelatedStringBMReport)
-    R4_PC80 = bm
-    R4_PC80 = R4_PC80.add_related_file
-    R4_PC80((mp.ContextualExpandEnvironmentVariables)(R4_PC80))
-    R4_PC80 = mp
-    R4_PC80 = R4_PC80.TriggerScanResource
-    R4_PC80("file", (mp.ContextualExpandEnvironmentVariables)(R4_PC80))
-    R4_PC80 = mp
-    R4_PC80 = R4_PC80.INFECTED
-    return R4_PC80
+    -- DECOMPILER ERROR at PC126: Overwrote pending register: R6 in 'AssignReg'
+
+    ;
+    (bm.add_related_string)(R6_PC97, R7_PC130, bm.RelatedStringBMReport)
+    -- DECOMPILER ERROR at PC133: Overwrote pending register: R6 in 'AssignReg'
+
+    ;
+    (bm.add_related_file)(R6_PC97)
+    -- DECOMPILER ERROR at PC137: Overwrote pending register: R6 in 'AssignReg'
+
+    ;
+    (mp.TriggerScanResource)(R6_PC97, R7_PC130)
+    return mp.INFECTED
   end
 end
 

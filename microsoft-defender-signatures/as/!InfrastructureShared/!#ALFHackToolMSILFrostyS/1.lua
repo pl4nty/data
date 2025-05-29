@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 300000 then
+if l_0_0 > 180000 then
   return mp.CLEAN
 end
 local l_0_1 = (pe.get_versioninfo)()

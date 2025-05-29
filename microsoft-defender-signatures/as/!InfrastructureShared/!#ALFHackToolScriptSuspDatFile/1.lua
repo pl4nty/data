@@ -7,50 +7,67 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
--- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
-
--- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P3
-
-if l_0_1:find("\\windows\\system32\\spool\\drivers\\x64\\3\\", 1, true) or ((l_0_1:find("\\driverstore\\filerepository\\", 1, true) and l_0_1:find(".inf", 1, true)) or l_0_1:find("\\windows\\system32\\spool\\{", 1, true)) then
+local l_0_1 = {}
+l_0_1["avidfosnp.dat"] = ""
+l_0_1["fntcache.dat"] = ""
+l_0_1["version.dat"] = ""
+l_0_1["prfh0804.dat"] = ""
+l_0_1["prfc0804.dat"] = ""
+l_0_1["prfc0416.dat"] = ""
+l_0_1["cloudconfiguration.dat"] = ""
+l_0_1["vxautocollimatorrand.dat"] = ""
+local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1[l_0_2] then
   return mp.CLEAN
 end
-local l_0_2 = (mp.readheader)(0, 257)
-local l_0_3 = 0
-local l_0_4 = 0
+local l_0_3 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+l_0_3 = (MpCommon.PathToWin32Path)(l_0_3)
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+
+if l_0_3:find("\\windows\\system32\\spool\\drivers\\x64\\3\\", 1, true) or ((l_0_3:find("\\driverstore\\filerepository\\", 1, true) and l_0_3:find(".inf", 1, true)) or l_0_3:find("eppicpattern", 1, true)) then
+  return mp.CLEAN
+end
+local l_0_4 = (mp.readheader)(0, 257)
 local l_0_5 = 0
 local l_0_6 = 0
-for l_0_10 = 1, 256 do
-  l_0_5 = (string.byte)(l_0_2, l_0_10)
-  l_0_6 = (string.byte)(l_0_2, l_0_10 + 1)
-  if l_0_5 == 0 then
-    if l_0_6 == 0 then
+local l_0_7 = 0
+local l_0_8 = 0
+for l_0_12 = 1, 256 do
+  l_0_7 = (string.byte)(l_0_4, l_0_12)
+  l_0_8 = (string.byte)(l_0_4, l_0_12 + 1)
+  if l_0_7 == 0 then
+    if l_0_8 == 0 then
       return mp.CLEAN
     end
-    l_0_3 = l_0_3 + 1
+    l_0_5 = l_0_5 + 1
   end
-  if l_0_3 > 4 then
+  if l_0_5 > 4 then
     return mp.CLEAN
   end
-  if (l_0_5 >= 32 and l_0_5 <= 127) or l_0_5 >= 9 and l_0_5 <= 13 then
-    l_0_4 = l_0_4 + 1
+  if (l_0_7 >= 32 and l_0_7 <= 127) or l_0_7 >= 9 and l_0_7 <= 13 then
+    l_0_6 = l_0_6 + 1
   end
-  if l_0_4 > 180 then
+  if l_0_6 > 180 then
     return mp.CLEAN
   end
 end

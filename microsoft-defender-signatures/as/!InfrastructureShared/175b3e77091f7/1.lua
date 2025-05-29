@@ -232,7 +232,7 @@ end
                                 if l_0_4.POTENTIAL_SIDE_LOADING or l_0_4.Known_VulnerableDll then
                                   (bm.trigger_sig)("PotentialSideLoading_C_Evaluator", l_0_69)
                                 end
-                                if l_0_4.POTENTIAL_SIDE_LOADING and l_0_4.Known_VulnerableDll then
+                                if (l_0_4.POTENTIAL_SIDE_LOADING and l_0_4.Known_VulnerableDll) or l_0_4.DllAndExecInArchive then
                                   (bm.trigger_sig)("PotentialSideLoading_D2_Evaluator", l_0_69)
                                 end
                                 local l_0_71 = bm.add_related_string
@@ -254,7 +254,7 @@ end
                                   l_0_71 = mp
                                   l_0_71 = l_0_71.INFECTED
                                   do return l_0_71 end
-                                  -- DECOMPILER ERROR at PC667: freeLocal<0 in 'ReleaseLocals'
+                                  -- DECOMPILER ERROR at PC670: freeLocal<0 in 'ReleaseLocals'
 
                                   return mp.CLEAN
                                 end
