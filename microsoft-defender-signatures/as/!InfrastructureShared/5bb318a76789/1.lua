@@ -10,6 +10,8 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
   local l_0_0 = safeJsonDeserialize((this_sigattrlog[1]).utf8p2)
   if l_0_0 and l_0_0.Dll_Path then
     (bm.add_related_file)(l_0_0.Dll_Path)
+  else
+    return mp.CLEAN
   end
 end
 do
@@ -20,6 +22,8 @@ do
     local l_0_1 = safeJsonDeserialize((this_sigattrlog[2]).utf8p2)
     if l_0_1 and l_0_1.Dll_Path then
       (bm.add_related_file)(l_0_1.Dll_Path)
+    else
+      return mp.CLEAN
     end
   end
   do

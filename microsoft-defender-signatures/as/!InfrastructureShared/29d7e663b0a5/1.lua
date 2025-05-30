@@ -24,61 +24,94 @@ l_0_1.Dll_Path = l_0_5
 if not (string.find)(l_0_5, "\\", 1, true) then
   l_0_5 = "\\" .. l_0_5
 end
-local l_0_6 = GetRollingQueueKeyValues("PFApp_PotentialDownload_Ppid", l_0_0.ppid)
-if l_0_6 then
-  l_0_1.ProcessWithPotentialDownload = true
-  l_0_1.DownloadCmds = l_0_6
-  local l_0_7 = safeJsonSerialize(l_0_1)
-  set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_7), false)
-  if l_0_7 then
-    (MpCommon.BmTriggerSig)(l_0_0.ppid, "APML_SuspRundll_A", l_0_7)
+local l_0_6 = 0
+local l_0_7 = (string.gsub)(l_0_5, "\\", "\\\\")
+l_0_7 = l_0_7:gsub("([%^%$%(%)%.%[%]%*%+%-%?])", "\\%1")
+local l_0_8, l_0_9 = pcall(MpCommon.RollingQueueQueryMultiKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", l_0_7)
+if l_0_8 and l_0_9 then
+  for l_0_13,l_0_14 in ipairs(l_0_9) do
+    if (string.find)(l_0_14.value, "UnsignedFile", 1, true) then
+      l_0_1.FileDroppedRecently = true
+      l_0_1.FileInfo = l_0_9
+      if (string.find)(l_0_14.value, "FileAttributes", 1, true) then
+        local l_0_15 = (string.match)(l_0_14.value, "%[(.*)%]")
+        for l_0_19 in (string.gmatch)(l_0_15, "([^|]+)") do
+          if l_0_19 ~= "SLF:Aurora.A!rfn" then
+            l_0_6 = l_0_6 + 1
+          end
+        end
+      end
+    end
   end
-  return mp.INFECTED
+  if not l_0_1.FileDroppedRecently then
+    return mp.CLEAN
+  end
+else
+  return mp.CLEAN
+end
+local l_0_20 = nil
+if GetRollingQueueKeyValues("PFApp_PotentialDownload_Ppid", l_0_0.ppid) then
+  l_0_1.ProcessWithPotentialDownload = true
+  l_0_1.DownloadCmds = GetRollingQueueKeyValues("PFApp_PotentialDownload_Ppid", l_0_0.ppid)
+  l_0_6 = l_0_6 + 10
+end
+l_0_20 = pcall
+l_0_20 = l_0_20(MpCommon.RollingQueueQueryMultiKeyRegex, "PFApp_FileDropped_Path", l_0_5)
+local l_0_21, l_0_22 = nil
+if l_0_20 and l_0_21 then
+  l_0_1.FileDroppedByATrackedProcess = true
+  l_0_22 = set_research_data
+  l_0_22("Evidence", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_1)), false)
+  l_0_22 = ipairs
+  l_0_22 = l_0_22(l_0_21)
+  for l_0_26,l_0_27 in l_0_22 do
+    local l_0_27 = nil
+    l_0_27 = GetAppomalyProcessAttribute
+    l_0_27 = l_0_27(l_0_26.value)
+    local l_0_28, l_0_29 = nil
+    if l_0_28 then
+      l_0_29 = l_0_26.key
+      if l_0_29 == l_0_5 then
+        l_0_29 = "FilePathMatch"
+      end
+      if not l_0_29 then
+        l_0_29 = "FileNameMatch"
+      end
+      l_0_1.Confidence = l_0_29
+      l_0_1.Process_Attribute = l_0_28
+      l_0_29 = l_0_28.AppName
+      if l_0_29 == "OneDrive" then
+        l_0_29 = string
+        l_0_29 = l_0_29.find
+        l_0_29 = l_0_29(l_0_5, "shell32.dll")
+        if l_0_29 then
+          l_0_29 = mp
+          l_0_29 = l_0_29.CLEAN
+          return l_0_29
+        end
+      end
+      l_0_6 = l_0_6 + 10
+    end
+  end
 end
 do
-  local l_0_8, l_0_9 = pcall(MpCommon.RollingQueueQueryMultiKeyRegex, "PFApp_FileDropped_Path", l_0_5)
-  if l_0_8 and l_0_9 then
-    l_0_1.FileDroppedByATrackedProcess = true
-    set_research_data("Evidence", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_1)), false)
-    for l_0_13,l_0_14 in ipairs(l_0_9) do
-      local l_0_15, l_0_16 = GetAppomalyProcessAttribute(l_0_14.value)
-      if l_0_14.key ~= l_0_5 or not "FilePathMatch" then
-        l_0_1.Confidence = not l_0_16 or "FileNameMatch"
-        l_0_1.Process_Attribute = l_0_16
-        if l_0_16.AppName == "OneDrive" and (string.find)(l_0_5, "shell32.dll") then
-          return mp.CLEAN
-        end
-        do
-          local l_0_17 = safeJsonSerialize(l_0_1, 150, nil, true)
-          if l_0_17 then
-            (MpCommon.BmTriggerSig)(l_0_0.ppid, "APML_SuspRundll_C", l_0_17)
-          end
-          -- DECOMPILER ERROR at PC164: LeaveBlock: unexpected jumping out IF_THEN_STMT
+  l_0_1.Score = l_0_6
+  local l_0_30, l_0_31 = nil
+  -- DECOMPILER ERROR at PC214: Overwrote pending register: R15 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC164: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
-    end
-    return mp.INFECTED
-  end
-  local l_0_18, l_0_19 = pcall(MpCommon.RollingQueueQueryMultiKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", l_0_5)
-  if l_0_18 and l_0_19 then
-    for l_0_23,l_0_24 in ipairs(l_0_19) do
-      if (string.find)(l_0_24.value, "FileAttributes", 1, true) or (string.find)(l_0_24.value, "UnsignedFile", 1, true) then
-        l_0_1.FileDroppedRecently = true
-        l_0_1.FileInfo = l_0_19
-        local l_0_25 = safeJsonSerialize(l_0_1)
-        set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_25), false)
-        if l_0_25 then
-          (MpCommon.BmTriggerSig)(l_0_0.ppid, "APML_SuspRundll_D", l_0_25)
-        end
-        return mp.INFECTED
-      end
-    end
-  end
+  local l_0_32 = nil
+  local l_0_33 = nil
+  local l_0_34 = nil
   do
-    return mp.CLEAN
+    l_0_34 = safeJsonSerialize(l_0_1, 150, nil, true) or l_0_30
+    l_0_31(l_0_32, l_0_33, l_0_34)
+    -- DECOMPILER ERROR at PC221: Overwrote pending register: R15 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC222: Overwrote pending register: R15 in 'AssignReg'
+
+    do return l_0_31 end
+    -- DECOMPILER ERROR at PC224: Confused about usage of register R13 for local variables in 'ReleaseLocals'
+
   end
 end
 

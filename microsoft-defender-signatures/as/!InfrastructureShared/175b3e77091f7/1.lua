@@ -229,10 +229,14 @@ end
                                 if (MpCommon.StringRegExpSearch)("(desktop|download|onedrive|document|picture)", l_0_0) then
                                   l_0_5 = l_0_5 + 50
                                 end
+                                l_0_4.Score = l_0_5
                                 if l_0_4.POTENTIAL_SIDE_LOADING or l_0_4.Known_VulnerableDll then
                                   (bm.trigger_sig)("PotentialSideLoading_C_Evaluator", l_0_69)
                                 end
                                 if (l_0_4.POTENTIAL_SIDE_LOADING and l_0_4.Known_VulnerableDll) or l_0_4.DllAndExecInArchive then
+                                  (bm.trigger_sig)("PotentialSideLoading_D2_Evaluator", l_0_69)
+                                end
+                                if (l_0_4.Known_VulnerableDll and l_0_4.Vulnerable_App) or l_0_5 >= 150 then
                                   (bm.trigger_sig)("PotentialSideLoading_D2_Evaluator", l_0_69)
                                 end
                                 local l_0_71 = bm.add_related_string
@@ -254,7 +258,7 @@ end
                                   l_0_71 = mp
                                   l_0_71 = l_0_71.INFECTED
                                   do return l_0_71 end
-                                  -- DECOMPILER ERROR at PC670: freeLocal<0 in 'ReleaseLocals'
+                                  -- DECOMPILER ERROR at PC684: freeLocal<0 in 'ReleaseLocals'
 
                                   return mp.CLEAN
                                 end
