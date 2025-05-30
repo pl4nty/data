@@ -859,6 +859,14 @@ define([
                 // Fire and forget on async call.
                 this.sessionUtilities.deviceManagementUtilities.prepareForForNthUserAsync();
             }
+
+            // Read the velocity value from the OOBE feature staging API to differentiate behavior between old and new
+            let bitlockerDeferralEnabled = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotBitlockerOobeDeferral");
+            if (bitlockerDeferralEnabled) {
+                if (!this.isWhiteGloveFlow) {
+                    this.commercialDiagnosticsUtilities.signalBitlockerProvisioningComplete(3); // BitLockerDeferralReason.MdmSyncComplete
+                }
+            }
         }
 
         transitionToSuccessPageAsync(

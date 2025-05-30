@@ -2111,13 +2111,24 @@
             "preloadCheck": "CloudExperienceHost.AutoPilot.EnrollmentStatusPage",
             "frameAnimation": "autopilotLottie.json",
             "preloadCheckSkipOnFailure": true,
-            "successID": "OobeSettingsSelector",
-            "failID": "OobeSettingsSelector",
+            "successID": "BitlockerDeferralReleasePostMdm",
+            "failID": "BitlockerDeferralReleasePostMdm",
             "action1ID": "RebootZtd",
             "visibility": false,
             "ignoreResult": true,
             "disableErrorPageOnFailure": true,
             "disableBackNavigationToNode": true
+        },
+        "BitlockerDeferralReleasePostMdm": {
+            "cxid": "BitlockerDeferralReleasePostMdm",
+            "policyName": "BitlockerDeferralRelease",
+            "launcher": "js:OOBEAutoPilot",
+            "successID": "OobeSettingsSelector",
+            "failID": "OobeSettingsSelector",
+            "cancelID": "OobeSettingsSelector",
+            "disableErrorPageOnFailure": true,
+            "visibility": false,
+            "timeout": 30000
         },
         "EarlyOobeNDUP": {
             "cxid": "EarlyOobeNDUP",
@@ -2170,13 +2181,24 @@
             "urlint": "https://login.live-int.com/ppsecure/inlineconnect.srf?id=80600",
             "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForKnownUserLogin",
             "internetRequired": true,
-            "successID": "OobeWindowsAccountSyncConsent",
+            "successID": "BitlockerDeferralReleasePostMSA",
             "failID": "OobeLocal",
             "cancelID": "OobeIDPS",
             "offlineID": "OobeLocal",
             "disableBackNavigationToNode": true,
             "abortID": "OobeMSAOfferStatic",
             "disableErrorPageOnFailure": true
+        },
+        "BitlockerDeferralReleasePostMSA": {
+            "cxid": "BitlockerDeferralReleasePostMSA",
+            "policyName": "BitlockerDeferralRelease",
+            "launcher": "js:OOBEAutoPilot",
+            "successID": "OobeWindowsAccountSyncConsent",
+            "failID": "OobeWindowsAccountSyncConsent",
+            "cancelID": "OobeWindowsAccountSyncConsent",
+            "disableErrorPageOnFailure": true,
+            "visibility": false,
+            "timeout": 30000
         },
         "OobeWindowsAccountSyncConsent": {
             "cxid": "OobeWindowsAccountSyncConsent",
@@ -2262,9 +2284,20 @@
             "url": "ms-appx-web:///webapps/inclusiveOobe/view/OobeLocalAccount-main.html",
             "preloadCheck": "CloudExperienceHost.LocalAccount",
             "disableBackNavigationToNodeOnSuccess": true,
-            "successID": "OobeLocalHello",
+            "successID": "BitlockerDeferralReleasePostLocal",
             "preloadSkipID": "OobeDomainJoin",
             "visibility": false
+        },
+        "BitlockerDeferralReleasePostLocal": {
+            "cxid": "BitlockerDeferralReleasePostLocal",
+            "policyName": "BitlockerDeferralRelease",
+            "launcher": "js:OOBEAutoPilot",
+            "successID": "OobeLocalHello",
+            "failID": "OobeLocalHello",
+            "cancelID": "OobeLocalHello",
+            "disableErrorPageOnFailure": true,
+            "visibility": false,
+            "timeout": 30000
         },
         "OobeLocalHello": {
             "cxid": "OobeLocalHello",

@@ -286,6 +286,23 @@ define(['legacy/bridge'], (bridge) => {
             return this.storeEspCommandsJsonAsync(espCommandsJson);
         }
 
+        signalBitlockerProvisioningComplete(reasonCode) {
+            // This should only be called if the Velocity feature is enabled but check here again to be certain
+            let autopilotBitlockerDeferral = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotBitlockerOobeDeferral");
+            if (autopilotBitlockerDeferral) {
+                try {
+                    this.logInfoEvent("CommercialOOBE_BitlockerDeferral_Started", `Autopilot Bitlocker deferral release signaling started for '${reasonCode}'`);
+                    ModernDeployment.Autopilot.Core.AutopilotWnfNotificationManagerStatics.setBitlockerDeferralComplete(reasonCode);
+                    this.logInfoEvent("CommercialOOBE_BitlockerDeferral_Success", "Autopilot Bitlocker deferral release signaling succeeded");
+                } catch (err) {
+                    this.logErrorEvent(
+                        "CommercialOOBE_BitlockerDeferral_Failed",
+                        "Failed to set the BitLocker deferral policy",
+                        JSON.stringify(err));
+                }
+            }
+        }
+
         // This is a private helper method not intended to be invoked by outside this class.
         runPhaseStateMachineAsync(
             subcategoryId,

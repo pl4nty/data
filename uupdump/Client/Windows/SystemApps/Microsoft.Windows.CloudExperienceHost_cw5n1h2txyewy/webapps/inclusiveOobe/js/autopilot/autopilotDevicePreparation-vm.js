@@ -1350,6 +1350,12 @@ define([
                         break;
                 };
 
+                let bitlockerDeferralEnabled = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotBitlockerOobeDeferral");
+                if (bitlockerDeferralEnabled) {
+                    // We set BitLockerDeferralReason.MdmSyncComplete when the page exits if the sync failed and user continued anyway
+                    this.commercialDiagnosticsUtilities.signalBitlockerProvisioningComplete(3); 
+                }
+
                 await this.transitionToSuccessPageAsync(CloudExperienceHost.Events.done, this.PAGE_TRANSITION_POST_DPP_SUCCESS_PAGE);
 
             } catch (e) {

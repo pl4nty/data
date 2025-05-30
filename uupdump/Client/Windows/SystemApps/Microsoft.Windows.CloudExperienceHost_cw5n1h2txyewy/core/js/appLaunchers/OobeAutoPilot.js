@@ -226,6 +226,36 @@ define(['legacy/core'], (core) => {
                             });
                             break;
 
+                        case "BitlockerDeferralRelease":
+                            let bitLockerDeferralEnabled = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotBitlockerOobeDeferral");
+                            if (bitLockerDeferralEnabled) {
+                                try {
+                                    CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_BitlockerDeferral_Started", `Autopilot Bitlocker deferral release signaling started for '${currentNode.cxid}'`);
+
+                                    let reasonCode = 0; // BitLockerDeferralReason.NotAvailable
+                                    switch (currentNode.cxid) {
+                                        case 'BitlockerDeferralReleasePostMdm':
+                                            reasonCode = 3; // BitLockerDeferralReason.MdmSyncComplete
+                                            break;
+                                        case 'BitlockerDeferralReleasePostLocal':
+                                        case 'BitlockerDeferralReleasePostMSA':
+                                        default:
+                                            reasonCode = 2; // BitLockerDeferralReason.NotMdmEnrolled
+                                            break;
+                                    }
+
+                                    ModernDeployment.Autopilot.Core.AutopilotWnfNotificationManagerStatics.setBitlockerDeferralCompleteAsync(reasonCode);
+
+                                    CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_BitlockerDeferral_Success", "Autopilot Bitlocker deferral release signaling succeeded");
+                                } catch (err) {
+                                    CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_BitlockerDeferral_Failed", "Autopilot Bitlocker deferral release signaling failed");
+                                }
+                            }
+
+                            // Whether velocity was enabled or not, or even if we failed, always return success to prevent any failures from altering the client flows
+                            completeDispatch(CloudExperienceHost.AppResult.success);
+                            break;
+
                         default:
                             completeDispatch(CloudExperienceHost.AppResult.success);
                             break;
