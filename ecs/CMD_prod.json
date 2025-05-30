@@ -14,6 +14,7 @@
         "BlockGccCommercialTenant": true,
         "Branding_And_Licensing": true,
         "CleanUpRDAgentTempFolder": true,
+        "ClientAgent_CPC_Cogs_EnableHEVCHardwareEncoding": true,
         "ClientAgent_CPC_Cogs_EnableSystemUsageCollection": true,
         "ClientAgent_CPC_Connectivity_EnableCloudPCOSServicesPlugin": true,
         "ClientAgent_CPC_DeviceAction_EnableExpandDiskPlugin": "true",
