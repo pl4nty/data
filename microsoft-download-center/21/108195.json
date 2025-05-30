@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "PIX 2505.30",
+    "downloadDescription": "PIX 2505.30 - with support for DXR 1.2 and misc bug fixes",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PIX-2505.30-preview-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/edd7ebb5-65cb-4783-916b-a14481393075/PIX-2505.30-preview-Installer-x64.exe",
+            "size": "204667904",
+            "version": "2505.30",
+            "datePublished": "5/30/2025 3:41:57 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PIX-2505.30-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/edd7ebb5-65cb-4783-916b-a14481393075/PIX-2505.30-Installer-x64.exe",
+            "size": "204352768",
+            "version": "2505.30",
+            "datePublished": "5/30/2025 3:41:57 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PIX-2505.30-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/edd7ebb5-65cb-4783-916b-a14481393075/PIX-2505.30-Installer-ARM64.exe",
+            "size": "171203232",
+            "version": "2505.30",
+            "datePublished": "5/30/2025 3:41:57 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX 2505.30 - with support for DXR 1.2 and misc bug fixes",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2505.30",
+    "detailsSection_file_name": [
+        "PIX-2505.30-preview-Installer-x64.exe",
+        "PIX-2505.30-Installer-x64.exe",
+        "PIX-2505.30-Installer-ARM64.exe"
+    ],
+    "detailsSection_file_size": [
+        "195.2 MB",
+        "194.9 MB",
+        "163.3 MB"
+    ],
+    "detailsSection_file_date": "5/30/2025",
+    "systemRequirementsSection": "Windows 10 or 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download and run the installer, and follow its instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108195",
+    "downloadPreload": true
+}
