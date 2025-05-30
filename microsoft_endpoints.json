@@ -643,8 +643,7 @@
         "urls": [
             "*.sharepointonline.com",
             "dc.services.visualstudio.com",
-            "mem.gfx.ms",
-            "staffhub.ms"
+            "mem.gfx.ms"
         ]
     },
     {
@@ -863,7 +862,7 @@
         "category": "Default",
         "expressRoute": false,
         "id": 117,
-        "notes": "Yammer",
+        "notes": "Viva Engage",
         "required": false,
         "serviceArea": "Common",
         "serviceAreaDisplayName": "Microsoft 365 Common and Office Online",
@@ -877,7 +876,7 @@
         "category": "Default",
         "expressRoute": false,
         "id": 118,
-        "notes": "Yammer CDN",
+        "notes": "Viva Engage Assets CDN",
         "required": false,
         "serviceArea": "Common",
         "serviceAreaDisplayName": "Microsoft 365 Common and Office Online",
@@ -1101,7 +1100,7 @@
         "required": true,
         "serviceArea": "Common",
         "serviceAreaDisplayName": "Microsoft 365 Common and Office Online",
-        "tcpPorts": "443,80",
+        "tcpPorts": "443",
         "udpPorts": "443",
         "urls": [
             "*.cloud.microsoft",
