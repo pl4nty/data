@@ -12,13 +12,13 @@ do
   do
     if l_0_1 ~= nil then
       local l_0_2 = {}
-      -- DECOMPILER ERROR at PC32: No list found for R2 , SetList fails
+      -- DECOMPILER ERROR at PC35: No list found for R2 , SetList fails
 
-      -- DECOMPILER ERROR at PC33: Overwrote pending register: R3 in 'AssignReg'
+      -- DECOMPILER ERROR at PC36: Overwrote pending register: R3 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC34: Overwrote pending register: R4 in 'AssignReg'
+      -- DECOMPILER ERROR at PC37: Overwrote pending register: R4 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC35: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC38: Overwrote pending register: R5 in 'AssignReg'
 
       if not (".com")(".tmp", ".jpg") then
         return mp.CLEAN
