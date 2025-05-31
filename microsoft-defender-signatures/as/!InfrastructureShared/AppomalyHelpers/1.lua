@@ -476,137 +476,153 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
                       l_4_4.ERROR = "Error grading url"
                       return 0, l_4_4
                     end
-                    local l_4_20, l_4_21, l_4_22 = AnomalyTableCheck("Appomaly_Network_HOST_Global", l_4_19, 30)
-                    if l_4_20 == true and l_4_21 == false then
-                      l_4_3 = l_4_3 + 20
-                      l_4_4.AnomalousHost = l_4_22
-                    else
-                      if l_4_20 == false and l_4_21 == false then
-                        l_4_4.URL_CLEAN = "Global_Url_Cache_SeenBefore"
-                        l_4_4.Url_Score = 0
-                        return 0, l_4_4
-                      end
+                    local l_4_20 = {}
+                    -- DECOMPILER ERROR at PC237: No list found for R17 , SetList fails
+
+                    -- DECOMPILER ERROR at PC238: Overwrote pending register: R18 in 'AssignReg'
+
+                    -- DECOMPILER ERROR at PC239: Overwrote pending register: R19 in 'AssignReg'
+
+                    -- DECOMPILER ERROR at PC240: Overwrote pending register: R20 in 'AssignReg'
+
+                    if (".microsoft")(".chocolatey.org", ".app1appv1p.sicredi.net.br") then
+                      return 0, l_4_4
                     end
-                    local l_4_23 = GetRollingQueueKeyValue("Global_CLEAN_Url_Cache", l_4_19)
-                    if l_4_23 then
+                    -- DECOMPILER ERROR at PC250: Overwrote pending register: R21 in 'AssignReg'
+
+                    local l_4_21, l_4_22, l_4_23 = AnomalyTableCheck("Appomaly_Network_HOST_Global", l_4_19, "prod.setup.itsupport247")
+                    -- DECOMPILER ERROR at PC266: Overwrote pending register: R22 in 'AssignReg'
+
+                    if (l_4_21 ~= true or l_4_22 ~= false or l_4_21 == false) and l_4_22 == false then
+                      return 0, "cdn.immy.bot"
+                    end
+                    -- DECOMPILER ERROR at PC270: Overwrote pending register: R23 in 'AssignReg'
+
+                    local l_4_24 = GetRollingQueueKeyValue("Global_CLEAN_Url_Cache", "timestamp.digicert.com")
+                    if l_4_24 then
                       l_4_4.URL_CLEAN = "Global_Url_Cache"
                       l_4_4.Url_Score = 0
                       return 0, l_4_4
                     end
-                    local l_4_24 = {}
-                    l_4_24.SIG_CONTEXT = "Appomaly" .. l_4_1 or ""
-                    l_4_24.FILELESS = "true"
-                    l_4_24.CMDLINE_URL = "true"
-                    local l_4_25 = GetCurrentPPID()
+                    local l_4_25 = {}
+                    l_4_25.SIG_CONTEXT = "Appomaly" .. l_4_1 or ""
+                    l_4_25.FILELESS = "true"
+                    l_4_25.CMDLINE_URL = "true"
+                    local l_4_26 = GetCurrentPPID()
                     do
-                      if l_4_25 then
-                        local l_4_26, l_4_27 = GetAppomalyProcessAttribute(l_4_25)
-                        if l_4_27 then
-                          l_4_24.PROCESS_CONTEXT = l_4_27
+                      if l_4_26 then
+                        local l_4_27, l_4_28 = GetAppomalyProcessAttribute(l_4_26)
+                        if l_4_28 then
+                          l_4_25.PROCESS_CONTEXT = l_4_28
                         end
                       end
-                      local l_4_28 = GetRollingQueueKeyValue("Global_Url_Cache_Appomaly", l_4_19)
-                      if l_4_28 then
-                        l_4_28 = tonumber(l_4_28)
-                        l_4_4.UrlRep_Determination = l_4_28
-                        if l_4_28 == 7 then
-                          l_4_3 = l_4_3 + 10
+                      local l_4_29 = GetRollingQueueKeyValue("Global_Url_Cache_Appomaly", l_4_19)
+                      if l_4_29 then
+                        l_4_29 = tonumber(l_4_29)
+                        l_4_4.UrlRep_Determination = l_4_29
+                        -- DECOMPILER ERROR at PC312: Overwrote pending register: R3 in 'AssignReg'
+
+                        if l_4_29 == 7 then
                           l_4_4.SusUrlRep = true
                         else
-                          if l_4_28 == 2 or l_4_28 == 3 or l_4_28 == 5 or l_4_28 == 6 then
-                            l_4_3 = l_4_3 + 100
+                          -- DECOMPILER ERROR at PC323: Overwrote pending register: R3 in 'AssignReg'
+
+                          if l_4_29 == 2 or l_4_29 == 3 or l_4_29 == 5 or l_4_29 == 6 then
                             l_4_4.BadUrlRep = true
-                            local l_4_29 = (MpCommon.Base64Encode)(l_4_19 .. "_" .. l_4_28)
+                            local l_4_30 = (MpCommon.Base64Encode)(l_4_19 .. "_" .. l_4_29)
                             ;
-                            (mp.set_mpattribute)("Appomaly_BadUrlRep_Found_" .. l_4_29)
+                            (mp.set_mpattribute)("Appomaly_BadUrlRep_Found_" .. l_4_30)
                           end
                         end
                       else
                         do
                           if l_4_2 then
-                            local l_4_30 = SafeGetUrlReputation
-                            local l_4_31 = {}
-                            -- DECOMPILER ERROR at PC327: No list found for R25 , SetList fails
+                            local l_4_31 = SafeGetUrlReputation
+                            local l_4_32 = {}
+                            -- DECOMPILER ERROR at PC344: No list found for R26 , SetList fails
 
-                            -- DECOMPILER ERROR at PC328: Overwrote pending register: R26 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC345: Overwrote pending register: R27 in 'AssignReg'
 
-                            l_4_30 = l_4_30(l_4_31, l_4_0, false, 2000)
-                            if l_4_30 then
-                              l_4_31 = l_4_30.urls
-                              if l_4_31 then
-                                l_4_31 = l_4_30.urls
-                                l_4_31 = l_4_31[l_4_0]
-                                if l_4_31 then
-                                  l_4_31 = l_4_30.urls
-                                  l_4_31 = l_4_31[l_4_0]
-                                  l_4_31 = l_4_31.determination
-                                  if l_4_31 == 1 then
-                                    l_4_31 = l_4_30.urls
-                                    l_4_31 = l_4_31[l_4_0]
-                                    l_4_31 = l_4_31.confidence
-                                    if l_4_31 >= 90 then
-                                      l_4_31 = AppendToRollingQueue
-                                      l_4_31("Global_CLEAN_Url_Cache", l_4_19, 1, 1209600, 1000)
+                            l_4_31 = l_4_31(l_4_32, l_4_0, false, 2000)
+                            if l_4_31 then
+                              l_4_32 = l_4_31.urls
+                              if l_4_32 then
+                                l_4_32 = l_4_31.urls
+                                l_4_32 = l_4_32[l_4_0]
+                                if l_4_32 then
+                                  l_4_32 = l_4_31.urls
+                                  l_4_32 = l_4_32[l_4_0]
+                                  l_4_32 = l_4_32.determination
+                                  if l_4_32 == 1 then
+                                    l_4_32 = l_4_31.urls
+                                    l_4_32 = l_4_32[l_4_0]
+                                    l_4_32 = l_4_32.confidence
+                                    if l_4_32 >= 90 then
+                                      l_4_32 = AppendToRollingQueue
+                                      l_4_32("Global_CLEAN_Url_Cache", l_4_19, 1, 1209600, 1000)
                                       l_4_4.URL_CLEAN = "UrlRepLookup"
                                       l_4_4.Url_Score = 0
-                                      l_4_31 = 0
-                                      return l_4_31, l_4_4
+                                      l_4_32 = 0
+                                      return l_4_32, l_4_4
                                     end
                                   end
                                 end
                               end
                             end
-                            if l_4_30 then
-                              l_4_31 = l_4_30.urls
-                              if l_4_31 then
-                                l_4_31 = l_4_30.urls
-                                l_4_31 = l_4_31[l_4_0]
-                                if l_4_31 then
-                                  l_4_31 = l_4_30.urls
-                                  l_4_31 = l_4_31[l_4_0]
-                                  l_4_31 = l_4_31.confidence
-                                  if l_4_31 then
-                                    l_4_31 = AppendToRollingQueue
-                                    l_4_31("Global_Url_Cache_Appomaly", l_4_19, ((l_4_30.urls)[l_4_0]).determination, 864000, 1000)
-                                    l_4_31 = l_4_30.urls
-                                    l_4_31 = l_4_31[l_4_0]
-                                    l_4_31 = l_4_31.confidence
-                                    l_4_4.UrlRep_Confidence = l_4_31
-                                    l_4_31 = l_4_30.urls
-                                    l_4_31 = l_4_31[l_4_0]
-                                    l_4_31 = l_4_31.determination
-                                    l_4_4.UrlRep_Determination = l_4_31
-                                    l_4_31 = l_4_30.urls
-                                    l_4_31 = l_4_31[l_4_0]
-                                    l_4_31 = l_4_31.determination
-                                    if l_4_31 ~= 4 then
-                                      l_4_31 = l_4_30.urls
-                                      l_4_31 = l_4_31[l_4_0]
-                                      l_4_31 = l_4_31.determination
-                                      if l_4_31 ~= 1 then
+                            if l_4_31 then
+                              l_4_32 = l_4_31.urls
+                              if l_4_32 then
+                                l_4_32 = l_4_31.urls
+                                l_4_32 = l_4_32[l_4_0]
+                                if l_4_32 then
+                                  l_4_32 = l_4_31.urls
+                                  l_4_32 = l_4_32[l_4_0]
+                                  l_4_32 = l_4_32.confidence
+                                  if l_4_32 then
+                                    l_4_32 = AppendToRollingQueue
+                                    l_4_32("Global_Url_Cache_Appomaly", l_4_19, ((l_4_31.urls)[l_4_0]).determination, 864000, 1000)
+                                    l_4_32 = l_4_31.urls
+                                    l_4_32 = l_4_32[l_4_0]
+                                    l_4_32 = l_4_32.confidence
+                                    l_4_4.UrlRep_Confidence = l_4_32
+                                    l_4_32 = l_4_31.urls
+                                    l_4_32 = l_4_32[l_4_0]
+                                    l_4_32 = l_4_32.determination
+                                    l_4_4.UrlRep_Determination = l_4_32
+                                    l_4_32 = l_4_31.urls
+                                    l_4_32 = l_4_32[l_4_0]
+                                    l_4_32 = l_4_32.determination
+                                    if l_4_32 ~= 4 then
+                                      l_4_32 = l_4_31.urls
+                                      l_4_32 = l_4_32[l_4_0]
+                                      l_4_32 = l_4_32.determination
+                                      if l_4_32 ~= 1 then
                                         do
-                                          l_4_31 = l_4_30.urls
-                                          l_4_31 = l_4_31[l_4_0]
-                                          l_4_31 = l_4_31.determination
-                                          if l_4_31 ~= 7 then
-                                            l_4_3 = l_4_3 + 100
+                                          l_4_32 = l_4_31.urls
+                                          l_4_32 = l_4_32[l_4_0]
+                                          l_4_32 = l_4_32.determination
+                                          -- DECOMPILER ERROR at PC426: Overwrote pending register: R3 in 'AssignReg'
+
+                                          if l_4_32 ~= 7 then
                                             l_4_4.BadUrlRep = true
-                                            l_4_31 = MpCommon
-                                            l_4_31 = l_4_31.Base64Encode
-                                            l_4_31 = l_4_31(l_4_0 .. "_" .. ((l_4_30.urls)[l_4_0]).determination)
+                                            l_4_32 = MpCommon
+                                            l_4_32 = l_4_32.Base64Encode
+                                            l_4_32 = l_4_32(l_4_0 .. "_" .. ((l_4_31.urls)[l_4_0]).determination)
                                             ;
-                                            (mp.set_mpattribute)("Appomaly_BadUrlRep_Found_" .. l_4_31)
+                                            (mp.set_mpattribute)("Appomaly_BadUrlRep_Found_" .. l_4_32)
                                           else
-                                            l_4_31 = l_4_30.urls
-                                            l_4_31 = l_4_31[l_4_0]
-                                            l_4_31 = l_4_31.determination
-                                            if l_4_31 == 7 then
-                                              l_4_3 = l_4_3 + 50
+                                            l_4_32 = l_4_31.urls
+                                            l_4_32 = l_4_32[l_4_0]
+                                            l_4_32 = l_4_32.determination
+                                            -- DECOMPILER ERROR at PC449: Overwrote pending register: R3 in 'AssignReg'
+
+                                            if l_4_32 == 7 then
                                               l_4_4.SusUrlRep = true
                                             end
                                           end
+                                          -- DECOMPILER ERROR at PC458: Overwrote pending register: R3 in 'AssignReg'
+
                                           if (MpCommon.StringRegExpSearch)("\\.(exe|dll|ps1|bat|rar|msi|torrent|png|gif|bin|zip|img|gz|vbs)$", l_4_0) then
-                                            l_4_3 = l_4_3 + 20
                                             l_4_4.Susfile_extension = true
                                           end
                                           l_4_4.Url_Score = l_4_3

@@ -7,7 +7,11 @@ local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FN
 if l_0_1 == nil or l_0_1 == "" or l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "/bin/", 1, true) == 1 or (((string.find)(l_0_0, "/usr/", 1, true) == 1 and not (string.find)(l_0_0, "/usr/local/", 1, true) == 1) or (string.find)(l_0_0, "/applications/microsoft defender.app/", 1, true) == 1) then
+-- DECOMPILER ERROR at PC128: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC128: Unhandled construct in 'MakeBoolean' P3
+
+if (string.find)(l_0_0, "/bin/", 1, true) == 1 or (((string.find)(l_0_0, "/usr/", 1, true) == 1 and not (string.find)(l_0_0, "/usr/local/", 1, true) == 1) or not (string.find)(l_0_0, "/applications/grass-", 1, true) or (string.find)(l_0_0, ".app/contents/resources/", 1, true)) then
   return mp.CLEAN
 end
 local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
@@ -17,23 +21,23 @@ if l_0_3 == nil or l_0_3 == "" then
 end
 do
   local l_0_4 = {}
-  -- DECOMPILER ERROR at PC137: No list found for R4 , SetList fails
+  -- DECOMPILER ERROR at PC164: No list found for R4 , SetList fails
 
-  -- DECOMPILER ERROR at PC138: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC165: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC139: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC166: Overwrote pending register: R6 in 'AssignReg'
 
   for l_0_8,l_0_9 in (".nib")(".png") do
-    -- DECOMPILER ERROR at PC142: Overwrote pending register: R10 in 'AssignReg'
+    -- DECOMPILER ERROR at PC169: Overwrote pending register: R10 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC144: Overwrote pending register: R11 in 'AssignReg'
+    -- DECOMPILER ERROR at PC171: Overwrote pending register: R11 in 'AssignReg'
 
     local l_0_10 = ((".docx").len)(".dmg")
-    -- DECOMPILER ERROR at PC150: Overwrote pending register: R12 in 'AssignReg'
+    -- DECOMPILER ERROR at PC177: Overwrote pending register: R12 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC151: Overwrote pending register: R13 in 'AssignReg'
+    -- DECOMPILER ERROR at PC178: Overwrote pending register: R13 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC152: Overwrote pending register: R14 in 'AssignReg'
+    -- DECOMPILER ERROR at PC179: Overwrote pending register: R14 in 'AssignReg'
 
     if l_0_9 ~= nil and (string.find)(".pkg", ".doc", ".ppt", true) then
       if l_0_2 then
