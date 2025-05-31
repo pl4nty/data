@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Laptop 13-inch 1st Edition Drivers and Firmware",
+    "downloadDescription": "All current drivers and firmware for the Surface Laptop 13-inch 1st Edition",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SurfaceLaptop_13in_1st_Edition_Win11_26100_25.053.29320.0.msi",
+            "url": "https://download.microsoft.com/download/924f1449-b531-4e66-9fc5-870b6eb30b5e/SurfaceLaptop_13in_1st_Edition_Win11_26100_25.053.29320.0.msi",
+            "size": "503214080",
+            "version": "1.0",
+            "datePublished": "5/31/2025 2:56:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The following packages will continue to be updated with the latest drivers and firmware until the date listed in the <a href=\"https://learn.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support#surface-driver-and-firmware-lifecycle-period\">Surface Driver and Firmware Support Lifecycle Policy.</a>\n<br></br>\n<a href=\"https://support.microsoft.com/en-us/help/4036283/surface-surface-update-history\">Surface update history</a>\n<br></br>\nCumulative and current drivers and firmware for the Surface Laptop 13-inch 1st Edition. This package contains drivers for all of the components in the Surface Laptop 13-inch 1st Edition, as well as updates to the system firmware that have been released via Windows Update. The driver MSI files include all of the drivers and firmware needed to deploy custom images of Windows on your Surface devices.\n<ul>\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\n</ul>\n________________________________________________________________________________________________________________________________________\n<br></br>\n<b>Archive Section</b>\n<br></br>\n Consistent with our build lifecycle support, the following packages are no longer being updated with newer drivers and firmware. \n<ul>\n\n</ul>\n<br></br>\nPlease refer to end of lifecycle support:\n<br></br>\n<a href=\"https://docs.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support\">End of Servicing Date</a>\n<br></br>\n<br></br>\n<a href=\"https://en.wikipedia.org/wiki/Windows_11_version_history\">Windows 11 version history</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SurfaceLaptop_13in_1st_Edition_Win11_26100_25.053.29320.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "479.9 MB"
+    ],
+    "detailsSection_file_date": "5/31/2025",
+    "systemRequirementsSection": "Surface Laptop 13-inch 1st Edition required for compatibility with these drivers. These drivers and firmware are compatible with Windows 11, including Enterprise versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Use these drivers and firmware to prepare your custom images for enterprise deployment, or to repair problems with custom installations of Windows on your Surface Laptop 13-inch 1st Edition. The MSI will install all relevant drivers automatically.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108198",
+    "downloadPreload": true
+}
