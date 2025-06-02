@@ -75,13 +75,15 @@ if l_0_1 then
 
     -- DECOMPILER ERROR at PC89: Overwrote pending register: R12 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC90: No list found for R7 , SetList fails
+    -- DECOMPILER ERROR at PC90: Overwrote pending register: R13 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC92: Overwrote pending register: R3 in 'AssignReg'
+    -- DECOMPILER ERROR at PC91: No list found for R7 , SetList fails
 
-    -- DECOMPILER ERROR at PC95: Overwrote pending register: R5 in 'AssignReg'
+    -- DECOMPILER ERROR at PC93: Overwrote pending register: R3 in 'AssignReg'
 
     -- DECOMPILER ERROR at PC96: Overwrote pending register: R5 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC97: Overwrote pending register: R5 in 'AssignReg'
 
     if l_0_3 >= 2 then
       return l_0_5
