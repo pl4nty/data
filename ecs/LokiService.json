@@ -1184,9 +1184,9 @@
         "isReportsCountEnabled": true
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250528.2.0",
-        "PeopleInTaskbarMsitVersion": "1.20250509.5.0",
-        "PeopleInTaskbarProdVersion": "1.20250507.2.0",
+        "PeopleInTaskbarDFVersion": "1.20250601.5.0",
+        "PeopleInTaskbarMsitVersion": "1.20250528.2.0",
+        "PeopleInTaskbarProdVersion": "1.20250509.5.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",

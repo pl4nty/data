@@ -521,6 +521,7 @@
         "Enable_GetDirectLaunchURLAPI": true,
         "Enable_IWSReturnFrontlineAvailability": true,
         "Enable_IWSReturnGpuCategory": true,
+        "Enable_PartnerCloudPC_VMInstanceView": true,
         "Enable_StartAPI": true,
         "Enable_StopAPI": true,
         "Enable_SupportFLWAllotment": true,
