@@ -1716,86 +1716,95 @@ isSimilarIndicator = function(l_23_0, l_23_1, l_23_2)
   local l_23_3 = l_23_2.IndicatorScore
   local l_23_4 = nil
   if (string.find)(l_23_1, "SuspFileDrop", 1, true) then
-    for l_23_8,l_23_9 in pairs(l_23_0) do
-      if (string.find)(l_23_8, "SuspFileDrop", 1, true) and (l_23_8 == l_23_1 or (string.match)(l_23_8, "SuspFileDrop%[(%d+)%]%[(.-)%]") == (string.match)(l_23_1, "SuspFileDrop%[(%d+)%]%[(.-)%]")) then
+    local l_23_5 = nil
+    for l_23_9,l_23_10 in pairs(l_23_0) do
+      -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P1
+
+      if (string.find)(l_23_9, "SuspFileDrop", 1, true) and (l_23_9 == l_23_1 or (string.match)(l_23_9, "SuspFileDrop%[(%d+)%]%[(.-)%]") == (string.match)(l_23_1, "SuspFileDrop%[(%d+)%]%[(.-)%]")) then
         l_23_4 = true
-        if l_23_9.IndicatorScore < l_23_3 then
-          l_23_3 = l_23_9.IndicatorScore
+        if l_23_10.IndicatorScore < l_23_3 then
+          l_23_3 = l_23_10.IndicatorScore
         end
+      else
+        l_23_5 = true
       end
     end
-    if l_23_4 then
-      return true, l_23_3 / 2
-    else
-      return false
-    end
-  end
-  if (string.find)(l_23_1, "NoneDefaultDirectory", 1, true) then
-    for l_23_13,l_23_14 in pairs(l_23_0) do
-      if (string.find)(l_23_13, "NoneDefaultDirectory", 1, true) then
-        local l_23_20 = (string.match)(l_23_13, "NoneDefaultDirectory%[(%d+)%]%[(.-)%]")
-        local l_23_23, l_23_24 = , (string.match)(l_23_1, "NoneDefaultDirectory%[(%d+)%]%[(.-)%]")
-        if l_23_23 == l_23_1 then
-          return true, 0
+    do
+      do
+        if l_23_4 or l_23_5 then
+          return true, l_23_3 / 2
+        else
+          return false
         end
-      end
-    end
-    return false
-  end
-  if (string.find)(l_23_1, "Base64Cmd_child", 1, true) then
-    for l_23_18,l_23_19 in pairs(l_23_0) do
-      local l_23_21 = string.find
-      local l_23_22 = l_23_18
-      l_23_21 = l_23_21(l_23_22, "Base64Cmd_child", 1, true)
-      if l_23_21 then
-        l_23_21 = l_23_19.IndicatorScore
-        l_23_22 = l_23_2.IndicatorScore
-        if l_23_21 == l_23_22 then
-          l_23_4 = true
-          l_23_21 = l_23_19.IndicatorScore
-          if l_23_21 < l_23_3 then
-            l_23_3 = l_23_19.IndicatorScore
+        if (string.find)(l_23_1, "NoneDefaultDirectory", 1, true) then
+          for l_23_14,l_23_15 in pairs(l_23_0) do
+            if (string.find)(l_23_14, "NoneDefaultDirectory", 1, true) then
+              local l_23_21 = (string.match)(l_23_14, "NoneDefaultDirectory%[(%d+)%]%[(.-)%]")
+              local l_23_24, l_23_25 = , (string.match)(l_23_1, "NoneDefaultDirectory%[(%d+)%]%[(.-)%]")
+              if l_23_24 == l_23_1 then
+                return true, 0
+              end
+            end
+          end
+          return false
+        end
+        if (string.find)(l_23_1, "Base64Cmd_child", 1, true) then
+          for l_23_19,l_23_20 in pairs(l_23_0) do
+            local l_23_22 = string.find
+            local l_23_23 = l_23_19
+            l_23_22 = l_23_22(l_23_23, "Base64Cmd_child", 1, true)
+            if l_23_22 then
+              l_23_22 = l_23_20.IndicatorScore
+              l_23_23 = l_23_2.IndicatorScore
+              if l_23_22 == l_23_23 then
+                l_23_4 = true
+                l_23_22 = l_23_20.IndicatorScore
+                if l_23_22 < l_23_3 then
+                  l_23_3 = l_23_20.IndicatorScore
+                end
+              end
+            end
+          end
+          if l_23_4 then
+            return true, l_23_3 / 2
+          else
+            return false
           end
         end
-      end
-    end
-    if l_23_4 then
-      return true, l_23_3 / 2
-    else
-      return false
-    end
-  end
-  if (string.find)(l_23_1, "SuspDownload", 1, true) then
-    for l_23_28,l_23_29 in pairs(l_23_0) do
-      if (string.find)(l_23_28, "SuspDownload", 1, true) and l_23_29.IndicatorScore == l_23_2.IndicatorScore then
-        l_23_4 = true
-        if l_23_29.IndicatorScore < l_23_3 then
-          l_23_3 = l_23_29.IndicatorScore
+        if (string.find)(l_23_1, "SuspDownload", 1, true) then
+          for l_23_29,l_23_30 in pairs(l_23_0) do
+            if (string.find)(l_23_29, "SuspDownload", 1, true) and l_23_30.IndicatorScore == l_23_2.IndicatorScore then
+              l_23_4 = true
+              if l_23_30.IndicatorScore < l_23_3 then
+                l_23_3 = l_23_30.IndicatorScore
+              end
+            end
+          end
+          if l_23_4 then
+            return true, l_23_3 / 2
+          else
+            return false
+          end
         end
-      end
-    end
-    if l_23_4 then
-      return true, l_23_3 / 2
-    else
-      return false
-    end
-  end
-  if (string.find)(l_23_1, "SuspDirectoryDrop", 1, true) then
-    for l_23_33,l_23_34 in pairs(l_23_0) do
-      if (string.find)(l_23_33, "SuspDirectoryDrop", 1, true) then
-        l_23_4 = true
-        if l_23_34.IndicatorScore < l_23_3 then
-          l_23_3 = l_23_34.IndicatorScore
+        if (string.find)(l_23_1, "SuspDirectoryDrop", 1, true) then
+          for l_23_34,l_23_35 in pairs(l_23_0) do
+            if (string.find)(l_23_34, "SuspDirectoryDrop", 1, true) then
+              l_23_4 = true
+              if l_23_35.IndicatorScore < l_23_3 then
+                l_23_3 = l_23_35.IndicatorScore
+              end
+            end
+          end
+          if l_23_4 then
+            return true, l_23_3 / 2
+          else
+            return false
+          end
         end
+        return false
       end
     end
-    if l_23_4 then
-      return true, l_23_3 / 2
-    else
-      return false
-    end
   end
-  return false
 end
 
 IncreaseProcessAnomalyScore = function(l_24_0, l_24_1, l_24_2, l_24_3, l_24_4)

@@ -101,50 +101,52 @@ if not (this_sigattrlog[1]).utf8p2 then
           local l_0_22 = nil
           -- DECOMPILER ERROR at PC269: Confused about usage of register: R2 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC272: Confused about usage of register: R4 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC273: Confused about usage of register: R4 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC275: Confused about usage of register: R4 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC285: Confused about usage of register: R4 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC287: Confused about usage of register: R4 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC298: Confused about usage of register: R3 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC293: Confused about usage of register: R3 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC306: Confused about usage of register: R4 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC300: Confused about usage of register: R3 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC311: Confused about usage of register: R3 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC321: Confused about usage of register: R4 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC319: Confused about usage of register: R4 in 'UnsetPending'
 
           if (not (string.match)((string.lower)(l_0_12), "%w:\\.*.exe") and (string.match)(l_0_20, "%w:\\.*.exe")) or (string.match)((string.match)((string.lower)(l_0_12), "%w:\\.*.dll"), "([^\\]+)$") ~= (string.match)((string.match)(l_0_20, "%w:\\.*.dll"), "([^\\]+)$") then
-            local l_0_23, l_0_24 = nil
-            if pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", (string.match)((string.lower)(l_0_12), "%w:\\.*.dll")) and MpCommon.RollingQueueQueryKeyRegex then
-              for l_0_28,l_0_29 in ipairs(R10_PC332) do
-                local l_0_25, l_0_26, l_0_27, l_0_28, l_0_29 = , 0 + 10 + 20, {parents = add_parents(), processname = (bm.get_imagepath)(), reason = l_0_11, appId = l_0_21, From_Value = l_0_20, To_value = l_0_12, FileDroppedRecently = true, FileInfo = MpCommon.RollingQueueQueryKeyRegex}
-                -- DECOMPILER ERROR at PC336: Confused about usage of register: R13 in 'UnsetPending'
+            local l_0_23 = nil
+            local l_0_24, l_0_25 = nil
+            if pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", ((string.gsub)((string.match)((string.lower)(l_0_12), "%w:\\.*.dll"), "\\", "\\\\")):gsub("([%^%$%(%)%.%[%]%*%+%-%?])", "\\%1")) and MpCommon.RollingQueueQueryKeyRegex then
+              for l_0_29,l_0_30 in ipairs(R11_PC343) do
+                local l_0_26, l_0_27, l_0_28, l_0_29, l_0_30 = 0 + 10 + 20, {parents = add_parents(), processname = (bm.get_imagepath)(), reason = l_0_11, appId = l_0_21, From_Value = (string.match)(l_0_20, "%w:\\.*.dll"), To_value = (string.match)((string.lower)(l_0_12), "%w:\\.*.dll"), FileDroppedRecently = true, FileInfo = MpCommon.RollingQueueQueryKeyRegex}
+                -- DECOMPILER ERROR at PC347: Confused about usage of register: R14 in 'UnsetPending'
 
-                if (string.find)(R13_PC336.value, "FileAttributes", 1, true) or (string.find)(R13_PC336.value, "UnsignedFile", 1, true) then
+                if (string.find)(R14_PC347.value, "FileAttributes", 1, true) or (string.find)(R14_PC347.value, "UnsignedFile", 1, true) then
                   l_0_26 = l_0_26 + 20
+                  l_0_27.FileInfo = l_0_30
                 end
               end
             end
             do
-              -- DECOMPILER ERROR at PC355: Confused about usage of register: R5 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC367: Confused about usage of register: R5 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC355: Confused about usage of register: R6 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC367: Confused about usage of register: R6 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC355: Confused about usage of register: R6 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC367: Confused about usage of register: R6 in 'UnsetPending'
 
               l_0_27.Score = l_0_26
-              -- DECOMPILER ERROR at PC356: Confused about usage of register: R5 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC368: Confused about usage of register: R5 in 'UnsetPending'
 
               if l_0_26 == 0 then
                 return mp.CLEAN
               end
-              -- DECOMPILER ERROR at PC362: Confused about usage of register: R6 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC374: Confused about usage of register: R6 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC366: Confused about usage of register: R6 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC378: Confused about usage of register: R6 in 'UnsetPending'
 
               do
                 do
-                  local l_0_30, l_0_31 = nil
+                  local l_0_31, l_0_32 = nil
                   ;
                   (bm.add_related_string)("AdditionalInfo", safeJsonSerialize(l_0_27) or l_0_27.processname or "", bm.RelatedStringBMReport)
                   do return mp.INFECTED end

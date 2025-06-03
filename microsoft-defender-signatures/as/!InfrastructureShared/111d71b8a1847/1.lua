@@ -147,27 +147,28 @@ do
 
                                 if (l_0_46["Evidence_L" .. l_0_50]).MultilayerEncoding then
                                   (mp.set_mpattribute)("HSTR:PFApps_MultilayerEncoded_B")
+                                  l_0_10.Concrete = true
                                 end
-                                -- DECOMPILER ERROR at PC365: LeaveBlock: unexpected jumping out DO_STMT
+                                -- DECOMPILER ERROR at PC366: LeaveBlock: unexpected jumping out DO_STMT
 
-                                -- DECOMPILER ERROR at PC365: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                -- DECOMPILER ERROR at PC366: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                -- DECOMPILER ERROR at PC365: LeaveBlock: unexpected jumping out IF_STMT
+                                -- DECOMPILER ERROR at PC366: LeaveBlock: unexpected jumping out IF_STMT
 
                               end
                             end
                           end
                         end
-                        -- DECOMPILER ERROR at PC366: Confused about usage of register: R11 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC367: Confused about usage of register: R11 in 'UnsetPending'
 
                         if l_0_44.Score > 45 then
                           l_0_10.Remediation_Reason = l_0_10.Remediation_Reason .. ";" .. "HighScore"
                         end
-                        -- DECOMPILER ERROR at PC374: Confused about usage of register: R13 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC375: Confused about usage of register: R13 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC376: Confused about usage of register: R13 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC377: Confused about usage of register: R13 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC379: Confused about usage of register: R13 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC380: Confused about usage of register: R13 in 'UnsetPending'
 
                         do
                           if l_0_46 and l_0_46.Evidence_L1 then
@@ -184,12 +185,12 @@ do
                               (MpCommon.BmTriggerSig)(l_0_0.ppid, "SuspDownload3_BM_Capture", safeJsonSerialize(l_0_10, 150, nil, true))
                             else
                               if l_0_10 then
-                                set_research_data("Error", (MpCommon.Base64Encode)(R19_PC418), R19_PC418)
+                                set_research_data("Error", (MpCommon.Base64Encode)(R19_PC419), R19_PC419)
                                 return mp.INFECTED
                               end
                             end
                             do return mp.CLEAN end
-                            -- DECOMPILER ERROR at PC427: freeLocal<0 in 'ReleaseLocals'
+                            -- DECOMPILER ERROR at PC428: freeLocal<0 in 'ReleaseLocals'
 
                           end
                         end
