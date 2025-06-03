@@ -17,7 +17,10 @@ if (string.find)(l_0_1, ".", 1, true) ~= nil then
   if l_0_3 == ".temp" or l_0_3 == ".bj23" or l_0_3 == ".ospx" or l_0_3 == ".crpl" then
     return mp.CLEAN
   end
-  if StringEndsWith(l_0_1, ".zipenc") or StringEndsWith(l_0_1, ".content") or StringEndsWith(l_0_1, ".downloading") or StringEndsWith(l_0_1, ".partial") then
+  if StringEndsWith(l_0_1, ".zipenc") or StringEndsWith(l_0_1, ".content") or StringEndsWith(l_0_1, ".downloading") or StringEndsWith(l_0_1, ".partial") or StringEndsWith(l_0_1, ".scindex") or StringEndsWith(l_0_1, ".cryptsync") then
+    return mp.CLEAN
+  end
+  if l_0_1 == "pesrs.7z" then
     return mp.CLEAN
   end
 end

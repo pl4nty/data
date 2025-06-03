@@ -25,23 +25,7 @@ local l_0_3 = {}
 
 -- DECOMPILER ERROR at PC39: Overwrote pending register: R4 in 'AssignReg'
 
-if not ("%]+$")(l_0_1, l_0_3) then
-  return mp.CLEAN
-end
-local l_0_4 = {}
--- DECOMPILER ERROR at PC50: No list found for R4 , SetList fails
-
--- DECOMPILER ERROR at PC51: Overwrote pending register: R5 in 'AssignReg'
-
-if not ("\'+$")(l_0_1, l_0_4) then
-  return mp.CLEAN
-end
-local l_0_5 = {}
--- DECOMPILER ERROR at PC62: No list found for R5 , SetList fails
-
--- DECOMPILER ERROR at PC63: Overwrote pending register: R6 in 'AssignReg'
-
-if not ("%&$")(l_0_1, l_0_5) then
+if not ("\'+$")(l_0_1, l_0_3) then
   return mp.CLEAN
 end
 return mp.INFECTED
