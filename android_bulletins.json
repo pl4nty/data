@@ -1,5 +1,377 @@
 [
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26456",
+        "References": "A-391895923",
+        "Type": "DoS",
+        "Severity": "High",
+        "Updated AOSP versions": "14, 15",
+        "Component": "Android Runtime"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26450",
+        "References": "A-331730488",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26452",
+        "References": "A-383080440",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26455",
+        "References": "A-301470262",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26458",
+        "References": "A-388828203",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26462",
+        "References": "A-386950836",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-32312",
+        "References": "A-373467684",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26437",
+        "References": "A-370477460",
+        "Type": "ID",
+        "Severity": "High",
+        "Updated AOSP versions": "15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26448",
+        "References": "A-309407957",
+        "Type": "ID",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26432",
+        "References": "A-386802855",
+        "Type": "DoS",
+        "Severity": "High",
+        "Updated AOSP versions": "15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26449",
+        "References": "A-387498139",
+        "Type": "DoS",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26463",
+        "References": "A-303227969",
+        "Type": "DoS",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26443",
+        "References": "A-368319929",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26441",
+        "References": "A-367274727",
+        "Type": "ID",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26445",
+        "References": "A-388828859",
+        "Type": "ID",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-26453",
+        "References": "A-395643490",
+        "Type": "ID",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "Subcomponent": "ART",
+        "CVE": "CVE-2025-26456",
+        "Component": "Google Play system updates"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "Subcomponent": "WiFi",
+        "CVE": "CVE-2025-26445",
+        "Component": "Google Play system updates"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-0073",
+        "References": "A-391930942",
+        "Severity": "High",
+        "Subcomponent": "Mali",
+        "Component": "Arm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-0819",
+        "References": "A-402115802",
+        "Severity": "High",
+        "Subcomponent": "Mali",
+        "Component": "Arm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2024-12576",
+        "References": "A-384017663",
+        "Severity": "High",
+        "Subcomponent": "PowerVR-GPU",
+        "Component": "Imagination Technologies"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2024-12837",
+        "References": "A-382309975",
+        "Severity": "High",
+        "Subcomponent": "PowerVR-GPU",
+        "Component": "Imagination Technologies"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2024-47893",
+        "References": "A-388860393",
+        "Severity": "High",
+        "Subcomponent": "PowerVR-GPU",
+        "Component": "Imagination Technologies"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-0468",
+        "References": "A-382558918",
+        "Severity": "High",
+        "Subcomponent": "PowerVR-GPU",
+        "Component": "Imagination Technologies"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-0478",
+        "References": "A-382308394",
+        "Severity": "High",
+        "Subcomponent": "PowerVR-GPU",
+        "Component": "Imagination Technologies"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-0835",
+        "References": "A-393393236",
+        "Severity": "High",
+        "Subcomponent": "PowerVR-GPU",
+        "Component": "Imagination Technologies"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-25178",
+        "References": "A-395843768",
+        "Severity": "High",
+        "Subcomponent": "PowerVR-GPU",
+        "Component": "Imagination Technologies"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-21424",
+        "References": "A-406236621",
+        "Severity": "High",
+        "Subcomponent": "Kernel",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-21485",
+        "References": "A-409047090",
+        "Severity": "High",
+        "Subcomponent": "Kernel",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-21486",
+        "References": "A-400449990",
+        "Severity": "High",
+        "Subcomponent": "Kernel",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2024-53010",
+        "References": "A-381899437",
+        "Severity": "High",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2024-53019",
+        "References": "A-381899100",
+        "Severity": "High",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2024-53020",
+        "References": "A-381899262",
+        "Severity": "High",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2024-53021",
+        "References": "A-381899144",
+        "Severity": "High",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2024-53026",
+        "References": "A-381898142",
+        "Severity": "High",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01",
+        "CVE": "CVE-2025-27029",
+        "References": "A-400450166",
+        "Severity": "High",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-05-01",
         "Published": "May 5, 2025",
         "Patch level": "2025-05-01",
@@ -88272,6 +88644,11 @@
         "Subcomponent": "Camera driver"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-01"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2025-05-01",
         "Published": "May 5, 2025",
         "Patch level": "2025-05-01"
@@ -89420,6 +89797,11 @@
         "Severity": "High",
         "Updated AOSP versions": "10",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-06-01",
+        "Published": "June 2, 2025",
+        "Patch level": "2025-06-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-05-01",
