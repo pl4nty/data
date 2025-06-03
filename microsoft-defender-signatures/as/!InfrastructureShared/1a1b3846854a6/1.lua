@@ -115,9 +115,9 @@ if not (this_sigattrlog[1]).utf8p2 then
 
           if (not (string.match)((string.lower)(l_0_12), "%w:\\.*.exe") and (string.match)(l_0_20, "%w:\\.*.exe")) or (string.match)((string.match)((string.lower)(l_0_12), "%w:\\.*.dll"), "([^\\]+)$") ~= (string.match)((string.match)(l_0_20, "%w:\\.*.dll"), "([^\\]+)$") then
             local l_0_23, l_0_24 = nil
-            if pcall(MpCommon.RollingQueueQueryMultiKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", (string.match)((string.lower)(l_0_12), "%w:\\.*.dll")) and MpCommon.RollingQueueQueryMultiKeyRegex then
+            if pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", (string.match)((string.lower)(l_0_12), "%w:\\.*.dll")) and MpCommon.RollingQueueQueryKeyRegex then
               for l_0_28,l_0_29 in ipairs(R10_PC332) do
-                local l_0_25, l_0_26, l_0_27, l_0_28, l_0_29 = , 0 + 10 + 20, {parents = add_parents(), processname = (bm.get_imagepath)(), reason = l_0_11, appId = l_0_21, From_Value = l_0_20, To_value = l_0_12, FileDroppedRecently = true, FileInfo = MpCommon.RollingQueueQueryMultiKeyRegex}
+                local l_0_25, l_0_26, l_0_27, l_0_28, l_0_29 = , 0 + 10 + 20, {parents = add_parents(), processname = (bm.get_imagepath)(), reason = l_0_11, appId = l_0_21, From_Value = l_0_20, To_value = l_0_12, FileDroppedRecently = true, FileInfo = MpCommon.RollingQueueQueryKeyRegex}
                 -- DECOMPILER ERROR at PC336: Confused about usage of register: R13 in 'UnsetPending'
 
                 if (string.find)(R13_PC336.value, "FileAttributes", 1, true) or (string.find)(R13_PC336.value, "UnsignedFile", 1, true) then

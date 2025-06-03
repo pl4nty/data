@@ -25,7 +25,7 @@ l_0_1.cmdLine = l_0_3
 local l_0_6 = 0
 local l_0_7 = (string.gsub)(l_0_5, "\\", "\\\\")
 l_0_7 = l_0_7:gsub("([%^%$%(%)%.%[%]%*%+%-%?])", "\\%1")
-local l_0_8, l_0_9 = pcall(MpCommon.RollingQueueQueryMultiKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", l_0_7)
+local l_0_8, l_0_9 = pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", l_0_7)
 if l_0_8 and l_0_9 then
   for l_0_13,l_0_14 in ipairs(l_0_9) do
     if (string.find)(l_0_14.value, "UnsignedFile", 1, true) then

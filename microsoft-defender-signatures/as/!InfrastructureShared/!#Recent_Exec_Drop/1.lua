@@ -48,7 +48,7 @@ do
     local l_0_13, l_0_14, l_0_15, l_0_16 = safeJsonSerialize(l_0_2) or ""
     -- DECOMPILER ERROR at PC146: Confused about usage of register: R5 in 'UnsetPending'
 
-    AppendToRollingQueue("RQ_RecentExecDropped_MultipleKey_30m", l_0_0, l_0_13, 1800, 1000, 0)
+    AppendToRollingQueue("RQ_RecentExecDropped_MultipleKey_30m", l_0_0, l_0_13, 1800, 1000, 1)
     -- DECOMPILER ERROR at PC154: Confused about usage of register: R5 in 'UnsetPending'
 
     AppendToRollingQueue("RQ_RecentExecDropped", l_0_0, l_0_13, 31104000, 1000, 1)
