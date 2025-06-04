@@ -421,6 +421,11 @@
                 "BackgroundResourceFetch"
             ]
         },
+        "KillSwitch-UsageEventData": {
+            "disableFeatures": [
+                "msIncludeUsageEventDataInFeedback"
+            ]
+        },
         "LoadStatisticsLoggingPri": {
             "disableFeatures": [
                 "msLoadStatisticsLowPriLogging"

@@ -325,6 +325,11 @@
                             "toc_title": "affinity group"
                         },
                         {
+                            "href": "a_z_names_terms/a/agent-store",
+                            "permissioned-type": "private",
+                            "toc_title": "Agent Store"
+                        },
+                        {
                             "href": "a_z_names_terms/a/agentic",
                             "permissioned-type": "private",
                             "toc_title": "agentic"
@@ -777,11 +782,6 @@
                                     "toc_title": "Azure AI Advantage"
                                 },
                                 {
-                                    "href": "a_z_names_terms/a/azure-ai-agent-service",
-                                    "permissioned-type": "private",
-                                    "toc_title": "Azure AI Agent Service"
-                                },
-                                {
                                     "href": "a_z_names_terms/a/azure-ai-anomaly-detector",
                                     "permissioned-type": "private",
                                     "toc_title": "Azure AI Anomaly Detector"
@@ -822,6 +822,11 @@
                                     "toc_title": "Azure AI Foundry"
                                 },
                                 {
+                                    "href": "a_z_names_terms/a/azure-ai-foundry-agent-service",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Azure AI Foundry Agent Service"
+                                },
+                                {
                                     "href": "a_z_names_terms/a/azure-ai-foundry-labs",
                                     "permissioned-type": "private",
                                     "toc_title": "Azure AI Foundry Labs"
@@ -830,6 +835,16 @@
                                     "href": "a_z_names_terms/a/azure-ai-foundry-portal",
                                     "permissioned-type": "private",
                                     "toc_title": "Azure AI Foundry portal"
+                                },
+                                {
+                                    "href": "a_z_names_terms/a/azure-ai-foundry-models",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Azure AI Foundry Models"
+                                },
+                                {
+                                    "href": "a_z_names_terms/a/azure-ai-foundry-observability",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Azure AI Foundry Observability"
                                 },
                                 {
                                     "href": "a_z_names_terms/a/azure-ai-health-bot",
@@ -1415,9 +1430,9 @@
                             "toc_title": "Azure OpenAI Enterprise"
                         },
                         {
-                            "href": "a_z_names_terms/a/azure-openai-service",
+                            "href": "a_z_names_terms/a/azure-openai",
                             "permissioned-type": "private",
-                            "toc_title": "Azure OpenAI Service"
+                            "toc_title": "Azure OpenAI"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-operated-by-21vianet",
@@ -5265,6 +5280,11 @@
                             "toc_title": "Microsoft Designer"
                         },
                         {
+                            "href": "a_z_names_terms/m/microsoft-discovery",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Discovery"
+                        },
+                        {
                             "href": "a_z_names_terms/m/microsoft-dragon-essentials",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Dragon Essentials"
@@ -5300,6 +5320,11 @@
                                     "href": "a_z_names_terms/m/microsoft-entra/microsoft-entra-admin-center",
                                     "permissioned-type": "private",
                                     "toc_title": "Microsoft Entra admin center"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-entra/microsoft-entra-agent-id",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft Entra Agent ID"
                                 },
                                 {
                                     "href": "a_z_names_terms/m/microsoft-entra/microsoft-entra-conditional-access",
@@ -13549,7 +13574,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2576,
+        "count_of_node_with_href": 2581,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,
