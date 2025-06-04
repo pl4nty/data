@@ -25,7 +25,7 @@ local l_0_3 = {}
 
 -- DECOMPILER ERROR at PC39: Overwrote pending register: R4 in 'AssignReg'
 
-if not ("\'+$")(l_0_1, l_0_3) then
+if not ("\'%+%$")(l_0_1, l_0_3) then
   return mp.CLEAN
 end
 return mp.INFECTED
