@@ -81,11 +81,6 @@
                 }
             ]
         },
-        "EdgeShoppingOnlineSelectorExtraction": {
-            "enableFeatures": [
-                "msShoppingExp1"
-            ]
-        },
         "EdgeSyncDataConsistency": {
             "enableFeatures": [
                 "msEdgeSyncDataConsistency"
@@ -336,48 +331,6 @@
         "EdgeShoppingFreeOffersConfig": {
             "enableFeatures": [
                 "msEdgeShoppingPriceComparisonBackfillFreeOffers"
-            ]
-        },
-        "EdgeShoppingInBingChatConfig": {
-            "enableFeatures": [
-                "msEdgeShoppingAddCategoryToWebAssist",
-                "msEdgeShoppingDiscoverPopupLeft",
-                "msEdgeShoppingExpectUniqueNotification",
-                "msShoppingExp22",
-                "msShoppingExp63",
-                "msShoppingExp69",
-                "msShoppingUapiExp35"
-            ]
-        },
-        "EdgeShoppingInBingChatTiedConfig": {
-            "enableFeatures": [
-                "msEdgeShoppingOnDiscover"
-            ],
-            "parameters": [
-                {
-                    "name": "decisionTotalCount",
-                    "value": "5"
-                },
-                {
-                    "name": "maxCountThreshold",
-                    "value": "2"
-                },
-                {
-                    "name": "researchTotalCount",
-                    "value": "3"
-                },
-                {
-                    "name": "discoverTotalCount",
-                    "value": "0"
-                },
-                {
-                    "name": "journeyStageCooldownInMinutes",
-                    "value": "90"
-                },
-                {
-                    "name": "categoryCooldownInMinutes",
-                    "value": "240"
-                }
             ]
         },
         "EdgeShoppingPageLocaleTimeoutConfig": {

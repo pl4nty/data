@@ -473,6 +473,7 @@
         "EnableTeamsLicenseCheck": true,
         "EnableVNextQuery": false,
         "EnableVivaSkillsDataExportProvider": true,
+        "EnableVivaSkillsInLPE": true,
         "EnableVivaTopicsUserResolution": true,
         "EnabledAnnotations": "Birthday,PositionChange,WorkAnniversary,PendingRSVPToMeeting,PostedAnnouncement,EmailWithLotsOfReactions,CollabNetDocumentComment,CollabNetDocumentMentionedMe,CollabNetDocumentModify,CollabNetDocumentMultipleModify,CollabNetDocumentReply,CollabNetDocumentSharing,UpcomingMeeting,MissedMeeting",
         "ExcludedPropertyBagKeys": [],
