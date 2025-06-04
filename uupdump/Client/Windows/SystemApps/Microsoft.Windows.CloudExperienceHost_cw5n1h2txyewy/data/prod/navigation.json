@@ -2193,12 +2193,23 @@
             "cxid": "BitlockerDeferralReleasePostMSA",
             "policyName": "BitlockerDeferralRelease",
             "launcher": "js:OOBEAutoPilot",
-            "successID": "OobeWindowsAccountSyncConsent",
-            "failID": "OobeWindowsAccountSyncConsent",
-            "cancelID": "OobeWindowsAccountSyncConsent",
+            "successID": "OobePrepTransitionToNextApp",
+            "failID": "OobePrepTransitionToNextApp",
+            "cancelID": "OobePrepTransitionToNextApp",
             "disableErrorPageOnFailure": true,
             "visibility": false,
             "timeout": 30000
+        },
+        "OobePrepTransitionToNextApp": {
+            "cxid": "OobePrepTransitionToNextApp",
+            "launcher": "js:OobePrepTransitionToNextApp",
+            "requiredFeatureName": "OobeHostAppInDefaultUserSession",
+            "canExitCxh": true,
+            "disableBackNavigationToNode": true,
+            "disableErrorPageOnFailure": true,
+            "visibility": false,
+            "failID": "OobeWindowsAccountSyncConsent",
+            "preloadSkipID": "OobeWindowsAccountSyncConsent"
         },
         "OobeWindowsAccountSyncConsent": {
             "cxid": "OobeWindowsAccountSyncConsent",
@@ -2213,6 +2224,7 @@
             "cancelID": "OobeMSAHello",
             "abortID": "OobeMSAHello",
             "offlineID": "OobeMSAHello",
+            "disableBackNavigationToNode": true,
             "disableErrorPageOnFailure": true,
             "visibility": false
         },

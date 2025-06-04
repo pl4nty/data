@@ -1,8 +1,8 @@
 ﻿//
 // Copyright (C) Microsoft. All rights reserved.
 //
-define(['lib/knockout', 'legacy/bridge',
-    'optional!sample/Sample.CloudExperienceHostAPI.Speech.SpeechSynthesis'], (ko, bridge) => {
+define(['lib/knockout', 'legacy/bridge', 'legacy/events',
+    'optional!sample/Sample.CloudExperienceHostAPI.Speech.SpeechSynthesis'], (ko, bridge, eventConstants) => {
         let pendingPanelTransition = WinJS.Promise.as(null);
 
         let componentLoadCompleteCallback;
@@ -48,6 +48,19 @@ define(['lib/knockout', 'legacy/bridge',
             let isButton = ev.target && ev.target.tagName && (ev.target.tagName.toLowerCase() === "button");
             let isSelect = ev.target && ev.target.tagName && (ev.target.tagName.toLowerCase() === "select");
             if (!isLink && !isButton && !isSelect) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function isPageActionAllowedWithGamepadA(ev, lastSelectedElement) {
+        if (ev.keyCode == WinJS.Utilities.Key.GamepadA && ev.target == lastSelectedElement) {
+            let isLink = ev.target && ev.target.tagName && (ev.target.tagName.toLowerCase() === "a");
+            let isButton = ev.target && ev.target.tagName && (ev.target.tagName.toLowerCase() === "button");
+            let isSelect = ev.target && ev.target.tagName && (ev.target.tagName.toLowerCase() === "select");
+            let isInput = ev.target && ev.target.tagName && (ev.target.tagName.toLowerCase() === "input");
+            if (!isLink && !isButton && !isSelect && !isInput) {
                 return true;
             }
         }
@@ -405,11 +418,58 @@ define(['lib/knockout', 'legacy/bridge',
         }
     };
 
+    ko.bindingHandlers.useGamepadForDefaultActions = {
+        // The expectation for using this binding is that it is evaluated once right at the page's initial load
+        // and is not updated afterwards. It also expects that a defaultAction is bound to the same element, and that
+        // this is not an observable type (meaning it also won't change during runtime).
+        init: function (element, valueAccessor, allBindings) {
+            let allow = ko.unwrap(valueAccessor());
+            let defaultAction = allBindings.get("oobePageDefaultAction");
+
+            if ((allow === true) && defaultAction) {
+                let lastObservedElementForA;
+                let lastObservedElementForB;
+
+                element.addEventListener("keydown", (ev) => {
+                    switch (ev.keyCode) {
+                        case WinJS.Utilities.Key.GamepadA:
+                            lastObservedElementForA = ev.target;
+                            break;
+
+                        case WinJS.Utilities.Key.GamepadB:
+                            lastObservedElementForB = ev.target;
+                            break;
+
+                        default:
+                            break;
+                    }
+                    return true; // Tells Knockout to allow the default action
+                });
+
+                element.addEventListener("keyup", (ev) => {
+                    let handled = true;
+
+                    if (isPageActionAllowedWithGamepadA(ev, lastObservedElementForA)) {
+                        defaultAction();
+                    }
+                    else if ((ev.keyCode === WinJS.Utilities.Key.GamepadB) && (ev.target === lastObservedElementForB)) {
+                        bridge.fireEvent(eventConstants.Events.backButtonClicked)
+                    }
+                    else {
+                        handled = false;
+                    }
+
+                    return !handled;
+                });
+            }
+        }
+    };
+
     ko.bindingHandlers.iframeContent = {
         update: function (element, valueAccessor, allBindings) {
             let value = ko.utils.unwrapObservable(valueAccessor());
             if (value.content && value.dir) {
-                let iframeDocument = element.contentWindow.document;
+                let iFrameDocument = element.contentWindow.document;
 
                 if (value.preventLinkNavigation) {
                     // Prevent navigation from loaded iframe content within the iframe.
@@ -422,7 +482,7 @@ define(['lib/knockout', 'legacy/bridge',
                             event.srcElement.initialLoadComplete = true;
                         }
                         else if (event.srcElement.needReload) {
-                            KnockoutHelpers.loadIframeContent(event.srcElement.contentWindow.document, value);
+                            KnockoutHelpers.loadIframeContent(element, event.srcElement.contentWindow.document, value);
                             event.srcElement.needReload = false;
                         }
                         else {
@@ -433,7 +493,7 @@ define(['lib/knockout', 'legacy/bridge',
                     }
                     element.addEventListener("load", loadHandler);
                 }
-                KnockoutHelpers.loadIframeContent(iframeDocument, value);
+                KnockoutHelpers.loadIframeContent(element, iFrameDocument, value);
             }
         }
     };

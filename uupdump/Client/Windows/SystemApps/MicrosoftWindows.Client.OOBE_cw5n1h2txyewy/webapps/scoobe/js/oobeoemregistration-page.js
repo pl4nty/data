@@ -35,6 +35,12 @@
                 
                 promises.push(bridge.invoke("CloudExperienceHost.getContext").then((targetContext) => {
                     this.targetPersonality = targetContext.personality;
+                    this.deviceForm = parseInt(targetContext.deviceForm);
+                }));
+
+                promises.push(bridge.invoke("CloudExperienceHost.FeatureStaging.tryGetIsFeatureEnabled", "GamepadLegendEnabled").then((response) => {
+                    // The definition of tryGetIsFeatureEnabled on the bridge returns a JSON object with two number properties indicating the success of the call and whether the feature is enabled.
+                    this.isGamepadLegendEnabled = (response.result === 1) && (response.value === 1);
                 }));
 
                 return WinJS.Promise.join(promises);
@@ -63,7 +69,8 @@
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.Scoobe);
 
                 // Apply bindings and show the page
-                let vm = new modules.oobeoemregistration_vm(this.resourceStrings, this.regions, this.defaultRegion, this.oemRegistrationInfo, this.userInfo, this.targetPersonality);
+                let vm = new modules.oobeoemregistration_vm(this.resourceStrings, this.regions, this.defaultRegion, this.oemRegistrationInfo, this.userInfo, this.targetPersonality,
+                    this.deviceForm, this.isGamepadLegendEnabled);
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                     WinJS.Utilities.addClass(document.body, "pageLoaded");

@@ -4,7 +4,7 @@
 "use strict";
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, bridge, constants, core) => {
     class OemRegistrationViewModel {
-        constructor(resourceStrings, regions, defaultRegion, oemRegistrationInfo, userInfo, targetPersonality) {
+        constructor(resourceStrings, regions, defaultRegion, oemRegistrationInfo, userInfo, targetPersonality, deviceForm, isGamepadLegendEnabled) {
             this.resourceStrings = resourceStrings;
             this.countryCodeDefaultSelectOption = {
                 displayName: this.resourceStrings["PhoneNumberCountryCodeLabel"],
@@ -14,13 +14,15 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.regions = regions;
             this.countryCodeSelectOptions = this.getCountryCodeSelectOptions();
             this.userInfo = userInfo || {};
-            let selectedRegionCode = this.regions.find((region) => (region.codeTwoLetter === defaultRegion)).codeTwoLetter; 
+            let selectedRegionCode = this.regions.find((region) => (region.codeTwoLetter === defaultRegion)).codeTwoLetter;
             this.title = oemRegistrationInfo.title;
             this.subHeaderText = oemRegistrationInfo.subtitle;
             this.hideSkip = oemRegistrationInfo.hideskip;
             this.showPhoneNumber = oemRegistrationInfo.customerinfo.showphonenumber;
             this.loadingLink = ko.observable(false);
-            
+            this.deviceForm = deviceForm;
+            this.isGamepadLegendEnabled = isGamepadLegendEnabled;
+
             this.isLiteWhitePersonality = ko.pureComputed(() => {
                 return targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite;
             });
@@ -42,7 +44,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     value: ko.observable(userInfo[1] || ""),
                     defaultValue: userInfo[1] || "",
                 },
-                email: { 
+                email: {
                     label: resourceStrings.EmailAddressLabel,
                     value: ko.observable(userInfo[2] || ""),
                     defaultValue: userInfo[2] || "",
@@ -64,7 +66,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     },
                 },
             };
-            
+
             this.customerInfoField = oemRegistrationInfo.customerinfo;
             this.customerInfoField.value = ko.observable(this.customerInfoField.value);
 
@@ -77,7 +79,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
 
             this.checkBoxFields = oemRegistrationInfo.fields.filter((field => field.type == "checkbox"));
             this.linkFields = oemRegistrationInfo.fields.filter((field => field.type == "link"));
-            
+
             this.currentPanelIndex = ko.observable(this.customerInfoField ? 0 : 1);
 
             this.pageDefaultAction = () => {
@@ -167,7 +169,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     telemetryInfos.push(this.getTelemetryInfo(field));
                 });
             }
-            
+
             this.checkBoxFields.forEach((field, index) => {
                 field.value = field.value();
                 field.defaultValue = ko.unwrap(field.defaultValue);
@@ -243,6 +245,21 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
 
                         flyoutControl.show(e.target, 'autovertical', 'left');
                         this.loadingLink(false);
+
+                        if (this.isGamepadLegendEnabled && (this.deviceForm === 46 /* DEVICEFAMILYDEVICEFORM_GAMING_HANDHELD */)) {
+                            bridge.invoke("CloudExperienceHost.AppFrame.setGamepadLegendDisplayOverrideForB", this.resourceStrings.GamepadLegendDismissText);
+
+                            frameDoc.addEventListener("keyup", (ev) => {
+                                if (ev.keyCode === WinJS.Utilities.Key.GamepadB) {
+                                    flyoutControl.hide();
+                                }
+                                return true;
+                            });
+
+                            flyoutControl.onafterhide = () => {
+                                bridge.invoke("CloudExperienceHost.AppFrame.setGamepadLegendDisplayOverrideForB", "");
+                            }
+                        }
                     }
                 }, (error) => {
                     this.loadingLink(false);
@@ -297,7 +314,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     countryCodeSelectOptions.push(countryCodeSelectEntry);
                 }
             }
-            
+
             // Sort by displayName and prepend the select placeholder option before returning
             countryCodeSelectOptions.sort((a,b) => {
                 if (a.displayName < b.displayName) {

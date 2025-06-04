@@ -1426,6 +1426,15 @@ var CloudExperienceHost;
                     AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventNotificationManager").notifyOobeReadyStateChanged(false);
                 }
                 AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventNotificationManager").notifyAppFinished(cxhResult, this._appResult);
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeHostAppInDefaultUserSession")) {
+                    let shouldSkipNotifyOnLastFinished = false;
+                    shouldSkipNotifyOnLastFinished = (CloudExperienceHost.Storage.VolatileSharableData.getItem("OobePrepTransitionToNextAppValues", "launchNextApp") === true);
+                    if (shouldSkipNotifyOnLastFinished) {
+                        CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("SkipNotifyOnLastFinished");
+                        this._closeWindowAndTerminateApp();
+                        return;
+                    }
+                }
                 if (this._navigator && this._navigator.getNavMesh() && this._navigator.getNavMesh().getNotifyOnLastFinished()) {
                     if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeFadeTransitions") && this._navigator.getNavMesh().endFadeTransition()) {
                         let blackOverlay = document.createElement('div');
@@ -1468,6 +1477,9 @@ var CloudExperienceHost;
                                 CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("WaitForTaskbarReadyFailed", CloudExperienceHost.GetJsonFromError(error));
                                 this._closeWindowAndTerminateApp();
                             });
+                        }
+                        else if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeHostAppInDefaultUserSession")) {
+                            this._closeWindowAndTerminateApp(); // Simplest approach for sequential CXH and OHA launch.
                         }
                     }
                 }

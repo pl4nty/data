@@ -13,7 +13,7 @@
     <script data-main="/webapps/scoobe/js/oobeoemregistration-page.js" src="/lib/require.js"></script>
 </head>
 <body class="webapp-inner">
-    <div class="body-container" data-bind="oobePageDefaultAction: $root.pageDefaultAction">
+    <div class="body-container" data-bind="oobePageDefaultAction: $root.pageDefaultAction, useGamepadForDefaultActions: $root.isGamepadLegendEnabled">
         <div class="oobe-panel" data-bind="panelIndexVisible: $root.currentPanelIndex">
             <div class="container-content">
                 <common-header params="title: $root.title, subtitle: $root.subHeaderText"></common-header>

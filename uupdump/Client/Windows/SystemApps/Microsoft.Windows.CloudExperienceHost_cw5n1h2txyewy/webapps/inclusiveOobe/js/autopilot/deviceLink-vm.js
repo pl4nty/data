@@ -690,7 +690,9 @@ define([
                 }
 
                 let discoveryUrl = discoveryUrlRequestInfo.discoveryUrl;
-                await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_REQUEST_DISCOVERY_URL, `Discovery URL: ${discoveryUrl}`);
+                let tenantId = discoveryUrlRequestInfo.tenantId;
+                await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_REQUEST_DISCOVERY_URL, `Discovery URL: ${discoveryUrl}, Tenant ID: ${tenantId}`);
+
 
                 // Now attempt to configure the device link
                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK);
@@ -698,7 +700,7 @@ define([
                 let currentConfigurationStep = null;
         
                 // Call the ConfigureDeviceLinkAsync function and handle progress updates
-                return this.deviceLinkManager.configureDeviceLinkAsync(this.deviceLinkInfo, discoveryUrl, null).then(async (result) => {
+                return this.deviceLinkManager.configureDeviceLinkAsync(discoveryUrl, tenantId, null).then(async (result) => {
                     // Completion callback
                     // Ensure the user didn't click the cancel button while the device tagging operation was running
                     if (this.currentVirtualPageId() == this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS) {
