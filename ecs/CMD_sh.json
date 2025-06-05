@@ -587,6 +587,7 @@
         "EnableRMSConsumer": true,
         "EnableRawConfirmError": true,
         "EnableRebootAfterGpuDriverInstallation": true,
+        "EnableRedirectionInfoBanner": true,
         "EnableReduceResume": true,
         "EnableRefactorRecycleResource": true,
         "EnableRefineFLSEndUserRestartAction": true,

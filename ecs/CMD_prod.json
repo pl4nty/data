@@ -493,6 +493,7 @@
         "EnableTenantOutOfServiceDeviceRecentConnectionError": true,
         "EnableThrowExceptionInsteadOfReturn": true,
         "EnableToggleSessionHostsAllowConnect": true,
+        "EnableTroubleshootingUpdateFullScanResult": true,
         "EnableUPNForFrontlineCurrentConnectQuery": true,
         "EnableUnloadDvdDrive": true,
         "EnableUpdateDiskEncryptionAsyncWithSDK": true,
