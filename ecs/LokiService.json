@@ -432,6 +432,7 @@
         "EnableFetchingSocialProximityFrom3SApi": false,
         "EnableFetchingSocialProximityFrom3SSuggestionsApi": false,
         "EnableForceInferredManager": true,
+        "EnableGccCrossCloudFederation": true,
         "EnableGetScheduleUsingGRPC": true,
         "EnableGptExtensionsTeachingMoment": true,
         "EnableHaukQueryV3": true,
@@ -1122,7 +1123,7 @@
         "searchux.killSwitches.fd103984-5798-4920-987c-c6fe11cbbad1": false,
         "searchux.pfp.preloadConfiguredRefiners": true,
         "searchux.refinerValuesCapLimit": 50,
-        "searchux.serpVersion": "1.20250519.3.0",
+        "searchux.serpVersion": "1.20250527.2.0",
         "searchux.serviceEnvironmentConfig": "Prod",
         "searchux.shouldFetchVerticalsFromDepartmentId": true,
         "searchux.sortHubSiteActivities": true,
@@ -1185,7 +1186,7 @@
         "isReportsCountEnabled": true
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250601.5.0",
+        "PeopleInTaskbarDFVersion": "1.20250604.3.0",
         "PeopleInTaskbarMsitVersion": "1.20250528.2.0",
         "PeopleInTaskbarProdVersion": "1.20250509.5.0",
         "campaignSchedules": {

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.18931.40125-->
+    <!--Build: 16.0.18913.40131-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -1692,10 +1692,6 @@
     </o:service>
     <o:service o:name="UrlUniversalPrintIPP">
       <o:url>https://print.print.microsoft.com/printers/</o:url>
-    </o:service>
-    <o:service o:name="UrlUniversalPrintDiscovery" o:authentication="2">
-      <o:url>https://discovery.print.microsoft.com/api/mod1.0/devices?limit=65535</o:url>
-      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://print.print.microsoft.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="TemplatesWebsiteExploreAmazingTemplatesForWord">
       <o:url>https://templates.office.com/templates-for-word?ocid=oo_toc_client_app_MARVEL_UPS_templates_gopremiumLandingPage</o:url>
