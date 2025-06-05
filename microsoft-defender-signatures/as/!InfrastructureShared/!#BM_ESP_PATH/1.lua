@@ -23,6 +23,9 @@ end
 if (mp.bitand)(l_0_1, 32) == 32 then
   (mp.set_mpattribute)("FILE_DEVICE_IS_MOUNTED")
 end
+if (mp.bitand)(l_0_1, 64) == 64 then
+  (mp.set_mpattribute)("FILE_VIRTUAL_VOLUME")
+end
 if (mp.bitand)(l_0_1, 2048) == 2048 then
   (mp.set_mpattribute)("FILE_CHARACTERISTIC_PNP_DEVICE")
 end

@@ -365,6 +365,10 @@ CommandLineTokenizer = function(l_3_0)
       end
     end
     do
+      local l_3_19 = "new%-object.*.download"
+      if #l_3_14 <= 4 and (string.find)(l_3_0, l_3_19, 1, false) then
+        (mp.set_mpattribute)("Appomaly_HighlySuspCmd_Pattern")
+      end
       return l_3_14
     end
   end
@@ -1739,6 +1743,7 @@ isSimilarIndicator = function(l_23_0, l_23_1, l_23_2)
         if (string.find)(l_23_1, "NoneDefaultDirectory", 1, true) then
           for l_23_14,l_23_15 in pairs(l_23_0) do
             if (string.find)(l_23_14, "NoneDefaultDirectory", 1, true) then
+              l_23_4 = true
               local l_23_21 = (string.match)(l_23_14, "NoneDefaultDirectory%[(%d+)%]%[(.-)%]")
               local l_23_24, l_23_25 = , (string.match)(l_23_1, "NoneDefaultDirectory%[(%d+)%]%[(.-)%]")
               if l_23_24 == l_23_1 then
@@ -1746,7 +1751,11 @@ isSimilarIndicator = function(l_23_0, l_23_1, l_23_2)
               end
             end
           end
-          return false
+          if l_23_4 then
+            return true, l_23_3 / 2
+          else
+            return false
+          end
         end
         if (string.find)(l_23_1, "Base64Cmd_child", 1, true) then
           for l_23_19,l_23_20 in pairs(l_23_0) do
@@ -1754,10 +1763,10 @@ isSimilarIndicator = function(l_23_0, l_23_1, l_23_2)
             local l_23_23 = l_23_19
             l_23_22 = l_23_22(l_23_23, "Base64Cmd_child", 1, true)
             if l_23_22 then
+              l_23_4 = true
               l_23_22 = l_23_20.IndicatorScore
               l_23_23 = l_23_2.IndicatorScore
               if l_23_22 == l_23_23 then
-                l_23_4 = true
                 l_23_22 = l_23_20.IndicatorScore
                 if l_23_22 < l_23_3 then
                   l_23_3 = l_23_20.IndicatorScore
@@ -1773,9 +1782,9 @@ isSimilarIndicator = function(l_23_0, l_23_1, l_23_2)
         end
         if (string.find)(l_23_1, "SuspDownload", 1, true) then
           for l_23_29,l_23_30 in pairs(l_23_0) do
-            if (string.find)(l_23_29, "SuspDownload", 1, true) and l_23_30.IndicatorScore == l_23_2.IndicatorScore then
+            if (string.find)(l_23_29, "SuspDownload", 1, true) then
               l_23_4 = true
-              if l_23_30.IndicatorScore < l_23_3 then
+              if l_23_30.IndicatorScore == l_23_2.IndicatorScore and l_23_30.IndicatorScore < l_23_3 then
                 l_23_3 = l_23_30.IndicatorScore
               end
             end
@@ -1801,7 +1810,21 @@ isSimilarIndicator = function(l_23_0, l_23_1, l_23_2)
             return false
           end
         end
-        return false
+        local l_23_36 = (string.match)(l_23_1, "(.*)%[")
+        for l_23_40,l_23_41 in pairs(l_23_0) do
+          if (string.find)(l_23_40, l_23_36, 1, true) then
+            l_23_4 = true
+            break
+          end
+        end
+        do
+          if l_23_4 then
+            return true, l_23_3 / 2
+          else
+            return false
+          end
+          return false
+        end
       end
     end
   end

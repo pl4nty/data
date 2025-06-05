@@ -40,7 +40,7 @@ if not l_0_1 then
 end
 -- DECOMPILER ERROR at PC80: Overwrote pending register: R2 in 'AssignReg'
 
-if (MpCommon.IsSampled)(10, true, true, true) then
+if (MpCommon.IsSampled)(100, true, true, true) then
   l_0_1 = pcall(Infrastructure_ReportUEFIData)
   if not l_0_1 then
     l_0_0.ReportUEFIData = l_0_2
