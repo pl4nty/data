@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\14dd70ea1b446\1.luac 
+-- Command line: lua\!InfrastructureShared\165d728eb265f\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -25,7 +25,7 @@ local l_0_3 = {}
 
 -- DECOMPILER ERROR at PC39: Overwrote pending register: R4 in 'AssignReg'
 
-if not ("\'%+%$")(l_0_1, l_0_3) then
+if not ("%+%$")(l_0_1, l_0_3) then
   return mp.CLEAN
 end
 return mp.INFECTED

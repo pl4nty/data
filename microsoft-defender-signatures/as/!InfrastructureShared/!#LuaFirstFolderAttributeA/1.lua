@@ -16,6 +16,8 @@ local l_0_4 = (string.format)("%sCount!%s", l_0_3, tostring(l_0_2))
 ;
 (mp.set_mpattribute)(l_0_4)
 l_0_0 = l_0_0:gsub("%s", "/x20")
+l_0_0 = l_0_0:gsub("%(", "/x28")
+l_0_0 = l_0_0:gsub("%)", "/x29")
 local l_0_5 = (string.gmatch)(l_0_0, "[^\\]+")
 local l_0_6 = 0
 for l_0_10 in l_0_5 do
@@ -39,7 +41,7 @@ for l_0_10 in l_0_5 do
       if l_0_6 >= 6 then
         break
       end
-      -- DECOMPILER ERROR at PC103: LeaveBlock: unexpected jumping out DO_STMT
+      -- DECOMPILER ERROR at PC113: LeaveBlock: unexpected jumping out DO_STMT
 
     end
   end

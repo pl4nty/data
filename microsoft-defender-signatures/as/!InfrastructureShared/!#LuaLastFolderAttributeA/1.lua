@@ -24,6 +24,8 @@ if l_0_2 == 0 and #l_0_0 == 2 and (string.sub)(l_0_0, -1) == ":" then
   return mp.CLEAN
 end
 l_0_0 = l_0_0:gsub("%s", "/x20")
+l_0_0 = l_0_0:gsub("%(", "/x28")
+l_0_0 = l_0_0:gsub("%)", "/x29")
 local l_0_5 = (string.gmatch)(l_0_0, "[^\\]+")
 local l_0_6 = false
 for l_0_10 in l_0_5 do
@@ -56,13 +58,13 @@ for l_0_10 in l_0_5 do
           if l_0_2 < 0 then
             break
           end
-          -- DECOMPILER ERROR at PC160: LeaveBlock: unexpected jumping out DO_STMT
+          -- DECOMPILER ERROR at PC170: LeaveBlock: unexpected jumping out DO_STMT
 
-          -- DECOMPILER ERROR at PC160: LeaveBlock: unexpected jumping out DO_STMT
+          -- DECOMPILER ERROR at PC170: LeaveBlock: unexpected jumping out DO_STMT
 
-          -- DECOMPILER ERROR at PC160: LeaveBlock: unexpected jumping out IF_THEN_STMT
+          -- DECOMPILER ERROR at PC170: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC160: LeaveBlock: unexpected jumping out IF_STMT
+          -- DECOMPILER ERROR at PC170: LeaveBlock: unexpected jumping out IF_STMT
 
         end
       end
