@@ -4514,6 +4514,161 @@ function Remove-CsUserCallingDelegate {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+function Set-CsPersonalAttendantSettings {
+    [CmdletBinding(DefaultParameterSetName="Identity")]
+    param(
+        [Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+	    [Parameter(Mandatory=$true, ParameterSetName='PersonalAttendantOnOff')]
+        [Parameter(Mandatory=$true, ParameterSetName='Identity')]
+        [System.String]
+        ${Identity},
+        
+        [Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+	    [Parameter(Mandatory=$true, ParameterSetName='PersonalAttendantOnOff')]
+        [System.Boolean]
+        ${IsPersonalAttendantEnabled},
+        
+        [Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+	    [ValidateSet('En','Fr')]
+        [System.String]
+        ${DefaultLanguage},
+		
+		[Parameter(Mandatory=$false, ParameterSetName='PersonalAttendant')]
+	    [ValidateSet('Female','Male')]
+        [System.String]
+        ${DefaultVoice},
+		
+		[Parameter(Mandatory=$false, ParameterSetName='PersonalAttendant')]
+        [System.String]
+		[AllowNull()]
+        ${CalleeName},
+		
+		[Parameter(Mandatory=$false, ParameterSetName='PersonalAttendant')]
+	    [ValidateSet('Formal','Casual')]
+        [System.String]
+        ${DefaultTone},
+        
+        [Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+        [System.Boolean]
+        ${IsBookingCalendarEnabled},
+		
+		[Parameter(Mandatory=$false, ParameterSetName='PersonalAttendant')]
+        [System.String]
+        [AllowNull()]
+        ${BookingCalendarId},
+		
+		[Parameter(Mandatory=$false, ParameterSetName='PersonalAttendant')]
+        [System.Boolean]
+        ${IsNonContactCallbackEnabled},
+		
+		[Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+        [System.Boolean]
+        ${IsCallScreeningEnabled},
+		
+		[Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+        [System.Boolean]
+        ${AllowInboundInternalCalls},
+		
+		[Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+        [System.Boolean]
+        ${AllowInboundFederatedCalls},
+		
+		[Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+        [System.Boolean]
+        ${AllowInboundPSTNCalls},
+		
+		[Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+        [System.Boolean]
+        ${IsAutomaticTranscriptionEnabled},
+		
+		[Parameter(Mandatory=$true, ParameterSetName='PersonalAttendant')]
+        [System.Boolean]
+        ${IsAutomaticRecordingEnabled},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+					
+			if ($PSBoundParameters.ContainsKey('IsPersonalAttendantEnabled') -and $PSBoundParameters.ContainsKey('AllowInboundInternalCalls') -and $PSBoundParameters.ContainsKey('AllowInboundFederatedCalls') -and $PSBoundParameters.ContainsKey('AllowInboundPSTNCalls'))
+			{
+				if($IsPersonalAttendantEnabled -eq $true -and ($AllowInboundInternalCalls -eq $true -or $AllowInboundFederatedCalls -eq $true -or $AllowInboundPSTNCalls -eq $true))            
+				{
+					$IsPersonalAttendantEnabled = $IsPersonalAttendantEnabled
+					$AllowInboundInternalCalls = $AllowInboundInternalCalls
+					$AllowInboundFederatedCalls = $AllowInboundFederatedCalls
+					$AllowInboundPSTNCalls = $AllowInboundPSTNCalls
+				}
+				else
+				{
+					write-warning "Personal attendant is enabled but no inbound calls are enabled"
+					return
+				}
+			}
+			
+			if ($PSBoundParameters.ContainsKey('IsBookingCalendarEnabled'))
+			{
+				if($IsBookingCalendarEnabled -eq $true -and $BookingCalendarId)            
+				{
+					$IsBookingCalendarEnabled = $IsBookingCalendarEnabled
+
+                    if($BookingCalendarId -as [System.Net.Mail.MailAddress])            
+					{
+						$BookingCalendarId = $BookingCalendarId
+					}
+					else
+					{
+						write-warning "Booking Calendar Id is not in email format"
+						return
+					}
+				}
+				elseif ($IsBookingCalendarEnabled -eq $false)
+				{
+					$IsBookingCalendarEnabled = $IsBookingCalendarEnabled
+				}
+				else
+				{
+					write-warning "Booking Calendar is enabled but no booking calendar id is given"
+					return
+				}
+			}			
+
+            Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsPersonalAttendantSettings @PSBoundParameters @httpPipelineArgs
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+			throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 function Set-CsUserCallingDelegate {
     [CmdletBinding(DefaultParameterSetName="Identity")]
     param(
@@ -6443,6 +6598,91 @@ function Get-CsOnlineVoicemailUserSettings {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function Get-CsSharedCallQueueHistoryTemplate {
+	[CmdletBinding()]
+	param(
+		[Parameter(Mandatory=$false)]
+		[System.String]
+		# The identity of the shared call queue history template which is retrieved.
+		${Id},
+		
+		[Parameter(Mandatory=$false)]
+		[Switch]
+		${Force},
+
+   [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+        
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsSharedCallQueueHistoryTemplate @PSBoundParameters @httpPipelineArgs
+
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            if (![string]::IsNullOrEmpty(${Id})) {
+                $SharedCallQueueHistory = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallQueueHistory]::new()
+                $SharedCallQueueHistory.ParseFromGetResponse($result)
+            } 
+            else {
+                $AllSharedCallQueueHistory = @()
+                foreach ($model in $result.AllSharedCallQueueHistory) {
+                    $SharedCallQueueHistory = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallQueueHistory]::new()
+                    $AllSharedCallQueueHistory += $SharedCallQueueHistory.ParseFromDtoModel($model)
+                }
+            $AllSharedCallQueueHistory
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Print error message in case of error
 
 function Import-CsAutoAttendantHolidays {
@@ -8101,6 +8341,11 @@ function New-CsCallQueue {
         ${ComplianceRecordingForCallQueueTemplateId},
 
         [Parameter(Mandatory=$false)]
+        [System.String]
+        # Id for Shared Call Queue History template.
+        ${SharedCallQueueHistoryTemplateId},
+
+        [Parameter(Mandatory=$false)]
         [Switch]
         # Allow the cmdlet to run anyway
         ${Force},
@@ -8238,6 +8483,10 @@ function New-CsCallQueue {
 
             if ($PSBoundParameters.ContainsKey('ComplianceRecordingForCallQueueTemplateId') -and $ComplianceRecordingForCallQueueTemplateId -eq $null) {
                 $null = $PSBoundParameters.Remove('ComplianceRecordingForCallQueueTemplateId')
+            }
+
+            if ($PSBoundParameters.ContainsKey('SharedCallQueueHistoryTemplateId') -and $SharedCallQueueHistoryTemplateId -eq $null) {
+                $null = $PSBoundParameters.Remove('SharedCallQueueHistoryTemplateId')
             }
 
             $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsCallQueue @PSBoundParameters @httpPipelineArgs
@@ -8882,6 +9131,84 @@ function New-CsOnlineTimeRange {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function New-CsSharedCallQueueHistoryTemplate {
+	[CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The Name parameter is a friendly name that is assigned to the shared call queue history template.
+        ${Name},
+
+        [Parameter(Mandatory=$true, position=1)]
+        [System.String]
+        # The Description parameter provides a description for the shared call queue history template.
+        ${Description},
+
+        [Parameter(Mandatory=$false, position=2)]
+        [Microsoft.Rtc.Management.Hosted.Online.Models.IncomingMissedCalls]
+        # The IncomingMissedCalls parameter determines whether the Shared Call Queue history is to be delivered to supervisors, agents and supervisors or none.
+        ${IncomingMissedCalls},
+
+        [Parameter(Mandatory=$false, position=3)]
+        [Microsoft.Rtc.Management.Hosted.Online.Models.AnsweredAndOutboundCalls]
+        # The AnsweredAndOutboundCalls parameter determines whether the Shared Call Queue history is to be delivered to supervisors, agents and supervisors or none.
+        ${AnsweredAndOutboundCalls},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        # The HttpPipelinePrepend parameter allows for custom HTTP pipeline steps to be prepended.
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsSharedCallQueueHistoryTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($internalOutput -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallQueueHistory]::new()
+            $output.ParseFromCreateResponse($internalOutput)
+        }
+        catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Display the diagnostic if any
 
 function Remove-CsAutoAttendant {
@@ -9299,6 +9626,78 @@ function Remove-CsOnlineSchedule {
             }
 
             $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsOnlineSchedule @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+            $result
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: print out the diagnostic
+
+function Remove-CsSharedCallQueueHistoryTemplate {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the shared call queue history template to be removed.
+        ${Id},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsSharedCallQueueHistoryTemplate @PSBoundParameters @httpPipelineArgs
 
             # Stop execution if internal cmdlet is failing
             if ($result -eq $null) {
@@ -10024,6 +10423,11 @@ function Set-CsCallQueue {
 
         [Parameter(Mandatory=$false)]
         [System.String]
+        # Id for Shared Call Queue History template.
+        ${SharedCallQueueHistoryTemplateId},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
         # Shifts Scheduling Group identity to use as Call queues answer target.
         ${ShiftsSchedulingGroupId},
 
@@ -10630,6 +11034,10 @@ function Set-CsCallQueue {
             if (!$PSBoundParameters.ContainsKey('ComplianceRecordingForCallQueueTemplateId') -and $null -ne $existingCallQueue.ComplianceRecordingForCallQueueTemplateId) {
                 $PSBoundParameters.Add('ComplianceRecordingForCallQueueTemplateId', $existingCallQueue.ComplianceRecordingForCallQueueTemplateId)
             }
+
+            if (!$PSBoundParameters.ContainsKey('SharedCallQueueHistoryTemplateId') -and $null -ne $existingCallQueue.SharedCallQueueHistoryTemplateId) {
+                $PSBoundParameters.Add('SharedCallQueueHistoryTemplateId', $existingCallQueue.SharedCallQueueHistoryTemplateId)
+            }
    
 
             # Update the CallQueue.
@@ -11141,6 +11549,93 @@ function Set-CsOnlineVoicemailUserSettings {
 
         } catch {
             $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsSharedCallQueueHistoryTemplate {
+	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to the shared call queue history template to be modified.
+        ${Instance},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        # The Force parameter indicates if we force the action to be performed. (Deprecated)
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $params = @{
+                Name = ${Instance}.Name
+                Identity = ${Instance}.Id
+                Description = ${Instance}.Description
+                IncomingMissedCalls = ${Instance}.IncomingMissedCalls
+                AnsweredAndOutboundCalls = ${Instance}.AnsweredAndOutboundCalls
+            }
+
+            # Get common parameters
+            $PSBoundCommonParameters = @{}
+            foreach($p in $PSBoundParameters.GetEnumerator())
+            {
+                $params += @{$p.Key = $p.Value}
+            }
+
+            $null = $params.Remove("Instance")
+            
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsSharedCallQueueHistoryTemplate @params @httpPipelineArgs
+
+             # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallQueueHistory]::new()
+            $output.ParseFromUpdateResponse($result)
+
+        } catch {
+           $customCmdletUtils.SendTelemetry()
             throw
         }
     }

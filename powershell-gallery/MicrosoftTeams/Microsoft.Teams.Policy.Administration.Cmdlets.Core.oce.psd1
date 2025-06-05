@@ -7,7 +7,7 @@
 RootModule = './Microsoft.Teams.Policy.Administration.Cmdlets.Core.psm1'
 
 # Version number of this module.
-ModuleVersion = '16.6.1'
+ModuleVersion = '16.17.6'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -330,7 +330,10 @@ CmdletsToExport = @(
     'Remove-CsTeamsNotificationAndFeedsPolicy'
     
     'Get-CsTeamsClientConfiguration',
-    'Set-CsTeamsClientConfiguration'
+    'Set-CsTeamsClientConfiguration',
+    
+    'Get-CsTeamsAcsFederationConfiguration',
+    'Set-CsTeamsAcsFederationConfiguration'
 )
 
 # Variables to export from this module

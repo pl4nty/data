@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.0.0'
+ModuleVersion = '7.1.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -95,7 +95,6 @@ FunctionsToExport =  @(
 	,'Get-CsCallingLineIdentity'
 	,'Get-CsCallQueue'
 	,'Get-CsCloudCallDataConnection'
-	,'Get-CsDialPlan'
 	,'Get-CsEffectiveTenantDialPlan'
 	,'Get-CsExportAcquiredPhoneNumberStatus'
 	,'Get-CsGroupPolicyAssignment'
@@ -139,6 +138,7 @@ FunctionsToExport =  @(
 	,'Get-CsOnlineVoiceRoutingPolicy'
 	,'Get-CsOnlineVoiceUser'
 	,'Get-CsPhoneNumberAssignment'
+	,'Get-CsPhoneNumberTag'
 	,'Get-CsPolicyPackage'
 	,'Get-CsSdgBulkSignInRequestStatus'
 	,'Get-CsSDGBulkSignInRequestsSummary'
@@ -198,6 +198,7 @@ FunctionsToExport =  @(
 	,'Get-CsVideoInteropServiceProvider'
 	,'Grant-CsApplicationAccessPolicy'
 	,'Get-CsComplianceRecordingForCallQueueTemplate'
+	,'Get-CsSharedCallQueueHistoryTemplate'
 	,'Grant-CsCallingLineIdentity'
 	,'Grant-CsDialoutPolicy'
 	,'Grant-CsGroupPolicyPackageAssignment'
@@ -300,6 +301,7 @@ FunctionsToExport =  @(
 	,'New-CsOnlineDirectRoutingTelephoneNumberUploadOrder'
 	,'New-CsOnlineTelephoneNumberReleaseOrder'
 	,'New-CsComplianceRecordingForCallQueueTemplate'
+	,'New-CsSharedCallQueueHistoryTemplate'
 	,'Register-CsOnlineDialInConferencingServiceNumber'
 	,'Remove-CsApplicationAccessPolicy'
 	,'Remove-CsAutoAttendant'
@@ -326,6 +328,7 @@ FunctionsToExport =  @(
 	,'Remove-CsOnlineVoiceRoute'
 	,'Remove-CsOnlineVoiceRoutingPolicy'
 	,'Remove-CsPhoneNumberAssignment'
+	,'Remove-CsPhoneNumberTag'
 	,'Remove-CsTeamsAudioConferencingPolicy'
 	,'Remove-CsTeamsCallParkPolicy'
 	,'Remove-CsTeamsCortanaPolicy'
@@ -357,6 +360,7 @@ FunctionsToExport =  @(
 	,'Remove-CsUserLicenseGracePeriod'
 	,'Remove-CsVideoInteropServiceProvider'
 	,'Remove-CsComplianceRecordingForCallQueueTemplate'
+	,'Remove-CsSharedCallQueueHistoryTemplate'
 	,'Set-CsApplicationAccessPolicy'
 	,'Set-CsApplicationMeetingConfiguration'
 	,'Set-CsAutoAttendant'
@@ -388,6 +392,7 @@ FunctionsToExport =  @(
 	,'Set-CsOnlineVoiceRoutingPolicy'
 	,'Set-CsOnlineVoiceUser'
 	,'Set-CsPhoneNumberAssignment'
+	,'Set-CsPhoneNumberTag'
 	,'Set-CsTeamsAcsFederationConfiguration'
 	,'Set-CsTeamsAudioConferencingPolicy'
 	,'Set-CsTeamsCallParkPolicy'
@@ -428,6 +433,7 @@ FunctionsToExport =  @(
 	,'Set-CsUserCallingSettings'
 	,'Set-CsVideoInteropServiceProvider'
 	,'Set-CsComplianceRecordingForCallQueueTemplate'
+	,'Set-CsSharedCallQueueHistoryTemplate'
 	,'Start-CsExMeetingMigration'
 	,'Sync-CsOnlineApplicationInstance'
 	,'Test-CsEffectiveTenantDialPlan'
@@ -439,6 +445,7 @@ FunctionsToExport =  @(
 	,'Unregister-CsOnlineDialInConferencingServiceNumber'
 	,'Update-CsAutoAttendant'
 	,'Update-CsCustomPolicyPackage'
+	,'Update-CsPhoneNumberTag'
 	,'Update-CsTeamsShiftsConnection'
 	,'Update-CsTeamsShiftsConnectionInstance'
 	,'Update-CsTeamTemplate'
@@ -476,6 +483,7 @@ FunctionsToExport =  @(
 	,'Get-CsPhoneNumberPolicyAssignment'
 	,'Set-CsPhoneNumberPolicyAssignment'
 	,'Invoke-CsRehomeuser'
+	,'Set-CsNotifyCache'
 #OCE exports end
 )
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
@@ -776,17 +784,18 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.0.0** (The project - MicrosoftTeams contains changes till this release)
-- Adds ShiftsTeamId & ShiftsSchedulingGroupId parameters to [New|Set]-CsCallQueue cmdlets. 
-- [BREAKING CHANGE] Deprecates CustomizeFederation parameter from [Get|Set]-CsTenantFederationConfiguration cmdlets. 
-- Adds TownhallEventAttendeeAccess parameter to [New|Set]-CsTeamsEventsPolicy.
-- Adds AllowsUsersForMeetingDetails, RealTimeText parameters to [New|Set]-CsTeamsMeetingPolicy.
-- Adds RealTimeText parameter to [New|Set]-CsTeamsCallingPolicy.
-- Adds UsersCanDeleteBotMessages, ContentBasedPhishingCheck, ReportIncorrectSecurityDetections parameters to [New|Set]-CsTeamsMessagingConfiguration.
-- Adds SpeakerAttributionForBYOD parameter to [New|Set]-CsTeamsAIPolicy.
-- [BREAKING CHANGE] Removes OptionFlags output attribute from the Get-CsOnlineUser cmdlet.
-- Releases [New|Set|Remove|Get]-CsComplianceRecordingForCallQueueTemplate cmdlets.
-- Adds Compliance Recording related parameters (ComplianceRecordingForCallQueueTemplateId, TextAnnouncementForCR, CustomAudioFileAnnouncementForCR, TextAnnouncementForCRFailure, CustomAudioFileAnnouncementForCRFailure) to [New|Set]-CsCallQueue and corresponding output attributes to Get-CsCallQueue.
+ **7.1.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Adds ThreadedChannelCreation parameter to [New|Set]-CsTeamsChannelsPolicy cmdlets.
+- Adds BroadcastPremiumApps parameter to [New|Set]-CsTeamsEventsPolicy cmdlets.
+- Adds ParticipantSlideControl parameter to [New|Set]-CsTeamsMeetingPolicy cmdlets.
+- [BREAKING CHANGE] Removes AllowPublicUsers parameter from [Set]-CsTenantFederationConfiguration cmdlet.
+- [BREAKING CHANGE] Removes EnablePublicCloudAccess parameter from [New|Set]-CsExternalAccessPolicy cmdlets.
+- Releases [New|Set|Remove|Get]-CsSharedCallQueueHistoryTemplate cmdlets.
+- Adds SharedCallQueueHistoryTemplateId parameter to [New|Set]-CsCallQueue cmdlets.
+- Releases [Get|Set|Update|Remove]-CsPhoneNumberTag cmdlets.
+- [BREAKING CHANGE] Removes DialPlan output attribute from the Get-CsOnlineUser cmdlet.
+
+
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes
 '@

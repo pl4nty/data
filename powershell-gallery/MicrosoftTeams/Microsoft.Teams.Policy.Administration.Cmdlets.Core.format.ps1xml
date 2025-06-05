@@ -279,10 +279,6 @@
                         <PropertyName>EnableXmppAccess</PropertyName>
                     </ListItem>
                     <ListItem>
-                        <Label>EnablePublicCloudAccess</Label>
-                        <PropertyName>EnablePublicCloudAccess</PropertyName>
-                    </ListItem>
-                    <ListItem>
                         <Label>EnablePublicCloudAudioVideoAccess</Label>
                         <PropertyName>EnablePublicCloudAudioVideoAccess</PropertyName>
                     </ListItem>
@@ -1153,6 +1149,10 @@
                         <Label>VoiceSimulationInInterpreter</Label>
                         <PropertyName>VoiceSimulationInInterpreter</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>ParticipantSlideControl</Label>
+                        <PropertyName>ParticipantSlideControl</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -1421,6 +1421,10 @@
                         <PropertyName>TownhallChatExperience</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>BroadcastPremiumApps</Label>
+                        <PropertyName>BroadcastPremiumApps</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>UseMicrosoftECDN</Label>
                         <PropertyName>UseMicrosoftECDN</PropertyName>
                     </ListItem>
@@ -1601,64 +1605,6 @@
                     <ListItem>
                         <Label>VoiceSimulationInInterpreter</Label>
                         <PropertyName>VoiceSimulationInInterpreter</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>TeamsPersonalAttendantPolicyView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsPersonalAttendantPolicy</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>PersonalAttendant</Label>
-                        <PropertyName>PersonalAttendant</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>CallScreening</Label>
-                        <PropertyName>CallScreening</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>CalendarBookings</Label>
-                        <PropertyName>CalendarBookings</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>TeamsPersonalAttendantValidationConfigurationView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsPersonalAttendantValidationConfiguration</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>PersonalAttendantPolicyValidationEnabled</Label>
-                        <PropertyName>PersonalAttendantPolicyValidationEnabled</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>PersonalAttendantPolicyValidationUri</Label>
-                        <PropertyName>PersonalAttendantPolicyValidationUri</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -2844,6 +2790,10 @@
                     <ListItem>
                         <Label>AllowUserToParticipateInExternalSharedChannel</Label>
                         <PropertyName>AllowUserToParticipateInExternalSharedChannel</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ThreadedChannelCreation</Label>
+                        <PropertyName>ThreadedChannelCreation</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -4799,6 +4749,10 @@
                         <Label>AllowAllAcsResources</Label>
                         <PropertyName>AllowAllAcsResources</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>RequireAcsFederationForMeeting</Label>
+                        <PropertyName>RequireAcsFederationForMeeting</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -4968,10 +4922,6 @@
                         <PropertyName>AllowFederatedUsers</PropertyName>
                     </ListItem>
                     <ListItem>
-                        <Label>AllowPublicUsers</Label>
-                        <PropertyName>AllowPublicUsers</PropertyName>
-                    </ListItem>
-                    <ListItem>
                         <Label>AllowTeamsSms</Label>
                         <PropertyName>AllowTeamsSms</PropertyName>
                     </ListItem>
@@ -5002,6 +4952,10 @@
                     <ListItem>
                         <Label>ExternalAccessWithTrialTenants</Label>
                         <PropertyName>ExternalAccessWithTrialTenants</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DomainBlockingForMDOAdminsInTeams</Label>
+                        <PropertyName>DomainBlockingForMDOAdminsInTeams</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>

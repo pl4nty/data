@@ -12,7 +12,7 @@ RootModule = './Microsoft.Teams.PowerShell.TeamsCmdlets.psm1'
 
 # Version number of this module.
 # There's a string replace for the actual module version in the build pipeline
-ModuleVersion = '1.3.8'
+ModuleVersion = '1.4.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'

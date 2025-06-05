@@ -716,6 +716,134 @@
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
+      <command:name>Get-CsTeamsAcsFederationConfiguration</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>CsTeamsAcsFederationConfiguration</command:noun>
+      <maml:description>
+        <maml:para>This cmdlet is used to retrieve the federation configuration between Teams and Azure Communication Services. For more information, refer to Azure Communication Services and Teams Interoperability (https://learn.microsoft.com/azure/communication-services/concepts/teams-interop).</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Federation between Teams and Azure Communication Services (ACS) allows users of custom solutions built with ACS to connect and communicate with Teams users over voice, video, Teams users over voice, video and screen sharing, and more. For more information, see Teams interoperability (https://learn.microsoft.com/azure/communication-services/concepts/teams-interop).</maml:para>
+      <maml:para>This cmdlet is used retrieve the Teams and ACS federation configuration for a Teams tenant.</maml:para>
+      <maml:para>You must be a Teams service admin or a Teams communication admin for your organization to run the cmdlet.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-CsTeamsAcsFederationConfiguration</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Filter</maml:name>
+          <maml:description>
+            <maml:para>Enables you to use wildcards when specifying the Teams and ACS federation configuration settings to be returned. Because you can only have a single, global instance of these settings there is little reason to use the Filter parameter. However, if you prefer, you can use syntax similar to this to retrieve the global settings: -Identity "g*".</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-CsTeamsAcsFederationConfiguration</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:description>
+            <maml:para>Specifies the collection of tenant federation configuration settings to be modified. Because each tenant is limited to a single, global collection of federation settings there is no need include this parameter when calling the Set-CsTenantFederationConfiguration cmdlet. If you do choose to use the Identity parameter you must also include the Tenant parameter. For example:</maml:para>
+            <maml:para>`Set-CsTenantFederationConfiguration -Tenant "bf19b7db-6960-41e5-a139-2aa373474354" -Identity "global"`</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Filter</maml:name>
+        <maml:description>
+          <maml:para>Enables you to use wildcards when specifying the Teams and ACS federation configuration settings to be returned. Because you can only have a single, global instance of these settings there is little reason to use the Filter parameter. However, if you prefer, you can use syntax similar to this to retrieve the global settings: -Identity "g*".</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:description>
+          <maml:para>Specifies the collection of tenant federation configuration settings to be modified. Because each tenant is limited to a single, global collection of federation settings there is no need include this parameter when calling the Set-CsTenantFederationConfiguration cmdlet. If you do choose to use the Identity parameter you must also include the Tenant parameter. For example:</maml:para>
+          <maml:para>`Set-CsTenantFederationConfiguration -Tenant "bf19b7db-6960-41e5-a139-2aa373474354" -Identity "global"`</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-CsTeamsAcsFederationConfiguration
+
+Identity             : Global
+AllowedAcsResources  : {'faced04c-2ced-433d-90db-063e424b87b1'}
+EnableAcsUsers       : True</dev:code>
+        <dev:remarks>
+          <maml:para>In this example, federation has been enabled for just one ACS resource.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-CsTeamsAcsFederationConfiguration
+
+Identity             : Global
+AllowedAcsResources  : {}
+EnableAcsUsers       : False</dev:code>
+        <dev:remarks>
+          <maml:para>In this example, federation is disabled for all ACS resources.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/get-csteamsacsfederationconfiguration</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-CsTeamsAcsFederationConfiguration</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/set-csteamsacsfederationconfiguration</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-CsExternalAccessPolicy</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/new-csexternalaccesspolicy</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-CsExternalAccessPolicy</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/set-csexternalaccesspolicy</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Grant-CsExternalAccessPolicy</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/grant-csexternalaccesspolicy</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
       <command:name>Get-CsTeamsAIPolicy</command:name>
       <command:verb>Get</command:verb>
       <command:noun>CsTeamsAIPolicy</command:noun>
@@ -11186,7 +11314,8 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowedExternalDomains</maml:name>
           <maml:description>
-            <maml:para>Indicates the domains that are allowed to communicate with the users of this policy. This is referenced only when `CommunicationWithExternalOrgs` is set to be `AllowSpecificExternalDomains`.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+            <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
           <dev:type>
@@ -11198,7 +11327,8 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>BlockedExternalDomains</maml:name>
           <maml:description>
-            <maml:para>Indicates the domains that are blocked from communicating with the users of this policy. This is referenced only when `CommunicationWithExternalOrgs` is set to be `BlockSpecificExternalDomains`.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+            <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
           <dev:type>
@@ -11210,12 +11340,15 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>CommunicationWithExternalOrgs</maml:name>
           <maml:description>
-            <maml:para>Indicates how the users get assigned by this policy can communicate with the external orgs. There are 5 options:</maml:para>
-            <maml:para>- OrganizationDefault: the users of this policy will follow the federation settings defined in TenantFederationConfiguration</maml:para>
-            <maml:para>- AllowAllExternalDomains: the users are open to communicate with all domains</maml:para>
-            <maml:para>- AllowSpecificExternalDomains: the users can only communicate with the users of the domains defined in `AllowedExternalDomains`</maml:para>
-            <maml:para>- BlockSpecificExternalDomains: only users from the domains defined in `BlockedExternalDomains` are blocked from communicating with the users of this policy</maml:para>
-            <maml:para>- BlockAllExternalDomains: the users are not able to communicate with any external domains</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+            <maml:para>Indicates how users assigned to the policy can communicate with external organizations (domains). This setting has 5 possible values:</maml:para>
+            <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
+            <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
+            <maml:para>- AllowSpecificExternalDomains: users can communicate with external domains listed in `AllowedExternalDomains`.</maml:para>
+            <maml:para>- BlockSpecificExternalDomains: users are blocked from communicating with domains listed in `BlockedExternalDomains`.</maml:para>
+            <maml:para>- BlockAllExternalDomains: users cannot communicate with any external domains.</maml:para>
+            <maml:para></maml:para>
+            <maml:para>The setting is only applicable when `EnableFederationAccess` is set to true. This setting can only be modified in custom policies. In the Global (default) policy, it is fixed to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -11277,18 +11410,6 @@ Tag:wld-policy2                           False</dev:code>
           <maml:name>EnableOutsideAccess</maml:name>
           <maml:description>
             <maml:para>Indicates whether the user is allowed to connect to Skype for Business Server over the Internet, without logging on to the organization's internal network. The default value is False.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-          <dev:type>
-            <maml:name>Boolean</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>EnablePublicCloudAccess</maml:name>
-          <maml:description>
-            <maml:para>Indicates whether the user is allowed to communicate with people who have SIP accounts with a public Internet connectivity provider such as MSN. Read Manage external access in Microsoft Teams (https://learn.microsoft.com/microsoftteams/manage-external-access)to get more information about the effect of this parameter in Microsoft Teams. The default value is False.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -11458,7 +11579,8 @@ Tag:wld-policy2                           False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowedExternalDomains</maml:name>
         <maml:description>
-          <maml:para>Indicates the domains that are allowed to communicate with the users of this policy. This is referenced only when `CommunicationWithExternalOrgs` is set to be `AllowSpecificExternalDomains`.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+          <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
         <dev:type>
@@ -11470,7 +11592,8 @@ Tag:wld-policy2                           False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>BlockedExternalDomains</maml:name>
         <maml:description>
-          <maml:para>Indicates the domains that are blocked from communicating with the users of this policy. This is referenced only when `CommunicationWithExternalOrgs` is set to be `BlockSpecificExternalDomains`.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+          <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
         <dev:type>
@@ -11482,12 +11605,15 @@ Tag:wld-policy2                           False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>CommunicationWithExternalOrgs</maml:name>
         <maml:description>
-          <maml:para>Indicates how the users get assigned by this policy can communicate with the external orgs. There are 5 options:</maml:para>
-          <maml:para>- OrganizationDefault: the users of this policy will follow the federation settings defined in TenantFederationConfiguration</maml:para>
-          <maml:para>- AllowAllExternalDomains: the users are open to communicate with all domains</maml:para>
-          <maml:para>- AllowSpecificExternalDomains: the users can only communicate with the users of the domains defined in `AllowedExternalDomains`</maml:para>
-          <maml:para>- BlockSpecificExternalDomains: only users from the domains defined in `BlockedExternalDomains` are blocked from communicating with the users of this policy</maml:para>
-          <maml:para>- BlockAllExternalDomains: the users are not able to communicate with any external domains</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+          <maml:para>Indicates how users assigned to the policy can communicate with external organizations (domains). This setting has 5 possible values:</maml:para>
+          <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
+          <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
+          <maml:para>- AllowSpecificExternalDomains: users can communicate with external domains listed in `AllowedExternalDomains`.</maml:para>
+          <maml:para>- BlockSpecificExternalDomains: users are blocked from communicating with domains listed in `BlockedExternalDomains`.</maml:para>
+          <maml:para>- BlockAllExternalDomains: users cannot communicate with any external domains.</maml:para>
+          <maml:para></maml:para>
+          <maml:para>The setting is only applicable when `EnableFederationAccess` is set to true. This setting can only be modified in custom policies. In the Global (default) policy, it is fixed to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -11550,18 +11676,6 @@ Tag:wld-policy2                           False</dev:code>
         <maml:name>EnableOutsideAccess</maml:name>
         <maml:description>
           <maml:para>Indicates whether the user is allowed to connect to Skype for Business Server over the Internet, without logging on to the organization's internal network. The default value is False.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-        <dev:type>
-          <maml:name>Boolean</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>EnablePublicCloudAccess</maml:name>
-        <maml:description>
-          <maml:para>Indicates whether the user is allowed to communicate with people who have SIP accounts with a public Internet connectivity provider such as MSN. Read Manage external access in Microsoft Teams (https://learn.microsoft.com/microsoftteams/manage-external-access)to get more information about the effect of this parameter in Microsoft Teams. The default value is False.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -11774,14 +11888,12 @@ New-CsExternalAccessPolicy -Identity AcsFederationNotAllowed -EnableAcsFederatio
 
 $x.EnableFederationAccess = $True
 
-$x.EnablePublicCloudAccess = $True
-
 $x.EnableOutsideAccess = $True
 
 Set-CsExternalAccessPolicy -Instance $x</dev:code>
         <dev:remarks>
           <maml:para>Example 4 demonstrates the use of the InMemory parameter; this parameter enables you to create an in-memory-only instance of an external access policy. After it has been created, you can modify the in-memory-only instance, then use the Set-CsExternalAccessPolicy cmdlet to transform the virtual policy into a real external access policy.</maml:para>
-          <maml:para>To do this, the first command in the example uses the New-CsExternalAccessPolicy cmdlet and the InMemory parameter to create a virtual policy with the Identity RedmondAccessPolicy; this virtual policy is stored in a variable named $x. The next three commands are used to modify three properties of the virtual policy: EnableFederationAccess, EnablePublicCloudAccess, and the EnableOutsideAccess. Finally, the last command uses the Set-CsExternalAccessPolicy cmdlet to create an actual per-user external access policy with the Identity RedmondAccessPolicy. If you do not call the Set-CsExternalAccessPolicy cmdlet, then the virtual policy will disappear as soon as you end your Windows PowerShell session or delete the variable $x. Should that happen, an external access policy with the Identity RedmondAccessPolicy will never be created.</maml:para>
+          <maml:para>To do this, the first command in the example uses the New-CsExternalAccessPolicy cmdlet and the InMemory parameter to create a virtual policy with the Identity RedmondAccessPolicy; this virtual policy is stored in a variable named $x. The next three commands are used to modify two properties of the virtual policy: EnableFederationAccess and the EnableOutsideAccess. Finally, the last command uses the Set-CsExternalAccessPolicy cmdlet to create an actual per-user external access policy with the Identity RedmondAccessPolicy. If you do not call the Set-CsExternalAccessPolicy cmdlet, then the virtual policy will disappear as soon as you end your Windows PowerShell session or delete the variable $x. Should that happen, an external access policy with the Identity RedmondAccessPolicy will never be created.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -11789,7 +11901,7 @@ Set-CsExternalAccessPolicy -Instance $x</dev:code>
         <dev:code>New-CsExternalAccessPolicy -Identity GranularFederationExample -CommunicationWithExternalOrgs "AllowSpecificExternalDomains" -AllowedExternalDomains @("example1.com", "example2.com")
 Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
         <dev:remarks>
-          <maml:para>In this example, we create an ExternalAccessPolicy named "GranularFederationExample" that allows communication with specific external domains, namely `example1.com` and `example2.com`. The federation policy is set to restrict communication to only these allowed domains. After that, we still have to enable the `CustomizeFederation` setting in the TenantFederationConfiguration to allow the federation settings as defined in the ExternalAccessPolicy to work.</maml:para>
+          <maml:para>In this example, we create an ExternalAccessPolicy named "GranularFederationExample" that allows communication with specific external domains, namely `example1.com` and `example2.com`. The federation policy is set to restrict communication to only these allowed domains.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -13505,8 +13617,8 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
           <maml:name>Copilot</maml:name>
           <maml:description>
             <maml:para>Setting this parameter lets you control how Copilot is used during calls and if transcription is needed to be turned on and saved after the call.</maml:para>
-            <maml:para>Valid options are: - Enabled: Copilot can work with or without transcription during calls.</maml:para>
-            <maml:para>- EnabledWithTranscript: Copilot will only work when transcription is enabled during calls. This is the default value.</maml:para>
+            <maml:para>Valid options are: - Enabled: Copilot can work with or without transcription during calls. This is the default value.</maml:para>
+            <maml:para>- EnabledWithTranscript: Copilot will only work when transcription is enabled during calls.</maml:para>
             <maml:para>- Disabled: Copilot is disabled for calls.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
@@ -13973,8 +14085,8 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
         <maml:name>Copilot</maml:name>
         <maml:description>
           <maml:para>Setting this parameter lets you control how Copilot is used during calls and if transcription is needed to be turned on and saved after the call.</maml:para>
-          <maml:para>Valid options are: - Enabled: Copilot can work with or without transcription during calls.</maml:para>
-          <maml:para>- EnabledWithTranscript: Copilot will only work when transcription is enabled during calls. This is the default value.</maml:para>
+          <maml:para>Valid options are: - Enabled: Copilot can work with or without transcription during calls. This is the default value.</maml:para>
+          <maml:para>- EnabledWithTranscript: Copilot will only work when transcription is enabled during calls.</maml:para>
           <maml:para>- Disabled: Copilot is disabled for calls.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
@@ -14394,6 +14506,20 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ThreadedChannelCreation</maml:name>
+          <maml:description>
+            <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
+            <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
+            <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
             <maml:para>Specifies the description of the policy.</maml:para>
@@ -14539,6 +14665,20 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ThreadedChannelCreation</maml:name>
+        <maml:description>
+          <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
+          <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
+          <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Description</maml:name>
@@ -16796,6 +16936,19 @@ New-CsTeamsEmergencyCallingPolicy -Identity ECP2 -Description "Test ECP2" -Exter
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BroadcastPremiumApps</maml:name>
+          <maml:description>
+            <maml:para>This setting will enable Tenant Admins to specify if an organizer of a Teams Premium town hall may add an app that is accessible by everyone, including attendees, in a broadcast style Event including a Town hall. This does not include control over apps (such as AI Producer and Custom Streaming Apps) that are only accessible by the Event group.</maml:para>
+            <maml:para>Possible values are: - Enabled : An organizer of a Premium town hall can add a Premium App such as Polls to the Town hall - Disabled : An organizer of a Premium town hall CANNOT add a Premium App such as Polls to the Town hall</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
           <maml:name>Confirm</maml:name>
           <maml:description>
@@ -17017,6 +17170,19 @@ New-CsTeamsEmergencyCallingPolicy -Identity ECP2 -Description "Test ECP2" -Exter
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>BroadcastPremiumApps</maml:name>
+        <maml:description>
+          <maml:para>This setting will enable Tenant Admins to specify if an organizer of a Teams Premium town hall may add an app that is accessible by everyone, including attendees, in a broadcast style Event including a Town hall. This does not include control over apps (such as AI Producer and Custom Streaming Apps) that are only accessible by the Event group.</maml:para>
+          <maml:para>Possible values are: - Enabled : An organizer of a Premium town hall can add a Premium App such as Polls to the Town hall - Disabled : An organizer of a Premium town hall CANNOT add a Premium App such as Polls to the Town hall</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
         <maml:name>Confirm</maml:name>
@@ -24297,7 +24463,7 @@ Tag:sms-enabled                            False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowAutoAttendantTimeZoneChange</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the auto attendant's time zone. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's time zone.</maml:para>
+            <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the auto attendant's time zone. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's time zone.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -24309,7 +24475,7 @@ Tag:sms-enabled                            False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowAutoAttendantLanguageChange</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the auto attendant's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's language.</maml:para>
+            <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the auto attendant's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's language.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -24417,7 +24583,7 @@ Tag:sms-enabled                            False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowCallQueueLanguageChange</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the call queue's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's language.</maml:para>
+            <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the call queue's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's language.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -24537,7 +24703,7 @@ Tag:sms-enabled                            False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>CallQueueAgentMonitorMode</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
+            <maml:para>PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor call sessions.</maml:para>
             <maml:para>When set to `Monitor`, users affected by the policy will be allowed to monitor and listen to call sessions.</maml:para>
             <maml:para>When set to `Whisper`, users affected by the policy will be allowed to monitor call sessions and whisper to an agent in the call.</maml:para>
@@ -24554,7 +24720,7 @@ Tag:sms-enabled                            False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>CallQueueAgentMonitorNotificationMode</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. PARAMVALUE: Disabled | Agent</maml:para>
+            <maml:para>PARAMVALUE: Disabled | Agent</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor agents during call sessions.</maml:para>
             <maml:para>When set to `Agent`, users affected by the policy will be allowed to monitor agents during call sessions.</maml:para>
           </maml:description>
@@ -24767,7 +24933,7 @@ Tag:sms-enabled                            False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowAutoAttendantTimeZoneChange</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the auto attendant's time zone. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's time zone.</maml:para>
+          <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the auto attendant's time zone. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's time zone.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -24779,7 +24945,7 @@ Tag:sms-enabled                            False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowAutoAttendantLanguageChange</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the auto attendant's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's language.</maml:para>
+          <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the auto attendant's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's language.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -24887,7 +25053,7 @@ Tag:sms-enabled                            False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowCallQueueLanguageChange</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the call queue's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's language.</maml:para>
+          <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the call queue's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's language.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -25007,7 +25173,7 @@ Tag:sms-enabled                            False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>CallQueueAgentMonitorMode</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
+          <maml:para>PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor call sessions.</maml:para>
           <maml:para>When set to `Monitor`, users affected by the policy will be allowed to monitor and listen to call sessions.</maml:para>
           <maml:para>When set to `Whisper`, users affected by the policy will be allowed to monitor call sessions and whisper to an agent in the call.</maml:para>
@@ -25024,7 +25190,7 @@ Tag:sms-enabled                            False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>CallQueueAgentMonitorNotificationMode</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. PARAMVALUE: Disabled | Agent</maml:para>
+          <maml:para>PARAMVALUE: Disabled | Agent</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor agents during call sessions.</maml:para>
           <maml:para>When set to `Agent`, users affected by the policy will be allowed to monitor agents during call sessions.</maml:para>
         </maml:description>
@@ -30103,7 +30269,8 @@ At line:1 char:1
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowedExternalDomains</maml:name>
           <maml:description>
-            <maml:para>Indicates the domains that are allowed to communicate with the users of this policy. This is referenced only when `CommunicationWithExternalOrgs` is set to be `AllowSpecificExternalDomains`</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+            <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
           <dev:type>
@@ -30115,7 +30282,8 @@ At line:1 char:1
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>BlockedExternalDomains</maml:name>
           <maml:description>
-            <maml:para>Indicates the domains that are blocked from communicating with the users of this policy. This is referenced only when `CommunicationWithExternalOrgs` is set to be `BlockSpecificExternalDomains`</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+            <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
           <dev:type>
@@ -30127,12 +30295,15 @@ At line:1 char:1
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>CommunicationWithExternalOrgs</maml:name>
           <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
             <maml:para>Indicates how the users get assigned by this policy can communicate with the external orgs. There are 5 options:</maml:para>
-            <maml:para>- OrganizationDefault: the users of this policy will follow the federation settings defined in TenantFederationConfiguration.</maml:para>
-            <maml:para>- AllowAllExternalDomains: the users are open to communicate with all domains.</maml:para>
-            <maml:para>- AllowSpecificExternalDomains: the users can only communicate with the users of the domains defined in `AllowedExternalDomains`.</maml:para>
-            <maml:para>- BlockSpecificExternalDomains: only users from the domains defined in `BlockedExternalDomains` are blocked from communicating with the users of this policy.</maml:para>
-            <maml:para>- BlockAllExternalDomains: the users are not able to communicate with any external domains.</maml:para>
+            <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
+            <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
+            <maml:para>- AllowSpecificExternalDomains: users can communicate with external domains listed in `AllowedExternalDomains`.</maml:para>
+            <maml:para>- BlockSpecificExternalDomains: users are blocked from communicating with domains listed in `BlockedExternalDomains`.</maml:para>
+            <maml:para>- BlockAllExternalDomains: users cannot communicate with any external domains.</maml:para>
+            <maml:para></maml:para>
+            <maml:para>The setting is only applicable when `EnableFederationAccess` is set to true. This setting can only be modified in custom policies. In the Global (default) policy, it is fixed to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -30195,18 +30366,6 @@ At line:1 char:1
           <maml:name>EnableOutsideAccess</maml:name>
           <maml:description>
             <maml:para>Indicates whether the user is allowed to connect to Skype for Business Server over the Internet, without logging on to the organization's internal network. The default value is False.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-          <dev:type>
-            <maml:name>Boolean</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>EnablePublicCloudAccess</maml:name>
-          <maml:description>
-            <maml:para>Indicates whether the user is allowed to communicate with people who have SIP accounts with a public Internet connectivity provider such as MSN. Read Manage external access in Microsoft Teams (https://learn.microsoft.com/microsoftteams/manage-external-access)to get more information about the effect of this parameter in Microsoft Teams. The default value is False.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -30371,7 +30530,8 @@ At line:1 char:1
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowedExternalDomains</maml:name>
         <maml:description>
-          <maml:para>Indicates the domains that are allowed to communicate with the users of this policy. This is referenced only when `CommunicationWithExternalOrgs` is set to be `AllowSpecificExternalDomains`</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+          <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
         <dev:type>
@@ -30383,7 +30543,8 @@ At line:1 char:1
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>BlockedExternalDomains</maml:name>
         <maml:description>
-          <maml:para>Indicates the domains that are blocked from communicating with the users of this policy. This is referenced only when `CommunicationWithExternalOrgs` is set to be `BlockSpecificExternalDomains`</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+          <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
         <dev:type>
@@ -30395,12 +30556,15 @@ At line:1 char:1
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>CommunicationWithExternalOrgs</maml:name>
         <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
           <maml:para>Indicates how the users get assigned by this policy can communicate with the external orgs. There are 5 options:</maml:para>
-          <maml:para>- OrganizationDefault: the users of this policy will follow the federation settings defined in TenantFederationConfiguration.</maml:para>
-          <maml:para>- AllowAllExternalDomains: the users are open to communicate with all domains.</maml:para>
-          <maml:para>- AllowSpecificExternalDomains: the users can only communicate with the users of the domains defined in `AllowedExternalDomains`.</maml:para>
-          <maml:para>- BlockSpecificExternalDomains: only users from the domains defined in `BlockedExternalDomains` are blocked from communicating with the users of this policy.</maml:para>
-          <maml:para>- BlockAllExternalDomains: the users are not able to communicate with any external domains.</maml:para>
+          <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
+          <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
+          <maml:para>- AllowSpecificExternalDomains: users can communicate with external domains listed in `AllowedExternalDomains`.</maml:para>
+          <maml:para>- BlockSpecificExternalDomains: users are blocked from communicating with domains listed in `BlockedExternalDomains`.</maml:para>
+          <maml:para>- BlockAllExternalDomains: users cannot communicate with any external domains.</maml:para>
+          <maml:para></maml:para>
+          <maml:para>The setting is only applicable when `EnableFederationAccess` is set to true. This setting can only be modified in custom policies. In the Global (default) policy, it is fixed to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -30464,18 +30628,6 @@ At line:1 char:1
         <maml:name>EnableOutsideAccess</maml:name>
         <maml:description>
           <maml:para>Indicates whether the user is allowed to connect to Skype for Business Server over the Internet, without logging on to the organization's internal network. The default value is False.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-        <dev:type>
-          <maml:name>Boolean</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>EnablePublicCloudAccess</maml:name>
-        <maml:description>
-          <maml:para>Indicates whether the user is allowed to communicate with people who have SIP accounts with a public Internet connectivity provider such as MSN. Read Manage external access in Microsoft Teams (https://learn.microsoft.com/microsoftteams/manage-external-access)to get more information about the effect of this parameter in Microsoft Teams. The default value is False.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -30661,13 +30813,6 @@ At line:1 char:1
       </command:example>
       <command:example>
         <maml:title> -------------------------- Example 4 ------------------------ </maml:title>
-        <dev:code>Get-CsExternalAccessPolicy | Where-Object {$_.EnablePublicCloudAccess -eq $True} | Set-CsExternalAccessPolicy -EnableFederationAccess $True</dev:code>
-        <dev:remarks>
-          <maml:para>In Example 4, federation access is enabled for all the external access policies that allow public cloud access. To do this, the command first uses the `Get-CsExternalAccessPolicy` cmdlet to return a collection of all the external access policies currently configured for use in the organization. This collection is piped to the `Where-Object` cmdlet, which picks out only those policies where the EnablePublicCloudAccess property is equal to True. The filtered collection is then piped to the `Set-CsExternalAccessPolicy` cmdlet, which takes each policy and sets the EnableFederationAccess property to True. The net result: all external access policies that allow public cloud access will also allow federation access.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title> -------------------------- Example 5 ------------------------ </maml:title>
         <dev:code>Set-CsExternalAccessPolicy -Identity Global -EnableAcsFederationAccess $false
 New-CsExternalAccessPolicy -Identity AcsFederationAllowed -EnableAcsFederationAccess $true</dev:code>
         <dev:remarks>
@@ -30687,7 +30832,7 @@ New-CsExternalAccessPolicy -Identity AcsFederationNotAllowed -EnableAcsFederatio
         <dev:code>New-CsExternalAccessPolicy -Identity GranularFederationExample -CommunicationWithExternalOrgs "AllowSpecificExternalDomains" -AllowedExternalDomains @("example1.com", "example2.com")
 Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
         <dev:remarks>
-          <maml:para>In this example, we create an ExternalAccessPolicy named "GranularFederationExample" that allows communication with specific external domains, namely `example1.com` and `example2.com`. The federation policy is set to restrict communication to only these allowed domains. After that, we still have to enable the `CustomizeFederation` setting in the TenantFederationConfiguration to allow the federation settings as defined in the ExternalAccessPolicy to work.</maml:para>
+          <maml:para>In this example, we create an ExternalAccessPolicy named "GranularFederationExample" that allows communication with specific external domains, namely `example1.com` and `example2.com`. The federation policy is set to restrict communication to only these allowed domains.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -31546,6 +31691,150 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
       <maml:navigationLink>
         <maml:linkText>Remove-CsPrivacyConfiguration</maml:linkText>
         <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-CsTeamsAcsFederationConfiguration</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>CsTeamsAcsFederationConfiguration</command:noun>
+      <maml:description>
+        <maml:para>This cmdlet is used to manage the federation configuration between Teams and Azure Communication Services. For more information, please see Azure Communication Services and Teams Interoperability (https://learn.microsoft.com/azure/communication-services/concepts/teams-interop).</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Federation between Teams and Azure Communication Services (ACS) allows external users from ACS to connect and communicate with Teams users over voice and video. These custom applications may be used by end users or by bots, and there is no differentiation in how they appear to Teams users unless the developer of the application explicitly indicates this as part of the communication. For more information, see Teams interoperability (https://learn.microsoft.com/azure/communication-services/concepts/teams-interop).</maml:para>
+      <maml:para>This cmdlet is used to enable or disable Teams and ACS federation for a Teams tenant, and to specify which ACS resources can connect to Teams. Only listed ACS resources can be allowed.</maml:para>
+      <maml:para>You must be a Teams service admin or a Teams communication admin for your organization to run the cmdlet.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-CsTeamsAcsFederationConfiguration</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EnableAcsUsers</maml:name>
+          <maml:description>
+            <maml:para>Set to True to enable federation between Teams and ACS. When set to False, all other parameters are ignored.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AllowedAcsResources</maml:name>
+          <maml:description>
+            <maml:para>The list of the ACS resources (at least one) for which federation is enabled, when EnableAcsUsers is set to true. If EnableAcsUsers is set to false, then this list is ignored and should be null/empty.</maml:para>
+            <maml:para>The ACS resources are listed using their immutable resource id, which is a guid that can be found on the Azure portal.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Empty/Null</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:description>
+            <maml:para>Specifies the collection of tenant federation configuration settings to be modified. Because each tenant is limited to a single, global collection of federation settings there is no need include this parameter when calling the Set-CsTenantFederationConfiguration cmdlet. If you do choose to use the Identity parameter, you must also include the Tenant parameter. For example:</maml:para>
+            <maml:para>`Set-CsTenantFederationConfiguration -Tenant "bf19b7db-6960-41e5-a139-2aa373474354" -Identity "global"`</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EnableAcsUsers</maml:name>
+        <maml:description>
+          <maml:para>Set to True to enable federation between Teams and ACS. When set to False, all other parameters are ignored.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AllowedAcsResources</maml:name>
+        <maml:description>
+          <maml:para>The list of the ACS resources (at least one) for which federation is enabled, when EnableAcsUsers is set to true. If EnableAcsUsers is set to false, then this list is ignored and should be null/empty.</maml:para>
+          <maml:para>The ACS resources are listed using their immutable resource id, which is a guid that can be found on the Azure portal.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Empty/Null</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:description>
+          <maml:para>Specifies the collection of tenant federation configuration settings to be modified. Because each tenant is limited to a single, global collection of federation settings there is no need include this parameter when calling the Set-CsTenantFederationConfiguration cmdlet. If you do choose to use the Identity parameter, you must also include the Tenant parameter. For example:</maml:para>
+          <maml:para>`Set-CsTenantFederationConfiguration -Tenant "bf19b7db-6960-41e5-a139-2aa373474354" -Identity "global"`</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>Set-CsTeamsAcsFederationConfiguration -EnableAcsUsers $False</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>$allowlist = @('faced04c-2ced-433d-90db-063e424b87b1')
+Set-CsTeamsAcsFederationConfiguration -EnableAcsUsers $True -AllowedAcsResources $allowlist</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/set-csteamsacsfederationconfiguration</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-CsTeamsAcsFederationConfiguration</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/get-csteamsacsfederationconfiguration</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-CsExternalAccessPolicy</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/new-csexternalaccesspolicy</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-CsExternalAccessPolicy</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/set-csexternalaccesspolicy</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Grant-CsExternalAccessPolicy</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/teams/grant-csexternalaccesspolicy</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -33583,8 +33872,8 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           <maml:name>Copilot</maml:name>
           <maml:description>
             <maml:para>Setting this parameter lets you control how Copilot is used during calls and if transcription is needed to be turned on and saved after the call.</maml:para>
-            <maml:para>Valid options are: - Enabled: Copilot can work with or without transcription during calls.</maml:para>
-            <maml:para>- EnabledWithTranscript: Copilot will only work when transcription is enabled during calls. This is the default value.</maml:para>
+            <maml:para>Valid options are: - Enabled: Copilot can work with or without transcription during calls. This is the default value.</maml:para>
+            <maml:para>- EnabledWithTranscript: Copilot will only work when transcription is enabled during calls.</maml:para>
             <maml:para>- Disabled: Copilot is disabled for calls.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
@@ -34047,8 +34336,8 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
         <maml:name>Copilot</maml:name>
         <maml:description>
           <maml:para>Setting this parameter lets you control how Copilot is used during calls and if transcription is needed to be turned on and saved after the call.</maml:para>
-          <maml:para>Valid options are: - Enabled: Copilot can work with or without transcription during calls.</maml:para>
-          <maml:para>- EnabledWithTranscript: Copilot will only work when transcription is enabled during calls. This is the default value.</maml:para>
+          <maml:para>Valid options are: - Enabled: Copilot can work with or without transcription during calls. This is the default value.</maml:para>
+          <maml:para>- EnabledWithTranscript: Copilot will only work when transcription is enabled during calls.</maml:para>
           <maml:para>- Disabled: Copilot is disabled for calls.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
@@ -34482,6 +34771,20 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ThreadedChannelCreation</maml:name>
+          <maml:description>
+            <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
+            <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
+            <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
       </command:syntaxItem>
       <command:syntaxItem>
         <maml:name>Set-CsTeamsChannelsPolicy</maml:name>
@@ -34613,6 +34916,20 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ThreadedChannelCreation</maml:name>
+          <maml:description>
+            <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
+            <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
+            <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
         </command:parameter>
       </command:syntaxItem>
     </command:syntax>
@@ -34760,6 +35077,20 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ThreadedChannelCreation</maml:name>
+        <maml:description>
+          <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
+          <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
+          <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
       </command:parameter>
     </command:parameters>
     <command:inputTypes>
@@ -38079,6 +38410,19 @@ Set-CsTeamsEmergencyCallingPolicy -Identity "TestECP" -ExtendedNotifications @{a
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BroadcastPremiumApps</maml:name>
+          <maml:description>
+            <maml:para>This setting will enable Tenant Admins to specify if an organizer of a Teams Premium town hall may add an app that is accessible by everyone, including attendees, in a broadcast style Event including a Town hall. This does not include control over apps (such as AI Producer and Custom Streaming Apps) that are only accessible by the Event group.</maml:para>
+            <maml:para>Possible values are: - Enabled : An organizer of a Premium town hall can add a Premium App such as Polls to the Town hall - Disabled : An organizer of a Premium town hall CANNOT add a Premium App such as Polls to the Town hall</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
           <maml:name>Confirm</maml:name>
           <maml:description>
@@ -38346,6 +38690,19 @@ Set-CsTeamsEmergencyCallingPolicy -Identity "TestECP" -ExtendedNotifications @{a
         <maml:description>
           <maml:para>Determines whether transcriptions are allowed in a user's webinar.</maml:para>
           <maml:para>Possible values are:  - Enabled : Allow transcriptions in user's webinars.  - Disabled : Prohibit transcriptions in user's webinars.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>BroadcastPremiumApps</maml:name>
+        <maml:description>
+          <maml:para>This setting will enable Tenant Admins to specify if an organizer of a Teams Premium town hall may add an app that is accessible by everyone, including attendees, in a broadcast style Event including a Town hall. This does not include control over apps (such as AI Producer and Custom Streaming Apps) that are only accessible by the Event group.</maml:para>
+          <maml:para>Possible values are: - Enabled : An organizer of a Premium town hall can add a Premium App such as Polls to the Town hall - Disabled : An organizer of a Premium town hall CANNOT add a Premium App such as Polls to the Town hall</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -43297,6 +43654,36 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ContentBasedPhishingCheck</maml:name>
+          <maml:description>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+            <maml:para>This setting determines if Content Based Phishing Check in teams messaging across the whole tenant</maml:para>
+            <maml:para>Possible Values: - Enabled</maml:para>
+            <maml:para>- Disabled</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ReportIncorrectSecurityDetections</maml:name>
+          <maml:description>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+            <maml:para>This setting determines if Report Incorrect Security Detections is enabled in teams messaging across the whole tenant</maml:para>
+            <maml:para>Possible Values: - Enabled</maml:para>
+            <maml:para>- Disabled</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
           <maml:name>WhatIf</maml:name>
           <maml:description>
@@ -43415,6 +43802,36 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <maml:description>
           <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>This setting determines if UrlReputationCheck check in teams messaging across the whole tenant</maml:para>
+          <maml:para>Possible Values: - Enabled</maml:para>
+          <maml:para>- Disabled</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ContentBasedPhishingCheck</maml:name>
+        <maml:description>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+          <maml:para>This setting determines if Content Based Phishing Check in teams messaging across the whole tenant</maml:para>
+          <maml:para>Possible Values: - Enabled</maml:para>
+          <maml:para>- Disabled</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ReportIncorrectSecurityDetections</maml:name>
+        <maml:description>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+          <maml:para>This setting determines if Report Incorrect Security Detections is enabled in teams messaging across the whole tenant</maml:para>
           <maml:para>Possible Values: - Enabled</maml:para>
           <maml:para>- Disabled</maml:para>
         </maml:description>
@@ -47242,7 +47659,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowAutoAttendantTimeZoneChange</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the auto attendant's time zone. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's time zone.</maml:para>
+            <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the auto attendant's time zone. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's time zone.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -47254,7 +47671,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowAutoAttendantLanguageChange</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the auto attendant's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's language.</maml:para>
+            <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the auto attendant's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's language.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -47350,7 +47767,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowCallQueueNoAgentSharedVoicemailGreetingChange</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the call queue's no agent shared voicemail greeting. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's no agent shared voicemail greeting.</maml:para>
+            <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the call queue's no agent shared voicemail greeting. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's no agent shared voicemail greeting.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -47362,7 +47779,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowCallQueueLanguageChange</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the call queue's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's language.</maml:para>
+            <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the call queue's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's language.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -47482,7 +47899,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>CallQueueAgentMonitorMode</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
+            <maml:para>PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor call sessions.</maml:para>
             <maml:para>When set to `Monitor`, users affected by the policy will be allowed to monitor and listen to call sessions.</maml:para>
             <maml:para>When set to `Whisper`, users affected by the policy will be allowed to monitor call sessions and whisper to an agent in the call.</maml:para>
@@ -47499,7 +47916,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>CallQueueAgentMonitorNotificationMode</maml:name>
           <maml:description>
-            <maml:para>This option is not currently available in Queues app. PARAMVALUE: Disabled | Agent</maml:para>
+            <maml:para>PARAMVALUE: Disabled | Agent</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor agents during call sessions.</maml:para>
             <maml:para>When set to `Agent`, users affected by the policy will be allowed to monitor agents during call sessions.</maml:para>
           </maml:description>
@@ -47688,7 +48105,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowAutoAttendantTimeZoneChange</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the auto attendant's time zone. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's time zone.</maml:para>
+          <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the auto attendant's time zone. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's time zone.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -47700,7 +48117,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowAutoAttendantLanguageChange</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the auto attendant's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's language.</maml:para>
+          <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the auto attendant's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the auto attendant's language.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -47796,7 +48213,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowCallQueueNoAgentSharedVoicemailGreetingChange</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the call queue's no agent shared voicemail greeting. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's no agent shared voicemail greeting.</maml:para>
+          <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the call queue's no agent shared voicemail greeting. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's no agent shared voicemail greeting.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -47808,7 +48225,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowCallQueueLanguageChange</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. When set to `True`, users affected by the policy will be allowed to change the call queue's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's language.</maml:para>
+          <maml:para>This feature is not currently available to authorized users. When set to `True`, users affected by the policy will be allowed to change the call queue's language. When set to `False` (the default value), users affected by the policy won't be allowed to change the call queue's language.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -47928,7 +48345,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>CallQueueAgentMonitorMode</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
+          <maml:para>PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor call sessions.</maml:para>
           <maml:para>When set to `Monitor`, users affected by the policy will be allowed to monitor and listen to call sessions.</maml:para>
           <maml:para>When set to `Whisper`, users affected by the policy will be allowed to monitor call sessions and whisper to an agent in the call.</maml:para>
@@ -47945,7 +48362,7 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>CallQueueAgentMonitorNotificationMode</maml:name>
         <maml:description>
-          <maml:para>This option is not currently available in Queues app. PARAMVALUE: Disabled | Agent</maml:para>
+          <maml:para>PARAMVALUE: Disabled | Agent</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor agents during call sessions.</maml:para>
           <maml:para>When set to `Agent`, users affected by the policy will be allowed to monitor agents during call sessions.</maml:para>
         </maml:description>

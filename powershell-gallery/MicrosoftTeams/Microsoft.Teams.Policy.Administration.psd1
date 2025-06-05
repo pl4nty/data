@@ -11,7 +11,7 @@
 RootModule = './Microsoft.Teams.Policy.Administration.psm1'
 
 # Version number of this module.
-ModuleVersion = '16.6.1'
+ModuleVersion = '16.17.6'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'

@@ -240,6 +240,7 @@ param(
     [Parameter(ParameterSetName='CredentialFlowWithLocal', Mandatory)]
     [Parameter(ParameterSetName='CredentialFlowWithInt', Mandatory)]
     [Parameter(ParameterSetName='CredentialFlowWithMsit', Mandatory)]
+    [Parameter(ParameterSetName='CredentialFlowWithNpe', Mandatory)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Management.Automation.PSCredential]
     ${Credential},
@@ -261,6 +262,12 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Management.Automation.SwitchParameter]
     ${UseConfigApiMsit},
+
+    [Parameter(ParameterSetName='CredentialFlowWithNpe', Mandatory)]
+    [Parameter(ParameterSetName='NpeHost', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    ${UseConfigApiNpe},
 
     [Parameter(ParameterSetName='AccessTokenFlow', Mandatory)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -292,10 +299,12 @@ begin {
             CredentialFlowWithLocal = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Connect-CsConfigApi';
             CredentialFlowWithInt = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Connect-CsConfigApi';
             CredentialFlowWithMsit = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Connect-CsConfigApi';
+            CredentialFlowWithNpe = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Connect-CsConfigApi';
             AccessTokenFlow = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Connect-CsConfigApi';
             LocalHost = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Connect-CsConfigApi';
             IntHost = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Connect-CsConfigApi';
             MsitHost = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Connect-CsConfigApi';
+            NpeHost = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Connect-CsConfigApi';
         }
         $cmdInfo = Get-Command -Name $mapping[$parameterSet]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
@@ -6436,6 +6445,108 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Get-CsPersonalAttendantSettings {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IPersonalAttendantSettings])]
+[CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
+param(
+    [Parameter(ParameterSetName='Get', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsPersonalAttendantSettings_Get';
+            GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsPersonalAttendantSettings_GetViaIdentity';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Get-CsPhoneNumberAssignment {
 [OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISkypeTelephoneNumberMgmtCmdletAcquiredTelephoneNumber])]
 [CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
@@ -6637,6 +6748,24 @@ function Get-CsPhoneNumberPolicyAssignment {
 [CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
 param(
     [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${PolicyName},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${PolicyType},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${ResultSize},
+
+    [Parameter()]
     [Alias('Identity')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
     [System.String]
@@ -6693,6 +6822,94 @@ begin {
 
         $mapping = @{
             Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsPhoneNumberPolicyAssignment_Get';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
+function Get-CsPhoneNumberTag {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISkypeTelephoneNumberMgmtCmdletTenantTagRecord])]
+[CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
+param(
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsPhoneNumberTag_Get';
         }
         $cmdInfo = Get-Command -Name $mapping[$parameterSet]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
@@ -19336,11 +19553,6 @@ param(
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Boolean]
-    ${EnablePublicCloudAccess},
-
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
-    [System.Boolean]
     ${EnablePublicCloudAudioVideoAccess},
 
     [Parameter()]
@@ -28221,6 +28433,112 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Remove-CsPhoneNumberTag {
+[OutputType([System.Boolean])]
+[CmdletBinding(DefaultParameterSetName='Remove', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${Tag},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${PhoneNumber},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Returns true when the command succeeds
+    ${PassThru},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Remove = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsPhoneNumberTag_Remove';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Remove-CsTeamsAppPermissionPolicy {
 [CmdletBinding(DefaultParameterSetName='Identity', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
@@ -31605,11 +31923,6 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Boolean]
     ${EnableOutsideAccess},
-
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
-    [System.Boolean]
-    ${EnablePublicCloudAccess},
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -35500,6 +35813,112 @@ begin {
 
         $mapping = @{
             Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPhoneNumberPolicyAssignment_Set';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
+function Set-CsPhoneNumberTag {
+[OutputType([System.Boolean])]
+[CmdletBinding(DefaultParameterSetName='Set', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${PhoneNumber},
+
+    [Parameter(Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${Tag},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Returns true when the command succeeds
+    ${PassThru},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPhoneNumberTag_Set';
         }
         $cmdInfo = Get-Command -Name $mapping[$parameterSet]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
@@ -40513,11 +40932,6 @@ param(
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Boolean]
-    ${AllowPublicUsers},
-
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
-    [System.Boolean]
     ${AllowTeamsConsumer},
 
     [Parameter()]
@@ -42840,6 +43254,112 @@ begin {
         $mapping = @{
             UniqueNumberParams = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Unregister-CsOnlineDialInConferencingServiceNumber';
             InstanceParams = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Unregister-CsOnlineDialInConferencingServiceNumber';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
+function Update-CsPhoneNumberTag {
+[OutputType([System.Boolean])]
+[CmdletBinding(DefaultParameterSetName='Update', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${NewTag},
+
+    [Parameter(Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${Tag},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Returns true when the command succeeds
+    ${PassThru},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Update = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Update-CsPhoneNumberTag_Update';
         }
         $cmdInfo = Get-Command -Name $mapping[$parameterSet]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
@@ -45606,6 +46126,70 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Get-CsSharedCallQueueHistoryTemplate {
+[CmdletBinding(PositionalBinding=$false)]
+param(
+    [Parameter(Position=0)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Id},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    ${Force},
+
+    [Parameter(Position=1, DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    ${HttpPipelinePrepend}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Get-CsSharedCallQueueHistoryTemplate';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Get-CsTeamsSettingsCustomApp {
 [CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
@@ -48315,6 +48899,11 @@ param(
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${SharedCallQueueHistoryTemplateId},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Management.Automation.SwitchParameter]
     ${Force},
 
@@ -49106,6 +49695,80 @@ begin {
 
         $mapping = @{
             __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\New-CsSdgBulkSignInRequest';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
+function New-CsSharedCallQueueHistoryTemplate {
+[CmdletBinding(PositionalBinding=$false)]
+param(
+    [Parameter(Position=0, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Name},
+
+    [Parameter(Position=1, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Description},
+
+    [Parameter(Position=2)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Rtc.Management.Hosted.Online.Models.IncomingMissedCalls]
+    ${IncomingMissedCalls},
+
+    [Parameter(Position=3)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Rtc.Management.Hosted.Online.Models.AnsweredAndOutboundCalls]
+    ${AnsweredAndOutboundCalls},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    ${HttpPipelinePrepend}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\New-CsSharedCallQueueHistoryTemplate';
         }
         $cmdInfo = Get-Command -Name $mapping[$parameterSet]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
@@ -50114,6 +50777,70 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Remove-CsSharedCallQueueHistoryTemplate {
+[CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(Position=0, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Id},
+
+    [Parameter(Position=1)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    ${Force},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    ${HttpPipelinePrepend}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Remove-CsSharedCallQueueHistoryTemplate';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Remove-CsUserCallingDelegate {
 [CmdletBinding(DefaultParameterSetName='Identity', PositionalBinding=$false)]
 param(
@@ -50694,6 +51421,11 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String[]]
     ${ComplianceRecordingForCallQueueTemplateId},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${SharedCallQueueHistoryTemplateId},
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -51563,6 +52295,138 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Set-CsPersonalAttendantSettings {
+[CmdletBinding(DefaultParameterSetName='Identity', PositionalBinding=$false)]
+param(
+    [Parameter(Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Identity},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    ${HttpPipelinePrepend},
+
+    [Parameter(ParameterSetName='PersonalAttendantOnOff', Mandatory)]
+    [Parameter(ParameterSetName='PersonalAttendant', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${IsPersonalAttendantEnabled},
+
+    [Parameter(ParameterSetName='PersonalAttendant', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${DefaultLanguage},
+
+    [Parameter(ParameterSetName='PersonalAttendant', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${IsBookingCalendarEnabled},
+
+    [Parameter(ParameterSetName='PersonalAttendant', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${IsCallScreeningEnabled},
+
+    [Parameter(ParameterSetName='PersonalAttendant', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${AllowInboundInternalCalls},
+
+    [Parameter(ParameterSetName='PersonalAttendant', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${AllowInboundFederatedCalls},
+
+    [Parameter(ParameterSetName='PersonalAttendant', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${AllowInboundPSTNCalls},
+
+    [Parameter(ParameterSetName='PersonalAttendant', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${IsAutomaticTranscriptionEnabled},
+
+    [Parameter(ParameterSetName='PersonalAttendant', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${IsAutomaticRecordingEnabled},
+
+    [Parameter(ParameterSetName='PersonalAttendant')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${DefaultVoice},
+
+    [Parameter(ParameterSetName='PersonalAttendant')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${CalleeName},
+
+    [Parameter(ParameterSetName='PersonalAttendant')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${DefaultTone},
+
+    [Parameter(ParameterSetName='PersonalAttendant')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${BookingCalendarId},
+
+    [Parameter(ParameterSetName='PersonalAttendant')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${IsNonContactCallbackEnabled}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Identity = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsPersonalAttendantSettings';
+            PersonalAttendantOnOff = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsPersonalAttendantSettings';
+            PersonalAttendant = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsPersonalAttendantSettings';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Set-CsPhoneNumberAssignment {
 [CmdletBinding(DefaultParameterSetName='LocationUpdate', PositionalBinding=$false)]
 param(
@@ -51634,6 +52498,70 @@ begin {
             Assignment = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsPhoneNumberAssignment';
             ReverseNumberLookupUpdate = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsPhoneNumberAssignment';
             NetworkSiteUpdate = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsPhoneNumberAssignment';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
+function Set-CsSharedCallQueueHistoryTemplate {
+[CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(Position=0, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.PSObject]
+    ${Instance},
+
+    [Parameter(Position=1)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    ${Force},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    ${HttpPipelinePrepend}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsSharedCallQueueHistoryTemplate';
         }
         $cmdInfo = Get-Command -Name $mapping[$parameterSet]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)

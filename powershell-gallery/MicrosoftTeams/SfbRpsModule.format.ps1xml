@@ -751,10 +751,6 @@
                 <PropertyName>EnableXmppAccess</PropertyName>
               </ListItem>
               <ListItem>
-                <Label>EnablePublicCloudAccess</Label>
-                <PropertyName>EnablePublicCloudAccess</PropertyName>
-              </ListItem>
-              <ListItem>
                 <Label>EnablePublicCloudAudioVideoAccess</Label>
                 <PropertyName>EnablePublicCloudAudioVideoAccess</PropertyName>
               </ListItem>
@@ -8611,10 +8607,6 @@
               <ListItem>
                 <Label>AllowFederatedUsers</Label>
                 <PropertyName>AllowFederatedUsers</PropertyName>
-              </ListItem>
-              <ListItem>
-                <Label>AllowPublicUsers</Label>
-                <PropertyName>AllowPublicUsers</PropertyName>
               </ListItem>
               <ListItem>
                 <Label>AllowTeamsConsumer</Label>
@@ -25061,6 +25053,9 @@
               </ListItem>
               <ListItem>
                 <PropertyName>CustomAudioFileAnnouncementForCRFailure</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>SharedCallQueueHistoryTemplateId</PropertyName>
               </ListItem>
             </ListItems>
           </ListEntry>

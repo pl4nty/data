@@ -2398,6 +2398,9 @@
             <Label>ServiceLevelThresholdResponseTimeInSecond</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedCallQueueHistoryTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ShiftsSchedulingGroupId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -2742,6 +2745,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ServiceLevelThresholdResponseTimeInSecond</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedCallQueueHistoryTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ShiftsSchedulingGroupId</PropertyName>
@@ -4913,6 +4919,9 @@
             <Label>ServiceLevelThresholdResponseTimeInSecond</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedCallQueueHistoryId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ShiftsSchedulingGroupId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -5182,6 +5191,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ServiceLevelThresholdResponseTimeInSecond</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedCallQueueHistoryId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ShiftsSchedulingGroupId</PropertyName>
@@ -5527,6 +5539,46 @@
         <TableRowEntries>
           <TableRowEntry>
             <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSharedCallQueueHistoryRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSharedCallQueueHistoryRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AnsweredAndOutboundCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IncomingMissedCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AnsweredAndOutboundCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IncomingMissedCall</PropertyName>
+              </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
               </TableColumnItem>
@@ -10306,6 +10358,106 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.PersonalAttendantSettings</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.PersonalAttendantSettings</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AllowInboundFederatedCalls</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AllowInboundInternalCalls</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AllowInboundPSTNCalls</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>BookingCalendarId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CalleeName</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>DefaultLanguage</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>DefaultTone</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>DefaultVoice</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IsAutomaticRecordingEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IsAutomaticTranscriptionEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IsBookingCalendarEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IsCallScreeningEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IsNonContactCallbackEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IsPersonalAttendantEnabled</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AllowInboundFederatedCalls</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AllowInboundInternalCalls</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AllowInboundPSTNCalls</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>BookingCalendarId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CalleeName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DefaultLanguage</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DefaultTone</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DefaultVoice</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IsAutomaticRecordingEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IsAutomaticTranscriptionEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IsBookingCalendarEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IsCallScreeningEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IsNonContactCallbackEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IsPersonalAttendantEnabled</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.PolicyDefinition</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.PolicyDefinition</TypeName>
@@ -11668,6 +11820,144 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistory</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistory</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AnsweredAndOutboundCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IncomingMissedCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AnsweredAndOutboundCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IncomingMissedCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistoryDomainModel</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistoryDomainModel</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AnsweredAndOutboundCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IncomingMissedCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AnsweredAndOutboundCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IncomingMissedCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistoryDtoModel</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistoryDtoModel</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AnsweredAndOutboundCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IncomingMissedCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AnsweredAndOutboundCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IncomingMissedCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SimpleBatchJobStatus</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SimpleBatchJobStatus</TypeName>
@@ -11892,6 +12182,9 @@
             <Label>ReverseNumberLookup</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>Tag</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>TelephoneNumber</Label>
           </TableColumnHeader>
         </TableHeaders>
@@ -11954,6 +12247,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ReverseNumberLookup</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Tag</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TelephoneNumber</PropertyName>
@@ -12021,6 +12317,52 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Quantity</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EndingNumber</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>FileContent</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>StartingNumber</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TelephoneNumber</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EndingNumber</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>FileContent</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>StartingNumber</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TelephoneNumber</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -12276,6 +12618,28 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletTenantTagRecord</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletTenantTagRecord</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>TagValue</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>TagValue</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCountry</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCountry</TypeName>
@@ -12444,6 +12808,28 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtPhoneNumberPolicyAssignmentCmdletResponse</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtPhoneNumberPolicyAssignmentCmdletResponse</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>NextLink</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>NextLink</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtPhoneNumberPolicyAssignmentCmdletResult</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtPhoneNumberPolicyAssignmentCmdletResult</TypeName>
@@ -12460,12 +12846,6 @@
             <Label>PolicyName</Label>
           </TableColumnHeader>
           <TableColumnHeader>
-            <Label>Authority</Label>
-          </TableColumnHeader>
-          <TableColumnHeader>
-            <Label>AssignmentType</Label>
-          </TableColumnHeader>
-          <TableColumnHeader>
             <Label>Reference</Label>
           </TableColumnHeader>
         </TableHeaders>
@@ -12480,12 +12860,6 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>PolicyName</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
-                <PropertyName>Authority</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
-                <PropertyName>AssignmentType</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Reference</PropertyName>
@@ -14514,6 +14888,9 @@
             <Label>ServiceLevelThresholdResponseTimeInSecond</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedCallQueueHistoryId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ShiftsSchedulingGroupId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -14783,6 +15160,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ServiceLevelThresholdResponseTimeInSecond</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedCallQueueHistoryId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ShiftsSchedulingGroupId</PropertyName>

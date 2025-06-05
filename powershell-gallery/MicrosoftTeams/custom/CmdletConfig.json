@@ -659,6 +659,38 @@
         "Torus"
       ]
     },
+    "Get-CsPhoneNumberTag" : {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
+    "Set-CsPhoneNumberTag" : {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
+    "Remove-CsPhoneNumberTag" : {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
+    "Update-CsPhoneNumberTag" : {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
     "Export-CsAcquiredPhoneNumber": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
@@ -874,6 +906,15 @@
       ]
     },
     "Get-CsComplianceRecordingForCallQueueTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Get-CsSharedCallQueueHistoryTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -2435,6 +2476,15 @@
         "Torus"
       ]
     },
+    "New-CsSharedCallQueueHistoryTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "New-CsCloudCallDataConnection": {
       "CmdletType": "Remoting",
       "ModernCmdlet": "New-CsCloudCallDataConnectionModern",
@@ -2984,6 +3034,15 @@
       ]
     },
     "Remove-CsComplianceRecordingForCallQueueTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Remove-CsSharedCallQueueHistoryTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -3552,6 +3611,15 @@
       ]
     },
     "Set-CsComplianceRecordingForCallQueueTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Set-CsSharedCallQueueHistoryTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -4708,6 +4776,22 @@
       "ExportsTo": [
         "SelfHost",
         "Torus"
+      ]
+    },
+    "Get-CsPersonalAttendantSettings": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
+    "Set-CsPersonalAttendantSettings": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
       ]
     }
   }

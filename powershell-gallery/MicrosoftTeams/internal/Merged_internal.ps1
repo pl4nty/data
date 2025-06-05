@@ -4897,6 +4897,226 @@ end {
 
 <#
 .Synopsis
+Get all Shared Call Queue History Configs.
+GET /Teams.VoiceApps/shared-call-queue-history?<query_params>.
+.Description
+Get all Shared Call Queue History Configs.
+GET /Teams.VoiceApps/shared-call-queue-history?<query_params>.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSharedCallQueueHistoryResponse
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSharedCallQueueHistoryResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/get-cssharedcallqueuehistorytemplate
+#>
+function Get-CsSharedCallQueueHistoryTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSharedCallQueueHistoryResponse], [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSharedCallQueueHistoryResponse])]
+[CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
+param(
+    [Parameter(ParameterSetName='Get1', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # Shared Call Queue History Id.
+    ${Identity},
+
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Descending},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${ExcludeContent},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${First},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IncludeStatus},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${NameFilter},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${Skip},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${SortBy},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${TypeFilter},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedCallQueueHistoryTemplate_Get';
+            Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedCallQueueHistoryTemplate_Get1';
+            GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedCallQueueHistoryTemplate_GetViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
 Get Org Settings - Get-CsTeamsSettingsCustomApp
 .Description
 Get Org Settings - Get-CsTeamsSettingsCustomApp
@@ -9116,6 +9336,7 @@ BODY <ICreateCallQueueRequest>: CallQueue creation request DTO class.
   [PresenceAwareRouting <Boolean?>]: Gets or sets a value indicating whether to enable presence aware routing.
   [RoutingMethod <Int32?>]: Gets or sets the routing method for the  Call Queue.
   [ServiceLevelThresholdResponseTimeInSecond <Int32?>]: 
+  [SharedCallQueueHistoryId <String>]: Gets or sets the Shared Call Queue History template.
   [ShiftsSchedulingGroupId <String>]: Gets or sets the Shifts Scheduling Group to use as Call queues answer target.
   [ShiftsTeamId <String>]: Gets or sets the Shifts Team to use as Call queues answer target.
   [ShouldOverwriteCallableChannelProperty <Boolean?>]: Gets or sets ShouldOverwriteCallableChannelProperty flag that indicates user intention to whether overwirte the current callableChannel property value on chat service or not.
@@ -9547,6 +9768,12 @@ param(
     [System.Int32]
     # .
     ${ServiceLevelThresholdResponseTimeInSecond},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Call Queue History template.
+    ${SharedCallQueueHistoryTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -10623,35 +10850,61 @@ end {
 .Example
 {{ Add code here }}
 
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest
 .Outputs
 System.String
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ISkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest>: CmdletDirectRoutingNumberCreationRequest
+  [Description <String>]: 
+  [EndingNumber <String>]: 
+  [FileContent <String>]: 
+  [StartingNumber <String>]: 
+  [TelephoneNumber <String>]: 
 .Link
 https://docs.microsoft.com/en-us/powershell/module/teams/new-csonlinedirectroutingtelephonenumberuploadorder
 #>
 function New-CsOnlineDirectRoutingTelephoneNumberUploadOrder {
 [OutputType([System.String])]
-[CmdletBinding(DefaultParameterSetName='New', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest]
+    # CmdletDirectRoutingNumberCreationRequest
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
     ${EndingNumber},
 
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
     ${FileContent},
 
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
     ${StartingNumber},
 
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
     ${TelephoneNumber},
@@ -10706,6 +10959,7 @@ begin {
 
         $mapping = @{
             New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsOnlineDirectRoutingTelephoneNumberUploadOrder_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsOnlineDirectRoutingTelephoneNumberUploadOrder_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -11398,6 +11652,156 @@ begin {
 
         $mapping = @{
             New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSdgBulkSignInRequest_New';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Create shared call queue history template  POST /Teams.VoiceApps/shared-call-queue-history.
+.Description
+Create shared call queue history template  POST /Teams.VoiceApps/shared-call-queue-history.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedCallQueueHistoryRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedCallQueueHistoryResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateSharedCallQueueHistoryRequest>: Request model for creating a shared call queue history.
+  [AnsweredAndOutboundCall <Int32?>]: Gets or sets whether the shared call history for Answered and outbound calls is delivered to authorized users, authorized users and agents or none.
+  [Description <String>]: Gets or sets the description of the shared call queue history.
+  [IncomingMissedCall <Int32?>]: Gets or sets whether the shared call history for Incoming missed calls is delivered to authorized users, authorized users and agents or none.
+  [Name <String>]: Gets or sets the name of the shared call queue history.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-cssharedcallqueuehistorytemplate
+#>
+function New-CsSharedCallQueueHistoryTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedCallQueueHistoryResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedCallQueueHistoryRequest]
+    # Request model for creating a shared call queue history.
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets whether the shared call history for Answered and outbound calls is delivered to authorized users, authorized users and agents or none.
+    ${AnsweredAndOutboundCalls},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the shared call queue history.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets whether the shared call history for Incoming missed calls is delivered to authorized users, authorized users and agents or none.
+    ${IncomingMissedCalls},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the shared call queue history.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedCallQueueHistoryTemplate_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedCallQueueHistoryTemplate_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -17001,6 +17405,221 @@ end {
 
 <#
 .Synopsis
+Get all Shared Call Queue History Configs.
+GET /Teams.VoiceApps/shared-call-queue-history?<query_params>.
+.Description
+Get all Shared Call Queue History Configs.
+GET /Teams.VoiceApps/shared-call-queue-history?<query_params>.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSharedCallQueueHistoryResponse
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSharedCallQueueHistoryResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/get-cssharedcallqueuehistorytemplate
+#>
+function Get-CsSharedCallQueueHistoryTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSharedCallQueueHistoryResponse], [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSharedCallQueueHistoryResponse])]
+[CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
+param(
+    [Parameter(ParameterSetName='Get1', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # Shared Call Queue History Id.
+    ${Identity},
+
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Descending},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${ExcludeContent},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${First},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IncludeStatus},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${NameFilter},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${Skip},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${SortBy},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${TypeFilter},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedCallQueueHistoryTemplate_Get';
+            Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedCallQueueHistoryTemplate_Get1';
+            GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedCallQueueHistoryTemplate_GetViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
 Get Org Settings - Get-CsTeamsSettingsCustomApp
 .Description
 Get Org Settings - Get-CsTeamsSettingsCustomApp
@@ -21110,6 +21729,7 @@ BODY <ICreateCallQueueRequest>: CallQueue creation request DTO class.
   [PresenceAwareRouting <Boolean?>]: Gets or sets a value indicating whether to enable presence aware routing.
   [RoutingMethod <Int32?>]: Gets or sets the routing method for the  Call Queue.
   [ServiceLevelThresholdResponseTimeInSecond <Int32?>]: 
+  [SharedCallQueueHistoryId <String>]: Gets or sets the Shared Call Queue History template.
   [ShiftsSchedulingGroupId <String>]: Gets or sets the Shifts Scheduling Group to use as Call queues answer target.
   [ShiftsTeamId <String>]: Gets or sets the Shifts Team to use as Call queues answer target.
   [ShouldOverwriteCallableChannelProperty <Boolean?>]: Gets or sets ShouldOverwriteCallableChannelProperty flag that indicates user intention to whether overwirte the current callableChannel property value on chat service or not.
@@ -21541,6 +22161,12 @@ param(
     [System.Int32]
     # .
     ${ServiceLevelThresholdResponseTimeInSecond},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Call Queue History template.
+    ${SharedCallQueueHistoryTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -22587,35 +23213,61 @@ end {
 .Example
 {{ Add code here }}
 
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest
 .Outputs
 System.String
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ISkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest>: CmdletDirectRoutingNumberCreationRequest
+  [Description <String>]: 
+  [EndingNumber <String>]: 
+  [FileContent <String>]: 
+  [StartingNumber <String>]: 
+  [TelephoneNumber <String>]: 
 .Link
 https://docs.microsoft.com/en-us/powershell/module/teams/new-csonlinedirectroutingtelephonenumberuploadorder
 #>
 function New-CsOnlineDirectRoutingTelephoneNumberUploadOrder {
 [OutputType([System.String])]
-[CmdletBinding(DefaultParameterSetName='New', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest]
+    # CmdletDirectRoutingNumberCreationRequest
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
     ${EndingNumber},
 
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
     ${FileContent},
 
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
     ${StartingNumber},
 
-    [Parameter()]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
     ${TelephoneNumber},
@@ -22670,6 +23322,7 @@ begin {
 
         $mapping = @{
             New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsOnlineDirectRoutingTelephoneNumberUploadOrder_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsOnlineDirectRoutingTelephoneNumberUploadOrder_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -23342,6 +23995,151 @@ begin {
 
         $mapping = @{
             New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSdgBulkSignInRequest_New';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
+Create shared call queue history template  POST /Teams.VoiceApps/shared-call-queue-history.
+.Description
+Create shared call queue history template  POST /Teams.VoiceApps/shared-call-queue-history.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedCallQueueHistoryRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedCallQueueHistoryResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateSharedCallQueueHistoryRequest>: Request model for creating a shared call queue history.
+  [AnsweredAndOutboundCall <Int32?>]: Gets or sets whether the shared call history for Answered and outbound calls is delivered to authorized users, authorized users and agents or none.
+  [Description <String>]: Gets or sets the description of the shared call queue history.
+  [IncomingMissedCall <Int32?>]: Gets or sets whether the shared call history for Incoming missed calls is delivered to authorized users, authorized users and agents or none.
+  [Name <String>]: Gets or sets the name of the shared call queue history.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-cssharedcallqueuehistorytemplate
+#>
+function New-CsSharedCallQueueHistoryTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedCallQueueHistoryResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedCallQueueHistoryRequest]
+    # Request model for creating a shared call queue history.
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets whether the shared call history for Answered and outbound calls is delivered to authorized users, authorized users and agents or none.
+    ${AnsweredAndOutboundCalls},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the shared call queue history.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets whether the shared call history for Incoming missed calls is delivered to authorized users, authorized users and agents or none.
+    ${IncomingMissedCalls},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the shared call queue history.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedCallQueueHistoryTemplate_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedCallQueueHistoryTemplate_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -25909,6 +26707,170 @@ end {
 
 <#
 .Synopsis
+Delete Shared Call Queue History config.
+DELETE /Teams.VoiceApps/shared-call-queue-history/identity.
+.Description
+Delete Shared Call Queue History config.
+DELETE /Teams.VoiceApps/shared-call-queue-history/identity.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/remove-cssharedcallqueuehistorytemplate
+#>
+function Remove-CsSharedCallQueueHistoryTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord])]
+[CmdletBinding(DefaultParameterSetName='Remove', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Remove', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='RemoveViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Remove = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsSharedCallQueueHistoryTemplate_Remove';
+            RemoveViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsSharedCallQueueHistoryTemplate_RemoveViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
 Removes delegate in bvd
 .Description
 Removes delegate in bvd
@@ -27135,6 +28097,7 @@ BODY <IUpdateCallQueueRequest>: CallQueue modify request DTO class.
   [PresenceAwareRouting <Boolean?>]: Gets or sets a value indicating whether to enable presence aware routing.
   [RoutingMethod <Int32?>]: Gets or sets the routing method for the  Call Queue.
   [ServiceLevelThresholdResponseTimeInSecond <Int32?>]: 
+  [SharedCallQueueHistoryId <String>]: Gets or sets the Shared Call Queue History template.
   [ShiftsSchedulingGroupId <String>]: Gets or sets the Shifts Scheduling Group to use as Call queues answer target.
   [ShiftsTeamId <String>]: Gets or sets the Shifts Team to use as Call queues answer target.
   [ShouldOverwriteCallableChannelProperty <Boolean?>]: Gets or sets ShouldOverwriteCallableChannelProperty flag that indicates user intention to whether overwirte the current callableChannel property value on chat service or not.
@@ -27677,6 +28640,13 @@ param(
     [System.Int32]
     # .
     ${ServiceLevelThresholdResponseTimeInSecond},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Call Queue History template.
+    ${SharedCallQueueHistoryTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -30022,6 +30992,300 @@ end {
 
 <#
 .Synopsis
+Add/Update user personal attendant settings in uss
+.Description
+Add/Update user personal attendant settings in uss
+.Example
+
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IPersonalAttendantSettings
+.Outputs
+System.Boolean
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <IPersonalAttendantSettings>: .
+  [AllowInboundFederatedCalls <Boolean?>]: 
+  [AllowInboundInternalCalls <Boolean?>]: 
+  [AllowInboundPSTNCalls <Boolean?>]: 
+  [BookingCalendarId <String>]: 
+  [CalleeName <String>]: 
+  [DefaultLanguage <String>]: 
+  [DefaultTone <String>]: 
+  [DefaultVoice <String>]: 
+  [IsAutomaticRecordingEnabled <Boolean?>]: 
+  [IsAutomaticTranscriptionEnabled <Boolean?>]: 
+  [IsBookingCalendarEnabled <Boolean?>]: 
+  [IsCallScreeningEnabled <Boolean?>]: 
+  [IsNonContactCallbackEnabled <Boolean?>]: 
+  [IsPersonalAttendantEnabled <Boolean?>]: 
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/set-cspersonalattendantsettings
+#>
+function Set-CsPersonalAttendantSettings {
+[OutputType([System.Boolean])]
+[CmdletBinding(DefaultParameterSetName='SetExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Set', Mandatory)]
+    [Parameter(ParameterSetName='SetExpanded', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Set', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IPersonalAttendantSettings]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${AllowInboundFederatedCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${AllowInboundInternalCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${AllowInboundPSTNCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${BookingCalendarId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CalleeName},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultLanguage},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultTone},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultVoice},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsAutomaticRecordingEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsAutomaticTranscriptionEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsBookingCalendarEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsCallScreeningEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsNonContactCallbackEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsPersonalAttendantEnabled},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Returns true when the command succeeds
+    ${PassThru},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPersonalAttendantSettings_Set';
+            SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPersonalAttendantSettings_SetExpanded';
+            SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPersonalAttendantSettings_SetViaIdentity';
+            SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPersonalAttendantSettings_SetViaIdentityExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
 
 .Description
 
@@ -30137,6 +31401,226 @@ begin {
 
         $mapping = @{
             Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPhoneNumberAssignment_Set';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
+Update shared call queue history template.
+PUT /Teams.VoiceApps/shared-call-queue-history/identity.
+.Description
+Update shared call queue history template.
+PUT /Teams.VoiceApps/shared-call-queue-history/identity.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISharedCallQueueHistoryDtoModel
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSharedCallQueueHistoryResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ISharedCallQueueHistoryDtoModel>: .
+  [AnsweredAndOutboundCall <Int32?>]: Gets or sets whether the shared call history for Answered and outbound calls is delivered to authorized users, authorized users and agents or none.
+  [Description <String>]: Gets or sets the description of the shared call queue history.
+  [Id <String>]: Gets or sets the identifier of the shared call queue history.
+  [IncomingMissedCall <Int32?>]: Gets or sets whether the shared call history for Incoming missed calls is delivered to authorized users, authorized users and agents or none.
+  [Name <String>]: Gets or sets the name of the shared call queue history.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/set-cssharedcallqueuehistorytemplate
+#>
+function Set-CsSharedCallQueueHistoryTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSharedCallQueueHistoryResponse])]
+[CmdletBinding(DefaultParameterSetName='SetExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Set', Mandatory)]
+    [Parameter(ParameterSetName='SetExpanded', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # The identity of the shared call queue history configuration.
+    ${Identity},
+
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Set', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISharedCallQueueHistoryDtoModel]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets whether the shared call history for Answered and outbound calls is delivered to authorized users, authorized users and agents or none.
+    ${AnsweredAndOutboundCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the shared call queue history.
+    ${Description},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the identifier of the shared call queue history.
+    ${Id},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets whether the shared call history for Incoming missed calls is delivered to authorized users, authorized users and agents or none.
+    ${IncomingMissedCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the shared call queue history.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallQueueHistoryTemplate_Set';
+            SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallQueueHistoryTemplate_SetExpanded';
+            SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallQueueHistoryTemplate_SetViaIdentity';
+            SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallQueueHistoryTemplate_SetViaIdentityExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -33638,6 +35122,175 @@ end {
 
 <#
 .Synopsis
+Delete Shared Call Queue History config.
+DELETE /Teams.VoiceApps/shared-call-queue-history/identity.
+.Description
+Delete Shared Call Queue History config.
+DELETE /Teams.VoiceApps/shared-call-queue-history/identity.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/remove-cssharedcallqueuehistorytemplate
+#>
+function Remove-CsSharedCallQueueHistoryTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord])]
+[CmdletBinding(DefaultParameterSetName='Remove', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Remove', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='RemoveViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Remove = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsSharedCallQueueHistoryTemplate_Remove';
+            RemoveViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsSharedCallQueueHistoryTemplate_RemoveViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
 Removes delegate in bvd
 .Description
 Removes delegate in bvd
@@ -34884,6 +36537,7 @@ BODY <IUpdateCallQueueRequest>: CallQueue modify request DTO class.
   [PresenceAwareRouting <Boolean?>]: Gets or sets a value indicating whether to enable presence aware routing.
   [RoutingMethod <Int32?>]: Gets or sets the routing method for the  Call Queue.
   [ServiceLevelThresholdResponseTimeInSecond <Int32?>]: 
+  [SharedCallQueueHistoryId <String>]: Gets or sets the Shared Call Queue History template.
   [ShiftsSchedulingGroupId <String>]: Gets or sets the Shifts Scheduling Group to use as Call queues answer target.
   [ShiftsTeamId <String>]: Gets or sets the Shifts Team to use as Call queues answer target.
   [ShouldOverwriteCallableChannelProperty <Boolean?>]: Gets or sets ShouldOverwriteCallableChannelProperty flag that indicates user intention to whether overwirte the current callableChannel property value on chat service or not.
@@ -35426,6 +37080,13 @@ param(
     [System.Int32]
     # .
     ${ServiceLevelThresholdResponseTimeInSecond},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Call Queue History template.
+    ${SharedCallQueueHistoryTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -37821,6 +39482,305 @@ end {
 
 <#
 .Synopsis
+Add/Update user personal attendant settings in uss
+.Description
+Add/Update user personal attendant settings in uss
+.Example
+
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IPersonalAttendantSettings
+.Outputs
+System.Boolean
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <IPersonalAttendantSettings>: .
+  [AllowInboundFederatedCalls <Boolean?>]: 
+  [AllowInboundInternalCalls <Boolean?>]: 
+  [AllowInboundPSTNCalls <Boolean?>]: 
+  [BookingCalendarId <String>]: 
+  [CalleeName <String>]: 
+  [DefaultLanguage <String>]: 
+  [DefaultTone <String>]: 
+  [DefaultVoice <String>]: 
+  [IsAutomaticRecordingEnabled <Boolean?>]: 
+  [IsAutomaticTranscriptionEnabled <Boolean?>]: 
+  [IsBookingCalendarEnabled <Boolean?>]: 
+  [IsCallScreeningEnabled <Boolean?>]: 
+  [IsNonContactCallbackEnabled <Boolean?>]: 
+  [IsPersonalAttendantEnabled <Boolean?>]: 
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/set-cspersonalattendantsettings
+#>
+function Set-CsPersonalAttendantSettings {
+[OutputType([System.Boolean])]
+[CmdletBinding(DefaultParameterSetName='SetExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Set', Mandatory)]
+    [Parameter(ParameterSetName='SetExpanded', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Set', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IPersonalAttendantSettings]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${AllowInboundFederatedCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${AllowInboundInternalCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${AllowInboundPSTNCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${BookingCalendarId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CalleeName},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultLanguage},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultTone},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultVoice},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsAutomaticRecordingEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsAutomaticTranscriptionEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsBookingCalendarEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsCallScreeningEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsNonContactCallbackEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IsPersonalAttendantEnabled},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Returns true when the command succeeds
+    ${PassThru},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPersonalAttendantSettings_Set';
+            SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPersonalAttendantSettings_SetExpanded';
+            SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPersonalAttendantSettings_SetViaIdentity';
+            SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPersonalAttendantSettings_SetViaIdentityExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
 
 .Description
 
@@ -37936,6 +39896,231 @@ begin {
 
         $mapping = @{
             Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsPhoneNumberAssignment_Set';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Update shared call queue history template.
+PUT /Teams.VoiceApps/shared-call-queue-history/identity.
+.Description
+Update shared call queue history template.
+PUT /Teams.VoiceApps/shared-call-queue-history/identity.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISharedCallQueueHistoryDtoModel
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSharedCallQueueHistoryResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ISharedCallQueueHistoryDtoModel>: .
+  [AnsweredAndOutboundCall <Int32?>]: Gets or sets whether the shared call history for Answered and outbound calls is delivered to authorized users, authorized users and agents or none.
+  [Description <String>]: Gets or sets the description of the shared call queue history.
+  [Id <String>]: Gets or sets the identifier of the shared call queue history.
+  [IncomingMissedCall <Int32?>]: Gets or sets whether the shared call history for Incoming missed calls is delivered to authorized users, authorized users and agents or none.
+  [Name <String>]: Gets or sets the name of the shared call queue history.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/set-cssharedcallqueuehistorytemplate
+#>
+function Set-CsSharedCallQueueHistoryTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSharedCallQueueHistoryResponse])]
+[CmdletBinding(DefaultParameterSetName='SetExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Set', Mandatory)]
+    [Parameter(ParameterSetName='SetExpanded', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # The identity of the shared call queue history configuration.
+    ${Identity},
+
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Set', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISharedCallQueueHistoryDtoModel]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets whether the shared call history for Answered and outbound calls is delivered to authorized users, authorized users and agents or none.
+    ${AnsweredAndOutboundCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the shared call queue history.
+    ${Description},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the identifier of the shared call queue history.
+    ${Id},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets whether the shared call history for Incoming missed calls is delivered to authorized users, authorized users and agents or none.
+    ${IncomingMissedCalls},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the shared call queue history.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallQueueHistoryTemplate_Set';
+            SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallQueueHistoryTemplate_SetExpanded';
+            SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallQueueHistoryTemplate_SetViaIdentity';
+            SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallQueueHistoryTemplate_SetViaIdentityExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)

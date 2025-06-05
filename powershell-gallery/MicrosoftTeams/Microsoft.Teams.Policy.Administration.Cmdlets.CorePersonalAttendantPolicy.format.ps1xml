@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                <Configuration>
+                <ViewDefinitions>
+                    <View>
+                  <Name>TeamsPersonalAttendantPolicyView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.CorePersonalAttendantPolicy.TeamsPersonalAttendantPolicy</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PersonalAttendant</Label>
+                        <PropertyName>PersonalAttendant</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>CallScreening</Label>
+                        <PropertyName>CallScreening</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>CalendarBookings</Label>
+                        <PropertyName>CalendarBookings</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>InboundInternalCalls</Label>
+                        <PropertyName>InboundInternalCalls</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>InboundFederatedCalls</Label>
+                        <PropertyName>InboundFederatedCalls</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>InboundPSTNCalls</Label>
+                        <PropertyName>InboundPSTNCalls</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AutomaticTranscription</Label>
+                        <PropertyName>AutomaticTranscription</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AutomaticRecording</Label>
+                        <PropertyName>AutomaticRecording</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsPersonalAttendantValidationConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.CorePersonalAttendantPolicy.TeamsPersonalAttendantValidationConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PersonalAttendantPolicyValidationEnabled</Label>
+                        <PropertyName>PersonalAttendantPolicyValidationEnabled</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PersonalAttendantPolicyValidationUri</Label>
+                        <PropertyName>PersonalAttendantPolicyValidationUri</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+
+                </ViewDefinitions>
+                </Configuration>
+
+<!-- SIG # Begin signature block
+ -->
