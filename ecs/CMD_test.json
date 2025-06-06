@@ -221,6 +221,7 @@
         "EnableAgentStatusAutoRefreshByEnv": true,
         "EnableAgentStatusCheckBackendProcessorByEnv": true,
         "EnableAlertForwarderDataStream": true,
+        "EnableAlertServiceGeoMigration": true,
         "EnableAllowTenantAndForbidTenant": true,
         "EnableAnyColumnFilter": true,
         "EnableApplySSOForAADJInUX": true,
