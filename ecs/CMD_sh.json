@@ -988,7 +988,6 @@
         "SchedulerNeverSkipFraudCheck": true,
         "SchedulerUseDynamicLaneLimit": false,
         "SeahawkToWindowsAppMigrationPhase": 3,
-        "SendAllHostPools": true,
         "SendAmsActionHistoryToDenormalize": true,
         "SendIncrementVMAndHostPools": true,
         "SendLogsToGeneva": true,
