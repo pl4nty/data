@@ -617,7 +617,6 @@
                 "enableCrossCloudTelemetry": true,
                 "enableFilteringOwnedTeams": true,
                 "enableGetSharedChannelFromGetAllChannel": true,
-                "enableGuardiansAnnouncements": true,
                 "enableLicenseCheckForTeamsPremium": true,
                 "enableLicenseEnforcementForApps": true,
                 "enablePoPForOffice365ExchangeREST": true,
