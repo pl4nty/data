@@ -20,6 +20,12 @@ do
   -- DECOMPILER ERROR at PC27: Confused about usage of register: R2 in 'UnsetPending'
 
   local l_0_3 = (string.lower)(l_0_2)
+  if #l_0_3 > 450 then
+    return mp.CLEAN
+  end
+  if #l_0_3 < 50 then
+    return mp.CLEAN
+  end
   local l_0_4, l_0_5 = (bm.get_process_relationships)()
   for l_0_9,l_0_10 in ipairs(l_0_4) do
     if l_0_10.image_path ~= nil and (mp.bitand)(l_0_10.reason_ex, 1) == 1 and (string.lower)((string.sub)(l_0_10.image_path, -13)) == "\\explorer.exe" then
@@ -35,18 +41,18 @@ do
     local l_0_12 = l_0_3
     do
       local l_0_13 = {}
-      -- DECOMPILER ERROR at PC97: No list found for R7 , SetList fails
+      -- DECOMPILER ERROR at PC109: No list found for R7 , SetList fails
 
-      -- DECOMPILER ERROR at PC101: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC113: Overwrote pending register: R5 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC102: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC114: Overwrote pending register: R5 in 'AssignReg'
 
       if l_0_11 then
         return l_0_11
       end
-      -- DECOMPILER ERROR at PC104: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC116: Overwrote pending register: R5 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC105: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC117: Overwrote pending register: R5 in 'AssignReg'
 
       do return l_0_11 end
       -- WARNING: undefined locals caused missing assignments!

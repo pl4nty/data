@@ -27,7 +27,15 @@ do
   if StringEndsWith(l_0_1, ".exe") then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC62: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC61: Confused about usage of register: R1 in 'UnsetPending'
+
+  if checkFileLastWriteTime((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), 3600) ~= false then
+    return mp.CLEAN
+  end
+  if checkFileLastWriteTime(l_0_1, 3600) ~= false then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC80: Confused about usage of register: R1 in 'UnsetPending'
 
   if not (mp.IsKnownFriendlyFile)((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)())), true, true) then
     return mp.CLEAN
@@ -51,7 +59,7 @@ do
         do
           ;
           (bm.add_related_string)("PotentialSideLoad_info", safeJsonSerialize({dll_motw = l_0_6 or "", proc_motw = l_0_8 or "", dll_zone = l_0_14 or "", proc_zone = l_0_18 or "", procPath = l_0_2 or "", dllPath = l_0_1 or "", proc_refUrl = l_0_12 or "", dll_refUrl = l_0_10 or "", dll_friendly = (mp.IsKnownFriendlyFile)(l_0_1, true, false) or "" or "", exe_friendly = (mp.IsKnownFriendlyFile)(l_0_2, true, false) or "" or "", dll_motw_refer = l_0_3 or "", proc_motw_refer = l_0_4 or ""}), bm.RelatedStringBMReport)
-          -- DECOMPILER ERROR at PC203: Confused about usage of register: R18 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC221: Confused about usage of register: R18 in 'UnsetPending'
 
           ;
           (bm.trigger_sig)("PotentialSideLoad", tostring(safeJsonSerialize({dll_motw = l_0_6 or "", proc_motw = l_0_8 or "", dll_zone = l_0_14 or "", proc_zone = l_0_18 or "", procPath = l_0_2 or "", dllPath = l_0_1 or "", proc_refUrl = l_0_12 or "", dll_refUrl = l_0_10 or "", dll_friendly = (mp.IsKnownFriendlyFile)(l_0_1, true, false) or "" or "", exe_friendly = (mp.IsKnownFriendlyFile)(l_0_2, true, false) or "" or "", dll_motw_refer = l_0_3 or "", proc_motw_refer = l_0_4 or ""})))
@@ -61,7 +69,7 @@ do
             (bm.add_related_file)(l_0_1)
           end
           do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC224: freeLocal<0 in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC242: freeLocal<0 in 'ReleaseLocals'
 
         end
       end
