@@ -9,10 +9,14 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
   if not l_0_1 then
     return mp.CLEAN
   end
+  local l_0_2 = GetRollingQueueAsHashTable("ExtendedDeviceProperties")
+  if l_0_2 then
+    (bm.add_related_string)("DeviceInfo", safeJsonSerialize(l_0_2), bm.RelatedStringBMReport)
+  end
   ;
   (bm.add_related_string)("AdditionalInfo", l_0_0, bm.RelatedStringBMReport)
   if l_0_1.Score and l_0_1.Score > 30 then
-    local l_0_2 = function()
+    local l_0_3 = function()
   -- function num : 0_0
   local l_1_0 = 0
   local l_1_1 = GetRollingQueue("RecentThreatsOnMachine")
@@ -65,58 +69,58 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
   end
 end
 
-    local l_0_3, l_0_4 = l_0_2()
+    local l_0_4, l_0_5 = l_0_3()
     ;
-    (bm.add_related_string)("RecentDetections", safeJsonSerialize(l_0_3), bm.RelatedStringBMReport)
+    (bm.add_related_string)("RecentDetections", safeJsonSerialize(l_0_4), bm.RelatedStringBMReport)
     ;
-    (bm.add_related_string)("RecentDetections_Score", l_0_4, bm.RelatedStringBMReport)
+    (bm.add_related_string)("RecentDetections_Score", l_0_5, bm.RelatedStringBMReport)
   end
   do
-    local l_0_5 = (bm.get_current_process_startup_info)()
-    if l_0_5 then
-      add_related_anomalydetections(l_0_5.ppid)
-    end
-    local l_0_6 = add_parents_mp()
+    local l_0_6 = (bm.get_current_process_startup_info)()
     if l_0_6 then
-      (bm.add_related_string)("ParentsInfo", safeJsonSerialize(l_0_6), bm.RelatedStringBMReport)
+      add_related_anomalydetections(l_0_6.ppid)
     end
-    reportRelevantUntrustedEntitiesForPid(l_0_5.ppid)
-    local l_0_7 = l_0_1.Reason
-    if l_0_7 and type(l_0_7) == "table" then
-      for l_0_11,l_0_12 in pairs(l_0_7) do
-        if (string.find)(l_0_11, "SuspDownload", 1, true) then
-          local l_0_13 = l_0_12.CmdGradingInfo
-          if l_0_13 and l_0_13.Evidence_L1 then
-            local l_0_14 = (l_0_13.Evidence_L1).Urls
-            for l_0_18,l_0_19 in pairs(l_0_14) do
-              if l_0_19.BadUrlRep then
+    local l_0_7 = add_parents_mp()
+    if l_0_7 then
+      (bm.add_related_string)("ParentsInfo", safeJsonSerialize(l_0_7), bm.RelatedStringBMReport)
+    end
+    reportRelevantUntrustedEntitiesForPid(l_0_6.ppid)
+    local l_0_8 = l_0_1.Reason
+    if l_0_8 and type(l_0_8) == "table" then
+      for l_0_12,l_0_13 in pairs(l_0_8) do
+        if (string.find)(l_0_12, "SuspDownload", 1, true) then
+          local l_0_14 = l_0_13.CmdGradingInfo
+          if l_0_14 and l_0_14.Evidence_L1 then
+            local l_0_15 = (l_0_14.Evidence_L1).Urls
+            for l_0_19,l_0_20 in pairs(l_0_15) do
+              if l_0_20.BadUrlRep then
                 do
-                  local l_0_20 = {}
-                  l_0_20.Remediation_Reason = "BadUrlRep"
-                  l_0_20.Evidence = l_0_0
+                  local l_0_21 = {}
+                  l_0_21.Remediation_Reason = "BadUrlRep"
+                  l_0_21.Evidence = l_0_0
                   ;
-                  (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_20))
+                  (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_21))
                   do break end
-                  if l_0_19.Url_Score >= 30 then
+                  if l_0_20.Url_Score >= 30 then
                     do
                       do
-                        local l_0_21 = {}
-                        l_0_21.Remediation_Reason = "HighScoreUrl"
-                        l_0_21.Evidence = l_0_0
+                        local l_0_22 = {}
+                        l_0_22.Remediation_Reason = "HighScoreUrl"
+                        l_0_22.Evidence = l_0_0
                         ;
-                        (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_21))
+                        (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_22))
                         do break end
-                        -- DECOMPILER ERROR at PC138: LeaveBlock: unexpected jumping out DO_STMT
+                        -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out DO_STMT
 
-                        -- DECOMPILER ERROR at PC138: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                        -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                        -- DECOMPILER ERROR at PC138: LeaveBlock: unexpected jumping out IF_STMT
+                        -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
 
-                        -- DECOMPILER ERROR at PC138: LeaveBlock: unexpected jumping out DO_STMT
+                        -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out DO_STMT
 
-                        -- DECOMPILER ERROR at PC138: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                        -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                        -- DECOMPILER ERROR at PC138: LeaveBlock: unexpected jumping out IF_STMT
+                        -- DECOMPILER ERROR at PC152: LeaveBlock: unexpected jumping out IF_STMT
 
                       end
                     end
@@ -127,40 +131,40 @@ end
           end
         else
           do
-            if (string.find)(l_0_11, "Base64Cmd_child", 1, true) then
-              local l_0_22 = l_0_12.Base64GradingInfo
-              for l_0_26 = 1, 3 do
-                if l_0_22 and l_0_22["Evidence_L" .. l_0_26] then
-                  local l_0_27 = (l_0_22["Evidence_L" .. l_0_26]).Urls
-                  for l_0_31,l_0_32 in pairs(l_0_27) do
-                    if l_0_32.BadUrlRep then
+            if (string.find)(l_0_12, "Base64Cmd_child", 1, true) then
+              local l_0_23 = l_0_13.Base64GradingInfo
+              for l_0_27 = 1, 3 do
+                if l_0_23 and l_0_23["Evidence_L" .. l_0_27] then
+                  local l_0_28 = (l_0_23["Evidence_L" .. l_0_27]).Urls
+                  for l_0_32,l_0_33 in pairs(l_0_28) do
+                    if l_0_33.BadUrlRep then
                       do
-                        local l_0_33 = {}
-                        l_0_33.Remediation_Reason = "BadUrlRep"
-                        l_0_33.Evidence = l_0_0
+                        local l_0_34 = {}
+                        l_0_34.Remediation_Reason = "BadUrlRep"
+                        l_0_34.Evidence = l_0_0
                         ;
-                        (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_33))
+                        (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_34))
                         do break end
-                        if l_0_32.Url_Score >= 30 then
+                        if l_0_33.Url_Score >= 30 then
                           do
                             do
-                              local l_0_34 = {}
-                              l_0_34.Remediation_Reason = "HighScoreUrl"
-                              l_0_34.Evidence = l_0_0
+                              local l_0_35 = {}
+                              l_0_35.Remediation_Reason = "HighScoreUrl"
+                              l_0_35.Evidence = l_0_0
                               ;
-                              (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_34))
+                              (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_35))
                               do break end
-                              -- DECOMPILER ERROR at PC200: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC200: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC200: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC200: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC200: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC200: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out IF_STMT
 
                             end
                           end
@@ -170,14 +174,14 @@ end
                   end
                 end
               end
-              -- DECOMPILER ERROR at PC203: Confused about usage of register R11 for local variables in 'ReleaseLocals'
+              -- DECOMPILER ERROR at PC217: Confused about usage of register R12 for local variables in 'ReleaseLocals'
 
             end
-            -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out DO_STMT
+            -- DECOMPILER ERROR at PC217: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+            -- DECOMPILER ERROR at PC217: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-            -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC217: LeaveBlock: unexpected jumping out IF_STMT
 
           end
         end

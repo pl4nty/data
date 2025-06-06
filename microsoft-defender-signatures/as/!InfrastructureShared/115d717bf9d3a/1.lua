@@ -42,6 +42,8 @@ end
 local l_0_14 = (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern")
 if l_0_14 and #l_0_14 > 0 then
   (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded")
+  ;
+  (MpCommon.BmTriggerSig)(l_0_2.ppid, "HighlySuspCmd_Pattern", safeJsonSerialize(l_0_12))
 end
 if not l_0_12 or l_0_12.Score == 0 then
   return mp.CLEAN
@@ -120,11 +122,11 @@ if l_0_12.Score > 30 then
                     l_0_1.Concrete = true
                     return mp.CLEAN
                   end
-                  -- DECOMPILER ERROR at PC335: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC343: LeaveBlock: unexpected jumping out DO_STMT
 
-                  -- DECOMPILER ERROR at PC335: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC343: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC335: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC343: LeaveBlock: unexpected jumping out IF_STMT
 
                 end
               end

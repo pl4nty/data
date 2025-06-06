@@ -1,11 +1,8 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\6dd765cdc16e\1.luac 
+-- Command line: lua\!InfrastructureShared\5edd761352cfc\1.luac 
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
-  return mp.CLEAN
-end
 local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 == nil or l_0_0.image_path == nil then
   return mp.CLEAN
@@ -26,8 +23,23 @@ l_0_3 = (string.lower)(l_0_3)
 if #l_0_3 < 50 then
   return mp.CLEAN
 end
-if (MpCommon.StringRegExpSearch)("(?i)[^\\w\\d\\s]w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3) then
-  return mp.INFECTED
+do
+  if contains(l_0_3, "powershell") then
+    local l_0_5, l_0_6 = (MpCommon.StringRegExpSearch)("(?i)[^\\w\\d\\s]w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3)
+    if l_0_5 then
+      return mp.INFECTED
+    end
+  end
+  local l_0_4 = contains
+  local l_0_7 = l_0_3
+  l_0_4 = l_0_4(l_0_7, {"mshta", "curl", "conhost"})
+  if l_0_4 then
+    l_0_4 = mp
+    l_0_4 = l_0_4.INFECTED
+    return l_0_4
+  end
+  l_0_4 = mp
+  l_0_4 = l_0_4.CLEAN
+  return l_0_4
 end
-return mp.CLEAN
 
