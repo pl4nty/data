@@ -1121,6 +1121,31 @@
         "usage": true,
         "user": true,
         "windows365client": {
+            "App": {
+                "Updater": {
+                    "arm": {
+                        "Release": {
+                            "hash": "705EAE5EB6DC29299EC2876E4371D17E826A84FFA880FA8C847BBDCC2307C4642ED91D74F24A2884D653FCE8C7FE3669866CA82409C2F7C45FB7DB1F13AB2105",
+                            "url": "https://res.cdn.office.net/remote-desktop-windows-client/c17cc2c0-9395-459e-be00-99d32a6bc40d/WindowsApp_arm64_Release_2.0.552.0.msix",
+                            "version": "2.0.552.0"
+                        }
+                    },
+                    "x64": {
+                        "Release": {
+                            "hash": "18819EC648A5F8D189C0ADDDED8AE298663C43F61DBE2D916899C2ED4A8E2C12B7A9F75EDA15B2A206128E90EDFB9EE11D5A5D8DE5571DF4488A33834D439B0A",
+                            "url": "https://res.cdn.office.net/remote-desktop-windows-client/e9f4509a-08b5-45b5-9cac-2d9b60f27e92/WindowsApp_x64_Release_2.0.552.0.msix",
+                            "version": "2.0.552.0"
+                        }
+                    },
+                    "x86": {
+                        "Release": {
+                            "hash": "B01F6E06766179D88D506CE62E9D43744E411A9F0D6AEE7E043187FAAE8A7BC0F455BC88B58CC05C93000DDCCB1A8E45CC009052370CD6FFC62658050A645EA3",
+                            "url": "https://res.cdn.office.net/remote-desktop-windows-client/1b1e9f9e-6ece-4937-b387-4fe9ce3239d3/WindowsApp_x86_Release_2.0.552.0.msix",
+                            "version": "2.0.552.0"
+                        }
+                    }
+                }
+            },
             "GUI": {
                 "EnableBootKillMsrdcOnResumeFromSleepLock": true,
                 "EnableBootToCloudReturnToLocal": true,

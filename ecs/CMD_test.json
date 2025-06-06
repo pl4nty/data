@@ -117,7 +117,6 @@
         "DisableReuseCmkStrategy": true,
         "DisableReuseVnetStrategy": true,
         "DisableSupportDataDisk": true,
-        "Disable_Menu_Items": true,
         "Disable_Menu_Items_UserAlloc": true,
         "DoAntiFraudCheckAfterActionTypeChange": true,
         "DoNotCreateHostPoolForDbPerfIssue": true,

@@ -472,6 +472,7 @@
         "EnableSplitSignalPropagationForUserActions": true,
         "EnableSuggestedWorkingHoursInsightRetriever": true,
         "EnableTeamsLicenseCheck": true,
+        "EnableUserPreferenceV2": true,
         "EnableVNextQuery": false,
         "EnableVivaSkillsDataExportProvider": true,
         "EnableVivaSkillsInLPE": true,
