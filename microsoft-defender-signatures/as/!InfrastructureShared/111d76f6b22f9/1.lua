@@ -38,26 +38,21 @@ end
 if not l_0_4 then
   return l_0_4
 end
--- DECOMPILER ERROR at PC55: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC56: Overwrote pending register: R5 in 'AssignReg'
 
--- DECOMPILER ERROR at PC56: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC58: Overwrote pending register: R7 in 'AssignReg'
 
--- DECOMPILER ERROR at PC60: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC59: Overwrote pending register: R8 in 'AssignReg'
 
--- DECOMPILER ERROR at PC63: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC72: Overwrote pending register: R5 in 'AssignReg'
 
--- DECOMPILER ERROR at PC64: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC67: Overwrote pending register: R7 in 'AssignReg'
-
--- DECOMPILER ERROR at PC68: Overwrote pending register: R8 in 'AssignReg'
-
-if l_0_4 ~= nil and l_0_5 ~= nil and l_0_5:match("cmd.exe") == "explorer.exe" then
-  return mp.INFECTED
+l_0_5 = l_0_5(l_0_1, l_0_4)
+if not l_0_5 then
+  l_0_5 = mp
+  l_0_5 = l_0_5.CLEAN
+  return l_0_5
 end
--- DECOMPILER ERROR at PC75: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC76: Overwrote pending register: R5 in 'AssignReg'
-
+l_0_5 = mp
+l_0_5 = l_0_5.INFECTED
 return l_0_5
 

@@ -19,7 +19,15 @@ do
     end
   end
   do
-    return mp.CLEAN
+    l_0_2 = (mp.enum_mpattributesubstring)("Detection:")
+    if #l_0_2 > 0 then
+      for l_0_16,l_0_17 in ipairs(l_0_2) do
+        AppendToRollingQueue("RecentThreatsOnMachine", l_0_17, 5, 1800, 100)
+      end
+    end
+    do
+      return mp.CLEAN
+    end
   end
 end
 

@@ -17,16 +17,17 @@ local l_0_5, l_0_6 = (string.match)(l_0_1, "(%d+) .-injectrunning (.+)$")
 if isnull(l_0_6) or isnull(l_0_3) or isnull(l_0_5) or l_0_3 ~= l_0_5 then
   return mp.CLEAN
 end
-if not isnull(((bm.get_current_process_startup_info)()).ppid) then
-  TrackPidAndTechniqueBM(((bm.get_current_process_startup_info)()).ppid, "T1055.001", "processinjection")
+local l_0_7 = ((bm.get_current_process_startup_info)()).ppid
+if not isnull(l_0_7) then
+  TrackPidAndTechniqueBM(l_0_7, "T1055.001", "processinjection")
 end
-local l_0_7 = (string.format)("pid:%d,ProcessStart:%d", l_0_3, l_0_4)
-TrackPidAndTechniqueBM(l_0_7, "T1055.001", "processinjection_target")
+local l_0_8 = (string.format)("pid:%d,ProcessStart:%d", l_0_3, l_0_4)
+TrackPidAndTechniqueBM(l_0_8, "T1055.001", "processinjection_target")
 ;
-(bm.add_related_process)(l_0_7)
-local l_0_8, l_0_9 = pcall(mp.GetExecutablesFromCommandLine, l_0_6)
-if l_0_8 and not isnull(l_0_9[1]) then
-  (bm.add_related_file)(l_0_9[1])
+(bm.add_related_process)(l_0_8)
+local l_0_9, l_0_10 = pcall(mp.GetExecutablesFromCommandLine, l_0_6)
+if l_0_9 and not isnull(l_0_10[1]) then
+  (bm.add_related_file)(l_0_10[1])
 else
   ;
   (bm.add_related_string)("T1055.001_InjectedDLL_ErrorScanning", l_0_6, bm.RelatedStringBMReport)

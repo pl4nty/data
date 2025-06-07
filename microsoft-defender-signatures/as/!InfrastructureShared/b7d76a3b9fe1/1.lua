@@ -15,8 +15,5 @@ l_0_1 = (string.lower)(l_0_1)
 if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
   return mp.CLEAN
 end
-if isIEXfound(l_0_1) then
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 
