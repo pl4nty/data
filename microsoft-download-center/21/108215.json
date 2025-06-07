@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft SharePoint Enterprise Server 2016 (KB5002731)",
+    "downloadDescription": "A security vulnerability exists in Microsoft SharePoint Enterprise Server 2016 that could allow arbitrary code to run when a maliciously modified file is opened. This update resolves that vulnerability.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "wssloc2016-kb5002731-fullfile-x64-glb.exe",
+            "url": "https://download.microsoft.com/download/aeaa67b7-b5d3-4b39-8015-ba584cdbd115/wssloc2016-kb5002731-fullfile-x64-glb.exe",
+            "size": "603344368",
+            "version": "1.0",
+            "datePublished": "5/23/2025 9:38:31 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can get specific information about this update in the Microsoft Knowledge Base article <a href=\"https://support.microsoft.com/kb/5002731\">Security Update for Microsoft SharePoint Enterprise Server 2016 (KB5002731) </a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5002731",
+        "name": "5002731"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/5002731",
+        "name": "5002731"
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "wssloc2016-kb5002731-fullfile-x64-glb.exe"
+    ],
+    "detailsSection_file_size": [
+        "575.4 MB"
+    ],
+    "detailsSection_file_date": "5/23/2025",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<br /> To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>. <ul> <li>Click <b>Run</b> to start the installation immediately.</li> <li>Click <b>Save</b> to copy the download to your computer for installation at a later time</li> </ul> <br /> <br /> <b>IT professional resources</b><br /> IT professional working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"https://technet.microsoft.com/en-us/office/desktop/default.aspx\">Microsoft Office Desktop Applications TechCenter</a>. Command line instructions can be found in Knowledge Base article <a href=\"https://support.microsoft.com/kb/912203\">Command line switches for Microsoft Self-Extractor packages (KB912203)</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108215",
+    "downloadPreload": true
+}
