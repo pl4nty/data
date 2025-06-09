@@ -359,7 +359,6 @@
         "EnableOMSAPIInvalidParameterCatch": true,
         "EnableOSVersionNumber": true,
         "EnableOnFailureDeviceAccessDeniedInAutopilot": true,
-        "EnableOptimizeFidalgoPoolsGet": true,
         "EnableOptimizePolicyDuplicateNameCheck": true,
         "EnableOptionalDRNameOnUnavaiableReport": true,
         "EnableOutOfServiceReportUX": true,
