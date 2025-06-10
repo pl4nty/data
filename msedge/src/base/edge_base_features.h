@@ -55,11 +55,6 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kEndpointDlpCopyPrintSaveAs);
 BASE_EXPORT BASE_DECLARE_FEATURE(kEndpointDlpTestBlock);
 BASE_EXPORT BASE_DECLARE_FEATURE(kEndpointDlpTestWarn);
 
-#if BUILDFLAG(IS_ANDROID)
-// If enabled, will enable PartialLowEndMode on 2GB and 3GB android devices
-BASE_EXPORT BASE_DECLARE_FEATURE(kPartialLowEndModeOn2GbOr3GbDevices);
-#endif  // BUILDFLAG(IS_ANDROID)
-
 // Test only: used to override the platform test disable status.
 BASE_EXPORT BASE_DECLARE_FEATURE(kOverridePlatformTestDisable);
 

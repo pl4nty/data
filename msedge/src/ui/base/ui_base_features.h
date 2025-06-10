@@ -145,6 +145,9 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kOverrideDefaultOzonePlatformHintToAuto);
 #endif  // BUILDFLAG(IS_LINUX)
 
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kXInput2KeyEvents);
+
 // Indicates whether DrmOverlayManager should used the synchronous API to
 // perform pageflip tests.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -254,6 +257,11 @@ BASE_DECLARE_FEATURE(kAsyncFullscreenWindowState);
 // https://chromestatus.com/feature/5085102657503232
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kClipboardChangeEvent);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEnablePixelCanvasRecording);
+
+bool COMPONENT_EXPORT(UI_BASE_FEATURES) IsPixelCanvasRecordingEnabled();
 
 }  // namespace features
 

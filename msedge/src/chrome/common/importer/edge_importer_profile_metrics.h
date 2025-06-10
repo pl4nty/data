@@ -5,7 +5,7 @@
 #ifndef CHROME_COMMON_IMPORTER_EDGE_IMPORTER_PROFILE_METRICS_H_
 #define CHROME_COMMON_IMPORTER_EDGE_IMPORTER_PROFILE_METRICS_H_
 
-#include "chrome/common/importer/importer_data_types.h"
+#include "components/user_data_importer/common/importer_data_types.h"
 
 #if BUILDFLAG(IS_WIN)
 namespace edge_import {
@@ -331,18 +331,19 @@ enum class ImportedDataSharingFailureReason {
 };
 
 namespace metrics {
-const char* GetImportTargetType(importer::ImporterType source_type);
+const char* GetImportTargetType(user_data_importer::ImporterType source_type);
 
-const char* GetImportDataType(importer::ImportItem item);
+const char* GetImportDataType(user_data_importer::ImportItem item);
 
 std::string GetHistogramWithSuffix(std::string_view base_histogram,
                                    std::string_view suffix);
 
 // Logs overall success of profile import in terms of ratio of
 // what all has been selected and how many passed!
-void LogImporterProfileSuccessMetric(ImportType import_type,
-                                     importer::ImporterType source_type,
-                                     double profile_import_ratio);
+void LogImporterProfileSuccessMetric(
+    ImportType import_type,
+    user_data_importer::ImporterType source_type,
+    double profile_import_ratio);
 
 // Logs status of local state file read!
 void LogImporterLocalStateReadMetric(std::string_view method,
@@ -358,28 +359,30 @@ void LogImporterInitializeEnvironmentMetric(
     ImporterEnvironmentInitialize error);
 
 // Logs status of decryption of imported data
-void LogImporterDecryptDataMetric(importer::ImportItem item,
+void LogImporterDecryptDataMetric(user_data_importer::ImportItem item,
                                   ImporterDecryptDataStatus error);
 
 // Logs perf of overall import. This only captures the start of import
 // and when user is unblocked. DB layer could still be in process of writing.
 void LogImporterProfilePerfMetric(ImportType import_type,
-                                  importer::ImporterType source_type,
+                                  user_data_importer::ImporterType source_type,
                                   base::TimeTicks start_time);
 
 // Logs success of individual data item import.
-void LogImporterProfileDataTypeSuccessMetric(ImportType import_type,
-                                             importer::ImporterType source_type,
-                                             importer::ImportItem item,
-                                             bool succeeded);
+void LogImporterProfileDataTypeSuccessMetric(
+    ImportType import_type,
+    user_data_importer::ImporterType source_type,
+    user_data_importer::ImportItem item,
+    bool succeeded);
 
 // Logs perf of individual data item import. This only captures time between
 // start of import and when data is handed over to DB layer to be written
 // on different thread.
-void LogImporterProfileDataTypePerfMetric(ImportType import_type,
-                                          importer::ImporterType source_type,
-                                          importer::ImportItem item,
-                                          base::TimeDelta run_time);
+void LogImporterProfileDataTypePerfMetric(
+    ImportType import_type,
+    user_data_importer::ImporterType source_type,
+    user_data_importer::ImportItem item,
+    base::TimeDelta run_time);
 
 // Logs perf of Edge import to open database amd parse data.
 void LogEdgeHistoryImportPerfMetric(bool is_open_db_perf,
@@ -390,11 +393,11 @@ void LogEdgeHistoryImportPerfMetric(bool is_open_db_perf,
 void LogEdgeDownloadHistoryImportPerfMetric(const base::TimeDelta& run_time);
 
 // Logs the ImportErrorState enum to log errors in data import.
-void LogImporterErrorMetric(importer::ImporterType source_type,
-                            importer::ImportItem item,
+void LogImporterErrorMetric(user_data_importer::ImporterType source_type,
+                            user_data_importer::ImportItem item,
                             ImportErrorState error);
 
-void LogImporterErrorMetric(importer::ImporterType source_type,
+void LogImporterErrorMetric(user_data_importer::ImporterType source_type,
                             ImportErrorState error);
 
 // Returns suffix based on import type
@@ -404,15 +407,15 @@ const char* GetImportTypeSuffix(ImportType import_type);
 void LogSpartanStartPageConfiguration(StartPageType start_page);
 
 // Logs count metrics for import of data types from importer process
-void LogImportDetailCountImporter(importer::ImporterType source_type,
-                                  importer::ImportItem item,
+void LogImportDetailCountImporter(user_data_importer::ImporterType source_type,
+                                  user_data_importer::ImportItem item,
                                   int discovered_count,
                                   int extraction_count,
                                   int extraction_error_count);
 
 // Logs count metrics for import of data types from browser process
-void LogImportDetailCountBrowser(importer::ImporterType source_type,
-                                 importer::ImportItem item,
+void LogImportDetailCountBrowser(user_data_importer::ImporterType source_type,
+                                 user_data_importer::ImportItem item,
                                  int insertion_count,
                                  int merge_count,
                                  int insertion_error_count,
@@ -421,8 +424,8 @@ void LogImportDetailCountBrowser(importer::ImporterType source_type,
 // Logs count metrics for update operation via import of data types from
 // browser process
 void LogUpdateOperationViaImportDetailCountBrowser(
-    importer::ImporterType source_type,
-    importer::ImportItem item,
+    user_data_importer::ImporterType source_type,
+    user_data_importer::ImportItem item,
     int update_count,
     int update_merge_count,
     int updation_error_count,
@@ -430,26 +433,27 @@ void LogUpdateOperationViaImportDetailCountBrowser(
     bool is_merged);
 
 // Logs count metrics for import of data types
-void LogImportDetailCountWithItemName(importer::ImporterType source_type,
-                                      const std::string& import_item_name,
-                                      importer::ImportDetailType count_type,
-                                      int count);
+void LogImportDetailCountWithItemName(
+    user_data_importer::ImporterType source_type,
+    const std::string& import_item_name,
+    user_data_importer::ImportDetailType count_type,
+    int count);
 
 // Logs count metrics for import of data types
-void LogImportDetailCount(importer::ImporterType source_type,
-                          importer::ImportItem item,
-                          importer::ImportDetailType count_type,
+void LogImportDetailCount(user_data_importer::ImporterType source_type,
+                          user_data_importer::ImportItem item,
+                          user_data_importer::ImportDetailType count_type,
                           int count);
 
 // Log ratio metrics for import of data types from importer process
-void LogImportDetailRatioImporter(importer::ImporterType source_type,
-                                  importer::ImportItem item,
+void LogImportDetailRatioImporter(user_data_importer::ImporterType source_type,
+                                  user_data_importer::ImportItem item,
                                   int extraction_ratio,
                                   int extraction_error_ratio);
 
 // Log ratio metrics for import of data types from browser process
-void LogImportDetailRatioBrowser(importer::ImporterType source_type,
-                                 importer::ImportItem item,
+void LogImportDetailRatioBrowser(user_data_importer::ImporterType source_type,
+                                 user_data_importer::ImportItem item,
                                  int insertion_ratio,
                                  int merge_ratio,
                                  int insertion_error_ratio,
@@ -458,8 +462,8 @@ void LogImportDetailRatioBrowser(importer::ImporterType source_type,
 // Log ratio metrics for update operation via import of data types from
 // browser process
 void LogUpdateOperationViaImportDetailRatioBrowser(
-    importer::ImporterType source_type,
-    importer::ImportItem item,
+    user_data_importer::ImporterType source_type,
+    user_data_importer::ImportItem item,
     int updation_ratio,
     int update_merge_ratio,
     int updation_error_ratio,
@@ -467,17 +471,18 @@ void LogUpdateOperationViaImportDetailRatioBrowser(
     bool is_merged);
 
 // Log ratio metrics for import of data types
-void LogImportDetailRatio(importer::ImporterType source_type,
-                          importer::ImportItem item,
-                          importer::ImportDetailType ratio_suffix_type,
-                          int percentage);
+void LogImportDetailRatio(
+    user_data_importer::ImporterType source_type,
+    user_data_importer::ImportItem item,
+    user_data_importer::ImportDetailType ratio_suffix_type,
+    int percentage);
 
 // Log import counts and ratios related histograms for an import item
 // depending on the import operation type, i.e. ADD/UPDATE/REMOVE(to be
 // implemented in future)
 void AddHistogramsForImport(edge_continuous_migration::OperationType operation,
-                            importer::ImporterType importer_type,
-                            importer::ImportItem import_item_type,
+                            user_data_importer::ImporterType importer_type,
+                            user_data_importer::ImportItem import_item_type,
                             int total_count,
                             int success_count,
                             int merge_count,
@@ -487,34 +492,36 @@ void AddHistogramsForImport(edge_continuous_migration::OperationType operation,
 
 #if BUILDFLAG(IS_WIN)
 // JetErrors are negative numbers. This method logs the exact error code.
-void LogSpartanOpenDatabaseError(importer::ImportItem item, long error);
+void LogSpartanOpenDatabaseError(user_data_importer::ImportItem item,
+                                 long error);
 
-void LogCopyFileError(importer::ImporterType type,
+void LogCopyFileError(user_data_importer::ImporterType type,
                       edge_import::CopyErrorType error);
 
 // Log errors for firefox password import during NSS
-void LogFirefoxNSSError(importer::NSSLocation nssLocation,
-                        importer::NSSBinary binaryName,
-                        importer::NSSFailCase failureCase,
+void LogFirefoxNSSError(user_data_importer::NSSLocation nssLocation,
+                        user_data_importer::NSSBinary binaryName,
+                        user_data_importer::NSSFailCase failureCase,
                         long error);
 
 void LogVaultApiReadError(long error_code);
 
 void LogVaultReadErrorCount(int error_count);
 
-void LogCopyFileErrorCode(importer::ImporterType source_type,
-                          importer::ImportItem item,
+void LogCopyFileErrorCode(user_data_importer::ImporterType source_type,
+                          user_data_importer::ImportItem item,
                           long error_code);
 
-void LogCopyFileErrorSize(importer::ImporterType source_type,
-                          importer::ImportItem item,
+void LogCopyFileErrorSize(user_data_importer::ImporterType source_type,
+                          user_data_importer::ImportItem item,
                           int64_t file_size);
 #endif
 
 // Log pref states for imported bool prefs
-void LogImportedBoolPrefValueMetric(importer::ImporterType source_type,
-                                    ImportedPref pref_name,
-                                    bool pref_value);
+void LogImportedBoolPrefValueMetric(
+    user_data_importer::ImporterType source_type,
+    ImportedPref pref_name,
+    bool pref_value);
 
 void LogChromeTakeoutFileParseStatus(ChromeTakeoutFileParseStatus status);
 

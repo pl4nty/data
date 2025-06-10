@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1664917,
-    "file_count": 163
+    "size": 2083218,
+    "file_count": 179
   },
   {
     "name": "accessibility_test_framework",
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14603039,
+    "size": 14612139,
     "file_count": 830
   },
   {
@@ -76,17 +76,17 @@
   },
   {
     "name": "blink",
-    "size": 32107495,
-    "file_count": 3944
+    "size": 32151823,
+    "file_count": 3950
   },
   {
     "name": "boringssl",
-    "size": 72073,
+    "size": 72234,
     "file_count": 16
   },
   {
     "name": "breakpad",
-    "size": 17963733,
+    "size": 17965649,
     "file_count": 1009
   },
   {
@@ -136,8 +136,8 @@
   },
   {
     "name": "dawn",
-    "size": 36539252,
-    "file_count": 93
+    "size": 36541935,
+    "file_count": 95
   },
   {
     "name": "dbus",
@@ -181,8 +181,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17000704,
-    "file_count": 2021
+    "size": 17007510,
+    "file_count": 2023
   },
   {
     "name": "entity_extraction",
@@ -216,8 +216,8 @@
   },
   {
     "name": "flatbuffers",
-    "size": 2833,
-    "file_count": 9
+    "size": 190527,
+    "file_count": 27
   },
   {
     "name": "fp16",
@@ -246,8 +246,8 @@
   },
   {
     "name": "glslang",
-    "size": 41439782,
-    "file_count": 3067
+    "size": 42667695,
+    "file_count": 3079
   },
   {
     "name": "googletest",
@@ -351,7 +351,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 39883,
+    "size": 40272,
     "file_count": 36
   },
   {
@@ -361,8 +361,8 @@
   },
   {
     "name": "libc++",
-    "size": 6190799,
-    "file_count": 931
+    "size": 6202667,
+    "file_count": 934
   },
   {
     "name": "libdisplay-info",
@@ -441,7 +441,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 215581550,
+    "size": 216582372,
     "file_count": 337
   },
   {
@@ -451,12 +451,12 @@
   },
   {
     "name": "mediapipe",
-    "size": 651833,
-    "file_count": 336
+    "size": 660641,
+    "file_count": 339
   },
   {
     "name": "metrics_proto",
-    "size": 277036,
+    "size": 277161,
     "file_count": 38
   },
   {
@@ -470,8 +470,13 @@
     "file_count": 18
   },
   {
+    "name": "microsoft_information_protection_sdk",
+    "size": 48203439,
+    "file_count": 3693
+  },
+  {
     "name": "microsoft_pdf",
-    "size": 18978795,
+    "size": 17166827,
     "file_count": 19
   },
   {
@@ -486,7 +491,7 @@
   },
   {
     "name": "mutter",
-    "size": 28387525,
+    "size": 28385453,
     "file_count": 1980
   },
   {
@@ -496,7 +501,7 @@
   },
   {
     "name": "nearby",
-    "size": 278373,
+    "size": 278599,
     "file_count": 52
   },
   {
@@ -551,8 +556,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3586830,
-    "file_count": 560
+    "size": 3608694,
+    "file_count": 563
   },
   {
     "name": "perl",
@@ -571,8 +576,8 @@
   },
   {
     "name": "protobuf",
-    "size": 2376610,
-    "file_count": 477
+    "size": 2234528,
+    "file_count": 481
   },
   {
     "name": "protobuf-javascript",
@@ -631,8 +636,8 @@
   },
   {
     "name": "skia",
-    "size": 3433723,
-    "file_count": 1171
+    "size": 3452601,
+    "file_count": 1178
   },
   {
     "name": "speech-dispatcher",
@@ -646,7 +651,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 526772,
+    "size": 525988,
     "file_count": 15
   },
   {
@@ -676,8 +681,8 @@
   },
   {
     "name": "tflite",
-    "size": 1673005,
-    "file_count": 478
+    "size": 1674005,
+    "file_count": 480
   },
   {
     "name": "tflite_support",
@@ -701,7 +706,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1280930,
+    "size": 1282396,
     "file_count": 21
   },
   {
@@ -711,13 +716,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2158066,
+    "size": 2300404,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6158457,
-    "file_count": 171
+    "size": 6160897,
+    "file_count": 174
   },
   {
     "name": "vulkan_memory_allocator",
@@ -726,8 +731,8 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 256827,
-    "file_count": 64
+    "size": 263489,
+    "file_count": 65
   },
   {
     "name": "webgl",
@@ -736,13 +741,13 @@
   },
   {
     "name": "webrtc",
-    "size": 275903,
-    "file_count": 90
+    "size": 102997,
+    "file_count": 50
   },
   {
     "name": "webrtc_overrides",
-    "size": 5274,
-    "file_count": 4
+    "size": 4863,
+    "file_count": 2
   },
   {
     "name": "win_build_output",
@@ -756,7 +761,7 @@
   },
   {
     "name": "wpt_tools",
-    "size": 252347,
+    "size": 252363,
     "file_count": 58
   },
   {
@@ -766,7 +771,7 @@
   },
   {
     "name": "zstd",
-    "size": 311467,
-    "file_count": 43
+    "size": 311984,
+    "file_count": 45
   }
 ]

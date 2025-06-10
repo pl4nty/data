@@ -288,13 +288,14 @@ template("ios_edge_framework_bundle_static") {
   }
 
   _library_target = _target_name + "_library"
-  _headers_target = _target_name + "_headers"
-  _headers_config = _target_name + "_config"
 
   _has_public_headers =
       defined(invoker.public_headers) && invoker.public_headers != []
 
   if (_has_public_headers) {
+    _headers_target = _target_name + "_headers"
+    _headers_config = _target_name + "_config"
+
     _framework_name = "$_output_name.framework"
     _header_map_file = "$target_gen_dir/$_output_name.headers.hmap"
 

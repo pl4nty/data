@@ -51,14 +51,19 @@ addToHashAndLog(platform);
 
 const depshash = hasher.digest('hex');
 const blobURL = `${SOURCE_CACHE_URL_PREFIX}${depshash}.tgz`;
-const blobQuery = `az storage blob exists --blob-url ${blobURL}`;
-const queryResponse = execSync(blobQuery).toString();
-const blobExists = JSON.parse(execSync(blobQuery).toString());
-// Echo to stdout if cache is present
-if (blobExists.exists) {
-  console.log('true');
-} else {  
-  console.log('false');
+try {
+  const blobQuery = `az storage blob exists --blob-url ${blobURL}`;
+  const queryResponse = execSync(blobQuery).toString();
+  const blobExists = JSON.parse(execSync(blobQuery).toString());
+  // Echo to stdout if cache is present
+  if (blobExists.exists) {
+    console.log('true');
+  } else {  
+    console.log('false');
+  }
+} catch (error) {
+  console.error('Error checking blob existence:', error.message);
+  console.log('unknown');
 }
 
 // Write the hash to disk

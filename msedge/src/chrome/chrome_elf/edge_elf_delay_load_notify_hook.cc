@@ -4,6 +4,11 @@
 
 #if !defined(COMPONENT_BUILD)
 
+#ifdef UNSAFE_BUFFERS_BUILD
+// TODO(task.ms/57672583): Remove C-library calls to fix the errors.
+#pragma allow_unsafe_libc_calls
+#endif  // UNSAFE_BUFFERS_BUILD
+
 #include <Windows.h>
 
 #include <delayimp.h>

@@ -10,13 +10,6 @@
       "dependencies.txt": "electron windows x64/dependencies.txt"
     },
     {
-      "dump_syms-v${version}-${platform}-${arch}.zip": "electron ${platform} ${arch}/dump_syms.zip",
-      "__filter__": {
-        "arch": "x64",
-        "platform": ["linux", "windows"]
-      }
-    },
-    {
       "electron-api.json": "electron windows x64/electron-api.json"
     },
     {

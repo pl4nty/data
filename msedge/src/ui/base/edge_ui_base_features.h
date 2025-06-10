@@ -334,7 +334,7 @@ extern bool IsCentralizedPhoenixTokenPipelineEnabled();
 #endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kPhoenixNonColorTokenCentralized);
+BASE_DECLARE_FEATURE(kSemanticNonColorTokenCentralized);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsCentralizedPhoenixNonColorTokenPipelineEnabled();
 
