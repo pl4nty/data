@@ -246,7 +246,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20250525.8.0",
+        "LpcVersion": "1.20250530.7.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1189,8 +1189,8 @@
     },
     "PeopleInTaskbar": {
         "PeopleInTaskbarDFVersion": "1.20250609.3.0",
-        "PeopleInTaskbarMsitVersion": "1.20250528.2.0",
-        "PeopleInTaskbarProdVersion": "1.20250509.5.0",
+        "PeopleInTaskbarMsitVersion": "1.20250604.3.0",
+        "PeopleInTaskbarProdVersion": "1.20250528.2.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",
