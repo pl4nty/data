@@ -377,6 +377,7 @@
         "AllowRawInsightsEndpoint": false,
         "AlternateRouting_Endpoint": null,
         "AlternateRouting_Geographies": null,
+        "BlockOutlookDesktopStiTokens": true,
         "BlockedGqlFieldsList": [],
         "BypassTokenParsing": false,
         "CacheEventSamplingPercentage": 1,
@@ -1187,7 +1188,7 @@
         "isReportsCountEnabled": true
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250604.3.0",
+        "PeopleInTaskbarDFVersion": "1.20250609.3.0",
         "PeopleInTaskbarMsitVersion": "1.20250528.2.0",
         "PeopleInTaskbarProdVersion": "1.20250509.5.0",
         "campaignSchedules": {

@@ -636,8 +636,6 @@
                 "enableTwtAutoProvisioning": true,
                 "enableTwtForLargeTeamsForCanCreate": true,
                 "enableUtiIatEnrichment": true,
-                "enableWorkspacesInPlacesAPI": true,
-                "enableWorkspacesProdEndpoint": false,
                 "fetchOnlyTeamMembers": true,
                 "includeSharedChannelsInGetChannelsResponse": false,
                 "meetingsOptions": {
