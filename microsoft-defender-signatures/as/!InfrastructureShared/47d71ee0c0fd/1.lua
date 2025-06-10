@@ -40,7 +40,7 @@ do
   if ("iwr")("iex", "irm") then
     return mp.INFECTED
   end
-  do return mp.INFECTED end
+  do return mp.CLEAN end
   -- WARNING: undefined locals caused missing assignments!
 end
 

@@ -86,7 +86,7 @@ if not (MpCommon.PathToWin32Path)(l_0_0) then
 
                     end
                   end
-                  if not (string.find)("svchost.exe", "Aurora.A!rfn", 1, true) or l_0_24 == "SLF:HighRiskHasMotW" then
+                  if (string.find)("svchost.exe", "Aurora.A!rfn", 1, true) or l_0_24 == "SLF:HighRiskHasMotW" then
                     do
                       do break end
                       -- DECOMPILER ERROR at PC228: LeaveBlock: unexpected jumping out IF_THEN_STMT

@@ -92,24 +92,26 @@ if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 then
                 if (l_0_23 and not l_0_23) or (l_0_23.find)(l_0_24, l_0_25, 1, true) then
                   local l_0_26 = (string.match)(l_0_21.value, "%[(.*)%]")
                   for l_0_30 in (string.gmatch)(l_0_26, "([^|]+)") do
-                    -- DECOMPILER ERROR at PC250: Overwrote pending register: R5 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC250: Overwrote pending register: R28 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC253: Overwrote pending register: R5 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC257: Overwrote pending register: R5 in 'AssignReg'
+
+                    -- DECOMPILER ERROR at PC260: Overwrote pending register: R5 in 'AssignReg'
 
                   end
                 end
-                if l_0_30 == "SLF:Aurora.A!rfn" or l_0_30 == "SLF:HighRiskHasMotW" then
+                if (string.find)("svchost.exe", "Aurora.A!rfn", 1, true) or l_0_30 == "SLF:HighRiskHasMotW" then
                   do
                     do break end
-                    -- DECOMPILER ERROR at PC257: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC257: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC257: LeaveBlock: unexpected jumping out DO_STMT
+                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out DO_STMT
 
-                    -- DECOMPILER ERROR at PC257: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC257: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_STMT
 
                   end
                 end
@@ -127,61 +129,62 @@ if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 then
               local l_0_31, l_0_32 = pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped", l_0_13)
               if l_0_31 and l_0_32 then
                 for l_0_36,l_0_37 in ipairs(l_0_32) do
-                  -- DECOMPILER ERROR at PC308: Overwrote pending register: R5 in 'AssignReg'
-
                   if (string.find)(l_0_37.value, "UnsignedFile", 1, true) and FiletimeToDaysElapsed(l_0_37.insert_time) < 1 then
+                    l_0_4.FileDroppedRecently_LongTermStrg = true
+                    l_0_4.FileDropperInfo = l_0_32
+                    l_0_8 = true
+                    -- DECOMPILER ERROR at PC315: Overwrote pending register: R5 in 'AssignReg'
+
                     local l_0_38 = (string.match)(l_0_37.value, "Process_Img(.*)")
                     if l_0_38 then
                       local l_0_39 = contains
                       local l_0_40 = l_0_38
                       local l_0_41 = {}
-                      -- DECOMPILER ERROR at PC320: Overwrote pending register: R28 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC330: No list found for R26 , SetList fails
 
-                      -- DECOMPILER ERROR at PC323: No list found for R26 , SetList fails
+                      -- DECOMPILER ERROR at PC334: Overwrote pending register: R5 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC327: Overwrote pending register: R5 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC335: Overwrote pending register: R24 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC328: Overwrote pending register: R24 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC338: Overwrote pending register: R27 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC331: Overwrote pending register: R27 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC339: Overwrote pending register: R28 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC332: Overwrote pending register: R28 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC340: Overwrote pending register: R29 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC333: Overwrote pending register: R29 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC338: Overwrote pending register: R5 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC345: Overwrote pending register: R5 in 'AssignReg'
 
                     end
                     do
-                      -- DECOMPILER ERROR at PC339: Overwrote pending register: R24 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC346: Overwrote pending register: R24 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC341: Overwrote pending register: R25 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC348: Overwrote pending register: R25 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC342: Overwrote pending register: R26 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC349: Overwrote pending register: R26 in 'AssignReg'
 
                       if (l_0_39 and not l_0_39) or (l_0_39.find)(l_0_40, l_0_41, 1, true) then
                         local l_0_42 = (string.match)(l_0_37.value, "%[(.*)%]")
                         for l_0_46 in (string.gmatch)(l_0_42, "([^|]+)") do
-                          -- DECOMPILER ERROR at PC361: Overwrote pending register: R30 in 'AssignReg'
+                          -- DECOMPILER ERROR at PC368: Overwrote pending register: R30 in 'AssignReg'
 
-                          -- DECOMPILER ERROR at PC368: Overwrote pending register: R5 in 'AssignReg'
+                          -- DECOMPILER ERROR at PC375: Overwrote pending register: R5 in 'AssignReg'
 
-                          -- DECOMPILER ERROR at PC371: Overwrote pending register: R5 in 'AssignReg'
+                          -- DECOMPILER ERROR at PC378: Overwrote pending register: R5 in 'AssignReg'
 
                         end
                       end
-                      if not (string.find)("svchost.exe", "Aurora.A!rfn", 1, true) or l_0_46 == "SLF:HighRiskHasMotW" then
+                      if (string.find)("svchost.exe", "Aurora.A!rfn", 1, true) or l_0_46 == "SLF:HighRiskHasMotW" then
                         do
                           do break end
-                          -- DECOMPILER ERROR at PC375: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                          -- DECOMPILER ERROR at PC375: LeaveBlock: unexpected jumping out IF_STMT
+                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out IF_STMT
 
-                          -- DECOMPILER ERROR at PC375: LeaveBlock: unexpected jumping out DO_STMT
+                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out DO_STMT
 
-                          -- DECOMPILER ERROR at PC375: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                          -- DECOMPILER ERROR at PC375: LeaveBlock: unexpected jumping out IF_STMT
+                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out IF_STMT
 
                         end
                       end
@@ -194,11 +197,11 @@ if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 then
               end
             end
             local l_0_47, l_0_48 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_6)
-            -- DECOMPILER ERROR at PC391: Unhandled construct in 'MakeBoolean' P1
+            -- DECOMPILER ERROR at PC398: Unhandled construct in 'MakeBoolean' P1
 
             if l_0_48 and l_0_48 ~= "NONE" then
               l_0_4.POTENTIAL_SIDE_LOADING = l_0_48
-              -- DECOMPILER ERROR at PC392: Overwrote pending register: R5 in 'AssignReg'
+              -- DECOMPILER ERROR at PC399: Overwrote pending register: R5 in 'AssignReg'
 
             end
             do
@@ -206,13 +209,13 @@ if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 then
               if (sysio.IsFileExists)("c:\\Windows\\System32\\" .. l_0_6) then
                 l_0_49 = "System32"
                 l_0_4.POTENTIAL_SIDE_LOADING = "System32"
-                -- DECOMPILER ERROR at PC405: Overwrote pending register: R5 in 'AssignReg'
+                -- DECOMPILER ERROR at PC412: Overwrote pending register: R5 in 'AssignReg'
 
               else
                 if (sysio.IsFileExists)("c:\\Windows\\SysWOW64\\" .. l_0_6) then
                   l_0_49 = "SysWOW64"
                   l_0_4.POTENTIAL_SIDE_LOADING = "SysWOW64"
-                  -- DECOMPILER ERROR at PC417: Overwrote pending register: R5 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC424: Overwrote pending register: R5 in 'AssignReg'
 
                 end
               end
@@ -257,7 +260,7 @@ if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 then
                         l_0_4.DllFileSizeAnomalous = true
                         l_0_4.FileSizeDiffRatio = l_0_4.Dll_FileSize * 100 / l_0_4.Dll_PrevFileSize
                         l_0_4.FileSizeDiffRatio = l_0_4.Dll_FileSize * 100 / l_0_4.Dll_PrevFileSize
-                        -- DECOMPILER ERROR at PC570: Overwrote pending register: R5 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC577: Overwrote pending register: R5 in 'AssignReg'
 
                       end
                     end
@@ -273,7 +276,7 @@ if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 then
                     end
                     if l_0_54 and not l_0_55 then
                       l_0_4.Dll_PathNew = true
-                      -- DECOMPILER ERROR at PC600: Overwrote pending register: R5 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC607: Overwrote pending register: R5 in 'AssignReg'
 
                       l_0_4.TableInfo = l_0_56
                     end
@@ -287,16 +290,16 @@ if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 then
                         if not (sysio.GetPEVersionInfo)(l_0_0) then
                           local l_0_67, l_0_68, l_0_69, l_0_70 = {}
                         end
-                        -- DECOMPILER ERROR at PC627: Confused about usage of register: R33 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC634: Confused about usage of register: R33 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC632: Confused about usage of register: R33 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC639: Confused about usage of register: R33 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC637: Confused about usage of register: R33 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC644: Confused about usage of register: R33 in 'UnsetPending'
 
                         do
                           local l_0_71 = nil
                           l_0_4.Dll_VersionInfo = (l_0_67.OriginalFilename or "") .. "|" .. (l_0_67.CompanyName or "") .. "|" .. (l_0_67.FileDescription or "")
-                          -- DECOMPILER ERROR at PC646: Confused about usage of register: R34 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC653: Confused about usage of register: R34 in 'UnsetPending'
 
                           AppendToRollingQueue(l_0_63, l_0_66, (l_0_67.OriginalFilename or "") .. "|" .. (l_0_67.CompanyName or "") .. "|" .. (l_0_67.FileDescription or ""), l_0_64, l_0_65)
                           if (string.find)(l_0_4.Dll_VersionInfo, "Microsoft", 1, true) then
@@ -316,10 +319,10 @@ end
                           do
                             if l_0_74.value then
                               local l_0_75 = {}
-                              -- DECOMPILER ERROR at PC676: No list found for R36 , SetList fails
+                              -- DECOMPILER ERROR at PC683: No list found for R36 , SetList fails
 
                             end
-                            -- DECOMPILER ERROR at PC686: Overwrote pending register: R37 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC693: Overwrote pending register: R37 in 'AssignReg'
 
                             if l_0_74 or l_0_4.Dll_VersionInfo ~= "||" then
                               for l_0_80,i_2 in ipairs(l_0_74) do
@@ -332,16 +335,16 @@ end
                               if l_0_4.Dll_VersionInfo ~= "||" and l_0_72(l_0_4.Dll_VersionInfo, (l_0_4.Dll_PrevVersionInfo).value) then
                                 return mp.CLEAN
                               end
-                              -- DECOMPILER ERROR at PC716: Overwrote pending register: R5 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC723: Overwrote pending register: R5 in 'AssignReg'
 
                               if l_0_4.Dll_PrevVersionInfo ~= "||" then
                                 local l_0_81, l_0_82, l_0_83 = IsDllInExpectedPath(l_0_6, l_0_1, l_0_7)
                                 if l_0_81 and l_0_82 then
                                   return mp.CLEAN
                                 end
-                                -- DECOMPILER ERROR at PC731: Overwrote pending register: R5 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC738: Overwrote pending register: R5 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC734: Overwrote pending register: R5 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC741: Overwrote pending register: R5 in 'AssignReg'
 
                                 if not l_0_81 or l_0_83 then
                                   l_0_4.Known_VulnerableDll = l_0_81
@@ -349,86 +352,86 @@ end
                                   if not l_0_4.POTENTIAL_SIDE_LOADING and not l_0_81 then
                                     return mp.CLEAN
                                   end
-                                  -- DECOMPILER ERROR at PC752: Overwrote pending register: R5 in 'AssignReg'
+                                  -- DECOMPILER ERROR at PC759: Overwrote pending register: R5 in 'AssignReg'
 
                                   if (MpCommon.StringRegExpSearch)("\\\\(desktop|download|onedrive|document|picture)", l_0_0) then
                                     local l_0_84 = contains
                                     local l_0_85 = l_0_0
                                     local l_0_86 = {}
-                                    -- DECOMPILER ERROR at PC758: No list found for R41 , SetList fails
+                                    -- DECOMPILER ERROR at PC765: No list found for R41 , SetList fails
 
-                                    -- DECOMPILER ERROR at PC762: Overwrote pending register: R5 in 'AssignReg'
+                                    -- DECOMPILER ERROR at PC769: Overwrote pending register: R5 in 'AssignReg'
 
-                                    -- DECOMPILER ERROR at PC764: Overwrote pending register: R39 in 'AssignReg'
+                                    -- DECOMPILER ERROR at PC771: Overwrote pending register: R39 in 'AssignReg'
 
-                                    -- DECOMPILER ERROR at PC767: Overwrote pending register: R42 in 'AssignReg'
+                                    -- DECOMPILER ERROR at PC774: Overwrote pending register: R42 in 'AssignReg'
 
                                     if l_0_84 then
                                       l_0_84 = l_0_84(l_0_85, l_0_86, "program files", true)
-                                      -- DECOMPILER ERROR at PC770: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC777: Overwrote pending register: R41 in 'AssignReg'
 
-                                      -- DECOMPILER ERROR at PC773: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC780: Overwrote pending register: R41 in 'AssignReg'
 
-                                      -- DECOMPILER ERROR at PC774: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC781: Overwrote pending register: R41 in 'AssignReg'
 
                                       if l_0_86 then
                                         l_0_86("PotentialSideLoading_C_Evaluator", l_0_84)
                                       end
-                                      -- DECOMPILER ERROR at PC778: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC781: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC784: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC787: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC785: Overwrote pending register: R41 in 'AssignReg'
 
                                       -- DECOMPILER ERROR at PC788: Overwrote pending register: R41 in 'AssignReg'
+
+                                      -- DECOMPILER ERROR at PC791: Overwrote pending register: R41 in 'AssignReg'
+
+                                      -- DECOMPILER ERROR at PC794: Overwrote pending register: R41 in 'AssignReg'
+
+                                      -- DECOMPILER ERROR at PC795: Overwrote pending register: R41 in 'AssignReg'
 
                                       if (l_0_86 and l_0_86) or l_0_86 then
                                         l_0_86("PotentialSideLoading_D2_Evaluator", l_0_84)
                                       end
-                                      -- DECOMPILER ERROR at PC792: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC799: Overwrote pending register: R41 in 'AssignReg'
 
-                                      -- DECOMPILER ERROR at PC795: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC802: Overwrote pending register: R41 in 'AssignReg'
 
-                                      -- DECOMPILER ERROR at PC800: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC807: Overwrote pending register: R41 in 'AssignReg'
 
-                                      -- DECOMPILER ERROR at PC801: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC808: Overwrote pending register: R41 in 'AssignReg'
 
                                       if (l_0_86 and l_0_86) or l_0_5 >= 150 then
                                         l_0_86("PotentialSideLoading_D2_Evaluator", l_0_84)
                                       end
-                                      -- DECOMPILER ERROR at PC805: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC812: Overwrote pending register: R41 in 'AssignReg'
 
-                                      -- DECOMPILER ERROR at PC806: Overwrote pending register: R41 in 'AssignReg'
+                                      -- DECOMPILER ERROR at PC813: Overwrote pending register: R41 in 'AssignReg'
 
                                       local l_0_87 = "Additional_Info"
                                       do
                                         l_0_86(l_0_87, l_0_84 or l_0_85 or "", bm.RelatedStringBMReport)
-                                        -- DECOMPILER ERROR at PC816: Overwrote pending register: R41 in 'AssignReg'
-
-                                        -- DECOMPILER ERROR at PC817: Overwrote pending register: R41 in 'AssignReg'
-
-                                        l_0_87 = "Score"
-                                        l_0_86(l_0_87, l_0_5, bm.RelatedStringBMReport)
                                         -- DECOMPILER ERROR at PC823: Overwrote pending register: R41 in 'AssignReg'
 
                                         -- DECOMPILER ERROR at PC824: Overwrote pending register: R41 in 'AssignReg'
 
+                                        l_0_87 = "Score"
+                                        l_0_86(l_0_87, l_0_5, bm.RelatedStringBMReport)
+                                        -- DECOMPILER ERROR at PC830: Overwrote pending register: R41 in 'AssignReg'
+
+                                        -- DECOMPILER ERROR at PC831: Overwrote pending register: R41 in 'AssignReg'
+
                                         l_0_87 = "Anomaly_LoadedDlls_TblInfo"
                                         l_0_86(l_0_87, safeJsonSerialize(l_0_56), bm.RelatedStringBMReport)
-                                        -- DECOMPILER ERROR at PC832: Overwrote pending register: R41 in 'AssignReg'
+                                        -- DECOMPILER ERROR at PC839: Overwrote pending register: R41 in 'AssignReg'
 
-                                        -- DECOMPILER ERROR at PC833: Overwrote pending register: R41 in 'AssignReg'
+                                        -- DECOMPILER ERROR at PC840: Overwrote pending register: R41 in 'AssignReg'
 
                                         l_0_87 = l_0_0
                                         l_0_86(l_0_87)
-                                        -- DECOMPILER ERROR at PC836: Overwrote pending register: R41 in 'AssignReg'
+                                        -- DECOMPILER ERROR at PC843: Overwrote pending register: R41 in 'AssignReg'
 
-                                        -- DECOMPILER ERROR at PC837: Overwrote pending register: R41 in 'AssignReg'
+                                        -- DECOMPILER ERROR at PC844: Overwrote pending register: R41 in 'AssignReg'
 
                                         do return l_0_86 end
-                                        -- DECOMPILER ERROR at PC839: freeLocal<0 in 'ReleaseLocals'
+                                        -- DECOMPILER ERROR at PC846: freeLocal<0 in 'ReleaseLocals'
 
                                         return mp.CLEAN
                                       end

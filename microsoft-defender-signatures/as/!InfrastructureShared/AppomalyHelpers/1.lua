@@ -626,7 +626,7 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
                                           end
                                           -- DECOMPILER ERROR at PC458: Overwrote pending register: R3 in 'AssignReg'
 
-                                          if (MpCommon.StringRegExpSearch)("\\.(exe|dll|ps1|bat|rar|msi|torrent|png|gif|bin|zip|img|gz|vbs)$", l_4_0) then
+                                          if (MpCommon.StringRegExpSearch)("\\.(exe|dll|ps1|bat|rar|msi|torrent|png|gif|bin|zip|img|gz|vbs|txt)$", l_4_0) then
                                             l_4_4.Susfile_extension = true
                                           end
                                           l_4_4.Url_Score = l_4_3

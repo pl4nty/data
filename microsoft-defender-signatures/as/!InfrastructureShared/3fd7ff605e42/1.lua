@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
-  return mp.CLEAN
-end
 local l_0_0 = (mp.GetScannedPPID)()
 if l_0_0 == "" or l_0_0 == nil then
   return mp.CLEAN
@@ -16,22 +13,30 @@ if l_0_1 == nil or #l_0_1 <= 60 then
 end
 l_0_1 = (string.gsub)((string.lower)(l_0_1), "[%\'\"]%)?%+%(?[%\'\"]", "")
 local l_0_2 = {}
--- DECOMPILER ERROR at PC43: No list found for R2 , SetList fails
+-- DECOMPILER ERROR at PC34: No list found for R2 , SetList fails
 
--- DECOMPILER ERROR at PC44: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC35: Overwrote pending register: R3 in 'AssignReg'
 
 if not (".content")(l_0_1, l_0_2) then
   return mp.CLEAN
 end
+local l_0_3 = {}
+-- DECOMPILER ERROR at PC46: No list found for R3 , SetList fails
+
+-- DECOMPILER ERROR at PC47: Overwrote pending register: R4 in 'AssignReg'
+
+if not ("wget -uri")(l_0_1, l_0_3) then
+  return mp.CLEAN
+end
 do
-  local l_0_3 = {}
-  -- DECOMPILER ERROR at PC62: No list found for R3 , SetList fails
+  local l_0_4 = {}
+  -- DECOMPILER ERROR at PC65: No list found for R4 , SetList fails
 
-  -- DECOMPILER ERROR at PC63: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC66: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC64: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC67: Overwrote pending register: R6 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC65: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC68: Overwrote pending register: R7 in 'AssignReg'
 
   if not ("irm")("invoke-restmethod", "iwm") then
     return mp.CLEAN
