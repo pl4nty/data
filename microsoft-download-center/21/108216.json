@@ -1,0 +1,405 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Information Protection Software Development Kit Version 1.17",
+    "downloadDescription": "The Microsoft Information Protection SDK brings the classification, labeling, and protection capabilities of Microsoft Information Protection into a simple, lightweight, cross-platform software development kit that enables any application to label and protect information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_win32_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_win32_1.17.137.zip",
+            "size": "40078526",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_ubuntu2404_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_ubuntu2404_1.17.137.tar.gz",
+            "size": "51825467",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_ubuntu2204_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_ubuntu2204_1.17.137.tar.gz",
+            "size": "53920871",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_ubuntu2004_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_ubuntu2004_1.17.137.tar.gz",
+            "size": "66832442",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_rhel9_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_rhel9_1.17.137.tar.gz",
+            "size": "53772940",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_rhel8_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_rhel8_1.17.137.tar.gz",
+            "size": "66106612",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_macos_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_macos_1.17.137.zip",
+            "size": "312967510",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_ios_lite_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_ios_lite_1.17.137.zip",
+            "size": "1344749194",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_ios_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_ios_1.17.137.zip",
+            "size": "1645254229",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_debian11_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_debian11_1.17.137.tar.gz",
+            "size": "59809295",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_android_lite_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_android_lite_1.17.137.zip",
+            "size": "133660293",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_upe_android_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_upe_android_1.17.137.zip",
+            "size": "230400660",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_win32_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_win32_1.17.137.zip",
+            "size": "42205666",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_ubuntu2404_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_ubuntu2404_1.17.137.tar.gz",
+            "size": "56141091",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_ubuntu2204_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_ubuntu2204_1.17.137.tar.gz",
+            "size": "58251518",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_ubuntu2004_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_ubuntu2004_1.17.137.tar.gz",
+            "size": "71267303",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_rhel9_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_rhel9_1.17.137.tar.gz",
+            "size": "58097182",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_rhel8_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_rhel8_1.17.137.tar.gz",
+            "size": "70548848",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_macos_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_macos_1.17.137.zip",
+            "size": "177195315",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_ios_lite_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_ios_lite_1.17.137.zip",
+            "size": "605082668",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_ios_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_ios_1.17.137.zip",
+            "size": "819151717",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_debian11_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_debian11_1.17.137.tar.gz",
+            "size": "64368945",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_android_lite_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_android_lite_1.17.137.zip",
+            "size": "135571647",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_protection_android_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_protection_android_1.17.137.zip",
+            "size": "232978940",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_java_wrappers_win32_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_java_wrappers_win32_1.17.137.zip",
+            "size": "8719224",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_java_ubuntu2404_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_java_ubuntu2404_1.17.137.tar.gz",
+            "size": "4811348",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_java_ubuntu2204_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_java_ubuntu2204_1.17.137.tar.gz",
+            "size": "4764956",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_java_ubuntu2004_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_java_ubuntu2004_1.17.137.tar.gz",
+            "size": "4824454",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "mip_sdk_file_win32_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_file_win32_1.17.137.zip",
+            "size": "119685032",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_file_ubuntu2404_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_file_ubuntu2404_1.17.137.tar.gz",
+            "size": "116058128",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_file_ubuntu2204_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_file_ubuntu2204_1.17.137.tar.gz",
+            "size": "117882413",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_file_ubuntu2004_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_file_ubuntu2004_1.17.137.tar.gz",
+            "size": "139757595",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_file_rhel9_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_file_rhel9_1.17.137.tar.gz",
+            "size": "117639705",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_file_rhel8_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_file_rhel8_1.17.137.tar.gz",
+            "size": "138745415",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_file_macos_1.17.137.zip",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_file_macos_1.17.137.zip",
+            "size": "1113231427",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_file_debian11_1.17.137.tar.gz",
+            "url": "https://download.microsoft.com/download/36e8f8f7-86de-4e0b-ba9b-eb42d0f4a7f9/mip_sdk_file_debian11_1.17.137.tar.gz",
+            "size": "125293845",
+            "version": "1.17.137",
+            "datePublished": "6/9/2025 7:10:53 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Information Protection SDK brings the classification, labeling, and protection capabilities of Microsoft Information Protection into a simple, lightweight, cross-platform software development kit that enables any application to label and protect information. The labels and protection are consumable by Azure Information Protection, Office apps, Office 365, and any application or service that has integrated the Microsoft Information Protection SDK.\n\nBringing the labeling and protection capabilities that have existed in Office to line of business applications, as well as third-party PDF viewers, CAD/CAM applications, and other SaaS applications is a critical component of the information protection story. The Microsoft Information Protection SDK enables Microsoft partners and customers to build those integrations to protect data at creation, detect movement across trust boundaries, and to prevent accidental or malicious leakage of sensitive information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.17.137",
+    "detailsSection_file_name": [
+        "mip_sdk_upe_win32_1.17.137.zip",
+        "mip_sdk_upe_ubuntu2404_1.17.137.tar.gz",
+        "mip_sdk_upe_ubuntu2204_1.17.137.tar.gz",
+        "mip_sdk_upe_ubuntu2004_1.17.137.tar.gz",
+        "mip_sdk_upe_rhel9_1.17.137.tar.gz",
+        "mip_sdk_upe_rhel8_1.17.137.tar.gz",
+        "mip_sdk_upe_macos_1.17.137.zip",
+        "mip_sdk_upe_ios_lite_1.17.137.zip",
+        "mip_sdk_upe_ios_1.17.137.zip",
+        "mip_sdk_upe_debian11_1.17.137.tar.gz",
+        "mip_sdk_upe_android_lite_1.17.137.zip",
+        "mip_sdk_upe_android_1.17.137.zip",
+        "mip_sdk_protection_win32_1.17.137.zip",
+        "mip_sdk_protection_ubuntu2404_1.17.137.tar.gz",
+        "mip_sdk_protection_ubuntu2204_1.17.137.tar.gz",
+        "mip_sdk_protection_ubuntu2004_1.17.137.tar.gz",
+        "mip_sdk_protection_rhel9_1.17.137.tar.gz",
+        "mip_sdk_protection_rhel8_1.17.137.tar.gz",
+        "mip_sdk_protection_macos_1.17.137.zip",
+        "mip_sdk_protection_ios_lite_1.17.137.zip",
+        "mip_sdk_protection_ios_1.17.137.zip",
+        "mip_sdk_protection_debian11_1.17.137.tar.gz",
+        "mip_sdk_protection_android_lite_1.17.137.zip",
+        "mip_sdk_protection_android_1.17.137.zip",
+        "mip_sdk_java_wrappers_win32_1.17.137.zip",
+        "mip_sdk_java_ubuntu2404_1.17.137.tar.gz",
+        "mip_sdk_java_ubuntu2204_1.17.137.tar.gz",
+        "mip_sdk_java_ubuntu2004_1.17.137.tar.gz",
+        "mip_sdk_file_win32_1.17.137.zip",
+        "mip_sdk_file_ubuntu2404_1.17.137.tar.gz",
+        "mip_sdk_file_ubuntu2204_1.17.137.tar.gz",
+        "mip_sdk_file_ubuntu2004_1.17.137.tar.gz",
+        "mip_sdk_file_rhel9_1.17.137.tar.gz",
+        "mip_sdk_file_rhel8_1.17.137.tar.gz",
+        "mip_sdk_file_macos_1.17.137.zip",
+        "mip_sdk_file_debian11_1.17.137.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "38.2 MB",
+        "49.4 MB",
+        "51.4 MB",
+        "63.7 MB",
+        "51.3 MB",
+        "63.0 MB",
+        "298.5 MB",
+        "1.3 GB",
+        "1.5 GB",
+        "57.0 MB",
+        "127.5 MB",
+        "219.7 MB",
+        "40.3 MB",
+        "53.5 MB",
+        "55.6 MB",
+        "68.0 MB",
+        "55.4 MB",
+        "67.3 MB",
+        "169.0 MB",
+        "577.1 MB",
+        "781.2 MB",
+        "61.4 MB",
+        "129.3 MB",
+        "222.2 MB",
+        "8.3 MB",
+        "4.6 MB",
+        "4.5 MB",
+        "4.6 MB",
+        "114.1 MB",
+        "110.7 MB",
+        "112.4 MB",
+        "133.3 MB",
+        "112.2 MB",
+        "132.3 MB",
+        "1.0 GB",
+        "119.5 MB"
+    ],
+    "detailsSection_file_date": "6/9/2025",
+    "systemRequirementsSection": "<br/><b>Supported Platforms:</b><br/>\n<ul>\n<li>All supported version of Windows Server and Windows client</li>\n<li>MacOS (all supported versions)</li>\n<li>Ubuntu 20.04, 22.04 and 24.04</li>\n<li>Debian 11</li>\n<li>RedHat Enterprise Linux 8 and 9</li>\n<li>Android - Protection and Policy APIs</li>\n<li>iOS - Protection and Policy APIs</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Linux",
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "To get started with the SDK, review the SDK documentation <a href=\"https://go.microsoft.com/fwlink/?linkid=2027647\">here</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108216",
+    "downloadPreload": true
+}
