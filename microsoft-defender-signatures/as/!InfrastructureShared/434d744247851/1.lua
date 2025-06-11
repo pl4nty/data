@@ -164,6 +164,12 @@ else
                           (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns2")
                           l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspPattern"
                         end
+                        -- DECOMPILER ERROR at PC420: Confused about usage of register: R14 in 'UnsetPending'
+
+                        if (mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found") and #(mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found") > 0 then
+                          (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
+                          l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspUrl"
+                        end
                         do
                           do
                             local l_0_46, l_0_47 = nil
@@ -171,12 +177,12 @@ else
                               (MpCommon.BmTriggerSig)(l_0_40.ppid, "SuspDownload_BM_Capture", safeJsonSerialize(l_0_1, 150, nil, true))
                             else
                               if l_0_1 then
-                                set_research_data("Error", (MpCommon.Base64Encode)(R21_PC435), R21_PC435)
+                                set_research_data("Error", (MpCommon.Base64Encode)(R21_PC454), R21_PC454)
                                 return mp.INFECTED
                               end
                             end
                             do return mp.CLEAN end
-                            -- DECOMPILER ERROR at PC444: freeLocal<0 in 'ReleaseLocals'
+                            -- DECOMPILER ERROR at PC463: freeLocal<0 in 'ReleaseLocals'
 
                           end
                         end

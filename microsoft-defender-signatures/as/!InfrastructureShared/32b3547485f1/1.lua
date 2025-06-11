@@ -54,7 +54,10 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
     for l_1_14,l_1_15 in l_1_3 do
       local l_1_14, l_1_15 = nil
       l_1_14 = l_1_13.value
-      l_1_0 = l_1_0 + l_1_14
+      if l_1_14 ~= 1 then
+        l_1_14 = l_1_13.value
+        l_1_0 = l_1_0 + l_1_14
+      end
       l_1_14 = pairs
       l_1_15, l_1_2 = l_1_2, {Exploit = 5, CVE = 5, SuspIIS = 5, HighRiskHasMotW = 2, ["Susp.*Discovery"] = 2}
       l_1_14 = l_1_14(l_1_15)
@@ -71,7 +74,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
       end
     end
     do return l_1_1, l_1_0 end
-    -- DECOMPILER ERROR at PC101: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC104: Confused about usage of register R4 for local variables in 'ReleaseLocals'
 
   end
 end

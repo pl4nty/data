@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1ced7527620ca\1.luac 
+-- Command line: lua\!InfrastructureShared\2d6d7ac969998\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -21,6 +21,9 @@ if not (mp.GetProcessCommandLine)((mp.GetScannedPPID)()) then
   return mp.CLEAN
 end
 if #(mp.GetProcessCommandLine)((mp.GetScannedPPID)()) < 50 then
+  return mp.CLEAN
+end
+if #(mp.GetProcessCommandLine)((mp.GetScannedPPID)()) > 450 then
   return mp.CLEAN
 end
 local l_0_5 = nil
@@ -61,56 +64,32 @@ end
 l_0_7 = string
 l_0_7 = l_0_7.gsub
 l_0_8 = l_0_1
-l_0_7 = l_0_7(l_0_8, "[\"\'()+]", "")
+l_0_7 = l_0_7(l_0_8, "[\"\'`^()+#&]", "")
 l_0_1 = l_0_7
 l_0_7 = string
 l_0_7 = l_0_7.lower
 l_0_8 = l_0_1
 l_0_7 = l_0_7(l_0_8)
 l_0_1 = l_0_7
-l_0_7 = MpCommon
-l_0_7 = l_0_7.StringRegExpSearch
-l_0_8 = "(ht?tps?:\\/\\/[^^\\s\\x22\\x27\\x7C\\x29\\x3B\\x3E\\x3C\\x2C\\x5E\\x60\\x5D\\x7D]+)"
-l_0_7 = l_0_7(l_0_8, l_0_1)
-if not l_0_7 then
+l_0_7 = extract_urls
+l_0_8 = l_0_1
+l_0_7 = l_0_7(l_0_8)
+if isnull(R9_PC121) then
   return mp.CLEAN
 end
-if not l_0_8 then
-  return mp.CLEAN
-end
-if ExtractPartsFromUri(R9_PC127) == "" or ExtractPartsFromUri(R9_PC127) == nil then
-  R9_PC127 = mp
-  R9_PC127 = R9_PC127.CLEAN
-  return R9_PC127
-end
-R9_PC127 = (ExtractPartsFromUri(R9_PC127)).host
-if R9_PC127 ~= "" then
-  R9_PC127 = (ExtractPartsFromUri(R9_PC127)).host
-end
-if R9_PC127 == nil then
-  R9_PC127 = mp
-  R9_PC127 = R9_PC127.CLEAN
-  return R9_PC127
-end
-R9_PC127 = split
-R9_PC127 = R9_PC127((ExtractPartsFromUri(R9_PC127)).host, "%.")
-local l_0_9 = nil
-if not R9_PC127 then
-  return mp.CLEAN
-end
-local l_0_10 = nil
-if not "." .. tostring(R9_PC127[#R9_PC127]) then
-  return mp.CLEAN
-end
--- DECOMPILER ERROR at PC164: Confused about usage of register: R10 in 'UnsetPending'
+for l_0_12,i_2 in ipairs(R9_PC121) do
+  if not split(i_2, "%.") then
+    return mp.CLEAN
+  end
+  local l_0_14 = nil
+  if not "." .. tostring((split(i_2, "%."))[#split(i_2, "%.")]) then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC152: Confused about usage of register: R14 in 'UnsetPending'
 
-if "." .. tostring(R9_PC127[#R9_PC127]) == ".ru" then
-  return mp.LOWFI
-end
--- DECOMPILER ERROR at PC170: Confused about usage of register: R10 in 'UnsetPending'
-
-if isSuspTLD("." .. tostring(R9_PC127[#R9_PC127])) then
-  return mp.INFECTED
+  if isSuspTLD("." .. tostring((split(i_2, "%."))[#split(i_2, "%.")])) then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
 

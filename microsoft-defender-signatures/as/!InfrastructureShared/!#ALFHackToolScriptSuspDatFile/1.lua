@@ -16,35 +16,48 @@ l_0_1["prfc0804.dat"] = ""
 l_0_1["prfc0416.dat"] = ""
 l_0_1["cloudconfiguration.dat"] = ""
 l_0_1["vxautocollimatorrand.dat"] = ""
+l_0_1["klick.dat"] = ""
+l_0_1["kiln.dat"] = ""
+l_0_1["lfont.dat"] = ""
+l_0_1["mfont.dat"] = ""
+l_0_1["prfh0416.dat"] = ""
+l_0_1["eppicprinterdb.dat"] = ""
+l_0_1["e4661b94-e45f-42c5-a278-9f3b41ff5522.dat"] = ""
+l_0_1["srudb.dat"] = ""
+l_0_1["usbcir.dat"] = ""
 local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
 if l_0_1[l_0_2] then
   return mp.CLEAN
 end
 local l_0_3 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 l_0_3 = (MpCommon.PathToWin32Path)(l_0_3)
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC163: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
 
-if l_0_3:find("\\windows\\system32\\spool\\drivers\\x64\\3\\", 1, true) or ((l_0_3:find("\\driverstore\\filerepository\\", 1, true) and l_0_3:find(".inf", 1, true)) or l_0_3:find("eppicpattern", 1, true)) then
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC186: Unhandled construct in 'MakeBoolean' P3
+
+if l_0_3:find("\\windows\\system32\\spool\\drivers\\x64\\3\\", 1, true) or ((l_0_3:find("\\driverstore\\filerepository\\", 1, true) and l_0_3:find(".inf", 1, true)) or l_0_3:find("system32\\windowspowershell\\v1.0\\modules\\dbatools", 1, true)) then
   return mp.CLEAN
 end
 local l_0_4 = (mp.readheader)(0, 257)

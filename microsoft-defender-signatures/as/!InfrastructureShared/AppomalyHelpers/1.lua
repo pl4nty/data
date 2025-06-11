@@ -624,10 +624,14 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
                                               l_4_4.SusUrlRep = true
                                             end
                                           end
+                                          local l_4_33, l_4_34 = (MpCommon.StringRegExpSearch)("\\.(exe|dll|ps1|bat|rar|msi|torrent|png|gif|bin|zip|img|gz|vbs|txt)$", l_4_0)
                                           -- DECOMPILER ERROR at PC458: Overwrote pending register: R3 in 'AssignReg'
 
-                                          if (MpCommon.StringRegExpSearch)("\\.(exe|dll|ps1|bat|rar|msi|torrent|png|gif|bin|zip|img|gz|vbs|txt)$", l_4_0) then
+                                          if l_4_33 then
                                             l_4_4.Susfile_extension = true
+                                          end
+                                          if l_4_4.Susfile_extension and l_4_4.IP then
+                                            (mp.set_mpattribute)("Appomaly_SuspUrl_Found")
                                           end
                                           l_4_4.Url_Score = l_4_3
                                           return l_4_3, l_4_4

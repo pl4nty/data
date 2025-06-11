@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1bdb32ffc6a4f\1.luac 
+-- Command line: lua\!InfrastructureShared\1bdb3bdd68786\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -30,7 +30,7 @@ do
       if (mp.ContextualExpandEnvironmentVariables)((string.match)(l_0_14, "wscript.*%s+%\"?%\'?(%w:\\.*%.js)")) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)((string.match)(l_0_14, "wscript.*%s+%\"?%\'?(%w:\\.*%.js)"))) then
         local l_0_16, l_0_17 = nil
         if (mp.GetMotwZoneForFile)((mp.ContextualExpandEnvironmentVariables)((string.match)(l_0_14, "wscript.*%s+%\"?%\'?(%w:\\.*%.js)"))) and (mp.ContextualExpandEnvironmentVariables)((string.match)(l_0_14, "wscript.*%s+%\"?%\'?(%w:\\.*%.js)")) == 3 then
-          (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((string.match)(l_0_14, "wscript.*%s+%\"?%\'?(%w:\\.*%.js)")))
+          (bm.add_threat_file)((mp.ContextualExpandEnvironmentVariables)((string.match)(l_0_14, "wscript.*%s+%\"?%\'?(%w:\\.*%.js)")))
           return mp.INFECTED
         end
       end
