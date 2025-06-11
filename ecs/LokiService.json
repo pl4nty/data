@@ -377,7 +377,6 @@
         "AllowRawInsightsEndpoint": false,
         "AlternateRouting_Endpoint": null,
         "AlternateRouting_Geographies": null,
-        "BlockOutlookDesktopStiTokens": true,
         "BlockedGqlFieldsList": [],
         "BypassTokenParsing": false,
         "CacheEventSamplingPercentage": 1,
