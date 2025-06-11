@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10763718,
+    "size": 10765225,
     "file_count": 177
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32151935,
+    "size": 32154726,
     "file_count": 3950
   },
   {
@@ -246,8 +246,8 @@
   },
   {
     "name": "glslang",
-    "size": 42667695,
-    "file_count": 3079
+    "size": 42777205,
+    "file_count": 3101
   },
   {
     "name": "googletest",
@@ -326,7 +326,7 @@
   },
   {
     "name": "jetstream",
-    "size": 128908365,
+    "size": 128908357,
     "file_count": 54
   },
   {
@@ -361,7 +361,7 @@
   },
   {
     "name": "libc++",
-    "size": 6202667,
+    "size": 6204583,
     "file_count": 934
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 17166827,
+    "size": 17176043,
     "file_count": 19
   },
   {
@@ -556,8 +556,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3608694,
-    "file_count": 563
+    "size": 3623781,
+    "file_count": 564
   },
   {
     "name": "perl",
