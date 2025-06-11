@@ -65557,6 +65557,182 @@
         "Component": "Unbounded buffer read in libstagefright while parsing 3GPP metadata"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-26785",
+        "References": "A-394084586",
+        "Type": "RCE",
+        "Severity": "Critical",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-32337",
+        "References": "A-383628266",
+        "Type": "EoP",
+        "Severity": "Critical",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-26457",
+        "References": "A-394726304",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "Bluetooth",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-26459",
+        "References": "A-394596202",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "RIL",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-26460",
+        "References": "A-404959676",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "TPU",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-32314",
+        "References": "A-329622454",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "DRM LDFW",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-32334",
+        "References": "A-394726109",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "Bluetooth",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-32335",
+        "References": "A-397679986",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "rild",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-32336",
+        "References": "A-382577130",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "WLAN",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-32339",
+        "References": "A-380273030",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-36887",
+        "References": "A-382788890",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "WLAN",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2024-56427",
+        "References": "A-373365664",
+        "Type": "EoP",
+        "Severity": "Moderate",
+        "Subcomponent": "Cellular Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-32315",
+        "References": "A-380909632",
+        "Type": "EoP",
+        "Severity": "Moderate",
+        "Subcomponent": "Fingerprint Sensor",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-32338",
+        "References": "A-353958315",
+        "Type": "EoP",
+        "Severity": "Moderate",
+        "Subcomponent": "NVT",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2024-48883",
+        "References": "A-362957877",
+        "Type": "ID",
+        "Severity": "Moderate",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
+        "Published": "June 4, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2025-32340",
+        "References": "A-386346571",
+        "Type": "ID",
+        "Severity": "Moderate",
+        "Subcomponent": "Exynos RIL",
+        "Component": "Pixel"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-05-01",
         "Published": "May 6, 2025",
         "Patch level": "2025-05-05",
@@ -90220,6 +90396,66 @@
         "Severity": "High",
         "Updated AOSP versions": "11",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "June 10, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2024-45540",
+        "References": "A-372022568",
+        "Severity": "Moderate",
+        "Subcomponent": "Bootloader",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "June 10, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2024-45544",
+        "References": "A-372021858",
+        "Severity": "Moderate",
+        "Subcomponent": "Kernel",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "June 10, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2024-45554",
+        "References": "A-377303606",
+        "Severity": "Moderate",
+        "Subcomponent": "Kernel",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "June 10, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2024-45562",
+        "References": "A-377305518",
+        "Severity": "Moderate",
+        "Subcomponent": "Bootloader",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "June 10, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2024-45564",
+        "References": "A-377305469",
+        "Severity": "Moderate",
+        "Subcomponent": "Bootloader",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "June 10, 2025",
+        "Patch level": "2025-06-05",
+        "CVE": "CVE-2024-43046",
+        "References": "A-381913701",
+        "Severity": "Moderate",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-03-01",
