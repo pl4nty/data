@@ -620,6 +620,7 @@
         "EnableNetReferenceCheck": true,
         "EnableNetworkAllocation": true,
         "EnableNewCogsExportAPI": true,
+        "EnableNewCommonReportingStorageAccount": true,
         "EnableNewHostpoolRegionMapping": true,
         "EnableNewStorageBlobForCitrixAgent": true,
         "EnableNextGenTimer": true,
