@@ -7,7 +7,7 @@ if (mp.getfilesize)() > 33554432 then
   return mp.CLEAN
 end
 local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0:sub(2, 9) ~= ":\\users\\" then
+if l_0_0:sub(2, 9) ~= ":\\users\\" and (mp.get_mpattribute)("Lua:TriggerLUAEnumResourceData") ~= true then
   return mp.CLEAN
 end
 EnumResourceCRC32s = function(l_1_0, l_1_1, l_1_2, l_1_3)
@@ -69,10 +69,36 @@ EnumResourceCRC32s = function(l_1_0, l_1_1, l_1_2, l_1_3)
     local l_1_21 = (mp.readu_u32)(l_1_20, 1)
     local l_1_22 = (mp.readu_u32)(l_1_20, 5)
     if l_1_4 <= l_1_22 then
+      (mp.set_mpattribute)("Lua:InterestingResourceDataSizeGTE0x80000!CrcSkipped")
       return l_1_3
     end
     local l_1_23 = (pe.mmap_rva)(l_1_21, l_1_22)
-    l_1_3[#l_1_3 + 1] = (mp.crc32)(-1, l_1_23, 1, 0)
+    local l_1_24 = (mp.crc32)(-1, l_1_23, 1, 0)
+    local l_1_25 = "Lua:InterestingResourceData"
+    if (string.sub)(l_1_23, 1, 8) == "‰PNG\r\n\026\n" then
+      (mp.set_mpattribute)((string.format)("%sFormat:PNG!crc0x%08x", l_1_25, l_1_24))
+    else
+      if (string.sub)(l_1_23, 1, 3) == "(\000\000" and l_1_22 >= 8192 then
+        (mp.set_mpattribute)((string.format)("%sFormat:ICO!crc0x%08x", l_1_25, l_1_24))
+      else
+        if (string.sub)(l_1_23, 1, 2) == "BM" and l_1_22 >= 12288 then
+          (mp.set_mpattribute)((string.format)("%sFormat:BMP!crc0x%08x", l_1_25, l_1_24))
+        else
+          if l_1_22 >= 131072 then
+            (mp.set_mpattribute)((string.format)("%sSizeGTE0x20000!crc0x%08x", l_1_25, l_1_24))
+          else
+            if l_1_22 >= 73728 then
+              (mp.set_mpattribute)((string.format)("%sSizeGTE0x12000!crc0x%08x", l_1_25, l_1_24))
+            else
+              if l_1_22 >= 32768 then
+                (mp.set_mpattribute)((string.format)("%sSizeGTE0x8000!crc0x%08x", l_1_25, l_1_24))
+              end
+            end
+          end
+        end
+      end
+    end
+    l_1_3[#l_1_3 + 1] = l_1_24
   end
   return l_1_3
 end

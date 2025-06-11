@@ -178,7 +178,8 @@ do
                           end
                           local l_0_54 = nil
                           if (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern") and #(mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern") > 0 then
-                            (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded")
+                            (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded2")
+                            l_0_10.Remediation_Reason = l_0_10.Remediation_Reason .. ";" .. "SuspPattern"
                           end
                           do
                             local l_0_55, l_0_56 = nil
@@ -188,12 +189,12 @@ do
                               (MpCommon.BmTriggerSig)(l_0_0.ppid, "SuspDownload3_BM_Capture", safeJsonSerialize(l_0_10, 150, nil, true))
                             else
                               if l_0_10 then
-                                set_research_data("Error", (MpCommon.Base64Encode)(R20_PC425), R20_PC425)
+                                set_research_data("Error", (MpCommon.Base64Encode)(R20_PC430), R20_PC430)
                                 return mp.INFECTED
                               end
                             end
                             do return mp.CLEAN end
-                            -- DECOMPILER ERROR at PC434: freeLocal<0 in 'ReleaseLocals'
+                            -- DECOMPILER ERROR at PC439: freeLocal<0 in 'ReleaseLocals'
 
                           end
                         end

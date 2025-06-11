@@ -141,7 +141,8 @@ if l_0_12.Score > 30 then
             end
             local l_0_41 = (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern")
             if l_0_41 and #l_0_41 > 0 then
-              (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded")
+              (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded2")
+              l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspPattern"
             end
             local l_0_42, l_0_43 = safeJsonSerialize(l_0_1, 150, nil, true)
             if l_0_42 then

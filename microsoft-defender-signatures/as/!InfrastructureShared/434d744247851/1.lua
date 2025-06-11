@@ -161,7 +161,8 @@ else
                         -- DECOMPILER ERROR at PC401: Confused about usage of register: R14 in 'UnsetPending'
 
                         if (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern") and #(mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern") > 0 then
-                          (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns")
+                          (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns2")
+                          l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspPattern"
                         end
                         do
                           do
@@ -170,12 +171,12 @@ else
                               (MpCommon.BmTriggerSig)(l_0_40.ppid, "SuspDownload_BM_Capture", safeJsonSerialize(l_0_1, 150, nil, true))
                             else
                               if l_0_1 then
-                                set_research_data("Error", (MpCommon.Base64Encode)(R21_PC430), R21_PC430)
+                                set_research_data("Error", (MpCommon.Base64Encode)(R21_PC435), R21_PC435)
                                 return mp.INFECTED
                               end
                             end
                             do return mp.CLEAN end
-                            -- DECOMPILER ERROR at PC439: freeLocal<0 in 'ReleaseLocals'
+                            -- DECOMPILER ERROR at PC444: freeLocal<0 in 'ReleaseLocals'
 
                           end
                         end
