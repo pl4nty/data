@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Copilot Key test app",
+    "downloadDescription": "This test app validates output from keyboard firmware when pressing the Copilot hardware key.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "copilotkeytestapp.zip",
+            "url": "https://download.microsoft.com/download/c1b10973-5a98-4a2a-b2cb-2274b074f30c/copilotkeytestapp.zip",
+            "size": "56373",
+            "version": "1.00",
+            "datePublished": "6/11/2025 10:31:51 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This test app validates output from keyboard firmware when pressing the Copilot hardware key.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.00",
+    "detailsSection_file_name": [
+        "copilotkeytestapp.zip"
+    ],
+    "detailsSection_file_size": [
+        "55.1 KB"
+    ],
+    "detailsSection_file_date": "6/11/2025",
+    "systemRequirementsSection": "Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download and run the app.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108217",
+    "downloadPreload": true
+}
