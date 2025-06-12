@@ -76,12 +76,12 @@
   },
   {
     "name": "blink",
-    "size": 32154726,
+    "size": 32169865,
     "file_count": 3950
   },
   {
     "name": "boringssl",
-    "size": 72234,
+    "size": 72546,
     "file_count": 16
   },
   {
@@ -181,8 +181,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17007510,
-    "file_count": 2023
+    "size": 17021297,
+    "file_count": 2026
   },
   {
     "name": "entity_extraction",
@@ -361,7 +361,7 @@
   },
   {
     "name": "libc++",
-    "size": 6204583,
+    "size": 6205029,
     "file_count": 934
   },
   {
@@ -431,7 +431,7 @@
   },
   {
     "name": "libxslt",
-    "size": 410214,
+    "size": 410512,
     "file_count": 18
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3623781,
+    "size": 3623815,
     "file_count": 564
   },
   {
@@ -610,6 +610,11 @@
     "file_count": 2
   },
   {
+    "name": "readability",
+    "size": 1572204,
+    "file_count": 15
+  },
+  {
     "name": "rust",
     "size": 249639,
     "file_count": 12
@@ -636,8 +641,8 @@
   },
   {
     "name": "skia",
-    "size": 3452601,
-    "file_count": 1178
+    "size": 3560818,
+    "file_count": 1184
   },
   {
     "name": "speech-dispatcher",
@@ -661,7 +666,7 @@
   },
   {
     "name": "sqlite",
-    "size": 562158,
+    "size": 565906,
     "file_count": 12
   },
   {
@@ -681,7 +686,7 @@
   },
   {
     "name": "tflite",
-    "size": 1674005,
+    "size": 1633100,
     "file_count": 480
   },
   {
@@ -721,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6160897,
+    "size": 6160207,
     "file_count": 174
   },
   {
