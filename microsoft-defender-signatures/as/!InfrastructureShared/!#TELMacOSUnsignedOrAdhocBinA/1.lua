@@ -20,7 +20,7 @@ end
 if l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, ".dylib", -6, true) then
+if (string.find)(l_0_1, ".dylib", -6, true) or (string.find)(l_0_1, ".so", -3, true) or (string.find)(l_0_1, "__python_generated_allocator_preload", 1, true) or (string.find)(l_0_1, "/private/tmp/deviceconnect-services-", 1, true) then
   return mp.CLEAN
 end
 if IsExcludedByImagePathMacOS(l_0_1) then
