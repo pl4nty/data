@@ -2343,6 +2343,7 @@
     <o:token o:name="SuggestionMinTypingIdleTimeMS">0</o:token>
     <o:token o:name="UrlReputationAppNames">0:Word|1:Excel|3:PowerPoint|6:Outlook|8:Publisher|10:Visio|12:OneNote|64:Union|67:AppGuardBroker|72:Loop</o:token>
     <o:token o:name="UrlReputationPlatformNames">0:_Android|1:_iOS|2:_Mac|3:_Desktop</o:token>
+    <o:token o:name="UrlPathForSharesV2Unpack">_api/v2.0/shares</o:token>
     <o:token o:name="GallatinFederationDomain">partner.microsoftonline.cn</o:token>
     <o:token o:name="GlobalFederationProvider">microsoftonline.com</o:token>
     <o:token o:name="LiveIdTrustedRootDomains">live.net|live.com|live.org|onedrive.com|office.com|office365.com|outlook.com|outlook-sdf.com|hotmail.com|microsoftpersonalcontent.com|microsoftpersonalcontentppe.com</o:token>

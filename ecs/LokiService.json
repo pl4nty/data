@@ -1124,7 +1124,7 @@
         "searchux.killSwitches.fd103984-5798-4920-987c-c6fe11cbbad1": false,
         "searchux.pfp.preloadConfiguredRefiners": true,
         "searchux.refinerValuesCapLimit": 50,
-        "searchux.serpVersion": "1.20250527.2.0",
+        "searchux.serpVersion": "",
         "searchux.serviceEnvironmentConfig": "Prod",
         "searchux.shouldFetchVerticalsFromDepartmentId": true,
         "searchux.sortHubSiteActivities": true,
@@ -1179,7 +1179,7 @@
     },
     "OrganizationExplorer": {
         "GraphQLEndpointRequestLimit": 100,
-        "OrgExplorerBootstraperVersion": "1.20250528.4.0",
+        "OrgExplorerBootstraperVersion": "1.20250610.3.0",
         "OrgExplorerVersion": "1.20250528.4.0",
         "forceUseEVfromBootstrapper": false,
         "isPersistentQueriesEnabled": true,
