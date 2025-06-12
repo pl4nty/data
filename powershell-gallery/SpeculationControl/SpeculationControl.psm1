@@ -150,9 +150,21 @@ function Get-SpeculationControlSettings {
             [System.UInt32]$scf2PsdpHardwareProtected =  0x04
             [System.UInt32]$scf2FbClearEnabled =  0x08
             [System.UInt32]$scf2FbClearReported =  0x10
-
+            [System.UInt32]$scf2BhbEnabled = 0x20
+            [System.UInt32]$scf2BhbDisabledSystemPolicy = 0x40
+            [System.UInt32]$scf2BhbDisabledNoHardwareSupport = 0x80
+            [System.UInt32]$scf2BranchConfusionStatus =  0x300
+            [System.UInt32]$scf2BranchConfusionReported = 0x400
             [System.UInt32]$scf2RdclHardwareProtectedReported =  0x800
             [System.UInt32]$scf2RdclHardwareProtected =  0x1000
+            [System.UInt32]$scf2GdsReported = 0x2000
+            [System.UInt32]$scf2GdsStatus = 0x1C000
+            [System.UInt32]$scf2SrsoReported = 0x20000
+            [System.UInt32]$scf2SrsoStatus = 0xC0000
+            [System.UInt32]$scf2DivideByZeroReported = 0x100000
+            [System.UInt32]$scf2DivideByZeroStatus = 0x200000
+            [System.UInt32]$scf2RfdsReported = 0x400000
+            [System.UInt32]$scf2RfdsStatus = 0x1800000
 
             [System.UInt32]$flags = [System.UInt32][System.Runtime.InteropServices.Marshal]::ReadInt32($systemInformationPtr)
             
@@ -225,6 +237,7 @@ function Get-SpeculationControlSettings {
                 Write-Verbose "SsbdRequired                      : $(($flags -band $scfSsbdRequired) -ne 0)"
                 Write-Verbose "SpecCtrlRetpolineEnabled          : $(($flags -band $scfSpecCtrlRetpolineEnabled) -ne 0)"
                 Write-Verbose "SpecCtrlImportOptimizationEnabled : $(($flags -band $scfSpecCtrlImportOptimizationEnabled) -ne 0)"
+                Write-Verbose "EnhancedIbrs                      : $(($flags -band $scfEnhancedIbrs) -ne 0)"
             }
         }
 
@@ -563,6 +576,164 @@ function Get-SpeculationControlSettings {
             $object | Add-Member -MemberType NoteProperty -Name FBSDPHardwareVulnerable -Value ($fbsdpHardwareProtected -ne $true)
             $object | Add-Member -MemberType NoteProperty -Name PSDPHardwareVulnerable -Value ($psdpHardwareProtected -ne $true)
             $object | Add-Member -MemberType NoteProperty -Name FBClearWindowsSupportEnabled -Value $fbClearEnabled
+        }
+
+        #
+        # Speculation control settings for BHB CVE-2022-0001, CVE-2022-0002
+        #
+
+        $bhbEnabled = ($flags2 -band $scf2BhbEnabled) -ne 0
+        $bhbDisabledSystemPolicy = ($flags2 -band $scf2BhbDisabledSystemPolicy) -ne 0
+        $bhbDisabledNoHardwareSupport = ($flags2 -band $scf2BhbDisabledNoHardwareSupport) -ne 0
+                        
+        $object | Add-Member -MemberType NoteProperty -Name BhbEnabled -Value $bhbEnabled
+        $object | Add-Member -MemberType NoteProperty -Name BhbDisabledSystemPolicy -Value $bhbDisabledSystemPolicy
+        $object | Add-Member -MemberType NoteProperty -Name BhbDisabledNoHardwareSupport -Value $bhbDisabledNoHardwareSupport
+        
+        #
+        # Speculation control settings for BranchConfusion/Retbleed CVE-2022-23825
+        #
+
+        $branchConfusionReported = ($flags2 -band $scf2BranchConfusionReported) -ne 0
+
+        $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATION_UNSUPPORTED = 0x0
+        $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATION_DISABLED = 0x1
+        $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_HARDWARE_IMMUNE = 0x2
+        $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATED = 0x3
+        
+        if ($manufacturer -eq "AuthenticAMD") {
+            $branchConfusionStatus = (($flags2 -band $scf2BranchConfusionStatus) -shr 8)
+        }
+        elseif ($manufacturer -eq "GenuineIntel") {
+            if ($btiHardwarePresent -eq $false) {
+                $branchConfusionStatus = $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_HARDWARE_IMMUNE
+            }
+            elseif ($btiWindowsSupportEnabled -eq $true) {
+                $branchConfusionStatus = $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATED
+            }
+            else {
+                $branchConfusionStatus = $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATION_DISABLED
+            }
+        }
+                        
+        $branchConfusionStatusString = switch ($branchConfusionStatus) {
+            $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATION_UNSUPPORTED { "SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATION_UNSUPPORTED" }
+            $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATION_DISABLED { "SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATION_DISABLED" }
+            $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_HARDWARE_IMMUNE { "SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_HARDWARE_IMMUNE" }
+            $SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATED { "SYSTEM_SPECULATION_CONTROL_BRANCH_CONFUSION_MITIGATED" }
+            default { 'UNKNOWN_VALUE' }
+        }
+
+        $object | Add-Member -MemberType NoteProperty -Name BranchConfusionReported -Value $branchConfusionReported
+        
+        if ($branchConfusionReported -eq $true) {
+            $object | Add-Member -MemberType NoteProperty -Name BranchConfusionStatus -Value $branchConfusionStatusString
+        }
+
+        #
+        # Speculation control settings for GDS (Gather Data Sample) CVE-2022-40982
+        #
+
+        $gdsReported = ($flags2 -band $scf2GdsReported) -ne 0
+
+        $SYSTEM_SPECULATION_CONTROL_GDS_MITIGATION_UNSUPPORTED = 0x0
+        $SYSTEM_SPECULATION_CONTROL_GDS_MITIGATION_DISABLED = 0x1
+        $SYSTEM_SPECULATION_CONTROL_GDS_HARDWARE_IMMUNE = 0x2
+        $SYSTEM_SPECULATION_CONTROL_GDS_MITIGATED = 0x3
+        $SYSTEM_SPECULATION_CONTROL_GDS_MITIGATED_AND_LOCKED = 0x4
+
+        $gdsStatus = (($flags2 -band $scf2GdsStatus) -shr 14)
+
+        $gdsStatusString = switch ($gdsStatus) {
+            $SYSTEM_SPECULATION_CONTROL_GDS_MITIGATION_UNSUPPORTED { "SYSTEM_SPECULATION_CONTROL_GDS_MITIGATION_UNSUPPORTED" }
+            $SYSTEM_SPECULATION_CONTROL_GDS_MITIGATION_DISABLED { "SYSTEM_SPECULATION_CONTROL_GDS_MITIGATION_DISABLED" }
+            $SYSTEM_SPECULATION_CONTROL_GDS_HARDWARE_IMMUNE { "SYSTEM_SPECULATION_CONTROL_GDS_HARDWARE_IMMUNE" }
+            $SYSTEM_SPECULATION_CONTROL_GDS_MITIGATED { "SYSTEM_SPECULATION_CONTROL_GDS_MITIGATED" }
+            $SYSTEM_SPECULATION_CONTROL_GDS_MITIGATED_AND_LOCKED { "SYSTEM_SPECULATION_CONTROL_GDS_MITIGATED_AND_LOCKED" }
+            default { 'UNKNOWN_VALUE' }
+        }
+
+        $object | Add-Member -MemberType NoteProperty -Name GdsReported -Value $gdsReported
+
+        if ($gdsReported -eq $true) {
+            $object | Add-Member -MemberType NoteProperty -Name GdsStatus -Value $gdsStatusString
+        }
+
+        #
+        # Speculation control settings for SRSO (Speculative Return Stack Overflow) CVE-2023-20569 
+        #
+
+        $srsoReported = ($flags2 -band $scf2SrsoReported) -ne 0
+
+        $SYSTEM_SPECULATION_CONTROL_SRSO_MITIGATION_UNSUPPORTED = 0x0
+        $SYSTEM_SPECULATION_CONTROL_SRSO_MITIGATION_DISABLED = 0x1
+        $SYSTEM_SPECULATION_CONTROL_SRSO_HARDWARE_IMMUNE = 0x2
+        $SYSTEM_SPECULATION_CONTROL_SRSO_MITIGATED = 0x3
+
+        $srsoStatus = (($flags2 -band $scf2SrsoStatus) -shr 18)
+
+        $srsoStatusString = switch ($srsoStatus) {
+            $SYSTEM_SPECULATION_CONTROL_SRSO_MITIGATION_UNSUPPORTED { "SYSTEM_SPECULATION_CONTROL_SRSO_MITIGATION_UNSUPPORTED" }
+            $SYSTEM_SPECULATION_CONTROL_SRSO_MITIGATION_DISABLED { "SYSTEM_SPECULATION_CONTROL_SRSO_MITIGATION_DISABLED" }
+            $SYSTEM_SPECULATION_CONTROL_SRSO_HARDWARE_IMMUNE { "SYSTEM_SPECULATION_CONTROL_SRSO_HARDWARE_IMMUNE" }
+            $SYSTEM_SPECULATION_CONTROL_SRSO_MITIGATED { "SYSTEM_SPECULATION_CONTROL_SRSO_MITIGATED" }
+            default { 'UNKNOWN_VALUE' }
+        }
+
+        $object | Add-Member -MemberType NoteProperty -Name SrsoReported -Value $srsoReported
+        
+        if ($srsoReported -eq $true) {
+            $object | Add-Member -MemberType NoteProperty -Name SrsoStatus -Value $srsoStatusString
+        }
+
+        #
+        # Speculation control settings for DivideByZero CVE-2023-20588
+        #
+
+        $divideByZeroReported = ($flags2 -band $scf2DivideByZeroReported) -ne 0
+
+        $SYSTEM_SPECULATION_CONTROL_DIVIDE_BY_ZERO_HARDWARE_IMMUNE = 0x0
+        $SYSTEM_SPECULATION_CONTROL_DIVIDE_BY_ZERO_MITIGATED = 0x1
+
+        $divideByZeroStatus = (($flags2 -band $scf2DivideByZeroStatus) -shr 21)
+
+        $divideByZeroStatusString = switch ($divideByZeroStatus) {
+            $SYSTEM_SPECULATION_CONTROL_DIVIDE_BY_ZERO_HARDWARE_IMMUNE { "SYSTEM_SPECULATION_CONTROL_DIVIDE_BY_ZERO_HARDWARE_IMMUNE" }
+            $SYSTEM_SPECULATION_CONTROL_DIVIDE_BY_ZERO_MITIGATED { "SYSTEM_SPECULATION_CONTROL_DIVIDE_BY_ZERO_MITIGATED" }
+            default { 'UNKNOWN_VALUE' }
+        }
+
+        $object | Add-Member -MemberType NoteProperty -Name DivideByZeroReported -Value $divideByZeroReported
+
+        if ($divideByZeroReported -eq $true) {
+            $object | Add-Member -MemberType NoteProperty -Name DivideByZeroStatus -Value $divideByZeroStatusString
+        }
+
+        #
+        # Speculation control settings for RFDS (Register File Data Sampling) CVE-2023-28746
+        #
+        
+        $rfdsReported = ($flags2 -band $scf2RfdsReported) -ne 0
+
+        $SYSTEM_SPECULATION_CONTROL_RFDS_MITIGATION_UNSUPPORTED = 0x0
+        $SYSTEM_SPECULATION_CONTROL_RFDS_MITIGATION_DISABLED = 0x1
+        $SYSTEM_SPECULATION_CONTROL_RFDS_HARDWARE_IMMUNE = 0x2
+        $SYSTEM_SPECULATION_CONTROL_RFDS_MITIGATED = 0x3
+
+        $rfdsStatus = (($flags2 -band $scf2RfdsStatus) -shr 23)
+
+        $rfdsStatusString = switch ($rfdsStatus) {
+            $SYSTEM_SPECULATION_CONTROL_RFDS_MITIGATION_UNSUPPORTED { "SYSTEM_SPECULATION_CONTROL_RFDS_MITIGATION_UNSUPPORTED" }
+            $SYSTEM_SPECULATION_CONTROL_RFDS_MITIGATION_DISABLED { "SYSTEM_SPECULATION_CONTROL_RFDS_MITIGATION_DISABLED" }
+            $SYSTEM_SPECULATION_CONTROL_RFDS_HARDWARE_IMMUNE { "SYSTEM_SPECULATION_CONTROL_RFDS_HARDWARE_IMMUNE" }
+            $SYSTEM_SPECULATION_CONTROL_RFDS_MITIGATED { "SYSTEM_SPECULATION_CONTROL_RFDS_MITIGATED" }
+            default { 'UNKNOWN_VALUE' }
+        }
+
+        $object | Add-Member -MemberType NoteProperty -Name RfdsReported -Value $rfdsReported
+
+        if ($rfdsReported -eq $true) {
+            $object | Add-Member -MemberType NoteProperty -Name RfdsStatus -Value $rfdsStatusString
         }
         
         #
