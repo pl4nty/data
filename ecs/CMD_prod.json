@@ -434,7 +434,6 @@
         "EnableReturnCollectionRemoteAction": true,
         "EnableReturnCollectionStatus": true,
         "EnableReverseIntegrityValidationForActionHistory": true,
-        "EnableRunDummyScriptForReActions": true,
         "EnableRunningQuotaComputeProcess": true,
         "EnableRunningQuotaComputeProcessVerboseLogging": true,
         "EnableRunningQuotaForecastConsumptionVerboseLogging": true,
