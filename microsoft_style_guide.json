@@ -1930,6 +1930,11 @@
                             "toc_title": "Bot Service"
                         },
                         {
+                            "href": "a_z_names_terms/b/brand-center",
+                            "permissioned-type": "private",
+                            "toc_title": "brand center"
+                        },
+                        {
                             "href": "a_z_names_terms/b/brand-kit-creator",
                             "permissioned-type": "private",
                             "toc_title": "Brand Kit Creator"
@@ -3367,6 +3372,11 @@
                                     "toc_title": "Sales Order Agent"
                                 },
                                 {
+                                    "href": "a_z_names_terms/d/d365agents/sales-qualification-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Sales Qualification Agent"
+                                },
+                                {
                                     "href": "a_z_names_terms/d/d365agents/sales-research-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Sales Research Agent"
@@ -4183,6 +4193,11 @@
                             "href": "a_z_names_terms/h/healthcare-apis",
                             "permissioned-type": "private",
                             "toc_title": "Healthcare APIs"
+                        },
+                        {
+                            "href": "a_z_names_terms/h/help",
+                            "permissioned-type": "private",
+                            "toc_title": "Help"
                         },
                         {
                             "href": "a_z_names_terms/h/hibernation-hibernate",
@@ -5458,6 +5473,76 @@
                             "href": "a_z_names_terms/m/microsoft-incident-response-retainer-",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Incident Response Retainer"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-industry-offerings",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft industry offerings"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-consumer-goods",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Consumer Goods"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-defense-and-intelligence",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Defense and Intelligence"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-energy-and-resources",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Energy and Resources"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-financial-services",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Financial Services"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-government",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Government"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-healthcare",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Healthcare"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-manufacturing",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Manufacturing"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-media-and-entertainment",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Media and Entertainment"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-mobility",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Mobility"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-nonprofits",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Nonprofits"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-retail",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Retail"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-telecommunications",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Telecommunications"
+                                }
+                            ],
+                            "toc_title": "Microsoft industry offerings"
                         },
                         {
                             "href": "a_z_names_terms/m/microsoft-information-protection",
@@ -8675,6 +8760,11 @@
                             "toc_title": "Teams"
                         },
                         {
+                            "href": "a_z_names_terms/t/telemetry",
+                            "permissioned-type": "private",
+                            "toc_title": "telemetry"
+                        },
+                        {
                             "href": "a_z_names_terms/t/templates",
                             "permissioned-type": "private",
                             "toc_title": "templates"
@@ -8733,6 +8823,11 @@
                             "href": "a_z_names_terms/t/the-when-to-include-in-names",
                             "permissioned-type": "private",
                             "toc_title": "the (when to include in names)"
+                        },
+                        {
+                            "href": "a_z_names_terms/t/theme",
+                            "permissioned-type": "private",
+                            "toc_title": "theme"
                         },
                         {
                             "href": "a_z_names_terms/t/things",
@@ -13574,7 +13669,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2581,
+        "count_of_node_with_href": 2599,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

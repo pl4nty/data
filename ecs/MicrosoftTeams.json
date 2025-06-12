@@ -1182,6 +1182,7 @@
         "UI_EnableTELicenseFetch": true,
         "UI_EnableTrouterClient": true,
         "UI_EnableUpsertOndemandNotificationStaffList": true,
+        "UI_EnableVAApp": false,
         "UI_EnableVAExportFunctionality": true,
         "UI_EnableViewDropdownForQueue": true,
         "UI_EnableWebRtcAppointmentToggle": true,
@@ -1194,7 +1195,8 @@
         "UI_SupportWWPhoneNumber": false,
         "UI_UseV2FetchSetting": true,
         "UI_isTenantSettingEnabled": true,
-        "UseMSALAuthHandler": true
+        "UseMSALAuthHandler": true,
+        "VAAppDeprecation_TenantExclusionList": []
     },
     "MicrosoftTeamsTelehealthWebRtc": {
         "DataPrivacyNoticeUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
