@@ -36,30 +36,30 @@ end
 ;
 (mp.set_mpattribute)("ClickFix_PS_found_hidden")
 local l_0_6 = {}
--- DECOMPILER ERROR at PC88: No list found for R6 , SetList fails
+-- DECOMPILER ERROR at PC91: No list found for R6 , SetList fails
 
--- DECOMPILER ERROR at PC89: Overwrote pending register: R7 in 'AssignReg'
+-- DECOMPILER ERROR at PC92: Overwrote pending register: R7 in 'AssignReg'
 
 local l_0_7 = "iwr"
--- DECOMPILER ERROR at PC90: Overwrote pending register: R8 in 'AssignReg'
+-- DECOMPILER ERROR at PC93: Overwrote pending register: R8 in 'AssignReg'
 
 local l_0_8 = "iex"
--- DECOMPILER ERROR at PC91: Overwrote pending register: R9 in 'AssignReg'
+-- DECOMPILER ERROR at PC94: Overwrote pending register: R9 in 'AssignReg'
 
 local l_0_9 = "irm"
--- DECOMPILER ERROR at PC92: Overwrote pending register: R10 in 'AssignReg'
+-- DECOMPILER ERROR at PC95: Overwrote pending register: R10 in 'AssignReg'
 
 local l_0_10 = "curl"
--- DECOMPILER ERROR at PC93: Overwrote pending register: R11 in 'AssignReg'
+-- DECOMPILER ERROR at PC96: Overwrote pending register: R11 in 'AssignReg'
 
 local l_0_11 = "bitsadmin"
--- DECOMPILER ERROR at PC94: Overwrote pending register: R13 in 'AssignReg'
+-- DECOMPILER ERROR at PC97: Overwrote pending register: R13 in 'AssignReg'
 
--- DECOMPILER ERROR at PC94: Overwrote pending register: R12 in 'AssignReg'
+-- DECOMPILER ERROR at PC97: Overwrote pending register: R12 in 'AssignReg'
 
--- DECOMPILER ERROR at PC95: Overwrote pending register: R14 in 'AssignReg'
+-- DECOMPILER ERROR at PC98: Overwrote pending register: R14 in 'AssignReg'
 
--- DECOMPILER ERROR at PC96: Overwrote pending register: R15 in 'AssignReg'
+-- DECOMPILER ERROR at PC99: Overwrote pending register: R15 in 'AssignReg'
 
 ;
 ("e%:jscript")("downloadstring", "invoke%-restmethod", "invoke%-webrequest")
@@ -68,13 +68,10 @@ l_0_3:gsub("\'(.-)\'", function()
   l_0_8 = l_0_8 + 1
 end
 )
--- DECOMPILER ERROR at PC107: Overwrote pending register: R16 in 'AssignReg'
+-- DECOMPILER ERROR at PC110: Overwrote pending register: R16 in 'AssignReg'
 
--- DECOMPILER ERROR at PC108: Overwrote pending register: R17 in 'AssignReg'
+-- DECOMPILER ERROR at PC111: Overwrote pending register: R17 in 'AssignReg'
 
-l_0_9 = select(2, l_0_3:gsub("invoke%-expression", "start%-process"))
-l_0_10 = select(2, l_0_3:gsub("([\"\'][^\"\']-[\"\'])[\"\']", ""))
-l_0_11 = select(2, l_0_3:gsub("[\"\'].-[\"\']%s*%+%s*[\"\']", ""))
 local l_0_12 = l_0_7 + l_0_8 + l_0_9 + l_0_10 + l_0_11
 local l_0_13 = 10
 if l_0_13 > l_0_12 then
@@ -83,11 +80,13 @@ end
 ;
 (mp.set_mpattribute)("ClickFix_PS_total_obfuscation_signals_gt10")
 local l_0_14 = (string.gsub)(l_0_3, "[\"\'`^()+#&]", "")
-l_0_14 = (string.lower)(l_0_14)
-local l_0_15 = str_count_match(l_0_14, l_0_6)
-if l_0_15 >= 2 then
-  (mp.set_mpattribute)("ClickFix_PS_susp_string_gt2")
-  return mp.INFECTED
+do
+  local l_0_15 = str_count_match(l_0_14, l_0_6)
+  if l_0_15 >= 2 then
+    (mp.set_mpattribute)("ClickFix_PS_susp_string_gt2")
+    return mp.INFECTED
+  end
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
-return mp.CLEAN
 
