@@ -39,6 +39,7 @@
   .NOTES
   OS is strictly optional as generally one BIOS update package is released for
   both Windows 10 and 11.
+  Updated in 2.3.0 to support new single-capsule updates with System Firmware Versions
 
 #>
 function Get-LnvAvailableBiosVersion
@@ -95,6 +96,23 @@ function Get-LnvAvailableBiosVersion
         }
     }
 
+    function Get-LnvSFWBiosVersion
+    {
+        param (
+            [parameter(Mandatory = $true)]
+            [string]$ReadmeUrl
+        )
+
+        $readme = (New-Object System.Net.WebClient).DownloadString($ReadmeUrl)
+        # Use regular expression to find the version number for System Firmware
+        $regex = [regex]::Match($readme, '(\d+\.\d+)&nbsp;&nbsp;\(UEFI BIOS\)')
+        if ($regex.Success) {
+            $systemFirmwareVersion = $regex.Groups[1].Value
+
+            return $systemFirmwareVersion
+        }
+    }
+
     # Retrieve package URLs from catalogs
     $PackageUrls = Get-PackageUrl -CatalogUrl $win11CatalogUrl
     if (-not $PackageUrls)
@@ -122,10 +140,16 @@ function Get-LnvAvailableBiosVersion
                 continue
             }
 
-
             $baseUrl = $Url.Substring(0, $Url.LastIndexOf('/') + 1)
             $PackageExe = $baseUrl + $PackageXml.Package.Files.Installer.File.Name
-            $PackageVersion = $PackageXml.Package.version
+            $PackageTitle = $PackageXml.Package.Title.Desc.InnerText
+            if ($PackageTitle.StartsWith("System Firmware", [System.StringComparison]::OrdinalIgnoreCase)) {
+                $PackageReadme = $baseUrl + $PackageXml.Package.Files.ReadMe.File.Name
+                $PackageVersion = Get-LnvSFWBiosVersion -ReadmeUrl $PackageReadme
+            } else {
+                $PackageVersion = $PackageXml.Package.version
+            }
+
             $ReleaseDate = $PackageXml.Package.ReleaseDate
 
             # ThinkCentre/ThinkStation have full BIOS image name with hex build number in package XML version attribute, need to convert to decimal for comparison.

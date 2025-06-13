@@ -57,7 +57,7 @@ $myLnvBatteries = New-Object 'System.Collections.Generic.List[LnvBattery]'
 
 try {
     # Using Get-WmiObject because Get-CimInstance does not work with this particular class
-    $batteries = Get-WmiObject -Class 'BatteryStaticData' -Namespace 'root\wmi'
+    $batteries = Get-WmiObject -Class 'BatteryStaticData' -Namespace 'root\wmi' -ErrorAction Stop
     foreach ( $battery in $batteries) {
         $thisBattery = [LnvBattery]::new()
         $thisBattery.InstanceName = $battery.InstanceName
@@ -67,13 +67,13 @@ try {
         $myLnvBatteries.Add($thisBattery)
     }
 } catch {
-    Write-Output -InputObject 'Unexpected error reading BatteryStaticData class from root\wmi'
+    Write-Output -InputObject 'Unexpected error reading BatteryStaticData class from root\wmi; device may not have a battery.'
     return
     #return no results, must be able to identify each battery in order to proceed
 }
 
 try {
-    $batCaps = Get-CimInstance 'BatteryFullChargedCapacity' -Namespace 'root\wmi'
+    $batCaps = Get-CimInstance 'BatteryFullChargedCapacity' -Namespace 'root\wmi' -ErrorAction SilentlyContinue
     foreach ($battery in $batCaps) {
         foreach ($thisbattery in $myLnvBatteries) {
             if ($battery.InstanceName -eq $thisbattery.InstanceName) {
@@ -87,7 +87,7 @@ try {
 }
 
 try {
-    $batteries = Get-CimInstance 'Win32_PortableBattery'
+    $batteries = Get-CimInstance 'Win32_PortableBattery' -ErrorAction SilentlyContinue
     foreach ($battery in $batteries) {
         foreach ($thisbattery in $myLnvBatteries) {
             if ($battery.Name -eq $thisbattery.DeviceName) {
@@ -102,7 +102,7 @@ try {
 }
 
 try {
-    $batteries = Get-CimInstance 'BatteryStatus' -Namespace 'root\wmi'
+    $batteries = Get-CimInstance 'BatteryStatus' -Namespace 'root\wmi' -ErrorAction SilentlyContinue
     foreach ($battery in $batteries) {
         foreach ($thisbattery in $myLnvBatteries) {
             if ($battery.InstanceName -eq $thisbattery.InstanceName) {

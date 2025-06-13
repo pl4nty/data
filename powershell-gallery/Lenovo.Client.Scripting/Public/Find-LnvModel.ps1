@@ -33,34 +33,43 @@
   .NOTES
   The output will also show the other machine types associated with this model.
 #>
-function Find-LnvModel {
-    param (
-        [ValidateLength(4,4)][parameter(position = 0, Mandatory = $true, helpMessage = "Enter the four-character Machine Type to search for", ParameterSetName="MT")] [String] $MachineType,
-        [ValidateLength(4,4)][parameter(position = 0, Mandatory = $true, helpMessage = "Enter the four-character BIOS Image Name to search for", ParameterSetName="BIOS")] [String] $Bios
-    )
+function Find-LnvModel
+{
+  [CmdletBinding(DefaultParameterSetName = 'MT')]
+  param (
+    [ValidateLength(4, 4)][parameter(position = 0, Mandatory = $true, helpMessage = "Enter the four-character Machine Type to search for", ParameterSetName = "MT")] [String] $MachineType,
+    [ValidateLength(4, 4)][parameter(position = 0, Mandatory = $true, helpMessage = "Enter the four-character BIOS Image Name to search for", ParameterSetName = "BIOS")] [String] $Bios
+  )
 
-    if (-not[string]::IsNullOrWhiteSpace($MachineType)) {
-      $searchString = $MachineType.ToUpper().Trim()
-    } elseif (-not[string]::IsNullOrWhiteSpace($Bios)) {
-      $searchString = $Bios.ToUpper().Trim()
-    } else {
-      return
-    }
+  if (-not[string]::IsNullOrWhiteSpace($MachineType))
+  {
+    $searchString = $MachineType.ToUpper().Trim()
+  }
+  elseif (-not[string]::IsNullOrWhiteSpace($Bios))
+  {
+    $searchString = $Bios.ToUpper().Trim()
+  }
+  else
+  {
+    return
+  }
 
-    try {
-      [xml]$catalog = Get-LnvDATCatalog
-    }
-    catch {
-      Write-Output $_
-      return
-    }
-    $node = $catalog.ModelList.Model | Where-Object { ($_.Types.Type.Contains("$searchString")) -or ($_.BIOS.image.ToUpper() -eq $("$searchString")) }
-    if($null -eq $node)
-    {
-      Write-Output "No models were found with $searchString"
-      return
-    }
-    Write-Output -InputObject ($node.name)
+  try
+  {
+    [xml]$catalog = Get-LnvDATCatalog
+  }
+  catch
+  {
+    Write-Output $_
+    return
+  }
+  $node = $catalog.ModelList.Model | Where-Object { ($_.Types.Type.Contains("$searchString")) -or ($_.BIOS.image.ToUpper() -eq $("$searchString")) }
+  if ($null -eq $node)
+  {
+    Write-Output "No models were found with $searchString"
+    return
+  }
+  Write-Output -InputObject ($node.name)
 }
 
 # SIG # Begin signature block

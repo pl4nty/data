@@ -43,6 +43,7 @@ function Get-LnvBiosVersion {
         if ($Format -eq "decimal") {
             [string]$major = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SystemBIOSMajorVersion
             [string]$minor = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SystemBIOSMinorVersion
+            $minor = $minor.PadLeft(2, '0')
             $BiosVersion = $major + "." + $minor
         }
         else {

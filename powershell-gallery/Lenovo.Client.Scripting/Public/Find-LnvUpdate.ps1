@@ -184,7 +184,7 @@ function Find-LnvUpdate {
     if ($ListAll) {
         return $tbl
     } else {
-        $selection = ($tbl | Out-GridView -OutputMode Single -Title 'Found updates')
+        $selection = ($tbl | Out-GridView -OutputMode Multiple -Title 'Found updates')
         if ($null -ne $selection) {
             $selection
         }
