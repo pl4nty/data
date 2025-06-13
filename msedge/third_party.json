@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14612139,
+    "size": 14612857,
     "file_count": 830
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32169865,
-    "file_count": 3950
+    "size": 32178620,
+    "file_count": 3951
   },
   {
     "name": "boringssl",
@@ -456,7 +456,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 277161,
+    "size": 277761,
     "file_count": 38
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 25004,
+    "size": 25037,
     "file_count": 12
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3623815,
+    "size": 3624307,
     "file_count": 564
   },
   {
@@ -641,8 +641,8 @@
   },
   {
     "name": "skia",
-    "size": 3560818,
-    "file_count": 1184
+    "size": 3455467,
+    "file_count": 1178
   },
   {
     "name": "speech-dispatcher",
@@ -661,7 +661,7 @@
   },
   {
     "name": "spirv-tools",
-    "size": 199429,
+    "size": 199968,
     "file_count": 11
   },
   {
@@ -711,8 +711,8 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1282396,
-    "file_count": 21
+    "size": 1316763,
+    "file_count": 23
   },
   {
     "name": "vulkan-loader",
@@ -721,12 +721,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2300404,
+    "size": 2370226,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6160207,
+    "size": 6189900,
     "file_count": 174
   },
   {
