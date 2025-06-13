@@ -42,7 +42,7 @@ do
 
   -- DECOMPILER ERROR at PC93: Overwrote pending register: R7 in 'AssignReg'
 
-  if not (".cloud/")(".press/", ".pro/") then
+  if not (".cloud")(".press", ".pro") then
     return mp.CLEAN
   end
   do return mp.INFECTED end
