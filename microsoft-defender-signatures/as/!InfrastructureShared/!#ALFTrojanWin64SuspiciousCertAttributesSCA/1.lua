@@ -10,6 +10,8 @@ l_0_0.TAG = "INTERFLOW"
 local l_0_1 = {}
 l_0_1["screenconnect.com"] = true
 l_0_1["digicert.com"] = true
+l_0_1["symantec.com"] = true
+l_0_1["symcb.com"] = true
 local l_0_2 = "ScreenConnect_Cert_EmbeddedConfig"
 local l_0_3 = (MpCommon.PathToWin32Path)((mp.getfilename)())
 if not l_0_3 then
@@ -38,9 +40,9 @@ for l_0_11 in (string.gmatch)(l_0_6, "(<configuration>.-ScreenConnect.Applicatio
   if l_0_13 and not l_0_1[l_0_13] and not l_0_1[l_0_12] and (l_0_14 ~= 1 or l_0_15 ~= 1) then
     local l_0_16 = SafeGetUrlReputation
     local l_0_17 = {}
-    -- DECOMPILER ERROR at PC98: No list found for R17 , SetList fails
+    -- DECOMPILER ERROR at PC100: No list found for R17 , SetList fails
 
-    -- DECOMPILER ERROR at PC99: Overwrote pending register: R18 in 'AssignReg'
+    -- DECOMPILER ERROR at PC101: Overwrote pending register: R18 in 'AssignReg'
 
     l_0_16 = l_0_16(l_0_17, l_0_12, false, 3000)
     l_0_17 = l_0_16.urls
@@ -67,21 +69,24 @@ for l_0_11 in (string.gmatch)(l_0_6, "(<configuration>.-ScreenConnect.Applicatio
   end
 end
 if l_0_7 == 0 then
-  local l_0_18, l_0_19, l_0_20 = (string.find)((string.gsub)(l_0_6, "([^%z])%z", "%1"), "(http.+)", #l_0_6 - 1280)
-  if l_0_20 and not l_0_1[l_0_20] then
-    local l_0_21 = (string.match)(l_0_20, "([^%.]+%.[^%.]+)$")
+  local l_0_18, l_0_19, l_0_20 = (string.find)((string.gsub)(l_0_6, "([^%z])%z", "%1"), "(http[^%c]+)$", #l_0_6 - 1280)
+  if l_0_20 then
+    local l_0_21 = (string.match)(l_0_20, "http[s:/]+([^%.]+%.[^%./:]+)")
     if l_0_21 and not l_0_1[l_0_21] then
-      (mp.set_mpattribute)((string.format)("%s_C2=%s", l_0_2, l_0_20))
-      local l_0_22 = SafeGetUrlReputation
-      local l_0_23 = {}
-      -- DECOMPILER ERROR at PC177: No list found for R13 , SetList fails
+      local l_0_22 = (string.match)(l_0_21, "([^%.]+%.[^%.]+)$")
+      if l_0_22 and not l_0_1[l_0_22] then
+        (mp.set_mpattribute)((string.format)("%s_C2=%s", l_0_2, l_0_21))
+        local l_0_23 = SafeGetUrlReputation
+        local l_0_24 = {}
+        -- DECOMPILER ERROR at PC186: No list found for R14 , SetList fails
 
-      -- DECOMPILER ERROR at PC178: Overwrote pending register: R14 in 'AssignReg'
+        -- DECOMPILER ERROR at PC187: Overwrote pending register: R15 in 'AssignReg'
 
-      l_0_22(l_0_23, l_0_20, false, 3000)
-      l_0_22 = mp
-      l_0_22 = l_0_22.INFECTED
-      return l_0_22
+        l_0_23(l_0_24, l_0_20, false, 3000)
+        l_0_23 = mp
+        l_0_23 = l_0_23.INFECTED
+        return l_0_23
+      end
     end
   end
   do

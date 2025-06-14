@@ -15,9 +15,12 @@ if l_0_0 then
     if l_0_6 ~= nil then
       local l_0_7 = (string.lower)(l_0_6)
       local l_0_8 = l_0_7:match("[^\\]+$")
+      if l_0_8 == nil then
+        return mp.CLEAN
+      end
       local l_0_9 = {}
       l_0_9["explorer.exe"] = ""
-      if l_0_8 ~= nil and l_0_9[l_0_8] then
+      if l_0_9[l_0_8] then
         return mp.INFECTED
       end
     end

@@ -7,6 +7,9 @@ if (mp.get_mpattributesubstring)("SplatLoader") then
   return mp.CLEAN
 end
 local l_0_0 = (MpCommon.PathToWin32Path)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE)))
+if l_0_0 == nil then
+  return mp.CLEAN
+end
 if (string.find)(l_0_0, ":\\programdata\\usoshared\\", 1, true) == nil then
   return mp.CLEAN
 end

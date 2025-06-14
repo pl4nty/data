@@ -17,17 +17,20 @@ local l_0_1 = (mp.getfilesize)()
 if l_0_1 > 5376 then
   local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
   l_0_2 = l_0_2:match("\\[^\\]+$")
+  if l_0_2 == nil then
+    return mp.CLEAN
+  end
   if (string.find)(l_0_2, "antiransomelastic", 1, true) then
     return mp.CLEAN
   end
   local l_0_3 = {}
-  -- DECOMPILER ERROR at PC41: No list found for R3 , SetList fails
+  -- DECOMPILER ERROR at PC46: No list found for R3 , SetList fails
 
-  -- DECOMPILER ERROR at PC42: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC47: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC43: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC48: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC44: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC49: Overwrote pending register: R6 in 'AssignReg'
 
   if (".zip")(".wz", ".pkm") == true then
     return mp.CLEAN
@@ -38,14 +41,14 @@ if l_0_1 > 5376 then
   end
   ;
   (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R7 in 'AssignReg'
+  -- DECOMPILER ERROR at PC73: Overwrote pending register: R7 in 'AssignReg'
 
   local l_0_5 = (mp.readfile)(l_0_1 - 512, ".cache")
   ;
   (mp.readprotection)(true)
-  -- DECOMPILER ERROR at PC77: Overwrote pending register: R8 in 'AssignReg'
+  -- DECOMPILER ERROR at PC82: Overwrote pending register: R8 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC78: Overwrote pending register: R9 in 'AssignReg'
+  -- DECOMPILER ERROR at PC83: Overwrote pending register: R9 in 'AssignReg'
 
   local l_0_6 = (string.find)(l_0_5, ".pkgd", ".sfc", true)
   if l_0_6 == nil then
@@ -61,7 +64,7 @@ if l_0_1 > 5376 then
   end
   ;
   (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC124: Overwrote pending register: R11 in 'AssignReg'
+  -- DECOMPILER ERROR at PC129: Overwrote pending register: R11 in 'AssignReg'
 
   local l_0_9 = (mp.readfile)(l_0_1 - (l_0_6) - l_0_7 - 1, ".p00")
   ;

@@ -6,7 +6,7 @@
 local l_0_0 = "ExecutableNonTextSection"
 local l_0_1 = {}
 local l_0_2 = (MpCommon.PathToWin32Path)((mp.getfilename)())
-if l_0_2 == nil then
+if not l_0_2 then
   return mp.CLEAN
 end
 ;

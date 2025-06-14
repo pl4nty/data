@@ -13,7 +13,11 @@ if l_0_0 == mp.SCANREASON_AMSI then
       if not l_0_5 then
         return mp.CLEAN
       end
-      local l_0_6 = (string.lower)((mp.GetProcessCommandLine)(l_0_5))
+      local l_0_6 = (mp.GetProcessCommandLine)(l_0_5)
+      if not l_0_6 then
+        return mp.CLEAN
+      end
+      l_0_6 = (string.lower)(l_0_6)
       if #l_0_6 < 70 then
         return mp.CLEAN
       end

@@ -10,6 +10,9 @@ if l_0_0 == nil or l_0_0 == "" then
 end
 l_0_0 = (string.lower)(l_0_0)
 local l_0_1 = (string.match)(l_0_0, "%-replace%s+\'([^\']+)\'")
+if l_0_1 == nil then
+  return mp.CLEAN
+end
 l_0_0 = (string.gsub)(l_0_0, l_0_1, "")
 l_0_0 = (string.gsub)(l_0_0, " ", "")
 l_0_0 = (string.gsub)(l_0_0, "\'%+\'", "")
