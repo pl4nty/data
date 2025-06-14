@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2083218,
-    "file_count": 179
+    "size": 2087667,
+    "file_count": 180
   },
   {
     "name": "accessibility_test_framework",
@@ -76,17 +76,17 @@
   },
   {
     "name": "blink",
-    "size": 32178620,
-    "file_count": 3951
+    "size": 32211374,
+    "file_count": 3958
   },
   {
     "name": "boringssl",
-    "size": 72546,
-    "file_count": 16
+    "size": 325454,
+    "file_count": 22
   },
   {
     "name": "breakpad",
-    "size": 17965649,
+    "size": 17965730,
     "file_count": 1009
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7328862,
+    "size": 7341693,
     "file_count": 29
   },
   {
@@ -451,12 +451,12 @@
   },
   {
     "name": "mediapipe",
-    "size": 660641,
+    "size": 660642,
     "file_count": 339
   },
   {
     "name": "metrics_proto",
-    "size": 277761,
+    "size": 277872,
     "file_count": 38
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 17176043,
+    "size": 17172971,
     "file_count": 19
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3624307,
+    "size": 3625941,
     "file_count": 564
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6189900,
+    "size": 6191640,
     "file_count": 174
   },
   {
@@ -746,13 +746,13 @@
   },
   {
     "name": "webrtc",
-    "size": 102997,
-    "file_count": 50
+    "size": 275727,
+    "file_count": 90
   },
   {
     "name": "webrtc_overrides",
-    "size": 4863,
-    "file_count": 2
+    "size": 5274,
+    "file_count": 4
   },
   {
     "name": "win_build_output",
