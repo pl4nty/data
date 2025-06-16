@@ -653,7 +653,6 @@
                     "5810ac4e-0cdd-42be-93ce-80f8eb95618e"
                 ],
                 "preserveExplicitlyAddedChannels": true,
-                "removeExtraExtendedProperties": true,
                 "sleepIntervalBetweenChatServiceMembershipCallsInms": 600,
                 "supportOptionalPropertiesForTemplatedApps": true,
                 "validResourceSpecificPermissionsName": [
