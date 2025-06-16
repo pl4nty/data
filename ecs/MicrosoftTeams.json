@@ -594,7 +594,6 @@
     "MicrosoftTeamsMiddleTier": {
         "ringSettings": {
             "settings": {
-                "deltaPercentageUserNonHumanUserCountForTwt": 100,
                 "disableCreatedAtPropertyRemoval": true,
                 "enableAADSyncCrossCloudAdditionUpdates": true,
                 "enableAADSyncCrossCloudDeleteUpdates": true,
@@ -634,7 +633,6 @@
                 "enableTeamSharedChannelsRestoration": true,
                 "enableTenantToCloudMappingCache": true,
                 "enableTwtAutoProvisioning": true,
-                "enableTwtForLargeTeamsForCanCreate": true,
                 "enableUtiIatEnrichment": true,
                 "fetchOnlyTeamMembers": true,
                 "includeSharedChannelsInGetChannelsResponse": false,
