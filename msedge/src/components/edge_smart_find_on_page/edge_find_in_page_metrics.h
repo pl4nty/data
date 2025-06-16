@@ -14,8 +14,7 @@ namespace net {
 class HttpResponseHeaders;
 }
 
-namespace edge {
-namespace find_in_page {
+namespace edge::find_in_page {
 
 enum class EndpointType {
   kEnglish = 0,
@@ -24,6 +23,7 @@ enum class EndpointType {
 };
 
 namespace metrics {
+
 namespace helper {
 
 std::string BuildMetricNameForEndpoint(EndpointType endpoint_type_name,
@@ -255,8 +255,13 @@ void RecordCopilotSuggestionShown();
 
 void RecordCopilotSuggestionClicked();
 
+// Record that we are blocking Commercial Copilot CtrlF suggestions because the
+// user has the Work Tab License
+void RecordCommercialSuggestionsBlockedForWorkTab();
+
+void RecordCommercialSuggestionsLicenseCheckSucceeded(bool successful);
+
 }  // namespace metrics
-}  // namespace find_in_page
-}  // namespace edge
+}  // namespace edge::find_in_page
 
 #endif  // COMPONENTS_EDGE_SMART_FIND_ON_PAGE_EDGE_FIND_IN_PAGE_METRICS_H_

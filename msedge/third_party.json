@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2087667,
+    "size": 2085483,
     "file_count": 180
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10765225,
+    "size": 10766380,
     "file_count": 177
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14612857,
+    "size": 14612903,
     "file_count": 830
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32211374,
-    "file_count": 3958
+    "size": 32221022,
+    "file_count": 3959
   },
   {
     "name": "boringssl",
@@ -135,6 +135,11 @@
     "file_count": 32
   },
   {
+    "name": "crossbench",
+    "size": 166276,
+    "file_count": 2
+  },
+  {
     "name": "dawn",
     "size": 36541935,
     "file_count": 95
@@ -146,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16386233,
+    "size": 16393074,
     "file_count": 252
   },
   {
@@ -470,13 +475,8 @@
     "file_count": 18
   },
   {
-    "name": "microsoft_information_protection_sdk",
-    "size": 48203439,
-    "file_count": 3693
-  },
-  {
     "name": "microsoft_pdf",
-    "size": 17172971,
+    "size": 17098219,
     "file_count": 19
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3625941,
+    "size": 3626007,
     "file_count": 564
   },
   {
@@ -641,7 +641,7 @@
   },
   {
     "name": "skia",
-    "size": 3455467,
+    "size": 3458162,
     "file_count": 1178
   },
   {
@@ -656,12 +656,12 @@
   },
   {
     "name": "spirv-headers",
-    "size": 525988,
+    "size": 527198,
     "file_count": 15
   },
   {
     "name": "spirv-tools",
-    "size": 199968,
+    "size": 200044,
     "file_count": 11
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6191640,
+    "size": 6191939,
     "file_count": 174
   },
   {
@@ -746,7 +746,7 @@
   },
   {
     "name": "webrtc",
-    "size": 275727,
+    "size": 275711,
     "file_count": 90
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 28609425,
+    "size": 28609472,
     "file_count": 626
   },
   {
