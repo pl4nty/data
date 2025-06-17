@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32228354,
+    "size": 32228116,
     "file_count": 3959
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17965910,
+    "size": 17965208,
     "file_count": 1009
   },
   {
@@ -251,8 +251,8 @@
   },
   {
     "name": "glslang",
-    "size": 42777205,
-    "file_count": 3101
+    "size": 42888132,
+    "file_count": 3111
   },
   {
     "name": "googletest",
@@ -306,7 +306,7 @@
   },
   {
     "name": "ink",
-    "size": 32651,
+    "size": 74360,
     "file_count": 11
   },
   {
@@ -731,7 +731,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6146962,
+    "size": 6147967,
     "file_count": 172
   },
   {
