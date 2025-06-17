@@ -12,7 +12,7 @@
 RootModule = 'SqlServer.psm1'
 
 # Version number of this module.
-ModuleVersion = '22.3.0'
+ModuleVersion = '22.4.5.1'
 
 # Supported PSEditions
 CompatiblePSEditions = @('Desktop', 'Core')
@@ -27,7 +27,7 @@ Author = 'Microsoft Corporation'
 CompanyName = 'Microsoft Corporation'
 
 # Copyright statement for this module
-Copyright = '© 2024 Microsoft Corporation. All rights reserved.'
+Copyright = '© 2025 Microsoft Corporation. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = @'
@@ -210,7 +210,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
-## 22.3.0
+## 22.4.5.1
 
 More details and documentation can be found at https://github.com/microsoft/SQLServerPSModule
 
