@@ -345,6 +345,11 @@
                             "toc_title": "AI agent"
                         },
                         {
+                            "href": "a_z_names_terms/a/ai-agent-evaluation",
+                            "permissioned-type": "private",
+                            "toc_title": "AI Agent Evaluation"
+                        },
+                        {
                             "href": "a_z_names_terms/a/ai-builder",
                             "permissioned-type": "private",
                             "toc_title": "AI Builder"
@@ -1608,6 +1613,11 @@
                             "href": "a_z_names_terms/s/azure-sql-database",
                             "permissioned-type": "private",
                             "toc_title": "Azure SQL Database"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-sre-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure SRE Agent"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-stack",
@@ -3980,6 +3990,11 @@
                             "toc_title": "Forms Pro"
                         },
                         {
+                            "href": "a_z_names_terms/f/foundry-local",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry Local"
+                        },
+                        {
                             "href": "a_z_names_terms/f/fraud-protection",
                             "permissioned-type": "private",
                             "toc_title": "Fraud Protection"
@@ -5590,6 +5605,11 @@
                             "toc_title": "Microsoft Learn Student Ambassadors"
                         },
                         {
+                            "href": "a_z_names_terms/m/microsoft-learning-zone",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Learning Zone"
+                        },
+                        {
                             "href": "a_z_names_terms/m/microsoft-lens",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Lens"
@@ -7053,6 +7073,11 @@
                             "href": "a_z_names_terms/p/power-bi",
                             "permissioned-type": "private",
                             "toc_title": "Power BI"
+                        },
+                        {
+                            "href": "a_z_names_terms/p/power-bi-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "Power BI agent"
                         },
                         {
                             "href": "a_z_names_terms/p/power-bi-microsoft-365",
@@ -9868,6 +9893,11 @@
                             "href": "copilot-guidance/copilot/microsoft-365-copilot-for-service-",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft 365 Copilot for Service"
+                        },
+                        {
+                            "href": "copilot-guidance/copilot/microsoft-365-copilot-tuning",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 Copilot Tuning"
                         },
                         {
                             "href": "copilot-guidance/copilot/microsoft-copilot",
@@ -13669,7 +13699,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2599,
+        "count_of_node_with_href": 2605,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,
