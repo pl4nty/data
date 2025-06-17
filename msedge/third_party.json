@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32221022,
+    "size": 32228354,
     "file_count": 3959
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17965730,
+    "size": 17965910,
     "file_count": 1009
   },
   {
@@ -475,6 +475,11 @@
     "file_count": 18
   },
   {
+    "name": "microsoft_information_protection_sdk",
+    "size": 48203439,
+    "file_count": 3693
+  },
+  {
     "name": "microsoft_pdf",
     "size": 17098219,
     "file_count": 19
@@ -556,7 +561,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3626007,
+    "size": 3624635,
     "file_count": 564
   },
   {
@@ -726,8 +731,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6191939,
-    "file_count": 174
+    "size": 6146962,
+    "file_count": 172
   },
   {
     "name": "vulkan_memory_allocator",
@@ -746,7 +751,7 @@
   },
   {
     "name": "webrtc",
-    "size": 275711,
+    "size": 275575,
     "file_count": 90
   },
   {
