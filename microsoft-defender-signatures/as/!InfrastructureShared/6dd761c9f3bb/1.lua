@@ -19,11 +19,15 @@ if not l_0_2 then
   return mp.CLEAN
 end
 local l_0_3 = ((mp.GetProcessCommandLine)(l_0_2)):lower()
-if not isIEXfound(l_0_3) then
+local l_0_4 = NormalizeCmdline("powershell", l_0_3)
+if not l_0_4 then
   return mp.CLEAN
 end
-local l_0_4 = "downloadstring[\\\'\\\"\\(\\s]+https?:\\/\\/\\d+.\\d+.\\d+.\\d+\\/\\w+[\\\'\\\"\\)\\s]+"
-if (MpCommon.StringRegExpSearch)(l_0_4, l_0_3) then
+if not isIEXfound(l_0_4) then
+  return mp.CLEAN
+end
+local l_0_5 = "downloadstring[\\\'\\\"\\(\\s]+https?:\\/\\/\\d+.\\d+.\\d+.\\d+\\/\\w+[\\\'\\\"\\)\\s]+"
+if (MpCommon.StringRegExpSearch)(l_0_5, l_0_4) then
   return mp.INFECTED
 end
 return mp.CLEAN
