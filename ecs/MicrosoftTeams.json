@@ -4209,6 +4209,7 @@
             "enableDocumentPolicyIncludeJSCallStacksInCrashReports": false,
             "enableDraggableRegions": false,
             "enableDraggableRegionsOnMacV2": false,
+            "enableIndexedDbGetAllRecords": false,
             "enableInteractiveDragging": false,
             "enableMojoIpcz": false,
             "enableSharedArrayBuffer": false,
