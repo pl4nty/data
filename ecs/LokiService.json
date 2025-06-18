@@ -1184,12 +1184,14 @@
     },
     "OrganizationExplorer": {
         "GraphQLEndpointRequestLimit": 100,
+        "OCVAppId": "2952",
         "OrgExplorerBootstraperVersion": "1.20250610.3.0",
         "OrgExplorerVersion": "1.20250610.3.0",
         "forceUseEVfromBootstrapper": false,
         "isPersistentQueriesEnabled": true,
         "isQuickNavigationActionsEnabled": true,
-        "isReportsCountEnabled": true
+        "isReportsCountEnabled": true,
+        "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
         "PeopleInTaskbarDFVersion": "1.20250614.1.0",
