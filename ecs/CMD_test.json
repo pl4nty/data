@@ -351,6 +351,7 @@
         "EnableCollectionCheckout": true,
         "EnableCollectionMiddlewareBasedRefactorForWDS": true,
         "EnableCollectionReset": true,
+        "EnableCommonProxySSRFAndDisposeFixes": true,
         "EnableConfigTenantProvisioningPace": true,
         "EnableConfigTenantProvisioningPaceV2": true,
         "EnableConfirmNetwork": true,
