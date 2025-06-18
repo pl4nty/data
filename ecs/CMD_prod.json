@@ -227,7 +227,7 @@
         "EnableDisplayCpcPerfInReport": true,
         "EnableEditFLSForUX": true,
         "EnableEditFLSPolicy": true,
-        "EnableEndGracePeriodViaNugetInTBMS": false,
+        "EnableEndGracePeriodViaNugetInTBMS": true,
         "EnableEpaHPIntegration": true,
         "EnableErrorCategoryInCanaryResult": true,
         "EnableExportActionStatusReport": true,
