@@ -1,0 +1,2270 @@
+{
+    "deprecated": {
+        "2gua.rainbow-brackets": {
+            "settings": [
+                "editor.bracketPairColorization.enabled",
+                "editor.guides.bracketPairs"
+            ]
+        },
+        "365businessdevelopment.bdev-al-xml-doc": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "AL Language extension for Microsoft Dynamics 365 Business Central",
+                "id": "ms-dynamics-smb.al"
+            }
+        },
+        "AdaCore.ada-debug": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Ada & SPARK",
+                "id": "AdaCore.ada"
+            }
+        },
+        "AdrianCuadrado.npm-install-reminder": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "NPM",
+                "id": "idered.npm"
+            }
+        },
+        "AfrazTechnology.air-theme-pro": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "AirTheme Pro V2",
+                "id": "MohamedAfraz.air-theme-pro-v2"
+            }
+        },
+        "AlexEaton.openscad-format": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "OpenSCAD Language Support",
+                "id": "Leathong.openscad-language-support"
+            }
+        },
+        "Ampier.vscode-ampier": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "TJML Framework Auto-Complete plugin",
+                "id": "Pixcraft.vscode-tjml"
+            }
+        },
+        "AndrewBeletskiy.sort-css-rules": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "sort-css-declarations",
+                "id": "AndrewBeletskiy.sort-css-declarations"
+            }
+        },
+        "Arcensoth.language-mcfunction": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "syntax-mcfunction",
+                "id": "MinecraftCommands.syntax-mcfunction"
+            }
+        },
+        "AugusteRame.zls-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Zig Language",
+                "id": "ziglang.vscode-zig"
+            }
+        },
+        "Burkino.luraph": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Luraph (vscode)",
+                "id": "luraph.luraph-vscode"
+            }
+        },
+        "CADENAS.vscode-glsllint": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GLSL Lint",
+                "id": "dtoplak.vscode-glsllint"
+            }
+        },
+        "Calliope.al-extension-pack": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Innovation Lab Extensions",
+                "id": "Calliope.innovation-lab-extensions"
+            }
+        },
+        "CodeSnippetsAI.codesnippetsai": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Code Snippets AI - Powered by OpenRouter & OpenAI",
+                "id": "CodeSnippetsAILLC.codesnippetsai-extension"
+            }
+        },
+        "CoenraadS.bracket-pair-colorizer": {
+            "settings": [
+                "editor.bracketPairColorization.enabled",
+                "editor.guides.bracketPairs"
+            ]
+        },
+        "CoenraadS.bracket-pair-colorizer-2": {
+            "settings": [
+                "editor.bracketPairColorization.enabled",
+                "editor.guides.bracketPairs"
+            ]
+        },
+        "ConAntares.luke-dark-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Photonica",
+                "id": "ConAntares.Photonica"
+            }
+        },
+        "DecentralandFoundation.decentraland": true,
+        "DecentralandFoundation.decentraland-sdk7": true,
+        "DevonDCarew.bazel-code": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Bazel",
+                "id": "BazelBuild.vscode-bazel"
+            }
+        },
+        "DiscreteTom.json-hover": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "string-hover",
+                "id": "DiscreteTom.string-hover"
+            }
+        },
+        "DougFinke.vscode-pandoc": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "vscode-pandoc",
+                "id": "ChrisChinchilla.vscode-pandoc"
+            }
+        },
+        "DrMerfy.overtype": true,
+        "Drona-Aviation.pluto-ide-beta": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Pluto IDE",
+                "id": "Drona-Aviation.pluto-ide"
+            }
+        },
+        "ElectronicElementsStudio.txt-read-in-code": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "TXT Read in Code Comments",
+                "id": "Artitsy.txt-read-in-code-comments"
+            }
+        },
+        "Elrond.vscode-elrond-ide": true,
+        "EmberTooling.prettier-for-handlebars-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Prettier - Code formatter",
+                "id": "esbenp.prettier-vscode"
+            }
+        },
+        "EmrecanKaracayir.winscode-11": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Codemos Modern",
+                "id": "Codemos.codemos-modern"
+            }
+        },
+        "Entomy.ada": true,
+        "Equinusocio.moxer-icons": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vira Theme",
+                "id": "vira.vsc-vira-theme"
+            }
+        },
+        "Equinusocio.moxer-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vira Theme",
+                "id": "vira.vsc-vira-theme"
+            }
+        },
+        "Equinusocio.vsc-community-material-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Material Theme",
+                "id": "Equinusocio.vsc-material-theme"
+            }
+        },
+        "Equinusocio.vsc-material-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vira Theme",
+                "id": "vira.vsc-vira-theme"
+            }
+        },
+        "Equinusocio.vsc-material-theme-icons": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vira Theme",
+                "id": "vira.vsc-vira-theme"
+            }
+        },
+        "Esri.arcgis-jsapi-snippets": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ArcGIS Maps SDK for JavaScript Snippets",
+                "id": "Esri.arcgis-maps-sdk-js-snippets"
+            }
+        },
+        "EugenWiens.bitbake": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Yocto Project BitBake",
+                "id": "yocto-project.yocto-bitbake"
+            }
+        },
+        "FlorianAlexanderMoser.vscode-proverif-language-service": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ProVerif Language",
+                "id": "ProVerif.vscode-proverif"
+            }
+        },
+        "FrankaEmika.ride-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "RIDE by Franka Robotics",
+                "id": "FrankaRobotics.ride"
+            }
+        },
+        "Fudge.auto-using": true,
+        "GARAIOAG.garaio-vscode-unwanted-recommendations": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Unwanted Extensions",
+                "id": "Soulcode.vscode-unwanted-extensions"
+            }
+        },
+        "GODLiangCY.routine-reminder": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Routine Reminder",
+                "id": "younggglcy.simple-routine-reminder"
+            }
+        },
+        "GitHub.classroom": true,
+        "GitHub.copilot-workspace": true,
+        "GitHub.heygithub": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "VS Code Speech",
+                "id": "ms-vscode.vscode-speech"
+            }
+        },
+        "HaaLeo.vscode-stylint": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Stylint",
+                "id": "stylelint.vscode-stylelint"
+            }
+        },
+        "HookyQR.beautify": true,
+        "HuggingFace.huggingface-vscode": true,
+        "IBM.XMLLanguageSupport": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "XML",
+                "id": "redhat.vscode-xml"
+            }
+        },
+        "Intelix.cdm8-assembly": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "CdM Processors",
+                "id": "cdm-processors.vscode-cdm-extension"
+            }
+        },
+        "KhanhTranQuoc.holistics-aml-extension": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "(New) Holistics AML",
+                "id": "holistics.holistics-aml-vscode-ext"
+            }
+        },
+        "KnisterPeter.vscode-github": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GitHub Pull Requests and Issues",
+                "id": "GitHub.vscode-pull-request-github"
+            }
+        },
+        "KonstantinKovar.classnames-rainbow": true,
+        "KristjanTammekivi.vscode-inline-sql-ts": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Inline SQL",
+                "id": "jtladeiras.vscode-inline-sql"
+            }
+        },
+        "LeaForest.flowchat": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ICE - Integrated Conversational Environment",
+                "id": "LeaForest.integrated-conversational-environment"
+            }
+        },
+        "LuqueDaniel.languague-renpy": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Ren'Py Language (8.3+)",
+                "id": "renpy.language-renpy"
+            }
+        },
+        "MS-CEINTL.vscode-language-pack-bg": true,
+        "MS-CEINTL.vscode-language-pack-en-GB": true,
+        "MS-CEINTL.vscode-language-pack-hu": true,
+        "MS-CEINTL.vscode-language-pack-id": true,
+        "MS-CEINTL.vscode-language-pack-nl": true,
+        "MS-CEINTL.vscode-language-pack-ps": true,
+        "MS-CEINTL.vscode-language-pack-uk": true,
+        "Meowcolm024.has-go": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Haskell Runner 2",
+                "id": "Meowcolm024.runner2"
+            }
+        },
+        "ModyQyW.vscode-uni-app-schemas": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "uni-app-schemas",
+                "id": "uni-helper.uni-app-schemas-vscode"
+            }
+        },
+        "ModyQyW.vscode-uni-app-snippets": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "uni-app-snippets",
+                "id": "uni-helper.uni-app-snippets-vscode"
+            }
+        },
+        "ModyQyW.vscode-uni-cloud-snippets": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "uni-cloud-snippets",
+                "id": "uni-helper.uni-cloud-snippets-vscode"
+            }
+        },
+        "ModyQyW.vscode-uni-helper": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "uni-helper",
+                "id": "uni-helper.uni-helper-vscode"
+            }
+        },
+        "ModyQyW.vscode-uni-ui-snippets": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "uni-ui-snippets",
+                "id": "uni-helper.uni-ui-snippets-vscode"
+            }
+        },
+        "MrMinemeet.tutor-point-calculator": true,
+        "NathanielCherian.cashscript": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "CashScript VSCode",
+                "id": "CashScript.cashscript-vscode"
+            }
+        },
+        "NightNutSky.bdfd-bds": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Bot Designer For Discord: New",
+                "id": "Synthexia.bdfd-extension"
+            }
+        },
+        "NilsSoderman.quickprint": true,
+        "NilsSoderman.sitemap-generator": true,
+        "Oracle.oracledevtools": {
+            "disallowInstall": false,
+            "extension": {
+                "displayName": "Oracle SQL Developer Extension for VSCode",
+                "id": "Oracle.sql-developer"
+            }
+        },
+        "PhilHindle.errorlens": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Error Lens",
+                "id": "usernamehw.errorlens"
+            }
+        },
+        "Pixelfear.composer-links": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Composer",
+                "id": "DEVSENSE.composer-php-vscode"
+            }
+        },
+        "RedVanWorkshop.explorer-exclude-vscode-extension": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Explorer Exclude",
+                "id": "PeterSchmalfeldt.explorer-exclude"
+            }
+        },
+        "Shan.code-settings-sync": {
+            "additionalInfo": "Please use the built-in [Settings Sync](https://aka.ms/vscode-settings-sync-help) functionality instead.",
+            "disallowInstall": true
+        },
+        "Shopify.rubocop-lsp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Ruby LSP",
+                "id": "Shopify.ruby-lsp"
+            }
+        },
+        "Sigasi.sigasi-vscode": true,
+        "SimonSiefke.ddev": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "DDEV Manager",
+                "id": "biati.ddev-manager"
+            }
+        },
+        "SimonSiefke.prettier-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Prettier - Code formatter",
+                "id": "esbenp.prettier-vscode"
+            }
+        },
+        "Simple-ML.simple-ml": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Safe-DS",
+                "id": "Safe-DS.safe-ds"
+            }
+        },
+        "Snooz82.rf-intellisense": {
+            "disallowInstall": true
+        },
+        "Sophisticode.php-formatter": true,
+        "SoundStacks.cmajor": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Cmajor Tools",
+                "id": "CmajorSoftware.cmajor-tools"
+            }
+        },
+        "SpectralOps.spectral-vscode-extension": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SpectralOps - A CheckPoint Solution",
+                "id": "CheckPoint.spectral-checkpoint-vscode-extension"
+            }
+        },
+        "SridharMocherla.bazel-kotlin-vscode-extension": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Bazel Kotlin",
+                "id": "Brex.bazel-kotlin"
+            }
+        },
+        "Stan.remove-dart-error-imports": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Remove Dart Error/Warning",
+                "id": "Stan.remove-dart-error-warning"
+            }
+        },
+        "Statsig.code": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Statsig",
+                "id": "statsig-vscode.statsig"
+            }
+        },
+        "StephaneAdeso.adeso-themes-pack": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Adeso Themes Pack",
+                "id": "cb-theme-pack.celticbytes-themes-pack"
+            }
+        },
+        "SummerSun.vscode-jetty": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Community Server Connectors",
+                "id": "redhat.vscode-community-server-connector"
+            }
+        },
+        "SynopsysCodeSight.vscode-codesight": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Code Sight (Security)",
+                "id": "blackduck.code-sight-vscode"
+            }
+        },
+        "SyntaxSculptor.isaac-lua-api-vscode-repentogon": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Binding of Isaac Lua API",
+                "id": "Filloax.isaac-lua-api-vscode"
+            }
+        },
+        "Togusa09.tmlanguage": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "TextMate Languages",
+                "id": "pedro-w.tmlanguage"
+            }
+        },
+        "TomiTurtiainen.rf-intellisense": {
+            "disallowInstall": false
+        },
+        "Toni-SM.embedded-vscode-for-nvidia-omniverse": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Isaac Sim VS Code Edition",
+                "id": "NVIDIA.isaacsim-vscode-edition"
+            }
+        },
+        "TornadoStorm.vitis-hls-ide": true,
+        "TylerLeonhardt.vscode-pester-test-adapter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Pester Tests",
+                "id": "pspester.pester-test"
+            }
+        },
+        "Tyriar.shell-launcher": true,
+        "Tyriar.terminal-tabs": {
+            "settings": [
+                "terminal.integrated.tabs.enabled"
+            ]
+        },
+        "UVBrain.Angular2": true,
+        "Unity.unity-debug": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Unity",
+                "id": "visualstudiotoolsforunity.vstuc"
+            }
+        },
+        "Vue.vscode-typescript-vue-plugin": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vue - Official",
+                "id": "Vue.volar"
+            }
+        },
+        "WSO2.wso2ei": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Micro Integrator",
+                "id": "WSO2.micro-integrator"
+            }
+        },
+        "XGM.warcode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "JASS-ANTLR-Kotlin",
+                "id": "WarRaft.jass-antlr-kotlin"
+            }
+        },
+        "Xen.vscode-theme-cenhanced": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "C/C++ Theme",
+                "id": "Xen.ccpp-theme"
+            }
+        },
+        "ZixuanChen.vitest-explorer": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vitest",
+                "id": "vitest.explorer"
+            }
+        },
+        "aaronpowell.vscode-profile-switcher": true,
+        "abusaidm.html-snippets": true,
+        "activecove.osmosis": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Stateful",
+                "id": "stateful.stable"
+            }
+        },
+        "adamcowley.neo4j-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Neo4j for VS Code",
+                "id": "neo4j-extensions.neo4j-for-vscode"
+            }
+        },
+        "adammaras.overtype": true,
+        "adashen.vscode-tomcat": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Community Server Connectors",
+                "id": "redhat.vscode-community-server-connector"
+            }
+        },
+        "aestheticintegration.idfpy-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Imandra CodeLogician",
+                "id": "imandra.imandra-code-logician"
+            }
+        },
+        "aestheticintegration.iml-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ImandraX",
+                "id": "imandra.imandrax"
+            }
+        },
+        "aikoven.slice": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Slice",
+                "id": "ZeroCInc.slice"
+            }
+        },
+        "aleohq.aleo-instructions-syntax": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Aleo Developer",
+                "id": "aleohq.aleo-developer-extension"
+            }
+        },
+        "aleohq.leo-language-features-extension": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Aleo Developer",
+                "id": "aleohq.aleo-developer-extension"
+            }
+        },
+        "alygin.vscode-tlaplus": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "TLA+ (Temporal Logic of Actions)",
+                "id": "tlaplus.vscode-ide"
+            }
+        },
+        "alygin.vscode-tlaplus-nightly": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "TLA+ (Temporal Logic of Actions)",
+                "id": "tlaplus.vscode-ide"
+            }
+        },
+        "andriiklymiuk.corgi-checker": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "corgi",
+                "id": "Corgi.corgi"
+            }
+        },
+        "antfu.i18n-ally": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "i18n Ally",
+                "id": "lokalise.i18n-ally"
+            }
+        },
+        "antfu.vue-i18n-ally": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "i18n Ally",
+                "id": "lokalise.i18n-ally"
+            }
+        },
+        "aranard.i18n-ally-ttd-fork": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "i18n Ally",
+                "id": "lokalise.i18n-ally"
+            }
+        },
+        "arivero.vscode-metalua-formatter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Metalua Formatter",
+                "id": "gea-embedded.metalua-formatter"
+            }
+        },
+        "auchenberg.vscode-browser-preview": {
+            "disallowInstall": false,
+            "extension": {
+                "displayName": "Live Preview",
+                "id": "ms-vscode.live-server"
+            }
+        },
+        "austin.code-gnu-global": {
+            "extension": {
+                "displayName": "C/C++",
+                "id": "ms-vscode.cpptools"
+            }
+        },
+        "avli.clojure": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Calva: Clojure & ClojureScript Interactive Programming",
+                "id": "betterthantomorrow.calva"
+            }
+        },
+        "awwsky.csharpfixformatfixed": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "C#",
+                "id": "ms-dotnettools.csharp"
+            }
+        },
+        "axetroy.vscode-deno": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Deno",
+                "id": "denoland.vscode-deno"
+            }
+        },
+        "axon-ivy.designer-11": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Axon Ivy Designer 13",
+                "id": "axon-ivy.designer-13"
+            }
+        },
+        "badochov.ocaml-formatter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "OCaml Platform",
+                "id": "ocamllabs.ocaml-platform"
+            }
+        },
+        "ballerina.ballerina": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Ballerina",
+                "id": "WSO2.ballerina"
+            }
+        },
+        "barretren.markdown-paste-file": true,
+        "benjamin-thomas.roc-lang-support": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Roc (Unofficial)",
+                "id": "IvanDemchenko.roc-lang-unofficial"
+            }
+        },
+        "biomejs.biome-nightly": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Biome",
+                "id": "biomejs.biome"
+            }
+        },
+        "bitlang.bitlangcoboldepreciated": true,
+        "brano.b-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Bikkuri Theme",
+                "id": "brano.bikkuri-theme"
+            }
+        },
+        "buhlerplctools.gcpro-macro-language": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Buhler GCPro Macro Language",
+                "id": "buehlerag.buehler-gcpro-macro-language"
+            }
+        },
+        "bungcip.better-toml": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Even Better TOML",
+                "id": "tamasfe.even-better-toml"
+            }
+        },
+        "byCedric.vscode-expo": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Expo Tools",
+                "id": "expo.vscode-expo-tools"
+            }
+        },
+        "camel-tooling.atlasmap-viewer": {
+            "disallowInstall": false,
+            "extension": {
+                "displayName": "AtlasMap Data Transformation editor by Red Hat",
+                "id": "redhat.atlasmap-viewer"
+            }
+        },
+        "cellery.cellery-vscode-extension": true,
+        "chenxsan.vscode-standardjs": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "StandardJS - JavaScript Standard Style",
+                "id": "standard.vscode-standard"
+            }
+        },
+        "clv.kframework": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "K framework",
+                "id": "RuntimeVerification.k-vscode"
+            }
+        },
+        "coderfee.open-html-in-browser": true,
+        "contrast-security.contrast-integration": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Contrast ADO Pipeline Integration",
+                "id": "contrast-security-ado.contrast-ado-pipeline-integration"
+            }
+        },
+        "correctnessLab.dafny-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Dafny",
+                "id": "dafny-lang.ide-vscode"
+            }
+        },
+        "cortex-debug.svd-viewer": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Eclipse CDT Cloud",
+                "id": "eclipse-cdt.peripheral-inspector"
+            }
+        },
+        "ctanno.lst-view": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "gcode-helper",
+                "id": "ctanno.gcode-helper"
+            }
+        },
+        "ctf0.ghosttext": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GhostText Official",
+                "id": "fregante.ghost-text"
+            }
+        },
+        "ctf0.htmlhint": true,
+        "damirka.move-ide": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Move Analyzer",
+                "id": "move.move-analyzer"
+            }
+        },
+        "dataform.dataform": true,
+        "dbaeumer.jshint": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ESLint",
+                "id": "dbaeumer.vscode-eslint"
+            }
+        },
+        "deitry.unity-debug": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Unity",
+                "id": "visualstudiotoolsforunity.vstuc"
+            }
+        },
+        "dennykorsukewitz.dk4znuny-visualstudiocode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Znuny",
+                "id": "dennykorsukewitz.znuny"
+            }
+        },
+        "devjoaolopes.vscode-bayon-component-generator": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GitHub Copilot",
+                "id": "github.copilot"
+            }
+        },
+        "diegolincoln.vscode-styled-components": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "vscode-styled-components",
+                "id": "styled-components.vscode-styled-components"
+            }
+        },
+        "digitalfuel.vscode-platformos": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "platformOS Liquid",
+                "id": "platformOS.platformos-check-vscode"
+            }
+        },
+        "dogukanakkaya.chatgpt-code": true,
+        "dongli.python-preview": true,
+        "donjayamanne.jupyter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Jupyter",
+                "id": "ms-toolsai.jupyter"
+            }
+        },
+        "doramatadora.fastly-vcl-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Fastly Varnish Configuration Language (VCL)",
+                "id": "fastly.vscode-fastly-vcl"
+            }
+        },
+        "doublefint.vscode-cos": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "InterSystems ObjectScript",
+                "id": "intersystems-community.vscode-objectscript"
+            }
+        },
+        "ecadlabs.taqueria-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Taqueria (by Pinnacle Labs)",
+                "id": "PinnacleLabs.taqueria"
+            }
+        },
+        "efbenson.scad": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "OpenSCAD Language Support",
+                "id": "Leathong.openscad-language-support"
+            }
+        },
+        "eg2.tslint": true,
+        "eg2.vscode-npm-script": true,
+        "elixir-lsp.elixir-ls": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ElixirLS: Elixir support and debugger",
+                "id": "JakeBecker.elixir-ls"
+            }
+        },
+        "eridien.definition-stack": true,
+        "errata-ai.vale-server": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vale VSCode",
+                "id": "chrischinchilla.vale-vscode"
+            }
+        },
+        "ethan-reesor.vscode-go-test-adapter": true,
+        "eyhn.vscode-vibrancy": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vibrancy",
+                "id": "illixion.vscode-vibrancy-continued"
+            }
+        },
+        "farrese.rrcfg-tools": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "midas",
+                "id": "farrese.midas"
+            }
+        },
+        "felipecrs.vscode-gerrit": true,
+        "ffloimair.asterisk-config": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Asterisk Syntax Highlighter",
+                "id": "asterisksyntaxhighlighter"
+            }
+        },
+        "formulahendry.terminal": true,
+        "foxstudiosscratch.fox-theme-changer": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "fox-theme-changer-v2",
+                "id": "foxstudiosscratch.fox-theme-changer-v2"
+            }
+        },
+        "freebroccolo.reasonml": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "OCaml Platform",
+                "id": "ocamllabs.ocaml-platform"
+            }
+        },
+        "gencay.vscode-chatgpt": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Chat",
+                "id": "genieai.chatgpt-vscode"
+            }
+        },
+        "georgewfraser.vscode-tree-sitter": true,
+        "gfrsoftware.structurizr-dsl-abacus-extension": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Abacus Structurizr DSL Extension",
+                "id": "Elsevier.abacus-structurizr-dsl-extension"
+            }
+        },
+        "glen-84.sass-lint": true,
+        "hackwaly.ocaml": true,
+        "halcolo.moonkai": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Astronomer Theme",
+                "id": "halcolo.astronomer-theme"
+            }
+        },
+        "haneefdm.memview": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "MemoryView",
+                "id": "mcu-debug.memory-view"
+            }
+        },
+        "hdg.live-html-previewer": true,
+        "heptio.jsonnet": true,
+        "heyyczer.fivem2vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "CfxLua (FiveM/RedM) IntelliSense",
+                "id": "overextended.cfxlua-vscode"
+            }
+        },
+        "himanoa.Python-autopep8": true,
+        "hoonoh.vscode-slonik-live-server": true,
+        "huacnlee.auto-correct": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Auto Correct",
+                "id": "huacnlee.autocorrect"
+            }
+        },
+        "hylong.jungle-code-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Webstorm Ui Theme For vscode",
+                "id": "hylong.webstorm-theme-vscode"
+            }
+        },
+        "iceworks-team.iceworks": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "AppWorks 2",
+                "id": "iceworks-team.appworks"
+            }
+        },
+        "idlab-design.iddigital": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "IDXcelium",
+                "id": "idlab-design.idxcelium"
+            }
+        },
+        "idleberg.innosetup": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Inno Setup",
+                "id": "Chouzz.vscode-innosetup"
+            }
+        },
+        "ikappas.phpcs": true,
+        "imperez.smarty": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Smarty Template Support",
+                "id": "aswinkumar863.smarty-template-support"
+            }
+        },
+        "iocave.customize-ui": true,
+        "iocave.monkey-patch": true,
+        "itmcdev.db-extension-pack": true,
+        "itmcdev.node-flow-extension-pack": true,
+        "jacobclarke.vscode-pandoc": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "vscode-pandoc",
+                "id": "ChrisChinchilla.vscode-pandoc"
+            }
+        },
+        "jasew.mediawiki": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Wikitext",
+                "id": "RoweWilsonFrederiskHolme.wikitext"
+            }
+        },
+        "jcbuisson.vue": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vue Language Features (Volar)",
+                "id": "Vue.volar"
+            }
+        },
+        "jchannon.csharpextensions": true,
+        "jetmartin.apicurio": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Apicurio registry",
+                "id": "apicurio.apicurio-registry-explorer"
+            }
+        },
+        "joaompinto.asciidoctor-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "AsciiDoc",
+                "id": "asciidoctor.asciidoctor-vscode"
+            }
+        },
+        "jodyh.circleci-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "CircleCI",
+                "id": "circleci.circleci"
+            }
+        },
+        "jpogran.puppet-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Puppet",
+                "id": "puppet.puppet-vscode"
+            }
+        },
+        "jroesch.lean": true,
+        "juanm04.rinfo-unlp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "UNLP",
+                "id": "juanm04.unlp"
+            }
+        },
+        "justjavac.vscode-deno": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Deno",
+                "id": "denoland.vscode-deno"
+            }
+        },
+        "karigari.chat": true,
+        "kavod-io.vscode-jest-test-adapter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Jest",
+                "id": "Orta.vscode-jest"
+            }
+        },
+        "keith.robotframework": {
+            "disallowInstall": true
+        },
+        "kellielutze.language-epsilon": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Eclipse Epsilon Languages",
+                "id": "SamHarris.eclipse-epsilon-languages"
+            }
+        },
+        "kineticSnippet.dotnet-tools": true,
+        "kodu-ai.claude-coder": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Claude Coder",
+                "id": "kodu-ai.claude-dev-experimental"
+            }
+        },
+        "kodu-ai.kodu": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Claude Coder",
+                "id": "kodu-ai.claude-dev-experimental"
+            }
+        },
+        "kristofersdev.magento-toolbox": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Magento Toolbox",
+                "id": "magebit.magebit-magento-toolbox"
+            }
+        },
+        "lannonbr.vscode-teddy-snippets": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Teddy",
+                "id": "RooseveltFrameworkTeam.vscode-teddy"
+            }
+        },
+        "leadpogrommer.cdm8-asm": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "CdM Processors",
+                "id": "cdm-processors.vscode-cdm-extension"
+            }
+        },
+        "lehni.vscode-fix-checksums": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Fix VSCode Checksums Next",
+                "id": "RimuruChan.vscode-fix-checksums-next"
+            }
+        },
+        "lifeart.vscode-ember-unstable": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Ember Language Server",
+                "id": "EmberTooling.vscode-ember"
+            }
+        },
+        "ligolang-publish.ligo-debugger-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ligo-vscode",
+                "id": "ligolang-publish.ligo-vscode"
+            }
+        },
+        "lindraupe.aw-watcher-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "aw-watcher-vscode",
+                "id": "activitywatch.aw-watcher-vscode"
+            }
+        },
+        "liuji-jim.vue": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vue Language Features (Volar)",
+                "id": "Vue.volar"
+            }
+        },
+        "liximomo.sftp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SFTP",
+                "id": "Natizyskunk.sftp"
+            }
+        },
+        "localsolver.localsolver": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Hexaly",
+                "id": "hexaly.hexaly"
+            }
+        },
+        "logerfo.cd-repo": true,
+        "lonefy.vscode-JS-CSS-HTML-formatter": true,
+        "lvjiaxuan.eslint-disable": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ESLint Disable",
+                "id": "lvjiaxuan.vscode-eslint-disable"
+            }
+        },
+        "magneet.talkgrammar": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Prat",
+                "id": "magneet.prat"
+            }
+        },
+        "malt03.rails-rspec-file-toggle": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "rails-rspec-file-toggler",
+                "id": "malt-03.rails-rspec-file-toggler"
+            }
+        },
+        "mammothb.scilab": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Scilab: Syntax Highlighting",
+                "id": "mammothb.vscode-scilab-syntax"
+            }
+        },
+        "marcusviar.sort-tabs": true,
+        "mark-wiemer.ahk-v1-formatter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "AutoHotkey Plus Plus",
+                "id": "mark-wiemer.vscode-autohotkey-plus-plus"
+            }
+        },
+        "martinkchang.vscode-marko-peek": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Marko VSCode",
+                "id": "Marko-JS.marko-vscode"
+            }
+        },
+        "metrics-design-automation.dsim-desktop": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "DSim Studio",
+                "id": "AltairEngineering.dsim-studio"
+            }
+        },
+        "mgt19937.typst-preview": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Tinymist Typst",
+                "id": "myriad-dreamin.tinymist"
+            }
+        },
+        "microhobby.bitbake2": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Yocto Project BitBake",
+                "id": "yocto-project.yocto-bitbake"
+            }
+        },
+        "microsoft.merge-conflict-detection": true,
+        "milan-kovacic.vitest-lab": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vitest",
+                "id": "vitest.explorer"
+            }
+        },
+        "mindaro.mindaro": true,
+        "mkaufman.HTMLHint": {
+            "disallowInstall": false,
+            "extension": {
+                "displayName": "HTMLHint",
+                "id": "HTMLHint.vscode-htmlhint"
+            }
+        },
+        "mnxn.fsharp-fsl-fsy": true,
+        "mnxn.lalrpop-highlight": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Lalrpop Syntax Highlight",
+                "id": "Guyutongxue.lalrpop-syntax-highlight"
+            }
+        },
+        "mnxn.ocaml-mll-mly": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "OCaml Platform",
+                "id": "ocamllabs.ocaml-platform"
+            }
+        },
+        "moalamri.inline-fold": true,
+        "mohitsingh.markdoc": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Markdoc language support",
+                "id": "Stripe.markdoc-language-support"
+            }
+        },
+        "mrmlnc.vscode-remark": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "remark",
+                "id": "unifiedjs.vscode-remark"
+            }
+        },
+        "ms-azuretools.vscode-azureeventgrid": true,
+        "ms-azuretools.vscode-azureserverlesspack": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Azure Tools",
+                "id": "ms-vscode.vscode-node-azure-pack"
+            }
+        },
+        "ms-azuretools.vscode-tye": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "C# Dev Kit",
+                "id": "ms-dotnettools.csdevkit"
+            }
+        },
+        "ms-devlabs.extension-manifest-editor": true,
+        "ms-kubernetes-tools.aks-devx-tools": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Azure Kubernetes Service",
+                "id": "ms-kubernetes-tools.vscode-aks-tools"
+            }
+        },
+        "ms-kubernetes-tools.porter-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Porter",
+                "id": "getporter.porter-vscode"
+            }
+        },
+        "ms-ossdata.vscode-postgresql": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "PostgreSQL",
+                "id": "ms-ossdata.vscode-pgsql"
+            }
+        },
+        "ms-vscode.azure-account": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Azure Resources",
+                "id": "ms-azuretools.vscode-azureresourcegroups"
+            }
+        },
+        "ms-vscode.latex": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "LaTeX Workshop",
+                "id": "James-Yu.latex-workshop"
+            }
+        },
+        "ms-vscode.node-debug": true,
+        "ms-vscode.node-debug2": true,
+        "ms-vscode.vscode-typescript-tslint-plugin": true,
+        "ms-vsliveshare.vsliveshare-audio": true,
+        "msjsdiag.debugger-for-chrome": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "JavaScript Debugger",
+                "id": "ms-vscode.js-debug"
+            }
+        },
+        "msjsdiag.debugger-for-chrome-nightly": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "JavaScript Debugger (Nightly)",
+                "id": "ms-vscode.js-debug-nightly"
+            }
+        },
+        "nachocab.highlight-dodgy-characters": true,
+        "nextfaze.comment-wrap": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Rewrap",
+                "id": "stkb.rewrap"
+            }
+        },
+        "nguyenhoainam121n.turbo-console-writeLine-for-c-sharp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Log Csharp Variable",
+                "id": "alexnguyeen03.log-csharp-variable"
+            }
+        },
+        "ngyuki.ghosttext": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GhostText Official",
+                "id": "fregante.ghost-text"
+            }
+        },
+        "nikitaKunevich.snippet-creator": true,
+        "ninoseki.vscode-gem-lens": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Mogami",
+                "id": "ninoseki.vscode-mogami"
+            }
+        },
+        "ninoseki.vscode-pylens": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Mogami",
+                "id": "ninoseki.vscode-mogami"
+            }
+        },
+        "nobuhito.printcode": {
+            "disallowInstall": false,
+            "extension": {
+                "displayName": "Print",
+                "id": "pdconsec.vscode-print"
+            }
+        },
+        "noir-lang.noir-programming-language-syntax-highlighter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Noir Language Support",
+                "id": "noir-lang.vscode-noir"
+            }
+        },
+        "nyncral.dwm-git-simpleuse": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "simple git",
+                "id": "nyncral.sgit"
+            }
+        },
+        "olback.es6-css-minify": true,
+        "open-component-model.vscode-ocm-tools": true,
+        "otis11.smiledb": true,
+        "outrageouslyfrench.composer-boop": true,
+        "pcanella.marko": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Marko VSCode",
+                "id": "Marko-JS.marko-vscode"
+            }
+        },
+        "peakchen90.vue-beautify": true,
+        "pixl.bevy-snippets": true,
+        "pixl.unity-toolbox": true,
+        "pluyckx.iar-vsc": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "IAR Build",
+                "id": "iarsystems.iar-build"
+            }
+        },
+        "projektanker.code-butler": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Code Butler",
+                "id": "just-seba.vscode-code-butler"
+            }
+        },
+        "prql.prql": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "PRQL",
+                "id": "PRQL-lang.prql-vscode"
+            }
+        },
+        "pthorsson.vscode-jsp": true,
+        "qinjia.view-in-browser": true,
+        "quantum.quantum-devkit-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Azure Quantum Development Kit (QDK)",
+                "id": "quantum.qsharp-lang-vscode"
+            }
+        },
+        "raagh.angular-karma-test-explorer": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Karma Test Explorer for Angular, Jasmine, and Mocha",
+                "id": "lucono.karma-test-explorer"
+            }
+        },
+        "rbbit.typescript-hero": true,
+        "rebornix.Ruby": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Ruby LSP",
+                "id": "Shopify.ruby-lsp"
+            }
+        },
+        "redhat.atlasmap-viewer": true,
+        "redhat.datavirt-extension-pack": true,
+        "redhat.vscode-camelk": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Extension Pack for Apache Camel by Red Hat",
+                "id": "redhat.apache-camel-extension-pack"
+            }
+        },
+        "redhat.vscode-datavirt": true,
+        "redhat.vscode-didact": {
+            "disallowInstall": false,
+            "extension": {
+                "displayName": "CodeTour",
+                "id": "vsls-contrib.codetour"
+            }
+        },
+        "redhat.vscode-extension-serverless-workflow-editor": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "KIE Serverless Workflow Editor",
+                "id": "kie-group.swf-vscode-extension"
+            }
+        },
+        "redhat.vscode-wsdl2rest": true,
+        "redwoodjs.redwood": true,
+        "remimarsal.prettier-now": true,
+        "ritwickdey.live-sass": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "New Live Sass Compiler",
+                "id": "glenn2223.live-sass"
+            }
+        },
+        "rust-lang.rust": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "rust-analyzer",
+                "id": "rust-lang.rust-analyzer"
+            }
+        },
+        "ryanpavlik.khr-reflow-vsc": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Khronos AsciiDoctor Specification Reflow",
+                "id": "RyliePavlik.khr-reflow-vscode"
+            }
+        },
+        "sa2taka.js-go-to-test": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "JS Teleporter",
+                "id": "sa2taka.js-teleporter"
+            }
+        },
+        "sanderledegen.angular-follow-selector": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Angular Language Service",
+                "id": "Angular.ng-template"
+            }
+        },
+        "sandipchitale.vscode-kubernetes-commander": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Kubernetes Tools",
+                "id": "sandipchitale.vscode-kubernetes-commander-ng"
+            }
+        },
+        "satokaz.vscode-findinpage": true,
+        "satokaz.vscode-toggleproxy": true,
+        "sbrink.elm": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Elm",
+                "id": "Elmtooling.elm-ls-vscode"
+            }
+        },
+        "scilab.scilab-org": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Scilab Language Support",
+                "id": "scilab.scilab"
+            }
+        },
+        "serayuzgur.crates": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Dependi",
+                "id": "fill-labs.dependi"
+            }
+        },
+        "silvenon.mdx": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "VSCode MDX",
+                "id": "unifiedjs.vscode-mdx"
+            }
+        },
+        "slevesque.perforce": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "New Perforce for VS Code",
+                "id": "mjcrouch.perforce"
+            }
+        },
+        "slevesque.vscode-autohotkey": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "AutoHotkey Plus Plus",
+                "id": "mark-wiemer.vscode-autohotkey-plus-plus"
+            }
+        },
+        "slevesque.vscode-hexdump": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Hex Editor",
+                "id": "ms-vscode.hexeditor"
+            }
+        },
+        "smeagolem.ayu-one-dark-pro": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "One Dark Pro",
+                "id": "zhuangtongfa.Material-theme"
+            }
+        },
+        "snyk-security.vscode-vuln-cost": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Snyk Security - Code, Open Source Dependencies, IaC Configurations",
+                "id": "snyk-security.snyk-vulnerability-scanner"
+            }
+        },
+        "spadin.remote-x11": true,
+        "spadin.remote-x11-ssh": true,
+        "spences10.VBA": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "VBA",
+                "id": "serkonda7.vscode-vba"
+            }
+        },
+        "spences10.vba-snippets": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "VBA",
+                "id": "serkonda7.vscode-vba"
+            }
+        },
+        "spences10.vscode-vba-icons": {
+            "disallowInstall": false,
+            "extension": {
+                "displayName": "VBA",
+                "id": "serkonda7.vscode-vba"
+            }
+        },
+        "sswg.swift-lang": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Swift",
+                "id": "swiftlang.swift-vscode"
+            }
+        },
+        "stateful.edge": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Stateful",
+                "id": "stateful.stable"
+            }
+        },
+        "synopsys-codexm.coverity-codexm": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Coverity CodeXM Checker Authoring",
+                "id": "blackduck.blackduck-coverity-codexm"
+            }
+        },
+        "taichi.vscode-textlint": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "textlint",
+                "id": "3w36zj6.textlint"
+            }
+        },
+        "tao-cumplido.hex-viewer": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Inspector Hex",
+                "id": "tao-cumplido.inspector-hex"
+            }
+        },
+        "tht13.gerrit-vscode": true,
+        "tht13.html-preview-vscode": true,
+        "tht13.python": true,
+        "tiehuis.zig": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Zig Language",
+                "id": "ziglang.vscode-zig"
+            }
+        },
+        "tiibun.vscode-docker-ws": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Dev Containers",
+                "id": "ms-vscode-remote.remote-containers"
+            }
+        },
+        "tokoph.ghosttext": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GhostText Official",
+                "id": "fregante.ghost-text"
+            }
+        },
+        "tomaciazek.ansible": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Ansible",
+                "id": "redhat.ansible"
+            }
+        },
+        "tomcodedthis.blender-pilot": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "AI-Keys",
+                "id": "tomcodedthis.aikeys"
+            }
+        },
+        "tonsky.clojure-warrior": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Calva: Clojure & ClojureScript Interactive Programming",
+                "id": "betterthantomorrow.calva"
+            }
+        },
+        "trass3r.cxx-compiler-explorer": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "C/C++ Compiler Explorer",
+                "id": "harikrishnan94.cxx-compiler-explorer"
+            }
+        },
+        "usernamehw.change-language-mode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Commands",
+                "id": "usernamehw.commands"
+            }
+        },
+        "usernamehw.codicon-names": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Commands",
+                "id": "usernamehw.commands"
+            }
+        },
+        "usqlextpublisher.usql-vscode-ext": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SCOPE Studio for VS Code",
+                "id": "ms-ssdevteam.scope-vscode-ext"
+            }
+        },
+        "utsavm9.c-cpp-flag-debugging": true,
+        "v-test-publisher.vscode-azure-functions-remote-web-test": true,
+        "virgilsisoe.python-auto-import": true,
+        "vsciot-vscode.azure-iot-tools": true,
+        "vsciot-vscode.vscode-arduino": true,
+        "vsciot-vscode.vscode-iot-device-cube": true,
+        "waderyan.nodejs-extension-pack": true,
+        "washan.crates-cmp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "cargo-appraiser",
+                "id": "washan.cargo-appraiser"
+            }
+        },
+        "webOSOSESDK.webosose": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "webOS Studio",
+                "id": "webOSSDK.webosstudio"
+            }
+        },
+        "webOSTVSDK.webostv": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "webOS Studio",
+                "id": "webOSSDK.webosstudio"
+            }
+        },
+        "wingrunr21.vscode-ruby": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Ruby LSP",
+                "id": "Shopify.ruby-lsp"
+            }
+        },
+        "wwm.better-align": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Better Align",
+                "id": "Chouzz.vscode-better-align"
+            }
+        },
+        "xletohic.cucumber-json-formatter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Cucumber feature JSON formatter",
+                "id": "XavierLeTohic.cucumber-feature-json-formatter"
+            }
+        },
+        "ykhrito.vscode-idobata": true,
+        "yorkxin.coffeescript-support": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "CoffeeSense",
+                "id": "phil294.coffeesense"
+            }
+        },
+        "yukina.nord-dark": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Yukinord",
+                "id": "yukina.yukinord"
+            }
+        },
+        "zenclabs.reactpreview": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Preview.js",
+                "id": "zenclabs.previewjs"
+            }
+        },
+        "zuhanit.epscript-helper": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "eps-server",
+                "id": "zuhanit.eps-server"
+            }
+        }
+    },
+    "extensionsEnabledWithPreRelease": [
+        "github.copilot"
+    ],
+    "learnMoreLinks": {
+        "joaomoreno.banana": "https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security"
+    },
+    "malicious": [
+        "blackforest.blackforest-1234",
+        "prettierteam.prettier",
+        "evaera-rbx.vscode-rojo-rbx",
+        "discord-inc.discord-rich-presence-rpc",
+        "MarkH.chatgpt-autocoder-vscode",
+        "MarkH.claude-autocoder-vscode",
+        "MarkH.discord-rich-presence-vs",
+        "MarkH.golang-compiler-vscode",
+        "MarkH.html-obfuscator-vscode",
+        "MarkH.python-obfuscator-vscode",
+        "MarkH.rust-compiler-vs",
+        "VSCodeDeveloper.sobidity-compiler",
+        "visualstuiocode.emmet",
+        "joaomoreno.banana",
+        "JacobeanResearchandDevelopmentLLC.vscode-scxml-preview",
+        "joaquin6.package-watch",
+        "KazuoCode.gthubsum",
+        "MaxGotovkin.tslens",
+        "stephen-riley.regexworkbench",
+        "guozebin.api-generator-plugin",
+        "code-tester.code-tester",
+        "viralvaghela.darkcbtheme",
+        "viralvaghela.normalnameimgtest",
+        "k3s0externobyes.k3s0externobyes",
+        "testUseracc1111.python-vscode",
+        "NealKornet.theme-darcula-dark",
+        "FlydCode.codelinter",
+        "FlydCode.codewithfriends",
+        "benawad.vsinder",
+        "BXDS-DLP.BXDS-DLP",
+        "kyntrack.log-matrix",
+        "kyntrack.track-vscode",
+        "gitkraken-dev.gitlens-pro",
+        "Glenn-marks1990.live-sass-compiler",
+        "platformio-dev.platform-io",
+        "syj-first-extension.code-whisperer",
+        "darcula-theme.darcula-official",
+        "sopspub.org",
+        "darcula-theme2.darcula-official2",
+        "vivo-ai-code.vivo-ai-code-vscode",
+        "Ericsson123.DarkThemed",
+        "A-M.idxmlfun930470",
+        "A-M.angelica-color-theme",
+        "A-M.idmarkdownfun930470",
+        "A-M.idjsonfun930470",
+        "A-M.idsqlfun930470",
+        "A-M.idhtmlfun930470",
+        "A-M.idyamlfun930470",
+        "A-M.idgroovyfun930470",
+        "A-M.idobjectivea2cfun930470",
+        "A-M.idcssfun930470",
+        "A-M.idca17fun930470",
+        "A-M.idgradlefun930470",
+        "A-M.idphpfun930470",
+        "A-M.idpythonfun930470",
+        "A-M.idjavascriptfun930470",
+        "A-M.idjavafun930470",
+        "A-M.idmatlabfun930470",
+        "A-M.idca24a24fun930470",
+        "A-M.iddartfun930470",
+        "A-M.idbasicfun930470",
+        "A-M.idshellfun930470",
+        "A-M.idkotlinfun930470",
+        "A-M.idvba1netfun930470",
+        "A-M.idcfun930470",
+        "A-M.idrustfun930470",
+        "A-M.idrubyfun930470",
+        "A-M.idswiftfun930470",
+        "A-M.idscalafun930470",
+        "A-M.idperlfun930470",
+        "A-M.idspellfun930470",
+        "A-M.idhaskellfun930470",
+        "A-M.idpascalfun930470",
+        "A-M.idrfun930470",
+        "A-M.idtypescriptfun930470",
+        "A-M.idfortranfun930470",
+        "A-M.idgofun930470",
+        "A-M.idluafun930470",
+        "A-M.idactionscriptfun930470",
+        "A-M.idtclfun930470",
+        "A-M.idclojurefun930470",
+        "A-M.idvhdlfun930470",
+        "A-M.idbashfun930470",
+        "A-M.idfa17fun930470",
+        "A-M.idcythonfun930470",
+        "A-M.idlispfun930470",
+        "A-M.iddockerfun930470",
+        "A-M.idcobolfun930470",
+        "A-M.iddelphifun930470",
+        "A-M.idjupiterfun930470",
+        "A-M.idnodefun930470",
+        "A-M.idgeminifun930470",
+        "A-M.idschemefun930470",
+        "A-M.idandroidfun930470",
+        "A-M.idawsfun930470",
+        "A-M.idjupyterfun930470",
+        "A-M.idmachinea31learningfun930470",
+        "A-M.idadafun930470",
+        "A-M.idassemblyfun930470",
+        "A-M.iderlangfun930470",
+        "A-M.idsasfun930470",
+        "A-M.idfirebasefun930470",
+        "A-M.idamazonfun930470",
+        "A-M.idnotebookfun930470",
+        "A-M.idchatgptfun930470",
+        "A-M.idnpmfun930470",
+        "A-M.idopenclfun930470",
+        "A-M.idrpgfun930470",
+        "A-M.idsolidityfun930470",
+        "A-M.idgithubfun930470",
+        "A-M.idaifun930470",
+        "A-M.idyarnfun930470",
+        "A-M.idawkfun930470",
+        "A-M.idmlfun930470",
+        "A-M.idelixirfun930470",
+        "A-M.idmyfun930470",
+        "A-M.idgooglefun930470",
+        "A-M.idapifun930470",
+        "A-M.iddatafun930470",
+        "A-M.iduifun930470",
+        "A-M.idrestfun930470",
+        "A-M.idiconfun930470",
+        "A-M.idgitfun930470",
+        "A-M.ideslintfun930470",
+        "A-M.idcodefun930470",
+        "A-M.idprettierfun930470",
+        "A-M.idjqueryfun930470",
+        "A-M.idbabelfun930470",
+        "A-M.idthemefun930470",
+        "A-M.idtagfun930470",
+        "A-M.idtodofun930470",
+        "A-M.idPostsManager930470",
+        "A-M.idlodashfun930470",
+        "A-M.idexpressfun930470",
+        "A-M.idaxiosfun930470",
+        "A-M.idautofun930470",
+        "A-M.idcommentfun930470",
+        "A-M.idMorePosts930470",
+        "A-M.idd3a1jsfun930470",
+        "A-M.idvuea1jsfun930470",
+        "A-M.idreactfun930470",
+        "A-M.idrunfun930470",
+        "A-M.idzozo",
+        "GavinWood.SolidityLang",
+        "SOLIDITY.Solidity-Language",
+        "EthereumFoundation.Solidity-Language-for-Ethereum",
+        "VitalikButerin.Solidity-Ethereum",
+        "ZoomWorkspace.Zoom",
+        "ZoomVideoCommunications.Zoom",
+        "Ethereum.SoliditySupport",
+        "ethereumorg.Solidity-Language-for-Ethereum",
+        "EVM.Blockchain-Toolkit",
+        "VoiceMod.VoiceMod",
+        "498.pythonformat",
+        "plotbox.better-psalm-docker-vscode",
+        "wjf.miniprogram-assistant",
+        "longzi.miniprogram-assistant-fork",
+        "karamalhamoud.vscode-ngrok-client-http",
+        "ZoomINC.Zoom-Workplace",
+        "SolidityFoundation.Solidity-Ethereum",
+        "EthereumFoundation.Solidity-for-Ethereum-Language",
+        "JaydenM.discord-rpc-vscode",
+        "SethMynster.discord-vscode-support",
+        "JaydenM.synthwave-theme-vscode",
+        "Verify-online.visualstudio",
+        "HuanDiez.solidity-for-ethereum",
+        "KuanHulio.discord",
+        "LyfeExtensions.Discord-RPC-Support",
+        "bipro.bipro-dev",
+        "SeismicSystems.seismic-solidity",
+        "JaydenM.dracula-theme-pro",
+        "jkl3848.citizen-sleeper-theme",
+        "Mindjet.ezpaste",
+        "Lonero.decentralized-internet",
+        "xw.aar-vsc",
+        "acenudt.paste-smms",
+        "zoom-communications.Zoom",
+        "htcg.htcgtool",
+        "prada555.Theme-Acai-ported-1.0.0",
+        "prada555.Theme-Active4D-ported-1.0.0",
+        "prada555.Theme-Afterglow-ported",
+        "prada555.Theme-Abyss-ported",
+        "BlancoFoundation.Truffle",
+        "xueshufive.jrkf-console",
+        "edr-test.pyhton",
+        "platformio-dev.platform-io",
+        "gitkraken-dev.gitlens-pro",
+        "vkteam.com",
+        "ItalangMong.smile-editor",
+        "yfdyh000.aar-vscode",
+        "tabnine-dev.tabnine-pro",
+        "Glenn-marks1990.live-sass-compiler",
+        "xuyanfeng.addr2line-assistant",
+        "ethanielliu.audit-helper",
+        "ceo.sammarco",
+        "ahban.cychelloworld",
+        "ahban.shiba",
+        "ErickChandra.socratic-code-hinter",
+        "Trustworthy.mevscode",
+        "VSDeveloper.theme-library-vs",
+        "VSDeveloper.universal-intellisense",
+        "VSDeveloper.chinese-language-vs",
+        "VarunSindwani.explorer-exclude-global",
+        "xiejiangzhi.linter-xjz",
+        "JuanFranBlanco.solidit-vscode",
+        "SoliditFoundation.solidit-language",
+        "SmartContractAI.solaibot",
+        "soIidity.cryptoovertheweekend4",
+        "Onaga08.vibecode",
+        "testrl777.Solidity-Ethereum",
+        "VitalikButerinETH.vitaliketh",
+        "GavinWoodETH.solid-eth",
+        "ethcompiler.among-eth",
+        "fnweoifweiofewofwoeifjwefvsjceqk.node-snippets-ai",
+        "minlabs.quiet-code",
+        "SFRA-FAKA.sfra-toolkit",
+        "bug-author.shadure",
+        "SnippetsLabs.kendo-formatter",
+        "JohnGaffney.blankebesxstnion",
+        "AllenBarry.Solid",
+        "JohnMcafee.JohnMcafeeSolid",
+        "BlockchainWEB3.blankebestxstnion",
+        "VitalikButt.Solids",
+        "JuanBlanking.Solidy",
+        "FaceCrypto.chocolatesnack",
+        "better-sollidity.sollidity-plus",
+        "Languages.hungarian",
+        "Expressjs.expressjs-session"
+    ],
+    "migrateToPreRelease": {
+        "HashiCorp.terraform-preview": {
+            "displayName": "HashiCorp Terraform",
+            "id": "HashiCorp.terraform"
+        },
+        "eamodio.gitlens-insiders": {
+            "displayName": "GitLens \u2014 Git supercharged",
+            "id": "eamodio.gitlens"
+        },
+        "github.copilot-nightly": {
+            "displayName": "GitHub Copilot",
+            "id": "github.copilot"
+        },
+        "github.vscode-pull-request-github-insiders": {
+            "displayName": "GitHub Pull Requests and Issues",
+            "id": "github.vscode-pull-request-github"
+        },
+        "golang.go-nightly": {
+            "displayName": "Go",
+            "id": "golang.Go"
+        },
+        "hediet.vscode-drawio-insiders-build": {
+            "displayName": "Draw.io Integration",
+            "id": "hediet.vscode-drawio"
+        },
+        "julialang.language-julia-insider": {
+            "displayName": "Julia",
+            "id": "julialang.language-julia"
+        },
+        "ms-vscode-remote.remote-ssh-edit-nightly": {
+            "displayName": "Remote - SSH: Editing Configuration Files",
+            "id": "ms-vscode-remote.remote-ssh-edit"
+        },
+        "ms-vscode-remote.remote-ssh-nightly": {
+            "displayName": "Remote - SSH",
+            "id": "ms-vscode-remote.remote-ssh"
+        },
+        "ms-vscode.PowerShell-Preview": {
+            "displayName": "PowerShell",
+            "id": "ms-vscode.PowerShell"
+        }
+    },
+    "search": [
+        {
+            "preferredResults": [
+                "ms-vscode.vscode-node-azure-pack",
+                "ms-azuretools.vscode-azureappservice",
+                "ms-azuretools.vscode-azurestorage",
+                "ms-azuretools.vscode-cosmosdb",
+                "ms-azuretools.vscode-azure-github-copilot"
+            ],
+            "query": "azure"
+        },
+        {
+            "preferredResults": [
+                "github.copilot"
+            ],
+            "query": "ai"
+        },
+        {
+            "preferredResults": [
+                "github.copilot-chat"
+            ],
+            "query": "chatgpt"
+        },
+        {
+            "preferredResults": [
+                "github.copilot-chat"
+            ],
+            "query": "chat"
+        },
+        {
+            "preferredResults": [
+                "ms-vscode.vscode-speech"
+            ],
+            "query": "voice"
+        },
+        {
+            "preferredResults": [
+                "github.copilot",
+                "github.vscode-pull-request-github",
+                "github.github-vscode-theme"
+            ],
+            "query": "github"
+        },
+        {
+            "preferredResults": [
+                "github.vscode-pull-request-github"
+            ],
+            "query": "github pr"
+        },
+        {
+            "preferredResults": [
+                "DevCenter.ms-devbox"
+            ],
+            "query": "devbox"
+        },
+        {
+            "preferredResults": [
+                "DevCenter.ms-devbox"
+            ],
+            "query": "microsoft dev box"
+        },
+        {
+            "preferredResults": [
+                "vscjava.vscode-java-pack"
+            ],
+            "query": "java"
+        },
+        {
+            "preferredResults": [
+                "ms-dotnettools.csdevkit"
+            ],
+            "query": "c#"
+        },
+        {
+            "preferredResults": [
+                "ms-dotnettools.csdevkit"
+            ],
+            "query": "csharp"
+        },
+        {
+            "preferredResults": [
+                "visualstudiotoolsforunity.vstuc"
+            ],
+            "query": "unity"
+        },
+        {
+            "preferredResults": [
+                "vscjava.vscode-java-pack"
+            ],
+            "query": "java extension pack"
+        },
+        {
+            "preferredResults": [
+                "DanielSanMedium.dscodegpt"
+            ],
+            "query": "codegpt"
+        }
+    ]
+}
