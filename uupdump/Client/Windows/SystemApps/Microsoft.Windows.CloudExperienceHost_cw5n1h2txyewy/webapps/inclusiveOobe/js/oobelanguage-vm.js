@@ -16,6 +16,11 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
 
             this.languages = CloudExperienceHostAPI.OobeDisplayLanguagesCore.getDisplayLanguages();
 
+            this.languageTags = [];
+            this.languages.forEach((item) => {
+                this.languageTags.push(item.tag);
+            });
+
             let selectedDisplayLanguageTag = this.languages[0].tag;
             let defaultDisplayLanguageObject = CloudExperienceHostAPI.OobeDisplayLanguageManagerCore.tryGetDefaultDisplayLanguage();
 
@@ -32,6 +37,8 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
                 this.updateLanguage(newSelectedLanguage)
             });
             this.updateLanguage(this.selectedLanguage());
+
+            this.observableSelectedDisplayLanguageTag = ko.pureComputed(() => { return this.selectedLanguage().tag; });
 
             this.title = ko.pureComputed(() => { return this.resourceStringsObservable().titleText; });
 

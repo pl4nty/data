@@ -864,7 +864,7 @@ define([
             let bitlockerDeferralEnabled = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotBitlockerOobeDeferral");
             if (bitlockerDeferralEnabled) {
                 if (!this.isWhiteGloveFlow) {
-                    this.commercialDiagnosticsUtilities.signalBitlockerProvisioningComplete(3); // BitLockerDeferralReason.MdmSyncComplete
+                    this.sessionUtilities.signalBitlockerProvisioningComplete(3); // BitLockerDeferralReason.MdmSyncComplete
                 }
             }
         }

@@ -33,7 +33,7 @@
                 </div>
                 <!-- /ko -->
             </div>
-            <oobe-footer params="flexEndButtons: footerButtons"></oobe-footer>
+            <oobe-footer params="flexEndButtons: footerButtons" data-bind="event: {keydown: $root.onFooterKeyDown}"></oobe-footer>
         </div>
     </script>
     <div class="body-container" data-bind="oobePageDefaultAction: pageDefaultAction">

@@ -126,6 +126,17 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             this.scrollViewEle = document.querySelector('#scrollRegion');
             if (this.scrollViewEle) {
                 this.scrollViewEle.addEventListener("scroll", this.updateForScrollState.bind(this));
+
+                let gamepadEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadEnabledOobe");
+                let gamepadEnabledOobe = gamepadEnabledObj.result && gamepadEnabledObj.value;
+                if (gamepadEnabledOobe) {
+                    this.scrollViewEle.addEventListener("keydown", this.onScrollViewKeyDown.bind(this), { capture: true });
+
+                    let pageFooter = document.querySelector("oobe-footer");
+                    if (pageFooter) {
+                        pageFooter.addEventListener("keydown", this.onPageFooterKeyDown.bind(this), { capture: true });
+                    }
+                }
             }
 
             document.addEventListener("keyup", this.tabKeyUpHandler.bind(this));
@@ -213,6 +224,86 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     this.scrollTo(this.scrollViewEle, this.scrollViewEle.scrollTop + this.scrollViewEle.offsetHeight, false /* autoFocus */);
                 }
             }
+        }
+
+        onScrollViewKeyDown(e) {
+            let handled = false;
+
+            let direction;
+            switch (e.keyCode) {
+                case WinJS.Utilities.Key.GamepadDPadUp:
+                case WinJS.Utilities.Key.GamepadLeftThumbstickUp:
+                    direction = "up";
+                    break;
+
+                case WinJS.Utilities.Key.GamepadDPadDown:
+                case WinJS.Utilities.Key.GamepadLeftThumbstickDown:
+                    direction = "down";
+                    break;
+
+                case WinJS.Utilities.Key.GamepadDPadLeft:
+                case WinJS.Utilities.Key.GamepadLeftThumbstickLeft:
+                    direction = "left";
+                    break;
+
+                case WinJS.Utilities.Key.GamepadDPadRight:
+                case WinJS.Utilities.Key.GamepadLeftThumbstickRight:
+                    direction = "right";
+                    break;
+
+                default:
+                    break;
+            }
+
+            // Default XYFocus behavior favors looking at elements actual coordinates and bounds (even if they are occluded/off-screen, at least in our case here).
+            // With the scrollable region in the middle of a page this gets confusing so we scope the "search" just to the scrollable region first. If no suitable
+            // "next" element is found, we fall back to the default XYFocus behavior.
+            if (direction) {
+                let newFocusTarget = WinJS.UI.XYFocus.moveFocus(direction, { focusRoot: this.scrollViewEle });
+                if (newFocusTarget) {
+                    // If we successfully moved focus, consider this event handled. Otherwise (e.g. if we hit the top or bottom of the scrollable region), let the default behavior take over.
+                    handled = true;
+                    e.preventDefault();
+
+                    if (newFocusTarget && newFocusTarget.winControl && newFocusTarget.winControl.isLastInAGroup) {
+                        this.scrollViewEle.scrollTop += this.scrollViewEle.offsetHeight;
+                    }
+                }
+            }
+
+            return !handled;
+        }
+
+        onPageFooterKeyDown(e) {
+            let handled = false;
+
+            if (e.keyCode === WinJS.Utilities.Key.GamepadDPadUp || e.keyCode === WinJS.Utilities.Key.GamepadLeftThumbstickUp) {
+                // When going 'up' from the footer and the scrollable region is present, always move focus to the last focusable element in that region.
+                if (this.customizeVisible()) {
+                    let focusCandidate = this.scrollViewEle.querySelector(".toggle-container:last-of-type > oobe-toggle > div");
+                    if (focusCandidate) {
+                        this.scrollViewEle.scrollTop = this.scrollViewEle.scrollHeight;
+                        focusCandidate.focus();
+                        handled = true;
+                    }
+                }
+            }
+            else if (e.keyCode === WinJS.Utilities.Key.GamepadDPadDown || e.keyCode === WinJS.Utilities.Key.GamepadLeftThumbstickDown) {
+                // When going 'down' from the footer, always simulate a tab key press. This way focus will be able to escape the current
+                // WebView and go to the OOBE frame's footer when appropriate.
+                try {
+                    CloudExperienceHostAPI.UtilStaticsCore.injectTabKey(false /*holdShift*/);
+                    handled = true;
+                }
+                catch (err) {
+                }
+            }
+
+            if (handled) {
+                e.preventDefault();
+            }
+
+            return !handled;
         }
 
         isScrolledIntoView(el) {

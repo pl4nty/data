@@ -573,8 +573,8 @@ define([
             return this.commercialDiagnosticsUtilities.getExportLogsFolderPathAsync().then(
                 async (folderPath) => {                   
                     this.commercialDiagnosticsUtilities.logInfoEvent(
-                        "DeviceLinkPage_ExportDeviceLinkInfo_FolderSelected",
-                        `Export device link info to folder: ${folderPath}`);
+                        "DeviceLinkPage_ExportDeviceLinkInfo_RemovableDriveFound",
+                        `Device link info will be exported to folder: ${folderPath}`);
 
                     let hasTimedOut = false;
                     return WinJS.Promise.timeout(

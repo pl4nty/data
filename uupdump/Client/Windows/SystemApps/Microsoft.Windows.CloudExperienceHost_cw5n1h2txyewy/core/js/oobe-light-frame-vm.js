@@ -139,6 +139,9 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
 
         setInputModalityChangeListeners() {
 
+            // On gamepad based devices, assume gamepad is the default mode for input and show focus visuals
+            let showFocusVisualByDefault = CloudExperienceHost.Environment.isGamepadBasedDevice();
+
             const scriptToInject = `
                 // Functions to check the current input modality and adjust focus visual per modality.
                 // If modality is Keyboard - allow focus visual to be shown
@@ -166,7 +169,7 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
                 document.addEventListener("keydown", handleKeyDown, { capture: true });
 
                 // Sets custom attribute to the root element on init, updates another one when keyDown or pointerDown is detected
-                setFocusVisibleState(false);
+                setFocusVisibleState(${showFocusVisualByDefault});
                 `;
 
             let op = this._webViewCtrl.invokeScriptAsync("eval", [scriptToInject]);

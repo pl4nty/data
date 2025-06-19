@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.27825.0</VersionEx>
+  <VersionEx>10.0.27860.0</VersionEx>
   <PolicyTypeID>{D2BDA982-CCF6-4344-AC5B-0B44427B6816}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -1777,6 +1777,7 @@
     <FileAttrib ID="ID_FILEATTRIB_IOMAP" FriendlyName="Asus IOMap.sys\04e9a85d89a5119ff2dd2342719f6129d42627e3083559c88d4f3be607dd1f06 FileAttribute" FileName="IOMap.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_IOMEM" FriendlyName="DT Research iomem\2b507e0ad4515d9d47fb7f0bfa1f1eb11de25db4fca49fc1417ea991dc33b6bf FileAttribute" FileName="iomem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.21" />
+    <FileAttrib ID="ID_FILEATTRIB_JNPRVA" FriendlyName="neofltr.sys\37507cdb5df5669862f0213feb521dc82a3c87b85c5489bbffdaedd1c43da132 FileAttribute" FileName="neofltr.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="22.0.0.0"/>
     <FileAttrib ID="ID_FILEATTRIB_KEVP64" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_KSAPI" FriendlyName="KingSoft ksapi.sys FileAttribute" FileName="ksapi.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2020.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_LDIAGO_1" FriendlyName="Lenovo ldiagio.sys\68ca1b5151181a98cd6da55d6dfd6ef0c94f0cf9379be37a8f86dd996d677946 FileAttribute" FileName="LDiagIO_legacy.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
@@ -1808,6 +1809,7 @@
     <FileAttrib ID="ID_FILEATTRIB_PHYSMEM" FriendlyName="Physmem.sys FileAttribute" FileName="physmem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_PROBMON" FriendlyName="probmon.sys\023d722cbbdd04e3db77de7e6e3cfeabcef21ba5b2f04c3f3a33691801dd45eb FileAttribute" FileName="probmon.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_PROCEXP" FriendlyName="Sysinternals Process Explorer FileAttribute" FileName="procexp.Sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="16.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_PROCOBSRVESX" FriendlyName="ProcObsrvesx\0c003e038173bfa30069b09f99712780a293328abbc91633b07751246c0ef149 FileAttribute" FileName="ProcObsrvesx.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.0.0.49"/>
     <FileAttrib ID="ID_FILEATTRIB_PSMOUNTEREX" FriendlyName="psmounterex\02fa3060a8319f0f691547345863679d750bfea0974798ffcd379ee965bce83d FileAttribute" FileName="psmounterex.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.0.7760.0"/>
     <FileAttrib ID="ID_FILEATTRIB_RADHWMGR" FriendlyName="NCR RadHwMgr\00c3e86952eebb113d91d118629077b3370ebc41eeacb419762d2de30a43c09c FileAttribute" FileName="RadHwMgr.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_RTIF" FriendlyName="TenAsys rtif.sys\0d133ced666c798ea63b6d8026ec507d429e834daa7c74e4e091e462e5815180 FileAttribute" FileName="rtif.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.65535.65535.65535"/>
@@ -1823,6 +1825,7 @@
     <FileAttrib ID="ID_FILEATTRIB_SANDRA" FriendlyName="" FileName="SANDRA" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_SANDRA_DRIVER" FriendlyName="" FileName="sandra.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_SBIOS" FriendlyName="Samsung sbios\1e24c45ce2672ee403db34077c88e8b7d7797d113c6fd161906dce3784da627d FileAttribute" FileName="SBIOSIO64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_SEASUN" FriendlyName="SeasunProtect.sys\507b07b0dc0e638b65b4a4d11a462b35439c746d42337b9888927bf994176102 FileAttribute" FileName="SeasunProtect.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_SEGWINDRVX64" FriendlyName="segwindrvx64.sys FileAttribute" FileName="segwindrvx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="100.0.7.2" />
     <FileAttrib ID="ID_FILEATTRIB_SFDRVX32" FriendlyName="sfdrvx32\0bd1523a68900b80ed1bccb967643525cca55d4ff4622d0128913690e6bb619e FileAttribute" FileName="sfdrvx32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.43.4.0"/>
     <FileAttrib ID="ID_FILEATTRIB_STDCDRV" FriendlyName="Intel Stdcdrv.sys\37022838c4327e2a5805e8479330d8ff6f8cd3495079905e867811906c98ea20 FileAttribute" FileName="stdcdrv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.65535.65535.65535"/>
@@ -1882,6 +1885,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MONITOR" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_PROCOBSRVESX" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RADHWMGR" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTIF" />
@@ -2032,6 +2036,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_PSMOUNTEREX" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO64_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SEASUN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_STDCDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TRUESIGHT"/>
@@ -2067,10 +2072,12 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_NSCM_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NVFLASH" />
       <FileAttribRef RuleID="ID_FILEATTRIB_PCDOC" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_PROCOBSRVESX" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RADHWMGR" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RZPNK" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SEASUN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_STDCDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_SYSDRV3S" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TBOFLHELPER" />
@@ -2100,6 +2107,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_GDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_PROCOBSRVESX" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NVOCLOCK" />
       <FileAttribRef RuleID="ID_FILEATTRIB_PCDOC" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTPORT" />
@@ -2872,6 +2880,26 @@
       <CertOemID Value="Elitegroup Computer Systems Co Ltd"/>
       <FileAttribRef RuleID="ID_FILEATTRIB_ACCELLID"/>
     </Signer>
+    <Signer ID="ID_SIGNER_PROCOBSRVESX_1" Name="COMODO RSA Extended Validation Code Signing CA">
+      <CertRoot Type="TBS" Value="FCD8DD15125F14B84FEC55838806355EC3787407188BAC83C2C0D6C841ADF9AC76EE83ECCC5C9463F1F88FC5295A31EE"/>
+      <CertPublisher Value="MicroWorld Technologies Inc."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_PROCOBSRVESX"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_PROCOBSRVESX_2" Name="Sectigo Public Code Signing Root R46">
+      <CertRoot Type="TBS" Value="A229D2722BC6091D73B1D979B81088C977CB028A6F7CBF264BB81D5CC8F099F87D7C296E48BF09D7EBE275F5498661A4"/>
+      <CertPublisher Value="MicroWorld Technologies Inc."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_PROCOBSRVESX"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_JNPRVA_1" Name="Microsoft Windows Third Party Component CA 2012">
+      <CertRoot Type="TBS" Value="CEC1AFD0E310C55C1DCC601AB8E172917706AA32FB5EAF826813547FDF02DD46"/>
+      <CertOemID Value="Ivanti, Inc."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_JNPRVA"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_JNPRVA_2" Name="Sectigo Public Code Signing Root R46">
+    <CertRoot Type="TBS" Value="A229D2722BC6091D73B1D979B81088C977CB028A6F7CBF264BB81D5CC8F099F87D7C296E48BF09D7EBE275F5498661A4"/>
+    <CertPublisher Value="Ivanti, Inc."/>
+    <FileAttribRef RuleID="ID_FILEATTRIB_JNPRVA"/>
+    </Signer>
     <Signer ID="ID_SIGNER_AMON" Name="Microsoft Windows Third Party Component CA 2014">
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE"/>
       <CertOemID Value="AMON SOFTWARE LTD"/>
@@ -3070,6 +3098,8 @@
           <DeniedSigner SignerId="ID_SIGNER_JCOS_1" />
           <DeniedSigner SignerId="ID_SIGNER_JCOS_2" />
           <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
+          <DeniedSigner SignerId="ID_SIGNER_JNPRVA_1" />
+          <DeniedSigner SignerId="ID_SIGNER_JNPRVA_2" />
           <DeniedSigner SignerId="ID_SIGNER_KSAPI_1" />
           <DeniedSigner SignerId="ID_SIGNER_KSAPI_2" />
           <DeniedSigner SignerId="ID_SIGNER_KSAPI_3" />
@@ -3131,6 +3161,8 @@
           <DeniedSigner SignerId="ID_SIGNER_PHYMEM" />
           <DeniedSigner SignerId="ID_SIGNER_PHYMEM_1" />
           <DeniedSigner SignerId="ID_SIGNER_PHYMEM_2" />
+          <DeniedSigner SignerId="ID_SIGNER_PROCOBSRVESX_1" />
+          <DeniedSigner SignerId="ID_SIGNER_PROCOBSRVESX_2" />
           <DeniedSigner SignerId="ID_SIGNER_PSMOUNTEREX_1" />
           <DeniedSigner SignerId="ID_SIGNER_PSMOUNTEREX_2" />
           <DeniedSigner SignerId="ID_SIGNER_PSMOUNTEREX_3" />
@@ -4840,7 +4872,7 @@
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.27825.0</String>
+        <String>10.0.27860.0</String>
       </Value>
     </Setting>
     <Setting Provider="PolicyInfo" Key="NoRevalidationUponRefresh" ValueName="NoRevalidationUponRefreshValue">

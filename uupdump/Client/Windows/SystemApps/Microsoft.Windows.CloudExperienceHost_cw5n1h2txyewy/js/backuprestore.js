@@ -200,6 +200,9 @@ var CloudExperienceHost;
         var OobeAadCloudBackupRestore;
         (function (OobeAadCloudBackupRestore) {
             function getShouldSkipAsync() {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("CommercialBrOOBETelemetry")) {
+                    CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_RestoreCodePresent");
+                }
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OOBERestoreFlowControlforAAD")) {
                     return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                         let licensingPolicyPromise = WinJS.Promise.wrap(CloudExperienceHostAPI.UtilStaticsCore.getLicensingPolicyValue("OOBE-Skip-CloudBackupRestore"));
@@ -213,6 +216,11 @@ var CloudExperienceHost;
                             else if (cspValue == false) {
                                 shouldSkip = true;
                                 CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_DisabledByCsp");
+                            }
+                            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("CommercialBrOOBETelemetry")) {
+                                if (shouldSkip == false) {
+                                    CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_RestoreEnabled");
+                                }
                             }
                             completeDispatch(shouldSkip);
                         }, (error) => {

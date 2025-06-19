@@ -21,7 +21,7 @@
     "StartSelector": {
       "cxid": "StartSelector",
       "launcher": "js:OOBEStartSelector",
-      "successID": "OobeMSAHello",
+      "successID": "OobeWindowsAccountSyncConsent",
       "visibility": false,
       "measureId": 48471513
     },
@@ -39,6 +39,23 @@
       "disableErrorPageOnFailure": true,
       "visibility": false,
       "measureId": 48471668
+    },
+    "OobeWindowsAccountSyncConsent": {
+      "cxid": "OobeWindowsAccountSyncConsent",
+      "url": "https://sdx.microsoft.com/frx/windows-account-sync-consent/oobe",
+      "urlint": "https://sdx.microsoft-int.com/frx/windows-account-sync-consent/oobe",
+      "requiredFeatureName": "OobeHostPostMSAFlowMigration",
+      "supportedSignInIdentityProviders": [ "msa" ],
+      "internetRequired": true,
+      "skipReconnectHandler": true,
+      "successID": "OobeMSAHello",
+      "failID": "OobeMSAHello",
+      "cancelID": "OobeMSAHello",
+      "abortID": "OobeMSAHello",
+      "offlineID": "OobeMSAHello",
+      "disableBackNavigationToNode": true,
+      "disableErrorPageOnFailure": true,
+      "visibility": false
     },
     "OobeMSAHello": {
       "cxid": "OobeMSAHello",

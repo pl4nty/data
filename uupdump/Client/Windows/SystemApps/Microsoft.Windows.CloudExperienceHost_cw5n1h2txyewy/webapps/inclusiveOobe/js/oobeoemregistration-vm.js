@@ -241,6 +241,22 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
 
                     flyoutControl.show(e.target, 'autovertical', 'left');
                     this.loadingLink(false);
+
+                    let gamepadLegendEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadLegendEnabled");
+                    if (gamepadLegendEnabledObj.result && gamepadLegendEnabledObj.value) {
+                        bridge.invoke("CloudExperienceHost.AppFrame.setGamepadLegendDisplayOverrideForB", this.resourceStrings.GamepadLegendDismissText);
+
+                            frameDoc.addEventListener("keyup", (ev) => {
+                                if (ev.keyCode === WinJS.Utilities.Key.GamepadB) {
+                                    flyoutControl.hide();
+                                }
+                                return true;
+                            });
+
+                            flyoutControl.onafterhide = () => {
+                                bridge.invoke("CloudExperienceHost.AppFrame.setGamepadLegendDisplayOverrideForB", "");
+                            }
+                    }
                 }, (error) => {
                     this.loadingLink(false);
                 });
@@ -294,7 +310,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     countryCodeSelectOptions.push(countryCodeSelectEntry);
                 }
             }
-            
+
             // Sort by displayName and prepend the select placeholder option before returning
             countryCodeSelectOptions.sort((a,b) => {
                 if (a.displayName < b.displayName) {

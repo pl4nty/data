@@ -5,6 +5,7 @@
             this.listContainer = element.querySelector(".scroll-view");
             this.listRootElement = element.querySelector(".list");
             this.items = params.items;
+            this.itemLangValues = params.itemLangValues;
             this.listAccessibleName = params.listAccessibleName;
             this.selectionFollowsFocus = (params.selectionFollowsFocus === undefined) ? true : params.selectionFollowsFocus;
             this.isBinaryChoice = (params.binaryChoice === undefined) ? false : params.binaryChoice;

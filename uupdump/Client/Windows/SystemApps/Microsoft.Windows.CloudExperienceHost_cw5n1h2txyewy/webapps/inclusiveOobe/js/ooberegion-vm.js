@@ -14,6 +14,11 @@ define(['lib/knockout',
             this.gestureManager = gestureManager;
             this.items = regions;
 
+            let gamepadEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadEnabledOobe");
+            this.isGamepadEnabled = gamepadEnabledObj.result && gamepadEnabledObj.value;
+
+            this.onFooterKeyDown = this.onFooterKeyDown.bind(this);
+
             // Check if oobe xml has a default region code, if not fall back to the default region for the app
             let defaultRegionCode = defaultregion;
             let dataLayerDefaultRegion = CloudExperienceHostAPI.OobeRegionManagerStaticsCore.tryGetDefaultRegionIso2LetterCode();
@@ -30,7 +35,7 @@ define(['lib/knockout',
                 this.items.unshift(defaultRegionObject);
             }
             this.selectedItem = ko.observable(defaultRegionObject);
-            
+
             this.resourceStrings = resourceStrings;
             this.supportClickableTitle = true;
 
@@ -168,6 +173,32 @@ define(['lib/knockout',
                     bridge.fireEvent(constants.Events.done, constants.AppResult.error);
                 }
             }
+        }
+
+        // Due to the way oobe-listview is structured (designating a "proxy" to receive tab focus so it can internally manage focus programmatically
+        // AND making that proxy element be the container for the whole list, not just the view-port) it is not entirely compatible with WinJS XYFocus.
+        //
+        // Mainly, if focus is within the oobe-footer and we attempt an "up" or "down" navigation, XYFocus will essentially rule out the oobe-listview
+        // on the basis that in either direction, the bottom/top (respectively) of the oobe-listview are below/above the currently focused element's bounding rect.
+        // As a result, these get negative "scores" and are filtered out. Logically, it makes sense that when you press "up" the focus target should NOT be
+        // something that stretches below the currently focused element (and vice versa).
+        //
+        // So we need to be explicit about handling the transfer of focus from the oobe-footer to the oobe-listview when dealing with gamepad.
+        onFooterKeyDown(_, e) {
+            let handled = false;
+
+            if (this.isGamepadEnabled) {
+                if (e.keyCode === WinJS.Utilities.Key.GamepadDPadUp || e.keyCode === WinJS.Utilities.Key.GamepadLeftThumbstickUp) {
+                    let listview = document.querySelector("oobe-listview .list");
+                    if (listview) {
+                        listview.focus();
+                        e.preventDefault();
+                        handled = true;
+                    }
+                }
+            }
+
+            return !handled;
         }
 
         startVoiceOver() {

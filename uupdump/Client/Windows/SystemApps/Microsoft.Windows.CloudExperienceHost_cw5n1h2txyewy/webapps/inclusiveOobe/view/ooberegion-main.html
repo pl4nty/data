@@ -22,7 +22,7 @@
                 </oobe-listview>
             </div>
         </div>
-        <oobe-footer params="flexEndButtons: $root.flexEndButtons"></oobe-footer>
+        <oobe-footer params="flexEndButtons: $root.flexEndButtons" data-bind="event: {keydown: $root.onFooterKeyDown}"></oobe-footer>
     </div>
 </body>
 </html>

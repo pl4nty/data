@@ -12,18 +12,18 @@
     <div style="display: flex; justify-content: space-between">
         <!-- This wrapper div ensures that even when .gamepadLegend isn't visible (display:none), the .footerView alignment is unaffected. -->
         <div>
-            <div class="gamepadLegend" data-bind="visible: showGamepadLegend">
-                <div class="c-icon f-bottomBar icon icon-buttonA">
+            <div class="gamepadLegend" data-bind="visible: showGamepadLegend, attr: {'aria-label': gamepadButtonAAccName}">
+                <div class="f-bottomBar icon icon-buttonA">
                     <!-- Glyph -->
                     <span aria-hidden="true"></span>
                     <!-- Label -->
-                    <span data-bind="text: gamepadButtonAText, attr: {'aria-label': gamepadButtonAAccName, 'title': gamepadButtonAAccName}"></span>
+                    <span aria-hidden="true" data-bind="text: gamepadButtonAText"></span>
                 </div>
-                <div class="c-icon f-bottomBar icon icon-buttonB" data-bind="visible: showGamepadBButton">
+                <div class="f-bottomBar icon icon-buttonB" data-bind="visible: showGamepadBButton, attr: {'aria-label': gamepadButtonBAccName}">
                     <!-- Glyph -->
                     <span aria-hidden="true"></span>
                     <!-- Label -->
-                    <span data-bind="text: gamepadButtonBText, attr: {'aria-label': gamepadButtonBAccName, 'title': gamepadButtonBAccName}"></span>
+                    <span aria-hidden="true" data-bind="text: gamepadButtonBText"></span>
                 </div>
             </div>
         </div>

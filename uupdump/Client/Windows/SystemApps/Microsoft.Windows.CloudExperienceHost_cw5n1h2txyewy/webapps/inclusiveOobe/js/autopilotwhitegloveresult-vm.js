@@ -360,7 +360,8 @@ define([
                 // Read the velocity value from the OOBE feature staging API to differentiate behavior between old and new
                 let bitlockerDeferralEnabled = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotBitlockerOobeDeferral");
                 if (bitlockerDeferralEnabled) {
-                    this.commercialDiagnosticsUtilities.signalBitlockerProvisioningComplete(4); // BitLockerDeferralReason.PreProvisioningComplete
+                    let sessionUtilities = new bootstrapSessionGeneralUtilities(true);
+                    sessionUtilities.signalBitlockerProvisioningComplete(4); // BitLockerDeferralReason.PreProvisioningComplete
                 }
             } catch (error) {
                 // Swallow exception and show error on page.
