@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2084691,
-    "file_count": 180
+    "size": 2080242,
+    "file_count": 179
   },
   {
     "name": "accessibility_test_framework",
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32242061,
+    "size": 32239835,
     "file_count": 3961
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 17189355,
+    "size": 17189867,
     "file_count": 19
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3629357,
+    "size": 3629865,
     "file_count": 565
   },
   {
@@ -686,8 +686,8 @@
   },
   {
     "name": "tflite",
-    "size": 1634137,
-    "file_count": 480
+    "size": 1636557,
+    "file_count": 482
   },
   {
     "name": "tflite_support",
@@ -726,8 +726,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6164855,
-    "file_count": 172
+    "size": 6168959,
+    "file_count": 173
   },
   {
     "name": "vulkan_memory_allocator",
@@ -746,13 +746,13 @@
   },
   {
     "name": "webrtc",
-    "size": 275563,
-    "file_count": 90
+    "size": 102997,
+    "file_count": 50
   },
   {
     "name": "webrtc_overrides",
-    "size": 5274,
-    "file_count": 4
+    "size": 4863,
+    "file_count": 2
   },
   {
     "name": "win_build_output",
