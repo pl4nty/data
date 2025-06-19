@@ -689,7 +689,8 @@
                 ],
                 "whitelistedApisForAADClaimsChallenge": [
                     "ChannelSharepointFilesController_PostFile",
-                    "UserController_CreateTemplatedInstanceAppEntitlement"
+                    "UserController_CreateTemplatedInstanceAppEntitlement",
+                    "UserController_CreateAppEntitlement"
                 ],
                 "whitelistedApisForClaimsChallenge": [
                     "ChannelSharepointFilesController_AddDocumentLibraryAsync",
