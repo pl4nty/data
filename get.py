@@ -158,6 +158,9 @@ if __name__ == "__main__":
         fetch_and_prettify_json(
             "https://learn.microsoft.com/en-us/product-style-guide-msft-internal/toc.json", "microsoft_style_guide.json")
 
+        fetch_and_prettify_json(
+            "https://main.vscode-cdn.net/extensions/marketplace.json", "microsoft_vscode_marketplace.json")
+
         creds = DefaultAzureCredential()
         headers = {
             "Authorization": f"Bearer {creds.get_token('https://management.azure.com//.default').token}"}
