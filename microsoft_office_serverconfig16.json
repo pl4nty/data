@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.18931.40125-->
+    <!--Build: 16.0.19013.40127-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -1502,6 +1502,10 @@
     </o:service>
     <o:service o:name="ClpDEM">
       <o:url>https://officeclient.microsoft.com/dynamicErrorMessaging</o:url>
+    </o:service>
+    <o:service o:name="RestrictedModeAuditingGraph" o:authentication="2">
+      <o:url>https://graph.microsoft.com/beta/auditLogs/restrictedModeOfficeClientLogs</o:url>
+      <o:ticket o:idprovider="3" o:resourceId="https://graph.microsoft.com/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="InkAnalysisTextRecoEndpointUrl">
       <o:url>https://input.microsoft.com/Ink/TextRecognition/?api-version=beta</o:url>
