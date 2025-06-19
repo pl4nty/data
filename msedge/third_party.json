@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2085483,
+    "size": 2084691,
     "file_count": 180
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10766380,
+    "size": 10766334,
     "file_count": 177
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14612903,
+    "size": 14613103,
     "file_count": 830
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32228116,
-    "file_count": 3959
+    "size": 32242061,
+    "file_count": 3961
   },
   {
     "name": "boringssl",
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17965208,
+    "size": 17965028,
     "file_count": 1009
   },
   {
@@ -186,8 +186,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17021297,
-    "file_count": 2026
+    "size": 17028633,
+    "file_count": 2027
   },
   {
     "name": "entity_extraction",
@@ -501,7 +501,7 @@
   },
   {
     "name": "nearby",
-    "size": 278599,
+    "size": 279042,
     "file_count": 52
   },
   {
@@ -556,8 +556,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3624635,
-    "file_count": 564
+    "size": 3629357,
+    "file_count": 565
   },
   {
     "name": "perl",
@@ -641,7 +641,7 @@
   },
   {
     "name": "skia",
-    "size": 3458162,
+    "size": 3458713,
     "file_count": 1178
   },
   {
@@ -686,7 +686,7 @@
   },
   {
     "name": "tflite",
-    "size": 1633100,
+    "size": 1634137,
     "file_count": 480
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1316763,
+    "size": 1318547,
     "file_count": 23
   },
   {
@@ -721,12 +721,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2370226,
+    "size": 2377990,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6147967,
+    "size": 6164855,
     "file_count": 172
   },
   {
@@ -746,7 +746,7 @@
   },
   {
     "name": "webrtc",
-    "size": 275575,
+    "size": 275563,
     "file_count": 90
   },
   {

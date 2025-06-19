@@ -160,6 +160,13 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kReactiveSearchWithAddressbar);
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsReactiveSearchAddressbarEnabled();
 
+// If enabled, the "Try the new look and feel" toggle in
+// edge://settings/appearance will be removed.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kRemoveTryNewLAFToggle);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+bool IsRemoveTryNewLAFToggleEnabled();
+
 // If enabled, launch a new SERP backround tab to accompany any windows
 // searches.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
