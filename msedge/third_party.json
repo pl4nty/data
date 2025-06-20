@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2080242,
-    "file_count": 179
+    "size": 2082132,
+    "file_count": 178
   },
   {
     "name": "accessibility_test_framework",
@@ -11,7 +11,7 @@
   },
   {
     "name": "alsa",
-    "size": 27848,
+    "size": 27873,
     "file_count": 7
   },
   {
@@ -26,17 +26,17 @@
   },
   {
     "name": "android_prebuilts",
-    "size": 481,
+    "size": 506,
     "file_count": 2
   },
   {
     "name": "android_system_sdk",
-    "size": 20068,
+    "size": 20093,
     "file_count": 5
   },
   {
     "name": "android_toolchain",
-    "size": 553776,
+    "size": 553801,
     "file_count": 8
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "name": "apple_apsl",
-    "size": 23874,
+    "size": 23899,
     "file_count": 6
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "name": "axe-core",
-    "size": 1015485,
+    "size": 1015510,
     "file_count": 8
   },
   {
     "name": "blink",
-    "size": 32240831,
+    "size": 32236689,
     "file_count": 3960
   },
   {
@@ -96,12 +96,12 @@
   },
   {
     "name": "catapult",
-    "size": 10124182,
+    "size": 10124207,
     "file_count": 760
   },
   {
     "name": "checkstyle",
-    "size": 41799,
+    "size": 41824,
     "file_count": 11
   },
   {
@@ -131,7 +131,7 @@
   },
   {
     "name": "crashpad",
-    "size": 155298,
+    "size": 155323,
     "file_count": 32
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "dbus",
-    "size": 2439,
+    "size": 2464,
     "file_count": 7
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "name": "devscripts",
-    "size": 65264,
+    "size": 65289,
     "file_count": 7
   },
   {
@@ -176,7 +176,7 @@
   },
   {
     "name": "dpkg-shlibdeps",
-    "size": 57669,
+    "size": 57694,
     "file_count": 10
   },
   {
@@ -241,7 +241,7 @@
   },
   {
     "name": "glib",
-    "size": 52102857,
+    "size": 52102882,
     "file_count": 2345
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "name": "grpc",
-    "size": 31327668,
+    "size": 31327693,
     "file_count": 3477
   },
   {
@@ -276,7 +276,7 @@
   },
   {
     "name": "hunspell",
-    "size": 4405537,
+    "size": 4405562,
     "file_count": 80
   },
   {
@@ -286,7 +286,7 @@
   },
   {
     "name": "hyphenation-patterns",
-    "size": 3091490,
+    "size": 3091515,
     "file_count": 290
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "name": "jdk",
-    "size": 6757,
+    "size": 6784,
     "file_count": 10
   },
   {
@@ -341,12 +341,12 @@
   },
   {
     "name": "kotlinc",
-    "size": 317911,
+    "size": 317938,
     "file_count": 53
   },
   {
     "name": "lcov",
-    "size": 589679,
+    "size": 589704,
     "file_count": 45
   },
   {
@@ -356,7 +356,7 @@
   },
   {
     "name": "libbrlapi",
-    "size": 166164,
+    "size": 166189,
     "file_count": 12
   },
   {
@@ -371,12 +371,12 @@
   },
   {
     "name": "libgudev",
-    "size": 180804,
+    "size": 180829,
     "file_count": 51
   },
   {
     "name": "libinput",
-    "size": 6422295,
+    "size": 6422320,
     "file_count": 466
   },
   {
@@ -406,7 +406,7 @@
   },
   {
     "name": "libsecret",
-    "size": 107874,
+    "size": 107899,
     "file_count": 20
   },
   {
@@ -416,7 +416,7 @@
   },
   {
     "name": "libusb",
-    "size": 833336,
+    "size": 833361,
     "file_count": 61
   },
   {
@@ -446,7 +446,7 @@
   },
   {
     "name": "logilab",
-    "size": 865563,
+    "size": 865613,
     "file_count": 83
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "name": "mig",
-    "size": 21441,
+    "size": 21466,
     "file_count": 7
   },
   {
@@ -486,7 +486,7 @@
   },
   {
     "name": "mutter",
-    "size": 28385453,
+    "size": 28385478,
     "file_count": 1980
   },
   {
@@ -546,12 +546,12 @@
   },
   {
     "name": "pefile_py3",
-    "size": 253993,
+    "size": 254018,
     "file_count": 10
   },
   {
     "name": "perfetto",
-    "size": 3629923,
+    "size": 3630004,
     "file_count": 565
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "pylint",
-    "size": 600108,
+    "size": 600133,
     "file_count": 47
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "screen-ai",
-    "size": 4832454,
+    "size": 4832479,
     "file_count": 83
   },
   {
@@ -641,7 +641,7 @@
   },
   {
     "name": "speech-dispatcher",
-    "size": 41802,
+    "size": 41827,
     "file_count": 8
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "name": "subresource-filter-ruleset",
-    "size": 104739,
+    "size": 104764,
     "file_count": 7
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "test_fonts",
-    "size": 74240,
+    "size": 74265,
     "file_count": 13
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "name": "v4l-utils",
-    "size": 116345,
+    "size": 116370,
     "file_count": 9
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6182963,
+    "size": 6182815,
     "file_count": 173
   },
   {
