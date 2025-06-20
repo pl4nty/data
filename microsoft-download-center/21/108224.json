@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Azure App Service on Azure Stack Hub 25R1 Offline Package",
+    "downloadDescription": "Azure App Service on Azure Stack Hub 25R1 Offline Package",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppService.exe",
+            "url": "https://download.microsoft.com/download/9c4d609d-252e-47fb-8949-f1695091a93e/AppService.exe",
+            "size": "6275992",
+            "version": "102.10.9.0",
+            "datePublished": "6/19/2025 10:28:26 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AppServiceOfflineInstallationPackage.102.10.9.zip",
+            "url": "https://download.microsoft.com/download/9c4d609d-252e-47fb-8949-f1695091a93e/AppServiceOfflineInstallationPackage.102.10.9.zip",
+            "size": "15687337268",
+            "version": "102.10.9.0",
+            "datePublished": "6/19/2025 10:28:26 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure App Service on Azure Stack Hub 25R1 Offline Package",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "102.10.9.0",
+    "detailsSection_file_name": [
+        "AppService.exe",
+        "AppServiceOfflineInstallationPackage.102.10.9.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB",
+        "14.6 GB"
+    ],
+    "detailsSection_file_date": "6/19/2025",
+    "systemRequirementsSection": "Azure Stack Hub 2311 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "https://learn.microsoft.com/azure-stack/operator/azure-stack-app-service-deploy?view=azs-2501&tabs=22h1&pivots=state-disconnected",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108224",
+    "downloadPreload": true
+}
