@@ -13,7 +13,7 @@ if not l_0_2 then
   return mp.CLEAN
 end
 l_0_2 = (string.lower)(l_0_2)
-l_0_1 = (string.gsub)(l_0_2, "^", "")
+l_0_1 = (string.gsub)(l_0_2, "%^", "")
 local l_0_3 = {}
 -- DECOMPILER ERROR at PC34: No list found for R3 , SetList fails
 

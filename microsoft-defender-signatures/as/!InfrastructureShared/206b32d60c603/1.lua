@@ -13,6 +13,9 @@ local l_0_3 = (this_sigattrlog[1]).utf8p2
 if isnull(l_0_3) and (string.lower)(l_0_2) == "c:\\windows\\system32\\w32time.dll" then
   return mp.CLEAN
 end
+if (mp.IsKnownFriendlyFile)(l_0_2, true, false) then
+  return mp.CLEAN
+end
 local l_0_4 = (string.match)((this_sigattrlog[1]).utf8p1, l_0_0)
 local l_0_5 = (string.match)((this_sigattrlog[2]).utf8p1, l_0_0)
 local l_0_6 = (string.match)((this_sigattrlog[3]).utf8p1, l_0_0)
@@ -38,7 +41,7 @@ do
   l_0_8 = mp
   l_0_8 = l_0_8.INFECTED
   do return l_0_8 end
-  -- DECOMPILER ERROR at PC151: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC162: freeLocal<0 in 'ReleaseLocals'
 
 end
 

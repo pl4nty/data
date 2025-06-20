@@ -13,7 +13,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
     end
     do
       local l_0_3 = nil
-      if not contains(l_0_3, {"httpd", "w3wp", "sqlservr", "tomcat", "php-cgi.exe"}) then
+      if not contains(l_0_3, {"httpd", "w3wp", "sqlservr", "tomcat"}) then
         return mp.INFECTED
       end
       return mp.CLEAN

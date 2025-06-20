@@ -165,24 +165,24 @@ if l_0_7 and l_0_8 then
 
       end
       l_0_0.Score = l_0_5
-      -- DECOMPILER ERROR at PC243: Overwrote pending register: R13 in 'AssignReg'
+      -- DECOMPILER ERROR at PC245: Overwrote pending register: R13 in 'AssignReg'
 
-      local l_0_34, l_0_35 = nil
-      -- DECOMPILER ERROR at PC249: Overwrote pending register: R14 in 'AssignReg'
+      if l_0_5 >= 10 then
+        local l_0_34, l_0_35 = nil
+        -- DECOMPILER ERROR at PC251: Overwrote pending register: R14 in 'AssignReg'
 
-      local l_0_36 = nil
-      local l_0_37 = nil
-      local l_0_38 = nil
-      do
-        l_0_37 = safeJsonSerialize(l_0_26, 150, nil, true) or (null)
-        l_0_34(l_0_35, l_0_36, l_0_37)
-        -- DECOMPILER ERROR at PC256: Overwrote pending register: R14 in 'AssignReg'
+        local l_0_36 = nil
+        local l_0_37 = nil
+        local l_0_38 = nil
+        do
+          l_0_37 = safeJsonSerialize(l_0_26, 150, nil, true) or (null)
+          l_0_34(l_0_35, l_0_36, l_0_37)
+          -- DECOMPILER ERROR at PC258: Confused about usage of register R13 for local variables in 'ReleaseLocals'
 
-        -- DECOMPILER ERROR at PC257: Overwrote pending register: R14 in 'AssignReg'
+          do return mp.CLEAN end
+          -- DECOMPILER ERROR at PC261: Confused about usage of register R12 for local variables in 'ReleaseLocals'
 
-        do return l_0_34 end
-        -- DECOMPILER ERROR at PC259: Confused about usage of register R13 for local variables in 'ReleaseLocals'
-
+        end
       end
     end
   end

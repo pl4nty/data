@@ -10,17 +10,24 @@ if l_0_0 ~= nil then
     return mp.CLEAN
   end
   local l_0_2 = ((mp.GetProcessCommandLine)(l_0_1)):lower()
-  if hasBase64Content(l_0_2) then
-    return mp.INFECTED
-  end
-  if l_0_0.image_path ~= nil then
-    local l_0_3 = (string.lower)(l_0_0.image_path)
-    if l_0_3:match("([^\\]+)$") == "explorer.exe" then
+  do
+    if l_0_0.image_path ~= nil then
+      local l_0_3 = (string.lower)(l_0_0.image_path)
+      if l_0_3:match("([^\\]+)$") == "explorer.exe" then
+        return mp.INFECTED
+      end
+    end
+    do
+      local l_0_4 = {}
+      -- DECOMPILER ERROR at PC36: No list found for R3 , SetList fails
+
+      -- DECOMPILER ERROR at PC37: Overwrote pending register: R4 in 'AssignReg'
+
+      if not ("hidden")(l_0_2, l_0_4) then
+        return mp.CLEAN
+      end
       return mp.INFECTED
     end
   end
-end
-do
-  return mp.CLEAN
 end
 

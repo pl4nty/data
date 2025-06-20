@@ -149,14 +149,25 @@ if l_0_12.Score > 30 then
               (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
               l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspUrl"
             end
-            local l_0_42, l_0_43 = safeJsonSerialize(l_0_1, 150, nil, true)
-            if l_0_42 then
-              set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_42), false)
+            local l_0_42 = {}
+            local l_0_43 = 0
+            for l_0_47,l_0_48 in ipairs(l_0_1.Parents) do
+              local l_0_49, l_0_50, l_0_51 = IsFileRecentlyDropped(l_0_48.ImagePath)
+              if l_0_49 then
+                (table.insert)(l_0_42, l_0_51)
+                l_0_43 = l_0_43 + l_0_50
+              end
+            end
+            l_0_1.RecentlyDroppedParents = l_0_42
+            l_0_1.ParentScore = l_0_43
+            local l_0_52, l_0_53 = safeJsonSerialize(l_0_1, 150, nil, true)
+            if l_0_52 then
+              set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_52), false)
               ;
-              (MpCommon.BmTriggerSig)(l_0_2.ppid, "SuspDownload2_BM_Capture", l_0_42)
+              (MpCommon.BmTriggerSig)(l_0_2.ppid, "SuspDownload2_BM_Capture", l_0_52)
             else
-              if l_0_43 then
-                set_research_data("Error", (MpCommon.Base64Encode)(l_0_43), false)
+              if l_0_53 then
+                set_research_data("Error", (MpCommon.Base64Encode)(l_0_53), false)
                 return mp.INFECTED
               else
                 set_research_data("Error", "Failed Serialization w/o error", false)

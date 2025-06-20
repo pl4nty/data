@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = GetRollingQueueKeyValues("TEAMS_CALL_PLACED", "Meeting")
+local l_0_0 = GetRollingQueueAsHashTable("TEAMS_CALL_PLACED")
 if l_0_0 and next(l_0_0) then
   local l_0_1 = {}
   l_0_1.TEAMS_Meetings = l_0_0

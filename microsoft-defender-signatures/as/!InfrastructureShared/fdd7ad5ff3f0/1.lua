@@ -187,20 +187,37 @@ do
                             (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
                             l_0_10.Remediation_Reason = l_0_10.Remediation_Reason .. ";" .. "SuspUrl"
                           end
+                          local l_0_55 = nil
+                          local l_0_56 = nil
+                          for l_0_60,l_0_61 in ipairs(l_0_10.Parents) do
+                            local l_0_57, l_0_58, l_0_59, l_0_60 = , {}, 0
+                            -- DECOMPILER ERROR at PC426: Overwrote pending register: R23 in 'AssignReg'
+
+                            if IsFileRecentlyDropped(R23_PC266) then
+                              (table.insert)(l_0_59, R27_PC434)
+                              l_0_60 = l_0_60 + R23_PC266
+                            end
+                          end
+                          -- DECOMPILER ERROR at PC438: Confused about usage of register: R15 in 'UnsetPending'
+
+                          l_0_10.RecentlyDroppedParents = l_0_59
+                          -- DECOMPILER ERROR at PC439: Confused about usage of register: R16 in 'UnsetPending'
+
+                          l_0_10.ParentScore = l_0_60
                           do
-                            local l_0_55, l_0_56 = nil
+                            local l_0_65, l_0_66 = nil
                             if safeJsonSerialize(l_0_10, 150, nil, true) then
                               set_research_data("Evidence", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_10, 150, nil, true)), false)
                               ;
                               (MpCommon.BmTriggerSig)(l_0_0.ppid, "SuspDownload3_BM_Capture", safeJsonSerialize(l_0_10, 150, nil, true))
                             else
                               if l_0_10 then
-                                set_research_data("Error", (MpCommon.Base64Encode)(R20_PC449), R20_PC449)
+                                set_research_data("Error", (MpCommon.Base64Encode)(R22_PC470), R22_PC470)
                                 return mp.INFECTED
                               end
                             end
                             do return mp.CLEAN end
-                            -- DECOMPILER ERROR at PC458: freeLocal<0 in 'ReleaseLocals'
+                            -- DECOMPILER ERROR at PC479: freeLocal<0 in 'ReleaseLocals'
 
                           end
                         end

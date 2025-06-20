@@ -125,7 +125,7 @@ else
                       -- DECOMPILER ERROR at PC353: Confused about usage of register: R18 in 'UnsetPending'
 
                       if AnomalyTableCheck("Appomaly_Global_CmdLine", l_0_19 .. ";" .. l_0_21 .. ";" .. (table.concat)(l_0_22, "|"), 20) and not "Appomaly_Global_CmdLine" then
-                        local l_0_38 = nil
+                        local l_0_38, l_0_55, l_0_56, l_0_57 = nil
                         if IsPotentiallyClean("CmdLine", l_0_36 .. ";" .. l_0_21, l_0_22) then
                           l_0_1.IsPotentiallyClean = "CmdLine"
                         end
@@ -170,19 +170,36 @@ else
                           (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
                           l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspUrl"
                         end
+                        local l_0_46 = nil
+                        local l_0_47 = nil
+                        for l_0_51,l_0_52 in ipairs(l_0_1.Parents) do
+                          local l_0_48, l_0_49, l_0_50 = , {}, 0
+                          -- DECOMPILER ERROR at PC439: Confused about usage of register: R22 in 'UnsetPending'
+
+                          if IsFileRecentlyDropped((("Appomaly_Global_CmdLine").BadUrlRep).ImagePath) then
+                            (table.insert)(l_0_49, R28_PC447)
+                            l_0_50 = l_0_50 + (("Appomaly_Global_CmdLine").BadUrlRep).ImagePath
+                          end
+                        end
+                        -- DECOMPILER ERROR at PC451: Confused about usage of register: R16 in 'UnsetPending'
+
+                        l_0_1.RecentlyDroppedParents = l_0_49
+                        -- DECOMPILER ERROR at PC452: Confused about usage of register: R17 in 'UnsetPending'
+
+                        l_0_1.ParentScore = l_0_50
                         do
                           do
-                            local l_0_46, l_0_47 = nil
+                            local l_0_58, l_0_59 = nil
                             if safeJsonSerialize(l_0_1, 150, nil, true) then
                               (MpCommon.BmTriggerSig)(l_0_40.ppid, "SuspDownload_BM_Capture", safeJsonSerialize(l_0_1, 150, nil, true))
                             else
                               if l_0_1 then
-                                set_research_data("Error", (MpCommon.Base64Encode)(R21_PC454), R21_PC454)
+                                set_research_data("Error", (MpCommon.Base64Encode)(R23_PC475), R23_PC475)
                                 return mp.INFECTED
                               end
                             end
                             do return mp.CLEAN end
-                            -- DECOMPILER ERROR at PC463: freeLocal<0 in 'ReleaseLocals'
+                            -- DECOMPILER ERROR at PC484: freeLocal<0 in 'ReleaseLocals'
 
                           end
                         end

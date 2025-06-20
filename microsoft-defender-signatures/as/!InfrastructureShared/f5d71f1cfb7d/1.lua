@@ -30,6 +30,21 @@ do
       return mp.INFECTED
     end
   end
-  return mp.CLEAN
+  do
+    local l_0_5 = {}
+    -- DECOMPILER ERROR at PC63: No list found for R4 , SetList fails
+
+    -- DECOMPILER ERROR at PC64: Overwrote pending register: R5 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC65: Overwrote pending register: R6 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC66: Overwrote pending register: R7 in 'AssignReg'
+
+    if not ("hidden")("beacon", "$env:computername") then
+      return mp.INFECTED
+    end
+    do return mp.LOWFI end
+    -- WARNING: undefined locals caused missing assignments!
+  end
 end
 
