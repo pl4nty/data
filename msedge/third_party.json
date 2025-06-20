@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10766334,
+    "size": 10766486,
     "file_count": 177
   },
   {
@@ -76,13 +76,13 @@
   },
   {
     "name": "blink",
-    "size": 32239835,
-    "file_count": 3961
+    "size": 32240831,
+    "file_count": 3960
   },
   {
     "name": "boringssl",
-    "size": 325454,
-    "file_count": 22
+    "size": 72546,
+    "file_count": 16
   },
   {
     "name": "breakpad",
@@ -233,11 +233,6 @@
     "name": "freetype",
     "size": 586509,
     "file_count": 12
-  },
-  {
-    "name": "freetype-testing",
-    "size": 657693,
-    "file_count": 428
   },
   {
     "name": "fuzztest",
@@ -556,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3629865,
+    "size": 3629923,
     "file_count": 565
   },
   {
@@ -726,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6168959,
+    "size": 6182963,
     "file_count": 173
   },
   {
