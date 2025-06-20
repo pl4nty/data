@@ -12,23 +12,20 @@ if l_0_1 == "" or l_0_1 == nil then
   return mp.CLEAN
 end
 local l_0_2 = (string.lower)(l_0_1)
-do
-  local l_0_3 = {}
-  -- DECOMPILER ERROR at PC31: No list found for R3 , SetList fails
+local l_0_3 = {}
+-- DECOMPILER ERROR at PC29: No list found for R3 , SetList fails
 
-  -- DECOMPILER ERROR at PC32: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC30: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC33: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC31: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC34: Overwrote pending register: R6 in 'AssignReg'
+-- DECOMPILER ERROR at PC32: Overwrote pending register: R6 in 'AssignReg'
 
-  if not ("shorter.me")("yip.su", "rb.gy") then
-    return mp.CLEAN
-  end
-  if hasBase64Content(l_0_2) then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+if not ("shorter.me")("yip.su", "iplogger.co") then
+  return mp.CLEAN
 end
+if hasBase64Content(l_0_2) then
+  return mp.INFECTED
+end
+return mp.CLEAN
 
