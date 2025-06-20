@@ -19,7 +19,7 @@ local l_0_2 = {}
 
 -- DECOMPILER ERROR at PC29: Overwrote pending register: R4 in 'AssignReg'
 
-if not ("Service connection")("checkup", l_0_2) then
+if not ("connection")("checkup", l_0_2) then
   return mp.CLEAN
 end
 return mp.INFECTED
