@@ -384,6 +384,9 @@
         "CatchupModuleOverrideVariants": "",
         "CatchupModuleShouldHandleBacktrackingText": true,
         "CatchupModuleUseSdfPilot": false,
+        "CmkTenantList": [
+            "c27d9064-898a-49e6-a302-45537791c332"
+        ],
         "CosmicRolloutMode": null,
         "Crowdsource": true,
         "DecoratedProfileLookupBatchSize": 10,
@@ -1270,7 +1273,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250614.1.0",
+        "PeopleInTaskbarDFVersion": "1.20250619.3.0",
         "PeopleInTaskbarMsitVersion": "1.20250611.1.0",
         "PeopleInTaskbarProdVersion": "1.20250604.3.0",
         "campaignSchedules": {
