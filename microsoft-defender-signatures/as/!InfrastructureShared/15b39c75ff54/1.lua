@@ -7,16 +7,18 @@ local l_0_0 = {}
 local l_0_1, l_0_2 = (bm.get_process_relationships)()
 if l_0_2 then
   for l_0_6,l_0_7 in pairs(l_0_2) do
-    (table.insert)(l_0_0, (string.format)("%s (%s)", l_0_7.image_path, l_0_7.ppid))
-    ;
-    (bm.add_related_process)(l_0_7.ppid)
+    if l_0_7.ppid and l_0_7.image_path then
+      (table.insert)(l_0_0, (string.format)("%s (%s)", l_0_7.image_path, l_0_7.ppid))
+      ;
+      (bm.add_related_process)(l_0_7.ppid)
+    end
   end
 end
 do
   local l_0_8 = {}
   if mp.SIGATTR_LOG_SZ > 0 then
     for l_0_12 = mp.SIGATTR_LOG_SZ, 1, -1 do
-      if (sigattr_tail[l_0_12]).attribute == 16384 or (sigattr_tail[l_0_12]).attribute == 16385 then
+      if (sigattr_tail[l_0_12]).utf8p1 and ((sigattr_tail[l_0_12]).attribute == 16384 or (sigattr_tail[l_0_12]).attribute == 16385) then
         (table.insert)(l_0_8, (string.format)("0x%x: %s", (sigattr_tail[l_0_12]).attribute, (sigattr_tail[l_0_12]).utf8p1))
         ;
         (bm.add_related_file)((sigattr_tail[l_0_12]).utf8p1)

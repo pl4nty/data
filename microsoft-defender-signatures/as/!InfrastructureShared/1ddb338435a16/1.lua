@@ -24,24 +24,31 @@ if isnull(l_0_4) or isnull(l_0_5) or isnull(l_0_6) or isnull(l_0_7) or l_0_4 ~= 
   return mp.CLEAN
 end
 TrackPidAndTechniqueBM(l_0_1.ppid, "T1547.003", "persist_timeprovider")
+local l_0_8 = (mp.GetParentProcInfo)()
+if l_0_8 and l_0_8.ppid then
+  TrackPidAndTechniqueBM(l_0_8.ppid, "T1547.003", "persist_timeprovider")
+  ;
+  (bm.add_related_process)(l_0_8.ppid)
+end
 ;
 (bm.add_related_file)(l_0_2)
-local l_0_8 = bm.add_related_string
-local l_0_9 = "TimeProviderPersistence"
-local l_0_10 = safeJsonSerialize
-local l_0_11 = {}
-l_0_11.ProviderName = l_0_5
-l_0_11.ProviderDLL = l_0_2
+local l_0_9 = bm.add_related_string
+local l_0_10 = "TimeProvider"
+local l_0_11 = safeJsonSerialize
+local l_0_12 = {}
+l_0_12.Parent = l_0_8.ppid
+l_0_12.ProviderName = l_0_5
+l_0_12.ProviderDLL = l_0_2
 do
-  l_0_11.PreviousDLL = l_0_3 or "N/A"
-  l_0_10 = l_0_10(l_0_11)
-  l_0_11 = bm
-  l_0_11 = l_0_11.RelatedStringBMReport
-  l_0_8(l_0_9, l_0_10, l_0_11)
-  l_0_8 = mp
-  l_0_8 = l_0_8.INFECTED
-  do return l_0_8 end
-  -- DECOMPILER ERROR at PC162: freeLocal<0 in 'ReleaseLocals'
+  l_0_12.PreviousDLL = l_0_3 or "N/A"
+  l_0_11 = l_0_11(l_0_12)
+  l_0_12 = bm
+  l_0_12 = l_0_12.RelatedStringBMReport
+  l_0_9(l_0_10, l_0_11, l_0_12)
+  l_0_9 = mp
+  l_0_9 = l_0_9.INFECTED
+  do return l_0_9 end
+  -- DECOMPILER ERROR at PC181: freeLocal<0 in 'ReleaseLocals'
 
 end
 
