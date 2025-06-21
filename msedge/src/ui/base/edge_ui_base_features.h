@@ -562,7 +562,7 @@ extern bool IsEdgeVisualRefreshKumoEnabled(bool trigger_usage = false);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kVisualRefreshKumoColors);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsEdgeVisualRefreshKumoColorsEnabled(bool trigger_usage = false);
+extern bool IsEdgeSemanticColorTokenEnabled(bool trigger_usage = false);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeAIThemeUndoEnabled(bool trigger_usage = false);
@@ -586,15 +586,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeFixedBoundsForWebViewEnabled();
 
 #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kEdgePhoenixColorPaletteGenerator);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsEdgePhoenixColorPaletteGeneratorEnabled();
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern const base::FeatureParam<bool>
-    kUseSnappingPointsForPhoenixPaletteGeneration;
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool shouldUseSnappingPointsForPhoenixPaletteGeneration();
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeR1ColorThemes);
