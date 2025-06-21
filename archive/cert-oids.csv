@@ -1,0 +1,137 @@
+OID,Format,Name,Description
+1.2.840.113556.5.10,,Intune user ID,
+1.2.840.113556.5.11,Intune unknown,,
+1.2.840.113556.5.14,,Intune account context ID,Tenant ID
+1.2.840.113556.5.24,Hash?,,Intune hash
+1.2.840.113556.5.3,,,Intune user creds
+1.2.840.113556.5.4,,Intune client ID,Device ID
+1.2.840.113556.5.6,,Intune account ID,Not tenant ID
+1.2.840.113635.100.6.1.13,,,Apple Developer ID application codesigning
+1.2.840.113635.100.6.1.25.1,,,Apple TestFlight
+1.2.840.113635.100.6.1.33,,,Apple Developer ID date
+1.2.840.113635.100.6.2.6,,,Apple Developer ID codesigning
+1.2.840.113635.100.4.1,EKU,Apple Code Signing,
+1.2.840.113635.100.4.1.1,EKU,Apple Code Signing (Development),
+1.2.840.113635.100.4.1.2,EKU,Apple Software Update Signing,
+1.2.840.113635.100.4.1.3,EKU,Apple Code Signing (Third Party),
+1.2.840.113635.100.4.1.4,EKU,Apple Resource Signing,
+1.2.840.113635.100.4.2,EKU,Apple iChat Signing,
+1.2.840.113635.100.4.3,EKU,Apple iChat Encryption,
+1.2.840.113635.100.4.4,EKU,Apple System Identity,
+1.2.840.113635.100.4.5,EKU,Apple Crypto Environment,
+1.2.840.113635.100.4.5.1,EKU,Apple Crypto Production Environment,
+1.2.840.113635.100.4.5.2,EKU,Apple Crypto Maintenance Environment,
+1.2.840.113635.100.4.5.3,EKU,Apple Crypto Test Environment,
+1.2.840.113635.100.4.5.4,EKU,Apple Crypto Development Environment,
+1.2.840.113635.100.4.6,EKU,Apple Crypto QoS,
+1.2.840.113635.100.4.6.1,EKU,Apple Crypto Tier 0 QoS,
+1.2.840.113635.100.4.6.2,EKU,Apple Crypto Tier 1 QoS,
+1.2.840.113635.100.4.6.3,EKU,Apple Crypto Tier 2 QoS,
+1.2.840.113635.100.4.6.4,EKU,Apple Crypto Tier 3 QoS,
+1.3.6.1.4.1.311.10.10,,Microsoft CMC OIDs,
+1.3.6.1.4.1.311.10.10.1,,Similar to szOID_CMC_ADD_EXTENSIONS. Attributes replaces Extensions.,
+1.3.6.1.4.1.311.10.11,,Microsoft certificate property OIDs,
+1.3.6.1.4.1.311.10.12,,CryptUI,
+1.3.6.1.4.1.311.10.12.1,EKU,Any Purpose,The applications that can use the certificate are not restricted
+1.3.6.1.4.1.311.10.3.1,EKU,Microsoft Trust List Signing,The certificate can be used to sign a CTL
+1.3.6.1.4.1.311.10.3.10,EKU,Qualified Subordination,"The certificate can be used to sign cross certificate and subordinate certification authority certificate requests. Qualified subordination is implemented by applying basic constraints, certificate policies, and application policies. Cross certification typically requires policy mapping"
+1.3.6.1.4.1.311.10.3.11,EKU,Key Recovery,The certificate can be used to encrypt and recover escrowed keys
+1.3.6.1.4.1.311.10.3.12,EKU,Document Signing,The certificate can be used for signing documents
+1.3.6.1.4.1.311.10.3.13,EKU,Lifetime Signing,Limits the validity period of a signature to the validity period of the certificate. This restriction is typically used with the XCN_OID_PKIX_KP_CODE_SIGNING OID value to indicate that new time stamp semantics should be used
+1.3.6.1.4.1.311.10.3.14,EKU,Mobile Device Software,
+1.3.6.1.4.1.311.10.3.15,EKU,Microsoft Smart Display,
+1.3.6.1.4.1.311.10.3.16,EKU,Microsoft CSP Signature,
+1.3.6.1.4.1.311.10.3.19,EKU,Revoked List Signer,
+1.3.6.1.4.1.311.10.3.2,EKU,Microsoft Time Stamping,The certificate can be used to sign a time stamp to be added to a document. Time stamp signing is typically part of a time stamping service
+1.3.6.1.4.1.311.10.3.20,EKU,Windows Kits Component,
+1.3.6.1.4.1.311.10.3.21,EKU,Windows RT Verification,
+1.3.6.1.4.1.311.10.3.22,EKU,Protected Process Light Verification,
+1.3.6.1.4.1.311.10.3.23,EKU,Windows TCB Component,Trusted Computing Base
+1.3.6.1.4.1.311.10.3.24,EKU,Protected Process Verification,
+1.3.6.1.4.1.311.10.3.25,EKU,Windows Third Party Application Component,
+1.3.6.1.4.1.311.10.3.26,EKU,Windows Software Extension Verification,
+1.3.6.1.4.1.311.10.3.27,EKU,Preview Build Signing,Windows Insider program
+1.3.6.1.4.1.311.10.3.3,EKU,Server Gated Crypto,"Can use strong encryption in export environment"
+1.3.6.1.4.1.311.10.3.3.1,EKU,Serialized,"Can use strong encryption in export environment"
+1.3.6.1.4.1.311.10.3.30,EKU,Disallowed List,
+1.3.6.1.4.1.311.10.3.36,EKU,,"Unknown, found in WDAG container WDAC policy"
+1.3.6.1.4.1.311.10.3.37,EKU,Isolated User Mode (IUM),"Virtualization-based security (VBS) enclave"
+1.3.6.1.4.1.311.10.3.39,EKU,Windows Hardware Driver Extended Verification,
+1.3.6.1.4.1.311.10.3.4,EKU,Encrypting File System,The certificate can be used to encrypt files by using the Encrypting File System
+1.3.6.1.4.1.311.10.3.4.1,EKU,File Recovery,The certificate can be used for recovery of documents protected by using Encrypting File System (EFS)
+1.3.6.1.4.1.311.10.3.42,EKU,Enclave,New virtualization-based security (VBS) enclave
+1.3.6.1.4.1.311.10.3.5,EKU,Windows Hardware Driver Verification,The certificate can be used for Windows Hardware Quality Labs (WHQL) cryptography
+1.3.6.1.4.1.311.10.3.5.1,EKU,Windows Hardware Driver Attested Verification,
+1.3.6.1.4.1.311.10.3.6,EKU,Windows System Component Verification,"The certificate can be used for Windows Server 2003, Windows XP, and Windows 2000 cryptography"
+1.3.6.1.4.1.311.10.3.7,EKU,OEM Windows System Component Verification,The certificate can be used for used for Original Equipment Manufacturers (OEM) Windows Hardware Quality Labs (WHQL) cryptography
+1.3.6.1.4.1.311.10.3.8,EKU,Embedded Windows System Component Verification,The certificate can be used for Windows NT Embedded cryptography
+1.3.6.1.4.1.311.10.3.9,EKU,Root List Signer,The certificate can be used sign a certificate root list
+1.3.6.1.4.1.311.10.4.1,,Microsoft Attribute Object Identifiers,
+1.3.6.1.4.1.311.10.5.1,,Microsoft Music,
+1.3.6.1.4.1.311.10.5.1,EKU,Digital Rights,The certificate can be used for digital rights management applications
+1.3.6.1.4.1.311.10.5.2,EKU,Microsoft DRM EKU,
+1.3.6.1.4.1.311.10.5.3,EKU,,Microsoft Licenses
+1.3.6.1.4.1.311.10.5.4,EKU,Microsoft License Server,
+1.3.6.1.4.1.311.10.6.1,,Microsoft key pack licenses,The certificate can be used for key pack licenses
+1.3.6.1.4.1.311.10.6.2,,Microsoft Terminal Services client licenses,
+1.3.6.1.4.1.311.10.6.2,EKU,License Server Verification,The certificate can be used by a license server when transacting with Microsoft to receive licenses for Terminal Services clients
+1.3.6.1.4.1.311.10.7,,Microsoft CERT_RDN attribute Object Identifiers,
+1.3.6.1.4.1.311.10.7.1,,Special RDN containing the KEY_ID. Its value type is CERT_RDN_OCTET_STRING,
+1.3.6.1.4.1.311.10.8.1,,Microsoft extension in a CTL to add (0) or remove (1) the certificates,
+1.3.6.1.4.1.311.10.9.1,,Microsoft certificate extension containing cross certificate distribution points,
+1.3.6.1.4.1.311.2.6.1,EKU,SpcRelaxedPEMarkerCheck,
+1.3.6.1.4.1.311.2.6.2,EKU,SpcEncryptedDigestRetryCount,
+1.3.6.1.4.1.311.20.1,EKU,CTL Usage,The certificate can be used to sign a request for automatic enrollment in a certificate trust list (CTL)
+1.3.6.1.4.1.311.20.2.1,EKU,Certificate Request Agent,The certificate can be used by an enrollment agent
+1.3.6.1.4.1.311.20.2.2,EKU,Smart Card Logon,The certificate enables an individual to log on to a computer by using a smart card
+1.3.6.1.4.1.311.21.19,EKU,Directory Service Email Replication,The certificate can be used for Directory Service email replication
+1.3.6.1.4.1.311.21.5,EKU,Private Key Archival,The certificate can be used for archiving a private key on a certification authority
+1.3.6.1.4.1.311.21.6,EKU,Key Recovery Agent,The certificate is used to identify a key recovery agent
+1.3.6.1.4.1.311.47.1.1,EKU,Microsoft System Health,
+1.3.6.1.4.1.311.47.1.3,EKU,Microsoft System Health Loophole,
+1.3.6.1.4.1.311.61.1.1,,Kernel Mode Code Signing,
+1.3.6.1.4.1.311.61.4.1,,Early Launch Antimalware Driver,ELAM
+1.3.6.1.4.1.311.61.5.1,,HAL Extension,Hardware abstraction layer
+1.3.6.1.4.1.311.61.6.1,,,"Other generic Microsoft products - Office, IE, Hyper-V, az func CLI"
+1.3.6.1.4.1.311.64.1.1,EKU,Domain Name System (DNS) Server Trust,
+1.3.6.1.4.1.311.76.11.1,EKU,AntiMalware,
+1.3.6.1.4.1.311.76.12.1,,String in ieframe.dll,
+1.3.6.1.4.1.311.76.14.1,,RPfed.dll and SpringGDR.dll,
+1.3.6.1.4.1.311.76.16.1,,Microsoft Product Release and Security Services (PRSS),
+1.3.6.1.4.1.311.76.20.1,EKU,,"Unknown, found in Secure Boot (early WDAC) example"
+1.3.6.1.4.1.311.76.3.1,,Windows Store,Microsoft Store
+1.3.6.1.4.1.311.76.47.1,,Windows Defender ATP,Now known as Defender for Endpoint  
+1.3.6.1.4.1.311.76.5.1,,Dynamic Code Generation,.NET compiler
+1.3.6.1.4.1.311.76.6.1,,Windows Update,
+1.3.6.1.4.1.311.76.8.1,,Microsoft Publisher,Generic Microsoft apps eg Power BI
+1.3.6.1.4.1.311.80.1,EKU,Document Encryption,
+1.3.6.1.5.2.3.5,EKU,KDC Authentication,
+1.3.6.1.5.5.7.3.1,EKU,Server Authentication,The certificate can be used for OCSP authentication
+1.3.6.1.5.5.7.3.2,EKU,Client Authentication,The certificate can be used for authenticating a client
+1.3.6.1.5.5.7.3.3,EKU,Code Signing,The certificate can be used for signing code
+1.3.6.1.5.5.7.3.4,EKU,Secure Email,The certificate can be used to encrypt email messages
+1.3.6.1.5.5.7.3.5,EKU,IP security end system,The certificate can be used for signing end-to-end Internet Protocol Security (IPSEC) communication
+1.3.6.1.5.5.7.3.6,EKU,IP security tunnel termination,The certificate can be used for singing IPSEC communication in tunnel mode
+1.3.6.1.5.5.7.3.7,EKU,IP security user,The certificate can be used for an IPSEC user
+1.3.6.1.5.5.7.3.8,EKU,Timestamp signing,The certificate can be used for signing public key infrastructure timestamps
+1.3.6.1.5.5.7.3.9,EKU,OCSP Signing,The certificate can be used for Online Certificate Status Protocol (OCSP) signing
+1.3.6.1.5.5.7.3.10,EKU,Data Validation and Certification Server,
+1.3.6.1.5.5.7.3.11,EKU,TLS Web Server Authentication,
+1.3.6.1.5.5.7.3.13,EKU,EAP Over PPP,
+1.3.6.1.5.5.7.3.14,EKU,EAP Over LAN,
+1.3.6.1.5.5.8.2.2,EKU,IP security IKE intermediate,The certificate can be used for Internet Key Exchange (IKE)
+2.23.133.8.1,EKU,Endorsement Key Certificate,
+2.23.133.8.2,EKU,Platform Certificate,
+2.23.133.8.3,EKU,Attestation Identity Key Certificate,
+2.5.29.37.0,EKU,Any Purpose,
+1.3.6.1.4.1.311.10.3.41,EKU,,Biometric signing
+1.3.6.1.4.1.311.67.1.1,EKU,BitLocker Drive Encryption,BitLocker smart card certificate selection
+1.3.6.1.4.1.311.67.1.2,EKU,BitLocker Data Recovery Agent
+1.2.840.113583.1.1.5,EKU,Adobe Authentic Documents Trust,Acrobat PDF signing
+2.16.840.1.113730.4.1,EKU,,Netscape Server Gated Crypto
+1.3.6.1.4.1.311.97,EKU,,Azure Trusted Signing namespace. Includes public trust children
+1.3.6.1.4.1.311.97.1.2,EKU,,Azure Trusted Signing public test namespace
+1.3.6.1.4.1.311.97.1.3.1,EKU,,Azure Trusted Signing private trust namespace
+1.3.6.1.4.1.311.97.1.4.1,EKU,,Azure Trusted Signing WDAC namespace
+1.3.6.1.4.1.311.97.1.0,EKU,,Azure Trusted Signing
+1.3.6.1.4.1.311.76.57.1.15,EKU,,VBS enclaves deprecated April 2025
