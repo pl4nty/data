@@ -970,8 +970,9 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.86.0",
+        "version": "1.90.0",
         "versions": [
+            "1.90.0",
             "1.86.0",
             "1.84.0",
             "1.82.1",
