@@ -209,6 +209,10 @@ base::FilePath GetCodeIntegrityFailureFile();
 namespace extensions {
 class EdgeFeedbackPrivateStopMediaFoundationTracingCaptureFunction;
 }
+
+namespace media {
+class DXVAVideoDecodeAccelerator;
+}
 #endif  // BUILDFLAG(IS_WIN)
 
 #if BUILDFLAG(SPEECH_RECOGNITION_AVAILABLE)

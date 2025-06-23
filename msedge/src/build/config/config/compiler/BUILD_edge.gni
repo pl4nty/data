@@ -164,6 +164,10 @@ template("edge_overlay_config_symbols") {
         ]
       }
     }
+    if (is_clang && !is_nacl && is_win && is_component_build) {
+      # This is enabled upstream but not in component builds
+      cflags += [ "-gomit-unreferenced-methods" ]
+    }
   }
 }
 
