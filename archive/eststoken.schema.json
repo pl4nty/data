@@ -43,10 +43,10 @@
     },
     "altsecid": {
       "title": "X509 alternate security identifier",
-      "description": "Used for certificate-based authentication scenarios.",
+      "description": "Used for certificate-based authentication scenarios, including MSA accounts.",
       "type": "string",
-      "enum": [
-        ""
+      "examples": [
+        "1:live.com:0003BFFDCDA97EAB"
       ]
     },
     "amr": {
@@ -255,7 +255,10 @@
       "title": "Identity provider",
       "description": "Records the identity provider that authenticated the subject of the token. This value is identical to the value of the Issuer claim unless the user account isn't in the same tenant as the issuer, such as guests.",
       "type": "string",
-      "format": "uri"
+      "examples": [
+        "live.com",
+        "https://sts.windows.net/3ebc5a67-d833-4d7a-9c16-af2f633cfae5/"
+      ]
     },
     "idtyp": {
       "title": "Identity type",
@@ -584,11 +587,21 @@
         "1 22",
         "1 24",
         "1 30",
+        "7 2",
         "7 8",
         "7 14",
         "7 18",
         "14 1",
+        "22 7",
         "30 1"
+      ]
+    },
+    "xms_mirid": {
+      "title": "Managed identity resource ID",
+      "description": "The Azure resource ID of the managed identity that the token is issued for.",
+      "type": "string",
+      "examples": [
+        "/subscriptions/1111aaaa-22bb-33cc-44dd-5555eeee66ff/resourcegroups/myresourcegroup/providers/Microsoft.Compute/virtualMachines/my-vm"
       ]
     },
     "xms_pdl": {
@@ -606,6 +619,14 @@
       "examples": [
         "en-us",
         "fr-fr"
+      ]
+    },
+    "xms_rd": {
+      "title": "Unknown",
+      "type": "string",
+      "$comment": "Possibly 'resource data'?",
+      "examples": [
+        "0.42LlYBJidBIS4WAXEmj_5JSsonXbZeqCji_BIge3AEU5hQTaXnRIPt2V5bS6e_-sT4wv44CiHEICzAwQcABKAwA"
       ]
     },
     "xms_ssm": {
