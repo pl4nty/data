@@ -3931,7 +3931,6 @@
             "allowHeapSnapshot": false,
             "backdropWindowEffectEnabled": true,
             "checkWebClientVersion": false,
-            "collectCrashDeviceTraceInfo": false,
             "collectCrashMetadata": false,
             "cpuHeartBeat": false,
             "cpuHeartBeatThreshold": 10,
