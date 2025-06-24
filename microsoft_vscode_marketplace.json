@@ -2125,7 +2125,11 @@
         "FaceCrypto.chocolatesnack",
         "better-sollidity.sollidity-plus",
         "Languages.hungarian",
-        "Expressjs.expressjs-session"
+        "Expressjs.expressjs-session",
+        "ab-498.pythonformat",
+        "ab-498.cppformat",
+        "ab-498.cppplayground",
+        "ab-498.httpformat"
     ],
     "migrateToPreRelease": {
         "HashiCorp.terraform-preview": {
