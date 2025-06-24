@@ -20,7 +20,7 @@ constexpr DWORD kIndirectDetectDisableFeature = 0x80000000;
 constexpr DWORD kIndirectDetectDisableFeatureSend = 0x80000001;
 constexpr DWORD kIndirectDetectEnableFeature = 0x40000000;
 constexpr DWORD kIndirectDetectLocked = 0x20000000;
-constexpr DWORD kLimitCrashCount = 1;
+constexpr DWORD kLimitCrashCount = 2;
 
 void ResetBeaconsForTest() {
   HANDLE key_handle = INVALID_HANDLE_VALUE;
@@ -110,7 +110,7 @@ TEST_F(BeaconDetectTest, DirectCrashCrash) {
       BeaconIndex::kDllUnregisterDllNotification, 0);
   EXPECT_TRUE(BeaconDetect::StartCrashDetection(
       BeaconIndex::kDllUnregisterDllNotification, indirect_crash_detect));
-  for (int i = 0; i < kLimitCrashCount - 1; ++i) {
+  for (DWORD i = 0; i < kLimitCrashCount - 1; ++i) {
     BeaconDetect::StartCrashDetection(
         BeaconIndex::kDllUnregisterDllNotification, indirect_crash_detect);
   }

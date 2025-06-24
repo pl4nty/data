@@ -330,6 +330,21 @@ enum class ImportedDataSharingFailureReason {
   kMaxValue = kErrorFlag
 };
 
+// These values are logged to UMA. Entries should not be renumbered
+// numeric values should never be reused. Please keep in sync with
+// "Microsoft.ContinuousMigration.ThemesImportState" in
+// src/tools/metrics/histograms/edge_enums.xml.
+enum class ThemesImportState {
+  kThemesImportStarted = 0,
+  kThemeExtensionFound = 1,
+  kThemeExtensionNotImportedDueToFeatureFlagDisabled = 2,
+  kThemeExtensionNotImportedDueToOtherStoreConsent = 3,
+  kThemeExtensionImportSkippedDueToRequirementsNotMet = 4,
+  kThemeExtensionImported = 5,
+  kThemesImportFinished = 6,
+  kMaxValue = kThemesImportFinished
+};
+
 namespace metrics {
 const char* GetImportTargetType(user_data_importer::ImporterType source_type);
 
@@ -515,6 +530,9 @@ void LogCopyFileErrorCode(user_data_importer::ImporterType source_type,
 void LogCopyFileErrorSize(user_data_importer::ImporterType source_type,
                           user_data_importer::ImportItem item,
                           int64_t file_size);
+
+// Log themes import state
+void LogThemesImportState(ThemesImportState state);
 #endif
 
 // Log pref states for imported bool prefs
@@ -527,7 +545,6 @@ void LogChromeTakeoutFileParseStatus(ChromeTakeoutFileParseStatus status);
 
 // Logs status of sharing Imported MUID to OneDs
 void LogImportedMUIDSharingStatesHistogram(ImportedMUIDSharingStates state);
-// void LogBatchProcessorState(BatchProcessorState state);
 }  // namespace metrics
 }  // namespace importer
 

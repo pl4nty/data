@@ -22,7 +22,7 @@ constexpr DWORD kIndirectDetectDisableFeature = 0x80000000;
 constexpr DWORD kIndirectDetectDisableFeatureSend = 0x80000001;
 constexpr DWORD kIndirectDetectEnableFeature = 0x40000000;
 constexpr DWORD kIndirectDetectLocked = 0x20000000;
-constexpr DWORD kLimitCrashCount = 1;
+constexpr DWORD kLimitCrashCount = 2;
 
 BeaconIndex g_crash_detection_beacon_index_ = BeaconIndex::kMaxBeacons;
 
@@ -174,6 +174,10 @@ void BeaconDetect::IncreaseValue() {
 
 bool BeaconDetect::StartCrashDetection(BeaconIndex beacon_index,
                                        bool detect_indirect_crash) {
+  if (install_static::InstallDetails::Get().is_webview()) {
+    // WebView2 process does not support crash detection.
+    return true;
+  }
   beacon_detect::BeaconDetect beacon_detect(beacon_index);
   if (!beacon_detect.ShouldDisableFeature(detect_indirect_crash)) {
     return true;
@@ -184,6 +188,9 @@ bool BeaconDetect::StartCrashDetection(BeaconIndex beacon_index,
 
 // If StopCrashDetection is called, that means no crash has been occurred.
 void BeaconDetect::StopCrashDetection(BeaconIndex beacon_index) {
+  if (install_static::InstallDetails::Get().is_webview()) {
+    return;
+  }
   beacon_detect::BeaconDetect beacon_detect(beacon_index);
   beacon_detect.ResetBeaconValue();
 }
