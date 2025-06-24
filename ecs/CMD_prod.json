@@ -329,6 +329,7 @@
         "EnableKustoTelemetryQueries": true,
         "EnableLastestVesionForVDAWorkstationSetup": true,
         "EnableLastestVesionForWebSocketVdaRegistrationTool": true,
+        "EnableLatestClientVersionForListSubscriptionsApi": true,
         "EnableLatestRDAgentVersion": true,
         "EnableLicenseStatusColumn": true,
         "EnableLogCollectionForCPC": true,
