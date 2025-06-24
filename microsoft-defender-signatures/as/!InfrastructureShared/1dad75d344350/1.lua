@@ -39,6 +39,11 @@ end
 l_0_7 = contains
 l_0_8 = l_0_6
 l_0_7 = l_0_7(l_0_8, "powershell.exe")
+if not l_0_7 then
+  l_0_7 = contains
+  l_0_8 = l_0_5
+  l_0_7 = l_0_7(l_0_8, "powershell")
+end
 if l_0_7 then
   l_0_7 = NormalizeCmdline
   l_0_8 = "powershell"
@@ -78,38 +83,38 @@ end
 if not l_0_8 then
   return mp.CLEAN
 end
-if ExtractPartsFromUri(R9_PC127) == "" or ExtractPartsFromUri(R9_PC127) == nil then
-  R9_PC127 = mp
-  R9_PC127 = R9_PC127.CLEAN
-  return R9_PC127
+if ExtractPartsFromUri(R9_PC133) == "" or ExtractPartsFromUri(R9_PC133) == nil then
+  R9_PC133 = mp
+  R9_PC133 = R9_PC133.CLEAN
+  return R9_PC133
 end
-R9_PC127 = (ExtractPartsFromUri(R9_PC127)).host
-if R9_PC127 ~= "" then
-  R9_PC127 = (ExtractPartsFromUri(R9_PC127)).host
+R9_PC133 = (ExtractPartsFromUri(R9_PC133)).host
+if R9_PC133 ~= "" then
+  R9_PC133 = (ExtractPartsFromUri(R9_PC133)).host
 end
-if R9_PC127 == nil then
-  R9_PC127 = mp
-  R9_PC127 = R9_PC127.CLEAN
-  return R9_PC127
+if R9_PC133 == nil then
+  R9_PC133 = mp
+  R9_PC133 = R9_PC133.CLEAN
+  return R9_PC133
 end
-R9_PC127 = split
-R9_PC127 = R9_PC127((ExtractPartsFromUri(R9_PC127)).host, "%.")
+R9_PC133 = split
+R9_PC133 = R9_PC133((ExtractPartsFromUri(R9_PC133)).host, "%.")
 local l_0_9 = nil
-if not R9_PC127 then
+if not R9_PC133 then
   return mp.CLEAN
 end
 local l_0_10 = nil
-if not "." .. tostring(R9_PC127[#R9_PC127]) then
+if not "." .. tostring(R9_PC133[#R9_PC133]) then
   return mp.CLEAN
-end
--- DECOMPILER ERROR at PC164: Confused about usage of register: R10 in 'UnsetPending'
-
-if "." .. tostring(R9_PC127[#R9_PC127]) == ".ru" then
-  return mp.LOWFI
 end
 -- DECOMPILER ERROR at PC170: Confused about usage of register: R10 in 'UnsetPending'
 
-if isSuspTLD("." .. tostring(R9_PC127[#R9_PC127])) then
+if "." .. tostring(R9_PC133[#R9_PC133]) == ".ru" then
+  return mp.LOWFI
+end
+-- DECOMPILER ERROR at PC176: Confused about usage of register: R10 in 'UnsetPending'
+
+if isSuspTLD("." .. tostring(R9_PC133[#R9_PC133])) then
   return mp.INFECTED
 end
 return mp.CLEAN

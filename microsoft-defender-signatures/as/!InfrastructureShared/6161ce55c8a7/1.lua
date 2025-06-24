@@ -16,7 +16,7 @@ if #l_0_1 == 0 or l_0_1 == nil then
 end
 local l_0_2 = {}
 for l_0_6,l_0_7 in ipairs(l_0_1) do
-  if not (string.find)(l_0_7, "Detection:FriendlyFile", 1, true) then
+  if not (string.find)(l_0_7, "Detection:FriendlyFile", 1, true) and not (string.find)(l_0_7, "Exploit:", 1, true) and not (string.find)(l_0_7, "Virus:", 1, true) and not (string.find)(l_0_7, "Worm:Win32/Boychi", 1, true) then
     local l_0_8 = (string.sub)(l_0_7, (string.find)(l_0_7, ":", 1, true) + 1)
     ;
     (table.insert)(l_0_2, l_0_8)

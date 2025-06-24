@@ -42,6 +42,11 @@ end
 l_0_7 = contains
 l_0_8 = l_0_6
 l_0_7 = l_0_7(l_0_8, "powershell.exe")
+if not l_0_7 then
+  l_0_7 = contains
+  l_0_8 = l_0_5
+  l_0_7 = l_0_7(l_0_8, "powershell")
+end
 if l_0_7 then
   l_0_7 = NormalizeCmdline
   l_0_8 = "powershell"
@@ -74,10 +79,10 @@ l_0_1 = l_0_7
 l_0_7 = extract_urls
 l_0_8 = l_0_1
 l_0_7 = l_0_7(l_0_8)
-if isnull(R9_PC121) then
+if isnull(R9_PC127) then
   return mp.CLEAN
 end
-for l_0_12,i_2 in ipairs(R9_PC121) do
+for l_0_12,i_2 in ipairs(R9_PC127) do
   if not split(i_2, "%.") then
     return mp.CLEAN
   end
@@ -85,7 +90,7 @@ for l_0_12,i_2 in ipairs(R9_PC121) do
   if not "." .. tostring((split(i_2, "%."))[#split(i_2, "%.")]) then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC152: Confused about usage of register: R14 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC158: Confused about usage of register: R14 in 'UnsetPending'
 
   if isSuspTLD("." .. tostring((split(i_2, "%."))[#split(i_2, "%.")])) then
     return mp.INFECTED
