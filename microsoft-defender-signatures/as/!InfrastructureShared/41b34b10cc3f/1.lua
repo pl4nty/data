@@ -44,7 +44,7 @@ for l_0_9 in (string.gmatch)(l_0_4, "([^,]+)") do
     l_0_16(l_0_17)
     l_0_16 = bm
     l_0_16 = l_0_16.trigger_sig_self_propagate
-    l_0_17 = "Evasion.EmbeddedPE"
+    l_0_17 = "Evasion.EmbeddedPE.Trigger"
     l_0_18 = l_0_2
     l_0_16(l_0_17, l_0_18)
     l_0_16 = mp
