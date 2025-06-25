@@ -25,6 +25,7 @@ end
 local l_0_8 = add_parents_mp()
 l_0_1.Parents = l_0_8
 l_0_1.AppName = l_0_6
+l_0_1.AppCategory = l_0_5.AppCategory
 local l_0_9 = (mp.GetProcessCommandLine)(l_0_0)
 if not l_0_9 then
   return mp.CLEAN
@@ -116,11 +117,11 @@ if l_0_12.Score > 30 then
                     l_0_1.Concrete = true
                     return mp.CLEAN
                   end
-                  -- DECOMPILER ERROR at PC322: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC324: LeaveBlock: unexpected jumping out DO_STMT
 
-                  -- DECOMPILER ERROR at PC322: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC324: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC322: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC324: LeaveBlock: unexpected jumping out IF_STMT
 
                 end
               end
@@ -139,9 +140,9 @@ if l_0_12.Score > 30 then
                 l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "MultilayerEncoding"
               end
             end
-            local l_0_41 = (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern")
+            local l_0_41 = (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern_")
             if l_0_41 and #l_0_41 > 0 then
-              (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded2")
+              (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded3")
               l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspPattern"
             end
             l_0_41 = (mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found")

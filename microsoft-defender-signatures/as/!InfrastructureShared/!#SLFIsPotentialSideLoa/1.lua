@@ -30,7 +30,7 @@ l_0_8 = (string.lower)(l_0_8)
 if (string.sub)(l_0_8, 1, 1) ~= "c" then
   return mp.CLEAN
 end
-if (string.find)(l_0_8, "program files", 1, true) ~= nil or (string.find)(l_0_8, "c:\\windows\\system32\\", 1, true) ~= nil or (string.find)(l_0_8, "c:\\windows\\syswow64\\", 1, true) ~= nil then
+if (string.find)(l_0_8, "program files", 1, true) ~= nil or (string.find)(l_0_8, "c:\\windows\\system32\\", 1, true) ~= nil or (string.find)(l_0_8, "c:\\windows\\syswow64\\", 1, true) ~= nil or (string.find)(l_0_8, "windows\\winsxs", 1, true) ~= nil or (string.find)(l_0_8, "c:\\$windows.~bt\\", 1, true) ~= nil then
   return mp.CLEAN
 end
 local l_0_9 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))

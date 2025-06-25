@@ -22,6 +22,7 @@ else
     _ = isInstalledApp(l_0_0)
     l_0_4 = "programfiles"
     l_0_1.AppName = l_0_2
+    l_0_1.AppCategory = l_0_4
     local l_0_8 = (mp.hstr_full_log)()
     local l_0_9 = (mp.GetProcessCommandLine)(l_0_0)
     if l_0_8 and ((l_0_8[1]).matched or (l_0_8[2]).matched or mp.HSTR_WEIGHT > 30) then
@@ -67,9 +68,9 @@ else
             local l_0_19 = nil
             if l_0_12.CommandlineTokens and l_0_2 then
               local l_0_20 = nil
-              -- DECOMPILER ERROR at PC205: Confused about usage of register: R17 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC206: Confused about usage of register: R17 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC209: Confused about usage of register: R18 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC210: Confused about usage of register: R18 in 'UnsetPending'
 
               local l_0_21 = nil
               local l_0_22, l_0_23, l_0_24 = , {ParentName = l_0_2, ProcessName = ((MpCommon.GetImagePathFromPid)(l_0_0)):match("([^\\]+)$") or "", Source = "CMD", SignatureName = "PFApps.A", CommandlineScore = l_0_1.Score, CommandlineScoreIndicator = l_0_1.CmdGradingInfo, AnomalyTableName = "Appomaly_ChildProcName_CmdLine", TableAge = GetAnomalyTableAge("Appomaly_ChildProcName_CmdLine")}
@@ -91,13 +92,13 @@ else
                   local l_0_31 = nil
                   if not startTrackingApp(l_0_13.ppid, l_0_2 or l_0_19, l_0_4 or "generic") then
                     (l_0_13.ppid).SignatureName = "PFApps.A"
-                    -- DECOMPILER ERROR at PC267: Confused about usage of register: R25 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC268: Confused about usage of register: R25 in 'UnsetPending'
 
                     ;
-                    (MpCommon.BmTriggerSig)(l_0_13.ppid, "ProcAttribError", safeJsonSerialize(R32_PC271))
+                    (MpCommon.BmTriggerSig)(l_0_13.ppid, "ProcAttribError", safeJsonSerialize(R32_PC272))
                   else
                     local l_0_33 = nil
-                    IncreaseProcessAnomalyScore(l_0_13.ppid, l_0_11, "SuspDownload[" .. l_0_0:match("pid:(%d+)") .. "][CMD/PFApps.A]", l_0_5, {ProcessName = l_0_20, IsProcessFriendly = (MpCommon.IsFriendlyProcess)(l_0_0), Pid = l_0_0, CmdGradingInfo = l_0_1.CmdGradingInfo, IndicatorScore = l_0_11, Parents = add_parents_mp()})
+                    IncreaseProcessAnomalyScore(l_0_13.ppid, l_0_11, "SuspDownload[" .. l_0_0:match("pid:(%d+)") .. "][CMD/PFApps.A]", l_0_5, {ProcessName = l_0_20, IsProcessFriendly = (MpCommon.IsFriendlyProcess)(l_0_0), Pid = l_0_0, CmdGradingInfo = l_0_1.CmdGradingInfo, IndicatorScore = l_0_11, Parents = l_0_1.Parents})
                     if next(R31_PC303) and (l_0_13.ppid).IsNewApp then
                       (l_0_13.ppid).SignatureName = "PFApps.A"
                       ;
@@ -125,7 +126,7 @@ else
                       -- DECOMPILER ERROR at PC353: Confused about usage of register: R18 in 'UnsetPending'
 
                       if AnomalyTableCheck("Appomaly_Global_CmdLine", l_0_19 .. ";" .. l_0_21 .. ";" .. (table.concat)(l_0_22, "|"), 20) and not "Appomaly_Global_CmdLine" then
-                        local l_0_38, l_0_55, l_0_56, l_0_57 = nil
+                        local l_0_38, l_0_55 = nil
                         if IsPotentiallyClean("CmdLine", l_0_36 .. ";" .. l_0_21, l_0_22) then
                           l_0_1.IsPotentiallyClean = "CmdLine"
                         end
@@ -160,8 +161,8 @@ else
                         end
                         -- DECOMPILER ERROR at PC401: Confused about usage of register: R14 in 'UnsetPending'
 
-                        if (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern") and #(mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern") > 0 then
-                          (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns2")
+                        if (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern_") and #(mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern_") > 0 then
+                          (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns3")
                           l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspPattern"
                         end
                         -- DECOMPILER ERROR at PC420: Confused about usage of register: R14 in 'UnsetPending'
@@ -172,21 +173,24 @@ else
                         end
                         local l_0_46 = nil
                         local l_0_47 = nil
-                        for l_0_51,l_0_52 in ipairs(l_0_1.Parents) do
-                          local l_0_48, l_0_49, l_0_50 = , {}, 0
-                          -- DECOMPILER ERROR at PC439: Confused about usage of register: R22 in 'UnsetPending'
-
-                          if IsFileRecentlyDropped((("Appomaly_Global_CmdLine").BadUrlRep).ImagePath) then
-                            (table.insert)(l_0_49, R28_PC447)
-                            l_0_50 = l_0_50 + (("Appomaly_Global_CmdLine").BadUrlRep).ImagePath
+                        local l_0_48 = nil
+                        for l_0_52,l_0_53 in ipairs(GetExecutablesFromParentsCommandLine()) do
+                          local l_0_49, l_0_50, l_0_51 = , {}, 0
+                          if IsFileRecentlyDropped(IsPotentiallyClean("CmdLine", l_0_36 .. ";" .. l_0_21, l_0_22)) then
+                            (table.insert)(l_0_50, R29_PC449)
+                            l_0_51 = l_0_51 + IsPotentiallyClean("CmdLine", l_0_36 .. ";" .. l_0_21, l_0_22)
+                          end
+                          if IsFileDroppedByTrackedApp(l_0_57) then
+                            (table.insert)(l_0_50, R29_PC449)
+                            l_0_51 = l_0_51 + 10
                           end
                         end
-                        -- DECOMPILER ERROR at PC451: Confused about usage of register: R16 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC466: Confused about usage of register: R17 in 'UnsetPending'
 
-                        l_0_1.RecentlyDroppedParents = l_0_49
-                        -- DECOMPILER ERROR at PC452: Confused about usage of register: R17 in 'UnsetPending'
+                        l_0_1.RecentlyDroppedParents = l_0_50
+                        -- DECOMPILER ERROR at PC467: Confused about usage of register: R18 in 'UnsetPending'
 
-                        l_0_1.ParentScore = l_0_50
+                        l_0_1.ParentScore = l_0_51
                         do
                           do
                             local l_0_58, l_0_59 = nil
@@ -194,12 +198,12 @@ else
                               (MpCommon.BmTriggerSig)(l_0_40.ppid, "SuspDownload_BM_Capture", safeJsonSerialize(l_0_1, 150, nil, true))
                             else
                               if l_0_1 then
-                                set_research_data("Error", (MpCommon.Base64Encode)(R23_PC475), R23_PC475)
+                                set_research_data("Error", (MpCommon.Base64Encode)(R24_PC490), R24_PC490)
                                 return mp.INFECTED
                               end
                             end
                             do return mp.CLEAN end
-                            -- DECOMPILER ERROR at PC484: freeLocal<0 in 'ReleaseLocals'
+                            -- DECOMPILER ERROR at PC499: freeLocal<0 in 'ReleaseLocals'
 
                           end
                         end

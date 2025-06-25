@@ -129,59 +129,70 @@ if l_0_7 and l_0_8 then
         l_0_0.FileDroppedByATrackedProcess = true
         -- DECOMPILER ERROR at PC219: Overwrote pending register: R12 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC220: Overwrote pending register: R13 in 'AssignReg'
+        do
+          if l_0_25 then
+            local l_0_27 = nil
+            -- DECOMPILER ERROR at PC223: Overwrote pending register: R13 in 'AssignReg'
 
-        l_0_25 = l_0_25(l_0_26)
-        for l_0_30,l_0_31 in l_0_25 do
-          local l_0_30, l_0_31 = nil
-          l_0_30 = GetAppomalyProcessAttribute
-          l_0_31 = l_0_29.value
-          l_0_30 = l_0_30(l_0_31)
-          local l_0_32, l_0_33 = nil
-          if l_0_31 then
-            do
+            -- DECOMPILER ERROR at PC225: Overwrote pending register: R11 in 'AssignReg'
+
+            l_0_25 = {l_0_26}
+          end
+          l_0_25 = ipairs
+          -- DECOMPILER ERROR at PC227: Overwrote pending register: R13 in 'AssignReg'
+
+          l_0_25 = l_0_25(l_0_26)
+          for l_0_31,l_0_32 in l_0_25 do
+            local l_0_31, l_0_32 = nil
+            l_0_31 = GetAppomalyProcessAttribute
+            l_0_32 = l_0_30.value
+            l_0_31 = l_0_31(l_0_32)
+            local l_0_33, l_0_34 = nil
+            if l_0_32 then
               do
-                l_0_32 = l_0_29.key
-                if l_0_32 == l_0_4 then
-                  l_0_32 = "FilePathMatch"
+                do
+                  l_0_33 = l_0_30.key
+                  if l_0_33 == l_0_4 then
+                    l_0_33 = "FilePathMatch"
+                  end
+                  if not l_0_33 then
+                    l_0_33 = "FileNameMatch"
+                  end
+                  l_0_0.Confidence = l_0_33
+                  l_0_0.Process_Attribute = l_0_32
+                  do break end
+                  -- DECOMPILER ERROR at PC245: LeaveBlock: unexpected jumping out DO_STMT
+
+                  -- DECOMPILER ERROR at PC245: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                  -- DECOMPILER ERROR at PC245: LeaveBlock: unexpected jumping out IF_STMT
+
                 end
-                if not l_0_32 then
-                  l_0_32 = "FileNameMatch"
-                end
-                l_0_0.Confidence = l_0_32
-                l_0_0.Process_Attribute = l_0_31
-                do break end
-                -- DECOMPILER ERROR at PC238: LeaveBlock: unexpected jumping out DO_STMT
-
-                -- DECOMPILER ERROR at PC238: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC238: LeaveBlock: unexpected jumping out IF_STMT
-
               end
             end
           end
-        end
-        -- DECOMPILER ERROR at PC240: Overwrote pending register: R5 in 'AssignReg'
+          -- DECOMPILER ERROR at PC247: Overwrote pending register: R5 in 'AssignReg'
 
-      end
-      l_0_0.Score = l_0_5
-      -- DECOMPILER ERROR at PC245: Overwrote pending register: R13 in 'AssignReg'
+          l_0_0.Score = l_0_5
+          -- DECOMPILER ERROR at PC252: Overwrote pending register: R13 in 'AssignReg'
 
-      if l_0_5 >= 10 then
-        local l_0_34, l_0_35 = nil
-        -- DECOMPILER ERROR at PC251: Overwrote pending register: R14 in 'AssignReg'
+          if l_0_5 >= 10 then
+            local l_0_35, l_0_36 = nil
+            -- DECOMPILER ERROR at PC258: Overwrote pending register: R14 in 'AssignReg'
 
-        local l_0_36 = nil
-        local l_0_37 = nil
-        local l_0_38 = nil
-        do
-          l_0_37 = safeJsonSerialize(l_0_26, 150, nil, true) or (null)
-          l_0_34(l_0_35, l_0_36, l_0_37)
-          -- DECOMPILER ERROR at PC258: Confused about usage of register R13 for local variables in 'ReleaseLocals'
+            local l_0_37 = nil
+            local l_0_38 = nil
+            local l_0_39 = nil
+            do
+              l_0_38 = safeJsonSerialize(l_0_26, 150, nil, true) or (null)
+              l_0_35(l_0_36, l_0_37, l_0_38)
+              -- DECOMPILER ERROR at PC265: Confused about usage of register R13 for local variables in 'ReleaseLocals'
 
-          do return mp.CLEAN end
-          -- DECOMPILER ERROR at PC261: Confused about usage of register R12 for local variables in 'ReleaseLocals'
+              do return mp.CLEAN end
+              -- DECOMPILER ERROR at PC268: Confused about usage of register R12 for local variables in 'ReleaseLocals'
 
+            end
+          end
         end
       end
     end
