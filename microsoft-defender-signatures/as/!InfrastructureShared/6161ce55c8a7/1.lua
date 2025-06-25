@@ -23,6 +23,9 @@ for l_0_6,l_0_7 in ipairs(l_0_1) do
   end
 end
 if #l_0_2 ~= 0 then
+  if #l_0_2 >= 10 then
+    return mp.CLEAN
+  end
   l_0_2 = (table.concat)(l_0_2, ";")
   ;
   (MpCommon.BmTriggerSig)(l_0_0, "SmsScanDetection", l_0_2)

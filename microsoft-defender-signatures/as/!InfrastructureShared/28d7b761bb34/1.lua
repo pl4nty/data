@@ -17,7 +17,7 @@ local l_0_3 = {}
 
 -- DECOMPILER ERROR at PC30: Overwrote pending register: R5 in 'AssignReg'
 
-if not ("iex %$")("invoke-expression %$", l_0_3) then
+if not ("iex $")("invoke-expression $", l_0_3) then
   return mp.CLEAN
 end
 local l_0_4 = contains
@@ -36,7 +36,7 @@ end
 
 -- DECOMPILER ERROR at PC52: Overwrote pending register: R7 in 'AssignReg'
 
-l_0_4, l_0_6 = l_0_4(l_0_5, l_0_6), {"%[convert%]::frombase64string%(%$"}
+l_0_4, l_0_6 = l_0_4(l_0_5, l_0_6), {"[convert]::frombase64string($"}
 if not l_0_4 then
   l_0_4 = mp
   l_0_4 = l_0_4.CLEAN
