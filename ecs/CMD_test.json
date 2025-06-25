@@ -1143,7 +1143,7 @@
         "ResourceGroupEventSubscriptionSlowStream": true,
         "ResourceGroupExportCogsFastStream": true,
         "ResourceGroupExportCogsSlowStream": true,
-        "ReturnUnprovisionedReserveCPC": true,
+        "ReturnNotprovisionedReserveCPC": false,
         "RouteActionsThroughKronox": true,
         "RouteFidalgoActionsThroughKronox": true,
         "RouteFlexActionsThroughKronox": true,
