@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Planner Tenant Admin PowerShell v16.0.19018.10150",
+    "downloadDescription": "PowerShell scripts for employees to manage and administer Microsoft Planner tenants.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "tenant-admin-scripts.zip",
+            "url": "https://download.microsoft.com/download/f7877bc1-75c4-463c-97b3-a880986ee9d7/tenant-admin-scripts.zip",
+            "size": "54250",
+            "version": "1",
+            "datePublished": "6/23/2025 7:43:01 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PowerShell scripts for employees to manage and administer Microsoft Planner tenants.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "tenant-admin-scripts.zip"
+    ],
+    "detailsSection_file_size": [
+        "53.0 KB"
+    ],
+    "detailsSection_file_date": "6/23/2025",
+    "systemRequirementsSection": "ZIP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Select the Download button to start the download. The download should start automatically.If prompted, Select Save or Save this program to disk. Then, select Open file or find the file on your device and open it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108228",
+    "downloadPreload": true
+}
