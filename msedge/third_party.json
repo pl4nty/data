@@ -16,12 +16,12 @@
   },
   {
     "name": "android_build_tools",
-    "size": 20945,
+    "size": 20972,
     "file_count": 9
   },
   {
     "name": "android_deps",
-    "size": 10768985,
+    "size": 10769525,
     "file_count": 177
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14613103,
+    "size": 14614141,
     "file_count": 830
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32236395,
-    "file_count": 3960
+    "size": 32278923,
+    "file_count": 3963
   },
   {
     "name": "boringssl",
@@ -221,8 +221,8 @@
   },
   {
     "name": "flatbuffers",
-    "size": 190527,
-    "file_count": 27
+    "size": 2833,
+    "file_count": 9
   },
   {
     "name": "fp16",
@@ -246,7 +246,7 @@
   },
   {
     "name": "glslang",
-    "size": 42888132,
+    "size": 42888127,
     "file_count": 3111
   },
   {
@@ -456,7 +456,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 277872,
+    "size": 277062,
     "file_count": 38
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3632900,
+    "size": 3632918,
     "file_count": 565
   },
   {
@@ -636,7 +636,7 @@
   },
   {
     "name": "skia",
-    "size": 3458723,
+    "size": 3458713,
     "file_count": 1178
   },
   {
@@ -656,7 +656,7 @@
   },
   {
     "name": "spirv-tools",
-    "size": 200044,
+    "size": 200652,
     "file_count": 11
   },
   {
@@ -706,7 +706,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1318547,
+    "size": 1359572,
     "file_count": 23
   },
   {
@@ -716,12 +716,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2377990,
+    "size": 2419015,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6184999,
+    "size": 6214581,
     "file_count": 173
   },
   {
