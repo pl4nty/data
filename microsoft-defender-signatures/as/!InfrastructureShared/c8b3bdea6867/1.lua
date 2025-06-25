@@ -26,6 +26,7 @@ if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil and (this
     return mp.CLEAN
   end
   if (string.find)(l_0_0, l_0_4, 1, true) and SuspMacPathsToMonitor(l_0_1, true) then
+    (bm.add_related_string)("process_cmdline", l_0_3, bm.RelatedStringBMReport)
     return mp.INFECTED
   end
 end

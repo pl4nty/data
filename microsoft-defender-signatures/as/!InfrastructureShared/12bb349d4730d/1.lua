@@ -32,6 +32,7 @@ else
           -- DECOMPILER ERROR at PC110: Confused about usage of register: R9 in 'UnsetPending'
 
           if SuspMacPathsToMonitor(R9_PC110.value, true) then
+            (bm.add_related_string)("persisted_path", R9_PC110.value, bm.RelatedStringBMReport)
             return mp.INFECTED
           end
         end
