@@ -1,9 +1,9 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\41b34b10cc3f\1.luac 
+-- Command line: lua\!InfrastructureShared\55b3a19ef428\1.luac 
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "ExecutableNonTextSection"
+local l_0_0 = "ExecutableNonTextSection_04"
 if not (this_sigattrlog[2]).matched or isnull((this_sigattrlog[2]).utf8p1) then
   return mp.CLEAN
 end
@@ -30,7 +30,6 @@ end
 local l_0_5 = 256
 for l_0_9 in (string.gmatch)(l_0_4, "([^,]+)") do
   local l_0_10, l_0_11 = (string.match)(l_0_9, "^(.-)_(%d+)")
-  l_0_11 = tonumber(l_0_11)
   if ((l_0_11 <= l_0_5 and l_0_11) or not isnull(l_0_10)) and not isnull(l_0_11) and l_0_11 - l_0_5 <= l_0_3 and l_0_3 <= l_0_11 + l_0_5 then
     local l_0_15 = nil
     local l_0_16 = bm.add_related_string
@@ -44,7 +43,7 @@ for l_0_9 in (string.gmatch)(l_0_4, "([^,]+)") do
     l_0_16(l_0_17)
     l_0_16 = bm
     l_0_16 = l_0_16.trigger_sig_self_propagate
-    l_0_17 = "Evasion.EmbeddedPE.Trigger"
+    l_0_17 = "Evasion.EmbeddedPE.AV04.Trigger"
     l_0_18 = l_0_2
     l_0_16(l_0_17, l_0_18)
     l_0_16 = mp
