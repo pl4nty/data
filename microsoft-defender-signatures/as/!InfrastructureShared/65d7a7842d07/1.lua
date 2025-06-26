@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\55d7c92e2aa5\1.luac 
+-- Command line: lua\!InfrastructureShared\65d7a7842d07\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -14,15 +14,15 @@ end
 l_0_1 = (string.lower)(l_0_1)
 do
   local l_0_2 = {}
-  -- DECOMPILER ERROR at PC29: No list found for R2 , SetList fails
+  -- DECOMPILER ERROR at PC31: No list found for R2 , SetList fails
 
-  -- DECOMPILER ERROR at PC30: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC32: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC31: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC33: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC32: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC34: Overwrote pending register: R5 in 'AssignReg'
 
-  if not ("connection")("checkup", "Service link") then
+  if not (" iex")("invoke-expression", " iwr") then
     return mp.CLEAN
   end
   do return mp.INFECTED end
