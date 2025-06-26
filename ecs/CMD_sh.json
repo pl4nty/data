@@ -762,7 +762,6 @@
         "EnabledReplaceOldConnResultByNgCheckResult": true,
         "EventSubscriptionAddResourceActionFailure": true,
         "ExpDivisionSettings": true,
-        "ExpDivisionSettings_UserAlloc": true,
         "ExpandDiskByCmdAgentPluginAsFallback": true,
         "ExportCloudPcUsePageSize2K": true,
         "ExtendTakeSnapshotActionParameters": true,
