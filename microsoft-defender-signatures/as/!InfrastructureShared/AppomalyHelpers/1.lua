@@ -68,62 +68,73 @@ getWebApplicationType = function(l_1_0)
                   return l_1_9
                 end
               end
-              -- DECOMPILER ERROR at PC112: Confused about usage of register: R3 in 'UnsetPending'
-
-              if contains(l_1_4, "java.exe") and l_1_3:match("-d([%w]+).home=") then
-                return l_1_3:match("-d([%w]+).home=")
-              end
               local l_1_13 = nil
-              local l_1_14 = checkParentCmdlineCaseInsensitive
-              local l_1_15 = l_1_0
-              do
-                local l_1_16 = {}
-                -- DECOMPILER ERROR at PC118: Overwrote pending register: R8 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC121: No list found for R6 , SetList fails
-
-                -- DECOMPILER ERROR at PC122: Overwrote pending register: R7 in 'AssignReg'
-
-                l_1_14 = l_1_14(l_1_15, l_1_16, {R8_PC55, ".home"})
-                -- DECOMPILER ERROR at PC128: Overwrote pending register: R8 in 'AssignReg'
+              if contains(l_1_4, "java.exe") then
+                _ = (MpCommon.StringRegExpSearch)("(home=\\\\\"([^\\\\\"]+)|home=([^\\s]+)|program files \\(x86\\)\\\\\\\\([^\\\\]+)|program files\\\\\\\\([^\\\\]+))", l_1_3)
+                if l_1_13 then
+                  return l_1_13
+                end
+              else
+                local l_1_14 = nil
+                local l_1_15 = checkParentCmdlineCaseInsensitive
+                local l_1_16 = l_1_0
+                local l_1_17 = {}
+                local l_1_18 = R8_PC55
+                -- DECOMPILER ERROR at PC129: No list found for R7 , SetList fails
 
                 -- DECOMPILER ERROR at PC130: Overwrote pending register: R8 in 'AssignReg'
 
-                if l_1_16 then
-                  l_1_13 = ((string.lower)(R8_PC55)):match("-d([%w]+).home=")
+                l_1_15 = l_1_15(l_1_16, l_1_17, l_1_18)
+                -- DECOMPILER ERROR at PC134: Overwrote pending register: R8 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC135: Overwrote pending register: R8 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC136: Overwrote pending register: R9 in 'AssignReg'
+
+                if l_1_17 then
+                  l_1_18 = l_1_18({"\\java.exe", "program files"}, (string.lower)(R11_PC140))
+                  -- DECOMPILER ERROR at PC142: Overwrote pending register: R3 in 'AssignReg'
+
+                  l_1_16 = l_1_18
                   if l_1_13 then
                     return l_1_13
                   end
                 end
-                if contains(l_1_4, "ruby.exe") and R3_PC150 then
-                  return R3_PC150
-                end
-                local l_1_17 = nil
-                local l_1_18 = {}
-                local l_1_19 = {"ruby.exe", "mongrel"}
-                -- DECOMPILER ERROR at PC161: Overwrote pending register: R8 in 'AssignReg'
+              end
+              do
+                -- DECOMPILER ERROR at PC158: Overwrote pending register: R3 in 'AssignReg'
 
-                local l_1_20 = {"ruby.exe", R8_PC55}
-                -- DECOMPILER ERROR at PC164: Overwrote pending register: R8 in 'AssignReg'
-
-                local l_1_21 = {R8_PC55, "thin"}
-                do
-                  local l_1_22 = R8_PC55
-                  -- DECOMPILER ERROR at PC175: No list found for R4 , SetList fails
-
-                  l_1_19 = checkParentCmdlineCaseInsensitive
-                  l_1_20 = l_1_0
-                  l_1_21 = l_1_18
-                  -- DECOMPILER ERROR at PC179: Overwrote pending register: R8 in 'AssignReg'
-
-                  l_1_19 = l_1_19(l_1_20, l_1_21, l_1_22)
-                  -- DECOMPILER ERROR at PC183: Overwrote pending register: R9 in 'AssignReg'
-
-                  -- DECOMPILER ERROR at PC189: Overwrote pending register: R8 in 'AssignReg'
-
-                  if l_1_21 and l_1_17 then
-                    return l_1_17
+                if contains(l_1_4, "ruby.exe") then
+                  _ = (MpCommon.StringRegExpSearch)("(mongrel|httpd|thin|puma|rails)", l_1_3)
+                  if l_1_13 then
+                    return l_1_13
                   end
+                else
+                  local l_1_19 = nil
+                  local l_1_20 = {}
+                  local l_1_21 = {"ruby.exe", "mongrel"}
+                  local l_1_22 = {"ruby.exe", "httpd"}
+                  local l_1_23 = {"ruby.exe", "thin"}
+                  local l_1_24 = {"ruby.exe", "puma"}
+                  -- DECOMPILER ERROR at PC185: No list found for R5 , SetList fails
+
+                  l_1_21 = checkParentCmdlineCaseInsensitive
+                  l_1_22 = l_1_0
+                  l_1_23 = l_1_20
+                  l_1_24 = 15
+                  l_1_21 = l_1_21(l_1_22, l_1_23, l_1_24)
+                  -- DECOMPILER ERROR at PC193: Overwrote pending register: R10 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC198: Overwrote pending register: R3 in 'AssignReg'
+
+                  if l_1_23 then
+                    l_1_24 = (({"ruby.exe", "rails"}).StringRegExpSearch)("(mongrel|httpd|thin|puma|rails)", R12_PC197)
+                    if l_1_13 then
+                      return l_1_13
+                    end
+                  end
+                end
+                do
                   return "unknown"
                 end
               end
