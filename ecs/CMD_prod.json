@@ -127,7 +127,6 @@
         "EnableBlockRemoteDesktopProtocolPort": true,
         "EnableBulkAction": true,
         "EnableBulkActionForCurrentConnected": true,
-        "EnableBulkActionFromUnavailableCPCs": true,
         "EnableBulkActionGraphPermission": true,
         "EnableBulkActionReport": true,
         "EnableBulkActionReportWithDP": true,
@@ -753,6 +752,7 @@
         "UseArrayContainsForANCInUse": true,
         "UseNewExecutePluginAPI": "true",
         "UseOperationTrackingWorkItemList": true,
+        "ValidateImageSizeForFrontline": true,
         "VerifyUserPresenceFromAVD": true,
         "Windows365Client": {
             "GUI": {

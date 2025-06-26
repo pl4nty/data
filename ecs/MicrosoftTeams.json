@@ -549,7 +549,7 @@
                 "enableMeshImmersiveSpacesLicenseCheck": true,
                 "enableMetaOSAuthzLicenseCheck": true,
                 "enableNestedLicenseCheckForCopilot": true,
-                "enableOCDIRedirect": false,
+                "enableOCDIRedirect": true,
                 "enablePftObo": true,
                 "enablePrepaidUnitsCheckForFreemiumExtension": false,
                 "enableRuntimeAPIFallback": false,

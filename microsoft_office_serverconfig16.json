@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19013.40127-->
+    <!--Build: 16.0.19019.40127-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -2517,6 +2517,7 @@
     <o:token o:name="LinksOpenRightTuiImageHC150Url">https://statics.teams.cdn.office.net/evergreen-assets/illustrations/win32/m365-device-desktop-hc-150.png</o:token>
     <o:token o:name="LinksOpenRightTuiImageHC200Url">https://statics.teams.cdn.office.net/evergreen-assets/illustrations/win32/m365-device-desktop-hc-200.png</o:token>
     <o:token o:name="IsRestrictedEnvironment">false</o:token>
+    <o:token o:name="OutlookTeamsStoreBaseUrl">https://teams.microsoft.com</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
