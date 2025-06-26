@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Resource Access Connector",
+    "downloadDescription": "Release of the Resource Access Connector for DLC distribution.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "IntuneCertificateConnector.exe",
+            "url": "https://download.microsoft.com/download/206cf9c8-46e6-42f3-8a55-40fb79761c72/connector.exe",
+            "size": "17387088",
+            "version": "6.2406.2002",
+            "datePublished": "6/23/2025 9:14:37 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release includes the Resource Access Connector version 6.2406.2002, packaged as an executable installer. It enables secure certificate-based authentication and integration with Microsoft Intune environments. This version includes performance improvements and bug fixes for enhanced reliability.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.2406.2002",
+    "detailsSection_file_name": [
+        "IntuneCertificateConnector.exe"
+    ],
+    "detailsSection_file_size": [
+        "16.6 MB"
+    ],
+    "detailsSection_file_date": "6/23/2025",
+    "systemRequirementsSection": "- Windows Server 2016 or later/iOS/Android\n- Admin privileges for installation\n- Internet connectivity for service registration",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Linux",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": ". Download the installer.\n2. Run the .exe as Administrator.\n3. Follow the on-screen setup wizard.\n4. After installation, verify service status and logs.\n5. Refer to the deployment guide for tenant-specific configuration.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108230",
+    "downloadPreload": true
+}
