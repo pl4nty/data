@@ -11,7 +11,7 @@ local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QU
 if l_0_1 == nil or #l_0_1 < 5 then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "/private/tmp/", 1, true) ~= 1 and (string.find)(l_0_1, "/tmp/", 1, true) ~= 1 and (string.find)(l_0_1, "/library/privilegedhelpertools/", 1, true) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/", 1, true) ~= 1 then
+if (string.find)(l_0_1, "/private/tmp/", 1, true) ~= 1 and (string.find)(l_0_1, "/users/[^/]+/downloads/", 1, false) ~= 1 and (string.find)(l_0_1, "/users/[^/]+/desktop/", 1, false) ~= 1 and (string.find)(l_0_1, "/tmp/", 1, true) ~= 1 and (string.find)(l_0_1, "/library/privilegedhelpertools/", 1, true) ~= 1 and (string.find)(l_0_1, "/volumes/.*/[^/]+.app/contents/", 1, false) ~= 1 and (string.find)(l_0_1, "/volumes/.*/%.[^/]+$", 1, false) ~= 1 and (string.find)(l_0_1, "/library/caches/[^/]+$", 1, false) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/", 1, true) ~= 1 then
   return mp.CLEAN
 end
 if (string.find)(l_0_1, "->(macho-unibin-", 1, true) then
