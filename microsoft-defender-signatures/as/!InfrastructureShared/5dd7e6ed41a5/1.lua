@@ -26,7 +26,7 @@ end
 
 -- DECOMPILER ERROR at PC39: Overwrote pending register: R6 in 'AssignReg'
 
-l_0_3, l_0_5 = l_0_3(l_0_4, l_0_5), {"getstream();[byte[]]"}
+l_0_3, l_0_5 = l_0_3(l_0_4, l_0_5), {"getstream"}
 if not l_0_3 then
   l_0_3 = mp
   l_0_3 = l_0_3.CLEAN
@@ -35,7 +35,7 @@ end
 l_0_3 = contains
 -- DECOMPILER ERROR at PC48: Overwrote pending register: R4 in 'AssignReg'
 
-l_0_3, l_0_5 = l_0_3(l_0_4, l_0_5), {".read"}
+l_0_3, l_0_5 = l_0_3(l_0_4, l_0_5), {"read"}
 if not l_0_3 then
   l_0_3 = mp
   l_0_3 = l_0_3.CLEAN

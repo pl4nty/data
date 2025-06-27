@@ -44,7 +44,7 @@ end
 
 -- DECOMPILER ERROR at PC59: Overwrote pending register: R8 in 'AssignReg'
 
--- DECOMPILER ERROR at PC75: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC76: Overwrote pending register: R5 in 'AssignReg'
 
 l_0_5 = l_0_5(l_0_1, l_0_4)
 if not l_0_5 then

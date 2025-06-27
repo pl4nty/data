@@ -8,6 +8,8 @@ if l_0_0 == nil then
   (mp.set_mpattribute)("Lua:NoVerinfo")
   return mp.CLEAN
 end
+;
+(mp.set_mpattribute)("Lua:HasVerInfo")
 local l_0_1 = l_0_0.CompanyName
 if l_0_1 ~= nil then
   for l_0_5 = 32, 47 do
@@ -17,11 +19,11 @@ if l_0_1 ~= nil then
         do
           (mp.set_mpattribute)("LUA:PEAnomaly_SpecialCompanyName")
           do break end
-          -- DECOMPILER ERROR at PC40: LeaveBlock: unexpected jumping out DO_STMT
+          -- DECOMPILER ERROR at PC44: LeaveBlock: unexpected jumping out DO_STMT
 
-          -- DECOMPILER ERROR at PC40: LeaveBlock: unexpected jumping out IF_THEN_STMT
+          -- DECOMPILER ERROR at PC44: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC40: LeaveBlock: unexpected jumping out IF_STMT
+          -- DECOMPILER ERROR at PC44: LeaveBlock: unexpected jumping out IF_STMT
 
         end
       end
@@ -272,8 +274,9 @@ do
   l_0_11["vsjitdebugger.exe"] = true
   l_0_11["vssvc.exe"] = true
   l_0_11["wab.exe"] = true
-  l_0_11["werfault.exe"] = true
-  local l_0_12 = "werfaultsecure.exe"
+  local l_0_12 = "werfault.exe"
+  l_0_11[l_0_12] = true
+  l_0_12 = "werfaultsecure.exe"
   l_0_11[l_0_12] = true
   l_0_12 = "wininit.exe"
   l_0_11[l_0_12] = true

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\269d70bca96b4\1.luac 
+-- Command line: lua\!InfrastructureShared\368d73f84a90c\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -48,39 +48,24 @@ do
 
   -- DECOMPILER ERROR at PC89: Overwrote pending register: R8 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC90: Overwrote pending register: R9 in 'AssignReg'
+  -- DECOMPILER ERROR at PC94: Overwrote pending register: R5 in 'AssignReg'
 
   -- DECOMPILER ERROR at PC95: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC96: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC96: Overwrote pending register: R6 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC97: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC97: Overwrote pending register: R7 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC98: Overwrote pending register: R7 in 'AssignReg'
+  -- DECOMPILER ERROR at PC101: Overwrote pending register: R7 in 'AssignReg'
 
   -- DECOMPILER ERROR at PC102: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC103: Overwrote pending register: R7 in 'AssignReg'
 
   if l_0_5 and l_0_5 then
     return l_0_7
   end
-  -- DECOMPILER ERROR at PC106: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC104: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC107: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC108: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC112: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC113: Overwrote pending register: R5 in 'AssignReg'
-
-  if l_0_5 then
-    return l_0_5
-  end
-  -- DECOMPILER ERROR at PC115: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC116: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC105: Overwrote pending register: R5 in 'AssignReg'
 
   do return l_0_5 end
   -- WARNING: undefined locals caused missing assignments!

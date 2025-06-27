@@ -3,14 +3,44 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-do
-  if l_0_0 ~= nil and l_0_0.image_path ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.image_path)
-    if l_0_1:match("([^\\]+)$") == "explorer.exe" then
-      return mp.INFECTED
-    end
-  end
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
   return mp.CLEAN
+end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if #l_0_1 <= 60 then
+  return mp.CLEAN
+end
+if l_0_1 ~= nil then
+  l_0_1 = (string.lower)(l_0_1)
+end
+local l_0_2 = {}
+-- DECOMPILER ERROR at PC47: No list found for R2 , SetList fails
+
+-- DECOMPILER ERROR at PC48: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC49: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC50: Overwrote pending register: R5 in 'AssignReg'
+
+if not (".shop/")(".xyz/", ".icu/") then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.GetParentProcInfo)()
+do
+  do
+    if l_0_3 ~= nil and l_0_3.image_path ~= nil then
+      local l_0_4 = (string.lower)(l_0_3.image_path)
+      -- DECOMPILER ERROR at PC69: Overwrote pending register: R6 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC70: Overwrote pending register: R7 in 'AssignReg'
+
+      if l_0_4:match(".fun/") == "explorer.exe" then
+        return mp.INFECTED
+      end
+    end
+    do return mp.LOWFI end
+    -- WARNING: undefined locals caused missing assignments!
+  end
 end
 
