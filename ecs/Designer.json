@@ -7,7 +7,6 @@
         "App.EditImagePanel": true,
         "App.EnableActivityThrottling": false,
         "App.EnableDesignerActivities": true,
-        "App.EnableGetty3PImages": true,
         "App.EnableInferredSearchForElements": true,
         "App.EnableInferredSearchForTemplates": true,
         "App.EnablePersistClientFilterAfterSmartCropReplace": false,
@@ -33,8 +32,7 @@
         "App.ToastFeature": true,
         "App.ToolbarAnimation": true,
         "App.TotalEventThrottle": 1000,
-        "App.UploadPanel": true,
-        "App.UseHighResolutionImagesForAdvancedTextTemplatesThumbnails": true
+        "App.UploadPanel": true
     },
     "ECS": {
         "ConfigLogTarget": "designer_default"
