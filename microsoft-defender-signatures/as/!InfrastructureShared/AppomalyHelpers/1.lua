@@ -2505,7 +2505,7 @@ isEnabledApp = function(l_38_0)
     -- DECOMPILER ERROR at PC11: Overwrote pending register: R4 in 'AssignReg'
 
     if ("CrushFTP")("FortiSSLVPN", "Veeam") then
-      if (MpCommon.IsSampled)(1000, true, true, true) then
+      if (MpCommon.IsSampled)(10000, true, true, true) then
         return true
       else
         return false
