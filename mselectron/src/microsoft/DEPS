@@ -32,10 +32,10 @@ vars = {
   # Dependencies.
   'microsoft_reclient_helper_revision': '6255a1f4ee45218ded7c2ccd9efecfa53d87893c',
   # Chromium revision will be redefined in a gclient config because we use Chromium snapshots.
-  'microsoft_chromium_version': '136.0.7103.168',
+  'microsoft_chromium_version': '138.0.7204.35',
   'microsoft_depot_tools_revision': 'f40ddcd8d51626fb7be3ab3c418b3f3be801623f',
-  'microsoft_electron_version': 'v36.5.0',
-  'microsoft_electron_revision': '8d2654c47e23237ef60a9837735111ffa1d76554',
+  'microsoft_electron_version': 'v37.0.0',
+  'microsoft_electron_revision': '713030b21ac91eb24687739782ceae9260981e03',
   'microsoft_node_version': 'v22.16.0',
 
   # Override defaults of the Electron checkout.

@@ -6,10 +6,10 @@ Subject: build: fix pdf
 We don't want pdf, so don't include it.
 
 diff --git a/chrome/browser/content_settings/BUILD.gn b/chrome/browser/content_settings/BUILD.gn
-index 4130f3bd222983d433a54cc399dcf8f8dbe14ea6..1c844e8a4b5a1245b27e79f0e37301db54da0f6e 100644
+index 1fe1ecf20ad9fad8b1a37267c2dfafee1b4fc211..75e028ac25e43d37da0583689d2d6a87295115c7 100644
 --- a/chrome/browser/content_settings/BUILD.gn
 +++ b/chrome/browser/content_settings/BUILD.gn
-@@ -82,7 +82,6 @@ source_set("impl") {
+@@ -83,7 +83,6 @@ source_set("impl") {
      "//components/content_settings/core/browser:cookie_settings",
      "//components/pref_registry",
      "//components/supervised_user/core/browser",
@@ -18,23 +18,23 @@ index 4130f3bd222983d433a54cc399dcf8f8dbe14ea6..1c844e8a4b5a1245b27e79f0e37301db
      "//ui/webui",
    ]
 diff --git a/chrome/browser/glic/BUILD.gn b/chrome/browser/glic/BUILD.gn
-index f41defe8907835eed1ceaa61adaacf4cd6190bcd..023f6ec875a536ad4b1563769ca8b5c681fdc609 100644
+index 69423f37f55fc3d4fa1a0a12693532f16981a810..74ab192d6ea269fa5493a9283cb852fb3e1c0c0c 100644
 --- a/chrome/browser/glic/BUILD.gn
 +++ b/chrome/browser/glic/BUILD.gn
-@@ -154,8 +154,6 @@ source_set("impl") {
-     "//components/language/core/common",
+@@ -196,8 +196,6 @@ source_set("impl") {
      "//components/metrics_services_manager:metrics_services_manager",
+     "//components/optimization_guide/core",
      "//components/optimization_guide/proto:optimization_guide_proto",
 -    "//components/pdf/browser:browser",
 -    "//components/pdf/common:constants",
+     "//components/pref_registry",
+     "//components/prefs",
      "//components/sessions",
-     "//extensions/browser:browser",
-     "//ui/webui",
 diff --git a/chrome/browser/ui/lens/BUILD.gn b/chrome/browser/ui/lens/BUILD.gn
-index 87c78eac91f6b829453479b3ada880ae9459f5ae..dc9b674d57f69e8b8fee304507e903cbcd433081 100644
+index ce696eca19d69ac5e321a33dea1cce4db2ffdc65..184361f1182b21535053fb410ca416fdf06475c9 100644
 --- a/chrome/browser/ui/lens/BUILD.gn
 +++ b/chrome/browser/ui/lens/BUILD.gn
-@@ -239,7 +239,6 @@ source_set("browser_tests") {
+@@ -262,7 +262,6 @@ source_set("browser_tests") {
      "//content/test:test_support",
      "//mojo/public/cpp/bindings",
      "//net",
@@ -42,7 +42,7 @@ index 87c78eac91f6b829453479b3ada880ae9459f5ae..dc9b674d57f69e8b8fee304507e903cb
      "//third_party/lens_server_proto:lens_overlay_proto",
      "//ui/base",
      "//ui/base:types",
-@@ -250,9 +249,6 @@ source_set("browser_tests") {
+@@ -273,9 +272,6 @@ source_set("browser_tests") {
      "//ui/views/controls/webview",
      "//url",
    ]
@@ -52,19 +52,11 @@ index 87c78eac91f6b829453479b3ada880ae9459f5ae..dc9b674d57f69e8b8fee304507e903cb
  }
  
  source_set("interactive_ui_tests") {
-@@ -279,7 +275,6 @@ source_set("interactive_ui_tests") {
-     "//components/feature_engagement/public",
-     "//components/lens:enterprise_policy",
-     "//components/lens:features",
--    "//components/pdf/browser:browser",
-     "//components/prefs",
-     "//components/search_engines",
-     "//components/user_education/views",
 diff --git a/chrome/test/BUILD.gn b/chrome/test/BUILD.gn
-index 692e44b75ac164a6f88398a4177913c47f49959e..ba601bf1db7280ef35e562a070127e5e8bca7260 100644
+index 16f2e321030d61ee2cbab91c15fc93da3cf735b5..88cb6f0abc6df52c2459b0f36dda8f389669eec8 100644
 --- a/chrome/test/BUILD.gn
 +++ b/chrome/test/BUILD.gn
-@@ -3754,7 +3754,6 @@ if (!is_android) {
+@@ -3836,7 +3836,6 @@ if (!is_android) {
        deps += [
          "../browser/pdf",
          "../browser/pdf:pdf_extension_test_utils",

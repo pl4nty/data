@@ -1,0 +1,19 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Charles Kerr <charles@charleskerr.com>
+Date: Tue, 10 Jun 2025 18:30:51 -0500
+Subject: chore: disable unsafe-buffer checks in third-party ffmpeg
+
+disable unsafe buffer checks in ffmpeg/ since it's not our code to fix.
+
+diff --git a/build/config/unsafe_buffers_paths.txt b/build/config/unsafe_buffers_paths.txt
+index 29db2f99577c66c1a7e5b2daae53523923e2af87..8adc772504d912dfe789044882a0d8f4536dd53d 100644
+--- a/build/config/unsafe_buffers_paths.txt
++++ b/build/config/unsafe_buffers_paths.txt
+@@ -31,3 +31,7 @@
+ -url/third_party/
+ -v8/
+ 
++# Internal build exemptions
++-microsoft/src/third_party/ffmpeg/
++
++

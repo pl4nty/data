@@ -8,3 +8,4 @@ build_add_microsoft_flavours_of_ffmpeg.patch
 build_fix_pdf.patch
 add_buildflags_h_to_include_rules.patch
 build_remove_glic_testing_dependency.patch
+chore_disable_unsafe-buffer_checks_in_third-party_ffmpeg.patch

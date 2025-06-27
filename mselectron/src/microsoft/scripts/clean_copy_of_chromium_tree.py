@@ -84,6 +84,7 @@ def clean_copy(chromium_path, copy_path, platform):
         src/'chrome'/'test'/'data'/'perf',
         src/'chrome'/'test'/'data'/'safe_browsing',
         src/'chrome'/'test'/'data'/'xr',
+        src/'chrome'/'updater'/'test'/'data'/'test_certificate.pfx',
         src/'docs',
         src/'ios',
         src/'testing'/'libfuzzer'/'fuzzers'/'wasm_corpus',

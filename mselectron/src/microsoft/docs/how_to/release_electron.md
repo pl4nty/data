@@ -8,7 +8,7 @@ Once the triggered runs are complete:
 -   Create a release from [\Electron\teams-client-electron-snapshot][].
 For ProjectSnapshot, select the triggered "electron-util-project-snapshot" run.
 
--   Create a release page on our Wiki [here](https://microsoft.sharepoint.com/teams/ElectronInMicrosoft/Wiki/Home.aspx)
+-   Create a release page on our Wiki [here](https://microsoft.sharepoint.com/teams/Electron/Electron%20Releases/Forms/AllItems.aspx)
 using the wiki page published as a pipeline artifact.
 
 After all release parts are published, announce a new release in the "[Electron At Microsoft > Announcements][]"

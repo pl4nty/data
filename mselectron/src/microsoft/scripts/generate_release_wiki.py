@@ -2,7 +2,7 @@
 
 """
 Generate a wiki page for a Microsoft Electron release.
-https://microsoft.sharepoint.com/teams/ElectronInMicrosoft/Wiki/Home.aspx
+https://microsoft.sharepoint.com/teams/Electron/Electron%20Releases/Forms/AllItems.aspx
 
 Uses Jinja2 template language, see http://jinja.pocoo.org/docs/2.10/.
 """
