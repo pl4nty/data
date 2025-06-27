@@ -1,7 +1,6 @@
 {
     "Designer": {
         "App.AnimationPanel": false,
-        "App.AutoEnhanceEffect": true,
         "App.AutoFocusEffect": true,
         "App.BackgroundRemoval": true,
         "App.DevPanel": false,
@@ -13,7 +12,6 @@
         "App.EnableInferredSearchForTemplates": true,
         "App.EnablePersistClientFilterAfterSmartCropReplace": false,
         "App.EnableSelectAllOnFirstSelect": false,
-        "App.EnableTextAutoSelection": true,
         "App.FREPanel": false,
         "App.FontPanelsAnimations": true,
         "App.GetProactiveSuggestionsForDate": false,
@@ -30,7 +28,6 @@
         "App.ShowBuildNumber": false,
         "App.SimilarFontsPanel": true,
         "App.SingleEventThrottle": 100,
-        "App.TestRollout": true,
         "App.TextCasing": false,
         "App.TextList": false,
         "App.ToastFeature": true,

@@ -549,7 +549,7 @@
                 "enableMeshImmersiveSpacesLicenseCheck": true,
                 "enableMetaOSAuthzLicenseCheck": true,
                 "enableNestedLicenseCheckForCopilot": true,
-                "enableOCDIRedirect": false,
+                "enableOCDIRedirect": true,
                 "enablePftObo": true,
                 "enablePrepaidUnitsCheckForFreemiumExtension": false,
                 "enableRuntimeAPIFallback": false,
@@ -1180,6 +1180,7 @@
         "UI_EnableTELicenseFetch": true,
         "UI_EnableTrouterClient": true,
         "UI_EnableUpsertOndemandNotificationStaffList": true,
+        "UI_EnableVAApp": false,
         "UI_EnableVAExportFunctionality": true,
         "UI_EnableViewDropdownForQueue": true,
         "UI_EnableWebRtcAppointmentToggle": true,
@@ -1192,7 +1193,13 @@
         "UI_SupportWWPhoneNumber": false,
         "UI_UseV2FetchSetting": true,
         "UI_isTenantSettingEnabled": true,
-        "UseMSALAuthHandler": true
+        "UseMSALAuthHandler": true,
+        "VAAppDeprecation_TenantExclusionList": [
+            "72f988bf-86f1-41af-91ab-2d7cd011db47",
+            "d4c52a46-4530-482a-81c6-ae94f45f87cd",
+            "4a4ac4cf-92ec-47ae-8778-dfb4b21bc6ac",
+            "f3e3c40b-f4e3-450b-85e4-4043e55ca004"
+        ]
     },
     "MicrosoftTeamsTelehealthWebRtc": {
         "DataPrivacyNoticeUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
