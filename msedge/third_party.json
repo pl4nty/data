@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32278923,
-    "file_count": 3963
+    "size": 32283725,
+    "file_count": 3962
   },
   {
     "name": "boringssl",
@@ -136,7 +136,7 @@
   },
   {
     "name": "crossbench",
-    "size": 166276,
+    "size": 170577,
     "file_count": 2
   },
   {
@@ -551,8 +551,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3632918,
-    "file_count": 565
+    "size": 3638995,
+    "file_count": 567
   },
   {
     "name": "perl",
@@ -636,8 +636,8 @@
   },
   {
     "name": "skia",
-    "size": 3458713,
-    "file_count": 1178
+    "size": 3460765,
+    "file_count": 1181
   },
   {
     "name": "speech-dispatcher",
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6214581,
+    "size": 6216055,
     "file_count": 173
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "wpt_tools",
-    "size": 252363,
+    "size": 252369,
     "file_count": 58
   },
   {

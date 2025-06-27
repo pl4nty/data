@@ -388,8 +388,6 @@ extern bool IsMacFrostedGlassVisualEffectBookmarkBarEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kVisualRefreshRingZeroIcons);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kVisualRefreshRingZeroIconsTouchMode);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsVisualRefreshRingZeroIconsEnabled(bool trigger_usage = false);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern const base::FeatureParam<bool> kFavBarVisualRefreshEnabledParam;
@@ -401,8 +399,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kFavBarVisualRefreshTrigger);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kVisualRefreshRingZeroNormalModeTrigger);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kVisualRefreshRingZeroTouchModeTrigger);
 
 // Toolbar Button Count Triggers
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -413,13 +409,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kToolbarButtonCountGT9LE13);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kToolbarButtonCountGT13);
-
-// If enabled, the transition from Normal Mode to Touch Mode (or vice-versa)
-// will provide a bug-free experience.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kSeamlessTouchModeTransition);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsSeamlessTouchModeTransitionEnabled(bool trigger_usage = false);
 
 // Boolean value to check if user is seeing Touch UI on the screen, will be
 // updated by TouchUiController.
