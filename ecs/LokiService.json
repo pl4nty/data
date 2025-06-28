@@ -1016,7 +1016,7 @@
         "MyAnalyticsPendingTaskSupportedLanguages": "en,es,pt,it,de,fr,ja,zh,cs,ar,da,fi,he,hu,ko,nb,nl,pl,ru,sv,th,tr",
         "NamePronunciation": {
             "MaxTokens": 40,
-            "ModelType": "prod-gpt-4o-mini-2024-07-18",
+            "ModelType": "prod-gpt-41-mini-04-14",
             "N": 1,
             "PresencePenalty": 0,
             "SendToEU": false,
@@ -1038,7 +1038,7 @@
         "OrgExplorerLinkEnabled": false,
         "OrganizationChartProviderAzureMachineLearningEndpointUri": "https://inferencey96ecn.eastus.cloudapp.azure.com:443/api/v1/service/get-introduced-model-ppe-service/score",
         "OutlookMsalAuthRedirectUrl": "https://outlook.office.com/mail/LinkedInBindRedirect.html",
-        "PeopleCardKeepTopNInsightsFilterSettings": 1,
+        "PeopleCardKeepTopNInsightsFilterSettings": 10,
         "PeopleHighlightsGdprExportIsEnabled": true,
         "PeopleInsightsRetrieverTimeout": 450,
         "PeoplePrompts3SRIdToPromptTypeMap": {
@@ -1110,7 +1110,7 @@
         "RouteEndpointThrottlingLimits_ByTenantsPerIp": 20,
         "RouteEndpointThrottlingLimits_ByVm": 5000,
         "SkypeContactsUrl": "https://contacts.skype.com:8443/contacts/v3/scdlookup",
-        "SocialDistanceFilterAndRankerSettings": "Everyone:UpcomingMeeting,Everyone:Birthday,Everyone:PostedAnnouncement,Everyone:StorylinePost,Everyone:WorkAnniversary,Everyone:PositionChange,Everyone:ArticlePost,Everyone:VideoPost,Everyone:PendingRSVPToMeeting,Stranger:NewHire,Everyone:PendingLinkedInInvitation,Everyone:CollabNetDocumentComment,Everyone:CollabNetDocumentMentionedMe,Everyone:CollabNetDocumentModify,Everyone:CollabNetDocumentMultipleModify,Everyone:CollabNetDocumentReply,Everyone:CollabNetDocumentSharing,Everyone:EmailWithLotsOfReactions,CloseColleague:NotFirstDegreeConnection,Stranger:SharedExperience,Stranger:SharedEducation,Everyone:PromotePeopleNote,Everyone:NewSmartNotesAvailable,Everyone:MissedMeeting",
+        "SocialDistanceFilterAndRankerSettings": "Everyone:UpcomingMeeting,Everyone:PendingRSVPToMeeting,Everyone:Birthday,Everyone:PostedAnnouncement,Everyone:StorylinePost,Everyone:WorkAnniversary,Everyone:PositionChange,Everyone:ArticlePost,Everyone:VideoPost,Stranger:NewHire,Everyone:PendingLinkedInInvitation,Everyone:CollabNetDocumentComment,Everyone:CollabNetDocumentMentionedMe,Everyone:CollabNetDocumentModify,Everyone:CollabNetDocumentMultipleModify,Everyone:CollabNetDocumentReply,Everyone:CollabNetDocumentSharing,Everyone:EmailWithLotsOfReactions,CloseColleague:NotFirstDegreeConnection,Stranger:SharedExperience,Stranger:SharedEducation,Everyone:PromotePeopleNote,Everyone:NewSmartNotesAvailable,Everyone:MissedMeeting",
         "StreamPreviewTokenAudience": "https://*.microsoftstream.com",
         "SubstrateSearchInsightsRetrieverSettings": {
             "EnabledTypes": {
