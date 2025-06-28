@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack (Community Technology Preview) for Azure SQL Database",
+    "downloadDescription": "This management pack (Community Technology Preview) provides capabilities to discover, monitor, and manage your Microsoft Azure SQL Databases.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SqlServer.Azure.ManagementPack.CTP.msi",
+            "url": "https://download.microsoft.com/download/e4dfa95d-5866-424b-9dae-6b66b7c9d53d/Microsoft.SqlServer.Azure.ManagementPack.CTP.msi",
+            "size": "14487552",
+            "version": "7.9.4",
+            "datePublished": "6/27/2025 4:51:51 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Azure SQL Database Management Pack (Community Technology Preview) enables you to monitor the availability and performance of applications that are running on Azure SQL Database.<br/>\n<br/>\nNote: This Management Pack is not part of <a href='https://www.microsoft.com/download/details.aspx?id=50013'>Microsoft System Center Management Pack for Microsoft Azure</a>. The Management Pack is designed to provide enhanced monitoring of Azure SQL Database metrics. <br/>\n<br/>\n<b>Feature Summary</b><br/>\nAfter configuration, the Azure SQL Database Monitoring Management Pack offers the following functionalities: <br/>\n<ul>\n  <li> User-friendly wizard to discover Azure SQL Database servers. </li>\n  <li> Multiple subscriptions and multiple Azure SQL Database servers are supported. </li>\n  <li> Two options for getting information on Azure SQL Database health: Azure Resource Manager (Azure REST API) and T-SQL queries to SQL Server system views. </li>\n  <li> Azure AD authentication is supported. </li>\n  <li> Collects and monitors health of Azure SQL Databases:\n    <ul>\n   <li> Database availability </li>\n      <li> Database space monitoring </li>\n      <li> Track the total number of databases per server </li>\n      <li> Successful connections count </li>\n      <li> Failed connections count </li>\n      <li> Number of deadlocks </li>\n      <li> Throttling/long transactions count </li>\n      <li> Connections blocked by firewall count </li>\n    </ul>\n  </li>\n  <li> Collects and monitors health of Azure SQL Database servers:\n    <ul>\n   <li> Server availability </li>\n      <li> Average memory per session </li>\n      <li> Total memory per session </li>\n      <li> Total CPU time per session </li>\n      <li> Total I/O per session </li>\n      <li> Number of database sessions </li>\n      <li> Maximum Transaction execution time </li>\n      <li> Maximum Transaction lock count </li>\n      <li> Maximum Transaction log space used </li>\n      <li> Network Egress/Ingress bandwidth </li>\n      <li> Percentage of CPU used </li>\n      <li> Percentage of workers used </li>\n    </ul>\n  </li>\n  <li> Health monitoring for Elastic Pools. </li>\n  <li> Health monitoring for Database Geo-Replication. </li>\n  <li> Ability to define custom thresholds for each monitor to configure the warning and critical alerts. </li>\n  <li> Run-as profile to securely connect to Azure SQL Database. </li>\n  <li> Detailed knowledge to guide the IT operator with troubleshooting the problem. </li>\n  <li> Custom tasks to redirect the user to the Azure SQL Database online portal. </li>\n  <li> Custom query support to enable application-specific availability and performance monitoring. </li>\n  <li> Dashboard functionality. </li>\n</ul>\n<br/>\n\nFor more information about this management pack, see the <a href=\"https://learn.microsoft.com/system-center/scom/azure-sql-management-pack-changes-history\">Azure SQL Database Management Pack Operations Guide</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.9.4",
+    "detailsSection_file_name": [
+        "Microsoft.SqlServer.Azure.ManagementPack.CTP.msi"
+    ],
+    "detailsSection_file_size": [
+        "13.8 MB"
+    ],
+    "detailsSection_file_date": "6/27/2025",
+    "systemRequirementsSection": "For detailed system requirements, refer to the <a href=\"https://learn.microsoft.com/system-center/scom/azure-sql-management-pack-changes-history\">Azure SQL Database Management Pack Operations Guide</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring, refer to the <a href=\"https://learn.microsoft.com/system-center/scom/azure-sql-management-pack-changes-history\">Azure SQL Database Management Pack Operations Guide</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108233",
+    "downloadPreload": true
+}
