@@ -556,6 +556,7 @@
                 "id": "Vue.volar"
             }
         },
+        "WASTeamAccount.WebTemplateStudio-dev-nightly": true,
         "WSO2.wso2ei": {
             "disallowInstall": true,
             "extension": {
@@ -733,6 +734,14 @@
                 "id": "axon-ivy.designer-13"
             }
         },
+        "aykansal.anon": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Anon",
+                "id": "aykansal.tryanon"
+            }
+        },
+        "azsdktm.SecurityIntelliSense": true,
         "badochov.ocaml-formatter": {
             "disallowInstall": true,
             "extension": {
@@ -1186,6 +1195,7 @@
                 "id": "magebit.magebit-magento-toolbox"
             }
         },
+        "kuba-p.glsl-lsp": true,
         "lannonbr.vscode-teddy-snippets": {
             "disallowInstall": true,
             "extension": {
@@ -1315,6 +1325,13 @@
                 "id": "yocto-project.yocto-bitbake"
             }
         },
+        "microsoft-IsvExpTools.powerplatform-vscode-preview": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Power Platform Tools",
+                "id": "microsoft-IsvExpTools.powerplatform-vscode"
+            }
+        },
         "microsoft.merge-conflict-detection": true,
         "milan-kovacic.vitest-lab": {
             "disallowInstall": true,
@@ -1369,6 +1386,7 @@
                 "id": "ms-vscode.vscode-node-azure-pack"
             }
         },
+        "ms-azuretools.vscode-dapr": true,
         "ms-azuretools.vscode-tye": {
             "disallowInstall": true,
             "extension": {
@@ -1819,6 +1837,7 @@
         "vsciot-vscode.vscode-arduino": true,
         "vsciot-vscode.vscode-iot-device-cube": true,
         "waderyan.nodejs-extension-pack": true,
+        "walnuts1018.oklch-vscode": true,
         "washan.crates-cmp": {
             "disallowInstall": true,
             "extension": {
