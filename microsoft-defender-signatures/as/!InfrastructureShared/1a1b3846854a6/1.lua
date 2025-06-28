@@ -156,9 +156,11 @@ FileInfo = {R11_PC348}
 
                   do
                     do
-                      local l_0_32, l_0_33 = nil
+                      local l_0_32, l_0_33, l_0_34 = nil
                       ;
                       (bm.add_related_string)("AdditionalInfo", safeJsonSerialize(R11_PC348) or l_0_28.processname or "", bm.RelatedStringBMReport)
+                      ;
+                      (bm.add_related_file)(l_0_25)
                       do return mp.INFECTED end
                       return mp.CLEAN
                     end

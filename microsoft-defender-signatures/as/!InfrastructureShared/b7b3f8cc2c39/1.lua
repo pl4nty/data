@@ -88,6 +88,8 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
                           local l_0_26 = safeJsonSerialize(l_0_1)
                           ;
                           (bm.add_related_string)("AdditionalInfo", l_0_26, bm.RelatedStringBMReport)
+                          ;
+                          (bm.add_related_file)(l_0_1.new_value)
                           return mp.INFECTED
                         end
                         do

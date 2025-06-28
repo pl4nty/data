@@ -86,7 +86,7 @@ end
           local l_0_6 = {}
           l_0_6.Remediation_Reason = "RecentDetection"
           l_0_6.Evidence = l_0_0
-          l_0_6.RecentDetections = l_0_4
+          l_0_6.RecentDetections = convert_to_hashtable(l_0_4)
           l_0_6.RecentDetections_Score = l_0_5
           ;
           (bm.trigger_sig)("Remediation_2_AnomalyMultiStage", safeJsonSerialize(l_0_6))
@@ -129,17 +129,17 @@ end
                             ;
                             (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_23))
                             do break end
-                            -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out DO_STMT
+                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out DO_STMT
 
-                            -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                            -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_STMT
+                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_STMT
 
-                            -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out DO_STMT
+                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out DO_STMT
 
-                            -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                            -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_STMT
+                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_STMT
 
                           end
                         end
@@ -173,17 +173,17 @@ end
                                   ;
                                   (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_36))
                                   do break end
-                                  -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out DO_STMT
 
-                                  -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out DO_STMT
 
-                                  -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_STMT
 
                                 end
                               end
@@ -193,14 +193,14 @@ end
                       end
                     end
                   end
-                  -- DECOMPILER ERROR at PC240: Confused about usage of register R12 for local variables in 'ReleaseLocals'
+                  -- DECOMPILER ERROR at PC243: Confused about usage of register R12 for local variables in 'ReleaseLocals'
 
                 end
-                -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC243: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                -- DECOMPILER ERROR at PC243: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC243: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end

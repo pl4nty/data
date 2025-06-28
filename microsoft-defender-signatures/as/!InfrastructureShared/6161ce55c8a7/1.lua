@@ -15,20 +15,27 @@ if #l_0_1 == 0 or l_0_1 == nil then
   return mp.CLEAN
 end
 local l_0_2 = {}
-for l_0_6,l_0_7 in ipairs(l_0_1) do
-  if not (string.find)(l_0_7, "Detection:FriendlyFile", 1, true) and not (string.find)(l_0_7, "Exploit:", 1, true) and not (string.find)(l_0_7, "Virus:", 1, true) then
-    local l_0_8 = (string.sub)(l_0_7, (string.find)(l_0_7, ":", 1, true) + 1)
-    ;
-    (table.insert)(l_0_2, l_0_8)
+l_0_2["Trojan:Win32/Zloader.B"] = true
+l_0_2["Trojan:Win64/Merlin.A!dha"] = true
+l_0_2["Trojan:Win32/Astaroth.ZZ"] = true
+l_0_2["Trojan:Win32/ReflectiveLoaderArtifact.A"] = true
+l_0_2["Trojan:Win64/ReflectiveLoaderArtifact.A"] = true
+local l_0_3 = {}
+for l_0_7,l_0_8 in ipairs(l_0_1) do
+  if not (string.find)(l_0_8, "Detection:FriendlyFile", 1, true) and not (string.find)(l_0_8, "Exploit:", 1, true) and not (string.find)(l_0_8, "Virus:", 1, true) then
+    local l_0_9 = (string.sub)(l_0_8, (string.find)(l_0_8, ":", 1, true) + 1)
+    if not l_0_2[l_0_9] then
+      (table.insert)(l_0_3, l_0_9)
+    end
   end
 end
-if #l_0_2 ~= 0 then
-  if #l_0_2 >= 10 then
+if #l_0_3 ~= 0 then
+  if #l_0_3 >= 10 then
     return mp.CLEAN
   end
-  l_0_2 = (table.concat)(l_0_2, ";")
+  l_0_3 = (table.concat)(l_0_3, ";")
   ;
-  (MpCommon.BmTriggerSig)(l_0_0, "SmsScanDetection", l_0_2)
+  (MpCommon.BmTriggerSig)(l_0_0, "SmsScanDetection", l_0_3)
 end
 return mp.CLEAN
 
