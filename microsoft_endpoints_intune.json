@@ -483,8 +483,6 @@
             "*.appex.bing.com",
             "c.bing.com",
             "c.live.com",
-            "d.docs.live.net",
-            "docs.live.net",
             "partnerservices.getmicrosoftkey.com",
             "signup.live.com"
         ]
@@ -821,7 +819,6 @@
         "tcpPorts": "80,443",
         "urls": [
             "*.delivery.mp.microsoft.com",
-            "*.prod.do.dsp.mp.microsoft.com",
             "*.update.microsoft.com",
             "*.windowsupdate.com",
             "adl.windows.com",
@@ -904,9 +901,8 @@
         "required": true,
         "serviceArea": "MEM",
         "serviceAreaDisplayName": "Microsoft Endpoint Manager",
-        "tcpPorts": "7680, 3544, 80, 443",
+        "tcpPorts": "80,443",
         "urls": [
-            "*.dl.delivery.mp.microsoft.com",
             "*.do.dsp.mp.microsoft.com"
         ]
     },

@@ -1582,7 +1582,7 @@
         "CacheEventSamplingPercentage": 50,
         "CosmicRolloutMode": null,
         "DisablePingEndpoint": false,
-        "DisableThor": false,
+        "DisableThor": true,
         "ECSFlightVerification": true,
         "ECSSettingVerification": "ExpectedValue",
         "EdpsTenantList": [
