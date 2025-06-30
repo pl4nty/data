@@ -517,6 +517,11 @@ extern bool IsSystemCaptionStyleReadFromRegistryEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kSettingsAppearanceTrigger);
 
+// fires when edge://settings/appearance is clicked on and classic ntp is
+// rendered.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kSettingsAppearanceTriggerWithoutRubyNtp);
+
 // Fires when the Themes section is rendered in the Settings page.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kSettingsAppearanceThemesPageTrigger);

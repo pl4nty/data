@@ -100,6 +100,19 @@ enum class ImageAskCopilotAction {
   kMaxValue = kHoverMenuVisualSearchIconClick,
 };
 
+// These values are persisted to logs. Entries should not be renumbered or
+// removed and numeric values should never be reused.
+// Please keep in sync with
+// "Microsoft.RenderViewContextMenuItem" in
+// src/tools/metrics/histograms/edge_enums.xml.
+enum class AskCopilotImageAction {
+  kContextMenuWithVisualSearchNotDirectSend = 0,
+  kContextMenuWithoutVisualSearchNotDirectSend = 1,
+  kContextMenuWithVisualSearchDirectSend = 2,
+  kContextMenuWithoutVisualSearchDirectSend = 3,
+  kMaxValue = kContextMenuWithoutVisualSearchDirectSend,
+};
+
 // Please keep in sync with
 // "Microsoft.PrismExplorer.CleanupEligible.Reason" in
 // src/tools/metrics/histograms/edge_enums.xml.
@@ -168,6 +181,8 @@ void RecordSaveControlIframeLoadTime(base::TimeDelta delta);
 void RecordSaveControlFlyoutStartRenderingTime(base::TimeDelta delta);
 
 void RecordImageAckCopilotAction(ImageAskCopilotAction action);
+
+void RecordAskCopilotImageAction(AskCopilotImageAction action);
 
 void RecordCleanupEligibleReason(CleanupEligibleReason reason);
 

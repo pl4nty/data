@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10769525,
+    "size": 10769774,
     "file_count": 177
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14614141,
+    "size": 14613999,
     "file_count": 830
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32283725,
-    "file_count": 3962
+    "size": 32271357,
+    "file_count": 3961
   },
   {
     "name": "boringssl",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16393074,
+    "size": 16393973,
     "file_count": 252
   },
   {
@@ -246,8 +246,8 @@
   },
   {
     "name": "glslang",
-    "size": 42888127,
-    "file_count": 3111
+    "size": 42901275,
+    "file_count": 3115
   },
   {
     "name": "googletest",
@@ -361,7 +361,7 @@
   },
   {
     "name": "libc++",
-    "size": 6205029,
+    "size": 6197493,
     "file_count": 934
   },
   {
@@ -441,8 +441,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 216582372,
-    "file_count": 337
+    "size": 217863227,
+    "file_count": 341
   },
   {
     "name": "logilab",
@@ -551,8 +551,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3638995,
-    "file_count": 567
+    "size": 3653946,
+    "file_count": 570
   },
   {
     "name": "perl",
@@ -636,8 +636,8 @@
   },
   {
     "name": "skia",
-    "size": 3460765,
-    "file_count": 1181
+    "size": 3460122,
+    "file_count": 1178
   },
   {
     "name": "speech-dispatcher",
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6216055,
+    "size": 6216192,
     "file_count": 173
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 28808642,
+    "size": 28808810,
     "file_count": 626
   },
   {

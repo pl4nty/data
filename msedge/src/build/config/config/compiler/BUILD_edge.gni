@@ -2,7 +2,6 @@
 import("//build/config/c++/c++.gni")
 import("//build/config/chrome_build.gni")
 import("//build/config/compiler/compiler.gni")
-import("//build/config/nacl/config.gni")
 import("//build/toolchain/goma.gni")
 import("//build/toolchain/toolchain.gni")
 
@@ -110,13 +109,11 @@ template("edge_overlay_config_compiler_cpu_abi") {
       if (current_cpu == "x64") {
         cflags += [ "-march=$x64_arch" ]
       } else if (current_cpu == "x86") {
-        if (!is_nacl) {
-          cflags -= [ "-msse3" ]
-          cflags += [
-            "-msse2",
-            "-mmmx",
-          ]
-        }
+        cflags -= [ "-msse3" ]
+        cflags += [
+          "-msse2",
+          "-mmmx",
+        ]
       }
     }
   }
@@ -164,7 +161,7 @@ template("edge_overlay_config_symbols") {
         ]
       }
     }
-    if (is_clang && !is_nacl && is_win && is_component_build) {
+    if (is_clang && is_win && is_component_build) {
       # This is enabled upstream but not in component builds
       cflags += [ "-gomit-unreferenced-methods" ]
     }
@@ -182,7 +179,7 @@ template("edge_overlay_config_minimal_symbols") {
       # obj/native_client/src/trusted/service_runtime/sel_asm/nacl_switch_32.o:
       # DWARF info may be corrupt; offsets in a range list entry are in different
       # sections" there.  Maybe just a bug in nacl_switch_32.S.
-      if (!is_apple && !is_nacl && current_cpu != "x86" && use_lld) {
+      if (!is_apple && current_cpu != "x86" && use_lld) {
         if (is_clang) {
           # This flag enables the GNU-format pubnames and pubtypes sections,
           # which lld needs in order to generate a correct GDB index.
@@ -226,7 +223,7 @@ template("edge_overlay_config_compiler") {
     if (!is_win) {
       # Edge: To control the size of our debug artifacts, compile our Linux builds
       # with -fdebug-types-section
-      if (is_posix && !is_apple && !is_nacl) {
+      if (is_posix && !is_apple) {
         cflags += [ "-fdebug-types-section" ]
         ldflags += [ "-fdebug-types-section" ]
       }
@@ -274,7 +271,7 @@ template("edge_overlay_config_compiler") {
       ldflags -= [ "-Wl,--strict-auto-link" ]
     }
 
-    if (is_clang && !is_nacl && invoker.show_includes) {
+    if (is_clang && invoker.show_includes) {
       if (is_win) {
         # TODO(crbug.com/1223741): Goma mixes the -H and /showIncludes output.
         assert(!use_goma, "show_includes on Windows is not reliable with goma")
