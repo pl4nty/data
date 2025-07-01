@@ -1669,40 +1669,43 @@ add_parents_mp = function()
     if l_20_0 then
       local l_20_2, l_20_3 = pcall(MpCommon.IsFriendlyProcess, l_20_0)
       local l_20_4 = nil
-      local l_20_5 = (MpCommon.GetImagePathFromPid)(l_20_0)
-      if mp.ContextualExpandEnvironmentVariables and l_20_5 then
-        local l_20_6 = pcall(mp.ContextualExpandEnvironmentVariables, l_20_5)
+      local l_20_5, l_20_6 = pcall((MpCommon.GetImagePathFromPid)(l_20_0))
+      if not l_20_6 then
+        return l_20_1
       end
-      if mp.ContextualExpandEnvironmentVariables or l_20_5 then
-        l_20_6 = mp
-        l_20_6 = l_20_6.IsKnownFriendlyFile
-        l_20_6 = l_20_6(l_20_5, false, true)
-        local l_20_7 = nil
-        l_20_4 = l_20_6
+      if mp.ContextualExpandEnvironmentVariables and l_20_6 then
+        local l_20_7 = pcall(mp.ContextualExpandEnvironmentVariables, l_20_6)
+      end
+      if mp.ContextualExpandEnvironmentVariables or l_20_6 then
+        l_20_7 = mp
+        l_20_7 = l_20_7.IsKnownFriendlyFile
+        l_20_7 = l_20_7(l_20_6, false, true)
+        local l_20_8 = nil
+        l_20_4 = l_20_7
       end
       do
-        l_20_6 = table
-        l_20_6 = l_20_6.insert
-        local l_20_8 = nil
-        l_20_8 = l_20_1
+        l_20_7 = table
+        l_20_7 = l_20_7.insert
         local l_20_9 = nil
+        l_20_9 = l_20_1
+        local l_20_10 = nil
         do
-          local l_20_10 = nil
-          l_20_6(l_20_8, l_20_9)
-          l_20_9 = {ImagePath = l_20_5, IsFriendlyProcess = l_20_3, IsFriendlyImage = l_20_4, Pid = l_20_0}
-          l_20_6 = mp
-          l_20_6 = l_20_6.GetParentProcInfo
-          l_20_8 = l_20_0
-          l_20_6 = l_20_6(l_20_8)
-          if not l_20_6 then
+          local l_20_11 = nil
+          l_20_7(l_20_9, l_20_10)
+          l_20_10 = {ImagePath = l_20_6, IsFriendlyProcess = l_20_3, IsFriendlyImage = l_20_4, Pid = l_20_0}
+          l_20_7 = mp
+          l_20_7 = l_20_7.GetParentProcInfo
+          l_20_9 = l_20_0
+          l_20_7 = l_20_7(l_20_9)
+          if not l_20_7 then
             return l_20_1
           end
-          l_20_0 = l_20_6.ppid
-          -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out DO_STMT
+          l_20_0 = l_20_7.ppid
+          -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out DO_STMT
 
-          -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_THEN_STMT
+          -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC57: LeaveBlock: unexpected jumping out IF_STMT
+          -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_STMT
 
         end
       end

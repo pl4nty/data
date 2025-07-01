@@ -5,6 +5,12 @@
 -- function num : 0
 if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
   (bm.add_related_string)("Evidence", (this_sigattrlog[1]).utf8p2, bm.RelatedStringBMReport)
+  local l_0_0 = safeJsonDeserialize((this_sigattrlog[1]).utf8p2)
+  if l_0_0 and l_0_0.FilePath then
+    (bm.add_related_file)(l_0_0.FilePath)
+  end
 end
-return mp.INFECTED
+do
+  return mp.INFECTED
+end
 
