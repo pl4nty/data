@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32271357,
+    "size": 32270725,
     "file_count": 3961
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7341693,
+    "size": 7341727,
     "file_count": 29
   },
   {
@@ -246,8 +246,8 @@
   },
   {
     "name": "glslang",
-    "size": 42901275,
-    "file_count": 3115
+    "size": 42991748,
+    "file_count": 3147
   },
   {
     "name": "googletest",
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3653946,
+    "size": 3654638,
     "file_count": 570
   },
   {
@@ -651,12 +651,12 @@
   },
   {
     "name": "spirv-headers",
-    "size": 527198,
+    "size": 529024,
     "file_count": 15
   },
   {
     "name": "spirv-tools",
-    "size": 200652,
+    "size": 199962,
     "file_count": 11
   },
   {
@@ -721,8 +721,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6216192,
-    "file_count": 173
+    "size": 6210461,
+    "file_count": 175
   },
   {
     "name": "vulkan_memory_allocator",
@@ -751,7 +751,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 28808810,
+    "size": 28808818,
     "file_count": 626
   },
   {
