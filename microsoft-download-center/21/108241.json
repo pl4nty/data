@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for SQL Server Analysis Services",
+    "downloadDescription": "Microsoft System Center Management Pack for SQL Server Analysis Services enables the discovery and monitoring of SSAS 2016, 2019, 2022, and upcoming versions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSASMPWorkflowsList.pdf",
+            "url": "https://download.microsoft.com/download/2d6725f1-195d-4b6c-a563-74bc977beaff/SSASMPWorkflowsList.pdf",
+            "size": "403032",
+            "version": "7.10.4",
+            "datePublished": "6/30/2025 9:27:38 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SQLServer.AnalysisServices.ManagementPack.msi",
+            "url": "https://download.microsoft.com/download/2d6725f1-195d-4b6c-a563-74bc977beaff/Microsoft.SQLServer.AnalysisServices.ManagementPack.msi",
+            "size": "4972544",
+            "version": "7.10.4",
+            "datePublished": "6/30/2025 9:27:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Pack for SQL Server Analysis Services supports discovery and monitoring of Instances, Databases, and Partitions of SQL Server Analysis Services 2016, 2017, 2019, 2022, and upcoming versions.<br/>\n<br/>\nMonitoring gives you the insights about such metrics as performance, availability and configuration monitoring, performance and event data collection. <br/>\n<br/>\nIn addition to health monitoring capabilities, this management pack includes dashboards, diagrams, state, performance, and alert views.<br/>\n<br/>\nMicrosoft System Center Management Pack for SQL Server Analysis Services is intended for Operations Manager 2016, Operations Manager 2019, Operations Manager 2022, and Operations Manager 2025.<br/>\n<br/>\n<b>Feature Summary</b><br/>\n<br/>\nThe following list provides a brief overview of the features available in Microsoft System Center Operations Manager Management Pack for SQL Server Analysis Services: <br/>\n<ul>\n<li>SSAS Instance level monitoring</li>\n<li>SSAS Database level monitoring</li>\n<li>Partition Storage Free Space</li>\n<li>A number of performance collection rules</li>\n</ul>\nFor more information about this management pack, see the <a href=\"https://docs.microsoft.com/system-center/scom/analysis-services-management-pack-changes-history\">Management Pack for SQL Server Analysis Services Operations Guide</a>.\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.10.4",
+    "detailsSection_file_name": [
+        "SSASMPWorkflowsList.pdf",
+        "Microsoft.SQLServer.AnalysisServices.ManagementPack.msi"
+    ],
+    "detailsSection_file_size": [
+        "393.6 KB",
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "6/30/2025",
+    "systemRequirementsSection": "For detailed system requirements, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/analysis-services-management-pack-changes-history\">Management Pack for SQL Server Analysis Services Operations Guide</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/analysis-services-management-pack-changes-history\">Management Pack for SQL Server Analysis Services Operations Guide</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108241",
+    "downloadPreload": true
+}

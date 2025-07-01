@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for SQL Server Reporting Services",
+    "downloadDescription": "Microsoft System Center Management Pack for SQL Server Reporting Services enables the discovery and monitoring of SSRS 2016, 2017, 2019, 2022, and upcoming versions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSRSMPWorkflowsList.pdf",
+            "url": "https://download.microsoft.com/download/737dd800-d4bc-45bb-ae86-8c3a17f3d90b/SSRSMPWorkflowsList.pdf",
+            "size": "308246",
+            "version": "7.10.4",
+            "datePublished": "6/30/2025 9:38:13 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SQLServer.ReportingServices.ManagementPack.msi",
+            "url": "https://download.microsoft.com/download/737dd800-d4bc-45bb-ae86-8c3a17f3d90b/Microsoft.SQLServer.ReportingServices.ManagementPack.msi",
+            "size": "7122944",
+            "version": "7.10.4",
+            "datePublished": "6/30/2025 9:38:13 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Pack for SQL Server Reporting Services (Native Mode) supports discovery and monitoring Instances, Databases, and Partitions of SQL Server Reporting Services 2016, 2017, 2019, 2022, and upcoming versions, as well as Power BI Report Server.<br/>\n<br/>\nThe management pack considers PBIRS as a special kind of SSRS and provides the same monitoring for PBIRS instances as it does for SSRS instances; this includes performance, availability and configuration monitoring, performance data collection, and default thresholds.<br/>\n<br/>\nIn addition to health monitoring capabilities, this management pack includes dashboard views and extensive knowledge that enable near real-time diagnosis and resolution of detected issues.<br/>\n<br/>\nMicrosoft System Center Management Pack for SQL Server Reporting Services is intended for Operations Manager 2016, Operations Manager 2019, Operations Manager 2022, and Operations Manager 2025.<br/>\n<br/>\n<b>Feature Summary</b><br/>\n<br/>\nThe following list provides a brief overview of the features available in Microsoft System Center Operations Manager Management Pack for SQL Server Reporting Services:<br/>\n<ul>\n<li>SQL Server Reporting Services Instance (Native Mode)</li>\n<li>Power BI Report Server Instance</li>\n<li>Scale-out Deployment of SQL Server Reporting Services and Power BI Report Server</li>\n</ul>\nFor more information about this management pack, see the <a href=\"https://docs.microsoft.com/system-center/scom/reporting-services-management-pack-changes-history\">Management Pack for SQL Server Reporting Services Operations Guide</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.10.4",
+    "detailsSection_file_name": [
+        "SSRSMPWorkflowsList.pdf",
+        "Microsoft.SQLServer.ReportingServices.ManagementPack.msi"
+    ],
+    "detailsSection_file_size": [
+        "301.0 KB",
+        "6.8 MB"
+    ],
+    "detailsSection_file_date": "6/30/2025",
+    "systemRequirementsSection": "For detailed system requirements, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/reporting-services-management-pack-changes-history\">Management Pack for SQL Server Reporting Services Operations Guide</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring, refer to  the <a href=\"https://docs.microsoft.com/system-center/scom/reporting-services-management-pack-changes-history\">Management Pack for SQL Server Reporting Services Operations Guide</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108243",
+    "downloadPreload": true
+}
