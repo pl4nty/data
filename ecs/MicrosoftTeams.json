@@ -5010,6 +5010,7 @@
                 "ae": "https://emea.csa.svcs.teams.office.com/api/v1",
                 "amer": "https://csa.svcs.teams.office.com/api/v1",
                 "apac": "https://csa.svcs.teams.office.com/api/v1",
+                "at": "https://emea.csa.svcs.teams.office.com/api/v1",
                 "au": "https://csa.svcs.teams.office.com/api/v1",
                 "ca": "https://csa.svcs.teams.office.com/api/v1",
                 "ch": "https://emea.csa.svcs.teams.office.com/api/v1",
@@ -5130,40 +5131,6 @@
             "GlobalNotificationSettings": true,
             "InlineRoster": {
                 "Enabled": true
-            }
-        },
-        "SettingsStorePartnerCall": {
-            "EnabledBasedOnTenantRegion": true,
-            "EndpointMappings": {
-                "ae": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "amer": "https://amer.settings.teams.internal.office.com/v1.0/settings/teams",
-                "apac": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "au": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "br": "https://amer.settings.teams.internal.office.com/v1.0/settings/teams",
-                "ca": "https://amer.settings.teams.internal.office.com/v1.0/settings/teams",
-                "ch": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "cl": "https://amer.settings.teams.internal.office.com/v1.0/settings/teams",
-                "de": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "emea": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "es": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "fr": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "id": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "il": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "in": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "it": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "jp": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "kr": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "mx": "https://amer.settings.teams.internal.office.com/v1.0/settings/teams",
-                "my": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "no": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "nz": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "pl": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "qa": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "se": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "sg": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "tw": "https://apac.settings.teams.internal.office.com/v1.0/settings/teams",
-                "uk": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams",
-                "za": "https://emea.settings.teams.internal.office.com/v1.0/settings/teams"
             }
         },
         "SfbInteropChatInlineRosterEnabled": true,
