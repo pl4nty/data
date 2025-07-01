@@ -10,6 +10,10 @@ if isnull(l_0_1) or isnull((this_sigattrlog[2]).utf8p1) or isnull((this_sigattrl
 end
 local l_0_2 = (this_sigattrlog[2]).utf8p2
 local l_0_3 = (this_sigattrlog[1]).utf8p2
+l_0_2 = (mp.ContextualExpandEnvironmentVariables)(l_0_2)
+if isnull(l_0_2) then
+  return mp.CLEAN
+end
 if isnull(l_0_3) and (string.lower)(l_0_2) == "c:\\windows\\system32\\w32time.dll" then
   return mp.CLEAN
 end
@@ -48,7 +52,7 @@ do
   l_0_9 = mp
   l_0_9 = l_0_9.INFECTED
   do return l_0_9 end
-  -- DECOMPILER ERROR at PC181: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC194: freeLocal<0 in 'ReleaseLocals'
 
 end
 

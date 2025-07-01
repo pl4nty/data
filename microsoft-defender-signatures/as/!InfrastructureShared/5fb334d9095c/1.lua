@@ -10,7 +10,7 @@ if isnull(l_0_0) or isnull(l_0_1) or isnull(l_0_2) or isnull(l_0_2.ppid) then
   return mp.CLEAN
 end
 l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
-if isnull(l_0_1) or not (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+if isnull(l_0_1) or (mp.IsKnownFriendlyFile)(l_0_1, false, true) then
   return mp.CLEAN
 end
 do

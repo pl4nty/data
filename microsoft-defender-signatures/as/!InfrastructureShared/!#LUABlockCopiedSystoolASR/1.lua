@@ -212,7 +212,7 @@ local l_0_8 = (versioning.GetOrgID)()
 if l_0_8 ~= nil and l_0_8 ~= "" then
   l_0_8 = (string.lower)(l_0_8)
 end
-if l_0_8 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(1000, false, true, true) == true then
+if l_0_8 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(2000, false, true, true) == true then
   local l_0_9 = (pe.get_versioninfo)()
   if l_0_9 ~= nil and l_0_9.OriginalFilename ~= nil then
     local l_0_10 = ((string.lower)(l_0_9.OriginalFilename))

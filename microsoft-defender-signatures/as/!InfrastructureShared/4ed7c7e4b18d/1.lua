@@ -26,17 +26,29 @@ local l_0_2 = {}
 if not ("iex")("invoke-expression", "invoke-webrequest") then
   return mp.CLEAN
 end
+local l_0_3 = {}
+-- DECOMPILER ERROR at PC47: No list found for R3 , SetList fails
+
+-- DECOMPILER ERROR at PC48: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC49: Overwrote pending register: R5 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC50: Overwrote pending register: R6 in 'AssignReg'
+
+if not ("curl")("wget", "iwr") then
+  return mp.CLEAN
+end
 do
-  local l_0_3 = {}
-  -- DECOMPILER ERROR at PC47: No list found for R3 , SetList fails
+  local l_0_4 = {}
+  -- DECOMPILER ERROR at PC60: No list found for R4 , SetList fails
 
-  -- DECOMPILER ERROR at PC48: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC61: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC49: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC62: Overwrote pending register: R6 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC50: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC63: Overwrote pending register: R7 in 'AssignReg'
 
-  if not ("curl")("wget", "iwr") then
+  if not ("writeallbytes")("frombase64string", "irm") then
     return mp.CLEAN
   end
   do return mp.INFECTED end
