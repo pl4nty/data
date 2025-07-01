@@ -496,7 +496,7 @@
         "EnableLibGetBulkAction": true,
         "EnableLibGetCloudPCById": true,
         "EnableLibGetCloudPCConnectivityHistory": true,
-        "EnableLibGetCloudPCLaunchInfo": true,
+        "EnableLibGetCloudPCLaunchInfo": false,
         "EnableLibGetCloudPCManagedBy": true,
         "EnableLibGetCloudPCs": true,
         "EnableLibGetSupportedCloudPcRemoteActions": true,

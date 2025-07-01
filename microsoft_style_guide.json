@@ -475,6 +475,11 @@
                             "toc_title": "anyone vs. everyone"
                         },
                         {
+                            "href": "a_z_names_terms/a/apache-spark",
+                            "permissioned-type": "private",
+                            "toc_title": "Apache Spark"
+                        },
+                        {
                             "href": "a_z_names_terms/a/api-apps-api-app",
                             "permissioned-type": "private",
                             "toc_title": "API Apps, API app"
@@ -2760,6 +2765,11 @@
                             "toc_title": "Customer Service Insights for Dynamics 365 Customer Service"
                         },
                         {
+                            "href": "a_z_names_terms/c/customer-service-representative",
+                            "permissioned-type": "private",
+                            "toc_title": "customer service representative"
+                        },
+                        {
                             "href": "a_z_names_terms/c/customer-service-virtual-agent",
                             "permissioned-type": "private",
                             "toc_title": "Customer Service Virtual Agent"
@@ -2898,6 +2908,11 @@
                             "href": "a_z_names_terms/d/data-lake-storage",
                             "permissioned-type": "private",
                             "toc_title": "Data Lake Storage"
+                        },
+                        {
+                            "href": "a_z_names_terms/d/data-lake",
+                            "permissioned-type": "private",
+                            "toc_title": "data lake"
                         },
                         {
                             "href": "a_z_names_terms/d/data-management-services",
@@ -6693,6 +6708,11 @@
                             "href": "a_z_names_terms/o/output",
                             "permissioned-type": "private",
                             "toc_title": "output"
+                        },
+                        {
+                            "href": "a_z_names_terms/o/overprivileged",
+                            "permissioned-type": "private",
+                            "toc_title": "overprivileged"
                         },
                         {
                             "href": "a_z_names_terms/o/overview",
@@ -13699,7 +13719,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2605,
+        "count_of_node_with_href": 2609,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,
