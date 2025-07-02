@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "PIX API Preview 1",
+    "downloadDescription": "PIX API Preview 1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PixApi.main.2506.30001.zip",
+            "url": "https://download.microsoft.com/download/42fb57d6-b24a-4d87-adfa-91f198257180/PixApi.main.2506.30001.zip",
+            "size": "16851767",
+            "version": "2506.30",
+            "datePublished": "7/2/2025 5:18:24 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PIX-2506.30-main-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/42fb57d6-b24a-4d87-adfa-91f198257180/PIX-2506.30-main-Installer-x64.exe",
+            "size": "204623192",
+            "version": "2506.30",
+            "datePublished": "7/2/2025 5:18:24 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX API Preview 1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2506.30",
+    "detailsSection_file_name": [
+        "PixApi.main.2506.30001.zip",
+        "PIX-2506.30-main-Installer-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "16.1 MB",
+        "195.1 MB"
+    ],
+    "detailsSection_file_date": "7/2/2025",
+    "systemRequirementsSection": "Windows 10/11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Contact the PIX team for information",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108246",
+    "downloadPreload": true
+}
