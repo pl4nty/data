@@ -291,7 +291,7 @@
         "EnableHandleFlwTenantLicense0": true,
         "EnableHcfUpgrade": false,
         "EnableHcfUpgradeInConsistencyChecker": true,
-        "EnableHibernationCapabilityAfterExpandDisk": false,
+        "EnableHibernationCapabilityAfterExpandDisk": true,
         "EnableHibernationCapabilityAfterExpandDiskForFPA": true,
         "EnableHibernationCapabilityForNewCPC": true,
         "EnableHibernationCapabilityForNewCPCVSB": true,
