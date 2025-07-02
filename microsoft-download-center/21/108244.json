@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server Subscription Edition RTM  (KB5047155)",
+    "downloadDescription": "Exchange Server Subscription Edition RTM  (KB5047155)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ExchangeServerSE-x64.iso",
+            "url": "https://download.microsoft.com/download/ad9b1e53-f28e-4a82-987d-6c88803795b2/ExchangeServerSE-x64.iso",
+            "size": "6402453504",
+            "version": "15.02.2562.017",
+            "datePublished": "7/1/2025 9:27:43 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Exchange Server Subscription Edition RTM installer.<br /> <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5047155",
+        "name": "5047155"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.2562.017",
+    "detailsSection_file_name": [
+        "ExchangeServerSE-x64.iso"
+    ],
+    "detailsSection_file_size": [
+        "6.0 GB"
+    ],
+    "detailsSection_file_date": "7/1/2025",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server Subscription Edition RTM System Requirements and Prerequisites</b><br />\nFor information about Exchange Subscription Edition RTM system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange Server 2019 and SE system requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange Server 2019 and SE prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server Subscription Edition RTM <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Team Blog",
+            "url": "https://aka.ms/ehlo"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108244",
+    "downloadPreload": true
+}
