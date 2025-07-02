@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\25b363b2059e\1.luac 
+-- Command line: lua\!InfrastructureShared\25b35d2f8e84\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -28,27 +28,20 @@ do
     end
   end
   do
-    local l_0_13 = bm.add_related_string
-    local l_0_14 = "SuspiciousHTTPRequestHeaders_Activity"
-    local l_0_15 = safeJsonSerialize
-    do
-      local l_0_16 = {}
-      l_0_16.CreatedProcs = l_0_0
-      l_0_16.CreatedFiles = l_0_8
-      l_0_15 = l_0_15(l_0_16)
-      l_0_16 = bm
-      l_0_16 = l_0_16.RelatedStringBMReport
-      l_0_13(l_0_14, l_0_15, l_0_16)
-      l_0_13 = bm
-      l_0_13 = l_0_13.set_detection_string
-      l_0_14 = safeJsonSerialize
-      l_0_13(l_0_14(l_0_15))
-      l_0_13 = mp
-      l_0_13 = l_0_13.INFECTED
-      do return l_0_13 end
-      -- DECOMPILER ERROR at PC106: Confused about usage of register R6 for local variables in 'ReleaseLocals'
-
-    end
+    local l_0_13 = safeJsonSerialize
+    local l_0_14 = {}
+    l_0_14.CreatedProcs = l_0_0
+    l_0_14.CreatedFiles = l_0_8
+    l_0_13 = l_0_13(l_0_14)
+    l_0_14 = bm
+    l_0_14 = l_0_14.add_related_string
+    l_0_14("SuspiciousHTTPRequestHeaders_Activity", l_0_13, bm.RelatedStringBMReport)
+    l_0_14 = bm
+    l_0_14 = l_0_14.set_detection_string
+    l_0_14(l_0_13)
+    l_0_14 = mp
+    l_0_14 = l_0_14.INFECTED
+    return l_0_14
   end
 end
 
