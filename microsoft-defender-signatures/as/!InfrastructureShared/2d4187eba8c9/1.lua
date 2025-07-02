@@ -9,24 +9,21 @@ if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
   if isnull(l_0_2) then
     return mp.CLEAN
   end
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_8 = split(l_0_7, "%.")
-    if not l_0_8 then
-      return mp.CLEAN
-    end
-    local l_0_9 = "." .. tostring(l_0_8[#l_0_8])
-    if not l_0_9 then
-      return mp.CLEAN
-    end
-    if isSuspTLD(l_0_9) then
-      (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
-      return mp.INFECTED
-    end
+  local l_0_3 = l_0_2[1]
+  if isnull(l_0_3) then
+    return mp.CLEAN
+  end
+  local l_0_4 = split(l_0_3, "%.")
+  if isnull(l_0_4) then
+    return mp.CLEAN
+  end
+  local l_0_5 = "." .. tostring(l_0_4[#l_0_4])
+  if isSuspTLD(l_0_5) then
+    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY))
+    return mp.INFECTED
   end
 end
 do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
+  return mp.CLEAN
 end
 
