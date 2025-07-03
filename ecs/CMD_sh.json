@@ -598,6 +598,7 @@
         "EnablePreventANCChangeWithVmAttached": true,
         "EnablePreviewStringForPolicySSO": false,
         "EnablePreviewStringForSSO": false,
+        "EnableProductTypeReserve": true,
         "EnableProgressMarkersForRunUndispatchedSubscriptionRegionAnalysisAsync": true,
         "EnableProvisionPolicyBackendPublicBulkAssignmentAPI": true,
         "EnableProvisionResultPersistRetry": true,
