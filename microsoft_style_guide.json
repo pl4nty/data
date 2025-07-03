@@ -3885,6 +3885,11 @@
                             "toc_title": "Feelings Monster"
                         },
                         {
+                            "href": "a_z_names_terms/f/few-shot-learning",
+                            "permissioned-type": "private",
+                            "toc_title": "few-shot, few-shot learning"
+                        },
+                        {
                             "href": "a_z_names_terms/f/fictitious-names",
                             "permissioned-type": "private",
                             "toc_title": "fictitious names"
@@ -6360,6 +6365,11 @@
                             "toc_title": ".NET Core CLI"
                         },
                         {
+                            "href": "a_z_names_terms/n/n-shot-learning",
+                            "permissioned-type": "private",
+                            "toc_title": "n-shot, n-shot learning"
+                        },
+                        {
                             "href": "a_z_names_terms/n/na-na",
                             "permissioned-type": "private",
                             "toc_title": "N/A, n/a"
@@ -6523,6 +6533,11 @@
                             "href": "a_z_names_terms/o/onboard",
                             "permissioned-type": "private",
                             "toc_title": "onboard"
+                        },
+                        {
+                            "href": "a_z_names_terms/o/one-shot-learning",
+                            "permissioned-type": "private",
+                            "toc_title": "one-shot, one-shot learning"
                         },
                         {
                             "href": "a_z_names_terms/o/onedrive",
@@ -9663,6 +9678,11 @@
                             "href": "a_z_names_terms/z/zero-day",
                             "permissioned-type": "private",
                             "toc_title": "zero-day"
+                        },
+                        {
+                            "href": "a_z_names_terms/z/zero-shot-learning",
+                            "permissioned-type": "private",
+                            "toc_title": "zero-shot, zero-shot learning"
                         },
                         {
                             "href": "a_z_names_terms/z/zero-trust",
@@ -13719,7 +13739,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2609,
+        "count_of_node_with_href": 2613,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,
