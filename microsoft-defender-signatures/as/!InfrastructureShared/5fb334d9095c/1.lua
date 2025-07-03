@@ -9,21 +9,17 @@ local l_0_2 = (bm.get_current_process_startup_info)()
 if isnull(l_0_0) or isnull(l_0_1) or isnull(l_0_2) or isnull(l_0_2.ppid) then
   return mp.CLEAN
 end
-l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
-if isnull(l_0_1) or (mp.IsKnownFriendlyFile)(l_0_1, false, true) then
-  return mp.CLEAN
-end
 do
   local l_0_3, l_0_5, l_0_6 = (MpCommon.GetCurrentTimeT)() or 0
   do
     local l_0_4, l_0_7 = , (sysio.GetFileLastWriteTime)(l_0_1) or 0
-    -- DECOMPILER ERROR at PC78: Confused about usage of register: R3 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC57: Confused about usage of register: R3 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC80: Confused about usage of register: R4 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC59: Confused about usage of register: R4 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC82: Confused about usage of register: R4 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC61: Confused about usage of register: R4 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC83: Confused about usage of register: R3 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC62: Confused about usage of register: R3 in 'UnsetPending'
 
     if l_0_4 == 0 or l_0_7 == 0 or l_0_4 - l_0_7 / 10000000 - 11644473600 > 3600 then
       return mp.CLEAN

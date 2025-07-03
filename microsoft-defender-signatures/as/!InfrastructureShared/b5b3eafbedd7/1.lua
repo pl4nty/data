@@ -27,24 +27,32 @@ do
 
         -- DECOMPILER ERROR at PC38: Confused about usage of register: R1 in 'UnsetPending'
 
-        do
-          if l_0_4 ~= nil and l_0_6 ~= nil then
-            local l_0_7 = nil
-            -- DECOMPILER ERROR at PC45: Confused about usage of register: R1 in 'UnsetPending'
+        if l_0_4 ~= nil and l_0_6 ~= nil then
+          local l_0_7 = nil
+          -- DECOMPILER ERROR at PC45: Confused about usage of register: R1 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC51: Confused about usage of register: R2 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC51: Confused about usage of register: R2 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC53: Confused about usage of register: R1 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC53: Confused about usage of register: R1 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC59: Confused about usage of register: R2 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC59: Confused about usage of register: R2 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC64: Confused about usage of register: R2 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC64: Confused about usage of register: R2 in 'UnsetPending'
 
-            if ((((l_0_6:match("+x [\"]*([^\"]+)") ~= nil and l_0_6:match("+x [\"]*([^\"]+)") ~= "") or l_0_6:match("777 [\"]*([^\"]+)") ~= nil) and l_0_6:match("777 [\"]*([^\"]+)") ~= "") or l_0_6:match("755 [\"]*([^\"]+)") ~= nil) and l_0_6:match("755 [\"]*([^\"]+)") ~= "" and (string.find)(l_0_7, l_0_6:match("755 [\"]*([^\"]+)"), 1, true) then
-              TrackPidAndTechniqueBM("BM", "T1222.002", "DefenseEvasion_FileAndDirectoryPermissionsModification_Curl")
-              return mp.INFECTED
+          if ((((l_0_6:match("+x [\"]*([^\"]+)") ~= nil and l_0_6:match("+x [\"]*([^\"]+)") ~= "") or l_0_6:match("777 [\"]*([^\"]+)") ~= nil) and l_0_6:match("777 [\"]*([^\"]+)") ~= "") or l_0_6:match("755 [\"]*([^\"]+)") ~= nil) and l_0_6:match("755 [\"]*([^\"]+)") ~= "" and (string.find)(l_0_7, l_0_6:match("755 [\"]*([^\"]+)"), 1, true) then
+            TrackPidAndTechniqueBM("BM", "T1222.002", "DefenseEvasion_FileAndDirectoryPermissionsModification_Curl")
+            local l_0_8 = nil
+            -- DECOMPILER ERROR at PC82: Confused about usage of register: R3 in 'UnsetPending'
+
+            -- DECOMPILER ERROR at PC84: Confused about usage of register: R2 in 'UnsetPending'
+
+            if (this_sigattrlog[4]).ppid then
+              (MpCommon.BmTriggerSig)((this_sigattrlog[4]).ppid, "BM_C2CurlChmodFile", l_0_6:match("755 [\"]*([^\"]+)"))
             end
+            return mp.INFECTED
           end
+        end
+        do
           return mp.CLEAN
         end
       end

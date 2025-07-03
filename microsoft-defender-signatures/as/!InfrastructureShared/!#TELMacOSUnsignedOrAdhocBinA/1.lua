@@ -20,7 +20,7 @@ end
 if l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, ".dylib", -6, true) or (string.find)(l_0_1, ".so", -3, true) or (string.find)(l_0_1, "__python_generated_allocator_preload", 1, true) or (string.find)(l_0_1, "/private/tmp/strip%.[^/]+$", 1, false) or (string.find)(l_0_1, "/private/tmp/bitcode_strip%.[^/]+$", 1, false) or (string.find)(l_0_1, "ppriskmagnes.framework/ppriskmagnes$", 1, false) or (string.find)(l_0_1, "/private/tmp/_mei.*/python3$", 1, false) or (string.find)(l_0_1, "/private/tmp/_mei.*[^/]+/python$", 1, false) or (string.find)(l_0_1, "/private/tmp/br%w%w%w%w%w%w$", 1, false) or (string.find)(l_0_1, "/private/tmp/pkinstallsandbox.*/tmp/br%w%w%w%w%w%w$", 1, false) or (string.find)(l_0_1, "/private/tmp/deviceconnect-services-", 1, true) then
+if (string.find)(l_0_1, ".dylib", -6, true) or (string.find)(l_0_1, ".so", -3, true) or (string.find)(l_0_1, "__python_generated_allocator_preload", 1, true) or (string.find)(l_0_1, "/private/tmp/strip%.[^/]+$", 1, false) or (string.find)(l_0_1, "/private/tmp/bitcode_strip%.[^/]+$", 1, false) or (string.find)(l_0_1, "ppriskmagnes.framework/ppriskmagnes$", 1, false) or (string.find)(l_0_1, "/private/tmp/_mei.*/python3$", 1, false) or (string.find)(l_0_1, "/private/tmp/_mei.*[^/]+/python$", 1, false) or (string.find)(l_0_1, "/private/tmp/br%w%w%w%w%w%w$", 1, false) or (string.find)(l_0_1, "/private/tmp/pkinstallsandbox.*/tmp/br%w%w%w%w%w%w$", 1, false) or (string.find)(l_0_1, "/private/tmp/mcs/runner", 1, true) or (string.find)(l_0_1, "/private/tmp/mcs/assets/", 1, true) or (string.find)(l_0_1, "/private/tmp/deviceconnect-services-", 1, true) then
   return mp.CLEAN
 end
 if IsExcludedByImagePathMacOS(l_0_1) then
@@ -28,18 +28,19 @@ if IsExcludedByImagePathMacOS(l_0_1) then
 end
 local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
 local l_0_3 = (mp.GetCertificateInfo)()
-do
-  if #l_0_3 < 1 or l_0_3 == nil then
-    local l_0_4 = "MAC_UNS_ADHOC_PATHS"
-    if l_0_2 then
-      (MpCommon.BmTriggerSig)(l_0_2, "BM_UnsignedOrAdhocMacBin", l_0_1)
-    end
-    if not IsKeyValuePairInRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1) then
-      AppendToRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1, 7200, 100, 0)
-      TrackPidAndTechnique(l_0_2, "T1204.002", "Execution_UserExecution_UnsignedAdhocFile")
-      return mp.INFECTED
-    end
+if #l_0_3 < 1 or l_0_3 == nil then
+  local l_0_4 = "MAC_UNS_ADHOC_PATHS"
+  if l_0_2 then
+    (MpCommon.BmTriggerSig)(l_0_2, "BM_UnsignedOrAdhocMacBin", l_0_1)
   end
+  local l_0_5 = 86400
+  if not IsKeyValuePairInRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1) then
+    AppendToRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1, l_0_5, 200, 0)
+    TrackPidAndTechnique(l_0_2, "T1204.002", "Execution_UserExecution_UnsignedAdhocFile")
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
 

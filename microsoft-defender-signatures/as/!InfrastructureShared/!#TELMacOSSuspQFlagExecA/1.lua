@@ -11,9 +11,6 @@ local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
 if l_0_1 == nil or #l_0_1 < 5 then
   return mp.CLEAN
 end
-if not (string.find)(l_0_1, "/Users/[^/]+/Downloads/", 1, false) and not (string.find)(l_0_1, "/Users/[^/]+/Documents/", 1, false) and not (string.find)(l_0_1, "/Users/[^/]+/Desktop/", 1, false) then
-  return mp.CLEAN
-end
 do
   if (macos.GetQuarantineAttr)() and IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_1)) then
     local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
