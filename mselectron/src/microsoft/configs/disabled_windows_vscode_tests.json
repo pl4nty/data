@@ -2,8 +2,5 @@
   "// Does not work in VSCode",
   "webContents module PictureInPicture video works as expected",
   "protocol module protocol.registerSchemesAsPrivileged stream successfully plays videos when content is buffered (stream: false)",
-  "protocol module protocol.registerSchemesAsPrivileged stream successfully plays videos when streaming content (stream: true)",
-
-  "// Back on the skipped test linst again. Re-added in 37.0.0-beta.4",
-  "BrowserWindow module BrowserWindow.loadURL(url) should not emit did-fail-load for a successfully loaded media file"
+  "protocol module protocol.registerSchemesAsPrivileged stream successfully plays videos when streaming content (stream: true)"
 ]
