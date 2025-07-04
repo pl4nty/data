@@ -741,6 +741,13 @@
                 "id": "aykansal.tryanon"
             }
         },
+        "azapi-vscode.azapi": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Microsoft Terraform",
+                "id": "ms-azuretools.vscode-azureterraform"
+            }
+        },
         "azsdktm.SecurityIntelliSense": true,
         "badochov.ocaml-formatter": {
             "disallowInstall": true,
@@ -999,6 +1006,13 @@
             "extension": {
                 "displayName": "OCaml Platform",
                 "id": "ocamllabs.ocaml-platform"
+            }
+        },
+        "gamunu.opentofu": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "OpenTofu (official)",
+                "id": "OpenTofu.vscode-opentofu"
             }
         },
         "gencay.vscode-chatgpt": {
@@ -1395,6 +1409,13 @@
             }
         },
         "ms-devlabs.extension-manifest-editor": true,
+        "ms-iot.vscode-ros": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Robotics Developer Environment",
+                "id": "Ranch-Hand-Robotics.rde-pack"
+            }
+        },
         "ms-kubernetes-tools.aks-devx-tools": {
             "disallowInstall": true,
             "extension": {

@@ -1433,7 +1433,8 @@
                 "https://res-1.cdn.partner.office365.cn",
                 "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
                 "https://outlook-1-cdn.azureedge.microsoft.scloud",
-                "https://petrol.office.microsoft.com"
+                "https://petrol.office.microsoft.com",
+                "https://arc.msn.com"
             ],
             "default-src": [
                 "'none'"
