@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\af4b324b28b65\1.luac 
+-- Command line: lua\!InfrastructureShared\af4b3efc22683\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -8,6 +8,10 @@ if not this_sigattrlog[28] or isnull((this_sigattrlog[28]).utf8p1) then
 end
 local l_0_0 = (MpCommon.PathToWin32Path)((this_sigattrlog[28]).utf8p1)
 if isnull(l_0_0) then
+  return mp.CLEAN
+end
+l_0_0 = (mp.ContextualExpandEnvironmentVariables)(l_0_0)
+if isnull(l_0_0) or (mp.IsKnownFriendlyFile)(l_0_0, false, true) then
   return mp.CLEAN
 end
 local l_0_1 = (bm.get_imagepath)()
