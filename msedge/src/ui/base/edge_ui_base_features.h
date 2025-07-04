@@ -553,10 +553,15 @@ BASE_DECLARE_FEATURE(kVisualRefreshKumo);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeVisualRefreshKumoEnabled(bool trigger_usage = false);
 
+#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kVisualRefreshKumoColors);
+BASE_DECLARE_FEATURE(kSemanticColorTokens);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeSemanticColorTokenEnabled(bool trigger_usage = false);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeSemanticOrPhoenixColorTokenEnabled(
+    bool trigger_usage = false);
+#endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeAIThemeUndoEnabled(bool trigger_usage = false);

@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14613614,
+    "size": 14613710,
     "file_count": 830
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32273387,
-    "file_count": 3962
+    "size": 32285124,
+    "file_count": 3963
   },
   {
     "name": "boringssl",
@@ -361,8 +361,8 @@
   },
   {
     "name": "libc++",
-    "size": 6197493,
-    "file_count": 934
+    "size": 6217533,
+    "file_count": 935
   },
   {
     "name": "libdisplay-info",
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 17204203,
+    "size": 17227243,
     "file_count": 19
   },
   {
@@ -511,8 +511,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 25037,
-    "file_count": 12
+    "size": 25601,
+    "file_count": 13
   },
   {
     "name": "oneds_sdk",
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3656060,
+    "size": 3657998,
     "file_count": 570
   },
   {
