@@ -14,31 +14,40 @@ end
 local l_0_2 = (string.gsub)(l_0_1, "[\"\'`^()+#&]", "")
 local l_0_3 = contains
 local l_0_4 = l_0_2
-do
-  local l_0_5 = {}
-  -- DECOMPILER ERROR at PC33: No list found for R5 , SetList fails
+local l_0_5 = {}
+-- DECOMPILER ERROR at PC33: No list found for R5 , SetList fails
 
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC37: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC38: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC38: Overwrote pending register: R3 in 'AssignReg'
 
-  if not l_0_3 then
-    return l_0_3
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC45: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC46: Overwrote pending register: R3 in 'AssignReg'
-
-  if l_0_3 then
-    return l_0_3
-  end
-  -- DECOMPILER ERROR at PC48: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC49: Overwrote pending register: R3 in 'AssignReg'
-
-  do return l_0_3 end
-  -- WARNING: undefined locals caused missing assignments!
+if not l_0_3 then
+  return l_0_3
 end
+-- DECOMPILER ERROR at PC40: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC43: Overwrote pending register: R6 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC44: Overwrote pending register: R7 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC45: Overwrote pending register: R8 in 'AssignReg'
+
+l_0_3, l_0_5 = l_0_3(l_0_4, l_0_5), {"join \'\');start-process ($", "net.webclient", "webhooks"}
+if not l_0_3 then
+  l_0_3 = mp
+  l_0_3 = l_0_3.CLEAN
+  return l_0_3
+end
+l_0_3 = isIEXfound
+-- DECOMPILER ERROR at PC54: Overwrote pending register: R4 in 'AssignReg'
+
+l_0_3 = l_0_3(l_0_4)
+if l_0_3 then
+  l_0_3 = mp
+  l_0_3 = l_0_3.INFECTED
+  return l_0_3
+end
+l_0_3 = mp
+l_0_3 = l_0_3.CLEAN
+return l_0_3
 
