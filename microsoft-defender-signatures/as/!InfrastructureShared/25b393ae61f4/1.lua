@@ -7,7 +7,7 @@ if IsInThirdPartySecurityPath() == true then
   return mp.CLEAN
 end
 local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and ((string.find)(l_0_0, "\\ide\\devenv.exe", 1, true) or (string.find)(l_0_0, "\\program files\\microsoft vs code\\", 1, true) or (string.find)(l_0_0, "\\program files\\microsoft visual studio\\", 1, true)) then
+if l_0_0 and ((string.find)(l_0_0, "\\ide\\devenv.exe", 1, true) or (string.find)(l_0_0, "\\program files\\microsoft vs code\\", 1, true) or (string.find)(l_0_0, "\\program files\\microsoft visual studio\\", 1, true) or (string.find)(l_0_0, "\\common files\\mcafee\\", 1, true) or (string.find)(l_0_0, "\\common files\\g data\\", 1, true)) then
   return mp.CLEAN
 end
 return mp.INFECTED
