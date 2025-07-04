@@ -509,6 +509,7 @@
         "EnableVSBSSOForPolicy": true,
         "EnableValidateIntuneEnrollmentRestriction": true,
         "EnableVirtualizationBasedSecurityFeatures": true,
+        "EnableVirtualizationBasedSecurityFeaturesForFLS": true,
         "EnableVsbSsoForFleet": true,
         "EnableWIN1124H2_250113": true,
         "EnableWaitingForPostProvisioningPluginEvent": true,
