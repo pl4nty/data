@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "FSLogix 25.06",
+    "downloadDescription": "Release focused on supporting Outlook for Windows (MSIX version)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "FSLogix_25.06.zip",
+            "url": "https://download.microsoft.com/download/a7599f72-a0b3-49a1-9ece-2f54f6557ee1/FSLogix_25.06.zip",
+            "size": "119048011",
+            "version": "3.25.626.21064",
+            "datePublished": "7/3/2025 2:14:27 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "FSLogix 25.06 provides support and functionality for Outlook for Windows (MSIX version).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.25.626.21064",
+    "detailsSection_file_name": [
+        "FSLogix_25.06.zip"
+    ],
+    "detailsSection_file_size": [
+        "113.5 MB"
+    ],
+    "detailsSection_file_date": "7/3/2025",
+    "systemRequirementsSection": "https://learn.microsoft.com/en-us/fslogix/overview-prerequisites",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "https://learn.microsoft.com/en-us/fslogix/concepts-fslogix-apps",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108248",
+    "downloadPreload": true
+}
