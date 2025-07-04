@@ -45,7 +45,6 @@
       "url": "https://sdx.microsoft.com/frx/windows-account-sync-consent/oobe",
       "urlint": "https://sdx.microsoft-int.com/frx/windows-account-sync-consent/oobe",
       "requiredFeatureName": "OobeHostPostMSAFlowMigration",
-      "supportedSignInIdentityProviders": [ "msa" ],
       "internetRequired": true,
       "skipReconnectHandler": true,
       "successID": "OobeMSAHello",
@@ -91,6 +90,7 @@
       "disableErrorPageOnFailure": true,
       "visibility": false,
       "intraWebAppVisibility": false,
+      "customProperty": "UseOobeBroker",
       "measureId": 56733616
     },
     "OobeMSANGCEnroll": {
@@ -111,6 +111,7 @@
       "disableErrorPageOnFailure": true,
       "visibility": false,
       "intraWebAppVisibility": false,
+      "customProperty": "UseOobeBroker",
       "measureId": 56733617
     },
     "OobeSnapshotCapture": {

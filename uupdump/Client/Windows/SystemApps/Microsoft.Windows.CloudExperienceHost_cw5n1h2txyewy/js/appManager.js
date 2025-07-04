@@ -1245,10 +1245,15 @@ var CloudExperienceHost;
             // If the value does not get set, TokenProviderExecutor defaults to "TokenBroker"
             var msaTicketContext = this._navigator.getNavMesh().getMsaTicketContext();
             data.msaTicketBroker = this._navigator.getNavMesh().getMsaTicketBroker() || false;
-            this._msaUIHandler.requestTicketForUrl(data, msaTicketContext, function (e, contextHeaders) {
+            this._msaUIHandler.requestTicketForUrl(data, msaTicketContext, function (e, contextHeaders, privateProperties) {
                 // Callback if there is an interrupt during this ticket request.
                 if (this._ticketRequestId === data.ticketRequestId) {
                     // Only navigate if ticket request ids are the same.
+                    if (typeof (privateProperties) !== 'undefined' && privateProperties !== null) {
+                        for (var iterator = privateProperties.first(); iterator.hasCurrent; iterator.moveNext()) {
+                            CloudExperienceHost.Storage.PrivateData.addItem(iterator.current.key, iterator.current.value);
+                        }
+                    }
                     this._navigator.setRedirectForPostTicketInterrupt(true);
                     this._onNavigate(e, contextHeaders);
                 }

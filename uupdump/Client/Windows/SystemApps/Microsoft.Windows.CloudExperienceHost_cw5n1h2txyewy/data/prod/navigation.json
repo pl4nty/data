@@ -80,7 +80,6 @@
         "start": "OobeLanguage",
         "speechCapable": true,
         "speechDisabled": true,
-        "introVideoPath": "../media/oobe-intro.mp4",
         "frameName": "oobe-light-frame",
         "personality": "CloudExperienceHost.Personality.LiteWhite",
         "narratorInstruction": true,

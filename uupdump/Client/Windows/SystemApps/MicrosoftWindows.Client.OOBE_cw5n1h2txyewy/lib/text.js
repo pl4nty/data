@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @license text 2.0.15 Copyright jQuery Foundation and other contributors.
  * Released under MIT license, http://github.com/requirejs/text/LICENSE
  */
@@ -70,7 +70,7 @@ define(['module'], function (module) {
         },
 
         createXhr: masterConfig.createXhr || function () {
-            //Would love to dump the ActiveX stuff in here. Need IE 6 to die first.
+            //Would love to dump the ActiveX crap in here. Need IE 6 to die first.
             var xhr, i, progId;
             if (typeof XMLHttpRequest !== "undefined") {
                 return new XMLHttpRequest();
@@ -384,7 +384,7 @@ define(['module'], function (module) {
 
             fileObj = new FileUtils.File(url);
 
-            //XPCOM
+            //XPCOM, you so crazy
             try {
                 inStream = Cc['@mozilla.org/network/file-input-stream;1']
                            .createInstance(Ci.nsIFileInputStream);

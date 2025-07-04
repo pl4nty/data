@@ -555,6 +555,9 @@
       <xs:attribute name="Hash" type="xs:hexBinary" use="optional" />
       <xs:attribute name="AppIDs" type="AppIdType" use="optional" />
       <xs:attribute name="FilePath" type="xs:string" use="optional" />
+      <xs:attribute name="RequireHotpatchID" type="AllowType" use="optional" />
+      <xs:attribute name="MinimumHotpatchSequence" type="xs:unsignedInt" use="optional" />
+      <xs:attribute name="MaximumHotpatchSequence" type="xs:unsignedInt" use="optional" />
     </xs:complexType>
   </xs:element>
   <!-- Deny File Rule element-->

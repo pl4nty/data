@@ -521,9 +521,6 @@ var CloudExperienceHost;
                 return WinJS.Promise.wrap(!isDeviceNPUCapable);
             }
         }
-        static resumeSnapshotCaptureAsync() {
-            return WinJS.Promise.wrap(CloudExperienceHostAPI.SnapshotCapture.resumeSnapshotCapture());
-        }
     }
     CloudExperienceHost.SnapshotCaptureConsent = SnapshotCaptureConsent;
     class FeatureStaging {
