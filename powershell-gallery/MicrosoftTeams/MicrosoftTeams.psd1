@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.1.0'
+ModuleVersion = '7.2.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -784,18 +784,9 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.1.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- Adds ThreadedChannelCreation parameter to [New|Set]-CsTeamsChannelsPolicy cmdlets.
-- Adds BroadcastPremiumApps parameter to [New|Set]-CsTeamsEventsPolicy cmdlets.
-- Adds ParticipantSlideControl parameter to [New|Set]-CsTeamsMeetingPolicy cmdlets.
-- [BREAKING CHANGE] Removes AllowPublicUsers parameter from [Set]-CsTenantFederationConfiguration cmdlet.
-- [BREAKING CHANGE] Removes EnablePublicCloudAccess parameter from [New|Set]-CsExternalAccessPolicy cmdlets.
-- Releases [New|Set|Remove|Get]-CsSharedCallQueueHistoryTemplate cmdlets.
-- Adds SharedCallQueueHistoryTemplateId parameter to [New|Set]-CsCallQueue cmdlets.
-- Releases [Get|Set|Update|Remove]-CsPhoneNumberTag cmdlets.
-- [BREAKING CHANGE] Removes DialPlan output attribute from the Get-CsOnlineUser cmdlet.
-
-
+ **7.2.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Adds EffectivePolicyAssignments attribute to Get-CsOnlineUser cmdlet. This attribute is currently supported only in commercial environments.
+- Fixes issues with AccountType parameter (SfbOnPremUser & IneligibleUser values) in the Get-CsOnlineUser cmdlet.
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes
 '@

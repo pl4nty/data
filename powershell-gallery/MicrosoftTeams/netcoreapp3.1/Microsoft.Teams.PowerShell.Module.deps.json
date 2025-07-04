@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Microsoft.Teams.PowerShell.Module/7.1.0": {
+      "Microsoft.Teams.PowerShell.Module/7.2.0": {
         "dependencies": {
           "Microsoft.NETCore.Targets": "3.1.0",
-          "Microsoft.Teams.ConfigAPI.Cmdlets": "8.603.1",
+          "Microsoft.Teams.ConfigAPI.Cmdlets": "8.630.2",
           "Microsoft.Teams.Policy.Administration": "16.17.6",
           "Microsoft.Teams.Policy.Administration.Cmdlets.OCE": "0.1.12",
-          "Microsoft.Teams.PowerShell.Connect": "1.6.5",
-          "Microsoft.Teams.PowerShell.TeamsCmdlets": "1.4.0",
+          "Microsoft.Teams.PowerShell.Connect": "1.7.1",
+          "Microsoft.Teams.PowerShell.TeamsCmdlets": "1.5.0",
           "NuGet.Build.Tasks.Pack": "5.2.0",
           "NuGet.CommandLine": "5.11.6",
           "System.Management.Automation": "6.2.7",
@@ -226,64 +226,69 @@
           }
         }
       },
-      "Microsoft.Identity.Client/4.62.0": {
+      "Microsoft.Identity.Client/4.70.1": {
         "dependencies": {
           "Microsoft.IdentityModel.Abstractions": "6.35.0",
           "System.Diagnostics.DiagnosticSource": "6.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Identity.Client.dll": {
-            "assemblyVersion": "4.62.0.0",
-            "fileVersion": "4.62.0.0"
+            "assemblyVersion": "4.70.1.0",
+            "fileVersion": "4.70.1.0"
           }
         }
       },
-      "Microsoft.Identity.Client.Broker/4.62.0": {
+      "Microsoft.Identity.Client.Broker/4.70.1": {
         "dependencies": {
-          "Microsoft.Identity.Client": "4.62.0",
-          "Microsoft.Identity.Client.NativeInterop": "0.16.1"
+          "Microsoft.Identity.Client": "4.70.1",
+          "Microsoft.Identity.Client.NativeInterop": "0.18.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Identity.Client.Broker.dll": {
-            "assemblyVersion": "4.62.0.0",
-            "fileVersion": "4.62.0.0"
+            "assemblyVersion": "4.70.1.0",
+            "fileVersion": "4.70.1.0"
           }
         }
       },
-      "Microsoft.Identity.Client.Desktop/4.62.0": {
+      "Microsoft.Identity.Client.Desktop/4.70.1": {
         "dependencies": {
-          "Microsoft.Identity.Client": "4.62.0",
-          "Microsoft.Identity.Client.Broker": "4.62.0",
+          "Microsoft.Identity.Client": "4.70.1",
+          "Microsoft.Identity.Client.Broker": "4.70.1",
           "Microsoft.Web.WebView2": "1.0.864.35"
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Identity.Client.Desktop.dll": {
-            "assemblyVersion": "4.62.0.0",
-            "fileVersion": "4.62.0.0"
+            "assemblyVersion": "4.70.1.0",
+            "fileVersion": "4.70.1.0"
           }
         }
       },
-      "Microsoft.Identity.Client.Extensions.Msal/4.62.0": {
+      "Microsoft.Identity.Client.Extensions.Msal/4.70.1": {
         "dependencies": {
-          "Microsoft.Identity.Client": "4.62.0",
+          "Microsoft.Identity.Client": "4.70.1",
           "System.IO.FileSystem.AccessControl": "5.0.0",
           "System.Security.Cryptography.ProtectedData": "7.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
-            "assemblyVersion": "4.62.0.0",
-            "fileVersion": "4.62.0.0"
+            "assemblyVersion": "4.70.1.0",
+            "fileVersion": "4.70.1.0"
           }
         }
       },
-      "Microsoft.Identity.Client.NativeInterop/0.16.1": {
+      "Microsoft.Identity.Client.NativeInterop/0.18.1": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Identity.Client.NativeInterop.dll": {
-            "assemblyVersion": "0.16.1.0",
-            "fileVersion": "0.16.1.0"
+            "assemblyVersion": "0.18.1.0",
+            "fileVersion": "0.18.1.0"
           }
         },
         "runtimeTargets": {
+          "runtimes/linux-x64/native/libmsalruntime.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
           "runtimes/win-arm64/native/msalruntime_arm64.dll": {
             "rid": "win-arm64",
             "assetType": "native",
@@ -817,19 +822,19 @@
           }
         }
       },
-      "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.1.7": {
+      "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.2": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "PowerShellStandard.Library": "5.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Teams.ConfigAPI.CmdletHostContract.dll": {
-            "assemblyVersion": "3.1.7.0",
-            "fileVersion": "3.1.7.0"
+            "assemblyVersion": "3.2.2.0",
+            "fileVersion": "3.2.2.0"
           }
         }
       },
-      "Microsoft.Teams.ConfigAPI.Cmdlets/8.603.1": {},
+      "Microsoft.Teams.ConfigAPI.Cmdlets/8.630.2": {},
       "Microsoft.Teams.Policy.Administration/16.17.6": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Teams.Policy.Administration.Cmdlets.Core.dll": {
@@ -865,7 +870,7 @@
       "Microsoft.Teams.Policy.Administration.Cmdlets.OCE/0.1.12": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.1.7",
+          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.2.2",
           "Microsoft.Teams.Policy.Administration.Configurations": "12.2.29",
           "Newtonsoft.Json": "13.0.3",
           "System.Net.Http": "4.3.4"
@@ -882,17 +887,17 @@
           "Microsoft.Extensions.Configuration": "8.0.0"
         }
       },
-      "Microsoft.Teams.PowerShell.Connect/1.6.5": {
+      "Microsoft.Teams.PowerShell.Connect/1.7.1": {
         "dependencies": {
           "Microsoft.Applications.Events.Server": "1.1.2.97",
           "Microsoft.Ic3.TenantAdminApi.Common.Helper": "1.0.28",
-          "Microsoft.Identity.Client": "4.62.0",
-          "Microsoft.Identity.Client.Broker": "4.62.0",
-          "Microsoft.Identity.Client.Desktop": "4.62.0",
-          "Microsoft.Identity.Client.Extensions.Msal": "4.62.0",
+          "Microsoft.Identity.Client": "4.70.1",
+          "Microsoft.Identity.Client.Broker": "4.70.1",
+          "Microsoft.Identity.Client.Desktop": "4.70.1",
+          "Microsoft.Identity.Client.Extensions.Msal": "4.70.1",
           "Microsoft.Rest.ClientRuntime": "2.3.21",
           "Microsoft.Rest.ClientRuntime.Azure": "3.3.19",
-          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.1.7",
+          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.2.2",
           "Newtonsoft.Json": "13.0.3",
           "OneCollectorChannel": "1.1.0.234",
           "System.IdentityModel.Tokens.Jwt": "6.8.0",
@@ -902,8 +907,8 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.TeamsCmdlets.PowerShell.Connect.dll": {
-            "assemblyVersion": "1.6.5.0",
-            "fileVersion": "1.6.5.0"
+            "assemblyVersion": "1.7.1.0",
+            "fileVersion": "1.7.1.0"
           },
           "lib/netcoreapp3.1/Microsoft.Web.WebView2.Core.dll": {
             "assemblyVersion": "1.0.864.35",
@@ -955,9 +960,9 @@
           }
         }
       },
-      "Microsoft.Teams.PowerShell.TeamsCmdlets/1.4.0": {
+      "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.0": {
         "dependencies": {
-          "Microsoft.Teams.PowerShell.Connect": "1.6.5",
+          "Microsoft.Teams.PowerShell.Connect": "1.7.1",
           "Newtonsoft.Json": "13.0.3",
           "Polly": "7.2.4",
           "Polly.Contrib.WaitAndRetry": "1.1.1",
@@ -966,8 +971,8 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Teams.PowerShell.TeamsCmdlets.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/netcoreapp3.1/Polly.Contrib.WaitAndRetry.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -2056,7 +2061,7 @@
     }
   },
   "libraries": {
-    "Microsoft.Teams.PowerShell.Module/7.1.0": {
+    "Microsoft.Teams.PowerShell.Module/7.2.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2166,40 +2171,40 @@
       "path": "microsoft.ic3.tenantadminapi.common.helper/1.0.28",
       "hashPath": "microsoft.ic3.tenantadminapi.common.helper.1.0.28.nupkg.sha512"
     },
-    "Microsoft.Identity.Client/4.62.0": {
+    "Microsoft.Identity.Client/4.70.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2q5m8ASh9lJ714CkCxA1lmj60K6OeDR2vV78adviOM/ZEoISldY+THr7gmqJ6rtSbZ0J4R/a9KcgL/wm8Ogi4Q==",
-      "path": "microsoft.identity.client/4.62.0",
-      "hashPath": "microsoft.identity.client.4.62.0.nupkg.sha512"
+      "sha512": "sha512-kF80oiTQ/tMIIZ96zOxsd/mM1htYjIDYQENz/UdQq9aa45G1y/4u0TvX9PBrjXk1bH0N8h2jyzNJ6aD27nLsmw==",
+      "path": "microsoft.identity.client/4.70.1",
+      "hashPath": "microsoft.identity.client.4.70.1.nupkg.sha512"
     },
-    "Microsoft.Identity.Client.Broker/4.62.0": {
+    "Microsoft.Identity.Client.Broker/4.70.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-D5iSJglKXJzeCb2/UAPGVkqRLHk6512iojDoyjEeLi8e89jE3QZykIVkkZNkFpuVXsVebyrkA87YHr+DJOvvUQ==",
-      "path": "microsoft.identity.client.broker/4.62.0",
-      "hashPath": "microsoft.identity.client.broker.4.62.0.nupkg.sha512"
+      "sha512": "sha512-Jo4kXK3po/YJVja8Z5BQSlxctNG55UWQryOSdfLFx3eW0Du/NVvjxnlsc5VK3cosMJ4mcV+kUTk4pU6hMCBc6w==",
+      "path": "microsoft.identity.client.broker/4.70.1",
+      "hashPath": "microsoft.identity.client.broker.4.70.1.nupkg.sha512"
     },
-    "Microsoft.Identity.Client.Desktop/4.62.0": {
+    "Microsoft.Identity.Client.Desktop/4.70.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NGDgwgha/t4HHoFMgcgNl+yICCWCGOOwLbE8sP6Xd9Rr6dryc8Z1qifPd7zSoLQxo3w0ghBCLARywptGPtoFjQ==",
-      "path": "microsoft.identity.client.desktop/4.62.0",
-      "hashPath": "microsoft.identity.client.desktop.4.62.0.nupkg.sha512"
+      "sha512": "sha512-MHZbPjzBiDcp1k3wXfcaTPhpZTinB1CKYE+IhjNQU69Z7aP3qEF7uZyBplAfDaxYmF5i17KGNWoBhMLzcXRqgg==",
+      "path": "microsoft.identity.client.desktop/4.70.1",
+      "hashPath": "microsoft.identity.client.desktop.4.70.1.nupkg.sha512"
     },
-    "Microsoft.Identity.Client.Extensions.Msal/4.62.0": {
+    "Microsoft.Identity.Client.Extensions.Msal/4.70.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ylCHQwNpT+YYu4Le+r0x5XRHKsFtIgIIAHshDWIlgeA/AoFs/9yREdtSeIELdN7X3lJAIiUjJR8z7r7KJ3ETLw==",
-      "path": "microsoft.identity.client.extensions.msal/4.62.0",
-      "hashPath": "microsoft.identity.client.extensions.msal.4.62.0.nupkg.sha512"
+      "sha512": "sha512-BcHpwvQrqccR/n2Q6wpr63wglWoVg54rXEtV0dah6tZiUpdX5Ull8d3/R63Jlc+YH2TN0bf+GpuNP83MI/V1aw==",
+      "path": "microsoft.identity.client.extensions.msal/4.70.1",
+      "hashPath": "microsoft.identity.client.extensions.msal.4.70.1.nupkg.sha512"
     },
-    "Microsoft.Identity.Client.NativeInterop/0.16.1": {
+    "Microsoft.Identity.Client.NativeInterop/0.18.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OvY/+/AHESi24f5zOCf9kL4HXwPxXVQ3A+tMQsJvFk2DmP+sc88FYWL49zlku5q0bvx5yFvBLNpHQeRT9a6A5g==",
-      "path": "microsoft.identity.client.nativeinterop/0.16.1",
-      "hashPath": "microsoft.identity.client.nativeinterop.0.16.1.nupkg.sha512"
+      "sha512": "sha512-oMkIwj4ugqOiGFkMWl/OUG/ndB1cYE5ZNhX+J4Jrj7ojT+lmBCBYcajLpvztIO+Is2Eo6qJxSsFLrCUo4UiCrg==",
+      "path": "microsoft.identity.client.nativeinterop/0.18.1",
+      "hashPath": "microsoft.identity.client.nativeinterop.0.18.1.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Abstractions/6.35.0": {
       "type": "package",
@@ -2278,19 +2283,19 @@
       "path": "microsoft.rest.clientruntime.azure/3.3.19",
       "hashPath": "microsoft.rest.clientruntime.azure.3.3.19.nupkg.sha512"
     },
-    "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.1.7": {
+    "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/cTXQrzM7r98xT6hVvaKLhoeiSrQko5J3j7wwNnhTInkhtRy+Faf4Tj8/7RLheIKoEDQVLcBiVoNfh2ja8xUqA==",
-      "path": "microsoft.teams.configapi.cmdlethostcontract/3.1.7",
-      "hashPath": "microsoft.teams.configapi.cmdlethostcontract.3.1.7.nupkg.sha512"
+      "sha512": "sha512-nan6Z+IyQB8L6jHz9cL+XdLeiXOdDqMXI8QwNu0Mfnhe/xKIHTDP3WiAPgHmTAZtl0ocxj+oDs0xuM9mDpxZ/g==",
+      "path": "microsoft.teams.configapi.cmdlethostcontract/3.2.2",
+      "hashPath": "microsoft.teams.configapi.cmdlethostcontract.3.2.2.nupkg.sha512"
     },
-    "Microsoft.Teams.ConfigAPI.Cmdlets/8.603.1": {
+    "Microsoft.Teams.ConfigAPI.Cmdlets/8.630.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FrUQKsPxjYLflBiW30HcYpSzt5jzkHBuaH8amagjkwJsdJtYyALtihBi2sOEVwAAsYU7X7TK9FPji7gDzpmObQ==",
-      "path": "microsoft.teams.configapi.cmdlets/8.603.1",
-      "hashPath": "microsoft.teams.configapi.cmdlets.8.603.1.nupkg.sha512"
+      "sha512": "sha512-RKtsgICsZchbU7tIVRQgERdrHxM8hk7DlEpeADw8ysatVjdLeFigwwgWp9kGNWYarNtn7Cqvg6kqh+K/qL9r3g==",
+      "path": "microsoft.teams.configapi.cmdlets/8.630.2",
+      "hashPath": "microsoft.teams.configapi.cmdlets.8.630.2.nupkg.sha512"
     },
     "Microsoft.Teams.Policy.Administration/16.17.6": {
       "type": "package",
@@ -2313,19 +2318,19 @@
       "path": "microsoft.teams.policy.administration.configurations/12.2.29",
       "hashPath": "microsoft.teams.policy.administration.configurations.12.2.29.nupkg.sha512"
     },
-    "Microsoft.Teams.PowerShell.Connect/1.6.5": {
+    "Microsoft.Teams.PowerShell.Connect/1.7.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jYZA+86krTqOr11uN6VCBlCGqvCpY36KJKMPqbV3GWVqOhuH04E2LDnBoGqUfu2Mg40OBwDc+PehjkftJ7h4BQ==",
-      "path": "microsoft.teams.powershell.connect/1.6.5",
-      "hashPath": "microsoft.teams.powershell.connect.1.6.5.nupkg.sha512"
+      "sha512": "sha512-9briYH6fLFAgdWuuWHqnmq98VmZP+Du2aPhsPpWbj6nt0Eey4Dtry/jqx+fKUaJewDrI5KMrw93vFlF0TClITA==",
+      "path": "microsoft.teams.powershell.connect/1.7.1",
+      "hashPath": "microsoft.teams.powershell.connect.1.7.1.nupkg.sha512"
     },
-    "Microsoft.Teams.PowerShell.TeamsCmdlets/1.4.0": {
+    "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-14q3EfpftKDtCGKsQz41KrLciVXgEAhvPfLC5bAlD+DVWRzO8S+p6duKJa8K1B9zKDpPnHPcv5eUiJBbScCNSQ==",
-      "path": "microsoft.teams.powershell.teamscmdlets/1.4.0",
-      "hashPath": "microsoft.teams.powershell.teamscmdlets.1.4.0.nupkg.sha512"
+      "sha512": "sha512-0c+VeYXVEd0OB3g1SQ2EzKCEpccbi/XZ5yBCduqyy9c9476rmceWAeZP4gkkpOJEwA6YX+7T+z2NCL+ZMXk4mg==",
+      "path": "microsoft.teams.powershell.teamscmdlets/1.5.0",
+      "hashPath": "microsoft.teams.powershell.teamscmdlets.1.5.0.nupkg.sha512"
     },
     "Microsoft.Web.WebView2/1.0.864.35": {
       "type": "package",

@@ -11486,14 +11486,19 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>FederatedBilateralChats</maml:name>
           <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
             <maml:para>This setting enables bi-lateral chats for the users included in the messaging policy.</maml:para>
+            <maml:para>Some organizations may want to restrict who users are able to message in Teams. While organizations have always been able to limit users' chats to only other internal users, organizations can now limit users' chat ability to only chat with other internal users and users in one other organization via the bilateral chat policy. </maml:para>
+            <maml:para>Once external access and bilateral policy is set up, users with the policy can be in external group chats only with a maximum of two organizations. When they try to create a new external chat with users from more than two tenants or add a user from a third tenant to an existing external chat, a system message will be shown preventing this action. </maml:para>
+            <maml:para>Users with bilateral policy applied are also removed from existing external group chats with more than two organizations.</maml:para>
+            <maml:para>This policy doesn't apply to meetings, meeting chats, or channels.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
             <maml:name>Boolean</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>True</dev:defaultValue>
+          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Force</maml:name>
@@ -11752,14 +11757,19 @@ Tag:wld-policy2                           False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>FederatedBilateralChats</maml:name>
         <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
           <maml:para>This setting enables bi-lateral chats for the users included in the messaging policy.</maml:para>
+          <maml:para>Some organizations may want to restrict who users are able to message in Teams. While organizations have always been able to limit users' chats to only other internal users, organizations can now limit users' chat ability to only chat with other internal users and users in one other organization via the bilateral chat policy. </maml:para>
+          <maml:para>Once external access and bilateral policy is set up, users with the policy can be in external group chats only with a maximum of two organizations. When they try to create a new external chat with users from more than two tenants or add a user from a third tenant to an existing external chat, a system message will be shown preventing this action. </maml:para>
+          <maml:para>Users with bilateral policy applied are also removed from existing external group chats with more than two organizations.</maml:para>
+          <maml:para>This policy doesn't apply to meetings, meeting chats, or channels.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
           <maml:name>Boolean</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>True</dev:defaultValue>
+        <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Force</maml:name>
@@ -19834,6 +19844,23 @@ Tag:Test Enabled</dev:code>
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ParticipantSlideControl</maml:name>
+          <maml:description>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+            <maml:para>Determines whether participants can give control of presentation slides during meetings scheduled by this user. Set the type of users you want to be able to give control and be given control of presentation slides in meetings. Users excluded from the selected group will be prohibited from giving control, or being given control, in a meeting.</maml:para>
+            <maml:para>Possible Values: - Everyone: Anyone in the meeting can give or take control</maml:para>
+            <maml:para>- EveryoneInOrganization: Only internal AAD users and Multi-Tenant Organization (MTO) users can give or take control</maml:para>
+            <maml:para>- EveryoneInOrganizationAndGuests: Only those who are Guests to the tenant, MTO users, and internal AAD users can give or take control</maml:para>
+            <maml:para>- None: No one in the meeting can give or take control</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
           <maml:name>WhatIf</maml:name>
           <maml:description>
@@ -21195,6 +21222,23 @@ Tag:Test Enabled</dev:code>
           <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
           <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
           <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ParticipantSlideControl</maml:name>
+        <maml:description>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+          <maml:para>Determines whether participants can give control of presentation slides during meetings scheduled by this user. Set the type of users you want to be able to give control and be given control of presentation slides in meetings. Users excluded from the selected group will be prohibited from giving control, or being given control, in a meeting.</maml:para>
+          <maml:para>Possible Values: - Everyone: Anyone in the meeting can give or take control</maml:para>
+          <maml:para>- EveryoneInOrganization: Only internal AAD users and Multi-Tenant Organization (MTO) users can give or take control</maml:para>
+          <maml:para>- EveryoneInOrganizationAndGuests: Only those who are Guests to the tenant, MTO users, and internal AAD users can give or take control</maml:para>
+          <maml:para>- None: No one in the meeting can give or take control</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -30441,14 +30485,19 @@ At line:1 char:1
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>FederatedBilateralChats</maml:name>
           <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
             <maml:para>This setting enables bi-lateral chats for the users included in the messaging policy.</maml:para>
+            <maml:para>Some organizations may want to restrict who users are able to message in Teams. While organizations have always been able to limit users' chats to only other internal users, organizations can now limit users' chat ability to only chat with other internal users and users in one other organization via the bilateral chat policy. </maml:para>
+            <maml:para>Once external access and bilateral policy is set up, users with the policy can be in external group chats only with a maximum of two organizations. When they try to create a new external chat with users from more than two tenants or add a user from a third tenant to an existing external chat, a system message will be shown preventing this action. </maml:para>
+            <maml:para>Users with bilateral policy applied are also removed from existing external group chats with more than two organizations.</maml:para>
+            <maml:para>This policy doesn't apply to meetings, meeting chats, or channels.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
             <maml:name>Boolean</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>True</dev:defaultValue>
+          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Force</maml:name>
@@ -30703,14 +30752,19 @@ At line:1 char:1
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>FederatedBilateralChats</maml:name>
         <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
           <maml:para>This setting enables bi-lateral chats for the users included in the messaging policy.</maml:para>
+          <maml:para>Some organizations may want to restrict who users are able to message in Teams. While organizations have always been able to limit users' chats to only other internal users, organizations can now limit users' chat ability to only chat with other internal users and users in one other organization via the bilateral chat policy. </maml:para>
+          <maml:para>Once external access and bilateral policy is set up, users with the policy can be in external group chats only with a maximum of two organizations. When they try to create a new external chat with users from more than two tenants or add a user from a third tenant to an existing external chat, a system message will be shown preventing this action. </maml:para>
+          <maml:para>Users with bilateral policy applied are also removed from existing external group chats with more than two organizations.</maml:para>
+          <maml:para>This policy doesn't apply to meetings, meeting chats, or channels.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
           <maml:name>Boolean</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>True</dev:defaultValue>
+        <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Force</maml:name>
@@ -41933,6 +41987,23 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ParticipantSlideControl</maml:name>
+          <maml:description>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+            <maml:para>Determines whether participants can give control of presentation slides during meetings scheduled by this user. Set the type of users you want to be able to give control and be given control of presentation slides in meetings. Users excluded from the selected group will be prohibited from giving control, or being given control, in a meeting.</maml:para>
+            <maml:para>Possible Values: - Everyone: Anyone in the meeting can give or take control</maml:para>
+            <maml:para>- EveryoneInOrganization: Only internal AAD users and Multi-Tenant Organization (MTO) users can give or take control</maml:para>
+            <maml:para>- EveryoneInOrganizationAndGuests: Only those who are Guests to the tenant, MTO users, and internal AAD users can give or take control</maml:para>
+            <maml:para>- None: No one in the meeting can give or take control</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
           <maml:name>WhatIf</maml:name>
           <maml:description>
@@ -43299,6 +43370,23 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:para>Allows users to use real time text during a meeting, allowing them to communicate by typing their messages in real time.</maml:para>
           <maml:para>Possible Values: - Enabled: User is allowed to turn on real time text.</maml:para>
           <maml:para>- Disabled: User is not allowed to turn on real time text.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Enabled</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ParticipantSlideControl</maml:name>
+        <maml:description>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
+          <maml:para>Determines whether participants can give control of presentation slides during meetings scheduled by this user. Set the type of users you want to be able to give control and be given control of presentation slides in meetings. Users excluded from the selected group will be prohibited from giving control, or being given control, in a meeting.</maml:para>
+          <maml:para>Possible Values: - Everyone: Anyone in the meeting can give or take control</maml:para>
+          <maml:para>- EveryoneInOrganization: Only internal AAD users and Multi-Tenant Organization (MTO) users can give or take control</maml:para>
+          <maml:para>- EveryoneInOrganizationAndGuests: Only those who are Guests to the tenant, MTO users, and internal AAD users can give or take control</maml:para>
+          <maml:para>- None: No one in the meeting can give or take control</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>

@@ -5357,7 +5357,7 @@ function Get-CsOnlinePowerShellEndpoint {
 param(
     [Parameter(Mandatory)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
-    [Microsoft.Teams.ConfigAPI.CmdletHostContract.Fqdn]
+    [Microsoft.Teams.ConfigAPI.CmdletHostContract.ConfigApiAutoDForestProvider+Fqdn]
     ${TargetDomain},
 
     [Parameter(ParameterSetName='OverrideDiscoveryUri')]

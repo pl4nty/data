@@ -1980,6 +1980,66 @@
             Model for import hierarchy operation status comming from Teams Hierarchy service.
             </summary>
         </member>
+        <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.HierarchyServiceOperationStatus">
+            <summary>
+            Enum for the long running operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.HierarchyServiceOperationStatus.NotStarted">
+            <summary>
+            Not Started Graph Long Running Operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.HierarchyServiceOperationStatus.Running">
+            <summary>
+            Running Graph Long Running Operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.HierarchyServiceOperationStatus.Succeeded">
+            <summary>
+            Succeeded Graph Long Running Operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.HierarchyServiceOperationStatus.Failed">
+            <summary>
+            Failed Graph Long Running Operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.HierarchyServiceOperationStatus.UnknownFutureValue">
+            <summary>
+            Unknown Graph Long Running Operation status.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.RetailOperationStatus">
+            <summary>
+            Enum for the retail operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.RetailOperationStatus.Starting">
+            <summary>
+            Starting Retail Operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.RetailOperationStatus.Ingesting">
+            <summary>
+            Ingesting Retail Operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.RetailOperationStatus.Successful">
+            <summary>
+            Successful Retail Operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.RetailOperationStatus.Failed">
+            <summary>
+            Failed Graph Long Running Operation status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.RetailOperationStatus.Unknown">
+            <summary>
+            Unknown Graph Long Running Operation status.
+            </summary>
+        </member>
         <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.TemplateType">
             <summary>
             Template
