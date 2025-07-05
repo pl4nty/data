@@ -921,6 +921,7 @@
         "FlightingDetector": true,
         "FlightingDisableDefaultOutboundForImageSubnet": true,
         "FlightingEnableNATGWAsOutboundAccess": true,
+        "FlightingEnableNATGWMigration": true,
         "FlightingEnableOutboundDecisionEngineResult": true,
         "FlightingEnableZonalNATGateway": true,
         "FlightingForBackfillHOBOTagForVnetAndNSG": true,
