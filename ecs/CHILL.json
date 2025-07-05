@@ -1021,6 +1021,64 @@
                 "Type": 4
             }
         },
+        "Floodgate_Campaign_VivaGlint.ee5c145f-0f6a-4c42-9a5b-b9b2160fc76d": {
+            "CampaignId": "ee5c145f-0f6a-4c42-9a5b-b9b2160fc76d",
+            "EndTimeUtc": "2025-08-03T12:33:04Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 86400,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2023-10-27T04:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "FPSReportStart",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "Content": {
+                    "Prompt": {
+                        "NoLabel": "Not now",
+                        "Question": "We have just two questions for you.",
+                        "Title": "We'd love your feedback!",
+                        "YesLabel": "Sure"
+                    },
+                    "Question": {
+                        "Question": "Please tell us more. Why did you choose that answer?"
+                    },
+                    "Rating": {
+                        "IsZeroBased": false,
+                        "Question": "How satisfied are you with viewing a report?",
+                        "RatingValuesAscending": [
+                            "1 - Very unsatisfied",
+                            "2",
+                            "3",
+                            "4",
+                            "5 - Very satisfied"
+                        ]
+                    }
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2
+            }
+        },
         "Floodgate_Campaign_VivaGlint.fb84830a-f4c4-4312-a8ee-781e174a0ad7": {
             "CampaignId": "fb84830a-f4c4-4312-a8ee-781e174a0ad7",
             "EndTimeUtc": "2025-09-02T04:00:00Z",
