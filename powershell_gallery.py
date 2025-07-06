@@ -17,6 +17,7 @@ MODULES = [
     'Lenovo.Client.Scripting',
     'DeliveryOptimizationTroubleshooter',
     'SignatureDownloadCustomTask', # Defender offline signatures
+    'WhiteboardAdmin',
 
     # HP
     'HPCMSL',
