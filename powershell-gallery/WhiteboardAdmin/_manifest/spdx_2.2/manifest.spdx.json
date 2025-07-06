@@ -1,0 +1,181 @@
+{
+  "files": [
+    {
+      "fileName": "./packages/Microsoft.Identity.Client.4.44.0/lib/net45/Microsoft.Identity.Client.dll",
+      "SPDXID": "SPDXRef-File--packages-Microsoft.Identity.Client.4.44.0-lib-net45-Microsoft.Identity.Client.dll-BBFC0645C3428475C97FB583BB531F5B170CAB66",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8afd66c1705fc9122ce64a23def5c6c592a8edcfba3ab745998bde6741c41bbe"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bbfc0645c3428475c97fb583bb531f5b170cab66"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./WhiteboardAdmin.psm1",
+      "SPDXID": "SPDXRef-File--WhiteboardAdmin.psm1-3ECECE19EEB68A2E1C56E517D45FA76BD54DB178",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "55f909111618ec930e966f32055d973f563d83f5112eb8a4311f9aec212c5ccd"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3ecece19eeb68a2e1c56e517d45fa76bd54db178"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./WhiteboardAdmin.psd1",
+      "SPDXID": "SPDXRef-File--WhiteboardAdmin.psd1-3B5D1FBCF33BC3B7D8CD1F92912B01486728A165",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9d069669221264ded1adc6df6564460eeca58dc45cde463da6dc90d815c6062e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3b5d1fbcf33bc3b7d8cd1f92912b01486728a165"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./packages/Microsoft.Identity.Client.4.44.0/lib/net45/Microsoft.Identity.Client.xml",
+      "SPDXID": "SPDXRef-File--packages-Microsoft.Identity.Client.4.44.0-lib-net45-Microsoft.Identity.Client.xml-E7B3BEC45F62DE9962024E8B3430B2728E154056",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e00360a35096b676d48a0c8a7fe80645ac0d8c8ae876c8e02aab0607dbe54d9f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e7b3bec45f62de9962024e8b3430b2728e154056"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "packages": [
+    {
+      "name": "Microsoft.Identity.Client",
+      "SPDXID": "SPDXRef-Package-A2326A08518E45A2390BA5BBD3BC5FB145479CDBE39668CA81F7957A6ED25DD0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "4.44.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Microsoft.Identity.Client@4.44.0"
+        }
+      ],
+      "supplier": "Organization: Microsoft"
+    },
+    {
+      "name": "Azure Pipelines Hosted Image win22",
+      "SPDXID": "SPDXRef-Package-D793AA95E8208211EE45C57599842E37474CCA81E1DD357B862EC7BDB3C80855",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "20250420.1.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "https://github.com/actions/virtual-environments"
+        }
+      ],
+      "supplier": "Organization: Microsoft/GitHub"
+    },
+    {
+      "name": "services-tools",
+      "SPDXID": "SPDXRef-RootPackage",
+      "downloadLocation": "NOASSERTION",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "ed3fdf6983dfa8e8c55a35689d56d408006487a6"
+      },
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "680077",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:swid/Microsoft/sbom.microsoft/services-tools@680077?tag_id=47655d30-f426-4558-b5e7-87e8310933b5"
+        }
+      ],
+      "supplier": "Organization: Microsoft",
+      "hasFiles": [
+        "SPDXRef-File--packages-Microsoft.Identity.Client.4.44.0-lib-net45-Microsoft.Identity.Client.dll-BBFC0645C3428475C97FB583BB531F5B170CAB66",
+        "SPDXRef-File--WhiteboardAdmin.psd1-3B5D1FBCF33BC3B7D8CD1F92912B01486728A165",
+        "SPDXRef-File--packages-Microsoft.Identity.Client.4.44.0-lib-net45-Microsoft.Identity.Client.xml-E7B3BEC45F62DE9962024E8B3430B2728E154056",
+        "SPDXRef-File--WhiteboardAdmin.psm1-3ECECE19EEB68A2E1C56E517D45FA76BD54DB178"
+      ]
+    }
+  ],
+  "externalDocumentRefs": [],
+  "relationships": [
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-D793AA95E8208211EE45C57599842E37474CCA81E1DD357B862EC7BDB3C80855",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-A2326A08518E45A2390BA5BBD3BC5FB145479CDBE39668CA81F7957A6ED25DD0",
+      "spdxElementId": "SPDXRef-RootPackage"
+    }
+  ],
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "services-tools 680077",
+  "documentNamespace": "https://sbom.microsoft/1:K7IFStlWFUCE6zVug8yWyg:zUZDBP0ynUe6UuKcYdz1Tw/848:680077/c7gxPPnhfkywKLR3Hle3Dw",
+  "creationInfo": {
+    "created": "2025-06-11T12:57:27Z",
+    "creators": [
+      "Organization: Microsoft",
+      "Tool: Microsoft.SBOMTool-4.0.3"
+    ]
+  },
+  "documentDescribes": [
+    "SPDXRef-RootPackage"
+  ]
+}
