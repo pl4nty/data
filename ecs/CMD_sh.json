@@ -53,6 +53,7 @@
         "CogsV2GraphStopAPI": true,
         "CogsV2PrestartWorkflowCreation": true,
         "CogsV2WorkflowHostConnectDisconnectSignalIngestion": true,
+        "CogsV2WorkflowHostFlexHibernateEnabled": true,
         "CogsV2WorkflowHostFlexStartEnabled": true,
         "CogsV2WorkflowHostWorkspaceNotificationActions": true,
         "CollectVnetAdditionalDetailEnabled": true,
