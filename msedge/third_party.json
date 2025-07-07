@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2082132,
+    "size": 2083569,
     "file_count": 178
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32285124,
-    "file_count": 3963
+    "size": 32290408,
+    "file_count": 3962
   },
   {
     "name": "boringssl",
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17965028,
+    "size": 17965069,
     "file_count": 1009
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "name": "crossbench",
-    "size": 170577,
+    "size": 170568,
     "file_count": 2
   },
   {
@@ -636,7 +636,7 @@
   },
   {
     "name": "skia",
-    "size": 3461610,
+    "size": 3460498,
     "file_count": 1178
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6209614,
+    "size": 6206027,
     "file_count": 175
   },
   {
