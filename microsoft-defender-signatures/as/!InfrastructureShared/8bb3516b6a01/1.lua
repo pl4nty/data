@@ -9,7 +9,7 @@ do
     if IsExcludedByCmdlineMacOS((this_sigattrlog[2]).utf8p2) or IsExcludedByImagePathMacOS((this_sigattrlog[2]).utf8p1) then
       return mp.CLEAN
     end
-    if SuspMacPathsToMonitor(l_0_0, true) and IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_0)) then
+    if SuspMacPathsToMonitor(l_0_0, true) and IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_0) then
       (bm.add_related_string)("created_process", l_0_0, bm.RelatedStringBMReport)
       return mp.INFECTED
     end

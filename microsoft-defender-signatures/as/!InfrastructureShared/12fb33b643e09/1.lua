@@ -36,9 +36,9 @@ do
           if GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_8) ~= nil and #GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_8) > 0 then
             for l_0_13,l_0_14 in ipairs(GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_8)) do
               local l_0_10, l_0_11 = nil
-              -- DECOMPILER ERROR at PC113: Confused about usage of register: R9 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC111: Confused about usage of register: R9 in 'UnsetPending'
 
-              if (string.lower)(R9_PC113) == l_0_9 then
+              if R9_PC111 == l_0_9 then
                 TrackPidAndTechniqueBM("BM", "T1036.004", "DefenseEvasion_Masquerading_TaskOrService_Mac")
                 ;
                 (mp.set_mpattribute)("DefenseEvasion_Masquerading_TaskOrService_Mac")

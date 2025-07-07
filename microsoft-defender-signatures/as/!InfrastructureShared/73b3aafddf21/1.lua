@@ -19,7 +19,7 @@ if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil or (th
   return mp.CLEAN
 end
 local l_0_3 = (this_sigattrlog[2]).utf8p1
-if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_2)) then
+if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_2) then
   (bm.trigger_sig)("MacSuspDecoyDownload", l_0_3)
   TrackPidAndTechniqueBM("BM", "T1036.008", "DefenseEvasion_Masquerading_DecoyDownload")
   return mp.INFECTED

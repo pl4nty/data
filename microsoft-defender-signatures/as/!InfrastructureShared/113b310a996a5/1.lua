@@ -12,7 +12,7 @@ end
 if not SuspMacPathsToMonitor(l_0_1, true) then
   return mp.CLEAN
 end
-if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_1)) then
+if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_1) then
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -21,7 +21,7 @@ if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and (this
 else
   return mp.CLEAN
 end
-if (string.lower)(l_0_3) == l_0_4 and SuspMacPathsToMonitor(l_0_4, true) then
+if l_0_3 == l_0_4 and SuspMacPathsToMonitor(l_0_4, true) then
   return mp.INFECTED
 end
 return mp.CLEAN

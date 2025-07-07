@@ -12,7 +12,7 @@ end
 -- DECOMPILER ERROR at PC47: Overwrote pending register: R0 in 'AssignReg'
 
 local l_0_0 = nil
-if SuspMacPathsToMonitor(l_0_0, true) and IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_0)) then
+if SuspMacPathsToMonitor(l_0_0, true) and IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_0) then
   return mp.INFECTED
 end
 return mp.CLEAN

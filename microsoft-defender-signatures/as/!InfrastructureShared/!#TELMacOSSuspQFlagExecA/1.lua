@@ -12,7 +12,7 @@ if l_0_1 == nil or #l_0_1 < 5 then
   return mp.CLEAN
 end
 do
-  if (macos.GetQuarantineAttr)() and IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_1)) then
+  if (macos.GetQuarantineAttr)() and IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_1) then
     local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
     if l_0_2 then
       TrackPidAndTechnique(l_0_2, "T1204.002", "Execution_UserExecution_UnsignedDownloadedFile")

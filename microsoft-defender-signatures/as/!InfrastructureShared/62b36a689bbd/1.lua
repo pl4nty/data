@@ -14,17 +14,17 @@ do
   if l_0_0 == nil then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC26: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC34: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC47: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC59: Confused about usage of register: R0 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC56: Confused about usage of register: R0 in 'UnsetPending'
 
-  if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_0)) and (SuspMacPathsToMonitor(l_0_0, true) or (string.find)(l_0_0, "/Users/[^/]+/Downloads/", 1, false) or (string.find)(l_0_0, "/Users/[^/]+/Documents/", 1, false) or (string.find)(l_0_0, "/Users/[^/]+/Desktop/", 1, false)) then
+  if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_0) and (SuspMacPathsToMonitor(l_0_0, true) or (string.find)(l_0_0, "/Users/[^/]+/Downloads/", 1, false) or (string.find)(l_0_0, "/Users/[^/]+/Documents/", 1, false) or (string.find)(l_0_0, "/Users/[^/]+/Desktop/", 1, false)) then
     return mp.INFECTED
   end
   return mp.CLEAN

@@ -37,14 +37,14 @@ do
 
     -- DECOMPILER ERROR at PC100: Confused about usage of register: R0 in 'UnsetPending'
 
-    if l_0_2 == nil or l_0_2 == "" or l_0_5 == nil or l_0_5 == "" or (string.find)(l_0_2, "/system/", 1, true) == 1 or (string.find)(l_0_2, ".app/contents/", 1, true) then
+    if l_0_2 == nil or l_0_2 == "" or l_0_5 == nil or l_0_5 == "" or (string.find)(l_0_2, "/System/", 1, true) == 1 or (string.find)(l_0_2, ".app/Contents/", 1, true) then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC115: Confused about usage of register: R1 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC113: Confused about usage of register: R1 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC123: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC120: Confused about usage of register: R0 in 'UnsetPending'
 
-    if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_5)) then
+    if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_5) then
       (bm.trigger_sig)("AdhocPersistMacOS", l_0_2)
       return mp.INFECTED
     end

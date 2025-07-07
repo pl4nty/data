@@ -18,7 +18,7 @@ local l_0_5 = (this_sigattrlog[2]).utf8p2
 if not SuspMacPathsToMonitor(l_0_5, false) then
   return mp.CLEAN
 end
-if (string.lower)(l_0_3) == l_0_4 and SuspMacPathsToMonitor(l_0_3, true) then
+if l_0_3 == l_0_4 and SuspMacPathsToMonitor(l_0_3, true) then
   if (sysio.IsFileExists)(l_0_3) then
     (bm.trigger_sig)("SuspFileDropdHttp.C", l_0_3)
   end

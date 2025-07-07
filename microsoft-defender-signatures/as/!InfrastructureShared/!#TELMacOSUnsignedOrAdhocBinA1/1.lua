@@ -7,15 +7,15 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
 if l_0_1 == nil or #l_0_1 < 5 then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "/private/tmp/test10", 1, true) ~= 1 and (string.find)(l_0_1, "/library/privilegedhelpertools/us.zoom.zoomhelpertool", 1, true) ~= 1 and (string.find)(l_0_1, "/library/privilegedhelpertools/com.microsoft.teams.teamsdaemon", 1, true) ~= 1 and (string.find)(l_0_1, "/library/privilegedhelpertools/us.zoom.zoomservice", 1, true) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/com.docker.sock", 1, true) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/com.docker.vmnat.lock", 1, true) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/com.docker.vmnat", 1, true) ~= 1 then
+if (string.find)(l_0_1, "/private/tmp/test10", 1, true) ~= 1 and (string.find)(l_0_1, "/library/PrivilegedHelperTools/us.zoom.ZoomHelperTool", 1, true) ~= 1 and (string.find)(l_0_1, "/library/PrivilegedHelperTools/com.microsoft.teams.TeamsDaemon", 1, true) ~= 1 and (string.find)(l_0_1, "/library/PrivilegedHelperTools/us.zoom.ZoomService", 1, true) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/com.docker.sock", 1, true) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/com.docker.vmnat.lock", 1, true) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/com.docker.vmnat", 1, true) ~= 1 then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "->(macho-unibin-", 1, true) then
-  l_0_1 = l_0_1:gsub("%->%(macho%-unibin%-.*", "")
+if (string.find)(l_0_1, "->(MachO-UniBin-", 1, true) then
+  l_0_1 = l_0_1:gsub("%->%(MachO%-UniBin%-.*", "")
 end
 if l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
@@ -25,18 +25,19 @@ if IsExcludedByImagePathMacOS(l_0_1) then
 end
 local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
 local l_0_3 = (mp.GetCertificateInfo)()
-do
-  if #l_0_3 < 1 or l_0_3 == nil then
-    local l_0_4 = "MAC_UNS_ADHOC_PATHS"
-    if l_0_2 then
-      (MpCommon.BmTriggerSig)(l_0_2, "BM_UnsignedOrAdhocMacBin", l_0_1)
-    end
-    if not IsKeyValuePairInRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1) then
-      AppendToRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1, 7200, 100, 0)
-      TrackPidAndTechnique(l_0_2, "T1204.002", "Execution_UserExecution_UnsignedAdhocFile")
-      return mp.INFECTED
-    end
+if #l_0_3 < 1 or l_0_3 == nil then
+  local l_0_4 = "MAC_UNS_ADHOC_PATHS"
+  if l_0_2 then
+    (MpCommon.BmTriggerSig)(l_0_2, "BM_UnsignedOrAdhocMacBin", l_0_1)
   end
+  local l_0_5 = 86400
+  if not IsKeyValuePairInRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1) then
+    AppendToRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1, l_0_5, 200, 0)
+    TrackPidAndTechnique(l_0_2, "T1204.002", "Execution_UserExecution_UnsignedAdhocFile")
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
 

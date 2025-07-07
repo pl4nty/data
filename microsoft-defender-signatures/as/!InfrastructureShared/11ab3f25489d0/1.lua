@@ -36,10 +36,10 @@ else
         if IsExcludedByCmdlineMacOS(l_0_6) or IsExcludedByImagePathMacOS(l_0_5) then
           return mp.CLEAN
         end
-        if l_0_4 == nil or l_0_4 == "" or l_0_5 == nil or l_0_5 == "" or (string.find)(l_0_4, "/system/", 1, true) == 1 or (string.find)(l_0_4, ".app/contents/", 1, true) then
+        if l_0_4 == nil or l_0_4 == "" or l_0_5 == nil or l_0_5 == "" or (string.find)(l_0_4, "/System/", 1, true) == 1 or (string.find)(l_0_4, ".app/Contents/", 1, true) then
           return mp.CLEAN
         end
-        if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_5)) then
+        if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_5) then
           (bm.trigger_sig)("AdhocPersistDPRK", l_0_4)
           if (sysio.IsFileExists)(l_0_5) then
             (bm.add_threat_file)(l_0_5)

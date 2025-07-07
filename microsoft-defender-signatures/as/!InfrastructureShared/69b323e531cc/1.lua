@@ -38,7 +38,7 @@ local l_0_6 = nil
 if IsExcludedByCmdlineMacOS(((bm.get_current_process_startup_info)()).command_line) then
   return mp.CLEAN
 end
-if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_2)) then
+if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_2) then
   return mp.INFECTED
 end
 return mp.CLEAN

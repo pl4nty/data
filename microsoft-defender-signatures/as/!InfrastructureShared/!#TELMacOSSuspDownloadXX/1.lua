@@ -86,12 +86,13 @@ do
         if not (string.find)(l_0_18, ".download", -9, true) or l_0_14 then
           (MpCommon.BmTriggerSig)(l_0_14, "BM_MACFILE_DOWNLOADFROM_BROWSEREMAIL2", l_0_2)
           ;
-          (MpCommon.BmTriggerSig)(l_0_14, "BM_UnsignedOrAdhocMacBin", (string.lower)(l_0_2))
+          (MpCommon.BmTriggerSig)(l_0_14, "BM_UnsignedOrAdhocMacBin", l_0_2)
           TrackPidAndTechnique(l_0_14, "T1566.002", "InitialAccess_Phishing_SpearphishingLinkUnsigned")
         end
         AppendToRollingQueue(l_0_16, "mac_browserdownload_path", l_0_2, 7200, 100, 0)
-        if not IsKeyValuePairInRollingQueue(l_0_17, "unsigned_adhoc_items", (string.lower)(l_0_2)) then
-          AppendToRollingQueue(l_0_17, "unsigned_adhoc_items", (string.lower)(l_0_2), 7200, 100, 0)
+        local l_0_19 = 86400
+        if not IsKeyValuePairInRollingQueue(l_0_17, "unsigned_adhoc_items", l_0_2) then
+          AppendToRollingQueue(l_0_17, "unsigned_adhoc_items", l_0_2, l_0_19, 200, 0)
         end
         return mp.INFECTED
       end

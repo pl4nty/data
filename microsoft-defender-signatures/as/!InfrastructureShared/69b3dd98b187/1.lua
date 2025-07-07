@@ -14,7 +14,7 @@ if not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p1 == nil or (th
 end
 local l_0_3 = (this_sigattrlog[3]).utf8p1
 local l_0_4 = (this_sigattrlog[4]).utf8p2
-if (string.lower)(l_0_3) == l_0_4 and SuspMacPathsToMonitor(l_0_3, true) then
+if l_0_3 == l_0_4 and SuspMacPathsToMonitor(l_0_3, true) then
   if (sysio.IsFileExists)(l_0_3) then
     (bm.trigger_sig)("SuspFileDropdHttp.B", l_0_3)
   end

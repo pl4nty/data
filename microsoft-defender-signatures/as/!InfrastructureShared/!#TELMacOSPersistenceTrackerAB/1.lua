@@ -113,7 +113,7 @@ end
   -- function num : 0_4
   local l_5_1 = "MAC_UNSIGNED_ADHOC_PATHS"
   local l_5_2 = "unsigned_adhoc_items"
-  if GetRollingQueueCount(l_5_1) > 0 and IsKeyValuePairInRollingQueue(l_5_1, l_5_2, (string.lower)(l_5_0)) then
+  if GetRollingQueueCount(l_5_1) > 0 and IsKeyValuePairInRollingQueue(l_5_1, l_5_2, l_5_0) then
     return true
   end
   return false

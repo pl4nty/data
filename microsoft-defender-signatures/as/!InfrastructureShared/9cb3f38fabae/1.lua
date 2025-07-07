@@ -36,12 +36,12 @@ do
     if IsExcludedByCmdlineMacOS(l_0_9) or IsExcludedByImagePathMacOS(l_0_6) then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC87: Confused about usage of register: R1 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC85: Confused about usage of register: R1 in 'UnsetPending'
 
-    if not IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", (string.lower)(l_0_6)) then
+    if not IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_6) then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC95: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC92: Confused about usage of register: R0 in 'UnsetPending'
 
     local l_0_16 = nil
     if l_0_4:match("[^/]*$") ~= nil and l_0_4:match("[^/]*$") ~= "" and IsKeyInRollingQueue("MAC_PERSIST_PROG_PATHS", l_0_4:match("[^/]*$"), true) then
@@ -49,10 +49,10 @@ do
       if GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_4:match("[^/]*$")) ~= nil and #GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_4:match("[^/]*$")) > 0 then
         for l_0_21,l_0_22 in ipairs(GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_4:match("[^/]*$"))) do
           local l_0_18, l_0_19, l_0_20 = nil
-          -- DECOMPILER ERROR at PC123: Confused about usage of register: R9 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC120: Confused about usage of register: R9 in 'UnsetPending'
 
-          if SuspMacPathsToMonitor(R9_PC123.value, true) then
-            (bm.add_related_string)("persisted_path", R9_PC123.value, bm.RelatedStringBMReport)
+          if SuspMacPathsToMonitor(R9_PC120.value, true) then
+            (bm.add_related_string)("persisted_path", R9_PC120.value, bm.RelatedStringBMReport)
             return mp.INFECTED
           end
         end
