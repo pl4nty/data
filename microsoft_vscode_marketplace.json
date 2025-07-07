@@ -1,4 +1,7 @@
 {
+    "autoUpdate": {
+        "anthropic.claude-code": "1.0.23"
+    },
     "deprecated": {
         "2gua.rainbow-brackets": {
             "settings": [
