@@ -1130,7 +1130,7 @@
         "UsePcsProfileUrls": true,
         "UseUserLicenseV1Endpoint": true,
         "UseYggdrasilForOrgExplorer": true,
-        "UserLicenseInformationCacheTtl": "0.03:00:00",
+        "UserLicenseInformationCacheTtl": "0.02:00:00",
         "VivaLicensesForOrgExplorer": [
             "61902246-d7cb-453e-85cd-53ee28eec138",
             "5c13104f-29c1-48d9-9f89-c305a0d4b70e"
@@ -1158,7 +1158,6 @@
         ],
         "WorkingHoursPredictionLoggingEnabled": true,
         "WriteSelfAssociationToPapi": true,
-        "isActivityBEEnabled": false,
         "isProfanityCensorNotificationPanelEnabled": true
     },
     "Lps": {
