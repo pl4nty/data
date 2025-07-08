@@ -466,7 +466,7 @@
         <DFType>
           <MIME>text/plain</MIME>
         </DFType>
-        <DefaultValue>0</DefaultValue>
+        <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
           <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
           <MSFT:CspVersion>4.1</MSFT:CspVersion>
@@ -981,7 +981,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run. If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off. Supported values:0 - Disabled1 - Enabled (default)OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan</Description>
+        <Description>This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that's initiated because a regularly scheduled scan was missed. Usually, these scheduled scans are missed because the computer was turned off at the scheduled time. If you disable or don't configure this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run. If you enable this setting, catch-up scans for scheduled quick scans will be disabled.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -1401,7 +1401,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Selects the time of day that the Windows Defender quick scan should run. Note The scan type will depends on what scan type is selected in the Defender/ScanParameter setting. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120</Description>
+        <Description>Selects the time of day that the daily Windows Defender quick scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -1506,7 +1506,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Selects the time of day that the Windows Defender scan should run. Note The scan type will depends on what scan type is selected in the Defender/ScanParameter setting. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.</Description>
+        <Description>Selects the time of day that the weekly Windows Defender scan should run. Note The scan type will depends on what scan type is selected in the Defender/ScanParameter setting. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.</Description>
         <DFFormat>
           <int />
         </DFFormat>
