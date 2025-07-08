@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "test",
+    "downloadDescription": "test",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "test1.txt",
+            "url": "https://download.microsoft.com/download/7687d050-77ba-4e2c-9734-8296b4f7865a/test1.txt",
+            "size": "5",
+            "version": "1",
+            "datePublished": "7/7/2025 12:24:15 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "test.txt",
+            "url": "https://download.microsoft.com/download/7687d050-77ba-4e2c-9734-8296b4f7865a/test.txt",
+            "size": "4",
+            "version": "1",
+            "datePublished": "7/7/2025 12:24:15 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "test1.txt",
+        "test.txt"
+    ],
+    "detailsSection_file_size": [
+        "5 bytes",
+        "4 bytes"
+    ],
+    "detailsSection_file_date": "7/7/2025",
+    "systemRequirementsSection": "test",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108265",
+    "downloadPreload": true
+}

@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Organizational Data in Microsoft 365 Template - with Skills",
+    "downloadDescription": "Excel file template to support organizational data uploads in Organizational Data in Microsoft 365",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OrgDataTemplate v2 - with skills.xlsx",
+            "url": "https://download.microsoft.com/download/644a17c0-a113-4fb6-8ea3-4199d36978ec/OrgDataTemplate v2 - with skills.xlsx",
+            "size": "21292",
+            "version": "1.0",
+            "datePublished": "7/4/2025 11:17:21 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this template for preparing your organizational data before uploading it from within the Organizational Data Upload in M365 feature in Microsoft Admin Center",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OrgDataTemplate v2 - with skills.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "20.8 KB"
+    ],
+    "detailsSection_file_date": "7/4/2025",
+    "systemRequirementsSection": "The Organizational Data Upload in M365 feature is available via a web browser. The organizational data file can be prepared using excel to open the template and a text editor for the CSV file",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Follow instructions on the template to prepare the organizational data in a CSV format.",
+    "relatedResourcesSection": [
+        {
+            "title": "use Organizational Data in Microsoft 365",
+            "url": "https://learn.microsoft.com/en-us/viva/organizational-data"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108267",
+    "downloadPreload": true
+}

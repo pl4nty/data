@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Organizational Data in Microsoft 365 template - without skills",
+    "downloadDescription": "Excel file template to support manual data uploads in Organizational Data in Microsoft 365",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OrgDataTemplate v2 - without skills.xlsx",
+            "url": "https://download.microsoft.com/download/544d21f6-7980-47e5-bb48-f151692cae5f/OrgDataTemplate v2 - without skills.xlsx",
+            "size": "21142",
+            "version": "1.0",
+            "datePublished": "7/4/2025 11:28:42 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this template to prepare your organizational data before using the Organizational Data in Microsoft 365 feature in Microsoft Admin Center to upload organizational to support scenarios with Microsoft 365 applications, Viva Suite and copilot",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OrgDataTemplate v2 - without skills.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "20.6 KB"
+    ],
+    "detailsSection_file_date": "7/4/2025",
+    "systemRequirementsSection": "The feature is available using the browser. Use excel to open the template and use any text editor to edit the CSV file.",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Select the Download button to start the download.\nThe download should start automatically. If prompted, select Save or Save this program to disk.\nSelect Open file or find the file on your device and open it.",
+    "relatedResourcesSection": [
+        {
+            "title": "organizational Data in Microsoft",
+            "url": "https://learn.microsoft.com/en-us/viva/organizational-data"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108266",
+    "downloadPreload": true
+}
