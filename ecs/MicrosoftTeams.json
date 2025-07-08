@@ -16,8 +16,13 @@
         "ConfigLogTarget": "default"
     },
     "ImmersiveEvents": {
+        "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
+        "clientMinimumVersion": "6.2512.0",
         "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",
+        "echoRequestsInterval": 15,
         "isEUTenant": false,
+        "myAvatarsUrl": "https://substrate.office.com/imageb2/v1.0/me/avatars",
+        "sessionsUrl": "https://sessions.mesh.cloud.microsoft",
         "worldsUrl": "https://global.worlds.mesh.cloud.microsoft"
     },
     "M365HubConfiguration": {
