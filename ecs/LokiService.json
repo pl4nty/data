@@ -331,6 +331,7 @@
         "ispcvlaunchfromemailsectionenabled": false,
         "ispersonaworkaroundenabled": true,
         "ispresenceincontactenabled": false,
+        "isprofileeditorinlpcenabled": true,
         "isprofilevideoenabled": false,
         "isrelatedtopicsenabled": true,
         "issmartnotescurationenabled": false,
@@ -1385,7 +1386,7 @@
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
         "OrgExplorerBootstraperVersion": "1.20250623.2.0",
-        "OrgExplorerVersion": "1.20250610.3.0",
+        "OrgExplorerVersion": "1.20250703.3.0",
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,
         "isPersistentQueriesEnabled": true,
@@ -1394,9 +1395,9 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250701.1.0",
+        "PeopleInTaskbarDFVersion": "1.20250706.13.0",
         "PeopleInTaskbarMsitVersion": "1.20250623.2.0",
-        "PeopleInTaskbarProdVersion": "1.20250611.1.0",
+        "PeopleInTaskbarProdVersion": "1.20250623.2.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",
