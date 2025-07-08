@@ -781,6 +781,7 @@
         "FlightingAlloctionFunctionToRequestResourceGroup": true,
         "FlightingDisableDefaultOutboundForImageSubnet": true,
         "FlightingEnableNATGWAsOutboundAccess": true,
+        "FlightingEnableNATGWMigration": true,
         "FlightingEnableZonalNATGateway": true,
         "FlightingForBackfillHOBOTagForVnetAndNSG": true,
         "FlightingForCreateVnetAndNSGwithHOBOTag": true,

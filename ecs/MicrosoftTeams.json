@@ -4085,6 +4085,7 @@
             "meetingAddinEnableDelegateMeetingPrefetch": false,
             "meetingAddinEnableDeserializationIssue": false,
             "meetingAddinEnableDiscoverAccountsOnStartup": false,
+            "meetingAddinEnableDistributionListCounting": false,
             "meetingAddinEnableDomainValidationOnUrl": false,
             "meetingAddinEnableEMOCheckOnAppointmentItem": false,
             "meetingAddinEnableEMOFREOnCreate": false,
