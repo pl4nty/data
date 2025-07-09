@@ -90414,6 +90414,66 @@
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "July 7, 2025",
+        "Patch level": "2025-07-05",
+        "CVE": "CVE-2024-45540",
+        "References": "A-372022568",
+        "Severity": "Moderate",
+        "Subcomponent": "Bootloader",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "July 7, 2025",
+        "Patch level": "2025-07-05",
+        "CVE": "CVE-2024-45544",
+        "References": "A-372021858",
+        "Severity": "Moderate",
+        "Subcomponent": "Kernel",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "July 7, 2025",
+        "Patch level": "2025-07-05",
+        "CVE": "CVE-2024-45554",
+        "References": "A-377303606",
+        "Severity": "Moderate",
+        "Subcomponent": "Kernel",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "July 7, 2025",
+        "Patch level": "2025-07-05",
+        "CVE": "CVE-2024-45562",
+        "References": "A-377305518",
+        "Severity": "Moderate",
+        "Subcomponent": "Bootloader",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "July 7, 2025",
+        "Patch level": "2025-07-05",
+        "CVE": "CVE-2024-45564",
+        "References": "A-377305469",
+        "Severity": "Moderate",
+        "Subcomponent": "Bootloader",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
+        "Published": "July 7, 2025",
+        "Patch level": "2025-07-05",
+        "CVE": "CVE-2024-43046",
+        "References": "A-381913701",
+        "Severity": "Moderate",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
         "Published": "June 10, 2025",
         "Patch level": "2025-06-05",
         "CVE": "CVE-2024-45540",
