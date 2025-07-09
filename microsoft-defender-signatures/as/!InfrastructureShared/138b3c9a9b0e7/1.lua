@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\138b3534f6fdc\1.luac 
+-- Command line: lua\!InfrastructureShared\138b3c9a9b0e7\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -8,6 +8,9 @@ if not l_0_0.ppid then
   return mp.CLEAN
 end
 local l_0_1 = l_0_0.ppid
+if (this_sigattrlog[2]).matched and not isChildProcByCreatedFlag("onedrive") then
+  return mp.CLEAN
+end
 local l_0_2 = (bm.get_imagepath)()
 if not l_0_2 then
   return mp.CLEAN
@@ -18,20 +21,20 @@ if l_0_3 then
   for l_0_8,l_0_9 in ipairs(l_0_3) do
     if l_0_9.ppid and l_0_9.image_path then
       local l_0_10 = (string.lower)(l_0_9.image_path)
-      if (string.find)(l_0_10, "\\program files\\microsoft onedrive\\", 1, true) then
+      if (string.find)(l_0_10, "onedrive", 1, true) then
         do
           do
             l_0_1 = l_0_9.ppid
             do break end
-            -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out DO_STMT
+            -- DECOMPILER ERROR at PC65: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC65: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC65: LeaveBlock: unexpected jumping out IF_STMT
 
-            -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC65: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC52: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC65: LeaveBlock: unexpected jumping out IF_STMT
 
           end
         end
@@ -90,7 +93,7 @@ end
         return mp.CLEAN
       end
       local l_0_22 = "NoneDefaultDirectory[" .. l_0_1:match("pid:(%d+)") .. "][" .. l_0_21 .. "]"
-      -- DECOMPILER ERROR at PC167: Overwrote pending register: R11 in 'AssignReg'
+      -- DECOMPILER ERROR at PC180: Overwrote pending register: R11 in 'AssignReg'
 
       l_0_16 = IncreaseProcessAnomalyScore(l_0_1, 10, l_0_22, "PFAppTracked")
       l_0_19 = false

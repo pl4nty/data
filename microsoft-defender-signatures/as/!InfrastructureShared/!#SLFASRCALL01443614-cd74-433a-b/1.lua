@@ -25,7 +25,7 @@ if (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) == true or l_0_
     if l_0_3 ~= nil and l_0_3 ~= "" then
       l_0_3 = (string.lower)(l_0_3)
     end
-    if l_0_3 == "ede93498-0189-4b5a-bb7d-bdb374cbebd3" and (string.find)(l_0_2, "^.:\\program files\\safebreach\\safebreach endpoint simulator\\app\\") ~= nil then
+    if l_0_3 ~= nil and l_0_3 == "ede93498-0189-4b5a-bb7d-bdb374cbebd3" and (string.find)(l_0_2, "^.:\\program files\\safebreach\\safebreach endpoint simulator\\app\\") ~= nil then
       return mp.CLEAN
     end
     if (string.find)(l_0_2, "^.:\\programdata\\chocolatey\\bin\\[^%.\\]+%.exe$") ~= nil then

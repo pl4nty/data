@@ -192,21 +192,28 @@ do
                             (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
                             l_0_10.Remediation_Reason = l_0_10.Remediation_Reason .. ";" .. "SuspUrl"
                           end
+                          -- DECOMPILER ERROR at PC432: Confused about usage of register: R14 in 'UnsetPending'
+
+                          -- DECOMPILER ERROR at PC436: Confused about usage of register: R14 in 'UnsetPending'
+
+                          if (mp.enum_mpattributesubstring)("Appomaly_") and #(mp.enum_mpattributesubstring)("Appomaly_") > 0 then
+                            l_0_10.Attributes = table_dedup((mp.enum_mpattributesubstring)("Appomaly_"))
+                          end
                           local l_0_55 = nil
                           local l_0_56 = nil
                           for l_0_60,l_0_61 in ipairs(l_0_10.Parents) do
                             local l_0_57, l_0_58, l_0_59, l_0_60 = , {}, 0
-                            -- DECOMPILER ERROR at PC432: Overwrote pending register: R23 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC446: Overwrote pending register: R23 in 'AssignReg'
 
                             if IsFileRecentlyDropped(R23_PC267) then
-                              (table.insert)(l_0_59, R27_PC440)
+                              (table.insert)(l_0_59, R27_PC454)
                               l_0_60 = l_0_60 + R23_PC267
                             end
                           end
-                          -- DECOMPILER ERROR at PC444: Confused about usage of register: R15 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC458: Confused about usage of register: R15 in 'UnsetPending'
 
                           l_0_10.RecentlyDroppedParents = l_0_59
-                          -- DECOMPILER ERROR at PC445: Confused about usage of register: R16 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC459: Confused about usage of register: R16 in 'UnsetPending'
 
                           l_0_10.ParentScore = l_0_60
                           do
@@ -217,12 +224,12 @@ do
                               (MpCommon.BmTriggerSig)(l_0_0.ppid, "SuspDownload3_BM_Capture", safeJsonSerialize(l_0_10, 150, nil, true))
                             else
                               if l_0_10 then
-                                set_research_data("Error", (MpCommon.Base64Encode)(R22_PC476), R22_PC476)
+                                set_research_data("Error", (MpCommon.Base64Encode)(R22_PC490), R22_PC490)
                                 return mp.INFECTED
                               end
                             end
                             do return mp.CLEAN end
-                            -- DECOMPILER ERROR at PC485: freeLocal<0 in 'ReleaseLocals'
+                            -- DECOMPILER ERROR at PC499: freeLocal<0 in 'ReleaseLocals'
 
                           end
                         end

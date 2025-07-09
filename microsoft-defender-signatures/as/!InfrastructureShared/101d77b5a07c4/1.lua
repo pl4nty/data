@@ -150,6 +150,10 @@ if l_0_12.Score > 30 then
               (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
               l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspUrl"
             end
+            l_0_41 = (mp.enum_mpattributesubstring)("Appomaly_")
+            if l_0_41 and #l_0_41 > 0 then
+              l_0_1.Attributes = table_dedup(l_0_41)
+            end
             local l_0_42 = {}
             local l_0_43 = 0
             for l_0_47,l_0_48 in ipairs(l_0_1.Parents) do
