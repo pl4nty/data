@@ -10,7 +10,7 @@ end
 local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
 if l_0_2 then
   l_0_2 = (string.lower)(l_0_2)
-  if not (string.find)(l_0_2, "^powershell", 1, false) and not (string.find)(l_0_2, "pwsh.exe", 1, true) then
+  if not (string.find)(l_0_2, "powershell", 1, true) and not (string.find)(l_0_2, "pwsh.exe", 1, true) then
     return mp.CLEAN
   end
 end

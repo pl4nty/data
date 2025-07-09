@@ -7,23 +7,23 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-local l_0_1, l_0_2 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_1, l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH))
 if l_0_2 == nil or l_0_2 == "" or l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
 end
 local l_0_3 = false
-if (string.find)(l_0_1, "/system/library/launch", 1, true) ~= 1 then
+if (string.find)(l_0_1, "/System/Library/Launch", 1, true) ~= 1 then
   local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
   do
     suspNameCheck = function(l_1_0)
   -- function num : 0_0 , upvalues : l_0_4, l_0_1, l_0_2
-  if (string.find)(l_1_0, "com.apple.", 1, true) == 1 then
+  if (string.find)((string.lower)(l_1_0), "com.apple.", 1, true) == 1 then
     (MpCommon.BmTriggerSig)(l_0_4, "BM_SuspMacLaunchItemName", l_0_1 .. "/" .. l_0_2)
   end
 end
 
-    if (string.find)(l_0_1, "/library/launchagents", 1, true) then
-      if (string.find)(l_0_1, "/users/", 1, true) == 1 then
+    if (string.find)(l_0_1, "/Library/LaunchAgents", 1, true) then
+      if (string.find)(l_0_1, "/Users/", 1, true) == 1 then
         TrackPidAndTechnique(l_0_4, "T1543.001", "Persistence_UserLaunchAgent")
       else
         TrackPidAndTechnique(l_0_4, "T1543.001", "Persistence_GlobalLaunchAgent")
@@ -31,7 +31,7 @@ end
       suspNameCheck(l_0_2)
       l_0_3 = true
     else
-      if (string.find)(l_0_1, "/library/launchdaemons", 1, true) == 1 then
+      if (string.find)(l_0_1, "/Library/LaunchDaemons", 1, true) == 1 then
         TrackPidAndTechnique(l_0_4, "T1543.004", "Persistence_LaunchDaemon")
         suspNameCheck(l_0_2)
         l_0_3 = true
@@ -122,15 +122,20 @@ end
           if l_0_8 and #l_0_8 > 0 then
             local l_0_18 = "MAC_PERSIST_PROG_PATHS"
             for l_0_22,l_0_23 in pairs(l_0_8) do
-              if (sysio.IsFileExists)(R16_PC241) then
-                AppendToRollingQueue(R16_PC241, l_0_2, R18_PC251, 3600, 10, 0)
-                -- DECOMPILER ERROR at PC253: Overwrote pending register: R16 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC259: Overwrote pending register: R16 in 'AssignReg'
-
-                if checkAdhocUnsigned(R16_PC241) then
-                  (mp.ReportLowfi)(R16_PC241, 1523570201)
-                  return mp.INFECTED
+              if (sysio.IsFileExists)(R16_PC236) then
+                local l_0_24 = 86400
+                R16_PC236 = AppendToRollingQueue
+                R16_PC236(l_0_18, l_0_2, R19_PC247, l_0_24, 50, 0)
+                R16_PC236 = checkAdhocUnsigned
+                R16_PC236 = R16_PC236(R17_PC250)
+                if R16_PC236 then
+                  R16_PC236 = mp
+                  R16_PC236 = R16_PC236.ReportLowfi
+                  R17_PC250 = 
+                  R16_PC236(R17_PC250, 1523570201)
+                  R16_PC236 = mp
+                  R16_PC236 = R16_PC236.INFECTED
+                  return R16_PC236
                 end
               end
             end

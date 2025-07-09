@@ -17,7 +17,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
     return mp.CLEAN
   end
   if (string.find)(l_0_3, "script:", 1, true) then
-    l_0_0 = l_0_0 + 30
+    l_0_0 = l_0_0 + 500
     l_0_1.new_value = l_0_3
     l_0_1.old_value = l_0_2
   else
@@ -126,17 +126,58 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[2]).matched then
                         l_0_0 = l_0_0 + 10
                         l_0_1.hklm_value = l_0_34
                       end
-                      if l_0_0 > 15 then
-                        l_0_1.score = l_0_0
-                        local l_0_35 = safeJsonSerialize(l_0_1)
-                        ;
-                        (bm.add_related_string)("AdditionalInfo", l_0_35, bm.RelatedStringBMReport)
-                        ;
-                        (bm.add_related_file)(l_0_1.new_value)
-                        return mp.INFECTED
-                      end
-                      do
-                        return mp.CLEAN
+                      local l_0_35 = false
+                      if l_0_0 >= 500 then
+                        local l_0_36 = (bm.get_current_process_startup_info)()
+                        do
+                          if not (bm.get_imagepath)() then
+                            local l_0_37, l_0_38, l_0_40, l_0_41 = not l_0_36 or not l_0_36.ppid or ""
+                          end
+                          do
+                            local l_0_39, l_0_42 = , (mp.GetProcessCommandLine)(l_0_36.ppid) or ""
+                            -- DECOMPILER ERROR at PC289: Confused about usage of register: R6 in 'UnsetPending'
+
+                            -- DECOMPILER ERROR at PC295: Confused about usage of register: R7 in 'UnsetPending'
+
+                            if contains(l_0_39, "reg.exe") and contains(l_0_42, " add ") then
+                              l_0_35 = true
+                            end
+                            -- DECOMPILER ERROR at PC302: Confused about usage of register: R6 in 'UnsetPending'
+
+                            -- DECOMPILER ERROR at PC309: Confused about usage of register: R7 in 'UnsetPending'
+
+                            do
+                              if contains(l_0_39, "powershell") then
+                                local l_0_46, l_0_47 = nil
+                              end
+                              if l_0_42 <= 6 or l_0_0 > 15 then
+                                local l_0_43 = safeJsonSerialize(l_0_1)
+                                local l_0_44 = bm.add_related_string
+                                local l_0_45 = "AdditionalInfo"
+                                -- DECOMPILER ERROR at PC329: Overwrote pending register: R8 in 'AssignReg'
+
+                                l_0_44(l_0_45, (string.gsub)(l_0_42, "%$", ""), bm.RelatedStringBMReport)
+                                l_0_44 = bm
+                                l_0_44 = l_0_44.add_related_file
+                                l_0_45 = l_0_1.new_value
+                                l_0_44(l_0_45)
+                                if l_0_35 then
+                                  l_0_44 = mp
+                                  l_0_44 = l_0_44.INFECTED
+                                  return l_0_44
+                                else
+                                  l_0_44 = bm
+                                  l_0_44 = l_0_44.trigger_sig
+                                  l_0_45 = "Susp_TypeLibHijacking"
+                                  l_0_44(l_0_45, l_0_43)
+                                end
+                              end
+                              do
+                                return mp.CLEAN
+                              end
+                            end
+                          end
+                        end
                       end
                     end
                   end
