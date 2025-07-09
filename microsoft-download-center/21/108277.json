@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "IntuneCertificateConnector.exe",
+    "downloadDescription": "Intune Certificate Connector 6.2504.3.2002",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "IntuneCertificateConnector (6).exe",
+            "url": "https://download.microsoft.com/download/f553b34a-a8a6-4716-b0a4-16384cc43735/IntuneCertificateConnector.exe",
+            "size": "19480808",
+            "version": "6.2504.3.2002",
+            "datePublished": "7/7/2025 8:09:10 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Intune Certificate Connector 6.2504.3.2002",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.2504.3.2002",
+    "detailsSection_file_name": [
+        "IntuneCertificateConnector (6).exe"
+    ],
+    "detailsSection_file_size": [
+        "18.6 MB"
+    ],
+    "detailsSection_file_date": "7/7/2025",
+    "systemRequirementsSection": "Windows, iOS, mac, Amdroid",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Windows 11"
+    ],
+    "installInstructionSection": "download and run the binary",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108277",
+    "downloadPreload": true
+}
