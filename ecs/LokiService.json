@@ -232,7 +232,7 @@
         "IsPreparePersonaOverWebsocketAllowed": true,
         "IsQnACopilotEnabled": false,
         "LPCEnableAriaLogging": true,
-        "LPCStikkontakt": true,
+        "LPCStikkontakt": false,
         "LinkedInBindingEnabled": true,
         "LinkedInDataPrebindDark": false,
         "LinkedInDeforkEnabled": false,

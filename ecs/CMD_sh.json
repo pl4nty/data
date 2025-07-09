@@ -468,6 +468,7 @@
         "EnableIntuneEnrollmentThrottlingForAADJ": true,
         "EnableIntunePartnerSync": true,
         "EnableIntuneReEnrollNewActionType": true,
+        "EnableIntuneReEnrollV4": true,
         "EnableIsMemberOfGroups": true,
         "EnableIsolatedFederatedClientCert": false,
         "EnableIsolatedOrderingClientCert": true,
