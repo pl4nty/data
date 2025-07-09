@@ -41,12 +41,12 @@
   },
   {
     "name": "angle",
-    "size": 14613710,
+    "size": 14613316,
     "file_count": 830
   },
   {
     "name": "anonymous_tokens",
-    "size": 11320,
+    "size": 11348,
     "file_count": 5
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32290408,
+    "size": 32295758,
     "file_count": 3962
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7365559,
+    "size": 7365784,
     "file_count": 29
   },
   {
@@ -246,7 +246,7 @@
   },
   {
     "name": "glslang",
-    "size": 42992184,
+    "size": 42992118,
     "file_count": 3147
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3657998,
+    "size": 3657990,
     "file_count": 570
   },
   {
@@ -636,7 +636,7 @@
   },
   {
     "name": "skia",
-    "size": 3460498,
+    "size": 3460776,
     "file_count": 1178
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 529024,
+    "size": 529962,
     "file_count": 15
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6206027,
+    "size": 6204587,
     "file_count": 175
   },
   {

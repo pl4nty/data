@@ -1299,11 +1299,11 @@ namespace gfx {
 
     // Edge Visual Companion Colors
     constexpr SkColor kVisualCompanionThemeColorLight =
-        SkColorSetRGB(0xFB, 0xDD, 0xC7);
+        SkColorSetRGB(0xE8, 0xE0, 0xDC);
     constexpr SkColor kVisualCompanionThemeColorDark =
         SkColorSetRGB(0x19, 0x22, 0x3D);
     constexpr SkColor kVisualCompanionActiveTabColorLight =
-        SkColorSetRGB(0xFF, 0xE9, 0xD5);
+        SkColorSetRGB(0xFF, 0xFF, 0xFF);
     constexpr SkColor kVisualCompanionActiveTabColorDark =
         SkColorSetRGB(0x2C, 0x39, 0x61);
     constexpr SkColor kVisualCompanionGrabBarBorderDark =
