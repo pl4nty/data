@@ -1837,6 +1837,7 @@
             "EnableBizchatIntegration": true,
             "EnableMessageSensitivityLabel": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
+            "EnableShowTypingMiddleware": true,
             "MigrateGetTeamsAppID": true
         },
         "RingOptions": {
