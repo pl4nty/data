@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10769774,
+    "size": 10769843,
     "file_count": 177
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32295758,
-    "file_count": 3962
+    "size": 32271416,
+    "file_count": 3955
   },
   {
     "name": "boringssl",
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 17227243,
+    "size": 19073003,
     "file_count": 19
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3657990,
+    "size": 3658139,
     "file_count": 570
   },
   {
@@ -706,7 +706,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1358780,
+    "size": 1366967,
     "file_count": 23
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6204587,
+    "size": 6205810,
     "file_count": 175
   },
   {
