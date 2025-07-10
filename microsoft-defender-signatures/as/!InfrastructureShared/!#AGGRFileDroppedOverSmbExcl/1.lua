@@ -4,6 +4,7 @@
 -- params : ...
 -- function num : 0
 if not (mp.get_mpattribute)("BM_MZ_FILE") then
+  (mp.set_mpattribute)("Lua:RemoteCopyExclusions")
   return mp.INFECTED
 end
 return mp.CLEAN
