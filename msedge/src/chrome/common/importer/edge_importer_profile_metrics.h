@@ -340,12 +340,21 @@ enum class ThemesImportState {
   kThemeExtensionNotImportedDueToFeatureFlagDisabled = 2,
   kThemeExtensionNotImportedDueToOtherStoreConsent = 3,
   kThemeExtensionImportSkippedDueToRequirementsNotMet = 4,
-  kThemeExtensionImported = 5,
-  kThemesImportFinished = 6,
-  kMaxValue = kThemesImportFinished
+  kThemeExtensionIsMicrosoftStoreExtension = 5,
+  kThemeExtensionImportedWithOtherStoreConsent = 6,
+  kThemeExtensionImported = 7,
+  kThemesImportFinished = 8,
+  kThemeExtensionNotEnabledDueToNoUserConsent = 9,
+  kMaxValue = kThemeExtensionNotEnabledDueToNoUserConsent
 };
 
 namespace metrics {
+
+#if BUILDFLAG(IS_WIN)
+inline constexpr std::string_view kEdgeContinuousThemesImportState =
+    "Microsoft.ContinuousMigration.ThemesImport.State";
+#endif  // BUILDFLAG(IS_WIN)
+
 const char* GetImportTargetType(user_data_importer::ImporterType source_type);
 
 const char* GetImportDataType(user_data_importer::ImportItem item);

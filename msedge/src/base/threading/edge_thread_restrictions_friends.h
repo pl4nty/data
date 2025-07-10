@@ -221,4 +221,8 @@ class SpeechSdkWrapper;
 }
 #endif  // BUILDFLAG(SPEECH_RECOGNITION_AVAILABLE)
 
+namespace password_manager {
+class LoginDatabase;
+}
+
 #endif  // BASE_THREADING_EDGE_THREAD_RESTRICTIONS_FRIENDS_H_
