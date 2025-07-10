@@ -6,11 +6,27 @@
 if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
   (bm.add_related_string)("Evidence", (this_sigattrlog[1]).utf8p2, bm.RelatedStringBMReport)
   local l_0_0 = safeJsonDeserialize((this_sigattrlog[1]).utf8p2)
-  if l_0_0 and l_0_0.Dll_Path then
-    (bm.add_related_file)(l_0_0.Dll_Path)
+  if not l_0_0 then
+    return mp.CLEAN
+  end
+  local l_0_1 = {}
+  -- DECOMPILER ERROR at PC34: No list found for R1 , SetList fails
+
+  -- DECOMPILER ERROR at PC35: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC36: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC37: Overwrote pending register: R4 in 'AssignReg'
+
+  if ("onedrivestandaloneupdater.exe")("OneDrive.exe", "gup.exe") then
+    if l_0_0.Dll_Path then
+      (bm.add_threat_file)(l_0_0.Dll_Path)
+    end
+    return mp.INFECTED
   end
 end
 do
-  return mp.INFECTED
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

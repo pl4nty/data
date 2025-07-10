@@ -212,9 +212,7 @@ local l_0_8 = (versioning.GetOrgID)()
 if l_0_8 ~= nil and l_0_8 ~= "" then
   l_0_8 = (string.lower)(l_0_8)
 end
--- DECOMPILER ERROR at PC744: Unhandled construct in 'MakeBoolean' P3
-
-if ((l_0_8 ~= nil and l_0_8 == "d7c7c745-195f-4223-9c7a-99fb420fd000") or l_0_8 == "ea8bc0ec-fa40-4adf-b0e3-1e6d8c7baac0") and (MpCommon.IsSampled)(45000, false, true, true) == true then
+if l_0_8 ~= nil and (l_0_8 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_8 == "17d35c23-784e-4395-a8e8-10ba00402072" or l_0_8 == "ea8bc0ec-fa40-4adf-b0e3-1e6d8c7baac0") and (MpCommon.IsSampled)(60000, false, true, true) == true then
   local l_0_9 = (pe.get_versioninfo)()
   if l_0_9 ~= nil and l_0_9.OriginalFilename ~= nil then
     local l_0_10 = ((string.lower)(l_0_9.OriginalFilename))
