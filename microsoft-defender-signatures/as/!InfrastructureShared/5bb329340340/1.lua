@@ -1,12 +1,15 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32b391597dc0\1.luac 
+-- Command line: lua\!InfrastructureShared\5bb329340340\1.luac 
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (this_sigattrlog[1]).utf8p1 ~= "" then
-  local l_0_0 = (this_sigattrlog[1]).utf8p1
+if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[2]).utf8p1 ~= "" then
+  local l_0_0 = (this_sigattrlog[2]).utf8p1
   local l_0_1 = (bm.get_imagepath)()
   if l_0_1 == nil then
+    return mp.CLEAN
+  end
+  if not IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_0) then
     return mp.CLEAN
   end
   local l_0_2 = "BM"

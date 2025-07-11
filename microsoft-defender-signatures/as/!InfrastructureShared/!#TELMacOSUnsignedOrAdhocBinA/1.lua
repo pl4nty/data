@@ -35,7 +35,7 @@ if #l_0_3 < 1 or l_0_3 == nil then
   end
   local l_0_5 = 86400
   if not IsKeyValuePairInRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1) then
-    AppendToRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1, l_0_5, 200, 0)
+    AppendToRollingQueue(l_0_4, "unsigned_adhoc_items", l_0_1, l_0_5, 1000, 0)
     TrackPidAndTechnique(l_0_2, "T1204.002", "Execution_UserExecution_UnsignedAdhocFile")
     return mp.INFECTED
   end
