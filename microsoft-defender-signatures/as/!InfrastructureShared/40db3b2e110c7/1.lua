@@ -138,6 +138,7 @@ do
                   if l_0_35 and not l_0_36 then
                     l_0_24.Key = l_0_34
                     l_0_24.ProcNameWeight = GetProcessNameScore(l_0_10)
+                    l_0_24.AnomalyTableName = "Appomaly_ParentProcName"
                     l_0_24.AnomalyTableInfo = l_0_22 .. "_" .. l_0_21 .. "_" .. l_0_10
                     ;
                     (bm.trigger_sig)("PFAppParentProcDir", safeJsonSerialize(l_0_24))

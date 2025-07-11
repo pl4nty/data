@@ -17,7 +17,7 @@ do
   local l_0_2 = nil
   local l_0_3 = contains
   local l_0_4 = l_0_2
-  l_0_3 = l_0_3(l_0_4, {"powershell", "rundll32", "msiexec", " mshta", " bitsadmin", "curl", "e:jscript", "conhost", "control", "regsvr32", "wscript", "cscript", "javaws", "wmic", "scriptrunner", "certutil", "echo", "start", "runas", "appinstaller", "hh", "ieexec", "installutil", "rpcping", "defaultpack", "msxsl", "squirrel", "update", "winrm", "cmd"})
+  l_0_3 = l_0_3(l_0_4, {"powershell", " mshta", " bitsadmin", "curl"})
   if l_0_3 then
     l_0_3 = bm
     l_0_3 = l_0_3.add_related_string

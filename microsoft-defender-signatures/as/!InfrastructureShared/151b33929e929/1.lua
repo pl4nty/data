@@ -90,6 +90,7 @@ else
           l_0_28.FilePath = l_0_22
           l_0_28.ShellCodeName_Normalzied = l_0_21
           l_0_28.WebSrv = l_0_2
+          l_0_28.AnomalyTableName = "ShellCodeFileName"
           l_0_28.AnomalyTableInfo = l_0_27
           ;
           (bm.add_related_string)("AnomalyData", safeJsonSerialize(l_0_28), bm.RelatedStringBMReport)
