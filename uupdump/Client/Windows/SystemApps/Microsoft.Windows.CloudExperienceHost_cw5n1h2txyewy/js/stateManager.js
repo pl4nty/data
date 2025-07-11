@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -91,4 +87,3 @@ var CloudExperienceHost;
         getState: function () { return StateManager.getInstance().getWebAppState(CloudExperienceHost.getCurrentNode().cxid); },
     });
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=stateManager.js.map

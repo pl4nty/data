@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, bridge, constants, core) => {
     class provisioningProgressViewModel {
         constructor(resourceStrings, isOOBE, runProvisioning, restoreMDMTasks) {
@@ -32,12 +29,10 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.ErrorText = ko.observable(this.resourceStrings["BootstrapPageDefualtError"]);
             this.DevicePreparationErrorCodeText = ko.observable(this.resourceStrings["DevicePreparationErrorCode"]);
 
-            // Category visibility
             this.DevicePreparationDetails = ko.observable(false);
             this.DeviceSetupDetails = ko.observable(false);
             this.AccountSetupDetails = ko.observable(false);
 
-            // Device preparation details
             this.DevicePreparationStatusError = ko.observable("");
             this.DevicePreparationStatusOpacity = ko.observable("");
             this.IsDevicePreparationStatusBadgeVisible = ko.observable(false);
@@ -51,7 +46,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.DevicePreparationRegisteringForMDM = ko.observable(this.resourceStrings["BootstrapPageMDM"]);
             this.DevicePreparationPreparingForMDM = ko.observable(this.resourceStrings["BootstrapPagePrepareMDM"]);
 
-            // Device setup details
             this.DeviceSetupStatusError = ko.observable("");
             this.DeviceSetupStatusOpacity = ko.observable("");
             this.IsDeviceSetupStatusBadgeVisible = ko.observable(false);
@@ -66,7 +60,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.EnrollmentProgressDeviceSetupApplication = ko.observable(this.resourceStrings["BootstrapPageApps"]);
             this.EnrollmentProgressDeviceSetupSubscription = ko.observable(this.resourceStrings["BootstrapPageSubscription"]);
 
-            // Account setup details
             this.AccountSetupStatusError = ko.observable("");
             this.AccountSetupStatusOpacity = ko.observable("");
             this.IsAccountSetupStatusBadgeVisible = ko.observable(false);
@@ -104,12 +97,10 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.certificatesExpectedEndValue = 0;
             this.progressIsDone = false;
 
-            // Provisioning progress enumerations
             this.PROV_RUNNING = 0;
             this.PROV_SUCCEEDED = 1;
             this.PROV_FAILED = 2;
 
-            // Hyperlink Visibility Enumerations
             this.NO_HYPERLINK = 0;
             this.SHOW_CONTINUE_ANYWAY = 1;
             this.SHOW_COLLECT_LOGS = 2;
@@ -119,19 +110,14 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.minProgressTextTime = 5000;   // in ms
             this.pollingInterval = 500; // in ms
 
-            // MDM progress mode enumerations
             this.TARGET_DEVICE = 0;
             this.TARGET_USER = 1;
             this.TARGET_DEVICE_AND_USER = 2;
 
-            // Policy provider installation result enumerations
             this.INSTALL_SUCCESS = 1;
             this.INSTALL_TIMEOUT = 2;
             this.INSTALL_FAILURE = 3;
 
-            // Sharable Data Value - must be kept in sync with value in:
-            // autopilotwhiteglovelanding-vm.js
-            // autopilotwhitegloveresult-vm.js
             this.whiteGloveStartTimeValueName = "AutopilotWhiteGloveStartTime";
             this.whiteGloveEndTimeValueName = "AutopilotWhiteGloveEndTime";
             this.whiteGloveSuccessValueName = "AutopilotWhiteGloveSuccess";
@@ -274,7 +260,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.bootstrapStatusIdPreviousFailed = "BootstrapPagePrevStepFailed";
             this.defaultErrorMessageId = "BootstrapPageDefualtError";
 
-            // The ordering of the following subcategories is required for the code to work.
             this.devicePreparationSubcategories = [];
             this.devicePreparationSubcategories.push({ textControl: this.DevicePreparationTPM, titleId: this.subcategoryTpmTitleId });
             this.devicePreparationSubcategories.push({ textControl: this.DevicePreparationJoiningNetwork, titleId: this.subcategoryJoinNetworksTitleId });
@@ -287,14 +272,11 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 try {
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", this.espDevicePrepCompleted).then(function (devicePrepCompleted) {
                         if (devicePrepCompleted === true) {
-                            // Device preparation already completed, no need to run it again.
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_Skipping_DevicePrep_Phase");
                             this.setDevicePrepartionComplete();
                             this.checkMDMTrackingInfo();
                         } else {
-                            // This is being run in OOBE, so run the steps in the device preparation category.
                             this.autoPilotManager.getOobeSettingsOverrideAsync(EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotOobeSetting.aadAuthUsingDeviceTicket).then(function (isUsingDeviceTicket) {
-                                // Initialize the first category's subcategories' statuses.
                                 this.displayProgress(this.DevicePreparationStatus, this.bootstrapStatusIdWorking);
 
                                 for (var i = 0; i < this.devicePreparationSubcategories.length; i++) {
@@ -330,10 +312,8 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     throw error;
                 }
             } else {
-                // This is being run post-OOBE, so the steps in the device preparation category must have completed successfully.
                 this.setDevicePrepartionComplete();
 
-                // Wait for signal that AADJ has completed, then track MDM user policies.
                 bridge.invoke("CloudExperienceHost.getContext").then(function (result) {
                     let host = result.host.toLowerCase();
                     if (host === "mosetmdmconnecttoworkprovisioningprogress") {
@@ -368,7 +348,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         setupTPMAttestationTimeout() {
             this.aadAuthUsingDeviceTicket = true;
 
-            // Set a 7 minute timeout for TPM attestation
             this.tpmAttestationTimeout = WinJS.Promise.timeout(420000).then(function () {
                 try {
                     this.tpmNotificationManager.removeEventListener(this.tpmAttestationEventName, this.onTPMAttestationComplete.bind(this));
@@ -455,14 +434,12 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         }
 
         resetDeviceButtonClick() {
-            // Disable button so it can't be pressed repeatedly
             this.isResetButtonDisabled(true);
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "OobeProvisioningProgressPage_resetDeviceButtonClick", "Reset device button chosen.");
             var pluginManager = new CloudExperienceHostAPI.Provisioning.PluginManager();
             pluginManager.initiateSystemResetAsync().then(function (results) {
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "OobeProvisioningProgressPage_resetDeviceButtonClick_initiateSystemReset_Succeeded", "Successfully initiated system reset.");
             }.bind(this), function (e) {
-                // error happened, reenable the button
                 this.isResetButtonDisabled(false);
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "OobeProvisioningProgressPage_resetDeviceButtonClick_initiateSystemReset_ErrorInfo_Failed", JSON.stringify({ error: e }));
             }.bind(this));
@@ -490,13 +467,9 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.action3);
         }
 
-        // Sign out is required for scenarios where user is expected to be admin, but due to a race condition
-        // at initial login adding user to the administrators group, the user must log out and log back in for
-        // admin group membership to take affect.
         signOutButtonClick() {
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_SignOutButton_Clicked");
 
-            // Disable button so it can't be pressed repeatedly
             this.isSignOutButtonDisabled(true);
 
             try {
@@ -514,7 +487,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             }, (e) => {
                 this.logFailureEvent("UnifiedEnrollment_ProvisioningProgressPage_SignOutButton_Failed", e);
 
-                // If the sign out button fails for any reason, exit the ESP so the user isn't blocked/stuck.
                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.action3);
             });
         }
@@ -522,7 +494,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         onTPMAttestationComplete(hresult) {
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "TPM Attestation completed");
 
-            // Stop the TPM attestation timeout
             this.tpmAttestationTimeout.cancel();
             this.tpmAttestationTimeout = null;
 
@@ -583,7 +554,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 this.displayProgress(this.DevicePreparationJoiningNetwork, this.subcategoryJoinNetworksTitleId, this.bootstrapStatusIdCompleted);
                 this.performDeviceEnrollment();
             } else {
-                // Only instantiate this object if launchProvisioning is required. This will fail on WCOS devices as provisioning is only available on desktop
                 this.provisioningPluginManager = new CloudExperienceHostAPI.Provisioning.PluginManager();
 
                 let provisioningPromises = {
@@ -598,12 +568,10 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         }
 
         pollProvisioningResults() {
-            // Break the polling when complete.
             if (this.stopPollingResults) {
                 return WinJS.Promise.as(true);
             }
 
-            // Get the real-time updates.
             return this.provisioningPluginManager.getProvisioningSucceededAsync().then((result) => {
                 if (this.provisioningPluginManager.isRebootRequired()) {
                     this.stopPollingResults = true;
@@ -626,7 +594,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 .then(() => {
                     return this.pollProvisioningResults();
                 })
-                // Regardless of the errors, we continue the polling.
                 .then(null, (error) => {
                     return WinJS.Promise.timeout(this.pollingInterval);
                 })
@@ -636,8 +603,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         }
 
         performAadDeviceEnrollmentInternal() {
-            // N.B, we need to 'bind' the class object not because it is UX but because the lambda internally needs the object.
-            // Failing to bind results in access to 'this' failing and throwing an exception.
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Starting AutoPilot device enrollment");
             return this.autoPilotManager.performDeviceEnrollmentAsync().then(function (result) {
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Device enrollment call completed. Processing results...");
@@ -736,10 +701,8 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     this.waitForEspPolicyProviders().then(function () {
                         if (this.policyProvidersInstalled === true) {
                             if (this.runProvisioning) {
-                                // This page follows a Powerwash.
                                 this.doneProvisioning();
                             } else {
-                                // This page does not follow a Powerwash, but follows a user enrollment.
                                 this.checkMDMTrackingInfo();
                             }
                         }
@@ -756,7 +719,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Start wait for ESP policy providers");
             this.displayProgress(this.DevicePreparationPreparingForMDM, this.subcategoryPrepareMdmTitleId, this.bootstrapStatusIdWorking);
 
-            // Fire and forget
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_Starting_Sync_Sessions_For_PolicyProviders");
             this.deviceManagementUtilities.runSyncSessionsAsync(ModernDeployment.Autopilot.Core.SyncSessionExitCondition.policyProvidersComplete).then(function() {
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_Sync_Sessions_Completed");
@@ -768,7 +730,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "waitForPolicyProviderInstallationToComplete returned, processing results...");
 
                 if (result.installationResult === this.INSTALL_SUCCESS) {
-                    // Completed successfully
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "waitForPolicyProviderInstallationToComplete returned success result");
                     this.setDevicePreparationStatus(true, this.DevicePreparationPreparingForMDM);
                     this.policyProvidersInstalled = true;
@@ -777,12 +738,10 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     let errorCode = 0;
 
                     if (result.installationResult === this.INSTALL_TIMEOUT) {
-                        // Provider timeout
                         errorCode = result.errorCode;
                         logMessage = logMessage + "installation timed out.";
                     }
                     else if (result.installationResult === this.INSTALL_FAILURE) {
-                        // Provider reported error
                         logMessage = logMessage + "installation failed with error 0x" + this.formatNumberAsHexString(result.errorCode, 8);
                         errorCode = result.errorCode;
                     } else {
@@ -817,17 +776,14 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     if (subscriptionAcquired) {
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Successfully auto-claimed a subscription.");
 
-                        // Set success visuals
                         this.displayProgress(this.EnrollmentProgressDeviceSetupSubscription, "BootstrapPageSubscription", "BootstrapPageComplete");
                         this.exitPage();
                     } else {
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Failed to auto-claim a subscription.");
 
-                        // Set failure visuals
                         this.displayProgress(this.EnrollmentProgressDeviceSetupSubscription, "BootstrapPageSubscription", "BootstrapPageFailed");
                         this.setAccountSetupStatus(false);
 
-                        // Navigate to device subscription page. No need to show the error buttons since the page is auto-navigating to the subscription page.
                         WinJS.Promise.timeout(3000 /*3 second timeout*/).then(() => {
                             bridge.fireEvent(constants.Events.done, constants.AppResult.action1);
                         });
@@ -882,7 +838,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 this.blockingValue = result;
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_BlockingValue", result);
                 if (this.blockingValue == 0) {
-                    // In Autopilot White Glove, clicking the Continue Anyway button before AADJ is completed can put the device in a userless state, so it is blocked no matter what.
                     this.autoPilotManager.getDeviceAutopilotModeAsync().then(function (result) {
                         if ((result !== EnterpriseDeviceManagement.Service.AutoPilot.AutopilotMode.whiteGloveCanonical) &&
                             (result !== EnterpriseDeviceManagement.Service.AutoPilot.AutopilotMode.whiteGloveDJPP)) {
@@ -907,7 +862,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 this.trackMDMSyncProgress();
             }.bind(this), function (e) {
                 this.logFailureEvent("UnifiedEnrollment_ProvisioningProgressPage_Exit_CheckBlockingValues_Failed", e);
-                // Something critical failed, skip the page.
                 this.exitPage();
             }.bind(this));
         }
@@ -916,15 +870,12 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             bridge.invoke("CloudExperienceHost.UserManager.setSignInIdentityProvider", CloudExperienceHostAPI.SignInIdentityProviders.aad);
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_AADJ_Successfully_Completed");
 
-            // Stop the AADJ event timeout
             this.aadjTimeout.cancel();
             this.aadjTimeout = null;
 
-            // Device is now domain joined, stop trying to run the background task
             clearInterval(this.deviceRegistrationTaskScheduler);
             this.deviceRegistrationTaskScheduler = null;
 
-            // Re-create the OMADM sync tasks to force user policy sync upon AADJ completing.
             this.enterpriseManagementWorker.recreateEnrollmentTasksAsync().then(function () {
                 this.displayProgress(this.EnrollmentProgressAccountAuthentication, "BootstrapPageAADJ", "BootstrapPageComplete");
                 this.checkMDMTrackingInfo();
@@ -940,7 +891,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.IsAccountSetupDetailsVisible(true);
             this.setDeviceSetupStatus(true);
 
-            // Set the initial status values for each of the the subcategories
             this.EnrollmentProgressAccountSetupStatus(resourceStrings["BootstrapPageWorking"]);
             this.displayProgress(this.EnrollmentProgressAccountAuthentication, "BootstrapPageAADJ", "BootstrapPageWorking");
             this.displayProgress(this.EnrollmentProgressAccountSetupPolicies, "BootstrapPageSecurityPolicies", "BootstrapPageWaitingForPrevious");
@@ -948,7 +898,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.displayProgress(this.EnrollmentProgressAccountSetupNetwork, "BootstrapPageNetwork", "BootstrapPageWaitingForPrevious");
             this.displayProgress(this.EnrollmentProgressAccountSetupApplication, "BootstrapPageApps", "BootstrapPageWaitingForPrevious");
 
-            // Create a 5 minute periodic timer for kicking off the scheduled task to register the device with AAD
             this.deviceRegistrationTaskScheduler = setInterval(function () {
                 this.enterpriseManagementWorker.forceRunDeviceRegistrationScheduledTaskAsync().then(function () {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_Start_DJTask_Succeeded");
@@ -957,10 +906,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 }.bind(this));
             }.bind(this), 300000);
 
-            // Create a 1 hour timeout for AADJ to occur - the reason for this timeout is AD connect happens in the
-            // background approximately every 30 minutes, and once this occurs, the device registration task (forced 
-            // to run every five minutes by deviceRegistrationTaskScheduler) will finally succeed, at which point
-            // the device is AADJ'd
             this.aadjTimeout = WinJS.Promise.timeout(3600000).then(function () {
                 this.autoPilotSubscriptionManager.removeEventListener(this.aadjEventName, this.onAadjCompleted.bind(this));
 
@@ -979,13 +924,11 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
 
         trackMDMSyncProgress() {
             if (this.targetContext === 0) {
-                // Reset Device setup visuals
                 this.IsDeviceSetupDetailsVisible(true);
                 this.DeviceSetupProgressVisibility("visible");
                 this.IsDeviceSetupStatusBadgeVisible(false);
                 this.EnrollmentProgressDeviceSetupStatus(resourceStrings["BootstrapPageIdentifying"]);
             } else {
-                // Reset Account Setup visuals
                 this.IsAccountSetupDetailsVisible(true);
                 this.AccountSetupProgressVisibility("visible");
                 this.IsAccountSetupStatusBadgeVisible(false);
@@ -1232,7 +1175,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 }
             }.bind(this));
 
-            // This is a fire and forget operation because sendResultsToMdmServerAsync sets the IsSyncDone node to actually break out of this wait, so we can't put this in the promise join.
             let espPhase = this.isOOBE ? "DeviceSetup" : "AccountSetup";
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", `UnifiedEnrollment_ProvisioningProgressPage_Starting_Sync_Sessions_For_${espPhase}`);
             const exitCondition = this.isOOBE ? ModernDeployment.Autopilot.Core.SyncSessionExitCondition.deviceSetupComplete : ModernDeployment.Autopilot.Core.SyncSessionExitCondition.accountSetupComplete;
@@ -1249,9 +1191,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     this.certificatesCurrentProgress === this.certificatesExpectedEndValue && ((this.appsCurrentProgress === this.appsExpectedEndValue) || this.appsBlockedByReboot)) {
                     this.progressIsDone = true;
 
-                    // Reboot the device if required due to policies/settings being set that require reboot.
                     this.enterpriseManagementWorker.checkRebootRequiredAsync().then(function (isRebootRequired) {
-                        // Should only reboot in OOBE.  This makes sure the web app doesn't "Fall off" before pin.
                         if (this.isOOBE && isRebootRequired) {
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_CoalescedRebootRequired");
                             bridge.invoke("CloudExperienceHost.setRebootForOOBE");
@@ -1284,7 +1224,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                             }
                         }
                     }.bind(this), function (e) {
-                        // Failure happened, but don't error out page because of it.
                         this.logFailureEvent("UnifiedEnrollment_ProvisioningProgressPage_RebootApi_Failed", e);
                         try {
                             this.enterpriseManagementWorker.updateServerWithResult(true, this.isOOBE);
@@ -1344,10 +1283,8 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
 
             if (textString2 != null) {
                 if (resourceStrings[textString2]) {
-                    // If defined, use a string in the resource array
                     finalProgressText = finalProgressText.replace("{0}", resourceStrings[textString2]);
                 } else {
-                    // Otherwise, use the passed-in string
                     finalProgressText = finalProgressText.replace("{0}", textString2);
                 }
             }
@@ -1393,7 +1330,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             if (isSuccessful) {
                 statusErrorMessageControl(resourceStrings[this.bootstrapStatusIdCompleted]);
             } else {
-                // Icons had been initialized to success.
                 statusbadgeFill("failure");
                 statusbadgeIcon("icon-failed");
                 statusError("error");
@@ -1406,14 +1342,12 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         }
 
         setDevicePreparationStatus(isSuccessful, applicableSubcategory, subcategoryErrorMessageId) {
-            // Set subsequent categories' status text appropriately on failure.  Also, show default error message.
             if (!isSuccessful) {
                 this.displayProgress(this.EnrollmentProgressDeviceSetupStatus, this.bootstrapStatusIdPreviousFailed);
                 this.displayProgress(this.EnrollmentProgressAccountSetupStatus, this.bootstrapStatusIdPreviousFailed);
                 this.EnrollmentProgressNotifyOfNotificationText(resourceStrings[this.defaultErrorMessageId]);
             }
 
-            // Set appropriate status text for subcategories.
             let foundSubcategoryIndex = 0;
             for (; foundSubcategoryIndex < this.devicePreparationSubcategories.length; foundSubcategoryIndex++) {
                 if (applicableSubcategory == this.devicePreparationSubcategories[foundSubcategoryIndex].textControl) {
@@ -1427,7 +1361,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     this.devicePreparationSubcategories[foundSubcategoryIndex].titleId,
                     this.bootstrapStatusIdCompleted);
 
-                // If the last subcategory is successful, set the whole category visuals to success.
                 if (foundSubcategoryIndex === this.devicePreparationSubcategories.length - 1) {
                     this.setCategoryStatusVisuals(
                         true,
@@ -1445,7 +1378,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     this.devicePreparationSubcategories[foundSubcategoryIndex].titleId,
                     (subcategoryErrorMessageId == null) ? this.bootstrapStatusIdFailed : subcategoryErrorMessageId);
 
-                // Set "previous failed" message on subsequent subcategories under the same category.
                 for (var i = foundSubcategoryIndex + 1; i < this.devicePreparationSubcategories.length; i++) {
                     this.displayProgress(
                         this.devicePreparationSubcategories[i].textControl,
@@ -1453,7 +1385,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                         this.bootstrapStatusIdPreviousFailed);
                 }
 
-                // If any subcategory fails, set the whole category visuals to fail.
                 this.setCategoryStatusVisuals(
                     false,
                     this.DevicePreparationStatusBadgeFill,
@@ -1466,7 +1397,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             }
 
             if (!isSuccessful) {
-                // Show appropriate buttons.
                 this.blockingValue = 1;
                 this.showCollectLogs = true;
                 this.displayErrorButtons();

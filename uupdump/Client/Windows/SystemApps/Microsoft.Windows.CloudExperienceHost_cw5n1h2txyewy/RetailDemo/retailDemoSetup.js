@@ -1,4 +1,3 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
 (function () {
     "use strict";
 
@@ -29,7 +28,6 @@
         },
 
         ready: function (element, options) {
-            // Load string resources in HTML elements
             rdamTitle.textContent = resources.rdamTitle;
             rdamText.textContent = resources.rdamText;
             racLegend.textContent = resources.racLegend;
@@ -50,8 +48,6 @@
                 extraConfigButton.style.visibility = "visible";
             }
 
-            // Verify that the RAC is alphanumeric.
-            // If so, proceed to retrieve the list of SKUs from RDAM.
             racInput.addEventListener("change", function () {
                 if (racErrorExists) {
                     racError.style.display = 'none';
@@ -66,7 +62,6 @@
                 skuInput.disabled = true;
                 storeIdInput.disabled = true;
 
-                // Check if alphanumeric
                 if (racInput.value.match(/^[a-zA-Z\d]+$/)) {
                     blockNext = true;
                     racInput.disabled = true;
@@ -76,7 +71,6 @@
                     progressContainer.appendChild(ring);
                     nextButton.classList.remove("button_primary");
 
-                    // Query RDAM, timeout of 30 seconds
                     let options = {
                         url: "https://retailstore.microsoft.com/RedecsService/Content/api/attributes/metadata?RAC=" + racInput.value,
                         responseType: "json"
@@ -87,7 +81,6 @@
                             allowUserToContinue();
                         },
                         function (error) {
-                            // Status code is 0 if interent goes out or url doesn't exist for some reason
                             if ((error.message === "Canceled") || (error.status === 0)) {
                                 showRacError(resources.errorRequestTimeout);
                                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "RdamRequestTimeout");
@@ -112,7 +105,6 @@
                 }
             });
 
-            // Set RAC/SKU, create RetailAdmin if necessary, fire done
             nextButton.addEventListener("click", function (eventInfo) {
                 eventInfo.preventDefault();
                 if (!blockNext) {
@@ -122,7 +114,6 @@
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "RetailInfoSetterFailure", JSON.stringify({ number: error.number.toString(16), description: error.description }));
                         switch (navFlow) {
                             case "RDXFRXMOB":
-                                // Proceed to rdxMsa
                                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
                                 break;
                             case "FRXRDX":
@@ -130,7 +121,6 @@
                                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                 break;
                             case "RDXRACSKU":
-                                // Allow the user to retry setting RAC/SKU as they can always close the app if things are really stuck
                                 break;
                             default: // Unknown flow
                                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.abort);
@@ -164,11 +154,9 @@
                 storeIdInput.value = Windows.System.Profile.RetailInfo.properties.lookup("StoreID");
             }
 
-            // Call to register EaseOfAccess and InputSwitcher controls
             uiHelpers.RegisterEaseOfAccess(easeOfAccess, bridge);
             uiHelpers.RegisterInputSwitcher(inputSwitcher, bridge);
 
-            // Check if CXH has internet access
             bridge.invoke("CloudExperienceHost.Environment.hasInternetAccess").done(function (connected) {
                 if (!connected) {
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.abort);
@@ -179,7 +167,6 @@
                 bridge.fireEvent(CloudExperienceHost.Events.visible, true);
             });
 
-            // Write RAC and SKU to registry
             function writeRacAndSkuAsyncThen(complete, error) {
                 let platform = CloudExperienceHost.Environment.getPlatform();
                 if ((navFlow != "RDXRACSKU") || (platform === CloudExperienceHost.TargetPlatform.MOBILE)) {
@@ -201,7 +188,6 @@
                 }
             }
 
-            // Show an error message under the RAC input
             function showRacError(message) {
                 if (racError.firstChild) {
                     racError.removeChild(racError.firstChild);
@@ -220,13 +206,10 @@
                 racError.style.display = 'inline';
             }
 
-            // Enable all text entry fields and the next button
             function allowUserToContinue() {
                 skuInput.disabled = false;
                 storeIdInput.disabled = false;
                 racInput.disabled = false;
-                // Be careful where calling allowUserToContinue from
-                // so that rdamProgress exists/isn't removed twice.
                 progressContainer.removeChild(rdamProgress);
                 nextButton.classList.add("button_primary");
                 blockNext = false;

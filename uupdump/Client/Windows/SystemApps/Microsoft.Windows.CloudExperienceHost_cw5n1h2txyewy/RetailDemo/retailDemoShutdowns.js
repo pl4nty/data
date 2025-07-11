@@ -1,4 +1,3 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
 (function () {
     "use strict";
 
@@ -28,7 +27,6 @@
         },
 
         ready: function (element, options) {
-            // Load string resources in HTML elements
             rdamTitle.textContent = resources.shutdownsTitle;
             timeZoneText.textContent = resources.timeZoneText;
             cancelButton.textContent = resources.cancelButton;
@@ -36,7 +34,6 @@
             useOfflineShutdownToggle.winControl.labelOn = useOfflineShutdownToggle.winControl.labelOff = resources.useOfflineShutdownToggle;
 
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Override_Toggle_Accessibility")) {
-                // set the role to switch for the accessibility API to read it as toggle switch instead of checkbox
                 useOfflineShutdownToggle.setAttribute("aria-label", resources.useOfflineShutdownToggle);
                 useOfflineShutdownToggle.setAttribute("role", "switch");
             }
@@ -60,10 +57,6 @@
                     "thursdayShutdownTime", "fridayShutdownTime", "saturdayShutdownTime", "sundayShutdownTime"];
             }
 
-            // 9/5/2016 is a Monday. We don't want to include new strings for the days of the week, 
-            // so we'll set the dates in the pickers to actual calendar days that correspond to 
-            // Monday - Sunday. This will allow us to Globalization APIs to get the calendar days from
-            // the time pickers.
             let year = 2016;
             let month = 8; // Windows starts counting months at 0. This is September.
             let aMondayDay = 5;
@@ -75,14 +68,12 @@
             populateShutdownTimes(saturdayLegend, saturdayTime, weekdayRegistryValues[5], year, month, aMondayDay + 5);
             populateShutdownTimes(sundayLegend, sundayTime, weekdayRegistryValues[6], year, month, aMondayDay + 6);
 
-            // Set shutdown times and fire done
             nextButton.addEventListener("click", function (eventInfo) {
                 eventInfo.preventDefault();
                 writeShutdownTimesAsyncThen(function () {
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                 }, function (error) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "RetailInfoSetterFailure", JSON.stringify({ number: error.number.toString(16), description: error.description }));
-                    // Go back to the setup page on failure.
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.cancel);
                 });
             });
@@ -97,12 +88,6 @@
                 });
             });
 
-            // Reusing the method used in OobeToggle VM to handle click events on the toggle
-            // To support programmatic control through Narrator/UIA the toggle needs to support click event,
-            // which WinJS's implementation does not do (they build on pointerdown directly against the slider div)
-            // Thus we add two handlers in the OobeToggle VM
-            // - pointerdown, which executes in the capturing (routing) phase to suppress WinJS's own behavior
-            // - click, to add checked-flipping for clicks to the slider and label and programmatic clicks
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Narrator_ScanMode_Activation_Accessibility")) {
                 useOfflineShutdownToggle.addEventListener("click", function (eventInfo) {
                     useOfflineShutdownToggle.winControl.checked = !useOfflineShutdownToggle.winControl.checked;
@@ -122,13 +107,11 @@
                 }
             });
 
-            // Call to register EaseOfAccess and InputSwitcher controls
             uiHelpers.RegisterEaseOfAccess(easeOfAccess, bridge);
             uiHelpers.RegisterInputSwitcher(inputSwitcher, bridge);
 
             bridge.fireEvent(CloudExperienceHost.Events.visible, true);
 
-            // Write shutdown times to the registry
             function writeShutdownTimesAsyncThen(complete, error) {
                 if (hasOnlineSettings && !useOfflineShutdownToggle.winControl.checked) {
                     complete();
@@ -212,7 +195,6 @@
                 legend.textContent = calendar.dayOfWeekAsString();
             }
 
-            // overriding default behaviour
             function onPointerDownHandler(ev) {
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Narrator_ScanMode_Activation_Accessibility")) {
                     ev.stopImmediatePropagation();

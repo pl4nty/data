@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobeSettingsData, bridge, constants, core, KoHelpers) => {
 
     class HelloBioConsentViewModel {
@@ -23,7 +20,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             ];
             this.selectedItem = ko.observable();
 
-            // Set up member variables for the learn more page
             this.learnMoreContent = oobeSettingsData.getLearnMoreContent();
             this.learnMoreVisible = ko.observable(false);
             this.bioConsentVisible = ko.pureComputed(() => {

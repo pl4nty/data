@@ -1,4 +1,3 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
 (function () {
     "use strict";
 
@@ -32,7 +31,6 @@
         ready: function (element, options) {
             let processingFlag = false;
 
-            // Load string resources in HTML elements
             document.title = resources.rdxTitle;
             securityTitle.textContent = resources.securityTitle;
             securityText.textContent = resources.securityText;
@@ -46,16 +44,13 @@
                 passwordInputCheck.setAttribute("aria-roledescription", resources.editField);
             }
 
-            // start the toggle out disabled until the RDAM request has completed
             passwordManagementToggle.disabled = true;
 
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Toggle_Control_Type_Accessibility")) {
-                // set the role to switch for the accessibility API to read it as toggle switch instead of checkbox
                 passwordManagementToggle.setAttribute("aria-label", resources.passwordManagmentLegend);
                 passwordManagementToggle.setAttribute("role", "switch");
             }
 
-            // Check the flow
             if (navFlow === "FRXINCLUSIVE") {
                 nextButton.textContent = resources.nextButton;
             } else {
@@ -65,12 +60,6 @@
             passwordInputCheck.addEventListener("change", passwordCheck);
             passwordInput.addEventListener("change", passwordCheck);
             
-            // Reusing the method used in OobeToggle VM to handle click events on the toggle
-            // To support programmatic control through Narrator/UIA the toggle needs to support click event,
-            // which WinJS's implementation does not do (they build on pointerdown directly against the slider div)
-            // Thus we add two handlers in the OobeToggle VM
-            // - pointerdown, which executes in the capturing (routing) phase to suppress WinJS's own behavior
-            // - click, to add checked-flipping for clicks to the slider and label and programmatic clicks
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Narrator_ScanMode_Activation_Accessibility")) {
                 passwordManagementToggle.addEventListener("click", function (eventInfo) {
                     passwordManagementToggle.winControl.checked = !passwordManagementToggle.winControl.checked;
@@ -96,7 +85,6 @@
                 }
             });
 
-            // we allow a max of 21 days before we disable the admin account
             for (let i = 0; i < 22; i++) {
                 let option = document.createElement("option");
                 option.value = i * 24;
@@ -118,7 +106,6 @@
                 racValue = Windows.System.Profile.RetailInfo.properties.lookup("RetailAccessCode");
             }
 
-            // before the RDAM request, prevent the user from continuing
             preventContinue();
             let racOption = {
                 url: "https://retailstore.microsoft.com/RedecsService/Content/api/attributes/metadata?RAC=" + racValue,
@@ -127,14 +114,12 @@
             WinJS.Promise.timeout(30000, bridge.invoke("WinJS.xhr", racOption)).then(
                 function (result) {
                     rdamJson = result.response;
-                    // populate the password if the rac has one
                     passwordInput.value = rdamJson.RetailerAccessCodes[0].AdminPassword;
                     passwordInputCheck.value = rdamJson.RetailerAccessCodes[0].AdminPassword;
                     passwordManagementToggle.disabled = false
                     allowUserToContinue();
                 },
                 function (error) {
-                    // Status code is 0 if interent goes out or url doesn't exist for some reason
                     if ((error.message === "Canceled") || (error.status === 0)) {
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "RdamRequestTimeout");
                     } else {
@@ -156,14 +141,12 @@
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "DisableAdminSelected", timeoutSelect[timeoutSelect.selectedIndex].value);
                             bridge.invoke("RetailDemo.Internal.RetailInfoSetter.setDWORDAsync", "DelayDisableAdminAccess", timeoutSelect[timeoutSelect.selectedIndex].value)
                             .done(() => {
-                                // The CXH Done event is fired from SetupPageSuccessNavigation. Failure in SetupPageSuccessNavigation fails CXH.
                                 retailDemoShared.SetupPageSuccessNavigation(rdamJson ? rdamJson.RetailerAccessCodes[0].AdminPassword : null, navFlow, bridge);
                             });
                         } else {
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "CustomPasswordSelected");
                             bridge.invoke("RetailDemo.Internal.RetailInfoSetter.setDWORDAsync", "DelayDisableAdminAccess", 4294967295) // max dword
                             .done(() => {
-                                // The CXH Done event is fired from SetupPageSuccessNavigation. Failure in SetupPageSuccessNavigation fails CXH.
                                 retailDemoShared.SetupPageSuccessNavigation(passwordInput.value, navFlow, bridge);
                             });
                         }
@@ -175,14 +158,12 @@
                 }
             });
 
-            // If the disable admin account feature is not enabled, do not show this page.
             if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_DisableAdminAccount")) {
                 retailDemoShared.SetupPageSuccessNavigation(null, navFlow, bridge);
             } else {
                 bridge.fireEvent(CloudExperienceHost.Events.visible, true);
             }
 
-            // Show an error message under the RAC input
             function showPasswordError(message) {
                 if (passwordError.firstChild) {
                     passwordError.removeChild(passwordError.firstChild);
@@ -205,7 +186,6 @@
                 passwordError.style.display = 'inline';
             }
 
-            // Enable all text entry fields and the next button
             function allowUserToContinue() {
                 nextButton.classList.add("button_primary");
                 blockNext = false;
@@ -227,7 +207,6 @@
                     passwordErrorExists = false;
                 }
 
-                // Check if the passwords match
                 if ((passwordInput.value.length == 0) || (passwordInputCheck.value.length == 0)) {
                     preventContinue();
                 } else if (passwordInput.value != passwordInputCheck.value) {
@@ -240,7 +219,6 @@
                 }
             }
 
-            // overriding default behaviour
             function onPointerDownHandler(ev) {
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Narrator_ScanMode_Activation_Accessibility")) {
                     ev.stopImmediatePropagation();

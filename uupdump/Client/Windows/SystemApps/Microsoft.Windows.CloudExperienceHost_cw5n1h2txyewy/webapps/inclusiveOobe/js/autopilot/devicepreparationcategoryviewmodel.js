@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -17,22 +14,18 @@ define([
     commercialDiagnosticsUtilities) => {
     class devicePreparationCategoryViewModel {
         constructor(resourceStrings, sessionUtilities) {
-            // Constants
             this.MAX_TPM_ATTESTATION_WAIT_TIME_IN_MILLISECONDS = 420000; // 7 minutes
             this.MIN_PPKG_PROCESSING_TIME_IN_MILLISECONDS = 5000;   // 5 seconds
             this.POLLING_INTERVAL_IN_MILLISECONDS = 500; // .5 seconds
 
-            // Provisioning progress enumerations
             this.PROVISIONING_STATUS_RUNNING = 0;
             this.PROVISIONING_STATUS_SUCCEEDED = 1;
             this.PROVISIONING_STATUS_FAILED = 2;
 
-            // ESP policy provider installation result codes
             this.ESP_POLICY_PROVIDER_INSTALL_RESULT_SUCCESS = 1;
             this.ESP_POLICY_PROVIDER_INSTALL_RESULT_TIMEOUT = 2;
             this.ESP_POLICY_PROVIDER_INSTALL_RESULT_FAILURE = 3;
 
-            // Private member variables
             this.resourceStrings = resourceStrings;
             this.tpmIsAttested = false;
             this.whiteGloveMode = 0; // Initialize to unknown mode
@@ -59,18 +52,14 @@ define([
             });
         }
 
-        // Private methods
         runTpmAttestationAsync() {
             return new WinJS.Promise(
-                // Promise initialization handler
                 (completeDispatch, errorDispatch, progressDispatch) => {
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "CommercialOOBE_ESPDevicePreparation_TPMAttestation_Started",
                         "Beginning TPM identity attestation for device token Azure AD Join.");        
                     let tpmAttestationWaitPromise = new WinJS.Promise(
-                        // Promise initialization handler
                         (completeDispatch, errorDispatch, progressDispatch) => {
-                            // Create event handler.
                             this.tpmAttestationListener = (hresult) => {
                                 if (0 === hresult.target) {
                                     this.commercialDiagnosticsUtilities.logInfoEvent(
@@ -91,7 +80,6 @@ define([
                                 completeDispatch(true);
                             };
 
-                            // Register event handler.
                             try {
                                 this.sessionUtilities.tpmNotificationManager.addEventListener(this.tpmAttestationEventName, this.tpmAttestationListener.bind(this));
                             } catch (e) {
@@ -102,11 +90,9 @@ define([
                             }
                         },
 
-                        // Promise cancellation event handler
                         () => {
                         });
 
-                    // Set a max timeout for TPM attestation
                     let tpmAttestationTimeoutPromise = WinJS.Promise.timeout(this.MAX_TPM_ATTESTATION_WAIT_TIME_IN_MILLISECONDS).then(() => {
                         this.commercialDiagnosticsUtilities.logHresultEvent(
                             "CommercialOOBE_ESPDevicePreparation_TPMAttestation_TimedOut",
@@ -119,10 +105,8 @@ define([
                         tpmAttestationWaitPromise
                     ];
 
-                    // Wait for either the TPM attested state or the timeout.
                     return WinJS.Promise.any(tpmAttestationPromises).then(() => {
                         if (this.tpmAttestationListener !== null) {
-                            // Remove event listener for TPM Attestation
                             try {
                                 this.sessionUtilities.tpmNotificationManager.removeEventListener(this.tpmAttestationEventName, this.tpmAttestationListener.bind(this));
                             } catch (e) {
@@ -136,7 +120,6 @@ define([
                         tpmAttestationTimeoutPromise.cancel();
                         tpmAttestationTimeoutPromise = null;
 
-                        // ERROR_TIMEOUT
                         if (!this.tpmIsAttested && (undefined === this.tpmAttestationErrorHresultString)) {
                             this.tpmAttestationErrorHresultString = this.commercialDiagnosticsUtilities.formatNumberAsHexString(this.sessionUtilities.HRESULT_TIMEOUT, 8);
                             this.sessionUtilities.storeTransientState(this.sessionUtilities.WHITE_GLOVE_ERROR_USER_MESSAGE, this.resourceStrings.WhiteGloveTpmTimeoutError);
@@ -148,19 +131,15 @@ define([
                     });
                 },
 
-                // Promise cancellation event handler
                 () => {
                 });
         }
 
         startWaitForTpmAttestationAsync() {
             if (!this.isUsingDeviceTicket) {
-                // Check if this is the White Glove flow, which requires TPM attestation.
                 return bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "AutopilotWhiteGloveStartTime").then(
-                    // Continuation handler
                     (result) => {
                         if (undefined === result) {
-                            // White Glove is NOT in progress.
                             this.commercialDiagnosticsUtilities.logInfoEvent(
                                 "CommercialOOBE_ESPDevicePreparation_WhiteGlove_StartTimeMissing",
                                 "BootstrapStatus: Unable to find AutopilotWhiteGloveStartTime value.");
@@ -170,22 +149,18 @@ define([
                                 "Skipping TPM Attestation."
                             );
 
-                            // Since the device won't be using a device AAD ticket and White Glove is not in progress, then there's no need to initiate TPM attestation.
                             return WinJS.Promise.as(this.sessionUtilities.createActionResult(
                                 this.sessionUtilities.SUBCATEGORY_STATE_SUCCEEDED,
                                 null));
                         }
 
-                        // White Glove is in progress.
                         this.commercialDiagnosticsUtilities.logInfoEvent(
                             "CommercialOOBE_ESPDevicePreparation_WhiteGlove_Started",
                             "OOBEProvisioningProgress AutopilotWhiteGloveFlow");
                         return this.runTpmAttestationAsync();
                     },
 
-                    // Error handler
                     (e) => {
-                        // Return an error.
                         this.commercialDiagnosticsUtilities.logExceptionEvent(
                             "CommercialOOBE_ESPDevicePreparation_StartWaitForTPMAttestation_Error",
                             "BootstrapStatus: TPM attestation failed.",
@@ -202,11 +177,9 @@ define([
 
          pollForPpkgProcessingResultsAsync() {
             return new WinJS.Promise(
-                // Promise initialization handler
                 (completeDispatch, errorDispatch, progressDispatch) => {
                     return this.sessionUtilities.provisioningPluginManager.getProvisioningSucceededAsync().then((processingResult) => {
                         if (this.sessionUtilities.provisioningPluginManager.isRebootRequired()) {
-                            // Provisioning processing requires a reboot. Initiate it now.
                             this.commercialDiagnosticsUtilities.logInfoEvent(
                                 "CommercialOOBE_ESPDevicePreparation_AADJProvisioningReboot_Started",
                                 "PPKG package provisioning processing requires a reboot.");
@@ -224,7 +197,6 @@ define([
                                 "Reboot following provisioning succeeded."
                             );
 
-                            // Stop polling with success (although shouldn't matter, since the device will reboot anyway).
                             completeDispatch(this.sessionUtilities.createActionResult(
                                 this.sessionUtilities.SUBCATEGORY_STATE_SUCCEEDED,
                                 null));
@@ -235,7 +207,6 @@ define([
                                 "BootstrapStatus: PPKG package provisioning succeeded."
                             );
 
-                            // Stop polling with success.
                             completeDispatch(this.sessionUtilities.createActionResult(
                                 this.sessionUtilities.SUBCATEGORY_STATE_SUCCEEDED,
                                 null));
@@ -246,25 +217,20 @@ define([
                                 "BootstrapStatus: PPKG package provisioning failed."
                             );
 
-                            // Stop polling with error.
                             completeDispatch(this.sessionUtilities.createActionResult(
                                 this.sessionUtilities.SUBCATEGORY_STATE_FAILED,
                                 this.resourceStrings["BootstrapPageDevicePreparationReapplyingPpkgsErrorMessage"]));
                         }
 
-                        // Default: Continue waiting.
 
                     }).then(() => {
-                        // Continue waiting.
                         return WinJS.Promise.timeout(this.POLLING_INTERVAL_IN_MILLISECONDS);
 
                     }).then(() => {
-                        // Poll once again.
                         return pollForPpkgProcessingResultsAsync();
                     });
 
                 }, () => {
-                    // Promise cancellation event handler
                 });
         }
 
@@ -291,7 +257,6 @@ define([
 
             }).then((runProvisioning) => {
                 if (runProvisioning === "false") {
-                    // No provisioning should be done.
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "CommercialOOBE_ESPDevicePreparation_AADJProvisioning_NotRequiredForScenario",
                         "AADJ Provisioning skipped.");
@@ -320,7 +285,6 @@ define([
                 "BootstrapStatus: Starting Autopilot device enrollment.");
 
             return this.sessionUtilities.autopilotApis.performDeviceEnrollmentAsync().then((result) => {
-                // Continuation handler
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "CommercialOOBE_ESPDevicePreparation_DeviceEnrollment_Complete",
                     "BootstrapStatus: Device enrollment call completed. Processing results...");
@@ -410,7 +374,6 @@ define([
                 }
             },
             (e) => {
-                // Error handler
                 this.commercialDiagnosticsUtilities.logExceptionEvent(
                     "CommercialOOBE_ESPDevicePreparation_DeviceEnrollment_Failed",
                     "BootstrapStatus: performDeviceEnrollmentAsync failed.",
@@ -425,8 +388,6 @@ define([
         startDeviceAadjAndEnrollmentAsync() {
             if ((!this.isUsingDeviceTicket || (this.whiteGloveMode === EnterpriseDeviceManagement.Service.AutoPilot.AutopilotMode.whiteGloveDJPP))
                 && (this.whiteGloveMode !== EnterpriseDeviceManagement.Service.AutoPilot.AutopilotMode.whiteGloveCanonical)) {
-                // If the device won't be using a device AAD ticket, then there's no need to perform
-                // device AADJ and MDM enrollment.
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "CommercialOOBE_ESPDevicePreparation_MDMEnrollment_NotRequiredForScenario",
                     "Skipping MDM enrollment."
@@ -438,7 +399,6 @@ define([
             } 
 
             if (undefined !== this.whiteGloveStartTime) {
-                // Device enrollment for White Glove.
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "CommercialOOBE_ESPDevicePreparation_DeviceEnrollment_WhiteGlove_Started",
                     "BootstrapStatus: White glove device enrollment.");
@@ -471,7 +431,6 @@ define([
                     "BootstrapStatus: waitForPolicyProviderInstallationToComplete returned, processing results...");
 
                 if (result.installationResult === this.ESP_POLICY_PROVIDER_INSTALL_RESULT_SUCCESS) {
-                    // Completed successfully
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "CommercialOOBE_ESPDevicePreparation_PolicyProvidersInstallation_Succeeded",
                         "BootstrapStatus: All policy providers have successfully installed a list of policies.");
@@ -481,12 +440,10 @@ define([
                         null));
                 }
 
-                // Return failure.
                 let errorCode = 0;
 
                 switch (result.installationResult) {
                     case this.ESP_POLICY_PROVIDER_INSTALL_RESULT_TIMEOUT:
-                        // Provider timeout
                         errorCode = result.errorCode;
                         this.commercialDiagnosticsUtilities.logHresultEvent(
                             "CommercialOOBE_ESPDevicePreparation_PolicyProvidersInstallation_TimedOut",
@@ -495,7 +452,6 @@ define([
                         break;
 
                     case this.ESP_POLICY_PROVIDER_INSTALL_RESULT_FAILURE:
-                        // Provider reported error
                         errorCode = result.errorCode;
                         this.commercialDiagnosticsUtilities.logHresultEvent(
                             "CommercialOOBE_ESPDevicePreparation_PolicyProvidersInstallation_Failed",
@@ -526,7 +482,6 @@ define([
         }
 
         setContinueAnywayButtonVisibility() {
-            // If this subcategory is being run, it means Device Preparation has succeeded and the Continue Anyway button can be enabled
             this.commercialDiagnosticsUtilities.logInfoEvent(
                 "CommercialOOBE_ESPDevicePreparation_SetContinueAnywayButtonVisibility_Triggered",
                 "BootstrapStatus: setContinueAnywayButtonVisibility triggered.");
@@ -538,7 +493,6 @@ define([
             });
         }
 
-        // Category interface methods
 
         getId() {
             return "DevicePreparationCategory";
@@ -575,7 +529,6 @@ define([
                     () => {
                         if ((this.sessionUtilities.provisioningPluginManager != undefined)
                             && (this.sessionUtilities.provisioningPluginManager != null)) {
-                            // Skip TPM attestation if post-reset because device is already enrolled
                             if (this.sessionUtilities.provisioningPluginManager.isPostPowerwash()) {
                                 this.commercialDiagnosticsUtilities.logInfoEvent(
                                     "CommercialOOBE_ESPDevicePreparation_TPMAttestation_SkippedDueToAutopilotReset",
@@ -629,8 +582,6 @@ define([
                         return this.waitForEspPolicyProviders();
                     }),
 
-                // This subcategory needs to be parallelized with EspProviderInstallationSubcategory because it's waiting on Intune to install
-                // policy providers during sync sessions.
                 new bootstrapStatusSubcategoryViewModel(
                     this.resourceStrings,
                     this.sessionUtilities,
@@ -641,7 +592,6 @@ define([
                         return this.sessionUtilities.SUBCATEGORY_DISPOSITION_SILENT;
                     },
                     (progressCallbackAsync) => {
-                        // This is a fire and forget best effort operation, always return succes
                         this.mdmBootstrapSessionUtilities.initiateSyncSessionsAsync(ModernDeployment.Autopilot.Core.SyncSessionExitCondition.policyProvidersComplete);
 
                         return WinJS.Promise.as(this.sessionUtilities.createActionResult(
@@ -649,9 +599,6 @@ define([
                             null));
                     }),
 
-                // The following subcategory has to run last in Device Preparation as
-                // the continue anyway button should only be enabled to show if all previous
-                // subcategories have succeeded
                 new bootstrapStatusSubcategoryViewModel(
                     this.resourceStrings,
                     this.sessionUtilities,
@@ -669,7 +616,6 @@ define([
 
         getClickHandler() {
             return (handlerParameters) => {
-                // True means that this handler succeeded.
                 return WinJS.Promise.as(true);
             };
         }

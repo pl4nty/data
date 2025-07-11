@@ -1,9 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
-/// <reference path="error.ts" />
-/// <reference path="discovery.ts" />
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -101,12 +95,7 @@ var CloudExperienceHost;
                 let convertMsAppxWebNavigationToPrivateData = this._navMesh.getConvertMsAppxWebNavigationToPrivateData();
                 if (convertMsAppxWebNavigationToPrivateData !== undefined) {
                     let navUri = new Windows.Foundation.Uri(e.uri);
-                    // For above lock screen scenarios where "ms-appx-web" hosts are unavailable, interrupt the navigation to the specified host.
                     if ((navUri.schemeName === "ms-appx-web") && (navUri.host === convertMsAppxWebNavigationToPrivateData.hostToInterrupt)) {
-                        // This behavior is copied from CloudExperienceHost.AppManager._onUnsupportedUriSchemeIdentified for scheme navigations that are unavailable in certain scenarios.
-                        // Cache the payload locally for later retrieval when the relevant web content's relevant JS eventually loads
-                        // http://osgvsowi/10484753 ms-aadj-redir protocol activation produces a fragment (#name=value) instead of query string (?name=value)
-                        // For now we work around this by preferring the query string if available, but falling back to the fragment otherwise
                         let payload = (navUri.query !== "") ? navUri.query : navUri.fragment;
                         if ((convertMsAppxWebNavigationToPrivateData.privateKeyName !== undefined) && (payload !== "")) {
                             CloudExperienceHost.Storage.PrivateData.addItem(convertMsAppxWebNavigationToPrivateData.privateKeyName, payload);
@@ -143,7 +132,6 @@ var CloudExperienceHost;
         }
         _navigationCompleted(e) {
             this._stopNavigationTimer();
-            // Regardless of whether navigation failed, call _clearWebViewCompletion() if we're navigating to the about:blank URI
             if (e.uri == aboutBlankURI) {
                 Debug.assert(this._clearWebViewCompletion, "_clearWebViewCompletion should be defined before navigating to about:blank");
                 if (this._clearWebViewCompletion) {
@@ -160,12 +148,10 @@ var CloudExperienceHost;
                 }));
                 this._fireEvent("NavigationCompleted", this._currentNode);
                 if (this._navMesh.isBackstackForBackNavigationSupported()) {
-                    // Show back button only if there is some back navigable node in the backstack
                     this._navManager.setWebAppBackNavigationAvailability(this._visitedNodeStack.length != 0);
                 }
                 this._navManager.setDisableBackNavigation(false);
                 if (this._navMesh.isCloseToExitCxhSupported()) {
-                    // Show close button if useCloseToExitCxh is set in the navmesh
                     this._navManager.setExitCxhAvailability(true);
                 }
             }
@@ -174,8 +160,6 @@ var CloudExperienceHost;
                 var hasInternetAccess = CloudExperienceHost.Environment.hasInternetAccess();
                 var navigationBlocked = this._navMesh.getRestrictNavigationToAllowList() &&
                     (CloudExperienceHost.Storage.VolatileSharableData.getItem("NavigationAccessPolicyValues", "blockedNavigationInstanceOutstanding") === true); // boolify the result in case it was undefined
-                // Since it's known that 'e.isSuccess != True'
-                // Treat all non-expected webErrorStatus as the scenario not being able to communicate with the server
                 CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("NavigationFailed", JSON.stringify({
                     webErrorStatus: e.webErrorStatus,
                     uri: CloudExperienceHost.UriHelper.RemovePIIFromUri(e.uri),
@@ -184,12 +168,10 @@ var CloudExperienceHost;
                 }));
                 CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("IsNetworkConnected_NavigationFailed", hasInternetAccess);
                 CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("NetworkConnectivityLevel_NavigationFailed", CloudExperienceHost.Wireless.getConnectivityLevel());
-                // Clear webview when the navigation fails
                 this.clearWebView();
                 if (!navigationBlocked) {
                     let failedNavCxid = this._currentNode.cxid;
                     var offlineID = this._currentNode.offlineID;
-                    // Check if this scenario has a reconnect handler cxid and if we need to do in-place resume
                     let reconnectHandlerCxid = this.getNavMesh().getReconnectHandlerCxid();
                     if (reconnectHandlerCxid && this._isInplaceResumeNeeded()) {
                         CloudExperienceHost.Storage.VolatileSharableData.addItem("InPlaceResumeValues", "volatileResumeCxid", this._currentNode.cxid); // Store the resume cxid in memory
@@ -200,16 +182,12 @@ var CloudExperienceHost;
                         this._currentNode = this._navMesh.getNode(offlineID);
                     }
                     try {
-                        // call to reprobe networking stack to re-evaluate the connectivity level so we can accurately differentiate network failures from other types of navigation failures.
                         CloudExperienceHostAPI.UtilStaticsCore.indicateNetworkReprobe();
                         CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("indicateNetworkReprobeSuccess");
                     }
                     catch (ex) {
                         CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("indicateNetworkReprobeFailed", CloudExperienceHost.GetJsonFromError(ex));
                     }
-                    // Navigate to the node specified by the reconnect handler or offlineID
-                    // If neither of these exist for the current node and scenario, _currentNode will not have changed-
-                    // explicitly check for this to avoid an infinite navigation loop
                     if (this._currentNode && (this._currentNode.cxid !== failedNavCxid)) {
                         CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().stop(CloudExperienceHost.AppResult.fail);
                         this._navigateToCurrentNode().done();
@@ -276,10 +254,6 @@ var CloudExperienceHost;
                 httpRequestMessage.headers.append(name, value);
             }
             catch (e) {
-                // Use a fallback value of "???" - this ensures there is always some RFC 7230 compliant value available
-                // for the header on the server side. We do not want to take any other dependencies on RFC 7230 or how
-                // other components choose to interpret that standard. Words were also avoided to sidestep any
-                // localization concerns.
                 CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logCriticalEvent2("HeaderAppendFailure", CloudExperienceHost.GetJsonFromError(e));
                 httpRequestMessage.headers.append(name, "???");
             }
@@ -301,7 +275,6 @@ var CloudExperienceHost;
             this._headersMap.forEach(function (item, key, mapObj) {
                 this._appendHttpHeaderWithFallback(httpRequestMessage, key, item);
             }.bind(this));
-            // OSGVSO 2740290 - Update CXH to public cross-platform Colors API http://osgvso/_workitems/edit/2740290
             if (CloudExperienceHost.Environment.getPlatform() === CloudExperienceHost.TargetPlatform.DESKTOP) {
                 var themeColors = CloudExperienceHost.Styling.getThemeColors();
                 var cxhColors = "";
@@ -316,9 +289,7 @@ var CloudExperienceHost;
                     this._appendHttpHeaderWithFallback(httpRequestMessage, "cxh-" + key, context[key]);
                 }
             }
-            // Append the Tailored Experiences privacy setting
             this._appendHttpHeaderWithFallback(httpRequestMessage, "cxh-tailoredExperiencesEnabled", CloudExperienceHostAPI.ContentDeliveryManagerHelpers.tailoredExperiencesEnabled.toString());
-            // Per-scenario custom headers
             let scenarioCustomHeaders = this._navMesh.getScenarioCustomHeaders();
             if (scenarioCustomHeaders.length > 0) {
                 scenarioCustomHeaders = scenarioCustomHeaders.map(function (ele) { return ele.toLowerCase(); }); // Convert the custom headers array to lowercase for case-insensitive comparisons
@@ -351,12 +322,9 @@ var CloudExperienceHost;
                     }
                 }
             }
-            // Append a breadcrumb to inform the webapp about whether or not it will need to manually fire Visible on completion of intra-webapp redirections, once UI is ready to display
             this._appendHttpHeaderWithFallback(httpRequestMessage, "cxh-intraWebAppVisibility", (this._currentNode.intraWebAppVisibility == null) ? "true" : this._currentNode.intraWebAppVisibility.toString());
-            // Per-node custom headers
             if (this._currentNode.needCustomHeaders) {
                 let perNodeCustomHeaders = this._currentNode.needCustomHeaders.map(function (ele) { return ele.toLowerCase(); }); // Convert the custom headers array to lowercase for case-insensitive comparisons
-                // Note: despite the name, this is the 4x5 product activation ID.  This name needs to be used for server webapp compatibility with previous versions of Windows.
                 let windowsProductKeyHeaderName = "cxh-windowsProductKey";
                 if (perNodeCustomHeaders.indexOf(windowsProductKeyHeaderName.toLowerCase()) > -1) {
                     this._appendHttpHeaderWithFallback(httpRequestMessage, windowsProductKeyHeaderName, CloudExperienceHostAPI.UtilStaticsCore.productActivationId);
@@ -376,8 +344,6 @@ var CloudExperienceHost;
             }
             if (typeof (contextHeaders) !== 'undefined' && contextHeaders !== null) {
                 for (var iterator = contextHeaders.first(); iterator.hasCurrent; iterator.moveNext()) {
-                    // Add context headers to httpRequestMessage headers, but don't overwrite any
-                    // existing properties.
                     if (!httpRequestMessage.headers.hasKey(iterator.current.key)) {
                         this._appendHttpHeaderWithFallback(httpRequestMessage, iterator.current.key, iterator.current.value);
                     }
@@ -440,8 +406,6 @@ var CloudExperienceHost;
                     });
                 }
                 else {
-                    // Launchers don't actually navigate the webview, so fire "NavigationCompleted" before executing them
-                    // This ensures the AppManager is operating over the correct _currentNode
                     this._fireEvent("NavigationCompleted", this._currentNode);
                     launcherInstance.launchAsync(this._currentNode).done((appResult) => {
                         if (this._currentNavigationId === expectedNavigationId) {
@@ -481,7 +445,6 @@ var CloudExperienceHost;
             });
         }
         _stopNavigationTimer() {
-            // Cancel navigation timeout
             if (this._navigationTimerPromise) {
                 this._navigationTimerPromise.cancel();
                 this._navigationTimerPromise = null;
@@ -489,7 +452,6 @@ var CloudExperienceHost;
         }
         _navigatePromiseImpl(completeDispatch, errorDispatch) {
             if (this._currentNode == null) {
-                // Fire the done event if we somehow end up here with a null current node
                 this._fireEvent("Done", CloudExperienceHost.AppResult.success);
             }
             else if (this._currentNode && this._currentNode.launcher) {
@@ -503,7 +465,6 @@ var CloudExperienceHost;
                     .then(function (qs) {
                     var httpMethod = ((this._currentNode.httpMethod === 'post') ? Windows.Web.Http.HttpMethod.post : Windows.Web.Http.HttpMethod.get);
                     var targetUri = this.evaluateOverridableStringPropertyValue(this._currentNode.url, "");
-                    // Handle dynamic URI targets if urlPathParam is specified in the navigation node
                     if (this._currentNode.urlPathParam) {
                         var pathParamName = this._currentNode.urlPathParam;
                         var fragment = this._navMesh.getUriArguments().getFirstValueByName(pathParamName); // throws if not exists
@@ -516,7 +477,6 @@ var CloudExperienceHost;
                     return this._initializeRequest(httpRequestMessage);
                 }.bind(this))
                     .then(function (httpRequestMessage) {
-                    // Note: allowlist entries should case-sensitively match the corresponding header values
                     var allowlist = [
                         'requestUri',
                         'method',
@@ -535,7 +495,6 @@ var CloudExperienceHost;
                         'cxh-region',
                         'cxh-identityClientBinaryVersion',
                         'cxh-correlationId',
-                        //'cxh-source',  explicit block to avoid sending query string
                         'cxh-machineModel',
                         'cxh-manufacturer',
                         'cxh-osPlatform',
@@ -570,10 +529,7 @@ var CloudExperienceHost;
                     completeDispatch();
                 }.bind(this))
                     .then(null, function (err) {
-                    // This is the error handler for any failures or exceptions in the promise chain above
-                    // Fire a navigation error event to inform app manager of the navigation failure, enabling it to proceed to the next node/recovery step
                     this._fireErrorEvent(new CloudExperienceHost.NavigationError(err.number, this.evaluateOverridableStringPropertyValue(this._currentNode.url, ""), this._currentNode, "An error occurred preparing to navigate to node '" + this._currentNode.cxid + "': " + err.message));
-                    // since we 'handled' the error, call completeDispatch() instead of errorDispatch()
                     completeDispatch();
                 }.bind(this));
             }
@@ -605,7 +561,6 @@ var CloudExperienceHost;
         }
         _navigateToCurrentNode() {
             this._stopNavigationTimer();
-            // Telemetry: WebApp start. Except if we're processing an Expected Navigation Interruption from uri schema e.g. ms-aadj-redir
             if (!this._navigationInterruptExpected) {
                 CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().start(this._currentNode ? this._currentNode.cxid : "null");
                 CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("IsNetworkConnected_WebAppActivityStarted", CloudExperienceHost.Environment.hasInternetAccess());
@@ -618,7 +573,6 @@ var CloudExperienceHost;
                 var appResult = CloudExperienceHost.AppResult.success;
                 try {
                     let skip = false;
-                    // Check if the node is on the (server-side) webapp-supplied skip list.
                     let skipListJson = CloudExperienceHost.Storage.SharableData.getValue("skipList_" + CloudExperienceHost.getContext().experienceName);
                     if (skipListJson) {
                         let skipList = JSON.parse(skipListJson);
@@ -631,21 +585,16 @@ var CloudExperienceHost;
                             });
                         }
                     }
-                    // Skip if the feature is disabled
                     if (!skip && (this._currentNode.requiredFeatureName && !CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled(this._currentNode.requiredFeatureName))) {
                         skip = true;
                     }
-                    // Skip if the feature is enabled
                     if (!skip && (this._currentNode.requiredDisabledFeatureName && CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled(this._currentNode.requiredDisabledFeatureName))) {
                         skip = true;
                     }
-                    // Skip if current signin identity provider is unsupported
                     if (!skip && this._currentNode.supportedSignInIdentityProviders) {
                         skip = !this._isSignInIdentityProviderInList(this._currentNode.supportedSignInIdentityProviders);
                     }
-                    // If internet is required on the web app, skip it if there is no internet
                     if (!skip && (this._currentNode.internetRequired && !CloudExperienceHost.Environment.hasInternetAccess())) {
-                        // Check if this scenario has a reconnect handler cxid and if we need to do in-place resume
                         let reconnectHandlerCxid = this.getNavMesh().getReconnectHandlerCxid();
                         if (reconnectHandlerCxid && this._isInplaceResumeNeeded()) {
                             CloudExperienceHost.Storage.VolatileSharableData.addItem("InPlaceResumeValues", "volatileResumeCxid", this._currentNode.cxid); // Store the resume cxid in memory
@@ -658,8 +607,6 @@ var CloudExperienceHost;
                         skip = true;
                     }
                     if (!skip && this._currentNode.preloadCheck) {
-                        // preloadCheck in nav mesh defines the name of a static WinRT object.
-                        // We look for shouldSkip (property) or getShouldSkipAsync (method) on this.
                         let skipInterface = this._invokeHelper.accessByName(this._currentNode.preloadCheck);
                         if (skipInterface.getShouldSkipAsync) {
                             Debug.assert(skipInterface.shouldSkip === undefined, "Preload interface should only specify one of shouldSkip or shouldSkipAsync");
@@ -680,31 +627,20 @@ var CloudExperienceHost;
                     CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("PreloadCheckError", JSON.stringify({ cxid: this._currentNode.cxid, preloadCheck: this._currentNode.preloadCheck, error: CloudExperienceHost.GetJsonFromError(e) }));
                 }
                 skipPromise = skipPromise.then(null, (e) => {
-                    // If a preloadCheck hits an error, log the offender, then convert to success with appropriate result based on the node's preloadCheckSkipOnFailure value
                     CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("PreloadCheckAsyncError", JSON.stringify({ cxid: this._currentNode.cxid, preloadCheck: this._currentNode.preloadCheck, error: CloudExperienceHost.GetJsonFromError(e) }));
                     return WinJS.Promise.as(!!this._currentNode.preloadCheckSkipOnFailure);
                 });
                 return skipPromise.then((skip) => {
                     if (skip === true) {
-                        // Check if this node blocks back navigation, if so clear the list of previously visited nodes
                         if (this.evaluateOverridableBooleanPropertyValue(this._currentNode.disableBackNavigationToNode, false)) {
                             this._clearVisitedNodeStack();
                         }
-                        // Webapps that are skipped without being loaded (due to preloadCheck or
-                        // required feature properties) can optionally supply a preloadSkipID for
-                        // that scenario. When provided, change the appResult to ensure it is used.
-                        // Otherwise, the skip is treated as success, and the next navigation will
-                        // be to the successID of the node.
-                        //
-                        // Exception: Do not override the "offline" result, which has its own offlineID.
                         if (this._currentNode.preloadSkipID && (appResult != CloudExperienceHost.AppResult.offline)) {
                             appResult = CloudExperienceHost.AppResult.preloadSkip;
                         }
-                        // Change appResult if skipping should exit CXH. This overrides all other results.
                         if (this._navMesh.blockEarlyExit() && this._currentNode.canExitCxh && this._currentNode.skipExitsCxh) {
                             appResult = CloudExperienceHost.AppResult.exitCxhSuccess;
                         }
-                        // Move on to the next web app
                         this._nextNode = this._getNext(appResult);
                         if (this._nextNode) {
                             CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().stop(appResult);
@@ -713,22 +649,17 @@ var CloudExperienceHost;
                             this._navigateToCurrentNode().done();
                         }
                         else {
-                            // Fire the done event if we reach the end of the scenario
                             this._fireEvent("Done", appResult);
                         }
                     }
                     else {
-                        // Clear backstack if the webapp we're navigating to blocks navigation from it
                         this._clearBackstackIfReturnFromCurrentNodeDisallowed();
-                        // Navigate to the current web app
                         return new WinJS.Promise(navigatePromiseFunc);
                     }
                 });
             }
             else {
-                // Clear backstack if the webapp we're navigating to blocks navigation from it
                 this._clearBackstackIfReturnFromCurrentNodeDisallowed();
-                // Navigate to the current web app
                 return new WinJS.Promise(navigatePromiseFunc);
             }
         }
@@ -738,8 +669,6 @@ var CloudExperienceHost;
                 switch (appResult) {
                     case CloudExperienceHost.AppResult.success:
                         node = this._navMesh.getNode(this._currentNode.successID);
-                        // Certain nodes disable back navigation only on success, prevent back navigation
-                        // for such nodes if they were visible
                         if (this._currentNode.disableBackNavigationToNodeOnSuccess &&
                             (this._backNavigationStatusForNextTransition !== BackNavigationStatus.Unknown)) {
                             this._backNavigationStatusForNextTransition = BackNavigationStatus.Disabled;
@@ -752,8 +681,6 @@ var CloudExperienceHost;
                         node = this._navMesh.getNode(this._currentNode.failID);
                         break;
                     case CloudExperienceHost.AppResult.error:
-                        // If a node has explicitly disabled error page it should never 
-                        // send out an appresult of error, this is for safety
                         if (this._currentNode.disableErrorPageOnFailure && this._currentNode.failID) {
                             node = this._navMesh.getNode(this._currentNode.failID);
                         }
@@ -784,7 +711,6 @@ var CloudExperienceHost;
                         break;
                     case CloudExperienceHost.AppResult.exitCxhFailure:
                     case CloudExperienceHost.AppResult.exitCxhSuccess:
-                        // Direct to designated exit page if one exists, otherwise, CXH should exit
                         node = this._navMesh.getNode(this._currentNode.exitID);
                         break;
                     default:
@@ -799,22 +725,11 @@ var CloudExperienceHost;
             }
             return node;
         }
-        // Function called right before navigating to a node.
-        // If the node does not allow navigation to previous nodes, the visited node stack is cleared.
-        // Back button is not supported for the app launched from HostedApplication.
         _clearBackstackIfReturnFromCurrentNodeDisallowed() {
             if (this._currentNode && this._currentNode.disableBackNavigationFromNode) {
                 this._clearVisitedNodeStack();
             }
         }
-        // Tiered conditions to determine if in-place resume is needed for network reconnect
-        // This method's tiered conditions are:
-        // 1. False if skipReconnectHandler set on node
-        // 2. False if the OOBE network app is hidden (e.g. due to unattend)
-        // 3. True if OOBE-Reconnect-Network licensing policy is set
-        // 4. False if OobeNetworkReconnect disabled
-        // 5. False if Retail Demo or user is allowed to skip network connect
-        // 6. Else whether we haven't yet reached retry limit
         _isInplaceResumeNeeded() {
             if (this._currentNode.skipReconnectHandler) {
                 return false;
@@ -829,7 +744,6 @@ var CloudExperienceHost;
                 if (CloudExperienceHost.Storage.SharableData.getValue("retailDemoEnabled") || !CloudExperienceHostAPI.UtilStaticsCore.disabledSkipNetwork) {
                     return false;
                 }
-                // Get reconnect limit based on velocity, or default value
                 let reconnectLimit = 5; // Default to 5 to align with number of CXH/Explorer crashes before we go to recovery OOBE
                 let variantObj = CloudExperienceHost.FeatureStaging.tryGetFeatureVariant("OobeNetworkReconnect");
                 if (variantObj.result && (variantObj.value == "UseCustomReconnectLimit")) {
@@ -838,7 +752,6 @@ var CloudExperienceHost;
                         reconnectLimit = variantDataObj.value;
                     }
                 }
-                // Get reconnection handled count, and allow reconnection if we haven't exceeded the limit
                 let reconnectionHandledCount = CloudExperienceHost.Storage.VolatileSharableData.getItem("InPlaceResumeValues", "reconnectionHandledCount");
                 reconnectionHandledCount = reconnectionHandledCount ? reconnectionHandledCount : 0;
                 if (reconnectionHandledCount < reconnectLimit) {
@@ -904,21 +817,15 @@ var CloudExperienceHost;
                 this._currentNode = this._navMesh.getNode(cxid);
             }
             else {
-                // If start parameter is present in the experience description, then use it instead of the "start"
-                // attribute for the scenario in the nav mesh.
                 var cxidstart = CloudExperienceHost.ExperienceDescription.GetStart(experience);
                 this._currentNode = (cxidstart != "") ? this._navMesh.getNode(cxidstart) : this._navMesh.getStart();
             }
             if (!this._resumeNode) {
-                // This is the earliest point in the flow that we know which node we are navigating to
                 this._resumeNode = this._currentNode;
             }
             return this._navigateToCurrentNode();
         }
         evaluateBackNavigationStatusForNextTransition() {
-            // On node visibility, update the back navigation status which decides the back button visibility on 
-            // the next transition. If a node doesn't end up being visible it shouldn't affect the back navigation.
-            // The display of the error page should not affect the navigation status for the next transition.
             if (this._currentNode.cxid !== this._navMesh.getErrorNodeName()) {
                 if (this.evaluateOverridableBooleanPropertyValue(this._currentNode.disableBackNavigationToNode, false)) {
                     this._backNavigationStatusForNextTransition = BackNavigationStatus.Disabled;
@@ -929,18 +836,14 @@ var CloudExperienceHost;
             }
         }
         resetBackNavigationStatusForNextTransition() {
-            // Set this when we are restarting the flow at any time
             this._backNavigationStatusForNextTransition = BackNavigationStatus.Unknown;
         }
         goToPreviousVisitedNode() {
-            // Make sure speech related operations from previous page are cleared
             CloudExperienceHostAPI.Speech.SpeechSynthesis.stop();
             CloudExperienceHostAPI.Speech.SpeechRecognition.stop();
-            // Make sure there were visited nodes that can be navigated to
             if (this._navMesh.isBackstackForBackNavigationSupported() && (this._visitedNodeStack.length != 0)) {
                 var backNode = this._visitedNodeStack.pop();
                 if (backNode) {
-                    // Stop current WebApp telemetry before loading previous WebApp.
                     CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().stop(CloudExperienceHost.InternalAppResult.navigateWithBackstack);
                     this._currentNode = backNode;
                 }
@@ -956,31 +859,6 @@ var CloudExperienceHost;
             return false;
         }
         updateVisitedStack() {
-            // General Transition Cases
-            // Check if this node blocks back navigation, if so clear the list of previously visited nodes
-            // If the node was not visible skip changes to the stack
-            // Error Page Cases
-            // Let's assume transition A->B->C, and some failure when loading B, with C as failId for B
-            // If the error page shows up and user hits -
-            // 1) Retry - cxh flow is restarted by loading oobestartselector and then loading the resume node,
-            //      Now there are 2 cases:
-            //      a) Error occurred before page became visible:
-            //         resume node = B, backstack = A, statusfornexttransition = unknown
-            //         => on retry you restart flow, explicitly set statusfornexttransition to unknown, set load startselector
-            //            which doesn't get pushed onto the stack because of the unknown status, if the resume node loads correctly 
-            //            this time, status is set to Enabled and is pushed onto the stack, so backstack = B ->A if B loads fine.
-            //      b) Error after page visible:
-            //         resume node = B, backstack = A, statusfornexttransition = enabled(if B loads and is visible)
-            //         => this follows in the same way as the first case
-            // 2) Skip - simply navigate to the failId C
-            //      2 cases:
-            //      a) Error occurred before page became visible:
-            //         resume node = B, backstack = A, statusfornexttransition = unknown
-            //         on transition to C backstack = A
-            //      b) Error after page visible:
-            //         resume node = B, backstack = A, statusfornexttransition = enabled if back not disabled, else unknown
-            //         on transition to C backstack = B->A
-            //      In both cases if the node disables back, clear the visited stack, so on reaching C backstack = empty
             if (this._navMesh.isBackstackForBackNavigationSupported() &&
                 (this._topOfVisitedNodeStack() != this._currentNode.cxid)) {
                 if (this._backNavigationStatusForNextTransition === BackNavigationStatus.Disabled) {
@@ -989,8 +867,6 @@ var CloudExperienceHost;
                 else if (this._backNavigationStatusForNextTransition === BackNavigationStatus.Enabled) {
                     this._visitedNodeStack.push(this._currentNode);
                 }
-                // else if the status is unknown it means that the app was not visible, so skip modifying the stack
-                // Let the next webapp set the status once it is visible
                 this.resetBackNavigationStatusForNextTransition();
             }
         }
@@ -998,7 +874,6 @@ var CloudExperienceHost;
             return new WinJS.Promise((completeDispatch /*, errorDispatch, progressDispatch */) => {
                 Debug.assert(!this._clearWebViewCompletion, "_clearWebViewCompletion should not be defined");
                 if (this._view.src == aboutBlankURI) {
-                    // Webview is empty - no need to navigate it
                     completeDispatch();
                 }
                 else {
@@ -1019,11 +894,9 @@ var CloudExperienceHost;
             this._view.navigateWithHttpRequestMessage(httpRequestMessage);
         }
         goBack() {
-            // A flow which uses the visited node stack should not be able to use backIDs to go back
             if (!this._navMesh.isBackstackForBackNavigationSupported() && this._currentNode) {
                 var backNode = this._navMesh.getNode(this._currentNode.backID);
                 if (backNode) {
-                    // Stop current WebApp telemetry before loading previous WebApp.
                     CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().stop(CloudExperienceHost.InternalAppResult.back);
                     this._currentNode = backNode;
                 }
@@ -1031,53 +904,33 @@ var CloudExperienceHost;
             }
         }
         skipCurrentApp(node) {
-            // Navigate to the failID of the current app
             if (node) {
                 CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().stop(CloudExperienceHost.AppResult.fail);
-                // Check if this node blocks back navigation, if so clear the list of previously visited nodes.
-                // The behavior is similar to preload check and skip.
                 if (this.evaluateOverridableBooleanPropertyValue(node.disableBackNavigationToNode, false)) {
                     this._backNavigationStatusForNextTransition = BackNavigationStatus.Disabled;
                 }
                 this._nextNode = this._navMesh.getNode(node.failID);
-                // calls _navigateToCurrentNode, which accounts for disableBackNavigationFromNode
                 this.goNext();
             }
         }
         navigateToNode(node) {
             if (node) {
                 CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().stop(CloudExperienceHost.AppResult.cancel);
-                // Check if this node blocks back navigation, if so clear the list of previously visited nodes.
-                // The behavior is similar to preload check and skip.
                 if (this.evaluateOverridableBooleanPropertyValue(node.disableBackNavigationToNode, false)) {
                     this._backNavigationStatusForNextTransition = BackNavigationStatus.Disabled;
                 }
-                // Go directly to specified node
                 this._nextNode = node;
                 this.goNext();
             }
         }
         goNext() {
-            // Update the visited stack to enable back navigation to the current node and then assign next
-            // node to current node, note that this already went through the feature staging check
-            // (page swap map) since goNext() is always called by the app manager after webAppDone(),
-            // which calls _getNext() -- that contains the check. 
             this.updateVisitedStack();
             this._currentNode = this._nextNode;
             if (this._currentNode) {
-                // On loading the new node, "save it" so that in case of a failure we return to this 
-                // node. If a failure happened before this, it would resume back to the previous node.
-                // The only case where this would fail is if we are trying to -
-                // - Protocol launch to a particular node with a wrong cxid node name
-                // In this case webAppDone returns a false, and appmanager._onDone ends up calling _close.
-                // Please note that we don't want to save the error page itself as a resume node.
                 if (!this._resumeNode || (this._currentNode !== this._navMesh.getErrorNode())) {
                     this._resumeNode = this._currentNode;
                 }
             }
-            // Navigate to the current node. Do this even if we get into a state where the current node is NULL,
-            // as this will ensure that we proceed through the normal navigation logic that closes the app with
-            // a "success" result. This is possible in various scenarios where nodes are skipped.
             this._navigateToCurrentNode().done();
         }
         loadIdentityProvider(signInIdentityProvider) {
@@ -1101,7 +954,6 @@ var CloudExperienceHost;
                 id = 'Oobe' + id;
             }
             var provider = this._navMesh.getNode(id);
-            // Stop current WebApp telemtery before loading the Identity Provider WebApp.
             CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().stop(CloudExperienceHost.AppResult.abort);
             this.updateVisitedStack();
             if (provider) {
@@ -1119,12 +971,10 @@ var CloudExperienceHost;
             return this._resumeNode;
         }
         webAppDone(appResult) {
-            // Telemetry: WebApp stop
             Debug.assert(!this._navigationTimerPromise, "_navigationTimerPromise should be null here. Adding a safeguard to call stopNavigationTimer");
             this._stopNavigationTimer();
             CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().stop(appResult);
             this._nextNode = this._getNext(appResult);
-            // Fire an event containing the current node and the AppResult it just returned
             let navDecision = { result: appResult, currentNode: this._currentNode };
             this._fireEvent("AppResultDetermined", navDecision);
             return (this._nextNode ? true : false);
@@ -1170,4 +1020,3 @@ if ((typeof define === "function") && define.amd) {
         return CloudExperienceHost.Navigator;
     });
 }
-//# sourceMappingURL=navigator.js.map

@@ -1,12 +1,8 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 (() => {
     WinJS.UI.Pages.define("/webapps/inclusiveOobe/view/oobehello-main.html", {
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Load css per scenario
             let loadCssPromise = requireAsync(['legacy/uiHelpers', 'legacy/bridge']).then((result) => {
                 return result.legacy_uiHelpers.LoadCssPromise(document.head, "", result.legacy_bridge);
             });
@@ -15,7 +11,6 @@
                 return result.legacy_uiHelpers.LangAndDirPromise(document.documentElement, result.legacy_bridge);
             });
 
-            // Load resource strings
             let getLocalizedStringsPromise = requireAsync(['legacy/bridge']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.StringResources.makeResourceObject", "oobeHello");
             }).then((result) => {
@@ -28,7 +23,6 @@
                 this.enrollmentKinds = JSON.parse(kinds);
             });
 
-            // Check to see if a previous component would like us to be skipped
             let getSkipNgcPromise = requireAsync(['legacy/bridge']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "SkipNGC");
             }).then((result) => {
@@ -65,7 +59,6 @@
         },
         ready: (element, options) => {
             require(['lib/knockout', 'corejs/knockouthelpers', 'legacy/bridge', 'legacy/events', 'oobehello-vm', 'lib/knockout-winjs', 'corejs/xy-transfer-wrapper-down'], (ko, KoHelpers, bridge, constants, HelloViewModel) => {
-                // Setup knockout customizations
                 koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                 window.KoHelpers = KoHelpers;
@@ -80,12 +73,8 @@
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "ShowingHelloEnrollmentPage", "Fingerprint");
                         }
                     }
-                    // Breadcrumb for version of experience being rendered, and includes the learn more link.
-                    // Event should align with "ShowingHelloEnrollmentPage" event fired above.
-                    // This event should be kept the same as in helloEnrollmentPage.js.
                     bridge.invoke("CloudExperienceHost.Telemetry.commitIntentPropertyDWORDAsync", "WindowsHello", "LearnMoreAvailable", 1);
 
-                    // Apply bindings and show the page
                     ko.applyBindings(new HelloViewModel(this.resourceStrings, this.enrollmentKinds, this.targetPersonality, this.isInternetAvailable));
                     KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                         WinJS.Utilities.addClass(document.body, "pageLoaded");

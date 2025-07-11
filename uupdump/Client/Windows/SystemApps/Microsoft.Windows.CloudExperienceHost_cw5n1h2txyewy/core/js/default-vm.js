@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define(() => {
+﻿define(() => {
     class DefaultViewModel {
         constructor(frameName) {
             this.frameName = frameName;

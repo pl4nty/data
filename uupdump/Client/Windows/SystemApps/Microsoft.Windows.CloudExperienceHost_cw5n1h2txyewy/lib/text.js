@@ -1,6 +1,11 @@
-﻿
-
-
+/**
+ * @license text 2.0.15 Copyright jQuery Foundation and other contributors.
+ * Released under MIT license, http://github.com/requirejs/text/LICENSE
+ */
+/*jslint regexp: true */
+/*global require, XMLHttpRequest, ActiveXObject,
+  define, window, process, Packages,
+  java, location, Components, FileUtils */
 
 define(['module'], function (module) {
     'use strict';
@@ -20,7 +25,6 @@ define(['module'], function (module) {
         return value === undefined || value === '' ? defaultValue : value;
     }
 
-    
     function isSamePort(protocol1, port1, protocol2, port2) {
         if (port1 === port2) {
             return true;
@@ -38,7 +42,6 @@ define(['module'], function (module) {
         version: '2.0.15',
 
         strip: function (content) {
-            
             if (content) {
                 content = content.replace(xmlRegExp, "");
                 var matches = content.match(bodyRegExp);
@@ -63,7 +66,6 @@ define(['module'], function (module) {
         },
 
         createXhr: masterConfig.createXhr || function () {
-            
             var xhr, i, progId;
             if (typeof XMLHttpRequest !== "undefined") {
                 return new XMLHttpRequest();
@@ -75,7 +77,7 @@ define(['module'], function (module) {
                     } catch (e) {}
 
                     if (xhr) {
-                        progIds = [progId];  
+                        progIds = [progId];  // so faster next time
                         break;
                     }
                 }
@@ -84,7 +86,14 @@ define(['module'], function (module) {
             return xhr;
         },
 
-        
+        /**
+         * Parses a resource name into its component parts. Resource names
+         * look like: module/name.ext!strip, where the !strip part is
+         * optional.
+         * @param {String} name the resource name
+         * @returns {Object} with properties "moduleName", "ext" and "strip"
+         * where strip is a boolean.
+         */
         parseName: function (name) {
             var modName, ext, temp,
                 strip = false,
@@ -102,7 +111,6 @@ define(['module'], function (module) {
             temp = ext || modName;
             index = temp.indexOf("!");
             if (index !== -1) {
-                
                 strip = temp.substring(index + 1) === "strip";
                 temp = temp.substring(0, index);
                 if (ext) {
@@ -121,7 +129,14 @@ define(['module'], function (module) {
 
         xdRegExp: /^((\w+)\:)?\/\/([^\/\\]+)/,
 
-        
+        /**
+         * Is an URL on another domain. Only works for browser use, returns
+         * false in non-browser environments. Only used to know if an
+         * optimized .js version of a text resource should be loaded
+         * instead.
+         * @param {String} url
+         * @returns Boolean
+         */
         useXhr: function (url, protocol, hostname, port) {
             var uProtocol, uHostName, uPort,
                 match = text.xdRegExp.exec(url);
@@ -149,9 +164,7 @@ define(['module'], function (module) {
         },
 
         load: function (name, req, onLoad, config) {
-            
 
-            
             if (config && config.isBuild && !config.inlineText) {
                 onLoad();
                 return;
@@ -166,13 +179,11 @@ define(['module'], function (module) {
                 useXhr = (masterConfig.useXhr) ||
                          text.useXhr;
 
-            
             if (url.indexOf('empty:') === 0) {
                 onLoad();
                 return;
             }
 
-            
             if (!hasLocation || useXhr(url, defaultProtocol, defaultHostName, defaultPort)) {
                 text.get(url, function (content) {
                     text.finishLoad(name, parsed.strip, content, onLoad);
@@ -182,7 +193,6 @@ define(['module'], function (module) {
                     }
                 });
             } else {
-                
                 req([nonStripName], function (content) {
                     text.finishLoad(parsed.moduleName + '.' + parsed.ext,
                                     parsed.strip, content, onLoad);
@@ -204,12 +214,9 @@ define(['module'], function (module) {
             var parsed = text.parseName(moduleName),
                 extPart = parsed.ext ? '.' + parsed.ext : '',
                 nonStripName = parsed.moduleName + extPart,
-                
                 fileName = req.toUrl(parsed.moduleName + extPart) + '.js';
 
-            
             text.load(nonStripName, req, function (value) {
-                
                 var textWrite = function (contents) {
                     return write(fileName, contents);
                 };
@@ -228,13 +235,11 @@ define(['module'], function (module) {
             !!process.versions.node &&
             !process.versions['node-webkit'] &&
             !process.versions['atom-shell'])) {
-        
         fs = require.nodeRequire('fs');
 
         text.get = function (url, callback, errback) {
             try {
                 var file = fs.readFileSync(url, 'utf8');
-                
                 if (file[0] === '\uFEFF') {
                     file = file.substring(1);
                 }
@@ -251,7 +256,6 @@ define(['module'], function (module) {
             var xhr = text.createXhr(), header;
             xhr.open('GET', url, true);
 
-            
             if (headers) {
                 for (header in headers) {
                     if (headers.hasOwnProperty(header)) {
@@ -260,18 +264,15 @@ define(['module'], function (module) {
                 }
             }
 
-            
             if (masterConfig.onXhr) {
                 masterConfig.onXhr(xhr, url);
             }
 
             xhr.onreadystatechange = function (evt) {
                 var status, err;
-                
                 if (xhr.readyState === 4) {
                     status = xhr.status || 0;
                     if (status > 399 && status < 600) {
-                        
                         err = new Error(url + ' HTTP status: ' + status);
                         err.xhr = xhr;
                         if (errback) {
@@ -290,7 +291,6 @@ define(['module'], function (module) {
         };
     } else if (masterConfig.env === 'rhino' || (!masterConfig.env &&
             typeof Packages !== 'undefined' && typeof java !== 'undefined')) {
-        
         text.get = function (url, callback) {
             var stringBuffer, line,
                 encoding = "utf-8",
@@ -302,11 +302,8 @@ define(['module'], function (module) {
                 stringBuffer = new java.lang.StringBuffer();
                 line = input.readLine();
 
-                
 
-                
                 if (line && line.length() && line.charAt(0) === 0xfeff) {
-                    
                     line = line.substring(1);
                 }
 
@@ -318,8 +315,7 @@ define(['module'], function (module) {
                     stringBuffer.append(lineSeparator);
                     stringBuffer.append(line);
                 }
-                
-                content = String(stringBuffer.toString()); 
+                content = String(stringBuffer.toString()); //String
             } finally {
                 input.close();
             }
@@ -328,7 +324,6 @@ define(['module'], function (module) {
     } else if (masterConfig.env === 'xpconnect' || (!masterConfig.env &&
             typeof Components !== 'undefined' && Components.classes &&
             Components.interfaces)) {
-        
         Cc = Components.classes;
         Ci = Components.interfaces;
         Components.utils['import']('resource://gre/modules/FileUtils.jsm');
@@ -344,7 +339,6 @@ define(['module'], function (module) {
 
             fileObj = new FileUtils.File(url);
 
-            
             try {
                 inStream = Cc['@mozilla.org/network/file-input-stream;1']
                            .createInstance(Ci.nsIFileInputStream);

@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobeSettingsData, bridge, constants, core, KoHelpers) => {
 
     class PersonalDataExportViewModel {
@@ -8,18 +5,15 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
 
             this.resources = resources;
 
-            // set up ko observables four our header text
             this.PageTitle = ko.observable(resources.PageTitle);
             this.PageSubtitle = ko.observable(resources.PageSubtitle);
 
-            // set up ko observables for our main paragraph content
             this.Paragraph1 = ko.observable(resources.Paragraph1);
             this.Paragraph2 = ko.observable(resources.Paragraph2);
             this.Paragraph3 = ko.observable(resources.Paragraph3);
 
             this.PrivacyLinkDisplayText = ko.observable(resources.PrivacyLinkDisplayText);
 
-            // Set up visibility variables for the learn more and privacy page sections
             this.learnMoreVisible = ko.observable(false);
             this.privacyVisible = ko.observable(false);
             this.pageVisible = ko.observable(true);
@@ -29,7 +23,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 return this.processingFlag();
             });
 
-            // set up the Learn More button on the Main page section
             this.learnMoreButton = {
                 buttonText: resources.LearnMoreButtonText,
                 buttonClickHandler: () => {
@@ -38,7 +31,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 disableControl: this.disableControl
             };
 
-            // set up the click handler for the Learn More button on the Main page section
             this.onLearnMoreButtonClick = () => {
                 if (!this.processingFlag()) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logUserInteractionEvent", "MainPageLearnMoreButtonClicked");
@@ -47,7 +39,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     this.privacyVisible(false);
                     this.pageVisible(false);
 
-                    // fill the Learn More content for render
                     let learnMoreIFrame = document.getElementById("learnMoreIFrame");
                     let doc = learnMoreIFrame.contentWindow.document;
                     oobeSettingsData.showLearnMoreContent(learnMoreIFrame, doc, resources.LearnMoreDataTransferUrl, document.documentElement.dir, isInternetAvailable, resources.NavigationError, targetPersonality);
@@ -56,7 +47,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             };
 
-            // this sets up and is the handler for the main page "Next" button, which exits the page
             this.nextButton = {
                 isPrimaryButton: true,
                 autoFocus: true,
@@ -66,10 +56,8 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                         this.processingFlag(true);
                         bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
-                        // if they click the Next button, the response is true.
                         let response = true;
 
-                        // record the response in the registry and send telemetry
                         bridge.invoke("CloudExperienceHost.Telemetry.commitIntentPropertyBOOLAsync", "PersonalDataExport", "PDEShown", response).done(() => {
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "ReportPDEShownSuccess", response);
                             bridge.fireEvent(constants.Events.done, constants.AppResult.success);
@@ -89,7 +77,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 this.nextButton
             ];
 
-            // set up the Continue button on the LearnMore page section
             this.learnMoreContinueButton = {
                 buttonText: resources.ContinueButtonText,
                 buttonType: "button",
@@ -101,7 +88,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             };
 
-            // the click handler for the Continue button on the LearnMore page section
             this.onLearnMoreContinue = () => {
                 if (!this.processingFlag()) {
                     this.processingFlag(true);
@@ -118,7 +104,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 this.learnMoreContinueButton
             ];
 
-            // the privacy link was clicked, make the privacy content visible and hide the learnmore and PDE content
             this.onPrivacyLinkClick = () => {
                 if (!this.processingFlag()) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logUserInteractionEvent", "MainPagePrivacyLinkClicked");
@@ -127,7 +112,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     this.pageVisible(false);
                     this.privacyVisible(true);
 
-                    // fill the Privacy content for render
                     let privacyIFrame = document.getElementById("privacyIFrame");
                     let doc = privacyIFrame.contentWindow.document;
                     oobeSettingsData.showLearnMoreContent(privacyIFrame, doc, resources.PrivacyStatementUrl, document.documentElement.dir, isInternetAvailable, resources.NavigationError, targetPersonality);
@@ -136,7 +120,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             };
 
-            // set up the Continue button on the Privacy Statement page section
             this.privacyContinueButton = {
                 buttonText: resources.ContinueButtonText,
                 buttonType: "button",
@@ -148,7 +131,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             };
 
-            // the privacy continue button was clicked, make the PDE content visible and hide the LearnMore and Privacy content
             this.onPrivacyContinue = () => {
                 if (!this.processingFlag()) {
                     this.processingFlag(true);
@@ -165,7 +147,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 this.privacyContinueButton
             ];
 
-            // the refund link was clicked, make the refund content visible and hide the learnmore, privacy, and PDE content
             this.onRefundLinkClick = () => {
                 if (!this.processingFlag()) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logUserInteractionEvent", "MainPageRefundLinkClicked");
@@ -175,7 +156,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     this.pageVisible(false);
                     this.privacyVisible(false);
 
-                    // fill the Refund content for render
                     let refundIFrame = document.getElementById("refundIFrame");
                     let doc = refundIFrame.contentWindow.document;
                     oobeSettingsData.showLearnMoreContent(refundIFrame, doc, resources.RefundLinkUrl, document.documentElement.dir, isInternetAvailable, resources.NavigationError, targetPersonality);
@@ -184,7 +164,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             };
 
-            // set up the Continue button on the Refund Statement page section
             this.refundContinueButton = {
                 buttonText: resources.ContinueButtonText,
                 buttonType: "button",
@@ -196,7 +175,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             };
 
-            // the privacy continue button was clicked, make the PDE content visible and hide the LearnMore and Privacy content
             this.onRefundContinue = () => {
                 if (!this.processingFlag()) {
                     this.processingFlag(true);

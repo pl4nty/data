@@ -1,4 +1,3 @@
-﻿
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -27,7 +26,6 @@ var CloudExperienceHost;
         
         function _displayProgress(htmlElement, textString, value1, value2) {
             var errorTextToReplace = unifiedEnrollmentResources[textString];
-            
             if (value1 > value2)
             {
                 value1 = value2;
@@ -70,7 +68,6 @@ var CloudExperienceHost;
                         {
                             EnrollmentProgressPoliciesDiv.style.display = 'block';
                         }
-                        
                         policyCurrentProgress = result.currentProgress;
                         policyExpectedEndValue = result.expectedEndValue;
                         if (result.currentProgress === result.expectedEndValue) {
@@ -102,7 +99,6 @@ var CloudExperienceHost;
                         {
                             EnrollmentProgressNetworkDiv.style.display = 'block';
                         }
-                        
                         profilesCurrentProgress = result.currentProgress;
                         profilesExpectedEndValue = result.expectedEndValue;
                         if (result.currentProgress === result.expectedEndValue) {
@@ -134,7 +130,6 @@ var CloudExperienceHost;
                         {
                             EnrollmentProgressApplicationsDiv.style.display = 'block';
                         }
-                        
                         appsCurrentProgress = result.currentProgress;
                         appsExpectedEndValue = result.expectedEndValue;
                         if (result.currentProgress === result.expectedEndValue) {
@@ -166,7 +161,6 @@ var CloudExperienceHost;
                         {
                             EnrollmentProgressCertificatesDiv.style.display = 'block';
                         }
-                        
                         certificatesCurrentProgress = result.currentProgress;
                         certificatesExpectedEndValue = result.expectedEndValue;
                         if (result.currentProgress === result.expectedEndValue) {
@@ -207,7 +201,6 @@ var CloudExperienceHost;
                             enterpriseManagementWorker.updateServerWithResult(false, false);
                             EnrollmentProgressNotifyOfNotificationText.textContent = unifiedEnrollmentResources["EnrollmentErrorFinishedLeadText"] + " " + unifiedEnrollmentResources["InsecureRedirectDescription"];
                         } catch (e) {
-                            
                         }
                     }
                 }, function (e) {
@@ -215,7 +208,6 @@ var CloudExperienceHost;
                         enterpriseManagementWorker.updateServerWithResult(false, false);
                         EnrollmentProgressNotifyOfNotificationText.textContent = unifiedEnrollmentResources["EnrollmentErrorFinishedLeadText"] + " " + unifiedEnrollmentResources["InsecureRedirectDescription"];
                     } catch (e) {
-                        
                     }
                 });
         }
@@ -243,7 +235,6 @@ var CloudExperienceHost;
                 return WinJS.Promise.join({ contextPromise: contextPromise, languagePromise: languagePromise, dirPromise: dirPromise, stringPromise: stringPromise, cssPromise: cssPromise, skipPromise: skipPromise });
             },
             ready: function (element, options) {
-                
                 FinishedButton.addEventListener("click", function (event) {
                     event.preventDefault();
                     this._onFinished.apply(this);

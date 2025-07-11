@@ -1,8 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
-/// <reference path="error.ts" />
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -16,4 +11,3 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.XboxTcuiContext = XboxTcuiContext;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=xboxTcuiContext.js.map

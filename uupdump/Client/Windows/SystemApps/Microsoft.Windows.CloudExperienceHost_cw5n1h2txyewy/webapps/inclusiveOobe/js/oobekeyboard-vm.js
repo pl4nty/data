@@ -1,4 +1,4 @@
-﻿define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy/appObjectFactory', 'legacy/uiHelpers', 'optional!sample/Sample.CloudExperienceHostAPI.OobeKeyboardManagerStaticsCore'], (ko, bridge, constants, core, appObjectFactory, legacy_uiHelpers) => {
+define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy/appObjectFactory', 'legacy/uiHelpers', 'optional!sample/Sample.CloudExperienceHostAPI.OobeKeyboardManagerStaticsCore'], (ko, bridge, constants, core, appObjectFactory, legacy_uiHelpers) => {
     const tagSkip = "skip";
     const tagAddLayout = "Add layout";
 
@@ -90,12 +90,10 @@
             this.selectedKeyboardForInputLanguage = ko.observable(this.keyboardsForInputLanguage()[this.currentSelectedKeyboardForLanguageIndex]);
 
             this.keyboardSelectionInit = () => {
-                // First panel, no panel to navigate before this
                 bridge.invoke("CloudExperienceHost.setShowBackButton", false);
             }
 
             this.extraKeyboardChoiceInit = () => {
-                // This is the second panel, enable back navigation for this and subsequent pages
                 bridge.invoke("CloudExperienceHost.setShowBackButton", true);
             }
 
@@ -104,7 +102,6 @@
 
                 let newStepPanel = document.querySelector(".oobe-panel[data-panel-index='" + newStepIndex + "']");
                 if (!newStepPanel) {
-                    //flow has gone all the way through the panels, user has added an extra keyboard
                     this.completeKeyboardFlow(true);
                 } else {
                     let item = ko.dataFor(this.currentPanelElement());
@@ -131,7 +128,6 @@
                 }
             });
 
-            // One of the component redirections loses the object context for invoking this. For now use an arrow function to work around this.
             this.nextStep = () => {
                 if (!this.processingFlag()) {
                     this.processingFlag(true);
@@ -172,7 +168,6 @@
                         this.nextStep();
                         return WinJS.Promise.wrapError(null);
                     } else if (!this.processingFlag() && result && result.constraint.tag === CloudExperienceHostAPI.Speech.SpeechRecognitionKnownCommands.no.tag) {
-                        // this should speak the "say the one you want" Cortana line
                         CloudExperienceHostAPI.Speech.SpeechSynthesis.stop();
                         return CloudExperienceHostAPI.Speech.SpeechRecognition.promptForCommandsAsync(this.resourceStrings['keyboardSelectionWrongVoiceOver'], this.keyboardsForDefaultInputLanguageConstraints());
                     } else {
@@ -212,7 +207,6 @@
                         this.nextStep();
                         return WinJS.Promise.wrapError(null);
                     } else if (!this.processingFlag() && result && ((result.constraint.tag === CloudExperienceHostAPI.Speech.SpeechRecognitionKnownCommands.no.tag) || (result.constraint.tag === tagSkip))) {
-                        //complete the flow without adding a second keyboard
                         this.completeKeyboardFlow(false);
                         return WinJS.Promise.wrapError(null);
                     } else {
@@ -288,11 +282,9 @@
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "SecondKeyboardAdded");
                     }
                     try {
-                        // Show the progress ring while committing async.
                         bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
                         appObjectFactory.getObjectFromString("CloudExperienceHostAPI.OobeKeyboardManagerStaticsCore").commitKeyboardsAsync(keyboards).done(() => {
-                            // Notify the chrome footer to update the input switch button
                             bridge.invoke("CloudExperienceHost.setShowInputSwitchButton");
 
                             bridge.fireEvent(constants.Events.done, constants.AppResult.success);
@@ -326,22 +318,11 @@
             }
         }
 
-        // Due to the way oobe-listview is structured (designating a "proxy" to receive tab focus so it can internally manage focus programmatically
-        // AND making that proxy element be the container for the whole list, not just the view-port) it is not entirely compatible with WinJS XYFocus.
-        //
-        // Mainly, if focus is within the oobe-footer and we attempt an "up" or "down" navigation, XYFocus will essentially rule out the oobe-listview
-        // on the basis that in either direction, the bottom/top (respectively) of the oobe-listview are below/above the currently focused element's bounding rect.
-        // As a result, these get negative "scores" and are filtered out. Logically, it makes sense that when you press "up" the focus target should NOT be
-        // something that stretches below the currently focused element (and vice versa).
-        //
-        // So we need to be explicit about handling the transfer of focus from the oobe-footer to the oobe-listview when dealing with gamepad.
         onFooterKeyDown(_, e) {
             let handled = false;
 
             if (this.isGamepadEnabled) {
                 if (e.keyCode === WinJS.Utilities.Key.GamepadDPadUp || e.keyCode === WinJS.Utilities.Key.GamepadLeftThumbstickUp) {
-                    // Check if within the same '.oobe-panel' as the currently focused element there is a oobe-listview.
-                    // If so, explicitly set focus on the child '.list' element.
                     let panel = document.activeElement.closest(".oobe-panel");
                     if (panel) {
                         let listview = panel.querySelector("oobe-listview .list");
@@ -358,9 +339,6 @@
         }
 
         handleBackNavigation() {
-            // Since the back button in Frame is removed asynchronously, multiple back navigations may arrive
-            // during transitions within the webapp panes.
-            // Therefore also cap the panel index decrement at zero.
             if (!this.processingFlag() && (this.currentPanelIndex() > 0)) {
                 this.processingFlag(true);
                 this.currentPanelIndex(this.currentPanelIndex() - 1);

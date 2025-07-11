@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-
+﻿
 define([], () => {
     function normalizePromise(promise) {
         return new WinJS.Promise((resolve, reject) => {
@@ -32,7 +29,6 @@ define([], () => {
                         return isUpdateDisabled; // return we should skip if update is explicitly disabled
                     }
 
-                    // Skip when no AP enabled
                     return true;
                 } catch (err) {
                     CloudExperienceHost.Telemetry.logEvent("Autopilot_AutoPilotUpdatePage_GetShouldSkipOptOutAsyncFailed", JSON.stringify({ error: err }));
@@ -47,7 +43,6 @@ define([], () => {
             return normalizePromise((async () => {
                 const isApEnabled = await this.isAutopilotEnabledAsync();
                 if (!isApEnabled) {
-                    // not now: throw new Error("Autopilot not enabled");
                 }
 
                 const timeoutDuration = await this.getAutopilotManager().getDwordPolicyAsync("AutopilotUpdateTimeout");

@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/navigationManager', 'legacy/appViewManager', 'lib/text!data/oobeSections.json'], (ko, navManager, appViewManager, sectionRawData) => {
     class OOBEChromeBreadCrumbViewModel {
         constructor(params) {
@@ -10,7 +7,6 @@ define(['lib/knockout', 'legacy/navigationManager', 'legacy/appViewManager', 'li
             this.resources = ko.observable(resourceStrings);
             appViewManager.subscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.Language);
 
-            // Initialize and load section data
             this.sectiondata = JSON.parse(sectionRawData);
             this.sectionMapping = {};
             this.sections = ko.observableArray([]);
@@ -54,10 +50,8 @@ define(['lib/knockout', 'legacy/navigationManager', 'legacy/appViewManager', 'li
             let tempSections = [];
 
             for (let section of this.sectiondata[scenarioName]) {
-            // Update section binding data
                 tempSections.push({ name: section.name, resID: section.resID });
 
-            // Create node to section mapping
                 for (let node of section.visibleNodes) {
                     this.sectionMapping[node.cxid] = section.name;
                 }
@@ -75,7 +69,6 @@ define(['lib/knockout', 'legacy/navigationManager', 'legacy/appViewManager', 'li
 
         getSectionAccString(section, sections, resources) {
             let accString = "";
-            // Find the matching section and construct the acc string
             for (let i = 0; i < sections.length; i++) {
                 if (sections[i].name === section) {
                     accString = resources["SectionAccString"].replace("%1", resources[sections[i].resID]);

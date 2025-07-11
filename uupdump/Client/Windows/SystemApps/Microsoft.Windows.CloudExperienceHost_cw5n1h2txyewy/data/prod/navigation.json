@@ -1757,14 +1757,27 @@
             "preloadCheck": "CloudExperienceHostAPI.OobeEulaManagerStaticsCore",
             "url": "ms-appx-web:///webapps/inclusiveOobe/view/OobeEula-main.html",
             "timeout": 60000,
-            "successID": "OobeDeviceName",
-            "cancelID": "OobeDeviceName",
-            "abortID": "OobeDeviceName",
+            "successID": "OobeEulaAutoPilot",
+            "cancelID": "OobeEulaAutoPilot",
+            "abortID": "OobeEulaAutoPilot",
             "disableBackNavigationToNode": {
               "value": true,
               "overrideValue": false,
               "overrideFeature": "BackNavigationToEulaPage"
             },
+            "visibility": false
+        },
+        "OobeEulaAutoPilot": {
+            "cxid": "OobeEulaAutoPilot",
+            "launcher": "js:OOBEAutoPilot",
+            "policyName": "AutoAcceptEula",
+            "requiredFeatureName": "AutopilotAcceptEula",
+            "timeout": 60000,
+            "failID": "OobeDeviceName",
+            "successID": "OobeDeviceName",
+            "cancelID": "OobeDeviceName",
+            "abortID": "OobeDeviceName",
+            "disableErrorPageOnFailure": true,
             "visibility": false
         },
         "OobeDeviceName": {
@@ -2472,7 +2485,6 @@
             "cxid": "OobePrepEnduserSession",
             "launcher": "js:OobePrepEnduserSession",
             "supportedSignInIdentityProviders": [ "msa" ],
-            "requiredFeatureName": "OobeInEnduserSession",
             "canExitCxh": true,
             "disableBackNavigationToNode": true,
             "disableErrorPageOnFailure": true,
@@ -3919,6 +3931,34 @@
             "timeout": 120000,
             "visibility": false
         }
+    },
+    "NTHM365PINNING": {
+       "start": "NthM365Pinning",
+       "notifyOnFirstVisible": true,
+       "speechCapable": true,
+       "speechDisabled": true,
+       "frameName": "oobe-light-frame",
+       "personality": "CloudExperienceHost.Personality.LiteWhite",
+       "NthM365Pinning": {
+          "cxid": "NthM365Pinning",
+          "url": "https://sdx.microsoft.com/frx/nthm365pinning",
+          "urlint": "https://sdx.microsoft-int.com/frx/nthm365pinning",
+          "internetRequired": true,
+          "skipReconnectHandler": true,
+          "failID": "ExitOnFailure",
+          "cancelID": "ExitOnFailure",
+          "abortID": "ExitOnFailure",
+          "offlineID": "ExitOnFailure",
+          "disableErrorPageOnFailure": true,
+          "visibility": false,
+          "intraWebAppVisibility": false
+       },
+       "ExitOnFailure": {
+          "cxid": "ExitOnFailure",
+          "launcher": "js:OobeSkipNode",
+          "disableErrorPageOnFailure": true,
+          "visibility": false
+       }
     }
     ,"NTHSNAPSHOTCAPTURE": {
          "start": "NthSnapshotCapture",

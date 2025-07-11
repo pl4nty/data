@@ -1,17 +1,13 @@
 ﻿
-
 (function () {
     "use strict";
 
-    
     var doNotSetOptionOnControl = {};
 
-    
     function isPropertyEventHandler(propertyName) {
         return propertyName[0] === "o" && propertyName[1] === "n";
     }
 
-    
     function isSameLayout(layout1, layout2) {
         if (layout1 && layout2 && layout1.type && layout2.type) {
             return objectShallowEquals(layout1, layout2);
@@ -35,7 +31,6 @@
         return true;
     }
 
-    
     function objectShallowEquals(object1, object2) {
         if (object1 === object2) {
             return true;
@@ -66,25 +61,19 @@
             ko.bindingHandlers[bindingName] = {
                 init: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
 
-                    
                     var value = valueAccessor();
 
-                    
                     var options = {};
 
-                    
                     if (element.children.length > 0 && bindDescendantsBeforeParent) {
                         ko.applyBindingsToDescendants(bindingContext, element);
                     }
 
-                    
                     for (var property in value) {
-                        
                         if (value.hasOwnProperty(property) && !isPropertyEventHandler(property) && (!delayedPropertyProcessor[property])) {
                             if (propertyProcessor[property]) {
                                 var propertyResult = propertyProcessor[property](value[property], function () { return element });
 
-                                
                                 if (propertyResult !== doNotSetOptionOnControl) {
                                     options[property] = propertyResult;
                                 }
@@ -94,23 +83,17 @@
                         }
                     }
 
-                    
                     var control = new ctor(element, options);
 
-                    
                     if (eventConfig[name]) {
                         var events = eventConfig[name];
                         for (var event in events) {
                             ko.utils.registerEventHandler(element, event, function changed(e) {
 
-                                
                                 for (var propertyIndex in eventConfig[name][event]) {
                                     var property = eventConfig[name][event][propertyIndex];
-                                    
                                     if (value && value.hasOwnProperty(property)) {
-                                        
                                         if (ko.isWriteableObservable(value[property]) && value[property]() !== control[property]) {
-                                            
                                             value[property](control[property]);
                                         }
                                     }
@@ -119,7 +102,6 @@
                         }
                     }
 
-                    
                     ko.utils.domNodeDisposal.addDisposeCallback(element, function (e) {
                         if (element.winControl) {
                             element.winControl.dispose();
@@ -130,11 +112,9 @@
                 },
 
                 update: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
-                    
                     var control = element.winControl;
                     var value = valueAccessor();
 
-                    
                     for (var property in value) {
                         if (value.hasOwnProperty(property)) {
                             var unwrappedValue = ko.unwrap(value[property]);
@@ -160,10 +140,8 @@
         });
     }
 
-    
     function bindingListWatch(value, oldValue, sourceElement) {
         var unpacked = ko.unwrap(value);
-        
         var retVal = doNotSetOptionOnControl;
         if (Array.isArray(unpacked) && ko.isWriteableObservable(value)) {
             if (!value._winKoChangesSubscription) {
@@ -175,11 +153,9 @@
                 value._winKoChangesSubscriptionDisabled = false;
                 value._winKoBindingList = bindingList;
 
-                
                 value._winKoChangesSubscription = value.subscribe(function (newValue) {
                     if (!value._winKoChangesSubscriptionDisabled) {
 
-                        
                         bindingList._winKoChangesSubscriptionDisabled = true;
                         var offset = 0;
 
@@ -212,13 +188,11 @@
                     }
                 }, this, "arrayChange");
 
-                
                 var bindingListMutationEvents = ["itemchanged", "itemmoved", "itemmutated", "itemremoved", "reload"];
 
                 var updateOriginalArray = function () {
                     if (!bindingList._winKoChangesSubscriptionDisabled) {
 
-                        
                         value._winKoChangesSubscriptionDisabled = true;
                         value.removeAll();
                         for (var i = 0, len = bindingList.length; i < len; i++) {
@@ -232,13 +206,11 @@
                     bindingList.addEventListener(event, updateOriginalArray);
                 });
 
-                
                 ko.utils.domNodeDisposal.addDisposeCallback(sourceElement(), function () {
                     value._winKoChangesSubscription.dispose();
                 });
 
             }
-            
             if (!sourceElement()._winKoDataSourceBound) {
                 sourceElement()._winKoDataSourceBound = true;
                 retVal = value._winKoBindingList.dataSource;
@@ -250,7 +222,6 @@
         return retVal;
     }
 
-    
     function itemTemplateWatch(value, oldValue, sourceElement, property) {
         var retVal = doNotSetOptionOnControl;
         value = ko.unwrap(value);
@@ -258,7 +229,6 @@
         var renderer;
 
         sourceElement = sourceElement();
-        
         if (typeof value === "string") {
             renderer = WinJS.UI.simpleItemRenderer(function (item) {
                 var element = document.createElement("div");
@@ -266,7 +236,6 @@
                 return element;
             });
         } else {
-            
             renderer = value;
         }
         var templateProp = "win" + property + "Old";
@@ -279,7 +248,6 @@
     }
 
     var controls = {
-        
         AppBar: {
             bindDescendantsBeforeParent: true
         },
@@ -347,7 +315,6 @@
                     var unpacked = ko.unwrap(value);
                     var listViewElement = listViewElement();
 
-                    
                     if (!current || !isSameLayout(unpacked, listViewElement._winCachedLayout)) {
                         retVal = (unpacked && unpacked.type) ? new unpacked.type(unpacked) : unpacked;
                         listViewElement._winCachedLayout = unpacked;
@@ -357,12 +324,10 @@
                 }
             },
             postCtorPropertyProcessor: {
-                
                 'selection': function (value, listViewElement, current) {
                     var unpacked = ko.unwrap(value);
                     listViewElement = listViewElement();
 
-                    
                     if (Array.isArray(unpacked) && ko.isWriteableObservable(value)) {
                         if (!listViewElement._winKoSelectionChangedHandlerSet) {
                             listViewElement.winControl.addEventListener("selectionchanged", function () {
@@ -390,7 +355,6 @@
             bindDescendantsBeforeParent: true,
             propertyProcessor: {
                 'selectedIndex': function (value, pivotElement, current) {
-                    
                     if (!pivotElement._winKoSelectedIndexHandlerSet) {
                         pivotElement().addEventListener("selectionchanged", function (e) {
                             if (ko.isWriteableObservable(value)) {
@@ -402,7 +366,6 @@
                     return ko.unwrap(value);
                 },
                 'selectedItem': function (value, pivotElement, current) {
-                    
                     if (!pivotElement._winKoSelectedItemHandlerSet) {
                         pivotElement().addEventListener("selectionchanged", function (e) {
                             if (ko.isWriteableObservable(value)) {
@@ -440,7 +403,6 @@
         ViewBox: {}
     };
 
-    
     var eventConfig = {
         AppBar: {
             "afterclose": ["opened"],
@@ -481,7 +443,6 @@
             "afteropen": ["opened"]
         },
         Pivot: null,
-        
         Rating: {
             "change": ["userRating"]
         },

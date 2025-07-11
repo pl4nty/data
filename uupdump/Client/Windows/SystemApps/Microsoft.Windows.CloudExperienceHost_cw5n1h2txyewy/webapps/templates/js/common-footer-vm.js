@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define(() => {
+﻿define(() => {
     class CommonFooterViewModel {
         constructor(params) {
             this.flexEndDropdowns = params.flexEndDropdowns;

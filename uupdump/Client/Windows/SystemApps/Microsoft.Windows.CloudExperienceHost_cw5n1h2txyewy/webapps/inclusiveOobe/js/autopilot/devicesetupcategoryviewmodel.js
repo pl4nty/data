@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -18,11 +15,9 @@ define([
 
     class deviceSetupCategoryViewModel {
         constructor(resourceStrings, sessionUtilities) {
-            // Constants
             this.rebootRequiredToCommitSettingsSettingName = "ESP.Device.rebootRequiredToCommitSettings";
             this.defaultWaitToInitiateSyncSessionsInMilliseconds = 1000; // 1 second
 
-            // Private member variables
             this.resourceStrings = resourceStrings;
             this.sessionUtilities = sessionUtilities;
             this.mdmBootstrapSessionUtilities = new mdmBootstrapSessionUtilities(
@@ -35,10 +30,6 @@ define([
             this.networkProfilesProvisioningSucceeded = true;
             this.appsProvisioningSucceeded = true;
 
-            // The background sync sessions need to be initiated only once for all the MDM-monitored
-            // subcategories in this category.  Creating a single promise will ensure that singleton.
-            // Syncs are reinitiated after every reboot, and so sync lifetime should match
-            // with this category's lifetime.
             this.syncSyncSessionsShouldStart = false;
             this.waitForSyncSessionsInitiationPromise = this.waitForSyncSessionsInitiationAsync();
 
@@ -53,12 +44,10 @@ define([
                     "CommercialOOBE_ESPDeviceSetup_SyncSessionWaitLoop_StartingSyncSessions",
                     "BootstrapStatus: Start background sync sessions for Device Setup.");
 
-                // This is a fire and forget operation because sendResultsToMdmServerAsync sets the IsSyncDone node to actually break out of this wait
                 this.mdmBootstrapSessionUtilities.initiateSyncSessionsAsync(ModernDeployment.Autopilot.Core.SyncSessionExitCondition.deviceSetupComplete);
 
                 return WinJS.Promise.as(true);
             } else {
-                // Keep polling for the signal to initiate background sync sessions.
                 return WinJS.Promise.timeout(this.defaultWaitToInitiateSyncSessionsInMilliseconds).then(() => {
                     return this.waitForSyncSessionsInitiationAsync();
                 });
@@ -67,13 +56,11 @@ define([
 
         coalesceRebootsAsync() {
             return this.sessionUtilities.getSettingAsync(this.rebootRequiredToCommitSettingsSettingName).then((isRebootRequired) => {
-                // Should only reboot in OOBE.  This makes sure the web app doesn't "Fall off" before pin.
                 if (isRebootRequired === "true") {
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "CommercialOOBE_ESPDeviceSetup_RebootCoalescing_Required",
                         "BootstrapStatus: Coalesced reboot required.");
 
-                    // Returning this state will tell the framework to do the actual reboot and resume this subcategory post-reboot.
                     return WinJS.Promise.as(this.sessionUtilities.createActionResult(
                         this.sessionUtilities.SUBCATEGORY_STATE_REBOOT_REQUIRED_AND_TRY_AGAIN,
                         null));
@@ -86,7 +73,6 @@ define([
         }
 
         sendResultsToMdmServerAsync() {
-            // Best effort
             try {
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "CommercialOOBE_ESPDeviceSetup_SendResultsToMdmServer_Started",
@@ -110,8 +96,6 @@ define([
         }
 
         saveWhiteGloveSuccessResultAsync() {
-            // Since this is the last action in this category, if it gets invoked, that implies all actions succeeded,
-            // which itself implies White Glove succeeded.
             if ((this.whiteGloveMode === EnterpriseDeviceManagement.Service.AutoPilot.AutopilotMode.whiteGloveCanonical) ||
                 (this.whiteGloveMode === EnterpriseDeviceManagement.Service.AutoPilot.AutopilotMode.whiteGloveDJPP)) {
                 return bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.sessionUtilities.WHITE_GLOVE_SUCCESS_VALUE_NAME, true).then(() => {
@@ -126,7 +110,6 @@ define([
                 null));
         }
 
-        // Category interface methods
 
         getId() {
             return "DeviceSetupCategory";
@@ -164,7 +147,6 @@ define([
                         return this.sessionUtilities.SUBCATEGORY_DISPOSITION_VISIBLE;
                     },
                     (progressCallbackAsync) => {
-                        // Ensure the background sync sessions are initiated first.
                         this.syncSyncSessionsShouldStart = true;
 
                         return this.waitForSyncSessionsInitiationPromise.then(() => {
@@ -186,7 +168,6 @@ define([
                         return this.sessionUtilities.SUBCATEGORY_DISPOSITION_VISIBLE;
                     },
                     (progressCallbackAsync) => {
-                        // Ensure the background sync sessions are initiated first.
                         this.syncSyncSessionsShouldStart = true;
 
                         return this.waitForSyncSessionsInitiationPromise.then(() => {
@@ -208,7 +189,6 @@ define([
                         return this.sessionUtilities.SUBCATEGORY_DISPOSITION_VISIBLE;
                     },
                     (progressCallbackAsync) => {
-                        // Ensure the background sync sessions are initiated first.
                         this.syncSyncSessionsShouldStart = true;
 
                         return this.waitForSyncSessionsInitiationPromise.then(() => {
@@ -230,7 +210,6 @@ define([
                         return this.sessionUtilities.SUBCATEGORY_DISPOSITION_VISIBLE;
                     },
                     (progressCallbackAsync) => {
-                        // Ensure the background sync sessions are initiated first.
                         this.syncSyncSessionsShouldStart = true;
 
                         return this.waitForSyncSessionsInitiationPromise.then(() => {
@@ -269,7 +248,6 @@ define([
                     }
                 ),
 
-                // This MUST be last in the list of actions.
                 new bootstrapStatusSubcategoryViewModel(
                     this.resourceStrings,
                     this.sessionUtilities,
@@ -290,7 +268,6 @@ define([
                 switch (handlerParameters.clickedItemId) {
                     case this.sessionUtilities.CLICKABLE_ITEM_ID_CONTINUE_ANYWAY_BUTTON:
                         return new WinJS.Promise(
-                            // Promise initialization
                             (completeDispatch, errorDispatch, progressDispatch) => {
                                 if (!this.securityPoliciesProvisioningSucceeded ||
                                     !this.certificatesProvisioningSucceeded ||
@@ -309,30 +286,21 @@ define([
                                     }
                                 }
 
-                                // True means that this handler succeeded.
                                 completeDispatch(true);
                             },
 
-                            // Cancellation event handler
                             () => {
                             });
 
                     case this.sessionUtilities.CLICKABLE_ITEM_ID_TRY_AGAIN_BUTTON:
                         return new WinJS.Promise(
-                            // Promise initialization
                             (completeDispatch, errorDispatch, progressDispatch) => {
-                                // Restart the sync sessions on a retry.  It's OK to start another set of sessions even
-                                // if one set is already running, since the underlying session-running API serializes sessions
-                                // across all sets. Starting another set on retry also ensures that the retry's sessions
-                                // time out on the full timeout period.
                                 this.syncSyncSessionsShouldStart = false;
                                 this.waitForSyncSessionsInitiationPromise = this.waitForSyncSessionsInitiationAsync();
 
-                                // True means that this handler succeeded.
                                 completeDispatch(true);
                             },
 
-                            // Cancellation event handler
                             () => {
                             });
 
@@ -342,7 +310,6 @@ define([
                            "Unhandled click handler item");
                 }
 
-                // True means that this handler succeeded.
                 return WinJS.Promise.as(true);
             };
         }

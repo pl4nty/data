@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/appViewManager'], (ko, appViewManager) => {
     class OobeProgressViewModel {
         constructor(params) {

@@ -1,6 +1,4 @@
-﻿
-
-"use strict";
+﻿"use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
     var RetailDemo;

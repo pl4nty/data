@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 define(['legacy/appViewManager', 'legacy/core'], (appViewManager, core) => {
     class HostedApplication {
@@ -49,13 +46,11 @@ define(['legacy/appViewManager', 'legacy/core'], (appViewManager, core) => {
 
             const launchShellHostedApplicationPromise = CloudExperienceHostAPI.HostedApplicationCore.showOobeShellHostedAppAsync(moduleName, scaledRect, propertySetArgs)
                 .then(hostedApplicationResult => {
-                    // Undimchrome now that we know the app exited
                     appViewManager.undimChrome();
 
                     CloudExperienceHost.Telemetry.logEvent("launchShellHostedApplicationAsyncExitedWithResult", JSON.stringify(hostedApplicationResult));
                     return hostedApplicationResult.exitResult;
                 }, (error) => {
-                    // Undimchrome since we failed to launch it.
                     appViewManager.undimChrome();
 
                     CloudExperienceHost.Telemetry.logEvent("launchShellHostedApplicationAsyncBridgeCallFailed", core.GetJsonFromError(error));

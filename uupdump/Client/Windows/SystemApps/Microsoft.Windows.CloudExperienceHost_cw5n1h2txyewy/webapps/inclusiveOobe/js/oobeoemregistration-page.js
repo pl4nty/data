@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 "use strict";
 (() => {
     WinJS.UI.Pages.define("/webapps/inclusiveOobe/view/oobeoemregistration-main.html", {
@@ -41,7 +38,6 @@
             });
         },
         error: function oemPageError(e) {
-            // Look for an error object from our set of init promises and unpack that if we find one.
             if (e.initResult && e.initResult.length > 0) {
                 e.initResult.forEach((result) => {
                     if (result && result.number) {
@@ -56,13 +52,11 @@
         },
         ready: function oemPageReady(element, options) {
             return requireAsync(['lib/knockout', 'corejs/knockouthelpers', 'legacy/bridge', 'legacy/events', 'oobeoemregistration-vm', 'corejs/xy-transfer-wrapper-down']).then((modules) => {
-                // Setup knockout customizations
                 window.KoHelpers = modules.corejs_knockouthelpers;
                 let ko = modules.lib_knockout;
                 let koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
 
-                // Apply bindings and show the page
                 let vm = new modules.oobeoemregistration_vm(this.resourceStrings, this.regions, this.defaultRegion, this.oemRegistrationInfo, this.userInfo, this.targetPersonality);
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {

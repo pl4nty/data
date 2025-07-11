@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobeSettingsData, bridge, constants, core, KoHelpers) => {
 
     class SettingsViewModel {
@@ -16,12 +13,10 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             this.scrollViewEle = null;
             this.scrollDuration = 666;
 
-            // Log telemetry for Default Settings
             for (let setting of this.settingsObjects) {
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Default" + setting.canonicalName, setting.value);
             }
 
-            // observable to monitor page view change
             this.viewName = ko.observable("customize");
 
             let mainTitleTextStrings = {};
@@ -198,7 +193,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     if (btnEle && (btnTextCurr !== btnEle.innerHTML)) {
                         btnEle.innerHTML = btnTextCurr;
                         if (!this.scrolledToTheBottom) {
-                            // Override the visible button label when we need to explain an unusual effect
                             btnEle.setAttribute("aria-label", this.resources.NextButtonAccLabel);
                         }
                         else {
@@ -255,13 +249,9 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     break;
             }
 
-            // Default XYFocus behavior favors looking at elements actual coordinates and bounds (even if they are occluded/off-screen, at least in our case here).
-            // With the scrollable region in the middle of a page this gets confusing so we scope the "search" just to the scrollable region first. If no suitable
-            // "next" element is found, we fall back to the default XYFocus behavior.
             if (direction) {
                 let newFocusTarget = WinJS.UI.XYFocus.moveFocus(direction, { focusRoot: this.scrollViewEle });
                 if (newFocusTarget) {
-                    // If we successfully moved focus, consider this event handled. Otherwise (e.g. if we hit the top or bottom of the scrollable region), let the default behavior take over.
                     handled = true;
                     e.preventDefault();
 
@@ -278,7 +268,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             let handled = false;
 
             if (e.keyCode === WinJS.Utilities.Key.GamepadDPadUp || e.keyCode === WinJS.Utilities.Key.GamepadLeftThumbstickUp) {
-                // When going 'up' from the footer and the scrollable region is present, always move focus to the last focusable element in that region.
                 if (this.customizeVisible()) {
                     let focusCandidate = this.scrollViewEle.querySelector(".toggle-container:last-of-type > oobe-toggle > div");
                     if (focusCandidate) {
@@ -289,8 +278,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             }
             else if (e.keyCode === WinJS.Utilities.Key.GamepadDPadDown || e.keyCode === WinJS.Utilities.Key.GamepadLeftThumbstickDown) {
-                // When going 'down' from the footer, always simulate a tab key press. This way focus will be able to escape the current
-                // WebView and go to the OOBE frame's footer when appropriate.
                 try {
                     CloudExperienceHostAPI.UtilStaticsCore.injectTabKey(false /*holdShift*/);
                     handled = true;
@@ -339,10 +326,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             animateScroll();
         }
 
-        //t = current time
-        //b = start value
-        //c = change in value
-        //d = duration
         easeInOutQuad(t, b, c, d) {
             t /= d / 2;
             if (t < 1) return c / 2 * t * t + b;
@@ -367,9 +350,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             }
         }
 
-        // Converts the underlying settings objects into a format consumable by the single-page variant of oobe settings
         getSettingsToggles() {
-            //initialize the settingsData object
             let settingsData = [];
             let settingsObjects = [];
             let oobeSettingsGroups = CloudExperienceHostAPI.OobeSettingsStaticsCore.getSettingGroups();

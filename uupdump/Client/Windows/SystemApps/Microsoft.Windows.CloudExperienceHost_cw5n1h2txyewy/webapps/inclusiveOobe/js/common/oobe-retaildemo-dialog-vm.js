@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(["lib/knockout", "legacy/bridge", "jsCommon/oobe-gesture-manager", "legacy/core", "winjs/ui"], (ko, bridge, gestureManager, core) => {
     class RetailDemoConfirmDlgViewModel {
         constructor(params, element) {
@@ -11,7 +8,6 @@ define(["lib/knockout", "legacy/bridge", "jsCommon/oobe-gesture-manager", "legac
             bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "RDX_OOBE_Entry_Dialog_Visibility_Accessibility").done(function (result) {
                 if (result) {
                     const style = document.createElement('style');
-                    // Define the CSS rules
                     const css = `
                         @media (-ms-high-contrast) {
                             html {
@@ -19,10 +15,8 @@ define(["lib/knockout", "legacy/bridge", "jsCommon/oobe-gesture-manager", "legac
                             }
                         }
                     `;
-                    // Set the CSS rules as the content of the <style> element
                     style.textContent = css;
 
-                    // Append the <style> element to the <head> element
                     document.head.appendChild(style);
                 }
             });
@@ -34,7 +28,6 @@ define(["lib/knockout", "legacy/bridge", "jsCommon/oobe-gesture-manager", "legac
 
                     bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "RDX_OOBE_Narrator_Leaving_Dialog_In_Scan_Mode").done(function (result) {
                         if (result) {
-                            // Use the "aria-modal" attribute tag to true to help the accessibility tools interpret the dialog properly
                             element.querySelector(".win-contentdialog-dialog").setAttribute("aria-modal", "true");
                         }
                     });
@@ -59,11 +52,9 @@ define(["lib/knockout", "legacy/bridge", "jsCommon/oobe-gesture-manager", "legac
             if (eventInfo.detail.result == WinJS.UI.ContentDialog.DismissalResult.primary) {
                 if (!this.confirmed) {
                     this.confirmed = true;
-                    // show confirmed dlg
                     this.showDlg(this.confirmed);
                 }
                 else {
-                    // Save the value;
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "retailDemoEnabled").done((result) => {
                         if (!result) {
                             bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "retailDemoEnabled", true).done(() => {

@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobeSettingsData, bridge, constants, core, KoHelpers) => {
     class HelloViewModel {
         constructor(resourceStrings, enrollmentKinds, targetPersonality, isInternetAvailable) {
@@ -31,8 +28,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             this.learnMoreVisible = ko.observable(false);
             this.learnMoreVisible.subscribe((newValue) => {
                 if (newValue === false) {
-                    // Reenable button interaction if we're not showing Learn More. On the Learn More page,
-                    // buttons will be enabled after the iframe is shown after oobeSettingsData.showLearnMoreContent()
                     this.processingFlag(false);
                 }
             });
@@ -80,13 +75,9 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                         }
                     });
                 } else {
-                    // isMultiChoice && isLiteWhitePersonality
-                    // By default, render Hello Face as the selected one
                     this.renderFace();
                 }
             } else {
-                // !isMultiChoice
-                // Only one among Face or Fingerprint is available
                 if (this.enrollmentKinds.face) {
                     this.renderFace();
                 } else if (this.enrollmentKinds.fingerprint) {
@@ -125,9 +116,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             ]);
 
-            // LiteWhite personality uses css to style a secondary button (isPrimaryButton property == false) as a hyperlink.
-            // Add "Skip for now" option to the flexEndButton array if this personality is set.
-            // Otherwise, add to the flexStartHyperLinks array.
             if (this.isLiteWhitePersonality) {
                 this.flexEndButtons.unshift({
                     buttonText: resourceStrings.HelloSkipLink,
@@ -153,7 +141,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             }
 
-            // Setup simple voiceover and speech recognition using the resource strings
             try {
                 cxhSpeech.SpeechRecognition.stop();
                 let constraints = [];
@@ -171,7 +158,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     multiFingerprintConstraint.tag = constraintsTags.multiFingerprint;
                     constraints.push(multiFaceConstraint, multiFingerprintConstraint);
                 } else {
-                    // Yes and no variations only apply for single sensor case
                     constraints.push(cxhSpeech.SpeechRecognitionKnownCommands.yes, cxhSpeech.SpeechRecognitionKnownCommands.no);
                 }
 
@@ -224,7 +210,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
         }
 
         renderFace() {
-            // If not LiteWhite personality (likely InclusiveBlue) , show gif instead of Lottie for face animation
             if (!this.isLiteWhitePersonality) {
                 this.ariaLabel = resourceStrings.HelloFaceAnimationAltText;
                 const faceAnimation = document.getElementById("helloFaceAnimation");
@@ -239,7 +224,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
         }
 
         renderFingerprint() {
-            // For fingerprint, only set values for animation control when showing the UI
             if (!this.isLiteWhitePersonality) {
                 this.ariaLabel = resourceStrings.HelloFingerprintIconAriaLabel;
                 this.leadText(resourceStrings.HelloLeadTextFingerprint);
@@ -251,7 +235,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             this.title(resourceStrings.HelloTitleFingerprint);
         }
 
-        // This callback only applies in isMultiOption and isLiteWhitePersonality scenario
         onSwitchEnrollmentKindClick() {
             this.isFaceSelected = !this.isFaceSelected;
 
@@ -295,12 +278,9 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     };
 
                     if (this.hideContentWhileBioAppIsLaunched) {
-                        // Hide the content of this page to avoid undesired flashing after bio enrollment app
-                        // finishes and this page shows up a split second before navigating to next page
                         this.contentContainerVisibility(false);
                     }
                     else {
-                        // Hide all interactable button items from view, but maintain webapp view while bio enrollment app is showing
                         document.getElementById("helloFlexEndButtons").style.visibility = "hidden";
                     }
 
@@ -337,9 +317,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                               }
 
                               this.processingFlag(false);
-                              // Show the content of this page if enrollment app cancels
                               this.contentContainerVisibility(true);
-                              // Restore focus to the default focusable element as the flow is returning to this page
                               KoHelpers.setFocusOnAutofocusElement();
                           }
                     }, (error) => {
@@ -403,7 +381,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             }]);
             document.getElementById("helloFlexEndButtons").style.visibility = "visible";
 
-            // Center the header vertically by adding class to the flex container (parentElement of oobeHeader)
             document.getElementById("oobeHeader").parentElement.classList.add("centered-header-container");
 
             this.processingFlag(false);

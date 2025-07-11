@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -72,4 +68,3 @@ var CloudExperienceHost;
         HelloCleanup.cleanupHelloEnrollment = cleanupHelloEnrollment;
     })(HelloCleanup = CloudExperienceHost.HelloCleanup || (CloudExperienceHost.HelloCleanup = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=Hello.js.map

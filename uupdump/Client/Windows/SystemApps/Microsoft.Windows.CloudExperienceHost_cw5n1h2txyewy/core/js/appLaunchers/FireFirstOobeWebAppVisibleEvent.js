@@ -1,4 +1,3 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
 define(() => {
     class FireFirstOobeWebAppVisibleEvent {
         launchAsync() {

@@ -1,4 +1,3 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -30,7 +29,6 @@ var CloudExperienceHost;
                 }
             }
             else {
-                // Load and resolve all resources for this file
                 let context = WinResCore.ResourceContext;
                 let resourceContext = context.getForCurrentView();
                 if (language != null) {
@@ -50,4 +48,3 @@ var CloudExperienceHost;
         StringResources.makeResourceObject = makeResourceObject;
     })(StringResources = CloudExperienceHost.StringResources || (CloudExperienceHost.StringResources = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=stringResources.js.map

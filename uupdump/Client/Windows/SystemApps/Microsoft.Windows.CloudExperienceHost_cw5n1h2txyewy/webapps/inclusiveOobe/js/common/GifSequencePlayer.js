@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define([], () => {
+﻿define([], () => {
     const imgPropKey = "/imgdesc";
     const gifControlPropKey = "/grctlext";
     const framePropKeys = [imgPropKey, gifControlPropKey];
@@ -97,7 +94,6 @@ define([], () => {
                 this._reportFinishLoopAndStopComplete = null;
             }
             this._finishLoopAndStopPromise = new WinJS.Promise.as(null);
-            // Caller may have started new playback in completion handler
             if (!this.playing) {
                 if (this.loop) {
                     this.currentFrame = 0;

@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -9,7 +6,6 @@
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Get the scenario context, then load the css for the scenario
             let getContextAndLoadCssPromise = requireAsync(['legacy/bridge']).then((result) => {
                 result.legacy_bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "DevicePrepPage: Loading page context");
 
@@ -19,7 +15,6 @@
             }).then(() => {
                 return requireAsync(['legacy/uiHelpers', 'legacy/bridge', 'legacy/core']);
             }).then((result) => {
-                // Device ESP
                 return result.legacy_uiHelpers.LoadCssPromise(document.head, "", result.legacy_bridge);
             });
 
@@ -27,7 +22,6 @@
                 return result.legacy_uiHelpers.LangAndDirPromise(document.documentElement, result.legacy_bridge);
             });
 
-            // Load resource strings
             let getLocalizedStringsPromise = requireAsync(['legacy/bridge', 'legacy/core']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.AutoPilot.makeAutopilotResourceObject").then((resultString) => {
                     this.resourceStrings = JSON.parse(resultString);
@@ -36,7 +30,6 @@
                 });
             });
 
-            // TODO: Check if PPKG processing and MDM task restoration needs to be run.  See ESP's *-page.js file.'
 
             return WinJS.Promise.join({
                 getContextAndLoadCssPromise: getContextAndLoadCssPromise,
@@ -70,18 +63,13 @@
                     autopilotDevicePreparationViewModel,
                     bootstrapSessionGeneralUtilities) => {
 
-                    // Create the global session utilities object used by all classes.
-                    // Having a single global object lets classes communication with each other 
-                    // (e.g., pass data) more easily.
                     this.sessionUtilities = new bootstrapSessionGeneralUtilities(true);
 
-                    // Setup knockout customizations
                     let koPageHelpers = new koHelpers();
                     koPageHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.LightProgress, true /*holdForAdditionalRegistration*/);
                     koPageHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                     window.KoHelpers = koHelpers;
 
-                    // Apply bindings and show the page
                     let viewModel = new autopilotDevicePreparationViewModel(
                         this.resourceStrings,
                         this.targetPersonality,

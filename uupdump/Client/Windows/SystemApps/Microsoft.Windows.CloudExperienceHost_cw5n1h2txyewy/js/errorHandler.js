@@ -1,7 +1,5 @@
-﻿
-(function () {
+﻿(function () {
     "use strict";
-    
     var originalOnError;
 
     WinJS.UI.Pages.define("/views/errorHandler.html", {
@@ -34,7 +32,6 @@
                 WinJS.Application.restart("ms-cxh://LOCALONLY");
             });
 
-            
             if (accountErrorPage === true) {
                 _cancelButton.style.display = 'none';
                 _errorText.style.display = 'none';
@@ -43,14 +40,12 @@
                 _accountErrorText.style.display = 'none';
             }
 
-            
             var show = CloudExperienceHost.shouldShowEaseOfAccessControl();
             EaseOfAccess.style.visibility = (show) ? 'inline' : 'hidden';
             if (show) {
                 var label = CloudExperienceHost.Resources.getString("oobecommon", "EaseOfAccessAccName");
                 EaseOfAccess.setAttribute("aria-label", label);
 
-                
                 EaseOfAccess.setAttribute("title", label);
                 EaseOfAccess.addEventListener("click", function () {
                     var rect = EaseOfAccess.getBoundingClientRect();
@@ -61,7 +56,6 @@
             WinJS.Resources.processAll().done();
         },
         error: function (e) {
-            
             var data = e.detail;
             var logData = new Object;
             logData["errorCode"] = data && (data.number || (data.exception && (data.exception.number || data.exception.code)) || (data.error && data.error.number) || data.errorCode || 0);

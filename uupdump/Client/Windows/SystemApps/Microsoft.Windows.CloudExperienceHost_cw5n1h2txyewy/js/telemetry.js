@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -28,9 +24,6 @@ var CloudExperienceHost;
             start(source, experience, correlationId) {
                 this._appActivity.start(source, experience, correlationId);
                 this._appActivityRequired.start(source, experience);
-                // This call is crashing regularly on some Xbox consoles in the wild.  At this point in time,
-                // we could not repro on a devkit and since this is supposed to be a no-op on the console
-                // we put this within a try / catch block to keep CXH from crashing.
                 try {
                     CloudExperienceHostAPI.EventLogging.appActivityStart(source, experience);
                 }
@@ -40,9 +33,6 @@ var CloudExperienceHost;
             stop(appResult) {
                 this._appActivity.stop(appResult);
                 this._appActivityRequired.stop(appResult);
-                // This call is crashing regularly on some Xbox consoles in the wild.  At this point in time,
-                // we could not repro on a devkit and since this is supposed to be a no-op on the console
-                // we put this within a try / catch block to keep CXH from crashing.
                 try {
                     CloudExperienceHostAPI.EventLogging.appActivityStop(appResult);
                 }
@@ -74,9 +64,6 @@ var CloudExperienceHost;
             }
             _logEventInternal(...params) {
                 var func = "appEvent" + params.length;
-                // This call is crashing regularly on some Xbox consoles in the wild.  At this point in time,
-                // we could not repro on a devkit and since this is supposed to be a no-op on the console
-                // we put this within a try / catch block to keep CXH from crashing.
                 try {
                     CloudExperienceHostAPI.EventLogging[func].apply(undefined, params);
                 }
@@ -106,8 +93,6 @@ var CloudExperienceHost;
                 }
                 return WebAppTelemetry._instance;
             }
-            // activityId is an optional parameter, if not provided, the ID will come from AppTelemetry
-            // If activityId is provided, it must be a valid guid string, else this will crash
             start(cxid, activityId) {
                 if (this._webAppActivity) {
                     this.stop(CloudExperienceHost.AppResult.fail);
@@ -119,9 +104,6 @@ var CloudExperienceHost;
                     this._webAppActivity = new Microsoft.CloudExperienceHost.WebAppActivity(AppTelemetry.getInstance().getId());
                 }
                 this._webAppActivity.start(cxid);
-                // This call is crashing regularly on some Xbox consoles in the wild.  At this point in time,
-                // we could not repro on a devkit and since this is supposed to be a no-op on the console
-                // we put this within a try / catch block to keep CXH from crashing.
                 try {
                     CloudExperienceHostAPI.EventLogging.webAppActivityStart(cxid);
                 }
@@ -135,9 +117,6 @@ var CloudExperienceHost;
                 }
                 this._webAppActivity.stop(appResult);
                 this._webAppActivity = null;
-                // This call is crashing regularly on some Xbox consoles in the wild.  At this point in time,
-                // we could not repro on a devkit and since this is supposed to be a no-op on the console
-                // we put this within a try / catch block to keep CXH from crashing.
                 try {
                     CloudExperienceHostAPI.EventLogging.webAppActivityStop(appResult);
                 }
@@ -164,9 +143,6 @@ var CloudExperienceHost;
                 var func = eventType + params.length;
                 this._webAppActivity[func].apply(this._webAppActivity, params);
                 func = "webAppEvent" + params.length;
-                // This call is crashing regularly on some Xbox consoles in the wild.  At this point in time,
-                // we could not repro on a devkit and since this is supposed to be a no-op on the console
-                // we put this within a try / catch block to keep CXH from crashing.
                 try {
                     CloudExperienceHostAPI.EventLogging[func].apply(undefined, params);
                 }
@@ -307,4 +283,3 @@ if ((typeof define === "function") && define.amd) {
         };
     });
 }
-//# sourceMappingURL=telemetry.js.map

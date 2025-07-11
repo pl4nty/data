@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -24,7 +20,6 @@ var CloudExperienceHost;
         }
         static hasInternetAccess() {
             let hasInternetAccess = false;
-            // The 'internetAccessOverride' setting overrides the normal network access state for testing purposes
             let internetAccessOverride = CloudExperienceHostAPI.Environment.getRegValue("internetAccessOverride");
             if (internetAccessOverride !== "")
                 return (internetAccessOverride === "true");
@@ -57,7 +52,6 @@ var CloudExperienceHost;
             return hasNetworkConnectivity;
         }
         static isConnectionMetered() {
-            // If we can't determine the type of network connectivity we also report 'false'.
             let isConnectionMetered = false;
             let connectionProfile = Windows.Networking.Connectivity.NetworkInformation.getInternetConnectionProfile();
             if (connectionProfile) {
@@ -116,7 +110,6 @@ var CloudExperienceHost;
         }
         static GetWiFiHostedApplicationArgumentsDesktop() {
             let propertySet = Environment.GetWiFiHostedApplicationArguments();
-            // network app will call NetworkUX::NetworkUXMode App::GetNetworkUXModeFromLaunchArgs to get this parameter
             propertySet.insert("HostedApplicationLaunchArgument", (CloudExperienceHost.getContext().personality === CloudExperienceHost.TargetPersonality.LiteWhite) ? "desktopLite" : "desktopInclusive");
             return propertySet;
         }
@@ -129,19 +122,16 @@ var CloudExperienceHost;
         static GetWiFiHostedApplicationArgumentsHub() {
             let propertySet = new Windows.Foundation.Collections.PropertySet();
             propertySet.insert("IsNetworkRequired", true);
-            // Reference to NetworkUXMode enum defined in NetworkUX xaml app 
             propertySet.insert("NetworkUXMode", "Desktop");
             return propertySet;
         }
         static GetWiFiHostedApplicationArgumentsDesktopReconnect() {
             let propertySet = this.GetWiFiHostedApplicationArgumentsDesktop();
-            // Insert isReconnect to inform wifi app when coming back to the page for a second time 
             propertySet.insert("IsReconnect", true);
             return propertySet;
         }
         static GetWiFiHostedApplicationArgumentsWcosReconnect() {
             let propertySet = this.GetWiFiHostedApplicationArgumentsWcosDefaults();
-            // Insert isReconnect to inform wifi app when coming back to the page for a second time 
             propertySet.insert("IsReconnect", true);
             return propertySet;
         }
@@ -171,10 +161,6 @@ var CloudExperienceHost;
                     retValue = CloudExperienceHost.TargetPlatform.HOLOGRAPHIC;
                     break;
                 default:
-                    // For non-legacy TargetPlatform values (any nturtl > 10)
-                    // getPlatform() should reflect the CloudExperienceHostAPI.Environment.platform value directly
-                    // Instead of looping back to a predefined CloudExperienceHost.TargetPlatform friendly name.
-                    // (core.ts may define a friendly name for an nturtl value if required for CXH app code)
                     retValue = "CloudExperienceHost.Platform." + regValue;
                     break;
             }
@@ -239,9 +225,6 @@ var CloudExperienceHost;
     Environment.wwanConnectionIsDataMartSim = false;
     CloudExperienceHost.Environment = Environment;
     class ScoobeContextHelper {
-        // Retrieve the current SCOOBE launch instance from SharableData storage.
-        // Note that this state is written and managed by the Welcome page, so it's expected to be used only by webapps after Welcome.
-        // If called before Welcome, this method will return the launch instance of the previous SCOOBE session.
         static tryGetScoobeLaunchInstance() {
             let scoobeLaunchInstanceObj = { scoobeLaunchInstance: 0, succeeded: false };
             scoobeLaunchInstanceObj.scoobeLaunchInstance = CloudExperienceHost.Storage.SharableData.getValue("ScoobeLaunchInstance");
@@ -252,7 +235,6 @@ var CloudExperienceHost;
     CloudExperienceHost.ScoobeContextHelper = ScoobeContextHelper;
     class OobeExperimentationPages {
         static getShouldSkipAsync() {
-            // Always skip these pages for scenarios in which the MSA identity provider is not supported (e.g. Enterprise SKU)
             let msaDisallowed = (CloudExperienceHost.getAllowedIdentityProviders().indexOf(CloudExperienceHost.SignInIdentityProviders.MSA) == -1);
             return WinJS.Promise.wrap(msaDisallowed);
         }
@@ -319,7 +301,6 @@ var CloudExperienceHost;
     class WirelessCommercial {
         static getShouldSkipAsync() {
             let oobeResumeEnabled = CloudExperienceHost.Storage.SharableData.getValue("OOBEResumeEnabled");
-            // if device did not reboot and resume, then skip the page
             if (!oobeResumeEnabled) {
                 return WinJS.Promise.wrap(true);
             }
@@ -335,7 +316,6 @@ var CloudExperienceHost;
     CloudExperienceHost.WirelessCommercial = WirelessCommercial;
     class Bookends {
         static getShouldSkipAsync() {
-            // skip for light personality
             if (CloudExperienceHost.getContext().personality === CloudExperienceHost.TargetPersonality.LiteWhite) {
                 return WinJS.Promise.wrap(true);
             }
@@ -353,23 +333,19 @@ var CloudExperienceHost;
                 !isSpeechAllowedByPolicy ||
                 CloudExperienceHost.Storage.SharableData.getValue("retailDemoEnabled");
             if (!skipIntro) {
-                // Check for Microphone access. Assumption is if there is a Microphone then there are speakers.
                 try {
                     let captureSettings = new Windows.Media.Capture.MediaCaptureInitializationSettings();
                     captureSettings.streamingCaptureMode = Windows.Media.Capture.StreamingCaptureMode.audio;
                     captureSettings.mediaCategory = Windows.Media.Capture.MediaCategory.speech;
                     let capture = new Windows.Media.Capture.MediaCapture();
                     let capturePromise = capture.initializeAsync(captureSettings).then(() => {
-                        // Successfully accessed the microphone, don't skip
                         return WinJS.Promise.wrap(false);
                     }, (error) => {
-                        // Failed to access microphone, skip bookends
                         return WinJS.Promise.wrap(true);
                     });
                     return capturePromise;
                 }
                 catch (exception) {
-                    // Return true to skip page if media capture initialization fails
                     return WinJS.Promise.wrap(true);
                 }
             }
@@ -381,14 +357,11 @@ var CloudExperienceHost;
         static getShouldSkipAsync() {
             let allowedProviders = CloudExperienceHost.getAllowedIdentityProviders();
             let onlineProviderAllowed = ((allowedProviders.indexOf(CloudExperienceHost.SignInIdentityProviders.MSA) != -1) || (allowedProviders.indexOf(CloudExperienceHost.SignInIdentityProviders.AAD) != -1));
-            // Skip (return success) if no online providers are allowed
             return WinJS.Promise.wrap(!onlineProviderAllowed);
         }
     }
     CloudExperienceHost.AccountDisambiguation = AccountDisambiguation;
     class AccountAndServices {
-        // Unattend settings related to account creation and autologon are checked, and can cause us to skip most of
-        // the Account and Services sections in CXH hosted OOBE.
         static shouldSkipAccountAndServices() {
             try {
                 let localAccountManager = new CloudExperienceHostBroker.Account.LocalAccountManager();
@@ -398,7 +371,6 @@ var CloudExperienceHost;
                 return false;
             }
         }
-        // Wraps the check above. Needed for the preload checks specified in the navigation JSON.
         static getShouldSkipAsync() {
             return WinJS.Promise.wrap(CloudExperienceHost.AccountAndServices.shouldSkipAccountAndServices());
         }
@@ -423,15 +395,8 @@ var CloudExperienceHost;
             return WinJS.Promise.join(promises);
         }
         static isDomainAccount() {
-            // Although we are calling into a ContentDeliveryManager specific WinRT object, note
-            // that this is just a standard domain account check via LsaLookupUserAccountType().
             return CloudExperienceHostAPI.ContentDeliveryManagerHelpers.isDomainAccount;
         }
-        // Allows a webapp to specify a list of nodes (CXIDs) that should be skipped for a specific CXH experience.
-        // Expectation is that the webapp is cloud-hosted so that nodes can be disabled out of band as needed.
-        // For example, the node OobeRequiredServiceEvent can supply such a list after internet is established in OOBE.
-        // Once a list is set for a specific experience, it persists in per-user app data, including across reboots.
-        // The format of the input parameter is a JSON array. A skip list can only be set for the current experience.
         static setWebappSkipList(skipListJson) {
             try {
                 let skipList = JSON.parse(skipListJson); // verify string input is valid JSON array
@@ -458,10 +423,6 @@ var CloudExperienceHost;
     CloudExperienceHost.BrowserSettings = BrowserSettings;
     class DeviceName {
         static getShouldSkipAsync() {
-            // If unattend settings related to account creation and autologon would cause us to skip most of
-            // the Account and Services sections in OOBE, then we should also skip Device Name so that we do
-            // not inadvertently block existing deployments.
-            // We should also skip if Retail Demo mode is enabled
             if (CloudExperienceHost.AccountAndServices.shouldSkipAccountAndServices() ||
                 CloudExperienceHost.Storage.SharableData.getValue("retailDemoEnabled")) {
                 return WinJS.Promise.wrap(true);
@@ -482,9 +443,7 @@ var CloudExperienceHost;
     CloudExperienceHost.DeviceName = DeviceName;
     class SnapshotCapture {
         static getShouldSkipAsync() {
-            // Should Show Coming Soon Page
             let isDeviceNPUCapable = false;
-            // Show Coming Soon page if the hardware check passes and package isn't available
             isDeviceNPUCapable = CloudExperienceHostAPI.SnapshotCapture.isSnapshotCaptureSupported();
             try {
                 let shouldShowPage = isDeviceNPUCapable && !CloudExperienceHostAPI.SnapshotCapture.isPackageAvailable();
@@ -511,7 +470,6 @@ var CloudExperienceHost;
     class SnapshotCaptureConsent {
         static getShouldSkipAsync() {
             let isDeviceNPUCapable = false;
-            // Show Consent page if the hardware check passes and package is available
             isDeviceNPUCapable = CloudExperienceHostAPI.SnapshotCapture.isSnapshotCaptureSupported();
             try {
                 let shouldShowPage = isDeviceNPUCapable && CloudExperienceHostAPI.SnapshotCapture.isPackageAvailable();
@@ -562,10 +520,6 @@ var CloudExperienceHost;
         ;
         class Eligibility {
             static shouldRestrictionsApplyInRegion(region) {
-                // Please be aware of the lists in %SDXROOT%\onecoreuap\shell\inc\PrivacyConsentHelpers.h
-                // and %SDXROOT%\onecoreuap\shell\cloudexperiencehost\onecore\app\App\ts\globalization.ts,
-                // which are not necessarily the same as this list
-                // Note: "UK" is not a Windows Client ISO code, but is returned by the MSA server in place of "GB"/"GBR"
                 let aadcInScopeRegionList = ["AT", "AUT", "BE", "BEL", "BG", "BGR", "HR", "HRV", "CY", "CYP",
                     "CZ", "CZE", "DK", "DNK", "EE", "EST", "FI", "FIN", "FR", "FRA", "DE", "DEU", "GR", "GRC",
                     "HU", "HUN", "IE", "IRL", "IT", "ITA", "LV", "LVA", "LT", "LTU", "LU", "LUX", "MT", "MLT",
@@ -574,11 +528,9 @@ var CloudExperienceHost;
                 return (aadcInScopeRegionList.indexOf(region) != -1);
             }
             static shouldRestrictionsApplyToAgeGroupAndRegion(ageGroup, region, shouldRestrictionsApplyToMinorOverStatutoryAge) {
-                // First, determine if AADC restrictions apply to the user's region
                 if (!Eligibility.shouldRestrictionsApplyInRegion(region)) {
                     return false; // Exit early if the region is not in-scope
                 }
-                // Next, if the region is in-scope for AADC, determine if restrictions apply based on AgeGroup
                 switch (ageGroup) {
                     case AgeGroup.MinorWithoutParentalConsent:
                     case AgeGroup.MinorWithParentalConsent:
@@ -600,14 +552,10 @@ var CloudExperienceHost;
             static shouldRestrictionsApplyToCurrentUserAsync(shouldRestrictionsApplyToMinorOverStatutoryAge = false) {
                 return new WinJS.Promise((completeDispatch /*, errorDispatch, progressDispatch */) => {
                     CloudExperienceHost.MSA.getAccountInformation(null /* userName */, null /* accountId */).then((accountInformationSet) => {
-                        // Get AgeGroup and Region from the account information property set
-                        // Note that "agegroup" is added to the property set as a stringified number
-                        // Use Windows region as fallback if "countryOrRegion" isn't in the property set
                         let ageGroup = accountInformationSet.hasKey("agegroup") ? parseInt(accountInformationSet.lookup("agegroup")) : AgeGroup.Unknown;
                         let region = accountInformationSet.hasKey("countryOrRegion") ? accountInformationSet.lookup("countryOrRegion").toUpperCase() : CloudExperienceHost.Globalization.GeographicRegion.getCode();
                         completeDispatch(Eligibility.shouldRestrictionsApplyToAgeGroupAndRegion(ageGroup, region, shouldRestrictionsApplyToMinorOverStatutoryAge));
                     }, (e) => {
-                        // If the MSA API throws an error, treat this as "Age Unknown" case and use the Windows region as fallback
                         completeDispatch(Eligibility.shouldRestrictionsApplyToAgeGroupAndRegion(AgeGroup.Unknown, CloudExperienceHost.Globalization.GeographicRegion.getCode(), shouldRestrictionsApplyToMinorOverStatutoryAge));
                     });
                 });
@@ -617,11 +565,9 @@ var CloudExperienceHost;
         class OobeAadcAgeConfirmation {
             static getShouldSkipAsync() {
                 if (CloudExperienceHost.getContext().personality !== CloudExperienceHost.TargetPersonality.LiteWhite) {
-                    // Always skip the AADC Age Confirmation page if the personality is non LiteWhite, as the page is only designed for LiteWhite
                     return WinJS.Promise.wrap(true);
                 }
                 else {
-                    // Otherwise, skip if the device can't go down the local account path or can't go down the MSA path
                     let allowedIdentityProviders = CloudExperienceHost.getAllowedIdentityProviders();
                     let localDisallowed = (allowedIdentityProviders.indexOf(CloudExperienceHost.SignInIdentityProviders.Local) == -1);
                     let msaDisallowed = (allowedIdentityProviders.indexOf(CloudExperienceHost.SignInIdentityProviders.MSA) == -1);
@@ -661,10 +607,6 @@ var CloudExperienceHost;
             }
         }
         static throwIfApiNotAvailable() {
-            // Align to behavior for bridge.invoke() of throwing "ApiNonexistentOnClient" when the underlying UDK runtime class is not available in this image.
-            // This accounts for the case where CXH ships the wrapper as part of an OOBE ZDP payload without the UDK updates.
-            // We treat this scenario as "UDK Windows Account Sync Consent APIs are not present" and let the caller(s) know that we cannot enforce the corresponding
-            // consent policies in this image as opposed to defaulting to "no consent" in the case where the APIs are present and an error occurs during the API call.
             if (!(WindowsUdk && WindowsUdk.Services && WindowsUdk.Services.UnifiedConsent && WindowsUdk.Services.UnifiedConsent.WindowsAccountSyncConsentCoordinator)) {
                 throw "ApiNonexistentOnClient";
             }
@@ -717,4 +659,3 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.Developer = Developer;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=environment.js.map

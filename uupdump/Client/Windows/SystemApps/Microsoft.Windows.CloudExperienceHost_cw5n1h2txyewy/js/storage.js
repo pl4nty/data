@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -21,7 +17,6 @@ var CloudExperienceHost;
                 }
                 return shareContainer;
             }
-            // This has an 8KB max size
             function addValue(name, value) {
                 _getShareContainer().values[name] = value;
             }
@@ -34,7 +29,6 @@ var CloudExperienceHost;
                 return _getShareContainer().values[name];
             }
             SharableData.getValue = getValue;
-            // This has a 64KB max size by using a composite to store the value
             function addLargeString(name, value) {
                 var composite = new Windows.Storage.ApplicationDataCompositeValue();
                 var i = 0;
@@ -60,20 +54,7 @@ var CloudExperienceHost;
                 return value;
             }
             SharableData.getLargeString = getLargeString;
-            // OOBE is an experience hosted across several different user contexts and host apps.
-            // We want to ensure that webapps sharing data during OOBE continue to have access
-            // to that data until OOBE is complete, even as the architecture of OOBE changes over time.
-            // To facilitate that, we provide a way to serialize the entire contents of the share container
-            // and write that to the user profile. We maintain the contents of the container throughout enduser-hosted
-            // OOBE, and it is the responsibility of host apps to restore it at the start of their flows.
-            // We delete this state before the transition to desktop to maintain parity with expectations
-            // around use of SharableData post-OOBE.
             function saveDataForOobeAsync() {
-                // Don't save data for OOBE if required feature is disabled
-                if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("SaveSharableDataForEnduserSession")) {
-                    return new WinJS.Promise((completeDispatch) => completeDispatch());
-                }
-                // Don't save data for OOBE if we're not in OOBE
                 if (Windows.System.Profile.SystemSetupInfo.outOfBoxExperienceState == Windows.System.Profile.SystemOutOfBoxExperienceState.completed) {
                     return new WinJS.Promise((completeDispatch) => completeDispatch());
                 }
@@ -163,23 +144,11 @@ var CloudExperienceHost;
             function getValues(dictionaryName) {
                 let customDictionary = Container.getCustomDictionary(dictionaryName);
                 let propertySet = new Windows.Foundation.Collections.PropertySet();
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("SaveSharableDataForEnduserSession")) {
-                    customDictionary.forEach((value, key, map) => propertySet.insert(key, value));
-                }
-                else {
-                    customDictionary.forEach((value, key, map) => propertySet.insert(value, key));
-                }
+                customDictionary.forEach((value, key, map) => propertySet.insert(key, value));
                 return propertySet;
             }
             VolatileSharableData.getValues = getValues;
-            // Function to save VolatileSharableData during OOBE.
-            // See comment above equivalent functionality for SharableData above.
             function saveDataForOobeAsync() {
-                // Don't save data for OOBE if required feature is disabled
-                if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("SaveSharableDataForEnduserSession")) {
-                    return new WinJS.Promise((completeDispatch) => completeDispatch());
-                }
-                // Don't save data for OOBE if we're not in OOBE
                 if (Windows.System.Profile.SystemSetupInfo.outOfBoxExperienceState == Windows.System.Profile.SystemOutOfBoxExperienceState.completed) {
                     return new WinJS.Promise((completeDispatch) => completeDispatch());
                 }
@@ -200,10 +169,6 @@ var CloudExperienceHost;
     (function (Storage) {
         var UserImageLottie;
         (function (UserImageLottie) {
-            // Download a specified lottie image to use
-            // specify an image to download that the lottie can reference via a local filename
-            // if anything fails, fallback to specified lottie
-            // return to the caller with a string to the graphic
             function downloadUserImageLottie(lottieUriString, lottieLocalFilename, userImageUriString, userImageLocalFilename, fallbackLottie) {
                 return downloadUserImageLottieWithHeaderCollection(lottieUriString, lottieLocalFilename, null, userImageUriString, userImageLocalFilename, null, fallbackLottie);
             }
@@ -308,4 +273,3 @@ var CloudExperienceHost;
         })(UserImageLottie = Storage.UserImageLottie || (Storage.UserImageLottie = {}));
     })(Storage = CloudExperienceHost.Storage || (CloudExperienceHost.Storage = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=storage.js.map

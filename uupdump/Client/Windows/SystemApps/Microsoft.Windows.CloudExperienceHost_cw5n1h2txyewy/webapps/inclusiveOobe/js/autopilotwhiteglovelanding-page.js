@@ -1,12 +1,8 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 (() => {
     WinJS.UI.Pages.define("/webapps/inclusiveOobe/view/autopilotwhiteglovelanding-main.html", {
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Load css per scenario
             let loadCssPromise = requireAsync(['legacy/uiHelpers', 'legacy/bridge']).then((result) => {
                 return result.legacy_uiHelpers.LoadCssPromise(document.head, "", result.legacy_bridge);
             });
@@ -15,7 +11,6 @@
                 return result.legacy_uiHelpers.LangAndDirPromise(document.documentElement, result.legacy_bridge);
             });
 
-            // Load resource strings
             let getLocalizedStringsPromise = requireAsync(['legacy/bridge', 'legacy/core']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.AutoPilot.makeAutopilotResourceObject").then((resultString) => {
                     this.resourceStrings = JSON.parse(resultString);
@@ -24,7 +19,6 @@
                 });
             });
 
-            // Check if connected to internet
             let isConnectedToNetworkPromise = requireAsync(['legacy/bridge']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.Environment.hasInternetAccess");
             }).then((isConnectedToNetwork) => {
@@ -68,7 +62,6 @@
                 constants,
                 WhiteGloveViewModel) => {
 
-                // Setup knockout customizations
                 koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.LightProgress, true /*holdForAdditionalRegistration*/);
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
@@ -76,7 +69,6 @@
 
                 let whiteGloveViewModel = new WhiteGloveViewModel(this.resourceStrings, this.isInternetAvailable, this.targetPersonality);
 
-                // Apply bindings and show the page
                 ko.applyBindings(whiteGloveViewModel);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                     WinJS.Utilities.addClass(document.body, "pageLoaded");

@@ -1,4 +1,3 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
 (function () {
     "use strict";
 
@@ -30,7 +29,6 @@
         ready: function (element, options) {
             let processingFlag = false;
 
-            // Load string resources in HTML elements
             advancedTitle.textContent = resources.advancedTitle;
             nextButton.textContent = resources.finishButton;
 
@@ -65,7 +63,6 @@
 
             removeRdxButton.addEventListener("click", function (eventInfo) {
                 require(['lib/knockout', 'corejs/knockouthelpers'], (ko, KoHelpers) => {
-                    // Setup knockout customizations
                     let dialogElement = document.querySelector("oobe-retaildemo-exit-dialog");
                     if (!dialogElement) {
                         new KoHelpers().registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);

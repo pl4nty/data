@@ -1,4 +1,4 @@
-﻿var retailDemoShared;
+var retailDemoShared;
 (function (retailDemoShared) {
 
     function SetupPageSuccessNavigation(specifiedPassword, navFlow, bridge) {
@@ -7,7 +7,6 @@
                 CreateRetailAdminThen(specifiedPassword, bridge, function () {
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                 }, function () {
-                    // Close CXH and try again
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
                 });
                 break;
@@ -19,11 +18,9 @@
                     }).done(() => {
                         bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                     }, () => {
-                        // Close CXH and try again
                         bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
                     });
                 }, () => {
-                    // Close CXH and try again
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
                 });
                 break;
@@ -36,7 +33,6 @@
                 CreateRetailAdminThen(specifiedPassword, bridge, function () {
                     StartPostOOBE(bridge);
                 }, function () {
-                    // Close CXH
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
                 });
                 break;
@@ -47,12 +43,10 @@
     }
     retailDemoShared.SetupPageSuccessNavigation = SetupPageSuccessNavigation;
 
-    // Create RetailAdmin account
     function CreateRetailAdminThen(specifiedPassword, bridge, complete, error) {
         bridge.invoke("CloudExperienceHost.LocalAccount.createRetailAccount", specifiedPassword, true).done(complete, function (e) {
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "CreateRetailAdminAccountFailure", JSON.stringify({ number: e.number.toString(16), description: e.description }));
             if (e.number === -2147023580) { //ERROR_USER_EXISTS
-                // Bypass recreating account
                 complete();
             } else {
                 error();
@@ -61,19 +55,16 @@
     }
     retailDemoShared.CreateRetailAdminThen = CreateRetailAdminThen;
 
-    // Start post OOBE
     function StartPostOOBE(bridge) {
         bridge.invoke("CloudExperienceHostBroker.RetailDemo.ConfigureRetailDemo.startPostOOBE").done(function () {
             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
         }, function (error) {
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "ConfigureRetailDemoFailure", JSON.stringify({ number: error.number.toString(16), description: error.description }));
-            // Close CXH
             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
         });
     }
     retailDemoShared.StartPostOOBE = StartPostOOBE;
 
-    // Commit retail demo configuration
     function EnableRetailDemoFromOOBE(bridge) {
         return bridge.invoke("CloudExperienceHostBroker.RetailDemo.ConfigureRetailDemo.enableRetailDemoFromOOBEAsync").then(() => {
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "EnableRetailDemoFromOOBESuccessful");
@@ -84,7 +75,6 @@
     }
     retailDemoShared.EnableRetailDemoFromOOBE = EnableRetailDemoFromOOBE;
 
-    // Commit express settings.
     function CommitExpressSettings(bridge) {
         let settings = [];
         let oobeSettingsGroups = CloudExperienceHostAPI.OobeSettingsStaticsCore.getSettingGroups();

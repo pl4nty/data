@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge',
     'optional!sample/Sample.CloudExperienceHostAPI.Speech.SpeechSynthesis'], (ko, bridge) => {
 
@@ -57,17 +54,14 @@ define(['lib/knockout', 'legacy/bridge',
 
     let currentKeyInputModality;
     if (gamepadEnabledOobe && deviceFormEnabledOobe) {
-        // Assume keyboard as the default/starting key input modality, except on gamepad-based devices.
         currentKeyInputModality = "keyboard";
         if (CloudExperienceHostAPI.Environment.deviceForm === CloudExperienceHost.TargetDevice.HANDHELD) {
             currentKeyInputModality = "gamepad";
         }
 
-        // Register a keydown handler, on the document root, in the capture phase so elements can use this information when they eventually handle events.
         document.addEventListener("keydown", (ev) => {
             let oldModality = currentKeyInputModality;
 
-            // The range of Gamepad VKeys is from A (195) to RightThumbstickLeft (218)
             if ((ev.keyCode >= WinJS.Utilities.Key.GamepadA) && (ev.keyCode <= WinJS.Utilities.Key.GamepadRightThumbstickLeft)) {
                 currentKeyInputModality = "gamepad";
             }
@@ -113,12 +107,10 @@ define(['lib/knockout', 'legacy/bridge',
     }
 
     class KnockoutHelpers {
-        // Register components
         registerComponents(scenarioMode, holdForAdditionalRegistration = false) {
             if (componentsRegistered) { Debug.break(); return; }
             if (holdForAdditionalRegistration) { preLoadHeldForAdditionalRegistrations = true; }
 
-            // Components to register and pre-load
             let components_Default = {
                 'default-progress': {},
                 'default-contentView': {},
@@ -209,18 +201,13 @@ define(['lib/knockout', 'legacy/bridge',
 
             let components = componentsLookupTable[scenarioMode].components;
 
-            // Setup naming convention and path for templates and view models for requirejs to load
             let componentLoader = {
                 getConfig: (name, callback) => {
                     let viewModelConfig = { require: componentsLookupTable[scenarioMode].viewModelConfigPath + name + '-vm' };
                     let templateConfig = { require: 'lib/text!' + componentsLookupTable[scenarioMode].templateConfigPth + name + '-template.html' };
-                    // The synchronous flag means components are *allowed* to load synchronously,
-                    // after the initial load which is always async
                     callback({ viewModel: viewModelConfig, template: templateConfig, synchronous: true });
                 },
                 loadViewModel: (name, viewModelConfig, callback) => {
-                    // Pass the component root element to the VM,
-                    // and hook up an easy way to get to the VM from the element
                     let viewModelConstructor = {
                         createViewModel: function (params, componentInfo) {
                             let vm = new viewModelConfig(params, componentInfo.element);
@@ -233,12 +220,10 @@ define(['lib/knockout', 'legacy/bridge',
             };
             ko.components.loaders.unshift(componentLoader);
 
-            // Register virtual elements
             Object.keys(components).forEach((key) => {
                 ko.components.register(key, components[key]);
             });
 
-            // Preload async components and allow waiting on them
             Object.keys(components).forEach((key) => {
                 pendingComponentLoads++;
                 ko.components.get(key, onComponentPreloaded);
@@ -258,12 +243,10 @@ define(['lib/knockout', 'legacy/bridge',
                 'oobe-retaildemo-exit-dialog': {},
             };
 
-            // Register virtual elements
             Object.keys(customDialogComponents).forEach((key) => {
                 ko.components.register(key, customDialogComponents[key]);
             });
 
-            // Preload async components and allow waiting on them
             Object.keys(customDialogComponents).forEach((key) => {
                 dialogPendingComponentLoads++;
                 ko.components.get(key, onDialogComponentPreloaded);
@@ -272,7 +255,6 @@ define(['lib/knockout', 'legacy/bridge',
             dialogComponentsRegistered = true;
         }
 
-        // Since we don't have jQuery with its handy .index() method...
         static getElementIndex(element) {
             let index = 0;
             let parent = element.parentNode;
@@ -296,13 +278,11 @@ define(['lib/knockout', 'legacy/bridge',
         }
 
         enableWinJSBinding(callback) {
-            // Enable winjs control binding
             require(['lib/knockout-winjs'], callback);
         }
 
         static setFocusOnAutofocusElement() {
             let currentPanel = document.querySelector('.current-visible-panel');
-            // If there is no current panel, assume the page does not use panels and see if there is an autofocus element in the doc
             let autofocusElement = currentPanel ? currentPanel.querySelector("[autofocus='true']") : document.querySelector("[autofocus='true']");
             let firstInput = currentPanel ? currentPanel.querySelector("input") : null;
             if (autofocusElement) {
@@ -318,9 +298,6 @@ define(['lib/knockout', 'legacy/bridge',
             iFrameDocument.close();
 
             if (gamepadEnabledOobe && deviceFormEnabledOobe) {
-                // We need the iFrame to participate in the tab-order only when we're navigating using gamepad.
-                // This allows us to treat the iFrameElement (the <iframe /> itself) as a distinct stop where the
-                // user can opt to direct focus into the frame (with GamepadA).
                 let updateTabIndexBasedOnInputModality = () => {
                     if (currentKeyInputModality === "gamepad") {
                         iFrameElement.setAttribute("tabindex", "0");
@@ -389,14 +366,9 @@ define(['lib/knockout', 'legacy/bridge',
                     }
                 };
 
-                // Register keydown/up listeners on the <iframe /> itself to be able to handle:
-                // - `enter` invoking pageDefaultAction
-                // - `GamepadA` "capturing" focus within this iFrame
                 let lastObservedTarget;
                 iFrameElement.addEventListener("keydown", (ev) => {
                     switch (ev.keyCode) {
-                        // Capture the target element on keyDown so we can check in keyUp if focus may have moved
-                        // between the two events (which is possible if another key is pressed down before this one is raised).
                         case WinJS.Utilities.Key.enter:
                         case WinJS.Utilities.Key.GamepadA:
                             lastObservedTarget = ev.target;
@@ -433,25 +405,17 @@ define(['lib/knockout', 'legacy/bridge',
                     return !handled;
                 });
 
-                // Register keydown/up listeners on the root document within the iFrame to be able to handle:
-                // - `enter` invoking pageDefaultAction
-                // - `GamepadB` "releasing" captured focus from this iFrame
-                // - `GamepadDPad*` and `GamepadLeftThumbstick*` scrolling the contents of the iFrame
-                // - `Gamepad*Trigger` approximating PageUp/PageDown scrolling of the iFrame
                 let lastObservedTargetWithinIFrame;
                 iFrameDocument.addEventListener("keydown", (ev) => {
                     let handled = false;
                     let goingUpOrLeft = false;
 
                     switch (ev.keyCode) {
-                        // Capture the target element on keyDown so we can check in keyUp if focus may have moved
-                        // between the two events (which is possible if another key is pressed down before this one is raised).
                         case WinJS.Utilities.Key.enter:
                         case WinJS.Utilities.Key.GamepadB:
                             lastObservedTargetWithinIFrame = ev.target;
                             break;
 
-                        // Approximate what a PageUp/PageDown would scroll
                         case WinJS.Utilities.Key.GamepadLeftTrigger:
                             goingUpOrLeft = true;
                         case WinJS.Utilities.Key.GamepadRightTrigger:
@@ -461,7 +425,6 @@ define(['lib/knockout', 'legacy/bridge',
                             }
                             break;
 
-                        // Approximate what an Up/Down arrow key would scroll
                         case WinJS.Utilities.Key.GamepadDPadUp:
                         case WinJS.Utilities.Key.GamepadLeftThumbstickUp:
                             goingUpOrLeft = true;
@@ -473,7 +436,6 @@ define(['lib/knockout', 'legacy/bridge',
                             }
                             break;
 
-                        // Approximate what an Left/Right arrow key would scroll
                         case WinJS.Utilities.Key.GamepadDPadLeft:
                         case WinJS.Utilities.Key.GamepadLeftThumbstickLeft:
                             goingUpOrLeft = true;
@@ -519,9 +481,6 @@ define(['lib/knockout', 'legacy/bridge',
                     return !handled;
                 });
 
-                // Register focusin/focusout listeners on the root document within the iFrame so that if a user directs
-                // focus in/out of an iFrame through some other means (like touch or mouse), we can still correctly update
-                // the pseudo-focus "state" on this iFrame.
                 iFrameDocument.addEventListener("focusin", (ev) => {
                     if (currentKeyInputModality === "gamepad") {
                         setPseudoFocus();
@@ -573,15 +532,8 @@ define(['lib/knockout', 'legacy/bridge',
             Debug.assert(panelIndex !== undefined, "Panel binding couldn't find a panel index");
             let shouldDisplay = ko.unwrap(valueAccessor()) == panelIndex;
             if (shouldDisplay) {
-                // This function (update) gets called for every panel when the active panel index changes.
-                // Each panel decides whether it should be hidden or shown.
-                // The setImmediate here ensures the hidden panel starts its exit animation (and assigns to pendingPanelTransition)
-                // before the entrance animation gets queued by the incoming panel.
-                // This introduces a very small timing window where two panels can have entrance animations queued in setImmediate callbacks
-                // We synchronously add this class to the chosen incoming panel (and remove from others) to guard against this.
                 element.classList.add("current-visible-panel");
                 setImmediate(() => {
-                    // Ensure we don't queue an entrance if another panel got selected as visible before the setImmediate callback fired
                     if (element.classList.contains("current-visible-panel")) {
                         pendingPanelTransition = pendingPanelTransition.then(() => {
                             if (element.style.display == "none") {
@@ -593,7 +545,6 @@ define(['lib/knockout', 'legacy/bridge',
                                 if (autoFocusItem) {
                                     autoFocusItem.focus();
                                 } else if (firstInput) {
-                                    // If there is no item with the autofocus attribute then fall back to setting focus on the first input element
                                     firstInput.focus();
                                 }
                                 return WinJS.UI.Animation.fadeIn(element);
@@ -724,11 +675,6 @@ define(['lib/knockout', 'legacy/bridge',
                 let iFrameDocument = element.contentWindow.document;
 
                 if (value.preventLinkNavigation) {
-                    // Prevent navigation from loaded iframe content within the iframe.
-                    // We do this by listening for any "load" event, and for any that occur after the initial load
-                    // of HTML content in the iframe, we first redirect to "about:blank" and when that load event
-                    // occurs, reload the original HTML content into the iframe again. The end result is that the link
-                    // appears not to work, i.e., we never appear to navigate away from the original HTML content.
                     function loadHandler(event) {
                         if (!event.srcElement.initialLoadComplete) {
                             event.srcElement.initialLoadComplete = true;

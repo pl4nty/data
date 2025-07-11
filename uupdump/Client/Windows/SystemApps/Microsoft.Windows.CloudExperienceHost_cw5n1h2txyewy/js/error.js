@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -66,4 +62,3 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.NavigationError = NavigationError;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=error.js.map

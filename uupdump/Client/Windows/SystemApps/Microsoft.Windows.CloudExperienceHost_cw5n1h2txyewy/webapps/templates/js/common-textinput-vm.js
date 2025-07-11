@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define(() => {
+﻿define(() => {
     class CommonTextInputViewModel {
         constructor(params) {
             this.placeHolder = params.placeHolder;

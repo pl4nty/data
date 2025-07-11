@@ -1,4 +1,3 @@
-﻿
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -47,4 +46,3 @@ var CloudExperienceHost;
         Styling.getColorsFromUserPreference = getColorsFromUserPreference;
     })(Styling = CloudExperienceHost.Styling || (CloudExperienceHost.Styling = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=styling.js.map

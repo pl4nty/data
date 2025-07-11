@@ -1,4 +1,3 @@
-﻿
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -357,7 +356,6 @@ var CloudExperienceHost;
                 return WinJS.Promise.join({ contextPromise: contextPromise, languagePromise: languagePromise, dirPromise: dirPromise, stringPromise: stringPromise, cssPromise: cssPromise, skipPromise: skipPromise });
             },
             ready: function (element, options) {
-                
                 FinishedButton.addEventListener("click", function (event) {
                     event.preventDefault();
                     this._onFinished.apply(this);
@@ -410,7 +408,6 @@ var CloudExperienceHost;
 
                 EnrollmentProgressPoliciesImage.src = "../../../images/SecurityPoliciesWhite.png";
 
-                
                 var enterpriseManagementWorker = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
                 var checkProgressModePromise = enterpriseManagementWorker.checkMDMProgressModeAsync().then(function (result) {
                     if (!isOOBE)
@@ -438,7 +435,6 @@ var CloudExperienceHost;
                     _trackMDMSyncProgress();
                 }, function (e) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_CheckBlockingValues_Error", JSON.stringify({ error: e }));
-                    
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                 });
             },
@@ -458,7 +454,6 @@ var CloudExperienceHost;
                 var enterpriseManagementWorker = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
                 try {
                     enterpriseManagementWorker.resetProgressTimeout(targetContext);
-                    
                     _trackMDMSyncProgress();
                 } catch (e) {
                     _logFailureEvent("UnifiedEnrollment_ProgressPage_ResetProgressTimeout_Failure", e);

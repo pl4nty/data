@@ -1,4 +1,3 @@
-﻿
 (function () {
     "use strict";
     var surfaceHubAccountResources = {};
@@ -20,89 +19,72 @@
             return WinJS.Promise.join({ languagePromise: languagePromise, dirPromise: dirPromise, stringPromise: stringPromise, cssPromise: cssPromise });
         },
         ready: function (element, options) {
-            
             userName.setAttribute('maxLength', '20');
-            
             var setContentFor = [Title, LeadText, UserNameLegend, PasswordLegend, NextButton, BackButton];
             var i = 0;
             for (i = 0; i < setContentFor.length; i++) {
                 setContentFor[i].textContent = surfaceHubAccountResources[setContentFor[i].id];
             }
-            
             var placeholderKey = [userName, password, passwordValidate];
             var placeholderValue = ['UserPlaceholder', 'PasswordPlaceholder', 'ReenterPlaceholder'];
             for (i = 0; i < placeholderKey.length; i++) {
                 placeholderKey[i].setAttribute('placeholder', surfaceHubAccountResources[placeholderValue[i]]);
             }
-            
             NextButton.addEventListener("click", function (event) {
                 event.preventDefault();
                 _onNext.apply(this);
             }.bind(this));
-            
             var checkAmersandFor = [NextButton, BackButton];
             checkAmersandFor.forEach(function (eachElement) {
                 var result = CloudExperienceHost.ResourceManager.GetContentAndAccesskey(surfaceHubAccountResources[eachElement.id]);
                 eachElement.textContent = result.content;
                 eachElement.accessKey = result.accessKey;
             });
-            
             bridge.invoke("CloudExperienceHost.Environment.hasInternetAccess").done(function (isConnectedToNetwork) {
                 uiHelpers.SetElementVisibility(BackButton, isConnectedToNetwork);
             });
-            
             BackButton.addEventListener("click", function () {
                 bridge.fireEvent(CloudExperienceHost.Events.goBack);
             });
-            
             userName.addEventListener("blur", function () {
                 var errorCode = validator.validateUsername(userName);
                 if (errorCode !== ErrorCodes.SUCCESS) {
-                    this._showError(errorCode, false );
+                    this._showError(errorCode, false /* setFocus */);
                 }
             }.bind(this));
-            
             userName.addEventListener("keyup", function () {
                 if (validator.validateUsername(userName) === ErrorCodes.SUCCESS) {
                     errorClass.HideError(userName, userName_errorDialog);
                 }
             });
-            
             password.addEventListener("blur", function () {
-                
                 if ((passwordValidate.value.length >= 1) || (password.value.length === 0)) {
                     var errorCode = validator.preCheckPassword(password, passwordValidate);
                     if (errorCode !== ErrorCodes.SUCCESS) {
-                        this._showError(errorCode, false );
+                        this._showError(errorCode, false /* setFocus */);
                     }
                 }
             }.bind(this));
-            
             password.addEventListener("keyup", function () {
                 if (validator.preCheckPassword(password, passwordValidate) === ErrorCodes.SUCCESS) {
                     errorClass.HideError(passwordValidate, passwordValidate_errorDialog);
                 }
             });
-            
             passwordValidate.addEventListener("blur", function () {
                 var errorCode = validator.preCheckPassword(password, passwordValidate);
                 if (errorCode !== ErrorCodes.SUCCESS) {
-                    this._showError(errorCode, false );
+                    this._showError(errorCode, false /* setFocus */);
                 }
             }.bind(this));
-            
             passwordValidate.addEventListener("keyup", function () {
                 if (validator.preCheckPassword(password, passwordValidate) === ErrorCodes.SUCCESS) {
                     errorClass.HideError(passwordValidate, passwordValidate_errorDialog);
                 }
             });
-            
             uiHelpers.RegisterEaseOfAccess(easeOfAccess, bridge);
             uiHelpers.RegisterInputSwitcher(inputSwitcher, bridge);
-            
             function _onNext() {
                 _setProgressState(true);
-                
                 var result = validator.validateUsername(userName);
                 if (result === ErrorCodes.SUCCESS) {
                     result = validator.preCheckPassword(password, passwordValidate);
@@ -111,22 +93,20 @@
                     }
                 }
                 if (result === ErrorCodes.SUCCESS) {
-                    
                     bridge.invoke("CloudExperienceHost.SurfaceHubAccount.createLocalAccount", userName.value.trim(), password.value).done(function () {
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "LocalAccountCreationSuccess", (password.value.length > 0) ? "Password" : "NoPassword");
                         bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                     }, function (e) {
                         _setProgressState(false);
-                        this._showError(this._getErrorCode(e.number), true );
+                        this._showError(this._getErrorCode(e.number), true /* setFocus */);
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "LocalAccountCreationFailure", JSON.stringify({ errorNumber: e.number.toString(16), errorStack: e.asyncOpSource.stack }));
                     }.bind(this));
                 }
                 else {
                     _setProgressState(false);
-                    this._showError(result, true );
+                    this._showError(result, true /* setFocus */);
                 }
             }
-            
             function _setProgressState(waiting) {
                 NextButton.disabled = waiting;
                 uiHelpers.SetElementVisibility(progressRing, waiting);
@@ -139,7 +119,6 @@
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", JSON.stringify({ number: e && e.number, stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
         },
-        
         _getErrorCode: function (errorNumber) {
             var errorCode = null;
             switch (errorNumber) {
@@ -173,9 +152,7 @@
             }
             return errorCode;
         },
-        
         _showError: function (errorCode, setFocus) {
-            
             var resourceId = null, inputField = null;
             switch (errorCode) {
                 case ErrorCodes.PasswordPlaceholder:

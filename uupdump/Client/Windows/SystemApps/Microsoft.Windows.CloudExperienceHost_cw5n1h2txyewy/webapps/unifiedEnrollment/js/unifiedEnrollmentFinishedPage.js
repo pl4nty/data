@@ -1,4 +1,3 @@
-﻿
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -43,7 +42,6 @@ var CloudExperienceHost;
 
         function _displayProgress(htmlElement, textString, value1, value2) {
             var errorTextToReplace = unifiedEnrollmentResources[textString];
-            
             if (value1 > value2)
             {
                 value1 = value2;
@@ -59,7 +57,6 @@ var CloudExperienceHost;
                 {
                     EnrollmentProgressPoliciesDiv.style.display = 'block';
                 }
-                
                 policyCurrentProgress = result.currentProgress;
                 policyExpectedEndValue = result.expectedEndValue;
                 if (result.currentProgress === result.expectedEndValue) {
@@ -91,7 +88,6 @@ var CloudExperienceHost;
                 {
                     EnrollmentProgressNetworkDiv.style.display = 'block';
                 }
-                
                 profilesCurrentProgress = result.currentProgress;
                 profilesExpectedEndValue = result.expectedEndValue;
                 if (result.currentProgress === result.expectedEndValue) {
@@ -123,7 +119,6 @@ var CloudExperienceHost;
                 {
                     EnrollmentProgressApplicationsDiv.style.display = 'block';
                 }
-                
                 appsCurrentProgress = result.currentProgress;
                 appsExpectedEndValue = result.expectedEndValue;
                 if (result.currentProgress === result.expectedEndValue) {
@@ -155,7 +150,6 @@ var CloudExperienceHost;
                 {
                     EnrollmentProgressCertificatesDiv.style.display = 'block';
                 }
-                
                 certificatesCurrentProgress = result.currentProgress;
                 certificatesExpectedEndValue = result.expectedEndValue;
                 if (result.currentProgress === result.expectedEndValue) {
@@ -195,7 +189,6 @@ var CloudExperienceHost;
                         enterpriseManagementWorker.updateServerWithResult(false, false);
                         EnrollmentProgressNotifyOfNotificationText.textContent = unifiedEnrollmentResources["EnrollmentErrorFinishedLeadText"] + " " + unifiedEnrollmentResources["InsecureRedirectDescription"];
                     } catch (e) {
-                        
                     }
                 }
             }, function (e) {
@@ -203,7 +196,6 @@ var CloudExperienceHost;
                     enterpriseManagementWorker.updateServerWithResult(false, false);
                     EnrollmentProgressNotifyOfNotificationText.textContent = unifiedEnrollmentResources["EnrollmentErrorFinishedLeadText"] + " " + unifiedEnrollmentResources["InsecureRedirectDescription"];
                 } catch (e) {
-                    
                 }
             });
         }
@@ -211,7 +203,6 @@ var CloudExperienceHost;
         function _displayErrorOrSuccess(traceId, errorValue, internalError, enrollmentID) {
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_Enrollment_HRESULT", JSON.stringify({ errorValue: errorValue, correlationVector: correlationVector }));
 
-            
             bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_error", 0);
             var title;
             var leadText;
@@ -294,7 +285,17 @@ var CloudExperienceHost;
                     EnrollmentFinishedLeadText.textContent = leadText;
                 }.bind(this));
 
-                
+                /*bridge.invoke("CloudExperienceHost.UnifiedEnroll.showMdmSyncStatusPageAsync").done(function (result) {
+                    if (result === 1)
+                    {
+                        var setContentFor = [EnrollmentProgressPoliciesText, EnrollmentProgressProfilesText, EnrollmentProgressAppsText, EnrollmentProgressCertificatesText, EnrollmentProgressNotifyOfNotificationText];
+                        setContentFor.forEach(function (content) {
+                            content.textContent = unifiedEnrollmentResources[content.id];
+                        });
+                        EnrollmentProgressDiv.style.display = 'block';
+                        _trackMDMSyncProgress();
+                    }
+                });*/
             } else {
                 EnrollmentFinishedTitle.textContent = unifiedEnrollmentResources[title];
                 EnrollmentFinishedLeadText.textContent = leadText;
@@ -319,7 +320,6 @@ var CloudExperienceHost;
                 return WinJS.Promise.join({ languagePromise: languagePromise, dirPromise: dirPromise, stringPromise: stringPromise, cssPromise: cssPromise, correlationVectorPromise: correlationVectorPromise });
             },
             ready: function (element, options) {
-                
                 FinishedButton.addEventListener("click", function (event) {
                     event.preventDefault();
                     this._onFinished.apply(this);
@@ -336,7 +336,6 @@ var CloudExperienceHost;
                 var internalErrorPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_mdm_enrollment_internal_error");
                 var getContextPromise = bridge.invoke("CloudExperienceHost.getContext");
                 WinJS.Promise.join({ traceId: traceIdPromise, errorValue: errorPromise, internalError: internalErrorPromise, getContext: getContextPromise, enrollmentID: enrollmentIDPromise }).done(function (result) {
-                    
                     if (result.getContext.host.toLowerCase() === "mosetmamconnecttowork") {
                         if (result.errorValue === noEnrollmentError) {
                             EnrollmentFinishedTitle.textContent = unifiedEnrollmentResources["EnrollmentErrorFinishedTitle"];
@@ -351,7 +350,6 @@ var CloudExperienceHost;
                         } else {
                             _displayErrorOrSuccess(result.traceId, result.errorValue, result.internalError, result.enrollmentID);
                         }
-                        
                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_error", 0);
                     } else {
                         _displayErrorOrSuccess(result.traceId, result.errorValue, result.internalError, result.enrollmentID);

@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 define(['lib/knockout'], (ko) => {
     class NavigationManager {
@@ -15,10 +12,7 @@ define(['lib/knockout'], (ko) => {
             this.canNavigateToPreviousWebapp = ko.observable(false);
             this.canNavigateToPreviousPanel = ko.observable(false);
             this.shouldDisableBackNavigation = ko.observable(false);
-            // This is applicable for webapps with multiple panels where you want to always 'back'
-            // and reload the app (basically go to first panel)
             this.canNavigateToCurrentWebapp = ko.observable(false);
-            // This is to close CXH
             this.canExitCxhFromCurrentWebapp = ko.observable(false);
 
             this.canNavigateToPreviousWebapp.subscribe((newvalue) => {
@@ -41,11 +35,9 @@ define(['lib/knockout'], (ko) => {
                 this.evaluateExitCxhAndNotify();
             });
 
-            // handle back command via WNF
             AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventSubscriptionManager").addEventListener("back", this.navigateBack.bind(this));
 
             if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("WindowsAutopilotDiagnostics")) {
-                // handle diagnostics command via WNF only if feature is enabled
                 AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventSubscriptionManager").addEventListener("diagnostics", this.navigateToDiagnostics.bind(this));
             }
         }
@@ -71,12 +63,8 @@ define(['lib/knockout'], (ko) => {
         }
 
         navigateBack() {
-            // Back panel navigation should never be available on panel 1 of a webapp
-            // So always check for panel availability first, and then check for previous app
-            // availability and navigate if applicable.
             if (this.canNavigateToPreviousPanel()) {
                 this.bridge.fireEvent(CloudExperienceHost.Events.backButtonClicked, null);
-                // Remove keyboard focus from the back button, and get focus back to the inclusive web app
                 document.activeElement.blur();
                 this.webviewCtrl.focus();
             }
@@ -93,17 +81,13 @@ define(['lib/knockout'], (ko) => {
         }
 
         navigateToDiagnostics() {
-            // Check if navigator has been initialized
             if (this.navigator != null) {
                 let diagnosticsNode = this.navigator.getDiagnosticsNode();
                 let currentNode = this.navigator.getCurrentNode();
 
-                // Diagnostics navigation is only available if the current scenario has a valid diagnostics node
                 if ((diagnosticsNode != null) && (diagnosticsNode.cxid != "") && (diagnosticsNode != currentNode)) {
-                    // Save current node
                     CloudExperienceHost.Storage.SharableData.addValue("DiagnosticsPreviousCXID", currentNode.cxid);
 
-                    // Navigate to diagnostics node
                     if (this.appView) {
                         this.appView.showProgress().then(function () {
                             this.navigator.navigateToNode(diagnosticsNode);
@@ -118,7 +102,6 @@ define(['lib/knockout'], (ko) => {
 
         closeCxh() {
             if (this.canExitCxhFromCurrentWebapp()) {
-                // Exit CXH with app result cancel from current webapp
                 CloudExperienceHost.cancel();
             }
         }
@@ -148,7 +131,6 @@ define(['lib/knockout'], (ko) => {
 
         setWebAppBackNavigationAvailability(isAvailable)
         {
-            // This is the first panel, set panel navigation to false
             this.canNavigateToPreviousPanel(false);
             this.canNavigateToCurrentWebapp(false);
             this.canNavigateToPreviousWebapp(isAvailable);
@@ -166,7 +148,6 @@ define(['lib/knockout'], (ko) => {
         setBackNavigationCheckpoint() {
             if (this.navigator.addCurrentNodeToTopOfBackstack()) {
                 this.shouldDisableBackNavigation(false);
-                // We force the webapp to relinquish back control at this point
                 this.setPanelBackNavigationAvailability(false);
                 this.canNavigateToCurrentWebapp(true);
             }

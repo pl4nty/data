@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', "legacy/core"], (ko, bridge, constants, core) => {
     class NetworkLossErrorViewModel {
         constructor(resourceStrings) {

@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -21,7 +17,6 @@ var CloudExperienceHost;
         Resources.getStrings = getStrings;
         class IrisServiceHelper {
             static serializeCreativeResults(creativeResults) {
-                // Serialize creatives
                 let serializedCreatives = [];
                 if (creativeResults.creatives) {
                     for (let i = 0; i < creativeResults.creatives.length; i++) {
@@ -33,7 +28,6 @@ var CloudExperienceHost;
                         });
                     }
                 }
-                // Serialize errors
                 let serializedErrors = [];
                 if (creativeResults.errors) {
                     for (let i = 0; i < creativeResults.errors.length; i++) {
@@ -74,7 +68,6 @@ var CloudExperienceHost;
             static getCreativeResultsAsync(placementId, creativeCount, customQueryParameters, option) {
                 return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                     try {
-                        // Get customQueryParameters as an IMapView<string, string> so we can interop with the UDK API
                         let customQueryParametersMap = new Windows.Foundation.Collections.StringMap();
                         Object.keys(customQueryParameters).forEach(function (key) {
                             customQueryParametersMap.insert(key, customQueryParameters[key]);
@@ -166,4 +159,3 @@ var CloudExperienceHost;
         Resources.IrisServiceHelper = IrisServiceHelper;
     })(Resources = CloudExperienceHost.Resources || (CloudExperienceHost.Resources = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=resources.js.map

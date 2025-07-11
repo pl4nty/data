@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy/uiHelpers', 'corejs/xy-transfer-wrapper-up'], (ko, bridge, constants, core, legacy_uiHelpers) => {
@@ -29,7 +26,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
             });
 
             let resourceStrings = window.resourceStrings;
-            // Use an empty string so that Narrator reads out individual footer elements without a Container name
             document.title = "";
             this.easeOfAccessAccName = ko.observable(resourceStrings.EaseOfAccessAccName);
             this.inputSwitchAccName = ko.observable(resourceStrings.InputSwitchAccName);
@@ -58,7 +54,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
 
                 bridge.invoke("CloudExperienceHost.getChromeFooterOffset").then((offset) => {
                     let rect = element.getBoundingClientRect();
-                    // Place the flyout right-aligned
                     return bridge.invoke("CloudExperienceHost.showInputSwitchFlyout", rect.left + offset.x, rect.top + offset.y, screen.width, screen.height);
                 }).done(() => {
                     LightOOBEFooterViewModel.logChromeEvent("showInputSwitchFlyoutSucceeded");
@@ -76,7 +71,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
 
                 bridge.invoke("CloudExperienceHost.getChromeFooterOffset").then((offset) => {
                     let rect = element.getBoundingClientRect();
-                    // Place the flyout right-aligned
                     return bridge.invoke("CloudExperienceHost.showVolumeControlFlyout", rect.left + offset.x, rect.top + offset.y, screen.width, screen.height);
                 }).done(() => {
                     LightOOBEFooterViewModel.logChromeEvent("showVolumeControlFlyoutSucceeded");

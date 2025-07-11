@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 (function () {
     "use strict";
 
@@ -22,9 +19,6 @@
             clearTempWebDataOp = MSApp.clearTemporaryWebDataAsync();
             appManager = new CloudExperienceHost.MSATokenProviderManager();
         } else {
-            // AppManager scenario (Navigation json) execution can accrue cookies in the UWP/WWAHost inproc web layer; clear them to start new scenarios from a clean slate.
-            // Approximating private cxh when WarmBloodedUsers may be sharing ntuser (e.g. Default Account, Above-Lock, EDU Candidate User)
-            // This approximation is a rough cut at defense in depth for user-isolation area (see http://osgvsowi/23655594 for example tracking deliverable for greater depth)
             clearTempWebDataOp = MSApp.clearTemporaryWebDataAsync();
             appManager = new CloudExperienceHost.AppManager();
             let argsWithUser = args.detail;
@@ -35,9 +29,6 @@
 
         require.config(new RequirePathConfig('/core'));
 
-        // Please note that the optional sample file included in the requireAsync below is for F5 purpose only and hence included in the jsproj and not the other manifests.
-        // In production cxh the 'optional' plugin will handle the failure to load the module and AppObjectFactory will route the api calls to the actual default winrt apis.
-        // In F5 environment AppObjectFactory replaces the default implementations with custom modules defined in the Samples.
         args.setPromise(requireAsync(['lib/knockout', 'knockouthelpers', 'default-vm', 'legacy/appViewManager', 'legacy/navigationManager', 'lib/knockout-winjs', 'optional!sample/SampleImplementationCollection']).then((result) => {
             let ko = result.lib_knockout;
             let KnockoutHelpers = result.knockouthelpers;
@@ -91,7 +82,6 @@
                             break;
 
                         case activation.ApplicationExecutionState.running:          /* The app is running */
-                            // The previous running environment get lost and switch to new one.
                             appManager.start(args);
                             break;
 
@@ -107,13 +97,9 @@
                     };
                     clearTempWebDataOp.onerror = function () {
                         if (Windows.System.Profile.SystemSetupInfo.outOfBoxExperienceState == Windows.System.Profile.SystemOutOfBoxExperienceState.completed) {
-                            // Post-OOBE, user isolation is a real concern, so errors in this method should be fatal for defense-in-depth.
-                            // Note: since this cannot be recovered in the Scenario level (appManager) we don't want to expose a Retry/Cancel option for this case.
-                            // Therefore, close directly instead of throwing an Error.
                             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("ClearTemporaryWebDataAsyncFailed", "Fatal");
                             window.close();
                         } else {
-                            // If OOBE is not yet complete, this method is best-effort- log to telemetry and proceed with the flow.
                             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("ClearTemporaryWebDataAsyncFailed", "NonFatal");
                             appManagerStartFunction();
                         }
@@ -124,7 +110,6 @@
                     appManagerStartFunction();
                 }
 
-                // Check for feature staging as well as API existence
                 let gamepadEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadEnabledOobe");
                 if (gamepadEnabledObj.result && gamepadEnabledObj.value && CloudExperienceHostAPI.AppLifetimeManager && CloudExperienceHostAPI.AppLifetimeManager.enableGamepadVKeysForProcessLifetime) {
                     try {
@@ -138,9 +123,6 @@
     };
 
     app.oncheckpoint = function (args) {
-        // AppTelemetry events are sampled under the MEASURE policy yet, we require this code path to be always detected.
-        // Thus the creation of AppCheckpoint event, sampled under CRITICAL.
-        // We still fire the AppTelemetry event to ensure system event logs are produced.
         CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("AppCheckpoint");
         CloudExperienceHost.Telemetry.AppTelemetry.getInstance().appCheckpoint();
 
@@ -153,7 +135,6 @@
     };
 
     app.onloaded = function () {
-        // Process all resources
         WinJS.Resources.processAll();
     };
 

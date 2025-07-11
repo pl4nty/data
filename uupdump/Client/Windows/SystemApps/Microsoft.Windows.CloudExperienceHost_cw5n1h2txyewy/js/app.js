@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -153,8 +149,6 @@ var CloudExperienceHost;
     CloudExperienceHost.showVolumeControlFlyout = showVolumeControlFlyout;
     function shouldShowEaseOfAccessControl() {
         if (!EaseOfAccessControl.hasBeenChecked) {
-            // CloudExperienceHostAPI.Accessibility.EaseOfAccessControl only exists on Desktop, so wrap it
-            // with try/catch and treat all exceptions as "should not show"
             try {
                 var easeOfAccessControl = new CloudExperienceHostAPI.Accessibility.EaseOfAccessControl();
                 EaseOfAccessControl.shouldShow = easeOfAccessControl.shouldShow;
@@ -203,9 +197,7 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.getAllowedIdentityProviders = getAllowedIdentityProviders;
     function setRebootForOOBE(resumeCXHId) {
-        // Set the value to ask OOBEReboot web app to reboot
         CloudExperienceHost.Storage.SharableData.addValue("shouldRebootForOOBE", true);
-        // If exists, set the CXHID to resume from after a reboot.
         if (resumeCXHId) {
             CloudExperienceHost.Storage.SharableData.addValue("resumeCXHId", resumeCXHId);
         }
@@ -469,10 +461,7 @@ var CloudExperienceHost;
 (function (CloudExperienceHost) {
     var CredUI;
     (function (CredUI) {
-        // Add transparent option to CredUICoordinator if using InlineFluentTheme and option is not already set.
-        // Return true if flag is toggled on by this call, otherwise return false.
         function setTransparencyOptionOnCredUICoordinator() {
-            // WindowsUdk API may not exist
             try {
                 let coordinator = WindowsUdk.Security.Credentials.UI.CredUICoordinator.getForCurrentView();
                 if (coordinator &&
@@ -489,7 +478,6 @@ var CloudExperienceHost;
         }
         CredUI.setTransparencyOptionOnCredUICoordinator = setTransparencyOptionOnCredUICoordinator;
         function removeTransparencyOptionOnCredUICoordinator() {
-            // WindowsUdk API may not exist
             try {
                 let coordinator = WindowsUdk.Security.Credentials.UI.CredUICoordinator.getForCurrentView();
                 if (coordinator) {
@@ -550,7 +538,6 @@ var CloudExperienceHost;
             let original = descriptor.value;
             descriptor.value = function (...args) {
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ValidateCallbackUri")) {
-                    // The underlying function may return a Promise, so we need to handle that case
                     return WinJS.Promise.as(original.apply(this, args)).then(function (result) {
                         if (result instanceof ResultMetadata) {
                             result.validateCallbackUri = true;
@@ -564,7 +551,6 @@ var CloudExperienceHost;
                     });
                 }
                 else {
-                    // With feature disabled, just directly run the underlying function
                     return original.apply(this, args);
                 }
             };
@@ -573,4 +559,3 @@ var CloudExperienceHost;
         BridgeHelpers.validateCallbackUri = validateCallbackUri;
     })(BridgeHelpers = CloudExperienceHost.BridgeHelpers || (CloudExperienceHost.BridgeHelpers = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=app.js.map

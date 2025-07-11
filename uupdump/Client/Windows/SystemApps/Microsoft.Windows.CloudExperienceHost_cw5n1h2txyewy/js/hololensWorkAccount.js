@@ -1,6 +1,4 @@
-﻿
-
-"use strict";
+﻿"use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
     var HoloLensAccount;
@@ -28,7 +26,6 @@ var CloudExperienceHost;
         }
         HoloLensAccount.createWorkAccount = createWorkAccount;
 
-        
         function localizedStrings() {
             var hololensAccountResources = {};
             var keyList = ['Title', 'LeadText', 'UserPlaceholder', 'PasswordTitle', 'PasswordPlaceholder', 'Error_NoUsername', 'Error_UserExists', 'Error_UsernameFormat', 'Error_Creating_Account_Warning', 'BackButton', 'NextButton'];

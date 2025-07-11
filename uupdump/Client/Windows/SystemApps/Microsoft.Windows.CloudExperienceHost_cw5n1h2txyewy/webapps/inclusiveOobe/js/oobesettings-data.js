@@ -1,12 +1,7 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, bridge, constants, core, KoHelpers) => {
     class OobeSettingsData {
-        // Takes in a list of settings and commits them, then logs associated telemetry and completes the webapp
         commitSettings(settings, privacyConsentPresentationVersion) {
             try {
-                // Show the progress ring while committing async.
                 bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
                 bridge.invoke("CloudExperienceHost.UserManager.getUserId").then((userId) => {
@@ -56,8 +51,6 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 fileRef.setAttribute("rel", "stylesheet");
                 fileRef.setAttribute("href", cssOverride);
                 if (elementToAnchor) {
-                    // If we're overriding CSS and elementToAnchor is provided (e.g. in the Multi-page OOBE privacy settings scenario),
-                    // only anchor the Learn More content to that element once the stylesheet has loaded
                     fileRef.onload = function() {
                         doc.location.href = "#" + elementToAnchor;
                     }
@@ -65,7 +58,6 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 doc.head.appendChild(fileRef);
             }
             else if (elementToAnchor) {
-                // If we're not overriding CSS and elementToAnchor is provided, anchor the Learn More content to that element right away
                 doc.location.href = "#" + elementToAnchor;
             }
 
@@ -93,10 +85,6 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             let cssOverride = this.getCssOverride(targetPersonality);
 
             if (isInternetAvailable) {
-                // Styling on the local resource html content is managed by applying cssOverride, but the deep-linked server-side Privacy content
-                // is statically hosted with its own styles. It is TargetPersonality.InclusiveBlue by default (the initial existing personality)
-                // and supports other personalities via QueryString "profile" argument.
-                // Profile values must match the server-side value set.
                 let personalityQSParam = (targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite) ? "&profile=transparentLight" : "";
                 let url = href + personalityQSParam;
                 WinJS.xhr({ url: url }).then((response) => {

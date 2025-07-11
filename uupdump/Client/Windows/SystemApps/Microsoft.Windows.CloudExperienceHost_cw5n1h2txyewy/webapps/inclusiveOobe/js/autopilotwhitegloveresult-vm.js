@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define([
     'lib/knockout',
     'legacy/bridge',
@@ -22,7 +19,6 @@ define([
             this.deviceManagementUtilities = new ModernDeployment.Autopilot.Core.DeviceManagementUtilities();
             this.autopilotLogger = new ModernDeployment.Autopilot.Core.AutopilotLogging();
 
-            // UI element initialization
             this.resourceStrings = resourceStrings;
 
             this.organizationName = ko.observable(resourceStrings.WhiteGloveOrganizationNotFound);
@@ -64,13 +60,10 @@ define([
             this.hyperlinkVisibility = ko.observable(0);
             this.buttonVisibility = ko.observable(0);
 
-            // By default, show the default view
             this.shouldShowDefaultView = ko.observable(true);
             this.shouldShowDesktopLiteView = ko.observable(false);
             this.useRedGreenBackground = ko.observable(false);
 
-            // All flags gating visibility of regions of the main content must be added to this
-            // array.
             this.viewVisibilityFlags = [
                 this.shouldShowDefaultView,
                 this.shouldShowDesktopLiteView
@@ -78,40 +71,31 @@ define([
 
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities();
 
-            // Decide which view to toggle on based on the current context's personality.
             if (targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite) {
                 this.toggleSingleViewVisibilityOn(this.shouldShowDesktopLiteView);
             } else {
                 this.toggleSingleViewVisibilityOn(this.shouldShowDefaultView);
             }
 
-            // Sharable Data Values - must be kept in sync with their values in:
-            // autopilotwhiteglovelanding-vm.js
-            // oobeprovisioningprogress-vm.js
             this.whiteGloveStartTimeValueName = "AutopilotWhiteGloveStartTime";
             this.whiteGloveEndTimeValueName = "AutopilotWhiteGloveEndTime";
             this.whiteGloveSuccessValueName = "AutopilotWhiteGloveSuccess";
             this.whiteGloveDomainJoinStateValueName = "AutopilotWhiteGloveDomainJoinInProgress";
 
-            // Time Constants
             this.msPerHour = 3600000;
             this.msPerMinute = 60000;
 
-            // Footer Button Visibility Enumerations
             this.BUTTON_WHITE_GLOVE_SUCCESS = 0;
             this.BUTTON_WHITE_GLOVE_FAILURE = 1;
 
-            // Footer Hyperlink Visibility Enumerations
             this.HYPERLINK_WHITE_GLOVE_NONE = 0;
             this.HYPERLINK_WHITE_GLOVE_DIAGNOSTICS_ENABLED = 1;
 
-            // Diagnostics Enumerations
             this.whiteGloveLogName = "\\AutopilotWhiteGloveLogs.zip";
             this.diagnosticsPreviousCXID = "DiagnosticsPreviousCXID";
             this.diagnosticsLogsExportAreaName = "DiagnosticsLogsExportArea";
             this.diagnosticsLogsExportAreaValue = "Autopilot;TPM";
 
-            // This value has to be kept in sync with the CXID in Navigation.json
             this.PAGE_TRANSITION_DIAGNOSTICS_PAGE = "OobeDiagnostics";
 
             this.E_DIAGNOSTIC_ANALYSIS_FRAMEWORK_GENERIC_ERROR = 0x81039025; // defined in AutopilotErrors.mc
@@ -225,7 +209,6 @@ define([
         }
 
         onDiagnosticsKeyPressAsync(data, event) {
-            // If the "Enter" key is pressed
             if (event.keyCode == 13) {
                 return this.runAsync(this.onDiagnosticsClickAsync, this.diagnosticsLogsExportAreaValue, this.whiteGloveLogName);
             }
@@ -233,7 +216,6 @@ define([
 
         *viewDiagnosticsClickHandlerAsyncGen() {
             try {
-                // Save current CXID and navigate to troubleshooting page
                 let currentNode = yield bridge.invoke("CloudExperienceHost.AutoPilot.AutopilotWrapper.GetCurrentNode");
                 yield bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.diagnosticsPreviousCXID, currentNode.cxid);
                 yield bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.diagnosticsLogsExportAreaName, this.diagnosticsLogsExportAreaValue);
@@ -306,28 +288,18 @@ define([
             try {
                 yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "White glove reseal started");
 
-                // Clears new sharable data
                 yield bridge.invoke("CloudExperienceHost.Storage.SharableData.removeValue", this.whiteGloveStartTimeValueName);
                 yield bridge.invoke("CloudExperienceHost.Storage.SharableData.removeValue", this.whiteGloveSuccessValueName);
                 yield bridge.invoke("CloudExperienceHost.Storage.SharableData.removeValue", this.whiteGloveDomainJoinStateValueName);
 
-                // Update the white glove mode indicating that technician flow has completed and the device has been resealed.
                 yield this.autoPilotManager.setDeviceAutopilotModeAsync(EnterpriseDeviceManagement.Service.AutoPilot.AutopilotMode.whiteGloveResealed);
 
-                // Clears value so first page of OOBE will show on start up
                 yield bridge.invoke("CloudExperienceHost.Storage.SharableData.removeValue", "resumeCXHId");
 
-                // Disables resuming OOBE at a certain node
                 yield bridge.invoke("CloudExperienceHost.Storage.SharableData.removeValue", "OOBEResumeEnabled");
 
-                // Deletes the following so that the Device ESP is displayed during the user flow after reseal:
-                // 1. The IsSyncDone registry value
-                // 2. The ServerHasFinishedProvisioning registry value
-                // 3. The DMClient CSP tracking files
-                // 4. The Sidecar tracking policies
                 yield this.deviceManagementUtilities.prepareForResealAsync();
 
-                // Powers down the device
                 yield CloudExperienceHostAPI.UtilStaticsCore.shutdownAsync();
                 yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "White glove shut down initiated");
                 yield bridge.invoke("CloudExperienceHost.Telemetry.oobeHealthEvent", CloudExperienceHostAPI.HealthEvent.machineReseal, 0 /* Unused Result Parameter */);
@@ -344,7 +316,6 @@ define([
             try {
                 yield this.runAsync(this.isShowDiagnosticsEnabledAsyncGen);
 
-                // Check for success value written by ESP when it successfully completes.
                 let result = yield bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", this.whiteGloveSuccessValueName);
 
                 if (targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite) {
@@ -357,14 +328,12 @@ define([
                 yield this.runAsync(this.displayProvisioningTimeAsyncGen);
                 yield this.runAsync(this.displayQRCodeAsyncGen);
 
-                // Read the velocity value from the OOBE feature staging API to differentiate behavior between old and new
                 let bitlockerDeferralEnabled = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotBitlockerOobeDeferral");
                 if (bitlockerDeferralEnabled) {
                     let sessionUtilities = new bootstrapSessionGeneralUtilities(true);
                     sessionUtilities.signalBitlockerProvisioningComplete(4); // BitLockerDeferralReason.PreProvisioningComplete
                 }
             } catch (error) {
-                // Swallow exception and show error on page.
                 this.displayError();
             }
 
@@ -403,7 +372,6 @@ define([
                 let qrData = yield this.autoPilotManager.getDeviceBlobForQRCodeAsync();
                 let qrDataJson = JSON.parse(qrData);
 
-                // Add result and elapsed time to QR code
                 if (result === "Success") {
                     qrDataJson.Result = "Success";
                 }
@@ -416,7 +384,6 @@ define([
 
                 yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "AutopilotWhiteGlove: QR code result", qrDataString);
 
-                // If ZtdId was retrieved, display the QR code
                 if (qrDataJson.ZtdId != "") {
                     let walletBarcode = new Windows.ApplicationModel.Wallet.WalletBarcode(Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.qr, qrDataString);
 
@@ -430,11 +397,9 @@ define([
                         qrCode.src = URL.createObjectURL(qrImageStream);
                     }
                 } else {
-                    // Else the device is not registered, so display error message and block next button
                     yield this.runAsync(this.logFailureEventAsyncGen, autopilotTelemetryUtility.whiteGloveError.Error, "Unable to get device ZtdId");
                 }
             } catch (error) {
-                // If device blob retrieval failed, display error message and block next button
                 yield this.runAsync(this.logFailureEventAsyncGen, autopilotTelemetryUtility.whiteGloveError.Error, "QR blob generation error", error);
                 throw error;
             }
@@ -458,11 +423,9 @@ define([
         }
         
         displayError() {
-            // Only affects default Inclusive Blue view
             this.provisioningTextStyle("error");
             this.subHeaderText(this.resourceStrings.WhiteGloveQRCodeError);
 
-            // Only affects default Desktop Lite view
             this.errorMessage(this.resourceStrings.WhiteGloveQRCodeError);
         }
 
@@ -506,10 +469,8 @@ define([
 
         resetStrings()
         {
-            // Inclusive Blue strings
             this.subHeaderText("");
 
-            // Desktop Lite strings
             this.errorMessage("");
             this.resultInstructionsText("");
         }
@@ -571,7 +532,6 @@ define([
             }
         }
 
-        // By default assume all errors are re-triable 
         isRetriableError(result) {
             return true;
         }
@@ -590,7 +550,6 @@ define([
                 let generator = makeGenerator.apply(this, arguments);
 
                 function iterateGenerator(result) {
-                    // every yield returns: result => { done: [Boolean], value: [Object] }
                     if (result.done) {
                         return Promise.resolve(result.value);
                     }
@@ -612,7 +571,6 @@ define([
 
         toggleSingleViewVisibilityOn(targetView) {
             try {
-                // Toggle visibility all view off and only the target view on.
                 for (let i = 0; i < this.viewVisibilityFlags.length; i++) {
                     (this.viewVisibilityFlags[i])(false);
                 }

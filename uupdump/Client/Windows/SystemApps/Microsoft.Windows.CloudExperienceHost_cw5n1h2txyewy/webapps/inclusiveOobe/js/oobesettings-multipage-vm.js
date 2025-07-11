@@ -1,23 +1,17 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobeSettingsData, bridge, constants, core, KoHelpers) => {
     
         class SettingsMultiPageViewModel {
             constructor(resources, isInternetAvailable, targetPersonality, isPrivacySensitiveRegion) {
                 this.resources = resources;
-                // Set up member variables for the settings pages
                 this.isPrivacySensitiveRegion = isPrivacySensitiveRegion;
                 let settingsPagesAndSettings = this.getSettingsPages();
                 this.settingsPageContent = settingsPagesAndSettings.settingsPageContent;
                 this.settingsObjects = settingsPagesAndSettings.settingsObjects;
 
-                // Log telemetry for Default Settings
                 for (let setting of this.settingsObjects) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Default" + setting.canonicalName, setting.value);
                 }
 
-                // Set up member variables for the learn more page
                 this.learnMoreContent = oobeSettingsData.getLearnMoreContent();
                 this.learnMoreVisible = ko.observable(false);
                 this.learnMoreVisible.subscribe(() => {
@@ -46,7 +40,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     this.learnMoreVisible(false);
                 };
 
-                // Add event listener for back button
                 bridge.addEventListener(constants.Events.backButtonClicked, this.handleBackNavigation.bind(this));
 
                 this.processingFlag = ko.observable(false);
@@ -107,7 +100,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     }
                 ];
 
-                // One of the component redirections loses the object context for invoking this. For now use an arrow function to work around this.
                 this.nextStep = () => {
                     if (!this.processingFlag()) {
                         this.processingFlag(true);
@@ -133,8 +125,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                     this.setShowBackButton();
                 };
 
-                // Adding cortana voice over strings for each settings in reference to their canonical names
-                // The primary canonical name definitions are in %SDXROOT%\onecoreuap\shell\cloudexperiencehost\onecore\inc\oobesettingsutil.h
                 this.voiceOverContent = {};
                 this.voiceOverContent["Location"] = resources.LocationVoiceOver;                    // OPBS_Location = 0,       // 0
                 this.voiceOverContent["InputDiagnostics"] = resources.InputDiagnosticsVoiceOver;    // OPBS_InputDiagnostics,   // 1
@@ -168,9 +158,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             }
 
             handleBackNavigation() {
-                // Since the back button in Frame is removed asynchronously, multiple back navigations may arrive
-                // during transitions within the webapp panes.
-                // Therefore also cap the panel index decrement at zero.
                 if (this.settingVisible() && !this.processingFlag() && (this.currentPanelIndex() > 0)) {
                     this.processingFlag(true);
                     this.currentPanelIndex(this.currentPanelIndex() - 1);
@@ -189,7 +176,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 }
             }
 
-            // Converts the underlying settings objects into a format consumable by the multi-page variant of oobe settings
             getSettingsPages() {
                 let platform = CloudExperienceHostAPI.Environment.platform;
                 let oobeSettingsGroups = CloudExperienceHostAPI.OobeSettingsStaticsCore.getSettingGroups();
@@ -222,14 +208,12 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                             setting.value = item.value;
                         });
 
-                        // Pre-selection of Telemetry Setting on Server.
                         if ((platform === 9)) { // Server
                             if (!this.isPrivacySensitiveRegion) {
                                 page.selectedItem(page.items[0]);
                             }
                         }
                         
-                        //add the page to the list
                         settingsPageContent.push(page);
                     }
                 }

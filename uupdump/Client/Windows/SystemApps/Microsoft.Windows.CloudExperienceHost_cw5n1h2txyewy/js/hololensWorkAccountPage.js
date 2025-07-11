@@ -1,4 +1,3 @@
-﻿
 (function () {
     "use strict";
     var hololensAccountResources = {};
@@ -21,7 +20,6 @@
             bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "hlwa_error").done(function (result) { 
                 if (!result) { 
                     creationError = 0;
-                    
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "hlwa_upn", 0);
                 }
                 else {
@@ -34,14 +32,12 @@
             return WinJS.Promise.join({ languagePromise: languagePromise, dirPromise: dirPromise, stringPromise: stringPromise, cssPromise: cssPromise });
         },
         ready: function (element, options) {
-            
             var setContentFor = [Title, LeadText, NextButton, BackButton];
             var i = 0;
 
             for (i = 0; i < setContentFor.length; i++) {
                 setContentFor[i].textContent = hololensAccountResources[setContentFor[i].id];
             }
-            
             var placeholderKey = [userName, password];
             var placeholderValue = ['UserPlaceholder', 'PasswordPlaceholder'];
             for (i = 0; i < placeholderKey.length; i++) {
@@ -56,31 +52,25 @@
 
                 NextButton.disabled = false;
             }
-            
             NextButton.addEventListener("click", function (event) {
                 event.preventDefault();
                 _onNext.apply(this);
             }.bind(this));
-            
             BackButton.addEventListener("click", function () {
                 bridge.fireEvent(CloudExperienceHost.Events.goBack);
             });
-            
             userName.addEventListener("blur", function () {
                 var errorCode = validator.validateUpn(userName);
                 if (errorCode !== ErrorCodes.SUCCESS) {
-                    this._showError(errorCode, false );
+                    this._showError(errorCode, false /* setFocus */);
                 }
             }.bind(this));
-            
             userName.addEventListener("keyup", function () {
                 if (validator.validateUpn(userName) === ErrorCodes.SUCCESS) {
                     errorClass.HideError(userName, userName_errorDialog);
                 }
             });
-            
             function _onNext() {
-                
                 var result = validator.validateUpn(userName);
                 if (result === ErrorCodes.SUCCESS) {
                     if (password.value.length === 0) { 
@@ -90,7 +80,6 @@
                     }
                     else {
                         _setProgressState(true);
-                        
                         bridge.invoke("CloudExperienceHost.HoloLensAccount.createWorkAccount", userName.value.trim(), password.value).then(function () { 
                             bridge.invoke("CloudExperienceHost.Storage.SharableData.removeValue", "hlwa_error");                            
                         }).done(function () {
@@ -107,7 +96,7 @@
                     }
                 }
                 else {
-                    this._showError(result, true );
+                    this._showError(result, true /* setFocus */);
                 }
             }
 
@@ -127,7 +116,6 @@
                 BackButton.disabled = false;
             }
             
-            
             function _setProgressState(waiting) {
                 BackButton.disabled = waiting;
                 NextButton.disabled = waiting;
@@ -142,7 +130,6 @@
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "HoloLensWorkAccountPageError", JSON.stringify({ number: e && e.number, stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
         },
-        
         _getErrorCode: function (errorNumber) {
             var errorCode = null;
             switch (errorNumber) {
@@ -158,9 +145,7 @@
             }
             return errorCode;
         },
-        
         _showError: function (errorCode, setFocus) {
-            
             var resourceId = null, inputField = null, errorDetail = null;
             switch (errorCode) {
                 case ErrorCodes.Username_Error:

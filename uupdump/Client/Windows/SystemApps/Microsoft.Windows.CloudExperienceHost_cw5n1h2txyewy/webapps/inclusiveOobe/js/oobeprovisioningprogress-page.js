@@ -1,12 +1,8 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 (() => {
     WinJS.UI.Pages.define("/webapps/inclusiveOobe/view/oobeprovisioningprogress-main.html", {
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Load css per scenario
             let loadCssPromise = requireAsync(['legacy/bridge']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.AutoPilot.EnrollmentStatusPage.forceInclusiveCSS", "");
             }).then ((cssList) => {
@@ -23,7 +19,6 @@
                 return result.legacy_uiHelpers.LangAndDirPromise(document.documentElement, result.legacy_bridge);
             });
 
-            // Load resource strings
             let getLocalizedStringsPromise = requireAsync(['legacy/bridge', 'legacy/core']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.AutoPilot.makeAutopilotResourceObject").then((resultString) => {
                     this.resourceStrings = JSON.parse(resultString);
@@ -95,12 +90,10 @@
         },
         ready: (element, options) => {
             require(['lib/knockout', 'corejs/knockouthelpers', 'legacy/bridge', 'legacy/events', 'oobeprovisioningprogress-vm', 'lib/knockout-winjs'], (ko, KoHelpers, bridge, constants, provisioningProgressViewModel) => {
-                // Setup knockout customizations
                 koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                 window.KoHelpers = KoHelpers;
 
-                // Apply bindings and show the page
                 let vm = new provisioningProgressViewModel(this.resourceStrings, this.isOOBE, this.runProvisioning, this.restoreMDMTasks);
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {

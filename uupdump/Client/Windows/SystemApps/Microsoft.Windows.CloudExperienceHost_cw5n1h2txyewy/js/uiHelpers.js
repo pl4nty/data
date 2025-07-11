@@ -1,8 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 "use strict";
-// This needs to be kept in sync with the same one in uiHelpers_ut.ts
 var ErrorCodes;
 (function (ErrorCodes) {
     ErrorCodes[ErrorCodes["SUCCESS"] = 1] = "SUCCESS";
@@ -112,7 +108,6 @@ var uiHelpers;
         }
         validateSecurityQuestionSelectionString(password, securityQuestion, questionNumber) {
             let result = ErrorCodes.SUCCESS;
-            // Only care about security question if we have a password
             if (((password === null) || (password.length > 0)) && !securityQuestion) {
                 result = questionNumber ?
                     ErrorCodes["SecurityQuestion" + questionNumber + "_Error"] : ErrorCodes.Security_Error;
@@ -124,7 +119,6 @@ var uiHelpers;
         }
         validateSecurityAnswerString(password, securityAnswer, answerNumber) {
             let result = ErrorCodes.SUCCESS;
-            // Only care about security answers if we have a password
             if (((password === null) || (password.length > 0)) && (securityAnswer.trim().length === 0)) {
                 result = answerNumber ?
                     ErrorCodes["SecurityAnswer" + answerNumber + "_Error"] : ErrorCodes.Security_Error;
@@ -206,7 +200,6 @@ var uiHelpers;
         }
         HideError(inputField, errorDiv) {
             errorDiv.parentElement.style.display = 'none';
-            // Update the label after hiding the element
             errorDiv.setAttribute("aria-label", null);
             if (errorDiv.childNodes.length > 0) {
                 inputField.classList.remove('inputState_error');
@@ -305,11 +298,9 @@ var uiHelpers;
         });
         bridge.invoke("CloudExperienceHost.Resources.getString", "oobecommon", "EaseOfAccessAccName").done(function (label) {
             easeOfAccessElement.setAttribute("aria-label", label);
-            // Title is needed to display a tooltip
             easeOfAccessElement.setAttribute("title", label);
         });
         easeOfAccessElement.addEventListener("click", function () {
-            // Calling bridge to bring up accessibility menu
             InvokeEaseOfAccess(easeOfAccessElement, bridge);
         });
     }
@@ -320,11 +311,9 @@ var uiHelpers;
         });
         bridge.invoke("CloudExperienceHost.Resources.getString", "oobecommon", "InputSwitchAccName").done(function (label) {
             inputSwitcherElement.setAttribute("aria-label", label);
-            // Title is needed to display a tooltip
             inputSwitcherElement.setAttribute("title", label);
         });
         inputSwitcherElement.addEventListener("click", function () {
-            // Calling bridge to bring up the input switcher menu
             InvokeInputSwitcher(inputSwitcherElement, bridge);
         });
     }
@@ -351,7 +340,6 @@ var uiHelpers;
     }
     uiHelpers.PortableDeviceHelpers = PortableDeviceHelpers;
 })(uiHelpers || (uiHelpers = {}));
-// Expose css function to be loaded by requirejs
 if ((typeof define === "function") && define.amd) {
     define(['legacy/bridge', 'legacy/core'], function (bridge, core) {
         return {
@@ -370,4 +358,3 @@ if ((typeof define === "function") && define.amd) {
         };
     });
 }
-//# sourceMappingURL=uiHelpers.js.map

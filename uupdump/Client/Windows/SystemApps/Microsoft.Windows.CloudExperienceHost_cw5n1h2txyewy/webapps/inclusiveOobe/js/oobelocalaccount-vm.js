@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy/appObjectFactory'], (ko, KoHelpers, oobeSettingsData, bridge, constants, core, appObjectFactory) => {
     class LocalAccountViewModel {
         constructor(resourceStrings, isInternetAvailable, requirePassword, requireRecovery, allowOnlineAccount, onlineAccountTargetId, targetPersonality, shouldAadcRestrictionsApplyInDeviceRegion) {
@@ -65,8 +62,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
             this.learnMoreVisible = ko.observable(false);
             this.learnMoreVisible.subscribe((newValue) => {
                 if (newValue === false) {
-                    // Reenable button interaction if we're not showing Learn More. On the Learn More page,
-                    // buttons will be enabled after the iframe is shown after oobeSettingsData.showLearnMoreContent()
                     this.processingFlag(false);
                 }
             });
@@ -148,7 +143,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
                     return OnSubmitActions.Error;
                 }
                 else {
-                    // Commit here if empty password is allowed
                     this.commitAsync().done(null, (err) => {
                         this.evaluateCommitError(err.number);
                         this.recoveryDataErrorHandler();
@@ -164,7 +158,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
                     this.passwordAriaLabel(this.passwordErrorText());
                 }
                 else if (!this.requireRecovery) {
-                    // Create the local account after password is confirmed when recovery is not required
                     this.commitAsync().done(null, (err) => {
                         this.evaluateCommitError(err.number);
                         this.recoveryDataErrorHandler();
@@ -187,7 +180,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
                     return OnSubmitActions.InProgress;
                 }
                 else {
-                    // Cortana only speaks for the PasswordHint_Invalid_Error and not the PasswordHint_Empty_Error
                     if (errorCode === ErrorCodes.PasswordHint_Invalid_Error) {
                         this.recoveryDataVoiceOverErrorString(resourceStrings.PasswordHintErrorVoiceOver);
                     }
@@ -199,7 +191,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
             }
 
             this.onSubmitSQSA = () => {
-                // If option 0 (placeholder) in security question dropdown is selected, send empty string to get error message
                 let errorCode = this.validator.validateSecurityQuestionSelectionString(this.password(), ((securityQuestionDropdown.selectedIndex === 0) ? '' : this.selectedQuestion()), null);
                 this.securityQuestionErrorText(this.getErrorMessage(errorCode));
                 errorCode = this.validator.validateSecurityAnswerString(this.password(), this.securityAnswer(), null);
@@ -216,7 +207,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
                     let questionIndex = securityQuestionDropdown.selectedIndex - 1;
                     this.securityQuestions.splice(questionIndex, 1);
 
-                    // Submit to create a local account after 3 security questions have been answered, otherwise display SQSA page again
                     if (this.recoverySecurityData.length >= NUM_SECURITY_ANSWERS) {
                         this.commitAsync().done(null, (err) => {
                             this.evaluateCommitError(err.number);
@@ -237,7 +227,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
                 this.securityAnswer("");
                 this.selectedQuestion("");
                 this.passwordAriaLabel(this.resourceStrings["PasswordPlaceHolder"]);
-                // First panel, no panel to navigate before this
                 bridge.invoke("CloudExperienceHost.setShowBackButton", false);
             }
 
@@ -250,7 +239,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
                 this.securityAnswer("");
                 this.recoverySecurityData = [];
                 this.securityQuestionErrorText("");
-                // This is the second panel, enable back navigation for this and subsequent pages
                 bridge.invoke("CloudExperienceHost.setShowBackButton", true);
             }
 
@@ -365,8 +353,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
                         item.onInit();
                     }
 
-                    // Back navigation can show up error strings, in such a case just read the error
-                    // Sequential navigation on hitting next can never show an error (else)
                     if (this.isCurrentPageDisplayingError()) {
                         this.initializeVoiceOverAndSpeakStrings(".error-voice-over", newStepPanel);
                     }
@@ -389,8 +375,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
                         })
                     );
 
-                    // Take action depending on the result from this panel.
-                    // If this panel returned an "InProgress" result (i.e. kicked off an async op), no-op and allow that to continue in the background
                     if (onSubmitResult === OnSubmitActions.Success) {
                         this.nextStep();
                     }
@@ -405,13 +389,11 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
                 this.submitPanel();
             }
 
-            // One of the component redirections loses the object context for invoking this. For now use an arrow function to work around this.
             this.nextStep = () => {
                 this.navigate(this.currentPanelIndex() + 1);
             }
 
             this.commitAsync = function () {
-                // Show the progress ring while committing async.
                 bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
                 let promise = WinJS.Promise.as(null);
@@ -444,11 +426,8 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
             }
 
             this.evaluateCommitError = function (errorNumber) {
-                // Just log the failure, no need to call AppResult.fail since we give the user another chance to re-commit their credentials
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "LocalAccountCreationFailure", errorNumber);
 
-                // Hide the progress and show the page
-                // Also reset the processing flag to ensure the buttons are interactable in case of error
                 bridge.fireEvent(constants.Events.visible, true);
                 this.processingFlag(false);
 
@@ -482,7 +461,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
         }
 
         startVoiceOver() {
-            // Speak out the string for the UserName page as the subscription event doesn't fire for the first page
             this.speakStrings(this.resourceStrings.UserNameVoiceOver);
         }
 
@@ -510,9 +488,7 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
 
         speakStrings(voiceOverString) {
             appObjectFactory.getObjectFromString("CloudExperienceHostAPI.Speech.SpeechSynthesis").speakAsync(voiceOverString).done(() => {
-                // Voice over completed successfully
             }, (error) => {
-                // Check that the error object is defined
                 if (error) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "LocalAccountVoiceOverError", core.GetJsonFromError(error));
                 }
@@ -523,7 +499,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
             if (!this.processingFlag()) {
                 this.processingFlag(true);
 
-                // Redirect to the page which determines what type of online account to create
                 bridge.fireEvent(constants.Events.done, this.onlineAccountTargetId);
             }
         }
@@ -563,7 +538,6 @@ define(['lib/knockout', 'corejs/knockouthelpers', 'oobesettings-data', 'legacy/b
             if (item.onBackNavigate) {
                 item.onBackNavigate();
             }
-            // By default go to the previous panel
             else {
                 this.navigate(this.currentPanelIndex() - 1);
             }

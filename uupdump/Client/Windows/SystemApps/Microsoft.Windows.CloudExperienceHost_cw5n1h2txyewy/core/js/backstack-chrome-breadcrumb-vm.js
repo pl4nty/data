@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define(['lib/knockout', 'legacy/navigationManager'], (ko, navManager) => {
+﻿define(['lib/knockout', 'legacy/navigationManager'], (ko, navManager) => {
     class OOBEBackstackChromeBreadCrumbViewModel {
         constructor(params) {
             this.showBackButton = ko.observable(false);

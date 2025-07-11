@@ -1,4 +1,3 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
 (function () {
     require.config(new RequirePathConfig('/webapps/inclusiveOobe'))
     require(['lib/knockout', 'corejs/knockouthelpers', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy/uiHelpers'], (ko, KoHelpers, bridge, constants, core, uiHelpers) => {
@@ -12,10 +11,8 @@
         }
         const Events = constants.Events;
 
-        //velocity feature names
         const feature_UseNewSearchAndCortanaApps = "UseNewSearchAndCortanaApps";
 
-        //constraints for voice recognition
         const learnMoreTag = "LearnMore";
 
         const customOkLearnMorePage = ["ok"];
@@ -31,11 +28,9 @@
         ];
         pages.forEach((page) => {
             WinJS.UI.Pages.define(page.uri, {
-                //create PageControl object in order to load in cortana page from navigator
                 init: (element, options) => {
                     this.processingFlag = ko.observable(false);
 
-                    //load all needed resources and return a promise that completes when ready to render
                     const langPromise = bridge.invoke("CloudExperienceHost.Globalization.Language.getPreferredLang").then(lang => {
                         this.market = lang.toLowerCase();
                         document.documentElement.setAttribute("lang", lang);
@@ -50,7 +45,6 @@
                     });
 
                     const stringPromise = localizedStringsAsync().then((resources) => {
-                        //create rudimentary view model
                         this.oobeCortana_vm = {
                             cortanaResources: resources,
                             currentPanelIndex: ko.observable(0).extend({ notify: 'always' }),
@@ -60,7 +54,6 @@
                             cortanaHeadingText: cortanaHeadingText(resources),
                             cortanaSubheadingText: cortanaSubheadingText(resources),
 
-                            //oobe-footer information
                             learnMoreLink: [
                                 {
                                     hyperlinkText: resources.learnMoreLink,
@@ -123,16 +116,13 @@
                 },
 
                 ready: (element, options) => {
-                    //if cortana is not supported then abort
                     if (!this.isSupported) {
                         bridge.fireEvent(Events.done, CloudExperienceHost.AppResult.abort);
                         return;
                     }
 
-                    //first log all initial telemetry such as WoV checkbox value
                     logInitialCheckboxTelemetry(oobeCortana_vm);
 
-                    // Setup knockout customizations
                     let koHelpers = new KoHelpers();
                     koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                     window.KoHelpers = KoHelpers;
@@ -143,10 +133,7 @@
                         WinJS.Utilities.addClass(document.body, "pageLoaded");
                         bridge.fireEvent(constants.Events.visible, true);
 
-                        //these two must take place in this order!!!
-                        //set up asynchronous speech output and recognition
                         CloudExperienceHostAPI.Speech.SpeechRecognition.promptForCommandsAsync(mainSpeech, mainPageConstraints()).then(handleSpeechCommandMain);
-                        //set up focus for OOBE and narrator
                         KoHelpers.setFocusOnAutofocusElement();
                     });
                 },
@@ -194,7 +181,6 @@
 
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Cortana user clicked opt out");
 
-                    // Show the progress ring while committing async.
                     bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
                     setCortanaOptin(0).done(() => {
@@ -213,7 +199,6 @@
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Cortana user clicked opt in");
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "HeyCortanaCheckboxFinalValue", oobeCortana_vm.talkToCortanaCheckboxValue());
 
-                    // Show the progress ring while committing async.
                     bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
                     setCortanaOptin(1).then(setHeyCortana).done(function () {
@@ -226,7 +211,6 @@
             }
 
             function localizedStringsAsync() {
-                //this bridge invoke is needed because the CloudExperienceHost back end has resource access
                 return (bridge.invoke("CloudExperienceHost.StringResources.makeResourceObject", 'oobeCortana').then((resourcesString) => {
                     return JSON.parse(resourcesString);
                 }));
@@ -304,16 +288,12 @@
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "HeyCortanaCheckboxVisible", oobeCortana_vm.talkToCortanaCheckboxVisible);
             }
 
-            // Params
-            //  element: the html element to bind to from
-            //  voiceActivated: an object with member boolean voiceActivated (for named parameter)
             function showLearnMorePage(options = { voiceActivated: false }) {
                 if (!processingFlag()) {
                     processingFlag(true);
 
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "CortanaLearnMoreLink", options.voiceActivated ? "voice" : "click");
             
-                        //cancel TTS action
                     CloudExperienceHostAPI.Speech.SpeechSynthesis.stop();
                     CloudExperienceHostAPI.Speech.SpeechRecognition.stop();
             
@@ -333,7 +313,6 @@
             
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "CortanaBackToMainPageLink",  options.voiceActivated ? "voice" : "click");
             
-                    //cancel listen action
                     CloudExperienceHostAPI.Speech.SpeechRecognition.stop();
            
                     oobeCortana_vm.currentPanelIndex(0);

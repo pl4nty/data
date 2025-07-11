@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define(['lib/knockout',
+﻿define(['lib/knockout',
         'legacy/bridge',
         'legacy/events',
         'legacy/core',
@@ -19,14 +16,12 @@ define(['lib/knockout',
 
             this.onFooterKeyDown = this.onFooterKeyDown.bind(this);
 
-            // Check if oobe xml has a default region code, if not fall back to the default region for the app
             let defaultRegionCode = defaultregion;
             let dataLayerDefaultRegion = CloudExperienceHostAPI.OobeRegionManagerStaticsCore.tryGetDefaultRegionIso2LetterCode();
             if (dataLayerDefaultRegion.succeeded) {
                 defaultRegionCode = dataLayerDefaultRegion.value;
             }
 
-            // Move the default region to the top of the list and select it
             let defaultRegionIndex = this.items.findIndex((region) => (region.codeTwoLetter == defaultRegionCode));
             let defaultRegionObject = null;
             if (defaultRegionIndex > -1) {
@@ -76,7 +71,6 @@ define(['lib/knockout',
                 }
             ];
 
-            // Building region constraints
             this.regionConstraints = [];
             for (let i = 0; i < regions.length; i++) {
                 let regionConstraint = new Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint([legacy_uiHelpers.ReplaceHalfWidthCharsWithSpaces(regions[i].displayName)]);
@@ -84,11 +78,9 @@ define(['lib/knockout',
                 this.regionConstraints[i] = regionConstraint;
             }
 
-            // Building yes/no constraints
             this.yesNoConstraints = new Array(CloudExperienceHostAPI.Speech.SpeechRecognitionKnownCommands.yes, CloudExperienceHostAPI.Speech.SpeechRecognitionKnownCommands.no);
         }
 
-        // Specs: https://microsoft.sharepoint.com/teams/osg_threshold_specs/_layouts/15/WopiFrame2.aspx?sourcedoc=%7Bba4dd761-9345-443d-a4e2-bd1d55b273fa%7D&action=edit&wd=target%28%2F%2FRS2%2F1610%20Specs%2FInclusive%20OOBE%20Region%20and%20Keyboard%20Selection.one%7C1a2ed8e4-c5a3-4551-bc4a-fed33e5a501e%2FSpeech%20Input%20on%20list%20selection%20Pages%7C8b8d3428-c3b5-4f1f-9692-92687d7668a6%2F%29
         speak(stringToSpeak, question) {
             let constraint = null;
             switch (question) {
@@ -103,7 +95,6 @@ define(['lib/knockout',
             CloudExperienceHostAPI.Speech.SpeechRecognition.promptForCommandsAsync(stringToSpeak, constraint).done((result) => {
                 if (result == null) {
                     if ((constraint != null) && !this.processingFlag()) {
-                        // result can be null either if there is no input from user or the user speaks unknown voice commands until the timeout
                         this.speak(this.resourceStrings.FinalRegionVoiceOver, this.questionType.FINAL);
                     }
                 }
@@ -111,18 +102,14 @@ define(['lib/knockout',
                     switch (question) {
                         case this.questionType.YESNOINITIAL:
                         case this.questionType.YESNOCONFIRMREGION:
-                            // All responses requiring yes/no flow through this block, it can be either initial state where we try to confirm from the default region OR the confirm region state
-                            // where we try to confirm the region based on user i/p
                             if (result.constraint.tag === CloudExperienceHostAPI.Speech.SpeechRecognitionKnownCommands.yes.tag) {
                                 this.onYesClick();
                             }
                             else if (result.constraint.tag === CloudExperienceHostAPI.Speech.SpeechRecognitionKnownCommands.no.tag) {
                                 if (question === this.questionType.YESNOINITIAL) {
-                                    // If initial response was no, then we ask the user to speak the region.
                                     this.speak(this.resourceStrings.RegionToUseVoiceOver, this.questionType.OTHERCONSTRAINTS);
                                 }
                                 else {
-                                    // If this is not the initial response, then Cortana can't select the region for the user and asks the user to enter manually
                                     this.speak(this.resourceStrings.FinalRegionVoiceOver, this.questionType.FINAL);
                                 }
                             }
@@ -149,7 +136,6 @@ define(['lib/knockout',
                 uiHelpers.PortableDeviceHelpers.unsubscribeToDeviceInsertion(this.gestureManager, bridge, core);
 
                 try {
-                    // Show the progress ring while committing async.
                     bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
                     let regionManager = appObjectFactory.getObjectFromString("CloudExperienceHostAPI.OobeRegionManagerStaticsCore");
@@ -175,15 +161,6 @@ define(['lib/knockout',
             }
         }
 
-        // Due to the way oobe-listview is structured (designating a "proxy" to receive tab focus so it can internally manage focus programmatically
-        // AND making that proxy element be the container for the whole list, not just the view-port) it is not entirely compatible with WinJS XYFocus.
-        //
-        // Mainly, if focus is within the oobe-footer and we attempt an "up" or "down" navigation, XYFocus will essentially rule out the oobe-listview
-        // on the basis that in either direction, the bottom/top (respectively) of the oobe-listview are below/above the currently focused element's bounding rect.
-        // As a result, these get negative "scores" and are filtered out. Logically, it makes sense that when you press "up" the focus target should NOT be
-        // something that stretches below the currently focused element (and vice versa).
-        //
-        // So we need to be explicit about handling the transfer of focus from the oobe-footer to the oobe-listview when dealing with gamepad.
         onFooterKeyDown(_, e) {
             let handled = false;
 

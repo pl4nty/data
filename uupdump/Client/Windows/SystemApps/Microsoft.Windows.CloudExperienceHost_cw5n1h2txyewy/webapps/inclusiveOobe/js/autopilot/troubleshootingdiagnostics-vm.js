@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -20,9 +17,7 @@ define([
 
             this.resourceStrings = resourceStrings;
 
-            // Constants
 
-            // Initialize data-bound static values
             this.DIAGNOSTICS_PAGE_RENDERING_TEXT = this.resourceStrings["DiagnosticsPageRenderingText"];
             this.CONFIGURATION_TITLE = this.resourceStrings["DiagnosticsPageConfigurationTitle"];
             this.DEPLOYMENT_TITLE = this.resourceStrings["DiagnosticsPageDeploymentTitle"];
@@ -41,14 +36,11 @@ define([
             this.DETAILS = this.resourceStrings["DiagnosticsPageDetailsHeading"];
             this.LOG_EXPORT_SUCCEEDED = this.resourceStrings["DiagnosticsPageLogsExportSuccessText"];
 
-            // Comment these are status strings to use in composing aria labels for screen readers, note these 
-            // strings are being re-used from existing localized strings.
             this.STATUS_SUCCESS = this.resourceStrings["BootstrapPageComplete"]; // Complete
             this.STATUS_FAILURE = this.resourceStrings["BootstrapPageStatusFailed"]; // Error
             this.STATUS_IN_PROGRESS = this.resourceStrings["BootstrapPageStillWorking"]; // Still working on it
             this.STATUS_WARNING = this.resourceStrings["EnrollmentErrorFinishedTitle"]; // There was a problem
 
-            // Scenario constants
             this.DIAGNOSTICS_PREVIOUS_CXID_NAME = "DiagnosticsPreviousCXID";
             this.DIAGNOSTICS_LOGS_EXPORT_AREA_NAME = "DiagnosticsLogsExportArea";
             this.DIAGNOSTICS_LOGS_EXPORT_AREA_DEFAULT = "Autopilot;TPM";
@@ -56,13 +48,11 @@ define([
             this.E_DIAGNOSTIC_ANALYSIS_FRAMEWORK_GENERIC_ERROR = 0x81039025; // defined in AutopilotErrors.mc
             this.PAGE_UNIVERSAL_TIMEOUT_MILLISECONDS = 2 * 60 * 1000; // 2 minutes
 
-            // Button states
             this.BUTTON_SET_NONE = 0;
             this.BUTTON_SET_DEFAULT = 1;
             this.BUTTON_SET_LOGS_EXPORT = 2;
             this.BUTTON_SET_LOGS_EXPORT_FAILURE = 3;
 
-            // Variable data bound values 
             this.pageTitle = ko.observable(this.resourceStrings["DiagnosticsPageTitle"]);
             this.errorCode = ko.observable("");
             this.errorDescription = ko.observable("");
@@ -71,23 +61,18 @@ define([
 
             this.isLiteWhitePersonality = (targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite);
 
-            // Member variables
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities();
             this.sessionUtilities = new bootstrapSessionGeneralUtilities(true); // Argument doesn't matter since it's not used here.
             this.autopilotLogger = new ModernDeployment.Autopilot.Core.AutopilotLogging();
 
-            // [ADO Task 31408624] TODO: Use the IDL enums instead when they're checked in.
             this.diagnosticEvent = ko.observable(0);
             this.staticData = ko.observable(1);
             this.resourceEvent = ko.observable(2);
 
-            // Inclusive Blue page diagnostic API output variables.
             this.CONFIGURATION_INFO_TAB_INDEX = 0;
             this.DEPLOYMENT_INFO_TAB_INDEX = 1;
             this.APP_AND_POLICY_STATUS_TAB_INDEX = 2;
 
-            // By default, show the data rendering progress (i.e., marching ants) and hide all other
-            // sections of the page.
             this.shouldShowDataRenderingProgress = ko.observable(true);
             this.shouldShowDiagnosticData = ko.observable(false);
             this.shouldShowError = ko.observable(false);
@@ -97,12 +82,8 @@ define([
             this.logExportSucceeded = ko.observable(false);
             this.outputLogPath = ko.observable("");
 
-            // Primary view cached error state. To be used to re-render the previous error on the
-            // primary view when navigating back.
             this.cachedErrorState = null;
 
-            // All flags gating visibility of regions of the main content must be added to this
-            // array.
             this.regionVisibilityFlags = [
                 this.shouldShowDataRenderingProgress,
                 this.shouldShowDiagnosticData,
@@ -110,8 +91,6 @@ define([
                 this.shouldShowError
             ];
 
-            // The following observable arrays are loading in data from the Diagnostic Analysis
-            // Framework API to be rendered on the UX.
             this.configurationInfoTab = ko.observable();
             this.deploymentInfoByCategory = ko.observable();
             this.provisionedResourceData = ko.observable();
@@ -120,12 +99,9 @@ define([
             this.defaultLottieFile = "autopilotLottie.json";
             this.failureLottieFile = "errorLottie.json";
 
-            // Initialize end buttons.
 
-            // Initialize button visibility.
             this.buttonVisibility = ko.observable(this.BUTTON_SET_NONE);
 
-            // Define buttons
             this.closeButton = {
                 buttonText: this.resourceStrings["DiagnosticsPageCloseButton"],
                 buttonType: "button",
@@ -159,7 +135,6 @@ define([
                 }
             };
 
-            // This button is just retrying the export logs action.
             this.tryExportLogsAgainButton = {
                 buttonText: this.resourceStrings["DiagnosticsPageTryAgainButton"],
                 buttonType: "button",
@@ -170,7 +145,6 @@ define([
                 }
             }
 
-            // Map button states to button lists.
             const flexEndButtonSets = {};
 
             flexEndButtonSets[this.BUTTON_SET_NONE] = [];
@@ -189,7 +163,6 @@ define([
                 this.tryExportLogsAgainButton
             ];
 
-            // Determine which button set to display, based on which region is being shown on the main content.
             this.flexEndButtons = ko.pureComputed(() => {
                 return flexEndButtonSets[this.buttonVisibility()];
             });
@@ -215,24 +188,18 @@ define([
             let ariaLabel = "";
 
             if ('tabName' in object) {
-                // Tab Aria Label: TabName, Status details
                 ariaLabel += object.tabName;
                 ariaLabel += this.getStatusString(object.status);
                 ariaLabel += this.DETAILS;
             } else if ('categoryName' in object) {
-                // Category Aria Label: Collapsed: CategoryName
                 ariaLabel += object.categoryName;
 
                 if ('items' in object) {
-                    // Static data is read with the category:
-                    // CategoryName, Property1 Value1 Property2 Value2.....
                     for (let i = 0; i < object.items.length; i++) {
                         ariaLabel += " " + object.items[i].propertyName + " " + object.items[i].value;
                     }
                 }
             } else if ('eventName' in object) {
-                // Diagnostic Event Aria Label:
-                // EventName, Status, Start Time <time>, Finish Time <time>, Details <details>
                 ariaLabel += object.eventName;
                 ariaLabel += this.getStatusString(object.status);
 
@@ -240,7 +207,6 @@ define([
                 ariaLabel += " " + this.resourceStrings["DiagnosticsPageFinishTimeHeading"] + " " + object.finishTime;
                 ariaLabel += " " + this.resourceStrings["DiagnosticsPageDetailsHeading"] + " " + object.details;
             } else if ('resourceName' in object) {
-                // Resource Aria Label: ResourceName
                 ariaLabel = object.resourceName;
             }
 
@@ -255,10 +221,8 @@ define([
 
                 return object;
             } else if ((typeof object === "object") && !Array.isArray(object)) {
-                // Set visibility flag for all object types.
                 object.isVisible = ko.observable(false);
 
-                // Set accessibility settings.
                 object.ariaLabel = ko.observable(this.getAriaLabel(object));
 
                 for (let key in object) {
@@ -267,7 +231,6 @@ define([
 
                 return object;
             } else {
-                // Ignore simple types.
                 return object;
             }
         }
@@ -275,14 +238,12 @@ define([
         getApiOutputAsync() {
             this.commercialDiagnosticsUtilities.logInfoEventName("CommercialOOBE_Diagnostics_GetApiOutput_Started");
 
-            // Clear the cached error details.
             this.cachedErrorState = null;
 
             let diagnosticsManager = new ModernDeployment.Autopilot.Core.DiagnosticAnalysisManager();
             let hasTimedOut = false;
 
             let timerId = setTimeout(() => {
-                // If function does not finish by the specified timeout, log and display error.
                 hasTimedOut = true;
 
                 this.commercialDiagnosticsUtilities.logHresultEvent(
@@ -305,22 +266,17 @@ define([
                 return;
             }, this.PAGE_UNIVERSAL_TIMEOUT_MILLISECONDS);
 
-            // Bug 30192251: Call API to find scenario name-- default: "CommercialOOBE" for mock data
             diagnosticsManager.generateDiagnosticsAsync("CommercialOOBE").then(
                 (output) => {
-                    // If the execution has timed out, stop execution of this thread.
-                    // Else, stop timeout execution as API has returned successfully.
                     if (hasTimedOut) {
                         return;
                     }
                     clearTimeout(timerId);
 
                     try {
-                        // Retrieve JSON string from API.
                         let jsonDiagnosticData = JSON.parse(output.diagnosticResults[ModernDeployment.Autopilot.Core.DiagnosticResultIndices.filteredDiagnosticsDataUnlocalized]);
 
                         if (this.isLiteWhitePersonality) {
-                            // Make all isVisible properties observable so UI can react.
                             this.diagnosticDataTabs(this.setVisibilityStates(jsonDiagnosticData.$schema));
                         } else {
                             this.configurationInfoTab(jsonDiagnosticData.$schema[this.CONFIGURATION_INFO_TAB_INDEX]["categories"]);
@@ -415,17 +371,14 @@ define([
             bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", this.failureLottieFile);
 
             if (!this.isLiteWhitePersonality) {
-                // Update the error subheader.
                 let errorSubheader = this.commercialDiagnosticsUtilities.formatMessage(
                     subheader, 
                     this.commercialDiagnosticsUtilities.formatNumberAsHexString(code, 8));
                 this.logExportErrorSubheader(errorSubheader);
             }
 
-            // Toggle visibility of buttons.
             this.buttonVisibility(this.BUTTON_SET_LOGS_EXPORT_FAILURE);
             
-            // Toggle visibility of regions.
             this.shouldShowLogsExportSpinner(false);
             this.shouldShowLogsExportError(true);
         }
@@ -433,10 +386,8 @@ define([
         exportLogsButtonClick() {
             this.commercialDiagnosticsUtilities.logInfoEventName("CommercialOOBE_Diagnostics_LogsExport_Started");
 
-            // Reset visibility of buttons.
             this.buttonVisibility(this.BUTTON_SET_NONE);
 
-            // Reset visibility of regions.
             this.showOnlySpecificRegion(this.shouldShowLogsExportProgress);
             this.shouldShowLogsExportSpinner(true);
             this.shouldShowLogsExportError(false);
@@ -444,8 +395,6 @@ define([
             return this.commercialDiagnosticsUtilities.getExportLogsFolderPathAsync().then((folderPath) => {
                 return bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", this.DIAGNOSTICS_LOGS_EXPORT_AREA_NAME).then(
                     (logsAreaValue) => {
-                        // If the value wasn't found, it's likely that the page was launched via
-                        // hotkey. Fall back on the default area.
                         if (logsAreaValue === null || logsAreaValue === undefined) {
                             logsAreaValue = this.DIAGNOSTICS_LOGS_EXPORT_AREA_DEFAULT;
                         }
@@ -453,7 +402,6 @@ define([
                         let hasTimedOut = false;
 
                         let timerId = setTimeout(() => {
-                            // If function does not finish by the specified timeout, log and display error.
                             hasTimedOut = true;
 
                             this.commercialDiagnosticsUtilities.logHresultEvent(
@@ -482,13 +430,10 @@ define([
                                 return;
                             }
 
-                            // Success
                             clearTimeout(timerId);
 
-                            // Toggle visibility of buttons.
                             this.buttonVisibility(this.BUTTON_SET_LOGS_EXPORT);
 
-                            // Toggle visibility of regions.
                             this.shouldShowLogsExportSpinner(false);
 
                             this.commercialDiagnosticsUtilities.logInfoEventName("CommercialOOBE_Diagnostics_LogsExport_Succeeded");
@@ -544,15 +489,10 @@ define([
 
             this.logExportSucceeded(false);
 
-            // If the cache is not empty, there was an error before and the view should be restored.
-            // Else, restore the main report view.
             if (this.cachedErrorState !== null) {
                 this.restoreCachedState();
                 this.buttonVisibility(this.BUTTON_SET_DEFAULT);
 
-                // Clear the animation first so the animation restarts. This mainly affects the case
-                // where the UI is going from one error view to another. The animation should not
-                // remain static as it is a different error.
                 bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", "");
 
                 this.showOnlySpecificRegion(this.shouldShowError);
@@ -562,18 +502,15 @@ define([
         }
 
         showOnlySpecificRegion(region) {
-            // Reset page title.
             this.pageTitle(this.resourceStrings["DiagnosticsPageTitle"]);
 
             try {
-                // Display the correct lottie animation depending on the view.
                 if (region !== this.shouldShowError) {
                     bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", this.defaultLottieFile);
                 } else {
                     bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", this.failureLottieFile);
                 }
 
-                // Change button visibility depending on region.
                 if (region === this.shouldShowDiagnosticData) {
                     this.buttonVisibility(this.BUTTON_SET_DEFAULT);
                 }
@@ -596,10 +533,8 @@ define([
         }
 
         displayError(buttonVisibility, code, description, cacheErrorDetails, subheaderOverride) {
-            // Change the button visibility to match what the caller intends.
             this.buttonVisibility(buttonVisibility);
 
-            // If no override is defined, use the default.
             this.errorSubHeader((subheaderOverride === undefined || subheaderOverride === null) ? this.resourceStrings["DiagnosticsPageTryAgainFailureMessage"] : subheaderOverride);
 
             let errorCode = this.commercialDiagnosticsUtilities.formatMessage(
@@ -612,8 +547,6 @@ define([
 
             this.showOnlySpecificRegion(this.shouldShowError);
 
-            // Cache the error details by default unless the caller explicitly defines the cache
-            // flag as false.
             if ((cacheErrorDetails === undefined || cacheErrorDetails === null || cacheErrorDetails)) {
                 this.cachedErrorState = {};
                 this.cachedErrorState.errorCode = this.errorCode();
@@ -628,7 +561,6 @@ define([
                 this.errorDescription(this.cachedErrorState.errorDescription);
                 this.errorSubHeader(this.cachedErrorState.subheaderOverride)
             } else {
-                // Unexpected cache error.
                 this.displayError(
                     this.BUTTON_SET_DEFAULT,
                     this.commercialDiagnosticsUtilities.unexpectedErrorCode,
@@ -639,7 +571,6 @@ define([
         onShowDetailsButtonClick(data) {
             this.isVisible(!this.isVisible());
 
-            // Update Aria Label
             this.ariaLabel(getAriaLabel(object));
         }
     }

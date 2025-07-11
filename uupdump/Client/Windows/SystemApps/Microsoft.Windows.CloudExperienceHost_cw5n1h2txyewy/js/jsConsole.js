@@ -1,5 +1,3 @@
-﻿
-
 
 
 window.DebugJS = window.DebugJS || {};
@@ -12,7 +10,7 @@ function DebugJSConsole() {
     this._createUI();
     this._catchErrors();
     this._loadCommandHistory();
-    this._eval = eval; 
+    this._eval = eval; // calling eval indirectly (through a reference) will cause it to execute in the global scope
 
     var that = this;
     function interceptKey(ev) {
@@ -24,24 +22,20 @@ function DebugJSConsole() {
         return false;
     }
     window.addEventListener("keydown", function (ev) {
-        
         if (ev.keyCode === 74 && ev.shiftKey && ev.ctrlKey) {
             ev.preventDefault();
             that._toggleLayerVisibility();
         } else if (interceptKey(ev)) {
-            
             var controlKeys = [ "ArrowUp", "Up", "ArrowDown", "Down", "PageUp", "PageDown", "Home", "End" ];
             if (controlKeys.indexOf(ev.key) === -1 &&
                 !ev.ctrlKey && !ev.altKey) {
                 that._textInputElement.focus();
             }
 
-            
             if (ev.key === "Esc" || ev.key === "Escape") {
                 that._toggleLayerVisibility();
             }
 
-            
             if (document.activeElement === that._textInputElement) {
                 that._onTextInput(ev);
             }
@@ -50,7 +44,6 @@ function DebugJSConsole() {
     window.addEventListener("keyup", interceptKey, true);
     window.addEventListener("keypress", interceptKey, true);
 
-    
     this._textInputFlipElement.addEventListener("click", function () {
         if (that._isSingleLineMode()) {
             this.innerText = "<";
@@ -66,16 +59,13 @@ function DebugJSConsole() {
 DebugJSConsole.prototype._onTextInput = function (ev) {
     this._textInputElement.scrollIntoView();
     if (ev.key === "Enter" && (ev.ctrlKey || this._isSingleLineMode())) {
-        
         ev.preventDefault();
         var command = this._textInputElement.value.trim();
         this._textInputElement.value = "";
         if (command !== "") {
 
-            
             this._appendText("", "> " + toSingleLine(command));
 
-            
             var index = -1;
             this._commandHistory.forEach(function (previousCommand, i) {
                 if (toSingleLine(command) === toSingleLine(previousCommand)) {
@@ -93,7 +83,6 @@ DebugJSConsole.prototype._onTextInput = function (ev) {
             this._commandHistoryPosition = -1;
             this._saveCommandHistory();
 
-            
             this._eval(
                 "with (DebugJS.console._getCommands()) {\n" +
                 (this._safety ? "    try {\n" : "") +
@@ -124,7 +113,6 @@ DebugJSConsole.prototype._onTextInput = function (ev) {
     }
 };
 function nub (sequence) {
-    
     var members = {};
     sequence.forEach(function (item) { this[item] = null; }, members);
     return Object.keys(members);
@@ -135,12 +123,10 @@ DebugJSConsole.prototype._tabComplete = function () {
         preCursorText = fullText.slice(0, cursorPosition),
         postCursorText = fullText.slice(cursorPosition);
 
-    
     var match = preCursorText.match(/[^=\s\(\){}\+\-\*\/,;&|!"']+$/);
     if (match !== null && match.length === 1 && match[0] !== ".") {
         var candidate = match[0].trim();
 
-        
         var lastDot = candidate.lastIndexOf(".");
         var isGlobal = false;
         var realPart = "";
@@ -155,7 +141,6 @@ DebugJSConsole.prototype._tabComplete = function () {
             queryPart = candidate.substr(lastDot + 1);
         }
 
-        
         var realValue = this._eval(
             "var __tabCompleteResult = null;" +
             "with (DebugJS.console._getCommands()) {" +
@@ -166,7 +151,6 @@ DebugJSConsole.prototype._tabComplete = function () {
             "__tabCompleteResult;"
         );
 
-        
         var matchingFields = {};
         for (var field in realValue) {
             if (field.substr(0, queryPart.length).toLowerCase() === queryPart.toLowerCase()) {
@@ -178,10 +162,8 @@ DebugJSConsole.prototype._tabComplete = function () {
         var newQueryPart = null;
 
         if (matchingFieldsArray.length === 1) {
-            
             newQueryPart = matchingFieldsArray[0];
         } else if (matchingFieldsArray.length > 1) {
-            
             matchingFields.toString = function () { return matchingFieldsArray.length.toString() + " matches"; };
             var commonPrefix = matchingFieldsArray.reduce(function (prev, next) {
                 var i = 0;
@@ -196,7 +178,6 @@ DebugJSConsole.prototype._tabComplete = function () {
             if (differentQuery) {
                 this._appendTreeView(new DataTreeView(candidate + "*", realValue, matchingFields, ["toString"]), true);
             } else if (commonPrefix.length === queryPart.length) {
-                
                 var trimmedFields = nub(matchingFieldsArray.map(function (s) { return s.slice(0, queryPart.length); }));
                 newQueryPart = trimmedFields[(trimmedFields.indexOf(queryPart) + 1) % trimmedFields.length];
             }
@@ -219,7 +200,6 @@ DebugJSConsole.prototype._tabComplete = function () {
     }
 };
 DebugJSConsole.prototype._createUI = function () {
-    
     this._styleElement = document.createElement("style");
     this._styleElement.id = "debugConsoleStyles";
     this._styleElement.type = "text/css";
@@ -244,18 +224,15 @@ DebugJSConsole.prototype._createUI = function () {
     this._textInputFlipElement = this._rootElement.querySelector("#debugConsoleInputFlip");
 };
 DebugJSConsole.prototype.writeHTML = function (html) {
-    
     var div = document.createElement("div");
     div.innerHTML = html;
     this._appendOutput(div);
 };
 DebugJSConsole.outputBufferLimit = 1000;
 DebugJSConsole.prototype._appendOutput = function (div, parentElement) {
-    
     if (parentElement !== this._outputElement && parentElement !== undefined) {
         parentElement.appendChild(div);
     } else {
-        
         this._pendingOutput.push(div);
         if (this._pendingOutput.length > DebugJSConsole.outputBufferLimit) {
             this._pendingOutput.shift();
@@ -303,39 +280,30 @@ DebugJSConsole.prototype._applyPendingOutput = function () {
     }
 };
 DebugJSConsole.prototype._clearOutput = function () {
-    
     this._outputElement.innerHTML = "";
 };
 DebugJSConsole.prototype._appendText = function (className, text, parentElement) {
-    
     this._appendOutput(createElement("div", className, text), parentElement);
 };
 DebugJSConsole.prototype._appendData = function (label, data, shouldExpand) {
-    
     this._appendTreeView(new DataTreeView(label, data, data, []), shouldExpand);
 };
 DebugJSConsole.prototype._appendHTML = function (node, shouldExpand) {
-    
     this._appendTreeView(new HtmlTreeView(node), shouldExpand);
 };
 DebugJSConsole.prototype._appendCSS = function (element) {
-    
     this._appendTreeView(new CssTraceTreeView(element), true);
 };
 DebugJSConsole.prototype._appendSheet = function (sheet, shouldExpand) {
-    
     this._appendTreeView(new CssTreeView(sheet), shouldExpand);
 };
 DebugJSConsole.prototype._appendRule = function (rule, shouldExpand) {
-    
     this._appendTreeView(new CssRuleTreeView(rule, null), shouldExpand);
 };
 DebugJSConsole.prototype._appendStyle = function (style, shouldExpand) {
-    
     this._appendTreeView(new CssStyleTreeView(style, null), shouldExpand);
 };
 DebugJSConsole.prototype._appendTreeView = function (treeView, shouldExpand, parentElement) {
-    
     var canExpand = treeView.length > 0;
     if (treeView.isExpanded === undefined) {
         treeView.isExpanded = canExpand && shouldExpand && treeView.length <= 20;
@@ -390,7 +358,6 @@ DebugJSConsole.prototype._appendTreeView = function (treeView, shouldExpand, par
     this._appendOutput(div, parentElement);
 };
 DebugJSConsole.prototype._expandTreeView = function (treeView, detailsElement) {
-    
     if (treeView.children === undefined) {
         treeView.children = [];
         for (var i = 0, len = treeView.length; i < len; i++) {
@@ -415,11 +382,9 @@ TreeView.prototype.children = [];
 TreeView.prototype.createChild = function (index) { return null; };
 
 function DataTreeView(label, data, proto, excluded) {
-    
     this.label = label;
     this._data = this.register = data;
 
-    
     this.value = valueToString(proto);
     if (this.value) {
         var maxLength = 1000;
@@ -434,11 +399,9 @@ function DataTreeView(label, data, proto, excluded) {
     }
 
     this._fields = getProperties(proto, true, excluded).sort(function (a, b) {
-        
         if ((typeof data[a] === "function") !== (typeof data[b] === "function")) {
             return (typeof data[a] === "function") ? 1 : -1;
         }
-        
         var aAsNumber = Number(a);
         var bAsNumber = Number(b);
         var aIsNumber = aAsNumber !== null && !isNaN(aAsNumber);
@@ -449,11 +412,9 @@ function DataTreeView(label, data, proto, excluded) {
         if (aIsNumber !== bIsNumber) {
             return aIsNumber ? 1 : -1;
         }
-        
         if ((a[0] === "_") !== (b[0] === "_")) {
             return (a[0] === "_") ? 1 : -1;
         }
-        
         return a.localeCompare(b);
     });
 
@@ -510,7 +471,6 @@ function HtmlTreeView(node) {
     this.length = this._displayable.length;
 
     if (node.nodeType === Node.TEXT_NODE) {
-        
         this.className = "debugConsoleHtmlText";
         var textNode = node;
         this.value = toSingleLine(textNode.textContent.trim());
@@ -523,7 +483,6 @@ function HtmlTreeView(node) {
         createElement("span", "debugConsoleHtmlBracket", "<", this.html);
         createElement("span", "debugConsolePropertyName", htmlNode.nodeName.toLowerCase(), this.html);
 
-        
         if (htmlNode.id) {
             this._appendHtmlAttribute("id", htmlNode.id);
         }
@@ -549,7 +508,6 @@ HtmlTreeView.prototype.createChild = function (index) {
     }
 };
 HtmlTreeView.prototype._appendHtmlAttribute = function (attrName, attrValue) {
-    
     createElement("span", null, " ", this.html);
     createElement("span", "debugConsoleHtmlAttrName", attrName, this.html);
     createElement("span", null, "=\"", this.html);
@@ -558,11 +516,9 @@ HtmlTreeView.prototype._appendHtmlAttribute = function (attrName, attrValue) {
 };
 
 function CssTraceTreeView(element) {
-    
     this._element = element;
     this._matches = [];
 
-    
     if (element.style.length > 0) {
         this._matches.push(new CssStyleTreeView(element.style, "<inline-styles>", element));
     }
@@ -592,7 +548,6 @@ CssTraceTreeView.prototype.createChild = function (index) {
 };
 
 function CssTreeView(sheet) {
-    
     if (sheet.href) {
         this.value = sheet.href;
     } else if (sheet.id) {
@@ -610,7 +565,6 @@ CssTreeView.prototype.createChild = function (index) {
 };
 
 function CssRuleTreeView(rule, match, prefix) {
-    
     if (rule.type === rule.STYLE_RULE) {
         var styleTree = this._styleTree = new CssStyleTreeView(rule.style, rule.selectorText, match);
         this.value = (prefix || "") + styleTree.value;
@@ -651,7 +605,6 @@ CssRuleTreeView.prototype.createChild = function (index) {
 };
 
 function CssStyleTreeView(style, value, match) {
-    
     this._style = this.register = style;
     this._match = match;
     this.label = "style";
@@ -681,12 +634,10 @@ CssStyleTreeView.prototype._insertChild = function (parts) {
 CssStyleTreeView.prototype.createChild = function (index) {
     return this._children[index].getLeaf();
 };
-
 CssStyleTreeView.prototype.cssIgnoreName = {};
 CssStyleTreeView.prototype.cssIgnoreName["-ms-text-size-adjust"] = true;
 
 function CssPropertyTreeView(style, base, remaining, match) {
-    
 
     this._style = style;
     this._match = match;
@@ -702,14 +653,12 @@ function CssPropertyTreeView(style, base, remaining, match) {
 
     var indexer = this.cssFixedName[this.label];
     if (!indexer) {
-        
         indexer = this.label.replace(/^-ms/, "ms");
         indexer = indexer.replace(/-\w/g, function (m) { return m[1].toUpperCase(); });
     }
 
     this.value = this._style[indexer];
     if (this.value === undefined) {
-        
         indexer = indexer.replace(/^ms\w/, function (m) { return m[2].toLowerCase(); });
         this.value = this._style[indexer];
     }
@@ -717,7 +666,6 @@ function CssPropertyTreeView(style, base, remaining, match) {
     if (this.value !== undefined) {
         this.register = this.value;
         if (this._match && this._match.currentStyle && !areCssValuesEqual(this.value, this._match.currentStyle[indexer])) {
-            
             this.html = createElement("span", "debugConsoleCssOverriden", null);
             createElement("span", "debugConsoleOutputText", this.value, this.html);
         }
@@ -762,7 +710,6 @@ CssPropertyTreeView.prototype.cssFixedName = {
 };
 
 function ElementEvents(callback, context) {
-    
 
     var domEvents = {}, body = document.body, selection = body, border = 2,
         root = createElement("div", "debugConsoleRoot", null, body),
@@ -812,7 +759,6 @@ function ElementEvents(callback, context) {
     };
     domEvents.keydown = function (ev) {
         if (ev.keyCode === 192 && ev.shiftKey) {
-            
             restoreConsole();
         }
         if (ev.key === "Esc" || ev.key === "Escape") {
@@ -827,11 +773,9 @@ function ElementEvents(callback, context) {
         document.addEventListener(eventName, domEvents[eventName], true);
     }
 
-    
     positionOverlay();
 }
 DebugJSConsole.prototype.stashHtml = function (element) {
-    
     this._rootElement.style.display = "";
     if (element) {
         this._toggleRegister(element);
@@ -844,7 +788,6 @@ DebugJSConsole.prototype._selectHtml = function () {
     new ElementEvents(this.stashHtml, this);
 };
 DebugJSConsole.prototype.log = function (level, text) {
-    
     var secondsSinceStart = (Date.now() - this._startTime) / 1000;
     var messageStyle;
     switch (level) {
@@ -861,11 +804,9 @@ DebugJSConsole.prototype.log = function (level, text) {
     this._appendText(messageStyle, "Log@" + secondsSinceStart.toFixed(3) + ": " + text);
 };
 DebugJSConsole.prototype._isVisible = function () {
-    
     return (this._rootElement.parentNode !== null);
 };
 DebugJSConsole.prototype._toggleLayerVisibility = function () {
-    
     if (!this._isVisible()) {
         if (this._styleElement.parentNode === null) {
             document.getElementsByTagName("head")[0].appendChild(this._styleElement);
@@ -874,14 +815,12 @@ DebugJSConsole.prototype._toggleLayerVisibility = function () {
         document.body.appendChild(this._rootElement);
         this._textInputElement.focus();
     } else {
-        
         document.body.removeChild(this._rootElement);
         clearTimeout(this._pendingOutputTimer);
         this._pendingOutputTimer = null;
     }
 };
 DebugJSConsole.prototype._catchErrors = function () {
-    
     var that = this;
     window.onerror = function (msg, file, line) {
         that._appendText("debugConsoleExceptionText", "Unhandled exception: " + msg + "\n  file: " + file + "\n  line: " + line);
@@ -889,15 +828,12 @@ DebugJSConsole.prototype._catchErrors = function () {
     };
 };
 DebugJSConsole.prototype._loadCommandHistory = function () {
-    
     this._commandHistory = DebugJS.getCookie("consoleCommandHistory", []);
 };
 DebugJSConsole.prototype._saveCommandHistory = function () {
-    
     DebugJS.setCookie("consoleCommandHistory", this._commandHistory);
 };
 DebugJSConsole.prototype._setCommand = function (value) {
-    
     if (this._isSingleLineMode()) {
         value = toSingleLine(value);
     } else if (this._commandHistoryPosition >= 0 && this._commandHistoryPosition < this._commandHistory.length &&
@@ -907,22 +843,17 @@ DebugJSConsole.prototype._setCommand = function (value) {
     this._textInputElement.value = value;
 };
 DebugJSConsole.prototype._isSingleLineMode = function () {
-    
     return (this._textInputElement.className.split(" ").indexOf("debugConsoleSingleLine") !== -1);
 };
 DebugJSConsole.prototype._setSafety = function (enableSafety) {
-    
     this._safety = enableSafety;
     this._appendText("debugConsoleOutputText", "Safety " + (enableSafety ? "enabled" : "disabled"));
 };
 DebugJSConsole.prototype._stash = function (value) {
-    
     this._registers[0] = value;
 };
 DebugJSConsole.prototype._toggleRegister = function (value) {
-    
 
-    
     for (var i = 1, len = this._registers.length; i < len; i++) {
         if (this._registers[i] === value) {
             delete this._registers[i];
@@ -931,7 +862,6 @@ DebugJSConsole.prototype._toggleRegister = function (value) {
         }
     }
 
-    
     for (i = 1, len = this._registers.length; i < len; i++) {
         if (this._registers[i] === undefined) {
             break;
@@ -941,7 +871,6 @@ DebugJSConsole.prototype._toggleRegister = function (value) {
     this._updateRegisterElements(value, "$" + i.toString());
 };
 DebugJSConsole.prototype._getRegisterName = function (value) {
-    
     var registerName = "";
     if (value !== undefined) {
         var registerIndex = this._registers.indexOf(value, 1);
@@ -952,7 +881,6 @@ DebugJSConsole.prototype._getRegisterName = function (value) {
     return registerName;
 };
 DebugJSConsole.prototype._updateRegisterElements = function (value, registerName) {
-    
     var registerElements = document.querySelectorAll(".debugConsoleRegister");
     for (var i = 0, len = registerElements.length; i < len; i++) {
         registerElements[i].onRegisterChange(value, registerName);
@@ -972,7 +900,6 @@ DebugJSConsole.prototype._loadScriptFile = function (path) {
     document.getElementsByTagName("head")[0].appendChild(scriptElement);
 };
 DebugJSConsole.prototype._getCommands = function () {
-    
     return new ConsoleCommands(this, this._registers);
 };
 DebugJSConsole.prototype._startTime = Date.now();
@@ -987,7 +914,6 @@ DebugJSConsole.prototype._commandHistoryPosition = -1;
 DebugJSConsole.prototype._safety = true;
 
 function ConsoleCommands(debugConsole, registers) {
-    
 
     this._console = debugConsole;
     for (var i = 0, len = registers.length; i < len; i++) {
@@ -1058,7 +984,6 @@ ConsoleCommands.prototype.hook = function (source, eventName) {
     }
 };
 ConsoleCommands.prototype.promise = function (p) {
-    
     var that = this;
     p.then(
         function () { that.dump({ promise: p, args: arguments }, "Promise complete"); },
@@ -1105,7 +1030,6 @@ ConsoleCommands.prototype.stash = function (value) {
 };
 
 function getProperties(data, own, excluded) {
-    
     var props = [];
     if (data) {
 
@@ -1127,7 +1051,7 @@ function getProperties(data, own, excluded) {
                 try {
                     prototypeProperties = Object.getOwnPropertyNames(proto);
                 } catch (ex) {
-                    break; 
+                    break; // XSS on iframes can prevent enumeration
                 }
                 for (var i = 0, len = prototypeProperties.length; i < len; i++) {
                     var propertyName = prototypeProperties[i];
@@ -1145,7 +1069,6 @@ function getProperties(data, own, excluded) {
 }
 
 function isEmpty(data, excluded) {
-    
     var empty = getProperties(data, false, excluded).length === 0;
     if (typeof data === "function") {
         empty = empty && isEmpty(data.prototype, []);
@@ -1155,11 +1078,9 @@ function isEmpty(data, excluded) {
 
 var constructorCache = [];
 function getConstructorName(constructorFunction) {
-    
 
     var constructorName;
 
-    
     var cached = false;
     var len = constructorCache.length;
     for (var i = 0; i < len; ++i) {
@@ -1171,14 +1092,12 @@ function getConstructorName(constructorFunction) {
     }
 
     if (!cached) {
-        
         constructorName = DebugJS.scanTypes(function (testConstructorFunction, testConstructorName) {
             if (testConstructorFunction === constructorFunction) {
                 return testConstructorName;
             }
         });
 
-        
         if (!constructorName) {
             var code = constructorFunction.toString();
             if (code.substr(0, 9) === "function ") {
@@ -1199,12 +1118,10 @@ function getConstructorName(constructorFunction) {
 }
 
 function toSingleLine(value) {
-    
     return value.replace(/(\/\/[^\r\n]*)|(\/\*(.|[\r\n])*\*\/)/g, "$2").replace(/\s*[\r\n]\s*/g, " ");
 }
 
 function valueToString(data, isRecursive) {
-    
     var string = "{...}";
     try {
         switch (typeof data) {
@@ -1240,7 +1157,6 @@ function valueToString(data, isRecursive) {
                     }
                 }
 
-                
                 if (data.name) {
                     string = string + " " + data.name;
                 }
@@ -1266,11 +1182,18 @@ function valueToString(data, isRecursive) {
 function instanceOf(obj, proto) {
     return obj instanceof proto;
 
-    
+    /* This version no longer works and I cannot remember what madness inspired it.  We'll just use the default version
+    of instanceof, which will probably fail on iframed content.
+
+    var toProtoName = {}.toString;
+    var protoString = toProtoName.call(proto);
+    while (obj && toProtoName.call(obj) !== protoString && toProtoName.call(obj.constructor) !== protoString) {
+        obj = Object.getPrototypeOf(obj);
+    }
+    return obj;*/
 }
 
 function isDisplayableHtmlNode(node) {
-    
     switch (node.nodeType) {
     case Node.TEXT_NODE:
     case Node.COMMENT_NODE:
@@ -1281,12 +1204,10 @@ function isDisplayableHtmlNode(node) {
 }
 
 function createElement(nodeType, className, innerText, parentElement) {
-    
     var element = document.createElement(nodeType);
     if (className) {
         element.className = className;
     }
-    
     if (innerText) {
         element.innerText = innerText;
     }
@@ -1297,25 +1218,20 @@ function createElement(nodeType, className, innerText, parentElement) {
 }
 
 function areCssValuesEqual(valueA, valueB) {
-    
 
-    
     if ((valueA + "").trim() === (valueB + "").trim()) {
         return true;
     }
 
-    
     var aAsNumber = Number(valueA);
     var bAsNumber = Number(valueB);
     return aAsNumber !== null && !isNaN(aAsNumber) && aAsNumber === bAsNumber;
 }
 
 DebugJS.getCookie = function (valueName, defaultValue) {
-    
     var result = defaultValue;
     try {
         document.cookie.split(";").forEach(function (cookie) {
-            
             var split = cookie.split("=");
             var cookieName = split[0].trim();
             if (cookieName === valueName) {
@@ -1326,23 +1242,21 @@ DebugJS.getCookie = function (valueName, defaultValue) {
     return result;
 };
 DebugJS.setCookie = function (valueName, value) {
-    
     var date = new Date();
     date.setFullYear(date.getFullYear() + 1);
     document.cookie = valueName + "=" + escape(JSON.stringify(value)) + "; expires=" + date.toUTCString();
 };
 DebugJS.scanTypes = function (fn, namespace, namespaceName, alreadyChecked, depth) {
-    
     DebugJS.scanningTypes++;
     try {
         namespace = namespace || window;
         namespaceName = namespaceName || "";
-        alreadyChecked = alreadyChecked || [ window.Windows, window.Microsoft ]; 
+        alreadyChecked = alreadyChecked || [ window.Windows, window.Microsoft ]; // don't bother searching these namespaces
         depth = depth || 0;
 
         if (depth < 10 && alreadyChecked.length < 1000) {
             for (var field in namespace) {
-                if ((field[0] >= "A" && field[0] <= "Z") || field[0] === "$") { 
+                if ((field[0] >= "A" && field[0] <= "Z") || field[0] === "$") { // namespaces and constructors start with a capital letter
                     try {
                         var objectToCheck = namespace[field];
                         var isNamespace = typeof objectToCheck === "object" && objectToCheck !== null && objectToCheck.constructor === Object;
@@ -1354,11 +1268,9 @@ DebugJS.scanTypes = function (fn, namespace, namespaceName, alreadyChecked, dept
                             var result;
 
                             if (isFunction) {
-                                
                                 result = fn(objectToCheck, objectName, namespace, field);
                             }
                             if (!result) {
-                                
                                 result = DebugJS.scanTypes(fn, objectToCheck, objectName, alreadyChecked, depth + 1);
                             }
 
@@ -1367,7 +1279,6 @@ DebugJS.scanTypes = function (fn, namespace, namespaceName, alreadyChecked, dept
                             }
                         }
                     } catch (ex) {
-                        
                     }
                 }
             }

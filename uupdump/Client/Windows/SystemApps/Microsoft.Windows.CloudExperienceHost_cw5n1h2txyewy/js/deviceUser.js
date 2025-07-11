@@ -1,8 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
-"use strict";
+﻿"use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
     var DeviceUser;
@@ -12,7 +8,6 @@ var CloudExperienceHost;
                 let provider = new Windows.Security.Cryptography.DataProtection.DataProtectionProvider("local=user");
                 let binary = Windows.Security.Cryptography.CryptographicBuffer.convertStringToBinary(password, Windows.Security.Cryptography.BinaryStringEncoding.utf8);
 
-                // Chaining promises to first encrypt the password and then pass it to the API to create the account
                 provider.protectAsync(binary).then(function (protectedData) {
                     let deviceUserManager = new Microsoft.ResourceAccountManager.ResourceAccountSetup();
                     return deviceUserManager.createResourceAccountWithAADAccountAsync(username, protectedData);

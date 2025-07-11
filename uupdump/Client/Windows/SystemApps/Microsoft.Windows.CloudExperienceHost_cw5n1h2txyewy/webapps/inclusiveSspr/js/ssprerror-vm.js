@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 define(['lib/knockout', 'legacy/bridge'], (ko, bridge) => {
     const okTag = "Ok";
@@ -47,13 +44,11 @@ define(['lib/knockout', 'legacy/bridge'], (ko, bridge) => {
         onCancel() {
             if (!this.processingFlag()) {
                 this.processingFlag(true);
-                // Error page is shown, exit CXH with cancel appresult.
                 bridge.invoke("CloudExperienceHost.cancel");
             }   
         }
 
         startVoiceOver() {
-            // Setup voiceover and speech recognition
             try {
                 CloudExperienceHostAPI.Speech.SpeechRecognition.stop();
                 let constraints = this.createSpeechRecognitionConstraints();

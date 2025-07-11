@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -10,12 +6,6 @@ var CloudExperienceHost;
     TargetEnvironment.PROD = "CloudExperienceHost.Environment.PROD";
     TargetEnvironment.INT = "CloudExperienceHost.Environment.INT";
     CloudExperienceHost.TargetEnvironment = TargetEnvironment;
-    // TargetPlatform class creates friendly names for a subset of DEVICEFAMILYINFOENUM_* 
-    // that can be returned by Environment getPlatform.
-    // New additions to this enum can be made if/when we need a friendly name to reference in 
-    // CXH SystemApp code, but the assigned string value must match the programmatic format
-    // "CloudExperienceHost.Platform.[decimal number]" generated in Environment.ts
-    // from the nturtl.w enum values.
     class TargetPlatform {
     }
     TargetPlatform.DESKTOP = "CloudExperienceHost.Platform.DESKTOP";
@@ -24,13 +14,9 @@ var CloudExperienceHost;
     TargetPlatform.SERVER = "CloudExperienceHost.Platform.SERVER";
     TargetPlatform.HOLOGRAPHIC = "CloudExperienceHost.Platform.HOLOGRAPHIC";
     TargetPlatform.SURFACEHUB = "CloudExperienceHost.Platform.SURFACEHUB";
-    // Below this point (non-legacy TargetPlatform values), if friendly names are required for CXH app code
-    // they should be defined in alignment with the "CloudExperienceHost.Platform."+(nturtl enum value)
-    // per CloudExperienceHost::Environment::getPlatform()
     TargetPlatform.WINDOWS8828080 = "CloudExperienceHost.Platform.14";
     TargetPlatform.WINDOWSCORE = "CloudExperienceHost.Platform.16";
     CloudExperienceHost.TargetPlatform = TargetPlatform;
-    // TargetDevice class represents the DEVICEFAMILYDEVICEFORM_* enum values from nturtl.h
     class TargetDevice {
     }
     TargetDevice.UNKNOWN = 0x00000000; // DEVICEFAMILYDEVICEFORM_UNKNOWN
@@ -54,8 +40,7 @@ var CloudExperienceHost;
         FrameViewModelUpdateType[FrameViewModelUpdateType["GraphicAnimation"] = 9] = "GraphicAnimation";
         FrameViewModelUpdateType[FrameViewModelUpdateType["UpdateTransitionMessage"] = 10] = "UpdateTransitionMessage";
         FrameViewModelUpdateType[FrameViewModelUpdateType["SetDisplayModeFullScreen"] = 11] = "SetDisplayModeFullScreen";
-        FrameViewModelUpdateType[FrameViewModelUpdateType["SetBackgroundImage"] = 12] = "SetBackgroundImage";
-        FrameViewModelUpdateType[FrameViewModelUpdateType["GamepadLegendB"] = 13] = "GamepadLegendB";
+        FrameViewModelUpdateType[FrameViewModelUpdateType["GamepadLegendB"] = 12] = "GamepadLegendB";
     })(CloudExperienceHost.FrameViewModelUpdateType || (CloudExperienceHost.FrameViewModelUpdateType = {}));
     var FrameViewModelUpdateType = CloudExperienceHost.FrameViewModelUpdateType;
     (function (NavigationEvent) {
@@ -115,7 +100,6 @@ var CloudExperienceHost;
         }
     }
     CloudExperienceHost.ShowEaseOfAccessArgs = ShowEaseOfAccessArgs;
-    // Get textContent and accessKey if '&' exists right before character in localString
     class ResourceManager {
         static GetContentAndAccesskey(localString) {
             if (typeof localString !== 'undefined') {
@@ -175,7 +159,6 @@ var CloudExperienceHost;
             json = JSON.stringify(errWrapper);
         }
         catch (ex) {
-            // This is a safeguard against any non-stringifiable errors (e.g. unexpected WinRT objects)
             json = JSON.stringify({ message: "GetJsonFromError failed to stringify error object", originalErrorNumber: error && error.number });
         }
         return json;
@@ -215,8 +198,6 @@ var CloudExperienceHost;
         var surfaceHubCssList = [uiDarkCss, surfaceHubCss];
         var hololensCssList = [uiDarkCss, hololensCss];
         var liteOobeCssList = [uiLightCss, oobeLightCss];
-        // Lookup type 2: Determined by the Scenario Personality value in json definition
-        // Scenarios tagged with Personality directly use corresponding css list
         switch (context.personality) {
             case CloudExperienceHost.TargetPersonality.InclusiveBlue:
                 return inclusiveDesktopOOBECssList;
@@ -225,8 +206,6 @@ var CloudExperienceHost;
             default:
                 break;
         }
-        // Lookup type 3: Use legacy platform/scenario lookup behavior for untagged cases
-        // New Scenarios should usually not be added here since tagged Personality at scenario authorship is expected to provide the correct csslist lookup
         var cssLookupTable = new Object();
         cssLookupTable[TargetPlatform.DESKTOP] = {
             "DEFAULT": desktopSettingsCssList,
@@ -323,18 +302,12 @@ var CloudExperienceHost;
         var platform = context.platform;
         var host = context.host.toUpperCase();
         var cssList = null;
-        // There is no longer a catch-all bucket value in TargetPlatform enumeration
-        // Define a fallback csslist lookup for non-targetable platforms.
         if (!cssLookupTable.hasOwnProperty(platform)) {
             platform = "OtherPlatform";
         }
-        // For uri "ms-cxh://frx/inclusive", host = frx and experienceName = frxinclusive.
         cssList = cssLookupTable[platform][context.experienceName];
         if (!cssList) {
             cssList = cssLookupTable[platform][host];
-            // If this is Xbox, figure out if we should be using the light or dark theme.  If our call to
-            // defaultSystemTheme goes off the rails or returns something unexpected, fall through to the
-            // DEFAULT css list, which happens to be dark.
             if (!cssList && (platform == TargetPlatform.XBOX)) {
                 try {
                     var theme = Windows.Xbox.System.Internal.Personalization.SystemPersonalization.defaultSystemTheme;
@@ -356,7 +329,6 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.GetCssList = GetCssList;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-// Expose css functions to be loaded by requirejs
 if ((typeof define === "function") && define.amd) {
     define(function () {
         return {
@@ -371,4 +343,3 @@ if ((typeof define === "function") && define.amd) {
         };
     });
 }
-//# sourceMappingURL=core.js.map

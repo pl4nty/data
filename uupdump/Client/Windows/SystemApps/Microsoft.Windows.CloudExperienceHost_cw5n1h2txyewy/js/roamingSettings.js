@@ -1,5 +1,3 @@
-﻿
-
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -16,9 +14,7 @@ var CloudExperienceHost;
         function _findSetting(settingId) {
             return _ensureSyncSettingsProvider().findSetting(settingId);
         }
-        
         function localizedStrings() {
-            
             var roamingSettingsResources = {};
             var keyList = [
                 'Title',
@@ -33,27 +29,22 @@ var CloudExperienceHost;
             return JSON.stringify(roamingSettingsResources);
         }
         RoamingSettings.localizedStrings = localizedStrings;
-        
         function getSettingDescription(settingId) {
             return _findSetting(settingId).description;
         }
         RoamingSettings.getSettingDescription = getSettingDescription;
-        
         function getSettingValue(settingId) {
             return _findSetting(settingId).getValue("Value");
         }
         RoamingSettings.getSettingValue = getSettingValue;
-        
         function setSettingValue(settingId, value) {
             return _findSetting(settingId).setValue("Value", value);
         }
         RoamingSettings.setSettingValue = setSettingValue;
-        
         function getSettingProperty(settingId, propertyId) {
             return _findSetting(settingId).getProperty(propertyId);
         }
         RoamingSettings.getSettingProperty = getSettingProperty;
-        
         function getSettingIsEnabled(settingId) {
             return _findSetting(settingId).isEnabled;
         }

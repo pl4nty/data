@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['legacy/appViewManager'], (appViewManager) => {
     class DefaultFrameViewModel {
         constructor() {
@@ -29,7 +26,6 @@ define(['legacy/appViewManager'], (appViewManager) => {
             if (!this._webViewCtrl) {
                 let webViewCtrl = document.createElement('x-ms-webview');
 
-                // Disable mouse mode for all CXH webview content.
                 if (CloudExperienceHost.Environment.getPlatform() === CloudExperienceHost.TargetPlatform.XBOX) {
                     webViewCtrl.addEventListener("MSWebViewDOMContentLoaded", function () {
                         webViewCtrl.invokeScriptAsync("eval", "navigator.gamepadInputEmulation = \"keyboard\";").start();
@@ -41,7 +37,6 @@ define(['legacy/appViewManager'], (appViewManager) => {
                 webViewCtrl.setAttribute("aria-hidden", "true");
 
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("CustomDefaultFrameSizing")) {
-                    // Add or override with custom styling to webview if requested by scenario
                     let frameMargin = CloudExperienceHost.getNavMesh ? CloudExperienceHost.getNavMesh().getFrameStyleMargin() : null;
                     if (frameMargin != null) {
                         webViewCtrl.style.margin = frameMargin;
@@ -74,7 +69,6 @@ define(['legacy/appViewManager'], (appViewManager) => {
         }
 
         getChromeFooterOffset() {
-            // The default frame doesn't have a chrome footer, so return 0,0
             return { x: 0, y: 0 };
         }
 
@@ -96,9 +90,6 @@ define(['legacy/appViewManager'], (appViewManager) => {
                     }
                     progressElement.style.display = displayStyle;
                     WinJS.UI.Animation.crossFade(progressElement, view).done(() => {
-                        // We should serialize the hide/show transitions to avoid an earlier hide
-                        // of the progress element stomping on a later show request, but since we don't,
-                        // make sure we at least end up in the final desired state when the animation ends.
                         progressElement.style.display = displayStyle;
                         progressText.focus();
 
@@ -117,7 +108,6 @@ define(['legacy/appViewManager'], (appViewManager) => {
                     if (this._webViewCtrl) {
                         this._webViewCtrl.removeAttribute("aria-hidden");
 
-                        // If there is no valid focus element, put the focus on the web view control
                         if (!document.activeElement || (document.activeElement == document.body)) {
                             this._webViewCtrl.focus();
                         }
@@ -134,9 +124,6 @@ define(['legacy/appViewManager'], (appViewManager) => {
                     }, errorDispatch);
                     break;
                 case CloudExperienceHost.FrameViewModelUpdateType.Dimmed:
-                    // Dimming of frame not needed, as there's no chrome
-                    // However, if we receive a Dimmed update, progress timers should be cleared to prevent
-                    // the progress text from grabbing Narrator focus.
                     if (this._progressTextTimerID) {
                         clearTimeout(this._progressTextTimerID);
                         this._progressTextTimerID = null;
@@ -145,7 +132,6 @@ define(['legacy/appViewManager'], (appViewManager) => {
                     completeDispatch();
                     break;
                 case CloudExperienceHost.FrameViewModelUpdateType.Undimmed:
-                    // Undimming of frame not needed, as there's no chrome
                     completeDispatch();
                     break;
             }

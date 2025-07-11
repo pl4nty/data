@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 "use strict";
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, bridge, constants, core) => {
     class OemRegistrationViewModel {
@@ -93,7 +90,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         }
 
         saveInfoAsync() {
-            // Must be sure to unpack all observables before serializing
             let customerInfoFieldUnwrapped = {
                 label: this.customerInfoField.label,
                 value: this.customerInfoField.value(),
@@ -114,7 +110,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     field.defaultValue = ko.unwrap(field.defaultValue);
 
                     if (key == "region") {
-                        // Region values are an object with codeTwoLetter and displayName properties.
                         field.value = field.value();
                         if (field.value && field.value.codeTwoLetter) {
                             field.value = field.value.codeTwoLetter;
@@ -128,8 +123,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                             field.defaultValue = "";
                         }
                     } else if (key == "phoneNumber") {
-                        // Phone number values are an object with countryCode and number properties
-                        // countryCode values are objects with displayName and rawCode properties
                         field.value.countryCode = field.value.countryCode();
                         field.value.number = field.value.number();
                         if (field.value && field.value.countryCode && field.value.countryCode.rawCode && field.value.countryCode.rawCode.length > 0 && field.value.number && field.value.number.length > 0) {
@@ -147,8 +140,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                         field.value = field.value();
                     }
 
-                    // Don't add fields with null/undefined values (e.g. if the user doesn't select a region)
-                    // as these break serialization in the broker's save implementation.
                     if (!field.value) {
                         field.value = "";
                     }
@@ -173,7 +164,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             if (!this.processingFlag()) {
                 this.processingFlag(true);
 
-                // Show the progress ring while committing async.
                 bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
                 var emptyObj = {};
@@ -200,14 +190,12 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             if (!this.processingFlag()) {
                 this.processingFlag(true);
 
-                // Show the progress ring while committing async.
                 bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
                 this.saveInfoAsync().done(() => {
                     bridge.fireEvent(constants.Events.done, constants.AppResult.success);
                 }, (error) => {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "saveOEMRegistrationInfoFailure", core.GetJsonFromError(error));
-                    // Mimicking old OEM page behavior of not blocking OOBE if saving the OEM data fails. This is the same as if the user clicked skip button, if it's not hidden.
                     bridge.fireEvent(constants.Events.done, constants.AppResult.cancel);
                 });
             }
@@ -232,7 +220,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                     frameDoc.write(result.fileContent);
                     frameDoc.close();
 
-                    // Avoid reading "pane" for this
                     frameDoc.body.setAttribute("role", "presentation");
 
                     flyoutControl.onaftershow = () => {
@@ -302,7 +289,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         }
 
         getCountryCodeSelectOptions() {
-            // Add all phone number country codes associated with a supported region
             let countryCodeSelectOptions = [];
             for (let i = 0; i < this.regions.length; i++) {
                 let countryCodeSelectEntry = this.getCountryCodeSelectEntryForRegion(this.regions[i].codeTwoLetter);
@@ -311,7 +297,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 }
             }
 
-            // Sort by displayName and prepend the select placeholder option before returning
             countryCodeSelectOptions.sort((a,b) => {
                 if (a.displayName < b.displayName) {
                     return -1;

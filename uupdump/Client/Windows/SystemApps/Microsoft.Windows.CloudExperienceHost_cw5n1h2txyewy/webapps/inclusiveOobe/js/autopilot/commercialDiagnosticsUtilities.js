@@ -1,11 +1,7 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 define(['legacy/bridge'], (bridge) => {
     class commercialDiagnosticsUtilities {
         constructor(sessionUtilities) {
-            // Error Codes
             this.unexpectedErrorCode                = 0x8000FFFF; // E_UNEXPECTED
             this.notSupportedErrorCode              = 0x80004021; // CO_E_NOT_SUPPORTED
             this.parameterNotFoundErrorCode         = 0x80020004; // DISP_E_PARAMNOTFOUND
@@ -28,7 +24,6 @@ define(['legacy/bridge'], (bridge) => {
             bridge.invoke("CloudExperienceHost.AutoPilot.internalLogEvent", eventName, null, eventMessage, eventMetadata);
         }
 
-        // This is the Commercial OOBE Info-level logging function
         logInfoEvent(eventName, eventMessage) {
             this.logInfoEventWithMetadata(eventName, eventMessage, null);
         }
@@ -38,7 +33,6 @@ define(['legacy/bridge'], (bridge) => {
         }
 
         logErrorEvent(eventName, eventMessage, errorCode) {
-            // Use generic error code E_UNEXPECTED for logging errors
             bridge.invoke("CloudExperienceHost.AutoPilot.internalLogEvent", eventName, errorCode, eventMessage, null);
         }
 
@@ -86,7 +80,6 @@ define(['legacy/bridge'], (bridge) => {
                 }));
         }
 
-        // Prefixes hex "0x" to the output number.
         formatNumberAsHexString(numberToConvert, maxHexCharacters) {
             let stringToReturn = "";
 
@@ -108,10 +101,7 @@ define(['legacy/bridge'], (bridge) => {
             });
         }
 
-        ////////////////////
-        // APIs logging for troubleshooting models (TSMs)
 
-        // Private methods
         async _logTroubleshootingModelCoreAsync(
             stateType,
             processName,
@@ -144,7 +134,6 @@ define(['legacy/bridge'], (bridge) => {
             }
         }
 
-        // Log troubleshooting model event for process start
         async logTsmProcessStartAsync(processName, stateName) {
             if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging")) {
                 let fullyQualifiedStateName = `${this._createFullyQualifiedStateName(processName, stateName, null)}_Start`;
@@ -162,7 +151,6 @@ define(['legacy/bridge'], (bridge) => {
             }
         }
 
-        // Log troubleshooting model event for process end in success
         async logTsmProcessEndSuccessAsync(processName, stateName, eventMessage) {
             if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging")) {
                 let fullyQualifiedStateName = `${this._createFullyQualifiedStateName(processName, stateName, null)}_End_Success`;
@@ -181,7 +169,6 @@ define(['legacy/bridge'], (bridge) => {
             }
         }
 
-        // Log troubleshooting model event for process end in failure
         async logTsmProcessEndErrorAsync(processName, stateName, extraStateNameDetails, eventMessage, exception) {
             if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging")) {
                 let fullyQualifiedStateName = `${this._createFullyQualifiedStateName(processName, stateName, extraStateNameDetails)}_End_Error`;
@@ -207,7 +194,6 @@ define(['legacy/bridge'], (bridge) => {
             }
         }
 
-        // Legacy APIs for logging troubleshooting model events
         async logTroubleshootingModelProcessStartEventAsync(processName, stateName, eventMessage) {
             await this._logTroubleshootingModelCoreAsync(
                 this.TROUBLESHOOTING_MODEL_STATE_TYPE_START,

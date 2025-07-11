@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/appObjectFactory'], (ko, bridge, constants, appObjectFactory) => {
     class AutopilotActivationViewModel {
@@ -15,7 +12,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/appObjectFacto
 
             this.shouldShowDesktopLiteView = ko.observable(targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite);
 
-            // Queue an async trigger to acquire the profile now that we have a new network.  This may be a no-op if we already have a profile.
             this.populateZTPPolicyCache();
 
             this.profileAvailableTimeout = WinJS.Promise.timeout(180000/*3 minutes */).then(() => {
@@ -23,7 +19,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/appObjectFacto
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Autopilot_ActivationPage_RetrievingAutopilotProfileTimeout");
                 this.activationText(resourceStrings.ActivationErrorText);
 
-                // Wait for 5 seconds after showing the error message, then navigate back to Wireless page
                 WinJS.Promise.timeout(5000 /*5 second timeout*/).then(
                     () => {
                         this.connectionProfile.tryDeleteAsync().done(
@@ -45,8 +40,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/appObjectFacto
         populateZTPPolicyCache() {
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Autopilot_ActivationPage_populateZTPPolicyCacheStarted");
             let startTime = performance.now();
-            // This API will return immediately if a profile already exists or is not applicable on this SKU.  It is also re-entrant so multiple calls
-            // are coordinated through the service and shouldn't be a problem.
             let populateAutoPilotPoliciesPromise = EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.retrieveSettingsAsync().then(
                 () => {
                     let details = { timeElapsed: performance.now() - startTime };

@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -9,7 +5,6 @@ var CloudExperienceHost;
     (function (Policy) {
         function isErrorClassNotReg(e) {
             if (e.hasOwnProperty("number") && ((e.number >>> 0) === 0x80040154)) {
-                // REGDB_E_CLASSNOTREG
                 return true;
             }
             return false;
@@ -20,7 +15,6 @@ var CloudExperienceHost;
             }
             catch (e) {
                 if (isErrorClassNotReg(e)) {
-                    // Something wasn't registered, so return the caller's specified default value.
                     return WinJS.Promise.as(() => {
                         return defaultValue;
                     });
@@ -57,4 +51,3 @@ if ((typeof define === "function") && define.amd) {
         };
     });
 }
-//# sourceMappingURL=policy.js.map

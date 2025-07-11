@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -41,37 +37,29 @@ var CloudExperienceHost;
         function downloadUserFileAsync(userFileType, userFileUri, userFileRequestHeaders, localSavedFileName, timeoutInSecs) {
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeRestoreDataLayer")) {
                 if ((userFileUri != null) && (userFileUri.trim() != "")) {
-                    // Make sure that the URI gets logged without accidental PII in it.
                     CloudExperienceHost.Telemetry.logEvent(`downloadUserFileAsync_${userFileType}`, CloudExperienceHost.UriHelper.RemovePIIFromUri(userFileUri));
-                    // We'll save the image with the name specified by the caller.
                     if ((localSavedFileName == null) || (localSavedFileName.trim() == "")) {
                         CloudExperienceHost.Telemetry.logEvent(`downloadUserFileAsync_${userFileType}_error_InvalidLocalSavedFileName`);
                         throw "InvalidLocalSavedFileName";
                     }
-                    // The downloaded file will be saved to LocalState in a predefined directory.
                     const restoreFolderName = "cloudrestore";
                     const fileFolderName = userFileType.toLowerCase();
                     let localFileUri = "ms-appdata:///local/" + restoreFolderName + "/" + fileFolderName + "/" + localSavedFileName;
                     CloudExperienceHost.Telemetry.logEvent(`downloadUserFileAsync_${userFileType}_FileDownloadStarted`);
                     try {
-                        // Initialize default client and headers
                         let httpClient = new Windows.Web.Http.HttpClient();
                         let requestHeaders = httpClient.defaultRequestHeaders;
                         let fileUri = new Windows.Foundation.Uri(userFileUri);
-                        // Headers should include the authorization token to access the file.
                         if (userFileRequestHeaders) {
                             for (const key in userFileRequestHeaders) {
                                 if (!requestHeaders.tryAppendWithoutValidation(key, userFileRequestHeaders[key])) {
-                                    // We won't throw an error if this fails, but we'll fail the download later and catch the error there.
                                     CloudExperienceHost.Telemetry.logEvent(`downloadUserFileAsync_${userFileType}_error_HeaderAppendFailure`, key);
                                 }
                             }
                         }
-                        // Include a timeout for the operation
                         let fileDownloadComplete = false;
                         let timedOut = false;
                         let timeoutPromise = WinJS.Promise.timeout(timeoutInSecs * 1000 /* to milliseconds */).then(() => { timedOut = true; return null; });
-                        // Download the file from the provided URI.
                         let userFile;
                         let downloadPromise = Windows.Storage.ApplicationData.current.localFolder.createFolderAsync(restoreFolderName, Windows.Storage.CreationCollisionOption.openIfExists)
                             .then((cloudRestoreFolder) => {
@@ -130,10 +118,6 @@ var CloudExperienceHost;
                 throw "ApiNonexistentOnClient";
             }
         }
-        // Note that the below wallpaper and lock screen methods are handling assets in a very similar way,
-        // however we are intentionally keeping the entry points separate at this time. Since we anticipate subtle
-        // behavior divergence at this layer between the two scenarios, keeping the entry points independent helps
-        // mitigate the risk even if the implementation is mostly common.
         function downloadUserWallpaperAsync(userWallpaperUri, userWallpaperHeaders, localWallpaperFileName, timeoutInSecs = 90) {
             return downloadUserFileAsync("Wallpaper", userWallpaperUri, userWallpaperHeaders, localWallpaperFileName, timeoutInSecs);
         }
@@ -280,4 +264,3 @@ var CloudExperienceHost;
         })(OobeAadCloudBackupRestore = BackupRestore.OobeAadCloudBackupRestore || (BackupRestore.OobeAadCloudBackupRestore = {}));
     })(BackupRestore = CloudExperienceHost.BackupRestore || (CloudExperienceHost.BackupRestore = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=backuprestore.js.map

@@ -1,12 +1,8 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 (() => {
     WinJS.UI.Pages.define("/webapps/inclusiveOobe/view/oobelanguage-main.html", {
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Load css per scenario
             let loadCssPromise = requireAsync(['legacy/uiHelpers', 'legacy/bridge']).then((result) => {
                 return result.legacy_uiHelpers.LoadCssPromise(document.head, "", result.legacy_bridge);
             });
@@ -15,7 +11,6 @@
                 return result.legacy_uiHelpers.LangAndDirPromise(document.documentElement, result.legacy_bridge);
             });
 
-            // Load resource strings
             let getLocalizedStringsPromise = requireAsync(['legacy/bridge']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.StringResources.makeResourceObject", "oobeLanguage");
             }).then((result) => {
@@ -38,13 +33,11 @@
         ready: (element, options) => {
             require(['lib/knockout', 'corejs/knockouthelpers', 'jsCommon/oobe-gesture-manager', 'legacy/bridge', 'legacy/events', 'oobelanguage-vm', 'lib/knockout-winjs', 'corejs/xy-transfer-wrapper-down'], (ko, KoHelpers, gestureManager, bridge, constants, LanguageViewModel) => {
 
-                // Setup knockout customizations
                 koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                 window.KoHelpers = KoHelpers;
 
                 let vm = new LanguageViewModel(this.resourceStrings, gestureManager, this.targetPersonality);
-                // Apply bindings and show the page
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                     WinJS.Utilities.addClass(document.body, "pageLoaded");

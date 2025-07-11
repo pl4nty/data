@@ -1,5 +1,3 @@
-﻿
-
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -33,7 +31,7 @@ var CloudExperienceHost;
                 labelElement.htmlFor = id;
                 labelElement.id = id + 'Label';
                 labelElement.textContent = textContent;
-                labelElement.setAttribute('aria-hidden', 'true'); 
+                labelElement.setAttribute('aria-hidden', 'true'); // http://osgvsowi/7212058 Hide the label element from UIA instead of wrapping the label around the control, which affects UI layout
                 return labelElement;
             };
             UICreator.prototype._createTextInputElement = function (id, placeHolder, value) {
@@ -54,7 +52,6 @@ var CloudExperienceHost;
                 emailInputElement.placeholder = placeHolder;
                 emailInputElement.value = value;
                 emailInputElement.classList.add('win-textbox');
-                
                 emailInputElement.addEventListener("blur", function () {
                     var eAddress = emailInputElement.value;
                     if (eAddress.length > 0) {
@@ -91,7 +88,6 @@ var CloudExperienceHost;
                 selectElement.classList.add('win-dropdown');
                 this.selectedOptionValue = option;
                 this._addDefaultAttribute(selectElement, option);
-                
                 var optionTag = document.createElement('option');
                 optionTag.value = placeholderOptionValue;
                 optionTag.innerText = placeholderOptionText;
@@ -123,7 +119,6 @@ var CloudExperienceHost;
                 wrappperDiv.appendChild(inputElement);
                 return wrappperDiv;
             };
-            
             UICreator.prototype._getFieldClass = function (fieldTypeName) {
                 switch (fieldTypeName) {
                     case FIELDTYPE.text:
@@ -137,13 +132,11 @@ var CloudExperienceHost;
                         break;
                 }
             };
-            
             UICreator.prototype._getPageTop = function (el) {
                 var rect = el.getBoundingClientRect();
                 var docEl = document.documentElement;
                 return rect.top + (window.pageYOffset || docEl.scrollTop || 0);
             };
-            
             UICreator.prototype._emailError = function (emailObject, shouldShow, errorMessage) {
                 var errorDiv = emailObject.nextSibling;
                 if (shouldShow) {
@@ -185,7 +178,6 @@ var CloudExperienceHost;
                 }
                 return optionElement;
             };
-            
             UICreator.prototype._addChildElement = function (parentElement, fields) {
                 for (var i = 0; fields[i]; i++) {
                     var field = fields[i];
@@ -265,7 +257,7 @@ var CloudExperienceHost;
         WinJS.UI.Pages.define("/views/OEMRegistration.html", {
             init: function (element, options) {
                 uiCreatorObject = new UICreator(pageContainer, flyoutIframe, flyout);
-                var pagePromise = new WinJS.Promise(function (completeDispatch, errorDispatch ) {
+                var pagePromise = new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch */) {
                     bridge.invoke("CloudExperienceHost.OEMRegistrationInfo.getShouldShowOEMRegistration").then(function (showOEM) {
                         shouldShowOEM = showOEM;
                         if (shouldShowOEM) {
@@ -304,21 +296,17 @@ var CloudExperienceHost;
                     uiCreatorObject.createUI(oemMetadata, oemInfo, linkInfo);
                     WinJS.Binding.processAll(null, oemMetadata).done(function () {
                         try {
-                            
                             uiHelpers.SetElementVisibility(skipButton, !oemMetadata.hideSkip);
-                            
                             var checkAmpersandFor = document.getElementsByTagName('button');
                             for (var i = 0; i < checkAmpersandFor.length; i++) {
                                 var result = CloudExperienceHost.ResourceManager.GetContentAndAccesskey(checkAmpersandFor[i].textContent);
                                 checkAmpersandFor[i].textContent = result.content;
                                 checkAmpersandFor[i].accessKey = result.accessKey;
                             }
-                            
                             if (uiCreatorObject.createdInputs.length != 0) {
                                 uiCreatorObject.createdInputs[0].focus();
                             }
                             else {
-                                
                                 nextButton.focus();
                             }
                             completeDispatch();
@@ -335,12 +323,10 @@ var CloudExperienceHost;
                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.abort);
             },
             ready: function (element, options) {
-                
                 nextButton.addEventListener("click", function (event) {
                     event.preventDefault();
                     onNext();
                 });
-                
                 function onNext() {
                     _setProgressState(true);
                     var resultPageInfo = new Array();
@@ -357,7 +343,6 @@ var CloudExperienceHost;
                                 telemetryInfo.push(getTelemetryInfo(element, element.value));
                                 break;
                             case FIELDTYPE.select:
-                                
                                 resultElement = new OEMRegistrationInfo.TextElement(element.id, element.options[0].text, element.options[element.selectedIndex].value);
                                 telemetryInfo.push(getTelemetryInfo(element, element.options[element.selectedIndex].value));
                                 break;
@@ -371,23 +356,19 @@ var CloudExperienceHost;
                         }
                         resultPageInfo.push(resultElement);
                     }, this);
-                    
                     pageHelper.saveOEMRegistrationInfo(resultPageInfo).then(function () {
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "saveOEMRegistrationInfoSuccess", JSON.stringify(telemetryInfo));
                         bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                     }, function (e) {
                         _setProgressState(false);
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "saveOEMRegistrationInfoFailure", JSON.stringify({ errorNumber: e && e.number.toString(16), errorStack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                        
                         bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.cancel);
                     });
                 }
-                
                 skipButton.addEventListener("click", function (event) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "SkipUserOobeOEMRegistrationPage");
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.cancel);
                 });
-                
                 function getTelemetryInfo(element, value) {
                     var defaultValue = element.getAttribute('defaultValue');
                     if (element.getAttribute("type") === FIELDTYPE.checkbox) {
@@ -411,22 +392,18 @@ var CloudExperienceHost;
                         return fieldTelemetry;
                     }
                 }
-                
                 flyout.addEventListener("afterhide", function () {
                     var iframeDocument = flyoutIframe.contentWindow.document;
                     iframeDocument.open('text/html', 'replace');
                     iframeDocument.write('');
                     iframeDocument.close();
                 });
-                
                 function _setProgressState(waiting) {
                     nextButton.disabled = waiting;
                     uiHelpers.SetElementVisibility(progressRing, waiting);
                 }
-                
                 uiHelpers.RegisterEaseOfAccess(easeOfAccess, bridge);
                 uiHelpers.RegisterInputSwitcher(inputSwitcher, bridge);
-                
                 if (shouldShowOEM) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "ShowUserOobeOEMRegistrationPage");
                     bridge.fireEvent(CloudExperienceHost.Events.visible, true);
@@ -435,7 +412,7 @@ var CloudExperienceHost;
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "DoNotShowUserOobeOEMRegistrationPage");
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.abort);
                 }
-            } 
+            } // ready end
         });
     })(OEMRegistrationInfo = CloudExperienceHost.OEMRegistrationInfo || (CloudExperienceHost.OEMRegistrationInfo = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));

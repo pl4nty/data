@@ -1,4 +1,3 @@
-﻿
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -48,7 +47,6 @@ var CloudExperienceHost;
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", failureName,
                 JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack, correlationVector: correlationVector }));
             bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                
                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
             });
         }
@@ -67,7 +65,6 @@ var CloudExperienceHost;
         }
 
         function _enroll() {
-            
             var UPNPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_upn");
             var serverURLPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_serverUrl");
             var authPolicyPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_authPolicy");
@@ -80,10 +77,8 @@ var CloudExperienceHost;
                 UPN: UPNPromise, serverURL: serverURLPromise, authPolicy: authPolicyPromise, enrollmentFlags: enrollmentFlagsPromise, policyServiceFullURL: policyServiceFullURLPromise,
                 enrollmentServiceFullURL: enrollmentServiceFullURLPromise, password: passwordPromise, domain: domainPromise
             }).done(function (result) {
-                
                 bridge.invoke("CloudExperienceHost.UnifiedEnroll.doEnrollment", result.UPN, result.serverURL, password.value.trim(), result.authPolicy, domainName.value.trim(), result.policyServiceFullURL, result.enrollmentServiceFullURL, correlationVector, result.enrollmentFlags, "").done(function (result) {
-                    
-                    if (MENROLL_E_INVALIDSSLCERT === result.enrollmentErrorCode) { 
+                    if (MENROLL_E_INVALIDSSLCERT === result.enrollmentErrorCode) { // HRESULT MENROLL_E_INVALIDSSLCERT
                         _invalidCertWarning();
                     } else {
                         var enrollmentResultPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", result.enrollmentErrorCode);
@@ -101,7 +96,6 @@ var CloudExperienceHost;
                                     }, function (e) {
                                         _logFailureEventMam("UnifiedEnrollment_AddMdm_Enrollment_Complete_Mam_To_Mdm_Upgrade_Failed", e);
                                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                                            
                                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                         });
                                     });
@@ -111,7 +105,6 @@ var CloudExperienceHost;
                                     }, function (e) {
                                         _logFailureEventMam("UnifiedEnrollment_AddMdm_Enrollment_Complete_Mam_To_Mdm_Upgrade_Failed", e);
                                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                                            
                                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                         });
                                     });
@@ -123,7 +116,6 @@ var CloudExperienceHost;
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Enrollment_Adding_Enrollment_OnPrem_Results_Failed",
                                 JSON.stringify({ error: e, correlationVector: correlationVector }));
                             bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                                
                                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                             });
                         });
@@ -132,18 +124,15 @@ var CloudExperienceHost;
                     _logFailureEvent("UnifiedEnrollment_AddMdm_OnPremAuth_Enrollment_Failed", e);
                 });
             }, function (e) {
-                
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Enrollment_Retrieving_OnPremAuth_Values_Failed",
                     JSON.stringify({ error: e, correlationVector: correlationVector }));
                 bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                    
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                 });
             });
         }
 
         function _enrollIgnoreCertWarning() {
-            
             var UPNPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_upn");
             var serverURLPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_serverUrl");
             var authPolicyPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_authPolicy");
@@ -156,7 +145,6 @@ var CloudExperienceHost;
                 UPN: UPNPromise, serverURL: serverURLPromise, authPolicy: authPolicyPromise, enrollmentFlags: enrollmentFlagsPromise, policyServiceFullURL: policyServiceFullURLPromise,
                 enrollmentServiceFullURL: enrollmentServiceFullURLPromise, password: passwordPromise, domain: domainPromise
             }).done(function (result) {
-                
                 bridge.invoke("CloudExperienceHost.UnifiedEnroll.doEnrollment", result.UPN, result.serverURL, result.password, result.authPolicy, result.domain, result.policyServiceFullURL, result.enrollmentServiceFullURL, correlationVector, result.enrollmentFlags + 16, "").done(function (result) {
                     var enrollmentResultPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", result.enrollmentErrorCode);
                     var enrollmentErrorStringPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_trace_id", result.enrollmentErrorString);
@@ -173,7 +161,6 @@ var CloudExperienceHost;
                                 }, function (e) {
                                     _logFailureEventMam("UnifiedEnrollment_AddMdm_Enrollment_Complete_Mam_To_Mdm_Upgrade_Failed", e);
                                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                                        
                                         bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                     });
                                 });
@@ -183,7 +170,6 @@ var CloudExperienceHost;
                                 }, function (e) {
                                     _logFailureEventMam("UnifiedEnrollment_AddMdm_Enrollment_Complete_Mam_To_Mdm_Upgrade_Failed", e);
                                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                                        
                                         bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                     });
                                 });
@@ -195,7 +181,6 @@ var CloudExperienceHost;
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Enrollment_Adding_Enrollment_OnPrem_Results_Failed",
                             JSON.stringify({ error: e, correlationVector: correlationVector }));
                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                            
                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                         });
                     });
@@ -203,11 +188,9 @@ var CloudExperienceHost;
                     _logFailureEvent("UnifiedEnrollment_AddMdm_OnPremAuth_Enrollment_Failed", e);
                 });
             }, function (e) {
-                
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Enrollment_Retrieving_OnPremAuth_Values_Failed",
                     JSON.stringify({ error: e }));
                 bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                    
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                 });
             });
@@ -239,7 +222,6 @@ var CloudExperienceHost;
                 return WinJS.Promise.join({ languagePromise: languagePromise, dirPromise: dirPromise, stringPromise: stringPromise, cssPromise: cssPromise, correlationVectorPromise: correlationVectorPromise });
             },
             ready: function (element, options) {
-                
                 var setContentFor = [Title, LeadText, NextButton];
                 setContentFor.forEach(function (content) {
                     content.textContent = unifiedEnrollmentResources[content.id];
@@ -249,12 +231,10 @@ var CloudExperienceHost;
                 domainName.setAttribute('placeholder', unifiedEnrollmentResources['DomainUsernamePlaceholder']);
                 password.setAttribute('placeholder', unifiedEnrollmentResources['PasswordPlaceholder']);
 
-                
                 NextButton.addEventListener("click", function (event) {
                     event.preventDefault();
                     this._onNext.apply(this);
                 }.bind(this));
-                
                 var checkAmpersandFor = [NextButton];
                 checkAmpersandFor.forEach(function (eachElement) {
                     var result = CloudExperienceHost.ResourceManager.GetContentAndAccesskey(unifiedEnrollmentResources[eachElement.id]);
@@ -277,7 +257,6 @@ var CloudExperienceHost;
                     _handleMamUpgradeScenario(false);
                 });
             },
-            
             _setProgressState: function () {
                 progressText.textContent = unifiedEnrollmentResources["EnrollerLeadText"];
                 onPremDiv.style.display = 'none';

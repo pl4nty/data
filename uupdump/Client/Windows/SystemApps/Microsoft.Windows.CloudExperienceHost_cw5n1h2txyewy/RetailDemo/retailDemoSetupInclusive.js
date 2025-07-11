@@ -1,4 +1,3 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
 (function () {
     "use strict";
 
@@ -33,7 +32,6 @@
         ready: function (element, options) {
             let processingFlag = false;
 
-            // Load string resources in HTML elements
             document.title = resources.rdxTitle;
             rdamTitle.textContent = resources.rdamTitle;
             rdamText.textContent = resources.rdamText;
@@ -62,8 +60,6 @@
                 extraConfigButton.className += " alt-button button_secondary";
             }
 
-            // Verify that the RAC is alphanumeric.
-            // If so, proceed to retrieve the list of SKUs from RDAM.
             racInput.addEventListener("change", function () {
                 if (racCode != racInput.value) {
                     racCode = racInput.value;
@@ -81,12 +77,10 @@
                     skuInput.disabled = true;
                     storeIdInput.disabled = true;
 
-                    // Verify that the RAC is alphanumeric.
                     verifyRacAndUpdateUI();
                 }
             });
 
-            // Set RAC/SKU, create RetailAdmin if necessary, fire done
             nextButton.addEventListener("click", function (eventInfo) {
                 eventInfo.preventDefault();
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBERACValidation")) {
@@ -99,7 +93,6 @@
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "RetailInfoSetterFailure", JSON.stringify({ number: error.number.toString(16), description: error.description }));
                             switch (navFlow) {
                                 case "FRXRDXMOB":
-                                    // Proceed to rdxMsa
                                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
                                     break;
                                 case "FRXINCLUSIVE":
@@ -107,7 +100,6 @@
                                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                     break;
                                 case "RDXRACSKUINCLUSIVE":
-                                    // Allow the user to retry setting RAC/SKU as they can always close the app if things are really stuck
                                     processingFlag = false;
                                     bridge.fireEvent(CloudExperienceHost.Events.visible, true);
                                     break;
@@ -127,7 +119,6 @@
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "RetailInfoSetterFailure", JSON.stringify({ number: error.number.toString(16), description: error.description }));
                             switch (navFlow) {
                                 case "RDXFRXMOB":
-                                    // Proceed to rdxMsa
                                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
                                     break;
                                 case "FRXINCLUSIVE":
@@ -135,7 +126,6 @@
                                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                     break;
                                 case "RDXRACSKUINCLUSIVE":
-                                    // Allow the user to retry setting RAC/SKU as they can always close the app if things are really stuck
                                     processingFlag = false;
                                     bridge.fireEvent(CloudExperienceHost.Events.visible, true);
                                     break;
@@ -160,26 +150,20 @@
                 }
             });
 
-            // Launch the MSA sign in flow
             continueWithoutRAC.addEventListener("click", function (eventInfo) {
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBERACValidation")) {
                     eventInfo.preventDefault();
-                    // SKIP means skipping the value of RAC and taking it as blank
                     racInput.value = "";
-                    // don't block if Next is blocked as user is trying to SKIP it
                     if (!processingFlag) {
-                        // reusing code of "Next" flow
                         processingFlag = true;
                         bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "OOBEContinueWithoutRAC", racInput.value);
-                        // need these keys for apps to function
                         writeRegAndEnableAsyncThen(function () {
                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                         }, function (error) {
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "RetailInfoSetterFailure", JSON.stringify({ number: error.number.toString(16), description: error.description }));
                             switch (navFlow) {
                                 case "FRXRDXMOB":
-                                    // Proceed to rdxMsa
                                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.fail);
                                     break;
                                 case "FRXINCLUSIVE":
@@ -187,7 +171,6 @@
                                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                     break;
                                 case "RDXRACSKUINCLUSIVE":
-                                    // Allow the user to retry setting RAC/SKU as they can always close the app if things are really stuck
                                     processingFlag = false;
                                     bridge.fireEvent(CloudExperienceHost.Events.visible, true);
                                     break;
@@ -215,10 +198,8 @@
 
             bridge.fireEvent(CloudExperienceHost.Events.visible, true);
 
-            // Write RAC and SKU to registry
             function writeRegAndEnableAsyncThen(complete, error) {
                 if (navFlow === "RDXRACSKUINCLUSIVE") {
-                    // Settings app based launch
                     WinJS.Promise.join({
                         setRacPromise: CloudExperienceHostBroker.RetailDemo.ConfigureRetailDemo.setRetailInfoStringValue("RetailAccessCode", racInput.value),
                         setSkuPromise: CloudExperienceHostBroker.RetailDemo.ConfigureRetailDemo.setRetailInfoStringValue("SKU", skuInput.value),
@@ -230,7 +211,6 @@
                         setSkuPromise: bridge.invoke("RetailDemo.Internal.RetailInfoSetter.setStringAsync", "SKU", skuInput.value),
                         setStoreIdPromise: bridge.invoke("RetailDemo.Internal.RetailInfoSetter.setStringAsync", "StoreID", storeIdInput.value)
                     };
-                    // Desktop will be enabled by the retaildemoplugin and doesn't need this
                     if (CloudExperienceHost.Environment.getPlatform() !== CloudExperienceHost.TargetPlatform.DESKTOP) {
                         promises.enableDemoPromise = bridge.invoke("RetailDemo.Internal.RetailDemoSetup.enableDemoAsync");
                     }
@@ -239,11 +219,9 @@
             }
 
             function verifyRacAndUpdateUI() {
-                // trim spaces
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBERACValidation")) {
                     racInput.value = racInput.value.trim();
                 }
-                // Check if alphanumeric
                 if (racInput.value.match(/^[a-zA-Z\d]+$/)) {
                     blockNext = true;
                     racInput.disabled = true;
@@ -253,10 +231,8 @@
                     progressContainer.appendChild(ring);
                     nextButton.classList.remove("button_primary");
 
-                    // Only verify further if we have connectivity
                     bridge.invoke("CloudExperienceHost.Environment.hasInternetAccess").done(function (connected) {
                         if (connected) {
-                            // Query RDAM, timeout of 30 seconds
                             let options = {
                                 url: "https://retailstore.microsoft.com/RedecsService/Content/api/attributes/metadata?RAC=" + racInput.value,
                                 responseType: "json"
@@ -278,7 +254,6 @@
                                     }
                                 },
                                 function (error) {
-                                    // Status code is 0 if interent goes out or url doesn't exist for some reason
                                     if ((error.message === "Canceled") || (error.status === 0)) {
                                         showRacError(resources.errorRequestTimeout);
                                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "RdamRequestTimeout");
@@ -307,7 +282,6 @@
                 }
             }
 
-            // Show an error message under the RAC input
             function showRacError(message) {
                 if (racError.firstChild) {
                     racError.removeChild(racError.firstChild);
@@ -331,13 +305,10 @@
                 racError.style.display = 'inline';
             }
 
-            // Enable all text entry fields and the next button
             function allowUserToContinue() {
                 skuInput.disabled = false;
                 storeIdInput.disabled = false;
                 racInput.disabled = false;
-                // Be careful where calling allowUserToContinue from
-                // so that rdamProgress exists/isn't removed twice.
                 progressContainer.removeChild(rdamProgress);
                 nextButton.classList.add("button_primary");
                 blockNext = false;
@@ -364,7 +335,6 @@
                         let racExpiryDate = new Date(rdamJson.RetailerAccessCodes[0].ExpirationDate);
                         return currDate > racExpiryDate;
                     }
-                    // Considering RAC is valid when the json fetched from redecs is corrupt
                     return false;
                 }
                 return false;

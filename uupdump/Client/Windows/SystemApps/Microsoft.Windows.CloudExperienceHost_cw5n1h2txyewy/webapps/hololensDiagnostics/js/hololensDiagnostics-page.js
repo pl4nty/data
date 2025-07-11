@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 
 (() => {
@@ -27,7 +23,6 @@
 
                     var savedBookmark = resultSet.getBookmark;
                     if (!savedBookmark) {
-                        // If no value defined, start directly at the troubleshooting page
                         bookmarkedPage = 2;
                     } else {
                         bookmarkedPage = savedBookmark;

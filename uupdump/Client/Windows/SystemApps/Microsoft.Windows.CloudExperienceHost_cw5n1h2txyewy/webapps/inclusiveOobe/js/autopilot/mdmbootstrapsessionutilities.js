@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -11,20 +8,17 @@ define([
     commercialDiagnosticsUtilities) => {
     class mdmBootstrapSessionUtilities {
         constructor(resourceStrings, isDeviceBootstrapSession, sessionUtilities) {
-            // Constants
             this.RESOURCE_TO_TRACK_POLICIES = 0;
             this.RESOURCE_TO_TRACK_NETWORK_PROFILES = 1;
             this.RESOURCE_TO_TRACK_APPLICATIONS = 2;
             this.RESOURCE_TO_TRACK_CERTIFICATES = 3;
 
-            // Private member variables
             this.resourceStrings = resourceStrings;
             this.isDeviceBootstrapSession = isDeviceBootstrapSession;
             this.sessionUtilities = sessionUtilities;
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities();
         }
 
-        // Private methods
         logProvisioningStarted(resourceToTrack) {
             switch (resourceToTrack) {
                 case this.RESOURCE_TO_TRACK_POLICIES:
@@ -169,7 +163,6 @@ define([
                     true,
                     targetContext).then((monitorData) => {
 
-                    // Completion callback
 
                     this.policyCurrentProgress = monitorData.currentProgress;
                     this.policyExpectedEndValue = monitorData.expectedEndValue;
@@ -180,7 +173,6 @@ define([
                             this.getProvisioningIncompleteEventId(resourceToTrack),
                             `BootstrapStatus: Monitoring ${resourceName} from management server failed. Expected ${monitorData.expectedEndValue} items provisioned, but got only ${monitorData.currentProgress}.`);
                            
-                        // Error case: Final count of applied policies doesn't match expected count.
                         return WinJS.Promise.as(this.sessionUtilities.createActionResult(
                             this.sessionUtilities.SUBCATEGORY_STATE_FAILED,
                             this.resourceStrings["BootstrapPageStatusFailed"]));
@@ -193,7 +185,6 @@ define([
                         } else {
                             this.commercialDiagnosticsUtilities.logInfoEventDeprecated(`BootstrapStatus: Monitoring ${resourceName} from management server failed. Expected ${monitorData.expectedEndValue} items provisioned, but got only ${monitorData.currentProgress}.`);
 
-                            // Error case: Final count of applied policies doesn't match expected count.
                             return WinJS.Promise.as(this.sessionUtilities.createActionResult(
                                 this.sessionUtilities.SUBCATEGORY_STATE_FAILED,
                                 this.resourceStrings["BootstrapPageStatusFailed"]));
@@ -201,7 +192,6 @@ define([
                     } else if (monitorData.expectedEndValue === 0) {
                         this.logProvisioningSkipped(resourceToTrack);
 
-                        // Nothing to monitor
                         return WinJS.Promise.as(this.sessionUtilities.createActionResult(
                             this.sessionUtilities.SUBCATEGORY_STATE_SUCCEEDED,
                             this.resourceStrings["BootstrapPageStatusNoSetupNeeded"]));
@@ -209,41 +199,32 @@ define([
                     } else {
                         this.logProvisioningSucceeded(resourceToTrack);
 
-                        // Show the final "X/Y completed" message as the last thing the user sees, since
-                        // it's useful for debugging and indicates full completion.
                         let messageString = this.commercialDiagnosticsUtilities.formatMessage(
                             this.resourceStrings[progressStatusId],
                             monitorData.currentProgress,
                             monitorData.expectedEndValue);
 
-                        // Done monitoring
                         return WinJS.Promise.as(this.sessionUtilities.createActionResult(
                             this.sessionUtilities.SUBCATEGORY_STATE_SUCCEEDED,
                             messageString));
                     }
                 },
                 (e) => {
-                    // Error callback
                     this.policyCurrentProgress = 0;
                     this.policyExpectedEndValue = -1;
 
-                    // Error case
                     this.logProvisioningError(resourceToTrack, e.number);
 
-                    // Done monitoring
                     return WinJS.Promise.as(this.sessionUtilities.createActionResult(
                         this.sessionUtilities.SUBCATEGORY_STATE_FAILED,
                         this.commercialDiagnosticsUtilities.formatNumberAsHexString(e.number, 8)));
 
                 }, (monitorData) => {
-                    // Progress callback
 
                     if (monitorData.expectedEndValue === -1) {
-                        // Identifying state
                         return progressCallbackAsync(this.resourceStrings["BootstrapPageStatusIdentifying"]);
 
                     } else if (monitorData.expectedEndValue === 0) {
-                        // Nothing to monitor
                         return progressCallbackAsync(this.resourceStrings["BootstrapPageStatusNoSetupNeeded"]);
 
                     } else {
@@ -257,14 +238,12 @@ define([
                 });
             },
             (e) => {
-                // Return failure indicator if this fails.
                 return WinJS.Promise.as(this.sessionUtilities.createActionResult(
                     this.sessionUtilities.SUBCATEGORY_STATE_FAILED,
                     null));
             });
         }
 
-        // Public methods
 
         monitorPoliciesApplicationAsync(progressCallbackAsync) {
             return this.monitorGenericSettingsAsync(
@@ -309,7 +288,6 @@ define([
                 this.sessionUtilities.storeTransientState(this.sessionUtilities.STATE_NAME_GLOBAL_MDM_PROGRESS_MODE, targetContext);
             },
             (e) => {
-                // Error handler. Nothing to do.
             });
         }
 

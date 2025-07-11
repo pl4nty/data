@@ -7,6 +7,11 @@
     },
     "start": "StartSelector",
     "error": "OobeError",
+    "reconnectHandler": {
+      "handlerCxid": "OobeNetworkLossError",
+      "frequency": "OobeCustom",
+      "requiredFeatureName": "OobeHostNetworkReconnect"
+    },
     "msaTicketContext": "OOBE",
     "notifyOnFirstVisible": true,
     "notifyOnLastFinished": true,
@@ -14,6 +19,7 @@
     "useBackstackForBackNavigation": true,
     "frameName": "oobe-frame",
     "personality": "CloudExperienceHost.Personality.LiteWhite",
+    "wallpaperBackdropEnabled": true,
     "speechCapable": true,
     "speechDisabled": true,
     "blockLateWebAppCalls": true,
@@ -31,6 +37,27 @@
       "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
       "visibility": false,
       "measureId": 48471631
+    },
+    "OobeNetworkLossError": {
+        "cxid": "OobeNetworkLossError",
+        "frameAnimation": "errorLottie.json",
+        "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeNetworkLossError-main.html",
+        "successID": "InPlaceResume",
+        "failID": "InPlaceResume",
+        "cancelID": "InPlaceResume",
+        "abortID": "InPlaceResume",
+        "disableErrorPageOnFailure": true,
+        "disableBackNavigationToNode": true,
+        "disableBackNavigationFromNode": true,
+        "visibility": false,
+        "measureId": 57739732
+    },
+    "InPlaceResume": {
+        "cxid": "InPlaceResume",
+        "launcher": "js:InPlaceResume",
+        "failID": "StartSelector",
+        "disableBackNavigationToNode": true,
+        "measureId": 40426734
     },
     "OobeExit": {
       "cxid": "OobeExit",
@@ -54,7 +81,8 @@
       "offlineID": "OobeMSAHello",
       "disableBackNavigationToNode": true,
       "disableErrorPageOnFailure": true,
-      "visibility": false
+      "visibility": false,
+      "measureId": 57624332
     },
     "OobeMSAHello": {
       "cxid": "OobeMSAHello",
@@ -121,15 +149,35 @@
       "preloadCheck": "CloudExperienceHost.SnapshotCapture.ComingSoon",
       "requiredFeatureName": "SingleEnduserOobeApp",
       "internetRequired": true,
+      "skipReconnectHandler": true,
+      "successID": "OobeMSACloudBackupRestoreUX",
+      "failID": "OobeMSACloudBackupRestoreUX",
+      "cancelID": "OobeMSACloudBackupRestoreUX",
+      "abortID": "OobeMSACloudBackupRestoreUX",
+      "offlineID": "OobeMSACloudBackupRestoreUX",
+      "disableErrorPageOnFailure": true,
+      "ignoreResult": true,
+      "visibility": false,
+      "measureId": 53537111
+    },
+    "OobeMSACloudBackupRestoreUX": {
+      "cxid": "OobeMSACloudBackupRestoreUX",
+      "url": "https://sdx.microsoft.com/frx/cloud-backup-restore2",
+      "urlint": "https://sdx.microsoft-int.com/frx/cloud-backup-restore2",
+      "preloadCheck": "CloudExperienceHost.OobeMSACloudBackupRestoreUX",
+      "requiredFeatureName": "OobeHostPostMSAFlowMigration",
+      "internetRequired": true,
       "successID": "OobeExit",
       "failID": "OobeExit",
       "cancelID": "OobeExit",
       "abortID": "OobeExit",
       "offlineID": "OobeExit",
+      "disableBackNavigationToNodeOnSuccess": true,
       "disableErrorPageOnFailure": true,
       "ignoreResult": true,
       "visibility": false,
-      "measureId": 53537111
+      "intraWebAppVisibility": false,
+      "measureId": 56733673
     }
   },
   "OOBE": {
@@ -148,7 +196,6 @@
     "notifyOnFirstVisible": true,
     "notifyOnLastFinished": true,
     "waitForTaskbarReady": true,
-    "initializeExternalModalRects": true,
     "useBackstackForBackNavigation": true,
     "frameName": "oobe-frame",
     "personality": "CloudExperienceHost.Personality.LiteWhite",

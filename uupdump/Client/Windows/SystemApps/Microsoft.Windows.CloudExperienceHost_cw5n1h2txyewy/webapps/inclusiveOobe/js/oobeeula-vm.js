@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'oobeeula-data', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, oobeEulaData, bridge, constants, core) => {
     const tagAccept = "accept";
 
@@ -31,7 +28,6 @@ define(['lib/knockout', 'oobeeula-data', 'legacy/bridge', 'legacy/events', 'lega
                     isPrimaryButton: false,
                     disableControl: true,
                     buttonClickHandler: (() => {
-                        // No-op. Always disabled.
                     }),
                 }
             ];
@@ -74,9 +70,7 @@ define(['lib/knockout', 'oobeeula-data', 'legacy/bridge', 'legacy/events', 'lega
 
                 uiHelpers.PortableDeviceHelpers.unsubscribeToDeviceInsertion(this.gestureManager, bridge, core);
 
-                // Call the api to commit accept and go to the next page.
                 try {
-                    // Show the progress ring while committing async.
                     bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
                     CloudExperienceHostAPI.OobeEulaManagerStaticsCore.acceptEulaAsync().done(() => {

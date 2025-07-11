@@ -1,13 +1,9 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-
+﻿
 define(['legacy/core'], (core) => {
 
     class OobeCloudContentHydrant {
 
         refreshFeatureConfigurations() {
-            // If network is unavailable, then skip this work.
             if (!CloudExperienceHost.Environment.hasInternetAccess()) {
                 return WinJS.Promise.as(CloudExperienceHost.AppResult.abort);
             }
@@ -26,10 +22,6 @@ define(['legacy/core'], (core) => {
         }
 
         notifyAutopilotProfile() {
-            // This will publish a notification from the Autopilot service to let components like Bitlocker know
-            // when OOBE has proceeded far enough to make decisions based on expected policy synchronization from AAD or MDM.
-            // This must happen before any user credentials are stored on the device if Bitlocker is not deferring encryption
-            // due to expected future policies that will override the defaults.
             CloudExperienceHost.Telemetry.logEvent("Autopilot_CloudContentHydrant_notifyAutopilotProfile_start");
             return EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.setAutopilotDeviceNotManagedAsync(0);
         }

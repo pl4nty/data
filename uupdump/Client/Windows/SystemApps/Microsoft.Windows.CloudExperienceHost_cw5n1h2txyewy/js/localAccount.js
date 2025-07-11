@@ -1,8 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
-"use strict";
+﻿"use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
     var LocalAccount;
@@ -14,8 +10,6 @@ var CloudExperienceHost;
                     const forcedEnrollmentPromise = EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getDwordPolicyAsync("CloudAssignedForcedEnrollment");
                     forcedEnrollmentPromise.then((result) => {
                         let isForcedEnrollmentEnabled = (result === 1);
-                        // Let the page we're returning to know that the local account creation flow
-                        // was blocked so the appropriate error can be reported to the end user.
                         if (isForcedEnrollmentEnabled) {
                             CloudExperienceHost.Telemetry.logEvent("CommercialOOBE_LocalAccount_BlockedByForcedEnrollmentPolicy");
                             CloudExperienceHost.Storage.VolatileSharableData.addItem("AutopilotValues", "LocalAccountCreationBlockedByForcedEnrollmentPolicy", true);
@@ -28,7 +22,6 @@ var CloudExperienceHost;
                         completeDispatch(localDisallowed || isForcedEnrollmentEnabled);
                     });
                 } catch (err) {
-                    // If an exception is thrown, proceed to the Local Account page.
                     CloudExperienceHost.Telemetry.logEvent("CloudExperienceHost_LocalAccount_GetShouldSkipAsyncFailed", JSON.stringify({ error: err }));
                     completeDispatch(false);
                 }
@@ -39,7 +32,6 @@ var CloudExperienceHost;
         function createLocalAccount(username, password, recoveryData) {
             return new WinJS.Promise(function (completeDispatch, errorDispatch, progressDispatch) {
                 if ((password == null) || (password === "")) {
-                    // If there is no password, pass the null auth buffer
                     var localAccountManager = new CloudExperienceHostBroker.Account.LocalAccountManager();
                     localAccountManager.createLocalAccountAsync(username, null, null)
                         .done(function () {
@@ -51,7 +43,6 @@ var CloudExperienceHost;
                     var provider = new Windows.Security.Cryptography.DataProtection.DataProtectionProvider("local=user");
                     var binary = Windows.Security.Cryptography.CryptographicBuffer.convertStringToBinary(password, Windows.Security.Cryptography.BinaryStringEncoding.utf8);
 
-                    // Chaining promises to first encrypt the password and then pass it to the API to create the account
                     provider.protectAsync(binary).then(function (protectedData) {
                         var localAccountManager = new CloudExperienceHostBroker.Account.LocalAccountManager();
                         var recoveryKind = localAccountManager.isLocalSecurityQuestionResetAllowed ? CloudExperienceHostBroker.Account.RecoveryKind.questions : CloudExperienceHostBroker.Account.RecoveryKind.hint;
@@ -99,7 +90,6 @@ var CloudExperienceHost;
         }
         LocalAccount.updateSQSA = updateSQSA;
 
-        // Function to get all the strings for local account creation via bridge as access from webview is not possible
         function localizedStrings() {
             let localAccountResources = {};
             const keyList = ['Title', 'LeadText1', 'LeadText', 'UserNameLegend', 'UserPlaceholder', 'PasswordLegend', 'SQSALegend',
@@ -118,7 +108,6 @@ var CloudExperienceHost;
         }
         LocalAccount.localizedStrings = localizedStrings;
 
-        // Function to get all the strings for SQSA setup/change via bridge as access from webview is not possible
         function localizedStringsSetupSQSA() {
             let localAccountResources = {};
             const keyList = ['UpdateSQSATitle', 'SQSALegend', 'SecurityQuestion1Placeholder', 'SecurityQuestion2Placeholder',
@@ -133,7 +122,6 @@ var CloudExperienceHost;
         }
         LocalAccount.localizedStringsSetupSQSA = localizedStringsSetupSQSA;
 
-        // Function to determine if SQSA is allowed
         function isSQSAAllowed() {
             var localAccountManager = new CloudExperienceHostBroker.Account.LocalAccountManager();
             return localAccountManager.isLocalSecurityQuestionResetAllowed;

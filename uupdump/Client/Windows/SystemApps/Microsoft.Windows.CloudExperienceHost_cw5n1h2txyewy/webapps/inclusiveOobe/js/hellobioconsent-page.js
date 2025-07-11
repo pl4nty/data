@@ -1,9 +1,8 @@
-﻿(() => {
+(() => {
     WinJS.UI.Pages.define("/webapps/inclusiveOobe/view/hellobioconsent-main.html", {
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Load css per scenario
             let loadCssPromise = requireAsync(['legacy/uiHelpers', 'legacy/bridge']).then((result) => {
                 return result.legacy_uiHelpers.LoadCssPromise(document.head, "", result.legacy_bridge);
             });
@@ -43,12 +42,10 @@
         },
         ready: (element, options) => {
             require(['lib/knockout', 'corejs/knockouthelpers', 'legacy/bridge', 'legacy/events', 'hellobioconsent-vm', 'oobesettings-data', 'lib/knockout-winjs', 'corejs/xy-transfer-wrapper-down'], (ko, KoHelpers, bridge, constants, HelloBioConsentViewModel) => {
-                // Setup knockout customizations
                 koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                 window.KoHelpers = KoHelpers;
 
-                // Apply bindings and show the page
                 let vm = new HelloBioConsentViewModel(this.resourceStrings, this.isInternetAvailable, this.targetPersonality);
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {

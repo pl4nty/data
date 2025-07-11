@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define(() => {
+﻿define(() => {
     class DefaultProgressViewModel {
         constructor(params) {
             let res = new Windows.ApplicationModel.Resources.ResourceLoader("resources");

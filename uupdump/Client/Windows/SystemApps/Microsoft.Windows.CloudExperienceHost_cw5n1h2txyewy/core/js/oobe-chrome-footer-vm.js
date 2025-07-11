@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy/uiHelpers', 'optional!sample/CloudExperienceHostAPI.Speech.SpeechRecognition', 'optional!sample/CloudExperienceHostAPI.Speech.SpeechRecognitionController'], (ko, bridge, constants, core, legacy_uiHelpers) => {
     class OOBEChromeFooterViewModel {
         constructor(params) {
@@ -47,7 +44,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
             bridge.invoke("CloudExperienceHost.Environment.isSpeechDisabled").done((isSpeechDisabled) => {
                 bridge.invoke("CloudExperienceHost.Cortana.isCortanaSupported").done((isCortanaSupported) => {
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", this.isCortanaMutedString).done((isCortanaMuted) => {
-                        // Explicitly show mic area as it won't be in the right state if we haven't called enableAsync yet but if isCortanaMuted is 1, we know it's valid
                         if (!isSpeechDisabled && isCortanaSupported && isCortanaMuted) {
                             this.showMicArea(true);
                         }
@@ -89,7 +85,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
 
         updateMicButtonTextAndState() {
             if (!this.showMicArea() && (this.speechControllerState == CloudExperienceHostAPI.Speech.SpeechControllerState.disabled)) {
-                // Microphone area is hidden & speech is still disabled - nothing to do
                 return;
             }
 
@@ -97,13 +92,11 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
             let stateString = null;
             switch (this.speechControllerState) {
                 case CloudExperienceHostAPI.Speech.SpeechControllerState.disabled:
-                    // No text
                     stateString = "disabled";
                     break;
                 case CloudExperienceHostAPI.Speech.SpeechControllerState.enabled:
                 case CloudExperienceHostAPI.Speech.SpeechControllerState.idling:
                 case CloudExperienceHostAPI.Speech.SpeechControllerState.speaking_Stop:
-                    // No text
                     stateString = "idling";
                     break;
                 case CloudExperienceHostAPI.Speech.SpeechControllerState.speaking_Start:
@@ -116,8 +109,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
                     break;
                 case CloudExperienceHostAPI.Speech.SpeechControllerState.listening_Stop:
                     text = this.speechControllerCaption;
-                    // this.speechControllerCaption is set to null in onMicStateChanged if nothing was recognized
-                    // Treat that case as the 'idling' state
                     stateString = text ? "recognized" : "idling";
                     break;
             }
@@ -125,7 +116,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
             this.micState(stateString);
             this.micButtonEnabled(this.speechControllerState != CloudExperienceHostAPI.Speech.SpeechControllerState.disabled);
 
-            // Show the microphone area if it was previously hidden
             this.showMicArea(true);
         }
 
@@ -139,7 +129,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
                 bridge.invoke("CloudExperienceHost.Cortana.isCortanaSupported").done((isCortanaSupported) => {
                     let newValue = !this.micButtonEnabled() && isCortanaSupported;
                     this.speechController.enableAsync(newValue).done(function (result) {
-                        // Only persist mute state if the user explicitly asked for Cortana to mute (!newValue), and Cortana was actually muted (!result)
                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.isCortanaMutedString, (!newValue && !result) ? 1 : 0);
                         if (result) {
                             this.speechRecognition.promptForCommandsAsync(this.micEnabledVoiceOver(), null);
@@ -158,8 +147,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
             this.speechControllerCaption = (e.detail == "") ? null : e.detail;
             if ((this.speechControllerState == CloudExperienceHostAPI.Speech.SpeechControllerState.idling) ||
                 (this.speechControllerState == CloudExperienceHostAPI.Speech.SpeechControllerState.speaking_Stop)) {
-                // Wait for a second to avoid changing the text quickly between Speaking->Idle->Listening when Cortana transitions between talking and listening
-                // The "idling" text update will be cancelled by the subsequent transition to 'listening'
                 this.micStateTimer = setTimeout(function () {
                     this.updateMicButtonTextAndState()
                 }.bind(this), 1000);
@@ -176,7 +163,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
 
                 bridge.invoke("CloudExperienceHost.getChromeFooterOffset").then((offset) => {
                     let rect = element.getBoundingClientRect();
-                    // Place the flyout right-aligned
                     return bridge.invoke("CloudExperienceHost.showInputSwitchFlyout", rect.left + offset.x, rect.top + offset.y, screen.width, screen.height);
                 }).done(() => {
                     OOBEChromeFooterViewModel.logChromeEvent("showInputSwitchFlyoutSucceeded");
@@ -194,7 +180,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
 
                 bridge.invoke("CloudExperienceHost.getChromeFooterOffset").then((offset) => {
                     let rect = element.getBoundingClientRect();
-                    // Place the flyout right-aligned
                     return bridge.invoke("CloudExperienceHost.showVolumeControlFlyout", rect.left + offset.x, rect.top + offset.y, screen.width, screen.height);
                 }).done(() => {
                     OOBEChromeFooterViewModel.logChromeEvent("showVolumeControlFlyoutSucceeded");
@@ -243,7 +228,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
                 this.cortanaIconAccName(resourceStrings.cortanaIconAccName);
                 this.volumeControlAccName(resourceStrings.VolumeControlAccName);
                 if (!this.micDisabledExplicitly) {
-                    // re-evaluate button state on language change as long no explicit disable of cortana
                     bridge.invoke("CloudExperienceHost.Cortana.isCortanaSupported").done((result) => {
                         this.speechController.enableAsync(result);
                     });

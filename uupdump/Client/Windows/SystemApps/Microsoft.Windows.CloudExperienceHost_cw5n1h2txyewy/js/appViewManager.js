@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -92,9 +88,6 @@ var CloudExperienceHost;
                 return new WinJS.Promise(() => { });
             }
         }
-        setBackgroundImage(appDataUri) {
-            return this.notifyObserver(CloudExperienceHost.FrameViewModelUpdateType.SetBackgroundImage, appDataUri);
-        }
         setGamepadLegendDisplayOverrideForB(displayText) {
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GamepadLegendEnabled")) {
                 return this.notifyObserversOfUpdateType(CloudExperienceHost.FrameViewModelUpdateType.GamepadLegendB, displayText);
@@ -113,7 +106,6 @@ var CloudExperienceHost;
                 return false;
             }
             else {
-                // Observer exists in the Array remove it
                 this.observers[updateType].splice(obsIndex, 1);
                 return true;
             }
@@ -144,7 +136,6 @@ var CloudExperienceHost;
                 return true;
             }
             else {
-                // Observer already exists in the Array
                 return false;
             }
         }
@@ -172,4 +163,3 @@ if ((typeof define === "function") && define.amd) {
         return new CloudExperienceHost.AppViewManager();
     });
 }
-//# sourceMappingURL=appViewManager.js.map

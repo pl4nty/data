@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -61,7 +57,6 @@ var CloudExperienceHost;
                                 if (result) {
                                     _checkIfEnrollmentSupportedAndGetReady(completeDispatch, errorDispatch);
                                 } else {
-                                    // This should only fire in the NTHENTORMDM or NTHAADORMDM flows, else the app will "Fall Off" and quit.
                                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "HelloEnrollmentSkipInNthFlow");
                                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.action1);
                                 }
@@ -69,7 +64,6 @@ var CloudExperienceHost;
                                 _checkIfEnrollmentSupportedAndGetReady(completeDispatch, errorDispatch);
                             });
                         }
-                        // Check to see if a previous component would like us to be skipped
                         bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "skipNGC").then(function (skipNGC) {
                             if (skipNGC) {
                                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "HelloEnrollmentSkippedViaSharableData");
@@ -99,9 +93,7 @@ var CloudExperienceHost;
                     setBlueStyles();
                 }
 
-                // Elements based on supported hardware
                 if (enrollmentKinds && (enrollmentKinds.face || enrollmentKinds.fingerprint)) {
-                    // Next button
                     NextButton.textContent = resourceStrings["HelloButtonText"];
                     NextButton.addEventListener("click", enrollHelloButtonClick);
                     NextButton.focus();
@@ -110,11 +102,9 @@ var CloudExperienceHost;
                         _logEvent("ShowingHelloEnrollmentPage", "Face AND Fingerprint");
 
                         if (!isLiteWhitePersonality) {
-                            // Remove the non-applicable elements
                             _setVisibility(FaceOrFingerprint, false);
                             _setVisibility(HelloSwitchLinkContentBox, false);
 
-                            // Set the ListView properties
                             let rootStyle = window.getComputedStyle(_htmlRoot, "");
                             let rootBackgroundColor = rootStyle.getPropertyValue("background-color");
                             EnrollmentChoiceItemTemplateStyle.style = "height: 125px; display: -ms-grid; background-color: " + rootBackgroundColor;
@@ -141,14 +131,12 @@ var CloudExperienceHost;
                             });
                             EnrollmentListView.focus();
                         } else {
-                            // This applies in isMultiChoice and isLiteWhitePersonality scenarios
                             _setVisibility(FaceAndFingerprint, false);
                             renderFace();
                             HelloSwitchHyperlink.textContent = resourceStrings["HelloSwitchFaceToFingerprint"];
                             HelloSwitchHyperlink.addEventListener("click", onHelloSwitchHyperlinkClicked);
                         }
                     } else {
-                        // Remove the non-applicable elements
                         _setVisibility(FaceAndFingerprint, false);
                         _setVisibility(HelloSwitchLinkContentBox, false);
 
@@ -165,17 +153,12 @@ var CloudExperienceHost;
                         onLearnMoreClick();
                     });
 
-                    // Learn More content
                     LearnMoreTitle.textContent = resourceStrings['HelloLearnMoreLinkText'];
                     ContinueButton.textContent = resourceStrings['HelloContinueButtonText'];
                     ContinueButton.addEventListener("click", onLearnMoreContinue);
                     document.getElementById("LearnMoreContent").style.display = "none";
-                    // Breadcrumb for version of experience being rendered, and includes the learn more link.
-                    // Event should align with "ShowingHelloEnrollmentPage" event fired above.
-                    // This event should be kept the same as in oobehello-page.js.
                     bridge.invoke("CloudExperienceHost.Telemetry.commitIntentPropertyDWORDAsync", "WindowsHello", "LearnMoreAvailable", 1);
 
-                    // Enable page
                     bridge.fireEvent(CloudExperienceHost.Events.visible, true);
                 } else {
                     _logEvent("NotShowingHelloEnrollmentPage");
@@ -189,7 +172,6 @@ var CloudExperienceHost;
                 }
 
                 function setLiteStyles() {
-                    // Adding class to divs based on Personality
                     document.getElementById("appContainer").className = "body-container";
                     document.getElementById("content").className = "container-content";
                     document.getElementById("LearnMoreContent").className = "container-content";
@@ -210,7 +192,6 @@ var CloudExperienceHost;
                     document.getElementById("LearnMoreContent").className = "app-content";
                     document.getElementById("LearnMorePageBody").style.display = "flex";
                     document.getElementById("LearnMorePageBody").style.flexDirection = "column";
-                    // Call to register EaseOfAccess control
                     uiHelpers.RegisterEaseOfAccess(easeOfAccess, bridge);
                 }
 
@@ -353,7 +334,6 @@ var CloudExperienceHost;
                     _setVisibility(HelloLearnMoreLink, false);
                     document.getElementById("content").style.display = "flex";
                     NextButton.textContent = resourceStrings["NextButtonText"];
-                    // Remove _enroll() function added to the button before confirmation page
                     NextButton.removeEventListener("click", enrollHelloButtonClick);
                     NextButton.addEventListener("click", function () {
                         event.preventDefault();
@@ -389,7 +369,6 @@ var CloudExperienceHost;
                     }
                 }
 
-                // Helper function to invoke the Hello enrollment app
                 function _enroll(rect) {
                     _logEvent("HelloEnrollmentShowingEnrollmentApp");
                     uiHelpers.SetElementVisibility(PageContent, false);
@@ -416,9 +395,6 @@ var CloudExperienceHost;
                 }
 
                 function _setUpLearnMorePersonality() {
-                    // Learn More supports rendering in white-on-blue (InclusiveBlue) or black-on-white (LiteWhite).
-                    // Since this page is reused across scenarios that pre-date the explicit use of Personalities,
-                    // we force the background color to white and Personality to LiteWhite (HC is still respected).
                     let returnPersonality = targetPersonality;
                     if (returnPersonality === CloudExperienceHost.TargetPersonality.Unspecified) {
                         let learnMoreIFrame = document.getElementById("hello-learnmore-iframe");

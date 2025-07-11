@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 define(() => {
     class OobePrepTransitionToNextApp {
@@ -14,7 +11,6 @@ define(() => {
                     CloudExperienceHost.Telemetry.logEvent("SetDefaultUserSessionNextAppLaunchSucceeded");
                     CloudExperienceHost.Storage.VolatileSharableData.addItem("OobePrepTransitionToNextAppValues", "launchNextApp", true);
 
-                    // TODO: Move prepEnduserSession logic to OHA: https://task.ms/57004214
                     CloudExperienceHostAPI.UtilStaticsCore.prepEnduserSessionAsync().then(() => {
                         CloudExperienceHost.Telemetry.logEvent("PrepEnduserSessionSucceeded");
                         let sharableDataPromise = CloudExperienceHost.Storage.SharableData.saveDataForOobeAsync();

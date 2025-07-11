@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -14,12 +11,9 @@ var CloudExperienceHost;
                 return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                     try {
                         EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getOobeSettingsOverrideAsync(EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotOobeSetting.aadAuthUsingDeviceTicket).then(function (useDeviceTicketForAadAuth) {
-                            // True - Skip the pages for the Autopilot Plug and Forget flow
-                            // False - Show the pages
                             completeDispatch(useDeviceTicketForAadAuth);
                         }, errorDispatch);
                     } catch (err) {
-                        // If an exception is thrown, skip the Plug and Forget flow and resume through the Consumer OOBE flow
                         CloudExperienceHost.Telemetry.logEvent("Autopilot_PlugAndForget_GetShouldSkipAsyncFailed", JSON.stringify({ error: err }));
                         completeDispatch(true);
                     }
@@ -35,15 +29,12 @@ var CloudExperienceHost;
                     try {
                         EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getSettingAsync("UseRefactoredEsp").then(function (result) {
                             if ("" === result) {
-                                // Don't use refactored ESP.
                                 completeDispatch(false);
                             } else {
-                                // Use refactored ESP.
                                 completeDispatch(true);
                             }
                         }, errorDispatch);
                     } catch (err) {
-                        // If an exception is thrown, don't use the refactored ESP.
                         CloudExperienceHost.Telemetry.logEvent("AutoPilot_ShouldUseRefactoredEsp_GetShouldSkipAsyncFailed", JSON.stringify({ error: err }));
                         completeDispatch(false);
                     }
@@ -59,7 +50,6 @@ var CloudExperienceHost;
                     try {
                         EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getSettingAsync("UseRefactoredEsp").then(function (result) {
                             if ("" === result) {
-                                // Don't use refactored ESP.
                                 let context = CloudExperienceHost.getContext();
                                 let isOOBE = (context.host.toLowerCase() !== "nthentormdm" && context.host.toLowerCase() !== "nthaadormdm");
 
@@ -74,12 +64,10 @@ var CloudExperienceHost;
                                     }
                                 }, errorDispatch);
                             } else {
-                                // Use refactored ESP.
                                 completeDispatch(true);
                             }
                         }, errorDispatch);
                     } catch (err) {
-                        // If an exception is thrown, don't use the refactored ESP.
                         CloudExperienceHost.Telemetry.logEvent("AutoPilot_ShouldUseRefactoredEspAndShouldShowEsp_GetShouldSkipAsyncFailed", JSON.stringify({ error: err }));
                         completeDispatch(false);
                     }
@@ -94,7 +82,6 @@ var CloudExperienceHost;
                 return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                     try {
                         EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.isLocalProfileAvailableAsync().then(function (result) {
-                            // If we have a profile, check if update is enabled (absence of this policy means enabled by default)
                             if (result) {
                                 EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getDwordPolicyAsync("CloudAssignedAutopilotUpdateDisabled").then(function (isDisabledResult) {
                                     CloudExperienceHost.Telemetry.logEvent(isDisabledResult !== 0 ? "AutoPilot_ShouldSkipAutoPilotUpdate_SkippingBecauseDisabled" : "AutoPilot_ShouldSkipAutoPilotUpdate_NoSkippingBecauseEnabled");
@@ -110,7 +97,6 @@ var CloudExperienceHost;
                             }
                         }, errorDispatch);
                     } catch (err) {
-                        // If an exception is thrown, skip the update page and resume through the Consumer OOBE flow
                         CloudExperienceHost.Telemetry.logEvent("Autopilot_AutoPilotUpdatePage_GetShouldSkipAsyncFailed", JSON.stringify({ error: err }));
                         completeDispatch(true);
                     }
@@ -127,11 +113,8 @@ var CloudExperienceHost;
                         CloudExperienceHost.Telemetry.logEvent("StartPostEnrollmentShouldSkipCheck");
                         let shouldCheckForUpdates = ModernDeployment.Autopilot.Core.AutopilotAgility().shouldCheckForUpdatesPostEnrollment;
                         CloudExperienceHost.Telemetry.logEvent(shouldCheckForUpdates ? "Autopilot_Agility_NotSkippingPostEnrollmentUpdate" : "Autopilot_Agility_SkippingPostEnrollmentUpdate");
-                        // If we want updates we don't want to skip this page
-                        // IE: If shouldCheckForUpdates == true want to return false
                         completeDispatch(!shouldCheckForUpdates);
                     } catch (err) {
-                        // If an exception is thrown, skip the update page.
                         CloudExperienceHost.Telemetry.logEvent("Autopilot_Agility_ShouldSkipPostEnrollmentAutopilotUpdateFailed", JSON.stringify({ error: err }));
                         completeDispatch(true);
                     }
@@ -150,10 +133,8 @@ var CloudExperienceHost;
 
             async function checkIfShouldSkipAsync() {
                 try {
-                    // Get the CloudAssignedDeviceName policy
                     let deviceName = await EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getStringPolicyAsync("CloudAssignedDeviceName");
 
-                    // If policy is empty or null, skip device rename
                     if ((deviceName === null) || (deviceName === "")) {
                         CloudExperienceHost.Telemetry.logEvent("ShouldSkipDeviceRename.checkIfShouldSkipAsync: Info: No device name specified. Skipping Autopilot device rename.");
                         return true;
@@ -166,7 +147,6 @@ var CloudExperienceHost;
                         return false;
                     }
                 } catch (err) {
-                    // If an exception is thrown, skip the rename page and resume through the Consumer OOBE flow
                     CloudExperienceHost.Telemetry.logEvent("ShouldSkipDeviceRename.checkIfShouldSkipAsync: Failure: AutoPilotDeviceRename preload check failed. Skipping Autopilot device rename.", JSON.stringify(err));
                     return true;
                 }
@@ -179,7 +159,6 @@ var CloudExperienceHost;
             function getShouldSkipAsync() {
                 return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                     try {
-                        // Bypass the Mandatory Connectivity page for non-Commercial SKUs.
                         if (CloudExperienceHostAPI.UtilStaticsCore.getLicensingPolicyValue("WorkstationService-DomainJoinEnabled") === 0) {
                             CloudExperienceHost.Telemetry.logEvent("Autopilot_ActivationPage_PreLoadCheckCompleted_SkippingDueToUnsupportedSku");
                             completeDispatch(true);
@@ -223,7 +202,6 @@ var CloudExperienceHost;
                         completeDispatch(1);
                     }
 
-                    // For Autopilot WG DJ++ scenario, we want to always show ESP
                     let autopilotManager = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotServer();
                     autopilotManager.getDeviceAutopilotModeAsync().then(function (result) {
                         CloudExperienceHost.Telemetry.logEvent("Autopilot_EnrollmentStatusPage_showMdmSyncStatusPageAsync_getDeviceAutopilotModeAsync", result);
@@ -247,11 +225,9 @@ var CloudExperienceHost;
                 return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                     var platform = CloudExperienceHost.Environment.getPlatform();
                     if (platform === CloudExperienceHost.TargetPlatform.DESKTOP) {
-                        // This will fail on WCOS devices as provisioning is only available on desktop
                         let pluginManager = new CloudExperienceHostAPI.Provisioning.PluginManager();
                         let isAutopilotReset = pluginManager.isPostPowerwash();
 
-                        // Run provisioning after Autopilot Reset or for Plug and Forget (self-deploying) modes
                         if ((isAutopilotReset) ||
                             (CloudExperienceHost.getCurrentNode().cxid === "MDMProgressForPlugAndForget")) {
                             completeDispatch(1);
@@ -269,11 +245,9 @@ var CloudExperienceHost;
                 return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                     var platform = CloudExperienceHost.Environment.getPlatform();
                     if (platform === CloudExperienceHost.TargetPlatform.DESKTOP) {
-                        // This will fail on WCOS devices as provisioning is only available on desktop
                         let pluginManager = new CloudExperienceHostAPI.Provisioning.PluginManager();
                         let isAutopilotReset = pluginManager.isPostPowerwash();
 
-                        // Restore MDM sync tasks after Autopilot Reset
                         if (isAutopilotReset) {
                             completeDispatch(1);
                         } else {
@@ -303,13 +277,11 @@ var CloudExperienceHost;
                     EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getSettingAsync("DPP.devicePreparationPageEnabled").then(
                         (result) => {
                             if ("true" === result) {
-                                // Device Preparation page is enabled, and so skip the ESP.
                                 completeDispatch(true);
                             } else {
                                 let context = CloudExperienceHost.getContext();
                                 let isRunInOOBE = (context.host.toLowerCase() !== "nthentormdm" && context.host.toLowerCase() !== "nthaadormdm");
 
-                                // Do not skip user ESP if it we're navigating back from the troubleshooting page.
                                 var sourcePageCxid = (CloudExperienceHost.getCurrentNode()) !== null ? CloudExperienceHost.getCurrentNode().cxid.toLowerCase() : "";
                                 var diagnosticsPreviousCxid = CloudExperienceHost.Storage.SharableData.getValue("DiagnosticsPreviousCXID");
                                 if ((diagnosticsPreviousCxid === undefined) || (diagnosticsPreviousCxid === null)) {
@@ -318,9 +290,6 @@ var CloudExperienceHost;
 
                                 CloudExperienceHost.Telemetry.logEvent(`Autopilot_EnrollmentStatusPage_getShouldSkipAsync_Info:SkippedMDMPage: isRunInOOBE = ${isRunInOOBE}, cxid = ${sourcePageCxid}, diagnosticsPreviousCxid = ${diagnosticsPreviousCxid}`);
 
-                                // The user ESP can be disabled upon completion by policy, so in order to allow navigation back to the user ESP from the Diagnostics page,
-                                // we check that we're coming from a TS (or error) page (cxid), and that DiagnosticsPreviousCXID value says we came from the user ESP (note the 
-                                // DiagnosticsPreviousCXID is not cleared, so the condition of coming from the TS page is important.
                                 if ((isRunInOOBE === false) && (sourcePageCxid == "oobediagnostics" || sourcePageCxid == "oobediagnosticslite" || sourcePageCxid == "oobeerror") && (diagnosticsPreviousCxid.toLowerCase() === "mdmprogressrefactored")) {
                                     CloudExperienceHost.Telemetry.logEvent("Autopilot_EnrollmentStatusPage_getShouldSkipAsync_Info:SkippedMDMPage: Returning from Diagnostics page, so don't skip.");
                                     completeDispatch(false);
@@ -330,7 +299,6 @@ var CloudExperienceHost;
                                     return enterpriseManagementWorker.showMdmSyncStatusPageAsync(isRunInOOBE).then(function (results) {
                                         CloudExperienceHost.Telemetry.logEvent("Autopilot_EnrollmentStatusPage_getShouldSkipAsync_Info:SkippedMDMPage", isRunInOOBE);
 
-                                        // For Autopilot WG DJ++ scenario, we want to always show ESP
                                         let autopilotServer = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotServer();
 
                                         autopilotServer.getDeviceAutopilotModeAsync().then(function (autopilotMode) {
@@ -357,7 +325,6 @@ var CloudExperienceHost;
                     var cxidToMatch = CloudExperienceHost.Storage.SharableData.getValue("MDMRebootPossible");
                     CloudExperienceHost.Telemetry.logEvent(`Autopilot_EnrollmentStatusPage_setStatusPageReboot: Initializing persistent reboot settings. Current CXID: ${pageName}`);
                     if ((pageName === cxidToMatch) && (pageName !== "MDMProgressForPlugAndForget") && (pageName !== "AutopilotEnrollmentStatus") && pageName !== ("MDMProgressForPlugAndForgetRefactored")) {
-                        // If we've seen this page before, we are rebooting, so we need to clear AutoLogin information.  Best effort.
                         try {
                             CloudExperienceHost.Telemetry.logEvent("Autopilot_EnrollmentStatusPage_setStatusPageReboot: Clearing Autologon credentials");
                             var enterpriseManagementWorker = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
@@ -381,12 +348,9 @@ var CloudExperienceHost;
                 return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                     try {
                         EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getOobeSettingsOverrideAsync(EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotOobeSetting.aadAuthUsingDeviceTicket).then(function (useDeviceTicketForAadAuth) {
-                            // True - Show the Autopilot Veto page
-                            // False - Skip the Autopilot Veto page
                             completeDispatch(!useDeviceTicketForAadAuth);
                         }, errorDispatch);
                     } catch (err) {
-                        // If an exception is thrown, skip the Plug and Forget flow and resume through the Consumer OOBE flow
                         CloudExperienceHost.Telemetry.logEvent("Autopilot_Veto_GetShouldSkipAsyncFailed", JSON.stringify({ error: err }));
                         completeDispatch(true);
                     }
@@ -398,10 +362,8 @@ var CloudExperienceHost;
         function isDevicePlugAndForgetAsync() {
             return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                 EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getOobeSettingsOverrideAsync(EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotOobeSetting.aadAuthUsingDeviceTicket).then(function (result) {
-                    // If result is true, proceed with the Plug and Forget Scenario. Else, proceed with the normal flow.
                     completeDispatch(result);
                 }, function (e) {
-                    // Default to normal flow
                     completeDispatch(false);
                 });
             });
@@ -446,8 +408,6 @@ var CloudExperienceHost;
         }
         AutoPilot.getDeviceAutopilotModeAsync = getDeviceAutopilotModeAsync;
 
-        // This function creates the query string part of the URL to pass-in the ZTD tenant name to eSTS.
-        // This is required to be passed-in up front as opposed to using the CXH bridge since the branding elements are burned into the page upon generation.
         function getZTDQueryStringAsync() {
             return EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getStringPolicyAsync("CloudAssignedTenantDomain").then(function (result) {
                 let ztdQueryString = "";
@@ -460,7 +420,6 @@ var CloudExperienceHost;
         }
         AutoPilot.getZTDQueryStringAsync = getZTDQueryStringAsync;
 
-        // Resource creation function for just Autopilot OOBE pages
         function makeAutopilotResourceObject() {
             var resources = {};
 
@@ -469,9 +428,6 @@ var CloudExperienceHost;
             let currentAppContext = Windows.ApplicationModel.Resources.Core.ResourceContext.getForCurrentView();
             let clonedSystemContext = resourceManager.defaultContext.clone();
 
-            // The resource map needs to use clonedSystemContext as the currentAppContext is from a different resource manager.
-            // To use the correct app context we need to manually copy the qualiferValues over to a context object created by our
-            // system resource manager. (We have to use the system resource manager to load the autopilot system resource.)
             clonedSystemContext.qualifierValues.AlternateForm = currentAppContext.qualifierValues.AlternateForm;
             clonedSystemContext.qualifierValues.Configuration = currentAppContext.qualifierValues.Configuration;
             clonedSystemContext.qualifierValues.Contrast = currentAppContext.qualifierValues.Contrast;
@@ -549,7 +505,6 @@ var CloudExperienceHost;
                     EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getSettingAsync("DPP.devicePreparationPageEnabled").then(
                         (result) => {
                             if ("true" === result) {
-                                // Device Preparation page is enabled, and so don't skip.
                                 completeDispatch(false);
                             } else {
                                 completeDispatch(true);
@@ -557,7 +512,6 @@ var CloudExperienceHost;
                         },
                         errorDispatch);
                 } catch (err) {
-                    // If an exception is thrown, don't enable the Device Preparation page.
                     CloudExperienceHost.Telemetry.logEvent("Autopilot_DevicePreparationPage_getShouldSkipAsyncFailed", JSON.stringify({ error: err }));
                     completeDispatch(true);
                 }

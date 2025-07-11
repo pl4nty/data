@@ -1,4 +1,3 @@
-﻿
 (function () {
     "use strict";
 
@@ -24,7 +23,6 @@
         },
 
         ready: function (element, options) {
-            
             msaTitle.textContent = resources.msaTitle;
             msaText.textContent = resources.msaText;
             signInLink.textContent = resources.signInLink;
@@ -36,13 +34,11 @@
                 }
             });
 
-            
             signInLink.addEventListener("click", function (eventInfo) {
                 eventInfo.preventDefault();
                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.cancel);
             });
 
-            
             finishButton.addEventListener("click", function (eventInfo) {
                 eventInfo.preventDefault();
                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);

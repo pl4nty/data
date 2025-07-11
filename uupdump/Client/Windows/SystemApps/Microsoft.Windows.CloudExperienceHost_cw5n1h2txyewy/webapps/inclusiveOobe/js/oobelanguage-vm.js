@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy/appObjectFactory', 'optional!sample/Sample.CloudExperienceHostAPI.OobeDisplayLanguageManagerCore'], (ko, bridge, constants, core, appObjectFactory) => {
     class LanguageViewModel {
         constructor(resourceStrings, gestureManager, targetPersonality) {
@@ -11,7 +8,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
             this.supportExtraSpaceTitle = true;
             this.optinHotKey = true;
 
-            // Title to be removed in ROOBE only.
             this.removeTitle = (targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite);
 
             this.languages = CloudExperienceHostAPI.OobeDisplayLanguagesCore.getDisplayLanguages();
@@ -75,20 +71,15 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
                 uiHelpers.PortableDeviceHelpers.unsubscribeToDeviceInsertion(this.gestureManager, bridge, core);
 
                 try {
-                    // Show the progress ring while committing async.
-                    // Supply longer custom timeout of 5 minutes as mitigation for multi-minute language commit in images with many language packs.
                     bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy, 300000);
 
                     let languageManager = appObjectFactory.getObjectFromString("CloudExperienceHostAPI.OobeDisplayLanguageManagerCore");
                     let commitLanguage = languageManager.commitDisplayLanguageAsync(this.selectedLanguage());
                     commitLanguage.action.done(() => {
-                        // Notify the frame to change the reading direction after commit
                         bridge.invoke("CloudExperienceHost.AppFrame.updateFrameDirection");
 
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "LanguageCommitSuccess");
                         if (commitLanguage.effects && commitLanguage.effects.rebootRequired) {
-                            // Notify progress UI to update the text in order to notify user the device is going to reboot. This only applies to win10x.
-                            // Win10x will reboot immediately right after the language selection whereas win10 OOBE will postpone the reboot until after ZDP.
                             bridge.invoke("CloudExperienceHost.updateTransitionMessage", this.resourceStringsObservable().rebootMessage);
                             setTimeout(() => {
                                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "CommitLanguageRebootRequired");
@@ -111,8 +102,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
 
         updateLanguage(newLanguage) {
             if (Windows.Globalization.ApplicationLanguages.languages[0] !== newLanguage.tag) {
-                // Though primaryLanguageOverride is disabled for SystemApps, it is needed here to update Windows.Globalization.ApplicationLanguages.languages 
-                // and it won't impact MRT lookups.
                 Windows.Globalization.ApplicationLanguages.primaryLanguageOverride = newLanguage.tag;
                 bridge.invoke("CloudExperienceHost.languageOverridden", newLanguage.tag);
                 this.getUpdatedResourceStrings(newLanguage.tag);

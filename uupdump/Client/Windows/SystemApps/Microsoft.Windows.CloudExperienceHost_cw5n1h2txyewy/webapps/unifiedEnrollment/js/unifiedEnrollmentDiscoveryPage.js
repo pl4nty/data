@@ -1,4 +1,3 @@
-﻿
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -59,9 +58,7 @@ var CloudExperienceHost;
                 UPN: UPNPromise, serverURL: serverURLPromise, secret: secretPromise, authPolicy: authPolicyPromise, enrollmentFlags: enrollmentFlagsPromise, policyServiceFullURL: policyServiceFullURLPromise,
                 enrollmentServiceFullURL: enrollmentServiceFullURLPromise
             }).done(function (result) {
-                
                 bridge.invoke("CloudExperienceHost.UnifiedEnroll.doEnrollment", result.UPN, result.serverURL, result.secret, result.authPolicy, "", result.policyServiceFullURL, result.enrollmentServiceFullURL, correlationVector, result.enrollmentFlags + sslCertInt, "").then(function (result) {
-                    
                     if (MENROLL_E_INVALIDSSLCERT === result.enrollmentErrorCode && sslCertInt === 0) {
                         _invalidCertWarning();
                     } else {
@@ -80,7 +77,6 @@ var CloudExperienceHost;
                                     }, function (e) {
                                         _logFailureEventMam("UnifiedEnrollment_AddMdm_Enrollment_Complete_Mam_To_Mdm_Upgrade_Failed", e);
                                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                                            
                                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                         });
                                     });
@@ -90,7 +86,6 @@ var CloudExperienceHost;
                                     }, function (e) {
                                         _logFailureEventMam("UnifiedEnrollment_AddMdm_Enrollment_Complete_Mam_To_Mdm_Upgrade_Failed", e);
                                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                                            
                                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                         });
                                     });
@@ -102,7 +97,6 @@ var CloudExperienceHost;
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Enrollment_Adding_Enrollment_Federated_Results_Failed",
                                 JSON.stringify({ error: e, correlationVector: correlationVector }));
                             bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                                
                                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                             });
                         });
@@ -111,16 +105,13 @@ var CloudExperienceHost;
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Federated_Enrollment_Failed",
                             JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack, correlationVector: correlationVector }));
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                        
                         bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                     });
                 });
             }, function (e) {
-                
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Enrollment_Retrieving_Federated_Values_Failed",
                     JSON.stringify({ error: e, correlationVector: correlationVector }));
                 bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", "genericError").done(function (result) {
-                    
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                 });
             });
@@ -131,12 +122,10 @@ var CloudExperienceHost;
             EnrollerLeadText.textContent = unifiedEnrollmentResources["InvalidCertLeadText"];
             EnrollerDescription.textContent = unifiedEnrollmentResources["InvalidCertDescription"];
 
-            
             NextButton.addEventListener("click", function (event) {
                 event.preventDefault();
                 _handleMamUpgradeScenario(true);
             });
-            
             var checkAmpersandFor = [NextButton];
             checkAmpersandFor.forEach(function (eachElement) {
                 var result = CloudExperienceHost.ResourceManager.GetContentAndAccesskey(unifiedEnrollmentResources[eachElement.id]);
@@ -151,7 +140,6 @@ var CloudExperienceHost;
         }
 
         function _addEnrollmentOnPremParameters (result) {
-            
             var authPolicyPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_authPolicy", result.authPolicy);
             var enrollmentFlagsPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_enrollmentFlags", result.enrollmentFlags);
             var policyServiceFullURLPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_policyServiceFullURL", result.policyServiceFullURL);
@@ -161,10 +149,8 @@ var CloudExperienceHost;
                 authPolicy: authPolicyPromise, enrollmentFlags: enrollmentFlagsPromise, policyServiceFullURL: policyServiceFullURLPromise, enrollmentServiceFullURL: enrollmentServiceFullURLPromise,
                 federatedAuthenticationService: federatedAuthenticationServicePromise
             }).done(function (result) {
-                
                 bridge.fireEvent(CloudExperienceHost.Events.done, ON_PREM_AUTH_NAVIGATION);
             }, function (e) {
-                
                 _logFailureEvent("UnifiedEnrollment_AddMdm_Discovery_Adding_OnPrem_Values_Failed", e);
             });
         }
@@ -185,7 +171,6 @@ var CloudExperienceHost;
                 federatedAuthenticationService: federatedAuthenticationServicePromise, accessToken: accessTokenPromise, deviceIdentifier: deviceIdentifierPromise, tenantIdentifier: tenantIdentifierPromise,
                 ownership: ownershipPromise
             }).done(function (result) {
-                
                 progressText.textContent = unifiedEnrollmentResources["WABProgressText"];
 
                 bridge.invoke("CloudExperienceHost.UnifiedEnroll.doWebAuth", authURL, upn, result.accessToken, result.deviceIdentifier, result.tenantIdentifier, result.ownership).then(function (result) {
@@ -211,7 +196,6 @@ var CloudExperienceHost;
                     });
                 });
             }, function (e) {
-                
                 _logFailureEvent("UnifiedEnrollment_AddMdm_Discovery_Adding_Federated_Values_Failed", e);
             });
         }
@@ -247,7 +231,6 @@ var CloudExperienceHost;
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_correlation_vector", result);
                     correlationVector = result;
                 }, function (e) {
-                    
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "CorrelationVectorCreationFailure",
                         JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_correlation_vector", 0);
@@ -257,7 +240,6 @@ var CloudExperienceHost;
                 return WinJS.Promise.join({ languagePromise: languagePromise, dirPromise: dirPromise, stringPromise: stringPromise, cssPromise: cssPromise, correlationVectorPromise: correlationVectorPromise });
             },
             ready: function (element, options) {
-                
                 var upnPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_upn");
                 var serverNamePromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_serverUrl");
                 var errorPromise = bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_discovery_error");
@@ -279,18 +261,15 @@ var CloudExperienceHost;
                         isInsecureRedirect = true;
                     }
 
-                    
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_discovery_error", 0);
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_trace_id", "");
 
                     if (!result.serverName) {
-                        
                         bridge.invoke("CloudExperienceHost.UnifiedEnroll.doFindDiscovery", upn, isInsecureRedirect).then(function (result) {
 
                             var discoveryServiceFullURL = result.discoveryServiceFullURL;
                             var isInsecureRedirect = result.isInsecureRedirect;
                             bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_serverUrl", discoveryServiceFullURL).then(function (result) {
-                                
                                 if (isInsecureRedirect) {
                                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_discovery_error", "MENROLL_E_INSECUREREDIRECT").done(function (result) {
                                         bridge.fireEvent(CloudExperienceHost.Events.done, DISCOVERY_ERROR_NAVIGATION);
@@ -300,10 +279,8 @@ var CloudExperienceHost;
                                     bridge.invoke("CloudExperienceHost.UnifiedEnroll.doDiscoverEndpoints", discoveryServiceFullURL, upn, isInvalidSslCert).then(function (result) {
                                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Discovery_DiscoverEndpoints_Succeeded", correlationVector);
                                         if (mdmAuthEnum.MDMAuthPolicyOnPremise === result.authPolicy) {
-                                            
                                             _addEnrollmentOnPremParameters(result);
                                         } else {
-                                            
                                             _addEnrollmentFederatedParameters(upn, result);
                                         }
                                     }, function (e) {
@@ -312,28 +289,22 @@ var CloudExperienceHost;
                                                 bridge.fireEvent(CloudExperienceHost.Events.done, DISCOVERY_ERROR_NAVIGATION);
                                             });
                                         } else {
-                                            
                                             _logFailureEvent("UnifiedEnrollment_AddMdm_Discovery_DiscoverEndpoints_Failed", e);
                                         }
                                     });
                                 }
                             }, function (e) {
-                                
                                 _logFailureEvent("UnifiedEnrollment_AddMdm_Discovery_AddValue_Failed", e);
                             });
                         }, function (e) {
-                            
                             _logFailureEvent("UnifiedEnrollment_AddMdm_Discovery_FindDiscoveryService_Failed", e);
                         });
                     } else {
-                        
                         bridge.invoke("CloudExperienceHost.UnifiedEnroll.doDiscoverEndpoints", result.serverName, upn, isInvalidSslCert).then(function (result) {
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Discovery_DiscoverEndpoints_Succeeded", correlationVector);
                             if (mdmAuthEnum.MDMAuthPolicyOnPremise === result.authPolicy) {
-                                
                                 _addEnrollmentOnPremParameters(result);
                             } else {
-                                
                                 _addEnrollmentFederatedParameters(upn, result);
                             }
                         }, function (e) {
@@ -342,13 +313,11 @@ var CloudExperienceHost;
                                     bridge.fireEvent(CloudExperienceHost.Events.done, DISCOVERY_ERROR_NAVIGATION);
                                 });
                             } else {
-                                
                                 _logFailureEvent("UnifiedEnrollment_AddMdm_Discovery_DiscoverEndpoints_Failed", e);
                             }
                         });
                     }
                 }, function (e) {
-                    
                     _logFailureEvent("UnifiedEnrollment_AddMdm_Discovery_getUpnValue_Failed", e);
                 });
             }

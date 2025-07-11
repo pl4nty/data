@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define(['lib/knockout', 'legacy/bridge', 'legacy/events', "legacy/core"], (ko, bridge, constants, core) => {
+﻿define(['lib/knockout', 'legacy/bridge', 'legacy/events', "legacy/core"], (ko, bridge, constants, core) => {
     const tagRetry = "retry";
     const tagSkip = "skip";
 
@@ -44,7 +41,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', "legacy/core"], (ko, b
         }
 
         startVoiceOver() {
-            // Setup voiceover and speech recognition
             try {
                 CloudExperienceHostAPI.Speech.SpeechRecognition.stop();
                 let constraints = this.createSpeechRecognitionConstraints();

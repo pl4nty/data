@@ -1,8 +1,5 @@
 ﻿"use strict";
 function requireAsync(modules) {
-    /// <summary>Asynchronously loads modules using RequireJs and returns a promise</summary>
-    /// <param name="modules" type="Array">Array of one or more module names</param>
-    /// <returns type="WinJS.Promise">A promise which when fulfilled provides an object where the keys are module names (with "/" squashed to "_") and the values are the loaded module references</returns>
     return new WinJS.Promise((reportComplete, reportError, reportProgress) => {
         require(modules, (...loadedModules) => {
             var result = {};
@@ -16,8 +13,6 @@ function requireAsync(modules) {
     });
 }
 
-// For now, treat F5 deployments as "debug mode"
-// Eventually we should have a minifier set up to strip all Debug calls from call sites in release builds
 (function () {
     let isDebugBuild = self.Windows && Windows.ApplicationModel.Package.current.isDevelopmentMode;
     if (isDebugBuild) {

@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define([
     'lib/knockout',
     'legacy/bridge',
@@ -17,7 +14,6 @@ define([
             this.autoPilotManager = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotServer();
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities();
 
-            // UI element initialization
             this.resourceStrings = resourceStrings;
             this.title = resourceStrings.ProvisioningConfirmationTitle;
             this.isNextButtonDisabled = ko.observable(false);
@@ -26,7 +22,6 @@ define([
             this.diagnosticsIcon = { title: "", description: "", glyph: "\uE713" };
             this.resetIcon = { title: "", description: "", glyph: "\uE777" };
 
-            // Scenario constants
             this.PAGE_TRANSITION_EXPORT_DIAGNOSTICS_PAGE = "OobeExportDiagnostics"; // Must keep in sync with the CXID in Navigation*.json
             this.EXPORTLOGS_PREVIOUS_CXID_NAME = "ExportLogsPreviousCXID";
 
@@ -74,7 +69,6 @@ define([
                 }
             }
 
-            // If the feature isn't enabled then don't shown the Device Link button.
             if (!CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging")) {
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "EnterpriseProvisioning dynamically removing device tagging page");
                 let deviceTaggingPageIndex = this.items.findIndex((element) => (element.valueText == resourceStrings.DeviceLinkLabel));
@@ -83,25 +77,20 @@ define([
                 }
             }
 
-            // By default, show the default view
             this.shouldShowDefaultView = ko.observable(true);
             this.shouldShowDesktopLiteView = ko.observable(false);
             this.selectedItem = ko.observable();
 
-            // Footer hyperlink visibility enumerations
             this.INCLUSIVE_BLUE_FOOTER = 0;
             this.DESKTOP_LITE_FOOTER = 1;
 
             this.hyperlinkVisibility = ko.observable(0);
 
-            // All flags gating visibility of regions of the main content must be added to this
-            // array.
             this.viewVisibilityFlags = [
                 this.shouldShowDefaultView,
                 this.shouldShowDesktopLiteView
             ];
 
-            // Decide which view to toggle on based on the current context's personality.
             if (targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite) {
                 this.hyperlinkVisibility(this.DESKTOP_LITE_FOOTER);
                 this.toggleSingleViewVisibilityOn(this.shouldShowDesktopLiteView);
@@ -114,7 +103,6 @@ define([
             let flexStartHyperlinksSets = {};
             let flexEndButtonsSets = {};
 
-            // Button and hyperlink objects
             let nextButtonObject = {
                 buttonText: this.resourceStrings.ProvisioningConfirmationAcceptButton,
                 buttonType: "button",
@@ -147,13 +135,11 @@ define([
                 }
             };
 
-            // Define hyperlink scenarios
             flexStartHyperlinksSets[this.DESKTOP_LITE_FOOTER] = [];
             flexStartHyperlinksSets[this.INCLUSIVE_BLUE_FOOTER] = [
                 exitHyperlink
             ];
 
-            // Define button scenarios
             flexEndButtonsSets[this.DESKTOP_LITE_FOOTER] = [
                 exitButton,
                 nextButtonObject
@@ -163,7 +149,6 @@ define([
                 nextButtonObject
             ];
 
-            // Commit the hyperlink and button scenarios to knockout
             this.flexStartHyperLinks = ko.pureComputed(() => {
                 return flexStartHyperlinksSets[this.hyperlinkVisibility()];
             });
@@ -175,8 +160,6 @@ define([
 
         exitButtonClick() {
             bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ProvisioningFallbackPage").then(function (aadLoginPageCXID) {
-                // The AADProvisioningPage value does not get set until just before the AAD login page. If the value is non-existent,
-                // it can be assumed that the AAD service did not execute the navigation logic correctly so fall back on the Cancel property.
                 if (aadLoginPageCXID) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Provisioning page was entered from the AAD login page, returning to that CXID.");
                     bridge.fireEvent(constants.Events.done, aadLoginPageCXID);
@@ -204,12 +187,10 @@ define([
             } else if (setupOption === resourceStrings.ProvisioningExportLogsLabel) {
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "EnterpriseProvisioning Export Diagnostics flow chosen")
                 .then(() => {
-                    // Save current CXID
                     return bridge.invoke("CloudExperienceHost.AutoPilot.AutopilotWrapper.GetCurrentNode").then((currentNode) => {
                         return bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.EXPORTLOGS_PREVIOUS_CXID_NAME, currentNode.cxid);
                     })
                 }).then(() => {
-                    // Navigate to export logs page
                     bridge.fireEvent(constants.Events.done, this.PAGE_TRANSITION_EXPORT_DIAGNOSTICS_PAGE);
                 }, (e) => {
                     this.commercialDiagnosticsUtilities.logExceptionEvent(
@@ -246,7 +227,6 @@ define([
                 let generator = makeGenerator.apply(this, arguments);
 
                 function iterateGenerator(result) {
-                    // every yield returns: result => { done: [Boolean], value: [Object] }
                     if (result.done) {
                         return Promise.resolve(result.value);
                     }
@@ -277,7 +257,6 @@ define([
 
         toggleSingleViewVisibilityOn(targetView) {
             try {
-                // Toggle visibility all view off and only the target view on.
                 for (let i = 0; i < this.viewVisibilityFlags.length; i++) {
                     (this.viewVisibilityFlags[i])(false);
                 }

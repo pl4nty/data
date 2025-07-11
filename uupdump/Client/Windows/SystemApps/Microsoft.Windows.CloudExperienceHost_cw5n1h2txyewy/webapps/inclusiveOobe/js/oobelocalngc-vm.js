@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, bridge, constants, core, KoHelpers) => {
     class LocalNGCViewModel {
         constructor(resourceStrings, targetPersonality) {
@@ -28,7 +25,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 }
             ];
 
-            // Setup simple voiceover and speech recognition using the resource strings
             try {
                 CloudExperienceHostAPI.Speech.SpeechRecognition.stop();
                 let localNGCConstraint = new Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint([this.resourceStrings.LocalNGC1SpeechConstraint, this.resourceStrings.LocalNGC2SpeechConstraint]);
@@ -52,7 +48,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             if (!this.processingFlag()) {
                 this.processingFlag(true);
 
-                // Hide content while CredUI is up
                 this.contentContainerVisibility(false);
                 bridge.invoke("CloudExperienceHost.dimChrome");
 
@@ -66,7 +61,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                         this._createLocalPinInternal();
                     }, (e) => {
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "SetTransparencyOnCredUICoordinatorFailed", core.GetJsonFromError(e));
-                        // Failure of the above API is not fatal. Continue with enrollment.
                         this._createLocalPinInternal();
                     });
                 }
@@ -94,10 +88,8 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 this.processingFlag(false);
                 bridge.invoke("CloudExperienceHost.undimChrome");
                 this.contentContainerVisibility(true);
-                // Fire event to hide progress ring on failure
                 bridge.fireEvent(constants.Events.visible, true);
 
-                // Restore focus to the default focusable element as the flow is returning to this page
                 KoHelpers.setFocusOnAutofocusElement();
             });
         }

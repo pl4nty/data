@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode, JS2055.DoNotReferenceBannedTerms</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -27,7 +23,6 @@ var CloudExperienceHost;
             return this._tokenBrokerOperation;
         }
         clearTokenBrokerOperation() {
-            // This should only be called when there is a new ticket request coming from postTicketToReturnUrl.
             if (this._tokenBrokerOperation != null) {
                 let target = this._tokenBrokerOperation.webFlowRequest ? this._tokenBrokerOperation.webFlowRequest.url : "";
                 let policy = this._tokenBrokerOperation.webFlowRequest ? this._tokenBrokerOperation.webFlowRequest.policy : "";
@@ -38,7 +33,6 @@ var CloudExperienceHost;
             }
         }
         _buildTicketRequest(target, policy, onComplete, onError) {
-            // Set PostTicketToUrlOperation
             let webFlowRequest;
             webFlowRequest = new MicrosoftAccount.TokenProvider.Core.PostTicketToUrlOperation();
             webFlowRequest.url = target;
@@ -46,7 +40,6 @@ var CloudExperienceHost;
             webFlowRequest.onComplete = onComplete;
             webFlowRequest.onError = onError;
             webFlowRequest.isRequestTicketForUrlScenario = false;
-            // Set TokenProviderOperation
             let tokenOperation;
             let user = null;
             user = CloudExperienceHost.IUserManager.getInstance().getIUser();
@@ -61,18 +54,15 @@ var CloudExperienceHost;
                 this._appView.showProgress().then(function () {
                     this._webAppTelemetry.logEvent("postTicketToReturnUrl");
                     if (this._tokenBrokerOperation) {
-                        // Concurrent WAM operations are banned. Return ERROR_OPERATION_IN_PROGRESS
                         errorDispatch({ number: -2147024567 });
                         return;
                     }
                     var tokenOperation;
                     tokenOperation = this._buildTicketRequest(data.targetUrl, data.policy, 
-                    // On success, navigate to target
                     function (returnUrl, result) {
                         this._tokenBrokerOperation = null;
                         completeDispatch(new CloudExperienceHost.RedirectEventArgs(returnUrl, null, result, result ? "POST" : "GET"));
                     }.bind(this), 
-                    // On failure, invoke parent error handler in a manner consistent with exceptions.
                     function (error) {
                         this._tokenBrokerOperation = null;
                         errorDispatch({ number: error });
@@ -88,7 +78,6 @@ var CloudExperienceHost;
                     if (user === null) {
                         tokenOperation.useBroker = data.msaTicketBroker;
                     }
-                    // Request ticket
                     var executor;
                     executor = new MicrosoftAccount.TokenProvider.Core.TokenProviderExecutor(tokenOperation);
                     executor.requestTicketForUrl();
@@ -100,7 +89,6 @@ var CloudExperienceHost;
                 this._appView.showProgress().then(function () {
                     let userId = CloudExperienceHost.IUserManager.getInstance().getUserId();
                     if (this._registerNgcOperation) {
-                        // Concurrent NGC operations are banned. Return ERROR_OPERATION_IN_PROGRESS
                         this._webAppTelemetry.logEvent("concurrentNgcRequest", JSON.stringify({
                             correlationId: this._webAppTelemetry.getId()
                         }));
@@ -120,7 +108,6 @@ var CloudExperienceHost;
                     scope += "&ssoappgroup=none";
                     var tokenOperation;
                     tokenOperation = this._buildTicketRequest(scope, "TOKEN_BROKER", 
-                    // On success, return LPT
                     function (ignoredUrl, logonProofToken) {
                         this._registerNgcOperation = null;
                         this._webAppTelemetry.logEvent("requestLPTForUser", JSON.stringify({
@@ -131,7 +118,6 @@ var CloudExperienceHost;
                         }));
                         completeDispatch(logonProofToken);
                     }.bind(this), 
-                    // On failure, invoke parent error handler in a manner consistent with exceptions.
                     function (error) {
                         this._registerNgcOperation = null;
                         this._webAppTelemetry.logEvent("requestLPTForUser", JSON.stringify({
@@ -153,7 +139,6 @@ var CloudExperienceHost;
                     if (user === null) {
                         tokenOperation.useBroker = data.msaTicketBroker;
                     }
-                    // Request ticket
                     var executor;
                     executor = new MicrosoftAccount.TokenProvider.Core.TokenProviderExecutor(tokenOperation);
                     executor.requestLPTForUser(data.puid || "", data.username || "", data.flowToken || "");
@@ -163,7 +148,6 @@ var CloudExperienceHost;
         registerNGCForUser(data, msaTicketContext, experienceName, navigate) {
             return new WinJS.Promise(function (completeDispatch, /* _onTicketRequestComplete */ errorDispatch /*, progressDispatch */) {
                 this.requestLPTForUser(data, msaTicketContext, experienceName, navigate).done(function (logonProofToken) {
-                    // Create NGC
                     var extension = new MicrosoftAccount.UserOperations.ExtensionForUser();
                     let user = null;
                     user = CloudExperienceHost.IUserManager.getInstance().getIUser();
@@ -174,13 +158,9 @@ var CloudExperienceHost;
                     let setChromeDimBasedOnFocus = (CloudExperienceHost.getContext().personality === CloudExperienceHost.TargetPersonality.LiteWhite);
                     let isTransparencyOptionSetOnCredUICoordinator = false;
                     if (setChromeDimBasedOnFocus) {
-                        // hide UI for transparent CredUI
                         this._appView.setChromeDimBasedOnFocus(setChromeDimBasedOnFocus);
                         isTransparencyOptionSetOnCredUICoordinator = CloudExperienceHost.CredUI.setTransparencyOptionOnCredUICoordinator();
                     }
-                    // Prime Ngc logon cache is required if it's NoPa or Federated MSA.
-                    // If PIN is registered from the lock screen (i.e. WindowsLogon scenario), make the priming Ngc logon cache operation synchronously
-                    // to avoid missing the logon cache due to the termination of the runtimebroker.exe.
                     let requirePrimeNgcLogonCache = (data.isNoPassword == true || msaTicketContext === "WindowsLogon");
                     extension.createUserIdKeyForUserAsync(user, data.useStrongAuth, requirePrimeNgcLogonCache, data.username || "", data.puid || "", logonProofTokenBuffer).done(function (hResult) {
                         if (setChromeDimBasedOnFocus) {
@@ -189,7 +169,6 @@ var CloudExperienceHost;
                                 CloudExperienceHost.CredUI.removeTransparencyOptionOnCredUICoordinator();
                             }
                         }
-                        // Finish
                         this._webAppTelemetry.logEvent("registerNGCForUser", JSON.stringify({
                             useStrongAuth: data.useStrongAuth,
                             isNoPassword: (data.isNoPassword == true),
@@ -197,7 +176,6 @@ var CloudExperienceHost;
                             correlationId: this._webAppTelemetry.getId(),
                             hr: hResult
                         }));
-                        // Do not append the hResult in PIN enrollment since server need to create a new page in OOBE if prime Ngc logon cache fail.
                         completeDispatch(data.returnUrl);
                     }.bind(this), function (error) {
                         if (setChromeDimBasedOnFocus) {
@@ -206,7 +184,6 @@ var CloudExperienceHost;
                                 CloudExperienceHost.CredUI.removeTransparencyOptionOnCredUICoordinator();
                             }
                         }
-                        // Error for createUserIdkeyAsync
                         this._webAppTelemetry.logEvent("registerNGCForUser", JSON.stringify({
                             useStrongAuth: data.useStrongAuth,
                             isNoPassword: (data.isNoPassword == true),
@@ -223,7 +200,6 @@ var CloudExperienceHost;
         resetNGCForUser(data, msaTicketContext, experienceName, navigate) {
             return new WinJS.Promise(function (completeDispatch, /* _onTicketRequestComplete */ errorDispatch /*, progressDispatch */) {
                 this.requestLPTForUser(data, msaTicketContext, experienceName, navigate).done(function (logonProofToken) {
-                    // Reset NGC
                     var extension = new MicrosoftAccount.Extension.ExtensionWorkerForUser();
                     let user = null;
                     user = CloudExperienceHost.IUserManager.getInstance().getIUser();
@@ -232,7 +208,6 @@ var CloudExperienceHost;
                         logonProofTokenBuffer = Crypto.CryptographicBuffer.convertStringToBinary(logonProofToken, Crypto.BinaryStringEncoding.utf8);
                     }
                     extension.resetUserIdKeyForUserAsync(user, data.useStrongAuth, data.isNoPassword == true, msaTicketContext, data.username || "", data.puid || "", logonProofTokenBuffer).done(function (hResult) {
-                        // Finish
                         this._webAppTelemetry.logEvent("resetNGCForUser", JSON.stringify({
                             useStrongAuth: data.useStrongAuth,
                             isNoPassword: (data.isNoPassword == true),
@@ -243,7 +218,6 @@ var CloudExperienceHost;
                         let destinationUrl = this._appendErrorCodeToUrl(data.returnUrl, hResult);
                         completeDispatch(destinationUrl);
                     }.bind(this), function (error) {
-                        // Error for resetUserIdkeyAsync
                         this._webAppTelemetry.logEvent("resetNGCForUser", JSON.stringify({
                             useStrongAuth: data.useStrongAuth,
                             isNoPassword: (data.isNoPassword == true),
@@ -302,14 +276,10 @@ var CloudExperienceHost;
             var tokenOperation = this._registerNgcOperation || this._tokenBrokerOperation;
             if (!tokenOperation) {
                 this._webAppTelemetry.logEvent("undefinedTokenOperation");
-                // The unhandled exception handler in tokenProviderManager calls this function, so throwing would cause infinite recursion.
-                // The TokenProvider error handler page calls this function on "OK", so that would cause an infinite loop.
-                // Nothing we can do here if the caller was WAM.
                 return;
             }
             this._appView.showProgress().then(function () {
                 if (tokenOperation.stopListeningForVerificationCode != null) {
-                    // This will not exist in non-Token Broker flows. In those cases, we don't have to worry about cancelling anyway.
                     tokenOperation.stopListeningForVerificationCode();
                 }
                 tokenOperation.wasUserPrompted = true;
@@ -362,15 +332,11 @@ var CloudExperienceHost;
             let tokenOperation = this._registerNgcOperation || this._tokenBrokerOperation;
             if (!tokenOperation) {
                 this._webAppTelemetry.logEvent("undefinedTokenOperation");
-                // The unhandled exception handler in tokenProviderManager calls this function, so throwing would cause infinite recursion.
-                // The TokenProvider error handler page calls this function on "OK", so that would cause an infinite loop.
-                // Nothing we can do here if the caller was WAM.
                 return;
             }
             tokenOperation.wasUserPrompted = true;
             this._appView.showProgress().then(function () {
                 if (tokenOperation.stopListeningForVerificationCode != null) {
-                    // This will not exist in non-Token Broker flows. In those cases, we don't have to worry about cancelling anyway.
                     tokenOperation.stopListeningForVerificationCode();
                 }
                 let msaTokenProvider;
@@ -411,4 +377,3 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.MSAUIHandlerInternal = MSAUIHandlerInternal;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=msauihandler.js.map

@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define(["lib/knockout", "legacy/bridge", "jsCommon/oobe-gesture-manager", "legacy/core", "winjs/ui"], (ko, bridge, gestureManager, core) => {
+﻿define(["lib/knockout", "legacy/bridge", "jsCommon/oobe-gesture-manager", "legacy/core", "winjs/ui"], (ko, bridge, gestureManager, core) => {
     class RetailDemoExitDlgViewModel {
         constructor(params, element) {
             this.dlgContent = ko.observable("");

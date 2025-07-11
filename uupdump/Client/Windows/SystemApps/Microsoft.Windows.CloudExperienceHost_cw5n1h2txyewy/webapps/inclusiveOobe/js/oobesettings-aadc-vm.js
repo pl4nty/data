@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobeSettingsData, bridge, constants, core, KoHelpers) => {
     class OobeSettingsAadcViewModel {
         constructor(resourceStrings, isInternetAvailable, targetPersonality) {
@@ -126,12 +123,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             }
         }
 
-        // Converts the underlying settings objects into a format to pass back onto oobeSettingsData
-        // Also set the necessary setting values for AADC commit
         getSettingsObjectsForAadcCommit() {
-            // List of canonical names of the settings that should be forced to off in the Nth user case
-            // Other settings should be re-committed with their existing values
-            // The primary canonical name definitions are in %SDXROOT%\onecoreuap\shell\cloudexperiencehost\onecore\inc\oobesettingsutil.h
             let nthUserForcedOffSettingsList = [
                 "Location",             // OPBS_Location = 0,       // 0
                 "InputDiagnostics",     // OPBS_InputDiagnostics,   // 1
@@ -147,7 +139,6 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
                 let settingsInGroup = oobeSettingsGroup.getSettings();
                 for (let setting of settingsInGroup) {
                     if (oobeScenario || (nthUserForcedOffSettingsList.indexOf(setting.canonicalName) != -1)) {
-                        // Force setting's value to false for AADC commit if we're in OOBE, or if the setting is per-user and therefore applicable in Nth scenario
                         setting.value = false;
                     }
                     settingsObjects.push(setting);

@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager'], (ko, appViewManager, navManager) => {
     ko.bindingHandlers.addFooterWebView = {
         init: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
@@ -14,8 +11,6 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager'], (k
 
             this._webViewCtrl = document.createElement('x-ms-webview');
             this._webViewCtrl.className = "content-webview";
-            // This doesn't affect exposing any of the content in the webView to narrator, and is required
-            // to enable narrator to navigate backwards from content in the content webview to the breadcrumb bar
             this._webViewCtrl.setAttribute("aria-hidden", "true");
 
             CloudExperienceHost.Globalization.Utils.setDocumentElementLangAndDir();
@@ -55,8 +50,6 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager'], (k
                 this._footerWebViewCtrl = document.createElement('x-ms-webview');
                 this._footerWebViewCtrl.style.width = '100%';
                 this._footerWebViewCtrl.style.height = '100%';
-                // This doesn't affect exposing any of the content in the webView to narrator, and is required
-                // to enable narrator to navigate backwards from content in the content webview to the breadcrumb bar
                 this._footerWebViewCtrl.setAttribute("aria-hidden", "true");
                 CloudExperienceHost.Discovery.getApiRules().done((rules) => {
                     let contractHandler = new CloudExperienceHost.ContractHandler(rules);
@@ -110,14 +103,9 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager'], (k
                     navManager.setDisableBackNavigation(true);
 
                     WinJS.UI.Animation.crossFade(progressElement, view).done(() => {
-                        // We should serialize the hide/show transitions to avoid an earlier hide
-                        // of the progress element stomping on a later show request, but since we don't,
-                        // make sure we at least end up in the final desired state when the animation ends.
                         progressElement.style.display = displayStyle;
                         progressText.focus();
 
-                        // Adjust the live text value so Narrator reads progress after three seconds
-                        // and also on a loop every 30 seconds if progress continues to be up.
                         if (!this._progressTextTimerID) {
                             this._progressTextTimerID = setTimeout(function () {
                                 progressText.textContent = progressText.textContent;
@@ -140,8 +128,6 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager'], (k
                     progressText.setAttribute("aria-hidden", "true");
 
                     if (this._webViewCtrl) {
-                        // Put the focus on the web view control on any show view 
-                        // This will move focus from chrome elements into the page on navigation by voice/back button
                         this._webViewCtrl.focus();
                     }
 
@@ -182,8 +168,6 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager'], (k
                 case CloudExperienceHost.FrameViewModelUpdateType.Dimmed:
                     document.querySelector(".app-content").classList.add("dimmed");
 
-                    // While the frame-hosted webview (if any) is dimmed, progress timers should be cleared to prevent
-                    // the progress text from grabbing Narrator focus.
                     if (this._progressTextTimerID) {
                         clearTimeout(this._progressTextTimerID);
                         this._progressTextTimerID = null;
@@ -196,9 +180,6 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager'], (k
                     progressText.blur();
 
                     if (this._webViewCtrl) {
-                        // Put the focus on the web view control
-                        // This will move focus from chrome elements into somewhere that
-                        // the hosted XAML app can grab on navigation by voice / back button
                         this._webViewCtrl.focus();
                     }
 

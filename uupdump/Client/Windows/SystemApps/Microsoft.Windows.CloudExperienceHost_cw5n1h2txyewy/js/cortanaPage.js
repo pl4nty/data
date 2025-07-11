@@ -1,9 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-// For an introduction to the Page Control template, see the following documentation:
-// http://go.microsoft.com/fwlink/?LinkId=232511
-
+﻿
 (function () {
     "use strict";
     var cortanaResources = {};
@@ -13,15 +8,12 @@
     var isProgressWaiting = false;
 
     function showLearnMoreFlyout() {
-        // Ignore the event if the page is in waiting state.
         if (isProgressWaiting) {
             return;
         }
 
         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Learn more link clicked").done(function (result) {
-            // logged
         }, function (e) {
-            // fail silently
         });
 
         var flyoutButton = document.getElementById("learnMoreLink"); // anchor
@@ -31,7 +23,6 @@
         flyout.winControl.show(flyoutButton, "top", "left");
     }
 
-    // Get offset of element from top of window
     function getPageTop(el) {
         var rect = el.getBoundingClientRect();
         var docEl = document.documentElement;
@@ -75,15 +66,12 @@
         },
 
         ready: function (element, options) {
-            // Dynamically adding text to following elements
             var setContentFor = [cortanaIntro, cortanaPersonaText, cortanaContent, setCortanaOptOut, learnMoreLink, cortanaNextButton, learnMoreHeadline, learnMoreBody, learnMoreBody2];
             for (var i = 0; i < setContentFor.length; i++) {
                 setContentFor[i].innerHTML = cortanaResources[setContentFor[i].id];
             }
 
-            // Opt-Out on Button Press
             setCortanaOptOut.onclick = function () {
-                // Ignore the event if the page is in waiting state.
                 if (isProgressWaiting) {
                     return;
                 }
@@ -91,9 +79,7 @@
                 _setProgressState(true);
 
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Cortana user clicked opt out").done(function (result) {
-                    // logged
                 }, function (e) {
-                    // fail silently
                 });
                 bridge.invoke("CloudExperienceHost.Cortana.setCortanaOptin", 0).done(function () {
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
@@ -102,14 +88,11 @@
                 });
             };
 
-            // Opt in and go to next page
             cortanaNextButton.onclick = function () {
                 _setProgressState(true);
 
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Cortana user clicked opt in").done(function (result) {
-                    // logged
                 }, function (e) {
-                    //fail silently
                 });
                 bridge.invoke("CloudExperienceHost.Cortana.setCortanaOptin", 1).done(function () {
                     bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
@@ -118,13 +101,11 @@
                 });
             };
 
-            // Call to register EaseOfAccess and InputSwitcher controls
             uiHelpers.RegisterEaseOfAccess(easeOfAccess, bridge);
             uiHelpers.RegisterInputSwitcher(inputSwitcher, bridge);
 
             learnMoreLink.addEventListener("click", showLearnMoreFlyout, false);
 
-            // Cortana Animation
             var animation = document.getElementById("cortanaAnimation");
             if (market === "ja")
             {
@@ -135,7 +116,6 @@
                 animation.src = "../media/CortanaAnimation.gif";
             }
 
-            // Cortana Text
             var text =
                 [
                     cortanaResources['cortanaPersonaText2'],
@@ -150,7 +130,6 @@
                 textIndex++;
             }, 8000); //8 seconds for each set of text
 
-            // Enable where both display language and region are supported by Cortana
             if (isMarketSupported() && isRegionSupported()) {
                 bridge.invoke("CloudExperienceHost.Cortana.isCortanaAllowedByPolicy").done(function (result) {
                     if (result) {
@@ -168,7 +147,6 @@
                 return;
             }
 
-            // Helper function to set progress state based on bool parameter
             function _setProgressState(waiting) {
                 isProgressWaiting = waiting;
                 cortanaNextButton.disabled = waiting;

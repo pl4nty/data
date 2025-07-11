@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -20,13 +17,7 @@ define([
     class DeviceLinkViewModel {
         constructor(resourceStrings, rootElement) {
 
-            ////
-            //// Constants section
-            ////
 
-            // Virtual page IDs
-            // A physical page is a .html file.  A physical page can contain multiple virtual pages,
-            // which present the illusion of multiple physical pages.
             this.VIRTUAL_PAGE_ID_UNKNOWN = "Unknown";
             this.VIRTUAL_PAGE_ID_DEVICE_LINK_OPTIONS = "DeviceLinkOptionsVirtualPage";
             this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS = "DeviceLinkProgressVirtualPage";
@@ -34,7 +25,6 @@ define([
             this.VIRTUAL_PAGE_ID_DEVICE_LINK_ERROR_RESULT = "DeviceLinkErrorResultVirtualPage";
             this.VIRTUAL_PAGE_ID_DEVICE_LINK_NOT_SUPPORTED_RESULT = "DeviceLinkNotSupportedResultVirtualPage";
 
-            // Button IDs (bitmask)
             this.BUTTON_ID_UNKNOWN = "Unknown";
             this.BUTTON_ID_CANCEL = "idCancelButton";
             this.BUTTON_ID_NEXT_ENABLED = "idNextEnabledButton";
@@ -43,7 +33,6 @@ define([
             this.BUTTON_ID_EXIT = "idExitButton";
             this.BUTTON_ID_TRY_AGAIN = "idTryAgainButton";
 
-            // Exit statuses
             this.PAGE_EXIT_STATUS_UNKNOWN = 0;
             this.PAGE_EXIT_STATUS_SUCCESS = 1;
             this.PAGE_EXIT_STATUS_SUCCESS_BACK_TO_OOBE_START = 2;
@@ -52,7 +41,6 @@ define([
             this.PAGE_EXIT_STATUS_CANCELED_BACK_TO_OOBE_START = 5;
             this.PAGE_EXIT_STATUS_UNSUPPORTED_BACK_TO_OOBE_START = 6;
 
-            // Troubleshooting model metadata
             this.TSM_PROCESS_NAME = "DeviceLinkPage";
             this.TSM_STATE_CONFIGURE_DEVICE_LINK = "ConfigureDeviceLink";
             this.TSM_STATE_CONFIGURE_DEVICE_LINK_APPLY_DEVICE_LINK = "ApplyDeviceLink";
@@ -67,7 +55,6 @@ define([
             this.TSM_STATE_PAGE_INITIALIZATION = "PageInitialization";
             this.TSM_STATE_REQUEST_DISCOVERY_URL = "RequestDiscoverUrl";
             
-            // Page commands constants (DAP == device association page)
             this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT = "onSuccessfulDapPageExit";
             this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT_TO_OOBE_START = "onSuccessfulDapPageExitToOobeStart";
             this.DAP_COMMANDS_PHASE_ID_ON_ERROR_DAP_PAGE_EXIT = "onErrorDapPageExit";
@@ -75,30 +62,21 @@ define([
             this.DAP_COMMANDS_PHASE_ID_ON_CANCELED_DAP_PAGE_EXIT_TO_OOBE_START = "onCanceledDapPageExitToOobeStart";
             this.DAP_COMMANDS_PHASE_ID_ON_UNSUPPORTED_DEVICE_DAP_EXIT_TO_OOBE_START = "onUnsupportedDeviceDapExitToOobeStart";
 
-            // Lottie animations
             this.LOTTIE_FILE_SUCCESS = "autopilotLottie.json";
             this.LOTTIE_FILE_ERROR = "errorLottie.json";
 
-            // Read the velocity value from the OOBE feature staging API
             this.AUTOPILOT_DEVICE_TAGGING_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging");
 
-            // Device link info format flags
             this.DEVICE_LINK_FORMAT_FLAGS = ModernDeployment.Autopilot.Core.DeviceLinkFormatFlags.json | ModernDeployment.Autopilot.Core.DeviceLinkFormatFlags.base64;
 
-            // HRESULTS
             this.E_AUTOPILOT_DEVICE_LINK_NO_TPM = -2130460668; // 0x8103c004
             this.E_AUTOPILOT_DEVICE_LINK_NO_COMPATIBLE_TPM = -2130460667 // 0x8103c005
 
-            ////
-            //// Member variables section
-            ////
             this.deviceLinkInfo = null;
             this.initializationSucceeded = false;
 
-            // UI element initialization
             this.resourceStrings = resourceStrings;
             
-            // Cache resource strings for reuse
             this.deviceLinkExportSuccessMessage = this.resourceStrings["DeviceLinkExportSuccessText"];
             this.deviceLinkExportErrorMessage = this.resourceStrings["DeviceLinkExportErrorText"];
             this.deviceLinkExportTimeoutMessage = this.resourceStrings["DeviceLinkExportTimeoutText"];
@@ -107,7 +85,6 @@ define([
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities(this.sessionUtilities);
             this.deviceLinkManager = new ModernDeployment.Autopilot.Core.DeviceLinkManager();
 
-            // Initialize button sets
             this.cancelButtonProperties = {
                 automationId: this.BUTTON_ID_CANCEL,
                 buttonText: this.resourceStrings["DeviceLinkCancelButton"],
@@ -184,14 +161,12 @@ define([
                 }
             };
 
-            // Databinding variables determining visibility of virtual page sections; only one is ever true at any given time
             this.showDeviceLinkOptionsVirtualPage = ko.observable(true);
             this.showDeviceLinkProgressVirtualPage = ko.observable(false);
             this.showDeviceLinkSuccessResultVirtualPage = ko.observable(false);
             this.showDeviceLinkErrorResultVirtualPage = ko.observable(false);
             this.showDeviceLinkNotSupportedResultVirtualPage = ko.observable(false);
 
-            // Virtual page properties
             this.allVirtualPages = [];
 
             this.allVirtualPages[this.VIRTUAL_PAGE_ID_DEVICE_LINK_OPTIONS] = {
@@ -236,7 +211,6 @@ define([
                 exitPageStatus: this.PAGE_EXIT_STATUS_UNSUPPORTED_BACK_TO_OOBE_START
             };
 
-            // Misc. data-bound properties
             this.pageTitle = ko.observable(this.resourceStrings["DeviceLinkPageTitleOptions"]);
 
             this.option1Title = ko.observable(this.resourceStrings["DeviceLinkOption1Title"]);
@@ -262,30 +236,23 @@ define([
 
             this.currentVirtualPageId = ko.observable(this.VIRTUAL_PAGE_ID_DEVICE_LINK_OPTIONS);
 
-            // Check the feature is enabled
             if (!this.AUTOPILOT_DEVICE_TAGGING_ENABLED) {
                 return WinJS.Promise.as(CloudExperienceHost.AppResult.abort);
             }
 
-            // Set up the button groupings.
             this.flexEndButtons = ko.pureComputed(() => {
                 return this.allVirtualPages[this.currentVirtualPageId()].buttonSet;
             });
 
             return this.waitForDebuggerAttachmentAsync().then(async () => {
-                // TSM logging
                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE)
                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
             }).then(async () => {
                 try {
-                    // Initialize the device link utilities and get the device link info.
                     this.deviceLinkUtilities = new ModernDeployment.Autopilot.Core.DeviceLinkUtilities();
                     this.deviceLinkInfo = await this.deviceLinkUtilities.getDeviceLinkInfoAsync(this.DEVICE_LINK_FORMAT_FLAGS);
                     this.initializationSucceeded = true;
                 } catch (e) {
-                    // Check if error occurred due to lack of compatible TPM which means device tagging is not supported for the device.
-                    // Otherwise navigate to the error page since we need the deviceLinkUtilities to get the device link info to generate a QR
-                    // code and/or save the device link CSV on the options page.
                     if ((e.number == this.E_AUTOPILOT_DEVICE_LINK_NO_TPM) ||
                         (e.number == this.E_AUTOPILOT_DEVICE_LINK_NO_COMPATIBLE_TPM)) {
                         this.currentVirtualPageId(this.VIRTUAL_PAGE_ID_DEVICE_LINK_NOT_SUPPORTED_RESULT);
@@ -305,10 +272,8 @@ define([
                     await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
                 }
 
-                // Display virtual page
                 this.displayVirtualPage(this.currentVirtualPageId());
 
-                // Signal to OOBE to finally display the page.
                 bridge.fireEvent(CloudExperienceHost.Events.visible, true);
             });
         }
@@ -350,17 +315,14 @@ define([
 
                 this.commercialDiagnosticsUtilities.logInfoEvent("DeviceLinkPage_DebuggerAttachment_Waiting", "DeviceLinkPage: Waiting 5 seconds for debugger to attach.");
 
-                // Loop every 5 seconds waiting for debugger attachment.
                 return WinJS.Promise.timeout(5000).then(() => {
                     return this.waitForDebuggerAttachment();
                 });
             });
         }
 
-        // This method is invoked only when the pgae is fully exiting (as opposed to going to the diagnostics page transiently or to virtual pages).
         async exitPageAsync(pageExitStatus) {
             try {
-                // TODO:  Save page status in registry.
                 let result = CloudExperienceHost.AppResult.success;
                 let dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT;
 
@@ -390,7 +352,6 @@ define([
                         result = CloudExperienceHost.AppResult.cancel;
                         dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_CANCELED_DAP_PAGE_EXIT;
 
-                        // User cancellation is considered successful from a troubleshooting perspective, since it's the intention of the user.
                         await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(
                             this.TSM_PROCESS_NAME, 
                             this.TSM_STATE_PAGE, 
@@ -401,7 +362,6 @@ define([
                         result = CloudExperienceHost.AppResult.action1;
                         dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_CANCELED_DAP_PAGE_EXIT_TO_OOBE_START;
 
-                        // User cancellation is considered successful from a troubleshooting perspective, since it's the intention of the user.
                         await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(
                             this.TSM_PROCESS_NAME, 
                             this.TSM_STATE_PAGE, 
@@ -429,16 +389,13 @@ define([
                         break;
                 }
 
-                // Exiting the page is considered a "virtual subcategory".
                 return this.sessionUtilities.startPhaseStateMachineAsync(
                     dapCommandPhaseId,
                     this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_PREACTION,
                     () => {
-                        // Next, run the action phase. i.e., the DAP command indicates page can exit.
                         return bridge.fireEvent(CloudExperienceHost.Events.done, result);
                     },
                     (actionResultToUse) => {
-                        // Nothing to do since the page is already exiting.
                         return WinJS.Promise.as(true);
                     }
                 );
@@ -459,14 +416,10 @@ define([
                     this.currentVirtualPageId(),
                     nextVirtualPageId));
 
-            // Hide current virtual page.
             this.allVirtualPages[this.currentVirtualPageId()].isVisible(false);
 
-            // Set new virtual page and display it.
-            // First, set the button focus to only the last button.
             for (let i = 0; i < this.allVirtualPages[nextVirtualPageId].buttonSet.length; i++) {
                 if (i == this.allVirtualPages[nextVirtualPageId].buttonSet.length - 1) {
-                    // Last button
                     this.allVirtualPages[nextVirtualPageId].buttonSet[i].isPrimaryButton = true;
                     this.allVirtualPages[nextVirtualPageId].buttonSet[i].autoFocus = true;
                 } else {
@@ -496,12 +449,10 @@ define([
 
             switch (this.currentVirtualPageId()) {
                 case this.VIRTUAL_PAGE_ID_DEVICE_LINK_OPTIONS:
-                    // On the options virtual page.  Cancelling should bring the user back to the enterprise provisioning page.
                     await this.exitPageAsync(this.PAGE_EXIT_STATUS_CANCELED);
                     break;
 
                 case this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS:
-                    // On the progress virtual page.  Cancelling should bring the user back to the options virtual page.
                     this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_OPTIONS);
                     break;
 
@@ -567,7 +518,6 @@ define([
 
             this.DIAGNOSTICS_LOGS_EXPORT_MAX_DURATION_IN_MILLISECONDS = 3 * 60 * 1000; // 3 minutes;
 
-            // Disable the link so the user can't click this many times in parallel.
             this.exportDeviceLinkInfoEnabled(false);
 
             return this.commercialDiagnosticsUtilities.getExportLogsFolderPathAsync().then(
@@ -580,16 +530,13 @@ define([
                     return WinJS.Promise.timeout(
                         this.DIAGNOSTICS_LOGS_EXPORT_MAX_DURATION_IN_MILLISECONDS,
                         this.deviceLinkUtilities.exportDeviceLinkInfoCsvAsync(folderPath, this.DEVICE_LINK_FORMAT_FLAGS)).then(
-                            // Case: Promise completion before time out
                             async () => {
                                 if (hasTimedOut) {
-                                    // Operation timed out already.  No need to do anything else.
                                     return;
                                 }
 
                                 this.commercialDiagnosticsUtilities.logInfoEventName("DeviceLinkPage_ExportDeviceLinkInfo_Succeeded");
 
-                                // Success
                                 this.exportDeviceLinkInfoEnabled(true);
                                 this.exportLinkSuccessResult(this.deviceLinkExportSuccessMessage);
                                 this.showExportLinkSuccess(true);
@@ -597,7 +544,6 @@ define([
                                 await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_EXPORT_DEVICE_LINK_INFO, null);
                             },
 
-                            // Case: Timed out
                             async (e) => {
                                 hasTimedOut = true;
                                 this.exportDeviceLinkInfoEnabled(true);
@@ -631,7 +577,6 @@ define([
             this.successResultBody(
                 this.commercialDiagnosticsUtilities.formatMessage(
                     this.resourceStrings["DeviceLinkSuccessResultBody"],
-                    // TODO:  Replace this test text with real company name.
                     "Contoso, Inc."));
         }
 
@@ -650,7 +595,6 @@ define([
             this.showExportLinkError(false);
 
             if (this.deviceLinkManager.getConfigureDeviceLinkResult() === ModernDeployment.Autopilot.Core.ConfigureDeviceLinkResult.successfullyAppliedLink) {
-                // Device link already applied.
                 await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE_OPTIONS, "Device link is already configured.");
 
                 this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_SUCCESS_RESULT);
@@ -661,7 +605,6 @@ define([
 
         async onProgressVirtualPageVisible() {
             try {
-                // We need to first request the discovery URL for the device link
                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE);
                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_REQUEST_DISCOVERY_URL);
 
@@ -670,7 +613,6 @@ define([
                 if (((discoveryUrlRequestInfo.discoveryUrlRequestResultValue !== ModernDeployment.Autopilot.Core.DiscoveryUrlRequestResult.successfullyRetrievedUrl) &&
                     (discoveryUrlRequestInfo.discoveryUrlRequestResultValue !== ModernDeployment.Autopilot.Core.DiscoveryUrlRequestResult.successfullyRetrievedUrlAndReceivedRedirection)) ||
                     ((discoveryUrlRequestInfo.discoveryUrl == null ) || (discoveryUrlRequestInfo.discoveryUrl.length == 0))) {
-                    // Log the failure and transition to the failure page.
                     await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                         this.TSM_PROCESS_NAME, 
                         this.TSM_STATE_REQUEST_DISCOVERY_URL,
@@ -694,17 +636,12 @@ define([
                 await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_REQUEST_DISCOVERY_URL, `Discovery URL: ${discoveryUrl}, Tenant ID: ${tenantId}`);
 
 
-                // Now attempt to configure the device link
                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK);
 
                 let currentConfigurationStep = null;
         
-                // Call the ConfigureDeviceLinkAsync function and handle progress updates
                 return this.deviceLinkManager.configureDeviceLinkAsync(discoveryUrl, tenantId, null).then(async (result) => {
-                    // Completion callback
-                    // Ensure the user didn't click the cancel button while the device tagging operation was running
                     if (this.currentVirtualPageId() == this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS) {
-                        // Display the results page for either success or failure
                         if (result === ModernDeployment.Autopilot.Core.ConfigureDeviceLinkResult.successfullyAppliedLink) {
                             if (currentConfigurationStep != null) {
                                 await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
@@ -742,7 +679,6 @@ define([
                         await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE, "User cancelled.");
                     }
                 }, async (e) => {
-                    // Error callback
                     await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                         this.TSM_PROCESS_NAME, 
                         this.this.TSM_STATE_CONFIGURE_DEVICE_LINK,
@@ -759,8 +695,6 @@ define([
 
                     this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_ERROR_RESULT);
                 }, async (progress) => {
-                    // Progress callback
-                    // Ensure the user didn't click the cancel button while the device tagging operation was running
                     if (this.currentVirtualPageId() == this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS) {
                         switch (progress) {
                             case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.tpmAttesting:

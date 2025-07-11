@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define([
     'lib/knockout',
     'legacy/bridge',
@@ -17,7 +14,6 @@ define([
     class WhiteGloveViewModel {
         constructor(resourceStrings, isInternetAvailable, targetPersonality) {
 
-            // UI element initialization
             this.resourceStrings = resourceStrings;
             this.organizationName = ko.observable(resourceStrings.WhiteGloveOrganizationNotFound);
             this.profileName = ko.observable(resourceStrings.WhiteGloveProfileNotFound);
@@ -51,19 +47,15 @@ define([
             this.autoPilotManager = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotServer();
             this.pluginManager = new CloudExperienceHostAPI.Provisioning.PluginManager();
 
-            // By default, show the default view
             this.shouldShowDefaultView = ko.observable(true);
             this.shouldShowDesktopLiteView = ko.observable(false);
             this.shouldShowHybridAadjProgress = ko.observable(false);
 
-            // Footer hyperlink visibility enumerations
             this.INCLUSIVE_BLUE_FOOTER = 0;
             this.DESKTOP_LITE_FOOTER = 1;
 
             this.hyperlinkVisibility = ko.observable(0);
 
-            // All flags gating visibility of regions of the main content must be added to this
-            // array.
             this.viewVisibilityFlags = [
                 this.shouldShowDefaultView,
                 this.shouldShowDesktopLiteView
@@ -78,9 +70,6 @@ define([
             this.noInternetErrorCode = 0x800C0003;
             this.timeoutErrorCode = 0x800705B4;
 
-            // Sharable Data Values - must be kept in sync with their values in:
-            // autopilotwhitegloveresult-vm.js
-            // oobeprovisioningprogress-vm.js
             this.whitGloveResultsPageCxid = "AutopilotWhiteGloveLanding";
             this.whiteGloveDJPPIdFailed = "WhiteGloveDJPPFailed";
             this.whiteGloveStartTimeValueName = "AutopilotWhiteGloveStartTime";
@@ -89,7 +78,6 @@ define([
             this.whiteGloveError = this.resourceStrings.WhiteGloveTimeOutError;
             this.whiteGloveQRCodeText = this.resourceStrings.WhiteGloveQRCode;
 
-            // Sharable Data Values used by otadjUtils.js (in ESTS)
             this.djFlowStateEnumName = "OtaDomainJoinState";
             this.djFlowStatePostRebootEnumValue = 2;            
 
@@ -102,7 +90,6 @@ define([
             let flexStartHyperlinksSets = {};
             let flexEndButtonsSets = {};
 
-            // Hyperlink objects
             let cancelHyperlink = {
                 handler: () => {
                     this.exitButtonClick();
@@ -142,14 +129,12 @@ define([
                 }
             };
 
-            // Define hyperlink scenarios
             flexStartHyperlinksSets[this.DESKTOP_LITE_FOOTER] = [];
             flexStartHyperlinksSets[this.INCLUSIVE_BLUE_FOOTER] = [
                 cancelHyperlink,
                 refreshHyperlink
             ];
 
-            // Define Button scenarios
             flexEndButtonsSets[this.DESKTOP_LITE_FOOTER] = [
                 cancelButton,
                 nextButton
@@ -158,7 +143,6 @@ define([
                 nextButton
             ];
 
-            // Commit the button and hyperlink scenarios to knockout
             this.flexStartHyperLinks = ko.pureComputed(() => {
                 return flexStartHyperlinksSets[this.hyperlinkVisibility()];
             });
@@ -189,7 +173,6 @@ define([
                 let generator = makeGenerator.apply(this, arguments);
 
                 function iterateGenerator(result) {
-                    // every yield returns: result => { done: [Boolean], value: [Object] }
                     if (result.done) {
                         return Promise.resolve(result.value);
                     }
@@ -216,7 +199,6 @@ define([
 
         onRefreshKeyPressAsync(data, event)
         {
-            // If the "Enter" key is pressed
             if (event.keyCode == 13) {
                 return this.runAsync(this.onRefreshClickAsync);
             }
@@ -240,7 +222,6 @@ define([
                 }
             }
             catch (error) {
-                // Swallow exception and navigate to results page.
                 yield this.runAsync(this.logFailureEventAsyncGen, autopilotTelemetryUtility.whiteGloveError.AutopilotReset, "failed autopilot reset check", error);
                 yield this.runAsync(this.navigateToResultsPageOnFailureAsyncGen);
             }
@@ -257,14 +238,11 @@ define([
 
                 let autopilotMode = yield this.autoPilotManager.getDeviceAutopilotModeAsync();
                 if (autopilotMode == EnterpriseDeviceManagement.Service.AutoPilot.AutopilotMode.whiteGloveDJPP) {
-                    // If the Autopilot mode is DJ++, do Plug and Forget provisioning and go to OobeDomainJoin node
                     yield this.runAsync(this.launchWhiteGloveDJPPAsyncGen);
                 } else {
-                    // If the Autopilot mode is Canonical, go to Provisioning Progress node
                     bridge.fireEvent(constants.Events.done, constants.AppResult.success);
                 }
             } catch (error) {
-                // Swallow exception and navigate to results page.
                 yield this.runAsync(this.navigateToResultsPageOnFailureAsyncGen);
             }
         }
@@ -273,15 +251,12 @@ define([
             try {
                 let isDjContinuation = yield bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", this.whiteGloveDjContinuationValueName);
                 if (isDjContinuation === true) {
-                    // White Glove DJ++ flow resuming after reboot for domain joining the device.
                     yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "AutopilotWhiteGlove: DJ++ is continuing after reboot.");
 
                     yield this.runAsync(this.refreshUxAsyncGen);
 
-                    // Disable the next button to prevent user from re-initating DJ++ flow
                     this.isNextButtonDisabled(true);
 
-                    // Disable the refresh button to prevent user from refreshing the page during DJ++ flow
                     this.isRefreshButtonDisabled(true);
 
                     this.showHybridAadjProgressView();
@@ -294,7 +269,6 @@ define([
                     yield this.runAsync(this.refreshUxAsyncGen);
                 }
             } catch (error) {
-                // Swallow exception and navigate to results page.
                 yield this.runAsync(this.navigateToResultsPageOnFailureAsyncGen);
             }
         }
@@ -322,7 +296,6 @@ define([
                 var qrData = yield this.autoPilotManager.getDeviceBlobForQRCodeAsync();
                 yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "AutopilotWhiteGlove: QR code result", JSON.stringify({ data: qrData }));
 
-                // If ZtdId was retrieved, display the QR code
                 if (JSON.parse(qrData).ZtdId != "") {
                     let walletBarcode = new Windows.ApplicationModel.Wallet.WalletBarcode(Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.qr, qrData);
 
@@ -336,13 +309,11 @@ define([
                         qrCode.src = URL.createObjectURL(qrImageStream);
                     }
                 } else {
-                    // Else the device is not registered, so display error message and block next button
                     yield this.runAsync(this.logFailureEventAsyncGen, autopilotTelemetryUtility.whiteGloveError.Error, "Unable to get device ZtdId");
                     this.whiteGloveError = this.resourceStrings.WhiteGloveNoProfileError;
                     yield this.runAsync(this.navigateToResultsPageOnFailureAsyncGen);
                 }
             } catch (error) {
-                // If device blob retrieval failed, display error message and block next button
                 yield this.runAsync(this.logFailureEventAsyncGen, autopilotTelemetryUtility.whiteGloveError.Error, "QR blob generation error", error);
                 throw error;
             }
@@ -370,10 +341,8 @@ define([
         *launchWhiteGloveDJPPAsyncGen() {
             this.showHybridAadjProgressView();
 
-            // Disable the refresh button to prevent user from refreshing the page during DJ++ flow
             this.isRefreshButtonDisabled(true);
 
-            // Clear DDS cache and then refresh to kick of TPM attestation
             let startTime = performance.now();
             yield this.autoPilotManager.clearDdsCacheAsync();
 
@@ -384,7 +353,6 @@ define([
             yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "AutopilotWhiteGlove: policy refresh results", JSON.stringify(details));
             yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "AutopilotWhiteGlove: DJ++ waiting for TPM attestation to complete.");
 
-            // Set a 7 minute timeout for TPM attestation
             this.tpmAttestationTimeout = WinJS.Promise.timeout(420000).then(function () {
                 try {
                     this.tpmNotificationManager.removeEventListener(this.tpmAttestationEventName, this.onTpmAttestationCompleteAsync.bind(this));
@@ -410,7 +378,6 @@ define([
         }
 
         onTpmAttestationCompleteAsync(hresult) {
-            // This call chains to the tpmAttestationCompleteAsyncGen event signal caller
             this.runAsync(this.tpmAttestationCompleteAsyncGen, hresult);
         }
 
@@ -418,26 +385,21 @@ define([
             try {
                 yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "AutopilotWhiteGlove: TPM Attestation completed");
 
-                // Stop the TPM attestation timeout
                 this.tpmAttestationTimeout.cancel();
                 this.tpmAttestationTimeout = null;
 
                 if (hresult.target === 0) {
-                    // Enroll the device
                     yield this.runAsync(this.performAadDeviceEnrollmentAsyncGen);
 
-                    // Wait for the offline domain-join blob to be applied.
                     yield this.runAsync(this.waitForDomainJoinAsyncGen);
 
                 } else {
-                    // If TPM attestation fails and returns an error code, then log it and navigate to failure page
                     let errorHresult = this.formatNumberAsHexString(hresult.target, 8);
                     this.whiteGloveError = this.formatMessage(this.resourceStrings.BootstrapPageDevicePreparationTpmError, errorHresult);
                     this.runAsync(this.navigateToResultsPageOnFailureAsyncGen);
                 }
             } catch (error) {
                 yield this.runAsync(this.logFailureEventAsyncGen, autopilotTelemetryUtility.whiteGloveError.Tpm, "tpmAttestationCompleteAsyncGen failed", error);
-                // This call chains to the tpmAttestationCompleteAsyncGen event signal caller need to try/catch and handle redirection here instead of handleButtonClickAsyncGen
                 yield this.runAsync(this.navigateToResultsPageOnFailureAsyncGen);
             }
         }
@@ -529,9 +491,6 @@ define([
         } 
 
         *exitDJFlowAsyncGen() {
-            // This SharableData variable is used by the DJ++ (otadjUtils in ESTS) code to skip right to the final
-            // domain connectivity check post-reboot, so the user flow can skip AAD authentication in OOBE since the ODJ
-            // has already been applied in technician flow.
             yield bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.djFlowStateEnumName, this.djFlowStatePostRebootEnumValue);
                         
             yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "AutopilotWhiteGlove: exiting DJ++ flow.");
@@ -542,10 +501,8 @@ define([
             yield bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "AutopilotWhiteGlove: DJ++ triggering reboot.");
 
             try {
-                // Set the AutopilotWhiteGlove landing as the page to resume post-reboot
                 yield bridge.invoke("CloudExperienceHost.setRebootForOOBE", this.whitGloveResultsPageCxid);
 
-                // Navigate to the OobeReboot node to trigger the reboot.
                 bridge.fireEvent(constants.Events.done, CloudExperienceHost.AppResult.action2);
 
             } catch (error) {
@@ -597,7 +554,6 @@ define([
             yield bridge.invoke("CloudExperienceHost.Storage.SharableData.removeValue", this.whiteGloveDjContinuationValueName);
             yield bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.whiteGloveSuccessValueName, this.whiteGloveError);
 
-            // Navigate to the results page on failures.
             bridge.fireEvent(constants.Events.done, CloudExperienceHost.AppResult.fail);
         }
 
@@ -667,7 +623,6 @@ define([
 
         toggleSingleViewVisibilityOn(targetView) {
             try {
-                // Toggle visibility all view off and only the target view on.
                 for (let i = 0; i < this.viewVisibilityFlags.length; i++) {
                     (this.viewVisibilityFlags[i])(false);
                 }

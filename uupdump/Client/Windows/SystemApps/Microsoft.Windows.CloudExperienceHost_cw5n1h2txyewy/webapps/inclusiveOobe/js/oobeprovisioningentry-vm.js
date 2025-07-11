@@ -1,10 +1,6 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, bridge, constants, core) => {
     class ProvisioningEntryViewModel {
         constructor(resourceStrings, oobeProvisioningData) {
-            // Variables definitions
             this.packageItems = ko.observableArray();
             this.selectedPackage = ko.observable();
             this.processingFlag = ko.observable(false);
@@ -20,12 +16,10 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
                 this.packageItems.push(packagePath);
             });
 
-            // Default select first package
             this.selectedPackage(ko.utils.arrayFirst(this.packageItems(), (item) => {
                 return true;
             }));
 
-            // UI element initialization
             this.resourceStrings = resourceStrings;
 
             titleStrings["main"] = resourceStrings.ProvisioningEntryTitle;
@@ -100,7 +94,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         }
 
         setupVoiceOverAndSpeechRecognition(componentName) {
-            // Setup simple voiceover and speech recognition using the resource strings
             try {
                 CloudExperienceHostAPI.Speech.SpeechRecognition.stop();
                 let cancelConstraint = new Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint(new Array(this.resourceStrings.ProvisioningEntryBackButtonText));
@@ -161,9 +154,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         }
 
         ready() {
-            // If we only have one package, skip to applying it
             if (this.componentName() == "single_package") {
-                // Automatically enroll the provisioning package for users.
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "AutomaticallyApplyAcquiredPackage");
                 this.onNext();
             }

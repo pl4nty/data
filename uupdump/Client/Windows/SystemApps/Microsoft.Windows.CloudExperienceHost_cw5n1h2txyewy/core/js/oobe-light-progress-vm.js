@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/navigationManager', 'legacy/appViewManager'], (ko, navManager, appViewManager) => {
     class OobeLightProgressViewModel {
         constructor(params) {
@@ -59,27 +56,16 @@ define(['lib/knockout', 'legacy/navigationManager', 'legacy/appViewManager'], (k
                 let progressTextEle = document.getElementById("_progressText");
                 progressTextEle.style.opacity = 0;
 
-                // Change progress ring context and wait for a navmesh supplied amount of time (default 15 seconds) before ending EndUserSession OOBE and dropping to desktop
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeInEnduserSession")) {
-                    let progressTextTimeout = 15000;
-                    let timeoutCurr = CloudExperienceHost.getNavMesh().getShowProgressTextAtEndTimeout();
-                    if (timeoutCurr != null) {
-                        progressTextTimeout = timeoutCurr;
-                    }
-                    WinJS.Promise.timeout(progressTextTimeout).then(function () {
-                        let res = new Windows.ApplicationModel.Resources.ResourceLoader("resources");
-                        progressTextEle.style.opacity = 1;
-                        progressTextEle.innerHTML = res.getString("EndOfWebappsProgress");
-                    });
+                let progressTextTimeout = 15000;
+                let timeoutCurr = CloudExperienceHost.getNavMesh().getShowProgressTextAtEndTimeout();
+                if (timeoutCurr != null) {
+                    progressTextTimeout = timeoutCurr;
                 }
-                else {
-                    // Change Progress ring context after 15 seconds
-                    WinJS.Promise.timeout(15000).then(function () {
-                        let res = new Windows.ApplicationModel.Resources.ResourceLoader("resources");
-                        progressTextEle.style.opacity = 1;
-                        progressTextEle.innerHTML = res.getString("EndOfWebappsProgress");
-                    });
-                }
+                WinJS.Promise.timeout(progressTextTimeout).then(function () {
+                    let res = new Windows.ApplicationModel.Resources.ResourceLoader("resources");
+                    progressTextEle.style.opacity = 1;
+                    progressTextEle.innerHTML = res.getString("EndOfWebappsProgress");
+                });
             }
         }
     }

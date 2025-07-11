@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, bridge, constants, core, KoHelpers) => {
 
     class UpdateSettingsViewModel {
@@ -11,12 +8,10 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             this.updateSettingsObjects = oobeUpdateSettingsToggles.updateSettingsObjects;
             this.updateSettingsImage = "/webapps/inclusiveOobe/media/oobe-update-settings.svg";
 
-            // Log telemetry for Default Settings
             for (let setting of this.updateSettingsObjects) {
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "DefaultUpdateSetting_" + setting.id, setting.value);
             }
 
-            // observable to monitor page view change
             this.viewName = ko.observable("customize");
 
             let mainTitleTextStrings = {};
@@ -138,7 +133,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             if (!this.processingFlag()) {
                 this.processingFlag(true);
                 try {
-                    // Show the progress ring while committing async.
                     bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
                     let settings = this.updateSettingsObjects;
                     CloudExperienceHostAPI.OobeUpdateSettingsManagerStaticsCore.commitUpdateSettingsAsync(settings).done(function () {
@@ -168,7 +162,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
         }
 
         getUpdateSettingsToggles() {
-            //initialize the settingsData object
             let updateSettingsData  = [];
             let updateSettingsObjects = [];
             let oobeUpdateSettings = CloudExperienceHostAPI.OobeUpdateSettingsManagerStaticsCore.getSettings();

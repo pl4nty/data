@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -31,7 +27,6 @@ var CloudExperienceHost;
 
         function getShouldSkipAsync() {
             return new WinJS.Promise(function (completeDispatch, errorDispatch) {
-                // China devices should skip OneDrive-related nodes, as they'll timeout in navigating to the OneDrive endpoint
                 let oneDriveExcludedRegionList = ["cn", "chn"];
                 if (oneDriveExcludedRegionList.indexOf(CloudExperienceHost.Globalization.GeographicRegion.getCode().toLowerCase()) > -1) {
                     completeDispatch(true);

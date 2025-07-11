@@ -1,4 +1,3 @@
-﻿
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -40,7 +39,6 @@ var CloudExperienceHost;
                     event.preventDefault();
                     this._onNext.apply(this);
                 }.bind(this));
-                
                 var checkAmpersandFor = [NextButton];
                 checkAmpersandFor.forEach(function (eachElement) {
                     var result = CloudExperienceHost.ResourceManager.GetContentAndAccesskey(unifiedEnrollmentResources[eachElement.id]);
@@ -50,9 +48,7 @@ var CloudExperienceHost;
 
                 bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_discovery_error").then(function (result) {
                     var discoveryError = result;
-                    
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_discovery_error", 0);
-                    
                     bridge.invoke("CloudExperienceHost.Storage.PrivateData.addItem", "ue_private_discovery_error", discoveryError).then(function (result) {
                         if (discoveryError === "MENROLL_E_INVALIDSSLCERT") {
                             Title.textContent = unifiedEnrollmentResources["InvalidCertTitle"];

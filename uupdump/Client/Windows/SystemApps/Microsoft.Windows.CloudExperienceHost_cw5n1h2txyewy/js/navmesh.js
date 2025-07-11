@@ -1,8 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
-/// <reference path="error.ts" />
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -48,7 +43,6 @@ var CloudExperienceHost;
             return this.getNode(this.getDiagnosticsNodeName());
         }
         getDiagnosticsNodeName() {
-            // The first time this function is called, it will check if navigation should be to the ROOBE page
             if (typeof (this._mesh.diagnostics) !== "string") {
                 this._mesh.diagnostics = this.evaluateOverridableValue(this._mesh.diagnostics);
             }
@@ -58,15 +52,12 @@ var CloudExperienceHost;
             return this._mesh.notifyOnFirstVisible;
         }
         getNotifyOnLastFinished() {
-            // getNotifyOnLastFinished could be called when closing CXH before the mesh object is created
             return (this._mesh != null) && this._mesh.notifyOnLastFinished;
         }
         getWaitForTaskbarReady() {
-            // getWaitForTaskbarReady could be called when hosting a "per-user setup" flow that blocks the logon, so that the host app can be kept visible until the desktop and taskbar are ready
             return (this._mesh != null) && this._mesh.waitForTaskbarReady;
         }
         getShowProgressTextAtEndTimeout() {
-            // getShowProgressTextAtEndTimeout should be called to determine how long we wait on the progress spinner pane before showing text under the spinner
             return (this._mesh != null) && this._mesh.showProgressTextAtEndTimeout;
         }
         getMsaTicketContext() {
@@ -186,4 +177,3 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.NavMesh = NavMesh;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=navmesh.js.map

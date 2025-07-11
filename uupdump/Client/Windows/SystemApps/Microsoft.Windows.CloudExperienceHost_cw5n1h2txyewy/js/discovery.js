@@ -1,8 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
-/// <reference path="error.ts" />
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -113,9 +108,6 @@ var CloudExperienceHost;
             return launchSurface;
         }
         static RemovePIIFromExperienceDescription(experience) {
-            // Remove the query string from the source as it has the potential to contain PII
-            // Also filter out the "query" and "paramsParsed" elements entirely
-            // 'params' can be kept via a recursive strategy (only allow sub-params that we know don't contain PII)
             let experienceToReturn = Object.assign({}, experience);
             experienceToReturn.source = CloudExperienceHost.UriHelper.RemovePIIFromUri(experienceToReturn.source);
             let descriptionAllowlist = [
@@ -123,7 +115,6 @@ var CloudExperienceHost;
                 'protocol',
                 'host',
                 'port',
-                // 'query', explicitly block this to avoid sending the query string
                 'params',
                 'ocid',
                 'ccid',
@@ -221,7 +212,6 @@ var CloudExperienceHost;
         static _processCloudJson(mesh, experience, target) {
             return new WinJS.Promise(function (completeDispatch) {
                 if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("StaticCloudNavmesh")) {
-                    // If feature is disabled, just return the starting mesh without changes
                     completeDispatch(mesh);
                     return;
                 }
@@ -234,7 +224,6 @@ var CloudExperienceHost;
                     CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("RetrievingCloudNavmesh", url);
                     let timeout = cloudOverride.retrievalTimeout;
                     if (timeout === undefined) {
-                        // 5 second timeout if not otherwise specified
                         timeout = 5000;
                     }
                     Discovery._getCloudMeshJson(url, timeout, experience).then(function (response) {
@@ -245,13 +234,10 @@ var CloudExperienceHost;
                             completeDispatch(cloudMesh);
                         }
                         else {
-                            // Unable to find updated mesh in cloud response, return original mesh
                             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("CloudNavmeshExperienceNotFound");
                             completeDispatch(mesh);
                         }
                     }, function (e) {
-                        // an error in getCloudMeshJson isn't fatal, we just return the original mesh
-                        // The error thrown when xhr is canceled has a message property, not a statusText property.
                         let details = e.statusText ? e.statusText : e.message;
                         CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("CloudNavmeshError", details);
                         completeDispatch(mesh);
@@ -316,11 +302,6 @@ var CloudExperienceHost;
                     var mesh = navigationList[exp];
                     if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("StaticCloudNavmesh")) {
                         if (mesh) {
-                            // The nav mesh may specify an optional "urlint" property to be used in place
-                            // of "url" when the target environment is INT (as opposed to PROD). In that
-                            // case, we replace the contents of the "url" property with "urlint" when
-                            // present. We also always delete all "urlint" properties from the mesh, to
-                            // eliminate the possibility that the wrong URL will be selected later.
                             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavMeshPreReplace", JSON.stringify(mesh));
                             let target;
                             try {
@@ -347,21 +328,12 @@ var CloudExperienceHost;
                             });
                         }
                         else {
-                            // If we tried to load a Scenario not defined in the parsed navigationList,
-                            // it could be a scenario from a .json file that wasn't packaged on the install
-                            // or an invalid param passed in from protocol activation.
-                            // We don't want to blow up here so that control can return to appmanager to cleanly exit the app.
                             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavigationMeshNotDefinedInJson", exp);
                             completeDispatch(mesh);
                         }
                     }
                     else {
                         if (mesh) {
-                            // The nav mesh may specify an optional "urlint" property to be used in place
-                            // of "url" when the target environment is INT (as opposed to PROD). In that
-                            // case, we replace the contents of the "url" property with "urlint" when
-                            // present. We also always delete all "urlint" properties from the mesh, to
-                            // eliminate the possibility that the wrong URL will be selected later.
                             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavMeshPreReplace", JSON.stringify(mesh));
                             let target;
                             try {
@@ -385,10 +357,6 @@ var CloudExperienceHost;
                             });
                         }
                         else {
-                            // If we tried to load a Scenario not defined in the parsed navigationList,
-                            // it could be a scenario from a .json file that wasn't packaged on the install
-                            // or an invalid param passed in from protocol activation.
-                            // We don't want to blow up here so that control can return to appmanager to cleanly exit the app.
                             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavigationMeshNotDefinedInJson", exp);
                         }
                         completeDispatch(mesh);
@@ -415,4 +383,3 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.Discovery = Discovery;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=discovery.js.map

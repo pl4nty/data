@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -47,7 +43,6 @@ var CloudExperienceHost;
         }
         Cortana.isCortanaAllowedByPolicy = isCortanaAllowedByPolicy;
 
-        // market and region checks are copied from cortana page
         function isCortanaSupportedByMarket() {
             try {
                 const market = CloudExperienceHost.Globalization.Language.getPreferredLang().toLowerCase();
@@ -93,7 +88,6 @@ var CloudExperienceHost;
         }
         Cortana.callSetCortanaOptinUsingIUser = callSetCortanaOptinUsingIUser;
 
-        // Get all the strings via bridge
         function localizedStrings() {
             var cortanaResources = {};
             var keyList = ['cortanaIntro', 'cortanaPersonaText', 'cortanaPersonaText2', 'cortanaPersonaText3', 'cortanaContent', 'setCortanaOptOut', 'learnMoreLink', 'cortanaNextButton', 'learnMoreHeadline', 'learnMoreBody', 'learnMoreBody2'];

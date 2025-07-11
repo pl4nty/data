@@ -1,12 +1,8 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 (() => {
     WinJS.UI.Pages.define("/webapps/inclusiveOobe/view/oobenetworklosserror-main.html", {
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Load css per scenario
             let loadCssPromise = requireAsync(['legacy/uiHelpers', 'legacy/bridge']).then((result) => {
                 return result.legacy_uiHelpers.LoadCssPromise(document.head, "", result.legacy_bridge);
             });
@@ -15,7 +11,6 @@
                 return result.legacy_uiHelpers.LangAndDirPromise(document.documentElement, result.legacy_bridge);
             });
 
-            // Load resource strings
             let getLocalizedStringsPromise = requireAsync(['legacy/bridge']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.StringResources.makeResourceObject", "oobeNetworkLossError");
             }).then((result) => {
@@ -31,12 +26,10 @@
         },
         ready: (element, options) => {
             require(['lib/knockout', 'corejs/knockouthelpers', 'legacy/bridge', 'legacy/events', 'oobenetworklosserror-vm', 'lib/knockout-winjs', 'corejs/xy-transfer-wrapper-down'], (ko, KoHelpers, bridge, constants, NetworkLossErrorViewModel) => {
-                // Setup knockout customizations
                 koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                 window.KoHelpers = KoHelpers;
 
-                // Apply bindings and show the page
                 let vm = new NetworkLossErrorViewModel(this.resourceStrings);
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {

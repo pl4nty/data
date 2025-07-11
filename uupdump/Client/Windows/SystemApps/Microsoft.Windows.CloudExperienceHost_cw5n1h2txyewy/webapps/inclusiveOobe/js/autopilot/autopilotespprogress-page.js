@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -9,7 +6,6 @@
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Get the scenario context, then load the css for the scenario
             let getContextAndLoadCssPromise = requireAsync(['legacy/bridge']).then((result) => {
                 result.legacy_bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "BootstrapStatus: Loading page context");
 
@@ -33,15 +29,12 @@
                 return requireAsync(['legacy/uiHelpers', 'legacy/bridge', 'legacy/core']);
             }).then((result) => {
                 if (this.isInOobe) {
-                    // Device ESP
                     return result.legacy_uiHelpers.LoadCssPromise(document.head, "", result.legacy_bridge);
                 } else {
-                    // User ESP should also use the FRXINCLUSIVE (OOBE) stylesheet
                     return result.legacy_uiHelpers.LoadPersonalityCssPromise(document.head, "", this.targetPersonality, result.legacy_bridge);
                 }
             }).then(() => {
                 if (!this.isInOobe && this.targetPersonality === CloudExperienceHost.TargetPersonality.InclusiveBlue) {
-                    // Set the background as the same color as the inner webapp to match the other webapps in the scenario
                     document.getElementById('_htmlRoot').style.background = '#004275';
                 }
             });
@@ -50,7 +43,6 @@
                 return result.legacy_uiHelpers.LangAndDirPromise(document.documentElement, result.legacy_bridge);
             });
 
-            // Load resource strings
             let getLocalizedStringsPromise = requireAsync(['legacy/bridge', 'legacy/core']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.AutoPilot.makeAutopilotResourceObject").then((resultString) => {
                     this.resourceStrings = JSON.parse(resultString);
@@ -59,7 +51,6 @@
                 });
             });
 
-            // Load flag indicating whether PPKG processing should occur.
             this.runProvisioning = false;
 
             let runProvisioningPromise = requireAsync(['legacy/bridge']).then((result) => {
@@ -68,7 +59,6 @@
                 this.runProvisioning = (result === 1);
             });
 
-            // Load flag indicating whether MDM session tasks need to be restored.
             this.restoreMdmTasks = false;
 
             let restoreMdmTasksPromise = requireAsync(['legacy/bridge']).then((result) => {
@@ -119,12 +109,8 @@
                     deviceSetupCategoryViewModel,
                     accountSetupCategoryViewModel) => {
 
-                    // Create the global session utilities object used by all classes.
-                    // Having a single global object lets classes communication with each other 
-                    // (e.g., pass data) more easily.
                     this.sessionUtilities = new bootstrapSessionGeneralUtilities(this.isInOobe);
 
-                    // Store state used by other classes.
                     this.sessionUtilities.storeSettingAsync(
                         this.sessionUtilities.STATE_NAME_GLOBAL_RUN_PROVISIONING,
                         this.runProvisioning ? "true" : "false");
@@ -137,28 +123,21 @@
                         this.sessionUtilities.STATE_NAME_GLOBAL_MDM_ENROLLMENT_STATUS,
                         this.sessionUtilities.MDM_ENROLLMENT_DISPOSITION[EnterpriseDeviceManagement.Service.AutoPilot.EnrollmentDisposition.unknown]);
 
-                    // Register categories to display here.  Categories are displayed in the same order
-                    // on the page as listed here.
                     let categoryRegistrations = [
                         devicePreparationCategoryViewModel,
                         deviceSetupCategoryViewModel,
                         accountSetupCategoryViewModel
                     ];
                         
-                    // Setup knockout customizations
                     let koPageHelpers = new koHelpers();
                     koPageHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.LightProgress, true /*holdForAdditionalRegistration*/);
                     koPageHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                     window.KoHelpers = koHelpers;
 
-                    // Instantiate status categories.  Each category dynamically creates the HTML for the category
-                    // and appends the HTML to this categoriesTable.
                     let categoriesTable = element.querySelector((this.targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite) ? "#categoriesTableLite" : "#categoriesTable");
 
-                    // Only needs to be done in Lite White personality.
                     if (this.targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite)
                     {
-                        // Set main body width to page and center
                         categoriesTable.setAttribute("width", "100%");
                         categoriesTable.setAttribute("display", "flex");
                         categoriesTable.setAttribute("justify-content", "center");
@@ -176,20 +155,17 @@
                                 this.resourceStrings,
                                 this.sessionUtilities)));
 
-                        // Save off the current category's promise that performs category-specific initialization.
                         let currentInitializationPromise = categoryViews[i].getInitializationPromise();
                         if (currentInitializationPromise !== null) {
                             categoryViewInitializationPromises.push(currentInitializationPromise);
                         }
 
-                        // Only needs to be done in Lite White personality.
                         if (this.targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite)
                         {
                             categoriesTable.appendChild(categoryViews[i].getCategoryBody());
                         }
                     }
 
-                    // Apply bindings and show the page
                     let vm = new autopilotEspProgressViewModel(
                         this.resourceStrings,
                         this.targetPersonality,

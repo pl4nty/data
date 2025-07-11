@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -55,7 +51,6 @@ var CloudExperienceHost;
                 let isPinned = mobileExperienceManager.mobilityExperienceSettings.yourPhoneTaskbarIconCreated;
                 let hasPreviouslyPaired = mobileExperienceManager.mobilityExperienceSettings.hasPreviouslyPaired;
 
-                // Skip the MMX node if user is opted in and GG is pinned
                 ((isOptedIn && isPinned) || hasPreviouslyPaired) ? completeDispatch(true) : completeDispatch(false);
             });
         }
@@ -70,7 +65,6 @@ var CloudExperienceHost;
             mobileExperienceManager.mobilityExperienceSettings.createYourPhoneTaskbarIconIfNeeded(linkedMobileOS, selectedMobileOS, segmentMobileOS);
         }
 
-        // These are added for Settings only because OOBE will not have these values set or enabled
         function getSettingsQueryString() {
             let flightingInfo = CloudExperienceHostAPI.ContentDeliveryManagerHelpers.getFlightingInfo();
             let queryString = getQueryString();

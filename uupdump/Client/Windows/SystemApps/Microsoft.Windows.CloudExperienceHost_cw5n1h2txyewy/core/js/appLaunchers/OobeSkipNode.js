@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-
+﻿
 define(() => {
     class OobeSkipNode {
         launchAsync() {

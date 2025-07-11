@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 define(['legacy/core'], (core) => {
     class OOBEAutoPilot {
@@ -10,7 +7,6 @@ define(['legacy/core'], (core) => {
                     const OS_DEFAULT = "os-default";
                     let autoPilot = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotServer();
                     switch (currentNode.policyName) {
-                        // Set language
                         case "CloudAssignedLanguage":
                             try {
                                 CloudExperienceHost.AutoPilot.logInfoEvent(
@@ -28,7 +24,6 @@ define(['legacy/core'], (core) => {
                                     let languages = CloudExperienceHostAPI.OobeDisplayLanguagesCore.getDisplayLanguages();
                                     let policyLanguage = languages.find((language) => language.tag.localeCompare(policyValue, undefined, { sensitivity: 'base' }) === 0); // String-insensitive compare, allows accent marks to be treated the same if the same base
 
-                                    // If no match on installed languages or policy value is "os-default", set to the first (defaulted) language in the list
                                     if ((!policyLanguage) ||
                                         (policyValue === OS_DEFAULT)) {
                                         policyLanguage = languages[0];
@@ -54,7 +49,6 @@ define(['legacy/core'], (core) => {
                             }
                             break;
 
-                        // Set region
                         case "CloudAssignedRegion":
                             try {
                                 CloudExperienceHost.AutoPilot.logInfoEvent(
@@ -88,16 +82,12 @@ define(['legacy/core'], (core) => {
                                             CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_AutopilotRegion_RebootRequired", "CommitRegionRebootRequired");
                                         }
 
-                                        // Additionally, set the keyboard since language and region have already been established.
-                                        // This avoids the necessity of creating another appLauncher node after OobeKeyboard
-                                        // when we've already determined the keyboard(s) at this point.
                                         let keyboardManager = AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeKeyboardManagerStaticsCore");
                                         let keyboards = CloudExperienceHostAPI.OobeKeyboardStaticsCore.getKeyboardsForDefaultInputLanguage();
                                         let defaultKeyboard = [keyboards[0]]; // Set to the first default keyboard in the list
                                         keyboardManager.commitKeyboardsAsync(defaultKeyboard).done(() => {
                                             CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_AutopilotKeyboard_SettingApplication_Succeeded", "Keyboard set by AutoPilot policy");
 
-                                            // Notify the chrome footer to update the input switch button
                                             CloudExperienceHost.setShowInputSwitchButton();
 
                                             completeDispatch(CloudExperienceHost.AppResult.success);
@@ -121,11 +111,8 @@ define(['legacy/core'], (core) => {
                         case "offlineCheck":
                             autoPilot.getStringPolicyAsync("CloudAssignedTenantId").then(function (policyValue) {
                                 if ((policyValue === null) || (policyValue === "")) {
-                                    // No valid autopilot profile since there is no valid Tenant ID in Autopilot profile.
-                                    // success as "no autopilot profile"
                                     completeDispatch(CloudExperienceHost.AppResult.success);
                                 } else {
-                                    // Take action1, since there is a valid autopilot profile.
                                     completeDispatch(CloudExperienceHost.AppResult.action1);
                                 }
                             }, function (err) {
@@ -137,7 +124,6 @@ define(['legacy/core'], (core) => {
                             let pluginManager = new CloudExperienceHostAPI.Provisioning.PluginManager();
                             let isAutopilotReset = pluginManager.isPostPowerwash();
 
-                            // This tells the AAD sign in service to enable navigation to the Enterprise Provisioning page
                             CloudExperienceHost.Storage.SharableData.addValue("AADProvisioningPage", "OobeEnterpriseProvisioning");
 
                             if (isAutopilotReset === true) {
@@ -146,11 +132,9 @@ define(['legacy/core'], (core) => {
                                 let isHybridDomainJoinEnabled = (await EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getDwordPolicyAsync("CloudAssignedDomainJoinMethod") === 1);
 
                                 if (isHybridDomainJoinEnabled) {
-                                    // Skip Hybrid DJ
                                     CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_AutopilotPostReset_DomainJoinFlow_Skipped", "Skipping domain join flow due to Autopilot reset.");
                                     completeDispatch(CloudExperienceHost.AppResult.action2);
                                 } else {
-                                    // Skip AAD registration
                                     CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_AutopilotPostReset_AadRegistration_Skipped", "Skipping AAD registration flow due to Autopilot reset.");
                                     completeDispatch(CloudExperienceHost.AppResult.action1);
                                 }
@@ -158,7 +142,6 @@ define(['legacy/core'], (core) => {
                             else {
                                 let profileState = await EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getProfileStateAsync();
 
-                                // If the device is Autopilot-registered, skip to the AAD sign-in page. Otherwise, navigate to the normal OOBE flow
                                 if (EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotProfileState.available === profileState) {
                                     CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_Autopilot_Profile_Available", "Autopilot profile is available.");
 
@@ -203,14 +186,11 @@ define(['legacy/core'], (core) => {
                                     if (lastResetWasFromAutopilotUpdate) {
                                         cxidOrResult = cxidToJumpTo;
                                         CloudExperienceHost.Storage.SharableData.addValue("resetFromAutopilotUpdate", false);
-                                        // Reset the UpdateRebootCXID node after it is used.
                                         return autoPilot.storeSettingAsync(UpdateRebootCXIDKey, "");
                                     }
                                 }
                             });
 
-                            // The ZTP call doesn't actually support cancellation and is basically fire-and-forget,
-                            // but we wait up to 36 seconds for it to finish before moving on to give it adequate time to complete.
                             let timedOut = false;
                             let timeoutPromise = WinJS.Promise.timeout(36000 /*36 second timeout*/).then(() => { timedOut = true; });
                             WinJS.Promise.any([clearAndPopulateZTPCachePromise, timeoutPromise]).then((result) => {
@@ -244,16 +224,41 @@ define(['legacy/core'], (core) => {
                                             break;
                                     }
 
-                                    ModernDeployment.Autopilot.Core.AutopilotWnfNotificationManagerStatics.setBitlockerDeferralCompleteAsync(reasonCode);
+                                    ModernDeployment.Autopilot.Core.AutopilotWnfNotificationManagerStatics.setBitlockerDeferralComplete(reasonCode);
 
                                     CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_BitlockerDeferral_Success", "Autopilot Bitlocker deferral release signaling succeeded");
                                 } catch (err) {
-                                    CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_BitlockerDeferral_Failed", "Autopilot Bitlocker deferral release signaling failed");
+                                    CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_BitlockerDeferral_Failed", `Error: ${err.message}, Name: ${err.name}, Stack: ${err.stack}`);
                                 }
                             }
 
-                            // Whether velocity was enabled or not, or even if we failed, always return success to prevent any failures from altering the client flows
                             completeDispatch(CloudExperienceHost.AppResult.success);
+                            break;
+
+                        case "AutoAcceptEula":
+                            {
+                                CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_AutoAcceptEula_Started", "EULA auto-accept for Autopilot devices started");
+
+                                try {
+                                    let autopilotAutoAcceptEula = EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getOobeSettingsOverride(EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotOobeSetting.skipAcceptEula);
+
+                                    if (autopilotAutoAcceptEula) {
+                                        CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_AutoAcceptEula_BeginAccept", "EULA auto-accept is enabled, beginning acceptance");
+                                        await CloudExperienceHostAPI.OobeEulaManagerStaticsCore.acceptEulaAsync();
+                                        CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_AutoAcceptEula_Success", "EULA auto-accept succeeded");
+                                    } else {
+                                        CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_AutoAcceptEula_Skipped", "EULA auto-accept is not enabled and was skipped");
+                                    }
+                                } catch (err) {
+                                    CloudExperienceHost.AutoPilot.logInfoEvent(
+                                        "CommercialOOBE_AutoAcceptEula_Failed",
+                                        JSON.stringify(err));
+                                }
+
+                                CloudExperienceHost.AutoPilot.logInfoEvent("CommercialOOBE_AutoAcceptEula_Completed", "EULA auto-accept complete");
+
+                                completeDispatch(CloudExperienceHost.AppResult.success);
+                            }
                             break;
 
                         default:

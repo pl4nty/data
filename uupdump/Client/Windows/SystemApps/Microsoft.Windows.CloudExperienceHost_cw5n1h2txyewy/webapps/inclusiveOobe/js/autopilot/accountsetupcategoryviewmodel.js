@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -14,10 +11,8 @@ define([
 
     class accountSetupCategoryViewModel {
         constructor(resourceStrings, sessionUtilities) {
-            // Constants
             this.DEVICE_REGISTRATION_INTERVAL_WAIT_TIME_IN_MILLISECONDS = 240000;
 
-            // Private member variables
             this.resourceStrings = resourceStrings;
             this.sessionUtilities = sessionUtilities;
             this.mdmBootstrapSessionUtilities = new mdmBootstrapSessionUtilities(
@@ -28,10 +23,6 @@ define([
             this.aadRegistered = false;
             this.aadjEventName = "aadjcompleted";
 
-            // The background sync sessions need to be initiated only once for all the MDM-monitored
-            // subcategories in this category.  Creating a single promise will ensure that singleton.
-            // Syncs are reinitiated after every reboot, and so sync lifetime should match
-            // with this category's lifetime.
             this.syncSyncSessionsShouldStart = false;
             this.waitForSyncSessionsInitiationPromise = this.waitForSyncSessionsInitiationAsync();
         }
@@ -42,12 +33,10 @@ define([
                     "CommercialOOBE_ESPAccountSetup_SyncSessionWaitLoop_StartingSyncSessions",
                     "BootstrapStatus: Start background sync sessions for Account Setup.");
 
-                // This is a fire and forget operation because sendResultsToMdmServerAsync sets the IsSyncDone node to actually break out of this wait
                 this.mdmBootstrapSessionUtilities.initiateSyncSessionsAsync(ModernDeployment.Autopilot.Core.SyncSessionExitCondition.accountSetupComplete);
 
                 return WinJS.Promise.as(true);
             } else {
-                // Keep polling for the signal to initiate background sync sessions.
                 return WinJS.Promise.timeout(this.defaultWaitToInitiateSyncSessionsInMilliseconds).then(() => {
                     return this.waitForSyncSessionsInitiationAsync();
                 });
@@ -61,7 +50,6 @@ define([
                 "CommercialOOBE_ESPAccountSetup_AadRegistration_Wait",
                 `BootstrapStatus: AAD registration timeout set to ${aadRegistrationWaitTimeInMilliseconds}`);
 
-            // Create a 4 minute periodic timer for kicking off the scheduled task to register the device with AAD.
             this.deviceRegistrationTaskScheduler = setInterval(
                 () => {
                     this.sessionUtilities.enrollmentApis.forceRunDeviceRegistrationScheduledTaskAsync().then(
@@ -81,9 +69,7 @@ define([
                 this.DEVICE_REGISTRATION_INTERVAL_WAIT_TIME_IN_MILLISECONDS);
 
             let aadRegistrationWaitPromise = new WinJS.Promise(
-                // Promise initialization handler
                 (completeDispatch, errorDispatch, progressDispatch) => {
-                    // Create event handler.
                     this.aadRegistrationListener = (hresult) => {
                         this.commercialDiagnosticsUtilities.logHresultEvent(
                             "CommercialOOBE_ESPAccountSetup_AadRegistrationTask_Complete",
@@ -95,18 +81,12 @@ define([
                         completeDispatch(true);
                     };
 
-                    // Register event handler.
                     this.sessionUtilities.autopilotSubscriptionManager.addEventListener(this.aadjEventName, this.aadRegistrationListener.bind(this));
                 },
 
-                // Promise cancellation event handler
                 () => {
                 });
 
-            // Set a max timeout for device registration.  The reason for this timeout is AD connect happens in the
-            // background approximately every 30 minutes, and once this occurs, the device registration task (forced 
-            // to run every five minutes by deviceRegistrationTaskScheduler) will finally succeed, at which point
-            // the device is AAD-registered.
             let aadRegistrationTimeoutPromise = WinJS.Promise.timeout(aadRegistrationWaitTimeInMilliseconds).then(() => {
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "CommercialOOBE_ESPAccountSetup_AadRegistration_TimedOut",
@@ -118,7 +98,6 @@ define([
                 aadRegistrationWaitPromise
             ];
 
-            // Wait for either the TPM attested state or the timeout.
             return WinJS.Promise.any(aadRegistrationPromises).then(() => {
                 if (this.aadRegistrationListener !== null) {
                     this.sessionUtilities.autopilotSubscriptionManager.removeEventListener(this.aadjEventName, this.aadRegistrationListener.bind(this));
@@ -127,14 +106,11 @@ define([
                 aadRegistrationTimeoutPromise.cancel();
                 aadRegistrationTimeoutPromise = null;
 
-                // Device is now AAD-registered or timed out trying, and so stop trying to run the background task
-                // to AADJ register the device.
                 clearInterval(this.deviceRegistrationTaskScheduler);
                 this.deviceRegistrationTaskScheduler = null;
 
                 if (!this.aadRegistered) {
                     if ((null === this.aadRegistrationHresult) || (undefined === this.aadRegistrationHresult)) {
-                        // No registration failure, but still not registered.  Default to displaying timeout error ERROR_TIMEOUT.
                         this.aadRegistrationErrorString = this.commercialDiagnosticsUtilities.formatNumberAsHexString(this.sessionUtilities.HRESULT_TIMEOUT, 8);
                     } else {
                         this.aadRegistrationErrorString = this.commercialDiagnosticsUtilities.formatNumberAsHexString(this.aadRegistrationHresult.target, 8);
@@ -150,7 +126,6 @@ define([
         }
 
         sendResultsToMdmServerAsync() {
-            // Best effort
             try {
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "CommercialOOBE_ESPAccountSetup_SendResultsToMdmServer_Started",
@@ -199,7 +174,6 @@ define([
             });
         }
 
-        // Category interface methods
 
         getId() {
             return "AccountSetupCategory";
@@ -263,7 +237,6 @@ define([
                         return this.sessionUtilities.SUBCATEGORY_DISPOSITION_VISIBLE;
                     },
                     (progressCallbackAsync) => {
-                        // Ensure the background sync sessions are initiated first.
                         this.syncSyncSessionsShouldStart = true;
 
                         return this.waitForSyncSessionsInitiationPromise.then(() => {
@@ -285,7 +258,6 @@ define([
                         return this.sessionUtilities.SUBCATEGORY_DISPOSITION_VISIBLE;
                     },
                     (progressCallbackAsync) => {
-                        // Ensure the background sync sessions are initiated first.
                         this.syncSyncSessionsShouldStart = true;
 
                         return this.waitForSyncSessionsInitiationPromise.then(() => {
@@ -307,7 +279,6 @@ define([
                         return this.sessionUtilities.SUBCATEGORY_DISPOSITION_VISIBLE;
                     },
                     (progressCallbackAsync) => {
-                        // Ensure the background sync sessions are initiated first.
                         this.syncSyncSessionsShouldStart = true;
 
                         return this.waitForSyncSessionsInitiationPromise.then(() => {
@@ -329,7 +300,6 @@ define([
                         return this.sessionUtilities.SUBCATEGORY_DISPOSITION_VISIBLE;
                     },
                     (progressCallbackAsync) => {
-                        // Ensure the background sync sessions are initiated first.
                         this.syncSyncSessionsShouldStart = true;
 
                         return this.waitForSyncSessionsInitiationPromise.then(() => {
@@ -361,7 +331,6 @@ define([
                 switch (handlerParameters.clickedItemId) {
                     case this.sessionUtilities.CLICKABLE_ITEM_ID_CONTINUE_ANYWAY_BUTTON:
                         return new WinJS.Promise(
-                            // Promise initialization
                             (completeDispatch, errorDispatch, progressDispatch) => {
                                 if (!this.securityPoliciesProvisioningSucceeded ||
                                     !this.certificatesProvisioningSucceeded ||
@@ -380,30 +349,21 @@ define([
                                     }
                                 }
 
-                                // True means that this handler succeeded.
                                 completeDispatch(true);
                             },
 
-                            // Cancellation event handler
                             () => {
                             });
 
                     case this.sessionUtilities.CLICKABLE_ITEM_ID_TRY_AGAIN_BUTTON:
                         return new WinJS.Promise(
-                            // Promise initialization
                             (completeDispatch, errorDispatch, progressDispatch) => {
-                                // Restart the sync sessions on a retry.  It's OK to start another set of sessions even
-                                // if one set is already running, since the underlying session-running API serializes sessions
-                                // across all sets. Starting another set on retry also ensures that the retry's sessions
-                                // time out on the full timeout period.
                                 this.syncSyncSessionsShouldStart = false;
                                 this.waitForSyncSessionsInitiationPromise = this.waitForSyncSessionsInitiationAsync();
 
-                                // True means that this handler succeeded.
                                 completeDispatch(true);
                             },
 
-                            // Cancellation event handler
                             () => {
                             });
 
@@ -413,7 +373,6 @@ define([
                             "Unhandled click handler item");
                 }
 
-                // True means that this handler succeeded.
                 return WinJS.Promise.as(true);
             };
         }

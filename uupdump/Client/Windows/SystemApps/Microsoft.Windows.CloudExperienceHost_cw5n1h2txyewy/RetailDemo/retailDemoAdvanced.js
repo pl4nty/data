@@ -1,5 +1,4 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
-(function () {
+﻿(function () {
     "use strict";
 
     var bridge = new CloudExperienceHost.Bridge();
@@ -27,7 +26,6 @@
         },
 
         ready: function (element, options) {
-            // Load string resources in HTML elements
             advancedTitle.textContent = resources.advancedTitle;
             nextButton.textContent = resources.finishButton;
 
@@ -77,7 +75,6 @@
 
             bridge.fireEvent(CloudExperienceHost.Events.visible, true);
 
-            // Call to register EaseOfAccess and InputSwitcher controls
             uiHelpers.RegisterEaseOfAccess(easeOfAccess, bridge);
             uiHelpers.RegisterInputSwitcher(inputSwitcher, bridge);
         }

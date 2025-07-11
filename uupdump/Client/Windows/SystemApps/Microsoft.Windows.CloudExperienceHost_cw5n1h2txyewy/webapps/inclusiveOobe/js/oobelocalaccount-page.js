@@ -1,12 +1,8 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 (() => {
     WinJS.UI.Pages.define("/webapps/inclusiveOobe/view/oobelocalaccount-main.html", {
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Load css per scenario
             let loadCssPromise = requireAsync(['legacy/uiHelpers', 'legacy/bridge']).then((result) => {
                 return result.legacy_uiHelpers.LoadCssPromise(document.head, "", result.legacy_bridge);
             });
@@ -30,7 +26,6 @@
             let getPlatformPromise = requireAsync(['legacy/bridge']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.Environment.getPlatform");
             }).then((platform) => {
-                // Surface Hub requires password to be non-empty and recovery is not allowed
                 this.requirePassword = (platform === CloudExperienceHost.TargetPlatform.SURFACEHUB);
                 this.requireRecovery = (platform !== CloudExperienceHost.TargetPlatform.SURFACEHUB);
                 this.allowOnlineAccount = (platform !== CloudExperienceHost.TargetPlatform.SURFACEHUB);
@@ -59,12 +54,10 @@
         },
         ready: (element, options) => {
             require(['lib/knockout', 'corejs/knockouthelpers', 'legacy/bridge', 'legacy/events', 'oobelocalaccount-vm', 'lib/knockout-winjs', 'corejs/xy-transfer-wrapper-down'], (ko, KoHelpers, bridge, constants, LocalAccountViewModel) => {
-                // Setup knockout customizations
                 koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                 window.KoHelpers = KoHelpers;
 
-                // Apply bindings and show the page
                 let vm = new LocalAccountViewModel(this.resourceStrings, this.isInternetAvailable, this.requirePassword, this.requireRecovery, this.allowOnlineAccount, this.onlineAccountTargetId, this.targetPersonality, this.shouldAadcRestrictionsApplyInDeviceRegion);
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {

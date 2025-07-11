@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 define(['lib/knockout', 'legacy/bridge', 'legacy/appObjectFactory', 'legacy/events', 'legacy/core', 'corejs/autopilotCore'], (ko, bridge, appObjectFactory, constants, core, autopilotCore) => {
     class AutopilotUpdateViewModel {
@@ -13,7 +10,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/appObjectFactory', 'legacy/even
                 return targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite;
             });
 
-            // Ignore promise return value, it'll complete itself
             this.startUpdateAsync();
         }
 
@@ -51,13 +47,11 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/appObjectFactory', 'legacy/even
         {
             try {
                 const UpdateRebootCXIDKey = "UpdateRebootCXID";
-                // Mark that this reboot is caused by autopilot update, and force the start selector to jump to the Autopilot prefetch page.
                 await bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "resetFromAutopilotUpdate", true);
                 await bridge.invoke("CloudExperienceHost.setRebootForOOBE", "AutopilotPrefetch");
 
                 let autopilotServer = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotServer();
 
-                // Update UpdateRebootCXIDKey to jump back to this page if it currently isn't set.
                 let existingUpdateRebootCXID = await autopilotServer.getSettingAsync(UpdateRebootCXIDKey);
                 if (existingUpdateRebootCXID === "")
                 {
@@ -65,7 +59,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/appObjectFactory', 'legacy/even
                     await autopilotServer.storeSettingAsync(UpdateRebootCXIDKey, currentNode.cxid);
                 }
 
-                // Clear auto-logon creds since they're invalid post-reboot. Not clearing would make Windows try to use it and prompt an error to the user.
                 let enterpriseManagementWorker = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
                 enterpriseManagementWorker.clearAutoLoginData();
             } catch (error) {

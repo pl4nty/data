@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/ui'], (ko, bridge, constants, core) => {
     class ConfirmDialogManager {
         constructor(confirmDialogElement) {
@@ -12,11 +9,9 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
         show(title, description, primarybutton, secondarybutton, afterHideHandler) {
             if (this.confirmDialogWinControl) {
                 if (!this.confirmDialogWinControl.hidden) {
-                    // Skip showing it if there is already one.
                     return;
                 }
 
-                // Clean up the old winControl.
                 if (this.currentAfterHideHandler) {
                     this.confirmDialogWinControl.removeEventListener("afterhide", this.currentAfterHideHandler);
                     this.currentAfterHideHandler = null;
@@ -25,7 +20,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                 this.confirmDialogElement.winControl = null;
             }
 
-            // Initialize the dialog and show it.
             this.confirmDialogElement.textContent = description ? description : "";
             WinJS.UI.process(this.confirmDialogElement).then(() => {
                 this.confirmDialogWinControl = this.confirmDialogElement.winControl;
@@ -42,7 +36,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
 
     class ProvisioningStatusViewModel {
         constructor(resourceStrings, oobeProvisioningResults, showEjectMediaMessage) {
-            // Variables definitions
             this.componentName = ko.observable();
             this.provResults = ko.observableArray();
             this.doneFired = false;
@@ -69,7 +62,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             let flexStartHyperLinksSets = {};
             let flexEndButtonsSets = {};
 
-            // UI element initialization
             this.resourceStrings = resourceStrings;
 
             titleStrings["main"] = resourceStrings.ProvisioningStatusTitleAlreadyStarted;
@@ -144,14 +136,12 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             this.disableRetryButton(true);
             this.hotKeyEnabled(true);
 
-            // Override the provisioning source if any.
             if (this.sourceOverride) {
                 this.pluginManager.setSourceOverride(this.sourceOverride);
             }
         }
 
         setupVoiceOverAndSpeechRecognition(componentName) {
-            // Setup simple voiceover and speech recognition using the resource strings
             try {
                 CloudExperienceHostAPI.Speech.SpeechRecognition.stop();
                 let continueConstraint = new Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint(new Array(this.resourceStrings.ProvisioningStatusContinueButtonText));
@@ -184,23 +174,19 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
         }
 
         checkOrExitErrorReport() {
-            // Stop the polling task.
             this.stopPollingResults = true;
 
             let commandResults = {};
 
-            // Wait for any polling finished.
             WinJS.Promise.join({ promisePollingResults: this.promisePollingResults }).then(() => {
                 return this.pluginManager.getLastProvisioningCommandResultsAsync();
             })
             .then((results) => {
                 commandResults = results;
 
-                // Check if any errors to show or exit the report flow.
                 return this.pluginManager.getLastProvisioningResultsAsync();
             })
             .then((results) => {
-                // Continue if no results to show.
                 if (results.length == 0) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "oobeProvisioningProceededSuccessfully",
                         JSON.stringify(
@@ -211,7 +197,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                     return;
                 }
 
-                // Check any errors.
                 let anyError = false;
                 results.forEach((currentResult) => {
                     if (currentResult.hasError) {
@@ -219,12 +204,10 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                     }
                 });
 
-                // Check if we are forced to show the error view.
                 if (this.signalForceCompletion()) {
                     anyError = true;
                 }
 
-                // Continue if no errors to show.
                 if (!anyError) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "oobeProvisioningProceededSuccessfully",
                         JSON.stringify(
@@ -240,7 +223,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                     return;
                 }
 
-                // Show the error report and populate the results to the view.
                 this.componentName("errorReport");
                 this.updateProvisioningResults(results);
                 this.updateProvisioningCommandsResults(commandResults);
@@ -275,7 +257,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "oobeProvisioningContinueAnywayCompleted", JSON.stringify({ result: eventInfo.detail.result }));
 
             if (eventInfo.detail.result != WinJS.UI.ContentDialog.DismissalResult.primary) {
-                // User cancelled.
                 return;
             }
 
@@ -284,7 +265,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             }
 
             this.doneFired = true;
-            // Lead to the local account creation page.
             bridge.fireEvent(constants.Events.done, constants.AppResult.action1);
         }
 
@@ -298,7 +278,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             let shouldSkipOobe = this.pluginManager.getSkipOobeValue();
 
             if (shouldSkipOobe) {
-                // Lead to the end of OOBE.
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "oobeProvisioningCommitSkipOobe");
                 bridge.fireEvent(constants.Events.done, constants.AppResult.exitCxhSuccess);
             } else {
@@ -311,8 +290,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                 return bridge.invoke("CloudExperienceHost.showFolderPicker");
             })
             .then((folderPath) => {
-                // Delegate the folder picker to run in the MSAppHost (application) context.
-                // Otherwise, it will fail to run in the WebView control context.
                 return this.pluginManager.exportDiagEvtLogAsync(folderPath);
             })
             .then(() => {
@@ -331,14 +308,12 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             }
 
             this.doneFired = true;
-            // Navigate to the provisioning entry page again.
             bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "OobeProvisioningSourceOverride", "OOBE_RETRY");
             bridge.fireEvent(constants.Events.done, constants.AppResult.action2);
         }
 
         ready() {
             let promiseSet = {
-                // Ensure the progress ring will be visible for at least minProgressTextTime milliseconds.
                 promiseMinProgressTextTime: WinJS.Promise.timeout(this.minProgressTextTime),
                 promiseWaitForNoStagedResults: this.promiseWaitForNoStagedResults
             };
@@ -349,11 +324,9 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                 promiseSet.promiseApplyProvisioning = this.pluginManager.applyAfterConnectivityPackagesAsync();
             }
 
-            // Start polling the real-time updates.
             this.promisePollingResults = this.createPromisePollingResults();
             this.promisePollingAppList = this.createPromiseAppList();
 
-            // Wait for the provisioning done.
             this.onExitProvisioningFlow(promiseSet);
         }
 
@@ -374,23 +347,19 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
 
             internalPromiseSet.promiseWaitForNormalProvisioning =
             WinJS.Promise.join(promiseSet).then((resultSet) => {
-                // Ensure we won't enter the provisioning flow again by gestures.
                 bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "hasProvisionedThisSession", true);
 
                 if (this.pluginManager.isRebootRequired()) {
-                    // Case 1: Request CXH OOBE to reboot and come back for turn #3.
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "OobeProvisioningResumeContinuation", true);
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "oobeProvisioningCommitRebootRequired");
                     bridge.invoke("CloudExperienceHost.setRebootForOOBE", "OobeProvisioningStatus");
                     bridge.fireEvent(constants.Events.done, constants.AppResult.action3);
                 }
                 else if (!this.isResumed) {
-                    // Case 2: Navigate away, but request to come back for turn #3 immediately.
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "OobeProvisioningResumeContinuation", true);
                     bridge.fireEvent(constants.Events.done, constants.AppResult.action2);
                 }
                 else {
-                    // Case 3: No additional turn #3 to run. Go to error report view if any errors.
                     bridge.invoke("CloudExperienceHost.Telemetry.oobeHealthEvent", CloudExperienceHostAPI.HealthEvent.enterpriseProvisioningCensusResult, 0);
                     return true;
                 }
@@ -398,8 +367,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                 return false;
             })
             .then(null, (error) => {
-                // Generic error handler.
-                // Any unhandled errors up the promise chain should be captured here.
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", this.isResumed ? "oobeProvisioningTurn3Failed" : "oobeProvisioningTurn2Failed", core.GetJsonFromError(error));
                 bridge.invoke("CloudExperienceHost.Telemetry.oobeHealthEvent", CloudExperienceHostAPI.HealthEvent.enterpriseProvisioningCensusResult, error.number ? error.number : 0x8000ffff);
                 bridge.fireEvent(constants.Events.done, constants.AppResult.error);
@@ -407,12 +374,9 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                 return false;
             });
 
-            // No matter what promise comes first, it need to carry a boolean value to indicate "should we check the error view or exit".
-            // For force completion case, it always set the value to true to force the error view to be shown.
             WinJS.Promise.any(internalPromiseSet).then((result) => {
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "oobeProvisioningOnExitReason", result.key);
 
-                // Disable the 'esc' hotkey listener, since we are done with the provisioning.
                 this.hotKeyEnabled(false);
                 return result.value;
             })
@@ -425,14 +389,12 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
         }
 
         createPromisePollingResults() {
-            // Break the polling when in the error report.
             if (this.stopPollingResults) {
                 return WinJS.Promise.as(true);
             }
 
             let provDataResult = {};
 
-            // Get the real-time updates.
             return this.pluginManager.getLastProvisioningResultsAsync().then((results) => {
                 provDataResult = results;
                 this.checkAndSignalNoStagedResults(results);
@@ -448,7 +410,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             .then(() => {
                 return this.createPromisePollingResults();
             })
-            // Regardless of the errors, we continue the polling.
             .then(null, (error) => {
                 return WinJS.Promise.timeout(this.pollingInterval);
             })
@@ -462,14 +423,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
 
             let completionStateByGroup = {};
             let errorStateByGroup = {};
-            // (1) Aggregate the completion states by category (or user named child node)
-            // {
-            //     categoryA: [NotStarted, NotStarted, Staged, Completed],
-            //     categoryB: [NotStarted, NotStarted],
-            //     categoryC: [NotStarted, NotStarted, Staged],
-            //     categoryD: [Staged, Completed],
-            //     categoryE: [Completed]
-            // }
             results.forEach((currentResult) => {
                 let index = currentResult.categoryId;
 
@@ -493,14 +446,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             });
 
             let shownStateByGroup = {};
-            // (2) Compute the shown state.
-            // {
-            //     categoryA: "Running",
-            //     categoryB: "Running",
-            //     categoryC: "Running",
-            //     categoryD: "Running",
-            //     categoryE: "Completed"
-            // }
             for (var key in completionStateByGroup) {
                 shownStateByGroup[key] = "Completed";
 
@@ -511,14 +456,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                 });
             }
 
-            // (3) Construct the bound-data.
-            // [
-            //     {
-            //         contentCategory: "Enroll this device to active directory",
-            //         localizedCompletionState: "Completed"
-            //     },
-            //     ...
-            // ]
             for (var key in shownStateByGroup) {
                 let currentResult = {};
 
@@ -545,7 +482,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                     currentResult.localizedCompletionState = this.resourceStrings["CompletitonStateFailed"];
                 }
 
-                // Categories we don't show to users, unless there are errors.
                 let categoryNotShown = ["Provisioning", "Reboot", "InitialCustomization"];
                 if ((categoryNotShown.indexOf(key) != -1) && (!currentResult.hasError())) {
                     continue;
@@ -589,7 +525,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
                 }
             });
 
-            // No staged settings means we are safe to continue to reboot, exit, or show error options.
             if (!anyStaged && (!anyNotStarted || anyError || this.pluginManager.isRebootRequired())) {
                 this.signalNoStagedResults(true);
             }
@@ -611,12 +546,10 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
         }
 
         createPromiseAppList() {
-            // Break the polling when in the error report.
             if (this.stopPollingResults) {
                 return WinJS.Promise.as(true);
             }
 
-            // Get the real-time updates.
             return this.pluginManager.findAppPackagesAsync().then((results) => {
                 this.appDisplayNameList = results;
                 return WinJS.Promise.timeout(this.pollingInterval);
@@ -624,7 +557,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             .then(() => {
                 return this.createPromiseAppList();
             })
-            // Regardless of the errors, we continue the polling.
             .then(null, (error) => {
                 return WinJS.Promise.timeout(this.pollingInterval);
             })
@@ -633,9 +565,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             });
         }
 
-        // The hot-key "esc" handler
         handleHotKey(ev) {
-            // KeyCode 27 is the escape key.
             if (ev.keyCode != 27) {
                 return;
             }
@@ -654,11 +584,9 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "oobeProvisioningEscapeConfirmCompleted", JSON.stringify({ result: eventInfo.detail.result }));
 
             if (eventInfo.detail.result != WinJS.UI.ContentDialog.DismissalResult.primary) {
-                // User cancelled.
                 return;
             }
 
-            // Signal the completion.
             this.signalForceCompletion(true);
         }
 
@@ -677,7 +605,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'winjs/
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "oobeProvisioningResetConfirmCompleted", JSON.stringify({ result: eventInfo.detail.result }));
 
             if (eventInfo.detail.result != WinJS.UI.ContentDialog.DismissalResult.primary) {
-                // User cancelled.
                 return;
             }
 

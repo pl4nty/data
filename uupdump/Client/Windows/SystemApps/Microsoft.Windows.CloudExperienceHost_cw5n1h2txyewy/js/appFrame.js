@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -26,13 +22,7 @@ var CloudExperienceHost;
         }
         AppFrame.setDisplayModeFullScreen = setDisplayModeFullScreen;
         function setBackgroundImage(appDataUri) {
-            // We intentionally do not support changing the background image when OOBE may transition to enduser session.
-            // If we ever need to (partially) re-enable this functionality, we need to update the conditional statement below.
-            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeSetBackgroundImage") && !CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeInEnduserSession")) {
-                return requireAsync(['legacy/appViewManager']).then((result) => {
-                    return result.legacy_appViewManager.setBackgroundImage(appDataUri);
-                });
-            }
+            return new WinJS.Promise((completeDispatch) => completeDispatch());
         }
         AppFrame.setBackgroundImage = setBackgroundImage;
         function setGamepadLegendDisplayOverrideForB(displayText) {
@@ -45,4 +35,3 @@ var CloudExperienceHost;
         AppFrame.setGamepadLegendDisplayOverrideForB = setGamepadLegendDisplayOverrideForB;
     })(AppFrame = CloudExperienceHost.AppFrame || (CloudExperienceHost.AppFrame = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=appFrame.js.map

@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode, JS2055.DoNotReferenceBannedTerms</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -15,7 +11,6 @@ var CloudExperienceHost;
             this._correlationId = null;
             this._webAppTelemetry = CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance();
             if (!this._webAppTelemetry.isStarted()) {
-                // Dummy GUID provided since the GUID is not important and AppTelemetry is not started
                 this._webAppTelemetry.start("msa-wam", "00000000-0000-0000-0000-000000000000");
             }
             this._msaExtension = new MicrosoftAccount.Extension.ExtensionWorker();
@@ -98,7 +93,6 @@ var CloudExperienceHost;
                     CloudExperienceHost.Storage.PrivateData.addItem(iterator.current.key, iterator.current.value);
                 }
             }
-            // If this is Xbox, we need to pass in the correct theme based upon the console's setting.
             if (this._platform == CloudExperienceHost.TargetPlatform.XBOX) {
                 var useLightTheme = false;
                 try {
@@ -109,7 +103,6 @@ var CloudExperienceHost;
                 }
                 url += (url.indexOf('?') > 0 ? '&' : '?') + "uitheme=" + (useLightTheme ? "xbox_2" : "xbox_1");
             }
-            // Clean previous views before navigating to URL.
             this._appView.cleanView();
             this._appView.getView().appendChild(this._webView);
             this._webView.focus();
@@ -137,13 +130,10 @@ var CloudExperienceHost;
                     tokenOperation.receivedVerificationCode = verificationCode;
                 }
                 else {
-                    // -1 indicates not to expect a code
                     tokenOperation.receivedVerificationCode = "-1";
                 }
                 this._stopListeningForVerificationCode();
             }.bind(this), function (e) {
-                // This error callback will get called back on platforms that don't support auto-verification codes
-                // -1 indicates not to expect a code
                 tokenOperation.receivedVerificationCode = "-1";
                 this._stopListeningForVerificationCode();
             }.bind(this));
@@ -169,16 +159,12 @@ var CloudExperienceHost;
                     completeDispatch();
                 }.bind(this), errorDispatch);
             }.bind(this));
-            //For TB flow done event should only be called in case of a catastrophic failure from which MSA server cannot recover.
         }
-        // Callback invoked by _onPostDeviceTicketToUrl() and _onRegisterNGCForUser()
-        // Result will be either a URL-encoded ticket or ""
         _onTicketRequestComplete(targetUrl, result) {
             if (targetUrl) {
                 this._loadURLInWebView(targetUrl, null, null, result ? "POST" : "GET", result);
             }
             else {
-                // This code path indicates a bug.
                 this._onTicketError(targetUrl, result, -2147012891 /* WININET_E_INVALID_URL */);
             }
         }
@@ -197,15 +183,12 @@ var CloudExperienceHost;
                 }.bind(this));
             }.bind(this));
         }
-        // Error handler for postDeviceTicketToUrl
         _onTicketError(targetUrl, errorMsg, errorCode) {
-            // Log the error
             var logData = new Object;
             logData["errorCode"] = errorCode || null;
             logData["message"] = errorMsg || null;
             logData["targetUrl"] = targetUrl;
             this._webAppTelemetry.logEvent("TicketRequestError", JSON.stringify(logData));
-            // Handle error condition.
             var hr = this._numToHexString(errorCode, 4);
             var msaError = new CloudExperienceHost.MSAError();
             msaError.hr = hr;
@@ -229,8 +212,6 @@ var CloudExperienceHost;
                 this._loadURLInWebView(destinationUrl);
             }.bind(this));
         }
-        // Convert a signed int to a string with its two's complement byte representation
-        // Used for translating error codes from getDeviceTicketForWebFlowAsync to strings for passing into the generic error page
         _numToHexString(errorCode, integerByteLength) {
             var integerBitLength = 8 * integerByteLength;
             var hexString = "undefined";
@@ -253,7 +234,6 @@ var CloudExperienceHost;
                 this._addDataToRequest(httpRequestMessage, null, value);
             }
             this._appendCustomHeaders(httpRequestMessage, contextParams);
-            // Only attempt to navigate if there is Internet connectivity.
             if (CloudExperienceHost.Environment.hasInternetAccess()) {
                 this._webView.navigateWithHttpRequestMessage(httpRequestMessage);
             }
@@ -311,18 +291,11 @@ var CloudExperienceHost;
             context.protocol = "TokenBroker";
             context.source = "TokenBroker";
             context.platform = this._platform;
-            // Late in RS3 IoT platform took a change that resulted in CXH flows being rendered in a chrome-less UI. 
-            // The end result is that users lost the ability to close\cancel CXH flows by using the X button.
-            // To resolve this issue MSA server need to render a cancel button on IoT devices.
-            // Set ChromelessUI capability for IOT devices (DEVICEFAMILYINFOENUM_IOT and DEVICEFAMILYINFOENUM_IOT_HEADLESS).
             let chromelessUI = (CloudExperienceHostAPI.Environment.platform == 7 || CloudExperienceHostAPI.Environment.platform == 8) ? 1 : 0;
             context.capabilities = JSON.stringify({ "PrivatePropertyBag": 1, "PasswordlessConnect": 1, "PreferAssociate": 1, "ChromelessUI": chromelessUI });
             return context;
         }
         _onDone(result) {
-            // The contract with MSA Server UX for TokenBroker flows is that the "Done" event
-            // will only be fired when saveAuthStateAndCompleteWebFlow() cannot be called.
-            // This should only happen on unexpected server errors.
             var hr = "0x80048842"; // Return PPCRL_REQUEST_E_USER_CANCELED
             var hrInternal = null;
             if (result == CloudExperienceHost.AppResult.fail) {
@@ -336,9 +309,7 @@ var CloudExperienceHost;
             this._handleNavigationError(hr, hrInternal);
         }
         _onNavigationFailed(eventInfo) {
-            // Return PPCRL_REQUEST_E_USER_CANCELED (User will be presented with error page prior to return)
             var hr = "0x80048842";
-            //ERROR_NETWORK_NOT_AVAILABLE
             var hrInternal = "0x800713AB";
             if (eventInfo) {
                 hrInternal = this._onTranslateWebErrorStatus(eventInfo.webErrorStatus);
@@ -366,15 +337,11 @@ var CloudExperienceHost;
             if (hrInternal != null) {
                 hrTmp = hrInternal.toUpperCase();
             }
-            // hasInternetAccess needs to be set to false in order for the network connectivity error handling
-            // page to be displayed. So set hasInternetAccess == false when we receive networking errors
-            // ERROR_NETWORK_UNREACHABLE, ERROR_CONNECTION_ABORTED, ERROR_HOST_UNREACHABLE
             if (hrTmp === "0X800704CF" || hrTmp === "0X800704D4" || hrTmp === "0X800704D0") {
                 msaError.hasInternetAccess = false;
             }
             this._appView.cleanView();
             this._appView.showProgress().then(function () {
-                // Render the error page.
                 WinJS.UI.Pages.render("views/tokenManagerErrorHandler.html", this._appView.getView(), msaError).done(function () {
                     this._appView.showView();
                 }.bind(this));
@@ -425,7 +392,6 @@ var CloudExperienceHost;
             }
             return hrInternal;
         }
-        // The cxid is the only value here that we expect to be used.
         _getINavigable() {
             return {
                 cxid: "TokenBroker",
@@ -484,4 +450,3 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.MSATokenProviderManager = MSATokenProviderManager;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=tokenprovidermanager.js.map

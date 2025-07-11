@@ -1,12 +1,8 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 (() => {
     WinJS.UI.Pages.define("/webapps/inclusiveOobe/view/oobeenterpriseprovisioning-main.html", {
         init: (element, options) => {
             require.config(new RequirePathConfig('/webapps/inclusiveOobe'));
 
-            // Load css per scenario
             let loadCssPromise = requireAsync(['legacy/uiHelpers', 'legacy/bridge']).then((result) => {
                 return result.legacy_uiHelpers.LoadCssPromise(document.head, "", result.legacy_bridge);
             });
@@ -15,7 +11,6 @@
                 return result.legacy_uiHelpers.LangAndDirPromise(document.documentElement, result.legacy_bridge);
             });
 
-            // Load resource strings
             let getLocalizedStringsPromise = requireAsync(['legacy/bridge', 'legacy/core']).then((bridge) => {
                 return bridge.legacy_bridge.invoke("CloudExperienceHost.AutoPilot.makeAutopilotResourceObject").then((result) => {
                     this.resourceStrings = JSON.parse(result);
@@ -30,7 +25,6 @@
                 this.targetPersonality = targetContext.personality ? targetContext.personality : CloudExperienceHost.TargetPersonality.InclusiveBlue;
             });
 
-            // Scenario constants
             this.DETECT_RUNNING_ON_HUB_SETTING = "IsRunningOnHub";
             this.SHOW_EXPORT_ON_PROVISIONING_SETTING = "ShowExportOnProvisioning";
 
@@ -102,14 +96,12 @@
                 constants,
                 EnterpriseProvisioningViewModel) => {
 
-                // Setup knockout customizations
                 koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
                 window.KoHelpers = KoHelpers;
 
                 let enterpriseProvisioningViewModel = new EnterpriseProvisioningViewModel(this.resourceStrings, this.targetPersonality, this.showPreprovisioning, this.showExportLogs);
 
-                // Apply bindings and show the page
                 ko.applyBindings(enterpriseProvisioningViewModel);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                     WinJS.Utilities.addClass(document.body, "pageLoaded");

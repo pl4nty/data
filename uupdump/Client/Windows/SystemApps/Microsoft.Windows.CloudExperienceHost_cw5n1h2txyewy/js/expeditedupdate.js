@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -21,7 +17,6 @@ var CloudExperienceHost;
             }
             return WinJS.Promise.wrap(skipExpeditedUpdate);
         }
-        // Monitor status change
         static setStatusHandler() {
             try {
                 CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_setStatusHandlerStarted");
@@ -35,7 +30,6 @@ var CloudExperienceHost;
                 CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_setStatusHandlerFailure", CloudExperienceHost.GetJsonFromError(err));
             }
         }
-        // Start WU scan
         static startWUScan() {
             CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_startWUScanStarted");
             return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
@@ -48,7 +42,6 @@ var CloudExperienceHost;
                 });
             });
         }
-        // Cancel WU scan
         static cancelWUScan() {
             CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_cancelWUScanStarted");
             return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
@@ -61,7 +54,6 @@ var CloudExperienceHost;
                 });
             });
         }
-        // Get scan results
         static getUpdateResults() {
             return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
                 try {
@@ -206,7 +198,6 @@ var CloudExperienceHost;
         static getEulaText() {
             CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getEulaTextStarted");
             return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
-                // Use OobeEulaManagerStaticsCore here since it already handles retrieving eula text
                 AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeEulaManagerStaticsCore").getEulaFileAsync(CloudExperienceHostAPI.EulaType.microsoft).done((eulaText) => {
                     CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getEulaTextSucceeded");
                     completeDispatch(eulaText);
@@ -243,4 +234,3 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.ExpeditedUpdate = ExpeditedUpdate;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=expeditedupdate.js.map

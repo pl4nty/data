@@ -1,20 +1,13 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 define(['legacy/core'], (core) => {
     class OobeTelemetryFlush {
         launchAsync() {
             try
             {
-                // Skip if there is no internet access.
                 if (!CloudExperienceHost.Environment.hasInternetAccess()) {
                     return this.setNetworkStateAndReturnAppResultAsync(CloudExperienceHost.AppResult.abort);
                 }
 
-                // The external subscription ID is hardcoded here as OOBE runs before any of the other mechanisms we would use to determine
-                // what placement id to use for internal vs external. 
-                // Please reference onecoreuap\shell\contentdeliverymanager\utils\inc\TargetedContentConfiguration.h
                 let self = this;
                 return CloudExperienceHostAPI.ContentDeliveryManagerHelpers.flushReportedInteractionsAsync("314567").then(function () {
                     CloudExperienceHost.Telemetry.logEvent("oobeTelemetryFlushSucceeded");

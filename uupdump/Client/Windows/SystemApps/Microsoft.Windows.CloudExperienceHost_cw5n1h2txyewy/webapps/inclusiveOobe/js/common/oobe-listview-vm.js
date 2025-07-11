@@ -1,4 +1,4 @@
-﻿define(() => {
+define(() => {
     class OobeListViewModel {
         constructor(params, element) {
             this.element = element;
@@ -21,13 +21,11 @@
             this.isKeyPressEnabled = false;
             this.initializeTypeaheadEnabled();
             this.initializeGamepadEnabled();
-            // Forward the autofocus attribute onto our focusable list element
             if (element.hasAttribute("autofocus")) {
                 this.listRootElement.setAttribute("autofocus", true);
                 element.removeAttribute("autofocus");
             }
 
-            // Forward the 2 option list param onto list element class
             if (this.isBinaryChoice) {
                 this.optInBinaryChoice();
             }
@@ -65,7 +63,6 @@
                 if (focusElement) {
                     focusElement.focus();
 
-                    // Put selected item at center of scroll-view when page gets initialized
                     if (!this.ensuredInCenter) {
                         let targetoffset = focusElement.offsetTop;
                         let scrollView = this.element.querySelector(".scroll-view");
@@ -79,8 +76,6 @@
             });
         }
 
-        // To achieve our desired focus behavior,
-        // we make the list itself a tab stop and then forward focus to the selected list item
         onListFocus(list, e) {
             if (e.relatedTarget && e.relatedTarget.parentElement == this.listRootElement) {
                 return;
@@ -93,13 +88,10 @@
         }
         
         onListFocusIn() {
-            // If focus comes to the list or any child, we disable having the list as a tab stop
-            // (so shift+tab from inside the list doesn't focus the list)
             this.listRootElement.tabIndex = -1;
         }
 
         onListFocusOut(list, e) {
-            // If focus leaves the list, make the list a tab stop again
             let newFocusElement = e.relatedTarget;
             let isNewFocusListOrChild = newFocusElement &&
                                         ((newFocusElement == this.listRootElement) ||
@@ -111,7 +103,6 @@
 
         handlePageKey(goingUp, currentElement, scrollView) {
             let elementToFocus = currentElement;
-            // Basic implementation assuming equal height rows
             let itemHeight = currentElement.offsetHeight;
             if (itemHeight) {
                 let itemsOnScreen = scrollView.offsetHeight / itemHeight;
@@ -168,11 +159,6 @@
                     elementToFocus = this.handlePageKey(goingUp, currentElement, scrollView);
                     break;
                 case WinJS.Utilities.Key.space:
-                    // Default (selectionFollowsFocus is true): To prevent the space key from causing
-                    // scrolling of the scroll- view, and since this list view auto-selects the focused
-                    // item, obviating a de-select command, just focus the current element.
-                    // If selectionFollowsFocus is false, auto-selection does not happen when focused.
-                    // Thus, here, making sure the focused item is selected when spacebar/enter pressed.
                     elementToFocus = currentElement;
                     if (!this.selectionFollowsFocus) {
                         this.selectedItem(ko.dataFor(currentElement));
@@ -180,7 +166,6 @@
                     break;
                 case WinJS.Utilities.Key.enter:
                     if (!this.selectionFollowsFocus && (this.listRootElement.querySelector(".list-item.selected") !== currentElement)) {
-                        // Only re-focus current element if it isn't already selected
                         elementToFocus = currentElement;
                     }
                     break;

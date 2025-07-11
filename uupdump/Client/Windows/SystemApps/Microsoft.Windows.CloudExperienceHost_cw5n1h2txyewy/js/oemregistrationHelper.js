@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -82,7 +78,6 @@ var CloudExperienceHost;
             });
         }
         OEMRegistrationInfo.getShouldSkipAsync = getShouldSkipAsync;
-        // Function to get all the strings via bridge as access from webview is not possible
         function localizedStrings() {
             var oemRegistrationResources = {};
             var keyList = ['VoiceOver'];
@@ -95,4 +90,3 @@ var CloudExperienceHost;
         OEMRegistrationInfo.localizedStrings = localizedStrings;
     })(OEMRegistrationInfo = CloudExperienceHost.OEMRegistrationInfo || (CloudExperienceHost.OEMRegistrationInfo = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-//# sourceMappingURL=oemregistrationHelper.js.map

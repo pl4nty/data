@@ -1,4 +1,3 @@
-﻿
 (function () {
     "use strict";
 
@@ -25,7 +24,6 @@
         },
 
         ready: function (element, options) {
-            
             document.title = resources.rdxTitle;
             msaTitle.textContent = resources.msaTitle;
             msaText.textContent = resources.msaText;
@@ -44,13 +42,11 @@
                 }
             });
             
-            
             signInLink.addEventListener("click", function (eventInfo) {
                 eventInfo.preventDefault();
                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.cancel);
             });
 
-            
             finishButton.addEventListener("click", function (eventInfo) {
                 eventInfo.preventDefault();
                 bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);

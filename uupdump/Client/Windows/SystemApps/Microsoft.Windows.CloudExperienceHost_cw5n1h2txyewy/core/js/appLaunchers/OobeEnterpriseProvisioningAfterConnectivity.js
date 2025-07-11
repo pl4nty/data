@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 define(['legacy/core'], (core) => {
     class OobeEnterpriseProvisioningAfterConnectivity {

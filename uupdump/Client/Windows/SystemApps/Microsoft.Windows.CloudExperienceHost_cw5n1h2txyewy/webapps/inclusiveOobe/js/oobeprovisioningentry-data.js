@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 define(['lib/knockout', 'legacy/bridge'], (ko, bridge) => {
     class OobeProvisioningEntryData {
         getProvisioningDataAsync() {
@@ -8,7 +5,6 @@ define(['lib/knockout', 'legacy/bridge'], (ko, bridge) => {
                 packages: []
             };
 
-            // Get list of provisioning packages from plugin manager
             let pluginManager = new CloudExperienceHostAPI.Provisioning.PluginManager();
             return pluginManager.getPackagesFromProvidersAsync().then((packages) => {
                 provisioningData.packages = packages;

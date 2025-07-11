@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -21,20 +18,15 @@ define([
             targetPersonality,
             sessionUtilities) {
 
-            // Autopilot orchestrator timeout to register the IAutopilotDevicePreparationOrchestrator related instances. (5 min)
             this.AUTOPILOT_ORCHESTRATOR_TIMEOUT_IN_MS = 5 * 60 * 1000;
 
-            // Define timeout and retry behavior for the WinRt instance (re)creation
-            // The SCM service restart duration defaults to 10 seconds, so the retry count * retry wait must be greater than that.
             this.MAX_WINRT_RETRY_COUNT = 4;
             this.WINRT_FAIL_RETRY_WAIT_IN_MS = 5000;
 
-            // Once the orchestration is underway, this is the max amount of time to wait before restarting the orchestrator.
             this.KEEP_ALIVE_TIMEOUT_DURATION_IN_MS = 5 * 60 * 1000; // 5 minutes
 
             this.MAX_AGENT_PROGRESS_LISTENER_FAILURES = 5;
 
-            // Button visibility bitmasks
             this.BUTTON_ID_NONE = 0;
             this.BUTTON_ID_NEXT = 1;
             this.BUTTON_ID_SKIP = 2;
@@ -42,10 +34,8 @@ define([
 
             this.DEFAULT_BUTTON_ID_SET = this.BUTTON_ID_NEXT;
 
-            // Hyperlink visibility bitmasks
             this.HYPERLINK_ID_NONE = 0;
 
-            // Read the velocity value from the OOBE feature staging API to differentiate behavior between old and new
             this.AUTOPILOT_RESILIENCE_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDppResilience");
             this.AUTOPILOT_DPP_REBOOT_CHANGES_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDppRebootFix");
             this.AUTOPILOT_RESILIENCE_CONTEXT_OPTION_ID = "DppOptionPolicy:7273";
@@ -55,75 +45,58 @@ define([
             this.AUTOPILOT_DEVICE_PREPARATION_ORCHESTRATOR_INSTANCENAME = "autopilotDevicePreparationOrchestratorInstance";
             this.AUTOPILOT_DEVICE_PREPARATION_AGENT_DOWNLOADER_INSTANCENAME = "autopilotDevicePreparationAgentDownloaderInstance";
 
-            // Virtual page IDs
             this.VIRTUAL_PAGE_NONE = "None";
             this.VIRTUAL_PAGE_IN_PROGRESS = "InProgressVirtualPage";
             this.VIRTUAL_PAGE_SUCCESS = "SuccessVirtualPage";
             this.VIRTUAL_PAGE_UNRECOVERABLE_ERROR = "UnrecoverableError";
 
-            // Page transition IDs
             this.PAGE_TRANSITION_POST_DPP_SUCCESS_PAGE = CloudExperienceHost.AppResult.success;
 
-            // DPP commands constants
             this.DPP_PHASE_ID_ON_SUCCESSFUL_DPP_PAGE_EXIT = "onSuccessfulDppPageExit";
             this.DPP_PHASE_ID_ON_AGENT_DOWNLOAD = "onAgentDownload";
             this.DPP_PHASE_ID_ON_AGENT_PROVISIONING = "onAgentProvisioning";
             this.DPP_PHASE_ID_ON_DEVICE_REBOOT = "onDeviceReboot";
 
-            // Lottie animations
             this.LOTTIE_FILE_SUCCESS = "autopilotLottie.json";
             this.LOTTIE_FILE_ERROR = "errorLottie.json";
 
-            // Logs export constants
             this.DIAGNOSTICS_LOGS_EXPORT_AREA_DEFAULT = "Autopilot;TPM";
             this.DIAGNOSTICS_LOGS_EXPORT_FILE_NAME = "MDMDiagReport.zip";
             this.DIAGNOSTICS_LOGS_EXPORT_MAX_DURATION_IN_MILLISECONDS = 3 * 60 * 1000; // 3 minutes;
 
-            // Event listener ID
             this.EVENT_LISTENER_ID_AGENT_READY = "agentreadyevent";
             this.EVENT_LISTENER_ID_PROGRESS_UPDATE = "progressupdated";
             this.EVENT_LISTENER_ID_SESSION_CONNECTION_CHANGED = "sessionconnectionchanged";
 
-            // Persistent state names
             this.AUTOPILOT_ORCHESTRATOR_PROGRESS_MS = "DevicePrep.Global.AutopilotOrchestratorProgressInMiliseconds";
             this.AUTOPILOT_ORCHESTRATOR_PROGRESS_PERCENT = "DevicePrep.Global.AutopilotOrchestratorProgressPercentage";
             this.AUTOPILOT_ORCHESTRATOR_AGENT_INSTALLED = "DevicePrep.Global.AutopilotOrchestratorAgentInstalled";
             this.DEVICE_PREPARATION_CURRENT_VIRTUAL_PAGE_ID = "DevicePrep.Global.DppCurrentVirtualPageId";
 
-            // Persistent flag indicating that the device was last rebooted by this page.
             this.LAST_REBOOTER_VALUE_NAME = "DevicePrep.Global.LastRebooter";
             this.LAST_REBOOTER_VALUE_DEVICE_PREP_PAGE = "DevicePrepPage";
 
-            // Default wait time to show final completion percentage before transitioning to next page (3 seconds)
             this.HOLD_COMPLETION_PERCENTAGE_IN_MILLISECONDS = 3 * 1000;
 
-            // Default wait time to show final completion percentage before transitioning to next page (3 seconds)
             this.HOLD_REBOOT_REQUIRED_MESSAGE_IN_MILLISECONDS = 3 * 1000;
 
-            // Default wait time for a device reboot (3 minutes)
             this.MAX_WAIT_FOR_REBOOT_IN_MILLISECONDS = 3 * 60 * 1000;
 
-            // Event for the page in navigation.json indicating a reboot.
             this.PAGE_EVENT_REBOOT = constants.AppResult.action1;
 
-            // Default wait time for the MDM Alert sync session (2 minutes)
             this.MAX_WAIT_FOR_ALERT_SESSION_IN_MILLISECONDS = 2 * 60 * 1000;
 
-            // Default wait time to see if a lost internet connection remains lost (5 seconds)
             this.MAX_WAIT_FOR_CONTINUED_LOST_INTERNET_CONNECTION_IN_MILLESECONDS = 5 * 1000;
 
-            // HRESULTs
             this.HRESULT_SUCCESS = 0x00000000;
             this.HRESULT_TIME_OUT = 0x800705B4;
             this.HRESULT_INVALIDARG = 0x80070057;
             this.HRESULT_E_UNEXPECTED = 0x8000FFFF;
             this.HRESULT_E_FAIL = 0x80004005;
 
-            // MDM results parameters
             this.FEATURE_NAME = "DevicePreparation";
             this.MDM_ALERT_TYPE = "com.microsoft.mdm.deviceprepresult";
 
-            // Phases
             this.PHASE_UNKNOWN = "0";
             this.PHASE_PRESTART = "1";
             this.PHASE_AGENT_DOWNLOAD = "2";
@@ -132,12 +105,10 @@ define([
             this.PHASE_AGENT_REBOOT = "5";
             this.PHASE_CLEANUP = "6";
 
-            // Names of variables to store
             this.PAGE_ERROR_PHASE = "DevicePreparation/PageErrorPhase";
             this.PAGE_ERROR_CODE = "DevicePreparation/PageErrorCode";
             this.PAGE_ERROR_DETAILS = "DevicePreparation/PageErrorDetails";
 
-            // Troubleshooting model metadata
             this.TSM_PROCESS_NAME = "DevicePrepPage";
             this.TSM_STATE_PAGE_START = this.namespaceTsmState("PageStart");  // Namespace the state names
             this.TSM_STATE_PAGE_EXIT_WITH_SUCCESS = this.namespaceTsmState("PageExitWithSuccess");
@@ -176,7 +147,6 @@ define([
             this.TSM_STATE_PAGE_RESULTS_TRANSMISSION_TO_MDM_SERVER_END_WITH_SUCCESS = this.namespaceTsmState("PageResultsTransmissionToMdmServerEndWithSuccess");
             this.TSM_STATE_PAGE_RESULTS_TRANSMISSION_TO_MDM_SERVER_END_WITH_ERROR = this.namespaceTsmState("PageResultsTransmissionToMdmServerEndWithError");
 
-            // Private member variables
             this.resourceStrings = resourceStrings;
             this.sessionUtilities = sessionUtilities;
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities(this.sessionUtilities);
@@ -188,9 +158,6 @@ define([
                 this.deviceManagementUtilities = new ModernDeployment.Autopilot.Core.DeviceManagementUtilities();
             }
 
-            // Because we must setup the UX before we can make any async calls, we need an instance of
-            // AutopilotDevicePreparationUtilities outside of our guarded get*Instance methods. This will only be used
-            // during the constructor and any synchronous functions called by the constructor if AUTOPILOT_RESILIENCE_ENABLED is set.
             this.autopilotDevicePreparationUtilities = new ModernDeployment.Autopilot.Core.AutopilotDevicePreparationUtilities();
 
             this.progressCounterMilliseconds = 0;
@@ -210,10 +177,8 @@ define([
             this.isNetworkConnected = false;
             this.lastSubheaderText = null;
 
-            // Resource strings (must come after private member variables section above)
             this.COMPLETION_PERCENTAGE_FORMAT_TEMPLATE = this.resourceStrings["DevicePrepCompletionPercentage"];
 
-            // Initialize data-bound web controls' values.
             this.isLiteWhitePersonality = ko.observable(targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite);
             this.showProgress = ko.observable(true);
             this.commercialDiagnosticsUtilities.logInfoEventName(this.isLiteWhitePersonality() ? "DevicePrepPage_LiteWhitePersonalityDetected_True" : "DevicePrepPage_LiteWhitePersonalityDetected_False");
@@ -236,7 +201,6 @@ define([
             this.exportLogsLinkEnabled = ko.observable(true);
             this.exportLogsLinkText = ko.observable(this.resourceStrings["DevicePrepExportLogsLink"]);
 
-            // Initialize button sets
             this.buttons = {};
             this.buttons[this.BUTTON_ID_NEXT] = {
                 automationId: "idNextButton",
@@ -281,7 +245,6 @@ define([
                 }
             };
 
-            // Set up the button groupings.
             const flexEndButtonSets = {};
             flexEndButtonSets[this.BUTTON_ID_NONE] = [];
             flexEndButtonSets[this.BUTTON_ID_NEXT] = [this.BUTTON_ID_NEXT];
@@ -295,23 +258,19 @@ define([
                         "DevicePrepPage: No button combo for visibility flag set " +
                         this.commercialDiagnosticsUtilities.formatNumberAsHexString(this.currentButtonIdSet(), 8));
 
-                    // Return the default button.
                     return this.getButtonSetToDisplay(flexEndButtonSets[this.DEFAULT_BUTTON_ID_SET]);
                 }
 
                 return this.getButtonSetToDisplay(flexEndButtonSets[this.currentButtonIdSet()]);
             });
 
-            // Set up the hyperlink groupings.
             const flexStartHyperlinksSets = {};
             flexStartHyperlinksSets[this.HYPERLINK_ID_NONE] = [];
 
             this.flexStartHyperLinks = ko.pureComputed(() => {
-                // Lite personality doesn't have the same support for hyperlinks as Inclusive Blue
                 return flexStartHyperlinksSets[this.HYPERLINK_ID_NONE];
             });
 
-            // Initialize the virtual pages map.
             this.virtualPages = [];
 
             this.virtualPages[this.VIRTUAL_PAGE_IN_PROGRESS] = {
@@ -332,9 +291,6 @@ define([
 
             this.subheaderErrorText = this.resourceStrings["DevicePrepPageSubheaderError"];
 
-            // This call must be performed as part of UX element setup during the constructor,
-            // before any async functions are gauranteed.We must special-case use of
-            // this.autopilotDevicePreparationUtilities even if AUTOPILOT_RESILIENCE_ENABLED is set
             if (this.autopilotDevicePreparationUtilities.errorMessage !== undefined) {
                 this.subheaderErrorText = this.autopilotDevicePreparationUtilities.errorMessage;
             }
@@ -350,17 +306,12 @@ define([
                 lottieAnimation: this.LOTTIE_FILE_ERROR
             };
 
-            // By default, display the in progress virtual page.  No await since the constructor is not async.
             this.displayVirtualPageAsync(this.VIRTUAL_PAGE_IN_PROGRESS);
 
-            // Signal to OOBE to finally display the page.
             bridge.fireEvent(CloudExperienceHost.Events.visible, true);
 
-            // Put things critical for page visibility before the fireEvent call above.
 
-            // Start main processing only after all the UI containers are initialized.
             let initializationPromise = this.waitForDebuggerAttachmentAsync().then(() => {
-                // TSM logging
                 return this.logTsmProcessStartAsync(this.TSM_STATE_PAGE_START, "").then(() => {
                     return this.logTsmProcessInfoAsync(this.TSM_STATE_PAGE_INITIALIZATION_START, "");
                 })
@@ -369,15 +320,12 @@ define([
                     return this.checkDppFlightOptionForResilienceAsync();
                 }
             }).then(() => {
-                // Set OOBE to resume to this page on any reboot.
                 return this.setResumeToCurrentPageAsync();
             }).then(() => {
                 return this.logIfDeviceRebootedByPageAsync();
             }).then(() => {
-                // Set the progress counter to the last known value.
                 return this.loadPersistedPageInfoAsync();
             }).then(() => {
-                // This must always be right before the next big, main logic block.
                 return this.logTsmProcessInfoAsync(this.TSM_STATE_PAGE_INITIALIZATION_END_WITH_SUCCESS, "").then(() => {
                     this.currentPhase = this.PHASE_PRESTART;
 
@@ -387,23 +335,17 @@ define([
 
                 this.isProvisoningComplete = false;
 
-                // Note this uses the this.autopilotDevicePreparationUtilities even if AUTOPILOT_RESILIENCE_ENABLED is
-                // enabled since this is early during the constructor and should be stable.
 
                 let intervalInMilliseconds = 0;
 
                 if (this.AUTOPILOT_RESILIENCE_ENABLED) {
-                    // Store the page timeout to the class instance to avoid round trips to the WinRT layer.
                     this.devicePrepTimeoutInMs = this.autopilotDevicePreparationUtilities.pageTimeoutSeconds * 1000;
 
-                    // Increment the completion percentage 1 percent at each interval, up to 100.
-                    // By default, show 1 % completion at the start, so omit it from here; hence, 99.
                     intervalInMilliseconds = this.devicePrepTimeoutInMs / 99;
                 } else {
                     intervalInMilliseconds = (this.autopilotDevicePreparationUtilities.pageTimeoutSeconds * 1000) / 99;
                 }
 
-                // Set the completion percentage to 1% at the start for first run only.
                 if (this.completionPercentage === 0) {
                     this.completionPercentage = 1;
                 }
@@ -429,13 +371,10 @@ define([
 
                         return this.displayVirtualPageAsync(this.currentVirtualPageId);
                 } else {
-                    // On a steady interval, depending on what the page timeout is, increase the percentage by 1 so the progress
-                    // wheel increases over time.
                     this.pageProgressUpdateIntervalId = setInterval(
                         async () => {
                             try {
                                 if ((this.completionPercentage >= 100) || this.isProvisoningComplete) {
-                                    // Set to 100%.
                                     this.commercialDiagnosticsUtilities.logInfoEvent(
                                         "DevicePrepPage_ProgressPercentage_Success",
                                         "DevicePrepPage: Provisioning completed. Setting page progress percentage to 100%.");
@@ -445,7 +384,6 @@ define([
                                         this.COMPLETION_PERCENTAGE_FORMAT_TEMPLATE,
                                         this.completionPercentage));
 
-                                    // Stop the page progress update interval.
                                     if (this.pageProgressUpdateIntervalId != 0) {
                                         clearInterval(this.pageProgressUpdateIntervalId);
                                         this.pageProgressUpdateIntervalId = 0;
@@ -460,7 +398,6 @@ define([
                                     }
                                     this.progressCounterMilliseconds += intervalInMilliseconds;
 
-                                    // Update the persistent state with the latest progress.
                                     await bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.AUTOPILOT_ORCHESTRATOR_PROGRESS_MS, this.progressCounterMilliseconds);
                                     await bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.AUTOPILOT_ORCHESTRATOR_PROGRESS_PERCENT, this.completionPercentage);
 
@@ -511,7 +448,6 @@ define([
                         },
                         intervalInMilliseconds);
 
-                    // Start the main processing of the page  i.e., not returning anything.
                     return this.logTsmProcessInfoAsync(this.TSM_STATE_PROGRESS_DISPLAY_INITIATION_END_WITH_SUCCESS, "").then(() => {
                         return this.runMainProcessingAsync();
                     });
@@ -539,7 +475,6 @@ define([
                             break;
 
                         default:
-                            // All other phases should handle their own TSM logging in their respective functions.
                             break;
                     }
 
@@ -574,15 +509,7 @@ define([
             }
         }
 
-        // Wrappers to access the WinRT instances. These support re-initialization of the instances if the underlying connection is lost.
-        // These are only called if AUTOPILOT_RESILIENCE_ENABLED is enabled.
-        // The probeFunction is optional and is used to test the validity of the instance.
-        // These are all async to support sleep/retry and can be called from anywhere except the constructor. Anything in the constructor
-        // needs to wrap the calls in an async method and order of execution will happen after the constructor body is finished so nothing
-        // within the constructor can take dependencies on these instances.
         async getOrCreateWinRtInstanceHelperAsync(instanceName, factoryFunction, probeFunction) {
-            // Use bracket notation to access the instance name as a property of the class.
-            // Bracket notation allows string name property accessors equivalent to the dot notation normally used: this.foo == this['foo']
             let instance = this[instanceName];
 
             let needToCreate = false;
@@ -621,7 +548,6 @@ define([
                     if (probeFunction !== null) {
                         if (!probeFunction(instance)) {
                             this.commercialDiagnosticsUtilities.logErrorEvent(`DevicePrepPage_${instanceName}_createWinRtInstanceHelperRecursiveAsync_postCreateProbeFailed`);
-                            // recursively call this function to retry
                             return this.createWinRtInstanceHelperRecursiveAsync(instanceName, factoryFunction, probeFunction, currentDepth + 1);
                         }
                     }
@@ -631,13 +557,11 @@ define([
                         `DevicePrepPage: Failed to create ${instanceName}`,
                         e);
                     await WinJS.Promise.timeout(this.WINRT_FAIL_RETRY_WAIT_IN_MS).then(() => {
-                        // recursively call this function to retry
                         return this.createWinRtInstanceHelperRecursiveAsync(instanceName, factoryFunction, probeFunction, currentDepth + 1);
                     });
                 }
             }
 
-            // The caller will throw if this is null
             return instance;
         }
 
@@ -649,7 +573,6 @@ define([
                 this.currentDetails = `DevicePrepPage_${instanceName}_createWinRtInstanceHelperAsync_FailedAllRetries`;
                 throw new Error(this.currentDetails);
             } else {
-                // Use bracket notation to access the instance name as a property of the class.
                 this[instanceName] = instance;
             }
 
@@ -660,13 +583,10 @@ define([
 
         resetWinRtInstanceHelper(instanceName) {
             this.commercialDiagnosticsUtilities.logInfoEvent(`DevicePrepPage_${instanceName}_resetInstance_called`);
-            // Use bracket notation to access the instance name as a property of the class.
             this[instanceName] = null;
         }
 
-        // Functions to get or reset the various WinRT instances using the helper functions
         async getAutopilotDevicePreparationUtilitiesInstanceAsync() {
-            // Probe function for instance validity
             let probeFunction = function (instance) {
                 let throwAwayResult = instance.allowSkipOnError;
                 return true;
@@ -684,7 +604,6 @@ define([
         }
 
         async getDeviceManagementUtilitiesInstanceAsync() {
-            // Probe function for instance validity. We pass in a special sync session exit condition to validate the provider.
             let probeFunction = function (instance) {
                 let throwAwayResult = instance.runSyncSessionsAsync(ModernDeployment.Autopilot.Core.SyncSessionExitCondition.validateInstance);
                 return true;
@@ -702,7 +621,6 @@ define([
         }
 
         async getAutopilotDevicePreparationOrchestratorInstanceAsync() {
-            // Probe function for instance validity
             let probeFunction = function (instance) {
                 let throwAwayResult = instance.sessionId;
                 return true;
@@ -720,9 +638,7 @@ define([
         }
 
         async getAutopilotDevicePreparationAgentDownloaderInstanceAsync() {
-            // Probe function for instance validity
             let probeFunction = function (instance) {
-                // This is the underlying delegate object for addEventListener/removeEventListener
                 let throwAwayResult = instance.agentReadyEvent;
                 return true;
             };
@@ -790,11 +706,8 @@ define([
         async createDevicePrepOrchestratorAsync() {
             this.commercialDiagnosticsUtilities.logInfoEventName("DevicePrepPage_createDevicePrepOrchestratorAsync_Started");
 
-            // Always clear out any active orchestrator instance before creating a new one.
             this.resetAutopilotDevicePreparationOrchestratorInstance();
 
-            // Initialize a new instance of the orchestrator but don't invoke any methods on it yet.
-            // The uber processor will catch any exceptions.
             await this.getAutopilotDevicePreparationOrchestratorInstanceAsync();
 
             this.commercialDiagnosticsUtilities.logInfoEventName("DevicePrepPage_createDevicePrepOrchestratorAsync_Completed");
@@ -807,7 +720,6 @@ define([
                 this.handleAgentHeartbeat(event);
             };
 
-            // The uber processor will catch any exceptions.
             let orchestratorInstance = await this.getAutopilotDevicePreparationOrchestratorInstanceAsync();
             await orchestratorInstance.initializeAsync(
                 this.sessionId,
@@ -830,16 +742,12 @@ define([
         async checkDppFlightOptionForResilienceAsync() {
             this.commercialDiagnosticsUtilities.logInfoEventName("DevicePrepPage_checkDppFlightOptionForResilienceAsync_Started");
 
-            // Even if the flighting velocity is enabled we should check the context option
-            // to see if the resilience feature is disabled for the account.
             await EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getSettingAsync(this.AUTOPILOT_RESILIENCE_CONTEXT_OPTION_ID).then((result) => {
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "DevicePrepPage_checkDppFlightOptionForResilienceAsync_FlagResult",
                     `DevicePrepPage: ${this.AUTOPILOT_RESILIENCE_CONTEXT_OPTION_ID} flag set to ${result}`);
 
                 if ("false" === result) {
-                    // Switch the behavior to not have resilience enabled. This requires initializing the non-resilience
-                    // WinRt instances that are not initialized above already when AUTOPILOT_RESILIENCE_ENABLED is true
                     this.AUTOPILOT_RESILIENCE_ENABLED = false;
                     this.deviceManagementUtilities = new ModernDeployment.Autopilot.Core.DeviceManagementUtilities();
                 }
@@ -873,7 +781,6 @@ define([
         }
 
         async setResumeToCurrentPageAsync() {
-            // Enable resuming to the DPP after a reboot.
             this.commercialDiagnosticsUtilities.logInfoEventName("DevicePrepPage_RebootResumption_Set");
 
             await bridge.invoke("CloudExperienceHost.AutoPilot.DevicePreparationPage.setResumeToCurrentPageAsync");
@@ -885,7 +792,6 @@ define([
             if ((lastRebooter !== undefined) &&
                 (lastRebooter !== null) &&
                 (lastRebooter == this.LAST_REBOOTER_VALUE_DEVICE_PREP_PAGE)) {
-                // This page is resuming from an intentional reboot by this page.  Clear this flag.
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_DEVICE_REBOOT_END_WITH_SUCCESS, "");
 
                 await this.sessionUtilities.storeSettingAsync(this.LAST_REBOOTER_VALUE_NAME, "");
@@ -906,7 +812,6 @@ define([
             }
 
             if (agentAlreadyInstalled === true) {
-                // Set the correct subtext for the page.
                 this.progressStatusSubtext(this.resourceStrings["DevicePrepDefaultStatusSubtextProvisioning"]);
             }
 
@@ -923,7 +828,6 @@ define([
         }
 
         unsetResumeToCurrentPageAsync() {
-            // Disable resuming to the DPP after a reboot.
             this.commercialDiagnosticsUtilities.logInfoEventName("DevicePrepPage_RebootResumption_Unset");
 
             return bridge.invoke("CloudExperienceHost.AutoPilot.DevicePreparationPage.unsetResumeToCurrentPageAsync");
@@ -941,7 +845,6 @@ define([
 
                 this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_DebuggerAttachment_Waiting", "DevicePrepPage: Waiting 5 seconds for debugger to attach.");
 
-                // Loop every 5 seconds waiting for debugger attachment.
                 return WinJS.Promise.timeout(5000).then(() => {
                     return this.waitForDebuggerAttachment();
                 });
@@ -952,12 +855,7 @@ define([
             let buttonSet = [];
             let lastButton = null;
 
-            // Unfortunately this call must be performed as part of UX element setup
-            // during the constructor, before any async functions are gauranteed. We must special-case
-            // use of this.autopilotDevicePreparationUtilities even if AUTOPILOT_RESILIENCE_ENABLED is set
 
-            // These flags govern whether to display descriptions of the corresponding buttons.
-            // Set these flags to true only if the buttons being retrieved match.
             this.skipButtonDisplayed(false);
             this.resetButtonDisplayed(false);
 
@@ -965,7 +863,6 @@ define([
                 let button = this.buttons[currentButtonIdSet[i]];
                 let appendButton = true;
 
-                // Set appropriate button description visibility.  These are the only two button descriptions.
                 if (currentButtonIdSet[i] === this.BUTTON_ID_SKIP) {
                     if (this.autopilotDevicePreparationUtilities.allowSkipOnError) {
                         this.skipButtonDisplayed(true);
@@ -989,7 +886,6 @@ define([
             }
 
             if ((lastButton != undefined) && (lastButton != null)) {
-                // If this is the last button, make it primary.
                 lastButton.isPrimaryButton = true;
             }
 
@@ -1023,7 +919,6 @@ define([
                 "DevicePrepPage_ResetButtonClicked_Started",
                 "DevicePrepPage: Reset button selected");
 
-            // Disable the button so the user can't press it multiple times in a row.
             this.isResetButtonClicked(false);
 
             let pluginManager = new CloudExperienceHostAPI.Provisioning.PluginManager();
@@ -1034,7 +929,6 @@ define([
                         "DevicePrepPage: Device reset was initiated successfully.");
                 },
                 (e) => {
-                    // Error happened, re-enable the button
                     this.isResetButtonClicked(true);
                     this.commercialDiagnosticsUtilities.logExceptionEvent(
                         "DevicePrepPage_DeviceResetInitiation_Failed",
@@ -1050,7 +944,6 @@ define([
                 return;
             }
 
-            // Disable the link so the user can't click this many times in parallel.
             this.exportLogsLinkEnabled(false);
 
             this.commercialDiagnosticsUtilities.logInfoEventName("DevicePrepPage_ExportLogs_Started");
@@ -1064,20 +957,16 @@ define([
                     return WinJS.Promise.timeout(
                         this.DIAGNOSTICS_LOGS_EXPORT_MAX_DURATION_IN_MILLISECONDS,
                         this.sessionUtilities.enrollmentApis.collectLogsEx(this.DIAGNOSTICS_LOGS_EXPORT_AREA_DEFAULT, folderPath + "\\" + this.DIAGNOSTICS_LOGS_EXPORT_FILE_NAME)).then(
-                            // Case: Promise completion before time out
                             () => {
                                 if (hasTimedOut) {
-                                    // Operation timed out already.  No need to do anything else.
                                     return;
                                 }
 
                                 this.commercialDiagnosticsUtilities.logInfoEventName("DevicePrepPage_ExportLogs_Succeeded");
 
-                                // Success
                                 this.exportLogsLinkEnabled(true);
                             },
 
-                            // Case: Timed out
                             (e) => {
                                 this.commercialDiagnosticsUtilities.logExceptionEvent(
                                     "DevicePrepPage_ExportLogs_Failed",
@@ -1106,9 +995,7 @@ define([
 
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_PAGE_RESULTS_TRANSMISSION_TO_MDM_SERVER_START, "Results = " + result);
 
-                // Don't await on sendMdmAlertMessageAsync because this is best effort.
                 if (this.AUTOPILOT_RESILIENCE_ENABLED) {
-                    // The outer caller will handle any exceptions.
                     let deviceManagementInstance = await this.getDeviceManagementUtilitiesInstanceAsync();
                     deviceManagementInstance.sendMdmAlertMessageAsync(
                         this.FEATURE_NAME,
@@ -1140,12 +1027,10 @@ define([
         }
 
         async runCommonPageExitAsync() {
-            // This method is run on exit, success or error.
             await this.unsetResumeToCurrentPageAsync();
         }
 
         releaseWinRtInstances() {
-            // Clear out any active WinRt instances when the page exits
             this.autopilotDevicePreparationUtilities = null;
 
             this.resetAutopilotDevicePreparationUtilitiesInstance();
@@ -1162,10 +1047,6 @@ define([
         async displayVirtualPageAsync(virtualPageId, resultsToSendToMdmServer) {
             try {
                 if (this.terminalVirtualPageAlreadyDisplayed) {
-                    // If a terminal virtual page is already displayed, don't override it.
-                    // This can happen if the progress reaches 100% before the other background processes
-                    // (e.g., agent download or provisioning) completes, despite our best efforts
-                    // to bypass those background processes.
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "DevicePrepPage_DisplayVirtualPage_BypassingVirtualPageTransitioning",
                         "DevicePrepPage: Bypass transitioning virtual page since the page reached a terminal state already.");
@@ -1189,7 +1070,6 @@ define([
                     "DevicePrepPage_DisplayVirtualPage_TransitioningVirtualPage",
                     "DevicePrepPage: Display virtual page " + virtualPageId + ".");
 
-                // Unhideable page elements
                 if (virtualPage.pageTitle !== undefined) {
                     this.pageTitle(virtualPage.pageTitle)
                 }
@@ -1198,7 +1078,6 @@ define([
                     this.subheaderText(virtualPage.subheaderText)
                 }
 
-                // Hideable page elements. If a virtual page property is missing, hide its corresponding page element.
                 if (virtualPage.colorSubheaderTextWithError === undefined) {
                     this.errorOccurred(false);
                 } else {
@@ -1223,7 +1102,6 @@ define([
                     this.currentButtonIdSet(virtualPage.currentButtonIdSet);
                 }
 
-                // Stop the page progress update interval.
                 if ((virtualPage.stopPageProgressUpdateInterval !== undefined) &&
                     virtualPage.stopPageProgressUpdateInterval &&
                     (this.pageProgressUpdateIntervalId != 0)) {
@@ -1236,7 +1114,6 @@ define([
                         "DevicePrepPage: Stopped page progress percentage updates due to page transition.");
                 }
 
-                // Lottie animation is an exception.  It never gets hidden.
                 if (virtualPage.lottieAnimation !== undefined) {
                     bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", virtualPage.lottieAnimation);
                 }
@@ -1265,7 +1142,6 @@ define([
                     }
 
                     if (0 == (this.currentButtonIdSet() & (this.BUTTON_ID_NEXT | this.BUTTON_ID_SKIP))) {
-                        // If this is a terminal virtual page (i.e., user cannot go past), then log it as an end state for the page.
                         await this.logTsmProcessEndAsync(this.TSM_STATE_PAGE_TERMINAL_BLOCKING_FAILURE, "");
                     }
                 }
@@ -1286,22 +1162,18 @@ define([
             resultId,
             idOfPageToTransitionTo) {
 
-            // Exiting the page on success is considered a "virtual subcategory", for purposes of executing DPP commands.
             return this.sessionUtilities.startPhaseStateMachineAsync(
                 this.DPP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DPP_PAGE_EXIT,
                 this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_PREACTION,
                 () => {
-                    // Next, run the action phase. i.e., DPP command indicates page can exit.
                     return bridge.fireEvent(resultId, idOfPageToTransitionTo);
                 },
                 (actionResultToUse) => {
-                    // Nothing to do since the page is already exiting on success.
                     return WinJS.Promise.as(true);
                 }
             )
         }
 
-        // This method is invoked only when the DPP is fully exiting (as opposed to going to the diagnostics page transiently).
         async exitPageAsync(devicePrepPageStatus) {
             try {
                 await this.runCommonPageExitAsync();
@@ -1352,7 +1224,6 @@ define([
 
                 let bitlockerDeferralEnabled = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotBitlockerOobeDeferral");
                 if (bitlockerDeferralEnabled) {
-                    // We set BitLockerDeferralReason.MdmSyncComplete when the page exits if the sync failed and user continued anyway
                     this.sessionUtilities.signalBitlockerProvisioningComplete(3); 
                 }
 
@@ -1388,27 +1259,19 @@ define([
             return returnString;
         }
 
-        // Returns object with following properties:
-        // {
-        //     downloadResultCode: this.HRESULT_* (number, not string), // mandatory property
-        //     downloadDetails: "" // mandatory property
-        // }
         downloadAgentAsync(maxAgentInstallationDurationInMilliseconds) {
             return this.sessionUtilities.startPhaseStateMachineAsync(
                 this.DPP_PHASE_ID_ON_AGENT_DOWNLOAD,
                 this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_PREACTION,
-                // Normal case
                 () => {
                     if (this.AUTOPILOT_RESILIENCE_ENABLED) {
                         return this.downloadAgentForRealAsync(maxAgentInstallationDurationInMilliseconds).then((downloadResult) => {
                             return this.sessionUtilities.startPhaseStateMachineAsync(
                                 this.DPP_PHASE_ID_ON_AGENT_DOWNLOAD,
                                 this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_POSTACTION,
-                                // Normal case
                                 () => {
                                     return downloadResult;
                                 },
-                                // Automation-overriden case
                                 (actionResultToUse) => {
                                     return actionResultToUse;
                                 }
@@ -1419,11 +1282,9 @@ define([
                             return this.sessionUtilities.startPhaseStateMachineAsync(
                                 this.DPP_PHASE_ID_ON_AGENT_DOWNLOAD,
                                 this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_POSTACTION,
-                                // Normal case
                                 () => {
                                     return downloadResult;
                                 },
-                                // Automation-overriden case
                                 (actionResultToUse) => {
                                     return actionResultToUse;
                                 }
@@ -1431,25 +1292,14 @@ define([
                         });
                     }
                 },
-                // Automation-overriden case
                 (actionResultToUse) => {
                     return actionResultToUse;
                 }
             );
         }
 
-        // Returns object with following properties:
-        // {
-        //     downloadResultCode: this.HRESULT_* (number, not string), // mandatory property
-        //     downloadDetails: "" // mandatory property
-        // }
-        // This is only called if AUTOPILOT_RESILIENCE_ENABLED is enabled, and the primary difference
-        // between the old version of the function and this one is the async qualifier that was missing
-        // on the original function, as well as needing to mark the promise handlers as async
         async downloadAgentForRealAsync(maxAgentInstallationDurationInMilliseconds) {
-            // TODO:  Do we want to send MDM Alerts for each phase start/end?
             if (this.terminalVirtualPageAlreadyDisplayed) {
-                // This page already reached a terminal state, and so exit early.
                 let details = "DevicePrepPage: Bypass download and install of agent since the page reached a terminal state already.";
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "DevicePrepPage_AgentDownloadAndInstall_BypassingAgentDownloadAndInstall",
@@ -1468,18 +1318,13 @@ define([
             let agentInstallationPromise = this.getAutopilotDevicePreparationAgentDownloaderPromiseAsync();
 
             return WinJS.Promise.timeout(maxAgentInstallationDurationInMilliseconds, agentInstallationPromise).then(
-                // Case: Promise completion before time out
                 async (downloadResult) => {
-                    // Remove any registered event listener
                     await this.unregisterAutopilotDevicePreparationAgentDownloaderInstanceAsync();
 
-                    // Agent installation succeeded or failed within the time limit.
                     return downloadResult;
                 },
 
-                // Case: Timed out
                 async (error) => {
-                    // Remove any registered event listener
                     await this.unregisterAutopilotDevicePreparationAgentDownloaderInstanceAsync();
 
                     let details = `DevicePrepPage: Provisioning agent download and installation timed out after ${maxAgentInstallationDurationInMilliseconds} ms, and is returning HRESULT of ${this.HRESULT_TIME_OUT}.`;
@@ -1496,16 +1341,8 @@ define([
             );
         }
 
-        // Returns object with following properties:
-        // {
-        //     downloadResultCode: this.HRESULT_* (number, not string), // mandatory property
-        //     downloadDetails: "" // mandatory property
-        // }
-        // This is the original version and is only called if if AUTOPILOT_RESILIENCE_ENABLED is disabled.
         downloadAgentForRealAsyncOld(maxAgentInstallationDurationInMilliseconds) {
-            // TODO:  Do we want to send MDM Alerts for each phase start/end?
             if (this.terminalVirtualPageAlreadyDisplayed) {
-                // This page already reached a terminal state, and so exit early.
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "DevicePrepPage_AgentDownloadAndInstall_BypassingAgentDownloadAndInstall",
                     "DevicePrepPage: Bypass download and install of agent since the page reached a terminal state already.");
@@ -1521,9 +1358,7 @@ define([
 
             let agentInstallationPromise = this.autopilotDevicePreparationAgentDownloader.triggerDownloadAsync().then(() => {
                 return new WinJS.Promise(
-                    // Promise initialization handler
                     (completeDispatch, errorDispatch, progressDispatch) => {
-                        // Create event handler.
                         this.agentReadyListener = (hresult) => {
                             let details = "";
 
@@ -1543,14 +1378,12 @@ define([
                                     hresult);
                             }
 
-                            // Signal promise chain to continue.
                             completeDispatch({
                                 downloadResultCode: hresult,
                                 downloadDetails: details
                             });
                         };
 
-                        // Register event handler.
                         try {
                             this.agentReadyListenerRegistered = true;
 
@@ -1575,9 +1408,7 @@ define([
                         }
                     },
 
-                    // Promise cancellation event handler
                     () => {
-                        // No need to return any error from this, since HRESULT_TIME_OUT is returned by the caller.
                         this.commercialDiagnosticsUtilities.logInfoEvent(
                             "DevicePrepPage_AgentDownloadAndInstall_Canceled",
                             "DevicePrepPage: Provisioning agent download and installation are canceled, likely due to timeout.");
@@ -1585,16 +1416,13 @@ define([
             });
 
             return WinJS.Promise.timeout(maxAgentInstallationDurationInMilliseconds, agentInstallationPromise).then(
-                // Case: Promise completion before time out
                 (downloadResult) => {
-                    // Remove event listener.
                     if (this.agentReadyListenerRegistered) {
                         try {
                             this.autopilotDevicePreparationAgentDownloader.removeEventListener(
                                 this.EVENT_LISTENER_ID_AGENT_READY,
                                 this.agentReadyListener.bind(this));
                         } catch (e) {
-                            // Swallow the exception, since it's not critical.
                             this.commercialDiagnosticsUtilities.logExceptionEvent(
                                 "DevicePrepPage_AgentDownloadAndInstall_ListenerDeregistrationFailed",
                                 "DevicePrepPage: Deregistering agent ready event listener failed.",
@@ -1604,20 +1432,16 @@ define([
                         this.agentReadyListenerRegistered = false;
                     }
 
-                    // Agent installation succeeded or failed within the time limit.
                     return downloadResult;
                 },
 
-                // Case: Timed out
                 (error) => {
-                    // Remove event listener.
                     if (this.agentReadyListenerRegistered) {
                         try {
                             this.autopilotDevicePreparationAgentDownloader.removeEventListener(
                                 this.EVENT_LISTENER_ID_AGENT_READY,
                                 this.agentReadyListener.bind(this));
                         } catch (e) {
-                            // Swallow the exception, since it's not critical.
                             this.commercialDiagnosticsUtilities.logExceptionEvent(
                                 "DevicePrepPage_AgentDownloadAndInstall_ListenerDeregistrationFailed",
                                 "DevicePrepPage: Deregistering agent ready event listener failed.",
@@ -1641,16 +1465,11 @@ define([
             );
         }
 
-        // Forms the promise related to creation and initialization of the downloader agent that waits
-        // on the agent being signaled as available.
-        // This is only called if AUTOPILOT_RESILIENCE_ENABLED is enabled
         async getAutopilotDevicePreparationAgentDownloaderPromiseAsync() {
             let autopilotDevicePreparationAgentDownloader = await this.getAutopilotDevicePreparationAgentDownloaderInstanceAsync();
             return autopilotDevicePreparationAgentDownloader.triggerDownloadAsync().then(() => {
                 return new WinJS.Promise(
-                    // Promise initialization handler
                     (completeDispatch, errorDispatch, progressDispatch) => {
-                        // Create event handler.
                         this.agentReadyListener = (hresult) => {
                             let details = "";
 
@@ -1670,14 +1489,12 @@ define([
                                     hresult);
                             }
 
-                            // Signal promise chain to continue.
                             completeDispatch({
                                 downloadResultCode: hresult,
                                 downloadDetails: details
                             });
                         };
 
-                        // Register event handler.
                         try {
                             this.agentReadyListenerRegistered = true;
 
@@ -1695,8 +1512,6 @@ define([
 
                             this.agentReadyListenerRegistered = false;
 
-                            // This is returned as a completion because the caller assumes any error will be the timeout
-                            // case and we handle the FAILED() result case in the completion handler
                             completeDispatch({
                                 downloadResultCode: this.HRESULT_E_UNEXPECTED,
                                 downloadDetails: details + " " + this.serializeErrorObject(e)
@@ -1704,9 +1519,7 @@ define([
                         }
                     },
 
-                    // Promise cancellation event handler
                     () => {
-                        // No need to return any error from this, since HRESULT_TIME_OUT is returned by the caller.
                         this.commercialDiagnosticsUtilities.logInfoEvent(
                             "DevicePrepPage_AgentDownloadAndInstall_Canceled",
                             "DevicePrepPage: Provisioning agent download and installation are canceled, likely due to timeout.");
@@ -1716,7 +1529,6 @@ define([
         }
 
         async unregisterAutopilotDevicePreparationAgentDownloaderInstanceAsync() {
-            // Remove any registered event listener
             if (this.agentReadyListenerRegistered) {
                 try {
                     let autopilotDevicePreparationAgentDownloader = await this.getAutopilotDevicePreparationAgentDownloaderInstanceAsync();
@@ -1724,11 +1536,9 @@ define([
                         this.EVENT_LISTENER_ID_AGENT_READY,
                         this.agentReadyListener.bind(this));
 
-                    // Release the WinRt instance for the downloader as we are done with it now
                     this.resetAutopilotDevicePreparationAgentDownloaderInstance();
 
                 } catch (e) {
-                    // Log and swallow the exception since it's not critical.
                     this.commercialDiagnosticsUtilities.logExceptionEvent(
                         "DevicePrepPage_AgentDownloadAndInstall_ListenerDeregistrationFailed",
                         "DevicePrepPage: Deregistering agent ready event listener failed.",
@@ -1739,49 +1549,33 @@ define([
             }
         }
 
-        // Handles the heartbeat callback from the orchestrator.
-        // This is passed as a delegate to the orchestrator, of type Windows.Management.Setup.DeploymentSessionHeartbeatRequested
-        // This is only called if AUTOPILOT_RESILIENCE_ENABLED is enabled
         handleAgentHeartbeat(event) {
             event.handled = true; // Set the event handled property to true to indicate that the event has been handled
             try {
-                // Restart the heartbeat timeout
                 this.resetOrchestratorKeepAliveTimeout();
             } catch (e) {
-                // Restart is failing for some reason, and that was likely already logged.
-                // avoid flooding the event logs here by swallowing the error at this point.
             }
         }
 
-        // Returns object with following properties:
-        // {
-        //     provisioningResultState: this.AGENT_PROGRESS_*, // mandatory property
-        //     provisioningResultCode: this.HRESULT_*, // optional property, but mandatory if provisioningResultState == AGENT_PROGRESS_STATE_ERROR
-        //     provisioningResultDetails: "" // optional property
-        // }
         waitOnAgentProgressAsync(maxAgentProgressDurationInMilliseconds) {
             if (this.AUTOPILOT_RESILIENCE_ENABLED) {
                 return this.sessionUtilities.startPhaseStateMachineAsync(
                     this.DPP_PHASE_ID_ON_AGENT_PROVISIONING,
                     this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_PREACTION,
-                    // Normal case
                     () => {
                         return this.waitOnAgentProgressForRealAsync(maxAgentProgressDurationInMilliseconds).then((provisioningResult) => {
                             return this.sessionUtilities.startPhaseStateMachineAsync(
                                 this.DPP_PHASE_ID_ON_AGENT_PROVISIONING,
                                 this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_POSTACTION,
-                                // Normal case
                                 () => {
                                     return provisioningResult;
                                 },
-                                // Automation-overriden case
                                 (actionResultToUse) => {
                                     return actionResultToUse;
                                 }
                             );
                         });
                     },
-                    // Automation-overriden case
                     (actionResultToUse) => {
                         return actionResultToUse;
                     }
@@ -1790,24 +1584,20 @@ define([
                 return this.sessionUtilities.startPhaseStateMachineAsyncOld(
                     this.DPP_PHASE_ID_ON_AGENT_PROVISIONING,
                     this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_PREACTION,
-                    // Normal case
                     () => {
                         return this.waitOnAgentProgressForRealAsyncOld(maxAgentProgressDurationInMilliseconds).then((provisioningResult) => {
                             return this.sessionUtilities.startPhaseStateMachineAsync(
                                 this.DPP_PHASE_ID_ON_AGENT_PROVISIONING,
                                 this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_POSTACTION,
-                                // Normal case
                                 () => {
                                     return provisioningResult;
                                 },
-                                // Automation-overriden case
                                 (actionResultToUse) => {
                                     return actionResultToUse;
                                 }
                             );
                         });
                     },
-                    // Automation-overriden case
                     (actionResultToUse) => {
                         return actionResultToUse;
                     }
@@ -1815,15 +1605,8 @@ define([
             }
         }
 
-        // Returns object with following properties:
-        // {
-        //     provisioningResultState: this.AGENT_PROGRESS_*, // mandatory property
-        //     provisioningResultCode: this.HRESULT_*, // optional property, but mandatory if provisioningResultState == AGENT_PROGRESS_STATE_ERROR
-        //     provisioningResultDetails: "" // optional property
-        // }
         waitOnAgentProgressForRealAsyncOld(maxAgentProgressDurationInMilliseconds) {
             if (this.terminalVirtualPageAlreadyDisplayed) {
-                // This page already reached a terminal state, and so exit early.
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "DevicePrepPage_AgentProvisioningProgress_BypassingWaitingOnAgentProvisioning",
                     "DevicePrepPage: Bypass waiting on agent since the page reached a terminal state already.");
@@ -1841,27 +1624,21 @@ define([
             this.progressStatusSubtext(this.resourceStrings["DevicePrepDefaultStatusSubtextProvisioning"]);
             bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.AUTOPILOT_ORCHESTRATOR_AGENT_INSTALLED, true);
 
-            // Wait on progress updates from the provisioning agent.
             let progressUpdateWaitPromise = new WinJS.Promise(
 
-                // Promise initialization handler
                 (completeDispatch, errorDispatch, progressDispatch) => {
 
-                    // Create progress update event handler.  All operations in this handler should strive
-                    // to complete the promise, and let subsequent code virtual page transitions.
                     this.progressUpdateListener = (agentProvisioningProgressReport) => {
 
                         switch (agentProvisioningProgressReport.state) {
 
                             case Windows.Management.Setup.DeploymentAgentProgressState.initializing:
-                                // this.completionPercentage = agentProvisioningProgressReport.progressPercentage;
                                 this.progressStatusText(this.commercialDiagnosticsUtilities.formatMessage(
                                     this.COMPLETION_PERCENTAGE_FORMAT_TEMPLATE,
                                     this.completionPercentage));
                                 break;
 
                             case Windows.Management.Setup.DeploymentAgentProgressState.inProgress:
-                                // this.completionPercentage = agentProvisioningProgressReport.progressPercentage;
                                 this.progressStatusText(this.commercialDiagnosticsUtilities.formatMessage(
                                     this.COMPLETION_PERCENTAGE_FORMAT_TEMPLATE,
                                     this.completionPercentage));
@@ -1879,7 +1656,6 @@ define([
                                     "DevicePrepPage_AgentProvisioningProgress_ProvisioningComplete",
                                     "DevicePrepPage: Updated completion percentage to 100%.");
 
-                                // Show the 100% progress for a little bit so the user could see.
                                 setTimeout(
                                     () => {
                                         this.commercialDiagnosticsUtilities.logInfoEvent(
@@ -1895,7 +1671,6 @@ define([
                                 break;
 
                             case Windows.Management.Setup.DeploymentAgentProgressState.errorOccurred:
-                                // TODO: This should be the HRESULT returned from the agent itself.
                                 this.commercialDiagnosticsUtilities.logErrorEvent(
                                     "DevicePrepPage_AgentProvisioningProgress_Error",
                                     "DevicePrepPage: Provisioning by agent returned with error.",
@@ -1913,10 +1688,8 @@ define([
                                     "DevicePrepPage_AgentProvisioningProgress_RebootRequired",
                                     "DevicePrepPage: The provisioning agent specified a reboot is required.");
 
-                                // Tell the user a reboot is required.
                                 this.progressStatusText(this.resourceStrings["DevicePrepRebootRequired"]);
 
-                                // Show the "reboot required" message for a little bit so the user could see.
                                 setTimeout(
                                     () => {
                                         this.commercialDiagnosticsUtilities.logInfoEvent(
@@ -1933,8 +1706,6 @@ define([
                         };
                     };
 
-                    // Create connection changed event handler. These are primarily for logging now but
-                    // could be used to display UX text in the future.
 
                     this.isNetworkConnected = true; // Assume there's network initially.
 
@@ -1942,14 +1713,12 @@ define([
                         switch (connectionChangedEventArgs.change)
                         {
                             case Windows.Management.Setup.DeploymentSessionConnectionChange.agentConnectionLost:
-                                // ToDo: add a timer then display UX text about agent being restarted
                                 this.commercialDiagnosticsUtilities.logInfoEvent(
                                     "DevicePrepPage_AgentProgress_ConnectionChanged_AgentConnectionLost",
                                     "DevicePrepPage: Agent connection lost.");
                                 break;
 
                             case Windows.Management.Setup.DeploymentSessionConnectionChange.agentConnectionRestored:
-                                // ToDo: clear the timer and hide UX text about agent being restarted
                                 this.commercialDiagnosticsUtilities.logInfoEvent(
                                     "DevicePrepPage_AgentProgress_ConnectionChanged_AgentConnectionRestored",
                                     "DevicePrepPage: Agent connection restored.");
@@ -1964,21 +1733,15 @@ define([
 
                                 if (null == this.networkConnectionLostTimerPromise) {
                                     this.networkConnectionLostTimerPromise = WinJS.Promise.timeout(this.MAX_WAIT_FOR_CONTINUED_LOST_INTERNET_CONNECTION_IN_MILLESECONDS).then(() => {
-                                        // Waited sufficient time from the initial connection loss.  If connection is still lost,
-                                        // then display the network connection error message -- but only if this
-                                        // connection listener is still valid.
                                         if (this.connectionChangedListenerRegistered && !this.isNetworkConnected) {
-                                            // Save off the current subheader text to restore later once network connection is restored.
                                             this.lastSubheaderText = this.subheaderText();
 
                                             this.pauseCompletionPercentageIncrementation = true;
 
-                                            // Set the error text.
                                             this.subheaderText(this.resourceStrings["DevicePrepPageSubheaderConnectivityError"]);
                                             this.errorOccurred(true);
                                         }
 
-                                        // Finally, unset this handler.
                                         this.networkConnectionLostTimerPromise = null;
                                     });
                                 }
@@ -1991,10 +1754,6 @@ define([
 
                                 this.isNetworkConnected = true;
 
-                                // If connection was persistently lost, then an error message would have been displayed as the subheader text.
-                                // Now, with connectivity restored, restore the subheader text.
-                                // There's no synchronization with the internetConnectionLost case above and so
-                                // there's risk of a race condition between these two cases.
                                 if (this.lastSubheaderText != null) {
                                     this.subheaderText(this.lastSubheaderText);
                                     this.errorOccurred(false);
@@ -2005,7 +1764,6 @@ define([
                         };
                     };
 
-                    // Register progress update event handler.
                     try {
                         this.agentProgressListenerRegistered = true;
 
@@ -2027,7 +1785,6 @@ define([
                         });
                     }
 
-                    // Register connection changed event handler
                     try {
                         this.connectionChangedListenerRegistered = true;
 
@@ -2050,7 +1807,6 @@ define([
                     }
                 },
 
-                // Promise cancellation event handler
                 () => {
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "DevicePrepPage_AgentProvisioningProgress_ListenerCanceled",
@@ -2059,9 +1815,7 @@ define([
             );
 
             return WinJS.Promise.timeout(maxAgentProgressDurationInMilliseconds, progressUpdateWaitPromise).then(
-                // Case: Promise completion before time out
                 (agentProgressState) => {
-                    // Remove event listener.
                     if (this.agentProgressListenerRegistered) {
                         this.agentProgressListenerRegistered = false;
 
@@ -2070,7 +1824,6 @@ define([
                                 this.EVENT_LISTENER_ID_PROGRESS_UPDATE,
                                 this.progressUpdateListener.bind(this));
                         } catch (e) {
-                            // Swallow this exception, since it's not critical.
                             this.commercialDiagnosticsUtilities.logExceptionEvent(
                                 "DevicePrepPage_AgentProvisioningProgress_ListenerDeregistrationFailed",
                                 "DevicePrepPage: Deregistering progress update event listener failed.",
@@ -2099,13 +1852,10 @@ define([
                         "DevicePrepPage_AgentProvisioningProgress_ExitingWithinTimeout",
                         `DevicePrepPage: Agent completed with AgentProgressState of ${agentProgressState.provisioningResultState}.`);
 
-                    // Agent installation succeeded or failed within the time limit.
                     return agentProgressState;
                 },
 
-                // Case: Timed out
                 (error) => {
-                    // Remove event listener.
                     if (this.agentProgressListenerRegistered) {
                         this.agentProgressListenerRegistered = false;
 
@@ -2114,7 +1864,6 @@ define([
                                 this.EVENT_LISTENER_ID_PROGRESS_UPDATE,
                                 this.progressUpdateListener.bind(this));
                         } catch (e) {
-                            // Swallow this exception, since it's not critical.
                             this.commercialDiagnosticsUtilities.logExceptionEvent(
                                 "DevicePrepPage_AgentProvisioningProgress_ListenerDeregistrationFailed",
                                 "DevicePrepPage: Deregistering progress update event listener failed.",
@@ -2153,22 +1902,16 @@ define([
             );
         }
 
-        // Create a progress update event handler.  All operations in this handler that reach terminal states
-        // must complete the promise and rely on subsequent code virtual page transitions.
-        // The handler is created as this.progressUpdateListener
-        // This is only called if AUTOPILOT_RESILIENCE_ENABLED is enabled
         buildProgressUpdateListener(completeDispatch) {
             this.progressUpdateListener = (agentProvisioningProgressReport) => {
                 switch (agentProvisioningProgressReport.state) {
                     case Windows.Management.Setup.DeploymentAgentProgressState.initializing:
-                        // this.completionPercentage = agentProvisioningProgressReport.progressPercentage;
                         this.progressStatusText(this.commercialDiagnosticsUtilities.formatMessage(
                             this.COMPLETION_PERCENTAGE_FORMAT_TEMPLATE,
                             this.completionPercentage));
                         break;
 
                     case Windows.Management.Setup.DeploymentAgentProgressState.inProgress:
-                        // this.completionPercentage = agentProvisioningProgressReport.progressPercentage;
                         this.progressStatusText(this.commercialDiagnosticsUtilities.formatMessage(
                             this.COMPLETION_PERCENTAGE_FORMAT_TEMPLATE,
                             this.completionPercentage));
@@ -2186,7 +1929,6 @@ define([
                             "DevicePrepPage_AgentProvisioningProgress_ProvisioningComplete",
                             "DevicePrepPage: Updated completion percentage to 100%.");
 
-                        // Show the 100% progress for a little bit so the user could see.
                         setTimeout(
                             () => {
                                 this.commercialDiagnosticsUtilities.logInfoEvent(
@@ -2202,7 +1944,6 @@ define([
                         break;
 
                     case Windows.Management.Setup.DeploymentAgentProgressState.errorOccurred:
-                        // TODO: This should be the HRESULT returned from the agent itself.
                         this.commercialDiagnosticsUtilities.logErrorEvent(
                             "DevicePrepPage_AgentProvisioningProgress_Error",
                             "DevicePrepPage: Provisioning by agent returned with error.",
@@ -2220,10 +1961,8 @@ define([
                             "DevicePrepPage_AgentProvisioningProgress_RebootRequired",
                             "DevicePrepPage: The provisioning agent specified a reboot is required.");
 
-                        // Tell the user a reboot is required.
                         this.progressStatusText(this.resourceStrings["DevicePrepRebootRequired"]);
 
-                        // Show the "reboot required" message for a little bit so the user could see.
                         setTimeout(
                             () => {
                                 this.commercialDiagnosticsUtilities.logInfoEvent(
@@ -2241,24 +1980,18 @@ define([
             }
         }
 
-        // Create a connection changed event handler. These are primarily for logging now but
-        // could be used to display UX text in the future.
-        // The handler is created as this.connectionChangedListener
-        // This is only called if AUTOPILOT_RESILIENCE_ENABLED is set
         buildConnectionChangedListener() {
             this.isNetworkConnected = true; // Assume there's network initially.
 
             this.connectionChangedListener = (connectionChangedEventArgs) => {
                 switch (connectionChangedEventArgs.change) {
                     case Windows.Management.Setup.DeploymentSessionConnectionChange.agentConnectionLost:
-                        // ToDo: add a timer then display UX text about agent being restarted
                         this.commercialDiagnosticsUtilities.logInfoEvent(
                             "DevicePrepPage_AgentProgress_ConnectionChanged_AgentConnectionLost",
                             "DevicePrepPage: Agent connection lost.");
                         break;
 
                     case Windows.Management.Setup.DeploymentSessionConnectionChange.agentConnectionRestored:
-                        // ToDo: clear the timer and hide UX text about agent being restarted
                         this.commercialDiagnosticsUtilities.logInfoEvent(
                             "DevicePrepPage_AgentProgress_ConnectionChanged_AgentConnectionRestored",
                             "DevicePrepPage: Agent connection restored.");
@@ -2273,21 +2006,15 @@ define([
 
                         if (null == this.networkConnectionLostTimerPromise) {
                             this.networkConnectionLostTimerPromise = WinJS.Promise.timeout(this.MAX_WAIT_FOR_CONTINUED_LOST_INTERNET_CONNECTION_IN_MILLESECONDS).then(() => {
-                                // Waited sufficient time from the initial connection loss.  If connection is still lost,
-                                // then display the network connection error message -- but only if this
-                                // connection listener is still valid.
                                 if (this.connectionChangedListenerRegistered && !this.isNetworkConnected) {
-                                    // Save off the current subheader text to restore later once network connection is restored.
                                     this.lastSubheaderText = this.subheaderText();
 
                                     this.pauseCompletionPercentageIncrementation = true;
 
-                                    // Set the error text.
                                     this.subheaderText(this.resourceStrings["DevicePrepPageSubheaderConnectivityError"]);
                                     this.errorOccurred(true);
                                 }
 
-                                // Finally, unset this handler.
                                 this.networkConnectionLostTimerPromise = null;
                             });
                         }
@@ -2300,10 +2027,6 @@ define([
 
                         this.isNetworkConnected = true;
 
-                        // If connection was persistently lost, then an error message would have been displayed as the subheader text.
-                        // Now, with connectivity restored, restore the subheader text.
-                        // There's no synchronization with the internetConnectionLost case above and so
-                        // there's risk of a race condition between these two cases.
                         if (this.lastSubheaderText != null) {
                             this.subheaderText(this.lastSubheaderText);
                             this.errorOccurred(false);
@@ -2315,20 +2038,12 @@ define([
             }
         }
 
-        // Connects up the two event listeners for progress updates and connection changes.
-        // Those handlers are this.progressUpdateListener and this.connectionChangedListener and are created
-        // in the two helper functions above.
-        // This function is async because it depends on acquiring an orchestrator instance.
-        // Any failures in this function are logged and the errorDispatch is called to end the wrapping promise.
-        // This is only called if AUTOPILOT_RESILIENCE_ENABLED is enabled
         async registerProgressAndConnectionChangedListenersAsync(errorDispatch) {
             this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_registerProgressAndConnectionChangedListenersAsync_Started");
 
             try {
-                // Get the orchestrator instance.
                 let orchestratorInstance = await this.getAutopilotDevicePreparationOrchestratorInstanceAsync();
 
-                // Register progress update event handler.
                 this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_registerProgressUpdateListener_Started");
                 try {
                     this.agentProgressListenerRegistered = true;
@@ -2352,7 +2067,6 @@ define([
                 }
                 this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_registerProgressUpdateListener_Completed");
 
-                // Register connection changed event handler
                 this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_registerConnectionChangedListener_Started");
                 try {
                     this.connectionChangedListenerRegistered = true;
@@ -2390,19 +2104,12 @@ define([
             this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_registerProgressAndConnectionChangedListenersAsync_Completed");
         }
 
-        // Disconnects the two event listeners for progress updates and connection changes.
-        // Those handlers are this.progressUpdateListener and this.connectionChangedListener and are created
-        // in the two helper functions above.
-        // This function is async because it depends on acquiring an orchestrator instance.
-        // Any failures in this function are logged and swallowed since they are not critical.
-        // This is only called if AUTOPILOT_RESILIENCE_ENABLED is enabled
         async unregisterProgressAndConnectionChangedListenersAsync() {
             this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_unregisterProgressAndConnectionChangedListenersAsync_Started");
 
             try {
                 let orchestratorInstance = await this.getAutopilotDevicePreparationOrchestratorInstanceAsync();
 
-                // Remove event listener.
                 if (this.agentProgressListenerRegistered) {
                     this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_unregisteringProgressListener_Started");
                     this.agentProgressListenerRegistered = false;
@@ -2412,7 +2119,6 @@ define([
                             this.EVENT_LISTENER_ID_PROGRESS_UPDATE,
                             this.progressUpdateListener.bind(this));
                     } catch (e) {
-                        // Swallow this exception, since it's not critical.
                         this.commercialDiagnosticsUtilities.logExceptionEvent(
                             "DevicePrepPage_AgentProvisioningProgress_ListenerDeregistrationFailed",
                             "DevicePrepPage: Deregistering progress update event listener failed.",
@@ -2431,7 +2137,6 @@ define([
                             this.EVENT_LISTENER_ID_SESSION_CONNECTION_CHANGED,
                             this.connectionChangedListener.bind(this));
                     } catch (e) {
-                        // Swallow this exception, since it is not critical.
                         this.commercialDiagnosticsUtilities.logExceptionEvent(
                             "DevicePrepPage_AgentProgress_ConnectionChangedListenerDeregistrationFailed",
                             "DevicePrepPage: Deregistering connection changed event listener failed.",
@@ -2441,7 +2146,6 @@ define([
                     this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_unregisteringConnectionChangedListener_Completed");
                 }
             } catch (e) {
-                // Swallow this exception, since it is not critical.
                 this.commercialDiagnosticsUtilities.logExceptionEvent(
                     "DevicePrepPage_unregisterProgressAndConnectionChangedListenersAsync_Failed",
                     "DevicePrepPage: Deregistering connection changed event listener failed.",
@@ -2450,19 +2154,9 @@ define([
             this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_unregisterProgressAndConnectionChangedListenersAsync_Completed");
         }
 
-        // Returns object with following properties:
-        // {
-        //     provisioningResultState: this.AGENT_PROGRESS_*, // mandatory property
-        //     provisioningResultCode: this.HRESULT_*, // optional property, but mandatory if provisioningResultState == AGENT_PROGRESS_STATE_ERROR
-        //     provisioningResultDetails: "" // optional property
-        // }
-        // This refactors the original code in waitOnAgentProgressForRealAsyncOld to separate out the construction of the callbacks and the
-        // registration and deregistration as part of the promise chain because they are now async.
-        // This is only called if AUTOPILOT_RESILIENCE_ENABLED is enabled
         waitOnAgentProgressForRealAsync(maxAgentProgressDurationInMilliseconds) {
             let functionStartTimeMilliseconds = performance.now();
             if (this.terminalVirtualPageAlreadyDisplayed) {
-                // This page already reached a terminal state, and so exit early.
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "DevicePrepPage_AgentProvisioningProgress_BypassingWaitingOnAgentProvisioning",
                     "DevicePrepPage: Bypass waiting on agent since the page reached a terminal state already.");
@@ -2480,16 +2174,13 @@ define([
             this.progressStatusSubtext(this.resourceStrings["DevicePrepDefaultStatusSubtextProvisioning"]);
             bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", this.AUTOPILOT_ORCHESTRATOR_AGENT_INSTALLED, true);
 
-            // Wait on progress updates from the provisioning agent.
             let progressUpdateWaitPromise = new WinJS.Promise(
-                // Promise initialization handler
                 (completeDispatch, errorDispatch, progressDispatch) => {
                     this.buildProgressUpdateListener(completeDispatch); // constructs this.progressUpdateListener
                     this.buildConnectionChangedListener(); // constructs this.connectionChangedListener
                     this.registerProgressAndConnectionChangedListenersAsync(errorDispatch);
                 },
 
-                // Promise cancellation event handler
                 () => {
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "DevicePrepPage_AgentProvisioningProgress_ListenerCanceled",
@@ -2498,17 +2189,14 @@ define([
             );
 
             return WinJS.Promise.timeout(maxAgentProgressDurationInMilliseconds, progressUpdateWaitPromise).then(
-                // Case: Promise completion before time out
                 (agentProgressState) => {
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "DevicePrepPage_AgentProvisioningProgress_ExitingWithinTimeout",
                         `DevicePrepPage: Agent completed with AgentProgressState of ${agentProgressState.provisioningResultState}.`);
 
-                    // Agent installation succeeded or failed within the time limit.
                     return agentProgressState;
                 },
 
-                // Case: Timed out
                 (error) => {
                     this.commercialDiagnosticsUtilities.logErrorEvent(
                         "DevicePrepPage_AgentProvisioningProgress_ExitingAfterTimeout",
@@ -2523,23 +2211,18 @@ define([
                 }
             ).then(
                 async (completionResultCode) => {
-                    // Unregister the event listeners then return either the terminal success or error result code from the completions above.
                     return this.unregisterProgressAndConnectionChangedListenersAsync().then(() => {
                         this.commercialDiagnosticsUtilities.logInfoEvent("DevicePrepPage_waitOnAgentProgressForRealAsync_done");
-                        // In the non-error case we need to re-transmit the result from further up the chain
                         return completionResultCode;
                     });
                 },
 
                 async (e) => {
-                    // Catch any errors thrown within the promise chain above
                     this.commercialDiagnosticsUtilities.logErrorEvent(
                         "DevicePrepPage_AgentProvisioningProgress_ListenerFailed",
                         "DevicePrepPage: ProgressUpdate listener failed.",
                         JSON.stringify(e));
 
-                    // Unregister the event listeners then return either the terminal error
-                    // or recurse to try again.
                     return this.unregisterProgressAndConnectionChangedListenersAsync().then(() => {
                         this.listenerFailedCount++;
 
@@ -2555,7 +2238,6 @@ define([
                                 provisioningResultDetails: "ProgressUpdate listener failed too many times."
                             };
                         } else {
-                            // Re-initialize the agent then retry the listener.
                             this.commercialDiagnosticsUtilities.logErrorEvent(
                                 "DevicePrepPage_AgentProvisioningProgress_RetryingFailedListener",
                                 "DevicePrepPage: ProgressUpdate listener failed, and will retry.");
@@ -2564,7 +2246,6 @@ define([
                             let timeElapsedMilliseconds = functionEndTimeMilliseconds - functionStartTimeMilliseconds;
                             let timeRemainingMilliseconds = maxAgentProgressDurationInMilliseconds - timeElapsedMilliseconds;
 
-                            // Call back in recursively to see if we can recover from this error.
                             return this.waitOnAgentProgressForRealAsync(timeRemainingMilliseconds);
                         }
                     });
@@ -2572,47 +2253,32 @@ define([
             );
         }
 
-        // Returns object with following properties:
-        // {
-        //     resultCode: this.HRESULT_*, // mandatory property
-        //     details: "" // mandatory property
-        // }
         rebootDeviceAsync(maxWaitForRebootInMilliseconds) {
             return this.sessionUtilities.startPhaseStateMachineAsync(
                 this.DPP_PHASE_ID_ON_DEVICE_REBOOT,
                 this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_PREACTION,
-                // Normal case
                 () => {
                     return this.rebootDeviceForRealAsync(maxWaitForRebootInMilliseconds).then((result) => {
                         return this.sessionUtilities.startPhaseStateMachineAsync(
                             this.DPP_PHASE_ID_ON_DEVICE_REBOOT,
                             this.sessionUtilities.AUTOMATION_COMMAND_PHASE_NAME_POSTACTION,
-                            // Normal case
                             () => {
                                 return result;
                             },
-                            // Automation-overriden case
                             (actionResultToUse) => {
                                 return actionResultToUse;
                             }
                         );
                     });
                 },
-                // Automation-overriden case
                 (actionResultToUse) => {
                     return actionResultToUse;
                 }
             );
         }
 
-        // Returns object with following properties:
-        // {
-        //     resultCode: this.HRESULT_*, // mandatory property
-        //     details: "" // mandatory property
-        // }
         async rebootDeviceForRealAsync(maxWaitForRebootInMilliseconds) {
             if (this.terminalVirtualPageAlreadyDisplayed) {
-                // This page already reached a terminal state, and so exit early.
                 this.commercialDiagnosticsUtilities.logInfoEvent(
                     "DevicePrepPage_AgentProvisioningProgress_BypassingWaitingOnAgentProvisioning",
                     "DevicePrepPage: Bypass waiting on agent since the page reached a terminal state already.");
@@ -2623,8 +2289,6 @@ define([
                 };
             }
 
-            // The constructor of this page should have automatically initialized OOBE to resume to this page,
-            // but we'll do it again here just in case.
             await this.setResumeToCurrentPageAsync();
 
             try {
@@ -2636,7 +2300,6 @@ define([
 
                 await WinJS.Promise.timeout(maxWaitForRebootInMilliseconds);
 
-                // If the device reboots, this should never execute.  If this point is reached, then something about the reboot failed.
                 this.commercialDiagnosticsUtilities.logExceptionEvent(
                     "DevicePrepPage_RebootDevice_TimedOut",
                     "DevicePrepPage: Navigation to reboot timed out.",
@@ -2685,10 +2348,8 @@ define([
         }
 
         async runMainProcessingAsync() {
-            // Uber execution try/catch.
             try {
                 if (this.AUTOPILOT_RESILIENCE_ENABLED) {
-                    // Cache the session guid even if we need to recreate the orchestrator
                     this.sessionId = this.sessionUtilities.generateUUID();
 
                     this.commercialDiagnosticsUtilities.logInfoEvent(
@@ -2696,23 +2357,16 @@ define([
                         `DevicePrepPage: New session Id created: ${this.sessionId}`);
                 }
 
-                /////////////
-                // Start to download and install the provisioning agent.
 
-                // This should be the first line in this method, so that the catch section's switch statement works.
-                // NOTE: Each new  phase should be immediately followed by an TSM event indicating its start.
                 this.currentPhase = this.PHASE_AGENT_DOWNLOAD;
 
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_AGENT_DOWNLOAD_INSTALL_START, "");
 
-                // This is a best-effort, fire-and-forget operation.  It will stop itself once the page exits.
                 this.initiateSyncSessionsAsync();
 
                 let downloadResult = null;
 
-                // Update the page status to "in progress".
                 if (this.AUTOPILOT_RESILIENCE_ENABLED) {
-                    // Outer caller will catch and handle any exceptions while instantiating the utilities.
                     let devicePrepUtilitiesInstance = await this.getAutopilotDevicePreparationUtilitiesInstanceAsync();
                     await devicePrepUtilitiesInstance.setPageStatusAsync(ModernDeployment.Autopilot.Core.DevicePreparationPageStatus.inProgress);
                     downloadResult = await this.downloadAgentAsync(devicePrepUtilitiesInstance.agentDownloadTimeoutSeconds * 1000);
@@ -2722,7 +2376,6 @@ define([
                 }
 
                 if (this.terminalVirtualPageAlreadyDisplayed) {
-                    // This page already reached a terminal state, and so exit early.
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "DevicePrepPage_RunMainProcessing_BypassingAfterAgentDownload",
                         "DevicePrepPage: Terminate main processing early (after agent download and installation) since the page reached a terminal state already.");
@@ -2733,14 +2386,11 @@ define([
                     this.currentResultCode = this.commercialDiagnosticsUtilities.formatNumberAsHexString(downloadResult.downloadResultCode, 8);
                     this.currentDetails = downloadResult.downloadDetails;
 
-                    // Let the ultimate error handler handle all errors.
                     throw new Error(this.currentDetails);
                 }
 
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_AGENT_DOWNLOAD_INSTALL_END_WITH_SUCCESS, "");
 
-                /////////////
-                // Initialize the downloaded agent.
                 this.currentPhase = this.PHASE_AGENT_INITIALIZATION;
 
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_AGENT_INITIALIZATION_START, "");
@@ -2750,7 +2400,6 @@ define([
                     "DevicePrepPage: Initialize provisioning agent.");
 
                 if (this.terminalVirtualPageAlreadyDisplayed) {
-                    // This page already reached a terminal state, and so exit early.
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "DevicePrepPage_RunMainProcessing_BypassingAgentInitialization",
                         "DevicePrepPage: Terminate main processing early (before agent initialization) since the page reached a terminal state already.");
@@ -2774,13 +2423,11 @@ define([
                         this.sessionId,
                         this.AUTOPILOT_ORCHESTRATOR_TIMEOUT_IN_MS,
                         function (event) { // this is a local function that is passed as a delegate to the orchestrator, of type Windows.Management.Setup.DeploymentSessionHeartbeatRequested
-                            //let target = event.target; // Extract the event, which is of type Windows.Management.Setup.deploymentSessionHeartbeatRequestedEventArgs
                             event.handled = true; // Set the handled property to true to indicate that the event has been handled
                         });
                 }
 
                 if (this.terminalVirtualPageAlreadyDisplayed) {
-                    // This page already reached a terminal state, and so exit early.
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "DevicePrepPage_RunMainProcessing_BypassingAfterAgentInitialization",
                         "DevicePrepPage: Terminate main processing early (after agent initialization) since the page reached a terminal state already.");
@@ -2793,8 +2440,6 @@ define([
 
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_AGENT_INITIALIZATION_END_WITH_SUCCESS, "");
 
-                /////////////
-                // Begin provisioning and waiting for provisioning.
                 this.currentPhase = this.PHASE_AGENT_PROVISIONING;
 
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_AGENT_PROVISIONING_START, "");
@@ -2815,7 +2460,6 @@ define([
                     agentProgressResult = await this.waitOnAgentProgressAsync(remainingTimeoutInMilliseconds);
                 }
 
-                // Release the orchestrator as it is no longer needed
                 if (this.AUTOPILOT_RESILIENCE_ENABLED) {
                     this.uninitializeDevicePrepOrchestrator();
                 } else {
@@ -2823,33 +2467,27 @@ define([
                 }
 
                 if (this.terminalVirtualPageAlreadyDisplayed) {
-                    // This page already reached a terminal state, and so exit early.
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "DevicePrepPage_RunMainProcessing_BypassingAfterAgentProvisioning",
                         "DevicePrepPage: Terminate main processing early (after agent provisioning) since the page reached a terminal state already.");
                     return;
                 }
 
-                /////////////
-                // Evaluate the agent provisioning results.
 
                 if ((agentProgressResult === undefined) || (agentProgressResult.provisioningResultCode === undefined)) {
                     this.currentResultCode = this.commercialDiagnosticsUtilities.formatNumberAsHexString(this.HRESULT_E_UNEXPECTED, 8);
                     this.currentDetails = "DevicePrepPage: Agent provisioning result is undefined.";
 
-                    // Let the ultimate error handler handle all errors.
                     throw new Error(this.currentDetails);
                 }
 
                 switch (agentProgressResult.provisioningResultState) {
                     case Windows.Management.Setup.DeploymentAgentProgressState.completed:
-                        // Success!  Let the ultimate completion handler handle everything.
                         this.currentResultCode = this.commercialDiagnosticsUtilities.formatNumberAsHexString(agentProgressResult.provisioningResultCode, 8);
                         this.currentDetails = "DevicePrepPage: Agent provisioning completed successfully";
                         break;
 
                     case Windows.Management.Setup.DeploymentAgentProgressState.errorOccurred:
-                        // Failed
                         this.currentResultCode = this.commercialDiagnosticsUtilities.formatNumberAsHexString(agentProgressResult.provisioningResultCode, 8);
                         this.currentDetails = "DevicePrepPage: Agent provisioning failed.";
 
@@ -2857,27 +2495,20 @@ define([
                             this.currentDetails += " Details: " + agentProgressResult.provisioningResultDetails
                         }
 
-                        // Let the ultimate error handler handle all errors.
                         throw new Error(this.currentDetails);
                         break;
 
                     case Windows.Management.Setup.DeploymentAgentProgressState.rebootRequired:
-                        // Reboot is needed to continue processing.
                         this.currentPhase = this.PHASE_AGENT_REBOOT;
 
                         await this.logTsmProcessInfoAsync(this.TSM_STATE_DEVICE_REBOOT_START, "");
 
-                        // Set the flag that this page was the last rebooter, as a clue to this page's constructor that it's resuming
-                        // from a planned reboot.
                         await this.sessionUtilities.storeSettingAsync(this.LAST_REBOOTER_VALUE_NAME, this.LAST_REBOOTER_VALUE_DEVICE_PREP_PAGE);
 
                         return this.rebootDeviceAsync(this.MAX_WAIT_FOR_REBOOT_IN_MILLISECONDS).then((rebootFailureDetails) => {
-                            // Reboot either failed or timed out.
-                            // TODO: Should we tell the end user to manually reboot to recover?
                             this.currentResultCode = this.commercialDiagnosticsUtilities.formatNumberAsHexString(rebootFailureDetails.resultCode, 8);
                             this.currentDetails = rebootFailureDetails.details;
 
-                            // Let the ultimate error handler handle all errors.
                             throw new Error(this.currentDetails);
                         });
                         break;
@@ -2886,17 +2517,13 @@ define([
                         this.currentResultCode = this.commercialDiagnosticsUtilities.formatNumberAsHexString(this.HRESULT_INVALIDARG, 8);
                         this.currentDetails = `DevicePrepPage: Unknown agent progress state value: ${agentProgressResult.provisioningResultState}`;
 
-                        // Let the ultimate error handler handle all errors.
                         throw new Error(this.currentDetails);
                         break;
                 };
 
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_AGENT_PROVISIONING_END_WITH_SUCCESS, "");
 
-                /////////////
-                // Ultimate completion handler.
 
-                // Processing is done. Transition to the next phase.
                 this.currentPhase = this.PHASE_CLEANUP;
 
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_PAGE_CLEANUP_START, "");
@@ -2913,15 +2540,12 @@ define([
 
             } catch (e) {
                 if (this.terminalVirtualPageAlreadyDisplayed) {
-                    // This page already reached a terminal state, and so exit early.
                     this.commercialDiagnosticsUtilities.logInfoEvent(
                         "DevicePrepPage_RunMainProcessing_BypassingCatchAllExceptionHandler",
                         "DevicePrepPage: Terminate main processing early (before the catch-all exception handler) since the page reached a terminal state already.");
                     return;
 
                 } else {
-                    /////////////
-                    // Ultimate error handler.
                     this.commercialDiagnosticsUtilities.logExceptionEvent(
                         "DevicePrepPage_RunMainProcessing_FailedWithException",
                         "DevicePrepPage: Processing failed with an exception.",
@@ -2931,10 +2555,8 @@ define([
                     if ((this.currentDetails !== undefined) &&
                         (this.currentDetails !== null) &&
                         (this.currentDetails.length > 0)) {
-                        // The details message is curated, and so use it.
                         details = this.currentDetails;
                     } else {
-                        // This is likely unexpected exception.  Create the details message.
                         details = "DevicePrepPage: Processing failed with an unexpected exception. " + this.serializeErrorObject(e);
                     }
 
@@ -2942,7 +2564,6 @@ define([
 
                     switch (this.currentPhase) {
                         case this.PHASE_PRESTART:
-                            // Should never reach here, since the currentPhase is set at the beginning of this method.
                             this.commercialDiagnosticsUtilities.logHresultEvent(
                                 "DevicePrepPage_RunMainProcessing_UnexpectedPrestartPhase",
                                 "DevicePrepPage: Processing failed with an exception during the " + this.PHASE_PRESTART + " phase, which is not expected.",
@@ -2981,7 +2602,6 @@ define([
                         });
                 }
 
-                // Set this to the last phase since processing is done.
                 this.currentPhase = this.PHASE_CLEANUP;
             }
         }

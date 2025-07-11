@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -23,12 +19,10 @@ var CloudExperienceHost;
                     xhr.setRequestHeader("Authorization", "Bearer " + token);
                     xhr.onreadystatechange = function() {
                         if (xhr.readyState === 4) { // 4 is DONE
-                            // log rest api result, 200 is success, everything else is failure
                             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logCriticalEvent2("ReportRewardsActivityStatus", xhr.status.toString());
                             completeDispatch(xhr.status);
                         }
                     };
-                    // SCOOBE rewards offer type is 200, amount == 1 is times rewards can be claimed, not actual point value which is decided by rewards server
                     xhr.send(JSON.stringify({"type": 200, "amount": 1, "country": CloudExperienceHost.Globalization.GeographicRegion.getCode().toLowerCase()}));
                 } catch (ex) {
                     CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logCriticalEvent2("ReportRewardsActivityError", CloudExperienceHost.GetJsonFromError(ex));
@@ -38,8 +32,6 @@ var CloudExperienceHost;
         }
 
         function reportRewardsActivityAsync() {
-            // This API should be disabled when the updated silent token acquisition API is enabled.
-            // In that scenario, we should throw an error that's identical to what the bridge would throw if the API wasn't present on the client.
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("WamTokenAcquisition")) {
                 throw "ApiNonexistentOnClient";
             }
@@ -54,7 +46,6 @@ var CloudExperienceHost;
                                 return Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager.getTokenSilentlyAsync(tokenRequest);
                             }
                             else {
-                                // no default MSA
                                 CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("RewardsAccountNotDefault");
                                 return Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager.findAccountProviderAsync("https://login.microsoft.com", "consumers").then(function (provider) {
                                     let tokenRequest = new Windows.Security.Authentication.Web.Core.WebTokenRequest(provider, "service::prod.rewardsplatform.microsoft.com::MBI"); // rewards site requires MBI policy

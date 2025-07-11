@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -32,7 +28,6 @@ var CloudExperienceHost;
 
                 let isTransparencyOptionSetOnCredUICoordinator = false;
                 if (CloudExperienceHost.getContext().personality === CloudExperienceHost.TargetPersonality.LiteWhite) {
-                    // Attempt to launch CredUI as transparent in this specific context
                     isTransparencyOptionSetOnCredUICoordinator = CloudExperienceHost.CredUI.setTransparencyOptionOnCredUICoordinator();
                     if (isTransparencyOptionSetOnCredUICoordinator) {
                         CloudExperienceHost.AppFrameInternal.setChromeDimBasedOnFocus(isTransparencyOptionSetOnCredUICoordinator);
@@ -40,7 +35,6 @@ var CloudExperienceHost;
                     }
                 }
 
-                // https://microsoftarchive.visualstudio.com/OS/_workitems/edit/11246443: Converge the WinRT activations for NgcRegManager and userNgcRegManager into one call
                 var platform = CloudExperienceHost.Environment.getPlatform();
                 var userObj = CloudExperienceHost.getIUser();
                 if (platform == CloudExperienceHost.TargetPlatform.DESKTOP || !userObj) {
@@ -76,7 +70,6 @@ var CloudExperienceHost;
 
         function resetForNgc(ContainerOptions) {
             return new WinJS.Promise((completeDispatch, errorDispatch) => {
-                // https://microsoftarchive.visualstudio.com/OS/_workitems/edit/11246443: Converge the WinRT activations for NgcRegManager and userNgcRegManager into one call
                 let platform = CloudExperienceHost.Environment.getPlatform();
                 let userObj = CloudExperienceHost.getIUser();
                 if (platform == CloudExperienceHost.TargetPlatform.DESKTOP || !userObj) {
@@ -100,7 +93,6 @@ var CloudExperienceHost;
 
         function recoverForNgc() {
             return new WinJS.Promise((completeDispatch, errorDispatch) => {
-                // https://microsoftarchive.visualstudio.com/OS/_workitems/edit/11246443: Converge the WinRT activations for NgcRegManager and userNgcRegManager into one call
                 let platform = CloudExperienceHost.Environment.getPlatform();
                 let userObj = CloudExperienceHost.getIUser();
                 if (platform == CloudExperienceHost.TargetPlatform.DESKTOP || !userObj) {

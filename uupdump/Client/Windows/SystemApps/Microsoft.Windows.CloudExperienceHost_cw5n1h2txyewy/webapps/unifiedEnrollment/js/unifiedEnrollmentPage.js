@@ -1,4 +1,3 @@
-﻿
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -36,11 +35,9 @@ var CloudExperienceHost;
                     else {
                         mdmError = result;
                     }
-                    
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_error", 0);
                     bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_mdm_enrollment_result", noEnrollmentError);
                 }, function (e) {
-                    
                     mdmError = 1;
                 });
                 
@@ -55,12 +52,10 @@ var CloudExperienceHost;
                 return WinJS.Promise.join({ languagePromise: languagePromise, dirPromise: dirPromise, stringPromise: stringPromise, cssPromise: cssPromise, queryStringPromise: queryStringPromise, dataSetupPromise: dataSetupPromise, isAllowedSetupPromise : isAllowedSetupPromise });
             },
             ready: function (element, options) {
-                
                 var setContentFor = [Title, LeadText, FooterHeader, DjLink, NextButton];
                 setContentFor.forEach(function (content) {
                     content.textContent = unifiedEnrollmentResources[content.id];
                 });
-                
                 var placeholderKey = [userName];
                 var placeholderValue = ['UserPlaceholder'];
                 var i = 0;
@@ -74,35 +69,27 @@ var CloudExperienceHost;
                     LeadText.textContent = unifiedEnrollmentResources["Error_Network"];
                 } else {
 
-                    
                     if (mdmError !== 0) {
                         if (mdmError !== 1) {
-                            
-                            this._showError(mdmError, false );
+                            this._showError(mdmError, false /* setFocus */);
                         } else {
-                            
                             this._showErrorCode(0, false);
                         }
 
-                        
                         serverNameField.style.display = 'block';
                         serverName.setAttribute('placeholder', unifiedEnrollmentResources['ServerUrlPlaceholder']);
                         serverName.setAttribute('aria-label', unifiedEnrollmentResources['ServerUrlNarratorText']);
                     }
 
-                    
                     if ((mdmError !== 0)) {
-                        
                         bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_upn").done(function (result) {
                             if (result) {
                                 userName.value = result;
                             }
                         }.bind(this));
 
-                        
                         NextButton.disabled = false;
 
-                        
                         bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", "ue_serverUrl").done(function (result) {
                             if (result) {
                                 serverName.value = result;
@@ -119,7 +106,6 @@ var CloudExperienceHost;
                         }
 
                         if (typeof deepLinkServername !== "undefined") {
-                            
                             var deepLinkServernameTrimmed = deepLinkServername.replace(/[\u200B-\u200D\uFEFF]/g, '');
                             if (deepLinkServernameTrimmed.length === deepLinkServername.length)
                             {
@@ -137,20 +123,17 @@ var CloudExperienceHost;
                             }
                         }
                     }
-                    
                     NextButton.addEventListener("click", function (event) {
                         event.preventDefault();
                         this._onNext.apply(this);
                     }.bind(this));
                 }
-                
                 var checkAmpersandFor = [NextButton];
                 checkAmpersandFor.forEach(function (eachElement) {
                     var result = CloudExperienceHost.ResourceManager.GetContentAndAccesskey(unifiedEnrollmentResources[eachElement.id]);
                     eachElement.textContent = result.content;
                     eachElement.accessKey = result.accessKey;
                 });
-                
                 bridge.invoke("CloudExperienceHost.UnifiedEnroll.isDomainOperationSupported").done(function (isDomainOperationSupported) {
                     if (isDomainOperationSupported) {
                         var isDeviceCloudJoinedPromise = bridge.invoke("CloudExperienceHost.UnifiedEnroll.isDeviceCloudJoined");
@@ -158,7 +141,6 @@ var CloudExperienceHost;
                         var isAdminPromise = bridge.invoke("CloudExperienceHost.UnifiedEnroll.isAdminUser");
                         var isDomainJoinPendingPromise = bridge.invoke("CloudExperienceHost.UnifiedEnroll.isDomainJoinPending");
                         var isDomainLeavePendingPromise = bridge.invoke("CloudExperienceHost.UnifiedEnroll.isDomainLeavePending");
-                        
                         var getContextPromise = bridge.invoke("CloudExperienceHost.getContext");
 
                         WinJS.Promise.join({
@@ -171,7 +153,6 @@ var CloudExperienceHost;
                         }).done(function (result) {
                             if (result.isAdmin && !result.isDeviceCloudJoined && !result.isDeviceAdJoined && !result.isDomainJoinPending && !result.isDomainLeavePending && (result.getContext.host.toLowerCase() !== "mosetmdmconnecttowork")
                                 && (result.getContext.host.toLowerCase() !== "mosetmamconnecttowork")) {
-                                
                                 document.getElementById("alternateActions").style.display = "block";
                                 DjLink.addEventListener("click", function (event) {
                                     event.preventDefault();
@@ -180,24 +161,20 @@ var CloudExperienceHost;
                                 }.bind(this));
                             }
                         }, function (e) {
-                            
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ShowDomainLinkPending_Failed", JSON.stringify({ isDomainJoinPending: e.isDomainJoinPending, isDomainLeavePending: e.isDomainLeavePending }));
                         });
                     }
                 }, function (e) {
-                    
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ShowDomainLinkSupported_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
                 });
-                
                 userName.addEventListener("blur", function () {
                     var errorCode = validator.validateUpn(userName);
                     if ((errorCode !== ErrorCodes.SUCCESS) && (errorCode !== ErrorCodes.LocalUser_NoUsername_Error)) {
                         isUserNameError = true;
-                        this._showErrorCode(errorCode, false );
+                        this._showErrorCode(errorCode, false /* setFocus */);
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_OnBlur_ValidateUpnFailed", JSON.stringify({ number: errorCode && errorCode.toString(16) }));
                     }
                 }.bind(this));
-                
                 userName.addEventListener("keyup", function () {
                     if (validator.validateUpn(userName) === ErrorCodes.SUCCESS) {
                         NextButton.disabled = false;
@@ -210,7 +187,6 @@ var CloudExperienceHost;
                     }
                 });
 
-                
                 if (!isAllowed)
                 {
                     this._setProgressState(true);
@@ -234,14 +210,13 @@ var CloudExperienceHost;
                         }
                     }.bind(this), function (e) {
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_hasNetworkConnectivityError", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                        
                         this._addMdm();
                     }.bind(this));
                 } else {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_OnNext_ValidateUpnFailed", JSON.stringify({ number: result && result.toString(16) }));
                     isUserNameError = true;
                     this._setProgressState(false);
-                    this._showErrorCode(result, true );
+                    this._showErrorCode(result, true /* setFocus */);
                 }
             },
             _parseNamedValues: function (queryString) {
@@ -296,10 +271,9 @@ var CloudExperienceHost;
                         ownershipPromise: ownershipPromise
                     }).done(function (result) {
                     }, function (e) {
-                        
                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ParseQueryString_Failed", JSON.stringify(e));
                     });
-                }.bind(this));  
+                }.bind(this));  // ignore errors and continue to show the page
             },
 
             _addMdm: function () {
@@ -312,43 +286,37 @@ var CloudExperienceHost;
                             if (result.isAdminUser && result.isManagementRegistrationAllowed) {
                                 bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_upn", userName.value.trim()).then(function () {
                                     if (serverNameField.style.display === 'block') {
-                                        
                                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_serverUrl", serverName.value.trim()).done(function () {
                                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                         }, function (e) {
-                                            
                                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                                            this._showErrorCode(0, false );
+                                            this._showErrorCode(0, false /* setFocus */);
                                         }.bind(this));
                                     } else {
                                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_serverUrl", 0).done(function () {
                                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                         }, function (e) {
-                                            
                                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                                            this._showErrorCode(0, false );
+                                            this._showErrorCode(0, false /* setFocus */);
                                         }.bind(this));
                                     }
                                 }.bind(this), function (e) {
-                                    
                                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                                    this._showErrorCode(0, false );
+                                    this._showErrorCode(0, false /* setFocus */);
                                 }.bind(this));
                             } else {
-                                
                                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ isAdminUser: result.isAdminUser, isManagementRegistrationAllowed: result.isManagementRegistrationAllowed, isMdmPresent: result.isMdmPresent }));
                                 if (!result.isAdminUser) {
                                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed_NotApplicable", "NonAdminUser");
-                                    this._showErrorCode(ErrorCodes.UserReserved_Error, false );
+                                    this._showErrorCode(ErrorCodes.UserReserved_Error, false /* setFocus */);
                                 } else {
                                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed_NoApplicable", "ManagementRegistrationNotAllowed");
-                                    this._showErrorCode(ErrorCodes.UserExists_Error, false );
+                                    this._showErrorCode(ErrorCodes.UserExists_Error, false /* setFocus */);
                                 }
                             }
                         }.bind(this), function (e) {
-                            
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                            this._showErrorCode(0, false );
+                            this._showErrorCode(0, false /* setFocus */);
                         }.bind(this));
                     } else {
                         var isAdminUserPromise = bridge.invoke("CloudExperienceHost.UnifiedEnroll.isAdminUser");
@@ -359,63 +327,53 @@ var CloudExperienceHost;
                             if (result.isAdminUser && result.isManagementRegistrationAllowed && !result.isMdmPresent) {
                                 bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_upn", userName.value.trim()).then(function () {
                                     if (serverNameField.style.display === 'block') {
-                                        
                                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_serverUrl", serverName.value.trim()).done(function () {
                                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                         }, function (e) {
-                                            
                                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                                            this._showErrorCode(0, false );
+                                            this._showErrorCode(0, false /* setFocus */);
                                         }.bind(this));
                                     } else {
                                         bridge.invoke("CloudExperienceHost.Storage.SharableData.addValue", "ue_serverUrl", 0).done(function () {
                                             bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                                         }, function (e) {
-                                            
                                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                                            this._showErrorCode(0, false );
+                                            this._showErrorCode(0, false /* setFocus */);
                                         }.bind(this));
                                     }
                                 }.bind(this), function (e) {
-                                    
                                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                                    this._showErrorCode(0, false );
+                                    this._showErrorCode(0, false /* setFocus */);
                                 }.bind(this));
                             } else {
-                                
                                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ isAdminUser: result.isAdminUser, isManagementRegistrationAllowed: result.isManagementRegistrationAllowed, isMdmPresent: result.isMdmPresent }));
                                 if (!result.isAdminUser) {
                                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed_NotApplicable", "NonAdminUser");
-                                    this._showErrorCode(ErrorCodes.UserReserved_Error, false );
+                                    this._showErrorCode(ErrorCodes.UserReserved_Error, false /* setFocus */);
                                 } else {
                                     if (!result.isManagementRegistrationAllowed) {
                                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed_NoApplicable", "ManagementRegistrationNotAllowed");
                                     } else {
                                         bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed_NotApplicable", "MdmAlreadyPresent");
                                     }
-                                    this._showErrorCode(ErrorCodes.UserExists_Error, false );
+                                    this._showErrorCode(ErrorCodes.UserExists_Error, false /* setFocus */);
                                 }
                             }
                         }.bind(this), function (e) {
-                            
                             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                            this._showErrorCode(0, false );
+                            this._showErrorCode(0, false /* setFocus */);
                         }.bind(this));
                     }
                 }.bind(this), function (e) {
-                    
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_AddMdm_Failed", JSON.stringify({ number: e && e.number.toString(16), stack: e && e.asyncOpSource && e.asyncOpSource.stack }));
-                    this._showErrorCode(0, false );
+                    this._showErrorCode(0, false /* setFocus */);
                 }.bind(this));
             },
-            
             _setProgressState: function (waiting) {
                 NextButton.disabled = waiting;
                 userName.disabled = waiting;
             },
-            
             _showErrorCode: function (errorCode, setFocus) {
-                
                 var resourceId = null;
                 switch (errorCode) {
                     case ErrorCodes.LocalUser_NoUsername_Error:

@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 
 "use strict";
 
@@ -15,7 +12,6 @@ define(['autopilot/commercialDiagnosticsUtilities'], (commercialDiagnosticsUtili
             getDispositionAction, // callback returning subcategory's disposition (e.g., visible, silent, etc.)
             asyncAction) {  // subcategory action
 
-            // Private member variables
             this.resourceStrings = resourceStrings;
             this.sessionUtilities = sessionUtilities;
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities();
@@ -46,9 +42,7 @@ define(['autopilot/commercialDiagnosticsUtilities'], (commercialDiagnosticsUtili
             }
         }
 
-        // Private methods
 
-        // bootstrapStatusSubcategoryViewModel interface methods
 
         getId() {
             return this.id;
@@ -80,22 +74,17 @@ define(['autopilot/commercialDiagnosticsUtilities'], (commercialDiagnosticsUtili
 
         startActionAsync(progressCallbackAsync, setSubcategoryStateCallbackAsync) {
             return new WinJS.Promise((completeDispatch, errorDispatch, progressDispatch) => {
-                // Promise initialization handler
 
                 return setSubcategoryStateCallbackAsync(this.sessionUtilities.SUBCATEGORY_STATE_IN_PROGRESS).then(() => {
-                    // Process pre-action phase first.
                     return this.sessionUtilities.startPhaseStateMachineAsync(
                         this.id,
                         this.sessionUtilities.ESP_COMMAND_PHASE_NAME_PREACTION,
                         () => {
-                            // Next, on successful pre-action phase, run the action phase.
                             return this.asyncAction(progressCallbackAsync).then((result) => {
-                                // Finally, run the post-action phase.
                                 return this.sessionUtilities.startPhaseStateMachineAsync(
                                     this.id,
                                     this.sessionUtilities.ESP_COMMAND_PHASE_NAME_POSTACTION,
                                     () => {
-                                        // If this is reached, then return the action's results.
                                         if (!this.asyncActionPromiseCancelled) {
                                             return setSubcategoryStateCallbackAsync(result.actionResultState).then(() => {
                                                 this.actionResult = result;
@@ -111,7 +100,6 @@ define(['autopilot/commercialDiagnosticsUtilities'], (commercialDiagnosticsUtili
                                         this.actionResult = actionResultToUse;
 
                                         return setSubcategoryStateCallbackAsync(this.actionResult.actionResultState).then(() => {
-                                            // Exiting with a specified result means that this subcategory is done.
                                             completeDispatch(this.actionResult);
 
                                             return WinJS.Promise.as(true);
@@ -124,7 +112,6 @@ define(['autopilot/commercialDiagnosticsUtilities'], (commercialDiagnosticsUtili
                             this.actionResult = actionResultToUse;
 
                             return setSubcategoryStateCallbackAsync(this.actionResult.actionResultState).then(() => {
-                                // Exiting with a specified result means that this subcategory is done.
                                 completeDispatch(this.actionResult);
 
                                 return WinJS.Promise.as(true);

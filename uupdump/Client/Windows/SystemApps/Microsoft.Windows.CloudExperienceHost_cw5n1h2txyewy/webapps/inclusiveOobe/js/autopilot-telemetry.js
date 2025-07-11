@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-define(['legacy/bridge'], (bridge) => {
+﻿define(['legacy/bridge'], (bridge) => {
 
     class AutopilotTelemetryUtility {
         logError(eventType, eventMessage) {
@@ -14,7 +11,6 @@ define(['legacy/bridge'], (bridge) => {
   
     }
 
-    // The following strings should be unique and if the strings are updated then the telemetry reports that consume them should be updated in tandem. 
     return {
         whiteGloveError: {
             Error: "Autopilot white glove error",

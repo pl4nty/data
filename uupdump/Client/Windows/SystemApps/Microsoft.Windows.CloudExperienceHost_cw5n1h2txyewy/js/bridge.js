@@ -1,7 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-/// <disable>JS2085.EnableStrictMode</disable>
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -88,19 +84,6 @@ var CloudExperienceHost;
                 });
             }
         }
-        //
-        // The Rules object is hash table of method (including namespace) and permitted URLs, OR all APIs under namespace (must mark with '*') and permitted URLs.
-        // It will first search for method, to check if callerUri exist in permitted list otherwise will check the namespaces until grant the permission or there is no namespace left in the method.
-        // Sample: 
-        // Rules object can be like:
-        //              CloudExperienceHost.MyNamespace.*: [ https://mysite.com/Apps/App1]
-        //              CloudExperienceHost.MyNamespace.M2: [ https://mysite.com/Apps/App2]
-        //              CloudExperienceHost.Telemetry.*: [*]
-        //
-        //  App1 can call any API on CloudExperienceHost.MyNamespace
-        //  but App2 can just call CloudExperienceHost.MyNamespace.M2
-        //  both App1 and App2 can call Telemetry API
-        //
         checkIfPermissionAllowed(callerUri, method) {
             var trimmedCallerUri = this._trimUri(callerUri);
             var isAllowed = false;
@@ -140,9 +123,6 @@ var CloudExperienceHost;
             return callerUri.replace(/\/[^\/]+$/, "/"); // Remove the file name and parameters
         }
         _verifyFunctionExists(functionName) {
-            /// <summary>Throws an error if functionName does not exist on the client</summary>
-            /// <param>functionName: name of function including namespace in string format.
-            ///        like "CloudExperienceHost.Contracts.Test.f1" </param >
             let context = window;
             let namespaces = functionName.split(".");
             for (let i = 0; i < namespaces.length; i++) {
@@ -154,10 +134,6 @@ var CloudExperienceHost;
             }
         }
         _executeFunctionByName(functionName, args, callerUri) {
-            /// <summary>Execute the functionName</summary>
-            /// <param>functionName: name of function including namespace in string format.
-            ///        like "CloudExperienceHost.Contracts.Test.f1" </param >
-            /// <param>args: an array of objects that holds function parameters</param>
             var context = window;
             var namespaces = functionName.split(".");
             var func = namespaces.pop();
@@ -168,7 +144,6 @@ var CloudExperienceHost;
                 var instance = context[func];
                 const metadata = instance.__metadata;
                 if (metadata && metadata.requireCallerUri === true) {
-                    // Pass the argument at the very beginning of the argument list to prevent the caller from passing their own value.
                     args.unshift(callerUri);
                 }
             }
@@ -237,13 +212,9 @@ var CloudExperienceHost;
             }
         }
         _windowExternalNotifyInternal(msg, retryCount) {
-            // http://osgvsowi/10958387 To avoid hitting a known edgehtml deadlock and having window.external.notify calls dropped
-            // (the RS2 workaround for the deadlock in edgehtml), the Bridge component should never call window.external.notify synchronously.
-            // In case we still hit the deadlock, we retry a set number of times and then bail out
             setImmediate(() => {
                 try {
                     window.external.notify(msg);
-                    // We log the count of retries to understand the distribution and change _maxPostDeadlockRetryCount in future if required
                     if (retryCount > 0) {
                         require(["legacy/telemetry"], (telemetry) => {
                             telemetry.AppTelemetry.getInstance().logCriticalEvent2("WebViewPossibleDeadlockAverted", JSON.stringify({
@@ -277,12 +248,9 @@ var CloudExperienceHost;
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ValidateCallbackUri")) {
                     if (result instanceof CloudExperienceHost.BridgeHelpers.ResultMetadata) {
                         if (result.validateCallbackUri && (callerUri !== this._target.src)) {
-                            // This bridge API has requested validation of the callback target
-                            // and the webview has navigated to another page, so discard the callback
                             CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("CallbackUriValidationFailed", m.value.name);
                             return;
                         }
-                        // Pull the real result out of the metadata wrapper
                         result = result.result;
                     }
                 }
@@ -315,7 +283,6 @@ var CloudExperienceHost;
                 else {
                     callback.complete(m.value.result);
                 }
-                //Cleaning
                 this._callbackContext[m.value.context] = null;
                 delete this._callbackContext[m.value.context];
             }
@@ -375,8 +342,6 @@ var CloudExperienceHost;
                 this._listeners[eventName] = new Array();
             }
             if ((eventName === "CloudExperienceHost.backButtonClicked") && (this._listeners[eventName].length > 0)) {
-                // MSA app adds a new event listener for every new panel, this causes multiple callbacks executed
-                // when back button is clicked on. This is a scoped fix to ensure their pages are not broken.
                 this._listeners[eventName][0] = listener;
             }
             else {
@@ -403,10 +368,8 @@ var CloudExperienceHost;
     }
     CloudExperienceHost.Bridge = Bridge;
 })(CloudExperienceHost || (CloudExperienceHost = {}));
-// Expose bridge to be loaded by requirejs as a singleton object
 if ((typeof define === "function") && define.amd) {
     define(function () {
         return new CloudExperienceHost.Bridge();
     });
 }
-//# sourceMappingURL=bridge.js.map

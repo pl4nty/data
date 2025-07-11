@@ -1,7 +1,4 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
-
+﻿
 define(() => {
     class OOBEStartSelector {
         launchAsync() {
@@ -16,7 +13,6 @@ define(() => {
                         result = resumeCXHId;
                         if (!checkpointsEnabled)
                         {
-                            // Only delete the resumeCXHId if checkpoints are disabled
                             CloudExperienceHost.Storage.SharableData.removeValue("resumeCXHId");
                         }
                     }

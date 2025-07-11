@@ -1,6 +1,3 @@
-﻿//
-// Copyright (C) Microsoft. All rights reserved.
-//
 "use strict";
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
@@ -19,7 +16,6 @@ var CloudExperienceHost;
         var CONNECTIVITY_TIMEOUT = 1500000; // 25 minutes (in ms)
         var DSREG_E_CXH_DEVICE_NOT_JOINED = -2145647628;
 
-        // Make sure this matches ReflectedJoinType in EnterpriseDeviceManagement.idl
         var reflectedEnrollmentJoinType = {
             DeviceJoin: 0,
             UserJoin: 1,
@@ -56,7 +52,6 @@ var CloudExperienceHost;
                 if ((platform === CloudExperienceHost.TargetPlatform.MOBILE) ||
                     (platform === CloudExperienceHost.TargetPlatform.XBOX) ||
                     (platform === CloudExperienceHost.TargetPlatform.HOLOGRAPHIC)) {
-                    // these platforms have no concept of admin
                     completeDispatch(true);
                 }
                 else {
@@ -89,12 +84,10 @@ var CloudExperienceHost;
                 var platform = CloudExperienceHost.Environment.getPlatform();
                 if (platform === CloudExperienceHost.TargetPlatform.DESKTOP)
                     {
-                        // If device is Desktop, the page should be allowed to be shown.
                         completeDispatch(true);
                     }
                     else
                     {
-                        // Check SLAPI (other checks as a part of this API are only relevent on Desktop)
                         UnifiedEnrollment.DataModel.UnifiedEnrollmentWorkerFactory.isManagementRegistrationAllowedAsync().done(completeDispatch, errorDispatch);
                     }
             });
@@ -110,7 +103,6 @@ var CloudExperienceHost;
             return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                 var platform = CloudExperienceHost.Environment.getPlatform();
                 if (platform === CloudExperienceHost.TargetPlatform.DESKTOP) {
-                    // Check if domain join/leave is supported on this desktop SKU
                     UnifiedEnrollment.DataModel.UnifiedEnrollmentWorkerFactory.isDomainOperationSupportedAsync().done(completeDispatch, errorDispatch);
                 }
                 else {
@@ -166,7 +158,6 @@ var CloudExperienceHost;
             return new WinJS.Promise(function (completeDispatch, errorDispatch) {
                 var enterpriseManagementWorker = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
                 enterpriseManagementWorker.enrollAsync(UPN, serverUrl, secret, authPolicy, domainUsername, policyServiceUrl, enrollmentServiceUrl, correlationVector, enrollmentFlags, SID).then(function (result) {
-                    // Can still have failures but not return a failing HR.  Must check value of enrollmentErrorCode.
                     var enrollmentResultObject = {
                         enrollmentErrorCode: result.enrollmentErrorCode, enrollmentErrorString: result.enrollmentErrorString, enrollmentInternalError: result.enrollmentInternalError, enrollmentGUIDAsString: result.enrollmentGUIDAsString
                     };
@@ -187,7 +178,6 @@ var CloudExperienceHost;
                         CloudExperienceHost.Telemetry.logEvent("AutopilotWhiteGlove policy not found, performing device enrollment.");
                         let enterpriseManagementWorker = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
                         return enterpriseManagementWorker.aadenrollAsync(UPN, serverUrl, secret, touArtifact, reflectedEnrollmentJoinType.DeviceJoinForDomainJoin, "", resourceUrl, "").then(function (result) {
-                            // Can still have failures but not return a failing HR.  Must check value of enrollmentErrorCode.
                             var enrollmentResultObject = {
                                 enrollmentErrorCode: result.enrollmentErrorCode, enrollmentErrorString: result.enrollmentErrorString, enrollmentInternalError: result.enrollmentInternalError, enrollmentGUIDAsString: result.enrollmentGUIDAsString
                             };
@@ -237,14 +227,11 @@ var CloudExperienceHost;
                 var appId = "";
                 var platform = CloudExperienceHost.Environment.getPlatform();
                 if (platform === CloudExperienceHost.TargetPlatform.MOBILE) {
-                    // App SID of the old enrollment splash app, enrollUI.exe.
                     appId = "ms-app://s-1-15-2-4108341168-3731623572-3746702997-906799925-2574769856-1402521575-1149971147";
                 } else {
-                    // Desktop Settings appid.
                     appId = "ms-app://windows.immersivecontrolpanel";
                 }
 
-                // Check for optional parameters from the Deep Link scenario
                 var queryString = "";
                 if (accessToken !== null)
                 {
@@ -261,7 +248,6 @@ var CloudExperienceHost;
                     queryString = queryString + "&ownership=" + ownership;
                 }
 
-                // Check if there is already a query string in the auth URL
                 var startURI;
                 var escapedUPN = Windows.Foundation.Uri.escapeComponent(upn);
                 if (webAuthUrl.includes("?")) {

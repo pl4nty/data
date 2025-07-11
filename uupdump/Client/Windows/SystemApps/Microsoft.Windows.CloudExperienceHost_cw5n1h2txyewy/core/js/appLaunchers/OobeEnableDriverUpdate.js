@@ -1,5 +1,4 @@
-﻿// Copyright (C) Microsoft. All rights reserved.
-
+﻿
 define(() => {
     class OobeEnableDriverUpdate {
         launchAsync() {
