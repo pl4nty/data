@@ -820,6 +820,7 @@
         "FrontlineUnassignedDevices_EnableRemoteActionDetour": true,
         "FrontlineWaitForStopWorkflowCompletionForCloudPCActivation": true,
         "FullScanCheckInternalShutdown": true,
+        "HandleLegacyNsgInWorkspace": true,
         "HandleWdsActionHistoryInDenormalize": true,
         "HandleWdsConnectivityResultInDenoramlize": true,
         "HideMovePreviewTag": true,
