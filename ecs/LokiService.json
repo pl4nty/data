@@ -545,6 +545,7 @@
         "EnableCollaborationNetworksGDRPExport": true,
         "EnableConsolidatedPeopleHighlightFlights": false,
         "EnableContactUnlinking": true,
+        "EnableConversationRecapAdvancedTelemetry": true,
         "EnableCosmicTmRouting": false,
         "EnableCustomDnsResolution": true,
         "EnableDedicatedSubstrateResourceUri": true,
