@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Testing CUS",
+    "downloadDescription": "Testing CUS",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "owners_new.txt",
+            "url": "https://download.microsoft.com/download/8a2a5749-6e5e-468d-bdc2-b8eeaaa6880a/owners.txt",
+            "size": "166",
+            "version": "1.0",
+            "datePublished": "7/11/2025 9:43:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Testing CUS",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "owners_new.txt"
+    ],
+    "detailsSection_file_size": [
+        "166 bytes"
+    ],
+    "detailsSection_file_date": "7/11/2025",
+    "systemRequirementsSection": "Testing CUS",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "Testing CUS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108280",
+    "downloadPreload": true
+}
