@@ -12,22 +12,17 @@ if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this
   if not IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_0) then
     return mp.CLEAN
   end
-  local l_0_2 = "BM"
+  ;
+  (bm.trigger_sig)("MacDelQuarantineAttr", l_0_0)
   do
     do
       if (string.find)(l_0_1, "/xattr", -6, true) ~= nil then
-        local l_0_3 = (mp.GetParentProcInfo)()
-        if l_0_3 ~= nil and l_0_3.ppid ~= nil then
-          l_0_2 = l_0_3.ppid
+        local l_0_2 = (mp.GetParentProcInfo)()
+        if l_0_2 ~= nil and l_0_2.ppid ~= nil then
+          (bm.trigger_sig)("MacDelQuarantineAttr", l_0_0, l_0_2.ppid)
         end
       end
-      if l_0_2 == "BM" then
-        (bm.trigger_sig)("MacDelQuarantineAttr", l_0_0)
-      else
-        ;
-        (bm.trigger_sig)("MacDelQuarantineAttr", l_0_0, l_0_2)
-      end
-      TrackPidAndTechniqueBM(l_0_2, "T1553.001", "DefenseEvasion_GateKeeperBypass_xattr")
+      TrackPidAndTechniqueBM("BM", "T1553.001", "DefenseEvasion_GateKeeperBypass_xattr")
       do return mp.INFECTED end
       return mp.CLEAN
     end

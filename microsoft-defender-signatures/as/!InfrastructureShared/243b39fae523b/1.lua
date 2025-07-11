@@ -19,8 +19,15 @@ end
 
 if (not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (this_sigattrlog[2]).utf8p2 == "" or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 ~= nil and (this_sigattrlog[3]).utf8p2 ~= "" then
   local l_0_3, l_0_4 = (this_sigattrlog[2]).utf8p2
-  if l_0_3 ~= nil and l_0_2 ~= nil and l_0_2:match("(.+)/([^/]+)$") ~= nil and (string.find)(l_0_3, R7_PC139, 1, true) and (string.find)(l_0_3, R7_PC139, 1, true) then
-    return mp.INFECTED
+  if l_0_3 ~= nil and l_0_2 ~= nil and l_0_2:match("(.+)/([^/]+)$") ~= nil then
+    if not (string.find)(R6_PC139, ".asar", -5, true) then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC156: Overwrote pending register: R6 in 'AssignReg'
+
+    if (string.find)(R6_PC139, R7_PC151, 1, true) and (string.find)(R6_PC139, R7_PC151, 1, true) then
+      return mp.INFECTED
+    end
   end
   return mp.CLEAN
 end
