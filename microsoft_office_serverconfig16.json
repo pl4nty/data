@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19019.40127-->
+    <!--Build: 16.0.19103.40127-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -2345,6 +2345,8 @@
     <o:token o:name="SuggestionJPEGConversionEnabled">false</o:token>
     <o:token o:name="SuggestionKnownPartsExpirationInMinutes">28</o:token>
     <o:token o:name="SuggestionMinTypingIdleTimeMS">0</o:token>
+    <o:token o:name="UnifiedAuditCacheProcessingIntervalMins">10</o:token>
+    <o:token o:name="UnifiedAuditMaxBatchSize">10</o:token>
     <o:token o:name="UrlReputationAppNames">0:Word|1:Excel|3:PowerPoint|6:Outlook|8:Publisher|10:Visio|12:OneNote|64:Union|67:AppGuardBroker|72:Loop</o:token>
     <o:token o:name="UrlReputationPlatformNames">0:_Android|1:_iOS|2:_Mac|3:_Desktop</o:token>
     <o:token o:name="UrlPathForSharesV2Unpack">_api/v2.0/shares</o:token>
@@ -2428,7 +2430,9 @@
     <o:token o:name="BingSpeechSupportedCommandingLanguages">en-US;en-CA;en-GB;en-AU;en-IN;en-NZ</o:token>
     <o:token o:name="BingSpeechSupportedProfanityFilterLanguages">en-US;es-ES;zh-CN;en-CA;es-MX;en-GB;fr-FR;de-DE;it-IT;en-AU;en-IN;fr-CA;pt-BR;ja-JP;nb-NO;da-DK;sv-SE;fi-FI;nl-NL;tr-TR;ar-BH;he-IL;cs-Cz;hu-HU;el-GR;sk-SK;vi-VN;hr-HR;ro-RO;lt-LT;lv-LV;et-EE;ar-EG;ar-SA;zh-HK;en-NZ;ga-IE;mt-MT;gu-IN;mr-IN;ta-IN;te-IN;sl-SI;bg-BG</o:token>
     <o:token o:name="SharePointGraphAPIUrlSuffix">/_api/v2.0</o:token>
+    <o:token o:name="PowerQueryADALResourceId">https://analysis.windows.net/powerbi/api</o:token>
     <o:token o:name="PowerQueryDataCatalogSearchEnabled">true</o:token>
+    <o:token o:name="PowerQueryDatahubEndpointURL">https://app.powerbi.com</o:token>
     <o:token o:name="PowerQueryEnvironmentSettings">{"AADUri":"https://login.microsoftonline.com","ARMUri":"https://management.azure.com","ARMAadResource":"https://management.core.windows.net/","ASUriSuffix":"core.windows.net","ASAadResource":"https://storage.azure.com/","GraphUri":"https://graph.microsoft.com","PBIUri":"https://api.powerbi.com","PBIAadResource":"https://analysis.windows.net/powerbi/api","Cloud":"global"}</o:token>
     <o:token o:name="PowerQueryMicrosoftExchangeConnectorEnabled">true</o:token>
     <o:token o:name="TokenAriaUploadOnly">False</o:token>

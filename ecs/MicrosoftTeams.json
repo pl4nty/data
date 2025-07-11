@@ -3950,6 +3950,7 @@
             "macAppCenterSecret": "e68d2f16-7be9-436e-b938-e4b90bbc30de",
             "macCrashReporterOnMainThread": false,
             "macEnableDisasterRecovery": false,
+            "macEnableRestoreZOrderOnActivation": false,
             "macEnableSystemMenuBarIcon": false,
             "macEnableSystemMenuBarIconV2": false,
             "macEnableSystemMenuBarIconXPC": false,
