@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\15b39c75ff54\1.luac 
+-- Command line: lua\!InfrastructureShared\19b3689ffc86\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -39,9 +39,16 @@ do
     l_0_14 = bm
     l_0_14 = l_0_14.set_detection_string
     l_0_14(l_0_13)
-    l_0_14 = mp
-    l_0_14 = l_0_14.INFECTED
-    return l_0_14
+    l_0_14 = bm
+    l_0_14 = l_0_14.get_current_process_startup_info
+    l_0_14 = l_0_14()
+    if l_0_14 and l_0_14.ppid then
+      TrackPidAndTechniqueBM(l_0_14.ppid, "T1071.001", "c2_http")
+      if not isnull((this_sigattrlog[1]).utf8p2) and not (string.find)((this_sigattrlog[1]).utf8p2, "DestPort=80;", 1, true) then
+        TrackPidAndTechniqueBM(l_0_14.ppid, "T1571", "c2_http_nonstandardport")
+      end
+    end
+    return mp.INFECTED
   end
 end
 

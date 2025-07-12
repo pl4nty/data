@@ -47,7 +47,7 @@ if l_0_2 ~= nil and l_0_2 ~= "" then
     return mp.CLEAN
   end
   local l_0_3 = (versioning.GetOrgID)()
-  if l_0_3 ~= nil and (string.lower)(l_0_3) == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(4000, false, true, true) == true and (string.find)(l_0_2, ".:\\program files[^\\]*\\common files\\microsoft shared\\clicktorun\\") then
+  if l_0_3 ~= nil and (string.lower)(l_0_3) == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(8000, false, true, true) == true and (string.find)(l_0_2, ".:\\program files[^\\]*\\common files\\microsoft shared\\clicktorun\\") then
     return mp.CLEAN
   end
 end
