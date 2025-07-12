@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10769843,
+    "size": 10770913,
     "file_count": 177
   },
   {
@@ -76,13 +76,13 @@
   },
   {
     "name": "blink",
-    "size": 32292101,
-    "file_count": 3955
+    "size": 32281243,
+    "file_count": 3952
   },
   {
     "name": "boringssl",
-    "size": 72546,
-    "file_count": 16
+    "size": 70391,
+    "file_count": 15
   },
   {
     "name": "breakpad",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16393973,
+    "size": 16398534,
     "file_count": 252
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3658412,
+    "size": 3658930,
     "file_count": 570
   },
   {
@@ -681,8 +681,8 @@
   },
   {
     "name": "tflite",
-    "size": 1636557,
-    "file_count": 482
+    "size": 1643828,
+    "file_count": 485
   },
   {
     "name": "tflite_support",
@@ -721,8 +721,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6211196,
-    "file_count": 175
+    "size": 6217886,
+    "file_count": 176
   },
   {
     "name": "vulkan_memory_allocator",
@@ -751,7 +751,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 28857211,
+    "size": 28857043,
     "file_count": 626
   },
   {
