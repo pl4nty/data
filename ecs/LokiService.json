@@ -9,6 +9,158 @@
         "enableFileCommentsInPeoplePivot": true,
         "enableFlightsUrlOverrides": false
     },
+    "AgentsInTaskbar": {
+        "AgentsInTaskbarDFVersion": "1.20250711.7.0",
+        "AgentsInTaskbarMsitVersion": "1.20250711.7.0",
+        "AgentsInTaskbarProdVersion": "1.20250711.7.0",
+        "contentSecurityPolicy": {
+            "base-uri": [
+                "'self'"
+            ],
+            "connect-src": [
+                "blob:",
+                "data:",
+                "https://server.events.data.microsoft.com",
+                "https://browser.events.data.microsoft.com",
+                "https://clients.config.office.net",
+                "https://df.loki.delve.office.com",
+                "https://msit.loki.delve.office.com",
+                "https://loki.delve.office.com",
+                "https://gcc.loki.delve.office.com",
+                "https://gcchigh.loki.office365.us",
+                "https://dod.loki.office365.us",
+                "https://loki.office365.cn",
+                "https://loki.officenet.eaglex.ic.gov",
+                "https://loki.officenet.microsoft.scloud",
+                "https://substrate.office.com",
+                "https://substrate.partner.outlook.cn",
+                "https://substrate.office.de",
+                "https://substrate.office365.us",
+                "https://substrate-dod.office365.us",
+                "https://partner.outlook.cn",
+                "https://substrate.exo.eaglex.ic.gov",
+                "https://substrate.exo.microsoft.scloud",
+                "https://media.licdn.com",
+                "https://graph.microsoft.com",
+                "https://admin.microsoft.com",
+                "https://res.cdn.office.net",
+                "https://res-1.cdn.office.net",
+                "https://res-1.cdn.partner.office365.cn",
+                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
+                "https://outlook-1-cdn.azureedge.microsoft.scloud",
+                "https://res-dod.cdn.office.net",
+                "https://res-gcch.cdn.office.net"
+            ],
+            "default-src": [
+                "'none'"
+            ],
+            "font-src": [
+                "'self'",
+                "https://res.cdn.office.net",
+                "https://res-1.cdn.office.net",
+                "https://res-1.cdn.partner.office365.cn",
+                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
+                "https://outlook-1-cdn.azureedge.microsoft.scloud",
+                "https://res-dod.cdn.office.net",
+                "https://res-gcch.cdn.office.net",
+                "https://df.loki.delve.office.com",
+                "https://msit.loki.delve.office.com",
+                "https://loki.delve.office.com",
+                "https://gcc.loki.delve.office.com",
+                "https://gcchigh.loki.office365.us",
+                "https://dod.loki.office365.us",
+                "https://loki.office365.cn",
+                "https://loki.officenet.eaglex.ic.gov",
+                "https://loki.officenet.microsoft.scloud"
+            ],
+            "form-action": [
+                "'none'"
+            ],
+            "frame-src": [
+                "'none'"
+            ],
+            "img-src": [
+                "'self'",
+                "blob:",
+                "data:",
+                "https://res.cdn.office.net",
+                "https://res-1.cdn.office.net",
+                "https://res-1.cdn.partner.office365.cn",
+                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
+                "https://outlook-1-cdn.azureedge.microsoft.scloud",
+                "https://res-dod.cdn.office.net",
+                "https://res-gcch.cdn.office.net",
+                "https://res-dev.cdn.officeppe.net",
+                "https://df.loki.delve.office.com",
+                "https://msit.loki.delve.office.com",
+                "https://loki.delve.office.com",
+                "https://gcc.loki.delve.office.com",
+                "https://gcchigh.loki.office365.us",
+                "https://dod.loki.office365.us",
+                "https://loki.office365.cn",
+                "https://loki.officenet.eaglex.ic.gov",
+                "https://loki.officenet.microsoft.scloud",
+                "https://media.licdn.com"
+            ],
+            "media-src": [
+                "'none'"
+            ],
+            "object-src": [
+                "'none'"
+            ],
+            "script-src": [
+                "'self'",
+                "'report-sample'",
+                "https://res.cdn.office.net",
+                "https://res-1.cdn.office.net",
+                "https://res-1.cdn.partner.office365.cn",
+                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
+                "https://outlook-1-cdn.azureedge.microsoft.scloud",
+                "https://res-dod.cdn.office.net",
+                "https://res-gcch.cdn.office.net",
+                "https://df.loki.delve.office.com",
+                "https://msit.loki.delve.office.com",
+                "https://loki.delve.office.com",
+                "https://gcc.loki.delve.office.com",
+                "https://gcchigh.loki.office365.us",
+                "https://dod.loki.office365.us",
+                "https://loki.office365.cn",
+                "https://loki.officenet.eaglex.ic.gov",
+                "https://loki.officenet.microsoft.scloud",
+                "https://res-dev.cdn.officeppe.net"
+            ],
+            "style-src": [
+                "'unsafe-inline'",
+                "'self'",
+                "'report-sample'",
+                "https://res-1.cdn.office.net",
+                "https://res-1.cdn.partner.office365.cn",
+                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
+                "https://outlook-1-cdn.azureedge.microsoft.scloud",
+                "https://res-dod.cdn.office.net",
+                "https://res-gcch.cdn.office.net",
+                "https://df.loki.delve.office.com",
+                "https://msit.loki.delve.office.com",
+                "https://loki.delve.office.com",
+                "https://gcc.loki.delve.office.com",
+                "https://gcchigh.loki.office365.us",
+                "https://dod.loki.office365.us",
+                "https://loki.office365.cn",
+                "https://loki.officenet.eaglex.ic.gov",
+                "https://loki.officenet.microsoft.scloud"
+            ],
+            "upgrade-insecure-requests": [],
+            "worker-src": [
+                "'self'",
+                "https://res-1.cdn.office.net",
+                "https://res-1.cdn.partner.office365.cn",
+                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
+                "https://outlook-1-cdn.azureedge.microsoft.scloud",
+                "https://res-dod.cdn.office.net",
+                "https://res-gcch.cdn.office.net"
+            ]
+        }
+    },
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20250705.17.0",
         "CalendarCompanionMsitVersion": "1.20250627.9.0",
