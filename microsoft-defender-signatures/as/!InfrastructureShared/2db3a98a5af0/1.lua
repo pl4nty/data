@@ -10,9 +10,9 @@ local l_0_4 = l_0_0
 local l_0_5 = safeJsonSerialize
 local l_0_6 = {}
 do
-  l_0_6.WriteSize = l_0_1 or "none"
-  l_0_6.AppendSize = l_0_2 or "none"
-  l_0_6.P2 = (this_sigattrlog[2]).utf8p2
+  l_0_6.WriteSize = l_0_1 or ""
+  l_0_6.AppendSize = l_0_2 or ""
+  l_0_6.P2 = (this_sigattrlog[2]).utf8p2 or ""
   l_0_5 = l_0_5(l_0_6)
   l_0_6 = bm
   l_0_6 = l_0_6.RelatedStringBMReport
@@ -20,7 +20,7 @@ do
   l_0_3 = mp
   l_0_3 = l_0_3.INFECTED
   do return l_0_3 end
-  -- DECOMPILER ERROR at PC35: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC38: freeLocal<0 in 'ReleaseLocals'
 
 end
 

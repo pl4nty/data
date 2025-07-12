@@ -1,13 +1,13 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2db3233a3c84\1.luac 
+-- Command line: lua\!InfrastructureShared\19b3e80aa0ee\1.luac 
 
 -- params : ...
 -- function num : 0
 local l_0_0 = "ExecutableNonTextSection"
-if not (this_sigattrlog[2]).matched or isnull((this_sigattrlog[2]).utf8p1) then
+if not (this_sigattrlog[1]).matched or isnull((this_sigattrlog[1]).utf8p1) then
   return mp.CLEAN
 end
-local l_0_1 = (MpCommon.PathToWin32Path)((this_sigattrlog[2]).utf8p1)
+local l_0_1 = (MpCommon.PathToWin32Path)((this_sigattrlog[1]).utf8p1)
 if isnull(l_0_1) then
   return mp.CLEAN
 end
@@ -16,7 +16,7 @@ local l_0_3 = {}
 if mp.SIGATTR_LOG_SZ > 0 then
   for l_0_7 = mp.SIGATTR_LOG_SZ, 1, -1 do
     if not (sigattr_tail[l_0_7]).utf8p2 then
-      local l_0_8 = (string.match)((sigattr_tail[l_0_7]).attribute ~= 16384 or isnull((sigattr_tail[l_0_7]).utf8p1) or (sigattr_tail[l_0_7]).utf8p1 == (this_sigattrlog[2]).utf8p1 or "", "Fsize:(%d+)")
+      local l_0_8 = (string.match)((sigattr_tail[l_0_7]).attribute ~= 16384 or isnull((sigattr_tail[l_0_7]).utf8p1) or (sigattr_tail[l_0_7]).utf8p1 == (this_sigattrlog[1]).utf8p1 or "", "Fsize:(%d+)")
       local l_0_9 = table.insert
       local l_0_10 = l_0_3
       local l_0_11 = string.format
