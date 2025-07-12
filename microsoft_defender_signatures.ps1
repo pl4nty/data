@@ -19,7 +19,8 @@ cl /std:c++17 /EHsc ..\extract_sig.cpp
 Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/luadec.exe" -OutFile "luadec.exe"
 'as', 'av' | ForEach-Object {
   python ..\data\microsoft_defender_lua_sig_parser_decompile.py "lua_standalone_sig_mp$($_)base.extracted.csv"
-  # Get-ChildItem .\lua -Recurse -Filter *_luac | Remove-Item
+  # comment if you want to keep compiled lua binaries, like getting a better decomp with https://luadec.metaworm.site/
+  Get-ChildItem .\lua -Recurse -Filter *_luac | Remove-Item
   Remove-Item ..\data\microsoft-defender-signatures\$_ -Recurse -ErrorAction Ignore
   Move-Item .\lua ..\data\microsoft-defender-signatures\$_
 }
