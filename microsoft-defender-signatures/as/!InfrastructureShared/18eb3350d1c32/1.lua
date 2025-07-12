@@ -46,12 +46,16 @@ do
     return mp.CLEAN
   end
   local l_0_11 = nil
-  local l_0_12 = SafeGetUrlReputation
-  l_0_12 = l_0_12({l_0_0}, l_0_9, false, 2000)
-  if not l_0_12 then
+  if contains(l_0_0, {"sync.minepi.com"}) then
     return mp.CLEAN
   end
-  if l_0_12 and (l_0_12.urls)[l_0_0] and ((l_0_12.urls)[l_0_0]).determination == 2 and ((l_0_12.urls)[l_0_0]).confidence >= 60 then
+  local l_0_12 = nil
+  local l_0_13 = SafeGetUrlReputation
+  l_0_13 = l_0_13({l_0_0}, l_0_9, false, 2000)
+  if not l_0_13 then
+    return mp.CLEAN
+  end
+  if l_0_13 and (l_0_13.urls)[l_0_0] and ((l_0_13.urls)[l_0_0]).determination == 2 and ((l_0_13.urls)[l_0_0]).confidence >= 60 then
     return mp.INFECTED
   end
   return mp.CLEAN
