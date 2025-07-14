@@ -19,21 +19,21 @@
             },
             "outlookPlugin": {
                 "packageName": "ZoomOutlookPluginSetup.msi",
-                "version": "6.5.0.1169"
+                "version": "6.5.5.1172"
             },
             "showManifestConfigure": false,
             "zoom": {
-                "displayVersion": "6.5.3 (7509)",
+                "displayVersion": "6.5.5 (8927)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "6.5.3.7509"
+                "version": "6.5.5.8927"
             },
             "zoomArm64": {
                 "archType": "winarm64",
-                "displayVersion": "6.5.3 (7509)",
+                "displayVersion": "6.5.5 (8927)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "6.5.3.7509"
+                "version": "6.5.5.8927"
             },
             "zoomRC": {
                 "displayVersion": "6.5.0 (427)",
@@ -56,10 +56,10 @@
             },
             "zoomX64": {
                 "archType": "x64",
-                "displayVersion": "6.5.3 (7509)",
+                "displayVersion": "6.5.5 (8927)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "6.5.3.7509"
+                "version": "6.5.5.8927"
             }
         },
         "fromGov": false,

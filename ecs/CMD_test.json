@@ -568,7 +568,7 @@
         "EnableIntuneReEnrollNewActionType": true,
         "EnableIsMemberOfGroups": true,
         "EnableIsolatedFederatedClientCert": true,
-        "EnableIsolatedOrderingClientCert": false,
+        "EnableIsolatedOrderingClientCert": true,
         "EnableIsolationCopySubscriptionForCrossRegionDR": true,
         "EnableJsonSettingsWhenPublishEvent": true,
         "EnableKeepFailedVMForMove": true,
