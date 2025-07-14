@@ -20,7 +20,7 @@ if IsExcludedByCmdlineMacOS(((bm.get_current_process_startup_info)()).command_li
   return mp.CLEAN
 end
 l_0_2 = (this_sigattrlog[3]).utf8p2
-if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_0) then
+if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_0) and ((string.find)(l_0_2, "^/Users/[^/]+/Desktop/[^/]+$", 1, false) or (string.find)(l_0_2, "^/Users/[^/]+/Documents/[^/]+$", 1, false) or (string.find)(l_0_2, "^/Users/[^/]+/Downloads/[^/]+$", 1, false) or (string.find)(l_0_2, "^/private/tmp/[^/]+$", 1, false) or (string.find)(l_0_2, "^/Users/[^/]+/Desktop/[^/]+/[^/]+$", 1, false) or (string.find)(l_0_2, "^/Users/[^/]+/Documents/[^/]+/[^/]+$", 1, false) or (string.find)(l_0_2, "^/Users/[^/]+/Downloads/[^/]+/[^/]+$", 1, false) or (string.find)(l_0_2, "^/private/tmp/[^/]+/[^/]+$", 1, false)) then
   (bm.trigger_sig)("BM_UnsignedProcCreatedUnsignedFile", l_0_2)
   return mp.INFECTED
 end
