@@ -353,6 +353,7 @@
         "EnableEndpointCheckTimeout": true,
         "EnableEpaHPIntegration": true,
         "EnableErrorCategoryInCanaryResult": true,
+        "EnableEtagInvalidIssueFixForV2": true,
         "EnableExportActionStatusReport": true,
         "EnableExposeMoveCustomerErrorForActionReport": true,
         "EnableExposingConnectionSettings": true,
