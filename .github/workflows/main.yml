@@ -102,13 +102,12 @@ jobs:
           
           Here is the diff:
           "@ | Out-File -FilePath "../prompt" -Encoding utf8
-          cat ../prompt
           
           git add .
-          cat ../prompt
           git diff --cached --exit-code | Out-File -FilePath "../prompt" -Append -Encoding utf8
-          cat ../prompt
           echo "changed=$LASTEXITCODE" >> $env:GITHUB_OUTPUT
+          Write-Host $env:GITHUB_OUTPUT
+          exit 0
       - id: inference
         if: steps.prompt.outputs.changed == '1'
         continue-on-error: true
