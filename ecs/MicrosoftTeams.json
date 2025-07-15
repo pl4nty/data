@@ -611,7 +611,6 @@
                 "enableAppsActivityV2Apis": true,
                 "enableAppsFilteredByServicePlanIds": false,
                 "enableAsyncMigrateGroupThroughGraph": true,
-                "enableBackfillSPOIDInThread": true,
                 "enableChannelOnlyMemberGetTeam": true,
                 "enableConvUXChannelCreation": true,
                 "enableCreateDefaultOneNoteTabOnTeamOrChannelCreation": true,
@@ -686,11 +685,6 @@
                     "MailboxItem.AppendOnSend.User",
                     "Mailbox.AccessSharedFolders.User",
                     "SearchQuery.Read.User"
-                ],
-                "whitelistedApisForAADClaimsChallenge": [
-                    "ChannelSharepointFilesController_PostFile",
-                    "UserController_CreateTemplatedInstanceAppEntitlement",
-                    "UserController_CreateAppEntitlement"
                 ],
                 "whitelistedApisForClaimsChallenge": [
                     "ChannelSharepointFilesController_AddDocumentLibraryAsync",
@@ -1831,7 +1825,9 @@
             "EnableCalendarIngestionFromSessionMetadata": true,
             "EnableCallSessionEndNotification": true,
             "EnableCallSessionEndNotificationV2": false,
-            "EnableFetchCallConversationData": true
+            "EnableFetchCallConversationData": true,
+            "EnableLocalizedAskFacilitator": true,
+            "EnableUsingBotNameFromContext": true
         },
         "ODSPFeatureFlags": {
             "DisableAtMentionSuggestionInWelcomeMessage": true,
