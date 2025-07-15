@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = "TamperConfigHosts"
-local l_0_1, l_0_2 = (string.match)((this_sigattrlog[2]).utf8p2 or "", "totalsizewrite:(%d+);totalsizeappend:(%d+);")
+local l_0_1, l_0_2 = (string.match)((this_sigattrlog[2]).utf8p2 or "", "TotalSizeWrite:(%d+);TotalSizeAppend:(%d+);")
 local l_0_3 = bm.add_related_string
 local l_0_4 = l_0_0
 local l_0_5 = safeJsonSerialize

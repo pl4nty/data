@@ -16,28 +16,29 @@ do
   -- DECOMPILER ERROR at PC45: Confused about usage of register: R3 in 'UnsetPending'
 
   local l_0_7 = nil
-  if (sysio.IsFileExists)(l_0_4) then
+  local l_0_8 = (sysio.IsFileExists)(l_0_4)
+  if l_0_8 then
     (bm.add_related_file)(l_0_7)
   end
-  local l_0_8 = nil
-  local l_0_9 = bm.add_related_string
-  local l_0_10 = l_0_0
-  local l_0_11 = safeJsonSerialize
-  l_0_11 = l_0_11({DriverName = l_0_1, DriverFile = l_0_2, DriverPath = l_0_7, DriverExists = l_0_8})
-  l_0_9(l_0_10, l_0_11, bm.RelatedStringBMReport)
-  l_0_9 = bm
-  l_0_9 = l_0_9.get_current_process_startup_info
-  l_0_9 = l_0_9()
-  if l_0_9 then
-    l_0_10 = l_0_9.ppid
-    if l_0_10 then
-      l_0_10 = TrackPidAndTechniqueBM
-      l_0_11 = l_0_9.ppid
-      l_0_10(l_0_11, "T1547.012", "persist_printprocessor_driver")
+  local l_0_9 = (mp.IsKnownFriendlyFile)(l_0_7, false, true) and "yes" or "no"
+  local l_0_10 = bm.add_related_string
+  local l_0_11 = l_0_0
+  local l_0_12 = safeJsonSerialize
+  l_0_12 = l_0_12({DriverName = l_0_1, DriverFile = l_0_2, DriverPath = l_0_7, DriverExists = l_0_8, DriverFriend = l_0_9})
+  l_0_10(l_0_11, l_0_12, bm.RelatedStringBMReport)
+  l_0_10 = bm
+  l_0_10 = l_0_10.get_current_process_startup_info
+  l_0_10 = l_0_10()
+  if l_0_10 then
+    l_0_11 = l_0_10.ppid
+    if l_0_11 then
+      l_0_11 = TrackPidAndTechniqueBM
+      l_0_12 = l_0_10.ppid
+      l_0_11(l_0_12, "T1547.012", "persist_printprocessor_driver")
     end
   end
-  l_0_10 = mp
-  l_0_10 = l_0_10.INFECTED
-  return l_0_10
+  l_0_11 = mp
+  l_0_11 = l_0_11.INFECTED
+  return l_0_11
 end
 

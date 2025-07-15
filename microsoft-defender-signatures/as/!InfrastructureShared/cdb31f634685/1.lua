@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = "TamperConfigHosts"
-local l_0_1, l_0_2 = (string.match)((this_sigattrlog[6]).utf8p2 or "", "totalsizewrite:(%d+);totalsizeappend:(%d+);")
+local l_0_1, l_0_2 = (string.match)((this_sigattrlog[6]).utf8p2 or "", "TotalSizeWrite:(%d+);TotalSizeAppend:(%d+);")
 if isnull(l_0_1) or isnull(l_0_2) or tonumber(l_0_1) <= 0 or tonumber(l_0_2) <= 0 then
   return mp.CLEAN
 end
