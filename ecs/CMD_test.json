@@ -222,6 +222,7 @@
         "EnableAgentStatusCheckBackendProcessorByEnv": true,
         "EnableAggregatedOperationTriggerTimer": false,
         "EnableAlertForwarderDataStream": true,
+        "EnableAlertServiceGeoMigration": true,
         "EnableAllowTenantAndForbidTenant": true,
         "EnableAnyColumnFilter": true,
         "EnableApplySSOForAADJInUX": true,
