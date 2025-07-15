@@ -82,6 +82,7 @@ jobs:
     runs-on: windows-latest
     permissions:
       contents: write
+      models: read
     environment: dev
     strategy:
       matrix:
