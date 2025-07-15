@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\43d7020b9d8b\1.luac 
+-- Command line: lua\!InfrastructureShared\6fd7f60afa8b\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -30,7 +30,7 @@ if not l_0_3:find("\\explorer.exe") and not IsProcNameInParentProcessTree("cmdhs
   return mp.CLEAN
 end
 local l_0_4 = (mp.GetProcessCommandLine)(l_0_1)
-if not l_0_4 or #l_0_4 <= 60 or #l_0_4 > 300 then
+if not l_0_4 or #l_0_4 <= 60 or #l_0_4 > 500 then
   return mp.CLEAN
 end
 local l_0_5 = l_0_4:match("#(.*)")
