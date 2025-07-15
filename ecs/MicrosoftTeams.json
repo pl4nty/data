@@ -1828,7 +1828,10 @@
     },
     "TeamsCopilotAggregator_UserCtx": {
         "GroupCopilotRolloutFlags": {
-            "EnableCalendarIngestionFromSessionMetadata": true
+            "EnableCalendarIngestionFromSessionMetadata": true,
+            "EnableCallSessionEndNotification": true,
+            "EnableCallSessionEndNotificationV2": false,
+            "EnableFetchCallConversationData": true
         },
         "ODSPFeatureFlags": {
             "DisableAtMentionSuggestionInWelcomeMessage": true,
