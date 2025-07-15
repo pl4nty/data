@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10770913,
+    "size": 10771557,
     "file_count": 177
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32281243,
+    "size": 32283793,
     "file_count": 3952
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 21356,
+    "size": 36414,
     "file_count": 5
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36541935,
+    "size": 36542275,
     "file_count": 95
   },
   {
@@ -361,8 +361,8 @@
   },
   {
     "name": "libc++",
-    "size": 6217533,
-    "file_count": 935
+    "size": 6221609,
+    "file_count": 934
   },
   {
     "name": "libdisplay-info",
@@ -441,7 +441,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 217863227,
+    "size": 217856059,
     "file_count": 341
   },
   {
@@ -456,8 +456,8 @@
   },
   {
     "name": "metrics_proto",
-    "size": 277062,
-    "file_count": 38
+    "size": 280273,
+    "file_count": 40
   },
   {
     "name": "microsoft_dlis_tokenizers",
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19080171,
+    "size": 19080683,
     "file_count": 19
   },
   {
@@ -511,8 +511,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 25601,
-    "file_count": 13
+    "size": 26918,
+    "file_count": 14
   },
   {
     "name": "oneds_sdk",
@@ -636,7 +636,7 @@
   },
   {
     "name": "skia",
-    "size": 3460776,
+    "size": 3461375,
     "file_count": 1178
   },
   {
@@ -681,8 +681,8 @@
   },
   {
     "name": "tflite",
-    "size": 1643828,
-    "file_count": 485
+    "size": 1643147,
+    "file_count": 484
   },
   {
     "name": "tflite_support",
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6217886,
+    "size": 6217897,
     "file_count": 176
   },
   {
