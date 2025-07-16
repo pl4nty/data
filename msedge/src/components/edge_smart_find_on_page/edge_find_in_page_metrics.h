@@ -47,9 +47,6 @@ void RecordRelatedMatchLinkClickEvent();
 // Records the find bar close event.
 void RecordFindBarClosedEvent();
 
-// Records the tab switch during find session.
-void RecordTabSwitchDuringFindSession();
-
 // Records the find bar show event during each new invocation and tab switch.
 void RecordFindBarUsageEventDuringNewInvocationAndTabSwitch();
 
