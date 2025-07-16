@@ -1545,7 +1545,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250708.4.0",
+        "PeopleInTaskbarDFVersion": "1.20250713.2.0",
         "PeopleInTaskbarMsitVersion": "1.20250708.4.0",
         "PeopleInTaskbarProdVersion": "1.20250623.2.0",
         "campaignSchedules": {
@@ -1716,7 +1716,8 @@
             "*.cdn.office.net",
             "*.skype.com",
             "*.public.onecdn.static.microsoft",
-            "*.df.onecdn.static.microsoft"
+            "*.df.onecdn.static.microsoft",
+            "*.centro.core.microsoft"
         ]
     },
     "Segmentation": {
