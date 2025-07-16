@@ -1822,12 +1822,15 @@
     },
     "TeamsCopilotAggregator_UserCtx": {
         "GroupCopilotRolloutFlags": {
+            "EnableAuditEventForProactiveMessages": true,
             "EnableCalendarIngestionFromSessionMetadata": true,
             "EnableCallSessionEndNotification": true,
             "EnableCallSessionEndNotificationV2": false,
+            "EnableConstraintToken": true,
             "EnableFetchCallConversationData": true,
             "EnableLocalizedAskFacilitator": true,
-            "EnableUsingBotNameFromContext": true
+            "EnableUsingBotNameFromContext": true,
+            "ShouldUseMASTranscriptForMeetingData": true
         },
         "ODSPFeatureFlags": {
             "DisableAtMentionSuggestionInWelcomeMessage": true,

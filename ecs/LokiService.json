@@ -162,8 +162,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250705.17.0",
-        "CalendarCompanionMsitVersion": "1.20250627.9.0",
+        "CalendarCompanionDFVersion": "1.20250713.2.0",
+        "CalendarCompanionMsitVersion": "1.20250705.17.0",
         "CalendarCompanionProdVersion": "1.20250627.9.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -206,7 +206,8 @@
                 "https://substrate.office.com",
                 "https://substrate.office.de",
                 "https://substrate.office365.us",
-                "https://substrate.partner.outlook.cn"
+                "https://substrate.partner.outlook.cn",
+                "https://cdn.config.centro.core.microsoft"
             ],
             "default-src": [
                 "'none'"
