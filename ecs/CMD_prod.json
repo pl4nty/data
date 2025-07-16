@@ -92,7 +92,7 @@
         "EdpMigrationToNewSub_cds": false,
         "EdpMigrationToNewSub_cmaint": false,
         "EdpMigrationToNewSub_cnry": false,
-        "EdpMigrationToNewSub_conn": false,
+        "EdpMigrationToNewSub_conn": true,
         "EdpMigrationToNewSub_ddr": false,
         "EdpMigrationToNewSub_edp": false,
         "EdpMigrationToNewSub_epa": false,

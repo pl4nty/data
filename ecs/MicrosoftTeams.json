@@ -4109,6 +4109,7 @@
             "meetingAddinEnableLocalCachingWithinAppointmentItemModel": false,
             "meetingAddinEnableLogSensitivityLabel": false,
             "meetingAddinEnableMOSuggestions": false,
+            "meetingAddinEnableMOSuggestionsForMeetingEdit": false,
             "meetingAddinEnableMSOSafelinkJoinUrlForMeetingItem": false,
             "meetingAddinEnableMTMA": false,
             "meetingAddinEnableMeetingOptionsRingFromTeams": false,
