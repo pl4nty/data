@@ -207,7 +207,8 @@
                 "https://substrate.office.de",
                 "https://substrate.office365.us",
                 "https://substrate.partner.outlook.cn",
-                "https://cdn.config.centro.core.microsoft"
+                "https://cdn.config.centro.core.microsoft",
+                "*.centro.core.microsoft"
             ],
             "default-src": [
                 "'none'"
