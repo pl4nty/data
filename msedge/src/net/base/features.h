@@ -413,18 +413,24 @@ NET_EXPORT extern const base::FeatureParam<bool>
 NET_EXPORT extern const base::FeatureParam<bool>
     kProbabilisticRevealTokenFetchOnly;
 
-// If true, probabilistic reveal tokens can be attached to non-proxied requests
-// as well. PRTs will still only be attached to requests if the
-// `ProbabilisticRevealTokensAddHeaderToProxiedRequests` flag is true and the
-// request is being sent to a registered domain, but this flag can be used in
-//  combination with `BypassProbabilisticRevealTokenRegistry` or
-// `CustomProbabilisticRevealTokenRegistry`. This is intended to be used for
-// developer testing only.
+// If true, PRTs are attached to the non-proxied requests satisfying the
+// right conditions specified by other PRT flags, in addition to the proxied
+// ones.
 NET_EXPORT extern const base::FeatureParam<bool>
     kEnableProbabilisticRevealTokensForNonProxiedRequests;
 
-// If true, probabilistic reveal tokens header will be added to proxied
-// requests.
+// TODO(crbug.com/425905281): Rename feature flag
+// `kProbabilisticRevealTokensAddHeaderToProxiedRequests`
+//
+// Despite its name this flag controls whether the PRT header should be added to
+// a given request, independent of the request being proxied or not. The
+// decision on enabling PRTs for non-proxied requests is controlled with
+// `kEnableProbabilisticRevealTokensForNonProxiedRequests`.
+//
+// If true, PRT header will be added to the not necessarily proxied requests
+// satisfying the right conditions specified by other PRT flags, i.e., whether
+// PRTs are enabled for the request/session, destination domain is eligible and
+// kProbabilisticRevealTokenFetchOnly is false.
 NET_EXPORT extern const base::FeatureParam<bool>
     kProbabilisticRevealTokensAddHeaderToProxiedRequests;
 
@@ -827,6 +833,23 @@ NET_EXPORT BASE_DECLARE_FEATURE(kTcpConnectionPoolSizeTrial);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kTcpConnectionPoolSizeTrialNormal);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int,
                                       kTcpConnectionPoolSizeTrialWebSocket);
+
+// These parameters control whether the Network Service Task Scheduler is used
+// for specific classes.
+NET_EXPORT BASE_DECLARE_FEATURE(kNetTaskScheduler);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
+                                      kNetTaskSchedulerHttpProxyConnectJob);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
+                                      kNetTaskSchedulerHttpStreamFactoryJob);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    bool,
+    kNetTaskSchedulerHttpStreamFactoryJobController);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
+                                      kNetTaskSchedulerURLRequestErrorJob);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kNetTaskSchedulerURLRequestHttpJob);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kNetTaskSchedulerURLRequestJob);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
+                                      kNetTaskSchedulerURLRequestRedirectJob);
 
 }  // namespace net::features
 

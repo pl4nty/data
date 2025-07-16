@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2083569,
+    "size": 2082575,
     "file_count": 178
   },
   {
@@ -21,8 +21,8 @@
   },
   {
     "name": "android_deps",
-    "size": 10771557,
-    "file_count": 177
+    "size": 10768093,
+    "file_count": 167
   },
   {
     "name": "android_prebuilts",
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14613356,
+    "size": 14613518,
     "file_count": 830
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32283793,
+    "size": 32274451,
     "file_count": 3952
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36542275,
+    "size": 36542409,
     "file_count": 95
   },
   {
@@ -246,8 +246,8 @@
   },
   {
     "name": "glslang",
-    "size": 42992118,
-    "file_count": 3147
+    "size": 42994883,
+    "file_count": 3151
   },
   {
     "name": "googletest",
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3658930,
+    "size": 3653850,
     "file_count": 570
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6217897,
+    "size": 6221400,
     "file_count": 176
   },
   {
