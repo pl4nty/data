@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\9dd7be600ad6\1.luac 
+-- Command line: lua\!InfrastructureShared\5dd73f8e056c\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -19,7 +19,7 @@ local l_0_2 = {}
 
 -- DECOMPILER ERROR at PC29: Overwrote pending register: R4 in 'AssignReg'
 
-if not ("iex")("invoke-expression", l_0_2) then
+if not ("curl")("net.webclient", l_0_2) then
   return mp.CLEAN
 end
 return mp.INFECTED

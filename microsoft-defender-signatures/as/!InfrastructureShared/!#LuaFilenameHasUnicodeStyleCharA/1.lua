@@ -7,7 +7,7 @@ local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_Q
 if l_0_0 == nil or #l_0_0 <= 20 then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "\240", 1, true) == nil and (string.find)(l_0_0, "\226", 1, true) == nil then
+if (string.find)(l_0_0, "\240", 1, true) == nil and (string.find)(l_0_0, "\226", 1, true) == nil and (string.find)(l_0_0, "\239", 1, true) == nil then
   return mp.CLEAN
 end
 local l_0_1 = {}
@@ -67,9 +67,9 @@ local l_0_15 = {}
 l_0_15.name = "SquaredLatin"
 l_0_15.upper_start = 127280
 l_0_15.lower_start = nil
--- DECOMPILER ERROR at PC96: No list found for R1 , SetList fails
+-- DECOMPILER ERROR at PC105: No list found for R1 , SetList fails
 
-l_0_3 = {name = "CircledLatin", upper_start = 9398, lower_start = 9424}
+l_0_4, l_0_3 = {name = "FullwidthLatin", upper_start = 65313, lower_start = 65345}, {name = "CircledLatin", upper_start = 9398, lower_start = 9424}
 l_0_3 = function(l_1_0, l_1_1, l_1_2, l_1_3)
   -- function num : 0_0
   return (l_1_0 - 240) * 262144 + (l_1_1 - 128) * 4096 + (l_1_2 - 128) * 64 + (l_1_3 - 128)
@@ -116,7 +116,7 @@ while 1 do
         l_0_11, l_0_12 = l_0_0:byte, l_0_0
         l_0_13 = l_0_10
         l_0_11 = l_0_11(l_0_12, l_0_13)
-        if l_0_11 == 226 then
+        if l_0_11 == 226 or l_0_11 == 239 then
           l_0_12 = l_0_10 + 2
           l_0_13 = #l_0_0
           if l_0_12 <= l_0_13 then
@@ -147,17 +147,17 @@ while 1 do
                 (table.insert)(l_0_9, l_0_16)
               end
               l_0_10 = l_0_10 + 3
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_STMT
 
             end
           end
@@ -173,35 +173,35 @@ while 1 do
         l_0_15 = l_0_10 + 3
         l_0_12 = l_0_12(l_0_13, l_0_14, l_0_15)
         l_0_15 = l_0_3
-        l_0_15 = l_0_15(l_0_11, l_0_12, R18_PC179, R19_PC179)
+        l_0_15 = l_0_15(l_0_11, l_0_12, R18_PC194, R19_PC194)
         do
           local l_0_17, l_0_18 = l_0_4(l_0_15)
           if l_0_17 and l_0_18 then
-            R18_PC179 = l_0_5[l_0_17]
-            if R18_PC179 == nil then
+            R18_PC194 = l_0_5[l_0_17]
+            if R18_PC194 == nil then
               l_0_5[l_0_17] = 0
             end
-            R18_PC179 = l_0_5[l_0_17]
-            R18_PC179 = R18_PC179 + 1
-            l_0_5[l_0_17] = R18_PC179
+            R18_PC194 = l_0_5[l_0_17]
+            R18_PC194 = R18_PC194 + 1
+            l_0_5[l_0_17] = R18_PC194
             l_0_6 = l_0_6 + 1
-            R18_PC179 = table
-            R18_PC179 = R18_PC179.insert
-            R19_PC179 = l_0_7
-            R18_PC179(R19_PC179, l_0_18)
-            R18_PC179 = table
-            R18_PC179 = R18_PC179.insert
-            R19_PC179 = l_0_9
-            R18_PC179(R19_PC179, l_0_18)
+            R18_PC194 = table
+            R18_PC194 = R18_PC194.insert
+            R19_PC194 = l_0_7
+            R18_PC194(R19_PC194, l_0_18)
+            R18_PC194 = table
+            R18_PC194 = R18_PC194.insert
+            R19_PC194 = l_0_9
+            R18_PC194(R19_PC194, l_0_18)
           end
           l_0_10 = l_0_10 + 4
-          -- DECOMPILER ERROR at PC207: LeaveBlock: unexpected jumping out IF_THEN_STMT
+          -- DECOMPILER ERROR at PC222: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC207: LeaveBlock: unexpected jumping out IF_STMT
+          -- DECOMPILER ERROR at PC222: LeaveBlock: unexpected jumping out IF_STMT
 
-          -- DECOMPILER ERROR at PC207: LeaveBlock: unexpected jumping out IF_THEN_STMT
+          -- DECOMPILER ERROR at PC222: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC207: LeaveBlock: unexpected jumping out IF_STMT
+          -- DECOMPILER ERROR at PC222: LeaveBlock: unexpected jumping out IF_STMT
 
         end
       end
@@ -231,45 +231,45 @@ if l_0_6 >= 1 then
   for l_0_15,i_2 in l_0_12 do
     if l_0_19 > 0 then
       l_0_11 = l_0_11 + 1
-      -- DECOMPILER ERROR at PC242: Overwrote pending register: R18 in 'AssignReg'
-
-      ;
-      (mp.set_mpattribute)(R18_PC179)
-      -- DECOMPILER ERROR at PC248: Overwrote pending register: R18 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC249: Overwrote pending register: R19 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC251: Overwrote pending register: R18 in 'AssignReg'
-
-      if l_0_19 >= 4 then
-        (mp.set_mpattribute)(R18_PC179)
-      end
       -- DECOMPILER ERROR at PC257: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC258: Overwrote pending register: R19 in 'AssignReg'
+      ;
+      (mp.set_mpattribute)(R18_PC194)
+      -- DECOMPILER ERROR at PC263: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC260: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC264: Overwrote pending register: R19 in 'AssignReg'
 
-      if l_0_19 >= 8 then
-        (mp.set_mpattribute)(R18_PC179)
-      end
       -- DECOMPILER ERROR at PC266: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC267: Overwrote pending register: R19 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC269: Overwrote pending register: R18 in 'AssignReg'
-
-      if l_0_19 >= 15 then
-        (mp.set_mpattribute)(R18_PC179)
+      if l_0_19 >= 4 then
+        (mp.set_mpattribute)(R18_PC194)
       end
+      -- DECOMPILER ERROR at PC272: Overwrote pending register: R18 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC273: Overwrote pending register: R19 in 'AssignReg'
+
       -- DECOMPILER ERROR at PC275: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC276: Overwrote pending register: R19 in 'AssignReg'
+      if l_0_19 >= 8 then
+        (mp.set_mpattribute)(R18_PC194)
+      end
+      -- DECOMPILER ERROR at PC281: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC278: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC282: Overwrote pending register: R19 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC284: Overwrote pending register: R18 in 'AssignReg'
+
+      if l_0_19 >= 15 then
+        (mp.set_mpattribute)(R18_PC194)
+      end
+      -- DECOMPILER ERROR at PC290: Overwrote pending register: R18 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC291: Overwrote pending register: R19 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC293: Overwrote pending register: R18 in 'AssignReg'
 
       if l_0_19 >= 20 then
-        (mp.set_mpattribute)(R18_PC179)
+        (mp.set_mpattribute)(R18_PC194)
       end
     end
   end
@@ -291,56 +291,56 @@ if l_0_6 >= 1 then
   local l_0_20 = nil
   if (table.concat)(l_0_7) ~= nil and #(table.concat)(l_0_7) >= 4 then
     (mp.set_mpattribute)("Lua:FnameUniStylePlain!" .. (string.lower)((table.concat)(l_0_7)))
-    -- DECOMPILER ERROR at PC338: Confused about usage of register: R12 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC353: Confused about usage of register: R12 in 'UnsetPending'
 
     if (string.find)((string.lower)((table.concat)(l_0_7)), "code", l_0_20, true) ~= nil then
       (mp.set_mpattribute)("Lua:FnameUniStylePlainHasString!code")
     end
-    -- DECOMPILER ERROR at PC351: Confused about usage of register: R12 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC366: Confused about usage of register: R12 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC353: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC368: Overwrote pending register: R16 in 'AssignReg'
 
     if (string.find)((string.lower)((table.concat)(l_0_7)), "pass", l_0_20, true) ~= nil then
       (mp.set_mpattribute)("Lua:FnameUniStylePlainHasString!pass")
     end
-    -- DECOMPILER ERROR at PC364: Confused about usage of register: R12 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC379: Confused about usage of register: R12 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC366: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC381: Overwrote pending register: R16 in 'AssignReg'
 
     if (string.find)((string.lower)((table.concat)(l_0_7)), "password", l_0_20, true) ~= nil then
       (mp.set_mpattribute)("Lua:FnameUniStylePlainHasString!password")
     end
-    -- DECOMPILER ERROR at PC377: Confused about usage of register: R12 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC392: Confused about usage of register: R12 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC379: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC394: Overwrote pending register: R16 in 'AssignReg'
 
     if (string.find)((string.lower)((table.concat)(l_0_7)), "install", l_0_20, true) ~= nil then
       (mp.set_mpattribute)("Lua:FnameUniStylePlainHasString!install")
     end
-    -- DECOMPILER ERROR at PC390: Confused about usage of register: R12 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC405: Confused about usage of register: R12 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC392: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC407: Overwrote pending register: R16 in 'AssignReg'
 
     if (string.find)((string.lower)((table.concat)(l_0_7)), "setup", l_0_20, true) ~= nil then
       (mp.set_mpattribute)("Lua:FnameUniStylePlainHasString!setup")
     end
-    -- DECOMPILER ERROR at PC403: Confused about usage of register: R12 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC418: Confused about usage of register: R12 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC405: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC420: Overwrote pending register: R16 in 'AssignReg'
 
     if (string.find)((string.lower)((table.concat)(l_0_7)), "download", l_0_20, true) ~= nil then
       (mp.set_mpattribute)("Lua:FnameUniStylePlainHasString!download")
     end
-    -- DECOMPILER ERROR at PC416: Confused about usage of register: R12 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC431: Confused about usage of register: R12 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC418: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC433: Overwrote pending register: R16 in 'AssignReg'
 
     if (string.find)((string.lower)((table.concat)(l_0_7)), "update", l_0_20, true) ~= nil then
       (mp.set_mpattribute)("Lua:FnameUniStylePlainHasString!update")
     end
   end
   local l_0_21 = nil
-  -- DECOMPILER ERROR at PC444: Overwrote pending register: R16 in 'AssignReg'
+  -- DECOMPILER ERROR at PC459: Overwrote pending register: R16 in 'AssignReg'
 
   if (table.concat)(l_0_9) ~= nil and #(table.concat)(l_0_9) >= 4 then
     (mp.set_mpattribute)("Lua:FnameUniStyleMix!" .. l_0_20)
@@ -351,7 +351,7 @@ do
   l_0_11 = mp
   l_0_11 = l_0_11.CLEAN
   do return l_0_11 end
-  -- DECOMPILER ERROR at PC453: Confused about usage of register R15 for local variables in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC468: Confused about usage of register R15 for local variables in 'ReleaseLocals'
 
 end
 
