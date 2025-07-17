@@ -1,0 +1,37 @@
+<xs:schema targetNamespace="http://www.microsoft.com/networking/WWAN/profile/v6"
+    xmlns="http://www.microsoft.com/networking/WWAN/profile/v6"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:WWAN_profile_v1="http://www.microsoft.com/networking/WWAN/profile/v1"
+    xmlns:WWAN_profile_v2="http://www.microsoft.com/networking/WWAN/profile/v2"
+    xmlns:WWAN_profile_v3="http://www.microsoft.com/networking/WWAN/profile/v3"
+    xmlns:WWAN_profile_v4="http://www.microsoft.com/networking/WWAN/profile/v4"
+    xmlns:WWAN_profile_v5="http://www.microsoft.com/networking/WWAN/profile/v5"
+    elementFormDefault="qualified">
+
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v1" schemaLocation="WWAN_profile_v1.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v2" schemaLocation="WWAN_profile_v2.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v3" schemaLocation="WWAN_profile_v3.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v4" schemaLocation="WWAN_profile_v4.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v5" schemaLocation="WWAN_profile_v5.xsd"/>
+
+  <!-- type definition section -->
+    
+  <xs:simpleType name="providerNameLongType">
+    <xs:restriction base="xs:normalizedString">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="64"/>
+      <xs:whiteSpace value="collapse"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- element definition section -->  
+  
+  <!-- Display long provider name
+       This node should be used to store provider name which is longer than 20 characters
+       But, the length does not necessarily exceed 20
+       This node has higher priority over DisplayProviderName
+       If both nodes exist in a profile XML, DisplayProviderName will be ignored during connection profile creation
+  -->
+  <xs:element name="DisplayProviderNameLong" type="providerNameLongType"/>
+
+</xs:schema>

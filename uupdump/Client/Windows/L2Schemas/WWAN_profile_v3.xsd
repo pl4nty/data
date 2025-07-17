@@ -1,0 +1,19 @@
+<xs:schema targetNamespace="http://www.microsoft.com/networking/WWAN/profile/v3"
+    xmlns="http://www.microsoft.com/networking/WWAN/profile/v3"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:WWAN_profile_v1="http://www.microsoft.com/networking/WWAN/profile/v1"
+    xmlns:WWAN_profile_v2="http://www.microsoft.com/networking/WWAN/profile/v2"
+    elementFormDefault="qualified">
+
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v1" schemaLocation="WWAN_profile_v1.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v2" schemaLocation="WWAN_profile_v2.xsd"/>
+
+    <!-- Flag to indicate whether this is an additional PDP context profile, default is "false" -->
+    <!-- If IsAdditionalPdpContext is true, IsDefault must be false, ConnectionMode must be manual -->
+    <xs:element name="IsAdditionalPdpContextProfile" type="xs:boolean"/>
+
+    <!-- Flag to indicate whether this is a tethering profile, default is "false" -->
+    <!-- If IsTetheringProfile is true, IsDefault must be false, ConnectionMode must be manual -->
+    <xs:element name="IsTetheringProfile" type="xs:boolean"/>
+
+</xs:schema>
