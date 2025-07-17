@@ -21,7 +21,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10768093,
+    "size": 10768169,
     "file_count": 167
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32274451,
+    "size": 32277638,
     "file_count": 3952
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17965069,
+    "size": 17965274,
     "file_count": 1009
   },
   {
@@ -246,7 +246,7 @@
   },
   {
     "name": "glslang",
-    "size": 42994883,
+    "size": 42994875,
     "file_count": 3151
   },
   {
@@ -421,7 +421,7 @@
   },
   {
     "name": "libwebp",
-    "size": 109275,
+    "size": 109723,
     "file_count": 12
   },
   {
@@ -441,7 +441,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 217856059,
+    "size": 217860155,
     "file_count": 341
   },
   {
@@ -551,8 +551,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3653850,
-    "file_count": 570
+    "size": 3672629,
+    "file_count": 572
   },
   {
     "name": "perl",
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6221400,
+    "size": 6222862,
     "file_count": 176
   },
   {
