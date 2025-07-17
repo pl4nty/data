@@ -1311,6 +1311,7 @@
         ],
         "WorkingHoursPredictionLoggingEnabled": true,
         "WriteSelfAssociationToPapi": true,
+        "dummylokicopilotchildflight": true,
         "isProfanityCensorNotificationPanelEnabled": true
     },
     "Lps": {
@@ -1537,7 +1538,7 @@
     "OrganizationExplorer": {
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
-        "OrgExplorerBootstraperVersion": "1.20250623.2.0",
+        "OrgExplorerBootstraperVersion": "1.20250715.5.0",
         "OrgExplorerVersion": "1.20250703.3.0",
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,

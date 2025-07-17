@@ -654,6 +654,7 @@
         "EnableRetryInUpdateItem": true,
         "EnableReturnCollectionRemoteAction": true,
         "EnableReturnCollectionStatus": true,
+        "EnableReturnEmptyListIfNoSessionHostFound": false,
         "EnableReturnReserveCloudPCs": true,
         "EnableReverseIntegrityValidationForActionHistory": true,
         "EnableReverseIntegrityValidationForScopeTag": true,

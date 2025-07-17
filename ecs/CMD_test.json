@@ -886,6 +886,7 @@
         "EnableVSBSSOForPolicy": true,
         "EnableValidateIntuneEnrollmentRestriction": true,
         "EnableValidationForVHD": true,
+        "EnableValidationV2": true,
         "EnableVirtualizationBasedSecurityFeatures": true,
         "EnableVirtualizationBasedSecurityFeaturesForFLS": true,
         "EnableVsbSsoForFleet": true,

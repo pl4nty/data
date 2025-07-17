@@ -184,6 +184,7 @@
         "EnableCPCMoveForUX": true,
         "EnableCPCSession": true,
         "EnableCacheWebsiteExistence": true,
+        "EnableCapacityRGQuotaCheck": true,
         "EnableCasConfigurationEntity": true,
         "EnableCasConfigurationForwarderDataStream": true,
         "EnableCdpCollectionServiceApiVersion20240601": true,
