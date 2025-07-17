@@ -755,6 +755,11 @@
                             "toc_title": "Azure"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-accelerate",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Accelerate"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-access-point",
                             "permissioned-type": "private",
                             "toc_title": "Azure Access Point"
@@ -943,6 +948,11 @@
                             "href": "a_z_names_terms/a/azure-app-protect",
                             "permissioned-type": "private",
                             "toc_title": "Azure App Protect"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-app-testing",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure App Testing"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-application-gateway",
@@ -1168,6 +1178,11 @@
                             "href": "a_z_names_terms/a/azure-dns",
                             "permissioned-type": "private",
                             "toc_title": "Azure DNS"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-documentdb",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure DocumentDB"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-edge-network-fabric-",
@@ -2220,6 +2235,11 @@
                             "toc_title": "client"
                         },
                         {
+                            "href": "a_z_names_terms/c/clinical-applications-embed",
+                            "permissioned-type": "private",
+                            "toc_title": "Clinical Applications Embed"
+                        },
+                        {
                             "href": "a_z_names_terms/c/clipchamp",
                             "permissioned-type": "private",
                             "toc_title": "Clipchamp"
@@ -2638,6 +2658,11 @@
                             "href": "a_z_names_terms/c/copilot-copilot-names",
                             "permissioned-type": "private",
                             "toc_title": "Copilot, Copilot names"
+                        },
+                        {
+                            "href": "a_z_names_terms/c/copilot-control-system",
+                            "permissioned-type": "private",
+                            "toc_title": "Copilot Control System"
                         },
                         {
                             "href": "a_z_names_terms/c/cortana-intelligence",
@@ -3362,6 +3387,11 @@
                                     "toc_title": "Account Reconciliation Agent"
                                 },
                                 {
+                                    "href": "a_z_names_terms/d/d365agents/activity-approvals-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Activity Approvals Agent"
+                                },
+                                {
                                     "href": "a_z_names_terms/d/d365agents/case-management-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Case Management Agent"
@@ -3380,6 +3410,11 @@
                                     "href": "a_z_names_terms/d/d365agents/deal-acceleration-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Deal Acceleration Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/d/d365agents/expense-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Expense Agent"
                                 },
                                 {
                                     "href": "a_z_names_terms/d/d365agents/financial-reconciliation-agent",
@@ -3420,6 +3455,11 @@
                                     "href": "a_z_names_terms/d/d365agents/time-and-expense-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Time and Expense Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/d/d365agents/time-entry-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Time Entry Agent"
                                 }
                             ],
                             "toc_title": "Dynamics 365 Agents"
@@ -3953,6 +3993,11 @@
                             "href": "a_z_names_terms/f/first-party",
                             "permissioned-type": "private",
                             "toc_title": "first party"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/flatcar-container-linux-for-aks",
+                            "permissioned-type": "private",
+                            "toc_title": "Flatcar Container Linux for Azure Kubernetes Service"
                         },
                         {
                             "href": "a_z_names_terms/f/flipgrid",
@@ -5115,6 +5160,16 @@
                                     "href": "a_z_names_terms/m/microsoft-365/microsoft-365-groups",
                                     "permissioned-type": "private",
                                     "toc_title": "Microsoft 365 Groups"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-365/microsoft-365-local",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft 365 Local"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-365/microsoft-365-lti",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft 365 LTI"
                                 },
                                 {
                                     "href": "a_z_names_terms/m/microsoft-365/microsoft-365-operated-by-21vianet---small-business-admin",
@@ -9188,6 +9243,11 @@
                             "href": "a_z_names_terms/v/vcore",
                             "permissioned-type": "private",
                             "toc_title": "vCore"
+                        },
+                        {
+                            "href": "a_z_names_terms/v/vcore-based-azure-cosmos-db",
+                            "permissioned-type": "private",
+                            "toc_title": "vCore-based Azure Cosmos DB"
                         },
                         {
                             "href": "a_z_names_terms/v/vcpkg",
@@ -13739,7 +13799,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2613,
+        "count_of_node_with_href": 2625,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

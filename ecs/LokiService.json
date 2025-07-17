@@ -10,9 +10,9 @@
         "enableFlightsUrlOverrides": false
     },
     "AgentsInTaskbar": {
-        "AgentsInTaskbarDFVersion": "1.20250711.7.0",
-        "AgentsInTaskbarMsitVersion": "1.20250711.7.0",
-        "AgentsInTaskbarProdVersion": "1.20250711.7.0",
+        "AgentsInTaskbarDFVersion": "1.20250717.5.0",
+        "AgentsInTaskbarMsitVersion": "1.20250717.5.0",
+        "AgentsInTaskbarProdVersion": "1.20250717.5.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -1539,7 +1539,7 @@
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
         "OrgExplorerBootstraperVersion": "1.20250715.5.0",
-        "OrgExplorerVersion": "1.20250703.3.0",
+        "OrgExplorerVersion": "1.20250715.5.0",
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,
         "isPersistentQueriesEnabled": true,
@@ -1548,7 +1548,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250713.2.0",
+        "PeopleInTaskbarDFVersion": "1.20250716.2.0",
         "PeopleInTaskbarMsitVersion": "1.20250708.4.0",
         "PeopleInTaskbarProdVersion": "1.20250623.2.0",
         "campaignSchedules": {
