@@ -54,6 +54,7 @@ define([
             this.TSM_STATE_PAGE = "Page";
             this.TSM_STATE_PAGE_INITIALIZATION = "PageInitialization";
             this.TSM_STATE_REQUEST_DISCOVERY_URL = "RequestDiscoverUrl";
+            this.TSM_STATE_REQUEST_ENROLLMENT_DISCOVERY = "RequestEnrollmentDiscovery";
             
             this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT = "onSuccessfulDapPageExit";
             this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT_TO_OOBE_START = "onSuccessfulDapPageExitToOobeStart";
@@ -681,7 +682,7 @@ define([
                 }, async (e) => {
                     await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
                         this.TSM_PROCESS_NAME, 
-                        this.this.TSM_STATE_CONFIGURE_DEVICE_LINK,
+                        this.TSM_STATE_CONFIGURE_DEVICE_LINK,
                         null, 
                         "Unexpected error configuring device link",
                         e);
@@ -697,6 +698,15 @@ define([
                 }, async (progress) => {
                     if (this.currentVirtualPageId() == this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS) {
                         switch (progress) {
+                            case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.enrollmentDiscovery:
+                                if (currentConfigurationStep != null) {
+                                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
+                                }
+
+                                currentConfigurationStep = this.TSM_STATE_REQUEST_ENROLLMENT_DISCOVERY;
+                                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_REQUEST_ENROLLMENT_DISCOVERY);
+                                break;
+                                
                             case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.tpmAttesting:
                                 if (currentConfigurationStep != null) {
                                     await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
