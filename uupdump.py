@@ -61,14 +61,17 @@ try:
     metadata_file = downloaded_files.get('MetadataESD_professional_en-us.esd')
     if metadata_file:
         subprocess.run(['wiminfo', metadata_file], check=True)
-        subprocess.run(['wimdir', metadata_file, 'all'], check=True)
+        subprocess.run(['wimdir', metadata_file, '1'], check=True)
+        subprocess.run(['wimdir', metadata_file, '2'], check=True)
         subprocess.run(['wimdir', metadata_file, '3', '--path=/Windows'], check=True)
         for target in [
             '/Windows/SystemApps/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy',
             '/Windows/SystemApps/Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe',
             '/Windows/SystemApps/MicrosoftWindows.Client.OOBE_cw5n1h2txyewy',
             '/Windows/System32/CodeIntegrity',
-            '/Windows/schemas'
+            '/Windows/schemas',
+            '/Windows/L2Schemas',
+            '/Windows/security/ApplicationId',
             # requires delta WIMs
             # '/Windows/PolicyDefinitions'
         ]:
