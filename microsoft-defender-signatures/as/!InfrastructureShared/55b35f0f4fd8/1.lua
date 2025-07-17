@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\55b36f5f473e\1.luac 
+-- Command line: lua\!InfrastructureShared\55b35f0f4fd8\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -61,11 +61,44 @@ local l_0_16 = nil
 local l_0_17 = nil
 local l_0_18 = nil
 local l_0_19 = nil
-do
-  ;
-  (bm.add_related_string)(l_0_0, safeJsonSerialize({RQ = l_0_9, Files = l_0_3, Procs = l_0_4, OriginalFile = l_0_1}), bm.RelatedStringBMReport)
-  do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC142: Confused about usage of register R11 for local variables in 'ReleaseLocals'
+-- DECOMPILER ERROR at PC135: Overwrote pending register: R9 in 'AssignReg'
 
+-- DECOMPILER ERROR at PC136: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC137: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC140: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC142: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC143: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC144: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC147: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC149: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC150: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC151: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC154: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC156: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC157: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC158: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC161: Overwrote pending register: R9 in 'AssignReg'
+
+if ((l_0_9 or not l_0_9) and l_0_9) or not l_0_9 then
+  do
+    (bm.add_related_string)(l_0_0, safeJsonSerialize({RQ = l_0_9, Files = l_0_3, Procs = l_0_4, OriginalFile = l_0_1, W1P1 = l_0_9, W1P2 = l_0_9, W2P1 = l_0_9, W2P2 = l_0_9}), bm.RelatedStringBMReport)
+    do return mp.INFECTED end
+    -- DECOMPILER ERROR at PC170: Confused about usage of register R11 for local variables in 'ReleaseLocals'
+
+  end
 end
 
