@@ -447,6 +447,7 @@
         "enableExternalOneDsTelemetrySink": false,
         "enableInternalOneDsTelemetrySink": false,
         "enablePersonalInformationManager": false,
+        "enableSkillsFullList": true,
         "enableVivaSkillsClient": false,
         "enableVivaSkillsPP4": true,
         "enablelivepersonaeditorinlpcandev": false,

@@ -1827,8 +1827,11 @@
             "EnableCallSessionEndNotification": true,
             "EnableCallSessionEndNotificationV2": false,
             "EnableConstraintToken": true,
+            "EnableDynamicSuggestedPrompts": true,
             "EnableFetchCallConversationData": true,
             "EnableLocalizedAskFacilitator": true,
+            "EnableLocalizedSuggestions": true,
+            "EnableMeetingStateCheckFromCallConversationData": true,
             "EnableUsingBotNameFromContext": true,
             "ShouldUseMASTranscriptForMeetingData": true
         },
@@ -3927,9 +3930,6 @@
         },
         "autostart": {
             "preventAutoStartUntilUserInitiatedLaunchGroupPolicy": false
-        },
-        "byod": {
-            "enableDeviceDiscoveryManager": false
         },
         "core": {
             "allowHeapSnapshot": false,
