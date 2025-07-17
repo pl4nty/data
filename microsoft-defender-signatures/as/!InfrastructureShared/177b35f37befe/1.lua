@@ -19,15 +19,13 @@ local l_0_4 = (string.match)((string.lower)(l_0_2), "(.+)%\\hccutils.dll")
 if isnull(l_0_3) or isnull(l_0_4) or l_0_3 ~= l_0_4 then
   return mp.CLEAN
 end
-if (mp.IsKnownFriendlyFile)(l_0_2, false, true) then
-  return mp.CLEAN
-end
 local l_0_5 = bm.add_related_string
 local l_0_6 = l_0_0
 local l_0_7 = safeJsonSerialize
 local l_0_8 = {}
 l_0_8.Process = l_0_1
 l_0_8.Module = l_0_2
+l_0_8.FriendlyModule = (mp.IsKnownFriendlyFile)(l_0_2, false, true) and "yes" or "no"
 l_0_7 = l_0_7(l_0_8)
 l_0_8 = bm
 l_0_8 = l_0_8.RelatedStringBMReport
