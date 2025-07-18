@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\55b35f0f4fd8\1.luac 
+-- Command line: lua\!InfrastructureShared\55b340b4aef4\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -93,11 +93,27 @@ local l_0_19 = nil
 
 -- DECOMPILER ERROR at PC161: Overwrote pending register: R9 in 'AssignReg'
 
-if ((l_0_9 or not l_0_9) and l_0_9) or not l_0_9 then
+-- DECOMPILER ERROR at PC163: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC164: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC165: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC168: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC170: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC171: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC172: Overwrote pending register: R9 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC175: Overwrote pending register: R9 in 'AssignReg'
+
+if ((((l_0_9 or not l_0_9) and l_0_9) or not l_0_9) and l_0_9) or not l_0_9 then
   do
-    (bm.add_related_string)(l_0_0, safeJsonSerialize({RQ = l_0_9, Files = l_0_3, Procs = l_0_4, OriginalFile = l_0_1, W1P1 = l_0_9, W1P2 = l_0_9, W2P1 = l_0_9, W2P2 = l_0_9}), bm.RelatedStringBMReport)
+    (bm.add_related_string)(l_0_0, safeJsonSerialize({RQ = l_0_9, Files = l_0_3, Procs = l_0_4, OriginalFile = l_0_1, W1P1 = l_0_9, W1P2 = l_0_9, W2P1 = l_0_9, W2P2 = l_0_9, P2P1 = l_0_9, P2P2 = l_0_9}), bm.RelatedStringBMReport)
     do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC170: Confused about usage of register R11 for local variables in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC184: Confused about usage of register R11 for local variables in 'ReleaseLocals'
 
   end
 end

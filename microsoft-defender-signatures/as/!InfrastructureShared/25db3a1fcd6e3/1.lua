@@ -9,6 +9,7 @@ if l_0_0 then
     if l_0_6.ppid and l_0_6.image_path then
       local l_0_7 = (string.lower)(l_0_6.image_path)
       if (string.find)(l_0_7, "w3wp", 1, true) and (mp.bitand)(l_0_6.reason_ex, 1) == 1 then
+        (bm.add_related_string)("Recent_Threats", GetRollingQueueAsHashTable("RecentThreatsOnMachine"), bm.RelatedStringBMReport)
         return mp.INFECTED
       end
     end
