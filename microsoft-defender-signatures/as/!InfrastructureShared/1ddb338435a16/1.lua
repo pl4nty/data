@@ -18,11 +18,9 @@ l_0_3 = (mp.ContextualExpandEnvironmentVariables)(l_0_3)
 if isnull(l_0_3) or isnull(l_0_2) and (string.lower)(l_0_3) == "c:\\windows\\system32\\w32time.dll" then
   return mp.CLEAN
 end
+;
+(mp.IsKnownFriendlyFile)(l_0_3, false, true)
 local l_0_4 = (mp.IsKnownFriendlyFile)(l_0_3, false, true)
-if l_0_4 == nil or l_0_4 == true then
-  return mp.CLEAN
-end
-l_0_4 = (mp.IsKnownFriendlyFile)(l_0_3, false, true)
 if l_0_4 == nil or l_0_4 == true then
   return mp.CLEAN
 end
@@ -51,7 +49,6 @@ l_0_13.ProviderName = l_0_6
 l_0_13.ProviderDLL = l_0_3
 do
   l_0_13.PreviousDLL = l_0_2 or "N/A"
-  l_0_13.Friend = l_0_4 and "yes" or "no"
   l_0_12 = l_0_12(l_0_13)
   l_0_13 = bm
   l_0_13 = l_0_13.RelatedStringBMReport
@@ -59,7 +56,7 @@ do
   l_0_10 = mp
   l_0_10 = l_0_10.INFECTED
   do return l_0_10 end
-  -- DECOMPILER ERROR at PC227: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC212: freeLocal<0 in 'ReleaseLocals'
 
 end
 
