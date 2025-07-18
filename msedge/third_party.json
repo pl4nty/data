@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32277638,
-    "file_count": 3952
+    "size": 32282290,
+    "file_count": 3954
   },
   {
     "name": "boringssl",
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7365784,
+    "size": 7377220,
     "file_count": 29
   },
   {
@@ -246,8 +246,8 @@
   },
   {
     "name": "glslang",
-    "size": 42994875,
-    "file_count": 3151
+    "size": 43050709,
+    "file_count": 3176
   },
   {
     "name": "googletest",
@@ -361,8 +361,8 @@
   },
   {
     "name": "libc++",
-    "size": 6221609,
-    "file_count": 934
+    "size": 6201569,
+    "file_count": 933
   },
   {
     "name": "libdisplay-info",
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3672629,
+    "size": 3691278,
     "file_count": 572
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6222862,
+    "size": 6224404,
     "file_count": 176
   },
   {
