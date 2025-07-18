@@ -11,7 +11,7 @@ local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
 if l_0_1 == nil or #l_0_1 < 5 then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "/private/tmp/", 1, true) ~= 1 and (string.find)(l_0_1, "/Users/[^/]+/Downloads/", 1, false) ~= 1 and (string.find)(l_0_1, "/Users/[^/]+/Desktop/", 1, false) ~= 1 and (string.find)(l_0_1, "/tmp/", 1, true) ~= 1 and (string.find)(l_0_1, "/Library/PrivilegedHelperTools/", 1, true) ~= 1 and (string.find)(l_0_1, "/Volumes/.*/[^/]+.app/Contents/", 1, false) ~= 1 and (string.find)(l_0_1, "/Volumes/.*/%.[^/]+$", 1, false) ~= 1 and (string.find)(l_0_1, "/Library/Caches/[^/]+$", 1, false) ~= 1 and (string.find)(l_0_1, "^/private/var/folders/.*TemporaryItems/NSIRD_ArchiveService_", 1, false) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/", 1, true) ~= 1 then
+if (string.find)(l_0_1, "/private/tmp/", 1, true) ~= 1 and (string.find)(l_0_1, "/Users/[^/]+/Downloads/", 1, false) ~= 1 and (string.find)(l_0_1, "/Users/[^/]+/Desktop/", 1, false) ~= 1 and (string.find)(l_0_1, "/Users/[^/]+/Documents/", 1, false) ~= 1 and (string.find)(l_0_1, "/Users/Shared/", 1, true) ~= 1 and (string.find)(l_0_1, "/tmp/", 1, true) ~= 1 and (string.find)(l_0_1, "/Library/PrivilegedHelperTools/", 1, true) ~= 1 and (string.find)(l_0_1, "/Volumes/.*/[^/]+.app/Contents/", 1, false) ~= 1 and (string.find)(l_0_1, "/Volumes/.*/%.[^/]+$", 1, false) ~= 1 and (string.find)(l_0_1, "/Library/Caches/[^/]+$", 1, false) ~= 1 and (string.find)(l_0_1, "^/private/var/folders/.*TemporaryItems/NSIRD_ArchiveService_", 1, false) ~= 1 and (string.find)(l_0_1, "/usr/local/bin/", 1, true) ~= 1 then
   return mp.CLEAN
 end
 if (string.find)(l_0_1, "->(MachO-UniBin-", 1, true) then

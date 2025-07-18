@@ -23,7 +23,7 @@ if (this_sigattrlog[2]).matched and (this_sigattrlog[3]).matched then
     if l_0_3 == nil or l_0_3 == "" then
       return mp.CLEAN
     end
-    if ((string.find)(l_0_0, l_0_3, 1, true) or (not (string.find)(l_0_0, " /tmp", 1, true) and not (string.find)(l_0_0, " /var", 1, true) and not (string.find)(l_0_0, " /etc", 1, true)) or (string.find)(l_0_0, (string.sub)(l_0_3, 9), 1, true)) then
+    if (string.find)(l_0_0, l_0_3, 1, true) and SuspMacPathsToMonitor(l_0_0, false) then
       local l_0_4 = "mac_scp_file_transfer"
       AppendToRollingQueue(l_0_4, "file_transferred_path", l_0_1, 7200, 100, 0)
       return mp.INFECTED
