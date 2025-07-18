@@ -758,6 +758,7 @@
         "EnableWvdApiBatchUpdateForFleet": true,
         "EnableWvdHoboCogsExport": true,
         "EnableWvdSubscriptionDispatchInAllocation": true,
+        "EnableXMLValidation": true,
         "Enable_ExcludeCoreError": true,
         "Enable_GCB_IWS": true,
         "Enable_GetDirectLaunchURLAPI": true,
