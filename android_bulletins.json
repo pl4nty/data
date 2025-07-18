@@ -3109,17 +3109,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2024-11-01",
         "Published": "November 4, 2024",
         "Patch level": "2024-11-01",
-        "CVE": "CVE-2024-43093",
-        "References": "A-341680936",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "12, 13, 14, 15",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2024-11-01",
-        "Published": "November 4, 2024",
-        "Patch level": "2024-11-01",
         "CVE": "CVE-2024-43082",
         "References": "A-296915959",
         "Type": "ID",
@@ -3258,14 +3247,6 @@
         "Severity": "High",
         "Updated AOSP versions": "12, 12L, 13, 14, 15",
         "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2024-11-01",
-        "Published": "November 4, 2024",
-        "Patch level": "2024-11-01",
-        "Subcomponent": "Documents UI",
-        "CVE": "CVE-2024-43093",
-        "Component": "Google Play system updates"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2024-11-01",
@@ -6389,17 +6370,6 @@
         "Type": "EoP",
         "Severity": "High",
         "Updated AOSP versions": "13",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2024-02-01",
-        "Published": "February 5, 2024",
-        "Patch level": "2024-02-01",
-        "CVE": "CVE-2024-0032",
-        "References": "A-283962634",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "11, 12, 12L, 13, 14",
         "Component": "Framework"
     },
     {
