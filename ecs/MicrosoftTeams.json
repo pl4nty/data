@@ -1821,6 +1821,9 @@
         "TelemetryRegion": "US"
     },
     "TeamsCopilotAggregator_UserCtx": {
+        "CustomerServiceCopilotRolloutFlags": {
+            "EnableBookings": true
+        },
         "GroupCopilotRolloutFlags": {
             "EnableAuditEventForProactiveMessages": true,
             "EnableCalendarIngestionFromSessionMetadata": true,

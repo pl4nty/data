@@ -1105,6 +1105,13 @@
         },
         "iocave.customize-ui": true,
         "iocave.monkey-patch": true,
+        "ionic.ionic": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "WebNative",
+                "id": "WebNative.webnative"
+            }
+        },
         "itmcdev.db-extension-pack": true,
         "itmcdev.node-flow-extension-pack": true,
         "jacobclarke.vscode-pandoc": {
