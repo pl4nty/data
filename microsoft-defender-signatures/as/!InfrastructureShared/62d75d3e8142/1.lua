@@ -11,16 +11,16 @@ local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
 if l_0_1 == nil or #l_0_1 <= 60 then
   return mp.CLEAN
 end
-l_0_1 = (string.gsub)((string.lower)(l_0_1), "[%\'\"]%)?%+%(?[%\'\"]", "")
+l_0_1 = (string.lower)(l_0_1)
 do
   local l_0_2 = {}
-  -- DECOMPILER ERROR at PC63: No list found for R2 , SetList fails
+  -- DECOMPILER ERROR at PC58: No list found for R2 , SetList fails
 
-  -- DECOMPILER ERROR at PC64: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC59: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC65: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC60: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC66: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC61: Overwrote pending register: R5 in 'AssignReg'
 
   if not (".cloud")(".press", ".pro") then
     return mp.CLEAN
