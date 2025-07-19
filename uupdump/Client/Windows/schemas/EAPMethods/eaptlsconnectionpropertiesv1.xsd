@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<xs:schema
+     targetNamespace="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1" 
+     elementFormDefault="qualified" 
+     xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1" 
+     xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+     xmlns:baseEap="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"
+     xmlns:extendedTLS="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2" 
+     version="1.0"
+   >
+   <xs:import 
+         namespace="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1" 
+         schemaLocation="BaseEapConnectionPropertiesV1.xsd" 
+   />
+   <!--We are extending our vista schema, and extended tags are available at EapTlsConnectionPropertiesV2.xsd -->
+   <xs:import 
+         namespace="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2" 
+         schemaLocation="EapTlsConnectionPropertiesV2.xsd" 
+   />
+   <xs:element name="EapType" substitutionGroup="baseEap:EapType">
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="baseEap:BaseEapTypeParameters">
+               <xs:sequence>
+                  <xs:element
+                        name="CredentialsSource"
+                        type="CredentialsSourceParameters"
+                        minOccurs="0"
+                  />
+                  <xs:element 
+                        name="ServerValidation" 
+                        type="ServerValidationParameters" 
+                        minOccurs="0"
+                  />
+                  <xs:element
+                        name="DifferentUsername"
+                        type="xs:boolean"
+                        minOccurs="0"
+                  />
+                  <xs:element ref="extendedTLS:PerformServerValidation"  minOccurs="0" maxOccurs="1"/>
+                  <xs:element ref="extendedTLS:AcceptServerName"  minOccurs="0" maxOccurs="1"/>
+                  <xs:element ref="extendedTLS:TLSExtensions"  minOccurs="0" maxOccurs="1"/>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>   
+   <xs:complexType name="CredentialsSourceParameters">
+       <xs:choice>
+           <xs:element name="SmartCard" type="emptyString"/>
+           <xs:element name="CertificateStore" type="CertSelection"/>
+       </xs:choice>
+  </xs:complexType>   
+
+  <xs:complexType name="ServerValidationParameters">
+      <xs:sequence>
+         <xs:element 
+               name="DisableUserPromptForServerValidation" 
+               type="xs:boolean" 
+               minOccurs="0" 
+         />
+         <!-- A set of server names delimited by semicolons -->
+         <!-- each server name can be represented by regular -->
+         <!-- expressions -->
+         <!-- If this tag exist and value inside this tag also exists then AcceptServerName's value is TRUE or else it is FALSE-->
+         <xs:element name="ServerNames" minOccurs="0">
+           <xs:complexType>
+             <xs:simpleContent>
+               <xs:extension base="xs:string">
+                 <!--This is obsolete, instead use AcceptServerName tag defined in the Eaptype tag.-->
+                 <xs:attribute 
+                   name="AcceptServerName"
+                   type="xs:boolean"
+                   use="optional"/>
+               </xs:extension>
+             </xs:simpleContent>
+           </xs:complexType>
+         </xs:element>
+
+         <!-- The thumbprint of a trusted root CA is -->
+         <!-- a hexadecimal string that contains -->
+         <!-- the SHA-1 hash of the certificate. -->
+         <xs:element 
+               name="TrustedRootCA" 
+               type="xs:hexBinary" 
+               minOccurs="0" 
+               maxOccurs="unbounded" 
+         />
+      </xs:sequence>
+      <!--This is obsolete, instead use PerformServerValidation tag defined in the EapType tag.-->
+      <xs:attribute 
+         name="PerformServerValidation"
+         type="xs:boolean"
+         use="optional"
+         default="true"/>
+  </xs:complexType>
+
+   <xs:complexType name="CertSelection">
+      <xs:sequence>
+      <xs:element name="SimpleCertSelection" type="xs:boolean" minOccurs="0" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="emptyString">
+      <xs:restriction base="xs:string">
+      <xs:maxLength value="0"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>
+

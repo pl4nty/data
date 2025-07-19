@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema targetNamespace="http://www.microsoft.com/networking/WLAN/profile/v2"
+    xmlns="http://www.microsoft.com/networking/WLAN/profile/v2"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+  <xs:element name="FIPSMode" type="xs:boolean"/>
+
+  <xs:element name="SSID">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Either Hex or named SSID must be present. -->
+        <!-- Hex SSID takes precedence over named SSID. -->
+        <xs:element name="hex" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:hexBinary">
+              <xs:minLength value="1" />
+              <xs:maxLength value="32" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="name" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1" />
+              <xs:maxLength value="32" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <!-- extension point for other namespaces -->
+        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="SSIDPrefix">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Either Hex or named SSID must be present. -->
+        <!-- Hex SSID takes precedence over named SSID. -->
+        <xs:element name="hex" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:hexBinary">
+              <xs:minLength value="4" />
+              <xs:maxLength value="32" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="name" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="4" />
+              <xs:maxLength value="32" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <!-- extension point for other namespaces -->
+        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

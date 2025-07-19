@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.microsoft.com/networking/CarrierControl/WWAN/v1"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/networking/CarrierControl/WWAN/v1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:base="http://www.microsoft.com/networking/CarrierControl/Base/v1"
+    xmlns:plans="http://www.microsoft.com/networking/CarrierControl/Plans/v1"
+>
+  <xs:import namespace="http://www.microsoft.com/networking/CarrierControl/Base/v1"/>
+  <xs:import namespace="http://www.microsoft.com/networking/CarrierControl/Plans/v1"/>
+
+  <!-- Restating types from the core WWAN schema -->
+
+  <xs:simpleType name="SimIccIDType">
+    <xs:restriction base="xs:token">
+      <xs:pattern value="[a-zA-Z\d]{1,20}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="ContextType">
+    <xs:sequence>
+      <xs:element name="AccessString" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="100"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="UserLogonCred" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="UserName" type="base:NameType"/>
+            <xs:element name="Password" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Compression" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="DISABLE"/>
+            <xs:enumeration value="ENABLE"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="AuthProtocol" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="NONE"/>
+            <xs:enumeration value="PAP"/>
+            <xs:enumeration value="CHAP"/>
+            <xs:enumeration value="MsCHAPv2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Activation methods -->
+  <xs:complexType name="ActivationMethodType">
+    <xs:attribute name="Delay" default="PT0S">
+      <xs:simpleType>
+        <xs:restriction base="xs:duration">
+          <xs:minInclusive value="PT0S"/>
+          <xs:maxExclusive value="PT1H"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="RetryCount" default="0">
+      <xs:simpleType>
+        <xs:restriction base="xs:nonNegativeInteger">
+          <xs:maxInclusive value="10"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="RetryInterval" default="PT1M">
+      <xs:simpleType>
+        <xs:restriction base="xs:duration">
+          <xs:minInclusive value="PT1M"/>
+          <xs:maxInclusive value="PT1H"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:element name="ActivationMethod" type="ActivationMethodType" abstract="true"/>
+  <xs:element name="ReregisterToNetwork" type="ActivationMethodType" substitutionGroup="ActivationMethod"/>
+  <xs:element name="ReconnectToNetwork" type="ActivationMethodType" substitutionGroup="ActivationMethod"/>
+  <xs:element name="ServiceActivation" substitutionGroup="ActivationMethod">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="ActivationMethodType">
+          <xs:sequence>
+            <xs:element name="CarrierSpecificData" type="xs:base64Binary"/>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="CarrierMBNProfile">
+    <xs:sequence>
+      <xs:element name="Name" type="base:NameType"/>
+      <!-- Brief description of the profile -->
+      <xs:element name="Description" type="base:NameType" minOccurs="0"/>
+
+      <xs:element name="AssociatedPlan" type="xs:string" minOccurs="0"/>
+
+      <!-- Home Provider Name -->
+      <xs:element name="HomeProviderName" type="base:ProviderNameType" minOccurs="0"/>
+
+      <!-- Connection Settings -->
+      <xs:element name="Context" type="ContextType" minOccurs="0"/>
+
+      <!-- Roaming Partner List -->
+      <xs:element name="DataRoamingPartners" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Provider" type="base:ProviderType" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="Extensions" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="Priority" type="base:Priority" default="5"/>
+  </xs:complexType>
+
+  <xs:element name="DefaultProfile" type="CarrierMBNProfile"/>
+  <xs:element name="PurchaseProfile" type="CarrierMBNProfile"/>
+
+  <!-- New type used in provisioning -->
+  <xs:element name="Branding" type="Branding" />
+  <xs:complexType name="Branding">
+    <xs:sequence>
+      <!-- Logo is a 32x32 .bmp or .png of the provider's logo -->
+      <xs:element name="Logo" type="xs:base64Binary" minOccurs="0"/>
+      <xs:element name="Name" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="20"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+      <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Types used in message parsing -->
+  <xs:complexType name="BooleanField">
+    <xs:attribute name="TrueToken" type="xs:token"/>
+    <xs:attribute name="FalseToken" type="xs:token"/>
+    <xs:attribute name="Default" type="xs:boolean" default="false"/>
+    <xs:attribute name="Group" type="xs:positiveInteger"/>
+  </xs:complexType>
+
+  <xs:complexType name="DateTimeField">
+    <!-- Format is a string specifying how the date/time values should be
+         parsed.  Escape sequences identify the invididual date/time fields.
+         The following escape sequences are defined:
+            %d - day of month (01-31)
+            %H - hour in 24-hour format (00-23)
+            %I - hour in 12-hour format (01-12) (required %p to also be specified)
+            %m - month (01-12)
+            %M - minute (00-59)
+            %S - seconds (00-59)
+            %y - year without century (00-99)
+            %Y - year with century (1601-9999)
+            %#d, %#H, %#I, %#m, %#M, %#S, %#y, %#Y - Same as above but with no leading zero's
+            %p - AM/PM indicator (Both AMToken and PmToken attributes must also be defined)
+            %% - percent sign(%)
+        -->
+    <xs:attribute name="Format" type="xs:string" use="required"/>
+    <xs:attribute name="Group" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="AmToken" type="xs:string" />
+    <xs:attribute name="PmToken" type="xs:string" />
+  </xs:complexType>
+
+  <xs:complexType name="NumberField">
+    <xs:attribute name="Group" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="UnitGroup" type="xs:positiveInteger"/>
+    <xs:attribute name="DefaultUnit">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="None"/>
+          <xs:enumeration value="K"/>
+          <xs:enumeration value="M"/>
+          <xs:enumeration value="G"/>
+          <xs:enumeration value="T"/>
+          <xs:enumeration value="Ki"/>
+          <xs:enumeration value="Mi"/>
+          <xs:enumeration value="Gi"/>
+          <xs:enumeration value="Ti"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="PercentField">
+    <xs:attribute name="Group" type="xs:positiveInteger" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="TokenList">
+    <xs:list itemType="xs:token"/>
+  </xs:simpleType>
+
+  <!-- Bearer types allowed for messages -->
+  <xs:element name="SMSBearer">
+    <xs:complexType>
+      <xs:attribute name="Sender" type="xs:token"/>
+      <xs:attribute name="ClassZeroOnly" type="xs:boolean" default="true"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="USSDBearer"/>
+
+  <xs:group name="UsageGroup">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element name="Usage" type="NumberField" />
+        <xs:element name="UsagePercentage" type="PercentField" />
+        <xs:element name="UsageOverage" type="NumberField" />
+        <xs:element name="UsageOveragePercentage" type="PercentField" />
+      </xs:choice>
+      <xs:element name="UsageTimestamp" type="DateTimeField" />
+    </xs:sequence>
+  </xs:group>
+
+  <!-- The element to describe the set of messages Windows should parse and signal to the user. -->
+  <xs:element name="Messages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Message" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Must be at least one bearer of either type, but multiple SMS bearers permitted -->
+              <xs:choice>
+                <xs:sequence>
+                  <xs:element ref="SMSBearer" maxOccurs="unbounded"/>
+                  <xs:element ref="USSDBearer" minOccurs="0"/>
+                </xs:sequence>
+                <xs:sequence>
+                  <xs:element ref="USSDBearer"/>
+                </xs:sequence>
+              </xs:choice>
+              <xs:element name="Pattern" type="xs:string"/>
+              <xs:element name="Locale" type="xs:token" default="en-US" minOccurs="0"/>
+
+              <!-- Specifies LITERAL TOKENS (not regex) which indicate
+                   particular units in the value provided. -->
+              <xs:element name="Units" minOccurs="0">
+                <xs:complexType>
+
+                  <!-- Powers of 1,000 -->
+                  <xs:attribute name="K" type="TokenList"/>
+                  <xs:attribute name="M" type="TokenList"/>
+                  <xs:attribute name="G" type="TokenList"/>
+                  <xs:attribute name="T" type="TokenList"/>
+
+                  <!-- Powers of 1,024 -->
+                  <xs:attribute name="Ki" type="TokenList"/>
+                  <xs:attribute name="Mi" type="TokenList"/>
+                  <xs:attribute name="Gi" type="TokenList"/>
+                  <xs:attribute name="Ti" type="TokenList"/>
+
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="Fields" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:group ref="UsageGroup" minOccurs="0"/>
+                    <xs:element name="DataLimit" type="NumberField" minOccurs="0"/>
+                    <xs:element name="OverDataLimit" type="BooleanField" minOccurs="0"/>
+                    <!-- We don't support changing the Billing Cycle and other advanced attributes over SMS.
+                         If these parts of the usage data change, the carrier should create a new XML file
+                         and send a message with the Refresh element. -->
+                    <xs:element name="Congested" type="BooleanField" minOccurs="0"/>
+                    <xs:element name="InboundBandwidth" type="NumberField" minOccurs="0"/>
+                    <xs:element name="OutboundBandwidth" type="NumberField" minOccurs="0"/>
+                    <xs:element name="PlanType" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="Group" type="xs:positiveInteger"/>
+                        <xs:attribute name="Default" type="plans:PlanType"/>
+                        <xs:attribute name="UnrestrictedTokens" type="TokenList"/>
+                        <xs:attribute name="FixedTokens" type="TokenList"/>
+                        <xs:attribute name="VariableTokens" type="TokenList"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="RefreshProvisioning" type="BooleanField" minOccurs="0"/>
+                    <xs:element name="ActivationComplete" type="BooleanField" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Silent" type="xs:boolean" default="true"/>
+            <xs:attribute name="RuleId" type="xs:token"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+</xs:schema>

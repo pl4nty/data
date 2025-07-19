@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<xs:schema 
+      targetNamespace="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1" 
+      elementFormDefault="qualified" 
+      xmlns="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1" 
+      xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+      version="1.0"
+   >
+   <xs:complexType name="BaseEapTypeParameters" abstract="true" />
+   <xs:complexType name="BaseEapParameters" >
+      <xs:sequence>
+         <xs:element name="Type" type="xs:integer"/> 
+         <xs:any
+               minOccurs="0"
+               processContents="lax" 
+               maxOccurs="unbounded" 
+               namespace="##any" 
+         />
+         <!-- One or more elements of the kind as follows should go in here. -->
+         <!--
+         <xs:element ref="EapType" maxOccurs="unbounded" />
+         -->
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="EapType" type="BaseEapTypeParameters" abstract="true"/>
+   <xs:element name="Identity" type="xs:string" abstract="true" />
+   <xs:element name="Eap" type="BaseEapParameters"/>
+</xs:schema>

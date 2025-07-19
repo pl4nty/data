@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<xs:schema
+     targetNamespace="http://www.microsoft.com/provisioning/EapAkaConnectionPropertiesV1" 
+     elementFormDefault="qualified" 
+     xmlns="http://www.microsoft.com/provisioning/EapAkaConnectionPropertiesV1" 
+     xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+     version="1.0"
+   >
+   <xs:element name="EapAka">              
+      <xs:complexType>
+            <xs:sequence>
+                <xs:element name="DontRevealPermanentID" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="ProviderName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Realm">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:string">
+                        <xs:attribute name="Enabled" type="xs:boolean" use="required"/>
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
+                <!-- extension point for other namespaces -->
+                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##other"/>
+            </xs:sequence>
+      </xs:complexType>
+   </xs:element>   
+</xs:schema>

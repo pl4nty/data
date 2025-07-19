@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<xs:schema 
+      targetNamespace="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2" 
+      elementFormDefault="qualified" 
+      xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2" 
+      xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+      xmlns:ExtendedPeapV3="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV3"
+      version="1.0"
+   >
+   <xs:element name="PeapExtensionsV2" type="PeapExtensionsTypeV2"/>
+   <xs:element name="PerformServerValidation" type="xs:boolean" />   
+   <xs:element name="AcceptServerName" type="xs:boolean" />
+   <xs:element 
+      name="IdentityPrivacy" 
+      type="IdentityPrivacyParameters" 
+   />
+   <xs:complexType name="IdentityPrivacyParameters">
+      <xs:sequence>
+         <xs:element name="EnableIdentityPrivacy" type="xs:boolean" minOccurs="0"/>
+         <!-- Identity privacy username -->
+         <xs:element name="AnonymousUserName" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="PeapExtensionsTypeV2">
+      <xs:sequence>
+	<xs:element ref="ExtendedPeapV3:AllowPromptingWhenServerCANotFound"  minOccurs="0" maxOccurs="1"/>
+	<xs:element ref="ExtendedPeapV3:PeapExtensionsV3"  minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

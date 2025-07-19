@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<xs:schema 
+      targetNamespace="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2" 
+      elementFormDefault="qualified" 
+      xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2" 
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      version="1.0"
+   >
+   <xs:element name="TLSExtensions" type="TLSExtensionsType"/>
+   <xs:element name="PerformServerValidation" type="xs:boolean" />   
+   <xs:element name="AcceptServerName" type="xs:boolean" />
+   <xs:element name="GroupSmartCardCerts" type="xs:boolean"/>
+   <xs:complexType name="TLSExtensionsType">
+      <xs:sequence>
+	<xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##any"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>
