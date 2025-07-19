@@ -37,7 +37,10 @@ files = request(f'https://api.uupdump.net/get.php?id={updateId}&lang=en-us&editi
 #     'MetadataESD_professional_en-us.esd',
 #     'Microsoft-Windows-Client-Desktop-Required-Package.ESD'
 # ]
-esd_files = [filename for filename in files if filename.lower().endswith('.esd')]
+esd_files = [
+    filename for filename in files
+    if filename.lower().endswith('.esd') or filename == "cabs_Microsoft-Windows-MediaPlayer-Package-amd64.cab"
+]
 temp_dir = tempfile.mkdtemp()
 downloaded_files = {}
 for filename in esd_files:
@@ -81,7 +84,7 @@ try:
             subprocess.run([
                 'wimextract', metadata_file, '3', target,
                 '--dest-dir=' + os.path.join(root, 'Client'),
-                '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.esd')
+                '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.*')
             ])
 except subprocess.CalledProcessError as e:
     print(f"Output: {e.output}")
