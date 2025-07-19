@@ -61,14 +61,12 @@ try:
     metadata_file = downloaded_files.get('MetadataESD_professional_en-us.esd')
     if metadata_file:
         subprocess.run(['wiminfo', metadata_file], check=True)
+        print('WinRE files:')
         subprocess.run(['wimdir', metadata_file, '1'], check=True)
+        print('Windows Setup files:')
         subprocess.run(['wimdir', metadata_file, '2'], check=True)
+        print('Windows client files:')
         subprocess.run(['wimdir', metadata_file, '3', '--path=/Windows'], check=True)
-        subprocess.run([
-            'wimextract', metadata_file, '2', '/Windows/PolicyDefinitions',
-            '--dest-dir=' + os.path.join(root, 'WinRE'),
-            '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.esd')
-        ], check=True)
         for target in [
             '/Windows/SystemApps/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy',
             '/Windows/SystemApps/Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe',
@@ -78,13 +76,13 @@ try:
             '/Windows/L2Schemas',
             '/Windows/security/ApplicationId',
             # requires delta WIMs
-            # '/Windows/PolicyDefinitions'
+            '/Windows/PolicyDefinitions',
         ]:
             subprocess.run([
                 'wimextract', metadata_file, '3', target,
                 '--dest-dir=' + os.path.join(root, 'Client'),
                 '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.esd')
-            ], check=True)
+            ])
 except subprocess.CalledProcessError as e:
     print(f"Output: {e.output}")
     print(f"Stderr: {e.stderr}")
