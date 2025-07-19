@@ -16,6 +16,14 @@
                 "msPdfSharedLibraryHighCores"
             ]
         },
+        "AdsPlatformXEdgeexp": {
+            "enableFeatures": [
+                "msEdgeAdPlatformUI",
+                "msEdgeAdPlatformBingPathsV3",
+                "msEdgeAdPlatformProtobufMigration",
+                "msEdgeAdPlatformUseIdentity"
+            ]
+        },
         "BrowserLaunchCooldown": {
             "enableFeatures": [
                 "msNurturingFeaturePolicyManager",
@@ -202,11 +210,6 @@
                 "msWorkspacesCollaborativeBookmarksBar"
             ]
         },
-        "autolaunchBackoffRestOfTheWorld": {
-            "enableFeatures": [
-                "msAutoLaunchBoostingUsingEnhancedBackoff"
-            ]
-        },
         "toolbarCleanupABn": {
             "enableFeatures": [
                 "msEdgeAorakiToolbarDeclutter",
@@ -275,7 +278,7 @@
         },
         "EdgeShoppingClarityConfig": {
             "enableFeatures": [
-                "msEdgeShoppingClarityEnabled"
+                "msEdgeShoppingClarityEnabledWithCookies"
             ]
         },
         "EdgeShoppingDefaultConfig": {
@@ -331,14 +334,19 @@
                 }
             ]
         },
-        "EdgeShoppingPriceCompareAdLangOverrideConfig": {
+        "EdgeShoppingSigPriceDropReminder": {
             "enableFeatures": [
-                "msShoppingUapiExp3"
-            ]
-        },
-        "EdgeShoppingPriceCompareResponseConfig": {
-            "enableFeatures": [
-                "msShoppingUapiExp1"
+                "msShoppingExp40"
+            ],
+            "parameters": [
+                {
+                    "name": "startDate",
+                    "value": "12-26-2022"
+                },
+                {
+                    "name": "endDate",
+                    "value": "01-02-2022"
+                }
             ]
         },
         "EmxApiThrottleKillswitch": {
