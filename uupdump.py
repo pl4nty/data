@@ -72,11 +72,6 @@ try:
         # print('Windows client files:')
         # subprocess.run(['wimdir', metadata_file, '3', '--path=/Windows'], check=True)
 
-        subprocess.run([
-            'wimcapture', metadata_file, '3', target,
-            '--dest-dir=' + os.path.join(root, 'Client'),
-            '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.esd')
-        ], check=True)
         for target in [
             '/Windows/SystemApps/Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy',
             '/Windows/SystemApps/Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe',
@@ -91,7 +86,7 @@ try:
             subprocess.run([
                 'wimextract', metadata_file, '3', target,
                 '--dest-dir=' + os.path.join(root, 'Client'),
-                '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.*')
+                '--no-acls', '--preserve-dir-structure', '--ref=' + os.path.join(temp_dir, '*.esd')
             ], check=True)
 except subprocess.CalledProcessError as e:
     print(f"Output: {e.output}")
