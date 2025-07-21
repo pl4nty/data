@@ -1,0 +1,43 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Fri, 6 Jun 2025 17:22:16 +0900
+Subject: revert: Reland: [A11y] Expose options as NSAccessibilityMenuItemRole
+
+For https://github.com/microsoft/vscode/issues/250642
+
+The new role incorrectly dismisses focus on the list elements
+when treating them as menu items which is more severe regression
+than the bug this change was trying to solve.
+
+diff --git a/ui/accessibility/platform/browser_accessibility_cocoa.mm b/ui/accessibility/platform/browser_accessibility_cocoa.mm
+index d5b5586f4f55b11f1ae350b3693076d5a491eb65..76dfa232e81250613e9d2cbaf33bd8fd4a0cecfa 100644
+--- a/ui/accessibility/platform/browser_accessibility_cocoa.mm
++++ b/ui/accessibility/platform/browser_accessibility_cocoa.mm
+@@ -1167,13 +1167,6 @@ - (NSString*)role {
+     cocoa_role = NSAccessibilityUnknownRole;
+   } else if (_owner->IsRootWebAreaForPresentationalIframe()) {
+     cocoa_role = NSAccessibilityGroupRole;
+-  } else if (role == ax::mojom::Role::kListBoxOption && _owner->IsWebContent()) {
+-    // Short term solution that allows children until Mac gets a more
+-    // appropriate role for options than AXStaticText, which can result
+-    // truncation or incorrect announcements of the option text when there are
+-    // children. For now, only do this for web content, and not UI, where
+-    // there are not interesting descendants of list box options.
+-    cocoa_role = NSAccessibilityMenuItemRole;
+   } else {
+     cocoa_role = [AXPlatformNodeCocoa nativeRoleFromAXRole:role];
+   }
+@@ -1511,7 +1504,12 @@ - (id)value {
+   DCHECK(_owner->node()->IsDataValid());
+ 
+   if (ui::IsNameExposedInAXValueForRole([self internalRole])) {
+-    std::u16string name = _owner->GetNameAsString16();
++    std::u16string name = _owner->GetTextContentUTF16();
++    // Leaf node with aria-label will have empty text content.
++    // e.g. <div role="option" aria-label="label">content</div>
++    // So we use its computed name for AXValue.
++    if (name.empty())
++      name = _owner->GetNameAsString16();
+     if (!IsSelectedStateRelevant(_owner)) {
+       return base::SysUTF16ToNSString(name);
+     }
