@@ -158,14 +158,6 @@ MEDIA_EXPORT extern const char kCastStreamingForceDisableHardwareVp9[];
 // to take effect.
 MEDIA_EXPORT extern const char kCastStreamingForceEnableHardwareVp9[];
 
-#if !BUILDFLAG(IS_ANDROID) || BUILDFLAG(EDGE_ANDROID_EXTENSIONS)
-// If enabled, overrides the target playout delay for a casting mirroring
-// session. The value will be parsed as milliseconds. Lowering this value will
-// result in a lower end to end latency, but could come at the cost of other
-// quality standards such as dropped frames or FPS.
-MEDIA_EXPORT extern const char kCastMirroringTargetPlayoutDelay[];
-#endif  // !BUILDFLAG(IS_ANDROID)
-
 }  // namespace switches
 
 namespace media {
@@ -376,6 +368,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(
     kShareThisTabInsteadButtonGetDisplayMediaAudio);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kSpeakerChangeDetection);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kSpecCompliantCanPlayThrough);
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kSuspendMediaForFrozenFrames);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kSuspendMutedAudio);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kUnifiedAutoplay);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kUseAndroidOverlayForSecureOnly);

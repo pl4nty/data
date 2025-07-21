@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32276937,
+    "size": 32275070,
     "file_count": 3954
   },
   {
@@ -180,6 +180,11 @@
     "file_count": 10
   },
   {
+    "name": "edge_ad_selection_attestations",
+    "size": 18082235,
+    "file_count": 2
+  },
+  {
     "name": "edge_domain_actions",
     "size": 18082235,
     "file_count": 2
@@ -211,8 +216,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 91636028,
-    "file_count": 10822
+    "size": 92096018,
+    "file_count": 10850
   },
   {
     "name": "flac",
@@ -291,7 +296,7 @@
   },
   {
     "name": "icu",
-    "size": 151469000,
+    "size": 151469007,
     "file_count": 7135
   },
   {
@@ -471,7 +476,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18321899,
+    "size": 18322411,
     "file_count": 19
   },
   {
@@ -496,7 +501,7 @@
   },
   {
     "name": "nearby",
-    "size": 279042,
+    "size": 279214,
     "file_count": 52
   },
   {
@@ -511,7 +516,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 27068,
+    "size": 26918,
     "file_count": 14
   },
   {
@@ -551,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3691278,
+    "size": 3710358,
     "file_count": 572
   },
   {
@@ -721,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6224404,
+    "size": 6229674,
     "file_count": 176
   },
   {
