@@ -1,0 +1,44 @@
+{
+    "activeDirectoryDataLake": "https://datalake.azure.net/",
+    "appInsightsResourceId": "https://api.applicationinsights.io",
+    "appInsightsTelemetryChannelResourceId": "https://dc.applicationinsights.azure.com/v2/track",
+    "attestationResourceId": "https://attest.azure.net",
+    "authentication": {
+        "audiences": [
+            "https://management.core.windows.net/",
+            "https://management.azure.com/"
+        ],
+        "identityProvider": "AAD",
+        "loginEndpoint": "https://login.microsoftonline.com",
+        "tenant": "common"
+    },
+    "batch": "https://batch.core.windows.net/",
+    "graph": "https://graph.windows.net/",
+    "graphAudience": "https://graph.windows.net/",
+    "logAnalyticsResourceId": "https://api.loganalytics.io",
+    "media": "https://rest.media.azure.net",
+    "microsoftGraphResourceId": "https://graph.microsoft.com/",
+    "name": "AzureCloud",
+    "ossrDbmsResourceId": "https://ossrdbms-aad.database.windows.net",
+    "portal": "https://portal.azure.com",
+    "resourceManager": "https://management.azure.com/",
+    "sqlManagement": "https://management.core.windows.net:8443/",
+    "suffixes": {
+        "acrLoginServer": "azurecr.io",
+        "attestationEndpoint": "attest.azure.net",
+        "azureDataLakeAnalyticsCatalogAndJob": "azuredatalakeanalytics.net",
+        "azureDataLakeStoreFileSystem": "azuredatalakestore.net",
+        "azureFrontDoorEndpointSuffix": "azurefd.net",
+        "keyVaultDns": "vault.azure.net",
+        "mariadbServerEndpoint": "mariadb.database.azure.com",
+        "mhsmDns": "managedhsm.azure.net",
+        "mysqlServerEndpoint": "mysql.database.azure.com",
+        "postgresqlServerEndpoint": "postgres.database.azure.com",
+        "sqlServerHostname": "database.windows.net",
+        "storage": "core.windows.net",
+        "storageSyncEndpointSuffix": "afs.azure.net",
+        "synapseAnalytics": "dev.azuresynapse.net"
+    },
+    "synapseAnalyticsResourceId": "https://dev.azuresynapse.net",
+    "vmImageAliasDoc": "https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/arm-compute/quickstart-templates/aliases.json"
+}
