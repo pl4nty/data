@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft SharePoint Server Subscription Edition (KB5002768)",
+    "downloadDescription": "A security vulnerability exists in Microsoft SharePoint Server Subscription Edition that could allow arbitrary code to run when a maliciously modified file is opened. This update resolves that vulnerability.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "uber-subscription-kb5002768-fullfile-x64-glb.exe",
+            "url": "https://download.microsoft.com/download/e1f1440c-1192-4096-b9c9-31970e79671c/uber-subscription-kb5002768-fullfile-x64-glb.exe",
+            "size": "1688480712",
+            "version": "1.0",
+            "datePublished": "7/20/2025 8:43:30 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "uber-subscription-kb5002768-fullfile-x64-glb.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.6 GB"
+    ],
+    "detailsSection_file_date": "7/20/2025",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<br /> To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>. <ul> <li>Click <b>Run</b> to start the installation immediately.</li> <li>Click <b>Save</b> to copy the download to your computer for installation at a later time</li> </ul> <br /> <br /> <b>IT professional resources</b><br /> IT professional working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"https://technet.microsoft.com/en-us/office/desktop/default.aspx\">Microsoft Office Desktop Applications TechCenter</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108285",
+    "downloadPreload": true
+}
