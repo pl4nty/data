@@ -1588,7 +1588,11 @@
                 "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
                 "https://outlook-1-cdn.azureedge.microsoft.scloud",
                 "https://petrol.office.microsoft.com",
-                "https://arc.msn.com"
+                "https://arc.msn.com",
+                "https://fd.api.iris.microsoft.com",
+                "https://arc-emea.msn.com",
+                "https://ris.api.iris.microsoft.com",
+                "https://eudb.ris.api.iris.microsoft.com"
             ],
             "default-src": [
                 "'none'"
