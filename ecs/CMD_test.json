@@ -33,6 +33,7 @@
         "BulkAction5KBatchSizeTest_Restore": true,
         "BulkAction5KBatchSizeTest_Troubleshoot": true,
         "BypassImageCheckInOAI": true,
+        "CASEnableGetCloudPCsByPlatformSdk": true,
         "CdaReceiveCustomerWorkitems": true,
         "CdaSkipLocationService": false,
         "CheckVmStatusBeforeHibernate": true,
