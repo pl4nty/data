@@ -19,13 +19,6 @@ namespace features {
 
 namespace edge {
 
-namespace {
-// Constants that define the name of each video enhancement mode.
-constexpr char kAIEnhancementMode[] = "AI enhancement";
-constexpr char kNonAIEnhancementMode[] = "Non-AI enhancement";
-constexpr char kGraphicsDriverEnhancementMode[] = "Graphics driver enhancement";
-}  // namespace
-
 // Please maintain alphabetical order:
 // Features with no associated build flag should go in the top section. Maintain
 // the no-build flag section alphabetized by feature name.
@@ -200,29 +193,6 @@ BASE_DECLARE_FEATURE(kMediaFoundationClearAV1Support);
 
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kMediaFoundationClearBatteryExclusiveStart);
-
-// Allow overlay swapchain to use Video Super Resolution.
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kVideoSuperResolution);
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-bool IsVideoSuperResEnabled();
-
-// FeatureParam associated with `kVideoSuperResolution`.
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<bool>
-    kVideoSuperResolutionAllowSoftwareVideoForTest;
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<bool> kVideoSuperResolutionUseTestDMLPath;
-
-enum class VideoSuperResSimulateError {
-  kNone,
-  kInferenceError,
-  kDeviceCreateFailed,
-};
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<VideoSuperResSimulateError>
-    kVideoSuperResolutionSimulateError;
 #endif  // BUILDFLAG(IS_WIN)
 
 #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC)
@@ -232,46 +202,11 @@ BASE_DECLARE_FEATURE(kVideoSuperResolutionUI);
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 bool IsVideoSuperResolutionUIEnabled();
 
-// FeatureParam associated with `kVideoSuperResolutionUI`.
-enum class VideoSuperResType {
-  kPassthroughTest,
-  kPassthroughCopy,
-  kPassthroughScaling,
-  kInference
-};
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<VideoSuperResType> kVideoSuperResolutionType;
-
-enum class VideoSuperResGpuType {
-  kLowEndGpu,
-  kHighEndGpu,
-};
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<VideoSuperResGpuType>
-    kVideoSuperResolutionGpuType;
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<bool>
-    kVideoSuperResolutionHigherResolutionOptions;
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<bool> kVideoSuperResolutionMode;
-
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 extern const base::FeatureParam<int> kVideoSuperResolutionMaxResolution;
 
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<bool> kVideoSuperResolutionCollectOrtErrorDump;
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kVideoSuperResolutionOverlayButton);
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<bool>
-    kVideoSuperResolutionResetUserPrefEnablement;
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-extern const base::FeatureParam<bool> kVideoSuperResolutionDisableOnGpuCrash;
 
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 extern const base::FeatureParam<bool> kVideoSuperResolutionAllowOnBattery;
