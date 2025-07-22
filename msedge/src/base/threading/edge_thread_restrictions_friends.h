@@ -5,6 +5,8 @@
 #ifndef BASE_THREADING_EDGE_THREAD_RESTRICTIONS_FRIENDS_H_
 #define BASE_THREADING_EDGE_THREAD_RESTRICTIONS_FRIENDS_H_
 
+#include <vector>
+
 #include "base/auto_reset.h"
 #include "base/base_export.h"
 #include "base/compiler_specific.h"

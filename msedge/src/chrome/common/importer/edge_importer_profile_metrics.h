@@ -337,7 +337,7 @@ enum class ImportedDataSharingFailureReason {
 enum class ThemesImportState {
   kThemesImportStarted = 0,
   kThemeExtensionFound = 1,
-  kThemeExtensionNotImportedDueToFeatureFlagDisabled = 2,
+  kThemeExtensionFlyoutTriggered = 2,
   kThemeExtensionNotImportedDueToOtherStoreConsent = 3,
   kThemeExtensionImportSkippedDueToRequirementsNotMet = 4,
   kThemeExtensionIsMicrosoftStoreExtension = 5,
@@ -345,7 +345,8 @@ enum class ThemesImportState {
   kThemeExtensionImported = 7,
   kThemesImportFinished = 8,
   kThemeExtensionNotEnabledDueToNoUserConsent = 9,
-  kMaxValue = kThemeExtensionNotEnabledDueToNoUserConsent
+  kThemeExtensionNotInstalledDueToNoWebContents = 10,
+  kMaxValue = kThemeExtensionNotInstalledDueToNoWebContents
 };
 
 namespace metrics {

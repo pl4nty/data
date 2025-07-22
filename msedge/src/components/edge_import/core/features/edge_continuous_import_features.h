@@ -404,6 +404,10 @@ BASE_DECLARE_FEATURE_TRIGGER(kCIOpenTabsChromeThresholdBreached);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kCIActiveUserOnFirstBrowserAdded);
 
+// Triggered fired for Themes import with datatype selection
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kEdgeContinuousThemesImportWithDatatypeSelection);
+
 }  // namespace edge_continuous_import
 }  // namespace features
 

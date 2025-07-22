@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2082575,
+    "size": 2080352,
     "file_count": 178
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14612913,
+    "size": 14612944,
     "file_count": 830
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32275070,
+    "size": 32281714,
     "file_count": 3954
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36542409,
+    "size": 36542551,
     "file_count": 95
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "gperf",
-    "size": 1225976,
-    "file_count": 84
+    "size": 2400816,
+    "file_count": 203
   },
   {
     "name": "grpc",
@@ -366,8 +366,8 @@
   },
   {
     "name": "libc++",
-    "size": 6201569,
-    "file_count": 933
+    "size": 6171235,
+    "file_count": 937
   },
   {
     "name": "libdisplay-info",
@@ -476,7 +476,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18322411,
+    "size": 18327531,
     "file_count": 19
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 26918,
+    "size": 27068,
     "file_count": 14
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3710358,
+    "size": 3710922,
     "file_count": 572
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6229674,
+    "size": 6233947,
     "file_count": 176
   },
   {
