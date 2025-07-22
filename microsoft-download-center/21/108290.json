@@ -1,0 +1,73 @@
+{
+    "error": "",
+    "downloadTitle": "Azure IoT Edge for Linux on Windows 1.5.5.07025",
+    "downloadDescription": "Enabling Azure IoT Edge Linux-based workloads on Windows",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AzureIoTEdge_LTS_1.5.5.07025_X64.msi",
+            "url": "https://download.microsoft.com/download/18612eac-77b7-4967-a7ff-d2eee575f43d/AzureIoTEdge_LTS_1.5.5.07025_X64.msi",
+            "size": "550838272",
+            "version": "1.5.5.07025",
+            "datePublished": "7/18/2025 7:22:43 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AzureIoTEdge_LTS_1.5.5.07025_ARM64.msi",
+            "url": "https://download.microsoft.com/download/18612eac-77b7-4967-a7ff-d2eee575f43d/AzureIoTEdge_LTS_1.5.5.07025_ARM64.msi",
+            "size": "518713344",
+            "version": "1.5.5.07025",
+            "datePublished": "7/18/2025 7:22:43 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure IoT Edge for Linux on Windows 1.5 LTS allows you to run containerized Linux workloads alongside Windows applications in Windows IoT deployments.  Businesses that rely on Windows IoT to power their edge devices can now take advantage of Linux-based, cloud-native analytics solutions for Azure IoT Edge without introducing dedicated Linux hardware or setting up a new management plane to manage Linux devices.  <br/><br/>\n\nAzure EFLOW provides a curated virtual machine that incorporates Microsoft's own Linux offering Azure Linux 3.0 and Azure IoT Edge 1.5 LTS runtime preinstalled and ready to deploy.  Any IoT Edge modules deployed to the device run inside the virtual machine. Meanwhile, Windows applications running on the Windows host device can communicate with the modules running in the Linux virtual machine.<br/><br/>\n\nAzure EFLOW does not require an additional control plane to manage updates for the Linux environment, rather updates are provided through standard update channels for Windows providing for easy integration into existing enterprise infrastructure used to manage the flow of security updates to your Windows devices.<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5.5.07025",
+    "detailsSection_file_name": [
+        "AzureIoTEdge_LTS_1.5.5.07025_X64.msi",
+        "AzureIoTEdge_LTS_1.5.5.07025_ARM64.msi"
+    ],
+    "detailsSection_file_size": [
+        "525.3 MB",
+        "494.7 MB"
+    ],
+    "detailsSection_file_date": "7/18/2025",
+    "systemRequirementsSection": "<b>Operating System</b><br/>\n\u2022 Windows 10 Iot Enterprise (build 17763 or later)<br/>\n\u2022 Windows 10 Enterprise (build 17763 or later)<br/>\n\u2022 Windows 10 Professional (build 17763 or later)<br/>\n\u2022 Windows 11 Iot Enterprise (build 22000 or later)<br/>\n\u2022 Windows 11 Enterprise (build 22000 or later)<br/>\n\u2022 Windows 11 Professional (build 22000 or later)<br/>\n\u2022 Windows Server (build 17763 or later)<br/>\n<i>Note: Hyper-V must be enabled to support the Azure EFLOW virtual machine.</i><br/>\n<br/>\n\n<b>Memory</b><br/>\n\u2022 4GB Minimum Physical Memory<br/>\n\u2022 1GB Minimum Free Memory<br/>\n<i>Note: Your deployment may require aditional free memory depending on the the size of the virtual machine that you choose during installation..</i><br/>\n<br/>\n\n<b>Storage</b><br/>\n\u2022 10GB Minimum Free Storage<br/>\n<i>Note: Your deployment may require additional free storage depending on the size of the virtual machine that you choose during installation.</i><br/>\n<br/>\n\n<b>Additional Requirements</b><br/>\n\u2022 Your hardware must be capable of supporting nested virtualization.<br/>\n\u2022 If you are using an Azure VM, you must use a compute unit that is capable of hyper-threading<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "See installation instructions <a href=\"https://aka.ms/AzEFLOW-Install\">here</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "install",
+            "url": "https://aka.ms/AzEFLOW-Install"
+        },
+        {
+            "title": "gitHub",
+            "url": "https://aka.ms/AzEFLOW-GitHub"
+        },
+        {
+            "title": "documentation",
+            "url": "https://aka.ms/AzEFLOW-CR"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108290",
+    "downloadPreload": true
+}
