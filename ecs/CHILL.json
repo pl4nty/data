@@ -3,6 +3,111 @@
         "key": "val",
         "test": "test"
     },
+    "ChillADF": {
+        "Floodgate_Campaign_AzureDataFactory.cab36281-fd31-4cf6-a302-72720c5651ec": {
+            "CampaignId": "cab36281-fd31-4cf6-a302-72720c5651ec",
+            "EndTimeUtc": "2026-07-14T16:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 10,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2025-07-14T16:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "AppUsageTime",
+                            "Count": 3600,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReadyToPrompt",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Amplify - Horizontal Rating",
+                            "id": "32d91b8c-af39-4021-9b66-ad45521ea51c",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very Unlikely",
+                                    "questionLabel": "How likely are you to recommend Azure Data Factory to a colleague, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective."
+                        },
+                        {
+                            "displayName": "Amplify - Verbatim",
+                            "id": "37233c74-381a-443c-a3de-2dac35c05870",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective."
+                        },
+                        {
+                            "displayName": "Amplify - Thank You",
+                            "id": "cd01c6d8-5a76-482d-abaf-388a2e78f698",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/cab36281-fd31-4cf6-a302-72720c5651ec/54fa24d6-6767-43a3-b79a-0a096e5bcb8d/Web-AzureDataFactory/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillAdminCopilot": {
         "Floodgate_Campaign_AdminPortal.16251047-5258-45a3-a826-f9d51adf0a6b": {
             "CampaignId": "16251047-5258-45a3-a826-f9d51adf0a6b",
@@ -912,7 +1017,7 @@
     "ChillVivaGlint": {
         "Floodgate_Campaign_VivaGlint.64136d79-3325-42a4-83c4-c88d2a3588e2": {
             "CampaignId": "64136d79-3325-42a4-83c4-c88d2a3588e2",
-            "EndTimeUtc": "2025-09-02T04:00:00Z",
+            "EndTimeUtc": "2025-09-20T04:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -970,7 +1075,7 @@
         },
         "Floodgate_Campaign_VivaGlint.fb84830a-f4c4-4312-a8ee-781e174a0ad7": {
             "CampaignId": "fb84830a-f4c4-4312-a8ee-781e174a0ad7",
-            "EndTimeUtc": "2025-09-02T04:00:00Z",
+            "EndTimeUtc": "2025-09-20T04:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
