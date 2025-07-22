@@ -419,17 +419,17 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
   if l_4_0:find("https?://+", 1, true) then
     l_4_4.URL_CLEAN = "LOCALHOST"
     l_4_4.Url_Score = 0
-    return 0, l_4_4
+    return -100, l_4_4
   end
   if l_4_0:find("localhost", 1, true) or l_4_0:find("127.0.0.1", 1, true) or l_4_0:find("0.0.0.0", 1, true) or l_4_0:find("https?://%[fd00[%x:]*%]", 1, false) then
     l_4_4.URL_CLEAN = "LOCALHOST"
     l_4_4.Url_Score = 0
-    return 0, l_4_4
+    return -100, l_4_4
   end
   if StringStartsWith(l_4_0, "%2fLM%2fW3SVC%2f") then
     l_4_4.URL_CLEAN = "InternalIIS"
     l_4_4.Url_Score = 0
-    return 0, l_4_4
+    return -100, l_4_4
   end
   local l_4_6 = function(l_5_0, l_5_1, l_5_2, l_5_3)
     -- function num : 0_3_0
@@ -466,7 +466,7 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
       else
         l_4_4.URL_CLEAN = "Private/InvalidIP"
         l_4_4.Url_Score = 0
-        return 0, l_4_4
+        return -100, l_4_4
       end
     else
       do
@@ -482,7 +482,7 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
             else
               l_4_4.URL_CLEAN = "Private/InvalidIP"
               l_4_4.Url_Score = 0
-              return 0, l_4_4
+              return -100, l_4_4
             end
           else
             do
@@ -492,7 +492,7 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
                 if l_4_17 == 1 and l_4_18 == 1 then
                   l_4_4.URL_CLEAN = "CheckURL"
                   l_4_4.Url_Score = 0
-                  return 0, l_4_4
+                  return -100, l_4_4
                 end
                 local l_4_19 = nil
                 if l_4_4.IP then
@@ -526,7 +526,7 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
                     -- DECOMPILER ERROR at PC266: Overwrote pending register: R22 in 'AssignReg'
 
                     if (l_4_21 ~= true or l_4_22 ~= false or l_4_21 == false) and l_4_22 == false then
-                      return 0, "cdn.immy.bot"
+                      return -100, "cdn.immy.bot"
                     end
                     -- DECOMPILER ERROR at PC270: Overwrote pending register: R23 in 'AssignReg'
 
@@ -534,7 +534,7 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
                     if l_4_24 then
                       l_4_4.URL_CLEAN = "Global_Url_Cache"
                       l_4_4.Url_Score = 0
-                      return 0, l_4_4
+                      return -100, l_4_4
                     end
                     local l_4_25 = {}
                     l_4_25.SIG_CONTEXT = "Appomaly" .. l_4_1 or ""
@@ -594,7 +594,7 @@ UrlGrader = function(l_4_0, l_4_1, l_4_2)
                                       l_4_32("Global_CLEAN_Url_Cache", l_4_19, 1, 1209600, 1000)
                                       l_4_4.URL_CLEAN = "UrlRepLookup"
                                       l_4_4.Url_Score = 0
-                                      l_4_32 = 0
+                                      l_4_32 = -100
                                       return l_4_32, l_4_4
                                     end
                                   end
@@ -2660,13 +2660,13 @@ IsPotentiallyClean = function(l_42_0, l_42_1, l_42_2)
             do
               if l_42_0 == "CmdLine_Basic" then
                 local l_42_30 = {}
-                -- DECOMPILER ERROR at PC174: No list found for R3 , SetList fails
+                -- DECOMPILER ERROR at PC176: No list found for R3 , SetList fails
 
-                -- DECOMPILER ERROR at PC175: Overwrote pending register: R4 in 'AssignReg'
+                -- DECOMPILER ERROR at PC177: Overwrote pending register: R4 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC176: Overwrote pending register: R5 in 'AssignReg'
+                -- DECOMPILER ERROR at PC178: Overwrote pending register: R5 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC177: Overwrote pending register: R6 in 'AssignReg'
+                -- DECOMPILER ERROR at PC179: Overwrote pending register: R6 in 'AssignReg'
 
                 if ("$mypsboundparameters%.containskey%(cimsession%)")("get%-wmiobject.*root\\microsoft\\windows\\defender.*$%($mpcomputerstatus%.realtimeprotectionenabled%)", "add%-type.*%-assemblyname.*system%.serviceprocess%.servicecontroller%(windefend%)", false) then
                   return true
@@ -2678,7 +2678,9 @@ IsPotentiallyClean = function(l_42_0, l_42_1, l_42_2)
               end
               local l_42_31 = 210
               local l_42_32 = l_42_1 .. "_" .. l_42_2
-              local l_42_33 = (crypto.CRC32Buffer)(-1, (string.lower)(l_42_32), 0, (string.len)(l_42_32))
+              -- DECOMPILER ERROR at PC210: Overwrote pending register: R8 in 'AssignReg'
+
+              local l_42_33 = (crypto.CRC32Buffer)(-1, (string.lower)("remove-ciminstance"), 0, (string.len)(l_42_32))
               if (MpCommon.NidSearch)(l_42_31, l_42_33) and l_42_31 == "#Appomaly_" .. l_42_0 .. "_" .. l_42_1 then
                 return true
               end

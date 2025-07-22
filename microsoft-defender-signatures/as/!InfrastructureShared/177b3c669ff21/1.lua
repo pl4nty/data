@@ -30,6 +30,10 @@ l_0_8 = bm
 l_0_8 = l_0_8.RelatedStringBMReport
 l_0_5(l_0_6, l_0_7, l_0_8)
 l_0_5 = bm
+l_0_5 = l_0_5.add_threat_file
+l_0_6 = l_0_2
+l_0_5(l_0_6)
+l_0_5 = bm
 l_0_5 = l_0_5.get_current_process_startup_info
 l_0_5 = l_0_5()
 if l_0_5 then
