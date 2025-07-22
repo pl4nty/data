@@ -75,6 +75,9 @@ end
 if (string.find)(next(l_0_8.Parents), "\\WindowsApps\\", 1, true) then
   return mp.CLEAN
 end
+if IsPotentiallyClean("CmdLine_Basic", "", (table.concat)(l_0_11.CommandlineTokens, "|")) then
+  return mp.CLEAN
+end
 if l_0_10 then
   l_0_7 = l_0_7 + l_0_10
 end

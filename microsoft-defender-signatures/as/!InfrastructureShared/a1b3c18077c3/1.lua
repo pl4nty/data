@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\9db3549f627d\1.luac 
+-- Command line: lua\!InfrastructureShared\a1b3c18077c3\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -27,7 +27,7 @@ if not (string.match)((this_sigattrlog[1]).utf8p2, ";To:(.+)") then
     l_0_7 = l_0_7({Shell = l_0_1, P2 = (this_sigattrlog[1]).utf8p2, Friendly = l_0_4})
     l_0_5(l_0_6, l_0_7, bm.RelatedStringBMReport)
     l_0_5 = bm
-    l_0_5 = l_0_5.add_related_file
+    l_0_5 = l_0_5.add_threat_file
     l_0_6 = l_0_1
     l_0_5(l_0_6)
     l_0_5 = bm
