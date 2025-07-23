@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32281714,
+    "size": 32282393,
     "file_count": 3954
   },
   {
@@ -366,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6171235,
+    "size": 6161524,
     "file_count": 937
   },
   {
@@ -556,8 +556,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3710922,
-    "file_count": 572
+    "size": 3711374,
+    "file_count": 573
   },
   {
     "name": "perl",
@@ -616,8 +616,8 @@
   },
   {
     "name": "rust",
-    "size": 249639,
-    "file_count": 12
+    "size": 1133474,
+    "file_count": 138
   },
   {
     "name": "screen-ai",
@@ -641,7 +641,7 @@
   },
   {
     "name": "skia",
-    "size": 3461375,
+    "size": 3457935,
     "file_count": 1178
   },
   {
@@ -686,8 +686,8 @@
   },
   {
     "name": "tflite",
-    "size": 1643147,
-    "file_count": 484
+    "size": 1647987,
+    "file_count": 487
   },
   {
     "name": "tflite_support",
