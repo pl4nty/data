@@ -729,66 +729,6 @@
             }
         }
     },
-    "ChillMSInvest": {
-        "Floodgate_Campaign_MicrosoftAdvertising.ae9524af-e422-45e2-bb31-ff706e642214": {
-            "CampaignId": "ae9524af-e422-45e2-bb31-ff706e642214",
-            "EndTimeUtc": "2025-08-31T07:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 86400,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 1,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2024-11-05T08:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "GDALITroubleshooting",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "Content": {
-                    "Prompt": {
-                        "NoLabel": "Not Now",
-                        "Question": "We have two questions for you.",
-                        "Title": "We'd love your feedback.",
-                        "YesLabel": "Yes"
-                    },
-                    "Question": {
-                        "Question": "Please tell us how we can improve your experience."
-                    },
-                    "Rating": {
-                        "IsZeroBased": false,
-                        "Question": "How would you rate the Troubleshooting experience?",
-                        "RatingValuesAscending": [
-                            "1 - Very Dissatisfied",
-                            "2 - Moderately Dissatisfied",
-                            "3 - Neutral",
-                            "4 - Moderately Satisfied",
-                            "5 - Very Satisfied"
-                        ]
-                    }
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2
-            }
-        }
-    },
     "ChillMicrosoftDefenderXdr": {
         "Floodgate_Campaign_MicrosoftDefenderXDR.3beda878-1073-422b-b5e8-81f6347bcf2e": {
             "CampaignId": "3beda878-1073-422b-b5e8-81f6347bcf2e",

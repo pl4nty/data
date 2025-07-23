@@ -1,5 +1,19 @@
 [
     {
+        "displayName": "AI Foundry Python SDK",
+        "displayPublisher": "Microsoft",
+        "displaySummary": "The AI Foundry Python SDK.",
+        "icon": "data:image/png;base64,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",
+        "keywords": [],
+        "name": "AzureAIFoundryPythonSDK",
+        "publisher": "Microsoft",
+        "publisherType": "Microsoft",
+        "version": "1.0.0b12",
+        "versions": [
+            "1.0.0b12"
+        ]
+    },
+    {
         "displayName": "Az PowerShell",
         "displayPublisher": "Microsoft",
         "displaySummary": "The Az PowerShell module is a set of cmdlets for managing Azure resources directly from PowerShell.",

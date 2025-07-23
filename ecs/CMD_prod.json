@@ -883,6 +883,7 @@
         "DiscardExcludePolicyDuringEnrollment": true,
         "DriverUpdatePreaggregateThreshold": true,
         "EnableAccessControlRolesFetch": true,
+        "EnableAccessControlVisibility": true,
         "EnableAdminToDynamicMove": true,
         "EnableAutopatchDeviceReadiness": true,
         "EnableBidirectionalSync": true,
