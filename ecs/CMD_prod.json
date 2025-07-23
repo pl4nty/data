@@ -14,6 +14,7 @@
         "BlockGccCommercialTenant": true,
         "BlockRunTimeAfterEndTime": true,
         "Branding_And_Licensing": true,
+        "CASEnableGetCloudPCsByPlatformSdk": false,
         "CleanUpRDAgentTempFolder": true,
         "ClientAgent_CPC_Cogs_EnableHEVCHardwareEncoding": true,
         "ClientAgent_CPC_Cogs_EnableSystemUsageCollection": true,
