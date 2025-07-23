@@ -22,6 +22,7 @@
         "Branding_And_Licensing": true,
         "BuildDummyUpnWithDomainName": true,
         "BypassImageCheckInOAI": true,
+        "CASEnableGetCloudPCsByPlatformSdk": false,
         "CleanEntitiesOfDeletedResources": true,
         "CleanUpRDAgentTempFolder": true,
         "ClientAgent_CPC_CloudPcHosting_EnableWindowsUpdatesAPI": true,
