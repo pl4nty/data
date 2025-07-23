@@ -2514,7 +2514,7 @@ isEnabledApp = function(l_38_0)
   -- DECOMPILER ERROR at PC3: Overwrote pending register: R2 in 'AssignReg'
 
   if ("Citrix")(l_38_0, l_38_1) then
-    if (MpCommon.IsSampled)(30000, true, true, true) then
+    if (MpCommon.IsSampled)(60000, true, true, true) then
       return true
     else
       return false
