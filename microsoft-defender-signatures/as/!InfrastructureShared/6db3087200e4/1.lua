@@ -7,7 +7,7 @@
 
 if (this_sigattrlog[1]).matched and not isnull((this_sigattrlog[1]).utf8p1) and not isnull((this_sigattrlog[1]).utf8p2) then
   local l_0_0 = nil
-  local l_0_1, l_0_2 = pcall(string.match, l_0_0, "remoteip:(.+):%d+")
+  local l_0_1, l_0_2 = pcall(string.match, l_0_0, "remoteip:([^:]+):%d+")
   if l_0_1 and not isnull(l_0_2) then
     (bm.add_related_string)("[i] MALICIOUS URL: ", l_0_2, bm.RelatedStringBMReport)
     ;
