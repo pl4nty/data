@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Group Policy Settings Reference Spreadsheet for Windows Server 2025 (MAY 25 release)",
+    "downloadDescription": "This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with Windows Windows Server 2025 (MAY 25 release). You can configure these policy settings when you edit Group Policy Objects.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WindowsServer2025PolicySettings-24H2-V2.xlsx",
+            "url": "https://download.microsoft.com/download/a79e6e71-05ed-4107-bbd2-b2a6e38dff6b/WindowsServer2025PolicySettings-24H2-V2.xlsx",
+            "size": "797703",
+            "version": "2.0",
+            "datePublished": "7/24/2025 8:42:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use the filtering capabilities that are included in this spreadsheet to view a specific subset of data, based on one value or a combination of values that are available in one or more of the columns. In addition, you can click Custom in the drop-down list of any of the column headings to add additional filtering criteria within that column.\n<br/>To view a specific subset of data, click the drop-down arrow in the column heading of cells that contain the value or combination of values on which you want to filter, and then click the desired value in the drop-down list.\n<br/>\n<ul>\n<li>en-US English - United States</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "WindowsServer2025PolicySettings-24H2-V2.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "779.0 KB"
+    ],
+    "detailsSection_file_date": "7/24/2025",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li>Microsoft Excel or Excel Viewer</li>\n</ul>\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "To download the reference spreadsheet: <br/>\n<ol><br/>\nClick the <b>Download</b> button.<br/>\n<br/></ol>\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "group Policy Settings Reference Spreadsheet for Windows Server 2025 (Nov 24 release)",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=106296#:~:text=Get%20Bing%20Wallpaper-,Group%20Policy%20Settings%20Reference%20Spreadsheet%20for%20Windows%20Server%202025%20(Nov,2025%20(Nov%2024%20release)."
+        },
+        {
+            "title": "administrative Templates (admx) for Windows Server 2025 (MAY 25 release)",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=108295"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108296",
+    "downloadPreload": true
+}
