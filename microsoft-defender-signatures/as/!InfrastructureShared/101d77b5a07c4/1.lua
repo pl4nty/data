@@ -50,134 +50,170 @@ if (mp.get_mpattribute)("MpCmdLineFoundB64") then
 else
   l_0_1.MpCmdLineFoundB64 = false
 end
-if l_0_12.Score <= 15 and not next((l_0_12.Evidence_L1).Urls) and not hasTamperingCmd(l_0_9) then
-  return mp.CLEAN
-end
-if l_0_12.Score > 30 then
-  if l_0_12.CommandlineTokens then
-    local l_0_14 = (MpCommon.GetImagePathFromPid)(l_0_0)
+if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Evidence_L1).Obfuscated_FailedToDecode) then
+  local l_0_14, l_0_15 = safeJsonSerialize(l_0_12, 150, nil, true)
+  do
+    local l_0_16, l_0_17 = (l_0_12.Evidence_L1).MultilayerEncoding and "Appomaly_MultilayerEncoded_Tracked" or "Appomaly_Encoded_Obfuscated_Tracked"
+    local l_0_18 = nil
+    local l_0_19 = MpCommon.BmTriggerSig
+    local l_0_20 = l_0_2.ppid
     do
-      local l_0_15, l_0_16 = l_0_14:match("([^\\]+)$") or ""
-      local l_0_17 = nil
-      local l_0_18 = {ParentName = l_0_6, ProcessName = l_0_17, Source = "CMD", SignatureName = "PFApps.C", CommandlineScore = l_0_12.Score, CommandlineScoreIndicator = l_0_1.Base64GradingInfo, AnomalyTableName = "Appomaly_ChildProcName_CmdLine_Base64", TableAge = GetAnomalyTableAge("Appomaly_ChildProcName_CmdLine_Base64"), AttributeName = "PFApp_Parent", AttributeCategory = "PFServers"}
-      local l_0_19, l_0_20, l_0_21 = , AnomalyTableCheck("Appomaly_ChildProcName_CmdLine", l_0_6 .. ";" .. l_0_17 .. ";" .. (table.concat)(l_0_12.CommandlineTokens, "|"), 30)
-      if l_0_20 == false and l_0_21 == false then
+      l_0_19(l_0_20, l_0_18, l_0_14 or l_0_15)
+      if l_0_12.Score <= 15 and not next((l_0_12.Evidence_L1).Urls) and not hasTamperingCmd(l_0_9) then
         return mp.CLEAN
-      else
-        if l_0_20 and not l_0_21 then
-          local l_0_22, l_0_23, l_0_24 = , IsPotentiallyClean("CmdLine", l_0_6 .. ";" .. l_0_17, l_0_12.CommandlineTokens)
-          if l_0_23 then
-            l_0_1.IsPotentiallyClean = l_0_24
-          end
-          ;
-          (MpCommon.BmTriggerSig)(l_0_2.ppid, "AnomalousChildCommandline", safeJsonSerialize(l_0_18))
-        end
       end
-      do
-        local l_0_25, l_0_26 = startTrackingApp(l_0_7, l_0_6, "PFServers", "PFApp_Parent")
-        if not l_0_25 then
-          l_0_26.SignatureName = "PFApps.C"
-          ;
-          (MpCommon.BmTriggerSig)(l_0_7, "ProcAttribError", safeJsonSerialize(l_0_26))
-        else
-          local l_0_27 = "Base64Cmd_child[" .. l_0_0:match("pid:(%d+)") .. "][cmd/PFApps.C]"
-          local l_0_28 = {}
-          l_0_28.ProcessName = (MpCommon.GetImagePathFromPid)(l_0_0)
-          l_0_28.IsProcessFriendly = (MpCommon.IsFriendlyProcess)(l_0_0)
-          l_0_28.Pid = l_0_0
-          l_0_28.Base64GradingInfo = l_0_1.Base64GradingInfo
-          l_0_28.IndicatorScore = l_0_12.Score
-          l_0_28.Parents = l_0_8
-          IncreaseProcessAnomalyScore(l_0_2.ppid, l_0_12.Score, l_0_27, "PFApp_Parent", l_0_28)
-          if next(l_0_26) and l_0_26.IsNewApp then
-            l_0_26.SignatureName = "PFApps.C"
-            l_0_26.Score = l_0_12.Score
-            ;
-            (MpCommon.BmTriggerSig)(l_0_7, "SetProcessAttrib", safeJsonSerialize(l_0_26))
-          end
-        end
-        do
-          l_0_1.Concrete = false
-          l_0_1.Remediation_Reason = ""
-          local l_0_29 = l_0_1.Base64GradingInfo
-          for l_0_33 = 1, 3 do
-            if l_0_29 and l_0_29["Evidence_L" .. l_0_33] then
-              local l_0_34 = (l_0_29["Evidence_L" .. l_0_33]).Urls
-              for l_0_38,l_0_39 in pairs(l_0_34) do
-                if l_0_39.BadUrlRep then
-                  l_0_1.Remediation_Reason = "BadUrlRep"
-                  l_0_1.Concrete = true
-                  break
+      if l_0_12.Score > 30 then
+        if l_0_12.CommandlineTokens then
+          local l_0_22 = nil
+          do
+            local l_0_23, l_0_24 = , ((MpCommon.GetImagePathFromPid)(l_0_0)):match("([^\\]+)$") or ""
+            local l_0_25 = nil
+            -- DECOMPILER ERROR at PC183: Confused about usage of register: R15 in 'UnsetPending'
+
+            -- DECOMPILER ERROR at PC199: Confused about usage of register: R15 in 'UnsetPending'
+
+            local l_0_26 = nil
+            local l_0_27, l_0_28, l_0_29 = {ParentName = l_0_6, ProcessName = l_0_24, Source = "CMD", SignatureName = "PFApps.C", CommandlineScore = l_0_12.Score, CommandlineScoreIndicator = l_0_1.Base64GradingInfo, AnomalyTableName = "Appomaly_ChildProcName_CmdLine_Base64", TableAge = GetAnomalyTableAge("Appomaly_ChildProcName_CmdLine_Base64"), AttributeName = "PFApp_Parent", AttributeCategory = "PFServers"}, AnomalyTableCheck("Appomaly_ChildProcName_CmdLine", l_0_6 .. ";" .. l_0_24 .. ";" .. (table.concat)(l_0_12.CommandlineTokens, "|"), 30)
+            if l_0_29 == false and "Appomaly_ChildProcName_CmdLine" == false then
+              return mp.CLEAN
+            else
+              if l_0_29 and not "Appomaly_ChildProcName_CmdLine" then
+                local l_0_30, l_0_31, l_0_32 = , IsPotentiallyClean("CmdLine", l_0_6 .. ";" .. l_0_26, l_0_12.CommandlineTokens)
+                if l_0_32 then
+                  l_0_1.IsPotentiallyClean = "CmdLine"
+                end
+                ;
+                (MpCommon.BmTriggerSig)(l_0_2.ppid, "AnomalousChildCommandline", safeJsonSerialize(l_0_27))
+              end
+            end
+            do
+              local l_0_33, l_0_34 = , startTrackingApp(l_0_7, l_0_6, "PFServers", "PFApp_Parent")
+              if not l_0_34 then
+                l_0_7.SignatureName = "PFApps.C"
+                ;
+                (MpCommon.BmTriggerSig)(l_0_7, "ProcAttribError", safeJsonSerialize(R20_PC258))
+              else
+                local l_0_35 = nil
+                local l_0_36 = "Base64Cmd_child[" .. l_0_0:match("pid:(%d+)") .. "][cmd/PFApps.C]"
+                IncreaseProcessAnomalyScore(l_0_2.ppid, l_0_12.Score, l_0_36, "PFApp_Parent", {ProcessName = (MpCommon.GetImagePathFromPid)(l_0_0), IsProcessFriendly = (MpCommon.IsFriendlyProcess)(l_0_0), Pid = l_0_0, Base64GradingInfo = l_0_1.Base64GradingInfo, IndicatorScore = l_0_12.Score, Parents = l_0_8})
+                if next(l_0_35) and l_0_35.IsNewApp then
+                  l_0_35.SignatureName = "PFApps.C"
+                  l_0_35.Score = l_0_12.Score
+                  ;
+                  (MpCommon.BmTriggerSig)(l_0_7, "SetProcessAttrib", safeJsonSerialize(l_0_35))
                 end
               end
               do
-                do
-                  if (l_0_29["Evidence_L" .. l_0_33]).MultilayerEncoding then
-                    (mp.set_mpattribute)("HSTR:PFApps_MultilayerEncoded_A")
-                    l_0_1.Concrete = true
+                l_0_1.Concrete = false
+                l_0_1.Remediation_Reason = ""
+                local l_0_37 = nil
+                for l_0_41 = 1, 3 do
+                  local l_0_38 = l_0_1.Base64GradingInfo
+                  -- DECOMPILER ERROR at PC320: Confused about usage of register: R18 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC326: Confused about usage of register: R18 in 'UnsetPending'
+
+                  if l_0_38 and l_0_38["Evidence_L" .. MpCommon.BmTriggerSig] then
+                    for l_0_46,l_0_47 in pairs((l_0_38["Evidence_L" .. MpCommon.BmTriggerSig]).Urls) do
+                      local l_0_43 = nil
+                      -- DECOMPILER ERROR at PC334: Confused about usage of register: R24 in 'UnsetPending'
+
+                      if (MpCommon.BmTriggerSig).BadUrlRep then
+                        l_0_1.Remediation_Reason = "BadUrlRep"
+                        l_0_1.Concrete = true
+                        break
+                      end
+                    end
+                    do
+                      do
+                        if (l_0_38["Evidence_L" .. l_0_42]).MultilayerEncoding then
+                          (mp.set_mpattribute)("HSTR:PFApps_MultilayerEncoded_A")
+                          l_0_1.Concrete = true
+                        end
+                        -- DECOMPILER ERROR at PC354: LeaveBlock: unexpected jumping out DO_STMT
+
+                        -- DECOMPILER ERROR at PC354: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC354: LeaveBlock: unexpected jumping out IF_STMT
+
+                      end
+                    end
                   end
-                  -- DECOMPILER ERROR at PC321: LeaveBlock: unexpected jumping out DO_STMT
+                end
+                if not next((l_0_12.Evidence_L1).Urls) then
+                  return mp.CLEAN
+                end
+                if l_0_12.Score > 45 then
+                  l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "HighScore"
+                end
+                -- DECOMPILER ERROR at PC372: Confused about usage of register: R14 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC321: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC374: Confused about usage of register: R14 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC321: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC377: Confused about usage of register: R14 in 'UnsetPending'
 
+                do
+                  if l_0_38 and l_0_38.Evidence_L1 then
+                    local l_0_48 = nil
+                    if (l_0_38.Evidence_L1).MultilayerEncoding then
+                      l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "MultilayerEncoding"
+                    end
+                  end
+                  local l_0_49 = nil
+                  if (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern_") and #(mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern_") > 0 then
+                    (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded3")
+                    l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspPattern"
+                  end
+                  -- DECOMPILER ERROR at PC411: Confused about usage of register: R15 in 'UnsetPending'
+
+                  if (mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found") and #(mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found") > 0 then
+                    (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
+                    l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspUrl"
+                  end
+                  -- DECOMPILER ERROR at PC430: Confused about usage of register: R15 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC434: Confused about usage of register: R15 in 'UnsetPending'
+
+                  if (mp.enum_mpattributesubstring)("Appomaly_") and #(mp.enum_mpattributesubstring)("Appomaly_") > 0 then
+                    l_0_1.Attributes = table_dedup((mp.enum_mpattributesubstring)("Appomaly_"))
+                  end
+                  local l_0_50 = nil
+                  local l_0_51 = {}
+                  for l_0_55,l_0_56 in ipairs(l_0_1.Parents) do
+                    local l_0_52 = 0
+                    local l_0_58, l_0_59 = IsFileRecentlyDropped(l_0_46.ImagePath)
+                    if l_0_58 then
+                      (table.insert)(l_0_51, R28_PC452)
+                      l_0_52 = l_0_52 + l_0_59
+                    end
+                  end
+                  l_0_1.RecentlyDroppedParents = l_0_51
+                  -- DECOMPILER ERROR at PC457: Confused about usage of register: R17 in 'UnsetPending'
+
+                  l_0_1.ParentScore = l_0_52
+                  do
+                    local l_0_60, l_0_61 = , safeJsonSerialize(l_0_1, 150, nil, true)
+                    if l_0_61 then
+                      set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_61), false)
+                      ;
+                      (MpCommon.BmTriggerSig)(l_0_2.ppid, "SuspDownload2_BM_Capture", l_0_61)
+                    else
+                      if l_0_1 then
+                        set_research_data("Error", (MpCommon.Base64Encode)(R23_PC488), R23_PC488)
+                        return mp.INFECTED
+                      else
+                        -- DECOMPILER ERROR at PC498: Overwrote pending register: R23 in 'AssignReg'
+
+                        set_research_data("Error", "Failed Serialization w/o error", R23_PC488)
+                      end
+                    end
+                    do return mp.CLEAN end
+                    -- DECOMPILER ERROR at PC503: freeLocal<0 in 'ReleaseLocals'
+
+                  end
                 end
               end
             end
-          end
-          if not next((l_0_12.Evidence_L1).Urls) then
-            return mp.CLEAN
-          end
-          if l_0_12.Score > 45 then
-            l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "HighScore"
-          end
-          do
-            if l_0_29 and l_0_29.Evidence_L1 then
-              local l_0_40 = l_0_29.Evidence_L1
-              if l_0_40.MultilayerEncoding then
-                l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "MultilayerEncoding"
-              end
-            end
-            local l_0_41 = (mp.enum_mpattributesubstring)("Appomaly_HighlySuspCmd_Pattern_")
-            if l_0_41 and #l_0_41 > 0 then
-              (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded3")
-              l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspPattern"
-            end
-            l_0_41 = (mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found")
-            if l_0_41 and #l_0_41 > 0 then
-              (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
-              l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspUrl"
-            end
-            l_0_41 = (mp.enum_mpattributesubstring)("Appomaly_")
-            if l_0_41 and #l_0_41 > 0 then
-              l_0_1.Attributes = table_dedup(l_0_41)
-            end
-            local l_0_42 = {}
-            local l_0_43 = 0
-            for l_0_47,l_0_48 in ipairs(l_0_1.Parents) do
-              local l_0_49, l_0_50, l_0_51 = IsFileRecentlyDropped(l_0_48.ImagePath)
-              if l_0_49 then
-                (table.insert)(l_0_42, l_0_51)
-                l_0_43 = l_0_43 + l_0_50
-              end
-            end
-            l_0_1.RecentlyDroppedParents = l_0_42
-            l_0_1.ParentScore = l_0_43
-            local l_0_52, l_0_53 = safeJsonSerialize(l_0_1, 150, nil, true)
-            if l_0_52 then
-              set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_52), false)
-              ;
-              (MpCommon.BmTriggerSig)(l_0_2.ppid, "SuspDownload2_BM_Capture", l_0_52)
-            else
-              if l_0_53 then
-                set_research_data("Error", (MpCommon.Base64Encode)(l_0_53), false)
-                return mp.INFECTED
-              else
-                set_research_data("Error", "Failed Serialization w/o error", false)
-              end
-            end
-            return mp.CLEAN
           end
         end
       end
