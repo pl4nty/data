@@ -1,4 +1,5 @@
 {
+    "Client_BackgroundQosBps": "512000",
     "Client_CDNConnSpeedBps": "174762",
     "Client_CachedSvcCallAttemptCount": "5",
     "Client_ClusterCount": "0",
@@ -49,6 +50,6 @@
     "ParticipationRate": "1",
     "PublicParticipationRate": "1",
     "UploadLimitGBMonth": "20",
-    "Version": "C6FEEF0B1843316F0B7947EA53787F873BBDC9FFC457B3B4CD50669CEEEFFC87",
+    "Version": "EA6B01090D55E99BA818A9886EEB055BC3E71F7B08A57C4A767FB2D40DDFFA2F",
     "eid": "5"
 }

@@ -10,9 +10,9 @@
         "enableFlightsUrlOverrides": false
     },
     "AgentsInTaskbar": {
-        "AgentsInTaskbarDFVersion": "1.20250717.5.0",
-        "AgentsInTaskbarMsitVersion": "1.20250717.5.0",
-        "AgentsInTaskbarProdVersion": "1.20250717.5.0",
+        "AgentsInTaskbarDFVersion": "1.20250723.7.0",
+        "AgentsInTaskbarMsitVersion": "1.20250723.7.0",
+        "AgentsInTaskbarProdVersion": "1.20250723.7.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
