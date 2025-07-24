@@ -1312,8 +1312,9 @@
     <o:service o:name="LoopHubbleCDN">
       <o:url>https://cdn.hubblecontent.osi.office.net/</o:url>
     </o:service>
-    <o:service o:name="LoopWebServiceBaseURL">
+    <o:service o:name="LoopWebServiceBaseURL" o:authentication="2">
       <o:url>https://prod.api.loop.cloud.microsoft/</o:url>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.loop.cloud.microsoft" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="MeControlLiveIDUrl">
       <o:url>https://account.microsoft.com/?ref=ocpp</o:url>
@@ -1700,6 +1701,12 @@
     <o:service o:name="UrlUniversalPrintDiscovery" o:authentication="2">
       <o:url>https://discovery.print.microsoft.com/api/mod1.0/devices?limit=65535</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://print.print.microsoft.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
+    <o:service o:name="OCMSubstrateHost">
+      <o:url>https://substrate.office.com</o:url>
+    </o:service>
+    <o:service o:name="OCMReputationTokenHost">
+      <o:url>https://dataservice.o365filtering.com</o:url>
     </o:service>
     <o:service o:name="TemplatesWebsiteExploreAmazingTemplatesForWord">
       <o:url>https://templates.office.com/templates-for-word?ocid=oo_toc_client_app_MARVEL_UPS_templates_gopremiumLandingPage</o:url>
@@ -2430,7 +2437,7 @@
     <o:token o:name="BingSpeechSupportedCommandingLanguages">en-US;en-CA;en-GB;en-AU;en-IN;en-NZ</o:token>
     <o:token o:name="BingSpeechSupportedProfanityFilterLanguages">en-US;es-ES;zh-CN;en-CA;es-MX;en-GB;fr-FR;de-DE;it-IT;en-AU;en-IN;fr-CA;pt-BR;ja-JP;nb-NO;da-DK;sv-SE;fi-FI;nl-NL;tr-TR;ar-BH;he-IL;cs-Cz;hu-HU;el-GR;sk-SK;vi-VN;hr-HR;ro-RO;lt-LT;lv-LV;et-EE;ar-EG;ar-SA;zh-HK;en-NZ;ga-IE;mt-MT;gu-IN;mr-IN;ta-IN;te-IN;sl-SI;bg-BG</o:token>
     <o:token o:name="SharePointGraphAPIUrlSuffix">/_api/v2.0</o:token>
-    <o:token o:name="PowerQueryADALResourceId">https://analysis.windows.net/powerbi/api</o:token>
+    <o:token o:name="PowerQueryAADPowerBIResourceId">https://analysis.windows.net/powerbi/api</o:token>
     <o:token o:name="PowerQueryDataCatalogSearchEnabled">true</o:token>
     <o:token o:name="PowerQueryDatahubEndpointURL">https://app.powerbi.com</o:token>
     <o:token o:name="PowerQueryEnvironmentSettings">{"AADUri":"https://login.microsoftonline.com","ARMUri":"https://management.azure.com","ARMAadResource":"https://management.core.windows.net/","ASUriSuffix":"core.windows.net","ASAadResource":"https://storage.azure.com/","GraphUri":"https://graph.microsoft.com","PBIUri":"https://api.powerbi.com","PBIAadResource":"https://analysis.windows.net/powerbi/api","Cloud":"global"}</o:token>
@@ -2522,6 +2529,9 @@
     <o:token o:name="LinksOpenRightTuiImageHC200Url">https://statics.teams.cdn.office.net/evergreen-assets/illustrations/win32/m365-device-desktop-hc-200.png</o:token>
     <o:token o:name="IsRestrictedEnvironment">false</o:token>
     <o:token o:name="OutlookTeamsStoreBaseUrl">https://teams.microsoft.com</o:token>
+    <o:token o:name="OCMPolicyFallbackEnabled">true</o:token>
+    <o:token o:name="OCMAddonFeatureEnabled">true</o:token>
+    <o:token o:name="FluidAudience">Production</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
