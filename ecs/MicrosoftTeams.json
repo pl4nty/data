@@ -1832,6 +1832,7 @@
             "EnableCallSessionEndNotificationV2": false,
             "EnableConstraintToken": true,
             "EnableDynamicSuggestedPrompts": true,
+            "EnableEarlyResponsesForInvokeBot": true,
             "EnableFetchCallConversationData": true,
             "EnableLocalizedAskFacilitator": true,
             "EnableLocalizedSuggestions": true,
