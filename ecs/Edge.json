@@ -1942,10 +1942,6 @@
                     "domain": "smartping.live"
                 },
                 {
-                    "applied_policy": "ChromeUA",
-                    "domain": "docs.google.com"
-                },
-                {
                     "applied_policy": "DoNotOverride",
                     "domain": "passwords.google.com"
                 },
