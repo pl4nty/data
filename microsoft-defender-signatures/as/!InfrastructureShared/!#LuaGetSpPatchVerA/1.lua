@@ -73,6 +73,8 @@ if l_0_1 == nil then
           else
             do
               do
+                ;
+                (mp.set_mpattribute)("Lua:spPatchQueryError")
                 do return mp.CLEAN end
                 if (string.find)(l_0_22, "{90160000-1012-0000-1000-0000000FF1CE}_Office16.OSERVER_{", 1, true) then
                   l_0_14 = (sysio.RegOpenKey)(l_0_11 .. "\\" .. l_0_22)
@@ -86,6 +88,8 @@ if l_0_1 == nil then
                     l_0_15 = true
                     break
                   else
+                    ;
+                    (mp.set_mpattribute)("Lua:spPatchQueryError")
                     return mp.CLEAN
                   end
                 else
@@ -101,19 +105,21 @@ if l_0_1 == nil then
                       l_0_16 = true
                       break
                     else
+                      ;
+                      (mp.set_mpattribute)("Lua:spPatchQueryError")
                       return mp.CLEAN
                     end
                   end
                 end
-                -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
