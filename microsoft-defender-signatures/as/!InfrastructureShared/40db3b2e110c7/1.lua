@@ -91,61 +91,47 @@ do
               (bm.trigger_sig)("SetProcessAttrib", safeJsonSerialize(R12_PC214))
             end
           end
-          local l_0_20, l_0_21 = , nil
-          local l_0_22 = nil
+          local l_0_20 = nil
+          local l_0_21 = nil
           if (mp.GetParentProcInfo)() and ((mp.GetParentProcInfo)()).image_path then
             l_0_21 = (((mp.GetParentProcInfo)()).image_path):match("([^\\]+)$")
-            l_0_22 = NormalizeDirectory(((mp.GetParentProcInfo)()).image_path)
           end
           if not l_0_21 then
             l_0_21 = "None"
           end
-          local l_0_23 = nil
-          local l_0_24 = {ProcessName = l_0_10, ParentName = l_0_21, Source = "BM", SignatureName = "Bm/PFA_Parent.B", AttributeName = "PFAppTracked", AttributeCategory = "programfiles_targeted", ParentName = l_0_21, TrackedProcess = l_0_6}
-          local l_0_25, l_0_26 = , CommandLineGrader((mp.GetProcessCommandLine)(l_0_7.ppid))
-          l_0_24.CommandlineScoreIndicator = (mp.GetProcessCommandLine)(l_0_7.ppid)
-          l_0_24.CommandlineScore = l_0_26
-          local l_0_27 = nil
-          -- DECOMPILER ERROR at PC275: Confused about usage of register: R16 in 'UnsetPending'
+          local l_0_22 = nil
+          local l_0_23 = {ProcessName = l_0_10, ParentName = l_0_21, Source = "BM", SignatureName = "Bm/PFA_Parent.B", AttributeName = "PFAppTracked", AttributeCategory = "programfiles_targeted", ParentName = l_0_21, TrackedProcess = l_0_6}
+          local l_0_24, l_0_25 = , CommandLineGrader((mp.GetProcessCommandLine)(l_0_7.ppid))
+          l_0_23.CommandlineScoreIndicator = (mp.GetProcessCommandLine)(l_0_7.ppid)
+          l_0_23.CommandlineScore = l_0_25
+          local l_0_26 = nil
+          -- DECOMPILER ERROR at PC271: Confused about usage of register: R15 in 'UnsetPending'
 
           do
             if not IsPotentiallyClean("CleanProcessChain", l_0_6, l_0_10) and IsPotentiallyClean("CleanProcessChain_ParentChild", l_0_6, l_0_21 .. "_" .. l_0_10) then
-              local l_0_28, l_0_29, l_0_30 = , AnomalyTableCheck("Appomaly_ChildProcName", l_0_21 .. "_" .. l_0_10, 20, "MarkerRecord_" .. l_0_6)
-              if l_0_29 and not l_0_30 then
-                l_0_24.ProcNameWeight = GetProcessNameScore(l_0_10)
-                l_0_24.AnomalyTableName = "Appomaly_ChildProcName"
-                l_0_24.AnomalyTableInfo = l_0_21 .. "_" .. l_0_10
+              local l_0_27, l_0_28, l_0_29 = , AnomalyTableCheck("Appomaly_ChildProcName", l_0_21 .. "_" .. l_0_10, 20, "MarkerRecord_" .. l_0_6)
+              if l_0_28 and not l_0_29 then
+                l_0_23.ProcNameWeight = GetProcessNameScore(l_0_10)
+                l_0_23.AnomalyTableName = "Appomaly_ChildProcName"
+                l_0_23.AnomalyTableInfo = l_0_21 .. "_" .. l_0_10
                 ;
-                (bm.trigger_sig)("PFAppChildProc_D", safeJsonSerialize(l_0_24))
+                (bm.trigger_sig)("PFAppChildProc_D", safeJsonSerialize(l_0_23))
               end
             end
             ;
-            (bm.trigger_sig)("AnomalousChildCommandline", safeJsonSerialize(l_0_24))
+            (bm.trigger_sig)("AnomalousChildCommandline", safeJsonSerialize(l_0_23))
             do
               if l_0_7.integrity_level and not IsPotentiallyClean("CleanProcessChainPriv", l_0_6, l_0_7.integrity_level) then
-                local l_0_31, l_0_32, l_0_33 = , AnomalyTableCheck("Appomaly_ChildProcPriv", l_0_21 .. "_" .. l_0_10 .. "_" .. l_0_7.integrity_level, 20, "MarkerRecord_" .. l_0_6)
-                if l_0_32 and not l_0_33 then
-                  l_0_24.AnomalyTableInfo = l_0_21 .. "_" .. l_0_10 .. "_" .. l_0_7.integrity_level
-                  l_0_24.AnomalyTableName = "Appomaly_ChildProcPriv"
-                  l_0_24.Key = l_0_31
+                local l_0_30, l_0_31, l_0_32 = , AnomalyTableCheck("Appomaly_ChildProcPriv", l_0_21 .. "_" .. l_0_10 .. "_" .. l_0_7.integrity_level, 20, "MarkerRecord_" .. l_0_6)
+                if l_0_31 and not l_0_32 then
+                  l_0_23.AnomalyTableInfo = l_0_21 .. "_" .. l_0_10 .. "_" .. l_0_7.integrity_level
+                  l_0_23.AnomalyTableName = "Appomaly_ChildProcPriv"
+                  l_0_23.Key = l_0_30
                   ;
-                  (bm.trigger_sig)("AnomalousChildPriv", safeJsonSerialize(l_0_24))
+                  (bm.trigger_sig)("AnomalousChildPriv", safeJsonSerialize(l_0_23))
                 end
               end
-              do
-                if l_0_22 then
-                  local l_0_34, l_0_35, l_0_36 = , AnomalyTableCheck("Appomaly_ParentProcName", l_0_22 .. "_" .. l_0_21 .. "_" .. l_0_10, 30, "MarkerRecord_" .. l_0_6)
-                  if l_0_35 and not l_0_36 then
-                    l_0_24.Key = l_0_34
-                    l_0_24.ProcNameWeight = GetProcessNameScore(l_0_10)
-                    l_0_24.AnomalyTableName = "Appomaly_ParentProcName"
-                    l_0_24.AnomalyTableInfo = l_0_22 .. "_" .. l_0_21 .. "_" .. l_0_10
-                    ;
-                    (bm.trigger_sig)("PFAppParentProcDir", safeJsonSerialize(l_0_24))
-                  end
-                end
-                return mp.CLEAN
-              end
+              return mp.CLEAN
             end
           end
         end
