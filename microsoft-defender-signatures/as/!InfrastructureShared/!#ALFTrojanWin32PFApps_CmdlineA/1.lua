@@ -40,31 +40,23 @@ do
     if not l_0_8 or not (string.lower)(tostring(headerpage) .. tostring(footerpage)) or not next(R8_PC118) then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC129: Overwrote pending register: R8 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC134: Overwrote pending register: R8 in 'AssignReg'
-
-    if ((string.lower)(tostring(headerpage) .. tostring(footerpage))).Evidence_L1 and not next(R8_PC118) and not hasTamperingCmd(R8_PC118) then
-      return mp.CLEAN
-    end
     local l_0_9 = nil
-    -- DECOMPILER ERROR at PC145: Overwrote pending register: R8 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC146: Overwrote pending register: R8 in 'AssignReg'
-
     if not GetCurrentPPID() then
+      R8_PC118 = mp
+      R8_PC118 = R8_PC118.CLEAN
       return R8_PC118
     end
-    -- DECOMPILER ERROR at PC148: Overwrote pending register: R8 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC149: Overwrote pending register: R8 in 'AssignReg'
-
+    R8_PC118 = mp
+    R8_PC118 = R8_PC118.GetProcessCommandLine
     R8_PC118 = R8_PC118(GetCurrentPPID())
     local l_0_10 = nil
     if hasBase64Content(l_0_7) or hasBase64Content(R8_PC118) or hasURLEncodedContent(R8_PC118) then
       l_0_8 = l_0_8 + 10
     end
-    if l_0_8 < 10 then
+    if (l_0_9.Evidence_L1).MultilayerEncoding or (l_0_9.Evidence_L1).Obfuscated_FailedToDecode then
+      l_0_8 = l_0_8 + 20
+    end
+    if l_0_9.Evidence_L1 and not next((l_0_9.Evidence_L1).Urls) and not hasTamperingCmd(l_0_7) and l_0_8 < 10 then
       return mp.CLEAN
     end
     local l_0_11 = nil
@@ -85,13 +77,13 @@ do
           if l_0_15 then
             l_0_12.IsPotentiallyClean = "CmdLine"
           end
-          -- DECOMPILER ERROR at PC225: Confused about usage of register: R10 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC231: Confused about usage of register: R10 in 'UnsetPending'
 
           l_0_12.Parents = add_parents_mp() or l_0_13
           local l_0_17, l_0_18 = nil
           local l_0_19 = GetAppomalyProcessAttribute(l_0_10)
-          if safeJsonDeserialize(R15_PC232) then
-            R15_PC232 = (safeJsonDeserialize(R15_PC232)).AppName
+          if safeJsonDeserialize(R15_PC238) then
+            R15_PC238 = (safeJsonDeserialize(R15_PC238)).AppName
             local l_0_20 = nil
             local l_0_21 = nil
             local l_0_22 = nil
@@ -100,7 +92,7 @@ do
               local l_0_24 = nil
               local l_0_25 = nil
               local l_0_26 = (((mp.GetParentProcInfo)(l_0_10)).image_path):match("([^\\]+)$") or ""
-              -- DECOMPILER ERROR at PC267: Confused about usage of register: R20 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC273: Confused about usage of register: R20 in 'UnsetPending'
 
               local l_0_27 = nil
               local l_0_28 = nil
@@ -125,15 +117,15 @@ do
                   l_0_12.Concrete = false
                   l_0_12.Remediation_Reason = ""
                   local l_0_37 = nil
-                  -- DECOMPILER ERROR at PC337: Confused about usage of register: R15 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC343: Confused about usage of register: R15 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC340: Confused about usage of register: R15 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC346: Confused about usage of register: R15 in 'UnsetPending'
 
                   if l_0_12.CmdGradingInfo and (l_0_12.CmdGradingInfo).Evidence_L1 then
                     local l_0_38 = nil
                     for l_0_42,l_0_43 in pairs(((l_0_12.CmdGradingInfo).Evidence_L1).Urls) do
                       local l_0_39, l_0_40 = nil
-                      -- DECOMPILER ERROR at PC346: Confused about usage of register: R21 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC352: Confused about usage of register: R21 in 'UnsetPending'
 
                       if l_0_29.BadUrlRep then
                         l_0_12.Remediation_Reason = "BadUrlRep"
@@ -148,7 +140,7 @@ do
                     end
                     local l_0_44, l_0_45 = , safeJsonSerialize(l_0_12, 150, nil, true)
                     if not l_0_45 then
-                      set_research_data("Error", "Error Serializing Evidence Data" .. (MpCommon.Base64Encode)(R22_PC376), false)
+                      set_research_data("Error", "Error Serializing Evidence Data" .. (MpCommon.Base64Encode)(R22_PC382), false)
                       return mp.INFECTED
                     else
                       set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_45), false)

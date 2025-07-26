@@ -42,12 +42,12 @@ do
     -- DECOMPILER ERROR at PC80: Confused about usage of register: R4 in 'UnsetPending'
 
     ;
-    (MpCommon.BmTriggerSig)(l_0_8, "NRI:AppomalyTracked_OutboundHttp", safeJsonSerialize({UserAgent = (nri.GetHttpRequestHeader)("User-Agent") or "", HostName = (string.match)(nil, ".(.*)"), Url = nil, AttributeValue = l_0_11, AttributeName = l_0_10, ProcessName = l_0_9}))
+    (MpCommon.BmTriggerSig)(l_0_8, "NRI:AppomalyTracked_OutboundHttp", safeJsonSerialize({UserAgent = (nri.GetHttpRequestHeader)("User-Agent") or "", HostName = (string.match)(nil, ".(.*)"), Url = nil, AttributeValue = l_0_11, AttributeName = l_0_10, ProcessName = l_0_9, HttpCommand = (nri.GetHttpCommand)()}))
   end
   do
     do
       do return mp.CLEAN end
-      -- DECOMPILER ERROR at PC99: freeLocal<0 in 'ReleaseLocals'
+      -- DECOMPILER ERROR at PC103: freeLocal<0 in 'ReleaseLocals'
 
     end
   end

@@ -36,7 +36,7 @@ getWebApplicationType = function(l_1_0)
 
             l_1_6 = l_1_6(l_1_7, l_1_8, {"w3wp.exe", "-ap"})
             if l_1_8 then
-              l_1_5 = ((string.lower)(R8_PC55)):match("-ap \"(%w+)\"")
+              l_1_5 = ((string.lower)(R8_PC55)):match("-ap \"(.-)\"")
               if l_1_5 then
                 return l_1_5
               end
@@ -2514,7 +2514,7 @@ isEnabledApp = function(l_38_0)
   -- DECOMPILER ERROR at PC3: Overwrote pending register: R2 in 'AssignReg'
 
   if ("Citrix")(l_38_0, l_38_1) then
-    if (MpCommon.IsSampled)(60000, true, true, true) then
+    if (MpCommon.IsSampled)(100000, true, true, true) then
       return true
     else
       return false
