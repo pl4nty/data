@@ -109,89 +109,72 @@ end
         (bm.add_related_string)("AdditionalInfo", safeJsonSerialize(l_0_24), bm.RelatedStringBMReport)
         l_0_23 = true
       end
-      local l_0_25, l_0_26 = nil, nil
-      local l_0_27 = (mp.GetParentProcInfo)()
-      if l_0_27 and l_0_27.image_path then
-        l_0_25 = (l_0_27.image_path):match("([^\\]+)$")
-        l_0_26 = NormalizeDirectory(l_0_27.image_path)
+      local l_0_25 = nil
+      local l_0_26 = (mp.GetParentProcInfo)()
+      if l_0_26 and l_0_26.image_path then
+        l_0_25 = (l_0_26.image_path):match("([^\\]+)$")
       end
       if not l_0_25 then
         l_0_25 = "None"
       end
-      local l_0_28 = {}
-      l_0_28.ParentName = l_0_25
-      l_0_28.ProcessName = l_0_2
-      l_0_28.Source = "BM"
-      l_0_28.SignatureName = "Bm/SetProcAttribOneDrive.A"
-      l_0_28.TrackedProcess = "OneDrive"
-      l_0_28.AttributeName = "PFAppTracked"
-      l_0_28.AttributeCategory = "programfiles_targeted"
-      l_0_28.CommandlineScoreIndicator = l_0_15
-      l_0_28.CommandlineScore = l_0_14
-      local l_0_29 = l_0_25 .. "_" .. l_0_2
+      local l_0_27 = {}
+      l_0_27.ParentName = l_0_25
+      l_0_27.ProcessName = l_0_2
+      l_0_27.Source = "BM"
+      l_0_27.SignatureName = "Bm/SetProcAttribOneDrive.A"
+      l_0_27.TrackedProcess = "OneDrive"
+      l_0_27.AttributeName = "PFAppTracked"
+      l_0_27.AttributeCategory = "programfiles_targeted"
+      l_0_27.CommandlineScoreIndicator = l_0_15
+      l_0_27.CommandlineScore = l_0_14
+      local l_0_28 = l_0_25 .. "_" .. l_0_2
       do
         if not IsPotentiallyClean("CleanProcessChain", "OneDrive", l_0_2) then
-          local l_0_30, l_0_31, l_0_32 = AnomalyTableCheck("Appomaly_ChildProcName", l_0_29, 30, "MarkerRecord_OneDrive")
-          if l_0_30 and not l_0_31 then
-            l_0_28.AnomalyTableName = "Appomaly_ChildProcName"
-            l_0_28.ProcNameWeight = GetProcessNameScore(l_0_2)
-            l_0_28.AnomalyTableInfo = l_0_32
+          local l_0_29, l_0_30, l_0_31 = AnomalyTableCheck("Appomaly_ChildProcName", l_0_28, 30, "MarkerRecord_OneDrive")
+          if l_0_29 and not l_0_30 then
+            l_0_27.AnomalyTableName = "Appomaly_ChildProcName"
+            l_0_27.ProcNameWeight = GetProcessNameScore(l_0_2)
+            l_0_27.AnomalyTableInfo = l_0_31
             ;
-            (bm.trigger_sig)("PFAppChildProcOneDrive", safeJsonSerialize(l_0_28))
+            (bm.trigger_sig)("PFAppChildProcOneDrive", safeJsonSerialize(l_0_27))
           end
         end
         ;
-        (bm.trigger_sig)("AnomalousChildCommandline", safeJsonSerialize(l_0_28))
+        (bm.trigger_sig)("AnomalousChildCommandline", safeJsonSerialize(l_0_27))
         if l_0_0.integrity_level then
-          l_0_29 = l_0_25 .. "_" .. l_0_2 .. "_" .. l_0_0.integrity_level
+          l_0_28 = l_0_25 .. "_" .. l_0_2 .. "_" .. l_0_0.integrity_level
           if not IsPotentiallyClean("CleanProcessChainPriv", "OneDrive", l_0_0.integrity_level) then
-            local l_0_33, l_0_34, l_0_35 = AnomalyTableCheck("Appomaly_ChildProcPriv", l_0_29, 30, "MarkerRecord_OneDrive")
-            if l_0_33 and not l_0_34 then
-              l_0_28.AnomalyTableName = "Appomaly_ChildProcPriv"
-              l_0_28.AnomalyTableInfo = l_0_35
-              l_0_28.Key = l_0_29
+            local l_0_32, l_0_33, l_0_34 = AnomalyTableCheck("Appomaly_ChildProcPriv", l_0_28, 30, "MarkerRecord_OneDrive")
+            if l_0_32 and not l_0_33 then
+              l_0_27.AnomalyTableName = "Appomaly_ChildProcPriv"
+              l_0_27.AnomalyTableInfo = l_0_34
+              l_0_27.Key = l_0_28
               ;
-              (bm.trigger_sig)("AnomalousChildPriv", safeJsonSerialize(l_0_28))
+              (bm.trigger_sig)("AnomalousChildPriv", safeJsonSerialize(l_0_27))
             end
           end
         end
         do
-          if l_0_26 and l_0_27.image_path and not l_0_20(l_0_27.image_path) then
-            l_0_29 = l_0_26 .. "_" .. l_0_25 .. "_" .. l_0_2
-            if not IsPotentiallyClean("CleanProcessChain_Parent", "OneDrive", l_0_25) then
-              local l_0_36, l_0_37, l_0_38 = AnomalyTableCheck("Appomaly_ParentProcName", l_0_29, 30, "MarkerRecord_OneDrive")
-              if l_0_36 and not l_0_37 then
-                l_0_28.Key = l_0_29
-                l_0_28.AnomalyTableName = "Appomaly_ParentProcName"
-                l_0_28.ProcNameWeight = GetProcessNameScore(l_0_2)
-                l_0_28.AnomalyTableInfo = l_0_38
-                ;
-                (bm.trigger_sig)("PFAppParentProcDir", safeJsonSerialize(l_0_28))
-              end
+          local l_0_35 = (bm.get_imagepath)()
+          l_0_35 = (MpCommon.PathToWin32Path)(l_0_35)
+          l_0_35 = NormalizeDirectory((bm.get_imagepath)())
+          if l_0_35 and not l_0_19 then
+            l_0_28 = l_0_25 .. "_" .. l_0_35 .. "_" .. l_0_2
+            local l_0_36, l_0_37, l_0_38 = AnomalyTableCheck("Appomaly_ChildProcDir", l_0_28, 30, "MarkerRecord_OneDrive")
+            if l_0_36 and not l_0_37 then
+              l_0_27.AnomalyTableName = "Appomaly_ChildProcDir"
+              l_0_27.ProcNameWeight = GetProcessNameScore(l_0_2)
+              l_0_27.AnomalyTableInfo = l_0_38
+              l_0_27.Key = l_0_28
+              ;
+              (bm.trigger_sig)("PFAppChildProcDir", safeJsonSerialize(l_0_27))
             end
           end
           do
-            local l_0_39 = (bm.get_imagepath)()
-            l_0_39 = (MpCommon.PathToWin32Path)(l_0_39)
-            l_0_39 = NormalizeDirectory((bm.get_imagepath)())
-            if l_0_39 and not l_0_19 then
-              l_0_29 = l_0_25 .. "_" .. l_0_39 .. "_" .. l_0_2
-              local l_0_40, l_0_41, l_0_42 = AnomalyTableCheck("Appomaly_ChildProcDir", l_0_29, 30, "MarkerRecord_OneDrive")
-              if l_0_40 and not l_0_41 then
-                l_0_28.AnomalyTableName = "Appomaly_ChildProcDir"
-                l_0_28.ProcNameWeight = GetProcessNameScore(l_0_2)
-                l_0_28.AnomalyTableInfo = l_0_42
-                l_0_28.Key = l_0_29
-                ;
-                (bm.trigger_sig)("PFAppChildProcDir", safeJsonSerialize(l_0_28))
-              end
+            if l_0_23 then
+              return mp.INFECTED
             end
-            do
-              if l_0_23 then
-                return mp.INFECTED
-              end
-              return mp.CLEAN
-            end
+            return mp.CLEAN
           end
         end
       end
