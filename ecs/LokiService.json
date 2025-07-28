@@ -698,6 +698,7 @@
         "EnableBizchatLocalFilesSupport": true,
         "EnableCollaborationInstensityInsights": true,
         "EnableCollaborationNetworksGDRPExport": true,
+        "EnableCompanionLicenseCheck": true,
         "EnableConsolidatedPeopleHighlightFlights": false,
         "EnableContactUnlinking": true,
         "EnableConversationRecapAdvancedTelemetry": true,
