@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server Subscription Edition Cumulative Update KB5063048",
+    "downloadDescription": "This download includes all available updates for Skype for Business Server Subscription Edition",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PersistentChatUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/c3b95153-3534-44d2-b900-a7ec0bd40c7f/PersistentChatUpdateInstaller.exe",
+            "size": "3710496",
+            "version": "7.0.2046.810 ",
+            "datePublished": "7/29/2025 4:46:09 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SkypeServerUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/c3b95153-3534-44d2-b900-a7ec0bd40c7f/SkypeServerUpdateInstaller.exe",
+            "size": "158899760",
+            "version": "7.0.2046.810 ",
+            "datePublished": "7/29/2025 4:46:09 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Cumulative Update Download for Skype for Business Server Subscription Edition is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/5063048\">5063048</A>. \n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5063048",
+        "name": "KB5063048"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.2046.810 ",
+    "detailsSection_file_name": [
+        "PersistentChatUpdateInstaller.exe",
+        "SkypeServerUpdateInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB",
+        "151.5 MB"
+    ],
+    "detailsSection_file_date": "7/29/2025",
+    "systemRequirementsSection": "This download works with the following program:\n<ul>\n<li>Skype for Business Server Subscription Edition</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> buttons and saving the files to your hard disk. </li>\n<li>Refer to Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/5063048\">5063048</A> for installation details.</li>\n</ol>\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108297",
+    "downloadPreload": true
+}
