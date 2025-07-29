@@ -5,6 +5,9 @@
 -- function num : 0
 local l_0_0 = "ExecutableNonTextSection"
 local l_0_1 = {}
+if pehdr.NumberOfSections <= 1 then
+  return mp.CLEAN
+end
 local l_0_2 = (MpCommon.PathToWin32Path)((mp.getfilename)())
 if not l_0_2 then
   return mp.CLEAN

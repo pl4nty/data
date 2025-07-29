@@ -308,6 +308,15 @@ if (MpCommon.IsSampled)(100, true, true, true) then
     end
   end
 end
+-- DECOMPILER ERROR at PC559: Overwrote pending register: R2 in 'AssignReg'
+
+l_0_1 = pcall(Infrastructure_SharePointScan)
+if not l_0_1 then
+  l_0_0.SharePointScan = l_0_2
+  if l_0_2 == "Scanning aborted by the user!" then
+    error((MpCommon.JsonSerialize)(l_0_0))
+  end
+end
 if next(l_0_0) ~= nil then
   error((MpCommon.JsonSerialize)(l_0_0))
 end
