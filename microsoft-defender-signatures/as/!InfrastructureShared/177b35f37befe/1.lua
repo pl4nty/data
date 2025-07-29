@@ -14,8 +14,8 @@ l_0_2 = (mp.ContextualExpandEnvironmentVariables)((MpCommon.PathToWin32Path)(l_0
 if isnull(l_0_1) or isnull(l_0_2) then
   return mp.CLEAN
 end
-local l_0_3 = (string.match)((string.lower)(l_0_1), "(.+)%\\igfxtray.exe")
-local l_0_4 = (string.match)((string.lower)(l_0_2), "(.+)%\\hccutils.dll")
+local l_0_3 = (string.match)((string.lower)(l_0_1), "(.+)\\igfxtray.exe")
+local l_0_4 = (string.match)((string.lower)(l_0_2), "(.+)\\hccutils.dll")
 if isnull(l_0_3) or isnull(l_0_4) or l_0_3 ~= l_0_4 then
   return mp.CLEAN
 end
