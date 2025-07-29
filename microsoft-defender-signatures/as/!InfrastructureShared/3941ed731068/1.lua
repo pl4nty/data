@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (nri.GetURI)()
-local l_0_1 = l_0_0:match("(%d+.%d+%.%d+%.%d+)")
+local l_0_1 = l_0_0:match("http[s]?://(%d+%.%d+%.%d+%.%d+)")
 if l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
 end
