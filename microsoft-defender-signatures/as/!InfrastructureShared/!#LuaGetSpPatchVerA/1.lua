@@ -21,13 +21,13 @@ if l_0_1 == nil then
   local l_0_7 = nil
   local l_0_8, l_0_9 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_APPNAME)
   if l_0_8 and l_0_9 then
-    if l_0_9 ~= "SharePoint Server 2016" then
+    if l_0_9 == "SharePoint Server 2016" then
       l_0_7 = "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{90160000-1014-0000-1000-0000000FF1CE}_Office16.OSERVER_{CB3B172E-6212-49D6-9506-E168C7ECBF4F}"
     else
-      if l_0_9 ~= "SharePoint Server 2019" then
+      if l_0_9 == "SharePoint Server 2019" then
         l_0_7 = "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{90160000-1012-0000-1000-0000000FF1CE}_Office16.OSERVER_{ED506CD0-5B99-4B7C-9CDE-24A7F0DC5A1F}"
       else
-        if l_0_9 ~= "SharePoint Server Subscription Edition" then
+        if l_0_9 == "SharePoint Server Subscription Edition" then
           l_0_7 = "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{90160000-1010-0000-1000-0000000FF1CE}_Office16.OSERVER_{72B35D09-BBE4-40A7-B3BF-FDC1B556C305}"
         end
       end
