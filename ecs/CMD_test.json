@@ -1126,6 +1126,7 @@
         "Nh_SendDirectConnection_Diagnostics": true,
         "Nh_Show_Hide_Mouse_Pointer": true,
         "Nh_Skip_3p_Cookie_Request": true,
+        "Nh_Use_CAE": true,
         "Nh_Use_CreateDirectConnection": true,
         "Nh_Use_EndUserApi_GetCpc": true,
         "Nh_Use_Entra_B2B_TenantId": true,
