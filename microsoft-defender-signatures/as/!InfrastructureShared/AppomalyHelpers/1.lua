@@ -916,7 +916,8 @@ getCmdKeywordsWeight = function()
   l_7_0["http://"] = 1
   l_7_0["https://"] = 1
   l_7_0["start%-sleep"] = 1
-  l_7_0.tanium = -10
+  l_7_0.tanium = -60
+  l_7_0.ansible = -60
   return l_7_0
 end
 
@@ -1223,18 +1224,13 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
               if l_9_25 then
                 l_9_34 = l_9_25.Score
                 if l_9_34 then
-                  l_9_34 = l_9_25.Evidence
-                  if l_9_34 then
-                    l_9_34 = "Evidence_L"
-                    l_9_41 = l_9_1
-                    l_9_34 = l_9_34 .. l_9_41
-                    local l_9_43 = nil
-                    l_9_41 = l_9_25.Evidence
-                    l_9_8[l_9_34] = l_9_41
-                    l_9_34 = l_9_25.Score
-                    l_9_34 = l_9_6 + l_9_34
-                    l_9_8.Score = l_9_34
-                  end
+                  l_9_34 = "Evidence_L"
+                  l_9_41 = l_9_1
+                  l_9_34 = l_9_34 .. l_9_41
+                  l_9_8[l_9_34] = l_9_25
+                  l_9_34 = l_9_25.Score
+                  l_9_34 = l_9_6 + l_9_34
+                  l_9_8.Score = l_9_34
                 end
               end
             end
