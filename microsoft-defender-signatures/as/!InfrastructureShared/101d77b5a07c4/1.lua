@@ -50,7 +50,7 @@ if (mp.get_mpattribute)("MpCmdLineFoundB64") then
 else
   l_0_1.MpCmdLineFoundB64 = false
 end
-if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Evidence_L1).Obfuscated_FailedToDecode) then
+if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Evidence_L1).Obfuscated_FailedToDecode) and l_0_12.Score > 0 then
   local l_0_14, l_0_15 = safeJsonSerialize(l_0_12, 150, nil, true)
   do
     local l_0_16, l_0_17 = (l_0_12.Evidence_L1).MultilayerEncoding and "Appomaly_MultilayerEncoded_Tracked" or "Appomaly_Encoded_Obfuscated_Tracked"
@@ -68,9 +68,9 @@ if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Ev
           do
             local l_0_23, l_0_24 = , ((MpCommon.GetImagePathFromPid)(l_0_0)):match("([^\\]+)$") or ""
             local l_0_25 = nil
-            -- DECOMPILER ERROR at PC183: Confused about usage of register: R15 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC186: Confused about usage of register: R15 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC199: Confused about usage of register: R15 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC202: Confused about usage of register: R15 in 'UnsetPending'
 
             local l_0_26 = nil
             local l_0_27, l_0_28, l_0_29 = {ParentName = l_0_6, ProcessName = l_0_24, Source = "CMD", SignatureName = "PFApps.C", CommandlineScore = l_0_12.Score, CommandlineScoreIndicator = l_0_1.Base64GradingInfo, AnomalyTableName = "Appomaly_ChildProcName_CmdLine_Base64", TableAge = GetAnomalyTableAge("Appomaly_ChildProcName_CmdLine_Base64"), AttributeName = "PFApp_Parent", AttributeCategory = "PFServers"}, AnomalyTableCheck("Appomaly_ChildProcName_CmdLine", l_0_6 .. ";" .. l_0_24 .. ";" .. (table.concat)(l_0_12.CommandlineTokens, "|"), 30)
@@ -91,7 +91,7 @@ if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Ev
               if not l_0_34 then
                 l_0_7.SignatureName = "PFApps.C"
                 ;
-                (MpCommon.BmTriggerSig)(l_0_7, "ProcAttribError", safeJsonSerialize(R20_PC258))
+                (MpCommon.BmTriggerSig)(l_0_7, "ProcAttribError", safeJsonSerialize(R20_PC261))
               else
                 local l_0_35 = nil
                 local l_0_36 = "Base64Cmd_child[" .. l_0_0:match("pid:(%d+)") .. "][cmd/PFApps.C]"
@@ -109,14 +109,14 @@ if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Ev
                 local l_0_37 = nil
                 for l_0_41 = 1, 3 do
                   local l_0_38 = l_0_1.Base64GradingInfo
-                  -- DECOMPILER ERROR at PC320: Confused about usage of register: R18 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC323: Confused about usage of register: R18 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC326: Confused about usage of register: R18 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC329: Confused about usage of register: R18 in 'UnsetPending'
 
                   if l_0_38 and l_0_38["Evidence_L" .. MpCommon.BmTriggerSig] then
                     for l_0_46,l_0_47 in pairs((l_0_38["Evidence_L" .. MpCommon.BmTriggerSig]).Urls) do
                       local l_0_43 = nil
-                      -- DECOMPILER ERROR at PC334: Confused about usage of register: R24 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC337: Confused about usage of register: R24 in 'UnsetPending'
 
                       if (MpCommon.BmTriggerSig).BadUrlRep then
                         l_0_1.Remediation_Reason = "BadUrlRep"
@@ -130,11 +130,11 @@ if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Ev
                           (mp.set_mpattribute)("HSTR:PFApps_MultilayerEncoded_A")
                           l_0_1.Concrete = true
                         end
-                        -- DECOMPILER ERROR at PC354: LeaveBlock: unexpected jumping out DO_STMT
+                        -- DECOMPILER ERROR at PC357: LeaveBlock: unexpected jumping out DO_STMT
 
-                        -- DECOMPILER ERROR at PC354: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                        -- DECOMPILER ERROR at PC357: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                        -- DECOMPILER ERROR at PC354: LeaveBlock: unexpected jumping out IF_STMT
+                        -- DECOMPILER ERROR at PC357: LeaveBlock: unexpected jumping out IF_STMT
 
                       end
                     end
@@ -146,11 +146,11 @@ if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Ev
                 if l_0_12.Score > 45 then
                   l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "HighScore"
                 end
-                -- DECOMPILER ERROR at PC372: Confused about usage of register: R14 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC374: Confused about usage of register: R14 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC375: Confused about usage of register: R14 in 'UnsetPending'
 
                 -- DECOMPILER ERROR at PC377: Confused about usage of register: R14 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC380: Confused about usage of register: R14 in 'UnsetPending'
 
                 do
                   if l_0_38 and l_0_38.Evidence_L1 then
@@ -164,15 +164,15 @@ if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Ev
                     (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded3")
                     l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspPattern"
                   end
-                  -- DECOMPILER ERROR at PC411: Confused about usage of register: R15 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC414: Confused about usage of register: R15 in 'UnsetPending'
 
                   if (mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found") and #(mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found") > 0 then
                     (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
                     l_0_1.Remediation_Reason = l_0_1.Remediation_Reason .. ";" .. "SuspUrl"
                   end
-                  -- DECOMPILER ERROR at PC430: Confused about usage of register: R15 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC433: Confused about usage of register: R15 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC434: Confused about usage of register: R15 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC437: Confused about usage of register: R15 in 'UnsetPending'
 
                   if (mp.enum_mpattributesubstring)("Appomaly_") and #(mp.enum_mpattributesubstring)("Appomaly_") > 0 then
                     l_0_1.Attributes = table_dedup((mp.enum_mpattributesubstring)("Appomaly_"))
@@ -183,12 +183,12 @@ if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Ev
                     local l_0_52 = 0
                     local l_0_58, l_0_59 = IsFileRecentlyDropped(l_0_46.ImagePath)
                     if l_0_58 then
-                      (table.insert)(l_0_51, R28_PC452)
+                      (table.insert)(l_0_51, R28_PC455)
                       l_0_52 = l_0_52 + l_0_59
                     end
                   end
                   l_0_1.RecentlyDroppedParents = l_0_51
-                  -- DECOMPILER ERROR at PC457: Confused about usage of register: R17 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC460: Confused about usage of register: R17 in 'UnsetPending'
 
                   l_0_1.ParentScore = l_0_52
                   do
@@ -199,16 +199,16 @@ if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Ev
                       (MpCommon.BmTriggerSig)(l_0_2.ppid, "SuspDownload2_BM_Capture", l_0_61)
                     else
                       if l_0_1 then
-                        set_research_data("Error", (MpCommon.Base64Encode)(R23_PC488), R23_PC488)
+                        set_research_data("Error", (MpCommon.Base64Encode)(R23_PC491), R23_PC491)
                         return mp.INFECTED
                       else
-                        -- DECOMPILER ERROR at PC498: Overwrote pending register: R23 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC501: Overwrote pending register: R23 in 'AssignReg'
 
-                        set_research_data("Error", "Failed Serialization w/o error", R23_PC488)
+                        set_research_data("Error", "Failed Serialization w/o error", R23_PC491)
                       end
                     end
                     do return mp.CLEAN end
-                    -- DECOMPILER ERROR at PC503: freeLocal<0 in 'ReleaseLocals'
+                    -- DECOMPILER ERROR at PC506: freeLocal<0 in 'ReleaseLocals'
 
                   end
                 end

@@ -46,41 +46,41 @@ do
     else
       l_0_10.MpCmdLineFoundB64 = false
     end
-    if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Evidence_L1).Obfuscated_FailedToDecode) then
+    if l_0_12.Evidence_L1 and ((l_0_12.Evidence_L1).MultilayerEncoding or (l_0_12.Evidence_L1).Obfuscated_FailedToDecode) and l_0_12.Score > 0 then
       local l_0_16, l_0_17 = nil
       do
-        local l_0_18, l_0_19 = safeJsonSerialize(R14_PC117, 150, nil, true)
+        local l_0_18, l_0_19 = safeJsonSerialize(R14_PC120, 150, nil, true)
         local l_0_20 = nil
         local l_0_21 = nil
         local l_0_22 = nil
         do
           ;
-          (MpCommon.BmTriggerSig)(l_0_0.ppid, (l_0_16.Evidence_L1).MultilayerEncoding and "Appomaly_MultilayerEncoded_Tracked" or "Appomaly_Encoded_Obfuscated_Gen", l_0_20 or l_0_21)
-          -- DECOMPILER ERROR at PC134: Confused about usage of register: R11 in 'UnsetPending'
+          (MpCommon.BmTriggerSig)(l_0_0.ppid, (l_0_16.Evidence_L1).MultilayerEncoding and "Appomaly_MultilayerEncoded_Gen" or "Appomaly_Encoded_Obfuscated_Gen", l_0_20 or l_0_21)
+          -- DECOMPILER ERROR at PC137: Confused about usage of register: R11 in 'UnsetPending'
 
           if l_0_16.Score <= 10 then
             (mp.ReportLowfi)(l_0_8, 3531094077)
             return mp.CLEAN
           else
-            -- DECOMPILER ERROR at PC147: Confused about usage of register: R11 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC150: Confused about usage of register: R11 in 'UnsetPending'
 
             if not next((l_0_16.Evidence_L1).Urls) then
               return mp.CLEAN
             else
-              -- DECOMPILER ERROR at PC156: Confused about usage of register: R11 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC159: Confused about usage of register: R11 in 'UnsetPending'
 
               if l_0_16.Score > 40 then
                 local l_0_24, l_0_25, l_0_26 = nil
                 local l_0_27 = isInstalledApp(l_0_11)
                 do
                   local l_0_28, l_0_29, l_0_38, l_0_39, l_0_43 = , ((MpCommon.GetImagePathFromPid)(l_0_11)):match("([^\\]+)$") or ""
-                  -- DECOMPILER ERROR at PC172: Confused about usage of register: R14 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC175: Confused about usage of register: R14 in 'UnsetPending'
 
                   if l_0_28 and l_0_25.CommandlineTokens then
                     local l_0_30 = nil
-                    -- DECOMPILER ERROR at PC179: Confused about usage of register: R17 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC182: Confused about usage of register: R17 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC193: Confused about usage of register: R17 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC196: Confused about usage of register: R17 in 'UnsetPending'
 
                     local l_0_31 = nil
                     local l_0_32, l_0_33, l_0_34 = , {ParentName = l_0_30, ProcessName = l_0_39, Source = "CMD", SignatureName = "APML_SuspCommand.A", CommandlineScore = l_0_25.Score, CommandlineScoreIndicator = l_0_10.Base64GradingInfo, AnomalyTableName = "Appomaly_ChildProcName_CmdLine_Base64", TableAge = GetAnomalyTableAge("Appomaly_ChildProcName_CmdLine_Base64")}
@@ -98,7 +98,7 @@ do
                     end
                   else
                     do
-                      -- DECOMPILER ERROR at PC240: Confused about usage of register: R17 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC243: Confused about usage of register: R17 in 'UnsetPending'
 
                       local l_0_40 = nil
                       do
@@ -111,59 +111,59 @@ do
                             l_0_10.AnomalousCMD_Cached_TblInfo = l_0_9 .. ";" .. l_0_33 .. ";" .. (table.concat)(l_0_25.CommandlineTokens, "|")
                           end
                         end
-                        -- DECOMPILER ERROR at PC267: Confused about usage of register: R14 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC270: Confused about usage of register: R14 in 'UnsetPending'
 
                         do
                           local l_0_44 = nil
-                          -- DECOMPILER ERROR at PC273: Confused about usage of register: R15 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC276: Confused about usage of register: R15 in 'UnsetPending'
 
                           if not l_0_41 then
                             local l_0_46 = nil
                             local l_0_47 = nil
                             if not startTrackingApp(l_0_0.ppid, l_0_46 or l_0_9, l_0_40 and "programfiles" or "generic") then
                               (l_0_0.ppid).SignatureName = "APML_SuspCommand.A"
-                              -- DECOMPILER ERROR at PC288: Confused about usage of register: R19 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC291: Confused about usage of register: R19 in 'UnsetPending'
 
                               ;
-                              (MpCommon.BmTriggerSig)(l_0_0.ppid, "ProcAttribError", safeJsonSerialize(R26_PC292))
+                              (MpCommon.BmTriggerSig)(l_0_0.ppid, "ProcAttribError", safeJsonSerialize(R26_PC295))
                             else
-                              if next(R23_PC297) and (l_0_0.ppid).IsNewApp then
+                              if next(R23_PC300) and (l_0_0.ppid).IsNewApp then
                                 (l_0_0.ppid).SignatureName = "APML_SuspCommand.A"
                                 ;
                                 (l_0_0.ppid).Score = l_0_25.Score
-                                -- DECOMPILER ERROR at PC308: Confused about usage of register: R19 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC311: Confused about usage of register: R19 in 'UnsetPending'
 
                                 ;
-                                (MpCommon.BmTriggerSig)(R23_PC297, "SetProcessAttrib", safeJsonSerialize(R26_PC312))
+                                (MpCommon.BmTriggerSig)(R23_PC300, "SetProcessAttrib", safeJsonSerialize(R26_PC315))
                               end
                             end
                             l_0_10.AppName = l_0_46 or l_0_9
-                            -- DECOMPILER ERROR at PC318: Confused about usage of register: R18 in 'UnsetPending'
+                            -- DECOMPILER ERROR at PC321: Confused about usage of register: R18 in 'UnsetPending'
 
                             l_0_10.AppCategory = l_0_40 and "programfiles" or "generic"
-                            -- DECOMPILER ERROR at PC320: Overwrote pending register: R23 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC323: Overwrote pending register: R23 in 'AssignReg'
 
                             do
                               local l_0_49 = nil
-                              IncreaseProcessAnomalyScore(l_0_0.ppid, l_0_25.Score, "Base64Cmd_child[" .. R23_PC297 .. "][cmd/APML_SuspCommand.A]", "PFAppTracked", R23_PC297)
+                              IncreaseProcessAnomalyScore(l_0_0.ppid, l_0_25.Score, "Base64Cmd_child[" .. R23_PC300 .. "][cmd/APML_SuspCommand.A]", "PFAppTracked", R23_PC300)
                               l_0_10.Concrete = false
                               l_0_10.Remediation_Reason = ""
                               local l_0_50 = nil
                               for l_0_54 = 1, 3 do
                                 local l_0_51, l_0_52, l_0_53, l_0_54 = nil
-                                -- DECOMPILER ERROR at PC359: Confused about usage of register: R17 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC362: Confused about usage of register: R17 in 'UnsetPending'
 
-                                -- DECOMPILER ERROR at PC361: Confused about usage of register: R13 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC364: Confused about usage of register: R13 in 'UnsetPending'
 
-                                -- DECOMPILER ERROR at PC365: Confused about usage of register: R17 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC368: Confused about usage of register: R17 in 'UnsetPending'
 
-                                -- DECOMPILER ERROR at PC367: Confused about usage of register: R13 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC370: Confused about usage of register: R13 in 'UnsetPending'
 
                                 if l_0_10.Base64GradingInfo and (l_0_10.Base64GradingInfo)["Evidence_L" .. l_0_33] then
                                   local l_0_55 = nil
-                                  for l_0_59,R23_PC297 in pairs(((l_0_10.Base64GradingInfo)["Evidence_L" .. l_0_33]).Urls) do
+                                  for l_0_59,R23_PC300 in pairs(((l_0_10.Base64GradingInfo)["Evidence_L" .. l_0_33]).Urls) do
                                     local l_0_60 = nil
-                                    if R23_PC297.BadUrlRep then
+                                    if R23_PC300.BadUrlRep then
                                       l_0_10.Remediation_Reason = "BadUrlRep"
                                       l_0_10.Concrete = true
                                       break
@@ -171,31 +171,31 @@ do
                                   end
                                   do
                                     do
-                                      -- DECOMPILER ERROR at PC382: Confused about usage of register: R17 in 'UnsetPending'
+                                      -- DECOMPILER ERROR at PC385: Confused about usage of register: R17 in 'UnsetPending'
 
                                       if (l_0_55["Evidence_L" .. l_0_59]).MultilayerEncoding then
                                         (mp.set_mpattribute)("HSTR:PFApps_MultilayerEncoded_B")
                                       end
-                                      -- DECOMPILER ERROR at PC392: LeaveBlock: unexpected jumping out DO_STMT
+                                      -- DECOMPILER ERROR at PC395: LeaveBlock: unexpected jumping out DO_STMT
 
-                                      -- DECOMPILER ERROR at PC392: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                      -- DECOMPILER ERROR at PC395: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                      -- DECOMPILER ERROR at PC392: LeaveBlock: unexpected jumping out IF_STMT
+                                      -- DECOMPILER ERROR at PC395: LeaveBlock: unexpected jumping out IF_STMT
 
                                     end
                                   end
                                 end
                               end
-                              -- DECOMPILER ERROR at PC393: Confused about usage of register: R11 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC396: Confused about usage of register: R11 in 'UnsetPending'
 
                               if l_0_53.Score > 45 then
                                 l_0_10.Remediation_Reason = l_0_10.Remediation_Reason .. ";" .. "HighScore"
                               end
-                              -- DECOMPILER ERROR at PC401: Confused about usage of register: R13 in 'UnsetPending'
-
-                              -- DECOMPILER ERROR at PC403: Confused about usage of register: R13 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC404: Confused about usage of register: R13 in 'UnsetPending'
 
                               -- DECOMPILER ERROR at PC406: Confused about usage of register: R13 in 'UnsetPending'
+
+                              -- DECOMPILER ERROR at PC409: Confused about usage of register: R13 in 'UnsetPending'
 
                               do
                                 if l_0_55 and l_0_55.Evidence_L1 then
@@ -209,15 +209,15 @@ do
                                   (mp.set_mpattribute)("HSTR:PFApps_SuspPatterns_encoded3")
                                   l_0_10.Remediation_Reason = l_0_10.Remediation_Reason .. ";" .. "SuspPattern"
                                 end
-                                -- DECOMPILER ERROR at PC440: Confused about usage of register: R14 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC443: Confused about usage of register: R14 in 'UnsetPending'
 
                                 if (mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found") and #(mp.enum_mpattributesubstring)("Appomaly_SuspUrl_Found") > 0 then
                                   (mp.set_mpattribute)("HSTR:PFApps_HighlySuspUrl")
                                   l_0_10.Remediation_Reason = l_0_10.Remediation_Reason .. ";" .. "SuspUrl"
                                 end
-                                -- DECOMPILER ERROR at PC459: Confused about usage of register: R14 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC462: Confused about usage of register: R14 in 'UnsetPending'
 
-                                -- DECOMPILER ERROR at PC463: Confused about usage of register: R14 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC466: Confused about usage of register: R14 in 'UnsetPending'
 
                                 if (mp.enum_mpattributesubstring)("Appomaly_") and #(mp.enum_mpattributesubstring)("Appomaly_") > 0 then
                                   l_0_10.Attributes = table_dedup((mp.enum_mpattributesubstring)("Appomaly_"))
@@ -226,17 +226,17 @@ do
                                 local l_0_64 = nil
                                 for l_0_68,l_0_69 in ipairs(l_0_10.Parents) do
                                   local l_0_65, l_0_66, l_0_67, l_0_68, l_0_69 = , {}, 0
-                                  -- DECOMPILER ERROR at PC473: Overwrote pending register: R23 in 'AssignReg'
+                                  -- DECOMPILER ERROR at PC476: Overwrote pending register: R23 in 'AssignReg'
 
-                                  if IsFileRecentlyDropped(R23_PC297) then
-                                    (table.insert)(l_0_68, R27_PC481)
-                                    l_0_69 = l_0_69 + R23_PC297
+                                  if IsFileRecentlyDropped(R23_PC300) then
+                                    (table.insert)(l_0_68, R27_PC484)
+                                    l_0_69 = l_0_69 + R23_PC300
                                   end
                                 end
-                                -- DECOMPILER ERROR at PC485: Confused about usage of register: R15 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC488: Confused about usage of register: R15 in 'UnsetPending'
 
                                 l_0_10.RecentlyDroppedParents = l_0_68
-                                -- DECOMPILER ERROR at PC486: Confused about usage of register: R16 in 'UnsetPending'
+                                -- DECOMPILER ERROR at PC489: Confused about usage of register: R16 in 'UnsetPending'
 
                                 l_0_10.ParentScore = l_0_69
                                 do
@@ -247,12 +247,12 @@ do
                                     (MpCommon.BmTriggerSig)(l_0_0.ppid, "SuspDownload3_BM_Capture", safeJsonSerialize(l_0_10, 150, nil, true))
                                   else
                                     if l_0_10 then
-                                      set_research_data("Error", (MpCommon.Base64Encode)(R22_PC517), R22_PC517)
+                                      set_research_data("Error", (MpCommon.Base64Encode)(R22_PC520), R22_PC520)
                                       return mp.INFECTED
                                     end
                                   end
                                   do return mp.CLEAN end
-                                  -- DECOMPILER ERROR at PC526: freeLocal<0 in 'ReleaseLocals'
+                                  -- DECOMPILER ERROR at PC529: freeLocal<0 in 'ReleaseLocals'
 
                                 end
                               end
