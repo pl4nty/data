@@ -295,10 +295,6 @@ BASE_DECLARE_FEATURE(kShareCoherence);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kToolbarMoreMenuButtonsEnabled);
 
-// If enabled, users can use the backspace key to navigate a page back
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kBackspaceKeyNavigatePageBack);
-
 // Enable quick search mini menu in website.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kWebOOUI);
 // Enable quick search mini menu in childe frame.
@@ -539,11 +535,6 @@ extern bool IsSystemCaptionStyleReadFromRegistryEnabled();
 // fires when edge://settings/appearance is clicked on.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kSettingsAppearanceTrigger);
-
-// fires when edge://settings/appearance is clicked on and classic ntp is
-// rendered.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSettingsAppearanceTriggerWithoutRubyNtp);
 
 // Fires when the Themes section is rendered in the Settings page.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
