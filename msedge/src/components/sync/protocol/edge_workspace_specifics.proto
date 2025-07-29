@@ -59,6 +59,10 @@ message WorkspaceTab {
   // user_nav_time_windows_epoch_micros, the tab should navigate to the sync
   // url.
   optional int64 user_nav_time_windows_epoch_micros = 6;
+
+  // Whether the tab is pinned (in the TabStripModel) or not.
+  // If not present, false/not-pinned is assumed.
+  optional bool pinned = 7;
 }
 
 message EdgeWorkspaceSpecifics {

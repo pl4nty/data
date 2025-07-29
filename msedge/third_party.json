@@ -5,11 +5,6 @@
     "file_count": 178
   },
   {
-    "name": "accessibility_test_framework",
-    "size": 11436,
-    "file_count": 17
-  },
-  {
     "name": "alsa",
     "size": 27873,
     "file_count": 7
@@ -21,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10334875,
+    "size": 10335256,
     "file_count": 163
   },
   {
@@ -41,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14612944,
+    "size": 14612966,
     "file_count": 830
   },
   {
@@ -76,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32284084,
-    "file_count": 3957
+    "size": 32286135,
+    "file_count": 3954
   },
   {
     "name": "boringssl",
@@ -96,8 +91,8 @@
   },
   {
     "name": "catapult",
-    "size": 10124207,
-    "file_count": 760
+    "size": 10213994,
+    "file_count": 767
   },
   {
     "name": "checkstyle",
@@ -141,7 +136,7 @@
   },
   {
     "name": "dawn",
-    "size": 36542551,
+    "size": 36542575,
     "file_count": 95
   },
   {
@@ -151,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16398534,
+    "size": 16398993,
     "file_count": 252
   },
   {
@@ -281,7 +276,7 @@
   },
   {
     "name": "hunspell",
-    "size": 4405562,
+    "size": 4405685,
     "file_count": 80
   },
   {
@@ -356,7 +351,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 40299,
+    "size": 40385,
     "file_count": 36
   },
   {
@@ -366,8 +361,8 @@
   },
   {
     "name": "libc++",
-    "size": 6161460,
-    "file_count": 937
+    "size": 6161717,
+    "file_count": 936
   },
   {
     "name": "libdisplay-info",
@@ -461,7 +456,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 280273,
+    "size": 280258,
     "file_count": 40
   },
   {
@@ -476,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18715115,
+    "size": 18706411,
     "file_count": 19
   },
   {
@@ -556,8 +551,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3712469,
-    "file_count": 573
+    "size": 3779952,
+    "file_count": 576
   },
   {
     "name": "perl",
@@ -641,7 +636,7 @@
   },
   {
     "name": "skia",
-    "size": 3457212,
+    "size": 3456833,
     "file_count": 1178
   },
   {
@@ -686,8 +681,8 @@
   },
   {
     "name": "tflite",
-    "size": 1647987,
-    "file_count": 487
+    "size": 1652566,
+    "file_count": 488
   },
   {
     "name": "tflite_support",
