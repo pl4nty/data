@@ -272,7 +272,7 @@ var CloudExperienceHost;
                     let doc = learnMoreIFrame.contentWindow.document;
                     require(['corejs/knockouthelpers', 'oobesettings-data'], function (KoHelpers, oobeSettingsData) {
                         bridge.invoke("CloudExperienceHost.Environment.hasInternetAccess").done(function (isConnectedToNetwork) {
-                            KoHelpers.loadIframeContent(learnMoreIFrame, doc, {content: oobeSettingsData.getLearnMoreContent(), dir:document.documentElement.dir, focusBody: true});
+                            KoHelpers.loadIframeContent(learnMoreIFrame, doc, {content: oobeSettingsData.getLearnMoreContent(), dir:document.documentElement.dir, focusBody: true, frameTitle: resourceStrings['HelloLearnMoreLinkText']});
                             oobeSettingsData.updateLearnMoreContentForRender(learnMoreIFrame, doc, document.documentElement.dir, isConnectedToNetwork, resourceStrings['HelloLearnMoreNavigationError'], _setUpLearnMorePersonality(), "WindowsHello");
                         });
                     });

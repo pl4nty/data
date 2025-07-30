@@ -94,6 +94,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events',
                 'oobe-header': {},
                 'oobe-footer': {},
                 'oobe-button': {},
+                'oobe-toggle': {},
                 'oobe-listview': {},
             };
 

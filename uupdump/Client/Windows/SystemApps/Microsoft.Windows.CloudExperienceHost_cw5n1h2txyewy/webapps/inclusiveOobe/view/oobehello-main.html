@@ -65,7 +65,7 @@
             <div class="container-content">
                 <oobe-header params="title: resourceStrings.HelloLearnMoreLinkText"></oobe-header>
                 <div class="iframe-row med-iframe">
-                    <iframe id="hello-learnmore-iframe" x-ms-format-detection="none" sandbox="allow-same-origin allow-scripts" data-bind="iframeContent: { content:$root.learnMoreContent, dir:document.documentElement.dir, focusBody: true }, attr: { 'aria-label': resourceStrings.HelloLearnMoreLinkText }"></iframe>
+                    <iframe id="hello-learnmore-iframe" x-ms-format-detection="none" sandbox="allow-same-origin allow-scripts" data-bind="iframeContent: { content:$root.learnMoreContent, dir:document.documentElement.dir, focusBody: true, frameTitle: resourceStrings.HelloLearnMoreLinkText }, attr: { 'aria-label': resourceStrings.HelloLearnMoreLinkText }"></iframe>
                 </div>
                 <oobe-footer params="flexEndButtons: flexEndButtonsLearnMore"></oobe-footer>
             </div>

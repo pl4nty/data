@@ -37,6 +37,7 @@
     "CloudExperienceHost.MobileExperience.*": [ "https://sdx.microsoft.com/*", "https://sdx.microsoft-ppe.com/*", "https://sdx.microsoft-int.com/*", "https://canary.sdx.microsoft.com/*" ],
     "CloudExperienceHost.OneDrive.*": [ "https://onedrive.live.com/windows/", "https://www.microsoft.com/officeoobe/*", "https://wwwqa.microsoft.com/officeoobe/*", "https://onedrive.live-int.com/windows/", "https://oloobe.officeapps.live.com/*", "https://oloobe.officeapps.live-int.com/*", "ms-appx-web://microsoftwindows.webexperiencehost/*", "ms-appx-web://microsoftwindows.oobehost/*", "https://sdx.microsoft.com/*", "https://sdx.microsoft-ppe.com/*", "https://sdx.microsoft-int.com/*", "https://canary.sdx.microsoft.com/*" ],
     "CloudExperienceHost.OobeSettings.*": [ "ms-appx-web://microsoft.windows.cloudexperiencehost/views/*", "ms-appx-web://microsoft.cloudexperiencehost.testapp/views/" ],
+    "CloudExperienceHost.OobeUpdateSettings.*": [ "ms-appx-web://microsoftwindows.oobehost/*", "ms-appx-web://microsoftwindows.client*" ],
     "CloudExperienceHost.Policy.*": [ "*" ],
     "CloudExperienceHost.Resources.*": [ "*" ],
     "CloudExperienceHost.Rewards.*": [ "ms-appx-web://microsoft.windows.cloudexperiencehost/*", "ms-appx-web://microsoft.cloudexperiencehost/*", "ms-appx-web://microsoft.cloudexperiencehost.testapp/*", "https://sdx.microsoft.com/*", "https://sdx.microsoft-ppe.com/*", "https://sdx.microsoft-int.com/*", "https://canary.sdx.microsoft.com/*" ],
