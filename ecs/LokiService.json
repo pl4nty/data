@@ -692,6 +692,7 @@
             "01a4edc0-c130-4e09-bfd4-7b7de34700e6"
         ],
         "EmailsFrom3S": true,
+        "EmployeeAgentCacheTTL": "0.04:00:00",
         "EnableAadObjectIdUserResolutionForInsights": false,
         "EnableAtMentionInChatTeachingMoment": true,
         "EnableAttributionLogging": true,
