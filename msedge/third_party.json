@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10335256,
+    "size": 10335732,
     "file_count": 163
   },
   {
@@ -31,8 +31,8 @@
   },
   {
     "name": "android_toolchain",
-    "size": 553801,
-    "file_count": 8
+    "size": 558819,
+    "file_count": 9
   },
   {
     "name": "angle",
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32286135,
-    "file_count": 3954
+    "size": 32288174,
+    "file_count": 3953
   },
   {
     "name": "boringssl",
@@ -351,7 +351,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 40385,
+    "size": 40572,
     "file_count": 36
   },
   {
@@ -441,7 +441,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 217860155,
+    "size": 217864763,
     "file_count": 341
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3779952,
+    "size": 3781849,
     "file_count": 576
   },
   {
@@ -611,7 +611,7 @@
   },
   {
     "name": "rust",
-    "size": 1133474,
+    "size": 1133804,
     "file_count": 138
   },
   {
@@ -636,7 +636,7 @@
   },
   {
     "name": "skia",
-    "size": 3456833,
+    "size": 3456872,
     "file_count": 1178
   },
   {
