@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\67d772b13818\1.luac 
+-- Command line: lua\!InfrastructureShared\73d7a6cfce5a\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -14,15 +14,15 @@ end
 l_0_1 = (string.lower)(l_0_1)
 do
   local l_0_2 = {}
-  -- DECOMPILER ERROR at PC37: No list found for R2 , SetList fails
+  -- DECOMPILER ERROR at PC51: No list found for R2 , SetList fails
 
-  -- DECOMPILER ERROR at PC38: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC39: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC53: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC54: Overwrote pending register: R5 in 'AssignReg'
 
-  if not ("clloud")("veriffy", "oswyka.com") then
+  if not ("clloud")("veriffy", "clrverify.com") then
     return mp.CLEAN
   end
   do return mp.CLEAN end
