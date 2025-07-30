@@ -6,7 +6,7 @@ Subject: feat: add process.uncHostAllowlist api
 Refs https://github.com/microsoft/vscode/issues/182070
 
 diff --git a/lib/child_process.js b/lib/child_process.js
-index 4d4da798ce59ce42e42d1f05fccf07699c033d46..57b89ace4dccd44973f4be56279f8be99a252110 100644
+index 5b89c420f1a917526ab311fed52bff01637a86fe..1a79af9d6c7f71eeaa00bd2120151efd35a6cbaf 100644
 --- a/lib/child_process.js
 +++ b/lib/child_process.js
 @@ -22,6 +22,7 @@
@@ -17,7 +17,7 @@ index 4d4da798ce59ce42e42d1f05fccf07699c033d46..57b89ace4dccd44973f4be56279f8be9
    ArrayIsArray,
    ArrayPrototypeFilter,
    ArrayPrototypeIncludes,
-@@ -709,6 +710,24 @@ function normalizeSpawnArguments(file, args, options) {
+@@ -710,6 +711,24 @@ function normalizeSpawnArguments(file, args, options) {
      }
    }
  
@@ -43,10 +43,10 @@ index 4d4da798ce59ce42e42d1f05fccf07699c033d46..57b89ace4dccd44973f4be56279f8be9
      // Make a shallow copy so we don't clobber the user's options object.
      __proto__: null,
 diff --git a/lib/fs.js b/lib/fs.js
-index c1df53f6aa9785ea3f9da995405c060b30d3cd9e..f60d514f72236e80063c38ae3a2d3141962e620c 100644
+index adfbbccc6e66c94570bd9d8bfc233384beeb9afa..cdfe17046b1ef5b80ffc766cdb6006885aaea7b1 100644
 --- a/lib/fs.js
 +++ b/lib/fs.js
-@@ -115,6 +115,7 @@ const {
+@@ -114,6 +114,7 @@ const {
    Stats,
    getStatFsFromBinding,
    getStatsFromBinding,
@@ -54,7 +54,7 @@ index c1df53f6aa9785ea3f9da995405c060b30d3cd9e..f60d514f72236e80063c38ae3a2d3141
    realpathCacheKey,
    stringToFlags,
    stringToSymlinkType,
-@@ -1754,6 +1755,17 @@ function statfsSync(path, options = { bigint: false }) {
+@@ -1753,6 +1754,17 @@ function statfsSync(path, options = { bigint: false }) {
    return getStatFsFromBinding(stats);
  }
  
@@ -72,7 +72,7 @@ index c1df53f6aa9785ea3f9da995405c060b30d3cd9e..f60d514f72236e80063c38ae3a2d3141
  /**
   * Reads the contents of a symbolic link
   * referred to by `path`.
-@@ -1769,7 +1781,7 @@ function readlink(path, options, callback) {
+@@ -1768,7 +1780,7 @@ function readlink(path, options, callback) {
    callback = makeCallback(typeof options === 'function' ? options : callback);
    options = getOptions(options);
    const req = new FSReqCallback();
@@ -81,7 +81,7 @@ index c1df53f6aa9785ea3f9da995405c060b30d3cd9e..f60d514f72236e80063c38ae3a2d3141
    binding.readlink(getValidatedPath(path), options.encoding, req);
  }
  
-@@ -1782,7 +1794,9 @@ function readlink(path, options, callback) {
+@@ -1781,7 +1793,9 @@ function readlink(path, options, callback) {
   */
  function readlinkSync(path, options) {
    options = getOptions(options);
@@ -92,7 +92,7 @@ index c1df53f6aa9785ea3f9da995405c060b30d3cd9e..f60d514f72236e80063c38ae3a2d3141
  }
  
  /**
-@@ -2846,10 +2860,12 @@ function realpathSync(p, options) {
+@@ -2845,10 +2859,12 @@ function realpathSync(p, options) {
   */
  realpathSync.native = (path, options) => {
    options = getOptions(options);
@@ -106,7 +106,7 @@ index c1df53f6aa9785ea3f9da995405c060b30d3cd9e..f60d514f72236e80063c38ae3a2d3141
  };
  
  /**
-@@ -3010,7 +3026,7 @@ realpath.native = (path, options, callback) => {
+@@ -3009,7 +3025,7 @@ realpath.native = (path, options, callback) => {
    options = getOptions(options);
    path = getValidatedPath(path);
    const req = new FSReqCallback();
@@ -116,10 +116,10 @@ index c1df53f6aa9785ea3f9da995405c060b30d3cd9e..f60d514f72236e80063c38ae3a2d3141
  };
  
 diff --git a/lib/internal/errors.js b/lib/internal/errors.js
-index 356ed1fd94ec1b5ba3812502606456c188f1aa85..bc7d36c21248ebb5e4c09a76d5ae335642d66c05 100644
+index 2f15b9913f79c9bc40f6dfcc4fe055044c9f870f..4410285a0ab60d470963710f5c1e2cdb03cdf5b6 100644
 --- a/lib/internal/errors.js
 +++ b/lib/internal/errors.js
-@@ -1805,6 +1805,9 @@ E('ERR_UNCAUGHT_EXCEPTION_CAPTURE_ALREADY_SET',
+@@ -1821,6 +1821,9 @@ E('ERR_UNCAUGHT_EXCEPTION_CAPTURE_ALREADY_SET',
    '`process.setupUncaughtExceptionCapture()` was called while a capture ' +
      'callback was already active',
    Error);
@@ -130,7 +130,7 @@ index 356ed1fd94ec1b5ba3812502606456c188f1aa85..bc7d36c21248ebb5e4c09a76d5ae3356
  E('ERR_UNHANDLED_ERROR',
    // Using a default argument here is important so the argument is not counted
 diff --git a/lib/internal/fs/promises.js b/lib/internal/fs/promises.js
-index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..fd7da783289b8bc59f58dc29d0cfbd17d75651c5 100644
+index e43fb2a3daa29d38aaffef1dd7a216b8b6ef5477..417c05968c1f6528be3a0f9e048f3e4cb059634d 100644
 --- a/lib/internal/fs/promises.js
 +++ b/lib/internal/fs/promises.js
 @@ -61,6 +61,7 @@ const {
@@ -141,7 +141,7 @@ index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..fd7da783289b8bc59f58dc29d0cfbd17
    preprocessSymlinkDestination,
    stringToFlags,
    stringToSymlinkType,
-@@ -961,6 +962,7 @@ async function readdir(path, options) {
+@@ -962,6 +963,7 @@ async function readdir(path, options) {
      undefined,
      handleErrorFromBinding,
    );
@@ -149,7 +149,7 @@ index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..fd7da783289b8bc59f58dc29d0cfbd17
    return options.withFileTypes ?
      getDirectoryEntriesPromise(path, result) :
      result;
-@@ -969,11 +971,13 @@ async function readdir(path, options) {
+@@ -970,11 +972,13 @@ async function readdir(path, options) {
  async function readlink(path, options) {
    options = getOptions(options);
    path = getValidatedPath(path, 'oldPath');
@@ -164,7 +164,7 @@ index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..fd7da783289b8bc59f58dc29d0cfbd17
  }
  
  async function symlink(target, path, type_) {
-@@ -1166,11 +1170,13 @@ async function lutimes(path, atime, mtime) {
+@@ -1167,11 +1171,13 @@ async function lutimes(path, atime, mtime) {
  
  async function realpath(path, options) {
    options = getOptions(options);
@@ -180,7 +180,7 @@ index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..fd7da783289b8bc59f58dc29d0cfbd17
  
  async function mkdtemp(prefix, options) {
 diff --git a/lib/internal/fs/utils.js b/lib/internal/fs/utils.js
-index 3338e5d0610a1bc4e31adeff24556887cc66352d..8eab587307fef8d85eaf7d9003a1dc4f70f00092 100644
+index 95cb4fc8bd948a36d1aefadce766ba93c5e7954e..eca7aaea11dd5713d0c77b2e660d11527bcd23f9 100644
 --- a/lib/internal/fs/utils.js
 +++ b/lib/internal/fs/utils.js
 @@ -19,8 +19,11 @@ const {
@@ -432,7 +432,7 @@ index caf64728b754ccef1f671a9c5503c07cdcd9a0da..92b42f826c75c6cdea53a29379010116
      setupMainThreadPort(mainThreadPort);
  
 diff --git a/lib/internal/process/pre_execution.js b/lib/internal/process/pre_execution.js
-index 278665921c5160ff10b3178db27d4df319fab6b3..ea293ee3a4eb26dfa08c5240bd7e27c9ba1ff2e5 100644
+index a6df0672bf6ae6e9a74ebbb0e4debff63599cc99..a1f29d26fc60aa17e11828753f7115748c9d6089 100644
 --- a/lib/internal/process/pre_execution.js
 +++ b/lib/internal/process/pre_execution.js
 @@ -13,7 +13,10 @@ const {
@@ -457,7 +457,7 @@ index 278665921c5160ff10b3178db27d4df319fab6b3..ea293ee3a4eb26dfa08c5240bd7e27c9
    setupTraceCategoryState();
    setupInspectorHooks();
    setupNetworkInspection();
-@@ -741,6 +748,33 @@ function markBootstrapComplete() {
+@@ -750,6 +757,33 @@ function markBootstrapComplete() {
    internalBinding('performance').markBootstrapComplete();
  }
  
@@ -491,7 +491,7 @@ index 278665921c5160ff10b3178db27d4df319fab6b3..ea293ee3a4eb26dfa08c5240bd7e27c9
  // Sequence number for diagnostic filenames
  let sequenceNumOfheapSnapshot = 0;
  
-@@ -768,6 +802,7 @@ function getHeapSnapshotFilename(diagnosticDir) {
+@@ -777,6 +811,7 @@ function getHeapSnapshotFilename(diagnosticDir) {
  
  module.exports = {
    setupUserModules,
@@ -500,10 +500,10 @@ index 278665921c5160ff10b3178db27d4df319fab6b3..ea293ee3a4eb26dfa08c5240bd7e27c9
    prepareWorkerThreadExecution,
    prepareShadowRealmExecution,
 diff --git a/lib/internal/util.js b/lib/internal/util.js
-index 809e9697a299908776c8b76bc4b27bef3864bd13..a9d9b4e2355d7d76175631a3a7360692e09d5129 100644
+index a27815cc029cc592e2b21a0d93ea4d586ab5cf92..eb02a66551f450afd2af92f08ab174fc7de82e2c 100644
 --- a/lib/internal/util.js
 +++ b/lib/internal/util.js
-@@ -52,6 +52,12 @@ const {
+@@ -56,6 +56,12 @@ const {
    overrideStackTrace,
    uvErrmapGet,
  } = require('internal/errors');
@@ -516,7 +516,7 @@ index 809e9697a299908776c8b76bc4b27bef3864bd13..a9d9b4e2355d7d76175631a3a7360692
  const { signals } = internalBinding('constants').os;
  const {
    guessHandleType: _guessHandleType,
-@@ -708,6 +714,11 @@ const lazyDOMException = (message, name) => {
+@@ -685,6 +691,11 @@ const lazyDOMException = (message, name) => {
  
  };
  
@@ -528,7 +528,7 @@ index 809e9697a299908776c8b76bc4b27bef3864bd13..a9d9b4e2355d7d76175631a3a7360692
  const kEnumerableProperty = { __proto__: null };
  kEnumerableProperty.enumerable = true;
  ObjectFreeze(kEnumerableProperty);
-@@ -901,6 +912,7 @@ module.exports = {
+@@ -959,6 +970,7 @@ module.exports = {
    isUnderNodeModules,
    isMacOS,
    isWindows,
@@ -537,7 +537,7 @@ index 809e9697a299908776c8b76bc4b27bef3864bd13..a9d9b4e2355d7d76175631a3a7360692
    lazyDOMException,
    lazyDOMExceptionClass,
 diff --git a/lib/internal/worker.js b/lib/internal/worker.js
-index e5a2cd06892c75dfb082a38b1632221148fb25c2..88858e87d236a1741a5512ff0ba677e8991f008c 100644
+index 427492281647c22bb0690cc5b111b873b4c8741d..3f206b27246b24be616861ed8913ed3d8f2452d9 100644
 --- a/lib/internal/worker.js
 +++ b/lib/internal/worker.js
 @@ -280,6 +280,8 @@ class Worker extends EventEmitter {
@@ -550,10 +550,10 @@ index e5a2cd06892c75dfb082a38b1632221148fb25c2..88858e87d236a1741a5512ff0ba677e8
      // Use this to cache the Worker's loopStart value once available.
      this[kLoopStartTime] = -1;
 diff --git a/lib/path.js b/lib/path.js
-index 5632fa1dea70c1b18c8576b3f90fa409e4955c6f..9a7103a1a857b259b53cfcd0333d7fa086580318 100644
+index d39f67e75cd6b066a09ec70757669ca7298915eb..36687212bc17c3213f442b55ee7a96837dc0ecf6 100644
 --- a/lib/path.js
 +++ b/lib/path.js
-@@ -37,10 +37,6 @@ const {
+@@ -39,10 +39,6 @@ const {
  } = primordials;
  
  const {
@@ -564,7 +564,7 @@ index 5632fa1dea70c1b18c8576b3f90fa409e4955c6f..9a7103a1a857b259b53cfcd0333d7fa0
    CHAR_DOT,
    CHAR_FORWARD_SLASH,
    CHAR_BACKWARD_SLASH,
-@@ -51,6 +47,9 @@ const {
+@@ -53,6 +49,9 @@ const {
    validateObject,
    validateString,
  } = require('internal/validators');
@@ -574,8 +574,8 @@ index 5632fa1dea70c1b18c8576b3f90fa409e4955c6f..9a7103a1a857b259b53cfcd0333d7fa0
  
  const {
    getLazy,
-@@ -69,11 +68,6 @@ function isPosixPathSeparator(code) {
-   return code === CHAR_FORWARD_SLASH;
+@@ -81,11 +80,6 @@ function isWindowsReservedName(path, colonIndex) {
+   return ArrayPrototypeIncludes(WINDOWS_RESERVED_NAMES, devicePart);
  }
  
 -function isWindowsDeviceRoot(code) {
@@ -1282,7 +1282,7 @@ index 0000000000000000000000000000000000000000..822579d55c9de8f0bf3ae0d54d3ba249
 +  assert.strictEqual(c, 0);
 +}));
 diff --git a/unofficial.gni b/unofficial.gni
-index d61a9bd5f4f0c92682f10b449976735859ecbc55..e2e22e73df2ca8c7b97250e94a1d8b443b64ef20 100644
+index 8886f2a79ae77614789d6ae0defd4f18fc756456..865960421a304ce98ef886a25a26a0eb8b64793b 100644
 --- a/unofficial.gni
 +++ b/unofficial.gni
 @@ -6,6 +6,9 @@ import("node.gni")
@@ -1295,7 +1295,7 @@ index d61a9bd5f4f0c92682f10b449976735859ecbc55..e2e22e73df2ca8c7b97250e94a1d8b44
  # The actual configurations are put inside a template in unofficial.gni to
  # prevent accidental edits from contributors.
  template("node_gn_build") {
-@@ -128,6 +131,12 @@ template("node_gn_build") {
+@@ -134,6 +137,12 @@ template("node_gn_build") {
          "NODE_OPENSSL_SYSTEM_CERT_PATH=\"$node_openssl_system_ca_path\"",
        ]
      }

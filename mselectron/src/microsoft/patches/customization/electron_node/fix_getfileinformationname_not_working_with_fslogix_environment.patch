@@ -1,0 +1,51 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Wed, 23 Jul 2025 18:28:18 +0900
+Subject: fix: GetFileInformationName not working with FSLogix environment
+
+Refs https://github.com/libuv/libuv/issues/4844
+For https://github.com/microsoft/vscode/issues/251448
+
+diff --git a/deps/uv/src/win/fs.c b/deps/uv/src/win/fs.c
+index 27248f644f381bbdeeef7c65401c74ab9474d0ad..8619d729f78903de208a1320f009a0120136a957 100644
+--- a/deps/uv/src/win/fs.c
++++ b/deps/uv/src/win/fs.c
+@@ -181,6 +181,28 @@ void uv__fs_init(void) {
+   uv__fd_hash_init();
+ }
+ 
++INLINE static int fs__fslogix_environment() {
++  static int fslogix = -1;
++  int err;
++  HKEY fslogix_key;
++
++  if (fslogix != -1)
++    return fslogix;
++
++  err = RegOpenKeyExW(HKEY_LOCAL_MACHINE,
++                      L"SOFTWARE\\FSLogix",
++                      0,
++                      KEY_QUERY_VALUE | KEY_WOW64_64KEY,
++                      &fslogix_key);
++  if (err != ERROR_SUCCESS) {
++    fslogix = 0;
++  } else {
++    fslogix = 1;
++    RegCloseKey(fslogix_key);
++  }
++  return fslogix;
++}
++
+ 
+ INLINE static int fs__readlink_handle(HANDLE handle,
+                                       char** target_ptr,
+@@ -1713,6 +1735,9 @@ INLINE static fs__stat_path_return_t fs__stat_path(WCHAR* path,
+     switch(GetLastError()) {
+       case ERROR_FILE_NOT_FOUND:
+       case ERROR_PATH_NOT_FOUND:
++        if (fs__fslogix_environment()) {
++          return FS__STAT_PATH_TRY_SLOW;
++        }
+       case ERROR_NOT_READY:
+       case ERROR_BAD_NET_NAME:
+         /* These errors aren't worth retrying with the slow path. */
