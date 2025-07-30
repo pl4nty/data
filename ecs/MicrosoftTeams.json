@@ -1848,6 +1848,7 @@
             "EnableMessageSensitivityLabel": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
             "EnableShowTypingMiddleware": true,
+            "EnableWebSocketsForAugLoopQueryRequests": true,
             "MigrateGetTeamsAppID": true
         },
         "RingOptions": {
@@ -1936,6 +1937,12 @@
     },
     "TeamsDevCenter-Service": {
         "allowedTenantIdAppIdPairsForTakingOwnershipOfGlobalApps": [
+            {
+                "appIds": [
+                    "280c0dfd-72bb-4297-b976-e4fab7ee82b8"
+                ],
+                "tenantId": "3566798d-3d31-4a2f-a3df-3a4fe9c9fd40"
+            },
             {
                 "appIds": [
                     "5e53afb3-81e6-4c1e-99bd-fb82ed446e14"
@@ -2291,15 +2298,6 @@
                 "SWE": "se",
                 "TWN": "tw",
                 "ZAF": "za"
-            }
-        }
-    },
-    "TeamsNaaSAuditing": {
-        "rootSettingConfig": {
-            "settings": {
-                "NaaS": {
-                    "AllowedAuditOperations": []
-                }
             }
         }
     },
@@ -3963,6 +3961,7 @@
             "devMenuEnabled": false,
             "dontFailAltOnNewWindowException": false,
             "enableGeneralPackageManagementNDI": false,
+            "enableGenericPackageModularInstaller": false,
             "enableJsErrorLogging": false,
             "enableLaunchPublicPreview": false,
             "enableNewMacRendererColorSpace": false,
