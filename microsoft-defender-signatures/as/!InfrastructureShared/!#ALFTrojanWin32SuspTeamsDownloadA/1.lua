@@ -11,30 +11,34 @@ local l_0_1 = GetRollingQueueKeyValues("TEAMS_Download", "ClickedLink")
 if l_0_1 then
   l_0_0.TEAMS_Download = l_0_1
 end
-local l_0_2 = {}
-l_0_2.SourcSig = "SuspTeamsDownload"
-l_0_2.Evidence = l_0_0
-l_0_2.FileName = (mp.getfilename)()
-local l_0_3, l_0_4 = safeJsonSerialize(l_0_2, nil, nil, true)
-local l_0_5 = set_research_data
-local l_0_6 = "Evidence"
-local l_0_7 = MpCommon.Base64Encode
-l_0_7 = l_0_7(l_0_3 or l_0_4)
-l_0_5(l_0_6, l_0_7, false)
-l_0_5 = GetCurrentPPID
-l_0_5 = l_0_5()
-if l_0_5 then
-  l_0_6 = MpCommon
-  l_0_6 = l_0_6.BmTriggerSig
-  l_0_7 = l_0_5
-  l_0_6(l_0_7, "LUA:TEAMS_RelatedDetection", l_0_3 or l_0_4)
+local l_0_2 = GetRollingQueueKeyValues("TEAMS_CALL_PLACED", "Meeting")
+if l_0_2 then
+  l_0_0.TEAMS_Meetings = l_0_2
+end
+local l_0_3 = {}
+l_0_3.SourcSig = "SuspTeamsDownload"
+l_0_3.Evidence = l_0_0
+l_0_3.FileName = (mp.getfilename)()
+local l_0_4, l_0_5 = safeJsonSerialize(l_0_3, nil, nil, true)
+local l_0_6 = set_research_data
+local l_0_7 = "Evidence"
+local l_0_8 = MpCommon.Base64Encode
+l_0_8 = l_0_8(l_0_4 or l_0_5)
+l_0_6(l_0_7, l_0_8, false)
+l_0_6 = GetCurrentPPID
+l_0_6 = l_0_6()
+if l_0_6 then
+  l_0_7 = MpCommon
+  l_0_7 = l_0_7.BmTriggerSig
+  l_0_8 = l_0_6
+  l_0_7(l_0_8, "LUA:TEAMS_RelatedDetection", l_0_4 or l_0_5)
 end
 do
   do
-    l_0_6 = mp
-    l_0_6 = l_0_6.INFECTED
-    do return l_0_6 end
-    -- DECOMPILER ERROR at PC52: freeLocal<0 in 'ReleaseLocals'
+    l_0_7 = mp
+    l_0_7 = l_0_7.INFECTED
+    do return l_0_7 end
+    -- DECOMPILER ERROR at PC59: freeLocal<0 in 'ReleaseLocals'
 
   end
 end

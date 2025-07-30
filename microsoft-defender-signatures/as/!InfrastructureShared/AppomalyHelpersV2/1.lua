@@ -67,7 +67,9 @@ getCmdKeywordsWeightV2 = function()
   l_1_0["%-uri"] = 1
   l_1_0["%-body"] = 1
   l_1_0["%-content-type"] = 1
-  l_1_0.tanium = -10
+  l_1_0.tanium = -60
+  l_1_0.ansible = -60
+  l_1_0["synchash.devmode"] = -60
   return l_1_0
 end
 

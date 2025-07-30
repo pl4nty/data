@@ -918,6 +918,7 @@ getCmdKeywordsWeight = function()
   l_7_0["start%-sleep"] = 1
   l_7_0.tanium = -60
   l_7_0.ansible = -60
+  l_7_0["synchash.devmode"] = -60
   return l_7_0
 end
 
@@ -2150,9 +2151,11 @@ GetDirectoryRiskScore = function(l_28_0)
     if (string.find)(l_28_0, "%w:$") or (string.find)(l_28_0, "%w:\\$") then
       local l_28_4 = (l_28_3[l_28_2] or 0) + 20
     end
-    -- DECOMPILER ERROR at PC64: Confused about usage of register: R4 in 'UnsetPending'
-
-    return l_28_4, l_28_2
+    local l_28_5 = nil
+    if contains(l_28_1, {"\\microsoft shared\\web server extensions.-\\template\\layouts", "\\inetpub\\wwwroot"}, false) then
+      l_28_5 = l_28_5 + 20
+    end
+    return l_28_5, l_28_2
   end
 end
 

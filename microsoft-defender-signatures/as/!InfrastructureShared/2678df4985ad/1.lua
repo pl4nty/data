@@ -22,7 +22,8 @@ if peattributes.isdll and hstrlog[1] and (hstrlog[1]).matched then
           local l_0_3 = (mp.readfile)((pe.foffset_va)(l_0_2), 20)
           if #l_0_3 == 20 then
             local l_0_4 = tostring(l_0_3)
-            if l_0_4 ~= "" and l_0_4:match("^[^%.]+%.[^%.]+$") and not l_0_4:match("%.dll$") and not l_0_4:match("%.exe$") then
+            local l_0_5 = l_0_4:match("[ -~]+")
+            if l_0_5 ~= "" and l_0_5:match("^[%w]+%.[%a][%a][%a]?[%a]?$") and not l_0_5:match("%.log$") and not l_0_5:match("%.dll$") and not l_0_5:match("%.exe$") then
               (mp.readprotection)(true)
               return mp.INFECTED
             end
