@@ -435,14 +435,9 @@ var CloudExperienceHost;
                     break;
             }
             if (!scenario || (scenario.length === 0)) {
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("DoNotCrashCxhWhenNoArgs")) {
-                    CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("CloseCXHDueToEmptyScenario");
-                    WinJS.Application.stop();
-                    window.close();
-                }
-                else {
-                    this._crashCxh(new Error("Scenario not set. If you are in debug mode, please launch with a URI."));
-                }
+                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("CloseCXHDueToEmptyScenario");
+                WinJS.Application.stop();
+                window.close();
             }
             this._scenario = scenario;
         }

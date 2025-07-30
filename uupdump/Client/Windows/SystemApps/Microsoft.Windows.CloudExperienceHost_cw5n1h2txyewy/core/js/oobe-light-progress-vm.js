@@ -5,6 +5,7 @@ define(['lib/knockout', 'legacy/navigationManager', 'legacy/appViewManager'], (k
 
             this.progressText = params.progressText ? params.progressText : ko.observable(res.getString("Progress"));
             this.progressSubtext = params.progressSubtext ? params.progressSubtext : ko.observable("");
+            this.showProgressSubtext = ko.observable(params.progressSubtext ? true : false);
 
             appViewManager.subscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.Language);
             appViewManager.subscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.UpdateTransitionMessage);
@@ -13,11 +14,6 @@ define(['lib/knockout', 'legacy/navigationManager', 'legacy/appViewManager'], (k
             let progressTextEle = document.getElementById("_progressText");
             if (progressTextEle && !params.progressText) {
                 progressTextEle.style.opacity = 0;
-            }
-
-            let progressSubtextEle = document.getElementById("_progressSubtext");
-            if (progressSubtextEle && !params.progressSubtext) {
-                progressSubtextEle.style.opacity = 0;
             }
         }
 

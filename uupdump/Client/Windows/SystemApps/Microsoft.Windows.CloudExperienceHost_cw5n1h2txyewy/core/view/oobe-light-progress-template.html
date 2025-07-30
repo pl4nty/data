@@ -6,6 +6,8 @@
             <circle class="radial radial-infinite" cx="8px" cy="8px" r="7px"></circle>
         </svg>
         <h4 id="_progressText" data-bind="{text: progressText}" aria-live="assertive" aria-role="alert" tabindex="0"></h4>
+        <!-- ko if: showProgressSubtext -->
         <p id="_progressSubtext" data-bind="{html: progressSubtext}" aria-live="assertive" aria-role="alert" tabindex="0"></p>
+        <!-- /ko -->
     </div>
 </div>
