@@ -1973,7 +1973,6 @@
         "enableDogfoodAccess": false,
         "enableFederatedCredentialsForGit": true,
         "enablePLSRegion": true,
-        "enableTeamsAgentConfigService": true,
         "flaggedApps": [
             "b88f06de-1358-4314-9094-ae97ca0ff3d4",
             "8cf5bd6d-2f20-4205-8a21-d7072c70d0b9"
@@ -5153,6 +5152,11 @@
             "Media_CallTranscript",
             "Media_Album"
         ],
+        "Notify": {
+            "TFL": {
+                "TenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+            }
+        },
         "RosterEnrich": {
             "ACL": {
                 "ChannelOverTeamRoster": true
