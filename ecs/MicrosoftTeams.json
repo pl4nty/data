@@ -30,6 +30,7 @@
             "appCapabilities": [
                 "all"
             ],
+            "bypassStoreEntitlementFilterApps": [],
             "hubName": "Unknown",
             "supportedManifestVersions": [
                 "all"

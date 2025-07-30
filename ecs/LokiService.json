@@ -400,7 +400,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20250714.4.0",
+        "LpcVersion": "1.20250721.2.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -697,6 +697,7 @@
         "EnableAtMentionInChatTeachingMoment": true,
         "EnableAttributionLogging": true,
         "EnableBizchatLocalFilesSupport": true,
+        "EnableCalendarSkipCache": true,
         "EnableCollaborationInstensityInsights": true,
         "EnableCollaborationNetworksGDRPExport": true,
         "EnableCompanionLicenseCheck": true,
@@ -1549,7 +1550,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250726.3.0",
+        "PeopleInTaskbarDFVersion": "1.20250729.2.0",
         "PeopleInTaskbarMsitVersion": "1.20250724.2.0",
         "PeopleInTaskbarProdVersion": "1.20250719.2.0",
         "campaignSchedules": {
