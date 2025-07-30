@@ -23,8 +23,10 @@ end
 if (string.sub)(l_0_0, -4) == ".dll" then
   checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowRenameA", "Lua:PossibleDllHijackExecFlowRenameA")
   checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowRenameB", "Lua:PossibleDllHijackExecFlowRenameB")
-  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowA", "Lua:PossibleDllHijackExecFlowA")
-  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowA", "Lua:PossibleDllHijackExecFlowB")
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowAF", "Lua:PossibleDllHijackExecFlowAF")
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowAU", "Lua:PossibleDllHijackExecFlowAU")
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowBF", "Lua:PossibleDllHijackExecFlowBF")
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowBU", "Lua:PossibleDllHijackExecFlowBU")
 end
 return mp.CLEAN
 
