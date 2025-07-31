@@ -708,6 +708,7 @@
         "EnableCustomDnsResolution": true,
         "EnableDedicatedSubstrateResourceUri": true,
         "EnableDummyInsights": false,
+        "EnableEventCategoryColors": true,
         "EnableExtendedRelationships": true,
         "EnableFetchingSocialProximityFrom3SApi": false,
         "EnableFetchingSocialProximityFrom3SSuggestionsApi": false,
