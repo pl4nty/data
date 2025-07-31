@@ -18,20 +18,40 @@ if ((hstrlog[1] and (hstrlog[1]).matched) or not hstrlog[2] or (hstrlog[2]).matc
     if l_0_1 ~= nil then
       local l_0_2 = (mp.readfile)((pe.foffset_va)(l_0_1), 80)
       if l_0_2 ~= nil and #l_0_2 == 80 then
-        for l_0_6 = 0, 15 do
-          local l_0_7 = (mp.readu_u32)(l_0_2, l_0_6 * 4 + 1)
-          local l_0_8 = (pe.foffset_va)(l_0_7)
-          if l_0_8 ~= nil and l_0_8 ~= 4294967295 then
-            local l_0_9 = (mp.readfile)(l_0_8, 20)
-            if #l_0_9 == 20 then
-              local l_0_10 = tostring(l_0_9)
-              local l_0_11 = l_0_10:match("[ -~]+")
-              if l_0_11 ~= "" and l_0_11:match("^[%w]+%.[%a][%a][%a]?[%a]?$") and not l_0_11:match("%.log$") and not l_0_11:match("%.dll$") and not l_0_11:match("%.exe$") then
+        local l_0_3 = "k\000e\000r\000n\000e\000l\003\002\000.\000d\000l\000l\000"
+        local l_0_4 = 0
+        local l_0_5 = 0
+        local l_0_6 = 0
+        for l_0_10 = 0, 15 do
+          local l_0_11 = (mp.readu_u32)(l_0_2, l_0_10 * 4 + 1)
+          local l_0_12 = (pe.foffset_va)(l_0_11)
+          if l_0_12 ~= nil and l_0_12 ~= 4294967295 then
+            local l_0_13 = (mp.readfile)(l_0_12, 20)
+            if #l_0_13 == 20 then
+              local l_0_14 = tostring(l_0_13)
+              local l_0_15 = l_0_14:match("[ -~]+")
+              if l_0_15 ~= "" and l_0_15:match("^[%w]+%.[%a][%a][%a]?[%a]?$") and not l_0_15:match("%.log$") and not l_0_15:match("%.dll$") and not l_0_15:match("%.exe$") then
                 (mp.readprotection)(true)
                 return mp.INFECTED
+              else
+                if l_0_15 == "kernel32.dll" or l_0_15 == "k" and l_0_14:sub(1, #l_0_3) == l_0_3 then
+                  l_0_4 = 1
+                else
+                  if l_0_15 == "ExitProcess" then
+                    l_0_5 = 1
+                  else
+                    if l_0_14:match("%.\000e\000x\000e\000") then
+                      l_0_6 = 1
+                    end
+                  end
+                end
               end
             end
           end
+        end
+        if l_0_4 == 1 and l_0_5 == 1 and l_0_6 == 1 then
+          (mp.readprotection)(true)
+          return mp.INFECTED
         end
       end
     end
