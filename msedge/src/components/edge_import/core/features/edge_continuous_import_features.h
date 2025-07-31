@@ -315,6 +315,14 @@ BASE_DECLARE_FEATURE(kContinuousImportVisibleBrowserObserver);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kPersonalizedLaunch);
 
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const char kPersonalizedLaunchSiteSuggestionsRestoredOnLaunch[];
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const char kPersonalizedLaunchSiteSuggestionsRestoredOnUserOptIn[];
+
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const base::FeatureParam<std::string> kVariantTypeForSiteSuggestions;
+
 // Feature flag for disabling Autolaunch Activation across all devices for a
 // specific profile.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)

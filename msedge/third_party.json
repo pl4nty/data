@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2080352,
+    "size": 2079639,
     "file_count": 178
   },
   {
@@ -16,8 +16,8 @@
   },
   {
     "name": "android_deps",
-    "size": 10335732,
-    "file_count": 163
+    "size": 10714864,
+    "file_count": 167
   },
   {
     "name": "android_prebuilts",
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14612966,
+    "size": 14613931,
     "file_count": 830
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32288174,
-    "file_count": 3953
+    "size": 32297419,
+    "file_count": 3954
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17965274,
+    "size": 17970284,
     "file_count": 1009
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "name": "dawn",
-    "size": 36542575,
+    "size": 36542593,
     "file_count": 95
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "name": "grpc",
-    "size": 31327693,
+    "size": 31327483,
     "file_count": 3477
   },
   {
@@ -276,7 +276,7 @@
   },
   {
     "name": "hunspell",
-    "size": 4405685,
+    "size": 4405670,
     "file_count": 80
   },
   {
@@ -361,7 +361,7 @@
   },
   {
     "name": "libc++",
-    "size": 6161717,
+    "size": 6161497,
     "file_count": 936
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18706411,
+    "size": 18715627,
     "file_count": 19
   },
   {
@@ -486,7 +486,7 @@
   },
   {
     "name": "mutter",
-    "size": 28385478,
+    "size": 28385473,
     "file_count": 1980
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "name": "nearby",
-    "size": 279214,
+    "size": 279289,
     "file_count": 52
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 27068,
+    "size": 28096,
     "file_count": 14
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3781849,
+    "size": 3785496,
     "file_count": 576
   },
   {
@@ -636,7 +636,7 @@
   },
   {
     "name": "skia",
-    "size": 3456872,
+    "size": 3457239,
     "file_count": 1178
   },
   {
