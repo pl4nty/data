@@ -606,7 +606,6 @@
         "FlightingEnableZonalNATGateway": true,
         "FlightingForBackfillHOBOTagForVnetAndNSG": false,
         "FlightingForCreateVnetAndNSGwithHOBOTag": true,
-        "FlightingForPublicIPVirtualTagBackfillTimerFunction": true,
         "FlightingSyncResourceGroupVirtualNetworkUsage": true,
         "FlightingTimerFunctionCheckPublicIPUsage": true,
         "FlightingTimerFunctionDetectOrphanPublicIP": true,
