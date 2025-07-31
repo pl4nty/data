@@ -25,23 +25,26 @@ if l_0_0 then
                 end
                 if l_0_8 then
                   (bm.add_related_string)("OFN", l_0_8, bm.RelatedStringBMReport)
+                  if not contains((string.lower)(l_0_8), "onedrive") then
+                    (bm.trigger_sig)("OneDriveMasqueraded", l_0_8)
+                  end
                 end
                 do return mp.INFECTED end
-                -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end

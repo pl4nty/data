@@ -52,8 +52,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
         if l_0_0.Dll_Path then
           (bm.add_threat_file)(l_0_0.Dll_Path)
         end
-        ;
-        (bm.trigger_sig)("Temp_SideLoading", l_0_3)
+        return mp.INFECTED
       end
       return mp.CLEAN
     end
