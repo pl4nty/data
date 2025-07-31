@@ -1068,18 +1068,6 @@
     {
         "category": "Default",
         "expressRoute": false,
-        "id": 180,
-        "required": true,
-        "serviceArea": "Skype",
-        "serviceAreaDisplayName": "Microsoft Teams",
-        "tcpPorts": "443",
-        "urls": [
-            "compass-ssl.microsoft.com"
-        ]
-    },
-    {
-        "category": "Default",
-        "expressRoute": false,
         "id": 184,
         "required": true,
         "serviceArea": "Common",
