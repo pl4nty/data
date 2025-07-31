@@ -1830,6 +1830,7 @@
         "GroupCopilotRolloutFlags": {
             "CheckTranscriptStateBeforeIngestion": true,
             "EnableAuditEventForProactiveMessages": true,
+            "EnableBatchTranscriptRequests": true,
             "EnableCalendarIngestionFromSessionMetadata": true,
             "EnableCallSessionEndNotification": true,
             "EnableCallSessionEndNotificationV2": false,
@@ -1840,8 +1841,10 @@
             "EnableLocalizedAskFacilitator": true,
             "EnableLocalizedSuggestions": true,
             "EnableMeetingStateCheckFromCallConversationData": true,
+            "EnableNamedHttpClientWithConnectionPooling": true,
             "EnableUsingBotNameFromContext": true,
-            "ShouldUseMASTranscriptForMeetingData": true
+            "ShouldUseMASTranscriptForMeetingData": true,
+            "TranscriptsIngestionWaitTimeInSec": 5
         },
         "ODSPFeatureFlags": {
             "DisableAtMentionSuggestionInWelcomeMessage": true,
@@ -1974,7 +1977,6 @@
         "enableDogfoodAccess": false,
         "enableFederatedCredentialsForGit": true,
         "enablePLSRegion": true,
-        "enableTeamsAgentConfigService": true,
         "flaggedApps": [
             "b88f06de-1358-4314-9094-ae97ca0ff3d4",
             "8cf5bd6d-2f20-4205-8a21-d7072c70d0b9"
@@ -4263,6 +4265,8 @@
         "windowcontrols": {
             "enableBackdropEffectMargins": true,
             "enableBringWindowToFront": false,
+            "enableCustomOcclusionTrackingForSpareWindow": false,
+            "enableCustomOcclusionTrackingOnMac": false,
             "enableDownloadWindow": false,
             "enableHideWindowControls": false,
             "enableNotificationsWindowFourCornerPositioning": false,
