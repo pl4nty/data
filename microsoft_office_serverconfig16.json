@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19103.40127-->
+    <!--Build: 16.0.19125.40126-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -1314,7 +1314,7 @@
     </o:service>
     <o:service o:name="LoopWebServiceBaseURL" o:authentication="2">
       <o:url>https://prod.api.loop.cloud.microsoft/</o:url>
-      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.loop.cloud.microsoft" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="21e903d7-8d1b-423b-b5e9-4f2afe3b28e1" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="MeControlLiveIDUrl">
       <o:url>https://account.microsoft.com/?ref=ocpp</o:url>
@@ -1702,8 +1702,13 @@
       <o:url>https://discovery.print.microsoft.com/api/mod1.0/devices?limit=65535</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://print.print.microsoft.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
-    <o:service o:name="OCMSubstrateHost">
+    <o:service o:name="OCMSubstrateHost" o:authentication="2">
       <o:url>https://substrate.office.com</o:url>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://substrate.office.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
+    <o:service o:name="OCMSubstrateValidateGpt" o:authentication="2">
+      <o:url>https://substrate.office.com/m365Copilot/ValidateGpt</o:url>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://substrate.office.com/sydney" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OCMReputationTokenHost">
       <o:url>https://dataservice.o365filtering.com</o:url>
@@ -2532,6 +2537,7 @@
     <o:token o:name="OCMPolicyFallbackEnabled">true</o:token>
     <o:token o:name="OCMAddonFeatureEnabled">true</o:token>
     <o:token o:name="FluidAudience">Production</o:token>
+    <o:token o:name="OutlookDisabledFeaturesRing">1</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
