@@ -22,7 +22,7 @@
         "Branding_And_Licensing": true,
         "BuildDummyUpnWithDomainName": true,
         "BypassImageCheckInOAI": true,
-        "CASEnableGetCloudPCsByPlatformSdk": false,
+        "CASEnableGetCloudPCsByPlatformSdk": true,
         "CapacityDbEnableOrderByInQuery": true,
         "CleanEntitiesOfDeletedResources": true,
         "CleanUpRDAgentTempFolder": true,
