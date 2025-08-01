@@ -811,6 +811,7 @@
         "EnableScopeTagUX": true,
         "EnableSearchBox": true,
         "EnableSendEmailByConditions": true,
+        "EnableSendUserToDdsFastStream": true,
         "EnableSendUsersMessageInNonEudbMoveFlow": true,
         "EnableServicePlanSkuRemoteConfigV2andFamilyDefinition": true,
         "EnableSetFLSDefaultCloudPC": true,
