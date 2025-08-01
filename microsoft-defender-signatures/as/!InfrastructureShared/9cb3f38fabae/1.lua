@@ -59,6 +59,10 @@ do
 
           if SuspMacPathsToMonitor(l_0_15.value, true) then
             (bm.add_related_string)("persisted_path", l_0_15.value, bm.RelatedStringBMReport)
+            -- DECOMPILER ERROR at PC141: Confused about usage of register: R9 in 'UnsetPending'
+
+            ;
+            (bm.add_related_file)(l_0_15.value)
             return mp.INFECTED
           end
         end
