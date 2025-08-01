@@ -33,6 +33,8 @@ else
 
           if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", R10_PC120.value) then
             (bm.add_related_string)("persisted_path", R10_PC120.value, bm.RelatedStringBMReport)
+            ;
+            (bm.add_related_file)(R10_PC120.value)
             return mp.INFECTED
           end
         end

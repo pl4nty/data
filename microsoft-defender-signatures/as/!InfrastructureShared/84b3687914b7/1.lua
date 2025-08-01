@@ -1,8 +1,8 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\a1b3abed189d\1.luac 
+-- Command line: lua\!InfrastructureShared\84b3687914b7\1.luac 
 
 -- params : ...
 -- function num : 0
-TrackPidAndTechniqueBM("BM", "T1078.001", "Persistence_ValidAccounts_enableGuestUser")
+sms_untrusted_process()
 return mp.INFECTED
 
