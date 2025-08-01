@@ -372,6 +372,105 @@
                     "variables": {}
                 }
             }
+        },
+        "Floodgate_Campaign_AdminPortal.e187a7f9-a8d3-496a-835d-5b1d1b7a1d62": {
+            "CampaignId": "e187a7f9-a8d3-496a-835d-5b1d1b7a1d62",
+            "EndTimeUtc": "2026-01-30T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 15552000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 80,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-07-02T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "BackupTurnedOff",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very dissatisfied",
+                                    "questionLabel": "How satisfied are you with the Microsoft 365 Backup product?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very satisfied",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "MultiSelect Verbatim",
+                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Unhappy with onboarding experience",
+                                        "Price too high",
+                                        "Insufficient features",
+                                        "Product is not relevant for our use case",
+                                        "Found a better competitor offering",
+                                        "Poor customer service",
+                                        "Performance is not up to the mark",
+                                        "Some other reason"
+                                    ],
+                                    "id": "multiselect1",
+                                    "questionLabel": "What is your reason to disable Microsoft 365 Backup? (Select all that apply)",
+                                    "required": true,
+                                    "type": "MultipleChoice",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please elaborate your response to help us improve the product",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/e187a7f9-a8d3-496a-835d-5b1d1b7a1d62/a65513a6-7933-46ac-a986-46418f9c32dc/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
         }
     },
     "ChillCopilotStudio": {
@@ -820,6 +919,124 @@
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/3beda878-1073-422b-b5e8-81f6347bcf2e/8f767900-e4aa-4648-8897-0419c1e39820/Web-MicrosoftDefenderXDR/",
                     "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_MicrosoftDefenderXDR.a59ba805-7c42-4c3a-9120-bb94aa340dd5": {
+            "CampaignId": "a59ba805-7c42-4c3a-9120-bb94aa340dd5",
+            "EndTimeUtc": "2025-09-22T21:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 31536000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-07-28T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "CloudConnectorCreation",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 1
+                        }
+                    },
+                    "branchingRules": [
+                        {
+                            "conditions": [
+                                {
+                                    "conditionType": "Equals",
+                                    "conditionValue": true,
+                                    "sourceId": "DidCancel",
+                                    "sourceType": "Variable"
+                                }
+                            ],
+                            "targets": [
+                                {
+                                    "hiddenPageIndices": [],
+                                    "overrideProperties": {
+                                        "questionLabel": "How easy or difficult was the process of cloud connectors creation?"
+                                    },
+                                    "targetOverrideId": "singleselect1",
+                                    "targetPageIndex": 1,
+                                    "type": "Override"
+                                }
+                            ]
+                        }
+                    ],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "We have just two questions.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "We'd love your feedback on Cloud Connectors Creation"
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "1 - Very Difficult",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7 - Very Easy"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How easy or difficult was it to create a new cloud connector?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/a59ba805-7c42-4c3a-9120-bb94aa340dd5/f12b871c-c92c-497a-bb32-19ac322daa1a/Web-MicrosoftDefenderXDR/",
+                    "variables": {
+                        "DidCancel": false
+                    }
                 }
             }
         },

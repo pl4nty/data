@@ -1859,6 +1859,12 @@
             "UserRing": "general"
         },
         "SkillConfig": {
+            "DisableRephrasing": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableResponseRephrasingService",
+                    "IsEnabled": false
+                }
+            ],
             "TeamsWebSearchEnableAdditionalLanguageInstructions": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableAdditionalLanguageInstructions",
