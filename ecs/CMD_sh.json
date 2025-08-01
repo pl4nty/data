@@ -633,6 +633,7 @@
         "EnableRMSCheckANCInUse": true,
         "EnableRMSConsumer": true,
         "EnableRawConfirmError": true,
+        "EnableReactViewForUpdateAdDomainAndFailedProvisionPane": true,
         "EnableRebootAfterGpuDriverInstallation": true,
         "EnableRedirectionInfoBanner": true,
         "EnableReduceResume": true,
