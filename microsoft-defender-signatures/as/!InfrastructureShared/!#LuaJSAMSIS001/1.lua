@@ -97,22 +97,41 @@ do
     end
   end
   l_0_2 = l_0_23
-  if l_0_2 == nil or #l_0_2 == 0 then
-    return mp.CLEAN
+  local l_0_32 = ""
+  local l_0_33 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+  do
+    if l_0_33 == mp.SCANREASON_AMSI then
+      local l_0_34, l_0_35 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+      if l_0_34 and l_0_35 ~= nil then
+        l_0_32 = (string.lower)(l_0_35)
+      end
+    end
+    local l_0_36 = (MpCommon.PathToWin32Path)(l_0_32)
+    local l_0_37, l_0_38 = (mp.GetMotwZoneForFile)(l_0_36)
+    local l_0_39, l_0_40 = (mp.GetMotwHostUrlForFile)(l_0_36)
+    if l_0_2 == nil or #l_0_2 == 0 then
+      return mp.CLEAN
+    end
+    local l_0_41 = {}
+    l_0_41.SIG_CONTEXT = "LUA_GENERIC"
+    l_0_41.CONTENT_SOURCE = "AMSI_JS"
+    l_0_41.PROCESS_CONTEXT = "JS Caller"
+    l_0_41.PARENT_CONTEXT = nil
+    l_0_41.FILELESS = "true"
+    l_0_41.CMDLINE_URL = "false"
+    l_0_41.BREAK_AT_FIRST_HIT_MALWARE = "60"
+    l_0_41.BREAK_AT_FIRST_HIT_PHISH = "60"
+    do
+      l_0_41.script_zone = l_0_38 or ""
+      l_0_41.script_motw = l_0_40 or ""
+      l_0_41.script_path = l_0_36 or ""
+      if CheckUrlReputationSimple(l_0_2, l_0_41, 60) then
+        (mp.set_mpattribute)("Lua:AMSI.JS.BadDomainFound.S1")
+      end
+      do return mp.CLEAN end
+      -- DECOMPILER ERROR at PC323: freeLocal<0 in 'ReleaseLocals'
+
+    end
   end
-  local l_0_32 = {}
-  l_0_32.SIG_CONTEXT = "LUA_GENERIC"
-  l_0_32.CONTENT_SOURCE = "AMSI_JS"
-  l_0_32.PROCESS_CONTEXT = "JS Caller"
-  l_0_32.PARENT_CONTEXT = nil
-  l_0_32.FILELESS = "true"
-  l_0_32.CMDLINE_URL = "false"
-  l_0_32.BREAK_AT_FIRST_HIT_MALWARE = "60"
-  l_0_32.BREAK_AT_FIRST_HIT_PHISH = "60"
-  local l_0_33 = CheckUrlReputationSimple(l_0_2, l_0_32, 60)
-  if l_0_33 then
-    (mp.set_mpattribute)("Lua:AMSI.JS.BadDomainFound.S1")
-  end
-  return mp.CLEAN
 end
 
