@@ -780,6 +780,24 @@ NET_EXPORT BASE_DECLARE_FEATURE(kHttpCacheNoVarySearch);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(size_t,
                                       kHttpCacheNoVarySearchCacheMaxEntries);
 
+// Whether the NoVarySearchCache should be consulted in
+// HttpCache::OnExternalCacheHit().
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    bool,
+    kHttpCacheNoVarySearchApplyToExternalHits);
+
+// Whether persistence is enabled in on-the-record profiles. True by default.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
+                                      kHttpCacheNoVarySearchPersistenceEnabled);
+
+// If true, the persisted files will be created with valid but empty contents at
+// startup and after that closed and never used. Has no effect if
+// "persistence_enabled" is false. Causes "HttpCache.NoVarySearch.LoadResult" to
+// log "SnapshotLoadFailed" as there is no point in adding a new enum value for
+// this temporary feature.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
+                                      kHttpCacheNoVarySearchFakePersistence);
+
 // Enables sending the CORS Origin header on the POST request for Reporting API
 // report uploads.
 NET_EXPORT BASE_DECLARE_FEATURE(kReportingApiCorsOriginHeader);
