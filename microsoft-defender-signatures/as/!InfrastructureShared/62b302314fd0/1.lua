@@ -113,22 +113,22 @@ do
       end
       if (((GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedNonExecFiles_Tel", l_0_5) and not GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptSmbNonExecFiles_Tel", l_0_5)) or GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptRestNonExecFiles_Tel", l_0_5)) and GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_OriginalProcs_Tel", l_0_9)) or GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedProcs_Tel", l_0_9) then
         UpdateRqStrValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedNonExecFiles_Tel", l_0_5, "1")
-        -- DECOMPILER ERROR at PC450: Overwrote pending register: R11 in 'AssignReg'
+        -- DECOMPILER ERROR at PC458: Overwrote pending register: R11 in 'AssignReg'
 
       else
         UpdateRqStrValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptRestNonExecFiles_Tel", l_0_5, "1")
-        -- DECOMPILER ERROR at PC458: Overwrote pending register: R13 in 'AssignReg'
+        -- DECOMPILER ERROR at PC474: Overwrote pending register: R13 in 'AssignReg'
 
       end
-      -- DECOMPILER ERROR at PC465: Confused about usage of register: R11 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC481: Confused about usage of register: R11 in 'UnsetPending'
 
-      -- DECOMPILER ERROR at PC468: Confused about usage of register: R11 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC484: Confused about usage of register: R11 in 'UnsetPending'
 
-      -- DECOMPILER ERROR at PC469: Confused about usage of register: R12 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC485: Confused about usage of register: R12 in 'UnsetPending'
 
-      -- DECOMPILER ERROR at PC472: Confused about usage of register: R11 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC488: Confused about usage of register: R11 in 'UnsetPending'
 
-      -- DECOMPILER ERROR at PC473: Confused about usage of register: R12 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC489: Confused about usage of register: R12 in 'UnsetPending'
 
       if l_0_15 >= 2 or UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_9 .. "\\RelatedNonExecFiles", 1) >= 3 or 1 >= 4 or l_0_15 + UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_9 .. "\\RelatedNonExecFiles", 1) >= 4 or l_0_15 + UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_9 .. "\\RelatedNonExecFiles", 1) + 1 >= 6 or l_0_15 + UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_9 .. "\\RelatedNonExecFiles", 1) + 1 + UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_9 .. "\\RestNonExecFiles", 1) >= 8 then
         return mp.INFECTED
