@@ -618,14 +618,19 @@ BASE_DECLARE_FEATURE(kEdgeProfileFlyoutV2Enable);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeProfileFlyoutV2Enable(bool trigger_usage = false);
 
+#if BUILDFLAG(IS_MAC)
 // If enabled, will adjust the position and padding of toolbar buttons.
-// And change the home button/forward button pref default value
-// At present, the experiment will only be availabled on Mac, and if the result
-// is good, it will be opened on Windows
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeToolbarButtonUIPolish);
+#endif  // BUILDFLAG(IS_MAC)
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeToolbarButtonUIPolishEnabled();
+
+// If enabled, the browser frame refresh in CoPilot Mode will be applied.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kVisualRejuvFrameViewsForCoPilot);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeVisualRejuvFrameViewsForCoPilotModeEnabled();
 }  // namespace edge
 }  // namespace features
 
