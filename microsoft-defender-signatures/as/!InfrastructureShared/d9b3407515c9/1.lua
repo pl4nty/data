@@ -22,19 +22,22 @@ else
       return mp.CLEAN
     end
     if l_0_9:match("/%.[^/]+$") then
-      (bm.trigger_sig)("HiddenMacPersist", l_0_6)
+      (bm.trigger_sig)("ImagePathHiddenMacPersist", l_0_6)
     end
     if l_0_6:match("[^/]*$") ~= nil and l_0_6:match("[^/]*$") ~= "" and IsKeyInRollingQueue("MAC_PERSIST_PROG_PATHS", l_0_6:match("[^/]*$"), true) then
       local l_0_10 = nil
       if GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_6:match("[^/]*$")) ~= nil and #GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_6:match("[^/]*$")) > 0 then
         for l_0_14,l_0_15 in ipairs(GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_6:match("[^/]*$"))) do
           local l_0_11 = nil
-          -- DECOMPILER ERROR at PC120: Confused about usage of register: R10 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC117: Confused about usage of register: R10 in 'UnsetPending'
 
-          if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", R10_PC120.value) then
-            (bm.add_related_string)("persisted_path", R10_PC120.value, bm.RelatedStringBMReport)
+          if (R10_PC117.value):match("/%.[^/]+$") then
+            (bm.trigger_sig)("HiddenMacPersist", R10_PC117.value)
+          end
+          if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", R10_PC117.value) then
+            (bm.add_related_string)("persisted_path", R10_PC117.value, bm.RelatedStringBMReport)
             ;
-            (bm.add_related_file)(R10_PC120.value)
+            (bm.add_related_file)(R10_PC117.value)
             return mp.INFECTED
           end
         end
