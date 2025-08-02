@@ -707,6 +707,10 @@ namespace gfx {
         SkColorSetARGB(0x0F, 0x00, 0x00, 0x00);
     constexpr SkColor kEdgeProfileFlyoutDivierDark =
         SkColorSetARGB(0x1A, 0xFF, 0xFF, 0xFF);
+    constexpr SkColor kEdgeProfileFlyoutIconDefaultLight =
+        SkColorSetARGB(0xDB, 0x00, 0x00, 0x00);
+    constexpr SkColor kEdgeProfileFlyoutIconDefaultDark =
+        SkColorSetARGB(0xFF, 0xFF, 0xFF, 0xFF);
 
     // Edge Alert severity colors
     constexpr SkColor kColorAlertHighSeverityDarkMode =

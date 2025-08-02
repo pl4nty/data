@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32300417,
-    "file_count": 3955
+    "size": 32298468,
+    "file_count": 3954
   },
   {
     "name": "boringssl",
@@ -133,6 +133,11 @@
     "name": "crossbench",
     "size": 170568,
     "file_count": 2
+  },
+  {
+    "name": "crossbench-web-tests",
+    "size": 139935,
+    "file_count": 5
   },
   {
     "name": "dawn",
@@ -276,7 +281,7 @@
   },
   {
     "name": "hunspell",
-    "size": 4405670,
+    "size": 4405703,
     "file_count": 80
   },
   {
@@ -761,8 +766,8 @@
   },
   {
     "name": "wpt_tools",
-    "size": 252369,
-    "file_count": 58
+    "size": 380004,
+    "file_count": 60
   },
   {
     "name": "zlib",
