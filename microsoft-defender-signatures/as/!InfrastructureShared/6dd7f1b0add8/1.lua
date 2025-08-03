@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil then
+if l_0_0 ~= nil and l_0_0.image_path ~= nil then
   local l_0_1 = (string.lower)(l_0_0.image_path)
   local l_0_2 = l_0_1:match("([^\\]+)$")
   if l_0_2 == "w3wp.exe" or l_0_2 == "httpd.exe" or (string.find)(l_0_2, "tomcat", 1, true) then

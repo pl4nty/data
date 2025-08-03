@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 ~= nil and (string.find)((string.lower)(l_0_0.image_path), "w3wp.exe", -8, true) then
+if l_0_0 ~= nil and l_0_0.image_path ~= nil and (string.find)((string.lower)(l_0_0.image_path), "w3wp.exe", -8, true) then
   local l_0_1 = l_0_0.ppid
   if l_0_1 == "" or l_0_1 == nil then
     return mp.CLEAN
