@@ -1,5 +1,68 @@
 [
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-08-01",
+        "Published": "August 4, 2025",
+        "Patch level": "2025-08-01",
+        "CVE": "CVE-2025-22441",
+        "References": "A-376028556",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-08-01",
+        "Published": "August 4, 2025",
+        "Patch level": "2025-08-01",
+        "CVE": "CVE-2025-48533",
+        "References": "A-383131643",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "13, 14, 15, 16",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-08-01",
+        "Published": "August 4, 2025",
+        "Patch level": "2025-08-01",
+        "CVE": "CVE-2025-48530",
+        "References": "A-419563680",
+        "Type": "RCE",
+        "Severity": "Critical",
+        "Updated AOSP versions": "16",
+        "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-08-01",
+        "Published": "August 4, 2025",
+        "Patch level": "2025-08-01",
+        "CVE": "CVE-2025-0932",
+        "References": "A-407994187*",
+        "Severity": "High",
+        "Subcomponent": "Mali",
+        "Component": "Arm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-08-01",
+        "Published": "August 4, 2025",
+        "Patch level": "2025-08-01",
+        "CVE": "CVE-2025-27038",
+        "References": "A-418032173",
+        "Severity": "High",
+        "Subcomponent": "Display",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-08-01",
+        "Published": "August 4, 2025",
+        "Patch level": "2025-08-01",
+        "CVE": "CVE-2025-21479",
+        "References": "A-415772610",
+        "Severity": "Critical",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-07-01",
         "Published": "July 7, 2025",
         "Patch level": "2025-07-01"
@@ -88800,6 +88863,16 @@
         "Subcomponent": "Camera driver"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2025-08-01",
+        "Published": "August 4, 2025",
+        "Patch level": "2025-08-01"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2025-07-01",
+        "Published": "July 7, 2025",
+        "Patch level": "2025-07-01"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2025-06-01",
         "Published": "June 2, 2025",
         "Patch level": "2025-06-01"
@@ -89953,6 +90026,11 @@
         "Severity": "High",
         "Updated AOSP versions": "10",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-08-01",
+        "Published": "August 4, 2025",
+        "Patch level": "2025-07-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-07-01",
