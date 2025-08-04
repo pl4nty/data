@@ -355,7 +355,6 @@
         "EnableDeviceRegisterToMMD": true,
         "EnableDeviceType": true,
         "EnableDeviceTypeForOutOfServiceReport": true,
-        "EnableDifferentActivityIdForDifferentAction": true,
         "EnableDifferentEventType": true,
         "EnableDirectLaunchUrl": true,
         "EnableDiskControllerTypeForImageDefinition": true,
