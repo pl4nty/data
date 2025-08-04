@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250713.2.0",
+        "CalendarCompanionDFVersion": "1.20250802.3.0",
         "CalendarCompanionMsitVersion": "1.20250705.17.0",
         "CalendarCompanionProdVersion": "1.20250627.9.0",
         "CompanionRing": "Prod",
@@ -448,6 +448,7 @@
         "enableExternalOneDsTelemetrySink": false,
         "enableInternalOneDsTelemetrySink": false,
         "enablePersonalInformationManager": false,
+        "enablePronounsInProfileEditor": true,
         "enableSkillsFullList": true,
         "enableVivaSkillsClient": false,
         "enableVivaSkillsPP4": true,
