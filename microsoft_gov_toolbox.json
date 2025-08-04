@@ -8,8 +8,9 @@
         "name": "AzureAIFoundryPythonSDK",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.0.0b12",
+        "version": "1.1.0b1",
         "versions": [
+            "1.1.0b1",
             "1.0.0b12"
         ]
     },
@@ -1009,8 +1010,9 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.97.1",
+        "version": "1.98.0",
         "versions": [
+            "1.98.0",
             "1.97.1",
             "1.96.1",
             "1.93.0",
