@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32298468,
-    "file_count": 3954
+    "size": 32298141,
+    "file_count": 3953
   },
   {
     "name": "boringssl",
@@ -131,7 +131,7 @@
   },
   {
     "name": "crossbench",
-    "size": 170568,
+    "size": 176061,
     "file_count": 2
   },
   {
@@ -541,8 +541,8 @@
   },
   {
     "name": "openxr",
-    "size": 822762,
-    "file_count": 156
+    "size": 826268,
+    "file_count": 158
   },
   {
     "name": "opus",
@@ -556,8 +556,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3786112,
-    "file_count": 576
+    "size": 3790131,
+    "file_count": 577
   },
   {
     "name": "perl",
@@ -641,7 +641,7 @@
   },
   {
     "name": "skia",
-    "size": 3457239,
+    "size": 3457293,
     "file_count": 1178
   },
   {
