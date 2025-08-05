@@ -28,17 +28,17 @@ l_0_6(l_0_7, l_0_8, false)
 l_0_6 = GetCurrentPPID
 l_0_6 = l_0_6()
 if l_0_6 then
-  l_0_7 = MpCommon
-  l_0_7 = l_0_7.BmTriggerSig
-  l_0_8 = l_0_6
-  l_0_7(l_0_8, "LUA:TEAMS_RelatedDetection", l_0_4 or l_0_5)
+  l_0_4.ppid = l_0_6
+  l_0_4.context = l_0_7
+  l_0_8 = MpCommon
+  l_0_8 = l_0_8.BmTriggerSig
+  local l_0_10 = l_0_6
+  l_0_8(l_0_10, "LUA:TEAMS_RelatedDetection", l_0_4 or l_0_5)
 end
 do
   do
-    l_0_7 = mp
-    l_0_7 = l_0_7.INFECTED
-    do return l_0_7 end
-    -- DECOMPILER ERROR at PC59: freeLocal<0 in 'ReleaseLocals'
+    do return mp.INFECTED end
+    -- DECOMPILER ERROR at PC61: freeLocal<0 in 'ReleaseLocals'
 
   end
 end
