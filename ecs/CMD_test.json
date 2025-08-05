@@ -919,7 +919,7 @@
         "EnableXMLValidation": true,
         "Enable_EndUserCloudPcs_Return_EnterpriseProvisioning": true,
         "Enable_ExcludeCoreError": true,
-        "Enable_GetCloudPCEntityFromDB": false,
+        "Enable_GetCloudPCEntityFromDB": true,
         "Enable_GetDirectLaunchURLAPI": true,
         "Enable_IWSReturnFrontlineAvailability": true,
         "Enable_IWSReturnGpuCategory": true,
