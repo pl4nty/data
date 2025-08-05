@@ -1553,9 +1553,9 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250729.2.0",
-        "PeopleInTaskbarMsitVersion": "1.20250726.3.0",
-        "PeopleInTaskbarProdVersion": "1.20250719.2.0",
+        "PeopleInTaskbarDFVersion": "1.20250802.6.0",
+        "PeopleInTaskbarMsitVersion": "1.20250729.2.0",
+        "PeopleInTaskbarProdVersion": "1.20250726.3.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",

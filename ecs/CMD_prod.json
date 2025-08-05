@@ -220,7 +220,6 @@
         "EnableCloudPcInaccessibleScenario": true,
         "EnableCloudPcInsightReport": true,
         "EnableCloudPcReboot": true,
-        "EnableCmkForWDS": false,
         "EnableCnameEndpointsCheck": true,
         "EnableCnameFallbackForAgentBinaryLink": true,
         "EnableCnameFallbackForTrafficmanager": true,
