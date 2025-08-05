@@ -35,6 +35,10 @@ end
 local l_0_9 = (table.concat)(l_0_1, ",")
 ;
 (mp.set_mpattribute)((string.format)("%s_Sections=%s", l_0_0, l_0_9))
+;
+(MpCommon.SetOriginalFileName)(l_0_3, (string.format)("BM_%s", l_0_0))
+;
+(mp.set_mpattribute)("MpDisableCaching")
 AppendToRollingQueue(l_0_0, l_0_3, l_0_9)
 return mp.INFECTED
 

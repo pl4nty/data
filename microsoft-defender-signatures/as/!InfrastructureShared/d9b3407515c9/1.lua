@@ -35,6 +35,10 @@ else
             (bm.trigger_sig)("HiddenMacPersist", R10_PC117.value)
           end
           if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", R10_PC117.value) then
+            if (R10_PC117.value):match("/%.[^/]+$") then
+              (bm.trigger_sig)("HiddenUnsignedMacPersist", R10_PC117.value)
+            end
+            ;
             (bm.add_related_string)("persisted_path", R10_PC117.value, bm.RelatedStringBMReport)
             ;
             (bm.add_related_file)(R10_PC117.value)

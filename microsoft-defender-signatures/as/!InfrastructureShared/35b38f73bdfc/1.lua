@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2db36e3d9ff6\1.luac 
+-- Command line: lua\!InfrastructureShared\35b38f73bdfc\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -23,11 +23,11 @@ l_0_6 = bm
 l_0_6 = l_0_6.RelatedStringBMReport
 l_0_3(l_0_4, l_0_5, l_0_6)
 l_0_3 = bm
-l_0_3 = l_0_3.add_related_file
+l_0_3 = l_0_3.add_threat_file
 l_0_4 = l_0_1
 l_0_3(l_0_4)
 l_0_3 = bm
-l_0_3 = l_0_3.add_related_file
+l_0_3 = l_0_3.add_threat_file
 l_0_4 = this_sigattrlog
 l_0_4 = l_0_4[2]
 l_0_4 = l_0_4.utf8p1

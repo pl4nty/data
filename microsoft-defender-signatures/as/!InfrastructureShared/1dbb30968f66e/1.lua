@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1ddb338435a16\1.luac 
+-- Command line: lua\!InfrastructureShared\1dbb30968f66e\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -36,10 +36,10 @@ local l_0_9 = (mp.GetParentProcInfo)()
 if l_0_9 and l_0_9.ppid then
   TrackPidAndTechniqueBM(l_0_9.ppid, "T1547.003", "persist_timeprovider")
   ;
-  (bm.add_related_process)(l_0_9.ppid)
+  (bm.add_threat_process)(l_0_9.ppid)
 end
 ;
-(bm.add_related_file)(l_0_3)
+(bm.add_threat_file)(l_0_3)
 local l_0_10 = bm.add_related_string
 local l_0_11 = "TimeProvider"
 local l_0_12 = safeJsonSerialize

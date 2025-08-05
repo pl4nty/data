@@ -114,19 +114,19 @@ if IsRmmToolFilePath(l_0_6) or IsRmmToolVersionInfo(l_0_6) or IsRmmToolOFN(l_0_6
   l_0_29 = GetCurrentPPID
   l_0_29 = l_0_29()
   if l_0_29 then
-    l_0_30 = MpCommon
-    l_0_30 = l_0_30.BmTriggerSig
-    l_0_31 = l_0_29
-    l_0_30(l_0_31, "LUA:TEAMS_RelatedDetection", l_0_27 or l_0_28)
+    l_0_27.ppid = l_0_29
+    l_0_27.context = l_0_30
+    l_0_31 = MpCommon
+    l_0_31 = l_0_31.BmTriggerSig
+    local l_0_33 = l_0_29
+    l_0_31(l_0_33, "LUA:TEAMS_RelatedDetection", l_0_27 or l_0_28)
   end
   do
     do
       do
-        l_0_30 = mp
-        l_0_30 = l_0_30.INFECTED
-        do return l_0_30 end
+        do return mp.INFECTED end
         do return mp.CLEAN end
-        -- DECOMPILER ERROR at PC304: freeLocal<0 in 'ReleaseLocals'
+        -- DECOMPILER ERROR at PC306: freeLocal<0 in 'ReleaseLocals'
 
       end
     end
