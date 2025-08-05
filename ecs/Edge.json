@@ -51,15 +51,6 @@
                 "msEdgeAutofillUnifiedLogger"
             ]
         },
-        "EdgeComposeInlineContextMenu": {
-            "disableFeatures": [
-                "msEdgeComposeInlineRewriteMouseSelectionEntry",
-                "msEdgeComposeInlineRewriteKeyboardSelectionEntry"
-            ],
-            "enableFeatures": [
-                "msEdgeComposeInlineRewriteContextMenuEntry"
-            ]
-        },
         "EdgeLoginDbBlockShutdown": {
             "enableFeatures": [
                 "msEdgeLoginDbTasksBlockShutdown"
