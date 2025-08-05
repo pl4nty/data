@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2079639,
+    "size": 2081632,
     "file_count": 178
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32298141,
-    "file_count": 3953
+    "size": 32305734,
+    "file_count": 3952
   },
   {
     "name": "boringssl",
@@ -131,7 +131,7 @@
   },
   {
     "name": "crossbench",
-    "size": 176061,
+    "size": 186404,
     "file_count": 2
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "name": "glslang",
-    "size": 43050709,
+    "size": 43052110,
     "file_count": 3176
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18767339,
+    "size": 18774507,
     "file_count": 19
   },
   {
@@ -556,8 +556,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3790131,
-    "file_count": 577
+    "size": 3794026,
+    "file_count": 578
   },
   {
     "name": "perl",
@@ -641,7 +641,7 @@
   },
   {
     "name": "skia",
-    "size": 3457293,
+    "size": 3459416,
     "file_count": 1178
   },
   {
@@ -681,12 +681,12 @@
   },
   {
     "name": "test_fonts",
-    "size": 74265,
+    "size": 74267,
     "file_count": 13
   },
   {
     "name": "tflite",
-    "size": 1653220,
+    "size": 1653380,
     "file_count": 488
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1366967,
+    "size": 1367181,
     "file_count": 23
   },
   {
@@ -721,13 +721,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2432104,
+    "size": 2432274,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6233947,
-    "file_count": 176
+    "size": 6217705,
+    "file_count": 177
   },
   {
     "name": "vulkan_memory_allocator",
