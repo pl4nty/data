@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32BasEncryptionA\1.luac 
+-- Command line: lua\_!BaseFileEncryptA\Includes\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -11,7 +11,7 @@ if l_0_0 == nil or type(l_0_0) ~= "string" then
   return mp.CLEAN
 end
 l_0_0 = (string.lower)(l_0_0)
-if l_0_0 ~= "64eacc49-6a31-42c6-9b39-c3d9148e65f4" and l_0_0 ~= "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" and (l_0_0 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(10, false, true, true) ~= true) then
+if l_0_0 ~= "64eacc49-6a31-42c6-9b39-c3d9148e65f4" and l_0_0 ~= "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" then
   return mp.CLEAN
 end
 local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
@@ -81,7 +81,7 @@ else
               local l_0_22, l_0_26, l_0_30, l_0_34 = , tonumber(GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_4 .. "\\RestNonExecFiles")) or 0
               if (((GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_OriginalNonExecFiles_Tel", l_0_3) and not GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedNonExecFiles_Tel", l_0_3)) or GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptSmbNonExecFiles_Tel", l_0_3)) and not GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptRestNonExecFiles_Tel", l_0_3)) or l_0_5 then
                 UpdateRqStrValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptSmbNonExecFiles_Tel", l_0_3, "1")
-                -- DECOMPILER ERROR at PC353: Overwrote pending register: R8 in 'AssignReg'
+                -- DECOMPILER ERROR at PC342: Overwrote pending register: R8 in 'AssignReg'
 
                 local l_0_29, l_0_33, l_0_40, l_0_47, l_0_52 = UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_4 .. "\\OriginalNonExecFiles", 1), UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_4 .. "\\RelatedNonExecFiles", 1), UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_4 .. "\\SmbNonExecFiles", 1), UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_4 .. "\\RestNonExecFiles", 1)
               else
@@ -92,27 +92,27 @@ else
                   else
                     do
                       UpdateRqStrValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptRestNonExecFiles_Tel", l_0_3, "1")
-                      -- DECOMPILER ERROR at PC400: Confused about usage of register: R6 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC389: Confused about usage of register: R6 in 'UnsetPending'
+
+                      -- DECOMPILER ERROR at PC391: Confused about usage of register: R7 in 'UnsetPending'
+
+                      -- DECOMPILER ERROR at PC393: Confused about usage of register: R8 in 'UnsetPending'
+
+                      -- DECOMPILER ERROR at PC395: Confused about usage of register: R6 in 'UnsetPending'
+
+                      -- DECOMPILER ERROR at PC395: Confused about usage of register: R7 in 'UnsetPending'
+
+                      -- DECOMPILER ERROR at PC398: Confused about usage of register: R6 in 'UnsetPending'
+
+                      -- DECOMPILER ERROR at PC398: Confused about usage of register: R7 in 'UnsetPending'
+
+                      -- DECOMPILER ERROR at PC399: Confused about usage of register: R8 in 'UnsetPending'
+
+                      -- DECOMPILER ERROR at PC402: Confused about usage of register: R6 in 'UnsetPending'
 
                       -- DECOMPILER ERROR at PC402: Confused about usage of register: R7 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC404: Confused about usage of register: R8 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC406: Confused about usage of register: R6 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC406: Confused about usage of register: R7 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC409: Confused about usage of register: R6 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC409: Confused about usage of register: R7 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC410: Confused about usage of register: R8 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC413: Confused about usage of register: R6 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC413: Confused about usage of register: R7 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC414: Confused about usage of register: R8 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC403: Confused about usage of register: R8 in 'UnsetPending'
 
                       if l_0_32 >= 2 or l_0_37 >= 3 or l_0_39 >= 4 or l_0_32 + l_0_37 >= 4 or l_0_32 + l_0_37 + l_0_39 >= 6 or l_0_32 + l_0_37 + l_0_39 + UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_4 .. "\\RestNonExecFiles", 1) >= 8 then
                         return mp.INFECTED
