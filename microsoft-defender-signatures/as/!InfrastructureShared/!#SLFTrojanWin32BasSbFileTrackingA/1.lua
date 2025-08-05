@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32Ba\1.luac 
+-- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32BasSbFileTrackingA\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -45,6 +45,7 @@ else
   if l_0_5 == nil then
     return mp.CLEAN
   end
+  l_0_5 = (string.lower)(l_0_5)
   local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
   if l_0_6 == nil or l_0_6 == "" then
     return mp.CLEAN
@@ -55,13 +56,13 @@ else
   end
   local l_0_8 = (string.lower)(l_0_7 .. "\\" .. l_0_5)
   local l_0_9 = (string.lower)(l_0_4 .. "\\" .. l_0_8)
-  if GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_OriginalExecFiles_Tel", l_0_8) then
+  if (GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_OriginalProcs_Tel", l_0_9) or GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_OriginalExecFiles_Tel", l_0_8) or (l_0_5 ~= "sbsimulator.exe" and (string.find)(l_0_5, "sbsimulation_sb_%d+_bs_%d+_gold%.exe") == nil and (string.find)(l_0_5, "sbsimulation_sb_%d+_bs_%d+_red%.exe") == nil and (string.find)(l_0_5, "sbsimulation_sb_%d+_bs_%d+_green%.exe") == nil) or (string.find)(l_0_8, "^[a-z]:\\program files\\safebreach\\") ~= nil) then
     AddRqKeyAndValueNS("BAS_SB_Coverage", "BAS_SB_OriginalProcs_Tel", l_0_9, "1")
     if AddRqKeyAndValueNS("BAS_SB_Coverage", "BAS_SB_RelatedExecFiles_Tel", l_0_3, "1") then
       return mp.INFECTED
     end
   else
-    if GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedExecFiles_Tel", l_0_8) then
+    if GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedProcs_Tel", l_0_9) or GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedExecFiles_Tel", l_0_8) then
       AddRqKeyAndValueNS("BAS_SB_Coverage", "BAS_SB_RelatedProcs_Tel", l_0_9, "1")
       if AddRqKeyAndValueNS("BAS_SB_Coverage", "BAS_SB_RelatedExecFiles_Tel", l_0_3, "1") then
         return mp.INFECTED
