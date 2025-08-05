@@ -65595,6 +65595,17 @@
         "Component": "Unbounded buffer read in libstagefright while parsing 3GPP metadata"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-08-01",
+        "Published": "August 5, 2025",
+        "Patch level": "2025-08-05",
+        "CVE": "CVE-2025-26784",
+        "References": "A-394084168",
+        "Type": "RCE",
+        "Severity": "High",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-07-01",
         "Published": "July 7, 2025",
         "Patch level": "2025-07-05"
