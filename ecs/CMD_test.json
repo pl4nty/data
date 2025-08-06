@@ -731,6 +731,7 @@
         "EnableProvisioningSourceType": true,
         "EnablePublishHostPoolCreationEvent": true,
         "EnablePurgeDeviceConfigurationEntities": true,
+        "EnableQueryFlsPoliciesForEncryptionType": true,
         "EnableQueryTroubleShootingResultTimerFunction": true,
         "EnableQuotaForecastGeneration": true,
         "EnableQuotaRequestEmail": true,

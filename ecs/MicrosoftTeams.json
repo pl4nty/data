@@ -3989,6 +3989,7 @@
             "macEnableSystemMenuBarIconV2": false,
             "macEnableSystemMenuBarIconXPC": false,
             "macEnableSystemMenuBarMeetings": false,
+            "macRegisterLaunchAgent": false,
             "macUploadLogsToAppCenter": false,
             "macUseMauAwareRespawnService": false,
             "macUseRespawnService": false,
