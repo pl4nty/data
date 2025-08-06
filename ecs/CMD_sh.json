@@ -620,6 +620,7 @@
         "EnableProvisionedDateTime": true,
         "EnableProvisioningSourceType": true,
         "EnablePurgeDeviceConfigurationEntities": true,
+        "EnableQueryFlsPoliciesForEncryptionType": false,
         "EnableQuotaForecastGeneration": true,
         "EnableRMSCheckANCInUse": true,
         "EnableRMSConsumer": true,
