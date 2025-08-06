@@ -703,6 +703,10 @@ namespace gfx {
         SkColorSetARGB(0xFF, 0xEF, 0XF6, 0xFC);
     constexpr SkColor kEdgeProfileSigninCampaignBackgroundDark =
         SkColorSetARGB(0xFF, 0x4B, 0X4B, 0x4B);
+    constexpr SkColor kProfileFlyoutProfileCardBackgroundLight =
+        SkColorSetRGB(0xE0, 0xED, 0xFF);
+    constexpr SkColor kProfileFlyoutProfileCardBackgroundDark =
+        SkColorSetRGB(0x24, 0x39, 0x66);
     constexpr SkColor kEdgeProfileFlyoutDivierLight =
         SkColorSetARGB(0x0F, 0x00, 0x00, 0x00);
     constexpr SkColor kEdgeProfileFlyoutDivierDark =
