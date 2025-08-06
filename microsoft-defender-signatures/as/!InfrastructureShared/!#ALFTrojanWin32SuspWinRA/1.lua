@@ -67,6 +67,9 @@ end
 if l_0_11.CommandlineTokens and not next(l_0_11.CommandlineTokens) then
   return mp.CLEAN
 end
+if not l_0_8.Base64Content and not l_0_8.UrlEncodedContent and not next((l_0_11.Evidence_L1).Urls) then
+  return mp.CLEAN
+end
 if next((l_0_11.Evidence_L1).Urls) then
   l_0_7 = l_0_7 + 50
 end
