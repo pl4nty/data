@@ -4,6 +4,64 @@
         "test": "test"
     },
     "ChillAdminCopilot": {
+        "Floodgate_Campaign_AdminPortal.0472551c-40a2-423b-8eb9-e35ded05618a": {
+            "CampaignId": "0472551c-40a2-423b-8eb9-e35ded05618a",
+            "EndTimeUtc": "2025-08-27T07:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 1,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-07-28T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "CopilotSearchUpdateSettings",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "Content": {
+                    "Prompt": {
+                        "NoLabel": "Not now",
+                        "Question": "We have two questions for you.",
+                        "Title": "Microsoft would love your perspective",
+                        "YesLabel": "Sure"
+                    },
+                    "Question": {
+                        "Question": "Please tell us more about why you chose that answer."
+                    },
+                    "Rating": {
+                        "IsZeroBased": false,
+                        "Question": "How helpful did you find Copilot Search management in the Copilot Control System?",
+                        "RatingValuesAscending": [
+                            "Not at all helpful",
+                            "Somewhat helpful",
+                            "Neutral",
+                            "helpful",
+                            "Extremely helpful"
+                        ]
+                    }
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2
+            }
+        },
         "Floodgate_Campaign_AdminPortal.16251047-5258-45a3-a826-f9d51adf0a6b": {
             "CampaignId": "16251047-5258-45a3-a826-f9d51adf0a6b",
             "EndTimeUtc": "2026-05-20T07:00:00Z",

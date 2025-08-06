@@ -163,11 +163,11 @@
     },
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20250802.3.0",
-        "CalendarCompanionMsitVersion": "1.20250705.17.0",
-        "CalendarCompanionProdVersion": "1.20250627.9.0",
+        "CalendarCompanionMsitVersion": "1.20250802.3.0",
+        "CalendarCompanionProdVersion": "1.20250705.17.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20250627.9.0",
+        "HostAppVersion": "1.20250705.17.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
