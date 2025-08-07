@@ -14,7 +14,7 @@ l_0_0 = (string.lower)(l_0_0)
 if l_0_0 == "64eacc49-6a31-42c6-9b39-c3d9148e65f4" or l_0_0 == "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" then
   return mp.CLEAN
 end
-if l_0_0 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(1000, false, true, true) ~= true then
+if l_0_0 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(4000, false, true, true) ~= true then
   return mp.CLEAN
 end
 local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
@@ -89,7 +89,7 @@ do
         local l_0_14 = (string.lower)(l_0_13 .. "\\" .. l_0_11)
         l_0_6 = (string.lower)(l_0_10 .. "\\" .. l_0_14)
         do
-          local l_0_15, l_0_16, l_0_18, l_0_21, l_0_25, l_0_29, l_0_33, l_0_37, l_0_38, l_0_40, l_0_43, l_0_45, l_0_47, l_0_50, l_0_52 = tonumber(GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\OriginalNonExecFiles")) or 0
+          local l_0_15, l_0_16, l_0_18, l_0_21, l_0_25, l_0_29, l_0_33, l_0_37, l_0_38, l_0_40, l_0_43, l_0_45, l_0_47, l_0_50, l_0_52, l_0_55 = tonumber(GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\OriginalNonExecFiles")) or 0
           do
             local l_0_17, l_0_19, l_0_22, l_0_26, l_0_30 = , tonumber(GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\RelatedNonExecFiles")) or 0
             do
@@ -100,41 +100,45 @@ do
                   UpdateRqStrValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptSmbNonExecFiles_Tel", l_0_5, "1")
                   -- DECOMPILER ERROR at PC375: Overwrote pending register: R8 in 'AssignReg'
 
-                  local l_0_31, l_0_35, l_0_42, l_0_49, l_0_54 = UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\OriginalNonExecFiles", 1), UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\RelatedNonExecFiles", 1), UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\SmbNonExecFiles", 1), UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\RestNonExecFiles", 1)
+                  local l_0_31, l_0_35, l_0_42, l_0_49, l_0_54, l_0_57 = UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\OriginalNonExecFiles", 1), UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\RelatedNonExecFiles", 1), UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\SmbNonExecFiles", 1), UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\RestNonExecFiles", 1)
                 else
                   do
                     if GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_OriginalProcs_Tel", l_0_6) or GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedProcs_Tel", l_0_6) then
                       UpdateRqStrValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedNonExecFiles_Tel", l_0_5, "1")
-                      local l_0_34, l_0_39, l_0_41, l_0_44, l_0_46, l_0_48, l_0_51, l_0_53 = , UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\RelatedNonExecFiles", 1)
+                      local l_0_34, l_0_39, l_0_41, l_0_44, l_0_46, l_0_48, l_0_51, l_0_53, l_0_56 = , UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\RelatedNonExecFiles", 1)
                     else
                       do
                         UpdateRqStrValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptRestNonExecFiles_Tel", l_0_5, "1")
-                        -- DECOMPILER ERROR at PC422: Confused about usage of register: R6 in 'UnsetPending'
+                        do
+                          local l_0_58 = nil
+                          -- DECOMPILER ERROR at PC422: Confused about usage of register: R6 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC424: Confused about usage of register: R7 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC424: Confused about usage of register: R7 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC426: Confused about usage of register: R8 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC426: Confused about usage of register: R8 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC428: Confused about usage of register: R6 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC428: Confused about usage of register: R6 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC428: Confused about usage of register: R7 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC428: Confused about usage of register: R7 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC431: Confused about usage of register: R6 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC431: Confused about usage of register: R6 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC431: Confused about usage of register: R7 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC431: Confused about usage of register: R7 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC432: Confused about usage of register: R8 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC432: Confused about usage of register: R8 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC435: Confused about usage of register: R6 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC435: Confused about usage of register: R6 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC435: Confused about usage of register: R7 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC435: Confused about usage of register: R7 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC436: Confused about usage of register: R8 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC436: Confused about usage of register: R8 in 'UnsetPending'
 
-                        if l_0_34 >= 2 or l_0_39 >= 3 or l_0_41 >= 4 or l_0_34 + l_0_39 >= 4 or l_0_34 + l_0_39 + l_0_41 >= 6 or l_0_34 + l_0_39 + l_0_41 + UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\RestNonExecFiles", 1) >= 8 then
-                          return mp.INFECTED
+                          if l_0_58 >= 2 or l_0_39 >= 3 or l_0_41 >= 4 or l_0_58 + l_0_39 >= 4 or l_0_58 + l_0_39 + l_0_41 >= 6 or l_0_58 + l_0_39 + l_0_41 + UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_6 .. "\\RestNonExecFiles", 1) >= 8 then
+                            (MpCommon.BmTriggerSigPropagate)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_5)
+                            return mp.INFECTED
+                          end
+                          return mp.CLEAN
                         end
-                        return mp.CLEAN
                       end
                     end
                   end
