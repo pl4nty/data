@@ -386,13 +386,18 @@ CommandLineTokenizer = function(l_3_0)
       if #l_3_14 <= 4 and (MpCommon.StringRegExpSearch)(l_3_20, l_3_0) then
         (mp.set_mpattribute)("Appomaly_HighlySuspCmd_Pattern_2")
       end
-      do
-        if #l_3_14 <= 3 then
-          local l_3_21, l_3_22 = (string.gsub)(l_3_0, "%$", "")
-          if l_3_22 >= 6 then
+      if #l_3_14 <= 3 then
+        local l_3_21, l_3_22 = (string.gsub)(l_3_0, "%$", "")
+        if l_3_22 >= 6 then
+          (mp.set_mpattribute)("Appomaly_Pattern_Obfuscated")
+        else
+          local l_3_23, l_3_24 = (string.gsub)(l_3_0, "\\u0", "")
+          if l_3_24 >= 5 then
             (mp.set_mpattribute)("Appomaly_Pattern_Obfuscated")
           end
         end
+      end
+      do
         if #l_3_14 <= 6 and (MpCommon.StringRegExpSearch)("iex\\(|invoke", l_3_0) then
           (mp.set_mpattribute)("Appomaly_Pattern_Invoke")
         end
@@ -859,66 +864,79 @@ end
 getCmdKeywordsWeight = function()
   -- function num : 0_6
   local l_7_0 = {}
-  l_7_0["%[io.file%]::writeallbytes"] = 5
-  l_7_0["system.reflection.assembly"] = 5
-  l_7_0["iisy.invoke"] = 5
-  l_7_0.tcplistener = 5
-  l_7_0.accepttcpclient = 5
-  l_7_0.tcpclient = 5
-  l_7_0.downloadstring = 10
-  l_7_0.uploadfile = 10
-  l_7_0["send-mailmessage"] = 0
-  l_7_0["[^r]shell[^.]"] = 5
-  l_7_0.defender = 20
-  l_7_0["disable.*true"] = 5
-  l_7_0["disable.*0"] = 5
-  l_7_0.stop = 5
-  l_7_0.remove = 5
-  l_7_0.exclusion = 1
-  l_7_0.sense = 1
-  l_7_0.scriptblock = 5
-  l_7_0.webrequest = 5
-  l_7_0["user%-agent"] = 10
-  l_7_0.webclient = 5
-  l_7_0["unicode.getstring"] = 5
-  l_7_0.whoami = 1
-  l_7_0["net user"] = 1
-  l_7_0["bitsadmin.*http"] = 5
-  l_7_0["certutil.*http"] = 5
-  l_7_0["invoke%-webrequest"] = 5
-  l_7_0["invoke%-restmethod"] = 5
-  l_7_0.curl = 5
-  l_7_0.wget = 5
-  l_7_0["new%-localuser"] = 5
-  l_7_0["net group /add"] = 5
-  l_7_0["new%-localgroup"] = 5
-  l_7_0.icacls = 1
-  l_7_0["set%-acl"] = 1
-  l_7_0["set%-itemproperty"] = 1
-  l_7_0["set%-mppreference"] = 5
-  l_7_0["add%-mppreference"] = 5
-  l_7_0.netstat = 1
-  l_7_0.nmap = 1
-  l_7_0.runas = 5
-  l_7_0["enable%-privilege"] = 5
-  l_7_0.psexec = 5
-  l_7_0["invoke%-command"] = 5
-  l_7_0.taskkill = 1
-  l_7_0["stop%-process"] = 5
-  l_7_0["reg add"] = 1
-  l_7_0["set%-itemproperty.*disable"] = 2
-  l_7_0["[^by]pass"] = 2
-  l_7_0.password = 2
-  l_7_0["invoke%-expression"] = 1
-  l_7_0.dllimport = 1
-  l_7_0["using system%.runtime"] = 1
-  l_7_0["scripting.filesystemobject"] = 1
-  l_7_0["http://"] = 1
-  l_7_0["https://"] = 1
-  l_7_0["start%-sleep"] = 1
-  l_7_0.tanium = -60
-  l_7_0.ansible = -60
-  l_7_0["synchash.devmode"] = -60
+  local l_7_1 = {}
+  -- DECOMPILER ERROR at PC5: No list found for R1 , SetList fails
+
+  -- DECOMPILER ERROR at PC8: Overwrote pending register: R2 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC9: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC10: Overwrote pending register: R4 in 'AssignReg'
+
+  l_7_0["system.reflection.assembly"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["iisy.invoke"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0.tcplistener, l_7_1 = l_7_1, {5, 5, 10}
+  l_7_0.accepttcpclient, l_7_1 = l_7_1, {5, 5, 10}
+  l_7_0.tcpclient, l_7_1 = l_7_1, {5, 5, 10}
+  l_7_0.downloadstring, l_7_1 = l_7_1, {10, 10, 10}
+  l_7_0.downloadfile, l_7_1 = l_7_1, {0, 0, 10}
+  l_7_0.uploadfile, l_7_1 = l_7_1, {10, 10, 10}
+  l_7_0["send-mailmessage"], l_7_1 = l_7_1, {0, 0, 10}
+  l_7_0["[^r]shell[^.]"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0.defender, l_7_1 = l_7_1, {20, 20, 20}
+  l_7_0["disable.*true"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["disable.*1"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0.stop, l_7_1 = l_7_1, {5, 5, 1}
+  l_7_0.remove, l_7_1 = l_7_1, {5, 5, 1}
+  l_7_0.exclusion, l_7_1 = l_7_1, {1, 1, 1}
+  l_7_0.sense, l_7_1 = l_7_1, {1, 1, 1}
+  l_7_0.scriptblock, l_7_1 = l_7_1, {5, 5, 3}
+  l_7_0.webrequest, l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["user%-agent"], l_7_1 = l_7_1, {10, 10, 10}
+  l_7_0.webclient, l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["unicode.getstring"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0.whoami, l_7_1 = l_7_1, {1, 1, 10}
+  l_7_0["net user"], l_7_1 = l_7_1, {1, 1, 1}
+  l_7_0["bitsadmin.*http"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["certutil.*http"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["invoke%-webrequest"], l_7_1 = l_7_1, {5, 5, 10}
+  l_7_0["invoke%-restmethod"], l_7_1 = l_7_1, {5, 5, 10}
+  l_7_0.curl, l_7_1 = l_7_1, {5, 6, 6}
+  l_7_0.wget, l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["new%-localuser"], l_7_1 = l_7_1, {5}
+  l_7_0["net group /add"], l_7_1 = l_7_1, {5}
+  l_7_0["new%-localgroup"], l_7_1 = l_7_1, {5}
+  l_7_0.icacls, l_7_1 = l_7_1, {1}
+  l_7_0["set%-acl"], l_7_1 = l_7_1, {1}
+  l_7_0["set%-itemproperty"], l_7_1 = l_7_1, {1}
+  l_7_0["set%-mppreference"], l_7_1 = l_7_1, {5, 5, 3}
+  l_7_0["add%-mppreference"], l_7_1 = l_7_1, {5, 5, 3}
+  l_7_0.netstat, l_7_1 = l_7_1, {1, 1, 1}
+  l_7_0.nmap, l_7_1 = l_7_1, {1, 1, 1}
+  l_7_0.runas, l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["enable%-privilege"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0.psexec, l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["invoke%-command"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0.taskkill, l_7_1 = l_7_1, {1, 1, 1}
+  l_7_0["stop%-process"], l_7_1 = l_7_1, {5, 5, 5}
+  l_7_0["reg add"], l_7_1 = l_7_1, {1, 1, 1}
+  l_7_0["set%-itemproperty.*disable"], l_7_1 = l_7_1, {2, 2, 2}
+  l_7_0["[^by]pass"], l_7_1 = l_7_1, {2, 2, 0}
+  l_7_0.password, l_7_1 = l_7_1, {2, 2, 2}
+  l_7_0["invoke%-expression"], l_7_1 = l_7_1, {1, 5, 7}
+  l_7_0.dllimport, l_7_1 = l_7_1, {1, 10, 10}
+  l_7_0["using system%.runtime"], l_7_1 = l_7_1, {1, 5, 5}
+  l_7_0["scripting.filesystemobject"], l_7_1 = l_7_1, {1, 5, 5}
+  l_7_0["http://"], l_7_1 = l_7_1, {1, 1, 1}
+  l_7_0["https://"], l_7_1 = l_7_1, {1, 1, 1}
+  l_7_0["start%-sleep"], l_7_1 = l_7_1, {1, 2, 2}
+  l_7_0["windowsinstaller.installer.*installproduct"], l_7_1 = l_7_1, {0, 1, 10}
+  l_7_0["%-uri"], l_7_1 = l_7_1, {0, 1, 5}
+  l_7_0["%-body"], l_7_1 = l_7_1, {0, 1, 5}
+  l_7_0["%-content-type"], l_7_1 = l_7_1, {0, 1, 5}
+  l_7_0.tanium, l_7_1 = l_7_1, {-60, -60, -60}
+  l_7_0.ansible, l_7_1 = l_7_1, {-60, -60, -60}
+  l_7_0["synchash.devmode"], l_7_1 = l_7_1, {-60, -60, -60}
   return l_7_0
 end
 
@@ -967,91 +985,85 @@ CommandLineGrader = function(l_8_0, l_8_1, l_8_2)
 
       if not l_8_22 or not l_8_23 or not l_8_23 or l_8_24 > 5000 then
         local l_8_25 = nil
-        -- DECOMPILER ERROR at PC61: Overwrote pending register: R7 in 'AssignReg'
+        for l_8_29,l_8_30 in l_8_25 do
+          local l_8_30 = nil
+          -- DECOMPILER ERROR at PC63: Overwrote pending register: R13 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC63: Overwrote pending register: R8 in 'AssignReg'
+          -- DECOMPILER ERROR at PC71: Overwrote pending register: R13 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC65: Overwrote pending register: R7 in 'AssignReg'
+          -- DECOMPILER ERROR at PC73: Overwrote pending register: R13 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC66: Overwrote pending register: R8 in 'AssignReg'
+          -- DECOMPILER ERROR at PC74: Overwrote pending register: R13 in 'AssignReg'
 
-        if l_8_2 == 2 then
-          for l_8_29,l_8_30 in l_8_25 do
-            local l_8_30 = nil
-            -- DECOMPILER ERROR at PC71: Overwrote pending register: R13 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC80: Overwrote pending register: R13 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC81: Overwrote pending register: R13 in 'AssignReg'
-
-            if l_8_30 then
-              l_8_30(l_8_21, l_8_28)
-            end
+          if l_8_30 then
+            l_8_30(l_8_21, l_8_28)
           end
-          -- DECOMPILER ERROR at PC87: Overwrote pending register: R8 in 'AssignReg'
+        end
+        -- DECOMPILER ERROR at PC80: Overwrote pending register: R8 in 'AssignReg'
 
-          local l_8_31 = nil
-          -- DECOMPILER ERROR at PC94: Overwrote pending register: R9 in 'AssignReg'
+        local l_8_31 = nil
+        -- DECOMPILER ERROR at PC84: Overwrote pending register: R9 in 'AssignReg'
 
-          if 0 + l_8_29 >= 5 then
-            local l_8_32 = nil
-            -- DECOMPILER ERROR at PC98: Overwrote pending register: R13 in 'AssignReg'
+        -- DECOMPILER ERROR at PC94: Overwrote pending register: R9 in 'AssignReg'
 
-            local l_8_33 = nil
-            -- DECOMPILER ERROR at PC106: Overwrote pending register: R11 in 'AssignReg'
+        if not l_8_31 or 0 + l_8_30 + 50 >= 5 then
+          local l_8_32 = nil
+          -- DECOMPILER ERROR at PC98: Overwrote pending register: R13 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC107: Overwrote pending register: R11 in 'AssignReg'
+          local l_8_33 = nil
+          -- DECOMPILER ERROR at PC106: Overwrote pending register: R11 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC116: Overwrote pending register: R11 in 'AssignReg'
+          -- DECOMPILER ERROR at PC107: Overwrote pending register: R11 in 'AssignReg'
 
-            if not l_8_33 and l_8_33 then
-              for l_8_37,l_8_38 in l_8_33 do
-                local l_8_38 = nil
-                local l_8_39 = nil
-                -- DECOMPILER ERROR at PC126: Overwrote pending register: R17 in 'AssignReg'
+          -- DECOMPILER ERROR at PC116: Overwrote pending register: R11 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC129: Overwrote pending register: R17 in 'AssignReg'
+          if not l_8_33 and l_8_33 then
+            for l_8_37,l_8_38 in l_8_33 do
+              local l_8_38 = nil
+              local l_8_39 = nil
+              -- DECOMPILER ERROR at PC126: Overwrote pending register: R17 in 'AssignReg'
 
-                if l_8_38 and not l_8_39 then
-                  local l_8_40, l_8_41 = nil
-                  -- DECOMPILER ERROR at PC136: Confused about usage of register: R3 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC129: Overwrote pending register: R17 in 'AssignReg'
 
-                end
+              if l_8_38 and not l_8_39 then
+                local l_8_40, l_8_41 = nil
+                -- DECOMPILER ERROR at PC136: Confused about usage of register: R3 in 'UnsetPending'
+
               end
-              -- DECOMPILER ERROR at PC142: Overwrote pending register: R11 in 'AssignReg'
+            end
+            -- DECOMPILER ERROR at PC142: Overwrote pending register: R11 in 'AssignReg'
 
-              if l_8_39 ~= 0 then
-                local l_8_42 = nil
-                -- DECOMPILER ERROR at PC149: Overwrote pending register: R10 in 'AssignReg'
+            if l_8_39 ~= 0 then
+              local l_8_42 = nil
+              -- DECOMPILER ERROR at PC149: Overwrote pending register: R10 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC150: Overwrote pending register: R12 in 'AssignReg'
+              -- DECOMPILER ERROR at PC150: Overwrote pending register: R12 in 'AssignReg'
 
-                for l_8_46,l_8_47 in l_8_42 do
-                  local l_8_47 = l_8_39
-                  -- DECOMPILER ERROR at PC156: Overwrote pending register: R19 in 'AssignReg'
+              for l_8_46,l_8_47 in l_8_42 do
+                local l_8_47 = l_8_39
+                -- DECOMPILER ERROR at PC156: Overwrote pending register: R19 in 'AssignReg'
 
-                  local l_8_48, l_8_49 = nil
-                  -- DECOMPILER ERROR at PC162: Overwrote pending register: R19 in 'AssignReg'
+                local l_8_48, l_8_49 = nil
+                -- DECOMPILER ERROR at PC162: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC166: Overwrote pending register: R19 in 'AssignReg'
+                -- DECOMPILER ERROR at PC166: Overwrote pending register: R19 in 'AssignReg'
 
-                end
-                do
-                  -- DECOMPILER ERROR at PC172: Overwrote pending register: R9 in 'AssignReg'
+              end
+              do
+                -- DECOMPILER ERROR at PC172: Overwrote pending register: R9 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC175: Overwrote pending register: R9 in 'AssignReg'
+                -- DECOMPILER ERROR at PC175: Overwrote pending register: R9 in 'AssignReg'
 
-                  if (l_8_47 == 0 or l_8_49 or l_8_2 > 1) and l_8_31 then
-                    do
-                      local l_8_50 = nil
-                      -- DECOMPILER ERROR at PC183: Confused about usage of register: R3 in 'UnsetPending'
+                if (l_8_47 == 0 or l_8_49 or l_8_2 > 1) and l_8_31 then
+                  do
+                    local l_8_50 = nil
+                    -- DECOMPILER ERROR at PC183: Confused about usage of register: R3 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC183: Overwrote pending register: R10 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC183: Overwrote pending register: R10 in 'AssignReg'
 
-                      do return l_8_32, l_8_31 end
-                      -- DECOMPILER ERROR at PC186: Confused about usage of register R12 for local variables in 'ReleaseLocals'
+                    do return l_8_32, l_8_31 end
+                    -- DECOMPILER ERROR at PC186: Confused about usage of register R12 for local variables in 'ReleaseLocals'
 
-                    end
                   end
                 end
               end
@@ -1068,7 +1080,7 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
   if l_9_2 == nil then
     l_9_2 = true
   end
-  if l_9_3 == nil then
+  if l_9_3 == nil or l_9_3 > 3 or l_9_3 <= 0 then
     l_9_3 = 1
   end
   if not l_9_1 then
@@ -1082,7 +1094,7 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
   local l_9_6 = 0
   local l_9_7 = {}
   local l_9_8 = {}
-  local l_9_9, l_9_10 = (MpCommon.StringRegExpSearch)("(?i)(?:FromBase64String\\(\\s*[\'\"]+|\\s+-enc\\s+|\\s+-e\\s+|\\s+-encodedcommand\\s+)([^\\s\'\"\\)]{35,})", l_9_0)
+  local l_9_9, l_9_10 = (MpCommon.StringRegExpSearch)("(?i)(?:FromBase64String\\(\\s*[\'\"]+|\\s+-enc\\s+|\\s+-e\\s+|\\s+-encodedcommand\\s+)([A-Za-z0-9+/]{32,}(==|=)?)", l_9_0)
   if l_9_9 then
     l_9_5 = l_9_10
   else
@@ -1142,15 +1154,10 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
             (table.insert)(l_9_7, "Obfuscated_FailedToDecode")
           end
           local l_9_17 = (string.lower)(l_9_0) .. (string.lower)(l_9_4)
-          local l_9_18 = nil
-          if l_9_3 == 2 then
-            l_9_18 = getCmdKeywordsWeightV2()
-          else
-            l_9_18 = getCmdKeywordsWeight()
-          end
+          local l_9_18 = getCmdKeywordsWeight()
           for l_9_22,l_9_23 in pairs(l_9_18) do
             if (string.find)(l_9_17, l_9_22, 1, false) then
-              l_9_6 = l_9_6 + l_9_23
+              l_9_6 = l_9_6 + l_9_23[l_9_3]
               ;
               (table.insert)(l_9_7, l_9_22)
             end
@@ -1165,7 +1172,7 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
               if l_9_32 ~= 0 and not (l_9_7.Urls)[l_9_31] then
                 l_9_6 = l_9_6 + l_9_32
                 l_9_33.Url = l_9_30
-                -- DECOMPILER ERROR at PC227: Confused about usage of register: R24 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC224: Confused about usage of register: R24 in 'UnsetPending'
 
                 ;
                 (l_9_7.Urls)[l_9_31] = l_9_33
@@ -1177,7 +1184,7 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
               local l_9_39, l_9_40 = UrlGrader(l_9_38, "Base64Grader", l_9_2)
               if l_9_39 ~= 0 and not (l_9_7.Urls)[l_9_38] then
                 l_9_6 = l_9_6 + l_9_39
-                -- DECOMPILER ERROR at PC255: Confused about usage of register: R23 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC252: Confused about usage of register: R23 in 'UnsetPending'
 
                 ;
                 (l_9_7.Urls)[l_9_38] = l_9_40
@@ -1205,7 +1212,7 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
             l_9_8.CommandlineTokens = l_9_24
             l_9_24 = MpCommon
             l_9_24 = l_9_24.StringRegExpSearch
-            l_9_25 = "(?i)(?:FromBase64String\\(\\s*[\'\"]+|\\s+-enc\\s+|\\s+-e\\s+|\\s+-encodedcommand\\s+)([^\\s\'\"\\)]{35,})"
+            l_9_25 = "(?i)(?:FromBase64String\\(\\s*[\'\"]+|\\s+-enc\\s+|\\s+-e\\s+|\\s+-encodedcommand\\s+)([A-Za-z0-9+/]{32,}(==|=)?)"
             l_9_34 = l_9_4
             l_9_24 = l_9_24(l_9_25, l_9_34)
             if l_9_24 then

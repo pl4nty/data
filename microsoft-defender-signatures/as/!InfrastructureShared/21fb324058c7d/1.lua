@@ -4,28 +4,29 @@
 -- params : ...
 -- function num : 0
 local l_0_0, l_0_1 = (bm.get_process_relationships)()
-if l_0_0 then
-  for l_0_5,l_0_6 in ipairs(l_0_0) do
-    if l_0_6.ppid and l_0_6.image_path then
-      local l_0_7 = (string.lower)(l_0_6.image_path)
-      if ((string.find)(l_0_7, "onedrive.exe", 1, true) or (string.find)(l_0_7, "onedrivestandaloneupdater.exe", 1, true)) and (mp.bitand)(l_0_6.reason_ex, 1) == 1 then
-        (bm.add_related_file)(l_0_7)
-        if (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-          (bm.add_related_string)("OFN", "OriginalOneDriveFile", bm.RelatedStringBMReport)
-        else
-          local l_0_8 = (MpCommon.GetOriginalFileName)(l_0_7)
-          do
+do
+  local l_0_2 = nil
+  if l_0_0 then
+    for l_0_6,l_0_7 in ipairs(l_0_0) do
+      if l_0_7.ppid and l_0_7.image_path then
+        local l_0_8 = (string.lower)(l_0_7.image_path)
+        if ((string.find)(l_0_8, "onedrive.exe", 1, true) or (string.find)(l_0_8, "onedrivestandaloneupdater.exe", 1, true)) and (mp.bitand)(l_0_7.reason_ex, 1) == 1 then
+          (bm.add_related_file)(l_0_8)
+          if (mp.IsKnownFriendlyFile)(l_0_8, true, false) then
+            (bm.add_related_string)("OFN", "OriginalOneDriveFile", bm.RelatedStringBMReport)
+          else
+            l_0_2 = (MpCommon.GetOriginalFileName)(l_0_8)
             do
-              if not l_0_8 then
-                local l_0_9 = (sysio.GetPEVersionInfo)(l_0_7)
+              if not l_0_2 then
+                local l_0_9 = (sysio.GetPEVersionInfo)(l_0_8)
                 if l_0_9 and l_0_9.OriginalFilename then
-                  l_0_8 = l_0_9.OriginalFilename
+                  l_0_2 = l_0_9.OriginalFilename
                 end
               end
-              if l_0_8 then
-                (bm.add_related_string)("OFN", l_0_8, bm.RelatedStringBMReport)
-                if not contains((string.lower)(l_0_8), "onedrive") then
-                  (bm.trigger_sig)("OneDriveMasqueraded", l_0_8)
+              if l_0_2 then
+                (bm.add_related_string)("OFN", l_0_2, bm.RelatedStringBMReport)
+                if not contains((string.lower)(l_0_2), "onedrive") then
+                  (bm.trigger_sig)("OneDriveMasqueraded", l_0_2)
                 end
               end
               local l_0_10 = {}
@@ -43,22 +44,45 @@ if l_0_0 then
                 end
                 ;
                 (bm.add_related_string)("Debug_Info", safeJsonSerialize(l_0_10), bm.RelatedStringBMReport)
+                for l_0_16,l_0_17 in ipairs(l_0_12) do
+                  if l_0_17.ImagePath then
+                    local l_0_18 = (string.lower)(l_0_17.ImagePath)
+                    if contains(l_0_18, "onedrive") then
+                      local l_0_19 = bm.trigger_sig
+                      local l_0_20 = "SuspChild_Onedrive"
+                      do
+                        do
+                          l_0_19(l_0_20, l_0_2 or "OriginalOneDriveFile")
+                          do break end
+                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out DO_STMT
+
+                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_STMT
+
+                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_STMT
+
+                        end
+                      end
+                    end
+                  end
+                end
                 do return mp.INFECTED end
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
@@ -67,6 +91,8 @@ if l_0_0 then
       end
     end
   end
+  do return mp.CLEAN end
+  -- DECOMPILER ERROR at PC185: freeLocal<0 in 'ReleaseLocals'
+
 end
-return mp.CLEAN
 
