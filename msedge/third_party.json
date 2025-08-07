@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32305734,
+    "size": 32314110,
     "file_count": 3952
   },
   {
@@ -246,12 +246,12 @@
   },
   {
     "name": "glib",
-    "size": 52102882,
-    "file_count": 2345
+    "size": 52103170,
+    "file_count": 2346
   },
   {
     "name": "glslang",
-    "size": 43052110,
+    "size": 43086780,
     "file_count": 3176
   },
   {
@@ -271,8 +271,8 @@
   },
   {
     "name": "gvdb",
-    "size": 134929,
-    "file_count": 21
+    "size": 135187,
+    "file_count": 22
   },
   {
     "name": "harfbuzz-ng",
@@ -366,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6161497,
+    "size": 6167571,
     "file_count": 936
   },
   {
@@ -376,13 +376,13 @@
   },
   {
     "name": "libgudev",
-    "size": 180829,
-    "file_count": 51
+    "size": 181074,
+    "file_count": 52
   },
   {
     "name": "libinput",
-    "size": 6422320,
-    "file_count": 466
+    "size": 6422603,
+    "file_count": 467
   },
   {
     "name": "libjpeg_turbo",
@@ -461,7 +461,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 280258,
+    "size": 281951,
     "file_count": 40
   },
   {
@@ -491,8 +491,8 @@
   },
   {
     "name": "mutter",
-    "size": 28385473,
-    "file_count": 1980
+    "size": 28385703,
+    "file_count": 1981
   },
   {
     "name": "nasm",
@@ -501,7 +501,7 @@
   },
   {
     "name": "nearby",
-    "size": 279289,
+    "size": 280746,
     "file_count": 52
   },
   {
@@ -516,8 +516,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 28096,
-    "file_count": 14
+    "size": 28569,
+    "file_count": 15
   },
   {
     "name": "oneds_sdk",
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3794026,
+    "size": 3802156,
     "file_count": 578
   },
   {
@@ -641,7 +641,7 @@
   },
   {
     "name": "skia",
-    "size": 3459416,
+    "size": 3459294,
     "file_count": 1178
   },
   {
@@ -656,7 +656,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 529962,
+    "size": 530164,
     "file_count": 15
   },
   {
@@ -686,8 +686,8 @@
   },
   {
     "name": "tflite",
-    "size": 1653380,
-    "file_count": 488
+    "size": 1656433,
+    "file_count": 489
   },
   {
     "name": "tflite_support",
@@ -726,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6217705,
+    "size": 6224916,
     "file_count": 177
   },
   {
