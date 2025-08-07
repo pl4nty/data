@@ -741,6 +741,14 @@ namespace gfx {
     constexpr SkColor kErrorRed = SkColorSetRGB(0xA8, 0x00, 0x00);
     constexpr SkColor kDarkThemeErrorBlue = SkColorSetRGB(0x82, 0xBD, 0xEA);
     constexpr SkColor kErrorBlue = SkColorSetRGB(0x00, 0x69, 0xB9);
+    constexpr SkColor kAvatarToolBarButtonErrorBorderBlue =
+        SkColorSetRGB(0x21, 0x69, 0xEB);
+    constexpr SkColor kAvatarToolBarButtonDarkThemeErrorBorderBlue =
+        SkColorSetRGB(0x23, 0x5C, 0xCF);
+    constexpr SkColor kAvatarToolBarButtonErrorTextBlue =
+        SkColorSetRGB(0x21, 0x69, 0xEB);
+    constexpr SkColor kAvatarToolBarButtonDarkThemeErrorTextBlue =
+        SkColorSetRGB(0xA7, 0xC9, 0xFC);
 
     // Phoenix Error Colors
     constexpr SkColor kPhoenixColorPaletteGreenForeground1 =
