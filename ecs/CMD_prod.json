@@ -626,6 +626,7 @@
         "FlightingTimerFunctionToRequestResourceGroup": true,
         "FlightingUseRemoteConfigControlNSGVersion": true,
         "Flighting_Enable_VMWareBrandingV2": true,
+        "FpaSupportForCMK": true,
         "FpaUsePartnerGalleryImageApi": true,
         "FrontEndServiceEnableBulkAction": true,
         "FrontLineResizeForPlcy": true,
