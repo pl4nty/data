@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250804.9.0",
+        "CalendarCompanionDFVersion": "1.20250805.10.0",
         "CalendarCompanionMsitVersion": "1.20250802.3.0",
         "CalendarCompanionProdVersion": "1.20250705.17.0",
         "CompanionRing": "Prod",
@@ -1030,6 +1030,7 @@
             "usePeoplePresenceStatusQuery",
             "MyTeamFilterDropdownInnerQuery",
             "ConnectorZqResultsQuery",
+            "GetEmployeeAgentPivotsQuery",
             "ConnectorsHomePageSuggestionsQuery"
         ],
         "GraphqlFireAndForget": true,
@@ -1553,8 +1554,8 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250805.1.0",
-        "PeopleInTaskbarMsitVersion": "1.20250729.2.0",
+        "PeopleInTaskbarDFVersion": "1.20250806.2.0",
+        "PeopleInTaskbarMsitVersion": "1.20250803.5.0",
         "PeopleInTaskbarProdVersion": "1.20250726.3.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
