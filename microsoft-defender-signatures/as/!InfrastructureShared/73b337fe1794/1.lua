@@ -39,12 +39,23 @@ do
     if IsExcludedByCmdlineMacOS(l_0_7) or IsExcludedByImagePathMacOS(l_0_4) or IsPersistenceExcludedMacOS(l_0_2, l_0_4, false) then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC73: Confused about usage of register: R1 in 'UnsetPending'
+    ExtendedSuspMacPathsToMonitor = function(l_1_0)
+  -- function num : 0_0
+  if SuspMacPathsToMonitor(l_1_0, true) then
+    return true
+  end
+  if l_1_0:find("^/Users/[^/]+/Desktop/", 1, false) or l_1_0:find("^/Users/[^/]+/Documents/", 1, false) or l_1_0:find("^/Users/[^/]+/Downloads/", 1, false) or l_1_0:find("^/Users/[^/]+/Library/[^/]+$", 1, false) or l_1_0:find("^/Users/[^/]+/Library/[^/]+/[^/]+$", 1, false) or l_1_0:find("^/Library/[^/]+$", 1, false) or l_1_0:find("^/Library/[^/]+/[^/]+$", 1, false) then
+    return true
+  end
+  return false
+end
+
+    -- DECOMPILER ERROR at PC75: Confused about usage of register: R1 in 'UnsetPending'
 
     if not IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_4) then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC80: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC82: Confused about usage of register: R0 in 'UnsetPending'
 
     local l_0_17 = nil
     if l_0_2:match("[^/]*$") ~= nil and l_0_2:match("[^/]*$") ~= "" and IsKeyInRollingQueue("MAC_PERSIST_PROG_PATHS", l_0_2:match("[^/]*$"), true) then
@@ -52,12 +63,12 @@ do
       if GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_2:match("[^/]*$")) ~= nil and #GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_2:match("[^/]*$")) > 0 then
         for l_0_22,l_0_23 in ipairs(GetRollingQueueKeyValues("MAC_PERSIST_PROG_PATHS", l_0_2:match("[^/]*$"))) do
           local l_0_19, l_0_20, l_0_21 = nil
-          -- DECOMPILER ERROR at PC108: Confused about usage of register: R9 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC110: Confused about usage of register: R9 in 'UnsetPending'
 
-          if SuspMacPathsToMonitor(R9_PC108.value, true) then
-            (bm.add_related_string)("persisted_path", R9_PC108.value, bm.RelatedStringBMReport)
+          if ExtendedSuspMacPathsToMonitor(R9_PC110.value) then
+            (bm.add_related_string)("persisted_path", R9_PC110.value, bm.RelatedStringBMReport)
             ;
-            (bm.add_related_file)(R9_PC108.value)
+            (bm.add_related_file)(R9_PC110.value)
             return mp.INFECTED
           end
         end
