@@ -44,21 +44,40 @@ if #l_0_4 > 8 and StringStartsWith(l_0_4, "file:///") then
   l_0_4 = l_0_0(l_0_4)
 end
 if l_0_4 ~= nil and #l_0_4 > 2 then
+  local l_0_5 = (string.lower)(l_0_4)
+  if StringEndsWith(l_0_5, "supervisorprintpopup.exe") then
+    return mp.CLEAN
+  end
+  if StringEndsWith(l_0_5, ".html") then
+    return mp.CLEAN
+  end
+  if StringEndsWith(l_0_5, ".pdf") then
+    return mp.CLEAN
+  end
+  local l_0_6 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
+  if l_0_6 ~= nil then
+    l_0_6 = (string.lower)(normalize_path(l_0_6))
+  end
   if (sysio.IsFileExists)(l_0_4) then
     (mp.set_mpattribute)("Lua:UrlFileInStartupWithTargetExist.A")
     ;
     (mp.set_mpattribute)("MpInternal_researchdata=urlfileinstartuptargetexist=" .. l_0_4)
     ;
     (mp.ReportLowfi)(l_0_4, 3186240911)
+    AppendToRollingQueue("UrlFileInStartupTargetA", l_0_5, l_0_6)
+    ;
+    (mp.TriggerScanResource)("file", l_0_4, 0)
     return mp.INFECTED
   end
   if l_0_1(l_0_4) then
-    AppendToRollingQueue("UrlFileInStartupTargetA", "url_path", l_0_4)
+    AppendToRollingQueue("UrlFileInStartupTargetA", l_0_5, l_0_6)
     ;
     (mp.set_mpattribute)("Lua:UrlFileInStartupWithTargetNotExist.A")
     ;
     (mp.set_mpattribute)("MpInternal_researchdata=urlfileinstartuptargetnotexist=" .. l_0_4)
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

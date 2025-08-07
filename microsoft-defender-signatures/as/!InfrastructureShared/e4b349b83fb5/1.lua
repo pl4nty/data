@@ -6,7 +6,7 @@
 do
   if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil and (this_sigattrlog[5]).utf8p2 ~= "" then
     local l_0_0 = (this_sigattrlog[5]).utf8p2
-    if l_0_0:find("/Applications/", 1, true) or l_0_0:find("/tmp/", 1, true) or l_0_0:find("/Users/Shared/", 1, true) then
+    if l_0_0:find(" /Applications/", 1, true) or l_0_0:find(" /tmp/", 1, true) or l_0_0:find(" /private/tmp/", 1, true) or l_0_0:find(" /Users/Shared/", 1, true) then
       return mp.INFECTED
     end
   end
