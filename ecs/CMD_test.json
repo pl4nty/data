@@ -1174,6 +1174,7 @@
         "Product_Logo": "new-product-logo",
         "Product_Name": "Windows App",
         "RASEnableExtendVSBGracePeriodTo7Days": true,
+        "RASEnablePatchCloudPcPowerState": true,
         "RASEnablePatchWorkspacePowerState": true,
         "RASGenerateProvisionWorkitemWhileDeprovisioning": true,
         "RASHandleAbuseTenant": true,
