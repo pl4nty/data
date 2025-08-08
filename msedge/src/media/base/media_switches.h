@@ -327,10 +327,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaFoundationCdm);
 MEDIA_EXPORT extern const base::FeatureParam<std::string>
     kMediaFoundationClearKeyCdmPathForTesting;
 #endif  // BUILDFLAG(IS_WIN)
-
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaLearningExperiment);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaLearningFramework);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaLearningSmoothnessExperiment);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaOptimizer);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaPowerExperiment);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMemoryPressureBasedSourceBufferGC);
