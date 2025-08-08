@@ -1031,7 +1031,7 @@
             "usePeoplePresenceStatusQuery",
             "MyTeamFilterDropdownInnerQuery",
             "ConnectorZqResultsQuery",
-            "GetEmployeeAgentPivotsQuery",
+            "EmployeeAgentPivotsQuery",
             "ConnectorsHomePageSuggestionsQuery"
         ],
         "GraphqlFireAndForget": true,
