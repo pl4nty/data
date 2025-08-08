@@ -11,16 +11,17 @@ define(() => {
                     CloudExperienceHost.Telemetry.logEvent("SetDefaultUserSessionNextAppLaunchSucceeded");
                     CloudExperienceHost.Storage.VolatileSharableData.addItem("OobePrepTransitionToNextAppValues", "launchNextApp", true);
 
-                    let sharableDataPromise = CloudExperienceHost.Storage.SharableData.saveDataForOobeAsync();
-                    let volatileSharableDataPromise = CloudExperienceHost.Storage.VolatileSharableData.saveDataForOobeAsync();
+                    try
+                    {
+                        CloudExperienceHost.Storage.SharableData.saveDataForOobeDefaultUser();
+                        CloudExperienceHost.Storage.VolatileSharableData.saveDataForOobeDefaultUser();
+                    }         
+                    catch (err)
+                    {
+                        CloudExperienceHost.Telemetry.logEvent("saveDataForOobeDefaultUserFailed", CloudExperienceHost.GetJsonFromError(err));
+                    }
 
-                    WinJS.Promise.join({ sharableDataPromise, volatileSharableDataPromise }).then(() => {
-                        CloudExperienceHost.Telemetry.logEvent("SaveDataForOobeSucceeded");
-                        completeDispatch(CloudExperienceHost.AppResult.success);
-                    }, (err) => {
-                        CloudExperienceHost.Telemetry.logEvent("SaveDataForOobeFailed", CloudExperienceHost.GetJsonFromError(err));
-                        completeDispatch(CloudExperienceHost.AppResult.success);
-                    });
+                    completeDispatch(CloudExperienceHost.AppResult.success);
                 } catch (err) {
                     CloudExperienceHost.Telemetry.logEvent("SetDefaultUserSessionNextAppLaunchFailed", CloudExperienceHost.GetJsonFromError(err));
                     completeDispatch(CloudExperienceHost.AppResult.fail);

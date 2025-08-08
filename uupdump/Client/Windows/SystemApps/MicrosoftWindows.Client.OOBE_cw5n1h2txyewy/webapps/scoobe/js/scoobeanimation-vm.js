@@ -27,6 +27,37 @@ function isValidAppDataUrl(string) {
     return url.protocol === 'ms-appdata:';
 }
 
+function isValidLottieObject(obj) {
+    return (
+        obj &&
+        typeof obj === "object" &&
+        typeof obj.v === "string" &&
+        typeof obj.fr === "number" &&
+        typeof obj.ip === "number" &&
+        typeof obj.op === "number" &&
+        typeof obj.ddd === "number" &&
+        Array.isArray(obj.layers) &&
+        Array.isArray(obj.assets)
+    );
+}
+
+function updateAnimObj(lottieStr) {
+    lottieObj = JSON.parse(lottieStr);
+    if (_previousAnimationFile !== lottieStr) {
+        _previousAnimationFile = lottieStr;
+        if (_anim) {
+            exitAnim();
+        }
+        setTimeout(() => {
+            clearAnimation();
+            if (lottieObj && isValidLottieObject(lottieObj)) {
+                let animationContainer = document.getElementById("animation");
+                _anim = loadAnimsWithObj(animationContainer, lottieObj);
+            }
+        }, 500);
+    }
+}
+
 function updateAnim(fileName) {
     if (_previousAnimationFile !== fileName)
     {
@@ -68,6 +99,26 @@ function loadAnims(animationContainer, fileName) {
     // Add events to this animation
     thisAnim.addEventListener('DOMLoaded', () => {
         parent = element.parentNode;
+        enterAnim(false);
+    });
+
+    return thisAnim;
+}
+
+function loadAnimsWithObj(animationContainer, lottieObj) {
+    let thisAnim = null,
+        params = {
+            container: animationContainer,
+            renderer: "svg",
+            loop: false,
+            autoplay: false,
+            animationData: lottieObj,
+        };
+
+    thisAnim = bodymovin.loadAnimation(params);
+
+    thisAnim.addEventListener('DOMLoaded', () => {
+        parent = animationContainer.parentNode;
         enterAnim(false);
     });
 

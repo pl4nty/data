@@ -526,5 +526,88 @@
       "visibility": false,
       "measureId": 53473051
     }
+  },
+  "OOBEHANDHELD": {
+    "start": "StartSelector",
+    "error": "OobeError",
+    "msaTicketContext": "OOBE",
+    "notifyOnFirstVisible": true,
+    "notifyOnLastFinished": true,
+    "waitForTaskbarReady": true,
+    "useBackstackForBackNavigation": true,
+    "frameName": "oobe-frame",
+    "personality": "CloudExperienceHost.Personality.LiteWhite",
+    "wallpaperBackdropEnabled": true,
+    "speechCapable": true,
+    "speechDisabled": true,
+    "blockLateWebAppCalls": true,
+    "blockEarlyExit": true,
+    "StartSelector": {
+      "cxid": "StartSelector",
+      "launcher": "js:OOBEStartSelector",
+      "successID": "OobeOemRegistrationPostSettings",
+      "visibility": false,
+      "measureId": 48471513
+    },
+    "OobeError": {
+      "cxid": "OobeError",
+      "frameAnimation": "errorLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
+      "visibility": false,
+      "measureId": 48471631
+    },
+    "OobeExit": {
+      "cxid": "OobeExit",
+      "launcher": "js:OobeSkipNode",
+      "canExitCxh": true,
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "measureId": 48471668
+    },
+    "OobeOemRegistrationPostSettings": {
+      "cxid": "OobeOemRegistrationPostSettings",
+      "frameAnimation": "oemRegistrationHandheldLottie.json",
+      "url": "ms-appx-web:///webapps/scoobe/view/oobeoemregistration-main.html",
+      "successID": "OobeGamepass",
+      "exitID": "OobeGamepass",
+      "cancelID": "OobeGamepass",
+      "failID": "OobeGamepass",
+      "abortID": "OobeGamepass",
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "measureId": 48471894
+    },
+    "OobeGamepass": {
+      "cxid": "OobeGamepass",
+      "url": "https://oloobe.officeapps.live.com/officeoobe/gamepass",
+      "urlint": "https://oloobe.officeapps.live-int.com/officeoobe/gamepass",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "ignoreResult": true,
+      "internetRequired": true,
+      "successID": "OobeTelemetryFlush",
+      "cancelID": "OobeTelemetryFlush",
+      "offlineID": "OobeTelemetryFlush",
+      "failID": "OobeTelemetryFlush",
+      "abortID": "OobeTelemetryFlush",
+      "needCustomHeaders": [ "cxh-windowsTelemetryLevel" ],
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "intraWebAppVisibility": false,
+      "measureId": 48472109
+    },
+    "OobeTelemetryFlush": {
+      "cxid": "OobeTelemetryFlush",
+      "launcher": "js:OobeTelemetryFlush",
+      "requiredFeatureName": "SingleEnduserOobeApp",
+      "successID": "OobeExit",
+      "cancelID": "OobeExit",
+      "offlineID": "OobeExit",
+      "failID": "OobeExit",
+      "abortID": "OobeExit",
+      "disableErrorPageOnFailure": true,
+      "disableBackNavigationToNode": true,
+      "visibility": false,
+      "measureId": 53473051
+    }
   }
 }

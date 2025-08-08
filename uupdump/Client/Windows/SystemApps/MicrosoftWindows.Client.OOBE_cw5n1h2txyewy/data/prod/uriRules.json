@@ -39,6 +39,7 @@
     "CloudExperienceHost.OobeSettings.*": [ "ms-appx-web://microsoft.windows.cloudexperiencehost/views/*", "ms-appx-web://microsoft.cloudexperiencehost.testapp/views/" ],
     "CloudExperienceHost.OobeUpdateSettings.*": [ "ms-appx-web://microsoftwindows.oobehost/*", "ms-appx-web://microsoftwindows.client*" ],
     "CloudExperienceHost.Policy.*": [ "*" ],
+    "CloudExperienceHost.Privacy.*": [ "ms-appx-web://microsoft.windows.cloudexperiencehost/*", "ms-appx-web://microsoft.cloudexperiencehost.testapp/*", "ms-appx-web://microsoftwindows.oobehost/*", "ms-appx-web://microsoftwindows.client*" ],
     "CloudExperienceHost.Resources.*": [ "*" ],
     "CloudExperienceHost.Rewards.*": [ "ms-appx-web://microsoft.windows.cloudexperiencehost/*", "ms-appx-web://microsoft.cloudexperiencehost/*", "ms-appx-web://microsoft.cloudexperiencehost.testapp/*", "https://sdx.microsoft.com/*", "https://sdx.microsoft-ppe.com/*", "https://sdx.microsoft-int.com/*", "https://canary.sdx.microsoft.com/*" ],
     "CloudExperienceHost.RoamingSettings.*": [ "ms-appx-web://microsoft.windows.cloudexperiencehost/views/", "ms-appx-web://microsoft.cloudexperiencehost.testapp/views/" ],

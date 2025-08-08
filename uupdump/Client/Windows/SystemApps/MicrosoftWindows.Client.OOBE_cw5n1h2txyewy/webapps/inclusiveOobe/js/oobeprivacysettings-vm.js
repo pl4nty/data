@@ -3,12 +3,15 @@
 //
 define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobePrivacySettingsData, bridge, constants, core, KoHelpers) => {
     class OobePrivacySettingsViewModel {
-        constructor(resources, settingsEntryResources) {
+        constructor(resources, settingsEntryResources, isInternetAvailable) {
+            bridge.addEventListener(constants.Events.backButtonClicked, this.handleBackNavigation.bind(this));
             this.resources = resources;
             this.settingsEntryResources = settingsEntryResources;
+            this.isInternetAvailable = isInternetAvailable;
             let oobeSettingsToggles = this.getSettingsToggles();
             this.contentSettings = oobeSettingsToggles.settingsData;
-            this.settingsObjects = oobeSettingsToggles.settingsObjects;
+            this.settingsObjects = oobeSettingsToggles.settingsObjects;        
+            this.learnMoreContent = oobePrivacySettingsData.getLearnMoreContent();
             this.scrolledToTheBottom = true;
             this.firstUpdateForScrollState = true;
             this.scrollViewEle = null;
@@ -44,7 +47,7 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                         return this.processingFlag();
                     }),
                     buttonClickHandler: () => {
-
+                        this.onLearnMore();
                     }
                 },
                 {
@@ -72,7 +75,7 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                         return this.processingFlag();
                     }),
                     buttonClickHandler: () => {
-
+                        this.onLearnMoreContinue();
                     }
                 }
             ];
@@ -85,9 +88,16 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                 return (this.viewName() === "customize");
             });
 
+            this.learnMoreVisible = ko.pureComputed(() => {
+               return (this.viewName() === "learnmore");
+            });
+
             this.pageDefaultAction = () => {
                 if (this.customizeVisible()) {
                     this.onSave();
+                }
+                else if (this.learnMoreVisible()) {
+                   this.onLearnMoreContinue();
                 }
             };
 
@@ -128,9 +138,27 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                     }
                 }
                 else {
-                    bridge.fireEvent(constants.Events.done, constants.AppResult.success);
+                    oobePrivacySettingsData.commitSettings(this.settingsObjects, 2 /*PrivacyConsentPresentationVersion::AllSettingsSinglePageTwoColumn*/);
                 }
             }
+        }
+
+        onLearnMore() {
+            if (!this.processingFlag()) {
+                this.processingFlag(true);
+                bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "Settings", "LearnMoreLink");
+                this.viewName("learnmore");
+                bridge.invoke("CloudExperienceHost.setShowBackButton", true); // Ensure back button shows on Learn More page and that it will return to the main page
+                this.onAfterViewNameUpdated();
+                KoHelpers.setFocusOnAutofocusElement();
+            }
+        }
+
+        onAfterViewNameUpdated() {
+            let learnMoreIFrame = document.getElementById("learnMoreIFrame");
+            let doc = learnMoreIFrame.contentWindow.document;
+            let dirVal = document.documentElement.dir;
+            oobePrivacySettingsData.updateLearnMoreContentForRender(learnMoreIFrame, doc, dirVal, this.isInternetAvailable, this.resources.NavigationError, this.resources.LearnMoreScrollRegion);
         }
 
         updateForScrollState() {
@@ -215,6 +243,23 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
             return -c / 2 * (t * (t - 2) - 1) + b;
         }
 
+        onLearnMoreContinue() {
+            if (!this.processingFlag()) {
+                this.processingFlag(true);
+                this.viewName("customize");
+                bridge.invoke("CloudExperienceHost.setShowBackButton", false); // Fall back to normal back button behavior
+                this.initScrollState();
+                this.updateForScrollState();
+                KoHelpers.setFocusOnAutofocusElement();
+            }
+        }
+
+        handleBackNavigation() {
+            if (this.learnMoreVisible()) {
+                this.onLearnMoreContinue();
+            }
+        }
+
         getSettingsToggles() {
             //initialize the settingsData object
             let settingsData = [];
@@ -240,8 +285,7 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                         name: setting.name,
                         descriptionOn: setting.descriptionOn,
                         descriptionOff: setting.descriptionOff,
-                        titleText: ko.observable(setting.value ? setting.descriptionOn : setting.descriptionOff),
-                        canonicalName: setting.canonicalName
+                        titleText: ko.observable(setting.value ? setting.descriptionOn : setting.descriptionOff)
                     };
                     toggle.checkedValue.subscribe(function (newValue) {
                         setting.value = newValue;
