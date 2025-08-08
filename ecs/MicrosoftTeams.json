@@ -3951,7 +3951,10 @@
             "multiCloudLaunchEnabled": false
         },
         "auth": {
+            "accountTransferCobrandingId": "c023bb09-f8be-48ac-929e-bfe118a90575",
+            "accountTransferReferralUrl": "https://krs.microsoft.com/r/GJ6eghsK/",
             "crossCloudMeetingEnabled": false,
+            "enableAccountTransfer": false,
             "enableMTMAAuthDataInMaglevStorageViaHost": false,
             "oneAuthAudienceType": 3
         },
