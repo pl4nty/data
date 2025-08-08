@@ -89,6 +89,7 @@ end
 if l_0_7 < 10 then
   return mp.CLEAN
 end
+l_0_11.CommandlineTokens = {}
 l_0_8.CommandLineGradingInfo = l_0_11
 local l_0_13, l_0_14 = safeJsonSerialize(l_0_8, 150, nil, true)
 if not l_0_13 then
