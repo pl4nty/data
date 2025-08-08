@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250805.10.0",
+        "CalendarCompanionDFVersion": "1.20250806.10.0",
         "CalendarCompanionMsitVersion": "1.20250802.3.0",
         "CalendarCompanionProdVersion": "1.20250802.3.0",
         "CompanionRing": "Prod",
@@ -545,6 +545,7 @@
         "CosmicRolloutMode": null,
         "Crowdsource": true,
         "DecoratedProfileLookupBatchSize": 10,
+        "DisableDisplayNameInConversationQuery": true,
         "DisableOutboundCancellationOnConfigurationCalls": true,
         "DisablePrefetchForGroupPersona": true,
         "DisableWorkingWithForEDU": true,
@@ -1553,7 +1554,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250806.2.0",
+        "PeopleInTaskbarDFVersion": "1.20250807.2.0",
         "PeopleInTaskbarMsitVersion": "1.20250803.5.0",
         "PeopleInTaskbarProdVersion": "1.20250726.3.0",
         "campaignSchedules": {
