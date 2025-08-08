@@ -4,64 +4,6 @@
         "test": "test"
     },
     "ChillAdminCopilot": {
-        "Floodgate_Campaign_AdminPortal.0472551c-40a2-423b-8eb9-e35ded05618a": {
-            "CampaignId": "0472551c-40a2-423b-8eb9-e35ded05618a",
-            "EndTimeUtc": "2025-08-27T07:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 1,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-07-28T07:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "CopilotSearchUpdateSettings",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "Content": {
-                    "Prompt": {
-                        "NoLabel": "Not now",
-                        "Question": "We have two questions for you.",
-                        "Title": "Microsoft would love your perspective",
-                        "YesLabel": "Sure"
-                    },
-                    "Question": {
-                        "Question": "Please tell us more about why you chose that answer."
-                    },
-                    "Rating": {
-                        "IsZeroBased": false,
-                        "Question": "How helpful did you find Copilot Search management in the Copilot Control System?",
-                        "RatingValuesAscending": [
-                            "Not at all helpful",
-                            "Somewhat helpful",
-                            "Neutral",
-                            "helpful",
-                            "Extremely helpful"
-                        ]
-                    }
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2
-            }
-        },
         "Floodgate_Campaign_AdminPortal.16251047-5258-45a3-a826-f9d51adf0a6b": {
             "CampaignId": "16251047-5258-45a3-a826-f9d51adf0a6b",
             "EndTimeUtc": "2026-05-20T07:00:00Z",
@@ -150,6 +92,103 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/16251047-5258-45a3-a826-f9d51adf0a6b/a22c2815-e232-4c88-8e57-37b296df8797/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_AdminPortal.1edd70f9-d14c-4c65-8556-c6f736b436c9": {
+            "CampaignId": "1edd70f9-d14c-4c65-8556-c6f736b436c9",
+            "EndTimeUtc": "2025-12-30T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 80,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-08-03T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "PausePolicy",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very dissatisfied",
+                                    "questionLabel": "How satisfied are you with the Microsoft 365 Backup product?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very satisfied",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "MultiSelect Verbatim",
+                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Backup for this data not needed anymore",
+                                        "Optimizing for cost / budget reasons",
+                                        "Currently testing, will resume at a later point of time",
+                                        "Offboarding only for one workload",
+                                        "Not planning to use the product anymore",
+                                        "Other"
+                                    ],
+                                    "id": "multiselect1",
+                                    "questionLabel": "What made you pause Backup policy? ",
+                                    "required": true,
+                                    "type": "MultipleChoice",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please elaborate your response to help us improve the product",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/1edd70f9-d14c-4c65-8556-c6f736b436c9/817d561e-c54a-4fca-acdb-f3ada4f6195b/Web-AdminPortal/",
                     "variables": {}
                 }
             }
