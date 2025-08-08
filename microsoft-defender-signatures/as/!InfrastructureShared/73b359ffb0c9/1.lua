@@ -11,6 +11,9 @@ local l_0_0 = (bm.get_imagepath)()
 if IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
+if (string.find)(l_0_0, "Goblin.app/Contents/", 1, true) or (string.find)(l_0_0, "/download-package/clickhouse", 1, true) then
+  return mp.CLEAN
+end
 local l_0_2 = nil
 if (bm.get_current_process_startup_info)() == nil then
   return mp.CLEAN
