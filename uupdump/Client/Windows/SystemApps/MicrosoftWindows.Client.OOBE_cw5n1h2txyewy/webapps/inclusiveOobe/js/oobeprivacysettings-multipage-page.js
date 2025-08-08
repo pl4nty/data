@@ -24,7 +24,17 @@
                 this.settingsEntryResourceStrings = JSON.parse(result);
             });
 
-            return WinJS.Promise.join({ loadCssPromise: loadCssPromise, langAndDirPromise: langAndDirPromise, getLocalizedStringsPromise: getLocalizedStringsPromise, getSettingsLocalizedStringsPromise: getSettingsLocalizedStringsPromise });
+            let initializePrivacySettingsPromise = requireAsync(['oobeprivacysettings-data']).then((result) => {
+                return result.oobeprivacysettings_data.initializePrivacySettingsAsync();
+            });
+
+            let isConnectedToNetworkPromise = requireAsync(['legacy/bridge']).then((result) => {
+                return result.legacy_bridge.invoke("CloudExperienceHost.Environment.hasInternetAccess");
+            }).then((isConnectedToNetwork) => {
+                this.isInternetAvailable = isConnectedToNetwork;
+            });
+
+            return WinJS.Promise.join({ loadCssPromise: loadCssPromise, langAndDirPromise: langAndDirPromise, getLocalizedStringsPromise: getLocalizedStringsPromise, getSettingsLocalizedStringsPromise: getSettingsLocalizedStringsPromise, initializePrivacySettingsPromise: initializePrivacySettingsPromise, isConnectedToNetworkPromise: isConnectedToNetworkPromise });
         },
         error: (e) => {
             require(['legacy/bridge', 'legacy/events'], (bridge, constants) => {
@@ -39,7 +49,7 @@
                 window.KoHelpers = KoHelpers;
 
                 // Apply bindings and show the page
-                let vm = new OobePrivacySettingsMultiPageViewModel(this.resourceStrings, this.settingsEntryResourceStrings);
+                let vm = new OobePrivacySettingsMultiPageViewModel(this.resourceStrings, this.settingsEntryResourceStrings, this.isInternetAvailable);
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                     WinJS.Utilities.addClass(document.body, "pageLoaded");

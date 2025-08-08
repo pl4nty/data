@@ -3,14 +3,24 @@
 //
 define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobePrivacySettingsData, bridge, constants, core, KoHelpers) => {
         class OobePrivacySettingsMultiPageViewModel {
-            constructor(resources, settingsEntryResources) {
+            constructor(resources, settingsEntryResources, isInternetAvailable) {
                 this.resources = resources;
                 this.settingsEntryResources = settingsEntryResources;
+                this.isInternetAvailable = isInternetAvailable;
                 let settingsPagesAndSettings = this.getSettingsPages();
                 this.settingsPageContent = settingsPagesAndSettings.settingsPageContent;
                 this.settingsObjects = settingsPagesAndSettings.settingsObjects;
 
-                this.settingVisible = ko.observable(true);
+                // Set up member variables for the learn more page
+                this.learnMoreContent = oobePrivacySettingsData.getLearnMoreContent();
+                this.learnMoreVisible = ko.observable(false);
+                this.learnMoreVisible.subscribe(() => {
+                    this.setShowBackButton();
+                });
+
+               this.settingVisible = ko.pureComputed(() => {
+                    return !this.learnMoreVisible();
+                });
 
                 this.learnMoreButtons = [
                     {
@@ -22,10 +32,14 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                             return this.processingFlag();
                         }),
                         buttonClickHandler: () => {
-
+                            this.onLearnMoreContinue();
                         }
                     }
                 ];
+
+                this.onLearnMoreContinue = () => {
+                    this.learnMoreVisible(false);
+                };
 
                 // Add event listener for back button
                 bridge.addEventListener(constants.Events.backButtonClicked, this.handleBackNavigation.bind(this));
@@ -65,7 +79,7 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                     {
                         buttonText: resources.LearnMoreButtonText,
                         buttonClickHandler: () => {
-
+                            this.onLearnMoreButtonClick();
                         },
                         disableControl: this.disableControl
                     },
@@ -97,8 +111,22 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                 };
 
                 this.completePageFlow = () => {
-                    bridge.fireEvent(constants.Events.done, constants.AppResult.success);
+                    oobePrivacySettingsData.commitSettings(this.settingsObjects, 3 /*PrivacyConsentPresentationVersion::OneSettingPerPageTwoItemListView*/);
                 };
+
+                this.onLearnMoreButtonClick = () => {
+                    this.learnMoreVisible(true);
+                    this.updateLearnMore();
+                    this.setShowBackButton();
+                };
+            }
+
+            updateLearnMore() {
+                let learnMoreIFrame = document.getElementById("learnMoreIFrame");
+                let doc = learnMoreIFrame.contentWindow.document;
+                let dirVal = document.documentElement.dir;
+                let currentItem = this.settingsObjects[this.currentPanelIndex()];
+                oobePrivacySettingsData.updateLearnMoreContentForRender(learnMoreIFrame, doc, dirVal, this.isInternetAvailable, this.resources.NavigationError, this.resources.LearnMoreScrollRegion, currentItem);
             }
 
             handleBackNavigation() {
@@ -112,8 +140,11 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
             }
 
             setShowBackButton() {
-            if (this.currentPanelIndex() > 0) {
+                if (this.learnMoreVisible()) {
                     bridge.invoke("CloudExperienceHost.setShowBackButton", true);
+                } else if (this.currentPanelIndex() > 0) {
+                    // get result of bridge call to determine if back button should be shown
+                    let result = bridge.invoke("CloudExperienceHost.setShowBackButton", true);
                 } else {
                     bridge.invoke("CloudExperienceHost.setShowBackButton", false);
                 }

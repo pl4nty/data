@@ -62,6 +62,16 @@ var CloudExperienceHost;
                 return CloudExperienceHostAPI.UserIntentRecordCore.setIntentPropertyStringAsync("OobeStorage", "OobeSharableData", serializedValues); // save to HKCU
             }
             SharableData.saveDataForOobeAsync = saveDataForOobeAsync;
+            function saveDataForOobeDefaultUser() {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeHostAppInDefaultUserSession")) {
+                    if (Windows.System.Profile.SystemSetupInfo.outOfBoxExperienceState == Windows.System.Profile.SystemOutOfBoxExperienceState.completed) {
+                        return;
+                    }
+                    let serializedValues = JSON.stringify(_getShareContainer().values);
+                    return CloudExperienceHostAPI.UtilStaticsCore.setDataForOobe("OobeSharableData", serializedValues); // save to HKCU
+                }
+            }
+            SharableData.saveDataForOobeDefaultUser = saveDataForOobeDefaultUser;
         })(SharableData = Storage.SharableData || (Storage.SharableData = {}));
     })(Storage = CloudExperienceHost.Storage || (CloudExperienceHost.Storage = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
@@ -160,6 +170,20 @@ var CloudExperienceHost;
                 return CloudExperienceHostAPI.UserIntentRecordCore.setIntentPropertyStringAsync("OobeStorage", "OobeVolatileSharableData", serializedValues); // save to HKCU
             }
             VolatileSharableData.saveDataForOobeAsync = saveDataForOobeAsync;
+            function saveDataForOobeDefaultUser() {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeHostAppInDefaultUserSession")) {
+                    if (Windows.System.Profile.SystemSetupInfo.outOfBoxExperienceState == Windows.System.Profile.SystemOutOfBoxExperienceState.completed) {
+                        return;
+                    }
+                    let dictionariesToSave = {};
+                    Container.getAllCustomDictionaries().forEach(function (value, key, map) {
+                        dictionariesToSave[key] = getValues(key);
+                    });
+                    let serializedValues = JSON.stringify(dictionariesToSave);
+                    return CloudExperienceHostAPI.UtilStaticsCore.setDataForOobe("OobeVolatileSharableData", serializedValues); // save to HKCU
+                }
+            }
+            VolatileSharableData.saveDataForOobeDefaultUser = saveDataForOobeDefaultUser;
         })(VolatileSharableData = Storage.VolatileSharableData || (Storage.VolatileSharableData = {}));
     })(Storage = CloudExperienceHost.Storage || (CloudExperienceHost.Storage = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));
