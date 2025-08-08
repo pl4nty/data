@@ -528,6 +528,7 @@
         "EnableShowBusinessLicensePreviewContent": true,
         "EnableShowUnhealthySnapshotOnUX": true,
         "EnableSingleDenormalizeResult": true,
+        "EnableSingleGetCloudPcForDeviceOverviewBlade": true,
         "EnableSingleSignOnAADJ": true,
         "EnableSingleSignOnHAADJ": true,
         "EnableSingleSignOnInUX": true,
