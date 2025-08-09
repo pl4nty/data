@@ -7,9 +7,6 @@
 
 #include <windows.h>
 
-#include <array>
-#include <cstdint>
-
 #include "base/no_destructor.h"
 #include "chrome/install_static/install_util.h"
 
@@ -51,6 +48,8 @@ class BeaconDetect {
   static void WriteBeaconValueToRegistry(BeaconIndex beacon_index, DWORD value);
 
   static long GetDetectedFeatureIndex();
+
+  static void ResetBeaconsOnProcessExit();
 
   static void ResetStaticVariablesForTesting();
 
