@@ -515,6 +515,7 @@
         "migrationStatus": "Default"
     },
     "MicrosoftTeamsAuthSvc": {
+        "MobrTesting": true,
         "ringSettings": {
             "settings": {
                 "adoPipelineTestFeatureFlag": false,
@@ -3855,6 +3856,7 @@
     },
     "TeamsTMIS": {
         "AllowedEngagementType": "[]",
+        "AttendeeCountFilteringQueryTop": 500,
         "AudienceGroup": "general",
         "BypassTeamsPremiumCheck": false,
         "ChannelMeetingProcessorSteps": "V1SaveFinalReport,V1SendMCPS",
