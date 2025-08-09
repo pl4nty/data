@@ -4,6 +4,8 @@
 
 #include "chrome/chrome_elf/edge_beacon_detect.h"
 
+#include <array>
+
 #include "base/strings/stringprintf.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/win/win_util.h"
@@ -26,6 +28,33 @@ constexpr DWORD kLimitCrashCount = 2;
 
 BeaconIndex g_crash_detection_beacon_index_ = BeaconIndex::kMaxBeacons;
 
+// Consider the following scenario:
+// Process A has already modified the beacon value. Later, another process B
+// also modifies this value. When process A invokes StopCrashDetection to reset
+// the beacon, it may use an incorrect value due to B's modification. To avoid
+// this, it's necessary to cache the beacon value in memory within the current
+// process and use the cached value to determine how to reset it correctly.
+// During the execution of processes A and B, the beacon value may be repeatedly
+// overwritten by both. Ultimately, its final value depends on which process
+// writes last. For the process that performs the last write, the beacon value
+// is considered correct from its own perspective.
+std::array<DWORD, static_cast<size_t>(BeaconIndex::kMaxBeacons)>
+    g_beacon_cache = {0xFFFFFFFF, 0xFFFFFFFF};
+
+DWORD ReadCache(BeaconIndex beacon_index) {
+  if (beacon_index >= BeaconIndex::kMaxBeacons) {
+    return 0xFFFFFFFF;
+  }
+  return g_beacon_cache[static_cast<int>(beacon_index)];
+}
+
+void UpdateCache(BeaconIndex beacon_index, DWORD value) {
+  if (beacon_index >= BeaconIndex::kMaxBeacons) {
+    return;
+  }
+  g_beacon_cache[static_cast<int>(beacon_index)] = value;
+}
+
 // Only one feature can be detected at a time, if true, it means that
 // indirect detection is locked, and the feature should not be detected.
 bool g_indirect_detection_locked_ = false;
@@ -33,7 +62,11 @@ bool g_indirect_detection_locked_ = false;
 BeaconDetect::BeaconDetect(BeaconIndex beacon_index)
     : beacon_index_(beacon_index) {
   ResetBeaconsOnUpdate();
-  beacon_value_ = GetBeaconValueFromRegistry(beacon_index);
+  beacon_value_ = ReadCache(beacon_index);
+  if (0xFFFFFFFF == beacon_value_) {
+    beacon_value_ = GetBeaconValueFromRegistry(beacon_index);
+    UpdateCache(beacon_index, beacon_value_);
+  }
 }
 
 void BeaconDetect::ResetBeaconsOnUpdate() {
@@ -139,6 +172,7 @@ DWORD BeaconDetect::GetBeaconValueFromRegistry(BeaconIndex beacon_index) {
 
 void BeaconDetect::WriteBeaconValueToRegistry(BeaconIndex beacon_index,
                                               DWORD value) {
+  UpdateCache(beacon_index, value);
   nt::SetRegValueDWORD(
       nt::HKCU, nt::NONE,
       install_static::GetRegistryPath()
@@ -151,6 +185,11 @@ void BeaconDetect::WriteBeaconValueToRegistry(BeaconIndex beacon_index,
 }
 
 void BeaconDetect::ResetBeaconValue() {
+  // This indicates that another process has reset the beacon to 0, meaning no
+  // crash occurred.
+  if (0 == GetBeaconValueFromRegistry(beacon_index_)) {
+    return;
+  }
   if (beacon_value_ == kLimitCrashCount + 1) {
     beacon_value_ = kIndirectDetectDisableFeature;
     WriteBeaconValueToRegistry(beacon_index_, beacon_value_);
@@ -195,6 +234,28 @@ void BeaconDetect::StopCrashDetection(BeaconIndex beacon_index) {
   beacon_detect.ResetBeaconValue();
 }
 
+// In StopCrashDetection, false positives may still arise.For example, when
+// beacon_value_ is kLimitCrashCount + 1 and the registry's beacon value is
+// non-zero, the following sequence may happen: the current process reads the
+// beacon value, then another process resets it to 0, and finally the current
+// process writes kIndirectDetectDisableFeature to the registry. This can lead
+// to a false positive being reported. To address this issue and reduce false
+// positives, we introduced ResetBeaconOnProcessExit to perform additional
+// handling during process exit
+void BeaconDetect::ResetBeaconsOnProcessExit() {
+  if (!install_static::IsBrowserProcess() ||
+      install_static::InstallDetails::Get().is_webview()) {
+    return;
+  }
+  for (int i = 0; i < static_cast<int>(BeaconIndex::kMaxBeacons); ++i) {
+    DWORD value = ReadCache(static_cast<BeaconIndex>(i));
+    if (0 == value) {
+      beacon_detect::BeaconDetect beacon_detect(static_cast<BeaconIndex>(i));
+      beacon_detect.ResetBeaconValue();
+    }
+  }
+}
+
 long BeaconDetect::GetDetectedFeatureIndex() {
   if (g_crash_detection_beacon_index_ == BeaconIndex::kMaxBeacons) {
     // No feature has been disabled.
@@ -214,4 +275,5 @@ void BeaconDetect::ResetStaticVariablesForTesting() {
   g_indirect_detection_locked_ = false;
   g_crash_detection_beacon_index_ = BeaconIndex::kMaxBeacons;
 }
+
 }  // namespace beacon_detect
