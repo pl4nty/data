@@ -515,7 +515,6 @@
         "migrationStatus": "Default"
     },
     "MicrosoftTeamsAuthSvc": {
-        "MobrTesting": true,
         "ringSettings": {
             "settings": {
                 "adoPipelineTestFeatureFlag": false,
@@ -1080,6 +1079,9 @@
                     "ThrottelingWindowInterval": 60000
                 }
             }
+        },
+        "MultiEntrypointBasedManifestSettings": {
+            "EnableMultiEntrypointSupport": true
         },
         "NotificationTaskSettings": {
             "DelayIfNotFound": 200,
