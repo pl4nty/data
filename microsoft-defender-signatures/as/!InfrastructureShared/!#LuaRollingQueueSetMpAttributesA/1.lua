@@ -7,10 +7,11 @@ local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
 if l_0_0 == nil or #l_0_0 <= 4 then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(normalize_path(l_0_0))
+local l_0_1 = normalize_path(l_0_0)
 if l_0_1 == nil then
   return mp.CLEAN
 end
+l_0_1 = (string.lower)(l_0_1)
 if IsKeyInRollingQueue("UrlFileInStartupTargetA", l_0_1, true) then
   (mp.set_mpattribute)("Lua:UrlFileInStartupTarget.A")
 end
