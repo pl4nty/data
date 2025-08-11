@@ -537,14 +537,6 @@
         "SelfHost"
       ]
     },
-    "Get-CsOnlinePowerShellEndpoint": {
-      "CmdletType": "AutoRest",
-      "ExportsTo": [
-        "TeamsGA",
-        "TeamsPreview",
-        "SelfHost"
-      ]
-    },
     "Move-CsInternalHelper": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
@@ -558,15 +550,6 @@
       "ExportsTo": [
         "Torus",
         "SelfHost"
-      ]
-    },
-    "Set-CsInternalOnlinePowerShellEndpoint": {
-      "CmdletType": "AutoRest",
-      "ExportsTo": [
-        "TeamsGA",
-        "TeamsPreview",
-        "SelfHost",
-        "Torus"
       ]
     },
     "Invoke-CsInternalPSTelemetry": {
@@ -659,7 +642,7 @@
         "Torus"
       ]
     },
-    "Get-CsPhoneNumberTag" : {
+    "Get-CsPhoneNumberTag": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -667,7 +650,7 @@
         "SelfHost"
       ]
     },
-    "Set-CsPhoneNumberTag" : {
+    "Set-CsPhoneNumberTag": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -675,7 +658,7 @@
         "SelfHost"
       ]
     },
-    "Remove-CsPhoneNumberTag" : {
+    "Remove-CsPhoneNumberTag": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -683,7 +666,7 @@
         "SelfHost"
       ]
     },
-    "Update-CsPhoneNumberTag" : {
+    "Update-CsPhoneNumberTag": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -1434,20 +1417,6 @@
         "Torus"
       ]
     },
-    "Get-CsTeamsAcsFederationConfiguration": {
-      "CmdletType": "Remoting",
-      "ModernCmdlet": "Get-CsConfigurationModern",
-      "AutoRestModuleName": "Microsoft.Teams.ConfigAPI.Cmdlets",
-      "ExportsTo": [
-        "TeamsGA",
-        "TeamsPreview",
-        "SelfHost",
-        "Torus"
-      ],
-      "DefaultAutoRestParameters": {
-        "ConfigType": "TeamsAcsFederationConfiguration"
-      }
-    },
     "Get-CsTeamsAudioConferencingPolicy": {
       "CmdletType": "Remoting",
       "ModernCmdlet": "Get-CsConfigurationModern",
@@ -1905,6 +1874,15 @@
       "DefaultAutoRestParameters": {
         "ConfigType": "VideoInteropServiceProvider"
       }
+    },
+    "Get-CsMainlineAttendantFlow": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
     },
     "Grant-CsApplicationAccessPolicy": {
       "CmdletType": "Remoting",
@@ -2477,6 +2455,24 @@
       ]
     },
     "New-CsSharedCallQueueHistoryTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "New-CsMainlineAttendantAppointmentBookingFlow": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "New-CsMainlineAttendantQuestionAnswerFlow": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -3903,20 +3899,6 @@
         "SelfHost",
         "Torus"
       ]
-    },
-    "Set-CsTeamsAcsFederationConfiguration": {
-      "CmdletType": "Remoting",
-      "ModernCmdlet": "Set-CsConfigurationModern",
-      "AutoRestModuleName": "Microsoft.Teams.ConfigAPI.Cmdlets",
-      "ExportsTo": [
-        "TeamsGA",
-        "TeamsPreview",
-        "SelfHost",
-        "Torus"
-      ],
-      "DefaultAutoRestParameters": {
-        "ConfigType": "TeamsAcsFederationConfiguration"
-      }
     },
     "Set-CsTeamsAudioConferencingPolicy": {
       "CmdletType": "Remoting",

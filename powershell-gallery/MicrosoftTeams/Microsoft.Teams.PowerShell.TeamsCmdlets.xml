@@ -2077,6 +2077,11 @@
             Gets or sets the app Deploy to data.
             </summary>
         </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.UnifiedAppResponse.AppName">
+            <summary>
+            Gets or sets the app name for the Enhanced teams app or Teams app.
+            </summary>
+        </member>
         <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.AppAvailableToDetails">
             <summary>
             available To data for the pscmdlet response (V2).
@@ -2212,6 +2217,11 @@
         <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.UnifiedAppsResponse.InstalledFor">
             <summary>
             Gets or sets the app Deployed to data.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.UnifiedAppsResponse.AppName">
+            <summary>
+            Gets or sets the app name for the Enhanced teams app or Teams app.
             </summary>
         </member>
         <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.AvailableTo">
