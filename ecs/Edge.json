@@ -186,6 +186,11 @@
                 "msEdgeSkypeHandleProtocolUsingJsEvent"
             ]
         },
+        "SingleClientHistoryRollback": {
+            "disableFeatures": [
+                "msEdgeSyncSingleDeviceHistory"
+            ]
+        },
         "UnknownLanguageUXFixExperiment": {
             "enableFeatures": [
                 "msUnsupportedLanguageUXFix"
@@ -3230,11 +3235,6 @@
         }
     },
     "EdgeFirstRunConfig": {
-        "DeleteFREProfileAllowedPayload": {
-            "disableFeatures": [
-                "msDeleteFREProfileAllowed"
-            ]
-        },
         "EmptyEdgeFirstRunConfig": {
             "enableFeatures": [
                 "eefrc"
