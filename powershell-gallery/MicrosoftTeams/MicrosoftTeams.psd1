@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.2.0'
+ModuleVersion = '7.3.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -123,7 +123,6 @@ FunctionsToExport =  @(
 	,'Get-CsOnlineLisSubnet'
 	,'Get-CsOnlineLisSwitch'
 	,'Get-CsOnlineLisWirelessAccessPoint'
-	,'Get-CsOnlinePowerShellEndpoint'
 	,'Get-CsOnlinePSTNGateway'
 	,'Get-CsOnlinePstnUsage'
 	,'Get-CsOnlineSchedule'
@@ -142,7 +141,6 @@ FunctionsToExport =  @(
 	,'Get-CsPolicyPackage'
 	,'Get-CsSdgBulkSignInRequestStatus'
 	,'Get-CsSDGBulkSignInRequestsSummary'
-	,'Get-CsTeamsAcsFederationConfiguration'
 	,'Get-CsTeamsAudioConferencingPolicy'
 	,'Get-CsTeamsCallParkPolicy'
 	,'Get-CsTeamsCortanaPolicy'	
@@ -199,6 +197,7 @@ FunctionsToExport =  @(
 	,'Grant-CsApplicationAccessPolicy'
 	,'Get-CsComplianceRecordingForCallQueueTemplate'
 	,'Get-CsSharedCallQueueHistoryTemplate'
+	,'Get-CsMainlineAttendantFlow'
 	,'Grant-CsCallingLineIdentity'
 	,'Grant-CsDialoutPolicy'
 	,'Grant-CsGroupPolicyPackageAssignment'
@@ -302,6 +301,8 @@ FunctionsToExport =  @(
 	,'New-CsOnlineTelephoneNumberReleaseOrder'
 	,'New-CsComplianceRecordingForCallQueueTemplate'
 	,'New-CsSharedCallQueueHistoryTemplate'
+	,'New-CsMainlineAttendantAppointmentBookingFlow'
+	,'New-CsMainlineAttendantQuestionAnswerFlow'
 	,'Register-CsOnlineDialInConferencingServiceNumber'
 	,'Remove-CsApplicationAccessPolicy'
 	,'Remove-CsAutoAttendant'
@@ -368,7 +369,6 @@ FunctionsToExport =  @(
 	,'Set-CsCallQueue'
 	,'Set-CsInboundBlockedNumberPattern'
 	,'Set-CsInboundExemptNumberPattern'
-	,'Set-CsInternalOnlinePowerShellEndpoint'
 	,'Set-CsOnlineApplicationInstance'
 	,'Set-CsOnlineAudioConferencingRoutingPolicy'
 	,'Set-CsOnlineDialInConferencingBridge'
@@ -393,7 +393,6 @@ FunctionsToExport =  @(
 	,'Set-CsOnlineVoiceUser'
 	,'Set-CsPhoneNumberAssignment'
 	,'Set-CsPhoneNumberTag'
-	,'Set-CsTeamsAcsFederationConfiguration'
 	,'Set-CsTeamsAudioConferencingPolicy'
 	,'Set-CsTeamsCallParkPolicy'
 	,'Set-CsTeamsCortanaPolicy'	
@@ -451,6 +450,8 @@ FunctionsToExport =  @(
 	,'Update-CsTeamTemplate'
 	,'New-CsBatchTeamsDeployment'
 	,'Get-CsBatchTeamsDeploymentStatus'
+	,'Get-CsPersonalAttendantSettings'
+	,'Set-CsPersonalAttendantSettings'
 #OCE related functions exports start here. DO NOT MODIFY!
     ,'Set-CsOCEContext'
     ,'Clear-CsOCEContext'
@@ -510,6 +511,7 @@ CmdletsToExport = @(
 	,'Get-AllM365TeamsApps'
 	,'Get-M365UnifiedTenantSettings'
 	,'Get-M365UnifiedCustomPendingApps'
+    ,'Get-CsTeamsAcsFederationConfiguration'
     ,'Get-CsTeamsMessagingPolicy'
     ,'Get-CsTeamsMeetingPolicy'
     ,'Get-CsOnlineVoicemailPolicy'
@@ -558,6 +560,7 @@ CmdletsToExport = @(
     ,'Get-CsTeamsBYODAndDesksPolicy'
     ,'Get-CsTeamsNotificationAndFeedsPolicy'
 	,'Get-CsTeamsMultiTenantOrganizationConfiguration'
+	,'Get-CsTeamsPersonalAttendantPolicy'
     ,'Get-CsPrivacyConfiguration'
 	,'Grant-CsTeamsAIPolicy'
     ,'Grant-CsTeamsMeetingBrandingPolicy'
@@ -577,6 +580,7 @@ CmdletsToExport = @(
 	,'Grant-CsTeamsVdiPolicy'
 	,'Grant-CsTeamsWorkLocationDetectionPolicy'
     ,'Grant-CsTeamsBYODAndDesksPolicy'
+	,'Grant-CsTeamsPersonalAttendantPolicy'
     ,'New-Team'
     ,'New-TeamChannel'
     ,'New-TeamsApp'
@@ -621,6 +625,7 @@ CmdletsToExport = @(
 	,'New-CsTeamsCustomBannerText'
 	,'New-CsTeamsVdiPolicy'
     ,'New-CsTeamsBYODAndDesksPolicy'
+	,'New-CsTeamsPersonalAttendantPolicy'
     ,'Remove-SharedWithTeam'
     ,'Remove-Team'
     ,'Remove-TeamChannel'
@@ -660,11 +665,13 @@ CmdletsToExport = @(
     ,'Remove-CsTeamsRecordingRollOutPolicy'
     ,'Remove-CsTeamsBYODAndDesksPolicy'
     ,'Remove-CsTeamsNotificationAndFeedsPolicy'
+	,'Remove-CsTeamsPersonalAttendantPolicy'
     ,'Set-Team'
     ,'Set-TeamArchivedState'
     ,'Set-TeamChannel'
     ,'Set-TeamPicture'
     ,'Set-TeamsApp'
+    ,'Set-CsTeamsAcsFederationConfiguration'
 	,'Set-CsTeamsAIPolicy'
     ,'Set-CsTeamsMessagingPolicy'
     ,'Set-CsTeamsMeetingPolicy'
@@ -710,6 +717,7 @@ CmdletsToExport = @(
 	,'Set-CsTeamsCustomBannerText'
     ,'Set-CsTeamsBYODAndDesksPolicy'
     ,'Set-CsTeamsNotificationAndFeedsPolicy'
+	,'Set-CsTeamsPersonalAttendantPolicy'
     ,'Set-CsPrivacyConfiguration'
 	,'Update-M365TeamsApp'
 	,'Update-M365UnifiedTenantSettings'
@@ -784,9 +792,23 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.2.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- Adds EffectivePolicyAssignments attribute to Get-CsOnlineUser cmdlet. This attribute is currently supported only in commercial environments.
-- Fixes issues with AccountType parameter (SfbOnPremUser & IneligibleUser values) in the Get-CsOnlineUser cmdlet.
+ **7.3.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Adds Notify parameter to [Set|Remove]-CsPhoneNumberAssignment cmdlets.
+- Releases [New|Set|Remove|Get|Grant]-CsTeamsPersonalAttendantPolicy cmdlets.
+- Adds OCDIRedirect parameter to [Set|Remove]-CsTeamsUpdateManagementPolicy cmdlets.
+- Adds AppName output attribute to Get-M365TeamsApp and Get-AllM365TeamsApps cmdlets.
+- Contains a new implementation of [Get|Set]-CsTeamsAcsFederationConfiguration. Functionality remains the same as previous implementation.
+- Adds HideBannerForAllowedAcsUsers and LabelForAllowedAcsUsers parameters to Set-CsTeamsAcsFederationConfiguration cmdlet.
+- [BREAKING CHANGE] Removes Get-CsOnlinePowerShellEndpoint and Set-CsInternalOnlinePowerShellEndpoint cmdlets.
+- Adds MainlineAttendantFlow and MainlineAttendantTarget parameters to New-CsAutoAttendantMenuOption cmdlet.
+- Adds EnableMainlineAttendant parameter to [New|Set]-CsAutoAttendant cmdlets.
+- Releases New-CsMainlineAttendantAppointmentBookingFlow, New-CsMainlineAttendantQuestionAnswerFlow and Get-CsMainlineAttendantFlow cmdlets.
+- Releases [Get|Set]-CsPersonalAttendantSettings cmdlets.
+- Fixes the error with Set-CsTeamsSettingsCustomApp cmdlet.
+- Adds UseMicrosoftECDN and RecordingForTownhall parameters to [New|Set]-CsTeamsEventsPolicy cmdlets.
+- Adds ExplicitRecordingConsent parameter to [New|Set]-CsTeamsCallingPolicy cmdlets.
+- Adds EduGenerativeAIEnhancements and AutoShareFilesInExternalChats parameters to [New|Set]-CsTeamsMessagingPolicy cmdlets.
+
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes
 '@

@@ -52,33 +52,6 @@
                 </ListEntries>
                </ListControl>
               </View>
-<View>
-                  <Name>TeamsPersonalAttendantValidationConfigurationView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.CorePersonalAttendantPolicy.TeamsPersonalAttendantValidationConfiguration</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>PersonalAttendantPolicyValidationEnabled</Label>
-                        <PropertyName>PersonalAttendantPolicyValidationEnabled</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>PersonalAttendantPolicyValidationUri</Label>
-                        <PropertyName>PersonalAttendantPolicyValidationUri</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
 
                 </ViewDefinitions>
                 </Configuration>

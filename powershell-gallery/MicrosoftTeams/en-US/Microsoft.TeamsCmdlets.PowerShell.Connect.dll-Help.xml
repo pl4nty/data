@@ -55,7 +55,7 @@
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://learn.microsoft.com/powershell/module/teams/clear-teamsenvironmentconfig</maml:uri>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/clear-teamsenvironmentconfig</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -303,6 +303,19 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>TeamsEnvironmentName</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Teams environment. The following environments are supported:</maml:para>
+            <maml:para>   - Commercial or GCC environments: Don't use this parameter, this is the default.    - GCC High environment: TeamsGCCH    - DoD environment: TeamsDOD    - Microsoft Teams operated by 21Vianet: TeamsChina</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Domain, TenantDomain">
           <maml:name>TenantId</maml:name>
           <maml:description>
@@ -317,10 +330,10 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
-          <maml:name>WhatIf</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseDeviceAuthentication</maml:name>
           <maml:description>
-            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+            <maml:para>Use device code authentication instead of a browser control.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -328,23 +341,10 @@
           </dev:type>
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>TeamsEnvironmentName</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
           <maml:description>
-            <maml:para>Specifies the Teams environment. The following environments are supported:</maml:para>
-            <maml:para>   - Commercial or GCC environments: Don't use this parameter, this is the default.    - GCC High environment: TeamsGCCH    - DoD environment: TeamsDOD    - Microsoft Teams operated by 21Vianet: TeamsChina</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>UseDeviceAuthentication</maml:name>
-          <maml:description>
-            <maml:para>Use device code authentication instead of a browser control.</maml:para>
+            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -435,7 +435,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Domain, TenantDomain">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Domain, TenantDomain">
           <maml:name>TenantId</maml:name>
           <maml:description>
             <maml:para>Specifies the ID of a tenant.</maml:para>
@@ -474,6 +474,18 @@
           </dev:type>
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="MSI, ManagedService">
+          <maml:name>Identity</maml:name>
+          <maml:description>
+            <maml:para>Login using managed service identity in the current environment. For *-Cs cmdlets, this is supported from version 5.8.1-preview onwards.</maml:para>
+            <maml:para>&gt; [!Note] &gt; This is currently only supported in commercial environments. A few cmdlets (https://learn.microsoft.com/microsoftteams/teams-powershell-application-authentication#cmdlets-supported)that don't support application-based authentication are not supported either.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>LogFilePath</maml:name>
           <maml:description>
@@ -503,29 +515,6 @@
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
-          <maml:name>WhatIf</maml:name>
-          <maml:description>
-            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
-          </maml:description>
-          <dev:type>
-            <maml:name>SwitchParameter</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>False</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="MSI, ManagedService">
-          <maml:name>Identity</maml:name>
-          <maml:description>
-            <maml:para>Login using managed service identity in the current environment. For *-Cs cmdlets, this is supported from version 5.8.1-preview onwards.</maml:para>
-            <maml:para>&gt; [!Note] &gt; This is currently only supported in commercial environments. A few cmdlets (https://learn.microsoft.com/microsoftteams/teams-powershell-application-authentication#cmdlets-supported)that don't support application-based authentication are not supported either.</maml:para>
-          </maml:description>
-          <dev:type>
-            <maml:name>SwitchParameter</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ManagedServiceHostName</maml:name>
@@ -562,6 +551,17 @@
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:description>
+            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
       </command:syntaxItem>
     </command:syntax>
@@ -669,6 +669,19 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="MSI, ManagedService">
+        <maml:name>Identity</maml:name>
+        <maml:description>
+          <maml:para>Login using managed service identity in the current environment. For *-Cs cmdlets, this is supported from version 5.8.1-preview onwards.</maml:para>
+          <maml:para>&gt; [!Note] &gt; This is currently only supported in commercial environments. A few cmdlets (https://learn.microsoft.com/microsoftteams/teams-powershell-application-authentication#cmdlets-supported)that don't support application-based authentication are not supported either.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>LogFilePath</maml:name>
         <maml:description>
@@ -698,70 +711,6 @@
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>MsAccessToken (Removed from version 2.3.2-preview)</maml:name>
-        <maml:description>
-          <maml:para>Specifies a Microsoft Graph access token. &gt; [!WARNING] &gt;This parameter has been removed from version 2.3.2-preview.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Domain, TenantDomain">
-        <maml:name>TenantId</maml:name>
-        <maml:description>
-          <maml:para>Specifies the ID of a tenant.</maml:para>
-          <maml:para>If you do not specify this parameter, the account is authenticated with the home tenant.</maml:para>
-          <maml:para>You must specify the TenantId parameter to authenticate as a service principal or when using Microsoft account.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
-        <maml:name>WhatIf</maml:name>
-        <maml:description>
-          <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
-        </maml:description>
-        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
-        <dev:type>
-          <maml:name>SwitchParameter</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>False</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>TeamsEnvironmentName</maml:name>
-        <maml:description>
-          <maml:para>Specifies the Teams environment. The following environments are supported:</maml:para>
-          <maml:para>   - Commercial or GCC environments: Don't use this parameter, this is the default.    - GCC High environment: TeamsGCCH    - DoD environment: TeamsDOD    - Microsoft Teams operated by 21Vianet: TeamsChina</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="MSI, ManagedService">
-        <maml:name>Identity</maml:name>
-        <maml:description>
-          <maml:para>Login using managed service identity in the current environment. For *-Cs cmdlets, this is supported from version 5.8.1-preview onwards.</maml:para>
-          <maml:para>&gt; [!Note] &gt; This is currently only supported in commercial environments. A few cmdlets (https://learn.microsoft.com/microsoftteams/teams-powershell-application-authentication#cmdlets-supported)that don't support application-based authentication are not supported either.</maml:para>
-        </maml:description>
-        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
-        <dev:type>
-          <maml:name>SwitchParameter</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ManagedServiceHostName</maml:name>
@@ -800,9 +749,60 @@
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MsAccessToken (Removed from version 2.3.2-preview)</maml:name>
+        <maml:description>
+          <maml:para>Specifies a Microsoft Graph access token. &gt; [!WARNING] &gt;This parameter has been removed from version 2.3.2-preview.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>TeamsEnvironmentName</maml:name>
+        <maml:description>
+          <maml:para>Specifies the Teams environment. The following environments are supported:</maml:para>
+          <maml:para>   - Commercial or GCC environments: Don't use this parameter, this is the default.    - GCC High environment: TeamsGCCH    - DoD environment: TeamsDOD    - Microsoft Teams operated by 21Vianet: TeamsChina</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Domain, TenantDomain">
+        <maml:name>TenantId</maml:name>
+        <maml:description>
+          <maml:para>Specifies the ID of a tenant.</maml:para>
+          <maml:para>If you do not specify this parameter, the account is authenticated with the home tenant.</maml:para>
+          <maml:para>You must specify the TenantId parameter to authenticate as a service principal or when using Microsoft account.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>UseDeviceAuthentication</maml:name>
         <maml:description>
           <maml:para>Use device code authentication instead of a browser control.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:description>
+          <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -927,7 +927,7 @@ user@contoso.com        AzureCloud   xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  xxxxx
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://learn.microsoft.com/powershell/module/teams/connect-microsoftteams</maml:uri>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/connect-microsoftteams</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -946,17 +946,6 @@ user@contoso.com        AzureCloud   xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  xxxxx
     <command:syntax>
       <command:syntaxItem>
         <maml:name>Disconnect-MicrosoftTeams</maml:name>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
-          <maml:name>WhatIf</maml:name>
-          <maml:description>
-            <maml:para>Simulates what would happen if the cmdlet is run.  The cmdlet is not run.</maml:para>
-          </maml:description>
-          <dev:type>
-            <maml:name>SwitchParameter</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>False</dev:defaultValue>
-        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
           <maml:name>Confirm</maml:name>
           <maml:description>
@@ -968,13 +957,24 @@ user@contoso.com        AzureCloud   xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  xxxxx
           </dev:type>
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:description>
+            <maml:para>Simulates what would happen if the cmdlet is run.  The cmdlet is not run.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
-        <maml:name>WhatIf</maml:name>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
         <maml:description>
-          <maml:para>Simulates what would happen if the cmdlet is run.  The cmdlet is not run.</maml:para>
+          <maml:para>Proactively accepts any confirmation prompts.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -983,10 +983,10 @@ user@contoso.com        AzureCloud   xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  xxxxx
         </dev:type>
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
-        <maml:name>Confirm</maml:name>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
         <maml:description>
-          <maml:para>Proactively accepts any confirmation prompts.</maml:para>
+          <maml:para>Simulates what would happen if the cmdlet is run.  The cmdlet is not run.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -1015,7 +1015,7 @@ user@contoso.com        AzureCloud   xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  xxxxx
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://learn.microsoft.com/powershell/module/teams/disconnect-microsoftteams</maml:uri>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/disconnect-microsoftteams</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -1192,7 +1192,7 @@ Move-CsUser -Identity "PilarA@contoso.com" -Target "sipfed.online.lync.com" -Cre
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://learn.microsoft.com/powershell/module/teams/set-teamsenvironmentconfig</maml:uri>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/set-teamsenvironmentconfig</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>

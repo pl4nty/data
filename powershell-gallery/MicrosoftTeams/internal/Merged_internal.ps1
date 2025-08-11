@@ -42,6 +42,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -236,6 +237,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -793,6 +795,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -965,6 +968,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -1183,6 +1187,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -1372,6 +1377,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -1548,6 +1554,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -1717,6 +1724,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -1992,6 +2000,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -2187,6 +2196,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -2409,6 +2419,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -2627,6 +2638,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -2746,6 +2758,221 @@ begin {
             Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsConfiguration_Get1';
             GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsConfiguration_GetViaIdentity';
             GetViaIdentity1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsConfiguration_GetViaIdentity1';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Get a specific MainlineAttendantFlow Config for the given flow id.
+GET api/v1.0/tenants/tenantId/mainline-attendant-flow/flowId.
+.Description
+Get a specific MainlineAttendantFlow Config for the given flow id.
+GET api/v1.0/tenants/tenantId/mainline-attendant-flow/flowId.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllMainlineAttendantFlowsResponse
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetMainlineAttendantFlowResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/get-csmainlineattendantflow
+#>
+function Get-CsMainlineAttendantFlow {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetMainlineAttendantFlowResponse], [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllMainlineAttendantFlowsResponse])]
+[CmdletBinding(DefaultParameterSetName='Get1', PositionalBinding=$false)]
+param(
+    [Parameter(ParameterSetName='Get', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${FlowId},
+
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Descending},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${ExcludeContent},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${First},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${NameFilter},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${Skip},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${SortBy},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${TypeFilter},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantFlow_Get';
+            Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantFlow_Get1';
+            GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantFlow_GetViaIdentity';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -3451,6 +3678,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -3620,6 +3848,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -3789,6 +4018,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -3958,6 +4188,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -4144,6 +4375,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -4427,6 +4659,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -4755,6 +4988,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -4932,6 +5166,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -5273,6 +5508,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -5558,6 +5794,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -5770,6 +6007,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -6118,6 +6356,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -6332,6 +6571,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -6548,6 +6788,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -7469,7 +7710,9 @@ BODY <ICreateAutoAttendantRequest>: .
       [CallTargetEnableTranscription <Boolean?>]: 
       [CallTargetId <String>]: 
       [CallTargetType <String>]: 
+      [Description <String>]: 
       [DtmfResponse <String>]: 
+      [MainlineAttendantTarget <String>]: 
       [PromptActiveType <String>]: 
       [PromptTextToSpeechPrompt <String>]: 
       [VoiceResponse <String[]>]: 
@@ -7491,6 +7734,7 @@ BODY <ICreateAutoAttendantRequest>: .
   [InclusionScopeGroupDialScopeGroupId <String[]>]: 
   [InclusionScopeType <String>]: 
   [LanguageId <String>]: 
+  [MainlineAttendantEnabled <Boolean?>]: 
   [MenuDialByNameEnabled <Boolean?>]: 
   [MenuDirectorySearchMethod <String>]: 
   [MenuName <String>]: 
@@ -7529,7 +7773,9 @@ CALLFLOW <ICallFlow[]>: .
     [CallTargetEnableTranscription <Boolean?>]: 
     [CallTargetId <String>]: 
     [CallTargetType <String>]: 
+    [Description <String>]: 
     [DtmfResponse <String>]: 
+    [MainlineAttendantTarget <String>]: 
     [PromptActiveType <String>]: 
     [PromptTextToSpeechPrompt <String>]: 
     [VoiceResponse <String[]>]: 
@@ -7560,7 +7806,9 @@ MENUOPTION <IMenuOption[]>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -7633,6 +7881,12 @@ param(
     [System.String]
     # .
     ${DefaultCallFlowName},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${EnableMainlineAttendant},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -8056,7 +8310,9 @@ BODY <ICreateCallFlowRequest>: .
     [CallTargetEnableTranscription <Boolean?>]: 
     [CallTargetId <String>]: 
     [CallTargetType <String>]: 
+    [Description <String>]: 
     [DtmfResponse <String>]: 
+    [MainlineAttendantTarget <String>]: 
     [PromptActiveType <String>]: 
     [PromptTextToSpeechPrompt <String>]: 
     [VoiceResponse <String[]>]: 
@@ -8080,7 +8336,9 @@ MENUOPTION <IMenuOption[]>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -8565,7 +8823,9 @@ BODY <ICreateMenuRequest>: .
     [CallTargetEnableTranscription <Boolean?>]: 
     [CallTargetId <String>]: 
     [CallTargetType <String>]: 
+    [Description <String>]: 
     [DtmfResponse <String>]: 
+    [MainlineAttendantTarget <String>]: 
     [PromptActiveType <String>]: 
     [PromptTextToSpeechPrompt <String>]: 
     [VoiceResponse <String[]>]: 
@@ -8587,7 +8847,9 @@ MENUOPTION <IMenuOption[]>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -8765,7 +9027,9 @@ BODY <ICreateMenuOptionRequest>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -8841,7 +9105,19 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
     ${DtmfResponse},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${MainlineAttendantTarget},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -10237,6 +10513,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -10512,6 +10789,313 @@ begin {
 
         $mapping = @{
             NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsCustomPolicyPackage_NewExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Create apointment booking flow for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/appointment-booking.
+.Description
+Create apointment booking flow for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/appointment-booking.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateMainlineAttendantAppointmentBookingFlowRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateMainlineAttendantAppointmentBookingFlowResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateMainlineAttendantAppointmentBookingFlowRequest>: .
+  [ApiAuthenticationType <Int32?>]: Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
+  [ApiDefinition <String>]: Gets or sets the detailed definitions of the api.
+  [CallerAuthenticationMethod <Int32?>]: Gets or sets the caller authentication method, allowed values: Sms, Email, VerificationLink, Voiceprint, UserDetails.
+  [Description <String>]: Gets or sets the description of the mainline attendant appointment booking flow.
+  [Name <String>]: Gets or sets the name of the mainline attendant appointment booking flow.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-csmainlineattendantappointmentbookingflow
+#>
+function New-CsMainlineAttendantAppointmentBookingFlow {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateMainlineAttendantAppointmentBookingFlowResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateMainlineAttendantAppointmentBookingFlowRequest]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
+    ${ApiAuthenticationType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the detailed definitions of the api.
+    ${ApiDefinitions},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets the caller authentication method, allowed values: Sms, Email, VerificationLink, Voiceprint, UserDetails.
+    ${CallerAuthenticationMethod},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the mainline attendant appointment booking flow.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the mainline attendant appointment booking flow.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantAppointmentBookingFlow_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantAppointmentBookingFlow_NewExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Create question and answer flow for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/question-answer.
+.Description
+Create question and answer flow for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/question-answer.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateQuestionAnswerFlowRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateQuestionAnswerFlowResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateQuestionAnswerFlowRequest>: .
+  [ApiAuthenticationType <Int32?>]: Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
+  [Description <String>]: Gets or sets the description of the mainline attendant question and answer flow.
+  [KnowledgeBase <String>]: Gets or sets the detailed definitions of the knowledge base.
+  [Name <String>]: Gets or sets the name of the mainline attendant question and answer flow.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-csmainlineattendantquestionanswerflow
+#>
+function New-CsMainlineAttendantQuestionAnswerFlow {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateQuestionAnswerFlowResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateQuestionAnswerFlowRequest]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
+    ${ApiAuthenticationType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the mainline attendant question and answer flow.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the detailed definitions of the knowledge base.
+    ${KnowledgeBase},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the mainline attendant question and answer flow.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantQuestionAnswerFlow_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantQuestionAnswerFlow_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -12016,6 +12600,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -12498,6 +13083,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -12700,6 +13286,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -12889,6 +13476,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -13426,6 +14014,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -13591,6 +14180,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -13775,6 +14365,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -13946,6 +14537,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -14110,6 +14702,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -14379,6 +14972,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -14590,6 +15184,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -14780,6 +15375,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -14997,6 +15593,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -15210,6 +15807,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -15329,6 +15927,216 @@ begin {
             Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsConfiguration_Get1';
             GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsConfiguration_GetViaIdentity';
             GetViaIdentity1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsConfiguration_GetViaIdentity1';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
+Get a specific MainlineAttendantFlow Config for the given flow id.
+GET api/v1.0/tenants/tenantId/mainline-attendant-flow/flowId.
+.Description
+Get a specific MainlineAttendantFlow Config for the given flow id.
+GET api/v1.0/tenants/tenantId/mainline-attendant-flow/flowId.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllMainlineAttendantFlowsResponse
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetMainlineAttendantFlowResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/get-csmainlineattendantflow
+#>
+function Get-CsMainlineAttendantFlow {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetMainlineAttendantFlowResponse], [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllMainlineAttendantFlowsResponse])]
+[CmdletBinding(DefaultParameterSetName='Get1', PositionalBinding=$false)]
+param(
+    [Parameter(ParameterSetName='Get', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${FlowId},
+
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Descending},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${ExcludeContent},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${First},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${NameFilter},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${Skip},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${SortBy},
+
+    [Parameter(ParameterSetName='Get1')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${TypeFilter},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantFlow_Get';
+            Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantFlow_Get1';
+            GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantFlow_GetViaIdentity';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -16004,6 +16812,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -16168,6 +16977,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -16332,6 +17142,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -16496,6 +17307,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -16677,6 +17489,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -16950,6 +17763,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -17268,6 +18082,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -17440,6 +18255,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -17771,6 +18587,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -18046,6 +18863,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -18253,6 +19071,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -18591,6 +19410,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -18800,6 +19620,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -19011,6 +19832,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -20058,7 +20880,9 @@ BODY <ICreateCallFlowRequest>: .
     [CallTargetEnableTranscription <Boolean?>]: 
     [CallTargetId <String>]: 
     [CallTargetType <String>]: 
+    [Description <String>]: 
     [DtmfResponse <String>]: 
+    [MainlineAttendantTarget <String>]: 
     [PromptActiveType <String>]: 
     [PromptTextToSpeechPrompt <String>]: 
     [VoiceResponse <String[]>]: 
@@ -20082,7 +20906,9 @@ MENUOPTION <IMenuOption[]>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -20549,7 +21375,9 @@ BODY <ICreateMenuOptionRequest>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -20625,7 +21453,19 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
     ${DtmfResponse},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${MainlineAttendantTarget},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -20763,7 +21603,9 @@ BODY <ICreateMenuRequest>: .
     [CallTargetEnableTranscription <Boolean?>]: 
     [CallTargetId <String>]: 
     [CallTargetType <String>]: 
+    [Description <String>]: 
     [DtmfResponse <String>]: 
+    [MainlineAttendantTarget <String>]: 
     [PromptActiveType <String>]: 
     [PromptTextToSpeechPrompt <String>]: 
     [VoiceResponse <String[]>]: 
@@ -20785,7 +21627,9 @@ MENUOPTION <IMenuOption[]>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -21126,7 +21970,9 @@ BODY <ICreateAutoAttendantRequest>: .
       [CallTargetEnableTranscription <Boolean?>]: 
       [CallTargetId <String>]: 
       [CallTargetType <String>]: 
+      [Description <String>]: 
       [DtmfResponse <String>]: 
+      [MainlineAttendantTarget <String>]: 
       [PromptActiveType <String>]: 
       [PromptTextToSpeechPrompt <String>]: 
       [VoiceResponse <String[]>]: 
@@ -21148,6 +21994,7 @@ BODY <ICreateAutoAttendantRequest>: .
   [InclusionScopeGroupDialScopeGroupId <String[]>]: 
   [InclusionScopeType <String>]: 
   [LanguageId <String>]: 
+  [MainlineAttendantEnabled <Boolean?>]: 
   [MenuDialByNameEnabled <Boolean?>]: 
   [MenuDirectorySearchMethod <String>]: 
   [MenuName <String>]: 
@@ -21186,7 +22033,9 @@ CALLFLOW <ICallFlow[]>: .
     [CallTargetEnableTranscription <Boolean?>]: 
     [CallTargetId <String>]: 
     [CallTargetType <String>]: 
+    [Description <String>]: 
     [DtmfResponse <String>]: 
+    [MainlineAttendantTarget <String>]: 
     [PromptActiveType <String>]: 
     [PromptTextToSpeechPrompt <String>]: 
     [VoiceResponse <String[]>]: 
@@ -21217,7 +22066,9 @@ MENUOPTION <IMenuOption[]>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -21290,6 +22141,12 @@ param(
     [System.String]
     # .
     ${DefaultCallFlowName},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${EnableMainlineAttendant},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -22620,6 +23477,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -22890,6 +23748,303 @@ begin {
 
         $mapping = @{
             NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsCustomPolicyPackage_NewExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
+Create apointment booking flow for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/appointment-booking.
+.Description
+Create apointment booking flow for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/appointment-booking.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateMainlineAttendantAppointmentBookingFlowRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateMainlineAttendantAppointmentBookingFlowResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateMainlineAttendantAppointmentBookingFlowRequest>: .
+  [ApiAuthenticationType <Int32?>]: Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
+  [ApiDefinition <String>]: Gets or sets the detailed definitions of the api.
+  [CallerAuthenticationMethod <Int32?>]: Gets or sets the caller authentication method, allowed values: Sms, Email, VerificationLink, Voiceprint, UserDetails.
+  [Description <String>]: Gets or sets the description of the mainline attendant appointment booking flow.
+  [Name <String>]: Gets or sets the name of the mainline attendant appointment booking flow.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-csmainlineattendantappointmentbookingflow
+#>
+function New-CsMainlineAttendantAppointmentBookingFlow {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateMainlineAttendantAppointmentBookingFlowResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateMainlineAttendantAppointmentBookingFlowRequest]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
+    ${ApiAuthenticationType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the detailed definitions of the api.
+    ${ApiDefinitions},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets the caller authentication method, allowed values: Sms, Email, VerificationLink, Voiceprint, UserDetails.
+    ${CallerAuthenticationMethod},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the mainline attendant appointment booking flow.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the mainline attendant appointment booking flow.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantAppointmentBookingFlow_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantAppointmentBookingFlow_NewExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
+Create question and answer flow for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/question-answer.
+.Description
+Create question and answer flow for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/question-answer.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateQuestionAnswerFlowRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateQuestionAnswerFlowResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateQuestionAnswerFlowRequest>: .
+  [ApiAuthenticationType <Int32?>]: Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
+  [Description <String>]: Gets or sets the description of the mainline attendant question and answer flow.
+  [KnowledgeBase <String>]: Gets or sets the detailed definitions of the knowledge base.
+  [Name <String>]: Gets or sets the name of the mainline attendant question and answer flow.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-csmainlineattendantquestionanswerflow
+#>
+function New-CsMainlineAttendantQuestionAnswerFlow {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateQuestionAnswerFlowResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateQuestionAnswerFlowRequest]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
+    ${ApiAuthenticationType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the mainline attendant question and answer flow.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the detailed definitions of the knowledge base.
+    ${KnowledgeBase},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the mainline attendant question and answer flow.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantQuestionAnswerFlow_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantQuestionAnswerFlow_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -24349,6 +25504,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -24821,6 +25977,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -25024,6 +26181,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -25257,6 +26415,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -25421,6 +26580,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -25585,6 +26745,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -25747,6 +26908,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -25923,6 +27085,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -26087,6 +27250,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -26263,6 +27427,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -26552,6 +27717,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -26597,6 +27763,12 @@ param(
     # Identity Parameter
     # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
     ${InputObject},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Notify},
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
@@ -26740,6 +27912,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -26902,6 +28075,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -27391,7 +28565,9 @@ BODY <IAutoAttendant>: .
       [CallTargetEnableTranscription <Boolean?>]: 
       [CallTargetId <String>]: 
       [CallTargetType <String>]: 
+      [Description <String>]: 
       [DtmfResponse <String>]: 
+      [MainlineAttendantTarget <String>]: 
       [PromptActiveType <String>]: 
       [PromptTextToSpeechPrompt <String>]: 
       [VoiceResponse <String[]>]: 
@@ -27415,6 +28591,7 @@ BODY <IAutoAttendant>: .
   [InclusionScopeGroupDialScopeGroupId <String[]>]: 
   [InclusionScopeType <String>]: 
   [LanguageId <String>]: 
+  [MainlineAttendantEnabled <Boolean?>]: 
   [MenuDialByNameEnabled <Boolean?>]: 
   [MenuDirectorySearchMethod <String>]: 
   [MenuName <String>]: 
@@ -27489,7 +28666,9 @@ CALLFLOW <ICallFlow[]>: .
     [CallTargetEnableTranscription <Boolean?>]: 
     [CallTargetId <String>]: 
     [CallTargetType <String>]: 
+    [Description <String>]: 
     [DtmfResponse <String>]: 
+    [MainlineAttendantTarget <String>]: 
     [PromptActiveType <String>]: 
     [PromptTextToSpeechPrompt <String>]: 
     [VoiceResponse <String[]>]: 
@@ -27524,6 +28703,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -27561,7 +28741,9 @@ MENUOPTION <IMenuOption[]>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -27756,6 +28938,13 @@ param(
     [System.String]
     # .
     ${LanguageId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${MainlineAttendantEnabled},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -28140,6 +29329,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -28970,6 +30160,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -29208,6 +30399,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -29430,6 +30622,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -29646,6 +30839,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -29856,6 +31050,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -30292,6 +31487,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -30780,6 +31976,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -31039,6 +32236,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -31115,13 +32313,6 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${AllowInboundPSTNCalls},
-
-    [Parameter(ParameterSetName='SetExpanded')]
-    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
-    [System.String]
-    # .
-    ${BookingCalendarId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -31335,6 +32526,12 @@ param(
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Notify},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
     [System.String]
     # .
     ${PhoneNumber},
@@ -31477,6 +32674,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -31915,6 +33113,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -32149,6 +33348,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -32432,6 +33632,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -32624,6 +33825,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -32863,6 +34065,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -33031,6 +34234,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -33389,6 +34593,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -33627,6 +34832,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -33796,6 +35002,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -33965,6 +35172,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -34132,6 +35340,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -34313,6 +35522,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -34482,6 +35692,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -34663,6 +35874,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -34962,6 +36174,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -35007,6 +36220,12 @@ param(
     # Identity Parameter
     # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
     ${InputObject},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Notify},
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
@@ -35155,6 +36374,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -35322,6 +36542,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -35826,7 +37047,9 @@ BODY <IAutoAttendant>: .
       [CallTargetEnableTranscription <Boolean?>]: 
       [CallTargetId <String>]: 
       [CallTargetType <String>]: 
+      [Description <String>]: 
       [DtmfResponse <String>]: 
+      [MainlineAttendantTarget <String>]: 
       [PromptActiveType <String>]: 
       [PromptTextToSpeechPrompt <String>]: 
       [VoiceResponse <String[]>]: 
@@ -35850,6 +37073,7 @@ BODY <IAutoAttendant>: .
   [InclusionScopeGroupDialScopeGroupId <String[]>]: 
   [InclusionScopeType <String>]: 
   [LanguageId <String>]: 
+  [MainlineAttendantEnabled <Boolean?>]: 
   [MenuDialByNameEnabled <Boolean?>]: 
   [MenuDirectorySearchMethod <String>]: 
   [MenuName <String>]: 
@@ -35924,7 +37148,9 @@ CALLFLOW <ICallFlow[]>: .
     [CallTargetEnableTranscription <Boolean?>]: 
     [CallTargetId <String>]: 
     [CallTargetType <String>]: 
+    [Description <String>]: 
     [DtmfResponse <String>]: 
+    [MainlineAttendantTarget <String>]: 
     [PromptActiveType <String>]: 
     [PromptTextToSpeechPrompt <String>]: 
     [VoiceResponse <String[]>]: 
@@ -35959,6 +37185,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -35996,7 +37223,9 @@ MENUOPTION <IMenuOption[]>: .
   [CallTargetEnableTranscription <Boolean?>]: 
   [CallTargetId <String>]: 
   [CallTargetType <String>]: 
+  [Description <String>]: 
   [DtmfResponse <String>]: 
+  [MainlineAttendantTarget <String>]: 
   [PromptActiveType <String>]: 
   [PromptTextToSpeechPrompt <String>]: 
   [VoiceResponse <String[]>]: 
@@ -36191,6 +37420,13 @@ param(
     [System.String]
     # .
     ${LanguageId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${MainlineAttendantEnabled},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -36580,6 +37816,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -37415,6 +38652,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -37658,6 +38896,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -37885,6 +39124,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -38106,6 +39346,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -38321,6 +39562,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -38767,6 +40009,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -39265,6 +40508,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -39529,6 +40773,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -39605,13 +40850,6 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${AllowInboundPSTNCalls},
-
-    [Parameter(ParameterSetName='SetExpanded')]
-    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
-    [System.String]
-    # .
-    ${BookingCalendarId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -39830,6 +41068,12 @@ param(
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Notify},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
     [System.String]
     # .
     ${PhoneNumber},
@@ -39977,6 +41221,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -40425,6 +41670,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -40664,6 +41910,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -40952,6 +42199,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -41149,6 +42397,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -41393,6 +42642,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 
@@ -41566,6 +42816,7 @@ INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
   [DialedNumber <String>]: 
   [EndpointId <String>]: Application instance Id.
   [ErrorReportId <String>]: The UUID of a report instance
+  [FlowId <String>]: 
   [GroupId <String>]: The ID of a group whose policy assignments will be returned.
   [Id <String>]: 
   [Identity <String>]: 

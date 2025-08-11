@@ -1695,6 +1695,9 @@
             <Label>LanguageId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>MainlineAttendantEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>Name</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -1733,6 +1736,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>LanguageId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>MainlineAttendantEnabled</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
@@ -3894,6 +3900,9 @@
             <Label>ErrorReportId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>FlowId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>GroupId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -4013,6 +4022,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ErrorReportId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>FlowId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>GroupId</PropertyName>
@@ -4626,6 +4638,9 @@
             <Label>LanguageId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>MainlineAttendantEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>Name</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -4652,6 +4667,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>LanguageId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>MainlineAttendantEnabled</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
@@ -5452,6 +5470,52 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateMainlineAttendantAppointmentBookingFlowRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateMainlineAttendantAppointmentBookingFlowRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>ApiAuthenticationType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ApiDefinition</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CallerAuthenticationMethod</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>ApiAuthenticationType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ApiDefinition</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CallerAuthenticationMethod</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateMenuOptionRequest</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateMenuOptionRequest</TypeName>
@@ -5462,7 +5526,13 @@
             <Label>Action</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>DtmfResponse</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>MainlineAttendantTarget</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>VoiceResponse</Label>
@@ -5475,7 +5545,13 @@
                 <PropertyName>Action</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>DtmfResponse</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>MainlineAttendantTarget</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>VoiceResponse</PropertyName>
@@ -5581,6 +5657,46 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TextToSpeechPrompt</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateQuestionAnswerFlowRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateQuestionAnswerFlowRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>ApiAuthenticationType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>KnowledgeBase</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>ApiAuthenticationType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>KnowledgeBase</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -8592,6 +8708,168 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantAppointmentBookingFlow</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantAppointmentBookingFlow</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>ApiAuthenticationType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ApiDefinition</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CallerAuthenticationMethod</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>ApiAuthenticationType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ApiDefinition</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CallerAuthenticationMethod</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantFlowDomainModel</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantFlowDomainModel</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>ApiAuthenticationType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ApiDefinition</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CallerAuthenticationMethod</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>KnowledgeBase</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Type</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>ApiAuthenticationType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ApiDefinition</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CallerAuthenticationMethod</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>KnowledgeBase</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Type</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantQuestionAnswerFlow</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantQuestionAnswerFlow</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>ApiAuthenticationType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>KnowledgeBase</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>ApiAuthenticationType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>KnowledgeBase</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MasSchemaResultTypes</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MasSchemaResultTypes</TypeName>
@@ -9342,7 +9620,13 @@
             <Label>Action</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>DtmfResponse</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>MainlineAttendantTarget</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>VoiceResponse</Label>
@@ -9355,7 +9639,13 @@
                 <PropertyName>Action</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>DtmfResponse</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>MainlineAttendantTarget</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>VoiceResponse</PropertyName>
