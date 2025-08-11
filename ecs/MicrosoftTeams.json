@@ -3870,6 +3870,7 @@
         "EnableEngagementActivityFeature": true,
         "EnableEngagementForTownhall": true,
         "EnableEngagementReactionFeature": true,
+        "EnableExplicitPageFilteringForSegments": true,
         "EnableExternalPresenterFeature": true,
         "EnableHandleReportGenerationInProcessorService": true,
         "EnablePartialRedactionFeature": true,
