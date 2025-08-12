@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32315732,
-    "file_count": 3952
+    "size": 32210513,
+    "file_count": 3942
   },
   {
     "name": "boringssl",
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7382329,
+    "size": 7382338,
     "file_count": 29
   },
   {
@@ -215,6 +215,11 @@
     "file_count": 12
   },
   {
+    "name": "federated_compute",
+    "size": 348799,
+    "file_count": 74
+  },
+  {
     "name": "ffmpeg",
     "size": 92096018,
     "file_count": 10850
@@ -251,7 +256,7 @@
   },
   {
     "name": "glslang",
-    "size": 43086780,
+    "size": 43085595,
     "file_count": 3176
   },
   {
@@ -356,8 +361,8 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 40572,
-    "file_count": 36
+    "size": 44462,
+    "file_count": 39
   },
   {
     "name": "libbrlapi",
@@ -366,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 6167571,
+    "size": 6165796,
     "file_count": 936
   },
   {
@@ -426,7 +431,7 @@
   },
   {
     "name": "libwebp",
-    "size": 109723,
+    "size": 111589,
     "file_count": 12
   },
   {
@@ -446,7 +451,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 217864763,
+    "size": 217871931,
     "file_count": 341
   },
   {
@@ -461,7 +466,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 281951,
+    "size": 282465,
     "file_count": 40
   },
   {
@@ -476,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18757099,
+    "size": 18761707,
     "file_count": 19
   },
   {
@@ -556,7 +561,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3802156,
+    "size": 3801232,
     "file_count": 578
   },
   {
@@ -641,7 +646,7 @@
   },
   {
     "name": "skia",
-    "size": 3459294,
+    "size": 3459278,
     "file_count": 1178
   },
   {
@@ -721,12 +726,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2432274,
+    "size": 2437561,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6225635,
+    "size": 6226232,
     "file_count": 177
   },
   {
@@ -776,7 +781,7 @@
   },
   {
     "name": "zstd",
-    "size": 311984,
-    "file_count": 45
+    "size": 317449,
+    "file_count": 48
   }
 ]
