@@ -1559,8 +1559,8 @@
     },
     "PeopleInTaskbar": {
         "PeopleInTaskbarDFVersion": "1.20250811.1.0",
-        "PeopleInTaskbarMsitVersion": "1.20250803.5.0",
-        "PeopleInTaskbarProdVersion": "1.20250726.3.0",
+        "PeopleInTaskbarMsitVersion": "1.20250807.2.0",
+        "PeopleInTaskbarProdVersion": "1.20250803.5.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",
