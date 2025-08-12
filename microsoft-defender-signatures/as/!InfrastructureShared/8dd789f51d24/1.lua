@@ -17,15 +17,36 @@ local l_0_1 = (("httpd.exe").GetParentProcInfo)()
 
 do
   if not (l_0_1.image_path):match("w3wp") then
-    local l_0_2 = not l_0_1 or not "tomcat" or ""
+    local l_0_2, l_0_3 = not l_0_1 or not "tomcat" or ""
   end
   -- DECOMPILER ERROR at PC23: Confused about usage of register: R2 in 'UnsetPending'
 
   -- DECOMPILER ERROR at PC24: Overwrote pending register: R5 in 'AssignReg'
 
   if Contains_any_caseinsenstive(l_0_2, "apache") then
-    return mp.INFECTED
+    local l_0_4 = nil
+    if (mp.GetScannedPPID)() == "" or (mp.GetScannedPPID)() == nil then
+      return mp.CLEAN
+    end
+    local l_0_5 = nil
+    if (mp.GetProcessCommandLine)((mp.GetScannedPPID)()) then
+      local l_0_6 = nil
+      local l_0_7 = Contains_any_caseinsenstive
+      local l_0_8 = l_0_6
+      l_0_7 = l_0_7(l_0_8, {"downloadstring", "downloadfile"})
+      if l_0_7 then
+        l_0_7 = MpCommon
+        l_0_7 = l_0_7.BmTriggerSig
+        l_0_8 = l_0_1.ppid
+        l_0_7(l_0_8, "APML_SuspDownload_Servers", l_0_6)
+        l_0_7 = mp
+        l_0_7 = l_0_7.INFECTED
+        return l_0_7
+      end
+    end
   end
-  return mp.CLEAN
+  do
+    return mp.CLEAN
+  end
 end
 

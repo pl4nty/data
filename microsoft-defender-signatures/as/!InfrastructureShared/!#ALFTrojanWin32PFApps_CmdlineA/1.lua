@@ -60,7 +60,7 @@ do
       return mp.CLEAN
     end
     local l_0_11 = nil
-    local l_0_12 = {CmdGradingInfo = l_0_9, Score = l_0_8, ScriptName = l_0_1}
+    local l_0_12 = {Score = l_0_8, ScriptName = l_0_1}
     local l_0_13 = nil
     if (mp.GetParentProcInfo)(l_0_10) and ((mp.GetParentProcInfo)(l_0_10)).ppid then
       l_0_13 = (MpCommon.GetImagePathFromPid)(((mp.GetParentProcInfo)(l_0_10)).ppid)
@@ -77,13 +77,13 @@ do
           if l_0_15 then
             l_0_12.IsPotentiallyClean = "CmdLine"
           end
-          -- DECOMPILER ERROR at PC231: Confused about usage of register: R10 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC230: Confused about usage of register: R10 in 'UnsetPending'
 
           l_0_12.Parents = add_parents_mp() or l_0_13
           local l_0_17, l_0_18 = nil
           local l_0_19 = GetAppomalyProcessAttribute(l_0_10)
-          if safeJsonDeserialize(R15_PC238) then
-            R15_PC238 = (safeJsonDeserialize(R15_PC238)).AppName
+          if safeJsonDeserialize(R15_PC237) then
+            R15_PC237 = (safeJsonDeserialize(R15_PC237)).AppName
             local l_0_20 = nil
             local l_0_21 = nil
             local l_0_22 = nil
@@ -92,7 +92,7 @@ do
               local l_0_24 = nil
               local l_0_25 = nil
               local l_0_26 = (((mp.GetParentProcInfo)(l_0_10)).image_path):match("([^\\]+)$") or ""
-              -- DECOMPILER ERROR at PC273: Confused about usage of register: R20 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC272: Confused about usage of register: R20 in 'UnsetPending'
 
               local l_0_27 = nil
               local l_0_28 = nil
@@ -117,15 +117,15 @@ do
                   l_0_12.Concrete = false
                   l_0_12.Remediation_Reason = ""
                   local l_0_37 = nil
-                  -- DECOMPILER ERROR at PC343: Confused about usage of register: R15 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC342: Confused about usage of register: R15 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC346: Confused about usage of register: R15 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC345: Confused about usage of register: R15 in 'UnsetPending'
 
                   if l_0_12.CmdGradingInfo and (l_0_12.CmdGradingInfo).Evidence_L1 then
                     local l_0_38 = nil
                     for l_0_42,l_0_43 in pairs(((l_0_12.CmdGradingInfo).Evidence_L1).Urls) do
                       local l_0_39, l_0_40 = nil
-                      -- DECOMPILER ERROR at PC352: Confused about usage of register: R21 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC351: Confused about usage of register: R21 in 'UnsetPending'
 
                       if l_0_29.BadUrlRep then
                         l_0_12.Remediation_Reason = "BadUrlRep"
@@ -138,9 +138,11 @@ do
                     if l_0_12.Score > 45 then
                       l_0_12.Remediation_Reason = l_0_12.Remediation_Reason .. ";" .. "HighScore"
                     end
+                    l_0_9.CommandlineTokens = {}
+                    l_0_12.CmdGradingInfo = l_0_9
                     local l_0_44, l_0_45 = , safeJsonSerialize(l_0_12, 150, nil, true)
                     if not l_0_45 then
-                      set_research_data("Error", "Error Serializing Evidence Data" .. (MpCommon.Base64Encode)(R22_PC382), false)
+                      set_research_data("Error", "Error Serializing Evidence Data" .. (MpCommon.Base64Encode)(R22_PC384), false)
                       return mp.INFECTED
                     else
                       set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_45), false)
