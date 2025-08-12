@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250809.1.0",
+        "CalendarCompanionDFVersion": "1.20250811.1.0",
         "CalendarCompanionMsitVersion": "1.20250802.3.0",
         "CalendarCompanionProdVersion": "1.20250802.3.0",
         "CompanionRing": "Prod",
@@ -758,6 +758,7 @@
         "EnableSplitSignalPropagationForUserActions": true,
         "EnableSuggestedWorkingHoursInsightRetriever": true,
         "EnableTeamsLicenseCheck": true,
+        "EnableTidRoutingOnExternalDomain": true,
         "EnableUserPreferenceV2": true,
         "EnableVNextQuery": false,
         "EnableVivaSkillsDataExportProvider": true,
@@ -1557,7 +1558,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250809.4.0",
+        "PeopleInTaskbarDFVersion": "1.20250811.1.0",
         "PeopleInTaskbarMsitVersion": "1.20250803.5.0",
         "PeopleInTaskbarProdVersion": "1.20250726.3.0",
         "campaignSchedules": {
