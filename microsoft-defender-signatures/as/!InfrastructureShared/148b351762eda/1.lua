@@ -40,6 +40,8 @@ end
           -- DECOMPILER ERROR at PC110: Confused about usage of register: R10 in 'UnsetPending'
 
           if ExtendedSuspMacPathsToMonitor(R10_PC110.value) and not IsPersistenceExcludedMacOS(l_0_10, R10_PC110.value, true) then
+            (bm.add_related_file)(R10_PC110.value)
+            ;
             (bm.add_related_string)("persisted_path", R10_PC110.value, bm.RelatedStringBMReport)
             return mp.INFECTED
           end
