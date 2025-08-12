@@ -460,11 +460,6 @@
                             "toc_title": "anonymize"
                         },
                         {
-                            "href": "a_z_names_terms/a/antimalware",
-                            "permissioned-type": "private",
-                            "toc_title": "antimalware"
-                        },
-                        {
                             "href": "a_z_names_terms/a/anyone-link",
                             "permissioned-type": "private",
                             "toc_title": "Anyone link"
@@ -498,6 +493,11 @@
                             "href": "a_z_names_terms/a/app",
                             "permissioned-type": "private",
                             "toc_title": "app"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/app-advisor",
+                            "permissioned-type": "private",
+                            "toc_title": "app advisor"
                         },
                         {
                             "href": "a_z_names_terms/a/app-bundle",
@@ -840,6 +840,11 @@
                                     "href": "a_z_names_terms/a/azure-ai-foundry-agent-service",
                                     "permissioned-type": "private",
                                     "toc_title": "Azure AI Foundry Agent Service"
+                                },
+                                {
+                                    "href": "a_z_names_terms/a/azure-ai-foundry-agent-service-sdk",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Azure AI Foundry Agent Service SDK"
                                 },
                                 {
                                     "href": "a_z_names_terms/a/azure-ai-foundry-labs",
@@ -4785,6 +4790,11 @@
                             "toc_title": "Load Testing"
                         },
                         {
+                            "href": "a_z_names_terms/l/localdns",
+                            "permissioned-type": "private",
+                            "toc_title": "localDNS"
+                        },
+                        {
                             "href": "a_z_names_terms/l/local-storage",
                             "permissioned-type": "private",
                             "toc_title": "local storage"
@@ -5188,6 +5198,11 @@
                             "href": "a_z_names_terms/m/microsoft-365-copilot",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft 365 Copilot"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/microsoft-365-copilot-agent-forward-deployed-engineering-program",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 Copilot Agent Forward Deployed Engineering Program"
                         },
                         {
                             "href": "a_z_names_terms/m/microsoft-365-setup",
@@ -5957,6 +5972,11 @@
                         {
                             "children": [
                                 {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/access-review-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Access Review Agent"
+                                },
+                                {
                                     "href": "a_z_names_terms/m/microsoft-security-agents/alert-triage-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Alert Triage Agent"
@@ -5982,7 +6002,7 @@
                                     "toc_title": "Vulnerability Remediation Agent"
                                 }
                             ],
-                            "toc_title": "Microsoft Security agents"
+                            "toc_title": "Microsoft Security Agents"
                         },
                         {
                             "href": "a_z_names_terms/m/microsoft-security-code-analysis",
@@ -8105,6 +8125,11 @@
                             "toc_title": "Semantic Index for Copilot"
                         },
                         {
+                            "href": "a_z_names_terms/s/semantic-kernel-sdk",
+                            "permissioned-type": "private",
+                            "toc_title": "Semantic Kernel SDK"
+                        },
+                        {
                             "href": "a_z_names_terms/s/sensitivity-label",
                             "permissioned-type": "private",
                             "toc_title": "sensitivity label"
@@ -9385,6 +9410,11 @@
                             "toc_title": "Visual Studio Code"
                         },
                         {
+                            "href": "a_z_names_terms/v/visual-studio-code-extension-for-postgresql",
+                            "permissioned-type": "private",
+                            "toc_title": "Visual Studio Code extension for PostgreSQL"
+                        },
+                        {
                             "href": "a_z_names_terms/v/visual-studio-subscribersubscription",
                             "permissioned-type": "private",
                             "toc_title": "Visual Studio subscriber/subscription"
@@ -9978,6 +10008,16 @@
                             "href": "copilot-guidance/copilot/microsoft-365-copilot-chat",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft 365 Copilot Chat"
+                        },
+                        {
+                            "href": "copilot-guidance/copilot/microsoft-365-copilot-notebooks",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 Copilot Notebooks"
+                        },
+                        {
+                            "href": "copilot-guidance/copilot/microsoft-365-copilot-search",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 Copilot Search"
                         },
                         {
                             "href": "copilot-guidance/copilot/microsoft-365-copilot-for-finance-",
@@ -13799,7 +13839,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2625,
+        "count_of_node_with_href": 2633,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

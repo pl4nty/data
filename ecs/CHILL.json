@@ -106,6 +106,93 @@
                 }
             }
         },
+        "Floodgate_Campaign_AdminPortal.0e749c96-9de6-44aa-9baf-3f3652f9c726": {
+            "CampaignId": "0e749c96-9de6-44aa-9baf-3f3652f9c726",
+            "EndTimeUtc": "2025-10-31T05:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-07-25T05:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "BillingPolicyCreated",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": ". . .",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "How helpful was the process of creating a billing policy for pay-as-you-go services? "
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Extremely Helpful",
+                                        "Very helpful",
+                                        "Neutral",
+                                        "Somewhat helpful",
+                                        "Not at all helpful"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How helpful was the process of creating a billing policy for pay-as-you-go services? ",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Tell us more about your answer",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/0e749c96-9de6-44aa-9baf-3f3652f9c726/6039f0e0-51d7-4372-8141-1f4e039506e2/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_AdminPortal.16251047-5258-45a3-a826-f9d51adf0a6b": {
             "CampaignId": "16251047-5258-45a3-a826-f9d51adf0a6b",
             "EndTimeUtc": "2026-05-20T07:00:00Z",
@@ -291,6 +378,108 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/1edd70f9-d14c-4c65-8556-c6f736b436c9/817d561e-c54a-4fca-acdb-f3ada4f6195b/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_AdminPortal.2d202491-0ec2-4f90-8bb1-c04afd1b9a75": {
+            "CampaignId": "2d202491-0ec2-4f90-8bb1-c04afd1b9a75",
+            "EndTimeUtc": "2025-10-31T05:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-07-25T05:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "BillingPolicySetupNotCompleted",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": ". . .",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Tell us about why you're exiting. Your feedback helps us improve."
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "I need to manage an Azure subscription",
+                                        "I was exploring, I'm not ready to create a policy",
+                                        "The setup process was confusing or unclear",
+                                        "I don't have the required information or permissions",
+                                        "Other (please specify)"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Tell us about why you're exiting. Your feedback helps us improve.",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Share more details (optional)",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText2",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/2d202491-0ec2-4f90-8bb1-c04afd1b9a75/0258c40d-95de-48ac-b7b3-aad0046dfc17/Web-AdminPortal/",
                     "variables": {}
                 }
             }
@@ -495,6 +684,108 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/719835bd-9541-4b85-91f7-4f8a72a35dee/65ce34d9-383a-4f0c-9ee8-b1104233eaf3/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_AdminPortal.89ca0760-82ca-43a8-8c20-5f11426769d6": {
+            "CampaignId": "89ca0760-82ca-43a8-8c20-5f11426769d6",
+            "EndTimeUtc": "2025-10-31T05:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-07-25T05:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "BillingPolicyDeleted",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "What led you to delete this billing policy? Your feedback helps us improve.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "We'd love your feedback"
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "I no longer need pay-as-you-go for Copilot services",
+                                        "I'm switching to a different billing model",
+                                        "This policy wasn't set up correctly",
+                                        "I'm consolidating policies",
+                                        "Other (please specify)"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "What led you to delete this billing policy? Your feedback helps us improve.",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Tell us more about your answer",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText2",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/89ca0760-82ca-43a8-8c20-5f11426769d6/5ccb23f0-191b-4982-a608-2386293e3f8d/Web-AdminPortal/",
                     "variables": {}
                 }
             }
