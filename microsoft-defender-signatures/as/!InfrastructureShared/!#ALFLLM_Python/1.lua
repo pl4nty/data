@@ -3,21 +3,36 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("cnt:python:llm")
+local l_0_0 = (mp.enum_mpattributesubstring)("cnt:pyt:llm")
 if not l_0_0 or #l_0_0 == 0 then
   return mp.CLEAN
 end
 l_0_0 = table_dedup(l_0_0)
 set_research_data("pyt_llm_attribs", (table.concat)(l_0_0, "|"), false)
-local l_0_1 = (mp.enum_mpattributesubstring)("cnt:llm")
+local l_0_1 = (mp.enum_mpattributesubstring)("cnt:llm:network")
 if l_0_1 and #l_0_1 > 0 then
   l_0_1 = table_dedup(l_0_1)
-  set_research_data("llm_attribs", (table.concat)(l_0_1, "|"), false)
+  set_research_data("llm_attribs_net", (table.concat)(l_0_1, "|"), false)
 end
-local l_0_2 = (mp.enum_mpattributesubstring)("cnt:pyt:execute")
-if l_0_2 and #l_0_2 > 0 then
-  l_0_2 = table_dedup(l_0_2)
-  set_research_data("exec", (table.concat)(l_0_1, "|"), false)
+local l_0_2 = tostring(headerpage) .. tostring(footerpage)
+local l_0_3 = ((mp.enum_mpattributesubstring)("cnt:pyt:execute"))
+local l_0_4 = nil
+do
+  if l_0_3 and #l_0_3 > 0 then
+    local l_0_5, l_0_6 = (MpCommon.StringRegExpSearch)("(subprocess\\.run\\(.*?\\)|create_subprocess_exec\\(.*?\\))", l_0_2)
+    if l_0_5 and not (MpCommon.StringRegExpSearch)("\\(\\[?[\'\"", l_0_6) then
+      set_research_data("exec_attrib_matched", l_0_6, false)
+      l_0_4 = true
+    end
+  end
+  local l_0_7 = "(?i)(Ignore|Disregard|Skip|Forget|Neglect|Overlook|Omit|Bypass|Pay no attention to|Do not follow|Do not obey).*?(any|all|prior|previous|preceding|above|foregoing|earlier|initial).*?(content|text|instructions|instruction|directives|directive|commands|command|context|conversation|input|inputs|data|message|messages|communication|response|responses|request|requests)"
+  local l_0_8, l_0_9 = (MpCommon.StringRegExpSearch)(l_0_7, l_0_2)
+  if l_0_8 then
+    set_research_data("sus_indicator", l_0_9, false)
+  end
+  if not l_0_4 and #l_0_1 == 0 and not l_0_9 then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
 
