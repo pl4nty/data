@@ -1709,6 +1709,194 @@
                 }
             }
         },
+        "Floodgate_Campaign_MicrosoftDefenderXDR.610e6279-a960-499c-8f10-2a1b58b8480e": {
+            "CampaignId": "610e6279-a960-499c-8f10-2a1b58b8480e",
+            "EndTimeUtc": "2026-01-22T22:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 31536000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 10,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-07-22T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "AppClick",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 1
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "We have just two questions.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Tell us about your experience using cloud inventory"
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "1 - Very Difficult",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7 - Very Easy"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How easy or difficult was it to find the cloud asset you were looking for? ",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Help us understand why you chose this rating.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/610e6279-a960-499c-8f10-2a1b58b8480e/13d91733-ea01-4860-828d-cd5b147aee90/Web-MicrosoftDefenderXDR/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_MicrosoftDefenderXDR.9f028b68-0dcb-43ba-8540-ea2f152df55e": {
+            "CampaignId": "9f028b68-0dcb-43ba-8540-ea2f152df55e",
+            "EndTimeUtc": "2026-01-28T22:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 31536000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 10,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-07-28T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "Count",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 1
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "We have just two questions.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "We'd love your feedback on Cloud Overview page"
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "1 - Very Difficult",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7 - Very Easy"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How easy or difficult was it to find what you were looking for in the Cloud overview page?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Help us understand why you chose this rating",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/9f028b68-0dcb-43ba-8540-ea2f152df55e/3d0ab42b-ab9a-44d0-88f4-36e2a0946a9d/Web-MicrosoftDefenderXDR/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_MicrosoftDefenderXDR.a59ba805-7c42-4c3a-9120-bb94aa340dd5": {
             "CampaignId": "a59ba805-7c42-4c3a-9120-bb94aa340dd5",
             "EndTimeUtc": "2025-09-22T21:00:00Z",
@@ -1918,124 +2106,6 @@
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/a60144b7-2d14-4896-ac58-89ddc8088303/2a299abc-5d0d-428b-8fa4-d02b9db62ce6/Web-MicrosoftDefenderXDR/",
                     "variables": {}
-                }
-            }
-        },
-        "Floodgate_Campaign_MicrosoftDefenderXDR.d06bb221-ae87-4076-bd6c-f5f8ff7f899c": {
-            "CampaignId": "d06bb221-ae87-4076-bd6c-f5f8ff7f899c",
-            "EndTimeUtc": "2026-01-28T22:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 50,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-07-28T21:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "Cloud Scopes Creation",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "additionalCapabilities": {
-                        "email": {
-                            "targetPage": 1
-                        }
-                    },
-                    "branchingRules": [
-                        {
-                            "conditions": [
-                                {
-                                    "conditionType": "Equals",
-                                    "conditionValue": true,
-                                    "sourceId": "DidCancel",
-                                    "sourceType": "Variable"
-                                }
-                            ],
-                            "targets": [
-                                {
-                                    "hiddenPageIndices": [],
-                                    "overrideProperties": {
-                                        "questionLabel": "How easy or difficult was the process of cloud scope creation?"
-                                    },
-                                    "targetOverrideId": "singleselect1",
-                                    "targetPageIndex": 1,
-                                    "type": "Override"
-                                }
-                            ]
-                        }
-                    ],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "We have just two questions.",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "We'd love your feedback on cloud scope creation"
-                        },
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "1 - Very Difficult",
-                                        "2",
-                                        "3",
-                                        "4",
-                                        "5",
-                                        "6",
-                                        "7 - Very Easy"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How easy or difficult was it to create a new cloud scope?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Help us understand why you chose this rating.",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/d06bb221-ae87-4076-bd6c-f5f8ff7f899c/5766fe5b-4a7b-4c18-996e-2a8a0cd663a8/Web-MicrosoftDefenderXDR/",
-                    "variables": {
-                        "DidCancel": false
-                    }
                 }
             }
         }
