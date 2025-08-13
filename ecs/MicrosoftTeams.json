@@ -1856,6 +1856,7 @@
             "EnableNewAppNameForODSPCustomCopilot": true,
             "EnableShowTypingMiddleware": true,
             "EnableWebSocketsForAugLoopQueryRequests": true,
+            "EnableWelcomeMessageFromInstallationUpdate": true,
             "MigrateGetTeamsAppID": true
         },
         "RingOptions": {
