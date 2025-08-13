@@ -557,6 +557,7 @@
         "EnableTenantOutOfServiceDeviceRecentConnectionError": true,
         "EnableThrowExceptionInsteadOfReturn": true,
         "EnableToggleSessionHostsAllowConnect": true,
+        "EnableTriggerNetworkCreationForHotFix": true,
         "EnableTroubleshootingReport": false,
         "EnableTroubleshootingUpdateFullScanResult": true,
         "EnableUPNForFrontlineCurrentConnectQuery": true,
