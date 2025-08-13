@@ -13,6 +13,8 @@ if not (string.match)((this_sigattrlog[1]).utf8p2, ";To:(.+)") then
   if isnull(l_0_1) then
     return mp.CLEAN
   end
+  ;
+  (bm.add_threat_file)(l_0_1)
   local l_0_2 = bm.add_related_string
   local l_0_3 = l_0_0
   local l_0_4 = safeJsonSerialize
@@ -23,10 +25,6 @@ if not (string.match)((this_sigattrlog[1]).utf8p2, ";To:(.+)") then
   l_0_5 = bm
   l_0_5 = l_0_5.RelatedStringBMReport
   l_0_2(l_0_3, l_0_4, l_0_5)
-  l_0_2 = bm
-  l_0_2 = l_0_2.add_threat_file
-  l_0_3 = l_0_1
-  l_0_2(l_0_3)
   l_0_2 = bm
   l_0_2 = l_0_2.get_current_process_startup_info
   l_0_2 = l_0_2()

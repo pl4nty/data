@@ -34,6 +34,9 @@ if l_0_2 == "sbsimulator.exe" or (string.find)(l_0_2, "sbsimulation_sb_%d+_bs_%d
     return mp.CLEAN
   end
   if AddRqKeyAndValueNS("BAS_SB_Coverage", "BAS_SB_OriginalExecFiles_Tel", l_0_3, "1") then
+    (mp.set_mpattribute)("MpDisableMOACSyncInsert")
+    ;
+    (mp.set_mpattribute)("MpDisableCaching")
     return mp.INFECTED
   end
 else
@@ -59,12 +62,18 @@ else
   if (GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_OriginalProcs_Tel", l_0_9) or GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_OriginalExecFiles_Tel", l_0_8) or (l_0_5 ~= "sbsimulator.exe" and (string.find)(l_0_5, "sbsimulation_sb_%d+_bs_%d+_gold%.exe") == nil and (string.find)(l_0_5, "sbsimulation_sb_%d+_bs_%d+_red%.exe") == nil and (string.find)(l_0_5, "sbsimulation_sb_%d+_bs_%d+_green%.exe") == nil) or (string.find)(l_0_8, "^[a-z]:\\program files\\safebreach\\") ~= nil) then
     AddRqKeyAndValueNS("BAS_SB_Coverage", "BAS_SB_OriginalProcs_Tel", l_0_9, "1")
     if AddRqKeyAndValueNS("BAS_SB_Coverage", "BAS_SB_RelatedExecFiles_Tel", l_0_3, "1") then
+      (mp.set_mpattribute)("MpDisableMOACSyncInsert")
+      ;
+      (mp.set_mpattribute)("MpDisableCaching")
       return mp.INFECTED
     end
   else
     if GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedProcs_Tel", l_0_9) or GetRqValueByKeyNS("BAS_SB_Coverage", "BAS_SB_RelatedExecFiles_Tel", l_0_8) then
       AddRqKeyAndValueNS("BAS_SB_Coverage", "BAS_SB_RelatedProcs_Tel", l_0_9, "1")
       if AddRqKeyAndValueNS("BAS_SB_Coverage", "BAS_SB_RelatedExecFiles_Tel", l_0_3, "1") then
+        (mp.set_mpattribute)("MpDisableMOACSyncInsert")
+        ;
+        (mp.set_mpattribute)("MpDisableCaching")
         return mp.INFECTED
       end
     end

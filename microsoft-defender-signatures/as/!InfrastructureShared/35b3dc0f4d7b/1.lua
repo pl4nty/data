@@ -11,6 +11,10 @@ local l_0_1, l_0_2 = (string.match)((this_sigattrlog[1]).utf8p1, "OriginalPath:(
 if isnull(l_0_1) or isnull(l_0_2) then
   return mp.CLEAN
 end
+;
+(bm.add_threat_file)(l_0_1)
+;
+(bm.add_threat_file)((this_sigattrlog[2]).utf8p1)
 local l_0_3 = bm.add_related_string
 local l_0_4 = l_0_0
 local l_0_5 = safeJsonSerialize
@@ -22,16 +26,6 @@ l_0_5 = l_0_5(l_0_6)
 l_0_6 = bm
 l_0_6 = l_0_6.RelatedStringBMReport
 l_0_3(l_0_4, l_0_5, l_0_6)
-l_0_3 = bm
-l_0_3 = l_0_3.add_threat_file
-l_0_4 = l_0_1
-l_0_3(l_0_4)
-l_0_3 = bm
-l_0_3 = l_0_3.add_threat_file
-l_0_4 = this_sigattrlog
-l_0_4 = l_0_4[2]
-l_0_4 = l_0_4.utf8p1
-l_0_3(l_0_4)
 l_0_3 = bm
 l_0_3 = l_0_3.get_current_process_startup_info
 l_0_3 = l_0_3()
