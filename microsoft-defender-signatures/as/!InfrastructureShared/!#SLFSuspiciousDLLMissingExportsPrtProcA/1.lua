@@ -33,7 +33,7 @@ for l_0_11 = 1, l_0_4 do
     end
   end
 end
-AppendToRollingQueue(l_0_0, l_0_3, (string.format)("Count=%d_List=%s_MissingReq=%d/%d", l_0_4, (table.concat)(l_0_7, ","), l_0_1 - (l_0_6), l_0_1))
+AppendToRollingQueue(l_0_0, (string.lower)(l_0_3), (string.format)("Count=%d_List=%s_MissingReq=%d/%d", l_0_4, (table.concat)(l_0_7, ","), l_0_1 - (l_0_6), l_0_1))
 if l_0_1 == l_0_6 then
   return mp.CLEAN
 end
