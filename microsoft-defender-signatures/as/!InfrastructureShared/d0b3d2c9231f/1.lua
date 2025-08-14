@@ -16,8 +16,14 @@ do
   -- DECOMPILER ERROR at PC47: Confused about usage of register: R3 in 'UnsetPending'
 
   local l_0_6 = nil
-  local l_0_7 = GetRollingQueueKeyValue("SuspiciousDLL.PrtProc.Exports", (string.lower)(l_0_4))
+  if isnull(GetRollingQueueKeyValue("SuspiciousDLL.PrtProc.Exports", (string.lower)(l_0_4))) then
+    return mp.CLEAN
+  end
+  local l_0_7 = nil
   local l_0_9 = (string.match)(l_0_7 or "", "Count=(%d+)_List=(.+)_MissingReq=(%d+)")
+  if not l_0_9 or not l_0_7 or "" or not "Count=(%d+)_List=(.+)_MissingReq=(%d+)" or tonumber(l_0_9) == 0 then
+    return mp.CLEAN
+  end
   ;
   (bm.add_related_file)(l_0_6)
   local l_0_10 = nil
@@ -39,7 +45,7 @@ do
     l_0_13 = mp
     l_0_13 = l_0_13.INFECTED
     do return l_0_13 end
-    -- DECOMPILER ERROR at PC101: freeLocal<0 in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC123: freeLocal<0 in 'ReleaseLocals'
 
   end
 end
