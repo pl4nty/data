@@ -20,6 +20,7 @@
 namespace features {
 
 #if BUILDFLAG(IS_ANDROID)
+VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kAndroidAnimatedCompositedProgressBar);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kAndroidBcivBottomControls);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kAndroidBrowserControlsInViz);
 #endif  // BUILDFLAG(IS_ANDROID)
@@ -120,7 +121,6 @@ VIZ_COMMON_EXPORT extern const base::FeatureParam<base::TimeDelta>
 VIZ_COMMON_EXPORT extern const base::FeatureParam<double>
     kADPFMidFrameBoostDurationMultiplier;
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableInteractiveOnlyADPFRenderer);
-VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFGpuCompositorThread);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFSeparateRendererMainSession);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFSetThreads);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kUseDisplaySDRMaxLuminanceNits);
@@ -148,7 +148,6 @@ VIZ_COMMON_EXPORT extern const char kPredictorLsq[];
 VIZ_COMMON_EXPORT extern const char kPredictorLinearBezier[];
 // Edge-only end.
 
-VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kDrawImmediatelyWhenInteractive);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kAckOnSurfaceActivationWhenInteractive);
 
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kShutdownForFailedChannelCreation);
@@ -172,7 +171,6 @@ VIZ_COMMON_EXPORT bool UseWebViewNewInvalidateHeuristic();
 VIZ_COMMON_EXPORT bool UseSurfaceLayerForVideo();
 VIZ_COMMON_EXPORT int MaxOverlaysConsidered();
 VIZ_COMMON_EXPORT bool ShouldOnBeginFrameThrottleVideo();
-VIZ_COMMON_EXPORT bool ShouldDrawImmediatelyWhenInteractive();
 VIZ_COMMON_EXPORT bool IsVSyncAlignedPresentEnabled();
 VIZ_COMMON_EXPORT bool ShouldLogFrameQuadInfo();
 VIZ_COMMON_EXPORT std::optional<uint64_t>
