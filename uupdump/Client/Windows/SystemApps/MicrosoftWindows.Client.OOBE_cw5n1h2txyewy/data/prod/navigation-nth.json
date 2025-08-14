@@ -1,4 +1,45 @@
 {
+  "NTHBIORECALLSETUP": {
+    "start": "NthMSAHello",
+    "notifyOnLastFinished": true,
+    "notifyOnFirstVisible": true,
+    "speechCapable": true,
+    "speechDisabled": true,
+    "frameName": "oobe-frame",
+    "personality": "CloudExperienceHost.Personality.LiteWhite",
+    "wallpaperBackdropEnabled": true,
+    "NthMSAHello": {
+      "cxid": "NthMSAHello",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/OobeHello-main.html",
+      "ignoreResult": true,
+      "internetRequired": true,
+      "successID": "NthSnapshotCapture",
+      "failID": "NthSnapshotCapture",
+      "cancelID": "NthSnapshotCapture",
+      "abortID": "NthSnapshotCapture",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "measureId": 40329091
+    },
+    "NthSnapshotCapture": {
+      "cxid": "NthSnapshotCapture",
+      "url": {
+        "value": "https://sdx.microsoft.com/frx/snapshot-capture2",
+        "overrideValue": "https://sdx.microsoft.com/frx/snapshot-capture3",
+        "overrideFeature": "SnapshotCaptureA9Oobe"
+      },
+      "urlint": {
+        "value": "https://sdx.microsoft-int.com/frx/snapshot-capture2",
+        "overrideValue": "https://sdx.microsoft-int.com/frx/snapshot-capture3",
+        "overrideFeature": "SnapshotCaptureA9Oobe"
+      },
+      "internetRequired": true,
+      "disableErrorPageOnFailure": true,
+      "ignoreResult": true,
+      "visibility": false
+    }
+  },
   "NTHRECALLSETUP": {
     "start": "NthSnapshotCapture",
     "notifyOnLastFinished": true,

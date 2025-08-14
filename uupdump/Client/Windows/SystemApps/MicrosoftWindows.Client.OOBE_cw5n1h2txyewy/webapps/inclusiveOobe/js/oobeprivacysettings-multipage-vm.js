@@ -136,6 +136,8 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                 if (this.settingVisible() && !this.processingFlag() && (this.currentPanelIndex() > 0)) {
                     this.processingFlag(true);
                     this.currentPanelIndex(this.currentPanelIndex() - 1);
+                } else if (this.learnMoreVisible()) {
+                    this.learnMoreVisible(false);
                 }
             }
 

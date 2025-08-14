@@ -317,11 +317,13 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 })
             }]);
             document.getElementById("helloFlexEndButtons").style.visibility = "visible";
-
             document.getElementById("oobeHeader").classList.add("error-light");
 
             this.processingFlag(false);
             this.contentContainerVisibility(true);
+
+            // Restore focus to the default focusable element as the flow is returning to this page
+            KoHelpers.setFocusOnAutofocusElement();
         }
 
         static _onResize(param) {

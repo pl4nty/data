@@ -4,6 +4,7 @@
 define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobePrivacySettingsData, bridge, constants, core, KoHelpers) => {
     class OobePrivacySettingsAadcViewModel {
         constructor(resourceStrings, settingsEntryResourceStrings, isInternetAvailable) {
+            bridge.addEventListener(constants.Events.backButtonClicked, this.handleBackNavigation.bind(this));
             this.resourceStrings = resourceStrings;
             this.isInternetAvailable = isInternetAvailable;
             this.settingsEntryResourceStrings = settingsEntryResourceStrings;

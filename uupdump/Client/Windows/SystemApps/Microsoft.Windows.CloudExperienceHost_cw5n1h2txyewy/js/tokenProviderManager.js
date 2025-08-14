@@ -319,7 +319,7 @@ var CloudExperienceHost;
             this._webAppTelemetry.logEvent("_onNavigationFailed", hrInternal);
         }
         _handleNavigationError(hr, hrInternal, internalErrorDescription) {
-            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("CancelMats")) {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("MatsOnCancel")) {
                 var tokenOperation = this._msaUIHandler.getTokenOperation();
                 let msaTokenProvider;
                 msaTokenProvider = new MicrosoftAccount.TokenProvider.Core.TokenProviderExecutor(tokenOperation);

@@ -61,6 +61,7 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 case this.privacySettingKind.PersonalizedOffers:
                     return 'PersonalizedOffers';
                 case this.privacySettingKind.PersonalizedOffersWindowsDiagnostics:
+                case this.privacySettingKind.TailoredExperiences: // When Feature_OobePersonalizedOffers is fully enabled, TailoredExperiences should be removed
                     return 'Tailored';
                 case this.privacySettingKind.FindMyDevice:
                     return 'FindMyDevice';
@@ -79,10 +80,11 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 case this.privacySettingKind.InputDiagnostics:
                 case this.privacySettingKind.PersonalizedOffers:
                 case this.privacySettingKind.PersonalizedOffersWindowsDiagnostics:
+                case this.privacySettingKind.TailoredExperiences: // When Feature_OobePersonalizedOffers is fully enabled, TailoredExperiences should be removed
                     return true;
                 default:
                     return false;
-            }  
+            }
         }
 
         // Create settings group
@@ -138,7 +140,7 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 title: settingsEntryResources.OobeSettingsTelemetryTitle,
                 descriptionOn: settingsEntryResources.OobeSettingsTelemetryDescOn,
                 descriptionOff: settingsEntryResources.OobeSettingsTelemetryDescOff,
-                description2On: settingsEntryResources.OobeSettingsTelemetryDesc2On,
+                description2On: settingsEntryResources.OobeSettingsTelemetryDesc2OnV2,
                 description2Off: settingsEntryResources.OobeSettingsTelemetryDesc2Off,
                 onGlyph: settingsEntryResources.OobeSettingsTelemetryGlyphOn,
                 offGlyph: settingsEntryResources.OobeSettingsTelemetryGlyphOff,
@@ -166,7 +168,7 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 value: false
             };
 
-            let tailoredSetting = {
+            let personalizedOffersWindowsDiagnosticsSetting = {
                 settingKind: this.privacySettingKind.PersonalizedOffersWindowsDiagnostics,
                 name: settingsEntryResources.OobeSettingsPersonalizedOffersName,
                 title: settingsEntryResources.OobeSettingsPersonalizedOffersTitle,
@@ -176,6 +178,28 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 description2Off: settingsEntryResources.OobeSettingsTailoredDesc2Off,
                 onGlyph: settingsEntryResources.OobeSettingsPersonalizedOffersGlyphOn,
                 offGlyph: settingsEntryResources.OobeSettingsPersonalizedOffersGlyphOff,
+                valueOnLabel: settingsEntryResources.OobeSettingsOn,
+                valueOffLabel: settingsEntryResources.OobeSettingsOff,
+                value2OnLabel: settingsEntryResources.OobeSettingsOn,
+                value2OffLabel: settingsEntryResources.OobeSettingsOff,
+                value: false
+            };
+
+            // When Feature_OobePersonalizedOffers is fully enabled, the Tailored Experiences setting should be removed
+            // and the following strings in oobePrivacySettingsEntry.resjson should be cleaned up as well:
+            // OobeSettingsTailoredName, OobeSettingsTailoredTitle, OobeSettingsTailoredDescOnOld, OobeSettingsTailoredDescOffOld,
+            // OobeSettingsTailoredDesc2OnOld, OobeSettingsTailoredDesc2OffOld, OobeSettingsTailoredGlyphOn, OobeSettingsTailoredGlyphOff
+
+            let tailoredExperiencesSetting = {
+                settingKind: this.privacySettingKind.TailoredExperiences,
+                name: settingsEntryResources.OobeSettingsTailoredName,
+                title: settingsEntryResources.OobeSettingsTailoredTitle,
+                descriptionOn: settingsEntryResources.OobeSettingsTailoredDescOnOld,
+                descriptionOff: settingsEntryResources.OobeSettingsTailoredDescOffOld,
+                description2On: settingsEntryResources.OobeSettingsTailoredDesc2OnOld,
+                description2Off: settingsEntryResources.OobeSettingsTailoredDesc2OffOld,
+                onGlyph: settingsEntryResources.OobeSettingsTailoredGlyphOn,
+                offGlyph: settingsEntryResources.OobeSettingsTailoredGlyphOff,
                 valueOnLabel: settingsEntryResources.OobeSettingsOn,
                 valueOffLabel: settingsEntryResources.OobeSettingsOff,
                 value2OnLabel: settingsEntryResources.OobeSettingsOn,
@@ -223,7 +247,8 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 telemetrySetting,
                 inputDiagnosticSetting,
                 personalizedOffersSetting,
-                tailoredSetting,
+                personalizedOffersWindowsDiagnosticsSetting,
+                tailoredExperiencesSetting, // When Feature_OobePersonalizedOffers is fully enabled, TailoredExperiences should be removed
                 humanPresenceSetting
             ];
 
