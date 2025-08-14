@@ -46,6 +46,9 @@ if l_0_2 ~= "sbsimulator.exe" and (string.find)(l_0_2, "sbsimulation_sb_[^%.]+%.
   end
 end
 do
+  if l_0_2 == "sbupdater.exe" then
+    return mp.CLEAN
+  end
   local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
   if l_0_6 == nil or l_0_6 == "" then
     return mp.CLEAN
