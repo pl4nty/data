@@ -390,6 +390,10 @@ BASE_DECLARE_FEATURE_TRIGGER(
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kCIOpenTabsPerfOptimization);
 
+// Feature flag for copilot mode check for open tabs
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kSkipCIOpenTabsImportInCopilotMode);
+
 // Trigger fired for a CI active user whose Chrome usage is greater than
 // `kChromeNetworkThresholdToEnableOpenTabs`, open tabs CI enabled and a visible
 // browser window added.
