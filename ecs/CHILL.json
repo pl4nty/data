@@ -589,6 +589,98 @@
                 }
             }
         },
+        "Floodgate_Campaign_AdminPortal.3e4a5da9-592c-4a60-b772-bda726731f47": {
+            "CampaignId": "3e4a5da9-592c-4a60-b772-bda726731f47",
+            "EndTimeUtc": "2026-01-30T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-08-07T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "WindowsPinningCopilotSetting",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 0
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "I don't have the authority to make this decision",
+                                        "I have concerns about security, compliance and data access ",
+                                        "I don't understand the value of Copilot",
+                                        "The setting is difficult to use or understand",
+                                        "Other (let us know below)"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Please tell us why you didn't pin the Copilot app to Windows? ",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Is there anything else that would help you choose the Copilot app?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/3e4a5da9-592c-4a60-b772-bda726731f47/ea3730b7-5b3d-47ab-aed1-acab6213b98b/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_AdminPortal.3efd818d-0d7b-4dee-87f1-87940c7e6dd9": {
             "CampaignId": "3efd818d-0d7b-4dee-87f1-87940c7e6dd9",
             "EndTimeUtc": "2026-01-01T08:00:00Z",
