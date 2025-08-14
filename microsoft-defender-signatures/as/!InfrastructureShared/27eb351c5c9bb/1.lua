@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\21fb324058c7d\1.luac 
+-- Command line: lua\!InfrastructureShared\27eb351c5c9bb\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -35,11 +35,11 @@ do
                 local l_0_12 = add_parents_mp()
                 l_0_10.parents_info = l_0_11
                 l_0_10.parents_info_mp = l_0_12
-                if (this_sigattrlog[11]).matched and (this_sigattrlog[11]).utf8p2 then
-                  l_0_10.BM_Parent_TimeStamp = (this_sigattrlog[11]).timestamp
+                if (this_sigattrlog[12]).matched and (this_sigattrlog[12]).utf8p2 then
+                  l_0_10.BM_Parent_TimeStamp = (this_sigattrlog[12]).timestamp
                 else
-                  if (this_sigattrlog[12]).matched and (this_sigattrlog[12]).utf8p2 then
-                    l_0_10.BM_Parent_TimeStamp = (this_sigattrlog[12]).timestamp
+                  if (this_sigattrlog[13]).matched and (this_sigattrlog[13]).utf8p2 then
+                    l_0_10.BM_Parent_TimeStamp = (this_sigattrlog[13]).timestamp
                   end
                 end
                 ;
