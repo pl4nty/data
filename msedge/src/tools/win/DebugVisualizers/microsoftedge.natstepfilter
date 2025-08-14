@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">
+  <Function>
+    <Name>internal::.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+  <Function>
+    <Name>base::BindRepeating.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+  <Function>
+    <Name>base::BindOnce.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+  <Function>
+    <Name>std::.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+  <Function>
+    <Name>base::Time.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+  <Function>
+    <Name>base::Value.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+  <Function>
+    <Name>base::string.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+
+  <Function>
+    <Name>base::UTF16ToUTF8</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+  <Function>
+    <Name>base::BasicStringPiece.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+  <Function>
+    <Name>l10n_util::GetStringUTF16</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+
+  <Function>
+    <Name>sql::.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+
+  <Function>
+    <Name>scoped_refptr.*</Name>
+    <Action>NoStepInto</Action>
+  </Function>
+
+</StepFilter>

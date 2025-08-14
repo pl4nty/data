@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32214373,
-    "file_count": 3943
+    "size": 32209485,
+    "file_count": 3941
   },
   {
     "name": "boringssl",
@@ -561,7 +561,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3803438,
+    "size": 3803884,
     "file_count": 578
   },
   {
@@ -646,7 +646,7 @@
   },
   {
     "name": "skia",
-    "size": 3459278,
+    "size": 3457931,
     "file_count": 1178
   },
   {
@@ -731,8 +731,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6226232,
-    "file_count": 177
+    "size": 6130369,
+    "file_count": 166
   },
   {
     "name": "vulkan_memory_allocator",
