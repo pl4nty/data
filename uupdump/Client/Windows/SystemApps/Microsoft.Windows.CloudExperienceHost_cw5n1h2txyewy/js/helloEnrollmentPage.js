@@ -328,6 +328,7 @@ var CloudExperienceHost;
                 }
 
                 function updateToConfirmationPage() {
+                    let gamepadEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadEnabledOobe");
                     HeaderDiv.classList.add("error-light-legacy");
                     Title.textContent = resourceStrings['AllSetText'];
                     _setVisibility(Title, true);
@@ -341,6 +342,14 @@ var CloudExperienceHost;
                         bridge.fireEvent(CloudExperienceHost.Events.done, CloudExperienceHost.AppResult.success);
                     });
                     NextButton.disabled = false;
+                    
+                    if(gamepadEnabledObj.result && gamepadEnabledObj.value)  {
+                        try {
+                            CloudExperienceHostAPI.UtilStaticsCore.injectTabKey(false /*holdShift*/);
+                        }
+                        catch (err) {
+                        }
+                    }
                 }
 
                 function getViewBoundingRectandEnroll() {

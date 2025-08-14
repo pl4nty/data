@@ -793,7 +793,7 @@ var CloudExperienceHost;
                         }
                     }
                     else {
-                        AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onFirstWebAppVisible();
+                        AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onFirstOOBEWebAppVisible();
                     }
                 }
                 if (CloudExperienceHost.getContext().host.toLowerCase() === "frx") {
@@ -1228,15 +1228,6 @@ var CloudExperienceHost;
                     AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventNotificationManager").notifyOobeReadyStateChanged(false);
                 }
                 AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventNotificationManager").notifyAppFinished(cxhResult, this._appResult);
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeHostAppInDefaultUserSession")) {
-                    let shouldSkipNotifyOnLastFinished = false;
-                    shouldSkipNotifyOnLastFinished = (CloudExperienceHost.Storage.VolatileSharableData.getItem("OobePrepTransitionToNextAppValues", "launchNextApp") === true);
-                    if (shouldSkipNotifyOnLastFinished) {
-                        CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("SkipNotifyOnLastFinished");
-                        this._closeWindowAndTerminateApp();
-                        return;
-                    }
-                }
                 if (this._navigator && this._navigator.getNavMesh() && this._navigator.getNavMesh().getNotifyOnLastFinished()) {
                     if (this._navigator.getNavMesh().endFadeTransition()) {
                         let blackOverlay = document.createElement('div');
@@ -1244,7 +1235,21 @@ var CloudExperienceHost;
                         document.body.appendChild(blackOverlay);
                         blackOverlay.classList.add('fade-in-overlay');
                         blackOverlay.addEventListener("animationend", () => {
-                            AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onLastOOBEWebAppFinished(cxhResult, this._appResult);
+                            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeHostAppInDefaultUserSession")) {
+                                let shouldSkipNotifyOnLastFinished = (CloudExperienceHost.Storage.VolatileSharableData.getItem("OobePrepTransitionToNextAppValues", "launchNextApp") === true);
+                                CloudExperienceHost.Storage.VolatileSharableData.removeItem("OobePrepTransitionToNextAppValues", "launchNextApp");
+                                if (shouldSkipNotifyOnLastFinished) {
+                                    CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("SkipNotifyOnLastFinished");
+                                    this._closeWindowAndTerminateApp();
+                                    return;
+                                }
+                                else {
+                                    AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onLastOOBEWebAppFinished(cxhResult, this._appResult);
+                                }
+                            }
+                            else {
+                                AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onLastOOBEWebAppFinished(cxhResult, this._appResult);
+                            }
                         });
                     }
                     else {
@@ -1273,9 +1278,6 @@ var CloudExperienceHost;
                             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("WaitForTaskbarReadyFailed", CloudExperienceHost.GetJsonFromError(error));
                             this._closeWindowAndTerminateApp();
                         });
-                    }
-                    else if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeHostAppInDefaultUserSession")) {
-                        this._closeWindowAndTerminateApp(); // Simplest approach for sequential CXH and OHA launch.
                     }
                 }
                 else {
