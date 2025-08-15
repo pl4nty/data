@@ -244,6 +244,7 @@
         "EnableAtScaleShareRestorePoint": true,
         "EnableAuditPatchEntity": true,
         "EnableAutoCreateSupportTicket": true,
+        "EnableAutoImageSelection": true,
         "EnableAutoProcessForPendingRecoverWorkItem": true,
         "EnableAutoProcessQuotaRequest": true,
         "EnableAutoReservePartnerForWVDAndDedicated": true,
