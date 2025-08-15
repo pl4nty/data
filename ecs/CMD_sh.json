@@ -32,6 +32,7 @@
         "ClientAgent_CPC_Cogs_ExternalAgentsDetection": true,
         "ClientAgent_CPC_Cogs_PowershellToManagedCode": true,
         "ClientAgent_CPC_Cogs_ReportExternalAgentMatrix": true,
+        "ClientAgent_CPC_Cogs_ResumeFailureEventCollection": true,
         "ClientAgent_CPC_Cogs_SccmMaintenanceWindowDetection": true,
         "ClientAgent_CPC_Connectivity_EnableCloudPCOSServicesPlugin": true,
         "ClientAgent_CPC_DeviceAction_EnableExpandDiskPlugin": "true",
