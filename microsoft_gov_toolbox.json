@@ -11,6 +11,7 @@
         "version": "1.1.0b1",
         "versions": [
             "1.1.0b1",
+            "1.1.0b2",
             "1.0.0b12"
         ]
     },
@@ -476,8 +477,9 @@
         "name": "AzureIdentityDotnetLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.15.0-beta.1",
+        "version": "1.15.0",
         "versions": [
+            "1.15.0",
             "1.15.0-beta.1",
             "1.14.0",
             "1.14.0-beta.4",

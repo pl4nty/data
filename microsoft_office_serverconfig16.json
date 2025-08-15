@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19206.40125-->
+    <!--Build: 16.0.19125.40126-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -494,9 +494,6 @@
     </o:service>
     <o:service o:name="OutlookFlighting">
       <o:url>http://olkflt.edog.officeapps.live.com/olkflt/outlookflighting.svc/api/glides</o:url>
-    </o:service>
-    <o:service o:name="OutlookWebUrl">
-      <o:url>https://outlook.office.com</o:url>
     </o:service>
     <o:service o:name="OutlookWeatherMSN">
       <o:url>http://weather.service.msn.com/data.aspx</o:url>
@@ -1691,13 +1688,9 @@
       <o:url>https://notification.m365.svc.cloud.microsoft/api/v1/register</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://notification.m365.svc.cloud.microsoft/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
-    <o:service o:name="FamilyOnboardingAggregator">
-      <o:url>https://onboardingaggregator.family.microsoft.com</o:url>
-      <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="https://onboardingaggregator.family.microsoft.com"/>
-    </o:service>
     <o:service o:name="FamilyOnboardingShareableLink">
       <o:url>https://onboardingaggregator.family.microsoft.com/api/v1/shareable-link</o:url>
-      <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="https://onboardingaggregator.family.microsoft.com"/>
+      <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="onboardingaggregator.family.microsoft.com"/>
     </o:service>
     <o:service o:name="UniversalPrintIPPResource">
       <o:url>https://print.print.microsoft.com</o:url>
