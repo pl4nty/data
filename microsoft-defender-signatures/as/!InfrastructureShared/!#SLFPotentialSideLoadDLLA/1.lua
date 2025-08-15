@@ -11,49 +11,53 @@ if l_0_3 == 0 or l_0_4 == nil then
   return mp.CLEAN
 end
 local l_0_5 = {}
-for l_0_9 = 1, l_0_3 do
-  if l_0_0 <= (l_0_4[l_0_9]).rva and (l_0_4[l_0_9]).rva <= l_0_2 then
-    local l_0_10 = (pe.mmap_string_rva)((l_0_4[l_0_9]).namerva, 64)
-    if l_0_10 ~= nil then
-      (table.insert)(l_0_5, l_0_10)
+local l_0_6 = {}
+for l_0_10 = 1, l_0_3 do
+  local l_0_11 = (pe.mmap_string_rva)((l_0_4[l_0_10]).namerva, 64)
+  if l_0_11 and l_0_0 <= (l_0_4[l_0_10]).rva and (l_0_4[l_0_10]).rva <= l_0_2 then
+    (table.insert)(l_0_5, l_0_11)
+  else
+    if l_0_11 then
+      (table.insert)(l_0_6, l_0_11)
     end
   end
 end
 if #l_0_5 == 0 then
   return mp.CLEAN
 end
-local l_0_11 = nil
-if (mp.get_mpattributevalue)("MpPureForwardedExportsAll") ~= nil then
-  l_0_11 = "MpPureForwardedExportsAll"
+local l_0_12 = nil
+if (mp.get_mpattributevalue)("MpPureForwardedExportsAll") then
+  l_0_12 = "MpPureForwardedExportsAll"
 else
-  if (mp.get_mpattributevalue)("MpPureForwardedExportsPresent") ~= nil then
-    l_0_11 = "MpPureForwardedExportsPresent"
+  if (mp.get_mpattributevalue)("MpPureForwardedExportsPresent") then
+    l_0_12 = "MpPureForwardedExportsPresent"
   else
-    if (mp.get_mpattributevalue)("MpForwardedExportsPresent") ~= nil then
-      l_0_11 = "MpForwardedExportsPresent"
+    if (mp.get_mpattributevalue)("MpForwardedExportsPresent") then
+      l_0_12 = "MpForwardedExportsPresent"
     else
       return mp.CLEAN
     end
   end
 end
-local l_0_12 = nil
+local l_0_13 = nil
 if #(mp.enum_mpattributesubstring)("MpPureForwardedExportsTarget") > 0 then
-  l_0_12 = ((mp.enum_mpattributesubstring)("MpPureForwardedExportsTarget"))[1]
+  l_0_13 = ((mp.enum_mpattributesubstring)("MpPureForwardedExportsTarget"))[1]
 else
   if #(mp.enum_mpattributesubstring)("MpPureForwardedExportsMissingTarget") > 0 then
-    l_0_12 = ((mp.enum_mpattributesubstring)("MpPureForwardedExportsMissingTarget"))[1]
+    l_0_13 = ((mp.enum_mpattributesubstring)("MpPureForwardedExportsMissingTarget"))[1]
   else
-    l_0_12 = "ForwardedExportsTarget=FailedExtraction"
+    l_0_13 = "ForwardedExportsTarget=FailedExtraction"
   end
 end
-l_0_12 = (string.match)(l_0_12, "ForwardedExports(.+)")
-local l_0_13 = "PotentialSideLoadExports"
-;
-(mp.set_mpattribute)((string.format)("%s_%d_%d_%s_%s", l_0_13, l_0_3, #l_0_5, l_0_11, l_0_12))
-set_research_data(l_0_13, (MpCommon.Base64Encode)((string.format)("%d_%s_%s", #l_0_5, l_0_11, l_0_12)), false)
+l_0_13 = (string.match)(l_0_13, "ForwardedExports(.+)")
 local l_0_14 = (MpCommon.PathToWin32Path)((mp.getfilename)())
-if l_0_14 ~= nil then
-  AppendToRollingQueue(l_0_13, l_0_14, (string.format)("ExpCount=%d_FwdExpCount=%d_Type=%s_%s_Names=%s", l_0_3, #l_0_5, l_0_11, l_0_12, (table.concat)(l_0_5, ",")))
+if not l_0_14 then
+  return mp.CLEAN
 end
+local l_0_15 = "PotentialSideLoadExports"
+local l_0_16 = (string.format)("ExpCount=%d__FwdExpCount=%d__LocalExpCount=%d__ExpType=%s.%s__FwdExpNames=%s__LocalExpNames=%s", l_0_3, #l_0_5, #l_0_6, l_0_12, l_0_13, (table.concat)(l_0_5, ","), (table.concat)(l_0_6, ","))
+;
+(mp.set_mpattribute)(l_0_15 .. "!" .. l_0_16)
+AppendToRollingQueue(l_0_15, l_0_14, l_0_16)
 return mp.INFECTED
 
