@@ -9,9 +9,11 @@ option optimize_for = LITE_RUNTIME;
 package edge.spaceworks.proto;
 
 import "components/sync/protocol/edge_workspace_specifics.proto";
+import "components/edge_spaceworks/core/proto/local_workspace_data.proto";
 
 // Message stored in the DataTypeStore, encapsulating the synced
-// workspace data (EdgeWorkspaceSpecifics) and any future local-only metadata.
+// workspace data (EdgeWorkspaceSpecifics) and local-only metadata
+// (LocalWorkspaceData).
 message WorkspaceData {
   // Version of this proto.
   optional int64 version = 1;
@@ -19,4 +21,8 @@ message WorkspaceData {
   // Data from sync, contains either a Spacework or SpaceworkTab
   // (determined by the "entity" oneof field within).
   optional sync_pb.EdgeWorkspaceSpecifics specifics = 2;
+
+  // Local-only metadata for the Spacework. Only populated if the 'specifics'
+  // field contains a Spacework entity.
+  optional LocalWorkspaceData local_workspace_data = 3;
 }
