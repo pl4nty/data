@@ -315,6 +315,11 @@ BASE_DECLARE_FEATURE(kContinuousImportVisibleBrowserObserver);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kPersonalizedLaunch);
 
+// Feature flag to use exact match query while looking up in history for
+// personalized site suggestions
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kPersonalizedLaunchExactMatchQuery);
+
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 extern const char kPersonalizedLaunchSiteSuggestionsRestoredOnLaunch[];
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
