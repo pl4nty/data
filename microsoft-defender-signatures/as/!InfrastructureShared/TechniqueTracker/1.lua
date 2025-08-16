@@ -748,71 +748,83 @@ TrackPidAndTechnique = function(l_37_0, l_37_1, l_37_2, l_37_3, l_37_4)
   end
 end
 
-TrackPidAndTechniqueBM = function(l_38_0, l_38_1, l_38_2, l_38_3, l_38_4)
+TrackPidAndMultipleTechniques = function(l_38_0, l_38_1, l_38_2, l_38_3)
   -- function num : 0_37
-  if l_38_0 == nil or l_38_0 == "" or l_38_1 == nil or l_38_1 == "" then
+  if not l_38_0 or l_38_0 == "" or not l_38_1 or type(l_38_1) ~= "table" then
     return 
   end
-  l_38_0 = GetRealPidForScenario(l_38_0)
-  if l_38_3 == nil then
-    l_38_3 = 3600
-  end
-  AddPidSpecificTechniqueAndTactic(l_38_0, l_38_1, l_38_2, l_38_3)
-  if not l_38_4 then
-    l_38_4 = false
-  end
-  if not l_38_4 then
-    AddResearchData(l_38_0, true)
-  end
-  if l_38_0:sub(1, 4) == "pid:" and l_38_2 ~= nil and l_38_2 ~= "" then
-    -- WARNING: undefined locals caused missing assignments!
-  end
-end
-
-TrackPidAndMultipleTechniquesBM = function(l_39_0, l_39_1, l_39_2, l_39_3)
-  -- function num : 0_38
-  if not l_39_0 or l_39_0 == "" or not l_39_1 or type(l_39_1) ~= "table" then
-    return 
-  end
-  for l_39_7,l_39_8 in pairs(l_39_1) do
-    if l_39_7 and l_39_8 then
-      TrackPidAndTechniqueBM(l_39_0, l_39_7, l_39_8, l_39_2, l_39_3)
+  for l_38_7,l_38_8 in pairs(l_38_1) do
+    if l_38_7 and l_38_8 then
+      TrackPidAndTechnique(l_38_0, l_38_7, l_38_8, l_38_2, l_38_3)
     end
   end
 end
 
-GetProcessPpidByScenario = function(l_40_0)
+TrackPidAndTechniqueBM = function(l_39_0, l_39_1, l_39_2, l_39_3, l_39_4)
+  -- function num : 0_38
+  if l_39_0 == nil or l_39_0 == "" or l_39_1 == nil or l_39_1 == "" then
+    return 
+  end
+  l_39_0 = GetRealPidForScenario(l_39_0)
+  if l_39_3 == nil then
+    l_39_3 = 3600
+  end
+  AddPidSpecificTechniqueAndTactic(l_39_0, l_39_1, l_39_2, l_39_3)
+  if not l_39_4 then
+    l_39_4 = false
+  end
+  if not l_39_4 then
+    AddResearchData(l_39_0, true)
+  end
+  if l_39_0:sub(1, 4) == "pid:" and l_39_2 ~= nil and l_39_2 ~= "" then
+    -- WARNING: undefined locals caused missing assignments!
+  end
+end
+
+TrackPidAndMultipleTechniquesBM = function(l_40_0, l_40_1, l_40_2, l_40_3)
   -- function num : 0_39
-  if l_40_0 == nil then
+  if not l_40_0 or l_40_0 == "" or not l_40_1 or type(l_40_1) ~= "table" then
+    return 
+  end
+  for l_40_7,l_40_8 in pairs(l_40_1) do
+    if l_40_7 and l_40_8 then
+      TrackPidAndTechniqueBM(l_40_0, l_40_7, l_40_8, l_40_2, l_40_3)
+    end
+  end
+end
+
+GetProcessPpidByScenario = function(l_41_0)
+  -- function num : 0_40
+  if l_41_0 == nil then
     return nil
   end
-  local l_40_1 = nil
-  local l_40_2 = l_40_0:lower()
-  if l_40_2 == "cmdhstr" then
-    l_40_1 = (mp.GetScannedPPID)()
+  local l_41_1 = nil
+  local l_41_2 = l_41_0:lower()
+  if l_41_2 == "cmdhstr" then
+    l_41_1 = (mp.GetScannedPPID)()
   else
-    if l_40_2 == "bm" then
-      local l_40_3, l_40_4 = pcall(bm.get_current_process_startup_info)
-      if l_40_3 and l_40_4 ~= nil then
-        l_40_1 = l_40_4.ppid
+    if l_41_2 == "bm" then
+      local l_41_3, l_41_4 = pcall(bm.get_current_process_startup_info)
+      if l_41_3 and l_41_4 ~= nil then
+        l_41_1 = l_41_4.ppid
       end
     else
       do
-        if l_40_2 == "amsi" then
-          local l_40_5, l_40_6 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
-          if l_40_5 and l_40_6 ~= nil then
-            l_40_1 = l_40_6
+        if l_41_2 == "amsi" then
+          local l_41_5, l_41_6 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
+          if l_41_5 and l_41_6 ~= nil then
+            l_41_1 = l_41_6
           end
         else
           do
             do
-              if l_40_2 == "rtp" then
-                local l_40_7, l_40_8 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_PROCESS_ID)
-                if l_40_7 and l_40_8 ~= nil then
-                  l_40_1 = l_40_8
+              if l_41_2 == "rtp" then
+                local l_41_7, l_41_8 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_PROCESS_ID)
+                if l_41_7 and l_41_8 ~= nil then
+                  l_41_1 = l_41_8
                 end
               end
-              return l_40_1
+              return l_41_1
             end
           end
         end
@@ -821,33 +833,33 @@ GetProcessPpidByScenario = function(l_40_0)
   end
 end
 
-TrackCustomPersistContextNameByPPID = function(l_41_0, l_41_1, l_41_2, l_41_3)
-  -- function num : 0_40
-  if l_41_0 == nil or l_41_1 == nil or l_41_2 == nil then
+TrackCustomPersistContextNameByPPID = function(l_42_0, l_42_1, l_42_2, l_42_3)
+  -- function num : 0_41
+  if l_42_0 == nil or l_42_1 == nil or l_42_2 == nil then
     return nil
   end
-  if l_41_1:sub(1, 4) ~= "pid:" then
-    l_41_1 = GetProcessPpidByScenario(l_41_1)
+  if l_42_1:sub(1, 4) ~= "pid:" then
+    l_42_1 = GetProcessPpidByScenario(l_42_1)
   end
-  if l_41_1 == nil then
+  if l_42_1 == nil then
     return nil
   end
-  if l_41_0:lower() == "set" then
-    if l_41_3 == nil then
-      l_41_3 = 3600
+  if l_42_0:lower() == "set" then
+    if l_42_3 == nil then
+      l_42_3 = 3600
     end
-    local l_41_7 = MpCommon.AppendPersistContextNoPath
-    l_41_7(l_41_1, l_41_2, l_41_3)
-    l_41_7 = true
-    return l_41_7
+    local l_42_7 = MpCommon.AppendPersistContextNoPath
+    l_42_7(l_42_1, l_42_2, l_42_3)
+    l_42_7 = true
+    return l_42_7
   else
     do
-      if l_41_0:lower() == "query" then
-        local l_41_4 = MpCommon.QueryPersistContextNoPath
-        local l_41_5 = l_41_1
+      if l_42_0:lower() == "query" then
+        local l_42_4 = MpCommon.QueryPersistContextNoPath
+        local l_42_5 = l_42_1
         do
-          local l_41_6 = l_41_2
-          do return l_41_4(l_41_5, l_41_6) end
+          local l_42_6 = l_42_2
+          do return l_42_4(l_42_5, l_42_6) end
           -- DECOMPILER ERROR at PC48: Confused about usage of register R5 for local variables in 'ReleaseLocals'
 
           do return nil end
@@ -859,50 +871,35 @@ TrackCustomPersistContextNameByPPID = function(l_41_0, l_41_1, l_41_2, l_41_3)
   end
 end
 
-normalize_unicode = function(l_42_0)
-  -- function num : 0_41
-  if l_42_0 == nil then
+normalize_unicode = function(l_43_0)
+  -- function num : 0_42
+  if l_43_0 == nil then
     return 
   end
-  local l_42_1 = false
-  local l_42_2 = ""
-  for l_42_6 in l_42_0:gmatch(".") do
-    local l_42_7 = (string.byte)(l_42_6)
-    if l_42_7 == 0 then
-      if not l_42_1 then
-        l_42_1 = true
+  local l_43_1 = false
+  local l_43_2 = ""
+  for l_43_6 in l_43_0:gmatch(".") do
+    local l_43_7 = (string.byte)(l_43_6)
+    if l_43_7 == 0 then
+      if not l_43_1 then
+        l_43_1 = true
       else
-        l_42_2 = l_42_2 .. " "
-        l_42_1 = false
+        l_43_2 = l_43_2 .. " "
+        l_43_1 = false
       end
     else
-      if l_42_7 >= 32 and l_42_7 <= 126 then
-        l_42_2 = l_42_2 .. l_42_6
-        l_42_1 = false
+      if l_43_7 >= 32 and l_43_7 <= 126 then
+        l_43_2 = l_43_2 .. l_43_6
+        l_43_1 = false
       else
-        l_42_1 = false
+        l_43_1 = false
       end
     end
   end
-  return l_42_2
+  return l_43_2
 end
 
-appendNotExistingFilePersistContext = function(l_43_0, l_43_1, l_43_2)
-  -- function num : 0_42
-  if l_43_0 == nil or l_43_1 == nil then
-    return false
-  end
-  if l_43_2 == nil then
-    l_43_2 = 0
-  end
-  if not (MpCommon.QueryPersistContext)(l_43_0, l_43_1) then
-    (MpCommon.AppendPersistContext)(l_43_0, l_43_1, l_43_2)
-    return true
-  end
-  return false
-end
-
-appendFilePersistContextFromList = function(l_44_0, l_44_1, l_44_2, l_44_3)
+appendNotExistingFilePersistContext = function(l_44_0, l_44_1, l_44_2)
   -- function num : 0_43
   if l_44_0 == nil or l_44_1 == nil then
     return false
@@ -910,113 +907,98 @@ appendFilePersistContextFromList = function(l_44_0, l_44_1, l_44_2, l_44_3)
   if l_44_2 == nil then
     l_44_2 = 0
   end
-  local l_44_4 = false
-  for l_44_8,l_44_9 in ipairs(l_44_1) do
-    if l_44_3 ~= nil and (mp.bitand)(l_44_3, 1) == 1 then
-      (MpCommon.AppendPersistContext)(l_44_0, l_44_9, l_44_2)
-      l_44_4 = true
+  if not (MpCommon.QueryPersistContext)(l_44_0, l_44_1) then
+    (MpCommon.AppendPersistContext)(l_44_0, l_44_1, l_44_2)
+    return true
+  end
+  return false
+end
+
+appendFilePersistContextFromList = function(l_45_0, l_45_1, l_45_2, l_45_3)
+  -- function num : 0_44
+  if l_45_0 == nil or l_45_1 == nil then
+    return false
+  end
+  if l_45_2 == nil then
+    l_45_2 = 0
+  end
+  local l_45_4 = false
+  for l_45_8,l_45_9 in ipairs(l_45_1) do
+    if l_45_3 ~= nil and (mp.bitand)(l_45_3, 1) == 1 then
+      (MpCommon.AppendPersistContext)(l_45_0, l_45_9, l_45_2)
+      l_45_4 = true
     else
-      if appendNotExistingFilePersistContext(l_44_0, l_44_9) then
-        l_44_4 = true
+      if appendNotExistingFilePersistContext(l_45_0, l_45_9) then
+        l_45_4 = true
       end
     end
   end
-  return l_44_4
+  return l_45_4
 end
 
-generateCustomStringHash = function(l_45_0)
-  -- function num : 0_44
-  if l_45_0 == nil or type(l_45_0) ~= "string" or #l_45_0 <= 0 then
-    return 
-  end
-  local l_45_1 = (string.lower)((string.format)("0x%02X_0x%02X", (mp.crc32)(-1, l_45_0, 1, #l_45_0), tostring(#l_45_0)))
-  if l_45_1 == nil or #l_45_1 <= 10 then
-    return 
-  end
-  return l_45_1
-end
-
-getCustomStringHash = function(l_46_0)
+generateCustomStringHash = function(l_46_0)
   -- function num : 0_45
   if l_46_0 == nil or type(l_46_0) ~= "string" or #l_46_0 <= 0 then
     return 
   end
-  local l_46_1 = (string.lower)(l_46_0)
-  l_46_1 = (string.gsub)(l_46_1, "\"", "")
-  l_46_1 = (string.gsub)(l_46_1, " ", "")
-  return generateCustomStringHash(l_46_1), l_46_1
+  local l_46_1 = (string.lower)((string.format)("0x%02X_0x%02X", (mp.crc32)(-1, l_46_0, 1, #l_46_0), tostring(#l_46_0)))
+  if l_46_1 == nil or #l_46_1 <= 10 then
+    return 
+  end
+  return l_46_1
 end
 
-checkFileLastWriteTime = function(l_47_0, l_47_1)
+getCustomStringHash = function(l_47_0)
   -- function num : 0_46
-  if l_47_0 == nil and #l_47_0 <= 4 then
+  if l_47_0 == nil or type(l_47_0) ~= "string" or #l_47_0 <= 0 then
     return 
   end
-  l_47_0 = (MpCommon.PathToWin32Path)(l_47_0)
-  if not (sysio.IsFileExists)(l_47_0) then
-    return 
-  end
-  local l_47_2 = (sysio.GetFileLastWriteTime)(l_47_0)
-  if not ((sysio.GetLastResult)()).Success or l_47_2 == 0 then
-    return 
-  end
-  local l_47_3 = l_47_2 / 10000000 - 11644473600
-  local l_47_4 = (MpCommon.GetCurrentTimeT)()
-  local l_47_5 = l_47_4 - l_47_3
-  do
-    if l_47_1 ~= nil then
-      local l_47_6 = false
-      if l_47_4 < l_47_3 or l_47_1 < l_47_5 then
-        l_47_6 = true
-      end
-      return l_47_6, l_47_5, l_47_3, l_47_2, l_47_4
-    end
-    return l_47_5, l_47_3, l_47_2, l_47_4
-  end
+  local l_47_1 = (string.lower)(l_47_0)
+  l_47_1 = (string.gsub)(l_47_1, "\"", "")
+  l_47_1 = (string.gsub)(l_47_1, " ", "")
+  return generateCustomStringHash(l_47_1), l_47_1
 end
 
-IsTacticObservedForParents = function(l_48_0, l_48_1, l_48_2, l_48_3)
+checkFileLastWriteTime = function(l_48_0, l_48_1)
   -- function num : 0_47
-  if type(l_48_2) ~= "number" or l_48_2 <= 0 or l_48_2 > 15 or l_48_0 == nil or l_48_0 == "" or l_48_1 == nil or l_48_1 == "" then
-    return false, nil
+  if l_48_0 == nil and #l_48_0 <= 4 then
+    return 
   end
-  local l_48_4 = (mp.GetParentProcInfo)(l_48_0)
-  if l_48_4 ~= nil then
-    local l_48_5, l_48_6 = IsTacticObservedForPid(l_48_4.ppid, l_48_1, l_48_3)
-    if l_48_5 then
-      return l_48_5, l_48_6
-    else
-      local l_48_7 = IsTacticObservedForParents
-      local l_48_8 = l_48_4.ppid
-      local l_48_9 = l_48_1
-      local l_48_10 = l_48_2 - 1
-      do
-        local l_48_11 = l_48_3
-        do return l_48_7(l_48_8, l_48_9, l_48_10, l_48_11) end
-        -- DECOMPILER ERROR at PC44: Confused about usage of register R8 for local variables in 'ReleaseLocals'
-
-        l_48_5 = false
-        l_48_6 = nil
-        do return l_48_5, l_48_6 end
-        -- DECOMPILER ERROR at PC48: Confused about usage of register R7 for local variables in 'ReleaseLocals'
-
+  l_48_0 = (MpCommon.PathToWin32Path)(l_48_0)
+  if not (sysio.IsFileExists)(l_48_0) then
+    return 
+  end
+  local l_48_2 = (sysio.GetFileLastWriteTime)(l_48_0)
+  if not ((sysio.GetLastResult)()).Success or l_48_2 == 0 then
+    return 
+  end
+  local l_48_3 = l_48_2 / 10000000 - 11644473600
+  local l_48_4 = (MpCommon.GetCurrentTimeT)()
+  local l_48_5 = l_48_4 - l_48_3
+  do
+    if l_48_1 ~= nil then
+      local l_48_6 = false
+      if l_48_4 < l_48_3 or l_48_1 < l_48_5 then
+        l_48_6 = true
       end
+      return l_48_6, l_48_5, l_48_3, l_48_2, l_48_4
     end
+    return l_48_5, l_48_3, l_48_2, l_48_4
   end
 end
 
-IsTechniqueObservedForParents = function(l_49_0, l_49_1, l_49_2, l_49_3)
+IsTacticObservedForParents = function(l_49_0, l_49_1, l_49_2, l_49_3)
   -- function num : 0_48
   if type(l_49_2) ~= "number" or l_49_2 <= 0 or l_49_2 > 15 or l_49_0 == nil or l_49_0 == "" or l_49_1 == nil or l_49_1 == "" then
     return false, nil
   end
   local l_49_4 = (mp.GetParentProcInfo)(l_49_0)
   if l_49_4 ~= nil then
-    local l_49_5, l_49_6 = IsTechniqueObservedForPid(l_49_4.ppid, l_49_1, l_49_3)
+    local l_49_5, l_49_6 = IsTacticObservedForPid(l_49_4.ppid, l_49_1, l_49_3)
     if l_49_5 then
       return l_49_5, l_49_6
     else
-      local l_49_7 = IsTechniqueObservedForParents
+      local l_49_7 = IsTacticObservedForParents
       local l_49_8 = l_49_4.ppid
       local l_49_9 = l_49_1
       local l_49_10 = l_49_2 - 1
@@ -1035,77 +1017,87 @@ IsTechniqueObservedForParents = function(l_49_0, l_49_1, l_49_2, l_49_3)
   end
 end
 
-expandRelativePath = function(l_50_0, l_50_1)
+IsTechniqueObservedForParents = function(l_50_0, l_50_1, l_50_2, l_50_3)
   -- function num : 0_49
-  if l_50_0 == nil or #l_50_0 <= 4 or l_50_1 == nil or #l_50_1 <= 2 then
-    return 
+  if type(l_50_2) ~= "number" or l_50_2 <= 0 or l_50_2 > 15 or l_50_0 == nil or l_50_0 == "" or l_50_1 == nil or l_50_1 == "" then
+    return false, nil
   end
-  if (string.sub)(l_50_0, 1, 3) ~= "..\\" then
-    return 
-  end
-  local l_50_2, l_50_3 = (string.gsub)(l_50_0, "%.%.\\", "")
-  if l_50_3 == nil or l_50_3 == 0 then
-    return 
-  end
-  local l_50_4, l_50_5 = (string.gsub)(l_50_1, "\\", "")
-  if l_50_5 == nil or l_50_5 == 0 then
-    return 
-  end
-  l_50_5 = l_50_5 + 1
-  do
-    if l_50_5 - l_50_3 <= 0 then
-      local l_50_6 = 1
+  local l_50_4 = (mp.GetParentProcInfo)(l_50_0)
+  if l_50_4 ~= nil then
+    local l_50_5, l_50_6 = IsTechniqueObservedForPid(l_50_4.ppid, l_50_1, l_50_3)
+    if l_50_5 then
+      return l_50_5, l_50_6
+    else
+      local l_50_7 = IsTechniqueObservedForParents
+      local l_50_8 = l_50_4.ppid
+      local l_50_9 = l_50_1
+      local l_50_10 = l_50_2 - 1
+      do
+        local l_50_11 = l_50_3
+        do return l_50_7(l_50_8, l_50_9, l_50_10, l_50_11) end
+        -- DECOMPILER ERROR at PC44: Confused about usage of register R8 for local variables in 'ReleaseLocals'
+
+        l_50_5 = false
+        l_50_6 = nil
+        do return l_50_5, l_50_6 end
+        -- DECOMPILER ERROR at PC48: Confused about usage of register R7 for local variables in 'ReleaseLocals'
+
+      end
     end
-    local l_50_7 = nil
-    if (string.gmatch)(l_50_1, "[^\\]+") == nil then
+  end
+end
+
+expandRelativePath = function(l_51_0, l_51_1)
+  -- function num : 0_50
+  if l_51_0 == nil or #l_51_0 <= 4 or l_51_1 == nil or #l_51_1 <= 2 then
+    return 
+  end
+  if (string.sub)(l_51_0, 1, 3) ~= "..\\" then
+    return 
+  end
+  local l_51_2, l_51_3 = (string.gsub)(l_51_0, "%.%.\\", "")
+  if l_51_3 == nil or l_51_3 == 0 then
+    return 
+  end
+  local l_51_4, l_51_5 = (string.gsub)(l_51_1, "\\", "")
+  if l_51_5 == nil or l_51_5 == 0 then
+    return 
+  end
+  l_51_5 = l_51_5 + 1
+  do
+    if l_51_5 - l_51_3 <= 0 then
+      local l_51_6 = 1
+    end
+    local l_51_7 = nil
+    if (string.gmatch)(l_51_1, "[^\\]+") == nil then
       return 
     end
-    local l_50_8 = nil
-    local l_50_9 = 1
-    for l_50_13 in l_50_8 do
-      local l_50_10 = ""
+    local l_51_8 = nil
+    local l_51_9 = 1
+    for l_51_13 in l_51_8 do
+      local l_51_10 = ""
       -- DECOMPILER ERROR at PC61: Confused about usage of register: R13 in 'UnsetPending'
 
-      l_50_10 = l_50_10 .. R13_PC61 .. "\\"
-      if l_50_7 <= l_50_9 then
+      l_51_10 = l_51_10 .. R13_PC61 .. "\\"
+      if l_51_7 <= l_51_9 then
         break
       end
-      l_50_9 = l_50_9 + 1
+      l_51_9 = l_51_9 + 1
     end
     do
       -- DECOMPILER ERROR at PC70: Confused about usage of register: R9 in 'UnsetPending'
 
-      if l_50_10 == "" then
+      if l_51_10 == "" then
         return 
       end
       -- DECOMPILER ERROR at PC73: Confused about usage of register: R9 in 'UnsetPending'
 
-      return l_50_10 .. l_50_2
+      return l_51_10 .. l_51_2
     end
   end
 end
 
-IsInheritedTechniqueObservedForPid = function(l_51_0, l_51_1, l_51_2)
-  -- function num : 0_50
-  if l_51_0 == nil or l_51_0 == "" or l_51_1 == nil or l_51_1 == "" then
-    return false, nil
-  end
-  l_51_0 = GetRealPidForScenario(l_51_0)
-  if not l_51_2 then
-    l_51_2 = false
-  end
-  local l_51_3 = IsKeyInRollingQueue
-  local l_51_4 = "InheritedTech-" .. l_51_0
-  local l_51_5 = l_51_1
-  do
-    local l_51_6 = l_51_2
-    do return l_51_3(l_51_4, l_51_5, l_51_6) end
-    -- DECOMPILER ERROR at PC26: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
-  end
-end
-
-IsInheritedTacticObservedForPid = function(l_52_0, l_52_1, l_52_2)
+IsInheritedTechniqueObservedForPid = function(l_52_0, l_52_1, l_52_2)
   -- function num : 0_51
   if l_52_0 == nil or l_52_0 == "" or l_52_1 == nil or l_52_1 == "" then
     return false, nil
@@ -1115,7 +1107,7 @@ IsInheritedTacticObservedForPid = function(l_52_0, l_52_1, l_52_2)
     l_52_2 = false
   end
   local l_52_3 = IsKeyInRollingQueue
-  local l_52_4 = "InheritedTact-" .. l_52_0
+  local l_52_4 = "InheritedTech-" .. l_52_0
   local l_52_5 = l_52_1
   do
     local l_52_6 = l_52_2
@@ -1125,25 +1117,27 @@ IsInheritedTacticObservedForPid = function(l_52_0, l_52_1, l_52_2)
   end
 end
 
-AddInheritedTechniqueForPid = function(l_53_0, l_53_1, l_53_2, l_53_3)
+IsInheritedTacticObservedForPid = function(l_53_0, l_53_1, l_53_2)
   -- function num : 0_52
-  if l_53_0 == nil or l_53_0 == "" or l_53_1 == nil or l_53_1 == "" or l_53_2 == nil or l_53_2 == "" then
-    return 
-  end
-  if not l_53_3 then
-    l_53_3 = 3600
+  if l_53_0 == nil or l_53_0 == "" or l_53_1 == nil or l_53_1 == "" then
+    return false, nil
   end
   l_53_0 = GetRealPidForScenario(l_53_0)
-  local l_53_4, l_53_5 = IsInheritedTechniqueObservedForPid(l_53_0, l_53_2)
-  if l_53_4 then
-    l_53_5 = l_53_5 .. "," .. l_53_1
-  else
-    l_53_5 = l_53_1
+  if not l_53_2 then
+    l_53_2 = false
   end
-  AppendToRollingQueue("InheritedTech-" .. l_53_0, l_53_2, l_53_5, l_53_3)
+  local l_53_3 = IsKeyInRollingQueue
+  local l_53_4 = "InheritedTact-" .. l_53_0
+  local l_53_5 = l_53_1
+  do
+    local l_53_6 = l_53_2
+    do return l_53_3(l_53_4, l_53_5, l_53_6) end
+    -- DECOMPILER ERROR at PC26: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+
+  end
 end
 
-AddInheritedTacticForPid = function(l_54_0, l_54_1, l_54_2, l_54_3)
+AddInheritedTechniqueForPid = function(l_54_0, l_54_1, l_54_2, l_54_3)
   -- function num : 0_53
   if l_54_0 == nil or l_54_0 == "" or l_54_1 == nil or l_54_1 == "" or l_54_2 == nil or l_54_2 == "" then
     return 
@@ -1152,58 +1146,51 @@ AddInheritedTacticForPid = function(l_54_0, l_54_1, l_54_2, l_54_3)
     l_54_3 = 3600
   end
   l_54_0 = GetRealPidForScenario(l_54_0)
-  local l_54_4, l_54_5 = IsInheritedTacticObservedForPid(l_54_0, l_54_2)
+  local l_54_4, l_54_5 = IsInheritedTechniqueObservedForPid(l_54_0, l_54_2)
   if l_54_4 then
     l_54_5 = l_54_5 .. "," .. l_54_1
   else
     l_54_5 = l_54_1
   end
-  AppendToRollingQueue("InheritedTact-" .. l_54_0, l_54_2, l_54_5, l_54_3)
+  AppendToRollingQueue("InheritedTech-" .. l_54_0, l_54_2, l_54_5, l_54_3)
 end
 
-AddInheritedTechniqueAndTacticToTargetPpid = function(l_55_0, l_55_1, l_55_2, l_55_3, l_55_4)
+AddInheritedTacticForPid = function(l_55_0, l_55_1, l_55_2, l_55_3)
   -- function num : 0_54
-  if l_55_0 == nil or l_55_0 == "" or l_55_1 == nil or l_55_1 == "" then
+  if l_55_0 == nil or l_55_0 == "" or l_55_1 == nil or l_55_1 == "" or l_55_2 == nil or l_55_2 == "" then
     return 
+  end
+  if not l_55_3 then
+    l_55_3 = 3600
   end
   l_55_0 = GetRealPidForScenario(l_55_0)
-  if not l_55_4 then
-    l_55_4 = 3600
+  local l_55_4, l_55_5 = IsInheritedTacticObservedForPid(l_55_0, l_55_2)
+  if l_55_4 then
+    l_55_5 = l_55_5 .. "," .. l_55_1
+  else
+    l_55_5 = l_55_1
   end
-  if l_55_2 ~= nil and l_55_2 ~= "" then
-    AddInheritedTechniqueForPid(l_55_0, l_55_1, l_55_2, l_55_4)
-  end
-  if l_55_3 ~= nil and l_55_3 ~= "" then
-    AddInheritedTacticForPid(l_55_0, l_55_1, l_55_3, l_55_4)
-  end
+  AppendToRollingQueue("InheritedTact-" .. l_55_0, l_55_2, l_55_5, l_55_3)
 end
 
-AddTechniqueObservedToParents = function(l_56_0, l_56_1, l_56_2, l_56_3, l_56_4, l_56_5)
+AddInheritedTechniqueAndTacticToTargetPpid = function(l_56_0, l_56_1, l_56_2, l_56_3, l_56_4)
   -- function num : 0_55
-  if type(l_56_2) ~= "number" or l_56_2 <= 0 or l_56_2 > 15 or l_56_0 == nil or l_56_0 == "" or l_56_1 == nil or l_56_1 == "" or l_56_3 ~= nil and type(l_56_3) ~= "table" then
+  if l_56_0 == nil or l_56_0 == "" or l_56_1 == nil or l_56_1 == "" then
     return 
   end
-  if l_56_5 == nil then
-    l_56_5 = l_56_0
+  l_56_0 = GetRealPidForScenario(l_56_0)
+  if not l_56_4 then
+    l_56_4 = 3600
   end
-  local l_56_6 = (mp.GetParentProcInfo)(l_56_0)
-  if l_56_6 == nil or l_56_6.image_path == nil then
-    return 
+  if l_56_2 ~= nil and l_56_2 ~= "" then
+    AddInheritedTechniqueForPid(l_56_0, l_56_1, l_56_2, l_56_4)
   end
-  if l_56_3 ~= nil then
-    for l_56_10,l_56_11 in ipairs(l_56_3) do
-      if (string.find)(l_56_6.image_path, l_56_11, 1, true) then
-        return 
-      end
-    end
-  end
-  do
-    AddInheritedTechniqueForPid(l_56_6.ppid, l_56_5, l_56_1, l_56_4)
-    AddTechniqueObservedToParents(l_56_6.ppid, l_56_1, l_56_2 - 1, l_56_3, l_56_4, l_56_5)
+  if l_56_3 ~= nil and l_56_3 ~= "" then
+    AddInheritedTacticForPid(l_56_0, l_56_1, l_56_3, l_56_4)
   end
 end
 
-AddTacticsObservedToParents = function(l_57_0, l_57_1, l_57_2, l_57_3, l_57_4, l_57_5)
+AddTechniqueObservedToParents = function(l_57_0, l_57_1, l_57_2, l_57_3, l_57_4, l_57_5)
   -- function num : 0_56
   if type(l_57_2) ~= "number" or l_57_2 <= 0 or l_57_2 > 15 or l_57_0 == nil or l_57_0 == "" or l_57_1 == nil or l_57_1 == "" or l_57_3 ~= nil and type(l_57_3) ~= "table" then
     return 
@@ -1223,485 +1210,510 @@ AddTacticsObservedToParents = function(l_57_0, l_57_1, l_57_2, l_57_3, l_57_4, l
     end
   end
   do
-    AddInheritedTacticForPid(l_57_6.ppid, l_57_5, l_57_1, l_57_4)
-    AddTacticsObservedToParents(l_57_6.ppid, l_57_1, l_57_2 - 1, l_57_3, l_57_4, l_57_5)
+    AddInheritedTechniqueForPid(l_57_6.ppid, l_57_5, l_57_1, l_57_4)
+    AddTechniqueObservedToParents(l_57_6.ppid, l_57_1, l_57_2 - 1, l_57_3, l_57_4, l_57_5)
   end
 end
 
-AddTechniqueAndTacticToParents = function(l_58_0, l_58_1, l_58_2, l_58_3, l_58_4, l_58_5)
+AddTacticsObservedToParents = function(l_58_0, l_58_1, l_58_2, l_58_3, l_58_4, l_58_5)
   -- function num : 0_57
-  if l_58_0 == nil then
+  if type(l_58_2) ~= "number" or l_58_2 <= 0 or l_58_2 > 15 or l_58_0 == nil or l_58_0 == "" or l_58_1 == nil or l_58_1 == "" or l_58_3 ~= nil and type(l_58_3) ~= "table" then
     return 
   end
-  if not l_58_5 then
-    l_58_5 = 3600
+  if l_58_5 == nil then
+    l_58_5 = l_58_0
   end
-  if l_58_1 ~= nil and l_58_1 ~= "" then
-    AddTechniqueObservedToParents(l_58_0, l_58_1, l_58_3, l_58_4, l_58_5, l_58_0)
+  local l_58_6 = (mp.GetParentProcInfo)(l_58_0)
+  if l_58_6 == nil or l_58_6.image_path == nil then
+    return 
   end
-  if l_58_2 ~= nil and l_58_2 ~= "" then
-    AddTacticsObservedToParents(l_58_0, l_58_2, l_58_3, l_58_4, l_58_5, l_58_0)
-  end
-end
-
-TrackFileAndTechnique = function(l_59_0, l_59_1, l_59_2, l_59_3)
-  -- function num : 0_58
-  ValidateAddTechniqueInput = function(l_60_0, l_60_1, l_60_2)
-    -- function num : 0_58_0
-    if l_60_0 == nil or l_60_1 == nil or l_60_2 == nil then
-      return 
-    end
-    local l_60_3 = "BM_M"
-    local l_60_4 = nil
-    if (string.sub)(l_60_1, 1, #l_60_3) == l_60_3 then
-      l_60_4 = l_60_1
-    else
-      if (string.match)(l_60_1, "^[tT][0-9][0-9][0-9][0-9]") then
-        l_60_4 = l_60_3 .. l_60_1
+  if l_58_3 ~= nil then
+    for l_58_10,l_58_11 in ipairs(l_58_3) do
+      if (string.find)(l_58_6.image_path, l_58_11, 1, true) then
+        return 
       end
     end
-    if l_60_4 ~= nil then
-      (MpCommon.AppendPersistContext)(l_60_0, l_60_4, l_60_2)
+  end
+  do
+    AddInheritedTacticForPid(l_58_6.ppid, l_58_5, l_58_1, l_58_4)
+    AddTacticsObservedToParents(l_58_6.ppid, l_58_1, l_58_2 - 1, l_58_3, l_58_4, l_58_5)
+  end
+end
+
+AddTechniqueAndTacticToParents = function(l_59_0, l_59_1, l_59_2, l_59_3, l_59_4, l_59_5)
+  -- function num : 0_58
+  if l_59_0 == nil then
+    return 
+  end
+  if not l_59_5 then
+    l_59_5 = 3600
+  end
+  if l_59_1 ~= nil and l_59_1 ~= "" then
+    AddTechniqueObservedToParents(l_59_0, l_59_1, l_59_3, l_59_4, l_59_5, l_59_0)
+  end
+  if l_59_2 ~= nil and l_59_2 ~= "" then
+    AddTacticsObservedToParents(l_59_0, l_59_2, l_59_3, l_59_4, l_59_5, l_59_0)
+  end
+end
+
+TrackFileAndTechnique = function(l_60_0, l_60_1, l_60_2, l_60_3)
+  -- function num : 0_59
+  ValidateAddTechniqueInput = function(l_61_0, l_61_1, l_61_2)
+    -- function num : 0_59_0
+    if l_61_0 == nil or l_61_1 == nil or l_61_2 == nil then
+      return 
     end
-    return l_60_4
+    local l_61_3 = "BM_M"
+    local l_61_4 = nil
+    if (string.sub)(l_61_1, 1, #l_61_3) == l_61_3 then
+      l_61_4 = l_61_1
+    else
+      if (string.match)(l_61_1, "^[tT][0-9][0-9][0-9][0-9]") then
+        l_61_4 = l_61_3 .. l_61_1
+      end
+    end
+    if l_61_4 ~= nil then
+      (MpCommon.AppendPersistContext)(l_61_0, l_61_4, l_61_2)
+    end
+    return l_61_4
   end
 
-  if l_59_0 == nil or type(l_59_0) ~= "string" or #l_59_0 <= 4 then
+  if l_60_0 == nil or type(l_60_0) ~= "string" or #l_60_0 <= 4 then
     return 
   end
-  if l_59_1 == nil then
+  if l_60_1 == nil then
     return 
   end
-  if l_59_2 == nil then
-    l_59_2 = 0
+  if l_60_2 == nil then
+    l_60_2 = 0
   end
-  local l_59_4 = "FilePersistContextToMpAttribute.A"
-  if l_59_3 ~= nil then
-    l_59_4 = l_59_3
+  local l_60_4 = "FilePersistContextToMpAttribute.A"
+  if l_60_3 ~= nil then
+    l_60_4 = l_60_3
   end
-  local l_59_5 = "BM_M"
-  local l_59_6 = nil
+  local l_60_5 = "BM_M"
+  local l_60_6 = nil
   -- DECOMPILER ERROR at PC37: Unhandled construct in 'MakeBoolean' P1
 
-  if type(l_59_1) == "string" and ValidateAddTechniqueInput(l_59_0, l_59_1, l_59_2) ~= nil then
-    l_59_6 = true
+  if type(l_60_1) == "string" and ValidateAddTechniqueInput(l_60_0, l_60_1, l_60_2) ~= nil then
+    l_60_6 = true
   end
-  if type(l_59_1) == "table" then
-    for l_59_10,l_59_11 in ipairs(l_59_1) do
-      if ValidateAddTechniqueInput(l_59_0, l_59_11, l_59_2) ~= nil then
-        l_59_6 = true
+  if type(l_60_1) == "table" then
+    for l_60_10,l_60_11 in ipairs(l_60_1) do
+      if ValidateAddTechniqueInput(l_60_0, l_60_11, l_60_2) ~= nil then
+        l_60_6 = true
       end
     end
   else
     do
       do return  end
-      if l_59_6 then
-        (MpCommon.AppendPersistContext)(l_59_0, l_59_4, l_59_2)
+      if l_60_6 then
+        (MpCommon.AppendPersistContext)(l_60_0, l_60_4, l_60_2)
       end
-      return l_59_6
+      return l_60_6
     end
   end
 end
 
-checkParentProcessNameFromListByPPID = function(l_60_0, l_60_1)
-  -- function num : 0_59
-  if l_60_0 == nil or l_60_1 == nil then
-    return 
-  end
-  if l_60_0:sub(1, 4) ~= "pid:" then
-    l_60_0 = GetProcessPpidByScenario(l_60_0)
-  end
-  local l_60_2 = (mp.GetParentProcInfo)(l_60_0)
-  if l_60_2 == nil then
-    return 
-  end
-  local l_60_3 = (string.lower)(l_60_2.image_path)
-  local l_60_4 = (string.match)(l_60_3, "([^\\]+)$")
-  local l_60_5 = false
-  -- DECOMPILER ERROR at PC40: Unhandled construct in 'MakeBoolean' P1
-
-  if type(l_60_1) == "table" and l_60_1[l_60_4] ~= nil then
-    l_60_5 = true
-  end
-  if type(l_60_1) == "string" and (string.find)(l_60_1, l_60_4, 1, true) ~= nil then
-    l_60_5 = true
-  end
-  return l_60_5, l_60_4
-end
-
-checkParentProcessNameFromListByPPIDRecursive = function(l_61_0, l_61_1, l_61_2)
+checkParentProcessNameFromListByPPID = function(l_61_0, l_61_1)
   -- function num : 0_60
-  if l_61_2 < 1 or l_61_0 == nil or l_61_1 == nil then
+  if l_61_0 == nil or l_61_1 == nil then
     return 
   end
   if l_61_0:sub(1, 4) ~= "pid:" then
     l_61_0 = GetProcessPpidByScenario(l_61_0)
   end
-  local l_61_3 = (mp.GetParentProcInfo)(l_61_0)
-  if l_61_3 == nil then
+  local l_61_2 = (mp.GetParentProcInfo)(l_61_0)
+  if l_61_2 == nil then
     return 
   end
-  local l_61_4 = {}
+  local l_61_3 = (string.lower)(l_61_2.image_path)
+  local l_61_4 = (string.match)(l_61_3, "([^\\]+)$")
+  local l_61_5 = false
+  -- DECOMPILER ERROR at PC40: Unhandled construct in 'MakeBoolean' P1
+
+  if type(l_61_1) == "table" and l_61_1[l_61_4] ~= nil then
+    l_61_5 = true
+  end
+  if type(l_61_1) == "string" and (string.find)(l_61_1, l_61_4, 1, true) ~= nil then
+    l_61_5 = true
+  end
+  return l_61_5, l_61_4
+end
+
+checkParentProcessNameFromListByPPIDRecursive = function(l_62_0, l_62_1, l_62_2)
+  -- function num : 0_61
+  if l_62_2 < 1 or l_62_0 == nil or l_62_1 == nil then
+    return 
+  end
+  if l_62_0:sub(1, 4) ~= "pid:" then
+    l_62_0 = GetProcessPpidByScenario(l_62_0)
+  end
+  local l_62_3 = (mp.GetParentProcInfo)(l_62_0)
+  if l_62_3 == nil then
+    return 
+  end
+  local l_62_4 = {}
   -- DECOMPILER ERROR at PC26: No list found for R4 , SetList fails
 
   -- DECOMPILER ERROR at PC27: Overwrote pending register: R5 in 'AssignReg'
 
-  local l_61_5 = l_61_3
-  for l_61_9 = 1, l_61_2 - 1 do
-    l_61_5 = (mp.GetParentProcInfo)(l_61_5.ppid)
-    if l_61_5 == nil then
+  local l_62_5 = l_62_3
+  for l_62_9 = 1, l_62_2 - 1 do
+    l_62_5 = (mp.GetParentProcInfo)(l_62_5.ppid)
+    if l_62_5 == nil then
       break
     end
     ;
-    (table.insert)(l_61_4, l_61_5)
+    (table.insert)(l_62_4, l_62_5)
   end
   do
-    local l_61_10 = false
-    local l_61_11 = ""
-    for l_61_15,l_61_16 in ipairs(l_61_4) do
-      local l_61_17 = (string.lower)(l_61_16.image_path)
-      local l_61_18 = (string.match)(l_61_17, "([^\\]+)$")
+    local l_62_10 = false
+    local l_62_11 = ""
+    for l_62_15,l_62_16 in ipairs(l_62_4) do
+      local l_62_17 = (string.lower)(l_62_16.image_path)
+      local l_62_18 = (string.match)(l_62_17, "([^\\]+)$")
       -- DECOMPILER ERROR at PC69: Unhandled construct in 'MakeBoolean' P1
 
-      if type(l_61_1) == "table" and l_61_1[l_61_18] ~= nil then
-        l_61_10 = true
-        l_61_11 = l_61_11 .. ";" .. l_61_18
+      if type(l_62_1) == "table" and l_62_1[l_62_18] ~= nil then
+        l_62_10 = true
+        l_62_11 = l_62_11 .. ";" .. l_62_18
       end
-      if type(l_61_1) == "string" and (string.find)(l_61_1, l_61_18, 1, true) ~= nil then
-        l_61_10 = true
-        l_61_11 = l_61_11 .. ";" .. l_61_18
+      if type(l_62_1) == "string" and (string.find)(l_62_1, l_62_18, 1, true) ~= nil then
+        l_62_10 = true
+        l_62_11 = l_62_11 .. ";" .. l_62_18
       end
     end
-    return l_61_10, l_61_11
+    return l_62_10, l_62_11
   end
 end
 
 IsLegacyOrgMachine = function()
-  -- function num : 0_61
-  local l_62_0 = {}
-  l_62_0["9e8f722b-3aa1-4069-ab9f-fc8485ca4af9"] = true
-  l_62_0["e333e141-0df0-4d49-8334-ce4a3d2b51cf"] = true
-  l_62_0["a97898e3-0e7b-4c74-9c71-cf807c8a9eea"] = true
-  l_62_0["ebc2ebcb-43e4-4f76-8c75-2be36bdead88"] = true
-  l_62_0["fff415a5-d876-4e19-af91-a430fb7df00a"] = true
-  l_62_0["0b20fcfe-9850-4391-aff0-75075c0dbb1a"] = true
-  l_62_0["3b7984a2-ac4f-44ab-aefb-e0673362ee6a"] = true
-  l_62_0["0b11e29f-70a9-4c86-8858-55b9f37e3020"] = true
-  l_62_0["194c1c9f-90d1-40c8-9ba5-7fa5a43617f9"] = true
-  l_62_0["c1ed41b8-316f-4206-8655-2039a416ecf1"] = true
-  l_62_0["831aa694-4c12-49b5-9949-a4976dc1d67d"] = true
-  l_62_0["43a876e1-c5f3-4bcb-be8f-a0e405839830"] = true
-  l_62_0["93576e31-5469-4e26-a549-3a18220dc565"] = true
-  l_62_0["f3b27d4b-1c32-4f7a-b947-7a67617a319f"] = true
-  l_62_0["331f9d38-ce30-4a30-94c1-f70ab226d869"] = true
-  l_62_0["19361904-3386-43a8-961b-e86764aea86b"] = true
-  l_62_0["b49066f2-d2ca-44c6-a197-b75bb646b99f"] = true
-  l_62_0["66da7d04-65b9-4832-9cc1-5e9c5af5327c"] = true
-  l_62_0["4529e5c0-f3aa-4be7-a530-9ab6a3735062"] = true
-  l_62_0["0a7b537b-2304-49bf-b124-14194e13737b"] = true
-  l_62_0["23dc6e7f-39ea-45a4-a5b5-86d4223d3042"] = true
-  l_62_0["e0413d41-3502-4db1-9039-c88af24ead06"] = true
-  l_62_0["4574428d-d2dc-47e6-ae9f-9e24438c82e7"] = true
-  l_62_0["e17a58f3-7283-464c-a452-eb64ad83ec97"] = true
-  l_62_0["68521817-d140-4b74-a14f-eed29027e376"] = true
-  l_62_0["072b5815-bdf9-4765-bc12-6d049ae4efff"] = true
-  l_62_0["bcb207b2-cc60-4212-9043-d12afadb0fbc"] = true
-  l_62_0["49892dca-c126-4dac-95e7-f5757cccc16a"] = true
-  l_62_0["74e61dec-e6ab-4d90-91b1-ba372a703e06"] = true
-  l_62_0["2257c4e1-c3b0-439a-9119-fb2d0552bb43"] = true
-  l_62_0["3676a7b6-192c-4f13-a3ec-b0afab8f8d2b"] = true
-  l_62_0["fb85f5cc-d3fa-4d69-b25f-38f49233ef37"] = true
-  l_62_0["665a0743-4170-4383-b6ba-28935c57d01b"] = true
-  l_62_0["5ee978e9-163e-4d1e-b53a-61a36ba2b18a"] = true
-  l_62_0["7f050e73-5a3d-4813-85af-82422a793fad"] = true
-  l_62_0["9cc53ef5-7b0f-4aad-879c-8c7928b10dbe"] = true
-  l_62_0["94deb9b0-3515-48d3-8f59-0f596d5bb090"] = true
-  l_62_0["56dcd088-5605-4d08-b572-a504cf4dae65"] = true
-  l_62_0["174fa9ca-e8dd-4ae6-bcd8-8cb2f2204f95"] = true
-  l_62_0["932f5304-5c67-4d54-b103-b78bf287a2c3"] = true
-  l_62_0["a58b13d8-a8f3-4b11-b655-2d93970f6374"] = true
-  l_62_0["e53d4363-125e-4fdb-9135-f4bd0b35568e"] = true
-  l_62_0["d7c7c745-195f-4223-9c7a-99fb420fd000"] = true
-  l_62_0["5027d848-972a-4730-90b8-c684eff2122c"] = true
-  l_62_0["45575928-30c1-4b72-8bf9-0d19cc13e52c"] = true
-  l_62_0["50da504b-557b-4e97-beab-4c91dfb8c56d"] = true
-  l_62_0["0267a949-b82d-4347-b173-660c76e30da6"] = true
-  l_62_0["64032f4d-626a-4a92-ae42-d693ef078591"] = true
-  l_62_0["4a7a5002-cd9d-4b70-ad48-f8c53f86145b"] = true
-  l_62_0["8645a59d-7655-442b-9c39-bffe1294f8cb"] = true
-  l_62_0["ba8974ba-9b35-4ad0-8413-8ac01f765545"] = true
-  l_62_0["336876bb-1a0d-43f5-bf32-ce406f723b5e"] = true
-  l_62_0["02504642-40b7-40dd-bb23-d393ce4cc043"] = true
-  l_62_0["6d73cb3c-f9ca-4fd1-a357-695eb0fb8d5b"] = true
-  l_62_0["68c53d9c-8e07-4f7e-9b50-2b70499b95d0"] = true
-  l_62_0["d9390c80-4dad-4cc5-80c6-5da2bd33d673"] = true
-  l_62_0["4338bd78-8653-4e6f-b8cf-893b6b5dca63"] = true
-  l_62_0["238b89a1-be2f-4939-91dd-173c76c18095"] = true
-  l_62_0["0112e007-42b5-4355-ac50-01f8b6f60daa"] = true
-  l_62_0["6d4e7515-41ef-43fc-96f8-27e2fd492a19"] = true
-  l_62_0["f2c2c063-9ed1-4f73-a624-1d8fca3ee19e"] = true
-  l_62_0["b7f116fa-c0c0-4e37-aa6d-64790ea61007"] = true
-  l_62_0["109420d0-e127-480e-aad0-20bb832d9709"] = true
-  l_62_0["e2882248-03d6-4da2-87f7-da8967cf4672"] = true
-  l_62_0["d06d867f-fbea-4112-aec2-a437ff86bbfd"] = true
-  l_62_0["0ca80520-ab29-4a0a-86ae-e4f834611541"] = true
-  l_62_0["209400ca-9614-45e3-a14b-070d8d339b9e"] = true
-  l_62_0["26496fc8-a570-42b7-be89-a82840a08cbb"] = true
-  l_62_0["0b23e19e-541d-4cb3-89f4-419bc9c593a6"] = true
-  l_62_0["d0dc6b38-53fa-4bc6-949f-6d9dbe2d0024"] = true
-  l_62_0["6b763308-b0e7-415e-b1d6-4ed29c8d0155"] = true
-  l_62_0["864d05f5-3f47-4fb0-aecd-3d75ccd0de94"] = true
-  l_62_0["7b5315ed-6572-462d-8284-189038da8165"] = true
-  l_62_0["c7d04a61-5996-49a0-ae1b-f057623509c3"] = true
-  l_62_0["952d5943-138b-4d48-a5f3-078526a57c5d"] = true
-  l_62_0["c2cc1990-5094-4e7e-ab4f-65af1c52df24"] = true
-  l_62_0["aea7413a-28a8-48ef-a443-4c5c27161cb9"] = true
-  l_62_0["0831a921-cf12-4ecf-a3a2-0aeaba8ed268"] = true
-  l_62_0["f74b2f70-3ee6-4410-aca1-fa7f6696907a"] = true
-  l_62_0["fcfb1e78-be1a-45a2-b166-1e6c088ab4df"] = true
-  l_62_0["9d0004e6-2aeb-46ed-ac66-42719249fbfd"] = true
-  l_62_0["9e7cdd29-13c8-42c6-b852-6ad49cb47be6"] = true
-  l_62_0["7978aa21-cbb0-431f-8048-b6fe6a372187"] = true
-  l_62_0["51401eaf-db7b-410e-9830-aaf6170095d1"] = true
-  l_62_0["e8869022-0cda-47b4-98a0-2e481fa8bb39"] = true
-  l_62_0["9e2558e3-1b29-4bb1-9aa9-00f0bbf7df7a"] = true
-  l_62_0["229ff4d6-9334-4f5b-a766-b89c5cd7493a"] = true
-  l_62_0["48aa7ccc-e241-4c9c-8c74-2f60aac9f1af"] = true
-  l_62_0["e6d6bc19-a278-42e4-a2c9-de0dc3107cb1"] = true
-  l_62_0["e338937b-e3b8-4023-b9df-48372faa73b1"] = true
-  l_62_0["efa9c680-5281-4eeb-8760-fbe4a02c1cdf"] = true
-  l_62_0["a36f0250-09a4-4a6e-afc8-146c8d0f2523"] = true
-  l_62_0["2fb7ef2c-b321-471f-8f3f-def24ce84c96"] = true
-  l_62_0["8c450d96-3c8c-4fd7-b212-b194b86aeb0b"] = true
-  l_62_0["6aafad28-3462-4c54-9fa2-05525d654885"] = true
-  l_62_0["d7d1b4c2-d239-42be-aff7-f77bf22bc50a"] = true
-  l_62_0["84da20cd-3dad-4d27-b1a1-e4c2da9fe3de"] = true
-  l_62_0["d8c1a97c-1989-47f1-bad7-f61fc9fec10f"] = true
-  l_62_0["17c4f810-b36a-4b9b-b522-6ffa44933865"] = true
-  l_62_0["bf4cd6de-a593-46de-8705-e89a98a1a51b"] = true
-  l_62_0["c14ea10d-54bf-42d7-848c-cc9c895f8a0c"] = true
-  l_62_0["26b0eb5d-5020-4a63-b60f-16cabf0b5f50"] = true
-  l_62_0["f42f4b2b-f13a-4c8b-881a-6f1ffb1aa266"] = true
-  l_62_0["f11c8ce9-2021-4261-b39b-a1b99ca660d4"] = true
-  l_62_0["cdd251fe-9ff1-4da0-82f8-b2f559040782"] = true
-  l_62_0["0eb1e5d9-3dd3-4038-833e-834da63e8625"] = true
-  l_62_0["692555dd-b6cc-468f-9b4e-951f039ad383"] = true
-  l_62_0["06c1f48d-d514-415e-b385-713d1283a52d"] = true
-  l_62_0["1fa3fe7c-5db3-4537-9622-d1636572a18d"] = true
-  l_62_0["f16bd8a4-0f46-4633-aaae-048665ff9d56"] = true
-  l_62_0["207f432c-cb0c-483d-b407-2769b035f309"] = true
-  l_62_0["760925bc-cf36-40b7-bb44-c784fd7220c7"] = true
-  l_62_0["7742aae5-2519-4ec1-98e5-56c231438f79"] = true
-  l_62_0["629c1926-47fd-4a94-b2db-1f69647460ff"] = true
-  l_62_0["2a0e6866-eb55-4558-a3e6-9946ac41f870"] = true
-  l_62_0["29a97a64-bd43-4ce6-aaea-3982b1542e93"] = true
-  l_62_0["1e3b04c1-46c0-43e2-b456-d02c67cbfb6b"] = true
-  l_62_0["72c339fc-1375-4814-a4e3-f7fb7e8c8cf1"] = true
-  l_62_0["6b2d7646-e0df-42db-b5ee-4e228e0d6488"] = true
-  l_62_0["863e9bf6-e7c5-47e6-a63e-f94ef9f6ebe0"] = true
-  l_62_0["a62a1460-a7bd-4d81-87e4-f459245de4ad"] = true
-  l_62_0["bb58c89e-34d4-48eb-b965-8990bfab8d0f"] = true
-  l_62_0["fd0c1195-045d-48bf-92fc-0f241e525c3d"] = true
-  l_62_0["717551f8-5e59-45fe-aebe-eb3abd64cfec"] = true
-  l_62_0["7d32b9ed-c15f-486b-95bb-125216f5f7e7"] = true
-  l_62_0["a1984def-d4e6-476f-895f-6a6837704502"] = true
-  l_62_0["7eaf2863-7a12-4d95-8674-96407f926580"] = true
-  l_62_0["e89ae3b9-fa0c-43b2-b94a-61910e07d57d"] = true
-  l_62_0["583ad211-3e4b-4b8d-a903-9ef1cdfd8ff7"] = true
-  l_62_0["d9a18c49-7d30-4a5a-b58d-a0d124625781"] = true
-  l_62_0["df391576-f230-45b2-8d4f-03c3bacfabdd"] = true
-  l_62_0["52709bd7-7299-41a7-8b26-a0f6f80e1828"] = true
-  l_62_0["d884ee3c-20ae-4fee-b7be-719717882a61"] = true
-  l_62_0["89ece62e-abcc-49f3-9493-2e960aeddf09"] = true
-  l_62_0["7682190b-f1a4-494b-8bce-8854ab1f30ed"] = true
-  l_62_0["24a2479a-cecb-4c12-b83d-d5d6bc7d5c9a"] = true
-  l_62_0["7b003a1e-32d8-4d0c-b89e-b3f830ef9298"] = true
-  l_62_0["d33f1674-ec6e-4d30-9580-0f3a7fe9192d"] = true
-  l_62_0["482e5bc7-e3a3-470d-90df-5ae60e66de63"] = true
-  l_62_0["2fd18d75-7637-46c5-a38a-6fa157c323cd"] = true
-  l_62_0["dd03a6fe-556b-4162-aba3-1b967b71505c"] = true
-  l_62_0["a449ec79-829f-4a14-8ed4-c46d20cf7e98"] = true
-  l_62_0["73194067-7f1f-4f59-9a91-c513f9674595"] = true
-  l_62_0["142c86bb-2ee0-417d-8ebd-798e1b9168f1"] = true
-  l_62_0["bcdb10c5-56eb-47f4-a6b5-6c4b2dbeb995"] = true
-  l_62_0["557ac93d-2be7-43a5-a6a4-c58541c95d17"] = true
-  l_62_0["8eaddf99-40ac-499c-96bf-3f88d9729ed8"] = true
-  l_62_0["772b3e06-dce8-4c91-b82a-eb416497d1de"] = true
-  l_62_0["cc391f9b-f27c-41cb-ba4f-15e91c636b19"] = true
-  l_62_0["01fe0665-1ce5-4583-bafe-f2bf8a6a73d0"] = true
-  l_62_0["d5d90bec-2758-42d0-bf56-02d956bf135c"] = true
-  l_62_0["1bf8c75c-9326-4e7e-9dd3-5c1892c0ffc3"] = true
-  l_62_0["b0272ed6-629f-42e9-bef5-3b879cf44196"] = true
-  l_62_0["40a6c58e-df9e-46a2-b702-2f0e11c8470b"] = true
-  l_62_0["c0bd6124-45c1-4996-924c-46167a59a818"] = true
-  l_62_0["d3e3a858-f780-4d2c-b8e8-22d79d916ec1"] = true
-  l_62_0["4ade8f48-1ef2-47f8-b554-daacc40fd518"] = true
-  l_62_0["e3186a6e-fb5c-43b4-b5be-3d1ee0ebf674"] = true
-  l_62_0["c2773dc2-bddd-44a8-b797-e12e0e64cb8e"] = true
-  l_62_0["9022e75e-dfe8-4dcb-bd7a-df2a8168ac8d"] = true
-  l_62_0["277894f2-d95f-41b8-b7ac-9b9bc223031c"] = true
-  l_62_0["1b9d508b-eb79-4d91-9f66-dadb514ab39c"] = true
-  l_62_0["03812f4b-e4df-4e71-a7e9-02e02301c4b1"] = true
-  l_62_0["922ad644-d59b-4338-a818-0d6314a78536"] = true
-  l_62_0["f626ea2f-6a93-4850-bfa7-9018adb65582"] = true
-  l_62_0["86486b45-9fab-4b60-8ff6-d5477783a825"] = true
-  l_62_0["53e28208-6aac-4f9b-8d60-f4a9e05c8774"] = true
-  l_62_0["4cbb9f77-ea9f-41a0-b52a-960ac2dc5f01"] = true
-  l_62_0["c85a1588-d8b9-4c80-83a0-d6a87be9b712"] = true
-  l_62_0["ac94ef0a-20cd-43aa-8924-6bd156ecd6f0"] = true
-  l_62_0["27823e87-5194-40fa-a692-e3aefa2faa16"] = true
-  l_62_0["83d70c4c-fcb9-4de9-9880-2c34b95f0439"] = true
-  l_62_0["187d8278-def1-4813-8a1d-3614e9fcdbb4"] = true
-  l_62_0["e2741811-7cad-4941-a6d6-a090d7a11253"] = true
-  l_62_0["a9e4e1ae-044e-4b18-85ba-b1e40d43b511"] = true
-  l_62_0["f576af69-ad0b-4fef-ba5f-33a21773df43"] = true
-  l_62_0["8081f7dc-c79d-415d-8a14-dda42304d1a4"] = true
-  l_62_0["d148c7f3-45f0-4a78-8647-b46b2cac7b64"] = true
-  l_62_0["02781b2f-3388-4de3-ac1e-34d8a69b4b9d"] = true
-  l_62_0["a10a291b-4384-4161-98de-81e52f69df88"] = true
-  l_62_0["c31b3172-0a24-439d-9289-19a636ca8084"] = true
-  l_62_0["e5b09fc4-d1d9-42ff-a826-91792c600b87"] = true
-  l_62_0["f011ea84-bfc4-4e3a-b313-2eb3519586ec"] = true
-  l_62_0["d79e04ae-7499-4740-8bfa-a871fae7f415"] = true
-  l_62_0["0a22f1df-85ef-4b8e-ad38-641b33651e9d"] = true
-  l_62_0["fa9b0987-a412-4c68-9624-0909df6ee8c1"] = true
-  l_62_0["5df1c174-1f0f-4a02-b449-e1fc85d2370a"] = true
-  l_62_0["ec1154b2-d473-41a0-b914-d27b2bf64ac8"] = true
-  l_62_0["de8ad6e8-f9f2-45f4-b7dd-be2fda319016"] = true
-  l_62_0["e9cf8e43-27d7-47a9-a79d-2e04141762a7"] = true
-  l_62_0["50b7f255-6811-4f15-80ac-ffbab20c5878"] = true
-  l_62_0["551a8a43-bd4f-4ee0-82ac-0a3336533959"] = true
-  l_62_0["ae71b458-f29f-4887-9204-d01d649088bb"] = true
-  l_62_0["ecb93044-1c56-489a-a5cd-7a5acfbf53d5"] = true
-  l_62_0["5a324dde-dcb5-4e3a-b2c1-1fdc6c60d48e"] = true
-  l_62_0["a6454b24-1b9a-4dc0-974b-c3fe4bf71f2a"] = true
-  l_62_0["b001a172-4636-4058-82a4-88803b90eb08"] = true
-  l_62_0["67bad259-d464-44e7-b65c-83905665dd84"] = true
-  l_62_0["2a4e6c81-1a1e-4bee-9c8a-a7ac7b9e8d9e"] = true
-  l_62_0["457cf4d7-3847-4e71-9140-436a62db100c"] = true
-  l_62_0["b9d143cb-d802-43bb-a820-9790c501e286"] = true
-  l_62_0["07aebed2-fa9b-4da3-bde1-a4e53168030f"] = true
-  l_62_0["88598bde-cc7f-42cd-b32d-5423c5faf3ba"] = true
-  l_62_0["c7ec637c-878a-4f01-8c2c-b5cd6da7b836"] = true
-  l_62_0["1f14b09f-9477-4311-8aa0-4b103e996cdb"] = true
-  l_62_0["88409457-5141-4c6a-9654-386e5f9dfc7a"] = true
-  l_62_0["d45a1e7f-069a-44ce-863d-996b3afc8a32"] = true
-  l_62_0["b609c345-933c-4cfd-9dbf-4923a6e25f73"] = true
-  l_62_0["cf12250b-0606-4ccb-886a-0938c73de778"] = true
-  l_62_0["f3588a11-f071-4990-91be-1f99e816f9b6"] = true
-  l_62_0["b423ea88-8ed1-4b93-a7bd-04d80eb90ee1"] = true
-  l_62_0["73604805-290b-4930-b64d-c10694aca30c"] = true
-  l_62_0["da31a007-6033-43a1-bbc4-566981c87dbd"] = true
-  l_62_0["6c88703a-ff48-419b-a8f0-42effae4881b"] = true
-  l_62_0["81ffcd20-4c13-4353-94d6-885c1c96f4a1"] = true
-  l_62_0["a3906bc6-a3b6-4e49-bd0f-c0bff3e648e8"] = true
-  l_62_0["95034fa2-fe1f-489d-8ecc-827deb470cec"] = true
-  l_62_0["34f75caf-f95c-4149-bb5c-091730d4ade3"] = true
-  l_62_0["68420a91-f498-481c-9dc1-f957f15fcc65"] = true
-  l_62_0["efa6410a-b0a6-40be-9b26-69e397f22dd4"] = true
-  l_62_0["73e3f0fb-cebd-4d0d-b0a3-b82bcd7d7684"] = true
-  l_62_0["1ef3488a-db57-4847-abb5-a5b3aee8f942"] = true
-  l_62_0["367f773d-1bd7-4b11-9e2d-14248dce10e7"] = true
-  l_62_0["0ac1bd10-462e-43ba-9740-f12e7ba862ce"] = true
-  l_62_0["0ca6e27d-1eff-4640-af51-f60da7b266e0"] = true
-  l_62_0["e0c79e35-7c39-49f6-8650-edcc69aaba61"] = true
-  l_62_0["078d14d5-bba0-4c1e-86ea-fe726b17aa59"] = true
-  l_62_0["de48c3c7-1162-479d-b727-b9a7a1f27ebb"] = true
-  l_62_0["9f9ad922-1c9b-4b26-a2a7-b8fe2ce243b1"] = true
-  l_62_0["fa21229b-8de2-4e42-8176-23518d5fee8e"] = true
-  l_62_0["00767538-3aeb-47f5-b21e-068eaa2d3585"] = true
-  l_62_0["cda6a59a-bdd7-4269-a89a-cfe0cc035844"] = true
-  l_62_0["e0f54a9a-e7c7-4139-a528-7e616a808425"] = true
-  l_62_0["1cbdbd86-9676-4a69-8266-75550389e512"] = true
-  l_62_0["5240d2ad-529b-4ff2-be61-24c22e2dc223"] = true
-  l_62_0["9508acec-64bb-4c8b-b777-e4623ed552c4"] = true
-  l_62_0["2baef0fb-732b-48be-8b05-8378c32b3863"] = true
-  l_62_0["ec086568-3b10-43b7-acf7-4a2822fc8663"] = true
-  l_62_0["c9093900-b1d3-42c7-808b-5b7e0da66ca4"] = true
-  l_62_0["a3830578-0653-45ea-9095-97da11450d60"] = true
-  l_62_0["5ad249ba-02d7-4358-8475-a9c880d5ac2e"] = true
-  l_62_0["7c219fe2-6478-45bc-b1b3-5c6e782bdb91"] = true
-  l_62_0["3930f511-4397-44c1-aa4e-35bfc85b3412"] = true
-  l_62_0["9c692ae1-ba89-46b4-9917-6d9a4cbb12b3"] = true
-  l_62_0["f562fd84-a462-4425-a835-761be8c9d403"] = true
-  l_62_0["abae58f7-d355-46e7-9be3-c37a9b70bb5a"] = true
-  l_62_0["e18a8e9d-0168-4175-9f80-8886b3cd1316"] = true
-  l_62_0["083d3fb1-ce12-4ba4-ae1d-8efd37e2c0f4"] = true
-  l_62_0["5e25bb3b-ef5e-4757-97ca-7187daf43243"] = true
-  l_62_0["49739652-cc07-49c3-8b31-0c7eb0d0f4dc"] = true
-  l_62_0["add9e0a6-9239-4ceb-ac67-c7e9358f58e3"] = true
-  l_62_0["dd8fc33b-7a0f-4243-a4fa-5df4600bfcb6"] = true
-  l_62_0["d60f87ec-db7d-4372-bc31-c770b7382f93"] = true
-  l_62_0["f35d5ad5-45af-41b0-9d28-0f73e845187b"] = true
-  l_62_0["1cf3c410-ef90-4f2d-b20d-a56b16de0e83"] = true
-  local l_62_1 = "090b3ee2-3ac6-46b9-ba96-7a3b8a81cd1f"
-  l_62_0[l_62_1] = true
-  l_62_1 = "cfca059b-1611-4471-b00e-6670b6cc60ca"
-  l_62_0[l_62_1] = true
-  l_62_1 = "c677c28d-2c94-49ef-a250-5099ed00cea8"
-  l_62_0[l_62_1] = true
-  l_62_1 = "7d8df643-d167-4f22-bb7b-512e3fdbb275"
-  l_62_0[l_62_1] = true
-  l_62_1 = "46449c61-d6a2-45fa-8851-5fa8a46d5ed2"
-  l_62_0[l_62_1] = true
-  l_62_1 = "40222833-e511-47af-9324-40c4531ba777"
-  l_62_0[l_62_1] = true
-  l_62_1 = "6d219195-ecf9-401b-9892-3568b7ee1833"
-  l_62_0[l_62_1] = true
-  l_62_1 = "27d074db-bf2f-4c3d-a19d-498603494a51"
-  l_62_0[l_62_1] = true
-  l_62_1 = "e0c103d7-e635-4e0e-b800-9b31892842f4"
-  l_62_0[l_62_1] = true
-  l_62_1 = "e9323610-6354-4b09-a4aa-2307494bba43"
-  l_62_0[l_62_1] = true
-  l_62_1 = "0e2eb614-0a43-4328-9264-41c261c891b6"
-  l_62_0[l_62_1] = true
-  l_62_1 = versioning
-  l_62_1 = l_62_1.GetOrgID
-  l_62_1 = l_62_1()
-  local l_62_2 = false
-  if l_62_1 ~= nil and l_62_0[l_62_1] == true then
-    l_62_2 = true
-  end
-  return l_62_2, l_62_1
-end
-
-isLolbinFilename = function(l_63_0)
   -- function num : 0_62
-  local l_63_1 = {}
-  l_63_1["cmd.exe"] = true
-  l_63_1["powershell.exe"] = true
-  l_63_1["wscript.exe"] = true
-  l_63_1["cscript.exe"] = true
-  l_63_1["mshta.exe"] = true
-  l_63_1["wmic.exe"] = true
-  l_63_1["bitsadmin.exe"] = true
-  local l_63_2 = (string.match)(l_63_0, "([^\\]+)$")
-  local l_63_3 = false
-  if l_63_1[l_63_2] then
-    l_63_3 = true
+  local l_63_0 = {}
+  l_63_0["9e8f722b-3aa1-4069-ab9f-fc8485ca4af9"] = true
+  l_63_0["e333e141-0df0-4d49-8334-ce4a3d2b51cf"] = true
+  l_63_0["a97898e3-0e7b-4c74-9c71-cf807c8a9eea"] = true
+  l_63_0["ebc2ebcb-43e4-4f76-8c75-2be36bdead88"] = true
+  l_63_0["fff415a5-d876-4e19-af91-a430fb7df00a"] = true
+  l_63_0["0b20fcfe-9850-4391-aff0-75075c0dbb1a"] = true
+  l_63_0["3b7984a2-ac4f-44ab-aefb-e0673362ee6a"] = true
+  l_63_0["0b11e29f-70a9-4c86-8858-55b9f37e3020"] = true
+  l_63_0["194c1c9f-90d1-40c8-9ba5-7fa5a43617f9"] = true
+  l_63_0["c1ed41b8-316f-4206-8655-2039a416ecf1"] = true
+  l_63_0["831aa694-4c12-49b5-9949-a4976dc1d67d"] = true
+  l_63_0["43a876e1-c5f3-4bcb-be8f-a0e405839830"] = true
+  l_63_0["93576e31-5469-4e26-a549-3a18220dc565"] = true
+  l_63_0["f3b27d4b-1c32-4f7a-b947-7a67617a319f"] = true
+  l_63_0["331f9d38-ce30-4a30-94c1-f70ab226d869"] = true
+  l_63_0["19361904-3386-43a8-961b-e86764aea86b"] = true
+  l_63_0["b49066f2-d2ca-44c6-a197-b75bb646b99f"] = true
+  l_63_0["66da7d04-65b9-4832-9cc1-5e9c5af5327c"] = true
+  l_63_0["4529e5c0-f3aa-4be7-a530-9ab6a3735062"] = true
+  l_63_0["0a7b537b-2304-49bf-b124-14194e13737b"] = true
+  l_63_0["23dc6e7f-39ea-45a4-a5b5-86d4223d3042"] = true
+  l_63_0["e0413d41-3502-4db1-9039-c88af24ead06"] = true
+  l_63_0["4574428d-d2dc-47e6-ae9f-9e24438c82e7"] = true
+  l_63_0["e17a58f3-7283-464c-a452-eb64ad83ec97"] = true
+  l_63_0["68521817-d140-4b74-a14f-eed29027e376"] = true
+  l_63_0["072b5815-bdf9-4765-bc12-6d049ae4efff"] = true
+  l_63_0["bcb207b2-cc60-4212-9043-d12afadb0fbc"] = true
+  l_63_0["49892dca-c126-4dac-95e7-f5757cccc16a"] = true
+  l_63_0["74e61dec-e6ab-4d90-91b1-ba372a703e06"] = true
+  l_63_0["2257c4e1-c3b0-439a-9119-fb2d0552bb43"] = true
+  l_63_0["3676a7b6-192c-4f13-a3ec-b0afab8f8d2b"] = true
+  l_63_0["fb85f5cc-d3fa-4d69-b25f-38f49233ef37"] = true
+  l_63_0["665a0743-4170-4383-b6ba-28935c57d01b"] = true
+  l_63_0["5ee978e9-163e-4d1e-b53a-61a36ba2b18a"] = true
+  l_63_0["7f050e73-5a3d-4813-85af-82422a793fad"] = true
+  l_63_0["9cc53ef5-7b0f-4aad-879c-8c7928b10dbe"] = true
+  l_63_0["94deb9b0-3515-48d3-8f59-0f596d5bb090"] = true
+  l_63_0["56dcd088-5605-4d08-b572-a504cf4dae65"] = true
+  l_63_0["174fa9ca-e8dd-4ae6-bcd8-8cb2f2204f95"] = true
+  l_63_0["932f5304-5c67-4d54-b103-b78bf287a2c3"] = true
+  l_63_0["a58b13d8-a8f3-4b11-b655-2d93970f6374"] = true
+  l_63_0["e53d4363-125e-4fdb-9135-f4bd0b35568e"] = true
+  l_63_0["d7c7c745-195f-4223-9c7a-99fb420fd000"] = true
+  l_63_0["5027d848-972a-4730-90b8-c684eff2122c"] = true
+  l_63_0["45575928-30c1-4b72-8bf9-0d19cc13e52c"] = true
+  l_63_0["50da504b-557b-4e97-beab-4c91dfb8c56d"] = true
+  l_63_0["0267a949-b82d-4347-b173-660c76e30da6"] = true
+  l_63_0["64032f4d-626a-4a92-ae42-d693ef078591"] = true
+  l_63_0["4a7a5002-cd9d-4b70-ad48-f8c53f86145b"] = true
+  l_63_0["8645a59d-7655-442b-9c39-bffe1294f8cb"] = true
+  l_63_0["ba8974ba-9b35-4ad0-8413-8ac01f765545"] = true
+  l_63_0["336876bb-1a0d-43f5-bf32-ce406f723b5e"] = true
+  l_63_0["02504642-40b7-40dd-bb23-d393ce4cc043"] = true
+  l_63_0["6d73cb3c-f9ca-4fd1-a357-695eb0fb8d5b"] = true
+  l_63_0["68c53d9c-8e07-4f7e-9b50-2b70499b95d0"] = true
+  l_63_0["d9390c80-4dad-4cc5-80c6-5da2bd33d673"] = true
+  l_63_0["4338bd78-8653-4e6f-b8cf-893b6b5dca63"] = true
+  l_63_0["238b89a1-be2f-4939-91dd-173c76c18095"] = true
+  l_63_0["0112e007-42b5-4355-ac50-01f8b6f60daa"] = true
+  l_63_0["6d4e7515-41ef-43fc-96f8-27e2fd492a19"] = true
+  l_63_0["f2c2c063-9ed1-4f73-a624-1d8fca3ee19e"] = true
+  l_63_0["b7f116fa-c0c0-4e37-aa6d-64790ea61007"] = true
+  l_63_0["109420d0-e127-480e-aad0-20bb832d9709"] = true
+  l_63_0["e2882248-03d6-4da2-87f7-da8967cf4672"] = true
+  l_63_0["d06d867f-fbea-4112-aec2-a437ff86bbfd"] = true
+  l_63_0["0ca80520-ab29-4a0a-86ae-e4f834611541"] = true
+  l_63_0["209400ca-9614-45e3-a14b-070d8d339b9e"] = true
+  l_63_0["26496fc8-a570-42b7-be89-a82840a08cbb"] = true
+  l_63_0["0b23e19e-541d-4cb3-89f4-419bc9c593a6"] = true
+  l_63_0["d0dc6b38-53fa-4bc6-949f-6d9dbe2d0024"] = true
+  l_63_0["6b763308-b0e7-415e-b1d6-4ed29c8d0155"] = true
+  l_63_0["864d05f5-3f47-4fb0-aecd-3d75ccd0de94"] = true
+  l_63_0["7b5315ed-6572-462d-8284-189038da8165"] = true
+  l_63_0["c7d04a61-5996-49a0-ae1b-f057623509c3"] = true
+  l_63_0["952d5943-138b-4d48-a5f3-078526a57c5d"] = true
+  l_63_0["c2cc1990-5094-4e7e-ab4f-65af1c52df24"] = true
+  l_63_0["aea7413a-28a8-48ef-a443-4c5c27161cb9"] = true
+  l_63_0["0831a921-cf12-4ecf-a3a2-0aeaba8ed268"] = true
+  l_63_0["f74b2f70-3ee6-4410-aca1-fa7f6696907a"] = true
+  l_63_0["fcfb1e78-be1a-45a2-b166-1e6c088ab4df"] = true
+  l_63_0["9d0004e6-2aeb-46ed-ac66-42719249fbfd"] = true
+  l_63_0["9e7cdd29-13c8-42c6-b852-6ad49cb47be6"] = true
+  l_63_0["7978aa21-cbb0-431f-8048-b6fe6a372187"] = true
+  l_63_0["51401eaf-db7b-410e-9830-aaf6170095d1"] = true
+  l_63_0["e8869022-0cda-47b4-98a0-2e481fa8bb39"] = true
+  l_63_0["9e2558e3-1b29-4bb1-9aa9-00f0bbf7df7a"] = true
+  l_63_0["229ff4d6-9334-4f5b-a766-b89c5cd7493a"] = true
+  l_63_0["48aa7ccc-e241-4c9c-8c74-2f60aac9f1af"] = true
+  l_63_0["e6d6bc19-a278-42e4-a2c9-de0dc3107cb1"] = true
+  l_63_0["e338937b-e3b8-4023-b9df-48372faa73b1"] = true
+  l_63_0["efa9c680-5281-4eeb-8760-fbe4a02c1cdf"] = true
+  l_63_0["a36f0250-09a4-4a6e-afc8-146c8d0f2523"] = true
+  l_63_0["2fb7ef2c-b321-471f-8f3f-def24ce84c96"] = true
+  l_63_0["8c450d96-3c8c-4fd7-b212-b194b86aeb0b"] = true
+  l_63_0["6aafad28-3462-4c54-9fa2-05525d654885"] = true
+  l_63_0["d7d1b4c2-d239-42be-aff7-f77bf22bc50a"] = true
+  l_63_0["84da20cd-3dad-4d27-b1a1-e4c2da9fe3de"] = true
+  l_63_0["d8c1a97c-1989-47f1-bad7-f61fc9fec10f"] = true
+  l_63_0["17c4f810-b36a-4b9b-b522-6ffa44933865"] = true
+  l_63_0["bf4cd6de-a593-46de-8705-e89a98a1a51b"] = true
+  l_63_0["c14ea10d-54bf-42d7-848c-cc9c895f8a0c"] = true
+  l_63_0["26b0eb5d-5020-4a63-b60f-16cabf0b5f50"] = true
+  l_63_0["f42f4b2b-f13a-4c8b-881a-6f1ffb1aa266"] = true
+  l_63_0["f11c8ce9-2021-4261-b39b-a1b99ca660d4"] = true
+  l_63_0["cdd251fe-9ff1-4da0-82f8-b2f559040782"] = true
+  l_63_0["0eb1e5d9-3dd3-4038-833e-834da63e8625"] = true
+  l_63_0["692555dd-b6cc-468f-9b4e-951f039ad383"] = true
+  l_63_0["06c1f48d-d514-415e-b385-713d1283a52d"] = true
+  l_63_0["1fa3fe7c-5db3-4537-9622-d1636572a18d"] = true
+  l_63_0["f16bd8a4-0f46-4633-aaae-048665ff9d56"] = true
+  l_63_0["207f432c-cb0c-483d-b407-2769b035f309"] = true
+  l_63_0["760925bc-cf36-40b7-bb44-c784fd7220c7"] = true
+  l_63_0["7742aae5-2519-4ec1-98e5-56c231438f79"] = true
+  l_63_0["629c1926-47fd-4a94-b2db-1f69647460ff"] = true
+  l_63_0["2a0e6866-eb55-4558-a3e6-9946ac41f870"] = true
+  l_63_0["29a97a64-bd43-4ce6-aaea-3982b1542e93"] = true
+  l_63_0["1e3b04c1-46c0-43e2-b456-d02c67cbfb6b"] = true
+  l_63_0["72c339fc-1375-4814-a4e3-f7fb7e8c8cf1"] = true
+  l_63_0["6b2d7646-e0df-42db-b5ee-4e228e0d6488"] = true
+  l_63_0["863e9bf6-e7c5-47e6-a63e-f94ef9f6ebe0"] = true
+  l_63_0["a62a1460-a7bd-4d81-87e4-f459245de4ad"] = true
+  l_63_0["bb58c89e-34d4-48eb-b965-8990bfab8d0f"] = true
+  l_63_0["fd0c1195-045d-48bf-92fc-0f241e525c3d"] = true
+  l_63_0["717551f8-5e59-45fe-aebe-eb3abd64cfec"] = true
+  l_63_0["7d32b9ed-c15f-486b-95bb-125216f5f7e7"] = true
+  l_63_0["a1984def-d4e6-476f-895f-6a6837704502"] = true
+  l_63_0["7eaf2863-7a12-4d95-8674-96407f926580"] = true
+  l_63_0["e89ae3b9-fa0c-43b2-b94a-61910e07d57d"] = true
+  l_63_0["583ad211-3e4b-4b8d-a903-9ef1cdfd8ff7"] = true
+  l_63_0["d9a18c49-7d30-4a5a-b58d-a0d124625781"] = true
+  l_63_0["df391576-f230-45b2-8d4f-03c3bacfabdd"] = true
+  l_63_0["52709bd7-7299-41a7-8b26-a0f6f80e1828"] = true
+  l_63_0["d884ee3c-20ae-4fee-b7be-719717882a61"] = true
+  l_63_0["89ece62e-abcc-49f3-9493-2e960aeddf09"] = true
+  l_63_0["7682190b-f1a4-494b-8bce-8854ab1f30ed"] = true
+  l_63_0["24a2479a-cecb-4c12-b83d-d5d6bc7d5c9a"] = true
+  l_63_0["7b003a1e-32d8-4d0c-b89e-b3f830ef9298"] = true
+  l_63_0["d33f1674-ec6e-4d30-9580-0f3a7fe9192d"] = true
+  l_63_0["482e5bc7-e3a3-470d-90df-5ae60e66de63"] = true
+  l_63_0["2fd18d75-7637-46c5-a38a-6fa157c323cd"] = true
+  l_63_0["dd03a6fe-556b-4162-aba3-1b967b71505c"] = true
+  l_63_0["a449ec79-829f-4a14-8ed4-c46d20cf7e98"] = true
+  l_63_0["73194067-7f1f-4f59-9a91-c513f9674595"] = true
+  l_63_0["142c86bb-2ee0-417d-8ebd-798e1b9168f1"] = true
+  l_63_0["bcdb10c5-56eb-47f4-a6b5-6c4b2dbeb995"] = true
+  l_63_0["557ac93d-2be7-43a5-a6a4-c58541c95d17"] = true
+  l_63_0["8eaddf99-40ac-499c-96bf-3f88d9729ed8"] = true
+  l_63_0["772b3e06-dce8-4c91-b82a-eb416497d1de"] = true
+  l_63_0["cc391f9b-f27c-41cb-ba4f-15e91c636b19"] = true
+  l_63_0["01fe0665-1ce5-4583-bafe-f2bf8a6a73d0"] = true
+  l_63_0["d5d90bec-2758-42d0-bf56-02d956bf135c"] = true
+  l_63_0["1bf8c75c-9326-4e7e-9dd3-5c1892c0ffc3"] = true
+  l_63_0["b0272ed6-629f-42e9-bef5-3b879cf44196"] = true
+  l_63_0["40a6c58e-df9e-46a2-b702-2f0e11c8470b"] = true
+  l_63_0["c0bd6124-45c1-4996-924c-46167a59a818"] = true
+  l_63_0["d3e3a858-f780-4d2c-b8e8-22d79d916ec1"] = true
+  l_63_0["4ade8f48-1ef2-47f8-b554-daacc40fd518"] = true
+  l_63_0["e3186a6e-fb5c-43b4-b5be-3d1ee0ebf674"] = true
+  l_63_0["c2773dc2-bddd-44a8-b797-e12e0e64cb8e"] = true
+  l_63_0["9022e75e-dfe8-4dcb-bd7a-df2a8168ac8d"] = true
+  l_63_0["277894f2-d95f-41b8-b7ac-9b9bc223031c"] = true
+  l_63_0["1b9d508b-eb79-4d91-9f66-dadb514ab39c"] = true
+  l_63_0["03812f4b-e4df-4e71-a7e9-02e02301c4b1"] = true
+  l_63_0["922ad644-d59b-4338-a818-0d6314a78536"] = true
+  l_63_0["f626ea2f-6a93-4850-bfa7-9018adb65582"] = true
+  l_63_0["86486b45-9fab-4b60-8ff6-d5477783a825"] = true
+  l_63_0["53e28208-6aac-4f9b-8d60-f4a9e05c8774"] = true
+  l_63_0["4cbb9f77-ea9f-41a0-b52a-960ac2dc5f01"] = true
+  l_63_0["c85a1588-d8b9-4c80-83a0-d6a87be9b712"] = true
+  l_63_0["ac94ef0a-20cd-43aa-8924-6bd156ecd6f0"] = true
+  l_63_0["27823e87-5194-40fa-a692-e3aefa2faa16"] = true
+  l_63_0["83d70c4c-fcb9-4de9-9880-2c34b95f0439"] = true
+  l_63_0["187d8278-def1-4813-8a1d-3614e9fcdbb4"] = true
+  l_63_0["e2741811-7cad-4941-a6d6-a090d7a11253"] = true
+  l_63_0["a9e4e1ae-044e-4b18-85ba-b1e40d43b511"] = true
+  l_63_0["f576af69-ad0b-4fef-ba5f-33a21773df43"] = true
+  l_63_0["8081f7dc-c79d-415d-8a14-dda42304d1a4"] = true
+  l_63_0["d148c7f3-45f0-4a78-8647-b46b2cac7b64"] = true
+  l_63_0["02781b2f-3388-4de3-ac1e-34d8a69b4b9d"] = true
+  l_63_0["a10a291b-4384-4161-98de-81e52f69df88"] = true
+  l_63_0["c31b3172-0a24-439d-9289-19a636ca8084"] = true
+  l_63_0["e5b09fc4-d1d9-42ff-a826-91792c600b87"] = true
+  l_63_0["f011ea84-bfc4-4e3a-b313-2eb3519586ec"] = true
+  l_63_0["d79e04ae-7499-4740-8bfa-a871fae7f415"] = true
+  l_63_0["0a22f1df-85ef-4b8e-ad38-641b33651e9d"] = true
+  l_63_0["fa9b0987-a412-4c68-9624-0909df6ee8c1"] = true
+  l_63_0["5df1c174-1f0f-4a02-b449-e1fc85d2370a"] = true
+  l_63_0["ec1154b2-d473-41a0-b914-d27b2bf64ac8"] = true
+  l_63_0["de8ad6e8-f9f2-45f4-b7dd-be2fda319016"] = true
+  l_63_0["e9cf8e43-27d7-47a9-a79d-2e04141762a7"] = true
+  l_63_0["50b7f255-6811-4f15-80ac-ffbab20c5878"] = true
+  l_63_0["551a8a43-bd4f-4ee0-82ac-0a3336533959"] = true
+  l_63_0["ae71b458-f29f-4887-9204-d01d649088bb"] = true
+  l_63_0["ecb93044-1c56-489a-a5cd-7a5acfbf53d5"] = true
+  l_63_0["5a324dde-dcb5-4e3a-b2c1-1fdc6c60d48e"] = true
+  l_63_0["a6454b24-1b9a-4dc0-974b-c3fe4bf71f2a"] = true
+  l_63_0["b001a172-4636-4058-82a4-88803b90eb08"] = true
+  l_63_0["67bad259-d464-44e7-b65c-83905665dd84"] = true
+  l_63_0["2a4e6c81-1a1e-4bee-9c8a-a7ac7b9e8d9e"] = true
+  l_63_0["457cf4d7-3847-4e71-9140-436a62db100c"] = true
+  l_63_0["b9d143cb-d802-43bb-a820-9790c501e286"] = true
+  l_63_0["07aebed2-fa9b-4da3-bde1-a4e53168030f"] = true
+  l_63_0["88598bde-cc7f-42cd-b32d-5423c5faf3ba"] = true
+  l_63_0["c7ec637c-878a-4f01-8c2c-b5cd6da7b836"] = true
+  l_63_0["1f14b09f-9477-4311-8aa0-4b103e996cdb"] = true
+  l_63_0["88409457-5141-4c6a-9654-386e5f9dfc7a"] = true
+  l_63_0["d45a1e7f-069a-44ce-863d-996b3afc8a32"] = true
+  l_63_0["b609c345-933c-4cfd-9dbf-4923a6e25f73"] = true
+  l_63_0["cf12250b-0606-4ccb-886a-0938c73de778"] = true
+  l_63_0["f3588a11-f071-4990-91be-1f99e816f9b6"] = true
+  l_63_0["b423ea88-8ed1-4b93-a7bd-04d80eb90ee1"] = true
+  l_63_0["73604805-290b-4930-b64d-c10694aca30c"] = true
+  l_63_0["da31a007-6033-43a1-bbc4-566981c87dbd"] = true
+  l_63_0["6c88703a-ff48-419b-a8f0-42effae4881b"] = true
+  l_63_0["81ffcd20-4c13-4353-94d6-885c1c96f4a1"] = true
+  l_63_0["a3906bc6-a3b6-4e49-bd0f-c0bff3e648e8"] = true
+  l_63_0["95034fa2-fe1f-489d-8ecc-827deb470cec"] = true
+  l_63_0["34f75caf-f95c-4149-bb5c-091730d4ade3"] = true
+  l_63_0["68420a91-f498-481c-9dc1-f957f15fcc65"] = true
+  l_63_0["efa6410a-b0a6-40be-9b26-69e397f22dd4"] = true
+  l_63_0["73e3f0fb-cebd-4d0d-b0a3-b82bcd7d7684"] = true
+  l_63_0["1ef3488a-db57-4847-abb5-a5b3aee8f942"] = true
+  l_63_0["367f773d-1bd7-4b11-9e2d-14248dce10e7"] = true
+  l_63_0["0ac1bd10-462e-43ba-9740-f12e7ba862ce"] = true
+  l_63_0["0ca6e27d-1eff-4640-af51-f60da7b266e0"] = true
+  l_63_0["e0c79e35-7c39-49f6-8650-edcc69aaba61"] = true
+  l_63_0["078d14d5-bba0-4c1e-86ea-fe726b17aa59"] = true
+  l_63_0["de48c3c7-1162-479d-b727-b9a7a1f27ebb"] = true
+  l_63_0["9f9ad922-1c9b-4b26-a2a7-b8fe2ce243b1"] = true
+  l_63_0["fa21229b-8de2-4e42-8176-23518d5fee8e"] = true
+  l_63_0["00767538-3aeb-47f5-b21e-068eaa2d3585"] = true
+  l_63_0["cda6a59a-bdd7-4269-a89a-cfe0cc035844"] = true
+  l_63_0["e0f54a9a-e7c7-4139-a528-7e616a808425"] = true
+  l_63_0["1cbdbd86-9676-4a69-8266-75550389e512"] = true
+  l_63_0["5240d2ad-529b-4ff2-be61-24c22e2dc223"] = true
+  l_63_0["9508acec-64bb-4c8b-b777-e4623ed552c4"] = true
+  l_63_0["2baef0fb-732b-48be-8b05-8378c32b3863"] = true
+  l_63_0["ec086568-3b10-43b7-acf7-4a2822fc8663"] = true
+  l_63_0["c9093900-b1d3-42c7-808b-5b7e0da66ca4"] = true
+  l_63_0["a3830578-0653-45ea-9095-97da11450d60"] = true
+  l_63_0["5ad249ba-02d7-4358-8475-a9c880d5ac2e"] = true
+  l_63_0["7c219fe2-6478-45bc-b1b3-5c6e782bdb91"] = true
+  l_63_0["3930f511-4397-44c1-aa4e-35bfc85b3412"] = true
+  l_63_0["9c692ae1-ba89-46b4-9917-6d9a4cbb12b3"] = true
+  l_63_0["f562fd84-a462-4425-a835-761be8c9d403"] = true
+  l_63_0["abae58f7-d355-46e7-9be3-c37a9b70bb5a"] = true
+  l_63_0["e18a8e9d-0168-4175-9f80-8886b3cd1316"] = true
+  l_63_0["083d3fb1-ce12-4ba4-ae1d-8efd37e2c0f4"] = true
+  l_63_0["5e25bb3b-ef5e-4757-97ca-7187daf43243"] = true
+  l_63_0["49739652-cc07-49c3-8b31-0c7eb0d0f4dc"] = true
+  l_63_0["add9e0a6-9239-4ceb-ac67-c7e9358f58e3"] = true
+  l_63_0["dd8fc33b-7a0f-4243-a4fa-5df4600bfcb6"] = true
+  l_63_0["d60f87ec-db7d-4372-bc31-c770b7382f93"] = true
+  l_63_0["f35d5ad5-45af-41b0-9d28-0f73e845187b"] = true
+  l_63_0["1cf3c410-ef90-4f2d-b20d-a56b16de0e83"] = true
+  local l_63_1 = "090b3ee2-3ac6-46b9-ba96-7a3b8a81cd1f"
+  l_63_0[l_63_1] = true
+  l_63_1 = "cfca059b-1611-4471-b00e-6670b6cc60ca"
+  l_63_0[l_63_1] = true
+  l_63_1 = "c677c28d-2c94-49ef-a250-5099ed00cea8"
+  l_63_0[l_63_1] = true
+  l_63_1 = "7d8df643-d167-4f22-bb7b-512e3fdbb275"
+  l_63_0[l_63_1] = true
+  l_63_1 = "46449c61-d6a2-45fa-8851-5fa8a46d5ed2"
+  l_63_0[l_63_1] = true
+  l_63_1 = "40222833-e511-47af-9324-40c4531ba777"
+  l_63_0[l_63_1] = true
+  l_63_1 = "6d219195-ecf9-401b-9892-3568b7ee1833"
+  l_63_0[l_63_1] = true
+  l_63_1 = "27d074db-bf2f-4c3d-a19d-498603494a51"
+  l_63_0[l_63_1] = true
+  l_63_1 = "e0c103d7-e635-4e0e-b800-9b31892842f4"
+  l_63_0[l_63_1] = true
+  l_63_1 = "e9323610-6354-4b09-a4aa-2307494bba43"
+  l_63_0[l_63_1] = true
+  l_63_1 = "0e2eb614-0a43-4328-9264-41c261c891b6"
+  l_63_0[l_63_1] = true
+  l_63_1 = versioning
+  l_63_1 = l_63_1.GetOrgID
+  l_63_1 = l_63_1()
+  local l_63_2 = false
+  if l_63_1 ~= nil and l_63_0[l_63_1] == true then
+    l_63_2 = true
   end
-  return l_63_3, l_63_2
+  return l_63_2, l_63_1
 end
 
-isLolbinFile = function(l_64_0)
+isLolbinFilename = function(l_64_0)
   -- function num : 0_63
+  local l_64_1 = {}
+  l_64_1["cmd.exe"] = true
+  l_64_1["powershell.exe"] = true
+  l_64_1["wscript.exe"] = true
+  l_64_1["cscript.exe"] = true
+  l_64_1["mshta.exe"] = true
+  l_64_1["wmic.exe"] = true
+  l_64_1["bitsadmin.exe"] = true
+  local l_64_2 = (string.match)(l_64_0, "([^\\]+)$")
+  local l_64_3 = false
+  if l_64_1[l_64_2] then
+    l_64_3 = true
+  end
+  return l_64_3, l_64_2
+end
+
+isLolbinFile = function(l_65_0)
+  -- function num : 0_64
   do
-    local l_64_1 = {}
+    local l_65_1 = {}
     -- DECOMPILER ERROR at PC17: No list found for R1 , SetList fails
 
     -- DECOMPILER ERROR at PC18: Overwrote pending register: R2 in 'AssignReg'
 
     -- DECOMPILER ERROR at PC19: Overwrote pending register: R3 in 'AssignReg'
 
-    for l_64_5,l_64_6 in ("\\system32\\cmd.exe")("\\system32\\windowspowershell\\v1.0\\powershell.exe") do
+    for l_65_5,l_65_6 in ("\\system32\\cmd.exe")("\\system32\\windowspowershell\\v1.0\\powershell.exe") do
       -- DECOMPILER ERROR at PC22: Overwrote pending register: R7 in 'AssignReg'
 
       -- DECOMPILER ERROR at PC24: Overwrote pending register: R8 in 'AssignReg'
 
       -- DECOMPILER ERROR at PC25: Overwrote pending register: R9 in 'AssignReg'
 
-      if (("\\system32\\wbem\\wmic.exe").sub)("\\system32\\bitsadmin.exe", -"\\system32\\mshta.exe") == l_64_6 then
+      if (("\\system32\\wbem\\wmic.exe").sub)("\\system32\\bitsadmin.exe", -"\\system32\\mshta.exe") == l_65_6 then
         return true
       end
     end
@@ -1710,25 +1722,25 @@ isLolbinFile = function(l_64_0)
   end
 end
 
-TrackCommandLineAndTechniqueMain = function(l_65_0, l_65_1, l_65_2, l_65_3)
-  -- function num : 0_64
-  validateTechnique = function(l_66_0)
-    -- function num : 0_64_0
-    if l_66_0 == nil or #l_66_0 <= 3 then
+TrackCommandLineAndTechniqueMain = function(l_66_0, l_66_1, l_66_2, l_66_3)
+  -- function num : 0_65
+  validateTechnique = function(l_67_0)
+    -- function num : 0_65_0
+    if l_67_0 == nil or #l_67_0 <= 3 then
       return 
     end
-    local l_66_1 = (string.lower)(l_66_0)
-    local l_66_2 = "bm_m"
-    if (string.sub)(l_66_1, 1, 1) == "t" then
-      return l_66_0
+    local l_67_1 = (string.lower)(l_67_0)
+    local l_67_2 = "bm_m"
+    if (string.sub)(l_67_1, 1, 1) == "t" then
+      return l_67_0
     else
-      if (string.sub)(l_66_1, 1, #l_66_2) == l_66_2 then
-        local l_66_3 = string.sub
-        local l_66_4 = l_66_0
-        local l_66_5 = #l_66_2 + 1
+      if (string.sub)(l_67_1, 1, #l_67_2) == l_67_2 then
+        local l_67_3 = string.sub
+        local l_67_4 = l_67_0
+        local l_67_5 = #l_67_2 + 1
         do
-          local l_66_6 = #l_66_0
-          do return l_66_3(l_66_4, l_66_5, l_66_6) end
+          local l_67_6 = #l_67_0
+          do return l_67_3(l_67_4, l_67_5, l_67_6) end
           -- DECOMPILER ERROR at PC37: Confused about usage of register R4 for local variables in 'ReleaseLocals'
 
           do return  end
@@ -1739,136 +1751,136 @@ TrackCommandLineAndTechniqueMain = function(l_65_0, l_65_1, l_65_2, l_65_3)
     end
   end
 
-  if l_65_0 == nil or type(l_65_0) ~= "string" or #l_65_0 <= 1 or l_65_1 == nil then
+  if l_66_0 == nil or type(l_66_0) ~= "string" or #l_66_0 <= 1 or l_66_1 == nil then
     return 
   end
-  if l_65_2 == nil then
-    l_65_2 = 0
+  if l_66_2 == nil then
+    l_66_2 = 0
   end
-  local l_65_4 = "CommandLineCustomHash"
-  if l_65_3 ~= nil then
-    l_65_4 = l_65_3
+  local l_66_4 = "CommandLineCustomHash"
+  if l_66_3 ~= nil then
+    l_66_4 = l_66_3
   end
-  local l_65_5 = getCustomStringHash(l_65_0)
-  if l_65_5 == nil then
+  local l_66_5 = getCustomStringHash(l_66_0)
+  if l_66_5 == nil then
     return 
   end
-  local l_65_6 = l_65_4 .. ":" .. l_65_5
-  local l_65_7 = false
-  if type(l_65_1) == "string" then
-    local l_65_8 = validateTechnique(l_65_1)
-    if l_65_8 ~= nil then
-      (MpCommon.AppendPersistContextNoPath)(l_65_6, l_65_8, l_65_2)
-      l_65_7 = true
+  local l_66_6 = l_66_4 .. ":" .. l_66_5
+  local l_66_7 = false
+  if type(l_66_1) == "string" then
+    local l_66_8 = validateTechnique(l_66_1)
+    if l_66_8 ~= nil then
+      (MpCommon.AppendPersistContextNoPath)(l_66_6, l_66_8, l_66_2)
+      l_66_7 = true
     end
   else
     do
-      if type(l_65_1) == "table" then
-        for l_65_12,l_65_13 in ipairs(l_65_1) do
-          local l_65_14 = validateTechnique(l_65_13)
-          if l_65_14 ~= nil then
-            (MpCommon.AppendPersistContextNoPath)(l_65_6, l_65_14, l_65_2)
-            l_65_7 = true
+      if type(l_66_1) == "table" then
+        for l_66_12,l_66_13 in ipairs(l_66_1) do
+          local l_66_14 = validateTechnique(l_66_13)
+          if l_66_14 ~= nil then
+            (MpCommon.AppendPersistContextNoPath)(l_66_6, l_66_14, l_66_2)
+            l_66_7 = true
           end
         end
       end
       do
-        return l_65_7
+        return l_66_7
       end
     end
   end
 end
 
-TrackCommandLineAndTechnique = function(l_66_0, l_66_1, l_66_2, l_66_3, l_66_4)
-  -- function num : 0_65
-  if l_66_0 == nil or type(l_66_0) ~= "string" or #l_66_0 <= 1 or l_66_1 == nil then
+TrackCommandLineAndTechnique = function(l_67_0, l_67_1, l_67_2, l_67_3, l_67_4)
+  -- function num : 0_66
+  if l_67_0 == nil or type(l_67_0) ~= "string" or #l_67_0 <= 1 or l_67_1 == nil then
     return 
   end
-  if l_66_4 == nil then
-    l_66_4 = true
+  if l_67_4 == nil then
+    l_67_4 = true
   end
-  local l_66_5, l_66_6 = nil, nil
-  l_66_5 = TrackCommandLineAndTechniqueMain(l_66_0, l_66_1, l_66_2, l_66_3)
-  if l_66_5 == true then
-    TrackCommandLineAndTechniqueMain(l_66_0, "T0000:track_cmdline", l_66_2, l_66_3)
+  local l_67_5, l_67_6 = nil, nil
+  l_67_5 = TrackCommandLineAndTechniqueMain(l_67_0, l_67_1, l_67_2, l_67_3)
+  if l_67_5 == true then
+    TrackCommandLineAndTechniqueMain(l_67_0, "T0000:track_cmdline", l_67_2, l_67_3)
   end
-  local l_66_7, l_66_8 = resolve_mainbinary_from_commandline(l_66_0)
-  if l_66_4 == true and l_66_8 == true then
-    l_66_6 = TrackCommandLineAndTechniqueMain(l_66_7, l_66_1, l_66_2, l_66_3)
-    if l_66_6 == true then
-      TrackCommandLineAndTechniqueMain(l_66_7, "T0000:track_cmdline", l_66_2, l_66_3)
+  local l_67_7, l_67_8 = resolve_mainbinary_from_commandline(l_67_0)
+  if l_67_4 == true and l_67_8 == true then
+    l_67_6 = TrackCommandLineAndTechniqueMain(l_67_7, l_67_1, l_67_2, l_67_3)
+    if l_67_6 == true then
+      TrackCommandLineAndTechniqueMain(l_67_7, "T0000:track_cmdline", l_67_2, l_67_3)
     end
   end
-  return l_66_5, l_66_6
+  return l_67_5, l_67_6
 end
 
-resolve_command_fullpath = function(l_67_0)
-  -- function num : 0_66
-  if l_67_0 == nil or #l_67_0 <= 1 then
-    return 
-  end
-  local l_67_1 = {}
-  l_67_1.cmd = "%windir%\\system32\\cmd.exe"
-  l_67_1.powershell = "%windir%\\system32\\windowspowershell\\v1.0\\powershell.exe"
-  l_67_1.wscript = "%windir%\\system32\\wscript.exe"
-  l_67_1.cscript = "%windir%\\system32\\cscript.exe"
-  l_67_1.mshta = "%windir%\\system32\\mshta.exe"
-  l_67_1.wmic = "%windir%\\system32\\wbem\\wmic.exe"
-  l_67_1.bitsadmin = "%windir%\\system32\\bitsadmin.exe"
-  l_67_1.rundll32 = "%windir%\\system32\\rundll32.exe"
-  l_67_1.svchost = "%windir%\\system32\\svchost.exe"
-  l_67_1.services = "%windir%\\system32\\services.exe"
-  l_67_1.reg = "%windir%\\system32\\reg.exe"
-  l_67_1.regsvr32 = "%windir%\\system32\\regsvr32.exe"
-  l_67_1.regedit = "%windir%\\regedit.exe"
-  l_67_1.schtasks = "%windir%\\system32\\schtasks.exe"
-  l_67_1["%comspec%"] = "%windir%\\system32\\cmd.exe"
-  if #l_67_0 > 4 and (string.sub)(l_67_0, -4) == ".exe" then
-    l_67_0 = (string.sub)(l_67_0, 1, #l_67_0 - 4)
-  end
-  l_67_0 = (string.lower)(l_67_0)
-  local l_67_2 = l_67_1[l_67_0]
-  if l_67_2 ~= nil then
-    l_67_2 = (mp.ContextualExpandEnvironmentVariables)(l_67_2)
-  end
-  return l_67_2
-end
-
-resolve_mainbinary_from_commandline = function(l_68_0)
+resolve_command_fullpath = function(l_68_0)
   -- function num : 0_67
-  if l_68_0 == nil or #l_68_0 <= 4 or (string.sub)(l_68_0, 1, 2) == "\\\\" or (string.sub)(l_68_0, 2, 3) == ":\\" or (string.find)(l_68_0, " ", 1, true) == nil then
-    return l_68_0, false
+  if l_68_0 == nil or #l_68_0 <= 1 then
+    return 
   end
-  local l_68_1 = (string.match)(l_68_0, "^(.-)%s")
-  if l_68_1 == nil then
-    return l_68_0, false
+  local l_68_1 = {}
+  l_68_1.cmd = "%windir%\\system32\\cmd.exe"
+  l_68_1.powershell = "%windir%\\system32\\windowspowershell\\v1.0\\powershell.exe"
+  l_68_1.wscript = "%windir%\\system32\\wscript.exe"
+  l_68_1.cscript = "%windir%\\system32\\cscript.exe"
+  l_68_1.mshta = "%windir%\\system32\\mshta.exe"
+  l_68_1.wmic = "%windir%\\system32\\wbem\\wmic.exe"
+  l_68_1.bitsadmin = "%windir%\\system32\\bitsadmin.exe"
+  l_68_1.rundll32 = "%windir%\\system32\\rundll32.exe"
+  l_68_1.svchost = "%windir%\\system32\\svchost.exe"
+  l_68_1.services = "%windir%\\system32\\services.exe"
+  l_68_1.reg = "%windir%\\system32\\reg.exe"
+  l_68_1.regsvr32 = "%windir%\\system32\\regsvr32.exe"
+  l_68_1.regedit = "%windir%\\regedit.exe"
+  l_68_1.schtasks = "%windir%\\system32\\schtasks.exe"
+  l_68_1["%comspec%"] = "%windir%\\system32\\cmd.exe"
+  if #l_68_0 > 4 and (string.sub)(l_68_0, -4) == ".exe" then
+    l_68_0 = (string.sub)(l_68_0, 1, #l_68_0 - 4)
   end
-  local l_68_2 = resolve_command_fullpath(l_68_1)
-  if l_68_2 == nil then
-    return l_68_0, false
+  l_68_0 = (string.lower)(l_68_0)
+  local l_68_2 = l_68_1[l_68_0]
+  if l_68_2 ~= nil then
+    l_68_2 = (mp.ContextualExpandEnvironmentVariables)(l_68_2)
   end
-  local l_68_3 = l_68_2 .. (string.sub)(l_68_0, #l_68_1 + 1, #l_68_0)
-  return l_68_3, true
+  return l_68_2
 end
 
-GetTechniquesFromTrackedCommandLine = function(l_69_0, l_69_1)
+resolve_mainbinary_from_commandline = function(l_69_0)
   -- function num : 0_68
-  if l_69_0 == nil then
+  if l_69_0 == nil or #l_69_0 <= 4 or (string.sub)(l_69_0, 1, 2) == "\\\\" or (string.sub)(l_69_0, 2, 3) == ":\\" or (string.find)(l_69_0, " ", 1, true) == nil then
+    return l_69_0, false
+  end
+  local l_69_1 = (string.match)(l_69_0, "^(.-)%s")
+  if l_69_1 == nil then
+    return l_69_0, false
+  end
+  local l_69_2 = resolve_command_fullpath(l_69_1)
+  if l_69_2 == nil then
+    return l_69_0, false
+  end
+  local l_69_3 = l_69_2 .. (string.sub)(l_69_0, #l_69_1 + 1, #l_69_0)
+  return l_69_3, true
+end
+
+GetTechniquesFromTrackedCommandLine = function(l_70_0, l_70_1)
+  -- function num : 0_69
+  if l_70_0 == nil then
     return 
   end
-  local l_69_2 = "CommandLineCustomHash"
-  if l_69_1 ~= nil then
-    l_69_2 = l_69_1
+  local l_70_2 = "CommandLineCustomHash"
+  if l_70_1 ~= nil then
+    l_70_2 = l_70_1
   end
-  local l_69_3 = getCustomStringHash(l_69_0)
-  if l_69_3 == nil then
+  local l_70_3 = getCustomStringHash(l_70_0)
+  if l_70_3 == nil then
     return 
   end
-  local l_69_4 = l_69_2 .. ":" .. l_69_3
-  if (MpCommon.GetPersistContextCountNoPath)(l_69_4) >= 1 then
-    local l_69_5 = MpCommon.GetPersistContextNoPath
-    local l_69_6 = l_69_4
-    do return l_69_5(l_69_6) end
+  local l_70_4 = l_70_2 .. ":" .. l_70_3
+  if (MpCommon.GetPersistContextCountNoPath)(l_70_4) >= 1 then
+    local l_70_5 = MpCommon.GetPersistContextNoPath
+    local l_70_6 = l_70_4
+    do return l_70_5(l_70_6) end
     -- DECOMPILER ERROR at PC28: Confused about usage of register R6 for local variables in 'ReleaseLocals'
 
   end
@@ -1877,68 +1889,68 @@ GetTechniquesFromTrackedCommandLine = function(l_69_0, l_69_1)
 
 end
 
-IsCommandLineTracked = function(l_70_0, l_70_1, l_70_2)
-  -- function num : 0_69
-  if l_70_0 == nil then
+IsCommandLineTracked = function(l_71_0, l_71_1, l_71_2)
+  -- function num : 0_70
+  if l_71_0 == nil then
     return 
   end
-  if l_70_2 == nil then
-    l_70_2 = true
+  if l_71_2 == nil then
+    l_71_2 = true
   end
-  local l_70_3 = GetTechniquesFromTrackedCommandLine(l_70_0, l_70_1)
-  if l_70_3 ~= nil then
-    return true, l_70_3, l_70_0
+  local l_71_3 = GetTechniquesFromTrackedCommandLine(l_71_0, l_71_1)
+  if l_71_3 ~= nil then
+    return true, l_71_3, l_71_0
   end
-  local l_70_4, l_70_5 = resolve_mainbinary_from_commandline(l_70_0)
+  local l_71_4, l_71_5 = resolve_mainbinary_from_commandline(l_71_0)
   do
-    if l_70_2 == true and l_70_5 == true then
-      local l_70_6 = GetTechniquesFromTrackedCommandLine(l_70_4, l_70_1)
-      if l_70_6 ~= nil then
-        return true, l_70_6, l_70_4
+    if l_71_2 == true and l_71_5 == true then
+      local l_71_6 = GetTechniquesFromTrackedCommandLine(l_71_4, l_71_1)
+      if l_71_6 ~= nil then
+        return true, l_71_6, l_71_4
       end
     end
     return false
   end
 end
 
-IsCommandLineTrackedForTechnique = function(l_71_0, l_71_1, l_71_2, l_71_3)
-  -- function num : 0_70
-  FindStringInTable = function(l_72_0, l_72_1)
-    -- function num : 0_70_0
-    if l_72_0 == nil or l_72_1 == nil or type(l_72_1) ~= "table" then
+IsCommandLineTrackedForTechnique = function(l_72_0, l_72_1, l_72_2, l_72_3)
+  -- function num : 0_71
+  FindStringInTable = function(l_73_0, l_73_1)
+    -- function num : 0_71_0
+    if l_73_0 == nil or l_73_1 == nil or type(l_73_1) ~= "table" then
       return 
     end
-    local l_72_2 = (string.lower)(l_72_0)
-    for l_72_6,l_72_7 in ipairs(l_72_1) do
-      local l_72_8 = (string.lower)(l_72_7)
-      if (string.find)(l_72_8, l_72_2, 1, true) then
-        return true, l_72_7
+    local l_73_2 = (string.lower)(l_73_0)
+    for l_73_6,l_73_7 in ipairs(l_73_1) do
+      local l_73_8 = (string.lower)(l_73_7)
+      if (string.find)(l_73_8, l_73_2, 1, true) then
+        return true, l_73_7
       end
     end
     return false
   end
 
-  if l_71_0 == nil or l_71_1 == nil then
+  if l_72_0 == nil or l_72_1 == nil then
     return 
   end
-  if l_71_3 == nil then
-    l_71_3 = true
+  if l_72_3 == nil then
+    l_72_3 = true
   end
-  local l_71_4 = GetTechniquesFromTrackedCommandLine(l_71_0, l_71_2)
+  local l_72_4 = GetTechniquesFromTrackedCommandLine(l_72_0, l_72_2)
   do
-    if l_71_4 ~= nil then
-      local l_71_5, l_71_6 = FindStringInTable(l_71_1, l_71_4)
-      if l_71_5 == true then
-        return true, l_71_6, l_71_0
+    if l_72_4 ~= nil then
+      local l_72_5, l_72_6 = FindStringInTable(l_72_1, l_72_4)
+      if l_72_5 == true then
+        return true, l_72_6, l_72_0
       end
     end
-    local l_71_7, l_71_8 = resolve_mainbinary_from_commandline(l_71_0)
-    if l_71_3 == true and l_71_8 == true then
-      local l_71_9 = GetTechniquesFromTrackedCommandLine(l_71_7, l_71_2)
-      if l_71_9 ~= nil then
-        local l_71_10, l_71_11 = FindStringInTable(l_71_1, l_71_9)
-        if l_71_10 == true then
-          return true, l_71_11, l_71_7
+    local l_72_7, l_72_8 = resolve_mainbinary_from_commandline(l_72_0)
+    if l_72_3 == true and l_72_8 == true then
+      local l_72_9 = GetTechniquesFromTrackedCommandLine(l_72_7, l_72_2)
+      if l_72_9 ~= nil then
+        local l_72_10, l_72_11 = FindStringInTable(l_72_1, l_72_9)
+        if l_72_10 == true then
+          return true, l_72_11, l_72_7
         end
       end
     end
@@ -1948,103 +1960,103 @@ IsCommandLineTrackedForTechnique = function(l_71_0, l_71_1, l_71_2, l_71_3)
   end
 end
 
-table_distinct_values = function(l_72_0)
-  -- function num : 0_71
-  if l_72_0 == nil or #l_72_0 == nil or #l_72_0 <= 1 then
-    return l_72_0
-  end
-  local l_72_1 = {}
-  ;
-  (table.sort)(l_72_0)
-  for l_72_5,l_72_6 in ipairs(l_72_0) do
-    if l_72_6 ~= l_72_0[l_72_5 + 1] then
-      (table.insert)(l_72_1, l_72_6)
-    end
-  end
-  return l_72_1
-end
-
-get_filepaths_from_string = function(l_73_0)
+table_distinct_values = function(l_73_0)
   -- function num : 0_72
-  if l_73_0 == nil or type(l_73_0) ~= "string" or #l_73_0 <= 3 then
-    return 
+  if l_73_0 == nil or #l_73_0 == nil or #l_73_0 <= 1 then
+    return l_73_0
   end
-  local l_73_1 = (mp.GetExecutablesFromCommandLine)(l_73_0)
-  if l_73_1 == nil or type(l_73_1) ~= "table" then
-    l_73_1 = {}
-  end
-  local l_73_2 = (string.gmatch)(l_73_0, "(.:\\.-%.[a-z]+)")
-  for l_73_6 in l_73_2 do
-    (table.insert)(l_73_1, l_73_6)
-  end
-  local l_73_7 = (string.gmatch)(l_73_0, "(%%.-%.[a-z]+)")
-  for l_73_11 in l_73_7 do
-    local l_73_12 = (mp.ContextualExpandEnvironmentVariables)(l_73_11)
-    if l_73_12 ~= nil then
-      (table.insert)(l_73_1, l_73_12)
-    end
-  end
-  local l_73_13 = (string.gmatch)(l_73_0, "[%s,]?(.-%.%a%a%a?)[%s,]?")
-  local l_73_14 = (MpCommon.ExpandEnvironmentVariables)("%windir%")
-  for l_73_18 in l_73_13 do
-    if (string.find)(l_73_18, "\\", 1, true) == nil then
-      local l_73_19 = l_73_14 .. "\\system32\\" .. l_73_18
-      ;
-      (table.insert)(l_73_1, l_73_19)
-      local l_73_20 = l_73_14 .. "\\" .. l_73_18
-      ;
-      (table.insert)(l_73_1, l_73_20)
-      local l_73_21 = l_73_14 .. "\\system32\\wbem\\" .. l_73_18
-      ;
-      (table.insert)(l_73_1, l_73_21)
-      local l_73_22 = l_73_14 .. "\\system32\\windowspowershell\\v1.0\\" .. l_73_18
-      ;
-      (table.insert)(l_73_1, l_73_22)
+  local l_73_1 = {}
+  ;
+  (table.sort)(l_73_0)
+  for l_73_5,l_73_6 in ipairs(l_73_0) do
+    if l_73_6 ~= l_73_0[l_73_5 + 1] then
+      (table.insert)(l_73_1, l_73_6)
     end
   end
   return l_73_1
 end
 
-IsProcNameInParentProcessTree = function(l_74_0, l_74_1, l_74_2)
+get_filepaths_from_string = function(l_74_0)
   -- function num : 0_73
-  if l_74_0 == nil or l_74_1 == nil then
+  if l_74_0 == nil or type(l_74_0) ~= "string" or #l_74_0 <= 3 then
     return 
   end
-  local l_74_3 = l_74_0
-  if l_74_0:sub(1, 4) ~= "pid:" then
-    l_74_0 = GetProcessPpidByScenario(l_74_0)
+  local l_74_1 = (mp.GetExecutablesFromCommandLine)(l_74_0)
+  if l_74_1 == nil or type(l_74_1) ~= "table" then
+    l_74_1 = {}
   end
-  if l_74_0 == nil then
+  local l_74_2 = (string.gmatch)(l_74_0, "(.:\\.-%.[a-z]+)")
+  for l_74_6 in l_74_2 do
+    (table.insert)(l_74_1, l_74_6)
+  end
+  local l_74_7 = (string.gmatch)(l_74_0, "(%%.-%.[a-z]+)")
+  for l_74_11 in l_74_7 do
+    local l_74_12 = (mp.ContextualExpandEnvironmentVariables)(l_74_11)
+    if l_74_12 ~= nil then
+      (table.insert)(l_74_1, l_74_12)
+    end
+  end
+  local l_74_13 = (string.gmatch)(l_74_0, "[%s,]?(.-%.%a%a%a?)[%s,]?")
+  local l_74_14 = (MpCommon.ExpandEnvironmentVariables)("%windir%")
+  for l_74_18 in l_74_13 do
+    if (string.find)(l_74_18, "\\", 1, true) == nil then
+      local l_74_19 = l_74_14 .. "\\system32\\" .. l_74_18
+      ;
+      (table.insert)(l_74_1, l_74_19)
+      local l_74_20 = l_74_14 .. "\\" .. l_74_18
+      ;
+      (table.insert)(l_74_1, l_74_20)
+      local l_74_21 = l_74_14 .. "\\system32\\wbem\\" .. l_74_18
+      ;
+      (table.insert)(l_74_1, l_74_21)
+      local l_74_22 = l_74_14 .. "\\system32\\windowspowershell\\v1.0\\" .. l_74_18
+      ;
+      (table.insert)(l_74_1, l_74_22)
+    end
+  end
+  return l_74_1
+end
+
+IsProcNameInParentProcessTree = function(l_75_0, l_75_1, l_75_2)
+  -- function num : 0_74
+  if l_75_0 == nil or l_75_1 == nil then
+    return 
+  end
+  local l_75_3 = l_75_0
+  if l_75_0:sub(1, 4) ~= "pid:" then
+    l_75_0 = GetProcessPpidByScenario(l_75_0)
+  end
+  if l_75_0 == nil then
     return nil
   end
-  if l_74_2 == nil then
-    l_74_2 = 5
+  if l_75_2 == nil then
+    l_75_2 = 5
   end
-  local l_74_4 = l_74_0
-  for l_74_8 = 1, l_74_2 do
-    local l_74_9 = (mp.GetParentProcInfo)(l_74_4)
-    if l_74_8 == 1 and (string.lower)(l_74_3) == "cmdhstr" then
-      l_74_9 = (mp.GetParentProcInfo)()
+  local l_75_4 = l_75_0
+  for l_75_8 = 1, l_75_2 do
+    local l_75_9 = (mp.GetParentProcInfo)(l_75_4)
+    if l_75_8 == 1 and (string.lower)(l_75_3) == "cmdhstr" then
+      l_75_9 = (mp.GetParentProcInfo)()
     end
-    if l_74_9 == nil then
+    if l_75_9 == nil then
       break
     end
-    l_74_4 = l_74_9.ppid
-    if l_74_4 == nil then
+    l_75_4 = l_75_9.ppid
+    if l_75_4 == nil then
       break
     end
-    if l_74_9.image_path ~= nil then
-      local l_74_10 = (string.lower)(l_74_9.image_path)
+    if l_75_9.image_path ~= nil then
+      local l_75_10 = (string.lower)(l_75_9.image_path)
       -- DECOMPILER ERROR at PC76: Unhandled construct in 'MakeBoolean' P1
 
-      if type(l_74_1) == "string" and (string.sub)(l_74_10, -#l_74_1) == l_74_1 then
-        return true, l_74_4, l_74_10, l_74_1, l_74_8
+      if type(l_75_1) == "string" and (string.sub)(l_75_10, -#l_75_1) == l_75_1 then
+        return true, l_75_4, l_75_10, l_75_1, l_75_8
       end
     end
-    if type(l_74_1) == "table" then
-      for l_74_14,l_74_15 in ipairs(l_74_1) do
-        if (string.sub)(l_74_10, -#l_74_15) == l_74_15 then
-          return true, l_74_4, l_74_10, l_74_15, l_74_8
+    if type(l_75_1) == "table" then
+      for l_75_14,l_75_15 in ipairs(l_75_1) do
+        if (string.sub)(l_75_10, -#l_75_15) == l_75_15 then
+          return true, l_75_4, l_75_10, l_75_15, l_75_8
         end
       end
     end
@@ -2056,202 +2068,202 @@ IsProcNameInParentProcessTree = function(l_74_0, l_74_1, l_74_2)
   end
 end
 
-IsExcludedHostCheck = function(l_75_0)
-  -- function num : 0_74
-  if l_75_0 == nil or l_75_0 == "" then
+IsExcludedHostCheck = function(l_76_0)
+  -- function num : 0_75
+  if l_76_0 == nil or l_76_0 == "" then
     return true
   end
-  l_75_0 = l_75_0:lower()
-  local l_75_1 = {}
-  l_75_1["encrypted-tbn0.gstatic.com"] = true
-  l_75_1["img.freepik.com"] = true
-  l_75_1["api.engage.cloud.microsoft"] = true
-  l_75_1["image.shutterstock.com"] = true
-  l_75_1["cdn-icons-png.flaticon.com"] = true
-  l_75_1["loop.cloud.microsoft"] = true
-  l_75_1[";lanmanredirector"] = true
-  l_75_1["login.microsoftonline.com"] = true
-  l_75_1["login.live.com"] = true
-  l_75_1["about:internet"] = true
-  l_75_1["google.com"] = true
-  return l_75_1[l_75_0]
+  l_76_0 = l_76_0:lower()
+  local l_76_1 = {}
+  l_76_1["encrypted-tbn0.gstatic.com"] = true
+  l_76_1["img.freepik.com"] = true
+  l_76_1["api.engage.cloud.microsoft"] = true
+  l_76_1["image.shutterstock.com"] = true
+  l_76_1["cdn-icons-png.flaticon.com"] = true
+  l_76_1["loop.cloud.microsoft"] = true
+  l_76_1[";lanmanredirector"] = true
+  l_76_1["login.microsoftonline.com"] = true
+  l_76_1["login.live.com"] = true
+  l_76_1["about:internet"] = true
+  l_76_1["google.com"] = true
+  return l_76_1[l_76_0]
 end
 
-TrackAttackerServer = function(l_76_0, l_76_1)
-  -- function num : 0_75
-  if not l_76_1 then
-    l_76_1 = 3600
+TrackAttackerServer = function(l_77_0, l_77_1)
+  -- function num : 0_76
+  if not l_77_1 then
+    l_77_1 = 3600
   end
-  local l_76_2 = ExtractPartsFromUri(l_76_0)
-  if l_76_2.host and l_76_2.host ~= "" then
-    if GetRollingQueueKeyValue("SuspAttackServer", l_76_2.host) == nil then
-      local l_76_3 = tostring(l_76_2.path)
+  local l_77_2 = ExtractPartsFromUri(l_77_0)
+  if l_77_2.host and l_77_2.host ~= "" then
+    if GetRollingQueueKeyValue("SuspAttackServer", l_77_2.host) == nil then
+      local l_77_3 = tostring(l_77_2.path)
     else
       do
         -- DECOMPILER ERROR at PC23: Confused about usage of register: R3 in 'UnsetPending'
 
         do
-          local l_76_4, l_76_5 = l_76_3 .. "|" .. tostring(l_76_2.path)
+          local l_77_4, l_77_5 = l_77_3 .. "|" .. tostring(l_77_2.path)
           -- DECOMPILER ERROR at PC32: Confused about usage of register: R3 in 'UnsetPending'
 
-          AppendToRollingQueue("SuspAttackServer", l_76_2.host, l_76_4, 3600)
+          AppendToRollingQueue("SuspAttackServer", l_77_2.host, l_77_4, 3600)
         end
       end
     end
   end
 end
 
-IsHostAttackServerCloudChk = function(l_77_0, l_77_1, l_77_2, l_77_3, l_77_4)
-  -- function num : 0_76
-  if not l_77_0 then
+IsHostAttackServerCloudChk = function(l_78_0, l_78_1, l_78_2, l_78_3, l_78_4)
+  -- function num : 0_77
+  if not l_78_0 then
     return false
   end
-  local l_77_5 = ExtractPartsFromUri(l_77_0)
-  if l_77_5.host and l_77_5.host ~= "" then
-    l_77_0 = l_77_5.host
+  local l_78_5 = ExtractPartsFromUri(l_78_0)
+  if l_78_5.host and l_78_5.host ~= "" then
+    l_78_0 = l_78_5.host
   end
-  if IsKeyInRollingQueue("CleanHostCache", l_77_0) then
+  if IsKeyInRollingQueue("CleanHostCache", l_78_0) then
     return false
   end
-  if IsExcludedHostCheck(l_77_0) then
+  if IsExcludedHostCheck(l_78_0) then
     return false
   end
-  local l_77_6 = IsKeyInRollingQueue("SuspAttackServer", l_77_5.host, false)
-  if l_77_6 then
-    return l_77_6
+  local l_78_6 = IsKeyInRollingQueue("SuspAttackServer", l_78_5.host, false)
+  if l_78_6 then
+    return l_78_6
   end
-  local l_77_7 = {}
-  l_77_7.SIG_CONTEXT = "ATTACKSERVER"
-  l_77_7.TAG = "NOLOOKUP"
-  if l_77_1 ~= nil and l_77_1 ~= "" then
-    l_77_7.CONTENT_SOURCE = l_77_1
+  local l_78_7 = {}
+  l_78_7.SIG_CONTEXT = "ATTACKSERVER"
+  l_78_7.TAG = "NOLOOKUP"
+  if l_78_1 ~= nil and l_78_1 ~= "" then
+    l_78_7.CONTENT_SOURCE = l_78_1
   end
-  if l_77_2 ~= nil and l_77_2 ~= "" then
-    l_77_7.PROCESS_CONTEXT = l_77_2
+  if l_78_2 ~= nil and l_78_2 ~= "" then
+    l_78_7.PROCESS_CONTEXT = l_78_2
   end
-  if l_77_3 ~= nil and l_77_3 ~= "" then
-    l_77_7.PROCESS_CMDLINE = l_77_3
+  if l_78_3 ~= nil and l_78_3 ~= "" then
+    l_78_7.PROCESS_CMDLINE = l_78_3
   end
-  if l_77_4 ~= nil and l_77_4 ~= "" then
-    l_77_7.SCENARIO = l_77_4
+  if l_78_4 ~= nil and l_78_4 ~= "" then
+    l_78_7.SCENARIO = l_78_4
   end
-  local l_77_8 = SafeGetUrlReputation
-  local l_77_9 = {}
+  local l_78_8 = SafeGetUrlReputation
+  local l_78_9 = {}
   -- DECOMPILER ERROR at PC63: No list found for R9 , SetList fails
 
   -- DECOMPILER ERROR at PC64: Overwrote pending register: R10 in 'AssignReg'
 
-  l_77_8 = l_77_8(l_77_9, l_77_0, false, 2000)
-  l_77_9 = l_77_8.urls
-  l_77_9 = l_77_9[l_77_0]
-  if l_77_9 then
-    l_77_9 = l_77_8.urls
-    l_77_9 = l_77_9[l_77_0]
-    l_77_9 = l_77_9.determination
-    if l_77_9 == 2 then
-      l_77_9 = TrackAttackerServer
-      l_77_9(l_77_0)
-      l_77_9 = true
-      return l_77_9
+  l_78_8 = l_78_8(l_78_9, l_78_0, false, 2000)
+  l_78_9 = l_78_8.urls
+  l_78_9 = l_78_9[l_78_0]
+  if l_78_9 then
+    l_78_9 = l_78_8.urls
+    l_78_9 = l_78_9[l_78_0]
+    l_78_9 = l_78_9.determination
+    if l_78_9 == 2 then
+      l_78_9 = TrackAttackerServer
+      l_78_9(l_78_0)
+      l_78_9 = true
+      return l_78_9
     else
-      l_77_9 = AppendToRollingQueue
-      l_77_9("CleanHostCache", l_77_0, true, 36000)
+      l_78_9 = AppendToRollingQueue
+      l_78_9("CleanHostCache", l_78_0, true, 36000)
     end
-    l_77_9 = false
-    return l_77_9
+    l_78_9 = false
+    return l_78_9
   end
 end
 
-IsHostAttackServer = function(l_78_0, l_78_1)
-  -- function num : 0_77
-  local l_78_2 = false
-  if not l_78_1 then
-    l_78_1 = false
+IsHostAttackServer = function(l_79_0, l_79_1)
+  -- function num : 0_78
+  local l_79_2 = false
+  if not l_79_1 then
+    l_79_1 = false
   end
-  local l_78_3 = ExtractPartsFromUri(l_78_0)
-  if l_78_3.host and l_78_3.host ~= "" then
-    if not l_78_1 then
-      l_78_1 = false
+  local l_79_3 = ExtractPartsFromUri(l_79_0)
+  if l_79_3.host and l_79_3.host ~= "" then
+    if not l_79_1 then
+      l_79_1 = false
     end
-    if IsExcludedHostCheck(l_78_3.host) then
+    if IsExcludedHostCheck(l_79_3.host) then
       return false
     end
-    l_78_2 = IsKeyInRollingQueue("SuspAttackServer", l_78_3.host, l_78_1)
-    return l_78_2
+    l_79_2 = IsKeyInRollingQueue("SuspAttackServer", l_79_3.host, l_79_1)
+    return l_79_2
   end
   return false
 end
 
-IsDiscoveryCollectionThresholdMetLinux = function(l_79_0)
-  -- function num : 0_78
-  if l_79_0 == nil then
+IsDiscoveryCollectionThresholdMetLinux = function(l_80_0)
+  -- function num : 0_79
+  if l_80_0 == nil then
     return false
   end
   do
-    if ((((((((((((((IsTechniqueObservedForPid(l_79_0, "T1057") or IsTacticObservedForPid(l_79_0, "Discovery_Process")) and IsTechniqueObservedForPid(l_79_0, "T1552")) or IsTacticObservedForPid(l_79_0, "CredentialAccess")) and IsTechniqueObservedForPid(l_79_0, "T1083")) or IsTacticObservedForPid(l_79_0, "Discovery_FileAndDirectoryDiscovery")) and IsTechniqueObservedForPid(l_79_0, "T1074")) or IsTacticObservedForPid(l_79_0, "Collection_DataStaged")) and IsTechniqueObservedForPid(l_79_0, "T1049")) or IsTacticObservedForPid(l_79_0, "Discovery_NetworkConnectionsDiscovery")) and IsTechniqueObservedForPid(l_79_0, "T1033")) or IsTacticObservedForPid(l_79_0, "Discovery_SystemOwnerUserDiscovery")) and IsTechniqueObservedForPid(l_79_0, "T1518")) or IsTacticObservedForPid(l_79_0, "Discovery_SoftwareDiscovery")) and IsTechniqueObservedForPid(l_79_0, "T1082")) or IsTacticObservedForPid(l_79_0, "Discovery_SystemInfoDiscovery") then
-      local l_79_1 = 0 + 15 + 16 + 15 + 15 + 15 + 8 + 8 + 8
+    if ((((((((((((((IsTechniqueObservedForPid(l_80_0, "T1057") or IsTacticObservedForPid(l_80_0, "Discovery_Process")) and IsTechniqueObservedForPid(l_80_0, "T1552")) or IsTacticObservedForPid(l_80_0, "CredentialAccess")) and IsTechniqueObservedForPid(l_80_0, "T1083")) or IsTacticObservedForPid(l_80_0, "Discovery_FileAndDirectoryDiscovery")) and IsTechniqueObservedForPid(l_80_0, "T1074")) or IsTacticObservedForPid(l_80_0, "Collection_DataStaged")) and IsTechniqueObservedForPid(l_80_0, "T1049")) or IsTacticObservedForPid(l_80_0, "Discovery_NetworkConnectionsDiscovery")) and IsTechniqueObservedForPid(l_80_0, "T1033")) or IsTacticObservedForPid(l_80_0, "Discovery_SystemOwnerUserDiscovery")) and IsTechniqueObservedForPid(l_80_0, "T1518")) or IsTacticObservedForPid(l_80_0, "Discovery_SoftwareDiscovery")) and IsTechniqueObservedForPid(l_80_0, "T1082")) or IsTacticObservedForPid(l_80_0, "Discovery_SystemInfoDiscovery") then
+      local l_80_1 = 0 + 15 + 16 + 15 + 15 + 15 + 8 + 8 + 8
     end
     -- DECOMPILER ERROR at PC111: Confused about usage of register: R1 in 'UnsetPending'
 
     -- DECOMPILER ERROR at PC113: Confused about usage of register: R1 in 'UnsetPending'
 
-    if 45 <= l_79_1 and l_79_1 <= 100 then
+    if 45 <= l_80_1 and l_80_1 <= 100 then
       return true
     end
     return false
   end
 end
 
-IsDetectionThresholdMetLinuxWrapper = function(l_80_0, l_80_1, l_80_2, l_80_3, l_80_4)
-  -- function num : 0_79
-  local l_80_5 = 0
-  local l_80_6 = true
-  local l_80_7 = nil
-  if IsDetectionThresholdMetLinux(l_80_0) then
+IsDetectionThresholdMetLinuxWrapper = function(l_81_0, l_81_1, l_81_2, l_81_3, l_81_4)
+  -- function num : 0_80
+  local l_81_5 = 0
+  local l_81_6 = true
+  local l_81_7 = nil
+  if IsDetectionThresholdMetLinux(l_81_0) then
     return true
   end
-  if l_80_6 then
-    local l_80_8 = GetTacticsTableForPid(l_80_0)
-    local l_80_9 = GetTechniquesTableForPid(l_80_0)
-    if l_80_8 == nil or l_80_9 == nil then
+  if l_81_6 then
+    local l_81_8 = GetTacticsTableForPid(l_81_0)
+    local l_81_9 = GetTechniquesTableForPid(l_81_0)
+    if l_81_8 == nil or l_81_9 == nil then
       return false
     end
-    for l_80_13,l_80_14 in pairs(l_80_8) do
-      if l_80_13 ~= nil then
-        if l_80_7 == nil then
-          l_80_7 = l_80_13:lower()
+    for l_81_13,l_81_14 in pairs(l_81_8) do
+      if l_81_13 ~= nil then
+        if l_81_7 == nil then
+          l_81_7 = l_81_13:lower()
         else
-          l_80_7 = l_80_7 .. " | " .. l_80_13:lower()
+          l_81_7 = l_81_7 .. " | " .. l_81_13:lower()
         end
       end
-      if l_80_14 ~= nil then
-        l_80_5 = l_80_5 + l_80_14
+      if l_81_14 ~= nil then
+        l_81_5 = l_81_5 + l_81_14
       end
     end
-    if l_80_7 ~= nil then
-      if l_80_7:find("collection", 1, true) and l_80_7:find("discovery", 1, true) and l_80_7:find("exfiltration", 1, true) then
+    if l_81_7 ~= nil then
+      if l_81_7:find("collection", 1, true) and l_81_7:find("discovery", 1, true) and l_81_7:find("exfiltration", 1, true) then
         return true
       end
-      if (l_80_7:find("initialaccess", 1, true) or l_80_7:find("collection", 1, true) or l_80_7:find("discovery", 1, true) or l_80_7:find("execution", 1, true) or l_80_7:find("credentialaccess", 1, true) or l_80_7:find("defenseevasion", 1, true) or l_80_7:find("lateralmovement", 1, true) or l_80_7:find("privilegeescalation", 1, true)) and l_80_7:find("persistence", 1, true) and (l_80_7:find("exfiltration", 1, true) or l_80_7:find("commandandcontrol", 1, true)) then
+      if (l_81_7:find("initialaccess", 1, true) or l_81_7:find("collection", 1, true) or l_81_7:find("discovery", 1, true) or l_81_7:find("execution", 1, true) or l_81_7:find("credentialaccess", 1, true) or l_81_7:find("defenseevasion", 1, true) or l_81_7:find("lateralmovement", 1, true) or l_81_7:find("privilegeescalation", 1, true)) and l_81_7:find("persistence", 1, true) and (l_81_7:find("exfiltration", 1, true) or l_81_7:find("commandandcontrol", 1, true)) then
         return true
       end
-      if ((not l_80_7:find("collection", 1, true) and not l_80_7:find("discovery", 1, true) and not l_80_7:find("execution", 1, true)) or (not l_80_7:find("credentialaccess", 1, true) and not l_80_7:find("defenseevasion", 1, true) and not l_80_7:find("lateralmovement", 1, true)) or (l_80_7:find("persistence", 1, true) or l_80_7:find("exfiltration", 1, true) or l_80_7:find("commandandcontrol", 1, true))) then
+      if ((not l_81_7:find("collection", 1, true) and not l_81_7:find("discovery", 1, true) and not l_81_7:find("execution", 1, true)) or (not l_81_7:find("credentialaccess", 1, true) and not l_81_7:find("defenseevasion", 1, true) and not l_81_7:find("lateralmovement", 1, true)) or (l_81_7:find("persistence", 1, true) or l_81_7:find("exfiltration", 1, true) or l_81_7:find("commandandcontrol", 1, true))) then
         return true
       end
-      if (l_80_7:find("initialaccess", 1, true) or l_80_7:find("collection", 1, true) or l_80_7:find("discovery", 1, true) or l_80_7:find("execution", 1, true) or l_80_7:find("credentialaccess", 1, true) or l_80_7:find("defenseevasion", 1, true) or l_80_7:find("lateralmovement", 1, true) or l_80_7:find("privilegeescalation", 1, true)) and l_80_7:find("exfiltration", 1, true) and l_80_7:find("commandandcontrol", 1, true) then
+      if (l_81_7:find("initialaccess", 1, true) or l_81_7:find("collection", 1, true) or l_81_7:find("discovery", 1, true) or l_81_7:find("execution", 1, true) or l_81_7:find("credentialaccess", 1, true) or l_81_7:find("defenseevasion", 1, true) or l_81_7:find("lateralmovement", 1, true) or l_81_7:find("privilegeescalation", 1, true)) and l_81_7:find("exfiltration", 1, true) and l_81_7:find("commandandcontrol", 1, true) then
         return true
       end
     end
     do
       do
-        if ((((((((((not l_80_7:find("initialaccess", 1, true) or l_80_7:find("execution", 1, true)) and not l_80_7:find("persistence", 1, true)) or l_80_7:find("privilegeescalation", 1, true)) and not l_80_7:find("defenseevasion", 1, true)) or l_80_7:find("credentialaccess", 1, true)) and not l_80_7:find("discovery", 1, true)) or l_80_7:find("lateralmovement", 1, true)) and not l_80_7:find("collection", 1, true)) or l_80_7:find("commandandcontrol", 1, true)) and not l_80_7:find("exfiltration", 1, true)) or l_80_7:find("impact", 1, true) then
-          local l_80_15 = 0 + 1 + 1 + 2 + 1 + 1 + 1 + 1 + 2 + 1 + 2 + 2 + 2
+        if ((((((((((not l_81_7:find("initialaccess", 1, true) or l_81_7:find("execution", 1, true)) and not l_81_7:find("persistence", 1, true)) or l_81_7:find("privilegeescalation", 1, true)) and not l_81_7:find("defenseevasion", 1, true)) or l_81_7:find("credentialaccess", 1, true)) and not l_81_7:find("discovery", 1, true)) or l_81_7:find("lateralmovement", 1, true)) and not l_81_7:find("collection", 1, true)) or l_81_7:find("commandandcontrol", 1, true)) and not l_81_7:find("exfiltration", 1, true)) or l_81_7:find("impact", 1, true) then
+          local l_81_15 = 0 + 1 + 1 + 2 + 1 + 1 + 1 + 1 + 2 + 1 + 2 + 2 + 2
         end
         -- DECOMPILER ERROR at PC386: Confused about usage of register: R10 in 'UnsetPending'
 
         -- DECOMPILER ERROR at PC388: Confused about usage of register: R10 in 'UnsetPending'
 
-        if 4 <= l_80_15 and l_80_15 <= 17 then
+        if 4 <= l_81_15 and l_81_15 <= 17 then
           return true
         end
         return false
@@ -2260,169 +2272,169 @@ IsDetectionThresholdMetLinuxWrapper = function(l_80_0, l_80_1, l_80_2, l_80_3, l
   end
 end
 
-TT_SendTechniqueIntents = function(l_81_0)
-  -- function num : 0_80
-  TT_SendBMSigTrigger(l_81_0, "send_ttdata", "send_ttdata", 30)
+TT_SendTechniqueIntents = function(l_82_0)
+  -- function num : 0_81
+  TT_SendBMSigTrigger(l_82_0, "send_ttdata", "send_ttdata", 30)
 end
 
-TT_IsProdCriticalService = function(l_82_0)
-  -- function num : 0_81
-  if l_82_0:find("veeam.backup", 1, true) or l_82_0:find("backupexec", 1, true) or l_82_0:find("netbackup", 1, true) then
+TT_IsProdCriticalService = function(l_83_0)
+  -- function num : 0_82
+  if l_83_0:find("veeam.backup", 1, true) or l_83_0:find("backupexec", 1, true) or l_83_0:find("netbackup", 1, true) then
     return true
   end
-  if l_82_0:find("msexchange", 1, true) or l_82_0:find("microsoft.exchange", 1, true) or l_82_0:find("acronis", 1, true) then
+  if l_83_0:find("msexchange", 1, true) or l_83_0:find("microsoft.exchange", 1, true) or l_83_0:find("acronis", 1, true) then
     return true
   end
-  if l_82_0:find("veeamenterprise", 1, true) or l_82_0:find("oracle", 1, true) or l_82_0:find("sqlagent", 1, true) then
+  if l_83_0:find("veeamenterprise", 1, true) or l_83_0:find("oracle", 1, true) or l_83_0:find("sqlagent", 1, true) then
     return true
   end
-  local l_82_1 = {}
-  l_82_1.acronisagent = true
-  l_82_1.acrsch2svc = true
-  l_82_1.avpsus = true
-  l_82_1["bmr boot service"] = true
-  l_82_1["bmr mtftp service"] = true
-  l_82_1.caarcupdatesvc = true
-  l_82_1.casad2dwebsvc = true
-  l_82_1.ccevtmgr = true
-  l_82_1.ccsetmgr = true
-  l_82_1.defwatch = true
-  l_82_1.dns = true
-  l_82_1.dnssvc = true
-  l_82_1.eventlog = true
-  l_82_1.gxblr = true
-  l_82_1.gxcimgr = true
-  l_82_1.gxcvd = true
-  l_82_1.gxfwd = true
-  l_82_1.gxvss = true
-  l_82_1.intuit = true
-  l_82_1["intuit.quickbooks.fcs"] = true
-  l_82_1.mcafeedlpagentservice = true
-  l_82_1.memtas = true
-  l_82_1.mepocs = true
-  l_82_1.mfewc = true
-  l_82_1.mpssvc = true
-  l_82_1["msdtc.exe"] = true
-  l_82_1.msdtc = true
-  l_82_1["msexchange transport logsearch"] = true
-  l_82_1.msexchangeantispamupdate = true
-  l_82_1.msexchangecompliance = true
-  l_82_1.msexchangedagmgmt = true
-  l_82_1.msexchangedelivery = true
-  l_82_1.msexchangediagnostics = true
-  l_82_1.msexchangeedgesync = true
-  l_82_1.msexchangefastsearch = true
-  l_82_1.msexchangefrontendtransport = true
-  l_82_1.msexchangehm = true
-  l_82_1.msexchangehmrecovery = true
-  l_82_1.msexchangeimap4 = true
-  l_82_1.msexchangeimap4be = true
-  l_82_1.msexchangeis = true
-  l_82_1.msexchangemailboxassistants = true
-  l_82_1.msexchangemailboxreplication = true
-  l_82_1.msexchangenotificationsbroker = true
-  l_82_1.msexchangepop3 = true
-  l_82_1.msexchangepop3be = true
-  l_82_1.msexchangerepl = true
-  l_82_1.msexchangerpc = true
-  l_82_1.msexchangeservicehost = true
-  l_82_1.msexchangesubmission = true
-  l_82_1.msexchangethrottling = true
-  l_82_1.msexchangetransport = true
-  l_82_1.msexchangeum = true
-  l_82_1.msexchangeumcr = true
-  l_82_1.msmpeng = true
-  l_82_1.mssense = true
-  l_82_1.mspub = true
-  l_82_1.mssqlserver = true
-  l_82_1.mssqlsvc = true
-  l_82_1.mysql = true
-  l_82_1.mysql80 = true
-  l_82_1.pdvfsservice = true
-  l_82_1.perfhost = true
-  l_82_1.pop3svc = true
-  l_82_1.profsvc = true
-  l_82_1.qbcfmonitorservice = true
-  l_82_1.qbfcservice = true
-  l_82_1.qbidpservice = true
-  l_82_1.rtvscan = true
-  l_82_1.samss = true
-  l_82_1["sacsvr.exe"] = true
-  l_82_1.savroam = true
-  l_82_1["savservice.exe"] = true
-  l_82_1.sdrsvc = true
-  l_82_1.sense = true
-  l_82_1.sophos = true
-  l_82_1.sql = true
-  l_82_1["sqlagent.exe"] = true
-  l_82_1["sqlbrowser.exe"] = true
-  l_82_1.sqlbrowser = true
-  l_82_1["sqlceip.exe"] = true
-  l_82_1.sqlserveragent = true
-  l_82_1["sqlservr.exe"] = true
-  l_82_1.sqltelemetry = true
-  l_82_1["sqlwriter.exe"] = true
-  l_82_1.sqlwriter = true
-  l_82_1.stc_raw_agent = true
-  l_82_1.usermanager = true
-  l_82_1.vboxdrv = true
-  l_82_1.vds = true
-  l_82_1["veeam.guest.interaction.proxy.exe"] = true
-  l_82_1.veeam = true
-  l_82_1.veeamcatalogsvc = true
-  l_82_1.veeamcloudsvc = true
-  l_82_1.veeamdeploymentservice = true
-  l_82_1["veeamdeploymentsvc.exe"] = true
-  l_82_1.veeamdeploysvc = true
-  l_82_1["veeamfilesysvsssvc.exe"] = true
-  l_82_1["veeamnfssvc.exe"] = true
-  l_82_1.veeamnfssvc = true
-  l_82_1["veeamtransportsvc.exe"] = true
-  l_82_1.veeamtransportsvc = true
-  l_82_1.vmcompute = true
-  l_82_1.vmms = true
-  l_82_1["vmwp.exe"] = true
-  l_82_1.vsnapvss = true
-  l_82_1.vss = true
-  l_82_1.vsssvc = true
-  l_82_1.webthreatdefsvc = true
-  l_82_1.wecsvc = true
-  l_82_1.wer = true
-  l_82_1.wersvc = true
-  l_82_1.windefend = true
-  l_82_1.w3svc = true
-  l_82_1["w3wp.exe"] = true
-  l_82_1.yoobackup = true
-  l_82_1.yooit = true
-  if l_82_1[l_82_0] then
+  local l_83_1 = {}
+  l_83_1.acronisagent = true
+  l_83_1.acrsch2svc = true
+  l_83_1.avpsus = true
+  l_83_1["bmr boot service"] = true
+  l_83_1["bmr mtftp service"] = true
+  l_83_1.caarcupdatesvc = true
+  l_83_1.casad2dwebsvc = true
+  l_83_1.ccevtmgr = true
+  l_83_1.ccsetmgr = true
+  l_83_1.defwatch = true
+  l_83_1.dns = true
+  l_83_1.dnssvc = true
+  l_83_1.eventlog = true
+  l_83_1.gxblr = true
+  l_83_1.gxcimgr = true
+  l_83_1.gxcvd = true
+  l_83_1.gxfwd = true
+  l_83_1.gxvss = true
+  l_83_1.intuit = true
+  l_83_1["intuit.quickbooks.fcs"] = true
+  l_83_1.mcafeedlpagentservice = true
+  l_83_1.memtas = true
+  l_83_1.mepocs = true
+  l_83_1.mfewc = true
+  l_83_1.mpssvc = true
+  l_83_1["msdtc.exe"] = true
+  l_83_1.msdtc = true
+  l_83_1["msexchange transport logsearch"] = true
+  l_83_1.msexchangeantispamupdate = true
+  l_83_1.msexchangecompliance = true
+  l_83_1.msexchangedagmgmt = true
+  l_83_1.msexchangedelivery = true
+  l_83_1.msexchangediagnostics = true
+  l_83_1.msexchangeedgesync = true
+  l_83_1.msexchangefastsearch = true
+  l_83_1.msexchangefrontendtransport = true
+  l_83_1.msexchangehm = true
+  l_83_1.msexchangehmrecovery = true
+  l_83_1.msexchangeimap4 = true
+  l_83_1.msexchangeimap4be = true
+  l_83_1.msexchangeis = true
+  l_83_1.msexchangemailboxassistants = true
+  l_83_1.msexchangemailboxreplication = true
+  l_83_1.msexchangenotificationsbroker = true
+  l_83_1.msexchangepop3 = true
+  l_83_1.msexchangepop3be = true
+  l_83_1.msexchangerepl = true
+  l_83_1.msexchangerpc = true
+  l_83_1.msexchangeservicehost = true
+  l_83_1.msexchangesubmission = true
+  l_83_1.msexchangethrottling = true
+  l_83_1.msexchangetransport = true
+  l_83_1.msexchangeum = true
+  l_83_1.msexchangeumcr = true
+  l_83_1.msmpeng = true
+  l_83_1.mssense = true
+  l_83_1.mspub = true
+  l_83_1.mssqlserver = true
+  l_83_1.mssqlsvc = true
+  l_83_1.mysql = true
+  l_83_1.mysql80 = true
+  l_83_1.pdvfsservice = true
+  l_83_1.perfhost = true
+  l_83_1.pop3svc = true
+  l_83_1.profsvc = true
+  l_83_1.qbcfmonitorservice = true
+  l_83_1.qbfcservice = true
+  l_83_1.qbidpservice = true
+  l_83_1.rtvscan = true
+  l_83_1.samss = true
+  l_83_1["sacsvr.exe"] = true
+  l_83_1.savroam = true
+  l_83_1["savservice.exe"] = true
+  l_83_1.sdrsvc = true
+  l_83_1.sense = true
+  l_83_1.sophos = true
+  l_83_1.sql = true
+  l_83_1["sqlagent.exe"] = true
+  l_83_1["sqlbrowser.exe"] = true
+  l_83_1.sqlbrowser = true
+  l_83_1["sqlceip.exe"] = true
+  l_83_1.sqlserveragent = true
+  l_83_1["sqlservr.exe"] = true
+  l_83_1.sqltelemetry = true
+  l_83_1["sqlwriter.exe"] = true
+  l_83_1.sqlwriter = true
+  l_83_1.stc_raw_agent = true
+  l_83_1.usermanager = true
+  l_83_1.vboxdrv = true
+  l_83_1.vds = true
+  l_83_1["veeam.guest.interaction.proxy.exe"] = true
+  l_83_1.veeam = true
+  l_83_1.veeamcatalogsvc = true
+  l_83_1.veeamcloudsvc = true
+  l_83_1.veeamdeploymentservice = true
+  l_83_1["veeamdeploymentsvc.exe"] = true
+  l_83_1.veeamdeploysvc = true
+  l_83_1["veeamfilesysvsssvc.exe"] = true
+  l_83_1["veeamnfssvc.exe"] = true
+  l_83_1.veeamnfssvc = true
+  l_83_1["veeamtransportsvc.exe"] = true
+  l_83_1.veeamtransportsvc = true
+  l_83_1.vmcompute = true
+  l_83_1.vmms = true
+  l_83_1["vmwp.exe"] = true
+  l_83_1.vsnapvss = true
+  l_83_1.vss = true
+  l_83_1.vsssvc = true
+  l_83_1.webthreatdefsvc = true
+  l_83_1.wecsvc = true
+  l_83_1.wer = true
+  l_83_1.wersvc = true
+  l_83_1.windefend = true
+  l_83_1.w3svc = true
+  l_83_1["w3wp.exe"] = true
+  l_83_1.yoobackup = true
+  l_83_1.yooit = true
+  if l_83_1[l_83_0] then
     return true
   end
   return false
 end
 
-Has_NetworkLogonSuccess = function(l_83_0)
-  -- function num : 0_82
-  if not l_83_0 then
-    l_83_0 = false
+Has_NetworkLogonSuccess = function(l_84_0)
+  -- function num : 0_83
+  if not l_84_0 then
+    l_84_0 = false
   end
-  local l_83_1 = GetRollingQueue("has_networklogonsuccess")
-  if not l_83_1 then
+  local l_84_1 = GetRollingQueue("has_networklogonsuccess")
+  if not l_84_1 then
     return false
   end
-  if l_83_0 then
-    local l_83_2 = safeJsonSerialize(l_83_1)
-    if l_83_2 ~= nil then
-      l_83_2 = (MpCommon.Base64Encode)(l_83_2)
+  if l_84_0 then
+    local l_84_2 = safeJsonSerialize(l_84_1)
+    if l_84_2 ~= nil then
+      l_84_2 = (MpCommon.Base64Encode)(l_84_2)
       ;
-      (bm.add_related_string)("NetworkLogonSuccess", l_83_2, bm.RelatedStringBMReport)
+      (bm.add_related_string)("NetworkLogonSuccess", l_84_2, bm.RelatedStringBMReport)
     end
   else
     do
       do
-        local l_83_3 = safeJsonSerialize(l_83_1)
-        if l_83_3 ~= nil then
-          l_83_3 = (MpCommon.Base64Encode)(l_83_3)
-          set_research_data("NetworkLogonSuccess", l_83_3, false)
+        local l_84_3 = safeJsonSerialize(l_84_1)
+        if l_84_3 ~= nil then
+          l_84_3 = (MpCommon.Base64Encode)(l_84_3)
+          set_research_data("NetworkLogonSuccess", l_84_3, false)
         end
         return true
       end
@@ -2430,263 +2442,263 @@ Has_NetworkLogonSuccess = function(l_83_0)
   end
 end
 
-isLolBasFilename = function(l_84_0, l_84_1)
-  -- function num : 0_83
-  if l_84_0 == nil or #l_84_0 <= 5 then
+isLolBasFilename = function(l_85_0, l_85_1)
+  -- function num : 0_84
+  if l_85_0 == nil or #l_85_0 <= 5 then
     return 
   end
-  l_84_0 = (string.lower)(l_84_0)
-  local l_84_2 = {}
-  l_84_2["addinutil.exe"] = "binaries"
-  l_84_2["appinstaller.exe"] = "binaries"
-  l_84_2["aspnet_compiler.exe"] = "binaries"
-  l_84_2["at.exe"] = "binaries"
-  l_84_2["atbroker.exe"] = "binaries"
-  l_84_2["bash.exe"] = "binaries"
-  l_84_2["bitsadmin.exe"] = "binaries"
-  l_84_2["certoc.exe"] = "binaries"
-  l_84_2["certreq.exe"] = "binaries"
-  l_84_2["certutil.exe"] = "binaries"
-  l_84_2["cmd.exe"] = "binaries"
-  l_84_2["cmdkey.exe"] = "binaries"
-  l_84_2["cmdl32.exe"] = "binaries"
-  l_84_2["cmstp.exe"] = "binaries"
-  l_84_2["colorcpl.exe"] = "binaries"
-  l_84_2["computerdefaults.exe"] = "binaries"
-  l_84_2["configsecuritypolicy.exe"] = "binaries"
-  l_84_2["conhost.exe"] = "binaries"
-  l_84_2["control.exe"] = "binaries"
-  l_84_2["csc.exe"] = "binaries"
-  l_84_2["cscript.exe"] = "binaries"
-  l_84_2["customshellhost.exe"] = "binaries"
-  l_84_2["datasvcutil.exe"] = "binaries"
-  l_84_2["desktopimgdownldr.exe"] = "binaries"
-  l_84_2["devicecredentialdeployment.exe"] = "binaries"
-  l_84_2["dfsvc.exe"] = "binaries"
-  l_84_2["diantz.exe"] = "binaries"
-  l_84_2["diskshadow.exe"] = "binaries"
-  l_84_2["dnscmd.exe"] = "binaries"
-  l_84_2["esentutl.exe"] = "binaries"
-  l_84_2["eventvwr.exe"] = "binaries"
-  l_84_2["expand.exe"] = "binaries"
-  l_84_2["explorer.exe"] = "binaries"
-  l_84_2["extexport.exe"] = "binaries"
-  l_84_2["extrac32.exe"] = "binaries"
-  l_84_2["findstr.exe"] = "binaries"
-  l_84_2["finger.exe"] = "binaries"
-  l_84_2["fltmc.exe"] = "binaries"
-  l_84_2["forfiles.exe"] = "binaries"
-  l_84_2["fsutil.exe"] = "binaries"
-  l_84_2["ftp.exe"] = "binaries"
-  l_84_2["gpscript.exe"] = "binaries"
-  l_84_2["hh.exe"] = "binaries"
-  l_84_2["imewdbld.exe"] = "binaries"
-  l_84_2["ie4uinit.exe"] = "binaries"
-  l_84_2["iediagcmd.exe"] = "binaries"
-  l_84_2["ieexec.exe"] = "binaries"
-  l_84_2["ilasm.exe"] = "binaries"
-  l_84_2["infdefaultinstall.exe"] = "binaries"
-  l_84_2["installutil.exe"] = "binaries"
-  l_84_2["jsc.exe"] = "binaries"
-  l_84_2["ldifde.exe"] = "binaries"
-  l_84_2["makecab.exe"] = "binaries"
-  l_84_2["mavinject.exe"] = "binaries"
-  l_84_2["microsoft.workflow.compiler.exe"] = "binaries"
-  l_84_2["mmc.exe"] = "binaries"
-  l_84_2["mpcmdrun.exe"] = "binaries"
-  l_84_2["msbuild.exe"] = "binaries"
-  l_84_2["msconfig.exe"] = "binaries"
-  l_84_2["msdt.exe"] = "binaries"
-  l_84_2["msedge.exe"] = "binaries"
-  l_84_2["mshta.exe"] = "binaries"
-  l_84_2["msiexec.exe"] = "binaries"
-  l_84_2["netsh.exe"] = "binaries"
-  l_84_2["ngen.exe"] = "binaries"
-  l_84_2["odbcconf.exe"] = "binaries"
-  l_84_2["offlinescannershell.exe"] = "binaries"
-  l_84_2["onedrivestandaloneupdater.exe"] = "binaries"
-  l_84_2["pcalua.exe"] = "binaries"
-  l_84_2["pcwrun.exe"] = "binaries"
-  l_84_2["pktmon.exe"] = "binaries"
-  l_84_2["pnputil.exe"] = "binaries"
-  l_84_2["presentationhost.exe"] = "binaries"
-  l_84_2["print.exe"] = "binaries"
-  l_84_2["printbrm.exe"] = "binaries"
-  l_84_2["provlaunch.exe"] = "binaries"
-  l_84_2["psr.exe"] = "binaries"
-  l_84_2["rasautou.exe"] = "binaries"
-  l_84_2["rdrleakdiag.exe"] = "binaries"
-  l_84_2["reg.exe"] = "binaries"
-  l_84_2["regasm.exe"] = "binaries"
-  l_84_2["regedit.exe"] = "binaries"
-  l_84_2["regini.exe"] = "binaries"
-  l_84_2["register-cimprovider.exe"] = "binaries"
-  l_84_2["regsvcs.exe"] = "binaries"
-  l_84_2["regsvr32.exe"] = "binaries"
-  l_84_2["replace.exe"] = "binaries"
-  l_84_2["rpcping.exe"] = "binaries"
-  l_84_2["rundll32.exe"] = "binaries"
-  l_84_2["runexehelper.exe"] = "binaries"
-  l_84_2["runonce.exe"] = "binaries"
-  l_84_2["runscripthelper.exe"] = "binaries"
-  l_84_2["sc.exe"] = "binaries"
-  l_84_2["schtasks.exe"] = "binaries"
-  l_84_2["scriptrunner.exe"] = "binaries"
-  l_84_2["setres.exe"] = "binaries"
-  l_84_2["settingsynchost.exe"] = "binaries"
-  l_84_2["ssh.exe"] = "binaries"
-  l_84_2["stordiag.exe"] = "binaries"
-  l_84_2["syncappvpublishingserver.exe"] = "binaries"
-  l_84_2["tar.exe"] = "binaries"
-  l_84_2["ttdinject.exe"] = "binaries"
-  l_84_2["tttracer.exe"] = "binaries"
-  l_84_2["unregmp2.exe"] = "binaries"
-  l_84_2["vbc.exe"] = "binaries"
-  l_84_2["verclsid.exe"] = "binaries"
-  l_84_2["wab.exe"] = "binaries"
-  l_84_2["wbadmin.exe"] = "binaries"
-  l_84_2["winget.exe"] = "binaries"
-  l_84_2["wlrmdr.exe"] = "binaries"
-  l_84_2["wmic.exe"] = "binaries"
-  l_84_2["workfolders.exe"] = "binaries"
-  l_84_2["wscript.exe"] = "binaries"
-  l_84_2["wsreset.exe"] = "binaries"
-  l_84_2["wuauclt.exe"] = "binaries"
-  l_84_2["xwizard.exe"] = "binaries"
-  l_84_2["msedge_proxy.exe"] = "binaries"
-  l_84_2["msedgewebview2.exe"] = "binaries"
-  l_84_2["wt.exe"] = "binaries"
-  l_84_2["advpack.dll"] = "libraries"
-  l_84_2["desk.cpl"] = "libraries"
-  l_84_2["dfshim.dll"] = "libraries"
-  l_84_2["ieadvpack.dll"] = "libraries"
-  l_84_2["ieframe.dll"] = "libraries"
-  l_84_2["mshtml.dll"] = "libraries"
-  l_84_2["pcwutl.dll"] = "libraries"
-  l_84_2["scrobj.dll"] = "libraries"
-  l_84_2["setupapi.dll"] = "libraries"
-  l_84_2["shdocvw.dll"] = "libraries"
-  l_84_2["shell32.dll"] = "libraries"
-  l_84_2["shimgvw.dll"] = "libraries"
-  l_84_2["syssetup.dll"] = "libraries"
-  l_84_2["url.dll"] = "libraries"
-  l_84_2["zipfldr.dll"] = "libraries"
-  l_84_2["comsvcs.dll"] = "libraries"
-  l_84_2["acccheckconsole.exe"] = "othermsbinaries"
-  l_84_2["adplus.exe"] = "othermsbinaries"
-  l_84_2["agentexecutor.exe"] = "othermsbinaries"
-  l_84_2["appcert.exe"] = "othermsbinaries"
-  l_84_2["appvlp.exe"] = "othermsbinaries"
-  l_84_2["bginfo.exe"] = "othermsbinaries"
-  l_84_2["cdb.exe"] = "othermsbinaries"
-  l_84_2["coregen.exe"] = "othermsbinaries"
-  l_84_2["createdump.exe"] = "othermsbinaries"
-  l_84_2["csi.exe"] = "othermsbinaries"
-  l_84_2["defaultpack.exe"] = "othermsbinaries"
-  l_84_2["devinit.exe"] = "othermsbinaries"
-  l_84_2["devtoolslauncher.exe"] = "othermsbinaries"
-  l_84_2["dnx.exe"] = "othermsbinaries"
-  l_84_2["dotnet.exe"] = "othermsbinaries"
-  l_84_2["dsdbutil.exe"] = "othermsbinaries"
-  l_84_2["dtutil.exe"] = "othermsbinaries"
-  l_84_2["dump64.exe"] = "othermsbinaries"
-  l_84_2["dumpminitool.exe"] = "othermsbinaries"
-  l_84_2["dxcap.exe"] = "othermsbinaries"
-  l_84_2["excel.exe"] = "othermsbinaries"
-  l_84_2["fsi.exe"] = "othermsbinaries"
-  l_84_2["fsianycpu.exe"] = "othermsbinaries"
-  l_84_2["mftrace.exe"] = "othermsbinaries"
-  l_84_2["microsoft.nodejstools.pressanykey.exe"] = "othermsbinaries"
-  l_84_2["msaccess.exe"] = "othermsbinaries"
-  l_84_2["msdeploy.exe"] = "othermsbinaries"
-  l_84_2["msohtmed.exe"] = "othermsbinaries"
-  l_84_2["mspub.exe"] = "othermsbinaries"
-  l_84_2["msxsl.exe"] = "othermsbinaries"
-  l_84_2["ntdsutil.exe"] = "othermsbinaries"
-  l_84_2["openconsole.exe"] = "othermsbinaries"
-  l_84_2["powerpnt.exe"] = "othermsbinaries"
-  l_84_2["procdump.exe"] = "othermsbinaries"
-  l_84_2["protocolhandler.exe"] = "othermsbinaries"
-  l_84_2["rcsi.exe"] = "othermsbinaries"
-  l_84_2["remote.exe"] = "othermsbinaries"
-  l_84_2["sqldumper.exe"] = "othermsbinaries"
-  l_84_2["sqlps.exe"] = "othermsbinaries"
-  l_84_2["sqltoolsps.exe"] = "othermsbinaries"
-  l_84_2["squirrel.exe"] = "othermsbinaries"
-  l_84_2["te.exe"] = "othermsbinaries"
-  l_84_2["teams.exe"] = "othermsbinaries"
-  l_84_2["testwindowremoteagent.exe"] = "othermsbinaries"
-  l_84_2["tracker.exe"] = "othermsbinaries"
-  l_84_2["update.exe"] = "othermsbinaries"
-  l_84_2["vsdiagnostics.exe"] = "othermsbinaries"
-  l_84_2["vsiisexelauncher.exe"] = "othermsbinaries"
-  l_84_2["visio.exe"] = "othermsbinaries"
-  l_84_2["visualuiaverifynative.exe"] = "othermsbinaries"
-  l_84_2["vslaunchbrowser.exe"] = "othermsbinaries"
-  l_84_2["vshadow.exe"] = "othermsbinaries"
-  l_84_2["vsjitdebugger.exe"] = "othermsbinaries"
-  l_84_2["wfc.exe"] = "othermsbinaries"
-  l_84_2["winproj.exe"] = "othermsbinaries"
-  l_84_2["winword.exe"] = "othermsbinaries"
-  l_84_2["wsl.exe"] = "othermsbinaries"
-  l_84_2["devtunnel.exe"] = "othermsbinaries"
-  l_84_2["vsls-agent.exe"] = "othermsbinaries"
-  l_84_2["vstest.console.exe"] = "othermsbinaries"
-  l_84_2["winfile.exe"] = "othermsbinaries"
-  l_84_2["xsd.exe"] = "othermsbinaries"
-  l_84_2["cl_loadassembly.ps1"] = "scripts"
-  l_84_2["cl_mutexverifiers.ps1"] = "scripts"
-  l_84_2["cl_invocation.ps1"] = "scripts"
-  l_84_2["launch-vsdevshell.ps1"] = "scripts"
-  l_84_2["manage-bde.wsf"] = "scripts"
-  l_84_2["pubprn.vbs"] = "scripts"
-  l_84_2["syncappvpublishingserver.vbs"] = "scripts"
-  l_84_2["utilityfunctions.ps1"] = "scripts"
-  l_84_2["winrm.vbs"] = "scripts"
-  l_84_2["pester.bat"] = "scripts"
-  local l_84_3 = l_84_2[l_84_0]
-  if l_84_3 == nil then
+  l_85_0 = (string.lower)(l_85_0)
+  local l_85_2 = {}
+  l_85_2["addinutil.exe"] = "binaries"
+  l_85_2["appinstaller.exe"] = "binaries"
+  l_85_2["aspnet_compiler.exe"] = "binaries"
+  l_85_2["at.exe"] = "binaries"
+  l_85_2["atbroker.exe"] = "binaries"
+  l_85_2["bash.exe"] = "binaries"
+  l_85_2["bitsadmin.exe"] = "binaries"
+  l_85_2["certoc.exe"] = "binaries"
+  l_85_2["certreq.exe"] = "binaries"
+  l_85_2["certutil.exe"] = "binaries"
+  l_85_2["cmd.exe"] = "binaries"
+  l_85_2["cmdkey.exe"] = "binaries"
+  l_85_2["cmdl32.exe"] = "binaries"
+  l_85_2["cmstp.exe"] = "binaries"
+  l_85_2["colorcpl.exe"] = "binaries"
+  l_85_2["computerdefaults.exe"] = "binaries"
+  l_85_2["configsecuritypolicy.exe"] = "binaries"
+  l_85_2["conhost.exe"] = "binaries"
+  l_85_2["control.exe"] = "binaries"
+  l_85_2["csc.exe"] = "binaries"
+  l_85_2["cscript.exe"] = "binaries"
+  l_85_2["customshellhost.exe"] = "binaries"
+  l_85_2["datasvcutil.exe"] = "binaries"
+  l_85_2["desktopimgdownldr.exe"] = "binaries"
+  l_85_2["devicecredentialdeployment.exe"] = "binaries"
+  l_85_2["dfsvc.exe"] = "binaries"
+  l_85_2["diantz.exe"] = "binaries"
+  l_85_2["diskshadow.exe"] = "binaries"
+  l_85_2["dnscmd.exe"] = "binaries"
+  l_85_2["esentutl.exe"] = "binaries"
+  l_85_2["eventvwr.exe"] = "binaries"
+  l_85_2["expand.exe"] = "binaries"
+  l_85_2["explorer.exe"] = "binaries"
+  l_85_2["extexport.exe"] = "binaries"
+  l_85_2["extrac32.exe"] = "binaries"
+  l_85_2["findstr.exe"] = "binaries"
+  l_85_2["finger.exe"] = "binaries"
+  l_85_2["fltmc.exe"] = "binaries"
+  l_85_2["forfiles.exe"] = "binaries"
+  l_85_2["fsutil.exe"] = "binaries"
+  l_85_2["ftp.exe"] = "binaries"
+  l_85_2["gpscript.exe"] = "binaries"
+  l_85_2["hh.exe"] = "binaries"
+  l_85_2["imewdbld.exe"] = "binaries"
+  l_85_2["ie4uinit.exe"] = "binaries"
+  l_85_2["iediagcmd.exe"] = "binaries"
+  l_85_2["ieexec.exe"] = "binaries"
+  l_85_2["ilasm.exe"] = "binaries"
+  l_85_2["infdefaultinstall.exe"] = "binaries"
+  l_85_2["installutil.exe"] = "binaries"
+  l_85_2["jsc.exe"] = "binaries"
+  l_85_2["ldifde.exe"] = "binaries"
+  l_85_2["makecab.exe"] = "binaries"
+  l_85_2["mavinject.exe"] = "binaries"
+  l_85_2["microsoft.workflow.compiler.exe"] = "binaries"
+  l_85_2["mmc.exe"] = "binaries"
+  l_85_2["mpcmdrun.exe"] = "binaries"
+  l_85_2["msbuild.exe"] = "binaries"
+  l_85_2["msconfig.exe"] = "binaries"
+  l_85_2["msdt.exe"] = "binaries"
+  l_85_2["msedge.exe"] = "binaries"
+  l_85_2["mshta.exe"] = "binaries"
+  l_85_2["msiexec.exe"] = "binaries"
+  l_85_2["netsh.exe"] = "binaries"
+  l_85_2["ngen.exe"] = "binaries"
+  l_85_2["odbcconf.exe"] = "binaries"
+  l_85_2["offlinescannershell.exe"] = "binaries"
+  l_85_2["onedrivestandaloneupdater.exe"] = "binaries"
+  l_85_2["pcalua.exe"] = "binaries"
+  l_85_2["pcwrun.exe"] = "binaries"
+  l_85_2["pktmon.exe"] = "binaries"
+  l_85_2["pnputil.exe"] = "binaries"
+  l_85_2["presentationhost.exe"] = "binaries"
+  l_85_2["print.exe"] = "binaries"
+  l_85_2["printbrm.exe"] = "binaries"
+  l_85_2["provlaunch.exe"] = "binaries"
+  l_85_2["psr.exe"] = "binaries"
+  l_85_2["rasautou.exe"] = "binaries"
+  l_85_2["rdrleakdiag.exe"] = "binaries"
+  l_85_2["reg.exe"] = "binaries"
+  l_85_2["regasm.exe"] = "binaries"
+  l_85_2["regedit.exe"] = "binaries"
+  l_85_2["regini.exe"] = "binaries"
+  l_85_2["register-cimprovider.exe"] = "binaries"
+  l_85_2["regsvcs.exe"] = "binaries"
+  l_85_2["regsvr32.exe"] = "binaries"
+  l_85_2["replace.exe"] = "binaries"
+  l_85_2["rpcping.exe"] = "binaries"
+  l_85_2["rundll32.exe"] = "binaries"
+  l_85_2["runexehelper.exe"] = "binaries"
+  l_85_2["runonce.exe"] = "binaries"
+  l_85_2["runscripthelper.exe"] = "binaries"
+  l_85_2["sc.exe"] = "binaries"
+  l_85_2["schtasks.exe"] = "binaries"
+  l_85_2["scriptrunner.exe"] = "binaries"
+  l_85_2["setres.exe"] = "binaries"
+  l_85_2["settingsynchost.exe"] = "binaries"
+  l_85_2["ssh.exe"] = "binaries"
+  l_85_2["stordiag.exe"] = "binaries"
+  l_85_2["syncappvpublishingserver.exe"] = "binaries"
+  l_85_2["tar.exe"] = "binaries"
+  l_85_2["ttdinject.exe"] = "binaries"
+  l_85_2["tttracer.exe"] = "binaries"
+  l_85_2["unregmp2.exe"] = "binaries"
+  l_85_2["vbc.exe"] = "binaries"
+  l_85_2["verclsid.exe"] = "binaries"
+  l_85_2["wab.exe"] = "binaries"
+  l_85_2["wbadmin.exe"] = "binaries"
+  l_85_2["winget.exe"] = "binaries"
+  l_85_2["wlrmdr.exe"] = "binaries"
+  l_85_2["wmic.exe"] = "binaries"
+  l_85_2["workfolders.exe"] = "binaries"
+  l_85_2["wscript.exe"] = "binaries"
+  l_85_2["wsreset.exe"] = "binaries"
+  l_85_2["wuauclt.exe"] = "binaries"
+  l_85_2["xwizard.exe"] = "binaries"
+  l_85_2["msedge_proxy.exe"] = "binaries"
+  l_85_2["msedgewebview2.exe"] = "binaries"
+  l_85_2["wt.exe"] = "binaries"
+  l_85_2["advpack.dll"] = "libraries"
+  l_85_2["desk.cpl"] = "libraries"
+  l_85_2["dfshim.dll"] = "libraries"
+  l_85_2["ieadvpack.dll"] = "libraries"
+  l_85_2["ieframe.dll"] = "libraries"
+  l_85_2["mshtml.dll"] = "libraries"
+  l_85_2["pcwutl.dll"] = "libraries"
+  l_85_2["scrobj.dll"] = "libraries"
+  l_85_2["setupapi.dll"] = "libraries"
+  l_85_2["shdocvw.dll"] = "libraries"
+  l_85_2["shell32.dll"] = "libraries"
+  l_85_2["shimgvw.dll"] = "libraries"
+  l_85_2["syssetup.dll"] = "libraries"
+  l_85_2["url.dll"] = "libraries"
+  l_85_2["zipfldr.dll"] = "libraries"
+  l_85_2["comsvcs.dll"] = "libraries"
+  l_85_2["acccheckconsole.exe"] = "othermsbinaries"
+  l_85_2["adplus.exe"] = "othermsbinaries"
+  l_85_2["agentexecutor.exe"] = "othermsbinaries"
+  l_85_2["appcert.exe"] = "othermsbinaries"
+  l_85_2["appvlp.exe"] = "othermsbinaries"
+  l_85_2["bginfo.exe"] = "othermsbinaries"
+  l_85_2["cdb.exe"] = "othermsbinaries"
+  l_85_2["coregen.exe"] = "othermsbinaries"
+  l_85_2["createdump.exe"] = "othermsbinaries"
+  l_85_2["csi.exe"] = "othermsbinaries"
+  l_85_2["defaultpack.exe"] = "othermsbinaries"
+  l_85_2["devinit.exe"] = "othermsbinaries"
+  l_85_2["devtoolslauncher.exe"] = "othermsbinaries"
+  l_85_2["dnx.exe"] = "othermsbinaries"
+  l_85_2["dotnet.exe"] = "othermsbinaries"
+  l_85_2["dsdbutil.exe"] = "othermsbinaries"
+  l_85_2["dtutil.exe"] = "othermsbinaries"
+  l_85_2["dump64.exe"] = "othermsbinaries"
+  l_85_2["dumpminitool.exe"] = "othermsbinaries"
+  l_85_2["dxcap.exe"] = "othermsbinaries"
+  l_85_2["excel.exe"] = "othermsbinaries"
+  l_85_2["fsi.exe"] = "othermsbinaries"
+  l_85_2["fsianycpu.exe"] = "othermsbinaries"
+  l_85_2["mftrace.exe"] = "othermsbinaries"
+  l_85_2["microsoft.nodejstools.pressanykey.exe"] = "othermsbinaries"
+  l_85_2["msaccess.exe"] = "othermsbinaries"
+  l_85_2["msdeploy.exe"] = "othermsbinaries"
+  l_85_2["msohtmed.exe"] = "othermsbinaries"
+  l_85_2["mspub.exe"] = "othermsbinaries"
+  l_85_2["msxsl.exe"] = "othermsbinaries"
+  l_85_2["ntdsutil.exe"] = "othermsbinaries"
+  l_85_2["openconsole.exe"] = "othermsbinaries"
+  l_85_2["powerpnt.exe"] = "othermsbinaries"
+  l_85_2["procdump.exe"] = "othermsbinaries"
+  l_85_2["protocolhandler.exe"] = "othermsbinaries"
+  l_85_2["rcsi.exe"] = "othermsbinaries"
+  l_85_2["remote.exe"] = "othermsbinaries"
+  l_85_2["sqldumper.exe"] = "othermsbinaries"
+  l_85_2["sqlps.exe"] = "othermsbinaries"
+  l_85_2["sqltoolsps.exe"] = "othermsbinaries"
+  l_85_2["squirrel.exe"] = "othermsbinaries"
+  l_85_2["te.exe"] = "othermsbinaries"
+  l_85_2["teams.exe"] = "othermsbinaries"
+  l_85_2["testwindowremoteagent.exe"] = "othermsbinaries"
+  l_85_2["tracker.exe"] = "othermsbinaries"
+  l_85_2["update.exe"] = "othermsbinaries"
+  l_85_2["vsdiagnostics.exe"] = "othermsbinaries"
+  l_85_2["vsiisexelauncher.exe"] = "othermsbinaries"
+  l_85_2["visio.exe"] = "othermsbinaries"
+  l_85_2["visualuiaverifynative.exe"] = "othermsbinaries"
+  l_85_2["vslaunchbrowser.exe"] = "othermsbinaries"
+  l_85_2["vshadow.exe"] = "othermsbinaries"
+  l_85_2["vsjitdebugger.exe"] = "othermsbinaries"
+  l_85_2["wfc.exe"] = "othermsbinaries"
+  l_85_2["winproj.exe"] = "othermsbinaries"
+  l_85_2["winword.exe"] = "othermsbinaries"
+  l_85_2["wsl.exe"] = "othermsbinaries"
+  l_85_2["devtunnel.exe"] = "othermsbinaries"
+  l_85_2["vsls-agent.exe"] = "othermsbinaries"
+  l_85_2["vstest.console.exe"] = "othermsbinaries"
+  l_85_2["winfile.exe"] = "othermsbinaries"
+  l_85_2["xsd.exe"] = "othermsbinaries"
+  l_85_2["cl_loadassembly.ps1"] = "scripts"
+  l_85_2["cl_mutexverifiers.ps1"] = "scripts"
+  l_85_2["cl_invocation.ps1"] = "scripts"
+  l_85_2["launch-vsdevshell.ps1"] = "scripts"
+  l_85_2["manage-bde.wsf"] = "scripts"
+  l_85_2["pubprn.vbs"] = "scripts"
+  l_85_2["syncappvpublishingserver.vbs"] = "scripts"
+  l_85_2["utilityfunctions.ps1"] = "scripts"
+  l_85_2["winrm.vbs"] = "scripts"
+  l_85_2["pester.bat"] = "scripts"
+  local l_85_3 = l_85_2[l_85_0]
+  if l_85_3 == nil then
     return false
   end
-  if l_84_1 == nil then
-    return true, l_84_3
+  if l_85_1 == nil then
+    return true, l_85_3
   end
-  l_84_1 = (string.lower)(l_84_1)
-  if l_84_1 == l_84_3 then
+  l_85_1 = (string.lower)(l_85_1)
+  if l_85_1 == l_85_3 then
     return true
   end
   return false
 end
 
 getOrgIdScrubbed = function()
-  -- function num : 0_84
-  local l_85_0 = (versioning.GetOrgID)()
-  if l_85_0 ~= nil and #l_85_0 > 20 then
-    return "PII_" .. (string.lower)(l_85_0)
+  -- function num : 0_85
+  local l_86_0 = (versioning.GetOrgID)()
+  if l_86_0 ~= nil and #l_86_0 > 20 then
+    return "PII_" .. (string.lower)(l_86_0)
   end
   return 
 end
 
-isDefenderPath = function(l_86_0)
-  -- function num : 0_85
-  if l_86_0 == nil then
+isDefenderPath = function(l_87_0)
+  -- function num : 0_86
+  if l_87_0 == nil then
     return 
   end
-  local l_86_1 = normalize_path(l_86_0)
-  if l_86_1 == nil then
+  local l_87_1 = normalize_path(l_87_0)
+  if l_87_1 == nil then
     return 
   end
-  l_86_1 = (string.lower)(l_86_1)
+  l_87_1 = (string.lower)(l_87_1)
   do
-    local l_86_2 = {}
+    local l_87_2 = {}
     -- DECOMPILER ERROR at PC20: No list found for R2 , SetList fails
 
     -- DECOMPILER ERROR at PC21: Overwrote pending register: R3 in 'AssignReg'
 
     -- DECOMPILER ERROR at PC22: Overwrote pending register: R4 in 'AssignReg'
 
-    for l_86_6,l_86_7 in ("c:\\programdata\\microsoft\\windows defender")("c:\\program files\\windows defender") do
-      if (string.find)(l_86_1, l_86_7, 1, true) then
+    for l_87_6,l_87_7 in ("c:\\programdata\\microsoft\\windows defender")("c:\\program files\\windows defender") do
+      if (string.find)(l_87_1, l_87_7, 1, true) then
         return true
       end
     end

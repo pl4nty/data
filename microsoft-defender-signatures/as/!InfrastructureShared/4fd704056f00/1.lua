@@ -16,6 +16,7 @@ do
     local l_0_5 = safeJsonSerialize(l_0_3, 150, nil, true)
     ;
     (MpCommon.BmTriggerSig)(l_0_4.ppid, "LLMPromptGrader", l_0_5)
+    return mp.INFECTED
   end
   return mp.CLEAN
 end
