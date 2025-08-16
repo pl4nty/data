@@ -3,8 +3,10 @@
 
 -- params : ...
 -- function num : 0
-TrackPidAndTechnique("CMDHSTR", "T1041", "exfiltration_c2")
-TrackPidAndTechnique("CMDHSTR", "T1082", "exfiltration_systeminfo")
-TrackPidAndTechnique("CMDHSTR", "T1539", "exfiltration_browser")
+local l_0_0 = {}
+l_0_0.T1041 = "exfiltration_c2"
+l_0_0.T1082 = "exfiltration_systeminfo"
+l_0_0.T1539 = "exfiltration_browser"
+TrackPidAndMultipleTechniques("CMDHSTR", l_0_0)
 return mp.INFECTED
 

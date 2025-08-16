@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\d0b3d2c9231f\1.luac 
+-- Command line: lua\!InfrastructureShared\dcb346d5390a\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -25,7 +25,7 @@ do
     return mp.CLEAN
   end
   ;
-  (bm.add_related_file)(l_0_6)
+  (bm.add_threat_file)(l_0_6)
   local l_0_10 = nil
   local l_0_11 = nil
   local l_0_12 = bm.add_related_string
