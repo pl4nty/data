@@ -1322,6 +1322,7 @@
         ],
         "WorkingHoursPredictionLoggingEnabled": true,
         "WriteSelfAssociationToPapi": true,
+        "accountLinkingEnabled": true,
         "dummylokicopilotchildflight": true,
         "isProfanityCensorNotificationPanelEnabled": true
     },
