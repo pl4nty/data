@@ -22,6 +22,9 @@ end
 if l_0_4 == nil or l_0_5 == nil then
   return mp.CLEAN
 end
+if IsChmodMacOSExcluded(l_0_4) then
+  return mp.CLEAN
+end
 local l_0_6 = tonumber(tostring(l_0_5), 8)
 local l_0_7, l_0_8, l_0_9, l_0_10 = (mp.bsplit)(l_0_6, 3)
 if l_0_7 == 0 and l_0_8 == 0 and l_0_9 == 0 and l_0_10 == 0 then
