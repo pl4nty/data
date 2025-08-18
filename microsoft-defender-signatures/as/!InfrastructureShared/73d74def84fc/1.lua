@@ -24,42 +24,73 @@ do
     return mp.CLEAN
   end
   local l_0_5, l_0_6 = extract_urls(l_0_4)
-  if isnull(l_0_5) then
+  if isnull(l_0_5) or isnull(l_0_6) then
     return mp.CLEAN
   end
+  l_0_6 = l_0_6[1]
   l_0_5 = l_0_5[1]
-  local l_0_7 = {}
-  l_0_7.SIG_CONTEXT = "CMD"
-  l_0_7.CONTENT_SOURCE = "MSIEXEC_CMDLINE"
-  l_0_7.PROCESS_CONTEXT = "msiexec.exe"
-  l_0_7.FILELESS = "true"
-  l_0_7.CMDLINE_URL = "true"
-  local l_0_8 = SafeGetUrlReputation
-  local l_0_9 = {}
-  -- DECOMPILER ERROR at PC63: No list found for R8 , SetList fails
+  do
+    if not (string.match)(l_0_6, "^(https?)://") then
+      local l_0_7 = (string.match)(l_0_5, "^(https?)://")
+      l_0_6 = l_0_7 .. "://" .. l_0_6
+    end
+    local l_0_8 = {}
+    l_0_8.SIG_CONTEXT = "CMD"
+    l_0_8.CONTENT_SOURCE = "MSIEXEC_CMDLINE"
+    l_0_8.PROCESS_CONTEXT = "msiexec.exe"
+    l_0_8.FILELESS = "true"
+    l_0_8.CMDLINE_URL = "true"
+    local l_0_9 = SafeGetUrlReputation
+    local l_0_10 = {}
+    -- DECOMPILER ERROR at PC85: No list found for R8 , SetList fails
 
-  -- DECOMPILER ERROR at PC64: Overwrote pending register: R9 in 'AssignReg'
+    -- DECOMPILER ERROR at PC86: Overwrote pending register: R9 in 'AssignReg'
 
-  l_0_8 = l_0_8(l_0_9, l_0_5, false, 3000)
-  l_0_9 = l_0_8.urls
-  l_0_9 = l_0_9[l_0_5]
-  if l_0_9 then
-    l_0_9 = l_0_8.urls
-    l_0_9 = l_0_9[l_0_5]
-    l_0_9 = l_0_9.determination
-    if l_0_9 == 2 then
-      l_0_9 = l_0_8.urls
-      l_0_9 = l_0_9[l_0_5]
-      l_0_9 = l_0_9.confidence
-      if l_0_9 >= 60 then
-        l_0_9 = mp
-        l_0_9 = l_0_9.INFECTED
-        return l_0_9
+    l_0_9 = l_0_9(l_0_10, l_0_6, false, 3000)
+    l_0_10 = l_0_9.urls
+    l_0_10 = l_0_10[l_0_6]
+    if l_0_10 then
+      l_0_10 = l_0_9.urls
+      l_0_10 = l_0_10[l_0_6]
+      l_0_10 = l_0_10.determination
+      if l_0_10 == 2 then
+        l_0_10 = l_0_9.urls
+        l_0_10 = l_0_10[l_0_6]
+        l_0_10 = l_0_10.confidence
+        if l_0_10 >= 60 then
+          l_0_10 = mp
+          l_0_10 = l_0_10.INFECTED
+          return l_0_10
+        end
       end
     end
+    l_0_10 = SafeGetUrlReputation
+    local l_0_11 = {}
+    -- DECOMPILER ERROR at PC110: No list found for R9 , SetList fails
+
+    -- DECOMPILER ERROR at PC111: Overwrote pending register: R10 in 'AssignReg'
+
+    l_0_10 = l_0_10(l_0_11, l_0_5, false, 3000)
+    l_0_11 = l_0_10.urls
+    l_0_11 = l_0_11[l_0_5]
+    if l_0_11 then
+      l_0_11 = l_0_10.urls
+      l_0_11 = l_0_11[l_0_5]
+      l_0_11 = l_0_11.determination
+      if l_0_11 == 2 then
+        l_0_11 = l_0_10.urls
+        l_0_11 = l_0_11[l_0_5]
+        l_0_11 = l_0_11.confidence
+        if l_0_11 >= 60 then
+          l_0_11 = mp
+          l_0_11 = l_0_11.INFECTED
+          return l_0_11
+        end
+      end
+    end
+    l_0_11 = mp
+    l_0_11 = l_0_11.CLEAN
+    return l_0_11
   end
-  l_0_9 = mp
-  l_0_9 = l_0_9.CLEAN
-  return l_0_9
 end
 
