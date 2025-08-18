@@ -12,6 +12,7 @@
         "AddSuperFastLaneToWorkItemV2": true,
         "AllocateHostPoolEnabled": true,
         "AllowHostBasedEncryption": true,
+        "AllowVSBGetWarningGalleryImage": true,
         "ApiLatencyImprovementEnabled": "true",
         "Aspen": {
             "ConnectWithPolicyTimeout": true,
@@ -230,6 +231,7 @@
         "EnableAgentStatusCheckBackendProcessorByEnv": true,
         "EnableAggregatedOperationTriggerTimer": false,
         "EnableAlertForwarderDataStream": true,
+        "EnableAlertServiceGeoMigration": true,
         "EnableAllocateCapacityPartialFailure": true,
         "EnableAllowTenantAndForbidTenant": true,
         "EnableAnyColumnFilter": true,
@@ -1211,7 +1213,6 @@
         "RASGenerateProvisionWorkitemWhileDeprovisioning": true,
         "RASHandleAbuseTenant": true,
         "RASKeepProvisionRequestWhenDeprovisioning": true,
-        "RASRouteActionsThroughARM": true,
         "RASUpdateLicenseTypeInPersist": true,
         "RMSAlwaysTurnOnPaging": true,
         "RMSCarryNewPolicyIdForReprovisionEvent": true,
