@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250813.9.0",
+        "CalendarCompanionDFVersion": "1.20250815.10.0",
         "CalendarCompanionMsitVersion": "1.20250811.1.0",
         "CalendarCompanionProdVersion": "1.20250802.3.0",
         "CompanionRing": "Prod",
@@ -401,7 +401,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20250804.6.0",
+        "LpcVersion": "1.20250812.2.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1551,7 +1551,7 @@
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
         "OrgExplorerBootstraperVersion": "1.20250715.5.0",
-        "OrgExplorerVersion": "1.20250715.5.0",
+        "OrgExplorerVersion": "1.20250812.8.0",
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,
         "isPersistentQueriesEnabled": true,
@@ -1560,7 +1560,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250814.1.0",
+        "PeopleInTaskbarDFVersion": "1.20250816.6.0",
         "PeopleInTaskbarMsitVersion": "1.20250809.4.0",
         "PeopleInTaskbarProdVersion": "1.20250803.5.0",
         "campaignSchedules": {
