@@ -37,6 +37,7 @@ if l_0_4:find("/bin/bash", 1, true) == nil and l_0_4:find("/bin/sh", 1, true) ==
   return mp.CLEAN
 end
 if is_valid_ip(l_0_3) and ((string.find)(l_0_3, "/bin/bash", 1, true) or (string.find)(l_0_3, "/bin/zsh", 1, true) or (string.find)(l_0_3, "/bin/sh", 1, true) or l_0_3:match("\'(bash)\'") or l_0_3:match("\"(bash)\"") or l_0_3:match("\'(sh)\'") or l_0_3:match("\"(sh)\"") or l_0_3:match("\'(zsh)\'") or l_0_3:match("\"(zsh)\"") or l_0_3:find(" bash ", 1, true) or l_0_3:find(" sh ", 1, true) or l_0_3:find(" zsh ", 1, true) or l_0_3:find("zsh -i", 1, true) or l_0_3:find("bash -i", 1, true) or l_0_3:find("sh -i", 1, true) or l_0_3:find("do%s+%$", 1, false)) then
+  (bm.trigger_sig)("GenericReverseShell", l_0_0, l_0_1.ppid)
   return mp.INFECTED
 end
 return mp.CLEAN

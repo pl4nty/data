@@ -110,7 +110,7 @@ else
                         -- DECOMPILER ERROR at PC409: Confused about usage of register: R8 in 'UnsetPending'
 
                         if l_0_46 >= 2 or l_0_46 + l_0_37 >= 3 or l_0_46 + l_0_37 + l_0_39 + UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_4 .. "\\RestNonExecFiles", 1) >= 4 then
-                          (MpCommon.BmTriggerSigPropagate)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_3)
+                          (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_3)
                           return mp.INFECTED
                         end
                         return mp.CLEAN
