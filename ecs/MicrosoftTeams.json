@@ -610,7 +610,6 @@
                 "enableAADSyncInCloudDeleteUpdates": true,
                 "enableAccountGraphTenantListCache": true,
                 "enableAllowedCloudsFromAadXtapCache": true,
-                "enableAppsActivityV2Apis": true,
                 "enableAppsFilteredByServicePlanIds": false,
                 "enableAsyncMigrateGroupThroughGraph": true,
                 "enableChannelOnlyMemberGetTeam": true,
