@@ -545,7 +545,6 @@
         "EnableSubscriptionHelloJob": true,
         "EnableSubscriptionPartition": true,
         "EnableSubscriptionPcCodeCheck": false,
-        "EnableSuspiciousClassificationThreshold": true,
         "EnableSyncAllForReady": true,
         "EnableTenantOnboardValidateTenantActualStatus": true,
         "EnableTenantOutOfServiceDeviceGA": true,
