@@ -33,7 +33,7 @@ l_0_3 = l_0_3 .. "\\" .. l_0_2
 if (string.find)(l_0_3, "[a-z]:\\windows\\") ~= nil then
   return mp.CLEAN
 end
-if l_0_2 ~= "sbsimulator.exe" and (string.find)(l_0_2, "sbsimulation_sb_[^%.]+%.exe") == nil and (string.find)(l_0_3, "[a-z]:\\program files\\safebreach\\") == nil then
+if l_0_2 ~= "sbsimulator.exe" and (string.find)(l_0_2, "sbsimulation_sb_[^%.]+%.exe") == nil then
   local l_0_4 = (sysio.GetPEVersionInfo)(l_0_3)
   if l_0_4 == nil then
     return mp.CLEAN
@@ -47,6 +47,12 @@ if l_0_2 ~= "sbsimulator.exe" and (string.find)(l_0_2, "sbsimulation_sb_[^%.]+%.
 end
 do
   if l_0_2 == "sbupdater.exe" then
+    return mp.CLEAN
+  end
+  if l_0_2 == "upgradepkg.exe" then
+    return mp.CLEAN
+  end
+  if (string.find)(l_0_2, "sb%-simulator%-windows%-%d+%.%d+%.%d+%-%d+%.exe") ~= nil then
     return mp.CLEAN
   end
   local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
@@ -68,7 +74,7 @@ do
     return mp.CLEAN
   end
   do
-    if IsBasFileEncryptExt(l_0_8) == false and l_0_0 == mp.SCANREASON_ONOPEN then
+    if IsBasFileEncryptExt(l_0_8) == false and IsBasFileNoisyEncryptExt(l_0_8) == false and l_0_0 == mp.SCANREASON_ONOPEN then
       local l_0_9 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_AGE)
       if l_0_9 == nil then
         return mp.CLEAN
@@ -87,7 +93,7 @@ do
       end
     end
     ;
-    (MpCommon.BmTriggerSigPropagate)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_7)
+    (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_7)
     return mp.INFECTED
   end
 end
