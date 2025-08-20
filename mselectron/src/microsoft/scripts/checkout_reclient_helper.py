@@ -10,7 +10,7 @@ import shutil
 import subprocess
 
 from lib.canonical_platform import CanonicalPlatform
-from lib.deps import get as get_deps
+from lib.deps import get_vars as get_deps_vars
 from lib.filesystem import exists
 from lib.git import shallow_checkout
 from lib.project_paths import RECLIENT_HELPER_DIR, REPO_ROOT_DIR
@@ -29,7 +29,7 @@ def run(call_args, cwd=os.getcwd()):
 
 
 def checkout_reclient_helper():
-    deps_vars = get_deps(REPO_ROOT_DIR)['vars']
+    deps_vars = get_deps_vars(REPO_ROOT_DIR)
     repo_url = deps_vars['microsoft_reclient_helper_git']
     revision = deps_vars['microsoft_reclient_helper_revision']
 

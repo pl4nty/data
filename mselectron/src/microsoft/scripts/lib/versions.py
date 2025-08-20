@@ -4,29 +4,32 @@ Get Chromium, Node.js, and Electron versions.
 
 import os
 
-from .deps import get as get_deps
+from .deps import get_vars as get_deps_vars
 from .filesystem import read_file
 from .git import Repository
 from .project_paths import ELECTRON_DIR, REPO_ROOT_DIR, SRC_DIR
+from pathlib import Path
 
 
-def _get_electron_deps():
-    return get_deps(ELECTRON_DIR)
+def _get_deps_var(dirname: Path, key: str) -> str:
+    return str(get_deps_vars(dirname)[key])
 
 
-def _get_microsoft_deps():
-    return get_deps(REPO_ROOT_DIR)
+def _get_electron_deps_var(key: str) -> str:
+    return _get_deps_var(ELECTRON_DIR, key)
+
+
+def _get_msft_deps_var(key: str) -> str:
+    return _get_deps_var(REPO_ROOT_DIR, key)
 
 
 # Chromium
-def get_chromium_version_from_electron_deps():
-    deps = _get_electron_deps()
-    return deps['vars']['chromium_version']
+def get_chromium_version_from_electron_deps() -> str:
+    return _get_electron_deps_var('chromium_version')
 
 
-def get_chromium_version_from_microsoft_deps():
-    deps = _get_microsoft_deps()
-    return deps['vars']['microsoft_chromium_version']
+def get_chromium_version_from_microsoft_deps() -> str:
+    return _get_msft_deps_var('microsoft_chromium_version')
 
 
 def get_chromium_version_from_version_file(src_directory=SRC_DIR):
@@ -45,29 +48,22 @@ def _parse_chromium_version(version_file_lines):
 
 
 # Node.js
-def get_node_version_from_electron_deps():
-    deps = _get_electron_deps()
-    return deps['vars']['node_version']
+def get_node_version_from_electron_deps() -> str:
+    return _get_electron_deps_var('node_version')
 
 
-def get_node_version_from_microsoft_deps():
-    deps = _get_microsoft_deps()
-    return deps['vars']['microsoft_node_version']
+def get_node_version_from_microsoft_deps() -> str:
+    return _get_msft_deps_var('microsoft_node_version')
 
 
 # Electron
-def get_electron_version_from_microsoft_deps(strip_leading_v=False):
-    deps = _get_microsoft_deps()
-    version_with_leading_v = deps['vars']['microsoft_electron_version']
+def get_electron_version_from_microsoft_deps(strip_leading_v=False) -> str:
+    val = _get_msft_deps_var('microsoft_electron_version')
+    return val[1:] if strip_leading_v else val
 
-    version = version_with_leading_v[1:] if strip_leading_v \
-        else version_with_leading_v
 
-    return version
-
-def get_electron_revision_from_microsoft_deps():
-    deps = _get_microsoft_deps()
-    return deps['vars']['microsoft_electron_revision']
+def get_electron_revision_from_microsoft_deps() -> str:
+    return _get_msft_deps_var('microsoft_electron_revision')
 
 
 def get_electron_revision():

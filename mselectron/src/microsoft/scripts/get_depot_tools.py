@@ -9,7 +9,7 @@ import os
 import shutil
 
 from lib.canonical_platform import CanonicalPlatform
-from lib.deps import get as get_deps
+from lib.deps import get_vars as get_deps_vars
 from lib.filesystem import exists
 from lib.git import shallow_checkout
 from lib.project_paths import REPO_ROOT_DIR
@@ -39,7 +39,7 @@ def main():
 
 
 def checkout_depot_tools(target_directory):
-    deps_vars = get_deps(REPO_ROOT_DIR)['vars']
+    deps_vars = get_deps_vars(REPO_ROOT_DIR)
     repo_url = deps_vars['microsoft_depot_tools_git']
     revision = deps_vars['microsoft_depot_tools_revision']
 

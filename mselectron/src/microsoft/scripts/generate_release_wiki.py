@@ -62,14 +62,14 @@ def generate_wiki_page(electron_version, source_version,
         'version': electron_version,
     }
     electron = {
-        'builds': get_builds_data(
+        'builds': list(get_builds_data(
             electron_builds,
-            ElectronFlavour.get_description),
+            ElectronFlavour.get_description)),
     }
     ffmpeg = {
-        'builds': get_builds_data(
+        'builds': list(get_builds_data(
             ffmpeg_builds,
-            FFmpegFlavour.get_description),
+            FFmpegFlavour.get_description)),
     }
 
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIRECTORY))

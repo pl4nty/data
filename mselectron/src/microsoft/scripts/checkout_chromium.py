@@ -9,7 +9,7 @@ import os
 import subprocess
 
 from lib.canonical_platform import CanonicalPlatform
-from lib.deps import get as get_deps
+from lib.deps import get_vars as get_deps_vars
 from lib.filesystem import mkdir_p
 from lib.gclient import gclient, config as gclient_config
 from lib.project_paths import ELECTRON_DIR
@@ -64,7 +64,7 @@ def checkout_chromium(revision, output_dir, repo_url=CHROMIUM_REPO_URL,
 
     # Create a gclient config in the current dir
     # passing all "vars" from the Electron DEPS as custom vars.
-    custom_vars = get_deps(ELECTRON_DIR)['vars']
+    custom_vars = get_deps_vars(ELECTRON_DIR)
 
     # Exclude some Electron's gclient flags.
     for var in [
