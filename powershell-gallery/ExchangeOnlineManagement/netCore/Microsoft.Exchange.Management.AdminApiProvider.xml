@@ -775,6 +775,13 @@
             <param name="connectionUri">Connectionuri String</param>
             <returns>Returns Acquire token endpoint</returns>
         </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.AppSettings.GetAcquireTokenEndpointSearchOnly(System.String)">
+            <summary>
+            Acquire token endpoint override
+            </summary>
+            <param name="connectionUri">Connectionuri String</param>
+            <returns>Returns Acquire token endpoint with IP Audience</returns>
+        </member>
         <member name="M:Microsoft.Exchange.Management.AdminApiProvider.AppSettings.GetForcedTargetVersionHeaderValue">
             <summary>
             Get forced target version header value

@@ -497,6 +497,11 @@ function Connect-ExchangeOnline
     }
     process {
         $global:EXO_LastExecutionStatus = $true;
+        $EnableSearchOnlySession = $false
+        $var = Get-Variable -Name "EnableSearchOnlySession" -Scope Script -ErrorAction SilentlyContinue
+        if ($null -ne $var) {
+            $EnableSearchOnlySession = $var.Value
+        }
         $startTime = Get-Date
 
         # Validate parameters
@@ -544,7 +549,14 @@ function Connect-ExchangeOnline
 
             $cmdletLogger.InitLog($connectionContextID)
             $cmdletLogger.LogStartTime($connectionContextID, $startTime)
-            $cmdletLogger.LogCmdletName($connectionContextID, "Connect-ExchangeOnline");
+            if ($EOPConnectionInProgress -eq $true)
+            {
+                $cmdletLogger.LogCmdletName($connectionContextID, "Connect-IPPSSession");
+            }
+            else
+            {
+                $cmdletLogger.LogCmdletName($connectionContextID, "Connect-ExchangeOnline");
+            }
             $cmdletLogger.LogCmdletParameters($connectionContextID, $PSBoundParameters);
 
             if ($isCloudShell -eq $false)
@@ -557,7 +569,7 @@ function Connect-ExchangeOnline
                 -Organization $Organization.Value -Device:$Device.Value -InlineCredential:$InlineCredential.Value -CommandName $CommandName `
                 -FormatTypeName $FormatTypeName -Prefix $Prefix -PageSize $PageSize.Value -ExoModuleVersion:$moduleVersion -Logger $cmdletLogger `
                 -ConnectionId $connectionContextID -IsRpsSession $UseRPSSession.IsPresent -EnableErrorReporting:$EnableErrorReporting.Value `
-                -ManagedIdentity:$ManagedIdentity.Value -ManagedIdentityAccountId $ManagedIdentityAccountId.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value
+                -ManagedIdentity:$ManagedIdentity.Value -ManagedIdentityAccountId $ManagedIdentityAccountId.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession
             }
             else
             {
@@ -565,7 +577,7 @@ function Connect-ExchangeOnline
                 -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -Credential $Credential.Value -PSSessionOption $PSSessionOption `
                 -BypassMailboxAnchoring:$BypassMailboxAnchoring -Device:$Device.Value -InlineCredential:$InlineCredential.Value `
                 -DelegatedOrg $DelegatedOrganization -CommandName $CommandName -FormatTypeName $FormatTypeName -Prefix $prefix -ExoModuleVersion:$moduleVersion `
-                -Logger $cmdletLogger -ConnectionId $connectionContextID -IsRpsSession $UseRPSSession.IsPresent -EnableErrorReporting:$EnableErrorReporting.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value
+                -Logger $cmdletLogger -ConnectionId $connectionContextID -IsRpsSession $UseRPSSession.IsPresent -EnableErrorReporting:$EnableErrorReporting.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession
             }
 
             if ($isCloudShell -eq $false)
@@ -804,7 +816,10 @@ function Connect-IPPSSession
         [switch] $DisableWAM = $false,
 
         # Externally provided access token
-        [string] $AccessToken = ''
+        [string] $AccessToken = '',
+        
+        # Switch to using OBO Token
+        [switch] $EnableSearchOnlySession = $false
     )
     DynamicParam
     {
@@ -848,6 +863,23 @@ function Connect-IPPSSession
             $Organization = New-Object System.Management.Automation.RuntimeDefinedParameter('Organization', [string], $attributeCollection)
             $Organization.Value = ''
 
+            # Switch to collect telemetry on command execution. 
+            $EnableErrorReporting = New-Object System.Management.Automation.RuntimeDefinedParameter('EnableErrorReporting', [switch], $attributeCollection)
+            $EnableErrorReporting.Value = $false
+            
+            # Where to store command telemetry data. By default telemetry is stored in the directory "%TEMP%/EXOTelemetry" in the file : EXOCmdletTelemetry-yyyymmdd-hhmmss.csv.
+            $LogDirectoryPath = New-Object System.Management.Automation.RuntimeDefinedParameter('LogDirectoryPath', [string], $attributeCollection)
+            $LogDirectoryPath.Value = [System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), "EXOCmdletTelemetry")
+            # Create a new attribute and valiate set against the LogLevel
+            $LogLevelAttribute = New-Object System.Management.Automation.ParameterAttribute
+            $LogLevelAttribute.Mandatory = $false
+            $LogLevelAttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
+            $LogLevelAttributeCollection.Add($LogLevelAttribute)
+            $LogLevelList = @([Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::Default, [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::All)
+            $ValidateSet = New-Object System.Management.Automation.ValidateSetAttribute($LogLevelList)
+            $LogLevel = New-Object System.Management.Automation.RuntimeDefinedParameter('LogLevel', [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel], $LogLevelAttributeCollection)
+            $LogLevel.Attributes.Add($ValidateSet)
+
             $paramDictionary = New-object System.Management.Automation.RuntimeDefinedParameterDictionary
             $paramDictionary.Add('UserPrincipalName', $UserPrincipalName)
             $paramDictionary.Add('Credential', $Credential)
@@ -856,6 +888,9 @@ function Connect-IPPSSession
             $paramDictionary.Add('CertificatePassword', $CertificatePassword)
             $paramDictionary.Add('AppId', $AppId)
             $paramDictionary.Add('Organization', $Organization)
+            $paramDictionary.Add('EnableErrorReporting', $EnableErrorReporting)
+            $paramDictionary.Add('LogDirectoryPath', $LogDirectoryPath)
+            $paramDictionary.Add('LogLevel', $LogLevel)
             if($PSEdition -eq 'Core')
             {
                 # We do not want to expose certificate thumprint in Linux as it is not feasible there.
@@ -883,8 +918,27 @@ function Connect-IPPSSession
             $Device = New-Object System.Management.Automation.RuntimeDefinedParameter('Device', [switch], $attributeCollection)
             $Device.Value = $false
 
+            # Switch to collect telemetry on command execution. 
+            $EnableErrorReporting = New-Object System.Management.Automation.RuntimeDefinedParameter('EnableErrorReporting', [switch], $attributeCollection)
+            $EnableErrorReporting.Value = $false
+            
+            # Where to store EXO command telemetry data. By default telemetry is stored in the directory "%TEMP%/EXOTelemetry" in the file : EXOCmdletTelemetry-yyyymmdd-hhmmss.csv.
+            $LogDirectoryPath = New-Object System.Management.Automation.RuntimeDefinedParameter('LogDirectoryPath', [string], $attributeCollection)
+            $LogDirectoryPath.Value = [System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), "EXOCmdletTelemetry")
+            # Create a new attribute and validate set against the LogLevel
+            $LogLevelAttribute = New-Object System.Management.Automation.ParameterAttribute
+            $LogLevelAttribute.Mandatory = $false
+            $LogLevelAttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
+            $LogLevelAttributeCollection.Add($LogLevelAttribute)
+            $LogLevelList = @([Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::Default, [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::All)
+            $ValidateSet = New-Object System.Management.Automation.ValidateSetAttribute($LogLevelList)
+            $LogLevel = New-Object System.Management.Automation.RuntimeDefinedParameter('LogLevel', [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel], $LogLevelAttributeCollection)
+            $LogLevel.Attributes.Add($ValidateSet)
             $paramDictionary = New-object System.Management.Automation.RuntimeDefinedParameterDictionary
             $paramDictionary.Add('Device', $Device)
+            $paramDictionary.Add('EnableErrorReporting', $EnableErrorReporting)
+            $paramDictionary.Add('LogDirectoryPath', $LogDirectoryPath)
+            $paramDictionary.Add('LogLevel', $LogLevel)
             return $paramDictionary
         }
     }
@@ -893,22 +947,28 @@ function Connect-IPPSSession
         try
         {
             $EOPConnectionInProgress = $true
+            Set-Variable -Name "EnableSearchOnlySession" -Value $EnableSearchOnlySession.IsPresent -Scope Script
             if ($isCloudShell -eq $false)
             {
+                $LogLevelValue = [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::All
+                if($LogLevel.Value)
+                {
+                    $LogLevelValue = $LogLevel.Value
+                }
                 $certThumbprint = $CertificateThumbprint.Value
                 # Will pass CertificateThumbprint if it is not null or not empty
                 if($certThumbprint)
                 {
-                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -CertificateThumbprint $certThumbprint -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -UseRPSSession:$UseRPSSession -DisableWAM:$DisableWAM
+                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -CertificateThumbprint $certThumbprint -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -UseRPSSession:$UseRPSSession -DisableWAM:$DisableWAM -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value
                 }
                 else
                 {
-                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -UseRPSSession:$UseRPSSession -DisableWAM:$DisableWAM -AccessToken $AccessToken
+                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -UseRPSSession:$UseRPSSession -DisableWAM:$DisableWAM -AccessToken $AccessToken -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value
                 }
             }
             else
             {
-                Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -PSSessionOption $PSSessionOption -BypassMailboxAnchoring:$BypassMailboxAnchoring -Device:$Device.Value -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -UseRPSSession:$UseRPSSession -DisableWAM:$DisableWAM -AccessToken $AccessToken
+                Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -PSSessionOption $PSSessionOption -BypassMailboxAnchoring:$BypassMailboxAnchoring -Device:$Device.Value -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -UseRPSSession:$UseRPSSession -DisableWAM:$DisableWAM -AccessToken $AccessToken -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value
             }
         }
         finally
@@ -1090,7 +1150,7 @@ function Disconnect-ExchangeOnline
                 # If telemetry is enabled for any of the connections, log errors generated from this cmdlet also. 
                 $errorCountAtProcessEnd = $global:Error.Count
                 $global:EXO_LastExecutionStatus = $false;
-
+                
                 $endTime = Get-Date
                 foreach ($context in $connectionContexts)
                 {

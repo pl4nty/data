@@ -17,7 +17,7 @@
 		</command:details>
 		<maml:description>
 			<maml:para>Use the Add-VivaModuleFeaturePolicy cmdlet to add a new access policy for a specific feature in Viva.</maml:para>
-      		<maml:para>You need to use the Connect-ExchangeOnline cmdlet to authenticate.</maml:para>
+			<maml:para>You need to use the Connect-ExchangeOnline cmdlet to authenticate.</maml:para>
 			<maml:para>This cmdlet requires the .NET Framework 4.7.2 or later.</maml:para>
 			<maml:para>Currently, you need to be a member of the Global Administrators role or the roles that have been assigned at the feature level to run this cmdlet.</maml:para>
 			<maml:para>To learn more about assigned roles at the feature level, see Features Available for Feature Access Management (https://learn.microsoft.com/viva/feature-access-management#features-available-for-feature-access-management).</maml:para>
@@ -140,11 +140,12 @@
 					<maml:name>IsUserOptedInByDefault</maml:name>
 					<maml:description>
 						<maml:para>This parameter is available in version 3.8.0-Preview2 or later of the module.</maml:para>
-						<maml:para>The IsUserOptedInByDefault parameter specifies whether user opted in by default by the policy. Valid values are:</maml:para>
-						<maml:para>- $true: User is Opted in by default by the policy if the user has not set a preference.</maml:para>
-						<maml:para>- $false: User is Opted out by default by the policy if the user has not set a preference.</maml:para>
+						<maml:para>The IsUserOptedInByDefault parameter specifies whether users are opted in by default by the policy. Valid values are:</maml:para>
+						<maml:para>- $true: By default, users are opted in by the policy if the user hasn't set a preference.</maml:para>
+						<maml:para>- $false: By default, users are opted out by the policy if the user hasn't set a preference.</maml:para>
 						<maml:para></maml:para>
-						<maml:para>An optional parameter. This parameter can be used to override the default user opt-in value set in the feature metadata. This parameter can be only be set when -IsUserControlEnabled parameter is set to $true.</maml:para>
+						<maml:para>This parameter is optional and can be used to override the default user opt-in value set in the feature metadata.</maml:para>
+						<maml:para>This parameter can be set only when the IsUserControlEnabled parameter is set to $true.</maml:para>
 					</maml:description>
 					<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
 					<dev:type>
@@ -307,22 +308,23 @@
 			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
 				<maml:name>IsUserOptedInByDefault</maml:name>
 				<maml:description>
-				<maml:para>This parameter is available in version 3.8.0-Preview2 or later of the module.</maml:para>
-				<maml:para>The IsUserOptedInByDefault parameter specifies whether user opted in by default by the policy. Valid values are:</maml:para>
-				<maml:para>- $true: User is Opted in by default by the policy if the user has not set a preference.</maml:para>
-				<maml:para>- $false: User is Opted out by default by the policy if the user has not set a preference.</maml:para>
-				<maml:para></maml:para>
-				<maml:para>An optional parameter. This parameter can be used to override the default user opt-in value set in the feature metadata. This parameter can be only be set when -IsUserControlEnabled parameter is set to $true.</maml:para>
+					<maml:para>This parameter is available in version 3.8.0-Preview2 or later of the module.</maml:para>
+					<maml:para>The IsUserOptedInByDefault parameter specifies whether users are opted in by default by the policy. Valid values are:</maml:para>
+					<maml:para>- $true: By default, users are opted in by the policy if the user hasn't set a preference.</maml:para>
+					<maml:para>- $false: By default, users are opted out by the policy if the user hasn't set a preference.</maml:para>
+					<maml:para></maml:para>
+					<maml:para>This parameter is optional and can be used to override the default user opt-in value set in the feature metadata.</maml:para>
+					<maml:para>This parameter can be set only when the IsUserControlEnabled parameter is set to $true.</maml:para>
 				</maml:description>
 				<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
 				<dev:type>
-				<maml:name>Boolean</maml:name>
-				<maml:uri />
+					<maml:name>Boolean</maml:name>
+					<maml:uri />
 				</dev:type>
 				<dev:defaultValue>None</dev:defaultValue>
 			</command:parameter>
 			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-			<maml:name>ResultSize</maml:name>
+				<maml:name>ResultSize</maml:name>
 				<maml:description>
 					<maml:para>This parameter is reserved for internal Microsoft use.</maml:para>
 				</maml:description>
@@ -399,7 +401,7 @@
 			<command:example>
 				<maml:title>-------------------------- Example 5 --------------------------</maml:title>
 				<dev:code>Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowAISkills -Name SoftDisableShowAISkillsPolicy -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false -UserIds user1@contoso.com,user2@contoso.com</dev:code>
-        		<dev:remarks>
+				<dev:remarks>
 					<maml:para>This example adds a policy for the ShowAISkills feature in Viva Skills. The policy enables the feature for the specified users, allows user controls, and opted out users by default (Soft Disable policy).</maml:para>
 				</dev:remarks>
 			</command:example>
@@ -5182,15 +5184,13 @@
 		<command:examples>
 			<command:example>
 				<maml:title>-------------------------- Example 1 --------------------------</maml:title>
-				<dev:code>
-					c:\users\vikram Get-MyAnalyticsFeatureConfig -Identity vikram@contoso.com
+				<dev:code>c:\users\vikram Get-MyAnalyticsFeatureConfig -Identity vikram@contoso.com
 
-					UserId : vikram@contoso.com
-					PrivacyMode : opt-in
-					IsDashboardEnabled : true
-					IsAddInEnabled : true
-					IsDigestEmailEnabled : false
-				</dev:code>
+UserId : vikram@contoso.com
+PrivacyMode : opt-in
+IsDashboardEnabled : true
+IsAddInEnabled : true
+IsDigestEmailEnabled : false</dev:code>
 				<dev:remarks>
 					<maml:para>This example and the corresponding output shows the MyAnalytics configuration for the user vikram@contoso.com. MyAnalytics is available to Vikram (the PrivacyMode property value is opt-in). The only feature that's disabled is digest email messages.</maml:para>
 				</dev:remarks>
@@ -5420,12 +5420,10 @@
 		<command:examples>
 			<command:example>
 				<maml:title>-------------------------- Example 1 --------------------------</maml:title>
-				<dev:code>
-					Get-VivaInsightsSettings -Identity roy@contoso.onmicrosoft.com
+				<dev:code>Get-VivaInsightsSettings -Identity roy@contoso.onmicrosoft.com
 
-					UserId : roy@contoso.onmicrosoft.com
-					IsInsightsHeadspaceEnabled : True
-				</dev:code>
+UserId : roy@contoso.onmicrosoft.com
+IsInsightsHeadspaceEnabled : True</dev:code>
 				<dev:remarks>
 					<maml:para>This example shows the configuration of Microsoft Viva Insights in Microsoft Teams for the user roy@contoso.onmicrosoft.com. The output of the command shows that the features of Headspace are available to Roy.</maml:para>
 				</dev:remarks>
@@ -5638,6 +5636,20 @@
 					<dev:defaultValue>None</dev:defaultValue>
 				</command:parameter>
 				<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+					<maml:name>Detailed</maml:name>
+					<maml:description>
+						<maml:para>This parameter is available in version 3.8.1 or later of the module.</maml:para>
+						<maml:para>The Detailed switch enhances the output of the command by providing more comprehensive information. You don't need to specify a value with this switch.</maml:para>
+						<maml:para>This switch returns detailed insights, including related policies and their effectiveness.</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">Exchange Online</command:parameterValue>
+					<dev:type>
+						<maml:name>Exchange Online</maml:name>
+						<maml:uri />
+					</dev:type>
+					<dev:defaultValue>None</dev:defaultValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
 					<maml:name>ResultSize</maml:name>
 					<maml:description>
 						<maml:para>This parameter is reserved for internal Microsoft use.</maml:para>
@@ -5690,6 +5702,20 @@
 				<dev:defaultValue>None</dev:defaultValue>
 			</command:parameter>
 			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+				<maml:name>Detailed</maml:name>
+				<maml:description>
+					<maml:para>This parameter is available in version 3.8.1 or later of the module.</maml:para>
+					<maml:para>The Detailed switch enhances the output of the command by providing more comprehensive information. You don't need to specify a value with this switch.</maml:para>
+					<maml:para>This switch returns detailed insights, including related policies and their effectiveness.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">Exchange Online</command:parameterValue>
+				<dev:type>
+					<maml:name>Exchange Online</maml:name>
+					<maml:uri />
+				</dev:type>
+				<dev:defaultValue>None</dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
 				<maml:name>ResultSize</maml:name>
 				<maml:description>
 					<maml:para>This parameter is reserved for internal Microsoft use.</maml:para>
@@ -5724,6 +5750,13 @@
 					<maml:para>This example returns the enablement state of the Reflection feature in Viva Insights for the group@contoso.com group.</maml:para>
 				</dev:remarks>
 			</command:example>
+			<command:example>
+				<maml:title>-------------------------- Example 3 --------------------------</maml:title>
+				<dev:code>Get-VivaModuleFeatureEnablement -ModuleId VivaInsights -FeatureId Reflection -Identity user@contoso.com -Detailed</dev:code>
+				<dev:remarks>
+					<maml:para>This example returns the enablement state of the Reflection feature in Viva Insights for the user@contoso.com user. Response is enhanced to provide additional information about the policies that are driving the feature's enablement state</maml:para>
+				</dev:remarks>
+			</command:example>
 		</command:examples>
 		<command:relatedLinks>
 			<maml:navigationLink>
@@ -5751,13 +5784,14 @@
 			<command:noun>VivaModuleFeaturePolicy</command:noun>
 			<maml:description>
 				<maml:para>This cmdlet is available only in the Exchange Online PowerShell module v3.2.0 or later. For more information, see About the Exchange Online PowerShell module (https://aka.ms/exov3-module).</maml:para>
-				<maml:para>Use the Get-VivaModuleFeaturePolicy cmdlet to view the access policies for a specified feature in a Viva module in Viva. Policies are used to restrict or grant access to the specified feature for specific users, groups, or the entire tenant. This cmdlet provides details about the policies, including the policy's identifier, name, and creation date.</maml:para>
+				<maml:para>Use the Get-VivaModuleFeaturePolicy cmdlet to view the access policies for a specified feature in a Viva module in Viva. Policies are used to restrict or grant access to the specified feature for specific users, groups, or the entire tenant. This cmdlet provides details about the policies, including the policy's identifier, name, and creation date. The cmdlet can filter policies based on MemberIds, allowing admins to view policies specific to certain users or groups.</maml:para>
 				<maml:para>For information about the parameter sets in the Syntax section below, see Exchange cmdlet syntax (https://learn.microsoft.com/powershell/exchange/exchange-cmdlet-syntax).</maml:para>
 			</maml:description>
 		</command:details>
 		<maml:description>
 			<maml:para>Use the Get-VivaModuleFeaturePolicy cmdlet to view the access policies for a specified feature in a Viva module in Viva.</maml:para>
 			<maml:para>You can view all policies for a specified feature in a Viva module in Viva. To view a specific policy, you can include the PolicyId parameter.</maml:para>
+			<maml:para>The cmdlet can filter policies based on MemberIds, allowing admins to view policies specific to certain users or groups.</maml:para>
 			<maml:para>You need to use the Connect-ExchangeOnline cmdlet to authenticate.</maml:para>
 			<maml:para>This cmdlet requires the .NET Framework 4.7.2 or later.</maml:para>
 			<maml:para>Currently, you need to be a member of the Global Administrators role or the roles that have been assigned at the feature level to run this cmdlet.</maml:para>
@@ -5819,6 +5853,60 @@
 					<dev:defaultValue>None</dev:defaultValue>
 				</command:parameter>
 			</command:syntaxItem>
+			<command:syntaxItem>
+				<maml:name>Get-VivaModuleFeaturePolicy</maml:name>
+				<command:parameter required="false" variableLength="true" globbing="true" pipelineInput="False" position="named" aliases="none">
+					<maml:name>FeatureId</maml:name>
+					<maml:description>
+						<maml:para>The FeatureId parameter specifies the feature in the Viva module that you want to view the policies for.</maml:para>
+						<maml:para>To view details about the features in a Viva module that support feature access controls, refer to the Get-VivaModuleFeature cmdlet. The details provided by the Get-VivaModuleFeature cmdlet include the feature identifier.</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+					<dev:type>
+						<maml:name>String</maml:name>
+						<maml:uri />
+					</dev:type>
+					<dev:defaultValue>None</dev:defaultValue>
+				</command:parameter>
+				<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+					<maml:name>ModuleId</maml:name>
+					<maml:description>
+						<maml:para>The ModuleId parameter specifies the Viva module of the feature policies that you want to view.</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+					<dev:type>
+						<maml:name>String</maml:name>
+						<maml:uri />
+					</dev:type>
+					<dev:defaultValue>None</dev:defaultValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+					<maml:name>MemberIds</maml:name>
+					<maml:description>
+						<maml:para>This parameter is available in version 3.8.1 or later of the module.</maml:para>
+						<maml:para>The MemberIds parameter specifies the specific users or groups for which you want to view the policies for the feature in the Viva module.</maml:para>
+						<maml:para>You can provide up to three member IDs. Use the * character to specify all modules or features.</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+					<dev:type>
+						<maml:name>String[]</maml:name>
+						<maml:uri />
+					</dev:type>
+					<dev:defaultValue>None</dev:defaultValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+					<maml:name>ResultSize</maml:name>
+					<maml:description>
+						<maml:para>This parameter is reserved for internal Microsoft use.</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">Microsoft.Exchange.Management.RestApiClient.Unlimited`1[System.UInt32]</command:parameterValue>
+					<dev:type>
+						<maml:name>Microsoft.Exchange.Management.RestApiClient.Unlimited`1[System.UInt32]</maml:name>
+						<maml:uri />
+					</dev:type>
+					<dev:defaultValue>None</dev:defaultValue>
+				</command:parameter>
+			</command:syntaxItem>
 		</command:syntax>
 		<command:parameters>
 			<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
@@ -5860,6 +5948,20 @@
 				<dev:defaultValue>None</dev:defaultValue>
 			</command:parameter>
 			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+				<maml:name>MemberIds</maml:name>
+				<maml:description>
+					<maml:para>This parameter is available in version 3.8.1 or later of the module.</maml:para>
+					<maml:para>The MemberIds parameter specifies the specific users or groups for which you want to view the policies for the feature in the Viva module.</maml:para>
+					<maml:para>You can provide up to three member IDs. Use the * character to specify all modules or features.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+				<dev:type>
+					<maml:name>String[]</maml:name>
+					<maml:uri />
+				</dev:type>
+				<dev:defaultValue>None</dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
 				<maml:name>ResultSize</maml:name>
 				<maml:description>
 					<maml:para>This parameter is reserved for internal Microsoft use.</maml:para>
@@ -5893,7 +5995,21 @@
 				<dev:remarks>
 					<maml:para>This example returns details about a specific policy added for the Reflection feature in Viva Insights.</maml:para>
 				</dev:remarks>
-			</command:example>			
+			</command:example>
+			<command:example>
+				<maml:title>-------------------------- Example 3 --------------------------</maml:title>
+				<dev:code>Get-VivaModuleFeaturePolicy -ModuleId VivaInsights -FeatureId Reflection -MemberIds user1@contoso.com</dev:code>
+				<dev:remarks>
+					<maml:para>This example returns details about the policies for the Reflection feature in Viva Insights that apply to the user with the email user1@contoso.com.</maml:para>
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>-------------------------- Example 4 --------------------------</maml:title>
+				<dev:code>Get-VivaModuleFeaturePolicy -ModuleId * -FeatureId * -MemberIds user1@contoso.com,group1@contoso.com</dev:code>
+				<dev:remarks>
+					<maml:para>This example returns details about the policies for all features across all Viva modules that apply to the user with the email user1@contoso.com and the group with the email group1@contoso.com.</maml:para>
+				</dev:remarks>
+			</command:example>
 		</command:examples>
 		<command:relatedLinks>
 			<maml:navigationLink>
@@ -6026,7 +6142,6 @@
 		</command:details>
 		<maml:description>
 			<maml:para>Use the Remove-VivaModuleFeaturePolicy cmdlet to delete an access policy for a feature in a Viva module in Viva.</maml:para>
-      		<maml:para>Support for categories is available in version 3.5.0-Preview2 or later of the module.</maml:para>
 			<maml:para>You need to use the Connect-ExchangeOnline cmdlet to authenticate.</maml:para>
 			<maml:para>This cmdlet requires the .NET Framework 4.7.2 or later.</maml:para>
 			<maml:para>Currently, you need to be a member of the Global Administrators role or the roles that have been assigned at the feature level to run this cmdlet.</maml:para>
@@ -6453,11 +6568,9 @@
 		<command:examples>
 			<command:example>
 				<maml:title>-------------------------- Example 1 --------------------------</maml:title>
-				<dev:code>
-					Set-DefaultTenantBriefingConfig -IsEnabledByDefault Opt-in
+				<dev:code>Set-DefaultTenantBriefingConfig -IsEnabledByDefault Opt-in
 
-					This example sets the default Briefing email configuration for the organization to receive the Briefing email.
-				</dev:code>
+This example sets the default Briefing email configuration for the organization to receive the Briefing email.</dev:code>
 				<dev:remarks>
 					<maml:para></maml:para>
 				</dev:remarks>
@@ -7179,21 +7292,21 @@
 				<maml:para>Use the Update-VivaModuleFeaturePolicy cmdlet to update an access policy for a feature in a Viva module in Viva.</maml:para>
 				<maml:para>- You can't update a policy for a particular user or group to include the entire tenant if a policy for the entire tenant already exists for the feature. Only one tenant-wide policy is supported.</maml:para>
 				<maml:para>- Policies assigned to a specific user or group take priority over the policy assigned to the entire tenant when determining whether a feature is enabled. If a user has multiple policies assigned for a feature (directly as a user or member of a group), the most restrictive policy applies.</maml:para>
-        		<maml:para>- Some features only support policies that apply to the entire tenant, not specific users or groups. You can refer to supported policy scopes for a feature using the Get-VivaModuleFeature (https://learn.microsoft.com/powershell/module/exchange/get-vivamodulefeature)cmdlet.</maml:para>
+				<maml:para>- Some features only support policies that apply to the entire tenant, not specific users or groups. You can refer to supported policy scopes for a feature using the Get-VivaModuleFeature (https://learn.microsoft.com/powershell/module/exchange/get-vivamodulefeature)cmdlet.</maml:para>
 				<maml:para>Some features include the option for user controls (user opt out). Refer to the feature documentation to see if user controls are available for the feature that you intend to set a policy for.</maml:para>
 				<maml:para>For information about the parameter sets in the Syntax section below, see Exchange cmdlet syntax (https://learn.microsoft.com/powershell/exchange/exchange-cmdlet-syntax).</maml:para>
 			</maml:description>
 		</command:details>
 		<maml:description>
 			<maml:para>Use the Update-VivaModuleFeaturePolicy cmdlet to update an access policy for a feature in a Viva module in Viva.</maml:para>
-      		<maml:para>This cmdlet updates the attributes of the policy that you specify. These attributes include:</maml:para>
+			<maml:para>This cmdlet updates the attributes of the policy that you specify. These attributes include:</maml:para>
 			<maml:para>- The policy name (Name parameter).</maml:para>
 			<maml:para>- Whether or not the policy enables the feature (IsFeatureEnabled parameter).</maml:para>
-      		<maml:para>- Whether or not the policy enables user controls (IsUserControlEnabled parameter, only applicable to a feature policy).</maml:para>
+			<maml:para>- Whether or not the policy enables user controls (IsUserControlEnabled parameter, only applicable to a feature policy).</maml:para>
 			<maml:para>- Who the policy applies to (the UserIds and GroupIds parameters or the Everyone parameter).</maml:para>
 			<maml:para></maml:para>
 			<maml:para>You can update these attributes independently of each other. For example, if you specify the Name parameter but not the IsFeatureEnabled parameter, the name of the policy is updated but whether or not the policy enables the feature remains unchanged. Important : Values that you specify for the UserIds and/or GroupIds parameters or the Everyone parameter overwrite any existing users or groups. To preserve the existing users and groups, you need to specify those existing users or groups and any additional users or groups that you want to add. Not including existing users or groups in the command effectively removes those specific users or groups from the policy. For more information, see the examples.</maml:para>
-      		<maml:para>You need to use the Connect-ExchangeOnline cmdlet to authenticate.</maml:para>
+			<maml:para>You need to use the Connect-ExchangeOnline cmdlet to authenticate.</maml:para>
 			<maml:para>This cmdlet requires the .NET Framework 4.7.2 or later.</maml:para>
 			<maml:para>Currently, you need to be a member of the Global Administrators role or the roles that have been assigned at the feature level to run this cmdlet.</maml:para>
 			<maml:para>To learn more about assigned roles at the feature level, see Features Available for Feature Access Management (https://learn.microsoft.com/viva/feature-access-management#features-available-for-feature-access-management).</maml:para>
@@ -7325,9 +7438,9 @@
 					<maml:name>IsUserOptedInByDefault</maml:name>
 					<maml:description>
 						<maml:para>This parameter is available in version 3.8.0-Preview2 or later of the module.</maml:para>
-						<maml:para>The IsUserOptedInByDefault parameter specifies whether user opted in by default by the policy. Valid values are:</maml:para>
-						<maml:para>- $true: User is Opted in by default by the policy if the user has not set a preference.</maml:para>
-						<maml:para>- $false: User is Opted out by default by the policy if the user has not set a preference.</maml:para>
+						<maml:para>The IsUserOptedInByDefault parameter specifies whether users are opted in by default by the policy. Valid values are:</maml:para>
+						<maml:para>- $true: By default, users are opted in by the policy if the user hasn't set a preference.</maml:para>
+						<maml:para>- $false: By default, users are opted out by the policy if the user hasn't set a preference.</maml:para>
 						<maml:para></maml:para>
 						<maml:para>This parameter is optional and can be used to override the default user opt-in value set in the feature metadata.</maml:para>
 						<maml:para>This parameter can be set only when the IsUserControlEnabled parameter is set to $true.</maml:para>
@@ -7338,8 +7451,8 @@
 						<maml:uri />
 					</dev:type>
 					<dev:defaultValue>None</dev:defaultValue>
-					</command:parameter>
-					<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+				</command:parameter>
+				<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
 					<maml:name>Name</maml:name>
 					<maml:description>
 						<maml:para>The Name parameter specifies the updated name for the policy. The maximum length is 256 characters. If the value contains spaces, enclose the value in quotation marks (").</maml:para>
@@ -7517,18 +7630,18 @@
 			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
 				<maml:name>IsUserOptedInByDefault</maml:name>
 				<maml:description>
-				<maml:para>This parameter is available in version 3.8.0-Preview2 or later of the module.</maml:para>
-				<maml:para>The IsUserOptedInByDefault parameter specifies whether user opted in by default by the policy. Valid values are:</maml:para>
-				<maml:para>- $true: User is Opted in by default by the policy if the user has not set a preference.</maml:para>
-				<maml:para>- $false: User is Opted out by default by the policy if the user has not set a preference.</maml:para>
-				<maml:para></maml:para>
-				<maml:para>This parameter is optional and can be used to override the default user opt-in value set in the feature metadata.</maml:para>
-				<maml:para>This parameter can be set only when the IsUserControlEnabled parameter is set to $true.</maml:para>
+					<maml:para>This parameter is available in version 3.8.0-Preview2 or later of the module.</maml:para>
+					<maml:para>The IsUserOptedInByDefault parameter specifies whether users are opted in by default by the policy. Valid values are:</maml:para>
+					<maml:para>- $true: By default, users are opted in by the policy if the user hasn't set a preference.</maml:para>
+					<maml:para>- $false: By default, users are opted out by the policy if the user hasn't set a preference.</maml:para>
+					<maml:para></maml:para>
+					<maml:para>This parameter is optional and can be used to override the default user opt-in value set in the feature metadata.</maml:para>
+					<maml:para>This parameter can be set only when the IsUserControlEnabled parameter is set to $true.</maml:para>
 				</maml:description>
 				<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
 				<dev:type>
-				<maml:name>Boolean</maml:name>
-				<maml:uri />
+					<maml:name>Boolean</maml:name>
+					<maml:uri />
 				</dev:type>
 				<dev:defaultValue>None</dev:defaultValue>
 			</command:parameter>
@@ -7628,7 +7741,7 @@
 				<dev:code>Update-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowAISkills -PolicyId 3db38dfa-02a3-4039-b33a-42b0b3da029b -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false</dev:code>
 				<dev:remarks>
 					<maml:para>This example updates a policy for the ShowAISkills feature in Viva Skills. The policy enables the feature for the users previously added to the policy, allows user controls, and opted out users by default (Soft Disable policy).</maml:para>
-        		</dev:remarks>
+				</dev:remarks>
 			</command:example>
 		</command:examples>
 		<command:relatedLinks>

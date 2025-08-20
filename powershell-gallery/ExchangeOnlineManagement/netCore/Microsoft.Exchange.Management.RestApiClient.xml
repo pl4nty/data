@@ -6703,7 +6703,15 @@
             The identity the enablement for the feature refers to.
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeatureEnablement.Detailed">
+            <summary>
+            Flag to indicate whether detailed output is required.
+            </summary>
+        </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeatureEnablement.InternalProcessRecord">
+            <summary>
+            The business logic specific to this cmdlet.
+            </summary>
             <summary>
             The business logic specific to this cmdlet.
             </summary>
@@ -6713,6 +6721,16 @@
             This class implements "Get-VivaModuleFeaturePolicy" Cmdlet, 
             which gets the specific policy or policies and displays the policy data.
             This can either be a feature level policy.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.featureId">
+            <summary>
+            The feature identifier.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.moduleId">
+            <summary>
+            The module identifier.
             </summary>
         </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.ModuleId">
@@ -6730,9 +6748,28 @@
             The policy identifier of the policy to get.
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.MemberIds">
+            <summary>
+            The member identifier of the policy or policies to get.
+            </summary>
+        </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.InternalProcessRecord">
             <summary>
             The business logic specific to this cmdlet.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.ProcessFeaturePolicy">
+            <summary>
+            Processes the feature policy based on the provided ModuleId and FeatureId.
+            If PolicyId is not specified, retrieves all module feature policies.
+            Otherwise, retrieves the specific module feature policy identified by PolicyId.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.GetVivaModuleFeaturePolicy.ProcessFeaturePolicyWithMembers">
+            <summary>
+            Processes the feature policy with members based on the provided ModuleId and FeatureId.
+            If FeatureId is not specified, sets it to "*".
+            Retrieves all module feature policies with the specified member identifiers.
             </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Cmdlets.RemoveVivaModuleFeaturePolicy">
@@ -6857,6 +6894,11 @@
             The string used for parameter set name
             </summary>
         </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.FeaturePolicyWithMembers">
+            <summary>
+            The string used for parameter set name
+            </summary>
+        </member>
         <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.ApiV1">
             <summary>
             The API path prefix for V! of the GFAC API
@@ -6899,13 +6941,23 @@
             <param name="featureId">The feature identifier.</param>
             <returns>The URI for the endpoint.</returns>
         </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.UsersEffectiveEnablementUri(System.String,System.String,System.String)">
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.AllVivaModuleFeaturePolicyWithMemberIdUri(System.String,System.String,System.String)">
+            <summary>
+            The endpoint to interact with all Policies of a Viva Module Feature with memberId.
+            </summary>
+            <param name="moduleId">The module identifier.</param>
+            <param name="featureId">The feature identifier.</param>
+            <param name="memberIdFilter">The memberIds to filter policies by.</param>
+            <returns>The URI for the endpoint.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.GFACConstants.UsersEffectiveEnablementUri(System.String,System.String,System.String,System.Boolean)">
             <summary>
             The endpoint to interact with a specific email's effective enablement for a Module Feature.
             </summary>
             <param name="moduleId">The module identifier.</param>
             <param name="featureId">The feature identifier.</param>
             <param name="email">The user or group's identifier</param>
+            <param name="detailed">Expand response data to include effective policies</param>
             <returns>The URI for the endpoint.</returns>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation">
@@ -6964,6 +7016,28 @@
             Access defined for all users in the tenant.
             </summary>
         </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectivePolicy">
+            <summary>
+            Model for EffectivePolicy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectivePolicy.PolicyId">
+            <summary>
+            The unique identifier for the policy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectivePolicy.Effective">
+            <summary>
+            Whether the policy is effective.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectivePolicy.#ctor(System.String,System.Boolean)">
+            <summary>
+            Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectivePolicy"/> class
+            </summary>
+            <param name="policyId">The unique identifier of the policy.</param>        
+            <param name="effective">Indicates whether the policy is effective.</param>
+        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectiveEnablement">
             <summary>
             Represents the effective enablement of a specific Feature.
@@ -6979,12 +7053,30 @@
             Whether the feature is effectively enabled.
             </summary>
         </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectiveEnablement.#ctor(System.String,System.Boolean)">
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectiveEnablement.ModuleId">
+            <summary>
+            The identifier of the module.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectiveEnablement.Policies">
+            <summary>
+            List of effective policies.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectiveEnablement.#ctor(System.String,System.Boolean,System.Collections.Generic.List{Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectivePolicy})">
             <summary>
             Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectiveEnablement"/> class.
             </summary>
             <param name="featureId">The identifier of the feature.</param>
             <param name="enabled">Whether the feature is effectively enabled.</param>
+            <param name="policies">Effective policies associated with the module and feature.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.EffectiveEnablement.CreateEffectiveEnablementDisplay(System.Boolean)">
+            <summary>
+            Formats the printing of the EffectiveEnablement object.
+            </summary>
+            <param name="detailed">Indicates whether detailed output is required.</param>
+            <returns>A string representation of the EffectiveEnablement object.</returns>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Feature">
             <summary>
@@ -7075,6 +7167,51 @@
             </summary>
             <returns>The write-friendly object for display in PowerShell.</returns>
         </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastModifiedSource">
+            <summary>
+            Identifies who did the last modification (administrator/system)
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastModifiedSource.System">
+            <summary>
+            Used when system initiates the request for the modification
+            This will be used when system mailboxes (arbitration mailbox, for example) starts the modification. This will happen mostly in calls from background processors. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastModifiedSource.Admin">
+            <summary>
+            Used when administrator initiates the request for the modification
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastPolicyModificationDetails">
+            <summary>
+            Stores details from who did the last modification to the policy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastPolicyModificationDetails.LastModifiedSource">
+            <summary>
+            properties should be updated when an administrator/system modifies a policy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastPolicyModificationDetails.LastModifiedUPN">
+            <summary>
+            The UPN of the last admin who made the modification. 
+            NULL if the source of modification is SYSTEM
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastPolicyModificationDetails.#ctor(Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastModifiedSource,System.String)">
+            <summary>
+            Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastPolicyModificationDetails"/> class.
+            </summary>
+            <param name="lastModifiedSource">The source of the last modification (admin or system).</param>
+            <param name="lastModifiedUpn">The upn of who did the last modification.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastPolicyModificationDetails.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>The object in a string format</returns>
+        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy">
             <summary>
             Policy model class.
@@ -7105,6 +7242,11 @@
             Time when policy was created.
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.LastModificationDetails">
+            <summary>
+            Details of the author of the last modification made into this policy
+            </summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.IsFeatureDisabled">
             <summary>
             Whether the policy serves to enable or disable the associated feature for the associated access control list.
@@ -7126,7 +7268,12 @@
             Access control information to which this policy is applied.
             </summary>
         </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.#ctor(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Nullable{System.Boolean},System.Nullable{System.Boolean},Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[])">
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.ModuleId">
+            <summary>
+            The identifier of the module.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy.#ctor(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastPolicyModificationDetails,System.Boolean,System.Nullable{System.Boolean},System.Nullable{System.Boolean},Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[])">
             <summary>
             Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy"/> class
             </summary>
@@ -7135,6 +7282,7 @@
             <param name="policyId">The unique identifier for the policy.</param>
             <param name="modifiedOn">Time when policy was last modified.</param>
             <param name="createdOn">Time when policy was created.</param>
+            <param name="lastModificationDetails">Details of who did last modification to policy.</param>
             <param name="isFeatureDisabled">Whether the policy serves to enable or disable the associated feature for the associated access control list.</param>
             <param name="isUserControlEnabled">Whether the policy serves to enable or disable the user control.</param>
             <param name="isUserOptedInByDefault">Default opt-in state for users when user control is enabled.</param> 
@@ -7186,6 +7334,121 @@
             <param name="isUserControlEnabled">Whether the policy serves to enable or disable the user control.</param>     
             <param name="isUserOptedInByDefault">Default opt-in state for users when user control is enabled.</param>
             <param name="accessControlList">Access control information to which this policy is applied.</param>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter">
+            <summary>
+            Policy filter model class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.Name">
+            <summary>
+            Name of the policy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.FeatureId">
+            <summary>
+            Feature id to which the policy is associated with.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.PolicyId">
+            <summary>
+            The unique identifier for the policy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.ModifiedOn">
+            <summary>
+            Time when policy was last modified.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.CreatedOn">
+            <summary>
+            Time when policy was created.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.LastModificationDetails">
+            <summary>
+            Details of the author of the last modification made into this policy
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.IsFeatureDisabled">
+            <summary>
+            Whether the policy serves to enable or disable the associated feature for the associated access control list.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.IsUserControlEnabled">
+            <summary>
+            Whether the policy serves to enable or disable the user control.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.IsUserOptedInByDefault">
+            <summary>
+            Default opt-in state for users when user control is enabled.
+            When null, the default from feature configuration is used.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.AccessControlList">
+            <summary>
+            Access control information to which this policy is applied.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.ModuleId">
+            <summary>
+            The identifier of the module.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.FilterMatch">
+            <summary>
+            Contains the list of matched member to which the policy is associated with, for given filters.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.#ctor(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Nullable{System.Boolean},System.Nullable{System.Boolean},Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.AccessInformation[],System.String,Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList,Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.LastPolicyModificationDetails)">
+            <summary>
+            Constructor for the <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter"/> class
+            </summary>
+            <param name="name">Name of the policy.</param>
+            <param name="featureId">Feature id to which the policy is associated with.</param>
+            <param name="policyId">The unique identifier for the policy.</param>
+            <param name="modifiedOn">Time when policy was last modified.</param>
+            <param name="createdOn">Time when policy was created.</param>
+            <param name="isFeatureDisabled">Whether the policy serves to enable or disable the associated feature for the associated access control list.</param>
+            <param name="isUserControlEnabled">Whether the policy serves to enable or disable the user control.</param>
+            <param name="isUserOptedInByDefault">Default opt-in state for users when user control is enabled.</param>          
+            <param name="accessControlList">Access control information to which this policy is applied.</param>
+            <param name="moduleId">Module id to which the policy is assoicated with.</param>        
+            <param name="matchedMembersList">List of memberIds to filter on.</param>
+            <param name="lastModificationDetails">Details of who did last modification to policy.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilter.CreatePolicyDisplay">
+            <summary>
+            Creates an object used for friendly display of the policy within PowerShell.
+            </summary>
+            <returns>The write-friendly object for display in PowerShell.</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilterResponse">
+            <summary>
+            Policy filter response model class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilterResponse.Policies">
+            <summary>
+            List of policies.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList">
+            <summary>
+            List of matched member class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList.#ctor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList"/> with the specified members list.
+            </summary>
+            <param name="members">members to match on</param>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList.MemberIds">
+            <summary>
+            Contains the list of matched member ids.
+            </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Service.VivaGFACHttpProvider">
             <summary>
@@ -7308,6 +7571,11 @@
             Regex pattern for id
             </summary>
         </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.FeatureMetadataValidations.FeatureIdWithSpecialCharRegexPattern">
+            <summary>
+            Regex pattern for the module id allowing special character '*'.
+            </summary>
+        </member>
         <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.FeatureMetadataValidations.MaxFeatureIdLength">
             <summary>
             Max feature id length.
@@ -7323,6 +7591,18 @@
             Throw if the provided feature id is invalid
             </summary>
             <param name="featureId">The feature id to be validated</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.FeatureMetadataValidations.ValidateFeatureIdWithSpecialChar(System.String)">
+            <summary>
+            Throw if the provided feature id is invalid, allowing special character '*'.
+            </summary>
+            <param name="featureId">The feature id to be validated</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.FeatureMetadataValidations.ValidateFeatureIdCommon(System.String)">
+            <summary>
+            Common validation logic for feature id.
+            </summary>
+            <param name="featureId">The feature id to be validated.</param>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.ModuleMetadataValidations">
             <summary>
@@ -7344,9 +7624,45 @@
             Regex pattern for the module id.
             </summary>
         </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.ModuleMetadataValidations.ModuleIdWithSpecialCharRegexPattern">
+            <summary>
+            Regex pattern for the module id allowing special character '*'.
+            </summary>
+        </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.ModuleMetadataValidations.ValidateModuleId(System.String)">
             <summary>
             Throw if the module id is invalid.
+            </summary>
+            <param name="moduleId">The module id to be validated.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.ModuleMetadataValidations.ValidateModuleIdWithSpecialChar(System.String)">
+            <summary>
+            Throw if the module id is invalid, allowing special character '*'.
+            </summary>
+            <param name="moduleId">The module id to be validated.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.ModuleMetadataValidations.ValidateMemberIdWithSpecialChar(System.String)">
+            <summary>
+            Throw if input query on member id is not an email, a GUID, or '*'.
+            </summary>
+            <param name="memberId">Member id to be validated.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.ModuleMetadataValidations.ValidateMemberIdsWithSpecialChar(System.String[])">
+            <summary>
+            Throw if any member id is not an email, a GUID, or '*'.
+            </summary>
+            <param name="memberIds">MemberIds to be validated.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.ModuleMetadataValidations.ValidateEmail(System.String)">
+            <summary>
+            Validates that the user UPN input is a properly formatted email.
+            </summary>
+            <param name="input">The input to be validated as an email.</param>
+            <returns>Boolean if input is valid or not.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Validation.ModuleMetadataValidations.ValidateModuleIdCommon(System.String)">
+            <summary>
+            Common validation logic for module id.
             </summary>
             <param name="moduleId">The module id to be validated.</param>
         </member>
@@ -7570,13 +7886,23 @@
             <param name="featureId">The identifier of the feature.</param>
             <returns>The policies of the provided module feature.</returns>
         </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.GetUsersEffectiveEnablementAsync(System.String,System.String,System.String)">
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.GetAllModuleFeaturePolicyWithMemberIdAsync(System.String,System.String,System.String[])">
+            <summary>
+            Gets an array of all of the policies of one of a module's features. 
+            </summary>
+            <param name="moduleId">The identifier of the module.</param>
+            <param name="featureId">The identifier of the feature.</param>
+            <param name="memberIds">The member ids that we want to filter response by.</param>
+            <returns>The policies of the provided module feature.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.GetUsersEffectiveEnablementAsync(System.String,System.String,System.String,System.Boolean)">
             <summary>
             Gets the effective enablement for the email with regards to a specific module feature.
             </summary>
             <param name="moduleId">The identifier for the module.</param>
             <param name="featureId">The feature of which to fetch the effective enablement.</param>
             <param name="email">The identity of the user or group.</param>
+            <param name="detailed">Expand response data to include effective policies</param>
             <returns>The effective enablement for the user for the specified feature.</returns>
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.VivaGFACCmdlet`2.ProcessWithRetryAsync``1(System.Func{System.Threading.Tasks.Task{``0}})">
