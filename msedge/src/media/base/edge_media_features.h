@@ -249,7 +249,11 @@ BASE_DECLARE_FEATURE(kWebView2NoTabForScreenShare);
 
 #if BUILDFLAG(IS_ANDROID)
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kEdgeAndroidUseExoPlayer);
+BASE_DECLARE_FEATURE(kEdgeMobileBackgroundPlay);
+COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
+extern const base::FeatureParam<bool> kBackgroundPlayDefaultOn;
+COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
+bool ShouldEnableBackgroundPlayInSettings();
 #endif
 
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES) bool IsEdgeWebView2TextureStreamEnabled();

@@ -195,8 +195,7 @@ void BeaconDetect::ResetBeaconValue() {
     WriteBeaconValueToRegistry(beacon_index_, beacon_value_);
   } else if (beacon_value_ == kIndirectDetectLocked ||
              beacon_value_ == kIndirectDetectDisableFeature ||
-             beacon_value_ == kIndirectDetectDisableFeatureSend ||
-             beacon_value_ == 0) {
+             beacon_value_ == kIndirectDetectDisableFeatureSend) {
     // kIndirectDetectLocked indicates that another feature has detected an
     // indirect crash We should retain the beacon value for the next instance to
     // determine if the crash is related to this feature.
