@@ -995,7 +995,6 @@
         "FlightingBatchUpdateResourceGroupAndPublicIPUsageEntity": true,
         "FlightingDetector": true,
         "FlightingDisableDefaultOutboundForImageSubnet": true,
-        "FlightingEnableCOGSForExplicitOutboundType": true,
         "FlightingEnableGetSessionCountForOutboundSwitch": true,
         "FlightingEnableNATGWAsOutboundAccess": true,
         "FlightingEnableOutboundDecisionEngineResult": true,
