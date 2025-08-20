@@ -13,7 +13,8 @@
         "Aspen": {
             "ConnectWithPolicyTimeout": true,
             "EnableMultiCloudPcSelector": true,
-            "IncludePartnersInApiResponse": true
+            "IncludePartnersInApiResponse": true,
+            "LockOnDisconnect": true
         },
         "AssignAudit": false,
         "BackFillGroupLicenseAssignmentId": true,
@@ -1027,7 +1028,6 @@
         "Nh_CloudApps": true,
         "Nh_Disable_WebCodecs_Firefox": true,
         "Nh_Enable_Drag_And_Drop": true,
-        "Nh_Enable_Extended_Clipboard": true,
         "Nh_Enable_Iframe_Support": true,
         "Nh_Enable_Monitor_Resize": true,
         "Nh_Enable_Request_Caching": true,
@@ -1068,6 +1068,7 @@
         "RASEnableExtendVSBGracePeriodTo7Days": true,
         "RASEnablePatchCloudPcPowerState": true,
         "RASEnablePatchWorkspacePowerState": true,
+        "RASExposeComputeSkuToFlexAndVSB": true,
         "RASGenerateProvisionWorkitemWhileDeprovisioning": true,
         "RASHandleAbuseTenant": true,
         "RASKeepProvisionRequestWhenDeprovisioning": true,

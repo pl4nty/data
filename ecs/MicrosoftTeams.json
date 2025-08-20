@@ -1850,7 +1850,9 @@
         },
         "ODSPFeatureFlags": {
             "DisableAtMentionSuggestionInWelcomeMessage": true,
+            "EnableAttachAppIdToSendActivity": true,
             "EnableBizchatIntegration": true,
+            "EnableGetAppIdFromTurnContext": true,
             "EnableMessageSensitivityLabel": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
             "EnableShowTypingMiddleware": true,
@@ -1917,6 +1919,7 @@
         "enableNewHomePage": true,
         "enableOAuthChoiceForMessagingExtensions": true,
         "enableOAuthConfiguration": true,
+        "enableOAuthTokenExchangeMethodType": true,
         "enablePKCEforOAuth": true,
         "enablePackageEditor": true,
         "enablePreviewOffer": true,
