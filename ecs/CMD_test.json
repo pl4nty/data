@@ -21,6 +21,7 @@
             "EnableReconnectOnUnlock": true,
             "EnableTeamsVdi2": true,
             "IncludePartnersInApiResponse": true,
+            "LockOnDisconnect": true,
             "SpeculateForFLS": true
         },
         "AssignAudit": true,

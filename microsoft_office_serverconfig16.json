@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19206.40125-->
+    <!--Build: 16.0.19211.40126-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -160,76 +160,76 @@
       <o:url>https://insertmedia.bing.office.net/images/hosted?host=office&amp;adlt=strict&amp;hostType=ImmersiveApp</o:url>
     </o:service>
     <o:service o:name="HomeRealmDiscovery">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/emailhrd</o:url>
     </o:service>
     <o:service o:name="GetFederationProvider">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd/getfederationprovider</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/emailhrd/getfederationprovider</o:url>
     </o:service>
     <o:service o:name="GetIdentityProvider">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd/getidp</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/emailhrd/getidp</o:url>
     </o:service>
     <o:service o:name="ODCServicesCatalog">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/catalog</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/catalog</o:url>
     </o:service>
     <o:service o:name="ODCSites" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/v{0}/sites</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/v{0}/sites</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
     </o:service>
     <o:service o:name="ODCUserConnectedServices" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/userconnected</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/userconnected</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
     </o:service>
     <o:service o:name="ODCManageServiceRedir" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/manageserviceredir.aspx</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/manageserviceredir.aspx</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com" o:headerName="X-Office-Auth-ODCSM"/>
     </o:service>
     <o:service o:name="ODCSMAddRepairService" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/liveredir</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/liveredir</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com" o:headerName="X-Office-Auth-ODCSM"/>
     </o:service>
     <o:service o:name="ODCSMManageService" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/liveredir</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/liveredir</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com" o:parameterName="t"/>
     </o:service>
     <o:service o:name="ODCSMServiceAdded" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/serviceadd</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/serviceadd</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
     </o:service>
     <o:service o:name="ODCSMServiceDetails" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/servicedetails</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/servicedetails</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
     </o:service>
     <o:service o:name="ODCSMServiceRemoved" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/serviceremove</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/serviceremove</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
     </o:service>
     <o:service o:name="ODCSMReportServiceError" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/servicemanager/reportserviceerror</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/servicemanager/reportserviceerror</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
     </o:service>
     <o:service o:name="ODCClientDeveloperHelp">
-      <o:url>https://odc.officeapps.live.com/odc/help/clientdeveloper</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/help/clientdeveloper</o:url>
     </o:service>
     <o:service o:name="DSIRoamingSettings" o:authentication="2">
-      <o:url>https://roaming.officeapps.live.com/rs/RoamingSoapService.svc</o:url>
+      <o:url>https://roaming.svc.cloud.microsoft/rs/RoamingSoapService.svc</o:url>
       <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="RoamingSettings" o:authentication="2">
-      <o:url>https://roaming.officeapps.live.com/rs/v1/settings</o:url>
+      <o:url>https://roaming.svc.cloud.microsoft/rs/v1/settings</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
@@ -858,6 +858,9 @@
     <o:service o:name="PPTTextTranslationHandler">
       <o:url>https://voice.officeapps.live.com/TextTranslationHandler.ashx</o:url>
     </o:service>
+    <o:service o:name="PPTALTextTranslationHandler">
+      <o:url>https://augloop.svc.cloud.microsoft</o:url>
+    </o:service>
     <o:service o:name="PPTOasisFD">
       <o:url>https://pptsgs.officeapps.live.com/pptsgs/FrontDoor.ashx</o:url>
     </o:service>
@@ -1256,10 +1259,10 @@
       <o:url>https://r4.res.office365.com/footprintconfig/v1.7/scripts/fpconfig.json</o:url>
     </o:service>
     <o:service o:name="AutoDetectProdAPIUrl">
-      <o:url>https://prod-global-autodetect.acompli.net/autodetect</o:url>
+      <o:url>https://prod-autodetect.outlookmobile.com/autodetect</o:url>
     </o:service>
     <o:service o:name="AutoDetectTestAPIUrl">
-      <o:url>https://dev0-api.acompli.net/autodetect</o:url>
+      <o:url>https://dev-autodetect.outlookmobile.com/autodetect</o:url>
     </o:service>
     <o:service o:name="FlowBaseHostUrl">
       <o:url>https://flow.microsoft.com</o:url>
@@ -1317,6 +1320,7 @@
     </o:service>
     <o:service o:name="LoopWebServiceBaseURL" o:authentication="2">
       <o:url>https://prod.api.loop.cloud.microsoft/</o:url>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://api.loop.cloud.microsoft/.default" o:headerValue="{}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="21e903d7-8d1b-423b-b5e9-4f2afe3b28e1" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="MeControlLiveIDUrl">
@@ -1376,6 +1380,9 @@
     <o:service o:name="DesignerCanaryCanvas">
       <o:url>https://designerapp.azurewebsites.net</o:url>
     </o:service>
+    <o:service o:name="DesignerAuthScope">
+      <o:url>https://designerappservice.officeapps.live.com/.default</o:url>
+    </o:service>
     <o:service o:name="DesignerDAS">
       <o:url>https://designerapp.officeapps.live.com/designerapp</o:url>
     </o:service>
@@ -1392,10 +1399,10 @@
       <o:url>https://cdn.designerapp.osi.office.net/designerapp/fonts</o:url>
     </o:service>
     <o:service o:name="DesignerFontService">
-      <o:url>https://fs.microsoft.com/fs</o:url>
+      <o:url>https://res.cdn.office.net/mro1cdnstorage/fonts/prod</o:url>
     </o:service>
     <o:service o:name="DesignerFontServiceWithVersion">
-      <o:url>https://fs.microsoft.com/fs/DesignerFonts/1.7</o:url>
+      <o:url>https://res.cdn.office.net/mro1cdnstorage/fonts/prod/DesignerFonts/1.9</o:url>
     </o:service>
     <o:service o:name="DesignerCDN">
       <o:url>https://cdn.designerapp.osi.office.net</o:url>
@@ -1693,11 +1700,11 @@
     </o:service>
     <o:service o:name="FamilyOnboardingAggregator">
       <o:url>https://onboardingaggregator.family.microsoft.com</o:url>
-      <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="https://onboardingaggregator.family.microsoft.com"/>
+      <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="onboardingaggregator.family.microsoft.com"/>
     </o:service>
     <o:service o:name="FamilyOnboardingShareableLink">
       <o:url>https://onboardingaggregator.family.microsoft.com/api/v1/shareable-link</o:url>
-      <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="https://onboardingaggregator.family.microsoft.com"/>
+      <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="onboardingaggregator.family.microsoft.com"/>
     </o:service>
     <o:service o:name="UniversalPrintIPPResource">
       <o:url>https://print.print.microsoft.com</o:url>
@@ -1711,10 +1718,12 @@
     </o:service>
     <o:service o:name="OCMSubstrateHost" o:authentication="2">
       <o:url>https://substrate.office.com</o:url>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://substrate.office.com/.default" o:headerValue="{}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://substrate.office.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OCMSubstrateValidateGpt" o:authentication="2">
       <o:url>https://substrate.office.com/m365Copilot/ValidateGpt</o:url>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://substrate.office.com/sydney/v2/.default" o:headerValue="{}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://substrate.office.com/sydney" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OCMReputationTokenHost">
@@ -1881,7 +1890,7 @@
       <o:url>https://messaging.lifecycle.office.com/getcustommessage16</o:url>
     </o:service>
     <o:service o:name="StoreUserStatus" o:authentication="2">
-      <o:url>https://odc.officeapps.live.com/odc/api/storeuserstatus</o:url>
+      <o:url>https://discovery.svc.cloud.microsoft/odc/api/storeuserstatus</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="LegacySetUserAction">
@@ -2220,6 +2229,7 @@
     <o:token o:name="TMS.AdalAuthority">https://login.windows.net/common/oauth2/authorize</o:token>
     <o:token o:name="TOC.BaseHost">templates.office.com</o:token>
     <o:token o:name="OneDriveApi.BaseHost">api.onedrive.com</o:token>
+    <o:token o:name="OCDI.BaseHost">cloud.microsoft</o:token>
     <o:token o:name="OSI.BaseHost">officeapps.live.com</o:token>
     <o:token o:name="OSI.BaseHost.Global">officeapps.live.com</o:token>
     <o:token o:name="OSI.ONETBaseHost">osi.office.net</o:token>
@@ -2295,6 +2305,7 @@
     <o:token o:name="EnablePPTRehearsal">true</o:token>
     <o:token o:name="EnablePPTSpeechHttpsHandler">true</o:token>
     <o:token o:name="EnablePPTTextTranslationHandler">true</o:token>
+    <o:token o:name="EnablePPTALTextTranslationHandler">true</o:token>
     <o:token o:name="ForceDisablePPTPresentInTeams">false</o:token>
     <o:token o:name="EnableOfficeMobileVoice">true</o:token>
     <o:token o:name="EnableOfficeMobileFeed">true</o:token>
