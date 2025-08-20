@@ -2755,6 +2755,24 @@
             <param name="currentResourceType">The resource type to be evaluated.</param>
             <returns>True if the navigation source should have key.</returns>
         </member>
+        <member name="M:Microsoft.OData.EdmExtensionMethods.TryParse(Microsoft.OData.Edm.IEdmEnumType,System.Int64,Microsoft.OData.Edm.IEdmEnumMember@)">
+            <summary>
+            Parse an enum integral value to enum member.
+            </summary>
+            <param name="enumType">edm enum type</param>
+            <param name="value">input integral value.</param>
+            <param name="enumMember">parsed result.</param>
+            <returns>true if parse succeeds, false if parse fails.</returns>
+        </member>
+        <member name="M:Microsoft.OData.EdmExtensionMethods.ContainsMember(Microsoft.OData.Edm.IEdmEnumType,System.String,System.StringComparison)">
+            <summary>
+            Checks if the given member name exists in the enum type.
+            </summary>
+            <param name="enumType">The enum type.</param>
+            <param name="memberName">The member name to check.</param>
+            <param name="comparison">The comparison type to use for string comparison. Default is Ordinal.</param>
+            <returns>True if the member name exists in the enum type; otherwise, false.</returns>
+        </member>
         <member name="T:Microsoft.OData.ErrorUtils">
             <summary>
             Utility methods serializing the xml error payload
@@ -2784,19 +2802,48 @@
             <param name="includeDebugInformation">A flag indicating whether error details should be written (in debug mode only) or not.</param>
             <param name="maxInnerErrorDepth">The maximum number of nested inner errors to allow.</param>
         </member>
-        <member name="M:Microsoft.OData.ErrorUtils.WriteXmlError(System.Xml.XmlWriter,System.String,System.String,Microsoft.OData.ODataInnerError,System.Int32)">
+        <member name="M:Microsoft.OData.ErrorUtils.WriteXmlErrorAsync(System.Xml.XmlWriter,Microsoft.OData.ODataError,System.Boolean,System.Int32)">
             <summary>
-            Write an error message.
+            Asynchronously writes an error message.
             </summary>
             <param name="writer">The Xml writer to write to.</param>
-            <param name="code">The code of the error.</param>
-            <param name="message">The message of the error.</param>
-            <param name="innerError">Inner error details that will be included in debug mode (if present).</param>
+            <param name="error">The error instance to write.</param>
+            <param name="includeDebugInformation">A flag indicating whether error details should be written (in debug mode only) or not.</param>
+            <param name="maxInnerErrorDepth">The maximum number of nested inner errors to allow.</param>
+        </member>
+        <member name="M:Microsoft.OData.ErrorUtils.WriteXmlError(System.Xml.XmlWriter,System.String,System.String,Microsoft.OData.ODataInnerError,System.Int32)">
+            <summary>
+            Writes an error message.
+            </summary>
+            <param name="writer">The Xml writer to write to.</param>
+            <param name="code">The error code.</param>
+            <param name="message">The error message.</param>
+            <param name="innerError">The inner error details of the error that will be included in debug mode (if present).</param>
+            <param name="maxInnerErrorDepth">The maximum number of nested inner errors to allow.</param>
+        </member>
+        <member name="M:Microsoft.OData.ErrorUtils.WriteXmlErrorAsync(System.Xml.XmlWriter,System.String,System.String,Microsoft.OData.ODataInnerError,System.Int32)">
+            <summary>
+            Asynchronously writes an error message.
+            </summary>
+            <param name="writer">The Xml writer to write to.</param>
+            <param name="code">The error code.</param>
+            <param name="message">The error message.</param>
+            <param name="innerError">The inner error details of the error that will be included in debug mode (if present).</param>
             <param name="maxInnerErrorDepth">The maximum number of nested inner errors to allow.</param>
         </member>
         <member name="M:Microsoft.OData.ErrorUtils.WriteXmlInnerError(System.Xml.XmlWriter,Microsoft.OData.ODataInnerError,System.String,System.Int32,System.Int32)">
             <summary>
             Writes the inner exception information in debug mode.
+            </summary>
+            <param name="writer">The Xml writer to write to.</param>
+            <param name="innerError">The inner error to write.</param>
+            <param name="innerErrorElementName">The local name of the element representing the inner error.</param>
+            <param name="recursionDepth">The number of times this method has been called recursively.</param>
+            <param name="maxInnerErrorDepth">The maximum number of nested inner errors to allow.</param>
+        </member>
+        <member name="M:Microsoft.OData.ErrorUtils.WriteXmlInnerErrorAsync(System.Xml.XmlWriter,Microsoft.OData.ODataInnerError,System.String,System.Int32,System.Int32)">
+            <summary>
+            Asynchronously writes the inner exception information in debug mode.
             </summary>
             <param name="writer">The Xml writer to write to.</param>
             <param name="innerError">The inner error to write.</param>
@@ -12789,6 +12836,7 @@
             </summary>
             <returns>true if more items can be read from the reader; otherwise false.</returns>
         </member>
+        <!-- Badly formed XML comment ignored for member "M:Microsoft.OData.JsonLight.ODataJsonLightReader.ReadAtNestedPropertyInfoImplementationAsync" -->
         <member name="M:Microsoft.OData.JsonLight.ODataJsonLightReader.ReadAtStreamImplementation">
             <summary>
             Implementation of the reader logic when in state 'Stream'.
@@ -13251,6 +13299,23 @@
             Implementation of the reader logic when in state 'PropertyInfo'.
             </summary>
             <returns>true if more items can be read from the reader; otherwise false.</returns>
+            <remarks>
+            Pre-Condition:  JsonNodeType.Property:          there are more properties after the nested resource info in the owning resource
+            Post-Condition: JsonNodeType.StartObject        start of the expanded resource nested resource info to read next
+                            JsonNodeType.StartArray         start of the expanded resource set nested resource info to read next
+                            JsonNoteType.Primitive (null)   expanded null resource nested resource info to read next
+                            JsonNoteType.Property           property after deferred link or entity reference link
+                            JsonNodeType.EndObject          end of the parent resource
+            </remarks>
+        </member>
+        <member name="M:Microsoft.OData.JsonLight.ODataJsonLightReader.ReadAtNestedPropertyInfoAsynchronously">
+            <summary>
+            Asynchronous implementation of the reader logic when in state 'PropertyInfo'.
+            </summary>
+            <returns>
+            A task that represents the asynchronous read operation.
+            The value of the TResult parameter contains true if more items can be read from the reader; otherwise false
+            </returns>
             <remarks>
             Pre-Condition:  JsonNodeType.Property:          there are more properties after the nested resource info in the owning resource
             Post-Condition: JsonNodeType.StartObject        start of the expanded resource nested resource info to read next
@@ -23987,6 +24052,15 @@
         <member name="M:Microsoft.OData.Metadata.ODataMetadataWriterUtils.WriteError(System.Xml.XmlWriter,Microsoft.OData.ODataError,System.Boolean,System.Int32)">
             <summary>
             Write an error message.
+            </summary>
+            <param name="writer">The Xml writer to write to.</param>
+            <param name="error">The error instance to write.</param>
+            <param name="includeDebugInformation">A flag indicating whether error details should be written (in debug mode only) or not.</param>
+            <param name="maxInnerErrorDepth">The maximum number of nested inner errors to allow.</param>
+        </member>
+        <member name="M:Microsoft.OData.Metadata.ODataMetadataWriterUtils.WriteErrorAsync(System.Xml.XmlWriter,Microsoft.OData.ODataError,System.Boolean,System.Int32)">
+            <summary>
+            Asynchronously writes an error message.
             </summary>
             <param name="writer">The Xml writer to write to.</param>
             <param name="error">The error instance to write.</param>
@@ -63220,6 +63294,11 @@
         <member name="T:Microsoft.OData.ODataNullValue">
             <summary>
             Represents a null property value.
+            </summary>
+        </member>
+        <member name="F:Microsoft.OData.ODataNullValue.Instance">
+            <summary>
+            Returns a singleton instance of <see cref="T:Microsoft.OData.ODataNullValue"/>.
             </summary>
         </member>
         <member name="P:Microsoft.OData.ODataNullValue.IsNullValue">

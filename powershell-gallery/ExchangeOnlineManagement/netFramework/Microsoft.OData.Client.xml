@@ -367,6 +367,23 @@
             <param name="e">The expression to translate into a Uri</param>
             <returns>Query components</returns>
         </member>
+        <member name="M:Microsoft.OData.Client.DataServiceQueryProvider.GetValueForAny``1(System.Linq.Expressions.MethodCallExpression)">
+            <summary>
+            Transforms the 'any' query into a 'count' request since OData does not have a spcific query for 'any'.
+            Then the result is casted to the corresponding return type (boolean).
+            </summary>
+            <typeparam name="TElement">The return type.</typeparam>
+            <param name="mce">The original expression with predicate.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.OData.Client.DataServiceQueryProvider.NestPredicateExpression(System.Linq.Expressions.MethodCallExpression)">
+            <summary>
+            Transforms the expression type to one of type 'where'.
+            Then it wraps this 'where' expression into one of the received type but without a predicate.
+            </summary>
+            <param name="mce">The original expression with predicate.</param>
+            <returns>The wrapped expression.</returns>
+        </member>
         <member name="M:Microsoft.OData.Client.DataServiceQueryProvider.ParseQuerySetCount``1(Microsoft.OData.Client.QueryResult)">
             <summary>
             Parses the result of a query set count request.
@@ -12153,6 +12170,11 @@
             will fail for partial trust scenario.
             </summary>
         </member>
+        <member name="F:Microsoft.OData.Client.DynamicProxyMethodGenerator.dynamicProxyMethods">
+            <summary>
+            Dynamically generated proxy methods for external callers (lambda_method are external callers)
+            </summary>
+        </member>
         <member name="M:Microsoft.OData.Client.DynamicProxyMethodGenerator.GetCallWrapper(System.Reflection.MethodBase,System.Linq.Expressions.Expression[])">
             <summary>
             Builds an expression to best call the specified <paramref name="method"/>.
@@ -12160,6 +12182,32 @@
             <param name="method">The original method or constructor</param>
             <param name="arguments">The arguments with which to call the method.</param>
             <returns>An expression to call the argument method or constructor</returns>
+        </member>
+        <member name="M:Microsoft.OData.Client.DynamicProxyMethodGenerator.ThisAssemblyCanCreateHostedDynamicMethodsWithSkipVisibility">
+            <summary>
+            Determines whether this assembly has enough permissions to create
+            <see cref="T:System.Reflection.Emit.DynamicMethod"/>s that can be hosted within this assembly
+            and also skip visibility checks (access modifier checks) in order to call potentially
+            internal user types (e.g., anonymous types).
+            </summary>
+            <returns>True if this assembly has enough permissions. Otherwise, false.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Client.DynamicProxyMethodGenerator.GetDynamicMethodCallWrapper(System.Reflection.MethodBase,System.Linq.Expressions.Expression[])">
+            <summary>
+            Build a externally visible <see cref="T:System.Reflection.Emit.DynamicMethod"/> to call the argument method.
+            </summary>
+            <param name="method">The original method or constructor</param>
+            <param name="arguments">The arguments with which to call the method.</param>
+            <returns>An expression to call the argument method or constructor</returns>
+        </member>
+        <member name="M:Microsoft.OData.Client.DynamicProxyMethodGenerator.CreateDynamicMethod(System.String,System.Type,System.Type[])">
+            <summary>
+            Create a new dynamic method
+            </summary>
+            <param name="name">the name</param>
+            <param name="returnType">the return type</param>
+            <param name="parameterTypes">the parameter types</param>
+            <returns>a new instance of dynamic method</returns>
         </member>
         <member name="M:Microsoft.OData.Client.DynamicProxyMethodGenerator.WrapOriginalMethodWithExpression(System.Reflection.MethodBase,System.Linq.Expressions.Expression[])">
             <summary>

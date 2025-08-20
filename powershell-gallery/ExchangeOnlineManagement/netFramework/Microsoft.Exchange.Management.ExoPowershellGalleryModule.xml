@@ -975,6 +975,11 @@
             AccountId to be used for the User Assigned Managed Identity flow only
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.EnableSearchOnlySession">
+            <summary>
+            Switch to use IP Audience.
+            </summary>
+        </member>
         <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetSystemMailboxRoutingHint(System.String)">
             <summary>
             Returns routing hint based on SystemMailbox UPN.
@@ -1095,6 +1100,12 @@
             <returns> Returns effective powershell connection uri</returns>
         </member>
         <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetEffectiveConnectionUri">
+            <summary>
+            Returns the ConnectionUri
+            </summary>
+            <returns>Returns the effective ConnectionUri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetEffectiveConnectionUriSearchOnly">
             <summary>
             Returns the ConnectionUri
             </summary>

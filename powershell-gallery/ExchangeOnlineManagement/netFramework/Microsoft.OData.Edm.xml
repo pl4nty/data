@@ -313,10 +313,25 @@
             <param name="errors">Errors that prevented successful serialization, or no errors if serialization was successful. </param>
             <returns>A value indicating whether serialization was successful.</returns>
         </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.CsdlWriter.TryWriteCsdlAsync(Microsoft.OData.Edm.IEdmModel,System.Xml.XmlWriter,Microsoft.OData.Edm.Csdl.CsdlTarget)">
+            <summary>
+            Asynchronously outputs a CSDL XML artifact to the provided <see cref="T:System.Xml.XmlWriter"/>.
+            </summary>
+            <param name="model">Model to be written.</param>
+            <param name="writer">XmlWriter the generated CSDL will be written to.</param>
+            <param name="target">Target implementation of the CSDL being generated.</param>
+            <returns>A task with a value indicating whether serialization was successful.</returns>
+        </member>
         <member name="M:Microsoft.OData.Edm.Csdl.CsdlWriter.WriteCsdl">
             <summary>
             Write CSDL output.
             </summary>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.CsdlWriter.WriteCsdlAsync">
+            <summary>
+            Asynchronously writes CSDL output.
+            </summary>
+            <returns>Task represents an asynchronous operation that may or may not return a result.</returns>
         </member>
         <member name="M:Microsoft.OData.Edm.Csdl.CsdlWriter.GetVersionString(System.Version)">
             <summary>
@@ -342,6 +357,18 @@
             <summary>
             Write the CSDL XML.
             </summary>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.CsdlXmlWriter.WriteCsdlAsync">
+            <summary>
+            Asynchronously writes the CSDL XML.
+            </summary>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.CsdlXmlWriter.WriteConceptualModelsElementAsync">
+            <summary>
+            Asynchronously writes the ConceptualModels element.
+            </summary>
+            <returns>The task represents the asynchronous operation.</returns>
         </member>
         <member name="T:Microsoft.OData.Edm.Csdl.EdmEnumValueParser">
             <summary>
@@ -1118,6 +1145,14 @@
             <param name="errors">Errors that prevented successful serialization, or no errors if serialization was successful. </param>
             <returns>A value indicating whether serialization was successful.</returns>
         </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.SchemaWriter.TryWriteSchemaAsync(Microsoft.OData.Edm.IEdmModel,System.Xml.XmlWriter)">
+            <summary>
+            Asynchronously outputs a schema artifact to the provided writer.
+            </summary>
+            <param name="model">Model to be written.</param>
+            <param name="writer">XmlWriter the generated schema will be written to.</param>
+            <returns>A task represents a Tuple with value indicating whether serialization was successful and errors that prevented successful serialization, or no errors if serialization was successful.</returns>
+        </member>
         <member name="M:Microsoft.OData.Edm.Csdl.SchemaWriter.TryWriteSchema(Microsoft.OData.Edm.IEdmModel,System.Func{System.String,System.Xml.XmlWriter},System.Collections.Generic.IEnumerable{Microsoft.OData.Edm.Validation.EdmError}@)">
             <summary>
             Outputs Schema artifacts to the provided writers.
@@ -1126,6 +1161,14 @@
             <param name="writerProvider">A delegate that takes in a Schema namespace name and returns an XmlWriter to write the Schema to.</param>
             <param name="errors">Errors that prevented successful serialization, or no errors if serialization was successful. </param>
             <returns>A value indicating whether serialization was successful.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.SchemaWriter.TryWriteSchemaAsync(Microsoft.OData.Edm.IEdmModel,System.Func{System.String,System.Xml.XmlWriter})">
+            <summary>
+            Asynchronously outputs schema artifacts to the provided writers.
+            </summary>
+            <param name="model">Model to be written.</param>
+            <param name="writerProvider">A delegate that takes in a schema namespace name and returns an XmlWriter to write the schema to.</param>
+            <returns>A task represents a Tuple with value indicating whether serialization was successful and errors that prevented successful serialization, or no errors if serialization was successful.</returns>
         </member>
         <member name="T:Microsoft.OData.Edm.Csdl.CsdlSemantics.UnresolvedAction">
             <summary>
@@ -1830,11 +1873,1060 @@
             <summary>
             OData Common Schema Definition Language (CSDL) XML writer
             </summary>
+            <summary>
+            OData Common Schema Definition Language (CSDL) XML writer
+            </summary>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteReferenceElementHeaderAsync(Microsoft.OData.Edm.IEdmReference)">
+            <summary>
+            Asynchronously writes reference element header.
+            </summary>
+            <param name="reference">edmx:Reference element</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteReferenceElementEndAsync(Microsoft.OData.Edm.IEdmReference)">
+            <summary>
+            Asynchronously writes the reference element end.
+            </summary>
+            <param name="reference">edmx:Reference element</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WritIncludeElementHeaderAsync(Microsoft.OData.Edm.IEdmInclude)">
+            <summary>
+            Asynchronously writes the include element header.
+            </summary>
+            <param name="include">The Edm include information.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteIncludeElementEndAsync(Microsoft.OData.Edm.IEdmInclude)">
+            <summary>
+            Asynchronously writes the include annotations end.
+            </summary>
+            <param name="include">The Edm include information.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteIncludeAnnotationsElementAsync(Microsoft.OData.Edm.IEdmIncludeAnnotations)">
+            <summary>
+            Asynchronously writes the include annotations element.
+            </summary>
+            <param name="includeAnnotations">The Edm include annotations.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteTermElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmTerm,System.Boolean)">
+            <summary>
+            Asynchronously writes term element header.
+            </summary>
+            <param name="term">The Edm term.</param>
+            <param name="inlineType">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteComplexTypeElementHeaderAsync(Microsoft.OData.Edm.IEdmComplexType)">
+            <summary>
+            Asynchronously writes the complex type element header.
+            </summary>
+            <param name="complexType">The Edm complex type.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteEnumTypeElementHeaderAsync(Microsoft.OData.Edm.IEdmEnumType)">
+            <summary>
+            Asynchronously writes the enum type element header.
+            </summary>
+            <param name="enumType">The Edm enumaration type.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteEnumTypeElementEndAsync(Microsoft.OData.Edm.IEdmEnumType)">
+            <summary>
+            Asynchronously writes the enum container element end.
+            </summary>
+            <param name="enumType">The Edm enumaration type.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteEntityContainerElementHeaderAsync(Microsoft.OData.Edm.IEdmEntityContainer)">
+            <summary>
+            Asynchronously writes the entity container element header.
+            </summary>
+            <param name="container">The Edm entity container.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteEntitySetElementHeaderAsync(Microsoft.OData.Edm.IEdmEntitySet)">
+            <summary>
+            Asynchronously writes the entity set element header.
+            </summary>
+            <param name="entitySet">The Edm entity set.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteSingletonElementHeaderAsync(Microsoft.OData.Edm.IEdmSingleton)">
+            <summary>
+            Asynchronously writes the singleton element header.
+            </summary>
+            <param name="singleton">The Edm singleton.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteEntityTypeElementHeaderAsync(Microsoft.OData.Edm.IEdmEntityType)">
+            <summary>
+            Asynchronously writes the entity type element header.
+            </summary>
+            <param name="entityType">The Edm entity type.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteDeclaredKeyPropertiesElementHeaderAsync">
+            <summary>
+            Asynchronously writes the key properties element header.
+            </summary>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WritePropertyRefElementAsync(Microsoft.OData.Edm.IEdmStructuralProperty)">
+            <summary>
+            Asynchronously writes the property ref element.
+            </summary>
+            <param name="property">The Edm structural property.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteNavigationPropertyElementHeaderAsync(Microsoft.OData.Edm.IEdmNavigationProperty)">
+            <summary>
+            Asynchronously writes the navigation property element header.
+            </summary>
+            <param name="property">The Edm navigation property.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteNavigationOnDeleteActionElementAsync(Microsoft.OData.Edm.EdmOnDeleteAction)">
+            <summary>
+            Asynchronously writes the navigation OnDelete action element.
+            </summary>
+            <param name="operationAction">The Edm OnDelete action.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteSchemaElementHeaderAsync(Microsoft.OData.Edm.Csdl.Serialization.EdmSchema,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Asynchronously writes the schema element header.
+            </summary>
+            <param name="schema">The Edm schema.</param>
+            <param name="alias">The alias.</param>
+            <param name="mappings">Collection of mappings.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteAnnotationsElementHeaderAsync(System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.List{Microsoft.OData.Edm.Vocabularies.IEdmVocabularyAnnotation}})">
+            <summary>
+            Asynchronously writes the annotations element header.
+            </summary>
+            <param name="annotationsForTarget">The Key/Value of Edm vocabulary annotation.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteStructuralPropertyElementHeaderAsync(Microsoft.OData.Edm.IEdmStructuralProperty,System.Boolean)">
+            <summary>
+            Asynchronously writes the structural property element header.
+            </summary>
+            <param name="property">The Edm structural property.</param>
+            <param name="inlineType">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteEnumMemberElementHeaderAsync(Microsoft.OData.Edm.IEdmEnumMember)">
+            <summary>
+            Asynchronously writes enumeration member element header.
+            </summary>
+            <param name="member">The Edm enumeration member.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteEnumMemberElementEndAsync(Microsoft.OData.Edm.IEdmEnumMember)">
+            <summary>
+            Asynchronously writes enum member element end.
+            </summary>
+            <param name="member">The Edm enumeration member.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteNullableAttributeAsync(Microsoft.OData.Edm.IEdmTypeReference)">
+            <summary>
+            Asynchronously writes nullable attribute.
+            </summary>
+            <param name="reference">The Edm type reference.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteTypeDefinitionAttributesAsync(Microsoft.OData.Edm.IEdmTypeDefinitionReference)">
+            <summary>
+            Asynchronously writes type definition attributes.
+            </summary>
+            <param name="reference">The Edm type defination reference.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteBinaryTypeAttributesAsync(Microsoft.OData.Edm.IEdmBinaryTypeReference)">
+            <summary>
+            Asynchronously writes binary type attributes.
+            </summary>
+            <param name="reference">The Edm binary type reference.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteDecimalTypeAttributesAsync(Microsoft.OData.Edm.IEdmDecimalTypeReference)">
+            <summary>
+            Asynchronously writes decimal type attributes.
+            </summary>
+            <param name="reference">The Edm Decimal type reference.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteSpatialTypeAttributesAsync(Microsoft.OData.Edm.IEdmSpatialTypeReference)">
+            <summary>
+            Asynchronously writes spatial type attributes.
+            </summary>
+            <param name="reference">The Edm spatial type reference.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteStringTypeAttributesAsync(Microsoft.OData.Edm.IEdmStringTypeReference)">
+            <summary>
+            Asynchronously writes string type attributes.
+            </summary>
+            <param name="reference">The Edm string type reference.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteTemporalTypeAttributesAsync(Microsoft.OData.Edm.IEdmTemporalTypeReference)">
+            <summary>
+            Asynchronously writes temporal type attributes.
+            </summary>
+            <param name="reference">The Edm temporal type reference.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteReferentialConstraintPairAsync(Microsoft.OData.Edm.EdmReferentialConstraintPropertyPair)">
+            <summary>
+            Asynchronously writes referential constraint pair.
+            </summary>
+            <param name="pair">The Edm referential constraint property pair.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteAnnotationStringAttributeAsync(Microsoft.OData.Edm.Vocabularies.IEdmDirectValueAnnotation)">
+            <summary>
+            Asynchronously writes annotation string attribute.
+            </summary>
+            <param name="annotation">The Edm direct value annotation.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteAnnotationStringElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmDirectValueAnnotation)">
+            <summary>
+            Asynchronously writes annotation string element.
+            </summary>
+            <param name="annotation">The Edm direct value annotation.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteActionElementHeaderAsync(Microsoft.OData.Edm.IEdmAction)">
+            <summary>
+            Asynchronously writes action element header.
+            </summary>
+            <param name="action">The Edm action.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteFunctionElementHeaderAsync(Microsoft.OData.Edm.IEdmFunction)">
+            <summary>
+            Asynchronously writes function element header.
+            </summary>
+            <param name="function">The Edm function.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteReturnTypeElementHeaderAsync(Microsoft.OData.Edm.IEdmOperationReturn)">
+            <summary>
+            Asynchronously writes return type element header.
+            </summary>
+            <param name="operationReturn">The Edm operation return.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteTypeAttributeAsync(Microsoft.OData.Edm.IEdmTypeReference)">
+            <summary>
+            Asynchronously writes type attribute.
+            </summary>
+            <param name="typeReference">The Edm type reference.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteActionImportElementHeaderAsync(Microsoft.OData.Edm.IEdmActionImport)">
+            <summary>
+            Asynchronously writes action import element header.
+            </summary>
+            <param name="actionImport">The Edm action import.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteFunctionImportElementHeaderAsync(Microsoft.OData.Edm.IEdmFunctionImport)">
+            <summary>
+            Asynchronously writes function import element header.
+            </summary>
+            <param name="functionImport">The Edm function import.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteOperationParameterElementHeaderAsync(Microsoft.OData.Edm.IEdmOperationParameter,System.Boolean)">
+            <summary>
+            Asynchronously writes operation parameter element header.
+            </summary>
+            <param name="parameter">The Edm operation parameter</param>
+            <param name="inlineType">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteOperationParameterEndElementAsync(Microsoft.OData.Edm.IEdmOperationParameter)">
+            <summary>
+            Asynchronously writes operation parameter end element.
+            </summary>
+            <param name="parameter">The Edm operation paramater.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteCollectionTypeElementHeaderAsync(Microsoft.OData.Edm.IEdmCollectionType,System.Boolean)">
+            <summary>
+            Asynchronously writes collection type element header.
+            </summary>
+            <param name="collectionType">The Edm collection type.</param>
+            <param name="inlineType">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteInlineExpressionAsync(Microsoft.OData.Edm.IEdmExpression)">
+            <summary>
+            Asynchronously writes inline expression.
+            </summary>
+            <param name="expression">The Edm expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WritePropertyConstructorElementEndAsync(Microsoft.OData.Edm.Vocabularies.IEdmPropertyConstructor)">
+            <summary>
+            Asynchronously writes property constructor element end.
+            </summary>
+            <param name="constructor">The Edm property constructor.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteVocabularyAnnotationElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmVocabularyAnnotation,System.Boolean)">
+            <summary>
+            Asynchronously writes vocabulary annotation element header.
+            </summary>
+            <param name="annotation">The Edm vocabulary annotation.</param>
+            <param name="isInline">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteVocabularyAnnotationElementEndAsync(Microsoft.OData.Edm.Vocabularies.IEdmVocabularyAnnotation,System.Boolean)">
+            <summary>
+            Asynchronously writes vocabulary annotation element end.
+            </summary>
+            <param name="annotation">The Edm vocabulary annotation.</param>
+            <param name="isInline">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WritePropertyValueElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmPropertyConstructor,System.Boolean)">
+            <summary>
+            Asynchronously writes property value element header.
+            </summary>
+            <param name="value">The Edm property constructor.</param>
+            <param name="isInline">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteRecordExpressionElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmRecordExpression)">
+            <summary>
+            Asynchronously writes record expression element header.
+            </summary>
+            <param name="expression">The Edm Record expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WritePropertyConstructorElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmPropertyConstructor,System.Boolean)">
+            <summary>
+            Asynchronously writes property constructor element header.
+            </summary>
+            <param name="constructor">The Edm property constructor.</param>
+            <param name="isInline">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteStringConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmStringConstantExpression)">
+            <summary>
+            Asynchronously writes string constant expression element.
+            </summary>
+            <param name="expression">The Edm string constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteBinaryConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmBinaryConstantExpression)">
+            <summary>
+            Asynchronously writes binary constant expression element.
+            </summary>
+            <param name="expression">The Edm binary constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteBooleanConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmBooleanConstantExpression)">
+            <summary>
+            Asynchronously writes boolean constant expression element.
+            </summary>
+            <param name="expression">The Edm Boolean constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteNullConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmNullExpression)">
+            <summary>
+            Asynchronously writes null constant expression element.
+            </summary>
+            <param name="expression">The Edm null expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteDateConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmDateConstantExpression)">
+            <summary>
+            Asynchronously writes Date constant expression element.
+            </summary>
+            <param name="expression">The Edm Date constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteDateTimeOffsetConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmDateTimeOffsetConstantExpression)">
+            <summary>
+            Asynchronously writes DateTimeOffset constant expression element.
+            </summary>
+            <param name="expression">The Edm DateTimeOffset constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteDurationConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmDurationConstantExpression)">
+            <summary>
+            Asynchronously writes durarion constant expression element.
+            </summary>
+            <param name="expression">The Edm Duration constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteDecimalConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmDecimalConstantExpression)">
+            <summary>
+            Asynchronously writes decimal constant expression element.
+            </summary>
+            <param name="expression">The Edm decimal constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteFloatingConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmFloatingConstantExpression)">
+            <summary>
+            Asynchronously writes floating constant expression element.
+            </summary>
+            <param name="expression">The Edm floating constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteFunctionApplicationElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmApplyExpression)">
+            <summary>
+            Asynchronously writes function apply element header.
+            </summary>
+            <param name="expression">The Edm apply expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteFunctionApplicationElementEndAsync(Microsoft.OData.Edm.Vocabularies.IEdmApplyExpression)">
+            <summary>
+            Asynchronously writes function apply element end.
+            </summary>
+            <param name="expression">The Edm apply expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteGuidConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmGuidConstantExpression)">
+            <summary>
+            Asynchronously writes Guid constant expression element.
+            </summary>
+            <param name="expression">The Edm Guid constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteIntegerConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmIntegerConstantExpression)">
+            <summary>
+            Asynchronously writes integer constant expression element.
+            </summary>
+            <param name="expression">The Edm integer constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WritePathExpressionElementAsync(Microsoft.OData.Edm.IEdmPathExpression)">
+            <summary>
+            Asynchronously writes path expression element.
+            </summary>
+            <param name="expression">The Edm path expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WritePropertyPathExpressionElementAsync(Microsoft.OData.Edm.IEdmPathExpression)">
+            <summary>
+            Asynchronously writes property path expression element.
+            </summary>
+            <param name="expression">The Edm path expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteNavigationPropertyPathExpressionElementAsync(Microsoft.OData.Edm.IEdmPathExpression)">
+            <summary>
+            Asynchronously writes navigation property path expression element.
+            </summary>
+            <param name="expression">The Edm path expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteAnnotationPathExpressionElementAsync(Microsoft.OData.Edm.IEdmPathExpression)">
+            <summary>
+            Asynchronously writes annotation path expression element.
+            </summary>
+            <param name="expression">The Edm path expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteIfExpressionElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmIfExpression)">
+            <summary>
+            Asynchronously writes 'if' expression element header.
+            </summary>
+            <param name="expression">Edm if Expression</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteIfExpressionElementEndAsync(Microsoft.OData.Edm.Vocabularies.IEdmIfExpression)">
+            <summary>
+            Asynchronously writes If expression element end.
+            </summary>
+            <param name="expression">Edm if Expression</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteCollectionExpressionElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmCollectionExpression)">
+            <summary>
+            Asynchronously writes collection expression element header.
+            </summary>
+            <param name="expression">The Edm collection expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteCollectionExpressionElementEndAsync(Microsoft.OData.Edm.Vocabularies.IEdmCollectionExpression)">
+            <summary>
+            Asynchronously writes collection expression element end.
+            </summary>
+            <param name="expression">The Edm collection expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteLabeledElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmLabeledExpression)">
+            <summary>
+            Asynchronously writes labeled element header.
+            </summary>
+            <param name="labeledElement">The Edm labeled expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteLabeledExpressionReferenceExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmLabeledExpressionReferenceExpression)">
+            <summary>
+            Asynchronously writes labeled expression reference.
+            </summary>
+            <param name="labeledExpressionReference">The Edm labeled expression expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteTimeOfDayConstantExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmTimeOfDayConstantExpression)">
+            <summary>
+            Asynchronously writes TimeOfDay constant expression element.
+            </summary>
+            <param name="expression">The Edm TimeOfDay constant expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteIsTypeExpressionElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmIsTypeExpression,System.Boolean)">
+            <summary>
+            Asynchronously writes IsType expression header.
+            </summary>
+            <param name="expression">The Edm IsType expression.</param>
+            <param name="inlineType">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteCastExpressionElementHeaderAsync(Microsoft.OData.Edm.Vocabularies.IEdmCastExpression,System.Boolean)">
+            <summary>
+            Asynchronously writes cast expression header.
+            </summary>
+            <param name="expression">The Edm Cast expression.</param>
+            <param name="inlineType">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteCastExpressionElementEndAsync(Microsoft.OData.Edm.Vocabularies.IEdmCastExpression,System.Boolean)">
+            <summary>
+            Asynchronously writes cast expression end.
+            </summary>
+            <param name="expression">The Edm Cast expression.</param>
+            <param name="inlineType">Is inline type or not.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteEnumMemberExpressionElementAsync(Microsoft.OData.Edm.Vocabularies.IEdmEnumMemberExpression)">
+            <summary>
+            Asynchronously writes enum member expression element.
+            </summary>
+            <param name="expression">The Edm enumaration member expression.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteTypeDefinitionElementHeaderAsync(Microsoft.OData.Edm.IEdmTypeDefinition)">
+            <summary>
+            Asynchronously writes type definition element header.
+            </summary>
+            <param name="typeDefinition">The Edm type definition.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteEndElementAsync">
+            <summary>
+            Asynchronously writes end element.
+            </summary>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteArrayEndElementAsync">
+            <summary>
+            Asynchronously writes array end element.
+            </summary>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteOptionalAttributeAsync``1(System.String,``0,``0,System.Func{``0,System.String})">
+            <summary>
+            Asynchronously writes optional attribute.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="attribute">The attribute name.</param>
+            <param name="value">The attribute value.</param>
+            <param name="defaultValue">The attribute default value.</param>
+            <param name="getStringFunc">Get string function.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteOptionalAttributeAsync``1(System.String,``0,System.Func{``0,System.String})">
+            <summary>
+            Asynchronously writes optional attribute.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="attribute">The attribute name.</param>
+            <param name="value">The attribute value.</param>
+            <param name="getStringFunc">Get string function.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteRequiredAttributeAsync``1(System.String,``0,System.Func{``0,System.String})">
+            <summary>
+            Asynchronously writes required attribute.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="attribute">The attribute name.</param>
+            <param name="value">The attribute value.</param>
+            <param name="toXml">Value to xml function.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteOperationElementAttributesAsync(Microsoft.OData.Edm.IEdmOperation)">
+            <summary>
+            Asynchronously writes operation element attributes.
+            </summary>
+            <param name="operation">The Edm operation.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteNavigationPropertyBindingAsync(Microsoft.OData.Edm.IEdmNavigationPropertyBinding)">
+            <summary>
+            Asynchronously writes navigation property binding.
+            </summary>
+            <param name="binding">The Edm navigation property binding.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSchemaXmlWriter.WriteOperationImportAttributesAsync(Microsoft.OData.Edm.IEdmOperationImport,System.String)">
+            <summary>
+            Asynchronously writes operation import attributes.
+            </summary>
+            <param name="operationImport">The Edm operation import.</param>
+            <param name="operationAttributeName">Operation attribute name.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.VisitEntityContainerElementsAsync(System.Collections.Generic.IEnumerable{Microsoft.OData.Edm.IEdmEntityContainerElement})">
+            <summary>
+            Asynchronously visits the elements of the entity container.
+            </summary>
+            <param name="elements">Collection of Edm Entity container elements.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.VisitEdmSchemaAsync(Microsoft.OData.Edm.Csdl.Serialization.EdmSchema,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Asynchronously visits Edm Schema.
+            </summary>
+            <param name="element">The Edm Schema.</param>
+            <param name="mappings">Collection of prefix mappings.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessEntityContainerAsync(Microsoft.OData.Edm.IEdmEntityContainer)">
+            <summary>
+            Asynchronously processes the entity container.
+            </summary>
+            <param name="element">The Edm entity container.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessEntitySetAsync(Microsoft.OData.Edm.IEdmEntitySet)">
+            <summary>
+            Asynchronously processes the entity set.
+            </summary>
+            <param name="element">The Edm Entity set.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessSingletonAsync(Microsoft.OData.Edm.IEdmSingleton)">
+            <summary>
+            Asynchronously processes the singleton.
+            </summary>
+            <param name="element">The Edm Singleton</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessEntityTypeAsync(Microsoft.OData.Edm.IEdmEntityType)">
+            <summary>
+            Asynchronously processes the entity type.
+            </summary>
+            <param name="element">The Edm entity type.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessStructuralPropertyAsync(Microsoft.OData.Edm.IEdmStructuralProperty)">
+            <summary>
+            Asynchronously processes the structural property.
+            </summary>
+            <param name="element">The Edm structural property.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessTypeDefinitionReferenceAsync(Microsoft.OData.Edm.IEdmTypeDefinitionReference)">
+            <summary>
+            Asynchronously processes the type definition reference.
+            </summary>
+            <param name="element">The Edm Type definition reference.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessBinaryTypeReferenceAsync(Microsoft.OData.Edm.IEdmBinaryTypeReference)">
+            <summary>
+            Asynchronously processes the binary type reference.
+            </summary>
+            <param name="element">The Edm binary type reference.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessDecimalTypeReferenceAsync(Microsoft.OData.Edm.IEdmDecimalTypeReference)">
+            <summary>
+            Asynchronously processes the decimal type reference.
+            </summary>
+            <param name="element">The Edm Decimal type reference.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessSpatialTypeReferenceAsync(Microsoft.OData.Edm.IEdmSpatialTypeReference)">
+            <summary>
+            Asynchronously processes the spatial type reference.
+            </summary>
+            <param name="element">The Edm spatial type reference.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessStringTypeReferenceAsync(Microsoft.OData.Edm.IEdmStringTypeReference)">
+            <summary>
+            Asynchronously processes the string type reference.
+            </summary>
+            <param name="element">The Edm string type reference.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessTemporalTypeReferenceAsync(Microsoft.OData.Edm.IEdmTemporalTypeReference)">
+            <summary>
+            Asynchronously processes the temporal type reference.
+            </summary>
+            <param name="element">The Edm temporal type reference.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessNavigationPropertyAsync(Microsoft.OData.Edm.IEdmNavigationProperty)">
+            <summary>
+            Asynchronously processes the navigation property.
+            </summary>
+            <param name="element">The Edm navigation property.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessComplexTypeAsync(Microsoft.OData.Edm.IEdmComplexType)">
+            <summary>
+            Asynchronously processes the complex type.
+            </summary>
+            <param name="element">The Edm complex type.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessEnumTypeAsync(Microsoft.OData.Edm.IEdmEnumType)">
+            <summary>
+            Asynchronously processes the enum type.
+            </summary>
+            <param name="element">The Edm enumeration type.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessEnumMemberAsync(Microsoft.OData.Edm.IEdmEnumMember)">
+            <summary>
+            Asynchronously processes the enum member.
+            </summary>
+            <param name="element">The Edm enumeration member.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessTypeDefinitionAsync(Microsoft.OData.Edm.IEdmTypeDefinition)">
+            <summary>
+            Asynchronously processes the type definition.
+            </summary>
+            <param name="element">The Edm type definition.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessTermAsync(Microsoft.OData.Edm.Vocabularies.IEdmTerm)">
+            <summary>
+            Asynchronously processes the term.
+            </summary>
+            <param name="term">The Edm term.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessActionAsync(Microsoft.OData.Edm.IEdmAction)">
+            <summary>
+            Asynchronously processes the action.
+            </summary>
+            <param name="action">The Edm action.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessFunctionAsync(Microsoft.OData.Edm.IEdmFunction)">
+            <summary>
+            Asynchronously processes the function.
+            </summary>
+            <param name="function">The Edm function.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessOperationParameterAsync(Microsoft.OData.Edm.IEdmOperationParameter)">
+            <summary>
+            Asynchronously processes the operation parameter.
+            </summary>
+            <param name="element">The Edm operation parameter.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessOperationReturnAsync(Microsoft.OData.Edm.IEdmOperationReturn)">
+            <summary>
+            Asynchronously processes the operation return.
+            </summary>
+            <param name="operationReturn">The Edm operation return.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessCollectionTypeAsync(Microsoft.OData.Edm.IEdmCollectionType)">
+            <summary>
+            Asynchronously process collection type.
+            </summary>
+            <param name="element">The Edm collection type.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessActionImportAsync(Microsoft.OData.Edm.IEdmActionImport)">
+            <summary>
+            Asynchronously processes the action import.
+            </summary>
+            <param name="actionImport">The Edm action import.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessFunctionImportAsync(Microsoft.OData.Edm.IEdmFunctionImport)">
+            <summary>
+            Asynchronously processes the function import.
+            </summary>
+            <param name="functionImport">The Edm function import.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessAnnotationAsync(Microsoft.OData.Edm.Vocabularies.IEdmVocabularyAnnotation)">
+            <summary>
+            Asynchronously processes the annotation.
+            </summary>
+            <param name="annotation">The Edm vocabulary annotation.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessStringConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmStringConstantExpression)">
+            <summary>
+            Asynchronously processes the string constant expression.
+            </summary>
+            <param name="expression">The Edm string constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessBinaryConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmBinaryConstantExpression)">
+            <summary>
+            Asynchronously processes the binary constant expression.
+            </summary>
+            <param name="expression">The Edm binary constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessRecordExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmRecordExpression)">
+            <summary>
+            Asynchronously processes the record expression.
+            </summary>
+            <param name="expression">The Edm record expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessLabeledExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmLabeledExpression)">
+            <summary>
+            Asynchronously processes the labeled expression.
+            </summary>
+            <param name="element">The Edm labeled expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessLabeledExpressionReferenceExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmLabeledExpressionReferenceExpression)">
+            <summary>
+            Asynchronously processes the labeled expression reference expression.
+            </summary>
+            <param name="element">The Edm labeled expression reference.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessPropertyConstructorAsync(Microsoft.OData.Edm.Vocabularies.IEdmPropertyConstructor)">
+            <summary>
+            Asynchronously processes the property constructor.
+            </summary>
+            <param name="constructor">The Edm property constructor.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessPathExpressionAsync(Microsoft.OData.Edm.IEdmPathExpression)">
+            <summary>
+            Asynchronously processes the path expression.
+            </summary>
+            <param name="expression">The Edm path expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessPropertyPathExpressionAsync(Microsoft.OData.Edm.IEdmPathExpression)">
+            <summary>
+            Asynchronously processes the property path expression.
+            </summary>
+            <param name="expression">The Edm path expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessNavigationPropertyPathExpressionAsync(Microsoft.OData.Edm.IEdmPathExpression)">
+            <summary>
+            Asynchronously processes the navigation property path expression.
+            </summary>
+            <param name="expression">The Edm path expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessAnnotationPathExpressionAsync(Microsoft.OData.Edm.IEdmPathExpression)">
+            <summary>
+            Asynchronously processes the annotation path expression.
+            </summary>
+            <param name="expression">The Edm path expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessCollectionExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmCollectionExpression)">
+            <summary>
+            Asynchronously processes the collection expression.
+            </summary>
+            <param name="expression">The Edm collection expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessIsTypeExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmIsTypeExpression)">
+            <summary>
+            Asynchronously processes the is type expression.
+            </summary>
+            <param name="expression">The Edm IsType expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessIntegerConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmIntegerConstantExpression)">
+            <summary>
+            Asynchronously processes the integer constant expression.
+            </summary>
+            <param name="expression">The Edm integer constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessIfExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmIfExpression)">
+            <summary>
+            Asynchronously processes the if expression.
+            </summary>
+            <param name="expression">The Edm If expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessFunctionApplicationExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmApplyExpression)">
+            <summary>
+            Asynchronously processes the function application expression.
+            </summary>
+            <param name="expression">The Edm Apply expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessFloatingConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmFloatingConstantExpression)">
+            <summary>
+            Asynchronously processes the floating constant expression.
+            </summary>
+            <param name="expression">The Edm floating constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessGuidConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmGuidConstantExpression)">
+            <summary>
+            Asynchronously processes the guid constant expression.
+            </summary>
+            <param name="expression">The Edm Guid constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessEnumMemberExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmEnumMemberExpression)">
+            <summary>
+            Asynchronously processes the enum member expression.
+            </summary>
+            <param name="expression">The Edm enumeration member.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessDecimalConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmDecimalConstantExpression)">
+            <summary>
+            Asynchronously processes the decimal constant expression.
+            </summary>
+            <param name="expression">The Edm decimal constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessDateConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmDateConstantExpression)">
+            <summary>
+            Asynchronously processes the date constant expression.
+            </summary>
+            <param name="expression">The Edm date constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessDateTimeOffsetConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmDateTimeOffsetConstantExpression)">
+            <summary>
+            Asynchronously processes the date time offset constant expression.
+            </summary>
+            <param name="expression">The Edm DateTimeOffset constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessDurationConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmDurationConstantExpression)">
+            <summary>
+            Asynchronously processes the duration constant expression.
+            </summary>
+            <param name="expression">The Edm duration constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessTimeOfDayConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmTimeOfDayConstantExpression)">
+            <summary>
+            Asynchronously processes the time of day constant expression.
+            </summary>
+            <param name="expression">The Edm TimeOfDay constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessBooleanConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmBooleanConstantExpression)">
+            <summary>
+            Asynchronously processes the boolean constant expression.
+            </summary>
+            <param name="expression">The Edm boolean constant expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessNullConstantExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmNullExpression)">
+            <summary>
+            Asynchronously processes the null constant expression.
+            </summary>
+            <param name="expression">The Edm Null expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessCastExpressionAsync(Microsoft.OData.Edm.Vocabularies.IEdmCastExpression)">
+            <summary>
+            Asynchronously processes the cast expression.
+            </summary>
+            <param name="expression">The Edm cast expression.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessNavigationPropertyBindingsAsync(Microsoft.OData.Edm.IEdmNavigationSource)">
+            <summary>
+            Asynchronously processes the navigation property bindings.
+            </summary>
+            <param name="navigationSource">The Edm navigation source.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessOperationAsync``1(``0,System.Func{``0,System.Threading.Tasks.Task})">
+            <summary>
+            Asynchronously processes the operation.
+            </summary>
+            <typeparam name="TOperation"></typeparam>
+            <param name="operation">Operation.</param>
+            <param name="writeElementAction">Write Element action.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessReferentialConstraintAsync(Microsoft.OData.Edm.IEdmReferentialConstraint)">
+            <summary>
+            Asynchronously processes the referential constraint.
+            </summary>
+            <param name="element">The Edm referential constraint.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessFacetsAsync(Microsoft.OData.Edm.IEdmTypeReference,System.Boolean)">
+            <summary>
+            Asynchronously processes the facets.
+            </summary>
+            <param name="element">The Edm type reference.</param>
+            <param name="inlineType">Is inline type or not.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.VisitEntityTypeDeclaredKeyAsync(System.Collections.Generic.IEnumerable{Microsoft.OData.Edm.IEdmStructuralProperty})">
+            <summary>
+            Asynchronously visits the entity type declared key.
+            </summary>
+            <param name="keyProperties">Collection of Edm structural properties.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.VisitPropertyRefsAsync(System.Collections.Generic.IEnumerable{Microsoft.OData.Edm.IEdmStructuralProperty})">
+            <summary>
+            Asynchronously visits the property references.
+            </summary>
+            <param name="properties">Collection of Edm structural properties.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.VisitAttributeAnnotationsAsync(System.Collections.Generic.IEnumerable{Microsoft.OData.Edm.Vocabularies.IEdmDirectValueAnnotation})">
+            <summary>
+            Asynchronously visits the attribute annotations.
+            </summary>
+            <param name="annotations">Collection of Edm direct value annotations.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.VisitPrimitiveElementAnnotationsAsync(System.Collections.Generic.IEnumerable{Microsoft.OData.Edm.Vocabularies.IEdmDirectValueAnnotation})">
+            <summary>
+            Asynchronously visits the primitive element annotations.
+            </summary>
+            <param name="annotations">Collection of Edm direct value annotations.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessAttributeAnnotationAsync(Microsoft.OData.Edm.Vocabularies.IEdmDirectValueAnnotation)">
+            <summary>
+            Asynchronously processes the attribute annotation.
+            </summary>
+            <param name="annotation">The Edm direct value annotation.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.ProcessElementAnnotationAsync(Microsoft.OData.Edm.Vocabularies.IEdmDirectValueAnnotation)">
+            <summary>
+            Asynchronously processes the element annotation.
+            </summary>
+            <param name="annotation">The Edm Direct value annotation.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.VisitElementVocabularyAnnotationsAsync(System.Collections.Generic.IEnumerable{Microsoft.OData.Edm.Vocabularies.IEdmVocabularyAnnotation})">
+            <summary>
+            Asynchronously visits the element vocabulary annotations.
+            </summary>
+            <param name="annotations">Collection of Edm vocabulary annotation.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.BeginElementAsync``1(``0,System.Func{``0,System.Threading.Tasks.Task},System.Func{``0,System.Threading.Tasks.Task}[])">
+            <summary>
+            Asynchronously begins the element.
+            </summary>
+            <typeparam name="TElement"></typeparam>
+            <param name="element">The Edm element.</param>
+            <param name="elementHeaderWriter">The Edm element Header writer.</param>
+            <param name="additionalAttributeWriters">Collection of additional attribute writers.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.EndElementAsync``1(``0,System.Func{``0,System.Threading.Tasks.Task})">
+            <summary>
+            Asynchronously ends the element.
+            </summary>
+            <typeparam name="TElement"></typeparam>
+            <param name="element">The Edm element.</param>
+            <param name="elementEndWriter">The Edm element end writer.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelCsdlSerializationVisitor.EndElementAsync(Microsoft.OData.Edm.IEdmElement)">
+            <summary>
+            Asynchronously ends the element.
+            </summary>
+            <param name="element">The Edm element.</param>
         </member>
         <member name="T:Microsoft.OData.Edm.Csdl.Serialization.EdmModelReferenceElementsXmlVisitor">
             <summary>
+            The visitor for outputting &lt;edmx:Reference&gt; elements for referenced model.
+            </summary>
+            <summary>
             The visitor for outputting &lt;edmx:referenced&gt; elements for referenced model.
             </summary>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelReferenceElementsXmlVisitor.VisitEdmReferencesAsync(Microsoft.OData.Edm.IEdmModel,Microsoft.OData.Edm.IEdmReference)">
+            <summary>
+            Asynchronously visits Edm references and writes includes and annotations.
+            </summary>
+            <param name="model">The Edm model.</param>
+            <param name="reference">The Edm reference.</param>
+            <returns>Task represents an asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelReferenceElementsXmlVisitor.WriteAnnotationsAsync(Microsoft.OData.Edm.IEdmModel,Microsoft.OData.Edm.Vocabularies.IEdmVocabularyAnnotatable)">
+            <summary>
+            Asynchronously writes annotations.
+            </summary>
+            <param name="model">The Edm model.</param>
+            <param name="target">The Edm vocabulary annotations.</param>
+            <returns>Task represents an asynchronous operation.</returns>
         </member>
         <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelSchemaSeparationSerializationVisitor.ProcessEntityContainer(Microsoft.OData.Edm.IEdmEntityContainer)">
             <summary>
@@ -1843,6 +2935,15 @@
             If there are no schemas, we create the one named "Default" and attach container to it.
             </summary>
             <param name="element">The entity container being processed.</param>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Csdl.Serialization.EdmModelSchemaSeparationSerializationVisitor.ProcessEntityContainerAsync(Microsoft.OData.Edm.IEdmEntityContainer)">
+            <summary>
+            When we see an entity container, we see if it has <see cref="F:Microsoft.OData.Edm.Csdl.CsdlConstants.SchemaNamespaceAnnotation"/>.
+            If it does, then we attach it to that schema, otherwise we attached to the first existing schema.
+            If there are no schemas, we create the one named "Default" and attach container to it.
+            </summary>
+            <param name="element">The entity container being processed.</param>
+            <returns>A task that represents the asynchronous operation.</returns>
         </member>
         <member name="F:Microsoft.OData.Edm.Csdl.Serialization.SerializationValidator.TypeReferenceTargetMustHaveValidName">
             <summary>
@@ -4165,6 +5266,27 @@
             <param name="property">Reference to the calling object.</param>
             <returns>The text representation of the current object.</returns>
         </member>
+        <member name="F:Microsoft.OData.Edm.Helpers.TaskUtils._completedTask">
+            <summary>
+            Already completed task.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.OData.Edm.Helpers.TaskUtils.CompletedTask" -->
+        <member name="M:Microsoft.OData.Edm.Helpers.TaskUtils.GetFaultedTask(System.Exception)">
+            <summary>
+            Returns an already completed task instance with the specified error.
+            </summary>
+            <param name="exception">The exception of the faulted result.</param>
+            <returns>An already completed task with the specified exception.</returns>
+        </member>
+        <member name="M:Microsoft.OData.Edm.Helpers.TaskUtils.GetFaultedTask``1(System.Exception)">
+            <summary>
+            Returns an already completed task instance with the specified error.
+            </summary>
+            <typeparam name="T">Type of the result.</typeparam>
+            <param name="exception">The exception of the faulted result.</param>
+            <returns>An already completed task with the specified exception.</returns>
+        </member>
         <member name="T:Microsoft.OData.Edm.IDependencyTrigger">
             <summary>
             Interface describing anything that can be depended upon in tracking semantic changes in an EDM model.
@@ -4515,9 +5637,9 @@
             A string like "The number of properties in the dependent and principal role in a relationship constraint must be exactly identical."
             </summary>
         </member>
-        <member name="M:Microsoft.OData.Edm.Strings.EdmModel_Validator_Semantic_TypeMismatchRelationshipConstraint(System.Object,System.Object,System.Object,System.Object,System.Object)">
+        <member name="M:Microsoft.OData.Edm.Strings.EdmModel_Validator_Semantic_TypeMismatchRelationshipConstraint(System.Object,System.Object,System.Object,System.Object)">
             <summary>
-            A string like "The types of all properties in the dependent role of a referential constraint must be the same as the corresponding property types in the principal role. The type of property '{0}' on entity '{1}' does not match the type of property '{2}' on entity '{3}' in the referential constraint '{4}'."
+            A string like "The types of all properties in the dependent role of a referential constraint must be the same as the corresponding property types in the principal role. The type of property '{0}' on entity '{1}' does not match the type of property '{2}' on entity '{3}' in the referential constraint."
             </summary>
         </member>
         <member name="M:Microsoft.OData.Edm.Strings.EdmModel_Validator_Semantic_InvalidPropertyInRelationshipConstraintDependentEnd(System.Object,System.Object)">
