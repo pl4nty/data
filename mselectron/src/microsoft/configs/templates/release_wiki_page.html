@@ -1,159 +1,814 @@
-<h1><strong>Electron v{{ meta.version }}</strong></h1>
-<p>
-</p>
-<p>
-</p>
-<h2>Electron builds</h2>
-<table cellspacing="0" class="ms-rteTable-default">
-  <tbody>
-    <tr class="ms-rteTableEvenRow-default">
-      <td class="ms-rteTableEvenCol-default">
-        <br />
-      </td>
-      <td class="ms-rteTableOddCol-default">Windows ARM64</td>
-      <td class="ms-rteTableEvenCol-default">Windows 32-bit</td>
-      <td class="ms-rteTableOddCol-default">Windows 64-bit</td>
-      <td class="ms-rteTableEvenCol-default">macOS ARM64</td>
-      <td class="ms-rteTableOddCol-default">macOS 64-bit</td>
-      <td class="ms-rteTableEvenCol-default">Linux ARM</td>
-      <td class="ms-rteTableOddCol-default">Linux ARM64</td>
-      <td class="ms-rteTableEvenCol-default">Linux 64-bit</td>
-    </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron v{{ meta.version }} - Release</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+      margin: 0;
+      padding: 2em;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #468292 0%, #2c3e50 100%);
+      color: white;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+    }
+
+    .content {
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 3px solid #468292;
+      padding-bottom: 0.5em;
+      margin-top: 1em;
+      margin-bottom: 1.5em;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .source-section h2 {
+      margin-top: 1rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .platform-selector {
+      margin: 1.5rem 0;
+    }
+
+    .selector-label {
+      display: block;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #2c3e50;
+      font-size: 1rem;
+    }
+
+    .segmented-control {
+      display: inline-flex;
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 4px;
+      border: 2px solid #468292;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .segment-button {
+      padding: 0.75rem 1.5rem;
+      background: transparent;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #6c757d;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 0;
+      min-width: 100px;
+      position: relative;
+    }
+
+    .segment-button:hover {
+      color: #468292;
+    }
+
+    .segment-button.active {
+      background: linear-gradient(135deg, #468292 0%, #34495e 100%);
+      color: white;
+      box-shadow: 0 2px 8px rgba(70, 130, 146, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .segment-button:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .segment-button:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .segment-button:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    .platform-content {
+      border: 2px solid #468292;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      margin-top: 1rem;
+    }
+
+    .platform-panel {
+      display: none;
+      padding: 0;
+    }
+
+    .platform-panel.active {
+      display: block;
+    }
+
+    .platform-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    .platform-table thead {
+      position: relative;
+    }
+
+    .platform-table thead::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, #468292 0%, #34495e 100%);
+      z-index: 1;
+    }
+
+    .platform-table th {
+      background: transparent;
+      color: white;
+      padding: 1rem 0.8rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .platform-table td {
+      padding: 1.2rem 1rem;
+      border-bottom: 1px solid #e8e8e8;
+      vertical-align: top;
+    }
+
+    .platform-table tbody tr:hover {
+      background-color: #f8f9fa;
+      transition: background-color 0.3s ease;
+    }
+
+    .platform-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .build-info-tabbed {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-left: 4px solid #468292;
+      padding: 1rem;
+      border-radius: 6px;
+      min-width: 250px;
+      max-width: 300px;
+    }
+
+    .build-info-tabbed .build-flavour {
+      font-weight: 700;
+      color: #2c3e50;
+      font-size: 1.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    .build-info-tabbed .build-id {
+      color: #6c757d;
+      font-family: 'Consolas', 'Monaco', monospace;
+      font-size: 0.9em;
+      margin-bottom: 0.5rem;
+    }
+
+    .build-info-tabbed .build-description {
+      color: #495057;
+      font-style: italic;
+      margin-bottom: 1rem;
+      font-size: 0.95em;
+    }
+
+    .platform-downloads-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 0.5rem;
+    }
+
+    .platform-downloads-column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .general-downloads-tabbed {
+      background: linear-gradient(135deg, #e3f2fd 0%, #f1f8e9 100%);
+      border-radius: 6px;
+      padding: 0.75rem;
+      margin-bottom: 0.75rem;
+      border: 1px solid #468292;
+    }
+
+    .general-downloads-tabbed .download-link {
+      font-size: 0.75rem;
+      padding: 0.4rem 0.6rem;
+    }
+
+    .download-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .download-link {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border: 2px solid #468292;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #468292;
+      font-weight: 600;
+      font-size: 0.8rem;
+      transition: all 0.3s ease;
+      text-align: center;
+      min-width: 90px;
+      white-space: nowrap;
+    }
+
+    .download-link:hover {
+      background: linear-gradient(135deg, #468292 0%, #2c3e50 100%);
+      color: white;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(70, 130, 146, 0.3);
+    }
+
+    .source-section {
+      background: linear-gradient(135deg, #e3f2fd 0%, #f1f8e9 100%);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border: 1px solid #468292;
+    }
+
+    .source-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .source-table td {
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    .notice {
+      background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+      border: 2px solid #ffc107;
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem 0;
+      color: #856404;
+      font-size: 1.05rem;
+    }
+
+    .notice strong {
+      color: #495057;
+    }
+
+    .notice a {
+      color: #468292;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .notice a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 1200px) {
+      .segmented-control {
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+      }
+      
+      .segment-button {
+        flex: 1;
+        min-width: 0;
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+      }
+      
+      .platform-table {
+        font-size: 0.9rem;
+      }
+      
+      .platform-table th,
+      .platform-table td {
+        padding: 0.8rem 0.6rem;
+      }
+      
+      .build-info-tabbed {
+        min-width: 200px;
+        max-width: 250px;
+      }
+      
+      .platform-downloads-grid {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: 0.4rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .header {
+        padding: 1.5rem 1rem;
+      }
+      
+      .header h1 {
+        font-size: 2rem;
+      }
+      
+      .content {
+        padding: 1rem;
+      }
+      
+      .segmented-control {
+        flex-direction: column;
+        padding: 6px;
+        max-width: 250px;
+        margin: 0 auto;
+      }
+      
+      .segment-button {
+        border-radius: 6px !important;
+        margin-bottom: 2px;
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+      }
+      
+      .segment-button:last-child {
+        margin-bottom: 0;
+      }
+      
+      .platform-table {
+        font-size: 0.8rem;
+      }
+      
+      .platform-table th,
+      .platform-table td {
+        padding: 0.6rem 0.4rem;
+      }
+      
+      .download-link {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.7rem;
+        min-width: 70px;
+      }
+      
+      .build-info-tabbed {
+        min-width: 180px;
+        max-width: 200px;
+        padding: 0.8rem;
+      }
+      
+      .platform-downloads-grid {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 0.3rem;
+      }
+      
+      .general-downloads-tabbed .download-link {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Electron v{{ meta.version }}</h1>
+    </div>
+    
+    <div class="content">
+      <div class="section">
+        <h2>Electron builds</h2>
+        <div class="platform-selector">
+          <div class="selector-label">Select Platform:</div>
+          <div class="segmented-control" data-section="electron">
+            <button class="segment-button active" data-platform="windows">Windows</button>
+            <button class="segment-button" data-platform="macos">macOS</button>
+            <button class="segment-button" data-platform="linux">Linux</button>
+          </div>
+          
+          <div class="platform-content">
+            <!-- Windows Panel -->
+            <div class="platform-panel active" id="electron-windows-panel" data-section="electron">
+              <table class="platform-table">
+                <thead>
+                  <tr>
+                    <th style="width: 300px;">Build Information</th>
+                    <th>ARM64</th>
+                    <th>32-bit</th>
+                    <th>64-bit</th>
+                  </tr>
+                </thead>
+                <tbody>
 {% for build in electron.builds %}
-    <tr class="ms-{% if loop.index is divisibleby 2 %}rteTableEvenRow{% else %}rteTableOddRow{% endif %}-default">
-      <td class="ms-rteTableEvenCol-default">
-        "<strong>{{ build.flavour }}</strong>" flavour, build number <strong>{{ build.id }}</strong><br />
-        <i>{{ build.description }}</i><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron.d.ts">TypeScript Typings</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/hunspell_dictionaries.zip">Hunspell dictionaries</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/third-party_attributions.txt">3rd-party attributions</a><br />
-      </td>
-      <td class="ms-rteTableOddCol-default">
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-arm64.zip">electron</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-arm64-pdb.zip">pdb</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-arm64-symbols.zip">symbols</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-win32-arm64.zip">mksnapshot</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-win32-arm64.zip">chromedriver</a>
-      </td>
-      <td class="ms-rteTableEvenCol-default">
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-ia32.zip">electron</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-ia32-pdb.zip">pdb</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-ia32-symbols.zip">symbols</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-win32-ia32.zip">mksnapshot</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-win32-ia32.zip">chromedriver</a>
-      </td>
-      <td class="ms-rteTableOddCol-default">
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-x64.zip">electron</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-x64-pdb.zip">pdb</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-x64-symbols.zip">symbols</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-win32-x64.zip">mksnapshot</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-win32-x64.zip">chromedriver</a>
-      </td>
-      <td class="ms-rteTableEvenCol-default">
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-arm64.zip">electron</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-arm64-dsym.zip">dsym</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-arm64-symbols.zip">symbols</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-darwin-arm64.zip">mksnapshot</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-darwin-arm64.zip">chromedriver</a>
-      </td>
-      <td class="ms-rteTableOddCol-default">
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-x64.zip">electron</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-x64-dsym.zip">dsym</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-x64-symbols.zip">symbols</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-darwin-x64.zip">mksnapshot</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-darwin-x64.zip">chromedriver</a>
-      </td>
-      <td class="ms-rteTableEvenCol-default">
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-armv7l.zip">electron</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-armv7l-dbg.zip">dbg</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-armv7l-symbols.zip">symbols</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-linux-armv7l.zip">mksnapshot</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-linux-armv7l.zip">chromedriver</a>
-      </td>
-      <td class="ms-rteTableOddCol-default">
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-arm64.zip">electron</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-arm64-dbg.zip">dbg</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-arm64-symbols.zip">symbols</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-linux-arm64.zip">mksnapshot</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-linux-arm64.zip">chromedriver</a>
-      </td>
-      <td class="ms-rteTableEvenCol-default">
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-x64.zip">electron</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-x64-dbg.zip">dbg</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-x64-symbols.zip">symbols</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-linux-x64.zip">mksnapshot</a><br />
-        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-linux-x64.zip">chromedriver</a>
-      </td>
-    </tr>
+                  <tr>
+                    <td>
+                      <div class="build-info-tabbed">
+                        <div class="build-flavour">"{{ build.flavour }}" flavour</div>
+                        <div class="build-id">Build #{{ build.id }}</div>
+                        <div class="build-description">{{ build.description }}</div>
+                        <div class="general-downloads-tabbed">
+                          <div class="platform-downloads-grid">
+                            <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron.d.ts" class="download-link">TypeScript Typings</a>
+                            <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/hunspell_dictionaries.zip" class="download-link">Hunspell dictionaries</a>
+                            <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/third-party_attributions.txt" class="download-link">3rd-party attributions</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-arm64.zip" class="download-link">electron</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-arm64-pdb.zip" class="download-link">pdb</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-arm64-symbols.zip" class="download-link">symbols</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-win32-arm64.zip" class="download-link">mksnapshot</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-win32-arm64.zip" class="download-link">chromedriver</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-ia32.zip" class="download-link">electron</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-ia32-pdb.zip" class="download-link">pdb</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-ia32-symbols.zip" class="download-link">symbols</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-win32-ia32.zip" class="download-link">mksnapshot</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-win32-ia32.zip" class="download-link">chromedriver</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-x64.zip" class="download-link">electron</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-x64-pdb.zip" class="download-link">pdb</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-win32-x64-symbols.zip" class="download-link">symbols</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-win32-x64.zip" class="download-link">mksnapshot</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-win32-x64.zip" class="download-link">chromedriver</a>
+                      </div>
+                    </td>
+                  </tr>
 {% endfor %}
-  </tbody>
-</table>
-<br />
-<h2>FFmpeg builds</h2>
-<table cellspacing="0" class="ms-rteTable-default">
-  <tbody>
-    <tr class="ms-rteTableEvenRow-default">
-      <td class="ms-rteTableEvenCol-default">
-        <br />
-      </td>
-      <td class="ms-rteTableOddCol-default">Windows ARM64</td>
-      <td class="ms-rteTableEvenCol-default">Windows 32-bit</td>
-      <td class="ms-rteTableOddCol-default">Windows 64-bit</td>
-      <td class="ms-rteTableEvenCol-default">macOS ARM64</td>
-      <td class="ms-rteTableOddCol-default">macOS 64-bit</td>
-      <td class="ms-rteTableEvenCol-default">Linux ARM</td>
-      <td class="ms-rteTableOddCol-default">Linux ARM64</td>
-      <td class="ms-rteTableEvenCol-default">Linux 64-bit</td>
-    </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <!-- macOS Panel -->
+            <div class="platform-panel" id="electron-macos-panel" data-section="electron">
+              <table class="platform-table">
+                <thead>
+                  <tr>
+                    <th style="width: 300px;">Build Information</th>
+                    <th>ARM64</th>
+                    <th>64-bit</th>
+                  </tr>
+                </thead>
+                <tbody>
+{% for build in electron.builds %}
+                  <tr>
+                    <td>
+                      <div class="build-info-tabbed">
+                        <div class="build-flavour">"{{ build.flavour }}" flavour</div>
+                        <div class="build-id">Build #{{ build.id }}</div>
+                        <div class="build-description">{{ build.description }}</div>
+                        <div class="general-downloads-tabbed">
+                          <div class="platform-downloads-grid">
+                            <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron.d.ts" class="download-link">TypeScript Typings</a>
+                            <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/hunspell_dictionaries.zip" class="download-link">Hunspell dictionaries</a>
+                            <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/third-party_attributions.txt" class="download-link">3rd-party attributions</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-arm64.zip" class="download-link">electron</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-arm64-dsym.zip" class="download-link">dsym</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-arm64-symbols.zip" class="download-link">symbols</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-darwin-arm64.zip" class="download-link">mksnapshot</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-darwin-arm64.zip" class="download-link">chromedriver</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-x64.zip" class="download-link">electron</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-x64-dsym.zip" class="download-link">dsym</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-darwin-x64-symbols.zip" class="download-link">symbols</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-darwin-x64.zip" class="download-link">mksnapshot</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-darwin-x64.zip" class="download-link">chromedriver</a>
+                      </div>
+                    </td>
+                  </tr>
+{% endfor %}
+                </tbody>
+              </table>
+            </div>
+            
+            <!-- Linux Panel -->
+            <div class="platform-panel" id="electron-linux-panel" data-section="electron">
+              <table class="platform-table">
+                <thead>
+                  <tr>
+                    <th style="width: 300px;">Build Information</th>
+                    <th>ARM</th>
+                    <th>ARM64</th>
+                    <th>64-bit</th>
+                  </tr>
+                </thead>
+                <tbody>
+{% for build in electron.builds %}
+                  <tr>
+                    <td>
+                      <div class="build-info-tabbed">
+                        <div class="build-flavour">"{{ build.flavour }}" flavour</div>
+                        <div class="build-id">Build #{{ build.id }}</div>
+                        <div class="build-description">{{ build.description }}</div>
+                        <div class="general-downloads-tabbed">
+                          <div class="platform-downloads-grid">
+                            <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron.d.ts" class="download-link">TypeScript Typings</a>
+                            <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/hunspell_dictionaries.zip" class="download-link">Hunspell dictionaries</a>
+                            <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/third-party_attributions.txt" class="download-link">3rd-party attributions</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-armv7l.zip" class="download-link">electron</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-armv7l-dbg.zip" class="download-link">dbg</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-armv7l-symbols.zip" class="download-link">symbols</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-linux-armv7l.zip" class="download-link">mksnapshot</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-linux-armv7l.zip" class="download-link">chromedriver</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-arm64.zip" class="download-link">electron</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-arm64-dbg.zip" class="download-link">dbg</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-arm64-symbols.zip" class="download-link">symbols</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-linux-arm64.zip" class="download-link">mksnapshot</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-linux-arm64.zip" class="download-link">chromedriver</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-x64.zip" class="download-link">electron</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-x64-dbg.zip" class="download-link">dbg</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/electron-v{{ meta.version }}-linux-x64-symbols.zip" class="download-link">symbols</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/mksnapshot-v{{ meta.version }}-linux-x64.zip" class="download-link">mksnapshot</a>
+                        <a href="{{ meta.base_url }}/builds/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/chromedriver-v{{ meta.version }}-linux-x64.zip" class="download-link">chromedriver</a>
+                      </div>
+                    </td>
+                  </tr>
+{% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>FFmpeg builds</h2>
+        <div class="platform-selector">
+          <div class="selector-label">Select Platform:</div>
+          <div class="segmented-control" data-section="ffmpeg">
+            <button class="segment-button active" data-platform="windows">Windows</button>
+            <button class="segment-button" data-platform="macos">macOS</button>
+            <button class="segment-button" data-platform="linux">Linux</button>
+          </div>
+          
+          <div class="platform-content">
+            <!-- Windows Panel -->
+            <div class="platform-panel active" id="ffmpeg-windows-panel" data-section="ffmpeg">
+              <table class="platform-table">
+                <thead>
+                  <tr>
+                    <th style="width: 300px;">Build Information</th>
+                    <th>ARM64</th>
+                    <th>32-bit</th>
+                    <th>64-bit</th>
+                  </tr>
+                </thead>
+                <tbody>
 {% for build in ffmpeg.builds %}
-    <tr class="ms-{% if loop.index is divisibleby 2 %}rteTableEvenRow{% else %}rteTableOddRow{% endif %}-default">
-      <td class="ms-rteTableEvenCol-default">
-        "<strong>{{ build.flavour }}</strong>" flavour, build number <strong>{{ build.id }}</strong><br />
-        <i>{{ build.description }}</i>
-      </td>
-      <td class="ms-rteTableOddCol-default">
-        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-win32-arm64.zip">ffmpeg</a>
-      </td>
-      <td class="ms-rteTableEvenCol-default">
-        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-win32-ia32.zip">ffmpeg</a>
-      </td>
-      <td class="ms-rteTableOddCol-default">
-        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-win32-x64.zip">ffmpeg</a>
-      </td>
-      <td class="ms-rteTableEvenCol-default">
-        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-darwin-arm64.zip">ffmpeg</a>
-      </td>
-      <td class="ms-rteTableOddCol-default">
-        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-darwin-x64.zip">ffmpeg</a>
-      </td>
-      <td class="ms-rteTableEvenCol-default">
-        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-linux-armv7l.zip">ffmpeg</a>
-      </td>
-      <td class="ms-rteTableOddCol-default">
-        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-linux-arm64.zip">ffmpeg</a>
-      </td>
-      <td class="ms-rteTableEvenCol-default">
-        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-linux-x64.zip">ffmpeg</a>
-      </td>
-    </tr>
+                  <tr>
+                    <td>
+                      <div class="build-info-tabbed">
+                        <div class="build-flavour">"{{ build.flavour }}" flavour</div>
+                        <div class="build-id">Build #{{ build.id }}</div>
+                        <div class="build-description">{{ build.description }}</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-win32-arm64.zip" class="download-link">ffmpeg</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-win32-ia32.zip" class="download-link">ffmpeg</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-win32-x64.zip" class="download-link">ffmpeg</a>
+                      </div>
+                    </td>
+                  </tr>
 {% endfor %}
-  </tbody>
-</table>
-<br />
-<table cellspacing="0" class="ms-rteTable-default">
-  <tbody>
-    <tr class="ms-rteTableEvenRow-default">
-      <td class="ms-rteTableEvenCol-default">source bundle</td>
-      <td class="ms-rteTableOddCol-default"><a href="{{ meta.base_url_nonprod }}/source-bundles/microsoft-electron-v{{ meta.version }}-{{ meta.revision }}-windows.tgz">Windows</a></td>
-      <td class="ms-rteTableEvenCol-default"><a href="{{ meta.base_url_nonprod }}/source-bundles/microsoft-electron-v{{ meta.version }}-{{ meta.revision }}-mac.tgz">macOS</a></td>
-      <td class="ms-rteTableOddCol-default"><a href="{{ meta.base_url_nonprod }}/source-bundles/microsoft-electron-v{{ meta.version }}-{{ meta.revision }}-linux.tgz">Linux</a></td>
-    </tr>
-  </tbody>
-</table>
-<br />
-<br />
-<span class="ms-rteThemeForeColor-9-0"><strong>
-  Important: If you use a version of Electron with proprietary FFmpeg codecs, you may be required to pay royalties.<br/>
-  You can find more information about codecs usage at Microsoft <a href="https://docs.opensource.microsoft.com/policies/codecs/">here</a>.<br/>
-  <a href="mailto:electron-build@microsoft.com">Contact us</a> for any technical questions and support.<br/>
-</strong></span>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- macOS Panel -->
+            <div class="platform-panel" id="ffmpeg-macos-panel" data-section="ffmpeg">
+              <table class="platform-table">
+                <thead>
+                  <tr>
+                    <th style="width: 300px;">Build Information</th>
+                    <th>ARM64</th>
+                    <th>64-bit</th>
+                  </tr>
+                </thead>
+                <tbody>
+{% for build in ffmpeg.builds %}
+                  <tr>
+                    <td>
+                      <div class="build-info-tabbed">
+                        <div class="build-flavour">"{{ build.flavour }}" flavour</div>
+                        <div class="build-id">Build #{{ build.id }}</div>
+                        <div class="build-description">{{ build.description }}</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-darwin-arm64.zip" class="download-link">ffmpeg</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-darwin-x64.zip" class="download-link">ffmpeg</a>
+                      </div>
+                    </td>
+                  </tr>
+{% endfor %}
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Linux Panel -->
+            <div class="platform-panel" id="ffmpeg-linux-panel" data-section="ffmpeg">
+              <table class="platform-table">
+                <thead>
+                  <tr>
+                    <th style="width: 300px;">Build Information</th>
+                    <th>ARM</th>
+                    <th>ARM64</th>
+                    <th>64-bit</th>
+                  </tr>
+                </thead>
+                <tbody>
+{% for build in ffmpeg.builds %}
+                  <tr>
+                    <td>
+                      <div class="build-info-tabbed">
+                        <div class="build-flavour">"{{ build.flavour }}" flavour</div>
+                        <div class="build-id">Build #{{ build.id }}</div>
+                        <div class="build-description">{{ build.description }}</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-linux-armv7l.zip" class="download-link">ffmpeg</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-linux-arm64.zip" class="download-link">ffmpeg</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-downloads-column">
+                        <a href="{{ meta.base_url }}/ffmpeg/{{ meta.version }}/{{ build.flavour }}/{{ build.id }}/ffmpeg-v{{ meta.version }}-linux-x64.zip" class="download-link">ffmpeg</a>
+                      </div>
+                    </td>
+                  </tr>
+{% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="source-section">
+        <h2>Source Bundles</h2>
+        <table class="source-table">
+          <tbody>
+            <tr>
+              <td><a href="{{ meta.base_url_nonprod }}/source-bundles/microsoft-electron-v{{ meta.version }}-{{ meta.revision }}-windows.tgz" class="download-link">Windows</a></td>
+              <td><a href="{{ meta.base_url_nonprod }}/source-bundles/microsoft-electron-v{{ meta.version }}-{{ meta.revision }}-mac.tgz" class="download-link">macOS</a></td>
+              <td><a href="{{ meta.base_url_nonprod }}/source-bundles/microsoft-electron-v{{ meta.version }}-{{ meta.revision }}-linux.tgz" class="download-link">Linux</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="notice">
+        <strong>
+          Important: If you use a version of Electron with proprietary FFmpeg codecs, you may be required to pay royalties.<br/>
+          You can find more information about codecs usage at Microsoft <a href="https://docs.opensource.microsoft.com/policies/codecs/">here</a>.<br/>
+          <a href="mailto:electron-build@microsoft.com">Contact us</a> for any technical questions and support.<br/>
+        </strong>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function switchPlatform(sectionType, platform) {
+      // Hide all platform panels for this section
+      const allPanels = document.querySelectorAll(`.platform-panel[data-section="${sectionType}"]`);
+      allPanels.forEach(panel => {
+        panel.classList.remove('active');
+      });
+      
+      // Remove active class from all segment buttons for this section
+      const allButtons = document.querySelectorAll(`.segmented-control[data-section="${sectionType}"] .segment-button`);
+      allButtons.forEach(button => {
+        button.classList.remove('active');
+      });
+      
+      // Show the selected platform panel
+      const targetPanel = document.getElementById(`${sectionType}-${platform}-panel`);
+      if (targetPanel) {
+        targetPanel.classList.add('active');
+      }
+      
+      // Activate the clicked button
+      const targetButton = document.querySelector(`.segmented-control[data-section="${sectionType}"] .segment-button[data-platform="${platform}"]`);
+      if (targetButton) {
+        targetButton.classList.add('active');
+      }
+    }
+    
+    // Initialize segments when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set default active panels (Windows for both sections)
+      switchPlatform('electron', 'windows');
+      switchPlatform('ffmpeg', 'windows');
+      
+      // Add click event listeners to all segment buttons
+      const segmentButtons = document.querySelectorAll('.segment-button');
+      segmentButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          const section = this.closest('.segmented-control').dataset.section;
+          const platform = this.dataset.platform;
+          switchPlatform(section, platform);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

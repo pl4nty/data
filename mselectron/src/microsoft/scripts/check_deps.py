@@ -4,7 +4,7 @@
 Check DEPS
 """
 
-from lib.deps import get as get_deps
+from lib.deps import get_vars as get_deps_vars
 from lib.project_paths import REPO_ROOT_DIR
 
 EXPECTATIONS = {
@@ -14,7 +14,7 @@ EXPECTATIONS = {
 
 
 def check_deps():
-    deps_vars = get_deps(REPO_ROOT_DIR)['vars']
+    deps_vars = get_deps_vars(REPO_ROOT_DIR)
     for var, expected_value in EXPECTATIONS.items():
         actual_value = deps_vars[var]
         if actual_value != expected_value:

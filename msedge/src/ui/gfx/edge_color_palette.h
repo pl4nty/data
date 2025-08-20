@@ -249,6 +249,12 @@ namespace gfx {
     constexpr SkColor kWalletSeparatorDark = SkColorSetRGB(0x52, 0x52, 0x52);
     constexpr SkColor kWalletSeparatorLight = SkColorSetRGB(0xEF, 0xEF, 0xEF);
 
+    // Edge Copilot
+    constexpr SkColor kEdgeCopilotToolbarLabelButtonBackgroundLight =
+        SkColorSetARGB(0x0D, 0x00, 0x00, 0x00);
+    constexpr SkColor kEdgeCopilotToolbarLabelButtonBackgroundDark =
+        SkColorSetARGB(0x80, 0x00, 0x00, 0x00);
+
     // Edge copilot mode
     constexpr SkColor kEdgeCopilotModeDescDark =
         SkColorSetRGB(0xFF, 0xFF, 0xFF);

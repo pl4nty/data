@@ -15,13 +15,19 @@ $ microsoft/scripts/bump_deps.py v37.2.1 --quiet
 
 import argparse
 import enum
+import json
 import logging
 import os
 import re
-import requests
 import subprocess
-import tempfile
+import urllib.error
+import urllib.request
+from http.client import HTTPResponse
 from pathlib import Path
+from typing import Dict, Optional
+
+from lib.deps import get_vars_from_contents as get_deps_vars_from_contents
+from lib.gclient import gclient
 
 
 # Semver pattern (with optional v prefix and pre-release/build metadata)
@@ -31,9 +37,6 @@ from pathlib import Path
 # Examples: 1.2.3, v1.2.3, 1.2.3-alpha.1, 1.2.3+build.123, v1.2.3-beta.2+456
 SEMVER_REGEX = r'v?\d+\.\d+\.\d+(?:[-+][0-9a-zA-Z.-]+)*'
 
-# Network timeout for HTTP requests
-FETCH_TIMEOUT_SECS = 30
-
 
 class OperationMode(enum.Enum):
     """Enumeration for script operation modes."""
@@ -42,7 +45,7 @@ class OperationMode(enum.Enum):
     COMMIT = 'commit'
 
 
-def get_default_electron_build_repo_dir() -> str | None:
+def get_default_electron_build_repo_dir() -> Optional[str]:
     """Find the electron-build repository directory automatically."""
     cwd = os.getcwd()
 
@@ -89,10 +92,9 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument(
-        '--commit',
-        action=argparse.BooleanOptionalAction,
-        default=True,
-        help='Commit changes to the DEPS file (default: %(default)s)',
+        '--no-commit',
+        action='store_true',
+        help='Do not commit changes to the DEPS file',
     )
     parser.add_argument(
         '--quiet', '-q',
@@ -117,9 +119,9 @@ def get_mode(args: argparse.Namespace) -> OperationMode:
     """Determine operation mode based on command line flags."""
     if args.dry_run:
         return OperationMode.DRY_RUN
-    if args.commit:
-        return OperationMode.COMMIT
-    return OperationMode.UPDATE
+    if args.no_commit:
+        return OperationMode.UPDATE
+    return OperationMode.COMMIT
 
 
 def is_semver_tag(tag: str) -> bool:
@@ -127,84 +129,76 @@ def is_semver_tag(tag: str) -> bool:
     return re.fullmatch(SEMVER_REGEX, tag) is not None
 
 
+def _urlopen(url: str) -> HTTPResponse:
+    """Small urllib opener with local defaults for UA and timeout.
+
+    Returns an HTTPResponse; use in a `with` block.
+    """
+    TIMEOUT = 30
+    USER_AGENT = 'electron-build-bump-deps'
+    req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+    return urllib.request.urlopen(req, timeout=TIMEOUT)
+
+
 def get_commit_sha_for_tag(tag: str) -> str:
     """Get the git commit SHA for an Electron tag from GitHub API."""
     url = f'https://api.github.com/repos/electron/electron/git/ref/tags/{tag}'
     try:
-        response = requests.get(url, timeout=FETCH_TIMEOUT_SECS)
-        response.raise_for_status()
-        data = response.json()
+        with _urlopen(url) as resp:
+            data = json.load(resp)
 
-        # If it's an annotated tag, dereference it to get the
-        # sha of the commit that it points to.
         if data['object']['type'] == 'tag':
-            url = data['object']['url']
-            tag_response = requests.get(url, timeout=FETCH_TIMEOUT_SECS)
-            tag_response.raise_for_status()
-            data = tag_response.json()
+            tag_url = data['object']['url']
+            with _urlopen(tag_url) as resp2:
+                data = json.load(resp2)
 
         return data['object']['sha']
 
-    except requests.exceptions.HTTPError as e:
-        if e.response.status_code == 404:
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
             raise RuntimeError(f'Tag {tag} not found in {url}') from e
-        raise RuntimeError(f'Got HTTP {e.response.status_code}') from e
-    except requests.exceptions.RequestException as e:
+        raise RuntimeError(f'Got HTTP {e.code}') from e
+    except urllib.error.URLError as e:
         raise RuntimeError(f'Network error fetching tag {tag}: {e}') from e
 
 
-def get_var(deps_path: Path, key: str) -> str:
-    """Get a variable value from a DEPS file using gclient."""
+def validate_deps(deps_content: str) -> None:
+    """Confirm that a DEPS file is well-formed."""
     try:
-        result = subprocess.run(
-            ['gclient', 'getdep', f'--deps-file={deps_path}', f'--var={key}'],
-            check=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-        )
-    except subprocess.CalledProcessError as e:
-        error_msg = e.stderr.strip() if e.stderr else 'Unknown error'
-        raise RuntimeError(f'Failed to get variable {key}: {error_msg}') from e
-
-    val = result.stdout.strip()
-    if not val:
-        raise ValueError(f'Invalid or missing value: "{key}": "{val}"')
-
-    return val
+        get_deps_vars_from_contents(deps_content)
+    except SyntaxError as e:
+        raise RuntimeError(
+            f'Error on line {getattr(e, "lineno", "?")}: {e.msg}'
+        ) from e
+    except Exception as e:
+        raise RuntimeError(f'Error validating DEPS content: {e}') from e
 
 
 def validate_deps_file(filename: Path) -> None:
-    """Validate DEPS file syntax using Python compile()."""
+    """Confirm that a DEPS file is well-formed."""
     try:
         with open(filename, 'r', encoding='utf-8') as f:
             content = f.read()
-        compile(content, str(filename), 'exec')
+        validate_deps(content)
     except FileNotFoundError as e:
         raise RuntimeError(f'DEPS file not found: {filename}') from e
-    except SyntaxError as e:
-        raise RuntimeError(f'Error on line {e.lineno}: {e.msg}') from e
     except Exception as e:
         raise RuntimeError(f'Error validating {filename}: {e}') from e
 
 
-def extract_deps_variables(deps_content: str) -> dict[str, str]:
-    """Extract chromium_version and node_version from DEPS using gclient."""
-    with tempfile.NamedTemporaryFile(mode='w+', suffix='.DEPS') as deps_file:
-        deps_file.write(deps_content)
-        deps_file.flush()
-        path = Path(deps_file.name)
-        validate_deps_file(path)
-
-        return {
-            'microsoft_chromium_version': get_var(path, 'chromium_version'),
-            'microsoft_node_version': get_var(path, 'node_version'),
-        }
+def extract_deps_variables(deps_content: str) -> Dict[str, str]:
+    """Extract chromium_version and node_version from DEPS contents."""
+    validate_deps(deps_content)
+    vars_map = get_deps_vars_from_contents(deps_content)
+    return {
+        'microsoft_chromium_version': str(vars_map['chromium_version']),
+        'microsoft_node_version': str(vars_map['node_version']),
+    }
 
 
 def update_electron_build_deps(
     electron_build_repo_dir: str,
-    deps_vars: dict[str, str],
+    deps_vars: Dict[str, str],
     mode: OperationMode
 ) -> None:
     """Update variables in a DEPS file. Optionally commit changes."""
@@ -214,17 +208,15 @@ def update_electron_build_deps(
 
     # Update each variable using gclient setdep
     git_args = ['git', 'commit', 'DEPS']
+    prev_cwd = os.getcwd()
     cwd = electron_build_repo_dir
+    os.chdir(cwd)
     changed = False
     for key, val in deps_vars.items():
         logging.info('Setting %s = %s', key, val)
         if mode != OperationMode.DRY_RUN:
             try:
-                subprocess.run(
-                    ['gclient', 'setdep', f'--var={key}={val}'],
-                    cwd=cwd,
-                    check=True,
-                )
+                gclient('setdep', f'--var={key}={val}')
                 if has_unstaged_changes(cwd):
                     subprocess.run(['git', 'add', 'DEPS'], cwd=cwd, check=True)
                     git_args.extend(['-m', f'deps: set {key} to {val}'])
@@ -232,6 +224,7 @@ def update_electron_build_deps(
             except subprocess.CalledProcessError as e:
                 msg = e.stderr.strip() if e.stderr else 'Unknown error'
                 raise RuntimeError(f'Failed to set {key}={val}: {msg}') from e
+    os.chdir(prev_cwd)
 
     validate_deps_file(deps_file)
 
@@ -263,20 +256,14 @@ def fetch_deps_for_tag(tag: str) -> str:
     logging.info('Fetching DEPS from: %s', url)
 
     try:
-        response = requests.get(url, timeout=FETCH_TIMEOUT_SECS)
-        response.raise_for_status()
-        return response.text
-    except requests.exceptions.HTTPError as e:
-        if e.response.status_code == 404:
+        with _urlopen(url) as resp:
+            return resp.read().decode('utf-8')
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
             raise RuntimeError(f'DEPS file not found for tag {tag}') from e
-        raise RuntimeError(
-            f'Failed to fetch DEPS for tag {tag}: '
-            f'HTTP {e.response.status_code}'
-        ) from e
-    except requests.exceptions.RequestException as e:
-        raise RuntimeError(
-            f'Network error fetching DEPS for tag {tag}: {e}'
-        ) from e
+        raise RuntimeError(f'Failed to get {url}: HTTP {e.code}') from e
+    except urllib.error.URLError as e:
+        raise RuntimeError(f'Network error fetching {url}: {e}') from e
 
 
 def has_unstaged_changes(repo_dir: str) -> bool:
