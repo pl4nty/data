@@ -26,7 +26,7 @@ else
 end
 if (string.find)(l_0_4, "http", 1, true) and ((string.find)(l_0_4, "os\"", 1, true) or (string.find)(l_0_4, "id\"", 1, true) or (string.find)(l_0_4, "version", 1, true) or (string.find)(l_0_4, "lang ", 1, true)) then
   if l_0_3 ~= "" and l_0_3 ~= nil and (sysio.IsFileExists)(l_0_3) then
-    return mp.INFECTED
+    (bm.add_threat_file)(l_0_3)
   end
   return mp.INFECTED
 end
