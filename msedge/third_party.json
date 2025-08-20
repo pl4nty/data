@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10714954,
+    "size": 10714622,
     "file_count": 167
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32209485,
-    "file_count": 3941
+    "size": 32198752,
+    "file_count": 3935
   },
   {
     "name": "boringssl",
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36542593,
+    "size": 36542622,
     "file_count": 95
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16398993,
+    "size": 16408842,
     "file_count": 252
   },
   {
@@ -256,8 +256,8 @@
   },
   {
     "name": "glslang",
-    "size": 43085595,
-    "file_count": 3176
+    "size": 43099424,
+    "file_count": 3182
   },
   {
     "name": "googletest",
@@ -281,8 +281,8 @@
   },
   {
     "name": "harfbuzz-ng",
-    "size": 289388,
-    "file_count": 31
+    "size": 298259,
+    "file_count": 32
   },
   {
     "name": "hunspell",
@@ -426,7 +426,7 @@
   },
   {
     "name": "libusb",
-    "size": 833361,
+    "size": 833338,
     "file_count": 61
   },
   {
@@ -451,7 +451,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 217871931,
+    "size": 216056583,
     "file_count": 341
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18805739,
+    "size": 18805227,
     "file_count": 19
   },
   {
@@ -521,7 +521,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 28569,
+    "size": 28651,
     "file_count": 15
   },
   {
@@ -561,8 +561,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3803884,
-    "file_count": 578
+    "size": 3824838,
+    "file_count": 579
   },
   {
     "name": "perl",
@@ -646,7 +646,7 @@
   },
   {
     "name": "skia",
-    "size": 3457931,
+    "size": 3458604,
     "file_count": 1178
   },
   {
@@ -691,8 +691,8 @@
   },
   {
     "name": "tflite",
-    "size": 1656710,
-    "file_count": 489
+    "size": 1657260,
+    "file_count": 491
   },
   {
     "name": "tflite_support",
@@ -716,7 +716,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1369154,
+    "size": 1369753,
     "file_count": 23
   },
   {
@@ -726,12 +726,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2437561,
+    "size": 2439447,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6130369,
+    "size": 6128630,
     "file_count": 166
   },
   {
