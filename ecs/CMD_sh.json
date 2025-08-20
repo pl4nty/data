@@ -834,6 +834,7 @@
         "EnableXMLValidation": true,
         "Enable_ExcludeCoreError": true,
         "Enable_GCB_IWS": true,
+        "Enable_GetCloudPCEntityFromDB": true,
         "Enable_GetDirectLaunchURLAPI": true,
         "Enable_IWSReturnFrontlineAvailability": true,
         "Enable_IWSReturnGpuCategory": true,
