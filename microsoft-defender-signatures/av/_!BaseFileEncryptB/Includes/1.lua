@@ -74,7 +74,7 @@ do
     return mp.CLEAN
   end
   do
-    if IsBasFileEncryptExt(l_0_8) == false and IsBasFileNoisyEncryptExt(l_0_8) == false and l_0_0 == mp.SCANREASON_ONOPEN then
+    if IsBasFileEncryptExt(l_0_8) == false and l_0_0 == mp.SCANREASON_ONOPEN then
       local l_0_9 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_AGE)
       if l_0_9 == nil then
         return mp.CLEAN
