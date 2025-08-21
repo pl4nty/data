@@ -932,6 +932,76 @@
             </summary>
             <param name="httpClientFactory"></param>
         </member>
+        <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus">
+            <summary>
+            Cmdlet to verify the status of tenant for Private channel migration.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus.TeamsAndChannelsServiceEndpoint">
+            <summary>
+            The resource uri for Teams and Channels service.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus.#ctor(Microsoft.TeamsCmdlets.Powershell.Connect.Common.IHttpClientFactory)">
+            <summary>
+            Constructor with IHttpClientFactory.
+            </summary>
+            <param name="httpClientFactory"></param>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus.CmdletName">
+            <summary>
+            Cmdlet name.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus.PerformAuthorization">
+            <summary>
+            Performs authorization specific to the Teams and Channels service for this cmdlet.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus.ProcessRecord">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.PrivateChannelMigrationStatusResponse">
+            <summary>
+            Represents the response model for tenant Private channel migration status.
+            Includes status, timestamps, and details about the migration process.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.PrivateChannelMigrationStatusResponse.TenantId">
+            <summary>
+            The Azure AD tenant identifier.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.PrivateChannelMigrationStatusResponse.MigrationStatus">
+            <summary>
+            The current migration status for Private channels.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.PrivateChannelMigrationStatusResponse.LastChecked">
+            <summary>
+            The timestamp when the migration status was last checked.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.PrivateChannelMigrationStatusResponse.Details">
+            <summary>
+            Additional details about the migration status.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.PrivateChannelMigrationStatusResponse.MigrationStartTimeStamp">
+            <summary>
+            The timestamp when the migration started.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.PrivateChannelMigrationStatusResponse.MigrationCompletionTimeStamp">
+            <summary>
+            The timestamp when the migration completed.
+            </summary>
+        </member>
         <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantSettings">
             <summary>
             Get the Unified App from UAM service.
@@ -1354,6 +1424,11 @@
         <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.Group.CreationOptions">
             <summary>
             creation Options
+            </summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.Group.ResourceBehaviorOptions">
+            <summary>
+            Resource Behavior Options
             </summary>
         </member>
         <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.Group.EducationObjectType">

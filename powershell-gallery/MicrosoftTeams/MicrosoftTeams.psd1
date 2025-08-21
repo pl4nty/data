@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.3.0'
+ModuleVersion = '7.3.1'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -792,22 +792,8 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.3.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- Adds Notify parameter to [Set|Remove]-CsPhoneNumberAssignment cmdlets.
-- Releases [New|Set|Remove|Get|Grant]-CsTeamsPersonalAttendantPolicy cmdlets.
-- Adds OCDIRedirect parameter to [Set|Remove]-CsTeamsUpdateManagementPolicy cmdlets.
-- Adds AppName output attribute to Get-M365TeamsApp and Get-AllM365TeamsApps cmdlets.
-- Contains a new implementation of [Get|Set]-CsTeamsAcsFederationConfiguration. Functionality remains the same as previous implementation.
-- Adds HideBannerForAllowedAcsUsers and LabelForAllowedAcsUsers parameters to Set-CsTeamsAcsFederationConfiguration cmdlet.
-- [BREAKING CHANGE] Removes Get-CsOnlinePowerShellEndpoint and Set-CsInternalOnlinePowerShellEndpoint cmdlets.
-- Adds MainlineAttendantFlow and MainlineAttendantTarget parameters to New-CsAutoAttendantMenuOption cmdlet.
-- Adds EnableMainlineAttendant parameter to [New|Set]-CsAutoAttendant cmdlets.
-- Releases New-CsMainlineAttendantAppointmentBookingFlow, New-CsMainlineAttendantQuestionAnswerFlow and Get-CsMainlineAttendantFlow cmdlets.
-- Releases [Get|Set]-CsPersonalAttendantSettings cmdlets.
-- Fixes the error with Set-CsTeamsSettingsCustomApp cmdlet.
-- Adds UseMicrosoftECDN and RecordingForTownhall parameters to [New|Set]-CsTeamsEventsPolicy cmdlets.
-- Adds ExplicitRecordingConsent parameter to [New|Set]-CsTeamsCallingPolicy cmdlets.
-- Adds EduGenerativeAIEnhancements and AutoShareFilesInExternalChats parameters to [New|Set]-CsTeamsMessagingPolicy cmdlets.
+ **7.3.1-GA** (The project - MicrosoftTeams contains changes till this release)
+- Fixes New-Team cmdlet for EDU teams.
 
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes

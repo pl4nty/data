@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Microsoft.Teams.PowerShell.Module/7.3.0": {
+      "Microsoft.Teams.PowerShell.Module/7.3.1": {
         "dependencies": {
           "Microsoft.NETCore.Targets": "3.1.0",
           "Microsoft.Teams.ConfigAPI.Cmdlets": "8.808.3",
           "Microsoft.Teams.Policy.Administration": "21.4.4",
           "Microsoft.Teams.Policy.Administration.Cmdlets.OCE": "0.1.12",
           "Microsoft.Teams.PowerShell.Connect": "1.7.3",
-          "Microsoft.Teams.PowerShell.TeamsCmdlets": "1.5.2",
+          "Microsoft.Teams.PowerShell.TeamsCmdlets": "1.5.3",
           "NuGet.Build.Tasks.Pack": "5.2.0",
           "NuGet.CommandLine": "5.11.6",
           "System.Management.Automation": "6.2.7",
@@ -960,7 +960,7 @@
           }
         }
       },
-      "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.2": {
+      "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.3": {
         "dependencies": {
           "Microsoft.Teams.PowerShell.Connect": "1.7.3",
           "Newtonsoft.Json": "13.0.3",
@@ -971,8 +971,8 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Teams.PowerShell.TeamsCmdlets.dll": {
-            "assemblyVersion": "1.5.2.0",
-            "fileVersion": "1.5.2.0"
+            "assemblyVersion": "1.5.3.0",
+            "fileVersion": "1.5.3.0"
           },
           "lib/netcoreapp3.1/Polly.Contrib.WaitAndRetry.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -2061,7 +2061,7 @@
     }
   },
   "libraries": {
-    "Microsoft.Teams.PowerShell.Module/7.3.0": {
+    "Microsoft.Teams.PowerShell.Module/7.3.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2321,16 +2321,16 @@
     "Microsoft.Teams.PowerShell.Connect/1.7.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3bLqIS921MS7zFqgyTjUkEkTIsJbsdjNqfysjiidQgOJTeAJdFgjRXx67jDiSBep+a6HetIN/BfX9QbTaHYAsg==",
+      "sha512": "sha512-mThur2TmhaRKakr4VvoJUpEduRZHnqnFoptped5pgfzr9tCttC+kILDScdtdZIrVq0v8Xt+hydhDEAKtPgwLJQ==",
       "path": "microsoft.teams.powershell.connect/1.7.3",
       "hashPath": "microsoft.teams.powershell.connect.1.7.3.nupkg.sha512"
     },
-    "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.2": {
+    "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QLON/HkuUv5Ujgi7rhIpG5j6Rl++PgaeUxnTJ3GXX72WB062AOVl9s81rn891+koRD2n2BavcyksjVUgrXK20w==",
-      "path": "microsoft.teams.powershell.teamscmdlets/1.5.2",
-      "hashPath": "microsoft.teams.powershell.teamscmdlets.1.5.2.nupkg.sha512"
+      "sha512": "sha512-XhEc4fFryxir3lHmxAU6vL5QeOQ1qw85VyEDq0IN+SGtM+VNE+D605ci1h93FBVPJ2uHm4tIhFgLhaLNRN0gsQ==",
+      "path": "microsoft.teams.powershell.teamscmdlets/1.5.3",
+      "hashPath": "microsoft.teams.powershell.teamscmdlets.1.5.3.nupkg.sha512"
     },
     "Microsoft.Web.WebView2/1.0.864.35": {
       "type": "package",

@@ -4129,7 +4129,7 @@ Tag:Test Enabled</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>LocalStore</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill LocalStore Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -4140,7 +4140,7 @@ Tag:Test Enabled</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Tenant</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill Tenant Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
           <dev:type>
@@ -4179,7 +4179,7 @@ Tag:Test Enabled</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>LocalStore</maml:name>
         <maml:description>
-          <maml:para></maml:para>
+          <maml:para>{{ Fill LocalStore Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -4191,7 +4191,7 @@ Tag:Test Enabled</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Tenant</maml:name>
         <maml:description>
-          <maml:para></maml:para>
+          <maml:para>{{ Fill Tenant Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
         <dev:type>
@@ -4664,7 +4664,7 @@ Description            :</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>LocalStore</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill LocalStore Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -4675,7 +4675,7 @@ Description            :</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Tenant</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill Tenant Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
           <dev:type>
@@ -4716,7 +4716,7 @@ Description            :</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>LocalStore</maml:name>
         <maml:description>
-          <maml:para></maml:para>
+          <maml:para>{{ Fill LocalStore Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -4728,7 +4728,7 @@ Description            :</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Tenant</maml:name>
         <maml:description>
-          <maml:para></maml:para>
+          <maml:para>{{ Fill Tenant Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
         <dev:type>
@@ -7570,7 +7570,7 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PassThru</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill PassThru Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -7654,7 +7654,7 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PassThru</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill PassThru Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -7750,7 +7750,7 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PassThru</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill PassThru Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -7847,7 +7847,7 @@ Tag:wld-policy2                           False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>PassThru</maml:name>
         <maml:description>
-          <maml:para></maml:para>
+          <maml:para>{{ Fill PassThru Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -8012,7 +8012,7 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PassThru</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill PassThru Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -8096,7 +8096,7 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PassThru</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill PassThru Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -8192,7 +8192,7 @@ Tag:wld-policy2                           False</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PassThru</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill PassThru Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -8289,7 +8289,7 @@ Tag:wld-policy2                           False</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>PassThru</maml:name>
         <maml:description>
-          <maml:para></maml:para>
+          <maml:para>{{ Fill PassThru Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -13993,22 +13993,6 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>ExplicitRecordingConsent</maml:name>
-          <maml:description>
-            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-            <maml:para>Determines whether users need to give explicit consent for recording and transcript in 1:1 calls. Set this to enabled to request users to give explicit consent.</maml:para>
-            <maml:para>Possible Values: - Enabled: Explicit consent, requires participant agreement.</maml:para>
-            <maml:para>- Disabled: Implicit consent, does not require participant agreement.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>Disabled</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowDelegation</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
@@ -14396,6 +14380,8 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ExplicitRecordingConsent</maml:name>
           <maml:description>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>This setting controls whether users must provide or obtain explicit consent before recording a 1:1 PSTN or Teams call. When enabled, both parties will receive a notification, and consent must be given before recording starts.</maml:para>
             <maml:para>Possible values:</maml:para>
             <maml:para>- Enabled : Requires users to give and obtain explicit consent before starting a call recording. - Disabled : Users are not required to obtain explicit consent before recording starts.</maml:para>
@@ -14507,22 +14493,6 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>ExplicitRecordingConsent</maml:name>
-        <maml:description>
-          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-          <maml:para>Determines whether users need to give explicit consent for recording and transcript in 1:1 calls. Set this to enabled to request users to give explicit consent.</maml:para>
-          <maml:para>Possible Values: - Enabled: Explicit consent, requires participant agreement.</maml:para>
-          <maml:para>- Disabled: Implicit consent, does not require participant agreement.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>Disabled</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowDelegation</maml:name>
@@ -14926,6 +14896,8 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ExplicitRecordingConsent</maml:name>
         <maml:description>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>This setting controls whether users must provide or obtain explicit consent before recording a 1:1 PSTN or Teams call. When enabled, both parties will receive a notification, and consent must be given before recording starts.</maml:para>
           <maml:para>Possible values:</maml:para>
           <maml:para>- Enabled : Requires users to give and obtain explicit consent before starting a call recording. - Disabled : Users are not required to obtain explicit consent before recording starts.</maml:para>
@@ -29935,7 +29907,7 @@ At line:1 char:1
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Force</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>Suppresses all non-fatal errors.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -29946,7 +29918,7 @@ At line:1 char:1
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Tenant</maml:name>
           <maml:description>
-            <maml:para></maml:para>
+            <maml:para>{{ Fill Tenant Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
           <dev:type>
@@ -29984,7 +29956,7 @@ At line:1 char:1
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Force</maml:name>
         <maml:description>
-          <maml:para></maml:para>
+          <maml:para>Suppresses all non-fatal errors.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -30008,7 +29980,7 @@ At line:1 char:1
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Tenant</maml:name>
         <maml:description>
-          <maml:para></maml:para>
+          <maml:para>{{ Fill Tenant Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
         <dev:type>
@@ -35502,22 +35474,6 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>ExplicitRecordingConsent</maml:name>
-          <maml:description>
-            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-            <maml:para>Determines whether users need to give explicit consent for recording and transcript in 1:1 calls. Set this to enabled to request users to give explicit consent.</maml:para>
-            <maml:para>Possible Values: - Enabled: Explicit consent, requires participant agreement.</maml:para>
-            <maml:para>- Disabled: Implicit consent, does not require participant agreement.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-          <dev:type>
-            <maml:name>Boolean</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>Disabled</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowDelegation</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
@@ -35900,6 +35856,8 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ExplicitRecordingConsent</maml:name>
           <maml:description>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>This setting controls whether users must provide or obtain explicit consent before recording a 1:1 PSTN or Teams call. When enabled, both parties will receive a notification, and consent must be given before recording starts.</maml:para>
             <maml:para>Possible values:</maml:para>
             <maml:para>- Enabled : Requires users to give and obtain explicit consent before starting a call recording. - Disabled : Users are not required to obtain explicit consent before recording starts.</maml:para>
@@ -36011,22 +35969,6 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>ExplicitRecordingConsent</maml:name>
-        <maml:description>
-          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-          <maml:para>Determines whether users need to give explicit consent for recording and transcript in 1:1 calls. Set this to enabled to request users to give explicit consent.</maml:para>
-          <maml:para>Possible Values: - Enabled: Explicit consent, requires participant agreement.</maml:para>
-          <maml:para>- Disabled: Implicit consent, does not require participant agreement.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-        <dev:type>
-          <maml:name>Boolean</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>Disabled</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowDelegation</maml:name>
@@ -36425,6 +36367,8 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ExplicitRecordingConsent</maml:name>
         <maml:description>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>This setting controls whether users must provide or obtain explicit consent before recording a 1:1 PSTN or Teams call. When enabled, both parties will receive a notification, and consent must be given before recording starts.</maml:para>
           <maml:para>Possible values:</maml:para>
           <maml:para>- Enabled : Requires users to give and obtain explicit consent before starting a call recording. - Disabled : Users are not required to obtain explicit consent before recording starts.</maml:para>
@@ -39321,7 +39265,7 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
           <maml:name>Instance</maml:name>
           <maml:description>
-            <maml:para>Pass in the policy fetched from Get-CsTeamsEducationAssignmentsAppPolicy</maml:para>
+            <maml:para>Pass in the policy fetched from Get-CsTeamsEducationAssignmentsAppPolicy.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
           <dev:type>
@@ -39455,7 +39399,7 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
         <maml:name>Instance</maml:name>
         <maml:description>
-          <maml:para>Pass in the policy fetched from Get-CsTeamsEducationAssignmentsAppPolicy</maml:para>
+          <maml:para>Pass in the policy fetched from Get-CsTeamsEducationAssignmentsAppPolicy.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
         <dev:type>
