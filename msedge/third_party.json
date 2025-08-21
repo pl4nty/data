@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32209012,
-    "file_count": 3935
+    "size": 32214634,
+    "file_count": 3938
   },
   {
     "name": "boringssl",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16408842,
+    "size": 16262988,
     "file_count": 252
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 282465,
+    "size": 282530,
     "file_count": 40
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18809323,
+    "size": 18827243,
     "file_count": 19
   },
   {
@@ -561,7 +561,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3827220,
+    "size": 3830766,
     "file_count": 579
   },
   {

@@ -21,3 +21,8 @@ message EdgeTopicCategory {
   // of a visit belonging to this category of the form 0.xxx < 1
   optional float weight = 2;
 }
+
+message EdgeHistorySpecifics {
+  // A summary of the page contents.
+  optional string summary = 1;
+}
