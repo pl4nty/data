@@ -76,8 +76,11 @@ do
   if l_0_8 == nil or l_0_8 == "" then
     return mp.CLEAN
   end
-  do
-    if IsBasFileEncryptExt(l_0_8) == false and l_0_0 == mp.SCANREASON_ONOPEN then
+  if IsBasFileEncryptExt(l_0_8) == false then
+    if l_0_0 == mp.SCANREASON_ONOPEN then
+      if (string.find)(l_0_6, "sb_%d+_bs_%d+%.[^%.]+$") == nil then
+        return mp.CLEAN
+      end
       local l_0_9 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_AGE)
       if l_0_9 == nil then
         return mp.CLEAN
@@ -88,16 +91,20 @@ do
       if l_0_9 < 1 or l_0_9 > 60 then
         return mp.CLEAN
       end
-      if (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp%-[^%-\\]+\\sb_%d+_bs_gold[^_\\]+\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp%-[^%-\\]+\\sb_%d+_bs_gold[^_\\]+\\[^_\\]+_sb_%d+_bs\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp%-[^%-\\]+\\sb_%d+_bs_gold[^_\\]+\\[^_\\]+_sb_%d+_bs\\sb_%d+_[^\\]+\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_gold[^_\\]+\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_gold[^_\\]+\\[^_\\]+_sb_%d+_bs\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_gold[^_\\]+\\[^_\\]+_sb_%d+_bs\\sb_%d+_[^\\]+\\sb_%d+_bs_%d+%.[^%.]+$") == nil then
+      if (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp") == nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_") == nil then
         (mp.set_mpattribute)("MpDisableMOACSyncInsert")
         ;
         (mp.set_mpattribute)("MpDisableCaching")
         return mp.CLEAN
       end
+    else
+      do
+        do return mp.CLEAN end
+        ;
+        (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_7)
+        return mp.INFECTED
+      end
     end
-    ;
-    (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_7)
-    return mp.INFECTED
   end
 end
 
