@@ -1192,17 +1192,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-04-01",
         "Published": "April 7, 2025",
         "Patch level": "2025-04-01",
-        "CVE": "CVE-2025-22432",
-        "References": "A-376461726",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13, 14, 15",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-04-01",
-        "Published": "April 7, 2025",
-        "Patch level": "2025-04-01",
         "CVE": "CVE-2025-22433",
         "References": "A-376674080",
         "Type": "EoP",
