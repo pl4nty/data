@@ -52,6 +52,9 @@ do
   if l_0_2 == "upgradepkg.exe" then
     return mp.CLEAN
   end
+  if l_0_2 == "crashreporter.exe" then
+    return mp.CLEAN
+  end
   if (string.find)(l_0_2, "sb%-simulator%-windows%-%d+%.%d+%.%d+%-%d+%.exe") ~= nil then
     return mp.CLEAN
   end
@@ -85,7 +88,7 @@ do
       if l_0_9 < 1 or l_0_9 > 60 then
         return mp.CLEAN
       end
-      if (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp") == nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_") == nil then
+      if (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp%-[^%-\\]+\\sb_%d+_bs_gold[^_\\]+\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp%-[^%-\\]+\\sb_%d+_bs_gold[^_\\]+\\[^_\\]+_sb_%d+_bs\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp%-[^%-\\]+\\sb_%d+_bs_gold[^_\\]+\\[^_\\]+_sb_%d+_bs\\sb_%d+_[^\\]+\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_gold[^_\\]+\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_gold[^_\\]+\\[^_\\]+_sb_%d+_bs\\sb_%d+_bs_%d+%.[^%.]+$") == nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_gold[^_\\]+\\[^_\\]+_sb_%d+_bs\\sb_%d+_[^\\]+\\sb_%d+_bs_%d+%.[^%.]+$") == nil then
         (mp.set_mpattribute)("MpDisableMOACSyncInsert")
         ;
         (mp.set_mpattribute)("MpDisableCaching")

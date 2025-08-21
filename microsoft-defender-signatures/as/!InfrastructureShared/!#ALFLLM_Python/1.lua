@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("cnt:pyt:llm")
+local l_0_0 = (mp.enum_mpattributesubstring)("cnt:pyt:llm_import")
 if not l_0_0 or #l_0_0 == 0 then
   return mp.CLEAN
 end
@@ -25,7 +25,7 @@ do
       l_0_4 = true
     end
   end
-  local l_0_7 = "(?i)(Ignore|Disregard|Skip|Forget|Neglect|Overlook|Omit|Bypass|Pay no attention to|Do not follow|Do not obey).*?(any|all|prior|previous|preceding|above|foregoing|earlier|initial).*?(content|text|instructions|instruction|directives|directive|commands|command|context|conversation|input|inputs|data|message|messages|communication|response|responses|request|requests)"
+  local l_0_7 = "(?i)(\\s(Ignore|Disregard|Skip|Forget|Neglect|Overlook|Omit|Bypass|Pay no attention to|Do not follow|Do not obey).*?\\s(any|all|prior|previous|preceding|above|foregoing|earlier|initial).*?\\s(content|text|instructions|instruction|directives|directive|commands|command|context|conversation|input|inputs|data|message|messages|communication|response|responses|request|requests))"
   local l_0_8, l_0_9 = (MpCommon.StringRegExpSearch)(l_0_7, l_0_2)
   if l_0_8 then
     set_research_data("sus_indicator", l_0_9, false)
