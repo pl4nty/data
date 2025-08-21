@@ -1,13 +1,16 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4ab34c4b7f04\1.luac 
+-- Command line: lua\!InfrastructureShared\73b3b1dc2077\1.luac 
 
 -- params : ...
 -- function num : 0
 local l_0_0 = ""
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil and (this_sigattrlog[2]).utf8p1 ~= "" then
-  l_0_0 = (this_sigattrlog[2]).utf8p1
+if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil and (this_sigattrlog[3]).utf8p1 ~= "" then
+  l_0_0 = (this_sigattrlog[3]).utf8p1
 end
 if l_0_0 == "" or l_0_0 == nil then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "/Users/[^/]+/Library/Group Containers/UBF8T346G9.Office/lck[^/]+", 1, false) then
   return mp.CLEAN
 end
 local l_0_1 = (bm.get_imagepath)()
