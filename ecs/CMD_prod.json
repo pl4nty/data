@@ -856,6 +856,7 @@
         "UseCommonBatchSizeForResize": true,
         "UseOperationTrackingWorkItemList": true,
         "ValidateImageSizeForFrontline": true,
+        "ValidationEnvironmentNeedToChange": true,
         "VerifyUserPresenceFromAVD": true,
         "Windows365Client": {
             "GUI": {

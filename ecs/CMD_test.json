@@ -932,6 +932,7 @@
         "EnableW365GroupSoftDeleteAndRestore": true,
         "EnableW365Premium": true,
         "EnableWDSRegistration": false,
+        "EnableWDSSetGetReviewStatus": true,
         "EnableWIN1124H2_250113": true,
         "EnableWaitingForPostProvisioningPluginEvent": true,
         "EnableWdsFLDParityForRemoteAction": true,
