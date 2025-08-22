@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14613980,
+    "size": 14614670,
     "file_count": 830
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32214634,
-    "file_count": 3938
+    "size": 32219350,
+    "file_count": 3939
   },
   {
     "name": "boringssl",
@@ -221,8 +221,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 92096018,
-    "file_count": 10850
+    "size": 92640614,
+    "file_count": 10910
   },
   {
     "name": "flac",
@@ -246,7 +246,7 @@
   },
   {
     "name": "fuzztest",
-    "size": 10490,
+    "size": 11145,
     "file_count": 7
   },
   {
@@ -256,8 +256,8 @@
   },
   {
     "name": "glslang",
-    "size": 43099424,
-    "file_count": 3182
+    "size": 43109378,
+    "file_count": 3183
   },
   {
     "name": "googletest",
@@ -361,7 +361,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 44462,
+    "size": 44491,
     "file_count": 39
   },
   {
@@ -506,7 +506,7 @@
   },
   {
     "name": "nearby",
-    "size": 280746,
+    "size": 281562,
     "file_count": 52
   },
   {
@@ -561,7 +561,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3830766,
+    "size": 3831940,
     "file_count": 579
   },
   {
@@ -646,8 +646,8 @@
   },
   {
     "name": "skia",
-    "size": 3458604,
-    "file_count": 1178
+    "size": 3461636,
+    "file_count": 1179
   },
   {
     "name": "speech-dispatcher",
@@ -666,7 +666,7 @@
   },
   {
     "name": "spirv-tools",
-    "size": 199962,
+    "size": 200052,
     "file_count": 11
   },
   {
@@ -731,7 +731,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6128630,
+    "size": 6131801,
     "file_count": 166
   },
   {
