@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\c8d7813cba01\1.luac 
+-- Command line: lua\!InfrastructureShared\2bd7142a37c0\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -39,5 +39,29 @@ end
 if not contains(l_0_3, l_0_4) then
   return mp.CLEAN
 end
-return mp.INFECTED
+local l_0_5 = (mp.GetScannedPPID)()
+if l_0_5 == "" or l_0_5 == nil then
+  return mp.CLEAN
+end
+local l_0_6 = (mp.GetProcessCommandLine)(l_0_5)
+if not l_0_6 then
+  return mp.CLEAN
+end
+l_0_6 = (string.lower)(l_0_6)
+do
+  local l_0_7 = {}
+  -- DECOMPILER ERROR at PC111: No list found for R7 , SetList fails
+
+  -- DECOMPILER ERROR at PC112: Overwrote pending register: R8 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC113: Overwrote pending register: R9 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC114: Overwrote pending register: R10 in 'AssignReg'
+
+  if not ("invoke")("iex", "bypass") then
+    return mp.CLEAN
+  end
+  do return mp.INFECTED end
+  -- WARNING: undefined locals caused missing assignments!
+end
 
