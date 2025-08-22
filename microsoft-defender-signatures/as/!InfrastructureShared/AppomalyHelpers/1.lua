@@ -934,6 +934,7 @@ getCmdKeywordsWeight = function()
   l_7_0["%-uri"], l_7_1 = l_7_1, {0, 1, 5}
   l_7_0["%-body"], l_7_1 = l_7_1, {0, 1, 5}
   l_7_0["%-content-type"], l_7_1 = l_7_1, {0, 1, 5}
+  l_7_0[".invoke%("], l_7_1 = l_7_1, {0, 0, 10}
   l_7_0.tanium, l_7_1 = l_7_1, {-60, -60, -60}
   l_7_0.ansible, l_7_1 = l_7_1, {-60, -60, -60}
   l_7_0["synchash.devmode"], l_7_1 = l_7_1, {-60, -60, -60}
@@ -1126,13 +1127,9 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
             return l_9_8
           end
           if #l_9_5 > 500 then
-            l_9_6 = l_9_6 + 5
-            ;
             (table.insert)(l_9_7, "length_G500")
           else
             if #l_9_5 > 100 then
-              l_9_6 = l_9_6 + 3
-              ;
               (table.insert)(l_9_7, "length_G100")
             else
               ;
@@ -1172,7 +1169,7 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
               if l_9_32 ~= 0 and not (l_9_7.Urls)[l_9_31] then
                 l_9_6 = l_9_6 + l_9_32
                 l_9_33.Url = l_9_30
-                -- DECOMPILER ERROR at PC224: Confused about usage of register: R24 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC222: Confused about usage of register: R24 in 'UnsetPending'
 
                 ;
                 (l_9_7.Urls)[l_9_31] = l_9_33
@@ -1184,7 +1181,7 @@ Base64Grader = function(l_9_0, l_9_1, l_9_2, l_9_3)
               local l_9_39, l_9_40 = UrlGrader(l_9_38, "Base64Grader", l_9_2)
               if l_9_39 ~= 0 and not (l_9_7.Urls)[l_9_38] then
                 l_9_6 = l_9_6 + l_9_39
-                -- DECOMPILER ERROR at PC252: Confused about usage of register: R23 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC250: Confused about usage of register: R23 in 'UnsetPending'
 
                 ;
                 (l_9_7.Urls)[l_9_38] = l_9_40
