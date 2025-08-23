@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\6fd7f60afa8b\1.luac 
+-- Command line: lua\!InfrastructureShared\47d77dfc41b5\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -42,7 +42,7 @@ if not l_0_5 then
   return mp.CLEAN
 end
 l_0_5 = l_0_5:match("^%s*(.-)%s*$")
-if l_0_5:match("%.docx?$") or l_0_5:match("%.pdf$") or not l_0_5:match("%.xlsx$") then
+if l_0_5:match("%.docx?$") or l_0_5:match("%.pdf$") or l_0_5:match("%.xlsx?$") or not l_0_5:match("%.pptx?$") then
   return mp.CLEAN
 end
 if l_0_5:match("^\\\\") or l_0_5:match("^%a:\\") then

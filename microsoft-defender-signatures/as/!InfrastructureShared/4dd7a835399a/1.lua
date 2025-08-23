@@ -34,32 +34,9 @@ do
   l_0_7.PROCESS_CONTEXT = "mshta.exe"
   l_0_7.FILELESS = "true"
   l_0_7.CMDLINE_URL = "true"
-  local l_0_8 = SafeGetUrlReputation
-  local l_0_9 = {}
-  -- DECOMPILER ERROR at PC63: No list found for R8 , SetList fails
-
-  -- DECOMPILER ERROR at PC64: Overwrote pending register: R9 in 'AssignReg'
-
-  l_0_8 = l_0_8(l_0_9, l_0_5, false, 3000)
-  l_0_9 = l_0_8.urls
-  l_0_9 = l_0_9[l_0_5]
-  if l_0_9 then
-    l_0_9 = l_0_8.urls
-    l_0_9 = l_0_9[l_0_5]
-    l_0_9 = l_0_9.determination
-    if l_0_9 == 2 then
-      l_0_9 = l_0_8.urls
-      l_0_9 = l_0_9[l_0_5]
-      l_0_9 = l_0_9.confidence
-      if l_0_9 >= 60 then
-        l_0_9 = mp
-        l_0_9 = l_0_9.INFECTED
-        return l_0_9
-      end
-    end
+  if ExtractUrlGetReputation(l_0_4, l_0_7, true, 2, 60, false, 3000) then
+    return mp.INFECTED
   end
-  l_0_9 = mp
-  l_0_9 = l_0_9.CLEAN
-  return l_0_9
+  return mp.CLEAN
 end
 
