@@ -34,6 +34,8 @@ do
     ;
     (mp.readprotection)(false)
     l_0_1 = tostring((mp.readfile)(0, l_0_0))
+    ;
+    (mp.readprotection)(true)
   end
   if (string.find)(l_0_1, "�\133", 1, true) or (string.find)(l_0_1, "🟠", 1, true) or (string.find)(l_0_1, "🤖", 1, true) then
     return mp.INFECTED
