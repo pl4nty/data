@@ -12,7 +12,7 @@ if not l_0_1 or #l_0_1 <= 60 then
   return mp.CLEAN
 end
 local l_0_2 = (string.lower)(l_0_1)
-if (string.find)(l_0_2, "-raw)$") ~= nil then
+if (string.find)(l_0_2, "-raw%)[\'\"]?$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN
