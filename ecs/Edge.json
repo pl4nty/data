@@ -3058,6 +3058,10 @@
                 {
                     "applied_policy": "ChromeUA",
                     "domain": "silhouette-web.com"
+                },
+                {
+                    "applied_policy": "ChromeUA",
+                    "domain": "my.wyze.com"
                 }
             ],
             "policies": [
