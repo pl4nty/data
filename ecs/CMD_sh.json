@@ -329,6 +329,7 @@
         "EnableCloudPcInaccessibleScenario": true,
         "EnableCloudPcInsightReport": true,
         "EnableCloudPcReboot": true,
+        "EnableCloudProfileStorageForwarderDataStream": true,
         "EnableCmkForWDS": true,
         "EnableCnameEndpointsCheck": true,
         "EnableCnameForConnectivity": true,
