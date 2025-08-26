@@ -231,16 +231,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kShortLaxAllowUnsafeThreshold);
 // This only has an effect if the cookie defaults to SameSite=Lax.
 NET_EXPORT BASE_DECLARE_FEATURE(kSameSiteDefaultChecksMethodRigorously);
 
-// Enables a process-wide limit on "open" UDP sockets. See
-// udp_socket_global_limits.h for details on what constitutes an "open" socket.
-NET_EXPORT BASE_DECLARE_FEATURE(kLimitOpenUDPSockets);
-
-// FeatureParams associated with kLimitOpenUDPSockets.
-
-// Sets the maximum allowed open UDP sockets. Provisioning more sockets than
-// this will result in a failure (ERR_INSUFFICIENT_RESOURCES).
-NET_EXPORT extern const base::FeatureParam<int> kLimitOpenUDPSocketsMax;
-
 // Enables a timeout on individual TCP connect attempts, based on
 // the parameter values.
 NET_EXPORT BASE_DECLARE_FEATURE(kTimeoutTcpConnectAttempt);
@@ -691,11 +681,16 @@ NET_EXPORT BASE_DECLARE_FEATURE(kPersistDeviceBoundSessions);
 // the exact code we need to test.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
     bool,
-    kDeviceBoundSessionsForceEnableForTesting);
+    kDeviceBoundSessionsRequireOriginTrialTokens);
 // This feature enables the Device Bound Session Credentials refresh quota.
 // This behavior is expected by default; disabling it should only be for
 // testing purposes.
-NET_EXPORT BASE_DECLARE_FEATURE(kDeviceBoundSessionsRefreshQuota);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kDeviceBoundSessionsRefreshQuota);
+// This feature controls whether DBSC checks the .well-known for subdomain
+// registration.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    bool,
+    kDeviceBoundSessionsCheckSubdomainRegistration);
 // This feature will enable breaking changes to Device Bound Session
 // Credentials from after the Origin Trial started. This is disabled by
 // default to facilitate implementation of feedback from the Origin
