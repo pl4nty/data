@@ -827,6 +827,7 @@
         "SeparateCreateAndUpdateImageVersion": true,
         "ShareSnapshotSwitchToAMS": true,
         "SkipRemovingSecurityLogs": true,
+        "SkipUnenrollIntuneOnDppFailure": true,
         "SnptBlockCrossRegionDRByImage": false,
         "SnptConnectToStorageAccountMgmt": true,
         "SnptEnableCheckCreateTime": true,
