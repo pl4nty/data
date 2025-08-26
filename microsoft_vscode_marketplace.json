@@ -72,6 +72,13 @@
                 "id": "ziglang.vscode-zig"
             }
         },
+        "BEU.bbj-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "BBj Programming Language Support",
+                "id": "basis-intl.bbj-lang"
+            }
+        },
         "Burkino.luraph": {
             "disallowInstall": true,
             "extension": {
@@ -117,6 +124,13 @@
             "extension": {
                 "displayName": "Photonica",
                 "id": "ConAntares.Photonica"
+            }
+        },
+        "ContrastSecurity.contrastsecurity": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Contrast IDE",
+                "id": "ContrastSecurityIDE.com-contrastsecurity-vscode"
             }
         },
         "DecentralandFoundation.decentraland": true,
@@ -1870,6 +1884,13 @@
         "vsciot-vscode.vscode-iot-device-cube": true,
         "waderyan.nodejs-extension-pack": true,
         "walnuts1018.oklch-vscode": true,
+        "wangshun.mpx-template-features": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Mpx (Official)",
+                "id": "mpxjs.mpx-official"
+            }
+        },
         "washan.crates-cmp": {
             "disallowInstall": true,
             "extension": {
