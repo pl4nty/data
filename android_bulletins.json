@@ -8981,17 +8981,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2023-10-01",
         "Published": "October 2, 2023",
         "Patch level": "2023-10-01",
-        "CVE": "CVE-2023-40130",
-        "References": "A-289809991",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "11, 12, 12L, 13",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2023-10-01",
-        "Published": "October 2, 2023",
-        "Patch level": "2023-10-01",
         "CVE": "CVE-2023-40123",
         "References": "A-278246904",
         "Type": "ID",
