@@ -4,6 +4,7 @@
 
 #include <windows.h>
 
+#include "base/time/time.h"
 #include "tools/win/process_viewer/data_provider/task_export.h"
 #include "tools/win/process_viewer/data_provider/task_manager_client_sync.h"
 

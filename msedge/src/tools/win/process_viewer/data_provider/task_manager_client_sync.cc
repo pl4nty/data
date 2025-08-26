@@ -5,6 +5,7 @@
 #include "tools/win/process_viewer/data_provider/task_manager_client_sync.h"
 
 #include "base/functional/bind.h"
+#include "base/time/time.h"
 
 namespace process_viewer {
 
