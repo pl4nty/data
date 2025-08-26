@@ -15,6 +15,9 @@ end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
+if l_0_2:find("/tmp/docker-desktop-privileged", 1, true) or l_0_2:find("therealtomrose/citrix-workspace-killer/master/stop_citrix.sh", 1, true) then
+  return mp.CLEAN
+end
 if l_0_2:find("echo.*%|%s+base64%s+-d", 1, false) or l_0_2:find("echo.*%|%s+base64%s+--decode", 1, false) or l_0_2:find("echo.*%|%s+base64%s+-D", 1, false) or l_0_2:find("curl.*%|%s+bash", 1, false) or l_0_2:find("curl.*%|%s+sh", 1, false) or l_0_2:find("curl.*%|%s+zsh", 1, false) or l_0_2:find("tail%s+-c.*%|%s+funzip", 1, false) or l_0_2:find("echo.*%|%s+xxd", 1, false) then
   return mp.INFECTED
 end

@@ -8,7 +8,7 @@ local l_0_1 = (mp.GetParentProcInfo)()
 do
   if l_0_1 ~= nil then
     local l_0_2 = (string.lower)(l_0_1.image_path)
-    if (string.find)(l_0_2, "\\windows\\explorer.exe", 1, true) then
+    if (string.find)(l_0_2, "\\windows\\explorer.exe", 1, true) or (string.find)(l_0_2, "\\powershell.exe", 1, true) then
       l_0_0 = true
     end
   end
