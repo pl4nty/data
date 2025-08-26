@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2084692,
+    "size": 2084763,
     "file_count": 178
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10714817,
+    "size": 10714871,
     "file_count": 167
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32212606,
+    "size": 32213951,
     "file_count": 3939
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "name": "crashpad",
-    "size": 155323,
+    "size": 155322,
     "file_count": 32
   },
   {
@@ -216,8 +216,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 348799,
-    "file_count": 74
+    "size": 351074,
+    "file_count": 76
   },
   {
     "name": "ffmpeg",
@@ -371,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 6165796,
+    "size": 6173723,
     "file_count": 936
   },
   {
@@ -520,6 +520,11 @@
     "file_count": 2924
   },
   {
+    "name": "oak",
+    "size": 190799,
+    "file_count": 111
+  },
+  {
     "name": "omnibox_proto",
     "size": 28724,
     "file_count": 15
@@ -561,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3831940,
+    "size": 3835608,
     "file_count": 579
   },
   {
@@ -646,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3461642,
+    "size": 3461988,
     "file_count": 1179
   },
   {
@@ -676,7 +681,7 @@
   },
   {
     "name": "subresource-filter-ruleset",
-    "size": 104764,
+    "size": 105531,
     "file_count": 7
   },
   {
@@ -731,8 +736,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6132844,
-    "file_count": 166
+    "size": 6125606,
+    "file_count": 167
   },
   {
     "name": "vulkan_memory_allocator",
@@ -741,7 +746,7 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 263489,
+    "size": 263611,
     "file_count": 65
   },
   {
