@@ -1,394 +1,91 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This file is intended to be used for downstream-only types.
+  If the type you are adding is implemented upstream, please add the
+  NatVis type upstream instead.
+-->
 <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <!-- Collections Team Visualizers mailto:edgepexdev -->
+  <Type Name="collections::CollectionItemProxy">
+    <DisplayString>{item_,na}</DisplayString>
+    <Expand>
+      <Item Name="[Proxy Item]">item_,na</Item>
+    </Expand>
+  </Type>
 
-		<Type Name="std::Cr::__compressed_pair_elem&lt;*,*,0&gt;">
-				<DisplayString>{__value_}</DisplayString>
-				<Expand>
-						<ExpandedItem>__value_</ExpandedItem>
-				</Expand>
-		</Type>
-		<Type Name="std::Cr::__compressed_pair_elem&lt;*,*,1&gt;">
-				<DisplayString>{*($T1*)this}</DisplayString>
-				<Expand>
-						<ExpandedItem>*($T1*)this</ExpandedItem>
-				</Expand>
-		</Type>
+  <Type Name="collections::SourceEntry">
+    <DisplayString>{url,na}</DisplayString>
+    <Expand>
+      <Item Name="[url]">url,na</Item>
+      <Item Name="[website_name]">website_name,na</Item>
+    </Expand>
+  </Type>
 
-		<!-- dict has a flat_map storage_ of std::string std::unique_ptr<Value> -->
-		<Type Name="base::Value::Dict" >
-				<DisplayString >Key count {storage_.body_.__end_- storage_.body_.__begin_}</DisplayString>
-				<Expand>
-						<Item Name="[size]">storage_.body_.__end_- storage_.body_.__begin_</Item>
-						<Item Name="[items]">storage_</Item>
-				</Expand>
-		</Type>
+  <Type Name="collections::CollectionItem">
+    <DisplayString>{title_} {source_.url,na}</DisplayString>
+    <Expand>
+      <Item Name="[Title]">title_,na</Item>
+      <Item Name="[Type]">type_</Item>
+      <Item Name="[Source]">source_</Item>
+    </Expand>
+  </Type>
 
-		<!-- Flatmap is just a flat_tree<Key, *,*,*> -->
-		<!-- which for us is a std::Cr::pair -->
-		<Type Name="base::internal::flat_tree&lt;*&gt;">
-				<AlternativeType Name="base::flat_set&lt;*&gt;"/>
-				<DisplayString>{body_}</DisplayString>
-				<Expand>
-						<Item Name="[size]">
-								body_.__end_- body_.__begin_
-						</Item>
-						<ArrayItems >
-								<Size>
-										body_.__end_- body_.__begin_
-								</Size>
-								<ValuePointer>body_.__begin_</ValuePointer>
-						</ArrayItems>
-				</Expand>
-		</Type>
+  <Type Name="edge_collections::mojom::CollectionItem">
+    <DisplayString>title={title} id={id}</DisplayString>
+    <Expand>
+      <Item Name="[title]">title,na</Item>
+      <Item Name="[id]">id,na</Item>
+    </Expand>
+  </Type>
 
-		<Type Name="base::Value::List" >
-				<DisplayString >Size {storage_.__end_- storage_.__begin_}</DisplayString>
-				<Expand>
-						<Item Name="[size]">storage_.__end_- storage_.__begin_</Item>
-						<Item Name="[items]">storage_</Item>
-				</Expand>
-		</Type>
+  <Type Name="collections::Item">
+    <DisplayString>Item {title_,na}</DisplayString>
+    <Expand>
+      <Item Name="[Title]">title_,na</Item>
+      <Item Name="[Date Created]">date_created_.us_,X</Item>
+      <Item Name="[Date Last Modified]">date_last_modified_.us_,X</Item>
+    </Expand>
+  </Type>
 
-		<Type Name="std::Cr::vector&lt;*,*&gt;">
-				<DisplayString>Vector {__end_- __begin_}</DisplayString>
-				<Expand>
-						<Item Name="[size]">
-								__end_- __begin_
-						</Item>
-						<ArrayItems >
-								<Size>
-										__end_- __begin_
-								</Size>
-								<ValuePointer>__begin_</ValuePointer>
-						</ArrayItems>
-				</Expand>
-		</Type>
+  <Type Name="edge_collections::mojom::Collection">
+    <DisplayString>title={title} id={id}</DisplayString>
+    <Expand>
+      <Item Name="[title]">title,na</Item>
+      <Item Name="[id]">id,na</Item>
+    </Expand>
+  </Type>
 
-		<!-- std::unique_ptr<*> -->
-		<Type Name="std::Cr::unique_ptr&lt;*&gt;">
-				<Intrinsic Name="value" Expression="*($T1**)&amp;__ptr_" />
-				<SmartPointer Usage="Minimal">value()</SmartPointer>
-				<DisplayString Condition="value() == 0">empty</DisplayString>
-				<DisplayString Condition="value() != 0">
-						unique_ptr {value(),na}
-				</DisplayString>
-				<Expand>
-						<Item Condition="value() != 0" Name="[ptr]">value(),na</Item>
-				</Expand>
-		</Type>
+  <!-- Video Capture Visualizers. mailto:edgecapabilitiesdev -->
+  <Type Name="media::VideoCaptureDeviceDescriptor">
+    <DisplayString>{device_id,na}</DisplayString>
+    <Expand>
+      <Item Name="[Display Name]">display_name_,na</Item>
+      <Item Name="[Camera Facing]">facing,en</Item>
+      <Item Name="[Capture API]">capture_api,en</Item>
+    </Expand>
+  </Type>
 
-		<!-- std::list<*,*> -->
-		<Type Name="std::Cr::__list_imp&lt;*,*&gt;">
-				<DisplayString >List:{*(size_type*)&amp;__size_alloc_}</DisplayString>
-				<Expand>
-						<Item Name="Size">*(size_type*)&amp;__size_alloc_</Item>
-						<LinkedListItems>
-								<Size>*(size_type*)&amp;__size_alloc_</Size>
-								<HeadPointer>__end_.__next_</HeadPointer>
-								<NextPointer>__next_</NextPointer>
-								<ValueNode>
-										((std::Cr::__list_imp&lt;$T1,$T2&gt;::__node_pointer)this)
-										-&gt;__value_
-								</ValueNode>
-						</LinkedListItems>
-				</Expand>
-		</Type>
+  <Type Name="media::VideoCaptureFormat">
+    <DisplayString>{pixel_format,en} {frame_size} @ {frame_rate,g} FPS</DisplayString>
+    <Expand>
+      <Item Name="[Size]">frame_size</Item>
+      <Item Name="[Rate]">frame_rate,g</Item>
+      <Item Name="[Pixel Format]">pixel_format,en</Item>
+    </Expand>
+  </Type>
 
-		<!-- std::pair<*,*> -->
-		<Type Name="std::Cr::pair&lt;*,*&gt;" Priority="High">
-				<DisplayString IncludeView="noparens">{first}, {second}</DisplayString>
-				<DisplayString ExcludeView="noparens">({first}, {second})</DisplayString>
-				<DisplayString>{first}={second}</DisplayString>
-				<Expand>
-						<Item Name="first">first</Item>
-						<Item Name="second">second</Item>
-						<!-- Item Name="[Type]">"{$T2}"</Item> -->
-				</Expand>
-		</Type>
+  <Type Name="media::mojom::VideoCaptureDeviceInfo">
+    <DisplayString>{descriptor.device_id,na}</DisplayString>
+    <Expand>
+      <Item Name="[Descriptor]">descriptor</Item>
+      <Item Name="[Supported Formats]">supported_formats</Item>
+    </Expand>
+  </Type>
 
-		<!-- Test case: base_unittests->"SmallMap*" -->
-		<Type Name="std::Cr::unordered_map&lt;*&gt;">
-				<DisplayString >MAP:size={*(size_type*)&amp;__table_.__p2_}</DisplayString>
-				<Expand>
-						<!--<Item Name="[bucket_count]">*(size_type*)&amp;
-                    ((__table::__bucket_list_deleter*)
-                        ((void**)&amp;__table_.__bucket_list_ + 1))
-                        -&gt;__ptr_"</Item>-->
-						<!--<Item Name="[type]">"{$T1}"</Item>-->
-						<Item Name="[max_load_factor]">*(float*)&amp;__table_.__p3_</Item>
-						<!--<Item Name="[InitialValue3]">*(__table::__node_pointer*)&amp;__table_.__p1_</Item>-->
-						<!--Use CustomListItems instead of LinkedListItems because we
-								need to cast to __table::__node_pointer and LinkedListItems
-								evaluates <Value> in the context of the node, not of the container,
-								so we'd have to say std::unordered_map<$T1,...>::__table::__node_pointer
-								and then we couldn't share this <Type> between unordered_(multi)map
-								and unordered_(multi)set. -->
-						<CustomListItems MaxItemsPerView="50">
-								<Variable Name="node"
-										InitialValue="*(__table::__node_pointer*)&amp;__table_.__p1_" />
-								<Size>*(size_type*)&amp;__table_.__p2_</Size>
-								<Loop>
-										<Item>(*(__table::__node_pointer*)&amp;node)-&gt;__value_</Item>
-										<Exec>node = (*(__table::__node_pointer*)&amp;(*(__table::__node_pointer*)&amp;node)-&gt;__next_)</Exec>
-								</Loop>
-						</CustomListItems>
-				</Expand>
-		</Type>
-
-		<!-- This is the node __value_ of an unordered_(multi)map. Expand it through
-				a separate formatter instead of in the <Item> expression above so that the
-				same <Type> works for unordered_(multi)set and unordered_(multi)map. -->
-		<Type Name="std::Cr::__hash_value_type&lt;*&gt;">
-				<DisplayString>{__cc}</DisplayString>
-				<Expand>
-						<ExpandedItem>__cc</ExpandedItem>
-				</Expand>
-		</Type>
-
-		<Type Name="base::Optional&lt;*&gt;" >
-				<DisplayString >{"$T1"}</DisplayString>
-		</Type>
-
-		<Type Name="base::internal::OptionalStorageBase&lt;*&gt;" >
-				<DisplayString Condition="is_populated_">Has Value</DisplayString>
-				<DisplayString Condition="!is_populated_">Has NO Value</DisplayString>
-		</Type>
-
-		<!-- base_unittests->"ValuesTest.GetWithNullOutValue" -->
-		<Type Name="base::Value">
-				<DisplayString Condition="data_.index_==base::Value::NONE">None</DisplayString>
-				<DisplayString Condition="data_.index_==base::Value::BOOLEAN">{data_.state_.tail.head}</DisplayString>
-				<DisplayString Condition="data_.index_==base::Value::INTEGER">{data_.state_.tail.tail.head}</DisplayString>
-				<DisplayString Condition="data_.index_==base::Value::DOUBLE">{*(double*)&amp;data_.state_.tail.tail.tail.head}</DisplayString>
-				<DisplayString Condition="data_.index_==base::Value::STRING">{data_.state_.tail.tail.tail.tail.head,s}</DisplayString>
-				<DisplayString Condition="data_.index_==base::Value::BINARY">Binary</DisplayString>
-
-				<DisplayString Condition="data_.index_==base::Value::LIST">
-						List {data_.state_.tail.tail.tail.tail.tail.tail.tail.head.storage_.__end_ -
-						data_.state_.tail.tail.tail.tail.tail.tail.tail.head.storage_.__begin_} items
-				</DisplayString>
-				<DisplayString Condition="data_.index_==base::Value::DICT">Dictionary {data_.state_.tail.tail.tail.tail.tail.tail.head.storage_.body_.__end_ - data_.state_.tail.tail.tail.tail.tail.tail.head.storage_.body_.__begin_} items</DisplayString>
-
-				<DisplayString>Unknown type</DisplayString>
-
-				<Expand >
-						<Item Condition="data_.index_==base::Value::BOOLEAN" Name="[Value]">data_.state_.tail.head</Item>
-						<Item Condition="data_.index_==base::Value::INTEGER" Name="[Value]">data_.state_.tail.tail.head</Item>
-						<Item Condition="data_.index_==base::Value::DOUBLE" Name="[Value]">*(double*)&amp;data_.state_.tail.tail.tail.head</Item>
-						<Item Condition="data_.index_==base::Value::STRING" Name="[String]">data_.state_.tail.tail.tail.tail.head,na</Item>
-
-						<!-- Dictionary -->
-						<Item Condition="data_.index_==base::Value::DICT" Name="[size]" ExcludeView="simple">data_.state_.tail.tail.tail.tail.tail.tail.head.storage_.body_.__end_ - data_.state_.tail.tail.tail.tail.tail.tail.head.storage_.body_.__begin_</Item>
-						<ArrayItems Condition="data_.index_==base::Value::DICT">
-								<Size>
-										data_.state_.tail.tail.tail.tail.tail.tail.head.storage_.body_.__end_ - data_.state_.tail.tail.tail.tail.tail.tail.head.storage_.body_.__begin_
-								</Size>
-								<ValuePointer>data_.state_.tail.tail.tail.tail.tail.tail.head.storage_.body_.__begin_</ValuePointer>
-						</ArrayItems>
-
-						<!-- List -->
-						<Item Condition="data_.index_==base::Value::LIST" Name="[size]">
-								data_.state_.tail.tail.tail.tail.tail.tail.tail.head.storage_.__end_ -
-								data_.state_.tail.tail.tail.tail.tail.tail.tail.head.storage_.__begin_
-						</Item>
-						<ArrayItems Condition="data_.index_==base::Value::LIST">
-								<Size>
-										data_.state_.tail.tail.tail.tail.tail.tail.tail.head.storage_.__end_ -
-										data_.state_.tail.tail.tail.tail.tail.tail.tail.head.storage_.__begin_
-								</Size>
-								<ValuePointer>(base::Value*)data_.state_.tail.tail.tail.tail.tail.tail.tail.head.storage_.__begin_</ValuePointer>
-						</ArrayItems>
-				</Expand>
-
-		</Type>
-
-		<Type Name="absl::flat_hash_map&lt;*&gt;">
-				<DisplayString Condition="size_ == 0">empty</DisplayString>
-				<DisplayString>{{ size={size_} }}</DisplayString>
-				<Expand>
-						<Item Name="[size]" ExcludeView="simple">size_</Item>
-						<Item Name="[capacity]" ExcludeView="simple">capacity_</Item>
-						<CustomListItems MaxItemsPerView="5000">
-								<Variable Name="iSlot" InitialValue="0" />
-								<Size>size_</Size>
-								<Loop>
-										<!-- bool IsFull(ctrl_t c) { return c >= 0; } -->
-										<If Condition="ctrl_[iSlot] &gt;= 0">
-												<Item>slots_[iSlot]</Item>
-										</If>
-										<Exec>iSlot++</Exec>
-										<Break Condition="iSlot == capacity_" />
-								</Loop>
-						</CustomListItems>
-				</Expand>
-		</Type>
-
-		<Type Name="absl::container_internal::map_slot_type&lt;*&gt;">
-				<DisplayString>{value.first}:{value.second}</DisplayString>
-				<Expand>
-						<Item Name="[key]" ExcludeView="simple">value.first</Item>
-						<Item Name="[value]" ExcludeView="simple">value.second</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="absl::variant&lt;*&gt;">
-				<DisplayString>{state_.head}</DisplayString>
-		</Type>
-
-		<Type Name="base::WeakPtr&lt;*&gt;">
-				<DisplayString>{"$T1"} {*($T1*)ptr_}</DisplayString>
-				<Expand>
-						<Item Name="[PTR]">*($T1*)ptr_</Item>
-				</Expand>
-		</Type>
-
-	<Type Name="base::BasicStringPiece&lt;*,std::Cr::char_traits&lt;*&gt;&gt;">
-		<DisplayString>{ptr_,[length_]}</DisplayString>
-		<StringView>ptr_,[length_]</StringView>
-		<Expand>
-			<Item Name="[Data]">ptr_,[length_]</Item>
-			<Item Name="[Length]">length_</Item>
-		</Expand>
-	</Type>
-
-	<!-- scoped_refptr<base::internal::BindStateBase> -->
-		<Type Name="base::internal::CallbackBase">
-				<DisplayString>{bind_state_.ptr_,na}</DisplayString>
-				<Expand>
-						<Item Name="[CallbackBase]">bind_state_,na</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="base::internal::BindStateBase">
-				<DisplayString>{polymorphic_invoke_,na}</DisplayString>
-		</Type>
-
-		<!-- Stream used by LogMessage -->
-		<Type Name="std::__1::basic_ostringstream&lt;char,std::__1::char_traits&lt;char&gt;,std::__1::allocator&lt;char&gt;&gt;">
-				<DisplayString>{__sb_.__str_,na}</DisplayString>
-		</Type>
-
-		<!-- LogMessage -->
-		<Type Name="logging::LogMessage">
-				<DisplayString>{stream_,na} Severity:{severity_} {file_,na}({line_})</DisplayString>
-				<Expand>
-					<Item Name="[Message]">stream_,na</Item>
-					<Item Name="[Severity]">severity_</Item>
-					<Item Name="[File]">file_,na</Item>
-					<Item Name="[Line]">line_</Item>
-				</Expand>
-		</Type>
-
-		<!-- Collections Team Visualizers mailto:edgepexdev -->
-		<Type Name="collections::CollectionItemProxy">
-				<DisplayString>{item_,na}</DisplayString>
-				<Expand>
-						<Item Name="[Proxy Item]">item_,na</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="collections::SourceEntry">
-				<DisplayString>{url,na}</DisplayString>
-				<Expand>
-						<Item Name="[url]">url,na</Item>
-						<Item Name="[website_name]">website_name,na</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="collections::CollectionItem">
-				<DisplayString>{title_} {source_.url,na}</DisplayString>
-				<Expand>
-						<Item Name="[Title]">title_,na</Item>
-						<Item Name="[Type]">type_</Item>
-						<Item Name="[Source]">source_</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="edge_collections::mojom::CollectionItem">
-				<DisplayString>title={title} id={id}</DisplayString>
-				<Expand>
-						<Item Name="[title]">title,na</Item>
-						<Item Name="[id]">id,na</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="mojo::StructPtr&lt;*&gt;">
-				<DisplayString>{*ptr_,na}</DisplayString>
-				<Expand>
-						<Item Name="[Pointer]">(*ptr_),na</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="collections::Item">
-				<DisplayString>Item {title_,na}</DisplayString>
-				<Expand>
-						<Item Name="[Title]">title_,na</Item>
-						<Item Name="[Date Created]">date_created_.us_,X</Item>
-						<Item Name="[Date Last Modified]">date_last_modified_.us_,X</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="edge_collections::mojom::Collection">
-				<DisplayString>title={title} id={id}</DisplayString>
-				<Expand>
-						<Item Name="[title]">title,na</Item>
-						<Item Name="[id]">id,na</Item>
-				</Expand>
-		</Type>
-
-		<!-- General base vizualiser -->
-		<Type Name="base::FilePath">
-				<DisplayString>{path_,na}</DisplayString>
-				<Expand>
-						<Item Name="[Path]">path_,na</Item>
-				</Expand>
-		</Type>
-
-		<!-- Video Capture Visualizers. mailto:edgecapabilitiesdev -->
-		<Type Name="media::VideoCaptureDeviceDescriptor">
-				<DisplayString>{device_id,na}</DisplayString>
-				<Expand>
-						<Item Name="[Display Name]">display_name_,na</Item>
-						<Item Name="[Camera Facing]">facing,en</Item>
-						<Item Name="[Capture API]">capture_api,en</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="media::VideoCaptureFormat">
-				<DisplayString>{pixel_format,en} {frame_size} @ {frame_rate,g} FPS</DisplayString>
-				<Expand>
-						<Item Name="[Size]">frame_size</Item>
-						<Item Name="[Rate]">frame_rate,g</Item>
-						<Item Name="[Pixel Format]">pixel_format,en</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="media::mojom::VideoCaptureDeviceInfo">
-				<DisplayString>{descriptor.device_id,na}</DisplayString>
-				<Expand>
-						<Item Name="[Descriptor]">descriptor</Item>
-						<Item Name="[Supported Formats]">supported_formats</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="media::VideoCaptureDeviceInfo">
-				<DisplayString>media::VCDI</DisplayString>
-				<Expand>
-						<Item Name="[DeviceInfo]">*(media::mojom::VideoCaptureDeviceInfo*)this</Item>
-				</Expand>
-		</Type>
-
-		<Type Name="absl::variant*">
-				<Intrinsic Name="index" Expression="(int)_Which"/>
-				<DisplayString Condition="index() &lt; 0">[valueless_by_exception]</DisplayString>
-				<DisplayString Condition="index() ==  0" Optional="true">{{ index=0, value={_Head} }}</DisplayString>
-				<DisplayString Condition="index() ==  1" Optional="true">{{ index=1, value={_Tail._Head} }}</DisplayString>
-				<DisplayString Condition="index() ==  2" Optional="true">{{ index=2, value={_Tail._Tail._Head} }}</DisplayString>
-				<Expand>
-						<Item Name="index">index()</Item>
-						<Item Name="[value]" Condition="index() ==  0" Optional="true">_Head</Item>
-						<Item Name="[value]" Condition="index() ==  1" Optional="true">_Tail._Head</Item>
-						<Item Name="[value]" Condition="index() ==  2" Optional="true">_Tail._Tail._Head</Item>
-				</Expand>
-		</Type>
+  <Type Name="media::VideoCaptureDeviceInfo">
+    <DisplayString>media::VCDI</DisplayString>
+    <Expand>
+      <Item Name="[DeviceInfo]">*(media::mojom::VideoCaptureDeviceInfo*)this</Item>
+    </Expand>
+  </Type>
 </AutoVisualizer>
