@@ -1756,12 +1756,6 @@
         "threadLinkResolutionExpireSpan": "1.00:00:00",
         "userLinkResolutionExpireSpan": "1.00:00:00"
     },
-    "TFLPDSSvc": {
-        "dummyFalseFlag": false,
-        "dummyIntFlag": 42,
-        "dummyStringFlag": "ta-dum",
-        "dummyTrueFlag": true
-    },
     "TFLSMSBSvc": {
         "AllowAddToThread": true,
         "AllowClaim": true,
