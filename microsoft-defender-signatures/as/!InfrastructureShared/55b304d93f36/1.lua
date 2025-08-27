@@ -1,14 +1,17 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\19b3474c8336\1.luac 
+-- Command line: lua\!InfrastructureShared\55b304d93f36\1.luac 
 
 -- params : ...
 -- function num : 0
 local l_0_0 = "WinlogonHelper"
-if isnull((this_sigattrlog[1]).utf8p2) or (string.find)((this_sigattrlog[1]).utf8p2, "explorer%.exe$") then
+if isnull((this_sigattrlog[4]).utf8p1) or not (string.find)((string.lower)((this_sigattrlog[4]).utf8p1), "^hkc?u") then
   return mp.CLEAN
 end
-if not (string.match)((this_sigattrlog[1]).utf8p2, ";To:(.+)") then
-  local l_0_1 = (MpCommon.PathToWin32Path)((this_sigattrlog[1]).utf8p2)
+if isnull((this_sigattrlog[4]).utf8p2) or (string.find)((this_sigattrlog[4]).utf8p2, "explorer%.exe$") then
+  return mp.CLEAN
+end
+if not (string.match)((this_sigattrlog[4]).utf8p2, ";To:(.+)") then
+  local l_0_1 = (MpCommon.PathToWin32Path)((this_sigattrlog[4]).utf8p2)
   l_0_1 = (mp.ContextualExpandEnvironmentVariables)(l_0_1)
   if isnull(l_0_1) then
     return mp.CLEAN
@@ -20,7 +23,8 @@ if not (string.match)((this_sigattrlog[1]).utf8p2, ";To:(.+)") then
   local l_0_4 = safeJsonSerialize
   local l_0_5 = {}
   l_0_5.Shell = l_0_1
-  l_0_5.P2 = (this_sigattrlog[1]).utf8p2
+  l_0_5.P1 = (this_sigattrlog[4]).utf8p1
+  l_0_5.P2 = (this_sigattrlog[4]).utf8p2
   l_0_4 = l_0_4(l_0_5)
   l_0_5 = bm
   l_0_5 = l_0_5.RelatedStringBMReport
