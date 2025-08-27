@@ -20,91 +20,49 @@ if l_0_2 == nil then
   return mp.CLEAN
 end
 l_0_2 = (string.lower)(l_0_2)
-local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
+if l_0_2 ~= "sbsimulator.exe" and (string.find)(l_0_2, "sbsimulator", 1, true) == nil and (string.find)(l_0_2, "sbsimulation", 1, true) == nil then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
 if l_0_3 == nil or l_0_3 == "" then
   return mp.CLEAN
 end
-l_0_3 = (MpCommon.PathToWin32Path)(l_0_3)
-if l_0_3 == nil or l_0_3 == "" then
+local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+if l_0_4 == nil or l_0_4 == "" then
   return mp.CLEAN
 end
-l_0_3 = (string.lower)(l_0_3)
-l_0_3 = l_0_3 .. "\\" .. l_0_2
-if (string.find)(l_0_3, "[a-z]:\\windows\\") ~= nil then
-  return mp.CLEAN
-end
-if l_0_2 ~= "sbsimulator.exe" and (string.find)(l_0_2, "sbsimulation_sb_[^%.]+%.exe") == nil then
-  local l_0_4 = (sysio.GetPEVersionInfo)(l_0_3)
-  if l_0_4 == nil then
+l_0_4 = (string.lower)(l_0_4)
+local l_0_5 = (string.match)(l_0_4, "(%.[^%.]+)$")
+if IsBasFileEncryptExt(l_0_5) == false then
+  if (string.find)(l_0_4, "sb_%d+_bs_%d+%.[^%.]+") == nil then
     return mp.CLEAN
   end
-  if l_0_4.OriginalFilename ~= nil and l_0_4.OriginalFilename ~= "" then
-    local l_0_5 = (string.lower)(l_0_4.OriginalFilename)
-    if l_0_5 ~= "sbsimulator.exe" and (string.find)(l_0_5, "sbsimulation_sb_[^%.]+%.exe") == nil then
-      return mp.CLEAN
-    end
+  local l_0_6 = (MpCommon.PathToWin32Path)(l_0_3)
+  if l_0_6 ~= nil and l_0_6 ~= "" then
+    l_0_6 = (string.lower)(l_0_6)
+  end
+  local l_0_7 = (MpCommon.ExpandEnvironmentVariables)(l_0_3)
+  l_0_7 = (MpCommon.PathToWin32Path)(l_0_7)
+  if l_0_7 ~= nil and l_0_7 ~= "" then
+    l_0_7 = (string.lower)(l_0_7)
+  end
+  local l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_3)
+  l_0_8 = (MpCommon.PathToWin32Path)(l_0_8)
+  if l_0_8 ~= nil and l_0_8 ~= "" then
+    l_0_8 = (string.lower)(l_0_8)
+  end
+  local l_0_9 = (string.lower)((MpCommon.ExpandEnvironmentVariables)("%systemroot%"))
+  local l_0_10 = (string.lower)((mp.ContextualExpandEnvironmentVariables)("%temp%"))
+  if (string.find)(l_0_3, "[a-z]:\\windows\\temp\\sb%-sim%-temp") == nil and (string.find)(l_0_3, l_0_9 .. "\\temp\\sb%-sim%-temp") == nil and (string.find)(l_0_3, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_") == nil and (string.find)(l_0_3, l_0_10 .. "\\sb_%d+_bs_") == nil and l_0_6 ~= nil and (string.find)(l_0_6, "[a-z]:\\windows\\temp\\sb%-sim%-temp") == nil and l_0_6 ~= nil and (string.find)(l_0_6, l_0_9 .. "\\temp\\sb%-sim%-temp") == nil and l_0_6 ~= nil and (string.find)(l_0_6, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_") == nil and l_0_6 ~= nil and (string.find)(l_0_6, l_0_10 .. "\\sb_%d+_bs_") == nil and l_0_7 ~= nil and (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp") == nil and l_0_7 ~= nil and (string.find)(l_0_7, l_0_9 .. "\\temp\\sb%-sim%-temp") == nil and l_0_7 ~= nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_") == nil and l_0_7 ~= nil and (string.find)(l_0_7, l_0_10 .. "\\sb_%d+_bs_") == nil and l_0_8 ~= nil and (string.find)(l_0_8, "[a-z]:\\windows\\temp\\sb%-sim%-temp") == nil and l_0_8 ~= nil and (string.find)(l_0_8, l_0_9 .. "\\temp\\sb%-sim%-temp") == nil and l_0_8 ~= nil and (string.find)(l_0_8, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_") == nil and l_0_8 ~= nil and (string.find)(l_0_8, l_0_10 .. "\\sb_%d+_bs_") == nil then
+    (mp.set_mpattribute)("MpDisableMOACSyncInsert")
+    ;
+    (mp.set_mpattribute)("MpDisableCaching")
+    return mp.CLEAN
   end
 end
 do
-  if l_0_2 == "sbupdater.exe" then
-    return mp.CLEAN
-  end
-  if l_0_2 == "upgradepkg.exe" then
-    return mp.CLEAN
-  end
-  if l_0_2 == "crashreporter.exe" then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_2, "sb%-simulator%-windows%-%d+%.%d+%.%d+%-%d+%.exe") ~= nil then
-    return mp.CLEAN
-  end
-  local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  if l_0_6 == nil or l_0_6 == "" then
-    return mp.CLEAN
-  end
-  l_0_6 = (string.lower)(l_0_6)
-  local l_0_7 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
-  if l_0_7 == nil or l_0_7 == "" then
-    return mp.CLEAN
-  end
-  l_0_7 = (MpCommon.PathToWin32Path)(l_0_7)
-  if l_0_7 == nil or l_0_7 == "" then
-    return mp.CLEAN
-  end
-  l_0_7 = (string.lower)(l_0_7)
-  local l_0_8 = (string.match)(l_0_6, "(%.[^%.]+)$")
-  if l_0_8 == nil or l_0_8 == "" then
-    return mp.CLEAN
-  end
-  if IsBasFileEncryptExt(l_0_8) == false then
-    if l_0_0 == mp.SCANREASON_ONOPEN then
-      if (string.find)(l_0_6, "sb_%d+_bs_%d+%.[^%.]+$") == nil then
-        return mp.CLEAN
-      end
-      local l_0_9 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILE_AGE)
-      if l_0_9 == nil then
-        return mp.CLEAN
-      end
-      if type(l_0_9) ~= "number" then
-        return mp.CLEAN
-      end
-      if l_0_9 < 1 or l_0_9 > 60 then
-        return mp.CLEAN
-      end
-      if (string.find)(l_0_7, "[a-z]:\\windows\\temp\\sb%-sim%-temp") == nil and (string.find)(l_0_7, "[a-z]:\\users\\[^\\]+\\appdata\\local\\temp\\sb_%d+_bs_") == nil then
-        (mp.set_mpattribute)("MpDisableMOACSyncInsert")
-        ;
-        (mp.set_mpattribute)("MpDisableCaching")
-        return mp.CLEAN
-      end
-    else
-      do
-        do return mp.CLEAN end
-        ;
-        (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_7)
-        return mp.INFECTED
-      end
-    end
-  end
+  ;
+  (MpCommon.BmTriggerSigPropagate)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_3)
+  return mp.INFECTED
 end
 

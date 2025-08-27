@@ -6,7 +6,7 @@
 for l_0_3 = 1, elfhdr.shnum do
   local l_0_4 = esec[l_0_3]
   local l_0_5 = (elf.GetSectionName)(l_0_4.name)
-  if l_0_5 == "%.dec" or (string.match)(l_0_5, "%.dec\000") or l_0_5 == "%.decryption" or (string.match)(l_0_5, "%.decryption\000") then
+  if l_0_5 == ".dec" or (string.sub)(l_0_5, 1, 5) == ".dec\000" or l_0_5 == ".decryption" or (string.sub)(l_0_5, 1, 12) == ".decryption\000" then
     return mp.INFECTED
   end
 end
