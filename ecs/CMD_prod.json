@@ -743,6 +743,7 @@
         "MultiLaneV2ExcludePartner": true,
         "NewConnectivityHistoryAPI": false,
         "NewConnectivityResultAPI": true,
+        "Nh_Apex_CPC": true,
         "Nh_Auto_Enable_High_DPI": true,
         "Nh_Disable_WebCodecs_Firefox": true,
         "Nh_Enable_Drag_And_Drop": true,
@@ -863,14 +864,11 @@
         "UseOperationTrackingWorkItemList": true,
         "ValidateImageSizeForFrontline": true,
         "ValidationEnvironmentNeedToChange": true,
-        "VerifyUserPresenceFromAVD": true,
         "Windows365Client": {
             "GUI": {
                 "EnableBootRetryReconnectUI": true
             }
         },
-        "WindowsUpdateStartEnabled": true,
-        "WindowsUpdateStopEnabled": true,
         "Windows_Download_IWP": true,
         "enableAlertingMemEntryPoint": true,
         "enableCloudPcActionStatusMenuItem": true,
