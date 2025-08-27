@@ -1329,7 +1329,6 @@
         "UseOperationTrackingWorkItemList": true,
         "ValidateImageSizeForFrontline": true,
         "ValidationEnvironmentNeedToChange": false,
-        "VerifyUserPresenceFromAVD": true,
         "W365MeterForTestingPurpose": true,
         "WCX_EnablePeerToPeerConnections": true,
         "WCX_SelfHelp": true,
@@ -1341,8 +1340,6 @@
                 "EnableBootSelectionScreen": true
             }
         },
-        "WindowsUpdateStartEnabled": true,
-        "WindowsUpdateStopEnabled": true,
         "Windows_Download_IWP": true,
         "ZoneOutageNewWorkflow": true,
         "actionSvc": false,

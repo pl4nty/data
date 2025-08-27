@@ -1043,6 +1043,7 @@
         "Nh_Use_CreateDirectConnection": true,
         "Nh_Use_EndUserApi_GetCpc": true,
         "Nh_Use_Entra_B2B_TenantId": true,
+        "Nh_Use_Login_Hint": true,
         "Nh_Use_Modern_WebAssembly": true,
         "Nh_Use_MultiPD_EndpointId": true,
         "Nighthawk_AVD_Client_Options": true,
@@ -1162,7 +1163,6 @@
         "TURNHealthCheckEnabled": true,
         "TroubleshootingCheckAADStatus": true,
         "UFP_CAE": true,
-        "UFP_ENABLE_AVD_REDIRECT": true,
         "UFP_ENABLE_B2B": true,
         "UFP_NEW_ASSETS": true,
         "UFP_SW_CACHE": true,
@@ -1174,7 +1174,6 @@
         "UseOperationTrackingWorkItemList": true,
         "ValidateImageSizeForFrontline": true,
         "ValidationEnvironmentNeedToChange": false,
-        "VerifyUserPresenceFromAVD": true,
         "WCX_EnablePeerToPeerConnections": true,
         "WCX_SelfHelp": true,
         "WCX_SelfHelp_UserNewHostingAppName": true,
@@ -1185,8 +1184,6 @@
                 "EnableBootSelectionScreen": true
             }
         },
-        "WindowsUpdateStartEnabled": true,
-        "WindowsUpdateStopEnabled": true,
         "Windows_Download_IWP": true,
         "ZoneOutageNewWorkflow": false,
         "action": false,
