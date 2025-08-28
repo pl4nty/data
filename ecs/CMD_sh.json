@@ -1178,6 +1178,7 @@
         "UseOperationTrackingWorkItemList": true,
         "ValidateImageSizeForFrontline": true,
         "ValidationEnvironmentNeedToChange": false,
+        "W365MeterForTestingPurpose": true,
         "WCX_EnablePeerToPeerConnections": true,
         "WCX_SelfHelp": true,
         "WCX_SelfHelp_UserNewHostingAppName": true,

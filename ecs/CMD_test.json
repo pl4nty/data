@@ -359,6 +359,7 @@
         "EnableCloudPCNugetClient": true,
         "EnableCloudPCPowerStateChangeAction": true,
         "EnableCloudPCReactViewMigration": "true",
+        "EnableCloudPCsForAzureConnection": true,
         "EnableCloudPcBackfillHoboTag": true,
         "EnableCloudPcBulkActionExecutionV2": true,
         "EnableCloudPcBulkCreateSnapshot": true,
