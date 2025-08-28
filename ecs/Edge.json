@@ -132,18 +132,6 @@
                 "msNurturingOnboardNTPToCE"
             ]
         },
-        "PrerenderEfficiencyMode": {
-            "enableFeatures": [
-                "msPrerenderEfficiencyMode",
-                "msNtpExp8"
-            ],
-            "parameters": [
-                {
-                    "name": "PrerenderEfficiencyModeAggressive",
-                    "value": "true"
-                }
-            ]
-        },
         "SecureNetworkGA": {
             "enableFeatures": [
                 "msVpnModes",
