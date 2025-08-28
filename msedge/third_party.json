@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14615289,
+    "size": 14615377,
     "file_count": 830
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32213960,
-    "file_count": 3939
+    "size": 32223486,
+    "file_count": 3940
   },
   {
     "name": "boringssl",
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36542622,
+    "size": 36542628,
     "file_count": 95
   },
   {
@@ -256,8 +256,8 @@
   },
   {
     "name": "glslang",
-    "size": 43109378,
-    "file_count": 3183
+    "size": 43197360,
+    "file_count": 3187
   },
   {
     "name": "googletest",
@@ -481,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18896363,
+    "size": 18898923,
     "file_count": 19
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3835608,
+    "size": 3831985,
     "file_count": 579
   },
   {
@@ -591,8 +591,8 @@
   },
   {
     "name": "protobuf-javascript",
-    "size": 125330,
-    "file_count": 57
+    "size": 187387,
+    "file_count": 65
   },
   {
     "name": "puffin",
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6125606,
+    "size": 6125358,
     "file_count": 167
   },
   {
