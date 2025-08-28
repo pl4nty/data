@@ -464,6 +464,13 @@ extern bool IsEnabledFeatureGroupEdgeMTHoldout(
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern void TriggerUsageFeatureGroupEdgeMTHoldout(const base::Feature& feature);
 
+// Refreshed Equal holdout which will be controlled via CT. By default
+// it's enabled for all users
+#if BUILDFLAG(IS_WIN)
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FIRST_RUN_FEATURE(kEdgeEqualRefreshedExperience);
+#endif  // BUILDFLAG(IS_WIN)
+
 // EdgeENPDyn Holdout Feature Flags and Triggers.
 BASE_DECLARE_FIRST_RUN_FEATURE(kFeatureGroupEdgeENPDynHoldout);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
