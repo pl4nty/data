@@ -4241,7 +4241,6 @@
             "restartOnNewBrowserVersionAvailable": false,
             "simulateMemoryPressure": false,
             "skipGrantAccessToDataPathIfAlreadySet": false,
-            "terminateServiceWorkerWhenIdleIgnoringCdpSessions": true,
             "useW3CCompliantUserAgent": false
         },
         "windowcontrols": {
