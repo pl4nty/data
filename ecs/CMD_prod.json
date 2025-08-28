@@ -304,6 +304,7 @@
         "EnableFrontlineConnectedUsersReport": true,
         "EnableFrontlineDedicatedRetryResize": false,
         "EnableFrontlineLicenseCardInReports": true,
+        "EnableFrontlineLicensePreviewTag": true,
         "EnableFrontlineLicenseValidation": true,
         "EnableFrontlineUnassignedProperties": true,
         "EnableGPURestrictionForFLSInPolicyBackend": true,

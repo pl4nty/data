@@ -698,6 +698,7 @@
         "EnableReplaceQueryOperationStatus": true,
         "EnableReportingFrontlineAllotment": true,
         "EnableReprovisionRestoreFlow": true,
+        "EnableReserveBypassBlockProvision": true,
         "EnableResetMaintainRestorePointInPolicy": true,
         "EnableResetMaintainRestorePointInUX": true,
         "EnableResetPurgeStorageAccount": true,
