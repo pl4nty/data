@@ -46,6 +46,7 @@ enum FavoriteType {
   OTHER_NODE = 3;
   MOBILE = 4;
   WORKSPACE = 5;
+  SPACEWORKS = 6;
 }
 
 message Favorite {
