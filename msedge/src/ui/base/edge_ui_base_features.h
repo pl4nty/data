@@ -246,10 +246,6 @@ BASE_DECLARE_FEATURE(kTouchbarRing0WithSearch);
 // Supports command line enabling of high contrast controls for PiP
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kHighContrastForPip);
 
-// If enabled, the bounds for all Views will be updated even if hidden
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kEdgeUpdateBoundsForAllViews);
-
 // If enabled, will show the new PIP views.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgePipAdvanced);
 
