@@ -3833,6 +3833,8 @@
         "ChannelMeetingProcessorSteps": "V1SaveFinalReport,V1SendMCPS",
         "ConsentReportDeviceMapping": "{\"27\":\"ClientTeamsDesktop\",\"28\":\"ClientTeamsDesktop\",\"41\":\"ClientTeamsDesktop\",\"48\":\"ClientTeamsDesktop\",\"49\":\"ClientTeamsDesktop\",\"50\":\"ClientTeamsDesktop\",\"1415\":\"ClientTeamsWeb\",\"1416\":\"ClientTeamsMobile\",\"1417\":\"ClientTeamsMobile\"}",
         "DefaultFlag": true,
+        "EnableCdtTokenInboundRequests": true,
+        "EnableCdtTokenSchedulingService": true,
         "EnableChannelMeetingGetAllReports": true,
         "EnableDisplayNameOverrideFromDsApi": true,
         "EnableEngagementActivityFeature": true,

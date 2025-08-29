@@ -1501,6 +1501,93 @@
         }
     },
     "ChillMSInvest": {
+        "Floodgate_Campaign_MicrosoftAdvertising.666e2c3c-714f-45bf-aa8e-47daa89bd2f7": {
+            "CampaignId": "666e2c3c-714f-45bf-aa8e-47daa89bd2f7",
+            "EndTimeUtc": "2025-09-12T07:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 50,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-08-13T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "newreportui",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "We have just two questions.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "We'd love your feedback on the new reporting UI! "
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Very satisfied",
+                                        "4",
+                                        "3",
+                                        "2",
+                                        "1 - Very dissatisfied"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How satisfied are you with the experience of the new report UI?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/666e2c3c-714f-45bf-aa8e-47daa89bd2f7/c1d661ab-dea7-4b6d-acbf-c1a032c36777/Web-MicrosoftAdvertising/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_MicrosoftAdvertising.ae9524af-e422-45e2-bb31-ff706e642214": {
             "CampaignId": "ae9524af-e422-45e2-bb31-ff706e642214",
             "EndTimeUtc": "2025-08-31T07:00:00Z",
