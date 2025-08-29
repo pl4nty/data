@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14615377,
+    "size": 14615556,
     "file_count": 830
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32225617,
-    "file_count": 3940
+    "size": 32237941,
+    "file_count": 3943
   },
   {
     "name": "boringssl",
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36542628,
+    "size": 36542631,
     "file_count": 95
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "name": "glslang",
-    "size": 43197360,
+    "size": 43198038,
     "file_count": 3187
   },
   {
@@ -371,8 +371,8 @@
   },
   {
     "name": "libc++",
-    "size": 6173723,
-    "file_count": 936
+    "size": 6170801,
+    "file_count": 934
   },
   {
     "name": "libdisplay-info",
@@ -481,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18898923,
+    "size": 18852331,
     "file_count": 19
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3831985,
+    "size": 3833263,
     "file_count": 579
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3461988,
+    "size": 3463194,
     "file_count": 1179
   },
   {
