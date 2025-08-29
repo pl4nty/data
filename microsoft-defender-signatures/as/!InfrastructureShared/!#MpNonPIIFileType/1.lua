@@ -5,16 +5,16 @@
 -- function num : 0
 do
   local l_0_0 = {}
-  -- DECOMPILER ERROR at PC17: No list found for R0 , SetList fails
+  -- DECOMPILER ERROR at PC18: No list found for R0 , SetList fails
 
-  -- DECOMPILER ERROR at PC18: Overwrote pending register: R1 in 'AssignReg'
+  -- DECOMPILER ERROR at PC19: Overwrote pending register: R1 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC19: Overwrote pending register: R2 in 'AssignReg'
+  -- DECOMPILER ERROR at PC20: Overwrote pending register: R2 in 'AssignReg'
 
   for l_0_4,l_0_5 in ("ALFPER:Trojan:Win32/Mscoree.mui!dha")("ALFPER:Trojan:Win64/OpenUp.B!dha") do
-    -- DECOMPILER ERROR at PC22: Overwrote pending register: R6 in 'AssignReg'
+    -- DECOMPILER ERROR at PC23: Overwrote pending register: R6 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC24: Overwrote pending register: R7 in 'AssignReg'
+    -- DECOMPILER ERROR at PC25: Overwrote pending register: R7 in 'AssignReg'
 
     if (("ALF:Trojan:Win32/ChocoFrag.B!dha").get_mpattribute)("ALFPER:Trojan:Win32/ChocoFrag.C!dha") then
       return mp.INFECTED
