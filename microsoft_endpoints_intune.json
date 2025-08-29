@@ -899,19 +899,6 @@
     {
         "category": "Default",
         "expressRoute": false,
-        "id": 172,
-        "required": true,
-        "serviceArea": "MEM",
-        "serviceAreaDisplayName": "Microsoft Endpoint Manager",
-        "tcpPorts": "80,443",
-        "urls": [
-            "*.dl.delivery.mp.microsoft.com",
-            "2.dl.delivery.mp.microsoft.com"
-        ]
-    },
-    {
-        "category": "Default",
-        "expressRoute": false,
         "id": 173,
         "required": true,
         "serviceArea": "MEM",
