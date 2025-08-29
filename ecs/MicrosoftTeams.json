@@ -5199,6 +5199,13 @@
         "SharedChannels": {
             "ACLCheckAPIEnabled": true
         },
+        "TFL": {
+            "Slices": {
+                "FederatedForTFW": {
+                    "Enabled": false
+                }
+            }
+        },
         "TagRosterRequest": {
             "IterationGuard": 7,
             "PageSize": 200
