@@ -1,0 +1,371 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Calvin <clavin@users.noreply.github.com>
+Date: Wed, 7 May 2025 13:10:34 -0600
+Subject: refactor: replace `gin_helper::MicrotasksScope` with
+ `v8::MicrotasksScope` (#46963)
+
+* Remove microtasks_scope.h and microtasks_scope.cc
+
+* Use v8::MicrotasksScope when ignoring browser checkpoint
+
+These call always skip the browser checkpoint, so they are equivalent to using v8::MicrotasksScope directly (modulo the optional wrapper behavior).
+
+* Remove MicrotasksScope from node_bindings.cc
+
+This code seems contradictory: it explicitly specifies "do not run microtasks" yet runs a microtask checkpoint in the browser process.
+
+Looking at its history, it [was introduced][1] with the intention to not run microtasks, but a [subtle C++ language behavior][2] caused it to do the opposite later in the same roll. Since the original intention was to not run microtasks, and since that is also the simplest explanation, we can assume `ignore_browser_checkpoint` should be true and migrate this to `v8::MicrotasksScope` as it is equivalent (modulo the optional wrapper behavior).
+
+[1]: https://github.com/electron/electron/pull/29058/commits/a4ea80dd47b1f13e10e218d298e70d6dd6b4fd0a#diff-efe58cf03c97028f37f801db044d396a5f428686da6595d2c692f1c052bbd09c
+[2]: https://github.com/electron/electron/pull/43185
+
+* Migrate gin_helper/promise.h and gin_helper/promise.cc to v8::MicrotasksScope
+
+Restores the [original][1] behavior of running the microtask checkpoint at destruction, but preserves the behavior of running microtasks in the browser process. This had last changed in the migration to gin_helper::MicroTasks.
+
+[1]: https://github.com/electron/electron/pull/16401
+
+diff --git a/filenames.gni b/filenames.gni
+index 499e8dc95ce9386cb2dfc3f25db766355cef89ee..530e33c4586461ef94e57c0aac5931bdace94829 100644
+--- a/filenames.gni
++++ b/filenames.gni
+@@ -653,8 +653,6 @@ filenames = {
+     "shell/common/gin_helper/function_template_extensions.h",
+     "shell/common/gin_helper/locker.cc",
+     "shell/common/gin_helper/locker.h",
+-    "shell/common/gin_helper/microtasks_scope.cc",
+-    "shell/common/gin_helper/microtasks_scope.h",
+     "shell/common/gin_helper/object_template_builder.cc",
+     "shell/common/gin_helper/object_template_builder.h",
+     "shell/common/gin_helper/persistent_dictionary.cc",
+diff --git a/shell/common/api/electron_bindings.cc b/shell/common/api/electron_bindings.cc
+index dc8ba3709ed909951c91d93270d6657e021aacf3..e77be156bce977728195b0a65c21236a9943b4a9 100644
+--- a/shell/common/api/electron_bindings.cc
++++ b/shell/common/api/electron_bindings.cc
+@@ -22,7 +22,6 @@
+ #include "shell/common/gin_converters/file_path_converter.h"
+ #include "shell/common/gin_helper/dictionary.h"
+ #include "shell/common/gin_helper/locker.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "shell/common/gin_helper/promise.h"
+ #include "shell/common/heap_snapshot.h"
+ #include "shell/common/node_includes.h"
+diff --git a/shell/common/gin_helper/callback.h b/shell/common/gin_helper/callback.h
+index 40babf18db7b25f4d77652c138295f3d79d2a48d..b8e0094baa6f0a237d0b39550d246943472c651b 100644
+--- a/shell/common/gin_helper/callback.h
++++ b/shell/common/gin_helper/callback.h
+@@ -12,8 +12,8 @@
+ #include "shell/common/gin_converters/std_converter.h"
+ #include "shell/common/gin_helper/function_template.h"
+ #include "shell/common/gin_helper/locker.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "v8/include/v8-function.h"
++#include "v8/include/v8-microtask-queue.h"
+ // Implements safe conversions between JS functions and base::RepeatingCallback.
+ 
+ namespace gin_helper {
+@@ -50,8 +50,8 @@ struct V8FunctionInvoker<v8::Local<v8::Value>(ArgTypes...)> {
+       return v8::Null(isolate);
+     v8::Local<v8::Function> holder = function.NewHandle(isolate);
+     v8::Local<v8::Context> context = holder->GetCreationContextChecked();
+-    gin_helper::MicrotasksScope microtasks_scope{
+-        context, true, v8::MicrotasksScope::kRunMicrotasks};
++    v8::MicrotasksScope microtasks_scope(context,
++                                         v8::MicrotasksScope::kRunMicrotasks);
+     v8::Context::Scope context_scope(context);
+     std::array<v8::Local<v8::Value>, sizeof...(raw)> args{
+         gin::ConvertToV8(isolate, std::forward<ArgTypes>(raw))...};
+@@ -75,8 +75,8 @@ struct V8FunctionInvoker<void(ArgTypes...)> {
+       return;
+     v8::Local<v8::Function> holder = function.NewHandle(isolate);
+     v8::Local<v8::Context> context = holder->GetCreationContextChecked();
+-    gin_helper::MicrotasksScope microtasks_scope{
+-        context, true, v8::MicrotasksScope::kRunMicrotasks};
++    v8::MicrotasksScope microtasks_scope(context,
++                                         v8::MicrotasksScope::kRunMicrotasks);
+     v8::Context::Scope context_scope(context);
+     std::array<v8::Local<v8::Value>, sizeof...(raw)> args{
+         gin::ConvertToV8(isolate, std::forward<ArgTypes>(raw))...};
+@@ -99,8 +99,8 @@ struct V8FunctionInvoker<ReturnType(ArgTypes...)> {
+       return ret;
+     v8::Local<v8::Function> holder = function.NewHandle(isolate);
+     v8::Local<v8::Context> context = holder->GetCreationContextChecked();
+-    gin_helper::MicrotasksScope microtasks_scope{
+-        context, true, v8::MicrotasksScope::kRunMicrotasks};
++    v8::MicrotasksScope microtasks_scope(context,
++                                         v8::MicrotasksScope::kRunMicrotasks);
+     v8::Context::Scope context_scope(context);
+     std::array<v8::Local<v8::Value>, sizeof...(raw)> args{
+         gin::ConvertToV8(isolate, std::forward<ArgTypes>(raw))...};
+diff --git a/shell/common/gin_helper/event_emitter_caller.cc b/shell/common/gin_helper/event_emitter_caller.cc
+index cc10c742a653d5cea55395af9e9f0028d77306cb..eb55adfc271c2078ad46a741c47b845f864ad83e 100644
+--- a/shell/common/gin_helper/event_emitter_caller.cc
++++ b/shell/common/gin_helper/event_emitter_caller.cc
+@@ -4,7 +4,6 @@
+ 
+ #include "shell/common/gin_helper/event_emitter_caller.h"
+ 
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "shell/common/node_includes.h"
+ 
+ namespace gin_helper::internal {
+@@ -24,9 +23,8 @@ v8::Local<v8::Value> CallMethodWithArgs(
+                                      node::async_context{0, 0}};
+ 
+   // Perform microtask checkpoint after running JavaScript.
+-  gin_helper::MicrotasksScope microtasks_scope{
+-      obj->GetCreationContextChecked(), true,
+-      v8::MicrotasksScope::kRunMicrotasks};
++  v8::MicrotasksScope microtasks_scope(obj->GetCreationContextChecked(),
++                                       v8::MicrotasksScope::kRunMicrotasks);
+ 
+   // node::MakeCallback will also run pending tasks in Node.js.
+   v8::MaybeLocal<v8::Value> ret = node::MakeCallback(
+diff --git a/shell/common/gin_helper/function_template.h b/shell/common/gin_helper/function_template.h
+index 2889d17beaeac7088d1a71d0159c10407217aa18..2732237963bd5452409884496f878deaa15914f7 100644
+--- a/shell/common/gin_helper/function_template.h
++++ b/shell/common/gin_helper/function_template.h
+@@ -16,9 +16,9 @@
+ #include "shell/common/gin_helper/arguments.h"
+ #include "shell/common/gin_helper/destroyable.h"
+ #include "shell/common/gin_helper/error_thrower.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "v8/include/v8-context.h"
+ #include "v8/include/v8-external.h"
++#include "v8/include/v8-microtask-queue.h"
+ #include "v8/include/v8-template.h"
+ 
+ // This file is forked from gin/function_template.h with 2 differences:
+@@ -269,9 +269,8 @@ class Invoker<std::index_sequence<indices...>, ArgTypes...>
+   template <typename ReturnType>
+   void DispatchToCallback(
+       base::RepeatingCallback<ReturnType(ArgTypes...)> callback) {
+-    gin_helper::MicrotasksScope microtasks_scope{
+-        args_->GetHolderCreationContext(), true,
+-        v8::MicrotasksScope::kRunMicrotasks};
++    v8::MicrotasksScope microtasks_scope(args_->GetHolderCreationContext(),
++                                         v8::MicrotasksScope::kRunMicrotasks);
+     args_->Return(
+         callback.Run(std::move(ArgumentHolder<indices, ArgTypes>::value)...));
+   }
+@@ -280,9 +279,8 @@ class Invoker<std::index_sequence<indices...>, ArgTypes...>
+   // expression to foo. As a result, we must specialize the case of Callbacks
+   // that have the void return type.
+   void DispatchToCallback(base::RepeatingCallback<void(ArgTypes...)> callback) {
+-    gin_helper::MicrotasksScope microtasks_scope{
+-        args_->GetHolderCreationContext(), true,
+-        v8::MicrotasksScope::kRunMicrotasks};
++    v8::MicrotasksScope microtasks_scope(args_->GetHolderCreationContext(),
++                                         v8::MicrotasksScope::kRunMicrotasks);
+     callback.Run(std::move(ArgumentHolder<indices, ArgTypes>::value)...);
+   }
+ 
+diff --git a/shell/common/gin_helper/microtasks_scope.cc b/shell/common/gin_helper/microtasks_scope.cc
+deleted file mode 100644
+index 9daff7872a81970e9ae0e760d1687a68c888d10b..0000000000000000000000000000000000000000
+--- a/shell/common/gin_helper/microtasks_scope.cc
++++ /dev/null
+@@ -1,27 +0,0 @@
+-// Copyright (c) 2020 GitHub, Inc.
+-// Use of this source code is governed by the MIT license that can be
+-// found in the LICENSE file.
+-
+-#include "shell/common/gin_helper/microtasks_scope.h"
+-
+-#include "shell/common/process_util.h"
+-#include "v8/include/v8-context.h"
+-
+-namespace gin_helper {
+-
+-MicrotasksScope::MicrotasksScope(v8::Local<v8::Context> context,
+-                                 bool ignore_browser_checkpoint,
+-                                 v8::MicrotasksScope::Type scope_type) {
+-  auto* isolate = context->GetIsolate();
+-  auto* microtask_queue = context->GetMicrotaskQueue();
+-  if (electron::IsBrowserProcess()) {
+-    if (!ignore_browser_checkpoint)
+-      v8::MicrotasksScope::PerformCheckpoint(isolate);
+-  } else {
+-    v8_microtasks_scope_.emplace(isolate, microtask_queue, scope_type);
+-  }
+-}
+-
+-MicrotasksScope::~MicrotasksScope() = default;
+-
+-}  // namespace gin_helper
+diff --git a/shell/common/gin_helper/microtasks_scope.h b/shell/common/gin_helper/microtasks_scope.h
+deleted file mode 100644
+index 55487a6498791881bffc6837b16b1bde2871cc8b..0000000000000000000000000000000000000000
+--- a/shell/common/gin_helper/microtasks_scope.h
++++ /dev/null
+@@ -1,34 +0,0 @@
+-// Copyright (c) 2020 GitHub, Inc.
+-// Use of this source code is governed by the MIT license that can be
+-// found in the LICENSE file.
+-
+-#ifndef ELECTRON_SHELL_COMMON_GIN_HELPER_MICROTASKS_SCOPE_H_
+-#define ELECTRON_SHELL_COMMON_GIN_HELPER_MICROTASKS_SCOPE_H_
+-
+-#include <optional>
+-
+-#include "v8/include/v8-forward.h"
+-#include "v8/include/v8-microtask-queue.h"
+-
+-namespace gin_helper {
+-
+-// In the browser process runs v8::MicrotasksScope::PerformCheckpoint
+-// In the render process creates a v8::MicrotasksScope.
+-class MicrotasksScope {
+- public:
+-  MicrotasksScope(v8::Local<v8::Context> context,
+-                  bool ignore_browser_checkpoint,
+-                  v8::MicrotasksScope::Type scope_type);
+-  ~MicrotasksScope();
+-
+-  // disable copy
+-  MicrotasksScope(const MicrotasksScope&) = delete;
+-  MicrotasksScope& operator=(const MicrotasksScope&) = delete;
+-
+- private:
+-  std::optional<v8::MicrotasksScope> v8_microtasks_scope_;
+-};
+-
+-}  // namespace gin_helper
+-
+-#endif  // ELECTRON_SHELL_COMMON_GIN_HELPER_MICROTASKS_SCOPE_H_
+diff --git a/shell/common/gin_helper/promise.cc b/shell/common/gin_helper/promise.cc
+index 531dede1fa6a9606783af9d9e0d902998e842c79..344e583198ab9afba1d73d478095b4a63cbd6de2 100644
+--- a/shell/common/gin_helper/promise.cc
++++ b/shell/common/gin_helper/promise.cc
+@@ -7,7 +7,6 @@
+ 
+ #include "content/public/browser/browser_task_traits.h"
+ #include "content/public/browser/browser_thread.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "shell/common/gin_helper/promise.h"
+ #include "shell/common/process_util.h"
+ #include "v8/include/v8-context.h"
+@@ -17,10 +16,14 @@ namespace gin_helper {
+ PromiseBase::SettleScope::SettleScope(const PromiseBase& base)
+     : handle_scope_{base.isolate()},
+       context_{base.GetContext()},
+-      microtasks_scope_{context_, false, v8::MicrotasksScope::kRunMicrotasks},
++      microtasks_scope_(context_, v8::MicrotasksScope::kRunMicrotasks),
+       context_scope_{context_} {}
+ 
+-PromiseBase::SettleScope::~SettleScope() = default;
++PromiseBase::SettleScope::~SettleScope() {
++  if (electron::IsBrowserProcess()) {
++    context_->GetMicrotaskQueue()->PerformCheckpoint(context_->GetIsolate());
++  }
++}
+ 
+ PromiseBase::PromiseBase(v8::Isolate* isolate)
+     : PromiseBase(isolate,
+diff --git a/shell/common/gin_helper/promise.h b/shell/common/gin_helper/promise.h
+index 1fc1832f013dd6b7eb913814abca89bd33467cef..23da2aee801e4f1ec71a8c7d62a1217e0d839319 100644
+--- a/shell/common/gin_helper/promise.h
++++ b/shell/common/gin_helper/promise.h
+@@ -15,8 +15,8 @@
+ #include "base/memory/scoped_refptr.h"
+ #include "base/task/task_runner.h"
+ #include "shell/common/gin_converters/std_converter.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "v8/include/v8-context.h"
++#include "v8/include/v8-microtask-queue.h"
+ 
+ namespace gin_helper {
+ 
+@@ -61,7 +61,7 @@ class PromiseBase {
+ 
+     v8::HandleScope handle_scope_;
+     v8::Local<v8::Context> context_;
+-    gin_helper::MicrotasksScope microtasks_scope_;
++    v8::MicrotasksScope microtasks_scope_;
+     v8::Context::Scope context_scope_;
+   };
+ 
+diff --git a/shell/common/node_bindings.cc b/shell/common/node_bindings.cc
+index 031d53d51514b8ad47be2a423fbabb60d331ff3c..2f66363e3b77c0031ed9145d40a04c7fec88d448 100644
+--- a/shell/common/node_bindings.cc
++++ b/shell/common/node_bindings.cc
+@@ -36,7 +36,6 @@
+ #include "shell/common/gin_helper/dictionary.h"
+ #include "shell/common/gin_helper/event.h"
+ #include "shell/common/gin_helper/event_emitter_caller.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "shell/common/mac/main_application_bundle.h"
+ #include "shell/common/node_includes.h"
+ #include "shell/common/node_util.h"
+@@ -331,8 +330,8 @@ void ErrorMessageListener(v8::Local<v8::Message> message,
+   v8::Isolate* isolate = v8::Isolate::GetCurrent();
+   node::Environment* env = node::Environment::GetCurrent(isolate);
+   if (env) {
+-    gin_helper::MicrotasksScope microtasks_scope(
+-        env->context(), false, v8::MicrotasksScope::kDoNotRunMicrotasks);
++    v8::MicrotasksScope microtasks_scope(
++        env->context(), v8::MicrotasksScope::kDoNotRunMicrotasks);
+     // Emit the after() hooks now that the exception has been handled.
+     // Analogous to node/lib/internal/process/execution.js#L176-L180
+     if (env->async_hooks()->fields()[node::AsyncHooks::kAfter]) {
+diff --git a/shell/common/v8_util.cc b/shell/common/v8_util.cc
+index 842e2a1cd36ea86059a11a4673fe151024db6ae7..dc01845b39803cd12540bf081a0944c045b83075 100644
+--- a/shell/common/v8_util.cc
++++ b/shell/common/v8_util.cc
+@@ -11,7 +11,6 @@
+ #include "base/memory/raw_ptr.h"
+ #include "gin/converter.h"
+ #include "shell/common/api/electron_api_native_image.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "skia/public/mojom/bitmap.mojom.h"
+ #include "third_party/blink/public/common/messaging/cloneable_message.h"
+ #include "third_party/blink/public/common/messaging/web_message_port.h"
+@@ -35,9 +34,9 @@ class V8Serializer : public v8::ValueSerializer::Delegate {
+   ~V8Serializer() override = default;
+ 
+   bool Serialize(v8::Local<v8::Value> value, blink::CloneableMessage* out) {
+-    gin_helper::MicrotasksScope microtasks_scope{
+-        isolate_->GetCurrentContext(), true,
+-        v8::MicrotasksScope::kDoNotRunMicrotasks};
++    v8::MicrotasksScope microtasks_scope(
++        isolate_->GetCurrentContext(),
++        v8::MicrotasksScope::kDoNotRunMicrotasks);
+     WriteBlinkEnvelope(19);
+ 
+     serializer_.WriteHeader();
+diff --git a/shell/renderer/api/electron_api_spell_check_client.cc b/shell/renderer/api/electron_api_spell_check_client.cc
+index 58ac2da5e02887866852e202d6c21dc075f71dce..6af3d87d8f612bcfb356afd67f9dbb6a92a3d638 100644
+--- a/shell/renderer/api/electron_api_spell_check_client.cc
++++ b/shell/renderer/api/electron_api_spell_check_client.cc
+@@ -18,7 +18,6 @@
+ #include "components/spellcheck/renderer/spellcheck_worditerator.h"
+ #include "shell/common/gin_helper/dictionary.h"
+ #include "shell/common/gin_helper/function_template.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "third_party/abseil-cpp/absl/container/flat_hash_set.h"
+ #include "third_party/blink/public/web/web_text_checking_completion.h"
+ #include "third_party/blink/public/web/web_text_checking_result.h"
+diff --git a/shell/renderer/electron_render_frame_observer.cc b/shell/renderer/electron_render_frame_observer.cc
+index b735b73b32e7e558153a1d5da3afd78259090f5c..c12b79d8dadd17eb632445e6f28583cc5e00d3e7 100644
+--- a/shell/renderer/electron_render_frame_observer.cc
++++ b/shell/renderer/electron_render_frame_observer.cc
+@@ -12,7 +12,6 @@
+ #include "net/grit/net_resources.h"
+ #include "services/service_manager/public/cpp/interface_provider.h"
+ #include "shell/common/api/api.mojom.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "shell/common/options_switches.h"
+ #include "shell/common/web_contents_utility.mojom.h"
+ #include "shell/common/world_ids.h"
+diff --git a/shell/renderer/electron_sandboxed_renderer_client.cc b/shell/renderer/electron_sandboxed_renderer_client.cc
+index 5efabd396c10f8195b8e84ab8d6f66691b6215a9..9d16dc7af8d55e77295ffc5219baeed0a2053559 100644
+--- a/shell/renderer/electron_sandboxed_renderer_client.cc
++++ b/shell/renderer/electron_sandboxed_renderer_client.cc
+@@ -14,7 +14,6 @@
+ #include "shell/common/api/electron_bindings.h"
+ #include "shell/common/application_info.h"
+ #include "shell/common/gin_helper/dictionary.h"
+-#include "shell/common/gin_helper/microtasks_scope.h"
+ #include "shell/common/node_includes.h"
+ #include "shell/common/node_util.h"
+ #include "shell/common/options_switches.h"

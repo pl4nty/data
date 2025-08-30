@@ -1,0 +1,240 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Sat, 19 Jul 2025 00:06:35 +0900
+Subject: feat: map DIR_ASSETS to location defined in resources.rc
+
+For https://github.com/microsoft/vscode/issues/249239
+
+When built with microsoft_windows_versioned_app_layout support, DIR_ASSETS will
+be mapped to IDS_ASSET_FOLDER_NAME resource string embedded in the string table
+of the executable, if there is no such resource then it will fallback to the
+default of expecting assets to be in the same directory as the FILE_EXE. This
+allows applications that want to have a versioned folder for assets possible
+on windows.
+
+Patch will be upstreamed eventually once exploration is complete.
+
+diff --git a/base/BUILD.gn b/base/BUILD.gn
+index a5c4e643b8244b83ac71d08c6aef76c80393769b..bbb9ddfa7bf5f12271a532a3e4515664d98d2c89 100644
+--- a/base/BUILD.gn
++++ b/base/BUILD.gn
+@@ -40,6 +40,7 @@ import("//build/rust/rust_bindgen.gni")
+ import("//build/rust/rust_static_library.gni")
+ import("//build/util/process_version.gni")
+ import("//build_overrides/build.gni")
++import("//microsoft/buildflags/buildflags.gni")
+ import("//testing/libfuzzer/fuzzer_test.gni")
+ import("//testing/test.gni")
+ 
+@@ -1049,6 +1050,7 @@ component("base") {
+     "//build/config/compiler:compiler_buildflags",
+     "//third_party/modp_b64",
+     "//electron/build/config:generate_mas_config",
++    "//microsoft/buildflags",
+   ]
+   if (!is_nacl) {
+     # Used by metrics/crc32, except on NaCl builds.
+diff --git a/base/base_paths.cc b/base/base_paths.cc
+index 38241c6fbab6d466ac3fa0950b00c24eea6902bb..a51482bedeca262a96d0bab1b123f0d7fefdd967 100644
+--- a/base/base_paths.cc
++++ b/base/base_paths.cc
+@@ -11,6 +11,7 @@
+ #include "base/path_service.h"
+ #include "base/strings/utf_string_conversions.h"
+ #include "build/build_config.h"
++#include "microsoft/buildflags/buildflags.h"
+ 
+ namespace base {
+ 
+@@ -71,8 +72,10 @@ bool PathProvider(int key, FilePath* result) {
+       }
+       *result = result->DirName();
+       return true;
++#if !BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
+     case DIR_ASSETS:
+       return PathService::Get(DIR_MODULE, result);
++#endif
+ #endif  // !BUILDFLAG(IS_FUCHSIA) && !BUILDFLAG(IS_IOS)
+     case DIR_TEMP:
+       return GetTempDir(result);
+diff --git a/base/base_paths_win.cc b/base/base_paths_win.cc
+index 741638e9b8bd34002376a142b4e1d4afbb2af994..b204a7f6723a4fc5e32596a3343fea01e2aaceea 100644
+--- a/base/base_paths_win.cc
++++ b/base/base_paths_win.cc
+@@ -18,11 +18,46 @@
+ #include "base/win/current_module.h"
+ #include "base/win/scoped_co_mem.h"
+ #include "base/win/windows_version.h"
++#include "microsoft/buildflags/buildflags.h"
++
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++#include "base/logging.h"
++#include "base/numerics/safe_conversions.h"
++#include "base/strings/string_util_win.h"
++#include "electron/shell/browser/resources/win/resource.h"
++#endif
+ 
+ using base::FilePath;
+ 
+ namespace base {
+ 
++namespace {
++
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++bool LoadStringResource(HMODULE resource_module,
++                        int resource_id,
++                        std::wstring& string) {
++  DCHECK(resource_module);
++
++  string.clear();
++
++  const wchar_t* string_resource = nullptr;
++  int string_length = LoadStringW(resource_module,
++                                  base::checked_cast<uint32_t>(resource_id),
++                                  reinterpret_cast<wchar_t*>(&string_resource),
++                                  /*cchBufferMax=*/0);
++  if (string_length < 0) {
++    PLOG(ERROR) << "LoadStringW() failed for resource ID: " << resource_id;
++    return false;
++  }
++
++  string.append(string_resource, base::checked_cast<uint32_t>(string_length));
++  return true;
++}
++#endif
++
++}  // namespace
++
+ bool PathProviderWin(int key, FilePath* result) {
+   // We need to go compute the value. It would be nice to support paths with
+   // names longer than MAX_PATH, but the system functions don't seem to be
+@@ -49,6 +84,20 @@ bool PathProviderWin(int key, FilePath* result) {
+       cur = FilePath(system_buffer);
+       break;
+     }
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++    case base::DIR_ASSETS: {
++      if (!PathService::Get(DIR_MODULE, &cur)) {
++        return false;
++      }
++      std::wstring product_version;
++      if (!LoadStringResource(CURRENT_MODULE(), IDS_ASSET_FOLDER_NAME,
++                              product_version) || product_version.empty()) {
++        break;
++      }
++      cur = cur.Append(product_version);
++      break;
++    }
++#endif
+     case base::DIR_WINDOWS:
+       GetWindowsDirectory(system_buffer, MAX_PATH);
+       cur = FilePath(system_buffer);
+diff --git a/sandbox/policy/BUILD.gn b/sandbox/policy/BUILD.gn
+index 7d206b808d34e9b5162a21c844bcb9c82af7f2c2..5eb9ebc8dd14db281def8eed32bae9c71f13ea5c 100644
+--- a/sandbox/policy/BUILD.gn
++++ b/sandbox/policy/BUILD.gn
+@@ -7,6 +7,7 @@ import("//build/config/cast.gni")
+ import("//build/config/sanitizers/sanitizers.gni")
+ import("//chromeos/ash/components/assistant/assistant.gni")
+ import("//media/gpu/args.gni")
++import("//microsoft/buildflags/buildflags.gni")
+ import("//testing/test.gni")
+ 
+ # Most consumers of sandbox::policy should depend on this target.
+@@ -163,6 +164,7 @@ component("policy") {
+     deps += [
+       ":win_hook_util",
+       "//sandbox/win:sandbox",
++      "//microsoft/buildflags",
+     ]
+   }
+   if (is_fuchsia) {
+diff --git a/sandbox/policy/win/sandbox_win.cc b/sandbox/policy/win/sandbox_win.cc
+index 53b72124ffaa77f740d689fcc1781556bcca4e66..34b43f813675b17aecd8d53204b094a10e5629b3 100644
+--- a/sandbox/policy/win/sandbox_win.cc
++++ b/sandbox/policy/win/sandbox_win.cc
+@@ -52,6 +52,7 @@
+ #include "base/win/win_util.h"
+ #include "base/win/windows_version.h"
+ #include "build/build_config.h"
++#include "microsoft/buildflags/buildflags.h"
+ #include "sandbox/features.h"
+ #include "sandbox/policy/features.h"
+ #include "sandbox/policy/mojom/sandbox.mojom.h"
+@@ -151,10 +152,18 @@ ResultCode AddGenericConfig(sandbox::TargetConfig* config) {
+ 
+ // Add the policy for read-only PDB file access for stack traces.
+ #if !defined(OFFICIAL_BUILD)
++  base::FilePath pdb_path;
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++  base::FilePath assets_path;
++  if (!base::PathService::Get(base::DIR_ASSETS, &assets_path))
++    return SBOX_ERROR_GENERIC;
++  pdb_path = assets_path.Append(L"*.pdb");
++#else
+   base::FilePath exe;
+   if (!base::PathService::Get(base::FILE_EXE, &exe))
+     return SBOX_ERROR_GENERIC;
+-  base::FilePath pdb_path = exe.DirName().Append(L"*.pdb");
++  pdb_path = exe.DirName().Append(L"*.pdb");
++#endif
+   {
+     ResultCode result = config->AllowFileAccess(FileSemantics::kAllowReadonly,
+                                                 pdb_path.value().c_str());
+diff --git a/sandbox/win/BUILD.gn b/sandbox/win/BUILD.gn
+index de68fc7024d6e2a634bda17546b502f4fb1af5d0..b3203827861cddd2f70ce9e4fec6a124f9e04863 100644
+--- a/sandbox/win/BUILD.gn
++++ b/sandbox/win/BUILD.gn
+@@ -4,6 +4,7 @@
+ 
+ import("//testing/libfuzzer/fuzzer_test.gni")
+ import("//testing/test.gni")
++import("//microsoft/buildflags/buildflags.gni")
+ 
+ source_set("service_resolver") {
+   sources = [
+@@ -173,6 +174,7 @@ static_library("sandbox") {
+     ":service_resolver",
+     "//base:base_static",
+     "//build/config/win:maybe_set_appcontainer_acls",
++    "//microsoft/buildflags",
+   ]
+ 
+   libs = [
+diff --git a/sandbox/win/src/process_mitigations.cc b/sandbox/win/src/process_mitigations.cc
+index 39282ab6be12d9eacf40011c551f41a0cc58e922..cda6ae568d69b0aa1038ea4f947c4bb71db3bd8c 100644
+--- a/sandbox/win/src/process_mitigations.cc
++++ b/sandbox/win/src/process_mitigations.cc
+@@ -26,11 +26,16 @@
+ #include "base/win/access_token.h"
+ #include "base/win/windows_version.h"
+ #include "build/build_config.h"
++#include "microsoft/buildflags/buildflags.h"
+ #include "sandbox/win/src/interception.h"
+ #include "sandbox/win/src/nt_internals.h"
+ #include "sandbox/win/src/restricted_token_utils.h"
+ #include "sandbox/win/src/win_utils.h"
+ 
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++#include "base/path_service.h"
++#endif
++
+ // These are missing in 10.0.19551.0 but are in 10.0.19041.0 and 10.0.20226.0.
+ #ifndef PROCESS_CREATION_MITIGATION_POLICY2_CET_USER_SHADOW_STACKS_STRICT_MODE
+ #define PROCESS_CREATION_MITIGATION_POLICY2_CET_USER_SHADOW_STACKS_STRICT_MODE \
+@@ -119,6 +124,15 @@ bool ApplyProcessMitigationsToCurrentProcess(MitigationFlags starting_flags,
+       return false;
+     }
+ 
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++    base::FilePath assets_path;
++    if (base::PathService::Get(base::DIR_ASSETS, &assets_path)) {
++      VLOG(1) << "Adding assets path to DLL search order: "
++              << assets_path.value();
++      AddDllDirectory(assets_path.value().c_str());
++    }
++#endif
++
+     applied_flags |= MITIGATION_DLL_SEARCH_ORDER;
+   }
+ 

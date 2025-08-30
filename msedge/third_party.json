@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14615556,
+    "size": 14632766,
     "file_count": 830
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32237874,
-    "file_count": 3943
+    "size": 32246495,
+    "file_count": 3945
   },
   {
     "name": "boringssl",
@@ -121,7 +121,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 36414,
+    "size": 36862,
     "file_count": 5
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "name": "glslang",
-    "size": 43198038,
+    "size": 43198052,
     "file_count": 3187
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 6170801,
+    "size": 6171889,
     "file_count": 934
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 282530,
+    "size": 282711,
     "file_count": 40
   },
   {
@@ -521,12 +521,12 @@
   },
   {
     "name": "oak",
-    "size": 190799,
-    "file_count": 111
+    "size": 206329,
+    "file_count": 118
   },
   {
     "name": "omnibox_proto",
-    "size": 28724,
+    "size": 28768,
     "file_count": 15
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3833263,
+    "size": 3836248,
     "file_count": 579
   },
   {
@@ -586,8 +586,8 @@
   },
   {
     "name": "protobuf",
-    "size": 2234528,
-    "file_count": 481
+    "size": 2265270,
+    "file_count": 488
   },
   {
     "name": "protobuf-javascript",
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3463194,
+    "size": 3463244,
     "file_count": 1179
   },
   {
@@ -736,8 +736,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6125358,
-    "file_count": 167
+    "size": 6257902,
+    "file_count": 168
   },
   {
     "name": "vulkan_memory_allocator",

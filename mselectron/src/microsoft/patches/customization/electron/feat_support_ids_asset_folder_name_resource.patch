@@ -1,0 +1,38 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Tue, 22 Jul 2025 01:23:36 +0900
+Subject: feat: support IDS_ASSET_FOLDER_NAME resource
+
+//electron layer changes for https://github.com/microsoft/vscode/issues/249239
+
+Refer to //microsoft/patches/customization/chromium/feat_map_dir_assets_to_location_defined_in_resources_rc.patch
+for additional context.
+
+Note: we are copying electron_rc.tmpl with needed changes since the original file
+has CRLF endings and doesn't play well with our patch application strategy.
+
+diff --git a/BUILD.gn b/BUILD.gn
+index edf41657e5b3d25b057a3f22fb60a436ec10a0ff..550b60590a7fb2d4f5c49401a8de39866f9c5337 100644
+--- a/BUILD.gn
++++ b/BUILD.gn
+@@ -360,7 +360,7 @@ templated_file("electron_version_header") {
+ templated_file("electron_win_rc") {
+   deps = [ ":electron_version_args" ]
+ 
+-  template = "build/templates/electron_rc.tmpl"
++  template = "$microsoft_windows_rc_template"
+   output = "$target_gen_dir/win-resources/electron.rc"
+ 
+   args_files = get_target_outputs(":electron_version_args")
+diff --git a/shell/browser/resources/win/resource.h b/shell/browser/resources/win/resource.h
+index 275374d36194c609678082bdf7be3b93560ce37c..cdc710fbbe7317be9345514d733bf2c142f5fb0a 100644
+--- a/shell/browser/resources/win/resource.h
++++ b/shell/browser/resources/win/resource.h
+@@ -2,6 +2,7 @@
+ // Microsoft Visual C++ generated include file.
+ 
+ #define IDR_MAINFRAME 1
++#define IDS_ASSET_FOLDER_NAME 2
+ 
+ // Next default values for new objects
+ //
