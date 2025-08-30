@@ -1,0 +1,153 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Sat, 19 Jul 2025 00:15:28 +0900
+Subject: feat: load delayload dlls from DIR_ASSETS
+
+//electron layer changes for https://github.com/microsoft/vscode/issues/249239
+
+Refer to //microsoft/patches/customization/chromium/feat_map_dir_assets_to_location_defined_in_resources_rc.patch
+for additional context.
+
+diff --git a/BUILD.gn b/BUILD.gn
+index baf47776c253409e4f195172a915a05f1300c126..edf41657e5b3d25b057a3f22fb60a436ec10a0ff 100644
+--- a/BUILD.gn
++++ b/BUILD.gn
+@@ -1261,6 +1261,7 @@ if (is_mac) {
+ 
+       deps += [
+         "//chrome/app:exit_code_watcher",
++        "//chrome/common/win:delay_load_hooks",
+         "//components/crash/core/app:run_as_crashpad_handler",
+       ]
+ 
+diff --git a/shell/app/electron_main_win.cc b/shell/app/electron_main_win.cc
+index afa434b143f3b29eb4399635318550c97c530144..147cbdf80c74f362422a25cac269407879467368 100644
+--- a/shell/app/electron_main_win.cc
++++ b/shell/app/electron_main_win.cc
+@@ -35,6 +35,7 @@
+ #include "content/public/app/sandbox_helper_win.h"
+ #include "electron/buildflags/buildflags.h"
+ #include "electron/fuses.h"
++#include "microsoft/buildflags/buildflags.h"
+ #include "sandbox/win/src/sandbox_types.h"
+ #include "shell/app/command_line_args.h"
+ #include "shell/app/electron_main_delegate.h"
+@@ -43,6 +44,19 @@
+ #include "shell/common/electron_constants.h"
+ #include "third_party/crashpad/crashpad/util/win/initial_client_data.h"
+ 
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++#include <string_view>
++
++#include "base/base_paths.h"
++#include "base/files/file.h"
++#include "base/files/file_path.h"
++#include "base/files/file_util.h"
++#include "base/logging.h"
++#include "base/path_service.h"
++#include "base/strings/string_util.h"
++#include "chrome/common/win/delay_load_notify_hook.h"
++#endif
++
+ #pragma clang diagnostic pop
+ 
+ namespace {
+@@ -52,12 +66,87 @@ namespace {
+ const char kUserDataDir[] = "user-data-dir";
+ const char kProcessType[] = "type";
+ 
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++const wchar_t kFFmpegDll[] = L"ffmpeg.dll";
++const wchar_t kLibEGLDll[] = L"libEGL.dll";
++const wchar_t kLibGLESv2Dll[] = L"libGLESv2.dll";
++const wchar_t kVkSwiftShaderDll[] = L"vk_swiftshader.dll";
++const wchar_t kVulkan1Dll[] = L"vulkan-1.dll";
++#endif
++
+ [[nodiscard]] bool IsEnvSet(const base::cstring_view name) {
+   size_t required_size = 0;
+   getenv_s(&required_size, nullptr, 0, name.c_str());
+   return required_size != 0;
+ }
+ 
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++// Indicates whether a file can be opened using the same flags that
++// ::LoadLibrary() uses to open modules.
++bool ModuleCanBeRead(const base::FilePath& file_path) {
++  return base::File(file_path, base::File::FLAG_OPEN | base::File::FLAG_READ)
++      .IsValid();
++}
++
++// Returns the full path to |module_name|.
++base::FilePath GetModulePath(std::wstring_view module_name) {
++  base::FilePath assets_dir;
++  const bool has_path = base::PathService::Get(base::DIR_ASSETS, &assets_dir);
++  DCHECK(has_path);
++
++  // Look for the module in a versioned sub-directory of the current
++  // executable's directory and return the path if it can be read. This is the
++  // expected location of modules for proper installs.
++  const base::FilePath module_path = assets_dir.Append(module_name);
++  if (ModuleCanBeRead(module_path))
++    return module_path;
++
++  // Othwerwise, return the path to the module in the current executable's
++  // directory. This is the expected location of modules for dev builds.
++  base::FilePath exe_dir;
++  DCHECK(base::PathService::Get(base::DIR_EXE, &exe_dir));
++  return exe_dir.Append(module_name);
++}
++
++FARPROC DelayLoadCallback(unsigned delay_load_event,
++                          DelayLoadInfo* delay_load_info) {
++  if (delay_load_event == dliNotePreLoadLibrary) {
++    base::FilePath file;
++    if (base::EqualsCaseInsensitiveASCII(delay_load_info->szDll,
++                                         "ffmpeg.dll")) {
++      file = GetModulePath(kFFmpegDll);
++    } else if (base::EqualsCaseInsensitiveASCII(delay_load_info->szDll,
++                                                "libEGL.dll")) {
++      file = GetModulePath(kLibEGLDll);
++    } else if (base::EqualsCaseInsensitiveASCII(delay_load_info->szDll,
++                                                "libGLESv2.dll")) {
++      file = GetModulePath(kLibGLESv2Dll);
++    } else if (base::EqualsCaseInsensitiveASCII(delay_load_info->szDll,
++                                                "vk_swiftshader.dll")) {
++      file = GetModulePath(kVkSwiftShaderDll);
++    } else if (base::EqualsCaseInsensitiveASCII(delay_load_info->szDll,
++                                                "vulkan-1.dll")) {
++      file = GetModulePath(kVulkan1Dll);
++    } else {
++      // Not a module we know about.
++      return nullptr;
++    }
++    if (file.empty()) {
++      PLOG(ERROR) << "Cannot find module " << delay_load_info->szDll;
++      return nullptr;
++    }
++    HMODULE handle = ::LoadLibraryExW(file.value().c_str(), nullptr,
++                                      LOAD_WITH_ALTERED_SEARCH_PATH);
++    if (!handle) {
++      PLOG(ERROR) << "Failed to load DLL from " << file.value();
++      return nullptr;
++    }
++    return reinterpret_cast<FARPROC>(handle);
++  }
++  return nullptr;
++}
++#endif
++
+ }  // namespace
+ 
+ namespace crash_reporter {
+@@ -227,6 +316,10 @@ int APIENTRY wWinMain(HINSTANCE instance, HINSTANCE, wchar_t* cmd, int) {
+   if (!electron::CheckCommandLineArguments(command_line->argv()))
+     return -1;
+ 
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++  chrome::SetDelayLoadHookCallback(&DelayLoadCallback);
++#endif
++
+   sandbox::SandboxInterfaceInfo sandbox_info = {nullptr};
+   content::InitializeSandboxInfo(&sandbox_info);
+   electron::ElectronMainDelegate delegate;

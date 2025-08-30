@@ -1,0 +1,206 @@
+<!-- NOTE(@mlaurencin): If the homepage `wiki/release_wiki.html` on the storage account
+     is accidentally removed, this template can serve as a base to recreate it.
+     Values starting with X and Y are just placeholder versions. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"></meta>
+    <title>Version History</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+        margin: 0;
+        padding: 2em;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #468292 0%, #2c3e50 100%);
+        color: white;
+        padding: 2.5rem 2rem;
+        text-align: center;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 300;
+        letter-spacing: -0.02em;
+      }
+
+      .content {
+        padding: 2rem;
+      }
+
+      p {
+        color: #495057;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-left: 4px solid #468292;
+        padding: 1.5rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      }
+
+      h2 {
+        color: #2c3e50;
+        border-bottom: 3px solid #468292;
+        padding-bottom: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+
+      h3 {
+        margin-top: 2em;
+        color: #34495e;
+      }
+
+      details {
+        background: #fff;
+        border-left: 4px solid #468292;
+        padding: 1em;
+        margin-bottom: 1em;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      }
+
+      summary {
+        font-weight: bold;
+        font-size: 1.05em;
+        cursor: pointer;
+        outline: none;
+      }
+
+      ul {
+        padding-left: 1.2em;
+        margin-top: 0.5em;
+      }
+
+      li {
+        margin-bottom: 0.5em;
+      }
+
+      a {
+        color: #468292;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 1200px) {
+        .container {
+          margin: 0 1rem;
+        }
+        
+        .header h1 {
+          font-size: 2.5rem;
+        }
+        
+        .content {
+          padding: 1.5rem;
+        }
+        
+        h2 {
+          font-size: 1.6rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 1rem;
+        }
+        
+        .header {
+          padding: 1.5rem 1rem;
+        }
+        
+        .header h1 {
+          font-size: 2rem;
+        }
+        
+        .content {
+          padding: 1rem;
+        }
+        
+        h2 {
+          font-size: 1.4rem;
+        }
+        
+        h3 {
+          font-size: 1.2rem;
+        }
+        
+        details {
+          padding: 0.8rem;
+        }
+        
+        summary {
+          font-size: 1rem;
+        }
+        
+        ul {
+          padding-left: 1rem;
+        }
+        
+        li {
+          margin-bottom: 0.3rem;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Electron Internal Builds Wiki</h1>
+      </div>
+
+      <div class="content">
+        <p> Welcome to the Electron Internal Builds Wiki. This page provides a comprehensive version history of Electron builds created by the Electron
+            team at Microsoft, including currently supported builds and those that are no longer supported. These builds are customized to suit 
+            different application needs, environments, and compliance requirements across operating systems. For more information on the builds, the 
+            team, or Electron at Microsoft, please visit our <a href="https://microsoft.sharepoint.com/teams/Electron" target="_blank">team page</a>.
+        </p>
+
+        <h2 id="version-history">Version History</h2>
+
+        <h3 id="currently-supported">Currently Supported</h3>
+
+        <details id="vX">
+          <summary id="vX-latest">vX Latest <a href="https://msftelectronbuild.z5.web.core.windows.net/wiki/X-4-0.html">X.4.0</a></summary>
+          <ul id="vX-list">
+            <li><a href="https://msftelectronbuild.z5.web.core.windows.net/wiki/X-4-0.html">X.4.0</a></li>
+            <li>X.3.2</li>
+            <li>X.3.0</li>
+            <li>X.2.1</li>
+          </ul>
+        </details>
+
+        <h3 id="no-longer-supported">No Longer Supported</h3>
+
+        <details id="vY">
+          <summary id="vY-latest">vY</summary>
+          <ul id="vY-list">
+            <li><a href="https://msftelectronbuild.z5.web.core.windows.net/wiki/Y-4-11.html">Y.4.11</a></li>
+            <li><a href="https://msftelectronbuild.z5.web.core.windows.net/wiki/Y-4-9.html">Y.4.9</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </body>
+</html>

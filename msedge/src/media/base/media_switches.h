@@ -404,6 +404,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kWidevinePersistentLicenseSupport);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kResolutionBasedDecoderPriority);
 
 #if BUILDFLAG(IS_ANDROID)
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kAllowEnhancedPipTransition);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAllowNonSecureOverlays);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAutoPictureInPictureAndroid);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kContextMenuPictureInPictureAndroid);
@@ -539,6 +540,8 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kLibaomUseChromeThreads);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kD3D12VideoDecoder);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kD3D12VideoEncodeAccelerator);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kD3D12VideoEncodeAcceleratorL1T3);
+MEDIA_EXPORT BASE_DECLARE_FEATURE(
+    kD3D12VideoEncodeAcceleratorSharedHandleCaching);
 
 MEDIA_EXPORT extern const base::FeatureParam<double> kAudioOffloadBufferTimeMs;
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAudioOffload);
