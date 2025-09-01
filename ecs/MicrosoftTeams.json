@@ -3911,6 +3911,7 @@
         "app": {
             "allowUninstallPearAppRegistryDisable": false,
             "cloudRelaunchEnabled": false,
+            "concentricSemaphoreButtons": false,
             "enableDiagnosticLogCollection": false,
             "enableInstallSrcTelemetry": false,
             "enableJumplistQuit": false,
