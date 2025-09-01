@@ -464,7 +464,6 @@
         "EnablePreviewStringForSSO": false,
         "EnableProductTypeReserve": true,
         "EnableProgressMarkersForRunUndispatchedSubscriptionRegionAnalysisAsync": true,
-        "EnableProvisionResultPersistRetry": true,
         "EnableProvisionedDateTime": true,
         "EnablePurgeDeviceConfigurationEntities": true,
         "EnableQuotaForecastGeneration": true,
