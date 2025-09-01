@@ -1028,6 +1028,18 @@
                 {
                     "applied_policy": "OptOut",
                     "domain": "legacyhealth.org"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "ballettschule-oerlikon.ch"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "wilansky.org"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "magic-light.com"
                 }
             ],
             "policies": [
