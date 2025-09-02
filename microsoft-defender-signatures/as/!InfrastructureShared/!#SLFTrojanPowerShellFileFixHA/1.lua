@@ -15,21 +15,25 @@ local l_0_1 = (mp.readfile)(0, l_0_0)
 if l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
 end
-local l_0_2 = (string.gsub)(l_0_1, "[\'\"%s]+$", "")
-if l_0_2 == nil or l_0_2 == "" then
-  return mp.CLEAN
-end
-if not (string.match)(l_0_2, "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s[%u]:\\.+\\.+%.[%a]+$") and not (string.match)(l_0_2, "#%s*[%u]:\\.+\\.+%.[%a]+$") then
-  return mp.CLEAN
-end
-local l_0_3 = l_0_2:match("%s[%u]:(.*)")
+local l_0_2 = (string.lower)(l_0_1)
+local l_0_3 = (string.gsub)(l_0_2, "[\'\"%s]+$", "")
 if l_0_3 == nil or l_0_3 == "" then
   return mp.CLEAN
 end
-if l_0_3:find("[:<>]") then
+if not (string.match)(l_0_3, "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s#?%s*[%a]:\\.+\\.+%.[%a]+$") and (not (string.match)(l_0_3, "#%s*[%a]:\\.+\\.+%.[%a]+$") or l_0_0 >= 300) then
   return mp.CLEAN
 end
-if (string.match)(l_0_3, "%.pdf$") or (string.match)(l_0_3, "%.xlsx$") or (string.match)(l_0_3, "%.docx$") or (string.match)(l_0_3, "%.pptx$") then
+local l_0_4 = l_0_3:match("%s[%a]:(.*)")
+if l_0_4 == nil or l_0_4 == "" then
+  return mp.CLEAN
+end
+if l_0_4:find("[:<>]") then
+  return mp.CLEAN
+end
+if not (string.match)(l_0_3, "h.?.?.?.?.?.?t.?.?.?.?.?.?t.?.?.?.?.?.?p.?.?.?.?.?.?s?.?.?.?.?.?.?:.?.?.?.?.?.?/") and not (string.match)(l_0_3, " ping ") then
+  return mp.CLEAN
+end
+if (string.match)(l_0_4, "%.pdf$") or (string.match)(l_0_4, "%.xlsx$") or (string.match)(l_0_4, "%.docx$") or (string.match)(l_0_4, "%.pptx$") then
   return mp.INFECTED
 end
 return mp.CLEAN
