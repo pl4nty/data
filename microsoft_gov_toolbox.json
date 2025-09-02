@@ -24,8 +24,9 @@
         "name": "AzPowerShell",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "14.3.0",
+        "version": "14.4.0",
         "versions": [
+            "14.4.0",
             "14.3.0",
             "14.2.0",
             "14.1.0",
@@ -389,8 +390,9 @@
         "name": "AzureCLI",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.76.0",
+        "version": "2.77.0",
         "versions": [
+            "2.77.0",
             "2.76.0",
             "2.75.0",
             "2.74.0",
