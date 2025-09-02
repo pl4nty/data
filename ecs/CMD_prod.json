@@ -317,7 +317,6 @@
         "EnableGetCrossRegionDRConfig4SnapshotBackend": true,
         "EnableGetGalleryImageVersionsFromCosmos": true,
         "EnableGetGalleryImageVersionsFunction": true,
-        "EnableGetScopeTagFromDenormalize": true,
         "EnableGetSingleCollection": true,
         "EnableGpuDriverInstall": true,
         "EnableGpuInPostProvisioning": true,
