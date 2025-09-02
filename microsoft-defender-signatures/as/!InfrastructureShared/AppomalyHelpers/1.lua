@@ -1263,8 +1263,11 @@ LLMPromptGrader = function(l_10_0)
     l_10_1 = l_10_1 + 100
   end
   local l_10_3 = {}
-  l_10_3.delete = 1
-  l_10_3.move = 1
+  l_10_3["delete "] = 1
+  l_10_3["move "] = 1
+  l_10_3["enumerate "] = 1
+  l_10_3["search "] = 1
+  l_10_3["locate "] = 1
   l_10_3.clean = 1
   l_10_3.wipe = 1
   l_10_3.overwrite = 1
@@ -1377,6 +1380,10 @@ LLMPromptGrader = function(l_10_0)
   l_10_3["break"] = 1
   l_10_3.vulnerability = 1
   l_10_3.attack = 1
+  l_10_3["You are an authorized penetration testing agent"] = 50
+  l_10_3["enumerate the filesystem to locate potentially"] = 50
+  l_10_3["locate text configuration and environment-definition files (examples: *.txt, *.log,"] = 50
+  l_10_3["Recursively search local paths on Linux/macOS"] = 50
   for l_10_7,l_10_8 in pairs(l_10_3) do
     if (string.find)(l_10_0, l_10_7, 1, true) then
       l_10_1 = l_10_1 + l_10_8
