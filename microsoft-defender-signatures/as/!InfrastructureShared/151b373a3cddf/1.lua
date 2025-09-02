@@ -15,7 +15,7 @@ end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
-if l_0_2:find("moof-helper", 1, true) then
+if l_0_2:find("moof-helper", 1, true) or l_0_2:find("moof-patch", 1, true) then
   return mp.CLEAN
 end
 if (string.find)(l_0_2, (string.rep)("\n", 11), 1, false) or (string.find)(l_0_2, (string.rep)("%s", 51), 1, false) then
