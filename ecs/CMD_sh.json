@@ -469,7 +469,6 @@
         "EnableGetGalleryImageVersionsFunction": true,
         "EnableGetInfomationForHibernationIssue": true,
         "EnableGetMdepsUrlFromRemoteConfig": true,
-        "EnableGetScopeTagFromDenormalize": true,
         "EnableGetSingleCollection": true,
         "EnableGpuDriverInstall": true,
         "EnableGpuInPostProvisioning": true,
