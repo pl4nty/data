@@ -20,7 +20,7 @@ local l_0_5 = false
 if (l_0_3 ~= nil or l_0_4 ~= nil) and (#l_0_3 > 0 or #l_0_4 > 0) then
   l_0_5 = true
 end
-if l_0_5 and ((string.find)(l_0_2, "/bin/bash", 1, true) or (string.find)(l_0_2, "/bin/zsh", 1, true) or (string.find)(l_0_2, "/bin/sh", 1, true) or l_0_2:match("\'(bash)\'") or l_0_2:match("\"(bash)\"") or l_0_2:match("\'(sh)\'") or l_0_2:match("\"(sh)\"") or l_0_2:match("\'(zsh)\'") or l_0_2:match("\"(zsh)\"") or l_0_2:find("zsh -i", 1, true) or l_0_2:find("bash -i", 1, true) or l_0_2:find("sh -i", 1, true)) then
+if l_0_5 and ((string.find)(l_0_2, "/bin/bash", 1, true) or (string.find)(l_0_2, "/bin/zsh", 1, true) or (string.find)(l_0_2, "/bin/sh", 1, true) or l_0_2:match("\'(bash)\'") or l_0_2:match("\"(bash)\"") or l_0_2:match("\'(sh)\'") or l_0_2:match("\"(sh)\"") or l_0_2:match("\'(zsh)\'") or l_0_2:match("\"(zsh)\"") or l_0_2:find(" bash ", 1, true) or l_0_2:find(" sh ", 1, true) or l_0_2:find(" zsh ", 1, true) or l_0_2:find("zsh -i", 1, true) or l_0_2:find("bash -i", 1, true) or l_0_2:find("sh -i", 1, true) or l_0_2:find("do%s+%$", 1, false)) then
   return mp.INFECTED
 end
 return mp.CLEAN

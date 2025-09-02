@@ -18,7 +18,7 @@ end
 if l_0_2:find("/tmp/docker-desktop-privileged", 1, true) or l_0_2:find("therealtomrose/citrix-workspace-killer/master/stop_citrix.sh", 1, true) or l_0_2:find("https://cdn.appcatalog.cloud/install_app_catalog.zsh", 1, true) or l_0_2:find("/opt/homebrew/bin/openssl%s+pkeyutl%.ssh/auth/client_private%.pem", 1, false) then
   return mp.CLEAN
 end
-if l_0_2:find("echo.*%|%s+base64%s+-d", 1, false) or l_0_2:find("echo.*%|%s+base64%s+--decode", 1, false) or l_0_2:find("echo.*%|%s+base64%s+-D", 1, false) or l_0_2:find("curl.*%|%s+bash", 1, false) or l_0_2:find("curl.*%|%s+sh", 1, false) or l_0_2:find("curl.*%|%s+zsh", 1, false) or l_0_2:find("tail%s+-c.*%|%s+funzip", 1, false) or l_0_2:find("echo.*%|%s+xxd", 1, false) then
+if l_0_2:find("echo.*%|%s+base64%s+-d", 1, false) or l_0_2:find("echo.*%|%s+base64%s+--decode", 1, false) or l_0_2:find("echo.*%|%s+base64%s+-D", 1, false) or l_0_2:find("echo.*%|%s+bash", 1, false) or l_0_2:find("echo.*%|%s+sh", 1, false) or l_0_2:find("echo.*%|%s+zsh", 1, false) or l_0_2:find("curl.*%|%s+bash", 1, false) or l_0_2:find("curl.*%|%s+sh", 1, false) or l_0_2:find("curl.*%|%s+zsh", 1, false) or l_0_2:find("tail%s+-c.*%|%s+funzip", 1, false) or l_0_2:find("echo.*%|%s+xxd", 1, false) then
   return mp.INFECTED
 end
 return mp.CLEAN
