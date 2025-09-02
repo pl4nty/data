@@ -1756,23 +1756,6 @@
         "threadLinkResolutionExpireSpan": "1.00:00:00",
         "userLinkResolutionExpireSpan": "1.00:00:00"
     },
-    "TFLSMSBSvc": {
-        "AllowAddToThread": true,
-        "AllowClaim": true,
-        "AllowEgress": true,
-        "AllowIngress": true,
-        "AllowManualDeprovision": false,
-        "AllowManualDeprovisionWarning": false,
-        "AllowOneToOne": true,
-        "AllowSendMissedMessagesGroup": false,
-        "AllowSendMissedMessagesOneToOne": true,
-        "AllowUnsupportedRegion": false,
-        "ProxyCountryCodeOverride": null,
-        "ProxyIdOverride": null,
-        "ProxyPartitionOverride": null,
-        "SchedulerServiceIntegrationEnabled": true,
-        "UserConsentNeededOverride": null
-    },
     "TFLSvcsTestUsers": {
         "IsTestUser": false
     },

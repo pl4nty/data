@@ -1894,7 +1894,7 @@
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
-                    "IntervalSeconds": 31536000,
+                    "IntervalSeconds": 7776000,
                     "Type": 0
                 },
                 "FallbackSurveyDurationSeconds": 0,
