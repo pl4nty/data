@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2084763,
+    "size": 2085980,
     "file_count": 178
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10714903,
+    "size": 10714904,
     "file_count": 167
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32246495,
-    "file_count": 3945
+    "size": 32261262,
+    "file_count": 3948
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17974242,
+    "size": 17978710,
     "file_count": 1010
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "name": "glslang",
-    "size": 43198052,
+    "size": 43197622,
     "file_count": 3187
   },
   {
@@ -361,7 +361,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 44491,
+    "size": 45166,
     "file_count": 39
   },
   {
@@ -371,8 +371,8 @@
   },
   {
     "name": "libc++",
-    "size": 6171889,
-    "file_count": 934
+    "size": 6186033,
+    "file_count": 937
   },
   {
     "name": "libdisplay-info",
@@ -481,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18852331,
+    "size": 18837995,
     "file_count": 19
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 28768,
+    "size": 28873,
     "file_count": 15
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3836248,
+    "size": 3835914,
     "file_count": 579
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3463244,
+    "size": 3463352,
     "file_count": 1179
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 530164,
+    "size": 530544,
     "file_count": 15
   },
   {
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6257902,
+    "size": 6259561,
     "file_count": 168
   },
   {

@@ -359,6 +359,10 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kSemanticNonColorTokenCentralized);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsCentralizedPhoenixNonColorTokenPipelineEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern const base::FeatureParam<bool> kSemanticNonColorTokensForP2Surfaces;
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsSemanticNonColorTokensForP2SurfacesEnabled();
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsVisualRejuvMenuFontSizeEnabled();
