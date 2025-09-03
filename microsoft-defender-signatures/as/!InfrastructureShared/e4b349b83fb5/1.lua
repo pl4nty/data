@@ -3,10 +3,25 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (bm.get_imagepath)()
+local l_0_1 = (bm.get_current_process_startup_info)()
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = l_0_1.command_line
+if l_0_2 == nil or l_0_2 == "" then
+  return mp.CLEAN
+end
+if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
+  return mp.CLEAN
+end
+if l_0_2:find("/usr/local/share/dotnet/sdk/", 1, true) or l_0_2:find("/libexec/bin/dart", 1, true) or l_0_2:find("Scripts/com.omnissa.horizon.client.mac", 1, true) then
+  return mp.CLEAN
+end
 do
   if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil and (this_sigattrlog[5]).utf8p2 ~= "" then
-    local l_0_0 = (this_sigattrlog[5]).utf8p2
-    if l_0_0:find(" /Applications/", 1, true) or l_0_0:find(" /tmp/", 1, true) or l_0_0:find(" /private/tmp/", 1, true) or l_0_0:find(" /Users/Shared/", 1, true) then
+    local l_0_3 = (this_sigattrlog[5]).utf8p2
+    if l_0_3:find(" /Applications/", 1, true) or l_0_3:find(" /tmp/", 1, true) or l_0_3:find(" /private/tmp/", 1, true) or l_0_3:find(" /Users/Shared/", 1, true) then
       return mp.INFECTED
     end
   end

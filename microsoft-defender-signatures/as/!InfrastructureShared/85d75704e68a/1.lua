@@ -13,13 +13,15 @@ if not l_0_1 then
 end
 l_0_1 = (string.lower)(l_0_1)
 local l_0_2 = {}
--- DECOMPILER ERROR at PC27: No list found for R2 , SetList fails
+-- DECOMPILER ERROR at PC28: No list found for R2 , SetList fails
 
--- DECOMPILER ERROR at PC28: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC29: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC29: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC30: Overwrote pending register: R4 in 'AssignReg'
 
-if not ("vbkrn.com")("bkxfv.com", l_0_2) then
+-- DECOMPILER ERROR at PC31: Overwrote pending register: R5 in 'AssignReg'
+
+if not ("vbkrn.com")("bkxfv.com", "vbknx.com") then
   return mp.CLEAN
 end
 return mp.INFECTED
