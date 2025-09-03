@@ -456,6 +456,7 @@ extern void TriggerUsageFeatureGroupRevisitationHoldout(
     const base::Feature& feature);
 
 // EdgeMT Holdout Feature Flags and Triggers.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FIRST_RUN_FEATURE(kFeatureGroupEdgeMTHoldout);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEnabledFeatureGroupEdgeMTHoldout(
@@ -469,6 +470,12 @@ extern void TriggerUsageFeatureGroupEdgeMTHoldout(const base::Feature& feature);
 #if BUILDFLAG(IS_WIN)
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FIRST_RUN_FEATURE(kEdgeEqualRefreshedExperience);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+bool IsRefreshedLightningExperienceEnabled(const base::Feature& feature,
+                                           bool trigger_usage_on_check = false);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+void TriggerUsageIfRefreshedLightningExperienceEnabled(
+    const base::Feature& feature);
 #endif  // BUILDFLAG(IS_WIN)
 
 // EdgeENPDyn Holdout Feature Flags and Triggers.

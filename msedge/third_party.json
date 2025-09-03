@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10714904,
+    "size": 10715935,
     "file_count": 167
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14632766,
+    "size": 14632947,
     "file_count": 830
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 32261262,
+    "size": 32262685,
     "file_count": 3948
   },
   {
     "name": "boringssl",
-    "size": 70391,
+    "size": 70730,
     "file_count": 15
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36542631,
+    "size": 36542765,
     "file_count": 95
   },
   {
@@ -256,8 +256,8 @@
   },
   {
     "name": "glslang",
-    "size": 43197622,
-    "file_count": 3187
+    "size": 43202699,
+    "file_count": 3190
   },
   {
     "name": "googletest",
@@ -371,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 6186033,
+    "size": 6186216,
     "file_count": 937
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18837995,
+    "size": 18868715,
     "file_count": 19
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3835914,
+    "size": 3835950,
     "file_count": 579
   },
   {
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6259561,
+    "size": 6270706,
     "file_count": 168
   },
   {
