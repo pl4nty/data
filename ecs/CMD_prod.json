@@ -287,6 +287,7 @@
         "EnableFidalgoGalleryImages": true,
         "EnableFidalgoHandleFPAPermissionError": true,
         "EnableFilterANCRegion": true,
+        "EnableFilterOfDeletedMembership": true,
         "EnableFinalRecommendationByTrendAndUsage": true,
         "EnableFleetTenantFairness": true,
         "EnableFlexWindowsUpdateCOGSV2": true,
