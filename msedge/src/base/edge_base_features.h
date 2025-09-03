@@ -118,6 +118,11 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeAllowDmaOverride);
 // waking instead of calling MsgWaitForMultipleObjectsEx with flags = 0.
 BASE_EXPORT BASE_DECLARE_FEATURE(kMitigateAttachedInputSpinBySleeping);
 
+#if BUILDFLAG(IS_ANDROID)
+// If enabled, reduces thread stack size on Android to save memory
+BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeEnabledSmallerThreadStackSize);
+#endif  // BUILDFLAG(IS_ANDROID)
+
 }  // namespace features
 }  // namespace base
 
