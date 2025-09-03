@@ -3924,6 +3924,9 @@
         "byod": {
             "enableDeviceDiscoveryManager": false
         },
+        "calling": {
+            "aplBackgrounds": []
+        },
         "core": {
             "allowHeapSnapshot": false,
             "backdropWindowEffectEnabled": true,

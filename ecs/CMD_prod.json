@@ -490,6 +490,7 @@
         "EnableResourceMgmtAllotment": true,
         "EnableRestartVmRemediation": true,
         "EnableRetirePreviewVersion": true,
+        "EnableRetrieveCloudPcCountByStatus": true,
         "EnableRetryInUpdateItem": true,
         "EnableReturnCollectionRemoteAction": true,
         "EnableReturnCollectionStatus": true,
