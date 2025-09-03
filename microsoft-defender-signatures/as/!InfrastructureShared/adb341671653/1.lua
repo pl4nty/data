@@ -3,13 +3,22 @@
 
 -- params : ...
 -- function num : 0
-do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= "" and (this_sigattrlog[4]).utf8p2 ~= nil then
-    local l_0_0 = (this_sigattrlog[4]).utf8p2
-    if SuspMacPathsToMonitor(l_0_0, true) or (string.find)(l_0_0, "/Users/[^/]+/Downloads/", 1, false) or (string.find)(l_0_0, "/Users/[^/]+/Documents/", 1, false) or (string.find)(l_0_0, "/Users/[^/]+/Desktop/", 1, false) then
-      return mp.INFECTED
-    end
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= "" and (this_sigattrlog[4]).utf8p2 ~= nil then
+  local l_0_0 = (bm.get_current_process_startup_info)()
+  local l_0_1 = l_0_0.command_line
+  local l_0_2 = (bm.get_imagepath)()
+  if IsExcludedByCmdlineMacOS(l_0_1) or IsExcludedByImagePathMacOS(l_0_2) then
+    return mp.CLEAN
   end
+  if l_0_2:find("ODIS/AdODIS-installer.app/Contents/MacOS", 1, true) or l_0_2:find("Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt", 1, true) or l_0_2:find("GoogleUpdater.app/Contents/MacOS/GoogleUpdater", 1, true) or l_0_2:find("/Applications/Visual Studio Code", 1, true) then
+    return mp.CLEAN
+  end
+  local l_0_3 = (this_sigattrlog[4]).utf8p2
+  if SuspMacPathsToMonitor(l_0_3, true) or (string.find)(l_0_3, "/Users/[^/]+/Downloads/", 1, false) or (string.find)(l_0_3, "/Users/[^/]+/Documents/", 1, false) or (string.find)(l_0_3, "/Users/[^/]+/Desktop/", 1, false) then
+    return mp.INFECTED
+  end
+end
+do
   return mp.CLEAN
 end
 
