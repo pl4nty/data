@@ -597,13 +597,6 @@
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1606381-2-11,P-R-1294203-6-12",
             "mdsc_qoe": "P-R-1606381-2-11,P-R-1294203-6-12"
-        },
-        "SkypeVideoLibrary": {
-            "mdsc_mediadiagnostic": "P-E-1646305-2-4",
-            "mdsc_qoe": "P-E-1646305-2-4",
-            "mdsc_rmconnectionevent": "P-E-1646305-2-4",
-            "skypecosi_concore_native_callsignalingagent_callmodality": "P-E-1646305-2-4",
-            "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1646305-2-4"
         }
     },
     "JennyTest2": {
@@ -3272,9 +3265,6 @@
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
         },
-        "BweRampupOnProbe": {
-            "enableRampup": false
-        },
         "EventPriority": {
             "RMHistogram": 0
         },
@@ -3924,65 +3914,7 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1",
-        "SkipGpuQueryForVM": "1",
-        "ULLogUpload": {
-            "conditions": [
-                {
-                    "component": "LMS.DEVICE_GENERIC",
-                    "level": "DEBUG5",
-                    "logId": 3958808370,
-                    "matchers": [
-                        {
-                            "arg": 0,
-                            "op": "~",
-                            "value": "EV:5"
-                        },
-                        {
-                            "arg": 1,
-                            "op": "~",
-                            "value": "EV:5"
-                        }
-                    ],
-                    "name": "Condition #0"
-                }
-            ],
-            "experimentTarget": "Native",
-            "filters": [
-                {
-                    "component": "LMS.RtmCodecs_MLE_SVC",
-                    "level": "DEBUG6"
-                },
-                {
-                    "component": "LMS.RtmCodecs_GENERIC",
-                    "level": "TRACE"
-                },
-                {
-                    "component": "LMS.RtmCodecs_CAPTURER",
-                    "level": "TRACE"
-                },
-                {
-                    "component": "LMS.RtmCodecs_PLATFORM",
-                    "level": "TRACE"
-                },
-                {
-                    "component": "LMS.RtmCodecs_MJPG",
-                    "level": "TRACE"
-                },
-                {
-                    "component": "LMS.RtmCodecs_VSCA",
-                    "level": "DEBUG6"
-                },
-                {
-                    "component": "LMS.RtmCodecs_PLATFORM",
-                    "level": "TRACE"
-                }
-            ],
-            "mutualSubmissionType": "none",
-            "name": "Snapshot EV5 new 2 #4155421",
-            "reenableAfterTriggering": false,
-            "resetCondition": null
-        }
+        "NrpRefactor265_naluCount": "1"
     },
     "SkypeWebMedia": {
         "mediaAgent": {
