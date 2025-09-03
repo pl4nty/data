@@ -593,23 +593,10 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
-    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
-            "mdsc_call_quality_feedback": "P-R-1294203-6-12",
-            "mdsc_qoe": "P-R-1294203-6-12"
-        },
-        "SkypeResourceManager": {
-            "mdsc_call_quality_feedback": "P-R-1570178-1-8",
-            "mdsc_qoe": "P-R-1570178-1-8",
-            "mdsc_rmconnectionevent": "P-R-1570178-1-8"
-        },
-        "SkypeVideoLibrary": {
-            "mdsc_mediadiagnostic": "P-E-1235534-2-5,P-R-1547090-1-6",
-            "mdsc_qoe": "P-E-1235534-2-5,P-R-1547090-1-6",
-            "mdsc_rmconnectionevent": "P-E-1235534-2-5,P-R-1547090-1-6",
-            "skypecosi_concore_native_callsignalingagent_callmodality": "P-E-1235534-2-5,P-R-1547090-1-6",
-            "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1235534-2-5,P-R-1547090-1-6"
+            "mdsc_call_quality_feedback": "P-R-1606381-2-11,P-R-1294203-6-12",
+            "mdsc_qoe": "P-R-1606381-2-11,P-R-1294203-6-12"
         }
     },
     "JennyTest2": {
@@ -657,12 +644,13 @@
             "hlsSettings": {
                 "hlsConfig": {
                     "liveMaxLatencyDurationCount": 6,
-                    "liveSyncDurationCount": 3
+                    "liveSyncDurationCount": 3,
+                    "renderTextTracksNatively": false
                 },
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
-                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25134.3/hydra_player_hls_bundle.js",
-                        "https://res.cdn.office.net/s01-ml-player/4.25134.3/hydra_player_hls_bundle.js"
+                        "https://res-1.public.onecdn.static.microsoft/s01-ml-player/4.25240.1/hydra_player_hls_bundle.js",
+                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25240.1/hydra_player_hls_bundle.js"
                     ],
                     "useHydraPlayerWebSdk": true
                 },
@@ -680,13 +668,14 @@
                 "ecsSettings": {
                     "allowPlayButton": true,
                     "enableOverlayStats": true,
-                    "logSupportedCodecs": true,
-                    "noMediaStreamSwitchTimeoutMs": 12000,
-                    "noMediaTimeoutMs": 30000,
+                    "enableTrace": false,
+                    "noMediaConsecutiveStreamSwitchMaxCount": 1,
+                    "noMediaStreamSwitchTimeoutMs": 25000,
+                    "noMediaTimeoutMs": 60000,
                     "preferScriptLoaderForPeer5": true,
                     "runtimeLoadPolicy": {
-                        "maxLoadTimeMs": 20000,
-                        "maxTimeToFirstByteMs": 10000
+                        "maxLoadTimeMs": 25000,
+                        "maxTimeToFirstByteMs": 8000
                     },
                     "sendSnapshotTelemetry": true,
                     "sendSnapshotTelemetryEveryMs": 300000,
@@ -705,8 +694,8 @@
                         },
                         "verifyNewJoin": true
                     },
+                    "telemetryReportIntervalMs": 60000,
                     "traceTolerance": 10000,
-                    "updateStatsWithFullReport": true,
                     "useEcdnPlugin": true
                 }
             },
@@ -714,26 +703,34 @@
                 "ecsSettings": {
                     "allowPlayButton": true,
                     "allowSdnPlugins": true,
+                    "debugLogging": true,
                     "enableBandwidthManagementV3": true,
                     "enableOverlayStats": true,
+                    "modifiedInitBw": [
+                        1000000,
+                        2500000,
+                        4800000
+                    ],
                     "monitorVideoFrameRate": true,
                     "runtimeLoadPolicy": {
-                        "maxLoadTimeMs": 20000,
-                        "maxTimeToFirstByteMs": 10000
+                        "maxLoadTimeMs": 25000,
+                        "maxTimeToFirstByteMs": 8000
                     },
                     "sdnOptions": {
                         "name": "peer5",
                         "plugin": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.middlelane-ums.v1.plugin.js",
                         "url": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.js"
                     },
-                    "updateStatsWithFullReport": true
+                    "sendSnapshotTelemetry": true,
+                    "sendSnapshotTelemetryEveryMs": 120000,
+                    "umsEcdnPluginEnabled": true
                 }
             },
             "umsSettings": {
                 "liveStreamPlayerConfiguration": {
                     "hydraPlayerWebSdkUrls": [
-                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25131.1/hydra_player_ums_bundle.js",
-                        "https://res.cdn.office.net/s01-ml-player/4.25131.1/hydra_player_ums_bundle.js"
+                        "https://res-1.public.onecdn.static.microsoft/s01-ml-player/4.25241.1/hydra_player_ums_bundle.js",
+                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.25241.1/hydra_player_ums_bundle.js"
                     ]
                 },
                 "thaScript": "https://sdk.tha.teams.microsoft.com/tha.js"
@@ -1006,6 +1003,7 @@
         "IsGraphApiForSharepointPermissionsEnabled": "*",
         "IsGraphProviderDeleteEnabled": "*",
         "IsIncludeAdditionalSearchFieldsEnabledForTenant": "*",
+        "IsLCACompletionDateUTCConversionEnabledForTenant": "c052c02e-4677-4c23-9c0b-3b345c7c11f8,5b973f99-77df-4beb-b27d-aa0c70b8482c",
         "IsLRSCourseRecordCleanupSchedulerEnabled": false,
         "IsLRSDeletePartitionEnabled": false,
         "IsLRSNewRecordCleanupSchedulerEnabled": true,
@@ -1158,12 +1156,14 @@
         "UserProfileLicenseAboutToExpireTimeInMinutesConfig": "10080",
         "UserProfileLicenseExpirationTimeInMinutesConfig": "10080",
         "UserProfileSeededLicenseExpirationTimeInMinutesConfig": "10080",
+        "areVLReportsForDataExportEnabled": true,
         "enableHeartbeatSyncInLMSPipeline": true,
         "enableLearningItemSFRecomputationTriggerScheduledJob": true,
         "enabledLagroSources": [
             "Skillsoft"
         ],
         "isAcademiesEnabled": false,
+        "isAcademyDraftAndAutoSaveEnabled": true,
         "isAcademyErrorFrameworkEnabled": true,
         "isAdminSettingSearchOptimizationEnabled": true,
         "isAssignmentEnabled": true,
@@ -1189,6 +1189,7 @@
         "isDisableSourcesOnLosingLicenseEnabled": true,
         "isELDLearningPlayerEnabled": true,
         "isEditInLPEnabled": true,
+        "isEditInLPEnabledForDraftAndAutoSave": true,
         "isExecutivePicksEnabled": false,
         "isFatHeaderRemoveEnabled": true,
         "isFeatureContentEnabled": true,
@@ -1224,14 +1225,17 @@
         "isRatingEnabled": true,
         "isRecentViewEnabled": true,
         "isRecommendationLRSMigrationEnabled": true,
+        "isReportingDataExportEnabled": true,
         "isRichDescriptionEnabled": true,
         "isSERPWithSharedHookEnabled": true,
         "isScheduledJobEnabledForAllTenants": true,
         "isScormPlayerEnabled": false,
         "isScormProgressTrackingEnabled": false,
+        "isSearchResultsCountDisabled": false,
         "isServiceLevel": true,
         "isSettingsEnabled": true,
         "isSharePointSearchEnabled": false,
+        "isSharePointSearchV2Enabled": false,
         "isSharepointPermissionsSettingEnabled": true,
         "isSkillsClientReArchEnabled": true,
         "isSortByEnabled": true,
@@ -1332,19 +1336,22 @@
     },
     "MicrosoftTeamVivaPulse": {
         "BatchFormsDeletion": false,
-        "ConcurrentBackgroundJob": false,
+        "ConcurrentBackgroundJob": true,
         "checkUserVivaPulseLicense": true,
+        "copilotDashboardNewUrl": true,
         "disableDeletingFeedbackResponses": true,
-        "eDiscoveryEvents": false,
+        "eDiscoveryEvents": true,
         "eDiscoveryJob": true,
         "enableRedesignedReportHeader": true,
         "enableReportPreviewPulse": true,
         "enableSharingOpenTextResponses": true,
-        "glintIntegrationV1": false,
-        "glintIntegrationV2": false,
+        "glintIntegrationV1": true,
+        "glintIntegrationV2": true,
+        "glintIntegrationV4": true,
         "partnerPulseBuilderV1": true,
         "pulseDeletionV1": true,
         "vfamIntegration": true,
+        "vivaGlintBridge": true,
         "vivaPulse1on1Conversations": true,
         "vivaPulseAggregateMetricsBackend": true,
         "vivaPulseAppContextEnabled": true,
@@ -1352,6 +1359,7 @@
         "vivaPulseAuthorNote": true,
         "vivaPulseAutoRetryUserDSR": true,
         "vivaPulseBackgroundLoadSettings": true,
+        "vivaPulseBigResponseDialog": true,
         "vivaPulseCAE": true,
         "vivaPulseChangeQuestionType": true,
         "vivaPulseCheckVfamCopilotFlag": true,
@@ -1374,8 +1382,13 @@
         "vivaPulseDSRDeleteIfNoLongerRequired": false,
         "vivaPulseDataExportJob": true,
         "vivaPulseDecoupleCustomization": true,
-        "vivaPulseDelegation": false,
+        "vivaPulseDelegation": true,
+        "vivaPulseDelegationRequest": true,
+        "vivaPulseDelegationRequestEmails": true,
+        "vivaPulseDelegationVFAM": true,
         "vivaPulseDisableCustomPrivacyPolicyLink": true,
+        "vivaPulseDisableFormsIntegration": false,
+        "vivaPulseDynamicAudience": true,
         "vivaPulseDynamicDialogs": false,
         "vivaPulseELSFollowup": false,
         "vivaPulseEditOnResend": true,
@@ -1395,11 +1408,15 @@
         "vivaPulseFormsDataMigrationJob": false,
         "vivaPulseGuaranteedReportGeneration": true,
         "vivaPulseGuidedActionShareReport": false,
-        "vivaPulseGuidedSeries": false,
+        "vivaPulseGuidedSeries": true,
         "vivaPulseGuidedSeriesBackend": true,
         "vivaPulseHomepagePagination": true,
+        "vivaPulseInHouseFeedback": true,
+        "vivaPulseInHouseFeedbackAuthoring": true,
+        "vivaPulseInHouseFeedbackReport": true,
         "vivaPulseInlineEmail": true,
         "vivaPulseInlineExtendFeedbackEmail": true,
+        "vivaPulseLazyLoadHomepage": true,
         "vivaPulseLeaderScenario": true,
         "vivaPulseLeaderScenarioV1": true,
         "vivaPulseLearningRecommendation": false,
@@ -1423,6 +1440,7 @@
         "vivaPulsePeoplePickerRenderFluentUi": true,
         "vivaPulseProvideFeedbackDialog": false,
         "vivaPulseProvideFeedbackFollowUpQuestions": false,
+        "vivaPulsePulseSeriesGA": true,
         "vivaPulsePurviewAudit": true,
         "vivaPulsePurviewAuditJob": true,
         "vivaPulseQuestionCardActions": true,
@@ -1430,20 +1448,23 @@
         "vivaPulseQuestionLibraryDedupe": true,
         "vivaPulseRankingQuestion": true,
         "vivaPulseRatingScaleOptions": true,
-        "vivaPulseRedisCache": false,
+        "vivaPulseRedisCache": true,
         "vivaPulseRequestEditorPreview": true,
         "vivaPulseResponseRate": false,
         "vivaPulseRestrictedCustomization": true,
+        "vivaPulseRetryFailedUserEmailNotification": true,
         "vivaPulseRetryGnsSignalsEnabled": true,
         "vivaPulseReturnDefaultTenantSettings": true,
-        "vivaPulseScheduledEnhancedNotification": false,
+        "vivaPulseScheduledEnhancedNotification": true,
         "vivaPulseScheduledPulses": true,
         "vivaPulseScheduledPulsesBackend": true,
         "vivaPulseScheduledSeries": false,
         "vivaPulseSchedulingGraphTimeZoneSupport": false,
         "vivaPulseSearchDeleteCustomQuestion": true,
+        "vivaPulseSeriesContentAdmin": true,
         "vivaPulseShouldCheckPremiumLicense": true,
-        "vivaPulseSinglePagePulseSeries": false,
+        "vivaPulseSinglePagePulseSeries": true,
+        "vivaPulseSkipLogic": true,
         "vivaPulseStageAccess": false,
         "vivaPulseStartFromScratch": false,
         "vivaPulseTeamsChatInlineResponse": true,
@@ -1457,7 +1478,7 @@
         "vivaPulseThrottleNotifications": true,
         "vivaPulseTokenCache": false,
         "vivaPulseTokenExchange": true,
-        "vivaPulseUsePftPopTokenForNotify": false,
+        "vivaPulseUsePftPopTokenForNotify": true,
         "vivaPulseVivaAppBar": true,
         "vivaPulseWebOnlyExp": false,
         "vivaPulseeDiscoveryRetainForms": true
@@ -1484,7 +1505,6 @@
             "CP965"
         ],
         "LandingActivityMultiCallDelayInMillis": 1000,
-        "MeetingExtensibilityAppControlBarEntryEnabled": true,
         "TOU Link": "",
         "TOU Version": 0,
         "WalkieTalkie": {
@@ -1499,7 +1519,6 @@
         },
         "allowDetailedDiskStorageUsageTelemetry": true,
         "androidItalianAccessibilityStatement": true,
-        "appendClaimsToCachedTokenMap": true,
         "autoPruneInterval": 24,
         "backgroundPruneJobInterval": 24,
         "blobOperationsToAggregate": 4,
@@ -1543,6 +1562,7 @@
         "enableAdaptiveCards": true,
         "enableApplyFormattingProcessorV2": true,
         "enableAudioBluetoothFilterHeadsetOnly": true,
+        "enableAudioServiceApiOnBackgroundThread": true,
         "enableBaiduMigration": false,
         "enableBatteryMeasurementsForWarmSessions": true,
         "enableBlobStorageTelemetry": true,
@@ -1573,8 +1593,8 @@
         "enablePreChatNavigationFromBar": true,
         "enablePreChatProfileContextMenu": true,
         "enableSetOrientationOnConfigChange": true,
-        "enableSignOutOnInteractiveAuthCancellation": true,
         "enableSilentRenamingOnFilenameConflict": true,
+        "enableStorylineEntryPointFromDrawer": true,
         "enableTflCloudRecordingConsumption": true,
         "enableUnauthorizedHandlingV2": true,
         "enableUsersCanAdmitFromLobby": true,
@@ -1615,10 +1635,12 @@
         "isClearCalendarEnabled": true,
         "isGuardianHomePageAppEnabled": true,
         "isGuardianTeacherChatEnabled": true,
+        "isMeetingsBatteryTelemetryEnabled": true,
         "isParentsAppEnabled": true,
         "isParentsContactCardEnabled": true,
         "isParentsEmailClickEnabled": true,
         "isParentsPhoneClickEnabled": true,
+        "isReactionsEnabledForNGCService": true,
         "l2ShowCachedMessagesEnabled": true,
         "limit_messages_sync_recent_chats": true,
         "logsTeamsMemoryData": true,
@@ -1645,9 +1667,6 @@
         "meetingTenantGetHelpUrl": {
             "73588a2a-d95b-4846-8dc4-5c6bbdfc3a72": "https://go.microsoft.com/fwlink/?linkid=2149542&clcid=0x409",
             "d638243e-4b96-4b21-bd42-ee430faadbfe": "https://go.microsoft.com/fwlink/?linkid=2149542&clcid=0x409"
-        },
-        "meetings": {
-            "enableCopilotExtensibility": true
         },
         "messageStaleThresholdInHours": 24,
         "minDBSizeToTriggerForcePruneInMBs": 50,
@@ -1700,6 +1719,7 @@
         "platform": {
             "adaptiveCardVimeoDailyMotionMediaEnabled": true,
             "adaptiveCardYoutubeMediaEnabled": true,
+            "appIdInSAMentionEnabled": true,
             "appTraySortingTelemetrySyncDuration": 86400000,
             "authenticationBlockHonourTimeInMinutesForAdaptiveCardsV2": 360,
             "botCitationAdaptiveCardEnabled": true,
@@ -2097,6 +2117,7 @@
         "isPerfMetricEnabledInDevSettings": true,
         "isPreInitializeCardsData": true,
         "isPrivacyGuardDevModeEnabled": true,
+        "isPrivacyStatementEnabled": true,
         "isQVDarkModeEnabled": true,
         "isQVGetSizeFixEnabled": true,
         "isQVModalOverModalEnabled": true,
@@ -2140,6 +2161,7 @@
         "isThirdPartyCookiesEnabledForBridge": true,
         "isURLLoggingEnabled": true,
         "isURLLoggingEnabledForPageInformation": true,
+        "isUnreadFeedEnabled": true,
         "isUrlDecodingEnabledInLinkManager": true,
         "isVCMCookieInvalidateEnabledOn401": true,
         "isVCMEnabledForLargeScreen": true,
@@ -2665,6 +2687,10 @@
                 "https://devspaces.skype.com"
             ]
         },
+        "PSTN": {
+            "AssetsVersion": "8.200.0.1122",
+            "IsMurphyProtected": "false"
+        },
         "PhoneNumberAuthConfiguration": {
             "AllowListedNumberHashes": [
                 "54A63417F5DA6CE596B54B69212DB03959704CCF3E00AC831EDBF9367F34CDC9710AA00BBD2477306AA2141B9084FFBE",
@@ -2793,10 +2819,6 @@
         "BVTrunkConfigOverridesOutbound": {
             "ExtensionParameters": {}
         },
-        "ConsumerCaptchaIvrBot": {
-            "Enabled": "true",
-            "Enforced": "false"
-        },
         "ConsumerTrunkConfigOverridesInbound": {
             "ExtensionParameters": {
                 "DisableForkingNotification": "true",
@@ -2808,14 +2830,6 @@
             "ExtensionParameters": {
                 "DisableSessionTimer": "true"
             }
-        },
-        "MfaTrunkConfigOverridesOutbound": {
-            "ExcludedCodecs": "SILK_16, G722_2, G722, SIREN, SILK_8, G729, CN_16, RED_8,CN_8",
-            "ExtensionParameters": {
-                "DisableSessionTimer": "true",
-                "EnableUpdate": "true"
-            },
-            "PreferredCodecOrder": "PCMU, PCMA"
         },
         "TrunkConfigOverridesInbound": {
             "CallConnectionIndication": "Fake180",
@@ -3138,6 +3152,7 @@
         "ECS_ADSP_AH_Disable_PerFrame_CN_Flag": "1",
         "ECS_ADSP_AH_NWQClassifier_JitterMsThreshold": "500",
         "ECS_ADSP_AH_NWQClassifier_LossPercentThreshold": "20",
+        "ECS_ADSP_AudioMosWarmupInterval": 20,
         "ECS_ADSP_EnableG729": "1",
         "ECS_ADSP_JB_Delay_Margin_Ms": "60",
         "ECS_ADSP_JB_ForceTransportMode": "1",
@@ -3189,52 +3204,6 @@
         "nativeAdmitRejectionAsTransactionEnd": true,
         "p2pForkDelayInMs": -1,
         "webAdmitRejectionAsTransactionEnd": true
-    },
-    "SkypeEngagement": {
-        "experiments": {
-            "announcement-pstn-mailing": "skypeannouncement-pstn-mailing-varianta",
-            "bing-bot-toolbox-engagement-campaign": "bing-bot-toolbox-engagement-campaign-varianta",
-            "campaign-intercept-meetnow": "campaign-intercept-meetnow-varianta",
-            "campaignnotifymyfriendspush": "notifymyfriends-public-originname",
-            "cmrc-orderdeliverycredit": "cmrc-orderdeliverycredit-notice-callspanel",
-            "cmrc-use-your-credit": "use-your-credit-remaining",
-            "first-cmrc-use-your-credit": "use-your-credit-didyouknow",
-            "firststrike": "firststrike-varianta",
-            "fraud_notification-partial_block": "fraud-partial-block-generic",
-            "gdpr-export-failure": "gdpr-export-failure-a",
-            "gdpr-export-success": "gdpr-export-success-a",
-            "highlightsdeprecation": "highlightsdeprecation-informational",
-            "india-spam-prevention-campaign": "india-spam-prevention-campaign-varianta",
-            "messagingthunder-second-botcampaign": "messagingthunder-second-botcampaign-varianta",
-            "messagingthunderbotcampaign": "messagingthunderbotcampaign-messagerepliesui",
-            "migration-main-bot-message-faq": "migration-main-bot-message-faq-varianta",
-            "missedcallreminderemailpublic": "missedcallreminderemailpublic-newfooteraugust2019",
-            "missedchatreminderemailpublic": "missedchatreminderemailpublic-newfooteraugust2019",
-            "nps-mobile": "nps-mobile-c",
-            "nps-uwp-rn": "nps-uwprn-a",
-            "nps-web": "skypenpsweb-varianta",
-            "oldfriendback-test": "oldfriendbacke2etest-varianta",
-            "pstn-deprecation-bot-skype-consumer-final": "pstn-deprecation-bot-skype-consumer-final-varianta",
-            "pstn-deprecation-mailing-skype-consumer": "pstn-deprecation-mailing-skype-consumer-varianta",
-            "pstn-deprecation-mailing-skype-consumer-final": "pstn-deprecation-mailing-skype-consumer-final-varianta",
-            "publicmissedchatreminder": "publicmissedchatreminder-speechbubble",
-            "secondstrike": "secondstrike-varianta",
-            "silent-push-notif": "silent-push-notif-varianta",
-            "skype-bot-engagement-channels": "skype-bot-engagement-channels-varianta",
-            "skype-ind-gov-warning-message": "skype-ind-gov-warning-message-varianta",
-            "skype-migration-final-dark-users": "skype-migration-final-dark-users-varianta",
-            "skypeannouncement-generic-mailing": "skypeannouncement-generic-mailing-varianta",
-            "skypeannouncement-pstn-mailing": "skypeannouncement-pstn-mailing-varianta",
-            "skypecallingsurvey2024": "skypecallingsurvey2024-notice",
-            "social-signal-pushnotif": "social-signal-pushnotif-varianta",
-            "survey20240528": "user_survey1-survey_camp1",
-            "test-chatbot-image-sending": "test-chatbotimagesending-varianta",
-            "ukraine-donation-free-calls-sunset-campaign": "ukraine-donation-free-calls-sunset-campaign-varianta",
-            "welcomeemail": "welcomeemail-variantd"
-        }
-    },
-    "SkypeFeedbackAndSupport": {
-        "showChatWithAgentButton": false
     },
     "SkypeM2": {
         "SamplingRates": {
@@ -3295,6 +3264,9 @@
         },
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
+        },
+        "BweRampupOnProbe": {
+            "enableRampup": false
         },
         "EventPriority": {
             "RMHistogram": 0
@@ -3450,6 +3422,7 @@
                 "+48"
             ]
         },
+        "disableChatNewCellAnimationsRemoval": true,
         "dogfood": {
             "dogfoodToastResetDayCount": 1,
             "enableDogfoodToast": true
@@ -3523,10 +3496,10 @@
             "videoUploadsEncodingBitrate": 1200
         },
         "meeting": {
-            "enableTownhallAppsForPresenter": false
+            "enableTHAppsForAttendee": true,
+            "enableTownhallAppsForPresenter": true
         },
         "meetings": {
-            "enableCopilotExtensibility": true,
             "isTogetherModePinEnabled": true,
             "meetingDescriptionFontSizeParsingEnabled": true
         },
@@ -3697,11 +3670,13 @@
                 "74fef386-4a06-42ef-a68e-7c6f72bfcffd",
                 "4a6520d6-94a8-4730-9184-24997b9b3401",
                 "1f8c20f5-d70f-4f8e-93e1-31d8fce0c8c9",
-                "43a6e7fb-bd10-4c0a-b02e-6a9c86ba272a"
+                "43a6e7fb-bd10-4c0a-b02e-6a9c86ba272a",
+                "592fa50f-40f2-46f4-a969-a6c75a9a32bb",
+                "8c460194-2edf-4717-a5cc-be51ae478720"
             ],
             "collabCloudEndpointUrl": "https://teams.microsoft.com/api/platform",
-            "cutOffDateForConsideringOlderTabsInLWGChannels": "2025-06-30T00:00:00Z",
-            "cutOffDateForConsideringOlderTabsInPrivateLWGChannels": "2025-06-30T00:00:00Z",
+            "cutOffDateForConsideringOlderTabsInLWGChannels": "2025-08-05T00:00:00Z",
+            "cutOffDateForConsideringOlderTabsInPrivateLWGChannels": "2025-08-05T00:00:00Z",
             "deepLinkExceptionApps": [
                 "0d820ecd-def2-4297-adad-78056cde7c78"
             ],
@@ -3946,7 +3921,6 @@
     },
     "SkypeWebMedia": {
         "mediaAgent": {
-            "webrtcPranswerWaitForMediaPollingInterval": null,
             "webrtcStatStoredRecordsNumber": 180
         }
     },

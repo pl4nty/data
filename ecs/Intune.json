@@ -6,9 +6,32 @@
         "evanve_convertToDefault_1": true,
         "evanve_defaultTobeOverriden_enabled": false
     },
+    "CLI_IntuneEpmAgent": {
+        "FlightingV2": {
+            "6b09a055-eedb-430d-b478-7f911b8701c6": true,
+            "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true
+        }
+    },
+    "CLI_MHS": {
+        "EmailRegex_BugFix": true,
+        "MAABluetooth_FeatureEnabled": true,
+        "MAAGetHelp_FeatureEnabled": true,
+        "MAASessionPin_FeatureEnabled": false,
+        "MAASettings_FeatureEnabled": true,
+        "NativeWallpaperUtils_FeatureEnabled": false,
+        "OfflineMode_FeatureEnabled": true,
+        "QrPinSignIn_FeatureEnabled": true,
+        "RingtoneSelector_FeatureEnabled": true,
+        "StopLockTaskOnResume_BugFix": true,
+        "VirtualHomeString_BugFix": true
+    },
     "CLI_SideCar": {
         "APv2UseStandardUserProviderNative": {
-            "FlightExpiry": "2025-08-28T00:00:00.0402432Z",
+            "FlightExpiry": "2026-06-20T00:00:00.0402432Z",
+            "FlightValue": true
+        },
+        "FileStreamForDetectionScripts": {
+            "FlightExpiry": "2025-05-01T00:00:01.000Z",
             "FlightValue": true
         },
         "RemediationSendResultFirst": {
@@ -17,6 +40,10 @@
         },
         "SetIMELogACL": {
             "FlightExpiry": "2026-03-04T00:00:01.000Z",
+            "FlightValue": true
+        },
+        "wingetAppTimeoutHandlerEnabled": {
+            "FlightExpiry": "2025-06-30T23:59:00Z",
             "FlightValue": true
         }
     },
@@ -33,17 +60,23 @@
                 "Infra_Fundamentals",
                 "Infra_LogManager",
                 "INFRA_MessageBus",
+                "INFRA_Fundamentals2",
+                "INFRA_Auth",
+                "INFRA_Storage",
+                "INFRA_Architecture",
                 "PAA_IntuneDataPlatform",
                 "PAA_XSU",
                 "Segmentation",
                 "SVC_AdHocQuery",
                 "SVC_AdminApproval",
+                "SVC_AdminTasks",
                 "SVC_AMPAASSupport",
                 "SVC_AndroidSpecialized",
                 "SVC_AndroidSync",
                 "SVC_AppleMDM",
                 "SVC_AppleVPP",
                 "SVC_AppLifecycle",
+                "SVC_Auditing",
                 "SVC_CertAuthority",
                 "SVC_CertificateAuthority",
                 "SVC_ChromebookSync",
@@ -52,6 +85,8 @@
                 "SVC_ContentService",
                 "SVC_CorpDeviceEnrollment",
                 "SVC_DataInfra",
+                "SVC_DataPlatformMetadata",
+                "SVC_DataWarehouse",
                 "SVC_DefenderServices",
                 "SVC_Dep",
                 "SVC_DeviceCheckin",
@@ -66,6 +101,7 @@
                 "SVC_DeviceQuery",
                 "SVC_DFCI",
                 "SVC_DiagnosticService",
+                "SVC_Edu",
                 "SVC_EmbeddedSIM",
                 "SVC_GnT",
                 "SVC_GPAnalytics",
@@ -81,9 +117,11 @@
                 "SVC_MessageBus",
                 "SVC_MMPCSync",
                 "SVC_MobileAccess",
+                "SVC_MobileAccessContainer",
                 "SVC_Monolith_Compliance",
                 "SVC_Monolith_Enrollment",
                 "SVC_Monolith_MAM",
+                "SVC_MultiAdminApproval",
                 "SVC_OAuth",
                 "SVC_OSProvisioning",
                 "SVC_PartnerAPI",
@@ -104,14 +142,22 @@
                 "SVC_TrafficGateway",
                 "SVC_Updates",
                 "SVC_WIPReportServices",
+                "UX_AdminTasks",
                 "UX_AndroidEnterprise",
                 "UX_AppLifecycle",
                 "UX_Compliance",
+                "UX_Core",
                 "UX_DeviceConfig",
+                "UX_DeviceUsers",
                 "UX_EPM",
+                "UX_GnT",
                 "UX_MAM",
+                "UX_MultiAdminApproval",
                 "UX_Pivot",
-                "UX_TenantSetup"
+                "UX_RemoteAssist",
+                "UX_TenantSetup",
+                "UX_TestProjectTeam",
+                "UX_Workflow"
             ],
             "StrongConsistencyFlights": {
                 "Fundamentals": [
@@ -127,27 +173,68 @@
     },
     "SVC_AndroidSync": {
         "FlightingV2": {
+            "EnableAndroidDeviceGatewayServiceForByodWp": true,
+            "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
+            "EnableAppRemovalAsExplicitUninstall": true,
             "EnableBteOnboarding": true,
             "EnableCredentialProviderForAuthenticator": true,
+            "EnableDeviceInventory": true,
             "EnableDeviceNameTemplate": true,
+            "EnablePrsv3ForAosp": true,
             "EnableWpDeviceTypeUpdate": true
+        }
+    },
+    "SVC_AppLifecycle": {
+        "FlightingV2": {
+            "AESCustomCC": true
         }
     },
     "SVC_AppleMDM": {
         "FlightingV2": {
+            "DeviceInventoryReporting": true,
             "EnforceEdgeManifestSignatureValidation": true,
             "ValidateEdgeManifestSignatures": true
         }
     },
+    "SVC_AppleVPP": {
+        "FlightingV2": {
+            "AppleVPPv2": true
+        }
+    },
+    "SVC_Compliance": {
+        "FlightingV2": {
+            "NoFallback_AADSTS500022": true,
+            "NoFallback_AADSTS5000224": true,
+            "NoFallback_AADSTS5000225": true,
+            "NoFallback_AADSTS90002": true,
+            "NoFallback_Authentication_Unauthorized": true,
+            "NoFallback_Authorization_IdentityNotFound": true,
+            "NoFallback_ComplianceFPADisabled": true,
+            "NoFallback_Directory_ResourceSizeExceeded": true,
+            "NoFallback_MSGraphGetUserAsync": true,
+            "NoFallback_OnAllException": true
+        }
+    },
     "SVC_CorpDeviceEnrollment": {
         "FlightingV2": {
-            "EnableAPSyncRequestMessage": true
+            "EnableAPSyncRequestMessage": true,
+            "EnableAcmeIncomingRequestValidation": true,
+            "EnableGenerateAcmeNewNonce": true,
+            "EnableNoAcmeChallengeAsQueryParameter": true,
+            "EnableSendAcmeChallengeAsIdentifier": true,
+            "EnableSendNonceinResponseV2": true,
+            "EnableVerifyAcmeChallengeFromIdentifier": true
         }
     },
     "SVC_DataInfra": {
         "FlightingV2": {
-            "QBSFSICoreMigrationDuplicateBatch2": true,
-            "QBSFSICoreMigrationSwitchOverBatch1": true
+            "HardwareConfigLogging": true,
+            "QBSFSICoreMigrationSwitchOverBatch3": true
+        }
+    },
+    "SVC_DataPlatformMetadata": {
+        "FlightingV2": {
+            "EnableSchemaRetrievalFromNuGetPkg": true
         }
     },
     "SVC_Dep": {
@@ -156,12 +243,16 @@
             "APv2EnableMinimumGetMdmProvisioningStatusesCalls": true,
             "APv2EnablePublishResultsResiliencyBehavior": true,
             "DJPPGroupsV2Enabled": true,
+            "EnableRemoveDuplicateAccountIdInCompanyPortalPolicyTask": true,
+            "EnableSearchECAWithoutDQCache": true,
             "S2SAntiPattern": true
         }
     },
     "SVC_DeviceCheckin": {
         "FlightingV2": {
+            "EnableAdditionalFilteringForCSPAppStoreNode": true,
             "EnableBlockAppleRenewalForBlockedUser": true,
+            "EnableSendingAttestStatusToReporting": true,
             "MMPCDeviceRecoveryHotfixRollout": true
         }
     },
@@ -169,7 +260,18 @@
         "FlightingV2": {
             "EnablePowerliftLogSearchByUserId": true,
             "EnableTokenAuthForCMDeviceActions": true,
-            "ParseManagedDeviceParallely": true
+            "ParseManagedDeviceParallely": true,
+            "UDA_AADToMSGraphMigration": true
+        }
+    },
+    "SVC_DiagnosticService": {
+        "FlightingV2": {
+            "EnableRawKustoQuerySupport": false
+        }
+    },
+    "SVC_Edu": {
+        "FlightingV2": {
+            "DisableCartToClassAssociations": true
         }
     },
     "SVC_IWService": {
@@ -178,19 +280,43 @@
             "DisableLegacyAadIdPatchForMac": true,
             "DisableLegacyAppTargeting": true,
             "EnableEnhancedWPJSecurityForIOS": true,
-            "EnableEnhancedWPJSecurityForMac": true
+            "EnableEnhancedWPJSecurityForMac": true,
+            "EnableWebCPIOSDefenderIntegration": true
+        }
+    },
+    "SVC_Monolith_Enrollment": {
+        "FlightingV2": {
+            "EnrollDeviceActionAP": true,
+            "EnrollDeviceActionNonAP": true,
+            "RecoveryUserId": true
         }
     },
     "SVC_Monolith_MAM": {
         "FlightingV2": {
             "DisableMonotonicClock": true,
+            "EnableAISettings": true,
+            "EnableNewMAMFPACheckinFlow": true,
             "MAMReportingV2_FastStream": true,
-            "RequireDeviceAADJ": true
+            "RequireDeviceAADJ": true,
+            "UseFireAndForgetFlight": true,
+            "UseMamConditionalAccessFirstPartyApplication": true,
+            "UseMamConditionalAccessFirstPartyApplicationDisableFallback": true
         }
     },
     "SVC_Pivot": {
         "FlightingV2": {
             "EnableMultiDevicePivotGACalls": true
+        }
+    },
+    "SVC_PolicyReportStorage": {
+        "FlightingV2": {
+            "PRSv3-Phase1": true,
+            "PRSv3-Phase2": true
+        }
+    },
+    "SVC_RACerts": {
+        "FlightingV2": {
+            "DigiCert_SMIME": true
         }
     },
     "SVC_RAODJPlus": {
@@ -206,11 +332,16 @@
     },
     "SVC_RemoteAssist": {
         "FlightingV2": {
-            "EnableDedupe": true
+            "EnableDedupe": true,
+            "ManagedInstallerTargeting": true,
+            "RedirectActionFlow": true
         }
     },
     "SVC_SideCar": {
         "FlightingV2": {
+            "EnableRemoteHelpCertExpiry": true,
+            "SetEmsPolicyEncryptedScript": true,
+            "UninstallAgentOnZombieMacs": true,
             "isSqlAggAadAuthEnabled": true
         }
     },
@@ -222,6 +353,38 @@
         "customer_script_timeout": 3600,
         "internal_script_timeout": 3600,
         "use_custom_data_store": false
+    },
+    "UX_Core": {
+        "FlightingV2": {
+            "HideCartToClass": true
+        }
+    },
+    "UX_EPM": {
+        "FlightingV2": {
+            "6b09a055-eedb-430d-b478-7f911b8701c6": true,
+            "df619680-9e16-4fbc-b271-c85db192b36e": true,
+            "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true
+        }
+    },
+    "UX_Pivot": {
+        "FlightingV2": {
+            "EnableIRGFilterSearchSort": true,
+            "EnableMDQErrorSplitting": true,
+            "EnableMDQExportToCSV": true
+        }
+    },
+    "UX_RemoteAssist": {
+        "FlightingV2": {
+            "ManagedInstallerTargetingUX": true
+        }
+    },
+    "UX_TenantSetup": {
+        "FlightingV2": {
+            "AllowOOBEUpdatesUX": true,
+            "EnableWin32CatalogAppsForDpp": true,
+            "EnableWin32CatalogAppsForEsp": true,
+            "EnableWindowsRestore": true
+        }
     },
     "ios_mam_tunnel_sdk": {
         "loginServiceUrlBypassEnabled": true,
