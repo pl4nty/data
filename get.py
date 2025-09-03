@@ -73,8 +73,8 @@ if __name__ == "__main__":
         # Experimentation and Configuration Service
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/Edge/131.0.2903.112?osname=win&client=edge&channel=stable&osarch=x86_64&devicefamily=desktop&uma=0&sessionid=152&mngd=0&installdate=1694958418&edu=0&bphint=2&fg=1", "ecs/Edge.json")
-        # fetch_and_prettify_json(
-        #     "https://ecs.office.com/config/v1/Intune/1.0.0.0", "ecs/Intune.json")
+        fetch_and_prettify_json(
+            "https://ecs.office.com/config/v1/Intune/1.0.0.0", "ecs/Intune.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/CMD/1.0.0.0?Environment=SH&tenantId=77274a75-f318-4f60-b319-57d7e3012825", "ecs/CMD_sh.json")
         fetch_and_prettify_json(
@@ -85,8 +85,8 @@ if __name__ == "__main__":
             "https://ecs.office.com/config/v1/OneShell/1.0.0.0?IsConsumer=false&UserId=3387110e-a323-4cf4-8925-055e2d149b43", "ecs/OneShell.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/LokiService/1.0.0.0?ClientWorkload=M365AdminCenter&id=3387110e-a323-4cf4-8925-055e2d149b43&TenantID=77274a75-f318-4f60-b319-57d7e3012825&ring=Prod&ApEnvironment=Prod", "ecs/LokiService.json")
-        # fetch_and_prettify_json(
-        #     "https://ecs.office.com/config/v1/Skype/1.0.0.0?AudienceGroup=ring0&Debug=false&TenantID=77274a75-f318-4f60-b319-57d7e3012825&Environment=prod", "ecs/Skype.json")
+        fetch_and_prettify_json(
+            "https://ecs.office.com/config/v1/Skype/1.0.0.0?AudienceGroup=ring0&Debug=false&TenantID=77274a75-f318-4f60-b319-57d7e3012825&Environment=prod", "ecs/Skype.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/MicrosoftTeams/1.0.0.0?TenantID=77274a75-f318-4f60-b319-57d7e3012825", "ecs/MicrosoftTeams.json")
         fetch_and_prettify_json(
@@ -101,10 +101,10 @@ if __name__ == "__main__":
             "https://ecs.office.com/config/v1/PortalsMakerExperiences/1.0.0.0", "ecs/PortalsMakerExperiences.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/RemoteAssist/1.0", "ecs/RemoteAssist.json")
-        # fetch_and_prettify_json(
-        #     "https://ecs.office.com/config/v1/SCOM/1.0.0.0", "ecs/SCOM.json")
-        # fetch_and_prettify_json(
-        #     "https://ecs.office.com/config/v1/SkypeLyncWebExperience/1.0.0.0", "ecs/SkypeLyncWebExperience.json")
+        fetch_and_prettify_json(
+            "https://ecs.office.com/config/v1/SCOM/1.0.0.0", "ecs/SCOM.json")
+        fetch_and_prettify_json(
+            "https://ecs.office.com/config/v1/SkypeLyncWebExperience/1.0.0.0", "ecs/SkypeLyncWebExperience.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/SkypeElectronWrapper/1.0.0.0", "ecs/SkypeElectronWrapper.json")
         fetch_and_prettify_json(
@@ -124,11 +124,11 @@ if __name__ == "__main__":
             "https://login.windows-ppe.net/common/.well-known/openid-configuration", "microsoft_oidc_config_ppe.json")
 
         # JWKS keys now rotate every 12 hours
-        # fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json", "keys")
-        # fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
-        # fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json", "keys")
-        # fetch_and_prettify_json(
-        #     "https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json", "keys")
+        fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json", "keys")
+        fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
+        fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json", "keys")
+        fetch_and_prettify_json(
+            "https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json", "keys")
 
         fetch_and_prettify_json(
             "https://www.microsoft.com/releasecommunications/api/v1/m365", "microsoft_365_roadmap.json")
@@ -174,3 +174,4 @@ if __name__ == "__main__":
         url = sys.argv[1]
         output_file = sys.argv[2]
         fetch_and_prettify_json(url, output_file)
+
