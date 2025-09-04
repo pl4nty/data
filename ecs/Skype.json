@@ -597,6 +597,13 @@
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1606381-2-11,P-R-1294203-6-12",
             "mdsc_qoe": "P-R-1606381-2-11,P-R-1294203-6-12"
+        },
+        "SkypeVideoLibrary": {
+            "mdsc_mediadiagnostic": "P-E-1646305-2-4",
+            "mdsc_qoe": "P-E-1646305-2-4",
+            "mdsc_rmconnectionevent": "P-E-1646305-2-4",
+            "skypecosi_concore_native_callsignalingagent_callmodality": "P-E-1646305-2-4",
+            "skypecosi_concore_native_callsignalingagent_conversation": "P-E-1646305-2-4"
         }
     },
     "JennyTest2": {
@@ -1538,6 +1545,7 @@
         "chatSlideinAnimationEnabled": true,
         "checkEDOnlyPolicyOnTenant": true,
         "communitiesBadgeCountIncludeReplies": false,
+        "consumerAuthAADV2": false,
         "consumerRegionGmtsEnv": "prod",
         "conversationCacheEnabled": "true",
         "conversationCacheSize": 100,
@@ -3265,6 +3273,9 @@
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
         },
+        "BweRampupOnProbe": {
+            "enableRampup": false
+        },
         "EventPriority": {
             "RMHistogram": 0
         },
@@ -3914,7 +3925,8 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1"
+        "NrpRefactor265_naluCount": "1",
+        "SkipGpuQueryForVM": "1"
     },
     "SkypeWebMedia": {
         "mediaAgent": {
