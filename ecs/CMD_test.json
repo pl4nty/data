@@ -853,6 +853,7 @@
         "EnableSendUserToDdsFastStream": true,
         "EnableSendUsersMessageInNonEudbMoveFlow": true,
         "EnableServicePlanSkuRemoteConfigV2andFamilyDefinition": true,
+        "EnableSessionStartDateTime": "true",
         "EnableSetFLSDefaultCloudPC": true,
         "EnableSetPendingUserUsageWhileTargeting": true,
         "EnableSettingSvcForSelfProvision": true,

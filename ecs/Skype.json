@@ -593,6 +593,7 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
+    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1606381-2-11",
@@ -3269,6 +3270,9 @@
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
         },
+        "BweRampupOnProbe": {
+            "enableRampup": false
+        },
         "EventPriority": {
             "RMHistogram": 0
         },
@@ -3919,23 +3923,17 @@
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
         "NrpRefactor265_naluCount": "1",
-        "SkipGpuQueryForVM": "1",
         "ULLogUpload": {
             "conditions": [
                 {
                     "component": "LMS.DEVICE_GENERIC",
                     "level": "DEBUG1",
-                    "logId": 3958808370,
+                    "logId": 3676265866,
                     "matchers": [
                         {
                             "arg": 0,
-                            "op": "~",
-                            "value": "EV:5"
-                        },
-                        {
-                            "arg": 1,
-                            "op": "~",
-                            "value": "EV:5"
+                            "op": "=",
+                            "value": "1"
                         }
                     ],
                     "name": "Condition #0"
@@ -3970,10 +3968,26 @@
                 {
                     "component": "LMS.RtmCodecs_PLATFORM",
                     "level": "TRACE"
+                },
+                {
+                    "component": "LMS.PIPELINE_HEARTBEAT",
+                    "level": "DEBUG1"
+                },
+                {
+                    "component": "LMS.NETWORKDEVICE_GENERIC",
+                    "level": "DEBUG1"
+                },
+                {
+                    "component": "LMS.DEVICE_GENERIC",
+                    "level": "DEBUG5"
+                },
+                {
+                    "component": "LMS.MEDIAMGR_API",
+                    "level": "DEBUG1"
                 }
             ],
             "mutualSubmissionType": "none",
-            "name": "Snapshot EV5 new #4155421",
+            "name": "Snapshot EV1 check sessionqoe updated log 4 #4155421",
             "reenableAfterTriggering": false,
             "resetCondition": null
         }
