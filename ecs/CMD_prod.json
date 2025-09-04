@@ -197,6 +197,7 @@
         "EnableCheckVmReadinessForUnregistration": true,
         "EnableCleanUpOnceProvisionFailed": true,
         "EnableCleanupPITAfterRecover": true,
+        "EnableCloudAppCache": true,
         "EnableCloudDevicePlatformSupportedRegions": true,
         "EnableCloudPCBulkPowerOnOffAction": true,
         "EnableCloudPCDeviceFrontlineReporting": true,
