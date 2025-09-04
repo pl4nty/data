@@ -1653,6 +1653,7 @@
         },
         "maxBaiduMigrationSkippableDays": 30,
         "maxOldBaiduUninstallReminderCount": 4,
+        "max_jitter_delay": 10000,
         "media": {
             "closedCaptionsEnabled": true,
             "enableFullComposeCameraInTfw": true,
@@ -1663,6 +1664,7 @@
             "videoMessageMaxDurationLimit": 60
         },
         "meeting": {
+            "disableTownhallAppsForPresenter": true,
             "isDialInOnlyMeetingJoinFix": true
         },
         "meetingTenantGetHelpUrl": {
@@ -3267,9 +3269,6 @@
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
         },
-        "BweRampupOnProbe": {
-            "enableRampup": false
-        },
         "EventPriority": {
             "RMHistogram": 0
         },
@@ -3920,6 +3919,7 @@
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
         "NrpRefactor265_naluCount": "1",
+        "SkipGpuQueryForVM": "1",
         "ULLogUpload": {
             "conditions": [
                 {

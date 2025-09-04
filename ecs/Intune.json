@@ -252,6 +252,7 @@
     "SVC_DeviceCheckin": {
         "FlightingV2": {
             "EnableAdditionalFilteringForCSPAppStoreNode": true,
+            "EnableAllowOOBEUpdates": true,
             "EnableBlockAppleRenewalForBlockedUser": true,
             "EnableSendingAttestStatusToReporting": true,
             "MMPCDeviceRecoveryHotfixRollout": true
@@ -382,6 +383,7 @@
     "UX_TenantSetup": {
         "FlightingV2": {
             "AllowOOBEUpdatesUX": true,
+            "EnableAllowOOBEUpdatesUX": true,
             "EnableWin32CatalogAppsForDpp": true,
             "EnableWin32CatalogAppsForEsp": true,
             "EnableWindowsRestore": true

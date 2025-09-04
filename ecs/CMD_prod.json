@@ -444,6 +444,7 @@
         "EnablePostProvisioningFallbackForEnterprise": true,
         "EnablePostProvisioningFallbackForPartner": true,
         "EnablePostProvisioningPluginForBusiness": true,
+        "EnablePostProvisioningPluginForEnterprise": true,
         "EnablePowerStatusCheck": true,
         "EnablePreCheckIfTrustCertPublisher": true,
         "EnablePreCheckIfTrustCertPublisherForRDAgent": true,
