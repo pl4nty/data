@@ -200,6 +200,11 @@
                             "toc_title": "activate, activation"
                         },
                         {
+                            "href": "a_z_names_terms/a/active-directory",
+                            "permissioned-type": "private",
+                            "toc_title": "Active Directory"
+                        },
+                        {
                             "href": "a_z_names_terms/a/active-directory-federation-services",
                             "permissioned-type": "private",
                             "toc_title": "Active Directory Federation Services"
@@ -3705,6 +3710,11 @@
                             "toc_title": "Entra"
                         },
                         {
+                            "href": "a_z_names_terms/e/entra-registered-ai-apps",
+                            "permissioned-type": "private",
+                            "toc_title": "Entra-registered AI apps"
+                        },
+                        {
                             "href": "a_z_names_terms/e/environment",
                             "permissioned-type": "private",
                             "toc_title": "environment"
@@ -3733,6 +3743,16 @@
                             "href": "a_z_names_terms/e/event-hubs",
                             "permissioned-type": "private",
                             "toc_title": "Event Hubs"
+                        },
+                        {
+                            "href": "a_z_names_terms/e/eventhouse",
+                            "permissioned-type": "private",
+                            "toc_title": "eventhouse"
+                        },
+                        {
+                            "href": "a_z_names_terms/e/eventstream",
+                            "permissioned-type": "private",
+                            "toc_title": "eventstream"
                         },
                         {
                             "href": "a_z_names_terms/e/ex-employee-experience",
@@ -4003,6 +4023,11 @@
                             "href": "a_z_names_terms/f/flatcar-container-linux-for-aks",
                             "permissioned-type": "private",
                             "toc_title": "Flatcar Container Linux for Azure Kubernetes Service"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/fleetspace",
+                            "permissioned-type": "private",
+                            "toc_title": "fleetspace"
                         },
                         {
                             "href": "a_z_names_terms/f/flipgrid",
@@ -4665,6 +4690,11 @@
                             "toc_title": "label"
                         },
                         {
+                            "href": "a_z_names_terms/l/lakehouse",
+                            "permissioned-type": "private",
+                            "toc_title": "lakehouse"
+                        },
+                        {
                             "href": "a_z_names_terms/l/language-model-large-language-model-llm",
                             "permissioned-type": "private",
                             "toc_title": "language model, large language model, LLM"
@@ -4753,6 +4783,11 @@
                             "href": "a_z_names_terms/l/link-microsoft-365",
                             "permissioned-type": "private",
                             "toc_title": "link (Microsoft 365)"
+                        },
+                        {
+                            "href": "a_z_names_terms/l/link-to-windows",
+                            "permissioned-type": "private",
+                            "toc_title": "Link to Windows"
                         },
                         {
                             "href": "a_z_names_terms/l/live-captions",
@@ -7538,6 +7573,11 @@
                             "href": "a_z_names_terms/q/query",
                             "permissioned-type": "private",
                             "toc_title": "query"
+                        },
+                        {
+                            "href": "a_z_names_terms/q/queryset",
+                            "permissioned-type": "private",
+                            "toc_title": "queryset"
                         },
                         {
                             "href": "a_z_names_terms/q/query-editor",
@@ -13839,7 +13879,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2633,
+        "count_of_node_with_href": 2641,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,
