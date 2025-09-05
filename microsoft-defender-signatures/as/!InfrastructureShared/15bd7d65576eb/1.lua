@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\f7d7a60a0a96\1.luac 
+-- Command line: lua\!InfrastructureShared\15bd7d65576eb\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -16,6 +16,7 @@ if l_0_2 <= 0 then
   return mp.CLEAN
 end
 l_0_3.Cmdline = l_0_1
+l_0_3.Parents = add_parents_mp()
 local l_0_4 = (mp.GetParentProcInfo)()
 do
   if l_0_4 and l_0_4.ppid then
