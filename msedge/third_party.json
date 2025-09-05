@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14632947,
+    "size": 14633451,
     "file_count": 830
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32262685,
-    "file_count": 3948
+    "size": 32270745,
+    "file_count": 3951
   },
   {
     "name": "boringssl",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16262988,
+    "size": 16269165,
     "file_count": 252
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7382338,
+    "size": 7385644,
     "file_count": 29
   },
   {
@@ -336,8 +336,8 @@
   },
   {
     "name": "jetstream",
-    "size": 128908357,
-    "file_count": 54
+    "size": 106393504,
+    "file_count": 56
   },
   {
     "name": "jsoncpp",
@@ -371,8 +371,8 @@
   },
   {
     "name": "libc++",
-    "size": 6186216,
-    "file_count": 937
+    "size": 6187603,
+    "file_count": 938
   },
   {
     "name": "libdisplay-info",
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3835950,
+    "size": 3837170,
     "file_count": 579
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1369753,
+    "size": 1369750,
     "file_count": 23
   },
   {
@@ -731,12 +731,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2439447,
+    "size": 2439366,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6270706,
+    "size": 6268256,
     "file_count": 168
   },
   {
