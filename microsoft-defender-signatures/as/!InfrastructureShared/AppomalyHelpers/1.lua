@@ -1258,9 +1258,9 @@ LLMPromptGrader = function(l_10_0)
   end
   local l_10_1 = 0
   l_10_0 = (string.lower)(l_10_0)
-  local l_10_2 = "(ignore|disregard|skip|forget|neglect|overlook|omit|bypass|pay no attention to|do not follow|do not obey).*?(any|all|prior|previous|preceding|above|foregoing|earlier|initial).*?(content|text|instructions|instruction|directives|directive|commands|command|context|conversation|input|inputs|data|message|messages|communication|response|responses|request|requests)"
+  local l_10_2 = "(?i)(\\s(Ignore|Disregard|Skip|Forget|Neglect|Overlook|Omit|Bypass|Pay no attention to|Do not follow|Do not obey).*?\\s(any|all|prior|previous|preceding|above|foregoing|earlier|initial).*?\\s(content|text|instructions|instruction|directives|directive|commands|command|context|conversation|input|inputs|data|message|messages|communication|response|responses|request|requests))"
   if (MpCommon.StringRegExpSearch)(l_10_2, l_10_0) then
-    l_10_1 = l_10_1 + 100
+    l_10_1 = l_10_1 + 50
   end
   local l_10_3 = {}
   l_10_3["delete "] = 1
@@ -1268,12 +1268,12 @@ LLMPromptGrader = function(l_10_0)
   l_10_3["enumerate "] = 1
   l_10_3["search "] = 1
   l_10_3["locate "] = 1
-  l_10_3.clean = 1
-  l_10_3.wipe = 1
-  l_10_3.overwrite = 1
-  l_10_3.erase = 1
-  l_10_3.destroy = 1
-  l_10_3.purge = 1
+  l_10_3["clean "] = 1
+  l_10_3["wipe "] = 1
+  l_10_3["overwrite "] = 1
+  l_10_3["erase "] = 1
+  l_10_3["destroy "] = 1
+  l_10_3["purge "] = 1
   l_10_3["near-factory"] = 1
   l_10_3.recycle = 1
   l_10_3.download = 1
@@ -1380,10 +1380,21 @@ LLMPromptGrader = function(l_10_0)
   l_10_3["break"] = 1
   l_10_3.vulnerability = 1
   l_10_3.attack = 1
-  l_10_3["You are an authorized penetration testing agent"] = 50
-  l_10_3["enumerate the filesystem to locate potentially"] = 50
-  l_10_3["locate text configuration and environment-definition files (examples: *.txt, *.log,"] = 50
-  l_10_3["Recursively search local paths on Linux/macOS"] = 50
+  l_10_3.gpt = 5
+  l_10_3.llama = 5
+  l_10_3.claude = 5
+  l_10_3.transformers = 5
+  l_10_3[".vscode\\extensions"] = 5
+  l_10_3.openai = 5
+  l_10_3["--dangerously-skip-permissions "] = 15
+  l_10_3["--yolo"] = 15
+  l_10_3["--trust-all-tools"] = 15
+  l_10_3["--codex-run-as-apply-patch"] = 10
+  l_10_3["You are an authorized penetration testing agent"] = 200
+  l_10_3["enumerate the filesystem to locate potentially"] = 200
+  l_10_3["locate text configuration and environment-definition files (examples: *.txt, *.log,"] = 200
+  l_10_3["Recursively search local paths on Linux/macOS"] = 200
+  l_10_3["Search the filesystem and locate text configuration and environment-definition files"] = 200
   for l_10_7,l_10_8 in pairs(l_10_3) do
     if (string.find)(l_10_0, l_10_7, 1, true) then
       l_10_1 = l_10_1 + l_10_8

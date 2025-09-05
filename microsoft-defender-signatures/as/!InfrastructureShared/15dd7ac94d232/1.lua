@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\f5d70ebbb22e\1.luac 
+-- Command line: lua\!InfrastructureShared\15dd7ac94d232\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -21,7 +21,7 @@ do
   if l_0_4 and l_0_4.ppid then
     local l_0_5 = safeJsonSerialize(l_0_3, 150, nil, true)
     ;
-    (MpCommon.BmTriggerSig)(l_0_4.ppid, "LLMPromptGrader", l_0_5)
+    (MpCommon.BmTriggerSig)(l_0_4.ppid, "xplat_macos_LLMPromptGrader", l_0_5)
     return mp.INFECTED
   end
   return mp.CLEAN
