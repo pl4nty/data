@@ -661,6 +661,7 @@
         "EnablePreviewStringForSSO": false,
         "EnableProductTypeReserve": true,
         "EnableProgressMarkersForRunUndispatchedSubscriptionRegionAnalysisAsync": true,
+        "EnableProvisionForwarderDataStream": true,
         "EnableProvisionedDateTime": true,
         "EnableProvisioningSourceType": true,
         "EnablePurgeDeviceConfigurationEntities": true,
