@@ -1266,7 +1266,7 @@
         "ResourceGroupExportCogsFastStream": true,
         "ResourceGroupExportCogsSlowStream": true,
         "ReturnCloudPCInGracePeriodForVSB": true,
-        "ReturnNotprovisionedReserveCPC": true,
+        "ReturnNotprovisionedReserveCPC": false,
         "RouteActionsThroughKronox": true,
         "RouteFidalgoActionsThroughKronox": true,
         "RouteFlexActionsThroughKronox": true,
