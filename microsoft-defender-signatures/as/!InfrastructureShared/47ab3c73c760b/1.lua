@@ -207,6 +207,12 @@ end
                   reportSessionInformationInclusive()
                   add_parents()
                   reportRelevantUntrustedEntities(0)
+                  local l_0_27, l_0_28 = , pcall(reportBmInfo)
+                  -- DECOMPILER ERROR at PC394: Overwrote pending register: R15 in 'AssignReg'
+
+                  if not l_0_28 and reportBmInfo then
+                    (bm.add_related_string)("bmInfoFailReason", tostring(R15_PC392), R15_PC392)
+                  end
                   return mp.INFECTED
                 else
                   do

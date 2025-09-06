@@ -9,6 +9,10 @@ if IsTacticObservedGlobal("credentialdumping_concrete") then
   if l_0_1 ~= nil then
     bm_AddRelatedFileFromCommandLine(l_0_1)
   end
+  local l_0_2, l_0_3 = pcall(reportBmInfo)
+  if not l_0_2 and l_0_3 then
+    (bm.add_related_string)("bmInfoFailReason", tostring(l_0_3), bm.RelatedStringBMReport)
+  end
   sms_untrusted_process()
   add_parents()
   return mp.INFECTED

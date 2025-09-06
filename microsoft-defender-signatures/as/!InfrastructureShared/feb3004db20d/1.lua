@@ -37,9 +37,15 @@ do
         end
       end
       if l_0_6 then
-        l_0_6 = mp
-        l_0_6 = l_0_6.INFECTED
-        return l_0_6
+        l_0_6 = pcall
+        l_0_7 = reportBmInfo
+        l_0_6 = l_0_6(l_0_7)
+        -- DECOMPILER ERROR at PC90: Overwrote pending register: R6 in 'AssignReg'
+
+        if not l_0_6 and l_0_7 then
+          (bm.add_related_string)("bmInfoFailReason", tostring(R6_PC88), R6_PC88)
+        end
+        return mp.INFECTED
       end
     end
   end

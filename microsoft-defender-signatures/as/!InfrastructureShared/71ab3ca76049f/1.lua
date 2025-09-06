@@ -400,10 +400,16 @@ if ((((((((((((((((((((((not l_0_2 or l_0_2) and not l_0_2) or l_0_2) and not l_
           l_0_24 = reportMassReconHistory
           l_0_25 = l_0_9
           l_0_24(l_0_25, l_0_23, "_Machine")
-          l_0_24 = mp
-          l_0_24 = l_0_24.INFECTED
-          do return l_0_24 end
-          -- DECOMPILER ERROR at PC493: Confused about usage of register R20 for local variables in 'ReleaseLocals'
+          l_0_24 = pcall
+          l_0_25 = reportBmInfo
+          l_0_24 = l_0_24(l_0_25)
+          -- DECOMPILER ERROR at PC504: Overwrote pending register: R23 in 'AssignReg'
+
+          if not l_0_24 and l_0_25 then
+            (bm.add_related_string)("bmInfoFailReason", tostring(R23_PC502), R23_PC502)
+          end
+          do return mp.INFECTED end
+          -- DECOMPILER ERROR at PC509: Confused about usage of register R20 for local variables in 'ReleaseLocals'
 
         end
       end
