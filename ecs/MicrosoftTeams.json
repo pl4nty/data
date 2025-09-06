@@ -549,7 +549,7 @@
                 "enableFreemiumCheckingForNonFreeLicense": false,
                 "enableFreemiumLicenseExtension": false,
                 "enableIWTrialLicense": true,
-                "enableLFTStoreProviderEligibilityWithSettingsStore": false,
+                "enableLFTStoreProviderEligibilityWithSettingsStore": true,
                 "enableLeftoverApiMigrationToMsGraph": true,
                 "enableLicenseCheckForRegionStamping": true,
                 "enableLowFrictionTrialLicense": false,
