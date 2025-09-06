@@ -20,7 +20,7 @@ for l_0_3 = mp.SIGATTR_LOG_SZ, 1, -1 do
       end
       do
         if not (bm.get_imagepath)() then
-          local l_0_9, l_0_10, l_0_11, l_0_17 = l_0_8.image_path
+          local l_0_9, l_0_10, l_0_11, l_0_17, l_0_18 = l_0_8.image_path
         end
         -- DECOMPILER ERROR at PC55: Confused about usage of register: R9 in 'UnsetPending'
 
@@ -69,24 +69,30 @@ for l_0_3 = mp.SIGATTR_LOG_SZ, 1, -1 do
           end
         else
           do
+            add_parents()
             do
-              add_parents()
+              local l_0_19, l_0_20 = , pcall(reportBmInfo)
+              -- DECOMPILER ERROR at PC174: Overwrote pending register: R15 in 'AssignReg'
+
+              if not l_0_20 and reportBmInfo then
+                (bm.add_related_string)("bmInfoFailReason", tostring(R15_PC172), R15_PC172)
+              end
               do return mp.INFECTED end
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out DO_STMT
+              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out DO_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out DO_STMT
+              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out DO_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_STMT
 
             end
           end

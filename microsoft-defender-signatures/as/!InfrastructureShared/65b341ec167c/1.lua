@@ -6,13 +6,12 @@
 local l_0_0, l_0_1 = pcallEx("get_startup_info", bm.get_current_process_startup_info)
 do
   local l_0_2, l_0_3, l_0_4 = l_0_0 and l_0_1 ~= nil and l_0_1.ppid ~= nil and l_0_1.ppid or ""
-  do
-    pcallEx("BlockC2Connection", BlockC2Connection, "cobaltstrike_e")
-    pcallEx("maceSendConfig", maceSendConfig, "mace_atosev")
-    pcallEx("reportRelatedBmHits", reportRelatedBmHits)
-    pcallEx("triggerMemoryScanOnProcessTree", triggerMemoryScanOnProcessTree, false, true, "SMS_H", 5000, "Behavior:Win32/CobaltStrike.D!sms")
-    pcallEx("addChildrenAsThreat", addChildrenAsThreat)
-    pcallEx("reportPatch", function()
+  pcallEx("BlockC2Connection", BlockC2Connection, "cobaltstrike_e")
+  pcallEx("maceSendConfig", maceSendConfig, "mace_atosev")
+  pcallEx("reportRelatedBmHits", reportRelatedBmHits)
+  pcallEx("triggerMemoryScanOnProcessTree", triggerMemoryScanOnProcessTree, false, true, "SMS_H", 5000, "Behavior:Win32/CobaltStrike.D!sms")
+  pcallEx("addChildrenAsThreat", addChildrenAsThreat)
+  pcallEx("reportPatch", function()
   -- function num : 0_1 , upvalues : l_0_5
   local l_2_0 = GetRollingQueueKeys("82e27b72_" .. l_0_5)
   if l_2_0 ~= nil and type(l_2_0) == "table" then
@@ -22,7 +21,7 @@ do
   end
 end
 )
-    pcallEx("reportHosts", function()
+  pcallEx("reportHosts", function()
   -- function num : 0_0 , upvalues : l_0_5
   local l_1_0 = GetRollingQueueKeys("015b9d6d_" .. l_0_5)
   if l_1_0 ~= nil and type(l_1_0) == "table" then
@@ -32,7 +31,7 @@ end
   end
 end
 )
-    pcallEx("reportBeaconing", function()
+  pcallEx("reportBeaconing", function()
   -- function num : 0_2 , upvalues : l_0_5
   local l_3_0 = (string.format)("ScanBeaconing.A:%s", l_0_5)
   local l_3_1 = (MpCommon.AtomicCounterValue)(l_3_0)
@@ -41,10 +40,17 @@ end
   end
 end
 )
-    reportPcallEx()
-    reportRdTrace()
+  reportPcallEx()
+  reportRdTrace()
+  do
+    local l_0_8, l_0_9 = nil
+    -- DECOMPILER ERROR at PC79: Overwrote pending register: R11 in 'AssignReg'
+
+    if not pcall(reportBmInfo) and reportBmInfo then
+      (bm.add_related_string)("bmInfoFailReason", tostring(R11_PC77), R11_PC77)
+    end
     do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC68: freeLocal<0 in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC84: freeLocal<0 in 'ReleaseLocals'
 
   end
 end

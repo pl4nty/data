@@ -20,32 +20,42 @@ if not (":\\programData\\")(":\\perflogs\\", ":\\windows\\help\\") then
   return mp.CLEAN
 end
 local l_0_2 = (bm.get_current_process_startup_info)()
+if l_0_2 ~= nil and l_0_2.command_line ~= nil then
+  local l_0_3 = {}
+  -- DECOMPILER ERROR at PC51: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R6 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC53: Overwrote pending register: R7 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC54: No list found for R3 , SetList fails
+
+  -- DECOMPILER ERROR at PC55: Overwrote pending register: R4 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC56: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC57: Overwrote pending register: R6 in 'AssignReg'
+
+  if ("mega")(":\\windows\\debug\\", ":\\windows\\tapi\\") then
+    (bm.add_threat_file)(l_0_0)
+    reportSessionInformationInclusive()
+    add_parents()
+    reportTimingData()
+    local l_0_4, l_0_5 = pcall(reportBmInfo)
+    -- DECOMPILER ERROR at PC80: Overwrote pending register: R7 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC81: Overwrote pending register: R8 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC82: Overwrote pending register: R9 in 'AssignReg'
+
+    if not l_0_4 and l_0_5 then
+      (bm.add_related_string)(":\\windows\\temp\\", (":\\wmpub\\")(":\\intel\\"), bm.RelatedStringBMReport)
+    end
+    return mp.INFECTED
+  end
+end
 do
   do
-    if l_0_2 ~= nil and l_0_2.command_line ~= nil then
-      local l_0_3 = {}
-      -- DECOMPILER ERROR at PC51: Overwrote pending register: R5 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC52: Overwrote pending register: R6 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC53: Overwrote pending register: R7 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC54: No list found for R3 , SetList fails
-
-      -- DECOMPILER ERROR at PC55: Overwrote pending register: R4 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC56: Overwrote pending register: R5 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC57: Overwrote pending register: R6 in 'AssignReg'
-
-      if ("mega")(":\\windows\\debug\\", ":\\windows\\tapi\\") then
-        (bm.add_threat_file)(l_0_0)
-        reportSessionInformationInclusive()
-        add_parents()
-        reportTimingData()
-        return mp.INFECTED
-      end
-    end
     do return mp.CLEAN end
     -- WARNING: undefined locals caused missing assignments!
   end

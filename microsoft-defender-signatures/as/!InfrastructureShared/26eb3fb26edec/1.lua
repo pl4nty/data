@@ -21,8 +21,14 @@ end
 local l_0_6 = tonumber(l_0_3:match("Count:(%d+)"))
 if l_0_4 and l_0_4 > 52000000 and l_0_4 < 75000000 and l_0_6 > 5500 and l_0_6 < 7000 then
   (bm.add_related_string)("ReadVM", "Bytes: " .. l_0_4 .. " Count: " .. l_0_6, bm.RelatedStringBMReport)
+  local l_0_7, l_0_8 = pcall(reportBmInfo)
+  if not l_0_7 and l_0_8 then
+    (bm.add_related_string)("bmInfoFailReason", tostring(l_0_8), bm.RelatedStringBMReport)
+  end
   add_parents()
   return mp.INFECTED
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 
