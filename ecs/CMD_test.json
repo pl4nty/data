@@ -586,6 +586,7 @@
         "EnableInactiveStatusInCanaryCheckItem": true,
         "EnableIndexOptimizationOne": true,
         "EnableIndexOptimizationTwo": true,
+        "EnableInitializeBillingWhenCheckout": true,
         "EnableInitiatedByColumn": true,
         "EnableInstallGridDriverForT4Sku": true,
         "EnableInstallRDAgentForVHD": true,
