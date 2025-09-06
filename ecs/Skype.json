@@ -3138,7 +3138,7 @@
         "iosIpOverride": [
             "127.0.0.1"
         ],
-        "isEligible": false
+        "isEligible": true
     },
     "Segmentation": {
         "AudienceGroup": "general",
@@ -3922,7 +3922,8 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1"
+        "NrpRefactor265_naluCount": "1",
+        "SkipGpuQueryForVM": "1"
     },
     "SkypeWebMedia": {
         "mediaAgent": {
