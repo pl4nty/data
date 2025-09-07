@@ -480,9 +480,6 @@
     <o:service o:name="CustomFontServiceEndpoint">
       <o:url>https://cr.office.com</o:url>
     </o:service>
-    <o:service o:name="OArtModel3DResourceServiceEndpoint">
-      <o:url>https://fs.microsoft.com/fs/oart/model3d/res/1.0</o:url>
-    </o:service>
     <o:service o:name="OArtTeachingPaneResourceServiceEndpoint">
       <o:url>https://fs.microsoft.com/fs/TeachingPane/1.0</o:url>
     </o:service>
