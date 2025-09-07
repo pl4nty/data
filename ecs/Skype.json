@@ -3137,7 +3137,7 @@
         "iosIpOverride": [
             "127.0.0.1"
         ],
-        "isEligible": true
+        "isEligible": false
     },
     "Segmentation": {
         "AudienceGroup": "general",
@@ -3268,9 +3268,6 @@
         },
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
-        },
-        "BweRampupOnProbe": {
-            "enableRampup": false
         },
         "EventPriority": {
             "RMHistogram": 0
@@ -3921,7 +3918,8 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1"
+        "NrpRefactor265_naluCount": "1",
+        "SkipGpuQueryForVM": "1"
     },
     "SkypeWebMedia": {
         "mediaAgent": {
