@@ -3137,7 +3137,7 @@
         "iosIpOverride": [
             "127.0.0.1"
         ],
-        "isEligible": false
+        "isEligible": true
     },
     "Segmentation": {
         "AudienceGroup": "general",
@@ -3268,6 +3268,9 @@
         },
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
+        },
+        "BweRampupOnProbe": {
+            "enableRampup": false
         },
         "EventPriority": {
             "RMHistogram": 0
