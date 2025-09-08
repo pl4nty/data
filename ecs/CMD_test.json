@@ -1015,8 +1015,6 @@
         "Feedback_Nighthawk_Prod": false,
         "FirstPartyANCDiagnosticNetworkEnabled": false,
         "FixAadSyncHeartbeatTenantCheck": true,
-        "FlexConfigurationLicenseBufferEnabled": false,
-        "FlexConfigurationLicenseBufferPatchEnabled": true,
         "FlexOldRemoteActionEnable": true,
         "FlightForAuthenticateWay": true,
         "FlightingAcquireLockerBeforeCreatingNewVnet": true,

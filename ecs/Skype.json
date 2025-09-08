@@ -2692,7 +2692,7 @@
             ]
         },
         "PSTN": {
-            "AssetsVersion": "8.200.0.1122",
+            "AssetsVersion": "8.200.0.1136",
             "IsMurphyProtected": "false"
         },
         "PhoneNumberAuthConfiguration": {
@@ -3913,6 +3913,9 @@
             "enabled": true
         }
     },
+    "SkypeTransport": {
+        "testEcsKey": "test"
+    },
     "SkypeVideoLibrary": {
         "AV1SceneChangeBlockMatchPct": 25,
         "AV1SceneChangeMeanThresh": 24,
@@ -3920,8 +3923,7 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1",
-        "SkipGpuQueryForVM": "1"
+        "NrpRefactor265_naluCount": "1"
     },
     "SkypeWebMedia": {
         "mediaAgent": {
