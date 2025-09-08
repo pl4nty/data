@@ -13,7 +13,7 @@
         "functionalabtest": "/test/platform/abtestpage",
         "functionalabtests": "/test/ux/abtestpage/abtestpage-ab-b",
         "homePageTest": "B",
-        "navigationSourceUrlSetting": "default",
+        "navigationSourceUrlSetting": "secondary",
         "newsiteabtest": "/home",
         "skypeForBusinessPrice": "$5.00",
         "supporttest": "/test/ux/Components/ab-test"
