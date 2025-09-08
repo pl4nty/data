@@ -395,7 +395,6 @@
         "reloadRedirects": true,
         "test123": false,
         "urlCacheEnabled": true,
-        "urlSchemeHandlerEnabled": true,
-        "webSocketsEnabled": false
+        "urlSchemeHandlerEnabled": true
     }
 }
