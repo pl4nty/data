@@ -155,18 +155,6 @@ enum class CopilotSuggestionState {
   kMaxValue = kClicked,
 };
 
-// These values are persisted to logs. Entries should not be renumbered or
-// removed and numeric values should never be reused.
-// Please keep in sync with "Microsoft.Find.CopilotSuggestion.WorkTab" in
-// src/tools/metrics/histograms/edge_enums.xml.
-enum class CommercialCopilotWorkTab {
-  kSuppressedForWorkTabUser = 0,
-  kLicenseCheckSucceeded = 1,
-  kLicenseCheckFailed = 2,
-
-  kMaxValue = kLicenseCheckFailed
-};
-
 }  // namespace find_in_page
 }  // namespace edge
 
