@@ -23,7 +23,6 @@ enum class EndpointType {
 };
 
 namespace metrics {
-
 namespace helper {
 
 std::string BuildMetricNameForEndpoint(EndpointType endpoint_type_name,
@@ -251,12 +250,6 @@ void RecordFindOnPageSidebarLCP(const base::TimeDelta& duration);
 void RecordCopilotSuggestionShown();
 
 void RecordCopilotSuggestionClicked();
-
-// Record that we are blocking Commercial Copilot CtrlF suggestions because the
-// user has the Work Tab License
-void RecordCommercialSuggestionsBlockedForWorkTab();
-
-void RecordCommercialSuggestionsLicenseCheckSucceeded(bool successful);
 
 }  // namespace metrics
 }  // namespace edge::find_in_page
