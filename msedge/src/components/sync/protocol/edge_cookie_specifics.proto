@@ -45,6 +45,7 @@ message EdgeCookie {
     INTERNET_EXPLORER_IMPORT = 3;
     CHROME_CONTINUOUS_IMPORT = 4;
     CHROME_CONTINUOUS_IMPORT_OLD = 5;
+    ANAHEIM_IMPORT = 6;
   }
 
   optional CookieBrowserProvenance browser_provenance = 11 [default = NATIVE];
